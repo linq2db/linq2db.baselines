@@ -1,0 +1,13 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[x].[PersonID],
+	[x].[MiddleName],
+	[x].[LastName],
+	[x].[FirstName]
+FROM
+	[Person] [x]
+WHERE
+	[x].[FirstName] = 'John'
+

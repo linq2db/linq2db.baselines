@@ -1,0 +1,276 @@
+﻿BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE [Animals26]
+(
+	[AnimalType]    NVarChar(40)  NOT NULL,
+	[AnimalType2]   NVarChar(40)  NOT NULL,
+	[Id]            INTEGER       NOT NULL,
+	[Name]          NVarChar(255)     NULL,
+	[Discriminator] NVarChar(40)  NOT NULL,
+	[EyeId]         INTEGER           NULL,
+	[Second]        NVarChar(40)      NULL,
+	[First]         NVarChar(40)      NULL,
+
+	CONSTRAINT [PK_Animals26] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE [Eyes26]
+(
+	[Id] INTEGER      NOT NULL,
+	[Xy] NVarChar(40)     NULL,
+
+	CONSTRAINT [PK_Eyes26] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE [TestAnimalTable]
+(
+	[Id]           INTEGER NOT NULL,
+	[TestAnimalId] INTEGER     NULL
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Xy NVarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO [Eyes26]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name NVarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 NVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType NVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId  -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First NVarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO [Animals26]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @AnimalType NVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 NVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @Name NVarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator NVarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO [Animals26]
+(
+	[AnimalType],
+	[AnimalType2],
+	[Id],
+	[Name],
+	[Discriminator]
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId  -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId  -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 123
+DECLARE @Xy NVarChar(7) -- String
+SET     @Xy = 'test321'
+
+INSERT INTO [Eyes26]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[_].[Id],
+	[_].[Xy]
+FROM
+	[Eyes26] [_]
+WHERE
+	[_].[Id] = 123
+LIMIT @take
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Xy NVarChar(7) -- String
+SET     @Xy = 'test321'
+DECLARE @Id  -- Int32
+SET     @Id = 123
+
+UPDATE
+	[Eyes26]
+SET
+	[Xy] = @Xy
+WHERE
+	[Eyes26].[Id] = @Id
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[_].[Id],
+	[_].[Xy]
+FROM
+	[Eyes26] [_]
+WHERE
+	[_].[Id] = 123
+LIMIT @take
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Xy NVarChar(7) -- String
+SET     @Xy = 'test321'
+DECLARE @Id  -- Int32
+SET     @Id = 123
+
+UPDATE
+	[Eyes26]
+SET
+	[Xy] = @Xy
+WHERE
+	[Eyes26].[Id] = @Id
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[_].[Id],
+	[_].[Xy]
+FROM
+	[Eyes26] [_]
+WHERE
+	[_].[Id] = 123
+LIMIT @take
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 123
+
+DELETE FROM
+	[Eyes26]
+WHERE
+	[Eyes26].[Id] = @Id
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+DROP TABLE IF EXISTS [Animals26]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+DROP TABLE IF EXISTS [Eyes26]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+DROP TABLE IF EXISTS [TestAnimalTable]
+

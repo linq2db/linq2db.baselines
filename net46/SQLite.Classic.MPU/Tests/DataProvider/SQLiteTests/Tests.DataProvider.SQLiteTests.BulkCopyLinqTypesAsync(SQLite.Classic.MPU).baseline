@@ -1,0 +1,68 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(4000,1000,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f00' as blob),NULL,0,NULL),
+(4001,1001,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f01' as blob),NULL,1,NULL),
+(4002,1002,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f02' as blob),NULL,2,NULL),
+(4003,1003,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f03' as blob),NULL,3,NULL),
+(4004,1004,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f04' as blob),NULL,4,NULL),
+(4005,1005,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f05' as blob),NULL,5,NULL),
+(4006,1006,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f06' as blob),NULL,6,NULL),
+(4007,1007,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f07' as blob),NULL,7,NULL),
+(4008,1008,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f08' as blob),NULL,8,NULL),
+(4009,1009,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f09' as blob),NULL,9,NULL)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+
+DELETE FROM
+	[LinqDataTypes]
+WHERE
+	[LinqDataTypes].[ID] >= 4000
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(4000,1000,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f00' as blob),NULL,0,NULL),
+(4001,1001,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f01' as blob),NULL,1,NULL),
+(4002,1002,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f02' as blob),NULL,2,NULL),
+(4003,1003,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f03' as blob),NULL,3,NULL),
+(4004,1004,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f04' as blob),NULL,4,NULL),
+(4005,1005,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f05' as blob),NULL,5,NULL),
+(4006,1006,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f06' as blob),NULL,6,NULL),
+(4007,1007,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f07' as blob),NULL,7,NULL),
+(4008,1008,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f08' as blob),NULL,8,NULL),
+(4009,1009,'2001-01-11 01:11:21.1',1,Cast(x'4fc591b15f9d604e81bc6d574e280f09' as blob),NULL,9,NULL)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+
+DELETE FROM
+	[LinqDataTypes]
+WHERE
+	[LinqDataTypes].[ID] >= 4000
+

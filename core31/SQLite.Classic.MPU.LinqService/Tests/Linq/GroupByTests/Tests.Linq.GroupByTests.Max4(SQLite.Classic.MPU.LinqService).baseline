@@ -1,0 +1,21 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Today  -- DateTime
+SET     @Today = '2020-09-01'
+
+SELECT
+	[t1].[MoneyValue]
+FROM
+	[LinqDataTypes] [t1]
+		INNER JOIN (
+			SELECT
+				[sub].[ID],
+				Max([sub].[DateTimeValue]) as [DateTimeValue]
+			FROM
+				[LinqDataTypes] [sub]
+			WHERE
+				[sub].[ID] = 1 AND DateTime([sub].[DateTimeValue]) <= DateTime(@Today)
+			GROUP BY
+				[sub].[ID]
+		) [t2] ON [t1].[ID] = [t2].[ID] AND DateTime([t1].[DateTimeValue]) = DateTime([t2].[DateTimeValue])
+

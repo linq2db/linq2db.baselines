@@ -1,0 +1,73 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE [M998_T066]
+(
+	[F066_04] NVarChar(255)     NULL,
+	[F066_00] NVarChar(255)     NULL,
+	[F066_05] NVarChar(255)     NULL
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+INSERT INTO [M998_T066]
+(
+	[F066_04],
+	[F066_00],
+	[F066_05]
+)
+VALUES
+('Desc1',NULL,'v1'),
+('Desc2',NULL,'v2')
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE [M998_T000]
+(
+	[F066_04] NVarChar(255)     NULL,
+	[F066_00] NVarChar(255)     NULL,
+	[F066_05] NVarChar(255)     NULL
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+INSERT INTO [M998_T000]
+(
+	[F066_04],
+	[F066_00],
+	[F066_05]
+)
+VALUES
+('Desc3','v3',NULL),
+('Desc4','v4',NULL)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[t1].[F066_04],
+	[t1].[F066_00],
+	[t1].[F066_05]
+FROM
+	[M998_T066] [t1]
+UNION ALL
+SELECT
+	[t2].[F066_04],
+	[t2].[F066_00],
+	[t2].[F066_05]
+FROM
+	[M998_T000] [t2]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE [M998_T000]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE [M998_T066]
+
