@@ -3,8 +3,8 @@
 
 SELECT
 	[x].[PersonID],
-	[x].[FirstName],
 	[x].[LastName],
+	[x].[FirstName],
 	[x].[MiddleName]
 FROM
 	[Person] [x]

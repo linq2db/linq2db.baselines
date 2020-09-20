@@ -40,7 +40,7 @@ SELECT last_insert_rowid()
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id1  -- Int32
-SET     @id1 = 21
+SET     @id1 = 17
 DECLARE @take  -- Int32
 SET     @take = 1
 
