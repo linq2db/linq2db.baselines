@@ -1,0 +1,439 @@
+﻿BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4000
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1000
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = '6d11d94a-bbbc-45b9-bfa2-5299619c327b'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 0
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4001
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1001
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = '1f070fa9-0160-4a2c-a466-133f1a6450cb'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 1
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4002
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1002
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = '6478ca73-dda5-4358-8f7c-1a89e045cf04'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 2
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4003
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1003
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = '05ee6236-9206-478b-825f-2049e2fe0a0f'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 3
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4004
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1004
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = '3be15d6c-6767-4c23-b98f-75face281d92'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 4
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4005
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1005
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = '7135171d-7298-4c1f-bb44-f50b4a0fc4e4'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 5
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4006
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1006
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = 'ddb40954-8d58-4ee7-858d-5af020c8347b'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 6
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4007
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1007
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = 'd5852bce-8ce5-43a4-a49b-76243adc82d2'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 7
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4008
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1008
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = 'e0b6b843-579b-4484-9458-6c17f07e4d3f'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 8
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 4009
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1009
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = '64920b6c-b9c1-42d4-ace7-8f0cbc6dbdae'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 9
+DECLARE @StringValue VarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue,
+	StringValue
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+
+DELETE FROM
+	LinqDataTypes
+WHERE
+	LinqDataTypes.ID >= 4000
+
+BeforeExecute
+INSERT BULK LinqDataTypes
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+
+DELETE FROM
+	LinqDataTypes
+WHERE
+	LinqDataTypes.ID >= 4000
+
