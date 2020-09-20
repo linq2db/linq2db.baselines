@@ -1,0 +1,7 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SELECT
+	SYS_EXTRACT_UTC(SYSTIMESTAMP)
+FROM SYS.DUAL
+
