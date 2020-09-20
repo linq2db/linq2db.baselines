@@ -1,0 +1,61 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "Task"
+(
+	"Id"         Int           NOT NULL,
+	"TargetName" NVarChar(255)     NULL,
+	"BdaValue"   NVarChar(255)     NULL,
+
+	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @TargetName VarChar(12) -- String
+SET     @TargetName = 'bda.Requests'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @BdaValue VarChar(9) -- String
+SET     @BdaValue = 'Bda value'
+
+INSERT INTO "Task"
+(
+	"TargetName",
+	"Id",
+	"BdaValue"
+)
+VALUES
+(
+	@TargetName,
+	@Id,
+	@BdaValue
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"p"."TargetName",
+	"p"."Id",
+	"p"."BdaValue"
+FROM
+	"Task" "p"
+WHERE
+	"p"."TargetName" = 'bda.Requests'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"p"."BdaValue"
+FROM
+	"Task" "p"
+WHERE
+	"p"."TargetName" = 'bda.Requests'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DROP TABLE "Task"
+
