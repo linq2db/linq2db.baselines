@@ -1,0 +1,292 @@
+﻿BeforeExecute
+-- Sybase.Managed Sybase
+
+CREATE TABLE [Animals7]
+(
+	[AnimalType]    NVarChar(40)  NOT NULL,
+	[AnimalType2]   NVarChar(40)  NOT NULL,
+	[Id]            Int           NOT NULL,
+	[Name]          NVarChar(255)     NULL,
+	[Discriminator] NVarChar(40)  NOT NULL,
+	[EyeId]         Int               NULL,
+	[Second]        NVarChar(40)      NULL,
+	[First]         NVarChar(40)      NULL,
+
+	CONSTRAINT [PK_Animals7] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+CREATE TABLE [Eyes7]
+(
+	[Id] Int          NOT NULL,
+	[Xy] NVarChar(40)     NULL,
+
+	CONSTRAINT [PK_Eyes7] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+CREATE TABLE [TestAnimalTable]
+(
+	[Id]           Int NOT NULL,
+	[TestAnimalId] Int     NULL
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Xy UniVarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO [Eyes7]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Discriminator UniVarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name UniVarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 UniVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType UniVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second UniVarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First UniVarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO [Animals7]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @AnimalType UniVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 UniVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Name UniVarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator UniVarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO [Animals7]
+(
+	[AnimalType],
+	[AnimalType2],
+	[Id],
+	[Name],
+	[Discriminator]
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 123
+DECLARE @Xy UniVarChar(7) -- String
+SET     @Xy = 'test321'
+
+INSERT INTO [Eyes7]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT TOP 1
+	[_].[Id],
+	[_].[Xy]
+FROM
+	[Eyes7] [_]
+WHERE
+	[_].[Id] = 123
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Xy_1 UniVarChar(7) -- String
+SET     @Xy_1 = 'test321'
+DECLARE @Id Integer -- Int32
+SET     @Id = 123
+DECLARE @Xy UniVarChar(7) -- String
+SET     @Xy = 'test321'
+
+BEGIN TRAN
+
+UPDATE
+	[Eyes7]
+SET
+	[t1].[Xy] = @Xy_1
+FROM
+	[Eyes7] [t1]
+WHERE
+	[t1].[Id] = @Id
+
+IF @@ROWCOUNT = 0
+BEGIN
+	INSERT INTO [Eyes7]
+	(
+		[Id],
+		[Xy]
+	)
+	VALUES
+	(
+		@Id,
+		@Xy
+	)
+END
+
+COMMIT
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT TOP 1
+	[_].[Id],
+	[_].[Xy]
+FROM
+	[Eyes7] [_]
+WHERE
+	[_].[Id] = 123
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Xy UniVarChar(7) -- String
+SET     @Xy = 'test321'
+DECLARE @Id Integer -- Int32
+SET     @Id = 123
+
+UPDATE
+	[Eyes7]
+SET
+	[t1].[Xy] = @Xy
+FROM
+	[Eyes7] [t1]
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT TOP 1
+	[_].[Id],
+	[_].[Xy]
+FROM
+	[Eyes7] [_]
+WHERE
+	[_].[Id] = 123
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 123
+
+DELETE FROM [Eyes7]
+FROM
+	[Eyes7] [t1]
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DROP TABLE [Animals7]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DROP TABLE [Eyes7]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DROP TABLE [TestAnimalTable]
+
