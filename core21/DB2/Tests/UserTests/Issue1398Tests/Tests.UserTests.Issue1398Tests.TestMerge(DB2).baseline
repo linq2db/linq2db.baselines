@@ -1,0 +1,3712 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "Animals"
+(
+	"Name"   NVarChar(100) NOT NULL,
+	"Color"  NVarChar(100) NOT NULL,
+	"Length" Int           NOT NULL,
+
+	CONSTRAINT "PK_Animals" PRIMARY KEY ("Name")
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "AnimalsUpdate"
+(
+	"Name"      NVarChar(100) NOT NULL,
+	"Length"    Int           NOT NULL,
+	"Iteration" Int           NOT NULL
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 380686480
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 0
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 904175875
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 0
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1663930081
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 20
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 410589106
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 20
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 20
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 0
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 908767398
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 1
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1063335462
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 1
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 222212405
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 21
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 456118951
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 21
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 1
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 21
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 671575067
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 2
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 698400501
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 2
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1525794652
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 22
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 228704058
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 22
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 2
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 22
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 322217838
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 3
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1792606205
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 3
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 2094928940
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 23
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 984888402
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 23
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 23
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 3
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1503727974
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 4
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1893007867
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 4
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1897223111
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 24
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1588197691
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 24
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 4
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 24
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1953410258
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 5
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 419091742
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 5
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1947028979
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 25
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 563176019
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 25
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 5
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 25
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1781153563
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 6
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1088395397
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 6
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 825448570
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 26
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1185442674
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 26
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 6
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 26
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 25954423
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 7
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1856482006
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 7
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 35773114
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 27
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1487967532
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 27
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 7
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 27
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 965808706
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 8
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 922252978
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 8
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1415030276
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 28
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 840971555
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 28
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 8
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 28
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1099608662
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 9
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 549052681
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 9
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 301878485
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 29
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 759503430
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 29
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 29
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 9
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 509302200
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 10
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1523239712
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 10
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1478890570
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 30
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 2107647535
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 30
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 30
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 10
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 809446634
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 11
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 380029064
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 11
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1426447209
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 31
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 247880952
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 31
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 11
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 31
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 671099566
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 12
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1499993184
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 12
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1797716861
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 32
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1459559333
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 32
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 12
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 32
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1866070277
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 13
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1643295812
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 13
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 671446955
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 33
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 2109078385
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 33
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 13
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 33
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1104630543
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 14
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1100754062
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 14
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 776919190
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 34
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1967855648
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 34
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 14
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 34
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 237886892
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 15
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1184253378
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 15
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 430164528
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 35
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 962576708
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 35
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 15
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 35
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 662627387
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 16
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 37827120
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 16
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1410378999
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 36
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1547448507
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 36
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 16
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 36
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 377575929
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 17
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1253957385
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 17
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 2032763387
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 37
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 954675293
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 37
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 17
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 37
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1591129382
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 18
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1137719681
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 18
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1078895491
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 38
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 430170546
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 38
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 18
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 38
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1087684819
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 19
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1986865091
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 19
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1901213032
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 39
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Integer(4) -- Int32
+SET     @Length_1 = 1401124499
+DECLARE @Iteration Integer(4) -- Int32
+SET     @Iteration = 39
+
+INSERT INTO "AnimalsUpdate"
+(
+	"Name",
+	"Length",
+	"Iteration"
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 19
+DECLARE @Color VarChar(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @iteration Integer(4) -- Int32
+SET     @iteration = 39
+DECLARE @Color VarChar(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO "Animals" "Target"
+USING (
+	SELECT
+		"_"."Name",
+		"_"."Length" as "Length_1"
+	FROM
+		"AnimalsUpdate" "_"
+	WHERE
+		"_"."Iteration" = @iteration
+) "Source"
+(
+	"Name", 
+	"Length_1"
+)
+ON ("Target"."Name" = "Source"."Name")
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	"Target"."Color" = @Color,
+	"Target"."Length" = "Source"."Length_1"
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Name",
+	"Color",
+	"Length"
+)
+VALUES
+(
+	"Source"."Name",
+	@Color,
+	"Source"."Length_1"
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Animals" "animal"
+WHERE
+	"animal"."Color" = 'Green'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DROP TABLE "AnimalsUpdate"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DROP TABLE "Animals"
+

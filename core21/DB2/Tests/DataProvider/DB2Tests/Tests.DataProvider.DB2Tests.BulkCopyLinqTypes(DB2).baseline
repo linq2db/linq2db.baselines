@@ -1,0 +1,45 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "LinqDataTypes"
+(
+	ID,
+	"MoneyValue",
+	"DateTimeValue",
+	"BoolValue",
+	"GuidValue",
+	"BinaryValue",
+	"SmallIntValue",
+	"StringValue"
+)
+VALUES
+(4000,1000,'2001-01-11-01.11.21.100000',1,Cast(x'8604caeb7066db4bbef2e35c72adea7c' as char(16) for bit data),NULL,0,NULL),
+(4001,1001,'2001-01-11-01.11.21.100000',1,Cast(x'45ab51d97fe6374d8e86c14605bb443b' as char(16) for bit data),NULL,1,NULL),
+(4002,1002,'2001-01-11-01.11.21.100000',1,Cast(x'03da0ecef9a16a41a48c33d24e8f3dda' as char(16) for bit data),NULL,2,NULL),
+(4003,1003,'2001-01-11-01.11.21.100000',1,Cast(x'ba5b8a5f02c4fe47b10f22b1df6520b9' as char(16) for bit data),NULL,3,NULL),
+(4004,1004,'2001-01-11-01.11.21.100000',1,Cast(x'd92377fee1eacf49aa2b6a329c0b4f4d' as char(16) for bit data),NULL,4,NULL),
+(4005,1005,'2001-01-11-01.11.21.100000',1,Cast(x'847aba44962e404699864c02349d047c' as char(16) for bit data),NULL,5,NULL),
+(4006,1006,'2001-01-11-01.11.21.100000',1,Cast(x'cd5a22c7d4b61746a5d32095ca1dbfff' as char(16) for bit data),NULL,6,NULL),
+(4007,1007,'2001-01-11-01.11.21.100000',1,Cast(x'704b82a21b113c49aa9b75b08c226c32' as char(16) for bit data),NULL,7,NULL),
+(4008,1008,'2001-01-11-01.11.21.100000',1,Cast(x'7848a526efa1ac4095050fb5870594f0' as char(16) for bit data),NULL,8,NULL),
+(4009,1009,'2001-01-11-01.11.21.100000',1,Cast(x'5c44846ef029fa4eb12cafe237ead527' as char(16) for bit data),NULL,9,NULL)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DELETE FROM
+	"LinqDataTypes" "t1"
+WHERE
+	"t1".ID >= 4000
+
+BeforeExecute
+INSERT BULK "LinqDataTypes"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DELETE FROM
+	"LinqDataTypes" "t1"
+WHERE
+	"t1".ID >= 4000
+
