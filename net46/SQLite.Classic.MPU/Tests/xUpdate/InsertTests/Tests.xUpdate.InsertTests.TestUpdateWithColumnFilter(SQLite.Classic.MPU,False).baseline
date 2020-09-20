@@ -52,7 +52,7 @@ SET     @LastName = 'whatever'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 DECLARE @ID  -- Int32
-SET     @ID = 81
+SET     @ID = 77
 
 UPDATE
 	[Person]

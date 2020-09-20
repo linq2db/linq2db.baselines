@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Date_1  -- DateTime
-SET     @Date_1 = '2020-09-01'
+SET     @Date_1 = '2020-09-20'
 DECLARE @take  -- Int32
 SET     @take = 5
 
