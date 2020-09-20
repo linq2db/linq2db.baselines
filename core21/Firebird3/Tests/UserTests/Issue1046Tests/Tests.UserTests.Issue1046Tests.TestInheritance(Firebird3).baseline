@@ -1,0 +1,61 @@
+﻿BeforeExecute
+-- Firebird3 Firebird
+
+CREATE TABLE "Task"
+(
+	"Id"         Int                                    NOT NULL,
+	"TargetName" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"BdaValue"   VarChar(255) CHARACTER SET UNICODE_FSS,
+
+	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @TargetName VarChar(12) -- String
+SET     @TargetName = 'bda.Requests'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @BdaValue VarChar(9) -- String
+SET     @BdaValue = 'Bda value'
+
+INSERT INTO "Task"
+(
+	"TargetName",
+	"Id",
+	"BdaValue"
+)
+VALUES
+(
+	@TargetName,
+	@Id,
+	@BdaValue
+)
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"p"."TargetName",
+	"p"."Id",
+	"p"."BdaValue"
+FROM
+	"Task" "p"
+WHERE
+	"p"."TargetName" = 'bda.Requests'
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"p"."BdaValue"
+FROM
+	"Task" "p"
+WHERE
+	"p"."TargetName" = 'bda.Requests'
+
+BeforeExecute
+-- Firebird3 Firebird
+
+DROP TABLE "Task"
+

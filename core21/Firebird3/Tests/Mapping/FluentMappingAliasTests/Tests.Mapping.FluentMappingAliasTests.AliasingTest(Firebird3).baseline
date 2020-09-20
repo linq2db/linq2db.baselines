@@ -1,0 +1,75 @@
+﻿BeforeExecute
+-- Firebird3 Firebird
+
+CREATE TABLE "InstanceClass"
+(
+	"Id"       Int                                   NOT NULL,
+	"Value"    Int                                   NOT NULL,
+	"ValueStr" VarChar(10) CHARACTER SET UNICODE_FSS
+)
+
+BeforeExecute
+-- Firebird3 Firebird
+
+INSERT INTO "InstanceClass"
+(
+	"Id",
+	"Value",
+	"ValueStr"
+)
+SELECT 1,101,'Str_1' FROM rdb$database UNION ALL
+SELECT 2,102,'Str_2' FROM rdb$database UNION ALL
+SELECT 3,103,'Str_3' FROM rdb$database UNION ALL
+SELECT 4,104,'Str_4' FROM rdb$database UNION ALL
+SELECT 5,105,'Str_5' FROM rdb$database UNION ALL
+SELECT 6,106,'Str_6' FROM rdb$database UNION ALL
+SELECT 7,107,'Str_7' FROM rdb$database UNION ALL
+SELECT 8,108,'Str_8' FROM rdb$database UNION ALL
+SELECT 9,109,'Str_9' FROM rdb$database UNION ALL
+SELECT 10,110,'Str_10' FROM rdb$database UNION ALL
+SELECT 11,111,'Str_11' FROM rdb$database UNION ALL
+SELECT 12,112,'Str_12' FROM rdb$database UNION ALL
+SELECT 13,113,'Str_13' FROM rdb$database UNION ALL
+SELECT 14,114,'Str_14' FROM rdb$database UNION ALL
+SELECT 15,115,'Str_15' FROM rdb$database UNION ALL
+SELECT 16,116,'Str_16' FROM rdb$database UNION ALL
+SELECT 17,117,'Str_17' FROM rdb$database UNION ALL
+SELECT 18,118,'Str_18' FROM rdb$database UNION ALL
+SELECT 19,119,'Str_19' FROM rdb$database UNION ALL
+SELECT 20,120,'Str_20' FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t"."Value",
+	"t"."ValueStr",
+	"t"."Id"
+FROM
+	"InstanceClass" "t"
+WHERE
+	"t"."Id" > 1 AND
+	"t"."Value" >= 104 AND
+	"t"."Value" <= 115 AND
+	"t"."ValueStr" LIKE 'S%'
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t"."Value",
+	"t"."ValueStr",
+	"t"."Id"
+FROM
+	"InstanceClass" "t"
+WHERE
+	"t"."Id" > 1 AND
+	"t"."Value" >= 104 AND
+	"t"."Value" <= 115 AND
+	"t"."ValueStr" LIKE 'S%'
+
+BeforeExecute
+-- Firebird3 Firebird
+
+DROP TABLE "InstanceClass"
+

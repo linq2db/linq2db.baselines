@@ -1,0 +1,21 @@
+﻿BeforeExecute
+-- Firebird3 Firebird
+DECLARE @p1 TimeStamp -- DateTime
+SET     @p1 = CAST('2001-01-11 01:11:21.100' AS timestamp)
+
+SELECT
+	"t".ID,
+	"t"."MoneyValue",
+	"t"."DateTimeValue",
+	"t"."DateTimeValue2",
+	"t"."BoolValue",
+	"t"."GuidValue",
+	"t"."SmallIntValue",
+	"t"."IntValue",
+	"t"."BigIntValue",
+	"t"."StringValue"
+FROM
+	"LinqDataTypes" "t"
+WHERE
+	"t"."DateTimeValue" IN (@p1)
+
