@@ -63,7 +63,7 @@ SELECT
 	[cu_1].[CountOfCards2],
 	[cu_1].[CountOfCards3],
 	[cu_1].[cnt],
-	[cu_1].[cnt_1]
+	[cu_1].[CountOfCards3_1]
 FROM
 	(
 		SELECT
@@ -95,7 +95,7 @@ FROM
 					[Issue1983Card] [card_1]
 				WHERE
 					[cu].[Id] = [card_1].[PersonId] AND [card_1].[CardType] = 2
-			) as [cnt_1]
+			) as [CountOfCards3_1]
 		FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
@@ -112,7 +112,7 @@ SELECT
 	[cu_1].[CountOfCards2],
 	[cu_1].[CountOfCards3],
 	[cu_1].[cnt_1],
-	[cu_1].[cnt_2]
+	[cu_1].[CountOfCards3_1]
 FROM
 	(
 		SELECT
@@ -152,7 +152,7 @@ FROM
 					[Issue1983Card] [card_1]
 				WHERE
 					[cu].[Id] = [card_1].[PersonId] AND [card_1].[CardType] = 2
-			) as [cnt_2]
+			) as [CountOfCards3_1]
 		FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
