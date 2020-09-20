@@ -1,0 +1,29 @@
+﻿BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT guidDataType FROM AllTypes WHERE ID = 2
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT guidDataType FROM AllTypes WHERE ID = 1
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT guidDataType FROM AllTypes WHERE ID = 2
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @p Raw(16) -- Binary
+SET     @p = HEXTORAW('AFC347A01BF90AC6E053020011AC8CF1')
+
+SELECT :p FROM sys.dual                                     
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @p Raw(16) -- Binary
+SET     @p = HEXTORAW('AFC347A01BF90AC6E053020011AC8CF1')
+
+SELECT :p FROM sys.dual                                      
+

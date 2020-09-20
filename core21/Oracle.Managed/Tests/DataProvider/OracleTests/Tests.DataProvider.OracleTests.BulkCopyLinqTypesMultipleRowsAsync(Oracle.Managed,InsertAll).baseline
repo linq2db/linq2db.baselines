@@ -1,0 +1,24 @@
+﻿BeforeExecute
+-- Oracle.Managed Oracle12 (asynchronously)
+
+INSERT ALL
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4000,1000,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('8d96545065328d4c8f0c601632c5583b' as raw(16)),NULL,0,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4001,1001,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('3f0c6a9a9f2d234f831a42b50749cad7' as raw(16)),NULL,1,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4002,1002,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('8e16dcafcdcb7e41a8e772ff5cfd6459' as raw(16)),NULL,2,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4003,1003,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('a9da6a39ee75084e9687775dad42ee93' as raw(16)),NULL,3,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4004,1004,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('b0a04c0ad0b0744280e73bbfe42256f7' as raw(16)),NULL,4,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4005,1005,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('e371f002b20e844aa4c44dfbbacdf04d' as raw(16)),NULL,5,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4006,1006,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('4ac1a345c98ebf4a8e2253db14d8f83e' as raw(16)),NULL,6,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4007,1007,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('edd311b43e3f614d916924ad2e979759' as raw(16)),NULL,7,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4008,1008,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('f7cf5cd9ea7b7f438a6d37994c7960fe' as raw(16)),NULL,8,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (4009,1009,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,Cast('fd174420c0e9ff4f87915a313efbf152' as raw(16)),NULL,9,NULL)
+SELECT * FROM dual
+
+BeforeExecute
+-- Oracle.Managed Oracle12 (asynchronously)
+
+DELETE FROM
+	LinqDataTypes t1
+WHERE
+	t1.ID >= 4000
+
