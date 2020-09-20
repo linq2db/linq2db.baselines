@@ -1,0 +1,71 @@
+﻿BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE TABLE InstanceClass
+(
+	Id       Int         NOT NULL,
+	Value    Int         NOT NULL,
+	ValueStr VarChar(10)     NULL
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+INSERT ALL
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (1,101,'Str_1')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (2,102,'Str_2')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (3,103,'Str_3')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (4,104,'Str_4')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (5,105,'Str_5')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (6,106,'Str_6')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (7,107,'Str_7')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (8,108,'Str_8')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (9,109,'Str_9')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (10,110,'Str_10')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (11,111,'Str_11')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (12,112,'Str_12')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (13,113,'Str_13')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (14,114,'Str_14')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (15,115,'Str_15')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (16,116,'Str_16')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (17,117,'Str_17')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (18,118,'Str_18')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (19,119,'Str_19')
+	INTO InstanceClass (Id, Value, ValueStr) VALUES (20,120,'Str_20')
+SELECT * FROM dual
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	t.Value,
+	t.ValueStr,
+	t.Id
+FROM
+	InstanceClass t
+WHERE
+	t.Id > 1 AND
+	t.Value >= 104 AND
+	t.Value <= 115 AND
+	t.ValueStr LIKE 'S%'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	t.Value,
+	t.ValueStr,
+	t.Id
+FROM
+	InstanceClass t
+WHERE
+	t.Id > 1 AND
+	t.Value >= 104 AND
+	t.Value <= 115 AND
+	t.ValueStr LIKE 'S%'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+DROP TABLE InstanceClass
+
