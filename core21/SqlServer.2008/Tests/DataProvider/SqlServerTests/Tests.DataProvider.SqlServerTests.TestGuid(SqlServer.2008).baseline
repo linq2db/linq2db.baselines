@@ -1,0 +1,24 @@
+﻿BeforeExecute
+-- SqlServer.2008
+
+SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uniqueidentifier)
+
+BeforeExecute
+-- SqlServer.2008
+
+SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uniqueidentifier)
+
+BeforeExecute
+-- SqlServer.2008
+DECLARE @p UniqueIdentifier -- Guid
+SET     @p = '82f5631a-96d6-4f4a-98f0-c99544d7cd1d'
+
+SELECT @p
+
+BeforeExecute
+-- SqlServer.2008
+DECLARE @p UniqueIdentifier -- Guid
+SET     @p = '82f5631a-96d6-4f4a-98f0-c99544d7cd1d'
+
+SELECT @p
+
