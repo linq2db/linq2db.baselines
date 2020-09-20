@@ -1,0 +1,29 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SELECT guidDataType FROM AllTypes WHERE ID = 2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SELECT guidDataType FROM AllTypes WHERE ID = 1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SELECT guidDataType FROM AllTypes WHERE ID = 2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @p Raw(16) -- Binary
+SET     @p = HEXTORAW('AFC32B2E981C9577E05011AC020001D1')
+
+SELECT :p FROM sys.dual                                     
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @p Raw(16) -- Binary
+SET     @p = HEXTORAW('AFC32B2E981C9577E05011AC020001D1')
+
+SELECT :p FROM sys.dual                                      
+

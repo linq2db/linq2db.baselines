@@ -1,0 +1,82 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+DELETE FROM
+	LinqDataTypes t1
+WHERE
+	t1.ID > 1000
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @BinaryValue Blob -- Object
+SET     @BinaryValue = HEXTORAW('01')
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	MoneyValue,
+	DateTimeValue,
+	BoolValue,
+	GuidValue,
+	BinaryValue,
+	SmallIntValue
+)
+VALUES
+(
+	1001,
+	1001,
+	CURRENT_TIMESTAMP,
+	1,
+	Sys_Guid(),
+	:BinaryValue,
+	1001
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	t1.ID,
+	t1.MoneyValue,
+	t1.DateTimeValue,
+	t1.BoolValue,
+	t1.GuidValue,
+	t1.BinaryValue,
+	t1.SmallIntValue,
+	t1.StringValue
+FROM
+	LinqDataTypes t1
+WHERE
+	t1.ID = 1001 AND ROWNUM <= :take
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @guid Raw(16) -- Binary
+SET     @guid = HEXTORAW('AFC32E651FA4071FE05011AC020001DA')
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	t1.ID,
+	t1.MoneyValue,
+	t1.DateTimeValue,
+	t1.BoolValue,
+	t1.GuidValue,
+	t1.BinaryValue,
+	t1.SmallIntValue,
+	t1.StringValue
+FROM
+	LinqDataTypes t1
+WHERE
+	t1.GuidValue = :guid AND ROWNUM <= :take
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+DELETE FROM
+	LinqDataTypes t1
+WHERE
+	t1.ID > 1000
+
