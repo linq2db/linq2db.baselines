@@ -71,7 +71,7 @@ SELECT last_insert_rowid()
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id1  -- Int32
-SET     @id1 = 23
+SET     @id1 = 19
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -90,7 +90,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id2  -- Int32
-SET     @id2 = 24
+SET     @id2 = 20
 DECLARE @take  -- Int32
 SET     @take = 1
 

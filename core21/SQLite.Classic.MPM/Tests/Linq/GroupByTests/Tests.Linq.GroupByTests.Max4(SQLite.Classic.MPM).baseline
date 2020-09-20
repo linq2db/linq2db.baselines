@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Today  -- DateTime
-SET     @Today = '2020-09-01'
+SET     @Today = '2020-09-20'
 
 SELECT
 	[t1].[MoneyValue]
