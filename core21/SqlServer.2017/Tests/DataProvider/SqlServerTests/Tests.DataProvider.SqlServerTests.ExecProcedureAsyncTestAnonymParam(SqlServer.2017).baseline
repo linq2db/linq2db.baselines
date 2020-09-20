@@ -1,0 +1,34 @@
+﻿BeforeExecute
+-- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	DB_NAME()
+FROM
+	[LinqDataTypes] [_]
+
+BeforeExecute
+-- SqlServer.2017 (asynchronously)
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'f3c0b8df-1eb6-4b3c-a163-0f8cb975f7ea'
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N'Person'
+DECLARE @MiddleName NVarChar(4000) -- String
+SET     @MiddleName = N'X'
+DECLARE @Gender NVarChar(4000) -- String
+SET     @Gender = N'M'
+
+[TestData2017]..[Person_Insert]
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'f3c0b8df-1eb6-4b3c-a163-0f8cb975f7ea'
+
+DELETE [t1]
+FROM
+	[Person] [t1]
+WHERE
+	[t1].[FirstName] = @FirstName
+
