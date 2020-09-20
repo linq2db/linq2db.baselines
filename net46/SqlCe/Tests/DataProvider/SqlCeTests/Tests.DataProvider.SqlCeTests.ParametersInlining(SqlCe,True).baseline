@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- SqlCe
+DECLARE @Now DateTime
+SET     @Now = '2020-09-20 16:50:11.078'
+
+SELECT
+	[_].[datetimeDataType]
+FROM
+	[AllTypes] [_]
+WHERE
+	Coalesce([_].[datetimeDataType], '1753-01-01') <= @Now
+

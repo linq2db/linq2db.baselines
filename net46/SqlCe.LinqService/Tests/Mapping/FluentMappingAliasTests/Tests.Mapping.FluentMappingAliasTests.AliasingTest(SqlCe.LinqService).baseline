@@ -1,0 +1,485 @@
+﻿BeforeExecute
+-- SqlCe
+
+CREATE TABLE [InstanceClass]
+(
+	[Id]       Int          NOT NULL,
+	[Value]    Int          NOT NULL,
+	[ValueStr] NVarChar(10)     NULL
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 101
+DECLARE @ValueStr NVarChar(5) -- String
+SET     @ValueStr = 'Str_1'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 102
+DECLARE @ValueStr NVarChar(5) -- String
+SET     @ValueStr = 'Str_2'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 103
+DECLARE @ValueStr NVarChar(5) -- String
+SET     @ValueStr = 'Str_3'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 4
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 104
+DECLARE @ValueStr NVarChar(5) -- String
+SET     @ValueStr = 'Str_4'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 5
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 105
+DECLARE @ValueStr NVarChar(5) -- String
+SET     @ValueStr = 'Str_5'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 6
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 106
+DECLARE @ValueStr NVarChar(5) -- String
+SET     @ValueStr = 'Str_6'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 7
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 107
+DECLARE @ValueStr NVarChar(5) -- String
+SET     @ValueStr = 'Str_7'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 8
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 108
+DECLARE @ValueStr NVarChar(5) -- String
+SET     @ValueStr = 'Str_8'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 9
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 109
+DECLARE @ValueStr NVarChar(5) -- String
+SET     @ValueStr = 'Str_9'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 10
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 110
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_10'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 11
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 111
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_11'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 12
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 112
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_12'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 13
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 113
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_13'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 14
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 114
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_14'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 15
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 115
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_15'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 16
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 116
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_16'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 17
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 117
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_17'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 18
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 118
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_18'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 19
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 119
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_19'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 20
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 120
+DECLARE @ValueStr NVarChar(6) -- String
+SET     @ValueStr = 'Str_20'
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+VALUES
+(
+	@Id,
+	@Value_1,
+	@ValueStr
+)
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t].[Value],
+	[t].[ValueStr],
+	[t].[Id]
+FROM
+	[InstanceClass] [t]
+WHERE
+	[t].[Id] > 1 AND
+	[t].[Value] >= 104 AND
+	[t].[Value] <= 115 AND
+	[t].[ValueStr] LIKE 'S%'
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t].[Value],
+	[t].[ValueStr],
+	[t].[Id]
+FROM
+	[InstanceClass] [t]
+WHERE
+	[t].[Id] > 1 AND
+	[t].[Value] >= 104 AND
+	[t].[Value] <= 115 AND
+	[t].[ValueStr] LIKE 'S%'
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [InstanceClass]
+
