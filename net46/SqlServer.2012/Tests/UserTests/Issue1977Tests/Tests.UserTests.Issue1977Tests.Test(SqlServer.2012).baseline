@@ -1,0 +1,33 @@
+﻿BeforeExecute
+-- SqlServer.2012
+
+CREATE TABLE [Issue1977Table]
+(
+	[firstField]  UniqueIdentifier NOT NULL,
+	[secondField] UniqueIdentifier NOT NULL
+)
+
+BeforeExecute
+-- SqlServer.2012
+
+INSERT INTO [Issue1977Table]
+(
+	[firstField],
+	[secondField]
+)
+VALUES
+('7c5ebb45-8114-4bee-8a25-e95b240dd60b','ccb04b7a-9c99-4ea9-a341-c782e361fd5b')
+
+BeforeExecute
+-- SqlServer.2012
+
+SELECT
+	CASE WHEN (N'Issue1977Table/' + Convert(VarChar(36), [f].[firstField]) + N'/' + Convert(VarChar(36), [f].[secondField]) IS NOT NULL AND N'Issue1977Table/' + Convert(VarChar(36), [f].[firstField]) + N'/' + Convert(VarChar(36), [f].[secondField]) = SUBSTRING(((ISNULL((N'/' + N'Issue1977Table'), '') + ISNULL((N'/' + Convert(NVarChar(36), [f].[firstField])), '')) + ISNULL((N'/' + Convert(NVarChar(36), [f].[secondField])), '')), LEN(CONVERT(NVARCHAR(MAX), N'/') + N'!'), 8000)) THEN 1 ELSE 0 END
+FROM
+	[Issue1977Table] [f]
+
+BeforeExecute
+-- SqlServer.2012
+
+DROP TABLE [Issue1977Table]
+

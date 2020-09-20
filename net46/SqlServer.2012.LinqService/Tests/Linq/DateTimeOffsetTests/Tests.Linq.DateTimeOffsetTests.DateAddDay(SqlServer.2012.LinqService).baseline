@@ -1,0 +1,492 @@
+﻿BeforeExecute
+-- SqlServer.2012
+
+CREATE TABLE [Transactions]
+(
+	[TransactionId]   Int            NOT NULL,
+	[TransactionDate] DateTimeOffset NOT NULL,
+
+	CONSTRAINT [PK_Transactions] PRIMARY KEY CLUSTERED ([TransactionId])
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 1
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 2
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 3
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2021-09-20 17:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 4
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2019-09-20 17:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 5
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-10-20 17:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 6
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-08-20 17:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 7
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-21 17:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 8
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-19 17:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 9
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 18:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 10
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 16:12:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 11
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:13:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 12
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:11:23.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 13
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:12:24.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 14
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:12:22.5524359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 15
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:12:23.5534359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 16
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:12:23.5514359 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 17
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:12:23.5524360 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 18
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 17:12:23.5524358 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 19
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2020-09-20 22:57:23.5524359 +05:45'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 20
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2000-01-01 01:01:01.0000000 +00:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 21
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2000-01-01 01:01:01.0000000 +10:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 22
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2000-01-01 01:01:01.0000000 -10:00'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 23
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2000-01-01 01:01:01.0000000 +00:10'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 24
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2000-01-01 01:01:01.0000000 -00:10'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 25
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2000-01-01 01:16:01.0000000 +00:15'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @TransactionId Int -- Int32
+SET     @TransactionId = 26
+DECLARE @TransactionDate DateTimeOffset
+SET     @TransactionDate = '2000-01-01 01:16:01.0000000 -00:15'
+
+INSERT INTO [Transactions]
+(
+	[TransactionId],
+	[TransactionDate]
+)
+VALUES
+(
+	@TransactionId,
+	@TransactionDate
+)
+
+BeforeExecute
+-- SqlServer.2012
+
+SELECT
+	DateAdd(day, 5, [t].[TransactionDate])
+FROM
+	[Transactions] [t]
+
+BeforeExecute
+-- SqlServer.2012
+
+DROP TABLE [Transactions]
+
