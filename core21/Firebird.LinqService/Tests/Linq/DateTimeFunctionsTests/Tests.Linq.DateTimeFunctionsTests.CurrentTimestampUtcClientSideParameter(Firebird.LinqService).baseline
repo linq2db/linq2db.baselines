@@ -1,0 +1,9 @@
+﻿BeforeExecute
+-- Firebird
+DECLARE @CurrentTimestampUtc TimeStamp -- DateTime
+SET     @CurrentTimestampUtc = CAST('2020-09-20 17:31:23.936' AS timestamp)
+
+SELECT
+	Cast(@CurrentTimestampUtc as TimeStamp)
+FROM rdb$database
+
