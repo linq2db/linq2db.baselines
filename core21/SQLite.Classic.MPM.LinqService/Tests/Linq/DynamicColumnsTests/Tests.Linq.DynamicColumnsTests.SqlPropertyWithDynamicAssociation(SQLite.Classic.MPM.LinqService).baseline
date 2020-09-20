@@ -3,9 +3,9 @@
 
 SELECT
 	[x].[PersonID],
-	[x].[FirstName],
+	[x].[MiddleName],
 	[x].[LastName],
-	[x].[MiddleName]
+	[x].[FirstName]
 FROM
 	[Person] [x]
 		LEFT JOIN [Patient] [a_Patient] ON [x].[PersonID] = [a_Patient].[PersonID]

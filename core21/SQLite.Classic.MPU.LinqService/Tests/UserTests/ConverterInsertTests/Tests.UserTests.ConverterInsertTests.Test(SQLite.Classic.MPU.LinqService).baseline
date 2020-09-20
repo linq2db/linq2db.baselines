@@ -32,7 +32,7 @@ SELECT last_insert_rowid()
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
-SET     @id = 12
+SET     @id = 8
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -51,7 +51,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
-SET     @id = 12
+SET     @id = 8
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -70,7 +70,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
-SET     @PersonID = 12
+SET     @PersonID = 8
 DECLARE @FirstName NVarChar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName NVarChar(3) -- String
