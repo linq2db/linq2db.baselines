@@ -1,0 +1,267 @@
+﻿BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE Animals8
+(
+	AnimalType    NVarChar(40)  NOT NULL,
+	AnimalType2   NVarChar(40)  NOT NULL,
+	Id            Int           NOT NULL,
+	Name          NVarChar(255)     NULL,
+	Discriminator NVarChar(40)  NOT NULL,
+	EyeId         Int               NULL,
+	"Second"      NVarChar(40)      NULL,
+	"First"       NVarChar(40)      NULL,
+
+	PRIMARY KEY (Id)
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE Eyes8
+(
+	Id Int          NOT NULL,
+	Xy NVarChar(40)     NULL,
+
+	PRIMARY KEY (Id)
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE TestAnimalTable
+(
+	Id           Int NOT NULL,
+	TestAnimalId Int     NULL
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @Xy VarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO Eyes8
+(
+	Id,
+	Xy
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer(4) -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO Animals8
+(
+	Discriminator,
+	Name,
+	Id,
+	AnimalType2,
+	AnimalType,
+	EyeId,
+	"Second",
+	"First"
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @Name VarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator VarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO Animals8
+(
+	AnimalType,
+	AnimalType2,
+	Id,
+	Name,
+	Discriminator
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO TestAnimalTable
+(
+	Id,
+	TestAnimalId
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Integer(4) -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO TestAnimalTable
+(
+	Id,
+	TestAnimalId
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 123
+DECLARE @Xy VarChar(7) -- String
+SET     @Xy = 'test321'
+
+INSERT INTO Eyes8
+(
+	Id,
+	Xy
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	t1.Id,
+	t1.Xy
+FROM
+	Eyes8 t1
+WHERE
+	t1.Id = 123
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Xy VarChar(7) -- String
+SET     @Xy = 'test321'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 123
+
+UPDATE
+	Eyes8
+SET
+	Eyes8.Xy = @Xy
+WHERE
+	Eyes8.Id = @Id
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	t1.Id,
+	t1.Xy
+FROM
+	Eyes8 t1
+WHERE
+	t1.Id = 123
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Xy VarChar(7) -- String
+SET     @Xy = 'test321'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 123
+
+UPDATE
+	Eyes8
+SET
+	Eyes8.Xy = @Xy
+WHERE
+	Eyes8.Id = @Id
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	t1.Id,
+	t1.Xy
+FROM
+	Eyes8 t1
+WHERE
+	t1.Id = 123
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 123
+
+DELETE FROM
+	Eyes8
+WHERE
+	Eyes8.Id = @Id
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE Animals8
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE Eyes8
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE TestAnimalTable
+
