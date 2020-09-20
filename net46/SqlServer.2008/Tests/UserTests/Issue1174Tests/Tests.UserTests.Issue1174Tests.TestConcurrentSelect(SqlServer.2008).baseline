@@ -1,0 +1,50 @@
+﻿BeforeExecute
+-- SqlServer.2008
+
+CREATE TABLE [User]
+(
+	[Id]   UniqueIdentifier NOT NULL,
+	[Name] NVarChar(4000)       NULL,
+
+	CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2008
+
+INSERT INTO [User]
+(
+	[Id],
+	[Name]
+)
+VALUES
+('1daf5ad3-cdff-4764-88d3-49d0d7ba897b',N'User1'),
+('ee3033b8-0b13-42d9-8bc8-171ca2665a77',N'User2')
+
+BeforeExecute
+-- SqlServer.2008 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[User] [t1]
+
+BeforeExecute
+-- SqlServer.2008 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[User] [t1]
+
+BeforeExecute
+-- SqlServer.2008
+
+DROP TABLE [User]
+

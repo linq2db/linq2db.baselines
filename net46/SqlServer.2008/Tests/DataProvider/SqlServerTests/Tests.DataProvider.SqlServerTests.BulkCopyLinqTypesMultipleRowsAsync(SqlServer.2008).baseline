@@ -1,0 +1,34 @@
+﻿BeforeExecute
+-- SqlServer.2008 (asynchronously)
+
+INSERT INTO [dbo].[LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue]
+)
+VALUES
+(4000,1000,'2001-01-11T01:11:21.100',1,'52666a0f-4f4d-4781-9025-ab38e61a305a',NULL,0),
+(4001,1001,'2001-01-11T01:11:21.100',1,'72aaf71a-6d45-403a-b6f6-1544f28f00fc',NULL,1),
+(4002,1002,'2001-01-11T01:11:21.100',1,'f570d7ec-adc0-42ab-a9ae-77b994ad5387',NULL,2),
+(4003,1003,'2001-01-11T01:11:21.100',1,'e68067a6-01f1-40bd-b8f5-7f766d453307',NULL,3),
+(4004,1004,'2001-01-11T01:11:21.100',1,'5b63e6a6-2917-488f-84a6-634cabe2f6cc',NULL,4),
+(4005,1005,'2001-01-11T01:11:21.100',1,'f1880f8b-af58-47c9-8c52-f5bcc81733bb',NULL,5),
+(4006,1006,'2001-01-11T01:11:21.100',1,'930aac05-20ef-4a5b-80b0-bfefa5ef9fdf',NULL,6),
+(4007,1007,'2001-01-11T01:11:21.100',1,'6798243d-f849-4f0d-82dd-123d202de469',NULL,7),
+(4008,1008,'2001-01-11T01:11:21.100',1,'2fdced56-5c2d-48d2-895f-fc7efb71e7b1',NULL,8),
+(4009,1009,'2001-01-11T01:11:21.100',1,'abc4acc8-b69b-4628-8f33-45f21dbb4df8',NULL,9)
+
+BeforeExecute
+-- SqlServer.2008
+
+DELETE [t1]
+FROM
+	[dbo].[LinqDataTypes] [t1]
+WHERE
+	[t1].[ID] >= 4000
+

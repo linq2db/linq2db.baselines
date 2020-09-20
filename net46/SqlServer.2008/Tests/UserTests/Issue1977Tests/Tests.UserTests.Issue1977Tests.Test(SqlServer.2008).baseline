@@ -1,0 +1,33 @@
+﻿BeforeExecute
+-- SqlServer.2008
+
+CREATE TABLE [Issue1977Table]
+(
+	[firstField]  UniqueIdentifier NOT NULL,
+	[secondField] UniqueIdentifier NOT NULL
+)
+
+BeforeExecute
+-- SqlServer.2008
+
+INSERT INTO [Issue1977Table]
+(
+	[firstField],
+	[secondField]
+)
+VALUES
+('4b45804a-9b23-4505-9619-71c34c221d92','d7417021-1a39-400f-9085-fa2326ab935d')
+
+BeforeExecute
+-- SqlServer.2008
+
+SELECT
+	CASE WHEN (N'Issue1977Table/' + Convert(VarChar(36), [f].[firstField]) + N'/' + Convert(VarChar(36), [f].[secondField]) IS NOT NULL AND N'Issue1977Table/' + Convert(VarChar(36), [f].[firstField]) + N'/' + Convert(VarChar(36), [f].[secondField]) = SUBSTRING(((ISNULL((N'/' + N'Issue1977Table'), '') + ISNULL((N'/' + Convert(NVarChar(36), [f].[firstField])), '')) + ISNULL((N'/' + Convert(NVarChar(36), [f].[secondField])), '')), LEN(CONVERT(NVARCHAR(MAX), N'/') + N'!'), 8000)) THEN 1 ELSE 0 END
+FROM
+	[Issue1977Table] [f]
+
+BeforeExecute
+-- SqlServer.2008
+
+DROP TABLE [Issue1977Table]
+
