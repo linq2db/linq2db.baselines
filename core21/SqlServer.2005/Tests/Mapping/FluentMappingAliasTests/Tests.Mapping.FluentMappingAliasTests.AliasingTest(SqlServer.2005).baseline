@@ -1,0 +1,75 @@
+﻿BeforeExecute
+-- SqlServer.2005
+
+CREATE TABLE [InstanceClass]
+(
+	[Id]       Int          NOT NULL,
+	[Value]    Int          NOT NULL,
+	[ValueStr] NVarChar(10)     NULL
+)
+
+BeforeExecute
+-- SqlServer.2005
+
+INSERT INTO [InstanceClass]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+SELECT 1,101,N'Str_1' UNION ALL
+SELECT 2,102,N'Str_2' UNION ALL
+SELECT 3,103,N'Str_3' UNION ALL
+SELECT 4,104,N'Str_4' UNION ALL
+SELECT 5,105,N'Str_5' UNION ALL
+SELECT 6,106,N'Str_6' UNION ALL
+SELECT 7,107,N'Str_7' UNION ALL
+SELECT 8,108,N'Str_8' UNION ALL
+SELECT 9,109,N'Str_9' UNION ALL
+SELECT 10,110,N'Str_10' UNION ALL
+SELECT 11,111,N'Str_11' UNION ALL
+SELECT 12,112,N'Str_12' UNION ALL
+SELECT 13,113,N'Str_13' UNION ALL
+SELECT 14,114,N'Str_14' UNION ALL
+SELECT 15,115,N'Str_15' UNION ALL
+SELECT 16,116,N'Str_16' UNION ALL
+SELECT 17,117,N'Str_17' UNION ALL
+SELECT 18,118,N'Str_18' UNION ALL
+SELECT 19,119,N'Str_19' UNION ALL
+SELECT 20,120,N'Str_20'
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[t].[Value],
+	[t].[ValueStr],
+	[t].[Id]
+FROM
+	[InstanceClass] [t]
+WHERE
+	[t].[Id] > 1 AND
+	[t].[Value] >= 104 AND
+	[t].[Value] <= 115 AND
+	[t].[ValueStr] LIKE N'S%'
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[t].[Value],
+	[t].[ValueStr],
+	[t].[Id]
+FROM
+	[InstanceClass] [t]
+WHERE
+	[t].[Id] > 1 AND
+	[t].[Value] >= 104 AND
+	[t].[Value] <= 115 AND
+	[t].[ValueStr] LIKE N'S%'
+
+BeforeExecute
+-- SqlServer.2005
+
+DROP TABLE [InstanceClass]
+
