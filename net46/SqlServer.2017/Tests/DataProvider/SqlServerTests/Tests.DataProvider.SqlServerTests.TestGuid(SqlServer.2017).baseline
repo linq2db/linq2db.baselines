@@ -1,0 +1,24 @@
+﻿BeforeExecute
+-- SqlServer.2017
+
+SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uniqueidentifier)
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uniqueidentifier)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @p UniqueIdentifier -- Guid
+SET     @p = '2695aaf9-bbfd-4977-9365-24058522ee31'
+
+SELECT @p
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @p UniqueIdentifier -- Guid
+SET     @p = '2695aaf9-bbfd-4977-9365-24058522ee31'
+
+SELECT @p
+

@@ -1,0 +1,84 @@
+﻿BeforeExecute
+-- SqlServer.2017
+
+DELETE [t1]
+FROM
+	[LinqDataTypes] [t1]
+WHERE
+	[t1].[ID] > 1000
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @BinaryValue VarBinary(1) -- Binary
+SET     @BinaryValue = 0x01
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue]
+)
+VALUES
+(
+	1001,
+	1001,
+	CURRENT_TIMESTAMP,
+	1,
+	NewID(),
+	@BinaryValue,
+	1001
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[_].[ID],
+	[_].[MoneyValue],
+	[_].[DateTimeValue],
+	[_].[BoolValue],
+	[_].[GuidValue],
+	[_].[BinaryValue],
+	[_].[SmallIntValue],
+	[_].[StringValue]
+FROM
+	[LinqDataTypes] [_]
+WHERE
+	[_].[ID] = 1001
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
+DECLARE @guid UniqueIdentifier -- Guid
+SET     @guid = 'b1cc9638-72d6-4e10-85fd-bd7f8cea4c05'
+
+SELECT TOP (@take)
+	[_].[ID],
+	[_].[MoneyValue],
+	[_].[DateTimeValue],
+	[_].[BoolValue],
+	[_].[GuidValue],
+	[_].[BinaryValue],
+	[_].[SmallIntValue],
+	[_].[StringValue]
+FROM
+	[LinqDataTypes] [_]
+WHERE
+	[_].[GuidValue] = @guid
+
+BeforeExecute
+-- SqlServer.2017
+
+DELETE [t1]
+FROM
+	[LinqDataTypes] [t1]
+WHERE
+	[t1].[ID] > 1000
+

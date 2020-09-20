@@ -1,0 +1,50 @@
+﻿BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [User]
+(
+	[Id]   UniqueIdentifier NOT NULL,
+	[Name] NVarChar(4000)       NULL,
+
+	CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2017
+
+INSERT INTO [User]
+(
+	[Id],
+	[Name]
+)
+VALUES
+('db089faa-856d-4322-a5ad-8c8566fd0480',N'User1'),
+('bd602e2a-b334-413f-9064-a7ff608672d3',N'User2')
+
+BeforeExecute
+-- SqlServer.2017 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[User] [t1]
+
+BeforeExecute
+-- SqlServer.2017 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[User] [t1]
+
+BeforeExecute
+-- SqlServer.2017
+
+DROP TABLE [User]
+

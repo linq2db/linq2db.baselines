@@ -1,0 +1,33 @@
+﻿BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [Issue1977Table]
+(
+	[firstField]  UniqueIdentifier NOT NULL,
+	[secondField] UniqueIdentifier NOT NULL
+)
+
+BeforeExecute
+-- SqlServer.2017
+
+INSERT INTO [Issue1977Table]
+(
+	[firstField],
+	[secondField]
+)
+VALUES
+('a182febc-1f32-42bd-a1e8-959f47477440','426c4911-999f-4627-90c8-6fdaaacaa946')
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	CASE WHEN (N'Issue1977Table/' + Convert(VarChar(36), [f].[firstField]) + N'/' + Convert(VarChar(36), [f].[secondField]) IS NOT NULL AND N'Issue1977Table/' + Convert(VarChar(36), [f].[firstField]) + N'/' + Convert(VarChar(36), [f].[secondField]) = CONCAT_WS(N'/', N'Issue1977Table', Convert(NVarChar(36), [f].[firstField]), Convert(NVarChar(36), [f].[secondField]))) THEN 1 ELSE 0 END
+FROM
+	[Issue1977Table] [f]
+
+BeforeExecute
+-- SqlServer.2017
+
+DROP TABLE [Issue1977Table]
+
