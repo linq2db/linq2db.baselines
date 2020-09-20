@@ -3,9 +3,9 @@
 
 SELECT
 	[x].[PersonID],
+	[x].[FirstName],
 	[x].[LastName],
-	[x].[MiddleName],
-	[x].[FirstName]
+	[x].[MiddleName]
 FROM
 	[Person] [x]
 WHERE
