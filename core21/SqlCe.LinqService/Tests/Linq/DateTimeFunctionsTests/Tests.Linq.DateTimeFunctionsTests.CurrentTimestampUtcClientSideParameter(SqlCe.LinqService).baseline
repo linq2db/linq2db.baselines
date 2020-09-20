@@ -1,0 +1,8 @@
+﻿BeforeExecute
+-- SqlCe
+DECLARE @CurrentTimestampUtc DateTime
+SET     @CurrentTimestampUtc = '2020-09-20 17:01:54.894'
+
+SELECT
+	@CurrentTimestampUtc
+

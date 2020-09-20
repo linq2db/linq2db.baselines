@@ -1,0 +1,193 @@
+﻿BeforeExecute
+-- SqlCe
+
+CREATE TABLE [Animals13]
+(
+	[AnimalType]    NVarChar(40)  NOT NULL,
+	[AnimalType2]   NVarChar(40)  NOT NULL,
+	[Id]            Int           NOT NULL,
+	[Name]          NVarChar(255)     NULL,
+	[Discriminator] NVarChar(40)  NOT NULL,
+	[EyeId]         Int               NULL,
+	[Second]        NVarChar(40)      NULL,
+	[First]         NVarChar(40)      NULL,
+
+	CONSTRAINT [PK_Animals13] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SqlCe
+
+CREATE TABLE [Eyes13]
+(
+	[Id] Int          NOT NULL,
+	[Xy] NVarChar(40)     NULL,
+
+	CONSTRAINT [PK_Eyes13] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SqlCe
+
+CREATE TABLE [TestAnimalTable]
+(
+	[Id]           Int NOT NULL,
+	[TestAnimalId] Int     NULL
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Xy NVarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO [Eyes13]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name NVarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 NVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType NVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First NVarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO [Animals13]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @AnimalType NVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 NVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Name NVarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator NVarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO [Animals13]
+(
+	[AnimalType],
+	[AnimalType2],
+	[Id],
+	[Name],
+	[Discriminator]
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Int -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Int -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t1].[AnimalType],
+	[t1].[AnimalType2],
+	[t1].[Id],
+	[t1].[Name],
+	[t1].[Discriminator],
+	[t1].[EyeId],
+	[t1].[Second],
+	[t1].[First]
+FROM
+	[Animals13] [t1]
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Animals13]
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Eyes13]
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [TestAnimalTable]
+
