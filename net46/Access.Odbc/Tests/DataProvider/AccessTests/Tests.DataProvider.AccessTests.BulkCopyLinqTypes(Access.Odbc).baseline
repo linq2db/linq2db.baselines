@@ -1,0 +1,856 @@
+﻿BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4000
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1000
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{c7156917-79ad-4a8b-a5dd-4e728a527ebe}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 0
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4001
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1001
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{170aca85-2445-4ce6-ab43-a159e5334640}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 1
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4002
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1002
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{776d76e3-9df1-495e-a52a-7e997862f5ba}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 2
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4003
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1003
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{7edf17b8-6524-4edc-9d28-714af3a194c9}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 3
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4004
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1004
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{a1cfb07e-3f55-4466-9112-3672ce671fcd}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 4
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4005
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1005
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{26979da3-852c-476b-b533-69da8df8c38a}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 5
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4006
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1006
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{f51522a5-df92-4bcc-a865-48dcf73e8f0e}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 6
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4007
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1007
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{d5d81e37-f093-46f5-aceb-c6b98f28000d}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 7
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4008
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1008
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{d897f0d7-b803-4911-b9be-398f427b896d}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 8
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4009
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1009
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{afd25899-ed57-4aab-9499-9fbf7053ae7c}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 9
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DELETE FROM
+	[LinqDataTypes] [t1]
+WHERE
+	[t1].[ID] >= 4000
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4000
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1000
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{c8600391-4220-497b-9f06-22e1635f1840}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 0
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4001
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1001
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{b5551279-a94d-417d-81cc-7687e724997a}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 1
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4002
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1002
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{d14d4659-d6fe-48f7-ac7b-abc5b39dfa18}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 2
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4003
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1003
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{ec16c609-84c7-41d5-9bca-afecbcbf88ee}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 3
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4004
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1004
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{d06baa37-89da-4d7f-9a15-458620c121f0}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 4
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4005
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1005
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{08f3b094-9c8a-41af-bca6-afee132cb9e7}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 5
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4006
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1006
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{72ba4a5d-b04b-4840-8229-c2a021a63d7e}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 6
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4007
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1007
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{7ae4859a-2e2a-4b9e-aeb6-2dd094290f18}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 7
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4008
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1008
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{363d4887-de21-4bdb-8a35-cc0edb1ece78}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 8
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 4009
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1009
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{008a8add-991f-409d-bc69-9aab68548b6a}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 9
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DELETE FROM
+	[LinqDataTypes] [t1]
+WHERE
+	[t1].[ID] >= 4000
+
