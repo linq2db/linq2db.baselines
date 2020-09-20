@@ -1,0 +1,301 @@
+﻿BeforeExecute
+-- Access AccessOleDb
+
+CREATE TABLE [Animals18]
+(
+	[AnimalType]    NVarChar(40)  NOT NULL,
+	[AnimalType2]   NVarChar(40)  NOT NULL,
+	[Id]            Int           NOT NULL,
+	[Name]          NVarChar(255)     NULL,
+	[Discriminator] NVarChar(40)  NOT NULL,
+	[EyeId]         Int               NULL,
+	[Second]        NVarChar(40)      NULL,
+	[First]         NVarChar(40)      NULL,
+
+	CONSTRAINT [PK_Animals18] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- Access AccessOleDb
+
+CREATE TABLE [Eyes18]
+(
+	[Id] Int          NOT NULL,
+	[Xy] NVarChar(40)     NULL,
+
+	CONSTRAINT [PK_Eyes18] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- Access AccessOleDb
+
+CREATE TABLE [TestAnimalTable]
+(
+	[Id]           Int NOT NULL,
+	[TestAnimalId] Int     NULL
+)
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Xy VarWChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO [Eyes18]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @Discriminator VarWChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name VarWChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 VarWChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarWChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarWChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarWChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO [Animals18]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @Discriminator VarWChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+DECLARE @Name VarWChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @AnimalType2 VarWChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarWChar(3) -- String
+SET     @AnimalType = 'Big'
+
+INSERT INTO [Animals18]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType
+)
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT TOP 1
+	[t1].[Discriminator],
+	[t1].[Name],
+	[t1].[Id],
+	[t1].[AnimalType2],
+	[t1].[AnimalType],
+	[t1].[EyeId],
+	[t1].[Second],
+	[t1].[First]
+FROM
+	[Animals18] [t1]
+WHERE
+	[t1].[Discriminator] = 'Dog'
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @Discriminator VarWChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name VarWChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @AnimalType2 VarWChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarWChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarWChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarWChar(1) -- String
+SET     @DogName_First = 'a'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+
+UPDATE
+	[Animals18] [t1]
+SET
+	[t1].[Discriminator] = @Discriminator,
+	[t1].[Name] = @Name,
+	[t1].[AnimalType2] = @AnimalType2,
+	[t1].[AnimalType] = @AnimalType,
+	[t1].[EyeId] = @EyeId,
+	[t1].[Second] = @DogName_Second,
+	[t1].[First] = @DogName_First
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @AnimalType VarWChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarWChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Name VarWChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Discriminator VarWChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarWChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarWChar(1) -- String
+SET     @DogName_First = 'a'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+
+UPDATE
+	[Animals18] [t1]
+SET
+	[t1].[AnimalType] = @AnimalType,
+	[t1].[AnimalType2] = @AnimalType2,
+	[t1].[Name] = @Name,
+	[t1].[Discriminator] = @Discriminator,
+	[t1].[EyeId] = @EyeId,
+	[t1].[Second] = @DogName_Second,
+	[t1].[First] = @DogName_First
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @Discriminator VarWChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name VarWChar -- String
+SET     @Name = NULL
+DECLARE @Id Integer -- Int32
+SET     @Id = 0
+DECLARE @AnimalType2 VarWChar(5) -- String
+SET     @AnimalType2 = 'Small'
+DECLARE @AnimalType VarWChar(5) -- String
+SET     @AnimalType = 'Small'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = NULL
+DECLARE @DogName_Second VarWChar -- String
+SET     @DogName_Second = NULL
+DECLARE @DogName_First VarWChar -- String
+SET     @DogName_First = NULL
+
+INSERT INTO [Animals18]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Animals18]
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Eyes18]
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [TestAnimalTable]
+

@@ -1,0 +1,14 @@
+﻿BeforeExecute
+-- Access AccessOleDb
+DECLARE @p Guid
+SET     @p = '{5b43445c-1370-4eff-ba2d-5b75c3ae6106}'
+
+SELECT @p
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @p Guid
+SET     @p = '{5b43445c-1370-4eff-ba2d-5b75c3ae6106}'
+
+SELECT @p
+

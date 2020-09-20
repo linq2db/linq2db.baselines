@@ -1,0 +1,8 @@
+﻿BeforeExecute
+-- Access AccessOleDb
+DECLARE @CurrentTimestampUtc Date -- DateTime
+SET     @CurrentTimestampUtc = #2020-09-20 16:48:36#
+
+SELECT
+	@CurrentTimestampUtc
+
