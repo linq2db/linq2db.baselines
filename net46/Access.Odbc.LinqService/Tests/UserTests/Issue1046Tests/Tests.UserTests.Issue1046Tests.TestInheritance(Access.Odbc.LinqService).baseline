@@ -1,0 +1,61 @@
+﻿BeforeExecute
+-- Access.Odbc AccessODBC
+
+CREATE TABLE [Task]
+(
+	[Id]         Int           NOT NULL,
+	[TargetName] NVarChar(255)     NULL,
+	[BdaValue]   NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_Task] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @TargetName NVarChar(12) -- String
+SET     @TargetName = 'bda.Requests'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @BdaValue NVarChar(9) -- String
+SET     @BdaValue = 'Bda value'
+
+INSERT INTO [Task]
+(
+	[TargetName],
+	[Id],
+	[BdaValue]
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	[p].[Id],
+	[p].[TargetName],
+	[p].[BdaValue]
+FROM
+	[Task] [p]
+WHERE
+	[p].[TargetName] = 'bda.Requests'
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	[p].[BdaValue]
+FROM
+	[Task] [p]
+WHERE
+	[p].[TargetName] = 'bda.Requests'
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Task]
+

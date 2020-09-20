@@ -1,0 +1,14 @@
+﻿BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @p UniqueIdentifier -- Guid
+SET     @p = '{ad1f2c41-8e4c-4857-a927-07b1fbcdd2cd}'
+
+SELECT ?
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @p UniqueIdentifier -- Guid
+SET     @p = '{ad1f2c41-8e4c-4857-a927-07b1fbcdd2cd}'
+
+SELECT ?
+
