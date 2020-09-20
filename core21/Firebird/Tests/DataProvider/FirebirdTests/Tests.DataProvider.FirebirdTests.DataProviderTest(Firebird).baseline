@@ -1,0 +1,13 @@
+﻿BeforeExecute
+--  Firebird
+DECLARE @Now TimeStamp -- DateTime
+SET     @Now = CAST('2020-09-20 17:45:09.665' AS timestamp)
+
+SELECT
+	"t".ID,
+	"t"."timestampDataType"
+FROM
+	"AllTypes" "t"
+WHERE
+	"t"."timestampDataType" = @Now
+

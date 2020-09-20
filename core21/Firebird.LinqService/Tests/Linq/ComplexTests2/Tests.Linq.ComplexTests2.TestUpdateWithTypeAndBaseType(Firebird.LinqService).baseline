@@ -1,0 +1,312 @@
+﻿BeforeExecute
+-- Firebird
+
+CREATE TABLE "Animals18"
+(
+	"AnimalType"    VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
+	"AnimalType2"   VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
+	"Id"            Int                                    NOT NULL,
+	"Name"          VarChar(255) CHARACTER SET UNICODE_FSS,
+	"Discriminator" VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
+	"EyeId"         Int,
+	"Second"        VarChar(40) CHARACTER SET UNICODE_FSS,
+	"First"         VarChar(40) CHARACTER SET UNICODE_FSS,
+
+	CONSTRAINT "PK_Animals18" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- Firebird
+
+CREATE TABLE "Eyes18"
+(
+	"Id" Int                                   NOT NULL,
+	"Xy" VarChar(40) CHARACTER SET UNICODE_FSS,
+
+	CONSTRAINT "PK_Eyes18" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- Firebird
+
+CREATE TABLE "TestAnimalTable"
+(
+	"Id"           Int NOT NULL,
+	"TestAnimalId" Int
+)
+
+BeforeExecute
+-- Firebird
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Xy VarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO "Eyes18"
+(
+	"Id",
+	"Xy"
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- Firebird
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO "Animals18"
+(
+	"Discriminator",
+	"Name",
+	"Id",
+	"AnimalType2",
+	"AnimalType",
+	"EyeId",
+	"Second",
+	"First"
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- Firebird
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Name VarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator VarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO "Animals18"
+(
+	"AnimalType",
+	"AnimalType2",
+	"Id",
+	"Name",
+	"Discriminator"
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- Firebird
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO "TestAnimalTable"
+(
+	"Id",
+	"TestAnimalId"
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Firebird
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO "TestAnimalTable"
+(
+	"Id",
+	"TestAnimalId"
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t1"."Discriminator",
+	"t1"."Name",
+	"t1"."Id",
+	"t1"."AnimalType2",
+	"t1"."AnimalType",
+	"t1"."EyeId",
+	"t1"."Second",
+	"t1"."First"
+FROM
+	"Animals18" "t1"
+WHERE
+	"t1"."Discriminator" = 'Dog'
+
+BeforeExecute
+-- Firebird
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarChar(1) -- String
+SET     @DogName_First = 'a'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+
+UPDATE
+	"Animals18"
+SET
+	"Animals18"."Discriminator" = @Discriminator,
+	"Animals18"."Name" = @Name,
+	"Animals18"."AnimalType2" = @AnimalType2,
+	"Animals18"."AnimalType" = @AnimalType,
+	"Animals18"."EyeId" = @EyeId,
+	"Animals18"."Second" = @DogName_Second,
+	"Animals18"."First" = @DogName_First
+WHERE
+	"Animals18"."Id" = @Id
+
+BeforeExecute
+-- Firebird
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarChar(1) -- String
+SET     @DogName_First = 'a'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+
+UPDATE
+	"Animals18"
+SET
+	"Animals18"."AnimalType" = @AnimalType,
+	"Animals18"."AnimalType2" = @AnimalType2,
+	"Animals18"."Name" = @Name,
+	"Animals18"."Discriminator" = @Discriminator,
+	"Animals18"."EyeId" = @EyeId,
+	"Animals18"."Second" = @DogName_Second,
+	"Animals18"."First" = @DogName_First
+WHERE
+	"Animals18"."Id" = @Id
+
+BeforeExecute
+-- Firebird
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar -- String
+SET     @Name = NULL
+DECLARE @Id Integer -- Int32
+SET     @Id = 0
+DECLARE @AnimalType2 VarChar(5) -- String
+SET     @AnimalType2 = 'Small'
+DECLARE @AnimalType VarChar(5) -- String
+SET     @AnimalType = 'Small'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = NULL
+DECLARE @DogName_Second VarChar -- String
+SET     @DogName_Second = NULL
+DECLARE @DogName_First VarChar -- String
+SET     @DogName_First = NULL
+
+INSERT INTO "Animals18"
+(
+	"Discriminator",
+	"Name",
+	"Id",
+	"AnimalType2",
+	"AnimalType",
+	"EyeId",
+	"Second",
+	"First"
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Animals18')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Animals18"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Eyes18')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Eyes18"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestAnimalTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TestAnimalTable"';
+END
+
