@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [xxPatient93]
+DROP TABLE IF EXISTS [xxPatient70]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [xxPatient93]
+CREATE TABLE [xxPatient70]
 (
 	[PersonID]  INTEGER       NOT NULL,
 	[Diagnosis] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_xxPatient93] PRIMARY KEY ([PersonID])
+	CONSTRAINT [PK_xxPatient70] PRIMARY KEY ([PersonID])
 )
 
 BeforeExecute
@@ -22,11 +22,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[xxPatient93]
+	[xxPatient70]
 SET
 	[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient93].[PersonID] = @PersonID
+	[xxPatient70].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO [xxPatient93]
+INSERT INTO [xxPatient70]
 (
 	[PersonID],
 	[Diagnosis]
@@ -54,11 +54,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[xxPatient93]
+	[xxPatient70]
 SET
 	[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient93].[PersonID] = @PersonID
+	[xxPatient70].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO [xxPatient93]
+INSERT INTO [xxPatient70]
 (
 	[PersonID],
 	[Diagnosis]
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient93] [t1]
+	[xxPatient70] [t1]
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -94,11 +94,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[xxPatient93]
+	[xxPatient70]
 SET
 	[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient93].[PersonID] = @PersonID
+	[xxPatient70].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -108,11 +108,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[xxPatient93]
+	[xxPatient70]
 SET
 	[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient93].[PersonID] = @PersonID
+	[xxPatient70].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient93] [t1]
+	[xxPatient70] [t1]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [xxPatient93]
+DROP TABLE IF EXISTS [xxPatient70]
 

@@ -1,0 +1,304 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE [Animals54]
+(
+	[AnimalType]    NVarChar(40)  NOT NULL,
+	[AnimalType2]   NVarChar(40)  NOT NULL,
+	[Id]            INTEGER       NOT NULL,
+	[Name]          NVarChar(255)     NULL,
+	[Discriminator] NVarChar(40)  NOT NULL,
+	[EyeId]         INTEGER           NULL,
+	[Second]        NVarChar(40)      NULL,
+	[First]         NVarChar(40)      NULL,
+
+	CONSTRAINT [PK_Animals54] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE [Eyes54]
+(
+	[Id] INTEGER      NOT NULL,
+	[Xy] NVarChar(40)     NULL,
+
+	CONSTRAINT [PK_Eyes54] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE [TestAnimalTable]
+(
+	[Id]           INTEGER NOT NULL,
+	[TestAnimalId] INTEGER     NULL
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Xy NVarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO [Eyes54]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name NVarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 NVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType NVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId  -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First NVarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO [Animals54]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Discriminator NVarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+DECLARE @Name NVarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @AnimalType2 NVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType NVarChar(3) -- String
+SET     @AnimalType = 'Big'
+
+INSERT INTO [Animals54]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId  -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId  -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[t1].[Discriminator],
+	[t1].[Name],
+	[t1].[Id],
+	[t1].[AnimalType2],
+	[t1].[AnimalType],
+	[t1].[EyeId],
+	[t1].[Second],
+	[t1].[First]
+FROM
+	[Animals54] [t1]
+WHERE
+	[t1].[Discriminator] = 'Dog'
+LIMIT @take
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name NVarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @AnimalType2 NVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType NVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId  -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First NVarChar(1) -- String
+SET     @DogName_First = 'a'
+DECLARE @Id  -- Int32
+SET     @Id = 1
+
+UPDATE
+	[Animals54]
+SET
+	[Discriminator] = @Discriminator,
+	[Name] = @Name,
+	[AnimalType2] = @AnimalType2,
+	[AnimalType] = @AnimalType,
+	[EyeId] = @EyeId,
+	[Second] = @DogName_Second,
+	[First] = @DogName_First
+WHERE
+	[Animals54].[Id] = @Id
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @AnimalType NVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 NVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Name NVarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @EyeId  -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First NVarChar(1) -- String
+SET     @DogName_First = 'a'
+DECLARE @Id  -- Int32
+SET     @Id = 1
+
+UPDATE
+	[Animals54]
+SET
+	[AnimalType] = @AnimalType,
+	[AnimalType2] = @AnimalType2,
+	[Name] = @Name,
+	[Discriminator] = @Discriminator,
+	[EyeId] = @EyeId,
+	[Second] = @DogName_Second,
+	[First] = @DogName_First
+WHERE
+	[Animals54].[Id] = @Id
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name NVarChar -- String
+SET     @Name = NULL
+DECLARE @Id  -- Int32
+SET     @Id = 0
+DECLARE @AnimalType2 NVarChar(5) -- String
+SET     @AnimalType2 = 'Small'
+DECLARE @AnimalType NVarChar(5) -- String
+SET     @AnimalType = 'Small'
+DECLARE @EyeId  -- Int32
+SET     @EyeId = NULL
+DECLARE @DogName_Second NVarChar -- String
+SET     @DogName_Second = NULL
+DECLARE @DogName_First NVarChar -- String
+SET     @DogName_First = NULL
+
+INSERT INTO [Animals54]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [Animals54]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [Eyes54]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [TestAnimalTable]
+
