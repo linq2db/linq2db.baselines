@@ -36,8 +36,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[Id],
 	[p].[TargetName],
+	[p].[Id],
 	[p].[BdaValue]
 FROM
 	[Task] [p]
