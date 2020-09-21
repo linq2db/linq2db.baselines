@@ -66,9 +66,9 @@ CREATE TABLE [tblWorkstationGroup]
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @dateMin Date -- DateTime
-SET     @dateMin = #2020-09-20 16:50:40#
+SET     @dateMin = #2020-09-21 10:49:39#
 DECLARE @dateMax Date -- DateTime
-SET     @dateMax = #2020-09-20 16:50:40#
+SET     @dateMax = #2020-09-21 10:49:39#
 DECLARE @sectorId Integer -- Int32
 SET     @sectorId = 1
 
