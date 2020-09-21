@@ -30,5 +30,5 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[17BA2D0D5E65\SQLEXPRESS].[TestData2017].[dbo].[LinqDataTypes] [t1]
+	[mssql].[TestData2017].[dbo].[LinqDataTypes] [t1]
 

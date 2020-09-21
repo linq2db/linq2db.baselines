@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = Tests.DataProvider.SqlServerTypesTests+<GetSqlDataRecords>d__22
+SET     @table_1 = Tests.DataProvider.SqlServerTypesTests+<GetSqlDataRecordsMS>d__23
 
 SELECT
 	[record_1].[Id],
