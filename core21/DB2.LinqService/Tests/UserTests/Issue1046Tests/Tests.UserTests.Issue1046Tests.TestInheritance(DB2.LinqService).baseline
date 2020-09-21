@@ -36,8 +36,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."TargetName",
 	"p"."Id",
+	"p"."TargetName",
 	"p"."BdaValue"
 FROM
 	"Task" "p"
