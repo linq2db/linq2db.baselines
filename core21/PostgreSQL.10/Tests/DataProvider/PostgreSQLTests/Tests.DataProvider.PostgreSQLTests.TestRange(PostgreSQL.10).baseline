@@ -1,0 +1,62 @@
+﻿BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE "NpgsqlTableWithDateRanges"
+(
+	"Id"                 Int       NOT NULL,
+	"DateRangeInclusive" daterange NOT NULL,
+	"DateRangeExclusive" daterange NOT NULL,
+	"TSRange"            tsrange   NOT NULL,
+	"TSTZRange"          tstzrange NOT NULL
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 0
+DECLARE @DateRangeInclusive 1073741831 -- Object
+SET     @DateRangeInclusive = [2/3/00 12:00:00 AM,3/3/00 12:00:00 AM]
+DECLARE @DateRangeExclusive 1073741831 -- Object
+SET     @DateRangeExclusive = (2/3/00 12:00:00 AM,3/3/00 12:00:00 AM)
+DECLARE @TSRange 1073741845 -- Object
+SET     @TSRange = [2/3/00 4:05:06 AM,4/3/00 4:05:06 AM]
+DECLARE @TSTZRange 1073741850 -- Object
+SET     @TSTZRange = [4/3/00 4:05:06 AM,5/3/00 4:05:06 AM]
+
+INSERT INTO "NpgsqlTableWithDateRanges"
+(
+	"Id",
+	"DateRangeInclusive",
+	"DateRangeExclusive",
+	"TSRange",
+	"TSTZRange"
+)
+VALUES
+(
+	:Id,
+	:DateRangeInclusive,
+	:DateRangeExclusive,
+	:TSRange,
+	:TSTZRange
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	t1."Id",
+	t1."DateRangeInclusive",
+	t1."DateRangeExclusive",
+	t1."TSRange",
+	t1."TSTZRange"
+FROM
+	"NpgsqlTableWithDateRanges" t1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE "NpgsqlTableWithDateRanges"
+
