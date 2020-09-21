@@ -1,0 +1,74 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+DELETE FROM
+	InheritanceParent t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+MERGE INTO InheritanceParent Target
+USING (	SELECT 143 Key1,NULL Key2,1 Data_1 FROM sys.dual) Source
+ON (Target.InheritanceParentId = Source.Key1 AND (Target.Name IS NULL AND Source.Key2 IS NULL OR Target.Name = Source.Key2))
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.TypeDiscriminator = Source.Data_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	InheritanceParentId,
+	Name,
+	TypeDiscriminator
+)
+VALUES
+(
+	Source.Key1,
+	Source.Key2,
+	Source.Data_1
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SELECT
+	Count(*)
+FROM
+	InheritanceParent t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+MERGE INTO InheritanceParent Target
+USING (	SELECT 143 Key1,NULL Key2,1 Data_1 FROM sys.dual) Source
+ON (Target.InheritanceParentId = Source.Key1 AND (Target.Name IS NULL AND Source.Key2 IS NULL OR Target.Name = Source.Key2))
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.TypeDiscriminator = Source.Data_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	InheritanceParentId,
+	Name,
+	TypeDiscriminator
+)
+VALUES
+(
+	Source.Key1,
+	Source.Key2,
+	Source.Data_1
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SELECT
+	Count(*)
+FROM
+	InheritanceParent t1
+
