@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @CurrentTimestampUtc DateTime
-SET     @CurrentTimestampUtc = #2020-09-20 16:45:05#
+SET     @CurrentTimestampUtc = #2020-09-21 10:43:44#
 
 SELECT
 	CVar(?)
