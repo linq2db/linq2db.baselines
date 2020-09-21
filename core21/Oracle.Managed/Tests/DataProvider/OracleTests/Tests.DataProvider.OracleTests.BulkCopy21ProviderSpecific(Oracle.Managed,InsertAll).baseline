@@ -11,9 +11,9 @@ BeforeExecute
 
 INSERT ALL
 	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1003,0,NULL,NULL,1,Cast('659112effe6ff94dbb6bbb16e413c883' as raw(16)),NULL,NULL,NULL,NULL)
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1004,0,TO_TIMESTAMP('2020-09-20 20:20:22.366229', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,NULL,2,1532334,NULL,NULL)
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1005,1,TO_TIMESTAMP('2020-09-20 20:20:22.366236', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,NULL,5,NULL,NULL,NULL)
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1006,2,TO_TIMESTAMP('2020-09-20 20:20:22.366236', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,NULL,6,153,NULL,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1004,0,TO_TIMESTAMP('2020-09-21 13:41:15.419367', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,NULL,2,1532334,NULL,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1005,1,TO_TIMESTAMP('2020-09-21 13:41:15.419369', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,NULL,5,NULL,NULL,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1006,2,TO_TIMESTAMP('2020-09-21 13:41:15.419370', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,NULL,6,153,NULL,NULL)
 SELECT * FROM dual
 
 BeforeExecute
