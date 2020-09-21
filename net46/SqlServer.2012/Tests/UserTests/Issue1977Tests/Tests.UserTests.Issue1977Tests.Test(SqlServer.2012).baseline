@@ -16,7 +16,7 @@ INSERT INTO [Issue1977Table]
 	[secondField]
 )
 VALUES
-('7c5ebb45-8114-4bee-8a25-e95b240dd60b','ccb04b7a-9c99-4ea9-a341-c782e361fd5b')
+('bc7b663d-0fde-4327-8f92-5d8cc3a11d11','a948600d-de21-4f74-8ac2-9516b287076e')
 
 BeforeExecute
 -- SqlServer.2012
