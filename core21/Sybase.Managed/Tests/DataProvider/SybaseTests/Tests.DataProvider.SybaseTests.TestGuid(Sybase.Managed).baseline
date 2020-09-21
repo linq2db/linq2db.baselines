@@ -11,14 +11,14 @@ SELECT '6F9619FF-8B86-D011-B42D-00C04FC964FF'
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Char(36) -- AnsiStringFixedLength
-SET     @p = '2b6c516e-1081-40ee-824b-697eaffd2d8d'
+SET     @p = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT @p
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Char(36) -- AnsiStringFixedLength
-SET     @p = '2b6c516e-1081-40ee-824b-697eaffd2d8d'
+SET     @p = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT @p
 
