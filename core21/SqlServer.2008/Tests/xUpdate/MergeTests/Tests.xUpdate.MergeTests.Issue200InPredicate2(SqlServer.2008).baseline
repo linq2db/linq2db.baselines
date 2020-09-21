@@ -1,0 +1,47 @@
+﻿BeforeExecute
+-- SqlServer.2008
+
+DELETE [t1]
+FROM
+	[AllTypes2] [t1]
+
+BeforeExecute
+-- SqlServer.2008
+DECLARE @Now DateTime2
+SET     @Now = '2020-09-21T11:23:08.8167269'
+
+MERGE INTO [AllTypes2] [Target]
+USING (	VALUES
+		('2020-09-21T11:23:08.8094251','2020-09-21 11:23:08.8094256 +00:00'),
+		('2020-09-21T11:23:08.8094252','2020-09-21 11:23:08.8094257 +00:00')) [Source]
+(
+	[datetime2DataType], 
+	[datetimeoffsetDataType]
+)
+ON ([Source].[datetime2DataType] <> @Now AND ([Source].[datetimeoffsetDataType] IS NULL OR [Source].[datetimeoffsetDataType] <> SYSDATETIMEOFFSET()))
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[datetimeoffsetDataType],
+	[datetime2DataType]
+)
+VALUES
+(
+	[Source].[datetimeoffsetDataType],
+	[Source].[datetime2DataType]
+)
+;
+
+BeforeExecute
+-- SqlServer.2008
+
+SELECT
+	[t1].[ID],
+	[t1].[datetimeoffsetDataType],
+	[t1].[datetime2DataType]
+FROM
+	[AllTypes2] [t1]
+ORDER BY
+	[t1].[ID]
+
