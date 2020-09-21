@@ -1,0 +1,856 @@
+﻿BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4000
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1000
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{49371110-a66d-4cdb-91f0-69856d270e00}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 0
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4001
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1001
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{0df1856e-0675-4c8e-9f53-ac444ad2a69d}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 1
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4002
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1002
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{9c18be7a-f552-47b5-9d0f-1082e6af9bf5}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 2
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4003
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1003
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{5eb022b4-3a0c-4633-af27-b6114d834dfc}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 3
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4004
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1004
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{5fddd9d7-2a77-4507-91c7-20b4c7734a8f}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 4
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4005
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1005
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{6380519d-ae76-447c-b7d5-f2720e130500}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 5
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4006
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1006
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{57966271-fb15-465b-853e-f5ab47fba9a0}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 6
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4007
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1007
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{efce12af-318e-4d9d-856a-f52a83f11dab}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 7
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4008
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1008
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{8bdadb2c-7096-4826-b645-ad3b6259b430}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 8
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4009
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1009
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{04047be3-cc15-4320-9829-7101980ebc63}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 9
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb
+
+DELETE FROM
+	[LinqDataTypes] [t1]
+WHERE
+	[t1].[ID] >= 4000
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4000
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1000
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{548e841f-5ab7-4ec1-9798-78082f2240ca}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 0
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4001
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1001
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{2f2a6ef0-a955-4dea-b3fd-0b0cc6bf9ae5}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 1
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4002
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1002
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{fd15a6d4-5c34-48c1-93e4-407ef4eb870e}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 2
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4003
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1003
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{3ecb7ff6-600a-4cc3-bf34-f4ed5300db64}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 3
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4004
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1004
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{02dc9a89-251f-47fc-96f5-fb79d32ec4d8}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 4
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4005
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1005
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{54839681-a847-483d-b5e3-b9ce0975ccba}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 5
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4006
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1006
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{6f661379-424b-4e1e-887f-7fafa362a494}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 6
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4007
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1007
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{1fefd955-55d2-4b58-98eb-822c88e1ffc9}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 7
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4008
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1008
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{657e4aac-4b9a-4e0d-be11-b46e713268e9}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 8
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb (asynchronously)
+DECLARE @ID Integer -- Int32
+SET     @ID = 4009
+DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+SET     @MoneyValue = 1009
+DECLARE @DateTimeValue Date -- DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
+DECLARE @GuidValue Guid
+SET     @GuidValue = '{ecd7080b-5214-4475-8e74-84a7629257f5}'
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 9
+DECLARE @StringValue VarWChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[BoolValue],
+	[GuidValue],
+	[BinaryValue],
+	[SmallIntValue],
+	[StringValue]
+)
+VALUES
+(
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue,
+	@StringValue
+)
+
+BeforeExecute
+-- Access AccessOleDb
+
+DELETE FROM
+	[LinqDataTypes] [t1]
+WHERE
+	[t1].[ID] >= 4000
+
