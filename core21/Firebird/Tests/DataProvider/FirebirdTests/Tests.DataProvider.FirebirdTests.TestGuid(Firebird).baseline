@@ -1,0 +1,24 @@
+﻿BeforeExecute
+-- Firebird
+
+SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as char(38)) FROM "Dual"
+
+BeforeExecute
+-- Firebird
+
+SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as char(38)) FROM "Dual"
+
+BeforeExecute
+-- Firebird
+DECLARE @p Guid
+SET     @p = 'b981ddbc-ef26-4620-b3e1-54d8ed776288'
+
+SELECT Cast(@p as char(38)) FROM "Dual"
+
+BeforeExecute
+-- Firebird
+DECLARE @p Guid
+SET     @p = 'b981ddbc-ef26-4620-b3e1-54d8ed776288'
+
+SELECT Cast(@p as char(38)) FROM "Dual"
+

@@ -1,0 +1,10 @@
+﻿BeforeExecute
+-- Firebird
+
+SELECT
+	CURRENT_TIMESTAMP
+FROM
+	"Person" "p"
+WHERE
+	"p"."PersonID" = 1
+
