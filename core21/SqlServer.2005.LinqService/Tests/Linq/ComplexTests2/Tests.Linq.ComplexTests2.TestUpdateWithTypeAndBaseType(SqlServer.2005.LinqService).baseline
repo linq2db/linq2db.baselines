@@ -1,0 +1,310 @@
+﻿BeforeExecute
+-- SqlServer.2005
+
+CREATE TABLE [Animals18]
+(
+	[AnimalType]    NVarChar(40)   NOT NULL,
+	[AnimalType2]   NVarChar(40)   NOT NULL,
+	[Id]            Int            NOT NULL,
+	[Name]          NVarChar(4000)     NULL,
+	[Discriminator] NVarChar(40)   NOT NULL,
+	[EyeId]         Int                NULL,
+	[Second]        NVarChar(40)       NULL,
+	[First]         NVarChar(40)       NULL,
+
+	CONSTRAINT [PK_Animals18] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2005
+
+CREATE TABLE [Eyes18]
+(
+	[Id] Int          NOT NULL,
+	[Xy] NVarChar(40)     NULL,
+
+	CONSTRAINT [PK_Eyes18] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2005
+
+CREATE TABLE [TestAnimalTable]
+(
+	[Id]           Int NOT NULL,
+	[TestAnimalId] Int     NULL
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Xy NVarChar(40) -- String
+SET     @Xy = N'Hallo'
+
+INSERT INTO [Eyes18]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'Dog'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'FirstDog'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Big'
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(40) -- String
+SET     @DogName_Second = N'b'
+DECLARE @DogName_First NVarChar(40) -- String
+SET     @DogName_First = N'a'
+
+INSERT INTO [Animals18]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Big'
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'WildAnimal'
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'WildAnimal'
+
+INSERT INTO [Animals18]
+(
+	[AnimalType],
+	[AnimalType2],
+	[Id],
+	[Name],
+	[Discriminator]
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Int -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Int -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t1].[Discriminator],
+	[t1].[Name],
+	[t1].[Id],
+	[t1].[AnimalType2],
+	[t1].[AnimalType],
+	[t1].[EyeId],
+	[t1].[Second],
+	[t1].[First]
+FROM
+	[Animals18] [t1]
+WHERE
+	[t1].[Discriminator] = N'Dog'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'Dog'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'FirstDog'
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Big'
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(40) -- String
+SET     @DogName_Second = N'b'
+DECLARE @DogName_First NVarChar(40) -- String
+SET     @DogName_First = N'a'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+UPDATE
+	[t1]
+SET
+	[t1].[Discriminator] = @Discriminator,
+	[t1].[Name] = @Name,
+	[t1].[AnimalType2] = @AnimalType2,
+	[t1].[AnimalType] = @AnimalType,
+	[t1].[EyeId] = @EyeId,
+	[t1].[Second] = @DogName_Second,
+	[t1].[First] = @DogName_First
+FROM
+	[Animals18] [t1]
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Big'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'FirstDog'
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'Dog'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(40) -- String
+SET     @DogName_Second = N'b'
+DECLARE @DogName_First NVarChar(40) -- String
+SET     @DogName_First = N'a'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+UPDATE
+	[t1]
+SET
+	[t1].[AnimalType] = @AnimalType,
+	[t1].[AnimalType2] = @AnimalType2,
+	[t1].[Name] = @Name,
+	[t1].[Discriminator] = @Discriminator,
+	[t1].[EyeId] = @EyeId,
+	[t1].[Second] = @DogName_Second,
+	[t1].[First] = @DogName_First
+FROM
+	[Animals18] [t1]
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'Dog'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = NULL
+DECLARE @Id Int -- Int32
+SET     @Id = 0
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Small'
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Small'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = NULL
+DECLARE @DogName_Second NVarChar(40) -- String
+SET     @DogName_Second = NULL
+DECLARE @DogName_First NVarChar(40) -- String
+SET     @DogName_First = NULL
+
+INSERT INTO [Animals18]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Animals18]', N'U') IS NOT NULL)
+	DROP TABLE [Animals18]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Eyes18]', N'U') IS NOT NULL)
+	DROP TABLE [Eyes18]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[TestAnimalTable]', N'U') IS NOT NULL)
+	DROP TABLE [TestAnimalTable]
+
