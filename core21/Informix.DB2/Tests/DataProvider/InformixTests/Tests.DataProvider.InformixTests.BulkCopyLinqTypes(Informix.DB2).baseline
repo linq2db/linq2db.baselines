@@ -9,7 +9,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = 'e0c6d3f3-e167-4c3b-8a25-7581e183a474'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0000'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -51,7 +51,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = '3f4d7474-f0e5-4087-9bce-764c83b38c46'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0001'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -93,7 +93,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = '7d44af12-6865-4f98-a3ad-4dd69a283f5a'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0002'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -135,7 +135,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = '2ec2378e-ccc4-4457-94a4-9dff24413a04'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0003'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -177,7 +177,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = '5c931c19-53b7-41cd-a67e-9d48703bd474'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0004'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -219,7 +219,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = 'f2db0466-523d-401e-8015-9f662655edae'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0005'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -261,7 +261,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = 'fef95644-1a54-4fc4-8d84-2c0dd25daa20'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0006'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -303,7 +303,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = '84d80761-9cbd-4076-9a02-9c24657048dd'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0007'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -345,7 +345,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = 'e990ccf5-c50b-4b8f-9094-4ad4377152f5'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0008'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -387,7 +387,7 @@ SET     @DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S
 DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = '818b01da-8eb3-462f-98fe-760e66851fc6'
+SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0009'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt(2) -- Int16
