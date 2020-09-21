@@ -452,9 +452,9 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-	[t].[Id],
 	[t].[Value],
-	[t].[ValueStr]
+	[t].[ValueStr],
+	[t].[Id]
 FROM
 	[InstanceClass] [t]
 WHERE
@@ -467,9 +467,9 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-	[t].[Id],
 	[t].[Value],
-	[t].[ValueStr]
+	[t].[ValueStr],
+	[t].[Id]
 FROM
 	[InstanceClass] [t]
 WHERE

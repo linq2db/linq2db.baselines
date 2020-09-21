@@ -8,19 +8,19 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @datetime2DataType_2 DateTime2
-SET     @datetime2DataType_2 = '2020-09-20T17:12:55.0026606'
+SET     @datetime2DataType_2 = '2020-09-21T11:11:08.8464535'
 DECLARE @datetimeoffsetDataType_2 DateTimeOffset
-SET     @datetimeoffsetDataType_2 = '2020-09-20 17:12:55.0026606 +00:00'
+SET     @datetimeoffsetDataType_2 = '2020-09-21 11:11:08.8464535 +00:00'
 DECLARE @dto2 DateTimeOffset
-SET     @dto2 = '2020-09-20 17:12:55.0026609 +00:00'
+SET     @dto2 = '2020-09-21 11:11:08.8464538 +00:00'
 DECLARE @dt2 DateTime2
-SET     @dt2 = '2020-09-20T17:12:55.0026609'
+SET     @dt2 = '2020-09-21T11:11:08.8464538'
 
 SET IDENTITY_INSERT [AllTypes2] ON
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		('2020-09-20T17:12:55.0026606','2020-09-20 17:12:55.0026606 +00:00',1),
-		('2020-09-20T17:12:55.0026607','2020-09-20 17:12:55.0026607 +00:00',2)) [Source]
+		('2020-09-21T11:11:08.8464535','2020-09-21 11:11:08.8464535 +00:00',1),
+		('2020-09-21T11:11:08.8464536','2020-09-21 11:11:08.8464536 +00:00',2)) [Source]
 (
 	[datetime2DataType], 
 	[datetimeoffsetDataType], 

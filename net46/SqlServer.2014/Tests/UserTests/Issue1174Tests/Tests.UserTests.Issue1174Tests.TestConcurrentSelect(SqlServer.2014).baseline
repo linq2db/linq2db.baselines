@@ -18,8 +18,8 @@ INSERT INTO [User]
 	[Name]
 )
 VALUES
-('a0cbb49b-b27b-4d05-b5a6-461f1abf09e8',N'User1'),
-('033ff4ed-477a-4023-910b-71722ac94001',N'User2')
+('bc7b663d-0fde-4327-8f92-5d8cc3a11d11',N'User1'),
+('a948600d-de21-4f74-8ac2-9516b287076e',N'User2')
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012 (asynchronously)
