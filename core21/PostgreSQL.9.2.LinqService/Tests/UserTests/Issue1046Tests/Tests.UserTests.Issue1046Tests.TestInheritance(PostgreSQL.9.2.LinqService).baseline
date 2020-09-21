@@ -1,0 +1,61 @@
+﻿BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE "Task"
+(
+	"Id"         Int  NOT NULL,
+	"TargetName" text     NULL,
+	"BdaValue"   text     NULL,
+
+	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+DECLARE @TargetName Text(12) -- String
+SET     @TargetName = 'bda.Requests'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @BdaValue Text(9) -- String
+SET     @BdaValue = 'Bda value'
+
+INSERT INTO "Task"
+(
+	"TargetName",
+	"Id",
+	"BdaValue"
+)
+VALUES
+(
+	:TargetName,
+	:Id,
+	:BdaValue
+)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+SELECT
+	p."TargetName",
+	p."Id",
+	p."BdaValue"
+FROM
+	"Task" p
+WHERE
+	p."TargetName" = 'bda.Requests'
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+SELECT
+	p."BdaValue"
+FROM
+	"Task" p
+WHERE
+	p."TargetName" = 'bda.Requests'
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+DROP TABLE "Task"
+
