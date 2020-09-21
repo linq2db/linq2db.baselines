@@ -221,7 +221,7 @@ VALUES
 BeforeExecute
 -- Firebird
 DECLARE @param TimeStamp -- DateTime
-SET     @param = CAST('2020-09-21 11:55:46.222' AS timestamp)
+SET     @param = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
 MERGE INTO "TestMerge1" "Target"
 USING (
