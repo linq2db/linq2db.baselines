@@ -1,0 +1,215 @@
+﻿BeforeExecute
+-- Sybase.Managed Sybase
+
+CREATE TABLE [Animals11]
+(
+	[AnimalType]    NVarChar(40)  NOT NULL,
+	[AnimalType2]   NVarChar(40)  NOT NULL,
+	[Id]            Int           NOT NULL,
+	[Name]          NVarChar(255)     NULL,
+	[Discriminator] NVarChar(40)  NOT NULL,
+	[EyeId]         Int               NULL,
+	[Second]        NVarChar(40)      NULL,
+	[First]         NVarChar(40)      NULL,
+
+	CONSTRAINT [PK_Animals11] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+CREATE TABLE [Eyes11]
+(
+	[Id] Int          NOT NULL,
+	[Xy] NVarChar(40)     NULL,
+
+	CONSTRAINT [PK_Eyes11] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+CREATE TABLE [TestAnimalTable]
+(
+	[Id]           Int NOT NULL,
+	[TestAnimalId] Int     NULL
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Xy UniVarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO [Eyes11]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Discriminator UniVarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name UniVarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 UniVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType UniVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second UniVarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First UniVarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO [Animals11]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @AnimalType UniVarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 UniVarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Name UniVarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator UniVarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO [Animals11]
+(
+	[AnimalType],
+	[AnimalType2],
+	[Id],
+	[Name],
+	[Discriminator]
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t2].[Id],
+	[t2].[TestAnimalId],
+	[a_TestAnimal].[AnimalType],
+	[a_TestAnimal].[AnimalType2],
+	[a_TestAnimal].[Id],
+	[a_TestAnimal].[Name],
+	[a_TestAnimal].[Discriminator],
+	[a_TestAnimal].[EyeId],
+	[a_TestAnimal].[Second_1],
+	[a_TestAnimal].[First_1],
+	[a_TestAnimal].[Id_1],
+	[a_TestAnimal].[Xy]
+FROM
+	[TestAnimalTable] [t2]
+		LEFT JOIN (
+			SELECT
+				[t1].[AnimalType],
+				[t1].[AnimalType2],
+				[t1].[Id],
+				[t1].[Name],
+				[t1].[Discriminator],
+				[t1].[EyeId],
+				[t1].[Second] as [Second_1],
+				[t1].[First] as [First_1],
+				[o].[Id] as [Id_1],
+				[o].[Xy]
+			FROM
+				[Animals11] [t1]
+					LEFT JOIN [Eyes11] [o] ON [t1].[EyeId] = [o].[Id] AND [t1].[Discriminator] = 'Dog'
+		) [a_TestAnimal] ON [t2].[TestAnimalId] = [a_TestAnimal].[Id]
+ORDER BY
+	[t2].[Id]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DROP TABLE [Animals11]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DROP TABLE [Eyes11]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DROP TABLE [TestAnimalTable]
+
