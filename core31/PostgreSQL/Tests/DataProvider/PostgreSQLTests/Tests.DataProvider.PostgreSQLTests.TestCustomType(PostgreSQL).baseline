@@ -1,0 +1,32 @@
+﻿BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE "TableWithDateRanges"
+(
+	"SimpleRange"       tsrange       NULL,
+	"RangeWithTimeZone" tstzrange     NULL
+)
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @SimpleRange 1073741845 -- Object
+SET     @SimpleRange = [2/29/2020 5:54:55 PM,)
+DECLARE @RangeWithTimeZone 1073741850 -- Object
+SET     @RangeWithTimeZone = [3/1/2020 5:54:55 PM,)
+
+INSERT INTO "TableWithDateRanges"
+(
+	"SimpleRange",
+	"RangeWithTimeZone"
+)
+VALUES
+(
+	:SimpleRange,
+	:RangeWithTimeZone
+)
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE "TableWithDateRanges"
+
