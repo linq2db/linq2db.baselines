@@ -1,0 +1,300 @@
+﻿BeforeExecute
+-- SqlServer.2012
+
+CREATE TABLE [Booking]
+(
+	[BookingID]   Int      NOT NULL,
+	[ServiceDate] DateTime NOT NULL,
+	[Value]       Int      NOT NULL
+)
+
+BeforeExecute
+-- SqlServer.2012
+
+INSERT INTO [Booking]
+(
+	[BookingID],
+	[ServiceDate],
+	[Value]
+)
+VALUES
+(1,'2020-09-18T17:12:16.755',1),
+(2,'2020-09-17T17:12:16.755',2),
+(3,'2020-09-19T17:12:16.755',3),
+(4,'2020-09-18T17:12:16.755',4),
+(5,'2020-09-17T17:12:16.755',5),
+(6,'2020-09-19T17:12:16.755',6),
+(7,'2020-09-18T17:12:16.755',7),
+(8,'2020-09-17T17:12:16.755',8),
+(9,'2020-09-19T17:12:16.755',9),
+(10,'2020-09-18T17:12:16.755',10),
+(11,'2020-09-17T17:12:16.755',11),
+(12,'2020-09-19T17:12:16.755',12),
+(13,'2020-09-18T17:12:16.755',13),
+(14,'2020-09-17T17:12:16.755',14),
+(15,'2020-09-19T17:12:16.755',15),
+(16,'2020-09-18T17:12:16.755',16),
+(17,'2020-09-17T17:12:16.755',17),
+(18,'2020-09-19T17:12:16.755',18),
+(19,'2020-09-18T17:12:16.755',19),
+(20,'2020-09-17T17:12:16.755',20),
+(21,'2020-09-19T17:12:16.755',21),
+(22,'2020-09-18T17:12:16.755',22),
+(23,'2020-09-17T17:12:16.755',23),
+(24,'2020-09-19T17:12:16.755',24),
+(25,'2020-09-18T17:12:16.755',25),
+(26,'2020-09-17T17:12:16.755',26),
+(27,'2020-09-19T17:12:16.755',27),
+(28,'2020-09-18T17:12:16.755',28),
+(29,'2020-09-17T17:12:16.755',29),
+(30,'2020-09-19T17:12:16.755',30),
+(31,'2020-09-18T17:12:16.755',31),
+(32,'2020-09-17T17:12:16.755',32),
+(33,'2020-09-19T17:12:16.755',33),
+(34,'2020-09-18T17:12:16.755',34),
+(35,'2020-09-17T17:12:16.755',35),
+(36,'2020-09-19T17:12:16.755',36),
+(37,'2020-09-18T17:12:16.755',37),
+(38,'2020-09-17T17:12:16.755',38),
+(39,'2020-09-19T17:12:16.755',39),
+(40,'2020-09-18T17:12:16.755',40),
+(41,'2020-09-17T17:12:16.755',41),
+(42,'2020-09-19T17:12:16.755',42),
+(43,'2020-09-18T17:12:16.755',43),
+(44,'2020-09-17T17:12:16.755',44),
+(45,'2020-09-19T17:12:16.755',45),
+(46,'2020-09-18T17:12:16.755',46),
+(47,'2020-09-17T17:12:16.755',47),
+(48,'2020-09-19T17:12:16.755',48),
+(49,'2020-09-18T17:12:16.755',49),
+(50,'2020-09-17T17:12:16.755',50),
+(51,'2020-09-19T17:12:16.755',51),
+(52,'2020-09-18T17:12:16.755',52),
+(53,'2020-09-17T17:12:16.755',53),
+(54,'2020-09-19T17:12:16.755',54),
+(55,'2020-09-18T17:12:16.755',55),
+(56,'2020-09-17T17:12:16.755',56),
+(57,'2020-09-19T17:12:16.755',57),
+(58,'2020-09-18T17:12:16.755',58),
+(59,'2020-09-17T17:12:16.755',59),
+(60,'2020-09-19T17:12:16.755',60),
+(61,'2020-09-18T17:12:16.755',61),
+(62,'2020-09-17T17:12:16.755',62),
+(63,'2020-09-19T17:12:16.755',63),
+(64,'2020-09-18T17:12:16.755',64),
+(65,'2020-09-17T17:12:16.755',65),
+(66,'2020-09-19T17:12:16.755',66),
+(67,'2020-09-18T17:12:16.755',67),
+(68,'2020-09-17T17:12:16.755',68),
+(69,'2020-09-19T17:12:16.755',69),
+(70,'2020-09-18T17:12:16.755',70),
+(71,'2020-09-17T17:12:16.755',71),
+(72,'2020-09-19T17:12:16.755',72),
+(73,'2020-09-18T17:12:16.755',73),
+(74,'2020-09-17T17:12:16.755',74),
+(75,'2020-09-19T17:12:16.755',75),
+(76,'2020-09-18T17:12:16.755',76),
+(77,'2020-09-17T17:12:16.755',77),
+(78,'2020-09-19T17:12:16.755',78),
+(79,'2020-09-18T17:12:16.755',79),
+(80,'2020-09-17T17:12:16.755',80),
+(81,'2020-09-19T17:12:16.755',81),
+(82,'2020-09-18T17:12:16.755',82),
+(83,'2020-09-17T17:12:16.755',83),
+(84,'2020-09-19T17:12:16.755',84),
+(85,'2020-09-18T17:12:16.755',85),
+(86,'2020-09-17T17:12:16.755',86),
+(87,'2020-09-19T17:12:16.755',87),
+(88,'2020-09-18T17:12:16.755',88),
+(89,'2020-09-17T17:12:16.755',89),
+(90,'2020-09-19T17:12:16.755',90),
+(91,'2020-09-18T17:12:16.755',91),
+(92,'2020-09-17T17:12:16.755',92),
+(93,'2020-09-19T17:12:16.755',93),
+(94,'2020-09-18T17:12:16.755',94),
+(95,'2020-09-17T17:12:16.755',95),
+(96,'2020-09-19T17:12:16.755',96),
+(97,'2020-09-18T17:12:16.755',97),
+(98,'2020-09-17T17:12:16.755',98),
+(99,'2020-09-19T17:12:16.755',99),
+(100,'2020-09-18T17:12:16.755',100)
+
+BeforeExecute
+-- SqlServer.2012
+
+SELECT
+	[t].[BookingID],
+	[t].[ServiceDate],
+	[t].[Value]
+FROM
+	[Booking] [t]
+WHERE
+	[t].[ServiceDate] > DateAdd(day, -2, CURRENT_TIMESTAMP)
+ORDER BY
+	[t].[ServiceDate] DESC,
+	[t].[BookingID] DESC
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @take BigInt -- Int64
+SET     @take = 12
+
+SELECT
+	[q].[c1],
+	[q].[RowNumber],
+	[q].[BookingID],
+	[q].[ServiceDate],
+	[q].[Value_1]
+FROM
+	(
+		SELECT
+			ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC) as [RowNumber],
+			COUNT(*) OVER() as [c1],
+			[t].[BookingID],
+			[t].[ServiceDate],
+			[t].[Value] as [Value_1]
+		FROM
+			[Booking] [t]
+		WHERE
+			[t].[ServiceDate] > DateAdd(day, -2, CURRENT_TIMESTAMP)
+	) [q]
+WHERE
+	[q].[RowNumber] <= @take
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @cursorValue Int -- Int32
+SET     @cursorValue = 66
+DECLARE @take BigInt -- Int64
+SET     @take = 12
+
+WITH [CTE_1]
+(
+	[Cursor],
+	[RowNumber],
+	[ServiceDate],
+	[Value]
+)
+AS
+(
+	SELECT
+		[t].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		[t].[ServiceDate],
+		[t].[Value]
+	FROM
+		[Booking] [t]
+	WHERE
+		[t].[ServiceDate] > DateAdd(day, -2, CURRENT_TIMESTAMP)
+)
+SELECT
+	[q].[RowNumber],
+	[q].[Cursor],
+	[q].[ServiceDate],
+	[q].[Value]
+FROM
+	[CTE_1] [q]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[CTE_1] [c_1]
+		WHERE
+			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[q].[RowNumber] <= [c_1].[RowNumber] + @take
+	)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @cursorValue Int -- Int32
+SET     @cursorValue = 30
+DECLARE @take BigInt -- Int64
+SET     @take = 12
+
+WITH [CTE_1]
+(
+	[Cursor],
+	[RowNumber],
+	[ServiceDate],
+	[Value]
+)
+AS
+(
+	SELECT
+		[t].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		[t].[ServiceDate],
+		[t].[Value]
+	FROM
+		[Booking] [t]
+	WHERE
+		[t].[ServiceDate] > DateAdd(day, -2, CURRENT_TIMESTAMP)
+)
+SELECT
+	[q].[RowNumber],
+	[q].[Cursor],
+	[q].[ServiceDate],
+	[q].[Value]
+FROM
+	[CTE_1] [q]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[CTE_1] [c_1]
+		WHERE
+			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[q].[RowNumber] <= [c_1].[RowNumber] + @take
+	)
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @cursorValue Int -- Int32
+SET     @cursorValue = 3
+DECLARE @take BigInt -- Int64
+SET     @take = 12
+
+WITH [CTE_1]
+(
+	[Cursor],
+	[RowNumber],
+	[ServiceDate],
+	[Value]
+)
+AS
+(
+	SELECT
+		[t].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		[t].[ServiceDate],
+		[t].[Value]
+	FROM
+		[Booking] [t]
+	WHERE
+		[t].[ServiceDate] > DateAdd(day, -2, CURRENT_TIMESTAMP)
+)
+SELECT
+	[q].[RowNumber],
+	[q].[Cursor],
+	[q].[ServiceDate],
+	[q].[Value]
+FROM
+	[CTE_1] [q]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[CTE_1] [c_1]
+		WHERE
+			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[q].[RowNumber] <= [c_1].[RowNumber] + @take
+	)
+
+BeforeExecute
+-- SqlServer.2012
+
+DROP TABLE [Booking]
+

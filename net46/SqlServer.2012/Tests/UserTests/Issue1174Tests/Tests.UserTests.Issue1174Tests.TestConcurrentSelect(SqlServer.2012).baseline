@@ -1,0 +1,50 @@
+﻿BeforeExecute
+-- SqlServer.2012
+
+CREATE TABLE [User]
+(
+	[Id]   UniqueIdentifier NOT NULL,
+	[Name] NVarChar(4000)       NULL,
+
+	CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2012
+
+INSERT INTO [User]
+(
+	[Id],
+	[Name]
+)
+VALUES
+('5b82697d-352f-4518-a626-4a747ddf832d',N'User1'),
+('82d8d3b6-8f5c-4438-a1c7-f6620861dab1',N'User2')
+
+BeforeExecute
+-- SqlServer.2012 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[User] [t1]
+
+BeforeExecute
+-- SqlServer.2012 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[User] [t1]
+
+BeforeExecute
+-- SqlServer.2012
+
+DROP TABLE [User]
+
