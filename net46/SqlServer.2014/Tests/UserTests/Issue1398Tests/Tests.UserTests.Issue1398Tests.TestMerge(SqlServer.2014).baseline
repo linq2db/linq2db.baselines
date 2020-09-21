@@ -25,7 +25,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 2134721671
+SET     @Length_1 = 1932552403
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 0
 
@@ -47,7 +47,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1522258874
+SET     @Length_1 = 932526417
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 0
 
@@ -69,7 +69,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1185547051
+SET     @Length_1 = 1234544787
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 20
 
@@ -91,7 +91,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 140539557
+SET     @Length_1 = 1243455697
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 20
 
@@ -111,9 +111,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 20
+SET     @iteration = 0
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Green'
+SET     @Color = N'Grey'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -155,9 +155,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 0
+SET     @iteration = 20
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Grey'
+SET     @Color = N'Green'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -211,7 +211,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 968269587
+SET     @Length_1 = 34728485
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 1
 
@@ -233,7 +233,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 405469152
+SET     @Length_1 = 1031983590
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 1
 
@@ -255,7 +255,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1081019063
+SET     @Length_1 = 1741526305
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 21
 
@@ -277,7 +277,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 923931162
+SET     @Length_1 = 1976258983
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 21
 
@@ -397,7 +397,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 924945374
+SET     @Length_1 = 1072414712
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 2
 
@@ -419,7 +419,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1416189207
+SET     @Length_1 = 973755295
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 2
 
@@ -441,7 +441,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 439198384
+SET     @Length_1 = 456458586
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 22
 
@@ -463,7 +463,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 367397877
+SET     @Length_1 = 1799861892
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 22
 
@@ -583,7 +583,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 323759227
+SET     @Length_1 = 1987573715
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 3
 
@@ -605,7 +605,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 2098112876
+SET     @Length_1 = 745277250
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 3
 
@@ -627,7 +627,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 881882488
+SET     @Length_1 = 2088743875
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 23
 
@@ -649,7 +649,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1472764760
+SET     @Length_1 = 697098439
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 23
 
@@ -769,7 +769,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 572277115
+SET     @Length_1 = 1723633135
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 4
 
@@ -791,7 +791,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 676887249
+SET     @Length_1 = 1669651774
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 4
 
@@ -813,7 +813,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 591879941
+SET     @Length_1 = 1038388147
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 24
 
@@ -835,7 +835,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 870905312
+SET     @Length_1 = 1550875489
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 24
 
@@ -855,9 +855,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 24
+SET     @iteration = 4
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Green'
+SET     @Color = N'Grey'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -899,9 +899,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 4
+SET     @iteration = 24
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Grey'
+SET     @Color = N'Green'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -955,7 +955,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 247294469
+SET     @Length_1 = 1373797551
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 5
 
@@ -977,7 +977,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 644791864
+SET     @Length_1 = 1736485507
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 5
 
@@ -999,7 +999,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 759739978
+SET     @Length_1 = 1800910932
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 25
 
@@ -1021,7 +1021,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1764672601
+SET     @Length_1 = 28826812
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 25
 
@@ -1141,7 +1141,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1937806122
+SET     @Length_1 = 2041313374
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 6
 
@@ -1163,7 +1163,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1368407220
+SET     @Length_1 = 833042350
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 6
 
@@ -1185,7 +1185,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 982277850
+SET     @Length_1 = 1147599597
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 26
 
@@ -1207,7 +1207,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1762345402
+SET     @Length_1 = 82247641
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 26
 
@@ -1227,9 +1227,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 26
+SET     @iteration = 6
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Green'
+SET     @Color = N'Grey'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -1271,9 +1271,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 6
+SET     @iteration = 26
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Grey'
+SET     @Color = N'Green'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -1327,7 +1327,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 748027169
+SET     @Length_1 = 957712293
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 7
 
@@ -1349,7 +1349,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 240161551
+SET     @Length_1 = 658971829
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 7
 
@@ -1371,7 +1371,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 992685886
+SET     @Length_1 = 2065497509
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 27
 
@@ -1393,7 +1393,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 950473682
+SET     @Length_1 = 2043134319
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 27
 
@@ -1513,7 +1513,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1109091438
+SET     @Length_1 = 1665903840
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 8
 
@@ -1535,7 +1535,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 2129708686
+SET     @Length_1 = 1746800044
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 8
 
@@ -1557,7 +1557,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 892089406
+SET     @Length_1 = 1130668372
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 28
 
@@ -1579,7 +1579,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1171582721
+SET     @Length_1 = 107082068
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 28
 
@@ -1599,9 +1599,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 28
+SET     @iteration = 8
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Green'
+SET     @Color = N'Grey'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -1643,9 +1643,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 8
+SET     @iteration = 28
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Grey'
+SET     @Color = N'Green'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -1699,7 +1699,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 94203912
+SET     @Length_1 = 23689833
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 9
 
@@ -1721,7 +1721,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 134595893
+SET     @Length_1 = 639166475
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 9
 
@@ -1743,7 +1743,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 913774676
+SET     @Length_1 = 1274680742
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 29
 
@@ -1765,7 +1765,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 438710572
+SET     @Length_1 = 267916186
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 29
 
@@ -1885,7 +1885,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1049099224
+SET     @Length_1 = 1215178620
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 10
 
@@ -1907,7 +1907,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1011283632
+SET     @Length_1 = 1233066773
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 10
 
@@ -1929,7 +1929,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1201080006
+SET     @Length_1 = 1714525577
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 30
 
@@ -1951,7 +1951,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1022753164
+SET     @Length_1 = 2065997268
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 30
 
@@ -1971,9 +1971,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 30
+SET     @iteration = 10
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Green'
+SET     @Color = N'Grey'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -2015,9 +2015,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 10
+SET     @iteration = 30
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Grey'
+SET     @Color = N'Green'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -2071,7 +2071,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 623082898
+SET     @Length_1 = 1053753312
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 11
 
@@ -2093,7 +2093,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 167251679
+SET     @Length_1 = 1988065665
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 11
 
@@ -2115,7 +2115,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1628062376
+SET     @Length_1 = 1806430930
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 31
 
@@ -2137,7 +2137,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1252394455
+SET     @Length_1 = 699130412
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 31
 
@@ -2257,7 +2257,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1575141702
+SET     @Length_1 = 1225922484
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 12
 
@@ -2279,7 +2279,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 22611543
+SET     @Length_1 = 1843224006
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 12
 
@@ -2301,7 +2301,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1853069627
+SET     @Length_1 = 1033973544
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 32
 
@@ -2323,7 +2323,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 2009921129
+SET     @Length_1 = 238085066
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 32
 
@@ -2339,50 +2339,6 @@ VALUES
 	@Length_1,
 	@Iteration
 )
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-DECLARE @iteration Int -- Int32
-SET     @iteration = 32
-DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Green'
-
-MERGE INTO [Animals] [Target]
-USING (
-	SELECT
-		[_].[Name],
-		[_].[Length] as [Length_1]
-	FROM
-		[AnimalsUpdate] [_]
-	WHERE
-		[_].[Iteration] = @iteration
-) [Source]
-(
-	[Name], 
-	[Length_1]
-)
-ON ([Target].[Name] = [Source].[Name])
-
-WHEN MATCHED THEN
-UPDATE
-SET
-	[Target].[Color] = @Color,
-	[Target].[Length] = [Source].[Length_1]
-
-WHEN NOT MATCHED THEN
-INSERT
-(
-	[Name],
-	[Color],
-	[Length]
-)
-VALUES
-(
-	[Source].[Name],
-	@Color,
-	[Source].[Length_1]
-)
-;
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -2430,106 +2386,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-
-SELECT
-	Count(*)
-FROM
-	[Animals] [animal]
-WHERE
-	[animal].[Color] = N'Green'
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-DECLARE @Name NVarChar(100) -- String
-SET     @Name = N'Elephant'
-DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 890115968
-DECLARE @Iteration Int -- Int32
-SET     @Iteration = 13
-
-INSERT INTO [AnimalsUpdate]
-(
-	[Name],
-	[Length],
-	[Iteration]
-)
-VALUES
-(
-	@Name,
-	@Length_1,
-	@Iteration
-)
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-DECLARE @Name NVarChar(100) -- String
-SET     @Name = N'Cat'
-DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 527187251
-DECLARE @Iteration Int -- Int32
-SET     @Iteration = 13
-
-INSERT INTO [AnimalsUpdate]
-(
-	[Name],
-	[Length],
-	[Iteration]
-)
-VALUES
-(
-	@Name,
-	@Length_1,
-	@Iteration
-)
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-DECLARE @Name NVarChar(100) -- String
-SET     @Name = N'Snake'
-DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 732618704
-DECLARE @Iteration Int -- Int32
-SET     @Iteration = 33
-
-INSERT INTO [AnimalsUpdate]
-(
-	[Name],
-	[Length],
-	[Iteration]
-)
-VALUES
-(
-	@Name,
-	@Length_1,
-	@Iteration
-)
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-DECLARE @Name NVarChar(100) -- String
-SET     @Name = N'Lizard'
-DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1489929807
-DECLARE @Iteration Int -- Int32
-SET     @Iteration = 33
-
-INSERT INTO [AnimalsUpdate]
-(
-	[Name],
-	[Length],
-	[Iteration]
-)
-VALUES
-(
-	@Name,
-	@Length_1,
-	@Iteration
-)
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 33
+SET     @iteration = 32
 DECLARE @Color NVarChar(100) -- String
 SET     @Color = N'Green'
 
@@ -2569,6 +2427,104 @@ VALUES
 	[Source].[Length_1]
 )
 ;
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1310195096
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 13
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1548884010
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 13
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1001097533
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 33
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 196066896
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 33
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -2616,6 +2572,50 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
+DECLARE @iteration Int -- Int32
+SET     @iteration = 33
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
 
 SELECT
 	Count(*)
@@ -2629,7 +2629,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 762518896
+SET     @Length_1 = 1279099132
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 14
 
@@ -2651,7 +2651,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1568358097
+SET     @Length_1 = 1205717975
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 14
 
@@ -2673,7 +2673,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 350217082
+SET     @Length_1 = 1349625970
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 34
 
@@ -2695,7 +2695,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1747346014
+SET     @Length_1 = 1349169782
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 34
 
@@ -2815,7 +2815,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1570674949
+SET     @Length_1 = 2031867640
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 15
 
@@ -2837,7 +2837,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1466157308
+SET     @Length_1 = 1659278664
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 15
 
@@ -2859,7 +2859,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 175903993
+SET     @Length_1 = 1018546690
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 35
 
@@ -2881,7 +2881,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 684783823
+SET     @Length_1 = 413442883
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 35
 
@@ -3001,7 +3001,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 423503321
+SET     @Length_1 = 1055741433
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 16
 
@@ -3023,7 +3023,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1636208349
+SET     @Length_1 = 560807914
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 16
 
@@ -3045,7 +3045,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1405790086
+SET     @Length_1 = 133958052
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 36
 
@@ -3067,7 +3067,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 341534188
+SET     @Length_1 = 240773671
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 36
 
@@ -3087,9 +3087,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 36
+SET     @iteration = 16
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Green'
+SET     @Color = N'Grey'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -3131,9 +3131,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 16
+SET     @iteration = 36
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Grey'
+SET     @Color = N'Green'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -3187,7 +3187,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1206023470
+SET     @Length_1 = 1762092525
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 17
 
@@ -3209,7 +3209,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1857783414
+SET     @Length_1 = 1981661807
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 17
 
@@ -3231,7 +3231,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1378560848
+SET     @Length_1 = 673408606
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 37
 
@@ -3253,7 +3253,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 437681222
+SET     @Length_1 = 1084466660
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 37
 
@@ -3373,7 +3373,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1910596220
+SET     @Length_1 = 394971032
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 18
 
@@ -3395,7 +3395,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 153169369
+SET     @Length_1 = 770471961
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 18
 
@@ -3417,7 +3417,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1969289735
+SET     @Length_1 = 335696869
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 38
 
@@ -3439,7 +3439,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1383494484
+SET     @Length_1 = 140730778
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 38
 
@@ -3459,9 +3459,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 38
+SET     @iteration = 18
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Green'
+SET     @Color = N'Grey'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -3503,9 +3503,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @iteration Int -- Int32
-SET     @iteration = 18
+SET     @iteration = 38
 DECLARE @Color NVarChar(100) -- String
-SET     @Color = N'Grey'
+SET     @Color = N'Green'
 
 MERGE INTO [Animals] [Target]
 USING (
@@ -3559,7 +3559,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Elephant'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1591195505
+SET     @Length_1 = 21959930
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 19
 
@@ -3581,7 +3581,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Cat'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1884470461
+SET     @Length_1 = 1882397311
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 19
 
@@ -3603,7 +3603,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Snake'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1141589703
+SET     @Length_1 = 1122557147
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 39
 
@@ -3625,7 +3625,7 @@ BeforeExecute
 DECLARE @Name NVarChar(100) -- String
 SET     @Name = N'Lizard'
 DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1770554443
+SET     @Length_1 = 53247709
 DECLARE @Iteration Int -- Int32
 SET     @Iteration = 39
 

@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'a41f81b1-8ce1-4a69-ad27-f7241f5a0f0a'
+SET     @FirstName = N'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @LastName NVarChar(4000) -- String
 SET     @LastName = N'Person'
 DECLARE @MiddleName NVarChar(4000) -- String
@@ -24,7 +24,7 @@ SET     @Gender = N'M'
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'a41f81b1-8ce1-4a69-ad27-f7241f5a0f0a'
+SET     @FirstName = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
 DELETE [t1]
 FROM
