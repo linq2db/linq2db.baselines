@@ -41,10 +41,10 @@ DECLARE @personId_1 Integer -- Int32
 SET     @personId_1 = 1
 
 SELECT
-	"task_1".ID,
 	"task_1"."DurationID",
 	"task_1"."DurationInterval",
-	"task_1"."PersonID"
+	"task_1"."PersonID",
+	"task_1".ID
 FROM
 	"BackgroundTask" "task_1"
 WHERE
