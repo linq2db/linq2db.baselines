@@ -66,9 +66,9 @@ CREATE TABLE [tblWorkstationGroup]
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @dateMin DateTime
-SET     @dateMin = #2020-09-20 16:48:57#
+SET     @dateMin = #2020-09-21 10:48:43#
 DECLARE @dateMax DateTime
-SET     @dateMax = #2020-09-20 16:48:57#
+SET     @dateMax = #2020-09-21 10:48:43#
 DECLARE @sectorId Int -- Int32
 SET     @sectorId = 1
 
