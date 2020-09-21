@@ -1,0 +1,13 @@
+﻿BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+
+SELECT
+	CASE WHEN EXISTS(
+		SELECT
+			*
+		FROM
+			[AllTypes] [p]
+		WHERE
+			[p].[ID] = 2 AND (COALESCE(CASE WHEN [p].[varcharDataType] IS NULL THEN NULL ELSE CAST(N'1' AS INT) END, CASE WHEN [p].[varcharDataType] IS NULL THEN NULL ELSE CAST(N'1' AS INT) END) IS NULL AND [p].[intDataType] IS NOT NULL OR COALESCE(CASE WHEN [p].[varcharDataType] IS NULL THEN NULL ELSE CAST(N'1' AS INT) END, CASE WHEN [p].[varcharDataType] IS NULL THEN NULL ELSE CAST(N'1' AS INT) END) IS NOT NULL AND [p].[intDataType] IS NULL OR COALESCE(CASE WHEN [p].[varcharDataType] IS NULL THEN NULL ELSE CAST(N'1' AS INT) END, CASE WHEN [p].[varcharDataType] IS NULL THEN NULL ELSE CAST(N'1' AS INT) END) <> [p].[intDataType])
+	) THEN 1 ELSE 0 END
+
