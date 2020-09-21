@@ -1,0 +1,311 @@
+﻿BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE TABLE Animals7
+(
+	AnimalType    VarChar2(40) NOT NULL,
+	AnimalType2   VarChar2(40) NOT NULL,
+	Id            Int          NOT NULL,
+	Name          VarChar(255)     NULL,
+	Discriminator VarChar2(40) NOT NULL,
+	EyeId         Int              NULL,
+	Second        VarChar2(40)     NULL,
+	First         VarChar2(40)     NULL,
+
+	CONSTRAINT PK_Animals7 PRIMARY KEY (Id)
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE TABLE Eyes7
+(
+	Id Int          NOT NULL,
+	Xy VarChar2(40)     NULL,
+
+	CONSTRAINT PK_Eyes7 PRIMARY KEY (Id)
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE TABLE TestAnimalTable
+(
+	Id           Int NOT NULL,
+	TestAnimalId Int     NULL
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Xy NVarchar2(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO Eyes7
+(
+	Id,
+	Xy
+)
+VALUES
+(
+	:Id,
+	:Xy
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Discriminator NVarchar2(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name Varchar2(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @AnimalType2 NVarchar2(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType NVarchar2(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarchar2(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First NVarchar2(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO Animals7
+(
+	Discriminator,
+	Name,
+	Id,
+	AnimalType2,
+	AnimalType,
+	EyeId,
+	Second,
+	First
+)
+VALUES
+(
+	:Discriminator,
+	:Name,
+	:Id,
+	:AnimalType2,
+	:AnimalType,
+	:EyeId,
+	:DogName_Second,
+	:DogName_First
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @AnimalType NVarchar2(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 NVarchar2(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @Name Varchar2(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator NVarchar2(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO Animals7
+(
+	AnimalType,
+	AnimalType2,
+	Id,
+	Name,
+	Discriminator
+)
+VALUES
+(
+	:AnimalType,
+	:AnimalType2,
+	:Id,
+	:Name,
+	:Discriminator
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO TestAnimalTable
+(
+	Id,
+	TestAnimalId
+)
+VALUES
+(
+	:Id,
+	:TestAnimalId
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO TestAnimalTable
+(
+	Id,
+	TestAnimalId
+)
+VALUES
+(
+	:Id,
+	:TestAnimalId
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Id Int32
+SET     @Id = 123
+DECLARE @Xy NVarchar2(7) -- String
+SET     @Xy = 'test321'
+
+INSERT INTO Eyes7
+(
+	Id,
+	Xy
+)
+VALUES
+(
+	:Id,
+	:Xy
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	t1.Id,
+	t1.Xy
+FROM
+	Eyes7 t1
+WHERE
+	t1.Id = 123
+FETCH NEXT :take ROWS ONLY
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Id Int32
+SET     @Id = 123
+DECLARE @Xy NVarchar2(7) -- String
+SET     @Xy = 'test321'
+
+MERGE INTO Eyes7 t1
+USING (SELECT :Id AS Id FROM SYS.DUAL) s ON
+(
+	t1.Id = s.Id
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		t1.Xy = :Xy
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		Id,
+		Xy
+	)
+	VALUES
+	(
+		:Id,
+		:Xy
+	)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	t1.Id,
+	t1.Xy
+FROM
+	Eyes7 t1
+WHERE
+	t1.Id = 123
+FETCH NEXT :take ROWS ONLY
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Xy NVarchar2(7) -- String
+SET     @Xy = 'test321'
+DECLARE @Id Int32
+SET     @Id = 123
+
+UPDATE
+	Eyes7
+SET
+	Eyes7.Xy = :Xy
+WHERE
+	Eyes7.Id = :Id
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	t1.Id,
+	t1.Xy
+FROM
+	Eyes7 t1
+WHERE
+	t1.Id = 123
+FETCH NEXT :take ROWS ONLY
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Id Int32
+SET     @Id = 123
+
+DELETE FROM
+	Eyes7 t1
+WHERE
+	t1.Id = :Id
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE Animals7';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE Eyes7';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE TestAnimalTable';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+

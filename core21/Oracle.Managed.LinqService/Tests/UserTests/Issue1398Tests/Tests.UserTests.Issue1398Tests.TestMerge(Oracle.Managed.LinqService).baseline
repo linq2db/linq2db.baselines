@@ -1,0 +1,3552 @@
+﻿BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE TABLE Animals
+(
+	Name   VarChar2(100) NOT NULL,
+	Color  VarChar2(100) NOT NULL,
+	Length Int           NOT NULL,
+
+	CONSTRAINT PK_Animals PRIMARY KEY (Name)
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE TABLE AnimalsUpdate
+(
+	Name      VarChar2(100) NOT NULL,
+	Length    Int           NOT NULL,
+	Iteration Int           NOT NULL
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 207222744
+DECLARE @Iteration Int32
+SET     @Iteration = 0
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 383449074
+DECLARE @Iteration Int32
+SET     @Iteration = 0
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 987137495
+DECLARE @Iteration Int32
+SET     @Iteration = 20
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 993197926
+DECLARE @Iteration Int32
+SET     @Iteration = 20
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 0
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 20
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1906277428
+DECLARE @Iteration Int32
+SET     @Iteration = 1
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 734608657
+DECLARE @Iteration Int32
+SET     @Iteration = 1
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1498007364
+DECLARE @Iteration Int32
+SET     @Iteration = 21
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1321516467
+DECLARE @Iteration Int32
+SET     @Iteration = 21
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 21
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 1
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 293405268
+DECLARE @Iteration Int32
+SET     @Iteration = 2
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 505977967
+DECLARE @Iteration Int32
+SET     @Iteration = 2
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1552599904
+DECLARE @Iteration Int32
+SET     @Iteration = 22
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 463278033
+DECLARE @Iteration Int32
+SET     @Iteration = 22
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 22
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 2
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1800265550
+DECLARE @Iteration Int32
+SET     @Iteration = 3
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 221449191
+DECLARE @Iteration Int32
+SET     @Iteration = 3
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 234037290
+DECLARE @Iteration Int32
+SET     @Iteration = 23
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1242274188
+DECLARE @Iteration Int32
+SET     @Iteration = 23
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 3
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 23
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1449869517
+DECLARE @Iteration Int32
+SET     @Iteration = 4
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1904283112
+DECLARE @Iteration Int32
+SET     @Iteration = 4
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 458565816
+DECLARE @Iteration Int32
+SET     @Iteration = 24
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1227701657
+DECLARE @Iteration Int32
+SET     @Iteration = 24
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 4
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 24
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 2053519760
+DECLARE @Iteration Int32
+SET     @Iteration = 5
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1318848695
+DECLARE @Iteration Int32
+SET     @Iteration = 5
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 582315725
+DECLARE @Iteration Int32
+SET     @Iteration = 25
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1752842285
+DECLARE @Iteration Int32
+SET     @Iteration = 25
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 5
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 25
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 170636185
+DECLARE @Iteration Int32
+SET     @Iteration = 6
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 767384647
+DECLARE @Iteration Int32
+SET     @Iteration = 6
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1651742331
+DECLARE @Iteration Int32
+SET     @Iteration = 26
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 788100792
+DECLARE @Iteration Int32
+SET     @Iteration = 26
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 6
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 26
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1953833311
+DECLARE @Iteration Int32
+SET     @Iteration = 7
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 577124302
+DECLARE @Iteration Int32
+SET     @Iteration = 7
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1697741409
+DECLARE @Iteration Int32
+SET     @Iteration = 27
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 969479949
+DECLARE @Iteration Int32
+SET     @Iteration = 27
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 27
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 7
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1678701235
+DECLARE @Iteration Int32
+SET     @Iteration = 8
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 22860505
+DECLARE @Iteration Int32
+SET     @Iteration = 8
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1631021650
+DECLARE @Iteration Int32
+SET     @Iteration = 28
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1053952639
+DECLARE @Iteration Int32
+SET     @Iteration = 28
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 8
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 28
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 171937123
+DECLARE @Iteration Int32
+SET     @Iteration = 9
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 329392167
+DECLARE @Iteration Int32
+SET     @Iteration = 9
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 397591707
+DECLARE @Iteration Int32
+SET     @Iteration = 29
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 447051916
+DECLARE @Iteration Int32
+SET     @Iteration = 29
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 9
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 29
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 257704008
+DECLARE @Iteration Int32
+SET     @Iteration = 10
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1719220118
+DECLARE @Iteration Int32
+SET     @Iteration = 10
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1695902072
+DECLARE @Iteration Int32
+SET     @Iteration = 30
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 148153133
+DECLARE @Iteration Int32
+SET     @Iteration = 30
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 30
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 10
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1694153573
+DECLARE @Iteration Int32
+SET     @Iteration = 11
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1606430971
+DECLARE @Iteration Int32
+SET     @Iteration = 11
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 334115956
+DECLARE @Iteration Int32
+SET     @Iteration = 31
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 232601028
+DECLARE @Iteration Int32
+SET     @Iteration = 31
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 31
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 11
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1009987804
+DECLARE @Iteration Int32
+SET     @Iteration = 12
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1627343311
+DECLARE @Iteration Int32
+SET     @Iteration = 12
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 36619578
+DECLARE @Iteration Int32
+SET     @Iteration = 32
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1213830397
+DECLARE @Iteration Int32
+SET     @Iteration = 32
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 32
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 12
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1902788622
+DECLARE @Iteration Int32
+SET     @Iteration = 13
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 2084897453
+DECLARE @Iteration Int32
+SET     @Iteration = 13
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1776131948
+DECLARE @Iteration Int32
+SET     @Iteration = 33
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1035857696
+DECLARE @Iteration Int32
+SET     @Iteration = 33
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 13
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 33
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1948616996
+DECLARE @Iteration Int32
+SET     @Iteration = 14
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1381778857
+DECLARE @Iteration Int32
+SET     @Iteration = 14
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 822561741
+DECLARE @Iteration Int32
+SET     @Iteration = 34
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1138892781
+DECLARE @Iteration Int32
+SET     @Iteration = 34
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 34
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 14
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1230349973
+DECLARE @Iteration Int32
+SET     @Iteration = 15
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 709906572
+DECLARE @Iteration Int32
+SET     @Iteration = 15
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1515166803
+DECLARE @Iteration Int32
+SET     @Iteration = 35
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1863764613
+DECLARE @Iteration Int32
+SET     @Iteration = 35
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 35
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 15
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 955720205
+DECLARE @Iteration Int32
+SET     @Iteration = 16
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 583119955
+DECLARE @Iteration Int32
+SET     @Iteration = 16
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 932060445
+DECLARE @Iteration Int32
+SET     @Iteration = 36
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1777405045
+DECLARE @Iteration Int32
+SET     @Iteration = 36
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 36
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 16
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 737911188
+DECLARE @Iteration Int32
+SET     @Iteration = 17
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1327568298
+DECLARE @Iteration Int32
+SET     @Iteration = 17
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1070337065
+DECLARE @Iteration Int32
+SET     @Iteration = 37
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1120477350
+DECLARE @Iteration Int32
+SET     @Iteration = 37
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 17
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 37
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1506691405
+DECLARE @Iteration Int32
+SET     @Iteration = 18
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 11513900
+DECLARE @Iteration Int32
+SET     @Iteration = 18
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 969997649
+DECLARE @Iteration Int32
+SET     @Iteration = 38
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 334299642
+DECLARE @Iteration Int32
+SET     @Iteration = 38
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 18
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 38
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(8) -- String
+SET     @Name = 'Elephant'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 1770430270
+DECLARE @Iteration Int32
+SET     @Iteration = 19
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(3) -- String
+SET     @Name = 'Cat'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 434162592
+DECLARE @Iteration Int32
+SET     @Iteration = 19
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(5) -- String
+SET     @Name = 'Snake'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 58688712
+DECLARE @Iteration Int32
+SET     @Iteration = 39
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @Name NVarchar2(6) -- String
+SET     @Name = 'Lizard'
+DECLARE @Length_1 Int32
+SET     @Length_1 = 711688861
+DECLARE @Iteration Int32
+SET     @Iteration = 39
+
+INSERT INTO AnimalsUpdate
+(
+	Name,
+	Length,
+	Iteration
+)
+VALUES
+(
+	:Name,
+	:Length_1,
+	:Iteration
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 19
+DECLARE @Color NVarchar2(4) -- String
+SET     @Color = 'Grey'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @iteration Int32
+SET     @iteration = 39
+DECLARE @Color NVarchar2(5) -- String
+SET     @Color = 'Green'
+
+MERGE INTO Animals Target
+USING (
+	SELECT
+		t1.Name,
+		t1.Length as Length_1
+	FROM
+		AnimalsUpdate t1
+	WHERE
+		t1.Iteration = :iteration
+) Source
+ON (Target.Name = Source.Name)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target.Color = :Color,
+	Target.Length = Source.Length_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Name,
+	Color,
+	Length
+)
+VALUES
+(
+	Source.Name,
+	:Color,
+	Source.Length_1
+)
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	Count(*)
+FROM
+	Animals animal
+WHERE
+	animal.Color = 'Green'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+DROP TABLE AnimalsUpdate
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+DROP TABLE Animals
+
