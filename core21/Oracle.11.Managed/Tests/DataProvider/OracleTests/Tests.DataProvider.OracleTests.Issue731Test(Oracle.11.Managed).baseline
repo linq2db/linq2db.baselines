@@ -15,9 +15,9 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Guid Raw(16) -- Binary
-SET     @Guid = HEXTORAW('81C96CFACE74F346AC368691F1EDEE8B')
+SET     @Guid = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 DECLARE @BinaryGuid Blob -- Object
-SET     @BinaryGuid = Cast('1fa1d796fe8a574082d36e29b4e6090f' as raw(16))
+SET     @BinaryGuid = Cast('0d6048a921de744f8ac29516b287076e' as raw(16))
 DECLARE @BlobValue Blob -- Object
 SET     @BlobValue = HEXTORAW('010203')
 DECLARE @RawValue Blob -- Object

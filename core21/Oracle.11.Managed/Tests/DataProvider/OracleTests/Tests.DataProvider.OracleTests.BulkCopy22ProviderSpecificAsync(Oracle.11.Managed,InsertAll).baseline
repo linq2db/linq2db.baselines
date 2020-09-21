@@ -10,10 +10,10 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1003,0,TO_TIMESTAMP('2020-09-20 19:54:57.192774', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,NULL,NULL,NULL,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1003,0,TO_TIMESTAMP('2020-09-21 13:35:04.606324', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,NULL,NULL,NULL,NULL)
 	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1004,0,NULL,NULL,0,2,1532334,NULL,NULL)
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1005,1,TO_TIMESTAMP('2020-09-20 19:54:57.192782', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,5,NULL,NULL,NULL)
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1006,2,TO_TIMESTAMP('2020-09-20 19:54:57.192783', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,6,153,NULL,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1005,1,TO_TIMESTAMP('2020-09-21 13:35:04.606327', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,5,NULL,NULL,NULL)
+	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1006,2,TO_TIMESTAMP('2020-09-21 13:35:04.606328', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,6,153,NULL,NULL)
 SELECT * FROM dual
 
 BeforeExecute
