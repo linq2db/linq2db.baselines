@@ -9,7 +9,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{798d12c2-f8b1-4df5-aeb1-1e53da2bd58a}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0000}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -51,7 +51,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{6e5a74d5-d027-43a9-94b3-6926e4390656}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0001}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -93,7 +93,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{bf2686b0-a75b-4117-8607-79d5722e477f}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0002}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -135,7 +135,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{c63d85d4-11f0-49d2-904a-8e5747ba8f10}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0003}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -177,7 +177,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{818bdcd9-395a-4e3e-847c-a5bd547e4553}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0004}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -219,7 +219,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{2874080a-d451-44a0-b054-af5f72f5e44e}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0005}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -261,7 +261,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{6ee87d7f-152c-4234-ba5d-851c0df23e00}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0006}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -303,7 +303,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{abad4131-ea97-4da0-ba5e-d04d7ef3cd9e}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0007}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -345,7 +345,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{5236d7e8-3bee-4b85-9f91-f98eeb9bbbdd}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0008}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -387,7 +387,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{296edd91-b331-486a-8fc8-7ce1bb8b6b2c}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0009}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -437,7 +437,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{e5f15c99-2aa0-4760-b1bf-63f070b16199}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0000}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -479,7 +479,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{1da6d6fc-21ca-46e3-879b-cbb4a73279a8}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0001}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -521,7 +521,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{2c541a51-bd88-414e-9ad1-c0180dfce085}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0002}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -563,7 +563,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{5a33769b-e9b9-4a4e-95e4-8d895b5eb220}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0003}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -605,7 +605,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{7610a6e6-fe80-466c-9387-e1c5d2894f9b}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0004}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -647,7 +647,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{5741e966-7725-4859-bf16-f6c6d6782965}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0005}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -689,7 +689,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{6000108f-429d-41fa-92ee-bc8be3b8793f}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0006}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -731,7 +731,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{e43cc9fe-f11f-4dd2-b86b-933cfc3173b7}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0007}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -773,7 +773,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{05fda42f-c6e2-4267-8bda-0b75e417ff9e}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0008}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -815,7 +815,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{e9c8b463-d13d-4487-abc6-b7c233998d6a}'
+SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0009}'
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16
