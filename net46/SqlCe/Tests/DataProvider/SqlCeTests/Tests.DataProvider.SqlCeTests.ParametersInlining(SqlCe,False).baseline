@@ -3,7 +3,7 @@
 DECLARE @Value_1 DateTime
 SET     @Value_1 = '1753-01-01'
 DECLARE @Now DateTime
-SET     @Now = '2020-09-20 16:50:11.113'
+SET     @Now = '2020-09-21 10:40:59.150'
 
 SELECT
 	[_].[datetimeDataType]
