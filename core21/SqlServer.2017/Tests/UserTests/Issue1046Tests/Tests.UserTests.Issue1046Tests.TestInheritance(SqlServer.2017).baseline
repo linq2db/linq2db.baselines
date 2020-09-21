@@ -1,0 +1,61 @@
+﻿BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [Task]
+(
+	[Id]         Int            NOT NULL,
+	[TargetName] NVarChar(4000)     NULL,
+	[BdaValue]   NVarChar(4000)     NULL,
+
+	CONSTRAINT [PK_Task] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @TargetName NVarChar(4000) -- String
+SET     @TargetName = N'bda.Requests'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @BdaValue NVarChar(4000) -- String
+SET     @BdaValue = N'Bda value'
+
+INSERT INTO [Task]
+(
+	[TargetName],
+	[Id],
+	[BdaValue]
+)
+VALUES
+(
+	@TargetName,
+	@Id,
+	@BdaValue
+)
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	[p].[TargetName],
+	[p].[Id],
+	[p].[BdaValue]
+FROM
+	[Task] [p]
+WHERE
+	[p].[TargetName] = N'bda.Requests'
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	[p].[BdaValue]
+FROM
+	[Task] [p]
+WHERE
+	[p].[TargetName] = N'bda.Requests'
+
+BeforeExecute
+-- SqlServer.2017
+
+DROP TABLE [Task]
+
