@@ -20,7 +20,7 @@ INSERT INTO [Blog]
 	[UserId]
 )
 VALUES
-(1,N'Another .NET Core Guy',N'Doing .NET Core Stuff',N'c5ea4a3ccb5944989562e423c4eee2ba')
+(1,N'Another .NET Core Guy',N'Doing .NET Core Stuff',N'bc7b663d0fde43278f925d8cc3a11d11')
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
