@@ -1,0 +1,299 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "Animals15"
+(
+	"AnimalType"    NVarChar(40)  NOT NULL,
+	"AnimalType2"   NVarChar(40)  NOT NULL,
+	"Id"            Int           NOT NULL,
+	"Name"          NVarChar(255)     NULL,
+	"Discriminator" NVarChar(40)  NOT NULL,
+	"EyeId"         Int               NULL,
+	"Second"        NVarChar(40)      NULL,
+	"First"         NVarChar(40)      NULL,
+
+	CONSTRAINT "PK_Animals15" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "Eyes15"
+(
+	"Id" Int          NOT NULL,
+	"Xy" NVarChar(40)     NULL,
+
+	CONSTRAINT "PK_Eyes15" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "TestAnimalTable"
+(
+	"Id"           Int NOT NULL,
+	"TestAnimalId" Int     NULL
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @Xy VarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO "Eyes15"
+(
+	"Id",
+	"Xy"
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer(4) -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO "Animals15"
+(
+	"Discriminator",
+	"Name",
+	"Id",
+	"AnimalType2",
+	"AnimalType",
+	"EyeId",
+	"Second",
+	"First"
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @Name VarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator VarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO "Animals15"
+(
+	"AnimalType",
+	"AnimalType2",
+	"Id",
+	"Name",
+	"Discriminator"
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO "TestAnimalTable"
+(
+	"Id",
+	"TestAnimalId"
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Integer(4) -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO "TestAnimalTable"
+(
+	"Id",
+	"TestAnimalId"
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @AnimalType_1 VarChar(3) -- String
+SET     @AnimalType_1 = 'Big'
+
+SELECT
+	"x"."Discriminator",
+	"x"."Name",
+	"x"."Id",
+	"x"."AnimalType2",
+	"x"."AnimalType",
+	"x"."EyeId",
+	"x"."Second",
+	"x"."First"
+FROM
+	"Animals15" "x"
+WHERE
+	"x"."Discriminator" = 'Dog' AND "x"."AnimalType" = @AnimalType_1
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @AnimalType_1 VarChar(3) -- String
+SET     @AnimalType_1 = 'Big'
+
+SELECT
+	"x"."Discriminator",
+	"x"."Name",
+	"x"."Id",
+	"x"."AnimalType2",
+	"x"."AnimalType",
+	"x"."EyeId",
+	"x"."Second",
+	"x"."First"
+FROM
+	"Animals15" "x"
+WHERE
+	"x"."Discriminator" = 'Dog' AND "x"."AnimalType" = @AnimalType_1
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"x"."Discriminator",
+	"x"."Name",
+	"x"."Id",
+	"x"."AnimalType2",
+	"x"."AnimalType",
+	"x"."EyeId",
+	"x"."Second",
+	"x"."First"
+FROM
+	"Animals15" "x"
+WHERE
+	"x"."Discriminator" = 'Dog' AND "x"."AnimalType2" = 'Big'
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @AnimalType2_1 VarChar(3) -- String
+SET     @AnimalType2_1 = 'Big'
+
+SELECT
+	"x"."Discriminator",
+	"x"."Name",
+	"x"."Id",
+	"x"."AnimalType2",
+	"x"."AnimalType",
+	"x"."EyeId",
+	"x"."Second",
+	"x"."First"
+FROM
+	"Animals15" "x"
+WHERE
+	"x"."Discriminator" = 'Dog' AND "x"."AnimalType2" = @AnimalType2_1
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"x"."AnimalType",
+	"x"."AnimalType2",
+	"x"."Id",
+	"x"."Name",
+	"x"."Discriminator",
+	"x"."EyeId",
+	"x"."Second",
+	"x"."First"
+FROM
+	"Animals15" "x"
+WHERE
+	("x"."Discriminator" = 'Dog' OR "x"."Discriminator" = 'SuperWildAnimal')
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"x"."Id",
+	"x"."TestAnimalId"
+FROM
+	"TestAnimalTable" "x"
+		LEFT JOIN "Animals15" "a_TestAnimal" ON "x"."TestAnimalId" = "a_TestAnimal"."Id"
+WHERE
+	"a_TestAnimal"."Discriminator" = 'Dog' AND "a_TestAnimal"."EyeId" = 1
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704'
+		BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Animals15"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704'
+		BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Eyes15"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704'
+		BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "TestAnimalTable"';
+END
+
