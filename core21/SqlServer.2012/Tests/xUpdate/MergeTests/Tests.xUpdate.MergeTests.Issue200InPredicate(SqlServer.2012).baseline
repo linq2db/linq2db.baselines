@@ -8,14 +8,14 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 DECLARE @datetime2DataType_2 DateTime2
-SET     @datetime2DataType_2 = '2020-09-20T17:36:15.4921707'
+SET     @datetime2DataType_2 = '2020-09-21T11:34:52.1328093'
 DECLARE @datetimeoffsetDataType_2 DateTimeOffset
-SET     @datetimeoffsetDataType_2 = '2020-09-20 17:36:15.4921714 +00:00'
+SET     @datetimeoffsetDataType_2 = '2020-09-21 11:34:52.1328100 +00:00'
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		('2020-09-20T17:36:15.4921707','2020-09-20 17:36:15.4921714 +00:00'),
-		('2020-09-20T17:36:15.4921708','2020-09-20 17:36:15.4921715 +00:00')) [Source]
+		('2020-09-21T11:34:52.1328093','2020-09-21 11:34:52.1328100 +00:00'),
+		('2020-09-21T11:34:52.1328094','2020-09-21 11:34:52.1328101 +00:00')) [Source]
 (
 	[datetime2DataType], 
 	[datetimeoffsetDataType]

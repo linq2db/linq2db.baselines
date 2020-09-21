@@ -10,8 +10,8 @@ BeforeExecute
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		(0,'2020-09-20 17:36:15.5966519 +00:00','2020-09-20T17:36:15.5966515'),
-		(0,'2020-09-20 17:36:15.5966520 +00:00','2020-09-20T17:36:15.5966516')) [Source]
+		(0,'2020-09-21 11:34:52.2493945 +00:00','2020-09-21T11:34:52.2493939'),
+		(0,'2020-09-21 11:34:52.2493946 +00:00','2020-09-21T11:34:52.2493940')) [Source]
 (
 	[ID], 
 	[datetimeoffsetDataType], 
@@ -35,18 +35,18 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 DECLARE @datetime2DataType_2 DateTime2
-SET     @datetime2DataType_2 = '2020-09-20T17:36:15.5966515'
+SET     @datetime2DataType_2 = '2020-09-21T11:34:52.2493939'
 DECLARE @datetimeoffsetDataType_2 DateTimeOffset
-SET     @datetimeoffsetDataType_2 = '2020-09-20 17:36:15.5966519 +00:00'
+SET     @datetimeoffsetDataType_2 = '2020-09-21 11:34:52.2493945 +00:00'
 DECLARE @dto2 DateTimeOffset
-SET     @dto2 = '2020-09-20 17:36:15.5966522 +00:00'
+SET     @dto2 = '2020-09-21 11:34:52.2493948 +00:00'
 DECLARE @dt2 DateTime2
-SET     @dt2 = '2020-09-20T17:36:15.5966518'
+SET     @dt2 = '2020-09-21T11:34:52.2493942'
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		('2020-09-20T17:36:15.5966515','2020-09-20 17:36:15.5966519 +00:00'),
-		('2020-09-20T17:36:15.5966516','2020-09-20 17:36:15.5966520 +00:00')) [Source]
+		('2020-09-21T11:34:52.2493939','2020-09-21 11:34:52.2493945 +00:00'),
+		('2020-09-21T11:34:52.2493940','2020-09-21 11:34:52.2493946 +00:00')) [Source]
 (
 	[datetime2DataType], 
 	[datetimeoffsetDataType]
