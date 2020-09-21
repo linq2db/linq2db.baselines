@@ -1,0 +1,293 @@
+﻿BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [Animals8]
+(
+	[AnimalType]    NVarChar(40)   NOT NULL,
+	[AnimalType2]   NVarChar(40)   NOT NULL,
+	[Id]            Int            NOT NULL,
+	[Name]          NVarChar(4000)     NULL,
+	[Discriminator] NVarChar(40)   NOT NULL,
+	[EyeId]         Int                NULL,
+	[Second]        NVarChar(40)       NULL,
+	[First]         NVarChar(40)       NULL,
+
+	CONSTRAINT [PK_Animals8] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [Eyes8]
+(
+	[Id] Int          NOT NULL,
+	[Xy] NVarChar(40)     NULL,
+
+	CONSTRAINT [PK_Eyes8] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [TestAnimalTable]
+(
+	[Id]           Int NOT NULL,
+	[TestAnimalId] Int     NULL
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Xy NVarChar(40) -- String
+SET     @Xy = N'Hallo'
+
+INSERT INTO [Eyes8]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'Dog'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'FirstDog'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Big'
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(40) -- String
+SET     @DogName_Second = N'b'
+DECLARE @DogName_First NVarChar(40) -- String
+SET     @DogName_First = N'a'
+
+INSERT INTO [Animals8]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Big'
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'WildAnimal'
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'WildAnimal'
+
+INSERT INTO [Animals8]
+(
+	[AnimalType],
+	[AnimalType2],
+	[Id],
+	[Name],
+	[Discriminator]
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Int -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Int -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 123
+DECLARE @Xy NVarChar(40) -- String
+SET     @Xy = N'test321'
+
+INSERT INTO [Eyes8]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Id],
+	[_].[Xy]
+FROM
+	[Eyes8] [_]
+WHERE
+	[_].[Id] = 123
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 123
+DECLARE @Xy NVarChar(40) -- String
+SET     @Xy = N'test321'
+
+MERGE INTO [Eyes8] [t1]
+USING (SELECT @Id AS [Id]) [s] ON
+(
+	[t1].[Id] = [s].[Id]
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		[t1].[Xy] = @Xy
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		[Id],
+		[Xy]
+	)
+	VALUES
+	(
+		@Id,
+		@Xy
+	);
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Id],
+	[_].[Xy]
+FROM
+	[Eyes8] [_]
+WHERE
+	[_].[Id] = 123
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Xy NVarChar(40) -- String
+SET     @Xy = N'test321'
+DECLARE @Id Int -- Int32
+SET     @Id = 123
+
+UPDATE
+	[t1]
+SET
+	[t1].[Xy] = @Xy
+FROM
+	[Eyes8] [t1]
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Id],
+	[_].[Xy]
+FROM
+	[Eyes8] [_]
+WHERE
+	[_].[Id] = 123
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 123
+
+DELETE [t1]
+FROM
+	[Eyes8] [t1]
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[Animals8]', N'U') IS NOT NULL)
+	DROP TABLE [Animals8]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[Eyes8]', N'U') IS NOT NULL)
+	DROP TABLE [Eyes8]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[TestAnimalTable]', N'U') IS NOT NULL)
+	DROP TABLE [TestAnimalTable]
+
