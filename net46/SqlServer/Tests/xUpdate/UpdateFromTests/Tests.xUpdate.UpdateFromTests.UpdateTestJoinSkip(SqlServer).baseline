@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer SqlServer.2017
+-- SqlServer SqlServer.2012
 
 CREATE TABLE [UpdatedEntities]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [UpdatedEntities]
 )
 
 BeforeExecute
--- SqlServer SqlServer.2017
+-- SqlServer SqlServer.2012
 
 INSERT INTO [UpdatedEntities]
 (
@@ -30,7 +30,7 @@ VALUES
 (3,31,32,33,3)
 
 BeforeExecute
--- SqlServer SqlServer.2017
+-- SqlServer SqlServer.2012
 
 CREATE TABLE [NewEntities]
 (
@@ -43,7 +43,7 @@ CREATE TABLE [NewEntities]
 )
 
 BeforeExecute
--- SqlServer SqlServer.2017
+-- SqlServer SqlServer.2012
 
 INSERT INTO [NewEntities]
 (
@@ -59,7 +59,7 @@ VALUES
 (3,3,3,3)
 
 BeforeExecute
--- SqlServer SqlServer.2017
+-- SqlServer SqlServer.2012
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @int2 Int -- Int32
@@ -97,7 +97,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer SqlServer.2017
+-- SqlServer SqlServer.2012
 
 SELECT
 	[v].[id],
@@ -108,12 +108,12 @@ FROM
 	[UpdatedEntities] [v]
 
 BeforeExecute
--- SqlServer SqlServer.2017
+-- SqlServer SqlServer.2012
 
 DROP TABLE [NewEntities]
 
 BeforeExecute
--- SqlServer SqlServer.2017
+-- SqlServer SqlServer.2012
 
 DROP TABLE [UpdatedEntities]
 
