@@ -50,7 +50,7 @@ CREATE TABLE [Assignments]
 BeforeExecute
 -- SqlServer.2012
 DECLARE @directionId UniqueIdentifier -- Guid
-SET     @directionId = '15b74196-8cb7-4359-8e49-d6196574dc2e'
+SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 INSERT INTO [Tasks]
 (
@@ -74,7 +74,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2012
 DECLARE @directionId UniqueIdentifier -- Guid
-SET     @directionId = '15b74196-8cb7-4359-8e49-d6196574dc2e'
+SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 INSERT INTO [Assignments]
 (
