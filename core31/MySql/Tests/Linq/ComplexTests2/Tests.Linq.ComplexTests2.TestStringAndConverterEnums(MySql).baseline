@@ -1,0 +1,299 @@
+﻿BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE `Animals29`
+(
+	`AnimalType`    VARCHAR(40)  NOT NULL,
+	`AnimalType2`   VARCHAR(40)  NOT NULL,
+	`Id`            INT          NOT NULL,
+	`Name`          VARCHAR(255)     NULL,
+	`Discriminator` VARCHAR(40)  NOT NULL,
+	`EyeId`         INT              NULL,
+	`Second`        VARCHAR(40)      NULL,
+	`First`         VARCHAR(40)      NULL,
+
+	CONSTRAINT `PK_Animals29` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE `Eyes29`
+(
+	`Id` INT         NOT NULL,
+	`Xy` VARCHAR(40)     NULL,
+
+	CONSTRAINT `PK_Eyes29` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE `TestAnimalTable`
+(
+	`Id`           INT NOT NULL,
+	`TestAnimalId` INT     NULL
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Xy VarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO `Eyes29`
+(
+	`Id`,
+	`Xy`
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO `Animals29`
+(
+	`Discriminator`,
+	`Name`,
+	`Id`,
+	`AnimalType2`,
+	`AnimalType`,
+	`EyeId`,
+	`Second`,
+	`First`
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @Name VarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator VarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO `Animals29`
+(
+	`AnimalType`,
+	`AnimalType2`,
+	`Id`,
+	`Name`,
+	`Discriminator`
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO `TestAnimalTable`
+(
+	`Id`,
+	`TestAnimalId`
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO `TestAnimalTable`
+(
+	`Id`,
+	`TestAnimalId`
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @AnimalType_1 VarChar(3) -- String
+SET     @AnimalType_1 = 'Big'
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`x`.`Discriminator`,
+	`x`.`Name`,
+	`x`.`Id`,
+	`x`.`AnimalType2`,
+	`x`.`AnimalType`,
+	`x`.`EyeId`,
+	`x`.`Second`,
+	`x`.`First`
+FROM
+	`Animals29` `x`
+WHERE
+	`x`.`Discriminator` = 'Dog' AND `x`.`AnimalType` = @AnimalType_1
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @AnimalType_1 VarChar(3) -- String
+SET     @AnimalType_1 = 'Big'
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`x`.`Discriminator`,
+	`x`.`Name`,
+	`x`.`Id`,
+	`x`.`AnimalType2`,
+	`x`.`AnimalType`,
+	`x`.`EyeId`,
+	`x`.`Second`,
+	`x`.`First`
+FROM
+	`Animals29` `x`
+WHERE
+	`x`.`Discriminator` = 'Dog' AND `x`.`AnimalType` = @AnimalType_1
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`x`.`Discriminator`,
+	`x`.`Name`,
+	`x`.`Id`,
+	`x`.`AnimalType2`,
+	`x`.`AnimalType`,
+	`x`.`EyeId`,
+	`x`.`Second`,
+	`x`.`First`
+FROM
+	`Animals29` `x`
+WHERE
+	`x`.`Discriminator` = 'Dog' AND `x`.`AnimalType2` = 'Big'
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @AnimalType2_1 VarChar(3) -- String
+SET     @AnimalType2_1 = 'Big'
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`x`.`Discriminator`,
+	`x`.`Name`,
+	`x`.`Id`,
+	`x`.`AnimalType2`,
+	`x`.`AnimalType`,
+	`x`.`EyeId`,
+	`x`.`Second`,
+	`x`.`First`
+FROM
+	`Animals29` `x`
+WHERE
+	`x`.`Discriminator` = 'Dog' AND `x`.`AnimalType2` = @AnimalType2_1
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`x`.`AnimalType`,
+	`x`.`AnimalType2`,
+	`x`.`Id`,
+	`x`.`Name`,
+	`x`.`Discriminator`,
+	`x`.`EyeId`,
+	`x`.`Second`,
+	`x`.`First`
+FROM
+	`Animals29` `x`
+WHERE
+	(`x`.`Discriminator` = 'Dog' OR `x`.`Discriminator` = 'SuperWildAnimal')
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`x`.`Id`,
+	`x`.`TestAnimalId`
+FROM
+	`TestAnimalTable` `x`
+		LEFT JOIN `Animals29` `a_TestAnimal` ON `x`.`TestAnimalId` = `a_TestAnimal`.`Id`
+WHERE
+	`a_TestAnimal`.`Discriminator` = 'Dog' AND `a_TestAnimal`.`EyeId` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `Animals29`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `Eyes29`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `TestAnimalTable`
+

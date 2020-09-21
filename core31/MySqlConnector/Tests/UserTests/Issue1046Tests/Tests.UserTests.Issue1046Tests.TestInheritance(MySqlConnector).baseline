@@ -1,0 +1,61 @@
+﻿BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE `Task`
+(
+	`Id`         INT          NOT NULL,
+	`TargetName` VARCHAR(255)     NULL,
+	`BdaValue`   VARCHAR(255)     NULL,
+
+	CONSTRAINT `PK_Task` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @TargetName VarChar(12) -- String
+SET     @TargetName = 'bda.Requests'
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @BdaValue VarChar(9) -- String
+SET     @BdaValue = 'Bda value'
+
+INSERT INTO `Task`
+(
+	`TargetName`,
+	`Id`,
+	`BdaValue`
+)
+VALUES
+(
+	@TargetName,
+	@Id,
+	@BdaValue
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`p`.`TargetName`,
+	`p`.`Id`,
+	`p`.`BdaValue`
+FROM
+	`Task` `p`
+WHERE
+	`p`.`TargetName` = 'bda.Requests'
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`p`.`BdaValue`
+FROM
+	`Task` `p`
+WHERE
+	`p`.`TargetName` = 'bda.Requests'
+
+BeforeExecute
+-- MySqlConnector MySql
+
+DROP TABLE `Task`
+
