@@ -1,0 +1,372 @@
+﻿BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE "Animals3"
+(
+	"AnimalType"    VarChar(40) NOT NULL,
+	"AnimalType2"   VarChar(40) NOT NULL,
+	"Id"            Int         NOT NULL,
+	"Name"          text            NULL,
+	"Discriminator" VarChar(40) NOT NULL,
+	"EyeId"         Int             NULL,
+	"Second"        VarChar(40)     NULL,
+	"First"         VarChar(40)     NULL,
+
+	CONSTRAINT "PK_Animals3" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE "Eyes3"
+(
+	"Id" Int         NOT NULL,
+	"Xy" VarChar(40)     NULL,
+
+	CONSTRAINT "PK_Eyes3" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE "TestAnimalTable"
+(
+	"Id"           Int NOT NULL,
+	"TestAnimalId" Int     NULL
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Xy Text(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO "Eyes3"
+(
+	"Id",
+	"Xy"
+)
+VALUES
+(
+	:Id,
+	:Xy
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Discriminator Text(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name Text(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 Text(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType Text(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second Text(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First Text(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO "Animals3"
+(
+	"Discriminator",
+	"Name",
+	"Id",
+	"AnimalType2",
+	"AnimalType",
+	"EyeId",
+	"Second",
+	"First"
+)
+VALUES
+(
+	:Discriminator,
+	:Name,
+	:Id,
+	:AnimalType2,
+	:AnimalType,
+	:EyeId,
+	:DogName_Second,
+	:DogName_First
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Discriminator Text(10) -- String
+SET     @Discriminator = 'WildAnimal'
+DECLARE @Name Text(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @AnimalType Text(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 Text(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+
+INSERT INTO "Animals3"
+(
+	"Discriminator",
+	"Name",
+	"AnimalType",
+	"AnimalType2",
+	"Id"
+)
+VALUES
+(
+	:Discriminator,
+	:Name,
+	:AnimalType,
+	:AnimalType2,
+	:Id
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO "TestAnimalTable"
+(
+	"Id",
+	"TestAnimalId"
+)
+VALUES
+(
+	:Id,
+	:TestAnimalId
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Integer -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO "TestAnimalTable"
+(
+	"Id",
+	"TestAnimalId"
+)
+VALUES
+(
+	:Id,
+	:TestAnimalId
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Discriminator Text(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name Text(8) -- String
+SET     @Name = 'Cerberus'
+DECLARE @Id Integer -- Int32
+SET     @Id = 666
+DECLARE @AnimalType2 Text(5) -- String
+SET     @AnimalType2 = 'Small'
+DECLARE @AnimalType Text(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 2
+DECLARE @DogName_Second Text(3) -- String
+SET     @DogName_Second = 'Dog'
+DECLARE @DogName_First Text(4) -- String
+SET     @DogName_First = 'Good'
+
+INSERT INTO "Animals3"
+(
+	"Discriminator",
+	"Name",
+	"Id",
+	"AnimalType2",
+	"AnimalType",
+	"EyeId",
+	"Second",
+	"First"
+)
+VALUES
+(
+	:Discriminator,
+	:Name,
+	:Id,
+	:AnimalType2,
+	:AnimalType,
+	:EyeId,
+	:DogName_Second,
+	:DogName_First
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t1."Discriminator",
+	t1."Name",
+	t1."Id",
+	t1."AnimalType2",
+	t1."AnimalType",
+	t1."EyeId",
+	t1."Second",
+	t1."First"
+FROM
+	"Animals3" t1
+WHERE
+	t1."Discriminator" = 'Dog' AND t1."Id" = 666
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Discriminator Text(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @Name Text(8) -- String
+SET     @Name = 'Cerberus'
+DECLARE @Id Integer -- Int32
+SET     @Id = 666
+DECLARE @AnimalType2 Text(5) -- String
+SET     @AnimalType2 = 'Small'
+DECLARE @AnimalType Text(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 2
+DECLARE @DogName_Second Text(3) -- String
+SET     @DogName_Second = 'Dog'
+DECLARE @DogName_First Text(4) -- String
+SET     @DogName_First = 'Good'
+
+INSERT INTO "Animals3" AS t1
+(
+	"Discriminator",
+	"Name",
+	"Id",
+	"AnimalType2",
+	"AnimalType",
+	"EyeId",
+	"Second",
+	"First"
+)
+VALUES
+(
+	:Discriminator,
+	:Name,
+	:Id,
+	:AnimalType2,
+	:AnimalType,
+	:EyeId,
+	:DogName_Second,
+	:DogName_First
+)
+ON CONFLICT ("Id") DO UPDATE SET
+	"Discriminator" = :Discriminator,
+	"Name" = :Name,
+	"AnimalType2" = :AnimalType2,
+	"AnimalType" = :AnimalType,
+	"EyeId" = :EyeId,
+	"Second" = :DogName_Second,
+	"First" = :DogName_First
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t1."Discriminator",
+	t1."Name",
+	t1."Id",
+	t1."AnimalType2",
+	t1."AnimalType",
+	t1."EyeId",
+	t1."Second",
+	t1."First"
+FROM
+	"Animals3" t1
+WHERE
+	t1."Discriminator" = 'Dog' AND t1."Id" = 666
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @AnimalType Text(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 Text(5) -- String
+SET     @AnimalType2 = 'Small'
+DECLARE @Name Text(8) -- String
+SET     @Name = 'Cerberus'
+DECLARE @Discriminator Text(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @EyeId Integer -- Int32
+SET     @EyeId = 2
+DECLARE @DogName_Second Text(3) -- String
+SET     @DogName_Second = 'Dog'
+DECLARE @DogName_First Text(4) -- String
+SET     @DogName_First = 'Good'
+DECLARE @Id Integer -- Int32
+SET     @Id = 666
+
+UPDATE
+	"Animals3"
+SET
+	"AnimalType" = :AnimalType,
+	"AnimalType2" = :AnimalType2,
+	"Name" = :Name,
+	"Discriminator" = :Discriminator,
+	"EyeId" = :EyeId,
+	"Second" = :DogName_Second,
+	"First" = :DogName_First
+WHERE
+	"Animals3"."Id" = :Id
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t1."Discriminator",
+	t1."Name",
+	t1."Id",
+	t1."AnimalType2",
+	t1."AnimalType",
+	t1."EyeId",
+	t1."Second",
+	t1."First"
+FROM
+	"Animals3" t1
+WHERE
+	t1."Discriminator" = 'Dog' AND t1."Id" = 666
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 666
+
+DELETE FROM
+	"Animals3" t1
+WHERE
+	t1."Id" = :Id
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "Animals3"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "Eyes3"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "TestAnimalTable"
+

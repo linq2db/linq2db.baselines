@@ -1,0 +1,46 @@
+﻿BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @FirstName_1 Text(1) -- String
+SET     @FirstName_1 = '1'
+
+SELECT
+	r."FirstName",
+	r."PersonID",
+	r."LastName",
+	r."MiddleName",
+	r."Gender"
+FROM
+	"Person" r
+WHERE
+	r."FirstName" = :FirstName_1
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	r."FirstName",
+	r."PersonID",
+	r."LastName",
+	r."MiddleName",
+	r."Gender"
+FROM
+	"Person" r
+WHERE
+	r."FirstName" IS NULL
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @FirstName_1 Text(1) -- String
+SET     @FirstName_1 = '1'
+
+SELECT
+	r."FirstName",
+	r."PersonID",
+	r."LastName",
+	r."MiddleName",
+	r."Gender"
+FROM
+	"Person" r
+WHERE
+	r."FirstName" = :FirstName_1
+
