@@ -1,0 +1,10 @@
+﻿BeforeExecute
+-- SqlCe
+
+SELECT
+	GetDate()
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = 1
+
