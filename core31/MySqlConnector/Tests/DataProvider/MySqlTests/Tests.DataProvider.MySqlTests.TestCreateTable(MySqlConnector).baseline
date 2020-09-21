@@ -115,9 +115,9 @@ SET     @DateTime = '2123-02-03 11:22:33'
 DECLARE @DateTime3 Datetime -- DateTime
 SET     @DateTime3 = '2123-02-03 11:22:33.123'
 DECLARE @TimeStamp_1 Datetime -- DateTimeOffset
-SET     @TimeStamp_1 = 02/03/2023 11:22:33 +01:00
+SET     @TimeStamp_1 = '2023-02-03T11:22:33.0000000+01:00'
 DECLARE @TimeStamp5 Datetime -- DateTimeOffset
-SET     @TimeStamp5 = 02/03/2013 11:22:33 -01:00
+SET     @TimeStamp5 = '2013-02-03T11:22:33.1275000-01:00'
 DECLARE @Time_1 Time
 SET     @Time_1 = -04:03:53
 DECLARE @Time2 Time
