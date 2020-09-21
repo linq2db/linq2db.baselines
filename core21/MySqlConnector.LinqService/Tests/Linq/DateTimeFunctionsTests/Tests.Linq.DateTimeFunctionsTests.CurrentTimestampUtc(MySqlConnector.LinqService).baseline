@@ -1,0 +1,6 @@
+﻿BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	UTC_TIMESTAMP() as `c1`
+
