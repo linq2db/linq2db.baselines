@@ -1,0 +1,3752 @@
+﻿BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [Animals]
+(
+	[Name]   NVarChar(100) NOT NULL,
+	[Color]  NVarChar(100) NOT NULL,
+	[Length] Int           NOT NULL,
+
+	CONSTRAINT [PK_Animals] PRIMARY KEY CLUSTERED ([Name])
+)
+
+BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [AnimalsUpdate]
+(
+	[Name]      NVarChar(100) NOT NULL,
+	[Length]    Int           NOT NULL,
+	[Iteration] Int           NOT NULL
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1149659455
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 0
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1733179613
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 0
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1749545443
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 20
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1728913214
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 20
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 0
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 20
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1200589596
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 1
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 912279955
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 1
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1702082918
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 21
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 453786397
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 21
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 1
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 21
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 309906006
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 2
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 363113821
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 2
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 279427559
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 22
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1551258484
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 22
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 2
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 22
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 413928268
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 3
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 646541266
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 3
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1164575665
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 23
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 326964000
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 23
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 3
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 23
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1107083127
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 4
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 188561113
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 4
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 2037294037
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 24
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 211334196
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 24
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 24
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 4
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1122458960
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 5
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 193780972
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 5
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 270386499
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 25
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1896568700
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 25
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 5
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 25
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 667966977
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 6
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1286321566
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 6
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1682683735
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 26
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 68588672
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 26
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 26
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 6
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 2113590314
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 7
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 89095837
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 7
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 2013794020
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 27
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1609307488
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 27
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 7
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 27
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1006713787
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 8
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1278650445
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 8
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 539077397
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 28
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 2047197713
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 28
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 28
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 8
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 2086726178
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 9
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1668476841
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 9
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 484056508
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 29
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1326151233
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 29
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 29
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 9
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1847956577
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 10
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 361670409
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 10
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1393857424
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 30
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 139073490
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 30
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 30
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 10
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 283204407
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 11
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 660988458
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 11
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1567278630
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 31
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 321409635
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 31
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 11
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 31
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 2115605670
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 12
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 214291999
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 12
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1160620338
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 32
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 647214664
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 32
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 12
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 32
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 834256411
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 13
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 525228888
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 13
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 434733978
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 33
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 955878483
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 33
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 13
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 33
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1462793114
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 14
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 2000460390
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 14
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1060946237
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 34
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 2061751677
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 34
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 14
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 34
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1377079867
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 15
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1633494246
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 15
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 487679730
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 35
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 220810169
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 35
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 15
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 35
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 496803448
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 16
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 817603718
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 16
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 544544697
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 36
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1282761470
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 36
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 36
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 16
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 107463869
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 17
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1264861599
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 17
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 387721469
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 37
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1586089933
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 37
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 37
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 17
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1851988252
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 18
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 711142804
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 18
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 510861266
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 38
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 760788551
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 38
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 18
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 38
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Elephant'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 947407195
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 19
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Cat'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 131313009
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 19
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Snake'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 1613364293
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 39
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Name NVarChar(100) -- String
+SET     @Name = N'Lizard'
+DECLARE @Length_1 Int -- Int32
+SET     @Length_1 = 6978519
+DECLARE @Iteration Int -- Int32
+SET     @Iteration = 39
+
+INSERT INTO [AnimalsUpdate]
+(
+	[Name],
+	[Length],
+	[Iteration]
+)
+VALUES
+(
+	@Name,
+	@Length_1,
+	@Iteration
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 39
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Green'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @iteration Int -- Int32
+SET     @iteration = 19
+DECLARE @Color NVarChar(100) -- String
+SET     @Color = N'Grey'
+
+MERGE INTO [Animals] [Target]
+USING (
+	SELECT
+		[_].[Name],
+		[_].[Length] as [Length_1]
+	FROM
+		[AnimalsUpdate] [_]
+	WHERE
+		[_].[Iteration] = @iteration
+) [Source]
+(
+	[Name], 
+	[Length_1]
+)
+ON ([Target].[Name] = [Source].[Name])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Color] = @Color,
+	[Target].[Length] = [Source].[Length_1]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Name],
+	[Color],
+	[Length]
+)
+VALUES
+(
+	[Source].[Name],
+	@Color,
+	[Source].[Length_1]
+)
+;
+
+BeforeExecute
+-- SqlServer.2017
+
+SELECT
+	Count(*)
+FROM
+	[Animals] [animal]
+WHERE
+	[animal].[Color] = N'Green'
+
+BeforeExecute
+-- SqlServer.2017
+
+DROP TABLE [AnimalsUpdate]
+
+BeforeExecute
+-- SqlServer.2017
+
+DROP TABLE [Animals]
+
