@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 DECLARE @Now DateTime
-SET     @Now = '2020-09-20 17:01:24.540'
+SET     @Now = '2020-09-21 10:57:19.025'
 
 SELECT
 	[_].[datetimeDataType]
