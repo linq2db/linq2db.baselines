@@ -1,0 +1,76 @@
+﻿BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE `InstanceClass`
+(
+	`Id`       INT         NOT NULL,
+	`Value`    INT         NOT NULL,
+	`ValueStr` VARCHAR(10)     NULL
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+INSERT INTO `InstanceClass`
+(
+	`Id`,
+	`Value`,
+	`ValueStr`
+)
+VALUES
+(1,101,'Str_1'),
+(2,102,'Str_2'),
+(3,103,'Str_3'),
+(4,104,'Str_4'),
+(5,105,'Str_5'),
+(6,106,'Str_6'),
+(7,107,'Str_7'),
+(8,108,'Str_8'),
+(9,109,'Str_9'),
+(10,110,'Str_10'),
+(11,111,'Str_11'),
+(12,112,'Str_12'),
+(13,113,'Str_13'),
+(14,114,'Str_14'),
+(15,115,'Str_15'),
+(16,116,'Str_16'),
+(17,117,'Str_17'),
+(18,118,'Str_18'),
+(19,119,'Str_19'),
+(20,120,'Str_20')
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`t`.`Value`,
+	`t`.`ValueStr`,
+	`t`.`Id`
+FROM
+	`InstanceClass` `t`
+WHERE
+	`t`.`Id` > 1 AND
+	`t`.`Value` >= 104 AND
+	`t`.`Value` <= 115 AND
+	`t`.`ValueStr` LIKE 'S%'
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`t`.`Value`,
+	`t`.`ValueStr`,
+	`t`.`Id`
+FROM
+	`InstanceClass` `t`
+WHERE
+	`t`.`Id` > 1 AND
+	`t`.`Value` >= 104 AND
+	`t`.`Value` <= 115 AND
+	`t`.`ValueStr` LIKE 'S%'
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE `InstanceClass`
+
