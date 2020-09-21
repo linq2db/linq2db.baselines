@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 --  Firebird
 DECLARE @Now TimeStamp -- DateTime
-SET     @Now = CAST('2020-09-20 17:48:02.483' AS timestamp)
+SET     @Now = CAST('2020-09-21 11:30:32.205' AS timestamp)
 
 SELECT
 	"t".ID,
