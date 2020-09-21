@@ -1,0 +1,383 @@
+﻿BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [Animals4]
+(
+	[AnimalType]    NVarChar(40)   NOT NULL,
+	[AnimalType2]   NVarChar(40)   NOT NULL,
+	[Id]            Int            NOT NULL,
+	[Name]          NVarChar(4000)     NULL,
+	[Discriminator] NVarChar(40)   NOT NULL,
+	[EyeId]         Int                NULL,
+	[Second]        NVarChar(40)       NULL,
+	[First]         NVarChar(40)       NULL,
+
+	CONSTRAINT [PK_Animals4] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [Eyes4]
+(
+	[Id] Int          NOT NULL,
+	[Xy] NVarChar(40)     NULL,
+
+	CONSTRAINT [PK_Eyes4] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2017
+
+CREATE TABLE [TestAnimalTable]
+(
+	[Id]           Int NOT NULL,
+	[TestAnimalId] Int     NULL
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Xy NVarChar(40) -- String
+SET     @Xy = N'Hallo'
+
+INSERT INTO [Eyes4]
+(
+	[Id],
+	[Xy]
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'Dog'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'FirstDog'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Big'
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second NVarChar(40) -- String
+SET     @DogName_Second = N'b'
+DECLARE @DogName_First NVarChar(40) -- String
+SET     @DogName_First = N'a'
+
+INSERT INTO [Animals4]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'WildAnimal'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'WildAnimal'
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Big'
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+
+INSERT INTO [Animals4]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Int -- Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Int -- Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO [TestAnimalTable]
+(
+	[Id],
+	[TestAnimalId]
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'Dog'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'Cerberus'
+DECLARE @Id Int -- Int32
+SET     @Id = 666
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Small'
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = 2
+DECLARE @DogName_Second NVarChar(40) -- String
+SET     @DogName_Second = N'Dog'
+DECLARE @DogName_First NVarChar(40) -- String
+SET     @DogName_First = N'Good'
+
+INSERT INTO [Animals4]
+(
+	[Discriminator],
+	[Name],
+	[Id],
+	[AnimalType2],
+	[AnimalType],
+	[EyeId],
+	[Second],
+	[First]
+)
+VALUES
+(
+	@Discriminator,
+	@Name,
+	@Id,
+	@AnimalType2,
+	@AnimalType,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Discriminator],
+	[_].[Name],
+	[_].[Id],
+	[_].[AnimalType2],
+	[_].[AnimalType],
+	[_].[EyeId],
+	[_].[Second],
+	[_].[First]
+FROM
+	[Animals4] [_]
+WHERE
+	[_].[Discriminator] = N'Dog' AND [_].[Id] = 666
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 666
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'Dog'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'Cerberus'
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Small'
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = 2
+DECLARE @DogName_Second NVarChar(40) -- String
+SET     @DogName_Second = N'Dog'
+DECLARE @DogName_First NVarChar(40) -- String
+SET     @DogName_First = N'Good'
+
+MERGE INTO [Animals4] [t1]
+USING (SELECT @Id AS [Id]) [s] ON
+(
+	[t1].[Id] = [s].[Id]
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		[t1].[Discriminator] = @Discriminator,
+		[t1].[Name] = @Name,
+		[t1].[AnimalType2] = @AnimalType2,
+		[t1].[AnimalType] = @AnimalType,
+		[t1].[EyeId] = @EyeId,
+		[t1].[Second] = @DogName_Second,
+		[t1].[First] = @DogName_First
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		[Discriminator],
+		[Name],
+		[Id],
+		[AnimalType2],
+		[AnimalType],
+		[EyeId],
+		[Second],
+		[First]
+	)
+	VALUES
+	(
+		@Discriminator,
+		@Name,
+		@Id,
+		@AnimalType2,
+		@AnimalType,
+		@EyeId,
+		@DogName_Second,
+		@DogName_First
+	);
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Discriminator],
+	[_].[Name],
+	[_].[Id],
+	[_].[AnimalType2],
+	[_].[AnimalType],
+	[_].[EyeId],
+	[_].[Second],
+	[_].[First]
+FROM
+	[Animals4] [_]
+WHERE
+	[_].[Discriminator] = N'Dog' AND [_].[Id] = 666
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @AnimalType NVarChar(40) -- String
+SET     @AnimalType = N'Big'
+DECLARE @AnimalType2 NVarChar(40) -- String
+SET     @AnimalType2 = N'Small'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'Cerberus'
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'Dog'
+DECLARE @EyeId Int -- Int32
+SET     @EyeId = 2
+DECLARE @DogName_Second NVarChar(40) -- String
+SET     @DogName_Second = N'Dog'
+DECLARE @DogName_First NVarChar(40) -- String
+SET     @DogName_First = N'Good'
+DECLARE @Id Int -- Int32
+SET     @Id = 666
+
+UPDATE
+	[t1]
+SET
+	[t1].[AnimalType] = @AnimalType,
+	[t1].[AnimalType2] = @AnimalType2,
+	[t1].[Name] = @Name,
+	[t1].[Discriminator] = @Discriminator,
+	[t1].[EyeId] = @EyeId,
+	[t1].[Second] = @DogName_Second,
+	[t1].[First] = @DogName_First
+FROM
+	[Animals4] [t1]
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Discriminator],
+	[_].[Name],
+	[_].[Id],
+	[_].[AnimalType2],
+	[_].[AnimalType],
+	[_].[EyeId],
+	[_].[Second],
+	[_].[First]
+FROM
+	[Animals4] [_]
+WHERE
+	[_].[Discriminator] = N'Dog' AND [_].[Id] = 666
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 666
+
+DELETE [t1]
+FROM
+	[Animals4] [t1]
+WHERE
+	[t1].[Id] = @Id
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[Animals4]', N'U') IS NOT NULL)
+	DROP TABLE [Animals4]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[Eyes4]', N'U') IS NOT NULL)
+	DROP TABLE [Eyes4]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[TestAnimalTable]', N'U') IS NOT NULL)
+	DROP TABLE [TestAnimalTable]
+
