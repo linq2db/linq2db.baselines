@@ -1,0 +1,7 @@
+﻿BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	datetime(1970-01-01 00:00:00) year to second + (dbinfo('utc_current')/86400)::int::char(9)::interval day(9) to day + (mod(dbinfo('utc_current'), 86400))::char(5)::interval second(5) to second
+FROM SYSTABLES
+

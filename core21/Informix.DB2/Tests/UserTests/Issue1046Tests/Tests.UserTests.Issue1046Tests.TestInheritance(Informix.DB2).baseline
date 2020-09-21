@@ -1,0 +1,61 @@
+﻿BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE "Task"
+(
+	Id         Int           NOT NULL,
+	TargetName NVarChar(255)     NULL,
+	BdaValue   NVarChar(255)     NULL,
+
+	PRIMARY KEY (Id)
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @TargetName VarChar(12) -- String
+SET     @TargetName = 'bda.Requests'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @BdaValue VarChar(9) -- String
+SET     @BdaValue = 'Bda value'
+
+INSERT INTO "Task"
+(
+	TargetName,
+	Id,
+	BdaValue
+)
+VALUES
+(
+	@TargetName,
+	@Id,
+	@BdaValue
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	p.TargetName,
+	p.Id,
+	p.BdaValue
+FROM
+	"Task" p
+WHERE
+	p.TargetName = 'bda.Requests'
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	p.BdaValue
+FROM
+	"Task" p
+WHERE
+	p.TargetName = 'bda.Requests'
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE "Task"
+
