@@ -21,27 +21,6 @@ SELECT Cast(@p as datetime)
 
 BeforeExecute
 --  MySqlConnector MySql
-DECLARE @p Datetime -- DateTime
-SET     @p = 12/12/12 12:12:12 PM
-
-SELECT Cast(@p as datetime)
-
-BeforeExecute
---  MySqlConnector MySql
-DECLARE @p Datetime -- DateTime
-SET     @p = 12/12/12 12:12:12 PM
-
-SELECT Cast(@p as datetime)
-
-BeforeExecute
---  MySqlConnector MySql
-DECLARE @p Datetime -- DateTime
-SET     @p = 12/12/12 12:12:12 PM
-
-SELECT Cast(@p as datetime)
-
-BeforeExecute
---  MySqlConnector MySql
 DECLARE @p Byte -- SByte
 SET     @p = 111
 
