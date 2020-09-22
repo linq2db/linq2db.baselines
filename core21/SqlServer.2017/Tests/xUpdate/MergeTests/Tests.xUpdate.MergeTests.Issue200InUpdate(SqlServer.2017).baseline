@@ -10,8 +10,8 @@ BeforeExecute
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		(0,'2020-02-29 17:54:55.1231234 +00:45','2020-02-29T17:54:55.1231234'),
-		(0,'2020-02-29 17:54:55.1231235 +00:45','2020-02-29T17:54:55.1231235')) [Source]
+		(0,'2020-02-29 17:54:55.1231234 +00:40','2020-02-29T17:54:55.1231234'),
+		(0,'2020-02-29 17:54:55.1231235 +00:40','2020-02-29T17:54:55.1231235')) [Source]
 (
 	[ID], 
 	[datetimeoffsetDataType], 
@@ -37,16 +37,16 @@ BeforeExecute
 DECLARE @datetime2DataType_2 DateTime2
 SET     @datetime2DataType_2 = '2020-02-29T17:54:55.1231234'
 DECLARE @datetimeoffsetDataType_2 DateTimeOffset
-SET     @datetimeoffsetDataType_2 = '2020-02-29 17:54:55.1231234 +00:45'
+SET     @datetimeoffsetDataType_2 = '2020-02-29 17:54:55.1231234 +00:40'
 DECLARE @dto2 DateTimeOffset
-SET     @dto2 = '2020-02-29 17:54:55.1231237 +00:45'
+SET     @dto2 = '2020-02-29 17:54:55.1231237 +00:40'
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2020-02-29T17:54:55.1231237'
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		('2020-02-29T17:54:55.1231234','2020-02-29 17:54:55.1231234 +00:45'),
-		('2020-02-29T17:54:55.1231235','2020-02-29 17:54:55.1231235 +00:45')) [Source]
+		('2020-02-29T17:54:55.1231234','2020-02-29 17:54:55.1231234 +00:40'),
+		('2020-02-29T17:54:55.1231235','2020-02-29 17:54:55.1231235 +00:40')) [Source]
 (
 	[datetime2DataType], 
 	[datetimeoffsetDataType]
