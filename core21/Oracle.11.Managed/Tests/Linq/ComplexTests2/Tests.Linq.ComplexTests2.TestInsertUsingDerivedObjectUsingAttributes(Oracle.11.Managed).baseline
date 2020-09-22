@@ -55,7 +55,7 @@ SET     @MiddleName = 'test'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'U'
 DECLARE @ID Int32
-SET     @ID = 81
+SET     @ID = 61
 
 UPDATE
 	Person
@@ -86,7 +86,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @ID Int32
-SET     @ID = 81
+SET     @ID = 61
 
 DELETE FROM
 	Person t1

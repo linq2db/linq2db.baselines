@@ -39,7 +39,7 @@ RETURNING
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @id Int32
-SET     @id = 301
+SET     @id = 361
 DECLARE @take Int32
 SET     @take = 1
 
@@ -65,7 +65,7 @@ SET     @Name_MiddleName = NULL
 DECLARE @Name_LastName Varchar2(13) -- String
 SET     @Name_LastName = 'UpdateComplex'
 DECLARE @ID Int32
-SET     @ID = 301
+SET     @ID = 361
 
 UPDATE
 	Person
@@ -80,7 +80,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @id Int32
-SET     @id = 301
+SET     @id = 361
 DECLARE @take Int32
 SET     @take = 1
 
