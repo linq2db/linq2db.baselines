@@ -7,18 +7,20 @@ FROM
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @Now DateTime2
-SET     @Now = '2020-09-21T11:12:45.8170328'
+DECLARE @DateTime DateTime2
+SET     @DateTime = '2020-02-29T17:54:55.1231234'
+DECLARE @DateTimeOffset DateTimeOffset
+SET     @DateTimeOffset = '2020-02-29 17:54:55.1231234 +00:45'
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		('2020-09-21T11:12:45.8120366','2020-09-21 11:12:45.8120366 +00:00'),
-		('2020-09-21T11:12:45.8120367','2020-09-21 11:12:45.8120367 +00:00')) [Source]
+		('2020-02-29T17:54:55.1231232','2020-02-29 17:54:55.1231232 +00:45'),
+		('2020-02-29T17:54:55.1231233','2020-02-29 17:54:55.1231233 +00:45')) [Source]
 (
 	[datetime2DataType], 
 	[datetimeoffsetDataType]
 )
-ON ([Source].[datetime2DataType] <> @Now AND ([Source].[datetimeoffsetDataType] IS NULL OR [Source].[datetimeoffsetDataType] <> SYSDATETIMEOFFSET()))
+ON ([Source].[datetime2DataType] <> @DateTime AND [Source].[datetimeoffsetDataType] <> @DateTimeOffset)
 
 WHEN NOT MATCHED THEN
 INSERT
