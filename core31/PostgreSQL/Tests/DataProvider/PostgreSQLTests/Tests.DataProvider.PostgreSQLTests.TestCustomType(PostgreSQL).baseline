@@ -10,9 +10,9 @@ CREATE TABLE "TableWithDateRanges"
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @SimpleRange 1073741845 -- Object
-SET     @SimpleRange = [2/29/2020 5:54:55 PM,)
+SET     @SimpleRange = [02/29/2020 17:54:55,)
 DECLARE @RangeWithTimeZone 1073741850 -- Object
-SET     @RangeWithTimeZone = [3/1/2020 5:54:55 PM,)
+SET     @RangeWithTimeZone = [03/01/2020 17:54:55,)
 
 INSERT INTO "TableWithDateRanges"
 (
