@@ -15,13 +15,13 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @DateRangeInclusive 1073741831 -- Object
-SET     @DateRangeInclusive = [02/03/2000 00:00:00,03/03/2000 00:00:00]
+SET     @DateRangeInclusive = [2/3/2000 12:00:00 AM,3/3/2000 12:00:00 AM]
 DECLARE @DateRangeExclusive 1073741831 -- Object
-SET     @DateRangeExclusive = (02/03/2000 00:00:00,03/03/2000 00:00:00)
+SET     @DateRangeExclusive = (2/3/2000 12:00:00 AM,3/3/2000 12:00:00 AM)
 DECLARE @TSRange 1073741845 -- Object
-SET     @TSRange = [02/03/2000 04:05:06,04/03/2000 04:05:06]
+SET     @TSRange = [2/3/2000 4:05:06 AM,4/3/2000 4:05:06 AM]
 DECLARE @TSTZRange 1073741850 -- Object
-SET     @TSTZRange = [04/03/2000 04:05:06,05/03/2000 04:05:06]
+SET     @TSTZRange = [4/3/2000 4:05:06 AM,5/3/2000 4:05:06 AM]
 
 INSERT INTO "NpgsqlTableWithDateRanges"
 (
