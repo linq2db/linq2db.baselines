@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Discriminator Text(10) -- String
-SET     @Discriminator = 'WildAnimal'
-DECLARE @Name Text(10) -- String
-SET     @Name = 'WildAnimal'
 DECLARE @AnimalType Text(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 Text(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Name Text(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator Text(10) -- String
+SET     @Discriminator = 'WildAnimal'
 
 INSERT INTO "Animals3"
 (
-	"Discriminator",
-	"Name",
 	"AnimalType",
 	"AnimalType2",
-	"Id"
+	"Id",
+	"Name",
+	"Discriminator"
 )
 VALUES
 (
-	:Discriminator,
-	:Name,
 	:AnimalType,
 	:AnimalType2,
-	:Id
+	:Id,
+	:Name,
+	:Discriminator
 )
 
 BeforeExecute
