@@ -22,21 +22,21 @@ SELECT Cast(@p as datetime)
 BeforeExecute
 --  MySqlConnector MySql
 DECLARE @p Datetime -- DateTime
-SET     @p = 12/12/2012 12:12:12
+SET     @p = 12/12/2012 12:12:12 PM
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
 --  MySqlConnector MySql
 DECLARE @p Datetime -- DateTime
-SET     @p = 12/12/2012 12:12:12
+SET     @p = 12/12/2012 12:12:12 PM
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
 --  MySqlConnector MySql
 DECLARE @p Datetime -- DateTime
-SET     @p = 12/12/2012 12:12:12
+SET     @p = 12/12/2012 12:12:12 PM
 
 SELECT Cast(@p as datetime)
 
