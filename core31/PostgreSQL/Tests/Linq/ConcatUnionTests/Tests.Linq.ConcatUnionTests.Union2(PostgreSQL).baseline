@@ -2,8 +2,8 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	child_1."ParentID",
-	child_1."ChildID"
+	child_1."ChildID",
+	child_1."ParentID"
 FROM
 	(
 		SELECT

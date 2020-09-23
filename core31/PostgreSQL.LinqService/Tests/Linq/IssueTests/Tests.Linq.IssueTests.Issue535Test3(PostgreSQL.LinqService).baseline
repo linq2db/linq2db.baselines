@@ -3,11 +3,11 @@
 
 CREATE TABLE "CustomerBase"
 (
-	"Id"           SERIAL   NOT NULL,
 	"ClientType"   text     NOT NULL,
-	"Name"         text         NULL,
 	"ContactEmail" text         NULL,
 	"Enabled"      Boolean      NULL,
+	"Id"           SERIAL   NOT NULL,
+	"Name"         text         NULL,
 
 	CONSTRAINT "PK_CustomerBase" PRIMARY KEY ("Id")
 )

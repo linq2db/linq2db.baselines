@@ -15,10 +15,10 @@ SET     @ID = 3
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -31,10 +31,10 @@ SET     @ID = 4
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -47,10 +47,10 @@ SET     @ID = 2
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -63,10 +63,10 @@ SET     @ID = 1
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -89,10 +89,10 @@ SET     @ID = 3
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -105,10 +105,10 @@ SET     @ID = 4
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -121,10 +121,10 @@ SET     @ID = 2
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -137,10 +137,10 @@ SET     @ID = 1
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE

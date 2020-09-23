@@ -3,9 +3,9 @@
 
 CREATE TABLE "PR_1598_Insert_Table_Cache"
 (
+	"Age"  Int      NULL,
 	"Id"   Int  NOT NULL,
 	"Name" text     NULL,
-	"Age"  Int      NULL,
 
 	CONSTRAINT "PK_PR_1598_Insert_Table_Cache" PRIMARY KEY ("Id")
 )
@@ -34,9 +34,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
+	t."Age",
 	t."Id",
-	t."Name",
-	t."Age"
+	t."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" t
 WHERE
@@ -63,9 +63,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
+	t."Age",
 	t."Id",
-	t."Name",
-	t."Age"
+	t."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" t
 WHERE

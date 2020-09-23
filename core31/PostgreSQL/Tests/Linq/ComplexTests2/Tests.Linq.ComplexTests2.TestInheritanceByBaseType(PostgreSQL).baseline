@@ -5,9 +5,9 @@ CREATE TABLE "Animals3"
 (
 	"AnimalType"    VarChar(40) NOT NULL,
 	"AnimalType2"   VarChar(40) NOT NULL,
+	"Discriminator" VarChar(40) NOT NULL,
 	"Id"            Int         NOT NULL,
 	"Name"          text            NULL,
-	"Discriminator" VarChar(40) NOT NULL,
 	"EyeId"         Int             NULL,
 	"Second"        VarChar(40)     NULL,
 	"First"         VarChar(40)     NULL,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Discriminator Text(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name Text(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Discriminator Text(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 Text(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType Text(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO "Animals3"
 (
-	"Discriminator",
 	"Name",
 	"Id",
+	"Discriminator",
 	"AnimalType2",
 	"AnimalType",
 	"EyeId",
@@ -85,9 +85,9 @@ INSERT INTO "Animals3"
 )
 VALUES
 (
-	:Discriminator,
 	:Name,
 	:Id,
+	:Discriminator,
 	:AnimalType2,
 	:AnimalType,
 	:EyeId,
@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @AnimalType Text(3) -- String
-SET     @AnimalType = 'Big'
-DECLARE @AnimalType2 Text(3) -- String
-SET     @AnimalType2 = 'Big'
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
 DECLARE @Name Text(10) -- String
 SET     @Name = 'WildAnimal'
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
 DECLARE @Discriminator Text(10) -- String
 SET     @Discriminator = 'WildAnimal'
+DECLARE @AnimalType2 Text(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType Text(3) -- String
+SET     @AnimalType = 'Big'
 
 INSERT INTO "Animals3"
 (
-	"AnimalType",
-	"AnimalType2",
-	"Id",
 	"Name",
-	"Discriminator"
+	"Id",
+	"Discriminator",
+	"AnimalType2",
+	"AnimalType"
 )
 VALUES
 (
-	:AnimalType,
-	:AnimalType2,
-	:Id,
 	:Name,
-	:Discriminator
+	:Id,
+	:Discriminator,
+	:AnimalType2,
+	:AnimalType
 )
 
 BeforeExecute
@@ -163,12 +163,12 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Discriminator Text(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name Text(8) -- String
 SET     @Name = 'Cerberus'
 DECLARE @Id Integer -- Int32
 SET     @Id = 666
+DECLARE @Discriminator Text(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 Text(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType Text(3) -- String
@@ -182,9 +182,9 @@ SET     @DogName_First = 'Good'
 
 INSERT INTO "Animals3"
 (
-	"Discriminator",
 	"Name",
 	"Id",
+	"Discriminator",
 	"AnimalType2",
 	"AnimalType",
 	"EyeId",
@@ -193,9 +193,9 @@ INSERT INTO "Animals3"
 )
 VALUES
 (
-	:Discriminator,
 	:Name,
 	:Id,
+	:Discriminator,
 	:AnimalType2,
 	:AnimalType,
 	:EyeId,
@@ -209,9 +209,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."Discriminator",
 	t1."Name",
 	t1."Id",
+	t1."Discriminator",
 	t1."AnimalType2",
 	t1."AnimalType",
 	t1."EyeId",
@@ -225,12 +225,12 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Discriminator Text(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name Text(8) -- String
 SET     @Name = 'Cerberus'
 DECLARE @Id Integer -- Int32
 SET     @Id = 666
+DECLARE @Discriminator Text(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 Text(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType Text(3) -- String
@@ -244,9 +244,9 @@ SET     @DogName_First = 'Good'
 
 INSERT INTO "Animals3" AS t1
 (
-	"Discriminator",
 	"Name",
 	"Id",
+	"Discriminator",
 	"AnimalType2",
 	"AnimalType",
 	"EyeId",
@@ -255,9 +255,9 @@ INSERT INTO "Animals3" AS t1
 )
 VALUES
 (
-	:Discriminator,
 	:Name,
 	:Id,
+	:Discriminator,
 	:AnimalType2,
 	:AnimalType,
 	:EyeId,
@@ -265,8 +265,8 @@ VALUES
 	:DogName_First
 )
 ON CONFLICT ("Id") DO UPDATE SET
-	"Discriminator" = :Discriminator,
 	"Name" = :Name,
+	"Discriminator" = :Discriminator,
 	"AnimalType2" = :AnimalType2,
 	"AnimalType" = :AnimalType,
 	"EyeId" = :EyeId,
@@ -279,9 +279,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."Discriminator",
 	t1."Name",
 	t1."Id",
+	t1."Discriminator",
 	t1."AnimalType2",
 	t1."AnimalType",
 	t1."EyeId",
@@ -299,10 +299,10 @@ DECLARE @AnimalType Text(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 Text(5) -- String
 SET     @AnimalType2 = 'Small'
-DECLARE @Name Text(8) -- String
-SET     @Name = 'Cerberus'
 DECLARE @Discriminator Text(3) -- String
 SET     @Discriminator = 'Dog'
+DECLARE @Name Text(8) -- String
+SET     @Name = 'Cerberus'
 DECLARE @EyeId Integer -- Int32
 SET     @EyeId = 2
 DECLARE @DogName_Second Text(3) -- String
@@ -317,8 +317,8 @@ UPDATE
 SET
 	"AnimalType" = :AnimalType,
 	"AnimalType2" = :AnimalType2,
-	"Name" = :Name,
 	"Discriminator" = :Discriminator,
+	"Name" = :Name,
 	"EyeId" = :EyeId,
 	"Second" = :DogName_Second,
 	"First" = :DogName_First
@@ -331,9 +331,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."Discriminator",
 	t1."Name",
 	t1."Id",
+	t1."Discriminator",
 	t1."AnimalType2",
 	t1."AnimalType",
 	t1."EyeId",

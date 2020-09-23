@@ -4,10 +4,10 @@
 CREATE TABLE "xxPerson"
 (
 	"FirstName"  text     NOT NULL,
+	"Gender"     Char(1)  NOT NULL,
 	"PersonID"   SERIAL   NOT NULL,
 	"LastName"   text     NOT NULL,
 	"MiddleName" text         NULL,
-	"Gender"     Char(1)  NOT NULL,
 
 	CONSTRAINT "PK_xxPerson" PRIMARY KEY ("PersonID")
 )
@@ -16,52 +16,52 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Text(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName Text(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO "xxPerson"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	:FirstName,
+	:Gender,
 	:LastName,
-	:MiddleName,
-	:Gender
+	:MiddleName
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Text(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName Text(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO "xxPerson"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	:FirstName,
+	:Gender,
 	:LastName,
-	:MiddleName,
-	:Gender
+	:MiddleName
 )
 RETURNING 
 	"PersonID"
@@ -70,26 +70,26 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Text(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName Text(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO "xxPerson"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	:FirstName,
+	:Gender,
 	:LastName,
-	:MiddleName,
-	:Gender
+	:MiddleName
 )
 RETURNING 
 	"PersonID"

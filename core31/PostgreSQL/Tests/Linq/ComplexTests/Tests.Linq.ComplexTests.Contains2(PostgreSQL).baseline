@@ -4,9 +4,9 @@
 SELECT
 	p."ParentID",
 	p."Value1",
-	t2.gc,
 	t2."ChildID",
 	t2."GrandChildID",
+	t2.gc,
 	t2.is_empty
 FROM
 	"Child" ch
@@ -29,5 +29,5 @@ FROM
 					) max_1 ON (gc_1."GrandChildID" IS NULL AND max_1.c1 IS NULL OR gc_1."GrandChildID" = max_1.c1)
 		) t2 ON p."ParentID" = t2.gc
 WHERE
-	(t2.gc IS NULL AND t2."ChildID" IS NULL AND t2."GrandChildID" IS NULL OR (t2."GrandChildID" IS NULL OR t2."GrandChildID" <> 111) AND (t2."GrandChildID" IS NULL OR t2."GrandChildID" <> 222))
+	(t2."ChildID" IS NULL AND t2."GrandChildID" IS NULL AND t2.gc IS NULL OR (t2."GrandChildID" IS NULL OR t2."GrandChildID" <> 111) AND (t2."GrandChildID" IS NULL OR t2."GrandChildID" <> 222))
 

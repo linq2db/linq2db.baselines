@@ -5,27 +5,27 @@ WITH "CTE_1"
 (
 	"entry_ID",
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 AS
 (
 	SELECT
 		person_1."PersonID",
 		person_1."FirstName",
+		person_1."Gender",
 		person_1."LastName",
-		person_1."MiddleName",
-		person_1."Gender"
+		person_1."MiddleName"
 	FROM
 		"Person" person_1
 )
 SELECT
 	x."FirstName",
+	x."Gender",
 	x."entry_ID",
 	x."LastName",
-	x."MiddleName",
-	x."Gender"
+	x."MiddleName"
 FROM
 	"CTE_1" x
 WHERE
@@ -36,10 +36,10 @@ BeforeExecute
 
 SELECT
 	x."FirstName",
+	x."Gender",
 	x."PersonID",
 	x."LastName",
-	x."MiddleName",
-	x."Gender"
+	x."MiddleName"
 FROM
 	"Person" x
 WHERE

@@ -6,8 +6,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
-	p."PersonID",
 	p."Gender",
+	p."PersonID",
 	p."FirstName",
 	p."MiddleName",
 	p."LastName"

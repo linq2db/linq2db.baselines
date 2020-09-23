@@ -4,10 +4,10 @@
 CREATE TABLE "xxPerson"
 (
 	"FirstName"  text     NOT NULL,
+	"Gender"     Char(1)  NOT NULL,
 	"PersonID"   SERIAL   NOT NULL,
 	"LastName"   text     NOT NULL,
 	"MiddleName" text         NULL,
-	"Gender"     Char(1)  NOT NULL,
 
 	CONSTRAINT "PK_xxPerson" PRIMARY KEY ("PersonID")
 )
@@ -16,26 +16,26 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Text(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName Text(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO "xxPerson"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	:FirstName,
+	:Gender,
 	:LastName,
-	:MiddleName,
-	:Gender
+	:MiddleName
 )
 
 BeforeExecute
@@ -53,10 +53,10 @@ SET     @take = 2
 
 SELECT
 	t1."FirstName",
+	t1."Gender",
 	t1."PersonID",
 	t1."LastName",
-	t1."MiddleName",
-	t1."Gender"
+	t1."MiddleName"
 FROM
 	"xxPerson" t1
 LIMIT :take

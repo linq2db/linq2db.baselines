@@ -4,14 +4,14 @@
 SELECT
 	o."ParentID",
 	o."Value1",
-	t1."ParentID",
-	t1."ChildID"
+	t1."ChildID",
+	t1."ParentID"
 FROM
 	"Parent" o
 		INNER JOIN LATERAL (
 			SELECT DISTINCT
-				x."ParentID",
-				x."ChildID"
+				x."ChildID",
+				x."ParentID"
 			FROM
 				"Child" x
 			WHERE

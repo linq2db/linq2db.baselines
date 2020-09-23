@@ -3,9 +3,9 @@
 
 CREATE TABLE "Task"
 (
+	"BdaValue"   text     NULL,
 	"Id"         Int  NOT NULL,
 	"TargetName" text     NULL,
-	"BdaValue"   text     NULL,
 
 	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
 )
@@ -36,8 +36,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."TargetName",
 	p."Id",
+	p."TargetName",
 	p."BdaValue"
 FROM
 	"Task" p

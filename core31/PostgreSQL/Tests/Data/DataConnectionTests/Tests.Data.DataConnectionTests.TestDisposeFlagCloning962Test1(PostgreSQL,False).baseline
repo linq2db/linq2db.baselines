@@ -27,9 +27,9 @@ BeforeExecute
 
 CREATE TABLE "Products"
 (
+	"CategoryID"      Int         NULL,
 	"ProductID"       SERIAL  NOT NULL,
 	"ProductName"     text    NOT NULL,
-	"CategoryID"      Int         NULL,
 	"QuantityPerUnit" text        NULL,
 
 	CONSTRAINT "PK_Products" PRIMARY KEY ("ProductID")
@@ -40,26 +40,26 @@ BeforeExecute
 
 INSERT INTO "Products"
 (
-	"ProductName",
 	"CategoryID",
+	"ProductName",
 	"QuantityPerUnit"
 )
 VALUES
-('Prod 1',1,'q 1'),
-('Prod 2',1,'q 2'),
-('Prod 3',3,'q 3'),
-('Prod 4',3,'q 4'),
-('Prod 5',1,'q 5'),
-('Prod 6',1,'q 6')
+(1,'Prod 1','q 1'),
+(1,'Prod 2','q 2'),
+(3,'Prod 3','q 3'),
+(3,'Prod 4','q 4'),
+(1,'Prod 5','q 5'),
+(1,'Prod 6','q 6')
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	"lw_Category"."CategoryID",
+	detail."CategoryID",
 	detail."ProductID",
 	detail."ProductName",
-	detail."CategoryID",
 	detail."QuantityPerUnit"
 FROM
 	"Categories" "lw_Category"

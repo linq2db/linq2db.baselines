@@ -6,8 +6,8 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 2
 
 SELECT
-	t1."ParentID",
-	t1."ChildID"
+	t1."ChildID",
+	t1."ParentID"
 FROM
 	"Child" t1
 ORDER BY
@@ -22,8 +22,8 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 2
 
 SELECT
-	t1."ParentID",
-	t1."ChildID"
+	t1."ChildID",
+	t1."ParentID"
 FROM
 	"Child" t1
 ORDER BY

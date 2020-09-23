@@ -12,9 +12,9 @@ BeforeExecute
 
 CREATE TABLE "Issue1096TaskStage"
 (
+	"Actual" Boolean NOT NULL,
 	"Id"     Int     NOT NULL,
 	"TaskId" Int     NOT NULL,
-	"Actual" Boolean NOT NULL,
 
 	CONSTRAINT "PK_Issue1096TaskStage" PRIMARY KEY ("Id")
 )
@@ -57,24 +57,24 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @Actual Boolean
+SET     @Actual = True
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TaskId Integer -- Int32
 SET     @TaskId = 1
-DECLARE @Actual Boolean
-SET     @Actual = True
 
 INSERT INTO "Issue1096TaskStage"
 (
+	"Actual",
 	"Id",
-	"TaskId",
-	"Actual"
+	"TaskId"
 )
 VALUES
 (
+	:Actual,
 	:Id,
-	:TaskId,
-	:Actual
+	:TaskId
 )
 
 BeforeExecute
@@ -83,17 +83,17 @@ BeforeExecute
 SELECT
 	t1."Id",
 	t1."TargetName",
+	t1."Actual",
 	t1."Id_1",
-	t1."TaskId",
-	t1."Actual"
+	t1."TaskId"
 FROM
 	(
 		SELECT DISTINCT
 			t."Id",
 			t."TargetName",
+			"a_ActualStage"."Actual",
 			"a_ActualStage"."Id" as "Id_1",
-			"a_ActualStage"."TaskId",
-			"a_ActualStage"."Actual"
+			"a_ActualStage"."TaskId"
 		FROM
 			"Issue1096Task" t
 				LEFT JOIN "Issue1096TaskStage" "a_ActualStage" ON t."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True

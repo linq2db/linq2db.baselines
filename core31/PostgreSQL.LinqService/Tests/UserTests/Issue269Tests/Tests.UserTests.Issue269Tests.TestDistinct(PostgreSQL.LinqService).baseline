@@ -2,8 +2,8 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	pat."PersonID",
-	pat."Diagnosis"
+	pat."Diagnosis",
+	pat."PersonID"
 FROM
 	"Patient" pat
 WHERE

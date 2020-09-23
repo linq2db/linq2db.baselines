@@ -3,38 +3,38 @@
 
 CREATE TABLE "PR_1598_Update_Enum_Table"
 (
-	"Id"     Int  NOT NULL,
-	"Name"   text     NULL,
 	"Age"    Int      NULL,
 	"Gender" text     NULL,
+	"Id"     Int  NOT NULL,
+	"Name"   text     NULL,
 
 	CONSTRAINT "PK_PR_1598_Update_Enum_Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @Name Text(3) -- String
-SET     @Name = 'Max'
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
 DECLARE @Gender Text(6) -- String
 SET     @Gender = 'Female'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name Text(3) -- String
+SET     @Name = 'Max'
 
 INSERT INTO "PR_1598_Update_Enum_Table"
 (
-	"Id",
-	"Name",
 	"Age",
-	"Gender"
+	"Gender",
+	"Id",
+	"Name"
 )
 VALUES
 (
-	:Id,
-	:Name,
 	:Age,
-	:Gender
+	:Gender,
+	:Id,
+	:Name
 )
 
 BeforeExecute
@@ -43,10 +43,10 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t."Id",
-	t."Name",
 	t."Age",
-	t."Gender"
+	t."Gender",
+	t."Id",
+	t."Name"
 FROM
 	"PR_1598_Update_Enum_Table" t
 WHERE
@@ -55,21 +55,21 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Name Text(4) -- String
-SET     @Name = 'Jack'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 DECLARE @Gender Text(4) -- String
 SET     @Gender = 'Male'
+DECLARE @Name Text(4) -- String
+SET     @Name = 'Jack'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
 	"PR_1598_Update_Enum_Table"
 SET
-	"Name" = :Name,
 	"Age" = :Age,
-	"Gender" = :Gender
+	"Gender" = :Gender,
+	"Name" = :Name
 WHERE
 	"PR_1598_Update_Enum_Table"."Id" = :Id
 
@@ -79,10 +79,10 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t."Id",
-	t."Name",
 	t."Age",
-	t."Gender"
+	t."Gender",
+	t."Id",
+	t."Name"
 FROM
 	"PR_1598_Update_Enum_Table" t
 WHERE
@@ -91,18 +91,18 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Name Text(8) -- String
-SET     @Name = 'Francine'
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
+DECLARE @Name Text(8) -- String
+SET     @Name = 'Francine'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
 	"PR_1598_Update_Enum_Table"
 SET
-	"Name" = :Name,
-	"Age" = :Age
+	"Age" = :Age,
+	"Name" = :Name
 WHERE
 	"PR_1598_Update_Enum_Table"."Id" = :Id
 
@@ -112,10 +112,10 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t."Id",
-	t."Name",
 	t."Age",
-	t."Gender"
+	t."Gender",
+	t."Id",
+	t."Name"
 FROM
 	"PR_1598_Update_Enum_Table" t
 WHERE

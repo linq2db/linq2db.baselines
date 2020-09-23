@@ -2,8 +2,8 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	"a_Child"."ParentID",
-	"a_Child"."ChildID"
+	"a_Child"."ChildID",
+	"a_Child"."ParentID"
 FROM
 	(
 		SELECT DISTINCT

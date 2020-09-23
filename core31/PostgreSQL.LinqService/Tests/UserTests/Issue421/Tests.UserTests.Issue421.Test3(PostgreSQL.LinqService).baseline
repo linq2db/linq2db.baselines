@@ -3,28 +3,28 @@
 
 CREATE TABLE "BlobClass"
 (
-	"Id"        Int   NOT NULL,
 	"BlobValue" bytea     NULL,
+	"Id"        Int   NOT NULL,
 
 	CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
 DECLARE @BlobValue Bytea(3) -- Binary
 SET     @BlobValue = E'\\x010203'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 
 INSERT INTO "BlobClass"
 (
-	"Id",
-	"BlobValue"
+	"BlobValue",
+	"Id"
 )
 VALUES
 (
-	:Id,
-	:BlobValue
+	:BlobValue,
+	:Id
 )
 
 BeforeExecute
@@ -33,8 +33,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."Id",
-	t1."BlobValue"
+	t1."BlobValue",
+	t1."Id"
 FROM
 	"BlobClass" t1
 WHERE
@@ -47,8 +47,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."Id",
-	t1."BlobValue"
+	t1."BlobValue",
+	t1."Id"
 FROM
 	"BlobClass" t1
 WHERE

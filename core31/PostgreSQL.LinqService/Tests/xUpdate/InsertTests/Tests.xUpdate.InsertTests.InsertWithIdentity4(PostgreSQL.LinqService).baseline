@@ -10,26 +10,26 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John0'
+DECLARE @Gender Text(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName Text(7) -- String
 SET     @LastName = 'Shepard'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	:FirstName,
+	:Gender,
 	:LastName,
-	:MiddleName,
-	:Gender
+	:MiddleName
 )
 RETURNING 
 	"PersonID"
@@ -43,10 +43,10 @@ SET     @take = 2
 
 SELECT
 	p."FirstName",
+	p."Gender",
 	p."PersonID",
 	p."LastName",
-	p."MiddleName",
-	p."Gender"
+	p."MiddleName"
 FROM
 	"Person" p
 WHERE
@@ -57,26 +57,26 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John1'
+DECLARE @Gender Text(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName Text(7) -- String
 SET     @LastName = 'Shepard'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	:FirstName,
+	:Gender,
 	:LastName,
-	:MiddleName,
-	:Gender
+	:MiddleName
 )
 RETURNING 
 	"PersonID"
@@ -90,10 +90,10 @@ SET     @take = 2
 
 SELECT
 	p."FirstName",
+	p."Gender",
 	p."PersonID",
 	p."LastName",
-	p."MiddleName",
-	p."Gender"
+	p."MiddleName"
 FROM
 	"Person" p
 WHERE

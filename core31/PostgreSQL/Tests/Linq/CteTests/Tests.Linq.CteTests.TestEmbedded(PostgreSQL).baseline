@@ -34,8 +34,8 @@ AS
 		"CTE_3" t3
 )
 SELECT
-	w."ParentID",
-	w."ChildID"
+	w."ChildID",
+	w."ParentID"
 FROM
 	"Child" w
 WHERE

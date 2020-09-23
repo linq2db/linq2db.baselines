@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @BinaryValue Bytea -- Binary
+SET     @BinaryValue = NULL
+DECLARE @BoolValue Boolean
+SET     @BoolValue = False
+DECLARE @DateTimeValue Timestamp -- DateTime
+SET     @DateTimeValue = '2018-01-03'::date
+DECLARE @GuidValue Uuid -- Guid
+SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
 DECLARE @ID Integer -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Numeric(1,0) -- Decimal
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue Timestamp -- DateTime
-SET     @DateTimeValue = '2018-01-03'::date
-DECLARE @BoolValue Boolean
-SET     @BoolValue = False
-DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
-DECLARE @BinaryValue Bytea -- Binary
-SET     @BinaryValue = NULL
 DECLARE @SmallIntValue Smallint -- Int16
 SET     @SmallIntValue = 2
 DECLARE @StringValue Text -- String
@@ -19,23 +19,23 @@ SET     @StringValue = NULL
 
 INSERT INTO "LinqDataTypes"
 (
+	"BinaryValue",
+	"BoolValue",
+	"DateTimeValue",
+	"GuidValue",
 	"ID",
 	"MoneyValue",
-	"DateTimeValue",
-	"BoolValue",
-	"GuidValue",
-	"BinaryValue",
 	"SmallIntValue",
 	"StringValue"
 )
 VALUES
 (
+	:BinaryValue,
+	:BoolValue,
+	:DateTimeValue,
+	:GuidValue,
 	:ID,
 	:MoneyValue,
-	:DateTimeValue,
-	:BoolValue,
-	:GuidValue,
-	:BinaryValue,
 	:SmallIntValue,
 	:StringValue
 )

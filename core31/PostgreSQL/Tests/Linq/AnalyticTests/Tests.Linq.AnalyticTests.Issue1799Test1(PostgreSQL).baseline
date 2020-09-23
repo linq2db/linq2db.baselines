@@ -3,9 +3,9 @@
 
 CREATE TABLE "Issue1799Table1"
 (
+	"EventTime" TimeStamp NOT NULL,
 	"EventUser" Int       NOT NULL,
-	"ProcessID" Int       NOT NULL,
-	"EventTime" TimeStamp NOT NULL
+	"ProcessID" Int       NOT NULL
 )
 
 BeforeExecute
@@ -13,8 +13,8 @@ BeforeExecute
 
 CREATE TABLE "Issue1799Table2"
 (
-	"UserId"     Int  NOT NULL,
-	"UserGroups" text     NULL
+	"UserGroups" text     NULL,
+	"UserId"     Int  NOT NULL
 )
 
 BeforeExecute

@@ -3,13 +3,13 @@
 
 CREATE TABLE gt_s_one
 (
-	id   Int  NOT NULL,
 	col1 text     NULL,
 	col2 text     NULL,
 	col3 text     NULL,
 	col4 text     NULL,
 	col5 text     NULL,
 	col6 text     NULL,
+	id   Int  NOT NULL,
 
 	CONSTRAINT "PK_gt_s_one" PRIMARY KEY (id)
 )
@@ -19,8 +19,8 @@ BeforeExecute
 
 CREATE TABLE access_mode
 (
-	id   Int  NOT NULL,
 	code text     NULL,
+	id   Int  NOT NULL,
 
 	CONSTRAINT "PK_access_mode" PRIMARY KEY (id)
 )

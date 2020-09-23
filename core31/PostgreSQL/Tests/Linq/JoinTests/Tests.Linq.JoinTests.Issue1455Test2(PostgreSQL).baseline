@@ -3,8 +3,8 @@
 
 CREATE TABLE "Alert"
 (
-	"AlertKey"     text          NULL,
 	"AlertCode"    text          NULL,
+	"AlertKey"     text          NULL,
 	"CreationDate" TimeStamp     NULL
 )
 
@@ -14,8 +14,8 @@ BeforeExecute
 CREATE TABLE "AuditAlert"
 (
 	"CreationDate"    TimeStamp     NULL,
-	"AlertCode"       text          NULL,
 	"AlertKey"        text          NULL,
+	"AlertCode"       text          NULL,
 	"TransactionDate" TimeStamp     NULL
 )
 
@@ -24,9 +24,9 @@ BeforeExecute
 
 CREATE TABLE "Trade"
 (
+	"CounterParty" text     NULL,
 	"DealId"       Int  NOT NULL,
-	"ParcelId"     Int  NOT NULL,
-	"CounterParty" text     NULL
+	"ParcelId"     Int  NOT NULL
 )
 
 BeforeExecute
@@ -35,8 +35,8 @@ BeforeExecute
 CREATE TABLE "Nomin"
 (
 	"CargoId"              Int  NOT NULL,
-	"DeliveryId"           Int  NOT NULL,
-	"DeliveryCounterParty" text     NULL
+	"DeliveryCounterParty" text     NULL,
+	"DeliveryId"           Int  NOT NULL
 )
 
 BeforeExecute
@@ -44,14 +44,14 @@ BeforeExecute
 
 CREATE TABLE "Flat"
 (
-	"AlertKey"             text          NULL,
 	"AlertCode"            text          NULL,
+	"AlertKey"             text          NULL,
 	"CargoId"              Int           NULL,
-	"DeliveryId"           Int           NULL,
-	"DeliveryCounterParty" text          NULL,
-	"DealId"               Int           NULL,
-	"ParcelId"             Int           NULL,
 	"CounterParty"         text          NULL,
+	"DealId"               Int           NULL,
+	"DeliveryCounterParty" text          NULL,
+	"DeliveryId"           Int           NULL,
+	"ParcelId"             Int           NULL,
 	"TransactionDate"      TimeStamp     NULL
 )
 
@@ -65,8 +65,8 @@ DECLARE @p3 Text(3) -- String
 SET     @p3 = '%C%'
 
 SELECT
-	al_1.alert,
 	al_1.alert_1,
+	al_1.alert,
 	al_1.alert_2
 FROM
 	(
@@ -78,8 +78,8 @@ FROM
 			"Alert" al
 				LEFT JOIN "AuditAlert" au1 ON (au1."AlertKey" IS NULL AND al."AlertKey" IS NULL OR au1."AlertKey" = al."AlertKey") AND (au1."AlertCode" IS NULL AND au1."AlertCode" IS NULL OR au1."AlertCode" = au1."AlertCode")
 		GROUP BY
-			al."AlertKey",
 			al."AlertCode",
+			al."AlertKey",
 			al."CreationDate"
 	) al_1
 		LEFT JOIN "Trade" trade1 ON al_1.alert = Cast(trade1."DealId" as VarChar(11))
@@ -87,8 +87,8 @@ FROM
 WHERE
 	((nomin1."DeliveryCounterParty" LIKE :p1 OR trade1."CounterParty" LIKE :p2) OR al_1.alert_1 LIKE :p3)
 GROUP BY
-	al_1.alert,
 	al_1.alert_1,
+	al_1.alert,
 	al_1.alert_2
 
 BeforeExecute

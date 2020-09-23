@@ -9,12 +9,12 @@ FROM
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-WITH "CTE1_" ("ParentID", "ChildID")
+WITH "CTE1_" ("ChildID", "ParentID")
 AS
 (
 	SELECT
-		t1."ParentID",
-		t1."ChildID"
+		t1."ChildID",
+		t1."ParentID"
 	FROM
 		"Child" t1
 )

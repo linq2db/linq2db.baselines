@@ -16,8 +16,8 @@ SET     @take_5 = 1
 SELECT DISTINCT
 	p."ParentID",
 	p."Value1",
-	t1."ParentID",
 	t1."ChildID",
+	t1."ParentID",
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -56,8 +56,8 @@ FROM
 	"Parent" p
 		LEFT JOIN LATERAL (
 			SELECT
-				c_3."ParentID",
-				c_3."ChildID"
+				c_3."ChildID",
+				c_3."ParentID"
 			FROM
 				"Child" c_3
 			WHERE

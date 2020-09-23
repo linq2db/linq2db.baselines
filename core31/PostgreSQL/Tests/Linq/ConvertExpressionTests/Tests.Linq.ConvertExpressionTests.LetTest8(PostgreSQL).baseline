@@ -6,8 +6,8 @@ DECLARE @take_1 Integer -- Int32
 SET     @take_1 = 1
 
 SELECT
-	t1."ParentID",
 	t1."ChildID",
+	t1."ParentID",
 	EXISTS(
 		SELECT
 			*
@@ -24,14 +24,14 @@ SELECT
 		WHERE
 			c_2."ParentID" = p."ParentID" AND c_2."ChildID" > -100
 	),
-	t2."ParentID",
-	t2."ChildID"
+	t2."ChildID",
+	t2."ParentID"
 FROM
 	"Parent" p
 		LEFT JOIN LATERAL (
 			SELECT
-				c_3."ParentID",
-				c_3."ChildID"
+				c_3."ChildID",
+				c_3."ParentID"
 			FROM
 				"Child" c_3
 			WHERE
@@ -43,8 +43,8 @@ FROM
 		) t1 ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				c_4."ParentID",
-				c_4."ChildID"
+				c_4."ChildID",
+				c_4."ParentID"
 			FROM
 				"Child" c_4
 			WHERE

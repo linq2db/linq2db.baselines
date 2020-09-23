@@ -3,8 +3,8 @@
 
 CREATE TABLE "BlobClass19"
 (
-	"Id"        Int   NOT NULL,
 	"BlobValue" bytea     NULL,
+	"Id"        Int   NOT NULL,
 
 	CONSTRAINT "PK_BlobClass19" PRIMARY KEY ("Id")
 )
@@ -14,21 +14,21 @@ BeforeExecute
 
 INSERT INTO "BlobClass19"
 (
-	"Id",
-	"BlobValue"
+	"BlobValue",
+	"Id"
 )
 VALUES
 (
-	1,
-	E'\\x010203'
+	E'\\x010203',
+	1
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."Id",
-	t1."BlobValue"
+	t1."BlobValue",
+	t1."Id"
 FROM
 	"BlobClass19" t1
 WHERE
@@ -39,8 +39,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."Id",
-	t1."BlobValue"
+	t1."BlobValue",
+	t1."Id"
 FROM
 	"BlobClass19" t1
 WHERE

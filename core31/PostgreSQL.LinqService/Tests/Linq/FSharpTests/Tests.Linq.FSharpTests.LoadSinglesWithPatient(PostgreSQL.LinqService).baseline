@@ -4,13 +4,13 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
-	p."PersonID",
 	p."FirstName",
+	p."Gender",
+	p."PersonID",
 	p."LastName",
 	p."MiddleName",
-	p."Gender",
-	"a_Patient"."PersonID",
-	"a_Patient"."Diagnosis"
+	"a_Patient"."Diagnosis",
+	"a_Patient"."PersonID"
 FROM
 	"Person" p
 		LEFT JOIN "Patient" "a_Patient" ON p."PersonID" = "a_Patient"."PersonID"
@@ -24,13 +24,13 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
-	p."PersonID",
 	p."FirstName",
+	p."Gender",
+	p."PersonID",
 	p."LastName",
 	p."MiddleName",
-	p."Gender",
-	"a_Patient"."PersonID",
-	"a_Patient"."Diagnosis"
+	"a_Patient"."Diagnosis",
+	"a_Patient"."PersonID"
 FROM
 	"Person" p
 		LEFT JOIN "Patient" "a_Patient" ON p."PersonID" = "a_Patient"."PersonID"

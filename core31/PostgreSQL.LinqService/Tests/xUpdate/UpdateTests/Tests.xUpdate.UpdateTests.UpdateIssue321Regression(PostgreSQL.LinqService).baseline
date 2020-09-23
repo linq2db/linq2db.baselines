@@ -1,50 +1,50 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @ID Integer -- Int32
-SET     @ID = 100500
-DECLARE @MoneyValue Numeric(4,0) -- Decimal
-SET     @MoneyValue = 3000
+DECLARE @BigIntValue Bigint -- Int64
+SET     @BigIntValue = NULL
+DECLARE @BoolValue Boolean
+SET     @BoolValue = NULL
 DECLARE @DateTimeValue Timestamp -- DateTime
 SET     @DateTimeValue = NULL
 DECLARE @DateTimeValue2 Timestamp -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue Boolean
-SET     @BoolValue = NULL
 DECLARE @GuidValue Uuid -- Guid
 SET     @GuidValue = NULL
-DECLARE @SmallIntValue Smallint -- Int16
-SET     @SmallIntValue = NULL
+DECLARE @ID Integer -- Int32
+SET     @ID = 100500
 DECLARE @IntValue Integer -- Int32
 SET     @IntValue = 60
-DECLARE @BigIntValue Bigint -- Int64
-SET     @BigIntValue = NULL
+DECLARE @MoneyValue Numeric(4,0) -- Decimal
+SET     @MoneyValue = 3000
+DECLARE @SmallIntValue Smallint -- Int16
+SET     @SmallIntValue = NULL
 DECLARE @StringValue Text -- String
 SET     @StringValue = NULL
 
 INSERT INTO "LinqDataTypes"
 (
-	"ID",
-	"MoneyValue",
+	"BigIntValue",
+	"BoolValue",
 	"DateTimeValue",
 	"DateTimeValue2",
-	"BoolValue",
 	"GuidValue",
-	"SmallIntValue",
+	"ID",
 	"IntValue",
-	"BigIntValue",
+	"MoneyValue",
+	"SmallIntValue",
 	"StringValue"
 )
 VALUES
 (
-	:ID,
-	:MoneyValue,
+	:BigIntValue,
+	:BoolValue,
 	:DateTimeValue,
 	:DateTimeValue2,
-	:BoolValue,
 	:GuidValue,
-	:SmallIntValue,
+	:ID,
 	:IntValue,
-	:BigIntValue,
+	:MoneyValue,
+	:SmallIntValue,
 	:StringValue
 )
 

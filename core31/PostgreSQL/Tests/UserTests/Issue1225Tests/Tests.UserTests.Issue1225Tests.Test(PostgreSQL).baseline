@@ -13,9 +13,9 @@ BeforeExecute
 
 CREATE TABLE "TaskStage"
 (
+	"Actual" Boolean NOT NULL,
 	"Id"     Int     NOT NULL,
 	"TaskId" Int     NOT NULL,
-	"Actual" Boolean NOT NULL,
 
 	CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
 )
@@ -50,24 +50,24 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @Actual Boolean
+SET     @Actual = True
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @TaskId Integer -- Int32
 SET     @TaskId = 1
-DECLARE @Actual Boolean
-SET     @Actual = True
 
 INSERT INTO "TaskStage"
 (
+	"Actual",
 	"Id",
-	"TaskId",
-	"Actual"
+	"TaskId"
 )
 VALUES
 (
+	:Actual,
 	:Id,
-	:TaskId,
-	:Actual
+	:TaskId
 )
 
 BeforeExecute

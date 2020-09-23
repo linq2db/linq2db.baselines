@@ -4,8 +4,8 @@
 CREATE TABLE billing_devtypes
 (
 	devtypeid    SERIAL  NOT NULL,
-	typename     text    NOT NULL,
 	"GlobalType" Int     NOT NULL,
+	typename     text    NOT NULL,
 
 	CONSTRAINT "PK_billing_devtypes" PRIMARY KEY (devtypeid)
 )
@@ -16,8 +16,8 @@ BeforeExecute
 CREATE TABLE billing_devices
 (
 	devid     text NOT NULL,
-	sernum    text     NULL,
 	devtypeid Int  NOT NULL,
+	sernum    text     NULL,
 
 	CONSTRAINT "PK_billing_devices" PRIMARY KEY (devid)
 )
@@ -27,8 +27,8 @@ BeforeExecute
 
 CREATE TABLE "billing_DevReadingType"
 (
-	"Id"             SERIAL  NOT NULL,
 	"DevTypeId"      Int     NOT NULL,
+	"Id"             SERIAL  NOT NULL,
 	"Name"           text    NOT NULL,
 	"Responsibility" Int     NOT NULL,
 
@@ -40,16 +40,16 @@ BeforeExecute
 
 CREATE TABLE "billing_TempReading"
 (
-	id                 SERIAL     NOT NULL,
+	"DevGlobalType"    Int        NOT NULL,
+	"DevReadingTypeId" Int            NULL,
 	"DevSerNum"        text       NOT NULL,
 	devid              text           NULL,
+	"Devtypeid"        Int            NULL,
+	id                 SERIAL     NOT NULL,
+	"ReadingTypeName"  text           NULL,
+	"Responsibility"   Int        NOT NULL,
 	tsdevice           TimeStamp  NOT NULL,
 	value              Decimal    NOT NULL,
-	"Devtypeid"        Int            NULL,
-	"DevReadingTypeId" Int            NULL,
-	"ReadingTypeName"  text           NULL,
-	"DevGlobalType"    Int        NOT NULL,
-	"Responsibility"   Int        NOT NULL,
 
 	CONSTRAINT "PK_billing_TempReading" PRIMARY KEY (id)
 )

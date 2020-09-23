@@ -3,13 +3,13 @@
 
 SELECT
 	"lw_Child"."Key_1",
-	"lw_Child"."ParentID",
 	"lw_Child"."ChildID",
-	detail_1."ParentID",
+	"lw_Child"."ParentID",
 	detail_1."ChildID",
 	detail_1."GrandChildID",
-	"a_Child"."ParentID",
+	detail_1."ParentID",
 	"a_Child"."ChildID",
+	"a_Child"."ParentID",
 	"a_Child"."ParentID_1",
 	"a_Child"."Value1"
 FROM
@@ -30,8 +30,8 @@ FROM
 		INNER JOIN "GrandChild" detail_1 ON "lw_Child"."ParentID" = detail_1."ParentID" AND "lw_Child"."ChildID" = detail_1."ChildID"
 		LEFT JOIN (
 			SELECT
-				t2."ParentID",
 				t2."ChildID",
+				t2."ParentID",
 				"a_Parent"."ParentID" as "ParentID_1",
 				"a_Parent"."Value1"
 			FROM
@@ -44,8 +44,8 @@ BeforeExecute
 
 SELECT
 	"lw_Parent"."ParentID",
-	detail."ParentID",
-	detail."ChildID"
+	detail."ChildID",
+	detail."ParentID"
 FROM
 	(
 		SELECT DISTINCT

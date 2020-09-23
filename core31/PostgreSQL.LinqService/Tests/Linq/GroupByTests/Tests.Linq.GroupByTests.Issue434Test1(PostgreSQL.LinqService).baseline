@@ -5,8 +5,8 @@ SET     @p1 = 'test'
 
 SELECT
 	p."PersonID",
-	gjd_ri."PersonID",
-	gjd_ri."Diagnosis"
+	gjd_ri."Diagnosis",
+	gjd_ri."PersonID"
 FROM
 	"Person" p
 		INNER JOIN "Patient" gjd_ri ON gjd_ri."PersonID" = p."PersonID"

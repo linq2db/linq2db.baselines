@@ -4,8 +4,8 @@
 SELECT
 	key_data_result."ParentID",
 	key_data_result."Value1",
-	gjd_c."ParentID",
-	gjd_c."ChildID"
+	gjd_c."ChildID",
+	gjd_c."ParentID"
 FROM
 	(
 		SELECT DISTINCT

@@ -3,12 +3,12 @@
 
 CREATE TABLE "ArrayTest"
 (
-	"StrArray"     text[]                 NULL,
-	"IntArray"     int[]                  NULL,
-	"Int2dArray"   int[][]                NULL,
-	"LongArray"    bigint[]               NULL,
+	"DecimalArray" numeric[]              NULL,
 	"DoubleArray"  double precision[]     NULL,
-	"DecimalArray" numeric[]              NULL
+	"Int2dArray"   int[][]                NULL,
+	"IntArray"     int[]                  NULL,
+	"LongArray"    bigint[]               NULL,
+	"StrArray"     text[]                 NULL
 )
 
 BeforeExecute

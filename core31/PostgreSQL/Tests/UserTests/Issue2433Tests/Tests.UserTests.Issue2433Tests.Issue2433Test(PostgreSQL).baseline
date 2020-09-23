@@ -4,13 +4,13 @@
 CREATE TABLE "InventoryResourceDTO"
 (
 	"Id"                uuid      NOT NULL,
-	"Status"            Int       NOT NULL,
+	"ModifiedTimeStamp" TimeStamp     NULL,
 	"ResourceID"        uuid      NOT NULL,
-	"ModifiedTimeStamp" TimeStamp     NULL
+	"Status"            Int       NOT NULL
 )
 
 BeforeExecute
-INSERT BULK "InventoryResourceDTO"(Id, Status, ResourceID, ModifiedTimeStamp
+INSERT BULK "InventoryResourceDTO"(Id, ModifiedTimeStamp, ResourceID, Status
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL

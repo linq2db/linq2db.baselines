@@ -3,52 +3,52 @@
 
 CREATE TABLE "CreateTableTypes"
 (
-	"Id"       Int       NOT NULL,
-	"DateTime" TimeStamp NOT NULL
+	"DateTime" TimeStamp NOT NULL,
+	"Id"       Int       NOT NULL
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
 DECLARE @DateTime Timestamp -- DateTime
 SET     @DateTime = '2000-01-01'::date
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 
 INSERT INTO "CreateTableTypes"
 (
-	"Id",
-	"DateTime"
+	"DateTime",
+	"Id"
 )
 VALUES
 (
-	:Id,
-	:DateTime
+	:DateTime,
+	:Id
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
 DECLARE @DateTime Timestamp -- DateTime
 SET     @DateTime = '2018-11-24 01:02:03'::timestamp
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
 
 INSERT INTO "CreateTableTypes"
 (
-	"Id",
-	"DateTime"
+	"DateTime",
+	"Id"
 )
 VALUES
 (
-	:Id,
-	:DateTime
+	:DateTime,
+	:Id
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."Id",
-	t1."DateTime"
+	t1."DateTime",
+	t1."Id"
 FROM
 	"CreateTableTypes" t1
 ORDER BY

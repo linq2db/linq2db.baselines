@@ -2,8 +2,8 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	s.value,
-	s."index"
+	s."index",
+	s.value
 FROM
 	(
 		SELECT

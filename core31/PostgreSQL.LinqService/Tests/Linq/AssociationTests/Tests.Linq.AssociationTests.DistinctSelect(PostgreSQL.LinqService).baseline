@@ -6,15 +6,15 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"a_Child"."ParentID_1" as "ParentID",
-			"a_Child"."ChildID"
+			"a_Child"."ChildID",
+			"a_Child"."ParentID_1" as "ParentID"
 		FROM
 			"GrandChild" c_1
 				LEFT JOIN (
 					SELECT
 						"a_Parent"."ParentID",
-						t1."ParentID" as "ParentID_1",
-						t1."ChildID"
+						t1."ChildID",
+						t1."ParentID" as "ParentID_1"
 					FROM
 						"Child" t1
 							LEFT JOIN "Parent" "a_Parent" ON t1."ParentID" = "a_Parent"."ParentID"

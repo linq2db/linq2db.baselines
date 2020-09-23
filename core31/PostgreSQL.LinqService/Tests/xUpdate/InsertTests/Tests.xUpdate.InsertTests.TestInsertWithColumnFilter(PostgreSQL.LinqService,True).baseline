@@ -2,26 +2,26 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+DECLARE @Gender Text(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName Text(15) -- String
 SET     @MiddleName = 'som middle name'
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	:FirstName,
+	:Gender,
 	:LastName,
-	:MiddleName,
-	:Gender
+	:MiddleName
 )
 
 BeforeExecute
@@ -33,10 +33,10 @@ SET     @take = 1
 
 SELECT
 	x."FirstName",
+	x."Gender",
 	x."PersonID",
 	x."LastName",
-	x."MiddleName",
-	x."Gender"
+	x."MiddleName"
 FROM
 	"Person" x
 WHERE

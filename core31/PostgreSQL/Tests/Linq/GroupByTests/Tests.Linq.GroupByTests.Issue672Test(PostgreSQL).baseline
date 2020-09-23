@@ -3,78 +3,78 @@
 
 CREATE TABLE "Stone"
 (
-	"Id"           SERIAL   NOT NULL,
-	"Name"         text     NOT NULL,
 	"Enabled"      Boolean      NULL,
+	"Id"           SERIAL   NOT NULL,
 	"ImageFullUrl" text         NULL,
+	"Name"         text     NOT NULL,
 
 	CONSTRAINT "PK_Stone" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Name Text(6) -- String
-SET     @Name = 'group1'
 DECLARE @Enabled Boolean
 SET     @Enabled = True
 DECLARE @ImageFullUrl Text(3) -- String
 SET     @ImageFullUrl = '123'
+DECLARE @Name Text(6) -- String
+SET     @Name = 'group1'
 
 INSERT INTO "Stone"
 (
-	"Name",
 	"Enabled",
-	"ImageFullUrl"
+	"ImageFullUrl",
+	"Name"
 )
 VALUES
 (
-	:Name,
 	:Enabled,
-	:ImageFullUrl
+	:ImageFullUrl,
+	:Name
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Name Text(6) -- String
-SET     @Name = 'group1'
 DECLARE @Enabled Boolean
 SET     @Enabled = True
 DECLARE @ImageFullUrl Text(3) -- String
 SET     @ImageFullUrl = '123'
+DECLARE @Name Text(6) -- String
+SET     @Name = 'group1'
 
 INSERT INTO "Stone"
 (
-	"Name",
 	"Enabled",
-	"ImageFullUrl"
+	"ImageFullUrl",
+	"Name"
 )
 VALUES
 (
-	:Name,
 	:Enabled,
-	:ImageFullUrl
+	:ImageFullUrl,
+	:Name
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @Enabled Boolean
+SET     @Enabled = True
+DECLARE @ImageFullUrl Text(3) -- String
+SET     @ImageFullUrl = '123'
 DECLARE @Name Text(6) -- String
 SET     @Name = 'group2'
-DECLARE @Enabled Boolean
-SET     @Enabled = True
-DECLARE @ImageFullUrl Text(3) -- String
-SET     @ImageFullUrl = '123'
 
 INSERT INTO "Stone"
 (
-	"Name",
 	"Enabled",
-	"ImageFullUrl"
+	"ImageFullUrl",
+	"Name"
 )
 VALUES
 (
-	:Name,
 	:Enabled,
-	:ImageFullUrl
+	:ImageFullUrl,
+	:Name
 )
 
 BeforeExecute
@@ -96,10 +96,10 @@ DECLARE @Name_1 Text(6) -- String
 SET     @Name_1 = 'group2'
 
 SELECT
-	s."Id",
-	s."Name",
 	s."Enabled",
-	s."ImageFullUrl"
+	s."Id",
+	s."ImageFullUrl",
+	s."Name"
 FROM
 	"Stone" s
 WHERE
@@ -114,10 +114,10 @@ DECLARE @Name_1 Text(6) -- String
 SET     @Name_1 = 'group1'
 
 SELECT
-	s."Id",
-	s."Name",
 	s."Enabled",
-	s."ImageFullUrl"
+	s."Id",
+	s."ImageFullUrl",
+	s."Name"
 FROM
 	"Stone" s
 WHERE

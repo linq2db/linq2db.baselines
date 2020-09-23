@@ -12,14 +12,14 @@ SELECT
 		WHERE
 			p."ParentID" = t1."ParentID"
 	),
-	t2."ParentID",
-	t2."ChildID"
+	t2."ChildID",
+	t2."ParentID"
 FROM
 	"Parent" p
 		LEFT JOIN LATERAL (
 			SELECT
-				ch."ParentID",
-				ch."ChildID"
+				ch."ChildID",
+				ch."ParentID"
 			FROM
 				"Child" ch
 			WHERE

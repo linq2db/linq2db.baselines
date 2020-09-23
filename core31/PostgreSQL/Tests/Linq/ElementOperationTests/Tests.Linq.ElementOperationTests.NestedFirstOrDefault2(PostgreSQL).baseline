@@ -4,14 +4,14 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t2."ParentID",
-	t2."ChildID"
+	t2."ChildID",
+	t2."ParentID"
 FROM
 	"Parent" p
 		LEFT JOIN LATERAL (
 			SELECT
-				t1."ParentID",
-				t1."ChildID"
+				t1."ChildID",
+				t1."ParentID"
 			FROM
 				"Child" t1
 			WHERE

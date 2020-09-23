@@ -28,8 +28,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t."ID",
-	t."BigIntValue"
+	t."BigIntValue",
+	t."ID"
 FROM
 	"LinqDataTypes" t
 WHERE

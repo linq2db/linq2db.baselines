@@ -3,9 +3,9 @@
 
 CREATE TABLE "Issue1303"
 (
-	"ID"     Int   NOT NULL,
 	"Array"  bytea     NULL,
 	"Binary" bytea     NULL,
+	"ID"     Int   NOT NULL,
 
 	CONSTRAINT "PK_Issue1303" PRIMARY KEY ("ID")
 )
@@ -36,9 +36,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
-	t1."ID",
 	t1."Array",
-	t1."Binary"
+	t1."Binary",
+	t1."ID"
 FROM
 	"Issue1303" t1
 WHERE
@@ -53,9 +53,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
-	t1."ID",
 	t1."Array",
-	t1."Binary"
+	t1."Binary",
+	t1."ID"
 FROM
 	"Issue1303" t1
 WHERE
@@ -70,9 +70,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
-	t1."ID",
 	t1."Array",
-	t1."Binary"
+	t1."Binary",
+	t1."ID"
 FROM
 	"Issue1303" t1
 WHERE

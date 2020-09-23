@@ -3,33 +3,33 @@
 
 CREATE TABLE "PR_1598_Mixed_Table"
 (
+	"Age"  Int      NULL,
 	"Id"   Int  NOT NULL,
 	"Name" text     NULL,
-	"Age"  Int      NULL,
 
 	CONSTRAINT "PK_PR_1598_Mixed_Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @Age Integer -- Int32
+SET     @Age = 20
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
 SET     @Name = 'Jason'
-DECLARE @Age Integer -- Int32
-SET     @Age = 20
 
 INSERT INTO "PR_1598_Mixed_Table"
 (
+	"Age",
 	"Id",
-	"Name",
-	"Age"
+	"Name"
 )
 VALUES
 (
+	:Age,
 	:Id,
-	:Name,
-	:Age
+	:Name
 )
 
 BeforeExecute
@@ -38,9 +38,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
+	t."Age",
 	t."Id",
-	t."Name",
-	t."Age"
+	t."Name"
 FROM
 	"PR_1598_Mixed_Table" t
 WHERE
@@ -67,9 +67,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
+	t."Age",
 	t."Id",
-	t."Name",
-	t."Age"
+	t."Name"
 FROM
 	"PR_1598_Mixed_Table" t
 WHERE
@@ -78,20 +78,20 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
 DECLARE @Age Integer -- Int32
 SET     @Age = 25
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
 
 INSERT INTO "PR_1598_Mixed_Table"
 (
-	"Id",
-	"Age"
+	"Age",
+	"Id"
 )
 VALUES
 (
-	:Id,
-	:Age
+	:Age,
+	:Id
 )
 
 BeforeExecute
@@ -100,9 +100,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
+	t."Age",
 	t."Id",
-	t."Name",
-	t."Age"
+	t."Name"
 FROM
 	"PR_1598_Mixed_Table" t
 WHERE
@@ -111,18 +111,18 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Name Text(5) -- String
-SET     @Name = 'Jessy'
 DECLARE @Age Integer -- Int32
 SET     @Age = 25
+DECLARE @Name Text(5) -- String
+SET     @Name = 'Jessy'
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 UPDATE
 	"PR_1598_Mixed_Table"
 SET
-	"Name" = :Name,
-	"Age" = :Age
+	"Age" = :Age,
+	"Name" = :Name
 WHERE
 	"PR_1598_Mixed_Table"."Id" = :Id
 
@@ -132,9 +132,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
+	t."Age",
 	t."Id",
-	t."Name",
-	t."Age"
+	t."Name"
 FROM
 	"PR_1598_Mixed_Table" t
 WHERE

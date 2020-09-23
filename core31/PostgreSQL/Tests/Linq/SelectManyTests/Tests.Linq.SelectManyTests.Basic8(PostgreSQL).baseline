@@ -2,9 +2,9 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	c_2."ParentID",
 	c_2."ChildID",
-	c_2."GrandChildID"
+	c_2."GrandChildID",
+	c_2."ParentID"
 FROM
 	"Parent" cp
 		INNER JOIN "Child" c_1 ON cp."ParentID" = c_1."ParentID"

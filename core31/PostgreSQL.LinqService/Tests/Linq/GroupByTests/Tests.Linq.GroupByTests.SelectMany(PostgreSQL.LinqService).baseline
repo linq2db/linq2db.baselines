@@ -2,8 +2,8 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
+	"keyParam"."ChildID",
+	"keyParam"."ParentID"
 FROM
 	(
 		SELECT

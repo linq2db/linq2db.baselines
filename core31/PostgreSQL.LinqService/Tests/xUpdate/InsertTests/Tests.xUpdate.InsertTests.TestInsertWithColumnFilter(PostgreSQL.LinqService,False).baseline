@@ -2,22 +2,22 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @LastName Text(8) -- String
-SET     @LastName = 'whatever'
 DECLARE @Gender Text(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
+DECLARE @LastName Text(8) -- String
+SET     @LastName = 'whatever'
 
 INSERT INTO "Person"
 (
 	"FirstName",
-	"LastName",
-	"Gender"
+	"Gender",
+	"LastName"
 )
 VALUES
 (
 	:FirstName,
-	:LastName,
-	:Gender
+	:Gender,
+	:LastName
 )
 
 BeforeExecute
@@ -29,10 +29,10 @@ SET     @take = 1
 
 SELECT
 	x."FirstName",
+	x."Gender",
 	x."PersonID",
 	x."LastName",
-	x."MiddleName",
-	x."Gender"
+	x."MiddleName"
 FROM
 	"Person" x
 WHERE

@@ -2,26 +2,26 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(8) -- String
 SET     @FirstName = 'Update14'
+DECLARE @Gender Text(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	:FirstName,
+	:Gender,
 	:LastName,
-	:MiddleName,
-	:Gender
+	:MiddleName
 )
 
 BeforeExecute

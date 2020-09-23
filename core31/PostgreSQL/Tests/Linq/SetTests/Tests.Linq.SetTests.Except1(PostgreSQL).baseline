@@ -2,14 +2,14 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ParentID",
-	t1."ChildID"
+	t1."ChildID",
+	t1."ParentID"
 FROM
 	"Child" t1
 EXCEPT
 SELECT
-	p."ParentID",
-	p."ChildID"
+	p."ChildID",
+	p."ParentID"
 FROM
 	"Child" p
 WHERE

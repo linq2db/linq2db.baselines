@@ -8,20 +8,20 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Value1 Integer -- Int32
-SET     @Value1 = 1
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
 
 INSERT INTO "Parent"
 (
-	"Value1",
-	"ParentID"
+	"ParentID",
+	"Value1"
 )
 VALUES
 (
-	:Value1,
-	:ParentID
+	:ParentID,
+	:Value1
 )
 
 BeforeExecute

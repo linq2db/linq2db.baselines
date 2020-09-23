@@ -3,8 +3,8 @@
 
 CREATE TABLE "Issue1363"
 (
-	required_field uuid NOT NULL,
-	optional_field uuid     NULL
+	optional_field uuid     NULL,
+	required_field uuid NOT NULL
 )
 
 BeforeExecute
@@ -63,8 +63,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
-	t1.required_field,
-	t1.optional_field
+	t1.optional_field,
+	t1.required_field
 FROM
 	"Issue1363" t1
 WHERE

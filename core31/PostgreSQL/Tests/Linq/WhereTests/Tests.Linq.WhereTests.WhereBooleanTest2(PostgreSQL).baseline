@@ -3,8 +3,8 @@
 
 CREATE TABLE "WhereCases"
 (
-	"Id"                Int     NOT NULL,
 	"BoolValue"         Boolean NOT NULL,
+	"Id"                Int     NOT NULL,
 	"NullableBoolValue" Boolean     NULL,
 
 	CONSTRAINT "PK_WhereCases" PRIMARY KEY ("Id")
@@ -15,28 +15,28 @@ BeforeExecute
 
 INSERT INTO "WhereCases"
 (
-	"Id",
 	"BoolValue",
+	"Id",
 	"NullableBoolValue"
 )
 VALUES
-(1,True,NULL),
-(2,True,True),
-(3,True,NULL),
-(4,True,True),
-(5,True,True),
-(11,False,NULL),
-(12,False,False),
-(13,False,NULL),
-(14,False,False),
-(15,False,False)
+(True,1,NULL),
+(True,2,True),
+(True,3,NULL),
+(True,4,True),
+(True,5,True),
+(False,11,NULL),
+(False,12,False),
+(False,13,NULL),
+(False,14,False),
+(False,15,False)
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."Id",
 	t1."BoolValue",
+	t1."Id",
 	t1."NullableBoolValue"
 FROM
 	"WhereCases" t1
@@ -45,8 +45,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -57,8 +57,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -69,8 +69,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -81,8 +81,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -93,8 +93,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -105,8 +105,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -117,8 +117,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -129,8 +129,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -141,8 +141,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -153,8 +153,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -165,8 +165,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -178,8 +178,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -190,8 +190,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -203,8 +203,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -215,8 +215,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -228,8 +228,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -240,8 +240,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -252,8 +252,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -264,8 +264,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -276,8 +276,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -288,8 +288,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -300,8 +300,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -312,8 +312,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -324,8 +324,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -336,8 +336,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -349,8 +349,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -361,8 +361,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -374,8 +374,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -386,8 +386,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -399,8 +399,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -411,8 +411,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t
@@ -424,8 +424,8 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
 	t."BoolValue",
+	t."Id",
 	t."NullableBoolValue"
 FROM
 	"WhereCases" t

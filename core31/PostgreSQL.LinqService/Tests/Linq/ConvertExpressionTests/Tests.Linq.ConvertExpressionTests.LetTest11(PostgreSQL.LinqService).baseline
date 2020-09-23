@@ -6,16 +6,16 @@ DECLARE @take_1 Integer -- Int32
 SET     @take_1 = 1
 
 SELECT
-	t1."ParentID",
 	t1."ChildID",
-	t2."ParentID",
-	t2."ChildID"
+	t1."ParentID",
+	t2."ChildID",
+	t2."ParentID"
 FROM
 	"Parent" p
 		LEFT JOIN LATERAL (
 			SELECT
-				c_1."ParentID",
-				c_1."ChildID"
+				c_1."ChildID",
+				c_1."ParentID"
 			FROM
 				"Child" c_1
 			WHERE
@@ -26,8 +26,8 @@ FROM
 		) t1 ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				c_2."ParentID",
-				c_2."ChildID"
+				c_2."ChildID",
+				c_2."ParentID"
 			FROM
 				"Child" c_2
 			WHERE
