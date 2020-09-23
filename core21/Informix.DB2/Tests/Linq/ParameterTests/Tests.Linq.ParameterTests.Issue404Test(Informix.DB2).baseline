@@ -39,141 +39,141 @@ BeforeExecute
 
 CREATE TABLE Table404Two
 (
+	FirstTableId Int NOT NULL,
 	Id           Int NOT NULL,
-	"Usage"      Int NOT NULL,
-	FirstTableId Int NOT NULL
+	"Usage"      Int NOT NULL
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 0
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 1
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 0
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 1
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 1
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 1
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 2
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 0
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 2
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 2
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 5
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 1
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 2
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 2
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 6
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 1
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 2
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
@@ -181,9 +181,9 @@ BeforeExecute
 
 SELECT
 	key_data_result.Id,
+	v.FirstTableId,
 	v.Id,
-	v."Usage",
-	v.FirstTableId
+	v."Usage"
 FROM
 	(
 		SELECT DISTINCT
@@ -213,9 +213,9 @@ SET     @Usage_2 = 0
 
 SELECT
 	key_data_result.Id,
+	v.FirstTableId,
 	v.Id,
-	v."Usage",
-	v.FirstTableId
+	v."Usage"
 FROM
 	(
 		SELECT DISTINCT
@@ -245,9 +245,9 @@ SET     @Usage_2 = 1
 
 SELECT
 	key_data_result.Id,
+	v.FirstTableId,
 	v.Id,
-	v."Usage",
-	v.FirstTableId
+	v."Usage"
 FROM
 	(
 		SELECT DISTINCT
@@ -321,141 +321,141 @@ BeforeExecute
 
 CREATE TABLE Table404Two
 (
+	FirstTableId Int NOT NULL,
 	Id           Int NOT NULL,
-	"Usage"      Int NOT NULL,
-	FirstTableId Int NOT NULL
+	"Usage"      Int NOT NULL
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 0
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 1
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 0
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 1
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 1
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 1
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 2
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 0
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 2
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 2
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 5
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 1
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 2
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstTableId Integer(4) -- Int32
+SET     @FirstTableId = 2
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 6
 DECLARE @Usage_1 Integer(4) -- Int32
 SET     @Usage_1 = 1
-DECLARE @FirstTableId Integer(4) -- Int32
-SET     @FirstTableId = 2
 
 INSERT INTO Table404Two
 (
+	FirstTableId,
 	Id,
-	"Usage",
-	FirstTableId
+	"Usage"
 )
 VALUES
 (
+	@FirstTableId,
 	@Id,
-	@Usage_1,
-	@FirstTableId
+	@Usage_1
 )
 
 BeforeExecute
@@ -463,9 +463,9 @@ BeforeExecute
 
 SELECT
 	key_data_result.Id,
+	v.FirstTableId,
 	v.Id,
-	v."Usage",
-	v.FirstTableId
+	v."Usage"
 FROM
 	(
 		SELECT DISTINCT
@@ -495,9 +495,9 @@ SET     @Usage_2 = 0
 
 SELECT
 	key_data_result.Id,
+	v.FirstTableId,
 	v.Id,
-	v."Usage",
-	v.FirstTableId
+	v."Usage"
 FROM
 	(
 		SELECT DISTINCT
@@ -527,9 +527,9 @@ SET     @Usage_2 = 1
 
 SELECT
 	key_data_result.Id,
+	v.FirstTableId,
 	v.Id,
-	v."Usage",
-	v.FirstTableId
+	v."Usage"
 FROM
 	(
 		SELECT DISTINCT

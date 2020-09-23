@@ -27,8 +27,8 @@ DECLARE @p1 VarChar(1) -- String
 SET     @p1 = '1'
 
 SELECT
-	underscore.ParentID,
-	underscore.ChildID
+	underscore.ChildID,
+	underscore.ParentID
 FROM
 	(
 		SELECT
@@ -41,8 +41,8 @@ FROM
 				END
 				ELSE '3'
 			END as Key_1,
-			selectParam.ParentID,
-			selectParam.ChildID
+			selectParam.ChildID,
+			selectParam.ParentID
 		FROM
 			Child selectParam
 	) underscore

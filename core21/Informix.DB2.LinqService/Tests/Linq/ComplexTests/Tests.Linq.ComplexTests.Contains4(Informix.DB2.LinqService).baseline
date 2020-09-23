@@ -4,9 +4,9 @@
 SELECT
 	a_Parent.ParentID,
 	a_Parent.Value1,
-	t2.gc,
 	t2.ChildID,
-	t2.GrandChildID
+	t2.GrandChildID,
+	t2.gc
 FROM
 	Child ch
 		LEFT JOIN Parent a_Parent ON ch.ParentID = a_Parent.ParentID
@@ -27,5 +27,5 @@ FROM
 					) max_1 ON (gc_1.GrandChildID IS NULL AND max_1.c1 IS NULL OR gc_1.GrandChildID = max_1.c1)
 		) t2 ON a_Parent.ParentID = t2.gc
 WHERE
-	(t2.gc IS NULL AND t2.ChildID IS NULL AND t2.GrandChildID IS NULL OR (t2.GrandChildID IS NULL OR t2.GrandChildID NOT IN (111, 222)))
+	(t2.ChildID IS NULL AND t2.GrandChildID IS NULL AND t2.gc IS NULL OR (t2.GrandChildID IS NULL OR t2.GrandChildID NOT IN (111, 222)))
 

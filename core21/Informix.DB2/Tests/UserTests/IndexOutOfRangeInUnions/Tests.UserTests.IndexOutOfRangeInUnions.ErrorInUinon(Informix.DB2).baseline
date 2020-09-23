@@ -3,9 +3,9 @@
 
 CREATE TABLE O1
 (
-	DocEntry    Int           NOT NULL,
 	BplId       Int           NOT NULL,
 	ChaveAcesso NVarChar(255)     NULL,
+	DocEntry    Int           NOT NULL,
 	DocStatus   NVarChar(255)     NULL
 )
 
@@ -14,9 +14,9 @@ BeforeExecute
 
 CREATE TABLE O2
 (
-	DocEntry    Int           NOT NULL,
 	BplId       Int           NOT NULL,
 	ChaveAcesso NVarChar(255)     NULL,
+	DocEntry    Int           NOT NULL,
 	DocStatus   NVarChar(255)     NULL
 )
 
@@ -25,9 +25,9 @@ BeforeExecute
 
 CREATE TABLE O3
 (
-	DocEntry    Int           NOT NULL,
 	BplId       Int           NOT NULL,
 	ChaveAcesso NVarChar(255)     NULL,
+	DocEntry    Int           NOT NULL,
 	DocStatus   NVarChar(255)     NULL
 )
 
@@ -35,62 +35,62 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t3.DescricaoStatus,
 	t3.NumeroInterno,
-	t3.StatusValor,
-	t3.DescricaoStatus
+	t3.StatusValor
 FROM
 	(
 		SELECT
+			t1.DescricaoStatus,
 			t1.NumeroInterno,
-			t1.StatusValor,
-			t1.DescricaoStatus
+			t1.StatusValor
 		FROM
 			(
 				SELECT
+					'Manual/Externo' as DescricaoStatus,
 					doSap.DocEntry as NumeroInterno,
 					CASE
 						WHEN doSap.DocStatus = 'O'
 							THEN 'Aberto'
 						ELSE 'Fechado'
-					END as StatusValor,
-					'Manual/Externo' as DescricaoStatus
+					END as StatusValor
 				FROM
 					O1 doSap
 			) t1
 		UNION
 		SELECT
+			t2.DescricaoStatus,
 			t2.NumeroInterno,
-			t2.StatusValor,
-			t2.DescricaoStatus
+			t2.StatusValor
 		FROM
 			(
 				SELECT
+					'Manual/Externo' as DescricaoStatus,
 					doSap_1.DocEntry as NumeroInterno,
 					CASE
 						WHEN doSap_1.DocStatus = 'O'
 							THEN 'Aberto'
 						ELSE 'Fechado'
-					END as StatusValor,
-					'Manual/Externo' as DescricaoStatus
+					END as StatusValor
 				FROM
 					O2 doSap_1
 			) t2
 	) t3
 UNION
 SELECT
+	t4.DescricaoStatus,
 	t4.NumeroInterno,
-	t4.StatusValor,
-	t4.DescricaoStatus
+	t4.StatusValor
 FROM
 	(
 		SELECT
+			'Manual/Externo' as DescricaoStatus,
 			doSap_2.DocEntry as NumeroInterno,
 			CASE
 				WHEN doSap_2.DocStatus = 'O'
 					THEN 'Aberto'
 				ELSE 'Fechado'
-			END as StatusValor,
-			'Manual/Externo' as DescricaoStatus
+			END as StatusValor
 		FROM
 			O3 doSap_2
 	) t4

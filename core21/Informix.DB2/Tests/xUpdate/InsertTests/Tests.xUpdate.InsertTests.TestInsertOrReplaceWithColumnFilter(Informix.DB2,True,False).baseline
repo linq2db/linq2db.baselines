@@ -3,8 +3,8 @@
 
 CREATE TABLE TestInsertOrReplaceTable
 (
-	ID         Int           NOT NULL,
 	FirstName  NVarChar(255)     NULL,
+	ID         Int           NOT NULL,
 	LastName   NVarChar(255)     NULL,
 	MiddleName NVarChar(255)     NULL,
 
@@ -33,10 +33,10 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 0
 DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName VarChar(15) -- String
@@ -44,15 +44,15 @@ SET     @MiddleName = 'som middle name'
 
 INSERT INTO TestInsertOrReplaceTable
 (
-	ID,
 	FirstName,
+	ID,
 	LastName,
 	MiddleName
 )
 VALUES
 (
-	@ID,
 	@FirstName,
+	@ID,
 	@LastName,
 	@MiddleName
 )
@@ -63,8 +63,8 @@ DECLARE @FirstName_1 VarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
 SELECT FIRST 1
-	x.ID,
 	x.FirstName,
+	x.ID,
 	x.LastName,
 	x.MiddleName
 FROM
@@ -98,8 +98,8 @@ DECLARE @FirstName_1 VarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
 SELECT FIRST 1
-	x.ID,
 	x.FirstName,
+	x.ID,
 	x.LastName,
 	x.MiddleName
 FROM

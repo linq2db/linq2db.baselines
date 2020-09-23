@@ -2,8 +2,8 @@
 -- Informix.DB2 Informix
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch.ChildID,
+	ch.ParentID
 FROM
 	Child ch
 		INNER JOIN (

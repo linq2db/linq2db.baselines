@@ -14,8 +14,8 @@ DECLARE @ParentID_1 Integer(4) -- Int32
 SET     @ParentID_1 = 2
 
 SELECT
-	keyParam.ParentID,
-	keyParam.ChildID
+	keyParam.ChildID,
+	keyParam.ParentID
 FROM
 	Child keyParam
 WHERE
@@ -27,8 +27,8 @@ DECLARE @ParentID_1 Integer(4) -- Int32
 SET     @ParentID_1 = 6
 
 SELECT
-	keyParam.ParentID,
-	keyParam.ChildID
+	keyParam.ChildID,
+	keyParam.ParentID
 FROM
 	Child keyParam
 WHERE
@@ -40,8 +40,8 @@ DECLARE @ParentID_1 Integer(4) -- Int32
 SET     @ParentID_1 = 7
 
 SELECT
-	keyParam.ParentID,
-	keyParam.ChildID
+	keyParam.ChildID,
+	keyParam.ParentID
 FROM
 	Child keyParam
 WHERE
@@ -53,8 +53,8 @@ DECLARE @ParentID_1 Integer(4) -- Int32
 SET     @ParentID_1 = 3
 
 SELECT
-	keyParam.ParentID,
-	keyParam.ChildID
+	keyParam.ChildID,
+	keyParam.ParentID
 FROM
 	Child keyParam
 WHERE
@@ -66,8 +66,8 @@ DECLARE @ParentID_1 Integer(4) -- Int32
 SET     @ParentID_1 = 4
 
 SELECT
-	keyParam.ParentID,
-	keyParam.ChildID
+	keyParam.ChildID,
+	keyParam.ParentID
 FROM
 	Child keyParam
 WHERE
@@ -79,8 +79,8 @@ DECLARE @ParentID_1 Integer(4) -- Int32
 SET     @ParentID_1 = 1
 
 SELECT
-	keyParam.ParentID,
-	keyParam.ChildID
+	keyParam.ChildID,
+	keyParam.ParentID
 FROM
 	Child keyParam
 WHERE

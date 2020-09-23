@@ -9,10 +9,10 @@ BeforeExecute
 CREATE TABLE xxPerson
 (
 	FirstName  NVarChar(255)  NOT NULL,
+	Gender     Char(1)        NOT NULL,
 	PersonID   SERIAL         NOT NULL,
 	LastName   NVarChar(255)  NOT NULL,
 	MiddleName NVarChar(255)      NULL,
-	Gender     Char(1)        NOT NULL,
 
 	PRIMARY KEY (PersonID)
 )
@@ -21,26 +21,26 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO xxPerson
 (
 	FirstName,
+	Gender,
 	LastName,
-	MiddleName,
-	Gender
+	MiddleName
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute
@@ -56,10 +56,10 @@ BeforeExecute
 
 SELECT FIRST 2
 	t1.FirstName,
+	t1.Gender,
 	t1.PersonID,
 	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1.MiddleName
 FROM
 	xxPerson t1
 
@@ -67,12 +67,12 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName VarChar(4) -- String
 SET     @MiddleName = 'None'
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'M'
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 
@@ -80,9 +80,9 @@ UPDATE
 	xxPerson
 SET
 	xxPerson.FirstName = @FirstName,
+	xxPerson.Gender = @Gender,
 	xxPerson.LastName = @LastName,
-	xxPerson.MiddleName = @MiddleName,
-	xxPerson.Gender = @Gender
+	xxPerson.MiddleName = @MiddleName
 WHERE
 	xxPerson.PersonID = @ID
 
@@ -91,10 +91,10 @@ BeforeExecute
 
 SELECT FIRST 2
 	t1.FirstName,
+	t1.Gender,
 	t1.PersonID,
 	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1.MiddleName
 FROM
 	xxPerson t1
 

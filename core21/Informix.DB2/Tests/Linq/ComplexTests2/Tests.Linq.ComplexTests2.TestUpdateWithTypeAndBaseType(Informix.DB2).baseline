@@ -5,9 +5,9 @@ CREATE TABLE Animals17
 (
 	AnimalType    NVarChar(40)  NOT NULL,
 	AnimalType2   NVarChar(40)  NOT NULL,
+	Discriminator NVarChar(40)  NOT NULL,
 	Id            Int           NOT NULL,
 	Name          NVarChar(255)     NULL,
-	Discriminator NVarChar(40)  NOT NULL,
 	EyeId         Int               NULL,
 	"Second"      NVarChar(40)      NULL,
 	"First"       NVarChar(40)      NULL,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO Animals17
 (
-	Discriminator,
 	Name,
 	Id,
+	Discriminator,
 	AnimalType2,
 	AnimalType,
 	EyeId,
@@ -85,9 +85,9 @@ INSERT INTO Animals17
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Discriminator VarChar(10) -- String
-SET     @Discriminator = 'WildAnimal'
 DECLARE @Name VarChar(10) -- String
 SET     @Name = 'WildAnimal'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @AnimalType VarChar(3) -- String
-SET     @AnimalType = 'Big'
+DECLARE @Discriminator VarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
 
 INSERT INTO Animals17
 (
-	Discriminator,
 	Name,
 	Id,
-	AnimalType,
-	AnimalType2
+	Discriminator,
+	AnimalType2,
+	AnimalType
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
-	@AnimalType,
-	@AnimalType2
+	@Discriminator,
+	@AnimalType2,
+	@AnimalType
 )
 
 BeforeExecute
@@ -165,9 +165,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	t1.Discriminator,
 	t1.Name,
 	t1.Id,
+	t1.Discriminator,
 	t1.AnimalType2,
 	t1.AnimalType,
 	t1.EyeId,
@@ -180,10 +180,10 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'FirstDog'
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
@@ -200,8 +200,8 @@ SET     @Id = 1
 UPDATE
 	Animals17
 SET
-	Animals17.Discriminator = @Discriminator,
 	Animals17.Name = @Name,
+	Animals17.Discriminator = @Discriminator,
 	Animals17.AnimalType2 = @AnimalType2,
 	Animals17.AnimalType = @AnimalType,
 	Animals17.EyeId = @EyeId,
@@ -216,10 +216,10 @@ DECLARE @AnimalType VarChar(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
-DECLARE @Name VarChar(8) -- String
-SET     @Name = 'FirstDog'
 DECLARE @Discriminator VarChar(3) -- String
 SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
 DECLARE @EyeId Integer(4) -- Int32
 SET     @EyeId = 1
 DECLARE @DogName_Second VarChar(1) -- String
@@ -234,8 +234,8 @@ UPDATE
 SET
 	Animals17.AnimalType = @AnimalType,
 	Animals17.AnimalType2 = @AnimalType2,
-	Animals17.Name = @Name,
 	Animals17.Discriminator = @Discriminator,
+	Animals17.Name = @Name,
 	Animals17.EyeId = @EyeId,
 	Animals17."Second" = @DogName_Second,
 	Animals17."First" = @DogName_First
@@ -244,12 +244,12 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar -- String
 SET     @Name = NULL
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 0
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType VarChar(5) -- String
@@ -263,9 +263,9 @@ SET     @DogName_First = NULL
 
 INSERT INTO Animals17
 (
-	Discriminator,
 	Name,
 	Id,
+	Discriminator,
 	AnimalType2,
 	AnimalType,
 	EyeId,
@@ -274,9 +274,9 @@ INSERT INTO Animals17
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,

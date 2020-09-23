@@ -3,10 +3,10 @@
 
 SELECT
 	[t1].[FirstName],
+	[t1].[Gender],
 	[t1].[PersonID],
 	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
+	[t1].[MiddleName]
 FROM
 	[Person] [t1]
 
@@ -14,8 +14,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[PersonID],
-	[t1].[Diagnosis]
+	[t1].[Diagnosis],
+	[t1].[PersonID]
 FROM
 	[Patient] [t1]
 
@@ -24,10 +24,10 @@ BeforeExecute
 
 SELECT
 	p_1.FirstName,
+	p_1.Gender,
 	p_1.PersonID,
 	p_1.LastName,
-	p_1.MiddleName,
-	p_1.Gender
+	p_1.MiddleName
 FROM
 	(
 		SELECT
@@ -37,10 +37,10 @@ FROM
 				ELSE 'f'
 			END as Field1,
 			p.FirstName,
+			p.Gender,
 			p.PersonID,
 			p.LastName,
-			p.MiddleName,
-			p.Gender
+			p.MiddleName
 		FROM
 			Person p
 	) p_1

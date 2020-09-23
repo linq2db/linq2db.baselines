@@ -3,8 +3,8 @@
 
 CREATE TABLE Issue1279Table
 (
-	Id      SERIAL    NOT NULL,
 	CharFld NChar(1)  NOT NULL,
+	Id      SERIAL    NOT NULL,
 
 	PRIMARY KEY (Id)
 )
@@ -27,8 +27,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	t1.Id,
-	t1.CharFld
+	t1.CharFld,
+	t1.Id
 FROM
 	Issue1279Table t1
 

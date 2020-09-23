@@ -3,42 +3,42 @@
 
 CREATE TABLE PR_1598_SkipCustom_Table
 (
+	Age  Int               NULL,
 	Id   Int           NOT NULL,
 	Name NVarChar(255)     NULL,
-	Age  Int               NULL,
 
 	PRIMARY KEY (Id)
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Age Integer(4) -- Int32
+SET     @Age = 15
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age Integer(4) -- Int32
-SET     @Age = 15
 
 INSERT INTO PR_1598_SkipCustom_Table
 (
+	Age,
 	Id,
-	Name,
-	Age
+	Name
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
+	t.Age,
 	t.Id,
-	t.Name,
-	t.Age
+	t.Name
 FROM
 	PR_1598_SkipCustom_Table t
 WHERE
@@ -66,9 +66,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
+	t.Age,
 	t.Id,
-	t.Name,
-	t.Age
+	t.Name
 FROM
 	PR_1598_SkipCustom_Table t
 WHERE

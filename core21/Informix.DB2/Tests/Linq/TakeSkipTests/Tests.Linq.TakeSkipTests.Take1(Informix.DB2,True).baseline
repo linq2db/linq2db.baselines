@@ -2,8 +2,8 @@
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
-	ch.ParentID,
-	ch.ChildID
+	ch.ChildID,
+	ch.ParentID
 FROM
 	Child ch
 
@@ -11,8 +11,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 3
-	ch.ParentID,
-	ch.ChildID
+	ch.ChildID,
+	ch.ParentID
 FROM
 	Child ch
 
@@ -20,8 +20,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
-	ch.ParentID,
-	ch.ChildID
+	ch.ChildID,
+	ch.ParentID
 FROM
 	Child ch
 
@@ -29,8 +29,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 3
-	ch.ParentID,
-	ch.ChildID
+	ch.ChildID,
+	ch.ParentID
 FROM
 	Child ch
 

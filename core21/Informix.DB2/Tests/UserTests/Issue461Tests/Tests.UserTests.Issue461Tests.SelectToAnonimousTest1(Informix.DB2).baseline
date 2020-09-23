@@ -43,8 +43,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[t1].[ChildID],
+	[t1].[ParentID]
 FROM
 	[Child] [t1]
 
@@ -52,9 +52,9 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[ParentID],
 	[t1].[ChildID],
-	[t1].[GrandChildID]
+	[t1].[GrandChildID],
+	[t1].[ParentID]
 FROM
 	[GrandChild] [t1]
 
@@ -62,12 +62,12 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[BinaryValue],
+	[t1].[BoolValue],
+	[t1].[DateTimeValue],
+	[t1].[GuidValue],
 	[t1].[ID],
 	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[BinaryValue],
 	[t1].[SmallIntValue],
 	[t1].[StringValue]
 FROM

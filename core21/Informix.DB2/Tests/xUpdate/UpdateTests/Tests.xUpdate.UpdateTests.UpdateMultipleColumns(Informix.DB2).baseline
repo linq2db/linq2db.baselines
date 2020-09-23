@@ -49,12 +49,12 @@ DECLARE @ID_1 Integer(4) -- Int32
 SET     @ID_1 = 1001
 
 SELECT FIRST 2
+	t.BinaryValue,
+	t.BoolValue,
+	t.DateTimeValue,
+	t.GuidValue,
 	t.ID,
 	t.MoneyValue,
-	t.DateTimeValue,
-	t.BoolValue,
-	t.GuidValue,
-	t.BinaryValue,
 	t.SmallIntValue,
 	t.StringValue
 FROM

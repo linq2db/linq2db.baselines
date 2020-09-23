@@ -30,12 +30,12 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t.BinaryValue,
+	t.BoolValue,
+	t.DateTimeValue,
+	t.GuidValue,
 	t.ID,
 	t.MoneyValue,
-	t.DateTimeValue,
-	t.BoolValue,
-	t.GuidValue,
-	t.BinaryValue,
 	t.SmallIntValue,
 	t.StringValue
 FROM

@@ -2,8 +2,8 @@
 -- Informix.DB2 Informix
 
 SELECT
-	x.ParentID,
-	x.ChildID
+	x.ChildID,
+	x.ParentID
 FROM
 	Child x
 WHERE

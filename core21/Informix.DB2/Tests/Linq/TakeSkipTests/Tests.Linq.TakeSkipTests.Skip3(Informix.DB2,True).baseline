@@ -2,8 +2,8 @@
 -- Informix.DB2 Informix
 
 SELECT SKIP 3
-	ch.ParentID,
-	ch.ChildID
+	ch.ChildID,
+	ch.ParentID
 FROM
 	Child ch
 WHERE

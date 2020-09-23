@@ -2,14 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ParentID,
-	t1.ChildID
+	t1.ChildID,
+	t1.ParentID
 FROM
 	Child t1
 INTERSECT
 SELECT
-	p.ParentID,
-	p.ChildID
+	p.ChildID,
+	p.ParentID
 FROM
 	Child p
 WHERE

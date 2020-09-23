@@ -3,36 +3,36 @@
 
 CREATE TABLE BlobClass
 (
-	Id        Int  NOT NULL,
 	BlobValue byte     NULL,
+	Id        Int  NOT NULL,
 
 	PRIMARY KEY (Id)
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
 DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = System.Byte[]
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
 
 INSERT INTO BlobClass
 (
-	Id,
-	BlobValue
+	BlobValue,
+	Id
 )
 VALUES
 (
-	@Id,
-	@BlobValue
+	@BlobValue,
+	@Id
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	t1.Id,
-	t1.BlobValue
+	t1.BlobValue,
+	t1.Id
 FROM
 	BlobClass t1
 WHERE
@@ -42,8 +42,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	t1.Id,
-	t1.BlobValue
+	t1.BlobValue,
+	t1.Id
 FROM
 	BlobClass t1
 WHERE

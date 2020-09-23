@@ -55,8 +55,8 @@ BeforeExecute
 
 CREATE TABLE Tag
 (
-	Id     Int           NOT NULL,
 	FactId Int           NOT NULL,
+	Id     Int           NOT NULL,
 	Name   NVarChar(255) NOT NULL,
 
 	PRIMARY KEY (Id)
@@ -64,67 +64,67 @@ CREATE TABLE Tag
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FactId Integer(4) -- Int32
+SET     @FactId = 3
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @FactId Integer(4) -- Int32
-SET     @FactId = 3
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Tag3'
 
 INSERT INTO Tag
 (
-	Id,
 	FactId,
+	Id,
 	Name
 )
 VALUES
 (
-	@Id,
 	@FactId,
+	@Id,
 	@Name
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FactId Integer(4) -- Int32
+SET     @FactId = 3
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @FactId Integer(4) -- Int32
-SET     @FactId = 3
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Tag3'
 
 INSERT INTO Tag
 (
-	Id,
 	FactId,
+	Id,
 	Name
 )
 VALUES
 (
-	@Id,
 	@FactId,
+	@Id,
 	@Name
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 3
 DECLARE @FactId Integer(4) -- Int32
 SET     @FactId = 4
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 3
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Tag4'
 
 INSERT INTO Tag
 (
-	Id,
 	FactId,
+	Id,
 	Name
 )
 VALUES
 (
-	@Id,
 	@FactId,
+	@Id,
 	@Name
 )
 

@@ -3,9 +3,9 @@
 
 CREATE TABLE test_insert_or_replace
 (
+	created_by NVarChar(255) NOT NULL,
 	id         Int           NOT NULL,
 	name       NVarChar(255)     NULL,
-	created_by NVarChar(255) NOT NULL,
 	updated_by NVarChar(255)     NULL,
 
 	PRIMARY KEY (id)
@@ -30,33 +30,33 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @CreatedBy VarChar(10) -- String
+SET     @CreatedBy = 'TEST_USER2'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Test1'
-DECLARE @CreatedBy VarChar(10) -- String
-SET     @CreatedBy = 'TEST_USER2'
 
 INSERT INTO test_insert_or_replace
 (
+	created_by,
 	id,
-	name,
-	created_by
+	name
 )
 VALUES
 (
+	@CreatedBy,
 	@Id,
-	@Name,
-	@CreatedBy
+	@Name
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
+	t1.created_by,
 	t1.id,
 	t1.name,
-	t1.created_by,
 	t1.updated_by
 FROM
 	test_insert_or_replace t1
@@ -82,9 +82,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
+	t1.created_by,
 	t1.id,
 	t1.name,
-	t1.created_by,
 	t1.updated_by
 FROM
 	test_insert_or_replace t1

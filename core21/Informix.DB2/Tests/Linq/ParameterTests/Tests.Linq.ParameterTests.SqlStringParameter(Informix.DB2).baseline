@@ -5,10 +5,10 @@ SET     @p = 'John'
 
 SELECT FIRST 2
 	t.FirstName,
+	t.Gender,
 	t.PersonID,
 	t.LastName,
-	t.MiddleName,
-	t.Gender
+	t.MiddleName
 FROM
 	Person t
 WHERE
@@ -21,10 +21,10 @@ SET     @p = 'Tester'
 
 SELECT FIRST 2
 	t.FirstName,
+	t.Gender,
 	t.PersonID,
 	t.LastName,
-	t.MiddleName,
-	t.Gender
+	t.MiddleName
 FROM
 	Person t
 WHERE

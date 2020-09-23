@@ -2,20 +2,20 @@
 -- Informix.DB2 Informix
 
 SELECT
-	a_MiddleGeneric.ParentID,
 	a_MiddleGeneric.ChildID,
-	a_MiddleGeneric.ParentID_1,
+	a_MiddleGeneric.ParentID,
 	a_MiddleGeneric.ChildID_1,
-	a_MiddleGeneric.GrandChildID
+	a_MiddleGeneric.GrandChildID,
+	a_MiddleGeneric.ParentID_1
 FROM
 	Parent t
 		LEFT JOIN (
 			SELECT
-				t1.ParentID,
 				t1.ChildID,
-				a_Bottom.ParentID as ParentID_1,
+				t1.ParentID,
 				a_Bottom.ChildID as ChildID_1,
-				a_Bottom.GrandChildID
+				a_Bottom.GrandChildID,
+				a_Bottom.ParentID as ParentID_1
 			FROM
 				Child t1
 					LEFT JOIN GrandChild a_Bottom ON t1.ChildID = a_Bottom.ChildID

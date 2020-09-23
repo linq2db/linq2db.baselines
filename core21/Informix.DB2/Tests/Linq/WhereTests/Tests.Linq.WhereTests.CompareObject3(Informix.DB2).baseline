@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ParentID_1 Integer(4) -- Int32
-SET     @ParentID_1 = 2
 DECLARE @ChildID_1 Integer(4) -- Int32
 SET     @ChildID_1 = 21
+DECLARE @ParentID_1 Integer(4) -- Int32
+SET     @ParentID_1 = 2
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch.ChildID,
+	ch.ParentID
 FROM
 	Child ch
 WHERE
-	(ch.ParentID <> @ParentID_1 OR ch.ChildID <> @ChildID_1)
+	(ch.ChildID <> @ChildID_1 OR ch.ParentID <> @ParentID_1)
 

@@ -51,9 +51,9 @@ BeforeExecute
 
 CREATE TABLE Products
 (
+	CategoryID      Int                NULL,
 	ProductID       SERIAL         NOT NULL,
 	ProductName     NVarChar(255)  NOT NULL,
-	CategoryID      Int                NULL,
 	QuantityPerUnit NVarChar(255)      NULL,
 
 	PRIMARY KEY (ProductID)
@@ -61,133 +61,133 @@ CREATE TABLE Products
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ProductName VarChar(6) -- String
-SET     @ProductName = 'Prod 1'
 DECLARE @CategoryID Integer(4) -- Int32
 SET     @CategoryID = 1
+DECLARE @ProductName VarChar(6) -- String
+SET     @ProductName = 'Prod 1'
 DECLARE @QuantityPerUnit VarChar(3) -- String
 SET     @QuantityPerUnit = 'q 1'
 
 INSERT INTO Products
 (
-	ProductName,
 	CategoryID,
+	ProductName,
 	QuantityPerUnit
 )
 VALUES
 (
-	@ProductName,
 	@CategoryID,
+	@ProductName,
 	@QuantityPerUnit
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ProductName VarChar(6) -- String
-SET     @ProductName = 'Prod 2'
 DECLARE @CategoryID Integer(4) -- Int32
 SET     @CategoryID = 1
+DECLARE @ProductName VarChar(6) -- String
+SET     @ProductName = 'Prod 2'
 DECLARE @QuantityPerUnit VarChar(3) -- String
 SET     @QuantityPerUnit = 'q 2'
 
 INSERT INTO Products
 (
-	ProductName,
 	CategoryID,
+	ProductName,
 	QuantityPerUnit
 )
 VALUES
 (
-	@ProductName,
 	@CategoryID,
+	@ProductName,
 	@QuantityPerUnit
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ProductName VarChar(6) -- String
-SET     @ProductName = 'Prod 3'
 DECLARE @CategoryID Integer(4) -- Int32
 SET     @CategoryID = 3
+DECLARE @ProductName VarChar(6) -- String
+SET     @ProductName = 'Prod 3'
 DECLARE @QuantityPerUnit VarChar(3) -- String
 SET     @QuantityPerUnit = 'q 3'
 
 INSERT INTO Products
 (
-	ProductName,
 	CategoryID,
+	ProductName,
 	QuantityPerUnit
 )
 VALUES
 (
-	@ProductName,
 	@CategoryID,
+	@ProductName,
 	@QuantityPerUnit
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ProductName VarChar(6) -- String
-SET     @ProductName = 'Prod 4'
 DECLARE @CategoryID Integer(4) -- Int32
 SET     @CategoryID = 3
+DECLARE @ProductName VarChar(6) -- String
+SET     @ProductName = 'Prod 4'
 DECLARE @QuantityPerUnit VarChar(3) -- String
 SET     @QuantityPerUnit = 'q 4'
 
 INSERT INTO Products
 (
-	ProductName,
 	CategoryID,
+	ProductName,
 	QuantityPerUnit
 )
 VALUES
 (
-	@ProductName,
 	@CategoryID,
+	@ProductName,
 	@QuantityPerUnit
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ProductName VarChar(6) -- String
-SET     @ProductName = 'Prod 5'
 DECLARE @CategoryID Integer(4) -- Int32
 SET     @CategoryID = 1
+DECLARE @ProductName VarChar(6) -- String
+SET     @ProductName = 'Prod 5'
 DECLARE @QuantityPerUnit VarChar(3) -- String
 SET     @QuantityPerUnit = 'q 5'
 
 INSERT INTO Products
 (
-	ProductName,
 	CategoryID,
+	ProductName,
 	QuantityPerUnit
 )
 VALUES
 (
-	@ProductName,
 	@CategoryID,
+	@ProductName,
 	@QuantityPerUnit
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ProductName VarChar(6) -- String
-SET     @ProductName = 'Prod 6'
 DECLARE @CategoryID Integer(4) -- Int32
 SET     @CategoryID = 1
+DECLARE @ProductName VarChar(6) -- String
+SET     @ProductName = 'Prod 6'
 DECLARE @QuantityPerUnit VarChar(3) -- String
 SET     @QuantityPerUnit = 'q 6'
 
 INSERT INTO Products
 (
-	ProductName,
 	CategoryID,
+	ProductName,
 	QuantityPerUnit
 )
 VALUES
 (
-	@ProductName,
 	@CategoryID,
+	@ProductName,
 	@QuantityPerUnit
 )
 
@@ -196,9 +196,9 @@ BeforeExecute
 
 SELECT
 	lw_Category.CategoryID,
+	detail.CategoryID,
 	detail.ProductID,
 	detail.ProductName,
-	detail.CategoryID,
 	detail.QuantityPerUnit
 FROM
 	Categories lw_Category

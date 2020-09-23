@@ -4,8 +4,8 @@
 SELECT
 	o.ParentID,
 	o.Value1,
-	cg.ParentID,
-	cg.ChildID
+	cg.ChildID,
+	cg.ParentID
 FROM
 	Parent o
 		LEFT JOIN (

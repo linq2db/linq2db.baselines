@@ -3,42 +3,42 @@
 
 CREATE TABLE PR_1598_Update_Null_Table
 (
+	Age  Int               NULL,
 	Id   Int           NOT NULL,
 	Name NVarChar(255)     NULL,
-	Age  Int               NULL,
 
 	PRIMARY KEY (Id)
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Age Integer -- Int32
+SET     @Age = NULL
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Tommy'
-DECLARE @Age Integer -- Int32
-SET     @Age = NULL
 
 INSERT INTO PR_1598_Update_Null_Table
 (
+	Age,
 	Id,
-	Name,
-	Age
+	Name
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
+	t.Age,
 	t.Id,
-	t.Name,
-	t.Age
+	t.Name
 FROM
 	PR_1598_Update_Null_Table t
 WHERE
@@ -46,18 +46,18 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Name VarChar(4) -- String
-SET     @Name = 'Jack'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 2
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Jack'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
 	PR_1598_Update_Null_Table
 SET
-	PR_1598_Update_Null_Table.Name = @Name,
-	PR_1598_Update_Null_Table.Age = @Age
+	PR_1598_Update_Null_Table.Age = @Age,
+	PR_1598_Update_Null_Table.Name = @Name
 WHERE
 	PR_1598_Update_Null_Table.Id = @Id
 
@@ -65,9 +65,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
+	t.Age,
 	t.Id,
-	t.Name,
-	t.Age
+	t.Name
 FROM
 	PR_1598_Update_Null_Table t
 WHERE
@@ -91,9 +91,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
+	t.Age,
 	t.Id,
-	t.Name,
-	t.Age
+	t.Name
 FROM
 	PR_1598_Update_Null_Table t
 WHERE

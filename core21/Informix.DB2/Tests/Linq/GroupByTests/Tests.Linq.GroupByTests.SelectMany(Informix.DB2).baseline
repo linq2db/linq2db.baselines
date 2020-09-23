@@ -2,8 +2,8 @@
 -- Informix.DB2 Informix
 
 SELECT
-	keyParam.ParentID,
-	keyParam.ChildID
+	keyParam.ChildID,
+	keyParam.ParentID
 FROM
 	(
 		SELECT

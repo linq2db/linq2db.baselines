@@ -4,8 +4,8 @@
 CREATE TABLE activity649
 (
 	activityid SERIAL                     NOT NULL,
-	personid   Int                        NOT NULL,
 	added      datetime year to fraction  NOT NULL,
+	personid   Int                        NOT NULL,
 
 	PRIMARY KEY (activityid)
 )

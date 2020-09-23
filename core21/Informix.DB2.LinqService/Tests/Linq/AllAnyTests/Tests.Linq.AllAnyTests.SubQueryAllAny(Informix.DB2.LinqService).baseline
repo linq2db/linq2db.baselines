@@ -21,7 +21,7 @@ WHERE
 				FROM
 					Child e
 				WHERE
-					(o.ParentID = e.ParentID AND o.ChildID = e.ChildID) AND
+					(o.ChildID = e.ChildID AND o.ParentID = e.ParentID) AND
 					e.ChildID > 10
 			)
 	)

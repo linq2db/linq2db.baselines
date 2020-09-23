@@ -3,9 +3,9 @@
 
 CREATE TABLE PR_1598_Insert_Table_Cache
 (
+	Age  Int               NULL,
 	Id   Int           NOT NULL,
 	Name NVarChar(255)     NULL,
-	Age  Int               NULL,
 
 	PRIMARY KEY (Id)
 )
@@ -46,9 +46,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
+	t.Age,
 	t.Id,
-	t.Name,
-	t.Age
+	t.Name
 FROM
 	PR_1598_Insert_Table_Cache t
 WHERE
@@ -72,9 +72,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
+	t.Age,
 	t.Id,
-	t.Name,
-	t.Age
+	t.Name
 FROM
 	PR_1598_Insert_Table_Cache t
 WHERE

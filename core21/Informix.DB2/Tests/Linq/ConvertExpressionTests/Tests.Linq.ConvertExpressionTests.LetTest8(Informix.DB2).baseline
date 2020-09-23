@@ -3,8 +3,8 @@
 
 SELECT
 	key_data_result.ParentID,
-	c_1.ParentID,
-	c_1.ChildID
+	c_1.ChildID,
+	c_1.ParentID
 FROM
 	(
 		SELECT DISTINCT
@@ -21,8 +21,8 @@ BeforeExecute
 
 SELECT
 	key_data_result.ParentID,
-	c_1.ParentID,
-	c_1.ChildID
+	c_1.ChildID,
+	c_1.ParentID
 FROM
 	(
 		SELECT DISTINCT

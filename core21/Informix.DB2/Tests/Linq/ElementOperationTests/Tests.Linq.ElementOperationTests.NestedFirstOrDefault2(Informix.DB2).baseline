@@ -4,8 +4,8 @@
 SELECT
 	key_data_result.ParentID,
 	key_data_result.Value1,
-	detail.ParentID,
-	detail.ChildID
+	detail.ChildID,
+	detail.ParentID
 FROM
 	(
 		SELECT DISTINCT

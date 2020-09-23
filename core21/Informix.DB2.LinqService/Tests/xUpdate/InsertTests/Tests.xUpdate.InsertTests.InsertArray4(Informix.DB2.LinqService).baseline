@@ -8,39 +8,39 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @BinaryValue VarBinary(4) -- Binary
+SET     @BinaryValue = System.Byte[]
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 't'
+DECLARE @DateTimeValue Timestamp -- DateTime
+SET     @DateTimeValue = NULL
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(16)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue Timestamp -- DateTime
-SET     @DateTimeValue = NULL
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 't'
-DECLARE @GuidValue Char(36) -- StringFixedLength
-SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
-DECLARE @BinaryValue VarBinary(4) -- Binary
-SET     @BinaryValue = System.Byte[]
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 0
 
 INSERT INTO LinqDataTypes
 (
+	BinaryValue,
+	BoolValue,
+	DateTimeValue,
+	GuidValue,
 	ID,
 	MoneyValue,
-	DateTimeValue,
-	BoolValue,
-	GuidValue,
-	BinaryValue,
 	SmallIntValue
 )
 VALUES
 (
+	@BinaryValue,
+	@BoolValue,
+	@DateTimeValue,
+	@GuidValue,
 	@ID,
 	@MoneyValue,
-	@DateTimeValue,
-	@BoolValue,
-	@GuidValue,
-	@BinaryValue,
 	@SmallIntValue
 )
 
@@ -48,12 +48,12 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
+	t.BinaryValue,
+	t.BoolValue,
+	t.DateTimeValue,
+	t.GuidValue,
 	t.ID,
 	t.MoneyValue,
-	t.DateTimeValue,
-	t.BoolValue,
-	t.GuidValue,
-	t.BinaryValue,
 	t.SmallIntValue
 FROM
 	LinqDataTypes t

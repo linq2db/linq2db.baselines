@@ -5,9 +5,9 @@ CREATE TABLE Animals12
 (
 	AnimalType    NVarChar(40)  NOT NULL,
 	AnimalType2   NVarChar(40)  NOT NULL,
+	Discriminator NVarChar(40)  NOT NULL,
 	Id            Int           NOT NULL,
 	Name          NVarChar(255)     NULL,
-	Discriminator NVarChar(40)  NOT NULL,
 	EyeId         Int               NULL,
 	"Second"      NVarChar(40)      NULL,
 	"First"       NVarChar(40)      NULL,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO Animals12
 (
-	Discriminator,
 	Name,
 	Id,
+	Discriminator,
 	AnimalType2,
 	AnimalType,
 	EyeId,
@@ -85,9 +85,9 @@ INSERT INTO Animals12
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Discriminator VarChar(10) -- String
-SET     @Discriminator = 'WildAnimal'
 DECLARE @Name VarChar(10) -- String
 SET     @Name = 'WildAnimal'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @AnimalType VarChar(3) -- String
-SET     @AnimalType = 'Big'
+DECLARE @Discriminator VarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
 
 INSERT INTO Animals12
 (
-	Discriminator,
 	Name,
 	Id,
-	AnimalType,
-	AnimalType2
+	Discriminator,
+	AnimalType2,
+	AnimalType
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
-	@AnimalType,
-	@AnimalType2
+	@Discriminator,
+	@AnimalType2,
+	@AnimalType
 )
 
 BeforeExecute
@@ -169,9 +169,9 @@ SELECT
 	t2.TestAnimalId,
 	a_TestAnimal.AnimalType,
 	a_TestAnimal.AnimalType2,
+	a_TestAnimal.Discriminator,
 	a_TestAnimal.Id,
 	a_TestAnimal.Name,
-	a_TestAnimal.Discriminator,
 	a_TestAnimal.EyeId,
 	a_TestAnimal.Second_1,
 	a_TestAnimal.First_1,
@@ -183,9 +183,9 @@ FROM
 			SELECT
 				t1.AnimalType,
 				t1.AnimalType2,
+				t1.Discriminator,
 				t1.Id,
 				t1.Name,
-				t1.Discriminator,
 				t1.EyeId,
 				t1."Second" as Second_1,
 				t1."First" as First_1,

@@ -4,19 +4,19 @@
 SELECT
 	key_data_result.ParentID,
 	key_data_result.Value1,
-	key_data_result.ParentID_1,
 	key_data_result.ChildID,
 	key_data_result.GrandChildID,
-	detail.ParentID,
-	detail.ChildID
+	key_data_result.ParentID_1,
+	detail.ChildID,
+	detail.ParentID
 FROM
 	(
 		SELECT DISTINCT
 			a_Parent.ParentID,
 			a_Parent.Value1,
-			p.ParentID as ParentID_1,
 			p.ChildID,
-			p.GrandChildID
+			p.GrandChildID,
+			p.ParentID as ParentID_1
 		FROM
 			GrandChild p
 				INNER JOIN Child a_Child ON p.ParentID = a_Child.ParentID AND p.ChildID = a_Child.ChildID
@@ -34,9 +34,9 @@ BeforeExecute
 SELECT
 	a_Parent.ParentID,
 	a_Parent.Value1,
-	p.ParentID,
 	p.ChildID,
-	p.GrandChildID
+	p.GrandChildID,
+	p.ParentID
 FROM
 	GrandChild p
 		INNER JOIN Child a_Child ON p.ParentID = a_Child.ParentID AND p.ChildID = a_Child.ChildID

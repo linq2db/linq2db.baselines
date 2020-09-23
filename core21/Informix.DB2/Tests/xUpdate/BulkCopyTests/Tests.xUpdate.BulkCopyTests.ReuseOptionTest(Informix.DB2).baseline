@@ -18,19 +18,19 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 111001
 DECLARE @ChildID Integer(4) -- Int32
 SET     @ChildID = 0
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 111001
 
 INSERT INTO Child
 (
-	ParentID,
-	ChildID
+	ChildID,
+	ParentID
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 

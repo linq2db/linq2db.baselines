@@ -2,9 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	x.ParentID,
 	x.ChildID,
-	x.GrandChildID
+	x.GrandChildID,
+	x.ParentID
 FROM
 	GrandChild x
 WHERE
@@ -14,9 +14,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	x.ParentID,
 	x.ChildID,
-	x.GrandChildID
+	x.GrandChildID,
+	x.ParentID
 FROM
 	GrandChild x
 WHERE

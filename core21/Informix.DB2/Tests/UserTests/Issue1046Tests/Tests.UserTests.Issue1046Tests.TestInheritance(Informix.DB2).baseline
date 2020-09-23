@@ -3,9 +3,9 @@
 
 CREATE TABLE "Task"
 (
+	BdaValue   NVarChar(255)     NULL,
 	Id         Int           NOT NULL,
 	TargetName NVarChar(255)     NULL,
-	BdaValue   NVarChar(255)     NULL,
 
 	PRIMARY KEY (Id)
 )
@@ -36,8 +36,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	p.TargetName,
 	p.Id,
+	p.TargetName,
 	p.BdaValue
 FROM
 	"Task" p

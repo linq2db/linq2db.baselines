@@ -2,13 +2,13 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ParentID,
-	t1.ChildID
+	t1.ChildID,
+	t1.ParentID
 FROM
 	(
 		SELECT
-			a_Child.ParentID,
-			a_Child.ChildID
+			a_Child.ChildID,
+			a_Child.ParentID
 		FROM
 			Parent p
 				INNER JOIN GrandChild g_1 ON 1=1

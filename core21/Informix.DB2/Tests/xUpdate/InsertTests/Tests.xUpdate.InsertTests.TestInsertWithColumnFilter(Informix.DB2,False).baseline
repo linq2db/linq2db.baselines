@@ -2,22 +2,22 @@
 -- Informix.DB2 Informix
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @LastName VarChar(8) -- String
-SET     @LastName = 'whatever'
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
+DECLARE @LastName VarChar(8) -- String
+SET     @LastName = 'whatever'
 
 INSERT INTO Person
 (
 	FirstName,
-	LastName,
-	Gender
+	Gender,
+	LastName
 )
 VALUES
 (
 	@FirstName,
-	@LastName,
-	@Gender
+	@Gender,
+	@LastName
 )
 
 BeforeExecute
@@ -27,10 +27,10 @@ SET     @FirstName_1 = 'InsertColumnFilter'
 
 SELECT FIRST 1
 	x.FirstName,
+	x.Gender,
 	x.PersonID,
 	x.LastName,
-	x.MiddleName,
-	x.Gender
+	x.MiddleName
 FROM
 	Person x
 WHERE
