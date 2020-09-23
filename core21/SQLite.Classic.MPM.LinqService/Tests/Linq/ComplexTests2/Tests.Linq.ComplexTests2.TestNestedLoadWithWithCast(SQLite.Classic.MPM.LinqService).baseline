@@ -97,8 +97,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Discriminator NVarChar(10) -- String
-SET     @Discriminator = 'WildAnimal'
 DECLARE @AnimalType NVarChar(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 NVarChar(3) -- String
@@ -107,22 +105,24 @@ DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'WildAnimal'
+DECLARE @Discriminator NVarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
 
 INSERT INTO [Animals36]
 (
-	[Discriminator],
 	[AnimalType],
 	[AnimalType2],
 	[Id],
-	[Name]
+	[Name],
+	[Discriminator]
 )
 VALUES
 (
-	@Discriminator,
 	@AnimalType,
 	@AnimalType2,
 	@Id,
-	@Name
+	@Name,
+	@Discriminator
 )
 
 BeforeExecute
