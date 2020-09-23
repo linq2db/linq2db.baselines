@@ -3,8 +3,8 @@
 
 CREATE TABLE [Issue1438]
 (
-	[Id]  Int  NOT NULL IDENTITY,
 	[Has] Bit  NOT NULL,
+	[Id]  Int  NOT NULL IDENTITY,
 
 	CONSTRAINT [PK_Issue1438] PRIMARY KEY ([Id])
 )
@@ -36,8 +36,8 @@ DECLARE @id_1 Int -- Int32
 SET     @id_1 = 1
 
 SELECT TOP (@take)
-	[_].[Id],
-	[_].[Has]
+	[_].[Has],
+	[_].[Id]
 FROM
 	[Issue1438] [_]
 WHERE

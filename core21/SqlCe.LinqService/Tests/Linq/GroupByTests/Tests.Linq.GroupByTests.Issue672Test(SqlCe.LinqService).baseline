@@ -3,78 +3,78 @@
 
 CREATE TABLE [Stone]
 (
-	[Id]           Int            NOT NULL IDENTITY,
-	[Name]         NVarChar(255)  NOT NULL,
 	[Enabled]      Bit                NULL,
+	[Id]           Int            NOT NULL IDENTITY,
 	[ImageFullUrl] NVarChar(255)      NULL,
+	[Name]         NVarChar(255)  NOT NULL,
 
 	CONSTRAINT [PK_Stone] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Name NVarChar(6) -- String
-SET     @Name = 'group1'
 DECLARE @Enabled Bit -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl NVarChar(3) -- String
 SET     @ImageFullUrl = '123'
+DECLARE @Name NVarChar(6) -- String
+SET     @Name = 'group1'
 
 INSERT INTO [Stone]
 (
-	[Name],
 	[Enabled],
-	[ImageFullUrl]
+	[ImageFullUrl],
+	[Name]
 )
 VALUES
 (
-	@Name,
 	@Enabled,
-	@ImageFullUrl
+	@ImageFullUrl,
+	@Name
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Name NVarChar(6) -- String
-SET     @Name = 'group1'
 DECLARE @Enabled Bit -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl NVarChar(3) -- String
 SET     @ImageFullUrl = '123'
+DECLARE @Name NVarChar(6) -- String
+SET     @Name = 'group1'
 
 INSERT INTO [Stone]
 (
-	[Name],
 	[Enabled],
-	[ImageFullUrl]
+	[ImageFullUrl],
+	[Name]
 )
 VALUES
 (
-	@Name,
 	@Enabled,
-	@ImageFullUrl
+	@ImageFullUrl,
+	@Name
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @Enabled Bit -- Boolean
+SET     @Enabled = 1
+DECLARE @ImageFullUrl NVarChar(3) -- String
+SET     @ImageFullUrl = '123'
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group2'
-DECLARE @Enabled Bit -- Boolean
-SET     @Enabled = 1
-DECLARE @ImageFullUrl NVarChar(3) -- String
-SET     @ImageFullUrl = '123'
 
 INSERT INTO [Stone]
 (
-	[Name],
 	[Enabled],
-	[ImageFullUrl]
+	[ImageFullUrl],
+	[Name]
 )
 VALUES
 (
-	@Name,
 	@Enabled,
-	@ImageFullUrl
+	@ImageFullUrl,
+	@Name
 )
 
 BeforeExecute
@@ -96,10 +96,10 @@ DECLARE @Name_1 NVarChar(6) -- String
 SET     @Name_1 = 'group1'
 
 SELECT
-	[s].[Id],
-	[s].[Name],
 	[s].[Enabled],
-	[s].[ImageFullUrl]
+	[s].[Id],
+	[s].[ImageFullUrl],
+	[s].[Name]
 FROM
 	[Stone] [s]
 WHERE
@@ -114,10 +114,10 @@ DECLARE @Name_1 NVarChar(6) -- String
 SET     @Name_1 = 'group2'
 
 SELECT
-	[s].[Id],
-	[s].[Name],
 	[s].[Enabled],
-	[s].[ImageFullUrl]
+	[s].[Id],
+	[s].[ImageFullUrl],
+	[s].[Name]
 FROM
 	[Stone] [s]
 WHERE

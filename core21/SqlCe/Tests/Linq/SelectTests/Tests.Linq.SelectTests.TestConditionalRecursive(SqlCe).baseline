@@ -5,14 +5,14 @@ SET     @take = 1
 
 SELECT
 	[p].[ParentID],
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[t2].[ChildID],
+	[t2].[ParentID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT TOP (@take)
-				[t1].[ParentID],
-				[t1].[ChildID]
+				[t1].[ChildID],
+				[t1].[ParentID]
 			FROM
 				[Child] [t1]
 		) [t2]

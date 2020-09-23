@@ -3,9 +3,9 @@
 
 CREATE TABLE [Issue1554Table]
 (
-	[Id]              Int            NOT NULL,
 	[ClaimedKeyType]  NVarChar(4000) NOT NULL,
 	[ClaimedKeyTypeN] NVarChar(4000)     NULL,
+	[Id]              Int            NOT NULL,
 
 	CONSTRAINT [PK_Issue1554Table] PRIMARY KEY ([Id])
 )
@@ -32,9 +32,9 @@ DECLARE @take Int -- Int32
 SET     @take = 2
 
 SELECT TOP (@take)
-	[t1].[Id],
 	[t1].[ClaimedKeyType],
-	[t1].[ClaimedKeyTypeN]
+	[t1].[ClaimedKeyTypeN],
+	[t1].[Id]
 FROM
 	[Issue1554Table] [t1]
 

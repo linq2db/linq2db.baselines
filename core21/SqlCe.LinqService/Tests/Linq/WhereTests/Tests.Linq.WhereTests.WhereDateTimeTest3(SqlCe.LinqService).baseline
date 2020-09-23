@@ -4,12 +4,12 @@ DECLARE @DateTimeValue_1 DateTime
 SET     @DateTimeValue_1 = '2009-09-27'
 
 SELECT
+	[_].[BinaryValue],
+	[_].[BoolValue],
+	[_].[DateTimeValue],
+	[_].[GuidValue],
 	[_].[ID],
 	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[BinaryValue],
 	[_].[SmallIntValue],
 	[_].[StringValue]
 FROM

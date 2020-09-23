@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE [TestTable]
 (
-	[ID]        Int            NOT NULL IDENTITY,
+	[CreatedOn] DateTime           NULL,
 	[Field1]    NVarChar(50)       NULL,
 	[Field2]    NVarChar(255)      NULL,
-	[CreatedOn] DateTime           NULL,
+	[ID]        Int            NOT NULL IDENTITY,
 
 	CONSTRAINT [PK_TestTable] PRIMARY KEY ([ID])
 )
@@ -20,10 +20,10 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	[t1].[ID],
+	[t1].[CreatedOn],
 	[t1].[Field1],
 	[t1].[Field2],
-	[t1].[CreatedOn]
+	[t1].[ID]
 FROM
 	[TestTable] [t1]
 

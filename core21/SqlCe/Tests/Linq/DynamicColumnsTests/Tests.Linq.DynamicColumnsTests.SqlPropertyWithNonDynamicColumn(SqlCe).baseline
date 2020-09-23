@@ -3,10 +3,10 @@
 
 SELECT
 	[x].[FirstName],
+	[x].[Gender],
 	[x].[PersonID],
 	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
+	[x].[MiddleName]
 FROM
 	[Person] [x]
 WHERE

@@ -7,10 +7,10 @@ SET     @p = 'John'
 
 SELECT TOP (@take)
 	[t].[FirstName],
+	[t].[Gender],
 	[t].[PersonID],
 	[t].[LastName],
-	[t].[MiddleName],
-	[t].[Gender]
+	[t].[MiddleName]
 FROM
 	[Person] [t]
 WHERE
@@ -25,10 +25,10 @@ SET     @p = 'Tester'
 
 SELECT TOP (@take)
 	[t].[FirstName],
+	[t].[Gender],
 	[t].[PersonID],
 	[t].[LastName],
-	[t].[MiddleName],
-	[t].[Gender]
+	[t].[MiddleName]
 FROM
 	[Person] [t]
 WHERE

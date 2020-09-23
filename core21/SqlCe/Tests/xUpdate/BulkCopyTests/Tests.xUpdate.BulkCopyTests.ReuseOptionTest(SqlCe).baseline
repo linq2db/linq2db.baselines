@@ -13,8 +13,8 @@ BeforeExecute
 
 INSERT INTO [Child]
 (
-	[ParentID],
-	[ChildID]
+	[ChildID],
+	[ParentID]
 )
-SELECT 111001,0
+SELECT 0,111001
 

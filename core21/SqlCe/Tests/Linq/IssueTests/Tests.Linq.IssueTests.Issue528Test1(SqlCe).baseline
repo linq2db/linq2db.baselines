@@ -3,10 +3,10 @@
 
 SELECT
 	[t1].[FirstName],
+	[t1].[Gender],
 	[t1].[PersonID],
 	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
+	[t1].[MiddleName]
 FROM
 	[Person] [t1]
 
@@ -14,8 +14,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[PersonID],
-	[t1].[Diagnosis]
+	[t1].[Diagnosis],
+	[t1].[PersonID]
 FROM
 	[Patient] [t1]
 
@@ -36,10 +36,10 @@ SET     @FirstName_1 = 'Jane'
 
 SELECT
 	[keyParam].[FirstName],
+	[keyParam].[Gender],
 	[keyParam].[PersonID],
 	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
+	[keyParam].[MiddleName]
 FROM
 	[Person] [keyParam]
 WHERE
@@ -52,10 +52,10 @@ SET     @FirstName_1 = 'John'
 
 SELECT
 	[keyParam].[FirstName],
+	[keyParam].[Gender],
 	[keyParam].[PersonID],
 	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
+	[keyParam].[MiddleName]
 FROM
 	[Person] [keyParam]
 WHERE
@@ -68,10 +68,10 @@ SET     @FirstName_1 = 'Jürgen'
 
 SELECT
 	[keyParam].[FirstName],
+	[keyParam].[Gender],
 	[keyParam].[PersonID],
 	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
+	[keyParam].[MiddleName]
 FROM
 	[Person] [keyParam]
 WHERE
@@ -84,10 +84,10 @@ SET     @FirstName_1 = 'Tester'
 
 SELECT
 	[keyParam].[FirstName],
+	[keyParam].[Gender],
 	[keyParam].[PersonID],
 	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
+	[keyParam].[MiddleName]
 FROM
 	[Person] [keyParam]
 WHERE

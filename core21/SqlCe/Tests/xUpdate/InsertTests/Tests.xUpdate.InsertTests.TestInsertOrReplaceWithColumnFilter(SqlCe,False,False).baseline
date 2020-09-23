@@ -3,8 +3,8 @@
 
 CREATE TABLE [TestInsertOrReplaceTable]
 (
-	[ID]         Int           NOT NULL,
 	[FirstName]  NVarChar(255)     NULL,
+	[ID]         Int           NOT NULL,
 	[LastName]   NVarChar(255)     NULL,
 	[MiddleName] NVarChar(255)     NULL,
 
@@ -33,10 +33,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 0
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
+DECLARE @ID Int -- Int32
+SET     @ID = 0
 DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName NVarChar(15) -- String
@@ -44,15 +44,15 @@ SET     @MiddleName = 'som middle name'
 
 INSERT INTO [TestInsertOrReplaceTable]
 (
-	[ID],
 	[FirstName],
+	[ID],
 	[LastName],
 	[MiddleName]
 )
 VALUES
 (
-	@ID,
 	@FirstName,
+	@ID,
 	@LastName,
 	@MiddleName
 )
@@ -65,8 +65,8 @@ DECLARE @FirstName_1 NVarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP (@take)
-	[x].[ID],
 	[x].[FirstName],
+	[x].[ID],
 	[x].[LastName],
 	[x].[MiddleName]
 FROM
@@ -99,8 +99,8 @@ DECLARE @FirstName_1 NVarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP (@take)
-	[x].[ID],
 	[x].[FirstName],
+	[x].[ID],
 	[x].[LastName],
 	[x].[MiddleName]
 FROM

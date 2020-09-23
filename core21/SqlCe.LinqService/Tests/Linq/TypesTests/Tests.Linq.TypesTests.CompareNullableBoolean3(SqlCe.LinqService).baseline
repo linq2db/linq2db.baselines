@@ -4,12 +4,12 @@ DECLARE @param2_1 Bit -- Boolean
 SET     @param2_1 = 0
 
 SELECT
+	[t].[BinaryValue],
+	[t].[BoolValue],
+	[t].[DateTimeValue],
+	[t].[GuidValue],
 	[t].[ID],
 	[t].[MoneyValue],
-	[t].[DateTimeValue],
-	[t].[BoolValue],
-	[t].[GuidValue],
-	[t].[BinaryValue],
 	[t].[SmallIntValue],
 	[t].[StringValue]
 FROM

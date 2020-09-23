@@ -3,11 +3,11 @@
 
 SELECT
 	[t1].[cnt],
-	[i].[PersonID],
 	[i].[FirstName],
+	[i].[Gender],
 	[i].[LastName],
 	[i].[MiddleName],
-	[i].[Gender],
+	[i].[PersonID],
 	[i].[LastName] + ', ' + [i].[FirstName],
 	[t2].[cnt]
 FROM

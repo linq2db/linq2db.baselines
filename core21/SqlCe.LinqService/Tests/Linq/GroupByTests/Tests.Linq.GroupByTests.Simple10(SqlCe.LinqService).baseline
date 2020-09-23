@@ -14,8 +14,8 @@ DECLARE @ParentID_1 Int -- Int32
 SET     @ParentID_1 = 1
 
 SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
+	[keyParam].[ChildID],
+	[keyParam].[ParentID]
 FROM
 	[Child] [keyParam]
 WHERE

@@ -13,8 +13,8 @@ BeforeExecute
 
 CREATE TABLE [Relationship1711]
 (
-	[EntityId] BigInt NOT NULL,
-	[Deleted]  Bit    NOT NULL
+	[Deleted]  Bit    NOT NULL,
+	[EntityId] BigInt NOT NULL
 )
 
 BeforeExecute

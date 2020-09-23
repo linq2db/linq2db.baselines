@@ -3,9 +3,9 @@
 
 CREATE TABLE [Issue1303]
 (
-	[ID]     Int           NOT NULL,
 	[Array]  VarBinary(10)     NULL,
 	[Binary] VarBinary(10)     NULL,
+	[ID]     Int           NOT NULL,
 
 	CONSTRAINT [PK_Issue1303] PRIMARY KEY ([ID])
 )
@@ -36,9 +36,9 @@ DECLARE @take Int -- Int32
 SET     @take = 2
 
 SELECT TOP (@take)
-	[_].[ID],
 	[_].[Array],
-	[_].[Binary]
+	[_].[Binary],
+	[_].[ID]
 FROM
 	[Issue1303] [_]
 WHERE
@@ -52,9 +52,9 @@ DECLARE @Array_2 VarBinary(3) -- Binary
 SET     @Array_2 = 0x010203
 
 SELECT TOP (@take)
-	[_].[ID],
 	[_].[Array],
-	[_].[Binary]
+	[_].[Binary],
+	[_].[ID]
 FROM
 	[Issue1303] [_]
 WHERE
@@ -68,9 +68,9 @@ DECLARE @Binary_2 VarBinary(2) -- Binary
 SET     @Binary_2 = 0x0405
 
 SELECT TOP (@take)
-	[_].[ID],
 	[_].[Array],
-	[_].[Binary]
+	[_].[Binary],
+	[_].[ID]
 FROM
 	[Issue1303] [_]
 WHERE

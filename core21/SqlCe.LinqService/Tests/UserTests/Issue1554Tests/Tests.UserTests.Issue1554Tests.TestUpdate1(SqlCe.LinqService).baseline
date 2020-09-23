@@ -3,33 +3,33 @@
 
 CREATE TABLE [Issue1554Table]
 (
-	[Id]              Int            NOT NULL,
 	[ClaimedKeyType]  NVarChar(4000) NOT NULL,
 	[ClaimedKeyTypeN] NVarChar(4000)     NULL,
+	[Id]              Int            NOT NULL,
 
 	CONSTRAINT [PK_Issue1554Table] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
 SET     @ClaimedKeyType = 'RSA'
 DECLARE @ClaimedKeyTypeN NVarChar(3) -- String
 SET     @ClaimedKeyTypeN = 'RSA'
+DECLARE @Id Int -- Int32
+SET     @Id = 0
 
 INSERT INTO [Issue1554Table]
 (
-	[Id],
 	[ClaimedKeyType],
-	[ClaimedKeyTypeN]
+	[ClaimedKeyTypeN],
+	[Id]
 )
 VALUES
 (
-	@Id,
 	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	@ClaimedKeyTypeN,
+	@Id
 )
 
 BeforeExecute
@@ -53,9 +53,9 @@ DECLARE @take Int -- Int32
 SET     @take = 2
 
 SELECT TOP (@take)
-	[t1].[Id],
 	[t1].[ClaimedKeyType],
-	[t1].[ClaimedKeyTypeN]
+	[t1].[ClaimedKeyTypeN],
+	[t1].[Id]
 FROM
 	[Issue1554Table] [t1]
 

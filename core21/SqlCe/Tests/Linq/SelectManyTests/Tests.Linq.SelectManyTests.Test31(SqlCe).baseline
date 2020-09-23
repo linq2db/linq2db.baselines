@@ -3,19 +3,19 @@
 
 SELECT
 	[p_1].[FirstName],
+	[p_1].[Gender],
 	[p_1].[PersonID],
 	[p_1].[LastName],
-	[p_1].[MiddleName],
-	[p_1].[Gender]
+	[p_1].[MiddleName]
 FROM
 	(
 		SELECT
 			[p].[PersonID] + 1 as [ID],
 			[p].[FirstName],
+			[p].[Gender],
 			[p].[PersonID],
 			[p].[LastName],
-			[p].[MiddleName],
-			[p].[Gender]
+			[p].[MiddleName]
 		FROM
 			[Person] [p]
 		WHERE

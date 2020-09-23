@@ -19,8 +19,8 @@ SELECT TOP (@take)
 	) THEN 1 ELSE 0 END,
 	[t3].[Count_1],
 	[t1].[First1],
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[t2].[ChildID],
+	[t2].[ParentID]
 FROM
 	[Parent] [t]
 		OUTER APPLY (
@@ -34,8 +34,8 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (@take_2)
-				[c_3].[ParentID],
-				[c_3].[ChildID]
+				[c_3].[ChildID],
+				[c_3].[ParentID]
 			FROM
 				[Child] [c_3]
 			WHERE

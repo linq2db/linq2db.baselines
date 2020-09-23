@@ -2,8 +2,8 @@
 -- SqlCe
 
 SELECT
-	[x].[ParentID],
-	[x].[ChildID]
+	[x].[ChildID],
+	[x].[ParentID]
 FROM
 	[Child] [x]
 WHERE

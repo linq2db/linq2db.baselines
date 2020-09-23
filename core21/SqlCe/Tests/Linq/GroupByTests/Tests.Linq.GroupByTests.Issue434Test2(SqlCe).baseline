@@ -3,8 +3,8 @@
 
 SELECT
 	[p].[PersonID],
-	[_gjd_ri].[PersonID],
-	[_gjd_ri].[Diagnosis]
+	[_gjd_ri].[Diagnosis],
+	[_gjd_ri].[PersonID]
 FROM
 	[Person] [p]
 		INNER JOIN [Patient] [_gjd_ri] ON [_gjd_ri].[PersonID] = [p].[PersonID]
