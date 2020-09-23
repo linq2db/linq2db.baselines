@@ -6,8 +6,8 @@ DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
 SELECT
-	[t1].[ParentID],
 	[t1].[ChildID],
+	[t1].[ParentID],
 	CASE WHEN EXISTS(
 		SELECT
 			*
@@ -17,14 +17,14 @@ SELECT
 			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ChildID] > -100
 	) THEN 1 ELSE 0 END,
 	[t3].[Count_1],
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[t2].[ChildID],
+	[t2].[ParentID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT TOP (@take)
-				[c_2].[ParentID],
-				[c_2].[ChildID]
+				[c_2].[ChildID],
+				[c_2].[ParentID]
 			FROM
 				[Child] [c_2]
 			WHERE
@@ -35,8 +35,8 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (@take_1)
-				[c_3].[ParentID],
-				[c_3].[ChildID]
+				[c_3].[ChildID],
+				[c_3].[ParentID]
 			FROM
 				[Child] [c_3]
 			WHERE

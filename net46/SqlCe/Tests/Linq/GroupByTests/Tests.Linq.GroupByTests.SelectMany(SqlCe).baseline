@@ -2,8 +2,8 @@
 -- SqlCe
 
 SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
+	[keyParam].[ChildID],
+	[keyParam].[ParentID]
 FROM
 	(
 		SELECT

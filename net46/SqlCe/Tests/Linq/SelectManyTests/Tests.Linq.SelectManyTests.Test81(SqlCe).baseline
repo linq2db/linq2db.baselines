@@ -2,8 +2,8 @@
 -- SqlCe
 
 SELECT
-	[a_Child].[ParentID],
-	[a_Child].[ChildID]
+	[a_Child].[ChildID],
+	[a_Child].[ParentID]
 FROM
 	[Parent] [p]
 		INNER JOIN [GrandChild] [c_1] ON [p].[ParentID] = [c_1].[ParentID]

@@ -34,56 +34,56 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1000
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1000
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1000
 
 INSERT INTO [Child]
 (
-	[ParentID],
-	[ChildID]
+	[ChildID],
+	[ParentID]
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1000
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1001
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1000
 
 INSERT INTO [Child]
 (
-	[ParentID],
-	[ChildID]
+	[ChildID],
+	[ParentID]
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1000
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1002
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1000
 
 INSERT INTO [Child]
 (
-	[ParentID],
-	[ChildID]
+	[ChildID],
+	[ParentID]
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute

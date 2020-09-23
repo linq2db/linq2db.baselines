@@ -2,25 +2,25 @@
 -- SqlCe
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[t1].[ChildID],
+	[t1].[ParentID]
 FROM
 	[Child] [t1]
 ORDER BY
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[t1].[ChildID],
+	[t1].[ParentID]
 OFFSET 3 ROWS
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[t1].[ChildID],
+	[t1].[ParentID]
 FROM
 	[Child] [t1]
 ORDER BY
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[t1].[ChildID],
+	[t1].[ParentID]
 OFFSET 4 ROWS
 

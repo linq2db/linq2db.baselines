@@ -2,26 +2,26 @@
 -- SqlCe
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName NVarChar(15) -- String
 SET     @MiddleName = 'som middle name'
-DECLARE @Gender NChar(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
+	[Gender],
 	[LastName],
-	[MiddleName],
-	[Gender]
+	[MiddleName]
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute
@@ -33,10 +33,10 @@ SET     @FirstName_1 = 'InsertColumnFilter'
 
 SELECT TOP (@take)
 	[x].[FirstName],
+	[x].[Gender],
 	[x].[PersonID],
 	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
+	[x].[MiddleName]
 FROM
 	[Person] [x]
 WHERE

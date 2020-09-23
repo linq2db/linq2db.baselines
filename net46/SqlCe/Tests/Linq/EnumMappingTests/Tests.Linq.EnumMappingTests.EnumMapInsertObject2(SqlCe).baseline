@@ -12,22 +12,22 @@ BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 101
-DECLARE @TestField BigInt -- Int64
-SET     @TestField = 12
 DECLARE @Int32Field Int -- Int32
 SET     @Int32Field = 0
+DECLARE @TestField BigInt -- Int64
+SET     @TestField = 12
 
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
-	[BigIntValue],
-	[IntValue]
+	[IntValue],
+	[BigIntValue]
 )
 VALUES
 (
 	@Id,
-	@TestField,
-	@Int32Field
+	@Int32Field,
+	@TestField
 )
 
 BeforeExecute

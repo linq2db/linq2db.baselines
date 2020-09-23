@@ -3,9 +3,9 @@
 
 CREATE TABLE [Task]
 (
+	[BdaValue]   NVarChar(255)     NULL,
 	[Id]         Int           NOT NULL,
 	[TargetName] NVarChar(255)     NULL,
-	[BdaValue]   NVarChar(255)     NULL,
 
 	CONSTRAINT [PK_Task] PRIMARY KEY ([Id])
 )

@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE [xxPatient23]
 (
-	[PersonID]  Int           NOT NULL,
 	[Diagnosis] NVarChar(255)     NULL,
+	[PersonID]  Int           NOT NULL,
 
 	CONSTRAINT [PK_xxPatient23] PRIMARY KEY ([PersonID])
 )
@@ -30,20 +30,20 @@ WHERE
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @PersonID Int -- Int32
-SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 1
 
 INSERT INTO [xxPatient23]
 (
-	[PersonID],
-	[Diagnosis]
+	[Diagnosis],
+	[PersonID]
 )
 VALUES
 (
-	@PersonID,
-	@Diagnosis
+	@Diagnosis,
+	@PersonID
 )
 
 BeforeExecute
@@ -62,20 +62,20 @@ WHERE
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @PersonID Int -- Int32
-SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 2
 
 INSERT INTO [xxPatient23]
 (
-	[PersonID],
-	[Diagnosis]
+	[Diagnosis],
+	[PersonID]
 )
 VALUES
 (
-	@PersonID,
-	@Diagnosis
+	@Diagnosis,
+	@PersonID
 )
 
 BeforeExecute

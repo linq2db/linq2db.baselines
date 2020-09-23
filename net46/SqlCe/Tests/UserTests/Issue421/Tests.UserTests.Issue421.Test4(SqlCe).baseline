@@ -3,8 +3,8 @@
 
 CREATE TABLE [BlobClass19]
 (
-	[Id]        Int            NOT NULL,
 	[BlobValue] VarBinary(100)     NULL,
+	[Id]        Int            NOT NULL,
 
 	CONSTRAINT [PK_BlobClass19] PRIMARY KEY ([Id])
 )
@@ -14,21 +14,21 @@ BeforeExecute
 
 INSERT INTO [BlobClass19]
 (
-	[Id],
-	[BlobValue]
+	[BlobValue],
+	[Id]
 )
 VALUES
 (
-	1,
-	0x010203
+	0x010203,
+	1
 )
 
 BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
-	[_].[Id],
-	[_].[BlobValue]
+	[_].[BlobValue],
+	[_].[Id]
 FROM
 	[BlobClass19] [_]
 WHERE
@@ -38,8 +38,8 @@ BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
-	[_].[Id],
-	[_].[BlobValue]
+	[_].[BlobValue],
+	[_].[Id]
 FROM
 	[BlobClass19] [_]
 WHERE

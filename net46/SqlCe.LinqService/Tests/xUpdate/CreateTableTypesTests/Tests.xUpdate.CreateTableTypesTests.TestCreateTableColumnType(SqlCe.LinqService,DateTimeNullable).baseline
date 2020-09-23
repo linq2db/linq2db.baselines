@@ -3,52 +3,52 @@
 
 CREATE TABLE [CreateTableTypes]
 (
-	[Id]               Int      NOT NULL,
-	[DateTimeNullable] DateTime     NULL
+	[DateTimeNullable] DateTime     NULL,
+	[Id]               Int      NOT NULL
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 1
 DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
+DECLARE @Id Int -- Int32
+SET     @Id = 1
 
 INSERT INTO [CreateTableTypes]
 (
-	[Id],
-	[DateTimeNullable]
+	[DateTimeNullable],
+	[Id]
 )
 VALUES
 (
-	@Id,
-	@DateTimeNullable
+	@DateTimeNullable,
+	@Id
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 2
 DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = '2018-11-25 01:02:03'
+DECLARE @Id Int -- Int32
+SET     @Id = 2
 
 INSERT INTO [CreateTableTypes]
 (
-	[Id],
-	[DateTimeNullable]
+	[DateTimeNullable],
+	[Id]
 )
 VALUES
 (
-	@Id,
-	@DateTimeNullable
+	@DateTimeNullable,
+	@Id
 )
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[Id],
-	[t1].[DateTimeNullable]
+	[t1].[DateTimeNullable],
+	[t1].[Id]
 FROM
 	[CreateTableTypes] [t1]
 ORDER BY

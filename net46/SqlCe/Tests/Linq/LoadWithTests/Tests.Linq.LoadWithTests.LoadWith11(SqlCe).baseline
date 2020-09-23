@@ -3,8 +3,8 @@
 
 SELECT
 	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[detail].[ChildID],
+	[detail].[ParentID]
 FROM
 	(
 		SELECT DISTINCT
@@ -21,9 +21,9 @@ BeforeExecute
 
 SELECT
 	[lw_Parent].[ParentID],
-	[detail].[ParentID],
 	[detail].[ChildID],
-	[detail].[GrandChildID]
+	[detail].[GrandChildID],
+	[detail].[ParentID]
 FROM
 	(
 		SELECT DISTINCT

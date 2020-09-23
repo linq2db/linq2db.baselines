@@ -5,9 +5,9 @@ CREATE TABLE [Animals3]
 (
 	[AnimalType]    NVarChar(40)  NOT NULL,
 	[AnimalType2]   NVarChar(40)  NOT NULL,
+	[Discriminator] NVarChar(40)  NOT NULL,
 	[Id]            Int           NOT NULL,
 	[Name]          NVarChar(255)     NULL,
-	[Discriminator] NVarChar(40)  NOT NULL,
 	[EyeId]         Int               NULL,
 	[Second]        NVarChar(40)      NULL,
 	[First]         NVarChar(40)      NULL,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @Discriminator NVarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 NVarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType NVarChar(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO [Animals3]
 (
-	[Discriminator],
 	[Name],
 	[Id],
+	[Discriminator],
 	[AnimalType2],
 	[AnimalType],
 	[EyeId],
@@ -85,9 +85,9 @@ INSERT INTO [Animals3]
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -97,12 +97,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @Discriminator NVarChar(10) -- String
-SET     @Discriminator = 'WildAnimal'
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'WildAnimal'
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Discriminator NVarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
 DECLARE @AnimalType2 NVarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType NVarChar(3) -- String
@@ -110,17 +110,17 @@ SET     @AnimalType = 'Big'
 
 INSERT INTO [Animals3]
 (
-	[Discriminator],
 	[Name],
 	[Id],
+	[Discriminator],
 	[AnimalType2],
 	[AnimalType]
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType
 )
@@ -163,12 +163,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @Discriminator NVarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'Cerberus'
 DECLARE @Id Int -- Int32
 SET     @Id = 666
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 NVarChar(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType NVarChar(3) -- String
@@ -182,9 +182,9 @@ SET     @DogName_First = 'Good'
 
 INSERT INTO [Animals3]
 (
-	[Discriminator],
 	[Name],
 	[Id],
+	[Discriminator],
 	[AnimalType2],
 	[AnimalType],
 	[EyeId],
@@ -193,9 +193,9 @@ INSERT INTO [Animals3]
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -209,9 +209,9 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[_].[Discriminator],
 	[_].[Name],
 	[_].[Id],
+	[_].[Discriminator],
 	[_].[AnimalType2],
 	[_].[AnimalType],
 	[_].[EyeId],
@@ -224,10 +224,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @Discriminator NVarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'Cerberus'
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 NVarChar(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType NVarChar(3) -- String
@@ -244,8 +244,8 @@ SET     @Id = 666
 UPDATE
 	[Animals3]
 SET
-	[Animals3].[Discriminator] = @Discriminator,
 	[Animals3].[Name] = @Name,
+	[Animals3].[Discriminator] = @Discriminator,
 	[Animals3].[AnimalType2] = @AnimalType2,
 	[Animals3].[AnimalType] = @AnimalType,
 	[Animals3].[EyeId] = @EyeId,
@@ -260,9 +260,9 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[_].[Discriminator],
 	[_].[Name],
 	[_].[Id],
+	[_].[Discriminator],
 	[_].[AnimalType2],
 	[_].[AnimalType],
 	[_].[EyeId],
@@ -279,10 +279,10 @@ DECLARE @AnimalType NVarChar(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 NVarChar(5) -- String
 SET     @AnimalType2 = 'Small'
-DECLARE @Name NVarChar(8) -- String
-SET     @Name = 'Cerberus'
 DECLARE @Discriminator NVarChar(3) -- String
 SET     @Discriminator = 'Dog'
+DECLARE @Name NVarChar(8) -- String
+SET     @Name = 'Cerberus'
 DECLARE @EyeId Int -- Int32
 SET     @EyeId = 2
 DECLARE @DogName_Second NVarChar(3) -- String
@@ -297,8 +297,8 @@ UPDATE
 SET
 	[Animals3].[AnimalType] = @AnimalType,
 	[Animals3].[AnimalType2] = @AnimalType2,
-	[Animals3].[Name] = @Name,
 	[Animals3].[Discriminator] = @Discriminator,
+	[Animals3].[Name] = @Name,
 	[Animals3].[EyeId] = @EyeId,
 	[Animals3].[Second] = @DogName_Second,
 	[Animals3].[First] = @DogName_First
@@ -311,9 +311,9 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[_].[Discriminator],
 	[_].[Name],
 	[_].[Id],
+	[_].[Discriminator],
 	[_].[AnimalType2],
 	[_].[AnimalType],
 	[_].[EyeId],

@@ -13,9 +13,9 @@ BeforeExecute
 
 CREATE TABLE [TaskStage]
 (
+	[Actual] Bit NOT NULL,
 	[Id]     Int NOT NULL,
 	[TaskId] Int NOT NULL,
-	[Actual] Bit NOT NULL,
 
 	CONSTRAINT [PK_TaskStage] PRIMARY KEY ([Id])
 )
@@ -50,24 +50,24 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @Actual Bit -- Boolean
+SET     @Actual = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @TaskId Int -- Int32
 SET     @TaskId = 1
-DECLARE @Actual Bit -- Boolean
-SET     @Actual = 1
 
 INSERT INTO [TaskStage]
 (
+	[Actual],
 	[Id],
-	[TaskId],
-	[Actual]
+	[TaskId]
 )
 VALUES
 (
+	@Actual,
 	@Id,
-	@TaskId,
-	@Actual
+	@TaskId
 )
 
 BeforeExecute

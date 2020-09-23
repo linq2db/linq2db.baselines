@@ -4,8 +4,8 @@
 SELECT
 	[key_data_result].[ParentID],
 	[key_data_result].[Value1],
-	[_gjd_ch].[ParentID],
-	[_gjd_ch].[ChildID]
+	[_gjd_ch].[ChildID],
+	[_gjd_ch].[ParentID]
 FROM
 	(
 		SELECT DISTINCT

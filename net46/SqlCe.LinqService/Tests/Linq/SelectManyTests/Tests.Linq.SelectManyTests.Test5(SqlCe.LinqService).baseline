@@ -2,8 +2,8 @@
 -- SqlCe
 
 SELECT
-	[a_Child].[ParentID],
-	[a_Child].[ChildID]
+	[a_Child].[ChildID],
+	[a_Child].[ParentID]
 FROM
 	[Parent] [p]
 		CROSS JOIN [GrandChild] [g_1]

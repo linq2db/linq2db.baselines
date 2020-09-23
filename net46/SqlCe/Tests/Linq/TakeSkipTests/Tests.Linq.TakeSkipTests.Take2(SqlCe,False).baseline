@@ -4,8 +4,8 @@ DECLARE @n Int -- Int32
 SET     @n = 1
 
 SELECT TOP (@n)
-	[ch].[ParentID],
-	[ch].[ChildID]
+	[ch].[ChildID],
+	[ch].[ParentID]
 FROM
 	[Child] [ch]
 

@@ -2,14 +2,14 @@
 -- SqlCe
 
 SELECT
-	[ch].[ParentID],
-	[ch].[ChildID]
+	[ch].[ChildID],
+	[ch].[ParentID]
 FROM
 	[Child] [ch]
 WHERE
 	[ch].[ChildID] >= 0 AND [ch].[ChildID] <= 100
 ORDER BY
-	[ch].[ParentID],
-	[ch].[ChildID]
+	[ch].[ChildID],
+	[ch].[ParentID]
 OFFSET 3 ROWS
 

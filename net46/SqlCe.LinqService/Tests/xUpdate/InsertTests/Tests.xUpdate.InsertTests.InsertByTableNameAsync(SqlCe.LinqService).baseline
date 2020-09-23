@@ -4,10 +4,10 @@
 CREATE TABLE [xxPerson]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,
+	[Gender]     NChar(1)       NOT NULL,
 	[PersonID]   Int            NOT NULL IDENTITY,
 	[LastName]   NVarChar(255)  NOT NULL,
 	[MiddleName] NVarChar(255)      NULL,
-	[Gender]     NChar(1)       NOT NULL,
 
 	CONSTRAINT [PK_xxPerson] PRIMARY KEY ([PersonID])
 )
@@ -16,52 +16,52 @@ BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName NVarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO [xxPerson]
 (
 	[FirstName],
+	[Gender],
 	[LastName],
-	[MiddleName],
-	[Gender]
+	[MiddleName]
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName NVarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO [xxPerson]
 (
 	[FirstName],
+	[Gender],
 	[LastName],
-	[MiddleName],
-	[Gender]
+	[MiddleName]
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute
@@ -73,26 +73,26 @@ BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName NVarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO [xxPerson]
 (
 	[FirstName],
+	[Gender],
 	[LastName],
-	[MiddleName],
-	[Gender]
+	[MiddleName]
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute

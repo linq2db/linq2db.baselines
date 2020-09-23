@@ -55,8 +55,8 @@ BeforeExecute
 
 CREATE TABLE [Tag]
 (
-	[Id]     Int           NOT NULL,
 	[FactId] Int           NOT NULL,
+	[Id]     Int           NOT NULL,
 	[Name]   NVarChar(255) NOT NULL,
 
 	CONSTRAINT [PK_Tag] PRIMARY KEY ([Id])
@@ -64,67 +64,67 @@ CREATE TABLE [Tag]
 
 BeforeExecute
 -- SqlCe
+DECLARE @FactId Int -- Int32
+SET     @FactId = 3
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @FactId Int -- Int32
-SET     @FactId = 3
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Tag3'
 
 INSERT INTO [Tag]
 (
-	[Id],
 	[FactId],
+	[Id],
 	[Name]
 )
 VALUES
 (
-	@Id,
 	@FactId,
+	@Id,
 	@Name
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @FactId Int -- Int32
+SET     @FactId = 3
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @FactId Int -- Int32
-SET     @FactId = 3
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Tag3'
 
 INSERT INTO [Tag]
 (
-	[Id],
 	[FactId],
+	[Id],
 	[Name]
 )
 VALUES
 (
-	@Id,
 	@FactId,
+	@Id,
 	@Name
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 3
 DECLARE @FactId Int -- Int32
 SET     @FactId = 4
+DECLARE @Id Int -- Int32
+SET     @Id = 3
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Tag4'
 
 INSERT INTO [Tag]
 (
-	[Id],
 	[FactId],
+	[Id],
 	[Name]
 )
 VALUES
 (
-	@Id,
 	@FactId,
+	@Id,
 	@Name
 )
 
@@ -133,8 +133,8 @@ BeforeExecute
 
 SELECT
 	[fact_1].[Id],
-	[tag_1].[Id],
 	[tag_1].[FactId],
+	[tag_1].[Id],
 	[tag_1].[Name]
 FROM
 	[Fact] [fact_1]

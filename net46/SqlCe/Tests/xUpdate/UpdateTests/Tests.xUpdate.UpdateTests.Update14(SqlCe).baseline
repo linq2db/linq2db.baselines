@@ -2,26 +2,26 @@
 -- SqlCe
 DECLARE @FirstName NVarChar(8) -- String
 SET     @FirstName = 'Update14'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
+	[Gender],
 	[LastName],
-	[MiddleName],
-	[Gender]
+	[MiddleName]
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute

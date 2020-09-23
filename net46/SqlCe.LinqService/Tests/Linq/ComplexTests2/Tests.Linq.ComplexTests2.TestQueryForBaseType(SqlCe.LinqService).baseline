@@ -5,9 +5,9 @@ CREATE TABLE [Animals14]
 (
 	[AnimalType]    NVarChar(40)  NOT NULL,
 	[AnimalType2]   NVarChar(40)  NOT NULL,
+	[Discriminator] NVarChar(40)  NOT NULL,
 	[Id]            Int           NOT NULL,
 	[Name]          NVarChar(255)     NULL,
-	[Discriminator] NVarChar(40)  NOT NULL,
 	[EyeId]         Int               NULL,
 	[Second]        NVarChar(40)      NULL,
 	[First]         NVarChar(40)      NULL,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @Discriminator NVarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Discriminator NVarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 NVarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType NVarChar(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO [Animals14]
 (
-	[Discriminator],
 	[Name],
 	[Id],
+	[Discriminator],
 	[AnimalType2],
 	[AnimalType],
 	[EyeId],
@@ -85,9 +85,9 @@ INSERT INTO [Animals14]
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -97,12 +97,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @Discriminator NVarChar(10) -- String
-SET     @Discriminator = 'WildAnimal'
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'WildAnimal'
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Discriminator NVarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
 DECLARE @AnimalType2 NVarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType NVarChar(3) -- String
@@ -110,17 +110,17 @@ SET     @AnimalType = 'Big'
 
 INSERT INTO [Animals14]
 (
-	[Discriminator],
 	[Name],
 	[Id],
+	[Discriminator],
 	[AnimalType2],
 	[AnimalType]
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType
 )
@@ -167,9 +167,9 @@ BeforeExecute
 SELECT
 	[t1].[AnimalType],
 	[t1].[AnimalType2],
+	[t1].[Discriminator],
 	[t1].[Id],
 	[t1].[Name],
-	[t1].[Discriminator],
 	[t1].[EyeId],
 	[t1].[Second],
 	[t1].[First]

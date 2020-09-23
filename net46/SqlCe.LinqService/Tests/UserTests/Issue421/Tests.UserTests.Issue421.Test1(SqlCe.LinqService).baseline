@@ -3,8 +3,8 @@
 
 CREATE TABLE [BlobClass]
 (
-	[Id]        Int            NOT NULL,
 	[BlobValue] VarBinary(100)     NULL,
+	[Id]        Int            NOT NULL,
 
 	CONSTRAINT [PK_BlobClass] PRIMARY KEY ([Id])
 )
@@ -29,8 +29,8 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[_].[Id],
-	[_].[BlobValue]
+	[_].[BlobValue],
+	[_].[Id]
 FROM
 	[BlobClass] [_]
 WHERE
@@ -54,8 +54,8 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[_].[Id],
-	[_].[BlobValue]
+	[_].[BlobValue],
+	[_].[Id]
 FROM
 	[BlobClass] [_]
 WHERE

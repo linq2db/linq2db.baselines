@@ -2,11 +2,11 @@
 -- SqlCe
 
 SELECT
-	[t2].[PersonID],
 	[t2].[FirstName],
+	[t2].[Gender],
 	[t2].[LastName],
 	[t2].[MiddleName],
-	[t2].[Gender],
+	[t2].[PersonID],
 	[t2].[LastName] + ', ' + [t2].[FirstName],
 	[t1].[cnt]
 FROM
@@ -25,11 +25,11 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[i].[PersonID],
 	[i].[FirstName],
+	[i].[Gender],
 	[i].[LastName],
 	[i].[MiddleName],
-	[i].[Gender],
+	[i].[PersonID],
 	[i].[LastName] + ', ' + [i].[FirstName],
 	[t1].[cnt]
 FROM

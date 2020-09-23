@@ -27,8 +27,8 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[t1].[ChildID],
+	[t1].[ParentID]
 FROM
 	[Child] [t1]
 
@@ -36,9 +36,9 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[ParentID],
 	[t1].[ChildID],
-	[t1].[GrandChildID]
+	[t1].[GrandChildID],
+	[t1].[ParentID]
 FROM
 	[GrandChild] [t1]
 
@@ -46,12 +46,12 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
+	[t1].[BinaryValue],
+	[t1].[BoolValue],
+	[t1].[DateTimeValue],
+	[t1].[GuidValue],
 	[t1].[ID],
 	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[BinaryValue],
 	[t1].[SmallIntValue],
 	[t1].[StringValue]
 FROM
@@ -61,8 +61,8 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[c_1].[ParentID],
-	[c_1].[ChildID]
+	[c_1].[ChildID],
+	[c_1].[ParentID]
 FROM
 	[Child] [c_1]
 		INNER JOIN [Parent] [r] ON [c_1].[ParentID] = [r].[ParentID]
@@ -70,8 +70,8 @@ WHERE
 	[r].[ParentID] > 4
 UNION
 SELECT
-	[c_2].[ParentID],
-	[c_2].[ChildID]
+	[c_2].[ChildID],
+	[c_2].[ParentID]
 FROM
 	[Child] [c_2]
 		INNER JOIN [Parent] [r_1] ON [c_2].[ParentID] = [r_1].[ParentID]

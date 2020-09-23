@@ -6,16 +6,16 @@ DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
 SELECT
-	[t1].[ParentID],
 	[t1].[ChildID],
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[t1].[ParentID],
+	[t2].[ChildID],
+	[t2].[ParentID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT TOP (@take)
-				[c_1].[ParentID],
-				[c_1].[ChildID]
+				[c_1].[ChildID],
+				[c_1].[ParentID]
 			FROM
 				[Child] [c_1]
 			WHERE
@@ -25,8 +25,8 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (@take_1)
-				[c_2].[ParentID],
-				[c_2].[ChildID]
+				[c_2].[ChildID],
+				[c_2].[ParentID]
 			FROM
 				[Child] [c_2]
 			WHERE
