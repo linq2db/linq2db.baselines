@@ -97,8 +97,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @Discriminator NVarChar(40) -- String
-SET     @Discriminator = N'WildAnimal'
 DECLARE @AnimalType NVarChar(40) -- String
 SET     @AnimalType = N'Big'
 DECLARE @AnimalType2 NVarChar(40) -- String
@@ -107,22 +105,24 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'WildAnimal'
+DECLARE @Discriminator NVarChar(40) -- String
+SET     @Discriminator = N'WildAnimal'
 
 INSERT INTO [Animals10]
 (
-	[Discriminator],
 	[AnimalType],
 	[AnimalType2],
 	[Id],
-	[Name]
+	[Name],
+	[Discriminator]
 )
 VALUES
 (
-	@Discriminator,
 	@AnimalType,
 	@AnimalType2,
 	@Id,
-	@Name
+	@Name,
+	@Discriminator
 )
 
 BeforeExecute
