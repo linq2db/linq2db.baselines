@@ -2,8 +2,8 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
+	`t1`.`ChildID`,
+	`t1`.`ParentID`
 FROM
 	`Child` `t1`
 
@@ -11,8 +11,8 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
+	`t1`.`ChildID`,
+	`t1`.`ParentID`
 FROM
 	`Child` `t1`
 
@@ -20,8 +20,8 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
+	`t1`.`ChildID`,
+	`t1`.`ParentID`
 FROM
 	`Child` `t1`
 
@@ -29,8 +29,8 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
+	`t1`.`ChildID`,
+	`t1`.`ParentID`
 FROM
 	`Child` `t1`
 

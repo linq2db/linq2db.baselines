@@ -6,8 +6,8 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`c_1`.`ParentID`,
-	`c_1`.`ChildID`
+	`c_1`.`ChildID`,
+	`c_1`.`ParentID`
 FROM
 	`Child` `c_1`
 WHERE
@@ -22,8 +22,8 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`c_1`.`ParentID`,
-	`c_1`.`ChildID`
+	`c_1`.`ChildID`,
+	`c_1`.`ParentID`
 FROM
 	`Child` `c_1`
 WHERE

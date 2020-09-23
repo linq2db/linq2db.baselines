@@ -5,8 +5,8 @@ SET     @p1 = 5000
 
 SELECT
 	`key_data_result`.`ParentID`,
-	`_c`.`ParentID`,
-	`_c`.`ChildID`
+	`_c`.`ChildID`,
+	`_c`.`ParentID`
 FROM
 	(
 		SELECT DISTINCT

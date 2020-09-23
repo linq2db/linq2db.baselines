@@ -13,8 +13,8 @@ BeforeExecute
 
 CREATE TABLE `Relationship1711`
 (
-	`EntityId` BIGINT  NOT NULL,
-	`Deleted`  BOOLEAN NOT NULL
+	`Deleted`  BOOLEAN NOT NULL,
+	`EntityId` BIGINT  NOT NULL
 )
 
 BeforeExecute

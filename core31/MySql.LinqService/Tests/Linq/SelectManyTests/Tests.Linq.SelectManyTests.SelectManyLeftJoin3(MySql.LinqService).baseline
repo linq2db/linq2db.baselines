@@ -2,8 +2,8 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
+	`t1`.`ChildID`,
+	`t1`.`ParentID`
 FROM
 	`Parent` `p`
 		LEFT JOIN `Child` `t1` ON 1=1

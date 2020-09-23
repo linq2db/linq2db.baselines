@@ -14,8 +14,8 @@ BeforeExecute
 
 CREATE TABLE `Books`
 (
-	`Id`       INT          NOT NULL,
 	`AuthorId` INT          NOT NULL,
+	`Id`       INT          NOT NULL,
 	`Title`    VARCHAR(100) NOT NULL,
 
 	CONSTRAINT `PK_Books` PRIMARY KEY CLUSTERED (`Id`)

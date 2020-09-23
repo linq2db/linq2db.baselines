@@ -4,13 +4,13 @@
 SET GLOBAL local_infile=ON
 
 BeforeExecute
-INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType
+INSERT BULK `AllTypesNoYear`(bigintDataType, binaryDataType, bitDataType, blobDataType, charDataType, dateDataType, datetimeDataType, decimalDataType, doubleDataType, enumDataType, floatDataType, intDataType, intUnsignedDataType, mediumintDataType, numericDataType, setDataType, smallintDataType, textDataType, timeDataType, timestampDataType, tinyintDataType, varbinaryDataType, varcharDataType
 
 BeforeExecute
-INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType
+INSERT BULK `AllTypesNoYear`(bigintDataType, binaryDataType, bitDataType, blobDataType, charDataType, dateDataType, datetimeDataType, decimalDataType, doubleDataType, enumDataType, floatDataType, intDataType, intUnsignedDataType, mediumintDataType, numericDataType, setDataType, smallintDataType, textDataType, timeDataType, timestampDataType, tinyintDataType, varbinaryDataType, varcharDataType
 
 BeforeExecute
-INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType
+INSERT BULK `AllTypesNoYear`(bigintDataType, binaryDataType, bitDataType, blobDataType, charDataType, dateDataType, datetimeDataType, decimalDataType, doubleDataType, enumDataType, floatDataType, intDataType, intUnsignedDataType, mediumintDataType, numericDataType, setDataType, smallintDataType, textDataType, timeDataType, timestampDataType, tinyintDataType, varbinaryDataType, varcharDataType
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -30,28 +30,28 @@ SET     @take = 10
 SELECT
 	`_`.`ID`,
 	`_`.`bigintDataType`,
-	`_`.`smallintDataType`,
-	`_`.`tinyintDataType`,
-	`_`.`mediumintDataType`,
-	`_`.`intDataType`,
-	`_`.`numericDataType`,
-	`_`.`decimalDataType`,
-	`_`.`doubleDataType`,
-	`_`.`floatDataType`,
+	`_`.`binaryDataType`,
+	`_`.`bitDataType`,
+	`_`.`blobDataType`,
+	`_`.`charDataType`,
 	`_`.`dateDataType`,
 	`_`.`datetimeDataType`,
-	`_`.`timestampDataType`,
-	`_`.`timeDataType`,
-	`_`.`charDataType`,
-	`_`.`varcharDataType`,
-	`_`.`textDataType`,
-	`_`.`binaryDataType`,
-	`_`.`varbinaryDataType`,
-	`_`.`blobDataType`,
-	`_`.`bitDataType`,
+	`_`.`decimalDataType`,
+	`_`.`doubleDataType`,
 	`_`.`enumDataType`,
+	`_`.`floatDataType`,
+	`_`.`intDataType`,
+	`_`.`intUnsignedDataType`,
+	`_`.`mediumintDataType`,
+	`_`.`numericDataType`,
 	`_`.`setDataType`,
-	`_`.`intUnsignedDataType`
+	`_`.`smallintDataType`,
+	`_`.`textDataType`,
+	`_`.`timeDataType`,
+	`_`.`timestampDataType`,
+	`_`.`tinyintDataType`,
+	`_`.`varbinaryDataType`,
+	`_`.`varcharDataType`
 FROM
 	`AllTypesNoYear` `_`
 WHERE

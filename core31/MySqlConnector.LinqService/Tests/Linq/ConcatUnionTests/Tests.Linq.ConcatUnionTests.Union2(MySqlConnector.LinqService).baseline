@@ -2,8 +2,8 @@
 -- MySqlConnector MySql
 
 SELECT
-	`child_1`.`ParentID`,
-	`child_1`.`ChildID`
+	`child_1`.`ChildID`,
+	`child_1`.`ParentID`
 FROM
 	(
 		SELECT

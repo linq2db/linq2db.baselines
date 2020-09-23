@@ -5,9 +5,9 @@ CREATE TABLE `Animals36`
 (
 	`AnimalType`    VARCHAR(40)  NOT NULL,
 	`AnimalType2`   VARCHAR(40)  NOT NULL,
+	`Discriminator` VARCHAR(40)  NOT NULL,
 	`Id`            INT          NOT NULL,
 	`Name`          VARCHAR(255)     NULL,
-	`Discriminator` VARCHAR(40)  NOT NULL,
 	`EyeId`         INT              NULL,
 	`Second`        VARCHAR(40)      NULL,
 	`First`         VARCHAR(40)      NULL,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Int32
 SET     @Id = 1
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO `Animals36`
 (
-	`Discriminator`,
 	`Name`,
 	`Id`,
+	`Discriminator`,
 	`AnimalType2`,
 	`AnimalType`,
 	`EyeId`,
@@ -85,9 +85,9 @@ INSERT INTO `Animals36`
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @AnimalType VarChar(3) -- String
-SET     @AnimalType = 'Big'
-DECLARE @AnimalType2 VarChar(3) -- String
-SET     @AnimalType2 = 'Big'
-DECLARE @Id Int32
-SET     @Id = 2
 DECLARE @Name VarChar(10) -- String
 SET     @Name = 'WildAnimal'
+DECLARE @Id Int32
+SET     @Id = 2
 DECLARE @Discriminator VarChar(10) -- String
 SET     @Discriminator = 'WildAnimal'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
 
 INSERT INTO `Animals36`
 (
-	`AnimalType`,
-	`AnimalType2`,
-	`Id`,
 	`Name`,
-	`Discriminator`
+	`Id`,
+	`Discriminator`,
+	`AnimalType2`,
+	`AnimalType`
 )
 VALUES
 (
-	@AnimalType,
-	@AnimalType2,
-	@Id,
 	@Name,
-	@Discriminator
+	@Id,
+	@Discriminator,
+	@AnimalType2,
+	@AnimalType
 )
 
 BeforeExecute
@@ -167,9 +167,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`t1`.`Discriminator`,
 	`t1`.`Name`,
 	`t1`.`Id`,
+	`t1`.`Discriminator`,
 	`t1`.`AnimalType2`,
 	`t1`.`AnimalType`,
 	`t1`.`EyeId`,
@@ -183,10 +183,10 @@ LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'FirstDog'
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
@@ -203,8 +203,8 @@ SET     @Id = 1
 UPDATE
 	`Animals36` `t1`
 SET
-	`t1`.`Discriminator` = @Discriminator,
 	`t1`.`Name` = @Name,
+	`t1`.`Discriminator` = @Discriminator,
 	`t1`.`AnimalType2` = @AnimalType2,
 	`t1`.`AnimalType` = @AnimalType,
 	`t1`.`EyeId` = @EyeId,
@@ -219,10 +219,10 @@ DECLARE @AnimalType VarChar(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
-DECLARE @Name VarChar(8) -- String
-SET     @Name = 'FirstDog'
 DECLARE @Discriminator VarChar(3) -- String
 SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
 DECLARE @EyeId Int32
 SET     @EyeId = 1
 DECLARE @DogName_Second VarChar(1) -- String
@@ -237,8 +237,8 @@ UPDATE
 SET
 	`t1`.`AnimalType` = @AnimalType,
 	`t1`.`AnimalType2` = @AnimalType2,
-	`t1`.`Name` = @Name,
 	`t1`.`Discriminator` = @Discriminator,
+	`t1`.`Name` = @Name,
 	`t1`.`EyeId` = @EyeId,
 	`t1`.`Second` = @DogName_Second,
 	`t1`.`First` = @DogName_First
@@ -247,12 +247,12 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar -- String
 SET     @Name = NULL
 DECLARE @Id Int32
 SET     @Id = 0
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType VarChar(5) -- String
@@ -266,9 +266,9 @@ SET     @DogName_First = NULL
 
 INSERT INTO `Animals36`
 (
-	`Discriminator`,
 	`Name`,
 	`Id`,
+	`Discriminator`,
 	`AnimalType2`,
 	`AnimalType`,
 	`EyeId`,
@@ -277,9 +277,9 @@ INSERT INTO `Animals36`
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,

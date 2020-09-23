@@ -2,9 +2,9 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`x`.`ParentID`,
 	`x`.`ChildID`,
-	`x`.`GrandChildID`
+	`x`.`GrandChildID`,
+	`x`.`ParentID`
 FROM
 	`GrandChild` `x`
 WHERE
@@ -14,9 +14,9 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`x`.`ParentID`,
 	`x`.`ChildID`,
-	`x`.`GrandChildID`
+	`x`.`GrandChildID`,
+	`x`.`ParentID`
 FROM
 	`GrandChild` `x`
 WHERE

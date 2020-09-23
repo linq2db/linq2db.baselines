@@ -1,50 +1,50 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @ID Int32
-SET     @ID = 100500
-DECLARE @MoneyValue Decimal(4,0)
-SET     @MoneyValue = 3000
+DECLARE @BigIntValue Int64
+SET     @BigIntValue = NULL
+DECLARE @BoolValue UByte -- Boolean
+SET     @BoolValue = NULL
 DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = NULL
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue UByte -- Boolean
-SET     @BoolValue = NULL
 DECLARE @GuidValue Guid
 SET     @GuidValue = NULL
-DECLARE @SmallIntValue Int16
-SET     @SmallIntValue = NULL
+DECLARE @ID Int32
+SET     @ID = 100500
 DECLARE @IntValue Int32
 SET     @IntValue = 60
-DECLARE @BigIntValue Int64
-SET     @BigIntValue = NULL
+DECLARE @MoneyValue Decimal(4,0)
+SET     @MoneyValue = 3000
+DECLARE @SmallIntValue Int16
+SET     @SmallIntValue = NULL
 DECLARE @StringValue VarChar -- String
 SET     @StringValue = NULL
 
 INSERT INTO `LinqDataTypes`
 (
-	`ID`,
-	`MoneyValue`,
+	`BigIntValue`,
+	`BoolValue`,
 	`DateTimeValue`,
 	`DateTimeValue2`,
-	`BoolValue`,
 	`GuidValue`,
-	`SmallIntValue`,
+	`ID`,
 	`IntValue`,
-	`BigIntValue`,
+	`MoneyValue`,
+	`SmallIntValue`,
 	`StringValue`
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
+	@BigIntValue,
+	@BoolValue,
 	@DateTimeValue,
 	@DateTimeValue2,
-	@BoolValue,
 	@GuidValue,
-	@SmallIntValue,
+	@ID,
 	@IntValue,
-	@BigIntValue,
+	@MoneyValue,
+	@SmallIntValue,
 	@StringValue
 )
 

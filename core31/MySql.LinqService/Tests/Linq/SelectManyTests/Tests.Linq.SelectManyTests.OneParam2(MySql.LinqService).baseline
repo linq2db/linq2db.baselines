@@ -2,8 +2,8 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`c_1`.`ParentID`,
-	`c_1`.`ChildID`
+	`c_1`.`ChildID`,
+	`c_1`.`ParentID`
 FROM
 	`Parent` `t`
 		INNER JOIN `Child` `c_1` ON `t`.`ParentID` = `c_1`.`ParentID`

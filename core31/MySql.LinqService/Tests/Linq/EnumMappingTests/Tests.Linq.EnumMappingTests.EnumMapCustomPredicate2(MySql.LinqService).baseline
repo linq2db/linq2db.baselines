@@ -28,8 +28,8 @@ BeforeExecute
 
 SELECT
 	`entity`.`ID`,
-	`entity`.`BigIntValue`,
-	`entity`.`IntValue`
+	`entity`.`IntValue`,
+	`entity`.`BigIntValue`
 FROM
 	`LinqDataTypes` `entity`
 WHERE

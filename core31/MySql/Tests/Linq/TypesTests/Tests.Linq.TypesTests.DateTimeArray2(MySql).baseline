@@ -2,15 +2,15 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t`.`ID`,
-	`t`.`MoneyValue`,
+	`t`.`BigIntValue`,
+	`t`.`BoolValue`,
 	`t`.`DateTimeValue`,
 	`t`.`DateTimeValue2`,
-	`t`.`BoolValue`,
 	`t`.`GuidValue`,
-	`t`.`SmallIntValue`,
+	`t`.`ID`,
 	`t`.`IntValue`,
-	`t`.`BigIntValue`,
+	`t`.`MoneyValue`,
+	`t`.`SmallIntValue`,
 	`t`.`StringValue`
 FROM
 	`LinqDataTypes` `t`

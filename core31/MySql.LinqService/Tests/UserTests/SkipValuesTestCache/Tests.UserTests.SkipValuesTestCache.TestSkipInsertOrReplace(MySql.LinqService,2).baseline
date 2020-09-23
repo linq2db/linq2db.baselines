@@ -3,37 +3,37 @@
 
 CREATE TABLE `PR_1598_Insert_Table_Cache`
 (
+	`Age`  INT              NULL,
 	`Id`   INT          NOT NULL,
 	`Name` VARCHAR(255)     NULL,
-	`Age`  INT              NULL,
 
 	CONSTRAINT `PK_PR_1598_Insert_Table_Cache` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @Age Int32
+SET     @Age = 2
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age Int32
-SET     @Age = 2
 
 INSERT INTO `PR_1598_Insert_Table_Cache`
 (
+	`Age`,
 	`Id`,
-	`Name`,
-	`Age`
+	`Name`
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 ON DUPLICATE KEY UPDATE
-	`Name` = @Name,
-	`Age` = @Age
+	`Age` = @Age,
+	`Name` = @Name
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -41,9 +41,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_Insert_Table_Cache` `t`
 WHERE
@@ -52,28 +52,28 @@ LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @Age Int32
+SET     @Age = 2
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age Int32
-SET     @Age = 2
 
 INSERT INTO `PR_1598_Insert_Table_Cache`
 (
+	`Age`,
 	`Id`,
-	`Name`,
-	`Age`
+	`Name`
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 ON DUPLICATE KEY UPDATE
-	`Name` = @Name,
-	`Age` = @Age
+	`Age` = @Age,
+	`Name` = @Name
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -81,9 +81,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_Insert_Table_Cache` `t`
 WHERE

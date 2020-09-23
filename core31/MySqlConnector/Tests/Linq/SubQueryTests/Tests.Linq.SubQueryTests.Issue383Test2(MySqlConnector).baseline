@@ -4,10 +4,10 @@
 CREATE TABLE `Contract_Distributor_Agent`
 (
 	`Agent_Id`                      INT          NOT NULL,
-	`Distributor_Id`                INT          NOT NULL,
 	`Contract_Id`                   INT          NOT NULL,
-	`Distributor_Type_Code`         VARCHAR(255)     NULL,
 	`Distributor_Agent_Type_Prefix` VARCHAR(255)     NULL,
+	`Distributor_Id`                INT          NOT NULL,
+	`Distributor_Type_Code`         VARCHAR(255)     NULL,
 	`Represents_Type_Prefix`        VARCHAR(255)     NULL
 )
 
@@ -17,14 +17,14 @@ BeforeExecute
 INSERT INTO `Contract_Distributor_Agent`
 (
 	`Agent_Id`,
-	`Distributor_Id`,
 	`Contract_Id`,
-	`Distributor_Type_Code`,
 	`Distributor_Agent_Type_Prefix`,
+	`Distributor_Id`,
+	`Distributor_Type_Code`,
 	`Represents_Type_Prefix`
 )
 VALUES
-(1,1,198827882,'CC','OFFICE','REPRESENTS')
+(1,198827882,'OFFICE',1,'CC','REPRESENTS')
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -54,8 +54,8 @@ BeforeExecute
 CREATE TABLE `Distributor`
 (
 	`Distributor_Id`   INT          NOT NULL,
-	`Type_Code`        VARCHAR(255)     NULL,
-	`Distributor_Name` VARCHAR(255)     NULL
+	`Distributor_Name` VARCHAR(255)     NULL,
+	`Type_Code`        VARCHAR(255)     NULL
 )
 
 BeforeExecute
@@ -64,19 +64,19 @@ BeforeExecute
 INSERT INTO `Distributor`
 (
 	`Distributor_Id`,
-	`Type_Code`,
-	`Distributor_Name`
+	`Distributor_Name`,
+	`Type_Code`
 )
 VALUES
-(1,'RE','x')
+(1,'x','RE')
 
 BeforeExecute
 -- MySqlConnector MySql
 
 CREATE TABLE `Distributor_Commercial_Propert`
 (
-	`Distributor_Id`         INT          NOT NULL,
 	`Commercial_Property_Id` INT          NOT NULL,
+	`Distributor_Id`         INT          NOT NULL,
 	`Distributor_Type_Code`  VARCHAR(255)     NULL
 )
 
@@ -85,8 +85,8 @@ BeforeExecute
 
 INSERT INTO `Distributor_Commercial_Propert`
 (
-	`Distributor_Id`,
 	`Commercial_Property_Id`,
+	`Distributor_Id`,
 	`Distributor_Type_Code`
 )
 VALUES
@@ -97,13 +97,13 @@ BeforeExecute
 
 CREATE TABLE `Commercial_Property`
 (
+	`City_Code`              VARCHAR(255)     NULL,
 	`Commercial_Property_Id` INT          NOT NULL,
-	`Street_Number`          VARCHAR(255)     NULL,
-	`Street_Name`            VARCHAR(255)     NULL,
 	`State`                  VARCHAR(255)     NULL,
+	`Street_Name`            VARCHAR(255)     NULL,
+	`Street_Number`          VARCHAR(255)     NULL,
 	`Zip_Code`               VARCHAR(255)     NULL,
-	`Zip_Plus_4`             VARCHAR(255)     NULL,
-	`City_Code`              VARCHAR(255)     NULL
+	`Zip_Plus_4`             VARCHAR(255)     NULL
 )
 
 BeforeExecute
@@ -111,16 +111,16 @@ BeforeExecute
 
 INSERT INTO `Commercial_Property`
 (
+	`City_Code`,
 	`Commercial_Property_Id`,
-	`Street_Number`,
-	`Street_Name`,
 	`State`,
+	`Street_Name`,
+	`Street_Number`,
 	`Zip_Code`,
-	`Zip_Plus_4`,
-	`City_Code`
+	`Zip_Plus_4`
 )
 VALUES
-(1,'x','x','x','x','x','x')
+('x',1,'x','x','x','x','x')
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -128,8 +128,8 @@ BeforeExecute
 CREATE TABLE `Contract_Dates`
 (
 	`Contract_Id`    INT          NOT NULL,
-	`Type_Code`      VARCHAR(255)     NULL,
-	`Effective_Date` VARCHAR(255)     NULL
+	`Effective_Date` VARCHAR(255)     NULL,
+	`Type_Code`      VARCHAR(255)     NULL
 )
 
 BeforeExecute
@@ -138,11 +138,11 @@ BeforeExecute
 INSERT INTO `Contract_Dates`
 (
 	`Contract_Id`,
-	`Type_Code`,
-	`Effective_Date`
+	`Effective_Date`,
+	`Type_Code`
 )
 VALUES
-(198827882,'ESTCOE','x')
+(198827882,'x','ESTCOE')
 
 BeforeExecute
 -- MySqlConnector MySql

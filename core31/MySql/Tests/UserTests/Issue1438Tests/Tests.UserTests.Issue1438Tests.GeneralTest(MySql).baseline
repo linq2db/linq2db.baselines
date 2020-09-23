@@ -3,8 +3,8 @@
 
 CREATE TABLE `Issue1438`
 (
-	`Id`  INT     AUTO_INCREMENT NOT NULL,
 	`Has` BOOLEAN                NOT NULL,
+	`Id`  INT     AUTO_INCREMENT NOT NULL,
 
 	CONSTRAINT `PK_Issue1438` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -36,8 +36,8 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	`_`.`Id`,
-	`_`.`Has`
+	`_`.`Has`,
+	`_`.`Id`
 FROM
 	`Issue1438` `_`
 WHERE

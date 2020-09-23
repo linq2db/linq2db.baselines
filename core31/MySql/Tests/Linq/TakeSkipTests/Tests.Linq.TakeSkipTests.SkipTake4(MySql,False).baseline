@@ -2,8 +2,8 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t2`.`ParentID`,
-	`t2`.`ChildID`
+	`t2`.`ChildID`,
+	`t2`.`ParentID`
 FROM
 	(
 		SELECT

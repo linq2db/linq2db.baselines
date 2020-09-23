@@ -2,16 +2,16 @@
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`ParentID`,
 	`t1`.`ChildID`,
-	`t1`.`GrandChildID`
+	`t1`.`GrandChildID`,
+	`t1`.`ParentID`
 FROM
 	`Parent` `cp_1`
 		INNER JOIN (
 			SELECT
-				`c_1`.`ParentID`,
 				`c_1`.`ChildID`,
 				`c_1`.`GrandChildID`,
+				`c_1`.`ParentID`,
 				`cp`.`ParentID` as `ParentID_1`
 			FROM
 				`Child` `cp`,

@@ -3,8 +3,8 @@
 
 CREATE TABLE `BlobClass40`
 (
-	`Id`        INT            NOT NULL,
 	`BlobValue` VARBINARY(100)     NULL,
+	`Id`        INT            NOT NULL,
 
 	CONSTRAINT `PK_BlobClass40` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -14,21 +14,21 @@ BeforeExecute
 
 INSERT INTO `BlobClass40`
 (
-	`Id`,
-	`BlobValue`
+	`BlobValue`,
+	`Id`
 )
 VALUES
 (
-	1,
-	0x010203
+	0x010203,
+	1
 )
 
 BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`_`.`BlobValue`,
+	`_`.`Id`
 FROM
 	`BlobClass40` `_`
 WHERE
@@ -39,8 +39,8 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`_`.`BlobValue`,
+	`_`.`Id`
 FROM
 	`BlobClass40` `_`
 WHERE

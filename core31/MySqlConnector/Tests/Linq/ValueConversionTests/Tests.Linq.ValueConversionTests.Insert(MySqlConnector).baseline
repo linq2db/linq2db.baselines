@@ -3,14 +3,14 @@
 
 CREATE TABLE `ValueConversion`
 (
-	`Id`                      INT          NOT NULL,
-	`Value1`                  VARCHAR(200)     NULL,
-	`Value2`                  VARCHAR(200)     NULL,
+	`BoolValue`               VARCHAR(1)   NOT NULL,
 	`Enum`                    VARCHAR(50)  NOT NULL,
 	`EnumNullable`            VARCHAR(50)      NULL,
 	`EnumWithNull`            VARCHAR(50)      NULL,
 	`EnumWithNullDeclarative` VARCHAR(50)      NULL,
-	`BoolValue`               VARCHAR(1)   NOT NULL,
+	`Id`                      INT          NOT NULL,
+	`Value1`                  VARCHAR(200)     NULL,
+	`Value2`                  VARCHAR(200)     NULL,
 
 	CONSTRAINT `PK_ValueConversion` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -51,14 +51,14 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`e`.`Id`,
-	`e`.`Value1`,
-	`e`.`Value2`,
+	`e`.`BoolValue`,
 	`e`.`Enum`,
 	`e`.`EnumNullable`,
 	`e`.`EnumWithNull`,
 	`e`.`EnumWithNullDeclarative`,
-	`e`.`BoolValue`
+	`e`.`Id`,
+	`e`.`Value1`,
+	`e`.`Value2`
 FROM
 	`ValueConversion` `e`
 WHERE
@@ -101,14 +101,14 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`e`.`Id`,
-	`e`.`Value1`,
-	`e`.`Value2`,
+	`e`.`BoolValue`,
 	`e`.`Enum`,
 	`e`.`EnumNullable`,
 	`e`.`EnumWithNull`,
 	`e`.`EnumWithNullDeclarative`,
-	`e`.`BoolValue`
+	`e`.`Id`,
+	`e`.`Value1`,
+	`e`.`Value2`
 FROM
 	`ValueConversion` `e`
 WHERE
@@ -117,12 +117,8 @@ LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Id Int32
-SET     @Id = 3
-DECLARE @Value1 VarChar(21) -- String
-SET     @Value1 = '{"some":"inserted3}"}'
-DECLARE @Value2 VarChar(23) -- String
-SET     @Value2 = '[{"Value":"inserted3"}]'
+DECLARE @BoolValue VarChar -- AnsiString
+SET     @BoolValue = 'Y'
 DECLARE @Enum VarChar(6) -- String
 SET     @Enum = 'Value3'
 DECLARE @EnumNullable VarChar -- AnsiString
@@ -131,30 +127,34 @@ DECLARE @EnumWithNull VarChar(6) -- AnsiString
 SET     @EnumWithNull = 'Value1'
 DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value1'
-DECLARE @BoolValue VarChar -- AnsiString
-SET     @BoolValue = 'Y'
+DECLARE @Id Int32
+SET     @Id = 3
+DECLARE @Value1 VarChar(21) -- String
+SET     @Value1 = '{"some":"inserted3}"}'
+DECLARE @Value2 VarChar(23) -- String
+SET     @Value2 = '[{"Value":"inserted3"}]'
 
 INSERT INTO `ValueConversion`
 (
-	`Id`,
-	`Value1`,
-	`Value2`,
+	`BoolValue`,
 	`Enum`,
 	`EnumNullable`,
 	`EnumWithNull`,
 	`EnumWithNullDeclarative`,
-	`BoolValue`
+	`Id`,
+	`Value1`,
+	`Value2`
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
+	@BoolValue,
 	@Enum,
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@Id,
+	@Value1,
+	@Value2
 )
 
 BeforeExecute
@@ -163,14 +163,14 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`e`.`Id`,
-	`e`.`Value1`,
-	`e`.`Value2`,
+	`e`.`BoolValue`,
 	`e`.`Enum`,
 	`e`.`EnumNullable`,
 	`e`.`EnumWithNull`,
 	`e`.`EnumWithNullDeclarative`,
-	`e`.`BoolValue`
+	`e`.`Id`,
+	`e`.`Value1`,
+	`e`.`Value2`
 FROM
 	`ValueConversion` `e`
 WHERE

@@ -14,15 +14,15 @@ BeforeExecute
 INSERT INTO `Person`
 (
 	`FirstName`,
+	`Gender`,
 	`PersonID`,
 	`LastName`,
-	`MiddleName`,
-	`Gender`
+	`MiddleName`
 )
 VALUES
-('Neurologist',5,'test',NULL,'M'),
-('Sports Medicine',6,'test',NULL,'M'),
-('Optometrist',7,'test',NULL,'M'),
-('Pediatrics',8,'test',NULL,'M'),
-('Psychiatry',9,'test',NULL,'M')
+('Neurologist','M',5,'test',NULL),
+('Sports Medicine','M',6,'test',NULL),
+('Optometrist','M',7,'test',NULL),
+('Pediatrics','M',8,'test',NULL),
+('Psychiatry','M',9,'test',NULL)
 

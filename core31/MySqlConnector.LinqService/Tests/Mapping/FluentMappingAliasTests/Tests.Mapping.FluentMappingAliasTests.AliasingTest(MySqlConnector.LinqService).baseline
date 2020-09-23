@@ -43,9 +43,9 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`,
-	`t`.`ValueStr`,
-	`t`.`Id`
+	`t`.`ValueStr`
 FROM
 	`InstanceClass` `t`
 WHERE
@@ -58,9 +58,9 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`,
-	`t`.`ValueStr`,
-	`t`.`Id`
+	`t`.`ValueStr`
 FROM
 	`InstanceClass` `t`
 WHERE

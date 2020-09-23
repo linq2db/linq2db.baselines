@@ -6,11 +6,11 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	`obj`.`PersonID`,
 	`obj`.`FirstName`,
+	`obj`.`Gender`,
+	`obj`.`PersonID`,
 	`obj`.`LastName`,
-	`obj`.`MiddleName`,
-	`obj`.`Gender`
+	`obj`.`MiddleName`
 FROM
 	`Person` `obj`
 WHERE

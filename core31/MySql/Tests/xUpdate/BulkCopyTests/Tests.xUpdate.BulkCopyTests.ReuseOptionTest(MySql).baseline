@@ -14,9 +14,9 @@ BeforeExecute
 
 INSERT INTO `Child`
 (
-	`ParentID`,
-	`ChildID`
+	`ChildID`,
+	`ParentID`
 )
 VALUES
-(111001,0)
+(0,111001)
 

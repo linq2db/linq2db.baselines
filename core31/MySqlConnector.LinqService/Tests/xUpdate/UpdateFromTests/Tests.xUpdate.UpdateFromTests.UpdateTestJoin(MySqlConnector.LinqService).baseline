@@ -3,11 +3,11 @@
 
 CREATE TABLE `UpdatedEntities`
 (
-	`id`         INT NOT NULL,
+	`RelationId` INT     NULL,
 	`Value1`     INT NOT NULL,
 	`Value2`     INT NOT NULL,
 	`Value3`     INT NOT NULL,
-	`RelationId` INT     NULL,
+	`id`         INT NOT NULL,
 
 	CONSTRAINT `PK_UpdatedEntities` PRIMARY KEY CLUSTERED (`id`)
 )
@@ -17,11 +17,11 @@ BeforeExecute
 
 INSERT INTO `UpdatedEntities`
 (
-	`id`,
+	`RelationId`,
 	`Value1`,
 	`Value2`,
 	`Value3`,
-	`RelationId`
+	`id`
 )
 VALUES
 (0,1,1,3,0),
@@ -34,10 +34,10 @@ BeforeExecute
 
 CREATE TABLE `NewEntities`
 (
-	`id`     INT NOT NULL,
 	`Value1` INT NOT NULL,
 	`Value2` INT NOT NULL,
 	`Value3` INT NOT NULL,
+	`id`     INT NOT NULL,
 
 	CONSTRAINT `PK_NewEntities` PRIMARY KEY CLUSTERED (`id`)
 )
@@ -47,10 +47,10 @@ BeforeExecute
 
 INSERT INTO `NewEntities`
 (
-	`id`,
 	`Value1`,
 	`Value2`,
-	`Value3`
+	`Value3`,
+	`id`
 )
 VALUES
 (0,0,0,0),

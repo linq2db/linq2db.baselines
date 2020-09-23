@@ -3,33 +3,33 @@
 
 CREATE TABLE `PR_1598_Update_Table`
 (
+	`Age`  INT              NULL,
 	`Id`   INT          NOT NULL,
 	`Name` VARCHAR(255)     NULL,
-	`Age`  INT              NULL,
 
 	CONSTRAINT `PK_PR_1598_Update_Table` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @Age Int32
+SET     @Age = 2
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Smith'
-DECLARE @Age Int32
-SET     @Age = 2
 
 INSERT INTO `PR_1598_Update_Table`
 (
+	`Age`,
 	`Id`,
-	`Name`,
-	`Age`
+	`Name`
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
@@ -38,9 +38,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_Update_Table` `t`
 WHERE
@@ -49,18 +49,18 @@ LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'Franki'
 DECLARE @Age Int32
 SET     @Age = 15
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'Franki'
 DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
 	`PR_1598_Update_Table` `t1`
 SET
-	`t1`.`Name` = @Name,
-	`t1`.`Age` = @Age
+	`t1`.`Age` = @Age,
+	`t1`.`Name` = @Name
 WHERE
 	`t1`.`Id` = @Id
 
@@ -70,9 +70,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_Update_Table` `t`
 WHERE
@@ -99,9 +99,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_Update_Table` `t`
 WHERE

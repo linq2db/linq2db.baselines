@@ -14,9 +14,9 @@ BeforeExecute
 
 CREATE TABLE `TaskStage`
 (
+	`Actual` BOOLEAN NOT NULL,
 	`Id`     INT     NOT NULL,
 	`TaskId` INT     NOT NULL,
-	`Actual` BOOLEAN NOT NULL,
 
 	CONSTRAINT `PK_TaskStage` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -59,24 +59,24 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @Actual Bool -- Boolean
+SET     @Actual = 1
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @TaskId Int32
 SET     @TaskId = 1
-DECLARE @Actual Bool -- Boolean
-SET     @Actual = 1
 
 INSERT INTO `TaskStage`
 (
+	`Actual`,
 	`Id`,
-	`TaskId`,
-	`Actual`
+	`TaskId`
 )
 VALUES
 (
+	@Actual,
 	@Id,
-	@TaskId,
-	@Actual
+	@TaskId
 )
 
 BeforeExecute

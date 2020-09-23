@@ -9,8 +9,8 @@ BeforeExecute
 SELECT Max(`PersonID`) FROM `Person`
 
 BeforeExecute
-INSERT BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
+INSERT BULK `Person`(FirstName, Gender, PersonID, LastName, MiddleName
 
 BeforeExecute
-INSERT BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
+INSERT BULK `Person`(FirstName, Gender, PersonID, LastName, MiddleName
 

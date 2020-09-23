@@ -4,8 +4,8 @@
 CREATE TABLE `billing_devtypes`
 (
 	`devtypeid`  INT         AUTO_INCREMENT NOT NULL,
-	`typename`   VARCHAR(50)                NOT NULL,
 	`GlobalType` INT                        NOT NULL,
+	`typename`   VARCHAR(50)                NOT NULL,
 
 	CONSTRAINT `PK_billing_devtypes` PRIMARY KEY CLUSTERED (`devtypeid`)
 )
@@ -16,8 +16,8 @@ BeforeExecute
 CREATE TABLE `billing_devices`
 (
 	`devid`     VARCHAR(50) NOT NULL,
-	`sernum`    VARCHAR(50)     NULL,
 	`devtypeid` INT         NOT NULL,
+	`sernum`    VARCHAR(50)     NULL,
 
 	CONSTRAINT `PK_billing_devices` PRIMARY KEY CLUSTERED (`devid`)
 )
@@ -27,8 +27,8 @@ BeforeExecute
 
 CREATE TABLE `billing_DevReadingType`
 (
-	`Id`             INT         AUTO_INCREMENT NOT NULL,
 	`DevTypeId`      INT                        NOT NULL,
+	`Id`             INT         AUTO_INCREMENT NOT NULL,
 	`Name`           VARCHAR(50)                NOT NULL,
 	`Responsibility` INT                        NOT NULL,
 
@@ -40,16 +40,16 @@ BeforeExecute
 
 CREATE TABLE `billing_TempReading`
 (
-	`id`               INT         AUTO_INCREMENT NOT NULL,
+	`DevGlobalType`    INT                        NOT NULL,
+	`DevReadingTypeId` INT                            NULL,
 	`DevSerNum`        VARCHAR(50)                NOT NULL,
 	`devid`            VARCHAR(50)                    NULL,
+	`Devtypeid`        INT                            NULL,
+	`id`               INT         AUTO_INCREMENT NOT NULL,
+	`ReadingTypeName`  VARCHAR(50)                    NULL,
+	`Responsibility`   INT                        NOT NULL,
 	`tsdevice`         DATETIME                   NOT NULL,
 	`value`            DECIMAL                    NOT NULL,
-	`Devtypeid`        INT                            NULL,
-	`DevReadingTypeId` INT                            NULL,
-	`ReadingTypeName`  VARCHAR(50)                    NULL,
-	`DevGlobalType`    INT                        NOT NULL,
-	`Responsibility`   INT                        NOT NULL,
 
 	CONSTRAINT `PK_billing_TempReading` PRIMARY KEY CLUSTERED (`id`)
 )

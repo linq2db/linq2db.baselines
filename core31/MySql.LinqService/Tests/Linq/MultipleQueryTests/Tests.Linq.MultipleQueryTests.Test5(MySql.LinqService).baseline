@@ -3,16 +3,16 @@
 
 SELECT
 	`key_data_result`.`ParentID`,
-	`key_data_result`.`ParentID_1`,
 	`key_data_result`.`ChildID`,
+	`key_data_result`.`ParentID_1`,
 	`detail`.`ParentID`,
 	`detail`.`Value1`
 FROM
 	(
 		SELECT DISTINCT
 			`a_Parent`.`ParentID`,
-			`ch`.`ParentID` as `ParentID_1`,
-			`ch`.`ChildID`
+			`ch`.`ChildID`,
+			`ch`.`ParentID` as `ParentID_1`
 		FROM
 			`Child` `ch`
 				LEFT JOIN `Parent` `a_Parent` ON `ch`.`ParentID` = `a_Parent`.`ParentID`
@@ -24,8 +24,8 @@ BeforeExecute
 
 SELECT
 	`a_Parent`.`ParentID`,
-	`ch`.`ParentID`,
-	`ch`.`ChildID`
+	`ch`.`ChildID`,
+	`ch`.`ParentID`
 FROM
 	`Child` `ch`
 		LEFT JOIN `Parent` `a_Parent` ON `ch`.`ParentID` = `a_Parent`.`ParentID`

@@ -6,8 +6,8 @@ SELECT
 	`t1`.`p_1`,
 	`t1`.`p2`,
 	`t1`.`p2_1`,
-	`c_3`.`ParentID`,
-	`c_3`.`ChildID`
+	`c_3`.`ChildID`,
+	`c_3`.`ParentID`
 FROM
 	(
 		SELECT
@@ -26,8 +26,8 @@ SELECT
 	`t2`.`p_1`,
 	`t2`.`p2`,
 	`t2`.`p2_1`,
-	`c_4`.`ParentID`,
-	`c_4`.`ChildID`
+	`c_4`.`ChildID`,
+	`c_4`.`ParentID`
 FROM
 	(
 		SELECT

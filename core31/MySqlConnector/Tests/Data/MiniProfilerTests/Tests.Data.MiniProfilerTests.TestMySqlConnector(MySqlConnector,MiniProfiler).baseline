@@ -32,7 +32,7 @@ BeforeExecute
 SET GLOBAL local_infile=ON
 
 BeforeExecute
-INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType
+INSERT BULK `AllTypesNoYear`(bigintDataType, binaryDataType, bitDataType, blobDataType, charDataType, dateDataType, datetimeDataType, decimalDataType, doubleDataType, enumDataType, floatDataType, intDataType, intUnsignedDataType, mediumintDataType, numericDataType, setDataType, smallintDataType, textDataType, timeDataType, timestampDataType, tinyintDataType, varbinaryDataType, varcharDataType
 
 BeforeExecute
 --  MySqlConnector MySql
@@ -44,7 +44,7 @@ WHERE
 	`t1`.`ID` >= 2000
 
 BeforeExecute
-INSERT ASYNC BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType
+INSERT ASYNC BULK `AllTypesNoYear`(bigintDataType, binaryDataType, bitDataType, blobDataType, charDataType, dateDataType, datetimeDataType, decimalDataType, doubleDataType, enumDataType, floatDataType, intDataType, intUnsignedDataType, mediumintDataType, numericDataType, setDataType, smallintDataType, textDataType, timeDataType, timestampDataType, tinyintDataType, varbinaryDataType, varcharDataType
 
 BeforeExecute
 --  MySqlConnector MySql (asynchronously)
