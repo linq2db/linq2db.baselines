@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Discriminator VarChar(10) -- String
-SET     @Discriminator = 'WildAnimal'
-DECLARE @Name VarChar(10) -- String
-SET     @Name = 'WildAnimal'
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @AnimalType2 VarChar(3) -- String
-SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
 SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @Name VarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator VarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
 
 INSERT INTO `Animals4`
 (
-	`Discriminator`,
-	`Name`,
-	`Id`,
+	`AnimalType`,
 	`AnimalType2`,
-	`AnimalType`
+	`Id`,
+	`Name`,
+	`Discriminator`
 )
 VALUES
 (
-	@Discriminator,
-	@Name,
-	@Id,
+	@AnimalType,
 	@AnimalType2,
-	@AnimalType
+	@Id,
+	@Name,
+	@Discriminator
 )
 
 BeforeExecute
