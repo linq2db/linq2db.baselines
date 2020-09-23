@@ -15,10 +15,10 @@ SET     @FirstName_1 = 'Jane'
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -31,10 +31,10 @@ SET     @FirstName_1 = 'John'
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -47,10 +47,10 @@ SET     @FirstName_1 = _utf8 x'4AC3BC7267656E'
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE
@@ -63,10 +63,10 @@ SET     @FirstName_1 = 'Tester'
 
 SELECT
 	"keyParam"."FirstName",
+	"keyParam"."Gender",
 	"keyParam"."PersonID",
 	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"keyParam"."MiddleName"
 FROM
 	"Person" "keyParam"
 WHERE

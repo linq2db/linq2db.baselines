@@ -3,52 +3,52 @@
 
 CREATE TABLE "CreateTableTypes"
 (
-	"Id"               Int       NOT NULL,
-	"DateTimeNullable" TimeStamp
+	"DateTimeNullable" TimeStamp,
+	"Id"               Int       NOT NULL
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
 DECLARE @DateTimeNullable TimeStamp -- DateTime
 SET     @DateTimeNullable = NULL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 
 INSERT INTO "CreateTableTypes"
 (
-	"Id",
-	"DateTimeNullable"
+	"DateTimeNullable",
+	"Id"
 )
 VALUES
 (
-	@Id,
-	@DateTimeNullable
+	@DateTimeNullable,
+	@Id
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
 DECLARE @DateTimeNullable TimeStamp -- DateTime
 SET     @DateTimeNullable = CAST('2018-11-25 01:02:03' AS timestamp)
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
 
 INSERT INTO "CreateTableTypes"
 (
-	"Id",
-	"DateTimeNullable"
+	"DateTimeNullable",
+	"Id"
 )
 VALUES
 (
-	@Id,
-	@DateTimeNullable
+	@DateTimeNullable,
+	@Id
 )
 
 BeforeExecute
 -- Firebird
 
 SELECT
-	"t1"."Id",
-	"t1"."DateTimeNullable"
+	"t1"."DateTimeNullable",
+	"t1"."Id"
 FROM
 	"CreateTableTypes" "t1"
 ORDER BY

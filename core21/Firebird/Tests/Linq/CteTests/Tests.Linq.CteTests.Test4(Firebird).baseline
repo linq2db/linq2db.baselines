@@ -23,8 +23,8 @@ AS
 		Mod("c4"."ParentID", 2) = 0
 )
 SELECT
-	"c4_1"."ParentID",
-	"c4_1"."ChildID"
+	"c4_1"."ChildID",
+	"c4_1"."ParentID"
 FROM
 	CTE1_ "p"
 		INNER JOIN LAST0 "c4_1" ON "c4_1"."ParentID" = "p"."ParentID"
@@ -33,8 +33,8 @@ BeforeExecute
 -- Firebird
 
 SELECT
-	"c4"."ParentID",
-	"c4"."ChildID"
+	"c4"."ChildID",
+	"c4"."ParentID"
 FROM
 	"Child" "c_1"
 		INNER JOIN "Child" "c4" ON "c4"."ParentID" = "c_1"."ParentID"

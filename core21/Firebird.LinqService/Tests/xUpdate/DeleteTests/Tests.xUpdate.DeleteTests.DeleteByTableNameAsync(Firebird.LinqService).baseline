@@ -16,10 +16,10 @@ BeforeExecute
 CREATE TABLE "xxPerson_fl_30"
 (
 	"FirstName"  VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+	"Gender"     Char(1)                                 NOT NULL,
 	"PersonID"   Int                                     NOT NULL,
 	"LastName"   VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"MiddleName" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Gender"     Char(1)                                 NOT NULL,
 
 	CONSTRAINT "PK_xxPerson_fl_30" PRIMARY KEY ("PersonID")
 )
@@ -42,26 +42,26 @@ BeforeExecute
 -- Firebird (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 
 INSERT INTO "xxPerson_fl_30"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute
@@ -79,10 +79,10 @@ SET     @take = 2
 
 SELECT FIRST @take
 	"t1"."FirstName",
+	"t1"."Gender",
 	"t1"."PersonID",
 	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender"
+	"t1"."MiddleName"
 FROM
 	"xxPerson_fl_30" "t1"
 

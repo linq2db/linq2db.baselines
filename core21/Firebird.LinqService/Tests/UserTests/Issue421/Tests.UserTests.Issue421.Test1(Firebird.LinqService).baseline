@@ -3,8 +3,8 @@
 
 CREATE TABLE "BlobClass"
 (
-	"Id"        Int  NOT NULL,
 	"BlobValue" Blob,
+	"Id"        Int  NOT NULL,
 
 	CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
 )
@@ -33,8 +33,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"t1"."Id",
-	"t1"."BlobValue"
+	"t1"."BlobValue",
+	"t1"."Id"
 FROM
 	"BlobClass" "t1"
 WHERE
@@ -58,8 +58,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"t1"."Id",
-	"t1"."BlobValue"
+	"t1"."BlobValue",
+	"t1"."Id"
 FROM
 	"BlobClass" "t1"
 WHERE

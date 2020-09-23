@@ -2,8 +2,8 @@
 -- Firebird
 
 SELECT
-	"pat"."PersonID",
-	"pat"."Diagnosis"
+	"pat"."Diagnosis",
+	"pat"."PersonID"
 FROM
 	"Patient" "pat"
 WHERE

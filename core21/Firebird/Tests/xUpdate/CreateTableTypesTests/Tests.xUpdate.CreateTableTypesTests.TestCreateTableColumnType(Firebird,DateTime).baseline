@@ -3,52 +3,52 @@
 
 CREATE TABLE "CreateTableTypes"
 (
-	"Id"       Int       NOT NULL,
-	"DateTime" TimeStamp NOT NULL
+	"DateTime" TimeStamp NOT NULL,
+	"Id"       Int       NOT NULL
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
 DECLARE @DateTime TimeStamp -- DateTime
 SET     @DateTime = CAST('2000-01-01' AS timestamp)
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 
 INSERT INTO "CreateTableTypes"
 (
-	"Id",
-	"DateTime"
+	"DateTime",
+	"Id"
 )
 VALUES
 (
-	@Id,
-	@DateTime
+	@DateTime,
+	@Id
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
 DECLARE @DateTime TimeStamp -- DateTime
 SET     @DateTime = CAST('2018-11-24 01:02:03' AS timestamp)
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
 
 INSERT INTO "CreateTableTypes"
 (
-	"Id",
-	"DateTime"
+	"DateTime",
+	"Id"
 )
 VALUES
 (
-	@Id,
-	@DateTime
+	@DateTime,
+	@Id
 )
 
 BeforeExecute
 -- Firebird
 
 SELECT
-	"t1"."Id",
-	"t1"."DateTime"
+	"t1"."DateTime",
+	"t1"."Id"
 FROM
 	"CreateTableTypes" "t1"
 ORDER BY

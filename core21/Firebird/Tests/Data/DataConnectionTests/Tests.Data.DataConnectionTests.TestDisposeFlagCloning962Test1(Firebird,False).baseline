@@ -40,9 +40,9 @@ BeforeExecute
 
 CREATE TABLE "Products"
 (
+	"CategoryID"      Int,
 	"ProductID"       Int                                     NOT NULL,
 	"ProductName"     VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"CategoryID"      Int,
 	"QuantityPerUnit" VarChar(255) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_Products" PRIMARY KEY ("ProductID")
@@ -67,25 +67,25 @@ BeforeExecute
 
 INSERT INTO "Products"
 (
-	"ProductName",
 	"CategoryID",
+	"ProductName",
 	"QuantityPerUnit"
 )
-SELECT 'Prod 1',1,'q 1' FROM rdb$database UNION ALL
-SELECT 'Prod 2',1,'q 2' FROM rdb$database UNION ALL
-SELECT 'Prod 3',3,'q 3' FROM rdb$database UNION ALL
-SELECT 'Prod 4',3,'q 4' FROM rdb$database UNION ALL
-SELECT 'Prod 5',1,'q 5' FROM rdb$database UNION ALL
-SELECT 'Prod 6',1,'q 6' FROM rdb$database
+SELECT 1,'Prod 1','q 1' FROM rdb$database UNION ALL
+SELECT 1,'Prod 2','q 2' FROM rdb$database UNION ALL
+SELECT 3,'Prod 3','q 3' FROM rdb$database UNION ALL
+SELECT 3,'Prod 4','q 4' FROM rdb$database UNION ALL
+SELECT 1,'Prod 5','q 5' FROM rdb$database UNION ALL
+SELECT 1,'Prod 6','q 6' FROM rdb$database
 
 BeforeExecute
 -- Firebird
 
 SELECT
 	"lw_Category"."CategoryID",
+	"detail"."CategoryID",
 	"detail"."ProductID",
 	"detail"."ProductName",
-	"detail"."CategoryID",
 	"detail"."QuantityPerUnit"
 FROM
 	"Categories" "lw_Category"

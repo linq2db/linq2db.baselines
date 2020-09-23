@@ -4,8 +4,8 @@ DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"t1"."ChildID",
+	"t1"."ParentID"
 FROM
 	"Child" "t1"
 WHERE

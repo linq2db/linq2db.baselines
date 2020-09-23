@@ -5,9 +5,9 @@ CREATE TABLE "Animals3"
 (
 	"AnimalType"    VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"AnimalType2"   VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
+	"Discriminator" VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"Id"            Int                                    NOT NULL,
 	"Name"          VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Discriminator" VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"EyeId"         Int,
 	"Second"        VarChar(40) CHARACTER SET UNICODE_FSS,
 	"First"         VarChar(40) CHARACTER SET UNICODE_FSS,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO "Animals3"
 (
-	"Discriminator",
 	"Name",
 	"Id",
+	"Discriminator",
 	"AnimalType2",
 	"AnimalType",
 	"EyeId",
@@ -85,9 +85,9 @@ INSERT INTO "Animals3"
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @AnimalType VarChar(3) -- String
-SET     @AnimalType = 'Big'
-DECLARE @AnimalType2 VarChar(3) -- String
-SET     @AnimalType2 = 'Big'
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
 DECLARE @Name VarChar(10) -- String
 SET     @Name = 'WildAnimal'
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
 DECLARE @Discriminator VarChar(10) -- String
 SET     @Discriminator = 'WildAnimal'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
 
 INSERT INTO "Animals3"
 (
-	"AnimalType",
-	"AnimalType2",
-	"Id",
 	"Name",
-	"Discriminator"
+	"Id",
+	"Discriminator",
+	"AnimalType2",
+	"AnimalType"
 )
 VALUES
 (
-	@AnimalType,
-	@AnimalType2,
-	@Id,
 	@Name,
-	@Discriminator
+	@Id,
+	@Discriminator,
+	@AnimalType2,
+	@AnimalType
 )
 
 BeforeExecute
@@ -163,12 +163,12 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Cerberus'
 DECLARE @Id Integer -- Int32
 SET     @Id = 666
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType VarChar(3) -- String
@@ -182,9 +182,9 @@ SET     @DogName_First = 'Good'
 
 INSERT INTO "Animals3"
 (
-	"Discriminator",
 	"Name",
 	"Id",
+	"Discriminator",
 	"AnimalType2",
 	"AnimalType",
 	"EyeId",
@@ -193,9 +193,9 @@ INSERT INTO "Animals3"
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -209,9 +209,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"t1"."Discriminator",
 	"t1"."Name",
 	"t1"."Id",
+	"t1"."Discriminator",
 	"t1"."AnimalType2",
 	"t1"."AnimalType",
 	"t1"."EyeId",
@@ -226,10 +226,10 @@ BeforeExecute
 -- Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 666
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Cerberus'
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType VarChar(3) -- String
@@ -249,8 +249,8 @@ USING (SELECT Cast(@Id as Int) AS "Id" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Discriminator" = @Discriminator,
 		"t1"."Name" = @Name,
+		"t1"."Discriminator" = @Discriminator,
 		"t1"."AnimalType2" = @AnimalType2,
 		"t1"."AnimalType" = @AnimalType,
 		"t1"."EyeId" = @EyeId,
@@ -259,9 +259,9 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		"Discriminator",
 		"Name",
 		"Id",
+		"Discriminator",
 		"AnimalType2",
 		"AnimalType",
 		"EyeId",
@@ -270,9 +270,9 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@Discriminator,
 		@Name,
 		Cast(@Id as Int),
+		@Discriminator,
 		@AnimalType2,
 		@AnimalType,
 		@EyeId,
@@ -286,9 +286,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"t1"."Discriminator",
 	"t1"."Name",
 	"t1"."Id",
+	"t1"."Discriminator",
 	"t1"."AnimalType2",
 	"t1"."AnimalType",
 	"t1"."EyeId",
@@ -305,10 +305,10 @@ DECLARE @AnimalType VarChar(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 VarChar(5) -- String
 SET     @AnimalType2 = 'Small'
-DECLARE @Name VarChar(8) -- String
-SET     @Name = 'Cerberus'
 DECLARE @Discriminator VarChar(3) -- String
 SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Cerberus'
 DECLARE @EyeId Integer -- Int32
 SET     @EyeId = 2
 DECLARE @DogName_Second VarChar(3) -- String
@@ -323,8 +323,8 @@ UPDATE
 SET
 	"Animals3"."AnimalType" = @AnimalType,
 	"Animals3"."AnimalType2" = @AnimalType2,
-	"Animals3"."Name" = @Name,
 	"Animals3"."Discriminator" = @Discriminator,
+	"Animals3"."Name" = @Name,
 	"Animals3"."EyeId" = @EyeId,
 	"Animals3"."Second" = @DogName_Second,
 	"Animals3"."First" = @DogName_First
@@ -337,9 +337,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"t1"."Discriminator",
 	"t1"."Name",
 	"t1"."Id",
+	"t1"."Discriminator",
 	"t1"."AnimalType2",
 	"t1"."AnimalType",
 	"t1"."EyeId",

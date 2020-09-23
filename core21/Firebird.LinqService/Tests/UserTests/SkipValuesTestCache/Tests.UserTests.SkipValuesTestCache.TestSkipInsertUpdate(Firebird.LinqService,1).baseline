@@ -3,9 +3,9 @@
 
 CREATE TABLE "PR_1598_Insert_Table_Cache"
 (
+	"Age"  Int,
 	"Id"   Int                                    NOT NULL,
 	"Name" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Age"  Int,
 
 	CONSTRAINT "PK_PR_1598_Insert_Table_Cache" PRIMARY KEY ("Id")
 )
@@ -34,9 +34,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
@@ -62,9 +62,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE

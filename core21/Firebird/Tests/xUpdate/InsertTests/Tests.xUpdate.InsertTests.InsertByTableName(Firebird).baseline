@@ -16,10 +16,10 @@ BeforeExecute
 CREATE TABLE "xxPerson_f_35"
 (
 	"FirstName"  VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+	"Gender"     Char(1)                                 NOT NULL,
 	"PersonID"   Int                                     NOT NULL,
 	"LastName"   VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"MiddleName" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Gender"     Char(1)                                 NOT NULL,
 
 	CONSTRAINT "PK_xxPerson_f_35" PRIMARY KEY ("PersonID")
 )
@@ -42,54 +42,54 @@ BeforeExecute
 -- Firebird
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 
 INSERT INTO "xxPerson_f_35"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute
 -- Firebird
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "xxPerson_f_35"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"
@@ -98,28 +98,28 @@ BeforeExecute
 -- Firebird
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "xxPerson_f_35"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"

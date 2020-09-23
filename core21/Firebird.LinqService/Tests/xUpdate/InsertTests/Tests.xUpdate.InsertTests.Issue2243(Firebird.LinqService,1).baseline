@@ -3,9 +3,9 @@
 
 CREATE TABLE "test_insert_or_replace"
 (
+	"created_by" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
 	"id"         Int                                    NOT NULL,
 	"name"       VarChar(255) CHARACTER SET UNICODE_FSS,
-	"created_by" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
 	"updated_by" VarChar(255) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_test_insert_or_replace" PRIMARY KEY ("id")
@@ -35,15 +35,15 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
+		"created_by",
 		"id",
-		"name",
-		"created_by"
+		"name"
 	)
 	VALUES
 	(
+		@CreatedBy,
 		Cast(@Id as Int),
-		@Name,
-		@CreatedBy
+		@Name
 	)
 
 BeforeExecute
@@ -52,9 +52,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT FIRST @take
+	"t1"."created_by",
 	"t1"."id",
 	"t1"."name",
-	"t1"."created_by",
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
@@ -83,15 +83,15 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
+		"created_by",
 		"id",
-		"name",
-		"created_by"
+		"name"
 	)
 	VALUES
 	(
+		@CreatedBy,
 		Cast(@Id as Int),
-		@Name,
-		@CreatedBy
+		@Name
 	)
 
 BeforeExecute
@@ -100,9 +100,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT FIRST @take
+	"t1"."created_by",
 	"t1"."id",
 	"t1"."name",
-	"t1"."created_by",
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"

@@ -3,11 +3,11 @@
 
 CREATE TABLE "UpdatedEntities"
 (
-	"id"         Int NOT NULL,
+	"RelationId" Int,
 	"Value1"     Int NOT NULL,
 	"Value2"     Int NOT NULL,
 	"Value3"     Int NOT NULL,
-	"RelationId" Int,
+	"id"         Int NOT NULL,
 
 	CONSTRAINT "PK_UpdatedEntities" PRIMARY KEY ("id")
 )
@@ -17,11 +17,11 @@ BeforeExecute
 
 INSERT INTO "UpdatedEntities"
 (
-	"id",
+	"RelationId",
 	"Value1",
 	"Value2",
 	"Value3",
-	"RelationId"
+	"id"
 )
 SELECT 0,1,1,3,0 FROM rdb$database UNION ALL
 SELECT 1,11,12,13,1 FROM rdb$database UNION ALL
@@ -33,10 +33,10 @@ BeforeExecute
 
 CREATE TABLE "NewEntities"
 (
-	"id"     Int NOT NULL,
 	"Value1" Int NOT NULL,
 	"Value2" Int NOT NULL,
 	"Value3" Int NOT NULL,
+	"id"     Int NOT NULL,
 
 	CONSTRAINT "PK_NewEntities" PRIMARY KEY ("id")
 )
@@ -46,10 +46,10 @@ BeforeExecute
 
 INSERT INTO "NewEntities"
 (
-	"id",
 	"Value1",
 	"Value2",
-	"Value3"
+	"Value3",
+	"id"
 )
 SELECT 0,0,0,0 FROM rdb$database UNION ALL
 SELECT 1,1,1,1 FROM rdb$database UNION ALL

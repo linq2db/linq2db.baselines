@@ -2,8 +2,8 @@
 -- Firebird
 
 SELECT
-	"ch"."ParentID",
-	"ch"."ChildID"
+	"ch"."ChildID",
+	"ch"."ParentID"
 FROM
 	"Child" "ch"
 WHERE

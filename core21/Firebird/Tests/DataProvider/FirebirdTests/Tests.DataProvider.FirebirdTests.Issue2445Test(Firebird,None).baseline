@@ -3,8 +3,8 @@
 
 CREATE TABLE Card
 (
-	Id       Int                                    NOT NULL,
 	CardName VarChar(255) CHARACTER SET UNICODE_FSS,
+	Id       Int                                    NOT NULL,
 	OwnerId  Int                                    NOT NULL
 )
 
@@ -21,8 +21,8 @@ BeforeExecute
 -- Firebird
 
 SELECT
-	t1.Id,
 	t1.CardName,
+	t1.Id,
 	t1.OwnerId,
 	a_Owner.Id,
 	a_Owner.Name,

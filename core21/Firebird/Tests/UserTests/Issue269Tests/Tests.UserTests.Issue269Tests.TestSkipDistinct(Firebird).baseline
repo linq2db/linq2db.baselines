@@ -4,8 +4,8 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 0
 
 SELECT
-	"pat"."PersonID",
-	"pat"."Diagnosis"
+	"pat"."Diagnosis",
+	"pat"."PersonID"
 FROM
 	"Patient" "pat"
 WHERE

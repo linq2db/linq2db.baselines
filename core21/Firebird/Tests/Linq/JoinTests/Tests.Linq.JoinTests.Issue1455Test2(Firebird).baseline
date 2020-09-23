@@ -3,8 +3,8 @@
 
 CREATE TABLE "Alert"
 (
-	"AlertKey"     VarChar(255) CHARACTER SET UNICODE_FSS,
 	"AlertCode"    VarChar(255) CHARACTER SET UNICODE_FSS,
+	"AlertKey"     VarChar(255) CHARACTER SET UNICODE_FSS,
 	"CreationDate" TimeStamp
 )
 
@@ -14,8 +14,8 @@ BeforeExecute
 CREATE TABLE "AuditAlert"
 (
 	"CreationDate"    TimeStamp,
-	"AlertCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
 	"AlertKey"        VarChar(255) CHARACTER SET UNICODE_FSS,
+	"AlertCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
 	"TransactionDate" TimeStamp
 )
 
@@ -24,9 +24,9 @@ BeforeExecute
 
 CREATE TABLE "Trade"
 (
+	"CounterParty" VarChar(255) CHARACTER SET UNICODE_FSS,
 	"DealId"       Int                                    NOT NULL,
-	"ParcelId"     Int                                    NOT NULL,
-	"CounterParty" VarChar(255) CHARACTER SET UNICODE_FSS
+	"ParcelId"     Int                                    NOT NULL
 )
 
 BeforeExecute
@@ -35,8 +35,8 @@ BeforeExecute
 CREATE TABLE "Nomin"
 (
 	"CargoId"              Int                                    NOT NULL,
-	"DeliveryId"           Int                                    NOT NULL,
-	"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS
+	"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"DeliveryId"           Int                                    NOT NULL
 )
 
 BeforeExecute
@@ -44,14 +44,14 @@ BeforeExecute
 
 CREATE TABLE "Flat"
 (
-	"AlertKey"             VarChar(255) CHARACTER SET UNICODE_FSS,
 	"AlertCode"            VarChar(255) CHARACTER SET UNICODE_FSS,
+	"AlertKey"             VarChar(255) CHARACTER SET UNICODE_FSS,
 	"CargoId"              Int,
-	"DeliveryId"           Int,
-	"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"DealId"               Int,
-	"ParcelId"             Int,
 	"CounterParty"         VarChar(255) CHARACTER SET UNICODE_FSS,
+	"DealId"               Int,
+	"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"DeliveryId"           Int,
+	"ParcelId"             Int,
 	"TransactionDate"      TimeStamp
 )
 
@@ -65,8 +65,8 @@ DECLARE @p3 VarChar(3) -- String
 SET     @p3 = '%C%'
 
 SELECT
-	"al_1"."alert",
 	"al_1"."alert_1",
+	"al_1"."alert",
 	"al_1"."alert_2"
 FROM
 	(
@@ -78,8 +78,8 @@ FROM
 			"Alert" "al"
 				LEFT JOIN "AuditAlert" "au1" ON ("au1"."AlertKey" IS NULL AND "al"."AlertKey" IS NULL OR "au1"."AlertKey" = "al"."AlertKey") AND ("au1"."AlertCode" IS NULL AND "au1"."AlertCode" IS NULL OR "au1"."AlertCode" = "au1"."AlertCode")
 		GROUP BY
-			"al"."AlertKey",
 			"al"."AlertCode",
+			"al"."AlertKey",
 			"al"."CreationDate"
 	) "al_1"
 		LEFT JOIN "Trade" "trade1" ON "al_1"."alert" = Cast("trade1"."DealId" as VarChar(11) CHARACTER SET UNICODE_FSS)
@@ -87,8 +87,8 @@ FROM
 WHERE
 	(("nomin1"."DeliveryCounterParty" LIKE @p1 OR "trade1"."CounterParty" LIKE @p2) OR "al_1"."alert_1" LIKE @p3)
 GROUP BY
-	"al_1"."alert",
 	"al_1"."alert_1",
+	"al_1"."alert",
 	"al_1"."alert_2"
 
 BeforeExecute

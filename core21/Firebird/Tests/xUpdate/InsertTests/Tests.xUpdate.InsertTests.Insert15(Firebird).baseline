@@ -19,16 +19,16 @@ SET     @Name_LastName = 'Insert15'
 
 INSERT INTO "Person"
 (
-	"PersonID",
 	"Gender",
+	"PersonID",
 	"FirstName",
 	"MiddleName",
 	"LastName"
 )
 VALUES
 (
-	GEN_ID("PersonID", 1),
 	@Gender,
+	GEN_ID("PersonID", 1),
 	@Name_FirstName,
 	@Name_MiddleName,
 	@Name_LastName

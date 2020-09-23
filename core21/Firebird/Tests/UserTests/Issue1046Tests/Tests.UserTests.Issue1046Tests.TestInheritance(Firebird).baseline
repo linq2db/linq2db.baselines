@@ -3,9 +3,9 @@
 
 CREATE TABLE "Task"
 (
+	"BdaValue"   VarChar(255) CHARACTER SET UNICODE_FSS,
 	"Id"         Int                                    NOT NULL,
 	"TargetName" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"BdaValue"   VarChar(255) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
 )
@@ -36,8 +36,8 @@ BeforeExecute
 -- Firebird
 
 SELECT
-	"p"."TargetName",
 	"p"."Id",
+	"p"."TargetName",
 	"p"."BdaValue"
 FROM
 	"Task" "p"

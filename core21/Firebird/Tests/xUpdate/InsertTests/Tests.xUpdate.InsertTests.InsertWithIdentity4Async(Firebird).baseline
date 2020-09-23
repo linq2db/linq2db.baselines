@@ -10,28 +10,28 @@ BeforeExecute
 -- Firebird (asynchronously)
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(7) -- String
 SET     @LastName = 'Shepard'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"
@@ -45,10 +45,10 @@ SET     @FirstName_1 = 'John0'
 
 SELECT FIRST @take
 	"p"."FirstName",
+	"p"."Gender",
 	"p"."PersonID",
 	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender"
+	"p"."MiddleName"
 FROM
 	"Person" "p"
 WHERE
@@ -58,28 +58,28 @@ BeforeExecute
 -- Firebird (asynchronously)
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(7) -- String
 SET     @LastName = 'Shepard'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"
@@ -93,10 +93,10 @@ SET     @FirstName_1 = 'John1'
 
 SELECT FIRST @take
 	"p"."FirstName",
+	"p"."Gender",
 	"p"."PersonID",
 	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender"
+	"p"."MiddleName"
 FROM
 	"Person" "p"
 WHERE

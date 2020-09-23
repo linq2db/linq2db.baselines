@@ -5,8 +5,8 @@ SET     @take = 1
 
 SELECT
 	"lw_Parent"."ParentID",
-	"detail"."ParentID",
-	"detail"."ChildID"
+	"detail"."ChildID",
+	"detail"."ParentID"
 FROM
 	(
 		SELECT DISTINCT
@@ -28,8 +28,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"t1"."ParentID",
 	"t1"."ChildID",
+	"t1"."ParentID",
 	"a_Parent"."ParentID",
 	"a_Parent"."Value1"
 FROM

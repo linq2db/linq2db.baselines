@@ -4,10 +4,10 @@
 CREATE TABLE "Contract_Distributor_Agent"
 (
 	"Agent_Id"                      Int                                    NOT NULL,
-	"Distributor_Id"                Int                                    NOT NULL,
 	"Contract_Id"                   Int                                    NOT NULL,
-	"Distributor_Type_Code"         VarChar(255) CHARACTER SET UNICODE_FSS,
 	"Distributor_Agent_Type_Prefix" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"Distributor_Id"                Int                                    NOT NULL,
+	"Distributor_Type_Code"         VarChar(255) CHARACTER SET UNICODE_FSS,
 	"Represents_Type_Prefix"        VarChar(255) CHARACTER SET UNICODE_FSS
 )
 
@@ -17,13 +17,13 @@ BeforeExecute
 INSERT INTO "Contract_Distributor_Agent"
 (
 	"Agent_Id",
-	"Distributor_Id",
 	"Contract_Id",
-	"Distributor_Type_Code",
 	"Distributor_Agent_Type_Prefix",
+	"Distributor_Id",
+	"Distributor_Type_Code",
 	"Represents_Type_Prefix"
 )
-SELECT 1,1,198827882,'CC','OFFICE','REPRESENTS' FROM rdb$database
+SELECT 1,198827882,'OFFICE',1,'CC','REPRESENTS' FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -52,8 +52,8 @@ BeforeExecute
 CREATE TABLE "Distributor"
 (
 	"Distributor_Id"   Int                                    NOT NULL,
-	"Type_Code"        VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Distributor_Name" VarChar(255) CHARACTER SET UNICODE_FSS
+	"Distributor_Name" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"Type_Code"        VarChar(255) CHARACTER SET UNICODE_FSS
 )
 
 BeforeExecute
@@ -62,18 +62,18 @@ BeforeExecute
 INSERT INTO "Distributor"
 (
 	"Distributor_Id",
-	"Type_Code",
-	"Distributor_Name"
+	"Distributor_Name",
+	"Type_Code"
 )
-SELECT 1,'RE','x' FROM rdb$database
+SELECT 1,'x','RE' FROM rdb$database
 
 BeforeExecute
 -- Firebird
 
 CREATE TABLE "Distributor_Commercial_Propert"
 (
-	"Distributor_Id"         Int                                    NOT NULL,
 	"Commercial_Property_Id" Int                                    NOT NULL,
+	"Distributor_Id"         Int                                    NOT NULL,
 	"Distributor_Type_Code"  VarChar(255) CHARACTER SET UNICODE_FSS
 )
 
@@ -82,8 +82,8 @@ BeforeExecute
 
 INSERT INTO "Distributor_Commercial_Propert"
 (
-	"Distributor_Id",
 	"Commercial_Property_Id",
+	"Distributor_Id",
 	"Distributor_Type_Code"
 )
 SELECT 1,1,'RE' FROM rdb$database
@@ -93,13 +93,13 @@ BeforeExecute
 
 CREATE TABLE "Commercial_Property"
 (
+	"City_Code"              VarChar(255) CHARACTER SET UNICODE_FSS,
 	"Commercial_Property_Id" Int                                    NOT NULL,
-	"Street_Number"          VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Street_Name"            VarChar(255) CHARACTER SET UNICODE_FSS,
 	"State"                  VarChar(255) CHARACTER SET UNICODE_FSS,
+	"Street_Name"            VarChar(255) CHARACTER SET UNICODE_FSS,
+	"Street_Number"          VarChar(255) CHARACTER SET UNICODE_FSS,
 	"Zip_Code"               VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Zip_Plus_4"             VarChar(255) CHARACTER SET UNICODE_FSS,
-	"City_Code"              VarChar(255) CHARACTER SET UNICODE_FSS
+	"Zip_Plus_4"             VarChar(255) CHARACTER SET UNICODE_FSS
 )
 
 BeforeExecute
@@ -107,15 +107,15 @@ BeforeExecute
 
 INSERT INTO "Commercial_Property"
 (
+	"City_Code",
 	"Commercial_Property_Id",
-	"Street_Number",
-	"Street_Name",
 	"State",
+	"Street_Name",
+	"Street_Number",
 	"Zip_Code",
-	"Zip_Plus_4",
-	"City_Code"
+	"Zip_Plus_4"
 )
-SELECT 1,'x','x','x','x','x','x' FROM rdb$database
+SELECT 'x',1,'x','x','x','x','x' FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -123,8 +123,8 @@ BeforeExecute
 CREATE TABLE "Contract_Dates"
 (
 	"Contract_Id"    Int                                    NOT NULL,
-	"Type_Code"      VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Effective_Date" VarChar(255) CHARACTER SET UNICODE_FSS
+	"Effective_Date" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"Type_Code"      VarChar(255) CHARACTER SET UNICODE_FSS
 )
 
 BeforeExecute
@@ -133,10 +133,10 @@ BeforeExecute
 INSERT INTO "Contract_Dates"
 (
 	"Contract_Id",
-	"Type_Code",
-	"Effective_Date"
+	"Effective_Date",
+	"Type_Code"
 )
-SELECT 198827882,'ESTCOE','x' FROM rdb$database
+SELECT 198827882,'x','ESTCOE' FROM rdb$database
 
 BeforeExecute
 -- Firebird

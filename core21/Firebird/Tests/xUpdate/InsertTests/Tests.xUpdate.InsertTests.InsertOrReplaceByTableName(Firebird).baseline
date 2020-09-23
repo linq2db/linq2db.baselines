@@ -11,8 +11,8 @@ BeforeExecute
 
 CREATE TABLE "xxPatient21"
 (
-	"PersonID"  Int                                    NOT NULL,
 	"Diagnosis" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"PersonID"  Int                                    NOT NULL,
 
 	CONSTRAINT "PK_xxPatient21" PRIMARY KEY ("PersonID")
 )
@@ -36,13 +36,13 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		"PersonID",
-		"Diagnosis"
+		"Diagnosis",
+		"PersonID"
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		@Diagnosis,
+		Cast(@PersonID as Int)
 	)
 
 BeforeExecute
@@ -64,13 +64,13 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		"PersonID",
-		"Diagnosis"
+		"Diagnosis",
+		"PersonID"
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		@Diagnosis,
+		Cast(@PersonID as Int)
 	)
 
 BeforeExecute
@@ -100,13 +100,13 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		"PersonID",
-		"Diagnosis"
+		"Diagnosis",
+		"PersonID"
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		@Diagnosis,
+		Cast(@PersonID as Int)
 	)
 
 BeforeExecute
@@ -128,13 +128,13 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		"PersonID",
-		"Diagnosis"
+		"Diagnosis",
+		"PersonID"
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		@Diagnosis,
+		Cast(@PersonID as Int)
 	)
 
 BeforeExecute

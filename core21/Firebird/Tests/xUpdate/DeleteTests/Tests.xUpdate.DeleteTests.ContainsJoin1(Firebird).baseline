@@ -34,56 +34,56 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1000
 DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 1000
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1000
 
 INSERT INTO "Child"
 (
-	"ParentID",
-	"ChildID"
+	"ChildID",
+	"ParentID"
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1000
 DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 1001
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1000
 
 INSERT INTO "Child"
 (
-	"ParentID",
-	"ChildID"
+	"ChildID",
+	"ParentID"
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1000
 DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 1002
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1000
 
 INSERT INTO "Child"
 (
-	"ParentID",
-	"ChildID"
+	"ChildID",
+	"ParentID"
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute

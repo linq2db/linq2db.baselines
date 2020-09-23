@@ -6,8 +6,8 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
 SELECT
-	"c_1"."ParentID",
-	"c_1"."ChildID"
+	"c_1"."ChildID",
+	"c_1"."ParentID"
 FROM
 	"Child" "c_1"
 WHERE

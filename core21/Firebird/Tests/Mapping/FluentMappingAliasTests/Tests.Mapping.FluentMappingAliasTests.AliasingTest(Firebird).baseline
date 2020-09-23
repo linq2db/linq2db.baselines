@@ -42,9 +42,9 @@ BeforeExecute
 -- Firebird
 
 SELECT
+	"t"."Id",
 	"t"."Value",
-	"t"."ValueStr",
-	"t"."Id"
+	"t"."ValueStr"
 FROM
 	"InstanceClass" "t"
 WHERE
@@ -57,9 +57,9 @@ BeforeExecute
 -- Firebird
 
 SELECT
+	"t"."Id",
 	"t"."Value",
-	"t"."ValueStr",
-	"t"."Id"
+	"t"."ValueStr"
 FROM
 	"InstanceClass" "t"
 WHERE

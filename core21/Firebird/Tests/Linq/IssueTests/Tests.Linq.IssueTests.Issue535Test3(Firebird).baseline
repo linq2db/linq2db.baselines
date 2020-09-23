@@ -3,11 +3,11 @@
 
 CREATE TABLE "CustomerBase"
 (
-	"Id"           Int                                     NOT NULL,
 	"ClientType"   NChar                                   NOT NULL,
-	"Name"         VarChar(255) CHARACTER SET UNICODE_FSS,
 	"ContactEmail" VarChar(255) CHARACTER SET UNICODE_FSS,
 	"Enabled"      CHAR,
+	"Id"           Int                                     NOT NULL,
+	"Name"         VarChar(255) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_CustomerBase" PRIMARY KEY ("Id")
 )

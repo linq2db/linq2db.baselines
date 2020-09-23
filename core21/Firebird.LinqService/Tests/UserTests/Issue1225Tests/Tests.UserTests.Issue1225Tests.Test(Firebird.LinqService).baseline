@@ -13,9 +13,9 @@ BeforeExecute
 
 CREATE TABLE "TaskStage"
 (
+	"Actual" char(1) NOT NULL,
 	"Id"     Int     NOT NULL,
 	"TaskId" Int     NOT NULL,
-	"Actual" char(1) NOT NULL,
 
 	CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
 )
@@ -50,24 +50,24 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @Actual Char(1) -- String
+SET     @Actual = '1'
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @TaskId Integer -- Int32
 SET     @TaskId = 1
-DECLARE @Actual Char(1) -- String
-SET     @Actual = '1'
 
 INSERT INTO "TaskStage"
 (
+	"Actual",
 	"Id",
-	"TaskId",
-	"Actual"
+	"TaskId"
 )
 VALUES
 (
+	@Actual,
 	@Id,
-	@TaskId,
-	@Actual
+	@TaskId
 )
 
 BeforeExecute

@@ -5,9 +5,9 @@ CREATE TABLE "Animals13"
 (
 	"AnimalType"    VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"AnimalType2"   VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
+	"Discriminator" VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"Id"            Int                                    NOT NULL,
 	"Name"          VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Discriminator" VarChar(40) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"EyeId"         Int,
 	"Second"        VarChar(40) CHARACTER SET UNICODE_FSS,
 	"First"         VarChar(40) CHARACTER SET UNICODE_FSS,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO "Animals13"
 (
-	"Discriminator",
 	"Name",
 	"Id",
+	"Discriminator",
 	"AnimalType2",
 	"AnimalType",
 	"EyeId",
@@ -85,9 +85,9 @@ INSERT INTO "Animals13"
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @AnimalType VarChar(3) -- String
-SET     @AnimalType = 'Big'
-DECLARE @AnimalType2 VarChar(3) -- String
-SET     @AnimalType2 = 'Big'
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
 DECLARE @Name VarChar(10) -- String
 SET     @Name = 'WildAnimal'
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
 DECLARE @Discriminator VarChar(10) -- String
 SET     @Discriminator = 'WildAnimal'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
 
 INSERT INTO "Animals13"
 (
-	"AnimalType",
-	"AnimalType2",
-	"Id",
 	"Name",
-	"Discriminator"
+	"Id",
+	"Discriminator",
+	"AnimalType2",
+	"AnimalType"
 )
 VALUES
 (
-	@AnimalType,
-	@AnimalType2,
-	@Id,
 	@Name,
-	@Discriminator
+	@Id,
+	@Discriminator,
+	@AnimalType2,
+	@AnimalType
 )
 
 BeforeExecute
@@ -167,9 +167,9 @@ BeforeExecute
 SELECT
 	"t1"."AnimalType",
 	"t1"."AnimalType2",
+	"t1"."Discriminator",
 	"t1"."Id",
 	"t1"."Name",
-	"t1"."Discriminator",
 	"t1"."EyeId",
 	"t1"."Second",
 	"t1"."First"

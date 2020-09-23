@@ -3,33 +3,33 @@
 
 CREATE TABLE "PR_1598_SkipCustom_Table"
 (
+	"Age"  Int,
 	"Id"   Int                                    NOT NULL,
 	"Name" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Age"  Int,
 
 	CONSTRAINT "PK_PR_1598_SkipCustom_Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Firebird
+DECLARE @Age Integer -- Int32
+SET     @Age = 15
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age Integer -- Int32
-SET     @Age = 15
 
 INSERT INTO "PR_1598_SkipCustom_Table"
 (
+	"Age",
 	"Id",
-	"Name",
-	"Age"
+	"Name"
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
@@ -38,9 +38,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_SkipCustom_Table" "t"
 WHERE
@@ -70,9 +70,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_SkipCustom_Table" "t"
 WHERE

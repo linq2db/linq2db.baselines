@@ -3,8 +3,8 @@
 
 CREATE TABLE "TestInsertOrReplaceTable"
 (
-	ID           Int                                    NOT NULL,
 	"FirstName"  VarChar(255) CHARACTER SET UNICODE_FSS,
+	ID           Int                                    NOT NULL,
 	"LastName"   VarChar(255) CHARACTER SET UNICODE_FSS,
 	"MiddleName" VarChar(255) CHARACTER SET UNICODE_FSS,
 
@@ -36,15 +36,15 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		ID,
 		"FirstName",
+		ID,
 		"LastName",
 		"MiddleName"
 	)
 	VALUES
 	(
-		Cast(@ID as Int),
 		@FirstName,
+		Cast(@ID as Int),
 		@LastName,
 		@MiddleName
 	)
@@ -57,8 +57,8 @@ DECLARE @FirstName_1 VarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
 SELECT FIRST @take
-	"x".ID,
 	"x"."FirstName",
+	"x".ID,
 	"x"."LastName",
 	"x"."MiddleName"
 FROM
@@ -88,14 +88,14 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		ID,
 		"FirstName",
+		ID,
 		"LastName"
 	)
 	VALUES
 	(
-		Cast(@ID as Int),
 		@FirstName,
+		Cast(@ID as Int),
 		@LastName
 	)
 
@@ -107,8 +107,8 @@ DECLARE @FirstName_1 VarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
 SELECT FIRST @take
-	"x".ID,
 	"x"."FirstName",
+	"x".ID,
 	"x"."LastName",
 	"x"."MiddleName"
 FROM

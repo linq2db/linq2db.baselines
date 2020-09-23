@@ -14,8 +14,8 @@ BeforeExecute
 
 CREATE TABLE "Books"
 (
-	"Id"       Int                                    NOT NULL,
 	"AuthorId" Int                                    NOT NULL,
+	"Id"       Int                                    NOT NULL,
 	"Title"    VarChar(100) CHARACTER SET UNICODE_FSS NOT NULL,
 
 	CONSTRAINT "PK_Books" PRIMARY KEY ("Id")

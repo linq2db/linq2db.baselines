@@ -20,28 +20,28 @@ BeforeExecute
 -- Firebird
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 1'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'F'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 1'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'F'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"
@@ -50,28 +50,28 @@ BeforeExecute
 -- Firebird
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 2'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 2'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"
@@ -80,28 +80,28 @@ BeforeExecute
 -- Firebird
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 3'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'O'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 3'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'O'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"
@@ -110,28 +110,28 @@ BeforeExecute
 -- Firebird
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 4'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'U'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 4'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'U'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"
@@ -140,28 +140,28 @@ BeforeExecute
 -- Firebird
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 5'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'F'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 5'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'F'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"
@@ -170,28 +170,28 @@ BeforeExecute
 -- Firebird
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 6'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 6'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 RETURNING
 	"PersonID"
@@ -234,38 +234,38 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 119
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'sick'
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 119
 
 INSERT INTO "Patient"
 (
-	"PersonID",
-	"Diagnosis"
+	"Diagnosis",
+	"PersonID"
 )
 VALUES
 (
-	@PersonID,
-	@Diagnosis
+	@Diagnosis,
+	@PersonID
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 120
 DECLARE @Diagnosis VarChar(9) -- String
 SET     @Diagnosis = 'very sick'
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 120
 
 INSERT INTO "Patient"
 (
-	"PersonID",
-	"Diagnosis"
+	"Diagnosis",
+	"PersonID"
 )
 VALUES
 (
-	@PersonID,
-	@Diagnosis
+	@Diagnosis,
+	@PersonID
 )
 
 BeforeExecute
@@ -305,10 +305,10 @@ BeforeExecute
 
 SELECT
 	"t1"."FirstName",
+	"t1"."Gender",
 	"t1"."PersonID",
 	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender"
+	"t1"."MiddleName"
 FROM
 	"Person" "t1"
 ORDER BY

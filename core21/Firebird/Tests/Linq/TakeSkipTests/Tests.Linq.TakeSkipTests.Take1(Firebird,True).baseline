@@ -4,8 +4,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT FIRST @take
-	"ch"."ParentID",
-	"ch"."ChildID"
+	"ch"."ChildID",
+	"ch"."ParentID"
 FROM
 	"Child" "ch"
 
@@ -15,8 +15,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 3
 
 SELECT FIRST @take
-	"ch"."ParentID",
-	"ch"."ChildID"
+	"ch"."ChildID",
+	"ch"."ParentID"
 FROM
 	"Child" "ch"
 
@@ -26,8 +26,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT FIRST @take
-	"ch"."ParentID",
-	"ch"."ChildID"
+	"ch"."ChildID",
+	"ch"."ParentID"
 FROM
 	"Child" "ch"
 
@@ -37,8 +37,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 3
 
 SELECT FIRST @take
-	"ch"."ParentID",
-	"ch"."ChildID"
+	"ch"."ChildID",
+	"ch"."ParentID"
 FROM
 	"Child" "ch"
 

@@ -19,16 +19,16 @@ SET     @Name_LastName = 'ln'
 
 INSERT INTO "Person"
 (
-	"PersonID",
 	"Gender",
+	"PersonID",
 	"FirstName",
 	"MiddleName",
 	"LastName"
 )
 VALUES
 (
-	GEN_ID("PersonID", 1),
 	@Gender,
+	GEN_ID("PersonID", 1),
 	@Name_FirstName,
 	@Name_MiddleName,
 	@Name_LastName
@@ -42,8 +42,8 @@ DECLARE @id Integer -- Int32
 SET     @id = 4
 
 SELECT FIRST @take
-	"p2"."PersonID",
 	"p2"."Gender",
+	"p2"."PersonID",
 	"p2"."FirstName",
 	"p2"."MiddleName",
 	"p2"."LastName"

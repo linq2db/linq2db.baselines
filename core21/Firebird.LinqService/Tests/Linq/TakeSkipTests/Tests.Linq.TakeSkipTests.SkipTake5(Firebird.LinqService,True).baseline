@@ -6,8 +6,8 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 2
 
 SELECT FIRST @take SKIP @skip
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"t1"."ChildID",
+	"t1"."ParentID"
 FROM
 	"Child" "t1"
 

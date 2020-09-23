@@ -3,33 +3,33 @@
 
 CREATE TABLE "PR_1598_Insert_Table_Cache"
 (
+	"Age"  Int,
 	"Id"   Int                                    NOT NULL,
 	"Name" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Age"  Int,
 
 	CONSTRAINT "PK_PR_1598_Insert_Table_Cache" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Firebird
+DECLARE @Age Integer -- Int32
+SET     @Age = 2
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age Integer -- Int32
-SET     @Age = 2
 
 INSERT INTO "PR_1598_Insert_Table_Cache"
 (
+	"Age",
 	"Id",
-	"Name",
-	"Age"
+	"Name"
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
@@ -38,9 +38,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
@@ -48,18 +48,18 @@ WHERE
 
 BeforeExecute
 -- Firebird
-DECLARE @Name VarChar(4) -- String
-SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'John'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
 	"PR_1598_Insert_Table_Cache"
 SET
-	"PR_1598_Insert_Table_Cache"."Name" = @Name,
-	"PR_1598_Insert_Table_Cache"."Age" = @Age
+	"PR_1598_Insert_Table_Cache"."Age" = @Age,
+	"PR_1598_Insert_Table_Cache"."Name" = @Name
 WHERE
 	"PR_1598_Insert_Table_Cache"."Id" = @Id
 
@@ -69,9 +69,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE

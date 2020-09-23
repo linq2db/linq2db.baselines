@@ -37,10 +37,10 @@ SELECT Cast(@p1 as int) + Cast(@p2 as int) FROM "Dual"
 
 BeforeExecute
 -- Firebird
-DECLARE @p2 Integer -- Int32
-SET     @p2 = 2
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 3
+DECLARE @p2 Integer -- Int32
+SET     @p2 = 2
 
 SELECT Cast(@p2 as int) + Cast(@p1 as int) FROM "Dual"
 

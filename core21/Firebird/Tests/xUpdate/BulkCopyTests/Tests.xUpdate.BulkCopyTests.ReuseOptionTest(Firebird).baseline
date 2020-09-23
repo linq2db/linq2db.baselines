@@ -13,8 +13,8 @@ BeforeExecute
 
 INSERT INTO "Child"
 (
-	"ParentID",
-	"ChildID"
+	"ChildID",
+	"ParentID"
 )
-SELECT 111001,0 FROM rdb$database
+SELECT 0,111001 FROM rdb$database
 

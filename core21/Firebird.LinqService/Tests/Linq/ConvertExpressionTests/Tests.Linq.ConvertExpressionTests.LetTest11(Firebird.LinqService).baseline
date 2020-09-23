@@ -4,8 +4,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"c_1"."ParentID",
-	"c_1"."ChildID"
+	"c_1"."ChildID",
+	"c_1"."ParentID"
 FROM
 	"Child" "c_1"
 WHERE
@@ -19,8 +19,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"c_1"."ParentID",
-	"c_1"."ChildID"
+	"c_1"."ChildID",
+	"c_1"."ParentID"
 FROM
 	"Child" "c_1"
 WHERE

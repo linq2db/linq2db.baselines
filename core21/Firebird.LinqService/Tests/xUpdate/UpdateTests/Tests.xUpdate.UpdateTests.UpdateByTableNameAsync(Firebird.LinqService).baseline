@@ -12,10 +12,10 @@ BeforeExecute
 CREATE TABLE "xxPerson_fl_33"
 (
 	"FirstName"  VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+	"Gender"     Char(1)                                 NOT NULL,
 	"PersonID"   Int                                     NOT NULL,
 	"LastName"   VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"MiddleName" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Gender"     Char(1)                                 NOT NULL,
 
 	CONSTRAINT "PK_xxPerson_fl_33" PRIMARY KEY ("PersonID")
 )
@@ -38,26 +38,26 @@ BeforeExecute
 -- Firebird (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 
 INSERT INTO "xxPerson_fl_33"
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute
@@ -75,10 +75,10 @@ SET     @take = 2
 
 SELECT FIRST @take
 	"t1"."FirstName",
+	"t1"."Gender",
 	"t1"."PersonID",
 	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender"
+	"t1"."MiddleName"
 FROM
 	"xxPerson_fl_33" "t1"
 
@@ -86,12 +86,12 @@ BeforeExecute
 -- Firebird (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName VarChar(4) -- String
 SET     @MiddleName = 'None'
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -99,9 +99,9 @@ UPDATE
 	"xxPerson_fl_33"
 SET
 	"xxPerson_fl_33"."FirstName" = @FirstName,
+	"xxPerson_fl_33"."Gender" = @Gender,
 	"xxPerson_fl_33"."LastName" = @LastName,
-	"xxPerson_fl_33"."MiddleName" = @MiddleName,
-	"xxPerson_fl_33"."Gender" = @Gender
+	"xxPerson_fl_33"."MiddleName" = @MiddleName
 WHERE
 	"xxPerson_fl_33"."PersonID" = @ID
 
@@ -112,10 +112,10 @@ SET     @take = 2
 
 SELECT FIRST @take
 	"t1"."FirstName",
+	"t1"."Gender",
 	"t1"."PersonID",
 	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender"
+	"t1"."MiddleName"
 FROM
 	"xxPerson_fl_33" "t1"
 

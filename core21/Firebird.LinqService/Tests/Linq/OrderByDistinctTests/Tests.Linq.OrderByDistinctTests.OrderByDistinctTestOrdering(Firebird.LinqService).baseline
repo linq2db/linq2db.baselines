@@ -3,8 +3,8 @@
 
 CREATE TABLE "OrderByDistinctData"
 (
-	"Id"            Int                                    NOT NULL,
 	"DuplicateData" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"Id"            Int                                    NOT NULL,
 	"OrderData1"    Int                                    NOT NULL,
 	"OrderData2"    Int                                    NOT NULL,
 
@@ -16,14 +16,14 @@ BeforeExecute
 
 INSERT INTO "OrderByDistinctData"
 (
-	"Id",
 	"DuplicateData",
+	"Id",
 	"OrderData1",
 	"OrderData2"
 )
-SELECT 1,'One',1,1 FROM rdb$database UNION ALL
-SELECT 10,'Two',1,1 FROM rdb$database UNION ALL
-SELECT 100,'Three',1,1 FROM rdb$database
+SELECT 'One',1,1,1 FROM rdb$database UNION ALL
+SELECT 'Two',10,1,1 FROM rdb$database UNION ALL
+SELECT 'Three',100,1,1 FROM rdb$database
 
 BeforeExecute
 -- Firebird

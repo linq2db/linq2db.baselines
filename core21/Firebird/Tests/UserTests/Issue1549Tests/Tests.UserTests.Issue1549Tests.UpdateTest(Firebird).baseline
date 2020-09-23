@@ -4,8 +4,8 @@
 CREATE TABLE "billing_devtypes"
 (
 	"devtypeid"  Int                                    NOT NULL,
-	"typename"   VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"GlobalType" Int                                    NOT NULL,
+	"typename"   VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
 
 	CONSTRAINT "PK_billing_devtypes" PRIMARY KEY ("devtypeid")
 )
@@ -30,8 +30,8 @@ BeforeExecute
 CREATE TABLE "billing_devices"
 (
 	"devid"     VarChar(50) CHARACTER SET UNICODE_FSS NOT NULL,
-	"sernum"    VarChar(50) CHARACTER SET UNICODE_FSS,
 	"devtypeid" Int                                   NOT NULL,
+	"sernum"    VarChar(50) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_billing_devices" PRIMARY KEY ("devid")
 )
@@ -41,8 +41,8 @@ BeforeExecute
 
 CREATE TABLE "billing_DevReadType"
 (
-	"Id"             Int                                    NOT NULL,
 	"DevTypeId"      Int                                    NOT NULL,
+	"Id"             Int                                    NOT NULL,
 	"Name"           VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"Responsibility" Int                                    NOT NULL,
 
@@ -68,16 +68,16 @@ BeforeExecute
 
 CREATE TABLE "billing_TempReading"
 (
-	"id"               Int                                    NOT NULL,
+	"DevGlobalType"    Int                                    NOT NULL,
+	"DevReadingTypeId" Int,
 	"DevSerNum"        VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"devid"            VarChar(50) CHARACTER SET UNICODE_FSS,
+	"Devtypeid"        Int,
+	"id"               Int                                    NOT NULL,
+	"ReadingTypeName"  VarChar(50) CHARACTER SET UNICODE_FSS,
+	"Responsibility"   Int                                    NOT NULL,
 	"tsdevice"         TimeStamp                              NOT NULL,
 	"value"            Decimal                                NOT NULL,
-	"Devtypeid"        Int,
-	"DevReadingTypeId" Int,
-	"ReadingTypeName"  VarChar(50) CHARACTER SET UNICODE_FSS,
-	"DevGlobalType"    Int                                    NOT NULL,
-	"Responsibility"   Int                                    NOT NULL,
 
 	CONSTRAINT "PK_billing_TempReading" PRIMARY KEY ("id")
 )

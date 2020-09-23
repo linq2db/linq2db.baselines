@@ -3,14 +3,14 @@
 
 CREATE TABLE "ValueConversion"
 (
-	"Id"                      Int                                    NOT NULL,
-	"Value1"                  VarChar(200) CHARACTER SET UNICODE_FSS,
-	"Value2"                  VarChar(200) CHARACTER SET UNICODE_FSS,
+	"BoolValue"               VarChar(1)                             NOT NULL,
 	"Enum"                    VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
 	"EnumNullable"            VarChar(50),
 	"EnumWithNull"            VarChar(50),
 	"EnumWithNullDeclarative" VarChar(50),
-	"BoolValue"               VarChar(1)                             NOT NULL,
+	"Id"                      Int                                    NOT NULL,
+	"Value1"                  VarChar(200) CHARACTER SET UNICODE_FSS,
+	"Value2"                  VarChar(200) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
 )
@@ -51,14 +51,14 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
+	"e"."BoolValue",
 	"e"."Enum",
 	"e"."EnumNullable",
 	"e"."EnumWithNull",
 	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue"
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2"
 FROM
 	"ValueConversion" "e"
 WHERE
@@ -100,14 +100,14 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
+	"e"."BoolValue",
 	"e"."Enum",
 	"e"."EnumNullable",
 	"e"."EnumWithNull",
 	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue"
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2"
 FROM
 	"ValueConversion" "e"
 WHERE
@@ -115,12 +115,8 @@ WHERE
 
 BeforeExecute
 -- Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 3
-DECLARE @Value1 VarChar(21) -- String
-SET     @Value1 = '{"some":"inserted3}"}'
-DECLARE @Value2 VarChar(23) -- String
-SET     @Value2 = '[{"Value":"inserted3"}]'
+DECLARE @BoolValue VarChar -- String
+SET     @BoolValue = 'Y'
 DECLARE @Enum VarChar(6) -- String
 SET     @Enum = 'Value3'
 DECLARE @EnumNullable VarChar -- String
@@ -129,30 +125,34 @@ DECLARE @EnumWithNull VarChar(6) -- String
 SET     @EnumWithNull = 'Value1'
 DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
-DECLARE @BoolValue VarChar -- String
-SET     @BoolValue = 'Y'
+DECLARE @Id Integer -- Int32
+SET     @Id = 3
+DECLARE @Value1 VarChar(21) -- String
+SET     @Value1 = '{"some":"inserted3}"}'
+DECLARE @Value2 VarChar(23) -- String
+SET     @Value2 = '[{"Value":"inserted3"}]'
 
 INSERT INTO "ValueConversion"
 (
-	"Id",
-	"Value1",
-	"Value2",
+	"BoolValue",
 	"Enum",
 	"EnumNullable",
 	"EnumWithNull",
 	"EnumWithNullDeclarative",
-	"BoolValue"
+	"Id",
+	"Value1",
+	"Value2"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
+	@BoolValue,
 	@Enum,
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@Id,
+	@Value1,
+	@Value2
 )
 
 BeforeExecute
@@ -161,14 +161,14 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
+	"e"."BoolValue",
 	"e"."Enum",
 	"e"."EnumNullable",
 	"e"."EnumWithNull",
 	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue"
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2"
 FROM
 	"ValueConversion" "e"
 WHERE

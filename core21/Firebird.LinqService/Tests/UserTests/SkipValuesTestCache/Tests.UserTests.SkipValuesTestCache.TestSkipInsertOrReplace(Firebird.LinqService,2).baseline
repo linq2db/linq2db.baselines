@@ -3,9 +3,9 @@
 
 CREATE TABLE "PR_1598_Insert_Table_Cache"
 (
+	"Age"  Int,
 	"Id"   Int                                    NOT NULL,
 	"Name" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Age"  Int,
 
 	CONSTRAINT "PK_PR_1598_Insert_Table_Cache" PRIMARY KEY ("Id")
 )
@@ -14,10 +14,10 @@ BeforeExecute
 -- Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Name VarChar(4) -- String
-SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'John'
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
 USING (SELECT Cast(@Id as Int) AS "Id" FROM rdb$database) "s" ON
@@ -27,20 +27,20 @@ USING (SELECT Cast(@Id as Int) AS "Id" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name,
-		"t1"."Age" = @Age
+		"t1"."Age" = @Age,
+		"t1"."Name" = @Name
 WHEN NOT MATCHED THEN
 	INSERT
 	(
+		"Age",
 		"Id",
-		"Name",
-		"Age"
+		"Name"
 	)
 	VALUES
 	(
+		@Age,
 		Cast(@Id as Int),
-		@Name,
-		@Age
+		@Name
 	)
 
 BeforeExecute
@@ -49,9 +49,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
@@ -61,10 +61,10 @@ BeforeExecute
 -- Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Name VarChar(4) -- String
-SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'John'
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
 USING (SELECT Cast(@Id as Int) AS "Id" FROM rdb$database) "s" ON
@@ -74,20 +74,20 @@ USING (SELECT Cast(@Id as Int) AS "Id" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name,
-		"t1"."Age" = @Age
+		"t1"."Age" = @Age,
+		"t1"."Name" = @Name
 WHEN NOT MATCHED THEN
 	INSERT
 	(
+		"Age",
 		"Id",
-		"Name",
-		"Age"
+		"Name"
 	)
 	VALUES
 	(
+		@Age,
 		Cast(@Id as Int),
-		@Name,
-		@Age
+		@Name
 	)
 
 BeforeExecute
@@ -96,9 +96,9 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE

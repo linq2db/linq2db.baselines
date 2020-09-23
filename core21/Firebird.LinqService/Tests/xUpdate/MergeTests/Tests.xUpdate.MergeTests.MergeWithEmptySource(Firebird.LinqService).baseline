@@ -10,9 +10,9 @@ USING (
 (
 	ID, 
 	"FirstName", 
+	"Gender", 
 	"LastName", 
-	"MiddleName", 
-	"Gender"
+	"MiddleName"
 )
 ON ("Target"."PersonID" = "Source".ID)
 
@@ -20,23 +20,23 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"Target"."FirstName" = "Source"."FirstName",
+	"Target"."Gender" = "Source"."Gender",
 	"Target"."LastName" = "Source"."LastName",
-	"Target"."MiddleName" = "Source"."MiddleName",
-	"Target"."Gender" = "Source"."Gender"
+	"Target"."MiddleName" = "Source"."MiddleName"
 
 WHEN NOT MATCHED THEN
 INSERT
 (
 	"FirstName",
+	"Gender",
 	"LastName",
-	"MiddleName",
-	"Gender"
+	"MiddleName"
 )
 VALUES
 (
 	"Source"."FirstName",
+	"Source"."Gender",
 	"Source"."LastName",
-	"Source"."MiddleName",
-	"Source"."Gender"
+	"Source"."MiddleName"
 )
 

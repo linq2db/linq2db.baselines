@@ -3,38 +3,38 @@
 
 CREATE TABLE "PR_1598_Insert_Enum_Table"
 (
-	"Id"     Int                                    NOT NULL,
-	"Name"   VarChar(255) CHARACTER SET UNICODE_FSS,
 	"Age"    Int,
 	"Gender" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"Id"     Int                                    NOT NULL,
+	"Name"   VarChar(255) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_PR_1598_Insert_Enum_Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @Name VarChar(3) -- String
-SET     @Name = 'Max'
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
 DECLARE @Gender VarChar(4) -- String
 SET     @Gender = 'Male'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Max'
 
 INSERT INTO "PR_1598_Insert_Enum_Table"
 (
-	"Id",
-	"Name",
 	"Age",
-	"Gender"
+	"Gender",
+	"Id",
+	"Name"
 )
 VALUES
 (
-	@Id,
-	@Name,
 	@Age,
-	@Gender
+	@Gender,
+	@Id,
+	@Name
 )
 
 BeforeExecute
@@ -43,10 +43,10 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
 	"t"."Age",
-	"t"."Gender"
+	"t"."Gender",
+	"t"."Id",
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Enum_Table" "t"
 WHERE
@@ -54,24 +54,24 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @Age Integer -- Int32
+SET     @Age = 25
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Jenny'
-DECLARE @Age Integer -- Int32
-SET     @Age = 25
 
 INSERT INTO "PR_1598_Insert_Enum_Table"
 (
+	"Age",
 	"Id",
-	"Name",
-	"Age"
+	"Name"
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
@@ -80,10 +80,10 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
 	"t"."Age",
-	"t"."Gender"
+	"t"."Gender",
+	"t"."Id",
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Enum_Table" "t"
 WHERE

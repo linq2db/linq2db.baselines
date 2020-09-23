@@ -2,11 +2,11 @@
 -- Firebird
 
 SELECT
-	"p"."PersonID",
 	"p"."FirstName",
+	"p"."Gender",
 	"p"."LastName",
 	"p"."MiddleName",
-	"p"."Gender"
+	"p"."PersonID"
 FROM
 	"Person" "p"
 WHERE

@@ -6,8 +6,8 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 SELECT FIRST @take
-	"p"."PersonID",
 	"p"."Gender",
+	"p"."PersonID",
 	"p"."FirstName",
 	"p"."MiddleName",
 	"p"."LastName"
