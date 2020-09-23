@@ -7,10 +7,10 @@ SET     @take = 2
 
 SELECT
 	`t`.`FirstName`,
+	`t`.`Gender`,
 	`t`.`PersonID`,
 	`t`.`LastName`,
-	`t`.`MiddleName`,
-	`t`.`Gender`
+	`t`.`MiddleName`
 FROM
 	`Person` `t`
 WHERE
@@ -26,10 +26,10 @@ SET     @take = 2
 
 SELECT
 	`t`.`FirstName`,
+	`t`.`Gender`,
 	`t`.`PersonID`,
 	`t`.`LastName`,
-	`t`.`MiddleName`,
-	`t`.`Gender`
+	`t`.`MiddleName`
 FROM
 	`Person` `t`
 WHERE

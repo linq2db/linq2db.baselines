@@ -3,8 +3,8 @@
 
 CREATE TABLE `OrderByDistinctData`
 (
-	`Id`            INT          NOT NULL,
 	`DuplicateData` VARCHAR(255)     NULL,
+	`Id`            INT          NOT NULL,
 	`OrderData1`    INT          NOT NULL,
 	`OrderData2`    INT          NOT NULL,
 
@@ -16,30 +16,30 @@ BeforeExecute
 
 INSERT INTO `OrderByDistinctData`
 (
-	`Id`,
 	`DuplicateData`,
+	`Id`,
 	`OrderData1`,
 	`OrderData2`
 )
 VALUES
-(1,'One',1,1),
-(2,'One',1,10),
-(3,'One',2,2),
-(4,'One',3,3),
-(5,'One',4,4),
-(6,'One',5,5),
-(10,'Two',1,1),
-(20,'Two',1,10),
-(30,'Two',2,2),
-(40,'Two',3,3),
-(50,'Two',4,4),
-(60,'Two',5,5),
-(100,'Three',1,1),
-(200,'Three',1,10),
-(300,'Three',2,2),
-(400,'Three',3,3),
-(500,'Three',4,4),
-(600,'Three',5,5)
+('One',1,1,1),
+('One',2,1,10),
+('One',3,2,2),
+('One',4,3,3),
+('One',5,4,4),
+('One',6,5,5),
+('Two',10,1,1),
+('Two',20,1,10),
+('Two',30,2,2),
+('Two',40,3,3),
+('Two',50,4,4),
+('Two',60,5,5),
+('Three',100,1,1),
+('Three',200,1,10),
+('Three',300,2,2),
+('Three',400,3,3),
+('Three',500,4,4),
+('Three',600,5,5)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -50,15 +50,15 @@ SELECT DISTINCT
 FROM
 	(
 		SELECT
-			`t1`.`Id`,
 			`t1`.`DuplicateData`,
+			`t1`.`Id`,
 			`t1`.`OrderData1`,
 			`t1`.`OrderData2`
 		FROM
 			(
 				SELECT
-					`x`.`Id`,
 					`x`.`DuplicateData`,
+					`x`.`Id`,
 					`x`.`OrderData1`,
 					`x`.`OrderData2`
 				FROM
@@ -67,8 +67,8 @@ FROM
 					`x`.`Id` BETWEEN 1 AND 9
 				UNION ALL
 				SELECT
-					`x_1`.`Id`,
 					`x_1`.`DuplicateData`,
+					`x_1`.`Id`,
 					`x_1`.`OrderData1`,
 					`x_1`.`OrderData2`
 				FROM
@@ -78,8 +78,8 @@ FROM
 			) `t1`
 		UNION
 		SELECT
-			`x_2`.`Id`,
 			`x_2`.`DuplicateData`,
+			`x_2`.`Id`,
 			`x_2`.`OrderData1`,
 			`x_2`.`OrderData2`
 		FROM

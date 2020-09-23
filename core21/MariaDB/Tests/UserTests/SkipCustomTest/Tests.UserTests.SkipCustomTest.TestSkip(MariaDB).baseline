@@ -3,33 +3,33 @@
 
 CREATE TABLE `PR_1598_SkipCustom_Table`
 (
+	`Age`  INT              NULL,
 	`Id`   INT          NOT NULL,
 	`Name` VARCHAR(255)     NULL,
-	`Age`  INT              NULL,
 
 	CONSTRAINT `PK_PR_1598_SkipCustom_Table` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @Age Int32
+SET     @Age = 15
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age Int32
-SET     @Age = 15
 
 INSERT INTO `PR_1598_SkipCustom_Table`
 (
+	`Age`,
 	`Id`,
-	`Name`,
-	`Age`
+	`Name`
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
@@ -38,9 +38,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_SkipCustom_Table` `t`
 WHERE
@@ -71,9 +71,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_SkipCustom_Table` `t`
 WHERE

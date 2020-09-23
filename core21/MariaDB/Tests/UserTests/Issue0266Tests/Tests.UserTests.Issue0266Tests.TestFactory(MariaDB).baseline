@@ -5,10 +5,10 @@ SET     @take = 2
 
 SELECT
 	`_`.`FirstName`,
+	`_`.`Gender`,
 	`_`.`PersonID`,
 	`_`.`LastName`,
-	`_`.`MiddleName`,
-	`_`.`Gender`
+	`_`.`MiddleName`
 FROM
 	`Person` `_`
 WHERE

@@ -3,38 +3,38 @@
 
 CREATE TABLE `PR_1598_Update_Enum_Table`
 (
-	`Id`     INT          NOT NULL,
-	`Name`   VARCHAR(255)     NULL,
 	`Age`    INT              NULL,
 	`Gender` VARCHAR(255)     NULL,
+	`Id`     INT          NOT NULL,
+	`Name`   VARCHAR(255)     NULL,
 
 	CONSTRAINT `PK_PR_1598_Update_Enum_Table` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Name VarChar(3) -- String
-SET     @Name = 'Max'
 DECLARE @Age Int32
 SET     @Age = 20
 DECLARE @Gender VarChar(6) -- String
 SET     @Gender = 'Female'
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Max'
 
 INSERT INTO `PR_1598_Update_Enum_Table`
 (
-	`Id`,
-	`Name`,
 	`Age`,
-	`Gender`
+	`Gender`,
+	`Id`,
+	`Name`
 )
 VALUES
 (
-	@Id,
-	@Name,
 	@Age,
-	@Gender
+	@Gender,
+	@Id,
+	@Name
 )
 
 BeforeExecute
@@ -43,10 +43,10 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`t`.`Id`,
-	`t`.`Name`,
 	`t`.`Age`,
-	`t`.`Gender`
+	`t`.`Gender`,
+	`t`.`Id`,
+	`t`.`Name`
 FROM
 	`PR_1598_Update_Enum_Table` `t`
 WHERE
@@ -55,21 +55,21 @@ LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @Name VarChar(4) -- String
-SET     @Name = 'Jack'
 DECLARE @Age Int32
 SET     @Age = 2
 DECLARE @Gender VarChar(4) -- String
 SET     @Gender = 'Male'
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Jack'
 DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
 	`PR_1598_Update_Enum_Table` `t1`
 SET
-	`t1`.`Name` = @Name,
 	`t1`.`Age` = @Age,
-	`t1`.`Gender` = @Gender
+	`t1`.`Gender` = @Gender,
+	`t1`.`Name` = @Name
 WHERE
 	`t1`.`Id` = @Id
 
@@ -79,10 +79,10 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`t`.`Id`,
-	`t`.`Name`,
 	`t`.`Age`,
-	`t`.`Gender`
+	`t`.`Gender`,
+	`t`.`Id`,
+	`t`.`Name`
 FROM
 	`PR_1598_Update_Enum_Table` `t`
 WHERE
@@ -91,18 +91,18 @@ LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @Name VarChar(8) -- String
-SET     @Name = 'Francine'
 DECLARE @Age Int32
 SET     @Age = 20
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Francine'
 DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
 	`PR_1598_Update_Enum_Table` `t1`
 SET
-	`t1`.`Name` = @Name,
-	`t1`.`Age` = @Age
+	`t1`.`Age` = @Age,
+	`t1`.`Name` = @Name
 WHERE
 	`t1`.`Id` = @Id
 
@@ -112,10 +112,10 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`t`.`Id`,
-	`t`.`Name`,
 	`t`.`Age`,
-	`t`.`Gender`
+	`t`.`Gender`,
+	`t`.`Id`,
+	`t`.`Name`
 FROM
 	`PR_1598_Update_Enum_Table` `t`
 WHERE

@@ -2,8 +2,8 @@
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`ch`.`ParentID`,
-	`ch`.`ChildID`
+	`ch`.`ChildID`,
+	`ch`.`ParentID`
 FROM
 	`Child` `ch`
 ORDER BY

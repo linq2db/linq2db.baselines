@@ -2,9 +2,9 @@
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`c_1`.`ParentID`,
 	`c_1`.`ChildID`,
-	`c_1`.`GrandChildID`
+	`c_1`.`GrandChildID`,
+	`c_1`.`ParentID`
 FROM
 	`Child` `cp`
 		INNER JOIN `Parent` `a_Parent` ON `cp`.`ParentID` = `a_Parent`.`ParentID`

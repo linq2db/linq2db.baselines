@@ -22,9 +22,9 @@ BeforeExecute
 
 CREATE TABLE `Table404Two`
 (
+	`FirstTableId` INT NOT NULL,
 	`Id`           INT NOT NULL,
-	`Usage`        INT NOT NULL,
-	`FirstTableId` INT NOT NULL
+	`Usage`        INT NOT NULL
 )
 
 BeforeExecute
@@ -32,17 +32,17 @@ BeforeExecute
 
 INSERT INTO `Table404Two`
 (
+	`FirstTableId`,
 	`Id`,
-	`Usage`,
-	`FirstTableId`
+	`Usage`
 )
 VALUES
-(1,0,1),
-(2,0,1),
-(3,1,1),
-(4,0,2),
-(5,1,2),
-(6,1,2)
+(1,1,0),
+(1,2,0),
+(1,3,1),
+(2,4,0),
+(2,5,1),
+(2,6,1)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -51,9 +51,9 @@ SET     @take = 1
 
 SELECT
 	`key_data_result`.`Id`,
+	`_v`.`FirstTableId`,
 	`_v`.`Id`,
-	`_v`.`Usage`,
-	`_v`.`FirstTableId`
+	`_v`.`Usage`
 FROM
 	(
 		SELECT DISTINCT
@@ -89,9 +89,9 @@ SET     @Usage_2 = 0
 
 SELECT
 	`key_data_result`.`Id`,
+	`_v`.`FirstTableId`,
 	`_v`.`Id`,
-	`_v`.`Usage`,
-	`_v`.`FirstTableId`
+	`_v`.`Usage`
 FROM
 	(
 		SELECT DISTINCT
@@ -127,9 +127,9 @@ SET     @Usage_2 = 1
 
 SELECT
 	`key_data_result`.`Id`,
+	`_v`.`FirstTableId`,
 	`_v`.`Id`,
-	`_v`.`Usage`,
-	`_v`.`FirstTableId`
+	`_v`.`Usage`
 FROM
 	(
 		SELECT DISTINCT
@@ -190,9 +190,9 @@ BeforeExecute
 
 CREATE TABLE `Table404Two`
 (
+	`FirstTableId` INT NOT NULL,
 	`Id`           INT NOT NULL,
-	`Usage`        INT NOT NULL,
-	`FirstTableId` INT NOT NULL
+	`Usage`        INT NOT NULL
 )
 
 BeforeExecute
@@ -200,17 +200,17 @@ BeforeExecute
 
 INSERT INTO `Table404Two`
 (
+	`FirstTableId`,
 	`Id`,
-	`Usage`,
-	`FirstTableId`
+	`Usage`
 )
 VALUES
-(1,0,1),
-(2,0,1),
-(3,1,1),
-(4,0,2),
-(5,1,2),
-(6,1,2)
+(1,1,0),
+(1,2,0),
+(1,3,1),
+(2,4,0),
+(2,5,1),
+(2,6,1)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -219,9 +219,9 @@ SET     @take = 1
 
 SELECT
 	`key_data_result`.`Id`,
+	`_v`.`FirstTableId`,
 	`_v`.`Id`,
-	`_v`.`Usage`,
-	`_v`.`FirstTableId`
+	`_v`.`Usage`
 FROM
 	(
 		SELECT DISTINCT
@@ -257,9 +257,9 @@ SET     @Usage_2 = 0
 
 SELECT
 	`key_data_result`.`Id`,
+	`_v`.`FirstTableId`,
 	`_v`.`Id`,
-	`_v`.`Usage`,
-	`_v`.`FirstTableId`
+	`_v`.`Usage`
 FROM
 	(
 		SELECT DISTINCT
@@ -295,9 +295,9 @@ SET     @Usage_2 = 1
 
 SELECT
 	`key_data_result`.`Id`,
+	`_v`.`FirstTableId`,
 	`_v`.`Id`,
-	`_v`.`Usage`,
-	`_v`.`FirstTableId`
+	`_v`.`Usage`
 FROM
 	(
 		SELECT DISTINCT

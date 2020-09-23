@@ -10,11 +10,11 @@ SELECT
 		WHERE
 			`d`.`PersonID` = `i`.`PersonID`
 	),
-	`i`.`PersonID`,
 	`i`.`FirstName`,
+	`i`.`Gender`,
 	`i`.`LastName`,
 	`i`.`MiddleName`,
-	`i`.`Gender`,
+	`i`.`PersonID`,
 	Concat(`i`.`LastName`, ', ', `i`.`FirstName`),
 	(
 		SELECT

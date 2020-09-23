@@ -2,11 +2,11 @@
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`t1`.`PersonID`,
 	`t1`.`FirstName`,
+	`t1`.`Gender`,
 	`t1`.`LastName`,
 	`t1`.`MiddleName`,
-	`t1`.`Gender`,
+	`t1`.`PersonID`,
 	Concat(`t1`.`LastName`, ', ', `t1`.`FirstName`),
 	(
 		SELECT
@@ -23,11 +23,11 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`i`.`PersonID`,
 	`i`.`FirstName`,
+	`i`.`Gender`,
 	`i`.`LastName`,
 	`i`.`MiddleName`,
-	`i`.`Gender`,
+	`i`.`PersonID`,
 	Concat(`i`.`LastName`, ', ', `i`.`FirstName`),
 	(
 		SELECT

@@ -3,9 +3,9 @@
 
 CREATE TABLE `Issue1303`
 (
-	`ID`     INT           NOT NULL,
 	`Array`  VARBINARY(10)     NULL,
 	`Binary` VARBINARY(10)     NULL,
+	`ID`     INT           NOT NULL,
 
 	CONSTRAINT `PK_Issue1303` PRIMARY KEY CLUSTERED (`ID`)
 )
@@ -34,9 +34,9 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`_`.`ID`,
 	`_`.`Array`,
-	`_`.`Binary`
+	`_`.`Binary`,
+	`_`.`ID`
 FROM
 	`Issue1303` `_`
 WHERE
@@ -47,9 +47,9 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`_`.`ID`,
 	`_`.`Array`,
-	`_`.`Binary`
+	`_`.`Binary`,
+	`_`.`ID`
 FROM
 	`Issue1303` `_`
 WHERE
@@ -60,9 +60,9 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`_`.`ID`,
 	`_`.`Array`,
-	`_`.`Binary`
+	`_`.`Binary`,
+	`_`.`ID`
 FROM
 	`Issue1303` `_`
 WHERE

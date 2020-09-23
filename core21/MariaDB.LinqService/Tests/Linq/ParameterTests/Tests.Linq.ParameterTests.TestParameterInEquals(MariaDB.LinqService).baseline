@@ -11,8 +11,8 @@ BeforeExecute
 
 CREATE TABLE `TestEqualsTable2`
 (
-	`Id` INT NOT NULL,
-	`FK` INT     NULL
+	`FK` INT     NULL,
+	`Id` INT NOT NULL
 )
 
 BeforeExecute

@@ -2,26 +2,26 @@
 -- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(8) -- String
 SET     @FirstName = 'Update14'
+DECLARE @Gender String(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
 	`FirstName`,
+	`Gender`,
 	`LastName`,
-	`MiddleName`,
-	`Gender`
+	`MiddleName`
 )
 VALUES
 (
 	@FirstName,
+	@Gender,
 	@LastName,
-	@MiddleName,
-	@Gender
+	@MiddleName
 )
 
 BeforeExecute

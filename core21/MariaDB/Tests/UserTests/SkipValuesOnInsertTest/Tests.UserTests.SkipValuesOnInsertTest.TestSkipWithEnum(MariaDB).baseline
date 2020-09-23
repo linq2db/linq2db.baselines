@@ -3,38 +3,38 @@
 
 CREATE TABLE `PR_1598_Insert_Enum_Table`
 (
-	`Id`     INT          NOT NULL,
-	`Name`   VARCHAR(255)     NULL,
 	`Age`    INT              NULL,
 	`Gender` VARCHAR(255)     NULL,
+	`Id`     INT          NOT NULL,
+	`Name`   VARCHAR(255)     NULL,
 
 	CONSTRAINT `PK_PR_1598_Insert_Enum_Table` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Name VarChar(3) -- String
-SET     @Name = 'Max'
 DECLARE @Age Int32
 SET     @Age = 20
 DECLARE @Gender VarChar(4) -- String
 SET     @Gender = 'Male'
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Name VarChar(3) -- String
+SET     @Name = 'Max'
 
 INSERT INTO `PR_1598_Insert_Enum_Table`
 (
-	`Id`,
-	`Name`,
 	`Age`,
-	`Gender`
+	`Gender`,
+	`Id`,
+	`Name`
 )
 VALUES
 (
-	@Id,
-	@Name,
 	@Age,
-	@Gender
+	@Gender,
+	@Id,
+	@Name
 )
 
 BeforeExecute
@@ -43,10 +43,10 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`t`.`Id`,
-	`t`.`Name`,
 	`t`.`Age`,
-	`t`.`Gender`
+	`t`.`Gender`,
+	`t`.`Id`,
+	`t`.`Name`
 FROM
 	`PR_1598_Insert_Enum_Table` `t`
 WHERE
@@ -55,24 +55,24 @@ LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @Age Int32
+SET     @Age = 25
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Jenny'
-DECLARE @Age Int32
-SET     @Age = 25
 
 INSERT INTO `PR_1598_Insert_Enum_Table`
 (
+	`Age`,
 	`Id`,
-	`Name`,
-	`Age`
+	`Name`
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
@@ -81,10 +81,10 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`t`.`Id`,
-	`t`.`Name`,
 	`t`.`Age`,
-	`t`.`Gender`
+	`t`.`Gender`,
+	`t`.`Id`,
+	`t`.`Name`
 FROM
 	`PR_1598_Insert_Enum_Table` `t`
 WHERE

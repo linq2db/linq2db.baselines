@@ -2,8 +2,8 @@
 -- MariaDB MySql.Official MySql
 
 SELECT DISTINCT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
+	`t1`.`ChildID`,
+	`t1`.`ParentID`
 FROM
 	`Child` `t1`
 WHERE
@@ -13,7 +13,7 @@ WHERE
 		FROM
 			`Child` `p`
 		WHERE
-			`p`.`ParentID` = 3 AND `t1`.`ParentID` = `p`.`ParentID` AND
-			`t1`.`ChildID` = `p`.`ChildID`
+			`p`.`ParentID` = 3 AND `t1`.`ChildID` = `p`.`ChildID` AND
+			`t1`.`ParentID` = `p`.`ParentID`
 	)
 

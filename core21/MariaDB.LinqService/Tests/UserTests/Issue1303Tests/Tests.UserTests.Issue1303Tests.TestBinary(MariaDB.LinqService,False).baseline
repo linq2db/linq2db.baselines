@@ -3,9 +3,9 @@
 
 CREATE TABLE `Issue1303`
 (
-	`ID`     INT           NOT NULL,
 	`Array`  VARBINARY(10)     NULL,
 	`Binary` VARBINARY(10)     NULL,
+	`ID`     INT           NOT NULL,
 
 	CONSTRAINT `PK_Issue1303` PRIMARY KEY CLUSTERED (`ID`)
 )
@@ -36,9 +36,9 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	`_`.`ID`,
 	`_`.`Array`,
-	`_`.`Binary`
+	`_`.`Binary`,
+	`_`.`ID`
 FROM
 	`Issue1303` `_`
 WHERE
@@ -53,9 +53,9 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	`_`.`ID`,
 	`_`.`Array`,
-	`_`.`Binary`
+	`_`.`Binary`,
+	`_`.`ID`
 FROM
 	`Issue1303` `_`
 WHERE
@@ -70,9 +70,9 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	`_`.`ID`,
 	`_`.`Array`,
-	`_`.`Binary`
+	`_`.`Binary`,
+	`_`.`ID`
 FROM
 	`Issue1303` `_`
 WHERE
