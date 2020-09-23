@@ -16,14 +16,14 @@ SELECT guidDataType FROM AllTypes WHERE ID = 2
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p Raw(16) -- Binary
-SET     @p = HEXTORAW('AFD2795215F1D94AE05011AC020001EA')
+SET     @p = HEXTORAW('AFE9D06CE83DDC8AE05011AC020001D6')
 
 SELECT :p FROM sys.dual                                     
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p Raw(16) -- Binary
-SET     @p = HEXTORAW('AFD2795215F1D94AE05011AC020001EA')
+SET     @p = HEXTORAW('AFE9D06CE83DDC8AE05011AC020001D6')
 
 SELECT :p FROM sys.dual                                      
 
