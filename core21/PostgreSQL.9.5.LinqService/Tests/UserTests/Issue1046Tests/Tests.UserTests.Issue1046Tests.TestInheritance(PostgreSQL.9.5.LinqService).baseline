@@ -36,8 +36,8 @@ BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."TargetName",
 	p."Id",
+	p."TargetName",
 	p."BdaValue"
 FROM
 	"Task" p
