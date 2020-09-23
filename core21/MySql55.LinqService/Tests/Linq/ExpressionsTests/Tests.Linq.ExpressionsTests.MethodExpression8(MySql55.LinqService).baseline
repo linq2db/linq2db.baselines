@@ -2,8 +2,8 @@
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`ch`.`ParentID`,
-	`ch`.`ChildID`
+	`ch`.`ChildID`,
+	`ch`.`ParentID`
 FROM
 	`Child` `ch`
 		INNER JOIN `Parent` `p` ON `p`.`ParentID` = Floor(Cast(`ch`.`ChildID` as Decimal(29,10)) / 10)

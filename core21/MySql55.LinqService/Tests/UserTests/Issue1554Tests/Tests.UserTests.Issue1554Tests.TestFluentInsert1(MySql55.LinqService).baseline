@@ -3,9 +3,9 @@
 
 CREATE TABLE `Issue1554FluentTable`
 (
-	`Id`              INT          NOT NULL,
 	`ClaimedKeyType`  VARCHAR(255) NOT NULL,
 	`ClaimedKeyTypeN` VARCHAR(255)     NULL,
+	`Id`              INT          NOT NULL,
 
 	CONSTRAINT `PK_Issue1554FluentTable` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -38,9 +38,9 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	`t1`.`Id`,
 	`t1`.`ClaimedKeyType`,
-	`t1`.`ClaimedKeyTypeN`
+	`t1`.`ClaimedKeyTypeN`,
+	`t1`.`Id`
 FROM
 	`Issue1554FluentTable` `t1`
 LIMIT @take

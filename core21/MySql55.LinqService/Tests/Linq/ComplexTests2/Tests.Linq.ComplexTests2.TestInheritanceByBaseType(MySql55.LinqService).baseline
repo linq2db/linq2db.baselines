@@ -5,9 +5,9 @@ CREATE TABLE `Animals4`
 (
 	`AnimalType`    VARCHAR(40)  NOT NULL,
 	`AnimalType2`   VARCHAR(40)  NOT NULL,
+	`Discriminator` VARCHAR(40)  NOT NULL,
 	`Id`            INT          NOT NULL,
 	`Name`          VARCHAR(255)     NULL,
-	`Discriminator` VARCHAR(40)  NOT NULL,
 	`EyeId`         INT              NULL,
 	`Second`        VARCHAR(40)      NULL,
 	`First`         VARCHAR(40)      NULL,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Int32
 SET     @Id = 1
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO `Animals4`
 (
-	`Discriminator`,
 	`Name`,
 	`Id`,
+	`Discriminator`,
 	`AnimalType2`,
 	`AnimalType`,
 	`EyeId`,
@@ -85,9 +85,9 @@ INSERT INTO `Animals4`
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @AnimalType VarChar(3) -- String
-SET     @AnimalType = 'Big'
-DECLARE @AnimalType2 VarChar(3) -- String
-SET     @AnimalType2 = 'Big'
-DECLARE @Id Int32
-SET     @Id = 2
 DECLARE @Name VarChar(10) -- String
 SET     @Name = 'WildAnimal'
+DECLARE @Id Int32
+SET     @Id = 2
 DECLARE @Discriminator VarChar(10) -- String
 SET     @Discriminator = 'WildAnimal'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
 
 INSERT INTO `Animals4`
 (
-	`AnimalType`,
-	`AnimalType2`,
-	`Id`,
 	`Name`,
-	`Discriminator`
+	`Id`,
+	`Discriminator`,
+	`AnimalType2`,
+	`AnimalType`
 )
 VALUES
 (
-	@AnimalType,
-	@AnimalType2,
-	@Id,
 	@Name,
-	@Discriminator
+	@Id,
+	@Discriminator,
+	@AnimalType2,
+	@AnimalType
 )
 
 BeforeExecute
@@ -163,12 +163,12 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Cerberus'
 DECLARE @Id Int32
 SET     @Id = 666
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType VarChar(3) -- String
@@ -182,9 +182,9 @@ SET     @DogName_First = 'Good'
 
 INSERT INTO `Animals4`
 (
-	`Discriminator`,
 	`Name`,
 	`Id`,
+	`Discriminator`,
 	`AnimalType2`,
 	`AnimalType`,
 	`EyeId`,
@@ -193,9 +193,9 @@ INSERT INTO `Animals4`
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -209,9 +209,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`_`.`Discriminator`,
 	`_`.`Name`,
 	`_`.`Id`,
+	`_`.`Discriminator`,
 	`_`.`AnimalType2`,
 	`_`.`AnimalType`,
 	`_`.`EyeId`,
@@ -225,12 +225,12 @@ LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Cerberus'
 DECLARE @Id Int32
 SET     @Id = 666
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(5) -- String
 SET     @AnimalType2 = 'Small'
 DECLARE @AnimalType VarChar(3) -- String
@@ -244,9 +244,9 @@ SET     @DogName_First = 'Good'
 
 INSERT INTO `Animals4`
 (
-	`Discriminator`,
 	`Name`,
 	`Id`,
+	`Discriminator`,
 	`AnimalType2`,
 	`AnimalType`,
 	`EyeId`,
@@ -255,9 +255,9 @@ INSERT INTO `Animals4`
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -265,8 +265,8 @@ VALUES
 	@DogName_First
 )
 ON DUPLICATE KEY UPDATE
-	`Discriminator` = @Discriminator,
 	`Name` = @Name,
+	`Discriminator` = @Discriminator,
 	`AnimalType2` = @AnimalType2,
 	`AnimalType` = @AnimalType,
 	`EyeId` = @EyeId,
@@ -279,9 +279,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`_`.`Discriminator`,
 	`_`.`Name`,
 	`_`.`Id`,
+	`_`.`Discriminator`,
 	`_`.`AnimalType2`,
 	`_`.`AnimalType`,
 	`_`.`EyeId`,
@@ -299,10 +299,10 @@ DECLARE @AnimalType VarChar(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 VarChar(5) -- String
 SET     @AnimalType2 = 'Small'
-DECLARE @Name VarChar(8) -- String
-SET     @Name = 'Cerberus'
 DECLARE @Discriminator VarChar(3) -- String
 SET     @Discriminator = 'Dog'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'Cerberus'
 DECLARE @EyeId Int32
 SET     @EyeId = 2
 DECLARE @DogName_Second VarChar(3) -- String
@@ -317,8 +317,8 @@ UPDATE
 SET
 	`t1`.`AnimalType` = @AnimalType,
 	`t1`.`AnimalType2` = @AnimalType2,
-	`t1`.`Name` = @Name,
 	`t1`.`Discriminator` = @Discriminator,
+	`t1`.`Name` = @Name,
 	`t1`.`EyeId` = @EyeId,
 	`t1`.`Second` = @DogName_Second,
 	`t1`.`First` = @DogName_First
@@ -331,9 +331,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`_`.`Discriminator`,
 	`_`.`Name`,
 	`_`.`Id`,
+	`_`.`Discriminator`,
 	`_`.`AnimalType2`,
 	`_`.`AnimalType`,
 	`_`.`EyeId`,

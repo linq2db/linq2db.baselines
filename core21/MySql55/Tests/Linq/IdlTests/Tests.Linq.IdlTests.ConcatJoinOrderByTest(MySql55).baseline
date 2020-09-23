@@ -7,16 +7,16 @@ SELECT
 FROM
 	(
 		SELECT
-			`pat`.`PersonID`,
-			`pat`.`Diagnosis`
+			`pat`.`Diagnosis`,
+			`pat`.`PersonID`
 		FROM
 			`Patient` `pat`
 		WHERE
 			`pat`.`Diagnosis` = 'a'
 		UNION ALL
 		SELECT
-			`pat_1`.`PersonID`,
-			`pat_1`.`Diagnosis`
+			`pat_1`.`Diagnosis`,
+			`pat_1`.`PersonID`
 		FROM
 			`Patient` `pat_1`
 		WHERE

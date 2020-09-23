@@ -4,15 +4,15 @@ DECLARE @id_1 Int32
 SET     @id_1 = 3
 
 SELECT
-	`_`.`ID`,
-	`_`.`MoneyValue`,
+	`_`.`BigIntValue`,
+	`_`.`BoolValue`,
 	`_`.`DateTimeValue`,
 	`_`.`DateTimeValue2`,
-	`_`.`BoolValue`,
 	`_`.`GuidValue`,
-	`_`.`SmallIntValue`,
+	`_`.`ID`,
 	`_`.`IntValue`,
-	`_`.`BigIntValue`,
+	`_`.`MoneyValue`,
+	`_`.`SmallIntValue`,
 	`_`.`StringValue`
 FROM
 	`LinqDataTypes` `_`
@@ -32,15 +32,15 @@ DECLARE @id_1 Int32
 SET     @id_1 = 4
 
 SELECT
-	`_`.`ID`,
-	`_`.`MoneyValue`,
+	`_`.`BigIntValue`,
+	`_`.`BoolValue`,
 	`_`.`DateTimeValue`,
 	`_`.`DateTimeValue2`,
-	`_`.`BoolValue`,
 	`_`.`GuidValue`,
-	`_`.`SmallIntValue`,
+	`_`.`ID`,
 	`_`.`IntValue`,
-	`_`.`BigIntValue`,
+	`_`.`MoneyValue`,
+	`_`.`SmallIntValue`,
 	`_`.`StringValue`
 FROM
 	`LinqDataTypes` `_`

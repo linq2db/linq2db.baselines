@@ -14,12 +14,12 @@ SET     @id = 1001
 
 INSERT INTO `Child`
 (
-	`ParentID`,
-	`ChildID`
+	`ChildID`,
+	`ParentID`
 )
 SELECT
-	`c_1`.`ParentID`,
-	@id
+	@id,
+	`c_1`.`ParentID`
 FROM
 	`Child` `c_1`
 WHERE

@@ -43,9 +43,9 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`,
-	`t`.`ValueStr`,
-	`t`.`Id`
+	`t`.`ValueStr`
 FROM
 	`InstanceClass` `t`
 WHERE
@@ -58,9 +58,9 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`,
-	`t`.`ValueStr`,
-	`t`.`Id`
+	`t`.`ValueStr`
 FROM
 	`InstanceClass` `t`
 WHERE

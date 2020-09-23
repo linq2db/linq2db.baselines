@@ -2,8 +2,8 @@
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`p`.`PersonID`,
 	`p`.`Gender`,
+	`p`.`PersonID`,
 	`p`.`FirstName`,
 	`p`.`MiddleName`,
 	`p`.`LastName`

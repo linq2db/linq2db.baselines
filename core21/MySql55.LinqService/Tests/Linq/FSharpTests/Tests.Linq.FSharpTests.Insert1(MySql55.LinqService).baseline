@@ -9,20 +9,20 @@ WHERE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @ParentID Int32
-SET     @ParentID = 1
 DECLARE @ChildID Int32
 SET     @ChildID = 1001
+DECLARE @ParentID Int32
+SET     @ParentID = 1
 
 INSERT INTO `Child`
 (
-	`ParentID`,
-	`ChildID`
+	`ChildID`,
+	`ParentID`
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute

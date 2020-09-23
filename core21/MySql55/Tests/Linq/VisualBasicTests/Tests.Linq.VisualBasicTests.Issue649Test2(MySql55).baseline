@@ -4,8 +4,8 @@
 CREATE TABLE `activity649`
 (
 	`activityid` INT      AUTO_INCREMENT NOT NULL,
-	`personid`   INT                     NOT NULL,
 	`added`      DATETIME                NOT NULL,
+	`personid`   INT                     NOT NULL,
 
 	CONSTRAINT `PK_activity649` PRIMARY KEY CLUSTERED (`activityid`)
 )

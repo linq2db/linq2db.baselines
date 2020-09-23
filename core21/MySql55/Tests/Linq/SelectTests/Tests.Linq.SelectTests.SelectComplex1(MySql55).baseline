@@ -4,8 +4,8 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`_`.`PersonID`,
 	`_`.`Gender`,
+	`_`.`PersonID`,
 	`_`.`FirstName`,
 	`_`.`MiddleName`,
 	`_`.`LastName`

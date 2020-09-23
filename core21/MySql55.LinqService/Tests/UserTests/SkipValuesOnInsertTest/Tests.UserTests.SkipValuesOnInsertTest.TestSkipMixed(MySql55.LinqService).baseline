@@ -3,33 +3,33 @@
 
 CREATE TABLE `PR_1598_Mixed_Table`
 (
+	`Age`  INT              NULL,
 	`Id`   INT          NOT NULL,
 	`Name` VARCHAR(255)     NULL,
-	`Age`  INT              NULL,
 
 	CONSTRAINT `PK_PR_1598_Mixed_Table` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @Age Int32
+SET     @Age = 20
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Jason'
-DECLARE @Age Int32
-SET     @Age = 20
 
 INSERT INTO `PR_1598_Mixed_Table`
 (
+	`Age`,
 	`Id`,
-	`Name`,
-	`Age`
+	`Name`
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
@@ -38,9 +38,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_Mixed_Table` `t`
 WHERE
@@ -67,9 +67,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_Mixed_Table` `t`
 WHERE
@@ -78,20 +78,20 @@ LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Id Int32
-SET     @Id = 2
 DECLARE @Age Int32
 SET     @Age = 25
+DECLARE @Id Int32
+SET     @Id = 2
 
 INSERT INTO `PR_1598_Mixed_Table`
 (
-	`Id`,
-	`Age`
+	`Age`,
+	`Id`
 )
 VALUES
 (
-	@Id,
-	@Age
+	@Age,
+	@Id
 )
 
 BeforeExecute
@@ -100,9 +100,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_Mixed_Table` `t`
 WHERE
@@ -111,18 +111,18 @@ LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Name VarChar(5) -- String
-SET     @Name = 'Jessy'
 DECLARE @Age Int32
 SET     @Age = 25
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'Jessy'
 DECLARE @Id Int32
 SET     @Id = 2
 
 UPDATE
 	`PR_1598_Mixed_Table` `t1`
 SET
-	`t1`.`Name` = @Name,
-	`t1`.`Age` = @Age
+	`t1`.`Age` = @Age,
+	`t1`.`Name` = @Name
 WHERE
 	`t1`.`Id` = @Id
 
@@ -132,9 +132,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t`.`Age`,
 	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
+	`t`.`Name`
 FROM
 	`PR_1598_Mixed_Table` `t`
 WHERE

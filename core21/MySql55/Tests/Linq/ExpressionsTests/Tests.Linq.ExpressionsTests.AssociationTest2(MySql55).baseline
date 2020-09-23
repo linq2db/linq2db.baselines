@@ -2,9 +2,9 @@
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`gc`.`ParentID`,
 	`gc`.`ChildID`,
-	`gc`.`GrandChildID`
+	`gc`.`GrandChildID`,
+	`gc`.`ParentID`
 FROM
 	`Parent` `cp`
 		INNER JOIN `GrandChild` `gc` ON `cp`.`ParentID` = `gc`.`ParentID` AND `gc`.`ChildID` = 22

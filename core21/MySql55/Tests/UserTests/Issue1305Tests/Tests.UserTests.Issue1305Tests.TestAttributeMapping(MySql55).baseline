@@ -7,8 +7,8 @@ CREATE TABLE `ColumnOrderTest`
 	`EffectiveStart` DATETIME     NOT NULL,
 	`EffectiveEnd`   DATETIME         NULL,
 	`Key`            INT          NOT NULL,
-	`Code`           VARCHAR(255)     NULL,
 	`Name`           VARCHAR(255)     NULL,
+	`Code`           VARCHAR(255)     NULL,
 	`Audit1ID`       INT          NOT NULL,
 	`Audit2ID`       INT          NOT NULL,
 

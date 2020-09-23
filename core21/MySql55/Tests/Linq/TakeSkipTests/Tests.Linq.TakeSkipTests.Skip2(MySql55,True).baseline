@@ -4,8 +4,8 @@ DECLARE @skip Int32
 SET     @skip = 3
 
 SELECT
-	`ch`.`ParentID`,
-	`ch`.`ChildID`
+	`ch`.`ChildID`,
+	`ch`.`ParentID`
 FROM
 	`Child` `ch`
 WHERE

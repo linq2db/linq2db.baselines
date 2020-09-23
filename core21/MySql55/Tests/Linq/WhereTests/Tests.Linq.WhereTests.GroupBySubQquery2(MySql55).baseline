@@ -2,8 +2,8 @@
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`x`.`ParentID`,
-	`x`.`ChildID`
+	`x`.`ChildID`,
+	`x`.`ParentID`
 FROM
 	`Child` `x`
 WHERE
