@@ -2,15 +2,15 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[ID],
-	[t1].[MoneyValue],
+	[t1].[BigIntValue],
+	[t1].[BoolValue],
 	[t1].[DateTimeValue],
 	[t1].[DateTimeValue2],
-	[t1].[BoolValue],
 	[t1].[GuidValue],
-	[t1].[SmallIntValue],
+	[t1].[ID],
 	[t1].[IntValue],
-	[t1].[BigIntValue],
+	[t1].[MoneyValue],
+	[t1].[SmallIntValue],
 	[t1].[StringValue]
 FROM
 	[LinqDataTypes] [t1]
@@ -19,15 +19,15 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_".ID,
-	"_"."MoneyValue",
+	"_"."BigIntValue",
+	"_"."BoolValue",
 	"_"."DateTimeValue",
 	"_"."DateTimeValue2",
-	"_"."BoolValue",
 	"_"."GuidValue",
-	"_"."SmallIntValue",
+	"_".ID,
 	"_"."IntValue",
-	"_"."BigIntValue",
+	"_"."MoneyValue",
+	"_"."SmallIntValue",
 	"_"."StringValue"
 FROM
 	"LinqDataTypes" "_"

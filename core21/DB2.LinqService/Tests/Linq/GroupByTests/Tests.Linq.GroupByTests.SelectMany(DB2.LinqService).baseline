@@ -2,8 +2,8 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
+	"keyParam"."ChildID",
+	"keyParam"."ParentID"
 FROM
 	(
 		SELECT

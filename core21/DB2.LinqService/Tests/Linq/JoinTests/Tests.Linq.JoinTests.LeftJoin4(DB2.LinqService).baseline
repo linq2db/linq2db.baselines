@@ -3,8 +3,8 @@
 
 SELECT
 	"key_data_result"."ParentID",
-	"_y1"."ParentID",
-	"_y1"."ChildID"
+	"_y1"."ChildID",
+	"_y1"."ParentID"
 FROM
 	(
 		SELECT DISTINCT

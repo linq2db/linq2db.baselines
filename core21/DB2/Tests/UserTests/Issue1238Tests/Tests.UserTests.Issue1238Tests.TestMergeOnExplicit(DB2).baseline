@@ -25,15 +25,15 @@ SET
 WHEN NOT MATCHED THEN
 INSERT
 (
+	"TypeDiscriminator",
 	"InheritanceParentId",
-	"Name",
-	"TypeDiscriminator"
+	"Name"
 )
 VALUES
 (
+	"Source"."Data_1",
 	"Source"."Key1",
-	"Source"."Key2",
-	"Source"."Data_1"
+	"Source"."Key2"
 )
 
 BeforeExecute
@@ -65,15 +65,15 @@ SET
 WHEN NOT MATCHED THEN
 INSERT
 (
+	"TypeDiscriminator",
 	"InheritanceParentId",
-	"Name",
-	"TypeDiscriminator"
+	"Name"
 )
 VALUES
 (
+	"Source"."Data_1",
 	"Source"."Key1",
-	"Source"."Key2",
-	"Source"."Data_1"
+	"Source"."Key2"
 )
 
 BeforeExecute

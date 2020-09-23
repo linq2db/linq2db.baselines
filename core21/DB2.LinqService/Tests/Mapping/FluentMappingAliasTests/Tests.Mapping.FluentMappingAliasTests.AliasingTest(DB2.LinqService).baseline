@@ -43,9 +43,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Id",
 	"t"."Value",
-	"t"."ValueStr",
-	"t"."Id"
+	"t"."ValueStr"
 FROM
 	"InstanceClass" "t"
 WHERE
@@ -58,9 +58,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Id",
 	"t"."Value",
-	"t"."ValueStr",
-	"t"."Id"
+	"t"."ValueStr"
 FROM
 	"InstanceClass" "t"
 WHERE

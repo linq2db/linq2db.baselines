@@ -5,9 +5,9 @@ CREATE TABLE "Animals7"
 (
 	"AnimalType"    NVarChar(40)  NOT NULL,
 	"AnimalType2"   NVarChar(40)  NOT NULL,
+	"Discriminator" NVarChar(40)  NOT NULL,
 	"Id"            Int           NOT NULL,
 	"Name"          NVarChar(255)     NULL,
-	"Discriminator" NVarChar(40)  NOT NULL,
 	"EyeId"         Int               NULL,
 	"Second"        NVarChar(40)      NULL,
 	"First"         NVarChar(40)      NULL,
@@ -55,12 +55,12 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Discriminator VarChar(3) -- String
-SET     @Discriminator = 'Dog'
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
 DECLARE @AnimalType2 VarChar(3) -- String
 SET     @AnimalType2 = 'Big'
 DECLARE @AnimalType VarChar(3) -- String
@@ -74,9 +74,9 @@ SET     @DogName_First = 'a'
 
 INSERT INTO "Animals7"
 (
-	"Discriminator",
 	"Name",
 	"Id",
+	"Discriminator",
 	"AnimalType2",
 	"AnimalType",
 	"EyeId",
@@ -85,9 +85,9 @@ INSERT INTO "Animals7"
 )
 VALUES
 (
-	@Discriminator,
 	@Name,
 	@Id,
+	@Discriminator,
 	@AnimalType2,
 	@AnimalType,
 	@EyeId,
@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @AnimalType VarChar(3) -- String
-SET     @AnimalType = 'Big'
-DECLARE @AnimalType2 VarChar(3) -- String
-SET     @AnimalType2 = 'Big'
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
 DECLARE @Name VarChar(10) -- String
 SET     @Name = 'WildAnimal'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
 DECLARE @Discriminator VarChar(10) -- String
 SET     @Discriminator = 'WildAnimal'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
 
 INSERT INTO "Animals7"
 (
-	"AnimalType",
-	"AnimalType2",
-	"Id",
 	"Name",
-	"Discriminator"
+	"Id",
+	"Discriminator",
+	"AnimalType2",
+	"AnimalType"
 )
 VALUES
 (
-	@AnimalType,
-	@AnimalType2,
-	@Id,
 	@Name,
-	@Discriminator
+	@Id,
+	@Discriminator,
+	@AnimalType2,
+	@AnimalType
 )
 
 BeforeExecute

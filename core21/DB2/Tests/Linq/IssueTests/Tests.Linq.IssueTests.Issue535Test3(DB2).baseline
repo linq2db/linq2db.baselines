@@ -3,11 +3,11 @@
 
 CREATE TABLE "CustomerBase"
 (
-	"Id"           Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
 	"ClientType"   NChar                                      NOT NULL,
-	"Name"         NVarChar(255)                                  NULL,
 	"ContactEmail" NVarChar(255)                                  NULL,
 	"Enabled"      smallint                                       NULL,
+	"Id"           Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
+	"Name"         NVarChar(255)                                  NULL,
 
 	CONSTRAINT "PK_CustomerBase" PRIMARY KEY ("Id")
 )

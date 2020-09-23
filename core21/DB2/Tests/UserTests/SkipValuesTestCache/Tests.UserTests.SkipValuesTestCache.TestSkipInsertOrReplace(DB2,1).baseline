@@ -3,9 +3,9 @@
 
 CREATE TABLE "PR_1598_Insert_Table_Cache"
 (
+	"Age"  Int               NULL,
 	"Id"   Int           NOT NULL,
 	"Name" NVarChar(255)     NULL,
-	"Age"  Int               NULL,
 
 	CONSTRAINT "PK_PR_1598_Insert_Table_Cache" PRIMARY KEY ("Id")
 )
@@ -42,9 +42,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
@@ -83,9 +83,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE

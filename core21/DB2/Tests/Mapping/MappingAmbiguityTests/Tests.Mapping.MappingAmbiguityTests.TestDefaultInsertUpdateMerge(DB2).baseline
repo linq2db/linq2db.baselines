@@ -3,13 +3,13 @@
 
 CREATE TABLE "TestTable"
 (
-	ID        Int           NOT NULL,
 	"Field1"  Int           NOT NULL,
 	"Field2"  Int           NOT NULL,
 	"Field3"  Int           NOT NULL,
 	"Field4"  Int           NOT NULL,
-	"field11" NVarChar(255)     NULL,
 	"Field5"  Int           NOT NULL,
+	ID        Int           NOT NULL,
+	"field11" NVarChar(255)     NULL,
 
 	CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
 )
@@ -25,8 +25,8 @@ USING (
 		"Target_1"."Field2",
 		"Target_1"."Field3",
 		"Target_1"."Field4",
-		"Target_1"."field11" as "field1_1",
-		"Target_1"."Field5"
+		"Target_1"."Field5",
+		"Target_1"."field11" as "field1_1"
 	FROM
 		"TestTable" "Target_1"
 ) "Source"
@@ -36,31 +36,31 @@ USING (
 	"Field2", 
 	"Field3", 
 	"Field4", 
-	"field1_1", 
-	"Field5"
+	"Field5", 
+	"field1_1"
 )
 ON ("Target".ID = "Source".ID)
 
 WHEN NOT MATCHED THEN
 INSERT
 (
-	ID,
 	"Field1",
 	"Field2",
 	"Field3",
 	"Field4",
-	"field11",
-	"Field5"
+	"Field5",
+	ID,
+	"field11"
 )
 VALUES
 (
-	"Source".ID,
 	"Source"."Field1",
 	"Source"."Field2",
 	"Source"."Field3",
 	"Source"."Field4",
-	"Source"."field1_1",
-	"Source"."Field5"
+	"Source"."Field5",
+	"Source".ID,
+	"Source"."field1_1"
 )
 
 WHEN MATCHED THEN
@@ -70,8 +70,8 @@ SET
 	"Target"."Field2" = "Source"."Field2",
 	"Target"."Field3" = "Source"."Field3",
 	"Target"."Field4" = "Source"."Field4",
-	"Target"."field11" = "Source"."field1_1",
-	"Target"."Field5" = "Source"."Field5"
+	"Target"."Field5" = "Source"."Field5",
+	"Target"."field11" = "Source"."field1_1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

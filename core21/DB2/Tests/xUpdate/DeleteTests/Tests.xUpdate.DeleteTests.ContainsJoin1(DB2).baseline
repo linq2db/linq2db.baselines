@@ -34,56 +34,56 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1000
 DECLARE @ChildID Integer(4) -- Int32
 SET     @ChildID = 1000
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1000
 
 INSERT INTO "Child"
 (
-	"ParentID",
-	"ChildID"
+	"ChildID",
+	"ParentID"
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1000
 DECLARE @ChildID Integer(4) -- Int32
 SET     @ChildID = 1001
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1000
 
 INSERT INTO "Child"
 (
-	"ParentID",
-	"ChildID"
+	"ChildID",
+	"ParentID"
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1000
 DECLARE @ChildID Integer(4) -- Int32
 SET     @ChildID = 1002
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1000
 
 INSERT INTO "Child"
 (
-	"ParentID",
-	"ChildID"
+	"ChildID",
+	"ParentID"
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	@ChildID,
+	@ParentID
 )
 
 BeforeExecute

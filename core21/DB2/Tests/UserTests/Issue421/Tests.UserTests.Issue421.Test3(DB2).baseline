@@ -3,36 +3,36 @@
 
 CREATE TABLE "BlobClass"
 (
-	"Id"        Int  NOT NULL,
 	"BlobValue" Blob     NULL,
+	"Id"        Int  NOT NULL,
 
 	CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
 DECLARE @BlobValue Blob(3) -- Binary
 SET     @BlobValue = BX'010203'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
 
 INSERT INTO "BlobClass"
 (
-	"Id",
-	"BlobValue"
+	"BlobValue",
+	"Id"
 )
 VALUES
 (
-	@Id,
-	@BlobValue
+	@BlobValue,
+	@Id
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."Id",
-	"_"."BlobValue"
+	"_"."BlobValue",
+	"_"."Id"
 FROM
 	"BlobClass" "_"
 WHERE
@@ -43,8 +43,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."Id",
-	"_"."BlobValue"
+	"_"."BlobValue",
+	"_"."Id"
 FROM
 	"BlobClass" "_"
 WHERE

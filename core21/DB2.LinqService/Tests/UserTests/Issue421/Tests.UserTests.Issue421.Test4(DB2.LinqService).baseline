@@ -3,8 +3,8 @@
 
 CREATE TABLE "BlobClass20"
 (
-	"Id"        Int  NOT NULL,
 	"BlobValue" Blob     NULL,
+	"Id"        Int  NOT NULL,
 
 	CONSTRAINT "PK_BlobClass20" PRIMARY KEY ("Id")
 )
@@ -14,21 +14,21 @@ BeforeExecute
 
 INSERT INTO "BlobClass20"
 (
-	"Id",
-	"BlobValue"
+	"BlobValue",
+	"Id"
 )
 VALUES
 (
-	1,
-	BX'010203'
+	BX'010203',
+	1
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."Id",
-	"_"."BlobValue"
+	"_"."BlobValue",
+	"_"."Id"
 FROM
 	"BlobClass20" "_"
 WHERE
@@ -39,8 +39,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."Id",
-	"_"."BlobValue"
+	"_"."BlobValue",
+	"_"."Id"
 FROM
 	"BlobClass20" "_"
 WHERE

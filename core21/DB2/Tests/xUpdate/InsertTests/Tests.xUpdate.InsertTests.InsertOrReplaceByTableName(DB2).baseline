@@ -12,8 +12,8 @@ BeforeExecute
 
 CREATE TABLE "xxPatient21"
 (
-	"PersonID"  Int           NOT NULL,
 	"Diagnosis" NVarChar(255)     NULL,
+	"PersonID"  Int           NOT NULL,
 
 	CONSTRAINT "PK_xxPatient21" PRIMARY KEY ("PersonID")
 )
@@ -37,13 +37,13 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		"PersonID",
-		"Diagnosis"
+		"Diagnosis",
+		"PersonID"
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		@Diagnosis,
+		@PersonID
 	)
 
 BeforeExecute
@@ -65,13 +65,13 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		"PersonID",
-		"Diagnosis"
+		"Diagnosis",
+		"PersonID"
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		@Diagnosis,
+		@PersonID
 	)
 
 BeforeExecute
@@ -101,13 +101,13 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		"PersonID",
-		"Diagnosis"
+		"Diagnosis",
+		"PersonID"
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		@Diagnosis,
+		@PersonID
 	)
 
 BeforeExecute
@@ -129,13 +129,13 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		"PersonID",
-		"Diagnosis"
+		"Diagnosis",
+		"PersonID"
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		@Diagnosis,
+		@PersonID
 	)
 
 BeforeExecute

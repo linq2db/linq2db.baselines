@@ -3,14 +3,14 @@
 
 CREATE TABLE "ValueConversion"
 (
-	"Id"                      Int           NOT NULL,
-	"Value1"                  NVarChar(200)     NULL,
-	"Value2"                  NVarChar(200)     NULL,
+	"BoolValue"               VarChar(1)    NOT NULL,
 	"Enum"                    NVarChar(50)  NOT NULL,
 	"EnumNullable"            VarChar(50)       NULL,
 	"EnumWithNull"            VarChar(50)       NULL,
 	"EnumWithNullDeclarative" VarChar(50)       NULL,
-	"BoolValue"               VarChar(1)    NOT NULL,
+	"Id"                      Int           NOT NULL,
+	"Value1"                  NVarChar(200)     NULL,
+	"Value2"                  NVarChar(200)     NULL,
 
 	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
 )
@@ -49,14 +49,14 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
+	"e"."BoolValue",
 	"e"."Enum",
 	"e"."EnumNullable",
 	"e"."EnumWithNull",
 	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue"
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2"
 FROM
 	"ValueConversion" "e"
 WHERE
@@ -97,14 +97,14 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
+	"e"."BoolValue",
 	"e"."Enum",
 	"e"."EnumNullable",
 	"e"."EnumWithNull",
 	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue"
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2"
 FROM
 	"ValueConversion" "e"
 WHERE
@@ -113,12 +113,8 @@ FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 3
-DECLARE @Value1 VarChar(21) -- String
-SET     @Value1 = '{"some":"inserted3}"}'
-DECLARE @Value2 VarChar(23) -- String
-SET     @Value2 = '[{"Value":"inserted3"}]'
+DECLARE @BoolValue VarChar(1) -- String
+SET     @BoolValue = 'Y'
 DECLARE @Enum VarChar(6) -- String
 SET     @Enum = 'Value3'
 DECLARE @EnumNullable VarChar -- String
@@ -127,44 +123,48 @@ DECLARE @EnumWithNull VarChar(6) -- String
 SET     @EnumWithNull = 'Value1'
 DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
-DECLARE @BoolValue VarChar(1) -- String
-SET     @BoolValue = 'Y'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 3
+DECLARE @Value1 VarChar(21) -- String
+SET     @Value1 = '{"some":"inserted3}"}'
+DECLARE @Value2 VarChar(23) -- String
+SET     @Value2 = '[{"Value":"inserted3"}]'
 
 INSERT INTO "ValueConversion"
 (
-	"Id",
-	"Value1",
-	"Value2",
+	"BoolValue",
 	"Enum",
 	"EnumNullable",
 	"EnumWithNull",
 	"EnumWithNullDeclarative",
-	"BoolValue"
+	"Id",
+	"Value1",
+	"Value2"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
+	@BoolValue,
 	@Enum,
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@Id,
+	@Value1,
+	@Value2
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
+	"e"."BoolValue",
 	"e"."Enum",
 	"e"."EnumNullable",
 	"e"."EnumWithNull",
 	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue"
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2"
 FROM
 	"ValueConversion" "e"
 WHERE

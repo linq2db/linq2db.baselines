@@ -14,9 +14,9 @@ BeforeExecute
 
 CREATE TABLE "TaskStage"
 (
+	"Actual" char NOT NULL,
 	"Id"     Int  NOT NULL,
 	"TaskId" Int  NOT NULL,
-	"Actual" char NOT NULL,
 
 	CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
 )
@@ -59,24 +59,24 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @Actual SmallInt(4) -- Int16
+SET     @Actual = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @TaskId Integer(4) -- Int32
 SET     @TaskId = 1
-DECLARE @Actual SmallInt(4) -- Int16
-SET     @Actual = 1
 
 INSERT INTO "TaskStage"
 (
+	"Actual",
 	"Id",
-	"TaskId",
-	"Actual"
+	"TaskId"
 )
 VALUES
 (
+	@Actual,
 	@Id,
-	@TaskId,
-	@Actual
+	@TaskId
 )
 
 BeforeExecute

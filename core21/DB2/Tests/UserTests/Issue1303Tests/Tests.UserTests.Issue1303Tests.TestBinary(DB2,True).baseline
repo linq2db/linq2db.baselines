@@ -3,9 +3,9 @@
 
 CREATE TABLE "Issue1303"
 (
-	ID       Int           NOT NULL,
 	"Array"  VarBinary(10)     NULL,
 	"Binary" VarBinary(10)     NULL,
+	ID       Int           NOT NULL,
 
 	CONSTRAINT "PK_Issue1303" PRIMARY KEY (ID)
 )
@@ -34,9 +34,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_".ID,
 	"_"."Array",
-	"_"."Binary"
+	"_"."Binary",
+	"_".ID
 FROM
 	"Issue1303" "_"
 WHERE
@@ -47,9 +47,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_".ID,
 	"_"."Array",
-	"_"."Binary"
+	"_"."Binary",
+	"_".ID
 FROM
 	"Issue1303" "_"
 WHERE
@@ -60,9 +60,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_".ID,
 	"_"."Array",
-	"_"."Binary"
+	"_"."Binary",
+	"_".ID
 FROM
 	"Issue1303" "_"
 WHERE

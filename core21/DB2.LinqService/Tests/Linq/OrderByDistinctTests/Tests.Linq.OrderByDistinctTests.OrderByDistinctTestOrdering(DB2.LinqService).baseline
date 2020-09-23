@@ -3,8 +3,8 @@
 
 CREATE TABLE "OrderByDistinctData"
 (
-	"Id"            Int           NOT NULL,
 	"DuplicateData" NVarChar(255)     NULL,
+	"Id"            Int           NOT NULL,
 	"OrderData1"    Int           NOT NULL,
 	"OrderData2"    Int           NOT NULL,
 
@@ -16,15 +16,15 @@ BeforeExecute
 
 INSERT INTO "OrderByDistinctData"
 (
-	"Id",
 	"DuplicateData",
+	"Id",
 	"OrderData1",
 	"OrderData2"
 )
 VALUES
-(1,'One',1,1),
-(10,'Two',1,1),
-(100,'Three',1,1)
+('One',1,1,1),
+('Two',10,1,1),
+('Three',100,1,1)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

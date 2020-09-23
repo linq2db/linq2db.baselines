@@ -3,9 +3,9 @@
 
 CREATE TABLE O1
 (
-	"DocEntry"    Int           NOT NULL,
 	"BplId"       Int           NOT NULL,
 	"ChaveAcesso" NVarChar(255)     NULL,
+	"DocEntry"    Int           NOT NULL,
 	"DocStatus"   NVarChar(255)     NULL
 )
 
@@ -14,9 +14,9 @@ BeforeExecute
 
 CREATE TABLE O2
 (
-	"DocEntry"    Int           NOT NULL,
 	"BplId"       Int           NOT NULL,
 	"ChaveAcesso" NVarChar(255)     NULL,
+	"DocEntry"    Int           NOT NULL,
 	"DocStatus"   NVarChar(255)     NULL
 )
 
@@ -25,9 +25,9 @@ BeforeExecute
 
 CREATE TABLE O3
 (
-	"DocEntry"    Int           NOT NULL,
 	"BplId"       Int           NOT NULL,
 	"ChaveAcesso" NVarChar(255)     NULL,
+	"DocEntry"    Int           NOT NULL,
 	"DocStatus"   NVarChar(255)     NULL
 )
 
@@ -35,42 +35,42 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t1"."DescricaoStatus",
 	"t1"."NumeroInterno",
-	"t1"."StatusValor",
-	"t1"."DescricaoStatus"
+	"t1"."StatusValor"
 FROM
 	(
 		SELECT
+			'Manual/Externo' as "DescricaoStatus",
 			"doSap"."DocEntry" as "NumeroInterno",
 			CASE
 				WHEN "doSap"."DocStatus" = 'O'
 					THEN 'Aberto'
 				ELSE 'Fechado'
-			END as "StatusValor",
-			'Manual/Externo' as "DescricaoStatus"
+			END as "StatusValor"
 		FROM
 			O1 "doSap"
 		UNION
 		SELECT
+			'Manual/Externo' as "DescricaoStatus",
 			"doSap_1"."DocEntry" as "NumeroInterno",
 			CASE
 				WHEN "doSap_1"."DocStatus" = 'O'
 					THEN 'Aberto'
 				ELSE 'Fechado'
-			END as "StatusValor",
-			'Manual/Externo' as "DescricaoStatus"
+			END as "StatusValor"
 		FROM
 			O2 "doSap_1"
 	) "t1"
 UNION
 SELECT
+	'Manual/Externo',
 	"doSap_2"."DocEntry",
 	CASE
 		WHEN "doSap_2"."DocStatus" = 'O'
 			THEN 'Aberto'
 		ELSE 'Fechado'
-	END,
-	'Manual/Externo'
+	END
 FROM
 	O3 "doSap_2"
 

@@ -12,22 +12,22 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 101
-DECLARE @TestField BigInt(8) -- Int64
-SET     @TestField = 12
 DECLARE @Int32Field Integer -- Int32
 SET     @Int32Field = NULL
+DECLARE @TestField BigInt(8) -- Int64
+SET     @TestField = 12
 
 INSERT INTO "LinqDataTypes"
 (
 	ID,
-	"BigIntValue",
-	"IntValue"
+	"IntValue",
+	"BigIntValue"
 )
 VALUES
 (
 	@Id,
-	@TestField,
-	@Int32Field
+	@Int32Field,
+	@TestField
 )
 
 BeforeExecute

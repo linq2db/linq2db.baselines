@@ -2,13 +2,13 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"t1"."ChildID",
+	"t1"."ParentID"
 FROM
 	(
 		SELECT
-			"ch"."ParentID",
 			"ch"."ChildID",
+			"ch"."ParentID",
 			ROW_NUMBER() OVER () as RN
 		FROM
 			"Child" "ch"

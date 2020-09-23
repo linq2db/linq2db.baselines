@@ -4,13 +4,13 @@ DECLARE @skip Integer(4) -- Int32
 SET     @skip = 3
 
 SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"t1"."ChildID",
+	"t1"."ParentID"
 FROM
 	(
 		SELECT
-			"ch"."ParentID",
 			"ch"."ChildID",
+			"ch"."ParentID",
 			ROW_NUMBER() OVER () as RN
 		FROM
 			"Child" "ch"

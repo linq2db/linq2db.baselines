@@ -2,16 +2,16 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"a_Middle"."ParentID",
 	"a_Middle"."ChildID",
-	"a_Middle"."GrandChildID"
+	"a_Middle"."GrandChildID",
+	"a_Middle"."ParentID"
 FROM
 	"Parent" "t"
 		LEFT JOIN (
 			SELECT
-				"a_Bottom1"."ParentID",
 				"a_Bottom1"."ChildID",
 				"a_Bottom1"."GrandChildID",
+				"a_Bottom1"."ParentID",
 				"t1"."ParentID" as "ParentID_1"
 			FROM
 				"Child" "t1"

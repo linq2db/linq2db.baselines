@@ -3,8 +3,8 @@
 
 CREATE TABLE "TestInsertOrReplaceTable"
 (
-	ID           Int           NOT NULL,
 	"FirstName"  NVarChar(255)     NULL,
+	ID           Int           NOT NULL,
 	"LastName"   NVarChar(255)     NULL,
 	"MiddleName" NVarChar(255)     NULL,
 
@@ -36,15 +36,15 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		ID,
 		"FirstName",
+		ID,
 		"LastName",
 		"MiddleName"
 	)
 	VALUES
 	(
-		@ID,
 		@FirstName,
+		@ID,
 		@LastName,
 		@MiddleName
 	)
@@ -55,8 +55,8 @@ DECLARE @FirstName_1 VarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
 SELECT
-	"x".ID,
 	"x"."FirstName",
+	"x".ID,
 	"x"."LastName",
 	"x"."MiddleName"
 FROM
@@ -90,15 +90,15 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		ID,
 		"FirstName",
+		ID,
 		"LastName",
 		"MiddleName"
 	)
 	VALUES
 	(
-		@ID,
 		@FirstName,
+		@ID,
 		@LastName,
 		@MiddleName
 	)
@@ -109,8 +109,8 @@ DECLARE @FirstName_1 VarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
 SELECT
-	"x".ID,
 	"x"."FirstName",
+	"x".ID,
 	"x"."LastName",
 	"x"."MiddleName"
 FROM

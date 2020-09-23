@@ -3,16 +3,16 @@
 
 WITH CTE_1
 (
-	"ParentID",
 	"ChildID",
+	"ParentID",
 	"ParentID_1",
 	"Value1"
 )
 AS
 (
 	SELECT
-		"child_2"."ParentID",
 		"child_2"."ChildID",
+		"child_2"."ParentID",
 		"a_Parent"."ParentID",
 		"a_Parent"."Value1"
 	FROM
@@ -27,8 +27,8 @@ SELECT
 FROM
 	(
 		SELECT
-			"child_3"."ParentID" as "Child",
-			"child_3"."ChildID" as "Child_1",
+			"child_3"."ChildID" as "Child",
+			"child_3"."ParentID" as "Child_1",
 			"a_Parent_1"."ParentID" as "Parent",
 			"a_Parent_1"."Value1" as "Parent_1"
 		FROM
@@ -36,8 +36,8 @@ FROM
 				LEFT JOIN "Parent" "a_Parent_1" ON "child_3"."ParentID" = "a_Parent_1"."ParentID"
 		UNION
 		SELECT
-			"t1"."ParentID" as "Child",
-			"t1"."ChildID" as "Child_1",
+			"t1"."ChildID" as "Child",
+			"t1"."ParentID" as "Child_1",
 			"t1"."ParentID_1" as "Parent",
 			"t1"."Value1" as "Parent_1"
 		FROM
@@ -49,16 +49,16 @@ BeforeExecute
 
 WITH CTE_1
 (
-	"ParentID",
 	"ChildID",
+	"ParentID",
 	"ParentID_1",
 	"Value1"
 )
 AS
 (
 	SELECT
-		"child_2"."ParentID",
 		"child_2"."ChildID",
+		"child_2"."ParentID",
 		"a_Parent"."ParentID",
 		"a_Parent"."Value1"
 	FROM
@@ -66,16 +66,16 @@ AS
 			LEFT JOIN "Parent" "a_Parent" ON "child_2"."ParentID" = "a_Parent"."ParentID"
 )
 SELECT
-	"t1"."ParentID",
 	"t1"."ChildID",
+	"t1"."ParentID",
 	"t1"."ParentID_1",
 	"t1"."Value1"
 FROM
 	CTE_1 "t1"
 UNION
 SELECT
-	"child_3"."ParentID",
 	"child_3"."ChildID",
+	"child_3"."ParentID",
 	"a_Parent_1"."ParentID",
 	"a_Parent_1"."Value1"
 FROM

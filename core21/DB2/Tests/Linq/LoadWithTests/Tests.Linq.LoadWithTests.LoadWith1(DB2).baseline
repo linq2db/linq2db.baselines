@@ -2,8 +2,8 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."ParentID",
 	"t"."ChildID",
+	"t"."ParentID",
 	"a_Parent"."ParentID",
 	"a_Parent"."Value1"
 FROM

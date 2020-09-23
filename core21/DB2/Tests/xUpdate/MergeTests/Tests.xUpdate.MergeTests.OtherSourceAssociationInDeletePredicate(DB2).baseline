@@ -20,12 +20,12 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 1'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'F'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 1'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'F'
 
 SELECT
 	"PersonID"
@@ -35,16 +35,16 @@ FROM
 		INSERT INTO "Person"
 		(
 			"FirstName",
+			"Gender",
 			"LastName",
-			"MiddleName",
-			"Gender"
+			"MiddleName"
 		)
 		VALUES
 		(
 			@FirstName,
+			@Gender,
 			@LastName,
-			@MiddleName,
-			@Gender
+			@MiddleName
 		)
 	)
 
@@ -52,12 +52,12 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 2'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 2'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 SELECT
 	"PersonID"
@@ -67,16 +67,16 @@ FROM
 		INSERT INTO "Person"
 		(
 			"FirstName",
+			"Gender",
 			"LastName",
-			"MiddleName",
-			"Gender"
+			"MiddleName"
 		)
 		VALUES
 		(
 			@FirstName,
+			@Gender,
 			@LastName,
-			@MiddleName,
-			@Gender
+			@MiddleName
 		)
 	)
 
@@ -84,12 +84,12 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 3'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'O'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 3'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'O'
 
 SELECT
 	"PersonID"
@@ -99,16 +99,16 @@ FROM
 		INSERT INTO "Person"
 		(
 			"FirstName",
+			"Gender",
 			"LastName",
-			"MiddleName",
-			"Gender"
+			"MiddleName"
 		)
 		VALUES
 		(
 			@FirstName,
+			@Gender,
 			@LastName,
-			@MiddleName,
-			@Gender
+			@MiddleName
 		)
 	)
 
@@ -116,12 +116,12 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 4'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'U'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 4'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'U'
 
 SELECT
 	"PersonID"
@@ -131,16 +131,16 @@ FROM
 		INSERT INTO "Person"
 		(
 			"FirstName",
+			"Gender",
 			"LastName",
-			"MiddleName",
-			"Gender"
+			"MiddleName"
 		)
 		VALUES
 		(
 			@FirstName,
+			@Gender,
 			@LastName,
-			@MiddleName,
-			@Gender
+			@MiddleName
 		)
 	)
 
@@ -148,12 +148,12 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 5'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'F'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 5'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'F'
 
 SELECT
 	"PersonID"
@@ -163,16 +163,16 @@ FROM
 		INSERT INTO "Person"
 		(
 			"FirstName",
+			"Gender",
 			"LastName",
-			"MiddleName",
-			"Gender"
+			"MiddleName"
 		)
 		VALUES
 		(
 			@FirstName,
+			@Gender,
 			@LastName,
-			@MiddleName,
-			@Gender
+			@MiddleName
 		)
 	)
 
@@ -180,12 +180,12 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(7) -- String
 SET     @FirstName = 'first 6'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 DECLARE @LastName VarChar(6) -- String
 SET     @LastName = 'last 6'
 DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 SELECT
 	"PersonID"
@@ -195,16 +195,16 @@ FROM
 		INSERT INTO "Person"
 		(
 			"FirstName",
+			"Gender",
 			"LastName",
-			"MiddleName",
-			"Gender"
+			"MiddleName"
 		)
 		VALUES
 		(
 			@FirstName,
+			@Gender,
 			@LastName,
-			@MiddleName,
-			@Gender
+			@MiddleName
 		)
 	)
 
@@ -246,38 +246,38 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @PersonID Integer(4) -- Int32
-SET     @PersonID = 87
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'sick'
+DECLARE @PersonID Integer(4) -- Int32
+SET     @PersonID = 87
 
 INSERT INTO "Patient"
 (
-	"PersonID",
-	"Diagnosis"
+	"Diagnosis",
+	"PersonID"
 )
 VALUES
 (
-	@PersonID,
-	@Diagnosis
+	@Diagnosis,
+	@PersonID
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @PersonID Integer(4) -- Int32
-SET     @PersonID = 88
 DECLARE @Diagnosis VarChar(9) -- String
 SET     @Diagnosis = 'very sick'
+DECLARE @PersonID Integer(4) -- Int32
+SET     @PersonID = 88
 
 INSERT INTO "Patient"
 (
-	"PersonID",
-	"Diagnosis"
+	"Diagnosis",
+	"PersonID"
 )
 VALUES
 (
-	@PersonID,
-	@Diagnosis
+	@Diagnosis,
+	@PersonID
 )
 
 BeforeExecute
@@ -313,8 +313,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."PersonID",
-	"t1"."Diagnosis"
+	"t1"."Diagnosis",
+	"t1"."PersonID"
 FROM
 	"Patient" "t1"
 ORDER BY

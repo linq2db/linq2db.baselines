@@ -2,12 +2,12 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t1"."BinaryValue",
+	"t1"."BoolValue",
+	"t1"."DateTimeValue",
+	"t1"."GuidValue",
 	"t1".ID,
 	"t1"."MoneyValue",
-	"t1"."DateTimeValue",
-	"t1"."BoolValue",
-	"t1"."GuidValue",
-	"t1"."BinaryValue",
 	"t1"."SmallIntValue",
 	"t1"."StringValue"
 FROM
@@ -20,12 +20,12 @@ DECLARE @param2_1 SmallInt(4) -- Int16
 SET     @param2_1 = 0
 
 SELECT
+	"t1"."BinaryValue",
+	"t1"."BoolValue",
+	"t1"."DateTimeValue",
+	"t1"."GuidValue",
 	"t1".ID,
 	"t1"."MoneyValue",
-	"t1"."DateTimeValue",
-	"t1"."BoolValue",
-	"t1"."GuidValue",
-	"t1"."BinaryValue",
 	"t1"."SmallIntValue",
 	"t1"."StringValue"
 FROM

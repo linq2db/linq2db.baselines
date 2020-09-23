@@ -2,8 +2,8 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"c_1"."ParentID",
-	"c_1"."ChildID"
+	"c_1"."ChildID",
+	"c_1"."ParentID"
 FROM
 	"Child" "c_1"
 WHERE
@@ -17,8 +17,8 @@ WHERE
 	) = 2
 UNION ALL
 SELECT
-	"c_2"."ParentID",
-	"c_2"."ChildID"
+	"c_2"."ChildID",
+	"c_2"."ParentID"
 FROM
 	"Child" "c_2"
 WHERE

@@ -26,8 +26,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t".ID,
-	"t"."BigIntValue"
+	"t"."BigIntValue",
+	"t".ID
 FROM
 	"LinqDataTypes" "t"
 WHERE

@@ -1,50 +1,50 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 1000
-DECLARE @MoneyValue (1,0) -- Decimal
-SET     @MoneyValue = 0
+DECLARE @BigIntValue BigInt -- Int64
+SET     @BigIntValue = NULL
+DECLARE @BoolValue SmallInt(4) -- Int16
+SET     @BoolValue = 0
 DECLARE @DateTimeValue Timestamp -- DateTime
 SET     @DateTimeValue = NULL
 DECLARE @DateTimeValue2 Timestamp -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue SmallInt(4) -- Int16
-SET     @BoolValue = 0
 DECLARE @GuidValue VarBinary -- Binary
 SET     @GuidValue = NULL
-DECLARE @SmallIntValue SmallInt -- Int16
-SET     @SmallIntValue = NULL
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 1000
 DECLARE @IntValue Integer -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue BigInt -- Int64
-SET     @BigIntValue = NULL
+DECLARE @MoneyValue (1,0) -- Decimal
+SET     @MoneyValue = 0
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = NULL
 DECLARE @StringValue VarChar -- String
 SET     @StringValue = NULL
 
 INSERT INTO "LinqDataTypes"
 (
-	ID,
-	"MoneyValue",
+	"BigIntValue",
+	"BoolValue",
 	"DateTimeValue",
 	"DateTimeValue2",
-	"BoolValue",
 	"GuidValue",
-	"SmallIntValue",
+	ID,
 	"IntValue",
-	"BigIntValue",
+	"MoneyValue",
+	"SmallIntValue",
 	"StringValue"
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
+	@BigIntValue,
+	@BoolValue,
 	@DateTimeValue,
 	@DateTimeValue2,
-	@BoolValue,
 	@GuidValue,
-	@SmallIntValue,
+	@ID,
 	@IntValue,
-	@BigIntValue,
+	@MoneyValue,
+	@SmallIntValue,
 	@StringValue
 )
 
@@ -52,12 +52,12 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"_"."BinaryValue",
+	"_"."BoolValue",
+	"_"."DateTimeValue",
+	"_"."GuidValue",
 	"_".ID,
 	"_"."MoneyValue",
-	"_"."DateTimeValue",
-	"_"."BoolValue",
-	"_"."GuidValue",
-	"_"."BinaryValue",
 	"_"."SmallIntValue",
 	"_"."StringValue"
 FROM

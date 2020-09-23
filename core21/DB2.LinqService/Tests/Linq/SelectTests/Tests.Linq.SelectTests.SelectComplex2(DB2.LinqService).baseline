@@ -2,8 +2,8 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."PersonID",
 	"_"."Gender",
+	"_"."PersonID",
 	"_"."FirstName",
 	"_"."MiddleName",
 	"_"."LastName"

@@ -4,15 +4,15 @@ DECLARE @value_1 BigInt(8) -- Int64
 SET     @value_1 = 0
 
 SELECT
-	"t".ID,
-	"t"."MoneyValue",
+	"t"."BigIntValue",
+	"t"."BoolValue",
 	"t"."DateTimeValue",
 	"t"."DateTimeValue2",
-	"t"."BoolValue",
 	"t"."GuidValue",
-	"t"."SmallIntValue",
+	"t".ID,
 	"t"."IntValue",
-	"t"."BigIntValue",
+	"t"."MoneyValue",
+	"t"."SmallIntValue",
 	"t"."StringValue"
 FROM
 	"LinqDataTypes" "t"

@@ -3,71 +3,71 @@
 
 MERGE INTO "TestMerge1" "Target"
 USING (	VALUES
-		(1,CAST(NULL AS Int),CAST(NULL AS BigInt),CAST(NULL AS smallint),CAST(NULL AS NVarChar(255)),CAST(NULL AS NVarChar(255)),CAST(NULL AS NChar(1)),CAST(NULL AS NChar(1)),CAST(NULL AS Real),CAST(NULL AS Float),CAST(NULL AS timestamp),CAST(NULL AS VarBinary),CAST(NULL AS char(16) for bit data),CAST(NULL AS Decimal),CAST(NULL AS timestamp),CAST(NULL AS Time),CAST(NULL AS NVarChar(8168)),CAST(NULL AS Int)),
+		(1,CAST(NULL AS VarBinary),CAST(NULL AS smallint),CAST(NULL AS NChar(1)),CAST(NULL AS timestamp),CAST(NULL AS timestamp),CAST(NULL AS Decimal),CAST(NULL AS Float),CAST(NULL AS Int),CAST(NULL AS NVarChar(8168)),CAST(NULL AS Real),CAST(NULL AS char(16) for bit data),CAST(NULL AS Int),CAST(NULL AS BigInt),CAST(NULL AS NChar(1)),CAST(NULL AS NVarChar(255)),CAST(NULL AS NVarChar(255)),CAST(NULL AS Time)),
 		(2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)) "Source"
 (
 	"Id", 
+	"FieldBinary", 
+	"FieldBoolean", 
+	"FieldChar", 
+	"FieldDate", 
+	"FieldDateTime", 
+	"FieldDecimal", 
+	"FieldDouble", 
+	"FieldEnumNumber", 
+	"FieldEnumString", 
+	"FieldFloat", 
+	"FieldGuid", 
 	"FieldInt32", 
 	"FieldInt64", 
-	"FieldBoolean", 
-	"FieldString", 
-	"FieldNString", 
-	"FieldChar", 
 	"FieldNChar", 
-	"FieldFloat", 
-	"FieldDouble", 
-	"FieldDateTime", 
-	"FieldBinary", 
-	"FieldGuid", 
-	"FieldDecimal", 
-	"FieldDate", 
-	"FieldTime", 
-	"FieldEnumString", 
-	"FieldEnumNumber"
+	"FieldNString", 
+	"FieldString", 
+	"FieldTime"
 )
 ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
 (
-	"Id",
+	"FieldBinary",
+	"FieldBoolean",
+	"FieldChar",
+	"FieldDate",
+	"FieldDateTime",
+	"FieldDecimal",
+	"FieldDouble",
+	"FieldEnumNumber",
+	"FieldEnumString",
+	"FieldFloat",
+	"FieldGuid",
 	"Field1",
 	"FieldInt64",
-	"FieldBoolean",
-	"FieldString",
-	"FieldNString",
-	"FieldChar",
 	"FieldNChar",
-	"FieldFloat",
-	"FieldDouble",
-	"FieldDateTime",
-	"FieldBinary",
-	"FieldGuid",
-	"FieldDecimal",
-	"FieldDate",
+	"FieldNString",
+	"FieldString",
 	"FieldTime",
-	"FieldEnumString",
-	"FieldEnumNumber"
+	"Id"
 )
 VALUES
 (
-	"Source"."Id",
+	"Source"."FieldBinary",
+	"Source"."FieldBoolean",
+	"Source"."FieldChar",
+	"Source"."FieldDate",
+	"Source"."FieldDateTime",
+	"Source"."FieldDecimal",
+	"Source"."FieldDouble",
+	"Source"."FieldEnumNumber",
+	"Source"."FieldEnumString",
+	"Source"."FieldFloat",
+	"Source"."FieldGuid",
 	"Source"."FieldInt32",
 	"Source"."FieldInt64",
-	"Source"."FieldBoolean",
-	"Source"."FieldString",
-	"Source"."FieldNString",
-	"Source"."FieldChar",
 	"Source"."FieldNChar",
-	"Source"."FieldFloat",
-	"Source"."FieldDouble",
-	"Source"."FieldDateTime",
-	"Source"."FieldBinary",
-	"Source"."FieldGuid",
-	"Source"."FieldDecimal",
-	"Source"."FieldDate",
+	"Source"."FieldNString",
+	"Source"."FieldString",
 	"Source"."FieldTime",
-	"Source"."FieldEnumString",
-	"Source"."FieldEnumNumber"
+	"Source"."Id"
 )
 

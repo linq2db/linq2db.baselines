@@ -4,18 +4,18 @@
 SELECT
 	"lw_Parent"."ParentID_1",
 	"lw_Parent"."Value1",
-	"lw_Parent"."ParentID_2",
 	"lw_Parent"."ChildID",
-	"detail_1"."ParentID",
-	"detail_1"."ChildID"
+	"lw_Parent"."ParentID_2",
+	"detail_1"."ChildID",
+	"detail_1"."ParentID"
 FROM
 	(
 		SELECT DISTINCT
 			"a_Parent"."ParentID",
 			"key_data_result"."ParentID" as "ParentID_1",
 			"key_data_result"."Value1",
-			"detail"."ParentID" as "ParentID_2",
-			"detail"."ChildID"
+			"detail"."ChildID",
+			"detail"."ParentID" as "ParentID_2"
 		FROM
 			(
 				SELECT DISTINCT
@@ -44,8 +44,8 @@ BeforeExecute
 SELECT
 	"key_data_result"."ParentID",
 	"key_data_result"."Value1",
-	"detail"."ParentID",
 	"detail"."ChildID",
+	"detail"."ParentID",
 	"a_Parent"."ParentID",
 	"a_Parent"."Value1"
 FROM

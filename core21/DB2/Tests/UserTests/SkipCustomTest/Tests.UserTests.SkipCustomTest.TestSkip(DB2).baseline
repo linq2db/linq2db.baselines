@@ -3,42 +3,42 @@
 
 CREATE TABLE "PR_1598_SkipCustom_Table"
 (
+	"Age"  Int               NULL,
 	"Id"   Int           NOT NULL,
 	"Name" NVarChar(255)     NULL,
-	"Age"  Int               NULL,
 
 	CONSTRAINT "PK_PR_1598_SkipCustom_Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @Age Integer(4) -- Int32
+SET     @Age = 15
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age Integer(4) -- Int32
-SET     @Age = 15
 
 INSERT INTO "PR_1598_SkipCustom_Table"
 (
+	"Age",
 	"Id",
-	"Name",
-	"Age"
+	"Name"
 )
 VALUES
 (
+	@Age,
 	@Id,
-	@Name,
-	@Age
+	@Name
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_SkipCustom_Table" "t"
 WHERE
@@ -67,9 +67,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_SkipCustom_Table" "t"
 WHERE

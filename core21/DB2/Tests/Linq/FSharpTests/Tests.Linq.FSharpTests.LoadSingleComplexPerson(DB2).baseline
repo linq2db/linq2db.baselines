@@ -4,8 +4,8 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 
 SELECT
-	"p"."PersonID",
 	"p"."Gender",
+	"p"."PersonID",
 	"p"."FirstName",
 	"p"."MiddleName",
 	"p"."LastName"

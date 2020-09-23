@@ -4,8 +4,8 @@
 CREATE TABLE "activity649"
 (
 	"activityid" Int       GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"personid"   Int                                    NOT NULL,
 	"added"      timestamp                              NOT NULL,
+	"personid"   Int                                    NOT NULL,
 
 	CONSTRAINT "PK_activity649" PRIMARY KEY ("activityid")
 )

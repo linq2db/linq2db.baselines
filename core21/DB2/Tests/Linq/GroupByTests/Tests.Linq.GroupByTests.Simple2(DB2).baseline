@@ -18,9 +18,9 @@ DECLARE @ChildID_1 Integer(4) -- Int32
 SET     @ChildID_1 = 11
 
 SELECT
-	"keyParam"."ParentID",
 	"keyParam"."ChildID",
-	"keyParam"."GrandChildID"
+	"keyParam"."GrandChildID",
+	"keyParam"."ParentID"
 FROM
 	"GrandChild" "keyParam"
 WHERE

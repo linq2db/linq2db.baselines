@@ -3,9 +3,9 @@
 
 CREATE TABLE "PR_1598_Insert_Table_Cache"
 (
+	"Age"  Int               NULL,
 	"Id"   Int           NOT NULL,
 	"Name" NVarChar(255)     NULL,
-	"Age"  Int               NULL,
 
 	CONSTRAINT "PK_PR_1598_Insert_Table_Cache" PRIMARY KEY ("Id")
 )
@@ -14,10 +14,10 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Name VarChar(4) -- String
-SET     @Name = 'John'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 2
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'John'
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
 USING (SELECT @Id AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -27,29 +27,29 @@ USING (SELECT @Id AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name,
-		"t1"."Age" = @Age
+		"t1"."Age" = @Age,
+		"t1"."Name" = @Name
 WHEN NOT MATCHED THEN
 	INSERT
 	(
+		"Age",
 		"Id",
-		"Name",
-		"Age"
+		"Name"
 	)
 	VALUES
 	(
+		@Age,
 		@Id,
-		@Name,
-		@Age
+		@Name
 	)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
@@ -60,10 +60,10 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Name VarChar(4) -- String
-SET     @Name = 'John'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 2
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'John'
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
 USING (SELECT @Id AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -73,29 +73,29 @@ USING (SELECT @Id AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name,
-		"t1"."Age" = @Age
+		"t1"."Age" = @Age,
+		"t1"."Name" = @Name
 WHEN NOT MATCHED THEN
 	INSERT
 	(
+		"Age",
 		"Id",
-		"Name",
-		"Age"
+		"Name"
 	)
 	VALUES
 	(
+		@Age,
 		@Id,
-		@Name,
-		@Age
+		@Name
 	)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Age",
 	"t"."Id",
-	"t"."Name",
-	"t"."Age"
+	"t"."Name"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE

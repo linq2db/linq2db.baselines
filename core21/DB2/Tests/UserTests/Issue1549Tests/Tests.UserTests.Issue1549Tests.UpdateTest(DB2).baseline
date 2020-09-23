@@ -4,8 +4,8 @@
 CREATE TABLE "billing_devtypes"
 (
 	"devtypeid"  Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"typename"   NVarChar(50)                              NOT NULL,
 	"GlobalType" Int                                       NOT NULL,
+	"typename"   NVarChar(50)                              NOT NULL,
 
 	CONSTRAINT "PK_billing_devtypes" PRIMARY KEY ("devtypeid")
 )
@@ -16,8 +16,8 @@ BeforeExecute
 CREATE TABLE "billing_devices"
 (
 	"devid"     NVarChar(50) NOT NULL,
-	"sernum"    NVarChar(50)     NULL,
 	"devtypeid" Int          NOT NULL,
+	"sernum"    NVarChar(50)     NULL,
 
 	CONSTRAINT "PK_billing_devices" PRIMARY KEY ("devid")
 )
@@ -27,8 +27,8 @@ BeforeExecute
 
 CREATE TABLE "billing_DevReadingType"
 (
-	"Id"             Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
 	"DevTypeId"      Int                                       NOT NULL,
+	"Id"             Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
 	"Name"           NVarChar(50)                              NOT NULL,
 	"Responsibility" Int                                       NOT NULL,
 
@@ -40,16 +40,16 @@ BeforeExecute
 
 CREATE TABLE "billing_TempReading"
 (
-	"id"               Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
+	"DevGlobalType"    Int                                       NOT NULL,
+	"DevReadingTypeId" Int                                           NULL,
 	"DevSerNum"        NVarChar(50)                              NOT NULL,
 	"devid"            NVarChar(50)                                  NULL,
+	"Devtypeid"        Int                                           NULL,
+	"id"               Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
+	"ReadingTypeName"  NVarChar(50)                                  NULL,
+	"Responsibility"   Int                                       NOT NULL,
 	"tsdevice"         timestamp                                 NOT NULL,
 	"value"            Decimal                                   NOT NULL,
-	"Devtypeid"        Int                                           NULL,
-	"DevReadingTypeId" Int                                           NULL,
-	"ReadingTypeName"  NVarChar(50)                                  NULL,
-	"DevGlobalType"    Int                                       NOT NULL,
-	"Responsibility"   Int                                       NOT NULL,
 
 	CONSTRAINT "PK_billing_TempReading" PRIMARY KEY ("id")
 )

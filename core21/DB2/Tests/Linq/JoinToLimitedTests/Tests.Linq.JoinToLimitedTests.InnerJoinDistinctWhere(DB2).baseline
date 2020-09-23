@@ -4,14 +4,14 @@
 SELECT
 	"o"."ParentID",
 	"o"."Value1",
-	"x"."ParentID",
-	"x"."ChildID"
+	"x"."ChildID",
+	"x"."ParentID"
 FROM
 	"Parent" "o"
 		INNER JOIN (
 			SELECT DISTINCT
-				"t1"."ParentID",
-				"t1"."ChildID"
+				"t1"."ChildID",
+				"t1"."ParentID"
 			FROM
 				"Child" "t1"
 		) "x" ON "x"."ParentID" = "o"."ParentID"

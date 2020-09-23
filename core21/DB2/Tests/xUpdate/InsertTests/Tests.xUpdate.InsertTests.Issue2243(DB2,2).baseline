@@ -3,9 +3,9 @@
 
 CREATE TABLE "test_insert_or_replace"
 (
+	"created_by" NVarChar(255) NOT NULL,
 	"id"         Int           NOT NULL,
 	"name"       NVarChar(255)     NULL,
-	"created_by" NVarChar(255) NOT NULL,
 	"updated_by" NVarChar(255)     NULL,
 
 	CONSTRAINT "PK_test_insert_or_replace" PRIMARY KEY ("id")
@@ -35,24 +35,24 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
+		"created_by",
 		"id",
-		"name",
-		"created_by"
+		"name"
 	)
 	VALUES
 	(
+		@CreatedBy,
 		@Id,
-		@Name,
-		@CreatedBy
+		@Name
 	)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t1"."created_by",
 	"t1"."id",
 	"t1"."name",
-	"t1"."created_by",
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
@@ -82,24 +82,24 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
 	INSERT
 	(
+		"created_by",
 		"id",
-		"name",
-		"created_by"
+		"name"
 	)
 	VALUES
 	(
+		@CreatedBy,
 		@Id,
-		@Name,
-		@CreatedBy
+		@Name
 	)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t1"."created_by",
 	"t1"."id",
 	"t1"."name",
-	"t1"."created_by",
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"

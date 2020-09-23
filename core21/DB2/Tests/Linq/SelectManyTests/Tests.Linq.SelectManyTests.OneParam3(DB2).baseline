@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"c_1"."ParentID",
 	"c_1"."ChildID",
-	"c_1"."GrandChildID"
+	"c_1"."GrandChildID",
+	"c_1"."ParentID"
 FROM
 	"Child" "t"
 		INNER JOIN "Parent" "a_Parent" ON "t"."ParentID" = "a_Parent"."ParentID"

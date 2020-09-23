@@ -6,13 +6,13 @@ DECLARE @skip_1 Integer(4) -- Int32
 SET     @skip_1 = 7
 
 SELECT
-	"t2"."ParentID",
-	"t2"."ChildID"
+	"t2"."ChildID",
+	"t2"."ParentID"
 FROM
 	(
 		SELECT
-			"t1"."ParentID",
 			"t1"."ChildID",
+			"t1"."ParentID",
 			ROW_NUMBER() OVER (ORDER BY "t1"."ChildID" DESC) as RN
 		FROM
 			"Child" "t1"
@@ -28,13 +28,13 @@ DECLARE @skip_1 Integer(4) -- Int32
 SET     @skip_1 = 7
 
 SELECT
-	"t2"."ParentID",
-	"t2"."ChildID"
+	"t2"."ChildID",
+	"t2"."ParentID"
 FROM
 	(
 		SELECT
-			"t1"."ParentID",
 			"t1"."ChildID",
+			"t1"."ParentID",
 			ROW_NUMBER() OVER (ORDER BY "t1"."ChildID" DESC) as RN
 		FROM
 			"Child" "t1"
