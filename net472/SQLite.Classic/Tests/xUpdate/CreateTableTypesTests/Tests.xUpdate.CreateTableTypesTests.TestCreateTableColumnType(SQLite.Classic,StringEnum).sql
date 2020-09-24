@@ -1,0 +1,61 @@
+﻿BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE [CreateTableTypes]
+(
+	[Id]         INTEGER  NOT NULL,
+	[StringEnum] NVarChar NOT NULL
+)
+
+BeforeExecute
+-- SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @StringEnum NVarChar(2) -- String
+SET     @StringEnum = '14'
+
+INSERT INTO [CreateTableTypes]
+(
+	[Id],
+	[StringEnum]
+)
+VALUES
+(
+	@Id,
+	@StringEnum
+)
+
+BeforeExecute
+-- SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @StringEnum NVarChar(1) -- String
+SET     @StringEnum = '4'
+
+INSERT INTO [CreateTableTypes]
+(
+	[Id],
+	[StringEnum]
+)
+VALUES
+(
+	@Id,
+	@StringEnum
+)
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[StringEnum]
+FROM
+	[CreateTableTypes] [t1]
+ORDER BY
+	[t1].[Id]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+DROP TABLE [CreateTableTypes]
+
