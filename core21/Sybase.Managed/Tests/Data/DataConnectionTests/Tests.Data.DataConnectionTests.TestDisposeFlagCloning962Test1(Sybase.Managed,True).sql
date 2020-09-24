@@ -1,0 +1,85 @@
+﻿BeforeExecute
+-- Sybase.Managed Sybase
+
+CREATE TABLE [Categories]
+(
+	[CategoryID]   Int           IDENTITY NOT NULL,
+	[CategoryName] NVarChar(255)          NOT NULL,
+	[Description]  NVarChar(255)              NULL,
+
+	CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED ([CategoryID])
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+INSERT INTO [Categories]
+(
+	[CategoryName],
+	[Description]
+)
+SELECT 'Name 1','Desc 1' UNION ALL
+SELECT 'Name 2','Desc 2'
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+CREATE TABLE [Products]
+(
+	[ProductID]       Int           IDENTITY NOT NULL,
+	[ProductName]     NVarChar(255)          NOT NULL,
+	[CategoryID]      Int                        NULL,
+	[QuantityPerUnit] NVarChar(255)              NULL,
+
+	CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED ([ProductID])
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+INSERT INTO [Products]
+(
+	[ProductName],
+	[CategoryID],
+	[QuantityPerUnit]
+)
+SELECT 'Prod 1',1,'q 1' UNION ALL
+SELECT 'Prod 2',1,'q 2' UNION ALL
+SELECT 'Prod 3',3,'q 3' UNION ALL
+SELECT 'Prod 4',3,'q 4' UNION ALL
+SELECT 'Prod 5',1,'q 5' UNION ALL
+SELECT 'Prod 6',1,'q 6'
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[lw_Category].[CategoryID],
+	[detail].[ProductID],
+	[detail].[ProductName],
+	[detail].[CategoryID],
+	[detail].[QuantityPerUnit]
+FROM
+	[Categories] [lw_Category]
+		INNER JOIN [Products] [detail] ON [lw_Category].[CategoryID] = [detail].[CategoryID]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[CategoryID],
+	[t1].[CategoryName],
+	[t1].[Description]
+FROM
+	[Categories] [t1]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DROP TABLE [Products]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DROP TABLE [Categories]
+
