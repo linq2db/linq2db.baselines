@@ -452,9 +452,9 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
+	[t].[Id],
 	[t].[Value],
-	[t].[ValueStr],
-	[t].[Id]
+	[t].[ValueStr]
 FROM
 	[InstanceClass] [t]
 WHERE
@@ -467,9 +467,9 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
+	[t].[Id],
 	[t].[Value],
-	[t].[ValueStr],
-	[t].[Id]
+	[t].[ValueStr]
 FROM
 	[InstanceClass] [t]
 WHERE
