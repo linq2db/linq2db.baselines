@@ -1,0 +1,154 @@
+﻿BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE Fact
+(
+	Id Int NOT NULL,
+
+	PRIMARY KEY (Id)
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 3
+
+INSERT INTO Fact
+(
+	Id
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 4
+
+INSERT INTO Fact
+(
+	Id
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 5
+
+INSERT INTO Fact
+(
+	Id
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE Tag
+(
+	Id     Int           NOT NULL,
+	FactId Int           NOT NULL,
+	Name   NVarChar(255) NOT NULL,
+
+	PRIMARY KEY (Id)
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @FactId Integer(4) -- Int32
+SET     @FactId = 3
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Tag3'
+
+INSERT INTO Tag
+(
+	Id,
+	FactId,
+	Name
+)
+VALUES
+(
+	@Id,
+	@FactId,
+	@Name
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @FactId Integer(4) -- Int32
+SET     @FactId = 3
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Tag3'
+
+INSERT INTO Tag
+(
+	Id,
+	FactId,
+	Name
+)
+VALUES
+(
+	@Id,
+	@FactId,
+	@Name
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 3
+DECLARE @FactId Integer(4) -- Int32
+SET     @FactId = 4
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Tag4'
+
+INSERT INTO Tag
+(
+	Id,
+	FactId,
+	Name
+)
+VALUES
+(
+	@Id,
+	@FactId,
+	@Name
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	fact_1.Id,
+	tag_1.Id,
+	tag_1.FactId,
+	tag_1.Name
+FROM
+	Fact fact_1
+		LEFT JOIN Tag tag_1 ON tag_1.FactId = fact_1.Id
+WHERE
+	fact_1.Id > 3
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE Tag
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE Fact
+
