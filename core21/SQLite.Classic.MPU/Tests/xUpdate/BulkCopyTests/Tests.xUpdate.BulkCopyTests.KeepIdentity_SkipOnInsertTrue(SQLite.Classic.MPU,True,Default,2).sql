@@ -1,0 +1,56 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Value_1  -- Int32
+SET     @Value_1 = 0
+
+INSERT INTO [AllTypes]
+(
+	[intDataType]
+)
+VALUES
+(
+	@Value_1
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT last_insert_rowid()
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+
+INSERT INTO [AllTypes]
+(
+	[ID],
+	[intDataType]
+)
+VALUES
+(439,200),
+(449,300)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @lastId  -- Int32
+SET     @lastId = 429
+
+SELECT
+	[_].[ID],
+	[_].[intDataType]
+FROM
+	[AllTypes] [_]
+WHERE
+	[_].[ID] > @lastId
+ORDER BY
+	[_].[ID]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @lastId  -- Int32
+SET     @lastId = 429
+
+DELETE FROM
+	[AllTypes]
+WHERE
+	[AllTypes].[ID] >= @lastId
+
