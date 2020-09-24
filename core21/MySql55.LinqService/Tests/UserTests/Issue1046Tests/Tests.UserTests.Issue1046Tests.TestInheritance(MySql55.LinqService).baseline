@@ -36,8 +36,8 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`p`.`TargetName`,
 	`p`.`Id`,
+	`p`.`TargetName`,
 	`p`.`BdaValue`
 FROM
 	`Task` `p`
