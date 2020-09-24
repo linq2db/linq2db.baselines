@@ -97,32 +97,32 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @Discriminator NVarchar2(10) -- String
+SET     @Discriminator = 'WildAnimal'
+DECLARE @Name Varchar2(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Id Int32
+SET     @Id = 2
 DECLARE @AnimalType NVarchar2(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 NVarchar2(3) -- String
 SET     @AnimalType2 = 'Big'
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @Name Varchar2(10) -- String
-SET     @Name = 'WildAnimal'
-DECLARE @Discriminator NVarchar2(10) -- String
-SET     @Discriminator = 'WildAnimal'
 
 INSERT INTO Animals12
 (
-	AnimalType,
-	AnimalType2,
-	Id,
+	Discriminator,
 	Name,
-	Discriminator
+	Id,
+	AnimalType,
+	AnimalType2
 )
 VALUES
 (
-	:AnimalType,
-	:AnimalType2,
-	:Id,
+	:Discriminator,
 	:Name,
-	:Discriminator
+	:Id,
+	:AnimalType,
+	:AnimalType2
 )
 
 BeforeExecute
