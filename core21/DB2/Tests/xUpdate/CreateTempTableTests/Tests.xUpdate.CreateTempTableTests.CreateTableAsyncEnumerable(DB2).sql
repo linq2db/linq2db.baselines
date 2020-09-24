@@ -1,0 +1,55 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704'
+		BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"p"."ParentID"
+FROM
+	"Parent" "p"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+CREATE TABLE "TempTable"
+(
+	ID Int NOT NULL
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+INSERT INTO "TempTable"
+(
+	ID
+)
+VALUES
+(1),
+(2),
+(3),
+(4),
+(5),
+(6),
+(7)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t".ID
+FROM
+	"Parent" "p"
+		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t".ID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+DROP TABLE "TempTable"
+
