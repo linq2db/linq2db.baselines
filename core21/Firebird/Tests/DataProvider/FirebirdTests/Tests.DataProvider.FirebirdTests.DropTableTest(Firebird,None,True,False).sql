@@ -1,0 +1,58 @@
+﻿BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_TESTIDENTITYDROPTABLE')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER TIDENTITY_TestIdentityDropTable';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_TESTIDENTITYDROPTABLE')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR GIDENTITY_TestIdentityDropTable';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TESTIDENTITYDROPTABLE')) THEN
+		EXECUTE STATEMENT 'DROP TABLE TestIdentityDropTable';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_TESTIDENTITYDROPTABLE')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER TIDENTITY_TestIdentityDropTable';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_TESTIDENTITYDROPTABLE')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR GIDENTITY_TestIdentityDropTable';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TESTIDENTITYDROPTABLE')) THEN
+		EXECUTE STATEMENT 'DROP TABLE TestIdentityDropTable';
+END
+
+BeforeExecute
+-- Firebird
+
+CREATE TABLE TestIdentityDropTable
+(
+	Field Int  NOT NULL
+)
+
+BeforeExecute
+-- Firebird
+
+CREATE GENERATOR GIDENTITY_TestIdentityDropTable
+
+BeforeExecute
+-- Firebird
+
+CREATE TRIGGER TIDENTITY_TestIdentityDropTable FOR TestIdentityDropTable
+BEFORE INSERT POSITION 0
+AS BEGIN
+	NEW.Field = GEN_ID(GIDENTITY_TestIdentityDropTable, 1);
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_TESTIDENTITYDROPTABLE')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER TIDENTITY_TestIdentityDropTable';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_TESTIDENTITYDROPTABLE')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR GIDENTITY_TestIdentityDropTable';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TESTIDENTITYDROPTABLE')) THEN
+		EXECUTE STATEMENT 'DROP TABLE TestIdentityDropTable';
+END
+
