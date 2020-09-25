@@ -1,0 +1,8 @@
+﻿BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+SELECT
+	DateDiff(millisecond, [t].[DateTimeValue], DateAdd(second, 1, [t].[DateTimeValue]))
+FROM
+	[LinqDataTypes] [t]
+
