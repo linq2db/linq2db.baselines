@@ -585,7 +585,9 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2008 END
 -- SKIP SqlServer.2012 END
 -- SKIP SqlServer.2014 END
+-- SKIP SqlServer.2016 END
 -- SKIP SqlServer.2017 END
+-- SKIP SqlServer.2019 END
 -- SKIP SqlAzure END
 
 ) ON [PRIMARY]
