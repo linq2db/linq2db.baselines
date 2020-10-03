@@ -3,13 +3,13 @@
 
 CREATE TABLE [EnumCardinality]
 (
-	[Id]        INTEGER NOT NULL,
-	[Property1] NChar   NOT NULL,
-	[Property2] NChar       NULL,
-	[Property3] NChar   NOT NULL,
-	[Property4] NChar       NULL,
-	[Property5] NChar   NOT NULL,
-	[Property6] NChar       NULL
+	[Id]        INTEGER  NOT NULL,
+	[Property1] NChar(1) NOT NULL,
+	[Property2] NChar(1)     NULL,
+	[Property3] NChar(1) NOT NULL,
+	[Property4] NChar(1)     NULL,
+	[Property5] NChar(1) NOT NULL,
+	[Property6] NChar(1)     NULL
 )
 
 BeforeExecute

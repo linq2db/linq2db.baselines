@@ -3,9 +3,9 @@
 
 CREATE TABLE [Issue1554FluentTable]
 (
-	[Id]              INTEGER  NOT NULL,
-	[ClaimedKeyType]  NVarChar NOT NULL,
-	[ClaimedKeyTypeN] NVarChar     NULL,
+	[Id]              INTEGER     NOT NULL,
+	[ClaimedKeyType]  NVarChar(3) NOT NULL,
+	[ClaimedKeyTypeN] NVarChar(3)     NULL,
 
 	CONSTRAINT [PK_Issue1554FluentTable] PRIMARY KEY ([Id])
 )

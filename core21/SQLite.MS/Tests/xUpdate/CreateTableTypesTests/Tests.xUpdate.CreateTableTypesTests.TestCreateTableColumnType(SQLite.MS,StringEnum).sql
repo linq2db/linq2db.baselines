@@ -3,8 +3,8 @@
 
 CREATE TABLE [CreateTableTypes]
 (
-	[Id]         INTEGER  NOT NULL,
-	[StringEnum] NVarChar NOT NULL
+	[Id]         INTEGER     NOT NULL,
+	[StringEnum] NVarChar(2) NOT NULL
 )
 
 BeforeExecute
