@@ -6,7 +6,7 @@ CREATE TABLE [PR_1598_Insert_Enum_Table]
 	[Id]     INTEGER       NOT NULL,
 	[Name]   NVarChar(255)     NULL,
 	[Age]    INTEGER           NULL,
-	[Gender] NVarChar          NULL,
+	[Gender] NVarChar(6)       NULL,
 
 	CONSTRAINT [PK_PR_1598_Insert_Enum_Table] PRIMARY KEY ([Id])
 )
