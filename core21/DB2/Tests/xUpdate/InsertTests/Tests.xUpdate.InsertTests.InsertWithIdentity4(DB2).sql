@@ -1,0 +1,114 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DELETE FROM
+	"Person" "t1"
+WHERE
+	"t1"."PersonID" > 4
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @FirstName VarChar(5) -- String
+SET     @FirstName = 'John0'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
+
+SELECT
+	"PersonID"
+FROM
+	NEW TABLE
+	(
+		INSERT INTO "Person"
+		(
+			"FirstName",
+			"LastName",
+			"MiddleName",
+			"Gender"
+		)
+		VALUES
+		(
+			@FirstName,
+			@LastName,
+			@MiddleName,
+			@Gender
+		)
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @FirstName_1 VarChar(5) -- String
+SET     @FirstName_1 = 'John0'
+
+SELECT
+	"p"."FirstName",
+	"p"."PersonID",
+	"p"."LastName",
+	"p"."MiddleName",
+	"p"."Gender"
+FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" = @FirstName_1 AND "p"."LastName" = 'Shepard'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @FirstName VarChar(5) -- String
+SET     @FirstName = 'John1'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
+
+SELECT
+	"PersonID"
+FROM
+	NEW TABLE
+	(
+		INSERT INTO "Person"
+		(
+			"FirstName",
+			"LastName",
+			"MiddleName",
+			"Gender"
+		)
+		VALUES
+		(
+			@FirstName,
+			@LastName,
+			@MiddleName,
+			@Gender
+		)
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @FirstName_1 VarChar(5) -- String
+SET     @FirstName_1 = 'John1'
+
+SELECT
+	"p"."FirstName",
+	"p"."PersonID",
+	"p"."LastName",
+	"p"."MiddleName",
+	"p"."Gender"
+FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" = @FirstName_1 AND "p"."LastName" = 'Shepard'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DELETE FROM
+	"Person" "t1"
+WHERE
+	"t1"."PersonID" > 4
+
