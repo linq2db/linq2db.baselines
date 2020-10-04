@@ -19,7 +19,7 @@ RETURNING
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @lastId Int32
-SET     @lastId = 148
+SET     @lastId = 145
 
 DELETE FROM
 	AllTypes t1
