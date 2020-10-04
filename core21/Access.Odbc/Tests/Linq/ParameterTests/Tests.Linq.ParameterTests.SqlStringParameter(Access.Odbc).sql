@@ -1,0 +1,32 @@
+﻿BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @p NVarChar(4) -- String
+SET     @p = 'John'
+
+SELECT TOP 2
+	[t].[FirstName],
+	[t].[PersonID],
+	[t].[LastName],
+	[t].[MiddleName],
+	[t].[Gender]
+FROM
+	[Person] [t]
+WHERE
+	[t].[FirstName] = ?
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @p NVarChar(6) -- String
+SET     @p = 'Tester'
+
+SELECT TOP 2
+	[t].[FirstName],
+	[t].[PersonID],
+	[t].[LastName],
+	[t].[MiddleName],
+	[t].[Gender]
+FROM
+	[Person] [t]
+WHERE
+	[t].[FirstName] = ?
+
