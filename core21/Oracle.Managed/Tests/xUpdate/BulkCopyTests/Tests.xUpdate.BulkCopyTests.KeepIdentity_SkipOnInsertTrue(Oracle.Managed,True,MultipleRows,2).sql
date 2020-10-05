@@ -20,14 +20,14 @@ BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
-	INTO AllTypes (ID, intDataType) VALUES (264,200)
-	INTO AllTypes (ID, intDataType) VALUES (274,300)
+	INTO AllTypes (ID, intDataType) VALUES (267,200)
+	INTO AllTypes (ID, intDataType) VALUES (277,300)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @lastId Int32
-SET     @lastId = 254
+SET     @lastId = 257
 
 SELECT
 	t1.ID,
@@ -42,7 +42,7 @@ ORDER BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @lastId Int32
-SET     @lastId = 254
+SET     @lastId = 257
 
 DELETE FROM
 	AllTypes t1

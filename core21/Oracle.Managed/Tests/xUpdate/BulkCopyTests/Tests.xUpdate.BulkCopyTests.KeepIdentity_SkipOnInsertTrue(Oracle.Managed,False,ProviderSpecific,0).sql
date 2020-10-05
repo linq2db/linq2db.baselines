@@ -27,7 +27,7 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @lastId Int32
-SET     @lastId = 293
+SET     @lastId = 296
 
 SELECT
 	t1.ID,
@@ -42,7 +42,7 @@ ORDER BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @lastId Int32
-SET     @lastId = 293
+SET     @lastId = 296
 
 DELETE FROM
 	AllTypes t1
