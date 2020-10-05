@@ -1767,8 +1767,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p1  -- Int32
-SET     @p1 = 20
+DECLARE @take  -- Int32
+SET     @take = 20
 
 SELECT
 	[key_data_result].[DetailId],
@@ -1785,7 +1785,7 @@ FROM
 					*
 				FROM
 					[MasterClass] [t1]
-				LIMIT @p1
+				LIMIT @take
 			) [m_1],
 			[DetailClass] [d]
 	) [key_data_result]
@@ -1793,8 +1793,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p1  -- Int32
-SET     @p1 = 20
+DECLARE @take  -- Int32
+SET     @take = 20
 
 SELECT
 	[key_data_result].[DetailId],
@@ -1811,7 +1811,7 @@ FROM
 					*
 				FROM
 					[MasterClass] [t1]
-				LIMIT @p1
+				LIMIT @take
 			) [m_1],
 			[DetailClass] [d]
 	) [key_data_result]

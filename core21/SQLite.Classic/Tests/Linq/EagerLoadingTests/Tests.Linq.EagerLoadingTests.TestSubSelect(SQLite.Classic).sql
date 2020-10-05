@@ -83,8 +83,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p1  -- Int32
-SET     @p1 = 20
+DECLARE @take  -- Int32
+SET     @take = 20
 
 SELECT
 	[key_data_result].[Master],
@@ -111,7 +111,7 @@ FROM
 					[MasterClass] [m_1]
 				ORDER BY
 					[m_1].[Id2] DESC
-				LIMIT @p1
+				LIMIT @take
 			) [e]
 	) [key_data_result]
 		INNER JOIN [DetailClass] [detail] ON [key_data_result].[Master] = [detail].[MasterId]
