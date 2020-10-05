@@ -48,7 +48,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @TransactionDate DateTimeOffset
-SET     @TransactionDate = '2020-10-05 14:45:47.5325411 +00:00'
+SET     @TransactionDate = '2020-02-29 21:14:55.1231234 +00:40'
 
 SELECT
 	[t].[TransactionId]
