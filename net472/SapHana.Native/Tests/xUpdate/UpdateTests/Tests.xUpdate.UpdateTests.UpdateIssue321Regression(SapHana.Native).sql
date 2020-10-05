@@ -1,0 +1,89 @@
+﻿BeforeExecute
+-- SapHana.Native SapHana
+DECLARE @ID  -- Int32
+SET     @ID = 100500
+DECLARE @MoneyValue Decimal(4,0)
+SET     @MoneyValue = 3000
+DECLARE @DateTimeValue  -- DateTime2
+SET     @DateTimeValue = NULL
+DECLARE @DateTimeValue2  -- DateTime2
+SET     @DateTimeValue2 = NULL
+DECLARE @BoolValue  -- Byte
+SET     @BoolValue = NULL
+DECLARE @GuidValue Char(36) -- AnsiStringFixedLength
+SET     @GuidValue = NULL
+DECLARE @SmallIntValue  -- Int16
+SET     @SmallIntValue = NULL
+DECLARE @IntValue  -- Int32
+SET     @IntValue = 60
+DECLARE @BigIntValue  -- Int64
+SET     @BigIntValue = NULL
+DECLARE @StringValue NVarChar -- String
+SET     @StringValue = NULL
+
+INSERT INTO "LinqDataTypes"
+(
+	"ID",
+	"MoneyValue",
+	"DateTimeValue",
+	"DateTimeValue2",
+	"BoolValue",
+	"GuidValue",
+	"SmallIntValue",
+	"IntValue",
+	"BigIntValue",
+	"StringValue"
+)
+VALUES
+(
+	:"ID",
+	:"MoneyValue",
+	:"DateTimeValue",
+	:"DateTimeValue2",
+	:"BoolValue",
+	:"GuidValue",
+	:"SmallIntValue",
+	:"IntValue",
+	:"BigIntValue",
+	:"StringValue"
+)
+
+BeforeExecute
+-- SapHana.Native SapHana
+DECLARE @value2 Decimal(5,0)
+SET     @value2 = 13621
+DECLARE @id  -- Int32
+SET     @id = 100500
+
+UPDATE
+	"LinqDataTypes"
+SET
+	"LinqDataTypes"."SmallIntValue" = Cast(Floor("LinqDataTypes"."MoneyValue" / (:"value2" / Cast("LinqDataTypes"."IntValue" as Decimal(29,10)))) as SmallInt)
+WHERE
+	"LinqDataTypes"."ID" = :"id"
+
+BeforeExecute
+-- SapHana.Native SapHana
+DECLARE @id  -- Int32
+SET     @id = 100500
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"_"."SmallIntValue"
+FROM
+	"LinqDataTypes" "_"
+WHERE
+	"_"."ID" = :"id"
+LIMIT :"take"
+
+BeforeExecute
+-- SapHana.Native SapHana
+DECLARE @id  -- Int32
+SET     @id = 100500
+
+DELETE FROM
+	"LinqDataTypes" "t1"
+WHERE
+	"t1"."ID" = :"id"
+

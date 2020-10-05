@@ -1,0 +1,40 @@
+﻿BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @param  -- Int16
+SET     @param = 1
+
+SELECT
+	"_"."ID",
+	"_"."MoneyValue",
+	"_"."DateTimeValue",
+	"_"."DateTimeValue2",
+	"_"."BoolValue",
+	"_"."GuidValue",
+	"_"."SmallIntValue",
+	"_"."IntValue",
+	"_"."BigIntValue",
+	"_"."StringValue"
+FROM
+	"LinqDataTypes" "_"
+WHERE
+	? = "_"."SmallIntValue"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"_"."ID",
+	"_"."MoneyValue",
+	"_"."DateTimeValue",
+	"_"."DateTimeValue2",
+	"_"."BoolValue",
+	"_"."GuidValue",
+	"_"."SmallIntValue",
+	"_"."IntValue",
+	"_"."BigIntValue",
+	"_"."StringValue"
+FROM
+	"LinqDataTypes" "_"
+WHERE
+	"_"."SmallIntValue" IS NULL
+
