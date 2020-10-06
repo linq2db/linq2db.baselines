@@ -75,10 +75,10 @@ AS RETURN
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @p1 Int -- Int32
-SET     @p1 = 2
 DECLARE @take Int -- Int32
-SET     @take = 1
+SET     @take = 2
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 1
 
 SELECT
 	[key_data_result].[Id],
@@ -92,7 +92,7 @@ FROM
 			[t1].[OwnerStr]
 		FROM
 			(
-				SELECT TOP (@p1)
+				SELECT TOP (@take)
 					[e].[Id],
 					[e].[OwnerStr]
 				FROM
@@ -100,7 +100,7 @@ FROM
 			) [t1]
 	) [key_data_result]
 		CROSS APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (@take_1)
 				[detail].[Id],
 				[detail].[StrValue]
 			FROM
@@ -111,8 +111,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @p1 Int -- Int32
-SET     @p1 = 2
+DECLARE @take Int -- Int32
+SET     @take = 2
 
 SELECT
 	[key_data_result].[Id],
@@ -126,7 +126,7 @@ FROM
 			[t1].[OwnerStr]
 		FROM
 			(
-				SELECT TOP (@p1)
+				SELECT TOP (@take)
 					[e].[Id],
 					[e].[OwnerStr]
 				FROM

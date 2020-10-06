@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 10
+DECLARE @take Integer -- Int32
+SET     @take = 10
 
 SELECT
 	key_data_result."ParentID",
@@ -20,7 +20,7 @@ FROM
 					p."Value1"
 				FROM
 					"Parent" p
-				LIMIT :p1
+				LIMIT :take
 			) t1
 	) key_data_result
 		INNER JOIN "Child" c_1 ON c_1."ParentID" = key_data_result."ParentID"

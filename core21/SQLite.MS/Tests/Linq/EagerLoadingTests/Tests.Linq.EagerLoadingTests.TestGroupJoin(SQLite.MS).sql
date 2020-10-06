@@ -1767,8 +1767,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p1  -- Int32
-SET     @p1 = 20
+DECLARE @take  -- Int32
+SET     @take = 20
 
 SELECT
 	[key_data_result].[DetailId],
@@ -1787,7 +1787,7 @@ FROM
 					[MasterClass] [t1]
 				ORDER BY
 					[t1].[Id2] DESC
-				LIMIT @p1
+				LIMIT @take
 			) [m_1]
 				INNER JOIN [DetailClass] [j] ON [m_1].[Id1] = [j].[MasterId]
 	) [key_data_result]
@@ -1795,8 +1795,8 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p1  -- Int32
-SET     @p1 = 20
+DECLARE @take  -- Int32
+SET     @take = 20
 
 SELECT
 	[key_data_result].[DetailId],
@@ -1815,7 +1815,7 @@ FROM
 					[MasterClass] [t1]
 				ORDER BY
 					[t1].[Id2] DESC
-				LIMIT @p1
+				LIMIT @take
 			) [m_1]
 				INNER JOIN [DetailClass] [j] ON [m_1].[Id1] = [j].[MasterId]
 	) [key_data_result]
@@ -1825,8 +1825,8 @@ ORDER BY
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p1  -- Int32
-SET     @p1 = 20
+DECLARE @take  -- Int32
+SET     @take = 20
 
 SELECT
 	[key_data_result].[Id1],
@@ -1851,7 +1851,7 @@ FROM
 					[MasterClass] [t1]
 				ORDER BY
 					[t1].[Id2] DESC
-				LIMIT @p1
+				LIMIT @take
 			) [m_1]
 				INNER JOIN [DetailClass] [j] ON [m_1].[Id1] = [j].[MasterId]
 	) [key_data_result]
