@@ -4,11 +4,11 @@ DECLARE @ChildID Int32
 SET     @ChildID = 10
 
 UPDATE
-	`Child` `c_2`
-		INNER JOIN `Parent` `x` ON `x`.`ParentID` = `c_2`.`ParentID`
-		INNER JOIN `Child` `c_1` ON `c_2`.`ParentID` = `c_2`.`ChildID`
+	`Child` `x`
+		INNER JOIN `Parent` `c_1` ON `c_1`.`ParentID` = `x`.`ParentID`
+		INNER JOIN `Parent` `c_2` ON `x`.`ParentID` = `x`.`ChildID`
 SET
-	`c_2`.`ChildID` = @ChildID
+	`x`.`ChildID` = @ChildID
 WHERE
 	1 = 0
 
