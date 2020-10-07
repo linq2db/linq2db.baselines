@@ -15,5 +15,5 @@ FROM
 			`LinqDataTypes` `t`
 	) `p`
 WHERE
-	NOT (`p`.`c1` IS NOT NULL AND `p`.`c1` = 1)
+	(`p`.`c1` = 0 OR `p`.`c1` IS NULL)
 

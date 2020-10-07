@@ -10,5 +10,12 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` >= '55' AND `p`.`PersonID` = 1
+	0 <= CASE
+		WHEN `p`.`FirstName` > '55'
+			THEN 1
+		WHEN `p`.`FirstName` = '55'
+			THEN 0
+		ELSE -1
+	END AND
+	`p`.`PersonID` = 1
 

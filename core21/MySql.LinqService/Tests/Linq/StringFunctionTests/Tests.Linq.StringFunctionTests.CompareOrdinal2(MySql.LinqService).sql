@@ -10,5 +10,12 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Substring(`p`.`FirstName`, 2, 2) = 'oh' AND `p`.`PersonID` = 1
+	CASE
+		WHEN Substring(`p`.`FirstName`, 2, 2) > 'oh'
+			THEN 1
+		WHEN Substring(`p`.`FirstName`, 2, 2) = 'oh'
+			THEN 0
+		ELSE -1
+	END = 0 AND
+	`p`.`PersonID` = 1
 
