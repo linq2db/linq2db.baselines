@@ -14,11 +14,13 @@ WHERE
 		WHEN CASE
 			WHEN `p`.`FirstName` IS NULL
 				THEN NULL
-			ELSE `p`.`FirstName` LIKE 'Jo%'
+			ELSE `p`.`FirstName` LIKE 'Jo%' ESCAPE '~'
 		END IS NULL
 			THEN 0
-		WHEN `p`.`FirstName` IS NULL
-			THEN NULL
-		ELSE `p`.`FirstName` LIKE 'Jo%'
+		ELSE CASE
+			WHEN `p`.`FirstName` IS NULL
+				THEN NULL
+			ELSE `p`.`FirstName` LIKE 'Jo%' ESCAPE '~'
+		END
 	END = 1
 
