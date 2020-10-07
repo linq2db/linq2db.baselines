@@ -38,7 +38,6 @@ SELECT
 	t1."inetDataType",
 	t1."cidrDataType",
 	t1."macaddrDataType",
-	t1."macaddr8DataType",
 	t1."jsonDataType",
 	t1."jsonbDataType"
 FROM
@@ -84,7 +83,6 @@ SELECT
 	t1."inetDataType",
 	t1."cidrDataType",
 	t1."macaddrDataType",
-	t1."macaddr8DataType",
 	t1."jsonDataType",
 	t1."jsonbDataType"
 FROM
@@ -132,7 +130,6 @@ SELECT
 	t1."inetDataType",
 	t1."cidrDataType",
 	t1."macaddrDataType",
-	t1."macaddr8DataType",
 	t1."jsonDataType",
 	t1."jsonbDataType"
 FROM
