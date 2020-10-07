@@ -42,10 +42,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @part1 Int32
-SET     @part1 = 4
-DECLARE @part2 Int32
-SET     @part2 = 4
 DECLARE @p1 DateTime
 SET     @p1 = '2018-01-02'
 
@@ -54,7 +50,7 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval ((`t`.`SmallIntValue` + @part1) - @part2) Day) < @p1
+	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) < @p1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
