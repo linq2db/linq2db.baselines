@@ -20,7 +20,7 @@ SET     @p = '1234-11-22'::date
 SELECT @p
 
 BeforeExecute
-INSERT BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, jsonDataType, jsonbDataType
+INSERT BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
@@ -31,7 +31,7 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-INSERT BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, jsonDataType, jsonbDataType
+INSERT BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
@@ -42,7 +42,7 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-INSERT ASYNC BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, jsonDataType, jsonbDataType
+INSERT ASYNC BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -53,7 +53,7 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-INSERT ASYNC BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, jsonDataType, jsonbDataType
+INSERT ASYNC BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL (asynchronously)
