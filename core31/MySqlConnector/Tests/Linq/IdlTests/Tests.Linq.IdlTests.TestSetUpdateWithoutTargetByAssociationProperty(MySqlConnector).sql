@@ -30,10 +30,10 @@ DECLARE @Value1 Int32
 SET     @Value1 = 5
 
 UPDATE
-	`Parent` `child_1`
-		INNER JOIN `Child` `a_Parent` ON `a_Parent`.`ParentID` = `child_1`.`ParentID`
+	`Parent` `t1`
+		INNER JOIN `Child` `a_Parent` ON `a_Parent`.`ParentID` = `t1`.`ParentID`
 SET
-	`child_1`.`Value1` = @Value1
+	`t1`.`Value1` = @Value1
 WHERE
 	`a_Parent`.`ChildID` = 10000
 
