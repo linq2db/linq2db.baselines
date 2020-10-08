@@ -85,6 +85,7 @@ FROM
 	"Task" "selectParam"
 		LEFT JOIN "TaskStage" "a_ActualStage" ON "selectParam"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True
 GROUP BY
+	"selectParam"."Id",
 	"selectParam"."Id"
 
 BeforeExecute
