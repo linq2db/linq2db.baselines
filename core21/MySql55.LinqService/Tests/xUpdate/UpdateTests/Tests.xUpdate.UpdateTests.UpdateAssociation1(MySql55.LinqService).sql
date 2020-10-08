@@ -48,10 +48,10 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 UPDATE
-	`Parent` `child_1`
-		INNER JOIN `Child` `a_Parent` ON `a_Parent`.`ParentID` = `child_1`.`ParentID`
+	`Parent` `t1`
+		INNER JOIN `Child` `a_Parent` ON `a_Parent`.`ParentID` = `t1`.`ParentID`
 SET
-	`child_1`.`Value1` = 5
+	`t1`.`Value1` = 5
 WHERE
 	`a_Parent`.`ChildID` = 10000
 
