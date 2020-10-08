@@ -10,7 +10,13 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = 'John'
+	CASE
+		WHEN p."FirstName" > 'John'
+			THEN 1
+		WHEN p."FirstName" = 'John'
+			THEN 0
+		ELSE -1
+	END = 0
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
