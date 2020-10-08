@@ -86,7 +86,7 @@ SELECT
 	Sum([t1].[Freight])
 FROM
 	[Orders] [t1]
-		INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [t1].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 GROUP BY
 	[a_Customer].[CustomerID]
 
