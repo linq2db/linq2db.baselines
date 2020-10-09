@@ -1,25 +1,25 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`p`.`FirstName`,
-	`p`.`PersonID`,
-	`p`.`LastName`,
-	`p`.`MiddleName`,
+SELECT 
+	`p`.`FirstName`, 
+	`p`.`PersonID`, 
+	`p`.`LastName`, 
+	`p`.`MiddleName`, 
 	`p`.`Gender`
 FROM
 	`Person` `p`
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				'Janet' as `c1`
 			UNION ALL
-			SELECT
+			SELECT 
 				'Doe' as `c1`
 			UNION ALL
-			SELECT
+			SELECT 
 				'John' as `c1`
 			UNION ALL
-			SELECT
+			SELECT 
 				'Doe' as `c1`
 		) `t1` ON `p`.`LastName` = `t1`.`c1`
 

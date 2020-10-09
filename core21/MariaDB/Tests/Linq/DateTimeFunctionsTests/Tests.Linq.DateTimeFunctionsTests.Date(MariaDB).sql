@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Cast(`t`.`DateTimeValue` as Date)
 FROM
 	`LinqDataTypes` `t`

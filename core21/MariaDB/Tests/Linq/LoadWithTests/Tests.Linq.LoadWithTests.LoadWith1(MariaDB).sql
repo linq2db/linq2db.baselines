@@ -3,10 +3,10 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`t`.`ParentID`,
-	`t`.`ChildID`,
-	`a_Parent`.`ParentID`,
+SELECT 
+	`t`.`ParentID`, 
+	`t`.`ChildID`, 
+	`a_Parent`.`ParentID`, 
 	`a_Parent`.`Value1`
 FROM
 	`Child` `t`

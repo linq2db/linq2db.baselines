@@ -15,10 +15,10 @@ CREATE TABLE `CustomerBase`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`cb`.`Id`,
-	`cb`.`Name`,
-	`cb`.`ContactEmail`,
+SELECT 
+	`cb`.`Id`, 
+	`cb`.`Name`, 
+	`cb`.`ContactEmail`, 
 	Coalesce(`cb`.`Enabled`, 0)
 FROM
 	`CustomerBase` `cb`

@@ -40,7 +40,7 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`InstanceClass` `t`

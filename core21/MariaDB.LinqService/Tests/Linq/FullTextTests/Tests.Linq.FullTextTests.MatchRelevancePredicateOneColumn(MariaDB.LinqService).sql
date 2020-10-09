@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	MATCH(`r`.`TestField2`) AGAINST ('found')
 FROM
 	`FullTextIndexTest` `r`

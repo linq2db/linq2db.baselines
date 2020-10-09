@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Sum(`p`.`ChildID`)
 		FROM
 			`Child` `p`

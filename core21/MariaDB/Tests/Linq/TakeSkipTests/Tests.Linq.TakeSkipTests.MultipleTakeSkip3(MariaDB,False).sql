@@ -27,7 +27,7 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`Value`
 FROM
 	`TakeSkipClass` `t1`

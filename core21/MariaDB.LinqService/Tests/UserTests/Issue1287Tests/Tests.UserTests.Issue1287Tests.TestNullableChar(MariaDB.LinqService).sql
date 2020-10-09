@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`_`.`charDataType`
 FROM
 	`AllTypes` `_`

@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`ch`.`ParentID`,
+SELECT 
+	`ch`.`ParentID`, 
 	`ch`.`ChildID`
 FROM
 	`Child` `ch`
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				Max(`t1`.`ChildID`) as `c1`
 			FROM
 				`Child` `t1`

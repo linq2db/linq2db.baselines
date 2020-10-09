@@ -3,12 +3,12 @@
 DECLARE @t VarChar(1) -- String
 SET     @t = 'A'
 
-SELECT
+SELECT 
 	`y`.`FirstName`
 FROM
 	`Person` `y`
 UNION ALL
-SELECT
+SELECT 
 	`x`.`FirstName`
 FROM
 	`Person` `x`

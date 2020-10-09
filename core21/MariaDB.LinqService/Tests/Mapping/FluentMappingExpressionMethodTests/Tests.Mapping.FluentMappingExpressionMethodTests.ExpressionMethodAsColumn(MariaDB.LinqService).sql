@@ -40,8 +40,8 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
+SELECT 
+	`t1`.`Id`, 
 	`t1`.`Value`
 FROM
 	`InstanceClass` `t1`

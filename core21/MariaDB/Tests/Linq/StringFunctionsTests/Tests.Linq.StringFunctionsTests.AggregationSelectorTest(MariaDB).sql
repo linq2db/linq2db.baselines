@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	GROUP_CONCAT(`t1`.`Value1` SEPARATOR ' -> ')
 FROM
 	`SampleClass` `t1`

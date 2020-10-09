@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Extract(year from `t`.`DateTimeValue`)
 FROM
 	`LinqDataTypes` `t`

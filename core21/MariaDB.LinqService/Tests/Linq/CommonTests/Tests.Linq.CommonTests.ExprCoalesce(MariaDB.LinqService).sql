@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Coalesce(`p`.`Value1`, 100)
 FROM
 	`Parent` `p`

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Person` `p`
@@ -15,7 +15,7 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Person` `t1`

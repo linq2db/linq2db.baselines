@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	Max(`t1`.`ChildID`),
+SELECT 
+	Max(`t1`.`ChildID`), 
 	Max(`t1`.`ChildID` + `t1`.`ParentID`)
 FROM
 	`Child` `t1`

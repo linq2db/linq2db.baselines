@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`MoneyValue`
 FROM
 	`LinqDataTypes` `t`

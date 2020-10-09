@@ -29,7 +29,7 @@ SET     @Item1 = 5
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	`_`.`ID`
 FROM
 	`Issue1316Tests` `_`

@@ -24,7 +24,7 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`d`.`Not Identifier`
 FROM
 	`DynamicTable` `d`

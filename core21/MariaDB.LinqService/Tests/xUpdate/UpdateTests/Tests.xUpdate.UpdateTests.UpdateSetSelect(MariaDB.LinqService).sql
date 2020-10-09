@@ -15,7 +15,7 @@ UPDATE
 		INNER JOIN `Child` `c_2` ON `p`.`ParentID` = `c_2`.`ParentID`
 SET
 	`p`.`ParentID` = (
-		SELECT
+		SELECT 
 			`c_1`.`ParentID`
 		FROM
 			`Child` `c_1`

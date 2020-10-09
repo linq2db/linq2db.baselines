@@ -33,9 +33,9 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`_`.`ID`,
-	`_`.`Array`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`Array`, 
 	`_`.`Binary`
 FROM
 	`Issue1303` `_`
@@ -46,9 +46,9 @@ LIMIT 2
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`_`.`ID`,
-	`_`.`Array`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`Array`, 
 	`_`.`Binary`
 FROM
 	`Issue1303` `_`
@@ -59,9 +59,9 @@ LIMIT 2
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`_`.`ID`,
-	`_`.`Array`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`Array`, 
 	`_`.`Binary`
 FROM
 	`Issue1303` `_`

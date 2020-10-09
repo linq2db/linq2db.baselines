@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`t`.`PersonID`)
 FROM
 	`Person` `t`

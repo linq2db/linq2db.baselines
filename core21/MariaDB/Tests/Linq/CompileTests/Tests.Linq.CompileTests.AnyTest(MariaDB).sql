@@ -3,9 +3,9 @@
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`Child` `c_1`
@@ -18,9 +18,9 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = -1
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`Child` `c_1`

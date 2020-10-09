@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	(
-		SELECT
+		SELECT 
 			Sum(`c_1`.`ChildID`)
 		FROM
 			`Child` `c_1`

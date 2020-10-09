@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`key_data_result`.`ParentID`,
-	`_c`.`ParentID`,
+SELECT 
+	`key_data_result`.`ParentID`, 
+	`_c`.`ParentID`, 
 	`_c`.`ChildID`
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			`p`.`ParentID`
 		FROM
 			`Parent` `p`
@@ -21,25 +21,25 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`Child` `c_1`
 		WHERE
 			`c_1`.`ParentID` = `p`.`ParentID` AND `c_1`.`ChildID` > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			`Child` `c_2`
 		WHERE
 			`c_2`.`ParentID` = `p`.`ParentID` AND `c_2`.`ChildID` > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			`c_3`.`ParentID`
 		FROM
 			`Child` `c_3`
@@ -49,7 +49,7 @@ SELECT
 		ORDER BY
 			`c_3`.`ChildID`
 		LIMIT @take
-	),
+	), 
 	`p`.`ParentID`
 FROM
 	`Parent` `p`

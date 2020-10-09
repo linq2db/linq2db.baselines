@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Sum(`t1`.`ChildID`)
 FROM
 	`Child` `t1`

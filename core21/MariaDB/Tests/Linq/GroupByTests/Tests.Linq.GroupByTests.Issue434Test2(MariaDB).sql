@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`p`.`PersonID`,
-	`_gjd_ri`.`PersonID`,
+SELECT 
+	`p`.`PersonID`, 
+	`_gjd_ri`.`PersonID`, 
 	`_gjd_ri`.`Diagnosis`
 FROM
 	`Person` `p`
@@ -14,8 +14,8 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`p`.`FirstName`,
+SELECT 
+	`p`.`FirstName`, 
 	`p`.`PersonID`
 FROM
 	`Person` `p`

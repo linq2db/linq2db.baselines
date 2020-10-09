@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Child` `p`
@@ -12,7 +12,7 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`a_Parent`.`ParentID`
 FROM
 	`Child` `ch`
@@ -21,7 +21,7 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Child` `p`

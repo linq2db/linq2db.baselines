@@ -3,7 +3,7 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	`c_1`.`ChildID`
 FROM
 	`Child` `c_1`

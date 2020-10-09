@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Log10(`p`.`MoneyValue`)) as `c1`
 		FROM
 			`LinqDataTypes` `p`

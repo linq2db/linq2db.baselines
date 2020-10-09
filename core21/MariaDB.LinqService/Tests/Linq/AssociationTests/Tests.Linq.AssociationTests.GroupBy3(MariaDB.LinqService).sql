@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Extract(year from `a_Types`.`DateTimeValue`) as `c1`
 		FROM
 			`Parent` `selectParam`

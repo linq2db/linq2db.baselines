@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Lower(`p`.`Taxonomy`)
 FROM
 	`Doctor` `p`

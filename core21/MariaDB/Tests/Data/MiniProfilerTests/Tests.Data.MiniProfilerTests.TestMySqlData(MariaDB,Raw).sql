@@ -33,7 +33,7 @@ SET     @p = '2012-12-12 12:12:12'
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	`t1`.`Value`
 FROM
 	(
@@ -48,7 +48,7 @@ SET     @p = '2012-12-12 12:12:12'
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	`t1`.`Value`
 FROM
 	(
@@ -63,7 +63,7 @@ SET     @p = '2012-12-12 12:12:12'
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	`t1`.`Value`
 FROM
 	(

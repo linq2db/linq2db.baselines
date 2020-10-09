@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	1 as `c1`
 

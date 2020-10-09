@@ -80,7 +80,7 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`s`.`Name`
 FROM
 	`Stone` `s`
@@ -95,10 +95,10 @@ BeforeExecute
 DECLARE @Name_1 VarChar(6) -- String
 SET     @Name_1 = 'group1'
 
-SELECT
-	`s`.`Id`,
-	`s`.`Name`,
-	`s`.`Enabled`,
+SELECT 
+	`s`.`Id`, 
+	`s`.`Name`, 
+	`s`.`Enabled`, 
 	`s`.`ImageFullUrl`
 FROM
 	`Stone` `s`
@@ -113,10 +113,10 @@ BeforeExecute
 DECLARE @Name_1 VarChar(6) -- String
 SET     @Name_1 = 'group2'
 
-SELECT
-	`s`.`Id`,
-	`s`.`Name`,
-	`s`.`Enabled`,
+SELECT 
+	`s`.`Id`, 
+	`s`.`Name`, 
+	`s`.`Enabled`, 
 	`s`.`ImageFullUrl`
 FROM
 	`Stone` `s`

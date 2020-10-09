@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`row_1`.`Value`
 FROM
 	`ValueItem` `row_1`

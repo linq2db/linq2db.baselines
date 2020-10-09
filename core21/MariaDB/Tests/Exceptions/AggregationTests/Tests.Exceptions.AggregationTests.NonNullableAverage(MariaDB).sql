@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Avg(`_`.`ParentID`)
 FROM
 	`Parent` `_`

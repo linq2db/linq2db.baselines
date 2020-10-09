@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`p`.`DateTimeValue`
 FROM
 	`LinqDataTypes` `p`

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			`GrandChild` `c_1`
@@ -12,14 +12,14 @@ SELECT
 			`p1`.`ParentID` = `c_1`.`ParentID`
 	)
 FROM
-	(
-		SELECT
-			`p3`.`ID` + 1 as `ID`,
+	( 
+		SELECT 
+			`p3`.`ID` + 1 as `ID`, 
 			`p3`.`ParentID`
 		FROM
-			(
-				SELECT
-					`p2`.`ParentID` + 1 as `ID`,
+			( 
+				SELECT 
+					`p2`.`ParentID` + 1 as `ID`, 
 					`a_Parent`.`ParentID`
 				FROM
 					`Child` `p2`

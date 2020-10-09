@@ -26,7 +26,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`InheritanceParent` `t1`
@@ -52,7 +52,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`InheritanceParent` `t1`

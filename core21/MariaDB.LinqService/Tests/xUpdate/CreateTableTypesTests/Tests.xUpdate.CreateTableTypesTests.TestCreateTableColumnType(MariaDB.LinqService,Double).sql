@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
+SELECT 
+	`t1`.`Id`, 
 	`t1`.`Double`
 FROM
 	`CreateTableTypes` `t1`

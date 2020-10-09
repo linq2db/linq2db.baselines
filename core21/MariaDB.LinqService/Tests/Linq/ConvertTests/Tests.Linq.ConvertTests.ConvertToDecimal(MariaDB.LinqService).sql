@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`p`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(`t`.`MoneyValue` as DECIMAL(29,10)) as `c1`
 		FROM
 			`LinqDataTypes` `t`

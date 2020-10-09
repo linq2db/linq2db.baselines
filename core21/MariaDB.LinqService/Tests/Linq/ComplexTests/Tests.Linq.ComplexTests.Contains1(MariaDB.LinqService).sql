@@ -1,25 +1,25 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`p`.`ParentID`,
-	`t2`.`gc3`,
-	`t2`.`ChildID`,
-	`t2`.`GrandChildID`,
+SELECT 
+	`p`.`ParentID`, 
+	`t2`.`gc3`, 
+	`t2`.`ChildID`, 
+	`t2`.`GrandChildID`, 
 	`t2`.`is_empty`
 FROM
 	`Child` `ch`
 		INNER JOIN `Parent` `p` ON `ch`.`ParentID` = `p`.`ParentID`
-		LEFT JOIN (
-			SELECT
-				`gc1`.`ParentID` as `gc3`,
-				`gc1`.`ChildID`,
-				`gc1`.`GrandChildID`,
+		LEFT JOIN ( 
+			SELECT 
+				`gc1`.`ParentID` as `gc3`, 
+				`gc1`.`ChildID`, 
+				`gc1`.`GrandChildID`, 
 				1 as `is_empty`
 			FROM
 				`GrandChild` `gc1`
-					INNER JOIN (
-						SELECT
+					INNER JOIN ( 
+						SELECT 
 							Max(`t1`.`GrandChildID`) as `c1`
 						FROM
 							`GrandChild` `t1`

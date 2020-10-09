@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			`Child` `t1`

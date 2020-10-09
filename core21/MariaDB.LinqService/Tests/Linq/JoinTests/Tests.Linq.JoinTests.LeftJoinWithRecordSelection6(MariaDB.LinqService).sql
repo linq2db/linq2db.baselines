@@ -49,10 +49,10 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`ft`.`Id`,
-	`t`.`Id`,
-	`t`.`FactId`,
+SELECT 
+	`ft`.`Id`, 
+	`t`.`Id`, 
+	`t`.`FactId`, 
 	`t`.`Name`
 FROM
 	`Fact` `ft`

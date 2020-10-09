@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`x`.`PersonID`)
 FROM
 	`Patient` `x`
@@ -11,7 +11,7 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`x`.`PersonID`)
 FROM
 	`Patient` `x`
@@ -21,7 +21,7 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`x`.`PersonID`)
 FROM
 	`Patient` `x`
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`x`.`PersonID`)
 FROM
 	`Patient` `x`

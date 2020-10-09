@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`x`.`Value1`,
+SELECT 
+	`x`.`Value1`, 
 	`x`.`ParentID`
 FROM
 	`Parent` `x`

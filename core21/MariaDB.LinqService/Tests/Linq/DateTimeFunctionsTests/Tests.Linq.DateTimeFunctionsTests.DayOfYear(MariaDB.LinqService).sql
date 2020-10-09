@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	DayOfYear(`t`.`DateTimeValue`)
 FROM
 	`LinqDataTypes` `t`

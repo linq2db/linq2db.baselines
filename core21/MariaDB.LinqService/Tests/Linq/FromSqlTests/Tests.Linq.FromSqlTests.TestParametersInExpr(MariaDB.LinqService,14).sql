@@ -44,8 +44,8 @@ SET     @startId = 1
 DECLARE @endId Int32
 SET     @endId = 14
 
-SELECT
-	`s`.`value`,
+SELECT 
+	`s`.`value`, 
 	`s`.`id`
 FROM
 	`sample_class` `c_1`
@@ -62,8 +62,8 @@ SET     @startId = 1
 DECLARE @endId Int32
 SET     @endId = 14
 
-SELECT
-	`t`.`value`,
+SELECT 
+	`t`.`value`, 
 	`t`.`id`
 FROM
 	`sample_class` `t`

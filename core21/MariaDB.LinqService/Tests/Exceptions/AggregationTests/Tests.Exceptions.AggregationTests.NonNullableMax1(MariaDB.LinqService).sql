@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`_`.`ParentID`)
 FROM
 	`Parent` `_`

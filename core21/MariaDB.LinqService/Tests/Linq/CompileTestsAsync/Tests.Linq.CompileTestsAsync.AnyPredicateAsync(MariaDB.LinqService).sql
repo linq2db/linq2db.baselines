@@ -32,9 +32,9 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 2
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`AsyncDataTable` `c_1`

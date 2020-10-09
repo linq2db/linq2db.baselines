@@ -5,7 +5,7 @@ SET     @id = 10
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	`x`.`ChildID`
 FROM
 	`Child` `x`

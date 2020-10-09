@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`ParentID`
 FROM
 	`Child` `t1`
@@ -13,8 +13,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int32
 SET     @ParentID_1 = 1
 
-SELECT
-	`keyParam`.`ParentID`,
+SELECT 
+	`keyParam`.`ParentID`, 
 	`keyParam`.`ChildID`
 FROM
 	`Child` `keyParam`

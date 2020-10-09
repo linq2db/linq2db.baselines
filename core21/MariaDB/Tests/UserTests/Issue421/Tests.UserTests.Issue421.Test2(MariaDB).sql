@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`_`.`Id`,
+SELECT 
+	`_`.`Id`, 
 	`_`.`BlobValue`
 FROM
 	`BlobClass` `_`
@@ -48,8 +48,8 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`_`.`Id`,
+SELECT 
+	`_`.`Id`, 
 	`_`.`BlobValue`
 FROM
 	`BlobClass` `_`

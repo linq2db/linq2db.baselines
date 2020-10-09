@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`pp`.`PersonID`,
+SELECT 
+	`pp`.`PersonID`, 
 	`pp`.`FirstName`
 FROM
 	`Person` `pp`
