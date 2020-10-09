@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[Value1] = 1
+	Iif([p].[Value1] = 1, 10, 20) = 10
 

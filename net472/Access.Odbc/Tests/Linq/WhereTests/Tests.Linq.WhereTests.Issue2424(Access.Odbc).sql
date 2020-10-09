@@ -70,7 +70,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	0 <= Iif([i].[StrValue] > '4', 1, Iif([i].[StrValue] = '4', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -81,7 +81,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	Iif([i].[StrValue] > '4', 1, Iif([i].[StrValue] = '4', 0, -1)) >= 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -92,7 +92,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	0 >= Iif([i].[StrValue] > '2', 1, Iif([i].[StrValue] = '2', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -103,7 +103,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	Iif([i].[StrValue] > '2', 1, Iif([i].[StrValue] = '2', 0, -1)) <= 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -114,7 +114,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	0 < Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -125,7 +125,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1)) > 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -136,7 +136,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	0 > Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -147,7 +147,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1)) < 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -158,7 +158,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '3'
+	0 = Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -169,7 +169,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '3'
+	Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1)) = 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -180,7 +180,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	0 >= Iif([i].[StrValue] > '2', 1, Iif([i].[StrValue] = '2', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -191,7 +191,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	Iif([i].[StrValue] > '2', 1, Iif([i].[StrValue] = '2', 0, -1)) <= 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -202,7 +202,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	0 <= Iif([i].[StrValue] > '4', 1, Iif([i].[StrValue] = '4', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -213,7 +213,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	Iif([i].[StrValue] > '4', 1, Iif([i].[StrValue] = '4', 0, -1)) >= 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -224,7 +224,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	0 > Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -235,7 +235,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1)) < 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -246,7 +246,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	0 < Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -257,7 +257,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	Iif([i].[StrValue] > '3', 1, Iif([i].[StrValue] = '3', 0, -1)) > 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -268,7 +268,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
+	0 <= Iif([i].[StrValue] > '5', 1, Iif([i].[StrValue] = '5', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -279,7 +279,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
+	Iif([i].[StrValue] > '5', 1, Iif([i].[StrValue] = '5', 0, -1)) >= 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -290,7 +290,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '1'
+	0 >= Iif([i].[StrValue] > '1', 1, Iif([i].[StrValue] = '1', 0, -1))
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -301,7 +301,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '1'
+	Iif([i].[StrValue] > '1', 1, Iif([i].[StrValue] = '1', 0, -1)) <= 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
