@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[p].[DateTimeValue]
 FROM
 	[LinqDataTypes] [p]

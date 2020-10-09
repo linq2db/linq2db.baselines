@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN (Convert(Float, [p].[MoneyValue]) * 2 IS NOT NULL AND Convert(Float, [p].[MoneyValue]) * 2 = Round(Convert(Float, [p].[MoneyValue]) * 2, 1)) AND (Convert(Float, [p].[MoneyValue]) IS NULL OR Convert(Float, [p].[MoneyValue]) <> Round(Convert(Float, [p].[MoneyValue]), 1))
 					THEN Round(Convert(Float, [p].[MoneyValue]) / 2, 1) * 2

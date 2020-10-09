@@ -196,12 +196,12 @@ SET     @take = 5
 
 DELETE [t2]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					ROW_NUMBER() OVER (ORDER BY [x].[ParentID] DESC) as [RN]
 				FROM
 					[Parent] [x]
@@ -217,8 +217,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[p].[ParentID],
+SELECT TOP (@take) 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

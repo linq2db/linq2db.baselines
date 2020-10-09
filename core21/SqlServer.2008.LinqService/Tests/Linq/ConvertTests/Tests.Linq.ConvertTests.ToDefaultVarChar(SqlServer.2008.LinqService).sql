@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Convert(VarChar, [t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

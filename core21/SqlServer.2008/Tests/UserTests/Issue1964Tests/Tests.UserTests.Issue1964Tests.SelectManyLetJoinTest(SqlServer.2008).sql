@@ -46,25 +46,25 @@ CREATE TABLE [dbo].[BranchInfo]
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[m_1].[BranchAddress],
-	[m_1].[BranchId],
-	[m_1].[BranchName],
-	[m_1].[BusinessHours],
-	[m_1].[PointX],
-	[m_1].[PointY],
+SELECT 
+	[m_1].[BranchAddress], 
+	[m_1].[BranchId], 
+	[m_1].[BranchName], 
+	[m_1].[BusinessHours], 
+	[m_1].[PointX], 
+	[m_1].[PointY], 
 	[t1].[Url]
 FROM
 	[dbo].[BranchInfo] [m_1]
-		LEFT JOIN (
-			SELECT
-				[att].[ItemId],
+		LEFT JOIN ( 
+			SELECT 
+				[att].[ItemId], 
 				[att].[Url]
 			FROM
-				(
-					SELECT
-						ROW_NUMBER() OVER(PARTITION BY [temp_1].[ItemId] ORDER BY [temp_1].[CreateTime]) as [Index_1],
-						[temp_1].[ItemId],
+				( 
+					SELECT 
+						ROW_NUMBER() OVER(PARTITION BY [temp_1].[ItemId] ORDER BY [temp_1].[CreateTime]) as [Index_1], 
+						[temp_1].[ItemId], 
 						[temp_1].[Url]
 					FROM
 						[dbo].[Attachment] [temp_1]

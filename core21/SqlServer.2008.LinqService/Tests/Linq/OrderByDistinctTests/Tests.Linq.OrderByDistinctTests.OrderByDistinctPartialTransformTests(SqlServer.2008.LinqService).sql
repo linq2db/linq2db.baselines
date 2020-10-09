@@ -48,14 +48,14 @@ SET     @skip = 0
 DECLARE @take Int -- Int32
 SET     @take = 3
 
-SELECT
-	[t1].[DuplicateData],
+SELECT 
+	[t1].[DuplicateData], 
 	[t1].[OrderData2]
 FROM
-	(
-		SELECT
-			[x].[DuplicateData],
-			[x].[OrderData2],
+	( 
+		SELECT 
+			[x].[DuplicateData], 
+			[x].[OrderData2], 
 			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1]), [x].[OrderData2] DESC) as [RN]
 		FROM
 			[OrderByDistinctData] [x]

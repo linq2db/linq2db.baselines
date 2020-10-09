@@ -3,32 +3,32 @@
 DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe'
 
-SELECT
+SELECT 
 	[t1].[FirstName]
 FROM
 	[Person] [p]
-		CROSS APPLY (
-			SELECT
+		CROSS APPLY ( 
+			SELECT 
 				[p].[FirstName]
 			UNION ALL
-			SELECT
+			SELECT 
 				[p].[LastName] as [FirstName]
 			UNION ALL
-			SELECT
+			SELECT 
 				N'John' as [FirstName]
 			UNION ALL
-			SELECT
+			SELECT 
 				@doe as [FirstName]
 		) [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -36,8 +36,8 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
@@ -47,21 +47,21 @@ BeforeExecute
 DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe1'
 
-SELECT
+SELECT 
 	[t1].[FirstName]
 FROM
 	[Person] [p]
-		CROSS APPLY (
-			SELECT
+		CROSS APPLY ( 
+			SELECT 
 				[p].[FirstName]
 			UNION ALL
-			SELECT
+			SELECT 
 				[p].[LastName] as [FirstName]
 			UNION ALL
-			SELECT
+			SELECT 
 				N'John' as [FirstName]
 			UNION ALL
-			SELECT
+			SELECT 
 				@doe as [FirstName]
 		) [t1]
 

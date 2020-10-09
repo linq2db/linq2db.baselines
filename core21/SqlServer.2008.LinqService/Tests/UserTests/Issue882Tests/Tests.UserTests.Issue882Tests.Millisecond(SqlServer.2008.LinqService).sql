@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	DatePart(millisecond, [t].[DateTimeValue]) % 7
 FROM
 	[LinqDataTypes] [t]

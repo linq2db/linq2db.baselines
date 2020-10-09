@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Round([p].[MoneyValue], 0, 1) as [c1]
 		FROM
 			[LinqDataTypes] [p]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Max([t].[PersonID])
 FROM
 	[Person] [t]

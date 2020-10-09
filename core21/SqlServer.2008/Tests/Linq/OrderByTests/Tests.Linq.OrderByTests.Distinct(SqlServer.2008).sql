@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT DISTINCT
-	[p].[ParentID],
+SELECT DISTINCT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

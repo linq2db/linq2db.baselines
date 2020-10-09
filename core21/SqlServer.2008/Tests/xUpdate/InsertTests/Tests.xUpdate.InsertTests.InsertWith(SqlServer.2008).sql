@@ -5,11 +5,11 @@ INSERT INTO [Parent]
 (
 	[ParentID]
 )
-SELECT
+SELECT 
 	[t1].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[c_1].[ChildID]
 		FROM
 			[Child] [c_1] WITH (INDEX(IX_ChildIndex))

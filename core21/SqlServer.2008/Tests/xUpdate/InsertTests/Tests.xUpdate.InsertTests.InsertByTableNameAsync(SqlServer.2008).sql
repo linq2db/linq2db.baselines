@@ -97,7 +97,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2008 (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [t1]
@@ -105,7 +105,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008 (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [p]

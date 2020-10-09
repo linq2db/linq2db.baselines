@@ -3,11 +3,11 @@
 DECLARE @take Int -- Int32
 SET     @take = 4
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	[t1].[ParentID]
 FROM
-	(
-		SELECT TOP (@take)
+	( 
+		SELECT TOP (@take) 
 			[ch].[ParentID]
 		FROM
 			[Child] [ch]

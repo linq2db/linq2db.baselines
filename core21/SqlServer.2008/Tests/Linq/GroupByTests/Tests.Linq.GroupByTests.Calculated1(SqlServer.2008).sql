@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN [selectParam].[ParentID] > 2
 					THEN CASE
@@ -26,8 +26,8 @@ BeforeExecute
 DECLARE @p1 NVarChar(4000) -- String
 SET     @p1 = N'1'
 
-SELECT
-	[selectParam].[ParentID],
+SELECT 
+	[selectParam].[ParentID], 
 	[selectParam].[ChildID]
 FROM
 	[Child] [selectParam]

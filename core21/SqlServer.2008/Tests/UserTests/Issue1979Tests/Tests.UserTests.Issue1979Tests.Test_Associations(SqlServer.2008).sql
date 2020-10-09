@@ -35,18 +35,18 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	[i].[Id]
 FROM
 	[Issue] [i]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Tagging] [_1]
-				OUTER APPLY (
-					SELECT TOP (@take)
+				OUTER APPLY ( 
+					SELECT TOP (@take) 
 						[_].[Name]
 					FROM
 						[Tag] [_]

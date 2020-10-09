@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[x].[ParentID],
+SELECT 
+	[x].[ParentID], 
 	Count(*)
 FROM
 	[Child] [x]

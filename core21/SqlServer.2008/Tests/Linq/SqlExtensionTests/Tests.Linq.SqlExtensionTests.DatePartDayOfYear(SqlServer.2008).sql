@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	DatePart(dayofyear, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

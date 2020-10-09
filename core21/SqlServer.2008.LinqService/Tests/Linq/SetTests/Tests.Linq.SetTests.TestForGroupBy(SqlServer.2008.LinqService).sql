@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[x].[ParentID],
-	[x].[ChildID],
+SELECT 
+	[x].[ParentID], 
+	[x].[ChildID], 
 	[x].[GrandChildID]
 FROM
 	[GrandChild] [x]
@@ -13,9 +13,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[x].[ParentID],
-	[x].[ChildID],
+SELECT 
+	[x].[ParentID], 
+	[x].[ChildID], 
 	[x].[GrandChildID]
 FROM
 	[GrandChild] [x]

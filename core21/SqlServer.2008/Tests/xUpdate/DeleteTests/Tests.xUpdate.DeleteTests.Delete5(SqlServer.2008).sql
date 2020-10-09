@@ -51,7 +51,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [_]
@@ -70,7 +70,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [_]

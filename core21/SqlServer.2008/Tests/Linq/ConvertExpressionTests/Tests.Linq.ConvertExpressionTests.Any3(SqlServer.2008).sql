@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Parent] [p]
 		WHERE
 			EXISTS(
-				SELECT
+				SELECT 
 					*
 				FROM
 					[Child] [c_1]

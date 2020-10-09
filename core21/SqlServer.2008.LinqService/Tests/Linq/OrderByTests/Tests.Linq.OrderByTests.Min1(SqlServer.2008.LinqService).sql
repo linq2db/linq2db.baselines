@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Min([p].[ParentID])
 FROM
 	[Parent] [p]

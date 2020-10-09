@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [t1]
@@ -12,13 +12,13 @@ BeforeExecute
 WITH [CTE1_] ([ParentID], [ChildID])
 AS
 (
-	SELECT
-		[t1].[ParentID],
+	SELECT 
+		[t1].[ParentID], 
 		[t1].[ChildID]
 	FROM
 		[Child] [t1]
 )
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[CTE1_] [t2]
@@ -29,12 +29,12 @@ BeforeExecute
 WITH [CTE1_] ([ChildID])
 AS
 (
-	SELECT
+	SELECT 
 		[c_2].[ChildID]
 	FROM
 		[Child] [c_2]
 )
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[CTE1_] [t1]
@@ -45,14 +45,14 @@ BeforeExecute
 WITH [CTE1_] ([ChildID])
 AS
 (
-	SELECT
+	SELECT 
 		[c_2].[ChildID]
 	FROM
 		[Child] [c_2]
 )
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[CTE1_] [t1]

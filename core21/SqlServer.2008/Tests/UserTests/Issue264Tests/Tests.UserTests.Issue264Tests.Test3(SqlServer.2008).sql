@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			MONTH([selectParam].[DateTimeValue]) as [c1]
 		FROM
 			[LinqDataTypes] [selectParam]

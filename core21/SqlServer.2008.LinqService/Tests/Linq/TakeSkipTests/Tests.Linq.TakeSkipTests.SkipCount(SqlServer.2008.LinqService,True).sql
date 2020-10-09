@@ -3,18 +3,18 @@
 DECLARE @skip Int -- Int32
 SET     @skip = 2
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
-			[t2].[ParentID],
+	( 
+		SELECT 
+			[t2].[ParentID], 
 			[t2].[ChildID]
 		FROM
-			(
-				SELECT
-					[t1].[ParentID],
-					[t1].[ChildID],
+			( 
+				SELECT 
+					[t1].[ParentID], 
+					[t1].[ChildID], 
 					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 				FROM
 					[Child] [t1]

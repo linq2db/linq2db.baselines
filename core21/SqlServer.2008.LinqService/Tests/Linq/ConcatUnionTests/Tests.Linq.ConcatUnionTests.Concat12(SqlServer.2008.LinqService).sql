@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = 1
 UNION ALL
-SELECT
-	[a_Parent].[ParentID],
+SELECT 
+	[a_Parent].[ParentID], 
 	[a_Parent].[Value1]
 FROM
 	[Child] [ch]

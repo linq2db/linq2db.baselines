@@ -23,14 +23,14 @@ CREATE TABLE [AllType2CreateTest]
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[ID],
-	[t1].[dateDataType],
-	[t1].[datetimeoffsetDataType],
-	[t1].[datetime2DataType],
-	[t1].[timeDataType],
-	[t1].[hierarchyidDataType],
-	[t1].[geographyDataType],
+SELECT 
+	[t1].[ID], 
+	[t1].[dateDataType], 
+	[t1].[datetimeoffsetDataType], 
+	[t1].[datetime2DataType], 
+	[t1].[timeDataType], 
+	[t1].[hierarchyidDataType], 
+	[t1].[geographyDataType], 
 	[t1].[geometryDataType]
 FROM
 	[AllType2CreateTest] [t1]

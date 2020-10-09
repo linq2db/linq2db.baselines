@@ -3,30 +3,30 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[lw_Parent].[ParentID_1],
-	[lw_Parent].[Value1],
-	[lw_Parent].[ParentID_2],
-	[lw_Parent].[ChildID],
-	[detail_1].[ParentID],
+SELECT 
+	[lw_Parent].[ParentID_1], 
+	[lw_Parent].[Value1], 
+	[lw_Parent].[ParentID_2], 
+	[lw_Parent].[ChildID], 
+	[detail_1].[ParentID], 
 	[detail_1].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
-			[a_Parent].[ParentID],
-			[key_data_result].[ParentID] as [ParentID_1],
-			[key_data_result].[Value1],
-			[detail].[ParentID] as [ParentID_2],
+	( 
+		SELECT DISTINCT 
+			[a_Parent].[ParentID], 
+			[key_data_result].[ParentID] as [ParentID_1], 
+			[key_data_result].[Value1], 
+			[detail].[ParentID] as [ParentID_2], 
 			[detail].[ChildID]
 		FROM
-			(
-				SELECT DISTINCT
-					[t1].[ParentID],
+			( 
+				SELECT DISTINCT 
+					[t1].[ParentID], 
 					[t1].[Value1]
 				FROM
-					(
-						SELECT TOP (@take)
-							[p].[ParentID],
+					( 
+						SELECT TOP (@take) 
+							[p].[ParentID], 
 							[p].[Value1]
 						FROM
 							[Parent] [p]
@@ -44,22 +44,22 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[detail].[ParentID],
-	[detail].[ChildID],
-	[a_Parent].[ParentID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[key_data_result].[Value1], 
+	[detail].[ParentID], 
+	[detail].[ChildID], 
+	[a_Parent].[ParentID], 
 	[a_Parent].[Value1]
 FROM
-	(
-		SELECT DISTINCT
-			[t1].[ParentID],
+	( 
+		SELECT DISTINCT 
+			[t1].[ParentID], 
 			[t1].[Value1]
 		FROM
-			(
-				SELECT TOP (@take)
-					[p].[ParentID],
+			( 
+				SELECT TOP (@take) 
+					[p].[ParentID], 
 					[p].[Value1]
 				FROM
 					[Parent] [p]
@@ -75,8 +75,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[p].[ParentID],
+SELECT TOP (@take) 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

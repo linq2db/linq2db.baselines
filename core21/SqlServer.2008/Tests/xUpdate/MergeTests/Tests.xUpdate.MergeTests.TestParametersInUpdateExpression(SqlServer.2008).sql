@@ -226,8 +226,8 @@ DECLARE @param Int -- Int32
 SET     @param = 123
 
 MERGE INTO [TestMerge1] [Target]
-USING (
-	SELECT
+USING ( 
+	SELECT 
 		[t1].[Id]
 	FROM
 		[TestMerge2] [t1]
@@ -246,12 +246,12 @@ SET
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[_].[Id],
-	[_].[Field1],
-	[_].[Field2],
-	[_].[Field3],
-	[_].[Field4],
+SELECT 
+	[_].[Id], 
+	[_].[Field1], 
+	[_].[Field2], 
+	[_].[Field3], 
+	[_].[Field4], 
 	[_].[Field5]
 FROM
 	[TestMerge1] [_]

@@ -3,11 +3,11 @@
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1320
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DateAdd(month, (@p1 + [p].[ID]) - 1, 0) as [c1]
 		FROM
 			[LinqDataTypes] [p]

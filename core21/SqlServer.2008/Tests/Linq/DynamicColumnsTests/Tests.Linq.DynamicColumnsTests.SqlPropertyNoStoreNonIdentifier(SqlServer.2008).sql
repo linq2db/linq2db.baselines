@@ -24,7 +24,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[d].[Not Identifier]
 FROM
 	[DynamicTable] [d]

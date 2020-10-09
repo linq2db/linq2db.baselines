@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Boolean]
 FROM
 	[CreateTableTypes] [t1]

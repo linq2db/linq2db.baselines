@@ -22,11 +22,11 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT TOP (3)
+SELECT TOP (3) 
 	[t2].[Value_1]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[Value] as [Value_1]
 		FROM
 			[TakeSkipClass] [t1]

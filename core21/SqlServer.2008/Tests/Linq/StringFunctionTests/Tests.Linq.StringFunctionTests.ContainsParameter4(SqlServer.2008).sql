@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -13,8 +13,8 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
@@ -22,24 +22,24 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[p_1].[FirstName],
-	[p_1].[PersonID],
-	[p_1].[LastName],
-	[p_1].[MiddleName],
+SELECT 
+	[p_1].[FirstName], 
+	[p_1].[PersonID], 
+	[p_1].[LastName], 
+	[p_1].[MiddleName], 
 	[p_1].[Gender]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN [p].[FirstName] LIKE N'%Jo%'
 					THEN 1
 				ELSE 0
-			END as [Field1],
-			[p].[FirstName],
-			[p].[PersonID],
-			[p].[LastName],
-			[p].[MiddleName],
+			END as [Field1], 
+			[p].[FirstName], 
+			[p].[PersonID], 
+			[p].[LastName], 
+			[p].[MiddleName], 
 			[p].[Gender]
 		FROM
 			[Person] [p]

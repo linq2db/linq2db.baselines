@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[a_Middle].[ParentID],
-	[a_Middle].[ChildID],
+SELECT 
+	[a_Middle].[ParentID], 
+	[a_Middle].[ChildID], 
 	[a_Middle].[GrandChildID]
 FROM
 	[Parent] [t]
-		LEFT JOIN (
-			SELECT
-				[a_Bottom1].[ParentID],
-				[a_Bottom1].[ChildID],
-				[a_Bottom1].[GrandChildID],
+		LEFT JOIN ( 
+			SELECT 
+				[a_Bottom1].[ParentID], 
+				[a_Bottom1].[ChildID], 
+				[a_Bottom1].[GrandChildID], 
 				[t1].[ParentID] as [ParentID_1]
 			FROM
 				[Child] [t1]

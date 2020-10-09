@@ -48,7 +48,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	DateAdd(day, 5, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

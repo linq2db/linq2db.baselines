@@ -2,11 +2,11 @@
 -- SqlServer.2008
 
 -- SqlServer.2008
-SELECT TOP (1)
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT TOP (1) 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

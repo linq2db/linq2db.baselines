@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	DateAdd(millisecond, 226, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t].[DateTimeValue]
 FROM
 	[LinqDataTypes] [t]

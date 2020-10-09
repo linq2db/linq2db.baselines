@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[x].[PersonID]
 FROM
 	[Person] [x]
@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @st NVarChar(4000) -- String
 SET     @st = N'John'
 
-SELECT
+SELECT 
 	[x].[PersonID]
 FROM
 	[Person] [x]

@@ -32,14 +32,14 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[Id1],
+SELECT 
+	[t1].[Id1], 
 	Count(*)
 FROM
-	(
-		SELECT DISTINCT
-			[selectParam].[Id1],
-			[selectParam].[Id2],
+	( 
+		SELECT DISTINCT 
+			[selectParam].[Id1], 
+			[selectParam].[Id2], 
 			[selectParam].[Value] as [Value_1]
 		FROM
 			[GroupSampleClass] [selectParam]

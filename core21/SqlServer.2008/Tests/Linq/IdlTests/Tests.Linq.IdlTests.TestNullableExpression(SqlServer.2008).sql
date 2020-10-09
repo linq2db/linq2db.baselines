@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[c_1].[PersonID]
 FROM
 	[Person] [c_1]

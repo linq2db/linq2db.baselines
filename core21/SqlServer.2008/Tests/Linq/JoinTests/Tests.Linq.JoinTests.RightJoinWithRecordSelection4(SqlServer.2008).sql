@@ -49,10 +49,10 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[f].[Id],
-	[ft].[Id],
-	[ft].[FactId],
+SELECT 
+	[f].[Id], 
+	[ft].[Id], 
+	[ft].[FactId], 
 	[ft].[Name]
 FROM
 	[Tag] [ft]

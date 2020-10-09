@@ -26,25 +26,25 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[t].[Id],
-	[t].[Name],
-	[t2].[Id],
-	[t2].[collection],
+SELECT 
+	[t].[Id], 
+	[t].[Name], 
+	[t2].[Id], 
+	[t2].[collection], 
 	[t2].[Product]
 FROM
 	[dbo].[Orders] [t]
-		LEFT JOIN (
-			SELECT
-				[t1].[OrderId] as [collection],
-				[t1].[Id],
+		LEFT JOIN ( 
+			SELECT 
+				[t1].[OrderId] as [collection], 
+				[t1].[Id], 
 				[t1].[Product]
 			FROM
 				[dbo].[Orders] [cp]
-					CROSS APPLY (
-						SELECT TOP (@take)
-							[OrderItem].[OrderId],
-							[OrderItem].[Id],
+					CROSS APPLY ( 
+						SELECT TOP (@take) 
+							[OrderItem].[OrderId], 
+							[OrderItem].[Id], 
 							[OrderItem].[Product]
 						FROM
 							[dbo].[OrderItems] [OrderItem]

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN [child].[FirstName] = N'John'
 					THEN [child].[FirstName]
