@@ -91,8 +91,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	inventory."Status",
+SELECT 
+	inventory."Status", 
 	lc."ResourceLabel"
 FROM
 	"InventoryResourceDTO" inventory
@@ -110,10 +110,10 @@ SET     @Status_1 = 40
 DECLARE @ResourceLabel Text(1) -- String
 SET     @ResourceLabel = 'b'
 
-SELECT
-	inventory."Id",
-	inventory."Status",
-	inventory."ResourceID",
+SELECT 
+	inventory."Id", 
+	inventory."Status", 
+	inventory."ResourceID", 
 	inventory."ModifiedTimeStamp"
 FROM
 	"InventoryResourceDTO" inventory

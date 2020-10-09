@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	t1."Key_1",
+SELECT 
+	t1."Key_1", 
 	Sum(t1."ParentID")
 FROM
-	(
-		SELECT
-			"selectParam"."ChildID" + 1 as "Key_1",
+	( 
+		SELECT 
+			"selectParam"."ChildID" + 1 as "Key_1", 
 			"selectParam"."ParentID"
 		FROM
 			"Child" "selectParam"

@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	t1."Id",
+SELECT 
+	t1."Id", 
 	t1."DoubleNullable"
 FROM
 	"CreateTableTypes" t1

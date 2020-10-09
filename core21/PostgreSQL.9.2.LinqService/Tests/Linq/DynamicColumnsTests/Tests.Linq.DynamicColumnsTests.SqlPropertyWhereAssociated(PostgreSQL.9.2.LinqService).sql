@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	x."PersonID"
 FROM
 	"Person" x

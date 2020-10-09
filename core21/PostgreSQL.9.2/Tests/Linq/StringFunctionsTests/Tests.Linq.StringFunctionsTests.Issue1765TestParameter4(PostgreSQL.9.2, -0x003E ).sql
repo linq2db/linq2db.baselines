@@ -31,8 +31,8 @@ BeforeExecute
 DECLARE @separator Text(4) -- String
 SET     @separator = ' -> '
 
-SELECT
-	Max(t1."Value4"),
+SELECT 
+	Max(t1."Value4"), 
 	STRING_AGG(t1."Value4", :separator)
 FROM
 	"SampleClass" t1

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	t1.param2
 FROM
 	"TestTableFunction"(4) t1

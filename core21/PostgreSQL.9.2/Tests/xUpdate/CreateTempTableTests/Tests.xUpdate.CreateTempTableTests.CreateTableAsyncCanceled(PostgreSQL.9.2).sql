@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS "TempTable"
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	p."ParentID"
 FROM
 	"Parent" p

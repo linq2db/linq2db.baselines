@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	t1."Key_1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor(Extract(year from "a_Types"."DateTimeValue")) as int) as "Key_1"
 		FROM
 			"Parent" "selectParam"

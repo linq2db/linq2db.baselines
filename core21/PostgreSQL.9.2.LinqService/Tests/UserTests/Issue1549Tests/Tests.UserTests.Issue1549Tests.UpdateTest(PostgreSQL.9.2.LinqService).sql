@@ -79,7 +79,7 @@ UPDATE
 	"billing_TempReading"
 SET
 	"DevReadingTypeId" = (
-		SELECT
+		SELECT 
 			w."Id"
 		FROM
 			"billing_DevReadingType" w
@@ -89,7 +89,7 @@ SET
 		LIMIT :take
 	),
 	"Responsibility" = (
-		SELECT
+		SELECT 
 			w_1."Responsibility"
 		FROM
 			"billing_DevReadingType" w_1

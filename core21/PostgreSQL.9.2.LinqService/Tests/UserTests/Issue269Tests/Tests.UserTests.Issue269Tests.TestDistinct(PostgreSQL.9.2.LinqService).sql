@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	pat."PersonID",
+SELECT 
+	pat."PersonID", 
 	pat."Diagnosis"
 FROM
 	"Patient" pat
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Person" per

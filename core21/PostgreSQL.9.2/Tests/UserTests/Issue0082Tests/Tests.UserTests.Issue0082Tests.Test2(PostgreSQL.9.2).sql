@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	o."ParentID",
+SELECT 
+	o."ParentID", 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" t1
 		WHERE
 			o."ParentID" = t1."ParentID"
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Sum(x."ParentID")
 		FROM
 			"Child" x
@@ -25,7 +25,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent" o
@@ -33,24 +33,24 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	x_1."ParentID",
-	x_1."CountResult",
+SELECT 
+	x_1."ParentID", 
+	x_1."CountResult", 
 	x_1."SumResult"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					"Child" t1
 				WHERE
 					o."ParentID" = t1."ParentID"
-			) as "CountResult",
-			o."ParentID",
+			) as "CountResult", 
+			o."ParentID", 
 			(
-				SELECT
+				SELECT 
 					Sum(x."ParentID")
 				FROM
 					"Child" x

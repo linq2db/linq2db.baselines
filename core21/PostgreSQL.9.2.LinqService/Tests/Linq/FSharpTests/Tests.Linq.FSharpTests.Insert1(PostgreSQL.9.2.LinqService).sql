@@ -27,7 +27,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Child" c_1

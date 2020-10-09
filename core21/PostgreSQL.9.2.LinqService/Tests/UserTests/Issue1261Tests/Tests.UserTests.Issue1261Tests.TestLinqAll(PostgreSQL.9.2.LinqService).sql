@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"GrandChild" x
@@ -14,9 +14,9 @@ SELECT
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"GrandChild" x

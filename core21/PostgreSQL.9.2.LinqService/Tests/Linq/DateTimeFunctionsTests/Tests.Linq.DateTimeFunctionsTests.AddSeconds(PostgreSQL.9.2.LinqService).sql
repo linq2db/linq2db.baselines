@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	t."DateTimeValue" + -35 * Interval '1 Second'
 FROM
 	"LinqDataTypes" t

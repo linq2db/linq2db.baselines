@@ -30,7 +30,7 @@ SET     @take_1 = 2
 DECLARE @skip_1 Integer -- Int32
 SET     @skip_1 = 3
 
-SELECT
+SELECT 
 	t1."Value"
 FROM
 	"TakeSkipClass" t1

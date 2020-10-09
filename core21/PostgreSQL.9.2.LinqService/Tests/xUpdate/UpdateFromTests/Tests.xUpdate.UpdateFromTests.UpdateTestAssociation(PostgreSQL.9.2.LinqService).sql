@@ -76,7 +76,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	v."Value1"
 FROM
 	"UpdatedEntities" v

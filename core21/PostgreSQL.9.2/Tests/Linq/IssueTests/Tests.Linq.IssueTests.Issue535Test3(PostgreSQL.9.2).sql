@@ -15,10 +15,10 @@ CREATE TABLE "CustomerBase"
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	cb."Id",
-	cb."Name",
-	cb."ContactEmail",
+SELECT 
+	cb."Id", 
+	cb."Name", 
+	cb."ContactEmail", 
 	Coalesce(cb."Enabled", False)
 FROM
 	"CustomerBase" cb

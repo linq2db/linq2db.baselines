@@ -3,8 +3,8 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	c_1."ParentID",
+SELECT 
+	c_1."ParentID", 
 	c_1."ChildID"
 FROM
 	"Child" c_1
@@ -19,8 +19,8 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	c_1."ParentID",
+SELECT 
+	c_1."ParentID", 
 	c_1."ChildID"
 FROM
 	"Child" c_1
@@ -31,7 +31,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	1
 FROM
 	"Parent" p

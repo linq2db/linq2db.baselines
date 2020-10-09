@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	Cast(t."DateTimeValue" as Date)
 FROM
 	"LinqDataTypes" t

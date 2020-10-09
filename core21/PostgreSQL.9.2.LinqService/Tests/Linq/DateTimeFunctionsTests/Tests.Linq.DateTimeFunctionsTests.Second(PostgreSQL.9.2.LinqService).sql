@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	Cast(Floor(Extract(second from t."DateTimeValue")) as int)
 FROM
 	"LinqDataTypes" t

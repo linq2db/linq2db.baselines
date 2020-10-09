@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	p1."PersonID",
+SELECT 
+	p1."PersonID", 
 	p2."FirstName"
 FROM
 	"Person" p1,

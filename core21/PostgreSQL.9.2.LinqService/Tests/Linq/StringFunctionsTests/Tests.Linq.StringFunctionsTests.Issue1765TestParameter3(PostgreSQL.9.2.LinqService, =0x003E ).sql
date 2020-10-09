@@ -31,7 +31,7 @@ BeforeExecute
 DECLARE @separator Text(4) -- String
 SET     @separator = ' => '
 
-SELECT
+SELECT 
 	STRING_AGG(t1."Value4", :separator ORDER BY t1."Value4", t1."Value3" DESC)
 FROM
 	"SampleClass" t1

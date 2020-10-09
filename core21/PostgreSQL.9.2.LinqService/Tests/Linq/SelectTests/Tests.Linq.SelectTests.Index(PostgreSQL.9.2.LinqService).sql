@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	"a_Parent"."ParentID",
+SELECT 
+	"a_Parent"."ParentID", 
 	m_1."ChildID"
 FROM
 	"Child" m_1
@@ -16,8 +16,8 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	"a_Parent"."ParentID",
+SELECT 
+	"a_Parent"."ParentID", 
 	m_1."ChildID"
 FROM
 	"Child" m_1

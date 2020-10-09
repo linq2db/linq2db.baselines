@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	gjd_ch."ParentID",
+SELECT 
+	key_data_result."ParentID", 
+	key_data_result."Value1", 
+	gjd_ch."ParentID", 
 	gjd_ch."ChildID"
 FROM
-	(
-		SELECT DISTINCT
-			p."ParentID",
+	( 
+		SELECT DISTINCT 
+			p."ParentID", 
 			p."Value1"
 		FROM
 			"Parent" p
@@ -21,15 +21,15 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	ch."ParentID",
+SELECT 
+	key_data_result."ParentID", 
+	key_data_result."Value1", 
+	ch."ParentID", 
 	ch."ChildID"
 FROM
-	(
-		SELECT DISTINCT
-			p."ParentID",
+	( 
+		SELECT DISTINCT 
+			p."ParentID", 
 			p."Value1"
 		FROM
 			"Parent" p
@@ -43,8 +43,8 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	p."ParentID",
+SELECT 
+	p."ParentID", 
 	p."Value1"
 FROM
 	"Parent" p

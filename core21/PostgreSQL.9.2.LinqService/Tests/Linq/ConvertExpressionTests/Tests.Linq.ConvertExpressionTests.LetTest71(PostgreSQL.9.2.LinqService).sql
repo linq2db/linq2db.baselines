@@ -3,17 +3,17 @@
 DECLARE @take Integer -- Int32
 SET     @take = 5000
 
-SELECT
-	key_data_result."ParentID",
-	c_1."ParentID",
+SELECT 
+	key_data_result."ParentID", 
+	c_1."ParentID", 
 	c_1."ChildID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			t1."ParentID"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					t."ParentID"
 				FROM
 					"Parent" t
@@ -33,26 +33,26 @@ SET     @take_1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 5000
 
-SELECT
-	t."ParentID",
+SELECT 
+	t."ParentID", 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" c_1
 		WHERE
 			c_1."ParentID" = t."ParentID" AND c_1."ChildID" > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" c_2
 		WHERE
 			c_2."ParentID" = t."ParentID" AND c_2."ChildID" > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			c_3."ParentID"
 		FROM
 			"Child" c_3

@@ -49,7 +49,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent" t1
@@ -67,7 +67,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent" t1

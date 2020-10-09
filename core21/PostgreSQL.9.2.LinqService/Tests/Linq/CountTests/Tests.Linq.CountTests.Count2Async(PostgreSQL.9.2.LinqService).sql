@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent" p

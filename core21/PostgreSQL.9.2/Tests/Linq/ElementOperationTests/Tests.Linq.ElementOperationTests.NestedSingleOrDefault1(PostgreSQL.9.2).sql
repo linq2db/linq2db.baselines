@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	(
-		SELECT DISTINCT
+		SELECT DISTINCT 
 			c_1."ParentID"
 		FROM
 			"Child" c_1

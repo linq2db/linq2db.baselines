@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	ch_3."ParentID",
-	Min(ch_3."ChildID"),
+SELECT 
+	ch_3."ParentID", 
+	Min(ch_3."ChildID"), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
-			(
-				SELECT
-					ch."ParentID" + 1 as "ParentID",
+			( 
+				SELECT 
+					ch."ParentID" + 1 as "ParentID", 
 					ch."ChildID"
 				FROM
 					"Child" ch
@@ -20,9 +20,9 @@ SELECT
 			ch_1."ParentID" - 1 > 0
 	)
 FROM
-	(
-		SELECT
-			ch_2."ParentID" + 1 as "ParentID",
+	( 
+		SELECT 
+			ch_2."ParentID" + 1 as "ParentID", 
 			ch_2."ChildID"
 		FROM
 			"Child" ch_2

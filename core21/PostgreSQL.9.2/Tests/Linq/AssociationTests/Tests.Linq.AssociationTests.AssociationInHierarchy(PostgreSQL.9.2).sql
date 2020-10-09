@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	o."ParentID",
+SELECT 
+	o."ParentID", 
 	o."Value1"
 FROM
 	"Child" ch

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	p."PersonID",
-	p."FirstName",
-	p."LastName",
-	p."MiddleName",
+SELECT 
+	p."PersonID", 
+	p."FirstName", 
+	p."LastName", 
+	p."MiddleName", 
 	p."Gender"
 FROM
 	"Person" p

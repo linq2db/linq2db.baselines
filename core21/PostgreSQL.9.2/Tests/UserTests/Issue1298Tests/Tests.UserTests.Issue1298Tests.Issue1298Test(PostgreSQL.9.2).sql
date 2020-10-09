@@ -100,10 +100,10 @@ SET     @take_1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	x.ref1,
+SELECT 
+	x.ref1, 
 	(
-		SELECT
+		SELECT 
 			q.asdfgh
 		FROM
 			qwerty q

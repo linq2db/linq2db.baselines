@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	c_1."ParentID",
+SELECT 
+	c_1."ParentID", 
 	c_1."ChildID"
 FROM
 	"Parent" p
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN "Child" c_1 ON g_1."ChildID" = c_1."ChildID"
 WHERE
 	NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"GrandChild" x

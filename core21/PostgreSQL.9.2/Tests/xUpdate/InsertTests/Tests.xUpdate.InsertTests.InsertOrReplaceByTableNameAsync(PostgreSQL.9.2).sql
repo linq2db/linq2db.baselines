@@ -81,7 +81,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPatient23" t1
@@ -117,7 +117,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPatient23" t1

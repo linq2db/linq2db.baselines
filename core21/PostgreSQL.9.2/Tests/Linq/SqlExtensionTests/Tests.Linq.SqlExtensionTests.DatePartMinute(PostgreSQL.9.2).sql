@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	Extract(minute from t."DateTimeValue")
 FROM
 	"LinqDataTypes" t

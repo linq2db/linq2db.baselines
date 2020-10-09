@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	"a_Patient"."PersonID",
+SELECT 
+	"a_Patient"."PersonID", 
 	"a_Patient"."Diagnosis"
 FROM
 	"Person" p

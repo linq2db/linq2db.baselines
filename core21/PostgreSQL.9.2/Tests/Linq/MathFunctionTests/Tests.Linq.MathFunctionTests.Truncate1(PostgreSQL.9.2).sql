@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Trunc(p."MoneyValue", 0) as c1
 		FROM
 			"LinqDataTypes" p

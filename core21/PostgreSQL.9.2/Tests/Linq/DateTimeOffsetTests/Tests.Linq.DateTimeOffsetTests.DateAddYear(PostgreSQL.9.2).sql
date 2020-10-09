@@ -67,7 +67,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	t."TransactionDate" + 11 * Interval '1 Year'
 FROM
 	"Transactions" t

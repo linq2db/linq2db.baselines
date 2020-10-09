@@ -3,18 +3,18 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	pat."PersonID",
+SELECT 
+	pat."PersonID", 
 	pat."Diagnosis"
 FROM
 	"Patient" pat
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"a_Patient"."Diagnosis"
 				FROM
 					"Person" per

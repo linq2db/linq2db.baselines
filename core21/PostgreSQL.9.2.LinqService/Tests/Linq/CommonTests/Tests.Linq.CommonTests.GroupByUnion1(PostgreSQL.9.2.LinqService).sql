@@ -1,26 +1,26 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	tt."ParentID",
+SELECT 
+	tt."ParentID", 
 	tt."Sum_1"
 FROM
-	(
-		SELECT
-			Sum(t1."ID") as "Sum_1",
+	( 
+		SELECT 
+			Sum(t1."ID") as "Sum_1", 
 			t1."ParentID"
 		FROM
-			(
-				SELECT
-					c_1."ParentID",
+			( 
+				SELECT 
+					c_1."ParentID", 
 					c_1."ChildID" as "ID"
 				FROM
 					"Child" c_1
 				WHERE
 					c_1."ParentID" < 4
 				UNION ALL
-				SELECT
-					Coalesce(g_1."ParentID", 0) as "ParentID",
+				SELECT 
+					Coalesce(g_1."ParentID", 0) as "ParentID", 
 					Coalesce(g_1."GrandChildID", 0) as "ID"
 				FROM
 					"GrandChild" g_1

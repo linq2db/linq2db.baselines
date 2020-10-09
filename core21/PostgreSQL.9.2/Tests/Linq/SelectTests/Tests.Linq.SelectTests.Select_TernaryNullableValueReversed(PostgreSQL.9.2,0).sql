@@ -3,6 +3,6 @@
 DECLARE @Value_2 Integer -- Int32
 SET     @Value_2 = 0
 
-SELECT
+SELECT 
 	:Value_2
 

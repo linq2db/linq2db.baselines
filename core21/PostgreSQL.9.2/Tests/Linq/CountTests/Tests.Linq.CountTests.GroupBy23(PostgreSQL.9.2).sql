@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
-			(
-				SELECT
-					p."ParentID" + 1 as "ParentID",
+			( 
+				SELECT 
+					p."ParentID" + 1 as "ParentID", 
 					p."Value1"
 				FROM
 					"Parent" p

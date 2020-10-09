@@ -8,7 +8,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	current_schema()
 FROM
 	"LinqDataTypes" t1
@@ -19,7 +19,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	current_database()
 FROM
 	"LinqDataTypes" t1
@@ -48,7 +48,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	t1."ID"
 FROM
 	testdata."public"."DropTableTest" t1
@@ -61,7 +61,7 @@ DROP TABLE testdata."public"."DropTableTest"
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	t1."ID"
 FROM
 	testdata."public"."DropTableTest" t1

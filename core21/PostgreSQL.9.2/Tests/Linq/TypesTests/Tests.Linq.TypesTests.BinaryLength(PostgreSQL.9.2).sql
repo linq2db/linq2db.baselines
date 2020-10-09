@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Length(t."BinaryValue")
 FROM
 	"LinqDataTypes" t

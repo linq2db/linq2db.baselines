@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	Coalesce((
-		SELECT
+		SELECT 
 			Max(c_1."ChildID")
 		FROM
 			"Child" c_1

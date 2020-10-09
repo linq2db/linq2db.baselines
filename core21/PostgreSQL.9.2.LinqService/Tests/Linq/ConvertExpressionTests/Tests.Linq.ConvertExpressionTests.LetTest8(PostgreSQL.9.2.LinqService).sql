@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	key_data_result."ParentID",
-	c_1."ParentID",
+SELECT 
+	key_data_result."ParentID", 
+	c_1."ParentID", 
 	c_1."ChildID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			p."ParentID"
 		FROM
 			"Parent" p
@@ -19,13 +19,13 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	key_data_result."ParentID",
-	c_1."ParentID",
+SELECT 
+	key_data_result."ParentID", 
+	c_1."ParentID", 
 	c_1."ChildID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			p."ParentID"
 		FROM
 			"Parent" p
@@ -37,18 +37,18 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	p."ParentID",
+SELECT 
+	p."ParentID", 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" c_1
 		WHERE
 			c_1."ParentID" = p."ParentID" AND c_1."ChildID" > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" c_2

@@ -17,7 +17,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" c_1
