@@ -32,7 +32,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`InheritanceParent` `t1`
@@ -64,7 +64,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`InheritanceParent` `t1`

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-SELECT
+SELECT 
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`Child` `c_1`

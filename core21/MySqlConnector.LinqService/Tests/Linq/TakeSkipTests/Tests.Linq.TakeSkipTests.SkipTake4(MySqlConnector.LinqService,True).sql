@@ -7,13 +7,13 @@ SET     @take = 7
 DECLARE @skip Int32
 SET     @skip = 2
 
-SELECT
-	`t2`.`ParentID`,
+SELECT 
+	`t2`.`ParentID`, 
 	`t2`.`ChildID`
 FROM
-	(
-		SELECT
-			`t1`.`ChildID`,
+	( 
+		SELECT 
+			`t1`.`ChildID`, 
 			`t1`.`ParentID`
 		FROM
 			`Child` `t1`

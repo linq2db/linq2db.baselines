@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` SEPARATOR ' -> ')
 FROM
 	`SampleClass` `t`
@@ -37,7 +37,7 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` SEPARATOR ' -> ')
 FROM
 	`SampleClass` `t`
@@ -45,7 +45,7 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` DESC SEPARATOR ' -> ')
 FROM
 	`SampleClass` `t`
@@ -53,7 +53,7 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` DESC SEPARATOR ' -> ')
 FROM
 	`SampleClass` `t`

@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`_`.`Id`,
+SELECT 
+	`_`.`Id`, 
 	`_`.`BlobValue`
 FROM
 	`BlobClass40` `_`
@@ -38,8 +38,8 @@ LIMIT 1
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`_`.`Id`,
+SELECT 
+	`_`.`Id`, 
 	`_`.`BlobValue`
 FROM
 	`BlobClass40` `_`

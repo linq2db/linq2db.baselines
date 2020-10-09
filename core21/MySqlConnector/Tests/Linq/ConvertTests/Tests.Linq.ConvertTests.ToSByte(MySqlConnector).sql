@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`p`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor(`t`.`MoneyValue`) as SIGNED) as `c1`
 		FROM
 			`LinqDataTypes` `t`

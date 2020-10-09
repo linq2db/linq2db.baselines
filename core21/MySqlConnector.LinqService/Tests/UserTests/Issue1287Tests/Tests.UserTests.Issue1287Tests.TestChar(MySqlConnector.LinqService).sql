@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`_`.`charDataType`
 FROM
 	`AllTypes` `_`

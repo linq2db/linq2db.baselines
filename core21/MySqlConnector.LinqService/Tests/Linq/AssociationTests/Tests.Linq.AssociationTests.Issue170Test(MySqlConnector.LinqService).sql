@@ -3,7 +3,7 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	`a_Parent`.`Value1`
 FROM
 	`Parent` `x`

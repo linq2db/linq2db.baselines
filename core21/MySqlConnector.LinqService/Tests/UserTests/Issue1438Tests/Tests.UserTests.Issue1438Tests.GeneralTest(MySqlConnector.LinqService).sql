@@ -35,8 +35,8 @@ SET     @id_1 = 1
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	`_`.`Id`,
+SELECT 
+	`_`.`Id`, 
 	`_`.`Has`
 FROM
 	`Issue1438` `_`

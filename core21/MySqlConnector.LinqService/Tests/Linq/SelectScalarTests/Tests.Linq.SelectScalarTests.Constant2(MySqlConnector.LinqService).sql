@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	1 as `c1`
 

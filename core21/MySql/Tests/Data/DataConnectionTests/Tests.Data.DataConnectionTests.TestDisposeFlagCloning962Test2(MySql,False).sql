@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	'test1' as `c1`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	'test2' as `c1`
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`x`.`ParentID`
 FROM
 	`Parent` `x`
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`x`.`ParentID`
 FROM
 	`Parent` `x`

@@ -6,12 +6,12 @@ INSERT INTO `AllTypes`
 	`smallintDataType`,
 	`intDataType`
 )
-SELECT
-	123,
+SELECT 
+	123, 
 	`t1`.`smallintDataType`
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			`c_1`.`smallintDataType`
 		FROM
 			`AllTypes` `_`
@@ -30,12 +30,12 @@ INSERT INTO `AllTypes`
 	`smallintDataType`,
 	`intDataType`
 )
-SELECT
-	123,
+SELECT 
+	123, 
 	`t1`.`smallintDataType`
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			`c_1`.`smallintDataType`
 		FROM
 			`AllTypes` `_`

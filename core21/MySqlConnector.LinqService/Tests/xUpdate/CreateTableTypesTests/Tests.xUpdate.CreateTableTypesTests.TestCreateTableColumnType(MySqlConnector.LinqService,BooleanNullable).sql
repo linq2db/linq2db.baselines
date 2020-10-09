@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t1`.`Id`,
+SELECT 
+	`t1`.`Id`, 
 	`t1`.`BooleanNullable`
 FROM
 	`CreateTableTypes` `t1`

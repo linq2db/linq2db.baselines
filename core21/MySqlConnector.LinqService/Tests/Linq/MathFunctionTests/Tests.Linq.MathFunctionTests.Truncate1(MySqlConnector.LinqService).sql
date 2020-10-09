@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`t`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Truncate(`p`.`MoneyValue`, 0) as `c1`
 		FROM
 			`LinqDataTypes` `p`

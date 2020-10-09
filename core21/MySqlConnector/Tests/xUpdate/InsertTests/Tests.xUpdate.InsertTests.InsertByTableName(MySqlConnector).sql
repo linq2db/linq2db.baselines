@@ -108,7 +108,7 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPerson` `t1`
@@ -116,7 +116,7 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPerson` `p`

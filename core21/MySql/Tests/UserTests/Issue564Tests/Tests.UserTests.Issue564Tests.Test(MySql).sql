@@ -50,7 +50,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Parent564` `t1`

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`left_1`.`ParentID`,
-	`left_1`.`Value1`,
-	`p`.`ParentID`,
+SELECT 
+	`left_1`.`ParentID`, 
+	`left_1`.`Value1`, 
+	`p`.`ParentID`, 
 	`p`.`Value1`
 FROM
 	`Parent` `left_1`

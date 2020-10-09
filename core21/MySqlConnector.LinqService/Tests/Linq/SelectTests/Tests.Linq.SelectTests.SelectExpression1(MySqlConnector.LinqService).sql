@@ -27,8 +27,8 @@ SET     @p2 = '61efdcd4-659d-41e8-910c-506a9c2f31c5'
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	@p1,
+SELECT 
+	@p1, 
 	@p2
 FROM
 	`SelectExpressionTable` `_`

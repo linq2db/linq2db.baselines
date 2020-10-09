@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`ChildID`
 FROM
 	`Parent` `p`
-		LEFT JOIN (
-			SELECT
-				`c_1`.`ParentID` as `c_1`,
+		LEFT JOIN ( 
+			SELECT 
+				`c_1`.`ParentID` as `c_1`, 
 				`c_1`.`ChildID`
 			FROM
 				`Child` `c_1`

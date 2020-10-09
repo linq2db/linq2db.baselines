@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`a_Patient`.`Diagnosis`
 FROM
 	`Person` `x`

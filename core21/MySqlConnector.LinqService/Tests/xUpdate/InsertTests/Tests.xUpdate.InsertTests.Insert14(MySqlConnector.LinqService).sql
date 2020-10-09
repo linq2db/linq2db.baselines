@@ -21,7 +21,7 @@ INSERT INTO `Person`
 VALUES
 (
 	Concat('Insert14', (
-		SELECT
+		SELECT 
 			`p`.`FirstName`
 		FROM
 			`Person` `p`
@@ -36,7 +36,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Person` `p`

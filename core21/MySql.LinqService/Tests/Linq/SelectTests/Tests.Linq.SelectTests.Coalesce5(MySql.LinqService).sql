@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Coalesce((
-		SELECT
+		SELECT 
 			Max(`c_1`.`ChildID`)
 		FROM
 			`Child` `c_1`

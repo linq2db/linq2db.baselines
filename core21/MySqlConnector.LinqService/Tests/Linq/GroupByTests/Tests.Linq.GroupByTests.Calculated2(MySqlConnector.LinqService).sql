@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`p`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Concat(`ch`.`c1`, '2') as `c1`
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					CASE
 						WHEN `selectParam`.`ParentID` > 2
 							THEN CASE

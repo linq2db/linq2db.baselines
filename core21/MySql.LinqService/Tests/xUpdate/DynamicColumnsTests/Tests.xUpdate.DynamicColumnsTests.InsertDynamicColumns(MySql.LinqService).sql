@@ -17,7 +17,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Person` `c_1`

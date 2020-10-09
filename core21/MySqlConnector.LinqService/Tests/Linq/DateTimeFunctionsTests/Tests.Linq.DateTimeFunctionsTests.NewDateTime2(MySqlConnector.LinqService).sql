@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`p`.`DateTimeValue`
 FROM
 	`LinqDataTypes` `p`

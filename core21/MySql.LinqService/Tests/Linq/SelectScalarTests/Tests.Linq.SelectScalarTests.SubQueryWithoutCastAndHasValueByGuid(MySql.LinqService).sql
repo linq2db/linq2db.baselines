@@ -3,14 +3,14 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`_`.`ParentID`,
+SELECT 
+	`_`.`ParentID`, 
 	`_`.`Value1`
 FROM
 	`Parent` `_`
 WHERE
 	(
-		SELECT
+		SELECT 
 			`r`.`GuidValue`
 		FROM
 			`LinqDataTypes` `r`

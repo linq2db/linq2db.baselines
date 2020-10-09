@@ -46,10 +46,10 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	`t`.`DuplicateData`,
+SELECT 
+	`t`.`DuplicateData`, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			`OrderByDistinctData` `s`
@@ -57,9 +57,9 @@ SELECT
 			(`s`.`DuplicateData` IS NULL AND `t`.`DuplicateData` IS NULL OR `s`.`DuplicateData` = `t`.`DuplicateData`)
 	)
 FROM
-	(
-		SELECT
-			`t1`.`Id`,
+	( 
+		SELECT 
+			`t1`.`Id`, 
 			`t1`.`DuplicateData`
 		FROM
 			`OrderByDistinctData` `t1`

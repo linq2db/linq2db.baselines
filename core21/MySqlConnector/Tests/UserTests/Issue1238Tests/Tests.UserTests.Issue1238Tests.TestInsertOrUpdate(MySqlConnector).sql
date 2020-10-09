@@ -26,7 +26,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`InheritanceParent` `t1`
@@ -52,7 +52,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`InheritanceParent` `t1`

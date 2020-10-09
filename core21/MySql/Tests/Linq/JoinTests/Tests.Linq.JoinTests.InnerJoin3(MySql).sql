@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`p1`.`PersonID`,
-	`p1`.`FirstName`,
+SELECT 
+	`p1`.`PersonID`, 
+	`p1`.`FirstName`, 
 	`p1`.`LastName`
 FROM
 	`Person` `p1`

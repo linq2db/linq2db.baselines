@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Parent` `t1`

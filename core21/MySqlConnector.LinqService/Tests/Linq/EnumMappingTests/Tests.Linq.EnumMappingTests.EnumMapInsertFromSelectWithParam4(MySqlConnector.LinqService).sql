@@ -33,8 +33,8 @@ INSERT INTO `LinqDataTypes`
 	`ID`,
 	`BigIntValue`
 )
-SELECT
-	`r`.`ID`,
+SELECT 
+	`r`.`ID`, 
 	@param
 FROM
 	`LinqDataTypes` `r`
@@ -44,7 +44,7 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`LinqDataTypes` `r`

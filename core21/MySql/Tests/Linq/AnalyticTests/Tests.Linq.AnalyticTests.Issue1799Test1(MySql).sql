@@ -31,16 +31,16 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 10
 
-SELECT
-	`q`.`User_1`,
-	`p`.`ProcessName`,
-	`u`.`UserGroups`,
+SELECT 
+	`q`.`User_1`, 
+	`p`.`ProcessName`, 
+	`u`.`UserGroups`, 
 	Sum(`q`.`Diff`)
 FROM
-	(
-		SELECT
-			TIMESTAMPDIFF(minute, LAG(`x`.`EventTime`) OVER(PARTITION BY `x`.`EventUser`, `x`.`ProcessID` ORDER BY `x`.`EventTime`), `x`.`EventTime`) as `Diff`,
-			`x`.`EventUser` as `User_1`,
+	( 
+		SELECT 
+			TIMESTAMPDIFF(minute, LAG(`x`.`EventTime`) OVER(PARTITION BY `x`.`EventUser`, `x`.`ProcessID` ORDER BY `x`.`EventTime`), `x`.`EventTime`) as `Diff`, 
+			`x`.`EventUser` as `User_1`, 
 			`x`.`ProcessID` as `Proc`
 		FROM
 			`Issue1799Table1` `x`

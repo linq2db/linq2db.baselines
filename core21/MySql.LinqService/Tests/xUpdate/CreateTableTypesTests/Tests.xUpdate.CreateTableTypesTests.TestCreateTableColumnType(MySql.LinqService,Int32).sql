@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
+SELECT 
+	`t1`.`Id`, 
 	`t1`.`Int32`
 FROM
 	`CreateTableTypes` `t1`

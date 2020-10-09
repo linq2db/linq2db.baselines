@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Max(`t`.`PersonID`)
 FROM
 	`Person` `t`

@@ -31,8 +31,8 @@ BeforeExecute
 DECLARE @separator VarChar(4) -- String
 SET     @separator = ' => '
 
-SELECT
-	Max(`t1`.`Value4`),
+SELECT 
+	Max(`t1`.`Value4`), 
 	GROUP_CONCAT(`t1`.`Value4` SEPARATOR @separator)
 FROM
 	`SampleClass` `t1`

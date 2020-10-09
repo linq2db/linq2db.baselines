@@ -44,9 +44,9 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t`.`Id`,
-	`t`.`Value1`,
+SELECT 
+	`t`.`Id`, 
+	`t`.`Value1`, 
 	`t`.`Value2`
 FROM
 	`ValueConversion` `t`

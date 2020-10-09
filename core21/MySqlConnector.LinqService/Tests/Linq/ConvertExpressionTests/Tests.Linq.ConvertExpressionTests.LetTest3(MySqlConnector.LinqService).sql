@@ -3,9 +3,9 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			`p`.`ParentID`
 		FROM
 			`Child` `p`

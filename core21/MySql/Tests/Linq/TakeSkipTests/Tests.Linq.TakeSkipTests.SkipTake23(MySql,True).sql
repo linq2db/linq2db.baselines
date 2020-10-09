@@ -5,8 +5,8 @@ SET     @skip_1 = 3
 DECLARE @take Int32
 SET     @take = 5
 
-SELECT
-	`t1`.`ParentID`,
+SELECT 
+	`t1`.`ParentID`, 
 	`t1`.`ChildID`
 FROM
 	`Child` `t1`
@@ -21,8 +21,8 @@ SET     @skip_1 = 3
 DECLARE @take Int32
 SET     @take = 5
 
-SELECT
-	`t1`.`ParentID`,
+SELECT 
+	`t1`.`ParentID`, 
 	`t1`.`ChildID`
 FROM
 	`Child` `t1`

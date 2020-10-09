@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`t`.`PersonID`)
 FROM
 	`Person` `t`
@@ -39,11 +39,11 @@ SET     @id = 4
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	`p2`.`PersonID`,
-	`p2`.`Gender`,
-	`p2`.`FirstName`,
-	`p2`.`MiddleName`,
+SELECT 
+	`p2`.`PersonID`, 
+	`p2`.`Gender`, 
+	`p2`.`FirstName`, 
+	`p2`.`MiddleName`, 
 	`p2`.`LastName`
 FROM
 	`Person` `p2`

@@ -32,15 +32,15 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	GROUPING(`t1`.`Key_1`, `t1`.`Key_2`),
-	`t1`.`Key_1`,
+SELECT 
+	GROUPING(`t1`.`Key_1`, `t1`.`Key_2`), 
+	`t1`.`Key_1`, 
 	Count(*)
 FROM
-	(
-		SELECT DISTINCT
-			`selectParam`.`Id1` as `Key_1`,
-			`selectParam`.`Id2` as `Key_2`,
+	( 
+		SELECT DISTINCT 
+			`selectParam`.`Id1` as `Key_1`, 
+			`selectParam`.`Id2` as `Key_2`, 
 			`selectParam`.`Value` as `Value_1`
 		FROM
 			`GroupSampleClass` `selectParam`

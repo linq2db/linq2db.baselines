@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`t1`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Coalesce(`selectParam`.`Value1`, `c_1`.`ChildID`) as `c1`
 		FROM
 			`Parent` `selectParam`

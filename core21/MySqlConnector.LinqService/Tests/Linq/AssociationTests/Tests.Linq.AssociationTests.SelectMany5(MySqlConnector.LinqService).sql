@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`cp`.`ParentID`
 FROM
 	`Parent` `cp`

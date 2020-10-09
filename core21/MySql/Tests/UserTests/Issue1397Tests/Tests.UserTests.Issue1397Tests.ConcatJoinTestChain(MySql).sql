@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`m_1`.`ParentID`,
+SELECT 
+	`m_1`.`ParentID`, 
 	`m_1`.`Value1`
 FROM
 	`Parent` `m_1`
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				`t`.`ParentID`
 			FROM
 				`Parent` `t`
 			WHERE
 				`t`.`ParentID` = 1
 			UNION ALL
-			SELECT
+			SELECT 
 				`t_1`.`ParentID`
 			FROM
 				`Parent` `t_1`
@@ -25,20 +25,20 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`m_1`.`ParentID`,
+SELECT 
+	`m_1`.`ParentID`, 
 	`m_1`.`Value1`
 FROM
 	`Parent` `m_1`,
-	(
-		SELECT
+	( 
+		SELECT 
 			`t`.`ParentID`
 		FROM
 			`Parent` `t`
 		WHERE
 			`t`.`ParentID` = 1
 		UNION ALL
-		SELECT
+		SELECT 
 			`t_1`.`ParentID`
 		FROM
 			`Parent` `t_1`

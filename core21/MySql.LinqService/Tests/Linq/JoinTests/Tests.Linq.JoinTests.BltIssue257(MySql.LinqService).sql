@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`c1`,
+SELECT 
+	`t1`.`c1`, 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(`selectParam`.`DateTimeValue` as Date) as `c1`
 		FROM
 			`LinqDataTypes` `selectParam`

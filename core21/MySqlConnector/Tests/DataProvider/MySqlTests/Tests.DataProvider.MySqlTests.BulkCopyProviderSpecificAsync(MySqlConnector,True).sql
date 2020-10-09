@@ -15,7 +15,7 @@ INSERT ASYNC BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintData
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`AllTypesNoYear` `_`
@@ -27,30 +27,30 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 10
 
-SELECT
-	`_`.`ID`,
-	`_`.`bigintDataType`,
-	`_`.`smallintDataType`,
-	`_`.`tinyintDataType`,
-	`_`.`mediumintDataType`,
-	`_`.`intDataType`,
-	`_`.`numericDataType`,
-	`_`.`decimalDataType`,
-	`_`.`doubleDataType`,
-	`_`.`floatDataType`,
-	`_`.`dateDataType`,
-	`_`.`datetimeDataType`,
-	`_`.`timestampDataType`,
-	`_`.`timeDataType`,
-	`_`.`charDataType`,
-	`_`.`varcharDataType`,
-	`_`.`textDataType`,
-	`_`.`binaryDataType`,
-	`_`.`varbinaryDataType`,
-	`_`.`blobDataType`,
-	`_`.`bitDataType`,
-	`_`.`enumDataType`,
-	`_`.`setDataType`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`bigintDataType`, 
+	`_`.`smallintDataType`, 
+	`_`.`tinyintDataType`, 
+	`_`.`mediumintDataType`, 
+	`_`.`intDataType`, 
+	`_`.`numericDataType`, 
+	`_`.`decimalDataType`, 
+	`_`.`doubleDataType`, 
+	`_`.`floatDataType`, 
+	`_`.`dateDataType`, 
+	`_`.`datetimeDataType`, 
+	`_`.`timestampDataType`, 
+	`_`.`timeDataType`, 
+	`_`.`charDataType`, 
+	`_`.`varcharDataType`, 
+	`_`.`textDataType`, 
+	`_`.`binaryDataType`, 
+	`_`.`varbinaryDataType`, 
+	`_`.`blobDataType`, 
+	`_`.`bitDataType`, 
+	`_`.`enumDataType`, 
+	`_`.`setDataType`, 
 	`_`.`intUnsignedDataType`
 FROM
 	`AllTypesNoYear` `_`

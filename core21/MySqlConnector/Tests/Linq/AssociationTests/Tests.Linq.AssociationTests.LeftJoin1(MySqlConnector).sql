@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`p`.`ParentID`,
-	`p`.`Value1`,
-	`t1`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
+	`p`.`Value1`, 
+	`t1`.`ParentID`, 
 	`t1`.`ChildID`
 FROM
 	`Parent` `p`

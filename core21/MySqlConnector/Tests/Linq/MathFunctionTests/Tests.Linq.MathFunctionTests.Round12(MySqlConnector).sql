@@ -3,11 +3,11 @@
 DECLARE @p1 Bool -- Boolean
 SET     @p1 = 0
 
-SELECT
+SELECT 
 	`t`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN @p1 = 1 THEN CASE
 					WHEN `p`.`MoneyValue` * 2 = Round(`p`.`MoneyValue` * 2, 1) AND `p`.`MoneyValue` <> Round(`p`.`MoneyValue`, 1)
