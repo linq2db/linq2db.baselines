@@ -4,9 +4,9 @@
 WITH [ProductsOverTenDollars] ([CategoryID], [ProductName], [UnitPrice])
 AS
 (
-	SELECT
-		[p].[CategoryID],
-		[p].[ProductName],
+	SELECT 
+		[p].[CategoryID], 
+		[p].[ProductName], 
 		[p].[UnitPrice]
 	FROM
 		[Products] [p]
@@ -16,11 +16,11 @@ AS
 [CategoryAndNumberOfProducts] ([CategoryID], [CategoryName], [NumberOfProducts])
 AS
 (
-	SELECT
-		[c_1].[CategoryID],
-		[c_1].[CategoryName],
+	SELECT 
+		[c_1].[CategoryID], 
+		[c_1].[CategoryName], 
 		(
-			SELECT
+			SELECT 
 				Count(*)
 			FROM
 				[Products] [p_1]
@@ -30,10 +30,10 @@ AS
 	FROM
 		[Categories] [c_1]
 )
-SELECT
-	[c_2].[CategoryName],
-	[c_2].[NumberOfProducts],
-	[p_2].[ProductName],
+SELECT 
+	[c_2].[CategoryName], 
+	[c_2].[NumberOfProducts], 
+	[p_2].[ProductName], 
 	[p_2].[UnitPrice]
 FROM
 	[ProductsOverTenDollars] [p_2]
@@ -44,19 +44,19 @@ ORDER BY
 BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
-	[c_2].[CategoryName],
-	[c_2].[NumberOfProducts],
-	[p_1].[ProductName],
+SELECT 
+	[c_2].[CategoryName], 
+	[c_2].[NumberOfProducts], 
+	[p_1].[ProductName], 
 	[p_1].[UnitPrice]
 FROM
 	[Products] [p_1]
-		INNER JOIN (
-			SELECT
-				[c_1].[CategoryID],
-				[c_1].[CategoryName],
+		INNER JOIN ( 
+			SELECT 
+				[c_1].[CategoryID], 
+				[c_1].[CategoryName], 
 				(
-					SELECT
+					SELECT 
 						Count(*)
 					FROM
 						[Products] [p]

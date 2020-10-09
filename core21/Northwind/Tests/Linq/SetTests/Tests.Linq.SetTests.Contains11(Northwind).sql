@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
-	[a_Employee_1].[LastName],
+SELECT 
+	[a_Employee_1].[LastName], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[EmployeeTerritories] [keyParam]
@@ -18,7 +18,7 @@ FROM
 		LEFT JOIN [Employees] [a_Employee_1] ON [t1].[EmployeeID] = [a_Employee_1].[EmployeeID]
 WHERE
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[EmployeeTerritories] [t2]

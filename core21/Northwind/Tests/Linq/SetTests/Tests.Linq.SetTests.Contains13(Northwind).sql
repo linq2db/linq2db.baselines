@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
-	[t1].[EmployeeID],
+SELECT 
+	[t1].[EmployeeID], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[EmployeeTerritories] [keyParam]

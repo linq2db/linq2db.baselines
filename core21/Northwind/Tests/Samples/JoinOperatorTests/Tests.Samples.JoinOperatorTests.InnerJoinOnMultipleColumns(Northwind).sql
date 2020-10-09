@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
-	[t1].[ProductID],
+SELECT 
+	[t1].[ProductID], 
 	[t1].[OrderID]
 FROM
-	(
-		SELECT
-			[p].[ProductID],
+	( 
+		SELECT 
+			[p].[ProductID], 
 			[o].[OrderID]
 		FROM
 			[Products] [p],

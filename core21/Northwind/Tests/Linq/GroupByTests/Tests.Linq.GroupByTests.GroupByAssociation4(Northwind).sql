@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
+SELECT 
 	[a_Category].[CategoryID]
 FROM
 	[Products] [t1]

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
-	[t].[CategoryID],
-	[t].[CategoryName],
-	[t].[Description],
+SELECT 
+	[t].[CategoryID], 
+	[t].[CategoryName], 
+	[t].[Description], 
 	[t].[Picture]
 FROM
 	[Categories] [t]

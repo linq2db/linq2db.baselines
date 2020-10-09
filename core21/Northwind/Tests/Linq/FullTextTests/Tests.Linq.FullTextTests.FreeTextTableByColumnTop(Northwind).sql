@@ -5,10 +5,10 @@ SET     @p1 = N'sweetest candy bread and dry meat'
 DECLARE @p2 Int -- Int32
 SET     @p2 = 4
 
-SELECT
-	[c_1].[CategoryID],
-	[c_1].[CategoryName],
-	[c_1].[Description],
+SELECT 
+	[c_1].[CategoryID], 
+	[c_1].[CategoryName], 
+	[c_1].[Description], 
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]

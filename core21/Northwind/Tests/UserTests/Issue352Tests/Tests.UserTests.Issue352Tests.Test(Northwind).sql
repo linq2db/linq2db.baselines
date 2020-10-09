@@ -3,10 +3,10 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[t1].[EmployeeID],
+SELECT 
+	[t1].[EmployeeID], 
 	(
-		SELECT TOP (@take)
+		SELECT TOP (@take) 
 			[em].[FirstName]
 		FROM
 			[Employees] [em]
@@ -14,8 +14,8 @@ SELECT
 			[em].[EmployeeID] = [t1].[EmployeeID]
 	)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[e].[EmployeeID]
 		FROM
 			[Employees] [e],

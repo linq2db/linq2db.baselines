@@ -5,10 +5,10 @@ SET     @search_1 = N'bread'
 DECLARE @code Int -- Int32
 SET     @code = 1036
 
-SELECT
-	[c_1].[CategoryID],
-	[c_1].[CategoryName],
-	[c_1].[Description],
+SELECT 
+	[c_1].[CategoryID], 
+	[c_1].[CategoryName], 
+	[c_1].[Description], 
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]

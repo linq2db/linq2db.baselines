@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Customers] [x]

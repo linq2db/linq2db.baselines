@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
-	[t].[ProductID],
-	[t].[ProductName],
-	[t].[SupplierID],
-	[t].[CategoryID],
-	[t].[QuantityPerUnit],
-	[t].[UnitPrice],
-	[t].[UnitsInStock],
-	[t].[UnitsOnOrder],
-	[t].[ReorderLevel],
+SELECT 
+	[t].[ProductID], 
+	[t].[ProductName], 
+	[t].[SupplierID], 
+	[t].[CategoryID], 
+	[t].[QuantityPerUnit], 
+	[t].[UnitPrice], 
+	[t].[UnitsInStock], 
+	[t].[UnitsOnOrder], 
+	[t].[ReorderLevel], 
 	[t].[Discontinued]
 FROM
 	[Products] [t]

@@ -12,21 +12,21 @@ WITH [EmployeeSubordinatesReport]
 )
 AS
 (
-	SELECT
-		[e].[ReportsTo],
-		[e].[EmployeeID],
-		[e].[LastName],
-		[e].[FirstName],
+	SELECT 
+		[e].[ReportsTo], 
+		[e].[EmployeeID], 
+		[e].[LastName], 
+		[e].[FirstName], 
 		(
-			SELECT
+			SELECT 
 				Count(*)
 			FROM
 				[Employees] [e2]
 			WHERE
 				([e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL OR [e2].[ReportsTo] = [e].[ReportsTo])
-		),
+		), 
 		(
-			SELECT
+			SELECT 
 				Count(*)
 			FROM
 				[Employees] [e2_1]
@@ -36,12 +36,12 @@ AS
 	FROM
 		[Employees] [e]
 )
-SELECT
-	[employee].[LastName],
-	[employee].[FirstName],
-	[employee].[cnt],
-	[manager].[LastName],
-	[manager].[FirstName],
+SELECT 
+	[employee].[LastName], 
+	[employee].[FirstName], 
+	[employee].[cnt], 
+	[manager].[LastName], 
+	[manager].[FirstName], 
 	[manager].[NumberOfSubordinates]
 FROM
 	[EmployeeSubordinatesReport] [employee]
@@ -50,21 +50,21 @@ FROM
 BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
-	[employee].[LastName],
-	[employee].[FirstName],
-	[employee].[NumberOfSubordinates],
-	[manager].[LastName],
-	[manager].[FirstName],
+SELECT 
+	[employee].[LastName], 
+	[employee].[FirstName], 
+	[employee].[NumberOfSubordinates], 
+	[manager].[LastName], 
+	[manager].[FirstName], 
 	[manager].[NumberOfSubordinates]
 FROM
-	(
-		SELECT
-			[e].[ReportsTo],
-			[e].[LastName],
-			[e].[FirstName],
+	( 
+		SELECT 
+			[e].[ReportsTo], 
+			[e].[LastName], 
+			[e].[FirstName], 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					[Employees] [e2]
@@ -74,13 +74,13 @@ FROM
 		FROM
 			[Employees] [e]
 	) [employee]
-		LEFT JOIN (
-			SELECT
-				[e_1].[EmployeeID],
-				[e_1].[LastName],
-				[e_1].[FirstName],
+		LEFT JOIN ( 
+			SELECT 
+				[e_1].[EmployeeID], 
+				[e_1].[LastName], 
+				[e_1].[FirstName], 
 				(
-					SELECT
+					SELECT 
 						Count(*)
 					FROM
 						[Employees] [e2_1]

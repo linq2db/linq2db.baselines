@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
+SELECT 
 	[a_Employee].[LastName]
 FROM
 	[EmployeeTerritories] [t1]
@@ -11,7 +11,7 @@ GROUP BY
 	[a_Employee].[LastName]
 HAVING
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[EmployeeTerritories] [t2]

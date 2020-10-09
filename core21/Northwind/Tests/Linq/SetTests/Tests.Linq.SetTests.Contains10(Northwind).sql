@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
-	[e].[FirstName],
+SELECT 
+	[e].[FirstName], 
 	[o].[OrderID]
 FROM
 	[Employees] [e]

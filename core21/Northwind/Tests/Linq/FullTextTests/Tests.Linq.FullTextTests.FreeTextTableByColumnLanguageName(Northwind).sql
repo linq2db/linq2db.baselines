@@ -5,10 +5,10 @@ SET     @p1 = N'meat'
 DECLARE @p2 NVarChar(4000) -- String
 SET     @p2 = N'Turkish'
 
-SELECT
-	[c_1].[CategoryID],
-	[c_1].[CategoryName],
-	[c_1].[Description],
+SELECT 
+	[c_1].[CategoryID], 
+	[c_1].[CategoryName], 
+	[c_1].[Description], 
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]

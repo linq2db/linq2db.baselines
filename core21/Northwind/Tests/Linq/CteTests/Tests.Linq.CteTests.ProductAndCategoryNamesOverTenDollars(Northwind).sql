@@ -4,9 +4,9 @@
 WITH [ProductAndCategoryNamesOverTenDollars] ([CategoryName], [UnitPrice], [ProductName])
 AS
 (
-	SELECT
-		[a_Category].[CategoryName],
-		[p].[UnitPrice],
+	SELECT 
+		[a_Category].[CategoryName], 
+		[p].[UnitPrice], 
 		[p].[ProductName]
 	FROM
 		[Products] [p]
@@ -14,9 +14,9 @@ AS
 	WHERE
 		[p].[UnitPrice] > 10
 )
-SELECT
-	[t1].[ProductName],
-	[t1].[CategoryName],
+SELECT 
+	[t1].[ProductName], 
+	[t1].[CategoryName], 
 	[t1].[UnitPrice]
 FROM
 	[ProductAndCategoryNamesOverTenDollars] [t1]
@@ -28,9 +28,9 @@ ORDER BY
 BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT
-	[p].[ProductName],
-	[a_Category].[CategoryName],
+SELECT 
+	[p].[ProductName], 
+	[a_Category].[CategoryName], 
 	[p].[UnitPrice]
 FROM
 	[Products] [p]
