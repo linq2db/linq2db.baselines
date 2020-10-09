@@ -25,7 +25,7 @@ INSERT INTO TempTable
 (
 	ID
 )
-SELECT
+SELECT 
 	p.ParentID
 FROM
 	Parent p
@@ -33,7 +33,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.ID
 FROM
 	Parent p

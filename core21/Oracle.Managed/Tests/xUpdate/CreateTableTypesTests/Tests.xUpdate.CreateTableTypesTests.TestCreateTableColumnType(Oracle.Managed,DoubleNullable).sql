@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.DoubleNullable
 FROM
 	CreateTableTypes t1

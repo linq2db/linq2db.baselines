@@ -29,7 +29,7 @@ SET     @ID_1 = 5
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	Issue1316Tests t1
@@ -44,7 +44,7 @@ SET     @Id_1 = 5
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	Issue1316Tests t1

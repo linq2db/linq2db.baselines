@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	ch.ChildID,
+SELECT 
+	ch.ChildID, 
 	gc.GrandChildID
 FROM
 	Parent p

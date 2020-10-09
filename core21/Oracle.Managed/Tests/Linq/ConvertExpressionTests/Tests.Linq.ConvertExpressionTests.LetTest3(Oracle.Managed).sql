@@ -3,12 +3,12 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	t1.ParentID
 FROM
 	Parent p_1
-		OUTER APPLY (
-			SELECT
+		OUTER APPLY ( 
+			SELECT 
 				p.ParentID
 			FROM
 				Child p

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	c_1.ParentID
 FROM
 	Parent cp,

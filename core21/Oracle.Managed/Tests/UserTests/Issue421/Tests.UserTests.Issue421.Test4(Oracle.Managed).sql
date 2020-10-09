@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.BlobValue
 FROM
 	BlobClass19 t1
@@ -38,8 +38,8 @@ FETCH NEXT 1 ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.BlobValue
 FROM
 	BlobClass19 t1

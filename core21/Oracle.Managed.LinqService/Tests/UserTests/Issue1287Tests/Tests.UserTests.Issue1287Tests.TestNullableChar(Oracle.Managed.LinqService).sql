@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.charDataType
 FROM
 	AllTypes t1

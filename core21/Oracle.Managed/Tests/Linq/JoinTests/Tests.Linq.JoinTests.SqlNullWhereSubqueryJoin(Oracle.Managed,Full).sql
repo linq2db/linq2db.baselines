@@ -5,21 +5,21 @@ SET     @take = 10
 DECLARE @take_1 Int32
 SET     @take_1 = 10
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
-	(
-		SELECT
-			t1.ParentID,
+	( 
+		SELECT 
+			t1.ParentID, 
 			t1.Value1
 		FROM
 			Parent t1
 		FETCH NEXT :take ROWS ONLY
 	) p1
-		FULL JOIN (
-			SELECT
-				t2.ParentID,
+		FULL JOIN ( 
+			SELECT 
+				t2.ParentID, 
 				t2.Value1
 			FROM
 				Parent t2

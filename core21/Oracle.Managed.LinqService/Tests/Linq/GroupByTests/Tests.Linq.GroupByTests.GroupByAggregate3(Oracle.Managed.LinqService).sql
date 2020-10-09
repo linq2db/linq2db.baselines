@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.Key_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN (
-					SELECT
+					SELECT 
 						Round(AVG(c_1.ParentID), 27)
 					FROM
 						Child c_1
@@ -29,15 +29,15 @@ BeforeExecute
 DECLARE @p1 Int16
 SET     @p1 = 0
 
-SELECT
-	underscore.ParentID,
+SELECT 
+	underscore.ParentID, 
 	underscore.Value1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN (
-					SELECT
+					SELECT 
 						Round(AVG(c_1.ParentID), 27)
 					FROM
 						Child c_1
@@ -46,8 +46,8 @@ FROM
 				) > 3D
 					THEN 1
 				ELSE 0
-			END as Key_1,
-			selectParam.ParentID,
+			END as Key_1, 
+			selectParam.ParentID, 
 			selectParam.Value1
 		FROM
 			Parent selectParam

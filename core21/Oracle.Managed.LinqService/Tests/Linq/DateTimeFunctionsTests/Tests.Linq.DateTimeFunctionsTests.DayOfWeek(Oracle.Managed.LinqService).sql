@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Mod(1 + Trunc(t.DateTimeValue) - Trunc(t.DateTimeValue, 'IW'), 7)
 FROM
 	LinqDataTypes t

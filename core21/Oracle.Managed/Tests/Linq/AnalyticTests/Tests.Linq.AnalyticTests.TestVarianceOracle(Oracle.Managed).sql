@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	VARIANCE(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	VARIANCE(ALL p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	VARIANCE(DISTINCT p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	VARIANCE(p.Value1) OVER(),
-	VARIANCE(ALL p.Value1) OVER(),
-	VARIANCE(DISTINCT p.Value1) OVER(),
+SELECT 
+	VARIANCE(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	VARIANCE(ALL p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	VARIANCE(DISTINCT p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	VARIANCE(p.Value1) OVER(), 
+	VARIANCE(ALL p.Value1) OVER(), 
+	VARIANCE(DISTINCT p.Value1) OVER(), 
 	VARIANCE(ALL p.Value1) OVER(PARTITION BY c_1.ChildID ORDER BY p.Value1 RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
 FROM
 	Parent p
@@ -16,9 +16,9 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	VARIANCE(c_1.ChildID),
-	VARIANCE(ALL c_1.ChildID),
+SELECT 
+	VARIANCE(c_1.ChildID), 
+	VARIANCE(ALL c_1.ChildID), 
 	VARIANCE(DISTINCT c_1.ChildID)
 FROM
 	Parent p
@@ -29,7 +29,7 @@ GROUP BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	VARIANCE(t1.ParentID)
 FROM
 	Child t1
@@ -37,7 +37,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	VARIANCE(ALL t1.ParentID)
 FROM
 	Child t1
@@ -45,7 +45,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	VARIANCE(DISTINCT t1.ParentID)
 FROM
 	Child t1

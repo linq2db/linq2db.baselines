@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Nvl(p.Value1, 100)
 FROM
 	Parent p

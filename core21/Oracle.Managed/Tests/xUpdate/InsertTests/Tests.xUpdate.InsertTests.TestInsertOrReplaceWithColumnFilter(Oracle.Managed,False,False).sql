@@ -56,10 +56,10 @@ SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	x.ID,
-	x.FirstName,
-	x.LastName,
+SELECT 
+	x.ID, 
+	x.FirstName, 
+	x.LastName, 
 	x.MiddleName
 FROM
 	TestInsertOrReplaceTable x
@@ -107,10 +107,10 @@ SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	x.ID,
-	x.FirstName,
-	x.LastName,
+SELECT 
+	x.ID, 
+	x.FirstName, 
+	x.LastName, 
 	x.MiddleName
 FROM
 	TestInsertOrReplaceTable x

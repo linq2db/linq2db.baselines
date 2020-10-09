@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	Count(*),
-	SUM(Count(*)) OVER(),
+SELECT 
+	Count(*), 
+	SUM(Count(*)) OVER(), 
 	Sum(t1.ParentID)
 FROM
 	Child t1

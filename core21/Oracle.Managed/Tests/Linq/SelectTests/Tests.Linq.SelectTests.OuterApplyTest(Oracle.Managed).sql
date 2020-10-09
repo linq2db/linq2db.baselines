@@ -13,14 +13,14 @@ SET     @take_4 = 1
 DECLARE @take_5 Int32
 SET     @take_5 = 1
 
-SELECT DISTINCT
-	p.ParentID,
-	p.Value1,
-	t1.ParentID,
-	t1.ChildID,
+SELECT DISTINCT 
+	p.ParentID, 
+	p.Value1, 
+	t1.ParentID, 
+	t1.ChildID, 
 	CASE
 		WHEN EXISTS(
-			SELECT
+			SELECT 
 				*
 			FROM
 				Child c_1
@@ -29,34 +29,34 @@ SELECT DISTINCT
 		)
 			THEN 1
 		ELSE 0
-	END,
-	t2.ChildID,
-	t2.ParentID,
-	t3.ChildID,
-	t3.ParentID,
+	END, 
+	t2.ChildID, 
+	t2.ParentID, 
+	t3.ChildID, 
+	t3.ParentID, 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_2
 		WHERE
 			c_2.ChildID > 2
-	) THEN 1 ELSE 0 END,
-	t2.ChildID,
-	t2.ParentID,
-	t3.ChildID,
-	t3.ParentID,
-	t4.ChildID,
-	t4.ParentID,
-	t5.ChildID,
-	t5.ParentID,
-	t6.ChildID,
+	) THEN 1 ELSE 0 END, 
+	t2.ChildID, 
+	t2.ParentID, 
+	t3.ChildID, 
+	t3.ParentID, 
+	t4.ChildID, 
+	t4.ParentID, 
+	t5.ChildID, 
+	t5.ParentID, 
+	t6.ChildID, 
 	t6.ParentID
 FROM
 	Parent p
-		OUTER APPLY (
-			SELECT
-				c_3.ParentID,
+		OUTER APPLY ( 
+			SELECT 
+				c_3.ParentID, 
 				c_3.ChildID
 			FROM
 				Child c_3
@@ -64,9 +64,9 @@ FROM
 				c_3.ParentID = p.ParentID
 			FETCH NEXT :take ROWS ONLY
 		) t1
-		OUTER APPLY (
-			SELECT
-				c_4.ChildID,
+		OUTER APPLY ( 
+			SELECT 
+				c_4.ChildID, 
 				c_4.ParentID
 			FROM
 				Child c_4
@@ -74,9 +74,9 @@ FROM
 				c_4.ChildID > 2 AND c_4.ParentID >= p.ParentID
 			FETCH NEXT :take_1 ROWS ONLY
 		) t2
-		OUTER APPLY (
-			SELECT
-				c_5.ChildID,
+		OUTER APPLY ( 
+			SELECT 
+				c_5.ChildID, 
 				c_5.ParentID
 			FROM
 				Child c_5
@@ -84,9 +84,9 @@ FROM
 				c_5.ChildID > 2 AND c_5.ParentID >= 2
 			FETCH NEXT :take_2 ROWS ONLY
 		) t3
-		OUTER APPLY (
-			SELECT
-				c_6.ChildID,
+		OUTER APPLY ( 
+			SELECT 
+				c_6.ChildID, 
 				c_6.ParentID
 			FROM
 				Child c_6
@@ -94,9 +94,9 @@ FROM
 				c_6.ChildID > 2 AND c_6.ParentID >= p.ParentID
 			FETCH NEXT :take_3 ROWS ONLY
 		) t4
-		OUTER APPLY (
-			SELECT
-				c_7.ChildID,
+		OUTER APPLY ( 
+			SELECT 
+				c_7.ChildID, 
 				c_7.ParentID
 			FROM
 				Child c_7
@@ -104,9 +104,9 @@ FROM
 				c_7.ChildID > 2 AND c_7.ParentID >= p.ParentID
 			FETCH NEXT :take_4 ROWS ONLY
 		) t5
-		OUTER APPLY (
-			SELECT
-				c_8.ChildID,
+		OUTER APPLY ( 
+			SELECT 
+				c_8.ChildID, 
 				c_8.ParentID
 			FROM
 				Child c_8

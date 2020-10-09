@@ -7,13 +7,13 @@ SET     @Value_1 = 3
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	t1.ChildID
 FROM
 	GrandChild t1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Parent li

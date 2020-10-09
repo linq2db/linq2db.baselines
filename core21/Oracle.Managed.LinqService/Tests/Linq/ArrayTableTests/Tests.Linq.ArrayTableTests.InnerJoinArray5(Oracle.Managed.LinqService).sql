@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	n.c1,
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
+SELECT 
+	n.c1, 
+	p.FirstName, 
+	p.PersonID, 
+	p.LastName, 
+	p.MiddleName, 
 	p.Gender
 FROM
-	(
+	( 
 		SELECT
 			'Janet' as c1
 		FROM SYS.DUAL

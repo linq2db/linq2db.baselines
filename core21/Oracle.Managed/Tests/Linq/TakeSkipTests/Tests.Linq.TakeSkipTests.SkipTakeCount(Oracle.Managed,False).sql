@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
-			t1.ParentID,
+	( 
+		SELECT 
+			t1.ParentID, 
 			t1.ChildID
 		FROM
 			Child t1

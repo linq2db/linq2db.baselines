@@ -31,20 +31,20 @@ DELETE
 	WITH CTE_1 (ParentID)
 	AS
 	(
-		SELECT
+		SELECT 
 			c_1.ParentID
 		FROM
 			CteChild c_1
 		WHERE
 			MOD(c_1.ParentID, 2) = 0
 	)
-	SELECT
+	SELECT 
 		*
 	FROM
 		CteChild t1
 	WHERE
 		EXISTS(
-			SELECT
+			SELECT 
 				*
 			FROM
 				CteChild c_2

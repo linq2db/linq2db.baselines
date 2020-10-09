@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.ParentID
 FROM
 	Child t1
@@ -13,8 +13,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int32
 SET     @ParentID_1 = 1
 
-SELECT
-	keyParam.ParentID,
+SELECT 
+	keyParam.ParentID, 
 	keyParam.ChildID
 FROM
 	Child keyParam
@@ -26,8 +26,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int32
 SET     @ParentID_1 = 6
 
-SELECT
-	keyParam.ParentID,
+SELECT 
+	keyParam.ParentID, 
 	keyParam.ChildID
 FROM
 	Child keyParam
@@ -39,8 +39,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int32
 SET     @ParentID_1 = 2
 
-SELECT
-	keyParam.ParentID,
+SELECT 
+	keyParam.ParentID, 
 	keyParam.ChildID
 FROM
 	Child keyParam
@@ -52,8 +52,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int32
 SET     @ParentID_1 = 4
 
-SELECT
-	keyParam.ParentID,
+SELECT 
+	keyParam.ParentID, 
 	keyParam.ChildID
 FROM
 	Child keyParam
@@ -65,8 +65,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int32
 SET     @ParentID_1 = 3
 
-SELECT
-	keyParam.ParentID,
+SELECT 
+	keyParam.ParentID, 
 	keyParam.ChildID
 FROM
 	Child keyParam
@@ -78,8 +78,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int32
 SET     @ParentID_1 = 7
 
-SELECT
-	keyParam.ParentID,
+SELECT 
+	keyParam.ParentID, 
 	keyParam.ChildID
 FROM
 	Child keyParam

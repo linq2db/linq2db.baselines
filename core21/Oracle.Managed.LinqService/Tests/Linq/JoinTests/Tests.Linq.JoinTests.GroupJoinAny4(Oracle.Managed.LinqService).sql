@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1

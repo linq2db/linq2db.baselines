@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.DateTimeValue + t.SmallIntValue * INTERVAL '7' DAY
 FROM
 	LinqDataTypes t

@@ -64,34 +64,34 @@ UPDATE
 	UpdatedEntities
 SET
 	UpdatedEntities.Value1 = (
-		SELECT
+		SELECT 
 			(t3.Value1 * t3.Value1_1) * :int1
 		FROM
-			(
-				SELECT
-					t2.id,
-					t2.Value1,
+			( 
+				SELECT 
+					t2.id, 
+					t2.Value1, 
 					t2.Value1_1
 				FROM
-					(
-						SELECT
-							ROWNUM as RN,
-							t1.Value1,
-							t1.Value1_1,
-							t1.Value2,
-							t1.Value2_1,
-							t1.Value3,
-							t1.Value3_1,
+					( 
+						SELECT 
+							ROWNUM as RN, 
+							t1.Value1, 
+							t1.Value1_1, 
+							t1.Value2, 
+							t1.Value2_1, 
+							t1.Value3, 
+							t1.Value3_1, 
 							t1.id
 						FROM
-							(
-								SELECT
-									c_1.Value1,
-									t.Value1 as Value1_1,
-									c_1.Value2,
-									t.Value2 as Value2_1,
-									c_1.Value3,
-									t.Value3 as Value3_1,
+							( 
+								SELECT 
+									c_1.Value1, 
+									t.Value1 as Value1_1, 
+									c_1.Value2, 
+									t.Value2 as Value2_1, 
+									c_1.Value3, 
+									t.Value3 as Value3_1, 
 									c_1.id
 								FROM
 									UpdatedEntities c_1
@@ -111,34 +111,34 @@ SET
 			UpdatedEntities.id = t3.id
 	),
 	UpdatedEntities.Value2 = (
-		SELECT
+		SELECT 
 			(t6.Value2 * t6.Value2_1) * :int2
 		FROM
-			(
-				SELECT
-					t5.id,
-					t5.Value2,
+			( 
+				SELECT 
+					t5.id, 
+					t5.Value2, 
 					t5.Value2_1
 				FROM
-					(
-						SELECT
-							ROWNUM as RN,
-							t4.Value1,
-							t4.Value1_1,
-							t4.Value2,
-							t4.Value2_1,
-							t4.Value3,
-							t4.Value3_1,
+					( 
+						SELECT 
+							ROWNUM as RN, 
+							t4.Value1, 
+							t4.Value1_1, 
+							t4.Value2, 
+							t4.Value2_1, 
+							t4.Value3, 
+							t4.Value3_1, 
 							t4.id
 						FROM
-							(
-								SELECT
-									c_2.Value1,
-									t_1.Value1 as Value1_1,
-									c_2.Value2,
-									t_1.Value2 as Value2_1,
-									c_2.Value3,
-									t_1.Value3 as Value3_1,
+							( 
+								SELECT 
+									c_2.Value1, 
+									t_1.Value1 as Value1_1, 
+									c_2.Value2, 
+									t_1.Value2 as Value2_1, 
+									c_2.Value3, 
+									t_1.Value3 as Value3_1, 
 									c_2.id
 								FROM
 									UpdatedEntities c_2
@@ -158,34 +158,34 @@ SET
 			UpdatedEntities.id = t6.id
 	),
 	UpdatedEntities.Value3 = (
-		SELECT
+		SELECT 
 			(t9.Value3 * t9.Value3_1) * :int3
 		FROM
-			(
-				SELECT
-					t8.id,
-					t8.Value3,
+			( 
+				SELECT 
+					t8.id, 
+					t8.Value3, 
 					t8.Value3_1
 				FROM
-					(
-						SELECT
-							ROWNUM as RN,
-							t7.Value1,
-							t7.Value1_1,
-							t7.Value2,
-							t7.Value2_1,
-							t7.Value3,
-							t7.Value3_1,
+					( 
+						SELECT 
+							ROWNUM as RN, 
+							t7.Value1, 
+							t7.Value1_1, 
+							t7.Value2, 
+							t7.Value2_1, 
+							t7.Value3, 
+							t7.Value3_1, 
 							t7.id
 						FROM
-							(
-								SELECT
-									c_3.Value1,
-									t_2.Value1 as Value1_1,
-									c_3.Value2,
-									t_2.Value2 as Value2_1,
-									c_3.Value3,
-									t_2.Value3 as Value3_1,
+							( 
+								SELECT 
+									c_3.Value1, 
+									t_2.Value1 as Value1_1, 
+									c_3.Value2, 
+									t_2.Value2 as Value2_1, 
+									c_3.Value3, 
+									t_2.Value3 as Value3_1, 
 									c_3.id
 								FROM
 									UpdatedEntities c_3
@@ -206,32 +206,32 @@ SET
 	)
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					t11.id
 				FROM
-					(
-						SELECT
-							ROWNUM as RN,
-							t10.Value1,
-							t10.Value1_1,
-							t10.Value2,
-							t10.Value2_1,
-							t10.Value3,
-							t10.Value3_1,
+					( 
+						SELECT 
+							ROWNUM as RN, 
+							t10.Value1, 
+							t10.Value1_1, 
+							t10.Value2, 
+							t10.Value2_1, 
+							t10.Value3, 
+							t10.Value3_1, 
 							t10.id
 						FROM
-							(
-								SELECT
-									c_4.Value1,
-									t_3.Value1 as Value1_1,
-									c_4.Value2,
-									t_3.Value2 as Value2_1,
-									c_4.Value3,
-									t_3.Value3 as Value3_1,
+							( 
+								SELECT 
+									c_4.Value1, 
+									t_3.Value1 as Value1_1, 
+									c_4.Value2, 
+									t_3.Value2 as Value2_1, 
+									c_4.Value3, 
+									t_3.Value3 as Value3_1, 
 									c_4.id
 								FROM
 									UpdatedEntities c_4
@@ -254,10 +254,10 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	v.id,
-	v.Value1,
-	v.Value2,
+SELECT 
+	v.id, 
+	v.Value1, 
+	v.Value2, 
 	v.Value3
 FROM
 	UpdatedEntities v

@@ -21,8 +21,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	x.Value,
+SELECT 
+	x.Value, 
 	x.Id
 FROM
 	BaseTable x
@@ -35,8 +35,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	x.Value,
+SELECT 
+	x.Value, 
 	x.Id
 FROM
 	BaseTable x

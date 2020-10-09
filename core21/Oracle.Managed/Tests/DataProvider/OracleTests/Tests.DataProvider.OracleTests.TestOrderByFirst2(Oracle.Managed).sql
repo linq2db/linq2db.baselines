@@ -3,8 +3,8 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	x.ParentID,
+SELECT 
+	x.ParentID, 
 	x.Value1
 FROM
 	Parent x

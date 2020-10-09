@@ -19,7 +19,7 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	t1.Value
 FROM
 	TakeSkipClass t1

@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.BlobValue
 FROM
 	BlobClass t1
@@ -48,8 +48,8 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.BlobValue
 FROM
 	BlobClass t1

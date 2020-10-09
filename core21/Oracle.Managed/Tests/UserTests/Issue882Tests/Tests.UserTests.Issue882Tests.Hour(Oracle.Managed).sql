@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	MOD(To_Number(To_Char(t.DateTimeValue, 'HH24')), 7)
 FROM
 	LinqDataTypes t

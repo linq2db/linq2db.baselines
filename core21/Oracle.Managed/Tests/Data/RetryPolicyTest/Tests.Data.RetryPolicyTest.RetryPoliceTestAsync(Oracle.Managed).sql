@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-SELECT
+SELECT 
 	1
 FROM
 	FakeClass t1

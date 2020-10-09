@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.Key_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			To_Number(To_Char(selectParam.DateTimeValue, 'YYYY')) as Key_1
 		FROM
 			LinqDataTypes selectParam

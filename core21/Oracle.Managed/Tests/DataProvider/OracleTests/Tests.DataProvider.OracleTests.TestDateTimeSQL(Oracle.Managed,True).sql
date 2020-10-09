@@ -73,17 +73,17 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -93,17 +93,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -113,17 +113,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -133,17 +133,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -153,17 +153,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -173,17 +173,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -193,17 +193,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -213,17 +213,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -233,17 +233,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -253,17 +253,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -273,17 +273,17 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	p.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor(CASE
 				WHEN t.MoneyValue - Floor(t.MoneyValue) = 0.5 AND MOD(Floor(t.MoneyValue), 2) = 0
 					THEN Floor(t.MoneyValue)

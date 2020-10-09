@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Cast(Floor(t.MoneyValue) as SmallInt)
 FROM
 	LinqDataTypes t

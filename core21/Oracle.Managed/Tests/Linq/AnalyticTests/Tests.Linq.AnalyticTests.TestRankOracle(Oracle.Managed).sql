@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	RANK() OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1),
+SELECT 
+	RANK() OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1), 
 	RANK() OVER(ORDER BY c_1.ChildID DESC, p.Value1)
 FROM
 	Parent p
@@ -11,8 +11,8 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	RANK(1000) WITHIN GROUP (ORDER BY p.Value1),
+SELECT 
+	RANK(1000) WITHIN GROUP (ORDER BY p.Value1), 
 	RANK(0, 0.10000000000000001D) WITHIN GROUP (ORDER BY c_1.ChildID DESC, p.Value1)
 FROM
 	Parent p

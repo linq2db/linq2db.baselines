@@ -42,12 +42,12 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	x.InId,
+SELECT 
+	x.InId, 
 	CASE
 		WHEN j.InId IS NULL THEN x.InMinQuantity
 		ELSE j.InMinQuantity
-	END,
+	END, 
 	CASE
 		WHEN j.InId IS NULL THEN x.InMaxQuantity
 		ELSE j.InMaxQuantity
@@ -64,12 +64,12 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	x.InId,
+SELECT 
+	x.InId, 
 	CASE
 		WHEN j.InId IS NULL THEN x.InMinQuantity
 		ELSE j.InMinQuantity
-	END,
+	END, 
 	CASE
 		WHEN j.InId IS NULL THEN x.InMaxQuantity
 		ELSE j.InMaxQuantity

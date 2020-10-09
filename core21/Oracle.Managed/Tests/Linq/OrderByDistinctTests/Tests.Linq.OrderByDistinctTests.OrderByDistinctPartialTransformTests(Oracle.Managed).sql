@@ -42,8 +42,8 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
-	x.DuplicateData,
+SELECT 
+	x.DuplicateData, 
 	x.OrderData2
 FROM
 	OrderByDistinctData x

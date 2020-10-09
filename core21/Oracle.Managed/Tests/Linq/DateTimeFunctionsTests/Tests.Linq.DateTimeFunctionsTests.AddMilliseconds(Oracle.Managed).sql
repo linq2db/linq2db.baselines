@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.DateTimeValue + 226D * INTERVAL '0.001' SECOND
 FROM
 	LinqDataTypes t
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.DateTimeValue
 FROM
 	LinqDataTypes t

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	p.PersonID,
+SELECT 
+	p.PersonID, 
 	p_1.FirstName
 FROM
 	Person p,
@@ -14,8 +14,8 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	p.PersonID,
+SELECT 
+	p.PersonID, 
 	p_1.FirstName
 FROM
 	Person p,

@@ -11,20 +11,20 @@ WITH CTE_1
 )
 AS
 (
-	SELECT
-		person_1.PersonID,
-		person_1.FirstName,
-		person_1.LastName,
-		person_1.MiddleName,
+	SELECT 
+		person_1.PersonID, 
+		person_1.FirstName, 
+		person_1.LastName, 
+		person_1.MiddleName, 
 		person_1.Gender
 	FROM
 		Person person_1
 )
-SELECT
-	x.FirstName,
-	x.entry_ID,
-	x.LastName,
-	x.MiddleName,
+SELECT 
+	x.FirstName, 
+	x.entry_ID, 
+	x.LastName, 
+	x.MiddleName, 
 	x.Gender
 FROM
 	CTE_1 x
@@ -34,11 +34,11 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	x.FirstName,
-	x.PersonID,
-	x.LastName,
-	x.MiddleName,
+SELECT 
+	x.FirstName, 
+	x.PersonID, 
+	x.LastName, 
+	x.MiddleName, 
 	x.Gender
 FROM
 	Person x

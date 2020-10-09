@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Field1,
+SELECT 
+	t.Field1, 
 	t.Field2
 FROM
 	XmlTable('/t/r' PASSING XmlType('<t>

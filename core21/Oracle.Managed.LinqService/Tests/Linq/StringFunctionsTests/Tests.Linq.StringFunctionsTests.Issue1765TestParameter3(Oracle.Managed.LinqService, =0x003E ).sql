@@ -24,7 +24,7 @@ BeforeExecute
 DECLARE @separator Varchar2(4) -- String
 SET     @separator = ' => '
 
-SELECT
+SELECT 
 	LISTAGG(t1.Value4, :separator) WITHIN GROUP (ORDER BY t1.Value4, t1.Value3 DESC)
 FROM
 	SampleClass t1

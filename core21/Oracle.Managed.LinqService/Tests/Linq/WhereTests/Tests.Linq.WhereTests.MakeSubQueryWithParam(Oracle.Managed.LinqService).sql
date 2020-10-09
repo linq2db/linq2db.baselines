@@ -3,13 +3,13 @@
 DECLARE @n Int32
 SET     @n = 1
 
-SELECT
-	p_1.PersonID,
+SELECT 
+	p_1.PersonID, 
 	p_1.FirstName
 FROM
-	(
-		SELECT
-			p.PersonID + :n as PersonID,
+	( 
+		SELECT 
+			p.PersonID + :n as PersonID, 
 			p.FirstName
 		FROM
 			Person p

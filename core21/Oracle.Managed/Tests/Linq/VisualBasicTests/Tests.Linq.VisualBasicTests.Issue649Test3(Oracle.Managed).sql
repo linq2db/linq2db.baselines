@@ -54,9 +54,9 @@ BeforeExecute
 DECLARE @added TimeStamp -- DateTime
 SET     @added = TO_TIMESTAMP('2017-01-01 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
-	a_Person.personid,
-	a_Person.personname,
+SELECT 
+	a_Person.personid, 
+	a_Person.personname, 
 	Max(f.added)
 FROM
 	activity649 f

@@ -27,9 +27,9 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-SELECT
-	t1.Id,
-	t1.ClobValue,
+SELECT 
+	t1.Id, 
+	t1.ClobValue, 
 	t1.NClobValue
 FROM
 	ClobEntity t1

@@ -13,7 +13,7 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	p.ParentID
 FROM
 	Parent p

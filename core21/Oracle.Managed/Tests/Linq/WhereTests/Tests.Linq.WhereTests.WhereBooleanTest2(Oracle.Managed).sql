@@ -29,9 +29,9 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
-	t1.BoolValue,
+SELECT 
+	t1.Id, 
+	t1.BoolValue, 
 	t1.NullableBoolValue
 FROM
 	WhereCases t1
@@ -39,9 +39,9 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -51,9 +51,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -63,9 +63,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -75,9 +75,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -87,9 +87,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -99,9 +99,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -111,9 +111,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -123,9 +123,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -135,9 +135,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -147,9 +147,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -159,9 +159,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -172,9 +172,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -184,9 +184,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -197,9 +197,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -209,9 +209,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -222,9 +222,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -234,9 +234,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -246,9 +246,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -258,9 +258,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -270,9 +270,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -282,9 +282,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -294,9 +294,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -306,9 +306,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -318,9 +318,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -330,9 +330,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -343,9 +343,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -355,9 +355,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -368,9 +368,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -380,9 +380,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -393,9 +393,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -405,9 +405,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -418,9 +418,9 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t

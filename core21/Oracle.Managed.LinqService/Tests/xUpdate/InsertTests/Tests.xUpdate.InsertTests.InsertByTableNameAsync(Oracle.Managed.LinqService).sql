@@ -115,7 +115,7 @@ RETURNING
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPerson_ol t1
@@ -123,7 +123,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPerson_ol p

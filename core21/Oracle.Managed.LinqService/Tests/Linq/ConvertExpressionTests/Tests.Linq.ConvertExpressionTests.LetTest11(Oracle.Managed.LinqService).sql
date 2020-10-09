@@ -5,16 +5,16 @@ SET     @take = 1
 DECLARE @take_1 Int32
 SET     @take_1 = 1
 
-SELECT
-	t1.ParentID,
-	t1.ChildID,
-	t2.ParentID,
+SELECT 
+	t1.ParentID, 
+	t1.ChildID, 
+	t2.ParentID, 
 	t2.ChildID
 FROM
 	Parent p
-		OUTER APPLY (
-			SELECT
-				c_1.ParentID,
+		OUTER APPLY ( 
+			SELECT 
+				c_1.ParentID, 
 				c_1.ChildID
 			FROM
 				Child c_1
@@ -24,9 +24,9 @@ FROM
 				c_1.ParentID
 			FETCH NEXT :take ROWS ONLY
 		) t1
-		OUTER APPLY (
-			SELECT
-				c_2.ParentID,
+		OUTER APPLY ( 
+			SELECT 
+				c_2.ParentID, 
 				c_2.ChildID
 			FROM
 				Child c_2

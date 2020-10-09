@@ -34,9 +34,9 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.Id,
-	t.Value1,
+SELECT 
+	t.Id, 
+	t.Value1, 
 	t.Value2
 FROM
 	ValueConversion t

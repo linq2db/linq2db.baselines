@@ -3,10 +3,10 @@
 DECLARE @n Int32
 SET     @n = 1
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child c_1

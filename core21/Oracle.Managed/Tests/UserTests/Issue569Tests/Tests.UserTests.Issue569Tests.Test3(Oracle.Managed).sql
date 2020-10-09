@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.PersonID,
-	t1.PersonID_1,
+SELECT 
+	t1.PersonID, 
+	t1.PersonID_1, 
 	d.Taxonomy
 FROM
-	(
-		SELECT
-			p.PersonID,
+	( 
+		SELECT 
+			p.PersonID, 
 			pt.PersonID as PersonID_1
 		FROM
 			Person p,

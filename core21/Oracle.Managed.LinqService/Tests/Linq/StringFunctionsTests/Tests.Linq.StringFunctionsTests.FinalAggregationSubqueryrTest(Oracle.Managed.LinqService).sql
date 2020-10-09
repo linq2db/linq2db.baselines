@@ -22,15 +22,15 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			COUNT(DISTINCT t1.Value1)
 		FROM
 			SampleClass t1
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			LISTAGG(t2.Value1, ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
 		FROM
 			SampleClass t2

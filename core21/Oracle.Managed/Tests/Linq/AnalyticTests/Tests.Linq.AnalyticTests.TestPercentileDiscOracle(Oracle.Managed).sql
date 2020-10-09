@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	PERCENTILE_DISC(0.5D) WITHIN GROUP (ORDER BY p.Value1) OVER(PARTITION BY p.Value1, p.ParentID)
 FROM
 	Parent p
@@ -10,8 +10,8 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	PERCENTILE_DISC(0.5D) WITHIN GROUP (ORDER BY p.Value1 DESC),
+SELECT 
+	PERCENTILE_DISC(0.5D) WITHIN GROUP (ORDER BY p.Value1 DESC), 
 	PERCENTILE_DISC(1) WITHIN GROUP (ORDER BY p.Value1 DESC)
 FROM
 	Parent p

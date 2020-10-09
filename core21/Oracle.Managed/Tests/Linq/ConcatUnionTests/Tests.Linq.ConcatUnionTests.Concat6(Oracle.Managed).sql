@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	c_1.ParentID,
+SELECT 
+	c_1.ParentID, 
 	c_1.ChildID
 FROM
 	Child c_1
 WHERE
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			GrandChild t1
@@ -16,14 +16,14 @@ WHERE
 			c_1.ParentID = t1.ParentID AND c_1.ChildID = t1.ChildID
 	) = 2
 UNION ALL
-SELECT
-	c_2.ParentID,
+SELECT 
+	c_2.ParentID, 
 	c_2.ChildID
 FROM
 	Child c_2
 WHERE
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			GrandChild t2

@@ -8,7 +8,7 @@ FROM SYS.DUAL
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	LinqDataTypes@ORC12 t1

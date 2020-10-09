@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	To_Number(To_Char(t.DateTimeValue, 'WW'))
 FROM
 	LinqDataTypes t

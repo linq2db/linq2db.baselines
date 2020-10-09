@@ -221,12 +221,12 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
+SELECT 
+	t1.Id, 
+	t1.Field1, 
+	t1.Field2, 
+	t1.Field3, 
+	t1.Field4, 
 	t1.Field5
 FROM
 	TestMerge2 t1
@@ -258,12 +258,12 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
+SELECT 
+	t1.Id, 
+	t1.Field1, 
+	t1.Field2, 
+	t1.Field3, 
+	t1.Field4, 
 	t1.Field5
 FROM
 	TestMerge1 t1

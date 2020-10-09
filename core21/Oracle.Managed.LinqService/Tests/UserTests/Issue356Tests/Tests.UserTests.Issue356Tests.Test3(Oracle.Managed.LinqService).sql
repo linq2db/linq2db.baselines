@@ -7,25 +7,25 @@ SET     @take_1 = 10
 DECLARE @take Int32
 SET     @take = 10
 
-SELECT
-	cp.ParentID,
+SELECT 
+	cp.ParentID, 
 	c_1.ChildID
 FROM
 	Parent cp
-		CROSS APPLY (
-			SELECT
-				t3.ParentID,
+		CROSS APPLY ( 
+			SELECT 
+				t3.ParentID, 
 				t3.ChildID
 			FROM
-				(
-					SELECT
-						t1.ParentID,
+				( 
+					SELECT 
+						t1.ParentID, 
 						t1.ChildID
 					FROM
 						Child t1
 					UNION
-					SELECT
-						t2.ParentID,
+					SELECT 
+						t2.ParentID, 
 						t2.ChildID
 					FROM
 						Child t2

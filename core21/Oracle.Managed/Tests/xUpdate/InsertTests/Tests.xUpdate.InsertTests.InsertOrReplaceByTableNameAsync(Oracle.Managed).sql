@@ -80,7 +80,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPatient23 t1
@@ -144,7 +144,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPatient23 t1

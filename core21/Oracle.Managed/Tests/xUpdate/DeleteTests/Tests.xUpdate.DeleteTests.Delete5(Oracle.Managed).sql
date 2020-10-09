@@ -49,7 +49,7 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent t1
@@ -67,7 +67,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent t1

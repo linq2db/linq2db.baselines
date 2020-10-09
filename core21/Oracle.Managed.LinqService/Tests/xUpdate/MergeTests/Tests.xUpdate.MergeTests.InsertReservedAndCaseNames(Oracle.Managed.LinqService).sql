@@ -222,13 +222,13 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 MERGE INTO TestMerge1 Target_1
-USING (
-	SELECT
-		t1.Id as OtherId,
-		t1.Field1 as Field,
-		t1.Field2 as and_1,
-		t1.Field3 as Target,
-		t1.Field4 as Source,
+USING ( 
+	SELECT 
+		t1.Id as OtherId, 
+		t1.Field1 as Field, 
+		t1.Field2 as and_1, 
+		t1.Field3 as Target, 
+		t1.Field4 as Source, 
 		t1.Field5 as case_1
 	FROM
 		TestMerge2 t1
@@ -259,12 +259,12 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
+SELECT 
+	t1.Id, 
+	t1.Field1, 
+	t1.Field2, 
+	t1.Field3, 
+	t1.Field4, 
 	t1.Field5
 FROM
 	TestMerge1 t1

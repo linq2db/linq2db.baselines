@@ -64,7 +64,7 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent564 t1

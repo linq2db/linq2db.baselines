@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.Id
 FROM
 	AllTypes t1
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	ALLTYPES t1
@@ -17,7 +17,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1."Id"
 FROM
 	"AllTypes" t1
@@ -25,7 +25,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	ALLTYPES t1

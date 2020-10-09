@@ -34,8 +34,8 @@ CREATE TABLE stMain
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	v.inId,
+SELECT 
+	v.inId, 
 	r.inIdState
 FROM
 	stVersions v

@@ -27,8 +27,8 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	r.BigIntValue,
+SELECT 
+	r.BigIntValue, 
 	r.IntValue
 FROM
 	LinqDataTypes r

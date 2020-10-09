@@ -19,8 +19,8 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.Value
 FROM
 	Issue464 t1

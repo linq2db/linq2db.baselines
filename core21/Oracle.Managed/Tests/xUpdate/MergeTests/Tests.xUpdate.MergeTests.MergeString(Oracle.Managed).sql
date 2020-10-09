@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Max(t1.ID)
 FROM
 	AllTypes t1
@@ -32,10 +32,10 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t1.ID,
-	t1.charDataType,
-	t1.ncharDataType,
+SELECT 
+	t1.ID, 
+	t1.charDataType, 
+	t1.ncharDataType, 
 	t1.nvarcharDataType
 FROM
 	AllTypes t1

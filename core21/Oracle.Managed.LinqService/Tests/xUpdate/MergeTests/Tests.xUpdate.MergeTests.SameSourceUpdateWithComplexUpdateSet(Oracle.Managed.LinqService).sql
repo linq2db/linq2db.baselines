@@ -226,12 +226,12 @@ DECLARE @idx Int32
 SET     @idx = 6
 
 MERGE INTO TestMerge1 Target
-USING (
-	SELECT
-		t1.Id,
-		t1.Field1,
-		t1.Field3,
-		t1.Field4,
+USING ( 
+	SELECT 
+		t1.Id, 
+		t1.Field1, 
+		t1.Field3, 
+		t1.Field4, 
 		t1.Field5
 	FROM
 		TestMerge2 t1
@@ -250,12 +250,12 @@ SET
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
+SELECT 
+	t1.Id, 
+	t1.Field1, 
+	t1.Field2, 
+	t1.Field3, 
+	t1.Field4, 
 	t1.Field5
 FROM
 	TestMerge1 t1

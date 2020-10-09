@@ -68,8 +68,8 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t.ID,
+SELECT 
+	t.ID, 
 	t.ID1
 FROM
 	DropTableTestID t
@@ -86,8 +86,8 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.ID,
+SELECT 
+	t1.ID, 
 	t1.ID1
 FROM
 	DropTableTestID t1

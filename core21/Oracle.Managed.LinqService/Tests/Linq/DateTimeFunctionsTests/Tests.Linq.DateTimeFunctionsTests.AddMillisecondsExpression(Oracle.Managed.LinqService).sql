@@ -3,7 +3,7 @@
 DECLARE @p1 Int32
 SET     @p1 = 226
 
-SELECT
+SELECT 
 	t.DateTimeValue + :p1 * INTERVAL '0.001' SECOND
 FROM
 	LinqDataTypes t
@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.DateTimeValue
 FROM
 	LinqDataTypes t

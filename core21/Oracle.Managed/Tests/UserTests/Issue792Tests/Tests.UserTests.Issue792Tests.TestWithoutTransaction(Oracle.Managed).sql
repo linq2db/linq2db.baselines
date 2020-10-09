@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	AllTypes t1
@@ -11,7 +11,7 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	user
 FROM
 	LinqDataTypes t1
@@ -206,7 +206,7 @@ SYSTEM.TEST2132
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	AllTypes t1

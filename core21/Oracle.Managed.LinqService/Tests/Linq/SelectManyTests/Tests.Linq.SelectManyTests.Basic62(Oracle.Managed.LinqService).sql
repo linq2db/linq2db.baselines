@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t2.c1
 FROM
 	Parent cp
-		CROSS APPLY (
-			SELECT
+		CROSS APPLY ( 
+			SELECT 
 				t1.ParentID + cp.ParentID as c1
 			FROM
 				Child t1

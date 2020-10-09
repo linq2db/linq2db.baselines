@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	LISTAGG(c_1.ChildID) WITHIN GROUP (ORDER BY c_1.ParentID DESC, a_ParentTest.Value1, p.Value1),
-	LISTAGG(c_1.ChildID) WITHIN GROUP (ORDER BY c_1.ParentID DESC NULLS FIRST, p.Value1 NULLS LAST),
-	LISTAGG(c_1.ChildID) WITHIN GROUP (ORDER BY c_1.ParentID NULLS FIRST, c_1.ParentID, p.Value1 NULLS FIRST),
-	LISTAGG(c_1.ChildID) WITHIN GROUP (ORDER BY c_1.ParentID DESC, a_ParentTest.Value1, p.Value1 DESC),
+SELECT 
+	LISTAGG(c_1.ChildID) WITHIN GROUP (ORDER BY c_1.ParentID DESC, a_ParentTest.Value1, p.Value1), 
+	LISTAGG(c_1.ChildID) WITHIN GROUP (ORDER BY c_1.ParentID DESC NULLS FIRST, p.Value1 NULLS LAST), 
+	LISTAGG(c_1.ChildID) WITHIN GROUP (ORDER BY c_1.ParentID NULLS FIRST, c_1.ParentID, p.Value1 NULLS FIRST), 
+	LISTAGG(c_1.ChildID) WITHIN GROUP (ORDER BY c_1.ParentID DESC, a_ParentTest.Value1, p.Value1 DESC), 
 	LISTAGG(c_1.ChildID, '..') WITHIN GROUP (ORDER BY c_1.ParentID DESC, a_ParentTest.Value1, p.Value1 DESC)
 FROM
 	Parent p

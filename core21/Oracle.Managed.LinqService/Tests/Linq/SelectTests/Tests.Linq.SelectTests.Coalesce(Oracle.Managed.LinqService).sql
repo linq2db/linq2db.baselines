@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	p.PersonID,
-	Nvl(p.FirstName, 'None'),
+SELECT 
+	p.PersonID, 
+	Nvl(p.FirstName, 'None'), 
 	Nvl(p.MiddleName, 'None')
 FROM
 	Person p

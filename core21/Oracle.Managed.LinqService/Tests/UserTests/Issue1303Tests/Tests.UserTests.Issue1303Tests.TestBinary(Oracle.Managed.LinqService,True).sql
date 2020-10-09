@@ -33,9 +33,9 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.ID,
-	t1.Array,
+SELECT 
+	t1.ID, 
+	t1.Array, 
 	t1.Binary
 FROM
 	Issue1303 t1
@@ -46,9 +46,9 @@ FETCH NEXT 2 ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.ID,
-	t1.Array,
+SELECT 
+	t1.ID, 
+	t1.Array, 
 	t1.Binary
 FROM
 	Issue1303 t1
@@ -59,9 +59,9 @@ FETCH NEXT 2 ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.ID,
-	t1.Array,
+SELECT 
+	t1.ID, 
+	t1.Array, 
 	t1.Binary
 FROM
 	Issue1303 t1

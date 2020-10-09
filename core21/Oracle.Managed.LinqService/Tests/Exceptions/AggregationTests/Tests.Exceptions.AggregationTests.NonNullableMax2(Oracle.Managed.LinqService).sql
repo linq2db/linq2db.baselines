@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Max(t1.ParentID)
 		FROM
 			Child t1

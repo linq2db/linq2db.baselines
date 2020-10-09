@@ -22,7 +22,7 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	LISTAGG(t1.Value1, ' -> ') WITHIN GROUP (ORDER BY t1.Value1 DESC, t1.Value3)
 FROM
 	SampleClass t1

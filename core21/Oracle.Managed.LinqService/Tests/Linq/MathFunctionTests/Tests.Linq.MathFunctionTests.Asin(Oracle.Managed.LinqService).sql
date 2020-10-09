@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Asin(Cast(p.MoneyValue as Float) / 15D) * 15D) as c1
 		FROM
 			LinqDataTypes p

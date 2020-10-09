@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Sum(Nvl(a_Parent.Value1, 0))
 FROM
 	Child t1

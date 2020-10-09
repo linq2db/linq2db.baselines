@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER(),
+SELECT 
+	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER(), 
 	Sum(t1.ParentID)
 FROM
 	Child t1

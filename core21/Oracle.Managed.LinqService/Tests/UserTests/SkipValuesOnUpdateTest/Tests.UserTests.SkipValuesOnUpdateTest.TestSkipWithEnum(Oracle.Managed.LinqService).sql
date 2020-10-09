@@ -42,10 +42,10 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t.Id,
-	t.Name,
-	t.Age,
+SELECT 
+	t.Id, 
+	t.Name, 
+	t.Age, 
 	t.Gender
 FROM
 	PR_1598_Update_Enum_Table t
@@ -78,10 +78,10 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t.Id,
-	t.Name,
-	t.Age,
+SELECT 
+	t.Id, 
+	t.Name, 
+	t.Age, 
 	t.Gender
 FROM
 	PR_1598_Update_Enum_Table t
@@ -111,10 +111,10 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t.Id,
-	t.Name,
-	t.Age,
+SELECT 
+	t.Id, 
+	t.Name, 
+	t.Age, 
 	t.Gender
 FROM
 	PR_1598_Update_Enum_Table t

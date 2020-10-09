@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	x.ID,
+SELECT 
+	x.ID, 
 	x.BigIntValue
 FROM
 	LinqDataTypes x

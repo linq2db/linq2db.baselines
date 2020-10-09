@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Child p
@@ -12,7 +12,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	a_Parent.ParentID
 FROM
 	Child ch
@@ -21,7 +21,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Child p

@@ -53,7 +53,7 @@ SET
 	Parent.Value1 = :Value1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child child_1

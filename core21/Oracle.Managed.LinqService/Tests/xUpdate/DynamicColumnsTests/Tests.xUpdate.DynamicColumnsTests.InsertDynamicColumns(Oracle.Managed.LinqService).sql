@@ -17,7 +17,7 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person c_1

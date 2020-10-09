@@ -80,11 +80,11 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT DISTINCT
-	t.Id,
-	t.TargetName,
-	a_ActualStage.Id,
-	a_ActualStage.TaskId,
+SELECT DISTINCT 
+	t.Id, 
+	t.TargetName, 
+	a_ActualStage.Id, 
+	a_ActualStage.TaskId, 
 	a_ActualStage.Actual
 FROM
 	Issue1096Task t

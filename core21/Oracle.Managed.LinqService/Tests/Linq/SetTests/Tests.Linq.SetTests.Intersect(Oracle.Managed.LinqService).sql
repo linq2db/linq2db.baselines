@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.ChildID
 FROM
 	Child t1
 INTERSECT
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.ChildID
 FROM
 	Child p

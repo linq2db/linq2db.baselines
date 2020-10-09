@@ -34,7 +34,7 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	d."Not Identifier"
 FROM
 	DynamicTable d

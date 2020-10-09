@@ -5,11 +5,11 @@ SET     @id = 1
 DECLARE @name Varchar2(4) -- String
 SET     @name = 'John'
 
-SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
+SELECT 
+	p.FirstName, 
+	p.PersonID, 
+	p.LastName, 
+	p.MiddleName, 
 	p.Gender
 FROM
 	Person p

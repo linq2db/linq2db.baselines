@@ -73,17 +73,17 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1."Date",
-	t1.DateTime,
-	t1.DateTime_,
-	t1.DateTime2,
-	t1.DateTime2_0,
-	t1.DateTime2_1,
-	t1.DateTime2_9,
-	t1.DateTimeOffset_,
-	t1.DateTimeOffset_0,
-	t1.DateTimeOffset_1,
+SELECT 
+	t1."Date", 
+	t1.DateTime, 
+	t1.DateTime_, 
+	t1.DateTime2, 
+	t1.DateTime2_0, 
+	t1.DateTime2_1, 
+	t1.DateTime2_9, 
+	t1.DateTimeOffset_, 
+	t1.DateTimeOffset_0, 
+	t1.DateTimeOffset_1, 
 	t1.DateTimeOffset_9
 FROM
 	Test0431 t1
@@ -93,17 +93,17 @@ BeforeExecute
 DECLARE @pDate Date
 SET     @pDate = TO_TIMESTAMP('2020-01-03 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -115,17 +115,17 @@ BeforeExecute
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -137,17 +137,17 @@ BeforeExecute
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -159,17 +159,17 @@ BeforeExecute
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -181,17 +181,17 @@ BeforeExecute
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -203,17 +203,17 @@ BeforeExecute
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.700000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -225,17 +225,17 @@ BeforeExecute
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -247,17 +247,17 @@ BeforeExecute
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06.789123 +00:45
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -269,17 +269,17 @@ BeforeExecute
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06 +00:45
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -291,17 +291,17 @@ BeforeExecute
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06.7 +00:45
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r
@@ -313,17 +313,17 @@ BeforeExecute
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06.7891234 +00:45
 
-SELECT
-	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
+SELECT 
+	r."Date", 
+	r.DateTime, 
+	r.DateTime_, 
+	r.DateTime2, 
+	r.DateTime2_0, 
+	r.DateTime2_1, 
+	r.DateTime2_9, 
+	r.DateTimeOffset_, 
+	r.DateTimeOffset_0, 
+	r.DateTimeOffset_1, 
 	r.DateTimeOffset_9
 FROM
 	Test0431 r

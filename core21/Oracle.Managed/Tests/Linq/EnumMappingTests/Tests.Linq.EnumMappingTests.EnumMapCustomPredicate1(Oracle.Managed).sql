@@ -25,8 +25,8 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	entity.ID,
+SELECT 
+	entity.ID, 
 	entity.BigIntValue
 FROM
 	LinqDataTypes entity

@@ -27,8 +27,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t.ID,
+SELECT 
+	t.ID, 
 	t.BigIntValue
 FROM
 	LinqDataTypes t

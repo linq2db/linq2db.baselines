@@ -13,7 +13,7 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	p.ParentID
 FROM
 	Parent p
@@ -42,7 +42,7 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.ID
 FROM
 	Parent p

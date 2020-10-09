@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			TO_DATE('2010-' || Cast(p.ID as VarChar(11)) || '-1', 'YYYY-MM-DD') as c1
 		FROM
 			LinqDataTypes p

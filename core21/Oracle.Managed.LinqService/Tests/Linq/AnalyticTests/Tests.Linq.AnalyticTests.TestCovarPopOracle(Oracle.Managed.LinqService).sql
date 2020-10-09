@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	COVAR_POP(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	COVAR_POP(p.Value1, c_1.ChildID) OVER(),
+SELECT 
+	COVAR_POP(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	COVAR_POP(p.Value1, c_1.ChildID) OVER(), 
 	COVAR_POP(p.Value1, c_1.ChildID) OVER(PARTITION BY c_1.ChildID ORDER BY p.Value1 RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
 FROM
 	Parent p
@@ -12,7 +12,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	COVAR_POP(c_1.ParentID, c_1.ChildID)
 FROM
 	Parent p
@@ -23,7 +23,7 @@ GROUP BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	COVAR_POP(t1.ParentID, t1.ChildID)
 FROM
 	Child t1

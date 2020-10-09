@@ -5,12 +5,12 @@ SET     @take = 1
 DECLARE @take_1 Int32
 SET     @take_1 = 1
 
-SELECT
+SELECT 
 	t1.ParentID
 FROM
 	Parent p_1
-		OUTER APPLY (
-			SELECT
+		OUTER APPLY ( 
+			SELECT 
 				p.ParentID
 			FROM
 				Child p
@@ -20,7 +20,7 @@ FROM
 		) t1
 WHERE
 	(
-		SELECT
+		SELECT 
 			1
 		FROM
 			Child t2

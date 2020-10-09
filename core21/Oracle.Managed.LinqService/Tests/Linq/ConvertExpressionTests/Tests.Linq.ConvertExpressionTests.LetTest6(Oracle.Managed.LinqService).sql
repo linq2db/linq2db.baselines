@@ -5,31 +5,31 @@ SET     @take = 1
 DECLARE @take_1 Int32
 SET     @take_1 = 1
 
-SELECT
-	cp.ParentID,
+SELECT 
+	cp.ParentID, 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1
 		WHERE
 			c_1.ParentID = cp.ParentID AND c_1.ChildID > -100
-	) THEN 1 ELSE 0 END,
+	) THEN 1 ELSE 0 END, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child c_2
 		WHERE
 			c_2.ParentID = cp.ParentID AND c_2.ChildID > -100
-	),
-	t1.First1,
-	t2.ParentID,
+	), 
+	t1.First1, 
+	t2.ParentID, 
 	t2.ChildID
 FROM
 	Parent cp
-		OUTER APPLY (
-			SELECT
+		OUTER APPLY ( 
+			SELECT 
 				c_3.ParentID as First1
 			FROM
 				Child c_3
@@ -40,9 +40,9 @@ FROM
 				c_3.ChildID
 			FETCH NEXT :take ROWS ONLY
 		) t1
-		OUTER APPLY (
-			SELECT
-				c_4.ParentID,
+		OUTER APPLY ( 
+			SELECT 
+				c_4.ParentID, 
 				c_4.ChildID
 			FROM
 				Child c_4

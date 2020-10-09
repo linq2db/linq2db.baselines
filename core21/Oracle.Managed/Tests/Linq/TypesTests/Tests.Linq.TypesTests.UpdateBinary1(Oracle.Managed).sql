@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.BinaryValue
 FROM
 	LinqDataTypes t

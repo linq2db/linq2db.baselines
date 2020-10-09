@@ -3,11 +3,11 @@
 DECLARE @doe Varchar2(3) -- String
 SET     @doe = 'Doe'
 
-SELECT
+SELECT 
 	t1.FirstName
 FROM
 	Person p
-		CROSS APPLY (
+		CROSS APPLY ( 
 			SELECT
 				p.FirstName
 			FROM SYS.DUAL
@@ -28,11 +28,11 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -40,8 +40,8 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
@@ -51,11 +51,11 @@ BeforeExecute
 DECLARE @doe Varchar2(4) -- String
 SET     @doe = 'Doe1'
 
-SELECT
+SELECT 
 	t1.FirstName
 FROM
 	Person p
-		CROSS APPLY (
+		CROSS APPLY ( 
 			SELECT
 				p.FirstName
 			FROM SYS.DUAL

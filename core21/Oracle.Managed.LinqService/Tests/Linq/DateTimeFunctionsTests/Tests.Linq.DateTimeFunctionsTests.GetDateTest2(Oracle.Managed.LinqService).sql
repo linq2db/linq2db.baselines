@@ -3,12 +3,12 @@
 DECLARE @take Int32
 SET     @take = 5
 
-SELECT
-	t1.c1,
+SELECT 
+	t1.c1, 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Trunc(CURRENT_TIMESTAMP, 'DD') as c1
 		FROM
 			Parent v

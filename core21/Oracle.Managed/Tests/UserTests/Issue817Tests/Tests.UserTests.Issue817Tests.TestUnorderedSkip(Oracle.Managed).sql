@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person t1
@@ -11,7 +11,7 @@ BeforeExecute
 DECLARE @skip Int32
 SET     @skip = 1
 
-SELECT
+SELECT 
 	1
 FROM
 	Person t1

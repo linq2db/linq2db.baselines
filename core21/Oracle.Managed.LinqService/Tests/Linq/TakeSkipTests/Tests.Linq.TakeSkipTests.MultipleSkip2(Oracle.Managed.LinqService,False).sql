@@ -19,7 +19,7 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.Value
 FROM
 	TakeSkipClass t1
@@ -30,7 +30,7 @@ OFFSET 3 ROWS
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.Value
 FROM
 	TakeSkipClass t1

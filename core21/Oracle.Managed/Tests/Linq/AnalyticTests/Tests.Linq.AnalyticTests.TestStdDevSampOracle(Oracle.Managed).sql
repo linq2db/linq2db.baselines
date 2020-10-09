@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	STDDEV_SAMP(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	STDDEV_SAMP(p.Value1) OVER(ORDER BY p.Value1),
-	STDDEV_SAMP(p.Value1) OVER(),
+SELECT 
+	STDDEV_SAMP(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	STDDEV_SAMP(p.Value1) OVER(ORDER BY p.Value1), 
+	STDDEV_SAMP(p.Value1) OVER(), 
 	STDDEV_SAMP(p.Value1) OVER(PARTITION BY c_1.ChildID ORDER BY p.Value1 RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
 FROM
 	Parent p
@@ -13,7 +13,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	STDDEV_SAMP(c_1.ParentID)
 FROM
 	Parent p
@@ -24,7 +24,7 @@ GROUP BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	STDDEV_SAMP(t1.ParentID)
 FROM
 	Child t1

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent p

@@ -1,21 +1,21 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t2.Key_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN (
-					SELECT
+					SELECT 
 						Count(*)
 					FROM
 						Child t1
 					WHERE
 						selectParam.ParentID = t1.ParentID
 				) > 0 AND (
-					SELECT
+					SELECT 
 						Round(AVG(c_1.ParentID), 27)
 					FROM
 						Child c_1

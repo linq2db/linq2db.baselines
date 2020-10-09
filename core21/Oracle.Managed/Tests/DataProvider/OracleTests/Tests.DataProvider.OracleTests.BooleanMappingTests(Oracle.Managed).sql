@@ -22,9 +22,9 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.Id,
-	t1.BoolProp,
+SELECT 
+	t1.Id, 
+	t1.BoolProp, 
 	t1.NullableBoolProp
 FROM
 	BooleanMapping t1

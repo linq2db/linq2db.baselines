@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t.DateTimeValue + 1 * INTERVAL '1' YEAR
 FROM
 	LinqDataTypes t

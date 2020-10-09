@@ -14,19 +14,19 @@ INSERT INTO Parent
 	ParentID,
 	Value1
 )
-SELECT
-	t1.ParentID + 1000,
+SELECT 
+	t1.ParentID + 1000, 
 	t1.Value1
 FROM
-	(
-		SELECT
-			c_1.ParentID,
+	( 
+		SELECT 
+			c_1.ParentID, 
 			Cast(Floor(Floor(Cast(c_1.ChildID as Float) / 10D)) as Int) as Value1
 		FROM
 			Child c_1
 		UNION
-		SELECT
-			Nvl(c_2.ParentID, 0) as ParentID,
+		SELECT 
+			Nvl(c_2.ParentID, 0) as ParentID, 
 			Floor(Cast(Nvl(c_2.GrandChildID, 0) as Float) / 100D) as Value1
 		FROM
 			GrandChild c_2
@@ -35,7 +35,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent c_1

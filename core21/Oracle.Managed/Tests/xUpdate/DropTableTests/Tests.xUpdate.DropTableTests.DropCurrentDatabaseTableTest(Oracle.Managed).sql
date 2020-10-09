@@ -33,7 +33,7 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	DropTableTest t1
@@ -46,7 +46,7 @@ DROP TABLE DropTableTest
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	DropTableTest t1

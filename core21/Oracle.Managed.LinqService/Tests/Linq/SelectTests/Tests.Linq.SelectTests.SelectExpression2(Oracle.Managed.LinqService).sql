@@ -24,8 +24,8 @@ SET     @p2 = HEXTORAW('D4DCEF619D65E841910C506A9C2F31C5')
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	:p1,
+SELECT 
+	:p1, 
 	:p2
 FROM
 	SelectExpressionTable t1

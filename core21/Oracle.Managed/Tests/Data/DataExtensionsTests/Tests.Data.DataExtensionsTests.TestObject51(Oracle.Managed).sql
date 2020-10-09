@@ -2,11 +2,11 @@
 -- Oracle.Managed Oracle12
 
 -- Oracle.Managed Oracle12
-SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
+SELECT 
+	p.FirstName, 
+	p.PersonID, 
+	p.LastName, 
+	p.MiddleName, 
 	p.Gender
 FROM
 	Person p

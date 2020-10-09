@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Child c_1
@@ -47,7 +47,7 @@ SET
 	Child.ChildID = :ChildID
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1
@@ -62,7 +62,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Child c_1

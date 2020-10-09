@@ -7,8 +7,8 @@ SET     @p1 = '<t>
 </t>
 '
 
-SELECT
-	t2.field1,
+SELECT 
+	t2.field1, 
 	t2.field2
 FROM
 	Parent t1

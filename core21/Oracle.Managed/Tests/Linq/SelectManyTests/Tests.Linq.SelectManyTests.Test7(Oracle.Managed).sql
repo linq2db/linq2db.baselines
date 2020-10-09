@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	a_Child.ParentID,
+SELECT 
+	a_Child.ParentID, 
 	a_Child.ChildID
 FROM
 	Parent p
@@ -15,8 +15,8 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	a_Child.ParentID,
+SELECT 
+	a_Child.ParentID, 
 	a_Child.ChildID
 FROM
 	Parent p

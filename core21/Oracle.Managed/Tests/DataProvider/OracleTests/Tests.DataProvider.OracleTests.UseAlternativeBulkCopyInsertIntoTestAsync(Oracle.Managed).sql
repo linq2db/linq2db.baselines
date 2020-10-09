@@ -46,8 +46,8 @@ INSERT INTO UseAlternativeBulkCopy (Id, Value) VALUES (:p1, :p2)
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.Value
 FROM
 	UseAlternativeBulkCopy t1

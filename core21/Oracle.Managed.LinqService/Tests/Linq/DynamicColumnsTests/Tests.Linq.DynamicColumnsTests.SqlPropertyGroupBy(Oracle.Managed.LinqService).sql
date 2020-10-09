@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.FirstName,
+SELECT 
+	t1.FirstName, 
 	Count(*)
 FROM
 	Person t1

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
+SELECT 
+	t1.FirstName, 
+	t1.PersonID, 
+	t1.LastName, 
+	t1.MiddleName, 
 	t1.Gender
 FROM
 	Person t1
@@ -15,11 +15,11 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
+SELECT 
+	t1.FirstName, 
+	t1.PersonID, 
+	t1.LastName, 
+	t1.MiddleName, 
 	t1.Gender
 FROM
 	Person t1
@@ -31,11 +31,11 @@ BeforeExecute
 DECLARE @gender_1 Char -- StringFixedLength
 SET     @gender_1 = 'M'
 
-SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
+SELECT 
+	t1.FirstName, 
+	t1.PersonID, 
+	t1.LastName, 
+	t1.MiddleName, 
 	t1.Gender
 FROM
 	Person t1
@@ -47,11 +47,11 @@ BeforeExecute
 DECLARE @gender_1 Char -- StringFixedLength
 SET     @gender_1 = 'M'
 
-SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
+SELECT 
+	t1.FirstName, 
+	t1.PersonID, 
+	t1.LastName, 
+	t1.MiddleName, 
 	t1.Gender
 FROM
 	Person t1

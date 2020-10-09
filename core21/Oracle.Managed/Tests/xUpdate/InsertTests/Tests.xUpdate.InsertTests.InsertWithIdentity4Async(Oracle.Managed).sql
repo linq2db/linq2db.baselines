@@ -43,11 +43,11 @@ SET     @FirstName_1 = 'John0'
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
+SELECT 
+	p.FirstName, 
+	p.PersonID, 
+	p.LastName, 
+	p.MiddleName, 
 	p.Gender
 FROM
 	Person p
@@ -92,11 +92,11 @@ SET     @FirstName_1 = 'John1'
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
+SELECT 
+	p.FirstName, 
+	p.PersonID, 
+	p.LastName, 
+	p.MiddleName, 
 	p.Gender
 FROM
 	Person p

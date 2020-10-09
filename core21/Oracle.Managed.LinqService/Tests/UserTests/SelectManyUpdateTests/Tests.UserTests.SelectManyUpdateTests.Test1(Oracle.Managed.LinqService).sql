@@ -7,7 +7,7 @@ SET
 	Parent.Value1 = NULL
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Parent x

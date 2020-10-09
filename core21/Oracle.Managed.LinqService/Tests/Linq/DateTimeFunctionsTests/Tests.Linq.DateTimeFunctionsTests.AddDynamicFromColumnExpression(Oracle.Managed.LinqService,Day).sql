@@ -5,7 +5,7 @@ SET     @part1 = 4
 DECLARE @part2 Int32
 SET     @part2 = 4
 
-SELECT
+SELECT 
 	t.DateTimeValue + ((t.SmallIntValue + :part1) - :part2) * INTERVAL '1' DAY
 FROM
 	LinqDataTypes t

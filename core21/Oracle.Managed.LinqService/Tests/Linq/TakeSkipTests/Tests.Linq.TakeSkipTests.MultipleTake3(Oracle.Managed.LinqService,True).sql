@@ -25,7 +25,7 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	t1.Value
 FROM
 	TakeSkipClass t1

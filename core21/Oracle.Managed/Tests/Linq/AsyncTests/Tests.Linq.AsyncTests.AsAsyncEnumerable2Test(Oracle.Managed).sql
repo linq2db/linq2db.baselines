@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-SELECT
-	x.ParentID,
+SELECT 
+	x.ParentID, 
 	x.Value1
 FROM
 	Parent x
