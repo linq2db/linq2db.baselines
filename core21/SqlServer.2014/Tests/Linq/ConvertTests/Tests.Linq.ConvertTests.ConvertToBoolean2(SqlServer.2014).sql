@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(Bit, [t].[MoneyValue] - 4.5) as [c1]
 		FROM
 			[LinqDataTypes] [t]

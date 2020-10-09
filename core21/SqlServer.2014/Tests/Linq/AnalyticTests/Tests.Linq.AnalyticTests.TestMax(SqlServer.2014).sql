@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	Max([c_1].[ChildID]),
-	MAX([c_1].[ChildID]),
-	MAX(ALL [c_1].[ChildID]),
+SELECT 
+	Max([c_1].[ChildID]), 
+	MAX([c_1].[ChildID]), 
+	MAX(ALL [c_1].[ChildID]), 
 	MAX(DISTINCT [c_1].[ChildID])
 FROM
 	[Parent] [p]
@@ -15,7 +15,7 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	Max([c_1].[ParentID])
 FROM
 	[Child] [c_1]
@@ -23,7 +23,7 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	MAX(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
@@ -31,7 +31,7 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	MAX(DISTINCT [t1].[ParentID])
 FROM
 	[Child] [t1]

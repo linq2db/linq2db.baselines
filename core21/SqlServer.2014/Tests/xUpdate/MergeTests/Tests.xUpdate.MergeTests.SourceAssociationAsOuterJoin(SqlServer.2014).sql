@@ -262,11 +262,11 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -274,8 +274,8 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
@@ -284,9 +284,9 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 MERGE INTO [Person] [Target]
-USING (
-	SELECT
-		[t1].[PersonID] as [ID],
+USING ( 
+	SELECT 
+		[t1].[PersonID] as [ID], 
 		[a_Patient].[Diagnosis]
 	FROM
 		[Person] [t1]

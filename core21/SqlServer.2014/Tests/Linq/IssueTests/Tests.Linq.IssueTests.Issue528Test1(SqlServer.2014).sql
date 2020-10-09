@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -13,8 +13,8 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
@@ -22,7 +22,7 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[FirstName]
 FROM
 	[Person] [t1]
@@ -34,11 +34,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'Jane'
 
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
+SELECT 
+	[keyParam].[FirstName], 
+	[keyParam].[PersonID], 
+	[keyParam].[LastName], 
+	[keyParam].[MiddleName], 
 	[keyParam].[Gender]
 FROM
 	[Person] [keyParam]
@@ -50,11 +50,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'John'
 
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
+SELECT 
+	[keyParam].[FirstName], 
+	[keyParam].[PersonID], 
+	[keyParam].[LastName], 
+	[keyParam].[MiddleName], 
 	[keyParam].[Gender]
 FROM
 	[Person] [keyParam]
@@ -66,11 +66,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'Jürgen'
 
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
+SELECT 
+	[keyParam].[FirstName], 
+	[keyParam].[PersonID], 
+	[keyParam].[LastName], 
+	[keyParam].[MiddleName], 
 	[keyParam].[Gender]
 FROM
 	[Person] [keyParam]
@@ -82,11 +82,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'Tester'
 
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
+SELECT 
+	[keyParam].[FirstName], 
+	[keyParam].[PersonID], 
+	[keyParam].[LastName], 
+	[keyParam].[MiddleName], 
 	[keyParam].[Gender]
 FROM
 	[Person] [keyParam]

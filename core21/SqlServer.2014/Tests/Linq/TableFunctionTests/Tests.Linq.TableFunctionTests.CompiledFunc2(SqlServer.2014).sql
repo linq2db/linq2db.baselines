@@ -3,8 +3,8 @@
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Child] [c_1],

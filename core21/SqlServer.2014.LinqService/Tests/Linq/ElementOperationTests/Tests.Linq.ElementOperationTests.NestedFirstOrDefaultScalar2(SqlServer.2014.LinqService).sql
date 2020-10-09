@@ -3,13 +3,13 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[t1].[MaxChild]
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT TOP (@take)
+		OUTER APPLY ( 
+			SELECT TOP (@take) 
 				[c_1].[ChildID] as [MaxChild]
 			FROM
 				[Child] [c_1]

@@ -24,8 +24,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Value]
 FROM
 	[SampleClass] [t1]
@@ -33,8 +33,8 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -46,8 +46,8 @@ BeforeExecute
 DECLARE @asParamUnterm NVarChar(4000) -- String
 SET     @asParamUnterm = N'%[[]0%'
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -57,8 +57,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -68,8 +68,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -81,8 +81,8 @@ BeforeExecute
 DECLARE @asParamUnterm NVarChar(4000) -- String
 SET     @asParamUnterm = N'[0'
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -92,8 +92,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -105,8 +105,8 @@ BeforeExecute
 DECLARE @asParam NVarChar(4000) -- String
 SET     @asParam = N'[0-9]'
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Log(Convert(Float, [p].[MoneyValue])) / 0.69314718055994529) as [c1]
 		FROM
 			[LinqDataTypes] [p]

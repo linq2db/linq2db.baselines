@@ -40,8 +40,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Value]
 FROM
 	[InstanceClass] [t1]

@@ -20,10 +20,10 @@ CREATE TABLE [TestTable]
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012 (asynchronously)
 
-SELECT
-	[t1].[Field1],
-	[t1].[ID],
-	[t1].[Field2],
+SELECT 
+	[t1].[Field1], 
+	[t1].[ID], 
+	[t1].[Field2], 
 	[t1].[CreatedOn]
 FROM
 	[TestTable] [t1]

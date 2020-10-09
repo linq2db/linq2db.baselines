@@ -223,12 +223,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[Id],
-	[t1].[Field1],
-	[t1].[Field2],
-	[t1].[Field3],
-	[t1].[Field4],
+SELECT 
+	[t1].[Id], 
+	[t1].[Field1], 
+	[t1].[Field2], 
+	[t1].[Field3], 
+	[t1].[Field4], 
 	[t1].[Field5]
 FROM
 	[TestMerge2] [t1]
@@ -252,12 +252,12 @@ WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = 2 THEN DELETE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[Id],
-	[t1].[Field1],
-	[t1].[Field2],
-	[t1].[Field3],
-	[t1].[Field4],
+SELECT 
+	[t1].[Id], 
+	[t1].[Field1], 
+	[t1].[Field2], 
+	[t1].[Field3], 
+	[t1].[Field4], 
 	[t1].[Field5]
 FROM
 	[TestMerge1] [t1]

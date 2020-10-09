@@ -3,13 +3,13 @@
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 
-SELECT
-	[key_data_result].[ParentID],
-	[_gjd_c].[ParentID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[_gjd_c].[ParentID], 
 	[_gjd_c].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
@@ -21,8 +21,8 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

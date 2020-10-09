@@ -24,26 +24,26 @@ CREATE TABLE [Country]
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[e_1].[ManufacturerId],
-	[e_1].[CountryCode],
-	[e_1].[Name],
-	[ce].[Code],
-	[ce].[Name],
-	[t1].[ManufacturerId],
-	[t1].[CountryCode],
-	[t1].[Name],
-	[t1].[Code],
+SELECT 
+	[e_1].[ManufacturerId], 
+	[e_1].[CountryCode], 
+	[e_1].[Name], 
+	[ce].[Code], 
+	[ce].[Name], 
+	[t1].[ManufacturerId], 
+	[t1].[CountryCode], 
+	[t1].[Name], 
+	[t1].[Code], 
 	[t1].[Name_1]
 FROM
 	[Manufacturer] [e_1]
 		LEFT JOIN [Country] [ce] ON [e_1].[CountryCode] = [ce].[Code]
-		LEFT JOIN (
-			SELECT
-				[e].[ManufacturerId],
-				[e].[CountryCode],
-				[e].[Name],
-				[ce_1].[Code],
+		LEFT JOIN ( 
+			SELECT 
+				[e].[ManufacturerId], 
+				[e].[CountryCode], 
+				[e].[Name], 
+				[ce_1].[Code], 
 				[ce_1].[Name] as [Name_1]
 			FROM
 				[Manufacturer] [e]

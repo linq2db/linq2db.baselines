@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID],
+	( 
+		SELECT DISTINCT 
+			[p].[ParentID], 
 			[p].[Value1]
 		FROM
 			[Parent] [p]

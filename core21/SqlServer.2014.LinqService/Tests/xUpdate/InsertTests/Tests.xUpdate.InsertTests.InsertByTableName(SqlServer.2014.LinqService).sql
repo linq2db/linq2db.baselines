@@ -103,7 +103,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [t1]
@@ -111,7 +111,7 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [p]

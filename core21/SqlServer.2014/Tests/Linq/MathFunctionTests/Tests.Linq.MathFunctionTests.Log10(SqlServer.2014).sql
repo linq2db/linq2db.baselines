@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Log10(Convert(Float, [p].[MoneyValue]))) as [c1]
 		FROM
 			[LinqDataTypes] [p]

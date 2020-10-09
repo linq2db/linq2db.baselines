@@ -47,7 +47,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [t1]
@@ -57,11 +57,11 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT TOP (@take) 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]
@@ -96,11 +96,11 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT TOP (@take) 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]

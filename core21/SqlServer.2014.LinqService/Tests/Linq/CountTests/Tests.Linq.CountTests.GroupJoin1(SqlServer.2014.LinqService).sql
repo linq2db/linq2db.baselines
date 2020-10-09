@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[Child] [t1]
 		WHERE
 			[p].[ParentID] = [t1].[ParentID]
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[GrandChild] [t2]

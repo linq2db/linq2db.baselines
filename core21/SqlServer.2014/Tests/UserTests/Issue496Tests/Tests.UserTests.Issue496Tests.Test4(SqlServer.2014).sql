@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[key_data_result].[ParentID],
-	[detail].[ChildID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[detail].[ChildID], 
 	[detail].[ParentID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[_].[ParentID]
 		FROM
 			[Parent] [_]
@@ -17,7 +17,7 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[_].[ParentID]
 FROM
 	[Parent] [_]

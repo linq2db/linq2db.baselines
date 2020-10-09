@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Power(Convert(Float, [p].[MoneyValue]), 3)) as [c1]
 		FROM
 			[LinqDataTypes] [p]

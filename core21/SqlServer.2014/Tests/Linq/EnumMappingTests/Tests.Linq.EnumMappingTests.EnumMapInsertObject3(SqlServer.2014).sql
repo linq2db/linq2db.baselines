@@ -30,7 +30,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[LinqDataTypes] [r]

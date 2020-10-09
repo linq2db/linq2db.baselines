@@ -5,18 +5,18 @@ SET     @take = 10
 DECLARE @pattern NVarChar(4000) -- String
 SET     @pattern = N'%1%'
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[t1].[FirstName]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[p].[FirstName]
 		FROM
 			[Person] [p]
 		WHERE
 			[p].[FirstName] LIKE N'1'
 		UNION ALL
-		SELECT
+		SELECT 
 			[p_1].[FirstName]
 		FROM
 			[Person] [p_1]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[ChildID]
 FROM
 	[GrandChild] [t1]

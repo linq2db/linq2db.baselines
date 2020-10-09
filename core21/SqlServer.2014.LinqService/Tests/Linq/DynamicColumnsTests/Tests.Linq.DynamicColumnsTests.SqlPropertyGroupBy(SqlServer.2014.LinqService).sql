@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[FirstName],
+SELECT 
+	[t1].[FirstName], 
 	Count(*)
 FROM
 	[Person] [t1]

@@ -9,10 +9,10 @@ INSERT INTO [Child]
 	[ChildID]
 )
 OUTPUT
-	[INSERTED].[ChildID],
+	[INSERTED].[ChildID], 
 	[INSERTED].[ParentID]
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	@id_2
 FROM
 	[Child] [c_1]
@@ -22,8 +22,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[c_1].[ChildID],
+SELECT 
+	[c_1].[ChildID], 
 	[c_1].[ParentID]
 FROM
 	[Child] [c_1]

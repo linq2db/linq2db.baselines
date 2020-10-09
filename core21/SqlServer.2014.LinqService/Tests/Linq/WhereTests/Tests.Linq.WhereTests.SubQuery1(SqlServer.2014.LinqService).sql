@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[pp].[Value_1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			IIF([p].[MoneyValue] * 2 = Round([p].[MoneyValue] * 2, 2) AND [p].[MoneyValue] <> Round([p].[MoneyValue], 2), Round([p].[MoneyValue] / 2, 2) * 2, Round([p].[MoneyValue], 2)) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]

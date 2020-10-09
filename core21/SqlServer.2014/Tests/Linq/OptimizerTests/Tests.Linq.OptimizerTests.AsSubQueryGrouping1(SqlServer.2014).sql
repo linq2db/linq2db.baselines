@@ -83,11 +83,11 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	COUNT(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[t1].[Key1]
 		FROM
 			[FirstOptimizerData] [t1]

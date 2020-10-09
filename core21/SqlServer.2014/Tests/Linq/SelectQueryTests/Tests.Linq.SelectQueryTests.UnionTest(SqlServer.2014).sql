@@ -10,46 +10,46 @@ CREATE TABLE [SampleClass]
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
+SELECT 
+	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP), 
 	DateAdd(day, 2, CURRENT_TIMESTAMP)
 FROM
 	[SampleClass] [t]
 WHERE
 	[t].[Value] = 1
 UNION
-SELECT
-	[t1].[Value1],
+SELECT 
+	[t1].[Value1], 
 	[t1].[Value2]
 FROM
-	(
-		SELECT
-			DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1],
+	( 
+		SELECT 
+			DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1], 
 			DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
 	) [t1]
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[v].[Value2]
 FROM
-	(
-		SELECT
-			DateAdd(day, [t].[Value], CURRENT_TIMESTAMP) as [Value1],
+	( 
+		SELECT 
+			DateAdd(day, [t].[Value], CURRENT_TIMESTAMP) as [Value1], 
 			DateAdd(day, 2, CURRENT_TIMESTAMP) as [Value2]
 		FROM
 			[SampleClass] [t]
 		WHERE
 			[t].[Value] = 1
 		UNION
-		SELECT
-			[t1].[Value1],
+		SELECT 
+			[t1].[Value1], 
 			[t1].[Value2]
 		FROM
-			(
-				SELECT
-					DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1],
+			( 
+				SELECT 
+					DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1], 
 					DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
 			) [t1]
 	) [v]
