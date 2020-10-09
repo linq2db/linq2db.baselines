@@ -190,7 +190,7 @@ SELECT @@IDENTITY
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 85
+SET     @PersonID = 47
 DECLARE @Taxonomy UniVarChar(10) -- String
 SET     @Taxonomy = 'Dr. Lector'
 
@@ -208,7 +208,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 86
+SET     @PersonID = 48
 DECLARE @Taxonomy UniVarChar(10) -- String
 SET     @Taxonomy = 'Dr. who???'
 
@@ -226,7 +226,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 83
+SET     @PersonID = 45
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'sick'
 
@@ -244,7 +244,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 84
+SET     @PersonID = 46
 DECLARE @Diagnosis UniVarChar(9) -- String
 SET     @Diagnosis = 'very sick'
 
