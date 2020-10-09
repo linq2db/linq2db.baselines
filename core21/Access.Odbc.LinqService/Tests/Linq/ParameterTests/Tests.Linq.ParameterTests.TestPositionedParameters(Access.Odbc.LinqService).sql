@@ -47,7 +47,7 @@ SET     @x3 = 3
 DECLARE @z2 Int -- Int32
 SET     @z2 = 2
 
-SELECT
+SELECT 
 	((((? * (? - ?) / ?) * ?) * (((((? * (? - ?) / ?) * ?) * (? - ?) / ((? * (? - ?) / ?) * ?)) * ?) - [child_1].[ChildID]) / ((? * (? - ?) / ?) * ?)) * [child_1].[ChildID])
 FROM
 	[Child] [child_1]

@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[_].[ParentID],
+SELECT 
+	[_].[ParentID], 
 	[_].[Value1]
 FROM
 	[Parent] [_]
 WHERE
 	(
-		SELECT TOP 1
+		SELECT TOP 1 
 			[r].[GuidValue]
 		FROM
 			[LinqDataTypes] [r]

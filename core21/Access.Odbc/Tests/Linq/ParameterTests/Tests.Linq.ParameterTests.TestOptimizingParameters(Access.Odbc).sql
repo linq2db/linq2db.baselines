@@ -7,7 +7,7 @@ SET     @id = 1
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [_]

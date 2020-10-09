@@ -29,8 +29,8 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[t].[ParentID],
+SELECT TOP 1 
+	[t].[ParentID], 
 	[t].[Value1]
 FROM
 	[Parent] [t]

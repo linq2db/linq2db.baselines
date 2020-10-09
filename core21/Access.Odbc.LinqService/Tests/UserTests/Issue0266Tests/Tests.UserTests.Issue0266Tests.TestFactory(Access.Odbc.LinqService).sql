@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 2
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT TOP 2 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]

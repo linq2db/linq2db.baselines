@@ -131,10 +131,10 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[ft].[Id],
-	[t].[Id],
-	[t].[FactId],
+SELECT 
+	[ft].[Id], 
+	[t].[Id], 
+	[t].[FactId], 
 	[t].[Name]
 FROM
 	[Fact] [ft]

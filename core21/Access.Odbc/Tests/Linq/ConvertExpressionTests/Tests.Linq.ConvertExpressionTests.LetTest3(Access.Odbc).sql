@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	(
-		SELECT TOP 1
+		SELECT TOP 1 
 			[p].[ParentID]
 		FROM
 			[Child] [p]

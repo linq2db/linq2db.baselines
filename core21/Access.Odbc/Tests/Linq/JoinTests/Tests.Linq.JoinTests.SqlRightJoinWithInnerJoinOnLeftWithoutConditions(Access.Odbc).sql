@@ -3,24 +3,24 @@
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 
-SELECT
-	[left_1].[ParentID],
-	[left_1].[Value1],
-	[t1].[ParentID],
+SELECT 
+	[left_1].[ParentID], 
+	[left_1].[Value1], 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
-	(
-		SELECT
-			[p].[Value1],
+	( 
+		SELECT 
+			[p].[Value1], 
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
 		WHERE
 			[p].[ParentID] <> ?
 	) [left_1]
-		RIGHT JOIN (
-			SELECT
-				[right_1].[Value1],
+		RIGHT JOIN ( 
+			SELECT 
+				[right_1].[Value1], 
 				[right_1].[ParentID]
 			FROM
 				[Parent] [right_1]

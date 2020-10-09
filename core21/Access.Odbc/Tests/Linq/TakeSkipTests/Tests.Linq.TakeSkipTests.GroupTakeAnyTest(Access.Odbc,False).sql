@@ -65,7 +65,7 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
+SELECT TOP 1 
 	Count(*) > 0
 FROM
 	[TakeSkipClass] [t1]

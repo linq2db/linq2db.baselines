@@ -6,7 +6,7 @@ DROP TABLE [TempTable]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]

@@ -3,7 +3,7 @@
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
-SELECT
+SELECT 
 	Count(*) > 0
 FROM
 	[Child] [c_1]
@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = -1
 
-SELECT
+SELECT 
 	Count(*) > 0
 FROM
 	[Child] [c_1]

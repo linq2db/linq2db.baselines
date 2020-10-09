@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[p].[ParentID],
-	[p].[Value1],
-	[c_1].[ParentID],
-	[c_1].[ChildID],
-	[g_1].[ParentID],
-	[g_1].[ChildID],
+SELECT 
+	[p].[ParentID], 
+	[p].[Value1], 
+	[c_1].[ParentID], 
+	[c_1].[ChildID], 
+	[g_1].[ParentID], 
+	[g_1].[ChildID], 
 	[g_1].[GrandChildID]
 FROM
 	([Parent] [p]

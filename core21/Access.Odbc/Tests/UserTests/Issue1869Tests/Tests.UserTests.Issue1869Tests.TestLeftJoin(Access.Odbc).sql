@@ -72,27 +72,27 @@ SET     @dateMax = #2020-02-29 17:54:55#
 DECLARE @sectorId Int -- Int32
 SET     @sectorId = 1
 
-SELECT
-	[m_1].[MonthNumber],
-	[t2].[MonthNumber],
+SELECT 
+	[m_1].[MonthNumber], 
+	[t2].[MonthNumber], 
 	[t2].[Ftq]
 FROM
 	[tblMonth] [m_1]
-		LEFT JOIN (
-			SELECT
-				[q_1].[MonthNumber],
+		LEFT JOIN ( 
+			SELECT 
+				[q_1].[MonthNumber], 
 				Sum([q_1].[Ftq]) as [Ftq]
 			FROM
-				(
-					SELECT
-						[t1].[MonthNumber],
+				( 
+					SELECT 
+						[t1].[MonthNumber], 
 						Sum([t1].[Qty]) / Sum(Iif([t1].[Ok], 0, [t1].[Qty])) as [Ftq]
 					FROM
-						(
-							SELECT
-								DatePart('m', [q].[EntryDate]) as [MonthNumber],
-								[a_Workstation].[Id_WorkstationGroup],
-								[q].[Qty],
+						( 
+							SELECT 
+								DatePart('m', [q].[EntryDate]) as [MonthNumber], 
+								[a_Workstation].[Id_WorkstationGroup], 
+								[q].[Qty], 
 								[a_Defect].[Ok]
 							FROM
 								(([tblFtq] [q]

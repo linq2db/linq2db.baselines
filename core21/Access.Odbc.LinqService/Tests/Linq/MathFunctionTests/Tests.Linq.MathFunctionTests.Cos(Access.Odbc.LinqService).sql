@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Int(Cos([p].[MoneyValue] / 15) * 15) as [c1]
 		FROM
 			[LinqDataTypes] [p]

@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t2].[Key_1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Iif((
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					[Child] [t1]
 				WHERE
 					[selectParam].[ParentID] = [t1].[ParentID]
 			) > 0 AND (
-				SELECT
+				SELECT 
 					Avg([c_1].[ParentID])
 				FROM
 					[Child] [c_1]

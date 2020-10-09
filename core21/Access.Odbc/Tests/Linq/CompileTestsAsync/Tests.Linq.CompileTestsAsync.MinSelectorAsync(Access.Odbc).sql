@@ -153,7 +153,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-SELECT
+SELECT 
 	Min([c_1].[Id])
 FROM
 	[AsyncDataTable] [c_1]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	[t1].[ParentID]
 FROM
-	(
-		SELECT TOP 4
+	( 
+		SELECT TOP 4 
 			[ch].[ParentID]
 		FROM
 			[Child] [ch]

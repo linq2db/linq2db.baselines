@@ -67,7 +67,7 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
-SELECT TOP 1
+SELECT TOP 1 
 	[_].[SmallIntValue]
 FROM
 	[LinqDataTypes] [_]

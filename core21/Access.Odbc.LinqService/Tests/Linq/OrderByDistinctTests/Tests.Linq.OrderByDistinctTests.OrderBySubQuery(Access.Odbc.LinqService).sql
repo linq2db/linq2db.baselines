@@ -482,20 +482,20 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[DuplicateData],
+SELECT 
+	[t].[DuplicateData], 
 	[t2].[Count_1]
 FROM
-	(
-		SELECT TOP 2
-			[t1].[Id],
+	( 
+		SELECT TOP 2 
+			[t1].[Id], 
 			[t1].[DuplicateData]
 		FROM
 			[OrderByDistinctData] [t1]
 	) [t]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				[s].[DuplicateData]
 			FROM
 				[OrderByDistinctData] [s]

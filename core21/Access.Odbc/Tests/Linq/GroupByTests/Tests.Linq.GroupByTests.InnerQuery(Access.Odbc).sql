@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Taxonomy]
 FROM
 	[Doctor] [t1]
@@ -10,9 +10,9 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	(
-		SELECT TOP 1
+		SELECT TOP 1 
 			[keyParam].[Taxonomy]
 		FROM
 			[Doctor] [keyParam]

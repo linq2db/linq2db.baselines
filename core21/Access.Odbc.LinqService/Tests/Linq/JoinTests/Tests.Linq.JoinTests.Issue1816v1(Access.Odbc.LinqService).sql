@@ -34,8 +34,8 @@ CREATE TABLE [stMain]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[v].[inId],
+SELECT 
+	[v].[inId], 
 	[r].[inIdState]
 FROM
 	([stVersions] [v]

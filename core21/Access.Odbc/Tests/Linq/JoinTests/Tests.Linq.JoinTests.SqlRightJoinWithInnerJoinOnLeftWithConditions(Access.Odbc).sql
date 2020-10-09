@@ -7,24 +7,24 @@ SET     @id1 = 1
 DECLARE @id2 Int -- Int32
 SET     @id2 = 2
 
-SELECT
-	[left_1].[ParentID],
-	[left_1].[Value1],
-	[t1].[ParentID],
+SELECT 
+	[left_1].[ParentID], 
+	[left_1].[Value1], 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
-	(
-		SELECT
-			[p].[Value1],
+	( 
+		SELECT 
+			[p].[Value1], 
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
 		WHERE
 			[p].[ParentID] <> ?
 	) [left_1]
-		RIGHT JOIN (
-			SELECT
-				[p_2].[Value1],
+		RIGHT JOIN ( 
+			SELECT 
+				[p_2].[Value1], 
 				[p_2].[ParentID]
 			FROM
 				[Parent] [p_2]

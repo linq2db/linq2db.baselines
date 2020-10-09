@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
-			[s].[ParentID],
+	( 
+		SELECT 
+			[s].[ParentID], 
 			[s].[ChildID]
 		FROM
-			(
-				SELECT
-					[child_1].[ParentID],
-					[child_1].[ChildID],
+			( 
+				SELECT 
+					[child_1].[ParentID], 
+					[child_1].[ChildID], 
 					[parent_1].[ParentID] as [ParentID_1]
 				FROM
 					[Parent] [parent_1],

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-SELECT
+SELECT 
 	1
 FROM
 	[FakeClass] [t1]

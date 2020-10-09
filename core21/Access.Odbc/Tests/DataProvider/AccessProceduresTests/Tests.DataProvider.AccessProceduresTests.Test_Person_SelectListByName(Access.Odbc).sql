@@ -14,7 +14,7 @@ SET     @firstName = '%e%'
 DECLARE @lastName NVarChar(3) -- String
 SET     @lastName = '%o%'
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [_]
@@ -28,11 +28,11 @@ SET     @firstName_1 = '%e%'
 DECLARE @lastName_1 NVarChar(3) -- String
 SET     @lastName_1 = '%o%'
 
-SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]

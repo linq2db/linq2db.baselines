@@ -80,19 +80,19 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t1].[Id],
-	[t1].[TargetName],
-	[t1].[Id_1],
-	[t1].[TaskId],
+SELECT 
+	[t1].[Id], 
+	[t1].[TargetName], 
+	[t1].[Id_1], 
+	[t1].[TaskId], 
 	[t1].[Actual]
 FROM
-	(
-		SELECT DISTINCT
-			[t].[Id],
-			[t].[TargetName],
-			[a_ActualStage].[Id] as [Id_1],
-			[a_ActualStage].[TaskId],
+	( 
+		SELECT DISTINCT 
+			[t].[Id], 
+			[t].[TargetName], 
+			[a_ActualStage].[Id] as [Id_1], 
+			[a_ActualStage].[TaskId], 
 			[a_ActualStage].[Actual]
 		FROM
 			[Issue1096Task] [t]

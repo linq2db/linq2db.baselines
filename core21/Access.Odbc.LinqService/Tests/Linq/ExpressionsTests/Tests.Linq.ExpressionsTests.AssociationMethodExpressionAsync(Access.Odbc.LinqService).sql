@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
@@ -10,13 +10,13 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-SELECT
+SELECT 
 	[t1].[cnt]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [cnt], 
 				[cp].[ParentID]
 			FROM
 				[Child] [cp]

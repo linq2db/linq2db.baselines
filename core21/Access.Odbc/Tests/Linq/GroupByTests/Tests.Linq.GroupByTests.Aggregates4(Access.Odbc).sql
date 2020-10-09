@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	Count([t1].[ParentID]),
+SELECT 
+	Count([t1].[ParentID]), 
 	(
-		SELECT
+		SELECT 
 			Sum([keyParam].[ChildID])
 		FROM
 			[Child] [keyParam]
@@ -13,8 +13,8 @@ SELECT
 	)
 FROM
 	[Child] [t2]
-		LEFT JOIN (
-			SELECT
+		LEFT JOIN ( 
+			SELECT 
 				[keyParam_1].[ParentID]
 			FROM
 				[Child] [keyParam_1]

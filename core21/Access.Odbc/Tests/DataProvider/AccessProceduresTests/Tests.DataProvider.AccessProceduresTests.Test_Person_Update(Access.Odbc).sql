@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [_]
@@ -48,11 +48,11 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP 2
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT TOP 2 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]

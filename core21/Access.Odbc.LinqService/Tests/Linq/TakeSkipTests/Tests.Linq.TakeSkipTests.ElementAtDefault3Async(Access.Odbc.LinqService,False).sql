@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-SELECT TOP 4
-	[p].[ParentID],
+SELECT TOP 4 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

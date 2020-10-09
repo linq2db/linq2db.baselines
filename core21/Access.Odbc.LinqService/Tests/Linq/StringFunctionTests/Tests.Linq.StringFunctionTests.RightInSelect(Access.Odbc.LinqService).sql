@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Right([p].[FirstName], 3)
 FROM
 	[Person] [p]

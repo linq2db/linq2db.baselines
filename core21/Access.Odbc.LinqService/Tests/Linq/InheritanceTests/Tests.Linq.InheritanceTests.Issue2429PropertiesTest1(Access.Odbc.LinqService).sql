@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[x].[Value],
+SELECT TOP 1 
+	[x].[Value], 
 	[x].[Id]
 FROM
 	[BaseTable] [x]
@@ -41,8 +41,8 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[x].[Value],
+SELECT TOP 1 
+	[x].[Value], 
 	[x].[Id]
 FROM
 	[BaseTable] [x]

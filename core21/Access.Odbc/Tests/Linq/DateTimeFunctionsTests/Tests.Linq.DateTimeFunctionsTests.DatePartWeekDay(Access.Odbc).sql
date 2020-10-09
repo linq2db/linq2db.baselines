@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	DatePart('w', [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

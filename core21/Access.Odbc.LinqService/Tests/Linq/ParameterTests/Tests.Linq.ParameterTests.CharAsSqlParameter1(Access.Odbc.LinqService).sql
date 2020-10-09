@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	'0 ' + chr(0) + ' '' 0'
 

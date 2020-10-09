@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	Sum([t1].[MoneyValue]),
-	DatePart('yyyy', [t1].[c1]),
+SELECT 
+	Sum([t1].[MoneyValue]), 
+	DatePart('yyyy', [t1].[c1]), 
 	DatePart('m', [t1].[c1])
 FROM
-	(
-		SELECT
-			DateSerial(DatePart('yyyy', [selectParam].[DateTimeValue]), DatePart('m', [selectParam].[DateTimeValue]), 1) as [c1],
+	( 
+		SELECT 
+			DateSerial(DatePart('yyyy', [selectParam].[DateTimeValue]), DatePart('m', [selectParam].[DateTimeValue]), 1) as [c1], 
 			[selectParam].[MoneyValue]
 		FROM
 			[LinqDataTypes] [selectParam]

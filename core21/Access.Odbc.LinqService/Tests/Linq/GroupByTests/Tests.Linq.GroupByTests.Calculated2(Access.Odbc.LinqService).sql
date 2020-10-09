@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[ch].[c1] + '2' as [c1]
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [c1]
 				FROM
 					[Child] [selectParam]

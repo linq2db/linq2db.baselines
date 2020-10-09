@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[x].[PersonID]
 FROM
 	[Person] [x]
@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @st NVarChar(4) -- String
 SET     @st = 'John'
 
-SELECT
+SELECT 
 	[x].[PersonID]
 FROM
 	[Person] [x]

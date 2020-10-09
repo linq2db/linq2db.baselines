@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DateSerial(2010, [p].[ID], 1) as [c1]
 		FROM
 			[LinqDataTypes] [p]

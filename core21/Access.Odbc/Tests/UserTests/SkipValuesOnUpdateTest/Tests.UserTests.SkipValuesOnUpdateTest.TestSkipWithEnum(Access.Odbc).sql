@@ -40,10 +40,10 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
+	[t].[Age], 
 	[t].[Gender]
 FROM
 	[PR_1598_Update_Enum_Table] [t]
@@ -73,10 +73,10 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
+	[t].[Age], 
 	[t].[Gender]
 FROM
 	[PR_1598_Update_Enum_Table] [t]
@@ -103,10 +103,10 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
+	[t].[Age], 
 	[t].[Gender]
 FROM
 	[PR_1598_Update_Enum_Table] [t]

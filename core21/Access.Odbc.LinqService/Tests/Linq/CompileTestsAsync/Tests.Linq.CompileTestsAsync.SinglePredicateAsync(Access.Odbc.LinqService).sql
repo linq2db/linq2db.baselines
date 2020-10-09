@@ -153,7 +153,7 @@ BeforeExecute
 DECLARE @Id_1 Int -- Int32
 SET     @Id_1 = 2
 
-SELECT TOP 2
+SELECT TOP 2 
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]

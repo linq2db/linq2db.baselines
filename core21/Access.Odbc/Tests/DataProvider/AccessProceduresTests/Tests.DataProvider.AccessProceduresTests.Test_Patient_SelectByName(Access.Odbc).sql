@@ -14,7 +14,7 @@ SET     @firstName = 'Tester'
 DECLARE @lastName NVarChar(9) -- String
 SET     @lastName = 'Testerson'
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Patient] [_]
@@ -29,12 +29,12 @@ SET     @firstName_1 = 'Tester'
 DECLARE @lastName_1 NVarChar(9) -- String
 SET     @lastName_1 = 'Testerson'
 
-SELECT
-	[a_Person].[PersonID],
-	[a_Person].[FirstName],
-	[a_Person].[LastName],
-	[a_Person].[MiddleName],
-	[a_Person].[Gender],
+SELECT 
+	[a_Person].[PersonID], 
+	[a_Person].[FirstName], 
+	[a_Person].[LastName], 
+	[a_Person].[MiddleName], 
+	[a_Person].[Gender], 
 	[_].[Diagnosis]
 FROM
 	[Patient] [_]

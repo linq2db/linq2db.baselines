@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 8
-	[t1].[ParentID],
+SELECT TOP 8 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
@@ -12,8 +12,8 @@ ORDER BY
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 8
-	[t1].[ParentID],
+SELECT TOP 8 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Child] [t1]

@@ -44,21 +44,21 @@ CREATE TABLE [FtqSectorModel]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t2].[ResultId],
-	[t2].[DefinitionId],
-	[a_Definition].[DefinitionId],
-	[a_Definition].[SetId],
-	[a_Set].[SetId],
-	[a_Set].[SectorId],
+SELECT 
+	[t2].[ResultId], 
+	[t2].[DefinitionId], 
+	[a_Definition].[DefinitionId], 
+	[a_Definition].[SetId], 
+	[a_Set].[SetId], 
+	[a_Set].[SectorId], 
 	[a_Set].[Id]
 FROM
 	([CtqResultModel] [t2]
 		INNER JOIN [CtqDefinitionModel] [a_Definition] ON ([t2].[DefinitionId] = [a_Definition].[DefinitionId]))
-		LEFT JOIN (
-			SELECT
-				[t1].[SetId],
-				[t1].[SectorId],
+		LEFT JOIN ( 
+			SELECT 
+				[t1].[SetId], 
+				[t1].[SectorId], 
 				[a_Sector].[Id]
 			FROM
 				[CtqSetModel] [t1]

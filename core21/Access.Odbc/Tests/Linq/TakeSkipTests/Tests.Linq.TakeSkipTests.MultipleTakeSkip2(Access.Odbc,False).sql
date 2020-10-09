@@ -121,7 +121,7 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 5
+SELECT TOP 5 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

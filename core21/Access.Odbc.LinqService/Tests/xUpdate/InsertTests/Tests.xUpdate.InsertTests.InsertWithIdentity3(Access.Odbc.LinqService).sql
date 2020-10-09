@@ -36,11 +36,11 @@ SELECT @@IDENTITY
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 2
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT TOP 2 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

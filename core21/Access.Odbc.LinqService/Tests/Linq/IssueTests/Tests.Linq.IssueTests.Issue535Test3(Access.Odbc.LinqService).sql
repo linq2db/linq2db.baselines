@@ -15,10 +15,10 @@ CREATE TABLE [CustomerBase]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[cb].[Id],
-	[cb].[Name],
-	[cb].[ContactEmail],
+SELECT 
+	[cb].[Id], 
+	[cb].[Name], 
+	[cb].[ContactEmail], 
 	Iif([cb].[Enabled] IS NULL, False, [cb].[Enabled])
 FROM
 	[CustomerBase] [cb]

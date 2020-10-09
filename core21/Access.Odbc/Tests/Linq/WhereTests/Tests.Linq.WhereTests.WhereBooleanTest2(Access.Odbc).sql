@@ -233,9 +233,9 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t1].[Id],
-	[t1].[BoolValue],
+SELECT 
+	[t1].[Id], 
+	[t1].[BoolValue], 
 	[t1].[NullableBoolValue]
 FROM
 	[WhereCases] [t1]
@@ -243,9 +243,9 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -255,9 +255,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -267,9 +267,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -279,9 +279,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -291,9 +291,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -303,9 +303,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -315,9 +315,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -327,9 +327,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -339,9 +339,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -351,9 +351,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -363,9 +363,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -376,9 +376,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -388,9 +388,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -401,9 +401,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -413,9 +413,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -426,9 +426,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -438,9 +438,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -451,9 +451,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -463,9 +463,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -476,9 +476,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -488,9 +488,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -501,9 +501,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -513,9 +513,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -526,9 +526,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]

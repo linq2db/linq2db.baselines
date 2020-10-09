@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[Database\TestData].[DropTableTest] [t1]
@@ -39,7 +39,7 @@ DROP TABLE [Database\TestData].[DropTableTest]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[Database\TestData].[DropTableTest] [t1]

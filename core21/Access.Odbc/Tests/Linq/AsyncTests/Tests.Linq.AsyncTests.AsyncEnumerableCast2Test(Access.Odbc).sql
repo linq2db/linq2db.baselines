@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-SELECT
-	[x].[ParentID],
+SELECT 
+	[x].[ParentID], 
 	[x].[Value1]
 FROM
 	[Parent] [x]

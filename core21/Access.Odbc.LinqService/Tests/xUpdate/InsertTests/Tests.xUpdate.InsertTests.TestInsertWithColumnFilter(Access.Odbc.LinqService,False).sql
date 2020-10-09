@@ -25,11 +25,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(18) -- String
 SET     @FirstName_1 = 'InsertColumnFilter'
 
-SELECT TOP 1
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
+SELECT TOP 1 
+	[x].[FirstName], 
+	[x].[PersonID], 
+	[x].[LastName], 
+	[x].[MiddleName], 
 	[x].[Gender]
 FROM
 	[Person] [x]

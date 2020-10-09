@@ -194,11 +194,11 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[lw_Category].[CategoryID],
-	[detail].[ProductID],
-	[detail].[ProductName],
-	[detail].[CategoryID],
+SELECT 
+	[lw_Category].[CategoryID], 
+	[detail].[ProductID], 
+	[detail].[ProductName], 
+	[detail].[CategoryID], 
 	[detail].[QuantityPerUnit]
 FROM
 	[Categories] [lw_Category]
@@ -207,9 +207,9 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t1].[CategoryID],
-	[t1].[CategoryName],
+SELECT 
+	[t1].[CategoryID], 
+	[t1].[CategoryName], 
 	[t1].[Description]
 FROM
 	[Categories] [t1]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Iif([selectParam].[Value1] IS NULL, [c_1].[ChildID], [selectParam].[Value1]) as [c1]
 		FROM
 			[Parent] [selectParam]

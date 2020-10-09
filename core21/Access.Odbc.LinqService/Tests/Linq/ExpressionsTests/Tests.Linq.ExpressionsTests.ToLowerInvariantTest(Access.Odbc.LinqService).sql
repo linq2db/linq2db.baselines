@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	LCase([p].[Taxonomy])
 FROM
 	[Doctor] [p]
