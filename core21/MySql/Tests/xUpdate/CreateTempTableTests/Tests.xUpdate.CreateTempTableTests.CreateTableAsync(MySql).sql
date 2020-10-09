@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql MySql.Official MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 
