@@ -11,5 +11,5 @@ FROM
 			[LinqDataTypes] [t]
 	) [p]
 WHERE
-	NOT ([p].[c1] IS NOT NULL AND [p].[c1] = True)
+	([p].[c1] = False OR [p].[c1] IS NULL)
 

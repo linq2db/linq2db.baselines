@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = 'John'
+	Iif([p].[FirstName] > 'John', 1, Iif([p].[FirstName] = 'John', 0, -1)) = 0
 
 BeforeExecute
 -- Access AccessOleDb

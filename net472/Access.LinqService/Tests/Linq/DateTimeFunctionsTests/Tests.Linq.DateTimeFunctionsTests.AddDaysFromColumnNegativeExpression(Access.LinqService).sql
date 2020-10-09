@@ -42,10 +42,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @part1 Integer -- Int32
-SET     @part1 = 4
-DECLARE @part2 Integer -- Int32
-SET     @part2 = 4
 DECLARE @p1 Date -- DateTime
 SET     @p1 = #2018-01-02#
 
@@ -54,7 +50,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) < @p1
+	[t].[ID] = 5000 AND DateAdd('d', [t].[SmallIntValue], [t].[DateTimeValue]) < @p1
 
 BeforeExecute
 -- Access AccessOleDb

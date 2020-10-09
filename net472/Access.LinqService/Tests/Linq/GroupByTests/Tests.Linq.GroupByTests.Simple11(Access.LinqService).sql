@@ -2,19 +2,21 @@
 -- Access AccessOleDb
 
 SELECT
-	[t1].[c1],
+	[t1].[c2],
 	[t1].[ChildID]
 FROM
 	(
 		SELECT
 			[selectParam].[ParentID] + 1 as [c1],
-			[selectParam].[ChildID]
+			[selectParam].[ChildID],
+			[selectParam].[ParentID] + 1 as [c2]
 		FROM
 			[GrandChild] [selectParam]
 	) [t1]
 GROUP BY
 	[t1].[c1],
-	[t1].[ChildID]
+	[t1].[ChildID],
+	[t1].[c2]
 
 BeforeExecute
 -- Access AccessOleDb
