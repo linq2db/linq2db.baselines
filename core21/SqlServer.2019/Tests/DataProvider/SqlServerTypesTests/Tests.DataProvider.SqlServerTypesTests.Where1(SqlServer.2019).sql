@@ -3,8 +3,8 @@
 DECLARE @hid_1 hierarchyid -- Udt -- Object
 SET     @hid_1 = /1/
 
-SELECT
-	[t].[ID],
+SELECT 
+	[t].[ID], 
 	[t].[HID]
 FROM
 	[SqlTypes] [t]
@@ -14,8 +14,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[ID],
+SELECT 
+	[t1].[ID], 
 	[t1].[HID]
 FROM
 	[SqlTypes] [t1]
