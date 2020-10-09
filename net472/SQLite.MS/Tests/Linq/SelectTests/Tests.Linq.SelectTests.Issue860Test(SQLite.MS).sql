@@ -34,15 +34,19 @@ SELECT
 FROM
 	[Table860_1] [it]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Table860_2] [d]
-				LEFT JOIN [Table860_3] [a_Table3] ON [d].[cId] = [a_Table3].[Id]
-		WHERE
-			[it].[bId] = [d].[Id] AND [a_Table3].[Prop] = 'aaa'
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[Table860_2] [d]
+					LEFT JOIN [Table860_3] [a_Table3] ON [d].[cId] = [a_Table3].[Id]
+			WHERE
+				[it].[bId] = [d].[Id] AND [a_Table3].[Prop] = 'aaa'
+		)
+			THEN 1
+		ELSE 0
+	END = 1
 
 BeforeExecute
 -- SQLite.MS SQLite

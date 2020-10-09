@@ -100,12 +100,12 @@ FROM
 			[a_Customer].[CustomerID]
 		FROM
 			[Orders] [t1]
-				INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [t1].[CustomerID] = [a_Customer].[CustomerID])
+				INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 		GROUP BY
 			[a_Customer].[CustomerID]
 		HAVING
 			Count(*) > 20
 	) [cp]
-		INNER JOIN [Orders] [c_1] ON ([cp].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL OR [cp].[CustomerID] = [a_Customer_1].[CustomerID])
-			INNER JOIN [Customers] [a_Customer_1] ON ([c_1].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL OR [c_1].[CustomerID] = [a_Customer_1].[CustomerID])
+		INNER JOIN [Orders] [c_1] ON ([cp].[CustomerID] = [a_Customer_1].[CustomerID] OR [cp].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL)
+			INNER JOIN [Customers] [a_Customer_1] ON ([c_1].[CustomerID] = [a_Customer_1].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL)
 
