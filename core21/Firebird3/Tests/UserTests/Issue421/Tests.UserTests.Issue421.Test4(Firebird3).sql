@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "BlobClass19"
+CREATE TABLE "BlobClass10"
 (
 	"Id"        Int  NOT NULL,
 	"BlobValue" Blob,
 
-	CONSTRAINT "PK_BlobClass19" PRIMARY KEY ("Id")
+	CONSTRAINT "PK_BlobClass10" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Firebird3 Firebird
 
-INSERT INTO "BlobClass19"
+INSERT INTO "BlobClass10"
 (
 	"Id",
 	"BlobValue"
@@ -30,7 +30,7 @@ SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM
-	"BlobClass19" "t1"
+	"BlobClass10" "t1"
 WHERE
 	"t1"."Id" = 1
 
@@ -41,12 +41,12 @@ SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM
-	"BlobClass19" "t1"
+	"BlobClass10" "t1"
 WHERE
 	"t1"."Id" = 1
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "BlobClass19"
+DROP TABLE "BlobClass10"
 
