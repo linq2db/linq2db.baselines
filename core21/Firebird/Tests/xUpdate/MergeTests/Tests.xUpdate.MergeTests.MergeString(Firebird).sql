@@ -10,7 +10,7 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "AllTypes" "Target"
-USING (	SELECT 87,_utf8 x'00',CAST(_utf8 x'00' AS NChar(20)),CAST(_utf8 x'74657374006974' AS VARCHAR(7)) FROM rdb$database) "Source"
+USING (	SELECT 46,_utf8 x'00',CAST(_utf8 x'00' AS NChar(20)),CAST(_utf8 x'74657374006974' AS VARCHAR(7)) FROM rdb$database) "Source"
 (
 	ID, 
 	"charDataType", 

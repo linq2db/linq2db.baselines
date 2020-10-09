@@ -30,6 +30,14 @@ BeforeExecute
 -- Firebird
 
 SELECT
+	"t1".ID
+FROM
+	"TempTable" "t1"
+
+BeforeExecute
+-- Firebird
+
+SELECT
 	"t".ID
 FROM
 	"Parent" "p"

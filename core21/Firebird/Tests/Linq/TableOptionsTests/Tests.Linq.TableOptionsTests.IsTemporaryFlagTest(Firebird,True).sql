@@ -1,0 +1,23 @@
+﻿BeforeExecute
+-- Firebird
+
+CREATE GLOBAL TEMPORARY TABLE "IsTemporaryTable"
+(
+	"Id"    Int NOT NULL,
+	"Value" Int NOT NULL
+)
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	"t1"."Id",
+	"t1"."Value"
+FROM
+	"IsTemporaryTable" "t1"
+
+BeforeExecute
+-- Firebird
+
+DROP TABLE "IsTemporaryTable"
+

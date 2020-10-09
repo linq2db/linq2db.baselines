@@ -19,7 +19,7 @@ RETURNING
 BeforeExecute
 -- Firebird
 DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 85
+SET     @id_1 = 44
 
 SELECT
 	"t".ID,
@@ -33,7 +33,7 @@ WHERE
 BeforeExecute
 -- Firebird
 DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 85
+SET     @id_1 = 44
 
 MERGE INTO "AllTypes" "Target"
 USING (
@@ -74,7 +74,7 @@ VALUES
 BeforeExecute
 -- Firebird
 DECLARE @id Integer -- Int32
-SET     @id = 85
+SET     @id = 44
 
 DELETE FROM
 	"AllTypes" "t1"
