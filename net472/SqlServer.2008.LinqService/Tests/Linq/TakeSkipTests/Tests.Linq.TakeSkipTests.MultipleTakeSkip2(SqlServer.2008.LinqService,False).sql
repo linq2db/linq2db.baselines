@@ -121,12 +121,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t2].[Value_1]
 FROM
-	(
-		SELECT
-			[t1].[Value] as [Value_1],
+	( 
+		SELECT 
+			[t1].[Value] as [Value_1], 
 			ROW_NUMBER() OVER (ORDER BY [t1].[Value]) as [RN]
 		FROM
 			[TakeSkipClass] [t1]

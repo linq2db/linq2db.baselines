@@ -15,7 +15,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t].[BinaryValue]
 FROM
 	[LinqDataTypes] [t]

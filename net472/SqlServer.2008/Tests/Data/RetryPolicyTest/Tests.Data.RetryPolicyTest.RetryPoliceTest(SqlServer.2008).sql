@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	1
 FROM
 	[FakeClass] [t1]

@@ -26,27 +26,27 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t2].[c1],
-	[t2].[Title],
+SELECT 
+	[t2].[c1], 
+	[t2].[Title], 
 	[t2].[Value_1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
-					(
-						SELECT DISTINCT
+					( 
+						SELECT DISTINCT 
 							[$it].[YearsExperience]
 						FROM
 							[odata_person] [$it]
 						WHERE
 							[selectParam].[Title] = [$it].[Title]
 					) [t1]
-			) as [Value_1],
-			N'Title' as [c1],
+			) as [Value_1], 
+			N'Title' as [c1], 
 			[selectParam].[Title]
 		FROM
 			[odata_person] [selectParam]

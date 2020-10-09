@@ -66,17 +66,17 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[c2],
+SELECT 
+	[t1].[c2], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN [selectParam].[TradingStatus] = N'D'
 					THEN 1
 				ELSE 0
-			END as [c1],
+			END as [c1], 
 			CASE WHEN [selectParam].[TradingStatus] = N'D' THEN 1 ELSE 0 END as [c2]
 		FROM
 			[Issue913Test] [selectParam]

@@ -26,9 +26,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	N'Title',
-	[selectParam].[Title],
+SELECT 
+	N'Title', 
+	[selectParam].[Title], 
 	Count(*)
 FROM
 	[odata_person] [selectParam]

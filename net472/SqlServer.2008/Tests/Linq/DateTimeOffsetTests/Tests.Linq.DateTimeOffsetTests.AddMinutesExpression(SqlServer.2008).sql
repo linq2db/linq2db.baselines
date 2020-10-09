@@ -50,7 +50,7 @@ BeforeExecute
 DECLARE @p1 Int -- Int32
 SET     @p1 = -8
 
-SELECT
+SELECT 
 	DateAdd(minute, @p1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

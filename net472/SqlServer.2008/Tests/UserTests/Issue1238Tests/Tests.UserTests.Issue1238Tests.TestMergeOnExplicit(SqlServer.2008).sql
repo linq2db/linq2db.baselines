@@ -10,7 +10,7 @@ BeforeExecute
 
 MERGE INTO [InheritanceParent] [Target]
 USING (	VALUES
-		(143,NULL,1)) [Source]
+		(143, NULL, 1)) [Source]
 (
 	[Key1], 
 	[Key2], 
@@ -41,7 +41,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InheritanceParent] [t1]
@@ -51,7 +51,7 @@ BeforeExecute
 
 MERGE INTO [InheritanceParent] [Target]
 USING (	VALUES
-		(143,NULL,1)) [Source]
+		(143, NULL, 1)) [Source]
 (
 	[Key1], 
 	[Key2], 
@@ -82,7 +82,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InheritanceParent] [t1]

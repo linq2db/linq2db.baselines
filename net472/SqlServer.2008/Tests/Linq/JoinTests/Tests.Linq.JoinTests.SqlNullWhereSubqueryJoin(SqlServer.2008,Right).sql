@@ -5,20 +5,20 @@ SET     @take = 10
 DECLARE @take_1 Int -- Int32
 SET     @take_1 = 10
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
-	(
-		SELECT TOP (@take)
-			[t1].[ParentID],
+	( 
+		SELECT TOP (@take) 
+			[t1].[ParentID], 
 			[t1].[Value1]
 		FROM
 			[Parent] [t1]
 	) [p1]
-		RIGHT JOIN (
-			SELECT TOP (@take_1)
-				[t2].[ParentID],
+		RIGHT JOIN ( 
+			SELECT TOP (@take_1) 
+				[t2].[ParentID], 
 				[t2].[Value1]
 			FROM
 				[Parent] [t2]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[p].[PersonID],
-	[p].[FirstName],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT 
+	[p].[PersonID], 
+	[p].[FirstName], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

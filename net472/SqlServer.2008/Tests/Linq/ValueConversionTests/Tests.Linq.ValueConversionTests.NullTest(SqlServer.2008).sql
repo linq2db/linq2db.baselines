@@ -44,9 +44,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
 	[t].[Value2]
 FROM
 	[ValueConversion] [t]

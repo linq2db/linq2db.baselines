@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Max([ch].[ChildID])
 		FROM
 			[Child] [ch]

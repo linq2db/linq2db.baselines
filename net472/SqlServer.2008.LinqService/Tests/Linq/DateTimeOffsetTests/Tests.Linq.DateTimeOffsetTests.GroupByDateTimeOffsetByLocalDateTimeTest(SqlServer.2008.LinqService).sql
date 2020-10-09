@@ -480,8 +480,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[TransactionDate],
+SELECT 
+	[t1].[TransactionDate], 
 	Count(*)
 FROM
 	[Transactions] [t1]

@@ -480,12 +480,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DatePart(second, [selectParam].[TransactionDate]) as [c1]
 		FROM
 			[Transactions] [selectParam]

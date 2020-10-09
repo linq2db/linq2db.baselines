@@ -262,7 +262,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Max([_].[PersonID])
 FROM
 	[Person] [_]
@@ -271,12 +271,12 @@ BeforeExecute
 -- SqlServer.2008
 
 MERGE INTO [Person] [Target]
-USING (
-	SELECT
-		[p].[PersonID] + 50 as [source_field0],
-		[p].[FirstName],
-		[p].[LastName],
-		[p].[MiddleName],
+USING ( 
+	SELECT 
+		[p].[PersonID] + 50 as [source_field0], 
+		[p].[FirstName], 
+		[p].[LastName], 
+		[p].[MiddleName], 
 		[p].[Gender]
 	FROM
 		[Person] [p]
@@ -310,11 +310,11 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]

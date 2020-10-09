@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[_].[LastName]
 FROM
 	[Person] [_]

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	Count(*),
-	COUNT([c_1].[ChildID]),
-	COUNT(ALL [c_1].[ChildID]),
+SELECT 
+	Count(*), 
+	COUNT([c_1].[ChildID]), 
+	COUNT(ALL [c_1].[ChildID]), 
 	COUNT(DISTINCT [c_1].[ChildID])
 FROM
 	[Parent] [p]
@@ -15,7 +15,7 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [t1]
@@ -23,7 +23,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	COUNT([t1].[ParentID])
 FROM
 	[Child] [t1]
@@ -31,7 +31,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	COUNT(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
@@ -39,7 +39,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	COUNT(DISTINCT [t1].[ParentID])
 FROM
 	[Child] [t1]

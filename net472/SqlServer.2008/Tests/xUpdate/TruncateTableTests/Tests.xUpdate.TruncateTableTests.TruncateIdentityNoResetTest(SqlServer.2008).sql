@@ -46,14 +46,14 @@ SET     @skip = 1
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT
-	[t2].[ID],
+SELECT 
+	[t2].[ID], 
 	[t2].[Field1]
 FROM
-	(
-		SELECT
-			[t1].[ID],
-			[t1].[Field1],
+	( 
+		SELECT 
+			[t1].[ID], 
+			[t1].[Field1], 
 			ROW_NUMBER() OVER (ORDER BY [t1].[ID]) as [RN]
 		FROM
 			[TestIdTrun] [t1]
@@ -97,14 +97,14 @@ SET     @skip = 1
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT
-	[t2].[ID],
+SELECT 
+	[t2].[ID], 
 	[t2].[Field1]
 FROM
-	(
-		SELECT
-			[t1].[ID],
-			[t1].[Field1],
+	( 
+		SELECT 
+			[t1].[ID], 
+			[t1].[Field1], 
 			ROW_NUMBER() OVER (ORDER BY [t1].[ID]) as [RN]
 		FROM
 			[TestIdTrun] [t1]

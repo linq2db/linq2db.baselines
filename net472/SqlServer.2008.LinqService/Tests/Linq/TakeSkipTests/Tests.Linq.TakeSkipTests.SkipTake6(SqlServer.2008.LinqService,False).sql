@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1],
-	(
-		SELECT TOP (3)
+	( 
+		SELECT TOP (3) 
 			[p].[ParentID]
 		FROM
 			[GrandChild] [p]
@@ -18,18 +18,18 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1],
-	(
-		SELECT
+	( 
+		SELECT 
 			[t1].[ParentID]
 		FROM
-			(
-				SELECT
-					[p].[ParentID],
+			( 
+				SELECT 
+					[p].[ParentID], 
 					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 				FROM
 					[GrandChild] [p]

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	Avg([c_1].[ChildID]),
-	AVG([c_1].[ChildID]),
-	AVG(ALL [c_1].[ChildID]),
+SELECT 
+	Avg([c_1].[ChildID]), 
+	AVG([c_1].[ChildID]), 
+	AVG(ALL [c_1].[ChildID]), 
 	AVG(DISTINCT [c_1].[ChildID])
 FROM
 	[Parent] [p]
@@ -15,7 +15,7 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Avg([c_1].[ParentID])
 FROM
 	[Child] [c_1]
@@ -23,7 +23,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	AVG(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
@@ -31,7 +31,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	AVG(DISTINCT [t1].[ParentID])
 FROM
 	[Child] [t1]

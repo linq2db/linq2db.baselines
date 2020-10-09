@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Sqrt(Convert(Float, [p].[MoneyValue]) / 15) * 15) as [c1]
 		FROM
 			[LinqDataTypes] [p]

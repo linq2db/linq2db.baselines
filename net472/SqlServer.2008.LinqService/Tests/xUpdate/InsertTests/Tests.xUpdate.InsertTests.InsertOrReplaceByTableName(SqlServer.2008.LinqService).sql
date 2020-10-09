@@ -74,7 +74,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient22] [t1]
@@ -138,7 +138,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient22] [t1]

@@ -48,7 +48,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	DateAdd(month, -2, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

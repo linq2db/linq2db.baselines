@@ -7,25 +7,25 @@ SET     @take = 7
 DECLARE @skip_1 Int -- Int32
 SET     @skip_1 = 2
 
-SELECT
-	[t4].[ParentID],
+SELECT 
+	[t4].[ParentID], 
 	[t4].[ChildID]
 FROM
-	(
-		SELECT
-			[t3].[ParentID],
-			[t3].[ChildID],
+	( 
+		SELECT 
+			[t3].[ParentID], 
+			[t3].[ChildID], 
 			ROW_NUMBER() OVER (ORDER BY [t3].[ChildID]) as [RN]
 		FROM
-			(
-				SELECT
-					[t2].[ChildID],
+			( 
+				SELECT 
+					[t2].[ChildID], 
 					[t2].[ParentID]
 				FROM
-					(
-						SELECT
-							[t1].[ChildID],
-							[t1].[ParentID],
+					( 
+						SELECT 
+							[t1].[ChildID], 
+							[t1].[ParentID], 
 							ROW_NUMBER() OVER (ORDER BY [t1].[ChildID] DESC) as [RN]
 						FROM
 							[Child] [t1]

@@ -3,14 +3,14 @@
 DECLARE @take Int -- Int32
 SET     @take = 3
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] IN (
-		SELECT TOP (@take)
+		SELECT TOP (@take) 
 			[p1].[ParentID]
 		FROM
 			[Parent] [p1]

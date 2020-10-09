@@ -48,12 +48,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DateAdd(year, -1, [selectParam].[TransactionDate]) as [c1]
 		FROM
 			[Transactions] [selectParam]

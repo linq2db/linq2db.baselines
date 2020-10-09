@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	[ch].[ParentID]
 FROM
 	[Child] [ch]

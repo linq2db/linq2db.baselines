@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			0 as [c1]
 		FROM
 			[LinqDataTypes] [selectParam]
@@ -17,13 +17,13 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	[t1].[c2]
 FROM
-	(
-		SELECT
-			MONTH([selectParam].[DateTimeValue]) as [c1],
+	( 
+		SELECT 
+			MONTH([selectParam].[DateTimeValue]) as [c1], 
 			YEAR([selectParam].[DateTimeValue]) as [c2]
 		FROM
 			[LinqDataTypes] [selectParam]

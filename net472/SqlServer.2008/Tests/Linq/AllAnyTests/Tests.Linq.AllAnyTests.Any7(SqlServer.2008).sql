@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [t1]

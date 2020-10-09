@@ -3,9 +3,9 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[p].[PersonID],
-	[p].[FirstName],
+SELECT TOP (@take) 
+	[p].[PersonID], 
+	[p].[FirstName], 
 	[p].[LastName]
 FROM
 	[Person] [p]

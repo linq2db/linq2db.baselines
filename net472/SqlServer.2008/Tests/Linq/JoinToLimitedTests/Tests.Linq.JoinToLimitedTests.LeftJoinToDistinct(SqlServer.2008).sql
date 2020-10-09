@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[o].[ParentID],
-	[o].[Value1],
-	[t1].[ParentID],
+SELECT 
+	[o].[ParentID], 
+	[o].[Value1], 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Parent] [o]
-		OUTER APPLY (
-			SELECT DISTINCT
-				[cg].[ParentID],
+		OUTER APPLY ( 
+			SELECT DISTINCT 
+				[cg].[ParentID], 
 				[cg].[ChildID]
 			FROM
 				[Child] [cg]

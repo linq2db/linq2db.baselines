@@ -71,7 +71,7 @@ SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[_].[SmallIntValue]
 FROM
 	[LinqDataTypes] [_]

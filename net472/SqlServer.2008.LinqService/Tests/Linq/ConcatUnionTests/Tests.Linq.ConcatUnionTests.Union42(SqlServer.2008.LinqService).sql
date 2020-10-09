@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[p_1].[val]
 FROM
-	(
-		SELECT
-			[p].[ParentID] as [id],
+	( 
+		SELECT 
+			[p].[ParentID] as [id], 
 			1 as [val]
 		FROM
 			[Parent] [p]
 		UNION
-		SELECT
-			[ch].[ParentID] as [id],
+		SELECT 
+			[ch].[ParentID] as [id], 
 			0 as [val]
 		FROM
 			[Child] [ch]

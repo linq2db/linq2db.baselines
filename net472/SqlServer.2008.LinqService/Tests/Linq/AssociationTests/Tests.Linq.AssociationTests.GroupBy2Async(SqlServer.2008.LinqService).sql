@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[a_Parent1].[ParentID],
+SELECT 
+	[a_Parent1].[ParentID], 
 	[a_Parent1].[Value1]
 FROM
 	[Child] [t1]

@@ -13,8 +13,8 @@ INSERT BULK [Issue464](Id, Value
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Value]
 FROM
 	[Issue464] [t1]

@@ -370,8 +370,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Value]
 FROM
 	[InstanceClass] [t1]

@@ -3,16 +3,16 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[t].[ID],
-	[t].[MoneyValue],
-	[t].[DateTimeValue],
-	[t].[DateTimeValue2],
-	[t].[BoolValue],
-	[t].[GuidValue],
-	[t].[SmallIntValue],
-	[t].[IntValue],
-	[t].[BigIntValue],
+SELECT TOP (@take) 
+	[t].[ID], 
+	[t].[MoneyValue], 
+	[t].[DateTimeValue], 
+	[t].[DateTimeValue2], 
+	[t].[BoolValue], 
+	[t].[GuidValue], 
+	[t].[SmallIntValue], 
+	[t].[IntValue], 
+	[t].[BigIntValue], 
 	[t].[StringValue]
 FROM
 	[LinqDataTypes] [t]
@@ -24,16 +24,16 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[t].[ID],
-	[t].[MoneyValue],
-	[t].[DateTimeValue],
-	[t].[DateTimeValue2],
-	[t].[BoolValue],
-	[t].[GuidValue],
-	[t].[SmallIntValue],
-	[t].[IntValue],
-	[t].[BigIntValue],
+SELECT TOP (@take) 
+	[t].[ID], 
+	[t].[MoneyValue], 
+	[t].[DateTimeValue], 
+	[t].[DateTimeValue2], 
+	[t].[BoolValue], 
+	[t].[GuidValue], 
+	[t].[SmallIntValue], 
+	[t].[IntValue], 
+	[t].[BigIntValue], 
 	[t].[StringValue]
 FROM
 	[LinqDataTypes] [t]
@@ -85,16 +85,16 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[t].[ID],
-	[t].[MoneyValue],
-	[t].[DateTimeValue],
-	[t].[DateTimeValue2],
-	[t].[BoolValue],
-	[t].[GuidValue],
-	[t].[SmallIntValue],
-	[t].[IntValue],
-	[t].[BigIntValue],
+SELECT TOP (@take) 
+	[t].[ID], 
+	[t].[MoneyValue], 
+	[t].[DateTimeValue], 
+	[t].[DateTimeValue2], 
+	[t].[BoolValue], 
+	[t].[GuidValue], 
+	[t].[SmallIntValue], 
+	[t].[IntValue], 
+	[t].[BigIntValue], 
 	[t].[StringValue]
 FROM
 	[LinqDataTypes] [t]

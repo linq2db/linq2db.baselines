@@ -82,9 +82,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[p].[Id],
-	[p].[TargetName],
+SELECT 
+	[p].[Id], 
+	[p].[TargetName], 
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]

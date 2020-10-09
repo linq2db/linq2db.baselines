@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]
@@ -15,11 +15,11 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]
@@ -31,11 +31,11 @@ BeforeExecute
 DECLARE @gender_1 NChar(1) -- StringFixedLength
 SET     @gender_1 = N'M'
 
-SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]
@@ -47,11 +47,11 @@ BeforeExecute
 DECLARE @gender_1 NChar(1) -- StringFixedLength
 SET     @gender_1 = N'M'
 
-SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]

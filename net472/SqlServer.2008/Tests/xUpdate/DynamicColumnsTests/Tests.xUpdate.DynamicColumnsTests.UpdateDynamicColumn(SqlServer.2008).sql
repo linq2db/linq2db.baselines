@@ -17,7 +17,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [c_1]
@@ -39,7 +39,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [c_1]

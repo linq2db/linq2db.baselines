@@ -28,8 +28,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[t1].[event_description],
+SELECT TOP (@take) 
+	[t1].[event_description], 
 	[t1].[event_id]
 FROM
 	[Issue1403Tests_1] [t1]

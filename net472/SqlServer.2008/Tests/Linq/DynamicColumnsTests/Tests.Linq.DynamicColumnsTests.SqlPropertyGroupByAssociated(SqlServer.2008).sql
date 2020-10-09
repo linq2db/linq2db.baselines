@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[a_Patient].[Diagnosis],
+SELECT 
+	[a_Patient].[Diagnosis], 
 	Count(*)
 FROM
 	[Person] [t1]

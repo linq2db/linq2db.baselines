@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [x]

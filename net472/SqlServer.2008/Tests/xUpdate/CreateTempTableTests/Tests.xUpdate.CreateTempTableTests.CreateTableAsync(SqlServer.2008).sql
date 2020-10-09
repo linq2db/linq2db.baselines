@@ -19,7 +19,7 @@ INSERT INTO [TempTable]
 (
 	[ID]
 )
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]
@@ -27,7 +27,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t].[ID]
 FROM
 	[Parent] [p]

@@ -480,7 +480,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	DateAdd(second, 41, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

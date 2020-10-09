@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(TinyInt, CASE
 				WHEN [t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Floor([t].[MoneyValue]) % 2 = 0
 					THEN Floor([t].[MoneyValue])

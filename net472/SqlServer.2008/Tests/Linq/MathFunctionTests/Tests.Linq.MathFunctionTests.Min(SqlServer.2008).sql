@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN [p].[MoneyValue] < 5 THEN [p].[MoneyValue]
 				ELSE 5
