@@ -262,7 +262,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	Max([_].[PersonID])
 FROM
 	[Person] [_]
@@ -274,9 +274,9 @@ SET     @ID_1 = 98
 
 SET IDENTITY_INSERT [Person] ON
 MERGE INTO [Person] [Target]
-USING (
-	SELECT
-		[t1].[PersonID] as [ID],
+USING ( 
+	SELECT 
+		[t1].[PersonID] as [ID], 
 		[a_Patient].[Diagnosis]
 	FROM
 		[Person] [t1]
@@ -309,11 +309,11 @@ SET IDENTITY_INSERT [Person] OFF
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]

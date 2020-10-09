@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DateAdd(month, (1320 + [p].[ID]) - 1, 0) as [c1]
 		FROM
 			[LinqDataTypes] [p]

@@ -46,10 +46,10 @@ BeforeExecute
 DECLARE @BoolValue_1 VarChar -- AnsiString
 SET     @BoolValue_1 = N'Y'
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
+	[t].[Value2], 
 	[t].[BoolValue]
 FROM
 	[ValueConversion] [t]

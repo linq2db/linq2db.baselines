@@ -29,7 +29,7 @@ SET     @take = 2
 DECLARE @Id_1 Int -- Int32
 SET     @Id_1 = 5
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[a_Parent].[Value1]
 FROM
 	[GrandChild] [t1]

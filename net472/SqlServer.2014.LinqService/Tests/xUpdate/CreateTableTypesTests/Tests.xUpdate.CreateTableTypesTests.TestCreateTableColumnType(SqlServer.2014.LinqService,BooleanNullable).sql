@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[BooleanNullable]
 FROM
 	[CreateTableTypes] [t1]

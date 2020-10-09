@@ -250,11 +250,11 @@ INSERT INTO [DestinationTable]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Id] + 1,
+	[INSERTED].[Id] + 1, 
 	[INSERTED].[ValueStr] + Convert(VarChar(11), 1)
-SELECT
-	[s].[Id] + 100 + @param,
-	[s].[Value] + 100,
+SELECT 
+	[s].[Id] + 100 + @param, 
+	[s].[Value] + 100, 
 	[s].[ValueStr] + Convert(VarChar(11), 100)
 FROM
 	[TableWithData] [s]
@@ -264,9 +264,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[Id],
-	[t1].[Value],
+SELECT 
+	[t1].[Id], 
+	[t1].[Value], 
 	[t1].[ValueStr]
 FROM
 	[DestinationTable] [t1]
@@ -274,8 +274,8 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t].[Id],
+SELECT 
+	[t].[Id], 
 	[t].[ValueStr]
 FROM
 	[DestinationTable] [t]

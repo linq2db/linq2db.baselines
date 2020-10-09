@@ -589,13 +589,13 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	COUNT([x].[Key2]),
+SELECT 
+	COUNT([x].[Key2]), 
 	COUNT([x].[Key1])
 FROM
-	(
-		SELECT
-			[t1].[Key1],
+	( 
+		SELECT 
+			[t1].[Key1], 
 			[t1].[Key2]
 		FROM
 			[FirstOptimizerData] [t1]

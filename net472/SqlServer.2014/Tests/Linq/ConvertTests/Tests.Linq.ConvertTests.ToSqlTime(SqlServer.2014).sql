@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	Convert(VarChar(11), DatePart(hour, [t].[DateTimeValue])) + N':01:01'
 FROM
 	[LinqDataTypes] [t]

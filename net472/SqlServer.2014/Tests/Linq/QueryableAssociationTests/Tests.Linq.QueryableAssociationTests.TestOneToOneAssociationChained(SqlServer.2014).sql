@@ -68,24 +68,24 @@ SET     @take = 1
 DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
-SELECT TOP (@take)
-	[x_2].[Id],
+SELECT TOP (@take) 
+	[x_2].[Id], 
 	[a_FirstUsersWithLanguage_1].[Id]
 FROM
 	[UserGroup] [x_2]
-		OUTER APPLY (
-			SELECT TOP (@take_1)
+		OUTER APPLY ( 
+			SELECT TOP (@take_1) 
 				[a_UserGroup].[Id]
 			FROM
 				[User] [x_1]
-					LEFT JOIN (
-						SELECT
-							[a_FirstUsersWithLanguage].[Id],
+					LEFT JOIN ( 
+						SELECT 
+							[a_FirstUsersWithLanguage].[Id], 
 							[t1].[Id] as [Id_1]
 						FROM
 							[UserGroup] [t1]
-								OUTER APPLY (
-									SELECT TOP (@take_1)
+								OUTER APPLY ( 
+									SELECT TOP (@take_1) 
 										[x].[Id]
 									FROM
 										[User] [x]

@@ -101,8 +101,8 @@ BeforeExecute
 DECLARE @group_1 Int -- Int32
 SET     @group_1 = 7
 
-SELECT
-	[p].[Id],
+SELECT 
+	[p].[Id], 
 	LAST_VALUE([p].[Id]) OVER(ORDER BY [p].[Order])
 FROM
 	[Position] [p]

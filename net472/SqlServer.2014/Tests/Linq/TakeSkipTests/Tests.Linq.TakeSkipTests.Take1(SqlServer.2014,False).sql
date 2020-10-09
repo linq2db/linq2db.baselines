@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT TOP (2)
-	[ch].[ParentID],
+SELECT TOP (2) 
+	[ch].[ParentID], 
 	[ch].[ChildID]
 FROM
 	[Child] [ch]
@@ -10,8 +10,8 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT TOP (3)
-	[ch].[ParentID],
+SELECT TOP (3) 
+	[ch].[ParentID], 
 	[ch].[ChildID]
 FROM
 	[Child] [ch]
@@ -19,8 +19,8 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT TOP (2)
-	[ch].[ParentID],
+SELECT TOP (2) 
+	[ch].[ParentID], 
 	[ch].[ChildID]
 FROM
 	[Child] [ch]
@@ -28,8 +28,8 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT TOP (3)
-	[ch].[ParentID],
+SELECT TOP (3) 
+	[ch].[ParentID], 
 	[ch].[ChildID]
 FROM
 	[Child] [ch]

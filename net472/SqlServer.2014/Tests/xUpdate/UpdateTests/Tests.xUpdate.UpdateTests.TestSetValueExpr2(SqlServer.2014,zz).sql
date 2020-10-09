@@ -43,9 +43,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[t1].[Id],
-	[t1].[Items1],
+SELECT 
+	[t1].[Id], 
+	[t1].[Items1], 
 	[t1].[Items2]
 FROM
 	[TextData] [t1]

@@ -3,21 +3,21 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[t].[ParentID],
-	[t].[ChildID],
-	[t].[GrandChildID],
-	[a_Child].[ParentID],
-	[a_Child].[ChildID],
-	[a_Child].[ParentID_1],
+SELECT TOP (@take) 
+	[t].[ParentID], 
+	[t].[ChildID], 
+	[t].[GrandChildID], 
+	[a_Child].[ParentID], 
+	[a_Child].[ChildID], 
+	[a_Child].[ParentID_1], 
 	[a_Child].[Value1]
 FROM
 	[GrandChild] [t]
-		LEFT JOIN (
-			SELECT
-				[t1].[ParentID],
-				[t1].[ChildID],
-				[a_Parent].[ParentID] as [ParentID_1],
+		LEFT JOIN ( 
+			SELECT 
+				[t1].[ParentID], 
+				[t1].[ChildID], 
+				[a_Parent].[ParentID] as [ParentID_1], 
 				[a_Parent].[Value1]
 			FROM
 				[Child] [t1]

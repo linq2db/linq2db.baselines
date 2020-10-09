@@ -20,13 +20,13 @@ CREATE TABLE [Relationship1711]
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[t].[Id]
 FROM
 	[Entity1711] [t]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Relationship1711] [r]

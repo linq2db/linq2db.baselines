@@ -3,9 +3,9 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	IIF((
-		SELECT TOP (@take)
+		SELECT TOP (@take) 
 			[a_Parent].[Value1]
 		FROM
 			[Child] [ch]
@@ -13,7 +13,7 @@ SELECT
 		WHERE
 			[ch].[ChildID] = [c_1].[ChildID]
 	) IS NULL, [c_1].[ChildID], (
-		SELECT TOP (@take)
+		SELECT TOP (@take) 
 			[a_Parent].[Value1]
 		FROM
 			[Child] [ch]

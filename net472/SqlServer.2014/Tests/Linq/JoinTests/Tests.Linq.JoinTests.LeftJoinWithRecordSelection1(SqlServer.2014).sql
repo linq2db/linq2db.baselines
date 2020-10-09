@@ -49,10 +49,10 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[fact_1].[Id],
-	[tagGroup].[Id],
-	[tagGroup].[FactId],
+SELECT 
+	[fact_1].[Id], 
+	[tagGroup].[Id], 
+	[tagGroup].[FactId], 
 	[tagGroup].[Name]
 FROM
 	[Fact] [fact_1]

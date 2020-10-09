@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
+SELECT 
+	[x].[FirstName], 
+	[x].[PersonID], 
+	[x].[LastName], 
+	[x].[MiddleName], 
 	[x].[Gender]
 FROM
 	[Person] [x],
@@ -16,11 +16,11 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
+SELECT 
+	[x].[FirstName], 
+	[x].[PersonID], 
+	[x].[LastName], 
+	[x].[MiddleName], 
 	[x].[Gender]
 FROM
 	[Person] [x],

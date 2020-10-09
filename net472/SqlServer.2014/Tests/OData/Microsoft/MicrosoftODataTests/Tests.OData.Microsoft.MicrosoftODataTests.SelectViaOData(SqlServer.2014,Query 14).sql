@@ -30,9 +30,9 @@ SET     @TypedProperty = N'Engineer'
 DECLARE @TypedProperty_1 NVarChar(4000) -- String
 SET     @TypedProperty_1 = N'QA'
 
-SELECT
-	N'Title',
-	[$it].[Title],
+SELECT 
+	N'Title', 
+	[$it].[Title], 
 	Count(*)
 FROM
 	[odata_person] [$it]

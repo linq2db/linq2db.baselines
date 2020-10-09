@@ -85,12 +85,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[c_1].[Id],
-	[c_1].[FirmId],
-	[a_DocPrepareAssignment].[Id],
-	[a_DocPrepareAssignment].[DirectionId],
-	[a_DocPrepareAssignment].[TargetId],
+SELECT 
+	[c_1].[Id], 
+	[c_1].[FirmId], 
+	[a_DocPrepareAssignment].[Id], 
+	[a_DocPrepareAssignment].[DirectionId], 
+	[a_DocPrepareAssignment].[TargetId], 
 	[a_DocPrepareAssignment].[DateRevoke]
 FROM
 	[Requests] [r]
@@ -103,12 +103,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[c_1].[Id],
-	[c_1].[FirmId],
-	[a_DocPrepareAssignment].[Id],
-	[a_DocPrepareAssignment].[DirectionId],
-	[a_DocPrepareAssignment].[TargetId],
+SELECT 
+	[c_1].[Id], 
+	[c_1].[FirmId], 
+	[a_DocPrepareAssignment].[Id], 
+	[a_DocPrepareAssignment].[DirectionId], 
+	[a_DocPrepareAssignment].[TargetId], 
 	[a_DocPrepareAssignment].[DateRevoke]
 FROM
 	[Requests] [r]

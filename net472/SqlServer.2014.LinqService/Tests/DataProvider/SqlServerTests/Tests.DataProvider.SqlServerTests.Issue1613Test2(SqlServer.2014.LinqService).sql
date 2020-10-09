@@ -79,11 +79,11 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(Date, [selectParam].[dt]) as [c1]
 		FROM
 			[Issue1613] [selectParam]
@@ -94,7 +94,7 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	[r].[dt]
 FROM
 	[Issue1613] [r]

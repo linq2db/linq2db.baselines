@@ -67,7 +67,7 @@ BeforeExecute
 DECLARE @skip Int -- Int32
 SET     @skip = 3
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
@@ -80,7 +80,7 @@ BeforeExecute
 DECLARE @skip Int -- Int32
 SET     @skip = 4
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

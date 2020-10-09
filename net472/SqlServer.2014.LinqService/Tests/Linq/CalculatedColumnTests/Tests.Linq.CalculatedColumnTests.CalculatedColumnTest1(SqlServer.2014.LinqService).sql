@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[i].[PersonID],
-	[i].[FirstName],
-	[i].[LastName],
-	[i].[MiddleName],
-	[i].[Gender],
-	[i].[LastName] + N', ' + [i].[FirstName],
+SELECT 
+	[i].[PersonID], 
+	[i].[FirstName], 
+	[i].[LastName], 
+	[i].[MiddleName], 
+	[i].[Gender], 
+	[i].[LastName] + N', ' + [i].[FirstName], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[Doctor] [d]

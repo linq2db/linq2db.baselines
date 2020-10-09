@@ -26,9 +26,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	N'Title',
-	[selectParam].[Title],
+SELECT 
+	N'Title', 
+	[selectParam].[Title], 
 	Avg([selectParam].[YearsExperience])
 FROM
 	[odata_person] [selectParam]

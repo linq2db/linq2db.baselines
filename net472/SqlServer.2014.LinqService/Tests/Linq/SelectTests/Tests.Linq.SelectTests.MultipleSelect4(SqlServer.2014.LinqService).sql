@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[p3].[PersonID],
+SELECT 
+	[p3].[PersonID], 
 	[p3].[FirstName]
 FROM
 	[Person] [p3]

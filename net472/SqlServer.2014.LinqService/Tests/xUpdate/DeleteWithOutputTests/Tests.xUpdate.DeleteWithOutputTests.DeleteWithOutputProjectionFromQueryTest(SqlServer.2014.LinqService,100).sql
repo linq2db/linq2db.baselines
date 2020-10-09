@@ -231,9 +231,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
-	[s].[Id],
-	[s].[Value],
+SELECT 
+	[s].[Id], 
+	[s].[Value], 
 	[s].[ValueStr]
 FROM
 	[TableWithData] [s]
@@ -245,7 +245,7 @@ BeforeExecute
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id] + 1,
+	[DELETED].[Id] + 1, 
 	[DELETED].[ValueStr] + Convert(VarChar(11), 1)
 FROM
 	[TableWithData] [s]

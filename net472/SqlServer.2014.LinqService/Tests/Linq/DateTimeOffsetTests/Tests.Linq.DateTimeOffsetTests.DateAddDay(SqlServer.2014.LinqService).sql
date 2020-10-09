@@ -480,7 +480,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-SELECT
+SELECT 
 	DateAdd(day, 5, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

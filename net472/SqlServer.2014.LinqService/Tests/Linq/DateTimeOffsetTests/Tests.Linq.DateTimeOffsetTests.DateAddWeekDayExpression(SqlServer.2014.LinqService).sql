@@ -482,7 +482,7 @@ BeforeExecute
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 
-SELECT
+SELECT 
 	DateAdd(weekday, @p1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

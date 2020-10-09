@@ -118,25 +118,25 @@ BeforeExecute
 DECLARE @employeeId Int -- Int32
 SET     @employeeId = 10
 
-SELECT
-	[it].[Id],
-	[it].[DateBegin],
-	[it].[DateEnd],
-	[it].[DirectionId],
-	[it].[Text],
-	[it].[TargetName],
-	[it].[TargetId],
+SELECT 
+	[it].[Id], 
+	[it].[DateBegin], 
+	[it].[DateEnd], 
+	[it].[DirectionId], 
+	[it].[Text], 
+	[it].[TargetName], 
+	[it].[TargetId], 
 	[it].[ParentId]
 FROM
-	(
-		SELECT DISTINCT
-			[t].[Id],
-			[t].[DateBegin],
-			[t].[DateEnd],
-			[t].[DirectionId],
-			[t].[Text],
-			[t].[TargetName],
-			[t].[TargetId],
+	( 
+		SELECT DISTINCT 
+			[t].[Id], 
+			[t].[DateBegin], 
+			[t].[DateEnd], 
+			[t].[DirectionId], 
+			[t].[Text], 
+			[t].[TargetName], 
+			[t].[TargetId], 
 			[t].[ParentId]
 		FROM
 			[Tasks] [t]
@@ -146,7 +146,7 @@ FROM
 	) [it]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[TaskStages] [d]
