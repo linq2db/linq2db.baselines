@@ -9,7 +9,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -19,7 +19,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	DB_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -47,7 +47,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[TestData2016].[dbo].[DropTableTest] [t1]
@@ -60,7 +60,7 @@ DROP TABLE [TestData2016].[dbo].[DropTableTest]
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[TestData2016].[dbo].[DropTableTest] [t1]

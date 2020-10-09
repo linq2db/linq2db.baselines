@@ -25,9 +25,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[t1].[VarBinary],
-	[t1].[VarChar],
+SELECT 
+	[t1].[VarBinary], 
+	[t1].[VarChar], 
 	[t1].[NVarChar]
 FROM
 	[AllTypesCustomMaxLength] [t1]

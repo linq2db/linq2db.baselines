@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT TOP (5)
-			[t1].[ParentID],
+	( 
+		SELECT TOP (5) 
+			[t1].[ParentID], 
 			[t1].[ChildID]
 		FROM
 			[Child] [t1]

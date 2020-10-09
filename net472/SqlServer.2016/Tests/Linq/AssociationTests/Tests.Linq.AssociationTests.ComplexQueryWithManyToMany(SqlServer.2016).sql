@@ -7,13 +7,13 @@ SET     @id1_1 = 3
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 3
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[с].[ChildID]
 FROM
 	[GrandChild] [с]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Parent] [_]

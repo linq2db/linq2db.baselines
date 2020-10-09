@@ -3,7 +3,7 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[a_Parent].[Value1]
 FROM
 	[Parent] [x]

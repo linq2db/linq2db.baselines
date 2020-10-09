@@ -23,7 +23,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[dt]
 FROM
 	[Issue1613] [t1]
@@ -33,7 +33,7 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[r].[dt]
 FROM
 	[Issue1613] [r]

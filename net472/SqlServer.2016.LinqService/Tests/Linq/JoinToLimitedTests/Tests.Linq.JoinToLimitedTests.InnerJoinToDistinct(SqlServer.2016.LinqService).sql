@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[o].[ParentID],
-	[o].[Value1],
-	[t1].[ParentID],
+SELECT 
+	[o].[ParentID], 
+	[o].[Value1], 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Parent] [o]
-		CROSS APPLY (
-			SELECT DISTINCT
-				[cg].[ParentID],
+		CROSS APPLY ( 
+			SELECT DISTINCT 
+				[cg].[ParentID], 
 				[cg].[ChildID]
 			FROM
 				[Child] [cg]

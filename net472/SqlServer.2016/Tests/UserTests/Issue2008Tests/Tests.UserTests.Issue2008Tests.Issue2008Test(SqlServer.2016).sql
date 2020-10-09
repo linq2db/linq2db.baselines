@@ -28,22 +28,22 @@ CREATE TABLE [Table3]
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[rTable1].[Id_1],
-	[rTable1].[Description],
-	[t1].[Id_2],
+SELECT 
+	[rTable1].[Id_1], 
+	[rTable1].[Description], 
+	[t1].[Id_2], 
 	[t1].[Description]
 FROM
 	[Table1] [rTable1]
-		OUTER APPLY (
-			SELECT
-				[r2].[Id_2],
+		OUTER APPLY ( 
+			SELECT 
+				[r2].[Id_2], 
 				[r2].[Description]
 			FROM
 				[Table2] [r2]
 			WHERE
 				EXISTS(
-					SELECT
+					SELECT 
 						*
 					FROM
 						[Table3] [r3]

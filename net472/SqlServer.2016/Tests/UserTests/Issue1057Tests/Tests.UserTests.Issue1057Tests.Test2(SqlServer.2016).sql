@@ -82,9 +82,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[p].[Id],
-	[p].[TargetName],
+SELECT 
+	[p].[Id], 
+	[p].[TargetName], 
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]
@@ -95,9 +95,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[p].[Id],
-	[p].[TargetName],
+SELECT 
+	[p].[Id], 
+	[p].[TargetName], 
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]

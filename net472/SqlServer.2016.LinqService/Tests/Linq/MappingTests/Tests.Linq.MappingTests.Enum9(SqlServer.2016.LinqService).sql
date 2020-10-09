@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[p].[PersonID],
-	[p].[FirstName],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT 
+	[p].[PersonID], 
+	[p].[FirstName], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

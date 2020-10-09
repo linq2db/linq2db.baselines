@@ -225,10 +225,10 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (	VALUES
-		(3,NULL,NULL,3,NULL,113),
-		(4,5,NULL,7,214,NULL),
-		(5,10,315,4,NULL,NULL),
-		(6,NULL,316,NULL,216,116)) [Source]
+		(3, NULL, NULL, 3, NULL, 113),
+		(4, 5, NULL, 7, 214, NULL),
+		(5, 10, 315, 4, NULL, NULL),
+		(6, NULL, 316, NULL, 216, 116)) [Source]
 (
 	[OtherId], 
 	[OtherField1], 
@@ -263,12 +263,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[t1].[Id],
-	[t1].[Field1],
-	[t1].[Field2],
-	[t1].[Field3],
-	[t1].[Field4],
+SELECT 
+	[t1].[Id], 
+	[t1].[Field1], 
+	[t1].[Field2], 
+	[t1].[Field3], 
+	[t1].[Field4], 
 	[t1].[Field5]
 FROM
 	[TestMerge1] [t1]

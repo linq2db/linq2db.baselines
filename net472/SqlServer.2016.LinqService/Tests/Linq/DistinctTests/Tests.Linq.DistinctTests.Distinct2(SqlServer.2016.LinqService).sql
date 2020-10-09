@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	IIF([p].[Value1] IS NULL, [p].[ParentID] % 2, [p].[Value1])
 FROM
 	[Parent] [p]

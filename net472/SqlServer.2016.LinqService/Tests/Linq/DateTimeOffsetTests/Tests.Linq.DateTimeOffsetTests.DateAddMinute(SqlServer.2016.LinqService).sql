@@ -480,7 +480,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	DateAdd(minute, 5, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

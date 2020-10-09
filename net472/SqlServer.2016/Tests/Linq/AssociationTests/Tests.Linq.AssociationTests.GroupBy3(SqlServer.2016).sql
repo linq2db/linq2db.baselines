@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DatePart(year, [a_Types].[DateTimeValue]) as [c1]
 		FROM
 			[Parent] [selectParam]

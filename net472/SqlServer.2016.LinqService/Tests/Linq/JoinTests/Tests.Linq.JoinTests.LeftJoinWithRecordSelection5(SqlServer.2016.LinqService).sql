@@ -131,10 +131,10 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[ft].[Id],
-	[t].[Id],
-	[t].[FactId],
+SELECT 
+	[ft].[Id], 
+	[t].[Id], 
+	[t].[FactId], 
 	[t].[Name]
 FROM
 	[Fact] [ft]

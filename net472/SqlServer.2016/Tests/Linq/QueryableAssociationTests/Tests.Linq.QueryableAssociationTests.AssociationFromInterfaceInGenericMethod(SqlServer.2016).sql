@@ -10,14 +10,14 @@ CREATE TABLE [TreeItem]
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[x].[Id],
+SELECT 
+	[x].[Id], 
 	[x].[ParentId]
 FROM
 	[TreeItem] [x]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[TreeItem] [t1]
@@ -28,15 +28,15 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[key_data_result].[Id],
-	[key_data_result].[ParentId],
-	[detail].[Id],
+SELECT 
+	[key_data_result].[Id], 
+	[key_data_result].[ParentId], 
+	[detail].[Id], 
 	[detail].[ParentId]
 FROM
-	(
-		SELECT DISTINCT
-			[t].[Id],
+	( 
+		SELECT DISTINCT 
+			[t].[Id], 
 			[t].[ParentId]
 		FROM
 			[TreeItem] [t]
@@ -49,8 +49,8 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[t].[Id],
+SELECT 
+	[t].[Id], 
 	[t].[ParentId]
 FROM
 	[TreeItem] [t]

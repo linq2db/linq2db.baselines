@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[Doctor] [d]
 		WHERE
 			[d].[PersonID] = [i].[PersonID]
-	),
-	[i].[PersonID],
-	[i].[FirstName],
-	[i].[LastName],
-	[i].[MiddleName],
-	[i].[Gender],
-	[i].[LastName] + N', ' + [i].[FirstName],
+	), 
+	[i].[PersonID], 
+	[i].[FirstName], 
+	[i].[LastName], 
+	[i].[MiddleName], 
+	[i].[Gender], 
+	[i].[LastName] + N', ' + [i].[FirstName], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[Doctor] [d_1]

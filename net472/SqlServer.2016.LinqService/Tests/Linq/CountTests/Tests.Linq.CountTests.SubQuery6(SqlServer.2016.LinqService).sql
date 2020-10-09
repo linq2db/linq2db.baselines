@@ -3,9 +3,9 @@
 DECLARE @take Int -- Int32
 SET     @take = 5
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[Child] [t1]
@@ -13,8 +13,8 @@ SELECT
 			[p].[ParentID] = [t1].[ParentID]
 	)
 FROM
-	(
-		SELECT TOP (@take)
+	( 
+		SELECT TOP (@take) 
 			[t2].[ParentID]
 		FROM
 			[Parent] [t2]

@@ -3,12 +3,12 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	[t1].[ParentID]
 FROM
 	[Parent] [p_1]
-		OUTER APPLY (
-			SELECT TOP (@take)
+		OUTER APPLY ( 
+			SELECT TOP (@take) 
 				[p].[ParentID]
 			FROM
 				[Child] [p]

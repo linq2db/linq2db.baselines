@@ -5,8 +5,8 @@ SET     @value1_1 = NULL
 DECLARE @value2_1 Int -- Int32
 SET     @value2_1 = NULL
 
-SELECT
-	[t1].[Value1],
+SELECT 
+	[t1].[Value1], 
 	[t1].[Value2]
 FROM
 	(
@@ -20,8 +20,8 @@ SET     @value1_1 = 1
 DECLARE @value2_1 Int -- Int32
 SET     @value2_1 = 2
 
-SELECT
-	[t1].[Value1],
+SELECT 
+	[t1].[Value1], 
 	[t1].[Value2]
 FROM
 	(
@@ -35,8 +35,8 @@ SET     @value1_1 = NULL
 DECLARE @value2_1 Int -- Int32
 SET     @value2_1 = 2
 
-SELECT
-	[t1].[Value1],
+SELECT 
+	[t1].[Value1], 
 	[t1].[Value2]
 FROM
 	(
@@ -50,8 +50,8 @@ SET     @value1_1 = 2
 DECLARE @value2_1 Int -- Int32
 SET     @value2_1 = NULL
 
-SELECT
-	[t1].[Value1],
+SELECT 
+	[t1].[Value1], 
 	[t1].[Value2]
 FROM
 	(
@@ -65,8 +65,8 @@ SET     @value1_1 = 3
 DECLARE @value2_1 Int -- Int32
 SET     @value2_1 = 3
 
-SELECT
-	[t1].[Value1],
+SELECT 
+	[t1].[Value1], 
 	[t1].[Value2]
 FROM
 	(

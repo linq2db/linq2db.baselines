@@ -26,9 +26,9 @@ BeforeExecute
 DECLARE @added DateTime2
 SET     @added = '2017-01-01T00:00:00'
 
-SELECT
-	[a_Person].[personid],
-	[a_Person].[personname],
+SELECT 
+	[a_Person].[personid], 
+	[a_Person].[personname], 
 	Max([f].[added])
 FROM
 	[activity649] [f]

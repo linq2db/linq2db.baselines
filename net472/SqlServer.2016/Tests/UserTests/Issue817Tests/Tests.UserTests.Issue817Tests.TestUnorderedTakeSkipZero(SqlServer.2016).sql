@@ -5,7 +5,7 @@ SET     @skip = 0
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	1
 FROM
 	[Person] [_]

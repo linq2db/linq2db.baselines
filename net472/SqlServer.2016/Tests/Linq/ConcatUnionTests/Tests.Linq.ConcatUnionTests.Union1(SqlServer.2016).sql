@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[ch].[ParentID],
+SELECT 
+	[ch].[ParentID], 
 	[ch].[ChildID]
 FROM
 	[GrandChild] [g_1]
 		INNER JOIN [Child] [ch] ON [g_1].[ChildID] = [ch].[ChildID]
 UNION
-SELECT
-	[ch_1].[ParentID],
+SELECT 
+	[ch_1].[ParentID], 
 	[ch_1].[ChildID]
 FROM
 	[Child] [ch_1]

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT TOP (3)
-	[ch].[ParentID],
+SELECT TOP (3) 
+	[ch].[ParentID], 
 	[ch].[ChildID]
 FROM
 	[Child] [ch]

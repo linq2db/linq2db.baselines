@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 21
 
-SELECT
+SELECT 
 	[x].[GrandChildID]
 FROM
 	[GrandChild] [x]
@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 22
 
-SELECT
+SELECT 
 	[x].[GrandChildID]
 FROM
 	[GrandChild] [x]
@@ -37,7 +37,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
@@ -51,7 +51,7 @@ BeforeExecute
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 31
 
-SELECT
+SELECT 
 	[x].[GrandChildID]
 FROM
 	[GrandChild] [x]
@@ -63,7 +63,7 @@ BeforeExecute
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 32
 
-SELECT
+SELECT 
 	[x].[GrandChildID]
 FROM
 	[GrandChild] [x]
@@ -75,7 +75,7 @@ BeforeExecute
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 33
 
-SELECT
+SELECT 
 	[x].[GrandChildID]
 FROM
 	[GrandChild] [x]

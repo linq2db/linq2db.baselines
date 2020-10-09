@@ -30,7 +30,7 @@ SET     @id = 1001
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [_]

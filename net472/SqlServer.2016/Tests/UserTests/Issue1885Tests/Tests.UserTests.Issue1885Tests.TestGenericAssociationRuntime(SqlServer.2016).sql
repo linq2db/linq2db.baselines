@@ -33,14 +33,14 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[a_Data].[Value_1],
+SELECT 
+	[a_Data].[Value_1], 
 	[a_Data].[is_empty]
 FROM
 	[User] [t]
-		LEFT JOIN (
-			SELECT
-				[x].[Data] as [Value_1],
+		LEFT JOIN ( 
+			SELECT 
+				[x].[Data] as [Value_1], 
 				1 as [is_empty]
 			FROM
 				(

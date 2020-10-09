@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [t1]
@@ -11,7 +11,7 @@ BeforeExecute
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
-SELECT
+SELECT 
 	1
 FROM
 	[Person] [_]

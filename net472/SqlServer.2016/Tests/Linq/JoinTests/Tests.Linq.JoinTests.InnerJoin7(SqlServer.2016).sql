@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[ch].[ParentID] + [p].[ParentID] as [c1]
 		FROM
 			[Child] [ch]

@@ -32,8 +32,8 @@ SET     @take = 1
 DECLARE @Id_1 UniqueIdentifier -- Guid
 SET     @Id_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (@take)
-	[x].[Id],
+SELECT TOP (@take) 
+	[x].[Id], 
 	[x].[Json]
 FROM
 	[TestTable] [x]
@@ -61,8 +61,8 @@ SET     @take = 1
 DECLARE @Id_1 UniqueIdentifier -- Guid
 SET     @Id_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (@take)
-	[x].[Id],
+SELECT TOP (@take) 
+	[x].[Id], 
 	[x].[Json]
 FROM
 	[TestTable] [x]
