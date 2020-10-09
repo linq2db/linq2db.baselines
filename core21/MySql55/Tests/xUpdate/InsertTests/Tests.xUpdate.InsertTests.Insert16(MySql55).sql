@@ -5,7 +5,7 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'Insert16%'
+	`_`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -35,7 +35,7 @@ SELECT
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'Insert16%'
+	`_`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -44,5 +44,5 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'Insert16%'
+	`_`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
