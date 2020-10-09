@@ -480,7 +480,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	DateDiff(hour, [t].[TransactionDate], DateAdd(hour, 100, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]

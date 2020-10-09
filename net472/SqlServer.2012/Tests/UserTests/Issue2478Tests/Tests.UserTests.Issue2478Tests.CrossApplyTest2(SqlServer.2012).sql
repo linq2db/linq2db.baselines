@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[p].[ParentID],
-	[t1].[Count_1],
+SELECT 
+	[p].[ParentID], 
+	[t1].[Count_1], 
 	[t1].[Sum_1]
 FROM
 	[Parent] [p]
-		CROSS APPLY (
-			SELECT
-				Count(*) as [Count_1],
+		CROSS APPLY ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				Sum([t].[ChildID]) as [Sum_1]
 			FROM
 				[Child] [t]
@@ -20,12 +20,12 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [p]
-		CROSS APPLY (
-			SELECT
+		CROSS APPLY ( 
+			SELECT 
 				Count(*) as [c1]
 			FROM
 				[Child] [t]

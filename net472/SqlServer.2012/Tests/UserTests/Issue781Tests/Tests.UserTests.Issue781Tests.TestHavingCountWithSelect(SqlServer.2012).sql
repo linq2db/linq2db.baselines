@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			0 as [c1]
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					N'test' + [a_Patient].[Diagnosis] as [c1]
 				FROM
 					[Person] [selectParam]

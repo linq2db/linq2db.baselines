@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [t1]
@@ -11,7 +11,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -323,7 +323,7 @@ SET     @ReturnFullRow = 0
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [t1]

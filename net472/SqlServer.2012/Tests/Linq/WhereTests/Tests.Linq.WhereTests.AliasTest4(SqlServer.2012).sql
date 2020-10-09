@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[тбл].[ParentID],
+SELECT 
+	[тбл].[ParentID], 
 	[тбл].[Value1]
 FROM
 	[Parent] [тбл]

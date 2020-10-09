@@ -121,7 +121,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

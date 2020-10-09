@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	char(0)
 

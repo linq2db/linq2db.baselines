@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	*
 FROM
 	[Parent] [t]

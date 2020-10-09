@@ -7,6 +7,6 @@ SET     @Value_3 = 1
 DECLARE @Value_4 Int -- Int32
 SET     @Value_4 = 5
 
-SELECT
+SELECT 
 	IIF(@Value_2 < 2, @Value_3, @Value_4)
 

@@ -38,11 +38,11 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t1].[Field1],
-	[t1].[Field11],
-	[t1].[Field2],
-	[t1].[Field21],
+SELECT 
+	[t1].[Field1], 
+	[t1].[Field11], 
+	[t1].[Field2], 
+	[t1].[Field21], 
 	[t1].[Field3]
 FROM
 	[TestEnumTable] [t1]

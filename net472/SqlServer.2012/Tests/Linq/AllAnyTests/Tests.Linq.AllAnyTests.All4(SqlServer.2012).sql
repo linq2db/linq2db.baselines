@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]

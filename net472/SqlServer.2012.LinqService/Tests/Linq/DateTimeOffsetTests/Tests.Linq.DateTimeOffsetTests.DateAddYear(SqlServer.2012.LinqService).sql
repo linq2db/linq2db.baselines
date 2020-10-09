@@ -480,7 +480,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	DateAdd(year, 11, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

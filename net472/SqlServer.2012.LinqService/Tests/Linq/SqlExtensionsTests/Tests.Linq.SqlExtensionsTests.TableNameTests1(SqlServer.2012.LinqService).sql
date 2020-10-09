@@ -30,11 +30,11 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	N'[database].[schema].[table_name]',
-	N'[table_name]',
-	N'table_name',
-	N'[schema].[table_name]',
+SELECT TOP (@take) 
+	N'[database].[schema].[table_name]', 
+	N'[table_name]', 
+	N'table_name', 
+	N'[schema].[table_name]', 
 	N'[database]..[table_name]'
 FROM
 	[sample_table_temp] [t]

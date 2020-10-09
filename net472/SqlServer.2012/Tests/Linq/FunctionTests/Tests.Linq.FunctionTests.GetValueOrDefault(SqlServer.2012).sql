@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	[p].[Value1]
 FROM
 	[Parent] [p]

@@ -43,7 +43,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [_]

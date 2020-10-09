@@ -5,7 +5,7 @@ SET     @take = 1
 DECLARE @dateTime DateTime2
 SET     @dateTime = '1992-01-11T01:11:21.1000000'
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[t].[DateTimeValue]
 FROM
 	[LinqDataTypes] [t]
@@ -19,7 +19,7 @@ SET     @take = 1
 DECLARE @dateTime DateTime2
 SET     @dateTime = '1993-01-11T01:11:21.1000000'
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[t].[DateTimeValue]
 FROM
 	[LinqDataTypes] [t]

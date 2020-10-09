@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012 (asynchronously)
 
-SELECT
+SELECT 
 	1
 FROM
 	[FakeClass] [t1]

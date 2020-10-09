@@ -2,17 +2,17 @@
 -- SqlServer.2012 (asynchronously)
 
 MERGE INTO [LinqDataTypes] [Target]
-USING (
-	SELECT
-		[t].[ID],
-		[t].[MoneyValue],
-		[t].[DateTimeValue],
-		[t].[DateTimeValue2],
-		[t].[BoolValue],
-		[t].[GuidValue],
-		[t].[SmallIntValue],
-		[t].[IntValue],
-		[t].[BigIntValue],
+USING ( 
+	SELECT 
+		[t].[ID], 
+		[t].[MoneyValue], 
+		[t].[DateTimeValue], 
+		[t].[DateTimeValue2], 
+		[t].[BoolValue], 
+		[t].[GuidValue], 
+		[t].[SmallIntValue], 
+		[t].[IntValue], 
+		[t].[BigIntValue], 
 		[t].[StringValue]
 	FROM
 		[LinqDataTypes] [t]

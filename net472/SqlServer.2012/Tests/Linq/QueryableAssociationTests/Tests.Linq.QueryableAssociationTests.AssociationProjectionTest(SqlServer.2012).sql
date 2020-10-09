@@ -61,16 +61,16 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[a_Other].[StrValue],
-	[a_Other].[StrValue] + N'_A_C',
+SELECT 
+	[a_Other].[StrValue], 
+	[a_Other].[StrValue] + N'_A_C', 
 	[a_Other].[Id]
 FROM
 	[SomeEntity] [e]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[se].[StrValue],
-				[se].[StrValue] + N'_A' as [StrValue_1],
+		OUTER APPLY ( 
+			SELECT TOP (@take) 
+				[se].[StrValue], 
+				[se].[StrValue] + N'_A' as [StrValue_1], 
 				[se].[Id]
 			FROM
 				[SomeOtherEntity] [se]

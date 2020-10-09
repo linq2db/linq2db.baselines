@@ -486,7 +486,7 @@ SET     @skip = 0
 DECLARE @take Int -- Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -503,7 +503,7 @@ SET     @skip = 0
 DECLARE @take Int -- Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]

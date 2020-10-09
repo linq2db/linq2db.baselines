@@ -76,14 +76,14 @@ AS RETURN
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[x].[Id],
+SELECT 
+	[x].[Id], 
 	[x].[OwnerStr]
 FROM
 	[SomeTable] [x] WITH (NOLOCK)
 WHERE
 	[x].[Id] = 123 AND EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			dbo.fn_SomeFunction([x].[Id]) [t1]
@@ -92,13 +92,13 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[lw_SomeEntity].[Id],
-	[detail].[Id],
+SELECT 
+	[lw_SomeEntity].[Id], 
+	[detail].[Id], 
 	[detail].[StrValue]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[Id]
 		FROM
 			[SomeTable] [t1] WITH (NOLOCK)
@@ -108,8 +108,8 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[OwnerStr]
 FROM
 	[SomeTable] [t1] WITH (NOLOCK)

@@ -7,7 +7,7 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]

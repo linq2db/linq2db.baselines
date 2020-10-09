@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t].[ID],
+SELECT 
+	[t].[ID], 
 	[t].[ID1]
 FROM
 	[DropTableTestID] [t]
@@ -44,8 +44,8 @@ DROP TABLE [DropTableTestID]
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t1].[ID],
+SELECT 
+	[t1].[ID], 
 	[t1].[ID1]
 FROM
 	[DropTableTestID] [t1]

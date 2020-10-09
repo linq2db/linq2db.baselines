@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[ch].[c1] + N'2' as [c1]
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					IIF([selectParam].[ParentID] > 2, IIF([selectParam].[ParentID] > 3, N'1', N'2'), N'3') as [c1]
 				FROM
 					[Child] [selectParam]

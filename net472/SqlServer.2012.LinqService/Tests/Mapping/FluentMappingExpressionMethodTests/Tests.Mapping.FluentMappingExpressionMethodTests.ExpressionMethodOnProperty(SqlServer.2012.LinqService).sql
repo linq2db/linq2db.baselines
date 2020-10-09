@@ -370,7 +370,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InstanceClass] [t]

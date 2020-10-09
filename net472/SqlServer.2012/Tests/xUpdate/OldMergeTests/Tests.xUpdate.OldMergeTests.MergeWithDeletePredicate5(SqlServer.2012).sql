@@ -2,16 +2,16 @@
 -- SqlServer.2012
 
 MERGE INTO [Child] [Target]
-USING (
-	SELECT
-		[t].[ParentID],
+USING ( 
+	SELECT 
+		[t].[ParentID], 
 		[t].[ChildID]
 	FROM
 		[Child] [t]
 			LEFT JOIN [Parent] [a_Parent] ON [t].[ParentID] = [a_Parent].[ParentID]
 	WHERE
 		[a_Parent].[ParentID] = 2 AND EXISTS(
-			SELECT
+			SELECT 
 				*
 			FROM
 				[GrandChild] [g_1]
@@ -39,13 +39,13 @@ VALUES
 	[Source].[ChildID]
 )
 WHEN NOT MATCHED BY SOURCE AND EXISTS(
-	SELECT
+	SELECT 
 		*
 	FROM
 		[Parent] [a_Parent_1]
 	WHERE
 		[a_Parent_1].[ParentID] = 2 AND EXISTS(
-			SELECT
+			SELECT 
 				*
 			FROM
 				[GrandChild] [g_2]

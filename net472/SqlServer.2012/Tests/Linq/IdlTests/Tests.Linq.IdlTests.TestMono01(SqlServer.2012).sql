@@ -3,12 +3,12 @@
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'
 
-SELECT
+SELECT 
 	[y].[FirstName]
 FROM
 	[Person] [y]
 UNION ALL
-SELECT
+SELECT 
 	[x].[FirstName]
 FROM
 	[Person] [x]

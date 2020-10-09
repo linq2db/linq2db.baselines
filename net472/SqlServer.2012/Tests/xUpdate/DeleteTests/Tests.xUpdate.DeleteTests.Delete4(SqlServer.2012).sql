@@ -42,7 +42,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[GrandChild] [gc]
@@ -62,7 +62,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[GrandChild] [gc]

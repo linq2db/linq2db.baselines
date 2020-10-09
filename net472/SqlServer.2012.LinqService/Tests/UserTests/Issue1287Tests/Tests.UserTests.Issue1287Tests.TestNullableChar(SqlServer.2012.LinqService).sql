@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	[_].[charDataType]
 FROM
 	[AllTypes] [_]

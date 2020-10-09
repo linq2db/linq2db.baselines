@@ -3,7 +3,7 @@
 DECLARE @p1 Variant -- Object
 SET     @p1 = NULL
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(
@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @p1 Variant -- Object
 SET     @p1 = NULL
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(
@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @p1 Variant -- Object
 SET     @p1 = NULL
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(
@@ -39,7 +39,7 @@ BeforeExecute
 DECLARE @p1 Variant -- Object
 SET     @p1 = NULL
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(
@@ -51,7 +51,7 @@ BeforeExecute
 DECLARE @p1 Variant -- Object
 SET     @p1 = NULL
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
@@ -10,13 +10,13 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[x_1].[Key_1],
+SELECT 
+	[x_1].[Key_1], 
 	Sum([x_1].[MatchScore])
 FROM
-	(
-		SELECT DISTINCT
-			[x].[Value1] as [Key_1],
+	( 
+		SELECT DISTINCT 
+			[x].[Value1] as [Key_1], 
 			4 as [MatchScore]
 		FROM
 			[Parent] [x]

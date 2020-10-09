@@ -14,7 +14,7 @@ UPDATE
 	[p]
 SET
 	[p].[ParentID] = (
-		SELECT
+		SELECT 
 			[c_1].[ParentID]
 		FROM
 			[Child] [c_1]
