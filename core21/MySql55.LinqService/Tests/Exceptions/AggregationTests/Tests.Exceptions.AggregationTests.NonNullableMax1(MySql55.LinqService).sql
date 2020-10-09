@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`_`.`ParentID`)
 FROM
 	`Parent` `_`

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`x`.`FirstName`,
-	`x`.`PersonID`,
-	`x`.`LastName`,
-	`x`.`MiddleName`,
+SELECT 
+	`x`.`FirstName`, 
+	`x`.`PersonID`, 
+	`x`.`LastName`, 
+	`x`.`MiddleName`, 
 	`x`.`Gender`
 FROM
 	`Person` `x`

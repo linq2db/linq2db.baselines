@@ -66,8 +66,8 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`r`.`ID`,
+SELECT 
+	`r`.`ID`, 
 	`r`.`StringValue`
 FROM
 	`LinqDataTypes` `r`
@@ -79,9 +79,9 @@ ORDER BY
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`r`.`ID`,
-	`r`.`IntValue`,
+SELECT 
+	`r`.`ID`, 
+	`r`.`IntValue`, 
 	`r`.`StringValue`
 FROM
 	`LinqDataTypes` `r`

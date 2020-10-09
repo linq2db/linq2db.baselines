@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	TIMESTAMPDIFF(hour, `t`.`DateTimeValue`, Date_Add(`t`.`DateTimeValue`, Interval 100 Hour))
 FROM
 	`LinqDataTypes` `t`

@@ -34,8 +34,8 @@ CREATE TABLE `stMain`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`v`.`inId`,
+SELECT 
+	`v`.`inId`, 
 	`r`.`inIdState`
 FROM
 	`stVersions` `v`

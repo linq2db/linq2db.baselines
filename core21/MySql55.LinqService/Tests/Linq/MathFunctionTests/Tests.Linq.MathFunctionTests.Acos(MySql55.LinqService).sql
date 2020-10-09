@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Acos(`p`.`MoneyValue` / 15) * 15) as `c1`
 		FROM
 			`LinqDataTypes` `p`

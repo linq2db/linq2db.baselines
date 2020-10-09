@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	Cast(Floor(`t`.`MoneyValue`) as SIGNED)
 FROM
 	`LinqDataTypes` `t`

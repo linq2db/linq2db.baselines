@@ -11,7 +11,7 @@ CREATE TABLE `User`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`u`.`city`
 FROM
 	`User` `u`
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`u`.`street`
 FROM
 	`User` `u`

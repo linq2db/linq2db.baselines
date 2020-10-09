@@ -82,9 +82,9 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`p`.`Id`,
-	`p`.`TargetName`,
+SELECT 
+	`p`.`Id`, 
+	`p`.`TargetName`, 
 	`a_ActualStage`.`Id`
 FROM
 	`Task` `p`
@@ -95,9 +95,9 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`p`.`Id`,
-	`p`.`TargetName`,
+SELECT 
+	`p`.`Id`, 
+	`p`.`TargetName`, 
 	`a_ActualStage`.`Id`
 FROM
 	`Task` `p`

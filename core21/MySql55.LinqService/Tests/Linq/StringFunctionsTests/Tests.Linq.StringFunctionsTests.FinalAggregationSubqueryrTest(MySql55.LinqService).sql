@@ -29,15 +29,15 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			COUNT(DISTINCT `t1`.`Value1`)
 		FROM
 			`SampleClass` `t1`
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			GROUP_CONCAT(`t2`.`Value1` SEPARATOR ' -> ')
 		FROM
 			`SampleClass` `t2`

@@ -51,7 +51,7 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Parent` `_`
@@ -70,7 +70,7 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Parent` `_`

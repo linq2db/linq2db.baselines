@@ -28,7 +28,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Child` `c_1`
@@ -55,7 +55,7 @@ BeforeExecute
 DECLARE @ChildID Int32
 SET     @ChildID = 1002
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Child` `c_1`

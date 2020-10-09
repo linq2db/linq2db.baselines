@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`key_data_result`.`ParentID`,
-	`key_data_result`.`Value1`,
-	`_gjd_c`.`ParentID`,
+SELECT 
+	`key_data_result`.`ParentID`, 
+	`key_data_result`.`Value1`, 
+	`_gjd_c`.`ParentID`, 
 	`_gjd_c`.`ChildID`
 FROM
-	(
-		SELECT DISTINCT
-			`p`.`ParentID`,
+	( 
+		SELECT DISTINCT 
+			`p`.`ParentID`, 
 			`p`.`Value1`
 		FROM
 			`Parent` `p`
@@ -21,8 +21,8 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	`p`.`Value1`
 FROM
 	`Parent` `p`

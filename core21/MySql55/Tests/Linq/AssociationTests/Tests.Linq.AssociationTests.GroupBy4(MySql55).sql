@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Extract(year from `selectParam`.`DateTimeValue`) as `c1`
 		FROM
 			`LinqDataTypes` `selectParam`

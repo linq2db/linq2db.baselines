@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`p`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Cast(`t`.`ID` as UNSIGNED) as CHAR(3)) as `c1`
 		FROM
 			`LinqDataTypes` `t`

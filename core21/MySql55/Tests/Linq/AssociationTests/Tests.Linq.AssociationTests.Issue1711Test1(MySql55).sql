@@ -20,13 +20,13 @@ CREATE TABLE `Relationship1711`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`Id`
 FROM
 	`Entity1711` `t`
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`Relationship1711` `t1`

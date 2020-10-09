@@ -75,7 +75,7 @@ UPDATE
 	`billing_TempReading` `t1`
 SET
 	`t1`.`DevReadingTypeId` = (
-		SELECT
+		SELECT 
 			`w`.`Id`
 		FROM
 			`billing_DevReadingType` `w`
@@ -84,7 +84,7 @@ SET
 		LIMIT @take
 	),
 	`t1`.`Responsibility` = (
-		SELECT
+		SELECT 
 			`w_1`.`Responsibility`
 		FROM
 			`billing_DevReadingType` `w_1`

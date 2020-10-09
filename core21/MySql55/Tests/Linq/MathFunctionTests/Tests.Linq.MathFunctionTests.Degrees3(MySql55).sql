@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Degrees(Cast(Floor(`p`.`MoneyValue`) as SIGNED)) as `c1`
 		FROM
 			`LinqDataTypes` `p`

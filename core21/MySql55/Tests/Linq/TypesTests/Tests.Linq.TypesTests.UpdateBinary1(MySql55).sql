@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`BinaryValue`
 FROM
 	`LinqDataTypes` `t`

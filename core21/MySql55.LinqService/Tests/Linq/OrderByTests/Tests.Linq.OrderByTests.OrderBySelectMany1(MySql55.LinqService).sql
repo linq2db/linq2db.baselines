@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	`c_1`.`ChildID`
 FROM
 	`Parent` `p`,

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`ID`
 FROM
 	`LinqDataTypes` `t1`

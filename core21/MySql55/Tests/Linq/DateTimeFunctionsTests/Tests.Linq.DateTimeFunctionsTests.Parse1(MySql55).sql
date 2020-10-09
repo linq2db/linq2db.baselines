@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`DateTimeValue`
 FROM
 	`LinqDataTypes` `t`

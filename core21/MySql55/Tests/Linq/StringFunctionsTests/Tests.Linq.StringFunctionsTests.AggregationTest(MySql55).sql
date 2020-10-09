@@ -29,8 +29,8 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	Max(`t1`.`Value1`),
+SELECT 
+	Max(`t1`.`Value1`), 
 	GROUP_CONCAT(`t1`.`Value1` SEPARATOR ' -> ')
 FROM
 	`SampleClass` `t1`

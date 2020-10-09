@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Parent` `t1`

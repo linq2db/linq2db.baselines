@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	Count(*),
+SELECT 
+	Count(*), 
 	Max(`t1`.`ChildID`)
 FROM
 	`Child` `t1`

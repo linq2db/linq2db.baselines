@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	GROUP_CONCAT(`t1`.`Value1` ORDER BY `t1`.`Value1`, `t1`.`Value3` DESC SEPARATOR ' -> ')
 FROM
 	`SampleClass` `t1`

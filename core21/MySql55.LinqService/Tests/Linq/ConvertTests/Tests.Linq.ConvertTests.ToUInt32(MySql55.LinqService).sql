@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`p`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor(`t`.`MoneyValue`) as UNSIGNED) as `c1`
 		FROM
 			`LinqDataTypes` `t`

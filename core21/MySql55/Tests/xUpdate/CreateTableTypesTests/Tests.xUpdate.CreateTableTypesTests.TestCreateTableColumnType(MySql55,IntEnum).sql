@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
+SELECT 
+	`t1`.`Id`, 
 	`t1`.`IntEnum`
 FROM
 	`CreateTableTypes` `t1`

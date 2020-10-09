@@ -11,9 +11,9 @@ CREATE TABLE `T1351Model`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`_`.`ID`,
-	`_`.`TestField`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`TestField`, 
 	`_`.`TestNullable`
 FROM
 	`T1351Model` `_`
@@ -23,9 +23,9 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`_`.`ID`,
-	`_`.`TestField`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`TestField`, 
 	`_`.`TestNullable`
 FROM
 	`T1351Model` `_`

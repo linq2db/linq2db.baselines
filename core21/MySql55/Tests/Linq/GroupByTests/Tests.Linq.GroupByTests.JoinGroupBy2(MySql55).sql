@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`g_1`.`ParentID`
 FROM
 	`Child` `c_1`

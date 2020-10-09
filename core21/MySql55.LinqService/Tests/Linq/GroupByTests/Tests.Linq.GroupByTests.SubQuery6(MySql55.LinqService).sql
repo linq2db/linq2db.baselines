@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`ParentID`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			`ch`.`ParentID` + 1 as `ParentID`
 		FROM
 			`Child` `ch`

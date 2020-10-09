@@ -3,7 +3,7 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	DATABASE()
 FROM
 	`LinqDataTypes` `_`
@@ -12,7 +12,7 @@ LIMIT @take
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`ID`
 FROM
 	`testdata`.`LinqDataTypes` `t1`

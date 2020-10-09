@@ -46,7 +46,7 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPerson` `t1`
@@ -56,11 +56,11 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	`t1`.`FirstName`,
-	`t1`.`PersonID`,
-	`t1`.`LastName`,
-	`t1`.`MiddleName`,
+SELECT 
+	`t1`.`FirstName`, 
+	`t1`.`PersonID`, 
+	`t1`.`LastName`, 
+	`t1`.`MiddleName`, 
 	`t1`.`Gender`
 FROM
 	`xxPerson` `t1`
@@ -80,7 +80,7 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPerson` `t1`

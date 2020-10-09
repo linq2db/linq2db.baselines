@@ -8,7 +8,7 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	DATABASE()
 FROM
 	`LinqDataTypes` `_`
@@ -37,7 +37,7 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`ID`
 FROM
 	`testdata`.`DropTableTest` `t1`
@@ -50,7 +50,7 @@ DROP TABLE `testdata`.`DropTableTest`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t1`.`ID`
 FROM
 	`testdata`.`DropTableTest` `t1`

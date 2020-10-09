@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`Child` `c_1`

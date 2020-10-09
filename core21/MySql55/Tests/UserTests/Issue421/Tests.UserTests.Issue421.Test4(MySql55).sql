@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`_`.`Id`,
+SELECT 
+	`_`.`Id`, 
 	`_`.`BlobValue`
 FROM
 	`BlobClass19` `_`
@@ -38,8 +38,8 @@ LIMIT 1
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`_`.`Id`,
+SELECT 
+	`_`.`Id`, 
 	`_`.`BlobValue`
 FROM
 	`BlobClass19` `_`

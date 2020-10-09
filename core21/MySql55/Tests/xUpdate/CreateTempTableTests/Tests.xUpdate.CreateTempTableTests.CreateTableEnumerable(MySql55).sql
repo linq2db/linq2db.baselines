@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS `TempTable`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`p`.`ParentID`
 FROM
 	`Parent` `p`
@@ -38,7 +38,7 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`ID`
 FROM
 	`Parent` `p`

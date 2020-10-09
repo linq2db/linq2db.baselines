@@ -26,9 +26,9 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`entity`.`ID`,
-	`entity`.`BigIntValue`,
+SELECT 
+	`entity`.`ID`, 
+	`entity`.`BigIntValue`, 
 	`entity`.`IntValue`
 FROM
 	`LinqDataTypes` `entity`

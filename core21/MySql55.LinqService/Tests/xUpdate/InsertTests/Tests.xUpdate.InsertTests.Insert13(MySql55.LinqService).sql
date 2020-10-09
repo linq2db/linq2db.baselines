@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`t`.`PersonID`)
 FROM
 	`Person` `t`

@@ -24,8 +24,8 @@ CREATE TABLE `Books`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`author`.`Id`,
+SELECT 
+	`author`.`Id`, 
 	`author`.`Name`
 FROM
 	`Authors` `author`

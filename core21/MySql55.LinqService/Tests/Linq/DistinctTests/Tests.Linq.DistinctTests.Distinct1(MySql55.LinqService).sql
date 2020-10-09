@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	`ch`.`ParentID`
 FROM
 	`Child` `ch`

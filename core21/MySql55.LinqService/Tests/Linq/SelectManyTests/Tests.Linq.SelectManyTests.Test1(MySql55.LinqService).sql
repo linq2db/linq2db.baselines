@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`p1`.`PersonID`,
+SELECT 
+	`p1`.`PersonID`, 
 	`p2`.`FirstName`
 FROM
 	`Person` `p1`,

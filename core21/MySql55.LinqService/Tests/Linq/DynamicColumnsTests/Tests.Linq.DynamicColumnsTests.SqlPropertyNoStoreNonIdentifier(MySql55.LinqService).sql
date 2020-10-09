@@ -24,7 +24,7 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`d`.`Not Identifier`
 FROM
 	`DynamicTable` `d`

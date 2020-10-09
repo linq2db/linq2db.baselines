@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	Sum(`c2`.`ChildID`)
 FROM
 	`Child` `c1_1`

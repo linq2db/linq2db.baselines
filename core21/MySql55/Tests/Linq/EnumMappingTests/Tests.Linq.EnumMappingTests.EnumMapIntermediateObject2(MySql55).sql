@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`LinqDataTypes` `r`

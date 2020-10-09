@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			`GrandChild` `t1`

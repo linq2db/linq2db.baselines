@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`a_Patient`.`Diagnosis`,
+SELECT 
+	`a_Patient`.`Diagnosis`, 
 	Count(*)
 FROM
 	`Person` `t1`

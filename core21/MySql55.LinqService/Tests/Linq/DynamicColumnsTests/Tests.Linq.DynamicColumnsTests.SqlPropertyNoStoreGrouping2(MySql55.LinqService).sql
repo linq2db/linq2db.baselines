@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`t1`.`FirstName`,
-	`t1`.`LastName`,
+SELECT 
+	`t1`.`FirstName`, 
+	`t1`.`LastName`, 
 	Count(*)
 FROM
 	`Person` `t1`

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`ch`.`ParentID`,
+SELECT 
+	`ch`.`ParentID`, 
 	`ch`.`ChildID`
 FROM
 	`Child` `ch`
@@ -11,8 +11,8 @@ LIMIT 2
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`ch`.`ParentID`,
+SELECT 
+	`ch`.`ParentID`, 
 	`ch`.`ChildID`
 FROM
 	`Child` `ch`
@@ -21,8 +21,8 @@ LIMIT 3
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`ch`.`ParentID`,
+SELECT 
+	`ch`.`ParentID`, 
 	`ch`.`ChildID`
 FROM
 	`Child` `ch`
@@ -31,8 +31,8 @@ LIMIT 2
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`ch`.`ParentID`,
+SELECT 
+	`ch`.`ParentID`, 
 	`ch`.`ChildID`
 FROM
 	`Child` `ch`

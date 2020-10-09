@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`pp`.`Value_1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN `p`.`MoneyValue` * 2 = Round(`p`.`MoneyValue` * 2, 2) AND `p`.`MoneyValue` <> Round(`p`.`MoneyValue`, 2)
 					THEN Round(`p`.`MoneyValue` / 2, 2) * 2

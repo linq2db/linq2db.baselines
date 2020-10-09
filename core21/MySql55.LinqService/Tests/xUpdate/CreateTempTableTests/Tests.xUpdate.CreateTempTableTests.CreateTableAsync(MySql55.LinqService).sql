@@ -18,7 +18,7 @@ INSERT INTO `TempTable`
 (
 	`ID`
 )
-SELECT
+SELECT 
 	`p`.`ParentID`
 FROM
 	`Parent` `p`
@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`ID`
 FROM
 	`Parent` `p`

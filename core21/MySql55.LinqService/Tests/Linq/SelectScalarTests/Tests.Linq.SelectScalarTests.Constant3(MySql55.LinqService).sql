@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	1 as `c1`
 

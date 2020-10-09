@@ -32,7 +32,7 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Parent` `p`
@@ -55,7 +55,7 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Parent` `p`

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	(`p`.`FirstName` IS NULL OR Char_Length(`p`.`FirstName`) = 0)
 FROM
 	`Person` `p`

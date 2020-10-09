@@ -51,14 +51,14 @@ SET     @ID_1 = 1001
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	`t`.`ID`,
-	`t`.`MoneyValue`,
-	`t`.`DateTimeValue`,
-	`t`.`BoolValue`,
-	`t`.`GuidValue`,
-	`t`.`BinaryValue`,
-	`t`.`SmallIntValue`,
+SELECT 
+	`t`.`ID`, 
+	`t`.`MoneyValue`, 
+	`t`.`DateTimeValue`, 
+	`t`.`BoolValue`, 
+	`t`.`GuidValue`, 
+	`t`.`BinaryValue`, 
+	`t`.`SmallIntValue`, 
 	`t`.`StringValue`
 FROM
 	`LinqDataTypes` `t`

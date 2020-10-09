@@ -28,10 +28,10 @@ CREATE TABLE `Lookup`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
-	`t1`.`AssociatedObjectId`,
-	`t1`.`AssociationTypeId`,
+SELECT 
+	`t1`.`Id`, 
+	`t1`.`AssociatedObjectId`, 
+	`t1`.`AssociationTypeId`, 
 	`c_1`.`Id`
 FROM
 	`Resource` `t1`

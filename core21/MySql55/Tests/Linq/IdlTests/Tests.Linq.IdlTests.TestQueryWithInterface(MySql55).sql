@@ -3,8 +3,8 @@
 DECLARE @id Int32
 SET     @id = 5
 
-SELECT
-	`x`.`PersonID`,
+SELECT 
+	`x`.`PersonID`, 
 	`x`.`FirstName`
 FROM
 	`Person` `x`
@@ -16,8 +16,8 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 5
 
-SELECT
-	`x`.`PersonID`,
+SELECT 
+	`x`.`PersonID`, 
 	`x`.`FirstName`
 FROM
 	`Person` `x`
@@ -29,8 +29,8 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 5
 
-SELECT
-	`x`.`PersonID`,
+SELECT 
+	`x`.`PersonID`, 
 	`x`.`FirstName`
 FROM
 	`Person` `x`

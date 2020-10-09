@@ -76,9 +76,9 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`v`.`Value1`,
-	`v`.`Value2`,
+SELECT 
+	`v`.`Value1`, 
+	`v`.`Value2`, 
 	`v`.`Value3`
 FROM
 	`UpdatedEntities` `v`

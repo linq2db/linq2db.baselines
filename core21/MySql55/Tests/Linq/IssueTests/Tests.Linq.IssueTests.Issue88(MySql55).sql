@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
+SELECT 
+	`_`.`FirstName`, 
+	`_`.`PersonID`, 
+	`_`.`LastName`, 
+	`_`.`MiddleName`, 
 	`_`.`Gender`
 FROM
 	`Person` `_`
@@ -15,11 +15,11 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
+SELECT 
+	`_`.`FirstName`, 
+	`_`.`PersonID`, 
+	`_`.`LastName`, 
+	`_`.`MiddleName`, 
 	`_`.`Gender`
 FROM
 	`Person` `_`
@@ -31,11 +31,11 @@ BeforeExecute
 DECLARE @gender_1 String -- StringFixedLength
 SET     @gender_1 = 'M'
 
-SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
+SELECT 
+	`_`.`FirstName`, 
+	`_`.`PersonID`, 
+	`_`.`LastName`, 
+	`_`.`MiddleName`, 
 	`_`.`Gender`
 FROM
 	`Person` `_`
@@ -47,11 +47,11 @@ BeforeExecute
 DECLARE @gender_1 String -- StringFixedLength
 SET     @gender_1 = 'M'
 
-SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
+SELECT 
+	`_`.`FirstName`, 
+	`_`.`PersonID`, 
+	`_`.`LastName`, 
+	`_`.`MiddleName`, 
 	`_`.`Gender`
 FROM
 	`Person` `_`

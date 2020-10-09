@@ -31,11 +31,11 @@ SET     @FirstName_1 = 'InsertColumnFilter'
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`x`.`FirstName`,
-	`x`.`PersonID`,
-	`x`.`LastName`,
-	`x`.`MiddleName`,
+SELECT 
+	`x`.`FirstName`, 
+	`x`.`PersonID`, 
+	`x`.`LastName`, 
+	`x`.`MiddleName`, 
 	`x`.`Gender`
 FROM
 	`Person` `x`

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Atan2(`p`.`MoneyValue` / 15, 0) * 15) as `c1`
 		FROM
 			`LinqDataTypes` `p`

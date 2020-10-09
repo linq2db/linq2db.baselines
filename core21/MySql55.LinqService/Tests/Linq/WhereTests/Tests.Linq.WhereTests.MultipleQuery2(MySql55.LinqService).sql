@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`p`.`FirstName`,
-	`p`.`PersonID`,
-	`p`.`LastName`,
-	`p`.`MiddleName`,
+SELECT 
+	`p`.`FirstName`, 
+	`p`.`PersonID`, 
+	`p`.`LastName`, 
+	`p`.`MiddleName`, 
 	`p`.`Gender`
 FROM
 	`Person` `p`
@@ -17,11 +17,11 @@ BeforeExecute
 DECLARE @str VarChar(3) -- String
 SET     @str = '123'
 
-SELECT
-	`p`.`FirstName`,
-	`p`.`PersonID`,
-	`p`.`LastName`,
-	`p`.`MiddleName`,
+SELECT 
+	`p`.`FirstName`, 
+	`p`.`PersonID`, 
+	`p`.`LastName`, 
+	`p`.`MiddleName`, 
 	`p`.`Gender`
 FROM
 	`Person` `p`

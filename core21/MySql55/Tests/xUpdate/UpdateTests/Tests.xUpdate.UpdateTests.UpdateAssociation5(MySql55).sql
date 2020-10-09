@@ -6,7 +6,7 @@ UPDATE
 		INNER JOIN `Parent` `a_Table1` ON `a_Table1`.`ParentID` = `t1`.`ID`
 SET
 	`t1`.`BoolValue` = (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`Parent` `x`
