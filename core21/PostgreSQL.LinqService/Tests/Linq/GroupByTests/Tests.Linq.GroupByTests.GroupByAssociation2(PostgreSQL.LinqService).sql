@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	g_1."Value1"
 FROM
-	(
-		SELECT
-			Count(*) as c1,
-			"a_Parent"."ParentID",
+	( 
+		SELECT 
+			Count(*) as c1, 
+			"a_Parent"."ParentID", 
 			"a_Parent"."Value1"
 		FROM
 			"GrandChild" t1

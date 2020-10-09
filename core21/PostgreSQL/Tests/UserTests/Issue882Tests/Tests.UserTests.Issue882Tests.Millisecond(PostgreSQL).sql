@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Cast(To_Char(t."DateTimeValue", 'MS') as int) % 7
 FROM
 	"LinqDataTypes" t

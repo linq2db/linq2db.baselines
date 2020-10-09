@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Max(t1."ID")
 FROM
 	"AllTypes" t1
@@ -292,8 +292,8 @@ BeforeExecute
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
-SELECT
-	t1."ID",
+SELECT 
+	t1."ID", 
 	t1."char20DataType"
 FROM
 	"AllTypes" t1

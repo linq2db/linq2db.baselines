@@ -3,8 +3,8 @@
 DECLARE @skip Integer -- Int32
 SET     @skip = 3
 
-SELECT
-	t1."ParentID",
+SELECT 
+	t1."ParentID", 
 	t1."ChildID"
 FROM
 	"Child" t1

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t2.c1
 FROM
 	"Parent" cp
-		INNER JOIN LATERAL (
-			SELECT
+		INNER JOIN LATERAL ( 
+			SELECT 
 				t1."ParentID" + cp."ParentID" as c1
 			FROM
 				"Child" t1

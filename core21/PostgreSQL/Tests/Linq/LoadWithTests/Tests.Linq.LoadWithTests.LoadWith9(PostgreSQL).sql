@@ -3,9 +3,9 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	c_1."ParentID",
-	c_1."ChildID",
+SELECT 
+	c_1."ParentID", 
+	c_1."ChildID", 
 	c_1."GrandChildID"
 FROM
 	"GrandChild" p

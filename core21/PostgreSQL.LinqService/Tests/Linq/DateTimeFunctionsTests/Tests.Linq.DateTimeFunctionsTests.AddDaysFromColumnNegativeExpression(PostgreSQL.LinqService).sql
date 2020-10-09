@@ -49,7 +49,7 @@ SET     @part2 = 4
 DECLARE @p1 Timestamp -- DateTime
 SET     @p1 = '2018-01-02'::date
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"LinqDataTypes" t

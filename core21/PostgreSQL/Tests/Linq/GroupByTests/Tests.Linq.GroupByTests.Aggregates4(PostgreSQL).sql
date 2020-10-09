@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "keyParam"
 		WHERE
 			t1."ParentID" = "keyParam"."ParentID" AND "keyParam"."ChildID" > 30
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Sum("keyParam_1"."ChildID")
 		FROM
 			"Child" "keyParam_1"

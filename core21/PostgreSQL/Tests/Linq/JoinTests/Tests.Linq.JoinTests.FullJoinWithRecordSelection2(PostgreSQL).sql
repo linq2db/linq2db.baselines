@@ -50,10 +50,10 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	fact_1."Id",
-	"leftTag"."Id",
-	"leftTag"."FactId",
+SELECT 
+	fact_1."Id", 
+	"leftTag"."Id", 
+	"leftTag"."FactId", 
 	"leftTag"."Name"
 FROM
 	"Tag" "leftTag"

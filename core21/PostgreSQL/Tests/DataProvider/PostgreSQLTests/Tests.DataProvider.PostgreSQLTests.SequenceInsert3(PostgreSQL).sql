@@ -27,8 +27,8 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	t1."ID",
+SELECT 
+	t1."ID", 
 	t1."Value"
 FROM
 	"SequenceTest3" t1
@@ -49,7 +49,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"SequenceTest3" t1

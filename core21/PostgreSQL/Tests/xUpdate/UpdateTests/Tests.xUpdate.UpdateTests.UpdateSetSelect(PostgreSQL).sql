@@ -13,7 +13,7 @@ UPDATE
 	"Parent"
 SET
 	"ParentID" = (
-		SELECT
+		SELECT 
 			c_1."ParentID"
 		FROM
 			"Child" c_1

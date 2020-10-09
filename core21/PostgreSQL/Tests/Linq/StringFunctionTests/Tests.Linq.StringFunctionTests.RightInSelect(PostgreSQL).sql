@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Substring(p."FirstName", Length(p."FirstName") - 2, 3)
 FROM
 	"Person" p

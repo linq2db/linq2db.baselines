@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			0 as c1
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					'test' || "a_Patient"."Diagnosis" as "Key_1"
 				FROM
 					"Person" "selectParam"

@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1.cc,
+SELECT 
+	t1.cc, 
 	t1.bb
 FROM
 	aa t1

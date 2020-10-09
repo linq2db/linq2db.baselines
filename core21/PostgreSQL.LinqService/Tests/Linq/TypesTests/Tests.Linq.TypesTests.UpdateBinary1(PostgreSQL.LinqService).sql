@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t."BinaryValue"
 FROM
 	"LinqDataTypes" t

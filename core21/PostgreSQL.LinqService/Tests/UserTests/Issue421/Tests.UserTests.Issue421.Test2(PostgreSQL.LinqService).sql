@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
+SELECT 
+	t1."Id", 
 	t1."BlobValue"
 FROM
 	"BlobClass" t1
@@ -48,8 +48,8 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
+SELECT 
+	t1."Id", 
 	t1."BlobValue"
 FROM
 	"BlobClass" t1

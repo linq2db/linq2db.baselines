@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	x."ParentID",
-	x."ChildID",
+SELECT 
+	x."ParentID", 
+	x."ChildID", 
 	x."GrandChildID"
 FROM
 	"GrandChild" x
@@ -13,9 +13,9 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	x."ParentID",
-	x."ChildID",
+SELECT 
+	x."ParentID", 
+	x."ChildID", 
 	x."GrandChildID"
 FROM
 	"GrandChild" x

@@ -148,7 +148,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	v
 FROM
 	"SampleClass" t

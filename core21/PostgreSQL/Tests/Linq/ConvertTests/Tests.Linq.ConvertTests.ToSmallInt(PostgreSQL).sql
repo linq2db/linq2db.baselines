@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Cast(Floor(t."MoneyValue") as SmallInt)
 FROM
 	"LinqDataTypes" t

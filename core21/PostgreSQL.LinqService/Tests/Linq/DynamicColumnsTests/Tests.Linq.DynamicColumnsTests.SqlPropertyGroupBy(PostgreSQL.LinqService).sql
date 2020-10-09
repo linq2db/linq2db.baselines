@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."FirstName",
+SELECT 
+	t1."FirstName", 
 	Count(*)
 FROM
 	"Person" t1

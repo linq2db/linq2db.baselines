@@ -152,16 +152,16 @@ SET     @take = 1
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT
-	t."Id",
-	t1.idx,
+SELECT 
+	t."Id", 
+	t1.idx, 
 	t1.value_1
 FROM
 	"SampleClass" t
-		LEFT JOIN LATERAL (
-			SELECT
-				Cast(e.idx as VarChar(20)) || ' - ' || e.value as c1,
-				e.idx,
+		LEFT JOIN LATERAL ( 
+			SELECT 
+				Cast(e.idx as VarChar(20)) || ' - ' || e.value as c1, 
+				e.idx, 
 				e.value as value_1
 			FROM
 				UNNEST(t."StrArray") WITH ORDINALITY e(value, idx)
