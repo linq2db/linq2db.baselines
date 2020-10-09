@@ -29,8 +29,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	Max(t1."Value4"),
+SELECT 
+	Max(t1."Value4"), 
 	STRING_AGG(t1."Value4", ' -> ')
 FROM
 	"SampleClass" t1

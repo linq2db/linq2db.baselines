@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	p.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Cast(t."ID" as SmallInt) as VarChar(3)) as c1
 		FROM
 			"LinqDataTypes" t

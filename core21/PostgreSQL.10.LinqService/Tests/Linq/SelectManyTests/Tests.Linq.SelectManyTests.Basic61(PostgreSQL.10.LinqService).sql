@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t2.c1
 FROM
 	"Parent" cp
-		INNER JOIN (
-			SELECT
-				t1."ParentID" + 1 as c1,
+		INNER JOIN ( 
+			SELECT 
+				t1."ParentID" + 1 as c1, 
 				t1."ParentID"
 			FROM
 				"Child" t1

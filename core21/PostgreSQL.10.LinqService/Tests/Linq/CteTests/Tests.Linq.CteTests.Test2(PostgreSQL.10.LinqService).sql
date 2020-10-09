@@ -4,7 +4,7 @@
 WITH "CTE1_" ("ParentID")
 AS
 (
-	SELECT
+	SELECT 
 		c_1."ParentID"
 	FROM
 		"Child" c_1
@@ -14,7 +14,7 @@ AS
 "LAST0" ("ParentID")
 AS
 (
-	SELECT
+	SELECT 
 		c4."ParentID"
 	FROM
 		"Child" c4
@@ -24,13 +24,13 @@ AS
 "CTE2_" ("ParentID")
 AS
 (
-	SELECT
+	SELECT 
 		p."ParentID"
 	FROM
 		"Parent" p
 	WHERE
 		EXISTS(
-			SELECT
+			SELECT 
 				*
 			FROM
 				"CTE1_" c_2
@@ -41,14 +41,14 @@ AS
 "CTE3_" ("ParentID", "Value1")
 AS
 (
-	SELECT
-		p_1."ParentID",
+	SELECT 
+		p_1."ParentID", 
 		p_1."Value1"
 	FROM
 		"Parent" p_1
 	WHERE
 		EXISTS(
-			SELECT
+			SELECT 
 				*
 			FROM
 				"CTE2_" c_3
@@ -56,8 +56,8 @@ AS
 				c_3."ParentID" = p_1."ParentID"
 		)
 )
-SELECT
-	c3."ParentID",
+SELECT 
+	c3."ParentID", 
 	c3."Value1"
 FROM
 	"CTE2_" p_2
@@ -69,8 +69,8 @@ FROM
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	p_1."ParentID",
+SELECT 
+	p_1."ParentID", 
 	p_1."Value1"
 FROM
 	"Parent" p_2
@@ -80,13 +80,13 @@ FROM
 		INNER JOIN "Child" c4 ON c4."ParentID" = p_1."ParentID"
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Parent" p_3
 		WHERE
 			EXISTS(
-				SELECT
+				SELECT 
 					*
 				FROM
 					"Child" c_2
@@ -97,7 +97,7 @@ WHERE
 	) AND
 	c4."ParentID" % 2 = 0 AND
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" c_3
@@ -106,7 +106,7 @@ WHERE
 	) AND
 	c_1."ParentID" > 1 AND
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" c_4

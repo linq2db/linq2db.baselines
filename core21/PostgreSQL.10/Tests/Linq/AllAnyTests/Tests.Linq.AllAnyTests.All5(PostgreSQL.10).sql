@@ -3,9 +3,9 @@
 DECLARE @n Integer -- Int32
 SET     @n = 3
 
-SELECT
+SELECT 
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" c_1

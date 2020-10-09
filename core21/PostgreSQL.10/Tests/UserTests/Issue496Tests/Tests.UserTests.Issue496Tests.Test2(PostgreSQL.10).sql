@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	key_data_result."ParentID",
-	detail."ChildID",
+SELECT 
+	key_data_result."ParentID", 
+	detail."ChildID", 
 	detail."ParentID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			t1."ParentID"
 		FROM
 			"Parent" t1
@@ -17,7 +17,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t1."ParentID"
 FROM
 	"Parent" t1

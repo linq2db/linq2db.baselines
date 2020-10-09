@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	"a_Patient"."PersonID" IS NOT NULL
 FROM
 	"Person" p

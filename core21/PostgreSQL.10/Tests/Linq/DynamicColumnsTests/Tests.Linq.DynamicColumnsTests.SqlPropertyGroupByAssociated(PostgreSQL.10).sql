@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	"a_Patient"."Diagnosis",
+SELECT 
+	"a_Patient"."Diagnosis", 
 	Count(*)
 FROM
 	"Person" t1

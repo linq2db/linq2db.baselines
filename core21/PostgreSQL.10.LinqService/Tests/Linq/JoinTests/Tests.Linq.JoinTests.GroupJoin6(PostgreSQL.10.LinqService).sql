@@ -3,13 +3,13 @@
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 1
 
-SELECT
-	key_data_result."ParentID",
-	gjd_c."ParentID",
+SELECT 
+	key_data_result."ParentID", 
+	gjd_c."ParentID", 
 	gjd_c."ChildID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			p."ParentID"
 		FROM
 			"Parent" p
@@ -21,8 +21,8 @@ FROM
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	p."ParentID",
+SELECT 
+	p."ParentID", 
 	p."Value1"
 FROM
 	"Parent" p

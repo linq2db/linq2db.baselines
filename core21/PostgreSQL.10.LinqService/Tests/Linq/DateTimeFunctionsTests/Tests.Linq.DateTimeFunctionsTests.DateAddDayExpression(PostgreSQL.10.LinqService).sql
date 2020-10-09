@@ -3,7 +3,7 @@
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 5
 
-SELECT
+SELECT 
 	t."DateTimeValue" + :p1 * Interval '1 Day'
 FROM
 	"LinqDataTypes" t

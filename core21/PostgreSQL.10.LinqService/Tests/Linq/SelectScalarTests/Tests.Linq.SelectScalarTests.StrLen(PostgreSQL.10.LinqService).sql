@@ -3,6 +3,6 @@
 DECLARE @Length_1 Integer -- Int32
 SET     @Length_1 = 1
 
-SELECT
+SELECT 
 	:Length_1
 

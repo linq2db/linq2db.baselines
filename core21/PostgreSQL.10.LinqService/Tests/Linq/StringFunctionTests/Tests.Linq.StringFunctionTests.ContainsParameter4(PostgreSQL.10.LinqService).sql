@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	p_1."FirstName",
-	p_1."PersonID",
-	p_1."LastName",
-	p_1."MiddleName",
+SELECT 
+	p_1."FirstName", 
+	p_1."PersonID", 
+	p_1."LastName", 
+	p_1."MiddleName", 
 	p_1."Gender"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN p."FirstName" LIKE '%Jo%'
 					THEN True
 				ELSE False
-			END as "Field1",
-			p."FirstName",
-			p."PersonID",
-			p."LastName",
-			p."MiddleName",
+			END as "Field1", 
+			p."FirstName", 
+			p."PersonID", 
+			p."LastName", 
+			p."MiddleName", 
 			p."Gender"
 		FROM
 			"Person" p

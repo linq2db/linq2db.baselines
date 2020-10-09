@@ -24,8 +24,8 @@ CREATE TABLE "Books"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	author."Id",
+SELECT 
+	author."Id", 
 	author."Name"
 FROM
 	"Authors" author

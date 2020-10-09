@@ -16,7 +16,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	t1."ID"
 FROM
 	test_schema.testserialidentity t1

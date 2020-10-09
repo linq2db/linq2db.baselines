@@ -33,9 +33,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."ID",
-	t1."Array",
+SELECT 
+	t1."ID", 
+	t1."Array", 
 	t1."Binary"
 FROM
 	"Issue1303" t1
@@ -46,9 +46,9 @@ LIMIT 2
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."ID",
-	t1."Array",
+SELECT 
+	t1."ID", 
+	t1."Array", 
 	t1."Binary"
 FROM
 	"Issue1303" t1
@@ -59,9 +59,9 @@ LIMIT 2
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."ID",
-	t1."Array",
+SELECT 
+	t1."ID", 
+	t1."Array", 
 	t1."Binary"
 FROM
 	"Issue1303" t1

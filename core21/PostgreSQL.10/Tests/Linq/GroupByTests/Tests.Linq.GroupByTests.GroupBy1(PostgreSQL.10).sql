@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t3."ParentID"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			t2."ParentID"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					t1."ParentID"
 				FROM
 					"Child" t1

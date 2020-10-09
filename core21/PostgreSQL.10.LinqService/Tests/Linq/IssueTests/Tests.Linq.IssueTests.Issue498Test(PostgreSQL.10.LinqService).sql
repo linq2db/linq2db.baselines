@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	x."ParentID",
+SELECT 
+	x."ParentID", 
 	Count(*)
 FROM
 	"Child" x

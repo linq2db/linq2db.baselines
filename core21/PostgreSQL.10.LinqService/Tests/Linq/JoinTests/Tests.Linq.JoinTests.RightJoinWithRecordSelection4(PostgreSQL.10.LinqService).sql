@@ -49,10 +49,10 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	f."Id",
-	ft."Id",
-	ft."FactId",
+SELECT 
+	f."Id", 
+	ft."Id", 
+	ft."FactId", 
 	ft."Name"
 FROM
 	"Tag" ft

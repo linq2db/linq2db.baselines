@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Max(CASE
 		WHEN c_1."ChildID" > 20 THEN 1
 		ELSE 0

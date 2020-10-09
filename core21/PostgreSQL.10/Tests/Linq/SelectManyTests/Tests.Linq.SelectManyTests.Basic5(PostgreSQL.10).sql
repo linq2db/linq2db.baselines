@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	c_1."ParentID",
-	c_1."ChildID",
+SELECT 
+	c_1."ParentID", 
+	c_1."ChildID", 
 	c_1."GrandChildID"
 FROM
 	"Child" cp

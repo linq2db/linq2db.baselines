@@ -33,7 +33,7 @@ BeforeExecute
 WITH "CTE_1" ("ParentID")
 AS
 (
-	SELECT
+	SELECT 
 		c_1."ParentID"
 	FROM
 		"CteChild" c_1
@@ -52,8 +52,8 @@ WHERE
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	c_1."ChildID",
+SELECT 
+	c_1."ChildID", 
 	c_1."ParentID"
 FROM
 	"CteChild" c_1
@@ -63,7 +63,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	c_1."ChildID"
 FROM
 	"CteChild" c_1

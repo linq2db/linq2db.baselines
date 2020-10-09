@@ -3,7 +3,7 @@
 DECLARE @p1 Integer -- Int32
 SET     @p1 = -1
 
-SELECT
+SELECT 
 	t."DateTimeValue" + :p1 * Interval '1 Month' * 3
 FROM
 	"LinqDataTypes" t

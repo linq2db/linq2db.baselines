@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	d.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast((Cast(Cast(Floor(Extract(year from t."DateTimeValue")) as int) as VarChar(11)) || '-02-24 00:00:00') as TimeStamp) as c1
 		FROM
 			"LinqDataTypes" t

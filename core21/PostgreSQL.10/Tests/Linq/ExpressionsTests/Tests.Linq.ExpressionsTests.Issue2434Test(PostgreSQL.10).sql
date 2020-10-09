@@ -11,9 +11,9 @@ CREATE TABLE "Issue2434Table"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
-	t1."FirstName",
+SELECT 
+	t1."Id", 
+	t1."FirstName", 
 	t1."LastName"
 FROM
 	"Issue2434Table" t1

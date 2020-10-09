@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	Count(*),
+SELECT 
+	Count(*), 
 	Max(t1."ChildID")
 FROM
 	"Child" t1

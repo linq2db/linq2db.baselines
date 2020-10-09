@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
-	[t1].[FirstName],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[PersonID], 
+	[t1].[FirstName], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -13,7 +13,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	p."PersonID"
 FROM
 	"Person" p

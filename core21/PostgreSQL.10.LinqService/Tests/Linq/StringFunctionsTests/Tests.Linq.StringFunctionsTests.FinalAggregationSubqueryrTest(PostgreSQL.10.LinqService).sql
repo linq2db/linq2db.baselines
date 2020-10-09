@@ -29,15 +29,15 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			COUNT(DISTINCT t1."Value1")
 		FROM
 			"SampleClass" t1
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			STRING_AGG(t2."Value1", ' -> ')
 		FROM
 			"SampleClass" t2

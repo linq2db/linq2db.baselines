@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	"a_Parent1"."ParentID",
+SELECT 
+	"a_Parent1"."ParentID", 
 	"a_Parent1"."Value1"
 FROM
 	"Child" t1

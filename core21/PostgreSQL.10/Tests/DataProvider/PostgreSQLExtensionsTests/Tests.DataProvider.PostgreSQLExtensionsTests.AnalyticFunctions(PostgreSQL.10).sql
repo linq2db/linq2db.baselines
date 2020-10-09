@@ -148,13 +148,13 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t."Id",
-	ARRAY_AGG(v.*) OVER(PARTITION BY (t."Id" / 3), (t."Id" / 2)),
-	ARRAY_AGG(ALL v.*) OVER(PARTITION BY (t."Id" / 3)),
-	ARRAY_AGG(v.*) FILTER (WHERE (v.* LIKE 'V0%')) OVER(PARTITION BY (t."Id" / 3)),
-	ARRAY_AGG(ALL v.*) FILTER (WHERE (v.* LIKE 'V0%')) OVER(PARTITION BY (t."Id" / 3)),
-	ARRAY_AGG(ALL v.*) FILTER (WHERE (v.* LIKE 'V0%')) OVER(PARTITION BY (t."Id" / 3) ORDER BY (t."Id" - 1), t."Id"),
+SELECT 
+	t."Id", 
+	ARRAY_AGG(v.*) OVER(PARTITION BY (t."Id" / 3), (t."Id" / 2)), 
+	ARRAY_AGG(ALL v.*) OVER(PARTITION BY (t."Id" / 3)), 
+	ARRAY_AGG(v.*) FILTER (WHERE (v.* LIKE 'V0%')) OVER(PARTITION BY (t."Id" / 3)), 
+	ARRAY_AGG(ALL v.*) FILTER (WHERE (v.* LIKE 'V0%')) OVER(PARTITION BY (t."Id" / 3)), 
+	ARRAY_AGG(ALL v.*) FILTER (WHERE (v.* LIKE 'V0%')) OVER(PARTITION BY (t."Id" / 3) ORDER BY (t."Id" - 1), t."Id"), 
 	ROW_NUMBER() OVER(PARTITION BY (t."Id" / 3) ORDER BY t."Id")
 FROM
 	"SampleClass" t

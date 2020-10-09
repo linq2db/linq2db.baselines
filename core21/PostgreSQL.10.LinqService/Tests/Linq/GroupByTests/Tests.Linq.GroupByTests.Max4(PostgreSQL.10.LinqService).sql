@@ -3,13 +3,13 @@
 DECLARE @Date_1 Timestamp -- DateTime
 SET     @Date_1 = '2020-02-29'::date
 
-SELECT
+SELECT 
 	t1."MoneyValue"
 FROM
 	"LinqDataTypes" t1
-		INNER JOIN (
-			SELECT
-				sub."ID",
+		INNER JOIN ( 
+			SELECT 
+				sub."ID", 
 				Max(sub."DateTimeValue") as "DateTimeValue"
 			FROM
 				"LinqDataTypes" sub

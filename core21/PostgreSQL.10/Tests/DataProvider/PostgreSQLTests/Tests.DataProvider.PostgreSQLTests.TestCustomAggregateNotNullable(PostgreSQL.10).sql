@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	Avg(Coalesce(t1."doubleDataType", 0)),
+SELECT 
+	Avg(Coalesce(t1."doubleDataType", 0)), 
 	test_avg(Coalesce(t1."doubleDataType", 0))
 FROM
 	"AllTypes" t1

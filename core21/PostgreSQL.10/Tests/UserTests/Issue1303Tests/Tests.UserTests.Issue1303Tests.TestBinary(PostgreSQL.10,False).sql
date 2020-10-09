@@ -35,9 +35,9 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	t1."ID",
-	t1."Array",
+SELECT 
+	t1."ID", 
+	t1."Array", 
 	t1."Binary"
 FROM
 	"Issue1303" t1
@@ -52,9 +52,9 @@ SET     @Array_2 = E'\\x010203'
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	t1."ID",
-	t1."Array",
+SELECT 
+	t1."ID", 
+	t1."Array", 
 	t1."Binary"
 FROM
 	"Issue1303" t1
@@ -69,9 +69,9 @@ SET     @Binary_2 = E'\\x0405'
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	t1."ID",
-	t1."Array",
+SELECT 
+	t1."ID", 
+	t1."Array", 
 	t1."Binary"
 FROM
 	"Issue1303" t1
