@@ -3,9 +3,9 @@
 DECLARE @take Int -- Int32
 SET     @take = 1000
 
-SELECT TOP (@take)
-	[a_Patient].[Diagnosis],
-	[a_Patient].[PersonID],
+SELECT TOP (@take) 
+	[a_Patient].[Diagnosis], 
+	[a_Patient].[PersonID], 
 	Avg([selectParam].[PersonID])
 FROM
 	[Person] [selectParam]

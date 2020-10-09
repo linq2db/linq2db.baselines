@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[t2].[Key_1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			IIF((
-				SELECT
+				SELECT 
 					Avg([c_1].[ParentID])
 				FROM
 					[Child] [c_1]
@@ -18,7 +18,7 @@ FROM
 			[Parent] [p]
 		WHERE
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					[Child] [t1]

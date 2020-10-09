@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	DateAdd(weekday, 1, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

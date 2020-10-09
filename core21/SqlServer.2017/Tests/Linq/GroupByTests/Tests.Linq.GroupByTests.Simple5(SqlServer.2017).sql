@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[t2].[ParentID]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[t1].[ParentID]
 		FROM
 			[GrandChild] [t1]

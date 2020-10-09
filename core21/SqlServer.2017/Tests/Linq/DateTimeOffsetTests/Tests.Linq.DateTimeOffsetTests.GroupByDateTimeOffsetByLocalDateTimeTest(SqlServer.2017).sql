@@ -48,8 +48,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t1].[TransactionDate],
+SELECT 
+	[t1].[TransactionDate], 
 	Count(*)
 FROM
 	[Transactions] [t1]

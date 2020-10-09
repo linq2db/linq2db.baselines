@@ -15,10 +15,10 @@ CREATE TABLE [CustomerBase]
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[cb].[Id],
-	[cb].[Name],
-	[cb].[ContactEmail],
+SELECT 
+	[cb].[Id], 
+	[cb].[Name], 
+	[cb].[ContactEmail], 
 	IIF([cb].[Enabled] IS NULL, 0, [cb].[Enabled])
 FROM
 	[CustomerBase] [cb]

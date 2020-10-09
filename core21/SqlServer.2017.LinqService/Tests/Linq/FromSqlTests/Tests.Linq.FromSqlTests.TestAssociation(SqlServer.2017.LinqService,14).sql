@@ -52,10 +52,10 @@ BeforeExecute
 DECLARE @idFilter Int -- Int32
 SET     @idFilter = 1
 
-SELECT
-	[t].[id],
-	[a_AssociatedOne].[id],
-	[a_AssociatedOne].[parent_id],
+SELECT 
+	[t].[id], 
+	[a_AssociatedOne].[id], 
+	[a_AssociatedOne].[parent_id], 
 	[a_AssociatedOne].[value]
 FROM
 	[sample_class] [t]

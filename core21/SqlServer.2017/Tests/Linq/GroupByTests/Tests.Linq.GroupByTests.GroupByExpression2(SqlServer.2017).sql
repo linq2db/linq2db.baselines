@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Avg([t1].[ParentID])
 FROM
-	(
-		SELECT
-			[selectParam].[ChildID] as [c1],
+	( 
+		SELECT 
+			[selectParam].[ChildID] as [c1], 
 			[selectParam].[ParentID]
 		FROM
 			[Child] [selectParam]

@@ -50,10 +50,10 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[f].[Id],
-	[ft].[Id],
-	[ft].[FactId],
+SELECT 
+	[f].[Id], 
+	[ft].[Id], 
+	[ft].[FactId], 
 	[ft].[Name]
 FROM
 	[Tag] [ft]

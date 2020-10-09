@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	DateAdd(month, [t].[SmallIntValue], [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

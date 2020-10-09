@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[keyParam].[ParentID],
+SELECT 
+	[keyParam].[ParentID], 
 	[keyParam].[ChildID]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[t1].[ParentID]
 		FROM
 			[Child] [t1]

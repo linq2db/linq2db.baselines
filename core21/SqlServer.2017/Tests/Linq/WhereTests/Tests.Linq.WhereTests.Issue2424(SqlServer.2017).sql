@@ -25,8 +25,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -38,8 +38,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -51,8 +51,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -64,8 +64,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -77,8 +77,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -90,8 +90,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -103,8 +103,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -116,8 +116,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -129,8 +129,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -142,8 +142,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -155,8 +155,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -168,8 +168,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -181,8 +181,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -194,8 +194,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -207,8 +207,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -220,8 +220,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -233,8 +233,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -246,8 +246,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -259,8 +259,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -272,8 +272,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -285,8 +285,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -298,8 +298,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[i].[Id],
+SELECT TOP (@take) 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]

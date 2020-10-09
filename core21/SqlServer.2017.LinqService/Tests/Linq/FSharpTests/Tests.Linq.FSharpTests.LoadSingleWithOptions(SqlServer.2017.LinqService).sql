@@ -5,11 +5,11 @@ SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
-SELECT TOP (@take)
-	[p].[PersonID],
-	[p].[FirstName],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT TOP (@take) 
+	[p].[PersonID], 
+	[p].[FirstName], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

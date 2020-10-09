@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	DatePart(day, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

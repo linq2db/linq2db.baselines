@@ -48,12 +48,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DatePart(weekday, [selectParam].[TransactionDate]) - 1 as [c1]
 		FROM
 			[Transactions] [selectParam]

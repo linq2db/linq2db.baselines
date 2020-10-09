@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	Convert(Date, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

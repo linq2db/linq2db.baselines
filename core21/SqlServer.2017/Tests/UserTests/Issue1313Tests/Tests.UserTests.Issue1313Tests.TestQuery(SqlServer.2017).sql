@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[row_1].[Value]
 FROM
 	[ValueItem] [row_1]

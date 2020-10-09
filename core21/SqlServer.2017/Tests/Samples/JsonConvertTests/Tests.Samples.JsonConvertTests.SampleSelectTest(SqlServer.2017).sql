@@ -28,8 +28,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t].[Id],
+SELECT 
+	[t].[Id], 
 	[t].[Data]
 FROM
 	[SampleClass] [t]

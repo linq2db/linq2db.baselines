@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[y_4].[ParentID],
-	[y_4].[Value1],
-	[y_2].[ParentID],
-	[y_2].[Value1],
-	[yid].[ParentID],
-	[yid].[Value1],
-	[y].[ParentID],
-	[y].[Value1],
-	[y_1].[ParentID],
-	[y_1].[Value1],
-	[y_3].[ParentID],
+SELECT 
+	[y_4].[ParentID], 
+	[y_4].[Value1], 
+	[y_2].[ParentID], 
+	[y_2].[Value1], 
+	[yid].[ParentID], 
+	[yid].[Value1], 
+	[y].[ParentID], 
+	[y].[Value1], 
+	[y_1].[ParentID], 
+	[y_1].[Value1], 
+	[y_3].[ParentID], 
 	[y_3].[Value1]
 FROM
 	[Parent] [y_4]

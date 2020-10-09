@@ -124,9 +124,9 @@ BeforeExecute
 DECLARE @ServiceDate_1 DateTime2
 SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
 
-SELECT
-	[t].[BookingID],
-	[t].[ServiceDate],
+SELECT 
+	[t].[BookingID], 
+	[t].[ServiceDate], 
 	[t].[Value]
 FROM
 	[Booking] [t]
@@ -143,19 +143,19 @@ SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
 DECLARE @take BigInt -- Int64
 SET     @take = 12
 
-SELECT
-	[q].[c1],
-	[q].[RowNumber],
-	[q].[BookingID],
-	[q].[ServiceDate],
+SELECT 
+	[q].[c1], 
+	[q].[RowNumber], 
+	[q].[BookingID], 
+	[q].[ServiceDate], 
 	[q].[Value_1]
 FROM
-	(
-		SELECT
-			ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC) as [RowNumber],
-			COUNT(*) OVER() as [c1],
-			[t].[BookingID],
-			[t].[ServiceDate],
+	( 
+		SELECT 
+			ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC) as [RowNumber], 
+			COUNT(*) OVER() as [c1], 
+			[t].[BookingID], 
+			[t].[ServiceDate], 
 			[t].[Value] as [Value_1]
 		FROM
 			[Booking] [t]
@@ -183,26 +183,26 @@ WITH [CTE_1]
 )
 AS
 (
-	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
-		[t].[ServiceDate],
+	SELECT 
+		[t].[BookingID], 
+		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC), 
+		[t].[ServiceDate], 
 		[t].[Value]
 	FROM
 		[Booking] [t]
 	WHERE
 		[t].[ServiceDate] > @ServiceDate_1
 )
-SELECT
-	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
+SELECT 
+	[q].[RowNumber], 
+	[q].[Cursor], 
+	[q].[ServiceDate], 
 	[q].[Value]
 FROM
 	[CTE_1] [q]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[CTE_1] [c_1]
@@ -229,26 +229,26 @@ WITH [CTE_1]
 )
 AS
 (
-	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
-		[t].[ServiceDate],
+	SELECT 
+		[t].[BookingID], 
+		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC), 
+		[t].[ServiceDate], 
 		[t].[Value]
 	FROM
 		[Booking] [t]
 	WHERE
 		[t].[ServiceDate] > @ServiceDate_1
 )
-SELECT
-	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
+SELECT 
+	[q].[RowNumber], 
+	[q].[Cursor], 
+	[q].[ServiceDate], 
 	[q].[Value]
 FROM
 	[CTE_1] [q]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[CTE_1] [c_1]
@@ -275,26 +275,26 @@ WITH [CTE_1]
 )
 AS
 (
-	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
-		[t].[ServiceDate],
+	SELECT 
+		[t].[BookingID], 
+		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC), 
+		[t].[ServiceDate], 
 		[t].[Value]
 	FROM
 		[Booking] [t]
 	WHERE
 		[t].[ServiceDate] > @ServiceDate_1
 )
-SELECT
-	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
+SELECT 
+	[q].[RowNumber], 
+	[q].[Cursor], 
+	[q].[ServiceDate], 
 	[q].[Value]
 FROM
 	[CTE_1] [q]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[CTE_1] [c_1]
@@ -321,26 +321,26 @@ WITH [CTE_1]
 )
 AS
 (
-	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
-		[t].[ServiceDate],
+	SELECT 
+		[t].[BookingID], 
+		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC), 
+		[t].[ServiceDate], 
 		[t].[Value]
 	FROM
 		[Booking] [t]
 	WHERE
 		[t].[ServiceDate] > @ServiceDate_1
 )
-SELECT
-	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
+SELECT 
+	[q].[RowNumber], 
+	[q].[Cursor], 
+	[q].[ServiceDate], 
 	[q].[Value]
 FROM
 	[CTE_1] [q]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[CTE_1] [c_1]
@@ -367,26 +367,26 @@ WITH [CTE_1]
 )
 AS
 (
-	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
-		[t].[ServiceDate],
+	SELECT 
+		[t].[BookingID], 
+		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC), 
+		[t].[ServiceDate], 
 		[t].[Value]
 	FROM
 		[Booking] [t]
 	WHERE
 		[t].[ServiceDate] > @ServiceDate_1
 )
-SELECT
-	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
+SELECT 
+	[q].[RowNumber], 
+	[q].[Cursor], 
+	[q].[ServiceDate], 
 	[q].[Value]
 FROM
 	[CTE_1] [q]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[CTE_1] [c_1]
@@ -413,26 +413,26 @@ WITH [CTE_1]
 )
 AS
 (
-	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
-		[t].[ServiceDate],
+	SELECT 
+		[t].[BookingID], 
+		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC), 
+		[t].[ServiceDate], 
 		[t].[Value]
 	FROM
 		[Booking] [t]
 	WHERE
 		[t].[ServiceDate] > @ServiceDate_1
 )
-SELECT
-	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
+SELECT 
+	[q].[RowNumber], 
+	[q].[Cursor], 
+	[q].[ServiceDate], 
 	[q].[Value]
 FROM
 	[CTE_1] [q]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[CTE_1] [c_1]

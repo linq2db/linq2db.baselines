@@ -68,13 +68,13 @@ SET     @take = 1
 DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
-SELECT TOP (@take)
-	[x_1].[Id],
+SELECT TOP (@take) 
+	[x_1].[Id], 
 	[a_FirstUserWithMultipleParameters].[Id]
 FROM
 	[UserGroup] [x_1]
-		OUTER APPLY (
-			SELECT TOP (@take_1)
+		OUTER APPLY ( 
+			SELECT TOP (@take_1) 
 				[x].[Id]
 			FROM
 				[User] [x]

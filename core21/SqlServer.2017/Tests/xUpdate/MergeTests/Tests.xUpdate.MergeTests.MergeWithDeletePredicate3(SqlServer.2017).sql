@@ -29,11 +29,11 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT TOP (@take) 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -63,8 +63,8 @@ SET     @take = 1
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
-SELECT TOP (@take)
-	[_].[PersonID],
+SELECT TOP (@take) 
+	[_].[PersonID], 
 	[_].[Diagnosis]
 FROM
 	[Patient] [_]
@@ -79,12 +79,12 @@ DECLARE @PersonID_2 Int -- Int32
 SET     @PersonID_2 = 1
 
 MERGE INTO [Person] [Target]
-USING (
-	SELECT
-		[t].[PersonID] as [ID],
-		[t].[FirstName],
-		[t].[LastName],
-		[t].[MiddleName],
+USING ( 
+	SELECT 
+		[t].[PersonID] as [ID], 
+		[t].[FirstName], 
+		[t].[LastName], 
+		[t].[MiddleName], 
 		[t].[Gender]
 	FROM
 		[Person] [t]
@@ -125,7 +125,7 @@ VALUES
 	[Source].[Gender]
 )
 WHEN NOT MATCHED BY SOURCE AND EXISTS(
-	SELECT
+	SELECT 
 		*
 	FROM
 		[Patient] [a_Patient_1]

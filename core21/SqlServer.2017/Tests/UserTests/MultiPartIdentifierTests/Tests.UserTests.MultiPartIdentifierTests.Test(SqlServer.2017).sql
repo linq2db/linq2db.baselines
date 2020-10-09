@@ -46,7 +46,7 @@ CREATE TABLE [Table5]
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[t11].[Field1]
 FROM
 	[Table5] [t1]

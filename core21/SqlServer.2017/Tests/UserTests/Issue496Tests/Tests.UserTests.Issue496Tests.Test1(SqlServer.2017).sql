@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[c_1].[ChildID],
+SELECT 
+	[c_1].[ChildID], 
 	[c_1].[ParentID]
 FROM
 	[Parent] [_]
@@ -21,8 +21,8 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
@@ -38,8 +38,8 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
@@ -47,9 +47,9 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -57,14 +57,14 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[BinaryValue],
-	[t1].[SmallIntValue],
+SELECT 
+	[t1].[ID], 
+	[t1].[MoneyValue], 
+	[t1].[DateTimeValue], 
+	[t1].[BoolValue], 
+	[t1].[GuidValue], 
+	[t1].[BinaryValue], 
+	[t1].[SmallIntValue], 
 	[t1].[StringValue]
 FROM
 	[LinqDataTypes] [t1]

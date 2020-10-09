@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[_].[PersonID],
-	[a_Doctor].[PersonID],
+SELECT 
+	[_].[PersonID], 
+	[a_Doctor].[PersonID], 
 	[a_Doctor].[Taxonomy]
 FROM
 	[Person] [_]

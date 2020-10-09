@@ -38,7 +38,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [c_1]
@@ -58,7 +58,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [c_1]

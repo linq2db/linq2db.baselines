@@ -3,11 +3,11 @@
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'John123'
 
-SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

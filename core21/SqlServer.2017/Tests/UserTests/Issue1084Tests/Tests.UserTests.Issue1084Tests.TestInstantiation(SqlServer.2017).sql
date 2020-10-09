@@ -47,10 +47,10 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[k_1].[Id],
-	[k_1].[Number],
-	[k_1].[StatusBitmask],
+SELECT 
+	[k_1].[Id], 
+	[k_1].[Number], 
+	[k_1].[StatusBitmask], 
 	[joinedTable].[StatusBitmask]
 FROM
 	[i1084_person] [k_1]

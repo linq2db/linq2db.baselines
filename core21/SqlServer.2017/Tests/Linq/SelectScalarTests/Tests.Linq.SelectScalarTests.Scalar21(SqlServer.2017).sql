@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	Len([p].[FirstName])
 FROM
 	[Person] [p]

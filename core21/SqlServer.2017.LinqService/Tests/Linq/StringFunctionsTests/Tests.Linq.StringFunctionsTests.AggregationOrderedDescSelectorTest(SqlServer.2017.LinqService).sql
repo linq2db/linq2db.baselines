@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1], [t1].[Value3] DESC)
 FROM
 	[SampleClass] [t1]

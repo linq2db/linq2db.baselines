@@ -28,7 +28,7 @@ BeforeExecute
 DECLARE @skip Int -- Int32
 SET     @skip = 6
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

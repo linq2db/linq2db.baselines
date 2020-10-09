@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	Max([_].[ID])
 FROM
 	[AllTypes] [_]
@@ -391,9 +391,9 @@ BeforeExecute
 DECLARE @lastId Int -- Int32
 SET     @lastId = 699
 
-SELECT
-	[_].[ID],
-	[_].[char20DataType],
+SELECT 
+	[_].[ID], 
+	[_].[char20DataType], 
 	[_].[ncharDataType]
 FROM
 	[AllTypes] [_]

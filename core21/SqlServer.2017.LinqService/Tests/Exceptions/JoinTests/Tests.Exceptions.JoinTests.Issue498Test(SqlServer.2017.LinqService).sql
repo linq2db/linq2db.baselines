@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[x].[ParentID]
 FROM
 	[Parent] [x]
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[x].[ParentID]
 FROM
 	[Parent] [x]

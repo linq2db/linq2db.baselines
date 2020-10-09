@@ -14,8 +14,8 @@ BeforeExecute
 
 MERGE INTO [CacheTestTable] [Target]
 USING (	VALUES
-		(1,1),
-		(2,2)) [Source]
+		(1, 1),
+		(2, 2)) [Source]
 (
 	[Id], 
 	[Value_1]
@@ -43,8 +43,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Value]
 FROM
 	[CacheTestTable] [t1]
@@ -56,9 +56,9 @@ BeforeExecute
 
 MERGE INTO [CacheTestTable] [Target]
 USING (	VALUES
-		(1,1),
-		(2,4),
-		(3,3)) [Source]
+		(1, 1),
+		(2, 4),
+		(3, 3)) [Source]
 (
 	[Id], 
 	[Value_1]
@@ -86,8 +86,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Value]
 FROM
 	[CacheTestTable] [t1]
