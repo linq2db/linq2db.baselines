@@ -25,7 +25,7 @@ BeforeExecute
 DECLARE @maxVersion Int -- Int32
 SET     @maxVersion = 1
 
-SELECT
+SELECT 
 	[u].[Id]
 FROM
 	[Users] [u]

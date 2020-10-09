@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[Child] [t1]

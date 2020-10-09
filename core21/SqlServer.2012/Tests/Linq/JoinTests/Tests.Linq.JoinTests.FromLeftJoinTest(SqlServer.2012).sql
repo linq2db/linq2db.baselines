@@ -1,19 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
-		OUTER APPLY (
-			SELECT
+		OUTER APPLY ( 
+			SELECT 
 				*
 			FROM
 				[GrandChild] [t]
 			WHERE
 				EXISTS(
-					SELECT
+					SELECT 
 						*
 					FROM
 						[Person] [r]

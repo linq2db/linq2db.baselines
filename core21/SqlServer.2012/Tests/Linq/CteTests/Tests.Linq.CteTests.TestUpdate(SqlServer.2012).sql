@@ -33,7 +33,7 @@ BeforeExecute
 WITH [CTE_1] ([ParentID])
 AS
 (
-	SELECT
+	SELECT 
 		[c_1].[ParentID]
 	FROM
 		[CteChild] [c_1]
@@ -51,8 +51,8 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[c_1].[ChildID],
+SELECT 
+	[c_1].[ChildID], 
 	[c_1].[ParentID]
 FROM
 	[CteChild] [c_1]
@@ -62,7 +62,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	[c_1].[ChildID]
 FROM
 	[CteChild] [c_1]

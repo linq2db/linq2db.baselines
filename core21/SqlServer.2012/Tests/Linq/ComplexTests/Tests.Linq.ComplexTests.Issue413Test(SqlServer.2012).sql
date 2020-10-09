@@ -178,7 +178,7 @@ SET     @cond = N'aaa%'
 DECLARE @uptoDate DateTime2
 SET     @uptoDate = '2020-02-29T17:54:55.1231234'
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	[ins].[SourceInstrumentCode]
 FROM
 	[T1] [_]

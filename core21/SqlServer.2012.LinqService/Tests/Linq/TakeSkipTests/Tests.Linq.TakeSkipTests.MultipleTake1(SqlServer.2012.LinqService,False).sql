@@ -22,7 +22,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT TOP (2)
+SELECT TOP (2) 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

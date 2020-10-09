@@ -224,13 +224,13 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [TestMerge1] [Target]
-USING (
-	SELECT
-		[_].[Id] as [OtherId],
-		[_].[Field1] as [delete_1],
-		[_].[Field2] as [Delete_2],
-		[_].[Field3] as [Field],
-		[_].[Field4] as [field_1],
+USING ( 
+	SELECT 
+		[_].[Id] as [OtherId], 
+		[_].[Field1] as [delete_1], 
+		[_].[Field2] as [Delete_2], 
+		[_].[Field3] as [Field], 
+		[_].[Field4] as [field_1], 
 		[_].[Field5] as [As_1]
 	FROM
 		[TestMerge2] [_]
@@ -258,12 +258,12 @@ SET
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t1].[Id],
-	[t1].[Field1],
-	[t1].[Field2],
-	[t1].[Field3],
-	[t1].[Field4],
+SELECT 
+	[t1].[Id], 
+	[t1].[Field1], 
+	[t1].[Field2], 
+	[t1].[Field3], 
+	[t1].[Field4], 
 	[t1].[Field5]
 FROM
 	[TestMerge1] [t1]

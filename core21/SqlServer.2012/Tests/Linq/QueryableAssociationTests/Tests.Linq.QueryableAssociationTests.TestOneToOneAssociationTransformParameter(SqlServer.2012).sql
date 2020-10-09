@@ -66,19 +66,19 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[x_2].[Id],
+SELECT TOP (@take) 
+	[x_2].[Id], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[User] [x]
 				LEFT JOIN [Language] [a_Language] ON [x].[LanguageId] = [a_Language].[Id]
 		WHERE
 			[x].[UserGroupId] = [x_2].[Id] AND [a_Language].[Name] LIKE N'%En%'
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[User] [x_1]

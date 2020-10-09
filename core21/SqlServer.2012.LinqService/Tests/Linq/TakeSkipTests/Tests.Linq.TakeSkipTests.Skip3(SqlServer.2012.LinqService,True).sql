@@ -3,8 +3,8 @@
 DECLARE @skip Int -- Int32
 SET     @skip = 3
 
-SELECT
-	[ch].[ParentID],
+SELECT 
+	[ch].[ParentID], 
 	[ch].[ChildID]
 FROM
 	[Child] [ch]

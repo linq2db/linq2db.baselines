@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[x].[ParentID],
+SELECT 
+	[x].[ParentID], 
 	[x].[ChildID]
 FROM
 	[Child] [x]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					Max([t1].[ChildID]) as [c1]
 				FROM
 					[Child] [t1]

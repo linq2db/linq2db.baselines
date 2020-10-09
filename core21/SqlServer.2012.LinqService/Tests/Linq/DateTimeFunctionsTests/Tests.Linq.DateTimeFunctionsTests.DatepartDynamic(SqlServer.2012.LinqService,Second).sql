@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	DatePart(second, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

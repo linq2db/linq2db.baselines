@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	Min([c_1].[ChildID]),
-	MIN([c_1].[ChildID]),
-	MIN(ALL [c_1].[ChildID]),
+SELECT 
+	Min([c_1].[ChildID]), 
+	MIN([c_1].[ChildID]), 
+	MIN(ALL [c_1].[ChildID]), 
 	MIN(DISTINCT [c_1].[ChildID])
 FROM
 	[Parent] [p]
@@ -15,7 +15,7 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Min([c_1].[ParentID])
 FROM
 	[Child] [c_1]
@@ -23,7 +23,7 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	MIN(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
@@ -31,7 +31,7 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	MIN(DISTINCT [t1].[ParentID])
 FROM
 	[Child] [t1]

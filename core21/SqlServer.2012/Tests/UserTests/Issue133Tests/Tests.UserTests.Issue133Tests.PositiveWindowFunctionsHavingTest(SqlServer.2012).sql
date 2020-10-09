@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	Count(*),
-	SUM(Count(*)) OVER(),
+SELECT 
+	Count(*), 
+	SUM(Count(*)) OVER(), 
 	Sum([_].[ParentID])
 FROM
 	[Child] [_]

@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[String]
 FROM
 	[CreateTableTypes] [t1]

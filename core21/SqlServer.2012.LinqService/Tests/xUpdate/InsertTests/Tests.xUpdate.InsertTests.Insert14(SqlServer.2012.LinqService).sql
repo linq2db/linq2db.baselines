@@ -21,7 +21,7 @@ INSERT INTO [Person]
 VALUES
 (
 	N'Insert14' + (
-		SELECT TOP (@take)
+		SELECT TOP (@take) 
 			[p].[FirstName]
 		FROM
 			[Person] [p]
@@ -35,7 +35,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [p]

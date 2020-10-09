@@ -1,19 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t].[ID],
+SELECT 
+	[t].[ID], 
 	DENSE_RANK() OVER(ORDER BY [t].[ID])
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
 			[p].[PersonID] = 1
 		UNION ALL
-		SELECT
+		SELECT 
 			[p_1].[PersonID] as [ID]
 		FROM
 			[Person] [p_1]

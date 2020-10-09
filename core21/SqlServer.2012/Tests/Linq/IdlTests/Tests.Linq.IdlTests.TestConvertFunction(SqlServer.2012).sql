@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-SELECT
+SELECT 
 	[x].[PersonID]
 FROM
 	[Patient] [x]
@@ -9,8 +9,8 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[x].[PersonID],
+SELECT 
+	[x].[PersonID], 
 	[x].[FirstName]
 FROM
 	[Person] [x]
@@ -18,9 +18,9 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[x_1].[PersonID],
-	[x].[PersonID],
+SELECT 
+	[x_1].[PersonID], 
+	[x].[PersonID], 
 	[x].[FirstName]
 FROM
 	[Patient] [x_1]

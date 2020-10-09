@@ -45,7 +45,7 @@ BeforeExecute
 DECLARE @p1 DateTime2
 SET     @p1 = '2018-01-02T00:00:00'
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[LinqDataTypes] [t]

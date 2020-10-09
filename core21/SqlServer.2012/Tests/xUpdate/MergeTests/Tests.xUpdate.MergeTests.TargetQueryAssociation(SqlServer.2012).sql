@@ -263,8 +263,8 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [Person] [Target]
-USING (
-	SELECT
+USING ( 
+	SELECT 
 		[t1].[PersonID] as [ID]
 	FROM
 		[Person] [t1]
@@ -274,7 +274,7 @@ USING (
 )
 ON ([Target].[PersonID] = [Source].[ID] + 10)
 WHEN NOT MATCHED BY SOURCE AND EXISTS(
-	SELECT
+	SELECT 
 		*
 	FROM
 		[Patient] [p]
@@ -286,11 +286,11 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]

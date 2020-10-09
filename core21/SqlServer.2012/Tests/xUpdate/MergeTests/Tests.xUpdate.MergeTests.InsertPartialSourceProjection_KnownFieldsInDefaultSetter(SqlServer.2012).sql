@@ -224,11 +224,11 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [TestMerge1] [Target]
-USING (
-	SELECT
-		[s].[Id],
-		[s].[Field1],
-		[s].[Field2],
+USING ( 
+	SELECT 
+		[s].[Id], 
+		[s].[Field1], 
+		[s].[Field2], 
 		[s].[Field4]
 	FROM
 		[TestMerge2] [s]
@@ -261,12 +261,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t1].[Id],
-	[t1].[Field1],
-	[t1].[Field2],
-	[t1].[Field3],
-	[t1].[Field4],
+SELECT 
+	[t1].[Id], 
+	[t1].[Field1], 
+	[t1].[Field2], 
+	[t1].[Field3], 
+	[t1].[Field4], 
 	[t1].[Field5]
 FROM
 	[TestMerge1] [t1]

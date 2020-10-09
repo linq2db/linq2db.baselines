@@ -25,9 +25,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	[t1].[Not Identifier],
-	Count(*),
+SELECT 
+	[t1].[Not Identifier], 
+	Count(*), 
 	Sum([t1].[Some Value])
 FROM
 	[DynamicTable] [t1]

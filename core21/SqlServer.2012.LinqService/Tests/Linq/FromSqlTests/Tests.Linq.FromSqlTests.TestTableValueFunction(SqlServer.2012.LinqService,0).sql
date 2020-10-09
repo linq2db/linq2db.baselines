@@ -3,10 +3,10 @@
 DECLARE @offset_1 Int -- Int32
 SET     @offset_1 = 0
 
-SELECT
-	[t].[ParentID],
-	[t].[ChildID],
-	[p].[ParentID],
+SELECT 
+	[t].[ParentID], 
+	[t].[ChildID], 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Child] [t]
@@ -17,10 +17,10 @@ BeforeExecute
 DECLARE @offset_1 Int -- Int32
 SET     @offset_1 = 0
 
-SELECT
-	[t].[ParentID],
-	[t].[ChildID],
-	[p].[ParentID],
+SELECT 
+	[t].[ParentID], 
+	[t].[ChildID], 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Child] [t]
