@@ -24,17 +24,17 @@ SELECT 3,'D' FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."c1",
+SELECT 
+	"t1"."c1", 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN "selectParam"."TradingStatus" = 'D'
 					THEN 1
 				ELSE 0
-			END as "Key_1",
+			END as "Key_1", 
 			CASE WHEN "selectParam"."TradingStatus" = 'D' THEN 1 ELSE 0 END as "c1"
 		FROM
 			"Issue913Test" "selectParam"

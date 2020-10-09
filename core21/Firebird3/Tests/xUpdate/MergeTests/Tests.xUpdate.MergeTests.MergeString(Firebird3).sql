@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Max("t1".ID)
 FROM
 	"AllTypes" "t1"
@@ -38,10 +38,10 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"t1".ID,
-	"t1"."charDataType",
-	"t1"."ncharDataType",
+SELECT FIRST @take 
+	"t1".ID, 
+	"t1"."charDataType", 
+	"t1"."ncharDataType", 
 	"t1"."nvarcharDataType"
 FROM
 	"AllTypes" "t1"

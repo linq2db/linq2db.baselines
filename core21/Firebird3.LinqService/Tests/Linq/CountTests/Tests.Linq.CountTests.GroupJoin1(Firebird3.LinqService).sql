@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "t1"
 		WHERE
 			"p"."ParentID" = "t1"."ParentID"
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"GrandChild" "t2"

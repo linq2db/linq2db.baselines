@@ -81,11 +81,11 @@ SELECT 'Prod 6',1,'q 6' FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"lw_Category"."CategoryID",
-	"detail"."ProductID",
-	"detail"."ProductName",
-	"detail"."CategoryID",
+SELECT 
+	"lw_Category"."CategoryID", 
+	"detail"."ProductID", 
+	"detail"."ProductName", 
+	"detail"."CategoryID", 
 	"detail"."QuantityPerUnit"
 FROM
 	"Categories" "lw_Category"
@@ -94,9 +94,9 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."CategoryID",
-	"t1"."CategoryName",
+SELECT 
+	"t1"."CategoryID", 
+	"t1"."CategoryName", 
 	"t1"."Description"
 FROM
 	"Categories" "t1"

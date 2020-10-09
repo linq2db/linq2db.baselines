@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Extract(weekday from "t"."DateTimeValue") + 1
 FROM
 	"LinqDataTypes" "t"

@@ -3,13 +3,13 @@
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	"p"."PersonID",
-	"p"."FirstName",
-	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender",
-	"a_Patient"."PersonID",
+SELECT FIRST @take 
+	"p"."PersonID", 
+	"p"."FirstName", 
+	"p"."LastName", 
+	"p"."MiddleName", 
+	"p"."Gender", 
+	"a_Patient"."PersonID", 
 	"a_Patient"."Diagnosis"
 FROM
 	"Person" "p"
@@ -22,13 +22,13 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	"p"."PersonID",
-	"p"."FirstName",
-	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender",
-	"a_Patient"."PersonID",
+SELECT FIRST @take 
+	"p"."PersonID", 
+	"p"."FirstName", 
+	"p"."LastName", 
+	"p"."MiddleName", 
+	"p"."Gender", 
+	"a_Patient"."PersonID", 
 	"a_Patient"."Diagnosis"
 FROM
 	"Person" "p"

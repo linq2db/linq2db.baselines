@@ -6,8 +6,8 @@ SET     @take = 4
 SELECT DISTINCT
 	"t1"."ParentID"
 FROM
-	(
-		SELECT FIRST @take
+	( 
+		SELECT FIRST @take 
 			"ch"."ParentID"
 		FROM
 			"Child" "ch"

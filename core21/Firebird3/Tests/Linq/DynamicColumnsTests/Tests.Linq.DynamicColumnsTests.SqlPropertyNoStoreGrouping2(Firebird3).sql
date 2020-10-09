@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."FirstName",
-	"t1"."LastName",
+SELECT 
+	"t1"."FirstName", 
+	"t1"."LastName", 
 	Count(*)
 FROM
 	"Person" "t1"

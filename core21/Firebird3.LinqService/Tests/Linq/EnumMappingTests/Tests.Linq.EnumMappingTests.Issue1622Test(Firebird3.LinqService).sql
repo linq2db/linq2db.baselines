@@ -32,8 +32,8 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	"e"."Id",
+SELECT FIRST @take 
+	"e"."Id", 
 	"e"."SomeText"
 FROM
 	"Issue1622Table" "e"
@@ -45,8 +45,8 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	"e"."Id",
+SELECT FIRST @take 
+	"e"."Id", 
 	"e"."SomeText"
 FROM
 	"Issue1622Table" "e"

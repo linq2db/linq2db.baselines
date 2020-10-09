@@ -38,9 +38,9 @@ SELECT 77,5 FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Not Identifier",
-	Count(*),
+SELECT 
+	"t1"."Not Identifier", 
+	Count(*), 
 	Sum("t1"."Some Value")
 FROM
 	"DynamicTable" "t1"

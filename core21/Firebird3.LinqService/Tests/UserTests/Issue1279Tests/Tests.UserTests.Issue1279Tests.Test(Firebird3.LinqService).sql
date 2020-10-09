@@ -42,8 +42,8 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"t1"."Id",
+SELECT FIRST @take 
+	"t1"."Id", 
 	"t1"."CharFld"
 FROM
 	"Issue1279Table" "t1"

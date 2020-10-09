@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Coalesce((
-		SELECT
+		SELECT 
 			Max("c_1"."ChildID")
 		FROM
 			"Child" "c_1"

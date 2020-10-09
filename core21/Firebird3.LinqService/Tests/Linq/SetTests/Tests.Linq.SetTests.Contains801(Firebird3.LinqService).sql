@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"ch"."ChildID",
+SELECT 
+	"ch"."ChildID", 
 	"gc"."GrandChildID"
 FROM
 	"Parent" "p"

@@ -6,7 +6,7 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
 SELECT FIRST @take SKIP @skip DISTINCT
-	"t1"."ParentID",
+	"t1"."ParentID", 
 	"t1"."Value1"
 FROM
 	"Parent" "t1"

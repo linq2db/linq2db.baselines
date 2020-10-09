@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"c_1"."ParentID",
+SELECT 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
 	"Child" "c_1",
-	(
-		SELECT FIRST 3
+	( 
+		SELECT FIRST 3 
 			"p"."ParentID"
 		FROM
 			"GrandChild" "p"
@@ -18,13 +18,13 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"c_1"."ParentID",
+SELECT 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
 	"Child" "c_1",
-	(
-		SELECT FIRST 3 SKIP 12
+	( 
+		SELECT FIRST 3 SKIP 12 
 			"p"."ParentID"
 		FROM
 			"GrandChild" "p"

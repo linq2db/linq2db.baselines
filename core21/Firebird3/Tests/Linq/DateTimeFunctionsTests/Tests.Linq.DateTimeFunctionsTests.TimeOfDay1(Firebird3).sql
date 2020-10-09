@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Cast("t"."DateTimeValue" as Time)
 FROM
 	"LinqDataTypes" "t"

@@ -27,8 +27,8 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"t".ID,
+SELECT FIRST @take 
+	"t".ID, 
 	"t"."BigIntValue"
 FROM
 	"LinqDataTypes" "t"

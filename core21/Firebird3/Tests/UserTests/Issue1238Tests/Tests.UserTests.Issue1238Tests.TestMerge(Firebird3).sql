@@ -38,7 +38,7 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"InheritanceParent" "t1"
@@ -77,7 +77,7 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"InheritanceParent" "t1"

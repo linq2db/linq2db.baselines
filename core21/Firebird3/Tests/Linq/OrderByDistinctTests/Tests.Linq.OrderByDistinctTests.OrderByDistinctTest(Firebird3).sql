@@ -61,7 +61,7 @@ SET     @take = 3
 DECLARE @skip Integer -- Int32
 SET     @skip = 0
 
-SELECT FIRST @take SKIP @skip
+SELECT FIRST @take SKIP @skip 
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
@@ -91,7 +91,7 @@ SET     @take = 3
 DECLARE @skip Integer -- Int32
 SET     @skip = 0
 
-SELECT FIRST @take SKIP @skip
+SELECT FIRST @take SKIP @skip 
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"

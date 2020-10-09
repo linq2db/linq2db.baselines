@@ -23,12 +23,12 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."NAME1",
-	"t1"."Name2",
-	"t1"."NAME3",
-	"t1"."_NAME4",
+SELECT 
+	"t1"."Id", 
+	"t1"."NAME1", 
+	"t1"."Name2", 
+	"t1"."NAME3", 
+	"t1"."_NAME4", 
 	"t1"."NAME 5"
 FROM
 	"CamelCaseName" "t1"

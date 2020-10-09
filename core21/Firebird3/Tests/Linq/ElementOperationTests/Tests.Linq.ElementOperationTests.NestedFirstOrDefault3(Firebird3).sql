@@ -3,7 +3,7 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	(
 		SELECT FIRST @take DISTINCT
 			"c_1"."ParentID"

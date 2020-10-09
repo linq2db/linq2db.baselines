@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(('2010-' || Cast("p".ID as VarChar(11)) || '-1') as Date) as "c1"
 		FROM
 			"LinqDataTypes" "p"

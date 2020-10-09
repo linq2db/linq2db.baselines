@@ -65,8 +65,8 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"r".ID,
+SELECT 
+	"r".ID, 
 	"r"."StringValue"
 FROM
 	"LinqDataTypes" "r"
@@ -78,9 +78,9 @@ ORDER BY
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"r".ID,
-	"r"."IntValue",
+SELECT 
+	"r".ID, 
+	"r"."IntValue", 
 	"r"."StringValue"
 FROM
 	"LinqDataTypes" "r"

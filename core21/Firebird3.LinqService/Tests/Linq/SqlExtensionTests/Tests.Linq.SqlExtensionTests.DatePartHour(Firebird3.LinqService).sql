@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Extract(hour from "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"

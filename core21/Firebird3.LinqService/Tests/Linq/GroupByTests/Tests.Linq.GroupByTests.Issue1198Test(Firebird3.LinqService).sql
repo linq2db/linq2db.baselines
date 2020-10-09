@@ -13,9 +13,9 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST @take 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Issue1192Table" "t"

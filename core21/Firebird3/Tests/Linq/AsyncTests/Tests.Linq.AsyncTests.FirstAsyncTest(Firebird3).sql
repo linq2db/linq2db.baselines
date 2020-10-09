@@ -3,11 +3,11 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
+SELECT FIRST @take 
+	"p"."FirstName", 
+	"p"."PersonID", 
+	"p"."LastName", 
+	"p"."MiddleName", 
 	"p"."Gender"
 FROM
 	"Person" "p"

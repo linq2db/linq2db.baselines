@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT SKIP 3
-	"ch"."ParentID",
+SELECT SKIP 3 
+	"ch"."ParentID", 
 	"ch"."ChildID"
 FROM
 	"Child" "ch"

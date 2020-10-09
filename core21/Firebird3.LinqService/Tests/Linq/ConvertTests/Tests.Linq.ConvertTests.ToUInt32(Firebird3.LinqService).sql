@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"p"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor("t"."MoneyValue") as BigInt) as "c1"
 		FROM
 			"LinqDataTypes" "t"

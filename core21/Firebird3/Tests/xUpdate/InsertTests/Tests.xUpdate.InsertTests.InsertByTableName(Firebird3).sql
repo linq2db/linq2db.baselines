@@ -127,7 +127,7 @@ RETURNING
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson_f3_35" "t1"
@@ -135,7 +135,7 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson_f3_35" "p"

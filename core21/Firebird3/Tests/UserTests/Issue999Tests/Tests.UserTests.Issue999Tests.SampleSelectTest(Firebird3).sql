@@ -11,7 +11,7 @@ CREATE TABLE "User"
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"u"."city"
 FROM
 	"User" "u"
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"u"."street"
 FROM
 	"User" "u"

@@ -34,9 +34,9 @@ CREATE TABLE "stMain"
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"v"."inId",
-	"r"."inIdState",
+SELECT 
+	"v"."inId", 
+	"r"."inIdState", 
 	"a_Main"."inIdType"
 FROM
 	"stVersions" "v"

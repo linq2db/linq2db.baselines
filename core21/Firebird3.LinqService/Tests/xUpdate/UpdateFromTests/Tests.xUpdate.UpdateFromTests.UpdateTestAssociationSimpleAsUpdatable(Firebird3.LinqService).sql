@@ -67,7 +67,7 @@ SET
 	"UpdatedEntities"."Value3" = 1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"UpdatedEntities" "v"
@@ -81,9 +81,9 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"v"."Value1",
-	"v"."Value2",
+SELECT FIRST @take 
+	"v"."Value1", 
+	"v"."Value2", 
 	"v"."Value3"
 FROM
 	"UpdatedEntities" "v"

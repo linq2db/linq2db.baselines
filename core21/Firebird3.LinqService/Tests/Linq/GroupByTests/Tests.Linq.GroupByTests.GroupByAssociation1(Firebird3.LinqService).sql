@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"a_Parent"."Value1"
 FROM
 	"GrandChild" "t1"

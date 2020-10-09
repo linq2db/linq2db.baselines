@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
+SELECT 
+	"t1"."Id", 
 	"t1"."BooleanNullable"
 FROM
 	"CreateTableTypes" "t1"

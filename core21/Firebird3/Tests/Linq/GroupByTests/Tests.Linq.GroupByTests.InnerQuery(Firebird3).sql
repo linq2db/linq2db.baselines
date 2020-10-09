@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Taxonomy]
 FROM
 	[Doctor] [t1]
@@ -12,9 +12,9 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	(
-		SELECT FIRST @take
+		SELECT FIRST @take 
 			"keyParam"."Taxonomy"
 		FROM
 			"Doctor" "keyParam"

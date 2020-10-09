@@ -2,13 +2,13 @@
 -- Firebird3 Firebird
 
 SELECT DISTINCT
-	"t1"."ParentID",
+	"t1"."ParentID", 
 	"t1"."ChildID"
 FROM
 	"Child" "t1"
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "p"

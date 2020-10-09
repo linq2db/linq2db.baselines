@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Cosh(Cast("p"."MoneyValue" as Float) / 15) * 15) as "c1"
 		FROM
 			"LinqDataTypes" "p"

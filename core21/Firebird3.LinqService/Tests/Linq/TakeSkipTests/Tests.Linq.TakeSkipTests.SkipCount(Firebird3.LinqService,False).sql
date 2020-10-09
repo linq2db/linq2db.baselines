@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT SKIP 2
-			"t1"."ParentID",
+	( 
+		SELECT SKIP 2 
+			"t1"."ParentID", 
 			"t1"."ChildID"
 		FROM
 			"Child" "t1"

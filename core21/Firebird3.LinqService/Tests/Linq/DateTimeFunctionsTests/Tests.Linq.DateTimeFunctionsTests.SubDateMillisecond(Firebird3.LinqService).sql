@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	DateDiff(millisecond, "t"."DateTimeValue", DateAdd(Second, 1, "t"."DateTimeValue"))
 FROM
 	"LinqDataTypes" "t"

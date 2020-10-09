@@ -24,8 +24,8 @@ CREATE TABLE "Books"
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"author"."Id",
+SELECT 
+	"author"."Id", 
 	"author"."Name"
 FROM
 	"Authors" "author"

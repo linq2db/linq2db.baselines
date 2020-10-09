@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			0 as "c1"
 		FROM
 			"Person" "selectParam"
@@ -17,11 +17,11 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			0 as "c1"
 		FROM
 			"Person" "selectParam"

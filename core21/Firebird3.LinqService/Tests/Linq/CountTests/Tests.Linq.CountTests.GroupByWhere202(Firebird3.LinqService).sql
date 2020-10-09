@@ -1,27 +1,27 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"g_1"."ParentID"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					"Child" "keyParam"
 				WHERE
 					"t1"."ParentID" = "keyParam"."ParentID" AND "keyParam"."ChildID" > 20
-			) as "cnt",
+			) as "cnt", 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					"Child" "keyParam_1"
 				WHERE
 					"t1"."ParentID" = "keyParam_1"."ParentID" AND "keyParam_1"."ChildID" = 20
-			) as "ex",
+			) as "ex", 
 			"t1"."ParentID"
 		FROM
 			"Child" "t1"

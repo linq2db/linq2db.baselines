@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Extract(year from "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"

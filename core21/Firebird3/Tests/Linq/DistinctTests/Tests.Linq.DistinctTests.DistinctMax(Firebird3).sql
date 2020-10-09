@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Max("t1"."ParentID")
 FROM
-	(
+	( 
 		SELECT DISTINCT
-			"p"."ParentID",
+			"p"."ParentID", 
 			"p"."Value1"
 		FROM
 			"Parent" "p"

@@ -35,9 +35,9 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	"t1".ID,
-	"t1"."Array",
+SELECT FIRST @take 
+	"t1".ID, 
+	"t1"."Array", 
 	"t1"."Binary"
 FROM
 	"Issue1303" "t1"
@@ -51,9 +51,9 @@ SET     @take = 2
 DECLARE @Array_2 Binary(3)
 SET     @Array_2 = X'010203'
 
-SELECT FIRST @take
-	"t1".ID,
-	"t1"."Array",
+SELECT FIRST @take 
+	"t1".ID, 
+	"t1"."Array", 
 	"t1"."Binary"
 FROM
 	"Issue1303" "t1"
@@ -67,9 +67,9 @@ SET     @take = 2
 DECLARE @Binary_2 Binary(2)
 SET     @Binary_2 = X'0405'
 
-SELECT FIRST @take
-	"t1".ID,
-	"t1"."Array",
+SELECT FIRST @take 
+	"t1".ID, 
+	"t1"."Array", 
 	"t1"."Binary"
 FROM
 	"Issue1303" "t1"

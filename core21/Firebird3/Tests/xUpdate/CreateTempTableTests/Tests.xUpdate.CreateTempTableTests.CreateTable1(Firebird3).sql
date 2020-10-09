@@ -21,7 +21,7 @@ INSERT INTO "TempTable"
 (
 	ID
 )
-SELECT
+SELECT 
 	"p"."ParentID"
 FROM
 	"Parent" "p"
@@ -29,7 +29,7 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"t".ID
 FROM
 	"Parent" "p"

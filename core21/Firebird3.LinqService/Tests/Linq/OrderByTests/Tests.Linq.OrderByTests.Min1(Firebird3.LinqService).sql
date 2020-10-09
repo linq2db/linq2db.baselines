@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Min("p"."ParentID")
 FROM
 	"Parent" "p"

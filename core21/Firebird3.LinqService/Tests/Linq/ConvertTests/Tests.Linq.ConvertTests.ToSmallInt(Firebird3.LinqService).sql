@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Cast(Floor("t"."MoneyValue") as SmallInt)
 FROM
 	"LinqDataTypes" "t"

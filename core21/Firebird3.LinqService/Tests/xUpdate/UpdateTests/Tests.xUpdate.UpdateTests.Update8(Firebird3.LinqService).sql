@@ -45,8 +45,8 @@ SET     @take = 2
 DECLARE @ParentID_1 Integer -- Int32
 SET     @ParentID_1 = 1001
 
-SELECT FIRST @take
-	"p"."ParentID",
+SELECT FIRST @take 
+	"p"."ParentID", 
 	"p"."Value1"
 FROM
 	"Parent" "p"

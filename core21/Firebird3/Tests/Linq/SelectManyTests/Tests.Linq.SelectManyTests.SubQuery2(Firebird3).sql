@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"p"."PersonID",
+SELECT 
+	"p"."PersonID", 
 	"p_1"."FirstName"
 FROM
 	"Person" "p",
@@ -14,8 +14,8 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"p"."PersonID",
+SELECT 
+	"p"."PersonID", 
 	"p_1"."FirstName"
 FROM
 	"Person" "p",

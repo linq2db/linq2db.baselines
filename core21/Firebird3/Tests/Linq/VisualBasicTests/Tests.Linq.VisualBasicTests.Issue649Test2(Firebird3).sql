@@ -54,9 +54,9 @@ BeforeExecute
 DECLARE @added TimeStamp -- DateTime
 SET     @added = CAST('2017-01-01' AS timestamp)
 
-SELECT
-	"a_Person"."personid",
-	"a_Person"."personname",
+SELECT 
+	"a_Person"."personid", 
+	"a_Person"."personname", 
 	Max("p"."added")
 FROM
 	"activity649" "p"

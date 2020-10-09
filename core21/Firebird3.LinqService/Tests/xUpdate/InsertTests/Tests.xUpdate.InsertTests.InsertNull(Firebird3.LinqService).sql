@@ -27,7 +27,7 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent" "p"

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	(
 		SELECT DISTINCT
 			"c_1"."ParentID"

@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"a_Middle"."ParentID",
-	"a_Middle"."ChildID",
+SELECT 
+	"a_Middle"."ParentID", 
+	"a_Middle"."ChildID", 
 	"a_Middle"."GrandChildID"
 FROM
 	"Parent" "t"
-		LEFT JOIN (
-			SELECT
-				"a_Bottom"."ParentID",
-				"a_Bottom"."ChildID",
-				"a_Bottom"."GrandChildID",
+		LEFT JOIN ( 
+			SELECT 
+				"a_Bottom"."ParentID", 
+				"a_Bottom"."ChildID", 
+				"a_Bottom"."GrandChildID", 
 				"t1"."ParentID" as "ParentID_1"
 			FROM
 				"Child" "t1"

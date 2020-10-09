@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"p"."ParentID",
+SELECT 
+	"p"."ParentID", 
 	"p"."Value1"
 FROM
 	"Parent" "p"
 WHERE
 	NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "c_1"
 		WHERE
 			"p"."ParentID" = "c_1"."ParentID" AND EXISTS(
-				SELECT
+				SELECT 
 					*
 				FROM
 					"GrandChild" "g_1"

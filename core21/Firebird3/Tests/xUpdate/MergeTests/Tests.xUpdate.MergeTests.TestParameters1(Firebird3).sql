@@ -236,10 +236,10 @@ DECLARE @Field3 Integer -- Int32
 SET     @Field3 = 125
 
 MERGE INTO "TestMerge1" "Target"
-USING (
-	SELECT
-		"t1"."Id" as "OtherId",
-		"t1"."Field1",
+USING ( 
+	SELECT 
+		"t1"."Id" as "OtherId", 
+		"t1"."Field1", 
 		Cast(@Val2 as Int) as "Field7"
 	FROM
 		"TestMerge2" "t1"

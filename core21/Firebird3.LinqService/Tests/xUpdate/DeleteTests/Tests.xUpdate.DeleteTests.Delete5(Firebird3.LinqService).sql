@@ -49,7 +49,7 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent" "t1"
@@ -67,7 +67,7 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent" "t1"

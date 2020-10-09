@@ -50,14 +50,14 @@ SET     @take = 2
 DECLARE @ID_1 Integer -- Int32
 SET     @ID_1 = 1001
 
-SELECT FIRST @take
-	"t".ID,
-	"t"."MoneyValue",
-	"t"."DateTimeValue",
-	"t"."BoolValue",
-	"t"."GuidValue",
-	"t"."BinaryValue",
-	"t"."SmallIntValue",
+SELECT FIRST @take 
+	"t".ID, 
+	"t"."MoneyValue", 
+	"t"."DateTimeValue", 
+	"t"."BoolValue", 
+	"t"."GuidValue", 
+	"t"."BinaryValue", 
+	"t"."SmallIntValue", 
 	"t"."StringValue"
 FROM
 	"LinqDataTypes" "t"

@@ -7,25 +7,25 @@ SET     @take_1 = 10
 DECLARE @skip Integer -- Int32
 SET     @skip = 10
 
-SELECT FIRST @take
-	"cp"."ParentID",
+SELECT FIRST @take 
+	"cp"."ParentID", 
 	"c_1"."ChildID"
 FROM
 	"Parent" "cp"
-		CROSS JOIN (
-			SELECT FIRST @take_1 SKIP @skip
-				"t3"."ParentID",
+		CROSS JOIN ( 
+			SELECT FIRST @take_1 SKIP @skip 
+				"t3"."ParentID", 
 				"t3"."ChildID"
 			FROM
-				(
-					SELECT
-						"t1"."ParentID",
+				( 
+					SELECT 
+						"t1"."ParentID", 
 						"t1"."ChildID"
 					FROM
 						"Child" "t1"
 					UNION
-					SELECT
-						"t2"."ParentID",
+					SELECT 
+						"t2"."ParentID", 
 						"t2"."ChildID"
 					FROM
 						"Child" "t2"

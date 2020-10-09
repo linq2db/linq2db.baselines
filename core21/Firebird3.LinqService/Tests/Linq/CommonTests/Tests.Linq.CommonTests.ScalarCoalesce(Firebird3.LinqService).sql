@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Coalesce("p"."Value1", 100)
 FROM
 	"Parent" "p"

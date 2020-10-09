@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Sum("t1"."ChildID")
 FROM
 	"Child" "t1"

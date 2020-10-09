@@ -40,7 +40,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"InheritanceParent" "t1"
@@ -81,7 +81,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"InheritanceParent" "t1"

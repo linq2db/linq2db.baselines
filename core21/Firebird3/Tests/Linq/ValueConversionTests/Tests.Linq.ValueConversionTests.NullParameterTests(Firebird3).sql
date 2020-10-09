@@ -43,9 +43,9 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N' FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t"."Id",
-	"t"."Value1",
+SELECT 
+	"t"."Id", 
+	"t"."Value1", 
 	"t"."Value2"
 FROM
 	"ValueConversion" "t"

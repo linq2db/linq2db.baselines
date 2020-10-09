@@ -11,18 +11,18 @@ CREATE TABLE "Issue76Entity"
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"folder"."Id",
-	"folder"."Caption",
+SELECT 
+	"folder"."Id", 
+	"folder"."Caption", 
 	"folder"."c1"
 FROM
-	(
-		SELECT
-			NULL as "ParentId",
-			"f"."Id",
-			"f"."Caption",
+	( 
+		SELECT 
+			NULL as "ParentId", 
+			"f"."Id", 
+			"f"."Caption", 
 			CASE WHEN EXISTS(
-				SELECT
+				SELECT 
 					*
 				FROM
 					"Issue76Entity" "f2"

@@ -76,7 +76,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- Firebird3 Firebird (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPatient24" "t1"
@@ -140,7 +140,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- Firebird3 Firebird (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPatient24" "t1"

@@ -45,7 +45,7 @@ BeforeExecute
 DECLARE @p1 TimeStamp -- DateTime
 SET     @p1 = CAST('2018-01-02' AS timestamp)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"LinqDataTypes" "t"

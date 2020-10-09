@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"p"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor("t"."MoneyValue") as Decimal) as "c1"
 		FROM
 			"LinqDataTypes" "t"

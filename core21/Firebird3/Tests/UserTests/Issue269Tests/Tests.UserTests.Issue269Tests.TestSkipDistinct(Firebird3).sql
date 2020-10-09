@@ -3,18 +3,18 @@
 DECLARE @skip Integer -- Int32
 SET     @skip = 0
 
-SELECT
-	"pat"."PersonID",
+SELECT 
+	"pat"."PersonID", 
 	"pat"."Diagnosis"
 FROM
 	"Patient" "pat"
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT SKIP @skip
+			( 
+				SELECT SKIP @skip 
 					"a_Patient"."Diagnosis"
 				FROM
 					"Person" "per"

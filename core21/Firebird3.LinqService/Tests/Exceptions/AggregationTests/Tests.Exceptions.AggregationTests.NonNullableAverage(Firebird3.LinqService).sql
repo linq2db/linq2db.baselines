@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Avg("t1"."ParentID")
 FROM
 	"Parent" "t1"

@@ -160,23 +160,23 @@ SELECT 'x','Urupinsk' FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"a"."First_Name",
-	"a"."Last_Name",
-	"d"."Distributor_Name",
-	"cp"."Street_Number",
-	"cp"."Street_Name",
+SELECT 
+	"a"."First_Name", 
+	"a"."Last_Name", 
+	"d"."Distributor_Name", 
+	"cp"."Street_Number", 
+	"cp"."Street_Name", 
 	(
-		SELECT
+		SELECT 
 			"c_1"."City_Name"
 		FROM
 			"Cities" "c_1"
 		WHERE
 			("c_1"."City_Code" IS NULL AND "cp"."City_Code" IS NULL OR "c_1"."City_Code" = "cp"."City_Code")
-	),
-	"cp"."State",
-	"cp"."Zip_Code",
-	"cp"."Zip_Plus_4",
+	), 
+	"cp"."State", 
+	"cp"."Zip_Code", 
+	"cp"."Zip_Plus_4", 
 	"cd"."Effective_Date"
 FROM
 	"Contract_Distributor_Agent" "cda"

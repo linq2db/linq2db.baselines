@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT SKIP 2
-	"t2"."ParentID",
+SELECT SKIP 2 
+	"t2"."ParentID", 
 	"t2"."ChildID"
 FROM
-	(
-		SELECT FIRST 7 SKIP 1
-			"t1"."ChildID",
+	( 
+		SELECT FIRST 7 SKIP 1 
+			"t1"."ChildID", 
 			"t1"."ParentID"
 		FROM
 			"Child" "t1"

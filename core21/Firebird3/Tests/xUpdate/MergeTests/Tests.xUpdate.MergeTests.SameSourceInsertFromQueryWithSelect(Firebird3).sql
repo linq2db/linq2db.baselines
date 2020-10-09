@@ -222,11 +222,11 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "TestMerge1" "Target"
-USING (
-	SELECT
-		"t1"."Id",
-		"t1"."Field1",
-		"t1"."Field2",
+USING ( 
+	SELECT 
+		"t1"."Id", 
+		"t1"."Field1", 
+		"t1"."Field2", 
 		"t1"."Id" + "t1"."Id" as "Field4"
 	FROM
 		"TestMerge2" "t1"
@@ -258,12 +258,12 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
+SELECT 
+	"t1"."Id", 
+	"t1"."Field1", 
+	"t1"."Field2", 
+	"t1"."Field3", 
+	"t1"."Field4", 
 	"t1"."Field5"
 FROM
 	"TestMerge1" "t1"

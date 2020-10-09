@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT FIRST 1
-	"t1"."Id",
+SELECT FIRST 1 
+	"t1"."Id", 
 	"t1"."BlobValue"
 FROM
 	"BlobClass20" "t1"
@@ -37,8 +37,8 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT FIRST 1
-	"t1"."Id",
+SELECT FIRST 1 
+	"t1"."Id", 
 	"t1"."BlobValue"
 FROM
 	"BlobClass20" "t1"

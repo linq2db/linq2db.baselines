@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Lower("p"."Taxonomy")
 FROM
 	"Doctor" "p"

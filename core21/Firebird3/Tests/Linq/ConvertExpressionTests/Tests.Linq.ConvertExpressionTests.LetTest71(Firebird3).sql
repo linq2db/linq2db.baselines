@@ -3,17 +3,17 @@
 DECLARE @take Integer -- Int32
 SET     @take = 5000
 
-SELECT
-	"key_data_result"."ParentID",
-	"c_1"."ParentID",
+SELECT 
+	"key_data_result"."ParentID", 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			"t1"."ParentID"
 		FROM
-			(
-				SELECT FIRST @take
+			( 
+				SELECT FIRST @take 
 					"t"."ParentID"
 				FROM
 					"Parent" "t"
@@ -32,26 +32,26 @@ SET     @take = 5000
 DECLARE @take_1 Integer -- Int32
 SET     @take_1 = 1
 
-SELECT FIRST @take
-	"t"."ParentID",
+SELECT FIRST @take 
+	"t"."ParentID", 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "c_1"
 		WHERE
 			"c_1"."ParentID" = "t"."ParentID" AND "c_1"."ChildID" > -100
-	) THEN 1 ELSE 0 END,
+	) THEN 1 ELSE 0 END, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "c_2"
 		WHERE
 			"c_2"."ParentID" = "t"."ParentID" AND "c_2"."ChildID" > -100
-	),
+	), 
 	(
-		SELECT FIRST @take_1
+		SELECT FIRST @take_1 
 			"c_3"."ParentID"
 		FROM
 			"Child" "c_3"

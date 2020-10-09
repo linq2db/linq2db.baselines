@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Child" "c_1"

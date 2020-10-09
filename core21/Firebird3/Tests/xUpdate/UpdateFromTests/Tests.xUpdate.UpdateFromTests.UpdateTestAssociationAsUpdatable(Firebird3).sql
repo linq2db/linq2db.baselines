@@ -63,7 +63,7 @@ UPDATE
 	"UpdatedEntities"
 SET
 	"UpdatedEntities"."Value1" = (
-		SELECT
+		SELECT 
 			"a_Relation"."RelatedValue3"
 		FROM
 			"UpdatedEntities" "v"
@@ -73,7 +73,7 @@ SET
 	)
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"UpdatedEntities" "v_1"
@@ -87,7 +87,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST @take 
 	"v"."Value1"
 FROM
 	"UpdatedEntities" "v"

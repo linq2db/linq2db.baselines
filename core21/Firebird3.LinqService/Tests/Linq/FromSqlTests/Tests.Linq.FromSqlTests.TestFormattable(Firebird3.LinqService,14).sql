@@ -43,8 +43,8 @@ SET     @p1 = 5
 DECLARE @p2 Integer -- Int32
 SET     @p2 = 14
 
-SELECT
-	"c_1"."value",
+SELECT 
+	"c_1"."value", 
 	"c_1".ID
 FROM
 	(
@@ -60,8 +60,8 @@ SET     @startId = 5
 DECLARE @endId Integer -- Int32
 SET     @endId = 14
 
-SELECT
-	"t"."value",
+SELECT 
+	"t"."value", 
 	"t".ID
 FROM
 	SAMPLE_CLASS "t"

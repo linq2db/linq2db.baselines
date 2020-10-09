@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."InheritanceParentId",
-	"t1"."TypeDiscriminator",
+SELECT 
+	"t1"."InheritanceParentId", 
+	"t1"."TypeDiscriminator", 
 	"t1"."Name"
 FROM
 	"InheritanceParent" "t1"
@@ -11,10 +11,10 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."InheritanceChildId",
-	"t1"."TypeDiscriminator",
-	"t1"."InheritanceParentId",
+SELECT 
+	"t1"."InheritanceChildId", 
+	"t1"."TypeDiscriminator", 
+	"t1"."InheritanceParentId", 
 	"t1"."Name"
 FROM
 	"InheritanceChild" "t1"

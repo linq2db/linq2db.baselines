@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"p"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast("t"."MoneyValue" as VarChar(31) CHARACTER SET UNICODE_FSS) as "c1"
 		FROM
 			"LinqDataTypes" "t"

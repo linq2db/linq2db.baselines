@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"x"."ParentID",
-	"x"."ChildID",
+SELECT 
+	"x"."ParentID", 
+	"x"."ChildID", 
 	"x"."GrandChildID"
 FROM
 	"GrandChild" "x"
@@ -13,9 +13,9 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"x"."ParentID",
-	"x"."ChildID",
+SELECT 
+	"x"."ParentID", 
+	"x"."ChildID", 
 	"x"."GrandChildID"
 FROM
 	"GrandChild" "x"

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"t1".ID
 FROM
 	"LinqDataTypes" "t1"

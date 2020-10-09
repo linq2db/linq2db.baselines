@@ -98,8 +98,8 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "GrandChild" "Target"
-USING (
-	SELECT
+USING ( 
+	SELECT 
 		"t2"."ChildID" as "Id"
 	FROM
 		"Parent" "t1",
@@ -123,9 +123,9 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."GrandChildID",
-	"t1"."ParentID",
+SELECT 
+	"t1"."GrandChildID", 
+	"t1"."ParentID", 
 	"t1"."ChildID"
 FROM
 	"GrandChild" "t1"

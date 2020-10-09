@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Trunc(Cast((-"p"."MoneyValue") as Float), 0) as "c1"
 		FROM
 			"LinqDataTypes" "p"

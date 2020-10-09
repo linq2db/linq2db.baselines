@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[DateTimeValue2],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[SmallIntValue],
-	[t1].[IntValue],
-	[t1].[BigIntValue],
+SELECT 
+	[t1].[ID], 
+	[t1].[MoneyValue], 
+	[t1].[DateTimeValue], 
+	[t1].[DateTimeValue2], 
+	[t1].[BoolValue], 
+	[t1].[GuidValue], 
+	[t1].[SmallIntValue], 
+	[t1].[IntValue], 
+	[t1].[BigIntValue], 
 	[t1].[StringValue]
 FROM
 	[LinqDataTypes] [t1]
@@ -18,15 +18,15 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	Sum("t1"."MoneyValue"),
-	"t1"."Key_2",
+SELECT 
+	Sum("t1"."MoneyValue"), 
+	"t1"."Key_2", 
 	"t1"."Key_1"
 FROM
-	(
-		SELECT
-			Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as "Key_1",
-			Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as "Key_2",
+	( 
+		SELECT 
+			Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as "Key_1", 
+			Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as "Key_2", 
 			"selectParam"."MoneyValue"
 		FROM
 			"LinqDataTypes" "selectParam"

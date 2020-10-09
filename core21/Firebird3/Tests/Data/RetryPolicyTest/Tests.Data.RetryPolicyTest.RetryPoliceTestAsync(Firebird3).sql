@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird (asynchronously)
 
-SELECT
+SELECT 
 	1
 FROM
 	"FakeClass" "t1"

@@ -25,7 +25,7 @@ SET     @take = 1
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT FIRST @take
+		SELECT FIRST @take 
 			*
 		FROM
 			"TakeSkipClass" "t1"

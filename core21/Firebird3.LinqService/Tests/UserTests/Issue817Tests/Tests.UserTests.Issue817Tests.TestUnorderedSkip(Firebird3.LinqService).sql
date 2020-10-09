@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" "t1"
@@ -11,7 +11,7 @@ BeforeExecute
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT SKIP @skip
+SELECT SKIP @skip 
 	1
 FROM
 	"Person" "t1"

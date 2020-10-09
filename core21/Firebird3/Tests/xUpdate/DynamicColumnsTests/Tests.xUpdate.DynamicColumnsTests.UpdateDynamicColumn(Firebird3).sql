@@ -17,7 +17,7 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" "c_1"
@@ -37,7 +37,7 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" "c_1"

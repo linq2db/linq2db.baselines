@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"x".ID,
+SELECT 
+	"x".ID, 
 	"x"."BigIntValue"
 FROM
 	"LinqDataTypes" "x"

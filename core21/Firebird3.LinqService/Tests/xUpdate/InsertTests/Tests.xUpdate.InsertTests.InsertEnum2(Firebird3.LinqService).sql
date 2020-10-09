@@ -29,7 +29,7 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent" "t1"

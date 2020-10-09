@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Max("t1"."ParentID")
 		FROM
 			"Child" "t1"

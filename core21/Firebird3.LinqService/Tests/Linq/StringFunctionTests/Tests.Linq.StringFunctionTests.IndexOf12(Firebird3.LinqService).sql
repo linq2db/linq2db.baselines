@@ -3,11 +3,11 @@
 DECLARE @p1 Char(1) -- String
 SET     @p1 = '1'
 
-SELECT
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
+SELECT 
+	"p"."FirstName", 
+	"p"."PersonID", 
+	"p"."LastName", 
+	"p"."MiddleName", 
 	"p"."Gender"
 FROM
 	"Person" "p"

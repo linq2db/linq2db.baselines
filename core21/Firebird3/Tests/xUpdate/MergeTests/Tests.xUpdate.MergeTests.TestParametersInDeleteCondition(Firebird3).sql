@@ -224,8 +224,8 @@ DECLARE @param Integer -- Int32
 SET     @param = 4
 
 MERGE INTO "TestMerge1" "Target"
-USING (
-	SELECT
+USING ( 
+	SELECT 
 		"t1"."Id"
 	FROM
 		"TestMerge2" "t1"

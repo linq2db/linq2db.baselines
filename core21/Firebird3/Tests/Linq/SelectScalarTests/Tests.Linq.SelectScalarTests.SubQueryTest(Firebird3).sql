@@ -5,7 +5,7 @@ SET     @take = 1
 
 SELECT
 	(
-		SELECT FIRST @take
+		SELECT FIRST @take 
 			"p"."Value1"
 		FROM
 			"Parent" "p"

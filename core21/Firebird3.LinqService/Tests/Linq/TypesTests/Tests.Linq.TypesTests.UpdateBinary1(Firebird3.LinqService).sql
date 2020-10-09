@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"t"."BinaryValue"
 FROM
 	"LinqDataTypes" "t"

@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"detail"."ParentID",
+SELECT 
+	"key_data_result"."ParentID", 
+	"key_data_result"."Value1", 
+	"detail"."ParentID", 
 	"detail"."ChildID"
 FROM
-	(
+	( 
 		SELECT DISTINCT
-			"n"."ParentID",
+			"n"."ParentID", 
 			"n"."Value1"
 		FROM
 			"Parent" "n"
@@ -19,8 +19,8 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"n"."ParentID",
+SELECT 
+	"n"."ParentID", 
 	"n"."Value1"
 FROM
 	"Parent" "n"

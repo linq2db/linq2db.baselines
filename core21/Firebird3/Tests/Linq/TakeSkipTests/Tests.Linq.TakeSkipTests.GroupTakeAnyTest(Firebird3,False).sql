@@ -23,7 +23,7 @@ BeforeExecute
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT FIRST 1
+		SELECT FIRST 1 
 			*
 		FROM
 			"TakeSkipClass" "t1"

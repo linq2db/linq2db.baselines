@@ -25,8 +25,8 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"entity".ID,
+SELECT 
+	"entity".ID, 
 	"entity"."BigIntValue"
 FROM
 	"LinqDataTypes" "entity"

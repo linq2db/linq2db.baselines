@@ -577,21 +577,21 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."FieldInt64",
-	"t1"."FieldBoolean",
-	"t1"."FieldString",
-	"t1"."FieldNString",
-	"t1"."FieldChar",
-	"t1"."FieldNChar",
-	"t1"."FieldFloat",
-	"t1"."FieldDateTime",
-	"t1"."FieldGuid",
-	"t1"."FieldDecimal",
-	"t1"."FieldDate",
-	"t1"."FieldEnumString",
+SELECT 
+	"t1"."Id", 
+	"t1"."Field1", 
+	"t1"."FieldInt64", 
+	"t1"."FieldBoolean", 
+	"t1"."FieldString", 
+	"t1"."FieldNString", 
+	"t1"."FieldChar", 
+	"t1"."FieldNChar", 
+	"t1"."FieldFloat", 
+	"t1"."FieldDateTime", 
+	"t1"."FieldGuid", 
+	"t1"."FieldDecimal", 
+	"t1"."FieldDate", 
+	"t1"."FieldEnumString", 
 	"t1"."FieldEnumNumber"
 FROM
 	"TestMerge1" "t1"
@@ -601,21 +601,21 @@ ORDER BY
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."FieldInt64",
-	"t1"."FieldBoolean",
-	"t1"."FieldString",
-	"t1"."FieldNString",
-	"t1"."FieldChar",
-	"t1"."FieldNChar",
-	"t1"."FieldFloat",
-	"t1"."FieldDateTime",
-	"t1"."FieldGuid",
-	"t1"."FieldDecimal",
-	"t1"."FieldDate",
-	"t1"."FieldEnumString",
+SELECT 
+	"t1"."Id", 
+	"t1"."Field1", 
+	"t1"."FieldInt64", 
+	"t1"."FieldBoolean", 
+	"t1"."FieldString", 
+	"t1"."FieldNString", 
+	"t1"."FieldChar", 
+	"t1"."FieldNChar", 
+	"t1"."FieldFloat", 
+	"t1"."FieldDateTime", 
+	"t1"."FieldGuid", 
+	"t1"."FieldDecimal", 
+	"t1"."FieldDate", 
+	"t1"."FieldEnumString", 
 	"t1"."FieldEnumNumber"
 FROM
 	"TestMerge2" "t1"

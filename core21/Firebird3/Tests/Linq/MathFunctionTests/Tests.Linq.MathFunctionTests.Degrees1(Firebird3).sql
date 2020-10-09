@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(("p"."MoneyValue" * 180) / PI()) as "c1"
 		FROM
 			"LinqDataTypes" "p"
