@@ -7,5 +7,8 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` <> 1
+	CASE
+		WHEN `p`.`ParentID` = 1 THEN 10
+		ELSE 20
+	END = 20
 
