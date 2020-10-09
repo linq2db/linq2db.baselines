@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017 (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [p]

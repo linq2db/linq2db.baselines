@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t].[ID],
-	[t].[MoneyValue],
-	[t].[DateTimeValue],
-	[t].[DateTimeValue2],
-	[t].[BoolValue],
-	[t].[GuidValue],
-	[t].[SmallIntValue],
-	[t].[IntValue],
-	[t].[BigIntValue],
+SELECT 
+	[t].[ID], 
+	[t].[MoneyValue], 
+	[t].[DateTimeValue], 
+	[t].[DateTimeValue2], 
+	[t].[BoolValue], 
+	[t].[GuidValue], 
+	[t].[SmallIntValue], 
+	[t].[IntValue], 
+	[t].[BigIntValue], 
 	[t].[StringValue]
 FROM
 	[LinqDataTypes] [t]
@@ -21,17 +21,17 @@ BeforeExecute
 -- SqlServer.2017
 
 MERGE INTO [LinqDataTypes] [Target]
-USING (
-	SELECT
-		[t].[ID],
-		[t].[MoneyValue],
-		[t].[DateTimeValue],
-		[t].[DateTimeValue2],
-		[t].[BoolValue],
-		[t].[GuidValue],
-		[t].[SmallIntValue],
-		[t].[IntValue],
-		[t].[BigIntValue],
+USING ( 
+	SELECT 
+		[t].[ID], 
+		[t].[MoneyValue], 
+		[t].[DateTimeValue], 
+		[t].[DateTimeValue2], 
+		[t].[BoolValue], 
+		[t].[GuidValue], 
+		[t].[SmallIntValue], 
+		[t].[IntValue], 
+		[t].[BigIntValue], 
 		[t].[StringValue]
 	FROM
 		[LinqDataTypes] [t]

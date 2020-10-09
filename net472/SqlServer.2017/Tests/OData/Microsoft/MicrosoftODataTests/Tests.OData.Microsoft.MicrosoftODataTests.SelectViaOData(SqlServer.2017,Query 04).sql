@@ -26,9 +26,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	N'Title',
-	[selectParam].[Title],
+SELECT 
+	N'Title', 
+	[selectParam].[Title], 
 	Min([selectParam].[YearsExperience])
 FROM
 	[odata_person] [selectParam]

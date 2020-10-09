@@ -11,8 +11,8 @@ SET     @p_2 = 3
 DECLARE @param Int -- Int32
 SET     @param = 4
 
-SELECT TOP (@take)
-	[o].[ParentID],
+SELECT TOP (@take) 
+	[o].[ParentID], 
 	[o].[Value1]
 FROM
 	[Parent] [o]

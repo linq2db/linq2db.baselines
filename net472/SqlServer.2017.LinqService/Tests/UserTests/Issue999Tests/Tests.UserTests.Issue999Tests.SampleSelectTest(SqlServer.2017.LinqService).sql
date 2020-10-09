@@ -11,7 +11,7 @@ CREATE TABLE [User]
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[u].[city]
 FROM
 	[User] [u]
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[u].[street]
 FROM
 	[User] [u]

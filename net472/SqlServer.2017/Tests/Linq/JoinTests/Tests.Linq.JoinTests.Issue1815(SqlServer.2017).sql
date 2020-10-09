@@ -52,12 +52,12 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
+SELECT TOP (@take) 
+	[x].[InId], 
+	[j].[InId], 
+	[j].[InMaxQuantity], 
+	[j].[InMinQuantity], 
+	[x].[InMinQuantity], 
 	[x].[InMaxQuantity]
 FROM
 	[StLink] [x]
@@ -70,12 +70,12 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
+SELECT TOP (@take) 
+	[x].[InId], 
+	[j].[InId], 
+	[j].[InMaxQuantity], 
+	[j].[InMinQuantity], 
+	[x].[InMinQuantity], 
 	[x].[InMaxQuantity]
 FROM
 	[StLink] [x]

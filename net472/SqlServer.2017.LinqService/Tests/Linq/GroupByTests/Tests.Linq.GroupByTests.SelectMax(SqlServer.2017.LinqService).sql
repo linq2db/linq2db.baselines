@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	Max([t1].[ChildID])
 FROM
 	[Child] [t1]

@@ -66,13 +66,13 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t1].[c2],
+SELECT 
+	[t1].[c2], 
 	Count(*)
 FROM
-	(
-		SELECT
-			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [c1],
+	( 
+		SELECT 
+			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [c1], 
 			CASE WHEN [selectParam].[TradingStatus] = N'D' THEN 1 ELSE 0 END as [c2]
 		FROM
 			[Issue913Test] [selectParam]

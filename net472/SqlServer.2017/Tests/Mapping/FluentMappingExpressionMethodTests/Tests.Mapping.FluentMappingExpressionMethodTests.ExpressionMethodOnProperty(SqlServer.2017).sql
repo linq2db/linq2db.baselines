@@ -40,7 +40,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InstanceClass] [t]

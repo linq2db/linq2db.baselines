@@ -199,8 +199,8 @@ UPDATE
 SET
 	[t1].[Value1] = 1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[x].[Value1]
 		FROM
 			[Parent] [x]
@@ -216,8 +216,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[p].[ParentID],
+SELECT TOP (@take) 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

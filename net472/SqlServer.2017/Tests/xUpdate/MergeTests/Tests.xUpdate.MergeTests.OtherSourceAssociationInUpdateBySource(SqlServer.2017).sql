@@ -263,8 +263,8 @@ BeforeExecute
 -- SqlServer.2017
 
 MERGE INTO [Person] [Target]
-USING (
-	SELECT
+USING ( 
+	SELECT 
 		[t1].[PersonID] as [ID]
 	FROM
 		[Person] [t1]
@@ -278,17 +278,17 @@ WHEN NOT MATCHED By Source AND [Target].[FirstName] = N'first 3' THEN UPDATE
 SET
 	[Target].[FirstName] = N'Updated',
 	[Target].[LastName] = (
-		SELECT
+		SELECT 
 			[a_Person].[Diagnosis]
 		FROM
 			[Patient] [a_Patient_1]
-				CROSS APPLY (
-					SELECT
+				CROSS APPLY ( 
+					SELECT 
 						[a_Patient].[Diagnosis]
 					FROM
 						[Person] [t3]
-							OUTER APPLY (
-								SELECT
+							OUTER APPLY ( 
+								SELECT 
 									[t2].[Diagnosis]
 								FROM
 									[Patient] [t2]
@@ -306,11 +306,11 @@ SET
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]

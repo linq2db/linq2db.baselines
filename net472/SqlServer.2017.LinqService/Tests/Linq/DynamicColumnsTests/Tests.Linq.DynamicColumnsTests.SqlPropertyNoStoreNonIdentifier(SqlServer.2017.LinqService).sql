@@ -31,7 +31,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[d].[Not Identifier]
 FROM
 	[DynamicTable] [d]

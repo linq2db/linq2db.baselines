@@ -103,7 +103,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	STRING_AGG([t].[Value4], ' -> ')
 FROM
 	[SampleClass] [t]

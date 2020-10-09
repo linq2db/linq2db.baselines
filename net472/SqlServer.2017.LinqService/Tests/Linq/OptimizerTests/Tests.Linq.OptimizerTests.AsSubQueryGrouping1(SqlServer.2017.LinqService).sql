@@ -589,11 +589,11 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	COUNT(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[t1].[Key1]
 		FROM
 			[FirstOptimizerData] [t1]

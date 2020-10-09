@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Taxonomy]
 FROM
 	[Doctor] [t1]
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	Lower([p].[Taxonomy])
 FROM
 	[Doctor] [p]

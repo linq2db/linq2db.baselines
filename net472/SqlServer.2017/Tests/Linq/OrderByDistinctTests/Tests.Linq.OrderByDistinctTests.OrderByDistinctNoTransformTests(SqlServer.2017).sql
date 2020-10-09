@@ -48,8 +48,8 @@ SET     @skip = 0
 DECLARE @take Int -- Int32
 SET     @take = 3
 
-SELECT DISTINCT
-	[x].[DuplicateData],
+SELECT DISTINCT 
+	[x].[DuplicateData], 
 	[x].[OrderData1]
 FROM
 	[OrderByDistinctData] [x]

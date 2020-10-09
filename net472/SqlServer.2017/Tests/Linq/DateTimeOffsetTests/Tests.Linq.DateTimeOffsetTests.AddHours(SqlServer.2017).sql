@@ -48,7 +48,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	DateAdd(hour, 22, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

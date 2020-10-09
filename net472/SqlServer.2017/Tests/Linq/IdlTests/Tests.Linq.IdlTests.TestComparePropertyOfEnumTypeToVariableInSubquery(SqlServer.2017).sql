@@ -3,8 +3,8 @@
 DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = N'O'
 
-SELECT
-	[x].[PersonID],
+SELECT 
+	[x].[PersonID], 
 	[x].[Diagnosis]
 FROM
 	[Patient] [x]

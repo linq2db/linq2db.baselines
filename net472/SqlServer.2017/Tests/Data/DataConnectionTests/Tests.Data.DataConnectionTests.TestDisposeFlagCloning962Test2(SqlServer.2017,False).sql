@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	N'test1'
 
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	N'test2'
 

@@ -30,7 +30,7 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [p]
@@ -56,7 +56,7 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [p]

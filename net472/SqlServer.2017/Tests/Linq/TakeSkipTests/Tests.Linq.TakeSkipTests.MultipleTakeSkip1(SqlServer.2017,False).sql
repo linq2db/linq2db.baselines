@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

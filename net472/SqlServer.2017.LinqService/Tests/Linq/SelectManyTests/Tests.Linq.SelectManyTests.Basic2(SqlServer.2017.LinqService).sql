@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[c_1].[ParentID]
 FROM
 	[Parent] [cp],

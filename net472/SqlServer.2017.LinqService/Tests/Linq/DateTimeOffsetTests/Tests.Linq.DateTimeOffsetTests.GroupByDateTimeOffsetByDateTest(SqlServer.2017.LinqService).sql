@@ -480,12 +480,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(Date, [selectParam].[TransactionDate]) as [c1]
 		FROM
 			[Transactions] [selectParam]

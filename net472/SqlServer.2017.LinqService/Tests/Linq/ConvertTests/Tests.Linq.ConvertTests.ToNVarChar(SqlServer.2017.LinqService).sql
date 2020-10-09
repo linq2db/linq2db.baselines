@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	Convert(NVarChar(20), [t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

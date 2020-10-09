@@ -103,8 +103,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	Max([t1].[Value1]),
+SELECT 
+	Max([t1].[Value1]), 
 	STRING_AGG([t1].[Value1], N' -> ')
 FROM
 	[SampleClass] [t1]

@@ -48,7 +48,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	DateAdd(quarter, -1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

@@ -7,7 +7,7 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]
@@ -26,7 +26,7 @@ INSERT BULK [TempTable](ID
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[t].[ID]
 FROM
 	[Parent] [p]

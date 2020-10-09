@@ -65,7 +65,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
@@ -76,7 +76,7 @@ OFFSET 3 ROWS
 BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

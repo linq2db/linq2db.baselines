@@ -67,9 +67,9 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT TOP (@take)
+		SELECT TOP (@take) 
 			*
 		FROM
 			[TakeSkipClass] [t1]

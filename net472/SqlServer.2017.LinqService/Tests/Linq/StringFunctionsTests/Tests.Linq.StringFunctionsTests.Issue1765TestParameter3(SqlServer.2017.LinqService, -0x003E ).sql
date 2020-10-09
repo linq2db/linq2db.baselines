@@ -105,7 +105,7 @@ BeforeExecute
 DECLARE @separator VarChar(8000) -- AnsiString
 SET     @separator = N' -> '
 
-SELECT
+SELECT 
 	STRING_AGG([t1].[Value4], @separator) WITHIN GROUP (ORDER BY [t1].[Value4], [t1].[Value3] DESC)
 FROM
 	[SampleClass] [t1]

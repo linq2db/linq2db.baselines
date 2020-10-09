@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	DateAdd(quarter, [t].[SmallIntValue], [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

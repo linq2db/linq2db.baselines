@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Child] [c_1]
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 UNION
-SELECT
+SELECT 
 	[c_2].[ParentID]
 FROM
 	[Child] [c_2]

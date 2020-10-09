@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-SELECT
-	[x].[ParentID],
+SELECT 
+	[x].[ParentID], 
 	[x].[Value1]
 FROM
 	[Parent] [x]
