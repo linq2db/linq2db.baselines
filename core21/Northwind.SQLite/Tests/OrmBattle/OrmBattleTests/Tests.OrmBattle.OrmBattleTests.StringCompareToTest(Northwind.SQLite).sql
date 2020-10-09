@@ -99,6 +99,12 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	[c_1].[City] >= 'Seattle'
+	CASE
+		WHEN [c_1].[City] > 'Seattle'
+			THEN 1
+		WHEN [c_1].[City] = 'Seattle'
+			THEN 0
+		ELSE -1
+	END >= 0
 LIMIT @take
 

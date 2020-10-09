@@ -51,7 +51,7 @@ FROM
 			[Issue1983Person] [p]
 	) [cu]
 WHERE
-	([cu].[CountOfCards] = 0 OR [cu].[CountOfCards] <> 0)
+	([cu].[CountOfCards] = 0 OR ([cu].[CountOfCards] <> 0 OR [cu].[CountOfCards] IS NULL))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -100,7 +100,7 @@ FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
 WHERE
-	([cu_1].[ex] = 0 OR [cu_1].[ex] <> 0)
+	([cu_1].[ex] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -157,7 +157,7 @@ FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
 WHERE
-	([cu_1].[cnt] = 0 OR [cu_1].[ex] <> 0)
+	([cu_1].[cnt] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

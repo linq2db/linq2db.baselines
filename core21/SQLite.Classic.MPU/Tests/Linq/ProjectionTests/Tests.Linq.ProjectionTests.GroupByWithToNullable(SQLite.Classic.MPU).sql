@@ -4,19 +4,26 @@ DECLARE @take  -- Int32
 SET     @take = 1000
 
 SELECT
-	[a_Patient].[Diagnosis],
-	[a_Patient].[PersonID],
-	Avg([selectParam].[PersonID])
+	[t1].[Diagnosis],
+	[t1].[PersonID_1],
+	Avg([t1].[PersonID])
 FROM
-	[Person] [selectParam]
-		LEFT JOIN [Patient] [a_Patient] ON [selectParam].[PersonID] = [a_Patient].[PersonID]
+	(
+		SELECT
+			[selectParam].[PersonID],
+			[a_Patient].[PersonID] as [PersonID_1],
+			[a_Patient].[Diagnosis]
+		FROM
+			[Person] [selectParam]
+				LEFT JOIN [Patient] [a_Patient] ON [selectParam].[PersonID] = [a_Patient].[PersonID]
+	) [t1]
 GROUP BY
-	[selectParam].[PersonID],
-	[a_Patient].[PersonID],
-	[a_Patient].[Diagnosis]
+	[t1].[PersonID],
+	[t1].[PersonID_1],
+	[t1].[Diagnosis]
 HAVING
-	[selectParam].[PersonID] = 1
+	[t1].[PersonID] = 1
 ORDER BY
-	[a_Patient].[Diagnosis] DESC
+	[t1].[Diagnosis] DESC
 LIMIT @take
 

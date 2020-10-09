@@ -31,7 +31,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	0 <= CASE
+		WHEN [i].[StrValue] > '4' THEN 1
+		WHEN [i].[StrValue] = '4' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -45,7 +49,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	CASE
+		WHEN [i].[StrValue] > '4' THEN 1
+		WHEN [i].[StrValue] = '4' THEN 0
+		ELSE -1
+	END >= 0
 LIMIT @take
 
 BeforeExecute
@@ -59,7 +67,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	0 >= CASE
+		WHEN [i].[StrValue] > '2' THEN 1
+		WHEN [i].[StrValue] = '2' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -73,7 +85,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	CASE
+		WHEN [i].[StrValue] > '2' THEN 1
+		WHEN [i].[StrValue] = '2' THEN 0
+		ELSE -1
+	END <= 0
 LIMIT @take
 
 BeforeExecute
@@ -87,7 +103,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	0 < CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -101,7 +121,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END > 0
 LIMIT @take
 
 BeforeExecute
@@ -115,7 +139,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	0 > CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -129,7 +157,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END < 0
 LIMIT @take
 
 BeforeExecute
@@ -143,7 +175,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '3'
+	0 = CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -157,7 +193,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '3'
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END = 0
 LIMIT @take
 
 BeforeExecute
@@ -171,7 +211,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	0 >= CASE
+		WHEN [i].[StrValue] > '2' THEN 1
+		WHEN [i].[StrValue] = '2' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -185,7 +229,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	CASE
+		WHEN [i].[StrValue] > '2' THEN 1
+		WHEN [i].[StrValue] = '2' THEN 0
+		ELSE -1
+	END <= 0
 LIMIT @take
 
 BeforeExecute
@@ -199,7 +247,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	0 <= CASE
+		WHEN [i].[StrValue] > '4' THEN 1
+		WHEN [i].[StrValue] = '4' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -213,7 +265,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	CASE
+		WHEN [i].[StrValue] > '4' THEN 1
+		WHEN [i].[StrValue] = '4' THEN 0
+		ELSE -1
+	END >= 0
 LIMIT @take
 
 BeforeExecute
@@ -227,7 +283,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	0 > CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -241,7 +301,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END < 0
 LIMIT @take
 
 BeforeExecute
@@ -255,7 +319,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	0 < CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -269,7 +337,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END > 0
 LIMIT @take
 
 BeforeExecute
@@ -283,7 +355,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
+	0 <= CASE
+		WHEN [i].[StrValue] > '5' THEN 1
+		WHEN [i].[StrValue] = '5' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -297,7 +373,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
+	CASE
+		WHEN [i].[StrValue] > '5' THEN 1
+		WHEN [i].[StrValue] = '5' THEN 0
+		ELSE -1
+	END >= 0
 LIMIT @take
 
 BeforeExecute
@@ -311,7 +391,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '1'
+	0 >= CASE
+		WHEN [i].[StrValue] > '1' THEN 1
+		WHEN [i].[StrValue] = '1' THEN 0
+		ELSE -1
+	END
 LIMIT @take
 
 BeforeExecute
@@ -325,7 +409,11 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '1'
+	CASE
+		WHEN [i].[StrValue] > '1' THEN 1
+		WHEN [i].[StrValue] = '1' THEN 0
+		ELSE -1
+	END <= 0
 LIMIT @take
 
 BeforeExecute

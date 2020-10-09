@@ -100,5 +100,9 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[ShipCity] = 'Seattle'
+	CASE
+		WHEN [o].[ShipCity] = 'Seattle'
+			THEN 'Home'
+		ELSE 'Other'
+	END = 'Home'
 
