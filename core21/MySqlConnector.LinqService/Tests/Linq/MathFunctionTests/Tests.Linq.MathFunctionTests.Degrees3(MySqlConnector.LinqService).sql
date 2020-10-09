@@ -11,5 +11,5 @@ FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	(Cast(`t`.`c1` as Decimal(29,10)) IS NULL OR Cast(`t`.`c1` as Decimal(29,10)) <> 0.10000000000000001)
+	(Cast(`t`.`c1` as Decimal(29,10)) <> 0.10000000000000001 OR Cast(`t`.`c1` as Decimal(29,10)) IS NULL)
 
