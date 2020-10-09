@@ -9,8 +9,8 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
@@ -26,8 +26,8 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
@@ -35,9 +35,9 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -59,19 +59,19 @@ INSERT INTO [Parent]
 	[ParentID],
 	[Value1]
 )
-SELECT
-	[t1].[ParentID] + 1000,
+SELECT 
+	[t1].[ParentID] + 1000, 
 	[t1].[Value1]
 FROM
-	(
-		SELECT
-			[c_1].[ParentID],
+	( 
+		SELECT 
+			[c_1].[ParentID], 
 			Convert(Int, Floor(Convert(Float, [c_1].[ChildID]) / 10)) as [Value1]
 		FROM
 			[Child] [c_1]
 		UNION
-		SELECT
-			IIF([c_2].[ParentID] IS NULL, 0, [c_2].[ParentID]) as [ParentID],
+		SELECT 
+			IIF([c_2].[ParentID] IS NULL, 0, [c_2].[ParentID]) as [ParentID], 
 			Floor(Convert(Float, IIF([c_2].[GrandChildID] IS NULL, 0, [c_2].[GrandChildID])) / 100) as [Value1]
 		FROM
 			[GrandChild] [c_2]
@@ -80,7 +80,7 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [c_1]

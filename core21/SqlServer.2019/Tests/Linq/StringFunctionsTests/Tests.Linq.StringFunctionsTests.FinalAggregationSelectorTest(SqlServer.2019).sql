@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	STRING_AGG([t1].[Value1], N' -> ')
 FROM
 	[SampleClass] [t1]

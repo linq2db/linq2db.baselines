@@ -32,8 +32,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[Id],
+SELECT TOP (@take) 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass] [_]
@@ -59,8 +59,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[Id],
+SELECT TOP (@take) 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass] [_]

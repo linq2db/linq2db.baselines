@@ -101,10 +101,10 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 MERGE INTO [GrandChild] [Target]
-USING (
-	SELECT
-		[r].[ParentID] + [t2].[ChildID] as [source_field0],
-		[r].[ParentID] as [LeftId],
+USING ( 
+	SELECT 
+		[r].[ParentID] + [t2].[ChildID] as [source_field0], 
+		[r].[ParentID] as [LeftId], 
 		[t2].[ChildID] as [RightId]
 	FROM
 		[Parent] [r],
@@ -135,9 +135,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[GrandChildID],
-	[t1].[ParentID],
+SELECT 
+	[t1].[GrandChildID], 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[GrandChild] [t1]

@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[_1].[c1]
 FROM
 	[Parent] [cp]
-		INNER JOIN (
-			SELECT
-				[_].[ParentID] + 1 as [c1],
+		INNER JOIN ( 
+			SELECT 
+				[_].[ParentID] + 1 as [c1], 
 				[_].[ParentID]
 			FROM
 				[Child] [_]

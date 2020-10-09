@@ -3,19 +3,19 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
+SELECT 
+	[key_data_result].[ParentID], 
+	[key_data_result].[Value1], 
 	[detail].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
-			[t1].[ParentID],
+	( 
+		SELECT DISTINCT 
+			[t1].[ParentID], 
 			[t1].[Value1]
 		FROM
-			(
-				SELECT TOP (@take)
-					[x].[ParentID],
+			( 
+				SELECT TOP (@take) 
+					[x].[ParentID], 
 					[x].[Value1]
 				FROM
 					[Parent] [x]
@@ -30,8 +30,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[x].[ParentID],
+SELECT TOP (@take) 
+	[x].[ParentID], 
 	[x].[Value1]
 FROM
 	[Parent] [x]

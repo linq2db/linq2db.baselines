@@ -26,9 +26,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[entity].[ID],
-	[entity].[BigIntValue],
+SELECT 
+	[entity].[ID], 
+	[entity].[BigIntValue], 
 	[entity].[IntValue]
 FROM
 	[LinqDataTypes] [entity]

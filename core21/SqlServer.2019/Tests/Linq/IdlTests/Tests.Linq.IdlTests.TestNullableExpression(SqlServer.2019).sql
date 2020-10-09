@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[c_1].[PersonID]
 FROM
 	[Person] [c_1]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	DatePart(weekday, [t].[DateTimeValue]) - 1
 FROM
 	[LinqDataTypes] [t]

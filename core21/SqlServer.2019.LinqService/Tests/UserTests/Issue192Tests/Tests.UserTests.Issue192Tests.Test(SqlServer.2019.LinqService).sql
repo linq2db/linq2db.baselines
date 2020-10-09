@@ -55,7 +55,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[TypeConvertTable] [_]
@@ -65,7 +65,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[TypeConvertTable] [_]
@@ -77,7 +77,7 @@ BeforeExecute
 DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[TypeConvertTable] [_]
@@ -91,9 +91,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_2 = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -107,9 +107,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -123,9 +123,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_2 = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -139,9 +139,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -155,9 +155,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_2 = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -171,9 +171,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -187,9 +187,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_2 = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -203,9 +203,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -219,9 +219,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_2 = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -235,9 +235,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -251,9 +251,9 @@ SET     @take = 1
 DECLARE @GuidValue_1 VarChar(50) -- AnsiString
 SET     @GuidValue_1 = N'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
@@ -267,9 +267,9 @@ SET     @take = 1
 DECLARE @GuidValue_1 VarChar(50) -- AnsiString
 SET     @GuidValue_1 = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
+SELECT TOP (@take) 
+	[_].[Name], 
+	[_].[BoolValue], 
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]

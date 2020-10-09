@@ -194,8 +194,8 @@ SET     @take = 5
 
 DELETE [t1]
 FROM
-	(
-		SELECT TOP (@take)
+	( 
+		SELECT TOP (@take) 
 			*
 		FROM
 			[Parent] [p]

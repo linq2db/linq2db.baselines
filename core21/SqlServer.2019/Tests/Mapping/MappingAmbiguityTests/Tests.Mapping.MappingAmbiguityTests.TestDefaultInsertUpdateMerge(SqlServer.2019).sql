@@ -18,14 +18,14 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 MERGE INTO [TestTable] [Target]
-USING (
-	SELECT
-		[Target_1].[ID],
-		[Target_1].[Field1],
-		[Target_1].[Field2],
-		[Target_1].[Field3],
-		[Target_1].[Field4],
-		[Target_1].[field11] as [field1_1],
+USING ( 
+	SELECT 
+		[Target_1].[ID], 
+		[Target_1].[Field1], 
+		[Target_1].[Field2], 
+		[Target_1].[Field3], 
+		[Target_1].[Field4], 
+		[Target_1].[field11] as [field1_1], 
 		[Target_1].[Field5]
 	FROM
 		[TestTable] [Target_1]

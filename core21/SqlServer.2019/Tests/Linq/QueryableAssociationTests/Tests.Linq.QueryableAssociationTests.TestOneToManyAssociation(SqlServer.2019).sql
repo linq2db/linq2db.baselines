@@ -65,18 +65,18 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[x_2].[Id],
+SELECT TOP (@take) 
+	[x_2].[Id], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[User] [x]
 		WHERE
 			[x].[UserGroupId] = [x_2].[Id] AND [x].[LanguageId] = 1
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[User] [x_1]

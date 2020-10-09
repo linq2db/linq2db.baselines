@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Max([id].[ChildID])
 		FROM
 			[Child] [id]

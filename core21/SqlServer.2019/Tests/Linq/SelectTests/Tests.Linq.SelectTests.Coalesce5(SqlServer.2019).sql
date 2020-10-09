@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	IIF((
-		SELECT
+		SELECT 
 			Max([c_1].[ChildID])
 		FROM
 			[Child] [c_1]
 		WHERE
 			[p].[ParentID] = [c_1].[ParentID]
 	) IS NULL, [p].[Value1], (
-		SELECT
+		SELECT 
 			Max([c_1].[ChildID])
 		FROM
 			[Child] [c_1]

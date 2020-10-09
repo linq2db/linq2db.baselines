@@ -23,7 +23,7 @@ SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[_].[ParentID]
 FROM
 	[Parent] [_]
@@ -42,17 +42,17 @@ UPDATE
 SET
 	[_2].[Value1] = @ParentID
 FROM
-	(
-		SELECT
-			[_1].[ParentID],
+	( 
+		SELECT 
+			[_1].[ParentID], 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					[Parent] [_]
 				WHERE
 					[_].[ParentID] = @id
-			) as [ex],
+			) as [ex], 
 			[_1].[Value1]
 		FROM
 			[Parent] [_1]

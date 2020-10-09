@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[a_Parent].[ParentID]
 FROM
 	[Child] [ch]
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [p]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Max([_].[ID])
 FROM
 	[AllTypes] [_]
@@ -11,7 +11,7 @@ BeforeExecute
 
 MERGE INTO [AllTypes] [Target]
 USING (	VALUES
-		(700,char(0),char(0),N'test' + char(0) + N'it')) [Source]
+		(700, char(0), char(0), N'test' + char(0) + N'it')) [Source]
 (
 	[ID], 
 	[charDataType], 
@@ -40,10 +40,10 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[t1].[ID],
-	[t1].[charDataType],
-	[t1].[ncharDataType],
+SELECT TOP (@take) 
+	[t1].[ID], 
+	[t1].[charDataType], 
+	[t1].[ncharDataType], 
 	[t1].[nvarcharDataType]
 FROM
 	[AllTypes] [t1]

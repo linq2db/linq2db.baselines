@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			IIF([p].[MoneyValue] > 5.1, [p].[MoneyValue], 5.1) as [c1]
 		FROM
 			[LinqDataTypes] [p]

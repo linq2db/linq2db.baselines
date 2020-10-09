@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Max([x].[PersonID])
 FROM
 	[Person] [x]
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [p]

@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[cc],
+SELECT 
+	[t1].[cc], 
 	[t1].[bb]
 FROM
 	[aa] [t1]

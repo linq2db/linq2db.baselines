@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Sum(IIF([a_Parent].[Value1] IS NULL, 0, [a_Parent].[Value1]))
 FROM
 	[Child] [t1]

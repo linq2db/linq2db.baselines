@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(Decimal(29,10), [t].[MoneyValue]) as [c1]
 		FROM
 			[LinqDataTypes] [t]

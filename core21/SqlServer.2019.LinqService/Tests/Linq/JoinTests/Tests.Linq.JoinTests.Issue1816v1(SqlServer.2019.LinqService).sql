@@ -34,8 +34,8 @@ CREATE TABLE [stMain]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[v].[inId],
+SELECT 
+	[v].[inId], 
 	[r].[inIdState]
 FROM
 	[stVersions] [v]

@@ -41,7 +41,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InheritanceParent] [t1]
@@ -82,7 +82,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InheritanceParent] [t1]

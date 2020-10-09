@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[ch].[ParentID],
-	[ch].[ChildID],
-	[a_Parent].[ParentID],
+SELECT 
+	[ch].[ParentID], 
+	[ch].[ChildID], 
+	[a_Parent].[ParentID], 
 	[a_Parent].[Value1]
 FROM
 	[Child] [ch]

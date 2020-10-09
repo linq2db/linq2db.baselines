@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Exp(Convert(Float, [p].[MoneyValue]))) as [c1]
 		FROM
 			[LinqDataTypes] [p]

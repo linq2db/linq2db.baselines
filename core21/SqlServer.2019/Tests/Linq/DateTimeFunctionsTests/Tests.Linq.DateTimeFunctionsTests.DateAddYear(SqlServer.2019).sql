@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	DateAdd(year, 11, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

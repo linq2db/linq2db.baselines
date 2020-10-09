@@ -33,9 +33,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT TOP (2)
-	[_].[ID],
-	[_].[Array],
+SELECT TOP (2) 
+	[_].[ID], 
+	[_].[Array], 
 	[_].[Binary]
 FROM
 	[Issue1303] [_]
@@ -45,9 +45,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT TOP (2)
-	[_].[ID],
-	[_].[Array],
+SELECT TOP (2) 
+	[_].[ID], 
+	[_].[Array], 
 	[_].[Binary]
 FROM
 	[Issue1303] [_]
@@ -57,9 +57,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT TOP (2)
-	[_].[ID],
-	[_].[Array],
+SELECT TOP (2) 
+	[_].[ID], 
+	[_].[Array], 
 	[_].[Binary]
 FROM
 	[Issue1303] [_]

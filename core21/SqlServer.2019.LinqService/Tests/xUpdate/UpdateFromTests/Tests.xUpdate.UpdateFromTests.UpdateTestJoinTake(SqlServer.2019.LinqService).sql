@@ -78,13 +78,13 @@ SET
 	[t1].[Value2] = ([t1].[Value2] * [t1].[Value2_1]) * @int2,
 	[t1].[Value3] = ([t1].[Value3] * [t1].[Value3_1]) * @int3
 FROM
-	(
-		SELECT TOP (@take)
-			[c_1].[Value1],
-			[t].[Value1] as [Value1_1],
-			[c_1].[Value2],
-			[t].[Value2] as [Value2_1],
-			[c_1].[Value3],
+	( 
+		SELECT TOP (@take) 
+			[c_1].[Value1], 
+			[t].[Value1] as [Value1_1], 
+			[c_1].[Value2], 
+			[t].[Value2] as [Value2_1], 
+			[c_1].[Value3], 
 			[t].[Value3] as [Value3_1]
 		FROM
 			[UpdatedEntities] [c_1]
@@ -96,10 +96,10 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[v].[id],
-	[v].[Value1],
-	[v].[Value2],
+SELECT 
+	[v].[id], 
+	[v].[Value1], 
+	[v].[Value2], 
 	[v].[Value3]
 FROM
 	[UpdatedEntities] [v]

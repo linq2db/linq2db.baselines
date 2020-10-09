@@ -34,9 +34,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[Id],
-	[t1].[BoolValue],
+SELECT 
+	[t1].[Id], 
+	[t1].[BoolValue], 
 	[t1].[NullableBoolValue]
 FROM
 	[WhereCases] [t1]
@@ -44,9 +44,9 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -56,9 +56,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -68,9 +68,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -80,9 +80,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -92,9 +92,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -104,9 +104,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -116,9 +116,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -128,9 +128,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -140,9 +140,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -152,9 +152,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -164,9 +164,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -177,9 +177,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -189,9 +189,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -202,9 +202,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -214,9 +214,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -227,9 +227,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -239,9 +239,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -251,9 +251,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -263,9 +263,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -275,9 +275,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -287,9 +287,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -299,9 +299,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -311,9 +311,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -323,9 +323,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -335,9 +335,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -348,9 +348,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -360,9 +360,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -373,9 +373,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -385,9 +385,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -398,9 +398,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -410,9 +410,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -423,9 +423,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]

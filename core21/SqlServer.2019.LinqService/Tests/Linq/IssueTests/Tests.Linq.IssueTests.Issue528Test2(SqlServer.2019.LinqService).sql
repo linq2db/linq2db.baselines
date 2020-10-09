@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[t1].[FirstName]
 FROM
 	[Person] [t1]
@@ -13,11 +13,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'Jane'
 
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
+SELECT 
+	[keyParam].[FirstName], 
+	[keyParam].[PersonID], 
+	[keyParam].[LastName], 
+	[keyParam].[MiddleName], 
 	[keyParam].[Gender]
 FROM
 	[Person] [keyParam]
@@ -29,11 +29,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'John'
 
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
+SELECT 
+	[keyParam].[FirstName], 
+	[keyParam].[PersonID], 
+	[keyParam].[LastName], 
+	[keyParam].[MiddleName], 
 	[keyParam].[Gender]
 FROM
 	[Person] [keyParam]
@@ -45,11 +45,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'Jürgen'
 
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
+SELECT 
+	[keyParam].[FirstName], 
+	[keyParam].[PersonID], 
+	[keyParam].[LastName], 
+	[keyParam].[MiddleName], 
 	[keyParam].[Gender]
 FROM
 	[Person] [keyParam]
@@ -61,11 +61,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'Tester'
 
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
+SELECT 
+	[keyParam].[FirstName], 
+	[keyParam].[PersonID], 
+	[keyParam].[LastName], 
+	[keyParam].[MiddleName], 
 	[keyParam].[Gender]
 FROM
 	[Person] [keyParam]

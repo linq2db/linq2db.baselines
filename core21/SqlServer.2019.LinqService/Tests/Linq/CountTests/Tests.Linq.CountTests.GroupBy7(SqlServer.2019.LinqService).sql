@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	Count(*),
+SELECT 
+	Count(*), 
 	Max([t1].[ChildID])
 FROM
 	[Child] [t1]

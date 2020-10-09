@@ -224,9 +224,9 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 MERGE INTO [TestMerge1] [Target]
-USING (
-	SELECT
-		[s].[Id],
+USING ( 
+	SELECT 
+		[s].[Id], 
 		[s].[Field1]
 	FROM
 		[TestMerge2] [s]
@@ -246,12 +246,12 @@ SET
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[Id],
-	[t1].[Field1],
-	[t1].[Field2],
-	[t1].[Field3],
-	[t1].[Field4],
+SELECT 
+	[t1].[Id], 
+	[t1].[Field1], 
+	[t1].[Field2], 
+	[t1].[Field3], 
+	[t1].[Field4], 
 	[t1].[Field5]
 FROM
 	[TestMerge1] [t1]

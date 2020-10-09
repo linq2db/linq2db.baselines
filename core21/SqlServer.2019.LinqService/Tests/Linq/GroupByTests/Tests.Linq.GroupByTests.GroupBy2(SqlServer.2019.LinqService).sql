@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			IIF([selectParam].[Value1] IS NULL, [c_1].[ChildID], [selectParam].[Value1]) as [c1]
 		FROM
 			[Parent] [selectParam]

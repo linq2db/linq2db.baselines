@@ -19,9 +19,9 @@ BeforeExecute
 DECLARE @id_1 Int -- Int32
 SET     @id_1 = 36089
 
-SELECT
-	[t].[ID],
-	[t].[charDataType],
+SELECT 
+	[t].[ID], 
+	[t].[charDataType], 
 	[t].[ncharDataType]
 FROM
 	[AllTypes] [t]
@@ -34,10 +34,10 @@ DECLARE @id_1 Int -- Int32
 SET     @id_1 = 36089
 
 MERGE INTO [AllTypes] [Target]
-USING (
-	SELECT
-		[t].[ID],
-		[t].[charDataType],
+USING ( 
+	SELECT 
+		[t].[ID], 
+		[t].[charDataType], 
 		[t].[ncharDataType]
 	FROM
 		[AllTypes] [t]

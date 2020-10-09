@@ -82,9 +82,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[p].[Id],
-	[p].[TargetName],
+SELECT 
+	[p].[Id], 
+	[p].[TargetName], 
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]

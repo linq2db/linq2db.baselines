@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[r].[ID],
+SELECT 
+	[r].[ID], 
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]

@@ -24,8 +24,8 @@ CREATE TABLE [Books]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[author].[Id],
+SELECT 
+	[author].[Id], 
 	[author].[Name]
 FROM
 	[Authors] [author]

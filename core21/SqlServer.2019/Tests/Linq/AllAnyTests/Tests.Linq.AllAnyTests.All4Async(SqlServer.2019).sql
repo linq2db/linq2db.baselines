@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
 
-SELECT
+SELECT 
 	CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]

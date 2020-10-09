@@ -33,7 +33,7 @@ BeforeExecute
 WITH [CTE_1] ([ParentID])
 AS
 (
-	SELECT
+	SELECT 
 		[c_1].[ParentID]
 	FROM
 		[CteChild] [c_1]
