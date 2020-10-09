@@ -27,14 +27,14 @@ SELECT
 	[t_1].[Value],
 	[t3].[Value1],
 	[t3].[Value2],
-	[t3].[is_empty]
+	[t3].[c1]
 FROM
 	[SampleClass] [t_1]
 		OUTER APPLY (
 			SELECT TOP (@take)
 				[t2].[Value1],
 				[t2].[Value2],
-				1 as [is_empty]
+				1 as [c1]
 			FROM
 				(
 					SELECT

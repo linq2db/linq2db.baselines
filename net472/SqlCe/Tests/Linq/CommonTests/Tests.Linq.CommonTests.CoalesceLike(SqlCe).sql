@@ -36,18 +36,20 @@ WHERE
 			WHEN [p].[FirstName] IS NULL
 				THEN NULL
 			ELSE CASE
-				WHEN [p].[FirstName] LIKE 'Jo%'
+				WHEN [p].[FirstName] LIKE 'Jo%' ESCAPE '~'
 					THEN 1
 				ELSE 0
 			END
 		END IS NULL
 			THEN 0
-		WHEN [p].[FirstName] IS NULL
-			THEN NULL
 		ELSE CASE
-			WHEN [p].[FirstName] LIKE 'Jo%'
-				THEN 1
-			ELSE 0
+			WHEN [p].[FirstName] IS NULL
+				THEN NULL
+			ELSE CASE
+				WHEN [p].[FirstName] LIKE 'Jo%' ESCAPE '~'
+					THEN 1
+				ELSE 0
+			END
 		END
 	END = 1
 

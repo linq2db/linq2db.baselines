@@ -11,5 +11,5 @@ FROM
 			[LinqDataTypes] [t]
 	) [p]
 WHERE
-	([p].[c1] = 1 AND [p].[c1] IS NOT NULL)
+	[p].[c1] = 1
 
