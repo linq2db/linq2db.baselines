@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @ps Text(3) -- String
-SET     @ps = '%[%'
+DECLARE @ps Text(4) -- String
+SET     @ps = '%~[%'
 
 SELECT
 	p."FirstName",
