@@ -35,7 +35,7 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"r"."BigIntValue"
 FROM
 	"LinqDataTypes" "r"

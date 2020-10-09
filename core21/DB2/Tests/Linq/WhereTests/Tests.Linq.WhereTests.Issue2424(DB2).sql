@@ -23,8 +23,8 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -35,8 +35,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -47,8 +47,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -59,8 +59,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -71,8 +71,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -83,8 +83,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -95,8 +95,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -107,8 +107,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -119,8 +119,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -131,8 +131,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -143,8 +143,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -155,8 +155,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -167,8 +167,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -179,8 +179,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -191,8 +191,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -203,8 +203,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -215,8 +215,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -227,8 +227,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -239,8 +239,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -251,8 +251,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -263,8 +263,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"
@@ -275,8 +275,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"i"."Id",
+SELECT 
+	"i"."Id", 
 	"i"."StrValue"
 FROM
 	"Isue2424Table" "i"

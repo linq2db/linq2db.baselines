@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"p"."FirstName"
 FROM
 	"Person" "p"
@@ -14,7 +14,7 @@ BeforeExecute
 DECLARE @ID VarChar(4) -- String
 SET     @ID = 'John'
 
-SELECT
+SELECT 
 	"p"."FirstName"
 FROM
 	"Person" "p"

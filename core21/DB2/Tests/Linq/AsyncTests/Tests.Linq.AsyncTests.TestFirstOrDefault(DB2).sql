@@ -9,8 +9,8 @@ SET     @p_2 = 3
 DECLARE @param Integer(4) -- Int32
 SET     @param = 4
 
-SELECT
-	"o"."ParentID",
+SELECT 
+	"o"."ParentID", 
 	"o"."Value1"
 FROM
 	"Parent" "o"

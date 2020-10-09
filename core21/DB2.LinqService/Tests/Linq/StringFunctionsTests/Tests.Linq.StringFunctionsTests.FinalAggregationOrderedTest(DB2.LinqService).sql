@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	LISTAGG("t"."Value1", ' -> ') WITHIN GROUP (ORDER BY "t"."Value1")
 FROM
 	"SampleClass" "t"
@@ -37,7 +37,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	LISTAGG("t"."Value1", ' -> ') WITHIN GROUP (ORDER BY "t"."Value1")
 FROM
 	"SampleClass" "t"
@@ -45,7 +45,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	LISTAGG("t"."Value1", ' -> ') WITHIN GROUP (ORDER BY "t"."Value1" DESC)
 FROM
 	"SampleClass" "t"
@@ -53,7 +53,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	LISTAGG("t"."Value1", ' -> ') WITHIN GROUP (ORDER BY "t"."Value1" DESC)
 FROM
 	"SampleClass" "t"

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."FirstName",
-	"t1"."LastName",
+SELECT 
+	"t1"."FirstName", 
+	"t1"."LastName", 
 	Count(*)
 FROM
 	"Person" "t1"

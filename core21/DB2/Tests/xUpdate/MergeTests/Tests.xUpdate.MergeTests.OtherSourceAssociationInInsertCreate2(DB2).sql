@@ -284,9 +284,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "Person" "Target"
-USING (
-	SELECT
-		"t1"."PersonID" as ID,
+USING ( 
+	SELECT 
+		"t1"."PersonID" as ID, 
 		"a_Patient"."Diagnosis"
 	FROM
 		"Person" "t1"
@@ -315,11 +315,11 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."FirstName",
-	"t1"."PersonID",
-	"t1"."LastName",
-	"t1"."MiddleName",
+SELECT 
+	"t1"."FirstName", 
+	"t1"."PersonID", 
+	"t1"."LastName", 
+	"t1"."MiddleName", 
 	"t1"."Gender"
 FROM
 	"Person" "t1"

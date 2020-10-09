@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."ParentID",
+SELECT 
+	"t1"."ParentID", 
 	"t1"."ChildID"
 FROM
 	"GrandChild" "t1"
@@ -17,7 +17,7 @@ SET     @ParentID = 1
 DECLARE @ChildID Integer(4) -- Int32
 SET     @ChildID = 11
 
-SELECT
+SELECT 
 	"ch"."GrandChildID"
 FROM
 	"GrandChild" "ch"

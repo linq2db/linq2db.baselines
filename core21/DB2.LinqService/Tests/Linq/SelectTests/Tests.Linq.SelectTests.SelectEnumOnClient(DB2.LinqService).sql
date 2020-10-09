@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"person_1"."PersonID"
 FROM
 	"Person" "person_1"

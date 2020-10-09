@@ -49,10 +49,10 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"f"."Id",
-	"ft"."Id",
-	"ft"."FactId",
+SELECT 
+	"f"."Id", 
+	"ft"."Id", 
+	"ft"."FactId", 
 	"ft"."Name"
 FROM
 	"Tag" "ft"

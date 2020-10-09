@@ -1,22 +1,22 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p1"."ParentID",
-	"p1"."Value1",
-	"t1"."ParentID",
+SELECT 
+	"p1"."ParentID", 
+	"p1"."Value1", 
+	"t1"."ParentID", 
 	"t1"."Sum_1"
 FROM
 	"Parent" "p1"
-		INNER JOIN (
-			SELECT
-				"p"."ParentID",
+		INNER JOIN ( 
+			SELECT 
+				"p"."ParentID", 
 				Sum("p"."ParentID") as "Sum_1"
 			FROM
 				"Parent" "p"
 			WHERE
 				EXISTS(
-					SELECT
+					SELECT 
 						*
 					FROM
 						"Child" "ch"

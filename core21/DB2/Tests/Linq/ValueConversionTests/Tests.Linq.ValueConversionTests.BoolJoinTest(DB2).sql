@@ -48,12 +48,12 @@ SET     @BoolValue = 'Y'
 DECLARE @BoolValue_2 VarChar(1) -- String
 SET     @BoolValue_2 = 'Y'
 
-SELECT
+SELECT 
 	"t1"."Enum"
 FROM
 	"ValueConversion" "t1"
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				"t2"."BoolValue"
 			FROM
 				"ValueConversion" "t2"

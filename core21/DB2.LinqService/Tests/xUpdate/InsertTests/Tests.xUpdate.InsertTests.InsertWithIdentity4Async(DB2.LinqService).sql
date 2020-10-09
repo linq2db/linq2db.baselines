@@ -43,11 +43,11 @@ BeforeExecute
 DECLARE @FirstName_1 VarChar(5) -- String
 SET     @FirstName_1 = 'John0'
 
-SELECT
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
+SELECT 
+	"p"."FirstName", 
+	"p"."PersonID", 
+	"p"."LastName", 
+	"p"."MiddleName", 
 	"p"."Gender"
 FROM
 	"Person" "p"
@@ -92,11 +92,11 @@ BeforeExecute
 DECLARE @FirstName_1 VarChar(5) -- String
 SET     @FirstName_1 = 'John1'
 
-SELECT
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
+SELECT 
+	"p"."FirstName", 
+	"p"."PersonID", 
+	"p"."LastName", 
+	"p"."MiddleName", 
 	"p"."Gender"
 FROM
 	"Person" "p"

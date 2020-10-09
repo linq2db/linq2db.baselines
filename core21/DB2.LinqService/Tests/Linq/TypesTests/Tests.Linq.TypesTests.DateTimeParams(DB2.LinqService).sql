@@ -3,7 +3,7 @@
 DECLARE @dateTime Timestamp(20) -- DateTime
 SET     @dateTime = '1992-01-11-01.11.21.100000'
 
-SELECT
+SELECT 
 	"t"."DateTimeValue"
 FROM
 	"LinqDataTypes" "t"
@@ -16,7 +16,7 @@ BeforeExecute
 DECLARE @dateTime Timestamp(20) -- DateTime
 SET     @dateTime = '1993-01-11-01.11.21.100000'
 
-SELECT
+SELECT 
 	"t"."DateTimeValue"
 FROM
 	"LinqDataTypes" "t"

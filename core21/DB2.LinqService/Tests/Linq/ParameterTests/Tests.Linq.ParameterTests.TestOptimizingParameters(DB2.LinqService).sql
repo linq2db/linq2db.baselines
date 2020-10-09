@@ -3,7 +3,7 @@
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" "_"

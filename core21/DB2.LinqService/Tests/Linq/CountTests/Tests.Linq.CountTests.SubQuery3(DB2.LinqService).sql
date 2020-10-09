@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."Value1",
+SELECT 
+	"p"."Value1", 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "t1"
 		WHERE
 			"p"."ParentID" = "t1"."ParentID"
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "c_1"

@@ -48,12 +48,12 @@ SET     @skip = 0
 DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	"t1"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
+	( 
+		SELECT 
+			"x"."DuplicateData", 
 			ROW_NUMBER() OVER (ORDER BY Max("x"."OrderData1")) as RN
 		FROM
 			"OrderByDistinctData" "x"
@@ -70,12 +70,12 @@ SET     @skip = 0
 DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	"t1"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
+	( 
+		SELECT 
+			"x"."DuplicateData", 
 			ROW_NUMBER() OVER (ORDER BY Max("x"."OrderData1")) as RN
 		FROM
 			"OrderByDistinctData" "x"
@@ -92,12 +92,12 @@ SET     @skip = 0
 DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	"t1"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
+	( 
+		SELECT 
+			"x"."DuplicateData", 
 			ROW_NUMBER() OVER (ORDER BY Min("x"."OrderData1") DESC) as RN
 		FROM
 			"OrderByDistinctData" "x"
@@ -114,12 +114,12 @@ SET     @skip = 0
 DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	"t1"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
+	( 
+		SELECT 
+			"x"."DuplicateData", 
 			ROW_NUMBER() OVER (ORDER BY Min("x"."OrderData1") DESC) as RN
 		FROM
 			"OrderByDistinctData" "x"

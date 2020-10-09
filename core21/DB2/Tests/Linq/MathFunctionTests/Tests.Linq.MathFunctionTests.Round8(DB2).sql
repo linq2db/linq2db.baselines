@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN Float("p"."MoneyValue") - Floor(Float("p"."MoneyValue")) = 0.5 AND Mod(Int(Floor(Float("p"."MoneyValue"))), 2) = 0
 					THEN Floor(Float("p"."MoneyValue"))

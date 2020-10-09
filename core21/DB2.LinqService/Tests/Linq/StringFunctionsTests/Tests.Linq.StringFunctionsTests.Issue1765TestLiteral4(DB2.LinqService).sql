@@ -29,8 +29,8 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	Max("t1"."Value4"),
+SELECT 
+	Max("t1"."Value4"), 
 	LISTAGG("t1"."Value4", ' -> ')
 FROM
 	"SampleClass" "t1"

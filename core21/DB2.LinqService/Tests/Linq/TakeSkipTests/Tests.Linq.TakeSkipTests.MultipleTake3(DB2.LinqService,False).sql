@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

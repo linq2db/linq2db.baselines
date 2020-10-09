@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Max("id"."ChildID")
 FROM
 	"Child" "id"

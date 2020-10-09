@@ -35,9 +35,9 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Name",
+SELECT 
+	"t"."Id", 
+	"t"."Name", 
 	"t"."Age"
 FROM
 	"PR_1598_SkipCustom_Table" "t"
@@ -66,9 +66,9 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Name",
+SELECT 
+	"t"."Id", 
+	"t"."Name", 
 	"t"."Age"
 FROM
 	"PR_1598_SkipCustom_Table" "t"

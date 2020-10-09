@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."ParentID",
+SELECT 
+	"t1"."ParentID", 
 	"t1"."ChildID"
 FROM
-	(
-		SELECT
-			"ch"."ParentID",
-			"ch"."ChildID",
+	( 
+		SELECT 
+			"ch"."ParentID", 
+			"ch"."ChildID", 
 			ROW_NUMBER() OVER () as RN
 		FROM
 			"Child" "ch"

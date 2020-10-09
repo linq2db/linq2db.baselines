@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"p"."ParentID"
 FROM
 	"Parent" "p"
-		LEFT JOIN (
-			SELECT
+		LEFT JOIN ( 
+			SELECT 
 				"tt"."ParentID" as "tt"
 			FROM
-				(
-					SELECT
-						Sum("t1"."ChildID") as "Sum_1",
+				( 
+					SELECT 
+						Sum("t1"."ChildID") as "Sum_1", 
 						"t1"."ParentID"
 					FROM
 						"Child" "t1"

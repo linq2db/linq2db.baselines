@@ -24,7 +24,7 @@ BeforeExecute
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"TakeSkipClass" "t1"

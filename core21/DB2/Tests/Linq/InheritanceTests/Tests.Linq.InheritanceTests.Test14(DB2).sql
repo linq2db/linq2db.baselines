@@ -3,7 +3,7 @@
 DECLARE @id Integer(4) -- Int32
 SET     @id = 10
 
-SELECT
+SELECT 
 	"x"."ChildID"
 FROM
 	"Child" "x"

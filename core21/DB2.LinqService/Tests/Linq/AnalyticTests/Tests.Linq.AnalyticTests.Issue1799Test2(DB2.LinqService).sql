@@ -29,16 +29,16 @@ CREATE TABLE "Issue1799Table3"
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"q"."User_1",
-	"p"."ProcessName",
-	"u"."UserGroups",
+SELECT 
+	"q"."User_1", 
+	"p"."ProcessName", 
+	"u"."UserGroups", 
 	Sum("q"."Diff")
 FROM
-	(
-		SELECT
-			"x"."EventUser" as "User_1",
-			"x"."ProcessID" as "Proc",
+	( 
+		SELECT 
+			"x"."EventUser" as "User_1", 
+			"x"."ProcessID" as "Proc", 
 			((Days("x"."EventTime") - Days(LAG("x"."EventTime") OVER(PARTITION BY "x"."EventUser", "x"."ProcessID" ORDER BY "x"."EventTime"))) * 86400 + MIDNIGHT_SECONDS("x"."EventTime") - MIDNIGHT_SECONDS(LAG("x"."EventTime") OVER(PARTITION BY "x"."EventUser", "x"."ProcessID" ORDER BY "x"."EventTime"))) / 60 as "Diff"
 		FROM
 			"Issue1799Table1" "x"

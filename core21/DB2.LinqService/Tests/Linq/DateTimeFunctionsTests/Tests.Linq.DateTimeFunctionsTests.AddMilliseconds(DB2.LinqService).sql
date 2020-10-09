@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t"."DateTimeValue" + (226 * 1000) Microsecond
 FROM
 	"LinqDataTypes" "t"
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t"."DateTimeValue"
 FROM
 	"LinqDataTypes" "t"

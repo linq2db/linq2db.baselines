@@ -11,7 +11,7 @@ CREATE TABLE "User"
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"u"."city"
 FROM
 	"User" "u"
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"u"."street"
 FROM
 	"User" "u"

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t1"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			To_Number(To_Char("a_Types"."DateTimeValue", 'YYYY')) as "c1"
 		FROM
 			"Parent" "selectParam"

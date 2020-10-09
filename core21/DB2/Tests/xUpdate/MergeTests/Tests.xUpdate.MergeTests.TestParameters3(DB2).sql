@@ -234,10 +234,10 @@ DECLARE @Val2_1 Integer(4) -- Int32
 SET     @Val2_1 = 2
 
 MERGE INTO "TestMerge1" "Target"
-USING (
-	SELECT
-		"_"."Id" as "OtherId",
-		"_"."Field1",
+USING ( 
+	SELECT 
+		"_"."Id" as "OtherId", 
+		"_"."Field1", 
 		@Val2 as "Field7"
 	FROM
 		"TestMerge2" "_"

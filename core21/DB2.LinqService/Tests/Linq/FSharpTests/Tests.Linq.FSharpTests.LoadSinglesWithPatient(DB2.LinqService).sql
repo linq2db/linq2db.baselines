@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."PersonID",
-	"p"."FirstName",
-	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender",
-	"a_Patient"."PersonID",
+SELECT 
+	"p"."PersonID", 
+	"p"."FirstName", 
+	"p"."LastName", 
+	"p"."MiddleName", 
+	"p"."Gender", 
+	"a_Patient"."PersonID", 
 	"a_Patient"."Diagnosis"
 FROM
 	"Person" "p"
@@ -19,13 +19,13 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."PersonID",
-	"p"."FirstName",
-	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender",
-	"a_Patient"."PersonID",
+SELECT 
+	"p"."PersonID", 
+	"p"."FirstName", 
+	"p"."LastName", 
+	"p"."MiddleName", 
+	"p"."Gender", 
+	"a_Patient"."PersonID", 
 	"a_Patient"."Diagnosis"
 FROM
 	"Person" "p"

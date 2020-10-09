@@ -255,12 +255,12 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
+SELECT 
+	"t1"."Id", 
+	"t1"."Field1", 
+	"t1"."Field2", 
+	"t1"."Field3", 
+	"t1"."Field4", 
 	"t1"."Field5"
 FROM
 	"TestMerge1" "t1"

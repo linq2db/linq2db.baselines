@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Min("t1"."ParentID")
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			"p"."ParentID"
 		FROM
 			"Parent" "p"

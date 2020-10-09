@@ -30,8 +30,8 @@ BeforeExecute
 DECLARE @text_1 VarChar(3) -- String
 SET     @text_1 = 'bla'
 
-SELECT
-	"f"."Id",
+SELECT 
+	"f"."Id", 
 	"f"."Text"
 FROM
 	"TestParametersTable" "f"

@@ -3,7 +3,7 @@
 
 SELECT
 	(
-		SELECT
+		SELECT 
 			"p"."Value1"
 		FROM
 			"Parent" "p"

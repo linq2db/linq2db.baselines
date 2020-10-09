@@ -224,11 +224,11 @@ DECLARE @param Integer(4) -- Int32
 SET     @param = 3
 
 MERGE INTO "TestMerge1" "Target"
-USING (
-	SELECT
-		"_"."Id",
-		"_"."Field1",
-		"_"."Field2",
+USING ( 
+	SELECT 
+		"_"."Id", 
+		"_"."Field1", 
+		"_"."Field2", 
 		"_"."Field3"
 	FROM
 		"TestMerge2" "_"

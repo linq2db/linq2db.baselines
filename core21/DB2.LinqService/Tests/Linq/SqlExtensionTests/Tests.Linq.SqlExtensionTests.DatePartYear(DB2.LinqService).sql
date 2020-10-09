@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	To_Number(To_Char("t"."DateTimeValue", 'YYYY'))
 FROM
 	"LinqDataTypes" "t"

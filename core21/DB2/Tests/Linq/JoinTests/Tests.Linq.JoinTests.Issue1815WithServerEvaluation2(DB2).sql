@@ -50,12 +50,12 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"x"."InId",
+SELECT 
+	"x"."InId", 
 	CASE
 		WHEN "j"."InId" IS NULL THEN "x"."InMinQuantity"
 		ELSE "j"."InMinQuantity"
-	END,
+	END, 
 	CASE
 		WHEN "j"."InId" IS NULL THEN "x"."InMaxQuantity"
 		ELSE "j"."InMaxQuantity"
@@ -70,12 +70,12 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"x"."InId",
+SELECT 
+	"x"."InId", 
 	CASE
 		WHEN "j"."InId" IS NULL THEN "x"."InMinQuantity"
 		ELSE "j"."InMinQuantity"
-	END,
+	END, 
 	CASE
 		WHEN "j"."InId" IS NULL THEN "x"."InMaxQuantity"
 		ELSE "j"."InMaxQuantity"

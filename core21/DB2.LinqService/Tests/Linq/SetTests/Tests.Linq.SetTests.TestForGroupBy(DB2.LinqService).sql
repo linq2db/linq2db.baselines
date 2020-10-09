@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"x"."ParentID",
-	"x"."ChildID",
+SELECT 
+	"x"."ParentID", 
+	"x"."ChildID", 
 	"x"."GrandChildID"
 FROM
 	"GrandChild" "x"
@@ -13,9 +13,9 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"x"."ParentID",
-	"x"."ChildID",
+SELECT 
+	"x"."ParentID", 
+	"x"."ChildID", 
 	"x"."GrandChildID"
 FROM
 	"GrandChild" "x"

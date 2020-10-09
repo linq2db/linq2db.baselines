@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"a_Parent1"."ParentID",
+SELECT 
+	"a_Parent1"."ParentID", 
 	"a_Parent1"."Value1"
 FROM
 	"Child" "t1"

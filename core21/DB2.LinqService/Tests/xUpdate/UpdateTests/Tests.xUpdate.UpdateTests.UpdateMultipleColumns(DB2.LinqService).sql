@@ -48,14 +48,14 @@ BeforeExecute
 DECLARE @ID_1 Integer(4) -- Int32
 SET     @ID_1 = 1001
 
-SELECT
-	"t".ID,
-	"t"."MoneyValue",
-	"t"."DateTimeValue",
-	"t"."BoolValue",
-	"t"."GuidValue",
-	"t"."BinaryValue",
-	"t"."SmallIntValue",
+SELECT 
+	"t".ID, 
+	"t"."MoneyValue", 
+	"t"."DateTimeValue", 
+	"t"."BoolValue", 
+	"t"."GuidValue", 
+	"t"."BinaryValue", 
+	"t"."SmallIntValue", 
 	"t"."StringValue"
 FROM
 	"LinqDataTypes" "t"

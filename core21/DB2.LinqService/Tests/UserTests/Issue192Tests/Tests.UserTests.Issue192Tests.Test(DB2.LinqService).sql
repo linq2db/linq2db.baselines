@@ -55,7 +55,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"TypeConvertTable" "_"
@@ -65,7 +65,7 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"TypeConvertTable" "_"
@@ -77,7 +77,7 @@ BeforeExecute
 DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"TypeConvertTable" "_"
@@ -89,9 +89,9 @@ BeforeExecute
 DECLARE @BoolValue_2 Char(1) -- StringFixedLength
 SET     @BoolValue_2 = 'N'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -104,9 +104,9 @@ BeforeExecute
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
 SET     @BoolValue_1 = 'Y'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -119,9 +119,9 @@ BeforeExecute
 DECLARE @BoolValue_2 Char(1) -- StringFixedLength
 SET     @BoolValue_2 = 'N'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -134,9 +134,9 @@ BeforeExecute
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
 SET     @BoolValue_1 = 'Y'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -149,9 +149,9 @@ BeforeExecute
 DECLARE @BoolValue_2 Char(1) -- StringFixedLength
 SET     @BoolValue_2 = 'N'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -164,9 +164,9 @@ BeforeExecute
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
 SET     @BoolValue_1 = 'Y'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -179,9 +179,9 @@ BeforeExecute
 DECLARE @BoolValue_2 Char(1) -- StringFixedLength
 SET     @BoolValue_2 = 'N'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -194,9 +194,9 @@ BeforeExecute
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
 SET     @BoolValue_1 = 'Y'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -209,9 +209,9 @@ BeforeExecute
 DECLARE @BoolValue_2 Char(1) -- StringFixedLength
 SET     @BoolValue_2 = 'N'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -224,9 +224,9 @@ BeforeExecute
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
 SET     @BoolValue_1 = 'Y'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -239,9 +239,9 @@ BeforeExecute
 DECLARE @GuidValue_1 VarChar(36) -- String
 SET     @GuidValue_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"
@@ -254,9 +254,9 @@ BeforeExecute
 DECLARE @GuidValue_1 VarChar(36) -- String
 SET     @GuidValue_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
+SELECT 
+	"_"."Name", 
+	"_"."BoolValue", 
 	"_"."GuidValue"
 FROM
 	"TypeConvertTable" "_"

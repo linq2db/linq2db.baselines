@@ -1,22 +1,22 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"c_1"."ParentID",
-	"c_1"."ChildID",
-	"c_1"."GrandChildID",
-	"a_Child"."ParentID",
-	"a_Child"."ChildID",
-	"a_Child"."ParentID_1",
+SELECT 
+	"c_1"."ParentID", 
+	"c_1"."ChildID", 
+	"c_1"."GrandChildID", 
+	"a_Child"."ParentID", 
+	"a_Child"."ChildID", 
+	"a_Child"."ParentID_1", 
 	"a_Child"."Value1"
 FROM
 	"Child" "t"
 		INNER JOIN "GrandChild" "c_1" ON "t"."ParentID" = "c_1"."ParentID" AND "t"."ChildID" = "c_1"."ChildID"
-		LEFT JOIN (
-			SELECT
-				"t1"."ParentID",
-				"t1"."ChildID",
-				"a_Parent"."ParentID" as "ParentID_1",
+		LEFT JOIN ( 
+			SELECT 
+				"t1"."ParentID", 
+				"t1"."ChildID", 
+				"a_Parent"."ParentID" as "ParentID_1", 
 				"a_Parent"."Value1"
 			FROM
 				"Child" "t1"

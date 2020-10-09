@@ -1,26 +1,26 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t3"."month_1",
-	"t3"."year_1",
+SELECT 
+	"t3"."month_1", 
+	"t3"."year_1", 
 	"t3"."int_1"
 FROM
-	(
-		SELECT
-			"t2"."month_1",
-			"t2"."year_1",
+	( 
+		SELECT 
+			"t2"."month_1", 
+			"t2"."year_1", 
 			"t2"."int_1"
 		FROM
-			(
-				SELECT
-					"t1"."c1" as "month_1",
-					"t1"."c2" as "year_1",
+			( 
+				SELECT 
+					"t1"."c1" as "month_1", 
+					"t1"."c2" as "year_1", 
 					1 as "int_1"
 				FROM
-					(
-						SELECT
-							To_Number(To_Char("selectParam"."DateTimeValue", 'MM')) as "c1",
+					( 
+						SELECT 
+							To_Number(To_Char("selectParam"."DateTimeValue", 'MM')) as "c1", 
 							To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')) as "c2"
 						FROM
 							"LinqDataTypes" "selectParam"
@@ -30,22 +30,22 @@ FROM
 					"t1"."c2"
 			) "t2"
 		UNION
-		SELECT
-			"_"."SmallIntValue" as "month_1",
-			"_"."SmallIntValue" as "year_1",
+		SELECT 
+			"_"."SmallIntValue" as "month_1", 
+			"_"."SmallIntValue" as "year_1", 
 			3 as "int_1"
 		FROM
 			"LinqDataTypes" "_"
 	) "t3"
 UNION
-SELECT
-	"t4"."year_1",
-	"t4"."year_1",
+SELECT 
+	"t4"."year_1", 
+	"t4"."year_1", 
 	"t4"."int_1"
 FROM
-	(
-		SELECT
-			To_Number(To_Char("_1"."DateTimeValue", 'YYYY')) as "year_1",
+	( 
+		SELECT 
+			To_Number(To_Char("_1"."DateTimeValue", 'YYYY')) as "year_1", 
 			2 as "int_1"
 		FROM
 			"LinqDataTypes" "_1"

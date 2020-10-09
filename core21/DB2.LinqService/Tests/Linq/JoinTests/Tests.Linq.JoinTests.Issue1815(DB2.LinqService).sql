@@ -50,12 +50,12 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"x"."InId",
-	"j"."InId",
-	"j"."InMaxQuantity",
-	"j"."InMinQuantity",
-	"x"."InMinQuantity",
+SELECT 
+	"x"."InId", 
+	"j"."InId", 
+	"j"."InMaxQuantity", 
+	"j"."InMinQuantity", 
+	"x"."InMinQuantity", 
 	"x"."InMaxQuantity"
 FROM
 	"StLink" "x"
@@ -67,12 +67,12 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"x"."InId",
-	"j"."InId",
-	"j"."InMaxQuantity",
-	"j"."InMinQuantity",
-	"x"."InMinQuantity",
+SELECT 
+	"x"."InId", 
+	"j"."InId", 
+	"j"."InMaxQuantity", 
+	"j"."InMinQuantity", 
+	"x"."InMinQuantity", 
 	"x"."InMaxQuantity"
 FROM
 	"StLink" "x"

@@ -45,7 +45,7 @@ BeforeExecute
 DECLARE @p1 Timestamp(20) -- DateTime
 SET     @p1 = '2018-01-02-00.00.00.000000'
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"LinqDataTypes" "t"

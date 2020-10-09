@@ -40,10 +40,10 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age",
+SELECT 
+	"t"."Id", 
+	"t"."Name", 
+	"t"."Age", 
 	"t"."Gender"
 FROM
 	"PR_1598_Insert_Enum_Table" "t"
@@ -76,10 +76,10 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age",
+SELECT 
+	"t"."Id", 
+	"t"."Name", 
+	"t"."Age", 
 	"t"."Gender"
 FROM
 	"PR_1598_Insert_Enum_Table" "t"

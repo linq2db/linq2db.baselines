@@ -222,8 +222,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestMerge1" "Target"
-USING (
-	SELECT
+USING ( 
+	SELECT 
 		"_"."Id" as "OtherId"
 	FROM
 		"TestMerge2" "_"
@@ -237,12 +237,12 @@ WHEN MATCHED AND "Source"."OtherId" = 4 THEN DELETE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
+SELECT 
+	"t1"."Id", 
+	"t1"."Field1", 
+	"t1"."Field2", 
+	"t1"."Field3", 
+	"t1"."Field4", 
 	"t1"."Field5"
 FROM
 	"TestMerge1" "t1"

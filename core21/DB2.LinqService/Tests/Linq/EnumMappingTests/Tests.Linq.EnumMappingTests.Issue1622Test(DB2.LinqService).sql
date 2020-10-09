@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"e"."Id",
+SELECT 
+	"e"."Id", 
 	"e"."SomeText"
 FROM
 	"Issue1622Table" "e"
@@ -42,8 +42,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"e"."Id",
+SELECT 
+	"e"."Id", 
 	"e"."SomeText"
 FROM
 	"Issue1622Table" "e"

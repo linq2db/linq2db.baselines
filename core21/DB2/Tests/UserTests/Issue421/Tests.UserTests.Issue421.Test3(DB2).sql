@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_"."Id",
+SELECT 
+	"_"."Id", 
 	"_"."BlobValue"
 FROM
 	"BlobClass" "_"
@@ -42,8 +42,8 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_"."Id",
+SELECT 
+	"_"."Id", 
 	"_"."BlobValue"
 FROM
 	"BlobClass" "_"

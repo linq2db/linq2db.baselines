@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"a_Patient"."Diagnosis"
 FROM
 	"Person" "x"

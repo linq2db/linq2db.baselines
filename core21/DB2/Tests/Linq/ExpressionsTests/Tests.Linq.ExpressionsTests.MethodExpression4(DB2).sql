@@ -3,9 +3,9 @@
 DECLARE @n Integer(4) -- Int32
 SET     @n = 3
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "c_1"

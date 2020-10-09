@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @ID_1 Integer(4) -- Int32
 SET     @ID_1 = 5
 
-SELECT
+SELECT 
 	"_".ID
 FROM
 	"Issue1316Tests" "_"

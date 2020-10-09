@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."event_id",
+SELECT 
+	"t1"."event_id", 
 	"t1"."event_description"
 FROM
 	"Issue1403Tests_2" "t1"

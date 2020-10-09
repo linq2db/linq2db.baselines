@@ -46,9 +46,9 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Name",
+SELECT 
+	"t"."Id", 
+	"t"."Name", 
 	"t"."Age"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"
@@ -92,9 +92,9 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Name",
+SELECT 
+	"t"."Id", 
+	"t"."Name", 
 	"t"."Age"
 FROM
 	"PR_1598_Insert_Table_Cache" "t"

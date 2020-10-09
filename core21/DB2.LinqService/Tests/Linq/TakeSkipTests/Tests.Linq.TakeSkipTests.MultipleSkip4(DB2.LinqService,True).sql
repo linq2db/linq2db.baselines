@@ -28,12 +28,12 @@ BeforeExecute
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 6
 
-SELECT
+SELECT 
 	"t2"."Value_1"
 FROM
-	(
-		SELECT
-			"t1"."Value" as "Value_1",
+	( 
+		SELECT 
+			"t1"."Value" as "Value_1", 
 			ROW_NUMBER() OVER (ORDER BY "t1"."Value") as RN
 		FROM
 			"TakeSkipClass" "t1"

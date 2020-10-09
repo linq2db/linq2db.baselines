@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"p"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			SmallInt(CASE
 				WHEN "t"."MoneyValue" - Floor("t"."MoneyValue") = 0.5 AND Mod(Int(Floor("t"."MoneyValue")), 2) = 0
 					THEN Floor("t"."MoneyValue")

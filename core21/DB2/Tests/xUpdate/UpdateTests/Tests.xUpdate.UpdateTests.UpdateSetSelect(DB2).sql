@@ -13,9 +13,9 @@ UPDATE
 	"Parent"
 SET
 	"Parent"."ParentID" = (
-		SELECT
+		SELECT 
 			(
-				SELECT
+				SELECT 
 					"c_1"."ParentID"
 				FROM
 					"Child" "c_1"
@@ -31,7 +31,7 @@ SET
 	)
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Parent" "p_1"

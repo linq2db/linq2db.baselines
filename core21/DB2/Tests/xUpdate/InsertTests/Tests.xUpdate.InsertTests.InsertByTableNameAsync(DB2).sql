@@ -105,7 +105,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson" "t1"
@@ -113,7 +113,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson" "p"

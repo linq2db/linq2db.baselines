@@ -3,7 +3,7 @@
 DECLARE @p1 Integer(4) -- Int32
 SET     @p1 = -2
 
-SELECT
+SELECT 
 	"t"."DateTimeValue" + @p1 Month
 FROM
 	"LinqDataTypes" "t"

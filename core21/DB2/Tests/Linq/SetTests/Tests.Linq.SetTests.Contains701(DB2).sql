@@ -7,7 +7,7 @@ SET     @Value1 = 11
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "c_1"

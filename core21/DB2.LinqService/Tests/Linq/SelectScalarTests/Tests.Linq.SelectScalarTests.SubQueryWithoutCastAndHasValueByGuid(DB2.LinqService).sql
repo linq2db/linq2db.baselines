@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_"."ParentID",
+SELECT 
+	"_"."ParentID", 
 	"_"."Value1"
 FROM
 	"Parent" "_"
 WHERE
 	(
-		SELECT
+		SELECT 
 			"r"."GuidValue"
 		FROM
 			"LinqDataTypes" "r"

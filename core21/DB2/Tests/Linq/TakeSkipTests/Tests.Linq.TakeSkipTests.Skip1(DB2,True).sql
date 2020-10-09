@@ -3,14 +3,14 @@
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 3
 
-SELECT
-	"t2"."ParentID",
+SELECT 
+	"t2"."ParentID", 
 	"t2"."ChildID"
 FROM
-	(
-		SELECT
-			"t1"."ParentID",
-			"t1"."ChildID",
+	( 
+		SELECT 
+			"t1"."ParentID", 
+			"t1"."ChildID", 
 			ROW_NUMBER() OVER () as RN
 		FROM
 			"Child" "t1"
@@ -23,14 +23,14 @@ BeforeExecute
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 4
 
-SELECT
-	"t2"."ParentID",
+SELECT 
+	"t2"."ParentID", 
 	"t2"."ChildID"
 FROM
-	(
-		SELECT
-			"t1"."ParentID",
-			"t1"."ChildID",
+	( 
+		SELECT 
+			"t1"."ParentID", 
+			"t1"."ChildID", 
 			ROW_NUMBER() OVER () as RN
 		FROM
 			"Child" "t1"

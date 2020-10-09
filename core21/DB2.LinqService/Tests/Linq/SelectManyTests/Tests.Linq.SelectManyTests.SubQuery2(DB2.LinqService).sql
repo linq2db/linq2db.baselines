@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."PersonID",
+SELECT 
+	"p"."PersonID", 
 	"p_1"."FirstName"
 FROM
 	"Person" "p",
@@ -14,8 +14,8 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."PersonID",
+SELECT 
+	"p"."PersonID", 
 	"p_1"."FirstName"
 FROM
 	"Person" "p",

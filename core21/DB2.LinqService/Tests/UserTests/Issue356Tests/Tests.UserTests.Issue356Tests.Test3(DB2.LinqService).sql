@@ -5,31 +5,31 @@ SET     @skip = 10
 DECLARE @skip_1 Integer(4) -- Int32
 SET     @skip_1 = 20
 
-SELECT
-	"cp"."ParentID",
+SELECT 
+	"cp"."ParentID", 
 	"c_1"."ChildID"
 FROM
 	"Parent" "cp"
-		CROSS JOIN (
-			SELECT
-				"t4"."ParentID",
+		CROSS JOIN ( 
+			SELECT 
+				"t4"."ParentID", 
 				"t4"."ChildID"
 			FROM
-				(
-					SELECT
-						"t3"."ParentID",
-						"t3"."ChildID",
+				( 
+					SELECT 
+						"t3"."ParentID", 
+						"t3"."ChildID", 
 						ROW_NUMBER() OVER (ORDER BY "t3"."ParentID") as RN
 					FROM
-						(
-							SELECT
-								"t1"."ParentID",
+						( 
+							SELECT 
+								"t1"."ParentID", 
 								"t1"."ChildID"
 							FROM
 								"Child" "t1"
 							UNION
-							SELECT
-								"t2"."ParentID",
+							SELECT 
+								"t2"."ParentID", 
 								"t2"."ChildID"
 							FROM
 								"Child" "t2"

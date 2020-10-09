@@ -49,14 +49,14 @@ SET     @skip = 1
 DECLARE @skip_1 Integer(4) -- Int32
 SET     @skip_1 = 3
 
-SELECT
-	"t2".ID,
+SELECT 
+	"t2".ID, 
 	"t2"."Field1"
 FROM
-	(
-		SELECT
-			"t1".ID,
-			"t1"."Field1",
+	( 
+		SELECT 
+			"t1".ID, 
+			"t1"."Field1", 
 			ROW_NUMBER() OVER (ORDER BY "t1".ID) as RN
 		FROM
 			"TestIdTrun" "t1"
@@ -100,14 +100,14 @@ SET     @skip = 1
 DECLARE @skip_1 Integer(4) -- Int32
 SET     @skip_1 = 3
 
-SELECT
-	"t2".ID,
+SELECT 
+	"t2".ID, 
 	"t2"."Field1"
 FROM
-	(
-		SELECT
-			"t1".ID,
-			"t1"."Field1",
+	( 
+		SELECT 
+			"t1".ID, 
+			"t1"."Field1", 
 			ROW_NUMBER() OVER (ORDER BY "t1".ID) as RN
 		FROM
 			"TestIdTrun" "t1"

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."ParentID",
+SELECT 
+	"p"."ParentID", 
 	(
-		SELECT
+		SELECT 
 			"c_1"."ParentID" + 1
 		FROM
 			"Child" "c_1"

@@ -3,7 +3,7 @@
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 
-SELECT
+SELECT 
 	"p"."LastName"
 FROM
 	"Person" "p"

@@ -284,10 +284,10 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "Patient" "Target"
-USING (
-	SELECT
-		"t1"."PersonID",
-		"t1"."Diagnosis",
+USING ( 
+	SELECT 
+		"t1"."PersonID", 
+		"t1"."Diagnosis", 
 		"a_Person"."FirstName"
 	FROM
 		"Patient" "t1"
@@ -300,7 +300,7 @@ USING (
 )
 ON ("Target"."PersonID" = "Source"."PersonID" AND "Source"."Diagnosis" LIKE '%very%')
 WHEN MATCHED AND EXISTS(
-	SELECT
+	SELECT 
 		*
 	FROM
 		"Person" "a_Person_1"
@@ -312,8 +312,8 @@ WHEN MATCHED AND EXISTS(
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."PersonID",
+SELECT 
+	"t1"."PersonID", 
 	"t1"."Diagnosis"
 FROM
 	"Patient" "t1"

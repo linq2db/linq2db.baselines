@@ -51,7 +51,7 @@ SET
 	"Parent"."Value1" = 5
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "child_1"

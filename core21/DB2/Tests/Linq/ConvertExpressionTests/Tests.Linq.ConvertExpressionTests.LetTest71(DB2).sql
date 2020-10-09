@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"key_data_result"."ParentID",
-	"_c"."ParentID",
+SELECT 
+	"key_data_result"."ParentID", 
+	"_c"."ParentID", 
 	"_c"."ChildID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"t1"."ParentID"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"t"."ParentID"
 				FROM
 					"Parent" "t"
@@ -27,26 +27,26 @@ ORDER BY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."ParentID",
+SELECT 
+	"t"."ParentID", 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "c_1"
 		WHERE
 			"c_1"."ParentID" = "t"."ParentID" AND "c_1"."ChildID" > -100
-	) THEN 1 ELSE 0 END,
+	) THEN 1 ELSE 0 END, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "c_2"
 		WHERE
 			"c_2"."ParentID" = "t"."ParentID" AND "c_2"."ChildID" > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			"c_3"."ParentID"
 		FROM
 			"Child" "c_3"

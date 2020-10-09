@@ -25,8 +25,8 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t".ID,
+SELECT 
+	"t".ID, 
 	"t"."BigIntValue"
 FROM
 	"LinqDataTypes" "t"

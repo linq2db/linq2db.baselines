@@ -24,8 +24,8 @@ CREATE TABLE "Books"
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"author"."Id",
+SELECT 
+	"author"."Id", 
 	"author"."Name"
 FROM
 	"Authors" "author"

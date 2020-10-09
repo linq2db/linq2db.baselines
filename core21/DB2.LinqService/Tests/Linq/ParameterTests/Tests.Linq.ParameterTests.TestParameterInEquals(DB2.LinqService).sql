@@ -18,13 +18,13 @@ CREATE TABLE "TestEqualsTable2"
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"_"."Id"
 FROM
 	"TestEqualsTable1" "_"
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"TestEqualsTable2" "__"

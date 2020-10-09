@@ -34,9 +34,9 @@ CREATE TABLE "stMain"
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"v"."inId",
-	"r"."inIdState",
+SELECT 
+	"v"."inId", 
+	"r"."inIdState", 
 	"a_Main"."inIdType"
 FROM
 	"stVersions" "v"

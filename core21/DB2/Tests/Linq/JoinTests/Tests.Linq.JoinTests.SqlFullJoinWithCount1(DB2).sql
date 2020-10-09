@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	COUNT("left_1"."ParentID"),
-	COUNT("p"."ParentID"),
+SELECT 
+	COUNT("left_1"."ParentID"), 
+	COUNT("p"."ParentID"), 
 	COUNT(*)
 FROM
 	"Parent" "left_1"

@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"a_Parent"."ParentID",
+SELECT 
+	"a_Parent"."ParentID", 
 	"a_Parent"."Value1"
 FROM
-	(
-		SELECT
-			"a_ParentID2"."ParentID",
+	( 
+		SELECT 
+			"a_ParentID2"."ParentID", 
 			"a_ParentID2"."Value1"
 		FROM
 			"Child" "t1"

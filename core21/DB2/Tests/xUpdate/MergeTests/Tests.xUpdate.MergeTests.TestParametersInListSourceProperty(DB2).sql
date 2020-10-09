@@ -221,12 +221,12 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
+SELECT 
+	"t1"."Id", 
+	"t1"."Field1", 
+	"t1"."Field2", 
+	"t1"."Field3", 
+	"t1"."Field4", 
 	"t1"."Field5"
 FROM
 	"TestMerge2" "t1"
@@ -238,10 +238,10 @@ SET     @Field = 00:12:00
 
 MERGE INTO "TestMerge1" "Target"
 USING (	VALUES
-		(3,@Field),
-		(4,@Field),
-		(5,@Field),
-		(6,@Field)) "Source"
+		(3, @Field),
+		(4, @Field),
+		(5, @Field),
+		(6, @Field)) "Source"
 (
 	"Id", 
 	"Field"

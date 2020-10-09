@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -11,23 +11,23 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."ParentID",
-	"t2"."gc",
-	"t2"."ChildID",
+SELECT 
+	"p"."ParentID", 
+	"t2"."gc", 
+	"t2"."ChildID", 
 	"t2"."GrandChildID"
 FROM
 	"Child" "ch"
 		INNER JOIN "Parent" "p" ON "ch"."ParentID" = "p"."ParentID"
-		LEFT JOIN (
-			SELECT
-				"gc_1"."ParentID" as "gc",
-				"gc_1"."ChildID",
+		LEFT JOIN ( 
+			SELECT 
+				"gc_1"."ParentID" as "gc", 
+				"gc_1"."ChildID", 
 				"gc_1"."GrandChildID"
 			FROM
 				"GrandChild" "gc_1"
-					INNER JOIN (
-						SELECT
+					INNER JOIN ( 
+						SELECT 
 							Max("t1"."GrandChildID") as "c1"
 						FROM
 							"GrandChild" "t1"

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"a_Patient"."Diagnosis",
-	"a_Patient"."PersonID",
+SELECT 
+	"a_Patient"."Diagnosis", 
+	"a_Patient"."PersonID", 
 	Avg("selectParam"."PersonID")
 FROM
 	"Person" "selectParam"

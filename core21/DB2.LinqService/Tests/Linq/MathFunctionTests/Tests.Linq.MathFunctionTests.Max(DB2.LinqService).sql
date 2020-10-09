@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN "p"."MoneyValue" > 5.1
 					THEN "p"."MoneyValue"

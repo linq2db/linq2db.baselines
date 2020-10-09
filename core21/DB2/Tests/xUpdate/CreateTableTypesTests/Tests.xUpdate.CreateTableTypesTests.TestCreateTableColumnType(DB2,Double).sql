@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
+SELECT 
+	"t1"."Id", 
 	"t1"."Double"
 FROM
 	"CreateTableTypes" "t1"

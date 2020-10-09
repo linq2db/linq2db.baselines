@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "c_1"

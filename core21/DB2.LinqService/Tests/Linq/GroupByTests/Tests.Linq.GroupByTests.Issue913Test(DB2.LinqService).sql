@@ -25,17 +25,17 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."c2",
+SELECT 
+	"t1"."c2", 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN "selectParam"."TradingStatus" = 'D'
 					THEN 1
 				ELSE 0
-			END as "c1",
+			END as "c1", 
 			CASE WHEN "selectParam"."TradingStatus" = 'D' THEN 1 ELSE 0 END as "c2"
 		FROM
 			"Issue913Test" "selectParam"

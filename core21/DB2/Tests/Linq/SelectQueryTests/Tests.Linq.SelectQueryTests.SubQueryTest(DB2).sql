@@ -21,26 +21,26 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t2"."Value1",
+SELECT 
+	"t2"."Value1", 
 	"t2"."Value2"
 FROM
-	(
-		SELECT
-			CURRENT_TIMESTAMP + "t"."Value" Day as "Value1",
+	( 
+		SELECT 
+			CURRENT_TIMESTAMP + "t"."Value" Day as "Value1", 
 			CURRENT_TIMESTAMP + 2 Day as "Value2"
 		FROM
 			"SampleClass" "t"
 		WHERE
 			"t"."Value" = 1
 		UNION
-		SELECT
-			"t1"."Value1",
+		SELECT 
+			"t1"."Value1", 
 			"t1"."Value2"
 		FROM
-			(
+			( 
 				SELECT
-					CURRENT_TIMESTAMP + 3 Day as "Value1",
+					CURRENT_TIMESTAMP + 3 Day as "Value1", 
 					CURRENT_TIMESTAMP + 4 Day as "Value2"
 				FROM SYSIBM.SYSDUMMY1
 			) "t1"
@@ -50,8 +50,8 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
+SELECT 
+	"t"."Id", 
 	"t"."Value"
 FROM
 	"SampleClass" "t"

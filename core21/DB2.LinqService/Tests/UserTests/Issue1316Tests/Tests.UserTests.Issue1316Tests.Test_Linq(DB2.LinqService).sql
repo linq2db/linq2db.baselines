@@ -25,7 +25,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"_".ID
 FROM
 	"Issue1316Tests" "_"

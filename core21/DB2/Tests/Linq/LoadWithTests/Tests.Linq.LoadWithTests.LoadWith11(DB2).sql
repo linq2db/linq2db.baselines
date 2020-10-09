@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"lw_Parent"."ParentID",
-	"detail"."ParentID",
+SELECT 
+	"lw_Parent"."ParentID", 
+	"detail"."ParentID", 
 	"detail"."ChildID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"p"."ParentID"
 		FROM
 			"Parent" "p"
@@ -19,14 +19,14 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"lw_Parent"."ParentID",
-	"detail"."ParentID",
-	"detail"."ChildID",
+SELECT 
+	"lw_Parent"."ParentID", 
+	"detail"."ParentID", 
+	"detail"."ChildID", 
 	"detail"."GrandChildID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"p"."ParentID"
 		FROM
 			"Parent" "p"
@@ -38,8 +38,8 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."ParentID",
+SELECT 
+	"p"."ParentID", 
 	"p"."Value1"
 FROM
 	"Parent" "p"

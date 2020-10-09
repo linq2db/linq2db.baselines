@@ -47,18 +47,18 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
+SELECT 
+	"key_data_result"."Id", 
+	"_v"."Id", 
+	"_v"."Usage", 
 	"_v"."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"t1"."Id"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"c_1"."Id"
 				FROM
 					"Table404One" "c_1"
@@ -70,7 +70,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
@@ -81,18 +81,18 @@ BeforeExecute
 DECLARE @Usage_2 Integer(4) -- Int32
 SET     @Usage_2 = 0
 
-SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
+SELECT 
+	"key_data_result"."Id", 
+	"_v"."Id", 
+	"_v"."Usage", 
 	"_v"."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"t1"."Id"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"c_1"."Id"
 				FROM
 					"Table404One" "c_1"
@@ -104,7 +104,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
@@ -115,18 +115,18 @@ BeforeExecute
 DECLARE @Usage_2 Integer(4) -- Int32
 SET     @Usage_2 = 1
 
-SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
+SELECT 
+	"key_data_result"."Id", 
+	"_v"."Id", 
+	"_v"."Usage", 
 	"_v"."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"t1"."Id"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"c_1"."Id"
 				FROM
 					"Table404One" "c_1"
@@ -138,7 +138,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
@@ -203,18 +203,18 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
+SELECT 
+	"key_data_result"."Id", 
+	"_v"."Id", 
+	"_v"."Usage", 
 	"_v"."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"t1"."Id"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"c_1"."Id"
 				FROM
 					"Table404One" "c_1"
@@ -226,7 +226,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
@@ -237,18 +237,18 @@ BeforeExecute
 DECLARE @Usage_2 Integer(4) -- Int32
 SET     @Usage_2 = 0
 
-SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
+SELECT 
+	"key_data_result"."Id", 
+	"_v"."Id", 
+	"_v"."Usage", 
 	"_v"."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"t1"."Id"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"c_1"."Id"
 				FROM
 					"Table404One" "c_1"
@@ -260,7 +260,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
@@ -271,18 +271,18 @@ BeforeExecute
 DECLARE @Usage_2 Integer(4) -- Int32
 SET     @Usage_2 = 1
 
-SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
+SELECT 
+	"key_data_result"."Id", 
+	"_v"."Id", 
+	"_v"."Usage", 
 	"_v"."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"t1"."Id"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"c_1"."Id"
 				FROM
 					"Table404One" "c_1"
@@ -294,7 +294,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"

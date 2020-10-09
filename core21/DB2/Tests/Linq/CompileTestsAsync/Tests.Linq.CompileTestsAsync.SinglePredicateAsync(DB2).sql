@@ -32,7 +32,7 @@ BeforeExecute
 DECLARE @Id_1 Integer(4) -- Int32
 SET     @Id_1 = 2
 
-SELECT
+SELECT 
 	"c_1"."Id"
 FROM
 	"AsyncDataTable" "c_1"

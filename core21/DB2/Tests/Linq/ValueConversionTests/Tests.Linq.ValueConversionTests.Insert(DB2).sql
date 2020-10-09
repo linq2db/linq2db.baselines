@@ -48,14 +48,14 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
-	"e"."Enum",
-	"e"."EnumNullable",
-	"e"."EnumWithNull",
-	"e"."EnumWithNullDeclarative",
+SELECT 
+	"e"."Id", 
+	"e"."Value1", 
+	"e"."Value2", 
+	"e"."Enum", 
+	"e"."EnumNullable", 
+	"e"."EnumWithNull", 
+	"e"."EnumWithNullDeclarative", 
 	"e"."BoolValue"
 FROM
 	"ValueConversion" "e"
@@ -96,14 +96,14 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
-	"e"."Enum",
-	"e"."EnumNullable",
-	"e"."EnumWithNull",
-	"e"."EnumWithNullDeclarative",
+SELECT 
+	"e"."Id", 
+	"e"."Value1", 
+	"e"."Value2", 
+	"e"."Enum", 
+	"e"."EnumNullable", 
+	"e"."EnumWithNull", 
+	"e"."EnumWithNullDeclarative", 
 	"e"."BoolValue"
 FROM
 	"ValueConversion" "e"
@@ -156,14 +156,14 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
-	"e"."Enum",
-	"e"."EnumNullable",
-	"e"."EnumWithNull",
-	"e"."EnumWithNullDeclarative",
+SELECT 
+	"e"."Id", 
+	"e"."Value1", 
+	"e"."Value2", 
+	"e"."Enum", 
+	"e"."EnumNullable", 
+	"e"."EnumWithNull", 
+	"e"."EnumWithNullDeclarative", 
 	"e"."BoolValue"
 FROM
 	"ValueConversion" "e"
@@ -174,7 +174,7 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"ValueConversion" "t1"

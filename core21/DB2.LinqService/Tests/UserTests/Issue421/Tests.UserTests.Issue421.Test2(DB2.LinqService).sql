@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_"."Id",
+SELECT 
+	"_"."Id", 
 	"_"."BlobValue"
 FROM
 	"BlobClass" "_"
@@ -48,8 +48,8 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_"."Id",
+SELECT 
+	"_"."Id", 
 	"_"."BlobValue"
 FROM
 	"BlobClass" "_"

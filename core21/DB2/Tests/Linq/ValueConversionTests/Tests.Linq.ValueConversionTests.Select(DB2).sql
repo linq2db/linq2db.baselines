@@ -44,14 +44,14 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Value1",
-	"t1"."Value2",
-	"t1"."Enum",
-	"t1"."EnumNullable",
-	"t1"."EnumWithNull",
-	"t1"."EnumWithNullDeclarative",
+SELECT 
+	"t1"."Id", 
+	"t1"."Value1", 
+	"t1"."Value2", 
+	"t1"."Enum", 
+	"t1"."EnumNullable", 
+	"t1"."EnumWithNull", 
+	"t1"."EnumWithNullDeclarative", 
 	"t1"."BoolValue"
 FROM
 	"ValueConversion" "t1"
@@ -59,9 +59,9 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Value1",
+SELECT 
+	"t"."Id", 
+	"t"."Value1", 
 	"t"."Value2"
 FROM
 	"ValueConversion" "t"
@@ -69,15 +69,15 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Value1",
+SELECT 
+	"t1"."Id", 
+	"t1"."Value1", 
 	"t1"."Value2"
 FROM
-	(
-		SELECT
-			"t"."Id",
-			"t"."Value1",
+	( 
+		SELECT 
+			"t"."Id", 
+			"t"."Value1", 
 			"t"."Value2"
 		FROM
 			"ValueConversion" "t"
@@ -86,22 +86,22 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Value1",
+SELECT 
+	"t"."Id", 
+	"t"."Value1", 
 	"t"."Value2"
 FROM
 	"ValueConversion" "t"
 UNION ALL
-SELECT
-	"t1"."Id",
-	"t1"."Value1",
+SELECT 
+	"t1"."Id", 
+	"t1"."Value1", 
 	"t1"."Value2"
 FROM
-	(
-		SELECT
-			"t_1"."Id",
-			"t_1"."Value1",
+	( 
+		SELECT 
+			"t_1"."Id", 
+			"t_1"."Value1", 
 			"t_1"."Value2"
 		FROM
 			"ValueConversion" "t_1"
@@ -114,17 +114,17 @@ SET     @skip = 1
 DECLARE @skip_1 Integer(4) -- Int32
 SET     @skip_1 = 2
 
-SELECT
+SELECT 
 	"t1"."Value2"
 FROM
-	(
-		SELECT
-			"q"."Value2",
+	( 
+		SELECT 
+			"q"."Value2", 
 			ROW_NUMBER() OVER (ORDER BY "q"."Id") as RN
 		FROM
-			(
-				SELECT
-					"t"."Id",
+			( 
+				SELECT 
+					"t"."Id", 
 					"t"."Value2"
 				FROM
 					"ValueConversion" "t"

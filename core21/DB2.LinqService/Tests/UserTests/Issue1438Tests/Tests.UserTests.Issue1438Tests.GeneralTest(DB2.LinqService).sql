@@ -34,8 +34,8 @@ BeforeExecute
 DECLARE @id_1 Integer(4) -- Int32
 SET     @id_1 = 1
 
-SELECT
-	"_"."Id",
+SELECT 
+	"_"."Id", 
 	"_"."Has"
 FROM
 	"Issue1438" "_"

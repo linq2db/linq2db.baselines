@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Truncate("p"."MoneyValue", 0) as "c1"
 		FROM
 			"LinqDataTypes" "p"

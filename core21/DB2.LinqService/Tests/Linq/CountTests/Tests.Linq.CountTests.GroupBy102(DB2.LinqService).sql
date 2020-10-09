@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	Max("t1"."ChildID"),
+SELECT 
+	Max("t1"."ChildID"), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "keyParam"
 		WHERE
 			"t1"."ParentID" = "keyParam"."ParentID" AND "keyParam"."ChildID" > 20
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "keyParam_1"

@@ -77,7 +77,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPatient22" "t1"
@@ -141,7 +141,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPatient22" "t1"

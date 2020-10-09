@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"a_Patient"."Diagnosis",
+SELECT 
+	"a_Patient"."Diagnosis", 
 	Count(*)
 FROM
 	"Person" "t1"

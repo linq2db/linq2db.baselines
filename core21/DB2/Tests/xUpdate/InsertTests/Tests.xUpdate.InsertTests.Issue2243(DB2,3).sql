@@ -49,10 +49,10 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."id",
-	"t1"."name",
-	"t1"."created_by",
+SELECT 
+	"t1"."id", 
+	"t1"."name", 
+	"t1"."created_by", 
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
@@ -96,10 +96,10 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."id",
-	"t1"."name",
-	"t1"."created_by",
+SELECT 
+	"t1"."id", 
+	"t1"."name", 
+	"t1"."created_by", 
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"

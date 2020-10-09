@@ -83,24 +83,24 @@ UPDATE
 	"UpdatedEntities"
 SET
 	"UpdatedEntities"."Value1" = (
-		SELECT
+		SELECT 
 			("t2"."Value1" * "t2"."Value1_1") * @int1
 		FROM
-			(
-				SELECT
-					"t1"."id",
-					"t1"."Value1",
+			( 
+				SELECT 
+					"t1"."id", 
+					"t1"."Value1", 
 					"t1"."Value1_1"
 				FROM
-					(
-						SELECT
-							ROW_NUMBER() OVER (ORDER BY "c_1"."id") as RN,
-							"c_1"."Value1",
-							"t"."Value1" as "Value1_1",
-							"c_1"."Value2",
-							"t"."Value2" as "Value2_1",
-							"c_1"."Value3",
-							"t"."Value3" as "Value3_1",
+					( 
+						SELECT 
+							ROW_NUMBER() OVER (ORDER BY "c_1"."id") as RN, 
+							"c_1"."Value1", 
+							"t"."Value1" as "Value1_1", 
+							"c_1"."Value2", 
+							"t"."Value2" as "Value2_1", 
+							"c_1"."Value3", 
+							"t"."Value3" as "Value3_1", 
 							"c_1"."id"
 						FROM
 							"UpdatedEntities" "c_1"
@@ -115,24 +115,24 @@ SET
 			"UpdatedEntities"."id" = "t2"."id"
 	),
 	"UpdatedEntities"."Value2" = (
-		SELECT
+		SELECT 
 			("t4"."Value2" * "t4"."Value2_1") * @int2
 		FROM
-			(
-				SELECT
-					"t3"."id",
-					"t3"."Value2",
+			( 
+				SELECT 
+					"t3"."id", 
+					"t3"."Value2", 
 					"t3"."Value2_1"
 				FROM
-					(
-						SELECT
-							ROW_NUMBER() OVER (ORDER BY "c_2"."id") as RN,
-							"c_2"."Value1",
-							"t_1"."Value1" as "Value1_1",
-							"c_2"."Value2",
-							"t_1"."Value2" as "Value2_1",
-							"c_2"."Value3",
-							"t_1"."Value3" as "Value3_1",
+					( 
+						SELECT 
+							ROW_NUMBER() OVER (ORDER BY "c_2"."id") as RN, 
+							"c_2"."Value1", 
+							"t_1"."Value1" as "Value1_1", 
+							"c_2"."Value2", 
+							"t_1"."Value2" as "Value2_1", 
+							"c_2"."Value3", 
+							"t_1"."Value3" as "Value3_1", 
 							"c_2"."id"
 						FROM
 							"UpdatedEntities" "c_2"
@@ -147,24 +147,24 @@ SET
 			"UpdatedEntities"."id" = "t4"."id"
 	),
 	"UpdatedEntities"."Value3" = (
-		SELECT
+		SELECT 
 			("t6"."Value3" * "t6"."Value3_1") * @int3
 		FROM
-			(
-				SELECT
-					"t5"."id",
-					"t5"."Value3",
+			( 
+				SELECT 
+					"t5"."id", 
+					"t5"."Value3", 
 					"t5"."Value3_1"
 				FROM
-					(
-						SELECT
-							ROW_NUMBER() OVER (ORDER BY "c_3"."id") as RN,
-							"c_3"."Value1",
-							"t_2"."Value1" as "Value1_1",
-							"c_3"."Value2",
-							"t_2"."Value2" as "Value2_1",
-							"c_3"."Value3",
-							"t_2"."Value3" as "Value3_1",
+					( 
+						SELECT 
+							ROW_NUMBER() OVER (ORDER BY "c_3"."id") as RN, 
+							"c_3"."Value1", 
+							"t_2"."Value1" as "Value1_1", 
+							"c_3"."Value2", 
+							"t_2"."Value2" as "Value2_1", 
+							"c_3"."Value3", 
+							"t_2"."Value3" as "Value3_1", 
 							"c_3"."id"
 						FROM
 							"UpdatedEntities" "c_3"
@@ -180,22 +180,22 @@ SET
 	)
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"t7"."id"
 				FROM
-					(
-						SELECT
-							ROW_NUMBER() OVER (ORDER BY "c_4"."id") as RN,
-							"c_4"."Value1",
-							"t_3"."Value1" as "Value1_1",
-							"c_4"."Value2",
-							"t_3"."Value2" as "Value2_1",
-							"c_4"."Value3",
-							"t_3"."Value3" as "Value3_1",
+					( 
+						SELECT 
+							ROW_NUMBER() OVER (ORDER BY "c_4"."id") as RN, 
+							"c_4"."Value1", 
+							"t_3"."Value1" as "Value1_1", 
+							"c_4"."Value2", 
+							"t_3"."Value2" as "Value2_1", 
+							"c_4"."Value3", 
+							"t_3"."Value3" as "Value3_1", 
 							"c_4"."id"
 						FROM
 							"UpdatedEntities" "c_4"
@@ -213,10 +213,10 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"v"."id",
-	"v"."Value1",
-	"v"."Value2",
+SELECT 
+	"v"."id", 
+	"v"."Value1", 
+	"v"."Value2", 
 	"v"."Value3"
 FROM
 	"UpdatedEntities" "v"

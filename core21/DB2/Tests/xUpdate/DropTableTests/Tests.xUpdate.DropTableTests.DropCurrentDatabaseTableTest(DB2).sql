@@ -30,7 +30,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t1".ID
 FROM
 	"DropTableTest" "t1"
@@ -43,7 +43,7 @@ DROP TABLE "DropTableTest"
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t1".ID
 FROM
 	"DropTableTest" "t1"

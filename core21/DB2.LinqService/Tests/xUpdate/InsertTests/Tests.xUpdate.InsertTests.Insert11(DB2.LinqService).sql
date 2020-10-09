@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Max("t"."PersonID")
 FROM
 	"Person" "t"
@@ -37,11 +37,11 @@ BeforeExecute
 DECLARE @id Integer(4) -- Int32
 SET     @id = 4
 
-SELECT
-	"p2"."PersonID",
-	"p2"."Gender",
-	"p2"."FirstName",
-	"p2"."MiddleName",
+SELECT 
+	"p2"."PersonID", 
+	"p2"."Gender", 
+	"p2"."FirstName", 
+	"p2"."MiddleName", 
 	"p2"."LastName"
 FROM
 	"Person" "p2"

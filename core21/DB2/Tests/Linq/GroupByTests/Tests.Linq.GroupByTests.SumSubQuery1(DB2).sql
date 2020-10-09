@@ -3,12 +3,12 @@
 DECLARE @n Integer(4) -- Int32
 SET     @n = 1
 
-SELECT
+SELECT 
 	Sum("ch_1"."ParentID" - 3)
 FROM
-	(
-		SELECT
-			"ch"."ParentID" + 1 as "ParentID",
+	( 
+		SELECT 
+			"ch"."ParentID" + 1 as "ParentID", 
 			"ch"."ChildID"
 		FROM
 			"Child" "ch"

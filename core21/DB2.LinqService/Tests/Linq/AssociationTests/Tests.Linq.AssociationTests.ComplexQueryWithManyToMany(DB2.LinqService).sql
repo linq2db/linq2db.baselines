@@ -5,13 +5,13 @@ SET     @id1_1 = 3
 DECLARE @Value_1 Integer(4) -- Int32
 SET     @Value_1 = 3
 
-SELECT
+SELECT 
 	"с"."ChildID"
 FROM
 	"GrandChild" "с"
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Parent" "_"

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			"p"."ParentID"
 		FROM
 			"Child" "p"
@@ -15,7 +15,7 @@ FROM
 	"Parent" "p_1"
 WHERE
 	(
-		SELECT
+		SELECT 
 			1
 		FROM
 			"Child" "t1"

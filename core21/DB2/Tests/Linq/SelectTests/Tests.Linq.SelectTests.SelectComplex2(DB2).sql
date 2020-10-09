@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
+SELECT 
+	"_"."PersonID", 
+	"_"."Gender", 
+	"_"."FirstName", 
+	"_"."MiddleName", 
 	"_"."LastName"
 FROM
 	"Person" "_"

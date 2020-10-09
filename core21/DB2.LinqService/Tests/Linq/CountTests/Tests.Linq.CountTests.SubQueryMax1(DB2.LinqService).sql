@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Max("t1"."cnt")
 FROM
 	"Parent" "p"
-		LEFT JOIN (
-			SELECT
-				Count(*) as "cnt",
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as "cnt", 
 				"a_Parent"."ParentID"
 			FROM
 				"Child" "c_1"

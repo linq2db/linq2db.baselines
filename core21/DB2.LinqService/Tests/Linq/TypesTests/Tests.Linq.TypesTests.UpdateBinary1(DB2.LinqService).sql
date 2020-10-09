@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t"."BinaryValue"
 FROM
 	"LinqDataTypes" "t"

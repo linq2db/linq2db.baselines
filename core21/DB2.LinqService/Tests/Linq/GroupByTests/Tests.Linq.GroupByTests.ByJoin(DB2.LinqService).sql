@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Sum("c2"."ChildID")
 FROM
 	"Child" "c1_1"

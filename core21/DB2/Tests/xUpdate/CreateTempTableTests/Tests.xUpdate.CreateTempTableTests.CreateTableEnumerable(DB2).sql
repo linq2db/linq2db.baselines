@@ -10,7 +10,7 @@ END
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"p"."ParentID"
 FROM
 	"Parent" "p"
@@ -42,7 +42,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t".ID
 FROM
 	"Parent" "p"

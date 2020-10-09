@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Max("t1"."ParentID")
 FROM
-	(
-		SELECT DISTINCT
-			"p"."ParentID",
+	( 
+		SELECT DISTINCT 
+			"p"."ParentID", 
 			"p"."Value1"
 		FROM
 			"Parent" "p"

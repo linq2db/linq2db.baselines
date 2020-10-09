@@ -32,7 +32,7 @@ BeforeExecute
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"AsyncDataTable" "c_1"

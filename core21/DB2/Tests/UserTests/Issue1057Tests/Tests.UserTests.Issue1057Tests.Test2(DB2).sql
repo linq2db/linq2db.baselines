@@ -82,9 +82,9 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."Id",
-	"p"."TargetName",
+SELECT 
+	"p"."Id", 
+	"p"."TargetName", 
 	"a_ActualStage"."Id"
 FROM
 	"Task" "p"
@@ -95,9 +95,9 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."Id",
-	"p"."TargetName",
+SELECT 
+	"p"."Id", 
+	"p"."TargetName", 
 	"a_ActualStage"."Id"
 FROM
 	"Task" "p"

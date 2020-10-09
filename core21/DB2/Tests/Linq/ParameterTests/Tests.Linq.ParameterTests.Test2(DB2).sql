@@ -5,8 +5,8 @@ SET     @id1 = 1
 DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 10000
 
-SELECT
-	"p"."ParentID",
+SELECT 
+	"p"."ParentID", 
 	"p"."Value1"
 FROM
 	"Parent" "p"
@@ -23,8 +23,8 @@ SET     @id1 = 2
 DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 10000
 
-SELECT
-	"p"."ParentID",
+SELECT 
+	"p"."ParentID", 
 	"p"."Value1"
 FROM
 	"Parent" "p"

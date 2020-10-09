@@ -22,7 +22,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

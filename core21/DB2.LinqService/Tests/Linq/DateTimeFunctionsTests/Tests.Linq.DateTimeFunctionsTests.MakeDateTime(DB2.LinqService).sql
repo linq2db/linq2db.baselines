@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Date('2010-' || RTrim(Char("p".ID)) || '-1') as "c1"
 		FROM
 			"LinqDataTypes" "p"

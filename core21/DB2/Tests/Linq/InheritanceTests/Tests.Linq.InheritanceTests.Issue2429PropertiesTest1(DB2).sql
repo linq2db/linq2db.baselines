@@ -23,8 +23,8 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"x"."Value",
+SELECT 
+	"x"."Value", 
 	"x"."Id"
 FROM
 	"BaseTable" "x"
@@ -35,8 +35,8 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"x"."Value",
+SELECT 
+	"x"."Value", 
 	"x"."Id"
 FROM
 	"BaseTable" "x"

@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"key_data_result"."ParentID",
-	"_y1"."ParentID",
+SELECT 
+	"key_data_result"."ParentID", 
+	"_y1"."ParentID", 
 	"_y1"."ChildID"
 FROM
-	(
-		SELECT DISTINCT
-			"x5"."ParentID",
+	( 
+		SELECT DISTINCT 
+			"x5"."ParentID", 
 			"x5"."Value1"
 		FROM
 			"Parent" "x5"
@@ -21,8 +21,8 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"x5"."ParentID",
+SELECT 
+	"x5"."ParentID", 
 	"x5"."Value1"
 FROM
 	"Parent" "x5"

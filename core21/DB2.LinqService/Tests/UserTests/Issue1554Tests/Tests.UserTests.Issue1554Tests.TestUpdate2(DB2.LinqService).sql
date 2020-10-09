@@ -50,9 +50,9 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."ClaimedKeyType",
+SELECT 
+	"t1"."Id", 
+	"t1"."ClaimedKeyType", 
 	"t1"."ClaimedKeyTypeN"
 FROM
 	"Issue1554Table" "t1"

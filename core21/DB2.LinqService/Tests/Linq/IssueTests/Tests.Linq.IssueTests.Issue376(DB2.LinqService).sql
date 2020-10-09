@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_"."PersonID",
-	"a_Doctor"."PersonID",
+SELECT 
+	"_"."PersonID", 
+	"a_Doctor"."PersonID", 
 	"a_Doctor"."Taxonomy"
 FROM
 	"Person" "_"

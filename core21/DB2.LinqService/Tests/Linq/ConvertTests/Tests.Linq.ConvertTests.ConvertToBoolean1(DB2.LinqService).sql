@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"p"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN "t"."MoneyValue" = 0 THEN 0
 				ELSE 1

@@ -65,7 +65,7 @@ UPDATE
 	"UpdatedEntities"
 SET
 	"UpdatedEntities"."Value1" = (
-		SELECT
+		SELECT 
 			"a_Relation"."RelatedValue3"
 		FROM
 			"UpdatedEntities" "v"
@@ -75,7 +75,7 @@ SET
 	)
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"UpdatedEntities" "v_1"
@@ -87,7 +87,7 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"v"."Value1"
 FROM
 	"UpdatedEntities" "v"

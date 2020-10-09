@@ -5,23 +5,23 @@ SET     @skip = 1
 DECLARE @skip_1 Integer(4) -- Int32
 SET     @skip_1 = 101
 
-SELECT
-	"c_1"."ParentID",
+SELECT 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
 	"Child" "c_1"
 WHERE
 	"c_1"."ParentID" IN (
-		SELECT
+		SELECT 
 			"t2"."ParentID"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"t1"."ParentID"
 				FROM
-					(
-						SELECT
-							"p"."ParentID",
+					( 
+						SELECT 
+							"p"."ParentID", 
 							ROW_NUMBER() OVER () as RN
 						FROM
 							"Parent" "p"

@@ -18,7 +18,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert14' || (
-		SELECT
+		SELECT 
 			"p"."FirstName"
 		FROM
 			"Person" "p"
@@ -33,7 +33,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" "p"

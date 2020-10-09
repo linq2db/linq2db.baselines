@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
+SELECT 
+	"p"."FirstName", 
+	"p"."PersonID", 
+	"p"."LastName", 
+	"p"."MiddleName", 
 	"p"."Gender"
 FROM
 	"Person" "p"
-		INNER JOIN (
+		INNER JOIN ( 
 			SELECT
 				'Doe' as "Item"
 			FROM SYSIBM.SYSDUMMY1

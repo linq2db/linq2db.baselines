@@ -4,12 +4,12 @@
 WITH CTE_1 ("Operator")
 AS
 (
-	SELECT
+	SELECT 
 		"x"."LastName"
 	FROM
 		"Person" "x"
 )
-SELECT
+SELECT 
 	"t1"."Operator"
 FROM
 	CTE_1 "t1"
@@ -18,7 +18,7 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"x"."LastName"
 FROM
 	"Person" "x"

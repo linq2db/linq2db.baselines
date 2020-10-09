@@ -222,11 +222,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestMerge1" "Target"
-USING (
-	SELECT
-		"_"."Id",
-		"_"."Field3" as "Field1",
-		"_"."Field4" as "Field2",
+USING ( 
+	SELECT 
+		"_"."Id", 
+		"_"."Field3" as "Field1", 
+		"_"."Field4" as "Field2", 
 		"_"."Id" + "_"."Id" + "_"."Id" as "Field4"
 	FROM
 		"TestMerge2" "_"
@@ -258,12 +258,12 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
+SELECT 
+	"t1"."Id", 
+	"t1"."Field1", 
+	"t1"."Field2", 
+	"t1"."Field3", 
+	"t1"."Field4", 
 	"t1"."Field5"
 FROM
 	"TestMerge1" "t1"

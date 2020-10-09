@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"p"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Decimal("t"."MoneyValue", 29, 10) as "c1"
 		FROM
 			"LinqDataTypes" "t"

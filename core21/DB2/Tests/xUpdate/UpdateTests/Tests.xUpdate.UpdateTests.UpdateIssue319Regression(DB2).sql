@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @id Integer(4) -- Int32
 SET     @id = 100500
 
-SELECT
+SELECT 
 	"_"."ParentID"
 FROM
 	"Parent" "_"
@@ -42,24 +42,24 @@ SET
 	"Parent"."Value1" = @ParentID
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"_2"."ParentID"
 				FROM
-					(
-						SELECT
-							"_1"."ParentID",
+					( 
+						SELECT 
+							"_1"."ParentID", 
 							(
-								SELECT
+								SELECT 
 									Count(*)
 								FROM
 									"Parent" "_"
 								WHERE
 									"_"."ParentID" = @id
-							) as "ex",
+							) as "ex", 
 							"_1"."Value1"
 						FROM
 							"Parent" "_1"

@@ -15,13 +15,13 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (	VALUES
-		(1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-		(2,-2147483647,-9223372036854775807,1,'normal strinG','всЁ нормально','*','ё',-3.40282E+38,-1.7976931348623157E+308,'2000-11-12-21.14.15.167000',BX'',Cast(x'00000000000000000000000000000000' as char(16) for bit data),12345678.9012345678,'2000-11-23-00.00.00.000000','09:44:34','FIRST',NULL),
-		(3,2147483647,9223372036854775807,0,'test
-	','ЙЦУКЩывапрм
-q','&','>',3.40282E+38,1.7976931348623157E+308,'2001-10-12-21.14.15.167000',BX'000102030004',Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data),-99999999.9999999999,'2123-11-23-00.00.00.000000','00:44:34','',0),
-		(4,-123,987,NULL,'`~!@#$%^&*()_+{}|[]\','<>?/.,;''щЩ":','','
-',1.1755E-38,-2.2250738585072014E-308,'2098-10-12-21.14.15.997000',BX'FFC864321400',Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data),99999999.9999999999,'3210-11-23-00.00.00.000000','00:00:00','',2147483647)) "Source"
+		(1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+		(2, -2147483647, -9223372036854775807, 1, 'normal strinG', 'всЁ нормально', '*', 'ё', -3.40282E+38, -1.7976931348623157E+308, '2000-11-12-21.14.15.167000', BX'', Cast(x'00000000000000000000000000000000' as char(16) for bit data), 12345678.9012345678, '2000-11-23-00.00.00.000000', '09:44:34', 'FIRST', NULL),
+		(3, 2147483647, 9223372036854775807, 0, 'test
+	', 'ЙЦУКЩывапрм
+q', '&', '>', 3.40282E+38, 1.7976931348623157E+308, '2001-10-12-21.14.15.167000', BX'000102030004', Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data), -99999999.9999999999, '2123-11-23-00.00.00.000000', '00:44:34', '', 0),
+		(4, -123, 987, NULL, '`~!@#$%^&*()_+{}|[]\', '<>?/.,;''щЩ":', '', '
+', 1.1755E-38, -2.2250738585072014E-308, '2098-10-12-21.14.15.997000', BX'FFC864321400', Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data), 99999999.9999999999, '3210-11-23-00.00.00.000000', '00:00:00', '', 2147483647)) "Source"
 (
 	"Id", 
 	"FieldInt32", 
@@ -93,14 +93,14 @@ BeforeExecute
 
 MERGE INTO "TestMerge2" "Target"
 USING (	VALUES
-		(3,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\','','',-1.1755E-38,2.2250738585072014E-308,'2098-10-12-21.14.15.907000',BX'FFC864321400',Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data),-0.123,'3210-11-23-00.00.00.000000','23:59:59',NULL,-2147483647),
-		(4,2147483647,9223372036854775807,0,'test
-	','ЙЦУКЩывапрм
-q','1',' ',3.40282E+38,1.7976931348623157E+308,'2001-10-12-21.14.15.167000',BX'000102030004',Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data),-99999999.9999999999,'2123-11-23-00.00.00.000000','14:44:33','',0),
-		(5,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\',' ',' ',-1.1755E-38,2.2250738585072014E-308,'2098-10-12-21.14.15.913000',BX'FFC864321400',Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data),-0.123,'3210-11-23-00.00.00.000000','23:59:59',NULL,-2147483647),
-		(6,2147483647,9223372036854775807,0,'test
-	  ','ЙЦУКЩывапрм
-q  ','-','~',3.40282E+38,1.7976931348623157E+308,'2001-10-12-21.14.15.167000',BX'000102030004',Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data),-99999999.9999999999,'2123-11-23-00.00.00.000000','22:44:33','',0)) "Source"
+		(3, -123, 987, NULL, '<>?/.,;''zZ":', '`~!@#$%^&*()_+{}|[]\', '', '', -1.1755E-38, 2.2250738585072014E-308, '2098-10-12-21.14.15.907000', BX'FFC864321400', Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data), -0.123, '3210-11-23-00.00.00.000000', '23:59:59', NULL, -2147483647),
+		(4, 2147483647, 9223372036854775807, 0, 'test
+	', 'ЙЦУКЩывапрм
+q', '1', ' ', 3.40282E+38, 1.7976931348623157E+308, '2001-10-12-21.14.15.167000', BX'000102030004', Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data), -99999999.9999999999, '2123-11-23-00.00.00.000000', '14:44:33', '', 0),
+		(5, -123, 987, NULL, '<>?/.,;''zZ":', '`~!@#$%^&*()_+{}|[]\', ' ', ' ', -1.1755E-38, 2.2250738585072014E-308, '2098-10-12-21.14.15.913000', BX'FFC864321400', Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data), -0.123, '3210-11-23-00.00.00.000000', '23:59:59', NULL, -2147483647),
+		(6, 2147483647, 9223372036854775807, 0, 'test
+	  ', 'ЙЦУКЩывапрм
+q  ', '-', '~', 3.40282E+38, 1.7976931348623157E+308, '2001-10-12-21.14.15.167000', BX'000102030004', Cast(x'ffffffffffffffffffffffffffffffff' as char(16) for bit data), -99999999.9999999999, '2123-11-23-00.00.00.000000', '22:44:33', '', 0)) "Source"
 (
 	"Id", 
 	"FieldInt32", 
@@ -170,24 +170,24 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."FieldInt64",
-	"t1"."FieldBoolean",
-	"t1"."FieldString",
-	"t1"."FieldNString",
-	"t1"."FieldChar",
-	"t1"."FieldNChar",
-	"t1"."FieldFloat",
-	"t1"."FieldDouble",
-	"t1"."FieldDateTime",
-	"t1"."FieldBinary",
-	"t1"."FieldGuid",
-	"t1"."FieldDecimal",
-	"t1"."FieldDate",
-	"t1"."FieldTime",
-	"t1"."FieldEnumString",
+SELECT 
+	"t1"."Id", 
+	"t1"."Field1", 
+	"t1"."FieldInt64", 
+	"t1"."FieldBoolean", 
+	"t1"."FieldString", 
+	"t1"."FieldNString", 
+	"t1"."FieldChar", 
+	"t1"."FieldNChar", 
+	"t1"."FieldFloat", 
+	"t1"."FieldDouble", 
+	"t1"."FieldDateTime", 
+	"t1"."FieldBinary", 
+	"t1"."FieldGuid", 
+	"t1"."FieldDecimal", 
+	"t1"."FieldDate", 
+	"t1"."FieldTime", 
+	"t1"."FieldEnumString", 
 	"t1"."FieldEnumNumber"
 FROM
 	"TestMerge1" "t1"
@@ -197,24 +197,24 @@ ORDER BY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."FieldInt64",
-	"t1"."FieldBoolean",
-	"t1"."FieldString",
-	"t1"."FieldNString",
-	"t1"."FieldChar",
-	"t1"."FieldNChar",
-	"t1"."FieldFloat",
-	"t1"."FieldDouble",
-	"t1"."FieldDateTime",
-	"t1"."FieldBinary",
-	"t1"."FieldGuid",
-	"t1"."FieldDecimal",
-	"t1"."FieldDate",
-	"t1"."FieldTime",
-	"t1"."FieldEnumString",
+SELECT 
+	"t1"."Id", 
+	"t1"."Field1", 
+	"t1"."FieldInt64", 
+	"t1"."FieldBoolean", 
+	"t1"."FieldString", 
+	"t1"."FieldNString", 
+	"t1"."FieldChar", 
+	"t1"."FieldNChar", 
+	"t1"."FieldFloat", 
+	"t1"."FieldDouble", 
+	"t1"."FieldDateTime", 
+	"t1"."FieldBinary", 
+	"t1"."FieldGuid", 
+	"t1"."FieldDecimal", 
+	"t1"."FieldDate", 
+	"t1"."FieldTime", 
+	"t1"."FieldEnumString", 
 	"t1"."FieldEnumNumber"
 FROM
 	"TestMerge2" "t1"

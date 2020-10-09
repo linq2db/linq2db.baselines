@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"p"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			BigInt("t"."MoneyValue") as "c1"
 		FROM
 			"LinqDataTypes" "t"

@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	LISTAGG("t1"."Value1", ' -> ') WITHIN GROUP (ORDER BY "t1"."Value1", "t1"."Value3" DESC)
 FROM
 	"SampleClass" "t1"

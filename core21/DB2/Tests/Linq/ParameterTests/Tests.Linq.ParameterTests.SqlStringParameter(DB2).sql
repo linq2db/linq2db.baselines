@@ -3,11 +3,11 @@
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 
-SELECT
-	"t"."FirstName",
-	"t"."PersonID",
-	"t"."LastName",
-	"t"."MiddleName",
+SELECT 
+	"t"."FirstName", 
+	"t"."PersonID", 
+	"t"."LastName", 
+	"t"."MiddleName", 
 	"t"."Gender"
 FROM
 	"Person" "t"
@@ -20,11 +20,11 @@ BeforeExecute
 DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'
 
-SELECT
-	"t"."FirstName",
-	"t"."PersonID",
-	"t"."LastName",
-	"t"."MiddleName",
+SELECT 
+	"t"."FirstName", 
+	"t"."PersonID", 
+	"t"."LastName", 
+	"t"."MiddleName", 
 	"t"."Gender"
 FROM
 	"Person" "t"

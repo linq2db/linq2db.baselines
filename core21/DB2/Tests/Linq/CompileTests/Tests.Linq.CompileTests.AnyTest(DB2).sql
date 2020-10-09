@@ -5,7 +5,7 @@ SET     @ParentID = 1
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "c_1"
@@ -21,7 +21,7 @@ SET     @ParentID = -1
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "c_1"

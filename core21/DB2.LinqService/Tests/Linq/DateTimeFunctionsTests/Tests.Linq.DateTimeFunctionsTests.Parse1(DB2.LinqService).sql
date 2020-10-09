@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"d"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			TimeStamp(RTrim(Char("t"."DateTimeValue"))) as "c1"
 		FROM
 			"LinqDataTypes" "t"

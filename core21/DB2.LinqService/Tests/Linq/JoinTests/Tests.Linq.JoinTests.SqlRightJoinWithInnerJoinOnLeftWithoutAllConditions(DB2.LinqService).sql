@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"left_1"."ParentID",
-	"left_1"."Value1",
-	"t1"."ParentID",
+SELECT 
+	"left_1"."ParentID", 
+	"left_1"."Value1", 
+	"t1"."ParentID", 
 	"t1"."Value1"
 FROM
 	"Parent" "left_1"
-		RIGHT JOIN (
-			SELECT
-				"right_1"."Value1",
+		RIGHT JOIN ( 
+			SELECT 
+				"right_1"."Value1", 
 				"right_1"."ParentID"
 			FROM
 				"Parent" "right_1"

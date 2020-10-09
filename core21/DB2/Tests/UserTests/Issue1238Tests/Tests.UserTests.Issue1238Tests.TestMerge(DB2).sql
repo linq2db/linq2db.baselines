@@ -9,7 +9,7 @@ BeforeExecute
 
 MERGE INTO "InheritanceParent" "Target"
 USING (	VALUES
-		(143,CAST(NULL AS NVarChar(255)),1)) "Source"
+		(143, CAST(NULL AS NVarChar(255)), 1)) "Source"
 (
 	"Key1", 
 	"Key2", 
@@ -39,7 +39,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"InheritanceParent" "t1"
@@ -49,7 +49,7 @@ BeforeExecute
 
 MERGE INTO "InheritanceParent" "Target"
 USING (	VALUES
-		(143,CAST(NULL AS NVarChar(255)),1)) "Source"
+		(143, CAST(NULL AS NVarChar(255)), 1)) "Source"
 (
 	"Key1", 
 	"Key2", 
@@ -79,7 +79,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"InheritanceParent" "t1"

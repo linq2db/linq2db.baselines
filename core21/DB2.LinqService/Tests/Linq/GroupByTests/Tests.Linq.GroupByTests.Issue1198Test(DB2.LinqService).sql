@@ -11,9 +11,9 @@ CREATE TABLE "Issue1192Table"
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Issue1192Table" "t"

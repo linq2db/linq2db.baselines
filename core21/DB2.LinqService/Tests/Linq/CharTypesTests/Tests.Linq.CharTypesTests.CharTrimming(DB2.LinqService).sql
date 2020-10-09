@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Max("_".ID)
 FROM
 	ALLTYPES "_"
@@ -292,8 +292,8 @@ BeforeExecute
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 223006
 
-SELECT
-	"_".ID,
+SELECT 
+	"_".ID, 
 	"_".CHAR20DATATYPE
 FROM
 	ALLTYPES "_"

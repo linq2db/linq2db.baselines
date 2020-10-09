@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	Sum(Coalesce("a_Parent"."Value1", 0))
 FROM
 	"Child" "t1"

@@ -3,8 +3,8 @@
 DECLARE @ParentID_1 Integer(4) -- Int32
 SET     @ParentID_1 = 1
 
-SELECT
-	"x"."ParentID",
+SELECT 
+	"x"."ParentID", 
 	"x"."Value1"
 FROM
 	"Parent" "x"

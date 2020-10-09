@@ -61,7 +61,7 @@ UPDATE
 	"billing_TempReading"
 SET
 	"billing_TempReading"."DevReadingTypeId" = (
-		SELECT
+		SELECT 
 			"drt"."Id"
 		FROM
 			"billing_TempReading" "tr"
@@ -70,7 +70,7 @@ SET
 			"billing_TempReading"."id" = "tr"."id"
 	),
 	"billing_TempReading"."Responsibility" = (
-		SELECT
+		SELECT 
 			"drt_1"."Responsibility"
 		FROM
 			"billing_TempReading" "tr_1"
@@ -80,7 +80,7 @@ SET
 	)
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"billing_TempReading" "tr_2"
@@ -96,7 +96,7 @@ UPDATE
 	"billing_TempReading"
 SET
 	"billing_TempReading"."DevReadingTypeId" = (
-		SELECT
+		SELECT 
 			"w"."Id"
 		FROM
 			"billing_DevReadingType" "w"
@@ -106,7 +106,7 @@ SET
 		FETCH FIRST 1 ROWS ONLY
 	),
 	"billing_TempReading"."Responsibility" = (
-		SELECT
+		SELECT 
 			"w_1"."Responsibility"
 		FROM
 			"billing_DevReadingType" "w_1"

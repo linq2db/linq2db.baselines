@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"c_1"."ParentID",
+SELECT 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
 	"Child" "c_1",
-	(
-		SELECT
+	( 
+		SELECT 
 			"p"."ParentID"
 		FROM
 			"GrandChild" "p"
@@ -23,18 +23,18 @@ SET     @skip = 12
 DECLARE @skip_1 Integer(4) -- Int32
 SET     @skip_1 = 15
 
-SELECT
-	"c_1"."ParentID",
+SELECT 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
 	"Child" "c_1",
-	(
-		SELECT
+	( 
+		SELECT 
 			"t1"."ParentID"
 		FROM
-			(
-				SELECT
-					"p"."ParentID",
+			( 
+				SELECT 
+					"p"."ParentID", 
 					ROW_NUMBER() OVER () as RN
 				FROM
 					"GrandChild" "p"

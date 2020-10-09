@@ -33,9 +33,9 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_".ID,
-	"_"."Array",
+SELECT 
+	"_".ID, 
+	"_"."Array", 
 	"_"."Binary"
 FROM
 	"Issue1303" "_"
@@ -48,9 +48,9 @@ BeforeExecute
 DECLARE @Array_2 VarBinary(3) -- Binary
 SET     @Array_2 = BX'010203'
 
-SELECT
-	"_".ID,
-	"_"."Array",
+SELECT 
+	"_".ID, 
+	"_"."Array", 
 	"_"."Binary"
 FROM
 	"Issue1303" "_"
@@ -63,9 +63,9 @@ BeforeExecute
 DECLARE @Binary_2 VarBinary(2) -- Binary
 SET     @Binary_2 = BX'0405'
 
-SELECT
-	"_".ID,
-	"_"."Array",
+SELECT 
+	"_".ID, 
+	"_"."Array", 
 	"_"."Binary"
 FROM
 	"Issue1303" "_"

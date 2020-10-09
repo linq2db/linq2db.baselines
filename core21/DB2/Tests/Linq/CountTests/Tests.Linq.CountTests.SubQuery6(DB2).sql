@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "t1"
@@ -11,8 +11,8 @@ SELECT
 			"p"."ParentID" = "t1"."ParentID"
 	)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			"t2"."ParentID"
 		FROM
 			"Parent" "t2"

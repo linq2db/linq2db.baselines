@@ -3,9 +3,9 @@
 DECLARE @p1 VarChar(4) -- String
 SET     @p1 = 'test'
 
-SELECT
-	"p"."PersonID",
-	"_gjd_ri"."PersonID",
+SELECT 
+	"p"."PersonID", 
+	"_gjd_ri"."PersonID", 
 	"_gjd_ri"."Diagnosis"
 FROM
 	"Person" "p"
@@ -18,8 +18,8 @@ BeforeExecute
 DECLARE @input_1 VarChar(4) -- String
 SET     @input_1 = 'test'
 
-SELECT
-	"p"."FirstName",
+SELECT 
+	"p"."FirstName", 
 	"p"."PersonID"
 FROM
 	"Person" "p"

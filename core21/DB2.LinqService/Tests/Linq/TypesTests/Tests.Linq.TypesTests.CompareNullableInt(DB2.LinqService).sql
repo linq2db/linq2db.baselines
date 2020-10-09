@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."ParentID",
+SELECT 
+	"t"."ParentID", 
 	"t"."Value1"
 FROM
 	"Parent" "t"
@@ -12,8 +12,8 @@ BeforeExecute
 DECLARE @param_1 Integer(4) -- Int32
 SET     @param_1 = 1
 
-SELECT
-	"t"."ParentID",
+SELECT 
+	"t"."ParentID", 
 	"t"."Value1"
 FROM
 	"Parent" "t"

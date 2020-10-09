@@ -40,10 +40,10 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age",
+SELECT 
+	"t"."Id", 
+	"t"."Name", 
+	"t"."Age", 
 	"t"."Gender"
 FROM
 	"PR_1598_Update_Enum_Table" "t"
@@ -74,10 +74,10 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age",
+SELECT 
+	"t"."Id", 
+	"t"."Name", 
+	"t"."Age", 
 	"t"."Gender"
 FROM
 	"PR_1598_Update_Enum_Table" "t"
@@ -105,10 +105,10 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age",
+SELECT 
+	"t"."Id", 
+	"t"."Name", 
+	"t"."Age", 
 	"t"."Gender"
 FROM
 	"PR_1598_Update_Enum_Table" "t"

@@ -55,11 +55,11 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"lw_Category"."CategoryID",
-	"detail"."ProductID",
-	"detail"."ProductName",
-	"detail"."CategoryID",
+SELECT 
+	"lw_Category"."CategoryID", 
+	"detail"."ProductID", 
+	"detail"."ProductName", 
+	"detail"."CategoryID", 
 	"detail"."QuantityPerUnit"
 FROM
 	"Categories" "lw_Category"
@@ -68,9 +68,9 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."CategoryID",
-	"t1"."CategoryName",
+SELECT 
+	"t1"."CategoryID", 
+	"t1"."CategoryName", 
 	"t1"."Description"
 FROM
 	"Categories" "t1"

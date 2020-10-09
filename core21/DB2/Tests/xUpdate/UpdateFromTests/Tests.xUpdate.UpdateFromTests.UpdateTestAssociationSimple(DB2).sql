@@ -69,7 +69,7 @@ SET
 	"UpdatedEntities"."Value3" = 1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"UpdatedEntities" "v"
@@ -81,9 +81,9 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"v"."Value1",
-	"v"."Value2",
+SELECT 
+	"v"."Value1", 
+	"v"."Value2", 
 	"v"."Value3"
 FROM
 	"UpdatedEntities" "v"

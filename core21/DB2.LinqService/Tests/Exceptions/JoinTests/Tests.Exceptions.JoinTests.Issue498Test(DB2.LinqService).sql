@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"x"."ParentID"
 FROM
 	"Parent" "x"
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	"x"."ParentID"
 FROM
 	"Parent" "x"

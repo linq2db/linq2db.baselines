@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	"t1"."ParentID"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			"ch"."ParentID"
 		FROM
 			"Child" "ch"

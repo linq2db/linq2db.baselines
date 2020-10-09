@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"lw_Parent"."ParentID",
-	"detail"."ParentID",
+SELECT 
+	"lw_Parent"."ParentID", 
+	"detail"."ParentID", 
 	"detail"."ChildID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			"t1"."ParentID"
 		FROM
 			"Parent" "t1"
@@ -17,16 +17,16 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"GrandChild" "t1"
 		WHERE
 			"p"."ParentID" = "t1"."ParentID"
-	),
-	"p"."ParentID",
+	), 
+	"p"."ParentID", 
 	"p"."Value1"
 FROM
 	"Parent" "p"
