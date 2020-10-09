@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]
 WHERE
 	NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]

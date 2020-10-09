@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Max([t].[PersonID])
 FROM
 	[Person] [t]

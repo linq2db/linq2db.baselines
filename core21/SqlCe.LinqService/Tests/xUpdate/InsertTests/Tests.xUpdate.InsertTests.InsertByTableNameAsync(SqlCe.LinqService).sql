@@ -103,7 +103,7 @@ SELECT @@IDENTITY
 BeforeExecute
 -- SqlCe (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [t1]
@@ -111,7 +111,7 @@ FROM
 BeforeExecute
 -- SqlCe (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [p]

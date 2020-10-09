@@ -49,7 +49,7 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [_]
@@ -67,7 +67,7 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [_]

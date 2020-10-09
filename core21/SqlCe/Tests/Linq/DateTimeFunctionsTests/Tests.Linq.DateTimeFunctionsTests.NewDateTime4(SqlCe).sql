@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[p].[DateTimeValue]
 FROM
 	[LinqDataTypes] [p]

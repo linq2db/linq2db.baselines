@@ -3,22 +3,22 @@
 DECLARE @id_1 Int -- Int32
 SET     @id_1 = 3
 
-SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[DateTimeValue2],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[SmallIntValue],
-	[_].[IntValue],
-	[_].[BigIntValue],
+SELECT 
+	[_].[ID], 
+	[_].[MoneyValue], 
+	[_].[DateTimeValue], 
+	[_].[DateTimeValue2], 
+	[_].[BoolValue], 
+	[_].[GuidValue], 
+	[_].[SmallIntValue], 
+	[_].[IntValue], 
+	[_].[BigIntValue], 
 	[_].[StringValue]
 FROM
 	[LinqDataTypes] [_]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[LinqDataTypes] [_1]
@@ -31,22 +31,22 @@ BeforeExecute
 DECLARE @id_1 Int -- Int32
 SET     @id_1 = 4
 
-SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[DateTimeValue2],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[SmallIntValue],
-	[_].[IntValue],
-	[_].[BigIntValue],
+SELECT 
+	[_].[ID], 
+	[_].[MoneyValue], 
+	[_].[DateTimeValue], 
+	[_].[DateTimeValue2], 
+	[_].[BoolValue], 
+	[_].[GuidValue], 
+	[_].[SmallIntValue], 
+	[_].[IntValue], 
+	[_].[BigIntValue], 
 	[_].[StringValue]
 FROM
 	[LinqDataTypes] [_]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[LinqDataTypes] [_1]

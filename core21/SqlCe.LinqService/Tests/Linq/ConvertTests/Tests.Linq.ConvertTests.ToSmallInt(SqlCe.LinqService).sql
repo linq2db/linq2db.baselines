@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Convert(SmallInt, [t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(((Exp(Convert(Float, [p].[MoneyValue]) / 15) + Exp(-(Convert(Float, [p].[MoneyValue]) / 15))) / 2) * 15) as [c1]
 		FROM
 			[LinqDataTypes] [p]

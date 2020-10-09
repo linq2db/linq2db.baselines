@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	DateAdd(day, 5, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

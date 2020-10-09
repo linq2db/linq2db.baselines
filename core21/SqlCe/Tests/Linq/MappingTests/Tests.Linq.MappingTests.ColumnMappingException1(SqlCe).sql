@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[_].[FirstName]
 FROM
 	[Person] [_]

@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT TOP (1)
-	[_].[Id],
+SELECT TOP (1) 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass] [_]
@@ -47,8 +47,8 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT TOP (1)
-	[_].[Id],
+SELECT TOP (1) 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass] [_]

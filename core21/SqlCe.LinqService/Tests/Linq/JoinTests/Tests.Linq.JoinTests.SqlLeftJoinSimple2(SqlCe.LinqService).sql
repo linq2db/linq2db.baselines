@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[r].[ChildID]
 FROM
 	[Parent] [p]

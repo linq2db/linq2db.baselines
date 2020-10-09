@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t].[GuidValue]
 FROM
 	[LinqDataTypes] [t]

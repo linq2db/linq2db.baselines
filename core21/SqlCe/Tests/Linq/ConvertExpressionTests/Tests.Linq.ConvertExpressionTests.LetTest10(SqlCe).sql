@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Parent] [p]

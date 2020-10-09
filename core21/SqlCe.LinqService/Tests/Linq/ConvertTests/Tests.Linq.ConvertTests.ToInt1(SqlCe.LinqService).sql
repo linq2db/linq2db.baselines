@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Convert(Int, [t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

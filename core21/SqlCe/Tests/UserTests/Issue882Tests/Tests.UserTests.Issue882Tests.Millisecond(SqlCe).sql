@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	DatePart(millisecond, [t].[DateTimeValue]) % 7
 FROM
 	[LinqDataTypes] [t]

@@ -21,7 +21,7 @@ SELECT 'BOLTO'
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
@@ -32,7 +32,7 @@ OFFSET 3 ROWS
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

@@ -5,24 +5,24 @@ SET     @take = 1
 DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
-SELECT
-	[cp].[ParentID],
+SELECT 
+	[cp].[ParentID], 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [cp].[ParentID] AND [c_1].[ChildID] > -100
-	) THEN 1 ELSE 0 END,
-	[t3].[Count_1],
-	[t1].[First1],
-	[t2].[ParentID],
+	) THEN 1 ELSE 0 END, 
+	[t3].[Count_1], 
+	[t1].[First1], 
+	[t2].[ParentID], 
 	[t2].[ChildID]
 FROM
 	[Parent] [cp]
-		OUTER APPLY (
-			SELECT TOP (@take)
+		OUTER APPLY ( 
+			SELECT TOP (@take) 
 				[c_2].[ParentID] as [First1]
 			FROM
 				[Child] [c_2]
@@ -32,9 +32,9 @@ FROM
 			ORDER BY
 				[c_2].[ChildID]
 		) [t1]
-		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[c_3].[ParentID],
+		OUTER APPLY ( 
+			SELECT TOP (@take_1) 
+				[c_3].[ParentID], 
 				[c_3].[ChildID]
 			FROM
 				[Child] [c_3]
@@ -43,9 +43,9 @@ FROM
 			ORDER BY
 				[c_3].[ChildID]
 		) [t2]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				[c_4].[ParentID]
 			FROM
 				[Child] [c_4]

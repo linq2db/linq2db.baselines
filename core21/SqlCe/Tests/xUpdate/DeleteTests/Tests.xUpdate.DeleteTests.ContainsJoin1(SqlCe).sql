@@ -95,7 +95,7 @@ DELETE FROM
 	[Parent]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Parent] [p]
@@ -116,7 +116,7 @@ DELETE FROM
 	[Parent]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Parent] [p]

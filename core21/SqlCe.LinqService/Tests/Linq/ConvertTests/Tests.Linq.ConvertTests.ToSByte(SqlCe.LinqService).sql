@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(TinyInt, [t].[MoneyValue]) as [c1]
 		FROM
 			[LinqDataTypes] [t]

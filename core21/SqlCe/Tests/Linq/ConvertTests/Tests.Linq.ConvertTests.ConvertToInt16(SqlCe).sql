@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(SmallInt, CASE
 				WHEN [t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Convert(Int, Floor([t].[MoneyValue])) % 2 = 0
 					THEN Floor([t].[MoneyValue])

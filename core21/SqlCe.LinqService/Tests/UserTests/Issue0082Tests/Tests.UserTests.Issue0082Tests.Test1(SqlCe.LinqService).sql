@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
-	[o].[ParentID],
-	[t2].[CountResult],
+SELECT 
+	[o].[ParentID], 
+	[t2].[CountResult], 
 	[t3].[Sum_1]
 FROM
 	[Parent] [o]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [CountResult],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [CountResult], 
 				[t1].[ParentID]
 			FROM
 				[Child] [t1]
 			GROUP BY
 				[t1].[ParentID]
 		) [t2] ON [o].[ParentID] = [t2].[ParentID]
-		LEFT JOIN (
-			SELECT
-				Sum([od].[ParentID]) as [Sum_1],
+		LEFT JOIN ( 
+			SELECT 
+				Sum([od].[ParentID]) as [Sum_1], 
 				[od].[ParentID]
 			FROM
 				[Child] [od]
@@ -29,7 +29,7 @@ FROM
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [o]
@@ -37,24 +37,24 @@ FROM
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[o].[ParentID],
-	[t2].[CountResult],
+SELECT 
+	[o].[ParentID], 
+	[t2].[CountResult], 
 	[t3].[Sum_1]
 FROM
 	[Parent] [o]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [CountResult],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [CountResult], 
 				[t1].[ParentID]
 			FROM
 				[Child] [t1]
 			GROUP BY
 				[t1].[ParentID]
 		) [t2] ON [o].[ParentID] = [t2].[ParentID]
-		LEFT JOIN (
-			SELECT
-				Sum([od].[ParentID]) as [Sum_1],
+		LEFT JOIN ( 
+			SELECT 
+				Sum([od].[ParentID]) as [Sum_1], 
 				[od].[ParentID]
 			FROM
 				[Child] [od]

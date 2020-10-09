@@ -57,10 +57,10 @@ SET     @take = 1
 DECLARE @FirstName_1 NVarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
-SELECT TOP (@take)
-	[x].[ID],
-	[x].[FirstName],
-	[x].[LastName],
+SELECT TOP (@take) 
+	[x].[ID], 
+	[x].[FirstName], 
+	[x].[LastName], 
 	[x].[MiddleName]
 FROM
 	[TestInsertOrReplaceTable] [x]
@@ -94,10 +94,10 @@ SET     @take = 1
 DECLARE @FirstName_1 NVarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
-SELECT TOP (@take)
-	[x].[ID],
-	[x].[FirstName],
-	[x].[LastName],
+SELECT TOP (@take) 
+	[x].[ID], 
+	[x].[FirstName], 
+	[x].[LastName], 
 	[x].[MiddleName]
 FROM
 	[TestInsertOrReplaceTable] [x]

@@ -25,7 +25,7 @@ SELECT 'Value8'
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

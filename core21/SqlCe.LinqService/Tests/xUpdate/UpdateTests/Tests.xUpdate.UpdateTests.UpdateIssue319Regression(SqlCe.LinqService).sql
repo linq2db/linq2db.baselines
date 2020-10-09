@@ -23,7 +23,7 @@ SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[_].[ParentID]
 FROM
 	[Parent] [_]
@@ -43,17 +43,17 @@ SET
 	[Parent].[Value1] = @ParentID
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
-					[_1].[Value1],
+			( 
+				SELECT 
+					[_1].[Value1], 
 					[_1].[ParentID]
 				FROM
 					[Parent] [_1]
-						LEFT JOIN (
-							SELECT
+						LEFT JOIN ( 
+							SELECT 
 								Count(*) as [cnt]
 							FROM
 								[Parent] [_]

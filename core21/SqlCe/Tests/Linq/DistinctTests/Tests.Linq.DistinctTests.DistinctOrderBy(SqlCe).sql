@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	[ch].[ParentID]
 FROM
 	[Child] [ch]

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor(Cast([selectParam].[DateTimeValue] as Float)) as DateTime) as [c1]
 		FROM
 			[LinqDataTypes] [selectParam]

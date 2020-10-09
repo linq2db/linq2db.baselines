@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Len([p].[FirstName])
 FROM
 	[Person] [p]

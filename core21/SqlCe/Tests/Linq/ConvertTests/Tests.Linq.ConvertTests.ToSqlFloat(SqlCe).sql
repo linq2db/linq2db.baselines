@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Convert(Float, [t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

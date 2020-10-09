@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Max([t1].[ParentID])
 FROM
 	[Child] [t1]

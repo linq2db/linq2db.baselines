@@ -39,7 +39,7 @@ SELECT 20,120
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InstanceClass] [t]

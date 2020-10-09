@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [parent_2]
-		CROSS JOIN (
-			SELECT
-				[child_1].[ParentID],
-				[child_1].[ChildID],
+		CROSS JOIN ( 
+			SELECT 
+				[child_1].[ParentID], 
+				[child_1].[ChildID], 
 				[parent_1].[ParentID] as [ParentID_1]
 			FROM
 				[Parent] [parent_1],

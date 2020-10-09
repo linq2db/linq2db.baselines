@@ -35,8 +35,8 @@ SET     @take = 2
 DECLARE @id_1 Int -- Int32
 SET     @id_1 = 1
 
-SELECT TOP (@take)
-	[_].[Id],
+SELECT TOP (@take) 
+	[_].[Id], 
 	[_].[Has]
 FROM
 	[Issue1438] [_]

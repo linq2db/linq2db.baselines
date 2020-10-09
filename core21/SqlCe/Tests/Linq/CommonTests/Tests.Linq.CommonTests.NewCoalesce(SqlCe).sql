@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Coalesce([p].[Value1], 100)
 FROM
 	[Parent] [p]

@@ -40,14 +40,14 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
+SELECT TOP (@take) 
+	[e].[Id], 
+	[e].[Value1], 
+	[e].[Value2], 
+	[e].[Enum], 
+	[e].[EnumNullable], 
+	[e].[EnumWithNull], 
+	[e].[EnumWithNullDeclarative], 
 	[e].[BoolValue]
 FROM
 	[ValueConversion] [e]
@@ -79,14 +79,14 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
+SELECT TOP (@take) 
+	[e].[Id], 
+	[e].[Value1], 
+	[e].[Value2], 
+	[e].[Enum], 
+	[e].[EnumNullable], 
+	[e].[EnumWithNull], 
+	[e].[EnumWithNullDeclarative], 
 	[e].[BoolValue]
 FROM
 	[ValueConversion] [e]
@@ -140,14 +140,14 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
+SELECT TOP (@take) 
+	[e].[Id], 
+	[e].[Value1], 
+	[e].[Value2], 
+	[e].[Enum], 
+	[e].[EnumNullable], 
+	[e].[EnumWithNull], 
+	[e].[EnumWithNullDeclarative], 
 	[e].[BoolValue]
 FROM
 	[ValueConversion] [e]
@@ -157,7 +157,7 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[ValueConversion] [t1]

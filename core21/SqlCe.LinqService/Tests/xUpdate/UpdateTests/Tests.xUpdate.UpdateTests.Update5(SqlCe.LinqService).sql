@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [c_1]
@@ -47,7 +47,7 @@ SET
 	[Child].[ChildID] = @ChildID
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]
@@ -64,7 +64,7 @@ BeforeExecute
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1002
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [c_1]

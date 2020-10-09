@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe (asynchronously)
 
-SELECT
+SELECT 
 	1
 FROM
 	[FakeClass] [t1]

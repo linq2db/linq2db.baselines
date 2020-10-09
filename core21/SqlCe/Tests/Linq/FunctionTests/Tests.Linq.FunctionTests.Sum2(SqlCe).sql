@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t1].[ChildCount]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Sum([c_1].[ParentID] * [c_1].[ChildID]) as [ChildCount],
+		LEFT JOIN ( 
+			SELECT 
+				Sum([c_1].[ParentID] * [c_1].[ChildID]) as [ChildCount], 
 				[c_1].[ParentID]
 			FROM
 				[Child] [c_1]

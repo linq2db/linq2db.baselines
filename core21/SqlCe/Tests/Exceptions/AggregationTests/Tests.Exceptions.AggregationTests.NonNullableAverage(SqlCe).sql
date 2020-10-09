@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Avg([_].[ParentID])
 FROM
 	[Parent] [_]

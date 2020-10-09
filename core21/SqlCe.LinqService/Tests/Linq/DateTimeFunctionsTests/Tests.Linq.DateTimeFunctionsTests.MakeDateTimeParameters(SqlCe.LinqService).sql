@@ -3,11 +3,11 @@
 DECLARE @p1 NVarChar(5) -- String
 SET     @p1 = '2010-'
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(Datetime, @p1 + Convert(NVarChar(11), [p].[ID]) + '-1') as [c1]
 		FROM
 			[LinqDataTypes] [p]

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlCe (asynchronously)
 
-SELECT
+SELECT 
 	Max([t1].[cnt])
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT
+		OUTER APPLY ( 
+			SELECT 
 				Count(*) as [cnt]
 			FROM
 				[Child] [c_1]

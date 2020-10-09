@@ -21,9 +21,9 @@ SELECT 'BOLTO'
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT TOP (1)
+		SELECT TOP (1) 
 			1
 		FROM
 			[TakeSkipClass] [t1]

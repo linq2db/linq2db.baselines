@@ -44,11 +44,11 @@ SET     @take = 2
 DECLARE @FirstName_1 NVarChar(5) -- String
 SET     @FirstName_1 = 'John0'
 
-SELECT TOP (@take)
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT TOP (@take) 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]
@@ -93,11 +93,11 @@ SET     @take = 2
 DECLARE @FirstName_1 NVarChar(5) -- String
 SET     @FirstName_1 = 'John1'
 
-SELECT TOP (@take)
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT TOP (@take) 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

@@ -6,7 +6,7 @@ DROP TABLE [TempTable]
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]

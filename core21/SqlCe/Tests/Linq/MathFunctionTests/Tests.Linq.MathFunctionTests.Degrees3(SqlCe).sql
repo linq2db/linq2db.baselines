@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Degrees(Convert(Int, [p].[MoneyValue])) as [c1]
 		FROM
 			[LinqDataTypes] [p]

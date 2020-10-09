@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	DatePart(week, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

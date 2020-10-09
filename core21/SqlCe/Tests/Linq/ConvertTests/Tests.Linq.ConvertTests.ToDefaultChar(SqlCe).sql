@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Convert(NChar, [t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]
