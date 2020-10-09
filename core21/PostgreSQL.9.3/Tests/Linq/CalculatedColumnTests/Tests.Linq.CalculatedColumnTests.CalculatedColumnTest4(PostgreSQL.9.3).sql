@@ -1,26 +1,26 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t1."PersonID",
-	t1."FirstName",
-	t1."LastName",
-	t1."MiddleName",
-	t1."Gender",
-	t1."AsSqlFullName",
+SELECT 
+	t1."PersonID", 
+	t1."FirstName", 
+	t1."LastName", 
+	t1."MiddleName", 
+	t1."Gender", 
+	t1."AsSqlFullName", 
 	t1.cnt
 FROM
 	"Doctor" cp
-		INNER JOIN (
-			SELECT
-				c_1."PersonID",
-				c_1."FirstName",
-				c_1."LastName",
-				c_1."MiddleName",
-				c_1."Gender",
-				c_1."LastName" || ', ' || c_1."FirstName" as "AsSqlFullName",
+		INNER JOIN ( 
+			SELECT 
+				c_1."PersonID", 
+				c_1."FirstName", 
+				c_1."LastName", 
+				c_1."MiddleName", 
+				c_1."Gender", 
+				c_1."LastName" || ', ' || c_1."FirstName" as "AsSqlFullName", 
 				(
-					SELECT
+					SELECT 
 						Count(*)
 					FROM
 						"Doctor" d

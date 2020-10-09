@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	p."DateTimeValue"
 FROM
 	"LinqDataTypes" p

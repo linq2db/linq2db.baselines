@@ -5,7 +5,7 @@ SET     @p1 = '2000-02-03 04:05:06.007'::timestamp
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	t1."Value"
 FROM
 	(

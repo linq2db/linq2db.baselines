@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t1."PersonID",
-	t1."FirstName",
-	t1."LastName",
-	t1."MiddleName",
-	t1."Gender",
-	t1."LastName" || ', ' || t1."FirstName",
+SELECT 
+	t1."PersonID", 
+	t1."FirstName", 
+	t1."LastName", 
+	t1."MiddleName", 
+	t1."Gender", 
+	t1."LastName" || ', ' || t1."FirstName", 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Doctor" d
@@ -22,15 +22,15 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	i."PersonID",
-	i."FirstName",
-	i."LastName",
-	i."MiddleName",
-	i."Gender",
-	i."LastName" || ', ' || i."FirstName",
+SELECT 
+	i."PersonID", 
+	i."FirstName", 
+	i."LastName", 
+	i."MiddleName", 
+	i."Gender", 
+	i."LastName" || ', ' || i."FirstName", 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Doctor" d

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	add_if_not_exists('test')
 

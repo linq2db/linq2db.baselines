@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Child" p
@@ -12,7 +12,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	"a_Parent"."ParentID"
 FROM
 	"Child" ch
@@ -21,7 +21,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Child" p

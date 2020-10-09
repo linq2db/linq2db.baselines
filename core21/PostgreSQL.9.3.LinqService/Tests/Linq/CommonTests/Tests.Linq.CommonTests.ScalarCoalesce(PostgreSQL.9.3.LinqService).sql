@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	Coalesce(p."Value1", 100)
 FROM
 	"Parent" p

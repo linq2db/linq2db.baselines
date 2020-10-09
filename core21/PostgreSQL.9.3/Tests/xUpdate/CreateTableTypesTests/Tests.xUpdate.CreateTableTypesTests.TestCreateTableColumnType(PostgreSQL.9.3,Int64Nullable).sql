@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t1."Id",
+SELECT 
+	t1."Id", 
 	t1."Int64Nullable"
 FROM
 	"CreateTableTypes" t1

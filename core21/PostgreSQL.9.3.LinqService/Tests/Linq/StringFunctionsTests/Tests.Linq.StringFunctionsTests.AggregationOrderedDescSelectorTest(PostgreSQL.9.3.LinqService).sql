@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	STRING_AGG(t1."Value1", ' -> ' ORDER BY t1."Value1", t1."Value3" DESC)
 FROM
 	"SampleClass" t1

@@ -25,8 +25,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	entity."ID",
+SELECT 
+	entity."ID", 
 	entity."BigIntValue"
 FROM
 	"LinqDataTypes" entity

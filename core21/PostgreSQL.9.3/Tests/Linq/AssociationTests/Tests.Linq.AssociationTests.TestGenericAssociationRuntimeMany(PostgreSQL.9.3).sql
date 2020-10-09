@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t."ParentID",
-	t."Value1",
-	m_1."ParentID",
+SELECT 
+	t."ParentID", 
+	t."Value1", 
+	m_1."ParentID", 
 	m_1."ChildID"
 FROM
 	"Parent" t

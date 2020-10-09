@@ -20,7 +20,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert14' || (
-		SELECT
+		SELECT 
 			p."FirstName"
 		FROM
 			"Person" p
@@ -35,7 +35,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" p

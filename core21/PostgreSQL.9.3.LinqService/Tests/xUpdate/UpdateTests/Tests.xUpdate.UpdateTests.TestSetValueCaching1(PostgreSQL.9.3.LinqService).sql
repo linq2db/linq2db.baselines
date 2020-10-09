@@ -51,7 +51,7 @@ SET     @id = 1
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	t1."Value1"
 FROM
 	"UpdateSetTest" t1
@@ -80,7 +80,7 @@ SET     @id = 1
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	t1."Value1"
 FROM
 	"UpdateSetTest" t1

@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	t1."ID"
 FROM
 	"DropTableTest" t1
@@ -39,7 +39,7 @@ DROP TABLE "DropTableTest"
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	t1."ID"
 FROM
 	"DropTableTest" t1

@@ -67,7 +67,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	t."TransactionDate" + 1 * Interval '1 Hour'
 FROM
 	"Transactions" t

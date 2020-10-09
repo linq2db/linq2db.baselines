@@ -34,8 +34,8 @@ CREATE TABLE "stMain"
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	v."inId",
+SELECT 
+	v."inId", 
 	r."inIdState"
 FROM
 	"stVersions" v

@@ -27,8 +27,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	r."BigIntValue",
+SELECT 
+	r."BigIntValue", 
 	r."IntValue"
 FROM
 	"LinqDataTypes" r

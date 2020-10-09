@@ -3,6 +3,6 @@
 DECLARE @p1 Text(2) -- String
 SET     @p1 = '23'
 
-SELECT
+SELECT 
 	:p1
 

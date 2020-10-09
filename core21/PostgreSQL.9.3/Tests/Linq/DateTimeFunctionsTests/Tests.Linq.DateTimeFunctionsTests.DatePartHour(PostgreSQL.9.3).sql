@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	Cast(Floor(Extract(hour from t."DateTimeValue")) as int)
 FROM
 	"LinqDataTypes" t

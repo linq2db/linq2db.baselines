@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Sum(c_1."ChildID")
 		FROM
 			"Child" c_1
@@ -15,7 +15,7 @@ FROM
 	"Parent" p
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" c_2

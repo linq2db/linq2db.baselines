@@ -44,9 +44,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t."Id",
-	t."Value1",
+SELECT 
+	t."Id", 
+	t."Value1", 
 	t."Value2"
 FROM
 	"ValueConversion" t

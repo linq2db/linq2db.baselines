@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t1."PersonID",
-	"a_Doctor"."PersonID",
+SELECT 
+	t1."PersonID", 
+	"a_Doctor"."PersonID", 
 	"a_Doctor"."Taxonomy"
 FROM
 	"Person" t1

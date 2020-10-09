@@ -1,21 +1,21 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	p1."ParentID",
-	p1."Sum_1",
-	gp2."ParentID",
+SELECT 
+	p1."ParentID", 
+	p1."Sum_1", 
+	gp2."ParentID", 
 	gp2."Sum_1"
 FROM
-	(
-		SELECT
-			p."ParentID",
+	( 
+		SELECT 
+			p."ParentID", 
 			Sum(p."ParentID") as "Sum_1"
 		FROM
 			"Parent" p
 		WHERE
 			EXISTS(
-				SELECT
+				SELECT 
 					*
 				FROM
 					"Child" ch
@@ -25,15 +25,15 @@ FROM
 		GROUP BY
 			p."ParentID"
 	) p1
-		LEFT JOIN (
-			SELECT
-				p_1."ParentID",
+		LEFT JOIN ( 
+			SELECT 
+				p_1."ParentID", 
 				Sum(p_1."ParentID") as "Sum_1"
 			FROM
 				"Parent" p_1
 			WHERE
 				EXISTS(
-					SELECT
+					SELECT 
 						*
 					FROM
 						"Child" ch_1

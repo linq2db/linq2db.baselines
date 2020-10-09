@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	(p."FirstName" IS NULL OR Length(p."FirstName") = 0)
 FROM
 	"Person" p

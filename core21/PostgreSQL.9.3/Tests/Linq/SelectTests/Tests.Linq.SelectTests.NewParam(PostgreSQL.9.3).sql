@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	p."PersonID",
+SELECT 
+	p."PersonID", 
 	p."FirstName"
 FROM
 	"Person" p
@@ -10,8 +10,8 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	p."PersonID",
+SELECT 
+	p."PersonID", 
 	p."FirstName"
 FROM
 	"Person" p
@@ -19,8 +19,8 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	p."PersonID",
+SELECT 
+	p."PersonID", 
 	p."FirstName"
 FROM
 	"Person" p
@@ -28,8 +28,8 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	p."PersonID",
+SELECT 
+	p."PersonID", 
 	p."FirstName"
 FROM
 	"Person" p
@@ -37,8 +37,8 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	p."PersonID",
+SELECT 
+	p."PersonID", 
 	p."FirstName"
 FROM
 	"Person" p

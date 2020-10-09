@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	"a_MiddleGeneric"."ParentID",
-	"a_MiddleGeneric"."ChildID",
-	"a_MiddleGeneric"."ParentID_1",
-	"a_MiddleGeneric"."ChildID_1",
+SELECT 
+	"a_MiddleGeneric"."ParentID", 
+	"a_MiddleGeneric"."ChildID", 
+	"a_MiddleGeneric"."ParentID_1", 
+	"a_MiddleGeneric"."ChildID_1", 
 	"a_MiddleGeneric"."GrandChildID"
 FROM
 	"Parent" t
-		LEFT JOIN (
-			SELECT
-				t1."ParentID",
-				t1."ChildID",
-				"a_Bottom"."ParentID" as "ParentID_1",
-				"a_Bottom"."ChildID" as "ChildID_1",
+		LEFT JOIN ( 
+			SELECT 
+				t1."ParentID", 
+				t1."ChildID", 
+				"a_Bottom"."ParentID" as "ParentID_1", 
+				"a_Bottom"."ChildID" as "ChildID_1", 
 				"a_Bottom"."GrandChildID"
 			FROM
 				"Child" t1

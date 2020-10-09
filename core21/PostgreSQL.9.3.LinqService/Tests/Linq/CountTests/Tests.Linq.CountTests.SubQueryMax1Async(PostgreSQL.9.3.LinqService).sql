@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL (asynchronously)
 
-SELECT
+SELECT 
 	Max(t1.cnt)
 FROM
 	"Parent" p
-		LEFT JOIN LATERAL (
-			SELECT
+		LEFT JOIN LATERAL ( 
+			SELECT 
 				Count(*) as cnt
 			FROM
 				"Child" c_1

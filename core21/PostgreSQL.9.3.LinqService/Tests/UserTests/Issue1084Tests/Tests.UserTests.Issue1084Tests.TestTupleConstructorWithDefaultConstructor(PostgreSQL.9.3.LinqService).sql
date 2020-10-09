@@ -21,8 +21,8 @@ CREATE TABLE i1084_student
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	k_1."StatusBitmask",
+SELECT 
+	k_1."StatusBitmask", 
 	"joinedTable"."StatusBitmask"
 FROM
 	i1084_person k_1

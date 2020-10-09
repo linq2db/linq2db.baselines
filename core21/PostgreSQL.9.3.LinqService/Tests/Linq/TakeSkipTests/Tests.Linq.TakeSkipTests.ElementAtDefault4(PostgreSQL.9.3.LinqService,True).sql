@@ -5,8 +5,8 @@ SET     @take = 1
 DECLARE @n Integer -- Int32
 SET     @n = 300000
 
-SELECT
-	p."ParentID",
+SELECT 
+	p."ParentID", 
 	p."Value1"
 FROM
 	"Parent" p

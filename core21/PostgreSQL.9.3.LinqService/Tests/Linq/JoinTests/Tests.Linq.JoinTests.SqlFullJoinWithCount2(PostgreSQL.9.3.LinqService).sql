@@ -5,13 +5,13 @@ SET     @id = 1
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	COUNT(left_1."ParentID"),
-	COUNT(p_1."ParentID"),
+SELECT 
+	COUNT(left_1."ParentID"), 
+	COUNT(p_1."ParentID"), 
 	COUNT(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			p."ParentID"
 		FROM
 			"Parent" p

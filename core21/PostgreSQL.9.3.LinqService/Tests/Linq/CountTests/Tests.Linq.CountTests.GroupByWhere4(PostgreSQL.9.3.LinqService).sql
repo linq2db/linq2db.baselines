@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	"a_Parent"."ParentID"
 FROM
 	"GrandChild" t1

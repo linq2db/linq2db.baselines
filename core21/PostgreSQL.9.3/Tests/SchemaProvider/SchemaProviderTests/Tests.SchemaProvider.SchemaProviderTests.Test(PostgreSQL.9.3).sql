@@ -3,7 +3,7 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	current_schema()
 FROM
 	"LinqDataTypes" t1

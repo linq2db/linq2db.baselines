@@ -21,7 +21,7 @@ VALUES
 (
 	:id,
 	(
-		SELECT
+		SELECT 
 			t1.required_field
 		FROM
 			"Issue1363" t1
@@ -46,7 +46,7 @@ VALUES
 (
 	:id,
 	(
-		SELECT
+		SELECT 
 			t1.required_field
 		FROM
 			"Issue1363" t1
@@ -62,8 +62,8 @@ SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	t1.required_field,
+SELECT 
+	t1.required_field, 
 	t1.optional_field
 FROM
 	"Issue1363" t1

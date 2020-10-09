@@ -18,13 +18,13 @@ CREATE TABLE "TestEqualsTable2"
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	t1."Id"
 FROM
 	"TestEqualsTable1" t1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"TestEqualsTable2" t2

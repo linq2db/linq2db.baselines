@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Log(2, p."MoneyValue")) as c1
 		FROM
 			"LinqDataTypes" p

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL (asynchronously)
 
-SELECT DISTINCT
-	p1."PersonID",
-	p1."Gender",
-	p1."FirstName",
+SELECT DISTINCT 
+	p1."PersonID", 
+	p1."Gender", 
+	p1."FirstName", 
 	p1."LastName"
 FROM
 	"Person" p1

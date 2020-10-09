@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	Extract(dow from t."DateTimeValue") + 1
 FROM
 	"LinqDataTypes" t

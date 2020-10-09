@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t1.n,
+SELECT 
+	t1.n, 
 	Sum(t1."ParentID")
 FROM
-	(
-		SELECT
-			ch."ChildID" + 1 as n,
+	( 
+		SELECT 
+			ch."ChildID" + 1 as n, 
 			ch."ParentID"
 		FROM
 			"Child" ch

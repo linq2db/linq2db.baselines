@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Sqrt(Cast(p."MoneyValue" as Float) / 15) * 15) as c1
 		FROM
 			"LinqDataTypes" p

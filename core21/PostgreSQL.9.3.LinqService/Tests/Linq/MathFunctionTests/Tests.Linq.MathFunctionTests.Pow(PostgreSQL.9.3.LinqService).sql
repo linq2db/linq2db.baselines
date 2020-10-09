@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Power(Cast(p."MoneyValue" as Float), 3)) as c1
 		FROM
 			"LinqDataTypes" p

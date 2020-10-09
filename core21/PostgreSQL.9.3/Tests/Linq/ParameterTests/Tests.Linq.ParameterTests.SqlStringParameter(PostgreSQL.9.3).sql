@@ -5,11 +5,11 @@ SET     @p = 'John'
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	t."FirstName",
-	t."PersonID",
-	t."LastName",
-	t."MiddleName",
+SELECT 
+	t."FirstName", 
+	t."PersonID", 
+	t."LastName", 
+	t."MiddleName", 
 	t."Gender"
 FROM
 	"Person" t
@@ -24,11 +24,11 @@ SET     @p = 'Tester'
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	t."FirstName",
-	t."PersonID",
-	t."LastName",
-	t."MiddleName",
+SELECT 
+	t."FirstName", 
+	t."PersonID", 
+	t."LastName", 
+	t."MiddleName", 
 	t."Gender"
 FROM
 	"Person" t

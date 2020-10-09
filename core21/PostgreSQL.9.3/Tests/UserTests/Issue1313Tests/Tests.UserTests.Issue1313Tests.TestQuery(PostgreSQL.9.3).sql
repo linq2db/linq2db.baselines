@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	row_1."Value"
 FROM
 	"ValueItem" row_1

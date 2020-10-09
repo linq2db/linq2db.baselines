@@ -36,25 +36,25 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	r."Value_1"
 FROM
-	(
-		SELECT
-			t1."Id",
+	( 
+		SELECT 
+			t1."Id", 
 			t1."Value_1"
 		FROM
-			(
-				SELECT
-					t."Id",
+			( 
+				SELECT 
+					t."Id", 
 					t."Value1" as "Value_1"
 				FROM
 					"SampleData" t
 				WHERE
 					t."Id" % 2 = 0
 				EXCEPT
-				SELECT
-					t_1."Id",
+				SELECT 
+					t_1."Id", 
 					t_1."Value2" / 10 as "Value_1"
 				FROM
 					"SampleData" t_1
@@ -62,8 +62,8 @@ FROM
 					t_1."Id" % 4 = 0
 			) t1
 		EXCEPT
-		SELECT
-			t_2."Id",
+		SELECT 
+			t_2."Id", 
 			t_2."Value1" as "Value_1"
 		FROM
 			"SampleData" t_2

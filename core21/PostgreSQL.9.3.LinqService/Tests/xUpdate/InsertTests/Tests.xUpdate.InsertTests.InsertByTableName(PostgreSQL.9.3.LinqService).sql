@@ -102,7 +102,7 @@ RETURNING
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson" t1
@@ -110,7 +110,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson" p

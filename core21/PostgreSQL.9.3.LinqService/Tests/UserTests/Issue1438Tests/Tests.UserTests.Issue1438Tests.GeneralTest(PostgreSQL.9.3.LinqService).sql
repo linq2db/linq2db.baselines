@@ -32,8 +32,8 @@ SET     @id_1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	t1."Id",
+SELECT 
+	t1."Id", 
 	t1."Has"
 FROM
 	"Issue1438" t1

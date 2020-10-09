@@ -25,9 +25,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t1."Not Identifier",
-	Count(*),
+SELECT 
+	t1."Not Identifier", 
+	Count(*), 
 	Sum(t1."Some Value")
 FROM
 	"DynamicTable" t1

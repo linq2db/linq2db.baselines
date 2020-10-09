@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
+SELECT 
 	Cast(t."MoneyValue" as VarChar)
 FROM
 	"LinqDataTypes" t

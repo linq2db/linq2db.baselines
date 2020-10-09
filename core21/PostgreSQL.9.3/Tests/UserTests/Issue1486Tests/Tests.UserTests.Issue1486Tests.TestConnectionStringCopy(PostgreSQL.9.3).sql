@@ -3,17 +3,17 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	"lw_Parent"."ParentID",
-	detail."ParentID",
+SELECT 
+	"lw_Parent"."ParentID", 
+	detail."ParentID", 
 	detail."ChildID"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			t2."ParentID"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"a_Parent"."ParentID"
 				FROM
 					"Child" t1
@@ -28,10 +28,10 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	t1."ParentID",
-	t1."ChildID",
-	"a_Parent"."ParentID",
+SELECT 
+	t1."ParentID", 
+	t1."ChildID", 
+	"a_Parent"."ParentID", 
 	"a_Parent"."Value1"
 FROM
 	"Child" t1
