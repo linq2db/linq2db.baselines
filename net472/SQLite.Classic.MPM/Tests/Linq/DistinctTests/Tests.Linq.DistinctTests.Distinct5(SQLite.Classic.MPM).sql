@@ -5,7 +5,8 @@ SET     @Value1_1 = 3
 
 SELECT DISTINCT
 	Coalesce([p].[Value1], [p].[ParentID] % 2),
-	@Value1_1
+	@Value1_1,
+	Coalesce([p].[Value1], [p].[ParentID] % 2)
 FROM
 	[Parent] [p]
 
