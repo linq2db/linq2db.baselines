@@ -190,7 +190,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2008
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 119
+SET     @PersonID = 79
 DECLARE @Taxonomy NVarChar(4000) -- String
 SET     @Taxonomy = N'Dr. Lector'
 
@@ -208,7 +208,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 120
+SET     @PersonID = 80
 DECLARE @Taxonomy NVarChar(4000) -- String
 SET     @Taxonomy = N'Dr. who???'
 
@@ -226,7 +226,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 117
+SET     @PersonID = 77
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'sick'
 
@@ -244,7 +244,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 118
+SET     @PersonID = 78
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'very sick'
 
