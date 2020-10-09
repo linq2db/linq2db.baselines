@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]

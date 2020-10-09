@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[StringEnum]
 FROM
 	[CreateTableTypes] [t1]

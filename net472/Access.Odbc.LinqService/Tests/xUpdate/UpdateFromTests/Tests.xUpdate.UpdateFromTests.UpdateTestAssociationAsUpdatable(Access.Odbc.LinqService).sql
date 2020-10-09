@@ -263,7 +263,7 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
+SELECT TOP 1 
 	[v].[Value1]
 FROM
 	[UpdatedEntities] [v]

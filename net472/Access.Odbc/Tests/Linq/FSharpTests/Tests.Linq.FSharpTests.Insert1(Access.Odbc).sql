@@ -27,7 +27,7 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [c_1]

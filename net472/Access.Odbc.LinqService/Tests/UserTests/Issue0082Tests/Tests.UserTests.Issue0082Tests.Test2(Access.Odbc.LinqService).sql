@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[o].[ParentID],
-	[t2].[CountResult],
+SELECT 
+	[o].[ParentID], 
+	[t2].[CountResult], 
 	(
-		SELECT
+		SELECT 
 			Sum([x].[ParentID])
 		FROM
 			[Child] [x]
@@ -14,9 +14,9 @@ SELECT
 	)
 FROM
 	[Parent] [o]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [CountResult],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [CountResult], 
 				[t1].[ParentID]
 			FROM
 				[Child] [t1]
@@ -27,7 +27,7 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [o]
@@ -35,17 +35,17 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[x_1].[ParentID],
-	[x_1].[CountResult],
+SELECT 
+	[x_1].[ParentID], 
+	[x_1].[CountResult], 
 	[x_1].[SumResult]
 FROM
-	(
-		SELECT
-			[t2].[CountResult],
-			[o].[ParentID],
+	( 
+		SELECT 
+			[t2].[CountResult], 
+			[o].[ParentID], 
 			(
-				SELECT
+				SELECT 
 					Sum([x].[ParentID])
 				FROM
 					[Child] [x]
@@ -54,9 +54,9 @@ FROM
 			) as [SumResult]
 		FROM
 			[Parent] [o]
-				LEFT JOIN (
-					SELECT
-						Count(*) as [CountResult],
+				LEFT JOIN ( 
+					SELECT 
+						Count(*) as [CountResult], 
 						[t1].[ParentID]
 					FROM
 						[Child] [t1]

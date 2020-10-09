@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[_].[LastName]
 FROM
 	[Person] [_]

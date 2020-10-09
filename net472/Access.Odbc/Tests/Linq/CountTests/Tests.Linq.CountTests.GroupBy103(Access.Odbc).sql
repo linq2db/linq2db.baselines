@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count([t1].[ParentID])
 FROM
 	[Child] [t2]
-		LEFT JOIN (
-			SELECT
-				[keyParam].[ParentID],
+		LEFT JOIN ( 
+			SELECT 
+				[keyParam].[ParentID], 
 				[keyParam].[ChildID]
 			FROM
 				[Child] [keyParam]

@@ -3,7 +3,7 @@
 DECLARE @n Int -- Int32
 SET     @n = 3
 
-SELECT
+SELECT 
 	Count(*) = 0
 FROM
 	[Child] [c_1]

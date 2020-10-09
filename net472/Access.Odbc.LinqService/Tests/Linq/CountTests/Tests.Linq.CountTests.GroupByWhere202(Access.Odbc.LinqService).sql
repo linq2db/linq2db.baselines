@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[g_1].[ParentID]
 FROM
-	(
-		SELECT
-			Count([t1].[ParentID]) as [c1],
-			Count([t2].[ParentID]) as [ex],
+	( 
+		SELECT 
+			Count([t1].[ParentID]) as [c1], 
+			Count([t2].[ParentID]) as [ex], 
 			[t3].[ParentID]
 		FROM
 			([Child] [t3]
-				LEFT JOIN (
-					SELECT
+				LEFT JOIN ( 
+					SELECT 
 						[keyParam].[ParentID]
 					FROM
 						[Child] [keyParam]
@@ -21,8 +21,8 @@ FROM
 					GROUP BY
 						[keyParam].[ParentID]
 				) [t1] ON ([t3].[ParentID] = [t1].[ParentID]))
-				LEFT JOIN (
-					SELECT
+				LEFT JOIN ( 
+					SELECT 
 						[keyParam_1].[ParentID]
 					FROM
 						[Child] [keyParam_1]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [t1]

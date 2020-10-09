@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	CStr([t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

@@ -1,26 +1,26 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[lw_Child].[Key_1],
-	[lw_Child].[ParentID],
-	[lw_Child].[ChildID],
-	[detail_1].[ParentID],
-	[detail_1].[ChildID],
-	[detail_1].[GrandChildID],
-	[a_Child].[ParentID],
-	[a_Child].[ChildID],
-	[a_Child].[ParentID_1],
+SELECT 
+	[lw_Child].[Key_1], 
+	[lw_Child].[ParentID], 
+	[lw_Child].[ChildID], 
+	[detail_1].[ParentID], 
+	[detail_1].[ChildID], 
+	[detail_1].[GrandChildID], 
+	[a_Child].[ParentID], 
+	[a_Child].[ChildID], 
+	[a_Child].[ParentID_1], 
 	[a_Child].[Value1]
 FROM
-	((
-		SELECT DISTINCT
-			[detail].[ParentID],
-			[detail].[ChildID],
+	(( 
+		SELECT DISTINCT 
+			[detail].[ParentID], 
+			[detail].[ChildID], 
 			[lw_Parent].[ParentID] as [Key_1]
 		FROM
-			(
-				SELECT DISTINCT
+			( 
+				SELECT DISTINCT 
 					[t1].[ParentID]
 				FROM
 					[Parent] [t1]
@@ -28,11 +28,11 @@ FROM
 				INNER JOIN [Child] [detail] ON ([lw_Parent].[ParentID] = [detail].[ParentID])
 	) [lw_Child]
 		INNER JOIN [GrandChild] [detail_1] ON ([lw_Child].[ParentID] = [detail_1].[ParentID] AND [lw_Child].[ChildID] = [detail_1].[ChildID]))
-		LEFT JOIN (
-			SELECT
-				[t2].[ParentID],
-				[t2].[ChildID],
-				[a_Parent].[ParentID] as [ParentID_1],
+		LEFT JOIN ( 
+			SELECT 
+				[t2].[ParentID], 
+				[t2].[ChildID], 
+				[a_Parent].[ParentID] as [ParentID_1], 
 				[a_Parent].[Value1]
 			FROM
 				[Child] [t2]
@@ -42,13 +42,13 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
+SELECT 
+	[lw_Parent].[ParentID], 
+	[detail].[ParentID], 
 	[detail].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[ParentID]
 		FROM
 			[Parent] [t1]
@@ -58,15 +58,15 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t2].[Count_1],
-	[p].[ParentID],
+SELECT 
+	[t2].[Count_1], 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				[t1].[ParentID]
 			FROM
 				[GrandChild] [t1]

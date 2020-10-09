@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CStr([t].[MoneyValue]) as [c1]
 		FROM
 			[LinqDataTypes] [t]

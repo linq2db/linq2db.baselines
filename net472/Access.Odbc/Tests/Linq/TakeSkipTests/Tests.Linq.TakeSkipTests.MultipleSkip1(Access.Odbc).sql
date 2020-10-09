@@ -65,7 +65,7 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

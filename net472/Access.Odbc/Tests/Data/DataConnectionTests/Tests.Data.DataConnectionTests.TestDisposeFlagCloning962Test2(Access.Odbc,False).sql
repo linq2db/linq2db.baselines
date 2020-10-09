@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	'test1'
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	'test2'
 

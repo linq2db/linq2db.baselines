@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t2].[Key_1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Iif((
-				SELECT
+				SELECT 
 					Avg([c_1].[ParentID])
 				FROM
 					[Child] [c_1]
@@ -18,7 +18,7 @@ FROM
 			[Parent] [p]
 		WHERE
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					[Child] [t1]

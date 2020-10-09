@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t].[BinaryValue]
 FROM
 	[LinqDataTypes] [t]

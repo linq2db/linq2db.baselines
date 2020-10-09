@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @ID_1 Int -- Int32
 SET     @ID_1 = 5
 
-SELECT TOP 2
+SELECT TOP 2 
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]
@@ -39,7 +39,7 @@ BeforeExecute
 DECLARE @Id_1 Int -- Int32
 SET     @Id_1 = 5
 
-SELECT TOP 2
+SELECT TOP 2 
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]

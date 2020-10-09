@@ -51,14 +51,14 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[BinaryValue],
-	[_].[SmallIntValue],
+SELECT TOP 1 
+	[_].[ID], 
+	[_].[MoneyValue], 
+	[_].[DateTimeValue], 
+	[_].[BoolValue], 
+	[_].[GuidValue], 
+	[_].[BinaryValue], 
+	[_].[SmallIntValue], 
 	[_].[StringValue]
 FROM
 	[LinqDataTypes] [_]

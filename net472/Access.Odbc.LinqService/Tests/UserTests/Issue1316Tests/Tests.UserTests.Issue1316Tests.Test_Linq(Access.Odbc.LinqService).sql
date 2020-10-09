@@ -25,7 +25,7 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 2
+SELECT TOP 2 
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]

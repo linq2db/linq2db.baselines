@@ -32,8 +32,8 @@ INSERT INTO [LinqDataTypes]
 	[ID],
 	[BigIntValue]
 )
-SELECT
-	[r].[ID],
+SELECT 
+	[r].[ID], 
 	?
 FROM
 	[LinqDataTypes] [r]
@@ -43,7 +43,7 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[LinqDataTypes] [r]

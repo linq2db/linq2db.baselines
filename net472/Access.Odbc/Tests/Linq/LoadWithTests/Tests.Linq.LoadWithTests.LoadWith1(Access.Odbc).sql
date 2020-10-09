@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[t].[ParentID],
-	[t].[ChildID],
-	[a_Parent].[ParentID],
+SELECT TOP 1 
+	[t].[ParentID], 
+	[t].[ChildID], 
+	[a_Parent].[ParentID], 
 	[a_Parent].[Value1]
 FROM
 	[Child] [t]

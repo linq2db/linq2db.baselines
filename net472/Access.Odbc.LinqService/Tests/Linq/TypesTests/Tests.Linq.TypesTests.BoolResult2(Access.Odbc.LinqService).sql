@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[a_Patient].[PersonID] IS NOT NULL
 FROM
 	[Person] [p]

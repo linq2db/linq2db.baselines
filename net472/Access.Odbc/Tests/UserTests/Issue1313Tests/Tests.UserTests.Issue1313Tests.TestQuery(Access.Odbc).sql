@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[row_1].[Value]
 FROM
 	[ValueItem] [row_1]

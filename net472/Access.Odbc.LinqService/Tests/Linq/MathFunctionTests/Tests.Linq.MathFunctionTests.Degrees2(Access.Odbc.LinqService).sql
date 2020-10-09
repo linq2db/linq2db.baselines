@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[p].[MoneyValue] * 57.295779513082323 as [c1]
 		FROM
 			[LinqDataTypes] [p]

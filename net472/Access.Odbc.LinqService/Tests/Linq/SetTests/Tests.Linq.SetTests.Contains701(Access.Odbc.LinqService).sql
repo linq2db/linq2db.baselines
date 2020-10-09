@@ -5,7 +5,7 @@ SET     @ParentID = 11
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 11
 
-SELECT
+SELECT 
 	Count(*) > 0
 FROM
 	[Child] [c_1]

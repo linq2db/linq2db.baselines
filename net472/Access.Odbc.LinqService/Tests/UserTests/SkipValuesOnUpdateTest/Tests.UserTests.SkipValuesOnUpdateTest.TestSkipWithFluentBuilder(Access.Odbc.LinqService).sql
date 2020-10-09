@@ -35,9 +35,9 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Update_Fluent_Table] [t]
@@ -64,9 +64,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Update_Fluent_Table] [t]
@@ -90,9 +90,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Update_Fluent_Table] [t]

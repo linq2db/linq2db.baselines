@@ -3,7 +3,7 @@
 DECLARE @p1 Int -- Int32
 SET     @p1 = -35
 
-SELECT
+SELECT 
 	DateAdd('s', ?, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

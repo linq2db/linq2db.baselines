@@ -24,8 +24,8 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Value]
 FROM
 	[SampleClass] [t1]
@@ -33,8 +33,8 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -46,8 +46,8 @@ BeforeExecute
 DECLARE @asParamUnterm NVarChar(6) -- String
 SET     @asParamUnterm = '%[[]0%'
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -57,8 +57,8 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -68,8 +68,8 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -81,8 +81,8 @@ BeforeExecute
 DECLARE @asParamUnterm NVarChar(2) -- String
 SET     @asParamUnterm = '[0'
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -92,8 +92,8 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]
@@ -105,8 +105,8 @@ BeforeExecute
 DECLARE @asParam NVarChar(5) -- String
 SET     @asParam = '[0-9]'
 
-SELECT
-	[r].[Id],
+SELECT 
+	[r].[Id], 
 	[r].[Value]
 FROM
 	[SampleClass] [r]

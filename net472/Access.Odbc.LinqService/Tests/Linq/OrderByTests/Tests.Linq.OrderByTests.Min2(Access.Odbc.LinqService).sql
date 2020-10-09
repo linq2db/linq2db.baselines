@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Min([t1].[ParentID])
 FROM
-	(
-		SELECT TOP 3
+	( 
+		SELECT TOP 3 
 			[p].[ParentID]
 		FROM
 			[Parent] [p]

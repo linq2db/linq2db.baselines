@@ -3,8 +3,8 @@
 DECLARE @ParentID_1 Int -- Int32
 SET     @ParentID_1 = 1
 
-SELECT TOP 1
-	[c_1].[ParentID],
+SELECT TOP 1 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]
@@ -16,8 +16,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int -- Int32
 SET     @ParentID_1 = 2
 
-SELECT TOP 2
-	[c_1].[ParentID],
+SELECT TOP 2 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]

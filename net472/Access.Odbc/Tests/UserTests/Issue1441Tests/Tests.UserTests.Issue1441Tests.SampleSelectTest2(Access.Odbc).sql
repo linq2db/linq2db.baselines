@@ -24,8 +24,8 @@ CREATE TABLE [Books]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[author].[Id],
+SELECT 
+	[author].[Id], 
 	[author].[Name]
 FROM
 	[Authors] [author]

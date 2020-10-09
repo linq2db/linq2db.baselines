@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	DateAdd('n', -8, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

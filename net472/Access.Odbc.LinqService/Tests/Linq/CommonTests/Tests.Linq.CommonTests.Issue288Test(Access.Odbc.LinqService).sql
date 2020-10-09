@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
+SELECT TOP 1 
 	[p].[FirstName]
 FROM
 	[Person] [p]
@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @ID NVarChar(4) -- String
 SET     @ID = 'John'
 
-SELECT TOP 1
+SELECT TOP 1 
 	[p].[FirstName]
 FROM
 	[Person] [p]

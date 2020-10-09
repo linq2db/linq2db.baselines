@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[ParentID],
+SELECT 
+	[t].[ParentID], 
 	[t2].[Count_1]
 FROM
 	[Parent] [t]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				[t1].[ParentID]
 			FROM
 				[Child] [t1]
@@ -19,14 +19,14 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[ParentID],
+SELECT 
+	[t].[ParentID], 
 	[t2].[Count_1]
 FROM
 	[Parent] [t]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				[t1].[ParentID]
 			FROM
 				[Child] [t1]

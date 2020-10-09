@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Max([p].[ParentID])
 FROM
 	[Parent] [p]

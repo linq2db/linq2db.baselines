@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Max([_].[PersonID])
 FROM
 	[Person] [_]
@@ -18,11 +18,11 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 4
 
-SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]

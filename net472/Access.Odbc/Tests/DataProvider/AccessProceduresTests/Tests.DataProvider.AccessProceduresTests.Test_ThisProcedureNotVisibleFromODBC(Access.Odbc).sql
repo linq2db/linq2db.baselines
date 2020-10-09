@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [_]
@@ -16,7 +16,7 @@ BeforeExecute
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [_]

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[a_Patient].[Diagnosis],
+SELECT 
+	[a_Patient].[Diagnosis], 
 	Count(*)
 FROM
 	[Person] [t1]

@@ -438,14 +438,14 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t1].[Id],
-	[t1].[Value1],
-	[t1].[Value2],
-	[t1].[Enum],
-	[t1].[EnumNullable],
-	[t1].[EnumWithNull],
-	[t1].[EnumWithNullDeclarative],
+SELECT 
+	[t1].[Id], 
+	[t1].[Value1], 
+	[t1].[Value2], 
+	[t1].[Enum], 
+	[t1].[EnumNullable], 
+	[t1].[EnumWithNull], 
+	[t1].[EnumWithNullDeclarative], 
 	[t1].[BoolValue]
 FROM
 	[ValueConversion] [t1]
@@ -453,9 +453,9 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
 	[t].[Value2]
 FROM
 	[ValueConversion] [t]
@@ -463,15 +463,15 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t1].[Id],
-	[t1].[Value1],
+SELECT 
+	[t1].[Id], 
+	[t1].[Value1], 
 	[t1].[Value2]
 FROM
-	(
-		SELECT
-			[t].[Id],
-			[t].[Value1],
+	( 
+		SELECT 
+			[t].[Id], 
+			[t].[Value1], 
 			[t].[Value2]
 		FROM
 			[ValueConversion] [t]
@@ -480,22 +480,22 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
 	[t].[Value2]
 FROM
 	[ValueConversion] [t]
 UNION ALL
-SELECT
-	[t1].[Id],
-	[t1].[Value1],
+SELECT 
+	[t1].[Id], 
+	[t1].[Value1], 
 	[t1].[Value2]
 FROM
-	(
-		SELECT
-			[t_1].[Id],
-			[t_1].[Value1],
+	( 
+		SELECT 
+			[t_1].[Id], 
+			[t_1].[Value1], 
 			[t_1].[Value2]
 		FROM
 			[ValueConversion] [t_1]
@@ -504,12 +504,12 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 2
+SELECT TOP 2 
 	[q].[Value2]
 FROM
-	(
-		SELECT
-			[t].[Id],
+	( 
+		SELECT 
+			[t].[Id], 
 			[t].[Value2]
 		FROM
 			[ValueConversion] [t]

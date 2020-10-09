@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DatePart('yyyy', [a_Types].[DateTimeValue]) as [c1]
 		FROM
 			[Parent] [selectParam]

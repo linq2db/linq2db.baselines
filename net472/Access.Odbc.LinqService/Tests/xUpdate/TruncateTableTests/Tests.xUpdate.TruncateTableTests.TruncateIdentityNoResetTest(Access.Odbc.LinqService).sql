@@ -41,8 +41,8 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 3
-	[t1].[ID],
+SELECT TOP 3 
+	[t1].[ID], 
 	[t1].[Field1]
 FROM
 	[TestIdTrun] [t1]
@@ -81,8 +81,8 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 3
-	[t1].[ID],
+SELECT TOP 3 
+	[t1].[ID], 
 	[t1].[Field1]
 FROM
 	[TestIdTrun] [t1]

@@ -25,8 +25,8 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[r].[ID],
+SELECT 
+	[r].[ID], 
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]

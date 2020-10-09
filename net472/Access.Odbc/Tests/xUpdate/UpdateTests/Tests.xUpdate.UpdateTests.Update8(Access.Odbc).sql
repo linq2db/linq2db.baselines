@@ -43,8 +43,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int -- Int32
 SET     @ParentID_1 = 1001
 
-SELECT TOP 2
-	[p].[ParentID],
+SELECT TOP 2 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

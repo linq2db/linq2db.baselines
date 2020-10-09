@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_ch].[ParentID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[key_data_result].[Value1], 
+	[_ch].[ParentID], 
 	[_ch].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID],
+	( 
+		SELECT DISTINCT 
+			[p].[ParentID], 
 			[p].[Value1]
 		FROM
 			[Parent] [p]
@@ -21,15 +21,15 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t2].[p1],
-	[p].[ParentID],
+SELECT 
+	[t2].[p1], 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [p1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [p1], 
 				[t1].[ParentID]
 			FROM
 				[Child] [t1]

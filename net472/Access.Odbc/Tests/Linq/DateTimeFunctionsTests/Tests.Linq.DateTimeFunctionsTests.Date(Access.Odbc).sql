@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	DateValue([t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

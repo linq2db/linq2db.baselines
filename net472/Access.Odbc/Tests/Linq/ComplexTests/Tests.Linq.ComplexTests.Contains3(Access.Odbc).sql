@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -19,8 +19,8 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
@@ -36,8 +36,8 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
@@ -45,9 +45,9 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -55,14 +55,14 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[BinaryValue],
-	[t1].[SmallIntValue],
+SELECT 
+	[t1].[ID], 
+	[t1].[MoneyValue], 
+	[t1].[DateTimeValue], 
+	[t1].[BoolValue], 
+	[t1].[GuidValue], 
+	[t1].[BinaryValue], 
+	[t1].[SmallIntValue], 
 	[t1].[StringValue]
 FROM
 	[LinqDataTypes] [t1]
@@ -70,23 +70,23 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[p].[ParentID],
-	[t2].[gc],
-	[t2].[ChildID],
+SELECT 
+	[p].[ParentID], 
+	[t2].[gc], 
+	[t2].[ChildID], 
 	[t2].[GrandChildID]
 FROM
 	([Child] [ch]
 		INNER JOIN [Parent] [p] ON ([ch].[ParentID] = [p].[ParentID]))
-		LEFT JOIN (
-			SELECT
-				[gc_1].[ParentID] as [gc],
-				[gc_1].[ChildID],
+		LEFT JOIN ( 
+			SELECT 
+				[gc_1].[ParentID] as [gc], 
+				[gc_1].[ChildID], 
 				[gc_1].[GrandChildID]
 			FROM
 				[GrandChild] [gc_1]
-					INNER JOIN (
-						SELECT
+					INNER JOIN ( 
+						SELECT 
 							Max([t1].[GrandChildID]) as [c1]
 						FROM
 							[GrandChild] [t1]

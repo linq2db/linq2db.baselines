@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 5
-	[t1].[c1],
+SELECT TOP 5 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DateValue(Now) as [c1]
 		FROM
 			[Parent] [v]

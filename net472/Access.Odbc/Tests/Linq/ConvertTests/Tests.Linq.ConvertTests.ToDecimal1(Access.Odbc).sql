@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t].[MoneyValue] * 1000
 FROM
 	[LinqDataTypes] [t]

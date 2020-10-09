@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [t1]
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	1
 FROM
 	[Person] [_]

@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[_c].[ParentID], 
 	[_c].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[ParentID]
 		FROM
-			(
-				SELECT TOP 5000
+			( 
+				SELECT TOP 5000 
 					[t].[ParentID]
 				FROM
 					[Parent] [t]
@@ -26,19 +26,19 @@ ORDER BY
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 5000
-	[t].[ParentID],
+SELECT TOP 5000 
+	[t].[ParentID], 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [t].[ParentID] AND [c_1].[ChildID] > -100
-	),
-	[t1].[Count_1],
+	), 
+	[t1].[Count_1], 
 	(
-		SELECT TOP 1
+		SELECT TOP 1 
 			[c_2].[ParentID]
 		FROM
 			[Child] [c_2]
@@ -50,9 +50,9 @@ SELECT TOP 5000
 	)
 FROM
 	[Parent] [t]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				[c_3].[ParentID]
 			FROM
 				[Child] [c_3]

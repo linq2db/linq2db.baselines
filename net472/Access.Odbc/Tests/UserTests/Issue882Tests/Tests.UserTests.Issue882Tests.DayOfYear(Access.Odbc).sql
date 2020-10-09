@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	DatePart('y', [t].[DateTimeValue]) MOD 7
 FROM
 	[LinqDataTypes] [t]

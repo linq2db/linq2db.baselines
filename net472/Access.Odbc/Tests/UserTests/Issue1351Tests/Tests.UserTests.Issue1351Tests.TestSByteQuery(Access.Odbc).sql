@@ -11,9 +11,9 @@ CREATE TABLE [T1351Model]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[_].[ID],
-	[_].[TestField],
+SELECT 
+	[_].[ID], 
+	[_].[TestField], 
 	[_].[TestNullable]
 FROM
 	[T1351Model] [_]
@@ -23,9 +23,9 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[_].[ID],
-	[_].[TestField],
+SELECT 
+	[_].[ID], 
+	[_].[TestField], 
 	[_].[TestNullable]
 FROM
 	[T1351Model] [_]

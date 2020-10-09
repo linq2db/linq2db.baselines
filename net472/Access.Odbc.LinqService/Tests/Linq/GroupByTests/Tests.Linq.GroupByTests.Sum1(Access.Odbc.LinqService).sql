@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Sum([t1].[ChildID])
 FROM
 	[Child] [t1]

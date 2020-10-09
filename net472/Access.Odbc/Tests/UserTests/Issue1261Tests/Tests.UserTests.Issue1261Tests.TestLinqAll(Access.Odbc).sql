@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count(*) = 0
 FROM
 	[GrandChild] [x]
@@ -11,7 +11,7 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Count(*) = 0
 FROM
 	[GrandChild] [x]

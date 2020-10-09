@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[a_Child].[ParentID],
+SELECT 
+	[a_Child].[ParentID], 
 	[a_Child].[ChildID]
 FROM
-	((
-		SELECT
+	(( 
+		SELECT 
 			[p].[ParentID]
 		FROM
 			[Parent] [p],
@@ -20,12 +20,12 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[a_Child].[ParentID],
+SELECT 
+	[a_Child].[ParentID], 
 	[a_Child].[ChildID]
 FROM
-	((
-		SELECT
+	(( 
+		SELECT 
 			[p].[ParentID]
 		FROM
 			[Parent] [p],

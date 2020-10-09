@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Int(Log([p].[MoneyValue]) / 0.69314718055994529) as [c1]
 		FROM
 			[LinqDataTypes] [p]

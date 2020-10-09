@@ -6,12 +6,12 @@
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[a_Person].[PersonID],
-	[a_Person].[FirstName],
-	[a_Person].[LastName],
-	[a_Person].[MiddleName],
-	[a_Person].[Gender],
+SELECT 
+	[a_Person].[PersonID], 
+	[a_Person].[FirstName], 
+	[a_Person].[LastName], 
+	[a_Person].[MiddleName], 
+	[a_Person].[Gender], 
 	[p].[Diagnosis]
 FROM
 	[Patient] [p]

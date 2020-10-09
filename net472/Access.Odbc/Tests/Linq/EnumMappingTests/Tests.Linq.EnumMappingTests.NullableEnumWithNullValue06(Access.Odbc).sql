@@ -83,8 +83,8 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[r].[ID],
+SELECT 
+	[r].[ID], 
 	[r].[IntValue]
 FROM
 	[LinqDataTypes] [r]
@@ -96,9 +96,9 @@ ORDER BY
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[r].[ID],
-	[r].[IntValue],
+SELECT 
+	[r].[ID], 
+	[r].[IntValue], 
 	[r].[StringValue]
 FROM
 	[LinqDataTypes] [r]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[a_Parent].[ParentID]
 FROM
 	[GrandChild] [t1]

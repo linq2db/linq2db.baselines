@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[q].[ParentID],
-	[q].[Value1],
+SELECT 
+	[q].[ParentID], 
+	[q].[Value1], 
 	[a_Parent].[Value1]
 FROM
 	([Parent] [q]

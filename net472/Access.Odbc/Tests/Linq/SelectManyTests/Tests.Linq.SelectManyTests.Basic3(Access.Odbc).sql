@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[_1].[c1]
 FROM
 	[Parent] [cp],
-	(
-		SELECT
+	( 
+		SELECT 
 			[_].[ParentID] + 1 as [c1]
 		FROM
 			[Child] [_]

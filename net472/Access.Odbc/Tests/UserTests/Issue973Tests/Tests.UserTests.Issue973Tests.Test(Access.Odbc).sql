@@ -9,8 +9,8 @@ SET     @values_3 = 3
 DECLARE @param Int -- Int32
 SET     @param = 4
 
-SELECT
-	[o].[ParentID],
+SELECT 
+	[o].[ParentID], 
 	[o].[Value1]
 FROM
 	[Parent] [o]
@@ -22,8 +22,8 @@ BeforeExecute
 DECLARE @param Int -- Int32
 SET     @param = 4
 
-SELECT
-	[o].[ParentID],
+SELECT 
+	[o].[ParentID], 
 	[o].[Value1]
 FROM
 	[Parent] [o]
@@ -41,8 +41,8 @@ SET     @values_3 = 6
 DECLARE @param Int -- Int32
 SET     @param = 4
 
-SELECT
-	[o].[ParentID],
+SELECT 
+	[o].[ParentID], 
 	[o].[Value1]
 FROM
 	[Parent] [o]
@@ -54,8 +54,8 @@ BeforeExecute
 DECLARE @param Int -- Int32
 SET     @param = 4
 
-SELECT
-	[o].[ParentID],
+SELECT 
+	[o].[ParentID], 
 	[o].[Value1]
 FROM
 	[Parent] [o]

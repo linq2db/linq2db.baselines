@@ -1,19 +1,19 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[i].[PersonID],
-	[i].[FirstName],
-	[i].[LastName],
-	[i].[MiddleName],
-	[i].[Gender],
-	[i].[LastName] + ', ' + [i].[FirstName],
+SELECT 
+	[i].[PersonID], 
+	[i].[FirstName], 
+	[i].[LastName], 
+	[i].[MiddleName], 
+	[i].[Gender], 
+	[i].[LastName] + ', ' + [i].[FirstName], 
 	[t1].[cnt]
 FROM
 	[Person] [i]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [cnt], 
 				[d].[PersonID]
 			FROM
 				[Doctor] [d]

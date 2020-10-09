@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[Database\TestData].[LinqDataTypes] [t1]

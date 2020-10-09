@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[cross_1].[ParentID],
+SELECT 
+	[cross_1].[ParentID], 
 	[cross_1].[ChildID]
 FROM
-	(
-		SELECT
-			[p].[ParentID],
-			[c_1].[ChildID],
-			[p].[Value1],
+	( 
+		SELECT 
+			[p].[ParentID], 
+			[c_1].[ChildID], 
+			[p].[Value1], 
 			[c_1].[ParentID] as [ParentID_1]
 		FROM
 			[Parent] [p],

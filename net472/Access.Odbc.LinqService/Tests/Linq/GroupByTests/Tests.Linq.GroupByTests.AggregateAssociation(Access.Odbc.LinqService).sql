@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	Sum(Iif([a_Parent].[Value1] IS NULL, 0, [a_Parent].[Value1]))
 FROM
 	[Child] [t1]

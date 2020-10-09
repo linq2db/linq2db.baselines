@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[_c].[ParentID], 
 	[_c].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
@@ -19,18 +19,18 @@ ORDER BY
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ChildID] > -100
-	),
-	[t1].[Count_1],
+	), 
+	[t1].[Count_1], 
 	(
-		SELECT TOP 1
+		SELECT TOP 1 
 			[c_2].[ParentID]
 		FROM
 			[Child] [c_2]
@@ -39,13 +39,13 @@ SELECT
 			[c_2].[ParentID] > 0
 		ORDER BY
 			[c_2].[ChildID]
-	),
+	), 
 	[p].[ParentID]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				[c_3].[ParentID]
 			FROM
 				[Child] [c_3]
