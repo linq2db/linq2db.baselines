@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Iif((
-		SELECT TOP 1
+		SELECT TOP 1 
 			[a_Parent].[Value1]
 		FROM
 			[Child] [ch]
@@ -11,7 +11,7 @@ SELECT
 		WHERE
 			[ch].[ChildID] = [c_1].[ChildID]
 	) IS NULL, [c_1].[ChildID], (
-		SELECT TOP 1
+		SELECT TOP 1 
 			[a_Parent].[Value1]
 		FROM
 			[Child] [ch]

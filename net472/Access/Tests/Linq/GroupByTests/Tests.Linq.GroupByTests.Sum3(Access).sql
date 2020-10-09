@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Sum([p].[ChildID])
 		FROM
 			[Child] [p]

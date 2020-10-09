@@ -65,7 +65,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
@@ -75,7 +75,7 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [p]

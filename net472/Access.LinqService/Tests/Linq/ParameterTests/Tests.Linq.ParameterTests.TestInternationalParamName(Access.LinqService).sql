@@ -3,8 +3,8 @@
 DECLARE @параметр Integer -- Int32
 SET     @параметр = 1
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]
@@ -16,8 +16,8 @@ BeforeExecute
 DECLARE @参数 Integer -- Int32
 SET     @参数 = 1
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]
@@ -29,8 +29,8 @@ BeforeExecute
 DECLARE @パラメータ Integer -- Int32
 SET     @パラメータ = 1
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

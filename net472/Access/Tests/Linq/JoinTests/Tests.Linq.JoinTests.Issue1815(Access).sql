@@ -91,12 +91,12 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
+SELECT TOP 2 
+	[x].[InId], 
+	[j].[InId], 
+	[j].[InMaxQuantity], 
+	[j].[InMinQuantity], 
+	[x].[InMinQuantity], 
 	[x].[InMaxQuantity]
 FROM
 	[StLink] [x]
@@ -107,12 +107,12 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
+SELECT TOP 2 
+	[x].[InId], 
+	[j].[InId], 
+	[j].[InMaxQuantity], 
+	[j].[InMinQuantity], 
+	[x].[InMinQuantity], 
 	[x].[InMaxQuantity]
 FROM
 	[StLink] [x]

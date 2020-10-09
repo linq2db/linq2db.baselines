@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[e].[Id],
+SELECT TOP 2 
+	[e].[Id], 
 	[e].[SomeText]
 FROM
 	[Issue1622Table] [e]
@@ -41,8 +41,8 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[e].[Id],
+SELECT TOP 2 
+	[e].[Id], 
 	[e].[SomeText]
 FROM
 	[Issue1622Table] [e]

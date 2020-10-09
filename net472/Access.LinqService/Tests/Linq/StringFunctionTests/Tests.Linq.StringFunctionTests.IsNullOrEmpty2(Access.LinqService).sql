@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	([p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0)
 FROM
 	[Person] [p]

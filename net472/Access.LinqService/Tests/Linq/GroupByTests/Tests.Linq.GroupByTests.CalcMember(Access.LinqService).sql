@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Iif([child].[FirstName] = 'John', [child].[FirstName], 'a') as [c1]
 		FROM
 			[Parent] [parent_1],

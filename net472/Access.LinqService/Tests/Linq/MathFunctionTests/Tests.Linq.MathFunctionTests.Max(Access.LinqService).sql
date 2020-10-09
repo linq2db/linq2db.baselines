@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Iif([p].[MoneyValue] > 5.1, [p].[MoneyValue], 5.1) as [c1]
 		FROM
 			[LinqDataTypes] [p]

@@ -121,7 +121,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 4
+SELECT TOP 4 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

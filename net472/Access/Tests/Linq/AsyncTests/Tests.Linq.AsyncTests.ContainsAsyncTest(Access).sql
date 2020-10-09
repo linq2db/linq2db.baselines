@@ -3,7 +3,7 @@
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
-SELECT
+SELECT 
 	Count(*) > 0
 FROM
 	[Person] [t1]

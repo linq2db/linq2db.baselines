@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	LCase([p].[Taxonomy])
 FROM
 	[Doctor] [p]

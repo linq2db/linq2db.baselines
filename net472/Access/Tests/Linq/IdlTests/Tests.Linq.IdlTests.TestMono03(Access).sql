@@ -5,16 +5,16 @@ SET     @p1 = 'A'
 DECLARE @p2 Integer -- Int32
 SET     @p2 = 1
 
-SELECT
+SELECT 
 	[y].[FirstName]
 FROM
 	[Person] [y]
 UNION ALL
-SELECT
+SELECT 
 	[t1].[FirstName]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[x].[FirstName]
 		FROM
 			[Person] [x],

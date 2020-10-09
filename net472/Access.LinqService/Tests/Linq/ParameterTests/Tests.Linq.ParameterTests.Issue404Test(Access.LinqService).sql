@@ -179,18 +179,18 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[key_data_result].[Id],
-	[_v].[Id],
-	[_v].[Usage],
+SELECT 
+	[key_data_result].[Id], 
+	[_v].[Id], 
+	[_v].[Usage], 
 	[_v].[FirstTableId]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[Id]
 		FROM
-			(
-				SELECT TOP 1
+			( 
+				SELECT TOP 1 
 					[c_1].[Id]
 				FROM
 					[Table404One] [c_1]
@@ -201,7 +201,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -211,18 +211,18 @@ BeforeExecute
 DECLARE @Usage_2 Integer -- Int32
 SET     @Usage_2 = 0
 
-SELECT
-	[key_data_result].[Id],
-	[_v].[Id],
-	[_v].[Usage],
+SELECT 
+	[key_data_result].[Id], 
+	[_v].[Id], 
+	[_v].[Usage], 
 	[_v].[FirstTableId]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[Id]
 		FROM
-			(
-				SELECT TOP 1
+			( 
+				SELECT TOP 1 
 					[c_1].[Id]
 				FROM
 					[Table404One] [c_1]
@@ -233,7 +233,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -243,18 +243,18 @@ BeforeExecute
 DECLARE @Usage_2 Integer -- Int32
 SET     @Usage_2 = 1
 
-SELECT
-	[key_data_result].[Id],
-	[_v].[Id],
-	[_v].[Usage],
+SELECT 
+	[key_data_result].[Id], 
+	[_v].[Id], 
+	[_v].[Usage], 
 	[_v].[FirstTableId]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[Id]
 		FROM
-			(
-				SELECT TOP 1
+			( 
+				SELECT TOP 1 
 					[c_1].[Id]
 				FROM
 					[Table404One] [c_1]
@@ -265,7 +265,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -461,18 +461,18 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[key_data_result].[Id],
-	[_v].[Id],
-	[_v].[Usage],
+SELECT 
+	[key_data_result].[Id], 
+	[_v].[Id], 
+	[_v].[Usage], 
 	[_v].[FirstTableId]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[Id]
 		FROM
-			(
-				SELECT TOP 1
+			( 
+				SELECT TOP 1 
 					[c_1].[Id]
 				FROM
 					[Table404One] [c_1]
@@ -483,7 +483,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -493,18 +493,18 @@ BeforeExecute
 DECLARE @Usage_2 Integer -- Int32
 SET     @Usage_2 = 0
 
-SELECT
-	[key_data_result].[Id],
-	[_v].[Id],
-	[_v].[Usage],
+SELECT 
+	[key_data_result].[Id], 
+	[_v].[Id], 
+	[_v].[Usage], 
 	[_v].[FirstTableId]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[Id]
 		FROM
-			(
-				SELECT TOP 1
+			( 
+				SELECT TOP 1 
 					[c_1].[Id]
 				FROM
 					[Table404One] [c_1]
@@ -515,7 +515,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -525,18 +525,18 @@ BeforeExecute
 DECLARE @Usage_2 Integer -- Int32
 SET     @Usage_2 = 1
 
-SELECT
-	[key_data_result].[Id],
-	[_v].[Id],
-	[_v].[Usage],
+SELECT 
+	[key_data_result].[Id], 
+	[_v].[Id], 
+	[_v].[Usage], 
 	[_v].[FirstTableId]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t1].[Id]
 		FROM
-			(
-				SELECT TOP 1
+			( 
+				SELECT TOP 1 
 					[c_1].[Id]
 				FROM
 					[Table404One] [c_1]
@@ -547,7 +547,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]

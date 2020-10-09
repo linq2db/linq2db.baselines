@@ -62,10 +62,10 @@ BeforeExecute
 DECLARE @FirstName_1 VarWChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
-SELECT TOP 1
-	[x].[ID],
-	[x].[FirstName],
-	[x].[LastName],
+SELECT TOP 1 
+	[x].[ID], 
+	[x].[FirstName], 
+	[x].[LastName], 
 	[x].[MiddleName]
 FROM
 	[TestInsertOrReplaceTable] [x]
@@ -97,10 +97,10 @@ BeforeExecute
 DECLARE @FirstName_1 VarWChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
-SELECT TOP 1
-	[x].[ID],
-	[x].[FirstName],
-	[x].[LastName],
+SELECT TOP 1 
+	[x].[ID], 
+	[x].[FirstName], 
+	[x].[LastName], 
 	[x].[MiddleName]
 FROM
 	[TestInsertOrReplaceTable] [x]

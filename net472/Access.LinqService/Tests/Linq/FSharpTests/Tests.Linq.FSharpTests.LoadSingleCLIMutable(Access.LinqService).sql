@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[p].[PersonID],
-	[p].[FirstName],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender],
-	[a_Patient].[PersonID],
+SELECT TOP 2 
+	[p].[PersonID], 
+	[p].[FirstName], 
+	[p].[LastName], 
+	[p].[MiddleName], 
+	[p].[Gender], 
+	[a_Patient].[PersonID], 
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]
@@ -18,13 +18,13 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[p].[PersonID],
-	[p].[FirstName],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender],
-	[a_Patient].[PersonID],
+SELECT TOP 2 
+	[p].[PersonID], 
+	[p].[FirstName], 
+	[p].[LastName], 
+	[p].[MiddleName], 
+	[p].[Gender], 
+	[a_Patient].[PersonID], 
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]

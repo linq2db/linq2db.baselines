@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count([t1].[ParentID])
 FROM
 	[Child] [t2]
-		LEFT JOIN (
-			SELECT
+		LEFT JOIN ( 
+			SELECT 
 				[id].[ParentID]
 			FROM
 				[Child] [id]

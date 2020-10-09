@@ -3,8 +3,8 @@
 DECLARE @ParentID_1 Integer -- Int32
 SET     @ParentID_1 = 1
 
-SELECT TOP 1
-	[x].[ParentID],
+SELECT TOP 1 
+	[x].[ParentID], 
 	[x].[Value1]
 FROM
 	[Parent] [x]

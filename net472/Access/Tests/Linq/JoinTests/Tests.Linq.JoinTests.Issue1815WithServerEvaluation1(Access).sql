@@ -91,9 +91,9 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[x].[InId],
-	Iif([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
+SELECT TOP 2 
+	[x].[InId], 
+	Iif([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]), 
 	Iif([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])
 FROM
 	[StLink] [x]
@@ -104,9 +104,9 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[x].[InId],
-	Iif([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
+SELECT TOP 2 
+	[x].[InId], 
+	Iif([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]), 
 	Iif([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])
 FROM
 	[StLink] [x]

@@ -35,9 +35,9 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Mixed_Table] [t]
@@ -61,9 +61,9 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Mixed_Table] [t]
@@ -91,9 +91,9 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Mixed_Table] [t]
@@ -120,9 +120,9 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Mixed_Table] [t]

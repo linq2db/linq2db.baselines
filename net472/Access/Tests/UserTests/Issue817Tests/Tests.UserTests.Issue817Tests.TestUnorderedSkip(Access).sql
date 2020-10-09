@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [t1]
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	1
 FROM
 	[Person] [_]

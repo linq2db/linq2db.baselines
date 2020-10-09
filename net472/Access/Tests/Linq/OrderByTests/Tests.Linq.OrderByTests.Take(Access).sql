@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
-	(
-		SELECT TOP 3
-			[p].[ParentID],
+	( 
+		SELECT TOP 3 
+			[p].[ParentID], 
 			[p].[Value1]
 		FROM
 			([Parent] [p]

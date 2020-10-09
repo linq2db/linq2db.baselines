@@ -73,9 +73,9 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	'Id',
-	[selectParam].[Id],
+SELECT 
+	'Id', 
+	[selectParam].[Id], 
 	Sum(Iif([a_ActualStage].[Id] IS NULL, NULL, [a_ActualStage].[Id]))
 FROM
 	[Task] [selectParam]

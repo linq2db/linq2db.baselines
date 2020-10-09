@@ -457,14 +457,14 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
+SELECT TOP 1 
+	[e].[Id], 
+	[e].[Value1], 
+	[e].[Value2], 
+	[e].[Enum], 
+	[e].[EnumNullable], 
+	[e].[EnumWithNull], 
+	[e].[EnumWithNullDeclarative], 
 	[e].[BoolValue]
 FROM
 	[ValueConversion] [e]
@@ -506,14 +506,14 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
+SELECT TOP 1 
+	[e].[Id], 
+	[e].[Value1], 
+	[e].[Value2], 
+	[e].[Enum], 
+	[e].[EnumNullable], 
+	[e].[EnumWithNull], 
+	[e].[EnumWithNullDeclarative], 
 	[e].[BoolValue]
 FROM
 	[ValueConversion] [e]
@@ -555,14 +555,14 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
+SELECT TOP 1 
+	[e].[Id], 
+	[e].[Value1], 
+	[e].[Value2], 
+	[e].[Enum], 
+	[e].[EnumNullable], 
+	[e].[EnumWithNull], 
+	[e].[EnumWithNullDeclarative], 
 	[e].[BoolValue]
 FROM
 	[ValueConversion] [e]

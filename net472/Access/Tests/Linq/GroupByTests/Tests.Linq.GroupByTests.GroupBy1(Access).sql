@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t3].[ParentID]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[t2].[ParentID]
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					[t1].[ParentID]
 				FROM
 					[Child] [t1]

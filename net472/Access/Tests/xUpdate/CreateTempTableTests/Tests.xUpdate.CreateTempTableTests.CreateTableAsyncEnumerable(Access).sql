@@ -6,7 +6,7 @@ DROP TABLE [TempTable]
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]
@@ -120,7 +120,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t].[ID]
 FROM
 	[Parent] [p]

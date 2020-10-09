@@ -153,7 +153,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
-SELECT
+SELECT 
 	Count(*) > 0
 FROM
 	[AsyncDataTable] [c_1]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [_]
@@ -16,7 +16,7 @@ ThisProcedureNotVisibleFromODBC
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [_]

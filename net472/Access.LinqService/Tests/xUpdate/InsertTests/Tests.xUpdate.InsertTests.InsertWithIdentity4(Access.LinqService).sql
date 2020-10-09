@@ -42,11 +42,11 @@ BeforeExecute
 DECLARE @FirstName_1 VarWChar(5) -- String
 SET     @FirstName_1 = 'John0'
 
-SELECT TOP 2
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT TOP 2 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]
@@ -89,11 +89,11 @@ BeforeExecute
 DECLARE @FirstName_1 VarWChar(5) -- String
 SET     @FirstName_1 = 'John1'
 
-SELECT TOP 2
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT TOP 2 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

@@ -25,7 +25,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	1
 FROM
 	[SelectExpressionTable] [_]

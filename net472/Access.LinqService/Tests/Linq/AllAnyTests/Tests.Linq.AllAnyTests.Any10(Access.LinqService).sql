@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	([Parent] [p]
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN [Child] [c_1] ON ([g_1].[ChildID] = [c_1].[ChildID])
 WHERE
 	NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[GrandChild] [x]

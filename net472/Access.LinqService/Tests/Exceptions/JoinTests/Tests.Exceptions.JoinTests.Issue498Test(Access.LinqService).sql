@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[x].[ParentID]
 FROM
 	[Parent] [x]
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[x].[ParentID]
 FROM
 	[Parent] [x]

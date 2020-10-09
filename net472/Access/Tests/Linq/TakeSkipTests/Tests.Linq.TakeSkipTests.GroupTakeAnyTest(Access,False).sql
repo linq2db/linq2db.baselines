@@ -65,7 +65,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	Count(*) > 0
 FROM
 	[TakeSkipClass] [t1]

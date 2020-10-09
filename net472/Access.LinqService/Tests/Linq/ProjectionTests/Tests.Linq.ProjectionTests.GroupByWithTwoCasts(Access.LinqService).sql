@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1000
-	[a_Patient].[Diagnosis],
-	[a_Patient].[PersonID],
+SELECT TOP 1000 
+	[a_Patient].[Diagnosis], 
+	[a_Patient].[PersonID], 
 	Avg([t1].[PersonID])
 FROM
 	[Person] [t1]

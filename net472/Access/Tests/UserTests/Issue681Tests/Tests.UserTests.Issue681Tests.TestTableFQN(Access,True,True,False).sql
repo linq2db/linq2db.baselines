@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[Database\TestData].[LinqDataTypes] [t1]

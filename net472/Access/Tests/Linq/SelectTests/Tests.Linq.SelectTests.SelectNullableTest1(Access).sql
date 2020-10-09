@@ -51,16 +51,16 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[DateTimeValue2],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[SmallIntValue],
-	[_].[IntValue],
-	[_].[BigIntValue],
+SELECT TOP 1 
+	[_].[ID], 
+	[_].[MoneyValue], 
+	[_].[DateTimeValue], 
+	[_].[DateTimeValue2], 
+	[_].[BoolValue], 
+	[_].[GuidValue], 
+	[_].[SmallIntValue], 
+	[_].[IntValue], 
+	[_].[BigIntValue], 
 	[_].[StringValue]
 FROM
 	[LinqDataTypes] [_]

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	(
-		SELECT TOP 1
+		SELECT TOP 1 
 			[keyParam].[Taxonomy]
 		FROM
 			[Doctor] [keyParam]

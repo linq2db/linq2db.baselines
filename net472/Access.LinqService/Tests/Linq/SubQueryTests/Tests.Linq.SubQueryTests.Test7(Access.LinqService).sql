@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t1].[Count_1]
 FROM
 	[Child] [c_1]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				[g_1].[ChildID]
 			FROM
 				[GrandChild] [g_1]

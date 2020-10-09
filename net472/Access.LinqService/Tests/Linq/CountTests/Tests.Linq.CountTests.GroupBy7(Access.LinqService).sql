@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	Count(*),
+SELECT 
+	Count(*), 
 	Max([t1].[ChildID])
 FROM
 	[Child] [t1]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [c1]
 		FROM
 			[Child] [selectParam]
@@ -18,8 +18,8 @@ BeforeExecute
 DECLARE @p1 VarWChar(1) -- String
 SET     @p1 = '1'
 
-SELECT
-	[selectParam].[ParentID],
+SELECT 
+	[selectParam].[ParentID], 
 	[selectParam].[ChildID]
 FROM
 	[Child] [selectParam]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DatePart('yyyy', [selectParam].[DateTimeValue]) as [c1]
 		FROM
 			[LinqDataTypes] [selectParam]

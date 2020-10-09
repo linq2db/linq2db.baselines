@@ -24,8 +24,8 @@ CREATE TABLE [Books]
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[author].[Id],
+SELECT 
+	[author].[Id], 
 	[author].[Name]
 FROM
 	[Authors] [author]

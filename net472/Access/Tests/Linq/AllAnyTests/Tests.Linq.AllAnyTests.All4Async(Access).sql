@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
-SELECT
+SELECT 
 	Count(*) = 0
 FROM
 	[Child] [c_1]

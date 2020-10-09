@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [_]
@@ -18,7 +18,7 @@ AddIssue792Record
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [_]

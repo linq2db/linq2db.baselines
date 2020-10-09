@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[a_Parent].[ParentID]
 FROM
 	[GrandChild] [t1]

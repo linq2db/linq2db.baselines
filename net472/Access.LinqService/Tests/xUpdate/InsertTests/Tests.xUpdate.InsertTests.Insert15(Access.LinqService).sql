@@ -35,7 +35,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [_]

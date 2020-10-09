@@ -265,9 +265,9 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[v].[Value1],
-	[v].[Value2],
+SELECT TOP 1 
+	[v].[Value1], 
+	[v].[Value2], 
 	[v].[Value3]
 FROM
 	[UpdatedEntities] [v]

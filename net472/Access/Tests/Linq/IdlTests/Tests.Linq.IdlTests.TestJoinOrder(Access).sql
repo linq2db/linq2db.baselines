@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[x_2].[ChildID],
-	[x_2].[ParentID],
-	[x_1].[PersonID],
+SELECT 
+	[x_2].[ChildID], 
+	[x_2].[ParentID], 
+	[x_1].[PersonID], 
 	[x_1].[FirstName]
 FROM
 	([GrandChild] [x_2]
@@ -14,10 +14,10 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[x_2].[ChildID],
-	[x_2].[ParentID],
-	[x].[PersonID],
+SELECT 
+	[x_2].[ChildID], 
+	[x_2].[ParentID], 
+	[x].[PersonID], 
 	[x].[FirstName]
 FROM
 	([GrandChild] [x_2]

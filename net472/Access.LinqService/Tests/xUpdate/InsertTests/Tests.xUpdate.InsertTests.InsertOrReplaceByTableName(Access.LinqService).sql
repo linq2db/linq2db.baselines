@@ -81,7 +81,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient22] [t1]
@@ -117,7 +117,7 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient22] [t1]

@@ -440,10 +440,10 @@ BeforeExecute
 DECLARE @BoolValue_2 VarChar(1) -- AnsiString
 SET     @BoolValue_2 = 'N'
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
+	[t].[Value2], 
 	[t].[BoolValue]
 FROM
 	[ValueConversion] [t]

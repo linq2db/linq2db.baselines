@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	'test1'
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	'test2'
 

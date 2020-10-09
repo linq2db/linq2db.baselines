@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Max([id].[ChildID])
 		FROM
 			[Child] [id]

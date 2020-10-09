@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT DISTINCT TOP 1
-	[t1].[ParentID],
+SELECT DISTINCT TOP 1 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]

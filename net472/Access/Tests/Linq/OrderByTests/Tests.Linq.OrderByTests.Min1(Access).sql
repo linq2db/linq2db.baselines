@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Min([p].[ParentID])
 FROM
 	[Parent] [p]

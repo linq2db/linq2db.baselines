@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Sgn([p].[MoneyValue]) as [c1]
 		FROM
 			[LinqDataTypes] [p]

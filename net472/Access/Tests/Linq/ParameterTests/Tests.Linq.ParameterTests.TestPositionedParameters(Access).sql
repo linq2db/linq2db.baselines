@@ -47,7 +47,7 @@ SET     @x3 = 3
 DECLARE @z2 Integer -- Int32
 SET     @z2 = 2
 
-SELECT
+SELECT 
 	((((@x3 * (@y10 - @z2) / @x3) * @z2) * (((((@x3_1 * (@y10_1 - @z2_1) / @x3_1) * @z2_1) * (@y10_2 - @z2_2) / ((@x3_1 * (@y10_1 - @z2_1) / @x3_1) * @z2_1)) * @z2_2) - [child_1].[ChildID]) / ((@x3 * (@y10 - @z2) / @x3) * @z2)) * [child_1].[ChildID])
 FROM
 	[Child] [child_1]
@@ -63,8 +63,8 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
@@ -80,8 +80,8 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
@@ -89,9 +89,9 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -99,14 +99,14 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[BinaryValue],
-	[t1].[SmallIntValue],
+SELECT 
+	[t1].[ID], 
+	[t1].[MoneyValue], 
+	[t1].[DateTimeValue], 
+	[t1].[BoolValue], 
+	[t1].[GuidValue], 
+	[t1].[BinaryValue], 
+	[t1].[SmallIntValue], 
 	[t1].[StringValue]
 FROM
 	[LinqDataTypes] [t1]

@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t3].[cnt]
 FROM
-	(
-		SELECT TOP 5
+	( 
+		SELECT TOP 5 
 			[t1].[ParentID]
 		FROM
 			[Parent] [t1]
 	) [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [cnt], 
 				[t2].[ParentID]
 			FROM
 				[Child] [t2]

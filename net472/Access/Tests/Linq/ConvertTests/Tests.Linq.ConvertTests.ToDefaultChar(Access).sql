@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	CStr([t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

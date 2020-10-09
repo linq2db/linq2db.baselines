@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[t1].[PersonID],
-	[t1].[FirstName],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[a_Patient].[PersonID],
+SELECT 
+	[t1].[PersonID], 
+	[t1].[FirstName], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
+	[a_Patient].[PersonID], 
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [t1]

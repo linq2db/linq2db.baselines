@@ -103,7 +103,7 @@ SELECT @@IDENTITY
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [t1]
@@ -111,7 +111,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [p]

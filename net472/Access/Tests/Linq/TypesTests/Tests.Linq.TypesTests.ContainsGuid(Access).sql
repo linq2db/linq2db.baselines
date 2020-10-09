@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[p].[GuidValue]
 FROM
 	[LinqDataTypes] [p]

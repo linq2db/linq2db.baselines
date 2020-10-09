@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	(
-		SELECT TOP 1
+		SELECT TOP 1 
 			[p].[ParentID]
 		FROM
 			[Child] [p]
@@ -14,7 +14,7 @@ FROM
 	[Parent] [p_1]
 WHERE
 	(
-		SELECT TOP 1
+		SELECT TOP 1 
 			1
 		FROM
 			[Child] [t1]

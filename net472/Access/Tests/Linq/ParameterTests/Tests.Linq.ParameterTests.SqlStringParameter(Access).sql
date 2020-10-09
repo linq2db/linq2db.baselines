@@ -3,11 +3,11 @@
 DECLARE @p VarWChar(4) -- String
 SET     @p = 'John'
 
-SELECT TOP 2
-	[t].[PersonID],
-	[t].[FirstName],
-	[t].[LastName],
-	[t].[MiddleName],
+SELECT TOP 2 
+	[t].[PersonID], 
+	[t].[FirstName], 
+	[t].[LastName], 
+	[t].[MiddleName], 
 	[t].[Gender]
 FROM
 	[Person] [t]
@@ -19,11 +19,11 @@ BeforeExecute
 DECLARE @p VarWChar(6) -- String
 SET     @p = 'Tester'
 
-SELECT TOP 2
-	[t].[PersonID],
-	[t].[FirstName],
-	[t].[LastName],
-	[t].[MiddleName],
+SELECT TOP 2 
+	[t].[PersonID], 
+	[t].[FirstName], 
+	[t].[LastName], 
+	[t].[MiddleName], 
 	[t].[Gender]
 FROM
 	[Person] [t]

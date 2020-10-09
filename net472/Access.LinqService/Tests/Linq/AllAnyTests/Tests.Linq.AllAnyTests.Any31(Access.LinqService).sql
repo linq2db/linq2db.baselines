@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] > 0 AND EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]

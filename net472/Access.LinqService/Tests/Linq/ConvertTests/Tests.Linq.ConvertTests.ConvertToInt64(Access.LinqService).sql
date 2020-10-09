@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Round([t].[MoneyValue], 0) as [c1]
 		FROM
 			[LinqDataTypes] [t]

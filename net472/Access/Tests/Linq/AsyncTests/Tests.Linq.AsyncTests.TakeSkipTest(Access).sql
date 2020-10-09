@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
-	[t1].[ParentID],
+SELECT TOP 3 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
@@ -12,8 +12,8 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
-SELECT TOP 3
-	[t1].[ParentID],
+SELECT TOP 3 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]

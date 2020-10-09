@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DateSerial(DatePart('yyyy', [p].[DateTimeValue]) + 1, 10, 1) as [c1]
 		FROM
 			[LinqDataTypes] [p]

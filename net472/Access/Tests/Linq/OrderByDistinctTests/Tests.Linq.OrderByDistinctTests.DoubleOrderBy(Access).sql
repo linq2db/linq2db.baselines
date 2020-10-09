@@ -482,14 +482,14 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[c_1].[Id],
-	[c_1].[DuplicateData],
-	[c_1].[OrderData1],
+SELECT 
+	[c_1].[Id], 
+	[c_1].[DuplicateData], 
+	[c_1].[OrderData1], 
 	[c_1].[OrderData2]
 FROM
-	(
-		SELECT TOP 3
+	( 
+		SELECT TOP 3 
 			[t1].[Id]
 		FROM
 			[OrderByDistinctData] [t1]

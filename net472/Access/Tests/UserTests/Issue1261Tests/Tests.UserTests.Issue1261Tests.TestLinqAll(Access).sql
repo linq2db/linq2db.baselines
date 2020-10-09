@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*) = 0
 FROM
 	[GrandChild] [x]
@@ -11,7 +11,7 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*) = 0
 FROM
 	[GrandChild] [x]

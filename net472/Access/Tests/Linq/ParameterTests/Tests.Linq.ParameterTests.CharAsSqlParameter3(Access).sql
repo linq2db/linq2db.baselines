@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	chr(0)
 

@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[_].[Id],
+SELECT TOP 1 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass] [_]
@@ -41,8 +41,8 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[_].[Id],
+SELECT TOP 1 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass] [_]

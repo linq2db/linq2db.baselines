@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
-SELECT
+SELECT 
 	Max([x].[PersonID])
 FROM
 	[Person] [x]
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [p]

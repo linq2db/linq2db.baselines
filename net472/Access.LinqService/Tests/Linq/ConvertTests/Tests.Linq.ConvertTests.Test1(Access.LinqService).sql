@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[t].[ID],
-	[t].[MoneyValue],
-	[t].[DateTimeValue],
-	[t].[BoolValue],
-	[t].[GuidValue],
-	[t].[BinaryValue],
-	[t].[SmallIntValue],
+SELECT TOP 2 
+	[t].[ID], 
+	[t].[MoneyValue], 
+	[t].[DateTimeValue], 
+	[t].[BoolValue], 
+	[t].[GuidValue], 
+	[t].[BinaryValue], 
+	[t].[SmallIntValue], 
 	[t].[StringValue]
 FROM
 	[LinqDataTypes] [t]

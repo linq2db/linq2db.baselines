@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[p].[FirstName]
 FROM
 	[Person] [p]
@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @ID VarWChar(4) -- String
 SET     @ID = 'John'
 
-SELECT TOP 1
+SELECT TOP 1 
 	[p].[FirstName]
 FROM
 	[Person] [p]

@@ -23,7 +23,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]

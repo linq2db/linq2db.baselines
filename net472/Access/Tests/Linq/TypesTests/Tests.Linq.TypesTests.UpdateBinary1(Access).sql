@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t].[BinaryValue]
 FROM
 	[LinqDataTypes] [t]

@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[g_1].[Value1]
 FROM
-	(
-		SELECT
-			Count([t1].[ParentID]) as [ex],
+	( 
+		SELECT 
+			Count([t1].[ParentID]) as [ex], 
 			[a_Parent].[Value1]
 		FROM
 			([GrandChild] [t2]
 				INNER JOIN [Parent] [a_Parent] ON ([t2].[ParentID] = [a_Parent].[ParentID]))
-				LEFT JOIN (
-					SELECT
+				LEFT JOIN ( 
+					SELECT 
 						[a_Parent_1].[ParentID]
 					FROM
 						[GrandChild] [keyParam]

@@ -14,7 +14,7 @@ SET     @firstName = 'Jürgen'
 DECLARE @lastName VarWChar(5) -- String
 SET     @lastName = 'König'
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [_]
@@ -28,11 +28,11 @@ SET     @firstName_1 = 'Jürgen'
 DECLARE @lastName_1 VarWChar(5) -- String
 SET     @lastName_1 = 'König'
 
-SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]

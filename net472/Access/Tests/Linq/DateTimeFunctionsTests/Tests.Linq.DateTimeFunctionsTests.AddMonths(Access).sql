@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	DateAdd('m', -2, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

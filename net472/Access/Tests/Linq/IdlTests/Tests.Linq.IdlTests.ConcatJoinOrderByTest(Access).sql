@@ -1,21 +1,21 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[person_1].[PersonID],
+SELECT 
+	[person_1].[PersonID], 
 	[y].[PersonID]
 FROM
-	(
-		SELECT
-			[pat].[PersonID],
+	( 
+		SELECT 
+			[pat].[PersonID], 
 			[pat].[Diagnosis]
 		FROM
 			[Patient] [pat]
 		WHERE
 			[pat].[Diagnosis] = 'a'
 		UNION ALL
-		SELECT
-			[pat_1].[PersonID],
+		SELECT 
+			[pat_1].[PersonID], 
 			[pat_1].[Diagnosis]
 		FROM
 			[Patient] [pat_1]

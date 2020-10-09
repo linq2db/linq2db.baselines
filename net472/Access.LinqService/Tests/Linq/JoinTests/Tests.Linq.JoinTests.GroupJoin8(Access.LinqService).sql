@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_c].[ParentID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[key_data_result].[Value1], 
+	[_c].[ParentID], 
 	[_c].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID],
+	( 
+		SELECT DISTINCT 
+			[p].[ParentID], 
 			[p].[Value1]
 		FROM
 			[Parent] [p]
@@ -21,8 +21,8 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

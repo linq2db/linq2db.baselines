@@ -27,8 +27,8 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[r].[BigIntValue],
+SELECT 
+	[r].[BigIntValue], 
 	[r].[IntValue]
 FROM
 	[LinqDataTypes] [r]

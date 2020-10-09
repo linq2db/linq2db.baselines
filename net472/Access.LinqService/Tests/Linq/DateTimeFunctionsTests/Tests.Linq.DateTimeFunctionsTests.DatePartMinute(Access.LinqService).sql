@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	DatePart('n', [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

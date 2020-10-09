@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Int(Log([p].[MoneyValue]) / 2.3025850929940459) as [c1]
 		FROM
 			[LinqDataTypes] [p]

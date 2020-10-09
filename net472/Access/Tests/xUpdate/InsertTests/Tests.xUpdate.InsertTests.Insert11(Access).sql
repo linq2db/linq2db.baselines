@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Max([t].[PersonID])
 FROM
 	[Person] [t]
@@ -37,11 +37,11 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 4
 
-SELECT TOP 2
-	[p2].[PersonID],
-	[p2].[Gender],
-	[p2].[FirstName],
-	[p2].[MiddleName],
+SELECT TOP 2 
+	[p2].[PersonID], 
+	[p2].[Gender], 
+	[p2].[FirstName], 
+	[p2].[MiddleName], 
 	[p2].[LastName]
 FROM
 	[Person] [p2]

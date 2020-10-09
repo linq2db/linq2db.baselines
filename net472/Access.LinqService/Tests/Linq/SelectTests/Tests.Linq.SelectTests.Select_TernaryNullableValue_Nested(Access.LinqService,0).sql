@@ -5,6 +5,6 @@ SET     @Value_2 = 0
 DECLARE @Value_3 Integer -- Int32
 SET     @Value_3 = 0
 
-SELECT
+SELECT 
 	Iif(@Value_2 < 2, @Value_3, 2)
 

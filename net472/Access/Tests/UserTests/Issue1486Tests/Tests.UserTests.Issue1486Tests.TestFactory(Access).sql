@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 --  Access AccessOleDb
 
-SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
+SELECT 
+	[lw_Parent].[ParentID], 
+	[detail].[ParentID], 
 	[detail].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t2].[ParentID]
 		FROM
-			(
-				SELECT TOP 1
+			( 
+				SELECT TOP 1 
 					[a_Parent].[ParentID]
 				FROM
 					[Child] [t1]
@@ -23,10 +23,10 @@ FROM
 BeforeExecute
 --  Access AccessOleDb
 
-SELECT TOP 1
-	[t1].[ParentID],
-	[t1].[ChildID],
-	[a_Parent].[ParentID],
+SELECT TOP 1 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
+	[a_Parent].[ParentID], 
 	[a_Parent].[Value1]
 FROM
 	[Child] [t1]

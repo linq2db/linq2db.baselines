@@ -482,8 +482,8 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT DISTINCT TOP 3
-	[x].[DuplicateData],
+SELECT DISTINCT TOP 3 
+	[x].[DuplicateData], 
 	[x].[OrderData1]
 FROM
 	[OrderByDistinctData] [x]

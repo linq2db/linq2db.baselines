@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[p2].[PersonID],
+SELECT 
+	[p2].[PersonID], 
 	[p1].[FirstName]
 FROM
 	[Person] [p1],

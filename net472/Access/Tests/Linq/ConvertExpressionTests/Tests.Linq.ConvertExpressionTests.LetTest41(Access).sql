@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[_c].[ParentID], 
 	[_c].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
@@ -19,13 +19,13 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[_c].[ParentID], 
 	[_c].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
@@ -37,22 +37,22 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ChildID] > -100
-	),
-	[t1].[Count_1],
+	), 
+	[t1].[Count_1], 
 	[p].[ParentID]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [Count_1], 
 				[c_2].[ParentID]
 			FROM
 				[Child] [c_2]

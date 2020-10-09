@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[_p].[ParentID],
+SELECT 
+	[_p].[ParentID], 
 	[_p].[Value1]
 FROM
 	[Parent] [_p]

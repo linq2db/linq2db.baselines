@@ -482,7 +482,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -494,7 +494,7 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]

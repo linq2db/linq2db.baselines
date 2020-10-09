@@ -41,7 +41,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[GrandChild] [gc]
@@ -55,7 +55,7 @@ DELETE FROM
 	[GrandChild] [t1]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[GrandChild] [gc]
@@ -71,7 +71,7 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[GrandChild] [gc]

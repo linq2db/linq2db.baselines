@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	Sum([t1].[MoneyValue]),
-	[t1].[c2],
+SELECT 
+	Sum([t1].[MoneyValue]), 
+	[t1].[c2], 
 	[t1].[c1]
 FROM
-	(
-		SELECT
-			DatePart('m', [selectParam].[DateTimeValue]) as [c1],
-			DatePart('yyyy', [selectParam].[DateTimeValue]) as [c2],
+	( 
+		SELECT 
+			DatePart('m', [selectParam].[DateTimeValue]) as [c1], 
+			DatePart('yyyy', [selectParam].[DateTimeValue]) as [c2], 
 			[selectParam].[MoneyValue]
 		FROM
 			[LinqDataTypes] [selectParam]

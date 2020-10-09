@@ -3,11 +3,11 @@
 DECLARE @year_1 Integer -- Int32
 SET     @year_1 = 2010
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DateSerial(@year_1, [p].[ID], 1) as [c1]
 		FROM
 			[LinqDataTypes] [p]

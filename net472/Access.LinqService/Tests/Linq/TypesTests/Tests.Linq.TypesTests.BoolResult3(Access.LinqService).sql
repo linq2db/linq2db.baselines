@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[p].[PersonID] = 1
 FROM
 	[Person] [p]

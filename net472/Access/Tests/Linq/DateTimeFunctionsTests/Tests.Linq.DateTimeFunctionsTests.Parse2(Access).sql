@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[d].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CDate(CStr(DatePart('yyyy', [t].[DateTimeValue])) + '-02-24 00:00:00') as [c1]
 		FROM
 			[LinqDataTypes] [t]

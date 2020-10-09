@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[o].[ParentID],
-	[t2].[CountResult],
+SELECT 
+	[o].[ParentID], 
+	[t2].[CountResult], 
 	(
-		SELECT
+		SELECT 
 			Sum([od].[ParentID])
 		FROM
 			[Child] [od]
@@ -14,9 +14,9 @@ SELECT
 	)
 FROM
 	[Parent] [o]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [CountResult],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [CountResult], 
 				[t1].[ParentID]
 			FROM
 				[Child] [t1]
@@ -27,7 +27,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [o]
@@ -35,17 +35,17 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[x].[ParentID],
-	[x].[CountResult],
+SELECT 
+	[x].[ParentID], 
+	[x].[CountResult], 
 	[x].[Sum_1]
 FROM
-	(
-		SELECT
-			[t2].[CountResult],
-			[o].[ParentID],
+	( 
+		SELECT 
+			[t2].[CountResult], 
+			[o].[ParentID], 
 			(
-				SELECT
+				SELECT 
 					Sum([od].[ParentID])
 				FROM
 					[Child] [od]
@@ -54,9 +54,9 @@ FROM
 			) as [Sum_1]
 		FROM
 			[Parent] [o]
-				LEFT JOIN (
-					SELECT
-						Count(*) as [CountResult],
+				LEFT JOIN ( 
+					SELECT 
+						Count(*) as [CountResult], 
 						[t1].[ParentID]
 					FROM
 						[Child] [t1]

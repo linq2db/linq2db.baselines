@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[p].[ParentID]
 FROM
 	[Parent] [p]
@@ -11,7 +11,7 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[p].[ParentID]
 FROM
 	[Parent] [p]
@@ -21,7 +21,7 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT TOP 1 
 	[p].[ParentID]
 FROM
 	[Parent] [p]

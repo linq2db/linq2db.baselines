@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	Max([_].[ID])
 FROM
 	[AllTypes] [_]
@@ -391,9 +391,9 @@ BeforeExecute
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
-SELECT
-	[_].[ID],
-	[_].[char20DataType],
+SELECT 
+	[_].[ID], 
+	[_].[char20DataType], 
 	[_].[ncharDataType]
 FROM
 	[AllTypes] [_]

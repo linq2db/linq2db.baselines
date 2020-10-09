@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[g_1].[ParentID]
 FROM
 	([Child] [c_1]

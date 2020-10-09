@@ -71,7 +71,7 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
-SELECT TOP 2
+SELECT TOP 2 
 	[_].[Value4]
 FROM
 	[UpdateSetTest] [_]
@@ -97,7 +97,7 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
-SELECT TOP 2
+SELECT TOP 2 
 	[_].[Value4]
 FROM
 	[UpdateSetTest] [_]

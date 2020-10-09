@@ -274,22 +274,22 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[r].[Value1]
 		FROM
-			(
-				SELECT DISTINCT
-					[t].[Id],
+			( 
+				SELECT DISTINCT 
+					[t].[Id], 
 					[t].[Value1]
 				FROM
 					[SampleData] [t]
 				WHERE
 					NOT EXISTS(
-						SELECT
+						SELECT 
 							*
 						FROM
 							[SampleData] [t_1]
@@ -301,7 +301,7 @@ FROM
 			) [r]
 		WHERE
 			NOT EXISTS(
-				SELECT
+				SELECT 
 					*
 				FROM
 					[SampleData] [t_2]

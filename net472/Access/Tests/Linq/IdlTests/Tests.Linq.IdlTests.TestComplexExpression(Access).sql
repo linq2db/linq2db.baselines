@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT
+SELECT 
 	[e].[ChildID]
 FROM
 	[GrandChild] [e]
