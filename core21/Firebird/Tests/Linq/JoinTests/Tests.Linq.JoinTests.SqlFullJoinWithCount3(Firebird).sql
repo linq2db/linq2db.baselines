@@ -5,14 +5,14 @@ SET     @take = 2
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
-SELECT FIRST @take
-	COUNT("left_1"."ParentID"),
-	COUNT("t1"."ParentID"),
+SELECT FIRST @take 
+	COUNT("left_1"."ParentID"), 
+	COUNT("t1"."ParentID"), 
 	COUNT(*)
 FROM
 	"Parent" "left_1"
-		FULL JOIN (
-			SELECT
+		FULL JOIN ( 
+			SELECT 
 				"p"."ParentID"
 			FROM
 				"Parent" "p"

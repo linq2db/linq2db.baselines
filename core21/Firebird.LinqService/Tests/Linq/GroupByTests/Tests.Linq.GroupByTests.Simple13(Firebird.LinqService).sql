@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"selectParam"."ChildID"
 FROM
 	"GrandChild" "selectParam"

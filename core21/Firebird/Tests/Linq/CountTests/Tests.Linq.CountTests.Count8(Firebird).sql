@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Child" "p"
@@ -12,7 +12,7 @@ WHERE
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"a_Parent"."ParentID"
 FROM
 	"Child" "ch"
@@ -21,7 +21,7 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Child" "p"

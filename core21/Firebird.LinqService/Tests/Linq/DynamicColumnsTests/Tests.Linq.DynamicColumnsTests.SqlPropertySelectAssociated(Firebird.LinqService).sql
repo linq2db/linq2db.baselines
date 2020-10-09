@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"a_Patient"."Diagnosis"
 FROM
 	"Person" "x"

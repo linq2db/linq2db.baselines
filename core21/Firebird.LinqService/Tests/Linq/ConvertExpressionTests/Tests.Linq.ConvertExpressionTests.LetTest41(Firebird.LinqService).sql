@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"key_data_result"."ParentID",
-	"c_1"."ParentID",
+SELECT 
+	"key_data_result"."ParentID", 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			"p"."ParentID"
 		FROM
@@ -19,12 +19,12 @@ ORDER BY
 BeforeExecute
 -- Firebird
 
-SELECT
-	"key_data_result"."ParentID",
-	"c_1"."ParentID",
+SELECT 
+	"key_data_result"."ParentID", 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			"p"."ParentID"
 		FROM
@@ -37,23 +37,23 @@ ORDER BY
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "c_1"
 		WHERE
 			"c_1"."ParentID" = "p"."ParentID" AND "c_1"."ChildID" > -100
-	) THEN 1 ELSE 0 END,
+	) THEN 1 ELSE 0 END, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "c_2"
 		WHERE
 			"c_2"."ParentID" = "p"."ParentID" AND "c_2"."ChildID" > -100
-	),
+	), 
 	"p"."ParentID"
 FROM
 	"Parent" "p"

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT FIRST 5 SKIP 3
-	"t1"."ParentID",
+SELECT FIRST 5 SKIP 3 
+	"t1"."ParentID", 
 	"t1"."ChildID"
 FROM
 	"Child" "t1"
@@ -12,8 +12,8 @@ ORDER BY
 BeforeExecute
 -- Firebird
 
-SELECT FIRST 5 SKIP 3
-	"t1"."ParentID",
+SELECT FIRST 5 SKIP 3 
+	"t1"."ParentID", 
 	"t1"."ChildID"
 FROM
 	"Child" "t1"

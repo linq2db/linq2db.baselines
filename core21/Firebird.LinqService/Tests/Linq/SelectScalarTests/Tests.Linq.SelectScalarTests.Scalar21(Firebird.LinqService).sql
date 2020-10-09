@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Char_Length("p"."FirstName")
 FROM
 	"Person" "p"

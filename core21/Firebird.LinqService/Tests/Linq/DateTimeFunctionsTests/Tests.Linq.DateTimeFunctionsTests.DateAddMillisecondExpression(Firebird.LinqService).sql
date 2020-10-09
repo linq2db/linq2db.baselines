@@ -3,7 +3,7 @@
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 226
 
-SELECT
+SELECT 
 	DateAdd(Millisecond, Cast(@p1 as Int), "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"t"."DateTimeValue"
 FROM
 	"LinqDataTypes" "t"

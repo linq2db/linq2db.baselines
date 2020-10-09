@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"x"."FirstName"
 FROM
 	"Person" "x"

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -19,8 +19,8 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
@@ -36,8 +36,8 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
@@ -45,14 +45,14 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[BinaryValue],
-	[t1].[SmallIntValue],
+SELECT 
+	[t1].[ID], 
+	[t1].[MoneyValue], 
+	[t1].[DateTimeValue], 
+	[t1].[BoolValue], 
+	[t1].[GuidValue], 
+	[t1].[BinaryValue], 
+	[t1].[SmallIntValue], 
 	[t1].[StringValue]
 FROM
 	[LinqDataTypes] [t1]
@@ -60,25 +60,25 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
-	"p"."ParentID",
-	"t2"."gc3",
-	"t2"."ChildID",
-	"t2"."GrandChildID",
+SELECT 
+	"p"."ParentID", 
+	"t2"."gc3", 
+	"t2"."ChildID", 
+	"t2"."GrandChildID", 
 	"t2"."is_empty"
 FROM
 	"Child" "ch"
 		INNER JOIN "Parent" "p" ON "ch"."ParentID" = "p"."ParentID"
-		LEFT JOIN (
-			SELECT
-				"gc1"."ParentID" as "gc3",
-				"gc1"."ChildID",
-				"gc1"."GrandChildID",
+		LEFT JOIN ( 
+			SELECT 
+				"gc1"."ParentID" as "gc3", 
+				"gc1"."ChildID", 
+				"gc1"."GrandChildID", 
 				1 as "is_empty"
 			FROM
 				"GrandChild" "gc1"
-					INNER JOIN (
-						SELECT
+					INNER JOIN ( 
+						SELECT 
 							Max("t1"."GrandChildID") as "c1"
 						FROM
 							"GrandChild" "t1"

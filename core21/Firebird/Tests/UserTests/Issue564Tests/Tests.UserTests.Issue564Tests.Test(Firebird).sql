@@ -64,7 +64,7 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent564" "t1"

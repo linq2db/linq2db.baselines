@@ -29,7 +29,7 @@ SET     @take = 2
 DECLARE @ID_1 Integer -- Int32
 SET     @ID_1 = 5
 
-SELECT FIRST @take
+SELECT FIRST @take 
 	"t1".ID
 FROM
 	"Issue1316Tests" "t1"

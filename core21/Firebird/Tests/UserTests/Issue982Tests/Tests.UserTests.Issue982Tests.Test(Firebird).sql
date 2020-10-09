@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"p"."ParentID",
-	"p"."Value1",
-	"c_1"."ParentID",
+SELECT 
+	"p"."ParentID", 
+	"p"."Value1", 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
 	"Parent" "p"
 		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "p"."ParentID"
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				"t1"."ChildID"
 			FROM
 				"Child" "t1"

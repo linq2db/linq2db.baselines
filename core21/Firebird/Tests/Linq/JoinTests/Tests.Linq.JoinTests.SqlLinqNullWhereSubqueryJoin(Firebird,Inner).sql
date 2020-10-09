@@ -5,20 +5,20 @@ SET     @take = 10
 DECLARE @take_1 Integer -- Int32
 SET     @take_1 = 10
 
-SELECT
-	"p2"."ParentID",
+SELECT 
+	"p2"."ParentID", 
 	"p2"."Value1"
 FROM
-	(
-		SELECT FIRST @take
-			"t1"."ParentID",
+	( 
+		SELECT FIRST @take 
+			"t1"."ParentID", 
 			"t1"."Value1"
 		FROM
 			"Parent" "t1"
 	) "p1"
-		INNER JOIN (
-			SELECT FIRST @take_1
-				"t2"."ParentID",
+		INNER JOIN ( 
+			SELECT FIRST @take_1 
+				"t2"."ParentID", 
 				"t2"."Value1"
 			FROM
 				"Parent" "t2"

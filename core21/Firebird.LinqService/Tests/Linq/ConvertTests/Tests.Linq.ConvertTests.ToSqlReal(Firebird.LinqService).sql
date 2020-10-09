@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Cast("t"."MoneyValue" as Real)
 FROM
 	"LinqDataTypes" "t"

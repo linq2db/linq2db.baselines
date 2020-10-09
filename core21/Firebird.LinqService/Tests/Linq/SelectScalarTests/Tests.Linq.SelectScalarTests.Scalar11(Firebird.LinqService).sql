@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"p"."PersonID"
 FROM
 	"Person" "p"

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT FIRST 1
-	"p"."ParentID",
+SELECT FIRST 1 
+	"p"."ParentID", 
 	"p"."Value1"
 FROM
 	"Parent" "p"
@@ -12,8 +12,8 @@ WHERE
 BeforeExecute
 -- Firebird
 
-SELECT FIRST 1
-	"p"."ParentID",
+SELECT FIRST 1 
+	"p"."ParentID", 
 	"p"."Value1"
 FROM
 	"Parent" "p"

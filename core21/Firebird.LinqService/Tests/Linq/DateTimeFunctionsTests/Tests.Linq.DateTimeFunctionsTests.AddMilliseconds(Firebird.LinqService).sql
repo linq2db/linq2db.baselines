@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	DateAdd(Millisecond, 226, "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"t"."DateTimeValue"
 FROM
 	"LinqDataTypes" "t"

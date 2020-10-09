@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"t"."MoneyValue"
 FROM
 	"LinqDataTypes" "t"

@@ -17,7 +17,7 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" "c_1"

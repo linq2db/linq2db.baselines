@@ -12,7 +12,7 @@ SET     @blob_1 = X'010203'
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"LinqDataTypes" "x"

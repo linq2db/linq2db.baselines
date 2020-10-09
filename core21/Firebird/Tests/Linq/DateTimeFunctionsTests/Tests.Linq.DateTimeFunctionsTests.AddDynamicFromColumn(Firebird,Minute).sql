@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	DateAdd(Minute, "t"."SmallIntValue", "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"

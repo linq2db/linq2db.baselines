@@ -17,7 +17,7 @@ SET     @y10_2 = 10
 DECLARE @x3_1 Integer -- Int32
 SET     @x3_1 = 3
 
-SELECT
+SELECT 
 	((((Cast(@x3_1 as Int) * (Cast(@y10_2 as Int) - Cast(@z2_2 as Int)) / Cast(@x3_1 as Int)) * Cast(@z2_2 as Int)) * (((((Cast(@x3 as Int) * (Cast(@y10_1 as Int) - Cast(@z2_1 as Int)) / Cast(@x3 as Int)) * Cast(@z2_1 as Int)) * (Cast(@y10 as Int) - Cast(@z2 as Int)) / ((Cast(@x3 as Int) * (Cast(@y10_1 as Int) - Cast(@z2_1 as Int)) / Cast(@x3 as Int)) * Cast(@z2_1 as Int))) * Cast(@z2 as Int)) - "child_1"."ChildID") / ((Cast(@x3_1 as Int) * (Cast(@y10_2 as Int) - Cast(@z2_2 as Int)) / Cast(@x3_1 as Int)) * Cast(@z2_2 as Int))) * "child_1"."ChildID")
 FROM
 	"Child" "child_1"
@@ -33,8 +33,8 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
@@ -50,8 +50,8 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
+SELECT 
+	[t1].[ParentID], 
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
@@ -59,9 +59,9 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -69,14 +69,14 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[BinaryValue],
-	[t1].[SmallIntValue],
+SELECT 
+	[t1].[ID], 
+	[t1].[MoneyValue], 
+	[t1].[DateTimeValue], 
+	[t1].[BoolValue], 
+	[t1].[GuidValue], 
+	[t1].[BinaryValue], 
+	[t1].[SmallIntValue], 
 	[t1].[StringValue]
 FROM
 	[LinqDataTypes] [t1]

@@ -30,8 +30,8 @@ BeforeExecute
 DECLARE @separator VarChar(4) -- String
 SET     @separator = ' => '
 
-SELECT
-	Max("t1"."Value4"),
+SELECT 
+	Max("t1"."Value4"), 
 	LIST("t1"."Value4", Cast(@separator as VarChar(255) CHARACTER SET UNICODE_FSS))
 FROM
 	"SampleClass" "t1"

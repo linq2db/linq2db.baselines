@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"AllTypes" "t1"
@@ -210,7 +210,7 @@ SET     @RETURN_VALUE = 0
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"AllTypes" "t1"

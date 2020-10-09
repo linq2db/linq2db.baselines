@@ -3,16 +3,16 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"t".ID,
-	"t"."MoneyValue",
-	"t"."DateTimeValue",
-	"t"."DateTimeValue2",
-	"t"."BoolValue",
-	"t"."GuidValue",
-	"t"."SmallIntValue",
-	"t"."IntValue",
-	"t"."BigIntValue",
+SELECT FIRST @take 
+	"t".ID, 
+	"t"."MoneyValue", 
+	"t"."DateTimeValue", 
+	"t"."DateTimeValue2", 
+	"t"."BoolValue", 
+	"t"."GuidValue", 
+	"t"."SmallIntValue", 
+	"t"."IntValue", 
+	"t"."BigIntValue", 
 	"t"."StringValue"
 FROM
 	"LinqDataTypes" "t"
@@ -36,16 +36,16 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"t".ID,
-	"t"."MoneyValue",
-	"t"."DateTimeValue",
-	"t"."DateTimeValue2",
-	"t"."BoolValue",
-	"t"."GuidValue",
-	"t"."SmallIntValue",
-	"t"."IntValue",
-	"t"."BigIntValue",
+SELECT FIRST @take 
+	"t".ID, 
+	"t"."MoneyValue", 
+	"t"."DateTimeValue", 
+	"t"."DateTimeValue2", 
+	"t"."BoolValue", 
+	"t"."GuidValue", 
+	"t"."SmallIntValue", 
+	"t"."IntValue", 
+	"t"."BigIntValue", 
 	"t"."StringValue"
 FROM
 	"LinqDataTypes" "t"

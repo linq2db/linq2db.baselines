@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"t1"."PersonID_1",
-	"t1"."FirstName",
+SELECT 
+	"t1"."PersonID_1", 
+	"t1"."FirstName", 
 	"x"."Taxonomy"
 FROM
-	(
-		SELECT
-			"person_1"."PersonID",
-			"patient_1"."PersonID" as "PersonID_1",
+	( 
+		SELECT 
+			"person_1"."PersonID", 
+			"patient_1"."PersonID" as "PersonID_1", 
 			"person_1"."FirstName"
 		FROM
 			"Patient" "patient_1",

@@ -43,8 +43,8 @@ SET     @startId = 5
 DECLARE @endId Integer -- Int32
 SET     @endId = 15
 
-SELECT
-	"s"."value",
+SELECT 
+	"s"."value", 
 	"s".ID
 FROM
 	SAMPLE_CLASS "c_1"
@@ -61,8 +61,8 @@ SET     @startId = 5
 DECLARE @endId Integer -- Int32
 SET     @endId = 15
 
-SELECT
-	"t"."value",
+SELECT 
+	"t"."value", 
 	"t".ID
 FROM
 	SAMPLE_CLASS "t"

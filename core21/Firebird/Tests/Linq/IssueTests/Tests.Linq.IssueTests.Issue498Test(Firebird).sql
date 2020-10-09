@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"x"."ParentID",
+SELECT 
+	"x"."ParentID", 
 	Count(*)
 FROM
 	"Child" "x"

@@ -25,7 +25,7 @@ SELECT 'Value8' FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

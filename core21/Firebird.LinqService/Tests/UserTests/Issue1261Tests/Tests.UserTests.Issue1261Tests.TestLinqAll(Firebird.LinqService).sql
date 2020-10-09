@@ -3,7 +3,7 @@
 
 SELECT
 	CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"GrandChild" "x"
@@ -17,7 +17,7 @@ BeforeExecute
 
 SELECT
 	CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"GrandChild" "x"

@@ -3,8 +3,8 @@
 DECLARE @id_1 Integer -- Int32
 SET     @id_1 = 1
 
-SELECT
-	"p1"."PersonID",
+SELECT 
+	"p1"."PersonID", 
 	"p"."FirstName"
 FROM
 	"Person" "p1",

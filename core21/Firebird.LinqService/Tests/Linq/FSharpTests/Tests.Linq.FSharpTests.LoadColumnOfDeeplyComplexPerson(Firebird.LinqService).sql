@@ -5,7 +5,7 @@ SET     @take = 2
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
-SELECT FIRST @take
+SELECT FIRST @take 
 	"p"."LastName"
 FROM
 	"Person" "p"

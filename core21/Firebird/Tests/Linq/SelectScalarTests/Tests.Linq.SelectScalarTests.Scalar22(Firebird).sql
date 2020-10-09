@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -13,8 +13,8 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
@@ -22,11 +22,11 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
-	"p1"."FirstName",
-	"p1"."PersonID",
-	"p1"."LastName",
-	"p1"."MiddleName",
+SELECT 
+	"p1"."FirstName", 
+	"p1"."PersonID", 
+	"p1"."LastName", 
+	"p1"."MiddleName", 
 	"p1"."Gender"
 FROM
 	"Person" "p1"

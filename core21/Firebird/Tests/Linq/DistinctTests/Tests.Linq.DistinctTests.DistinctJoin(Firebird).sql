@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"e".ID,
+SELECT 
+	"e".ID, 
 	"t3"."SmallIntValue"
 FROM
-	(
+	( 
 		SELECT DISTINCT
-			"t1".ID,
+			"t1".ID, 
 			"t1"."SmallIntValue"
 		FROM
 			"LinqDataTypes" "t1"
 	) "e"
-		LEFT JOIN (
+		LEFT JOIN ( 
 			SELECT DISTINCT
-				"t2".ID,
+				"t2".ID, 
 				"t2"."SmallIntValue"
 			FROM
 				"LinqDataTypes" "t2"

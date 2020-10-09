@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Right("p"."FirstName", 3)
 FROM
 	"Person" "p"

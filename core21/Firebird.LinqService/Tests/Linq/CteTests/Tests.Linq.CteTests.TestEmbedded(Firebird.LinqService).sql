@@ -4,7 +4,7 @@
 WITH CTE_1 ("cte_field_1")
 AS
 (
-	SELECT
+	SELECT 
 		"c_1"."ChildID"
 	FROM
 		"Child" "c_1"
@@ -33,14 +33,14 @@ AS
 	FROM
 		CTE_3 "t3"
 )
-SELECT
-	"w"."ParentID",
+SELECT 
+	"w"."ParentID", 
 	"w"."ChildID"
 FROM
 	"Child" "w"
 WHERE
 	NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			CTE_4 "t4"

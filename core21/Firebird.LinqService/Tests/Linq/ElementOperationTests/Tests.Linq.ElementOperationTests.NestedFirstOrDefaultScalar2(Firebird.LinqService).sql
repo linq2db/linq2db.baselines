@@ -3,10 +3,10 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	"p"."ParentID",
+SELECT 
+	"p"."ParentID", 
 	(
-		SELECT FIRST @take
+		SELECT FIRST @take 
 			"c_1"."ChildID"
 		FROM
 			"Child" "c_1"

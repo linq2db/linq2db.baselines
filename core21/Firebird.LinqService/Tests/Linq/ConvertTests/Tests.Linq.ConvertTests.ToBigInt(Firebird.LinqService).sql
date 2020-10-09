@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Cast(Floor("t"."MoneyValue") as BigInt)
 FROM
 	"LinqDataTypes" "t"

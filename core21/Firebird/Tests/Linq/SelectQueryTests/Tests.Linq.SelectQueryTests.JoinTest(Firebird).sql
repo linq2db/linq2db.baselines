@@ -20,16 +20,16 @@ SELECT 1,100 FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
-	"t"."Id",
-	"t"."Value",
-	"s"."Key_1",
+SELECT 
+	"t"."Id", 
+	"t"."Value", 
+	"s"."Key_1", 
 	"s"."SecondValue"
 FROM
 	"SampleClass" "t"
-		INNER JOIN (
+		INNER JOIN ( 
 			SELECT
-				1 as "Key_1",
+				1 as "Key_1", 
 				3 as "SecondValue"
 			FROM rdb$database
 		) "s" ON "s"."Key_1" = "t"."Id"

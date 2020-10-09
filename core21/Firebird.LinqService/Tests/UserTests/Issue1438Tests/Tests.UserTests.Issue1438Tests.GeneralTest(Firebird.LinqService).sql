@@ -48,8 +48,8 @@ SET     @take = 2
 DECLARE @id_1 Integer -- Int32
 SET     @id_1 = 1
 
-SELECT FIRST @take
-	"t1"."Id",
+SELECT FIRST @take 
+	"t1"."Id", 
 	"t1"."Has"
 FROM
 	"Issue1438" "t1"

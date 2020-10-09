@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Extract(millisecond from "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"

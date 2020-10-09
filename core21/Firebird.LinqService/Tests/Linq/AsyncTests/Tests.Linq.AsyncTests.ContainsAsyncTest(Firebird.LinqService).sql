@@ -5,7 +5,7 @@ SET     @ID = 1
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Person" "t1"

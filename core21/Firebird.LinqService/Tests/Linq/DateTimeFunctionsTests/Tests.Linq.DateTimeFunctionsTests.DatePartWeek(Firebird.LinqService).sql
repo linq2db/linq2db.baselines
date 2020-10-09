@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Cast(Floor(Extract(week from "t"."DateTimeValue")) as int)
 FROM
 	"LinqDataTypes" "t"

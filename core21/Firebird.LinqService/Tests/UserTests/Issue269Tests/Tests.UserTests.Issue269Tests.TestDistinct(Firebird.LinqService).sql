@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"pat"."PersonID",
+SELECT 
+	"pat"."PersonID", 
 	"pat"."Diagnosis"
 FROM
 	"Patient" "pat"
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Person" "per"

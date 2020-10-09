@@ -67,7 +67,7 @@ VALUES
 BeforeExecute
 -- Firebird (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson_f_30" "t1"
@@ -77,11 +77,11 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	"t1"."FirstName",
-	"t1"."PersonID",
-	"t1"."LastName",
-	"t1"."MiddleName",
+SELECT FIRST @take 
+	"t1"."FirstName", 
+	"t1"."PersonID", 
+	"t1"."LastName", 
+	"t1"."MiddleName", 
 	"t1"."Gender"
 FROM
 	"xxPerson_f_30" "t1"
@@ -99,7 +99,7 @@ WHERE
 BeforeExecute
 -- Firebird (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson_f_30" "t1"

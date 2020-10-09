@@ -3,9 +3,9 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	(
-		SELECT FIRST @take
+		SELECT FIRST @take 
 			"p"."ChildID"
 		FROM
 			"Child" "p"

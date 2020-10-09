@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"x"."ParentID"
 FROM
 	"Parent" "x"
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"x"."ParentID"
 FROM
 	"Parent" "x"

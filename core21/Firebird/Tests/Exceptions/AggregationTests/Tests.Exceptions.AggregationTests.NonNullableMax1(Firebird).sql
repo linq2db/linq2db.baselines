@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Max("t1"."ParentID")
 FROM
 	"Parent" "t1"

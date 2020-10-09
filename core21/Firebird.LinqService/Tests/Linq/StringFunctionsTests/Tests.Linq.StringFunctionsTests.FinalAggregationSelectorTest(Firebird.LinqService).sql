@@ -28,7 +28,7 @@ SELECT 3,'Z1',NULL,NULL,'Z4' FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	LIST("t1"."Value1", ' -> ')
 FROM
 	"SampleClass" "t1"

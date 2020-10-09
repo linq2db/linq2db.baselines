@@ -37,7 +37,7 @@ SELECT 77,0 FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"d"."Not Identifier"
 FROM
 	"DynamicTable" "d"

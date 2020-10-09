@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"key_data_result"."ParentID",
-	"c_1"."ParentID",
+SELECT 
+	"key_data_result"."ParentID", 
+	"c_1"."ParentID", 
 	"c_1"."ChildID"
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			"cp"."ParentID"
 		FROM
@@ -23,26 +23,26 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	"cp"."ParentID",
+SELECT 
+	"cp"."ParentID", 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" "c_1"
 		WHERE
 			"c_1"."ParentID" = "cp"."ParentID" AND "c_1"."ChildID" > -100
-	) THEN 1 ELSE 0 END,
+	) THEN 1 ELSE 0 END, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "c_2"
 		WHERE
 			"c_2"."ParentID" = "cp"."ParentID" AND "c_2"."ChildID" > -100
-	),
+	), 
 	(
-		SELECT FIRST @take
+		SELECT FIRST @take 
 			"c_3"."ParentID"
 		FROM
 			"Child" "c_3"

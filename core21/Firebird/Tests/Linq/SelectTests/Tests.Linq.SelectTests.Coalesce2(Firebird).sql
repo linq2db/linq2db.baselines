@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"p"."PersonID",
-	Coalesce("p"."MiddleName", "p"."FirstName", 'None'),
-	Coalesce("p"."LastName", "p"."FirstName", 'None'),
+SELECT 
+	"p"."PersonID", 
+	Coalesce("p"."MiddleName", "p"."FirstName", 'None'), 
+	Coalesce("p"."LastName", "p"."FirstName", 'None'), 
 	Coalesce("p"."MiddleName", "p"."MiddleName", 'None')
 FROM
 	"Person" "p"

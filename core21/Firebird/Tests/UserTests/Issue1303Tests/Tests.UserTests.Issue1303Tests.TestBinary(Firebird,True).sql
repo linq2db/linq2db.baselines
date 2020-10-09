@@ -33,9 +33,9 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT FIRST 2
-	"t1".ID,
-	"t1"."Array",
+SELECT FIRST 2 
+	"t1".ID, 
+	"t1"."Array", 
 	"t1"."Binary"
 FROM
 	"Issue1303" "t1"
@@ -45,9 +45,9 @@ WHERE
 BeforeExecute
 -- Firebird
 
-SELECT FIRST 2
-	"t1".ID,
-	"t1"."Array",
+SELECT FIRST 2 
+	"t1".ID, 
+	"t1"."Array", 
 	"t1"."Binary"
 FROM
 	"Issue1303" "t1"
@@ -57,9 +57,9 @@ WHERE
 BeforeExecute
 -- Firebird
 
-SELECT FIRST 2
-	"t1".ID,
-	"t1"."Array",
+SELECT FIRST 2 
+	"t1".ID, 
+	"t1"."Array", 
 	"t1"."Binary"
 FROM
 	"Issue1303" "t1"

@@ -28,8 +28,8 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"t1"."event_id",
+SELECT FIRST @take 
+	"t1"."event_id", 
 	"t1"."event_description"
 FROM
 	"Issue1403Tests_2" "t1"

@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" "t1"

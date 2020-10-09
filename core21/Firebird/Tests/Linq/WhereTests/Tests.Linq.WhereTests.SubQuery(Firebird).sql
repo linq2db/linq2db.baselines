@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			"ch"."ParentID" * 1000 as "c1"
 		FROM
 			"Child" "ch"

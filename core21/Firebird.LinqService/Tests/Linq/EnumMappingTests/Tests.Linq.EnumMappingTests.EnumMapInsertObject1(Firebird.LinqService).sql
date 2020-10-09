@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"LinqDataTypes" "r"

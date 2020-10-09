@@ -3,9 +3,9 @@
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	COUNT("left_1"."ParentID"),
-	COUNT("p"."ParentID"),
+SELECT FIRST @take 
+	COUNT("left_1"."ParentID"), 
+	COUNT("p"."ParentID"), 
 	COUNT(*)
 FROM
 	"Parent" "left_1"

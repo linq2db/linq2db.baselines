@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	DateAdd(Year, 1, "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"

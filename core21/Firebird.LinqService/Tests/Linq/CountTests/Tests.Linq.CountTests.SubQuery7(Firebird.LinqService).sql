@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "c_1"

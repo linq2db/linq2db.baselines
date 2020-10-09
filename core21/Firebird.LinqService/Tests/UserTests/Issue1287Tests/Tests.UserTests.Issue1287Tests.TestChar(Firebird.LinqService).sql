@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"t1"."charDataType"
 FROM
 	"AllTypes" "t1"

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Sum("p"."ChildID")
 		FROM
 			"Child" "p"

@@ -21,7 +21,7 @@ SELECT 'BOLTO' FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT FIRST 2
+SELECT FIRST 2 
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

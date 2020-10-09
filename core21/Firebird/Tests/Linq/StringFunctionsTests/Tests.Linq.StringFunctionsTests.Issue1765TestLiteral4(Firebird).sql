@@ -28,8 +28,8 @@ SELECT 3,'Z1',NULL,NULL,'Z4' FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
-	Max("t1"."Value4"),
+SELECT 
+	Max("t1"."Value4"), 
 	LIST("t1"."Value4", ' -> ')
 FROM
 	"SampleClass" "t1"

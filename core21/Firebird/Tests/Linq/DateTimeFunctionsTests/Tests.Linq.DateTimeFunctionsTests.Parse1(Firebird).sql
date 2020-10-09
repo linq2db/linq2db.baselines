@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"t"."DateTimeValue"
 FROM
 	"LinqDataTypes" "t"

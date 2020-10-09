@@ -50,12 +50,12 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	"x"."InId",
-	"j"."InId",
-	"j"."InMaxQuantity",
-	"j"."InMinQuantity",
-	"x"."InMinQuantity",
+SELECT FIRST @take 
+	"x"."InId", 
+	"j"."InId", 
+	"j"."InMaxQuantity", 
+	"j"."InMinQuantity", 
+	"x"."InMinQuantity", 
 	"x"."InMaxQuantity"
 FROM
 	"StLink" "x"
@@ -68,12 +68,12 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	"x"."InId",
-	"j"."InId",
-	"j"."InMaxQuantity",
-	"j"."InMinQuantity",
-	"x"."InMinQuantity",
+SELECT FIRST @take 
+	"x"."InId", 
+	"j"."InId", 
+	"j"."InMaxQuantity", 
+	"j"."InMinQuantity", 
+	"x"."InMinQuantity", 
 	"x"."InMaxQuantity"
 FROM
 	"StLink" "x"

@@ -39,7 +39,7 @@ SELECT 20,120 FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"InstanceClass" "t"

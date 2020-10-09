@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Parent" "t1"

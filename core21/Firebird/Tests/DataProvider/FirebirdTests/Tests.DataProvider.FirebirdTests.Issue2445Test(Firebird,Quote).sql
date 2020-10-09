@@ -20,21 +20,21 @@ CREATE TABLE "Client"
 BeforeExecute
 -- Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."CardName",
-	"t1"."OwnerId",
-	"a_Owner"."Id",
-	"a_Owner"."Name",
+SELECT 
+	"t1"."Id", 
+	"t1"."CardName", 
+	"t1"."OwnerId", 
+	"a_Owner"."Id", 
+	"a_Owner"."Name", 
 	"a_Owner"."cnt"
 FROM
 	"Card" "t1"
-		LEFT JOIN (
-			SELECT
-				"cl"."Id",
-				"cl"."Name",
+		LEFT JOIN ( 
+			SELECT 
+				"cl"."Id", 
+				"cl"."Name", 
 				(
-					SELECT
+					SELECT 
 						Count(*)
 					FROM
 						"Card" "t"

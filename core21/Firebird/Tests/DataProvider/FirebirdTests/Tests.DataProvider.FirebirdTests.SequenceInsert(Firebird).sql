@@ -27,8 +27,8 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT FIRST @take
-	"t1".ID,
+SELECT FIRST @take 
+	"t1".ID, 
 	"t1"."Value_"
 FROM
 	"SequenceTest" "t1"
@@ -48,7 +48,7 @@ WHERE
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"SequenceTest" "t1"

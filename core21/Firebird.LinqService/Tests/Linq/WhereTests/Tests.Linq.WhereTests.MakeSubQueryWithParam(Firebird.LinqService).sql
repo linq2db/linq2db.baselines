@@ -3,13 +3,13 @@
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
-SELECT
-	"p_1"."PersonID",
+SELECT 
+	"p_1"."PersonID", 
 	"p_1"."FirstName"
 FROM
-	(
-		SELECT
-			"p"."PersonID" + Cast(@n as Int) as "PersonID",
+	( 
+		SELECT 
+			"p"."PersonID" + Cast(@n as Int) as "PersonID", 
 			"p"."FirstName"
 		FROM
 			"Person" "p"

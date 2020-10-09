@@ -33,7 +33,7 @@ SET     @take = 2
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
-SELECT FIRST @take
+SELECT FIRST @take 
 	"c_1"."Id"
 FROM
 	"AsyncDataTable" "c_1"

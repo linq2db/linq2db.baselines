@@ -20,7 +20,7 @@ SELECT * FROM
 	WITH CTE1_ ("ParentID")
 	AS
 	(
-		SELECT
+		SELECT 
 			"c_1"."ParentID"
 		FROM
 			"Child" "c_1"
@@ -30,16 +30,16 @@ SELECT * FROM
 	LAST0 ("ParentID", "ChildID")
 	AS
 	(
-		SELECT
-			"c4"."ParentID",
+		SELECT 
+			"c4"."ParentID", 
 			"c4"."ChildID"
 		FROM
 			"Child" "c4"
 		WHERE
 			Mod("c4"."ParentID", 2) = 0
 	)
-	SELECT
-		"c4_1"."ChildID",
+	SELECT 
+		"c4_1"."ChildID", 
 		"c4_1"."ParentID"
 	FROM
 		CTE1_ "p"
@@ -49,8 +49,8 @@ SELECT * FROM
 BeforeExecute
 -- Firebird
 
-SELECT
-	"t1"."ChildID",
+SELECT 
+	"t1"."ChildID", 
 	"t1"."ParentID"
 FROM
 	"CteChild" "t1"
@@ -61,8 +61,8 @@ ORDER BY
 BeforeExecute
 -- Firebird
 
-SELECT
-	"c4"."ChildID",
+SELECT 
+	"c4"."ChildID", 
 	"c4"."ParentID"
 FROM
 	"Child" "c_1"

@@ -11,9 +11,9 @@ CREATE TABLE "T1351Model"
 BeforeExecute
 -- Firebird
 
-SELECT
-	"t1".ID,
-	"t1"."TestField",
+SELECT 
+	"t1".ID, 
+	"t1"."TestField", 
 	"t1"."TestNullable"
 FROM
 	"T1351Model" "t1"
@@ -23,9 +23,9 @@ WHERE
 BeforeExecute
 -- Firebird
 
-SELECT
-	"t1".ID,
-	"t1"."TestField",
+SELECT 
+	"t1".ID, 
+	"t1"."TestField", 
 	"t1"."TestNullable"
 FROM
 	"T1351Model" "t1"

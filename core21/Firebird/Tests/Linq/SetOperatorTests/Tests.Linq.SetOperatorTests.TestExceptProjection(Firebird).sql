@@ -35,22 +35,22 @@ SELECT 10,100,1000,10000 FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"t1"."Value_1"
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			"r"."Value_1"
 		FROM
-			(
+			( 
 				SELECT DISTINCT
-					"t"."Id",
+					"t"."Id", 
 					"t"."Value1" as "Value_1"
 				FROM
 					"SampleData" "t"
 				WHERE
 					NOT EXISTS(
-						SELECT
+						SELECT 
 							*
 						FROM
 							"SampleData" "t_1"
@@ -62,7 +62,7 @@ FROM
 			) "r"
 		WHERE
 			NOT EXISTS(
-				SELECT
+				SELECT 
 					*
 				FROM
 					"SampleData" "t_2"

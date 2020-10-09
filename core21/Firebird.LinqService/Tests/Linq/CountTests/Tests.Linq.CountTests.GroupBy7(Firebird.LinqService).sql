@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	Count(*),
+SELECT 
+	Count(*), 
 	Max("t1"."ChildID")
 FROM
 	"Child" "t1"

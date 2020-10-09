@@ -55,7 +55,7 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"TypeConvertTable" "t1"
@@ -65,7 +65,7 @@ WHERE
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"TypeConvertTable" "t1"
@@ -77,7 +77,7 @@ BeforeExecute
 DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"TypeConvertTable" "t1"
@@ -91,9 +91,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char -- String
 SET     @BoolValue_2 = 'N'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -107,9 +107,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'Y'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -123,9 +123,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char -- String
 SET     @BoolValue_2 = 'N'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -139,9 +139,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'Y'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -155,9 +155,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char -- String
 SET     @BoolValue_2 = 'N'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -171,9 +171,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'Y'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -187,9 +187,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char -- String
 SET     @BoolValue_2 = 'N'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -203,9 +203,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'Y'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -219,9 +219,9 @@ SET     @take = 1
 DECLARE @BoolValue_2 Char -- String
 SET     @BoolValue_2 = 'N'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -235,9 +235,9 @@ SET     @take = 1
 DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'Y'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -251,9 +251,9 @@ SET     @take = 1
 DECLARE @GuidValue_1 VarChar(36) -- String
 SET     @GuidValue_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
@@ -267,9 +267,9 @@ SET     @take = 1
 DECLARE @GuidValue_1 VarChar(36) -- String
 SET     @GuidValue_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT FIRST @take
-	"t1"."Name",
-	"t1"."BoolValue",
+SELECT FIRST @take 
+	"t1"."Name", 
+	"t1"."BoolValue", 
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"

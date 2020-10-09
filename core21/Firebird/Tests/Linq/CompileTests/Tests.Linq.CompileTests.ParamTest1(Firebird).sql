@@ -3,7 +3,7 @@
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
 
-SELECT
+SELECT 
 	"c_1"."ChildID"
 FROM
 	"Child" "c_1"

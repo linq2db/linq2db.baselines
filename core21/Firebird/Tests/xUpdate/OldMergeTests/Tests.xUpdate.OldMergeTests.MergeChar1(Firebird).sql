@@ -21,9 +21,9 @@ BeforeExecute
 DECLARE @id_1 Integer -- Int32
 SET     @id_1 = 85
 
-SELECT
-	"t".ID,
-	"t"."charDataType",
+SELECT 
+	"t".ID, 
+	"t"."charDataType", 
 	"t"."ncharDataType"
 FROM
 	"AllTypes" "t"
@@ -36,10 +36,10 @@ DECLARE @id_1 Integer -- Int32
 SET     @id_1 = 85
 
 MERGE INTO "AllTypes" "Target"
-USING (
-	SELECT
-		"t".ID,
-		"t"."charDataType",
+USING ( 
+	SELECT 
+		"t".ID, 
+		"t"."charDataType", 
 		"t"."ncharDataType"
 	FROM
 		"AllTypes" "t"

@@ -64,14 +64,14 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
-	"e"."Enum",
-	"e"."EnumNullable",
-	"e"."EnumWithNull",
-	"e"."EnumWithNullDeclarative",
+SELECT FIRST @take 
+	"e"."Id", 
+	"e"."Value1", 
+	"e"."Value2", 
+	"e"."Enum", 
+	"e"."EnumNullable", 
+	"e"."EnumWithNull", 
+	"e"."EnumWithNullDeclarative", 
 	"e"."BoolValue"
 FROM
 	"ValueConversion" "e"
@@ -115,14 +115,14 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
-	"e"."Enum",
-	"e"."EnumNullable",
-	"e"."EnumWithNull",
-	"e"."EnumWithNullDeclarative",
+SELECT FIRST @take 
+	"e"."Id", 
+	"e"."Value1", 
+	"e"."Value2", 
+	"e"."Enum", 
+	"e"."EnumNullable", 
+	"e"."EnumWithNull", 
+	"e"."EnumWithNullDeclarative", 
 	"e"."BoolValue"
 FROM
 	"ValueConversion" "e"
@@ -166,14 +166,14 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
-	"e"."Enum",
-	"e"."EnumNullable",
-	"e"."EnumWithNull",
-	"e"."EnumWithNullDeclarative",
+SELECT FIRST @take 
+	"e"."Id", 
+	"e"."Value1", 
+	"e"."Value2", 
+	"e"."Enum", 
+	"e"."EnumNullable", 
+	"e"."EnumWithNull", 
+	"e"."EnumWithNullDeclarative", 
 	"e"."BoolValue"
 FROM
 	"ValueConversion" "e"

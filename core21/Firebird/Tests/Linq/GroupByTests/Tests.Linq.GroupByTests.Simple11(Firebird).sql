@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"t1"."Key_1",
+SELECT 
+	"t1"."Key_1", 
 	"t1"."Key_2"
 FROM
-	(
-		SELECT
-			"selectParam"."ParentID" + 1 as "Key_1",
+	( 
+		SELECT 
+			"selectParam"."ParentID" + 1 as "Key_1", 
 			"selectParam"."ChildID" as "Key_2"
 		FROM
 			"GrandChild" "selectParam"
@@ -23,7 +23,7 @@ SET     @ParentID = 2
 DECLARE @ChildID_1 Integer -- Int32
 SET     @ChildID_1 = 11
 
-SELECT
+SELECT 
 	"elemParam"."ChildID"
 FROM
 	"GrandChild" "elemParam"

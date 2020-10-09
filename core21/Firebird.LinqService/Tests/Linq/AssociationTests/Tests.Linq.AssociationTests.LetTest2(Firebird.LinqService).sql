@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"t"."ParentID",
+SELECT 
+	"t"."ParentID", 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "t1"
@@ -17,10 +17,10 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
-	"t"."ParentID",
+SELECT 
+	"t"."ParentID", 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" "t1"

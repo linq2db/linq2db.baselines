@@ -32,7 +32,7 @@ UPDATE
 	"gt_s_one"
 SET
 	"gt_s_one"."col1" = (
-		SELECT
+		SELECT 
 			"x"."col1"
 		FROM
 			"gt_s_one" "x"
@@ -41,7 +41,7 @@ SET
 			"gt_s_one"."id" = "x"."id"
 	),
 	"gt_s_one"."col2" = (
-		SELECT
+		SELECT 
 			"x_1"."col2"
 		FROM
 			"gt_s_one" "x_1"
@@ -50,7 +50,7 @@ SET
 			"gt_s_one"."id" = "x_1"."id"
 	),
 	"gt_s_one"."col3" = (
-		SELECT
+		SELECT 
 			Replace("x_2"."col3", 'auth.', '')
 		FROM
 			"gt_s_one" "x_2"
@@ -59,7 +59,7 @@ SET
 			"gt_s_one"."id" = "x_2"."id"
 	),
 	"gt_s_one"."col4" = (
-		SELECT
+		SELECT 
 			"x_3"."col4"
 		FROM
 			"gt_s_one" "x_3"
@@ -68,7 +68,7 @@ SET
 			"gt_s_one"."id" = "x_3"."id"
 	),
 	"gt_s_one"."col5" = (
-		SELECT
+		SELECT 
 			CASE
 				WHEN "x_4"."col3" = 'empty'
 					THEN '1'
@@ -81,7 +81,7 @@ SET
 			"gt_s_one"."id" = "x_4"."id"
 	),
 	"gt_s_one"."col6" = (
-		SELECT
+		SELECT 
 			CASE
 				WHEN "x_5"."col3" = 'empty'
 					THEN ''
@@ -95,7 +95,7 @@ SET
 	)
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"gt_s_one" "x_6"

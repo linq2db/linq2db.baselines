@@ -3,13 +3,13 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	(
-		SELECT FIRST @take
+		SELECT FIRST @take 
 			"c_2"."c1"
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					"c_1"."ParentID" + 1 as "c1"
 				FROM
 					"Child" "c_1"
@@ -20,14 +20,14 @@ SELECT
 			"c_2"."c1" < "p1".ID
 	)
 FROM
-	(
-		SELECT
-			"p3".ID + 1 as ID,
+	( 
+		SELECT 
+			"p3".ID + 1 as ID, 
 			"p3"."ParentID"
 		FROM
-			(
-				SELECT
-					"p2"."ParentID" + 1 as ID,
+			( 
+				SELECT 
+					"p2"."ParentID" + 1 as ID, 
 					"p2"."ParentID"
 				FROM
 					"Parent" "p2"

@@ -3,7 +3,7 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST @take 
 	"p"."ParentID"
 FROM
 	"Parent" "p"
@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST @take 
 	"p"."ParentID"
 FROM
 	"Parent" "p"
@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST @take 
 	"p"."ParentID"
 FROM
 	"Parent" "p"

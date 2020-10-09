@@ -3,7 +3,7 @@
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
-SELECT
+SELECT 
 	Max("c_1"."ParentID")
 FROM
 	"Child" "c_1"
@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = -1
 
-SELECT
+SELECT 
 	Max("c_1"."ParentID")
 FROM
 	"Child" "c_1"

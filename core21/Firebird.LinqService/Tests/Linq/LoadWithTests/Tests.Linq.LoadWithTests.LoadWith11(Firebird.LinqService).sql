@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	"lw_Parent"."ParentID",
-	"detail"."ParentID",
+SELECT 
+	"lw_Parent"."ParentID", 
+	"detail"."ParentID", 
 	"detail"."ChildID"
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			"p"."ParentID"
 		FROM
@@ -19,13 +19,13 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
-	"lw_Parent"."ParentID",
-	"detail"."ParentID",
-	"detail"."ChildID",
+SELECT 
+	"lw_Parent"."ParentID", 
+	"detail"."ParentID", 
+	"detail"."ChildID", 
 	"detail"."GrandChildID"
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			"p"."ParentID"
 		FROM
@@ -38,8 +38,8 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
-	"p"."ParentID",
+SELECT 
+	"p"."ParentID", 
 	"p"."Value1"
 FROM
 	"Parent" "p"

@@ -11,8 +11,8 @@ SET     @p_2 = 3
 DECLARE @param Integer -- Int32
 SET     @param = 4
 
-SELECT FIRST @take
-	"o"."ParentID",
+SELECT FIRST @take 
+	"o"."ParentID", 
 	"o"."Value1"
 FROM
 	"Parent" "o"

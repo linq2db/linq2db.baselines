@@ -20,7 +20,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert14' || (
-		SELECT FIRST @take
+		SELECT FIRST @take 
 			"p"."FirstName"
 		FROM
 			"Person" "p"
@@ -34,7 +34,7 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" "p"

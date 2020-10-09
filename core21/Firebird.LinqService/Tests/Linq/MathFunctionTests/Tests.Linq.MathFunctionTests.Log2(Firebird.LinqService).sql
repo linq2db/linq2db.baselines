@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
+SELECT 
 	"t"."c1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Log(2, Cast("p"."MoneyValue" as Float))) as "c1"
 		FROM
 			"LinqDataTypes" "p"
