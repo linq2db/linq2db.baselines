@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [x]

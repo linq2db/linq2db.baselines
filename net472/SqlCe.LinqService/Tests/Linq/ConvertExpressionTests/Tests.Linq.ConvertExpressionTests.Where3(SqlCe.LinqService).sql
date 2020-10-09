@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t1].[Sum_1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Sum([c_1].[ChildID]) as [Sum_1],
+		LEFT JOIN ( 
+			SELECT 
+				Sum([c_1].[ChildID]) as [Sum_1], 
 				[c_1].[ParentID]
 			FROM
 				[Child] [c_1]
@@ -18,7 +18,7 @@ FROM
 		) [t1] ON [p].[ParentID] = [t1].[ParentID]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_2]

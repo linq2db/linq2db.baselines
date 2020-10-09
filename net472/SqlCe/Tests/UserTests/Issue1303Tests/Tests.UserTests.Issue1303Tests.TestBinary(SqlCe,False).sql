@@ -35,9 +35,9 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[_].[ID],
-	[_].[Array],
+SELECT TOP (@take) 
+	[_].[ID], 
+	[_].[Array], 
 	[_].[Binary]
 FROM
 	[Issue1303] [_]
@@ -51,9 +51,9 @@ SET     @take = 2
 DECLARE @Array_2 VarBinary(3) -- Binary
 SET     @Array_2 = 0x010203
 
-SELECT TOP (@take)
-	[_].[ID],
-	[_].[Array],
+SELECT TOP (@take) 
+	[_].[ID], 
+	[_].[Array], 
 	[_].[Binary]
 FROM
 	[Issue1303] [_]
@@ -67,9 +67,9 @@ SET     @take = 2
 DECLARE @Binary_2 VarBinary(2) -- Binary
 SET     @Binary_2 = 0x0405
 
-SELECT TOP (@take)
-	[_].[ID],
-	[_].[Array],
+SELECT TOP (@take) 
+	[_].[ID], 
+	[_].[Array], 
 	[_].[Binary]
 FROM
 	[Issue1303] [_]

@@ -81,7 +81,7 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient22] [t1]
@@ -117,7 +117,7 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient22] [t1]

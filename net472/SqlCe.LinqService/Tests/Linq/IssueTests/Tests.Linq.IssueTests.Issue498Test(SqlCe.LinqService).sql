@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
-	[x].[ParentID],
+SELECT 
+	[x].[ParentID], 
 	Count(*)
 FROM
 	[Child] [x]

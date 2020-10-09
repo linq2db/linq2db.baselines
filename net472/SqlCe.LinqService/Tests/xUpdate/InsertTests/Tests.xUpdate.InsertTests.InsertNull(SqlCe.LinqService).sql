@@ -23,7 +23,7 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [p]

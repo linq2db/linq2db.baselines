@@ -25,8 +25,8 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[entity].[ID],
+SELECT 
+	[entity].[ID], 
 	[entity].[BigIntValue]
 FROM
 	[LinqDataTypes] [entity]

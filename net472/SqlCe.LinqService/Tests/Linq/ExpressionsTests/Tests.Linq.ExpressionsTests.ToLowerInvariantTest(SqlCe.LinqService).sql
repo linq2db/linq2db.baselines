@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Lower([p].[Taxonomy])
 FROM
 	[Doctor] [p]

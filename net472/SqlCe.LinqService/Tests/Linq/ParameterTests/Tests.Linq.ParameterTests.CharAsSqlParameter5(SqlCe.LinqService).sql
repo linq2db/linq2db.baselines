@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	nchar(0)
 

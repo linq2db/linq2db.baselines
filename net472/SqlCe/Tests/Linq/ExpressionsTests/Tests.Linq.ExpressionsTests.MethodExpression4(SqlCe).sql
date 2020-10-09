@@ -3,13 +3,13 @@
 DECLARE @n Int -- Int32
 SET     @n = 3
 
-SELECT
+SELECT 
 	[t1].[cnt]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as [cnt], 
 				[c_1].[ParentID]
 			FROM
 				[Child] [c_1]

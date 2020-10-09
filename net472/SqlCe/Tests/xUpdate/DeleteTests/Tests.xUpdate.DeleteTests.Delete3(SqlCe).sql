@@ -37,7 +37,7 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [c_1]
@@ -51,7 +51,7 @@ DELETE FROM
 	[Child]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]
@@ -66,7 +66,7 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [c_1]

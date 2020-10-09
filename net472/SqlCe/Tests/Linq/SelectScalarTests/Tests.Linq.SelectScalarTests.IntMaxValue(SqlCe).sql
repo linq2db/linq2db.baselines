@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	2147483647
 

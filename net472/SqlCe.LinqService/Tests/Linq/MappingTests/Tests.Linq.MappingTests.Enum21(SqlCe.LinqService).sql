@@ -3,11 +3,11 @@
 DECLARE @gender_1 NChar(1) -- StringFixedLength
 SET     @gender_1 = 'M'
 
-SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

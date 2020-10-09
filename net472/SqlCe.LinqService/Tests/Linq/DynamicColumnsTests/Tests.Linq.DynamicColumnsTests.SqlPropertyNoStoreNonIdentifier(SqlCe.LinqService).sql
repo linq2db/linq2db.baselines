@@ -31,7 +31,7 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[d].[Not Identifier]
 FROM
 	[DynamicTable] [d]

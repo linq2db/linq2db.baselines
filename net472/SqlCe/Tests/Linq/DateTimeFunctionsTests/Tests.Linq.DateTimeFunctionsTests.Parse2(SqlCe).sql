@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[d].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(DateTime, Convert(NVarChar(11), DatePart(year, [t].[DateTimeValue])) + '-02-24 00:00:00') as [c1]
 		FROM
 			[LinqDataTypes] [t]

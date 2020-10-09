@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
-	[pp].[PersonID],
+SELECT 
+	[pp].[PersonID], 
 	[pp].[FirstName]
 FROM
 	[Person] [pp]

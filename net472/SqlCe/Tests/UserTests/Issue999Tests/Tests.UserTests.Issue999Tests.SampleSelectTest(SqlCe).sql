@@ -11,7 +11,7 @@ CREATE TABLE [User]
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[u].[city]
 FROM
 	[User] [u]
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[u].[street]
 FROM
 	[User] [u]

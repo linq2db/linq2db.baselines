@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Sum([t1].[ChildID])
 FROM
 	[Child] [t1]

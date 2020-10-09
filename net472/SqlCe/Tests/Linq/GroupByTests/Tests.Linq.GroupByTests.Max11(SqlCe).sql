@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Max(CASE
 		WHEN [c_1].[ChildID] > 20 THEN 1
 		ELSE 0

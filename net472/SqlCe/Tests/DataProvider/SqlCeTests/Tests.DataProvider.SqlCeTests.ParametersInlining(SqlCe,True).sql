@@ -3,7 +3,7 @@
 DECLARE @DateTime DateTime
 SET     @DateTime = '2020-02-29 17:54:55.123'
 
-SELECT
+SELECT 
 	[_].[datetimeDataType]
 FROM
 	[AllTypes] [_]

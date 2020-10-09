@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DatePart(year, [selectParam].[DateTimeValue]) as [c1]
 		FROM
 			[LinqDataTypes] [selectParam]

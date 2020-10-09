@@ -30,8 +30,8 @@ INSERT INTO [LinqDataTypes]
 	[ID],
 	[BigIntValue]
 )
-SELECT
-	[r].[ID],
+SELECT 
+	[r].[ID], 
 	11
 FROM
 	[LinqDataTypes] [r]
@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[LinqDataTypes] [r]

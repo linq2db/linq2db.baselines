@@ -9,7 +9,7 @@ SET
 	[Child].[ChildID] = @ChildID
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Parent] [x]

@@ -81,7 +81,7 @@ VALUES
 BeforeExecute
 -- SqlCe (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient23] [t1]
@@ -117,7 +117,7 @@ WHERE
 BeforeExecute
 -- SqlCe (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient23] [t1]

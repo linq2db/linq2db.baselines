@@ -24,8 +24,8 @@ SET     @take = 1
 DECLARE @id_1 Int -- Int32
 SET     @id_1 = 3
 
-SELECT TOP (@take)
-	[_].[ID],
+SELECT TOP (@take) 
+	[_].[ID], 
 	[_].[imageDataType]
 FROM
 	[AllTypes] [_]

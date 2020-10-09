@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN [p].[MoneyValue] > 5.1
 					THEN [p].[MoneyValue]

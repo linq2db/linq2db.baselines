@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t1].[Max_1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Max([ch].[ChildID]) as [Max_1],
+		LEFT JOIN ( 
+			SELECT 
+				Max([ch].[ChildID]) as [Max_1], 
 				[ch].[ParentID]
 			FROM
 				[Child] [ch]

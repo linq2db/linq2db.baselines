@@ -1,25 +1,25 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
-	[ch_3].[ParentID],
-	Min([ch_3].[ChildID]),
+SELECT 
+	[ch_3].[ParentID], 
+	Min([ch_3].[ChildID]), 
 	Count([t1].[ParentID])
 FROM
-	(
-		SELECT
-			[ch].[ParentID] + 1 as [ParentID],
+	( 
+		SELECT 
+			[ch].[ParentID] + 1 as [ParentID], 
 			[ch].[ChildID]
 		FROM
 			[Child] [ch]
 	) [ch_3]
-		LEFT JOIN (
-			SELECT
+		LEFT JOIN ( 
+			SELECT 
 				[ch_2].[ParentID]
 			FROM
-				(
-					SELECT
-						[ch_1].[ParentID] + 1 as [ParentID],
+				( 
+					SELECT 
+						[ch_1].[ParentID] + 1 as [ParentID], 
 						[ch_1].[ChildID]
 					FROM
 						[Child] [ch_1]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	DatePart(minute, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

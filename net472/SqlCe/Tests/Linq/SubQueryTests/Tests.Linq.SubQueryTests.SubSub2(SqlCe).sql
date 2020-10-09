@@ -3,17 +3,17 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	[t1].[Count_1]
 FROM
-	(
-		SELECT
-			[p3].[ID] + 1 as [ID],
+	( 
+		SELECT 
+			[p3].[ID] + 1 as [ID], 
 			[p3].[ParentID]
 		FROM
-			(
-				SELECT
-					[p2].[ParentID] + 1 as [ID],
+			( 
+				SELECT 
+					[p2].[ParentID] + 1 as [ID], 
 					[p2].[ParentID]
 				FROM
 					[Parent] [p2]
@@ -21,12 +21,12 @@ FROM
 		WHERE
 			[p3].[ID] > 0
 	) [p1]
-		OUTER APPLY (
-			SELECT TOP (@take)
+		OUTER APPLY ( 
+			SELECT TOP (@take) 
 				[c_2].[c1] as [Count_1]
 			FROM
-				(
-					SELECT
+				( 
+					SELECT 
 						[c_1].[ParentID] + 1 as [c1]
 					FROM
 						[Child] [c_1]

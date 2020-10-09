@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[GrandChild] [x]
@@ -14,9 +14,9 @@ SELECT
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[GrandChild] [x]

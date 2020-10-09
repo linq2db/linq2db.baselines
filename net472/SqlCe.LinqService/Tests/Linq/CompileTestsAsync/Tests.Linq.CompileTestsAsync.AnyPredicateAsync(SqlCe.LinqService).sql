@@ -153,9 +153,9 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[AsyncDataTable] [c_1]

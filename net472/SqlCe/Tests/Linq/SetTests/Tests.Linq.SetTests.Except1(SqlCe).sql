@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT DISTINCT
-	[t1].[ParentID],
+SELECT DISTINCT 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
 WHERE
 	NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [p]

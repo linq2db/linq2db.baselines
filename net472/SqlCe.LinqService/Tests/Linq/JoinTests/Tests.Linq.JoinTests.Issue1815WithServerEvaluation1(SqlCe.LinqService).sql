@@ -93,12 +93,12 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[InId],
+SELECT TOP (@take) 
+	[x].[InId], 
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]
 		ELSE [j].[InMinQuantity]
-	END,
+	END, 
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMaxQuantity]
 		ELSE [j].[InMaxQuantity]
@@ -114,12 +114,12 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[InId],
+SELECT TOP (@take) 
+	[x].[InId], 
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]
 		ELSE [j].[InMinQuantity]
-	END,
+	END, 
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMaxQuantity]
 		ELSE [j].[InMaxQuantity]

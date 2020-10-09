@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	'test1'
 
 BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	'test2'
 

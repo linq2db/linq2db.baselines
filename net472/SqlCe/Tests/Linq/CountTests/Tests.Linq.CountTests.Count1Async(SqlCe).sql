@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [t1]

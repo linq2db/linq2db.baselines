@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(DateTime, '2010-' + Convert(NVarChar(11), [p].[ID]) + '-1 20:35:44') as [c1]
 		FROM
 			[LinqDataTypes] [p]

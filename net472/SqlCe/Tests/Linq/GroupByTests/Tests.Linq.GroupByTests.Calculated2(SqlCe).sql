@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[ch].[c1] + '2' as [c1]
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					CASE
 						WHEN [selectParam].[ParentID] > 2
 							THEN CASE

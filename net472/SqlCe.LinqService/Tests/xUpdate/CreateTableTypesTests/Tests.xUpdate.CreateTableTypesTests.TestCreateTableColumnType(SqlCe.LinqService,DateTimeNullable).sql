@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[DateTimeNullable]
 FROM
 	[CreateTableTypes] [t1]

@@ -33,9 +33,9 @@ SELECT 15,0,0
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[Id],
-	[t1].[BoolValue],
+SELECT 
+	[t1].[Id], 
+	[t1].[BoolValue], 
 	[t1].[NullableBoolValue]
 FROM
 	[WhereCases] [t1]
@@ -43,9 +43,9 @@ FROM
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -55,9 +55,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -67,9 +67,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -79,9 +79,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -91,9 +91,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -103,9 +103,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -115,9 +115,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -127,9 +127,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -139,9 +139,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -151,9 +151,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -163,9 +163,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -176,9 +176,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -188,9 +188,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -201,9 +201,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -213,9 +213,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -226,9 +226,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -238,9 +238,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -250,9 +250,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -262,9 +262,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -274,9 +274,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -286,9 +286,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -298,9 +298,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -310,9 +310,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -322,9 +322,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -334,9 +334,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -347,9 +347,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -359,9 +359,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -372,9 +372,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -384,9 +384,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -397,9 +397,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -409,9 +409,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]
@@ -422,9 +422,9 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
+SELECT 
+	[t].[Id], 
+	[t].[BoolValue], 
 	[t].[NullableBoolValue]
 FROM
 	[WhereCases] [t]

@@ -47,10 +47,10 @@ SELECT 3,4,'Tag4'
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[f].[Id],
-	[ft].[Id],
-	[ft].[FactId],
+SELECT 
+	[f].[Id], 
+	[ft].[Id], 
+	[ft].[FactId], 
 	[ft].[Name]
 FROM
 	[Tag] [ft]

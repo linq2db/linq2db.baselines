@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
+SELECT 
 	Count([t1].[ParentID])
 FROM
 	[Child] [t2]
-		LEFT JOIN (
-			SELECT
+		LEFT JOIN ( 
+			SELECT 
 				[keyParam].[ParentID]
 			FROM
 				[Child] [keyParam]

@@ -260,7 +260,7 @@ SET
 	[UpdatedEntities].[Value3] = 1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[UpdatedEntities] [v]
@@ -274,9 +274,9 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[v].[Value1],
-	[v].[Value2],
+SELECT TOP (@take) 
+	[v].[Value1], 
+	[v].[Value2], 
 	[v].[Value3]
 FROM
 	[UpdatedEntities] [v]

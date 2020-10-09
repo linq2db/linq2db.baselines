@@ -3,24 +3,24 @@
 DECLARE @n Int -- Int32
 SET     @n = 1
 
-SELECT
+SELECT 
 	Count([t1].[ParentID])
 FROM
-	(
-		SELECT
-			[ch].[ParentID] + 1 as [ParentID],
+	( 
+		SELECT 
+			[ch].[ParentID] + 1 as [ParentID], 
 			[ch].[ChildID]
 		FROM
 			[Child] [ch]
 	) [ch_3]
-		LEFT JOIN (
-			SELECT
-				[ch_2].[ParentID],
+		LEFT JOIN ( 
+			SELECT 
+				[ch_2].[ParentID], 
 				[ch_2].[ChildID]
 			FROM
-				(
-					SELECT
-						[ch_1].[ParentID] + 1 as [ParentID],
+				( 
+					SELECT 
+						[ch_1].[ParentID] + 1 as [ParentID], 
 						[ch_1].[ChildID]
 					FROM
 						[Child] [ch_1]

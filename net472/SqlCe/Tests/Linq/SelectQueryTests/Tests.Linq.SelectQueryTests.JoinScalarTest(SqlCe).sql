@@ -20,14 +20,14 @@ SELECT 1,100
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[Id],
-	[t].[Value],
+SELECT 
+	[t].[Id], 
+	[t].[Value], 
 	[s].[c1]
 FROM
 	[SampleClass] [t]
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				1 as [c1]
 		) [s] ON [s].[c1] = [t].[Id]
 
