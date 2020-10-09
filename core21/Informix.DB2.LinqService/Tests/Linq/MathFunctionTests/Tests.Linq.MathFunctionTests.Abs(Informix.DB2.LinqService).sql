@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Abs(p.MoneyValue) as c1
 		FROM
 			LinqDataTypes p

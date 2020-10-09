@@ -151,12 +151,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	c_2.Value_1
 FROM
-	(
-		SELECT
-			2 as Id,
+	( 
+		SELECT 
+			2 as Id, 
 			c_1.Id as Value_1
 		FROM
 			AsyncDataTable c_1

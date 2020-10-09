@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Sum(Nvl(a_Parent.Value1, 0))
 FROM
 	Child t1

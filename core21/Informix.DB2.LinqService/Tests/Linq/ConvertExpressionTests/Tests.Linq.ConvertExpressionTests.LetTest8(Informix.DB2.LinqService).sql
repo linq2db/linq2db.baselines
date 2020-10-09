@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	key_data_result.ParentID,
-	c_1.ParentID,
+SELECT 
+	key_data_result.ParentID, 
+	c_1.ParentID, 
 	c_1.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -19,12 +19,12 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	key_data_result.ParentID,
-	c_1.ParentID,
+SELECT 
+	key_data_result.ParentID, 
+	c_1.ParentID, 
 	c_1.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -37,18 +37,18 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1
 		WHERE
 			c_1.ParentID = p.ParentID AND c_1.ChildID > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child c_2

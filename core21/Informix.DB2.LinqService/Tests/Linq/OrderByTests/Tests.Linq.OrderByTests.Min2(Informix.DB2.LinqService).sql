@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Min(t1.ParentID)
 FROM
-	(
-		SELECT FIRST 3
+	( 
+		SELECT FIRST 3 
 			p.ParentID
 		FROM
 			Parent p

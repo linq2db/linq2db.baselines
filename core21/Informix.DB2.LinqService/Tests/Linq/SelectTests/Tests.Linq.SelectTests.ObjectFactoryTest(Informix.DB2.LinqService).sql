@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	1
 FROM
 	Person t1

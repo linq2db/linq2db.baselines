@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.ChildID
 FROM
 	GrandChild t1
@@ -17,7 +17,7 @@ SET     @ParentID = 1
 DECLARE @ChildID Integer(4) -- Int32
 SET     @ChildID = 11
 
-SELECT
+SELECT 
 	ch.GrandChildID
 FROM
 	GrandChild ch

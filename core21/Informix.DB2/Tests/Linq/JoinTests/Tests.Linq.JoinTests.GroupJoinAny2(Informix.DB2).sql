@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1

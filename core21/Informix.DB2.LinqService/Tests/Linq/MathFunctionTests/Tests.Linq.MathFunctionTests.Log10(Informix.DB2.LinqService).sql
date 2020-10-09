@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Log10(Cast(p.MoneyValue as Float))) as c1
 		FROM
 			LinqDataTypes p

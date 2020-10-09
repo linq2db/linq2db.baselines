@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	g_1.ParentID,
-	g_1.ChildID,
+SELECT 
+	g_1.ParentID, 
+	g_1.ChildID, 
 	g_1.GrandChildID
 FROM
 	GrandChild g_1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child t

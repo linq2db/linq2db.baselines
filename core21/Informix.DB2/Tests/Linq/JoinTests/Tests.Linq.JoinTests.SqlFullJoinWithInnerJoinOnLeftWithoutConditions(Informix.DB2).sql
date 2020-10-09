@@ -3,24 +3,24 @@
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 1
 
-SELECT
-	left_1.ParentID,
-	left_1.Value1,
-	t1.right_2,
+SELECT 
+	left_1.ParentID, 
+	left_1.Value1, 
+	t1.right_2, 
 	t1.right_1
 FROM
-	(
-		SELECT
-			p.Value1,
+	( 
+		SELECT 
+			p.Value1, 
 			p.ParentID
 		FROM
 			Parent p
 		WHERE
 			p.ParentID <> @id1
 	) left_1
-		FULL JOIN (
-			SELECT
-				right_3.Value1 as right_1,
+		FULL JOIN ( 
+			SELECT 
+				right_3.Value1 as right_1, 
 				right_3.ParentID as right_2
 			FROM
 				Parent right_3

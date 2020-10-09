@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	(p.FirstName IS NULL OR Length(p.FirstName) = 0)
 FROM
 	Person p

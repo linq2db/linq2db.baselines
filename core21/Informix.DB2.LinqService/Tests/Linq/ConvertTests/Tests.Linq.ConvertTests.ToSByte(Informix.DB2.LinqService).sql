@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	p.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(t.MoneyValue as SmallInt) as c1
 		FROM
 			LinqDataTypes t

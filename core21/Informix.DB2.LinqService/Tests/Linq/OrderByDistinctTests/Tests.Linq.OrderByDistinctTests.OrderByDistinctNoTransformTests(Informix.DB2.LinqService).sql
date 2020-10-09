@@ -483,7 +483,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT SKIP 0 FIRST 3 DISTINCT
-	x.DuplicateData,
+	x.DuplicateData, 
 	x.OrderData1
 FROM
 	OrderByDistinctData x

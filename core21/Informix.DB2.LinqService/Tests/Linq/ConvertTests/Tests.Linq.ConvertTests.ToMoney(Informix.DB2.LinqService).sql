@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Cast(t.MoneyValue as Money)
 FROM
 	LinqDataTypes t

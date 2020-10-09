@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	Count(*),
+SELECT 
+	Count(*), 
 	Max(t1.ChildID)
 FROM
 	Child t1

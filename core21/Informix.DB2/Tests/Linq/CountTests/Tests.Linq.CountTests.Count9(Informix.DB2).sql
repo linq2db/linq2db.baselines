@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	a_Parent.ParentID
 FROM
 	Child ch
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Child p

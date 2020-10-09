@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT DISTINCT
-	p_2.ParentID,
+	p_2.ParentID, 
 	p_2.Value1
 FROM
 	Parent p_2

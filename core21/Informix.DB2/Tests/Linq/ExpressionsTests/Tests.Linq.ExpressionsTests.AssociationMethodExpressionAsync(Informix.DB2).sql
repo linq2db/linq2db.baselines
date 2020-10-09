@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.Value1
 FROM
 	Parent t1
@@ -10,9 +10,9 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child cp

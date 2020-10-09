@@ -29,8 +29,8 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t.ParentID,
+SELECT FIRST 1 
+	t.ParentID, 
 	t.Value1
 FROM
 	Parent t

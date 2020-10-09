@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN Cast(p.MoneyValue as Float) - Floor(Cast(p.MoneyValue as Float)) = 0.5 AND Mod(Floor(Cast(p.MoneyValue as Float)), 2) = 0
 					THEN Floor(Cast(p.MoneyValue as Float))

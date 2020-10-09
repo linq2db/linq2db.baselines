@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT SKIP 3
-	ch.ParentID,
+SELECT SKIP 3 
+	ch.ParentID, 
 	ch.ChildID
 FROM
 	Child ch

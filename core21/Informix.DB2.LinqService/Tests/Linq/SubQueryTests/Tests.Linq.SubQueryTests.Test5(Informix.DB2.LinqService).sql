@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.c2,
+SELECT 
+	t1.c2, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child p
 		WHERE
 			p.ParentID = t1.c3
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child p_1
@@ -20,16 +20,16 @@ SELECT
 			p_1.ParentID = t1.c3 AND p_1.ParentID = 3
 	)
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			CASE
 				WHEN id.Value1 IS NULL THEN id.ParentID
 				ELSE id.ParentID + 1
-			END as c1,
+			END as c1, 
 			CASE
 				WHEN id.Value1 IS NULL THEN id.ParentID
 				ELSE id.ParentID + 1
-			END as c2,
+			END as c2, 
 			CASE
 				WHEN id.Value1 IS NULL THEN id.ParentID
 				ELSE id.ParentID + 1

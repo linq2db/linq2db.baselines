@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
 WHERE
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child t1

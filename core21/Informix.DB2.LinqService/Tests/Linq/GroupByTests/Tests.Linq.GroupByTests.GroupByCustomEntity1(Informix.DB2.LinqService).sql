@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
-			c_1.ParentID,
+	( 
+		SELECT 
+			c_1.ParentID, 
 			3 as RandValue
 		FROM
 			Child c_1

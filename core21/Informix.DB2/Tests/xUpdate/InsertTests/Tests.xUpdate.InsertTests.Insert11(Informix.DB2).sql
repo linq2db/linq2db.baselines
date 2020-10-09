@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Max(t.PersonID)
 FROM
 	Person t
@@ -37,11 +37,11 @@ BeforeExecute
 DECLARE @id Integer(4) -- Int32
 SET     @id = 4
 
-SELECT FIRST 2
-	p2.PersonID,
-	p2.Gender,
-	p2.FirstName,
-	p2.MiddleName,
+SELECT FIRST 2 
+	p2.PersonID, 
+	p2.Gender, 
+	p2.FirstName, 
+	p2.MiddleName, 
 	p2.LastName
 FROM
 	Person p2

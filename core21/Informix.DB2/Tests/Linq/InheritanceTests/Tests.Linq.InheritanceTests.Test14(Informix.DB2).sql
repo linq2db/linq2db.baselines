@@ -3,7 +3,7 @@
 DECLARE @id Integer(4) -- Int32
 SET     @id = 10
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	x.ChildID
 FROM
 	Child x

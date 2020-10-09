@@ -50,9 +50,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	t1.Id,
-	t1.ClaimedKeyType,
+SELECT FIRST 2 
+	t1.Id, 
+	t1.ClaimedKeyType, 
 	t1.ClaimedKeyTypeN
 FROM
 	Issue1554Table t1

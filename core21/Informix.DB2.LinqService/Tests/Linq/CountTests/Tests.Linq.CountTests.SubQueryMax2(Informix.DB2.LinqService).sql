@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Max(t2.cnt)
 FROM
 	Parent p
-		LEFT JOIN (
-			SELECT
-				Count(*) as cnt,
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as cnt, 
 				t1.ParentID
 			FROM
 				Child t1

@@ -91,12 +91,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	x.InId,
+SELECT FIRST 2 
+	x.InId, 
 	CASE
 		WHEN j.InId IS NULL THEN x.InMinQuantity
 		ELSE j.InMinQuantity
-	END,
+	END, 
 	CASE
 		WHEN j.InId IS NULL THEN x.InMaxQuantity
 		ELSE j.InMaxQuantity
@@ -110,12 +110,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	x.InId,
+SELECT FIRST 2 
+	x.InId, 
 	CASE
 		WHEN j.InId IS NULL THEN x.InMinQuantity
 		ELSE j.InMinQuantity
-	END,
+	END, 
 	CASE
 		WHEN j.InId IS NULL THEN x.InMaxQuantity
 		ELSE j.InMaxQuantity

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t2.c1
 FROM
 	Parent cp
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				t1.ParentID + 1 as c1
 			FROM
 				Child t1

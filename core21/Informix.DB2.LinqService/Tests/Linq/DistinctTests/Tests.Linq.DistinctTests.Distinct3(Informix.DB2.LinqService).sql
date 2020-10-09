@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT DISTINCT
-	Nvl(p.Value1, Mod(p.ParentID, 2)),
+	Nvl(p.Value1, Mod(p.ParentID, 2)), 
 	p.Value1
 FROM
 	Parent p

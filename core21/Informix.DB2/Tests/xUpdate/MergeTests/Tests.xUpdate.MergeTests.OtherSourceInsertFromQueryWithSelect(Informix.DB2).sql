@@ -222,12 +222,12 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
-USING (
-	SELECT
-		t1.Id as OtherId,
-		t1.Id + t1.Id as OtherField3,
-		t1.Field2 as OtherField2,
-		t1.Field1 as OtherField1,
+USING ( 
+	SELECT 
+		t1.Id as OtherId, 
+		t1.Id + t1.Id as OtherField3, 
+		t1.Field2 as OtherField2, 
+		t1.Field1 as OtherField1, 
 		t1.Field5 as OtherField5
 	FROM
 		TestMerge2 t1
@@ -264,12 +264,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
+SELECT 
+	t1.Id, 
+	t1.Field1, 
+	t1.Field2, 
+	t1.Field3, 
+	t1.Field4, 
 	t1.Field5
 FROM
 	TestMerge1 t1

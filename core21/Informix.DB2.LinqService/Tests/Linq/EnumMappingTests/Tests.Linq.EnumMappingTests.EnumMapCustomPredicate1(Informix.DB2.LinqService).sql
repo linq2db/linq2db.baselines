@@ -25,8 +25,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	entity.ID,
+SELECT 
+	entity.ID, 
 	entity.BigIntValue
 FROM
 	LinqDataTypes entity

@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @ID_1 Integer(4) -- Int32
 SET     @ID_1 = 5
 
-SELECT FIRST 2
+SELECT FIRST 2 
 	t1.ID
 FROM
 	Issue1316Tests t1
@@ -39,7 +39,7 @@ BeforeExecute
 DECLARE @Id_1 Integer(4) -- Int32
 SET     @Id_1 = 5
 
-SELECT FIRST 2
+SELECT FIRST 2 
 	t1.ID
 FROM
 	Issue1316Tests t1

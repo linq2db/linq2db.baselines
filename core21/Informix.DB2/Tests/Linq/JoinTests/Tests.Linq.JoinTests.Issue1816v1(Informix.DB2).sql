@@ -34,8 +34,8 @@ CREATE TABLE stMain
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	v.inId,
+SELECT 
+	v.inId, 
 	r.inIdState
 FROM
 	stVersions v

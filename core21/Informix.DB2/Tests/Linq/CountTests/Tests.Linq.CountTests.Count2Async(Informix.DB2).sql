@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent p

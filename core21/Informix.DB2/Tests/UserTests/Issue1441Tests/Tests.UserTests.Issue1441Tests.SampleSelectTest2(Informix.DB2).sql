@@ -24,8 +24,8 @@ CREATE TABLE Books
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	author.Id,
+SELECT 
+	author.Id, 
 	author.Name
 FROM
 	Authors author

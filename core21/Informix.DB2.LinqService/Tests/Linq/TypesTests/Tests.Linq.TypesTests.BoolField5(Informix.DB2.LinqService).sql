@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	p.MoneyValue
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN t.BoolValue = 'f' THEN 't'
 				ELSE 'f'
-			END as b,
+			END as b, 
 			t.MoneyValue
 		FROM
 			LinqDataTypes t

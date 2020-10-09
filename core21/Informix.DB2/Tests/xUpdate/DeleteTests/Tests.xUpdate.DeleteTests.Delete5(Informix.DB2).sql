@@ -49,7 +49,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent t1
@@ -67,7 +67,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent t1

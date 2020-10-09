@@ -50,7 +50,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent564 t1

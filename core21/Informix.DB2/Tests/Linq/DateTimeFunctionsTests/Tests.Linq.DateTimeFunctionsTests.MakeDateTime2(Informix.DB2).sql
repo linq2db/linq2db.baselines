@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			To_Date('2010-' || To_Char(p.ID) || '-1 20:35:44') as c1
 		FROM
 			LinqDataTypes p

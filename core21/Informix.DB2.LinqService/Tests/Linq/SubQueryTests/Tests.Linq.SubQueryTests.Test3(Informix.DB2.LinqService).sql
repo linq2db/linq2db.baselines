@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			ch.ChildID
 		FROM
 			Child ch

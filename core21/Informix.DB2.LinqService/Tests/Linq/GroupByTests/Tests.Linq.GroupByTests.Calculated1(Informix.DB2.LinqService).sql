@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t1.Key_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN selectParam.ParentID > 2
 					THEN CASE
@@ -26,12 +26,12 @@ BeforeExecute
 DECLARE @p1 VarChar(1) -- String
 SET     @p1 = '1'
 
-SELECT
-	underscore.ParentID,
+SELECT 
+	underscore.ParentID, 
 	underscore.ChildID
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN selectParam.ParentID > 2
 					THEN CASE
@@ -40,8 +40,8 @@ FROM
 					ELSE '2'
 				END
 				ELSE '3'
-			END as Key_1,
-			selectParam.ParentID,
+			END as Key_1, 
+			selectParam.ParentID, 
 			selectParam.ChildID
 		FROM
 			Child selectParam

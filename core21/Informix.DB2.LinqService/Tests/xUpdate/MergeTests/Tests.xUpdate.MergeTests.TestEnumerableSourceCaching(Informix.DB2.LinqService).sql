@@ -42,8 +42,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1."Value"
 FROM
 	CacheTestTable t1
@@ -85,8 +85,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1."Value"
 FROM
 	CacheTestTable t1

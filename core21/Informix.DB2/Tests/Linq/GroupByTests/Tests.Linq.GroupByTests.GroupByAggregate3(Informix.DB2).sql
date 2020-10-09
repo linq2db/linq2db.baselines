@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t1.Key_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN (
-					SELECT
+					SELECT 
 						Avg(c_1.ParentID)
 					FROM
 						Child c_1
@@ -29,15 +29,15 @@ BeforeExecute
 DECLARE @p1 Char(1) -- StringFixedLength
 SET     @p1 = 'f'
 
-SELECT
-	underscore.ParentID,
+SELECT 
+	underscore.ParentID, 
 	underscore.Value1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN (
-					SELECT
+					SELECT 
 						Avg(c_1.ParentID)
 					FROM
 						Child c_1
@@ -46,8 +46,8 @@ FROM
 				) > 3
 					THEN 't'
 				ELSE 'f'
-			END as Key_1,
-			selectParam.ParentID,
+			END as Key_1, 
+			selectParam.ParentID, 
 			selectParam.Value1
 		FROM
 			Parent selectParam

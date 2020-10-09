@@ -6,7 +6,7 @@ DROP TABLE TempTable
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	p.ParentID
 FROM
 	Parent p
@@ -25,7 +25,7 @@ INSERT BULK TempTable
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t.ID
 FROM
 	Parent p

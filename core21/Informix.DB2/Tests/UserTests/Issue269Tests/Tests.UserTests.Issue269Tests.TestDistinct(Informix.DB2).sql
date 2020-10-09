@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
@@ -10,11 +10,11 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -22,14 +22,14 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	pat.PersonID,
+SELECT 
+	pat.PersonID, 
 	pat.Diagnosis
 FROM
 	Patient pat
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Person per

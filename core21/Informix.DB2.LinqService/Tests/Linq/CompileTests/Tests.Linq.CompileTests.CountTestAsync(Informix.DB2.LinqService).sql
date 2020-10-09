@@ -3,7 +3,7 @@
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Child c_1
@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = -1
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Child c_1

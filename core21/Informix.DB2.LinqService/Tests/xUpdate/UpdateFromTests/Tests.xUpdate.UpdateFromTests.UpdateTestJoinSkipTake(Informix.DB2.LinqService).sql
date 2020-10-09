@@ -264,17 +264,17 @@ UPDATE
 	UpdatedEntities
 SET
 	UpdatedEntities.Value1 = (
-		SELECT
+		SELECT 
 			(t1.Value1 * t1.Value1_1) * @int1
 		FROM
-			(
-				SELECT SKIP 1 FIRST 2
-					c_1.Value1,
-					t.Value1 as Value1_1,
-					c_1.Value2,
-					t.Value2 as Value2_1,
-					c_1.Value3,
-					t.Value3 as Value3_1,
+			( 
+				SELECT SKIP 1 FIRST 2 
+					c_1.Value1, 
+					t.Value1 as Value1_1, 
+					c_1.Value2, 
+					t.Value2 as Value2_1, 
+					c_1.Value3, 
+					t.Value3 as Value3_1, 
 					c_1.id
 				FROM
 					UpdatedEntities c_1
@@ -288,17 +288,17 @@ SET
 			UpdatedEntities.id = t1.id
 	),
 	UpdatedEntities.Value2 = (
-		SELECT
+		SELECT 
 			(t2.Value2 * t2.Value2_1) * @int2
 		FROM
-			(
-				SELECT SKIP 1 FIRST 2
-					c_2.Value1,
-					t_1.Value1 as Value1_1,
-					c_2.Value2,
-					t_1.Value2 as Value2_1,
-					c_2.Value3,
-					t_1.Value3 as Value3_1,
+			( 
+				SELECT SKIP 1 FIRST 2 
+					c_2.Value1, 
+					t_1.Value1 as Value1_1, 
+					c_2.Value2, 
+					t_1.Value2 as Value2_1, 
+					c_2.Value3, 
+					t_1.Value3 as Value3_1, 
 					c_2.id
 				FROM
 					UpdatedEntities c_2
@@ -312,17 +312,17 @@ SET
 			UpdatedEntities.id = t2.id
 	),
 	UpdatedEntities.Value3 = (
-		SELECT
+		SELECT 
 			(t3.Value3 * t3.Value3_1) * @int3
 		FROM
-			(
-				SELECT SKIP 1 FIRST 2
-					c_3.Value1,
-					t_2.Value1 as Value1_1,
-					c_3.Value2,
-					t_2.Value2 as Value2_1,
-					c_3.Value3,
-					t_2.Value3 as Value3_1,
+			( 
+				SELECT SKIP 1 FIRST 2 
+					c_3.Value1, 
+					t_2.Value1 as Value1_1, 
+					c_3.Value2, 
+					t_2.Value2 as Value2_1, 
+					c_3.Value3, 
+					t_2.Value3 as Value3_1, 
 					c_3.id
 				FROM
 					UpdatedEntities c_3
@@ -337,17 +337,17 @@ SET
 	)
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT SKIP 1 FIRST 2
-					c_4.Value1,
-					t_3.Value1 as Value1_1,
-					c_4.Value2,
-					t_3.Value2 as Value2_1,
-					c_4.Value3,
-					t_3.Value3 as Value3_1,
+			( 
+				SELECT SKIP 1 FIRST 2 
+					c_4.Value1, 
+					t_3.Value1 as Value1_1, 
+					c_4.Value2, 
+					t_3.Value2 as Value2_1, 
+					c_4.Value3, 
+					t_3.Value3 as Value3_1, 
 					c_4.id
 				FROM
 					UpdatedEntities c_4
@@ -364,10 +364,10 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	v.id,
-	v.Value1,
-	v.Value2,
+SELECT 
+	v.id, 
+	v.Value1, 
+	v.Value2, 
 	v.Value3
 FROM
 	UpdatedEntities v

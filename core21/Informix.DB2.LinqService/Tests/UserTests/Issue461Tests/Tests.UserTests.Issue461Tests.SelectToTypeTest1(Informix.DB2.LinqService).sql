@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	l.ParentID
 FROM
 	Child l
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	1
 FROM
 	Parent sep

@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
-		LEFT JOIN (
-			SELECT
-				c_1.ParentID as ch,
+		LEFT JOIN ( 
+			SELECT 
+				c_1.ParentID as ch, 
 				c_1.ChildID
 			FROM
 				Child c_1

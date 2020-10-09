@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.ChildID
 FROM
 	Child t1
 EXCEPT
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.ChildID
 FROM
 	Child p

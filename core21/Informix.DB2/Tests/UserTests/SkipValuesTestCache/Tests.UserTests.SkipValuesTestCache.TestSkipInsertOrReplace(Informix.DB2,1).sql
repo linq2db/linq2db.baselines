@@ -45,9 +45,9 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t.Id,
-	t.Name,
+SELECT FIRST 1 
+	t.Id, 
+	t.Name, 
 	t.Age
 FROM
 	PR_1598_Insert_Table_Cache t
@@ -71,9 +71,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t.Id,
-	t.Name,
+SELECT FIRST 1 
+	t.Id, 
+	t.Name, 
 	t.Age
 FROM
 	PR_1598_Insert_Table_Cache t

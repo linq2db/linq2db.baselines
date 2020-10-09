@@ -33,8 +33,8 @@ BeforeExecute
 DECLARE @id_1 Integer(4) -- Int32
 SET     @id_1 = 1
 
-SELECT FIRST 2
-	t1.Id,
+SELECT FIRST 2 
+	t1.Id, 
 	t1.Has
 FROM
 	Issue1438 t1

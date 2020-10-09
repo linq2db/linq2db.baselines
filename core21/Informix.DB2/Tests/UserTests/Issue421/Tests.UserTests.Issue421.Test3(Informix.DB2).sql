@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t1.Id,
+SELECT FIRST 1 
+	t1.Id, 
 	t1.BlobValue
 FROM
 	BlobClass t1
@@ -41,8 +41,8 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t1.Id,
+SELECT FIRST 1 
+	t1.Id, 
 	t1.BlobValue
 FROM
 	BlobClass t1

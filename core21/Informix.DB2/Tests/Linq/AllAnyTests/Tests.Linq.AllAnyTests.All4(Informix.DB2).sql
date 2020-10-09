@@ -3,7 +3,7 @@
 
 SELECT FIRST 1
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1

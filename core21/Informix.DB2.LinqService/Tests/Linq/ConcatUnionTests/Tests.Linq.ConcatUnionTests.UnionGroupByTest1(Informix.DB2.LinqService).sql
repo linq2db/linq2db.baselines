@@ -1,26 +1,26 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t4.month_1,
-	t4.year_1,
+SELECT 
+	t4.month_1, 
+	t4.year_1, 
 	t4.int_1
 FROM
-	(
-		SELECT
-			t2.month_1,
-			t2.year_1,
+	( 
+		SELECT 
+			t2.month_1, 
+			t2.year_1, 
 			t2.int_1
 		FROM
-			(
-				SELECT
-					t1.Key_1 as month_1,
-					t1.Key_2 as year_1,
+			( 
+				SELECT 
+					t1.Key_1 as month_1, 
+					t1.Key_2 as year_1, 
 					1 as int_1
 				FROM
-					(
-						SELECT
-							Month(selectParam.DateTimeValue) as Key_1,
+					( 
+						SELECT 
+							Month(selectParam.DateTimeValue) as Key_1, 
 							Year(selectParam.DateTimeValue) as Key_2
 						FROM
 							LinqDataTypes selectParam
@@ -30,22 +30,22 @@ FROM
 					t1.Key_2
 			) t2
 		UNION
-		SELECT
-			t3.SmallIntValue as month_1,
-			t3.SmallIntValue as year_1,
+		SELECT 
+			t3.SmallIntValue as month_1, 
+			t3.SmallIntValue as year_1, 
 			3 as int_1
 		FROM
 			LinqDataTypes t3
 	) t4
 UNION
-SELECT
-	t6.year_1,
-	t6.year_1,
+SELECT 
+	t6.year_1, 
+	t6.year_1, 
 	t6.int_1
 FROM
-	(
-		SELECT
-			Year(t5.DateTimeValue) as year_1,
+	( 
+		SELECT 
+			Year(t5.DateTimeValue) as year_1, 
 			2 as int_1
 		FROM
 			LinqDataTypes t5

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person t1
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT SKIP 1
+SELECT SKIP 1 
 	1
 FROM
 	Person t1

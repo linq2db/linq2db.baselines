@@ -131,10 +131,10 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	fact_1.Id,
-	tag_1.Id,
-	tag_1.FactId,
+SELECT 
+	fact_1.Id, 
+	tag_1.Id, 
+	tag_1.FactId, 
 	tag_1.Name
 FROM
 	Fact fact_1

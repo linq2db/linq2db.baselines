@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	p.FirstName
 FROM
 	Person p
@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @ID VarChar(4) -- String
 SET     @ID = 'John'
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	p.FirstName
 FROM
 	Person p

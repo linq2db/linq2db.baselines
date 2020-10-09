@@ -91,12 +91,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	x.InId,
-	j.InId,
-	j.InMaxQuantity,
-	j.InMinQuantity,
-	x.InMinQuantity,
+SELECT FIRST 2 
+	x.InId, 
+	j.InId, 
+	j.InMaxQuantity, 
+	j.InMinQuantity, 
+	x.InMinQuantity, 
 	x.InMaxQuantity
 FROM
 	StLink x
@@ -107,12 +107,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	x.InId,
-	j.InId,
-	j.InMaxQuantity,
-	j.InMinQuantity,
-	x.InMinQuantity,
+SELECT FIRST 2 
+	x.InId, 
+	j.InId, 
+	j.InMaxQuantity, 
+	j.InMinQuantity, 
+	x.InMinQuantity, 
 	x.InMaxQuantity
 FROM
 	StLink x

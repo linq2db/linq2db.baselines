@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	pat.PersonID,
+SELECT 
+	pat.PersonID, 
 	pat.Diagnosis
 FROM
 	Patient pat
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT FIRST 1
+			( 
+				SELECT FIRST 1 
 					a_Patient.Diagnosis
 				FROM
 					Person per

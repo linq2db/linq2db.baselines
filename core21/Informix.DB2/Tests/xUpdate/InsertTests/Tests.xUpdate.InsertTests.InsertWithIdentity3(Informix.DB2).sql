@@ -36,11 +36,11 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
+SELECT FIRST 2 
+	p.FirstName, 
+	p.PersonID, 
+	p.LastName, 
+	p.MiddleName, 
 	p.Gender
 FROM
 	Person p

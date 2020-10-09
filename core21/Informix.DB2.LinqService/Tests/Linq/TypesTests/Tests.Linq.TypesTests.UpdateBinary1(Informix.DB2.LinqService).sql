@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t.BinaryValue
 FROM
 	LinqDataTypes t

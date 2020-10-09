@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person t1
@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person t1

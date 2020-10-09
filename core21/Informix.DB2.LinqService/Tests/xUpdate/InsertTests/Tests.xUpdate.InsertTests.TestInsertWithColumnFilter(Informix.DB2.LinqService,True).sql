@@ -29,11 +29,11 @@ BeforeExecute
 DECLARE @FirstName_1 VarChar(18) -- String
 SET     @FirstName_1 = 'InsertColumnFilter'
 
-SELECT FIRST 1
-	x.FirstName,
-	x.PersonID,
-	x.LastName,
-	x.MiddleName,
+SELECT FIRST 1 
+	x.FirstName, 
+	x.PersonID, 
+	x.LastName, 
+	x.MiddleName, 
 	x.Gender
 FROM
 	Person x

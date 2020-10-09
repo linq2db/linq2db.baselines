@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.Key_1,
+SELECT 
+	t1.Key_1, 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Date(selectParam.DateTimeValue) as Key_1
 		FROM
 			LinqDataTypes selectParam

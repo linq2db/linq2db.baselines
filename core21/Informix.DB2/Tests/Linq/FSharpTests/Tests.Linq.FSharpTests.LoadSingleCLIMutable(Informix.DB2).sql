@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	p.PersonID,
-	p.FirstName,
-	p.LastName,
-	p.MiddleName,
-	p.Gender,
-	a_Patient.PersonID,
+SELECT FIRST 2 
+	p.PersonID, 
+	p.FirstName, 
+	p.LastName, 
+	p.MiddleName, 
+	p.Gender, 
+	a_Patient.PersonID, 
 	a_Patient.Diagnosis
 FROM
 	Person p
@@ -18,13 +18,13 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	p.PersonID,
-	p.FirstName,
-	p.LastName,
-	p.MiddleName,
-	p.Gender,
-	a_Patient.PersonID,
+SELECT FIRST 2 
+	p.PersonID, 
+	p.FirstName, 
+	p.LastName, 
+	p.MiddleName, 
+	p.Gender, 
+	a_Patient.PersonID, 
 	a_Patient.Diagnosis
 FROM
 	Person p

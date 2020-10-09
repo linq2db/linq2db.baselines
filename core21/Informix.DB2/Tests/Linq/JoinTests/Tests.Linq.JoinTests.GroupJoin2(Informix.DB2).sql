@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	gjd_c.ParentID,
+SELECT 
+	key_data_result.ParentID, 
+	key_data_result.Value1, 
+	gjd_c.ParentID, 
 	gjd_c.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
-			p.ParentID,
+			p.ParentID, 
 			p.Value1
 		FROM
 			Parent p
@@ -21,8 +21,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p

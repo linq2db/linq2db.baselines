@@ -18,7 +18,7 @@ INSERT INTO Person
 VALUES
 (
 	'Insert14' || (
-		SELECT
+		SELECT 
 			p.FirstName
 		FROM
 			Person p
@@ -32,7 +32,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person p

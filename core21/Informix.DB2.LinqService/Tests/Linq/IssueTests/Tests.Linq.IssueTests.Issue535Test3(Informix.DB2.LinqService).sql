@@ -15,10 +15,10 @@ CREATE TABLE CustomerBase
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	cb.Id,
-	cb.Name,
-	cb.ContactEmail,
+SELECT 
+	cb.Id, 
+	cb.Name, 
+	cb.ContactEmail, 
 	Nvl(cb.Enabled, 'f')
 FROM
 	CustomerBase cb

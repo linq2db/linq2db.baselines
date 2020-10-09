@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	a_Parent.Value1
 FROM
 	Parent x

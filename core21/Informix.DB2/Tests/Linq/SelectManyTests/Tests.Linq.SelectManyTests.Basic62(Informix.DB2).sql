@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t1.ParentID + cp.ParentID
 FROM
 	Parent cp

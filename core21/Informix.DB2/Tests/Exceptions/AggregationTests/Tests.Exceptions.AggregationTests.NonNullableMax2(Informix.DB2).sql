@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Max(t1.ParentID)
 		FROM
 			Child t1

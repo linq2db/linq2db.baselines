@@ -26,9 +26,9 @@ BeforeExecute
 DECLARE @added Timestamp(16) -- DateTime
 SET     @added = TO_DATE('2017-01-01', '%Y-%m-%d')
 
-SELECT
-	a_Person.personid,
-	a_Person.personname,
+SELECT 
+	a_Person.personid, 
+	a_Person.personname, 
 	Max(p.added)
 FROM
 	activity649 p

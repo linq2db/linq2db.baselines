@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child t1
@@ -11,8 +11,8 @@ SELECT
 			p.ParentID = t1.ParentID
 	)
 FROM
-	(
-		SELECT FIRST 5
+	( 
+		SELECT FIRST 5 
 			t2.ParentID
 		FROM
 			Parent t2

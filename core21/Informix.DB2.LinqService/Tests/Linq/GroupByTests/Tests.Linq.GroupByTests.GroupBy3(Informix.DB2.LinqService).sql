@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t1.Key_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Nvl(selectParam.Value1, c_1.ChildID) as Key_1
 		FROM
 			Parent selectParam

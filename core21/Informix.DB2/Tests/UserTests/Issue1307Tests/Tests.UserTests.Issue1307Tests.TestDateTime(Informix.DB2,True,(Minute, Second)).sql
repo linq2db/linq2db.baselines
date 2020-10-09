@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
+SELECT FIRST 2 
 	t1.DateTimeField
 FROM
 	DateTimeTestTable t1

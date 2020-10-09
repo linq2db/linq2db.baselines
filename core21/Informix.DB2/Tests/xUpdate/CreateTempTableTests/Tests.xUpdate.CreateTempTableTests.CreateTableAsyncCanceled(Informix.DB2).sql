@@ -6,7 +6,7 @@ DROP TABLE TempTable
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	p.ParentID
 FROM
 	Parent p

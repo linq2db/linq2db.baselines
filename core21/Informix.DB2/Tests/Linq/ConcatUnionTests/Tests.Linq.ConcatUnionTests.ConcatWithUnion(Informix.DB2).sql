@@ -1,35 +1,35 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t3.ParentID
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			t1.ParentID
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					c_1.ParentID
 				FROM
 					Parent c_1
 				UNION
-				SELECT
+				SELECT 
 					c_2.ParentID
 				FROM
 					Parent c_2
 			) t1
 		UNION ALL
-		SELECT
+		SELECT 
 			t2.ParentID
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					c_3.ParentID
 				FROM
 					Parent c_3
 				UNION
-				SELECT
+				SELECT 
 					c_4.ParentID
 				FROM
 					Parent c_4

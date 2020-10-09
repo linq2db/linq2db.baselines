@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	(
-		SELECT
+		SELECT 
 			Sum(c_1.ChildID)
 		FROM
 			Child c_1

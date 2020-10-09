@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	user
 FROM
 	LinqDataTypes t1
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	informix.LinqDataTypes t1

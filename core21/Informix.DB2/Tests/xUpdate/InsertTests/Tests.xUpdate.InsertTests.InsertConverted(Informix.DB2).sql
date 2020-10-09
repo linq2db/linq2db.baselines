@@ -25,8 +25,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t.ID,
+SELECT FIRST 1 
+	t.ID, 
 	t.BigIntValue
 FROM
 	LinqDataTypes t

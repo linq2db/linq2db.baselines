@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.DateTime
 FROM
 	CreateTableTypes t1

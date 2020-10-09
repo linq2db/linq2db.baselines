@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	p.ParentID
 FROM
 	Parent p
@@ -11,7 +11,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	p.ParentID
 FROM
 	Parent p
@@ -21,7 +21,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	p.ParentID
 FROM
 	Parent p

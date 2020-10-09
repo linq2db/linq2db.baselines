@@ -37,7 +37,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	r.BigIntValue
 FROM
 	LinqDataTypes r

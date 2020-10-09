@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	(t.DateTimeValue::datetime Minute to Minute)::char(3)::int
 FROM
 	LinqDataTypes t

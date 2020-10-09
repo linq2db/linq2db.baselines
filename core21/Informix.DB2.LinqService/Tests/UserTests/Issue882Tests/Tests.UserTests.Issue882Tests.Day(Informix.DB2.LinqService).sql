@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Mod(Day(t.DateTimeValue), 7)
 FROM
 	LinqDataTypes t

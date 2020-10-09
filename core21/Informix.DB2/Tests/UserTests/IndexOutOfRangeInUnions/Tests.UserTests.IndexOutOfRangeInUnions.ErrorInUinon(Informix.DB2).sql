@@ -34,62 +34,62 @@ CREATE TABLE O3
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t3.NumeroInterno,
-	t3.StatusValor,
+SELECT 
+	t3.NumeroInterno, 
+	t3.StatusValor, 
 	t3.DescricaoStatus
 FROM
-	(
-		SELECT
-			t1.NumeroInterno,
-			t1.StatusValor,
+	( 
+		SELECT 
+			t1.NumeroInterno, 
+			t1.StatusValor, 
 			t1.DescricaoStatus
 		FROM
-			(
-				SELECT
-					doSap.DocEntry as NumeroInterno,
+			( 
+				SELECT 
+					doSap.DocEntry as NumeroInterno, 
 					CASE
 						WHEN doSap.DocStatus = 'O'
 							THEN 'Aberto'
 						ELSE 'Fechado'
-					END as StatusValor,
+					END as StatusValor, 
 					'Manual/Externo' as DescricaoStatus
 				FROM
 					O1 doSap
 			) t1
 		UNION
-		SELECT
-			t2.NumeroInterno,
-			t2.StatusValor,
+		SELECT 
+			t2.NumeroInterno, 
+			t2.StatusValor, 
 			t2.DescricaoStatus
 		FROM
-			(
-				SELECT
-					doSap_1.DocEntry as NumeroInterno,
+			( 
+				SELECT 
+					doSap_1.DocEntry as NumeroInterno, 
 					CASE
 						WHEN doSap_1.DocStatus = 'O'
 							THEN 'Aberto'
 						ELSE 'Fechado'
-					END as StatusValor,
+					END as StatusValor, 
 					'Manual/Externo' as DescricaoStatus
 				FROM
 					O2 doSap_1
 			) t2
 	) t3
 UNION
-SELECT
-	t4.NumeroInterno,
-	t4.StatusValor,
+SELECT 
+	t4.NumeroInterno, 
+	t4.StatusValor, 
 	t4.DescricaoStatus
 FROM
-	(
-		SELECT
-			doSap_2.DocEntry as NumeroInterno,
+	( 
+		SELECT 
+			doSap_2.DocEntry as NumeroInterno, 
 			CASE
 				WHEN doSap_2.DocStatus = 'O'
 					THEN 'Aberto'
 				ELSE 'Fechado'
-			END as StatusValor,
+			END as StatusValor, 
 			'Manual/Externo' as DescricaoStatus
 		FROM
 			O3 doSap_2

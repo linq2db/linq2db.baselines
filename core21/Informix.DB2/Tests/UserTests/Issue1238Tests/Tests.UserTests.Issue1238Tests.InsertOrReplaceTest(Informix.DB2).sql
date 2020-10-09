@@ -43,7 +43,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	InheritanceParent t1
@@ -65,7 +65,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	InheritanceParent t1

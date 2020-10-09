@@ -3,7 +3,7 @@
 
 SELECT FIRST 1
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			GrandChild x
@@ -17,7 +17,7 @@ BeforeExecute
 
 SELECT FIRST 1
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			GrandChild x

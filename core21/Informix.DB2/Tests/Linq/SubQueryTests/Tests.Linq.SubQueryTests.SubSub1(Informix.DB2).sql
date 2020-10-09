@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					c_1.ParentID + 1 as ID
 				FROM
 					Child c_1
@@ -18,9 +18,9 @@ SELECT
 			c_2.ID < p1.ID
 	)
 FROM
-	(
-		SELECT
-			p2.ParentID + 1 as ID,
+	( 
+		SELECT 
+			p2.ParentID + 1 as ID, 
 			p2.ParentID
 		FROM
 			Parent p2

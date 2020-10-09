@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Doctor d
 		WHERE
 			d.PersonID = i.PersonID
-	),
-	i.PersonID,
-	i.FirstName,
-	i.LastName,
-	i.MiddleName,
-	i.Gender,
-	i.LastName || ', ' || i.FirstName,
+	), 
+	i.PersonID, 
+	i.FirstName, 
+	i.LastName, 
+	i.MiddleName, 
+	i.Gender, 
+	i.LastName || ', ' || i.FirstName, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Doctor d_1

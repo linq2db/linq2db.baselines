@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	c_1.ParentID,
-	c_1.ChildID,
+SELECT FIRST 1 
+	c_1.ParentID, 
+	c_1.ChildID, 
 	c_1.GrandChildID
 FROM
 	GrandChild p

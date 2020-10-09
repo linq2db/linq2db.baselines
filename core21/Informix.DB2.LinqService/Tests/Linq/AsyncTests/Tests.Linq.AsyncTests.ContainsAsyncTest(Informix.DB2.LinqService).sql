@@ -3,7 +3,7 @@
 
 SELECT FIRST 1
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Person t1

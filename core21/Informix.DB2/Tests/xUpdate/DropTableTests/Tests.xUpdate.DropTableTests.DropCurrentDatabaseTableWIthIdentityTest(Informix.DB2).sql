@@ -29,8 +29,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.ID,
+SELECT 
+	t.ID, 
 	t.ID1
 FROM
 	DropTableTestID t
@@ -43,8 +43,8 @@ DROP TABLE DropTableTestID
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.ID,
+SELECT 
+	t1.ID, 
 	t1.ID1
 FROM
 	DropTableTestID t1

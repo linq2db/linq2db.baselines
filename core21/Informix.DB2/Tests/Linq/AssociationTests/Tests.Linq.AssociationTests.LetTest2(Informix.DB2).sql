@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.ParentID,
+SELECT 
+	t.ParentID, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child t1
@@ -17,10 +17,10 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.ParentID,
+SELECT 
+	t.ParentID, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child t1

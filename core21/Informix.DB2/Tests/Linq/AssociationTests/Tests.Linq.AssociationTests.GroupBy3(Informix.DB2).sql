@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t1.Key_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Year(a_Types.DateTimeValue) as Key_1
 		FROM
 			Parent selectParam

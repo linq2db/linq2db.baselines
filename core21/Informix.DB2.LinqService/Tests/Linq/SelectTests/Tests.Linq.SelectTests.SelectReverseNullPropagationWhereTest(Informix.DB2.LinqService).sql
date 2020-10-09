@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
-	p.Value1,
+SELECT 
+	p.ParentID, 
+	p.Value1, 
 	p.Value1_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN (q.ParentID IS NOT NULL OR q.Value1 IS NOT NULL)
 					THEN q.ParentID
 				ELSE NULL
-			END as c1,
-			q.Value1,
-			a_Parent.Value1 as Value1_1,
+			END as c1, 
+			q.Value1, 
+			a_Parent.Value1 as Value1_1, 
 			q.ParentID
 		FROM
 			Parent q

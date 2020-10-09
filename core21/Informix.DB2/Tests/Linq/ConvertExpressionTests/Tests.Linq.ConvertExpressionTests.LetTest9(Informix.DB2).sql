@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	c_1.ParentID,
+SELECT 
+	key_data_result.ParentID, 
+	key_data_result.Value1, 
+	c_1.ParentID, 
 	c_1.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
-			t1.ParentID,
+			t1.ParentID, 
 			t1.Value1
 		FROM
-			(
-				SELECT FIRST 10
-					p.ParentID,
+			( 
+				SELECT FIRST 10 
+					p.ParentID, 
 					p.Value1
 				FROM
 					Parent p
@@ -27,8 +27,8 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 10
-	p.ParentID,
+SELECT FIRST 10 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p

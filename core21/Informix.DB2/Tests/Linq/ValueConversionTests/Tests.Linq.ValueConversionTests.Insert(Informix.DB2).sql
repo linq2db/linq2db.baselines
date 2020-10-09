@@ -48,14 +48,14 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
+SELECT FIRST 1 
+	e.Id, 
+	e.Value1, 
+	e.Value2, 
+	e.Enum, 
+	e.EnumNullable, 
+	e.EnumWithNull, 
+	e.EnumWithNullDeclarative, 
 	e.BoolValue
 FROM
 	ValueConversion e
@@ -95,14 +95,14 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
+SELECT FIRST 1 
+	e.Id, 
+	e.Value1, 
+	e.Value2, 
+	e.Enum, 
+	e.EnumNullable, 
+	e.EnumWithNull, 
+	e.EnumWithNullDeclarative, 
 	e.BoolValue
 FROM
 	ValueConversion e
@@ -154,14 +154,14 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
+SELECT FIRST 1 
+	e.Id, 
+	e.Value1, 
+	e.Value2, 
+	e.Enum, 
+	e.EnumNullable, 
+	e.EnumWithNull, 
+	e.EnumWithNullDeclarative, 
 	e.BoolValue
 FROM
 	ValueConversion e
@@ -171,7 +171,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	ValueConversion t1

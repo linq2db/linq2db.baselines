@@ -31,7 +31,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	d."Not Identifier"
 FROM
 	DynamicTable d

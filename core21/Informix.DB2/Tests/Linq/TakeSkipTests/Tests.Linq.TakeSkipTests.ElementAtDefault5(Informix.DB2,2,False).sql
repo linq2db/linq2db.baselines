@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT SKIP 2 FIRST 1
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
+SELECT SKIP 2 FIRST 1 
+	t1.FirstName, 
+	t1.PersonID, 
+	t1.LastName, 
+	t1.MiddleName, 
 	t1.Gender
 FROM
 	Person t1

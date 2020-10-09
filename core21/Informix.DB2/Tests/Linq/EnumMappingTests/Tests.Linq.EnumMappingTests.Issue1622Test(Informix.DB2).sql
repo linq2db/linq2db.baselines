@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	e.Id,
+SELECT FIRST 2 
+	e.Id, 
 	e.SomeText
 FROM
 	Issue1622Table e
@@ -41,8 +41,8 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	e.Id,
+SELECT FIRST 2 
+	e.Id, 
 	e.SomeText
 FROM
 	Issue1622Table e

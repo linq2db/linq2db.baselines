@@ -27,8 +27,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	r.BigIntValue,
+SELECT 
+	r.BigIntValue, 
 	r.IntValue
 FROM
 	LinqDataTypes r

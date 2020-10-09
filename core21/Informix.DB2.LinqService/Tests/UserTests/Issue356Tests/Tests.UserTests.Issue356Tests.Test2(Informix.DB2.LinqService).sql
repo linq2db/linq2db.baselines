@@ -1,25 +1,25 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 10
-	cp.ParentID,
+SELECT FIRST 10 
+	cp.ParentID, 
 	c_1.ChildID
 FROM
 	Parent cp
-		INNER JOIN (
-			SELECT FIRST 10
-				t3.ParentID,
+		INNER JOIN ( 
+			SELECT FIRST 10 
+				t3.ParentID, 
 				t3.ChildID
 			FROM
-				(
-					SELECT
-						t1.ParentID,
+				( 
+					SELECT 
+						t1.ParentID, 
 						t1.ChildID
 					FROM
 						Child t1
 					UNION
-					SELECT
-						t2.ParentID,
+					SELECT 
+						t2.ParentID, 
 						t2.ChildID
 					FROM
 						Child t2

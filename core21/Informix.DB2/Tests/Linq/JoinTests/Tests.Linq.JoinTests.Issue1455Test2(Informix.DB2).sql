@@ -64,15 +64,15 @@ SET     @p2 = '%C%'
 DECLARE @p3 VarChar(3) -- String
 SET     @p3 = '%C%'
 
-SELECT
-	al_1.alert,
-	al_1.alert_1,
+SELECT 
+	al_1.alert, 
+	al_1.alert_1, 
 	al_1.alert_2
 FROM
-	(
-		SELECT
-			al.AlertKey as alert,
-			al.AlertCode as alert_1,
+	( 
+		SELECT 
+			al.AlertKey as alert, 
+			al.AlertCode as alert_1, 
 			al.CreationDate as alert_2
 		FROM
 			Alert al

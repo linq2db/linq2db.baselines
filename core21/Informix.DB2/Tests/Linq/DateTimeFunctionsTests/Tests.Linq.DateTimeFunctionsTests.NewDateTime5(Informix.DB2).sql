@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Mdy(10, 1, Year(p.DateTimeValue) + 1) as c1
 		FROM
 			LinqDataTypes p

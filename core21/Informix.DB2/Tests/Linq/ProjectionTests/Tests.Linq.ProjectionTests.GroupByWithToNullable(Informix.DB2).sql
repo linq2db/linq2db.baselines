@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1000
-	a_Patient.Diagnosis,
-	a_Patient.PersonID,
+SELECT FIRST 1000 
+	a_Patient.Diagnosis, 
+	a_Patient.PersonID, 
 	Avg(selectParam.PersonID)
 FROM
 	Person selectParam

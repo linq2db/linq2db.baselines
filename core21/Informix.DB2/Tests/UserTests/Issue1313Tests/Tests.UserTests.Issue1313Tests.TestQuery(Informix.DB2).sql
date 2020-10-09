@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	row_1."Value"
 FROM
 	ValueItem row_1

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Date(t.DateTimeValue)
 FROM
 	LinqDataTypes t

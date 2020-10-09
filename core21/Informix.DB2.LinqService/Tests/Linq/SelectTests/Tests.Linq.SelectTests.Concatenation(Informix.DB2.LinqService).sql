@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p_1.ID,
+SELECT 
+	p_1.ID, 
 	p_1.FirstName_1
 FROM
-	(
-		SELECT
-			'123' || p.FirstName || '456' as FirstName,
-			p.PersonID as ID,
+	( 
+		SELECT 
+			'123' || p.FirstName || '456' as FirstName, 
+			p.PersonID as ID, 
 			p.FirstName as FirstName_1
 		FROM
 			Person p

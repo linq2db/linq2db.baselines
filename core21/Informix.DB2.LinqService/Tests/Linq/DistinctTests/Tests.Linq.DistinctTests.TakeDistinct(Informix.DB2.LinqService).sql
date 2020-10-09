@@ -4,8 +4,8 @@
 SELECT DISTINCT
 	t1.ParentID
 FROM
-	(
-		SELECT FIRST 4
+	( 
+		SELECT FIRST 4 
 			ch.ParentID
 		FROM
 			Child ch

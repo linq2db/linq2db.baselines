@@ -40,10 +40,10 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t.Id,
-	t.Name,
-	t.Age,
+SELECT FIRST 1 
+	t.Id, 
+	t.Name, 
+	t.Age, 
 	t.Gender
 FROM
 	PR_1598_Insert_Enum_Table t
@@ -75,10 +75,10 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t.Id,
-	t.Name,
-	t.Age,
+SELECT FIRST 1 
+	t.Id, 
+	t.Name, 
+	t.Age, 
 	t.Gender
 FROM
 	PR_1598_Insert_Enum_Table t

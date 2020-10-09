@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t1.PersonID,
-	t1.Gender,
-	t1.FirstName,
-	t1.LastName,
+SELECT FIRST 1 
+	t1.PersonID, 
+	t1.Gender, 
+	t1.FirstName, 
+	t1.LastName, 
 	t1.MiddleName
 FROM
 	Person t1

@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t1.event_id,
+SELECT FIRST 1 
+	t1.event_id, 
 	t1.event_description
 FROM
 	Issue1403Tests_2 t1

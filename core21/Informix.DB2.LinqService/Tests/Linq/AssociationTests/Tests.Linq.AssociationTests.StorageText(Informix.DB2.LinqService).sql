@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t1.ParentID,
-	t1.ChildID,
-	a_Parent.ParentID,
+SELECT FIRST 1 
+	t1.ParentID, 
+	t1.ChildID, 
+	a_Parent.ParentID, 
 	a_Parent.Value1
 FROM
 	Child t1

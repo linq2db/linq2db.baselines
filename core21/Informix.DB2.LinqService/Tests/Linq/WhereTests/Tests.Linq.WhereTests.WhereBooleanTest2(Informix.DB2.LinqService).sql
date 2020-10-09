@@ -233,9 +233,9 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.Id,
-	t1.BoolValue,
+SELECT 
+	t1.Id, 
+	t1.BoolValue, 
 	t1.NullableBoolValue
 FROM
 	WhereCases t1
@@ -243,9 +243,9 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -255,9 +255,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -267,9 +267,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -279,9 +279,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -291,9 +291,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -303,9 +303,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -315,9 +315,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -327,9 +327,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -339,9 +339,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -351,9 +351,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -363,9 +363,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -376,9 +376,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -388,9 +388,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -401,9 +401,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -413,9 +413,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -426,9 +426,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -438,9 +438,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -450,9 +450,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -462,9 +462,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -474,9 +474,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -486,9 +486,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -498,9 +498,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -510,9 +510,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -522,9 +522,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -534,9 +534,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -547,9 +547,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -559,9 +559,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -572,9 +572,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -584,9 +584,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -597,9 +597,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -609,9 +609,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t
@@ -622,9 +622,9 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t.BoolValue,
+SELECT 
+	t.Id, 
+	t.BoolValue, 
 	t.NullableBoolValue
 FROM
 	WhereCases t

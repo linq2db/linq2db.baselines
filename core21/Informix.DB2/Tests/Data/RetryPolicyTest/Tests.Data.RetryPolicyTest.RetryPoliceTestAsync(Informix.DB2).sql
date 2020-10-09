@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT
+SELECT 
 	1
 FROM
 	FakeClass t1

@@ -28,16 +28,16 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t.Id,
-	t."Value",
-	s.Key_1,
+SELECT 
+	t.Id, 
+	t."Value", 
+	s.Key_1, 
 	s.SecondValue
 FROM
 	SampleClass t
-		INNER JOIN (
+		INNER JOIN ( 
 			SELECT FIRST 1
-				1 as Key_1,
+				1 as Key_1, 
 				3 as SecondValue
 			FROM SYSTABLES
 		) s ON s.Key_1 = t.Id

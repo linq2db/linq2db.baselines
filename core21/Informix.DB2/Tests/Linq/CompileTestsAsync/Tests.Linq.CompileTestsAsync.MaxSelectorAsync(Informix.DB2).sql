@@ -153,7 +153,7 @@ BeforeExecute
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
-SELECT
+SELECT 
 	Max(c_1.Id)
 FROM
 	AsyncDataTable c_1

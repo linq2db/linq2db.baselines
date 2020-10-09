@@ -73,9 +73,9 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	'Id',
-	selectParam.Id,
+SELECT 
+	'Id', 
+	selectParam.Id, 
 	Sum(CASE
 		WHEN a_ActualStage.Id IS NULL
 			THEN NULL

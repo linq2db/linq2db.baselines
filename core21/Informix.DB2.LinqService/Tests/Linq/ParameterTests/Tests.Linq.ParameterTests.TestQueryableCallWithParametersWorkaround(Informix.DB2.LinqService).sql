@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.ChildID
 FROM
 	Child t1
@@ -10,8 +10,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.ChildID
 FROM
 	Child t1
@@ -19,14 +19,14 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1

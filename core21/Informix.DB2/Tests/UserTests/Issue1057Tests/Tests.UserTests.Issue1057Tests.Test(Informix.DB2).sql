@@ -82,9 +82,9 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.Id,
-	p.TargetName,
+SELECT 
+	p.Id, 
+	p.TargetName, 
 	a_ActualStage.Id
 FROM
 	"Task" p

@@ -3,20 +3,20 @@
 DECLARE @id_1 Integer(4) -- Int32
 SET     @id_1 = 1
 
-SELECT
-	t2.PersonID,
+SELECT 
+	t2.PersonID, 
 	t2.FirstName
 FROM
-	(
-		SELECT
-			p1.PersonID,
-			t1.ID,
+	( 
+		SELECT 
+			p1.PersonID, 
+			t1.ID, 
 			t1.FirstName
 		FROM
 			Person p1,
-			(
-				SELECT
-					p2.PersonID + 1 as ID,
+			( 
+				SELECT 
+					p2.PersonID + 1 as ID, 
 					p2.FirstName
 				FROM
 					Person p2

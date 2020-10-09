@@ -108,7 +108,7 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPerson t1
@@ -116,7 +116,7 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPerson p

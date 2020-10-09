@@ -11,9 +11,9 @@ CREATE TABLE Issue1192Table
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Issue1192Table t

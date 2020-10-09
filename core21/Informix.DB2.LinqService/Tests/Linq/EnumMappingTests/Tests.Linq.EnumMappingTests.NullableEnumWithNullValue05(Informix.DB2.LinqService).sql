@@ -65,8 +65,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	r.ID,
+SELECT 
+	r.ID, 
 	r.IntValue
 FROM
 	LinqDataTypes r
@@ -78,9 +78,9 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	r.ID,
-	r.IntValue,
+SELECT 
+	r.ID, 
+	r.IntValue, 
 	r.StringValue
 FROM
 	LinqDataTypes r

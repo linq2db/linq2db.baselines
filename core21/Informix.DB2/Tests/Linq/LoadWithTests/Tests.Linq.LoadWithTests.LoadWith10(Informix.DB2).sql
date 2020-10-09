@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -19,8 +19,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -30,12 +30,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -48,8 +48,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -59,12 +59,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -77,8 +77,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -88,12 +88,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -106,8 +106,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -117,12 +117,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -135,8 +135,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -146,12 +146,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -164,8 +164,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -175,12 +175,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -193,8 +193,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -204,12 +204,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -222,8 +222,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -233,12 +233,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -251,8 +251,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -262,12 +262,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -280,8 +280,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -291,12 +291,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -309,8 +309,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -320,12 +320,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -338,8 +338,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -349,12 +349,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -367,8 +367,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -378,12 +378,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -396,8 +396,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -407,12 +407,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -425,8 +425,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -436,12 +436,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -454,8 +454,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -465,12 +465,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -483,8 +483,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -494,12 +494,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -512,8 +512,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -523,12 +523,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -541,8 +541,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -552,12 +552,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -570,8 +570,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -581,12 +581,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -599,8 +599,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -610,12 +610,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -628,8 +628,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -639,12 +639,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -657,8 +657,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -668,12 +668,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -686,8 +686,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -697,12 +697,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -715,8 +715,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -726,12 +726,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -744,8 +744,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -755,12 +755,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -773,8 +773,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -784,12 +784,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -802,8 +802,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -813,12 +813,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -831,8 +831,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -842,12 +842,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -860,8 +860,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -871,12 +871,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -889,8 +889,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -900,12 +900,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -918,8 +918,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -929,12 +929,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -947,8 +947,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -958,12 +958,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -976,8 +976,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -987,12 +987,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1005,8 +1005,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1016,12 +1016,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1034,8 +1034,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1045,12 +1045,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1063,8 +1063,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1074,12 +1074,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1092,8 +1092,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1103,12 +1103,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1121,8 +1121,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1132,12 +1132,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1150,8 +1150,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1161,12 +1161,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1179,8 +1179,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1190,12 +1190,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1208,8 +1208,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1219,12 +1219,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1237,8 +1237,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1248,12 +1248,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1266,8 +1266,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1277,12 +1277,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1295,8 +1295,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1306,12 +1306,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1324,8 +1324,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1335,12 +1335,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1353,8 +1353,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1364,12 +1364,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1382,8 +1382,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1393,12 +1393,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1411,8 +1411,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1422,12 +1422,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1440,8 +1440,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1451,12 +1451,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1469,8 +1469,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1480,12 +1480,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1498,8 +1498,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1509,12 +1509,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1527,8 +1527,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1538,12 +1538,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1556,8 +1556,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1567,12 +1567,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1585,8 +1585,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1596,12 +1596,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1614,8 +1614,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1625,12 +1625,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1643,8 +1643,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1654,12 +1654,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1672,8 +1672,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1683,12 +1683,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1701,8 +1701,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1712,12 +1712,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1730,8 +1730,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1741,12 +1741,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1759,8 +1759,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1770,12 +1770,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1788,8 +1788,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1799,12 +1799,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1817,8 +1817,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1828,12 +1828,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1846,8 +1846,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1857,12 +1857,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1875,8 +1875,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1886,12 +1886,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1904,8 +1904,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1915,12 +1915,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1933,8 +1933,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1944,12 +1944,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1962,8 +1962,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -1973,12 +1973,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -1991,8 +1991,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2002,12 +2002,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2020,8 +2020,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2031,12 +2031,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2049,8 +2049,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2060,12 +2060,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2078,8 +2078,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2089,12 +2089,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2107,8 +2107,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2118,12 +2118,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2136,8 +2136,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2147,12 +2147,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2165,8 +2165,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2176,12 +2176,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2194,8 +2194,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2205,12 +2205,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2223,8 +2223,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2234,12 +2234,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2252,8 +2252,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2263,12 +2263,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2281,8 +2281,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2292,12 +2292,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2310,8 +2310,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2321,12 +2321,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2339,8 +2339,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2350,12 +2350,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2368,8 +2368,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2379,12 +2379,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2397,8 +2397,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2408,12 +2408,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2426,8 +2426,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2437,12 +2437,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2455,8 +2455,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2466,12 +2466,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2484,8 +2484,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2495,12 +2495,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2513,8 +2513,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2524,12 +2524,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2542,8 +2542,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2553,12 +2553,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2571,8 +2571,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2582,12 +2582,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2600,8 +2600,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2611,12 +2611,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2629,8 +2629,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2640,12 +2640,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2658,8 +2658,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2669,12 +2669,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2687,8 +2687,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2698,12 +2698,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2716,8 +2716,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2727,12 +2727,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2745,8 +2745,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2756,12 +2756,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2774,8 +2774,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2785,12 +2785,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2803,8 +2803,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2814,12 +2814,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2832,8 +2832,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2843,12 +2843,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2861,8 +2861,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
@@ -2872,12 +2872,12 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
+SELECT 
+	lw_Parent.ParentID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
+	( 
 		SELECT DISTINCT
 			p.ParentID
 		FROM
@@ -2890,8 +2890,8 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p

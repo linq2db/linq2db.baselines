@@ -81,7 +81,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPatient23 t1
@@ -117,7 +117,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPatient23 t1

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 5
-	t1.c1,
+SELECT FIRST 5 
+	t1.c1, 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Date(CURRENT) as c1
 		FROM
 			Parent v

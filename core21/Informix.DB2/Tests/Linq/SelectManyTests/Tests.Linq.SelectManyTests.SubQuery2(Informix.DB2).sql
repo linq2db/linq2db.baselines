@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.PersonID,
+SELECT 
+	p.PersonID, 
 	p_1.FirstName
 FROM
 	Person p,
@@ -14,8 +14,8 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.PersonID,
+SELECT 
+	p.PersonID, 
 	p_1.FirstName
 FROM
 	Person p,

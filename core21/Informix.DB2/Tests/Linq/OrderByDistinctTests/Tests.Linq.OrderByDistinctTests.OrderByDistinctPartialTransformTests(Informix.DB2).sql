@@ -482,8 +482,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT SKIP 0 FIRST 3
-	x.DuplicateData,
+SELECT SKIP 0 FIRST 3 
+	x.DuplicateData, 
 	x.OrderData2
 FROM
 	OrderByDistinctData x

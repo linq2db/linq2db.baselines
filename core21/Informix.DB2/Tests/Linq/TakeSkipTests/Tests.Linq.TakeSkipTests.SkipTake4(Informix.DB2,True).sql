@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT SKIP 2
-	t2.ParentID,
+SELECT SKIP 2 
+	t2.ParentID, 
 	t2.ChildID
 FROM
-	(
-		SELECT SKIP 1 FIRST 7
-			t1.ChildID,
+	( 
+		SELECT SKIP 1 FIRST 7 
+			t1.ChildID, 
 			t1.ParentID
 		FROM
 			Child t1

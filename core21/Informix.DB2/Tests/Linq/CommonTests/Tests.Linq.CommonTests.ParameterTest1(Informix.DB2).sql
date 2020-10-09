@@ -3,13 +3,13 @@
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
-SELECT
+SELECT 
 	p.ParentID
 FROM
 	Child p
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Parent t
@@ -24,13 +24,13 @@ BeforeExecute
 DECLARE @id Integer(4) -- Int32
 SET     @id = 2
 
-SELECT
+SELECT 
 	p.ParentID
 FROM
 	Child p
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Parent t

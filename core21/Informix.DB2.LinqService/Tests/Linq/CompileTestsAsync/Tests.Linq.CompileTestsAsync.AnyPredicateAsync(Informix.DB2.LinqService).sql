@@ -153,7 +153,7 @@ BeforeExecute
 
 SELECT FIRST 1
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			AsyncDataTable c_1

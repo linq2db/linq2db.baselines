@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(p.MoneyValue as Float) * 57.295779513082323 as c1
 		FROM
 			LinqDataTypes p

@@ -25,7 +25,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
+SELECT FIRST 2 
 	t1.ID
 FROM
 	Issue1316Tests t1

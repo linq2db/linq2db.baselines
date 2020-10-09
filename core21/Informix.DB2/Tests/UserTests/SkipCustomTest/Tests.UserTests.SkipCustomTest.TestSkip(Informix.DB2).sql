@@ -35,9 +35,9 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t.Id,
-	t.Name,
+SELECT FIRST 1 
+	t.Id, 
+	t.Name, 
 	t.Age
 FROM
 	PR_1598_SkipCustom_Table t
@@ -65,9 +65,9 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t.Id,
-	t.Name,
+SELECT FIRST 1 
+	t.Id, 
+	t.Name, 
 	t.Age
 FROM
 	PR_1598_SkipCustom_Table t

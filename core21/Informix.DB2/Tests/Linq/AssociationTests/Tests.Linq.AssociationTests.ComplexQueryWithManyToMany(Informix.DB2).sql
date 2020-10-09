@@ -5,13 +5,13 @@ SET     @id1_1 = 3
 DECLARE @Value_1 Integer(4) -- Int32
 SET     @Value_1 = 3
 
-SELECT FIRST 1
+SELECT FIRST 1 
 	t1.ChildID
 FROM
 	GrandChild t1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Parent li

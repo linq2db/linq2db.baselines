@@ -482,14 +482,14 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	c_1.Id,
-	c_1.DuplicateData,
-	c_1.OrderData1,
+SELECT 
+	c_1.Id, 
+	c_1.DuplicateData, 
+	c_1.OrderData1, 
 	c_1.OrderData2
 FROM
-	(
-		SELECT FIRST 3
+	( 
+		SELECT FIRST 3 
 			t1.Id
 		FROM
 			OrderByDistinctData t1

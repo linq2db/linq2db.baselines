@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1

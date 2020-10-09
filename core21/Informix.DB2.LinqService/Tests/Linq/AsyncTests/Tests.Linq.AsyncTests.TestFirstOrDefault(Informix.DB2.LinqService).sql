@@ -9,8 +9,8 @@ SET     @p_2 = 3
 DECLARE @param Integer(4) -- Int32
 SET     @param = 4
 
-SELECT FIRST 1
-	o.ParentID,
+SELECT FIRST 1 
+	o.ParentID, 
 	o.Value1
 FROM
 	Parent o

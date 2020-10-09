@@ -41,8 +41,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT SKIP 1 FIRST 2
-	t1.ID,
+SELECT SKIP 1 FIRST 2 
+	t1.ID, 
 	t1.Field1
 FROM
 	TestIdTrun t1
@@ -81,8 +81,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT SKIP 1 FIRST 2
-	t1.ID,
+SELECT SKIP 1 FIRST 2 
+	t1.ID, 
 	t1.Field1
 FROM
 	TestIdTrun t1

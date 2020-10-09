@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN p.MoneyValue > 0 THEN 1
 				WHEN p.MoneyValue < 0 THEN -1

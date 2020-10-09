@@ -11,7 +11,7 @@ CREATE TABLE "User"
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	u.city
 FROM
 	"User" u
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	u.street
 FROM
 	"User" u

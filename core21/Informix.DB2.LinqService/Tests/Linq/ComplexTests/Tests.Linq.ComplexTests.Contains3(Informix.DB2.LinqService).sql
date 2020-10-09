@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.ParentID,
-	t2.gc,
-	t2.ChildID,
+SELECT 
+	p.ParentID, 
+	t2.gc, 
+	t2.ChildID, 
 	t2.GrandChildID
 FROM
 	Child ch
 		INNER JOIN Parent p ON ch.ParentID = p.ParentID
-		LEFT JOIN (
-			SELECT
-				gc_1.ParentID as gc,
-				gc_1.ChildID,
+		LEFT JOIN ( 
+			SELECT 
+				gc_1.ParentID as gc, 
+				gc_1.ChildID, 
 				gc_1.GrandChildID
 			FROM
 				GrandChild gc_1
-					INNER JOIN (
-						SELECT
+					INNER JOIN ( 
+						SELECT 
 							Max(t1.GrandChildID) as c1
 						FROM
 							GrandChild t1

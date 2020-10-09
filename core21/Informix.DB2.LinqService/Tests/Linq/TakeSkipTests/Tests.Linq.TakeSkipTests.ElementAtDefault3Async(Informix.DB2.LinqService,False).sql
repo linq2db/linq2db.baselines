@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT SKIP 3 FIRST 1
-	p.ParentID,
+SELECT SKIP 3 FIRST 1 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p

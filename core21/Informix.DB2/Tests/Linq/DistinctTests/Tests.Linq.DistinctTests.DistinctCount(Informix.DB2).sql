@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
+	( 
 		SELECT DISTINCT
-			p.ParentID,
+			p.ParentID, 
 			p.Value1
 		FROM
 			Parent p

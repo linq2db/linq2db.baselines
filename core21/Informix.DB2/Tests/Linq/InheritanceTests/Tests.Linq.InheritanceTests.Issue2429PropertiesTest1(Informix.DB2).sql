@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	x."Value",
+SELECT FIRST 1 
+	x."Value", 
 	x.Id
 FROM
 	BaseTable x
@@ -41,8 +41,8 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	x."Value",
+SELECT FIRST 1 
+	x."Value", 
 	x.Id
 FROM
 	BaseTable x

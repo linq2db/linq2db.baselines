@@ -3,7 +3,7 @@
 
 SELECT FIRST 1
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1
@@ -17,7 +17,7 @@ BeforeExecute
 
 SELECT FIRST 1
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_1

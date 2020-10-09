@@ -62,10 +62,10 @@ BeforeExecute
 DECLARE @FirstName_1 VarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
-SELECT FIRST 1
-	x.ID,
-	x.FirstName,
-	x.LastName,
+SELECT FIRST 1 
+	x.ID, 
+	x.FirstName, 
+	x.LastName, 
 	x.MiddleName
 FROM
 	TestInsertOrReplaceTable x
@@ -97,10 +97,10 @@ BeforeExecute
 DECLARE @FirstName_1 VarChar(27) -- String
 SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
 
-SELECT FIRST 1
-	x.ID,
-	x.FirstName,
-	x.LastName,
+SELECT FIRST 1 
+	x.ID, 
+	x.FirstName, 
+	x.LastName, 
 	x.MiddleName
 FROM
 	TestInsertOrReplaceTable x
