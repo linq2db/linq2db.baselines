@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[t1].[ParentID]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[ch].[ParentID]
 		FROM
 			[Child] [ch]

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	STDEV([c_1].[ChildID]),
-	STDEV(ALL [c_1].[ChildID]),
+SELECT 
+	STDEV([c_1].[ChildID]), 
+	STDEV(ALL [c_1].[ChildID]), 
 	STDEV(DISTINCT [c_1].[ChildID])
 FROM
 	[Parent] [p]
@@ -14,7 +14,7 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	STDEV([t1].[ParentID])
 FROM
 	[Child] [t1]
@@ -22,7 +22,7 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	STDEV(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
@@ -30,7 +30,7 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	STDEV(DISTINCT [t1].[ParentID])
 FROM
 	[Child] [t1]

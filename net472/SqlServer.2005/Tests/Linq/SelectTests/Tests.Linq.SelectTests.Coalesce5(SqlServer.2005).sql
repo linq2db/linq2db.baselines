@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Coalesce((
-		SELECT
+		SELECT 
 			Max([c_1].[ChildID])
 		FROM
 			[Child] [c_1]

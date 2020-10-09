@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Max([t].[PersonID])
 FROM
 	[Person] [t]
@@ -39,11 +39,11 @@ SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 4
 
-SELECT TOP (@take)
-	[p2].[PersonID],
-	[p2].[Gender],
-	[p2].[FirstName],
-	[p2].[MiddleName],
+SELECT TOP (@take) 
+	[p2].[PersonID], 
+	[p2].[Gender], 
+	[p2].[FirstName], 
+	[p2].[MiddleName], 
 	[p2].[LastName]
 FROM
 	[Person] [p2]

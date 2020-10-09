@@ -3,13 +3,13 @@
 DECLARE @take Int -- Int32
 SET     @take = 3
 
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1],
-	(
-		SELECT TOP (@take)
+	( 
+		SELECT TOP (@take) 
 			[p].[ParentID]
 		FROM
 			[GrandChild] [p]
@@ -24,18 +24,18 @@ SET     @skip = 12
 DECLARE @take Int -- Int32
 SET     @take = 3
 
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1],
-	(
-		SELECT
+	( 
+		SELECT 
 			[t1].[ParentID]
 		FROM
-			(
-				SELECT
-					[p].[ParentID],
+			( 
+				SELECT 
+					[p].[ParentID], 
 					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 				FROM
 					[GrandChild] [p]

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	N'test1'
 
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	N'test2'
 

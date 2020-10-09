@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[entity].[ID],
+SELECT 
+	[entity].[ID], 
 	[entity].[BigIntValue]
 FROM
 	[LinqDataTypes] [entity]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	DateAdd(week, [t].[SmallIntValue], [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

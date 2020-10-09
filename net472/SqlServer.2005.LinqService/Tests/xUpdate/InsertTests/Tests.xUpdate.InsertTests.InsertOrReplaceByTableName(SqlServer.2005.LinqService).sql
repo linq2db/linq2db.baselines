@@ -86,7 +86,7 @@ COMMIT
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient22] [t1]
@@ -162,7 +162,7 @@ COMMIT
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient22] [t1]

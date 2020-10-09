@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Degrees([p].[MoneyValue])) as [c1]
 		FROM
 			[LinqDataTypes] [p]

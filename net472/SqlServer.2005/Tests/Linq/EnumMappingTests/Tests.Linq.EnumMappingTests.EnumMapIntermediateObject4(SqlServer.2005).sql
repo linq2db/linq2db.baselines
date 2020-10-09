@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[LinqDataTypes] [r]

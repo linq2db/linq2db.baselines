@@ -49,9 +49,9 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
+SELECT TOP (@take) 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Insert_Table_Cache] [t]
@@ -97,9 +97,9 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
+SELECT TOP (@take) 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Insert_Table_Cache] [t]

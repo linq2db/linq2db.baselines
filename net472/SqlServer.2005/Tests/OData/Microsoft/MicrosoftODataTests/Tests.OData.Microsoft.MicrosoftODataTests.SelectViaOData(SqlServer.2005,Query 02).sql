@@ -25,15 +25,15 @@ SELECT N'N2',4,N'Engineer'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	N'Title',
-	[selectParam].[Title],
+SELECT 
+	N'Title', 
+	[selectParam].[Title], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
-			(
-				SELECT DISTINCT
+			( 
+				SELECT DISTINCT 
 					[$it].[YearsExperience]
 				FROM
 					[odata_person] [$it]

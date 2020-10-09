@@ -28,8 +28,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[r].[BigIntValue],
+SELECT 
+	[r].[BigIntValue], 
 	[r].[IntValue]
 FROM
 	[LinqDataTypes] [r]

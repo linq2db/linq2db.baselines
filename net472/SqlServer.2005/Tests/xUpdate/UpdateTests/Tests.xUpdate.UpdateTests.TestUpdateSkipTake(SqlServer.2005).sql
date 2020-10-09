@@ -199,13 +199,13 @@ UPDATE
 SET
 	[t2].[Value1] = 1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[t1].[Value1]
 		FROM
-			(
-				SELECT
-					[x].[Value1],
+			( 
+				SELECT 
+					[x].[Value1], 
 					ROW_NUMBER() OVER (ORDER BY [x].[ParentID] DESC) as [RN]
 				FROM
 					[Parent] [x]
@@ -221,8 +221,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[p].[ParentID],
+SELECT TOP (@take) 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

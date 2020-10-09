@@ -45,7 +45,7 @@ BeforeExecute
 DECLARE @testedList NVarChar(200) -- String
 SET     @testedList = N'[{"Value":"Value1"}]'
 
-SELECT
+SELECT 
 	[t].[Id]
 FROM
 	[ValueConversion] [t]
@@ -61,14 +61,14 @@ SET     @Value2_1 = N'[{"Value":"Value1"}]'
 DECLARE @Id_1 Int -- Int32
 SET     @Id_1 = 1
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
-	[t].[Enum],
-	[t].[EnumNullable],
-	[t].[EnumWithNull],
-	[t].[EnumWithNullDeclarative],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
+	[t].[Value2], 
+	[t].[Enum], 
+	[t].[EnumNullable], 
+	[t].[EnumWithNull], 
+	[t].[EnumWithNullDeclarative], 
 	[t].[BoolValue]
 FROM
 	[ValueConversion] [t]

@@ -24,8 +24,8 @@ CREATE TABLE [Books]
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[author].[Id],
+SELECT 
+	[author].[Id], 
 	[author].[Name]
 FROM
 	[Authors] [author]

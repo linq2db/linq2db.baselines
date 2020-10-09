@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Cos(Convert(Float, [p].[MoneyValue]) / 15) * 15) as [c1]
 		FROM
 			[LinqDataTypes] [p]

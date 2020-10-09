@@ -25,9 +25,9 @@ SELECT N'N2',4,N'Engineer'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	N'Title',
-	[selectParam].[Title],
+SELECT 
+	N'Title', 
+	[selectParam].[Title], 
 	Count(*)
 FROM
 	[odata_person] [selectParam]

@@ -43,14 +43,14 @@ SELECT 10,NULL,NULL,N'Value1','Value2','Value2','Value2','N'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[Id],
-	[t1].[Value1],
-	[t1].[Value2],
-	[t1].[Enum],
-	[t1].[EnumNullable],
-	[t1].[EnumWithNull],
-	[t1].[EnumWithNullDeclarative],
+SELECT 
+	[t1].[Id], 
+	[t1].[Value1], 
+	[t1].[Value2], 
+	[t1].[Enum], 
+	[t1].[EnumNullable], 
+	[t1].[EnumWithNull], 
+	[t1].[EnumWithNullDeclarative], 
 	[t1].[BoolValue]
 FROM
 	[ValueConversion] [t1]
@@ -58,9 +58,9 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
 	[t].[Value2]
 FROM
 	[ValueConversion] [t]
@@ -68,9 +68,9 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
 	[t].[Value2]
 FROM
 	[ValueConversion] [t]
@@ -78,16 +78,16 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
 	[t].[Value2]
 FROM
 	[ValueConversion] [t]
 UNION ALL
-SELECT
-	[t_1].[Id],
-	[t_1].[Value1],
+SELECT 
+	[t_1].[Id], 
+	[t_1].[Value1], 
 	[t_1].[Value2]
 FROM
 	[ValueConversion] [t_1]
@@ -99,17 +99,17 @@ SET     @skip = 1
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	[t1].[Value2]
 FROM
-	(
-		SELECT
-			[q].[Value2],
+	( 
+		SELECT 
+			[q].[Value2], 
 			ROW_NUMBER() OVER (ORDER BY [q].[Id]) as [RN]
 		FROM
-			(
-				SELECT
-					[t].[Id],
+			( 
+				SELECT 
+					[t].[Id], 
 					[t].[Value2]
 				FROM
 					[ValueConversion] [t]

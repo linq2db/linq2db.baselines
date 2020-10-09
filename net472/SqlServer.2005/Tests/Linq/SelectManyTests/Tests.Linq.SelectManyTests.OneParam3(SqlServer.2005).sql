@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[c_1].[ParentID],
-	[c_1].[ChildID],
+SELECT 
+	[c_1].[ParentID], 
+	[c_1].[ChildID], 
 	[c_1].[GrandChildID]
 FROM
 	[Child] [t]

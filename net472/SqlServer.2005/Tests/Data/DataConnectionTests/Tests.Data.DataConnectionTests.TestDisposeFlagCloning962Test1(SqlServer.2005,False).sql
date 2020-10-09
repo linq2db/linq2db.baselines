@@ -53,11 +53,11 @@ SELECT N'Prod 6',1,N'q 6'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[lw_Category].[CategoryID],
-	[detail].[ProductID],
-	[detail].[ProductName],
-	[detail].[CategoryID],
+SELECT 
+	[lw_Category].[CategoryID], 
+	[detail].[ProductID], 
+	[detail].[ProductName], 
+	[detail].[CategoryID], 
 	[detail].[QuantityPerUnit]
 FROM
 	[Categories] [lw_Category]
@@ -66,9 +66,9 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[CategoryID],
-	[t1].[CategoryName],
+SELECT 
+	[t1].[CategoryID], 
+	[t1].[CategoryName], 
 	[t1].[Description]
 FROM
 	[Categories] [t1]

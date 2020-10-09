@@ -10,9 +10,9 @@ CREATE TABLE [Issue1982Table]
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Issue1982Table] [_]

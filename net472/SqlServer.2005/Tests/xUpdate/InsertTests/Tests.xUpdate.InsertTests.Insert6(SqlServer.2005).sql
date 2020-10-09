@@ -15,8 +15,8 @@ INSERT INTO [Parent]
 	[ParentID],
 	[Value1]
 )
-SELECT
-	[c_1].[ParentID] + 1000,
+SELECT 
+	[c_1].[ParentID] + 1000, 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]
@@ -26,7 +26,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [p]

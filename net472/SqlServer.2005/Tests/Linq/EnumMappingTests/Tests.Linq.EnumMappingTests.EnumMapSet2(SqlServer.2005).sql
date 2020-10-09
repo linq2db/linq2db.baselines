@@ -42,7 +42,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]

@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[PersonID],
-	[t1].[FirstName],
+SELECT 
+	[t1].[PersonID], 
+	[t1].[FirstName], 
 	[p3].[LastName]
 FROM
-	(
-		SELECT
-			[p].[PersonID],
-			[p2].[PersonID] as [PersonID_1],
-			[p].[LastName],
+	( 
+		SELECT 
+			[p].[PersonID], 
+			[p2].[PersonID] as [PersonID_1], 
+			[p].[LastName], 
 			[p2].[FirstName]
 		FROM
 			[Person] [p],

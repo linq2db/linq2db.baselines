@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Right([p].[FirstName], 3)
 FROM
 	[Person] [p]

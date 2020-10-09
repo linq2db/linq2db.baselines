@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[DoubleNullable]
 FROM
 	[CreateTableTypes] [t1]

@@ -3,7 +3,7 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	DB_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	DB_NAME()
 FROM
 	[LinqDataTypes] [_]

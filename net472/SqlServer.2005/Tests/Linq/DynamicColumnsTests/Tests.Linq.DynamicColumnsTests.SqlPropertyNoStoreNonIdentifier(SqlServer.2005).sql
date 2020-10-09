@@ -23,7 +23,7 @@ SELECT 77,0
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[d].[Not Identifier]
 FROM
 	[DynamicTable] [d]

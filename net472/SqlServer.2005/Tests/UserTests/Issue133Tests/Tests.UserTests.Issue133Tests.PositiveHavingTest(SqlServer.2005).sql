@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER(),
+SELECT 
+	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER(), 
 	Sum([_].[ParentID])
 FROM
 	[Child] [_]

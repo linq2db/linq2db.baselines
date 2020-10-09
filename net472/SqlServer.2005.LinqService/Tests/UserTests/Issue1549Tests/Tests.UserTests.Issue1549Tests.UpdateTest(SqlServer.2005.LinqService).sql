@@ -77,7 +77,7 @@ UPDATE
 	[t1]
 SET
 	[t1].[DevReadingTypeId] = (
-		SELECT TOP (@take)
+		SELECT TOP (@take) 
 			[w].[Id]
 		FROM
 			[billing_DevReadingType] [w]
@@ -85,7 +85,7 @@ SET
 			[w].[Name] = [t1].[ReadingTypeName] AND [w].[DevTypeId] = [t1].[Devtypeid]
 	),
 	[t1].[Responsibility] = (
-		SELECT TOP (@take_1)
+		SELECT TOP (@take_1) 
 			[w_1].[Responsibility]
 		FROM
 			[billing_DevReadingType] [w_1]

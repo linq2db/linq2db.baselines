@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[t1].[ParentID]
 FROM
 	[Child] [t1]
@@ -13,8 +13,8 @@ BeforeExecute
 DECLARE @ParentID_1 Int -- Int32
 SET     @ParentID_1 = 1
 
-SELECT
-	[keyParam].[ParentID],
+SELECT 
+	[keyParam].[ParentID], 
 	[keyParam].[ChildID]
 FROM
 	[Child] [keyParam]
