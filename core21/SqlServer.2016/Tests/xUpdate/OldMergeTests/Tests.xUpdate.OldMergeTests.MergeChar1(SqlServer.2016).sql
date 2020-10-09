@@ -17,7 +17,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @id_1 Int -- Int32
-SET     @id_1 = 36089
+SET     @id_1 = 36046
 
 SELECT
 	[t].[ID],
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @id_1 Int -- Int32
-SET     @id_1 = 36089
+SET     @id_1 = 36046
 
 MERGE INTO [AllTypes] [Target]
 USING (
@@ -73,7 +73,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @id Int -- Int32
-SET     @id = 36089
+SET     @id = 36046
 
 DELETE [t1]
 FROM
