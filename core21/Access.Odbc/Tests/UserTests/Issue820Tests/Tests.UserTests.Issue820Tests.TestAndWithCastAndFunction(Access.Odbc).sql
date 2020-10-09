@@ -19,7 +19,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	(? IS NULL AND [_].[SmallIntValue] IS NULL OR ? = [_].[SmallIntValue])
+	(? = [_].[SmallIntValue] OR ? IS NULL AND [_].[SmallIntValue] IS NULL)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

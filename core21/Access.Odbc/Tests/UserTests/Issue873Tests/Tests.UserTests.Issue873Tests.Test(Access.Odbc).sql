@@ -61,9 +61,9 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[f].[Label],
-	[f].[SubSum],
 	[f].[c2],
+	[f].[SubSum],
+	[f].[c2_1],
 	[f].[Count_1]
 FROM
 	(
@@ -76,9 +76,9 @@ FROM
 					[Child] [c_3]
 						LEFT JOIN [Parent] [a_Parent_2] ON ([c_3].[ParentID] = [a_Parent_2].[ParentID])
 				WHERE
-					([a_Parent_2].[ParentID] = [e].[ParentID] AND ([a_Parent_2].[Value1] IS NULL AND [e].[Value1] IS NULL OR [a_Parent_2].[Value1] = [e].[Value1]))
+					([a_Parent_2].[ParentID] = [e].[ParentID] AND ([a_Parent_2].[Value1] = [e].[Value1] OR [a_Parent_2].[Value1] IS NULL AND [e].[Value1] IS NULL))
 			) as [Sum_1],
-			Iif([e].[Value1] IS NULL, 0, [e].[Value1]) as [Label],
+			Iif([e].[Value1] IS NULL, 0, [e].[Value1]) as [c2],
 			(
 				SELECT
 					Sum([c_1].[ChildID])
@@ -86,7 +86,7 @@ FROM
 					[Child] [c_1]
 						LEFT JOIN [Parent] [a_Parent] ON ([c_1].[ParentID] = [a_Parent].[ParentID])
 				WHERE
-					([a_Parent].[ParentID] = [e].[ParentID] AND ([a_Parent].[Value1] IS NULL AND [e].[Value1] IS NULL OR [a_Parent].[Value1] = [e].[Value1]))
+					([a_Parent].[ParentID] = [e].[ParentID] AND ([a_Parent].[Value1] = [e].[Value1] OR [a_Parent].[Value1] IS NULL AND [e].[Value1] IS NULL))
 			) as [SubSum],
 			EXISTS(
 				SELECT
@@ -95,8 +95,8 @@ FROM
 					[Child] [c_2]
 						LEFT JOIN [Parent] [a_Parent_1] ON ([c_2].[ParentID] = [a_Parent_1].[ParentID])
 				WHERE
-					([a_Parent_1].[ParentID] = [e].[ParentID] AND ([a_Parent_1].[Value1] IS NULL AND [e].[Value1] IS NULL OR [a_Parent_1].[Value1] = [e].[Value1]))
-			) as [c2],
+					([a_Parent_1].[ParentID] = [e].[ParentID] AND ([a_Parent_1].[Value1] = [e].[Value1] OR [a_Parent_1].[Value1] IS NULL AND [e].[Value1] IS NULL))
+			) as [c2_1],
 			[t1].[Count_1]
 		FROM
 			[Parent] [e]
@@ -111,7 +111,7 @@ FROM
 					GROUP BY
 						[a_Parent_3].[ParentID],
 						[a_Parent_3].[Value1]
-				) [t1] ON (([t1].[ParentID] = [e].[ParentID] AND ([t1].[Value1] IS NULL AND [e].[Value1] IS NULL OR [t1].[Value1] = [e].[Value1])))
+				) [t1] ON (([t1].[ParentID] = [e].[ParentID] AND ([t1].[Value1] = [e].[Value1] OR [t1].[Value1] IS NULL AND [e].[Value1] IS NULL)))
 	) [f]
 WHERE
 	[f].[c1] LIKE '%1%' AND [f].[Sum_1] > 0

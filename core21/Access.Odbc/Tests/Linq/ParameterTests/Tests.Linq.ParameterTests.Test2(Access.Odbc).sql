@@ -2,8 +2,8 @@
 -- Access.Odbc AccessODBC
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
-DECLARE @id1 Int -- Int32
-SET     @id1 = 1
+DECLARE @id1_1 Int -- Int32
+SET     @id1_1 = 1
 DECLARE @id2 Int -- Int32
 SET     @id2 = 10000
 
@@ -21,8 +21,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @id1 Int -- Int32
 SET     @id1 = 2
-DECLARE @id1 Int -- Int32
-SET     @id1 = 2
+DECLARE @id1_1 Int -- Int32
+SET     @id1_1 = 2
 DECLARE @id2 Int -- Int32
 SET     @id2 = 10000
 
