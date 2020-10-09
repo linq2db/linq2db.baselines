@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	c_1."ParentID",
+SELECT 
+	c_1."ParentID", 
 	c_1."Value1"
 FROM
 	"Child" cp

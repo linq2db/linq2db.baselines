@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	Sum(t1."ChildID"),
-	Min(t1."ChildID"),
-	Max(t1."ChildID"),
-	Avg(t1."ChildID"),
+SELECT 
+	Sum(t1."ChildID"), 
+	Min(t1."ChildID"), 
+	Max(t1."ChildID"), 
+	Avg(t1."ChildID"), 
 	Count(*)
 FROM
 	"Child" t1

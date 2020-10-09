@@ -60,8 +60,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
+SELECT 
+	t1."Id", 
 	t1."Field1"
 FROM
 	"Issue1373Tests" t1

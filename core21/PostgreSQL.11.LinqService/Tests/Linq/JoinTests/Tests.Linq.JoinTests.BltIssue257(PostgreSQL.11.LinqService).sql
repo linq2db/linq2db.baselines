@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Key_1",
+SELECT 
+	t1."Key_1", 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast("selectParam"."DateTimeValue" as Date) as "Key_1"
 		FROM
 			"LinqDataTypes" "selectParam"

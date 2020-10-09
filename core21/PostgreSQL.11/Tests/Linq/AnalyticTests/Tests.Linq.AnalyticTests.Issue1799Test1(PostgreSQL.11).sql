@@ -31,16 +31,16 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 10
 
-SELECT
-	q."User_1",
-	p."ProcessName",
-	u."UserGroups",
+SELECT 
+	q."User_1", 
+	p."ProcessName", 
+	u."UserGroups", 
 	Sum(q."Diff")
 FROM
-	(
-		SELECT
-			EXTRACT(EPOCH FROM (x."EventTime"::timestamp - LAG(x."EventTime") OVER(PARTITION BY x."EventUser", x."ProcessID" ORDER BY x."EventTime")::timestamp)) / 60 as "Diff",
-			x."EventUser" as "User_1",
+	( 
+		SELECT 
+			EXTRACT(EPOCH FROM (x."EventTime"::timestamp - LAG(x."EventTime") OVER(PARTITION BY x."EventUser", x."ProcessID" ORDER BY x."EventTime")::timestamp)) / 60 as "Diff", 
+			x."EventUser" as "User_1", 
 			x."ProcessID" as "Proc"
 		FROM
 			"Issue1799Table1" x

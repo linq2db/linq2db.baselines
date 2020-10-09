@@ -148,16 +148,16 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Key_1",
-	ARRAY_AGG(ALL t1.v ORDER BY t1."Id"),
-	ARRAY_AGG(t1.v ORDER BY t1.v, t1."Id" DESC),
+SELECT 
+	t1."Key_1", 
+	ARRAY_AGG(ALL t1.v ORDER BY t1."Id"), 
+	ARRAY_AGG(t1.v ORDER BY t1.v, t1."Id" DESC), 
 	ARRAY_AGG(t1.v)
 FROM
-	(
-		SELECT
-			"selectParam"."Id" / 3 as "Key_1",
-			"selectParam"."Id",
+	( 
+		SELECT 
+			"selectParam"."Id" / 3 as "Key_1", 
+			"selectParam"."Id", 
 			v.* as v
 		FROM
 			"SampleClass" "selectParam"
@@ -169,7 +169,7 @@ GROUP BY
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	ARRAY_AGG(v.*)
 FROM
 	"SampleClass" t
@@ -178,7 +178,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	ARRAY_AGG(DISTINCT v.*)
 FROM
 	"SampleClass" t
@@ -187,7 +187,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	ARRAY_AGG(v.* ORDER BY v.*)
 FROM
 	"SampleClass" t

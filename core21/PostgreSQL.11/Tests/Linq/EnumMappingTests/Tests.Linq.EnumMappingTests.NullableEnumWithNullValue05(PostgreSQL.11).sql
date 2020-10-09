@@ -65,8 +65,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	r."ID",
+SELECT 
+	r."ID", 
 	r."IntValue"
 FROM
 	"LinqDataTypes" r
@@ -78,9 +78,9 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	r."ID",
-	r."IntValue",
+SELECT 
+	r."ID", 
+	r."IntValue", 
 	r."StringValue"
 FROM
 	"LinqDataTypes" r

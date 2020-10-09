@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	e."ID",
+SELECT 
+	e."ID", 
 	t3."SmallIntValue"
 FROM
-	(
-		SELECT DISTINCT
-			t1."ID",
+	( 
+		SELECT DISTINCT 
+			t1."ID", 
 			t1."SmallIntValue"
 		FROM
 			"LinqDataTypes" t1
 	) e
-		LEFT JOIN (
-			SELECT DISTINCT
-				t2."ID",
+		LEFT JOIN ( 
+			SELECT DISTINCT 
+				t2."ID", 
 				t2."SmallIntValue"
 			FROM
 				"LinqDataTypes" t2

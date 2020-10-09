@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN p."MoneyValue" > 5.1 THEN p."MoneyValue"
 				ELSE 5.1

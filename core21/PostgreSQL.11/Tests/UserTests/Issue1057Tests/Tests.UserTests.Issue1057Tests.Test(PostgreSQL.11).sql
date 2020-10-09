@@ -82,9 +82,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	p."Id",
-	p."TargetName",
+SELECT 
+	p."Id", 
+	p."TargetName", 
 	"a_ActualStage"."Id"
 FROM
 	"Task" p

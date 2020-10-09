@@ -20,13 +20,13 @@ CREATE TABLE "Relationship1711"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t."Id"
 FROM
 	"Entity1711" t
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Relationship1711" r

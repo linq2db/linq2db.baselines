@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t1."Key_1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Coalesce("selectParam"."Value1", c_1."ChildID") as "Key_1"
 		FROM
 			"Parent" "selectParam"

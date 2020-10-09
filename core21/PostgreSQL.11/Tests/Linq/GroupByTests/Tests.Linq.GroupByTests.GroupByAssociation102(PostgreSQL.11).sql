@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	g_1."Value1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					"GrandChild" "keyParam"
@@ -15,7 +15,7 @@ FROM
 				WHERE
 					"a_Parent_1"."ParentID" = "a_Parent"."ParentID" AND
 					"keyParam"."ChildID" >= 20
-			) as ex,
+			) as ex, 
 			"a_Parent_1"."Value1"
 		FROM
 			"GrandChild" t1

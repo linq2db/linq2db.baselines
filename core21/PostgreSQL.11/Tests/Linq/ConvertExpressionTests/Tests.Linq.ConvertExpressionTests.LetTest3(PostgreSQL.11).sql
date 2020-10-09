@@ -3,12 +3,12 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	t1."ParentID"
 FROM
 	"Parent" p_1
-		LEFT JOIN LATERAL (
-			SELECT
+		LEFT JOIN LATERAL ( 
+			SELECT 
 				p."ParentID"
 			FROM
 				"Child" p

@@ -69,7 +69,7 @@ SET     @id = 100500
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	t1."SmallIntValue"
 FROM
 	"LinqDataTypes" t1

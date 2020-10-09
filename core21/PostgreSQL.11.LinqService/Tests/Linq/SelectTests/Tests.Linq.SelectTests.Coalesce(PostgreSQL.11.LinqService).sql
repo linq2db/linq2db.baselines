@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	p."PersonID",
-	Coalesce(p."FirstName", 'None'),
+SELECT 
+	p."PersonID", 
+	Coalesce(p."FirstName", 'None'), 
 	Coalesce(p."MiddleName", 'None')
 FROM
 	"Person" p

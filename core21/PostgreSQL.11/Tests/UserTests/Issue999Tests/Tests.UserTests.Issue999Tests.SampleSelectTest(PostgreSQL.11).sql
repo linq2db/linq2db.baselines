@@ -11,7 +11,7 @@ CREATE TABLE "User"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	u.city
 FROM
 	"User" u
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	u.street
 FROM
 	"User" u

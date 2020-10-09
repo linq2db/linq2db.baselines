@@ -5,7 +5,7 @@ UPDATE
 	"LinqDataTypes"
 SET
 	"BoolValue" = (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Parent" x
@@ -13,9 +13,9 @@ SET
 			t1."ID" = x."ParentID" AND NOT (x."Value1" IS NOT NULL AND x."Value1" = 1)
 	))
 FROM
-	(
-		SELECT DISTINCT
-			"a_Table1"."BoolValue",
+	( 
+		SELECT DISTINCT 
+			"a_Table1"."BoolValue", 
 			"a_Table1"."ID"
 		FROM
 			"Parent" x_1

@@ -7,31 +7,31 @@ SET     @take_2 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 5000
 
-SELECT
-	t."ParentID",
+SELECT 
+	t."ParentID", 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" c_1
 		WHERE
 			c_1."ParentID" = t."ParentID" AND c_1."ChildID" > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"Child" c_2
 		WHERE
 			c_2."ParentID" = t."ParentID" AND c_2."ChildID" > -100
-	),
-	t1."First1",
-	t2."ParentID",
+	), 
+	t1."First1", 
+	t2."ParentID", 
 	t2."ChildID"
 FROM
 	"Parent" t
-		LEFT JOIN LATERAL (
-			SELECT
+		LEFT JOIN LATERAL ( 
+			SELECT 
 				c_3."ParentID" as "First1"
 			FROM
 				"Child" c_3
@@ -40,9 +40,9 @@ FROM
 				c_3."ParentID" > 0
 			LIMIT :take_1
 		) t1 ON 1=1
-		LEFT JOIN LATERAL (
-			SELECT
-				c_4."ParentID",
+		LEFT JOIN LATERAL ( 
+			SELECT 
+				c_4."ParentID", 
 				c_4."ChildID"
 			FROM
 				"Child" c_4

@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	child_1."ParentID",
+SELECT 
+	child_1."ParentID", 
 	child_1."ChildID"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			ch."ChildID"
 		FROM
 			"GrandChild" g_1
 				INNER JOIN "Child" ch ON g_1."ChildID" = ch."ChildID"
 		UNION
-		SELECT
+		SELECT 
 			ch_1."ChildID"
 		FROM
 			"Child" ch_1

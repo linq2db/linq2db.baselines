@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	"keyParam"."ParentID",
+SELECT 
+	"keyParam"."ParentID", 
 	"keyParam"."ChildID"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			t1."ParentID"
 		FROM
 			"Child" t1

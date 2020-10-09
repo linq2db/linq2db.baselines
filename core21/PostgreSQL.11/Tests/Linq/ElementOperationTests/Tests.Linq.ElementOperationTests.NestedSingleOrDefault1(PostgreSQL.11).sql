@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t1."ParentID"
 FROM
 	"Parent" p
-		LEFT JOIN LATERAL (
-			SELECT DISTINCT
+		LEFT JOIN LATERAL ( 
+			SELECT DISTINCT 
 				c_1."ParentID"
 			FROM
 				"Child" c_1

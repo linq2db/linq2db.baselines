@@ -1,44 +1,44 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	child_1."ChildID",
-	child_1."ParentID",
-	child_1."CountChildren2",
-	child_1.c1,
-	child_1.c2,
+SELECT 
+	child_1."ChildID", 
+	child_1."ParentID", 
+	child_1."CountChildren2", 
+	child_1.c1, 
+	child_1.c2, 
 	child_1."AllChildrenMin"
 FROM
-	(
-		SELECT
-			c_1."ParentID",
-			c_1."ChildID",
+	( 
+		SELECT 
+			c_1."ParentID", 
+			c_1."ChildID", 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					"Child" c2_1
 				WHERE
 					c2_1."ParentID" = c_1."ParentID"
-			) as "CountChildren2",
+			) as "CountChildren2", 
 			EXISTS(
-				SELECT
+				SELECT 
 					*
 				FROM
 					"Child" c2_2
 				WHERE
 					c2_2."ParentID" = c_1."ParentID"
-			) as c1,
+			) as c1, 
 			(NOT EXISTS(
-				SELECT
+				SELECT 
 					*
 				FROM
 					"Child" c2_3
 				WHERE
 					c2_3."ParentID" <> c_1."ParentID"
-			)) as c2,
+			)) as c2, 
 			(
-				SELECT
+				SELECT 
 					Min(c2_4."ChildID")
 				FROM
 					"Child" c2_4

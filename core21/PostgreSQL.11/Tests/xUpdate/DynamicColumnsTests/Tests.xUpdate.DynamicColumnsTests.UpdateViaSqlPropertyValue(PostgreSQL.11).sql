@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Child" c_1
@@ -57,7 +57,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Child" c_1

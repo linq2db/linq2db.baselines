@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	ch."ParentID",
-	ch."ChildID",
-	"a_Parent"."ParentID",
+SELECT 
+	ch."ParentID", 
+	ch."ChildID", 
+	"a_Parent"."ParentID", 
 	"a_Parent"."Value1"
 FROM
 	"Child" ch

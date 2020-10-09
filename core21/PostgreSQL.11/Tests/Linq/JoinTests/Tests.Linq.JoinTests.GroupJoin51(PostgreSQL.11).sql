@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	gjd_ch."ParentID",
+SELECT 
+	key_data_result."ParentID", 
+	key_data_result."Value1", 
+	gjd_ch."ParentID", 
 	gjd_ch."ChildID"
 FROM
-	(
-		SELECT DISTINCT
-			p."ParentID",
+	( 
+		SELECT DISTINCT 
+			p."ParentID", 
 			p."Value1"
 		FROM
 			"Parent" p
@@ -23,16 +23,16 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	p."ParentID",
-	p."Value1",
-	t1."ParentID",
+SELECT 
+	p."ParentID", 
+	p."Value1", 
+	t1."ParentID", 
 	t1."ChildID"
 FROM
 	"Parent" p
-		LEFT JOIN LATERAL (
-			SELECT
-				ch."ParentID",
+		LEFT JOIN LATERAL ( 
+			SELECT 
+				ch."ParentID", 
 				ch."ChildID"
 			FROM
 				"Child" ch

@@ -148,8 +148,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	v.value,
+SELECT 
+	v.value, 
 	v.idx
 FROM
 	"SampleClass" t
