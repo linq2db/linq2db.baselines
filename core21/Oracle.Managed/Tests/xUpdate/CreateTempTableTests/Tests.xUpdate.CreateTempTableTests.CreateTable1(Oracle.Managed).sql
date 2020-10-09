@@ -34,6 +34,14 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
+	t1.ID
+FROM
+	TempTable t1
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
 	t.ID
 FROM
 	Parent p
