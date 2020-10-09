@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE '%hn' AND p."PersonID" = 1
+	p."FirstName" LIKE '%hn' ESCAPE '~' AND p."PersonID" = 1
 
