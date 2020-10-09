@@ -150,13 +150,13 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	t."Id",
+SELECT 
+	t."Id", 
 	t2."First_1"
 FROM
 	"SampleClass" t
-		LEFT JOIN LATERAL (
-			SELECT
+		LEFT JOIN LATERAL ( 
+			SELECT 
 				t1 as "First_1"
 			FROM
 				UNNEST(t."StrArray") t1

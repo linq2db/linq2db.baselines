@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	p."GuidValue"
 FROM
 	"LinqDataTypes" p

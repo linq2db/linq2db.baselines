@@ -3,11 +3,11 @@
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	Min(t1."ParentID")
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			p."ParentID"
 		FROM
 			"Parent" p

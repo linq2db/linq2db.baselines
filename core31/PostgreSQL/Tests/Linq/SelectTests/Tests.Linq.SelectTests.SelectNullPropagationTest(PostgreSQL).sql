@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	q."ParentID"
 FROM
 	"Parent" q

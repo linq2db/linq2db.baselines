@@ -5,14 +5,14 @@ SET     @take_1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 10
 
-SELECT
-	t1."ParentID",
+SELECT 
+	t1."ParentID", 
 	t1."ChildID"
 FROM
 	"Parent" p
-		LEFT JOIN LATERAL (
-			SELECT
-				c_1."ParentID",
+		LEFT JOIN LATERAL ( 
+			SELECT 
+				c_1."ParentID", 
 				c_1."ChildID"
 			FROM
 				"Child" c_1

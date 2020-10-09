@@ -5,8 +5,8 @@ SET     @take = 2
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT
-	t1."ParentID",
+SELECT 
+	t1."ParentID", 
 	t1."Value1"
 FROM
 	"Parent" t1
@@ -21,8 +21,8 @@ SET     @take = 2
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT
-	t1."ParentID",
+SELECT 
+	t1."ParentID", 
 	t1."Value1"
 FROM
 	"Parent" t1

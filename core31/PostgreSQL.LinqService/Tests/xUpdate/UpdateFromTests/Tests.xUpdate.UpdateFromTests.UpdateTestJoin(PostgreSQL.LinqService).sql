@@ -83,10 +83,10 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	v.id,
-	v."Value1",
-	v."Value2",
+SELECT 
+	v.id, 
+	v."Value1", 
+	v."Value2", 
 	v."Value3"
 FROM
 	"UpdatedEntities" v

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	p.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor(t."MoneyValue") as BigInt) as c1
 		FROM
 			"LinqDataTypes" t

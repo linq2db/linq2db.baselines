@@ -3,9 +3,9 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1000
 
-SELECT
-	"a_Patient"."Diagnosis",
-	"a_Patient"."PersonID",
+SELECT 
+	"a_Patient"."Diagnosis", 
+	"a_Patient"."PersonID", 
 	Avg(t1."PersonID")
 FROM
 	"Person" t1

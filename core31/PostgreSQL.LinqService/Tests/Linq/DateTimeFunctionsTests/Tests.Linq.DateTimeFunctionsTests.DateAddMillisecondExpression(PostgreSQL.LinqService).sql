@@ -3,7 +3,7 @@
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 226
 
-SELECT
+SELECT 
 	t."DateTimeValue" + :p1 * Interval '1 Millisecond'
 FROM
 	"LinqDataTypes" t
@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t."DateTimeValue"
 FROM
 	"LinqDataTypes" t

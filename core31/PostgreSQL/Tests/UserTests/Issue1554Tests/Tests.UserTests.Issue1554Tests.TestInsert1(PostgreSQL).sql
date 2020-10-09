@@ -37,9 +37,9 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	t1."Id",
-	t1."ClaimedKeyType",
+SELECT 
+	t1."Id", 
+	t1."ClaimedKeyType", 
 	t1."ClaimedKeyTypeN"
 FROM
 	"Issue1554Table" t1

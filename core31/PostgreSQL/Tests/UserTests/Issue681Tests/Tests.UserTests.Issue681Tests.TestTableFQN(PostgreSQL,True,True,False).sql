@@ -3,7 +3,7 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	current_database()
 FROM
 	"LinqDataTypes" t1
@@ -12,7 +12,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t1."ID"
 FROM
 	"LinqDataTypes" t1

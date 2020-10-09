@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	x."ParentID"
 FROM
 	"Parent" x
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	x."ParentID"
 FROM
 	"Parent" x

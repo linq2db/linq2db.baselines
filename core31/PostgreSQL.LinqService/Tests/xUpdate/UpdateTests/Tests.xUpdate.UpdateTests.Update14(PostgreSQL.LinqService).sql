@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"Person" t1

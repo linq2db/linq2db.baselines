@@ -23,8 +23,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	r."Id",
+SELECT 
+	r."Id", 
 	r."Json"
 FROM
 	"Issue2431Table" r

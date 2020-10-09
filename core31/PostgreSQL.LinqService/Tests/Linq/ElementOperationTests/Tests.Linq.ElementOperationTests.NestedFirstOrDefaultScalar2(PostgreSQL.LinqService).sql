@@ -3,13 +3,13 @@
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
-	p."ParentID",
+SELECT 
+	p."ParentID", 
 	t1."MaxChild"
 FROM
 	"Parent" p
-		LEFT JOIN LATERAL (
-			SELECT
+		LEFT JOIN LATERAL ( 
+			SELECT 
 				c_1."ChildID" as "MaxChild"
 			FROM
 				"Child" c_1

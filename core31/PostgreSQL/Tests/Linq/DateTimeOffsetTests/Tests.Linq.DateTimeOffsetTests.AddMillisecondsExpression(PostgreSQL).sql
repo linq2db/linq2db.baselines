@@ -69,7 +69,7 @@ BeforeExecute
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 226
 
-SELECT
+SELECT 
 	t."TransactionDate" + :p1 * Interval '1 Millisecond'
 FROM
 	"Transactions" t
