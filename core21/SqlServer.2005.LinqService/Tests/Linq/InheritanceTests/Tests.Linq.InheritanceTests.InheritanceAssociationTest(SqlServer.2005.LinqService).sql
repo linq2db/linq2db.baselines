@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[BinaryValue],
-	[t1].[SmallIntValue],
+SELECT 
+	[t1].[ID], 
+	[t1].[MoneyValue], 
+	[t1].[DateTimeValue], 
+	[t1].[BoolValue], 
+	[t1].[GuidValue], 
+	[t1].[BinaryValue], 
+	[t1].[SmallIntValue], 
 	[t1].[StringValue]
 FROM
 	[LinqDataTypes] [t1]
@@ -16,8 +16,8 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[a_A1].[ID],
+SELECT 
+	[a_A1].[ID], 
 	[a_A2].[ID]
 FROM
 	[LinqDataTypes] [ia]

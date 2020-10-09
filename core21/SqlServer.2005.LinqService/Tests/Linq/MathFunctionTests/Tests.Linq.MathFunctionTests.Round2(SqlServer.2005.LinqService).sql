@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN Convert(Float, [p].[MoneyValue]) - Floor(Convert(Float, [p].[MoneyValue])) = 0.5 AND (Convert(Int, Floor(Convert(Float, [p].[MoneyValue]))) % 2) = 0
 					THEN Floor(Convert(Float, [p].[MoneyValue]))

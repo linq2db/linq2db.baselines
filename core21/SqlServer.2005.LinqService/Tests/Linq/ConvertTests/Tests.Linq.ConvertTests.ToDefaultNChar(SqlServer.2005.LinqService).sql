@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Convert(NChar, [t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

@@ -3,12 +3,12 @@
 DECLARE @take Int -- Int32
 SET     @take = 5
 
-SELECT TOP (@take)
-	[t1].[c1],
+SELECT TOP (@take) 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor(Cast(CURRENT_TIMESTAMP as Float)) as DateTime) as [c1]
 		FROM
 			[Parent] [v]

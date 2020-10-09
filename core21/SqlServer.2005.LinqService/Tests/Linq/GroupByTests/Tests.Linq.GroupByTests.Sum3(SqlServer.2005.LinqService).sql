@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Sum([p].[ChildID])
 		FROM
 			[Child] [p]

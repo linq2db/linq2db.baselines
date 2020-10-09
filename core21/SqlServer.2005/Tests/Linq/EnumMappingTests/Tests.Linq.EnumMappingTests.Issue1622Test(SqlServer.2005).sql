@@ -32,8 +32,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[e].[Id],
+SELECT TOP (@take) 
+	[e].[Id], 
 	[e].[SomeText]
 FROM
 	[Issue1622Table] [e]
@@ -45,8 +45,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[e].[Id],
+SELECT TOP (@take) 
+	[e].[Id], 
 	[e].[SomeText]
 FROM
 	[Issue1622Table] [e]

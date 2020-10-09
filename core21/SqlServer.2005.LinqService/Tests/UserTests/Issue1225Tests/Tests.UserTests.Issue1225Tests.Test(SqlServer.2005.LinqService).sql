@@ -73,9 +73,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	N'Id',
-	[selectParam].[Id],
+SELECT 
+	N'Id', 
+	[selectParam].[Id], 
 	Sum(CASE
 		WHEN [a_ActualStage].[Id] IS NULL
 			THEN NULL

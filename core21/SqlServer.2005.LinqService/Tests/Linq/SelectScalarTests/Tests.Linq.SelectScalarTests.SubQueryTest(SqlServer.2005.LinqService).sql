@@ -3,9 +3,9 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	(
-		SELECT TOP (@take)
+		SELECT TOP (@take) 
 			[p].[Value1]
 		FROM
 			[Parent] [p]

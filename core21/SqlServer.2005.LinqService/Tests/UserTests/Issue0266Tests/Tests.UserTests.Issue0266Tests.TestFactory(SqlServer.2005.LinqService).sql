@@ -3,11 +3,11 @@
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT TOP (@take)
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
+SELECT TOP (@take) 
+	[_].[FirstName], 
+	[_].[PersonID], 
+	[_].[LastName], 
+	[_].[MiddleName], 
 	[_].[Gender]
 FROM
 	[Person] [_]

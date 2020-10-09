@@ -71,10 +71,10 @@ BeforeExecute
 DECLARE @EventId Int -- Int32
 SET     @EventId = 1
 
-SELECT
-	[p].[Id],
-	[detail].[EventSchedulePersonId],
-	[detail].[Id],
+SELECT 
+	[p].[Id], 
+	[detail].[EventSchedulePersonId], 
+	[detail].[Id], 
 	[a_Person].[TicketNumberId]
 FROM
 	[EventScheduleItem] [p]
@@ -88,7 +88,7 @@ BeforeExecute
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
-SELECT
+SELECT 
 	[p].[Id]
 FROM
 	[EventScheduleItem] [p]

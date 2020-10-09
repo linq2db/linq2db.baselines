@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	DatePart(week, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

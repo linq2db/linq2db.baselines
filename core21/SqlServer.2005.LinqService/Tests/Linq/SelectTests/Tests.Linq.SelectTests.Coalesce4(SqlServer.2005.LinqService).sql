@@ -3,9 +3,9 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Coalesce((
-		SELECT TOP (@take)
+		SELECT TOP (@take) 
 			[a_Parent].[Value1]
 		FROM
 			[Child] [ch]

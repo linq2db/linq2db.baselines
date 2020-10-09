@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[selectParam].[ChildID]
 FROM
 	[GrandChild] [selectParam]

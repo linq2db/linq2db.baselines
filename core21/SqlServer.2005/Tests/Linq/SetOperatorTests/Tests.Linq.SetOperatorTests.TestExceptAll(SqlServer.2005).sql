@@ -35,27 +35,27 @@ SELECT 10,100,1000,10000
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[Id],
-	[t1].[Value1],
-	[t1].[Value2],
+SELECT 
+	[t1].[Id], 
+	[t1].[Value1], 
+	[t1].[Value2], 
 	[t1].[Value3]
 FROM
-	(
-		SELECT
-			[t].[Id],
-			[t].[Value1],
-			[t].[Value2],
+	( 
+		SELECT 
+			[t].[Id], 
+			[t].[Value1], 
+			[t].[Value2], 
 			[t].[Value3]
 		FROM
 			[SampleData] [t]
 		WHERE
 			[t].[Id] % 2 = 0
 		UNION ALL
-		SELECT
-			[t_1].[Id],
-			[t_1].[Value1],
-			[t_1].[Value2],
+		SELECT 
+			[t_1].[Id], 
+			[t_1].[Value1], 
+			[t_1].[Value2], 
 			[t_1].[Value3]
 		FROM
 			[SampleData] [t_1]
@@ -64,7 +64,7 @@ FROM
 	) [t1]
 WHERE
 	NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[SampleData] [t_2]

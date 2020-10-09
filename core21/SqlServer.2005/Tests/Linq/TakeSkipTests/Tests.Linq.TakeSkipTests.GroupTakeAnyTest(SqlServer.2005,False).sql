@@ -21,9 +21,9 @@ SELECT 'BOLTO'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT TOP (1)
+		SELECT TOP (1) 
 			*
 		FROM
 			[TakeSkipClass] [t1]

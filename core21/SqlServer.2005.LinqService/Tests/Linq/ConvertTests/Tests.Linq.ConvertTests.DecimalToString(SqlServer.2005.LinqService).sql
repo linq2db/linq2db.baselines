@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(NVarChar(31), [t].[MoneyValue]) as [c1]
 		FROM
 			[LinqDataTypes] [t]

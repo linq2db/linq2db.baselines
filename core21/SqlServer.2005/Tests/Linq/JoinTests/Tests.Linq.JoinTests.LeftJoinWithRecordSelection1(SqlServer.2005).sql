@@ -47,10 +47,10 @@ SELECT 3,4,N'Tag4'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[fact_1].[Id],
-	[tagGroup].[Id],
-	[tagGroup].[FactId],
+SELECT 
+	[fact_1].[Id], 
+	[tagGroup].[Id], 
+	[tagGroup].[FactId], 
 	[tagGroup].[Name]
 FROM
 	[Fact] [fact_1]

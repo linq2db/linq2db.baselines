@@ -45,14 +45,14 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 3
 
-SELECT
-	[c_1].[Id],
-	[c_1].[DuplicateData],
-	[c_1].[OrderData1],
+SELECT 
+	[c_1].[Id], 
+	[c_1].[DuplicateData], 
+	[c_1].[OrderData1], 
 	[c_1].[OrderData2]
 FROM
-	(
-		SELECT TOP (@take)
+	( 
+		SELECT TOP (@take) 
 			[t1].[Id]
 		FROM
 			[OrderByDistinctData] [t1]

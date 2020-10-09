@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[cc],
+SELECT 
+	[t1].[cc], 
 	[t1].[bb]
 FROM
 	[aa] [t1]

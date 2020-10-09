@@ -43,9 +43,9 @@ SELECT 4,2
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[sheet].[Id],
-	[detail].[Id],
+SELECT 
+	[sheet].[Id], 
+	[detail].[Id], 
 	[detail].[AttendanceSheetId]
 FROM
 	[AttendanceSheet] [sheet]
@@ -54,7 +54,7 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[sheet].[Id]
 FROM
 	[AttendanceSheet] [sheet]

@@ -3,11 +3,11 @@
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'1'
 
-SELECT
-	[r].[FirstName],
-	[r].[PersonID],
-	[r].[LastName],
-	[r].[MiddleName],
+SELECT 
+	[r].[FirstName], 
+	[r].[PersonID], 
+	[r].[LastName], 
+	[r].[MiddleName], 
 	[r].[Gender]
 FROM
 	[Person] [r]
@@ -17,11 +17,11 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[r].[FirstName],
-	[r].[PersonID],
-	[r].[LastName],
-	[r].[MiddleName],
+SELECT 
+	[r].[FirstName], 
+	[r].[PersonID], 
+	[r].[LastName], 
+	[r].[MiddleName], 
 	[r].[Gender]
 FROM
 	[Person] [r]
@@ -33,11 +33,11 @@ BeforeExecute
 DECLARE @FirstName_1 NVarChar(4000) -- String
 SET     @FirstName_1 = N'1'
 
-SELECT
-	[r].[FirstName],
-	[r].[PersonID],
-	[r].[LastName],
-	[r].[MiddleName],
+SELECT 
+	[r].[FirstName], 
+	[r].[PersonID], 
+	[r].[LastName], 
+	[r].[MiddleName], 
 	[r].[Gender]
 FROM
 	[Person] [r]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	DatePart(quarter, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

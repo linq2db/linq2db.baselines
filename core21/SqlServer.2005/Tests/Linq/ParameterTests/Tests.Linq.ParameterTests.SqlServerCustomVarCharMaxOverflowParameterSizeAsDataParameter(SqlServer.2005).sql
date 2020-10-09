@@ -25,9 +25,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[VarBinary],
-	[t1].[VarChar],
+SELECT 
+	[t1].[VarBinary], 
+	[t1].[VarChar], 
 	[t1].[NVarChar]
 FROM
 	[AllTypesCustomMaxLength] [t1]

@@ -15,19 +15,19 @@ INSERT INTO [Parent]
 	[ParentID],
 	[Value1]
 )
-SELECT
-	[t1].[ParentID] + 1000,
+SELECT 
+	[t1].[ParentID] + 1000, 
 	[t1].[Value1]
 FROM
-	(
-		SELECT
-			[c_1].[ParentID],
+	( 
+		SELECT 
+			[c_1].[ParentID], 
 			Convert(Int, Floor(Convert(Float, [c_1].[ChildID]) / 10)) as [Value1]
 		FROM
 			[Child] [c_1]
 		UNION
-		SELECT
-			Coalesce([c_2].[ParentID], 0) as [ParentID],
+		SELECT 
+			Coalesce([c_2].[ParentID], 0) as [ParentID], 
 			Floor(Convert(Float, Coalesce([c_2].[GrandChildID], 0)) / 100) as [Value1]
 		FROM
 			[GrandChild] [c_2]
@@ -36,7 +36,7 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [c_1]

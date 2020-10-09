@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[detail].[ParentID],
+SELECT 
+	[key_data_result].[ParentID], 
+	[key_data_result].[Value1], 
+	[detail].[ParentID], 
 	[detail].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID],
+	( 
+		SELECT DISTINCT 
+			[p].[ParentID], 
 			[p].[Value1]
 		FROM
 			[Parent] [p]
@@ -21,8 +21,8 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[p].[ParentID],
+SELECT 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

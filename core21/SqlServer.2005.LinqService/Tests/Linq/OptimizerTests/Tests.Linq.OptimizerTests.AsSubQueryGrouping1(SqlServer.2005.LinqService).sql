@@ -81,11 +81,11 @@ SELECT 3,4,60,300,400,1000,4000,5000,N'Str_5'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	COUNT(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[t1].[Key1]
 		FROM
 			[FirstOptimizerData] [t1]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Coalesce([p].[Value1], 100)
 FROM
 	[Parent] [p]

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN [child].[FirstName] = N'John'
 					THEN [child].[FirstName]
@@ -24,11 +24,11 @@ GROUP BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -36,8 +36,8 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]

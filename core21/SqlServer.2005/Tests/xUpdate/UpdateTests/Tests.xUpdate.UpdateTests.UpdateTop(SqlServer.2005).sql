@@ -199,8 +199,8 @@ UPDATE
 SET
 	[t1].[Value1] = @Value1
 FROM
-	(
-		SELECT TOP (@take)
+	( 
+		SELECT TOP (@take) 
 			[p].[Value1]
 		FROM
 			[Parent] [p]

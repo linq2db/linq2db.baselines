@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	[t1].[PersonID]
 FROM
 	[Person] [t1]

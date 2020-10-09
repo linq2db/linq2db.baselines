@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t2].[ParentID],
+SELECT 
+	[t2].[ParentID], 
 	[t2].[ChildID]
 FROM
-	(
-		SELECT
-			[t1].[ParentID],
-			[t1].[ChildID],
+	( 
+		SELECT 
+			[t1].[ParentID], 
+			[t1].[ChildID], 
 			ROW_NUMBER() OVER (ORDER BY [t1].[ChildID] DESC) as [RN]
 		FROM
 			[Child] [t1]

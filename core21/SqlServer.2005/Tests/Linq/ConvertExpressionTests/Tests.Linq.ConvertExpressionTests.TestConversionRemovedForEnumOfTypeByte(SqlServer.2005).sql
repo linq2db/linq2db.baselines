@@ -24,22 +24,22 @@ CREATE TABLE [ConversionsTestTable]
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[x].[SByte],
-	[x].[Byte],
-	[x].[Int16],
-	[x].[UInt16],
-	[x].[Int32],
-	[x].[UInt32],
-	[x].[Int64],
-	[x].[UInt64],
-	[x].[SByteN],
-	[x].[ByteN],
-	[x].[Int16N],
-	[x].[UInt16N],
-	[x].[Int32N],
-	[x].[UInt32N],
-	[x].[Int64N],
+SELECT 
+	[x].[SByte], 
+	[x].[Byte], 
+	[x].[Int16], 
+	[x].[UInt16], 
+	[x].[Int32], 
+	[x].[UInt32], 
+	[x].[Int64], 
+	[x].[UInt64], 
+	[x].[SByteN], 
+	[x].[ByteN], 
+	[x].[Int16N], 
+	[x].[UInt16N], 
+	[x].[Int32N], 
+	[x].[UInt32N], 
+	[x].[Int64N], 
 	[x].[UInt64N]
 FROM
 	[ConversionsTestTable] [x]

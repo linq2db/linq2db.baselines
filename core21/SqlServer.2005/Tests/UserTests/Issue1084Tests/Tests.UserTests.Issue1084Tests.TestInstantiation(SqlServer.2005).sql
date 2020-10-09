@@ -45,10 +45,10 @@ SELECT 2,N'2',0
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[k_1].[Id],
-	[k_1].[Number],
-	[k_1].[StatusBitmask],
+SELECT 
+	[k_1].[Id], 
+	[k_1].[Number], 
+	[k_1].[StatusBitmask], 
 	[joinedTable].[StatusBitmask]
 FROM
 	[i1084_person] [k_1]

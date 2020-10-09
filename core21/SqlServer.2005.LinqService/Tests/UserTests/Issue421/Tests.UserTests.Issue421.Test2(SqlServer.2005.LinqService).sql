@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT TOP (1)
-	[_].[Id],
+SELECT TOP (1) 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass] [_]
@@ -49,8 +49,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
-SELECT TOP (1)
-	[_].[Id],
+SELECT TOP (1) 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass] [_]

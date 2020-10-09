@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[p].[ParentID] as [ID]
 		FROM
 			[Parent] [p]
 		WHERE
 			[p].[ParentID] > 2
 		UNION
-		SELECT
+		SELECT 
 			[p_1].[ParentID] as [ID]
 		FROM
 			[Parent] [p_1]

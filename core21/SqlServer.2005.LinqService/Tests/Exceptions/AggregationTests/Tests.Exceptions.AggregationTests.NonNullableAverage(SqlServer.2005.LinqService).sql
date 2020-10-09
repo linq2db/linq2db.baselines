@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
+SELECT 
 	Avg([_].[ParentID])
 FROM
 	[Parent] [_]

@@ -43,9 +43,9 @@ SELECT 10,NULL,NULL,N'Value1','Value2','Value2','Value2','N'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t].[Id],
-	[t].[Value1],
+SELECT 
+	[t].[Id], 
+	[t].[Value1], 
 	[t].[Value2]
 FROM
 	[ValueConversion] [t]
