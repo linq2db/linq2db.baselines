@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[_].[Id],
+SELECT TOP 1 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass20] [_]
@@ -37,8 +37,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[_].[Id],
+SELECT TOP 1 
+	[_].[Id], 
 	[_].[BlobValue]
 FROM
 	[BlobClass20] [_]

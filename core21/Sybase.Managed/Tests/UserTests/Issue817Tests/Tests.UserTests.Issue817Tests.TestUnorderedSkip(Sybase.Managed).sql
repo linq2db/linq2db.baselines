@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [t1]
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	1
 FROM
 	[Person] [_]

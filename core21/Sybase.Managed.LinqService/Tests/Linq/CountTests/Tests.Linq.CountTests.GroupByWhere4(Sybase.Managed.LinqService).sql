@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[a_Parent].[ParentID]
 FROM
 	[GrandChild] [t1]

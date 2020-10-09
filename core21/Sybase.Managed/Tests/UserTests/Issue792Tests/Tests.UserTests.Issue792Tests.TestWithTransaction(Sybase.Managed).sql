@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [t1]
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
+SELECT TOP 1 
 	USER_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -61,7 +61,7 @@ SET FMTONLY OFF
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[AllTypes] [t1]

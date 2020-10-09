@@ -22,8 +22,8 @@ SELECT 100,1
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[x].[Value],
+SELECT TOP 1 
+	[x].[Value], 
 	[x].[Id]
 FROM
 	[BaseTable] [x]
@@ -33,8 +33,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[x].[Value],
+SELECT TOP 1 
+	[x].[Value], 
 	[x].[Id]
 FROM
 	[BaseTable] [x]

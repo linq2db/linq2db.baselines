@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-SELECT
+SELECT 
 	1
 FROM
 	[FakeClass] [t1]

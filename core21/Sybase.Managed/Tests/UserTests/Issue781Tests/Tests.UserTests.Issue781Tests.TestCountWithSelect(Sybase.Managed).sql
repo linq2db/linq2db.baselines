@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[t1].[c1]
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					'test' + [a_Patient].[Diagnosis] as [c1]
 				FROM
 					[Person] [selectParam]

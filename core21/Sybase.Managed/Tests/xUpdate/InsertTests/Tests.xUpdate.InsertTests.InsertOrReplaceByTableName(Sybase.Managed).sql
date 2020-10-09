@@ -89,7 +89,7 @@ COMMIT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient21] [t1]
@@ -169,7 +169,7 @@ COMMIT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPatient21] [t1]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(Float, Convert(Int, [p].[MoneyValue])) * 57.295779513082323 as [c1]
 		FROM
 			[LinqDataTypes] [p]

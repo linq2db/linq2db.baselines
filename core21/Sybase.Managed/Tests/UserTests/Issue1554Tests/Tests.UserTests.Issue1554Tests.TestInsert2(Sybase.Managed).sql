@@ -35,9 +35,9 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[t1].[Id],
-	[t1].[ClaimedKeyType],
+SELECT TOP 2 
+	[t1].[Id], 
+	[t1].[ClaimedKeyType], 
 	[t1].[ClaimedKeyTypeN]
 FROM
 	[Issue1554Table] [t1]

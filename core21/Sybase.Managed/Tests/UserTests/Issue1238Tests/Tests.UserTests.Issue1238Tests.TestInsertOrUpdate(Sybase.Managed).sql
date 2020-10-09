@@ -41,7 +41,7 @@ COMMIT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InheritanceParent] [t1]
@@ -82,7 +82,7 @@ COMMIT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InheritanceParent] [t1]

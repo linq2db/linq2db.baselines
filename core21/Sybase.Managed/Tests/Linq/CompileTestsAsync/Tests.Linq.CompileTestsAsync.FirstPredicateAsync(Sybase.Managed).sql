@@ -31,7 +31,7 @@ BeforeExecute
 DECLARE @Id_1 Integer -- Int32
 SET     @Id_1 = 2
 
-SELECT TOP 1
+SELECT TOP 1 
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]

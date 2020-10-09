@@ -47,10 +47,10 @@ SELECT 3,4,'Tag4'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[ft].[Id],
-	[t].[Id],
-	[t].[FactId],
+SELECT 
+	[ft].[Id], 
+	[t].[Id], 
+	[t].[FactId], 
 	[t].[Name]
 FROM
 	[Fact] [ft]

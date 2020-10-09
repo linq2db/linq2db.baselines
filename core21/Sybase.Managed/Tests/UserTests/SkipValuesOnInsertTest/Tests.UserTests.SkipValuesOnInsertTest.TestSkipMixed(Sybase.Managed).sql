@@ -35,9 +35,9 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Mixed_Table] [t]
@@ -63,9 +63,9 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Mixed_Table] [t]
@@ -93,9 +93,9 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Mixed_Table] [t]
@@ -124,9 +124,9 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Mixed_Table] [t]

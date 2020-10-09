@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(Date, Convert(VarChar(11), DatePart(year, [p].[DateTimeValue])) + '-10-1') as [c1]
 		FROM
 			[LinqDataTypes] [p]

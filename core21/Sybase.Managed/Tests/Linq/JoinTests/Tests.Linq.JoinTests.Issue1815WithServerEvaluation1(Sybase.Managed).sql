@@ -48,12 +48,12 @@ SELECT 2,4,3
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[x].[InId],
+SELECT TOP 2 
+	[x].[InId], 
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]
 		ELSE [j].[InMinQuantity]
-	END,
+	END, 
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMaxQuantity]
 		ELSE [j].[InMaxQuantity]
@@ -67,12 +67,12 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[x].[InId],
+SELECT TOP 2 
+	[x].[InId], 
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]
 		ELSE [j].[InMinQuantity]
-	END,
+	END, 
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMaxQuantity]
 		ELSE [j].[InMaxQuantity]

@@ -48,13 +48,13 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[t].[ID],
-	[t].[MoneyValue],
-	[t].[DateTimeValue],
-	[t].[BoolValue],
-	[t].[GuidValue],
-	[t].[BinaryValue],
+SELECT TOP 2 
+	[t].[ID], 
+	[t].[MoneyValue], 
+	[t].[DateTimeValue], 
+	[t].[BoolValue], 
+	[t].[GuidValue], 
+	[t].[BinaryValue], 
 	[t].[SmallIntValue]
 FROM
 	[LinqDataTypes] [t]

@@ -22,7 +22,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Max([_].[Id])
 FROM
 	[TestMergeIdentity] [_]
@@ -52,8 +52,8 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Field]
 FROM
 	[TestMergeIdentity] [t1]

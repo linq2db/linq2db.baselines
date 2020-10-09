@@ -20,7 +20,7 @@ INSERT INTO [TempTable]
 (
 	[ID]
 )
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]
@@ -28,7 +28,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t].[ID]
 FROM
 	[Parent] [p]

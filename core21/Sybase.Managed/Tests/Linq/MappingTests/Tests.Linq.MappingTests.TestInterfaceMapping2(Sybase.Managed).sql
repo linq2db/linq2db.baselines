@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]

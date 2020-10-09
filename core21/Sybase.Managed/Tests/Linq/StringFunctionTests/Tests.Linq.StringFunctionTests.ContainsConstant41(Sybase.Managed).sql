@@ -5,11 +5,11 @@ SET     @s = '123[456'
 DECLARE @ps UniVarChar(5) -- String
 SET     @ps = '%[[]%'
 
-SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

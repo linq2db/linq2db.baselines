@@ -5,7 +5,7 @@ UPDATE
 	[LinqDataTypes]
 SET
 	[a_Table1].[BoolValue] = CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Parent] [x]

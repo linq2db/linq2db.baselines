@@ -82,10 +82,10 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[v].[id],
-	[v].[Value1],
-	[v].[Value2],
+SELECT 
+	[v].[id], 
+	[v].[Value1], 
+	[v].[Value2], 
 	[v].[Value3]
 FROM
 	[UpdatedEntities] [v]

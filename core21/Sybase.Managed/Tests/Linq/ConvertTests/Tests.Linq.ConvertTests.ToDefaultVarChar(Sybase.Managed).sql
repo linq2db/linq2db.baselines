@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Convert(VarChar, [t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

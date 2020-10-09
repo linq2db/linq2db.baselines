@@ -11,7 +11,7 @@ CREATE TABLE [User]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[u].[city]
 FROM
 	[User] [u]
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[u].[street]
 FROM
 	[User] [u]

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[a_Patient].[PersonID],
+SELECT 
+	[a_Patient].[PersonID], 
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]

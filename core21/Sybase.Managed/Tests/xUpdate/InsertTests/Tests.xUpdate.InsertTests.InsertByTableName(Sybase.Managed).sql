@@ -102,7 +102,7 @@ SELECT @@IDENTITY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [t1]
@@ -110,7 +110,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [p]

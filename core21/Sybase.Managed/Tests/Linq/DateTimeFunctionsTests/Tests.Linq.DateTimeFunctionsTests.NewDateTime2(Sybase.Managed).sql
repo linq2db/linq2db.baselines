@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[p].[DateTimeValue]
 FROM
 	[LinqDataTypes] [p]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Round(Convert(Float, [p].[MoneyValue]), 0) as [c1]
 		FROM
 			[LinqDataTypes] [p]

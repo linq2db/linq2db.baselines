@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Max([_].[ID])
 FROM
 	[AllTypes] [_]
@@ -36,10 +36,10 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[t1].[ID],
-	[t1].[charDataType],
-	[t1].[ncharDataType],
+SELECT TOP 1 
+	[t1].[ID], 
+	[t1].[charDataType], 
+	[t1].[ncharDataType], 
 	[t1].[nvarcharDataType]
 FROM
 	[AllTypes] [t1]

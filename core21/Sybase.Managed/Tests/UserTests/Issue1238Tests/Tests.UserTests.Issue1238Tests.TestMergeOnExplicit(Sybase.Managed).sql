@@ -39,7 +39,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InheritanceParent] [t1]
@@ -78,7 +78,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[InheritanceParent] [t1]

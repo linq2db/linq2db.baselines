@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(SmallInt, [t].[MoneyValue]) as [c1]
 		FROM
 			[LinqDataTypes] [t]

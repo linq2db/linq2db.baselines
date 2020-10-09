@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Sum([c2].[ChildID])
 FROM
 	[Child] [c1_1]

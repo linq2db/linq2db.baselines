@@ -66,8 +66,8 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[r].[ID],
+SELECT 
+	[r].[ID], 
 	[r].[IntValue]
 FROM
 	[LinqDataTypes] [r]
@@ -79,9 +79,9 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[r].[ID],
-	[r].[IntValue],
+SELECT 
+	[r].[ID], 
+	[r].[IntValue], 
 	[r].[StringValue]
 FROM
 	[LinqDataTypes] [r]

@@ -74,9 +74,9 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[v].[Value1],
-	[v].[Value2],
+SELECT TOP 1 
+	[v].[Value1], 
+	[v].[Value2], 
 	[v].[Value3]
 FROM
 	[UpdatedEntities] [v]

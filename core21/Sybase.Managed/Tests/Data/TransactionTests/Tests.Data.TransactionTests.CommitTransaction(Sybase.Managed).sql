@@ -31,8 +31,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[t].[ParentID],
+SELECT TOP 1 
+	[t].[ParentID], 
 	[t].[Value1]
 FROM
 	[Parent] [t]

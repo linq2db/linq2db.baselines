@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	DatePart(millisecond, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

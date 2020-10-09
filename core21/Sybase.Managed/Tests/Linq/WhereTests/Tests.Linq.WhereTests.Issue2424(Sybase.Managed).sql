@@ -22,8 +22,8 @@ SELECT 5,'5'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -33,8 +33,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -44,8 +44,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -55,8 +55,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -66,8 +66,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -77,8 +77,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -88,8 +88,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -99,8 +99,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -110,8 +110,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -121,8 +121,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -132,8 +132,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -143,8 +143,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -154,8 +154,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -165,8 +165,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -176,8 +176,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -187,8 +187,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -198,8 +198,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -209,8 +209,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -220,8 +220,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -231,8 +231,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -242,8 +242,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
@@ -253,8 +253,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[i].[Id],
+SELECT TOP 2 
+	[i].[Id], 
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]

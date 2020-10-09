@@ -42,7 +42,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[GrandChild] [gc]
@@ -62,7 +62,7 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[GrandChild] [gc]

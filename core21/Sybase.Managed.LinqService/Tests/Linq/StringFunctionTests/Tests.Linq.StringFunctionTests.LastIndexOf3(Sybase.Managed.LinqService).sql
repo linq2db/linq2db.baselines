@@ -5,14 +5,14 @@ SET     @p1 = 0
 DECLARE @Length_1 Integer -- Int32
 SET     @Length_1 = 3
 
-SELECT
-	[p_1].[ID],
+SELECT 
+	[p_1].[ID], 
 	[p_1].[FirstName_1]
 FROM
-	(
-		SELECT
-			'123' + [p].[FirstName] + '0123451234' as [FirstName],
-			[p].[PersonID] as [ID],
+	( 
+		SELECT 
+			'123' + [p].[FirstName] + '0123451234' as [FirstName], 
+			[p].[PersonID] as [ID], 
 			[p].[FirstName] as [FirstName_1]
 		FROM
 			[Person] [p]

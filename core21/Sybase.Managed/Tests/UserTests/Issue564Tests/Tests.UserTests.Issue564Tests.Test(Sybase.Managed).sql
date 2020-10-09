@@ -50,7 +50,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent564] [t1]

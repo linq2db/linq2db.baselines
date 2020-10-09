@@ -3,14 +3,14 @@
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
-SELECT
-	[_].[ParentID],
+SELECT 
+	[_].[ParentID], 
 	[_].[ChildID]
 FROM
 	[Child] [_]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Parent] [_1]

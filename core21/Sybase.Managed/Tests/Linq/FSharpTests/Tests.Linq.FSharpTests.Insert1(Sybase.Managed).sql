@@ -28,7 +28,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Child] [c_1]

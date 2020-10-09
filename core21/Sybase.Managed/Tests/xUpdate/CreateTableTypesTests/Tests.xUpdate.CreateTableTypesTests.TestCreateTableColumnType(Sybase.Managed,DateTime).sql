@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[DateTime]
 FROM
 	[CreateTableTypes] [t1]

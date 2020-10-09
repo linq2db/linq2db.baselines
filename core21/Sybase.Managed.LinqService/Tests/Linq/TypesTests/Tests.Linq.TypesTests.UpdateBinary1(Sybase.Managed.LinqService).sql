@@ -15,7 +15,7 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t].[BinaryValue]
 FROM
 	[LinqDataTypes] [t]

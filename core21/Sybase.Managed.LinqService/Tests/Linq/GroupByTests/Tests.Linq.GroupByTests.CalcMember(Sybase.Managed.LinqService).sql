@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN [child].[FirstName] = 'John'
 					THEN [child].[FirstName]

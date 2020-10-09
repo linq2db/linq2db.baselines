@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN [selectParam].[ParentID] > 2
 					THEN CASE
@@ -26,8 +26,8 @@ BeforeExecute
 DECLARE @p1 UniVarChar(1) -- String
 SET     @p1 = '1'
 
-SELECT
-	[selectParam].[ParentID],
+SELECT 
+	[selectParam].[ParentID], 
 	[selectParam].[ChildID]
 FROM
 	[Child] [selectParam]

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1000
-	[a_Patient].[Diagnosis],
-	[a_Patient].[PersonID],
+SELECT TOP 1000 
+	[a_Patient].[Diagnosis], 
+	[a_Patient].[PersonID], 
 	Avg([selectParam].[PersonID])
 FROM
 	[Person] [selectParam]

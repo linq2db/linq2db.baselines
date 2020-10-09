@@ -10,8 +10,8 @@ CREATE TABLE [SampleClass]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	DateAdd(day, 1, GetDate()),
+SELECT TOP 1 
+	DateAdd(day, 1, GetDate()), 
 	DateAdd(day, 2, GetDate())
 
 BeforeExecute

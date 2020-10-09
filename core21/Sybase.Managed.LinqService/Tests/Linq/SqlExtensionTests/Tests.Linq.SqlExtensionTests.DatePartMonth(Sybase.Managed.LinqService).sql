@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	DatePart(month, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Convert(TinyInt, [t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]

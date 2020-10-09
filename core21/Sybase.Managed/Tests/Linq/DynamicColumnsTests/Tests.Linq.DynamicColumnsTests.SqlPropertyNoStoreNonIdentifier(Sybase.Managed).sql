@@ -23,7 +23,7 @@ SELECT 77,0
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[d].[Not Identifier]
 FROM
 	[DynamicTable] [d]

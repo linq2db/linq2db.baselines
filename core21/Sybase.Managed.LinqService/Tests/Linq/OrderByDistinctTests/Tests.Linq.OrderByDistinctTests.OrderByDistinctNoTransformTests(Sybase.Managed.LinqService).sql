@@ -43,8 +43,8 @@ SELECT 600,'Three',5,5
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT DISTINCT TOP 3
-	[x].[DuplicateData],
+SELECT DISTINCT TOP 3 
+	[x].[DuplicateData], 
 	[x].[OrderData1]
 FROM
 	[OrderByDistinctData] [x]

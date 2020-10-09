@@ -43,7 +43,7 @@ SELECT 600,'Three',5,5
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -55,7 +55,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]

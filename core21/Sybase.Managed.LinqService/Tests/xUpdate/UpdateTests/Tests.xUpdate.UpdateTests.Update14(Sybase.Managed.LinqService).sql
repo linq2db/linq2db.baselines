@@ -43,7 +43,7 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Person] [_]

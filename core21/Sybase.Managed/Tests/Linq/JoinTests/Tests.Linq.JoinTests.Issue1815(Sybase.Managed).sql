@@ -48,12 +48,12 @@ SELECT 2,4,3
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
+SELECT TOP 2 
+	[x].[InId], 
+	[j].[InId], 
+	[j].[InMaxQuantity], 
+	[j].[InMinQuantity], 
+	[x].[InMinQuantity], 
 	[x].[InMaxQuantity]
 FROM
 	[StLink] [x]
@@ -64,12 +64,12 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
+SELECT TOP 2 
+	[x].[InId], 
+	[j].[InId], 
+	[j].[InMaxQuantity], 
+	[j].[InMinQuantity], 
+	[x].[InMinQuantity], 
 	[x].[InMaxQuantity]
 FROM
 	[StLink] [x]

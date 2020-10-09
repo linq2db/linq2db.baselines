@@ -87,22 +87,22 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[key_data_result].[Id],
-	[key_data_result].[Title],
-	[key_data_result].[Text],
+SELECT 
+	[key_data_result].[Id], 
+	[key_data_result].[Title], 
+	[key_data_result].[Text], 
 	[detail].[Id]
 FROM
-	(
-		SELECT DISTINCT
-			[t1].[Id],
-			[t1].[Title],
+	( 
+		SELECT DISTINCT 
+			[t1].[Id], 
+			[t1].[Title], 
 			[t1].[Text]
 		FROM
-			(
-				SELECT TOP 1
-					[x].[Id],
-					[x].[Title],
+			( 
+				SELECT TOP 1 
+					[x].[Id], 
+					[x].[Title], 
 					[x].[Text]
 				FROM
 					[Topic] [x]
@@ -115,9 +115,9 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[x].[Id],
-	[x].[Title],
+SELECT TOP 1 
+	[x].[Id], 
+	[x].[Title], 
 	[x].[Text]
 FROM
 	[Topic] [x]

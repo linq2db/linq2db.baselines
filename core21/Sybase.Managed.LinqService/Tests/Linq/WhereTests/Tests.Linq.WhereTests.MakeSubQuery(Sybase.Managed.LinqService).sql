@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[p_1].[PersonID],
+SELECT 
+	[p_1].[PersonID], 
 	[p_1].[FirstName]
 FROM
-	(
-		SELECT
-			[p].[PersonID] + 1 as [PersonID],
+	( 
+		SELECT 
+			[p].[PersonID] + 1 as [PersonID], 
 			[p].[FirstName]
 		FROM
 			[Person] [p]

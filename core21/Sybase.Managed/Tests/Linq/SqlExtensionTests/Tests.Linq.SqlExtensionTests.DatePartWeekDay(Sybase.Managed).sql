@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	DatePart(weekday, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

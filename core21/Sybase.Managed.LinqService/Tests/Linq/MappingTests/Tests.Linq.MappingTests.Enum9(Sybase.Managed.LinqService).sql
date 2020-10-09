@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[p].[PersonID],
-	[p].[FirstName],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT 
+	[p].[PersonID], 
+	[p].[FirstName], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

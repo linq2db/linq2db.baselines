@@ -33,7 +33,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t1].#Column1064
 FROM
 	[TableTest1064] [t1]

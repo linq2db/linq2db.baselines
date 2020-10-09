@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	[ch].[ParentID]
 FROM
 	[Child] [ch]

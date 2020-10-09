@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[_1].[c1]
 FROM
 	[Parent] [cp]
-		INNER JOIN (
-			SELECT
-				[_].[ParentID] + 1 as [c1],
+		INNER JOIN ( 
+			SELECT 
+				[_].[ParentID] + 1 as [c1], 
 				[_].[ParentID]
 			FROM
 				[Child] [_]

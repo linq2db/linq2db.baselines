@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[_].[ParentID] + [cp].[ParentID]
 FROM
 	[Parent] [cp]

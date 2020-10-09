@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[GrandChild] [x]
@@ -14,9 +14,9 @@ SELECT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[GrandChild] [x]

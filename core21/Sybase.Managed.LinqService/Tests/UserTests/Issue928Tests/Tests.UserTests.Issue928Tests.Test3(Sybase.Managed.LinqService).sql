@@ -1,22 +1,22 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[p1].[ParentID],
-	[p1].[Value1],
-	[o].[ParentID],
+SELECT 
+	[p1].[ParentID], 
+	[p1].[Value1], 
+	[o].[ParentID], 
 	[o].[Sum1]
 FROM
 	[Parent] [p1]
-		LEFT JOIN (
-			SELECT
-				[p].[ParentID],
+		LEFT JOIN ( 
+			SELECT 
+				[p].[ParentID], 
 				Sum([p].[ParentID]) as [Sum1]
 			FROM
 				[Parent] [p]
 			WHERE
 				EXISTS(
-					SELECT
+					SELECT 
 						*
 					FROM
 						[Child] [ch]

@@ -73,9 +73,9 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	'Id',
-	[selectParam].[Id],
+SELECT 
+	'Id', 
+	[selectParam].[Id], 
 	Sum(CASE
 		WHEN [a_ActualStage].[Id] IS NULL
 			THEN NULL

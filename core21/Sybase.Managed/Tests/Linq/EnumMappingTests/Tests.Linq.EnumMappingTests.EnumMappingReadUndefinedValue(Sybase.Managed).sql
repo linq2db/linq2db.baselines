@@ -26,8 +26,8 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[r].[ID],
+SELECT 
+	[r].[ID], 
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]

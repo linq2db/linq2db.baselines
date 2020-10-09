@@ -25,7 +25,7 @@ SELECT 'Value8'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
+SELECT TOP 1 
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

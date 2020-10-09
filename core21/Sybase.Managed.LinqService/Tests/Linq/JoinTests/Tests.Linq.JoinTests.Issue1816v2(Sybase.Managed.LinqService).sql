@@ -34,9 +34,9 @@ CREATE TABLE [stMain]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[v].[inId],
-	[r].[inIdState],
+SELECT 
+	[v].[inId], 
+	[r].[inIdState], 
 	[a_Main].[inIdType]
 FROM
 	[stVersions] [v]

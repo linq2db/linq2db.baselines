@@ -3,6 +3,6 @@
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
-SELECT
+SELECT 
 	@p
 

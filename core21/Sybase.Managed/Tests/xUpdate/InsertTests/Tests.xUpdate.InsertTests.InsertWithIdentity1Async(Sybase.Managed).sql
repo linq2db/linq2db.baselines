@@ -28,11 +28,11 @@ SELECT @@IDENTITY
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-SELECT TOP 2
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT TOP 2 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]

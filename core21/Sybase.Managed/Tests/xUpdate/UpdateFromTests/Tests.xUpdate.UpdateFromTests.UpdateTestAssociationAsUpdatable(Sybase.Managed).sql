@@ -72,7 +72,7 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
+SELECT TOP 1 
 	[v].[Value1]
 FROM
 	[UpdatedEntities] [v]

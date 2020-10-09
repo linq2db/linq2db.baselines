@@ -43,8 +43,8 @@ SET     @startId = 5
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 15
 
-SELECT
-	[s].[value],
+SELECT 
+	[s].[value], 
 	[s].[id]
 FROM
 	[sample_class] [c_1]
@@ -61,8 +61,8 @@ SET     @startId = 5
 DECLARE @endId Integer -- Int32
 SET     @endId = 15
 
-SELECT
-	[t].[value],
+SELECT 
+	[t].[value], 
 	[t].[id]
 FROM
 	[sample_class] [t]

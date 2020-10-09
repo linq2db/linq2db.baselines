@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	DateAdd(minute, -8, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

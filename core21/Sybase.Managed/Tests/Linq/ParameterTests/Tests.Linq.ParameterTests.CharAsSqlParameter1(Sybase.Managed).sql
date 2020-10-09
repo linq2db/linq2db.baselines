@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	'0 ' + char(0) + ' '' 0'
 

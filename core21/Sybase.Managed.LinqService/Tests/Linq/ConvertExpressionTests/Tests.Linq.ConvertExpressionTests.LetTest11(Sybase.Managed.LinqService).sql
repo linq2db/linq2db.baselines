@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[c_1].[ParentID],
+SELECT TOP 1 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]
@@ -14,8 +14,8 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[c_1].[ParentID],
+SELECT TOP 1 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]
@@ -25,7 +25,7 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	1
 FROM
 	[Parent] [p]

@@ -3,9 +3,9 @@
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Person] [t1]

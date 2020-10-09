@@ -3,6 +3,6 @@
 DECLARE @p1 UniVarChar(2) -- String
 SET     @p1 = '23'
 
-SELECT
+SELECT 
 	@p1
 

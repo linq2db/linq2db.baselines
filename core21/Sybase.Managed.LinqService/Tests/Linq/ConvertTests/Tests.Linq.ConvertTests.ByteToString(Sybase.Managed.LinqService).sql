@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[p].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(NVarChar(3), Convert(TinyInt, [t].[ID])) as [c1]
 		FROM
 			[LinqDataTypes] [t]

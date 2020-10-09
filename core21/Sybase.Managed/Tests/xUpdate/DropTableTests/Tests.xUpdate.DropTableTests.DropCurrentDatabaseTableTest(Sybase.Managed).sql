@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[DropTableTest] [t1]
@@ -39,7 +39,7 @@ DROP TABLE [DropTableTest]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[DropTableTest] [t1]

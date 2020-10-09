@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[c_1].[ParentID],
-	[c_1].[ChildID],
+SELECT TOP 1 
+	[c_1].[ParentID], 
+	[c_1].[ChildID], 
 	[c_1].[GrandChildID]
 FROM
 	[GrandChild] [p]

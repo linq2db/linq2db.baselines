@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	DateAdd(week, [t].[SmallIntValue], [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

@@ -49,9 +49,9 @@ COMMIT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Insert_Table_Cache] [t]
@@ -97,9 +97,9 @@ COMMIT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
+SELECT TOP 1 
+	[t].[Id], 
+	[t].[Name], 
 	[t].[Age]
 FROM
 	[PR_1598_Insert_Table_Cache] [t]

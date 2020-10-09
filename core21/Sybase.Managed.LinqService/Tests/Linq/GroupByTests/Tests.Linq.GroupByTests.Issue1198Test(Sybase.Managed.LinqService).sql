@@ -11,9 +11,9 @@ CREATE TABLE [Issue1192Table]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
+SELECT TOP 1 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[Issue1192Table] [t]

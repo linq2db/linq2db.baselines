@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t].[ParentID],
+SELECT 
+	[t].[ParentID], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[Child] [t1]
@@ -17,10 +17,10 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t].[ParentID],
+SELECT 
+	[t].[ParentID], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[Child] [t1]

@@ -6,7 +6,7 @@ DROP TABLE [DropTableTest]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
+SELECT TOP 1 
 	USER_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -14,7 +14,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
+SELECT TOP 1 
 	DB_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -42,7 +42,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[TestDataCore].[dbo].[DropTableTest] [t1]
@@ -55,7 +55,7 @@ DROP TABLE [TestDataCore].[dbo].[DropTableTest]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[TestDataCore].[dbo].[DropTableTest] [t1]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
+SELECT TOP 1 
 	USER_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[dbo].[LinqDataTypes] [t1]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Log10(Convert(Float, [p].[MoneyValue]))) as [c1]
 		FROM
 			[LinqDataTypes] [p]

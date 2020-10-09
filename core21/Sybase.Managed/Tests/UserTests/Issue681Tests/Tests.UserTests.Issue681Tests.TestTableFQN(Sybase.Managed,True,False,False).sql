@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	@@SERVERNAME
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[LinqDataTypes] [t1]

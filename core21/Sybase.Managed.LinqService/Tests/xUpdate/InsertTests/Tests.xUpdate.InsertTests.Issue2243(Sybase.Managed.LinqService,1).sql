@@ -57,10 +57,10 @@ COMMIT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[t1].[id],
-	[t1].[name],
-	[t1].[created_by],
+SELECT TOP 2 
+	[t1].[id], 
+	[t1].[name], 
+	[t1].[created_by], 
 	[t1].[updated_by]
 FROM
 	[test_insert_or_replace] [t1]
@@ -111,10 +111,10 @@ COMMIT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[t1].[id],
-	[t1].[name],
-	[t1].[created_by],
+SELECT TOP 2 
+	[t1].[id], 
+	[t1].[name], 
+	[t1].[created_by], 
 	[t1].[updated_by]
 FROM
 	[test_insert_or_replace] [t1]

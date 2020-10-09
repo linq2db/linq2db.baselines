@@ -135,13 +135,13 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[Id],
-	[t1].[Time],
-	[t1].[Time2],
-	[t1].[DateTime],
-	[t1].[TimeN],
-	[t1].[Time2N],
+SELECT 
+	[t1].[Id], 
+	[t1].[Time], 
+	[t1].[Time2], 
+	[t1].[DateTime], 
+	[t1].[TimeN], 
+	[t1].[Time2N], 
 	[t1].[DateTimeN]
 FROM
 	[Issue1707] [t1]

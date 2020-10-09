@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
@@ -10,11 +10,11 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -22,15 +22,15 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[PersonID_1],
-	[t1].[FirstName],
+SELECT 
+	[t1].[PersonID_1], 
+	[t1].[FirstName], 
 	[x].[Taxonomy]
 FROM
-	(
-		SELECT
-			[person_1].[PersonID],
-			[patient_1].[PersonID] as [PersonID_1],
+	( 
+		SELECT 
+			[person_1].[PersonID], 
+			[patient_1].[PersonID] as [PersonID_1], 
 			[person_1].[FirstName]
 		FROM
 			[Patient] [patient_1],
@@ -47,8 +47,8 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Taxonomy]
 FROM
 	[Doctor] [t1]

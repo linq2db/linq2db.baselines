@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 5
-	[t1].[c1],
+SELECT TOP 5 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Convert(Date, GetDate()) as [c1]
 		FROM
 			[Parent] [v]

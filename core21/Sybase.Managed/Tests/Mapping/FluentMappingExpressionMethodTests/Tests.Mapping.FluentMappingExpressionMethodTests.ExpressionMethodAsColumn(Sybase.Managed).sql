@@ -39,8 +39,8 @@ SELECT 20,120
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Value]
 FROM
 	[InstanceClass] [t1]

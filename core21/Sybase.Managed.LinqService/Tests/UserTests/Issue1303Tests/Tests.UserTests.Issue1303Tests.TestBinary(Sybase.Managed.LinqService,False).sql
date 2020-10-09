@@ -33,9 +33,9 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 2
-	[_].[ID],
-	[_].[Array],
+SELECT TOP 2 
+	[_].[ID], 
+	[_].[Array], 
 	[_].[Binary]
 FROM
 	[Issue1303] [_]
@@ -47,9 +47,9 @@ BeforeExecute
 DECLARE @Array_2 VarBinary(3) -- Binary
 SET     @Array_2 = 0x010203
 
-SELECT TOP 2
-	[_].[ID],
-	[_].[Array],
+SELECT TOP 2 
+	[_].[ID], 
+	[_].[Array], 
 	[_].[Binary]
 FROM
 	[Issue1303] [_]
@@ -61,9 +61,9 @@ BeforeExecute
 DECLARE @Binary_2 VarBinary(2) -- Binary
 SET     @Binary_2 = 0x0405
 
-SELECT TOP 2
-	[_].[ID],
-	[_].[Array],
+SELECT TOP 2 
+	[_].[ID], 
+	[_].[Array], 
 	[_].[Binary]
 FROM
 	[Issue1303] [_]

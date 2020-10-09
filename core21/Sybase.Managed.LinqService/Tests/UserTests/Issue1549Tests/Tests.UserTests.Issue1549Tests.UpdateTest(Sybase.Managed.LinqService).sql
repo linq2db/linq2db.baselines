@@ -73,7 +73,7 @@ UPDATE
 	[billing_TempReading]
 SET
 	[t1].[DevReadingTypeId] = (
-		SELECT
+		SELECT 
 			[w].[Id]
 		FROM
 			[billing_DevReadingType] [w]
@@ -81,7 +81,7 @@ SET
 			[w].[Name] = [t1].[ReadingTypeName] AND [w].[DevTypeId] = [t1].[Devtypeid]
 	),
 	[t1].[Responsibility] = (
-		SELECT
+		SELECT 
 			[w_1].[Responsibility]
 		FROM
 			[billing_DevReadingType] [w_1]

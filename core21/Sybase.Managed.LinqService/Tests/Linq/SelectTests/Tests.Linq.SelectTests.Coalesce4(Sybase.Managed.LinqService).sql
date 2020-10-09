@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Coalesce((
-		SELECT
+		SELECT 
 			[a_Parent].[Value1]
 		FROM
 			[Child] [ch]

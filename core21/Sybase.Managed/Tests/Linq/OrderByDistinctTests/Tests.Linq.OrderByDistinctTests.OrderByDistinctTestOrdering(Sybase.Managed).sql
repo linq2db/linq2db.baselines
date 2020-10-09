@@ -28,7 +28,7 @@ SELECT 100,'Three',1,1
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -40,7 +40,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -50,7 +50,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -62,7 +62,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -72,7 +72,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -85,7 +85,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -96,7 +96,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -109,7 +109,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -120,7 +120,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -133,7 +133,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -144,7 +144,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
@@ -157,7 +157,7 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT TOP 3 
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]

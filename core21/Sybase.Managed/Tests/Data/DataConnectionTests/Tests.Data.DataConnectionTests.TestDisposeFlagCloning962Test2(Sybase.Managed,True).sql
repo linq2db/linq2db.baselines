@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	'test1'
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	'test2'
 

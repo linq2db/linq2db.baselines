@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Sum(Coalesce([a_Parent].[Value1], 0))
 FROM
 	[Child] [t1]

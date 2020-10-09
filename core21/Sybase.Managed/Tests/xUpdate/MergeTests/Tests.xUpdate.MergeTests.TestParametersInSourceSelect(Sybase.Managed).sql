@@ -226,9 +226,9 @@ DECLARE @param Integer -- Int32
 SET     @param = 3
 
 MERGE INTO [TestMerge1] [Target]
-USING (
-	SELECT
-		[_].[Id],
+USING ( 
+	SELECT 
+		[_].[Id], 
 		@param as [source_field0]
 	FROM
 		[TestMerge2] [_]
@@ -247,12 +247,12 @@ SET
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[_].[Id],
-	[_].[Field1],
-	[_].[Field2],
-	[_].[Field3],
-	[_].[Field4],
+SELECT 
+	[_].[Id], 
+	[_].[Field1], 
+	[_].[Field2], 
+	[_].[Field3], 
+	[_].[Field4], 
 	[_].[Field5]
 FROM
 	[TestMerge1] [_]

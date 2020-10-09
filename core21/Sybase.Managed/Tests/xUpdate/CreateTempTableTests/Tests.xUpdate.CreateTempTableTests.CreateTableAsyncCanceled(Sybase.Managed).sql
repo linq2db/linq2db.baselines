@@ -6,7 +6,7 @@ DROP TABLE [TempTable]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]

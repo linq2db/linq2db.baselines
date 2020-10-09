@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[Parent] [t1]

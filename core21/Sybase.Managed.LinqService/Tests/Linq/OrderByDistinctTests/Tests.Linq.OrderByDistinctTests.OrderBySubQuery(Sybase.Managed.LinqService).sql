@@ -43,10 +43,10 @@ SELECT 600,'Three',5,5
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t].[DuplicateData],
+SELECT 
+	[t].[DuplicateData], 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			[OrderByDistinctData] [s]
@@ -54,9 +54,9 @@ SELECT
 			([s].[DuplicateData] IS NULL AND [t].[DuplicateData] IS NULL OR [s].[DuplicateData] = [t].[DuplicateData])
 	)
 FROM
-	(
-		SELECT TOP 2
-			[t1].[Id],
+	( 
+		SELECT TOP 2 
+			[t1].[Id], 
 			[t1].[DuplicateData]
 		FROM
 			[OrderByDistinctData] [t1]

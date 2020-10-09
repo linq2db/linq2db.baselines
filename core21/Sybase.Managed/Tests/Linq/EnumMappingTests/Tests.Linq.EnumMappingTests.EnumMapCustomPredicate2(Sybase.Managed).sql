@@ -26,9 +26,9 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[entity].[ID],
-	[entity].[BigIntValue],
+SELECT 
+	[entity].[ID], 
+	[entity].[BigIntValue], 
 	[entity].[IntValue]
 FROM
 	[LinqDataTypes] [entity]

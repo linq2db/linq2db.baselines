@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Int32Nullable]
 FROM
 	[CreateTableTypes] [t1]

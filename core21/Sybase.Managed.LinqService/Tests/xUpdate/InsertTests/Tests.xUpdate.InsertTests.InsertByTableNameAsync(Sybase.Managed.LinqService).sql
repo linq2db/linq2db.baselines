@@ -97,7 +97,7 @@ SELECT @@IDENTITY
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [t1]
@@ -105,7 +105,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	[xxPerson] [p]

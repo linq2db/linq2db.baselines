@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Convert(Time, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]

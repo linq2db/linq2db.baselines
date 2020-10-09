@@ -20,7 +20,7 @@ SELECT 1
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
+SELECT TOP 1 
 	1
 FROM
 	[SelectExpressionTable] [_]

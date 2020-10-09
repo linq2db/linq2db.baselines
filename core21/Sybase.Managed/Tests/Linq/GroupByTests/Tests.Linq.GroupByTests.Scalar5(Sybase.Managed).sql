@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	Max([ch].[ParentID])
 FROM
 	[Child] [ch]

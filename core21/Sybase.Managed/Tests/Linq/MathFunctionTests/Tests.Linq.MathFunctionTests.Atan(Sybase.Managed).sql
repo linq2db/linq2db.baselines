@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[t].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Floor(Atan(Convert(Float, [p].[MoneyValue]) / 15) * 15) as [c1]
 		FROM
 			[LinqDataTypes] [p]

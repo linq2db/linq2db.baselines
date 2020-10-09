@@ -101,10 +101,10 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [GrandChild] [Target]
-USING (
-	SELECT
-		[t1].[ParentID] + [t2].[ChildID] as [source_field0],
-		[t1].[ParentID] as [LeftId],
+USING ( 
+	SELECT 
+		[t1].[ParentID] + [t2].[ChildID] as [source_field0], 
+		[t1].[ParentID] as [LeftId], 
 		[t2].[ChildID] as [RightId]
 	FROM
 		[Parent] [t1],
@@ -134,9 +134,9 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[GrandChildID],
-	[t1].[ParentID],
+SELECT 
+	[t1].[GrandChildID], 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[GrandChild] [t1]

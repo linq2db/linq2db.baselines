@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[x].[ParentID]
 FROM
 	[Parent] [x]
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT 
 	[x].[ParentID]
 FROM
 	[Parent] [x]

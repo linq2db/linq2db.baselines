@@ -6,7 +6,7 @@ FROM
 	[Parent] [p]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [t1]

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-SELECT
+SELECT 
 	CASE WHEN (NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Child] [c_1]
