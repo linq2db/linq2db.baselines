@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012 (asynchronously)
 
-SELECT
-	[x].[ParentID],
+SELECT 
+	[x].[ParentID], 
 	[x].[Value1]
 FROM
 	[Parent] [x]

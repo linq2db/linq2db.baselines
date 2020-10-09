@@ -10,8 +10,8 @@ BeforeExecute
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		(1,'2020-02-29 17:54:55.1231234 +00:40','2020-02-29T17:54:55.1231234'),
-		(2,'2020-02-29 17:54:55.1231235 +00:40','2020-02-29T17:54:55.1231235')) [Source]
+		(1, '2020-02-29 17:54:55.1231234 +00:40', '2020-02-29T17:54:55.1231234'),
+		(2, '2020-02-29 17:54:55.1231235 +00:40', '2020-02-29T17:54:55.1231235')) [Source]
 (
 	[ID], 
 	[datetimeoffsetDataType], 
@@ -35,9 +35,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[t1].[ID],
-	[t1].[datetimeoffsetDataType],
+SELECT 
+	[t1].[ID], 
+	[t1].[datetimeoffsetDataType], 
 	[t1].[datetime2DataType]
 FROM
 	[AllTypes2] [t1]

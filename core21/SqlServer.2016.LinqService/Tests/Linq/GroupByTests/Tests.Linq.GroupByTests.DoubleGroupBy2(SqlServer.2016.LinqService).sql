@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[t1].[ID],
+SELECT 
+	[t1].[ID], 
 	Sum([t1].[Max_1])
 FROM
-	(
-		SELECT
-			[p].[ParentID] as [ID],
+	( 
+		SELECT 
+			[p].[ParentID] as [ID], 
 			Max([p].[Value1]) as [Max_1]
 		FROM
 			[Parent] [p]

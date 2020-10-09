@@ -73,9 +73,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	N'Id',
-	[selectParam].[Id],
+SELECT 
+	N'Id', 
+	[selectParam].[Id], 
 	Sum(IIF([a_ActualStage].[Id] IS NULL, NULL, [a_ActualStage].[Id]))
 FROM
 	[Task] [selectParam]

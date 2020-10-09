@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	NULL
 FROM
 	[Child] [c_1]
 UNION ALL
-SELECT
-	NULL,
+SELECT 
+	NULL, 
 	[c_2].[Value1]
 FROM
 	[Parent] [c_2]

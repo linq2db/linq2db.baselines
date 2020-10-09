@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[a_Patient].[PersonID],
+SELECT 
+	[a_Patient].[PersonID], 
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]

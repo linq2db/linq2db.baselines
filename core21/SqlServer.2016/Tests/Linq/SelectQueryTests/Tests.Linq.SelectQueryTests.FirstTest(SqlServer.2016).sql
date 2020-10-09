@@ -12,8 +12,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	DateAdd(day, 1, CURRENT_TIMESTAMP),
+SELECT TOP (@take) 
+	DateAdd(day, 1, CURRENT_TIMESTAMP), 
 	DateAdd(day, 2, CURRENT_TIMESTAMP)
 
 BeforeExecute

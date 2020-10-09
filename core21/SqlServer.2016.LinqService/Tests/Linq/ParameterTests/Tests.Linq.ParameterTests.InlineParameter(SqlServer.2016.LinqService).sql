@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT TOP (1)
-	[p].[ParentID],
+SELECT TOP (1) 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]
@@ -12,8 +12,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT TOP (1)
-	[p].[ParentID],
+SELECT TOP (1) 
+	[p].[ParentID], 
 	[p].[Value1]
 FROM
 	[Parent] [p]

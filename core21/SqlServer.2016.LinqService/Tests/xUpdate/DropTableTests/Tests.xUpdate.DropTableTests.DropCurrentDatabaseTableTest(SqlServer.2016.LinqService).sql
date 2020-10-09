@@ -27,7 +27,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[DropTableTest] [t1]
@@ -40,7 +40,7 @@ DROP TABLE [DropTableTest]
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[DropTableTest] [t1]

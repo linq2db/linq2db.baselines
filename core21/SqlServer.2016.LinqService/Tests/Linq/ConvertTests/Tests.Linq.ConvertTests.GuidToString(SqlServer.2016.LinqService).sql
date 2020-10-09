@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[t].[GuidValue]
 FROM
 	[LinqDataTypes] [t]

@@ -109,36 +109,36 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
-SELECT
-	[key_data_result_1].[Id],
-	[key_data_result_1].[BlogId],
-	[key_data_result_1].[Title],
-	[key_data_result_1].[PostContent],
-	[key_data_result_1].[IsDeleted],
-	[key_data_result_1].[Id_1],
-	[key_data_result_1].[Title_1],
-	[key_data_result_1].[Slogan],
-	[key_data_result_1].[UserId],
-	[detail_1].[TagId],
+SELECT 
+	[key_data_result_1].[Id], 
+	[key_data_result_1].[BlogId], 
+	[key_data_result_1].[Title], 
+	[key_data_result_1].[PostContent], 
+	[key_data_result_1].[IsDeleted], 
+	[key_data_result_1].[Id_1], 
+	[key_data_result_1].[Title_1], 
+	[key_data_result_1].[Slogan], 
+	[key_data_result_1].[UserId], 
+	[detail_1].[TagId], 
 	[a_Tag].[Name]
 FROM
-	(
-		SELECT DISTINCT
-			[detail].[Id],
-			[detail].[BlogId],
-			[detail].[Title],
-			[detail].[PostContent],
-			[detail].[IsDeleted],
-			[key_data_result].[Id] as [Id_1],
-			[key_data_result].[Title] as [Title_1],
-			[key_data_result].[Slogan],
+	( 
+		SELECT DISTINCT 
+			[detail].[Id], 
+			[detail].[BlogId], 
+			[detail].[Title], 
+			[detail].[PostContent], 
+			[detail].[IsDeleted], 
+			[key_data_result].[Id] as [Id_1], 
+			[key_data_result].[Title] as [Title_1], 
+			[key_data_result].[Slogan], 
 			[key_data_result].[UserId]
 		FROM
-			(
-				SELECT DISTINCT
-					[b].[Id],
-					[b].[Title],
-					[b].[Slogan],
+			( 
+				SELECT DISTINCT 
+					[b].[Id], 
+					[b].[Title], 
+					[b].[Slogan], 
 					[b].[UserId]
 				FROM
 					[Blog] [b]
@@ -157,22 +157,22 @@ BeforeExecute
 DECLARE @Id_1 Int -- Int32
 SET     @Id_1 = 1
 
-SELECT
-	[key_data_result].[Id],
-	[key_data_result].[Title],
-	[key_data_result].[Slogan],
-	[key_data_result].[UserId],
-	[detail].[Id],
-	[detail].[Title],
-	[detail].[PostContent],
-	[detail].[BlogId],
+SELECT 
+	[key_data_result].[Id], 
+	[key_data_result].[Title], 
+	[key_data_result].[Slogan], 
+	[key_data_result].[UserId], 
+	[detail].[Id], 
+	[detail].[Title], 
+	[detail].[PostContent], 
+	[detail].[BlogId], 
 	[detail].[IsDeleted]
 FROM
-	(
-		SELECT DISTINCT
-			[b].[Id],
-			[b].[Title],
-			[b].[Slogan],
+	( 
+		SELECT DISTINCT 
+			[b].[Id], 
+			[b].[Title], 
+			[b].[Slogan], 
 			[b].[UserId]
 		FROM
 			[Blog] [b]
@@ -188,10 +188,10 @@ BeforeExecute
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
-SELECT
-	[b].[Id],
-	[b].[Title],
-	[b].[Slogan],
+SELECT 
+	[b].[Id], 
+	[b].[Title], 
+	[b].[Slogan], 
 	[b].[UserId]
 FROM
 	[Blog] [b]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[p].[ParentID],
-	[p].[Value1],
-	[c1].[ChildID],
-	[c2].[GrandChildID],
+SELECT 
+	[p].[ParentID], 
+	[p].[Value1], 
+	[c1].[ChildID], 
+	[c2].[GrandChildID], 
 	[c3].[GrandChildID]
 FROM
 	[Parent] [p]

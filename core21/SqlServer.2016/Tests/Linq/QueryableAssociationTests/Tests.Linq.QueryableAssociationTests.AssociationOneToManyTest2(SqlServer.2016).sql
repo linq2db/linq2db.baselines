@@ -61,14 +61,14 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[StrValue]
 FROM
 	[SomeEntity] [e]
-		CROSS APPLY (
-			SELECT TOP (@take)
-				[o].[Id],
+		CROSS APPLY ( 
+			SELECT TOP (@take) 
+				[o].[Id], 
 				[o].[StrValue]
 			FROM
 				[SomeOtherEntity] [o]

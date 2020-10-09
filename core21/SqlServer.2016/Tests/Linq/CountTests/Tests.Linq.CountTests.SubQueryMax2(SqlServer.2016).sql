@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	Max([t2].[cnt])
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT
+		OUTER APPLY ( 
+			SELECT 
 				Count(*) as [cnt]
 			FROM
 				[Child] [t1]

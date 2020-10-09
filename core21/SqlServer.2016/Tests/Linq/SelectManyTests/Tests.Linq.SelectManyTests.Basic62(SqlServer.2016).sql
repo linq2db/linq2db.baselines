@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[_1].[c1]
 FROM
 	[Parent] [cp]
-		CROSS APPLY (
-			SELECT
+		CROSS APPLY ( 
+			SELECT 
 				[_].[ParentID] + [cp].[ParentID] as [c1]
 			FROM
 				[Child] [_]

@@ -14,7 +14,7 @@ BeforeExecute
 
 MERGE INTO [ReviewIndexes] [Target]
 USING (	VALUES
-		(1,N'2')) [Source]
+		(1, N'2')) [Source]
 (
 	[Id], 
 	[Value_1]

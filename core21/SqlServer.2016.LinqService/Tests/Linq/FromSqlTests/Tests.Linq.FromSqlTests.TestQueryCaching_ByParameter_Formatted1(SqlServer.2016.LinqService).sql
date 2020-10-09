@@ -3,7 +3,7 @@
 DECLARE @value_1 Int -- Int32
 SET     @value_1 = NULL
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(
@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @value_1 Int -- Int32
 SET     @value_1 = 1
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(
@@ -27,7 +27,7 @@ BeforeExecute
 DECLARE @value_1 Int -- Int32
 SET     @value_1 = NULL
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(
@@ -39,7 +39,7 @@ BeforeExecute
 DECLARE @value_1 Int -- Int32
 SET     @value_1 = 2
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(
@@ -51,7 +51,7 @@ BeforeExecute
 DECLARE @value_1 Int -- Int32
 SET     @value_1 = 3
 
-SELECT
+SELECT 
 	[t1].[Value1]
 FROM
 	(

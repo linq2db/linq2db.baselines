@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[a_ChildPredicate].[ParentID],
+SELECT 
+	[a_ChildPredicate].[ParentID], 
 	[a_ChildPredicate].[ChildID]
 FROM
 	[Parent] [p]

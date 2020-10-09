@@ -50,7 +50,7 @@ BeforeExecute
 WITH [CTE_1] ([Id])
 AS
 (
-	SELECT
+	SELECT 
 		[t].[Id]
 	FROM
 		[HierarchyTree] [t]
@@ -60,8 +60,8 @@ AS
 [CTE_2] ([ParentId], [Id])
 AS
 (
-	SELECT
-		[t1].[ParentId],
+	SELECT 
+		[t1].[ParentId], 
 		[t1].[Id]
 	FROM
 		[HierarchyTree] [t1]
@@ -69,14 +69,14 @@ AS
 [hierarchyDown] ([Id], [Level])
 AS
 (
-	SELECT
-		[t_1].[Id],
+	SELECT 
+		[t_1].[Id], 
 		0
 	FROM
 		[CTE_1] [t_1]
 	UNION ALL
-	SELECT
-		[t_2].[Id],
+	SELECT 
+		[t_2].[Id], 
 		[h].[Level] + 1
 	FROM
 		[hierarchyDown] [h]
@@ -87,8 +87,8 @@ INSERT INTO [HierarchyData]
 	[Id],
 	[Level]
 )
-SELECT
-	[t2].[Id],
+SELECT 
+	[t2].[Id], 
 	[t2].[Level]
 FROM
 	[hierarchyDown] [t2]
@@ -96,8 +96,8 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Level]
 FROM
 	[HierarchyData] [t1]

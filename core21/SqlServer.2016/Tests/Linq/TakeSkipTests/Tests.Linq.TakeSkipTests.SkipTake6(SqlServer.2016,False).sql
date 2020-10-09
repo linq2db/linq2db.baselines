@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1],
-	(
-		SELECT TOP (3)
+	( 
+		SELECT TOP (3) 
 			[p].[ParentID]
 		FROM
 			[GrandChild] [p]
@@ -18,13 +18,13 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1],
-	(
-		SELECT
+	( 
+		SELECT 
 			[p].[ParentID]
 		FROM
 			[GrandChild] [p]

@@ -3,7 +3,7 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[t1].[ID]
 FROM
 	[dbo].[LinqDataTypes] [t1]

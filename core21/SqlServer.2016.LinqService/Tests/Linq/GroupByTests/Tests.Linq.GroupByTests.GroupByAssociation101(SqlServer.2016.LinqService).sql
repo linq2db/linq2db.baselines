@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
+SELECT 
 	[a_Parent].[Value1]
 FROM
 	[GrandChild] [t1]

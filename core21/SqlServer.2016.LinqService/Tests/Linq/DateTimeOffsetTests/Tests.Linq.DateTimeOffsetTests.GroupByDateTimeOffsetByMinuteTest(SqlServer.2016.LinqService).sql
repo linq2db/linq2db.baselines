@@ -48,12 +48,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-SELECT
-	[t1].[c1],
+SELECT 
+	[t1].[c1], 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			DatePart(minute, [selectParam].[TransactionDate]) as [c1]
 		FROM
 			[Transactions] [selectParam]
