@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`key_data_result`.`ParentID`,
-	`_c`.`ParentID`,
+SELECT 
+	`key_data_result`.`ParentID`, 
+	`_c`.`ParentID`, 
 	`_c`.`ChildID`
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			`cp`.`ParentID`
 		FROM
 			`Parent` `cp`
@@ -23,26 +23,26 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`cp`.`ParentID`,
+SELECT 
+	`cp`.`ParentID`, 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`Child` `c_1`
 		WHERE
 			`c_1`.`ParentID` = `cp`.`ParentID` AND `c_1`.`ChildID` > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			`Child` `c_2`
 		WHERE
 			`c_2`.`ParentID` = `cp`.`ParentID` AND `c_2`.`ChildID` > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			`c_3`.`ParentID`
 		FROM
 			`Child` `c_3`

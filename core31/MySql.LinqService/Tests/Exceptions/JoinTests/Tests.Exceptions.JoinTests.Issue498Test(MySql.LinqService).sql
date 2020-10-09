@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`x`.`ParentID`
 FROM
 	`Parent` `x`
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`x`.`ParentID`
 FROM
 	`Parent` `x`

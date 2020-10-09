@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`ParentID`,
+SELECT 
+	`t1`.`ParentID`, 
 	`t1`.`ChildID`
 FROM
 	`Child` `t1`
@@ -12,8 +12,8 @@ ORDER BY
 BeforeExecute
 --  MySql.Official MySql
 
-SELECT
-	`t1`.`ParentID`,
+SELECT 
+	`t1`.`ParentID`, 
 	`t1`.`ChildID`
 FROM
 	`Child` `t1`

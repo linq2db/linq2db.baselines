@@ -3,6 +3,6 @@
 DECLARE @p Int32
 SET     @p = 1
 
-SELECT
+SELECT 
 	@p as `c1`
 

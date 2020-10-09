@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	NULL as `c1`
 

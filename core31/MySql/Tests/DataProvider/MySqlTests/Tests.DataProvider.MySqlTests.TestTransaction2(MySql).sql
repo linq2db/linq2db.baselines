@@ -23,8 +23,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	`p`.`Value1`
 FROM
 	`Parent` `p`
@@ -37,8 +37,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	`p`.`Value1`
 FROM
 	`Parent` `p`

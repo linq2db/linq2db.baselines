@@ -3,9 +3,9 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`p`.`PersonID`,
-	`p`.`FirstName`,
+SELECT 
+	`p`.`PersonID`, 
+	`p`.`FirstName`, 
 	`p`.`LastName`
 FROM
 	`Person` `p`

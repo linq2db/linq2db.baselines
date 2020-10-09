@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Char_Length(`p`.`FirstName`)
 FROM
 	`Person` `p`

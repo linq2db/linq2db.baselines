@@ -33,9 +33,9 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`t`.`Id`,
-	`t`.`Name`,
+SELECT 
+	`t`.`Id`, 
+	`t`.`Name`, 
 	`t`.`Age`
 FROM
 	`PR_1598_Insert_Null_Table` `t`

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Cast(Floor(`t`.`MoneyValue`) as UNSIGNED)
 FROM
 	`LinqDataTypes` `t`

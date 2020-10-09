@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Person` `_`

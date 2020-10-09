@@ -57,7 +57,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPatient43` `t1`
@@ -105,7 +105,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPatient43` `t1`

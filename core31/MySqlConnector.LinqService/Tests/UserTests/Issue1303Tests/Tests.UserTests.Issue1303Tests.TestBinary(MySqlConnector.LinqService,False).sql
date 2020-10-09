@@ -35,9 +35,9 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	`_`.`ID`,
-	`_`.`Array`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`Array`, 
 	`_`.`Binary`
 FROM
 	`Issue1303` `_`
@@ -52,9 +52,9 @@ SET     @Array_2 = 0x010203
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	`_`.`ID`,
-	`_`.`Array`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`Array`, 
 	`_`.`Binary`
 FROM
 	`Issue1303` `_`
@@ -69,9 +69,9 @@ SET     @Binary_2 = 0x0405
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	`_`.`ID`,
-	`_`.`Array`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`Array`, 
 	`_`.`Binary`
 FROM
 	`Issue1303` `_`

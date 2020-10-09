@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`FirstName`,
+SELECT 
+	`t1`.`FirstName`, 
 	Count(*)
 FROM
 	`Person` `t1`

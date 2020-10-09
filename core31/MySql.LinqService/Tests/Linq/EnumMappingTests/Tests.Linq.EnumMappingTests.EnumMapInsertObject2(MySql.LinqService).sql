@@ -34,7 +34,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`LinqDataTypes` `r`

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Avg(`_`.`ParentID`)
 FROM
 	`Parent` `_`

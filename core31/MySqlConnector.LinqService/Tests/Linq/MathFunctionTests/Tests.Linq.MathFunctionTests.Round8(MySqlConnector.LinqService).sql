@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`t`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN `p`.`MoneyValue` - Floor(`p`.`MoneyValue`) = 0.5 AND Floor(`p`.`MoneyValue`) % 2 = 0
 					THEN Floor(`p`.`MoneyValue`)

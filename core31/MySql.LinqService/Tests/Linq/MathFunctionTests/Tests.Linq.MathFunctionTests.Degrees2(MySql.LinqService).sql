@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Degrees(`p`.`MoneyValue`) as `c1`
 		FROM
 			`LinqDataTypes` `p`

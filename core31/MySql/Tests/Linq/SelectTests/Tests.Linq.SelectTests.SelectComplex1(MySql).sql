@@ -3,11 +3,11 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`_`.`PersonID`,
-	`_`.`Gender`,
-	`_`.`FirstName`,
-	`_`.`MiddleName`,
+SELECT 
+	`_`.`PersonID`, 
+	`_`.`Gender`, 
+	`_`.`FirstName`, 
+	`_`.`MiddleName`, 
 	`_`.`LastName`
 FROM
 	`Person` `_`

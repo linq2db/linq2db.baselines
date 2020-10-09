@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`x`.`ID`,
+SELECT 
+	`x`.`ID`, 
 	`x`.`BigIntValue`
 FROM
 	`LinqDataTypes` `x`

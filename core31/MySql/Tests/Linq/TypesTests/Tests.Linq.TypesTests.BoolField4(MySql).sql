@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`MoneyValue`
 FROM
 	`LinqDataTypes` `t`

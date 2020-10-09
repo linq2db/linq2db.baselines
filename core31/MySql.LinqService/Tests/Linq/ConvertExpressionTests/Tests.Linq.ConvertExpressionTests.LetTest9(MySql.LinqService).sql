@@ -3,20 +3,20 @@
 DECLARE @take Int32
 SET     @take = 10
 
-SELECT
-	`key_data_result`.`ParentID`,
-	`key_data_result`.`Value1`,
-	`_c`.`ParentID`,
+SELECT 
+	`key_data_result`.`ParentID`, 
+	`key_data_result`.`Value1`, 
+	`_c`.`ParentID`, 
 	`_c`.`ChildID`
 FROM
-	(
-		SELECT DISTINCT
-			`t1`.`ParentID`,
+	( 
+		SELECT DISTINCT 
+			`t1`.`ParentID`, 
 			`t1`.`Value1`
 		FROM
-			(
-				SELECT
-					`p`.`ParentID`,
+			( 
+				SELECT 
+					`p`.`ParentID`, 
 					`p`.`Value1`
 				FROM
 					`Parent` `p`
@@ -32,8 +32,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 10
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	`p`.`Value1`
 FROM
 	`Parent` `p`

@@ -19,10 +19,10 @@ CREATE TABLE `TestTable`
 BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 
-SELECT
-	`t1`.`ID`,
-	`t1`.`Field1`,
-	`t1`.`Field2`,
+SELECT 
+	`t1`.`ID`, 
+	`t1`.`Field1`, 
+	`t1`.`Field2`, 
 	`t1`.`CreatedOn`
 FROM
 	`TestTable` `t1`

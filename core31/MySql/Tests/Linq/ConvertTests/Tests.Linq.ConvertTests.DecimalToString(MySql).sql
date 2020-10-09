@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`p`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(`t`.`MoneyValue` as CHAR(31)) as `c1`
 		FROM
 			`LinqDataTypes` `t`

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT DISTINCT
-			`p`.`ParentID`,
+	( 
+		SELECT DISTINCT 
+			`p`.`ParentID`, 
 			`p`.`Value1`
 		FROM
 			`Parent` `p`

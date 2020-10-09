@@ -42,7 +42,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`GrandChild` `gc`
@@ -62,7 +62,7 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`GrandChild` `gc`

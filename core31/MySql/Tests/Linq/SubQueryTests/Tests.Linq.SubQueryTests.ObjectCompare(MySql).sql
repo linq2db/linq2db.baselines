@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	`c_2`.`ChildID`
 FROM
 	`Parent` `p`,
-	(
-		SELECT
-			`c_1`.`ChildID` + 1 as `ChildID`,
-			`a_Parent`.`ParentID`,
+	( 
+		SELECT 
+			`c_1`.`ChildID` + 1 as `ChildID`, 
+			`a_Parent`.`ParentID`, 
 			`a_Parent`.`Value1`
 		FROM
 			`Child` `c_1`

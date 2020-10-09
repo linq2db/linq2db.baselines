@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	DayOfYear(`t`.`DateTimeValue`) % 7
 FROM
 	`LinqDataTypes` `t`

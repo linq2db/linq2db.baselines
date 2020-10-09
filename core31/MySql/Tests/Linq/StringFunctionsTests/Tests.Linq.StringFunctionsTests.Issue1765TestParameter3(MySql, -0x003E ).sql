@@ -31,7 +31,7 @@ BeforeExecute
 DECLARE @separator VarChar(4) -- String
 SET     @separator = ' -> '
 
-SELECT
+SELECT 
 	GROUP_CONCAT(`t1`.`Value4` ORDER BY `t1`.`Value4`, `t1`.`Value3` DESC SEPARATOR @separator)
 FROM
 	`SampleClass` `t1`

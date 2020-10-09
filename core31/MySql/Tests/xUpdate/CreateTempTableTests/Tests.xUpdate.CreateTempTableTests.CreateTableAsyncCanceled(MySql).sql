@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS `TempTable`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`p`.`ParentID`
 FROM
 	`Parent` `p`

@@ -103,7 +103,7 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPerson` `t1`
@@ -111,7 +111,7 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPerson` `p`

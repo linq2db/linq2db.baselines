@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Max(`x`.`PersonID`)
 FROM
 	`Person` `x`
@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Person` `p`

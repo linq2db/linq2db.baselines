@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	Cast(`t`.`MoneyValue` as NChar(20))
 FROM
 	`LinqDataTypes` `t`

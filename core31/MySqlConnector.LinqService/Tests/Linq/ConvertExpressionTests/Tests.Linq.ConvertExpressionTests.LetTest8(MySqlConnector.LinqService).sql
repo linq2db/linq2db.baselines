@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`key_data_result`.`ParentID`,
-	`_c`.`ParentID`,
+SELECT 
+	`key_data_result`.`ParentID`, 
+	`_c`.`ParentID`, 
 	`_c`.`ChildID`
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			`p`.`ParentID`
 		FROM
 			`Parent` `p`
@@ -19,13 +19,13 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`key_data_result`.`ParentID`,
-	`_c`.`ParentID`,
+SELECT 
+	`key_data_result`.`ParentID`, 
+	`_c`.`ParentID`, 
 	`_c`.`ChildID`
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			`p`.`ParentID`
 		FROM
 			`Parent` `p`
@@ -37,18 +37,18 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`Child` `c_1`
 		WHERE
 			`c_1`.`ParentID` = `p`.`ParentID` AND `c_1`.`ChildID` > -100
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			`Child` `c_2`

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`t`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Ceiling(`p`.`MoneyValue`) as `c1`
 		FROM
 			`LinqDataTypes` `p`

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Extract(year from `t`.`DateTimeValue`)
 FROM
 	`LinqDataTypes` `t`

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t1`.`ParentID`,
+SELECT 
+	`t1`.`ParentID`, 
 	`t1`.`ChildID`
 FROM
 	`Child` `t1`
@@ -13,8 +13,8 @@ LIMIT 2,5
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t1`.`ParentID`,
+SELECT 
+	`t1`.`ParentID`, 
 	`t1`.`ChildID`
 FROM
 	`Child` `t1`

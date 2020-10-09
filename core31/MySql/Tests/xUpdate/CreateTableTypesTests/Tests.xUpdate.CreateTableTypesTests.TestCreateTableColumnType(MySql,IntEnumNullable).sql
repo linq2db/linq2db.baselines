@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
+SELECT 
+	`t1`.`Id`, 
 	`t1`.`IntEnumNullable`
 FROM
 	`CreateTableTypes` `t1`

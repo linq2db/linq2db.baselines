@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Lower(`p`.`Taxonomy`)
 FROM
 	`Doctor` `p`

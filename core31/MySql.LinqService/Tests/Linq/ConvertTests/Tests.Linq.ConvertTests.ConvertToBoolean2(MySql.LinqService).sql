@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`p`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN `t`.`MoneyValue` - 4.5 = 0
 					THEN 0

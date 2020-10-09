@@ -67,27 +67,27 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t1`.`ne.eds ``escaPing`,
-	`t1`.`Bit_1`,
-	`t1`.`Bit_2`,
-	`t1`.`Bit_3`,
-	`t1`.`Bit_4`,
-	`t1`.`Bit_5`,
-	`t1`.`needs escaping2`,
-	`t1`.`Binary_1`,
-	`t1`.`Binary_2`,
-	`t1`.`Binary_3`,
-	`t1`.`Binary_4`,
-	`t1`.`VarBinary_1`,
-	`t1`.`VarBinary_2`,
-	`t1`.`Blob_1`,
-	`t1`.`Blob_2`,
-	`t1`.`TinyBlob_1`,
-	`t1`.`TinyBlob_2`,
-	`t1`.`MediumBlob_1`,
-	`t1`.`MediumBlob_2`,
-	`t1`.`LongBlob_1`,
+SELECT 
+	`t1`.`ne.eds ``escaPing`, 
+	`t1`.`Bit_1`, 
+	`t1`.`Bit_2`, 
+	`t1`.`Bit_3`, 
+	`t1`.`Bit_4`, 
+	`t1`.`Bit_5`, 
+	`t1`.`needs escaping2`, 
+	`t1`.`Binary_1`, 
+	`t1`.`Binary_2`, 
+	`t1`.`Binary_3`, 
+	`t1`.`Binary_4`, 
+	`t1`.`VarBinary_1`, 
+	`t1`.`VarBinary_2`, 
+	`t1`.`Blob_1`, 
+	`t1`.`Blob_2`, 
+	`t1`.`TinyBlob_1`, 
+	`t1`.`TinyBlob_2`, 
+	`t1`.`MediumBlob_1`, 
+	`t1`.`MediumBlob_2`, 
+	`t1`.`LongBlob_1`, 
 	`t1`.`LongBlob_2`
 FROM
 	`NeedS.esca Pin``g` `t1`

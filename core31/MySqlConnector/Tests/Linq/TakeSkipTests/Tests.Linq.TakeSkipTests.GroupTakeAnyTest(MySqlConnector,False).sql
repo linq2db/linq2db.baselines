@@ -22,9 +22,9 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`TakeSkipClass` `t1`

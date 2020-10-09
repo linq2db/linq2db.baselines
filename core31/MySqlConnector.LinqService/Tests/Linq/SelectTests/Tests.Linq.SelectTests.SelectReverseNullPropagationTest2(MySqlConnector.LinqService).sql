@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t1`.`c_1`,
-	`t1`.`ChildID`,
-	`t1`.`ParentID`,
+SELECT 
+	`t1`.`c_1`, 
+	`t1`.`ChildID`, 
+	`t1`.`ParentID`, 
 	`t1`.`Value1`
 FROM
 	`Parent` `p`
-		LEFT JOIN (
-			SELECT
-				`gr`.`ParentID` as `c_1`,
-				`gr`.`ChildID`,
-				`a_Parent`.`ParentID`,
+		LEFT JOIN ( 
+			SELECT 
+				`gr`.`ParentID` as `c_1`, 
+				`gr`.`ChildID`, 
+				`a_Parent`.`ParentID`, 
 				`a_Parent`.`Value1`
 			FROM
 				`Child` `gr`

@@ -5,12 +5,12 @@ SET     @take = 10
 DECLARE @take_1 Int32
 SET     @take_1 = 10
 
-SELECT
-	`p_1`.`ParentID`,
+SELECT 
+	`p_1`.`ParentID`, 
 	`c_1`.`ChildID`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			`p`.`ParentID`
 		FROM
 			`Parent` `p`
@@ -18,8 +18,8 @@ FROM
 			`p`.`ParentID` > 0
 		LIMIT @take
 	) `p_1`,
-	(
-		SELECT
+	( 
+		SELECT 
 			`t1`.`ChildID`
 		FROM
 			`Child` `t1`

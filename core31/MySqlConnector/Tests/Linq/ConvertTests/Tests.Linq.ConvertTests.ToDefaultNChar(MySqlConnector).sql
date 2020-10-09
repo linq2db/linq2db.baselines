@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Cast(`t`.`MoneyValue` as NChar)
 FROM
 	`LinqDataTypes` `t`

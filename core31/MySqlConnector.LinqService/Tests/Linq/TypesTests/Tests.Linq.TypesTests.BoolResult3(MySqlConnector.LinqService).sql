@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`p`.`PersonID` = 1
 FROM
 	`Person` `p`

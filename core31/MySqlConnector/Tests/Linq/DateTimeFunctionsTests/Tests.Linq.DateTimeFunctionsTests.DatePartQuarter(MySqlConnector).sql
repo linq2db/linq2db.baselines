@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Extract(quarter from `t`.`DateTimeValue`)
 FROM
 	`LinqDataTypes` `t`

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`p`.`c1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN `t`.`MoneyValue` = 0 THEN 0
 				ELSE 1

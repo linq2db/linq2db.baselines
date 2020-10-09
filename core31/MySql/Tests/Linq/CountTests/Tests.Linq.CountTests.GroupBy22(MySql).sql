@@ -3,13 +3,13 @@
 DECLARE @n Int32
 SET     @n = 1
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					`ch`.`ParentID` + 1 as `ParentID`
 				FROM
 					`Child` `ch`
@@ -19,8 +19,8 @@ SELECT
 			`ch_1`.`ParentID` + 1 > @n
 	)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			`ch_2`.`ParentID` + 1 as `ParentID`
 		FROM
 			`Child` `ch_2`

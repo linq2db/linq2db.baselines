@@ -17,7 +17,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`Person` `c_1`

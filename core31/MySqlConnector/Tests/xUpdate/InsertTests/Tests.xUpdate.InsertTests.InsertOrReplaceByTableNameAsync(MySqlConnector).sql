@@ -57,7 +57,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPatient46` `t1`
@@ -105,7 +105,7 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	`xxPatient46` `t1`

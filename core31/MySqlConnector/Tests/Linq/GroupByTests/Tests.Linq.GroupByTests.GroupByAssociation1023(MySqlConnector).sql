@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`g_1`.`Value1`
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					`GrandChild` `keyParam`
@@ -15,9 +15,9 @@ FROM
 				WHERE
 					`a_Parent_3`.`ParentID` = `a_Parent`.`ParentID` AND
 					`keyParam`.`ChildID` >= 20
-			) as `cnt`,
+			) as `cnt`, 
 			(
-				SELECT
+				SELECT 
 					Sum(`keyParam_1`.`ParentID`)
 				FROM
 					`GrandChild` `keyParam_1`
@@ -25,9 +25,9 @@ FROM
 				WHERE
 					`a_Parent_3`.`ParentID` = `a_Parent_1`.`ParentID` AND
 					`keyParam_1`.`ChildID` >= 19
-			) as `Sum_1`,
+			) as `Sum_1`, 
 			(
-				SELECT
+				SELECT 
 					Max(`keyParam_2`.`ParentID`)
 				FROM
 					`GrandChild` `keyParam_2`
@@ -35,7 +35,7 @@ FROM
 				WHERE
 					`a_Parent_3`.`ParentID` = `a_Parent_2`.`ParentID` AND
 					`keyParam_2`.`ChildID` >= 19
-			) as `ex`,
+			) as `ex`, 
 			`a_Parent_3`.`Value1`
 		FROM
 			`GrandChild` `t1`

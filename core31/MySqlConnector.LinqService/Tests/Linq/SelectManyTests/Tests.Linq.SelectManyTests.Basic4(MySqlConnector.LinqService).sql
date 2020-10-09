@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`_1`.`c1`
 FROM
 	`Parent` `cp`
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				`_`.`ParentID` + 1 as `c1`
 			FROM
 				`Child` `_`

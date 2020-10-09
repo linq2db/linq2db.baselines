@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Sum(`c_1`.`ParentID` * `c_1`.`ChildID`)
 		FROM
 			`Child` `c_1`

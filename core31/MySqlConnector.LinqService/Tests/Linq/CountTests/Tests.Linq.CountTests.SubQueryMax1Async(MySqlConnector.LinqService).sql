@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-SELECT
+SELECT 
 	Max(`t1`.`cnt`)
 FROM
 	`Parent` `p`
-		LEFT JOIN (
-			SELECT
-				Count(*) as `cnt`,
+		LEFT JOIN ( 
+			SELECT 
+				Count(*) as `cnt`, 
 				`a_Parent`.`ParentID`
 			FROM
 				`Child` `c_1`

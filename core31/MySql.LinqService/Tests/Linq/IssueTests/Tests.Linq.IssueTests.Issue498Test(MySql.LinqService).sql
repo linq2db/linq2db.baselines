@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`x`.`ParentID`,
+SELECT 
+	`x`.`ParentID`, 
 	Count(*)
 FROM
 	`Child` `x`

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`GrandChild` `x`
@@ -14,9 +14,9 @@ SELECT
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`GrandChild` `x`

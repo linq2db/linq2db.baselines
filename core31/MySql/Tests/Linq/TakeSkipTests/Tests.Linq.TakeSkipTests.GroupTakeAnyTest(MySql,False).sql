@@ -22,9 +22,9 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			`TakeSkipClass` `t1`

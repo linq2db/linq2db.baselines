@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	`p`.`Value1`
 FROM
 	`Parent` `p`
@@ -12,8 +12,8 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`p`.`ParentID`,
+SELECT 
+	`p`.`ParentID`, 
 	`p`.`Value1`
 FROM
 	`Parent` `p`

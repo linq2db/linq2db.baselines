@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`p`.`PersonID`,
-	Coalesce(`p`.`FirstName`, 'None'),
+SELECT 
+	`p`.`PersonID`, 
+	Coalesce(`p`.`FirstName`, 'None'), 
 	Coalesce(`p`.`MiddleName`, 'None')
 FROM
 	`Person` `p`

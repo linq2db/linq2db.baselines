@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`c_1`.`ParentID`,
+SELECT 
+	`c_1`.`ParentID`, 
 	`g_1`.`GrandChildID`
 FROM
 	`GrandChild` `g_1`

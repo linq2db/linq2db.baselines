@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`a_MiddleRuntime`.`ParentID`,
-	`a_MiddleRuntime`.`ChildID`,
-	`a_MiddleRuntime`.`ParentID_1`,
-	`a_MiddleRuntime`.`ChildID_1`,
+SELECT 
+	`a_MiddleRuntime`.`ParentID`, 
+	`a_MiddleRuntime`.`ChildID`, 
+	`a_MiddleRuntime`.`ParentID_1`, 
+	`a_MiddleRuntime`.`ChildID_1`, 
 	`a_MiddleRuntime`.`GrandChildID`
 FROM
 	`Parent` `t`
-		LEFT JOIN (
-			SELECT
-				`t1`.`ParentID`,
-				`t1`.`ChildID`,
-				`a_Bottom`.`ParentID` as `ParentID_1`,
-				`a_Bottom`.`ChildID` as `ChildID_1`,
+		LEFT JOIN ( 
+			SELECT 
+				`t1`.`ParentID`, 
+				`t1`.`ChildID`, 
+				`a_Bottom`.`ParentID` as `ParentID_1`, 
+				`a_Bottom`.`ChildID` as `ChildID_1`, 
 				`a_Bottom`.`GrandChildID`
 			FROM
 				`Child` `t1`

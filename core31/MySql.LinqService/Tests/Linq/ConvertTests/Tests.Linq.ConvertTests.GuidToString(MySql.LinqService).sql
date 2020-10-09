@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
+SELECT 
 	`t`.`GuidValue`
 FROM
 	`LinqDataTypes` `t`

@@ -53,14 +53,14 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	`_`.`ID`,
-	`_`.`MoneyValue`,
-	`_`.`DateTimeValue`,
-	`_`.`BoolValue`,
-	`_`.`GuidValue`,
-	`_`.`BinaryValue`,
-	`_`.`SmallIntValue`,
+SELECT 
+	`_`.`ID`, 
+	`_`.`MoneyValue`, 
+	`_`.`DateTimeValue`, 
+	`_`.`BoolValue`, 
+	`_`.`GuidValue`, 
+	`_`.`BinaryValue`, 
+	`_`.`SmallIntValue`, 
 	`_`.`StringValue`
 FROM
 	`LinqDataTypes` `_`

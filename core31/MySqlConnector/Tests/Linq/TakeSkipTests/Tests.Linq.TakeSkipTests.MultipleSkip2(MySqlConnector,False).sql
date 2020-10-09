@@ -22,7 +22,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`t1`.`Value`
 FROM
 	`TakeSkipClass` `t1`
@@ -33,7 +33,7 @@ LIMIT 3,9223372036854775807
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
+SELECT 
 	`t1`.`Value`
 FROM
 	`TakeSkipClass` `t1`
