@@ -97,7 +97,7 @@ RETURNING
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson" t1
@@ -105,7 +105,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPerson" p

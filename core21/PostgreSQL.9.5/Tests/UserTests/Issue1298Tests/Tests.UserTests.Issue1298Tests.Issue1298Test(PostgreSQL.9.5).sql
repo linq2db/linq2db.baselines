@@ -100,15 +100,15 @@ SET     @take_1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	x.ref1,
-	t1.asdfgh,
+SELECT 
+	x.ref1, 
+	t1.asdfgh, 
 	t1.is_empty
 FROM
 	mega_composites x
-		LEFT JOIN LATERAL (
-			SELECT
-				q.asdfgh,
+		LEFT JOIN LATERAL ( 
+			SELECT 
+				q.asdfgh, 
 				1 as is_empty
 			FROM
 				qwerty q

@@ -25,30 +25,30 @@ WITH RECURSIVE "categoryHierarchy"
 )
 AS
 (
-	SELECT
-		"innerC"."Id",
-		"innerC"."ParentId",
-		"innerC"."Name",
-		"innerC"."Id",
+	SELECT 
+		"innerC"."Id", 
+		"innerC"."ParentId", 
+		"innerC"."Name", 
+		"innerC"."Id", 
 		0
 	FROM
 		"Issue1564Category" "innerC"
 	UNION ALL
-	SELECT
-		c_1."Id",
-		c_1."ParentId",
-		c_1."Name",
-		ch."RootCategoryId",
+	SELECT 
+		c_1."Id", 
+		c_1."ParentId", 
+		c_1."Name", 
+		ch."RootCategoryId", 
 		ch."Level" + 1
 	FROM
 		"Issue1564Category" c_1
 			INNER JOIN "categoryHierarchy" ch ON ch."ParentCategoryId" = c_1."Id"
 )
-SELECT
-	t1."CategoryId",
-	t1."ParentCategoryId",
-	t1."Name",
-	t1."RootCategoryId",
+SELECT 
+	t1."CategoryId", 
+	t1."ParentCategoryId", 
+	t1."Name", 
+	t1."RootCategoryId", 
 	t1."Level"
 FROM
 	"categoryHierarchy" t1
@@ -66,31 +66,31 @@ WITH RECURSIVE "categoryHierarchy"
 )
 AS
 (
-	SELECT
-		"innerC"."Id",
-		"innerC"."ParentId",
-		"innerC"."Name",
-		"innerC"."Id",
+	SELECT 
+		"innerC"."Id", 
+		"innerC"."ParentId", 
+		"innerC"."Name", 
+		"innerC"."Id", 
 		0
 	FROM
 		"Issue1564Category" "innerC"
 	UNION ALL
-	SELECT
-		c_1."Id",
-		c_1."ParentId",
-		c_1."Name",
-		ch."RootCategoryId",
+	SELECT 
+		c_1."Id", 
+		c_1."ParentId", 
+		c_1."Name", 
+		ch."RootCategoryId", 
 		ch."Level" + 1
 	FROM
 		"Issue1564Category" c_1
 			INNER JOIN "categoryHierarchy" ch ON ch."ParentCategoryId" = c_1."Id"
 )
-SELECT
-	c_2."Id",
-	c_2."IsVisible",
-	c_2."DisplayOrder",
+SELECT 
+	c_2."Id", 
+	c_2."IsVisible", 
+	c_2."DisplayOrder", 
 	(
-		SELECT
+		SELECT 
 			STRING_AGG(c1."Name", ' -> ' ORDER BY c1."Level" DESC)
 		FROM
 			"categoryHierarchy" c1

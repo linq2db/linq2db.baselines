@@ -1,26 +1,26 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	p."ParentID",
-	p."Value1",
-	t2.gc,
-	t2."ChildID",
-	t2."GrandChildID",
+SELECT 
+	p."ParentID", 
+	p."Value1", 
+	t2.gc, 
+	t2."ChildID", 
+	t2."GrandChildID", 
 	t2.is_empty
 FROM
 	"Child" ch
 		INNER JOIN "Parent" p ON ch."ParentID" = p."ParentID"
-		LEFT JOIN (
-			SELECT
-				gc_1."ParentID" as gc,
-				gc_1."ChildID",
-				gc_1."GrandChildID",
+		LEFT JOIN ( 
+			SELECT 
+				gc_1."ParentID" as gc, 
+				gc_1."ChildID", 
+				gc_1."GrandChildID", 
 				1 as is_empty
 			FROM
 				"GrandChild" gc_1
-					INNER JOIN (
-						SELECT
+					INNER JOIN ( 
+						SELECT 
 							Max(t1."GrandChildID") as c1
 						FROM
 							"GrandChild" t1

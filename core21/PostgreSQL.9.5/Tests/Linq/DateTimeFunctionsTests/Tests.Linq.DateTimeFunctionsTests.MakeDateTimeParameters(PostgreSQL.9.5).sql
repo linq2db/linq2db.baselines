@@ -3,11 +3,11 @@
 DECLARE @p1 Text(5) -- String
 SET     @p1 = '2010-'
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast((:p1 || Cast(p."ID" as VarChar(11)) || '-1') as Date) as c1
 		FROM
 			"LinqDataTypes" p

@@ -22,9 +22,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"TakeSkipClass" t1

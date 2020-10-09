@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	(NOT EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" c_1

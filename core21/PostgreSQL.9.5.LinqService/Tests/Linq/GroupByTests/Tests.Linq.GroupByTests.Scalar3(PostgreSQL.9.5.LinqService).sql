@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Max(id."ChildID")
 		FROM
 			"Child" id

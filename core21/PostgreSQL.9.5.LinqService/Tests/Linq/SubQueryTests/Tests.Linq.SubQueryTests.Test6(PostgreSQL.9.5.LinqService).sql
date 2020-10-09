@@ -3,19 +3,19 @@
 DECLARE @id_1 Integer -- Int32
 SET     @id_1 = 2
 
-SELECT
-	c_1."ChildID",
-	c_1."ParentID",
+SELECT 
+	c_1."ChildID", 
+	c_1."ParentID", 
 	(
-		SELECT
+		SELECT 
 			Sum(g_1."ChildID" * g_1."GrandChildID")
 		FROM
 			"GrandChild" g_1
 		WHERE
 			g_1."ChildID" = c_1."ChildID" AND g_1."GrandChildID" > 0
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			"GrandChild" g_2

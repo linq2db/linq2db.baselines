@@ -33,7 +33,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"LinqDataTypes" r

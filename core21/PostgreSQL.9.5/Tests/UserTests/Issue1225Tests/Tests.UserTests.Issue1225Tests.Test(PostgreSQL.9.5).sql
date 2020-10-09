@@ -73,9 +73,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	'Id',
-	"selectParam"."Id",
+SELECT 
+	'Id', 
+	"selectParam"."Id", 
 	Sum(CASE
 		WHEN "a_ActualStage"."Id" IS NULL
 			THEN NULL

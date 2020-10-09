@@ -5,7 +5,7 @@ SET     @value_1 = 6579.64648
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Cast(:value_1 as Decimal(29,10))
 FROM
 	"LinqDataTypes" t1
@@ -18,7 +18,7 @@ SET     @value_1 = 6579.646
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Cast(:value_1 as Decimal(29,10))
 FROM
 	"LinqDataTypes" t1
@@ -31,7 +31,7 @@ SET     @value_1 = 6579.6464800000003
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Cast(:value_1 as Decimal(29,10))
 FROM
 	"LinqDataTypes" t1
@@ -44,7 +44,7 @@ SET     @value_1 = 6579.64648
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Cast(:value_1 as Real)
 FROM
 	"LinqDataTypes" t1
@@ -57,7 +57,7 @@ SET     @value_1 = 6579.646
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Cast(:value_1 as Real)
 FROM
 	"LinqDataTypes" t1
@@ -70,7 +70,7 @@ SET     @value_1 = 6579.6464800000003
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Cast(:value_1 as Real)
 FROM
 	"LinqDataTypes" t1
@@ -83,7 +83,7 @@ SET     @value_1 = 6579.64648
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Cast(:value_1 as Float)
 FROM
 	"LinqDataTypes" t1
@@ -96,7 +96,7 @@ SET     @value_1 = 6579.646
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Cast(:value_1 as Float)
 FROM
 	"LinqDataTypes" t1
@@ -109,7 +109,7 @@ SET     @value_1 = 6579.6464800000003
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Cast(:value_1 as Float)
 FROM
 	"LinqDataTypes" t1

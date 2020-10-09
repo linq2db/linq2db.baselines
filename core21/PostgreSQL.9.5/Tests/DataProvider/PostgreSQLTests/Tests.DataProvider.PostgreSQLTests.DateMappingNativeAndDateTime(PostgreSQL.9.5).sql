@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Max(t1."ID")
 FROM
 	"AllTypes" t1
@@ -39,7 +39,7 @@ BeforeExecute
 DECLARE @maxId Integer -- Int32
 SET     @maxId = 2
 
-SELECT
+SELECT 
 	t1."dateDataType"
 FROM
 	"AllTypes" t1
@@ -53,7 +53,7 @@ BeforeExecute
 DECLARE @maxId Integer -- Int32
 SET     @maxId = 2
 
-SELECT
+SELECT 
 	t1."dateDataType"
 FROM
 	"AllTypes" t1

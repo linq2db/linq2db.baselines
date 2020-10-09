@@ -5,7 +5,7 @@ SET     @p1 = 1
 DECLARE @p2 Integer -- Int32
 SET     @p2 = 10
 
-SELECT
+SELECT 
 	t1
 FROM
 	GENERATE_SERIES(:p1, :p2) t1
@@ -19,7 +19,7 @@ SET     @p2 = 10
 DECLARE @p3 Integer -- Int32
 SET     @p3 = 2
 
-SELECT
+SELECT 
 	t1
 FROM
 	GENERATE_SERIES(:p1, :p2, :p3) t1
@@ -33,7 +33,7 @@ SET     @p2 = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @p3 Interval -- Object
 SET     @p3 = 05:00:00
 
-SELECT
+SELECT 
 	t1
 FROM
 	GENERATE_SERIES(:p1, :p2, :p3) t1
@@ -51,9 +51,9 @@ SET     @DateTime_1 = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @p4 Interval -- Object
 SET     @p4 = 01:00:00
 
-SELECT
-	t1_1,
-	t2_1,
+SELECT 
+	t1_1, 
+	t2_1, 
 	d
 FROM
 	GENERATE_SERIES(:p1, :p2) t1_1

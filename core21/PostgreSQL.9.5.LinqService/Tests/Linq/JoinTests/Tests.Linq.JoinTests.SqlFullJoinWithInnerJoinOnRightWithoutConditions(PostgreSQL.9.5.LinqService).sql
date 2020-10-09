@@ -3,17 +3,17 @@
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
 
-SELECT
-	left_3."ParentID",
-	left_3."Value1",
-	t1."ParentID",
+SELECT 
+	left_3."ParentID", 
+	left_3."Value1", 
+	t1."ParentID", 
 	t1."Value1"
 FROM
 	"Parent" left_3
 		INNER JOIN "Parent" left2 ON left_3."Value1" = left2."Value1" + 2
-		FULL JOIN (
-			SELECT
-				p."Value1",
+		FULL JOIN ( 
+			SELECT 
+				p."Value1", 
 				p."ParentID"
 			FROM
 				"Parent" p

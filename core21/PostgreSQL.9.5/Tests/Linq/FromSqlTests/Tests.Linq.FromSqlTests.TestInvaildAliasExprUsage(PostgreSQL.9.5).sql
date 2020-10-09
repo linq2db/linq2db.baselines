@@ -3,7 +3,7 @@
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 1
 
-SELECT
+SELECT 
 	c_1
 FROM
 	(

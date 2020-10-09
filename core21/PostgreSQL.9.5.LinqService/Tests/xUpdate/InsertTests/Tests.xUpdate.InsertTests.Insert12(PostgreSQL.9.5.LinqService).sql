@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Max(t."PersonID")
 FROM
 	"Person" t

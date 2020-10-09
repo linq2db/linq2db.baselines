@@ -24,7 +24,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	d."Not Identifier"
 FROM
 	"DynamicTable" d

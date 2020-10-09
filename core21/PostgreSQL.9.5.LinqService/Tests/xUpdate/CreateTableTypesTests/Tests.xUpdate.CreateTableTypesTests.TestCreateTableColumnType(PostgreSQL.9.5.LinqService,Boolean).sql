@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
+SELECT 
+	t1."Id", 
 	t1."Boolean"
 FROM
 	"CreateTableTypes" t1

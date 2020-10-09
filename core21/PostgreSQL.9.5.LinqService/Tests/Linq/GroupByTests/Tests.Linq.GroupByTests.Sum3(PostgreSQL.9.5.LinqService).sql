@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Sum(p."ChildID")
 		FROM
 			"Child" p

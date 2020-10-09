@@ -1,54 +1,54 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	VERSION(),
-	CURRENT_CATALOG,
-	CURRENT_DATABASE(),
-	CURRENT_ROLE,
-	CURRENT_SCHEMA,
-	CURRENT_USER,
+SELECT 
+	VERSION(), 
+	CURRENT_CATALOG, 
+	CURRENT_DATABASE(), 
+	CURRENT_ROLE, 
+	CURRENT_SCHEMA, 
+	CURRENT_USER, 
 	SESSION_USER
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	VERSION()
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	CURRENT_CATALOG
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	CURRENT_DATABASE()
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	CURRENT_ROLE
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	CURRENT_SCHEMA
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	CURRENT_USER
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	SESSION_USER
 

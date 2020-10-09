@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	p."ParentID",
+SELECT 
+	p."ParentID", 
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"Child" c_1

@@ -33,7 +33,7 @@ BeforeExecute
 WITH "CTE_1" ("ParentID")
 AS
 (
-	SELECT
+	SELECT 
 		c_1."ParentID"
 	FROM
 		"CteChild" c_1
@@ -44,7 +44,7 @@ DELETE FROM
 	"CteChild" t1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			"CteChild" c_2

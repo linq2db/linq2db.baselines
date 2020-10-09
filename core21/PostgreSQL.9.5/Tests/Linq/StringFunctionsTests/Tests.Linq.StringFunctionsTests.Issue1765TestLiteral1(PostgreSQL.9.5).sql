@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	STRING_AGG(t."Value4", ' -> ')
 FROM
 	"SampleClass" t

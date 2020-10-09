@@ -34,7 +34,7 @@ SET     @Id = 2
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	c_1."Id"
 FROM
 	"AsyncDataTable" c_1

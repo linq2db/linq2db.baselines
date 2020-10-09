@@ -6,12 +6,12 @@ INSERT INTO "AllTypes"
 	"smallintDataType",
 	"intDataType"
 )
-SELECT
-	123,
+SELECT 
+	123, 
 	t2."smallintDataType"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			c_1."smallintDataType"
 		FROM
 			"AllTypes" t1
@@ -30,12 +30,12 @@ INSERT INTO "AllTypes"
 	"smallintDataType",
 	"intDataType"
 )
-SELECT
-	123,
+SELECT 
+	123, 
 	t2."smallintDataType"
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			c_1."smallintDataType"
 		FROM
 			"AllTypes" t1

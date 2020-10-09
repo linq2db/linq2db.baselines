@@ -4,7 +4,7 @@
 WITH "CTE1_" ("ParentID")
 AS
 (
-	SELECT
+	SELECT 
 		c_1."ParentID"
 	FROM
 		"Child" c_1
@@ -14,16 +14,16 @@ AS
 "LAST0" ("ParentID", "ChildID")
 AS
 (
-	SELECT
-		c4."ParentID",
+	SELECT 
+		c4."ParentID", 
 		c4."ChildID"
 	FROM
 		"Child" c4
 	WHERE
 		c4."ParentID" % 2 = 0
 )
-SELECT
-	c4_1."ParentID",
+SELECT 
+	c4_1."ParentID", 
 	c4_1."ChildID"
 FROM
 	"CTE1_" p
@@ -32,8 +32,8 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	c4."ParentID",
+SELECT 
+	c4."ParentID", 
 	c4."ChildID"
 FROM
 	"Child" c_1

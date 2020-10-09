@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t1."Key_1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN (
-					SELECT
+					SELECT 
 						Avg(c_1."ParentID")
 					FROM
 						"Child" c_1
@@ -29,15 +29,15 @@ BeforeExecute
 DECLARE @p1 Boolean
 SET     @p1 = False
 
-SELECT
-	underscore."ParentID",
+SELECT 
+	underscore."ParentID", 
 	underscore."Value1"
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN (
-					SELECT
+					SELECT 
 						Avg(c_1."ParentID")
 					FROM
 						"Child" c_1
@@ -46,8 +46,8 @@ FROM
 				) > 3
 					THEN True
 				ELSE False
-			END as "Key_1",
-			"selectParam"."ParentID",
+			END as "Key_1", 
+			"selectParam"."ParentID", 
 			"selectParam"."Value1"
 		FROM
 			"Parent" "selectParam"

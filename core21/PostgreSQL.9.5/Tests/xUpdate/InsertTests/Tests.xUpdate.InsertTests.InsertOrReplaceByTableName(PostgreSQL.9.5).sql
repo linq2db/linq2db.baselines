@@ -57,7 +57,7 @@ ON CONFLICT ("PersonID") DO UPDATE SET
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPatient21" t1
@@ -105,7 +105,7 @@ ON CONFLICT ("PersonID") DO UPDATE SET
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	"xxPatient21" t1

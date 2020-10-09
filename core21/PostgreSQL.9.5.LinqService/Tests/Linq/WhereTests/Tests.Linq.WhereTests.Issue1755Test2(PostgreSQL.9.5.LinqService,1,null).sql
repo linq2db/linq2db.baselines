@@ -3,8 +3,8 @@
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
-SELECT
-	c_1."ParentID",
+SELECT 
+	c_1."ParentID", 
 	c_1."Value1"
 FROM
 	"Parent" c_1
@@ -14,8 +14,8 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."ParentID",
+SELECT 
+	t1."ParentID", 
 	t1."Value1"
 FROM
 	"Parent" t1

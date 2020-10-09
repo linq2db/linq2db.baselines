@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	p.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor(t."MoneyValue") as Decimal) as c1
 		FROM
 			"LinqDataTypes" t

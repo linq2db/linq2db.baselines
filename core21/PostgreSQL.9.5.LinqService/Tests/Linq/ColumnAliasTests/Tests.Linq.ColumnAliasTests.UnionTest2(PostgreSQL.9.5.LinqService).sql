@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
-			t1."ParentID",
+	( 
+		SELECT 
+			t1."ParentID", 
 			t1."Value1"
 		FROM
 			"Parent" t1
 		UNION
-		SELECT
-			t2."ParentID",
+		SELECT 
+			t2."ParentID", 
 			t2."Value1"
 		FROM
 			"Parent" t2

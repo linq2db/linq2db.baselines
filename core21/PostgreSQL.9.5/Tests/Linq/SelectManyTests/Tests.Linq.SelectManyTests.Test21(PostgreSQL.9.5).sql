@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."ID1",
-	t1."FirstName",
+SELECT 
+	t1."ID1", 
+	t1."FirstName", 
 	p3."LastName"
 FROM
-	(
-		SELECT
-			p."PersonID" as "ID1",
-			p2."PersonID" as "ID2",
-			p."LastName",
+	( 
+		SELECT 
+			p."PersonID" as "ID1", 
+			p2."PersonID" as "ID2", 
+			p."LastName", 
 			p2."FirstName"
 		FROM
 			"Person" p,

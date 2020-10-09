@@ -78,14 +78,14 @@ SET
 	"Value2" = (t1."Value2" * t1."Value2_1") * :int2,
 	"Value3" = (t1."Value3" * t1."Value3_1") * :int3
 FROM
-	(
-		SELECT
-			c_1."Value1",
-			t."Value1" as "Value1_1",
-			c_1."Value2",
-			t."Value2" as "Value2_1",
-			c_1."Value3",
-			t."Value3" as "Value3_1",
+	( 
+		SELECT 
+			c_1."Value1", 
+			t."Value1" as "Value1_1", 
+			c_1."Value2", 
+			t."Value2" as "Value2_1", 
+			c_1."Value3", 
+			t."Value3" as "Value3_1", 
 			c_1.id
 		FROM
 			"UpdatedEntities" c_1
@@ -102,10 +102,10 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	v.id,
-	v."Value1",
-	v."Value2",
+SELECT 
+	v.id, 
+	v."Value1", 
+	v."Value2", 
 	v."Value3"
 FROM
 	"UpdatedEntities" v

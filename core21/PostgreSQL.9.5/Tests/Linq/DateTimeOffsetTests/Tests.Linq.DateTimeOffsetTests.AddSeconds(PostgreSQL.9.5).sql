@@ -67,7 +67,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	t."TransactionDate" + -35 * Interval '1 Second'
 FROM
 	"Transactions" t

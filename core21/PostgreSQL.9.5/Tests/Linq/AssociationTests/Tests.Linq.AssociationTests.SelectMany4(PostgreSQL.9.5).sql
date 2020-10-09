@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT 
 	"a_Parent_1"."ParentID"
 FROM
-	(
-		SELECT
-			"a_Parent"."ParentID",
+	( 
+		SELECT 
+			"a_Parent"."ParentID", 
 			"a_Parent"."Value1"
 		FROM
 			"Child" t1

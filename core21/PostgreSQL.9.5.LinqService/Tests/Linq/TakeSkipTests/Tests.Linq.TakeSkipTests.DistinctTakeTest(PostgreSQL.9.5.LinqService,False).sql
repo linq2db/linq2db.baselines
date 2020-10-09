@@ -22,7 +22,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	t1."Value"
 FROM
 	"TakeSkipClass" t1

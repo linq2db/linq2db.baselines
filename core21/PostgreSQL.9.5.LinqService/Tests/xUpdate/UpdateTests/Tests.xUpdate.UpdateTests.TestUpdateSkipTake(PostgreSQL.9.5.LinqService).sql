@@ -198,9 +198,9 @@ UPDATE
 SET
 	"Value1" = 1
 FROM
-	(
-		SELECT
-			x."Value1",
+	( 
+		SELECT 
+			x."Value1", 
 			x."ParentID"
 		FROM
 			"Parent" x
@@ -218,8 +218,8 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
-SELECT
-	p."ParentID",
+SELECT 
+	p."ParentID", 
 	p."Value1"
 FROM
 	"Parent" p
