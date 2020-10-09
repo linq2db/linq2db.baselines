@@ -5,19 +5,19 @@ SET     @skip = 7
 DECLARE @skip_1 Int32
 SET     @skip_1 = 2
 
-SELECT
-	t3.ParentID,
+SELECT 
+	t3.ParentID, 
 	t3.ChildID
 FROM
-	(
-		SELECT
-			t2.ParentID,
-			t2.ChildID,
+	( 
+		SELECT 
+			t2.ParentID, 
+			t2.ChildID, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
-					t1.ParentID,
+			( 
+				SELECT 
+					t1.ParentID, 
 					t1.ChildID
 				FROM
 					Child t1
@@ -37,19 +37,19 @@ SET     @skip_1 = 7
 DECLARE @skip_1_1 Int32
 SET     @skip_1_1 = 2
 
-SELECT
-	t3.ParentID,
+SELECT 
+	t3.ParentID, 
 	t3.ChildID
 FROM
-	(
-		SELECT
-			t2.ParentID,
-			t2.ChildID,
+	( 
+		SELECT 
+			t2.ParentID, 
+			t2.ChildID, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
-					t1.ParentID,
+			( 
+				SELECT 
+					t1.ParentID, 
 					t1.ChildID
 				FROM
 					Child t1

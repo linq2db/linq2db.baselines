@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Key_1,
+SELECT 
+	t1.Key_1, 
 	Round(AVG(t1.ParentID), 27)
 FROM
-	(
-		SELECT
-			selectParam.ChildID as Key_1,
+	( 
+		SELECT 
+			selectParam.ChildID as Key_1, 
 			selectParam.ParentID
 		FROM
 			Child selectParam

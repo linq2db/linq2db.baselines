@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Sum(c2.ChildID)
 FROM
 	Child c1_1

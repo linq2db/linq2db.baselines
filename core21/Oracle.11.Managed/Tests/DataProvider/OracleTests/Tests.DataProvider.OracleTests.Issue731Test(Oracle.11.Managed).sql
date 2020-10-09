@@ -45,11 +45,11 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t1.Id,
-	t1.Guid,
-	t1.BinaryGuid,
-	t1.BlobValue,
+SELECT 
+	t1.Id, 
+	t1.Guid, 
+	t1.BinaryGuid, 
+	t1.BlobValue, 
 	t1.RawValue
 FROM
 	Issue731Table t1

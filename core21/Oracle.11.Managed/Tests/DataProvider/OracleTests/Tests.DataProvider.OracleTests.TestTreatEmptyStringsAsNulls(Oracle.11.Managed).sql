@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -13,9 +13,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -25,9 +25,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -37,9 +37,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -49,9 +49,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -61,9 +61,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -73,9 +73,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -85,9 +85,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -97,9 +97,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -109,9 +109,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -121,9 +121,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -133,9 +133,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -145,9 +145,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -157,9 +157,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -169,9 +169,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -181,9 +181,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -193,9 +193,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -205,9 +205,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1
@@ -217,9 +217,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.KeyValue,
-	t1.StringValue1,
+SELECT 
+	t1.KeyValue, 
+	t1.StringValue1, 
 	t1.StringValue2
 FROM
 	StringTest t1

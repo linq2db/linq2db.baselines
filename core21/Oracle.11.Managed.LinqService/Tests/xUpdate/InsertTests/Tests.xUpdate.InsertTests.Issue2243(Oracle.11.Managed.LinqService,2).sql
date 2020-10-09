@@ -51,10 +51,10 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	t1.id,
-	t1.name,
-	t1.created_by,
+SELECT 
+	t1.id, 
+	t1.name, 
+	t1.created_by, 
 	t1.updated_by
 FROM
 	test_insert_or_replace t1
@@ -101,10 +101,10 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	t1.id,
-	t1.name,
-	t1.created_by,
+SELECT 
+	t1.id, 
+	t1.name, 
+	t1.created_by, 
 	t1.updated_by
 FROM
 	test_insert_or_replace t1

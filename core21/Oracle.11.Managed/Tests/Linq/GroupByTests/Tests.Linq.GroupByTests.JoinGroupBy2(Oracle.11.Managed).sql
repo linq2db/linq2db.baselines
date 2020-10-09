@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	g_1.ParentID
 FROM
 	Child c_1

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.PersonID,
+SELECT 
+	p.PersonID, 
 	p.FirstName
 FROM
 	Person p
@@ -10,8 +10,8 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.PersonID,
+SELECT 
+	p.PersonID, 
 	p.FirstName
 FROM
 	Person p
@@ -19,8 +19,8 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.PersonID,
+SELECT 
+	p.PersonID, 
 	p.FirstName
 FROM
 	Person p
@@ -28,8 +28,8 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.PersonID,
+SELECT 
+	p.PersonID, 
 	p.FirstName
 FROM
 	Person p
@@ -37,8 +37,8 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.PersonID,
+SELECT 
+	p.PersonID, 
 	p.FirstName
 FROM
 	Person p

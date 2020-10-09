@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.Boolean
 FROM
 	CreateTableTypes t1

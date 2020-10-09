@@ -34,14 +34,14 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Id,
-	t1.Value1,
-	t1.Value2,
-	t1.Enum,
-	t1.EnumNullable,
-	t1.EnumWithNull,
-	t1.EnumWithNullDeclarative,
+SELECT 
+	t1.Id, 
+	t1.Value1, 
+	t1.Value2, 
+	t1.Enum, 
+	t1.EnumNullable, 
+	t1.EnumWithNull, 
+	t1.EnumWithNullDeclarative, 
 	t1.BoolValue
 FROM
 	ValueConversion t1
@@ -49,9 +49,9 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t.Id,
-	t.Value1,
+SELECT 
+	t.Id, 
+	t.Value1, 
 	t.Value2
 FROM
 	ValueConversion t
@@ -59,9 +59,9 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t.Id,
-	t.Value1,
+SELECT 
+	t.Id, 
+	t.Value1, 
 	t.Value2
 FROM
 	ValueConversion t
@@ -69,16 +69,16 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t.Id,
-	t.Value1,
+SELECT 
+	t.Id, 
+	t.Value1, 
 	t.Value2
 FROM
 	ValueConversion t
 UNION ALL
-SELECT
-	t_1.Id,
-	t_1.Value1,
+SELECT 
+	t_1.Id, 
+	t_1.Value1, 
 	t_1.Value2
 FROM
 	ValueConversion t_1
@@ -90,21 +90,21 @@ SET     @skip = 1
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	t2.Value2
 FROM
-	(
-		SELECT
-			t1.Value2,
+	( 
+		SELECT 
+			t1.Value2, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					q.Value2
 				FROM
-					(
-						SELECT
-							t.Id,
+					( 
+						SELECT 
+							t.Id, 
 							t.Value2
 						FROM
 							ValueConversion t

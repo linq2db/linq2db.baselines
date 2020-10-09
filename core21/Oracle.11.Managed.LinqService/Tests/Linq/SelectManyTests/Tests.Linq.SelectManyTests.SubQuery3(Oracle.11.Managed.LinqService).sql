@@ -3,14 +3,14 @@
 DECLARE @id_1 Int32
 SET     @id_1 = 1
 
-SELECT
-	t1.PersonID,
+SELECT 
+	t1.PersonID, 
 	t1.FirstName
 FROM
-	(
-		SELECT
-			p1.PersonID,
-			p2.PersonID + 1 as ID,
+	( 
+		SELECT 
+			p1.PersonID, 
+			p2.PersonID + 1 as ID, 
 			p2.FirstName
 		FROM
 			Person p1,

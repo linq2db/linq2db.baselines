@@ -27,16 +27,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -58,16 +58,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -87,16 +87,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -118,16 +118,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -147,16 +147,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -179,16 +179,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -209,16 +209,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -241,16 +241,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -271,16 +271,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -303,16 +303,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -333,16 +333,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x
@@ -365,16 +365,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.DuplicateData
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
+	( 
+		SELECT 
+			t1.DuplicateData, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					x.DuplicateData
 				FROM
 					OrderByDistinctData x

@@ -30,12 +30,12 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
+SELECT 
+	t1.Id, 
+	t1.Field1, 
+	t1.Field2, 
+	t1.Field3, 
+	t1.Field4, 
 	t1.Field5
 FROM
 	TestMerge1 t1
@@ -74,12 +74,12 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
+SELECT 
+	t1.Id, 
+	t1.Field1, 
+	t1.Field2, 
+	t1.Field3, 
+	t1.Field4, 
 	t1.Field5
 FROM
 	TestMerge1 t1
@@ -120,12 +120,12 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
+SELECT 
+	t1.Id, 
+	t1.Field1, 
+	t1.Field2, 
+	t1.Field3, 
+	t1.Field4, 
 	t1.Field5
 FROM
 	TestMerge1 t1

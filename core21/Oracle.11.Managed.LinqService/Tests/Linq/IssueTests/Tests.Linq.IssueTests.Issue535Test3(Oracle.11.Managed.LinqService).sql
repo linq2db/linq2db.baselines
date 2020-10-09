@@ -29,10 +29,10 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	cb.Id,
-	cb.Name,
-	cb.ContactEmail,
+SELECT 
+	cb.Id, 
+	cb.Name, 
+	cb.ContactEmail, 
 	Nvl(cb.Enabled, 0)
 FROM
 	CustomerBase cb

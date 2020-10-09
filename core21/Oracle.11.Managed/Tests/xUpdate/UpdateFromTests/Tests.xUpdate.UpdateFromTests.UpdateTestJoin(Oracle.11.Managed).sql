@@ -60,7 +60,7 @@ UPDATE
 	UpdatedEntities
 SET
 	UpdatedEntities.Value1 = (
-		SELECT
+		SELECT 
 			(c_1.Value1 * t.Value1) * :int1
 		FROM
 			UpdatedEntities c_1
@@ -69,7 +69,7 @@ SET
 			t.id <> :someId AND UpdatedEntities.id = c_1.id
 	),
 	UpdatedEntities.Value2 = (
-		SELECT
+		SELECT 
 			(c_2.Value2 * t_1.Value2) * :int2
 		FROM
 			UpdatedEntities c_2
@@ -78,7 +78,7 @@ SET
 			t_1.id <> :someId AND UpdatedEntities.id = c_2.id
 	),
 	UpdatedEntities.Value3 = (
-		SELECT
+		SELECT 
 			(c_3.Value3 * t_2.Value3) * :int3
 		FROM
 			UpdatedEntities c_3
@@ -88,7 +88,7 @@ SET
 	)
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			UpdatedEntities c_4
@@ -100,10 +100,10 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	v.id,
-	v.Value1,
-	v.Value2,
+SELECT 
+	v.id, 
+	v.Value1, 
+	v.Value2, 
 	v.Value3
 FROM
 	UpdatedEntities v

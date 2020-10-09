@@ -3,15 +3,15 @@
 DECLARE @take Int32
 SET     @take = 4
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	t2.ParentID
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			t1.ParentID
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					ch.ParentID
 				FROM
 					Child ch

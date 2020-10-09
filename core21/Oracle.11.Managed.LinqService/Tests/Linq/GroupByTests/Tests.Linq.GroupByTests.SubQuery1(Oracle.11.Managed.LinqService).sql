@@ -3,11 +3,11 @@
 DECLARE @n Int32
 SET     @n = 1
 
-SELECT
+SELECT 
 	ch_1.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			ch.ParentID + 1 as c1
 		FROM
 			Child ch

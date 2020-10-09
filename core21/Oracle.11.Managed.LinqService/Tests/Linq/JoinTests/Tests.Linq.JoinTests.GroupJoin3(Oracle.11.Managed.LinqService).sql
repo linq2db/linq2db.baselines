@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	gjd_ch.ParentID,
+SELECT 
+	key_data_result.ParentID, 
+	key_data_result.Value1, 
+	gjd_ch.ParentID, 
 	gjd_ch.ChildID
 FROM
-	(
-		SELECT DISTINCT
-			t.ParentID,
+	( 
+		SELECT DISTINCT 
+			t.ParentID, 
 			t.Value1
 		FROM
 			Parent t
@@ -21,8 +21,8 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t.ParentID,
+SELECT 
+	t.ParentID, 
 	t.Value1
 FROM
 	Parent t

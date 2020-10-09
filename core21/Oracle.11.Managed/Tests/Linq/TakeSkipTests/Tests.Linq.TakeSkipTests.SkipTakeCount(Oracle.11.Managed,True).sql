@@ -5,23 +5,23 @@ SET     @skip = 2
 DECLARE @take Int32
 SET     @take = 5
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
-			t3.ParentID,
+	( 
+		SELECT 
+			t3.ParentID, 
 			t3.ChildID
 		FROM
-			(
-				SELECT
-					t2.ParentID,
-					t2.ChildID,
+			( 
+				SELECT 
+					t2.ParentID, 
+					t2.ChildID, 
 					ROWNUM as RN
 				FROM
-					(
-						SELECT
-							t1.ParentID,
+					( 
+						SELECT 
+							t1.ParentID, 
 							t1.ChildID
 						FROM
 							Child t1

@@ -1,22 +1,22 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p1.ParentID,
-	p1.Value1,
-	t1.ParentID,
+SELECT 
+	p1.ParentID, 
+	p1.Value1, 
+	t1.ParentID, 
 	t1.Sum_1
 FROM
 	Parent p1
-		LEFT JOIN (
-			SELECT
-				p.ParentID,
+		LEFT JOIN ( 
+			SELECT 
+				p.ParentID, 
 				Sum(p.ParentID) as Sum_1
 			FROM
 				Parent p
 			WHERE
 				EXISTS(
-					SELECT
+					SELECT 
 						*
 					FROM
 						Child ch

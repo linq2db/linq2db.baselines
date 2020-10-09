@@ -3,9 +3,9 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			ch.ChildID
 		FROM
 			Child ch

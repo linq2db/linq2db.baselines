@@ -41,10 +41,10 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	ft.Id,
-	t.Id,
-	t.FactId,
+SELECT 
+	ft.Id, 
+	t.Id, 
+	t.FactId, 
 	t.Name
 FROM
 	Fact ft

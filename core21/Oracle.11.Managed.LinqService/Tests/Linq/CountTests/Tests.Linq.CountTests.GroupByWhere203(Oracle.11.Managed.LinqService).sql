@@ -1,19 +1,19 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	g_1.ParentID
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			(
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					Child keyParam
 				WHERE
 					t1.ParentID = keyParam.ParentID AND keyParam.ChildID > 20
-			) as ex,
+			) as ex, 
 			t1.ParentID
 		FROM
 			Child t1

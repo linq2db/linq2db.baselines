@@ -3,19 +3,19 @@
 DECLARE @n Int32
 SET     @n = 3
 
-SELECT
-	t2.ParentID,
+SELECT 
+	t2.ParentID, 
 	t2.Value1
 FROM
-	(
-		SELECT
-			t1.ParentID,
-			t1.Value1,
+	( 
+		SELECT 
+			t1.ParentID, 
+			t1.Value1, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
-					p.ParentID,
+			( 
+				SELECT 
+					p.ParentID, 
 					p.Value1
 				FROM
 					Parent p

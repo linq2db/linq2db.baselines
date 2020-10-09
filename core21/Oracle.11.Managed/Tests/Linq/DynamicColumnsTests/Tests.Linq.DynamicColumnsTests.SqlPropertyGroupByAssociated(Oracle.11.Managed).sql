@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	a_Patient.Diagnosis,
+SELECT 
+	a_Patient.Diagnosis, 
 	Count(*)
 FROM
 	Person t1

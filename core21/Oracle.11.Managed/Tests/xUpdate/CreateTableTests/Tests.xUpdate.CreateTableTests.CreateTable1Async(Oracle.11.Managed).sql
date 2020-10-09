@@ -58,10 +58,10 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-SELECT
-	t1.ID,
-	t1.Field1,
-	t1.Field2,
+SELECT 
+	t1.ID, 
+	t1.Field1, 
+	t1.Field2, 
 	t1.CreatedOn
 FROM
 	TestTable t1

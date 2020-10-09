@@ -42,19 +42,19 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
-	t2.DuplicateData,
+SELECT 
+	t2.DuplicateData, 
 	t2.OrderData2
 FROM
-	(
-		SELECT
-			t1.DuplicateData,
-			t1.OrderData2,
+	( 
+		SELECT 
+			t1.DuplicateData, 
+			t1.OrderData2, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
-					x.DuplicateData,
+			( 
+				SELECT 
+					x.DuplicateData, 
 					x.OrderData2
 				FROM
 					OrderByDistinctData x

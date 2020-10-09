@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	Round(AVG(c_1.ChildID), 27),
-	AVG(c_1.ChildID),
-	AVG(ALL c_1.ChildID),
+SELECT 
+	Round(AVG(c_1.ChildID), 27), 
+	AVG(c_1.ChildID), 
+	AVG(ALL c_1.ChildID), 
 	AVG(DISTINCT c_1.ChildID)
 FROM
 	Parent p
@@ -15,7 +15,7 @@ GROUP BY
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Round(AVG(c_1.ParentID), 27)
 FROM
 	Child c_1
@@ -23,7 +23,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	AVG(ALL t1.ParentID)
 FROM
 	Child t1
@@ -31,7 +31,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	AVG(DISTINCT t1.ParentID)
 FROM
 	Child t1

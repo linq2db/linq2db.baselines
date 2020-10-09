@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN p.MoneyValue - Floor(p.MoneyValue) = 0.5 AND MOD(Floor(p.MoneyValue), 2) = 0
 					THEN Floor(p.MoneyValue)

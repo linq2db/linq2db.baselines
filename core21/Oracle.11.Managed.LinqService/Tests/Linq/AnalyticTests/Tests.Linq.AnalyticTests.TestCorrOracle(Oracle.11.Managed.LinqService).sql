@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	CORR(p.Value1, c_1.ChildID) OVER(),
-	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1),
+SELECT 
+	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	CORR(p.Value1, c_1.ChildID) OVER(), 
+	CORR(p.Value1, c_1.ChildID) OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1), 
 	CORR(p.Value1, c_1.ChildID) OVER(ORDER BY p.Value1)
 FROM
 	Parent p
@@ -16,7 +16,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	CORR(c_1.ParentID, c_1.ChildID)
 FROM
 	Parent p
@@ -27,7 +27,7 @@ GROUP BY
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	CORR(t1.ParentID, t1.ChildID)
 FROM
 	Child t1

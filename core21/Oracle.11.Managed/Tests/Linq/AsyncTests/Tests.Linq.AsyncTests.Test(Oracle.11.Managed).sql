@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.Value1
 FROM
 	Parent t1
@@ -10,8 +10,8 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.Value1
 FROM
 	Parent t1

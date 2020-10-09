@@ -31,8 +31,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	t1.ID,
+SELECT 
+	t1.ID, 
 	t1.Value
 FROM
 	SequenceTest t1
@@ -52,7 +52,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	SequenceTest t1

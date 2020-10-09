@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	PERCENT_RANK() OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1),
+SELECT 
+	PERCENT_RANK() OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1), 
 	PERCENT_RANK() OVER(ORDER BY c_1.ChildID DESC, p.Value1)
 FROM
 	Parent p
@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	PERCENT_RANK(2, 3) WITHIN GROUP (ORDER BY c_1.ChildID DESC, p.Value1)
 FROM
 	Parent p

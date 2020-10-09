@@ -145,7 +145,7 @@ RETURNING
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPerson_o t1
@@ -153,7 +153,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPerson_o p

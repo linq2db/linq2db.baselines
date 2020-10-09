@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	STDDEV(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	STDDEV(ALL p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	STDDEV(DISTINCT p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	STDDEV(p.Value1) OVER(),
-	STDDEV(ALL p.Value1) OVER(),
-	STDDEV(DISTINCT p.Value1) OVER(),
+SELECT 
+	STDDEV(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	STDDEV(ALL p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	STDDEV(DISTINCT p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	STDDEV(p.Value1) OVER(), 
+	STDDEV(ALL p.Value1) OVER(), 
+	STDDEV(DISTINCT p.Value1) OVER(), 
 	STDDEV(ALL p.Value1) OVER(PARTITION BY c_1.ChildID ORDER BY p.Value1 RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
 FROM
 	Parent p

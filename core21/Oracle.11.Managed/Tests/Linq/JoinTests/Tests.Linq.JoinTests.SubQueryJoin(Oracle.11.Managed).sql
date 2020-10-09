@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p
-		LEFT JOIN (
-			SELECT
+		LEFT JOIN ( 
+			SELECT 
 				c_1.ParentID as ch
 			FROM
 				Child c_1

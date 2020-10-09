@@ -178,7 +178,7 @@ SET     @cond = 'aaa%'
 DECLARE @uptoDate TimeStamp -- DateTime
 SET     @uptoDate = TO_TIMESTAMP('2020-02-29 17:54:55.123123', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	ins.SourceInstrumentCode
 FROM
 	T1 ins_1

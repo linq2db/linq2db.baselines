@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	a_Parent.ParentID,
+SELECT 
+	a_Parent.ParentID, 
 	a_Parent.Value1
 FROM
 	Child ch
@@ -10,8 +10,8 @@ FROM
 WHERE
 	ch.ParentID = 1
 UNION ALL
-SELECT
-	a_Parent_1.ParentID,
+SELECT 
+	a_Parent_1.ParentID, 
 	a_Parent_1.Value1
 FROM
 	Child ch_1

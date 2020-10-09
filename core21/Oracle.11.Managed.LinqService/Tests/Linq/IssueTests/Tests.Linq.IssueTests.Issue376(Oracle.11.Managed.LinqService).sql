@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.PersonID,
-	a_Doctor.PersonID,
+SELECT 
+	t1.PersonID, 
+	a_Doctor.PersonID, 
 	a_Doctor.Taxonomy
 FROM
 	Person t1

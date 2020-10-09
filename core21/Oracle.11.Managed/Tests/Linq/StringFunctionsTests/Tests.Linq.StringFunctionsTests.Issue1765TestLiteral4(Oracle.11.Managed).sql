@@ -22,8 +22,8 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	Max(t1.Value4),
+SELECT 
+	Max(t1.Value4), 
 	LISTAGG(t1.Value4, ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
 FROM
 	SampleClass t1

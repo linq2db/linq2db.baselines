@@ -20,7 +20,7 @@ INSERT INTO Person
 VALUES
 (
 	'Insert14' || (
-		SELECT
+		SELECT 
 			p.FirstName
 		FROM
 			Person p
@@ -34,7 +34,7 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person p

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	MOD(To_Number(To_Char(t.DateTimeValue, 'MI')), 7)
 FROM
 	LinqDataTypes t

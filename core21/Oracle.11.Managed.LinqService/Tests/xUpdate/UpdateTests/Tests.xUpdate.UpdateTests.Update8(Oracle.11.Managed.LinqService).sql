@@ -45,8 +45,8 @@ SET     @ParentID_1 = 1001
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p

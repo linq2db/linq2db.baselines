@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p1.PersonID,
+SELECT 
+	p1.PersonID, 
 	p2.FirstName
 FROM
 	Person p1,

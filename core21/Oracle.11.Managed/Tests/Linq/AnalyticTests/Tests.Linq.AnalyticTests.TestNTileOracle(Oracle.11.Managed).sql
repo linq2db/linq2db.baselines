@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	NTILE(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1),
+SELECT 
+	NTILE(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1), 
 	NTILE(1) OVER(ORDER BY c_1.ChildID DESC, p.Value1)
 FROM
 	Parent p

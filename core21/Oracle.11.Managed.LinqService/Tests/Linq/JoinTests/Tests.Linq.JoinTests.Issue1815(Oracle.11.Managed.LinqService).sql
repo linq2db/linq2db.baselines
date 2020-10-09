@@ -42,12 +42,12 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	x.InId,
-	j.InId,
-	j.InMaxQuantity,
-	j.InMinQuantity,
-	x.InMinQuantity,
+SELECT 
+	x.InId, 
+	j.InId, 
+	j.InMaxQuantity, 
+	j.InMinQuantity, 
+	x.InMinQuantity, 
 	x.InMaxQuantity
 FROM
 	StLink x
@@ -60,12 +60,12 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	x.InId,
-	j.InId,
-	j.InMaxQuantity,
-	j.InMinQuantity,
-	x.InMinQuantity,
+SELECT 
+	x.InId, 
+	j.InId, 
+	j.InMaxQuantity, 
+	j.InMinQuantity, 
+	x.InMinQuantity, 
 	x.InMaxQuantity
 FROM
 	StLink x

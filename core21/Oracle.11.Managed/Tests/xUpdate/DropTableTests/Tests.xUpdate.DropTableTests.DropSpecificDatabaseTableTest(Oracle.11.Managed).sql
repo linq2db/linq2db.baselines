@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	user
 FROM
 	LinqDataTypes t1
@@ -45,7 +45,7 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	SYSTEM.DropTableTest t1
@@ -58,7 +58,7 @@ DROP TABLE SYSTEM.DropTableTest
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t1.ID
 FROM
 	SYSTEM.DropTableTest t1

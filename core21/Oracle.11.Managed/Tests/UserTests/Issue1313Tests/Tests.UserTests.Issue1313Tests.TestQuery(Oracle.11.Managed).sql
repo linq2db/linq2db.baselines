@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	row_1.Value
 FROM
 	ValueItem row_1

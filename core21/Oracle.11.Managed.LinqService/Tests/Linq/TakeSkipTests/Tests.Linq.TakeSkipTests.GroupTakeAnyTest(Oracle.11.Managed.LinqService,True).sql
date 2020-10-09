@@ -23,11 +23,11 @@ SET     @take = 1
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					*
 				FROM
 					TakeSkipClass t1

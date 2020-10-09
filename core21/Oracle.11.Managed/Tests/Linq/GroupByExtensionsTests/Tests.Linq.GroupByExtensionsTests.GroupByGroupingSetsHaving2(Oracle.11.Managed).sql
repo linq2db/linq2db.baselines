@@ -27,14 +27,14 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	g_1.Id1,
+SELECT 
+	g_1.Id1, 
 	Count(*)
 FROM
-	(
-		SELECT DISTINCT
-			selectParam.Id1,
-			selectParam.Id2,
+	( 
+		SELECT DISTINCT 
+			selectParam.Id1, 
+			selectParam.Id2, 
 			selectParam.Value as Value_1
 		FROM
 			GroupSampleClass selectParam

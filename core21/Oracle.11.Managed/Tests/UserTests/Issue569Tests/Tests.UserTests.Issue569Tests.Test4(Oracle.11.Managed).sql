@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent parent_1,
-	(
-		SELECT
-			child_1.ParentID,
-			child_1.ChildID,
+	( 
+		SELECT 
+			child_1.ParentID, 
+			child_1.ChildID, 
 			parent_2.ParentID as ParentID_1
 		FROM
 			Parent parent_2,

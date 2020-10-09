@@ -37,7 +37,7 @@ BeforeExecute
 WITH CTE_1 (Id)
 AS
 (
-	SELECT
+	SELECT 
 		t.Id
 	FROM
 		HierarchyTree t
@@ -47,8 +47,8 @@ AS
 CTE_2 (ParentId, Id)
 AS
 (
-	SELECT
-		t1.ParentId,
+	SELECT 
+		t1.ParentId, 
 		t1.Id
 	FROM
 		HierarchyTree t1
@@ -56,21 +56,21 @@ AS
 hierarchyDown (Id, "Level")
 AS
 (
-	SELECT
-		t_1.Id,
+	SELECT 
+		t_1.Id, 
 		0
 	FROM
 		CTE_1 t_1
 	UNION ALL
-	SELECT
-		t_2.Id,
+	SELECT 
+		t_2.Id, 
 		h."Level" + 1
 	FROM
 		hierarchyDown h
 			INNER JOIN CTE_2 t_2 ON t_2.ParentId = h.Id
 )
-SELECT
-	t2.Id,
+SELECT 
+	t2.Id, 
 	t2."Level"
 FROM
 	hierarchyDown t2

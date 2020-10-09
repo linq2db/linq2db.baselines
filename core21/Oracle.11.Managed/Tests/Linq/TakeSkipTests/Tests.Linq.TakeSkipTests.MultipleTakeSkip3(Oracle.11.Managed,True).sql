@@ -28,16 +28,16 @@ SET     @skip = 4
 DECLARE @skip_1 Int32
 SET     @skip_1 = 3
 
-SELECT
+SELECT 
 	t3.Value_1
 FROM
-	(
-		SELECT
-			t2.Value_1,
+	( 
+		SELECT 
+			t2.Value_1, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					t1.Value as Value_1
 				FROM
 					TakeSkipClass t1

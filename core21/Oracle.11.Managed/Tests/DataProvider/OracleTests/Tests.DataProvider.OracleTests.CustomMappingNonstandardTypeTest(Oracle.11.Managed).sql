@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.ID,
+SELECT 
+	t1.ID, 
 	t1.datetimeoffsetDataType
 FROM
 	AllTypes t1

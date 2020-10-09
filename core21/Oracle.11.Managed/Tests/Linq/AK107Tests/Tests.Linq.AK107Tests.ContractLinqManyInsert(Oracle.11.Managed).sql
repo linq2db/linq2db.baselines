@@ -28,10 +28,10 @@ INSERT INTO t_test_user_contract
 	contract_no,
 	name
 )
-SELECT
-	sq_test_user_contract.nextval,
-	t1.user_id,
-	1,
+SELECT 
+	sq_test_user_contract.nextval, 
+	t1.user_id, 
+	1, 
 	'contract'
 FROM
 	t_test_user t1

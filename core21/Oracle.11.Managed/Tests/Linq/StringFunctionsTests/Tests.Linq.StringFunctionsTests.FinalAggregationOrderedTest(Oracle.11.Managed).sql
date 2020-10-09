@@ -22,7 +22,7 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	LISTAGG(t.Value1, ' -> ') WITHIN GROUP (ORDER BY t.Value1)
 FROM
 	SampleClass t
@@ -30,7 +30,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	LISTAGG(t.Value1, ' -> ') WITHIN GROUP (ORDER BY t.Value1)
 FROM
 	SampleClass t
@@ -38,7 +38,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	LISTAGG(t.Value1, ' -> ') WITHIN GROUP (ORDER BY t.Value1 DESC)
 FROM
 	SampleClass t
@@ -46,7 +46,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	LISTAGG(t.Value1, ' -> ') WITHIN GROUP (ORDER BY t.Value1 DESC)
 FROM
 	SampleClass t

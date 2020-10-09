@@ -82,9 +82,9 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.Id,
-	p.TargetName,
+SELECT 
+	p.Id, 
+	p.TargetName, 
 	a_ActualStage.Id
 FROM
 	Task p
@@ -95,9 +95,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.Id,
-	p.TargetName,
+SELECT 
+	p.Id, 
+	p.TargetName, 
 	a_ActualStage.Id
 FROM
 	Task p

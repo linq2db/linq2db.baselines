@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t2.c1
 FROM
 	Parent cp
-		INNER JOIN (
-			SELECT
-				t1.ParentID + 1 as c1,
+		INNER JOIN ( 
+			SELECT 
+				t1.ParentID + 1 as c1, 
 				t1.ParentID
 			FROM
 				Child t1

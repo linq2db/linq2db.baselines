@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t1.Key_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			To_Number(To_Char(a_Types.DateTimeValue, 'YYYY')) as Key_1
 		FROM
 			Parent selectParam

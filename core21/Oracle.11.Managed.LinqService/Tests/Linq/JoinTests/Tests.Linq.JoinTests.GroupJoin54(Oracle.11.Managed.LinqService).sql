@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	ch.ParentID,
+SELECT 
+	key_data_result.ParentID, 
+	key_data_result.Value1, 
+	ch.ParentID, 
 	ch.ChildID
 FROM
-	(
-		SELECT DISTINCT
-			p.ParentID,
+	( 
+		SELECT DISTINCT 
+			p.ParentID, 
 			p.Value1
 		FROM
 			Parent p
@@ -21,16 +21,16 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			Child t1
 		WHERE
 			p.ParentID = t1.ParentID
-	),
-	p.ParentID,
+	), 
+	p.ParentID, 
 	p.Value1
 FROM
 	Parent p

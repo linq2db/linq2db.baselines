@@ -21,11 +21,11 @@ BeforeExecute
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					*
 				FROM
 					TakeSkipClass t1

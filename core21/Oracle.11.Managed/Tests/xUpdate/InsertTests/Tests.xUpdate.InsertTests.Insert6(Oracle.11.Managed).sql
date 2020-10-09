@@ -14,8 +14,8 @@ INSERT INTO Parent
 	ParentID,
 	Value1
 )
-SELECT
-	c_1.ParentID + 1000,
+SELECT 
+	c_1.ParentID + 1000, 
 	c_1.ChildID
 FROM
 	Child c_1
@@ -25,7 +25,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Parent p

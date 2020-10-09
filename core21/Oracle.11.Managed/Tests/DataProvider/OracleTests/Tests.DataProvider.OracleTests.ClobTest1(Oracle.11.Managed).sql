@@ -35,9 +35,9 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t1.Id,
-	t1.ClobValue,
+SELECT 
+	t1.Id, 
+	t1.ClobValue, 
 	t1.NClobValue
 FROM
 	ClobEntity t1

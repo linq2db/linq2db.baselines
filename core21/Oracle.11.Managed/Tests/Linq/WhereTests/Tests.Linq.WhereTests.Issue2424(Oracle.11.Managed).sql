@@ -21,8 +21,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -34,8 +34,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -47,8 +47,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -60,8 +60,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -73,8 +73,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -86,8 +86,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -99,8 +99,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -112,8 +112,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -125,8 +125,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -138,8 +138,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -151,8 +151,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -164,8 +164,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -177,8 +177,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -190,8 +190,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -203,8 +203,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -216,8 +216,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -229,8 +229,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -242,8 +242,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -255,8 +255,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -268,8 +268,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -281,8 +281,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i
@@ -294,8 +294,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	i.Id,
+SELECT 
+	i.Id, 
 	i.StrValue
 FROM
 	Isue2424Table i

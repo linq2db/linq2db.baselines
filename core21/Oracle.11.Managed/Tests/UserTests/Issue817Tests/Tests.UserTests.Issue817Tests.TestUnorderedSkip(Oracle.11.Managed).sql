@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person t1
@@ -11,16 +11,16 @@ BeforeExecute
 DECLARE @skip Int32
 SET     @skip = 1
 
-SELECT
+SELECT 
 	t3.c1
 FROM
-	(
-		SELECT
-			t2.c1,
+	( 
+		SELECT 
+			t2.c1, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					1 as c1
 				FROM
 					Person t1

@@ -11,7 +11,7 @@ CREATE TABLE "User"
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	u.city
 FROM
 	"User" u
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	u.street
 FROM
 	"User" u

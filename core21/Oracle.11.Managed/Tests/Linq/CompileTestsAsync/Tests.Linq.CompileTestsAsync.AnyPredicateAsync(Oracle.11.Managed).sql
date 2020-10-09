@@ -31,7 +31,7 @@ SET     @Id = 2
 
 SELECT
 	CASE WHEN EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			AsyncDataTable c_1

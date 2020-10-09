@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.PersonID,
-	gjd_ri.PersonID,
+SELECT 
+	p.PersonID, 
+	gjd_ri.PersonID, 
 	gjd_ri.Diagnosis
 FROM
 	Person p
@@ -14,8 +14,8 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.FirstName,
+SELECT 
+	p.FirstName, 
 	p.PersonID
 FROM
 	Person p

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	SUM(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	SUM(ALL p.Value1) OVER(ORDER BY p.Value1),
-	SUM(DISTINCT p.Value1) OVER(),
+SELECT 
+	SUM(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID), 
+	SUM(ALL p.Value1) OVER(ORDER BY p.Value1), 
+	SUM(DISTINCT p.Value1) OVER(), 
 	SUM(p.Value1) OVER(PARTITION BY c_1.ChildID ORDER BY p.Value1 RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
 FROM
 	Parent p
@@ -13,7 +13,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	SUM(p.Value1)
 FROM
 	Parent p

@@ -222,11 +222,11 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO TestMerge1 Target
-USING (
-	SELECT
-		t1.Id,
-		t1.Field1,
-		t1.Field2,
+USING ( 
+	SELECT 
+		t1.Id, 
+		t1.Field1, 
+		t1.Field2, 
 		t1.Field3
 	FROM
 		TestMerge2 t1
@@ -247,12 +247,12 @@ DELETE WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
+SELECT 
+	t1.Id, 
+	t1.Field1, 
+	t1.Field2, 
+	t1.Field3, 
+	t1.Field4, 
 	t1.Field5
 FROM
 	TestMerge1 t1

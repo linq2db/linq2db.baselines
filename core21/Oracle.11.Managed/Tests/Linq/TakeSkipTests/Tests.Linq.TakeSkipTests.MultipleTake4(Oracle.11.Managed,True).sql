@@ -25,11 +25,11 @@ BeforeExecute
 DECLARE @take_2 Int32
 SET     @take_2 = 1
 
-SELECT
+SELECT 
 	t2.Value_1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			t1.Value as Value_1
 		FROM
 			TakeSkipClass t1

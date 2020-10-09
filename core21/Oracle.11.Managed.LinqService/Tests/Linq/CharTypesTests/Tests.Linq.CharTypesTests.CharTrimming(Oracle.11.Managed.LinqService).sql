@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Max(t1.ID)
 FROM
 	AllTypes t1
@@ -391,9 +391,9 @@ BeforeExecute
 DECLARE @lastId Int32
 SET     @lastId = 2
 
-SELECT
-	t1.ID,
-	t1.char20DataType,
+SELECT 
+	t1.ID, 
+	t1.char20DataType, 
 	t1.ncharDataType
 FROM
 	AllTypes t1

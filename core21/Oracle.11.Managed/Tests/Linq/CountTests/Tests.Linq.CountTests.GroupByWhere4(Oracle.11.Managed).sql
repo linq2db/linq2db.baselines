@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
+SELECT 
+	[t1].[ParentID], 
+	[t1].[ChildID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [t1]
@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	a_Parent.ParentID
 FROM
 	GrandChild t1

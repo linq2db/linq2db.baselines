@@ -17,16 +17,16 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t.Id,
-	t.Value,
-	s.Key_1,
+SELECT 
+	t.Id, 
+	t.Value, 
+	s.Key_1, 
 	s.SecondValue
 FROM
 	SampleClass t
-		INNER JOIN (
+		INNER JOIN ( 
 			SELECT
-				1 as Key_1,
+				1 as Key_1, 
 				3 as SecondValue
 			FROM SYS.DUAL
 		) s ON s.Key_1 = t.Id

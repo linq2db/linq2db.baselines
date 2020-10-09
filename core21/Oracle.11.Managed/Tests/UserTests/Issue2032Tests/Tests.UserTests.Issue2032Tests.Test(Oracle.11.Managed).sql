@@ -22,12 +22,12 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	r.Id,
-	r.Decimal1,
-	r.Decimal2,
-	Nvl(r.Decimal3, 0.1),
-	r.Int1,
+SELECT 
+	r.Id, 
+	r.Decimal1, 
+	r.Decimal2, 
+	Nvl(r.Decimal3, 0.1), 
+	r.Int1, 
 	Nvl(r.Int2, 22)
 FROM
 	Issue2032Table r

@@ -55,7 +55,7 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPerson_ol t1
@@ -65,11 +65,11 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
+SELECT 
+	t1.FirstName, 
+	t1.PersonID, 
+	t1.LastName, 
+	t1.MiddleName, 
 	t1.Gender
 FROM
 	xxPerson_ol t1
@@ -89,7 +89,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	xxPerson_ol t1

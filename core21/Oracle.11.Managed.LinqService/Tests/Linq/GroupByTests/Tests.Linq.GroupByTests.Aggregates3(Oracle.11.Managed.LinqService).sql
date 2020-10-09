@@ -1,36 +1,36 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Sum(ch.ChildID)
 		FROM
 			Child ch
 		WHERE
 			ch_4.ParentID = ch.ParentID AND ch.ChildID > 30 AND
 			ch.ChildID > 30
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Min(ch_1.ChildID)
 		FROM
 			Child ch_1
 		WHERE
 			ch_4.ParentID = ch_1.ParentID AND ch_1.ChildID > 30 AND
 			ch_1.ChildID > 30
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Max(ch_2.ChildID)
 		FROM
 			Child ch_2
 		WHERE
 			ch_4.ParentID = ch_2.ParentID AND ch_2.ChildID > 30 AND
 			ch_2.ChildID > 30
-	),
+	), 
 	(
-		SELECT
+		SELECT 
 			Round(AVG(ch_3.ChildID), 27)
 		FROM
 			Child ch_3

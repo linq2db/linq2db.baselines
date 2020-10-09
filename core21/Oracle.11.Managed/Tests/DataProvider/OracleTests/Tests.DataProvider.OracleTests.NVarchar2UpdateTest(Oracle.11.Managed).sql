@@ -31,7 +31,7 @@ SET     @id = 44
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	p.NVARCHARDATATYPE
 FROM
 	ALLTYPES p

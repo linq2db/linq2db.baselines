@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	p.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			ch.Key_1 || '2' as c1
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					CASE
 						WHEN selectParam.ParentID > 2
 							THEN CASE

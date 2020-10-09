@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t.LONGDATATYPE
 FROM
 	ALLTYPES t
@@ -37,7 +37,7 @@ BeforeExecute
 DECLARE @id Decimal(2,0)
 SET     @id = 41
 
-SELECT
+SELECT 
 	t.LONGDATATYPE
 FROM
 	ALLTYPES t
@@ -65,7 +65,7 @@ BeforeExecute
 DECLARE @id2 Decimal(2,0)
 SET     @id2 = 42
 
-SELECT
+SELECT 
 	t.LONGDATATYPE
 FROM
 	ALLTYPES t

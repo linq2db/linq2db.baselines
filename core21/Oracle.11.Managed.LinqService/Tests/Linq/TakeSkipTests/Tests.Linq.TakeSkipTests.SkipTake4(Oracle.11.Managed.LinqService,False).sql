@@ -1,35 +1,35 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t6.ParentID,
+SELECT 
+	t6.ParentID, 
 	t6.ChildID
 FROM
-	(
-		SELECT
-			t5.ParentID,
-			t5.ChildID,
+	( 
+		SELECT 
+			t5.ParentID, 
+			t5.ChildID, 
 			ROWNUM as c1
 		FROM
-			(
-				SELECT
-					t4.ParentID,
+			( 
+				SELECT 
+					t4.ParentID, 
 					t4.ChildID
 				FROM
-					(
-						SELECT
-							t3.ChildID,
+					( 
+						SELECT 
+							t3.ChildID, 
 							t3.ParentID
 						FROM
-							(
-								SELECT
-									t2.ChildID,
-									t2.ParentID,
+							( 
+								SELECT 
+									t2.ChildID, 
+									t2.ParentID, 
 									ROWNUM as RN
 								FROM
-									(
-										SELECT
-											t1.ChildID,
+									( 
+										SELECT 
+											t1.ChildID, 
 											t1.ParentID
 										FROM
 											Child t1

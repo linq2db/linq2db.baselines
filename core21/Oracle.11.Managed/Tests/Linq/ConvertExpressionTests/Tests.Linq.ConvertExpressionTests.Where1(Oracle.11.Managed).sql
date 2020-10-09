@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	(
-		SELECT
+		SELECT 
 			Sum(c_1.ChildID)
 		FROM
 			Child c_1
@@ -15,7 +15,7 @@ FROM
 	Parent p
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child c_2

@@ -24,8 +24,8 @@ BeforeExecute
 DECLARE @separator Varchar2(4) -- String
 SET     @separator = ' => '
 
-SELECT
-	Max(t1.Value4),
+SELECT 
+	Max(t1.Value4), 
 	LISTAGG(t1.Value4, :separator) WITHIN GROUP (ORDER BY ROWNUM)
 FROM
 	SampleClass t1

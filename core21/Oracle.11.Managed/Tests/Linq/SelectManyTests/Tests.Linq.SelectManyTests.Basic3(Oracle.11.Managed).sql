@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t2.c1
 FROM
 	Parent cp,
-	(
-		SELECT
+	( 
+		SELECT 
 			t1.ParentID + 1 as c1
 		FROM
 			Child t1

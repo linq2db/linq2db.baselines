@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	a_ChildPredicate.ParentID,
+SELECT 
+	a_ChildPredicate.ParentID, 
 	a_ChildPredicate.ChildID
 FROM
 	Parent p

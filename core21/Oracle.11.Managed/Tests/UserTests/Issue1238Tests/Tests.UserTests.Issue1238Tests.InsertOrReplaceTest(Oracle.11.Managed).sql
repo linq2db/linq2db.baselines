@@ -40,7 +40,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	InheritanceParent t1
@@ -81,7 +81,7 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	InheritanceParent t1

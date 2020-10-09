@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t.longRawDataType
 FROM
 	LongRawTable t
@@ -49,7 +49,7 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t.longRawDataType
 FROM
 	LongRawTable t

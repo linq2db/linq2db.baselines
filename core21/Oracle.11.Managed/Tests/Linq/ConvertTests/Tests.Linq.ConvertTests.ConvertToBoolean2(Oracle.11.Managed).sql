@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	p.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN t.MoneyValue - 4.5 = 0
 					THEN 0

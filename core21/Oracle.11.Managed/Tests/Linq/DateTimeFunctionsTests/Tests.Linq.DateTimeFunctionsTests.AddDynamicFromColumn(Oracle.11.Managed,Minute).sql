@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t.DateTimeValue + t.SmallIntValue * INTERVAL '1' MINUTE
 FROM
 	LinqDataTypes t

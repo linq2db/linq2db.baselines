@@ -35,9 +35,9 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1."Not Identifier",
-	Count(*),
+SELECT 
+	t1."Not Identifier", 
+	Count(*), 
 	Sum(t1."Some Value")
 FROM
 	DynamicTable t1

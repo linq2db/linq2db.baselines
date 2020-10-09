@@ -3,13 +3,13 @@
 DECLARE @Date_1 TimeStamp -- DateTime
 SET     @Date_1 = TO_TIMESTAMP('2020-02-29 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
+SELECT 
 	t1.MoneyValue
 FROM
 	LinqDataTypes t1
-		INNER JOIN (
-			SELECT
-				sub.ID,
+		INNER JOIN ( 
+			SELECT 
+				sub.ID, 
 				Max(sub.DateTimeValue) as DateTimeValue
 			FROM
 				LinqDataTypes sub

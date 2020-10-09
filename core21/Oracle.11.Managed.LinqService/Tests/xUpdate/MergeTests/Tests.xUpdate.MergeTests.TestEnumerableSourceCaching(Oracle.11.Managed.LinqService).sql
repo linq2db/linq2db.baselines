@@ -38,8 +38,8 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.Value
 FROM
 	CacheTestTable t1
@@ -77,8 +77,8 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.Value
 FROM
 	CacheTestTable t1

@@ -32,9 +32,9 @@ INSERT INTO ClobEntity
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Id,
-	t1.ClobValue,
+SELECT 
+	t1.Id, 
+	t1.ClobValue, 
 	t1.NClobValue
 FROM
 	ClobEntity t1

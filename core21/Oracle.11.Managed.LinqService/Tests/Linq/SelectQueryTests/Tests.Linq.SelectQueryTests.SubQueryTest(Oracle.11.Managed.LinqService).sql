@@ -19,13 +19,13 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t1.Value1,
+SELECT 
+	t1.Value1, 
 	t1.Value2
 FROM
-	(
-		SELECT
-			CURRENT_TIMESTAMP + t.Value * INTERVAL '1' DAY as Value1,
+	( 
+		SELECT 
+			CURRENT_TIMESTAMP + t.Value * INTERVAL '1' DAY as Value1, 
 			CURRENT_TIMESTAMP + 2 * INTERVAL '1' DAY as Value2
 		FROM
 			SampleClass t
@@ -33,7 +33,7 @@ FROM
 			t.Value = 1
 		UNION
 		SELECT
-			CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as Value1,
+			CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as Value1, 
 			CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as Value2
 		FROM SYS.DUAL
 	) t1
@@ -43,8 +43,8 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t.Id,
+SELECT 
+	t.Id, 
 	t.Value
 FROM
 	SampleClass t

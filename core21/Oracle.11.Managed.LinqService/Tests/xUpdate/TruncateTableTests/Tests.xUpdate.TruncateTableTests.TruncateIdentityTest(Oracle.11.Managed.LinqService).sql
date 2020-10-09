@@ -84,19 +84,19 @@ SET     @skip = 1
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	t3.ID,
+SELECT 
+	t3.ID, 
 	t3.Field1
 FROM
-	(
-		SELECT
-			t2.ID,
-			t2.Field1,
+	( 
+		SELECT 
+			t2.ID, 
+			t2.Field1, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
-					t1.ID,
+			( 
+				SELECT 
+					t1.ID, 
 					t1.Field1
 				FROM
 					TestIdTrun t1
@@ -164,19 +164,19 @@ SET     @skip = 1
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	t3.ID,
+SELECT 
+	t3.ID, 
 	t3.Field1
 FROM
-	(
-		SELECT
-			t2.ID,
-			t2.Field1,
+	( 
+		SELECT 
+			t2.ID, 
+			t2.Field1, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
-					t1.ID,
+			( 
+				SELECT 
+					t1.ID, 
 					t1.Field1
 				FROM
 					TestIdTrun t1

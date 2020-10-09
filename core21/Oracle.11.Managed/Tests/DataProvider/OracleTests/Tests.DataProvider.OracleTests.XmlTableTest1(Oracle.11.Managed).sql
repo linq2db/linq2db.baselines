@@ -7,8 +7,8 @@ SET     @p1 = '<t>
 </t>
 '
 
-SELECT
-	t.field1,
+SELECT 
+	t.field1, 
 	t.field2
 FROM
 	XmlTable('/t/r' PASSING XmlType(:p1) COLUMNS field1 Int path 'c0', field2 VarChar(255) path 'c1') t

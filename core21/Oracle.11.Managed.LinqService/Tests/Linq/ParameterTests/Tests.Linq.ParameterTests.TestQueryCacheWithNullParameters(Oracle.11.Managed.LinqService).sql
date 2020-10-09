@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person t1
@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 1
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Person t1

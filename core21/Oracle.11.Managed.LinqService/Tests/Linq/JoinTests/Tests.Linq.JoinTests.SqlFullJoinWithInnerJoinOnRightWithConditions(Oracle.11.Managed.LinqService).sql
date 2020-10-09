@@ -5,15 +5,15 @@ SET     @id1 = 1
 DECLARE @id2 Int32
 SET     @id2 = 2
 
-SELECT
-	left_3.left_2,
-	left_3.left_1,
-	t1.ParentID,
+SELECT 
+	left_3.left_2, 
+	left_3.left_1, 
+	t1.ParentID, 
 	t1.Value1
 FROM
-	(
-		SELECT
-			p_1.Value1 as left_1,
+	( 
+		SELECT 
+			p_1.Value1 as left_1, 
 			p_1.ParentID as left_2
 		FROM
 			Parent p_1
@@ -21,9 +21,9 @@ FROM
 		WHERE
 			p.ParentID <> :id1 AND p_1.ParentID <> :id2
 	) left_3
-		FULL JOIN (
-			SELECT
-				p_2.Value1,
+		FULL JOIN ( 
+			SELECT 
+				p_2.Value1, 
 				p_2.ParentID
 			FROM
 				Parent p_2

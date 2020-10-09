@@ -29,10 +29,10 @@ SET     @n = 25
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t2.BINARYDATATYPE,
+SELECT 
+	t2.BINARYDATATYPE, 
 	(
-		SELECT
+		SELECT 
 			Count(*)
 		FROM
 			ALLTYPES t1

@@ -3,7 +3,7 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	l.ParentID
 FROM
 	Child l
@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	1
 FROM
 	Parent sep

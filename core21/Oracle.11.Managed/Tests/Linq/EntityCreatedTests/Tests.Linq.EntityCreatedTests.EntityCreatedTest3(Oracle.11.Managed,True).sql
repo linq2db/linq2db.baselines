@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	a_Parent.ParentID,
+SELECT 
+	a_Parent.ParentID, 
 	a_Parent.Value1
 FROM
 	Child c_1

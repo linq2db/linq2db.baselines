@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	left_1.ParentID,
-	left_1.Value1,
-	t1.right_2,
+SELECT 
+	left_1.ParentID, 
+	left_1.Value1, 
+	t1.right_2, 
 	t1.right_1
 FROM
 	Parent left_1
-		FULL JOIN (
-			SELECT
-				right_3.Value1 as right_1,
+		FULL JOIN ( 
+			SELECT 
+				right_3.Value1 as right_1, 
 				right_3.ParentID as right_2
 			FROM
 				Parent right_3

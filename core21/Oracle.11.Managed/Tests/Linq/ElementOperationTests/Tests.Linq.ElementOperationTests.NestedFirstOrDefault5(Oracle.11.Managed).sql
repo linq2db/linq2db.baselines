@@ -1,21 +1,21 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	key_data_result.ParentID_1,
-	key_data_result.ChildID,
-	key_data_result.GrandChildID,
-	detail.ParentID,
+SELECT 
+	key_data_result.ParentID, 
+	key_data_result.Value1, 
+	key_data_result.ParentID_1, 
+	key_data_result.ChildID, 
+	key_data_result.GrandChildID, 
+	detail.ParentID, 
 	detail.ChildID
 FROM
-	(
-		SELECT DISTINCT
-			a_Parent.ParentID,
-			a_Parent.Value1,
-			p.ParentID as ParentID_1,
-			p.ChildID,
+	( 
+		SELECT DISTINCT 
+			a_Parent.ParentID, 
+			a_Parent.Value1, 
+			p.ParentID as ParentID_1, 
+			p.ChildID, 
 			p.GrandChildID
 		FROM
 			GrandChild p
@@ -31,11 +31,11 @@ ORDER BY
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	a_Parent.ParentID,
-	a_Parent.Value1,
-	p.ParentID,
-	p.ChildID,
+SELECT 
+	a_Parent.ParentID, 
+	a_Parent.Value1, 
+	p.ParentID, 
+	p.ChildID, 
 	p.GrandChildID
 FROM
 	GrandChild p

@@ -24,8 +24,8 @@ CREATE TABLE Books
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	author.Id,
+SELECT 
+	author.Id, 
 	author.Name
 FROM
 	Authors author

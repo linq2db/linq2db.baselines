@@ -45,7 +45,7 @@ BeforeExecute
 DECLARE @p1 TimeStamp -- DateTime
 SET     @p1 = TO_TIMESTAMP('2018-01-02 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	LinqDataTypes t

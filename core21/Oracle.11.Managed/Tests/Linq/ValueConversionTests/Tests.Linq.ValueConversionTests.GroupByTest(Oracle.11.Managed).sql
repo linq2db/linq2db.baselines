@@ -36,7 +36,7 @@ BeforeExecute
 DECLARE @testedList NVarchar2(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
-SELECT
+SELECT 
 	t.Id
 FROM
 	ValueConversion t
@@ -52,14 +52,14 @@ SET     @Value2_1 = '[{"Value":"Value1"}]'
 DECLARE @Id_1 Int32
 SET     @Id_1 = 1
 
-SELECT
-	t.Id,
-	t.Value1,
-	t.Value2,
-	t.Enum,
-	t.EnumNullable,
-	t.EnumWithNull,
-	t.EnumWithNullDeclarative,
+SELECT 
+	t.Id, 
+	t.Value1, 
+	t.Value2, 
+	t.Enum, 
+	t.EnumNullable, 
+	t.EnumWithNull, 
+	t.EnumWithNullDeclarative, 
 	t.BoolValue
 FROM
 	ValueConversion t

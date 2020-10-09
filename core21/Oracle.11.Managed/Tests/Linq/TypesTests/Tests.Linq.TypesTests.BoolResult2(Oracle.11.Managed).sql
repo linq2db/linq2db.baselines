@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	CASE WHEN a_Patient.PersonID IS NOT NULL THEN 1 ELSE 0 END
 FROM
 	Person p

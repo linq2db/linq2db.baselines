@@ -3,17 +3,17 @@
 DECLARE @take Int32
 SET     @take = 5
 
-SELECT
-	t2.Key_1,
+SELECT 
+	t2.Key_1, 
 	t2.Count_1
 FROM
-	(
-		SELECT
-			t1.c1 as Key_1,
+	( 
+		SELECT 
+			t1.c1 as Key_1, 
 			Count(*) as Count_1
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					Trunc(CURRENT_TIMESTAMP, 'DD') as c1
 				FROM
 					Parent v

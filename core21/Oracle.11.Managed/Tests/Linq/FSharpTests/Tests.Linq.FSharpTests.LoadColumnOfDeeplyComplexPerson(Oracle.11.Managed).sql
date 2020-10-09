@@ -5,7 +5,7 @@ SET     @ID = 1
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	p.LastName
 FROM
 	Person p

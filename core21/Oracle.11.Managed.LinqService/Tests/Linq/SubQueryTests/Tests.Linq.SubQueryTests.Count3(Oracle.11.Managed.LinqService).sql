@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p_1.ParentID,
+SELECT 
+	p_1.ParentID, 
 	p_1.Sum_2
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			(
-				SELECT
+				SELECT 
 					Sum(t_1.ParentID)
 				FROM
 					Child t_1
 				WHERE
 					p.ParentID = t_1.ParentID
-			) / 2 as Sum_1,
-			p.ParentID,
+			) / 2 as Sum_1, 
+			p.ParentID, 
 			(
-				SELECT
+				SELECT 
 					Sum(t.ParentID)
 				FROM
 					Child t

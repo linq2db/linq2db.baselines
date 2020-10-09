@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Substr(p.FirstName, Length(p.FirstName) - 2, 3)
 FROM
 	Person p

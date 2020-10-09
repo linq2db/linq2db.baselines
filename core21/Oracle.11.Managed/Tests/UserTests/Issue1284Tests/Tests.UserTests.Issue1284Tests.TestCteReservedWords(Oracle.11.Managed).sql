@@ -6,12 +6,12 @@ SET     @take = 1
 WITH CTE_1 (Operator)
 AS
 (
-	SELECT
+	SELECT 
 		x.LastName
 	FROM
 		Person x
 )
-SELECT
+SELECT 
 	t1.Operator
 FROM
 	CTE_1 t1
@@ -23,7 +23,7 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	x.LastName
 FROM
 	Person x

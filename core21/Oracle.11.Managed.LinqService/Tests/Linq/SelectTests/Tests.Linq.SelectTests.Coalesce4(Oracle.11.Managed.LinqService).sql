@@ -3,9 +3,9 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	Nvl((
-		SELECT
+		SELECT 
 			a_Parent.Value1
 		FROM
 			Child ch

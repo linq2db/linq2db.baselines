@@ -18,13 +18,13 @@ CREATE TABLE TestEqualsTable2
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	t1.Id
 FROM
 	TestEqualsTable1 t1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			TestEqualsTable2 t2

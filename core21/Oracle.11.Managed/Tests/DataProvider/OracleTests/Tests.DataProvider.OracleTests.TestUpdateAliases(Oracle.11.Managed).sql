@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Child child_1
@@ -16,7 +16,7 @@ SET
 	Child.ParentID = Child.ParentID
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Child child_1

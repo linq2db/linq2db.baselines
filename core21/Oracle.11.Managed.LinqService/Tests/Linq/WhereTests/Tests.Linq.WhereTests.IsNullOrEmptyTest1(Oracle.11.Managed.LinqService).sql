@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	nm.MiddleName
 FROM
 	Person nm
@@ -11,11 +11,11 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
+SELECT 
+	t1.FirstName, 
+	t1.PersonID, 
+	t1.LastName, 
+	t1.MiddleName, 
 	t1.Gender
 FROM
 	Person t1

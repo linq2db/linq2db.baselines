@@ -3,19 +3,19 @@
 DECLARE @skip Int32
 SET     @skip = 3
 
-SELECT
-	t2.ParentID,
+SELECT 
+	t2.ParentID, 
 	t2.ChildID
 FROM
-	(
-		SELECT
-			t1.ParentID,
-			t1.ChildID,
+	( 
+		SELECT 
+			t1.ParentID, 
+			t1.ChildID, 
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
-					ch.ParentID,
+			( 
+				SELECT 
+					ch.ParentID, 
 					ch.ChildID
 				FROM
 					Child ch

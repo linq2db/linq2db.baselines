@@ -42,8 +42,8 @@ INSERT INTO Child
 	ParentID,
 	ChildID
 )
-SELECT
-	p.ParentID,
+SELECT 
+	p.ParentID, 
 	p.ParentID
 FROM
 	Parent p
@@ -55,7 +55,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 1001
 
-SELECT
+SELECT 
 	Count(*)
 FROM
 	Child c_1

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.Key_1,
+SELECT 
+	t1.Key_1, 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Trunc(selectParam.DateTimeValue, 'DD') as Key_1
 		FROM
 			LinqDataTypes selectParam

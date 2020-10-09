@@ -32,8 +32,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.BlobValue
 FROM
 	BlobClass t1
@@ -45,8 +45,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t1.Id,
+SELECT 
+	t1.Id, 
 	t1.BlobValue
 FROM
 	BlobClass t1

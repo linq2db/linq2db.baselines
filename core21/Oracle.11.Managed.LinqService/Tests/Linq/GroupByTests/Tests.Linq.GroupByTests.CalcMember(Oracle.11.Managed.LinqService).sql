@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.c1,
+SELECT 
+	t1.c1, 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN child.FirstName = 'John'
 					THEN child.FirstName

@@ -3,13 +3,13 @@
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.ChildID
 FROM
-	(
-		SELECT
-			c_1.ParentID,
+	( 
+		SELECT 
+			c_1.ParentID, 
 			c_1.ChildID
 		FROM
 			Child c_1
@@ -26,8 +26,8 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
-	c_1.ParentID,
+SELECT 
+	c_1.ParentID, 
 	c_1.ChildID
 FROM
 	Child c_1
@@ -37,7 +37,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	1
 FROM
 	Parent p

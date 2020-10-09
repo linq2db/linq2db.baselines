@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	a_Child.ParentID,
+SELECT 
+	a_Child.ParentID, 
 	a_Child.ChildID
 FROM
-	(
-		SELECT DISTINCT
-			p.ParentID as p,
+	( 
+		SELECT DISTINCT 
+			p.ParentID as p, 
 			p.Value1 as p_1
 		FROM
 			Parent p

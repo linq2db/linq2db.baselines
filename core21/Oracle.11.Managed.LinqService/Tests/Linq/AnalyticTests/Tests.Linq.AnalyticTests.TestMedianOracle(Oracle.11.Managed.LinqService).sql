@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	MEDIAN(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
+SELECT 
+	MEDIAN(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID), 
 	MEDIAN(p.Value1) OVER()
 FROM
 	Parent p
@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	MEDIAN(c_1.ParentID)
 FROM
 	Parent p
@@ -22,7 +22,7 @@ GROUP BY
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	MEDIAN(t1.ParentID)
 FROM
 	Child t1

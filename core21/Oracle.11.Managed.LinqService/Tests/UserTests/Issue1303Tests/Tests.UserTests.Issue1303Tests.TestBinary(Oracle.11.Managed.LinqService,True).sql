@@ -33,9 +33,9 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.ID,
-	t1.Array,
+SELECT 
+	t1.ID, 
+	t1.Array, 
 	t1.Binary
 FROM
 	Issue1303 t1
@@ -45,9 +45,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.ID,
-	t1.Array,
+SELECT 
+	t1.ID, 
+	t1.Array, 
 	t1.Binary
 FROM
 	Issue1303 t1
@@ -57,9 +57,9 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.ID,
-	t1.Array,
+SELECT 
+	t1.ID, 
+	t1.Array, 
 	t1.Binary
 FROM
 	Issue1303 t1

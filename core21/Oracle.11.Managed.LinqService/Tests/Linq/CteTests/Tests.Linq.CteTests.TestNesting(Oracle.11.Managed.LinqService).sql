@@ -31,18 +31,18 @@ BeforeExecute
 WITH CTE_1 (Property2)
 AS
 (
-	SELECT
+	SELECT 
 		a.Property2
 	FROM
 		NestingC a
 )
-SELECT
-	c2.Property1,
-	t_1.Property2,
+SELECT 
+	c2.Property1, 
+	t_1.Property2, 
 	t_1.Property3
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			c1.Property2 as Property1
 		FROM
 			CTE_1 c1,

@@ -5,35 +5,35 @@ SET     @take = 10
 DECLARE @take_1 Int32
 SET     @take_1 = 10
 
-SELECT
-	t5.ParentID,
+SELECT 
+	t5.ParentID, 
 	t5.ChildID
 FROM
-	(
-		SELECT
-			cp.ParentID,
+	( 
+		SELECT 
+			cp.ParentID, 
 			c_1.ChildID
 		FROM
 			Parent cp
-				CROSS JOIN (
-					SELECT
-						t4.ParentID,
+				CROSS JOIN ( 
+					SELECT 
+						t4.ParentID, 
 						t4.ChildID
 					FROM
-						(
-							SELECT
-								t3.ParentID,
+						( 
+							SELECT 
+								t3.ParentID, 
 								t3.ChildID
 							FROM
-								(
-									SELECT
-										t1.ParentID,
+								( 
+									SELECT 
+										t1.ParentID, 
 										t1.ChildID
 									FROM
 										Child t1
 									UNION
-									SELECT
-										t2.ParentID,
+									SELECT 
+										t2.ParentID, 
 										t2.ChildID
 									FROM
 										Child t2

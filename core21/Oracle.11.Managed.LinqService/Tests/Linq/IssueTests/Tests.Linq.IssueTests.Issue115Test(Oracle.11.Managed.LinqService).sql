@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	c_1.ParentID,
+SELECT 
+	c_1.ParentID, 
 	c_1.ChildID
 FROM
 	Child c_1
@@ -10,8 +10,8 @@ FROM
 WHERE
 	r.ParentID > 4
 UNION
-SELECT
-	c_2.ParentID,
+SELECT 
+	c_2.ParentID, 
 	c_2.ChildID
 FROM
 	Child c_2

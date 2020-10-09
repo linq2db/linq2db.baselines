@@ -23,7 +23,7 @@ SET     @id = 100500
 DECLARE @take Int32
 SET     @take = 1
 
-SELECT
+SELECT 
 	t1.ParentID
 FROM
 	Parent t1
@@ -43,24 +43,24 @@ SET
 	Parent.Value1 = :ParentID
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					t3.ParentID
 				FROM
-					(
-						SELECT
-							t2.ParentID,
+					( 
+						SELECT 
+							t2.ParentID, 
 							(
-								SELECT
+								SELECT 
 									Count(*)
 								FROM
 									Parent t1
 								WHERE
 									t1.ParentID = :id
-							) as ex,
+							) as ex, 
 							t2.Value1
 						FROM
 							Parent t2

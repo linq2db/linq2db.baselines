@@ -21,11 +21,11 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	t2.Value_1
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			t1.Value as Value_1
 		FROM
 			TakeSkipClass t1

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.ChildID
 FROM
 	GrandChild t1
@@ -17,9 +17,9 @@ SET     @ParentID_1 = 1
 DECLARE @ChildID_1 Int32
 SET     @ChildID_1 = 11
 
-SELECT
-	keyParam.ParentID,
-	keyParam.ChildID,
+SELECT 
+	keyParam.ParentID, 
+	keyParam.ChildID, 
 	keyParam.GrandChildID
 FROM
 	GrandChild keyParam

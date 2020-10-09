@@ -25,7 +25,7 @@ BeforeExecute
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
+SELECT 
 	t1.DateTimeOffsetValue
 FROM
 	DateTimeOffsetTable t1

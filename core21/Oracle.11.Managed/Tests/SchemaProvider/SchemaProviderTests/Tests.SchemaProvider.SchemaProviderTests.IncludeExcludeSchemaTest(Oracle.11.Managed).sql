@@ -123,16 +123,6 @@ BeforeExecute
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYS.VALIDATE_CONTEXT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYS.VALIDATE_APEX
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @NAME Varchar2 -- String
 SET     @NAME = ''
 DECLARE @SUBNAME Varchar2 -- String
@@ -177,89 +167,13 @@ SYS.SUBPTXT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE_IN Varchar2 -- String
-SET     @NEW_TABLESPACE_IN = ''
 
-SYS.SET_TABLESPACE
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OBJECT_SCHEMA Varchar2 -- String
-SET     @OBJECT_SCHEMA = ''
-DECLARE @OBJECT_NAME Varchar2 -- String
-SET     @OBJECT_NAME = ''
-DECLARE @ENHRCHY Decimal(22)
-SET     @ENHRCHY = 0
-
-SYS.SETMODFLG
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @CONTEXT Blob -- Object
-SET     @CONTEXT = NULL
-DECLARE @REGINFO 0 -- Object
-SET     @REGINFO = NULL
-DECLARE @DESCR 0 -- Object
-SET     @DESCR = NULL
-DECLARE @PAYLOAD Blob -- Object
-SET     @PAYLOAD = NULL
-DECLARE @PAYLOADL Decimal(22)
-SET     @PAYLOADL = 0
-
-SYS.SCHEDULER$_JOB_EVENT_HANDLER
+OUTLN.ORA$GRANT_SYS_SELECT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SYS.RESET_UNDO_STAT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @TI 0 -- Object
-SET     @TI = NULL
-
-SYS.ODCITABFUNCINFODUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @SO 0 -- Object
-SET     @SO = NULL
-
-SYS.ODCISTATSOPTIONSDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @QI 0 -- Object
-SET     @QI = NULL
-
-SYS.ODCIQUERYINFODUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OP 0 -- Object
-SET     @OP = NULL
-
-SYS.ODCIPREDINFODUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PLIST Varchar2 -- String
-SET     @PLIST = NULL
-
-SYS.ODCIPARTINFOLISTDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PINFO 0 -- Object
-SET     @PINFO = NULL
-
-SYS.ODCIPARTINFODUMP
+SYSTEM.ORA$_SYS_REP_AUTH
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -270,6 +184,13 @@ SYS.ODCIINDEXINFOFLAGSDUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OP Decimal(22)
+SET     @OP = 0
+
+SYS.ODCICOLINFOFLAGSDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @IA 0 -- Object
 SET     @IA = NULL
 
@@ -277,31 +198,10 @@ SYS.ODCIINDEXINFODUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OP Decimal(22)
-SET     @OP = 0
+DECLARE @OP 0 -- Object
+SET     @OP = NULL
 
-SYS.ODCIINDEXCALLPROPERTYDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OP Decimal(22)
-SET     @OP = 0
-
-SYS.ODCIINDEXALTEROPTIONDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @ENV 0 -- Object
-SET     @ENV = NULL
-
-SYS.ODCIENVDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OP Decimal(22)
-SET     @OP = 0
-
-SYS.ODCICOLINFOFLAGSDUMP
+SYS.ODCIPREDINFODUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -319,40 +219,84 @@ SYS.ODCIANYDATADUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @TMPOWNERNAME Varchar2 -- String
-SET     @TMPOWNERNAME = ''
-DECLARE @TMPTABLENAME Varchar2 -- String
-SET     @TMPTABLENAME = ''
+DECLARE @QI 0 -- Object
+SET     @QI = NULL
 
-SYS.MOVEXDB_TABLE_PART2
+SYS.ODCIQUERYINFODUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @TMPOWNERNAME Varchar2 -- String
-SET     @TMPOWNERNAME = ''
-DECLARE @TMPTABLENAME Varchar2 -- String
-SET     @TMPTABLENAME = ''
-DECLARE @TARGET_TABLESPACE Varchar2 -- String
-SET     @TARGET_TABLESPACE = ''
-DECLARE @HASLOBBIT Varchar2 -- String
-SET     @HASLOBBIT = NULL
-DECLARE @OBJNUM Decimal(22)
-SET     @OBJNUM = 0
+DECLARE @SO 0 -- Object
+SET     @SO = NULL
 
-SYS.MOVEXDB_TABLE
+SYS.ODCISTATSOPTIONSDUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @LOGMNR_UID_IN Decimal(22)
-SET     @LOGMNR_UID_IN = 0
-DECLARE @REDO_THREAD_IN Decimal(22)
-SET     @REDO_THREAD_IN = 0
-DECLARE @END_SCN_BAS_IN Decimal(22)
-SET     @END_SCN_BAS_IN = 0
-DECLARE @END_SCN_WRP_IN Decimal(22)
-SET     @END_SCN_WRP_IN = 0
+DECLARE @ENV 0 -- Object
+SET     @ENV = NULL
 
-SYS.LOGMNR_KRVRDREPDICT3
+SYS.ODCIENVDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OP Decimal(22)
+SET     @OP = 0
+
+SYS.ODCIINDEXALTEROPTIONDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OP Decimal(22)
+SET     @OP = 0
+
+SYS.ODCIINDEXCALLPROPERTYDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PINFO 0 -- Object
+SET     @PINFO = NULL
+
+SYS.ODCIPARTINFODUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PLIST Varchar2 -- String
+SET     @PLIST = NULL
+
+SYS.ODCIPARTINFOLISTDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @TI 0 -- Object
+SET     @TI = NULL
+
+SYS.ODCITABFUNCINFODUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @QLEN Decimal(22)
+SET     @QLEN = 0
+DECLARE @UBKS Decimal(22)
+SET     @UBKS = 0
+
+SYS.LOAD_UNDO_STAT
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SYS.RESET_UNDO_STAT
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OBJ_TYPE Varchar2 -- String
+SET     @OBJ_TYPE = ''
+DECLARE @OBJ_NAME Varchar2 -- String
+SET     @OBJ_NAME = ''
+DECLARE @OBJ_OWNER Varchar2 -- String
+SET     @OBJ_OWNER = ''
+
+SYS.AW_DROP_PROC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -370,6 +314,28 @@ DECLARE @PLLD_END_SCN_WRP Decimal(22)
 SET     @PLLD_END_SCN_WRP = 0
 
 SYS.LOGMNR_KRVRDLUID3
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @LOGMNR_UID_IN Decimal(22)
+SET     @LOGMNR_UID_IN = 0
+DECLARE @REDO_THREAD_IN Decimal(22)
+SET     @REDO_THREAD_IN = 0
+DECLARE @END_SCN_BAS_IN Decimal(22)
+SET     @END_SCN_BAS_IN = 0
+DECLARE @END_SCN_WRP_IN Decimal(22)
+SET     @END_SCN_WRP_IN = 0
+
+SYS.LOGMNR_KRVRDREPDICT3
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @LOGMNRUID Decimal(22)
+SET     @LOGMNRUID = 0
+DECLARE @DUMMY Decimal(22)
+SET     @DUMMY = 0
+
+SYS.DBMS_LOGMNR_FFVTOLOGMNRT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -391,6 +357,21 @@ DECLARE @OUTAPPLY Decimal(22)
 SET     @OUTAPPLY = 0
 
 SYS.LOGMNR_KRVRDA_TEST_APPLY
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @CONTEXT Blob -- Object
+SET     @CONTEXT = NULL
+DECLARE @REGINFO 0 -- Object
+SET     @REGINFO = NULL
+DECLARE @DESCR 0 -- Object
+SET     @DESCR = NULL
+DECLARE @PAYLOAD Blob -- Object
+SET     @PAYLOAD = NULL
+DECLARE @PAYLOADL Decimal(22)
+SET     @PAYLOADL = 0
+
+SYS.SCHEDULER$_JOB_EVENT_HANDLER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -467,21 +448,14 @@ SYS.LOGMNR_GTLO3
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @QLEN Decimal(22)
-SET     @QLEN = 0
-DECLARE @UBKS Decimal(22)
-SET     @UBKS = 0
+DECLARE @IS_USED Decimal(22)
+SET     @IS_USED = 0
+DECLARE @TOTAL_DISKGROUP_SIZE Decimal(22)
+SET     @TOTAL_DISKGROUP_SIZE = 0
+DECLARE @SUMMARY Clob -- Object
+SET     @SUMMARY = ''
 
-SYS.LOAD_UNDO_STAT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @LOGMNRUID Decimal(22)
-SET     @LOGMNRUID = 0
-DECLARE @DUMMY Decimal(22)
-SET     @DUMMY = 0
-
-SYS.DBMS_LOGMNR_FFVTOLOGMNRT
+SYS.DBMS_FEATURE_ASM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -492,18 +466,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_XDB
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_WCR_REPLAY
+SYS.DBMS_FEATURE_AUTOSTA
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -525,7 +488,51 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_UTILITIES4
+SYS.DBMS_FEATURE_WCR_REPLAY
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @IS_USED Decimal(22)
+SET     @IS_USED = 0
+DECLARE @DATA_RATIO Decimal(22)
+SET     @DATA_RATIO = 0
+DECLARE @CLOB_REST Clob -- Object
+SET     @CLOB_REST = ''
+
+SYS.DBMS_FEATURE_PARTITION_USER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @IS_USED Decimal(22)
+SET     @IS_USED = 0
+DECLARE @DATA_RATIO Decimal(22)
+SET     @DATA_RATIO = 0
+DECLARE @CLOB_REST Clob -- Object
+SET     @CLOB_REST = ''
+
+SYS.DBMS_FEATURE_PARTITION_SYSTEM
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @O_IS_USED Decimal(22)
+SET     @O_IS_USED = 0
+DECLARE @O_AUX_COUNT Decimal(22)
+SET     @O_AUX_COUNT = 0
+DECLARE @O_REPORT Clob -- Object
+SET     @O_REPORT = ''
+
+SYS.DBMS_FEATURE_PLSQL_NATIVE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @IS_USED Decimal(22)
+SET     @IS_USED = 0
+DECLARE @NODES Decimal(22)
+SET     @NODES = 0
+DECLARE @CLOB_REST Clob -- Object
+SET     @CLOB_REST = ''
+
+SYS.DBMS_FEATURE_RAC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -536,7 +543,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_UTILITIES3
+SYS.DBMS_FEATURE_XDB
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -547,7 +554,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_UTILITIES2
+SYS.DBMS_FEATURE_APEX
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -558,7 +565,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_UTILITIES1
+SYS.DBMS_FEATURE_OBJECT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -569,7 +576,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_USER_MVS
+SYS.DBMS_FEATURE_EXTENSIBILITY
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -580,7 +587,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_TEST_PROC_5
+SYS.DBMS_FEATURE_RULESMANAGER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -591,102 +598,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_TEST_PROC_4
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @CURRENT_VALUE Decimal(22)
-SET     @CURRENT_VALUE = 0
-
-SYS.DBMS_FEATURE_TEST_PROC_3
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_TEST_PROC_2
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_TEST_PROC_1
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFENCRYPT_USR
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFENCRYPT_SYS
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFDEDUP_USR
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFDEDUP_SYS
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFCOMPRESS_USR
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFCOMPRESS_SYS
+SYS.DBMS_FEATURE_CDC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -708,7 +620,18 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_SEGADV_USER
+SYS.DBMS_FEATURE_USER_MVS
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_HCC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -741,7 +664,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RULESMANAGER
+SYS.DBMS_FEATURE_SFENCRYPT_USR
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -752,7 +675,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_ZLIB
+SYS.DBMS_FEATURE_SFENCRYPT_SYS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -763,7 +686,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_MEDIUM
+SYS.DBMS_FEATURE_SFCOMPRESS_USR
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -774,7 +697,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_LOW
+SYS.DBMS_FEATURE_SFCOMPRESS_SYS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -785,7 +708,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_HIGH
+SYS.DBMS_FEATURE_SFDEDUP_USR
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -796,171 +719,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_BZIP2
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_RMAN_BASIC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_RESOURCE_MANAGER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYS.DBMS_FEATURE_REGISTER_ALLHWM
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYS.DBMS_FEATURE_REGISTER_ALLFEAT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @IS_USED Decimal(22)
-SET     @IS_USED = 0
-DECLARE @NODES Decimal(22)
-SET     @NODES = 0
-DECLARE @CLOB_REST Clob -- Object
-SET     @CLOB_REST = ''
-
-SYS.DBMS_FEATURE_RAC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @O_IS_USED Decimal(22)
-SET     @O_IS_USED = 0
-DECLARE @O_AUX_COUNT Decimal(22)
-SET     @O_AUX_COUNT = 0
-DECLARE @O_REPORT Clob -- Object
-SET     @O_REPORT = ''
-
-SYS.DBMS_FEATURE_PLSQL_NATIVE
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @IS_USED Decimal(22)
-SET     @IS_USED = 0
-DECLARE @DATA_RATIO Decimal(22)
-SET     @DATA_RATIO = 0
-DECLARE @CLOB_REST Clob -- Object
-SET     @CLOB_REST = ''
-
-SYS.DBMS_FEATURE_PARTITION_USER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @IS_USED Decimal(22)
-SET     @IS_USED = 0
-DECLARE @DATA_RATIO Decimal(22)
-SET     @DATA_RATIO = 0
-DECLARE @CLOB_REST Clob -- Object
-SET     @CLOB_REST = ''
-
-SYS.DBMS_FEATURE_PARTITION_SYSTEM
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_OBJECT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_LMT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @IS_USED Decimal(22)
-SET     @IS_USED = 0
-DECLARE @NR_OF_JOBS Decimal(22)
-SET     @NR_OF_JOBS = 0
-DECLARE @SUMMARY Clob -- Object
-SET     @SUMMARY = ''
-
-SYS.DBMS_FEATURE_JOB_SCHEDULER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_HCC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_EXTENSIBILITY
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @NUM_CELLS Decimal(22)
-SET     @NUM_CELLS = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_EXADATA
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_DYN_SGA
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_DEFERRED_SEG_CRT
+SYS.DBMS_FEATURE_SFDEDUP_SYS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -982,40 +741,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_DATABASE_VAULT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_CDC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN_OUT Decimal(22)
-SET     @FEATURE_BOOLEAN_OUT = 0
-DECLARE @AUX_COUNT_OUT Decimal(22)
-SET     @AUX_COUNT_OUT = 0
-DECLARE @FEATURE_INFO_OUT Clob -- Object
-SET     @FEATURE_INFO_OUT = ''
-
-SYS.DBMS_FEATURE_AWR
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_AUTO_SSM
+SYS.DBMS_FEATURE_DYN_SGA
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1048,7 +774,106 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_AUTOSTA
+SYS.DBMS_FEATURE_RESOURCE_MANAGER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_ZLIB
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_BZIP2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_BASIC
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_LOW
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_MEDIUM
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_HIGH
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_AUTO_SSM
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_LMT
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_SEGADV_USER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1065,12 +890,23 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @IS_USED Decimal(22)
 SET     @IS_USED = 0
-DECLARE @TOTAL_DISKGROUP_SIZE Decimal(22)
-SET     @TOTAL_DISKGROUP_SIZE = 0
+DECLARE @NR_OF_JOBS Decimal(22)
+SET     @NR_OF_JOBS = 0
 DECLARE @SUMMARY Clob -- Object
 SET     @SUMMARY = ''
 
-SYS.DBMS_FEATURE_ASM
+SYS.DBMS_FEATURE_JOB_SCHEDULER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @NUM_CELLS Decimal(22)
+SET     @NUM_CELLS = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_EXADATA
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1081,157 +917,139 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_APEX
+SYS.DBMS_FEATURE_UTILITIES1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OBJ_TYPE Varchar2 -- String
-SET     @OBJ_TYPE = ''
-DECLARE @OBJ_NAME Varchar2 -- String
-SET     @OBJ_NAME = ''
-DECLARE @OBJ_OWNER Varchar2 -- String
-SET     @OBJ_OWNER = ''
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
 
-SYS.AW_TRUNC_PROC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OBJ_TYPE Varchar2 -- String
-SET     @OBJ_TYPE = ''
-DECLARE @OBJ_NAME Varchar2 -- String
-SET     @OBJ_NAME = ''
-DECLARE @OBJ_OWNER Varchar2 -- String
-SET     @OBJ_OWNER = ''
-
-SYS.AW_REN_PROC
+SYS.DBMS_FEATURE_UTILITIES2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OBJ_TYPE Varchar2 -- String
-SET     @OBJ_TYPE = ''
-DECLARE @OBJ_NAME Varchar2 -- String
-SET     @OBJ_NAME = ''
-DECLARE @OBJ_OWNER Varchar2 -- String
-SET     @OBJ_OWNER = ''
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
 
-SYS.AW_DROP_PROC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYSTEM.TEST2132
+SYS.DBMS_FEATURE_UTILITIES3
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @POUTPUTINT Varchar2 -- String
-SET     @POUTPUTINT = NULL
-DECLARE @POUTPUTSTRING NVarchar2 -- String
-SET     @POUTPUTSTRING = ''
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
 
-SYSTEM.SCALAR_OUTPUTPARAMETER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @POUTPUTINTARRAY Varchar2 -- String
-SET     @POUTPUTINTARRAY = NULL
-
-SYSTEM.SCALARARRAY
+SYS.DBMS_FEATURE_UTILITIES4
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @MR Varchar2 -- String
-SET     @MR = NULL
-DECLARE @SR Varchar2 -- String
-SET     @SR = NULL
+DECLARE @FEATURE_BOOLEAN_OUT Decimal(22)
+SET     @FEATURE_BOOLEAN_OUT = 0
+DECLARE @AUX_COUNT_OUT Decimal(22)
+SET     @AUX_COUNT_OUT = 0
+DECLARE @FEATURE_INFO_OUT Clob -- Object
+SET     @FEATURE_INFO_OUT = ''
 
-SYSTEM.RESULTSETTEST
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PPERSONID Decimal(22)
-SET     @PPERSONID = 0
-DECLARE @PFIRSTNAME NVarchar2 -- String
-SET     @PFIRSTNAME = ''
-DECLARE @PLASTNAME NVarchar2 -- String
-SET     @PLASTNAME = ''
-DECLARE @PMIDDLENAME NVarchar2 -- String
-SET     @PMIDDLENAME = ''
-DECLARE @PGENDER Char -- AnsiStringFixedLength
-SET     @PGENDER = ''
-
-SYSTEM.PERSON_UPDATE
+SYS.DBMS_FEATURE_AWR
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PFIRSTNAME NVarchar2 -- String
-SET     @PFIRSTNAME = ''
-DECLARE @PLASTNAME NVarchar2 -- String
-SET     @PLASTNAME = ''
-DECLARE @PMIDDLENAME NVarchar2 -- String
-SET     @PMIDDLENAME = ''
-DECLARE @PGENDER Char -- AnsiStringFixedLength
-SET     @PGENDER = ''
-DECLARE @PPERSONID Decimal(22)
-SET     @PPERSONID = 0
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
 
-SYSTEM.PERSON_INSERT_OUTPUTPARAMETER
+SYS.DBMS_FEATURE_DATABASE_VAULT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PPERSONID Decimal(22)
-SET     @PPERSONID = 0
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
 
-SYSTEM.PERSON_DELETE
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PID Decimal(22)
-SET     @PID = 0
-DECLARE @POUTPUTID Decimal(22)
-SET     @POUTPUTID = 0
-DECLARE @PINPUTOUTPUTID Decimal(22)
-SET     @PINPUTOUTPUTID = 0
-DECLARE @PSTR NVarchar2 -- String
-SET     @PSTR = ''
-DECLARE @POUTPUTSTR NVarchar2 -- String
-SET     @POUTPUTSTR = ''
-DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
-SET     @PINPUTOUTPUTSTR = ''
-
-SYSTEM.OUTREFTEST
+SYS.DBMS_FEATURE_DEFERRED_SEG_CRT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PSTR NVarchar2 -- String
-SET     @PSTR = ''
-DECLARE @POUTPUTSTR NVarchar2 -- String
-SET     @POUTPUTSTR = ''
-DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
-SET     @PINPUTOUTPUTSTR = ''
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
 
-SYSTEM.OUTREFENUMTEST
+SYS.DBMS_FEATURE_TEST_PROC_1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_TEST_PROC_2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @CURRENT_VALUE Decimal(22)
+SET     @CURRENT_VALUE = 0
+
+SYS.DBMS_FEATURE_TEST_PROC_3
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_TEST_PROC_4
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_TEST_PROC_5
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SYSTEM.ORA$_SYS_REP_AUTH
+SYS.DBMS_FEATURE_REGISTER_ALLFEAT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PINTARRAY Varchar2 -- String
-SET     @PINTARRAY = NULL
-DECLARE @POUTPUTINTARRAY Varchar2 -- String
-SET     @POUTPUTINTARRAY = NULL
-DECLARE @PINPUTOUTPUTINTARRAY Varchar2 -- String
-SET     @PINPUTOUTPUTINTARRAY = NULL
-DECLARE @PSTRARRAY Varchar2 -- String
-SET     @PSTRARRAY = NULL
-DECLARE @POUTPUTSTRARRAY Varchar2 -- String
-SET     @POUTPUTSTRARRAY = NULL
-DECLARE @PINPUTOUTPUTSTRARRAY Varchar2 -- String
-SET     @PINPUTOUTPUTSTRARRAY = NULL
 
-SYSTEM.ARRAYTEST
+SYS.DBMS_FEATURE_REGISTER_ALLHWM
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SYSTEM.ADDISSUE792RECORD
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1295,12 +1113,38 @@ SYSTEM.ALLOUTPUTPARAMETERS
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SYSTEM.ADDISSUE792RECORD
+SYSTEM.TEST2132
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OBJ_TYPE Varchar2 -- String
+SET     @OBJ_TYPE = ''
+DECLARE @OBJ_NAME Varchar2 -- String
+SET     @OBJ_NAME = ''
+DECLARE @OBJ_OWNER Varchar2 -- String
+SET     @OBJ_OWNER = ''
 
-OUTLN.ORA$GRANT_SYS_SELECT
+SYS.AW_TRUNC_PROC
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OBJ_TYPE Varchar2 -- String
+SET     @OBJ_TYPE = ''
+DECLARE @OBJ_NAME Varchar2 -- String
+SET     @OBJ_NAME = ''
+DECLARE @OBJ_OWNER Varchar2 -- String
+SET     @OBJ_OWNER = ''
+
+SYS.AW_REN_PROC
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @TBS_NAME Varchar2 -- String
+SET     @TBS_NAME = ''
+DECLARE @PRINT_ONLY Varchar2 -- String
+SET     @PRINT_ONLY = NULL
+
+CTXSYS.DRI_MOVE_CTXSYS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1321,25 +1165,61 @@ CTXSYS.SYNCRN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @TBS_NAME Varchar2 -- String
-SET     @TBS_NAME = ''
-DECLARE @PRINT_ONLY Varchar2 -- String
-SET     @PRINT_ONLY = NULL
 
-CTXSYS.DRI_MOVE_CTXSYS
+SYS.VALIDATE_CONTEXT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
 
-XDB.XDB_DATASTORE_PROC
+XDB.XDB$INITXDBSCHEMA
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OBJECT_SCHEMA Varchar2 -- String
+SET     @OBJECT_SCHEMA = ''
+DECLARE @OBJECT_NAME Varchar2 -- String
+SET     @OBJECT_NAME = ''
+DECLARE @ENHRCHY Decimal(22)
+SET     @ENHRCHY = 0
+
+SYS.SETMODFLG
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @TMPOWNERNAME Varchar2 -- String
+SET     @TMPOWNERNAME = ''
+DECLARE @TMPTABLENAME Varchar2 -- String
+SET     @TMPTABLENAME = ''
+DECLARE @TARGET_TABLESPACE Varchar2 -- String
+SET     @TARGET_TABLESPACE = ''
+DECLARE @HASLOBBIT Varchar2 -- String
+SET     @HASLOBBIT = NULL
+DECLARE @OBJNUM Decimal(22)
+SET     @OBJNUM = 0
+
+SYS.MOVEXDB_TABLE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @TMPOWNERNAME Varchar2 -- String
+SET     @TMPOWNERNAME = ''
+DECLARE @TMPTABLENAME Varchar2 -- String
+SET     @TMPTABLENAME = ''
+
+SYS.MOVEXDB_TABLE_PART2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @NEW_TABLESPACE Varchar2 -- String
+SET     @NEW_TABLESPACE = ''
+DECLARE @NEW_TABLESPACE Varchar2 -- String
+SET     @NEW_TABLESPACE = ''
+DECLARE @NEW_TABLESPACE Varchar2 -- String
+SET     @NEW_TABLESPACE = ''
+DECLARE @NEW_TABLESPACE_IN Varchar2 -- String
+SET     @NEW_TABLESPACE_IN = ''
+
+SYS.SET_TABLESPACE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1361,8 +1241,16 @@ XDB.XDB$PATCHUPDELETESCHEMA
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @RID Varchar2(256) -- String
+SET     @RID = ''
+DECLARE @RID Varchar2(256) -- String
+SET     @RID = ''
+DECLARE @OUTLOB Clob -- Object
+SET     @OUTLOB = ''
+DECLARE @OUTLOB Clob -- Object
+SET     @OUTLOB = ''
 
-XDB.XDB$INITXDBSCHEMA
+XDB.XDB_DATASTORE_PROC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1395,164 +1283,13 @@ HR.ADD_JOB_HISTORY
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_URL Varchar2 -- String
-SET     @P_URL = ''
-DECLARE @P_CAT Varchar2 -- String
-SET     @P_CAT = ''
-DECLARE @P_ID Varchar2 -- String
-SET     @P_ID = ''
-DECLARE @P_USER Varchar2 -- String
-SET     @P_USER = ''
-DECLARE @P_COMPANY Varchar2 -- String
-SET     @P_COMPANY = ''
-DECLARE @P_WORKSPACE Varchar2 -- String
-SET     @P_WORKSPACE = ''
 
-APEX_040000.Z
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_FLOW_ID Varchar2 -- String
-SET     @P_FLOW_ID = ''
-DECLARE @P_LANGUAGE Varchar2 -- String
-SET     @P_LANGUAGE = ''
-
-APEX_040000.WWV_FLOW_SYNC_TRANSLATIONS
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_FLOW_ID Varchar2 -- String
-SET     @P_FLOW_ID = ''
-DECLARE @P_LANGUAGE Varchar2 -- String
-SET     @P_LANGUAGE = ''
-DECLARE @P_INSERT_ONLY Varchar2 -- String
-SET     @P_INSERT_ONLY = ''
-
-APEX_040000.WWV_FLOW_SEED_TRANSLATIONS
+SYS.VALIDATE_APEX
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 APEX_040000.WWV_FLOW_INIT_HTP_BUFFER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_COPY_FROM_ITEM_ID Decimal(22)
-SET     @P_COPY_FROM_ITEM_ID = 0
-DECLARE @P_COPY_TO_ITEM_NAME Varchar2 -- String
-SET     @P_COPY_TO_ITEM_NAME = ''
-DECLARE @P_COPY_TO_ITEM_SEQUENCE Varchar2 -- String
-SET     @P_COPY_TO_ITEM_SEQUENCE = ''
-DECLARE @P_COPY_TO_PAGE_ID Decimal(22)
-SET     @P_COPY_TO_PAGE_ID = 0
-DECLARE @P_COPY_TO_ITEM_PLUG Varchar2 -- String
-SET     @P_COPY_TO_ITEM_PLUG = ''
-DECLARE @P_COPY_TO_PROMPT Varchar2 -- String
-SET     @P_COPY_TO_PROMPT = ''
-DECLARE @P_COPY_TO_SOURCE_TYPE Varchar2 -- String
-SET     @P_COPY_TO_SOURCE_TYPE = ''
-DECLARE @P_COPY_TO_SOURCE Varchar2 -- String
-SET     @P_COPY_TO_SOURCE = ''
-
-APEX_040000.WWV_FLOW_COPY_PAGE_ITEM
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_LOV_ID_FROM Decimal(22)
-SET     @P_LOV_ID_FROM = 0
-DECLARE @P_LOV_NAME_TO Varchar2 -- String
-SET     @P_LOV_NAME_TO = ''
-DECLARE @P_COPY_FROM_FLOW_ID Decimal(22)
-SET     @P_COPY_FROM_FLOW_ID = 0
-DECLARE @P_FLOW_ID Decimal(22)
-SET     @P_FLOW_ID = 0
-DECLARE @P_LOV_ID_TO Decimal(22)
-SET     @P_LOV_ID_TO = 0
-
-APEX_040000.WWV_FLOW_COPY_LOV
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_BUTTON_ID_FROM Decimal(22)
-SET     @P_BUTTON_ID_FROM = 0
-DECLARE @P_BUTTON_NAME_TO Varchar2 -- String
-SET     @P_BUTTON_NAME_TO = ''
-DECLARE @P_BUTTON_TEXT_TO Varchar2 -- String
-SET     @P_BUTTON_TEXT_TO = ''
-DECLARE @P_BUTTON_PAGE_ID_TO Decimal(22)
-SET     @P_BUTTON_PAGE_ID_TO = 0
-DECLARE @P_BUTTON_REGION_TO Decimal(22)
-SET     @P_BUTTON_REGION_TO = 0
-DECLARE @P_BUTTON_SEQUENCE_TO Decimal(22)
-SET     @P_BUTTON_SEQUENCE_TO = 0
-
-APEX_040000.WWV_FLOW_COPY_BUTTON
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_FLOW_ID_FROM Decimal(22)
-SET     @P_FLOW_ID_FROM = 0
-DECLARE @P_FLOW_ID_TO Decimal(22)
-SET     @P_FLOW_ID_TO = 0
-DECLARE @P_ALIAS_TO Varchar2 -- String
-SET     @P_ALIAS_TO = ''
-DECLARE @P_FLOW_LANGUAGE_TO Varchar2 -- String
-SET     @P_FLOW_LANGUAGE_TO = ''
-DECLARE @P_OK_TO_DELETE_FLOW Varchar2 -- String
-SET     @P_OK_TO_DELETE_FLOW = NULL
-DECLARE @P_PERFORM_TRANSLATIONS Varchar2 -- String
-SET     @P_PERFORM_TRANSLATIONS = NULL
-
-APEX_040000.WWV_FLOW_COPY
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P Varchar2 -- String
-SET     @P = ''
-DECLARE @P_SEP Varchar2 -- String
-SET     @P_SEP = ''
-DECLARE @P_TRACE Varchar2 -- String
-SET     @P_TRACE = ''
-DECLARE @P_DEBUG Varchar2 -- String
-SET     @P_DEBUG = ''
-DECLARE @TZ Varchar2 -- String
-SET     @TZ = ''
-DECLARE @P_LANG Varchar2 -- String
-SET     @P_LANG = ''
-DECLARE @P_TERRITORY Varchar2 -- String
-SET     @P_TERRITORY = ''
-
-APEX_040000.WS
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @N Varchar2 -- String
-SET     @N = ''
-DECLARE @P_MIME_TYPE Varchar2 -- String
-SET     @P_MIME_TYPE = ''
-DECLARE @P_INLINE Varchar2 -- String
-SET     @P_INLINE = ''
-
-APEX_040000.P
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_SESSION Decimal(22)
-SET     @P_SESSION = 0
-
-APEX_040000.HTMLDB_LOGIN
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-APEX_040000.HTMLDB_ADMIN
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_SESSION Decimal(22)
-SET     @P_SESSION = 0
-
-APEX_040000.HTMLDB
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1594,7 +1331,28 @@ BeforeExecute
 DECLARE @P_SESSION Decimal(22)
 SET     @P_SESSION = 0
 
-APEX_040000.DEVELOPMENT_SERVICE_SIGNUP
+APEX_040000.APEX
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_SESSION Decimal(22)
+SET     @P_SESSION = 0
+
+APEX_040000.DEVELOPMENT_SERVICE_HOME
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_SESSION Decimal(22)
+SET     @P_SESSION = 0
+
+APEX_040000.HTMLDB
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_SESSION Decimal(22)
+SET     @P_SESSION = 0
+
+APEX_040000.HTMLDB_LOGIN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1608,7 +1366,144 @@ BeforeExecute
 DECLARE @P_SESSION Decimal(22)
 SET     @P_SESSION = 0
 
-APEX_040000.DEVELOPMENT_SERVICE_HOME
+APEX_040000.DEVELOPMENT_SERVICE_SIGNUP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_URL Varchar2 -- String
+SET     @P_URL = ''
+DECLARE @P_CAT Varchar2 -- String
+SET     @P_CAT = ''
+DECLARE @P_ID Varchar2 -- String
+SET     @P_ID = ''
+DECLARE @P_USER Varchar2 -- String
+SET     @P_USER = ''
+DECLARE @P_COMPANY Varchar2 -- String
+SET     @P_COMPANY = ''
+DECLARE @P_WORKSPACE Varchar2 -- String
+SET     @P_WORKSPACE = ''
+
+APEX_040000.Z
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P Varchar2 -- String
+SET     @P = ''
+DECLARE @P_SEP Varchar2 -- String
+SET     @P_SEP = ''
+DECLARE @P_TRACE Varchar2 -- String
+SET     @P_TRACE = ''
+DECLARE @P_DEBUG Varchar2 -- String
+SET     @P_DEBUG = ''
+DECLARE @TZ Varchar2 -- String
+SET     @TZ = ''
+DECLARE @P_LANG Varchar2 -- String
+SET     @P_LANG = ''
+DECLARE @P_TERRITORY Varchar2 -- String
+SET     @P_TERRITORY = ''
+
+APEX_040000.WS
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @N Varchar2 -- String
+SET     @N = ''
+DECLARE @P_MIME_TYPE Varchar2 -- String
+SET     @P_MIME_TYPE = ''
+DECLARE @P_INLINE Varchar2 -- String
+SET     @P_INLINE = ''
+
+APEX_040000.P
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_FLOW_ID_FROM Decimal(22)
+SET     @P_FLOW_ID_FROM = 0
+DECLARE @P_FLOW_ID_TO Decimal(22)
+SET     @P_FLOW_ID_TO = 0
+DECLARE @P_ALIAS_TO Varchar2 -- String
+SET     @P_ALIAS_TO = ''
+DECLARE @P_FLOW_LANGUAGE_TO Varchar2 -- String
+SET     @P_FLOW_LANGUAGE_TO = ''
+DECLARE @P_OK_TO_DELETE_FLOW Varchar2 -- String
+SET     @P_OK_TO_DELETE_FLOW = NULL
+DECLARE @P_PERFORM_TRANSLATIONS Varchar2 -- String
+SET     @P_PERFORM_TRANSLATIONS = NULL
+
+APEX_040000.WWV_FLOW_COPY
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_LOV_ID_FROM Decimal(22)
+SET     @P_LOV_ID_FROM = 0
+DECLARE @P_LOV_NAME_TO Varchar2 -- String
+SET     @P_LOV_NAME_TO = ''
+DECLARE @P_COPY_FROM_FLOW_ID Decimal(22)
+SET     @P_COPY_FROM_FLOW_ID = 0
+DECLARE @P_FLOW_ID Decimal(22)
+SET     @P_FLOW_ID = 0
+DECLARE @P_LOV_ID_TO Decimal(22)
+SET     @P_LOV_ID_TO = 0
+
+APEX_040000.WWV_FLOW_COPY_LOV
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_COPY_FROM_ITEM_ID Decimal(22)
+SET     @P_COPY_FROM_ITEM_ID = 0
+DECLARE @P_COPY_TO_ITEM_NAME Varchar2 -- String
+SET     @P_COPY_TO_ITEM_NAME = ''
+DECLARE @P_COPY_TO_ITEM_SEQUENCE Varchar2 -- String
+SET     @P_COPY_TO_ITEM_SEQUENCE = ''
+DECLARE @P_COPY_TO_PAGE_ID Decimal(22)
+SET     @P_COPY_TO_PAGE_ID = 0
+DECLARE @P_COPY_TO_ITEM_PLUG Varchar2 -- String
+SET     @P_COPY_TO_ITEM_PLUG = ''
+DECLARE @P_COPY_TO_PROMPT Varchar2 -- String
+SET     @P_COPY_TO_PROMPT = ''
+DECLARE @P_COPY_TO_SOURCE_TYPE Varchar2 -- String
+SET     @P_COPY_TO_SOURCE_TYPE = ''
+DECLARE @P_COPY_TO_SOURCE Varchar2 -- String
+SET     @P_COPY_TO_SOURCE = ''
+
+APEX_040000.WWV_FLOW_COPY_PAGE_ITEM
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_BUTTON_ID_FROM Decimal(22)
+SET     @P_BUTTON_ID_FROM = 0
+DECLARE @P_BUTTON_NAME_TO Varchar2 -- String
+SET     @P_BUTTON_NAME_TO = ''
+DECLARE @P_BUTTON_TEXT_TO Varchar2 -- String
+SET     @P_BUTTON_TEXT_TO = ''
+DECLARE @P_BUTTON_PAGE_ID_TO Decimal(22)
+SET     @P_BUTTON_PAGE_ID_TO = 0
+DECLARE @P_BUTTON_REGION_TO Decimal(22)
+SET     @P_BUTTON_REGION_TO = 0
+DECLARE @P_BUTTON_SEQUENCE_TO Decimal(22)
+SET     @P_BUTTON_SEQUENCE_TO = 0
+
+APEX_040000.WWV_FLOW_COPY_BUTTON
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_FLOW_ID Varchar2 -- String
+SET     @P_FLOW_ID = ''
+DECLARE @P_LANGUAGE Varchar2 -- String
+SET     @P_LANGUAGE = ''
+DECLARE @P_INSERT_ONLY Varchar2 -- String
+SET     @P_INSERT_ONLY = ''
+
+APEX_040000.WWV_FLOW_SEED_TRANSLATIONS
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_FLOW_ID Varchar2 -- String
+SET     @P_FLOW_ID = ''
+DECLARE @P_LANGUAGE Varchar2 -- String
+SET     @P_LANGUAGE = ''
+
+APEX_040000.WWV_FLOW_SYNC_TRANSLATIONS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1617,10 +1512,115 @@ APEX_040000.APEX_ADMIN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_SESSION Decimal(22)
-SET     @P_SESSION = 0
 
-APEX_040000.APEX
+APEX_040000.HTMLDB_ADMIN
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PPERSONID Decimal(22)
+SET     @PPERSONID = 0
+
+SYSTEM.PERSON_DELETE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PFIRSTNAME NVarchar2 -- String
+SET     @PFIRSTNAME = ''
+DECLARE @PLASTNAME NVarchar2 -- String
+SET     @PLASTNAME = ''
+DECLARE @PMIDDLENAME NVarchar2 -- String
+SET     @PMIDDLENAME = ''
+DECLARE @PGENDER Char -- AnsiStringFixedLength
+SET     @PGENDER = ''
+DECLARE @PPERSONID Decimal(22)
+SET     @PPERSONID = 0
+
+SYSTEM.PERSON_INSERT_OUTPUTPARAMETER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PPERSONID Decimal(22)
+SET     @PPERSONID = 0
+DECLARE @PFIRSTNAME NVarchar2 -- String
+SET     @PFIRSTNAME = ''
+DECLARE @PLASTNAME NVarchar2 -- String
+SET     @PLASTNAME = ''
+DECLARE @PMIDDLENAME NVarchar2 -- String
+SET     @PMIDDLENAME = ''
+DECLARE @PGENDER Char -- AnsiStringFixedLength
+SET     @PGENDER = ''
+
+SYSTEM.PERSON_UPDATE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PID Decimal(22)
+SET     @PID = 0
+DECLARE @POUTPUTID Decimal(22)
+SET     @POUTPUTID = 0
+DECLARE @PINPUTOUTPUTID Decimal(22)
+SET     @PINPUTOUTPUTID = 0
+DECLARE @PSTR NVarchar2 -- String
+SET     @PSTR = ''
+DECLARE @POUTPUTSTR NVarchar2 -- String
+SET     @POUTPUTSTR = ''
+DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
+SET     @PINPUTOUTPUTSTR = ''
+
+SYSTEM.OUTREFTEST
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PSTR NVarchar2 -- String
+SET     @PSTR = ''
+DECLARE @POUTPUTSTR NVarchar2 -- String
+SET     @POUTPUTSTR = ''
+DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
+SET     @PINPUTOUTPUTSTR = ''
+
+SYSTEM.OUTREFENUMTEST
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PINTARRAY Varchar2 -- String
+SET     @PINTARRAY = NULL
+DECLARE @POUTPUTINTARRAY Varchar2 -- String
+SET     @POUTPUTINTARRAY = NULL
+DECLARE @PINPUTOUTPUTINTARRAY Varchar2 -- String
+SET     @PINPUTOUTPUTINTARRAY = NULL
+DECLARE @PSTRARRAY Varchar2 -- String
+SET     @PSTRARRAY = NULL
+DECLARE @POUTPUTSTRARRAY Varchar2 -- String
+SET     @POUTPUTSTRARRAY = NULL
+DECLARE @PINPUTOUTPUTSTRARRAY Varchar2 -- String
+SET     @PINPUTOUTPUTSTRARRAY = NULL
+
+SYSTEM.ARRAYTEST
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @POUTPUTINTARRAY Varchar2 -- String
+SET     @POUTPUTINTARRAY = NULL
+
+SYSTEM.SCALARARRAY
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @MR Varchar2 -- String
+SET     @MR = NULL
+DECLARE @SR Varchar2 -- String
+SET     @SR = NULL
+
+SYSTEM.RESULTSETTEST
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @POUTPUTINT Varchar2 -- String
+SET     @POUTPUTINT = NULL
+DECLARE @POUTPUTSTRING NVarchar2 -- String
+SET     @POUTPUTSTRING = ''
+
+SYSTEM.SCALAR_OUTPUTPARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1631,16 +1631,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 select user from dual
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYS.VALIDATE_CONTEXT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYS.VALIDATE_APEX
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1688,89 +1678,8 @@ SYS.SUBPTXT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE_IN Varchar2 -- String
-SET     @NEW_TABLESPACE_IN = ''
 
-SYS.SET_TABLESPACE
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OBJECT_SCHEMA Varchar2 -- String
-SET     @OBJECT_SCHEMA = ''
-DECLARE @OBJECT_NAME Varchar2 -- String
-SET     @OBJECT_NAME = ''
-DECLARE @ENHRCHY Decimal(22)
-SET     @ENHRCHY = 0
-
-SYS.SETMODFLG
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @CONTEXT Blob -- Object
-SET     @CONTEXT = NULL
-DECLARE @REGINFO 0 -- Object
-SET     @REGINFO = NULL
-DECLARE @DESCR 0 -- Object
-SET     @DESCR = NULL
-DECLARE @PAYLOAD Blob -- Object
-SET     @PAYLOAD = NULL
-DECLARE @PAYLOADL Decimal(22)
-SET     @PAYLOADL = 0
-
-SYS.SCHEDULER$_JOB_EVENT_HANDLER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYS.RESET_UNDO_STAT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @TI 0 -- Object
-SET     @TI = NULL
-
-SYS.ODCITABFUNCINFODUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @SO 0 -- Object
-SET     @SO = NULL
-
-SYS.ODCISTATSOPTIONSDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @QI 0 -- Object
-SET     @QI = NULL
-
-SYS.ODCIQUERYINFODUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OP 0 -- Object
-SET     @OP = NULL
-
-SYS.ODCIPREDINFODUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PLIST Varchar2 -- String
-SET     @PLIST = NULL
-
-SYS.ODCIPARTINFOLISTDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PINFO 0 -- Object
-SET     @PINFO = NULL
-
-SYS.ODCIPARTINFODUMP
+OUTLN.ORA$GRANT_SYS_SELECT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1781,6 +1690,13 @@ SYS.ODCIINDEXINFOFLAGSDUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OP Decimal(22)
+SET     @OP = 0
+
+SYS.ODCICOLINFOFLAGSDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @IA 0 -- Object
 SET     @IA = NULL
 
@@ -1788,31 +1704,10 @@ SYS.ODCIINDEXINFODUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OP Decimal(22)
-SET     @OP = 0
+DECLARE @OP 0 -- Object
+SET     @OP = NULL
 
-SYS.ODCIINDEXCALLPROPERTYDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OP Decimal(22)
-SET     @OP = 0
-
-SYS.ODCIINDEXALTEROPTIONDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @ENV 0 -- Object
-SET     @ENV = NULL
-
-SYS.ODCIENVDUMP
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OP Decimal(22)
-SET     @OP = 0
-
-SYS.ODCICOLINFOFLAGSDUMP
+SYS.ODCIPREDINFODUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1830,40 +1725,84 @@ SYS.ODCIANYDATADUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @TMPOWNERNAME Varchar2 -- String
-SET     @TMPOWNERNAME = ''
-DECLARE @TMPTABLENAME Varchar2 -- String
-SET     @TMPTABLENAME = ''
+DECLARE @QI 0 -- Object
+SET     @QI = NULL
 
-SYS.MOVEXDB_TABLE_PART2
+SYS.ODCIQUERYINFODUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @TMPOWNERNAME Varchar2 -- String
-SET     @TMPOWNERNAME = ''
-DECLARE @TMPTABLENAME Varchar2 -- String
-SET     @TMPTABLENAME = ''
-DECLARE @TARGET_TABLESPACE Varchar2 -- String
-SET     @TARGET_TABLESPACE = ''
-DECLARE @HASLOBBIT Varchar2 -- String
-SET     @HASLOBBIT = NULL
-DECLARE @OBJNUM Decimal(22)
-SET     @OBJNUM = 0
+DECLARE @SO 0 -- Object
+SET     @SO = NULL
 
-SYS.MOVEXDB_TABLE
+SYS.ODCISTATSOPTIONSDUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @LOGMNR_UID_IN Decimal(22)
-SET     @LOGMNR_UID_IN = 0
-DECLARE @REDO_THREAD_IN Decimal(22)
-SET     @REDO_THREAD_IN = 0
-DECLARE @END_SCN_BAS_IN Decimal(22)
-SET     @END_SCN_BAS_IN = 0
-DECLARE @END_SCN_WRP_IN Decimal(22)
-SET     @END_SCN_WRP_IN = 0
+DECLARE @ENV 0 -- Object
+SET     @ENV = NULL
 
-SYS.LOGMNR_KRVRDREPDICT3
+SYS.ODCIENVDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OP Decimal(22)
+SET     @OP = 0
+
+SYS.ODCIINDEXALTEROPTIONDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OP Decimal(22)
+SET     @OP = 0
+
+SYS.ODCIINDEXCALLPROPERTYDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PINFO 0 -- Object
+SET     @PINFO = NULL
+
+SYS.ODCIPARTINFODUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @PLIST Varchar2 -- String
+SET     @PLIST = NULL
+
+SYS.ODCIPARTINFOLISTDUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @TI 0 -- Object
+SET     @TI = NULL
+
+SYS.ODCITABFUNCINFODUMP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @QLEN Decimal(22)
+SET     @QLEN = 0
+DECLARE @UBKS Decimal(22)
+SET     @UBKS = 0
+
+SYS.LOAD_UNDO_STAT
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SYS.RESET_UNDO_STAT
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OBJ_TYPE Varchar2 -- String
+SET     @OBJ_TYPE = ''
+DECLARE @OBJ_NAME Varchar2 -- String
+SET     @OBJ_NAME = ''
+DECLARE @OBJ_OWNER Varchar2 -- String
+SET     @OBJ_OWNER = ''
+
+SYS.AW_DROP_PROC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1881,6 +1820,28 @@ DECLARE @PLLD_END_SCN_WRP Decimal(22)
 SET     @PLLD_END_SCN_WRP = 0
 
 SYS.LOGMNR_KRVRDLUID3
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @LOGMNR_UID_IN Decimal(22)
+SET     @LOGMNR_UID_IN = 0
+DECLARE @REDO_THREAD_IN Decimal(22)
+SET     @REDO_THREAD_IN = 0
+DECLARE @END_SCN_BAS_IN Decimal(22)
+SET     @END_SCN_BAS_IN = 0
+DECLARE @END_SCN_WRP_IN Decimal(22)
+SET     @END_SCN_WRP_IN = 0
+
+SYS.LOGMNR_KRVRDREPDICT3
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @LOGMNRUID Decimal(22)
+SET     @LOGMNRUID = 0
+DECLARE @DUMMY Decimal(22)
+SET     @DUMMY = 0
+
+SYS.DBMS_LOGMNR_FFVTOLOGMNRT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1902,6 +1863,21 @@ DECLARE @OUTAPPLY Decimal(22)
 SET     @OUTAPPLY = 0
 
 SYS.LOGMNR_KRVRDA_TEST_APPLY
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @CONTEXT Blob -- Object
+SET     @CONTEXT = NULL
+DECLARE @REGINFO 0 -- Object
+SET     @REGINFO = NULL
+DECLARE @DESCR 0 -- Object
+SET     @DESCR = NULL
+DECLARE @PAYLOAD Blob -- Object
+SET     @PAYLOAD = NULL
+DECLARE @PAYLOADL Decimal(22)
+SET     @PAYLOADL = 0
+
+SYS.SCHEDULER$_JOB_EVENT_HANDLER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1978,21 +1954,14 @@ SYS.LOGMNR_GTLO3
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @QLEN Decimal(22)
-SET     @QLEN = 0
-DECLARE @UBKS Decimal(22)
-SET     @UBKS = 0
+DECLARE @IS_USED Decimal(22)
+SET     @IS_USED = 0
+DECLARE @TOTAL_DISKGROUP_SIZE Decimal(22)
+SET     @TOTAL_DISKGROUP_SIZE = 0
+DECLARE @SUMMARY Clob -- Object
+SET     @SUMMARY = ''
 
-SYS.LOAD_UNDO_STAT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @LOGMNRUID Decimal(22)
-SET     @LOGMNRUID = 0
-DECLARE @DUMMY Decimal(22)
-SET     @DUMMY = 0
-
-SYS.DBMS_LOGMNR_FFVTOLOGMNRT
+SYS.DBMS_FEATURE_ASM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2003,18 +1972,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_XDB
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_WCR_REPLAY
+SYS.DBMS_FEATURE_AUTOSTA
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2036,7 +1994,51 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_UTILITIES4
+SYS.DBMS_FEATURE_WCR_REPLAY
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @IS_USED Decimal(22)
+SET     @IS_USED = 0
+DECLARE @DATA_RATIO Decimal(22)
+SET     @DATA_RATIO = 0
+DECLARE @CLOB_REST Clob -- Object
+SET     @CLOB_REST = ''
+
+SYS.DBMS_FEATURE_PARTITION_USER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @IS_USED Decimal(22)
+SET     @IS_USED = 0
+DECLARE @DATA_RATIO Decimal(22)
+SET     @DATA_RATIO = 0
+DECLARE @CLOB_REST Clob -- Object
+SET     @CLOB_REST = ''
+
+SYS.DBMS_FEATURE_PARTITION_SYSTEM
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @O_IS_USED Decimal(22)
+SET     @O_IS_USED = 0
+DECLARE @O_AUX_COUNT Decimal(22)
+SET     @O_AUX_COUNT = 0
+DECLARE @O_REPORT Clob -- Object
+SET     @O_REPORT = ''
+
+SYS.DBMS_FEATURE_PLSQL_NATIVE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @IS_USED Decimal(22)
+SET     @IS_USED = 0
+DECLARE @NODES Decimal(22)
+SET     @NODES = 0
+DECLARE @CLOB_REST Clob -- Object
+SET     @CLOB_REST = ''
+
+SYS.DBMS_FEATURE_RAC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2047,7 +2049,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_UTILITIES3
+SYS.DBMS_FEATURE_XDB
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2058,7 +2060,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_UTILITIES2
+SYS.DBMS_FEATURE_APEX
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2069,7 +2071,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_UTILITIES1
+SYS.DBMS_FEATURE_OBJECT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2080,7 +2082,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_USER_MVS
+SYS.DBMS_FEATURE_EXTENSIBILITY
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2091,7 +2093,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_TEST_PROC_5
+SYS.DBMS_FEATURE_RULESMANAGER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2102,102 +2104,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_TEST_PROC_4
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @CURRENT_VALUE Decimal(22)
-SET     @CURRENT_VALUE = 0
-
-SYS.DBMS_FEATURE_TEST_PROC_3
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_TEST_PROC_2
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_TEST_PROC_1
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFENCRYPT_USR
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFENCRYPT_SYS
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFDEDUP_USR
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFDEDUP_SYS
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFCOMPRESS_USR
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_SFCOMPRESS_SYS
+SYS.DBMS_FEATURE_CDC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2219,7 +2126,18 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_SEGADV_USER
+SYS.DBMS_FEATURE_USER_MVS
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_HCC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2252,7 +2170,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RULESMANAGER
+SYS.DBMS_FEATURE_SFENCRYPT_USR
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2263,7 +2181,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_ZLIB
+SYS.DBMS_FEATURE_SFENCRYPT_SYS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2274,7 +2192,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_MEDIUM
+SYS.DBMS_FEATURE_SFCOMPRESS_USR
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2285,7 +2203,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_LOW
+SYS.DBMS_FEATURE_SFCOMPRESS_SYS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2296,7 +2214,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_HIGH
+SYS.DBMS_FEATURE_SFDEDUP_USR
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2307,171 +2225,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_RMAN_BZIP2
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_RMAN_BASIC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_RESOURCE_MANAGER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYS.DBMS_FEATURE_REGISTER_ALLHWM
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYS.DBMS_FEATURE_REGISTER_ALLFEAT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @IS_USED Decimal(22)
-SET     @IS_USED = 0
-DECLARE @NODES Decimal(22)
-SET     @NODES = 0
-DECLARE @CLOB_REST Clob -- Object
-SET     @CLOB_REST = ''
-
-SYS.DBMS_FEATURE_RAC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @O_IS_USED Decimal(22)
-SET     @O_IS_USED = 0
-DECLARE @O_AUX_COUNT Decimal(22)
-SET     @O_AUX_COUNT = 0
-DECLARE @O_REPORT Clob -- Object
-SET     @O_REPORT = ''
-
-SYS.DBMS_FEATURE_PLSQL_NATIVE
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @IS_USED Decimal(22)
-SET     @IS_USED = 0
-DECLARE @DATA_RATIO Decimal(22)
-SET     @DATA_RATIO = 0
-DECLARE @CLOB_REST Clob -- Object
-SET     @CLOB_REST = ''
-
-SYS.DBMS_FEATURE_PARTITION_USER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @IS_USED Decimal(22)
-SET     @IS_USED = 0
-DECLARE @DATA_RATIO Decimal(22)
-SET     @DATA_RATIO = 0
-DECLARE @CLOB_REST Clob -- Object
-SET     @CLOB_REST = ''
-
-SYS.DBMS_FEATURE_PARTITION_SYSTEM
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_OBJECT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_LMT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @IS_USED Decimal(22)
-SET     @IS_USED = 0
-DECLARE @NR_OF_JOBS Decimal(22)
-SET     @NR_OF_JOBS = 0
-DECLARE @SUMMARY Clob -- Object
-SET     @SUMMARY = ''
-
-SYS.DBMS_FEATURE_JOB_SCHEDULER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_HCC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_EXTENSIBILITY
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @NUM_CELLS Decimal(22)
-SET     @NUM_CELLS = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_EXADATA
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_DYN_SGA
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_DEFERRED_SEG_CRT
+SYS.DBMS_FEATURE_SFDEDUP_SYS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2493,40 +2247,7 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_DATABASE_VAULT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_CDC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN_OUT Decimal(22)
-SET     @FEATURE_BOOLEAN_OUT = 0
-DECLARE @AUX_COUNT_OUT Decimal(22)
-SET     @AUX_COUNT_OUT = 0
-DECLARE @FEATURE_INFO_OUT Clob -- Object
-SET     @FEATURE_INFO_OUT = ''
-
-SYS.DBMS_FEATURE_AWR
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-SYS.DBMS_FEATURE_AUTO_SSM
+SYS.DBMS_FEATURE_DYN_SGA
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2559,7 +2280,106 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_AUTOSTA
+SYS.DBMS_FEATURE_RESOURCE_MANAGER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_ZLIB
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_BZIP2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_BASIC
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_LOW
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_MEDIUM
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_RMAN_HIGH
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_AUTO_SSM
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_LMT
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_SEGADV_USER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2576,12 +2396,23 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @IS_USED Decimal(22)
 SET     @IS_USED = 0
-DECLARE @TOTAL_DISKGROUP_SIZE Decimal(22)
-SET     @TOTAL_DISKGROUP_SIZE = 0
+DECLARE @NR_OF_JOBS Decimal(22)
+SET     @NR_OF_JOBS = 0
 DECLARE @SUMMARY Clob -- Object
 SET     @SUMMARY = ''
 
-SYS.DBMS_FEATURE_ASM
+SYS.DBMS_FEATURE_JOB_SCHEDULER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @NUM_CELLS Decimal(22)
+SET     @NUM_CELLS = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_EXADATA
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2592,7 +2423,134 @@ SET     @AUX_COUNT = 0
 DECLARE @FEATURE_INFO Clob -- Object
 SET     @FEATURE_INFO = ''
 
-SYS.DBMS_FEATURE_APEX
+SYS.DBMS_FEATURE_UTILITIES1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_UTILITIES2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_UTILITIES3
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_UTILITIES4
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN_OUT Decimal(22)
+SET     @FEATURE_BOOLEAN_OUT = 0
+DECLARE @AUX_COUNT_OUT Decimal(22)
+SET     @AUX_COUNT_OUT = 0
+DECLARE @FEATURE_INFO_OUT Clob -- Object
+SET     @FEATURE_INFO_OUT = ''
+
+SYS.DBMS_FEATURE_AWR
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_DATABASE_VAULT
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_DEFERRED_SEG_CRT
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_TEST_PROC_1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_TEST_PROC_2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @CURRENT_VALUE Decimal(22)
+SET     @CURRENT_VALUE = 0
+
+SYS.DBMS_FEATURE_TEST_PROC_3
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_TEST_PROC_4
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+SYS.DBMS_FEATURE_TEST_PROC_5
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SYS.DBMS_FEATURE_REGISTER_ALLFEAT
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SYS.DBMS_FEATURE_REGISTER_ALLHWM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2618,19 +2576,12 @@ SYS.AW_REN_PROC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OBJ_TYPE Varchar2 -- String
-SET     @OBJ_TYPE = ''
-DECLARE @OBJ_NAME Varchar2 -- String
-SET     @OBJ_NAME = ''
-DECLARE @OBJ_OWNER Varchar2 -- String
-SET     @OBJ_OWNER = ''
+DECLARE @TBS_NAME Varchar2 -- String
+SET     @TBS_NAME = ''
+DECLARE @PRINT_ONLY Varchar2 -- String
+SET     @PRINT_ONLY = NULL
 
-SYS.AW_DROP_PROC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-OUTLN.ORA$GRANT_SYS_SELECT
+CTXSYS.DRI_MOVE_CTXSYS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2651,25 +2602,61 @@ CTXSYS.SYNCRN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @TBS_NAME Varchar2 -- String
-SET     @TBS_NAME = ''
-DECLARE @PRINT_ONLY Varchar2 -- String
-SET     @PRINT_ONLY = NULL
 
-CTXSYS.DRI_MOVE_CTXSYS
+SYS.VALIDATE_CONTEXT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
 
-XDB.XDB_DATASTORE_PROC
+XDB.XDB$INITXDBSCHEMA
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @OBJECT_SCHEMA Varchar2 -- String
+SET     @OBJECT_SCHEMA = ''
+DECLARE @OBJECT_NAME Varchar2 -- String
+SET     @OBJECT_NAME = ''
+DECLARE @ENHRCHY Decimal(22)
+SET     @ENHRCHY = 0
+
+SYS.SETMODFLG
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @TMPOWNERNAME Varchar2 -- String
+SET     @TMPOWNERNAME = ''
+DECLARE @TMPTABLENAME Varchar2 -- String
+SET     @TMPTABLENAME = ''
+DECLARE @TARGET_TABLESPACE Varchar2 -- String
+SET     @TARGET_TABLESPACE = ''
+DECLARE @HASLOBBIT Varchar2 -- String
+SET     @HASLOBBIT = NULL
+DECLARE @OBJNUM Decimal(22)
+SET     @OBJNUM = 0
+
+SYS.MOVEXDB_TABLE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @TMPOWNERNAME Varchar2 -- String
+SET     @TMPOWNERNAME = ''
+DECLARE @TMPTABLENAME Varchar2 -- String
+SET     @TMPTABLENAME = ''
+
+SYS.MOVEXDB_TABLE_PART2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @NEW_TABLESPACE Varchar2 -- String
+SET     @NEW_TABLESPACE = ''
+DECLARE @NEW_TABLESPACE Varchar2 -- String
+SET     @NEW_TABLESPACE = ''
+DECLARE @NEW_TABLESPACE Varchar2 -- String
+SET     @NEW_TABLESPACE = ''
+DECLARE @NEW_TABLESPACE_IN Varchar2 -- String
+SET     @NEW_TABLESPACE_IN = ''
+
+SYS.SET_TABLESPACE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2691,8 +2678,16 @@ XDB.XDB$PATCHUPDELETESCHEMA
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @RID Varchar2(256) -- String
+SET     @RID = ''
+DECLARE @RID Varchar2(256) -- String
+SET     @RID = ''
+DECLARE @OUTLOB Clob -- Object
+SET     @OUTLOB = ''
+DECLARE @OUTLOB Clob -- Object
+SET     @OUTLOB = ''
 
-XDB.XDB$INITXDBSCHEMA
+XDB.XDB_DATASTORE_PROC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2725,164 +2720,13 @@ HR.ADD_JOB_HISTORY
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_URL Varchar2 -- String
-SET     @P_URL = ''
-DECLARE @P_CAT Varchar2 -- String
-SET     @P_CAT = ''
-DECLARE @P_ID Varchar2 -- String
-SET     @P_ID = ''
-DECLARE @P_USER Varchar2 -- String
-SET     @P_USER = ''
-DECLARE @P_COMPANY Varchar2 -- String
-SET     @P_COMPANY = ''
-DECLARE @P_WORKSPACE Varchar2 -- String
-SET     @P_WORKSPACE = ''
 
-APEX_040000.Z
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_FLOW_ID Varchar2 -- String
-SET     @P_FLOW_ID = ''
-DECLARE @P_LANGUAGE Varchar2 -- String
-SET     @P_LANGUAGE = ''
-
-APEX_040000.WWV_FLOW_SYNC_TRANSLATIONS
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_FLOW_ID Varchar2 -- String
-SET     @P_FLOW_ID = ''
-DECLARE @P_LANGUAGE Varchar2 -- String
-SET     @P_LANGUAGE = ''
-DECLARE @P_INSERT_ONLY Varchar2 -- String
-SET     @P_INSERT_ONLY = ''
-
-APEX_040000.WWV_FLOW_SEED_TRANSLATIONS
+SYS.VALIDATE_APEX
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 APEX_040000.WWV_FLOW_INIT_HTP_BUFFER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_COPY_FROM_ITEM_ID Decimal(22)
-SET     @P_COPY_FROM_ITEM_ID = 0
-DECLARE @P_COPY_TO_ITEM_NAME Varchar2 -- String
-SET     @P_COPY_TO_ITEM_NAME = ''
-DECLARE @P_COPY_TO_ITEM_SEQUENCE Varchar2 -- String
-SET     @P_COPY_TO_ITEM_SEQUENCE = ''
-DECLARE @P_COPY_TO_PAGE_ID Decimal(22)
-SET     @P_COPY_TO_PAGE_ID = 0
-DECLARE @P_COPY_TO_ITEM_PLUG Varchar2 -- String
-SET     @P_COPY_TO_ITEM_PLUG = ''
-DECLARE @P_COPY_TO_PROMPT Varchar2 -- String
-SET     @P_COPY_TO_PROMPT = ''
-DECLARE @P_COPY_TO_SOURCE_TYPE Varchar2 -- String
-SET     @P_COPY_TO_SOURCE_TYPE = ''
-DECLARE @P_COPY_TO_SOURCE Varchar2 -- String
-SET     @P_COPY_TO_SOURCE = ''
-
-APEX_040000.WWV_FLOW_COPY_PAGE_ITEM
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_LOV_ID_FROM Decimal(22)
-SET     @P_LOV_ID_FROM = 0
-DECLARE @P_LOV_NAME_TO Varchar2 -- String
-SET     @P_LOV_NAME_TO = ''
-DECLARE @P_COPY_FROM_FLOW_ID Decimal(22)
-SET     @P_COPY_FROM_FLOW_ID = 0
-DECLARE @P_FLOW_ID Decimal(22)
-SET     @P_FLOW_ID = 0
-DECLARE @P_LOV_ID_TO Decimal(22)
-SET     @P_LOV_ID_TO = 0
-
-APEX_040000.WWV_FLOW_COPY_LOV
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_BUTTON_ID_FROM Decimal(22)
-SET     @P_BUTTON_ID_FROM = 0
-DECLARE @P_BUTTON_NAME_TO Varchar2 -- String
-SET     @P_BUTTON_NAME_TO = ''
-DECLARE @P_BUTTON_TEXT_TO Varchar2 -- String
-SET     @P_BUTTON_TEXT_TO = ''
-DECLARE @P_BUTTON_PAGE_ID_TO Decimal(22)
-SET     @P_BUTTON_PAGE_ID_TO = 0
-DECLARE @P_BUTTON_REGION_TO Decimal(22)
-SET     @P_BUTTON_REGION_TO = 0
-DECLARE @P_BUTTON_SEQUENCE_TO Decimal(22)
-SET     @P_BUTTON_SEQUENCE_TO = 0
-
-APEX_040000.WWV_FLOW_COPY_BUTTON
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_FLOW_ID_FROM Decimal(22)
-SET     @P_FLOW_ID_FROM = 0
-DECLARE @P_FLOW_ID_TO Decimal(22)
-SET     @P_FLOW_ID_TO = 0
-DECLARE @P_ALIAS_TO Varchar2 -- String
-SET     @P_ALIAS_TO = ''
-DECLARE @P_FLOW_LANGUAGE_TO Varchar2 -- String
-SET     @P_FLOW_LANGUAGE_TO = ''
-DECLARE @P_OK_TO_DELETE_FLOW Varchar2 -- String
-SET     @P_OK_TO_DELETE_FLOW = NULL
-DECLARE @P_PERFORM_TRANSLATIONS Varchar2 -- String
-SET     @P_PERFORM_TRANSLATIONS = NULL
-
-APEX_040000.WWV_FLOW_COPY
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P Varchar2 -- String
-SET     @P = ''
-DECLARE @P_SEP Varchar2 -- String
-SET     @P_SEP = ''
-DECLARE @P_TRACE Varchar2 -- String
-SET     @P_TRACE = ''
-DECLARE @P_DEBUG Varchar2 -- String
-SET     @P_DEBUG = ''
-DECLARE @TZ Varchar2 -- String
-SET     @TZ = ''
-DECLARE @P_LANG Varchar2 -- String
-SET     @P_LANG = ''
-DECLARE @P_TERRITORY Varchar2 -- String
-SET     @P_TERRITORY = ''
-
-APEX_040000.WS
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @N Varchar2 -- String
-SET     @N = ''
-DECLARE @P_MIME_TYPE Varchar2 -- String
-SET     @P_MIME_TYPE = ''
-DECLARE @P_INLINE Varchar2 -- String
-SET     @P_INLINE = ''
-
-APEX_040000.P
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_SESSION Decimal(22)
-SET     @P_SESSION = 0
-
-APEX_040000.HTMLDB_LOGIN
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-APEX_040000.HTMLDB_ADMIN
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_SESSION Decimal(22)
-SET     @P_SESSION = 0
-
-APEX_040000.HTMLDB
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2924,7 +2768,28 @@ BeforeExecute
 DECLARE @P_SESSION Decimal(22)
 SET     @P_SESSION = 0
 
-APEX_040000.DEVELOPMENT_SERVICE_SIGNUP
+APEX_040000.APEX
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_SESSION Decimal(22)
+SET     @P_SESSION = 0
+
+APEX_040000.DEVELOPMENT_SERVICE_HOME
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_SESSION Decimal(22)
+SET     @P_SESSION = 0
+
+APEX_040000.HTMLDB
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_SESSION Decimal(22)
+SET     @P_SESSION = 0
+
+APEX_040000.HTMLDB_LOGIN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2938,7 +2803,144 @@ BeforeExecute
 DECLARE @P_SESSION Decimal(22)
 SET     @P_SESSION = 0
 
-APEX_040000.DEVELOPMENT_SERVICE_HOME
+APEX_040000.DEVELOPMENT_SERVICE_SIGNUP
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_URL Varchar2 -- String
+SET     @P_URL = ''
+DECLARE @P_CAT Varchar2 -- String
+SET     @P_CAT = ''
+DECLARE @P_ID Varchar2 -- String
+SET     @P_ID = ''
+DECLARE @P_USER Varchar2 -- String
+SET     @P_USER = ''
+DECLARE @P_COMPANY Varchar2 -- String
+SET     @P_COMPANY = ''
+DECLARE @P_WORKSPACE Varchar2 -- String
+SET     @P_WORKSPACE = ''
+
+APEX_040000.Z
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P Varchar2 -- String
+SET     @P = ''
+DECLARE @P_SEP Varchar2 -- String
+SET     @P_SEP = ''
+DECLARE @P_TRACE Varchar2 -- String
+SET     @P_TRACE = ''
+DECLARE @P_DEBUG Varchar2 -- String
+SET     @P_DEBUG = ''
+DECLARE @TZ Varchar2 -- String
+SET     @TZ = ''
+DECLARE @P_LANG Varchar2 -- String
+SET     @P_LANG = ''
+DECLARE @P_TERRITORY Varchar2 -- String
+SET     @P_TERRITORY = ''
+
+APEX_040000.WS
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @N Varchar2 -- String
+SET     @N = ''
+DECLARE @P_MIME_TYPE Varchar2 -- String
+SET     @P_MIME_TYPE = ''
+DECLARE @P_INLINE Varchar2 -- String
+SET     @P_INLINE = ''
+
+APEX_040000.P
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_FLOW_ID_FROM Decimal(22)
+SET     @P_FLOW_ID_FROM = 0
+DECLARE @P_FLOW_ID_TO Decimal(22)
+SET     @P_FLOW_ID_TO = 0
+DECLARE @P_ALIAS_TO Varchar2 -- String
+SET     @P_ALIAS_TO = ''
+DECLARE @P_FLOW_LANGUAGE_TO Varchar2 -- String
+SET     @P_FLOW_LANGUAGE_TO = ''
+DECLARE @P_OK_TO_DELETE_FLOW Varchar2 -- String
+SET     @P_OK_TO_DELETE_FLOW = NULL
+DECLARE @P_PERFORM_TRANSLATIONS Varchar2 -- String
+SET     @P_PERFORM_TRANSLATIONS = NULL
+
+APEX_040000.WWV_FLOW_COPY
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_LOV_ID_FROM Decimal(22)
+SET     @P_LOV_ID_FROM = 0
+DECLARE @P_LOV_NAME_TO Varchar2 -- String
+SET     @P_LOV_NAME_TO = ''
+DECLARE @P_COPY_FROM_FLOW_ID Decimal(22)
+SET     @P_COPY_FROM_FLOW_ID = 0
+DECLARE @P_FLOW_ID Decimal(22)
+SET     @P_FLOW_ID = 0
+DECLARE @P_LOV_ID_TO Decimal(22)
+SET     @P_LOV_ID_TO = 0
+
+APEX_040000.WWV_FLOW_COPY_LOV
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_COPY_FROM_ITEM_ID Decimal(22)
+SET     @P_COPY_FROM_ITEM_ID = 0
+DECLARE @P_COPY_TO_ITEM_NAME Varchar2 -- String
+SET     @P_COPY_TO_ITEM_NAME = ''
+DECLARE @P_COPY_TO_ITEM_SEQUENCE Varchar2 -- String
+SET     @P_COPY_TO_ITEM_SEQUENCE = ''
+DECLARE @P_COPY_TO_PAGE_ID Decimal(22)
+SET     @P_COPY_TO_PAGE_ID = 0
+DECLARE @P_COPY_TO_ITEM_PLUG Varchar2 -- String
+SET     @P_COPY_TO_ITEM_PLUG = ''
+DECLARE @P_COPY_TO_PROMPT Varchar2 -- String
+SET     @P_COPY_TO_PROMPT = ''
+DECLARE @P_COPY_TO_SOURCE_TYPE Varchar2 -- String
+SET     @P_COPY_TO_SOURCE_TYPE = ''
+DECLARE @P_COPY_TO_SOURCE Varchar2 -- String
+SET     @P_COPY_TO_SOURCE = ''
+
+APEX_040000.WWV_FLOW_COPY_PAGE_ITEM
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_BUTTON_ID_FROM Decimal(22)
+SET     @P_BUTTON_ID_FROM = 0
+DECLARE @P_BUTTON_NAME_TO Varchar2 -- String
+SET     @P_BUTTON_NAME_TO = ''
+DECLARE @P_BUTTON_TEXT_TO Varchar2 -- String
+SET     @P_BUTTON_TEXT_TO = ''
+DECLARE @P_BUTTON_PAGE_ID_TO Decimal(22)
+SET     @P_BUTTON_PAGE_ID_TO = 0
+DECLARE @P_BUTTON_REGION_TO Decimal(22)
+SET     @P_BUTTON_REGION_TO = 0
+DECLARE @P_BUTTON_SEQUENCE_TO Decimal(22)
+SET     @P_BUTTON_SEQUENCE_TO = 0
+
+APEX_040000.WWV_FLOW_COPY_BUTTON
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_FLOW_ID Varchar2 -- String
+SET     @P_FLOW_ID = ''
+DECLARE @P_LANGUAGE Varchar2 -- String
+SET     @P_LANGUAGE = ''
+DECLARE @P_INSERT_ONLY Varchar2 -- String
+SET     @P_INSERT_ONLY = ''
+
+APEX_040000.WWV_FLOW_SEED_TRANSLATIONS
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @P_FLOW_ID Varchar2 -- String
+SET     @P_FLOW_ID = ''
+DECLARE @P_LANGUAGE Varchar2 -- String
+SET     @P_LANGUAGE = ''
+
+APEX_040000.WWV_FLOW_SYNC_TRANSLATIONS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2947,10 +2949,8 @@ APEX_040000.APEX_ADMIN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @P_SESSION Decimal(22)
-SET     @P_SESSION = 0
 
-APEX_040000.APEX
+APEX_040000.HTMLDB_ADMIN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

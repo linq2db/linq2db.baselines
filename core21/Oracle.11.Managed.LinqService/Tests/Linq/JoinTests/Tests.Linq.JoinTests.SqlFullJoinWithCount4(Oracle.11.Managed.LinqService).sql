@@ -7,21 +7,21 @@ SET     @id2 = 2
 DECLARE @take Int32
 SET     @take = 2
 
-SELECT
-	COUNT(left_1.ParentID),
-	COUNT(t1.ParentID),
+SELECT 
+	COUNT(left_1.ParentID), 
+	COUNT(t1.ParentID), 
 	COUNT(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			p.ParentID
 		FROM
 			Parent p
 		WHERE
 			p.ParentID <> :id1
 	) left_1
-		FULL JOIN (
-			SELECT
+		FULL JOIN ( 
+			SELECT 
 				p_1.ParentID
 			FROM
 				Parent p_1

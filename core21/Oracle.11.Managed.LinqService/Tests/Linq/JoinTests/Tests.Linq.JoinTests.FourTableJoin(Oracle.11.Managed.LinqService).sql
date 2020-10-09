@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p.ParentID,
-	p.Value1,
-	c1.ChildID,
-	c2.GrandChildID,
+SELECT 
+	p.ParentID, 
+	p.Value1, 
+	c1.ChildID, 
+	c2.GrandChildID, 
 	c3.GrandChildID
 FROM
 	Parent p

@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[DateTimeValue2],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[SmallIntValue],
-	[t1].[IntValue],
-	[t1].[BigIntValue],
+SELECT 
+	[t1].[ID], 
+	[t1].[MoneyValue], 
+	[t1].[DateTimeValue], 
+	[t1].[DateTimeValue2], 
+	[t1].[BoolValue], 
+	[t1].[GuidValue], 
+	[t1].[SmallIntValue], 
+	[t1].[IntValue], 
+	[t1].[BigIntValue], 
 	[t1].[StringValue]
 FROM
 	[LinqDataTypes] [t1]
@@ -20,16 +20,16 @@ BeforeExecute
 DECLARE @DateTimeValue_1 TimeStamp -- DateTime
 SET     @DateTimeValue_1 = TO_TIMESTAMP('2009-09-27 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-SELECT
-	t1.ID,
-	t1.MoneyValue,
-	t1.DateTimeValue,
-	t1.DateTimeValue2,
-	t1.BoolValue,
-	t1.GuidValue,
-	t1.SmallIntValue,
-	t1.IntValue,
-	t1.BigIntValue,
+SELECT 
+	t1.ID, 
+	t1.MoneyValue, 
+	t1.DateTimeValue, 
+	t1.DateTimeValue2, 
+	t1.BoolValue, 
+	t1.GuidValue, 
+	t1.SmallIntValue, 
+	t1.IntValue, 
+	t1.BigIntValue, 
 	t1.StringValue
 FROM
 	LinqDataTypes t1

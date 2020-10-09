@@ -3,14 +3,14 @@
 DECLARE @id Int32
 SET     @id = 1
 
-SELECT
-	t1.ParentID,
+SELECT 
+	t1.ParentID, 
 	t1.ChildID
 FROM
 	Child t1
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			Parent t2

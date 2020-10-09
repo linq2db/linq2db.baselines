@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	p_1.FirstName,
-	p_1.PersonID,
-	p_1.LastName,
-	p_1.MiddleName,
+SELECT 
+	p_1.FirstName, 
+	p_1.PersonID, 
+	p_1.LastName, 
+	p_1.MiddleName, 
 	p_1.Gender
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CASE
 				WHEN p.FirstName LIKE '%Jo%'
 					THEN 1
 				ELSE 0
-			END as Field1,
-			p.FirstName,
-			p.PersonID,
-			p.LastName,
-			p.MiddleName,
+			END as Field1, 
+			p.FirstName, 
+			p.PersonID, 
+			p.LastName, 
+			p.MiddleName, 
 			p.Gender
 		FROM
 			Person p

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	Count(*)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			0 as c1
 		FROM
 			Child t1

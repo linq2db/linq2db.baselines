@@ -3,15 +3,15 @@
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT 
 	Min(t2.ParentID)
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			t1.ParentID
 		FROM
-			(
-				SELECT
+			( 
+				SELECT 
 					p.ParentID
 				FROM
 					Parent p

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	STDDEV(c_1.ChildID),
-	STDDEV(ALL c_1.ChildID),
+SELECT 
+	STDDEV(c_1.ChildID), 
+	STDDEV(ALL c_1.ChildID), 
 	STDDEV(DISTINCT c_1.ChildID)
 FROM
 	Parent p
@@ -14,7 +14,7 @@ GROUP BY
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	STDDEV(t1.ParentID)
 FROM
 	Child t1
@@ -22,7 +22,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	STDDEV(ALL t1.ParentID)
 FROM
 	Child t1
@@ -30,7 +30,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	STDDEV(DISTINCT t1.ParentID)
 FROM
 	Child t1

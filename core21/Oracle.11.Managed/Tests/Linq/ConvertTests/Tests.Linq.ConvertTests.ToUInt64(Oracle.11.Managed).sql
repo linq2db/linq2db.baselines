@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
+SELECT 
 	p.c1
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			Cast(Floor(t.MoneyValue) as Decimal) as c1
 		FROM
 			LinqDataTypes t

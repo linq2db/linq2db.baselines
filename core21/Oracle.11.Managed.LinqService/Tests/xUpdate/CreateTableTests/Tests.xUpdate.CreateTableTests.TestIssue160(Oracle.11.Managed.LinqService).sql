@@ -30,8 +30,8 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1.cc,
+SELECT 
+	t1.cc, 
 	t1.bb
 FROM
 	aa t1
