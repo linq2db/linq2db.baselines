@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[BinaryValue],
-	[_].[SmallIntValue],
+SELECT 
+	[_].[ID], 
+	[_].[MoneyValue], 
+	[_].[DateTimeValue], 
+	[_].[BoolValue], 
+	[_].[GuidValue], 
+	[_].[BinaryValue], 
+	[_].[SmallIntValue], 
 	[_].[StringValue]
 FROM
 	[LinqDataTypes] [_]

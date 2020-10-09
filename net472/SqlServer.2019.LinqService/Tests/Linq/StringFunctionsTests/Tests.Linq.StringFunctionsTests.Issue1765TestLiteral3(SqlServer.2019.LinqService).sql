@@ -103,7 +103,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	STRING_AGG([t1].[Value4], ' -> ') WITHIN GROUP (ORDER BY [t1].[Value4], [t1].[Value3] DESC)
 FROM
 	[SampleClass] [t1]

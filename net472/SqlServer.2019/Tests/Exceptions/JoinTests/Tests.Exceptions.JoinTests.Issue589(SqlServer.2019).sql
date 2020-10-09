@@ -3,17 +3,17 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[grandChild_1].[GrandChildID],
-	[child_1].[ChildID],
-	[a_Parent].[ParentID],
+SELECT 
+	[grandChild_1].[GrandChildID], 
+	[child_1].[ChildID], 
+	[a_Parent].[ParentID], 
 	[t1].[GrandChildID]
 FROM
 	[GrandChild] [grandChild_1]
 		INNER JOIN [Child] [child_1] ON [grandChild_1].[ChildID] = [child_1].[ChildID]
 		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
-		OUTER APPLY (
-			SELECT TOP (@take)
+		OUTER APPLY ( 
+			SELECT TOP (@take) 
 				[grandChild1].[GrandChildID]
 			FROM
 				[Child] [child1]

@@ -101,8 +101,8 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 MERGE INTO [GrandChild] [Target]
-USING (
-	SELECT
+USING ( 
+	SELECT 
 		[t2].[ChildID] as [Id]
 	FROM
 		[Parent] [t1],
@@ -127,9 +127,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[GrandChildID],
-	[t1].[ParentID],
+SELECT 
+	[t1].[GrandChildID], 
+	[t1].[ParentID], 
 	[t1].[ChildID]
 FROM
 	[GrandChild] [t1]

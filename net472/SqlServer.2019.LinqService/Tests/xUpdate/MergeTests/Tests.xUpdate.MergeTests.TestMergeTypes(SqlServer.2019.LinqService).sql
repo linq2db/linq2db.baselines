@@ -710,25 +710,25 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[Id],
-	[t1].[Field1],
-	[t1].[FieldInt64],
-	[t1].[FieldBoolean],
-	[t1].[FieldString],
-	[t1].[FieldNString],
-	[t1].[FieldChar],
-	[t1].[FieldNChar],
-	[t1].[FieldFloat],
-	[t1].[FieldDouble],
-	[t1].[FieldDateTime],
-	[t1].[FieldDateTime2],
-	[t1].[FieldBinary],
-	[t1].[FieldGuid],
-	[t1].[FieldDecimal],
-	[t1].[FieldDate],
-	[t1].[FieldTime],
-	[t1].[FieldEnumString],
+SELECT 
+	[t1].[Id], 
+	[t1].[Field1], 
+	[t1].[FieldInt64], 
+	[t1].[FieldBoolean], 
+	[t1].[FieldString], 
+	[t1].[FieldNString], 
+	[t1].[FieldChar], 
+	[t1].[FieldNChar], 
+	[t1].[FieldFloat], 
+	[t1].[FieldDouble], 
+	[t1].[FieldDateTime], 
+	[t1].[FieldDateTime2], 
+	[t1].[FieldBinary], 
+	[t1].[FieldGuid], 
+	[t1].[FieldDecimal], 
+	[t1].[FieldDate], 
+	[t1].[FieldTime], 
+	[t1].[FieldEnumString], 
 	[t1].[FieldEnumNumber]
 FROM
 	[TestMerge1] [t1]
@@ -738,25 +738,25 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[Id],
-	[t1].[Field1],
-	[t1].[FieldInt64],
-	[t1].[FieldBoolean],
-	[t1].[FieldString],
-	[t1].[FieldNString],
-	[t1].[FieldChar],
-	[t1].[FieldNChar],
-	[t1].[FieldFloat],
-	[t1].[FieldDouble],
-	[t1].[FieldDateTime],
-	[t1].[FieldDateTime2],
-	[t1].[FieldBinary],
-	[t1].[FieldGuid],
-	[t1].[FieldDecimal],
-	[t1].[FieldDate],
-	[t1].[FieldTime],
-	[t1].[FieldEnumString],
+SELECT 
+	[t1].[Id], 
+	[t1].[Field1], 
+	[t1].[FieldInt64], 
+	[t1].[FieldBoolean], 
+	[t1].[FieldString], 
+	[t1].[FieldNString], 
+	[t1].[FieldChar], 
+	[t1].[FieldNChar], 
+	[t1].[FieldFloat], 
+	[t1].[FieldDouble], 
+	[t1].[FieldDateTime], 
+	[t1].[FieldDateTime2], 
+	[t1].[FieldBinary], 
+	[t1].[FieldGuid], 
+	[t1].[FieldDecimal], 
+	[t1].[FieldDate], 
+	[t1].[FieldTime], 
+	[t1].[FieldEnumString], 
 	[t1].[FieldEnumNumber]
 FROM
 	[TestMerge2] [t1]

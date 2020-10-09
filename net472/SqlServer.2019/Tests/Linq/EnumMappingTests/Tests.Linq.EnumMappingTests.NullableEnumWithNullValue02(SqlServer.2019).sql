@@ -84,8 +84,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[r].[ID],
+SELECT 
+	[r].[ID], 
 	[r].[IntValue]
 FROM
 	[LinqDataTypes] [r]
@@ -97,9 +97,9 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[r].[ID],
-	[r].[IntValue],
+SELECT 
+	[r].[ID], 
+	[r].[IntValue], 
 	[r].[StringValue]
 FROM
 	[LinqDataTypes] [r]

@@ -65,9 +65,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	CASE WHEN EXISTS(
-		SELECT TOP (1)
+		SELECT TOP (1) 
 			*
 		FROM
 			[TakeSkipClass] [t1]

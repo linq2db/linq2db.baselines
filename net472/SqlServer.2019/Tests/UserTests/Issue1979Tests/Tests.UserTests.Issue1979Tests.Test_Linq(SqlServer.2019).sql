@@ -33,13 +33,13 @@ CREATE TABLE [Issue]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[i].[Id]
 FROM
 	[Issue] [i]
 WHERE
 	EXISTS(
-		SELECT
+		SELECT 
 			*
 		FROM
 			[Tagging] [t_1]

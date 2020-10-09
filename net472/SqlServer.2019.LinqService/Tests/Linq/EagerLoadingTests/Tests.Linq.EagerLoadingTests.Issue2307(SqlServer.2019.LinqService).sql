@@ -120,9 +120,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[sheet].[Id],
-	[detail].[Id],
+SELECT 
+	[sheet].[Id], 
+	[detail].[Id], 
 	[detail].[AttendanceSheetId]
 FROM
 	[AttendanceSheet] [sheet]
@@ -131,7 +131,7 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[sheet].[Id]
 FROM
 	[AttendanceSheet] [sheet]

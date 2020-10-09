@@ -482,7 +482,7 @@ BeforeExecute
 DECLARE @p1 Int -- Int32
 SET     @p1 = 226
 
-SELECT
+SELECT 
 	DateAdd(millisecond, @p1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

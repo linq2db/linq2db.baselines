@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[t1].[ParentID]
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT DISTINCT
+		OUTER APPLY ( 
+			SELECT DISTINCT 
 				[c_1].[ParentID]
 			FROM
 				[Child] [c_1]

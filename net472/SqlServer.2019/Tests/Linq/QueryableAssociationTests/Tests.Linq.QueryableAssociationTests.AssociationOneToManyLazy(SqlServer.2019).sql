@@ -78,17 +78,17 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT
-	[lw_SomeEntity].[Id],
-	[detail].[Id],
+SELECT 
+	[lw_SomeEntity].[Id], 
+	[detail].[Id], 
 	[detail].[StrValue]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t2].[Id]
 		FROM
-			(
-				SELECT TOP (@take)
+			( 
+				SELECT TOP (@take) 
 					[t1].[Id]
 				FROM
 					[SomeEntity] [t1] WITH (NOLOCK)
@@ -101,17 +101,17 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 
-SELECT
-	[lw_SomeEntity].[Id],
-	[detail].[Id],
+SELECT 
+	[lw_SomeEntity].[Id], 
+	[detail].[Id], 
 	[detail].[StrValue]
 FROM
-	(
-		SELECT DISTINCT
+	( 
+		SELECT DISTINCT 
 			[t2].[Id]
 		FROM
-			(
-				SELECT TOP (@take)
+			( 
+				SELECT TOP (@take) 
 					[t1].[Id]
 				FROM
 					[SomeEntity] [t1] WITH (NOLOCK)
@@ -126,16 +126,16 @@ SET     @take = 2
 DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
-SELECT TOP (@take)
-	[t1].[Id],
-	[t1].[OwnerStr],
-	[a_Other].[Id],
+SELECT TOP (@take) 
+	[t1].[Id], 
+	[t1].[OwnerStr], 
+	[a_Other].[Id], 
 	[a_Other].[StrValue]
 FROM
 	[SomeEntity] [t1] WITH (NOLOCK)
-		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[se].[Id],
+		OUTER APPLY ( 
+			SELECT TOP (@take_1) 
+				[se].[Id], 
 				[se].[StrValue]
 			FROM
 				[SomeOtherEntity] [se]

@@ -38,8 +38,8 @@ INTO [#TInserted]
 	[ParentID],
 	[ChildID]
 )
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	@id + @param
 FROM
 	[Child] [c_1]
@@ -49,8 +49,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[#TInserted] [c_1]
@@ -58,8 +58,8 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[c_1].[ParentID],
+SELECT 
+	[c_1].[ParentID], 
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]

@@ -14,8 +14,8 @@ SET     @DateTimeOffset = '2020-02-29 17:54:55.1231234 +00:40'
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		('2020-02-29T17:54:55.1231232','2020-02-29 17:54:55.1231232 +00:40'),
-		('2020-02-29T17:54:55.1231233','2020-02-29 17:54:55.1231233 +00:40')) [Source]
+		('2020-02-29T17:54:55.1231232', '2020-02-29 17:54:55.1231232 +00:40'),
+		('2020-02-29T17:54:55.1231233', '2020-02-29 17:54:55.1231233 +00:40')) [Source]
 (
 	[datetime2DataType], 
 	[datetimeoffsetDataType]
@@ -38,9 +38,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[ID],
-	[t1].[datetimeoffsetDataType],
+SELECT 
+	[t1].[ID], 
+	[t1].[datetimeoffsetDataType], 
 	[t1].[datetime2DataType]
 FROM
 	[AllTypes2] [t1]

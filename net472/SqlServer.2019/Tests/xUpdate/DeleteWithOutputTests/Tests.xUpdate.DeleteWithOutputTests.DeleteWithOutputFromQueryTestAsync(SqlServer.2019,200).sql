@@ -32,9 +32,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[s].[Id],
-	[s].[Value],
+SELECT 
+	[s].[Id], 
+	[s].[Value], 
 	[s].[ValueStr]
 FROM
 	[TableWithData] [s]
@@ -46,8 +46,8 @@ BeforeExecute
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
+	[DELETED].[Id], 
+	[DELETED].[Value], 
 	[DELETED].[ValueStr]
 FROM
 	[TableWithData] [s]

@@ -1,50 +1,50 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				N'Janet' as [c1]
 			UNION ALL
-			SELECT
+			SELECT 
 				N'Doe' as [c1]
 			UNION ALL
-			SELECT
+			SELECT 
 				N'John' as [c1]
 			UNION ALL
-			SELECT
+			SELECT 
 				N'Doe' as [c1]
 		) [t1] ON [p].[LastName] = [t1].[c1]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
+SELECT 
+	[p].[FirstName], 
+	[p].[PersonID], 
+	[p].[LastName], 
+	[p].[MiddleName], 
 	[p].[Gender]
 FROM
 	[Person] [p]
-		INNER JOIN (
-			SELECT
+		INNER JOIN ( 
+			SELECT 
 				N'Janet' as [c1]
 			UNION ALL
-			SELECT
+			SELECT 
 				N'Doe' as [c1]
 			UNION ALL
-			SELECT
+			SELECT 
 				N'John' as [c1]
 			UNION ALL
-			SELECT
+			SELECT 
 				N'Doe1' as [c1]
 		) [t1] ON [p].[LastName] = [t1].[c1]
 

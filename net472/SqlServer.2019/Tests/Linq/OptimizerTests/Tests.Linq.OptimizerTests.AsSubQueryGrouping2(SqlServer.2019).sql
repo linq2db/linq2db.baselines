@@ -83,13 +83,13 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	COUNT([x].[Key2]),
+SELECT 
+	COUNT([x].[Key2]), 
 	COUNT([x].[Key1])
 FROM
-	(
-		SELECT
-			[t1].[Key1],
+	( 
+		SELECT 
+			[t1].[Key1], 
 			[t1].[Key2]
 		FROM
 			[FirstOptimizerData] [t1]

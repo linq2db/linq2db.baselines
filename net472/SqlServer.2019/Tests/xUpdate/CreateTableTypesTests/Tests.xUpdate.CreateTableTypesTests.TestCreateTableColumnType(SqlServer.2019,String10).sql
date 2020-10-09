@@ -46,8 +46,8 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[String]
 FROM
 	[CreateTableTypes] [t1]

@@ -19,7 +19,7 @@ INSERT INTO [TempTable]
 (
 	[ID]
 )
-SELECT
+SELECT 
 	[p].[ParentID]
 FROM
 	[Parent] [p]

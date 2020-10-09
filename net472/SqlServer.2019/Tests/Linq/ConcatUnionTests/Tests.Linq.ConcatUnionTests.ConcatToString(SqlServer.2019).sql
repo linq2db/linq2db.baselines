@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
+SELECT 
+	[t1].[FirstName], 
+	[t1].[PersonID], 
+	[t1].[LastName], 
+	[t1].[MiddleName], 
 	[t1].[Gender]
 FROM
 	[Person] [t1]
@@ -13,8 +13,8 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[PersonID],
+SELECT 
+	[t1].[PersonID], 
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
@@ -26,18 +26,18 @@ SET     @take = 10
 DECLARE @pattern NVarChar(4000) -- String
 SET     @pattern = N'%1%'
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[t1].[FirstName]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			[p].[FirstName]
 		FROM
 			[Person] [p]
 		WHERE
 			[p].[FirstName] LIKE N'1'
 		UNION ALL
-		SELECT
+		SELECT 
 			[p_1].[FirstName]
 		FROM
 			[Person] [p_1]

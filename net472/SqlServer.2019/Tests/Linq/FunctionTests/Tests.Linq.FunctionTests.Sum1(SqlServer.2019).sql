@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Sum([c_1].[ParentID])
 FROM
 	[Child] [c_1]

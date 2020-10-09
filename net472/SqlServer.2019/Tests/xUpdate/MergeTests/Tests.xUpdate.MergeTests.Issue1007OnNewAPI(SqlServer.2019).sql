@@ -22,7 +22,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	Max([_].[Id])
 FROM
 	[TestMergeIdentity] [_]
@@ -57,8 +57,8 @@ SET
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[t1].[Id],
+SELECT 
+	[t1].[Id], 
 	[t1].[Field]
 FROM
 	[TestMergeIdentity] [t1]

@@ -480,7 +480,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	DateAdd(week, -1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

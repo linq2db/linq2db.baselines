@@ -6,12 +6,12 @@ SET     @take = 1
 WITH [CTE_1] ([Operator])
 AS
 (
-	SELECT
+	SELECT 
 		[x].[LastName]
 	FROM
 		[Person] [x]
 )
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[t1].[Operator]
 FROM
 	[CTE_1] [t1]
@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take) 
 	[x].[LastName]
 FROM
 	[Person] [x]

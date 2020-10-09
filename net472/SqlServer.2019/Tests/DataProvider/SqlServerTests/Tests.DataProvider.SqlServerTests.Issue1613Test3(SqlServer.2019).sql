@@ -23,11 +23,11 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[t1].[c1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			CAST([selectParam].[dt] AS TIME) as [c1]
 		FROM
 			[Issue1613] [selectParam]
@@ -38,7 +38,7 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT DISTINCT
+SELECT DISTINCT 
 	CAST([r].[dt] AS TIME)
 FROM
 	[Issue1613] [r]

@@ -61,18 +61,18 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT
-	[t1].[Id],
-	[t1].[OwnerStr],
-	[a_Other].[Id],
-	[a_Other].[StrValue],
-	[se_1].[Id],
+SELECT 
+	[t1].[Id], 
+	[t1].[OwnerStr], 
+	[a_Other].[Id], 
+	[a_Other].[StrValue], 
+	[se_1].[Id], 
 	[se_1].[StrValue]
 FROM
 	[SomeEntity] [t1]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[se].[Id],
+		OUTER APPLY ( 
+			SELECT TOP (@take) 
+				[se].[Id], 
 				[se].[StrValue]
 			FROM
 				[SomeOtherEntity] [se]

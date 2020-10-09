@@ -105,8 +105,8 @@ BeforeExecute
 DECLARE @separator VarChar(8000) -- AnsiString
 SET     @separator = N' => '
 
-SELECT
-	Max([t1].[Value4]),
+SELECT 
+	Max([t1].[Value4]), 
 	STRING_AGG([t1].[Value4], @separator)
 FROM
 	[SampleClass] [t1]

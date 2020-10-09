@@ -50,7 +50,7 @@ BeforeExecute
 DECLARE @p1 Int -- Int32
 SET     @p1 = 3
 
-SELECT
+SELECT 
 	DateAdd(dayofyear, @p1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

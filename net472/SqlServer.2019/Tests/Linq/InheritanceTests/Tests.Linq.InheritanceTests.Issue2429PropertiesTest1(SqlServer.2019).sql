@@ -25,8 +25,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[x].[Value],
+SELECT TOP (@take) 
+	[x].[Value], 
 	[x].[Id]
 FROM
 	[BaseTable] [x]
@@ -38,8 +38,8 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[x].[Value],
+SELECT TOP (@take) 
+	[x].[Value], 
 	[x].[Id]
 FROM
 	[BaseTable] [x]

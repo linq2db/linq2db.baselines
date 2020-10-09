@@ -48,7 +48,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	DateAdd(second, 41, [t].[TransactionDate])
 FROM
 	[Transactions] [t]

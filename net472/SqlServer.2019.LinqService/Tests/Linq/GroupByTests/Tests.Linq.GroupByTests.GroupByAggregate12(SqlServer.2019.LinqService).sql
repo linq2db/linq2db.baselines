@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	[t2].[Key_1]
 FROM
-	(
-		SELECT
+	( 
+		SELECT 
 			IIF((
-				SELECT
+				SELECT 
 					Count(*)
 				FROM
 					[Child] [t1]
 				WHERE
 					[selectParam].[ParentID] = [t1].[ParentID]
 			) > 0 AND (
-				SELECT
+				SELECT 
 					Avg([c_1].[ParentID])
 				FROM
 					[Child] [c_1]

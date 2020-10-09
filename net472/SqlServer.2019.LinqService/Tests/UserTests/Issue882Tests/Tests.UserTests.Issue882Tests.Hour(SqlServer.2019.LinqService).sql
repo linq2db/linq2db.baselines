@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
+SELECT 
 	DatePart(hour, [t].[DateTimeValue]) % 7
 FROM
 	[LinqDataTypes] [t]
