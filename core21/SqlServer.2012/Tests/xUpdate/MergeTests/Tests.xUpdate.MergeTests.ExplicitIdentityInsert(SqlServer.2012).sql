@@ -190,7 +190,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2012
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 95
+SET     @PersonID = 55
 DECLARE @Taxonomy NVarChar(4000) -- String
 SET     @Taxonomy = N'Dr. Lector'
 
@@ -208,7 +208,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 96
+SET     @PersonID = 56
 DECLARE @Taxonomy NVarChar(4000) -- String
 SET     @Taxonomy = N'Dr. who???'
 
@@ -226,7 +226,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 93
+SET     @PersonID = 53
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'sick'
 
@@ -244,7 +244,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 94
+SET     @PersonID = 54
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'very sick'
 
@@ -270,7 +270,7 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 98
+SET     @ID_1 = 58
 
 SET IDENTITY_INSERT [Person] ON
 MERGE INTO [Person] [Target]
