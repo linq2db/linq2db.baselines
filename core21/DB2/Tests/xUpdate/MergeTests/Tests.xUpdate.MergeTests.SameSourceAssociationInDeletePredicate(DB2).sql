@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DELETE FROM
 	"Patient" "t1"
 
@@ -211,7 +216,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @PersonID Integer(4) -- Int32
-SET     @PersonID = 128
+SET     @PersonID = 9
 DECLARE @Taxonomy VarChar(10) -- String
 SET     @Taxonomy = 'Dr. Lector'
 
@@ -229,7 +234,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @PersonID Integer(4) -- Int32
-SET     @PersonID = 129
+SET     @PersonID = 10
 DECLARE @Taxonomy VarChar(10) -- String
 SET     @Taxonomy = 'Dr. who???'
 
@@ -247,7 +252,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @PersonID Integer(4) -- Int32
-SET     @PersonID = 126
+SET     @PersonID = 7
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'sick'
 
@@ -265,7 +270,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @PersonID Integer(4) -- Int32
-SET     @PersonID = 127
+SET     @PersonID = 8
 DECLARE @Diagnosis VarChar(9) -- String
 SET     @Diagnosis = 'very sick'
 

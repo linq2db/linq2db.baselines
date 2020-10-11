@@ -1,5 +1,15 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+ALTER TABLE AllTypes ALTER COLUMN ID RESTART WITH 3
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+ALTER TABLE "KeepIdentityTest" ALTER COLUMN "ID" RESTART WITH 1
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Value_1 Integer(4) -- Int32
 SET     @Value_1 = 0
 
@@ -27,13 +37,13 @@ INSERT INTO "KeepIdentityTest"
 	"Value"
 )
 VALUES
-(55,200),
-(65,300)
+(11,200),
+(21,300)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @lastId Integer(4) -- Int32
-SET     @lastId = 45
+SET     @lastId = 1
 
 SELECT
 	"_".ID,
@@ -48,7 +58,7 @@ ORDER BY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @lastId Integer(4) -- Int32
-SET     @lastId = 45
+SET     @lastId = 1
 
 DELETE FROM
 	"KeepIdentityTest" "t1"
