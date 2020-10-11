@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2005
+
+DBCC CHECKIDENT ('AllTypes', RESEED, 2)
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 0
 
@@ -27,8 +32,8 @@ INSERT INTO [AllTypes]
 	[ID],
 	[intDataType]
 )
-SELECT 36465,200 UNION ALL
-SELECT 36475,300
+SELECT 13,200 UNION ALL
+SELECT 23,300
 
 BeforeExecute
 -- SqlServer.2005
@@ -38,7 +43,7 @@ SET IDENTITY_INSERT [AllTypes] OFF
 BeforeExecute
 -- SqlServer.2005
 DECLARE @lastId Int -- Int32
-SET     @lastId = 36455
+SET     @lastId = 3
 
 SELECT
 	[_].[ID],
@@ -53,7 +58,7 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2005
 DECLARE @lastId Int -- Int32
-SET     @lastId = 36455
+SET     @lastId = 3
 
 DELETE [t1]
 FROM
