@@ -30,12 +30,3 @@ VALUES
 )
 ;
 
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-DELETE [t1]
-FROM
-	[AllTypes] [t1]
-WHERE
-	[t1].[ID] = 10
-
