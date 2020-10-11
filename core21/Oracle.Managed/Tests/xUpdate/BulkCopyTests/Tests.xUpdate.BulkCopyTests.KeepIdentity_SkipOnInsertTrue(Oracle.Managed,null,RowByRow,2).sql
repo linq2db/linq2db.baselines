@@ -1,5 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
+
+DROP SEQUENCE AllTypesSeq
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE SEQUENCE AllTypesSeq MINVALUE 1 START WITH 3
+
+BeforeExecute
+-- Oracle.Managed Oracle12
 DECLARE @Value_1 Int32
 SET     @Value_1 = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -47,7 +57,7 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @lastId Int32
-SET     @lastId = 215
+SET     @lastId = 3
 
 SELECT
 	t1.ID,
@@ -62,7 +72,7 @@ ORDER BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @lastId Int32
-SET     @lastId = 215
+SET     @lastId = 3
 
 DELETE FROM
 	AllTypes t1

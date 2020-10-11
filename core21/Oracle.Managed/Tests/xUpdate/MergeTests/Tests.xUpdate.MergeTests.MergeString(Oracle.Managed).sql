@@ -1,6 +1,16 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
+DROP SEQUENCE AllTypesSeq
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE SEQUENCE AllTypesSeq MINVALUE 1 START WITH 3
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
 SELECT
 	Max(t1.ID)
 FROM
