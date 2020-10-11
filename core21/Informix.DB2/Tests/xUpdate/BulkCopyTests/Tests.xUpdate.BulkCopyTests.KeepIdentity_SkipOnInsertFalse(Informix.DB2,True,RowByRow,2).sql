@@ -1,5 +1,25 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+
+INSERT INTO AllTypes (ID) VALUES (2147483647)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DELETE FROM AllTypes WHERE ID > 2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+ALTER TABLE AllTypes MODIFY (ID SERIAL(3))
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+ALTER TABLE AllTypes ADD CONSTRAINT PRIMARY KEY (ID)
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @Value_1 Integer(4) -- Int32
 SET     @Value_1 = 0
 
@@ -20,7 +40,7 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @lastId Integer(4) -- Int32
-SET     @lastId = 3101
+SET     @lastId = 3
 
 DELETE FROM
 	AllTypes
