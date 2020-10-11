@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2005
+
+DBCC CHECKIDENT ('AllTypes', RESEED, 2)
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 0
 
@@ -17,7 +22,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2005
 DECLARE @lastId Int -- Int32
-SET     @lastId = 36331
+SET     @lastId = 3
 
 DELETE [t1]
 FROM
