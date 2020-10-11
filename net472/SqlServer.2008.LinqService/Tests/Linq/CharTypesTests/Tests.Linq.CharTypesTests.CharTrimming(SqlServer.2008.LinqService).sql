@@ -389,7 +389,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 DECLARE @lastId Int -- Int32
-SET     @lastId = 699
+SET     @lastId = 2
 
 SELECT
 	[_].[ID],
@@ -405,7 +405,7 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2008
 DECLARE @lastId Int -- Int32
-SET     @lastId = 699
+SET     @lastId = 2
 
 DELETE [_]
 FROM

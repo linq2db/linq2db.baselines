@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
+DBCC CHECKIDENT ('Person', RESEED, 4)
+
+BeforeExecute
+-- SqlServer.2008
+
 DELETE [t1]
 FROM
 	[Patient] [t1]
@@ -190,7 +195,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2008
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 95
+SET     @PersonID = 9
 DECLARE @Taxonomy NVarChar(4000) -- String
 SET     @Taxonomy = N'Dr. Lector'
 
@@ -208,7 +213,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 96
+SET     @PersonID = 10
 DECLARE @Taxonomy NVarChar(4000) -- String
 SET     @Taxonomy = N'Dr. who???'
 
@@ -226,7 +231,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 93
+SET     @PersonID = 7
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'sick'
 
@@ -244,7 +249,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 94
+SET     @PersonID = 8
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'very sick'
 
@@ -270,7 +275,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 98
+SET     @ID_1 = 12
 
 SET IDENTITY_INSERT [Person] ON
 MERGE INTO [Person] [Target]
