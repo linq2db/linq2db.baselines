@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
+DBCC CHECKIDENT ('Person', RESEED, 4)
+
+BeforeExecute
+-- SqlServer.2017
+
 DELETE [t1]
 FROM
 	[Patient] [t1]
@@ -190,7 +195,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2017
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 194
+SET     @PersonID = 9
 DECLARE @Taxonomy NVarChar(4000) -- String
 SET     @Taxonomy = N'Dr. Lector'
 
@@ -208,7 +213,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 195
+SET     @PersonID = 10
 DECLARE @Taxonomy NVarChar(4000) -- String
 SET     @Taxonomy = N'Dr. who???'
 
@@ -226,7 +231,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 192
+SET     @PersonID = 7
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'sick'
 
@@ -244,7 +249,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 DECLARE @PersonID Int -- Int32
-SET     @PersonID = 193
+SET     @PersonID = 8
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'very sick'
 
