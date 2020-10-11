@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
+
+UPDATE sqlite_sequence SET seq = 2 WHERE name = 'AllTypes'
+
+BeforeExecute
+-- SQLite.MS SQLite
 DECLARE @Value_1  -- Int32
 SET     @Value_1 = 0
 
@@ -26,13 +31,13 @@ INSERT INTO [AllTypes]
 	[intDataType]
 )
 VALUES
-(404,200),
-(414,300)
+(13,200),
+(23,300)
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 394
+SET     @lastId = 3
 
 SELECT
 	[_].[ID],
@@ -47,7 +52,7 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 394
+SET     @lastId = 3
 
 DELETE FROM
 	[AllTypes]
