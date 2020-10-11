@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+ALTER SEQUENCE "AllTypes_ID_seq" RESTART WITH 3
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @Value_1 Integer -- Int32
 SET     @Value_1 = 0
 
@@ -45,7 +50,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @lastId Integer -- Int32
-SET     @lastId = 195
+SET     @lastId = 3
 
 SELECT
 	t1."ID",
@@ -60,7 +65,7 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @lastId Integer -- Int32
-SET     @lastId = 195
+SET     @lastId = 3
 
 DELETE FROM
 	"AllTypes" t1
