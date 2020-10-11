@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
+DBCC CHECKIDENT ('AllTypes', RESEED, 2)
+
+BeforeExecute
+-- SqlServer.2012
+
 SELECT
 	Max([_].[ID])
 FROM
@@ -11,7 +16,7 @@ BeforeExecute
 
 MERGE INTO [AllTypes] [Target]
 USING (	VALUES
-		(700,char(0),char(0),N'test' + char(0) + N'it')) [Source]
+		(3,char(0),char(0),N'test' + char(0) + N'it')) [Source]
 (
 	[ID], 
 	[charDataType], 
