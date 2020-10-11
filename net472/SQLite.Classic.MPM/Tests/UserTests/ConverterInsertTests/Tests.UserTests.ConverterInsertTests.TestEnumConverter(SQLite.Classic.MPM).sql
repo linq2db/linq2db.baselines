@@ -1,0 +1,77 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @FirstName NVarChar(3) -- String
+SET     @FirstName = '123'
+DECLARE @LastName NVarChar(3) -- String
+SET     @LastName = '456'
+DECLARE @MiddleName NVarChar(3) -- String
+SET     @MiddleName = '789'
+DECLARE @Gender NVarChar(1) -- String
+SET     @Gender = 'M'
+
+INSERT INTO [Person]
+(
+	[FirstName],
+	[LastName],
+	[MiddleName],
+	[Gender]
+)
+VALUES
+(
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT last_insert_rowid()
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[t].[PersonID],
+	[t].[FirstName],
+	[t].[LastName],
+	[t].[MiddleName],
+	[t].[Gender]
+FROM
+	[Person] [t]
+WHERE
+	[t].[PersonID] = @id
+LIMIT @take
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @PersonID  -- Int32
+SET     @PersonID = 5
+DECLARE @FirstName NVarChar(3) -- String
+SET     @FirstName = '123'
+DECLARE @LastName NVarChar(3) -- String
+SET     @LastName = '456'
+DECLARE @MiddleName NVarChar(3) -- String
+SET     @MiddleName = '789'
+DECLARE @Gender NVarChar(1) -- String
+SET     @Gender = 'M'
+
+DELETE FROM
+	[Person]
+WHERE
+	[Person].[PersonID] = @PersonID AND
+	[Person].[FirstName] = @FirstName AND
+	[Person].[LastName] = @LastName AND
+	[Person].[MiddleName] = @MiddleName AND
+	[Person].[Gender] = @Gender
+
