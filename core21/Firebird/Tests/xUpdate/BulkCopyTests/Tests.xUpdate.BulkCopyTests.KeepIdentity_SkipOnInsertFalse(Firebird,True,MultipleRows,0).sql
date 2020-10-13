@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- Firebird
+
+SET GENERATOR "AllTypesID" TO 2
+
+BeforeExecute
+-- Firebird
 DECLARE @Value_1 Integer -- Int32
 SET     @Value_1 = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -19,7 +24,7 @@ RETURNING
 BeforeExecute
 -- Firebird
 DECLARE @lastId Integer -- Int32
-SET     @lastId = 129
+SET     @lastId = 3
 
 DELETE FROM
 	"AllTypes" "t1"

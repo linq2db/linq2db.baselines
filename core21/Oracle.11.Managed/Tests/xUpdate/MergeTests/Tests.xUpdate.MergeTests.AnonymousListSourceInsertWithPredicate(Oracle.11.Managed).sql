@@ -230,6 +230,8 @@ SELECT
 	t1.Field5
 FROM
 	TestMerge2 t1
+ORDER BY
+	t1.Id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

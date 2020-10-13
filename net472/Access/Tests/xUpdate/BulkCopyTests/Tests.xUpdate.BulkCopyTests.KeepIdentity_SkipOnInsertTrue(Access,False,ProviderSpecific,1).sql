@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+
+ALTER TABLE AllTypes ALTER COLUMN ID COUNTER(3, 1)
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @Value_1 Integer -- Int32
 SET     @Value_1 = 0
 
@@ -48,7 +53,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @lastId Integer -- Int32
-SET     @lastId = 222
+SET     @lastId = 3
 
 SELECT
 	[_].[ID],
@@ -63,7 +68,7 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @lastId Integer -- Int32
-SET     @lastId = 222
+SET     @lastId = 3
 
 DELETE FROM
 	[AllTypes] [t1]

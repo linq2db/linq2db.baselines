@@ -232,6 +232,8 @@ SELECT
 	[t1].[Field5]
 FROM
 	[TestMerge2] [t1]
+ORDER BY
+	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.2017

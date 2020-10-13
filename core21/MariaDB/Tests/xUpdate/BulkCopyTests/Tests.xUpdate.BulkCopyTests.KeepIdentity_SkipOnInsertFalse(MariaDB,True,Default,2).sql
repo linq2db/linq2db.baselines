@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
+
+ALTER TABLE `AllTypes` AUTO_INCREMENT = 3
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
 DECLARE @Value_1 Int32
 SET     @Value_1 = 0
 
@@ -26,13 +31,13 @@ INSERT INTO `AllTypes`
 	`intDataType`
 )
 VALUES
-(8198,200),
-(8208,300)
+(13,200),
+(23,300)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @lastId Int32
-SET     @lastId = 8188
+SET     @lastId = 3
 
 SELECT
 	`_`.`ID`,
@@ -47,7 +52,7 @@ ORDER BY
 BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @lastId Int32
-SET     @lastId = 8188
+SET     @lastId = 3
 
 DELETE `t1`
 FROM

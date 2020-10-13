@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2005
+
+DBCC CHECKIDENT ('AllTypes', RESEED, 2)
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 0
 
@@ -45,7 +50,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 DECLARE @lastId Int -- Int32
-SET     @lastId = 36250
+SET     @lastId = 3
 
 SELECT
 	[_].[ID],
@@ -60,7 +65,7 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2005
 DECLARE @lastId Int -- Int32
-SET     @lastId = 36250
+SET     @lastId = 3
 
 DELETE [t1]
 FROM

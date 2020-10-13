@@ -1,0 +1,149 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+DROP SEQUENCE PersonSeq
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+CREATE SEQUENCE PersonSeq MINVALUE 1 START WITH 5
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO Person
+(
+	FirstName,
+	LastName,
+	Gender
+)
+VALUES
+(
+	'John',
+	'Shepard',
+	'M'
+)
+RETURNING 
+	PersonID INTO :IDENTITY_PARAMETER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+DECLARE @PersonID Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis Varchar2(4) -- String
+SET     @Diagnosis = 'abc0'
+
+MERGE INTO Patient t1
+USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
+(
+	t1.PersonID = s.PersonID
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		t1.Diagnosis = :Diagnosis
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		PersonID,
+		Diagnosis
+	)
+	VALUES
+	(
+		:PersonID,
+		:Diagnosis
+	)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+DECLARE @PersonID Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis Varchar2(4) -- String
+SET     @Diagnosis = 'abc1'
+
+MERGE INTO Patient t1
+USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
+(
+	t1.PersonID = s.PersonID
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		t1.Diagnosis = :Diagnosis
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		PersonID,
+		Diagnosis
+	)
+	VALUES
+	(
+		:PersonID,
+		:Diagnosis
+	)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+DECLARE @PersonID Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis Varchar2(4) -- String
+SET     @Diagnosis = 'abc2'
+
+MERGE INTO Patient t1
+USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
+(
+	t1.PersonID = s.PersonID
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		t1.Diagnosis = :Diagnosis
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		PersonID,
+		Diagnosis
+	)
+	VALUES
+	(
+		:PersonID,
+		:Diagnosis
+	)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	p.PersonID,
+	p.Diagnosis
+FROM
+	Patient p
+WHERE
+	p.PersonID = :id AND ROWNUM <= :take
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+
+DELETE FROM
+	Patient p
+WHERE
+	p.PersonID = :id
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+
+DELETE FROM
+	Person t1
+WHERE
+	t1.PersonID = :id
+

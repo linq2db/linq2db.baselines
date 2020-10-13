@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
+
+ALTER TABLE `AllTypes` AUTO_INCREMENT = 3
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
 DECLARE @Value_1 Int32
 SET     @Value_1 = 0
 
@@ -20,7 +25,7 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @lastId Int32
-SET     @lastId = 8474
+SET     @lastId = 3
 
 DELETE `t1`
 FROM

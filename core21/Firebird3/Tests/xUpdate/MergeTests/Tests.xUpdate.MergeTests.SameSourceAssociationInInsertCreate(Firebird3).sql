@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
+SET GENERATOR "PersonID" TO 4
+
+BeforeExecute
+-- Firebird3 Firebird
+
 DELETE FROM
 	"Patient" "t1"
 
@@ -199,7 +204,7 @@ RETURNING
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 147
+SET     @PersonID = 9
 DECLARE @Taxonomy VarChar(10) -- String
 SET     @Taxonomy = 'Dr. Lector'
 
@@ -217,7 +222,7 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 148
+SET     @PersonID = 10
 DECLARE @Taxonomy VarChar(10) -- String
 SET     @Taxonomy = 'Dr. who???'
 
@@ -235,7 +240,7 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 145
+SET     @PersonID = 7
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'sick'
 
@@ -253,7 +258,7 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 146
+SET     @PersonID = 8
 DECLARE @Diagnosis VarChar(9) -- String
 SET     @Diagnosis = 'very sick'
 
