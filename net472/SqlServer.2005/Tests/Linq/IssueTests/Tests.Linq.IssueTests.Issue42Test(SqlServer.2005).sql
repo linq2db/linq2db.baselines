@@ -19,7 +19,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @MoneyValue Decimal(5,4)
+DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = '2001-01-11T01:11:21.100'
@@ -78,7 +78,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @MoneyValue Decimal(5,4)
+DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = '2001-01-11T01:11:21.100'

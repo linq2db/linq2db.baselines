@@ -114,7 +114,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = N'FIRST'
@@ -190,7 +190,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = char(0)
@@ -265,7 +265,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = N''
@@ -339,7 +339,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(3,3)
+DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = NULL
@@ -415,7 +415,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = char(0)
@@ -489,7 +489,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(3,3)
+DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = NULL
@@ -565,7 +565,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = char(0)
