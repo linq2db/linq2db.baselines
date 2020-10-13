@@ -2733,21 +2733,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
@@ -2814,21 +2814,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
@@ -2976,21 +2976,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
@@ -3057,21 +3057,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
@@ -3226,14 +3226,14 @@ SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
@@ -3307,14 +3307,14 @@ SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
@@ -3462,21 +3462,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
@@ -3543,21 +3543,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT @p + 0
@@ -4496,21 +4496,21 @@ SELECT Cast(-79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p + 0
@@ -4527,21 +4527,21 @@ SELECT Cast(79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p + 0
@@ -4558,21 +4558,21 @@ SELECT Cast(-79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p + 0
@@ -4589,21 +4589,21 @@ SELECT Cast(79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p + 0
@@ -4652,14 +4652,14 @@ SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = -922337203685477
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = -922337203685477
 
 SELECT @p + 0
@@ -4708,14 +4708,14 @@ SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = 922337203685477
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = 922337203685477
 
 SELECT @p + 0
@@ -4767,21 +4767,21 @@ SELECT Cast(-214748 as real)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = -214748
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = -214748
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = -214748
 
 SELECT @p + 0
@@ -4833,21 +4833,21 @@ SELECT Cast(214748 as real)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
 SELECT @p + 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
 SELECT @p + 0
