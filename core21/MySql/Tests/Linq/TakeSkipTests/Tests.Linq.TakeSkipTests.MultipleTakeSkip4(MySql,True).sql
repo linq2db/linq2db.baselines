@@ -37,7 +37,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT @skip_2,@take_2
+LIMIT @skip_2, @take_2
 
 BeforeExecute
 -- MySql MySql.Official MySql

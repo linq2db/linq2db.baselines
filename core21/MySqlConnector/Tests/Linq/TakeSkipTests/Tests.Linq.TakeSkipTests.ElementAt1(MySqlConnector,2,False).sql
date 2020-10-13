@@ -8,5 +8,5 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` > 1
-LIMIT 2,1
+LIMIT 2, 1
 

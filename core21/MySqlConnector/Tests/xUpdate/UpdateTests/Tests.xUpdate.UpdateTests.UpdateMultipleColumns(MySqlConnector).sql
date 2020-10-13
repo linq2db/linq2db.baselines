@@ -13,7 +13,7 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 1001
-DECLARE @MoneyValue NewDecimal(4,0) -- Decimal
+DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue Int16
 SET     @SmallIntValue = 100

@@ -19,9 +19,9 @@ FROM
 			`Child` `t1`
 		ORDER BY
 			`t1`.`ChildID` DESC
-		LIMIT @skip_1,@take
+		LIMIT @skip_1, @take
 	) `t2`
 ORDER BY
 	`t2`.`ChildID`
-LIMIT @skip,9223372036854775807
+LIMIT @skip, 9223372036854775807
 

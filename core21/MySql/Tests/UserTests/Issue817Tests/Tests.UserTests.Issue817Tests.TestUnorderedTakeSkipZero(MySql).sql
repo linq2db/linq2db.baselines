@@ -9,5 +9,5 @@ SELECT
 	1
 FROM
 	`Person` `_`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
