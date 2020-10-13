@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
+DBCC CHECKIDENT ('AllTypes', RESEED, 2)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
 INSERT INTO [AllTypes]
 (
 	[charDataType],
@@ -17,7 +22,7 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @id_1 Int -- Int32
-SET     @id_1 = 36089
+SET     @id_1 = 3
 
 SELECT
 	[t].[ID],
@@ -31,7 +36,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @id_1 Int -- Int32
-SET     @id_1 = 36089
+SET     @id_1 = 3
 
 MERGE INTO [AllTypes] [Target]
 USING (
@@ -69,15 +74,4 @@ VALUES
 	[Source].[ncharDataType]
 )
 ;
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-DECLARE @id Int -- Int32
-SET     @id = 36089
-
-DELETE [t1]
-FROM
-	[AllTypes] [t1]
-WHERE
-	[t1].[ID] = @id
 
