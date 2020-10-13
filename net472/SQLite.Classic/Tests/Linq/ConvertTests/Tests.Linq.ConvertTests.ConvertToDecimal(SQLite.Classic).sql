@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast([t].[MoneyValue] as Decimal(29,10)) as [c1]
+			Cast([t].[MoneyValue] as Decimal(29, 10)) as [c1]
 		FROM
 			[LinqDataTypes] [t]
 	) [p]
