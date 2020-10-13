@@ -39,15 +39,15 @@ USING (
 		[t].[ID] > 5
 ) [Source]
 (
-	[ID], 
-	[MoneyValue], 
-	[DateTimeValue], 
-	[DateTimeValue2], 
-	[BoolValue], 
-	[GuidValue], 
-	[SmallIntValue], 
-	[IntValue], 
-	[BigIntValue], 
+	[ID],
+	[MoneyValue],
+	[DateTimeValue],
+	[DateTimeValue2],
+	[BoolValue],
+	[GuidValue],
+	[SmallIntValue],
+	[IntValue],
+	[BigIntValue],
 	[StringValue]
 )
 ON ([Target].[ID] = [Source].[ID])
