@@ -10,11 +10,11 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (	VALUES
-		(0,1,2,4)) [Source]
+		(0, 1, 2, 4)) [Source]
 (
-	[Id], 
-	[Field1], 
-	[Field2], 
+	[Id],
+	[Field1],
+	[Field2],
 	[Field4]
 )
 ON ([Target].[Id] = [Source].[Id])
@@ -63,11 +63,11 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (	VALUES
-		(10,11,12,14)) [Source]
+		(10, 11, 12, 14)) [Source]
 (
-	[Id], 
-	[Field1], 
-	[Field2], 
+	[Id],
+	[Field1],
+	[Field2],
 	[Field4]
 )
 ON ([Target].[Id] = [Source].[Id])
@@ -116,12 +116,12 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (	VALUES
-		(20,21,22,24),
-		(30,31,32,34)) [Source]
+		(20, 21, 22, 24),
+		(30, 31, 32, 34)) [Source]
 (
-	[Id], 
-	[Field1], 
-	[Field2], 
+	[Id],
+	[Field1],
+	[Field2],
 	[Field4]
 )
 ON ([Target].[Id] = [Source].[Id])

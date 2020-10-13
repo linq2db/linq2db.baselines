@@ -22,7 +22,7 @@ USING (
 		)
 ) [Source]
 (
-	[ParentID], 
+	[ParentID],
 	[ChildID]
 )
 ON ([Target].[ParentID] = [Source].[ParentID] AND [Target].[ChildID] = [Source].[ChildID])

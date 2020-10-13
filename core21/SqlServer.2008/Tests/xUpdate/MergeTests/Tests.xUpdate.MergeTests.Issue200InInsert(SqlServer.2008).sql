@@ -19,11 +19,11 @@ SET     @dt2 = '2020-02-29T17:54:55.1231237'
 SET IDENTITY_INSERT [AllTypes2] ON
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		('2020-02-29T17:54:55.1231234','2020-02-29 17:54:55.1231234 +00:40',1),
-		('2020-02-29T17:54:55.1231235','2020-02-29 17:54:55.1231235 +00:40',2)) [Source]
+		('2020-02-29T17:54:55.1231234', '2020-02-29 17:54:55.1231234 +00:40', 1),
+		('2020-02-29T17:54:55.1231235', '2020-02-29 17:54:55.1231235 +00:40', 2)) [Source]
 (
-	[datetime2DataType], 
-	[datetimeoffsetDataType], 
+	[datetime2DataType],
+	[datetimeoffsetDataType],
 	[ID]
 )
 ON ([Source].[datetime2DataType] = @datetime2DataType_2 AND [Source].[datetimeoffsetDataType] = @datetimeoffsetDataType_2)

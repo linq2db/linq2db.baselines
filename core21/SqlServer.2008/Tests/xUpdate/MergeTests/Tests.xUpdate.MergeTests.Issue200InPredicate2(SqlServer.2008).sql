@@ -14,10 +14,10 @@ SET     @DateTimeOffset = '2020-02-29 17:54:55.1231234 +00:40'
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		('2020-02-29T17:54:55.1231232','2020-02-29 17:54:55.1231232 +00:40'),
-		('2020-02-29T17:54:55.1231233','2020-02-29 17:54:55.1231233 +00:40')) [Source]
+		('2020-02-29T17:54:55.1231232', '2020-02-29 17:54:55.1231232 +00:40'),
+		('2020-02-29T17:54:55.1231233', '2020-02-29 17:54:55.1231233 +00:40')) [Source]
 (
-	[datetime2DataType], 
+	[datetime2DataType],
 	[datetimeoffsetDataType]
 )
 ON ([Source].[datetime2DataType] <> @DateTime AND [Source].[datetimeoffsetDataType] <> @DateTimeOffset)
