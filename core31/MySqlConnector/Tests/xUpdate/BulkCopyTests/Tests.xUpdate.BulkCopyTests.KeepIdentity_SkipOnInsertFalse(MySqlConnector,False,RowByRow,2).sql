@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
+
+ALTER TABLE `AllTypes` AUTO_INCREMENT = 3
+
+BeforeExecute
+-- MySqlConnector MySql
 DECLARE @Value_1 Int32
 SET     @Value_1 = 0
 
@@ -48,7 +53,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 DECLARE @lastId Int32
-SET     @lastId = 4351
+SET     @lastId = 3
 
 SELECT
 	`_`.`ID`,
@@ -63,7 +68,7 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector MySql
 DECLARE @lastId Int32
-SET     @lastId = 4351
+SET     @lastId = 3
 
 DELETE `t1`
 FROM
