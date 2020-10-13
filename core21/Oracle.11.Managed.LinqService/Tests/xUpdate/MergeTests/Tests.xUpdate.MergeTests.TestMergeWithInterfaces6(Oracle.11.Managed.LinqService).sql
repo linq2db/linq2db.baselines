@@ -13,7 +13,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO ReviewIndexes Target
-USING (	SELECT 1 Id,'2' Value_1 FROM sys.dual) Source
+USING (	SELECT 1 Id, '2' Value_1 FROM sys.dual) Source
 ON (Target.Id = Source.Id)
 
 WHEN NOT MATCHED THEN

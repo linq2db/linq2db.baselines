@@ -235,13 +235,13 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO TestMerge1 Target
-USING (	SELECT 5 Key_1,10 Field01,4 Field02,NULL Field03,NULL Field04,NULL Field05 FROM sys.dual
+USING (	SELECT 5 Key_1, 10 Field01, 4 Field02, NULL Field03, NULL Field04, NULL Field05 FROM sys.dual
 	UNION ALL
-	SELECT 6,NULL,NULL,NULL,216,NULL FROM sys.dual
+	SELECT 6, NULL, NULL, NULL, 216, NULL FROM sys.dual
 	UNION ALL
-	SELECT 3,NULL,3,NULL,NULL,NULL FROM sys.dual
+	SELECT 3, NULL, 3, NULL, NULL, NULL FROM sys.dual
 	UNION ALL
-	SELECT 4,5,7,NULL,214,NULL FROM sys.dual) Source
+	SELECT 4, 5, 7, NULL, 214, NULL FROM sys.dual) Source
 ON (Target.Id = Source.Key_1)
 
 WHEN MATCHED THEN

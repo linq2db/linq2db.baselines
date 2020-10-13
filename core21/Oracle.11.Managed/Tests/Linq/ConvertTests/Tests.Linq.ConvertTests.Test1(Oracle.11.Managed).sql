@@ -15,6 +15,6 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.MoneyValue * Cast(t.ID as Decimal(29,10)) = 1.11 AND
+	t.MoneyValue * Cast(t.ID as Decimal(29, 10)) = 1.11 AND
 	ROWNUM <= :take
 

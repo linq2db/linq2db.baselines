@@ -235,13 +235,13 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO TestMerge1 Target
-USING (	SELECT 5 as_1,10 take,4 skip,NULL Skip_1,NULL insert_1,NULL SELECT_1 FROM sys.dual
+USING (	SELECT 5 as_1, 10 take, 4 skip, NULL Skip_1, NULL insert_1, NULL SELECT_1 FROM sys.dual
 	UNION ALL
-	SELECT 6,NULL,NULL,NULL,216,NULL FROM sys.dual
+	SELECT 6, NULL, NULL, NULL, 216, NULL FROM sys.dual
 	UNION ALL
-	SELECT 3,NULL,3,NULL,NULL,NULL FROM sys.dual
+	SELECT 3, NULL, 3, NULL, NULL, NULL FROM sys.dual
 	UNION ALL
-	SELECT 4,5,7,NULL,214,NULL FROM sys.dual) Source
+	SELECT 4, 5, 7, NULL, 214, NULL FROM sys.dual) Source
 ON (Target.Id = Source.as_1)
 
 WHEN NOT MATCHED THEN

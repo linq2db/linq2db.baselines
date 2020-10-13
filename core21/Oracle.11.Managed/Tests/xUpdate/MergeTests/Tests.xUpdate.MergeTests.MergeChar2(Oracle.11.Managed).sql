@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO AllTypes Target
-USING (	SELECT 10 ID,chr(0) charDataType,chr(0) ncharDataType,NULL nvarcharDataType FROM sys.dual) Source
+USING (	SELECT 10 ID, chr(0) charDataType, chr(0) ncharDataType, NULL nvarcharDataType FROM sys.dual) Source
 ON (Target.ID = Source.ID)
 
 WHEN MATCHED THEN
