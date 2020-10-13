@@ -2,7 +2,7 @@
 -- Firebird3 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 5000
-DECLARE @MoneyValue Decimal(1,0)
+DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue TimeStamp -- DateTime
 SET     @DateTimeValue = CAST('2018-01-03' AS timestamp)

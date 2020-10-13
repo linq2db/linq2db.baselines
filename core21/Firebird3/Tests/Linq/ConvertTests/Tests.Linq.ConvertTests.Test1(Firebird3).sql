@@ -15,5 +15,5 @@ SELECT FIRST @take
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."MoneyValue" * Cast("t".ID as Decimal(18,10)) = 1.11
+	"t"."MoneyValue" * Cast("t".ID as Decimal(18, 10)) = 1.11
 

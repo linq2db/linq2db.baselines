@@ -232,7 +232,7 @@ USING (
 		"TestMerge2" "t1"
 ) "Source"
 (
-	"Id", 
+	"Id",
 	"source_field0"
 )
 ON ("Target"."Id" = "Source"."Id" AND "Source"."source_field0" IS NOT NULL)
