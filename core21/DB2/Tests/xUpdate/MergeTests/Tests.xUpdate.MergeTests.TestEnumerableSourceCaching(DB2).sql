@@ -14,10 +14,10 @@ BeforeExecute
 
 MERGE INTO "CacheTestTable" "Target"
 USING (	VALUES
-		(1,1),
-		(2,2)) "Source"
+		(1, 1),
+		(2, 2)) "Source"
 (
-	"Id", 
+	"Id",
 	"Value_1"
 )
 ON ("Target"."Id" = "Source"."Id")
@@ -55,11 +55,11 @@ BeforeExecute
 
 MERGE INTO "CacheTestTable" "Target"
 USING (	VALUES
-		(1,1),
-		(2,4),
-		(3,3)) "Source"
+		(1, 1),
+		(2, 4),
+		(3, 3)) "Source"
 (
-	"Id", 
+	"Id",
 	"Value_1"
 )
 ON ("Target"."Id" = "Source"."Id")

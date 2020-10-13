@@ -232,9 +232,9 @@ USING (
 		"TestMerge2" "s"
 ) "Source"
 (
-	"Id", 
-	"Field1", 
-	"Field2", 
+	"Id",
+	"Field1",
+	"Field2",
 	"Field4"
 )
 ON ("Target"."Id" = "Source"."Id")

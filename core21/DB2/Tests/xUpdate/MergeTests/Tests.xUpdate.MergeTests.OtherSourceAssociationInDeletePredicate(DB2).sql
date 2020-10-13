@@ -299,8 +299,8 @@ USING (
 			LEFT JOIN "Person" "a_Person" ON "t1"."PersonID" = "a_Person"."PersonID"
 ) "Source"
 (
-	"PersonID", 
-	"Diagnosis", 
+	"PersonID",
+	"Diagnosis",
 	"FirstName"
 )
 ON ("Target"."PersonID" = "Source"."PersonID" AND "Source"."Diagnosis" LIKE '%very%')
