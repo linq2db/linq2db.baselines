@@ -24,7 +24,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @val Blob -- Object
 SET     @val = HEXTORAW('010203')
-DECLARE @n Decimal(1,0)
+DECLARE @n Decimal(1, 0)
 SET     @n = 7
 DECLARE @take Int32
 SET     @take = 1
@@ -47,7 +47,7 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @n Decimal(1,0)
+DECLARE @n Decimal(1, 0)
 SET     @n = 7
 
 DELETE FROM

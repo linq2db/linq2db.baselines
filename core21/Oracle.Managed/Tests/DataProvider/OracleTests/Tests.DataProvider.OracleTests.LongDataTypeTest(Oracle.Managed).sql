@@ -34,7 +34,7 @@ RETURNING
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @id Decimal(1,0)
+DECLARE @id Decimal(1, 0)
 SET     @id = 8
 
 SELECT
@@ -62,7 +62,7 @@ RETURNING
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @id2 Decimal(1,0)
+DECLARE @id2 Decimal(1, 0)
 SET     @id2 = 9
 
 SELECT

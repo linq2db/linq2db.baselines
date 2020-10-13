@@ -112,7 +112,7 @@ DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2000 13:14:15.1244567 +00:15
 DECLARE @FieldGuid Raw(16) -- Binary
 SET     @FieldGuid = HEXTORAW('00000000000000000000000000000000')
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldEnumString Varchar2(5) -- String
 SET     @FieldEnumString = 'FIRST'
@@ -188,7 +188,7 @@ DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:15.1234567 -00:15
 DECLARE @FieldGuid Raw(16) -- Binary
 SET     @FieldGuid = HEXTORAW('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF')
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldEnumString Varchar2(1) -- String
 SET     @FieldEnumString = chr(0)
@@ -263,7 +263,7 @@ DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:16.1224567 +01:39
 DECLARE @FieldGuid Raw(16) -- Binary
 SET     @FieldGuid = HEXTORAW('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF')
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldEnumString Varchar2(1) -- String
 SET     @FieldEnumString = '_'
@@ -337,7 +337,7 @@ DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:14.1233457 -01:39
 DECLARE @FieldGuid Raw(16) -- Binary
 SET     @FieldGuid = HEXTORAW('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF')
-DECLARE @FieldDecimal Decimal(3,3)
+DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldEnumString Varchar2 -- String
 SET     @FieldEnumString = NULL
@@ -413,7 +413,7 @@ DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:15.321 -00:15
 DECLARE @FieldGuid Raw(16) -- Binary
 SET     @FieldGuid = HEXTORAW('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF')
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldEnumString Varchar2(1) -- String
 SET     @FieldEnumString = chr(0)
@@ -487,7 +487,7 @@ DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:15 -01:39
 DECLARE @FieldGuid Raw(16) -- Binary
 SET     @FieldGuid = HEXTORAW('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF')
-DECLARE @FieldDecimal Decimal(3,3)
+DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldEnumString Varchar2 -- String
 SET     @FieldEnumString = NULL
@@ -563,7 +563,7 @@ DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:15.999 -00:15
 DECLARE @FieldGuid Raw(16) -- Binary
 SET     @FieldGuid = HEXTORAW('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF')
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldEnumString Varchar2(1) -- String
 SET     @FieldEnumString = chr(0)

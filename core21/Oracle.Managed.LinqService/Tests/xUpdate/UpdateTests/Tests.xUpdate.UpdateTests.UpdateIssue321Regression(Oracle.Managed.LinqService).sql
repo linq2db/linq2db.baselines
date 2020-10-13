@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 100500
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 3000
 DECLARE @DateTimeValue TimeStamp -- DateTime
 SET     @DateTimeValue = NULL
@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @value2 Decimal(5,0)
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id Int32
 SET     @id = 100500
@@ -58,7 +58,7 @@ SET     @id = 100500
 UPDATE
 	LinqDataTypes
 SET
-	LinqDataTypes.SmallIntValue = Cast(Floor(LinqDataTypes.MoneyValue / (:value2 / Cast(LinqDataTypes.IntValue as Decimal(29,10)))) as SmallInt)
+	LinqDataTypes.SmallIntValue = Cast(Floor(LinqDataTypes.MoneyValue / (:value2 / Cast(LinqDataTypes.IntValue as Decimal(29, 10)))) as SmallInt)
 WHERE
 	LinqDataTypes.ID = :id
 
