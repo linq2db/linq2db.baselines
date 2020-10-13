@@ -126,7 +126,7 @@ DECLARE @FieldBinary Bytea(0) -- Binary
 SET     @FieldBinary = E'\\x'
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'
-DECLARE @FieldDecimal Numeric(18,10) -- Decimal
+DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldDate Timestamp -- DateTime
 SET     @FieldDate = '2000-11-23'::date
@@ -214,7 +214,7 @@ DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\x000102030004'
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Numeric(18,10) -- Decimal
+DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate Timestamp -- DateTime
 SET     @FieldDate = '2123-11-23'::date
@@ -301,7 +301,7 @@ DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\xFFC864321400'
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Numeric(18,10) -- Decimal
+DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate Timestamp -- DateTime
 SET     @FieldDate = '3210-11-23'::date
@@ -387,7 +387,7 @@ DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\xFFC864321400'
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Numeric(3,3) -- Decimal
+DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Timestamp -- DateTime
 SET     @FieldDate = '3210-11-23'::date
@@ -475,7 +475,7 @@ DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\x000102030004'
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Numeric(18,10) -- Decimal
+DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate Timestamp -- DateTime
 SET     @FieldDate = '2123-11-23'::date
@@ -561,7 +561,7 @@ DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\xFFC864321400'
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Numeric(3,3) -- Decimal
+DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Timestamp -- DateTime
 SET     @FieldDate = '3210-11-23'::date
@@ -649,7 +649,7 @@ DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\x000102030004'
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Numeric(18,10) -- Decimal
+DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate Timestamp -- DateTime
 SET     @FieldDate = '2123-11-23'::date
