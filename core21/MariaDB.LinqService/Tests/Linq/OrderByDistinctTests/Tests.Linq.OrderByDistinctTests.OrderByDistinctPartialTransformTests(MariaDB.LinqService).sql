@@ -56,7 +56,7 @@ FROM
 ORDER BY
 	`x`.`OrderData1`,
 	`x`.`OrderData2` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

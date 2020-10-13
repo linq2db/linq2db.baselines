@@ -54,7 +54,7 @@ FROM
 	`OrderByDistinctData` `x`
 ORDER BY
 	`x`.`OrderData1` % 3
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -71,7 +71,7 @@ GROUP BY
 	`x`.`DuplicateData`
 ORDER BY
 	Max(`x`.`OrderData1` % 3)
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

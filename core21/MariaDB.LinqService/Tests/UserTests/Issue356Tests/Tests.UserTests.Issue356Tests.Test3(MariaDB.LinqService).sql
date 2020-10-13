@@ -32,7 +32,7 @@ FROM
 				) `t3`
 			ORDER BY
 				`t3`.`ParentID`
-			LIMIT @skip,@take_1
+			LIMIT @skip, @take_1
 		) `c_1`
 WHERE
 	`c_1`.`ParentID` = `cp`.`ParentID`

@@ -12,6 +12,6 @@ FROM
 			`t1`.`ChildID`
 		FROM
 			`Child` `t1`
-		LIMIT @skip,9223372036854775807
+		LIMIT @skip, 9223372036854775807
 	) `t2`
 
