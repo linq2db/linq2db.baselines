@@ -15,6 +15,6 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`MoneyValue` * Cast(`t`.`ID` as DECIMAL(29,10)) = 1.11
+	`t`.`MoneyValue` * Cast(`t`.`ID` as DECIMAL(29, 10)) = 1.11
 LIMIT @take
 

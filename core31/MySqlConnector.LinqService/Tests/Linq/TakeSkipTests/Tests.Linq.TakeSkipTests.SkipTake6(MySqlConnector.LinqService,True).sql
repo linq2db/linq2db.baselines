@@ -35,7 +35,7 @@ FROM
 			`p`.`ParentID`
 		FROM
 			`GrandChild` `p`
-		LIMIT @skip,@take
+		LIMIT @skip, @take
 	) `t1`
 WHERE
 	`c_1`.`ParentID` = `t1`.`ParentID`

@@ -38,7 +38,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			Floor(Cast(`_`.`ID` as Decimal(29,10)) / 3) as `c1`
+			Floor(Cast(`_`.`ID` as Decimal(29, 10)) / 3) as `c1`
 		FROM
 			`LinqDataTypes` `_`
 	) `t1`

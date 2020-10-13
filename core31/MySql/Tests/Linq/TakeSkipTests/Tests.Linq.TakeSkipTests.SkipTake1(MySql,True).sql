@@ -12,7 +12,7 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -28,5 +28,5 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 

@@ -55,7 +55,7 @@ FROM
 	`OrderByDistinctData` `x`
 ORDER BY
 	`x`.`OrderData1`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql MySql.Official MySql

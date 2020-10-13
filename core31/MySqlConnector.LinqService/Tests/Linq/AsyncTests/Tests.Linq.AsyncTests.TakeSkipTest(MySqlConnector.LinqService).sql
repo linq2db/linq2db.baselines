@@ -12,7 +12,7 @@ FROM
 	`Parent` `t1`
 ORDER BY
 	`t1`.`ParentID`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
@@ -28,5 +28,5 @@ FROM
 	`Parent` `t1`
 ORDER BY
 	`t1`.`ParentID`
-LIMIT @skip,@take
+LIMIT @skip, @take
 

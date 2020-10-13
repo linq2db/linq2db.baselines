@@ -8,7 +8,7 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID`
-LIMIT 3,5
+LIMIT 3, 5
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -20,5 +20,5 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID`
-LIMIT 3,5
+LIMIT 3, 5
 
