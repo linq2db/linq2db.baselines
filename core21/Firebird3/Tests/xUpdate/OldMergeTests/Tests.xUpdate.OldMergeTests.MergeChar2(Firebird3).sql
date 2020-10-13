@@ -28,11 +28,3 @@ VALUES
 	"Source"."ncharDataType"
 )
 
-BeforeExecute
--- Firebird3 Firebird
-
-DELETE FROM
-	"AllTypes" "t1"
-WHERE
-	"t1".ID = 10
-
