@@ -236,11 +236,11 @@ USING (
 		[TestMerge2] [_]
 ) [Source]
 (
-	[OtherId], 
-	[Field], 
-	[and_1], 
-	[Target], 
-	[Source], 
+	[OtherId],
+	[Field],
+	[and_1],
+	[Target],
+	[Source],
 	[case_1]
 )
 ON ([Target_1].[Id] = [Source].[OtherId])
