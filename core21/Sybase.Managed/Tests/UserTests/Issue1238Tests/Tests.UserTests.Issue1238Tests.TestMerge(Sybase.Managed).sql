@@ -9,10 +9,10 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [InheritanceParent] [Target]
-USING (	SELECT 143,NULL,1) [Source]
+USING (	SELECT 143, NULL, 1) [Source]
 (
-	[Key1], 
-	[Key2], 
+	[Key1],
+	[Key2],
 	[Data_1]
 )
 ON ([Target].[InheritanceParentId] = [Source].[Key1] AND ([Target].[Name] IS NULL AND [Source].[Key2] IS NULL OR [Target].[Name] = [Source].[Key2]))
@@ -48,10 +48,10 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [InheritanceParent] [Target]
-USING (	SELECT 143,NULL,1) [Source]
+USING (	SELECT 143, NULL, 1) [Source]
 (
-	[Key1], 
-	[Key2], 
+	[Key1],
+	[Key2],
 	[Data_1]
 )
 ON ([Target].[InheritanceParentId] = [Source].[Key1] AND ([Target].[Name] IS NULL AND [Source].[Key2] IS NULL OR [Target].[Name] = [Source].[Key2]))

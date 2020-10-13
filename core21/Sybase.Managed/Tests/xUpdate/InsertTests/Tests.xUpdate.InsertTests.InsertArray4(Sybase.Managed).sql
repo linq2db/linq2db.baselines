@@ -11,7 +11,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
-DECLARE @MoneyValue Decimal(1,0)
+DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = NULL

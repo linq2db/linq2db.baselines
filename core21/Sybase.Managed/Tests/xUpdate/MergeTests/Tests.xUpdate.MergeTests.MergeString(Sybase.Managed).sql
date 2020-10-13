@@ -20,11 +20,11 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [AllTypes] [Target]
-USING (	SELECT 3,char(0),char(0),'test' + char(0) + 'it') [Source]
+USING (	SELECT 3, char(0), char(0), 'test' + char(0) + 'it') [Source]
 (
-	[ID], 
-	[charDataType], 
-	[ncharDataType], 
+	[ID],
+	[charDataType],
+	[ncharDataType],
 	[nvarcharDataType]
 )
 ON ([Target].[ID] = [Source].[ID])

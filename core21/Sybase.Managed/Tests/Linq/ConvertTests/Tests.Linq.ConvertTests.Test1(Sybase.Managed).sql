@@ -13,5 +13,5 @@ SELECT TOP 2
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[MoneyValue] * Convert(Decimal(29,10), [t].[ID]) = 1.11
+	[t].[MoneyValue] * Convert(Decimal(29, 10), [t].[ID]) = 1.11
 
