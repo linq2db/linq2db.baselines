@@ -31,10 +31,10 @@ USING (
 		[a_Patient].[PersonID] = @PersonID_1
 ) [Source]
 (
-	[ID], 
-	[FirstName], 
-	[LastName], 
-	[MiddleName], 
+	[ID],
+	[FirstName],
+	[LastName],
+	[MiddleName],
 	[Gender]
 )
 ON ([Target].[PersonID] = [Source].[ID])
