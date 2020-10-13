@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @value_1 Decimal(9,5)
+DECLARE @value_1 Decimal(9, 5)
 SET     @value_1 = 6579.64648
 DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(@value_1 as Decimal(29,10))
+	Cast(@value_1 as Decimal(29, 10))
 FROM
 	[LinqDataTypes] [_]
 LIMIT @take
@@ -19,7 +19,7 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(@value_1 as Decimal(29,10))
+	Cast(@value_1 as Decimal(29, 10))
 FROM
 	[LinqDataTypes] [_]
 LIMIT @take
@@ -32,14 +32,14 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(@value_1 as Decimal(29,10))
+	Cast(@value_1 as Decimal(29, 10))
 FROM
 	[LinqDataTypes] [_]
 LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @value_1 Decimal(9,5)
+DECLARE @value_1 Decimal(9, 5)
 SET     @value_1 = 6579.64648
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -78,7 +78,7 @@ LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @value_1 Decimal(9,5)
+DECLARE @value_1 Decimal(9, 5)
 SET     @value_1 = 6579.64648
 DECLARE @take  -- Int32
 SET     @take = 1
