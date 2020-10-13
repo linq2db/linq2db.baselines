@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
+
+ALTER TABLE AllTypes ALTER COLUMN ID COUNTER(3, 1)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 0
 
@@ -48,10 +53,10 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @lastId Int -- Int32
-SET     @lastId = 194
+SET     @lastId = 3
 
-SELECT
-	[_].[ID],
+SELECT 
+	[_].[ID], 
 	[_].[intDataType]
 FROM
 	[AllTypes] [_]
@@ -63,7 +68,7 @@ ORDER BY
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @lastId Int -- Int32
-SET     @lastId = 194
+SET     @lastId = 3
 
 DELETE FROM
 	[AllTypes] [t1]
