@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+sp_chgattribute Person, 'identity_burn_max', 0, '4'
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 DELETE FROM [Patient]
 FROM
 	[Patient] [t1]
@@ -190,7 +195,7 @@ SELECT @@IDENTITY
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 47
+SET     @PersonID = 9
 DECLARE @Taxonomy UniVarChar(10) -- String
 SET     @Taxonomy = 'Dr. Lector'
 
@@ -208,7 +213,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 48
+SET     @PersonID = 10
 DECLARE @Taxonomy UniVarChar(10) -- String
 SET     @Taxonomy = 'Dr. who???'
 
@@ -226,7 +231,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 45
+SET     @PersonID = 7
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'sick'
 
@@ -244,7 +249,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 46
+SET     @PersonID = 8
 DECLARE @Diagnosis UniVarChar(9) -- String
 SET     @Diagnosis = 'very sick'
 
