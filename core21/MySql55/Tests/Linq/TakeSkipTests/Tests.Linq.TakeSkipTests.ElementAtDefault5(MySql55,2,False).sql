@@ -11,5 +11,5 @@ FROM
 	`Person` `t1`
 ORDER BY
 	`t1`.`LastName`
-LIMIT 2,1
+LIMIT 2, 1
 

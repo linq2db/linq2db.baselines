@@ -10,5 +10,5 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` > 1
-LIMIT @n,1
+LIMIT @n, 1
 

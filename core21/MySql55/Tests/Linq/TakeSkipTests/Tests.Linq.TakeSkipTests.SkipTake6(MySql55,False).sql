@@ -29,7 +29,7 @@ FROM
 			`p`.`ParentID`
 		FROM
 			`GrandChild` `p`
-		LIMIT 12,3
+		LIMIT 12, 3
 	) `t1`
 WHERE
 	`c_1`.`ParentID` = `t1`.`ParentID`

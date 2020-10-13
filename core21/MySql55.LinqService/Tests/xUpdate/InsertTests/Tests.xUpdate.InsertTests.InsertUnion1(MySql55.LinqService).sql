@@ -22,13 +22,13 @@ FROM
 	(
 		SELECT
 			`c_1`.`ParentID`,
-			Cast(Floor(Floor(Cast(`c_1`.`ChildID` as Decimal(29,10)) / 10)) as SIGNED) as `Value1`
+			Cast(Floor(Floor(Cast(`c_1`.`ChildID` as Decimal(29, 10)) / 10)) as SIGNED) as `Value1`
 		FROM
 			`Child` `c_1`
 		UNION
 		SELECT
 			Coalesce(`c_2`.`ParentID`, 0) as `ParentID`,
-			Floor(Cast(Coalesce(`c_2`.`GrandChildID`, 0) as Decimal(29,10)) / 100) as `Value1`
+			Floor(Cast(Coalesce(`c_2`.`GrandChildID`, 0) as Decimal(29, 10)) / 100) as `Value1`
 		FROM
 			`GrandChild` `c_2`
 	) `t1`

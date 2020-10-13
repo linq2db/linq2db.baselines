@@ -54,7 +54,7 @@ FROM
 	`OrderByDistinctData` `x`
 ORDER BY
 	`x`.`OrderData1`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -71,7 +71,7 @@ GROUP BY
 	`x`.`DuplicateData`
 ORDER BY
 	Max(`x`.`OrderData1`)
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -86,7 +86,7 @@ FROM
 	`OrderByDistinctData` `x`
 ORDER BY
 	`x`.`OrderData1` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -103,7 +103,7 @@ GROUP BY
 	`x`.`DuplicateData`
 ORDER BY
 	Min(`x`.`OrderData1`) DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

@@ -28,7 +28,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT 3,9223372036854775807
+LIMIT 3, 9223372036854775807
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -39,7 +39,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT 4,9223372036854775807
+LIMIT 4, 9223372036854775807
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
