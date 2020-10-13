@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
+
+DBCC CHECKIDENT ('AllTypes', RESEED, 2)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 0
 
@@ -28,8 +33,8 @@ INSERT INTO [AllTypes]
 	[intDataType]
 )
 VALUES
-(36508,200),
-(36518,300)
+(13,200),
+(23,300)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
@@ -39,10 +44,10 @@ SET IDENTITY_INSERT [AllTypes] OFF
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @lastId Int -- Int32
-SET     @lastId = 36498
+SET     @lastId = 3
 
-SELECT
-	[_].[ID],
+SELECT 
+	[_].[ID], 
 	[_].[intDataType]
 FROM
 	[AllTypes] [_]
@@ -54,7 +59,7 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @lastId Int -- Int32
-SET     @lastId = 36498
+SET     @lastId = 3
 
 DELETE [t1]
 FROM
