@@ -2,7 +2,7 @@
 -- PostgreSQL.9.5 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1000
-DECLARE @MoneyValue Numeric(1,0) -- Decimal
+DECLARE @MoneyValue Numeric(1, 0) -- Decimal
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue Timestamp -- DateTime
 SET     @DateTimeValue = NULL
