@@ -12,7 +12,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
-DECLARE @MoneyValue VarChar(4,0) -- AnsiString
+DECLARE @MoneyValue VarChar(4, 0) -- AnsiString
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 100

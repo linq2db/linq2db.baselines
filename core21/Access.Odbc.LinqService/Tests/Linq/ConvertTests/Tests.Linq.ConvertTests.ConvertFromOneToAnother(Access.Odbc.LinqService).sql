@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value_1 VarChar(9,5) -- AnsiString
+DECLARE @value_1 VarChar(9, 5) -- AnsiString
 SET     @value_1 = 6579.64648
 
 SELECT TOP 1
@@ -30,7 +30,7 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value_1 VarChar(9,5) -- AnsiString
+DECLARE @value_1 VarChar(9, 5) -- AnsiString
 SET     @value_1 = 6579.64648
 
 SELECT TOP 1
@@ -60,7 +60,7 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value_1 VarChar(9,5) -- AnsiString
+DECLARE @value_1 VarChar(9, 5) -- AnsiString
 SET     @value_1 = 6579.64648
 
 SELECT TOP 1
