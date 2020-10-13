@@ -2,7 +2,7 @@
 -- SqlServer.2017
 DECLARE @ID Int -- Int32
 SET     @ID = 5000
-DECLARE @MoneyValue Decimal(1,0)
+DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue DateTime2
 SET     @DateTimeValue = '2018-01-03T00:00:00'
