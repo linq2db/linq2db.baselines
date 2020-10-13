@@ -125,6 +125,6 @@ FROM
 			WHERE
 				[a_Product].[ProductID] = [p].[ProductID]
 			ORDER BY
-				[od].[UnitPrice] * Convert(Decimal(29,10), [od].[Quantity]) DESC
+				[od].[UnitPrice] * Convert(Decimal(29, 10), [od].[Quantity]) DESC
 		) [t1]
 
