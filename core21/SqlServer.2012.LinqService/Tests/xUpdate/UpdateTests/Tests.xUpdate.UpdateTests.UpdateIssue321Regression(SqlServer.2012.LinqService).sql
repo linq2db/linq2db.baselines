@@ -2,7 +2,7 @@
 -- SqlServer.2012
 DECLARE @ID Int -- Int32
 SET     @ID = 100500
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 3000
 DECLARE @DateTimeValue DateTime2
 SET     @DateTimeValue = NULL
@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @value2 Decimal(5,0)
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id Int -- Int32
 SET     @id = 100500
@@ -58,7 +58,7 @@ SET     @id = 100500
 UPDATE
 	[t1]
 SET
-	[t1].[SmallIntValue] = Convert(SmallInt, [t1].[MoneyValue] / (@value2 / Convert(Decimal(29,10), [t1].[IntValue])))
+	[t1].[SmallIntValue] = Convert(SmallInt, [t1].[MoneyValue] / (@value2 / Convert(Decimal(29, 10), [t1].[IntValue])))
 FROM
 	[LinqDataTypes] [t1]
 WHERE

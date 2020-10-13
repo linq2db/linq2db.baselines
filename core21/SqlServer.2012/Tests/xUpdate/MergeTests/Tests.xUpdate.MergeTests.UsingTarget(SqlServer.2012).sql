@@ -232,7 +232,7 @@ USING (
 		[TestMerge1] [Target_1]
 ) [Source]
 (
-	[Id], 
+	[Id],
 	[Field2]
 )
 ON ([Target].[Id] = [Source].[Id])
