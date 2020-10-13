@@ -2,7 +2,7 @@
 -- SqlServer.2016 SqlServer.2012
 DECLARE @ID Int -- Int32
 SET     @ID = 1000
-DECLARE @MoneyValue Decimal(1,0)
+DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue DateTime2
 SET     @DateTimeValue = NULL

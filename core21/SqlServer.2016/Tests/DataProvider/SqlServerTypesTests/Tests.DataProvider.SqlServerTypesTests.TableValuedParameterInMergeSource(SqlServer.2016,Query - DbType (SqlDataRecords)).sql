@@ -23,7 +23,7 @@ USING (
 		[_].[Id] IS NOT NULL
 ) [Source]
 (
-	[Id], 
+	[Id],
 	[Name]
 )
 ON ([Target].[Id] = [Source].[Id])

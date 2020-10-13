@@ -249,8 +249,8 @@ USING (
 		[_].[Id] <> @Val5
 ) [Source]
 (
-	[OtherId], 
-	[Field1], 
+	[OtherId],
+	[Field1],
 	[Field7]
 )
 ON (([Target].[Id] = [Source].[OtherId] OR [Target].[Id] = @Val4))

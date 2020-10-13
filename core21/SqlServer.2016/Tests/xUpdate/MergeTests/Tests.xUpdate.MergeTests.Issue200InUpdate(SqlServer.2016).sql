@@ -10,11 +10,11 @@ BeforeExecute
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		(0,'2020-02-29 17:54:55.1231234 +00:40','2020-02-29T17:54:55.1231234'),
-		(0,'2020-02-29 17:54:55.1231235 +00:40','2020-02-29T17:54:55.1231235')) [Source]
+		(0, '2020-02-29 17:54:55.1231234 +00:40', '2020-02-29T17:54:55.1231234'),
+		(0, '2020-02-29 17:54:55.1231235 +00:40', '2020-02-29T17:54:55.1231235')) [Source]
 (
-	[ID], 
-	[datetimeoffsetDataType], 
+	[ID],
+	[datetimeoffsetDataType],
 	[datetime2DataType]
 )
 ON ([Target].[ID] = [Source].[ID])
@@ -45,10 +45,10 @@ SET     @dt2 = '2020-02-29T17:54:55.1231237'
 
 MERGE INTO [AllTypes2] [Target]
 USING (	VALUES
-		('2020-02-29T17:54:55.1231234','2020-02-29 17:54:55.1231234 +00:40'),
-		('2020-02-29T17:54:55.1231235','2020-02-29 17:54:55.1231235 +00:40')) [Source]
+		('2020-02-29T17:54:55.1231234', '2020-02-29 17:54:55.1231234 +00:40'),
+		('2020-02-29T17:54:55.1231235', '2020-02-29 17:54:55.1231235 +00:40')) [Source]
 (
-	[datetime2DataType], 
+	[datetime2DataType],
 	[datetimeoffsetDataType]
 )
 ON (([Target].[datetime2DataType] IS NULL AND [Source].[datetime2DataType] IS NULL OR [Target].[datetime2DataType] = [Source].[datetime2DataType]) AND ([Target].[datetimeoffsetDataType] IS NULL AND [Source].[datetimeoffsetDataType] IS NULL OR [Target].[datetimeoffsetDataType] = [Source].[datetimeoffsetDataType]) AND [Target].[datetime2DataType] = @datetime2DataType_2 AND [Target].[datetimeoffsetDataType] = @datetimeoffsetDataType_2)
