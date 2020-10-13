@@ -8,10 +8,10 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "InheritanceParent" "Target"
-USING (	SELECT 143,NULL,1 FROM rdb$database) "Source"
+USING (	SELECT 143, NULL, 1 FROM rdb$database) "Source"
 (
-	"Key1", 
-	"Key2", 
+	"Key1",
+	"Key2",
 	"Data_1"
 )
 ON ("Target"."InheritanceParentId" = "Source"."Key1" AND ("Target"."Name" IS NULL AND "Source"."Key2" IS NULL OR "Target"."Name" = "Source"."Key2"))
@@ -47,10 +47,10 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "InheritanceParent" "Target"
-USING (	SELECT 143,NULL,1 FROM rdb$database) "Source"
+USING (	SELECT 143, NULL, 1 FROM rdb$database) "Source"
 (
-	"Key1", 
-	"Key2", 
+	"Key1",
+	"Key2",
 	"Data_1"
 )
 ON ("Target"."InheritanceParentId" = "Source"."Key1" AND ("Target"."Name" IS NULL AND "Source"."Key2" IS NULL OR "Target"."Name" = "Source"."Key2"))
