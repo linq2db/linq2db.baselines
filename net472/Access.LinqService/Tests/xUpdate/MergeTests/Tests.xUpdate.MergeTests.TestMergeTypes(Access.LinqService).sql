@@ -114,7 +114,7 @@ DECLARE @FieldBinary VarBinary(0) -- Binary
 SET     @FieldBinary = 0x
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = '{00000000-0000-0000-0000-000000000000}'
-DECLARE @FieldDecimal VarChar(18,10) -- AnsiString
+DECLARE @FieldDecimal VarChar(18, 10) -- AnsiString
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldDate Date -- DateTime
 SET     @FieldDate = #2000-11-23#
@@ -194,7 +194,7 @@ DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = '{ffffffff-ffff-ffff-ffff-ffffffffffff}'
-DECLARE @FieldDecimal VarChar(18,10) -- AnsiString
+DECLARE @FieldDecimal VarChar(18, 10) -- AnsiString
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate Date -- DateTime
 SET     @FieldDate = #2123-11-23#
@@ -273,7 +273,7 @@ DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = '{ffffffff-ffff-ffff-ffff-ffffffffffff}'
-DECLARE @FieldDecimal VarChar(18,10) -- AnsiString
+DECLARE @FieldDecimal VarChar(18, 10) -- AnsiString
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate Date -- DateTime
 SET     @FieldDate = #3210-11-23#
@@ -351,7 +351,7 @@ DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = '{ffffffff-ffff-ffff-ffff-ffffffffffff}'
-DECLARE @FieldDecimal VarChar(3,3) -- AnsiString
+DECLARE @FieldDecimal VarChar(3, 3) -- AnsiString
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Date -- DateTime
 SET     @FieldDate = #3210-11-23#
@@ -431,7 +431,7 @@ DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = '{ffffffff-ffff-ffff-ffff-ffffffffffff}'
-DECLARE @FieldDecimal VarChar(18,10) -- AnsiString
+DECLARE @FieldDecimal VarChar(18, 10) -- AnsiString
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate Date -- DateTime
 SET     @FieldDate = #2123-11-23#
@@ -509,7 +509,7 @@ DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = '{ffffffff-ffff-ffff-ffff-ffffffffffff}'
-DECLARE @FieldDecimal VarChar(3,3) -- AnsiString
+DECLARE @FieldDecimal VarChar(3, 3) -- AnsiString
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Date -- DateTime
 SET     @FieldDate = #3210-11-23#
@@ -589,7 +589,7 @@ DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = '{ffffffff-ffff-ffff-ffff-ffffffffffff}'
-DECLARE @FieldDecimal VarChar(18,10) -- AnsiString
+DECLARE @FieldDecimal VarChar(18, 10) -- AnsiString
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate Date -- DateTime
 SET     @FieldDate = #2123-11-23#

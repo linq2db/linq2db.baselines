@@ -57,7 +57,7 @@ DELETE FROM [TestIdTrun]
 BeforeExecute
 -- Access AccessOleDb
 
-ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] COUNTER(1,1)
+ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] COUNTER(1, 1)
 
 BeforeExecute
 -- Access AccessOleDb

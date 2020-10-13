@@ -135,21 +135,21 @@ SELECT decimalDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p VarChar(7,0) -- AnsiString
+DECLARE @p VarChar(7, 0) -- AnsiString
 SET     @p = 2222222
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p VarChar(7,0) -- AnsiString
+DECLARE @p VarChar(7, 0) -- AnsiString
 SET     @p = 2222222
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p VarChar(7,0) -- AnsiString
+DECLARE @p VarChar(7, 0) -- AnsiString
 SET     @p = 2222222
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
@@ -291,21 +291,21 @@ SELECT moneyDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 100000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p VarChar(6,0) -- AnsiString
+DECLARE @p VarChar(6, 0) -- AnsiString
 SET     @p = 100000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p VarChar(6,0) -- AnsiString
+DECLARE @p VarChar(6, 0) -- AnsiString
 SET     @p = 100000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
