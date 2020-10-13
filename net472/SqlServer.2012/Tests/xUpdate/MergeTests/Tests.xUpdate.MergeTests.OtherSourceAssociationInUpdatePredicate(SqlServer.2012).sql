@@ -278,8 +278,8 @@ USING (
 			LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
 ) [Source]
 (
-	[ID], 
-	[FirstName], 
+	[ID],
+	[FirstName],
 	[Diagnosis]
 )
 ON ([Target].[PersonID] = [Source].[ID] AND [Source].[FirstName] = N'first 4')

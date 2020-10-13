@@ -86,10 +86,10 @@ USING (
 		[a_Patient].[PersonID] = @patient_1
 ) [Source]
 (
-	[ID], 
-	[FirstName], 
-	[LastName], 
-	[MiddleName], 
+	[ID],
+	[FirstName],
+	[LastName],
+	[MiddleName],
 	[Gender]
 )
 ON ([Target].[PersonID] = [Source].[ID])
@@ -147,10 +147,10 @@ USING (
 		[a_Patient].[PersonID] = @patient_1
 ) [Source]
 (
-	[ID], 
-	[FirstName], 
-	[LastName], 
-	[MiddleName], 
+	[ID],
+	[FirstName],
+	[LastName],
+	[MiddleName],
 	[Gender]
 )
 ON ([Target].[PersonID] = [Source].[ID])

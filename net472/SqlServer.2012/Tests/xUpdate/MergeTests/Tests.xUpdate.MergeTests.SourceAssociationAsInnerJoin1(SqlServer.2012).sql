@@ -293,7 +293,7 @@ USING (
 			INNER JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]
 ) [Source]
 (
-	[ID], 
+	[ID],
 	[Diagnosis]
 )
 ON ([Target].[PersonID] = [Source].[ID])

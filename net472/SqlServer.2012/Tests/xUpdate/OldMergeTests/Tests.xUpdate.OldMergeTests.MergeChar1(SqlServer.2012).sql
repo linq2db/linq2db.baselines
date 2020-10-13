@@ -50,8 +50,8 @@ USING (
 		[t].[ID] = @id_1
 ) [Source]
 (
-	[ID], 
-	[charDataType], 
+	[ID],
+	[charDataType],
 	[ncharDataType]
 )
 ON ([Target].[ID] = [Source].[ID])
