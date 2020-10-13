@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- Firebird
+
+SET GENERATOR "AllTypesID" TO 2
+
+BeforeExecute
+-- Firebird
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -19,7 +24,7 @@ RETURNING
 BeforeExecute
 -- Firebird
 DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 44
+SET     @id_1 = 3
 
 SELECT
 	"t".ID,
@@ -33,7 +38,7 @@ WHERE
 BeforeExecute
 -- Firebird
 DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 44
+SET     @id_1 = 3
 
 MERGE INTO "AllTypes" "Target"
 USING (
@@ -70,14 +75,4 @@ VALUES
 	"Source"."charDataType",
 	"Source"."ncharDataType"
 )
-
-BeforeExecute
--- Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 44
-
-DELETE FROM
-	"AllTypes" "t1"
-WHERE
-	"t1".ID = @id
 

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Firebird
 
+SET GENERATOR "AllTypesID" TO 2
+
+BeforeExecute
+-- Firebird
+
 SELECT
 	Max("t1".ID)
 FROM
@@ -10,7 +15,7 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "AllTypes" "Target"
-USING (	SELECT 46,_utf8 x'00',CAST(_utf8 x'00' AS NChar(20)),CAST(_utf8 x'74657374006974' AS VARCHAR(7)) FROM rdb$database) "Source"
+USING (	SELECT 3,_utf8 x'00',CAST(_utf8 x'00' AS NChar(20)),CAST(_utf8 x'74657374006974' AS VARCHAR(7)) FROM rdb$database) "Source"
 (
 	ID, 
 	"charDataType", 
