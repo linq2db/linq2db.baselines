@@ -8,11 +8,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
-USING (	SELECT 0::Int,1::Int,2::Int,4::Int FROM table(set{1})) Source
+USING (	SELECT 0::Int, 1::Int, 2::Int, 4::Int FROM table(set{1})) Source
 (
-	Id, 
-	Field1, 
-	Field2, 
+	Id,
+	Field1,
+	Field2,
 	Field4
 )
 ON (Target.Id = Source.Id)
@@ -58,11 +58,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
-USING (	SELECT 10::Int,11::Int,12::Int,14::Int FROM table(set{1})) Source
+USING (	SELECT 10::Int, 11::Int, 12::Int, 14::Int FROM table(set{1})) Source
 (
-	Id, 
-	Field1, 
-	Field2, 
+	Id,
+	Field1,
+	Field2,
 	Field4
 )
 ON (Target.Id = Source.Id)
@@ -108,13 +108,13 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
-USING (	SELECT 20::Int,21::Int,22::Int,24::Int FROM table(set{1})
+USING (	SELECT 20::Int, 21::Int, 22::Int, 24::Int FROM table(set{1})
 	UNION ALL
-	SELECT 30::Int,31::Int,32::Int,34::Int FROM table(set{1})) Source
+	SELECT 30::Int, 31::Int, 32::Int, 34::Int FROM table(set{1})) Source
 (
-	Id, 
-	Field1, 
-	Field2, 
+	Id,
+	Field1,
+	Field2,
 	Field4
 )
 ON (Target.Id = Source.Id)

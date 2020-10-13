@@ -230,7 +230,7 @@ USING (
 		TestMerge2 s
 ) Source
 (
-	Id, 
+	Id,
 	Field1
 )
 ON (Target.Id = Source.Id)

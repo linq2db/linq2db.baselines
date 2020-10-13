@@ -222,17 +222,17 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
-USING (	SELECT 3::Int,NULL::Int,3::Int,NULL::Int FROM table(set{1})
+USING (	SELECT 3::Int, NULL::Int, 3::Int, NULL::Int FROM table(set{1})
 	UNION ALL
-	SELECT 4::Int,5::Int,7::Int,214::Int FROM table(set{1})
+	SELECT 4::Int, 5::Int, 7::Int, 214::Int FROM table(set{1})
 	UNION ALL
-	SELECT 5::Int,10::Int,4::Int,NULL::Int FROM table(set{1})
+	SELECT 5::Int, 10::Int, 4::Int, NULL::Int FROM table(set{1})
 	UNION ALL
-	SELECT 6::Int,NULL::Int,NULL::Int,216::Int FROM table(set{1})) Source
+	SELECT 6::Int, NULL::Int, NULL::Int, 216::Int FROM table(set{1})) Source
 (
-	Id, 
-	Field1, 
-	Field2, 
+	Id,
+	Field1,
+	Field2,
 	Field4
 )
 ON ((Target.Id = Source.Id OR Source.Field1 IS NOT NULL))

@@ -233,9 +233,9 @@ USING (
 		TestMerge2 t2
 ) Source
 (
-	Id, 
-	Field1, 
-	Field2, 
+	Id,
+	Field1,
+	Field2,
 	Field4
 )
 ON (Target.Id = Source.Id)
