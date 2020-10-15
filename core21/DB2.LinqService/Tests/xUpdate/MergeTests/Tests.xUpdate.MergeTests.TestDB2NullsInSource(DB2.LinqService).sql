@@ -3,26 +3,26 @@
 
 MERGE INTO "TestMerge1" "Target"
 USING (	VALUES
-		(1,CAST(NULL AS Int),CAST(NULL AS BigInt),CAST(NULL AS smallint),CAST(NULL AS NVarChar(255)),CAST(NULL AS NVarChar(255)),CAST(NULL AS NChar(1)),CAST(NULL AS NChar(1)),CAST(NULL AS Real),CAST(NULL AS Float),CAST(NULL AS timestamp),CAST(NULL AS VarBinary),CAST(NULL AS char(16) for bit data),CAST(NULL AS Decimal),CAST(NULL AS timestamp),CAST(NULL AS Time),CAST(NULL AS NVarChar(5)),CAST(NULL AS Int)),
-		(2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)) "Source"
+		(1, CAST(NULL AS Int), CAST(NULL AS BigInt), CAST(NULL AS smallint), CAST(NULL AS NVarChar(255)), CAST(NULL AS NVarChar(255)), CAST(NULL AS NChar(1)), CAST(NULL AS NChar(1)), CAST(NULL AS Real), CAST(NULL AS Float), CAST(NULL AS timestamp), CAST(NULL AS VarBinary), CAST(NULL AS char(16) for bit data), CAST(NULL AS Decimal), CAST(NULL AS timestamp), CAST(NULL AS Time), CAST(NULL AS NVarChar(5)), CAST(NULL AS Int)),
+		(2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)) "Source"
 (
-	"Id", 
-	"FieldInt32", 
-	"FieldInt64", 
-	"FieldBoolean", 
-	"FieldString", 
-	"FieldNString", 
-	"FieldChar", 
-	"FieldNChar", 
-	"FieldFloat", 
-	"FieldDouble", 
-	"FieldDateTime", 
-	"FieldBinary", 
-	"FieldGuid", 
-	"FieldDecimal", 
-	"FieldDate", 
-	"FieldTime", 
-	"FieldEnumString", 
+	"Id",
+	"FieldInt32",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldBinary",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldDate",
+	"FieldTime",
+	"FieldEnumString",
 	"FieldEnumNumber"
 )
 ON ("Target"."Id" = "Source"."Id")

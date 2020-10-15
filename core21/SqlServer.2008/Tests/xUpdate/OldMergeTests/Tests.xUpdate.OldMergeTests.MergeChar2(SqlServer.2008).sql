@@ -3,10 +3,10 @@
 
 MERGE INTO [AllTypes] [Target]
 USING (	VALUES
-		(10,char(0),char(0))) [Source]
+		(10, char(0), char(0))) [Source]
 (
-	[ID], 
-	[charDataType], 
+	[ID],
+	[charDataType],
 	[ncharDataType]
 )
 ON ([Target].[ID] = [Source].[ID])

@@ -222,19 +222,19 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "TestMerge1" "Target"
-USING (	SELECT 3,NULL,NULL,3,NULL,113 FROM rdb$database
+USING (	SELECT 3, NULL, NULL, 3, NULL, 113 FROM rdb$database
 	UNION ALL
-	SELECT 4,5,NULL,7,214,NULL FROM rdb$database
+	SELECT 4, 5, NULL, 7, 214, NULL FROM rdb$database
 	UNION ALL
-	SELECT 5,10,315,4,NULL,NULL FROM rdb$database
+	SELECT 5, 10, 315, 4, NULL, NULL FROM rdb$database
 	UNION ALL
-	SELECT 6,NULL,316,NULL,216,116 FROM rdb$database) "Source"
+	SELECT 6, NULL, 316, NULL, 216, 116 FROM rdb$database) "Source"
 (
-	"OtherId", 
-	"OtherField1", 
-	"OtherField5", 
-	"OtherField2", 
-	"OtherField4", 
+	"OtherId",
+	"OtherField1",
+	"OtherField5",
+	"OtherField2",
+	"OtherField4",
 	"OtherField3"
 )
 ON ("Target"."Id" = "Source"."OtherId")

@@ -1543,21 +1543,21 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                          
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                           
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                            
@@ -1589,21 +1589,21 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                             
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                              
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                               
@@ -1681,21 +1681,21 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                   
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                    
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                     
@@ -1727,21 +1727,21 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                      
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                       
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                        
@@ -1819,21 +1819,21 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                            
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                             
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                              
@@ -1865,21 +1865,21 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                               
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                 
@@ -1957,21 +1957,21 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                     
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                      
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                       
@@ -2003,21 +2003,21 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                        
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                         
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                          
@@ -2644,21 +2644,21 @@ SELECT Cast(-79228162514264337593543950335 as number) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                        
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                         
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                          
@@ -2670,21 +2670,21 @@ SELECT Cast(79228162514264337593543950335 as number) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                           
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                            
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                             
@@ -2696,21 +2696,21 @@ SELECT Cast(-79228162514264337593543950335 as number) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                              
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                               
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                
@@ -2722,21 +2722,21 @@ SELECT Cast(79228162514264337593543950335 as number) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                 
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                  
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(29,0)
+DECLARE @p Decimal(29, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                   
@@ -2758,21 +2758,21 @@ SELECT Cast(-922337203685477 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = -922337203685477
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                    
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = -922337203685477
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                     
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = -922337203685477
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                      
@@ -2794,21 +2794,21 @@ SELECT Cast(922337203685477 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = 922337203685477
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                       
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = 922337203685477
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                        
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(15,0)
+DECLARE @p Decimal(15, 0)
 SET     @p = 922337203685477
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                         
@@ -2840,21 +2840,21 @@ SELECT Cast(-214748 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = -214748
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                          
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = -214748
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                           
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = -214748
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                            
@@ -2886,21 +2886,21 @@ SELECT Cast(214748 as binary_double) FROM sys.dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                             
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                              
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                               

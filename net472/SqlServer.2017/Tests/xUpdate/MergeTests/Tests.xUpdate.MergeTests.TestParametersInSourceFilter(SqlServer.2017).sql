@@ -238,9 +238,9 @@ USING (
 		[_].[Id] = @param
 ) [Source]
 (
-	[Id], 
-	[Field1], 
-	[Field2], 
+	[Id],
+	[Field1],
+	[Field2],
 	[Field3]
 )
 ON ([Target].[Id] = [Source].[Id])

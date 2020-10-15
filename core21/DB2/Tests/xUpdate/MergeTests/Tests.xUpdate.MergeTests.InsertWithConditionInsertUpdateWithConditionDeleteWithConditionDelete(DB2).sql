@@ -236,16 +236,16 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (	VALUES
-		(3,NULL,3,NULL,CAST(NULL AS Int)),
-		(4,5,7,214,NULL),
-		(5,10,4,NULL,NULL),
-		(6,NULL,NULL,216,NULL),
-		(1,123,NULL,NULL,NULL)) "Source"
+		(3, NULL, 3, NULL, CAST(NULL AS Int)),
+		(4, 5, 7, 214, NULL),
+		(5, 10, 4, NULL, NULL),
+		(6, NULL, NULL, 216, NULL),
+		(1, 123, NULL, NULL, NULL)) "Source"
 (
-	"Id", 
-	"Field1", 
-	"Field2", 
-	"Field4", 
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4",
 	"Field3"
 )
 ON ("Target"."Id" = "Source"."Id")

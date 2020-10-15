@@ -36,5 +36,5 @@ FROM
 	`Person` `t1`
 ORDER BY
 	`t1`.`LastName`
-LIMIT @skip,@take
+LIMIT @skip, @take
 

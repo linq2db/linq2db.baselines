@@ -235,19 +235,19 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "TestMerge1" "Target"
-USING (	SELECT 3,NULL,3,NULL,NULL,NULL FROM rdb$database
+USING (	SELECT 3, NULL, 3, NULL, NULL, NULL FROM rdb$database
 	UNION ALL
-	SELECT 4,5,7,NULL,214,NULL FROM rdb$database
+	SELECT 4, 5, 7, NULL, 214, NULL FROM rdb$database
 	UNION ALL
-	SELECT 5,10,4,NULL,NULL,NULL FROM rdb$database
+	SELECT 5, 10, 4, NULL, NULL, NULL FROM rdb$database
 	UNION ALL
-	SELECT 6,NULL,NULL,NULL,216,NULL FROM rdb$database) "Source"
+	SELECT 6, NULL, NULL, NULL, 216, NULL FROM rdb$database) "Source"
 (
-	"in_1", 
-	"join_1", 
-	"outer_1", 
-	"inner_1", 
-	"with_1", 
+	"in_1",
+	"join_1",
+	"outer_1",
+	"inner_1",
+	"with_1",
 	"left_1"
 )
 ON ("Target"."Id" = "Source"."in_1")

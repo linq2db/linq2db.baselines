@@ -37,9 +37,9 @@ USING (
 		[t].[ID] = @id_1
 ) [Source]
 (
-	[ID], 
-	[charDataType], 
-	[ncharDataType], 
+	[ID],
+	[charDataType],
+	[ncharDataType],
 	[nvarcharDataType]
 )
 ON ([Target].[ID] = [Source].[ID])

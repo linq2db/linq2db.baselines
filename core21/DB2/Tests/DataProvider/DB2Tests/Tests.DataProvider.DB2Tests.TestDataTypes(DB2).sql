@@ -343,21 +343,21 @@ SELECT decimalDataType FROM ALLTYPES WHERE ID = 2
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p (7,0) -- Decimal
+DECLARE @p (7, 0) -- Decimal
 SET     @p = 9999999
 
 SELECT ID FROM ALLTYPES WHERE decimalDataType = @p
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p (7,0) -- Decimal
+DECLARE @p (7, 0) -- Decimal
 SET     @p = 9999999
 
 SELECT ID FROM ALLTYPES WHERE decimalDataType = @p
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p (7,0) -- Decimal
+DECLARE @p (7, 0) -- Decimal
 SET     @p = 9999999
 
 SELECT ID FROM ALLTYPES WHERE decimalDataType = @p
@@ -395,21 +395,21 @@ SELECT decfloatDataType FROM ALLTYPES WHERE ID = 2
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p (7,0) -- Decimal
+DECLARE @p (7, 0) -- Decimal
 SET     @p = 8888888
 
 SELECT ID FROM ALLTYPES WHERE decfloatDataType = @p
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p (7,0) -- Decimal
+DECLARE @p (7, 0) -- Decimal
 SET     @p = 8888888
 
 SELECT ID FROM ALLTYPES WHERE decfloatDataType = @p
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p (7,0) -- Decimal
+DECLARE @p (7, 0) -- Decimal
 SET     @p = 8888888
 
 SELECT ID FROM ALLTYPES WHERE decfloatDataType = @p

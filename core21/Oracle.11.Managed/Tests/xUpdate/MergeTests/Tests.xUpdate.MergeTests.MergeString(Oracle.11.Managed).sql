@@ -20,7 +20,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO AllTypes Target
-USING (	SELECT 3 ID,chr(0) charDataType,chr(0) ncharDataType,'test' || chr(0) || 'it' nvarcharDataType FROM sys.dual) Source
+USING (	SELECT 3 ID, chr(0) charDataType, chr(0) ncharDataType, 'test' || chr(0) || 'it' nvarcharDataType FROM sys.dual) Source
 ON (Target.ID = Source.ID)
 
 WHEN NOT MATCHED THEN

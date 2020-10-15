@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 1000
-DECLARE @MoneyValue Decimal(1,0)
+DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue TimeStamp -- DateTime
 SET     @DateTimeValue = NULL

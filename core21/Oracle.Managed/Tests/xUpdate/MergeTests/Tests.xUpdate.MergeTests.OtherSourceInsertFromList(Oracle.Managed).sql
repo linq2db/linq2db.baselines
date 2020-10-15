@@ -222,13 +222,13 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 MERGE INTO TestMerge1 Target
-USING (	SELECT 3 OtherId,NULL OtherField1,NULL OtherField5,3 OtherField2,NULL OtherField4,113 OtherField3 FROM sys.dual
+USING (	SELECT 3 OtherId, NULL OtherField1, NULL OtherField5, 3 OtherField2, NULL OtherField4, 113 OtherField3 FROM sys.dual
 	UNION ALL
-	SELECT 4,5,NULL,7,214,NULL FROM sys.dual
+	SELECT 4, 5, NULL, 7, 214, NULL FROM sys.dual
 	UNION ALL
-	SELECT 5,10,315,4,NULL,NULL FROM sys.dual
+	SELECT 5, 10, 315, 4, NULL, NULL FROM sys.dual
 	UNION ALL
-	SELECT 6,NULL,316,NULL,216,116 FROM sys.dual) Source
+	SELECT 6, NULL, 316, NULL, 216, 116 FROM sys.dual) Source
 ON (Target.Id = Source.OtherId)
 
 WHEN NOT MATCHED THEN

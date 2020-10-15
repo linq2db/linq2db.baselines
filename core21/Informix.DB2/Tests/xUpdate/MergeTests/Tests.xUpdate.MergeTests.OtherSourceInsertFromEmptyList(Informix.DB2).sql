@@ -228,11 +228,11 @@ USING (
 )
  Source
 (
-	OtherId, 
-	OtherField1, 
-	OtherField5, 
-	OtherField2, 
-	OtherField4, 
+	OtherId,
+	OtherField1,
+	OtherField5,
+	OtherField2,
+	OtherField4,
 	OtherField3
 )
 ON (Target.Id = Source.OtherId)

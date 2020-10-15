@@ -18,7 +18,7 @@ FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @MoneyValue (5,4) -- Decimal
+DECLARE @MoneyValue (5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp(20) -- DateTime
 SET     @DateTimeValue = '2001-01-11-01.11.21.100000'
@@ -74,7 +74,7 @@ FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @MoneyValue (5,4) -- Decimal
+DECLARE @MoneyValue (5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp(20) -- DateTime
 SET     @DateTimeValue = '2001-01-11-01.11.21.100000'

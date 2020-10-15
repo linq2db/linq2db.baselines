@@ -21,7 +21,7 @@ USING (
 		ReviewIndexes t1
 ) Source
 (
-	Id, 
+	Id,
 	Value_1
 )
 ON (Target.Id = Source.Id)

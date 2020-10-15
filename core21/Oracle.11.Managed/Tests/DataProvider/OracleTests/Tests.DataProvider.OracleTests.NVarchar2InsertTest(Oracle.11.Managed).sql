@@ -18,7 +18,7 @@ RETURNING
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @id Decimal(2,0)
+DECLARE @id Decimal(2, 0)
 SET     @id = 43
 DECLARE @take Int32
 SET     @take = 2

@@ -34,7 +34,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT @skip,9223372036854775807
+LIMIT @skip, 9223372036854775807
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

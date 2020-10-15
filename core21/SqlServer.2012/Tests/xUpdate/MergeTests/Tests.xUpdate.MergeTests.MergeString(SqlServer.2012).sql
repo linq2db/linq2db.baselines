@@ -16,11 +16,11 @@ BeforeExecute
 
 MERGE INTO [AllTypes] [Target]
 USING (	VALUES
-		(3,char(0),char(0),N'test' + char(0) + N'it')) [Source]
+		(3, char(0), char(0), N'test' + char(0) + N'it')) [Source]
 (
-	[ID], 
-	[charDataType], 
-	[ncharDataType], 
+	[ID],
+	[charDataType],
+	[ncharDataType],
 	[nvarcharDataType]
 )
 ON ([Target].[ID] = [Source].[ID])

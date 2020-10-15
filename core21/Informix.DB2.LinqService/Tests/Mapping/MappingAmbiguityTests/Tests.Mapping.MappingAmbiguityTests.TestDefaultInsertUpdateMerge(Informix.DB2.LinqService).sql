@@ -31,12 +31,12 @@ USING (
 		TestTable Target_1
 ) Source
 (
-	ID, 
-	Field1, 
-	Field2, 
-	Field3, 
-	Field4, 
-	field1_1, 
+	ID,
+	Field1,
+	Field2,
+	Field3,
+	Field4,
+	field1_1,
 	Field5
 )
 ON (Target.ID = Source.ID)

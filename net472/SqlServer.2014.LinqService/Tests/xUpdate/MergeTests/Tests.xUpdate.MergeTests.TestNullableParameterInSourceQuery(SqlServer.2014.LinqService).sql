@@ -33,7 +33,7 @@ USING (
 		[_].[Id] IS NULL
 ) [Source]
 (
-	[source_field0], 
+	[source_field0],
 	[Id]
 )
 ON ([Target].[Id1] = [Source].[source_field0] AND [Target].[Id2] = [Source].[Id])
@@ -67,7 +67,7 @@ USING (
 		[_].[Id] = @id_1
 ) [Source]
 (
-	[source_field0], 
+	[source_field0],
 	[Id]
 )
 ON ([Target].[Id1] = [Source].[source_field0] AND [Target].[Id2] = [Source].[Id])

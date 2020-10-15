@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 --  MySql.Official MySql
-DECLARE @p Decimal(6,3)
+DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 
 SELECT Cast(@p as decimal(6, 3))
 
 BeforeExecute
 --  MySql.Official MySql
-DECLARE @p Decimal(6,3)
+DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 
 SELECT Cast(@p as decimal(6, 3))
@@ -73,14 +73,14 @@ LIMIT @take
 
 BeforeExecute
 --  MySql.Official MySql
-DECLARE @p Decimal(6,3)
+DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 
 SELECT Cast(@p as decimal(6, 3))
 
 BeforeExecute
 --  MySql.Official MySql
-DECLARE @p Decimal(6,3)
+DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 
 SELECT Cast(@p as decimal(6, 3))

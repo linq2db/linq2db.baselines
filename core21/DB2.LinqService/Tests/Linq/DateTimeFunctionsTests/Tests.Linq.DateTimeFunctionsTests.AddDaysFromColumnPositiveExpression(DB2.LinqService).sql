@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5000
-DECLARE @MoneyValue (1,0) -- Decimal
+DECLARE @MoneyValue (1, 0) -- Decimal
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue Timestamp(20) -- DateTime
 SET     @DateTimeValue = '2018-01-03-00.00.00.000000'

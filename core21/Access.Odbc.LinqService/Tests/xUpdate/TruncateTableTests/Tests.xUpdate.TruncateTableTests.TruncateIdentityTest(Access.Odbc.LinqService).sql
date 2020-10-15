@@ -57,7 +57,7 @@ DELETE FROM [TestIdTrun]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] COUNTER(1,1)
+ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] COUNTER(1, 1)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

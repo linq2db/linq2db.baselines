@@ -228,10 +228,10 @@ USING (
 )
  "Source"
 (
-	"Id", 
-	"Field3", 
-	"Field1", 
-	"Field2", 
+	"Id",
+	"Field3",
+	"Field1",
+	"Field2",
 	"Field4"
 )
 ON ("Target"."Id" = "Source"."Id" AND "Source"."Field3" IS NOT NULL)

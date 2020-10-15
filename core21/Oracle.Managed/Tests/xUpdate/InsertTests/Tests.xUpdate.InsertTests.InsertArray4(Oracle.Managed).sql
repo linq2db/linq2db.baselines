@@ -10,7 +10,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1001
-DECLARE @MoneyValue Decimal(1,0)
+DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue TimeStamp -- DateTime
 SET     @DateTimeValue = NULL

@@ -13,9 +13,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO ReviewIndexes Target
-USING (	SELECT 1::Int,'2'::NVarChar(255) FROM table(set{1})) Source
+USING (	SELECT 1::Int, '2'::NVarChar(255) FROM table(set{1})) Source
 (
-	Id, 
+	Id,
 	Value_1
 )
 ON (Target.Id = Source.Id)

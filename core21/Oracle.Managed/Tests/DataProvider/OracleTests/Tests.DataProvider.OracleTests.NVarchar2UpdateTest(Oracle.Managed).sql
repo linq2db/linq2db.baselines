@@ -26,7 +26,7 @@ SET
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @id Decimal(2,0)
+DECLARE @id Decimal(2, 0)
 SET     @id = 11
 DECLARE @take Int32
 SET     @take = 2

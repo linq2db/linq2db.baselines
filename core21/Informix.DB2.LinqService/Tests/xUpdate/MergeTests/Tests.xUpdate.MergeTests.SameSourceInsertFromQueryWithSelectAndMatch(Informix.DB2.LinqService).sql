@@ -232,9 +232,9 @@ USING (
 		TestMerge2 t1
 ) Source
 (
-	Id, 
-	Field4, 
-	Field1, 
+	Id,
+	Field4,
+	Field1,
 	source_field0
 )
 ON ((Target.Id = Source.Id OR Source.Field4 IS NOT NULL))

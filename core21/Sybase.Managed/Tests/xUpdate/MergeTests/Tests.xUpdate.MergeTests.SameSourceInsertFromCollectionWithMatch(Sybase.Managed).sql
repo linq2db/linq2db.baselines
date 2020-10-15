@@ -224,17 +224,17 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
-USING (	SELECT 3,NULL,3,NULL
+USING (	SELECT 3, NULL, 3, NULL
 	UNION ALL
-	SELECT 4,5,7,214
+	SELECT 4, 5, 7, 214
 	UNION ALL
-	SELECT 5,10,4,NULL
+	SELECT 5, 10, 4, NULL
 	UNION ALL
-	SELECT 6,NULL,NULL,216) [Source]
+	SELECT 6, NULL, NULL, 216) [Source]
 (
-	[Id], 
-	[Field1], 
-	[Field2], 
+	[Id],
+	[Field1],
+	[Field2],
 	[Field4]
 )
 ON (([Target].[Id] = [Source].[Id] OR [Source].[Field1] IS NOT NULL))

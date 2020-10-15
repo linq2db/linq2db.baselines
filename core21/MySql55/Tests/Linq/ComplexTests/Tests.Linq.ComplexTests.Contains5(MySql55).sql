@@ -20,7 +20,7 @@ WHERE
 					`p`.`ParentID`
 				FROM
 					`Parent` `p`
-				LIMIT @skip,@take
+				LIMIT @skip, @take
 			) `t1`
 	)
 

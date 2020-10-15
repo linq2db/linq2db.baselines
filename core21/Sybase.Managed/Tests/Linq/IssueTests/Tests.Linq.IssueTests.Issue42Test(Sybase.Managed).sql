@@ -17,7 +17,7 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @MoneyValue Decimal(3,2)
+DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -74,7 +74,7 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @MoneyValue Decimal(3,2)
+DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'

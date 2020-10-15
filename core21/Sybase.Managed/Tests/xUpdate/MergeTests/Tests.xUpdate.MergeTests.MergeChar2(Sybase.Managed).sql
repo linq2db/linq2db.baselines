@@ -2,11 +2,11 @@
 -- Sybase.Managed Sybase
 
 MERGE INTO [AllTypes] [Target]
-USING (	SELECT 10,char(0),char(0),NULL) [Source]
+USING (	SELECT 10, char(0), char(0), NULL) [Source]
 (
-	[ID], 
-	[charDataType], 
-	[ncharDataType], 
+	[ID],
+	[charDataType],
+	[ncharDataType],
 	[nvarcharDataType]
 )
 ON ([Target].[ID] = [Source].[ID])

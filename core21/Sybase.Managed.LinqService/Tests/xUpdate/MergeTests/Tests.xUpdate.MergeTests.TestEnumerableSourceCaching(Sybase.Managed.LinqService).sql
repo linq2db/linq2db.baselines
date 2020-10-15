@@ -13,11 +13,11 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [CacheTestTable] [Target]
-USING (	SELECT 1,1
+USING (	SELECT 1, 1
 	UNION ALL
-	SELECT 2,2) [Source]
+	SELECT 2, 2) [Source]
 (
-	[Id], 
+	[Id],
 	[Value_1]
 )
 ON ([Target].[Id] = [Source].[Id])
@@ -54,13 +54,13 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [CacheTestTable] [Target]
-USING (	SELECT 1,1
+USING (	SELECT 1, 1
 	UNION ALL
-	SELECT 2,4
+	SELECT 2, 4
 	UNION ALL
-	SELECT 3,3) [Source]
+	SELECT 3, 3) [Source]
 (
-	[Id], 
+	[Id],
 	[Value_1]
 )
 ON ([Target].[Id] = [Source].[Id])

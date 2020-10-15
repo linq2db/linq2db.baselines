@@ -8,10 +8,10 @@ USING (
 )
  [Source]
 (
-	[ID], 
-	[FirstName], 
-	[LastName], 
-	[MiddleName], 
+	[ID],
+	[FirstName],
+	[LastName],
+	[MiddleName],
 	[Gender]
 )
 ON ([Target].[PersonID] = [Source].[ID])

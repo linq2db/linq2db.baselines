@@ -238,11 +238,11 @@ USING (
 		[_].[Id] = 5
 ) [Source]
 (
-	[OtherId], 
-	[OtherField3], 
-	[OtherField5], 
-	[OtherField4], 
-	[OtherField2], 
+	[OtherId],
+	[OtherField3],
+	[OtherField5],
+	[OtherField4],
+	[OtherField2],
 	[OtherField1]
 )
 ON ([Target].[Id] = [Source].[OtherId] AND [Source].[OtherField3] IS NOT NULL)

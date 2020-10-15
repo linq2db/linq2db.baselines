@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5000
-DECLARE @MoneyValue Decimal(1,0)
+DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2018-01-03'

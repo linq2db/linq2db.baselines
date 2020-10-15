@@ -104,7 +104,7 @@ DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2000-11-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldDate TimeStamp -- DateTime
 SET     @FieldDate = CAST('2000-11-23' AS timestamp)
@@ -175,7 +175,7 @@ DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2001-10-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate TimeStamp -- DateTime
 SET     @FieldDate = CAST('2123-11-23' AS timestamp)
@@ -246,7 +246,7 @@ DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2098-10-12 21:14:15.997' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate TimeStamp -- DateTime
 SET     @FieldDate = CAST('3210-11-23' AS timestamp)
@@ -316,7 +316,7 @@ DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2098-10-12 21:14:15.907' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(3,3)
+DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate TimeStamp -- DateTime
 SET     @FieldDate = CAST('3210-11-23' AS timestamp)
@@ -387,7 +387,7 @@ DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2001-10-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate TimeStamp -- DateTime
 SET     @FieldDate = CAST('2123-11-23' AS timestamp)
@@ -457,7 +457,7 @@ DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2098-10-12 21:14:15.913' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(3,3)
+DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate TimeStamp -- DateTime
 SET     @FieldDate = CAST('3210-11-23' AS timestamp)
@@ -528,7 +528,7 @@ DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2001-10-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate TimeStamp -- DateTime
 SET     @FieldDate = CAST('2123-11-23' AS timestamp)

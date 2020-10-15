@@ -108,8 +108,8 @@ USING (
 		"Child" "t2"
 ) "Source"
 (
-	"source_field0", 
-	"LeftId", 
+	"source_field0",
+	"LeftId",
 	"RightId"
 )
 ON ("Target"."GrandChildID" = "Source"."source_field0")

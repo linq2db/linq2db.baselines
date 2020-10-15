@@ -10,7 +10,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
-DECLARE @MoneyValue VarChar(1,0) -- AnsiString
+DECLARE @MoneyValue VarChar(1, 0) -- AnsiString
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = NULL

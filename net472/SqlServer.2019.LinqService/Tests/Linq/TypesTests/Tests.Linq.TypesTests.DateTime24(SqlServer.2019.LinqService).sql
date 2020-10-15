@@ -42,7 +42,7 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @MoneyValue Decimal(5,4)
+DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime2
 SET     @DateTimeValue = '2001-01-11T01:11:21.1000000'

@@ -14,16 +14,16 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO TestMerge1 Target
-USING (	SELECT 1 Id,NULL FieldInt32,NULL FieldInt64,NULL FieldBoolean,NULL FieldString,NULL FieldNString,NULL FieldChar,NULL FieldNChar,NULL FieldFloat,NULL FieldDouble,NULL FieldDateTime,NULL FieldDateTime2,NULL FieldGuid,NULL FieldDecimal,NULL FieldEnumString,NULL FieldEnumNumber FROM sys.dual
+USING (	SELECT 1 Id, NULL FieldInt32, NULL FieldInt64, NULL FieldBoolean, NULL FieldString, NULL FieldNString, NULL FieldChar, NULL FieldNChar, NULL FieldFloat, NULL FieldDouble, NULL FieldDateTime, NULL FieldDateTime2, NULL FieldGuid, NULL FieldDecimal, NULL FieldEnumString, NULL FieldEnumNumber FROM sys.dual
 	UNION ALL
-	SELECT 2,-2147483647,-9223372036854775807,1,'normal strinG','всЁ нормально','*','ё',-3.40282E+38,-1.7976931348623157E+308D,TO_TIMESTAMP('2000-11-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6'),TO_TIMESTAMP_TZ('2000-11-22 12:59:15.1244567 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'),Cast('00000000000000000000000000000000' as raw(16)),12345678.9012345678,'FIRST',NULL FROM sys.dual
+	SELECT 2, -2147483647, -9223372036854775807, 1, 'normal strinG', 'всЁ нормально', '*', 'ё', -3.40282E+38, -1.7976931348623157E+308D, TO_TIMESTAMP('2000-11-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6'), TO_TIMESTAMP_TZ('2000-11-22 12:59:15.1244567 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'), Cast('00000000000000000000000000000000' as raw(16)), 12345678.9012345678, 'FIRST', NULL FROM sys.dual
 	UNION ALL
-	SELECT 3,2147483647,9223372036854775807,0,'test
-	','ЙЦУКЩывапрм
-q','&','>',3.40282E+38,1.7976931348623157E+308D,TO_TIMESTAMP('2001-10-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6'),TO_TIMESTAMP_TZ('2001-11-22 13:29:15.1234567 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'),Cast('ffffffffffffffffffffffffffffffff' as raw(16)),-99999999.9999999999,chr(0),0 FROM sys.dual
+	SELECT 3, 2147483647, 9223372036854775807, 0, 'test
+	', 'ЙЦУКЩывапрм
+q', '&', '>', 3.40282E+38, 1.7976931348623157E+308D, TO_TIMESTAMP('2001-10-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6'), TO_TIMESTAMP_TZ('2001-11-22 13:29:15.1234567 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'), Cast('ffffffffffffffffffffffffffffffff' as raw(16)), -99999999.9999999999, chr(0), 0 FROM sys.dual
 	UNION ALL
-	SELECT 4,-123,987,NULL,'`~!@#$%^&*()_+{}|[]\','<>?/.,;''щЩ":','','
-',1.1755E-38,-2.2250738585072014E-308D,TO_TIMESTAMP('2098-10-12 21:14:15.997000', 'YYYY-MM-DD HH24:MI:SS.FF6'),TO_TIMESTAMP_TZ('2001-11-22 11:35:16.1224567 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'),Cast('ffffffffffffffffffffffffffffffff' as raw(16)),99999999.9999999999,'_',2147483647 FROM sys.dual) Source
+	SELECT 4, -123, 987, NULL, '`~!@#$%^&*()_+{}|[]\', '<>?/.,;''щЩ":', '', '
+', 1.1755E-38, -2.2250738585072014E-308D, TO_TIMESTAMP('2098-10-12 21:14:15.997000', 'YYYY-MM-DD HH24:MI:SS.FF6'), TO_TIMESTAMP_TZ('2001-11-22 11:35:16.1224567 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'), Cast('ffffffffffffffffffffffffffffffff' as raw(16)), 99999999.9999999999, '_', 2147483647 FROM sys.dual) Source
 ON (Target.Id = Source.Id)
 
 WHEN NOT MATCHED THEN
@@ -70,17 +70,17 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO TestMerge2 Target
-USING (	SELECT 3 Id,-123 FieldInt32,987 FieldInt64,NULL FieldBoolean,'<>?/.,;''zZ":' FieldString,'`~!@#$%^&*()_+{}|[]\' FieldNString,'' FieldChar,'' FieldNChar,-1.1755E-38 FieldFloat,2.2250738585072014E-308D FieldDouble,TO_TIMESTAMP('2098-10-12 21:14:15.907000', 'YYYY-MM-DD HH24:MI:SS.FF6') FieldDateTime,TO_TIMESTAMP_TZ('2001-11-22 14:53:14.1233457 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM') FieldDateTime2,Cast('ffffffffffffffffffffffffffffffff' as raw(16)) FieldGuid,-0.123 FieldDecimal,NULL FieldEnumString,-2147483647 FieldEnumNumber FROM sys.dual
+USING (	SELECT 3 Id, -123 FieldInt32, 987 FieldInt64, NULL FieldBoolean, '<>?/.,;''zZ":' FieldString, '`~!@#$%^&*()_+{}|[]\' FieldNString, '' FieldChar, '' FieldNChar, -1.1755E-38 FieldFloat, 2.2250738585072014E-308D FieldDouble, TO_TIMESTAMP('2098-10-12 21:14:15.907000', 'YYYY-MM-DD HH24:MI:SS.FF6') FieldDateTime, TO_TIMESTAMP_TZ('2001-11-22 14:53:14.1233457 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM') FieldDateTime2, Cast('ffffffffffffffffffffffffffffffff' as raw(16)) FieldGuid, -0.123 FieldDecimal, NULL FieldEnumString, -2147483647 FieldEnumNumber FROM sys.dual
 	UNION ALL
-	SELECT 4,2147483647,9223372036854775807,0,'test
-	','ЙЦУКЩывапрм
-q','1',' ',3.40282E+38,1.7976931348623157E+308D,TO_TIMESTAMP('2001-10-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6'),TO_TIMESTAMP_TZ('2001-11-22 13:29:15.3210000 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'),Cast('ffffffffffffffffffffffffffffffff' as raw(16)),-99999999.9999999999,chr(0),0 FROM sys.dual
+	SELECT 4, 2147483647, 9223372036854775807, 0, 'test
+	', 'ЙЦУКЩывапрм
+q', '1', ' ', 3.40282E+38, 1.7976931348623157E+308D, TO_TIMESTAMP('2001-10-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6'), TO_TIMESTAMP_TZ('2001-11-22 13:29:15.3210000 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'), Cast('ffffffffffffffffffffffffffffffff' as raw(16)), -99999999.9999999999, chr(0), 0 FROM sys.dual
 	UNION ALL
-	SELECT 5,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\',' ',' ',-1.1755E-38,2.2250738585072014E-308D,TO_TIMESTAMP('2098-10-12 21:14:15.913000', 'YYYY-MM-DD HH24:MI:SS.FF6'),TO_TIMESTAMP_TZ('2001-11-22 14:53:15.0000000 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'),Cast('ffffffffffffffffffffffffffffffff' as raw(16)),-0.123,NULL,-2147483647 FROM sys.dual
+	SELECT 5, -123, 987, NULL, '<>?/.,;''zZ":', '`~!@#$%^&*()_+{}|[]\', ' ', ' ', -1.1755E-38, 2.2250738585072014E-308D, TO_TIMESTAMP('2098-10-12 21:14:15.913000', 'YYYY-MM-DD HH24:MI:SS.FF6'), TO_TIMESTAMP_TZ('2001-11-22 14:53:15.0000000 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'), Cast('ffffffffffffffffffffffffffffffff' as raw(16)), -0.123, NULL, -2147483647 FROM sys.dual
 	UNION ALL
-	SELECT 6,2147483647,9223372036854775807,0,'test
-	  ','ЙЦУКЩывапрм
-q  ','-','~',3.40282E+38,1.7976931348623157E+308D,TO_TIMESTAMP('2001-10-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6'),TO_TIMESTAMP_TZ('2001-11-22 13:29:15.9990000 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'),Cast('ffffffffffffffffffffffffffffffff' as raw(16)),-99999999.9999999999,chr(0),0 FROM sys.dual) Source
+	SELECT 6, 2147483647, 9223372036854775807, 0, 'test
+	  ', 'ЙЦУКЩывапрм
+q  ', '-', '~', 3.40282E+38, 1.7976931348623157E+308D, TO_TIMESTAMP('2001-10-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6'), TO_TIMESTAMP_TZ('2001-11-22 13:29:15.9990000 00:00', 'YYYY-MM-DD HH24:MI:SS.FF7 TZH:TZM'), Cast('ffffffffffffffffffffffffffffffff' as raw(16)), -99999999.9999999999, chr(0), 0 FROM sys.dual) Source
 ON (Target.Id = Source.Id)
 
 WHEN NOT MATCHED THEN

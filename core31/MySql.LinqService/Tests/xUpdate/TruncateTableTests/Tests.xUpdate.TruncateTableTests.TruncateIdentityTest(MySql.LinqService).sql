@@ -52,7 +52,7 @@ FROM
 	`TestIdTrun` `t1`
 ORDER BY
 	`t1`.`ID`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -97,7 +97,7 @@ FROM
 	`TestIdTrun` `t1`
 ORDER BY
 	`t1`.`ID`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql MySql.Official MySql

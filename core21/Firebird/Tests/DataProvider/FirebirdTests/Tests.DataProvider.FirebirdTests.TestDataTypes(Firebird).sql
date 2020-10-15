@@ -135,21 +135,21 @@ SELECT "decimalDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Firebird
-DECLARE @p Decimal(7,0)
+DECLARE @p Decimal(7, 0)
 SET     @p = 2222222
 
 SELECT ID FROM "AllTypes" WHERE "decimalDataType" = @p
 
 BeforeExecute
 -- Firebird
-DECLARE @p Decimal(7,0)
+DECLARE @p Decimal(7, 0)
 SET     @p = 2222222
 
 SELECT ID FROM "AllTypes" WHERE "decimalDataType" = @p
 
 BeforeExecute
 -- Firebird
-DECLARE @p Decimal(7,0)
+DECLARE @p Decimal(7, 0)
 SET     @p = 2222222
 
 SELECT ID FROM "AllTypes" WHERE "decimalDataType" = @p

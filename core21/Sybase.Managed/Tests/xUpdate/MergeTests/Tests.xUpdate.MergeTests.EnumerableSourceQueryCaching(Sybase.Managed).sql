@@ -9,11 +9,11 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
-USING (	SELECT 0,1,2,4) [Source]
+USING (	SELECT 0, 1, 2, 4) [Source]
 (
-	[Id], 
-	[Field1], 
-	[Field2], 
+	[Id],
+	[Field1],
+	[Field2],
 	[Field4]
 )
 ON ([Target].[Id] = [Source].[Id])
@@ -60,11 +60,11 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
-USING (	SELECT 10,11,12,14) [Source]
+USING (	SELECT 10, 11, 12, 14) [Source]
 (
-	[Id], 
-	[Field1], 
-	[Field2], 
+	[Id],
+	[Field1],
+	[Field2],
 	[Field4]
 )
 ON ([Target].[Id] = [Source].[Id])
@@ -111,13 +111,13 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
-USING (	SELECT 20,21,22,24
+USING (	SELECT 20, 21, 22, 24
 	UNION ALL
-	SELECT 30,31,32,34) [Source]
+	SELECT 30, 31, 32, 34) [Source]
 (
-	[Id], 
-	[Field1], 
-	[Field2], 
+	[Id],
+	[Field1],
+	[Field2],
 	[Field4]
 )
 ON ([Target].[Id] = [Source].[Id])

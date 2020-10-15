@@ -3262,21 +3262,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
@@ -3363,21 +3363,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
@@ -3560,21 +3560,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
@@ -3661,21 +3661,21 @@ SELECT Cast(1 as real)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
@@ -3865,14 +3865,14 @@ SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
@@ -3966,14 +3966,14 @@ SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
@@ -4163,14 +4163,14 @@ SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
@@ -4264,14 +4264,14 @@ SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(1,0)
+DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT Cast(@p as decimal(38))
@@ -5345,21 +5345,21 @@ SELECT Cast(-79228162514264337593543950 as numeric(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = -79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = -79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = -79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
@@ -5376,21 +5376,21 @@ SELECT Cast(79228162514264337593543950 as numeric(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = 79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = 79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = 79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
@@ -5407,21 +5407,21 @@ SELECT Cast(-79228162514264337593543950 as numeric(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = -79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = -79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = -79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
@@ -5438,21 +5438,21 @@ SELECT Cast(79228162514264337593543950 as numeric(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = 79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = 79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(26,0)
+DECLARE @p Decimal(26, 0)
 SET     @p = 79228162514264337593543950
 
 SELECT Cast(@p as decimal(38))
@@ -5501,14 +5501,14 @@ SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(13,0)
+DECLARE @p Decimal(13, 0)
 SET     @p = -9223372036854
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(13,0)
+DECLARE @p Decimal(13, 0)
 SET     @p = -9223372036854
 
 SELECT Cast(@p as decimal(38))
@@ -5562,14 +5562,14 @@ SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(13,0)
+DECLARE @p Decimal(13, 0)
 SET     @p = 9223372036854
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(13,0)
+DECLARE @p Decimal(13, 0)
 SET     @p = 9223372036854
 
 SELECT Cast(@p as decimal(38))
@@ -5633,14 +5633,14 @@ SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = -214748
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = -214748
 
 SELECT Cast(@p as decimal(38))
@@ -5714,14 +5714,14 @@ SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
 SELECT Cast(@p as decimal(38))
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
 SELECT Cast(@p as decimal(38))

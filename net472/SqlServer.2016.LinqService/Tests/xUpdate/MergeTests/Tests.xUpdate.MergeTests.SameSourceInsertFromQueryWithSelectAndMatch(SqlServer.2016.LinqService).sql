@@ -234,9 +234,9 @@ USING (
 		[TestMerge2] [_]
 ) [Source]
 (
-	[Id], 
-	[Field4], 
-	[Field1], 
+	[Id],
+	[Field4],
+	[Field1],
 	[source_field0]
 )
 ON (([Target].[Id] = [Source].[Id] OR [Source].[Field4] IS NOT NULL))

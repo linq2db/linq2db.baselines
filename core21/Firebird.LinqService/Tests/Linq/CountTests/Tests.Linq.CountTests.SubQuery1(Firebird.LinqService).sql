@@ -10,7 +10,7 @@ SELECT
 			"Child" "c_1"
 		WHERE
 			"p"."ParentID" = "c_1"."ParentID" AND "c_1"."ParentID" = "p"."ParentID" AND
-			Cast("c_1"."ChildID" as Decimal(18,10)) <> 0
+			Cast("c_1"."ChildID" as Decimal(18, 10)) <> 0
 	)
 FROM
 	"Parent" "p"

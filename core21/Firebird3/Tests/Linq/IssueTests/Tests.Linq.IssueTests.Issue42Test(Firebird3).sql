@@ -19,7 +19,7 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @MoneyValue Decimal(3,2)
+DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue TimeStamp -- DateTime
 SET     @DateTimeValue = CAST('2001-01-11 01:11:21.100' AS timestamp)
@@ -76,7 +76,7 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @MoneyValue Decimal(3,2)
+DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue TimeStamp -- DateTime
 SET     @DateTimeValue = CAST('2001-01-11 01:11:21.100' AS timestamp)

@@ -10,7 +10,7 @@ BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
-DECLARE @MoneyValue Numeric(1,0) -- Decimal
+DECLARE @MoneyValue Numeric(1, 0) -- Decimal
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue Timestamp -- DateTime
 SET     @DateTimeValue = NULL

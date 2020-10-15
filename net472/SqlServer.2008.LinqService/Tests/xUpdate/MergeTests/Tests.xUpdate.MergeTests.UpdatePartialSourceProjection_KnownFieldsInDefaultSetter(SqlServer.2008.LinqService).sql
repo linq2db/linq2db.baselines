@@ -234,9 +234,9 @@ USING (
 		[TestMerge2] [s]
 ) [Source]
 (
-	[Id], 
-	[Field1], 
-	[Field2], 
+	[Id],
+	[Field1],
+	[Field2],
 	[Field3]
 )
 ON ([Source].[Id] = 3)

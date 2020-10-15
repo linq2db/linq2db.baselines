@@ -69,21 +69,21 @@ SELECT numericDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(7,0)
+DECLARE @p Decimal(7, 0)
 SET     @p = 9999999
 
 SELECT ID FROM [AllTypes] WHERE numericDataType = @p
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(7,0)
+DECLARE @p Decimal(7, 0)
 SET     @p = 9999999
 
 SELECT ID FROM [AllTypes] WHERE numericDataType = @p
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(7,0)
+DECLARE @p Decimal(7, 0)
 SET     @p = 9999999
 
 SELECT ID FROM [AllTypes] WHERE numericDataType = @p
@@ -204,21 +204,21 @@ SELECT decimalDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(7,0)
+DECLARE @p Decimal(7, 0)
 SET     @p = 2222222
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(7,0)
+DECLARE @p Decimal(7, 0)
 SET     @p = 2222222
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(7,0)
+DECLARE @p Decimal(7, 0)
 SET     @p = 2222222
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
@@ -346,14 +346,14 @@ SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 100000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Decimal(6,0)
+DECLARE @p Decimal(6, 0)
 SET     @p = 100000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p

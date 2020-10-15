@@ -62,7 +62,7 @@ DELETE FROM [TestIdTrun]
 BeforeExecute
 -- SqlCe
 
-ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] IDENTITY(1,1)
+ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] IDENTITY(1, 1)
 
 BeforeExecute
 -- SqlCe

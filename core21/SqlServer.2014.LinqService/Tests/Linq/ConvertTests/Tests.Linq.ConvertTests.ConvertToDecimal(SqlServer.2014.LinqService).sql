@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(Decimal(29,10), [t].[MoneyValue]) as [c1]
+			Convert(Decimal(29, 10), [t].[MoneyValue]) as [c1]
 		FROM
 			[LinqDataTypes] [t]
 	) [p]

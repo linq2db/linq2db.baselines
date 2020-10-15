@@ -83,21 +83,21 @@ SELECT numericDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(8,1)
+DECLARE @p Decimal(8, 1)
 SET     @p = 9999999.0
 
 SELECT ID FROM [AllTypes] WHERE numericDataType = @p
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(8,1)
+DECLARE @p Decimal(8, 1)
 SET     @p = 9999999.0
 
 SELECT ID FROM [AllTypes] WHERE numericDataType = @p
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(8,1)
+DECLARE @p Decimal(8, 1)
 SET     @p = 9999999.0
 
 SELECT ID FROM [AllTypes] WHERE numericDataType = @p
@@ -239,21 +239,21 @@ SELECT decimalDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(8,1)
+DECLARE @p Decimal(8, 1)
 SET     @p = 2222222.0
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(8,1)
+DECLARE @p Decimal(8, 1)
 SET     @p = 2222222.0
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(8,1)
+DECLARE @p Decimal(8, 1)
 SET     @p = 2222222.0
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
@@ -298,14 +298,14 @@ SELECT ID FROM [AllTypes] WHERE smallmoneyDataType = @p
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(10,4)
+DECLARE @p Decimal(10, 4)
 SET     @p = 100000.0000
 
 SELECT ID FROM [AllTypes] WHERE smallmoneyDataType = @p
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(10,4)
+DECLARE @p Decimal(10, 4)
 SET     @p = 100000.0000
 
 SELECT ID FROM [AllTypes] WHERE smallmoneyDataType = @p
@@ -454,14 +454,14 @@ SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(10,4)
+DECLARE @p Decimal(10, 4)
 SET     @p = 100000.0000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Decimal(10,4)
+DECLARE @p Decimal(10, 4)
 SET     @p = 100000.0000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p

@@ -15,11 +15,11 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "AllTypes" "Target"
-USING (	SELECT 3,_utf8 x'00',CAST(_utf8 x'00' AS NChar(20)),CAST(_utf8 x'74657374006974' AS VARCHAR(7)) FROM rdb$database) "Source"
+USING (	SELECT 3, _utf8 x'00', CAST(_utf8 x'00' AS NChar(20)), CAST(_utf8 x'74657374006974' AS VARCHAR(7)) FROM rdb$database) "Source"
 (
-	ID, 
-	"charDataType", 
-	"ncharDataType", 
+	ID,
+	"charDataType",
+	"ncharDataType",
 	"nvarcharDataType"
 )
 ON ("Target".ID = "Source".ID)

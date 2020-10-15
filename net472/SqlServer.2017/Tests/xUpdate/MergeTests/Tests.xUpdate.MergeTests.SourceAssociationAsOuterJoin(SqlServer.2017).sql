@@ -293,7 +293,7 @@ USING (
 			LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
 ) [Source]
 (
-	[ID], 
+	[ID],
 	[Diagnosis]
 )
 ON ([Target].[PersonID] = [Source].[ID])

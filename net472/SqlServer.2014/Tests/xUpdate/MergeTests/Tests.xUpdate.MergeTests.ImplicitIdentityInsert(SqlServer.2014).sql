@@ -287,10 +287,10 @@ USING (
 		[Person] [p]
 ) [Source]
 (
-	[source_field0], 
-	[FirstName], 
-	[LastName], 
-	[MiddleName], 
+	[source_field0],
+	[FirstName],
+	[LastName],
+	[MiddleName],
 	[Gender]
 )
 ON ([Target].[PersonID] + 50 = [Source].[source_field0] AND [Target].[FirstName] <> N'first 3')

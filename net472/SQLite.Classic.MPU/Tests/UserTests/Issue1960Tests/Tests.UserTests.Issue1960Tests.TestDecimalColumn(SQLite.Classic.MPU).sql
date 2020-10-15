@@ -11,7 +11,7 @@ CREATE TABLE [Issue1960Table]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @decValue Decimal(9,4)
+DECLARE @decValue Decimal(9, 4)
 SET     @decValue = 12345.6789
 DECLARE @dtValue  -- Int64
 SET     @dtValue = 123456789

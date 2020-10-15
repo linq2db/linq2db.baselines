@@ -128,7 +128,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldDate DateTime2
 SET     @FieldDate = '2000-11-23T00:00:00'
@@ -216,7 +216,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime2
 SET     @FieldDate = '2123-11-23T00:00:00'
@@ -303,7 +303,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate DateTime2
 SET     @FieldDate = '3210-11-23T00:00:00'
@@ -389,7 +389,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(3,3)
+DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime2
 SET     @FieldDate = '3210-11-23T00:00:00'
@@ -477,7 +477,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime2
 SET     @FieldDate = '2123-11-23T00:00:00'
@@ -563,7 +563,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(3,3)
+DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime2
 SET     @FieldDate = '3210-11-23T00:00:00'
@@ -651,7 +651,7 @@ DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
-DECLARE @FieldDecimal Decimal(18,10)
+DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime2
 SET     @FieldDate = '2123-11-23T00:00:00'

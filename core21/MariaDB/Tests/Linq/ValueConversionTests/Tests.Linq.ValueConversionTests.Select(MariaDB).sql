@@ -126,7 +126,7 @@ FROM
 	) `q`
 ORDER BY
 	`q`.`Id`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

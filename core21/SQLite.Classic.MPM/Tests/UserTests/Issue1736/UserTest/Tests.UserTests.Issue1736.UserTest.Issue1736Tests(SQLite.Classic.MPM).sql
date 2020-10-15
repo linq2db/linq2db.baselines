@@ -162,7 +162,7 @@ FROM
 							[RefOutfeedTransportOrderResourceDTO] [x_1]
 						WHERE
 							[x_1].[ResourceID] = [r_2].[Id] AND [x_1].[InventoryResourceID] IS NULL
-					) as Decimal(29,10)) * [ir_6].[Quantity] as [RefQty],
+					) as Decimal(29, 10)) * [ir_6].[Quantity] as [RefQty],
 					CASE
 						WHEN EXISTS(
 							SELECT

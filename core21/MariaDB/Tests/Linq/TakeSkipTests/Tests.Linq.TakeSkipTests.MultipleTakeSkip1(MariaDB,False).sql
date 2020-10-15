@@ -32,7 +32,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT 3,1
+LIMIT 3, 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

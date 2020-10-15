@@ -291,21 +291,21 @@ SELECT numericDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p NewDecimal(7,0) -- Decimal
+DECLARE @p NewDecimal(7, 0) -- Decimal
 SET     @p = 9999999
 
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p NewDecimal(7,0) -- Decimal
+DECLARE @p NewDecimal(7, 0) -- Decimal
 SET     @p = 9999999
 
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p NewDecimal(7,0) -- Decimal
+DECLARE @p NewDecimal(7, 0) -- Decimal
 SET     @p = 9999999
 
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
@@ -343,21 +343,21 @@ SELECT decimalDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p NewDecimal(7,0) -- Decimal
+DECLARE @p NewDecimal(7, 0) -- Decimal
 SET     @p = 8888888
 
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p NewDecimal(7,0) -- Decimal
+DECLARE @p NewDecimal(7, 0) -- Decimal
 SET     @p = 8888888
 
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p NewDecimal(7,0) -- Decimal
+DECLARE @p NewDecimal(7, 0) -- Decimal
 SET     @p = 8888888
 
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @value_1 Numeric(9,5) -- Decimal
+DECLARE @value_1 Numeric(9, 5) -- Decimal
 SET     @value_1 = 6579.64648
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Decimal(29,10))
+	Cast(:value_1 as Decimal(29, 10))
 FROM
 	"LinqDataTypes" t1
 LIMIT :take
@@ -19,7 +19,7 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Decimal(29,10))
+	Cast(:value_1 as Decimal(29, 10))
 FROM
 	"LinqDataTypes" t1
 LIMIT :take
@@ -32,14 +32,14 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Decimal(29,10))
+	Cast(:value_1 as Decimal(29, 10))
 FROM
 	"LinqDataTypes" t1
 LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @value_1 Numeric(9,5) -- Decimal
+DECLARE @value_1 Numeric(9, 5) -- Decimal
 SET     @value_1 = 6579.64648
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -78,7 +78,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @value_1 Numeric(9,5) -- Decimal
+DECLARE @value_1 Numeric(9, 5) -- Decimal
 SET     @value_1 = 6579.64648
 DECLARE @take Integer -- Int32
 SET     @take = 1

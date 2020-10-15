@@ -2,7 +2,7 @@
 -- MySql MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 1000
-DECLARE @MoneyValue Decimal(1,0)
+DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = NULL

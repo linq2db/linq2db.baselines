@@ -234,11 +234,11 @@ USING (
 		"TestMerge2" "t1"
 ) "Source"
 (
-	"Id", 
-	"Field5", 
-	"Field4", 
-	"Field3", 
-	"Field2", 
+	"Id",
+	"Field5",
+	"Field4",
+	"Field3",
+	"Field2",
 	"Field1"
 )
 ON ("Target"."Id" = "Source"."Id")
