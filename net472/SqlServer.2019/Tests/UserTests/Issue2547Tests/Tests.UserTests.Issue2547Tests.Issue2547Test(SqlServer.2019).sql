@@ -14,19 +14,6 @@ CREATE TABLE [Issue2547Item]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-INSERT INTO [Issue2547Item]
-(
-	[Id],
-	[Name],
-	[TestSpan],
-	[TestEnum]
-)
-VALUES
-(1,N'Item 1',4500000000,'A')
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-
 DELETE [t1]
 FROM
 	[Issue2547Item] [t1]
@@ -39,7 +26,7 @@ DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Item 1'
 DECLARE @TestSpan BigInt -- Int64
 SET     @TestSpan = 4500000000
-DECLARE @TestEnum VarChar(8000) -- AnsiString
+DECLARE @TestEnum NVarChar(4000) -- String
 SET     @TestEnum = N'A'
 
 INSERT INTO [Issue2547Item]
