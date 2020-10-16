@@ -7,27 +7,10 @@ IF (OBJECT_ID(N'CreateIfNotExistsTable') IS NOT NULL)
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'CreateIfNotExistsTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [CreateIfNotExistsTable]
-		(
-			[Id]    Int NOT NULL,
-			[Value] Int NOT NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [CreateIfNotExistsTable]
+CREATE TABLE #CreateIfNotExistsTable
 (
-	[Id],
-	[Value]
-)
-VALUES
-(
-	1,
-	2
+	[Id]    Int NOT NULL,
+	[Value] Int NOT NULL
 )
 
 BeforeExecute
@@ -37,7 +20,7 @@ SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
-	[CreateIfNotExistsTable] [t1]
+	#CreateIfNotExistsTable [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -54,5 +37,5 @@ IF (OBJECT_ID(N'CreateIfNotExistsTable') IS NULL)
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [CreateIfNotExistsTable]
+DROP TABLE #CreateIfNotExistsTable
 
