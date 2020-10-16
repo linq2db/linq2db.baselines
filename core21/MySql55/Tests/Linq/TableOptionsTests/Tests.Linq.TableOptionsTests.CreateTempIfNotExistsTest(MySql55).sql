@@ -6,24 +6,10 @@ DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
+CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
 (
 	`Id`    INT NOT NULL,
 	`Value` INT NOT NULL
-)
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-INSERT INTO `CreateIfNotExistsTable`
-(
-	`Id`,
-	`Value`
-)
-VALUES
-(
-	1,
-	2
 )
 
 BeforeExecute
