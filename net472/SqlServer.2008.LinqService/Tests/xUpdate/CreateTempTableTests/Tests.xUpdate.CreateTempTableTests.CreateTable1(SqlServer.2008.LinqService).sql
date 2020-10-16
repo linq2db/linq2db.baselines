@@ -28,6 +28,14 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
+	[t1].[ID]
+FROM
+	[TempTable] [t1]
+
+BeforeExecute
+-- SqlServer.2008
+
+SELECT
 	[t].[ID]
 FROM
 	[Parent] [p]
