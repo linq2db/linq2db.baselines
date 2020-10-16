@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
+-- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 

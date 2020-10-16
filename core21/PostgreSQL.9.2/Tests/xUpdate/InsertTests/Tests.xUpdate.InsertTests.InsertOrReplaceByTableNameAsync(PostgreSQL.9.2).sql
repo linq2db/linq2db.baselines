@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-DROP TABLE IF EXISTS "xxPatient23"
+DROP TABLE IF EXISTS "xxPatient12"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-CREATE TABLE "xxPatient23"
+CREATE TABLE "xxPatient12"
 (
 	"PersonID"  Int  NOT NULL,
 	"Diagnosis" text     NULL,
 
-	CONSTRAINT "PK_xxPatient23" PRIMARY KEY ("PersonID")
+	CONSTRAINT "PK_xxPatient12" PRIMARY KEY ("PersonID")
 )
 
 BeforeExecute
@@ -22,11 +22,11 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient23"
+	"xxPatient12"
 SET
 	"Diagnosis" = :Diagnosis
 WHERE
-	"xxPatient23"."PersonID" = :PersonID
+	"xxPatient12"."PersonID" = :PersonID
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis Text(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO "xxPatient23"
+INSERT INTO "xxPatient12"
 (
 	"PersonID",
 	"Diagnosis"
@@ -54,11 +54,11 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient23"
+	"xxPatient12"
 SET
 	"Diagnosis" = :Diagnosis
 WHERE
-	"xxPatient23"."PersonID" = :PersonID
+	"xxPatient12"."PersonID" = :PersonID
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis Text(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO "xxPatient23"
+INSERT INTO "xxPatient12"
 (
 	"PersonID",
 	"Diagnosis"
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient23" t1
+	"xxPatient12" t1
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
@@ -94,11 +94,11 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient23"
+	"xxPatient12"
 SET
 	"Diagnosis" = :Diagnosis
 WHERE
-	"xxPatient23"."PersonID" = :PersonID
+	"xxPatient12"."PersonID" = :PersonID
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
@@ -108,11 +108,11 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient23"
+	"xxPatient12"
 SET
 	"Diagnosis" = :Diagnosis
 WHERE
-	"xxPatient23"."PersonID" = :PersonID
+	"xxPatient12"."PersonID" = :PersonID
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient23" t1
+	"xxPatient12" t1
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-DROP TABLE IF EXISTS "xxPatient23"
+DROP TABLE IF EXISTS "xxPatient12"
 
