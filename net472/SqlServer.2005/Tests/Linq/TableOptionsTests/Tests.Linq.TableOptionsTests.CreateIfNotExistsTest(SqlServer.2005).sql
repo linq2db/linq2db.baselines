@@ -17,6 +17,20 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2005
 
+INSERT INTO [CreateIfNotExistsTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(
+	1,
+	2
+)
+
+BeforeExecute
+-- SqlServer.2005
+
 SELECT
 	[t1].[Id],
 	[t1].[Value]
