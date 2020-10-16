@@ -7,25 +7,10 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
-	CREATE TABLE [CreateIfNotExistsTable]
-	(
-		[Id]    Int NOT NULL,
-		[Value] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2005
-
-INSERT INTO [CreateIfNotExistsTable]
+CREATE TABLE [#CreateIfNotExistsTable]
 (
-	[Id],
-	[Value]
-)
-VALUES
-(
-	1,
-	2
+	[Id]    Int NOT NULL,
+	[Value] Int NOT NULL
 )
 
 BeforeExecute
@@ -35,7 +20,7 @@ SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
-	[CreateIfNotExistsTable] [t1]
+	[#CreateIfNotExistsTable] [t1]
 
 BeforeExecute
 -- SqlServer.2005
@@ -50,5 +35,5 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [CreateIfNotExistsTable]
+DROP TABLE [#CreateIfNotExistsTable]
 
