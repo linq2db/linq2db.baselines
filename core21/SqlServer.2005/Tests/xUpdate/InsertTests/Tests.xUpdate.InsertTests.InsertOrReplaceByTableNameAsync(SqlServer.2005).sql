@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
-IF (OBJECT_ID(N'[xxPatient23]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient23]
+IF (OBJECT_ID(N'[xxPatient12]', N'U') IS NOT NULL)
+	DROP TABLE [xxPatient12]
 
 BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
-CREATE TABLE [xxPatient23]
+CREATE TABLE [xxPatient12]
 (
 	[PersonID]  Int            NOT NULL,
 	[Diagnosis] NVarChar(4000)     NULL,
 
-	CONSTRAINT [PK_xxPatient23] PRIMARY KEY CLUSTERED ([PersonID])
+	CONSTRAINT [PK_xxPatient12] PRIMARY KEY CLUSTERED ([PersonID])
 )
 
 BeforeExecute
@@ -29,13 +29,13 @@ UPDATE
 SET
 	[t1].[Diagnosis] = @Diagnosis
 FROM
-	[xxPatient23] [t1]
+	[xxPatient12] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient23]
+	INSERT INTO [xxPatient12]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -63,13 +63,13 @@ UPDATE
 SET
 	[t1].[Diagnosis] = @Diagnosis
 FROM
-	[xxPatient23] [t1]
+	[xxPatient12] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient23]
+	INSERT INTO [xxPatient12]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -89,7 +89,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient23] [t1]
+	[xxPatient12] [t1]
 
 BeforeExecute
 -- SqlServer.2005 (asynchronously)
@@ -105,13 +105,13 @@ UPDATE
 SET
 	[t1].[Diagnosis] = @Diagnosis
 FROM
-	[xxPatient23] [t1]
+	[xxPatient12] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient23]
+	INSERT INTO [xxPatient12]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -139,13 +139,13 @@ UPDATE
 SET
 	[t1].[Diagnosis] = @Diagnosis
 FROM
-	[xxPatient23] [t1]
+	[xxPatient12] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient23]
+	INSERT INTO [xxPatient12]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -165,11 +165,11 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient23] [t1]
+	[xxPatient12] [t1]
 
 BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
-IF (OBJECT_ID(N'[xxPatient23]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient23]
+IF (OBJECT_ID(N'[xxPatient12]', N'U') IS NOT NULL)
+	DROP TABLE [xxPatient12]
 
