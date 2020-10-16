@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector MySql
+-- MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 

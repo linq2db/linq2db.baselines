@@ -27,6 +27,14 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
+	`t1`.`ID`
+FROM
+	`TempTable` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
 	`t`.`ID`
 FROM
 	`Parent` `p`
