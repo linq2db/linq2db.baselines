@@ -15,6 +15,20 @@ CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 BeforeExecute
 -- SQLite.MS SQLite
 
+INSERT INTO [CreateIfNotExistsTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(
+	1,
+	2
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+
 SELECT
 	[t1].[Id],
 	[t1].[Value]
