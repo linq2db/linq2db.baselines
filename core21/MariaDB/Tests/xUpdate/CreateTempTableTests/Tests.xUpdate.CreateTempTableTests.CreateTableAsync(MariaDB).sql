@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySql.Official MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 
