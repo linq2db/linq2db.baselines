@@ -1,33 +1,19 @@
 ﻿BeforeExecute
--- MySqlConnector MySql
+-- MySql MySql.Official MySql
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
 BeforeExecute
--- MySqlConnector MySql
+-- MySql MySql.Official MySql
 
-CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
+CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
 (
 	`Id`    INT NOT NULL,
 	`Value` INT NOT NULL
 )
 
 BeforeExecute
--- MySqlConnector MySql
-
-INSERT INTO `CreateIfNotExistsTable`
-(
-	`Id`,
-	`Value`
-)
-VALUES
-(
-	1,
-	2
-)
-
-BeforeExecute
--- MySqlConnector MySql
+-- MySql MySql.Official MySql
 
 SELECT
 	`t1`.`Id`,
@@ -36,7 +22,7 @@ FROM
 	`CreateIfNotExistsTable` `t1`
 
 BeforeExecute
--- MySqlConnector MySql
+-- MySql MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
@@ -45,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 )
 
 BeforeExecute
--- MySqlConnector MySql
+-- MySql MySql.Official MySql
 
 DROP TABLE `CreateIfNotExistsTable`
 

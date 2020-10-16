@@ -15,6 +15,20 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 BeforeExecute
 -- MySql MySql.Official MySql
 
+INSERT INTO `CreateIfNotExistsTable`
+(
+	`Id`,
+	`Value`
+)
+VALUES
+(
+	1,
+	2
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
