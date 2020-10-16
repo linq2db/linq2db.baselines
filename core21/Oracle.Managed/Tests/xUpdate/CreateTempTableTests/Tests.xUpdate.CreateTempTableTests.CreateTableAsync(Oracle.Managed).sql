@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.Managed Oracle12
+-- Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE TempTable';
