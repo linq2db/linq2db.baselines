@@ -1,33 +1,19 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
+CREATE TEMPORARY TABLE [CreateIfNotExistsTable]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
-
-INSERT INTO [CreateIfNotExistsTable]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(
-	1,
-	2
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],
@@ -36,7 +22,7 @@ FROM
 	[CreateIfNotExistsTable] [t1]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 (
@@ -45,7 +31,7 @@ CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE [CreateIfNotExistsTable]
 
