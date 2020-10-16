@@ -7,25 +7,10 @@ IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NULL)
-	CREATE TABLE [#CreateIfNotExistsTable]
-	(
-		[Id]    Int NOT NULL,
-		[Value] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2008
-
-INSERT INTO [#CreateIfNotExistsTable]
+CREATE TABLE [#CreateIfNotExistsTable]
 (
-	[Id],
-	[Value]
-)
-VALUES
-(
-	1,
-	2
+	[Id]    Int NOT NULL,
+	[Value] Int NOT NULL
 )
 
 BeforeExecute
