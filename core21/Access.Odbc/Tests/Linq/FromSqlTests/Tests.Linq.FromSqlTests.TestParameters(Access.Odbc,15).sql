@@ -380,8 +380,8 @@ SELECT
 FROM
 	(
 		SELECT * FROM
-		sample_class
-		where id >= ? and id < ?
+		[sample_class]
+		where [id] >= ? and [id] < ?
 	) [c_1]
 WHERE
 	[c_1].[id] > 10
