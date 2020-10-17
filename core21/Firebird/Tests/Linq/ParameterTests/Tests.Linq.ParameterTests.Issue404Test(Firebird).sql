@@ -44,8 +44,6 @@ SELECT 6,1,2 FROM rdb$database
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"key_data_result"."Id",
@@ -55,31 +53,22 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT FIRST @take
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "v" ON "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @Usage_2 Integer -- Int32
 SET     @Usage_2 = 0
 
@@ -91,31 +80,22 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT FIRST @take
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_2 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @Usage_2 Integer -- Int32
 SET     @Usage_2 = 1
 
@@ -127,23 +107,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT FIRST @take
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_2 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
@@ -204,8 +177,6 @@ SELECT 6,1,2 FROM rdb$database
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"key_data_result"."Id",
@@ -215,31 +186,22 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT FIRST @take
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "v" ON "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @Usage_2 Integer -- Int32
 SET     @Usage_2 = 0
 
@@ -251,31 +213,22 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT FIRST @take
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_2 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @Usage_2 Integer -- Int32
 SET     @Usage_2 = 1
 
@@ -287,23 +240,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT FIRST @take
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_2 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
