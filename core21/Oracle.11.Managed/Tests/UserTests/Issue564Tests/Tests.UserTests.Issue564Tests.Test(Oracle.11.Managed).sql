@@ -1,28 +1,28 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE Parent564
+CREATE TABLE "Parent564"
 (
-	Id          Int           NOT NULL,
-	Type        VarChar(255)      NULL,
-	StringValue VarChar(20)       NULL,
-	IntValue    Int               NULL,
+	"Id"          Int           NOT NULL,
+	"Type"        VarChar(255)      NULL,
+	"StringValue" VarChar(20)       NULL,
+	"IntValue"    Int               NULL,
 
-	CONSTRAINT PK_Parent564 PRIMARY KEY (Id)
+	CONSTRAINT "PK_Parent564" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE SEQUENCE SIDENTITY_Parent564
+CREATE SEQUENCE "SIDENTITY_Parent564"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE OR REPLACE TRIGGER TIDENTITY_Parent564
-BEFORE INSERT ON Parent564 FOR EACH ROW
+CREATE OR REPLACE TRIGGER "TIDENTITY_Parent564"
+BEFORE INSERT ON "Parent564" FOR EACH ROW
 BEGIN
-	SELECT SIDENTITY_Parent564.NEXTVAL INTO :NEW.Id FROM dual;
+	SELECT "SIDENTITY_Parent564".NEXTVAL INTO :NEW."Id" FROM dual;
 END;
 
 BeforeExecute
@@ -32,10 +32,10 @@ SET     @Type_1 = 'Child564A'
 DECLARE @StringValue Varchar2(9) -- String
 SET     @StringValue = 'SomeValue'
 
-INSERT INTO Parent564
+INSERT INTO "Parent564"
 (
-	Type,
-	StringValue
+	"Type",
+	"StringValue"
 )
 VALUES
 (
@@ -50,10 +50,10 @@ SET     @Type_1 = 'Child564B'
 DECLARE @IntValue Int32
 SET     @IntValue = 911
 
-INSERT INTO Parent564
+INSERT INTO "Parent564"
 (
-	Type,
-	IntValue
+	"Type",
+	"IntValue"
 )
 VALUES
 (
@@ -67,14 +67,14 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Parent564 t1
+	"Parent564" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TRIGGER TIDENTITY_Parent564';
-	EXECUTE IMMEDIATE 'DROP SEQUENCE SIDENTITY_Parent564';
-	EXECUTE IMMEDIATE 'DROP TABLE Parent564';
+	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Parent564"';
+	EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Parent564"';
+	EXECUTE IMMEDIATE 'DROP TABLE "Parent564"';
 END;
 

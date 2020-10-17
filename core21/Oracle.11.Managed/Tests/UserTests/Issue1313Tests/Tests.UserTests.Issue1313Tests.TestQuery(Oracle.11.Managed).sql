@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE ValueItem
+CREATE TABLE "ValueItem"
 (
-	Value Int NOT NULL
+	"Value" Int NOT NULL
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO ValueItem
+INSERT INTO "ValueItem"
 (
-	Value
+	"Value"
 )
 VALUES
 (
@@ -22,12 +22,12 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	row_1.Value
+	row_1."Value"
 FROM
-	ValueItem row_1
+	"ValueItem" row_1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE ValueItem
+DROP TABLE "ValueItem"
 

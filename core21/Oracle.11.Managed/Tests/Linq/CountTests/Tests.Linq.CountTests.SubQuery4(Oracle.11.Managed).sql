@@ -6,10 +6,10 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			Parent p1
+			"Parent" p1
 		WHERE
-			p1.ParentID = p.ParentID
+			p1."ParentID" = p."ParentID"
 	)
 FROM
-	Parent p
+	"Parent" p
 

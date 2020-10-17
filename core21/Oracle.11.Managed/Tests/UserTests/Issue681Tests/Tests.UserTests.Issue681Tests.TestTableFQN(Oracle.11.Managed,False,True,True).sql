@@ -6,7 +6,7 @@ SET     @take = 1
 SELECT
 	user
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -16,5 +16,5 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	SYSTEM.LinqDataTypes t1
+	SYSTEM."LinqDataTypes" t1
 

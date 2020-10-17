@@ -7,17 +7,17 @@ SET     @take = 2
 
 SELECT
 	p.ID,
-	p.MoneyValue,
-	p.DateTimeValue,
-	p.BoolValue,
-	p.GuidValue,
-	p.BinaryValue,
-	p.SmallIntValue,
-	p.StringValue
+	p."MoneyValue",
+	p."DateTimeValue",
+	p."BoolValue",
+	p."GuidValue",
+	p."BinaryValue",
+	p."SmallIntValue",
+	p."StringValue"
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	p.GuidValue = :GuidValue_1 AND ROWNUM <= :take
+	p."GuidValue" = :GuidValue_1 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -28,15 +28,15 @@ SET     @take = 2
 
 SELECT
 	p.ID,
-	p.MoneyValue,
-	p.DateTimeValue,
-	p.BoolValue,
-	p.GuidValue,
-	p.BinaryValue,
-	p.SmallIntValue,
-	p.StringValue
+	p."MoneyValue",
+	p."DateTimeValue",
+	p."BoolValue",
+	p."GuidValue",
+	p."BinaryValue",
+	p."SmallIntValue",
+	p."StringValue"
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	p.GuidValue = :GuidValue_1 AND ROWNUM <= :take
+	p."GuidValue" = :GuidValue_1 AND ROWNUM <= :take
 

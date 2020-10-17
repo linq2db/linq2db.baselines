@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE xxPatient23';
+	EXECUTE IMMEDIATE 'DROP TABLE "xxPatient23"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -13,12 +13,12 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-CREATE TABLE xxPatient23
+CREATE TABLE "xxPatient23"
 (
-	PersonID  Int          NOT NULL,
-	Diagnosis VarChar(255)     NULL,
+	"PersonID"  Int          NOT NULL,
+	"Diagnosis" VarChar(255)     NULL,
 
-	CONSTRAINT PK_xxPatient23 PRIMARY KEY (PersonID)
+	CONSTRAINT "PK_xxPatient23" PRIMARY KEY ("PersonID")
 )
 
 BeforeExecute
@@ -28,20 +28,20 @@ SET     @PersonID = 1
 DECLARE @Diagnosis Varchar2(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO xxPatient23 t1
-USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
+MERGE INTO "xxPatient23" t1
+USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 (
-	t1.PersonID = s.PersonID
+	t1."PersonID" = s."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1.Diagnosis = :Diagnosis
+		t1."Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		PersonID,
-		Diagnosis
+		"PersonID",
+		"Diagnosis"
 	)
 	VALUES
 	(
@@ -56,20 +56,20 @@ SET     @PersonID = 2
 DECLARE @Diagnosis Varchar2(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO xxPatient23 t1
-USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
+MERGE INTO "xxPatient23" t1
+USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 (
-	t1.PersonID = s.PersonID
+	t1."PersonID" = s."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1.Diagnosis = :Diagnosis
+		t1."Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		PersonID,
-		Diagnosis
+		"PersonID",
+		"Diagnosis"
 	)
 	VALUES
 	(
@@ -83,7 +83,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPatient23 t1
+	"xxPatient23" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
@@ -92,20 +92,20 @@ SET     @PersonID = 1
 DECLARE @Diagnosis Varchar2(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO xxPatient23 t1
-USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
+MERGE INTO "xxPatient23" t1
+USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 (
-	t1.PersonID = s.PersonID
+	t1."PersonID" = s."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1.Diagnosis = :Diagnosis
+		t1."Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		PersonID,
-		Diagnosis
+		"PersonID",
+		"Diagnosis"
 	)
 	VALUES
 	(
@@ -120,20 +120,20 @@ SET     @PersonID = 2
 DECLARE @Diagnosis Varchar2(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO xxPatient23 t1
-USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
+MERGE INTO "xxPatient23" t1
+USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 (
-	t1.PersonID = s.PersonID
+	t1."PersonID" = s."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1.Diagnosis = :Diagnosis
+		t1."Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		PersonID,
-		Diagnosis
+		"PersonID",
+		"Diagnosis"
 	)
 	VALUES
 	(
@@ -147,13 +147,13 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPatient23 t1
+	"xxPatient23" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE xxPatient23';
+	EXECUTE IMMEDIATE 'DROP TABLE "xxPatient23"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

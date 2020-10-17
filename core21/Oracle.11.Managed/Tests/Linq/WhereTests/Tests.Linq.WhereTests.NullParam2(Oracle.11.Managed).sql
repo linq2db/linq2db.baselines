@@ -4,15 +4,15 @@ DECLARE @id Int32
 SET     @id = 1
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = :id AND p.MiddleName IS NULL
+	p."PersonID" = :id AND p."MiddleName" IS NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -20,13 +20,13 @@ DECLARE @id Int32
 SET     @id = 1
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = :id AND p.MiddleName IS NULL
+	p."PersonID" = :id AND p."MiddleName" IS NULL
 

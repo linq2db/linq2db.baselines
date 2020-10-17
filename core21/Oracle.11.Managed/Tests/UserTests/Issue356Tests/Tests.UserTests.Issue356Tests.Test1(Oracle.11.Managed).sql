@@ -63,39 +63,39 @@ DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	t4.ParentID,
-	t4.ChildID
+	t4."ParentID",
+	t4."ChildID"
 FROM
 	(
 		SELECT
-			cp.ParentID,
-			c_1.ChildID
+			cp."ParentID",
+			c_1."ChildID"
 		FROM
-			Parent cp
+			"Parent" cp
 				CROSS JOIN (
 					SELECT DISTINCT
-						t3.ParentID,
-						t3.ChildID
+						t3."ParentID",
+						t3."ChildID"
 					FROM
 						(
 							SELECT
-								t1.ParentID,
-								t1.ChildID
+								t1."ParentID",
+								t1."ChildID"
 							FROM
-								Child t1
+								"Child" t1
 							UNION
 							SELECT
-								t2.ParentID,
-								t2.ChildID
+								t2."ParentID",
+								t2."ChildID"
 							FROM
-								Child t2
+								"Child" t2
 						) t3
 				) c_1
 		WHERE
-			c_1.ParentID = cp.ParentID
+			c_1."ParentID" = cp."ParentID"
 		ORDER BY
-			cp.ParentID,
-			c_1.ChildID
+			cp."ParentID",
+			c_1."ChildID"
 	) t4
 WHERE
 	ROWNUM <= :take

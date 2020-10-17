@@ -2,17 +2,17 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			Child c_1
+			"Child" c_1
 		WHERE
-			p.ParentID = c_1.ParentID AND c_1.ParentID > 3
+			p."ParentID" = c_1."ParentID" AND c_1."ParentID" > 3
 	)
 

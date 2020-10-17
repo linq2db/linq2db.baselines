@@ -4,41 +4,41 @@ DECLARE @testValue Int32
 SET     @testValue = 3
 
 SELECT
-	t1.c2,
+	t1."c2",
 	(
 		SELECT
 			Count(*)
 		FROM
-			Child p
+			"Child" p
 		WHERE
-			p.ParentID = t1.c3
+			p."ParentID" = t1."c3"
 	),
 	(
 		SELECT
 			Count(*)
 		FROM
-			Child p_1
+			"Child" p_1
 		WHERE
-			p_1.ParentID = t1.c3 AND p_1.ParentID = :testValue
+			p_1."ParentID" = t1."c3" AND p_1."ParentID" = :testValue
 	)
 FROM
 	(
 		SELECT DISTINCT
 			CASE
-				WHEN id.Value1 IS NULL THEN id.ParentID
-				ELSE id.ParentID + 1
-			END as c1,
+				WHEN id."Value1" IS NULL THEN id."ParentID"
+				ELSE id."ParentID" + 1
+			END as "c1",
 			CASE
-				WHEN id.Value1 IS NULL THEN id.ParentID
-				ELSE id.ParentID + 1
-			END as c2,
+				WHEN id."Value1" IS NULL THEN id."ParentID"
+				ELSE id."ParentID" + 1
+			END as "c2",
 			CASE
-				WHEN id.Value1 IS NULL THEN id.ParentID
-				ELSE id.ParentID + 1
-			END as c3
+				WHEN id."Value1" IS NULL THEN id."ParentID"
+				ELSE id."ParentID" + 1
+			END as "c3"
 		FROM
-			Parent id
+			"Parent" id
 		WHERE
-			id.ParentID IN (1, 2)
+			id."ParentID" IN (1, 2)
 	) t1
 

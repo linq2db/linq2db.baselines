@@ -4,7 +4,7 @@
 SELECT
 	Count(*)
 FROM
-	Child ch
+	"Child" ch
 WHERE
-	ch.ChildID > 20
+	ch."ChildID" > 20
 

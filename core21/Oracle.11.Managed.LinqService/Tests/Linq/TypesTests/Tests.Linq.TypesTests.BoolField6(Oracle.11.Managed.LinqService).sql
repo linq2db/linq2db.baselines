@@ -2,15 +2,15 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t.MoneyValue
+	t."MoneyValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
 	(CASE
-		WHEN t.BoolValue = 0 THEN 1
+		WHEN t."BoolValue" = 0 THEN 1
 		ELSE 0
 	END = 1 AND CASE
-		WHEN t.BoolValue = 0 THEN 1
+		WHEN t."BoolValue" = 0 THEN 1
 		ELSE 0
 	END IS NOT NULL)
 

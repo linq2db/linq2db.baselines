@@ -2,11 +2,11 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.Value1,
-	p.ParentID
+	p."Value1",
+	p."ParentID"
 FROM
-	Parent p
-		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
+	"Parent" p
+		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 WHERE
-	p.Value1 = 1
+	p."Value1" = 1
 

@@ -2,18 +2,18 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.c1
+	p."c1"
 FROM
 	(
 		SELECT
 			Cast(Floor(CASE
-				WHEN t.MoneyValue - Floor(t.MoneyValue) = 0.5 AND MOD(Floor(t.MoneyValue), 2) = 0
-					THEN Floor(t.MoneyValue)
-				ELSE Round(t.MoneyValue, 0)
-			END) as Number(19)) as c1
+				WHEN t."MoneyValue" - Floor(t."MoneyValue") = 0.5 AND MOD(Floor(t."MoneyValue"), 2) = 0
+					THEN Floor(t."MoneyValue")
+				ELSE Round(t."MoneyValue", 0)
+			END) as Number(19)) as "c1"
 		FROM
-			LinqDataTypes t
+			"LinqDataTypes" t
 	) p
 WHERE
-	p.c1 > 0
+	p."c1" > 0
 

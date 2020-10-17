@@ -2,14 +2,14 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.c1
+	p."c1"
 FROM
 	(
 		SELECT
-			Cast(Floor(t.MoneyValue) as Decimal) as c1
+			Cast(Floor(t."MoneyValue") as Decimal) as "c1"
 		FROM
-			LinqDataTypes t
+			"LinqDataTypes" t
 	) p
 WHERE
-	p.c1 > 0
+	p."c1" > 0
 

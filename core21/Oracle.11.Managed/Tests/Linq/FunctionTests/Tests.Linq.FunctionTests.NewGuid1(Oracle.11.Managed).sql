@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.GuidValue
+	p."GuidValue"
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	p.GuidValue <> Sys_Guid()
+	p."GuidValue" <> Sys_Guid()
 

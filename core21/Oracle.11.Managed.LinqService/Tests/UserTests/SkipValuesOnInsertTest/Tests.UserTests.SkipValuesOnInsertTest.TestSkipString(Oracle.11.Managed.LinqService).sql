@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE PR_1598_Insert_Table
+CREATE TABLE "PR_1598_Insert_Table"
 (
-	Id   Int          NOT NULL,
-	Name VarChar(255)     NULL,
-	Age  Int              NULL,
+	"Id"   Int          NOT NULL,
+	"Name" VarChar(255)     NULL,
+	"Age"  Int              NULL,
 
-	CONSTRAINT PK_PR_1598_Insert_Table PRIMARY KEY (Id)
+	CONSTRAINT "PK_PR_1598_Insert_Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -17,10 +17,10 @@ SET     @Id = 1
 DECLARE @Age Int32
 SET     @Age = 14
 
-INSERT INTO PR_1598_Insert_Table
+INSERT INTO "PR_1598_Insert_Table"
 (
-	Id,
-	Age
+	"Id",
+	"Age"
 )
 VALUES
 (
@@ -34,13 +34,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Insert_Table t
+	"PR_1598_Insert_Table" t
 WHERE
-	t.Id = 1 AND ROWNUM <= :take
+	t."Id" = 1 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -49,10 +49,10 @@ SET     @Id = 2
 DECLARE @Age Int32
 SET     @Age = 15
 
-INSERT INTO PR_1598_Insert_Table
+INSERT INTO "PR_1598_Insert_Table"
 (
-	Id,
-	Age
+	"Id",
+	"Age"
 )
 VALUES
 (
@@ -66,16 +66,16 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Insert_Table t
+	"PR_1598_Insert_Table" t
 WHERE
-	t.Id = 2 AND ROWNUM <= :take
+	t."Id" = 2 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE PR_1598_Insert_Table
+DROP TABLE "PR_1598_Insert_Table"
 

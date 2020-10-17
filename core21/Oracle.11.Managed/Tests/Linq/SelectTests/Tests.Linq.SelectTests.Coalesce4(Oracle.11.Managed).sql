@@ -6,15 +6,15 @@ SET     @take = 1
 SELECT
 	Nvl((
 		SELECT
-			a_Parent.Value1
+			a_Parent."Value1"
 		FROM
-			Child ch
-				LEFT JOIN Parent a_Parent ON ch.ParentID = a_Parent.ParentID
+			"Child" ch
+				LEFT JOIN "Parent" a_Parent ON ch."ParentID" = a_Parent."ParentID"
 		WHERE
-			ch.ChildID = c_1.ChildID AND ROWNUM <= :take
-	), c_1.ChildID)
+			ch."ChildID" = c_1."ChildID" AND ROWNUM <= :take
+	), c_1."ChildID")
 FROM
-	Child c_1
+	"Child" c_1
 
 BeforeExecute
 -- SQLite.MS SQLite

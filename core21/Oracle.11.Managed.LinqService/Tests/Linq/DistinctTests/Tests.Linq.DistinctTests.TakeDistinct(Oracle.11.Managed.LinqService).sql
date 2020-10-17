@@ -4,19 +4,19 @@ DECLARE @take Int32
 SET     @take = 4
 
 SELECT DISTINCT
-	t2.ParentID
+	t2."ParentID"
 FROM
 	(
 		SELECT
-			t1.ParentID
+			t1."ParentID"
 		FROM
 			(
 				SELECT
-					ch.ParentID
+					ch."ParentID"
 				FROM
-					Child ch
+					"Child" ch
 				ORDER BY
-					ch.ParentID
+					ch."ParentID"
 			) t1
 		WHERE
 			ROWNUM <= :take

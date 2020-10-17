@@ -6,15 +6,15 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	t.FirstName,
-	t.PersonID,
-	t.LastName,
-	t.MiddleName,
-	t.Gender
+	t."FirstName",
+	t."PersonID",
+	t."LastName",
+	t."MiddleName",
+	t."Gender"
 FROM
-	Person t
+	"Person" t
 WHERE
-	t.FirstName = :p AND ROWNUM <= :take
+	t."FirstName" = :p AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -24,13 +24,13 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	t.FirstName,
-	t.PersonID,
-	t.LastName,
-	t.MiddleName,
-	t.Gender
+	t."FirstName",
+	t."PersonID",
+	t."LastName",
+	t."MiddleName",
+	t."Gender"
 FROM
-	Person t
+	"Person" t
 WHERE
-	t.FirstName = :p AND ROWNUM <= :take
+	t."FirstName" = :p AND ROWNUM <= :take
 

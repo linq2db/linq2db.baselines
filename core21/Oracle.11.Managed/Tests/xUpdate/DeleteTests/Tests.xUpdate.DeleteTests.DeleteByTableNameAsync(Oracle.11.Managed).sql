@@ -3,7 +3,7 @@
 
 BEGIN
 	BEGIN
-		EXECUTE IMMEDIATE 'DROP TRIGGER TIDENTITY_xxPerson_o';
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_o"';
 	EXCEPTION
 		WHEN OTHERS THEN
 			IF SQLCODE != -4080 THEN
@@ -11,7 +11,7 @@ BEGIN
 			END IF;
 	END;
 	BEGIN
-		EXECUTE IMMEDIATE 'DROP SEQUENCE SIDENTITY_xxPerson_o';
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_xxPerson_o"';
 	EXCEPTION
 		WHEN OTHERS THEN
 			IF SQLCODE != -2289 THEN
@@ -19,7 +19,7 @@ BEGIN
 			END IF;
 	END;
 	BEGIN
-		EXECUTE IMMEDIATE 'DROP TABLE xxPerson_o';
+		EXECUTE IMMEDIATE 'DROP TABLE "xxPerson_o"';
 	EXCEPTION
 		WHEN OTHERS THEN
 			IF SQLCODE != -942 THEN
@@ -31,29 +31,29 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-CREATE TABLE xxPerson_o
+CREATE TABLE "xxPerson_o"
 (
-	FirstName  VarChar(255)  NOT NULL,
-	PersonID   Int           NOT NULL,
-	LastName   VarChar(255)  NOT NULL,
-	MiddleName VarChar(255)      NULL,
-	Gender     Char(1)       NOT NULL,
+	"FirstName"  VarChar(255)  NOT NULL,
+	"PersonID"   Int           NOT NULL,
+	"LastName"   VarChar(255)  NOT NULL,
+	"MiddleName" VarChar(255)      NULL,
+	"Gender"     Char(1)       NOT NULL,
 
-	CONSTRAINT PK_xxPerson_o PRIMARY KEY (PersonID)
+	CONSTRAINT "PK_xxPerson_o" PRIMARY KEY ("PersonID")
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-CREATE SEQUENCE SIDENTITY_xxPerson_o
+CREATE SEQUENCE "SIDENTITY_xxPerson_o"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-CREATE OR REPLACE TRIGGER TIDENTITY_xxPerson_o
-BEFORE INSERT ON xxPerson_o FOR EACH ROW
+CREATE OR REPLACE TRIGGER "TIDENTITY_xxPerson_o"
+BEFORE INSERT ON "xxPerson_o" FOR EACH ROW
 BEGIN
-	SELECT SIDENTITY_xxPerson_o.NEXTVAL INTO :NEW.PersonID FROM dual;
+	SELECT "SIDENTITY_xxPerson_o".NEXTVAL INTO :NEW."PersonID" FROM dual;
 END;
 
 BeforeExecute
@@ -67,12 +67,12 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 
-INSERT INTO xxPerson_o
+INSERT INTO "xxPerson_o"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -88,7 +88,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPerson_o t1
+	"xxPerson_o" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
@@ -96,13 +96,13 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1."FirstName",
+	t1."PersonID",
+	t1."LastName",
+	t1."MiddleName",
+	t1."Gender"
 FROM
-	xxPerson_o t1
+	"xxPerson_o" t1
 WHERE
 	ROWNUM <= :take
 
@@ -112,9 +112,9 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 DELETE FROM
-	xxPerson_o t1
+	"xxPerson_o" t1
 WHERE
-	t1.PersonID = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
@@ -122,14 +122,14 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPerson_o t1
+	"xxPerson_o" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TRIGGER TIDENTITY_xxPerson_o';
-	EXECUTE IMMEDIATE 'DROP SEQUENCE SIDENTITY_xxPerson_o';
-	EXECUTE IMMEDIATE 'DROP TABLE xxPerson_o';
+	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_o"';
+	EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_xxPerson_o"';
+	EXECUTE IMMEDIATE 'DROP TABLE "xxPerson_o"';
 END;
 

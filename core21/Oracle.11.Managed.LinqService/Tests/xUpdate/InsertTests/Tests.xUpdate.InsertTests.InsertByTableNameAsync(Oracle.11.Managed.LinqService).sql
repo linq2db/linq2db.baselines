@@ -1,29 +1,29 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-CREATE TABLE xxPerson_ol
+CREATE TABLE "xxPerson_ol"
 (
-	FirstName  VarChar(255)  NOT NULL,
-	PersonID   Int           NOT NULL,
-	LastName   VarChar(255)  NOT NULL,
-	MiddleName VarChar(255)      NULL,
-	Gender     Char(1)       NOT NULL,
+	"FirstName"  VarChar(255)  NOT NULL,
+	"PersonID"   Int           NOT NULL,
+	"LastName"   VarChar(255)  NOT NULL,
+	"MiddleName" VarChar(255)      NULL,
+	"Gender"     Char(1)       NOT NULL,
 
-	CONSTRAINT PK_xxPerson_ol PRIMARY KEY (PersonID)
+	CONSTRAINT "PK_xxPerson_ol" PRIMARY KEY ("PersonID")
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-CREATE SEQUENCE SIDENTITY_xxPerson_ol
+CREATE SEQUENCE "SIDENTITY_xxPerson_ol"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-CREATE OR REPLACE TRIGGER TIDENTITY_xxPerson_ol
-BEFORE INSERT ON xxPerson_ol FOR EACH ROW
+CREATE OR REPLACE TRIGGER "TIDENTITY_xxPerson_ol"
+BEFORE INSERT ON "xxPerson_ol" FOR EACH ROW
 BEGIN
-	SELECT SIDENTITY_xxPerson_ol.NEXTVAL INTO :NEW.PersonID FROM dual;
+	SELECT "SIDENTITY_xxPerson_ol".NEXTVAL INTO :NEW."PersonID" FROM dual;
 END;
 
 BeforeExecute
@@ -37,12 +37,12 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 
-INSERT INTO xxPerson_ol
+INSERT INTO "xxPerson_ol"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -65,12 +65,12 @@ SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO xxPerson_ol
+INSERT INTO "xxPerson_ol"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -80,7 +80,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
@@ -95,12 +95,12 @@ SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO xxPerson_ol
+INSERT INTO "xxPerson_ol"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -110,7 +110,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
@@ -118,7 +118,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPerson_ol t1
+	"xxPerson_ol" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
@@ -126,18 +126,18 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPerson_ol p
+	"xxPerson_ol" p
 WHERE
-	p.FirstName = 'Steven' AND p.LastName = 'King' AND
-	p.Gender = 'M'
+	p."FirstName" = 'Steven' AND p."LastName" = 'King' AND
+	p."Gender" = 'M'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TRIGGER TIDENTITY_xxPerson_ol';
-	EXECUTE IMMEDIATE 'DROP SEQUENCE SIDENTITY_xxPerson_ol';
-	EXECUTE IMMEDIATE 'DROP TABLE xxPerson_ol';
+	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_ol"';
+	EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_xxPerson_ol"';
+	EXECUTE IMMEDIATE 'DROP TABLE "xxPerson_ol"';
 END;
 
 BeforeExecute
@@ -145,7 +145,7 @@ BeforeExecute
 
 BEGIN
 	BEGIN
-		EXECUTE IMMEDIATE 'DROP TRIGGER TIDENTITY_xxPerson_ol';
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_ol"';
 	EXCEPTION
 		WHEN OTHERS THEN
 			IF SQLCODE != -4080 THEN
@@ -153,7 +153,7 @@ BEGIN
 			END IF;
 	END;
 	BEGIN
-		EXECUTE IMMEDIATE 'DROP SEQUENCE SIDENTITY_xxPerson_ol';
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_xxPerson_ol"';
 	EXCEPTION
 		WHEN OTHERS THEN
 			IF SQLCODE != -2289 THEN
@@ -161,7 +161,7 @@ BEGIN
 			END IF;
 	END;
 	BEGIN
-		EXECUTE IMMEDIATE 'DROP TABLE xxPerson_ol';
+		EXECUTE IMMEDIATE 'DROP TABLE "xxPerson_ol"';
 	EXCEPTION
 		WHEN OTHERS THEN
 			IF SQLCODE != -942 THEN

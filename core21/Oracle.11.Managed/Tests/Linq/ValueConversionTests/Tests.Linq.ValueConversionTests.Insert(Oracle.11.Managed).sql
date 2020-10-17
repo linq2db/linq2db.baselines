@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE ValueConversion
+CREATE TABLE "ValueConversion"
 (
-	Id                      Int           NOT NULL,
-	Value1                  VarChar2(200)     NULL,
-	Value2                  VarChar2(200)     NULL,
-	Enum                    VarChar2(50)  NOT NULL,
-	EnumNullable            VarChar(50)       NULL,
-	EnumWithNull            VarChar(50)       NULL,
-	EnumWithNullDeclarative VarChar(50)       NULL,
-	BoolValue               VarChar(1)    NOT NULL,
+	"Id"                      Int           NOT NULL,
+	"Value1"                  VarChar2(200)     NULL,
+	"Value2"                  VarChar2(200)     NULL,
+	"Enum"                    VarChar2(50)  NOT NULL,
+	"EnumNullable"            VarChar(50)       NULL,
+	"EnumWithNull"            VarChar(50)       NULL,
+	"EnumWithNullDeclarative" VarChar(50)       NULL,
+	"BoolValue"               VarChar(1)    NOT NULL,
 
-	CONSTRAINT PK_ValueConversion PRIMARY KEY (Id)
+	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -28,13 +28,13 @@ SET     @Value2 = '[{"Value":"inserted"}]'
 DECLARE @BoolValue Varchar2 -- String
 SET     @BoolValue = 'Y'
 
-INSERT INTO ValueConversion
+INSERT INTO "ValueConversion"
 (
-	Id,
-	Value1,
-	Enum,
-	Value2,
-	BoolValue
+	"Id",
+	"Value1",
+	"Enum",
+	"Value2",
+	"BoolValue"
 )
 VALUES
 (
@@ -51,18 +51,18 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e."Id",
+	e."Value1",
+	e."Value2",
+	e."Enum",
+	e."EnumNullable",
+	e."EnumWithNull",
+	e."EnumWithNullDeclarative",
+	e."BoolValue"
 FROM
-	ValueConversion e
+	"ValueConversion" e
 WHERE
-	e.Id = 1 AND ROWNUM <= :take
+	e."Id" = 1 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -77,13 +77,13 @@ SET     @Enum = 'Value2'
 DECLARE @BoolValue Varchar2 -- String
 SET     @BoolValue = 'N'
 
-INSERT INTO ValueConversion
+INSERT INTO "ValueConversion"
 (
-	Id,
-	Value1,
-	Value2,
-	Enum,
-	BoolValue
+	"Id",
+	"Value1",
+	"Value2",
+	"Enum",
+	"BoolValue"
 )
 VALUES
 (
@@ -100,18 +100,18 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e."Id",
+	e."Value1",
+	e."Value2",
+	e."Enum",
+	e."EnumNullable",
+	e."EnumWithNull",
+	e."EnumWithNullDeclarative",
+	e."BoolValue"
 FROM
-	ValueConversion e
+	"ValueConversion" e
 WHERE
-	e.Id = 2 AND ROWNUM <= :take
+	e."Id" = 2 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -132,16 +132,16 @@ SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue Varchar2 -- String
 SET     @BoolValue = 'Y'
 
-INSERT INTO ValueConversion
+INSERT INTO "ValueConversion"
 (
-	Id,
-	Value1,
-	Value2,
-	Enum,
-	EnumNullable,
-	EnumWithNull,
-	EnumWithNullDeclarative,
-	BoolValue
+	"Id",
+	"Value1",
+	"Value2",
+	"Enum",
+	"EnumNullable",
+	"EnumWithNull",
+	"EnumWithNullDeclarative",
+	"BoolValue"
 )
 VALUES
 (
@@ -161,18 +161,18 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e."Id",
+	e."Value1",
+	e."Value2",
+	e."Enum",
+	e."EnumNullable",
+	e."EnumWithNull",
+	e."EnumWithNullDeclarative",
+	e."BoolValue"
 FROM
-	ValueConversion e
+	"ValueConversion" e
 WHERE
-	e.Id = 3 AND ROWNUM <= :take
+	e."Id" = 3 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -180,10 +180,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	ValueConversion t1
+	"ValueConversion" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE ValueConversion
+DROP TABLE "ValueConversion"
 

@@ -3,15 +3,15 @@
 
 SELECT
 	t.ID,
-	t.MoneyValue,
-	t.DateTimeValue,
-	t.BoolValue,
-	t.GuidValue,
-	t.BinaryValue,
-	t.SmallIntValue,
-	t.StringValue
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."BoolValue",
+	t."GuidValue",
+	t."BinaryValue",
+	t."SmallIntValue",
+	t."StringValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -20,15 +20,15 @@ SET     @param_1 = 1
 
 SELECT
 	t.ID,
-	t.MoneyValue,
-	t.DateTimeValue,
-	t.BoolValue,
-	t.GuidValue,
-	t.BinaryValue,
-	t.SmallIntValue,
-	t.StringValue
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."BoolValue",
+	t."GuidValue",
+	t."BinaryValue",
+	t."SmallIntValue",
+	t."StringValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	t.BoolValue = :param_1
+	t."BoolValue" = :param_1
 

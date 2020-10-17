@@ -2,13 +2,13 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	TestMerge1 t1
+	"TestMerge1" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	TestMerge2 t1
+	"TestMerge2" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -45,24 +45,24 @@ SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Int32
 SET     @FieldEnumNumber = NULL
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	FieldInt64,
-	FieldBoolean,
-	FieldString,
-	FieldNString,
-	FieldChar,
-	FieldNChar,
-	FieldFloat,
-	FieldDouble,
-	FieldDateTime,
-	FieldDateTime2,
-	FieldGuid,
-	FieldDecimal,
-	FieldEnumString,
-	FieldEnumNumber
+	"Id",
+	"Field1",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
 VALUES
 (
@@ -119,24 +119,24 @@ SET     @FieldEnumString = 'FIRST'
 DECLARE @FieldEnumNumber Int32
 SET     @FieldEnumNumber = NULL
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	FieldInt64,
-	FieldBoolean,
-	FieldString,
-	FieldNString,
-	FieldChar,
-	FieldNChar,
-	FieldFloat,
-	FieldDouble,
-	FieldDateTime,
-	FieldDateTime2,
-	FieldGuid,
-	FieldDecimal,
-	FieldEnumString,
-	FieldEnumNumber
+	"Id",
+	"Field1",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
 VALUES
 (
@@ -195,24 +195,24 @@ SET     @FieldEnumString = chr(0)
 DECLARE @FieldEnumNumber Int32
 SET     @FieldEnumNumber = 0
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	FieldInt64,
-	FieldBoolean,
-	FieldString,
-	FieldNString,
-	FieldChar,
-	FieldNChar,
-	FieldFloat,
-	FieldDouble,
-	FieldDateTime,
-	FieldDateTime2,
-	FieldGuid,
-	FieldDecimal,
-	FieldEnumString,
-	FieldEnumNumber
+	"Id",
+	"Field1",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
 VALUES
 (
@@ -270,24 +270,24 @@ SET     @FieldEnumString = '_'
 DECLARE @FieldEnumNumber Int32
 SET     @FieldEnumNumber = 2147483647
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	FieldInt64,
-	FieldBoolean,
-	FieldString,
-	FieldNString,
-	FieldChar,
-	FieldNChar,
-	FieldFloat,
-	FieldDouble,
-	FieldDateTime,
-	FieldDateTime2,
-	FieldGuid,
-	FieldDecimal,
-	FieldEnumString,
-	FieldEnumNumber
+	"Id",
+	"Field1",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
 VALUES
 (
@@ -344,24 +344,24 @@ SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Int32
 SET     @FieldEnumNumber = -2147483647
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	FieldInt64,
-	FieldBoolean,
-	FieldString,
-	FieldNString,
-	FieldChar,
-	FieldNChar,
-	FieldFloat,
-	FieldDouble,
-	FieldDateTime,
-	FieldDateTime2,
-	FieldGuid,
-	FieldDecimal,
-	FieldEnumString,
-	FieldEnumNumber
+	"Id",
+	"Field1",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
 VALUES
 (
@@ -420,24 +420,24 @@ SET     @FieldEnumString = chr(0)
 DECLARE @FieldEnumNumber Int32
 SET     @FieldEnumNumber = 0
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	FieldInt64,
-	FieldBoolean,
-	FieldString,
-	FieldNString,
-	FieldChar,
-	FieldNChar,
-	FieldFloat,
-	FieldDouble,
-	FieldDateTime,
-	FieldDateTime2,
-	FieldGuid,
-	FieldDecimal,
-	FieldEnumString,
-	FieldEnumNumber
+	"Id",
+	"Field1",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
 VALUES
 (
@@ -494,24 +494,24 @@ SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Int32
 SET     @FieldEnumNumber = -2147483647
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	FieldInt64,
-	FieldBoolean,
-	FieldString,
-	FieldNString,
-	FieldChar,
-	FieldNChar,
-	FieldFloat,
-	FieldDouble,
-	FieldDateTime,
-	FieldDateTime2,
-	FieldGuid,
-	FieldDecimal,
-	FieldEnumString,
-	FieldEnumNumber
+	"Id",
+	"Field1",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
 VALUES
 (
@@ -570,24 +570,24 @@ SET     @FieldEnumString = chr(0)
 DECLARE @FieldEnumNumber Int32
 SET     @FieldEnumNumber = 0
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	FieldInt64,
-	FieldBoolean,
-	FieldString,
-	FieldNString,
-	FieldChar,
-	FieldNChar,
-	FieldFloat,
-	FieldDouble,
-	FieldDateTime,
-	FieldDateTime2,
-	FieldGuid,
-	FieldDecimal,
-	FieldEnumString,
-	FieldEnumNumber
+	"Id",
+	"Field1",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
 VALUES
 (
@@ -613,49 +613,49 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id,
-	t1.Field1,
-	t1.FieldInt64,
-	t1.FieldBoolean,
-	t1.FieldString,
-	t1.FieldNString,
-	t1.FieldChar,
-	t1.FieldNChar,
-	t1.FieldFloat,
-	t1.FieldDouble,
-	t1.FieldDateTime,
-	t1.FieldDateTime2,
-	t1.FieldGuid,
-	t1.FieldDecimal,
-	t1.FieldEnumString,
-	t1.FieldEnumNumber
+	t1."Id",
+	t1."Field1",
+	t1."FieldInt64",
+	t1."FieldBoolean",
+	t1."FieldString",
+	t1."FieldNString",
+	t1."FieldChar",
+	t1."FieldNChar",
+	t1."FieldFloat",
+	t1."FieldDouble",
+	t1."FieldDateTime",
+	t1."FieldDateTime2",
+	t1."FieldGuid",
+	t1."FieldDecimal",
+	t1."FieldEnumString",
+	t1."FieldEnumNumber"
 FROM
-	TestMerge1 t1
+	"TestMerge1" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id,
-	t1.Field1,
-	t1.FieldInt64,
-	t1.FieldBoolean,
-	t1.FieldString,
-	t1.FieldNString,
-	t1.FieldChar,
-	t1.FieldNChar,
-	t1.FieldFloat,
-	t1.FieldDouble,
-	t1.FieldDateTime,
-	t1.FieldDateTime2,
-	t1.FieldGuid,
-	t1.FieldDecimal,
-	t1.FieldEnumString,
-	t1.FieldEnumNumber
+	t1."Id",
+	t1."Field1",
+	t1."FieldInt64",
+	t1."FieldBoolean",
+	t1."FieldString",
+	t1."FieldNString",
+	t1."FieldChar",
+	t1."FieldNChar",
+	t1."FieldFloat",
+	t1."FieldDouble",
+	t1."FieldDateTime",
+	t1."FieldDateTime2",
+	t1."FieldGuid",
+	t1."FieldDecimal",
+	t1."FieldEnumString",
+	t1."FieldEnumNumber"
 FROM
-	TestMerge2 t1
+	"TestMerge2" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 

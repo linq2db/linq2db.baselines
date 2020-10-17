@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 
@@ -27,13 +27,13 @@ SET     @:p8 = System.Object[]
 DECLARE @:p9 Varchar2 -- String
 SET     @:p9 = System.Object[]
 
-INSERT INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9)
+INSERT INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 

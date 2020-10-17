@@ -2,19 +2,19 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = 1
+	p."ParentID" = 1
 UNION ALL
 SELECT
-	a_Parent.ParentID,
-	a_Parent.Value1
+	a_Parent."ParentID",
+	a_Parent."Value1"
 FROM
-	Child ch
-		LEFT JOIN Parent a_Parent ON ch.ParentID = a_Parent.ParentID
+	"Child" ch
+		LEFT JOIN "Parent" a_Parent ON ch."ParentID" = a_Parent."ParentID"
 WHERE
-	ch.ParentID = 2
+	ch."ParentID" = 2
 

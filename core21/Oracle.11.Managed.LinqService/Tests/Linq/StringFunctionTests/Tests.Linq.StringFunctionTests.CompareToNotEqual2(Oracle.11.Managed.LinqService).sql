@@ -2,13 +2,13 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName <> 'Jo' AND p.PersonID = 1
+	p."FirstName" <> 'Jo' AND p."PersonID" = 1
 

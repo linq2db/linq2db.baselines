@@ -6,19 +6,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.ParentID,
-	t1.Value1
+	t1."ParentID",
+	t1."Value1"
 FROM
 	(
 		SELECT
-			x.ParentID,
-			x.Value1
+			x."ParentID",
+			x."Value1"
 		FROM
-			Parent x
+			"Parent" x
 		WHERE
-			x.ParentID = :ParentID_1
+			x."ParentID" = :ParentID_1
 		ORDER BY
-			x.ParentID DESC
+			x."ParentID" DESC
 	) t1
 WHERE
 	ROWNUM <= :take

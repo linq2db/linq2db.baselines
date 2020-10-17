@@ -2,10 +2,10 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 WHERE
 	ROWNUM <= 2
 
@@ -13,10 +13,10 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 WHERE
 	ROWNUM <= 3
 
@@ -24,10 +24,10 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 WHERE
 	ROWNUM <= 2
 
@@ -35,10 +35,10 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 WHERE
 	ROWNUM <= 3
 

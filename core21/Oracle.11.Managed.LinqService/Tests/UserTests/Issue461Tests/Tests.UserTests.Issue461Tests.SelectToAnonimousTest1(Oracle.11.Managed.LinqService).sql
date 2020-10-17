@@ -4,9 +4,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	l.ParentID
+	l."ParentID"
 FROM
-	Child l
+	"Child" l
 WHERE
 	ROWNUM <= :take
 
@@ -16,5 +16,5 @@ BeforeExecute
 SELECT
 	1
 FROM
-	Parent sep
+	"Parent" sep
 

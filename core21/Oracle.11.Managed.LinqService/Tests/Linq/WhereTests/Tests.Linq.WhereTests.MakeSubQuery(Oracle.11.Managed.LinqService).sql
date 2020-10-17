@@ -2,16 +2,16 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p_1.PersonID,
-	p_1.FirstName
+	p_1."PersonID",
+	p_1."FirstName"
 FROM
 	(
 		SELECT
-			p.PersonID + 1 as PersonID,
-			p.FirstName
+			p."PersonID" + 1 as "PersonID",
+			p."FirstName"
 		FROM
-			Person p
+			"Person" p
 	) p_1
 WHERE
-	p_1.PersonID = 2
+	p_1."PersonID" = 2
 

@@ -6,7 +6,7 @@ SET     @take = 1
 SELECT
 	1
 FROM
-	Person t1
+	"Person" t1
 WHERE
 	ROWNUM <= :take
 
@@ -18,7 +18,7 @@ SET     @take = 1
 SELECT
 	1
 FROM
-	Person t1
+	"Person" t1
 WHERE
 	ROWNUM <= :take
 

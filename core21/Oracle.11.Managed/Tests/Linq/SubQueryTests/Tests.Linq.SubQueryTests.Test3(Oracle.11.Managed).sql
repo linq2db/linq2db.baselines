@@ -4,14 +4,14 @@
 SELECT
 	(
 		SELECT
-			ch.ChildID
+			ch."ChildID"
 		FROM
-			Child ch
+			"Child" ch
 		WHERE
-			ch.ParentID = p.ParentID AND ch.ChildID = ch.ParentID * 10 + 1
+			ch."ParentID" = p."ParentID" AND ch."ChildID" = ch."ParentID" * 10 + 1
 	)
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID <> 5
+	p."ParentID" <> 5
 

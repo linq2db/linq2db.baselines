@@ -2,19 +2,19 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p_1.val
+	p_1."val"
 FROM
 	(
 		SELECT
-			p.ParentID as id,
-			1 as val
+			p."ParentID" as "id",
+			1 as "val"
 		FROM
-			Parent p
+			"Parent" p
 		UNION
 		SELECT
-			ch.ParentID as id,
-			0 as val
+			ch."ParentID" as "id",
+			0 as "val"
 		FROM
-			Child ch
+			"Child" ch
 	) p_1
 

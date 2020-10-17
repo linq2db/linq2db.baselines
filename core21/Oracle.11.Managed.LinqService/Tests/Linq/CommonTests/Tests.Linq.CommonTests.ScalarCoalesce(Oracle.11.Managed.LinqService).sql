@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	Nvl(p.Value1, 100)
+	Nvl(p."Value1", 100)
 FROM
-	Parent p
+	"Parent" p
 

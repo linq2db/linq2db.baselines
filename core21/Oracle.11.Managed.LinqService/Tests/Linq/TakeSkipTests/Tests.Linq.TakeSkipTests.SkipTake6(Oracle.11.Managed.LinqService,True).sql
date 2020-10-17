@@ -4,20 +4,20 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT
-	c_1.ParentID,
-	c_1.ChildID
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
-	Child c_1,
+	"Child" c_1,
 	(
 		SELECT
-			p.ParentID
+			p."ParentID"
 		FROM
-			GrandChild p
+			"GrandChild" p
 		WHERE
 			ROWNUM <= :take
 	) t1
 WHERE
-	c_1.ParentID = t1.ParentID
+	c_1."ParentID" = t1."ParentID"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -27,24 +27,24 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT
-	c_1.ParentID,
-	c_1.ChildID
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
-	Child c_1,
+	"Child" c_1,
 	(
 		SELECT
-			t2.ParentID
+			t2."ParentID"
 		FROM
 			(
 				SELECT
-					t1.ParentID,
+					t1."ParentID",
 					ROWNUM as RN
 				FROM
 					(
 						SELECT
-							p.ParentID
+							p."ParentID"
 						FROM
-							GrandChild p
+							"GrandChild" p
 					) t1
 				WHERE
 					ROWNUM <= (:skip + :take)
@@ -53,5 +53,5 @@ FROM
 			t2.RN > :skip
 	) t3
 WHERE
-	c_1.ParentID = t3.ParentID
+	c_1."ParentID" = t3."ParentID"
 

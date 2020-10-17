@@ -2,25 +2,25 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.Value1,
+	p."Value1",
 	(
 		SELECT
 			Count(*)
 		FROM
-			Child t1
+			"Child" t1
 		WHERE
-			p.ParentID = t1.ParentID
+			p."ParentID" = t1."ParentID"
 	),
 	(
 		SELECT
 			Count(*)
 		FROM
-			Child c_1
+			"Child" c_1
 		WHERE
-			p.ParentID = c_1.ParentID AND c_1.ParentID = p.ParentID
+			p."ParentID" = c_1."ParentID" AND c_1."ParentID" = p."ParentID"
 	)
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID <> 5
+	p."ParentID" <> 5
 

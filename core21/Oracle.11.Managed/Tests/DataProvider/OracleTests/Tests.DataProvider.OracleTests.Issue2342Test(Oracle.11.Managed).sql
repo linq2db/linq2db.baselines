@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE Issue2342Entity
+CREATE TABLE "Issue2342Entity"
 (
-	Id   Number(19)   NOT NULL,
-	Name VarChar(256)     NULL
+	"Id"   Number(19)   NOT NULL,
+	"Name" VarChar(256)     NULL
 )
 
 BeforeExecute
@@ -14,10 +14,10 @@ SET     @:p1 = System.Object[]
 DECLARE @:p2 Varchar2 -- String
 SET     @:p2 = System.Object[]
 
-INSERT INTO Issue2342Entity (Id, Name) VALUES (:p1, :p2)
+INSERT INTO "Issue2342Entity" ("Id", "Name") VALUES (:p1, :p2)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Issue2342Entity
+DROP TABLE "Issue2342Entity"
 

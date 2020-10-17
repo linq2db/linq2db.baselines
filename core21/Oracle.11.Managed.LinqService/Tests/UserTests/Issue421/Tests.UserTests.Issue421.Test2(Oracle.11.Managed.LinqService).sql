@@ -1,21 +1,21 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE BlobClass
+CREATE TABLE "BlobClass"
 (
-	Id        Int  NOT NULL,
-	BlobValue Blob     NULL,
+	"Id"        Int  NOT NULL,
+	"BlobValue" Blob     NULL,
 
-	CONSTRAINT PK_BlobClass PRIMARY KEY (Id)
+	CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO BlobClass
+INSERT INTO "BlobClass"
 (
-	Id,
-	BlobValue
+	"Id",
+	"BlobValue"
 )
 VALUES
 (
@@ -27,36 +27,36 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id,
-	t1.BlobValue
+	t1."Id",
+	t1."BlobValue"
 FROM
-	BlobClass t1
+	"BlobClass" t1
 WHERE
-	t1.Id = 1 AND ROWNUM <= 1
+	t1."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 UPDATE
-	BlobClass
+	"BlobClass"
 SET
-	BlobClass.BlobValue = HEXTORAW('030201')
+	"BlobClass"."BlobValue" = HEXTORAW('030201')
 WHERE
-	BlobClass.Id = 1
+	"BlobClass"."Id" = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id,
-	t1.BlobValue
+	t1."Id",
+	t1."BlobValue"
 FROM
-	BlobClass t1
+	"BlobClass" t1
 WHERE
-	t1.Id = 1 AND ROWNUM <= 1
+	t1."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE BlobClass
+DROP TABLE "BlobClass"
 

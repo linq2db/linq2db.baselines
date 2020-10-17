@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP SEQUENCE PersonSeq
+DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE SEQUENCE PersonSeq MINVALUE 1 START WITH 5
+CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -21,12 +21,12 @@ SET     @Gender = 'U'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -36,7 +36,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -44,15 +44,15 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1."FirstName",
+	t1."PersonID",
+	t1."LastName",
+	t1."MiddleName",
+	t1."Gender"
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName = 'test_inherited_insert' AND ROWNUM <= :take
+	t1."FirstName" = 'test_inherited_insert' AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -68,14 +68,14 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	Person
+	"Person"
 SET
-	Person.FirstName = :FirstName,
-	Person.LastName = :LastName,
-	Person.MiddleName = :MiddleName,
-	Person.Gender = :Gender
+	"Person"."FirstName" = :FirstName,
+	"Person"."LastName" = :LastName,
+	"Person"."MiddleName" = :MiddleName,
+	"Person"."Gender" = :Gender
 WHERE
-	Person.PersonID = :ID
+	"Person"."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -83,15 +83,15 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1."FirstName",
+	t1."PersonID",
+	t1."LastName",
+	t1."MiddleName",
+	t1."Gender"
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName = 'test_inherited_insert' AND ROWNUM <= :take
+	t1."FirstName" = 'test_inherited_insert' AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -99,15 +99,15 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName = 'test_inherited_insert'
+	t1."FirstName" = 'test_inherited_insert'
 
