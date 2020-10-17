@@ -7,17 +7,17 @@ SET     @take = 2
 
 SELECT
 	p.ID,
-	p.MoneyValue,
-	p.DateTimeValue,
-	p.BoolValue,
-	p.GuidValue,
-	p.BinaryValue,
-	p.SmallIntValue,
-	p.StringValue
+	p."MoneyValue",
+	p."DateTimeValue",
+	p."BoolValue",
+	p."GuidValue",
+	p."BinaryValue",
+	p."SmallIntValue",
+	p."StringValue"
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	p.GuidValue = :GuidValue_1
+	p."GuidValue" = :GuidValue_1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -29,16 +29,16 @@ SET     @take = 2
 
 SELECT
 	p.ID,
-	p.MoneyValue,
-	p.DateTimeValue,
-	p.BoolValue,
-	p.GuidValue,
-	p.BinaryValue,
-	p.SmallIntValue,
-	p.StringValue
+	p."MoneyValue",
+	p."DateTimeValue",
+	p."BoolValue",
+	p."GuidValue",
+	p."BinaryValue",
+	p."SmallIntValue",
+	p."StringValue"
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	p.GuidValue = :GuidValue_1
+	p."GuidValue" = :GuidValue_1
 FETCH NEXT :take ROWS ONLY
 

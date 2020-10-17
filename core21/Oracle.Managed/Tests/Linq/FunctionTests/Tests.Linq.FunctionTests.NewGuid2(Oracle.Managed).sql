@@ -6,6 +6,6 @@ SET     @take = 1
 SELECT
 	Sys_Guid()
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 FETCH NEXT :take ROWS ONLY
 

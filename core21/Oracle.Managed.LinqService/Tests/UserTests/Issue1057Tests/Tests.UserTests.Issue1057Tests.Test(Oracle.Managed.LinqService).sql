@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE Task
+CREATE TABLE "Task"
 (
-	Id         Int          NOT NULL,
-	TargetName VarChar(255)     NULL,
+	"Id"         Int          NOT NULL,
+	"TargetName" VarChar(255)     NULL,
 
-	CONSTRAINT PK_Task PRIMARY KEY (Id)
+	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE TaskStage
+CREATE TABLE "TaskStage"
 (
-	Id     Int     NOT NULL,
-	TaskId Int     NOT NULL,
-	Actual Char(1) NOT NULL,
+	"Id"     Int     NOT NULL,
+	"TaskId" Int     NOT NULL,
+	"Actual" Char(1) NOT NULL,
 
-	CONSTRAINT PK_TaskStage PRIMARY KEY (Id)
+	CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -28,10 +28,10 @@ SET     @Id = 1
 DECLARE @TargetName Varchar2(12) -- String
 SET     @TargetName = 'bda.Requests'
 
-INSERT INTO Task
+INSERT INTO "Task"
 (
-	Id,
-	TargetName
+	"Id",
+	"TargetName"
 )
 VALUES
 (
@@ -46,10 +46,10 @@ SET     @Id = 2
 DECLARE @TargetName Varchar2(4) -- String
 SET     @TargetName = 'None'
 
-INSERT INTO Task
+INSERT INTO "Task"
 (
-	Id,
-	TargetName
+	"Id",
+	"TargetName"
 )
 VALUES
 (
@@ -66,11 +66,11 @@ SET     @TaskId = 1
 DECLARE @Actual Int16
 SET     @Actual = 1
 
-INSERT INTO TaskStage
+INSERT INTO "TaskStage"
 (
-	Id,
-	TaskId,
-	Actual
+	"Id",
+	"TaskId",
+	"Actual"
 )
 VALUES
 (
@@ -83,22 +83,22 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.Id,
-	p.TargetName,
-	a_ActualStage.Id
+	p."Id",
+	p."TargetName",
+	a_ActualStage."Id"
 FROM
-	Task p
-		LEFT JOIN TaskStage a_ActualStage ON p.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = 1
+	"Task" p
+		LEFT JOIN "TaskStage" a_ActualStage ON p."Id" = a_ActualStage."TaskId" AND a_ActualStage."Actual" = 1
 WHERE
-	p.TargetName = 'bda.Requests'
+	p."TargetName" = 'bda.Requests'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE TaskStage
+DROP TABLE "TaskStage"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE Task
+DROP TABLE "Task"
 

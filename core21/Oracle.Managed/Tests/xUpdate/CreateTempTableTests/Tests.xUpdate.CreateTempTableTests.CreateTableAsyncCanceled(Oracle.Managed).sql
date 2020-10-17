@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE TempTable';
+	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -14,14 +14,14 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID
+	p."ParentID"
 FROM
-	Parent p
+	"Parent" p
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-CREATE TABLE TempTable
+CREATE TABLE "TempTable"
 (
 	ID Int NOT NULL
 )
@@ -29,5 +29,5 @@ CREATE TABLE TempTable
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE TempTable
+DROP TABLE "TempTable"
 

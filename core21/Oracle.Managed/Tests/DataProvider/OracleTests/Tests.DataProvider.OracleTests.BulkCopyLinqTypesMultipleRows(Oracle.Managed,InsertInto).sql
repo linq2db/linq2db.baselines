@@ -17,13 +17,13 @@ SET     @:p7 = System.Object[]
 DECLARE @:p8 Varchar2 -- String
 SET     @:p8 = System.Object[]
 
-INSERT INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue) VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8)
+INSERT INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "BoolValue", "GuidValue", "BinaryValue", "SmallIntValue", "StringValue") VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8)
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID >= 4000
 

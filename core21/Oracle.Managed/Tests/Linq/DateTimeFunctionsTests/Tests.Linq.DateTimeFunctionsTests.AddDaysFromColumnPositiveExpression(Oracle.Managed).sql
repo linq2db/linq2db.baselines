@@ -17,16 +17,16 @@ SET     @SmallIntValue = 2
 DECLARE @StringValue Varchar2 -- String
 SET     @StringValue = NULL
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	MoneyValue,
-	DateTimeValue,
-	BoolValue,
-	GuidValue,
-	BinaryValue,
-	SmallIntValue,
-	StringValue
+	"MoneyValue",
+	"DateTimeValue",
+	"BoolValue",
+	"GuidValue",
+	"BinaryValue",
+	"SmallIntValue",
+	"StringValue"
 )
 VALUES
 (
@@ -52,15 +52,15 @@ SET     @p1 = TO_TIMESTAMP('2018-01-02 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.
 SELECT
 	Count(*)
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	t.ID = 5000 AND t.DateTimeValue + ((t.SmallIntValue + :part1) - :part2) * INTERVAL '1' DAY > :p1
+	t.ID = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * INTERVAL '1' DAY > :p1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID = 5000
 

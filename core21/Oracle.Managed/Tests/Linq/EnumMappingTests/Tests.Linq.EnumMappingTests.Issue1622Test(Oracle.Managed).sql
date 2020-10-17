@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE Issue1622Table
+CREATE TABLE "Issue1622Table"
 (
-	Id       Int          NOT NULL,
-	SomeText VarChar(255)     NULL,
+	"Id"       Int          NOT NULL,
+	"SomeText" VarChar(255)     NULL,
 
-	CONSTRAINT PK_Issue1622Table PRIMARY KEY (Id)
+	CONSTRAINT "PK_Issue1622Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -16,10 +16,10 @@ SET     @Id = 1
 DECLARE @SomeText Varchar2(13) -- String
 SET     @SomeText = 'Value1_suffix'
 
-INSERT INTO Issue1622Table
+INSERT INTO "Issue1622Table"
 (
-	Id,
-	SomeText
+	"Id",
+	"SomeText"
 )
 VALUES
 (
@@ -33,12 +33,12 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	e.Id,
-	e.SomeText
+	e."Id",
+	e."SomeText"
 FROM
-	Issue1622Table e
+	"Issue1622Table" e
 WHERE
-	e.SomeText = 'Value1_suffix'
+	e."SomeText" = 'Value1_suffix'
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -47,16 +47,16 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	e.Id,
-	e.SomeText
+	e."Id",
+	e."SomeText"
 FROM
-	Issue1622Table e
+	"Issue1622Table" e
 WHERE
-	e.Id = 1
+	e."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE Issue1622Table
+DROP TABLE "Issue1622Table"
 

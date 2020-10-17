@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE Issue1554Table
+CREATE TABLE "Issue1554Table"
 (
-	Id              Int        NOT NULL,
-	ClaimedKeyType  VarChar(3) NOT NULL,
-	ClaimedKeyTypeN VarChar(3)     NULL,
+	"Id"              Int        NOT NULL,
+	"ClaimedKeyType"  VarChar(3) NOT NULL,
+	"ClaimedKeyTypeN" VarChar(3)     NULL,
 
-	CONSTRAINT PK_Issue1554Table PRIMARY KEY (Id)
+	CONSTRAINT "PK_Issue1554Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -19,11 +19,11 @@ SET     @ClaimedKeyType = 'EC'
 DECLARE @ClaimedKeyTypeN Varchar2(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
-INSERT INTO Issue1554Table
+INSERT INTO "Issue1554Table"
 (
-	Id,
-	ClaimedKeyType,
-	ClaimedKeyTypeN
+	"Id",
+	"ClaimedKeyType",
+	"ClaimedKeyTypeN"
 )
 VALUES
 (
@@ -38,15 +38,15 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	t1.Id,
-	t1.ClaimedKeyType,
-	t1.ClaimedKeyTypeN
+	t1."Id",
+	t1."ClaimedKeyType",
+	t1."ClaimedKeyTypeN"
 FROM
-	Issue1554Table t1
+	"Issue1554Table" t1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE Issue1554Table
+DROP TABLE "Issue1554Table"
 

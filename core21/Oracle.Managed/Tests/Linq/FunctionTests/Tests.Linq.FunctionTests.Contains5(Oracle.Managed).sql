@@ -2,21 +2,21 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID IN (1, 2)
+	p."ParentID" IN (1, 2)
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID IN (1, 2, 4)
+	p."ParentID" IN (1, 2, 4)
 

@@ -2,17 +2,17 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	o.ParentID,
-	o.Value1,
-	x.ParentID,
-	x.ChildID
+	o."ParentID",
+	o."Value1",
+	x."ParentID",
+	x."ChildID"
 FROM
-	Parent o
+	"Parent" o
 		INNER JOIN (
 			SELECT DISTINCT
-				t1.ParentID,
-				t1.ChildID
+				t1."ParentID",
+				t1."ChildID"
 			FROM
-				Child t1
-		) x ON x.ParentID = o.ParentID
+				"Child" t1
+		) x ON x."ParentID" = o."ParentID"
 

@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.Value1
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	Nvl(p.Value1, 0) > 0
+	Nvl(p."Value1", 0) > 0
 

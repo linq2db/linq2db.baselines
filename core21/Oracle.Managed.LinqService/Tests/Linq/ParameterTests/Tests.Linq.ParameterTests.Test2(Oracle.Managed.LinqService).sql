@@ -8,14 +8,14 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	((p.ParentID = :id1 OR p.ParentID >= :id1) OR p.ParentID >= :id2)
+	((p."ParentID" = :id1 OR p."ParentID" >= :id1) OR p."ParentID" >= :id2)
 ORDER BY
-	p.ParentID
+	p."ParentID"
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -28,13 +28,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	((p.ParentID = :id1 OR p.ParentID >= :id1) OR p.ParentID >= :id2)
+	((p."ParentID" = :id1 OR p."ParentID" >= :id1) OR p."ParentID" >= :id2)
 ORDER BY
-	p.ParentID
+	p."ParentID"
 FETCH NEXT :take ROWS ONLY
 

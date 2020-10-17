@@ -2,13 +2,13 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	Substr(p.FirstName, 2, 2) = 'oh' AND p.PersonID = 1
+	Substr(p."FirstName", 2, 2) = 'oh' AND p."PersonID" = 1
 

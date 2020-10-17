@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE CreateTableTypes
+CREATE TABLE "CreateTableTypes"
 (
-	String VarChar(10)     NULL,
-	Id     Int         NOT NULL
+	"String" VarChar(10)     NULL,
+	"Id"     Int         NOT NULL
 )
 
 BeforeExecute
@@ -14,10 +14,10 @@ SET     @Id = 1
 DECLARE @String Varchar2 -- String
 SET     @String = NULL
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	String
+	"Id",
+	"String"
 )
 VALUES
 (
@@ -32,10 +32,10 @@ SET     @Id = 2
 DECLARE @String Varchar2(9) -- String
 SET     @String = 'test 10 n'
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	String
+	"Id",
+	"String"
 )
 VALUES
 (
@@ -47,15 +47,15 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.Id,
-	t1.String
+	t1."Id",
+	t1."String"
 FROM
-	CreateTableTypes t1
+	"CreateTableTypes" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE CreateTableTypes
+DROP TABLE "CreateTableTypes"
 

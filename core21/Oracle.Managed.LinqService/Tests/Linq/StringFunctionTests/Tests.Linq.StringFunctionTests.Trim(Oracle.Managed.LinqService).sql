@@ -2,10 +2,10 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.PersonID,
-	p.FirstName
+	p."PersonID",
+	p."FirstName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	Trim('  ' || p.FirstName || ' ') = 'John' AND p.PersonID = 1
+	Trim('  ' || p."FirstName" || ' ') = 'John' AND p."PersonID" = 1
 

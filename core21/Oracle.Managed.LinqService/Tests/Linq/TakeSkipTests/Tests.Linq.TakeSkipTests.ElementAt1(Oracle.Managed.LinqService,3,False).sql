@@ -2,11 +2,11 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID > 1
+	p."ParentID" > 1
 OFFSET 3 ROWS FETCH NEXT 1 ROWS ONLY 
 

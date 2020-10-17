@@ -1,29 +1,29 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE xxPerson_ol
+CREATE TABLE "xxPerson_ol"
 (
-	FirstName  VarChar(255)  NOT NULL,
-	PersonID   Int           NOT NULL,
-	LastName   VarChar(255)  NOT NULL,
-	MiddleName VarChar(255)      NULL,
-	Gender     Char(1)       NOT NULL,
+	"FirstName"  VarChar(255)  NOT NULL,
+	"PersonID"   Int           NOT NULL,
+	"LastName"   VarChar(255)  NOT NULL,
+	"MiddleName" VarChar(255)      NULL,
+	"Gender"     Char(1)       NOT NULL,
 
-	CONSTRAINT PK_xxPerson_ol PRIMARY KEY (PersonID)
+	CONSTRAINT "PK_xxPerson_ol" PRIMARY KEY ("PersonID")
 )
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE SEQUENCE SIDENTITY_xxPerson_ol
+CREATE SEQUENCE "SIDENTITY_xxPerson_ol"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE OR REPLACE TRIGGER TIDENTITY_xxPerson_ol
-BEFORE INSERT ON xxPerson_ol FOR EACH ROW
+CREATE OR REPLACE TRIGGER "TIDENTITY_xxPerson_ol"
+BEFORE INSERT ON "xxPerson_ol" FOR EACH ROW
 BEGIN
-	SELECT SIDENTITY_xxPerson_ol.NEXTVAL INTO :NEW.PersonID FROM dual;
+	SELECT "SIDENTITY_xxPerson_ol".NEXTVAL INTO :NEW."PersonID" FROM dual;
 END;
 
 BeforeExecute
@@ -37,12 +37,12 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 
-INSERT INTO xxPerson_ol
+INSERT INTO "xxPerson_ol"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -58,7 +58,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPerson_ol t1
+	"xxPerson_ol" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -66,13 +66,13 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1."FirstName",
+	t1."PersonID",
+	t1."LastName",
+	t1."MiddleName",
+	t1."Gender"
 FROM
-	xxPerson_ol t1
+	"xxPerson_ol" t1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -81,9 +81,9 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 DELETE FROM
-	xxPerson_ol t1
+	"xxPerson_ol" t1
 WHERE
-	t1.PersonID = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -91,14 +91,14 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPerson_ol t1
+	"xxPerson_ol" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TRIGGER TIDENTITY_xxPerson_ol';
-	EXECUTE IMMEDIATE 'DROP SEQUENCE SIDENTITY_xxPerson_ol';
-	EXECUTE IMMEDIATE 'DROP TABLE xxPerson_ol';
+	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_ol"';
+	EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_xxPerson_ol"';
+	EXECUTE IMMEDIATE 'DROP TABLE "xxPerson_ol"';
 END;
 

@@ -4,11 +4,11 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = 100
+	p."ParentID" = 100
 FETCH NEXT :take ROWS ONLY
 

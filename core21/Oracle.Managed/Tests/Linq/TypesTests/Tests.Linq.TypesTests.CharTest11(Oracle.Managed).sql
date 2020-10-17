@@ -14,9 +14,9 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.PersonID
+	p."PersonID"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.Gender = 'M'
+	p."Gender" = 'M'
 

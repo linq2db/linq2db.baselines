@@ -6,10 +6,10 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	p.LastName
+	p."LastName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = :ID
+	p."PersonID" = :ID
 FETCH NEXT :take ROWS ONLY
 

@@ -2,39 +2,39 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 FETCH NEXT 3 ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 FETCH NEXT 3 ROWS ONLY
 

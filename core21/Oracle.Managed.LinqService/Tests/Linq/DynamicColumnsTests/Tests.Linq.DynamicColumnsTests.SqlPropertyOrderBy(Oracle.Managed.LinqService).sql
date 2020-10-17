@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	x.PersonID
+	x."PersonID"
 FROM
-	Person x
+	"Person" x
 ORDER BY
-	x.FirstName DESC
+	x."FirstName" DESC
 

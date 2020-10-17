@@ -2,20 +2,20 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.InheritanceParentId,
-	t1.TypeDiscriminator,
-	t1.Name
+	t1."InheritanceParentId",
+	t1."TypeDiscriminator",
+	t1."Name"
 FROM
-	InheritanceParent t1
+	"InheritanceParent" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.InheritanceChildId,
-	t1.TypeDiscriminator,
-	t1.InheritanceParentId,
-	t1.Name
+	t1."InheritanceChildId",
+	t1."TypeDiscriminator",
+	t1."InheritanceParentId",
+	t1."Name"
 FROM
-	InheritanceChild t1
+	"InheritanceChild" t1
 

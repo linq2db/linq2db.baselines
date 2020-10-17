@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.ChildID
+	t1."ChildID"
 FROM
-	Child t1
+	"Child" t1
 WHERE
-	(t1.ChildID = 11 OR t1.ChildID = 21)
+	(t1."ChildID" = 11 OR t1."ChildID" = 21)
 

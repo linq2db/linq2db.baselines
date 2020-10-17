@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.PersonID
+	p."PersonID"
 FROM
-	Person p
+	"Person" p
 

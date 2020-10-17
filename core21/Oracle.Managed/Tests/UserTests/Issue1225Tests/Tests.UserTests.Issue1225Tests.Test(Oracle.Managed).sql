@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE Task
+CREATE TABLE "Task"
 (
-	Id Int NOT NULL,
+	"Id" Int NOT NULL,
 
-	CONSTRAINT PK_Task PRIMARY KEY (Id)
+	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE TaskStage
+CREATE TABLE "TaskStage"
 (
-	Id     Int     NOT NULL,
-	TaskId Int     NOT NULL,
-	Actual Char(1) NOT NULL,
+	"Id"     Int     NOT NULL,
+	"TaskId" Int     NOT NULL,
+	"Actual" Char(1) NOT NULL,
 
-	CONSTRAINT PK_TaskStage PRIMARY KEY (Id)
+	CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -25,9 +25,9 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 1
 
-INSERT INTO Task
+INSERT INTO "Task"
 (
-	Id
+	"Id"
 )
 VALUES
 (
@@ -39,9 +39,9 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 2
 
-INSERT INTO Task
+INSERT INTO "Task"
 (
-	Id
+	"Id"
 )
 VALUES
 (
@@ -57,11 +57,11 @@ SET     @TaskId = 1
 DECLARE @Actual Int16
 SET     @Actual = 1
 
-INSERT INTO TaskStage
+INSERT INTO "TaskStage"
 (
-	Id,
-	TaskId,
-	Actual
+	"Id",
+	"TaskId",
+	"Actual"
 )
 VALUES
 (
@@ -75,25 +75,25 @@ BeforeExecute
 
 SELECT
 	'Id',
-	selectParam.Id,
+	selectParam."Id",
 	Sum(CASE
-		WHEN a_ActualStage.Id IS NULL
+		WHEN a_ActualStage."Id" IS NULL
 			THEN NULL
-		ELSE a_ActualStage.Id
+		ELSE a_ActualStage."Id"
 	END)
 FROM
-	Task selectParam
-		LEFT JOIN TaskStage a_ActualStage ON selectParam.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = 1
+	"Task" selectParam
+		LEFT JOIN "TaskStage" a_ActualStage ON selectParam."Id" = a_ActualStage."TaskId" AND a_ActualStage."Actual" = 1
 GROUP BY
-	selectParam.Id
+	selectParam."Id"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE TaskStage
+DROP TABLE "TaskStage"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE Task
+DROP TABLE "Task"
 

@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Parent t1
+	"Parent" t1
 WHERE
-	t1.ParentID = 1001
+	t1."ParentID" = 1001
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -13,10 +13,10 @@ SET     @ParentID = 1001
 DECLARE @Value1 Int32
 SET     @Value1 = NULL
 
-INSERT INTO Parent
+INSERT INTO "Parent"
 (
-	ParentID,
-	Value1
+	"ParentID",
+	"Value1"
 )
 VALUES
 (
@@ -30,15 +30,15 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = 1001
+	p."ParentID" = 1001
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Parent t1
+	"Parent" t1
 WHERE
-	t1.Value1 = 1001
+	t1."Value1" = 1001
 

@@ -6,10 +6,10 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			GrandChild t1
+			"GrandChild" t1
 		WHERE
-			a.ParentID = t1.ParentID AND a.ChildID = t1.ChildID
+			a."ParentID" = t1."ParentID" AND a."ChildID" = t1."ChildID"
 	)
 FROM
-	Child a
+	"Child" a
 

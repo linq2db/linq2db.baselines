@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Max(t1.ParentID)
+	Max(t1."ParentID")
 FROM
-	Parent t1
+	"Parent" t1
 WHERE
-	t1.ParentID < 0
+	t1."ParentID" < 0
 

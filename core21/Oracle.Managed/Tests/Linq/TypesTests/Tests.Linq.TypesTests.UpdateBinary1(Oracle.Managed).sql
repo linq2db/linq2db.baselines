@@ -4,19 +4,19 @@ DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0102030405')
 
 UPDATE
-	LinqDataTypes
+	"LinqDataTypes"
 SET
-	LinqDataTypes.BinaryValue = :BinaryValue
+	"LinqDataTypes"."BinaryValue" = :BinaryValue
 WHERE
-	LinqDataTypes.ID = 1
+	"LinqDataTypes".ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t.BinaryValue
+	t."BinaryValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
 	t.ID = 1
 

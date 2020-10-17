@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Max(ch.ChildID)
+	Max(ch."ChildID")
 FROM
-	Child ch
+	"Child" ch
 GROUP BY
-	ch.ChildID
+	ch."ChildID"
 

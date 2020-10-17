@@ -2,10 +2,10 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p_.ParentID,
-	p_.Value1
+	p_."ParentID",
+	p_."Value1"
 FROM
-	Parent p_
+	"Parent" p_
 WHERE
-	p_.ParentID = 3
+	p_."ParentID" = 3
 

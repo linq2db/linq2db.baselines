@@ -1,21 +1,21 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE BlobClass20
+CREATE TABLE "BlobClass20"
 (
-	Id        Int  NOT NULL,
-	BlobValue Blob     NULL,
+	"Id"        Int  NOT NULL,
+	"BlobValue" Blob     NULL,
 
-	CONSTRAINT PK_BlobClass20 PRIMARY KEY (Id)
+	CONSTRAINT "PK_BlobClass20" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO BlobClass20
+INSERT INTO "BlobClass20"
 (
-	Id,
-	BlobValue
+	"Id",
+	"BlobValue"
 )
 VALUES
 (
@@ -27,28 +27,28 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.Id,
-	t1.BlobValue
+	t1."Id",
+	t1."BlobValue"
 FROM
-	BlobClass20 t1
+	"BlobClass20" t1
 WHERE
-	t1.Id = 1
+	t1."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.Id,
-	t1.BlobValue
+	t1."Id",
+	t1."BlobValue"
 FROM
-	BlobClass20 t1
+	"BlobClass20" t1
 WHERE
-	t1.Id = 1
+	t1."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE BlobClass20
+DROP TABLE "BlobClass20"
 

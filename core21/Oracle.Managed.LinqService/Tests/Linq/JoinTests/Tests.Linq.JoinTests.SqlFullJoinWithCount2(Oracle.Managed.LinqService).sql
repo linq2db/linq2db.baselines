@@ -6,18 +6,18 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	COUNT(left_1.ParentID),
-	COUNT(p_1.ParentID),
+	COUNT(left_1."ParentID"),
+	COUNT(p_1."ParentID"),
 	COUNT(*)
 FROM
 	(
 		SELECT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID <> :id
+			p."ParentID" <> :id
 	) left_1
-		FULL JOIN Parent p_1 ON p_1.ParentID = left_1.ParentID
+		FULL JOIN "Parent" p_1 ON p_1."ParentID" = left_1."ParentID"
 FETCH NEXT :take ROWS ONLY
 

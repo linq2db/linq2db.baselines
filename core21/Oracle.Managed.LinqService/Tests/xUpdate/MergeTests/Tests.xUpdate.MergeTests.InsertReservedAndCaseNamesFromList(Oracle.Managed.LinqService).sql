@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	TestMerge1 t1
+	"TestMerge1" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -15,12 +15,12 @@ SET     @Field2 = NULL
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -41,12 +41,12 @@ SET     @Field2 = NULL
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -67,12 +67,12 @@ SET     @Field2 = 3
 DECLARE @Field4 Int32
 SET     @Field4 = 203
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -93,12 +93,12 @@ SET     @Field2 = 6
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -112,7 +112,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	TestMerge2 t1
+	"TestMerge2" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -125,12 +125,12 @@ SET     @Field2 = 3
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -151,12 +151,12 @@ SET     @Field2 = 7
 DECLARE @Field4 Int32
 SET     @Field4 = 214
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -177,12 +177,12 @@ SET     @Field2 = 4
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -203,12 +203,12 @@ SET     @Field2 = NULL
 DECLARE @Field4 Int32
 SET     @Field4 = 216
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -222,61 +222,61 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
-	t1.Field5
+	t1."Id",
+	t1."Field1",
+	t1."Field2",
+	t1."Field3",
+	t1."Field4",
+	t1."Field5"
 FROM
-	TestMerge2 t1
+	"TestMerge2" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-MERGE INTO TestMerge1 Target
-USING (	SELECT 5 as_1, 10 take, 4 skip, NULL Skip_1, NULL insert_1, NULL SELECT_1 FROM sys.dual
+MERGE INTO "TestMerge1" Target
+USING (	SELECT 5 "as_1", 10 "take", 4 "skip", NULL "Skip_1", NULL "insert_1", NULL SELECT_1 FROM sys.dual
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL FROM sys.dual
 	UNION ALL
 	SELECT 3, NULL, 3, NULL, NULL, NULL FROM sys.dual
 	UNION ALL
-	SELECT 4, 5, 7, NULL, 214, NULL FROM sys.dual) Source
-ON (Target.Id = Source.as_1)
+	SELECT 4, 5, 7, NULL, 214, NULL FROM sys.dual) "Source"
+ON (Target."Id" = "Source"."as_1")
 
 WHEN NOT MATCHED THEN
 INSERT
 (
-	Id,
-	Field1,
-	Field2,
-	Field3,
-	Field4,
-	Field5
+	"Id",
+	"Field1",
+	"Field2",
+	"Field3",
+	"Field4",
+	"Field5"
 )
 VALUES
 (
-	Source.as_1,
-	Source.take,
-	Source.skip,
-	Source.Skip_1,
-	Source.insert_1,
-	Source.SELECT_1
+	"Source"."as_1",
+	"Source"."take",
+	"Source"."skip",
+	"Source"."Skip_1",
+	"Source"."insert_1",
+	"Source".SELECT_1
 )
- WHERE Source.insert_1 = 216
+ WHERE "Source"."insert_1" = 216
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.Id,
-	t1.Field1,
-	t1.Field2,
-	t1.Field3,
-	t1.Field4,
-	t1.Field5
+	t1."Id",
+	t1."Field1",
+	t1."Field2",
+	t1."Field3",
+	t1."Field4",
+	t1."Field5"
 FROM
-	TestMerge1 t1
+	"TestMerge1" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 

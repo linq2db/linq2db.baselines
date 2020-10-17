@@ -2,19 +2,19 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t.ParentID,
-	t.Value1
+	t."ParentID",
+	t."Value1"
 FROM
-	Parent t
+	"Parent" t
 WHERE
 	(
 		SELECT
 			Count(*)
 		FROM
-			GrandChild t1
+			"GrandChild" t1
 		WHERE
-			t.ParentID = t1.ParentID AND t1.ChildID > 22
+			t."ParentID" = t1."ParentID" AND t1."ChildID" > 22
 	) > 1
 ORDER BY
-	t.ParentID
+	t."ParentID"
 

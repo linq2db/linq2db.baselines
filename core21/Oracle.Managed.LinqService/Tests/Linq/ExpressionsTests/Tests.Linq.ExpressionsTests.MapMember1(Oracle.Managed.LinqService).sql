@@ -6,10 +6,10 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			Child c_1
+			"Child" c_1
 		WHERE
-			p.ParentID = c_1.ParentID AND c_1.ChildID > 0
+			p."ParentID" = c_1."ParentID" AND c_1."ChildID" > 0
 	)
 FROM
-	Parent p
+	"Parent" p
 

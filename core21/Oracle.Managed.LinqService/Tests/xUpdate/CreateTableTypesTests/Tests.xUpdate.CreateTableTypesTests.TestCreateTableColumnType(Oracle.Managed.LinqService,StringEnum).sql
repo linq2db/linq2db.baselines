@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE CreateTableTypes
+CREATE TABLE "CreateTableTypes"
 (
-	Id         Int        NOT NULL,
-	StringEnum VarChar(2) NOT NULL
+	"Id"         Int        NOT NULL,
+	"StringEnum" VarChar(2) NOT NULL
 )
 
 BeforeExecute
@@ -14,10 +14,10 @@ SET     @Id = 1
 DECLARE @StringEnum Varchar2(2) -- String
 SET     @StringEnum = '14'
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	StringEnum
+	"Id",
+	"StringEnum"
 )
 VALUES
 (
@@ -32,10 +32,10 @@ SET     @Id = 2
 DECLARE @StringEnum Varchar2(1) -- String
 SET     @StringEnum = '4'
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	StringEnum
+	"Id",
+	"StringEnum"
 )
 VALUES
 (
@@ -47,15 +47,15 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.Id,
-	t1.StringEnum
+	t1."Id",
+	t1."StringEnum"
 FROM
-	CreateTableTypes t1
+	"CreateTableTypes" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE CreateTableTypes
+DROP TABLE "CreateTableTypes"
 

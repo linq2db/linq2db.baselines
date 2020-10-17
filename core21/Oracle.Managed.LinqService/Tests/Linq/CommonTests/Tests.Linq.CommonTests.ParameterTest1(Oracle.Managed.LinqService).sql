@@ -4,20 +4,20 @@ DECLARE @id Int32
 SET     @id = 1
 
 SELECT
-	p.ParentID
+	p."ParentID"
 FROM
-	Child p
+	"Child" p
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			Parent t
+			"Parent" t
 		WHERE
-			t.ParentID = :id AND t.ParentID = p.ParentID
+			t."ParentID" = :id AND t."ParentID" = p."ParentID"
 	)
 GROUP BY
-	p.ParentID
+	p."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -25,18 +25,18 @@ DECLARE @id Int32
 SET     @id = 2
 
 SELECT
-	p.ParentID
+	p."ParentID"
 FROM
-	Child p
+	"Child" p
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			Parent t
+			"Parent" t
 		WHERE
-			t.ParentID = :id AND t.ParentID = p.ParentID
+			t."ParentID" = :id AND t."ParentID" = p."ParentID"
 	)
 GROUP BY
-	p.ParentID
+	p."ParentID"
 

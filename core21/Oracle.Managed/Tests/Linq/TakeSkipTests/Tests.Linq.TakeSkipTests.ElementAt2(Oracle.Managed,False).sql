@@ -4,11 +4,11 @@ DECLARE @n Int32
 SET     @n = 3
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID > 1
+	p."ParentID" > 1
 OFFSET :n ROWS FETCH NEXT 1 ROWS ONLY 
 

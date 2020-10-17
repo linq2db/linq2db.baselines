@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.FirstName
+	p."FirstName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName || ' ' || Cast(1 as VarChar(11)) = 'John 1'
+	p."FirstName" || ' ' || Cast(1 as VarChar(11)) = 'John 1'
 

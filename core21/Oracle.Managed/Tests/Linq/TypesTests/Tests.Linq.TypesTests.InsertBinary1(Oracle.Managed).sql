@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 
@@ -11,11 +11,11 @@ BeforeExecute
 DECLARE @data_1 Blob -- Object
 SET     @data_1 = NULL
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	BinaryValue,
-	BoolValue
+	"BinaryValue",
+	"BoolValue"
 )
 VALUES
 (
@@ -28,7 +28,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 

@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 
@@ -23,15 +23,15 @@ SET     @BinaryValue = HEXTORAW('01020304')
 DECLARE @SmallIntValue Int16
 SET     @SmallIntValue = 0
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	MoneyValue,
-	DateTimeValue,
-	BoolValue,
-	GuidValue,
-	BinaryValue,
-	SmallIntValue
+	"MoneyValue",
+	"DateTimeValue",
+	"BoolValue",
+	"GuidValue",
+	"BinaryValue",
+	"SmallIntValue"
 )
 VALUES
 (
@@ -51,14 +51,14 @@ SET     @take = 2
 
 SELECT
 	t.ID,
-	t.MoneyValue,
-	t.DateTimeValue,
-	t.BoolValue,
-	t.GuidValue,
-	t.BinaryValue,
-	t.SmallIntValue
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."BoolValue",
+	t."GuidValue",
+	t."BinaryValue",
+	t."SmallIntValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
 	t.ID = 1001
 FETCH NEXT :take ROWS ONLY
@@ -67,7 +67,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 

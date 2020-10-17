@@ -4,7 +4,7 @@ DECLARE @Id Int32
 SET     @Id = 104
 
 DELETE FROM
-	LinqDataTypes r
+	"LinqDataTypes" r
 WHERE
 	r.ID >= 101 AND r.ID < :Id
 
@@ -15,10 +15,10 @@ SET     @Id = 101
 DECLARE @Value_1 Varchar2(2) -- String
 SET     @Value_1 = '11'
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	StringValue
+	"StringValue"
 )
 VALUES
 (
@@ -33,10 +33,10 @@ SET     @Id = 102
 DECLARE @Value_1 Varchar2(2) -- String
 SET     @Value_1 = '22'
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	StringValue
+	"StringValue"
 )
 VALUES
 (
@@ -51,10 +51,10 @@ SET     @Id = 103
 DECLARE @Value_1 Varchar2 -- String
 SET     @Value_1 = NULL
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	StringValue
+	"StringValue"
 )
 VALUES
 (
@@ -67,9 +67,9 @@ BeforeExecute
 
 SELECT
 	r.ID,
-	r.StringValue
+	r."StringValue"
 FROM
-	LinqDataTypes r
+	"LinqDataTypes" r
 WHERE
 	r.ID >= 101 AND r.ID <= 103
 ORDER BY
@@ -80,10 +80,10 @@ BeforeExecute
 
 SELECT
 	r.ID,
-	r.IntValue,
-	r.StringValue
+	r."IntValue",
+	r."StringValue"
 FROM
-	LinqDataTypes r
+	"LinqDataTypes" r
 WHERE
 	r.ID >= 101 AND r.ID <= 103
 ORDER BY
@@ -95,7 +95,7 @@ DECLARE @Id Int32
 SET     @Id = 104
 
 DELETE FROM
-	LinqDataTypes r
+	"LinqDataTypes" r
 WHERE
 	r.ID >= 101 AND r.ID < :Id
 
