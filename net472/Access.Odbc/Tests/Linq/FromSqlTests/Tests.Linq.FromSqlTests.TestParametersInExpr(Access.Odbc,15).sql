@@ -380,7 +380,7 @@ SELECT
 FROM
 	[sample_class] [c_1]
 		INNER JOIN (
-			SELECT * FROM sample_class where id >= ? and id < ?
+			SELECT * FROM [sample_class] where [id] >= ? and [id] < ?
 		) [s] ON ([s].[id] = [c_1].[id])
 WHERE
 	[s].[id] > 10
