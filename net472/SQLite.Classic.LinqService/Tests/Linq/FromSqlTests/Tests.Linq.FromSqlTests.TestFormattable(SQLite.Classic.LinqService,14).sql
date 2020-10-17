@@ -379,7 +379,7 @@ SELECT
 	[c_1].[id]
 FROM
 	(
-		SELECT * FROM sample_class where id >= @p1 and id < @p2
+		SELECT * FROM [sample_class] where [id] >= @p1 and [id] < @p2
 	) [c_1]
 WHERE
 	[c_1].[id] > 10
