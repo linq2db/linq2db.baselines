@@ -29,11 +29,7 @@ SELECT
 FROM
 	"Issue2431Table" r
 WHERE
-	CASE
-		WHEN r."Json"::json #>> '{json, text}' = 'test'
-			THEN True
-		ELSE False
-	END = True
+	r."Json"::json #>> '{json, text}' = 'test'
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL

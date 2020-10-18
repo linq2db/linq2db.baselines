@@ -31,11 +31,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 <= CASE
-		WHEN i."StrValue" > '4' THEN 1
-		WHEN i."StrValue" = '4' THEN 0
-		ELSE -1
-	END
+	i."StrValue" >= '4'
 LIMIT :take
 
 BeforeExecute
@@ -49,11 +45,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '4' THEN 1
-		WHEN i."StrValue" = '4' THEN 0
-		ELSE -1
-	END >= 0
+	i."StrValue" >= '4'
 LIMIT :take
 
 BeforeExecute
@@ -67,11 +59,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 >= CASE
-		WHEN i."StrValue" > '2' THEN 1
-		WHEN i."StrValue" = '2' THEN 0
-		ELSE -1
-	END
+	i."StrValue" <= '2'
 LIMIT :take
 
 BeforeExecute
@@ -85,11 +73,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '2' THEN 1
-		WHEN i."StrValue" = '2' THEN 0
-		ELSE -1
-	END <= 0
+	i."StrValue" <= '2'
 LIMIT :take
 
 BeforeExecute
@@ -103,11 +87,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 < CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END
+	i."StrValue" > '3'
 LIMIT :take
 
 BeforeExecute
@@ -121,11 +101,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END > 0
+	i."StrValue" > '3'
 LIMIT :take
 
 BeforeExecute
@@ -139,11 +115,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 > CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END
+	i."StrValue" < '3'
 LIMIT :take
 
 BeforeExecute
@@ -157,11 +129,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END < 0
+	i."StrValue" < '3'
 LIMIT :take
 
 BeforeExecute
@@ -175,11 +143,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 = CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END
+	i."StrValue" = '3'
 LIMIT :take
 
 BeforeExecute
@@ -193,11 +157,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END = 0
+	i."StrValue" = '3'
 LIMIT :take
 
 BeforeExecute
@@ -211,11 +171,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 >= CASE
-		WHEN i."StrValue" > '2' THEN 1
-		WHEN i."StrValue" = '2' THEN 0
-		ELSE -1
-	END
+	i."StrValue" <= '2'
 LIMIT :take
 
 BeforeExecute
@@ -229,11 +185,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '2' THEN 1
-		WHEN i."StrValue" = '2' THEN 0
-		ELSE -1
-	END <= 0
+	i."StrValue" <= '2'
 LIMIT :take
 
 BeforeExecute
@@ -247,11 +199,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 <= CASE
-		WHEN i."StrValue" > '4' THEN 1
-		WHEN i."StrValue" = '4' THEN 0
-		ELSE -1
-	END
+	i."StrValue" >= '4'
 LIMIT :take
 
 BeforeExecute
@@ -265,11 +213,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '4' THEN 1
-		WHEN i."StrValue" = '4' THEN 0
-		ELSE -1
-	END >= 0
+	i."StrValue" >= '4'
 LIMIT :take
 
 BeforeExecute
@@ -283,11 +227,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 > CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END
+	i."StrValue" < '3'
 LIMIT :take
 
 BeforeExecute
@@ -301,11 +241,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END < 0
+	i."StrValue" < '3'
 LIMIT :take
 
 BeforeExecute
@@ -319,11 +255,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 < CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END
+	i."StrValue" > '3'
 LIMIT :take
 
 BeforeExecute
@@ -337,11 +269,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '3' THEN 1
-		WHEN i."StrValue" = '3' THEN 0
-		ELSE -1
-	END > 0
+	i."StrValue" > '3'
 LIMIT :take
 
 BeforeExecute
@@ -355,11 +283,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 <= CASE
-		WHEN i."StrValue" > '5' THEN 1
-		WHEN i."StrValue" = '5' THEN 0
-		ELSE -1
-	END
+	i."StrValue" >= '5'
 LIMIT :take
 
 BeforeExecute
@@ -373,11 +297,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '5' THEN 1
-		WHEN i."StrValue" = '5' THEN 0
-		ELSE -1
-	END >= 0
+	i."StrValue" >= '5'
 LIMIT :take
 
 BeforeExecute
@@ -391,11 +311,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	0 >= CASE
-		WHEN i."StrValue" > '1' THEN 1
-		WHEN i."StrValue" = '1' THEN 0
-		ELSE -1
-	END
+	i."StrValue" <= '1'
 LIMIT :take
 
 BeforeExecute
@@ -409,11 +325,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	CASE
-		WHEN i."StrValue" > '1' THEN 1
-		WHEN i."StrValue" = '1' THEN 0
-		ELSE -1
-	END <= 0
+	i."StrValue" <= '1'
 LIMIT :take
 
 BeforeExecute
