@@ -4,26 +4,19 @@ DECLARE @take Integer -- Int32
 SET     @take = 1000
 
 SELECT
-	t1."Diagnosis",
-	t1."Key_1",
-	Avg(t1."PersonID")
+	"a_Patient"."Diagnosis",
+	"a_Patient"."PersonID",
+	Avg("selectParam"."PersonID")
 FROM
-	(
-		SELECT
-			"selectParam"."PersonID",
-			"a_Patient"."PersonID" as "Key_1",
-			"a_Patient"."Diagnosis"
-		FROM
-			"Person" "selectParam"
-				LEFT JOIN "Patient" "a_Patient" ON "selectParam"."PersonID" = "a_Patient"."PersonID"
-	) t1
+	"Person" "selectParam"
+		LEFT JOIN "Patient" "a_Patient" ON "selectParam"."PersonID" = "a_Patient"."PersonID"
 GROUP BY
-	t1."PersonID",
-	t1."Key_1",
-	t1."Diagnosis"
+	"selectParam"."PersonID",
+	"a_Patient"."PersonID",
+	"a_Patient"."Diagnosis"
 HAVING
-	t1."PersonID" = 1
+	"selectParam"."PersonID" = 1
 ORDER BY
-	t1."Diagnosis" DESC
+	"a_Patient"."Diagnosis" DESC
 LIMIT :take
 

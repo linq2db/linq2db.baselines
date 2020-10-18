@@ -23,18 +23,26 @@ FROM
 	) p1
 		LEFT JOIN LATERAL (
 			SELECT
-				c_2.c1 as "Count_1"
+				c_3.c1 as "Count_1"
 			FROM
 				(
 					SELECT
-						c_1."ParentID" + 1 as c1
+						c_2."ParentID" + 1 as c1
 					FROM
-						"Child" c_1
+						(
+							SELECT
+								c_1."ParentID" + 1 as "ID",
+								c_1."ParentID"
+							FROM
+								"Child" c_1
+							WHERE
+								p1."ParentID" = c_1."ParentID"
+						) c_2
 					WHERE
-						c_1."ParentID" + 1 < p1."ID" AND p1."ParentID" = c_1."ParentID"
-				) c_2
+						c_2."ID" < p1."ID"
+				) c_3
 			WHERE
-				c_2.c1 < p1."ID"
+				c_3.c1 < p1."ID"
 			LIMIT :take
 		) t1 ON 1=1
 WHERE

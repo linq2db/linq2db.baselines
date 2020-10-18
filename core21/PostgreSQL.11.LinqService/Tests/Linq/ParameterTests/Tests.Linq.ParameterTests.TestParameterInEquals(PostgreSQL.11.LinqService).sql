@@ -23,14 +23,14 @@ SELECT
 FROM
 	"TestEqualsTable1" t1
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			"TestEqualsTable2" t2
 		WHERE
 			t1."Id" = t2."FK" AND t2."Id" IS NULL
-	)
+	))
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

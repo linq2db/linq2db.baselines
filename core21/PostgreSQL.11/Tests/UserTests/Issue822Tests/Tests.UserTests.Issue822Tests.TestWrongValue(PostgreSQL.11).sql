@@ -17,14 +17,14 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			"LinqDataTypes" t2
 		WHERE
 			t2."ID" = :id_1 AND t2."ID" = t1."ID"
-	)
+	))
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -45,12 +45,12 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			"LinqDataTypes" t2
 		WHERE
 			t2."ID" = :id_1 AND t2."ID" = t1."ID"
-	)
+	))
 

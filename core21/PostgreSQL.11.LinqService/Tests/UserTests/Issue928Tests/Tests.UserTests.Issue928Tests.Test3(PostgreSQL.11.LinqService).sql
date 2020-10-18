@@ -15,14 +15,14 @@ FROM
 			FROM
 				"Parent" p
 			WHERE
-				EXISTS(
+				(EXISTS(
 					SELECT
 						*
 					FROM
 						"Child" ch
 					WHERE
 						ch."ParentID" = p."ParentID"
-				)
+				))
 			GROUP BY
 				p."ParentID"
 		) o ON o."ParentID" = p1."ParentID"
