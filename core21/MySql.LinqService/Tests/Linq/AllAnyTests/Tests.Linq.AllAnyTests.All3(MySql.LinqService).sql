@@ -7,13 +7,13 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	NOT EXISTS(
+	((NOT EXISTS(
 		SELECT
 			*
 		FROM
 			`Child` `c_1`
 		WHERE
-			`p`.`ParentID` = `c_1`.`ParentID` AND EXISTS(
+			`p`.`ParentID` = `c_1`.`ParentID` AND NOT (((NOT EXISTS(
 				SELECT
 					*
 				FROM
@@ -21,6 +21,6 @@ WHERE
 				WHERE
 					`c_1`.`ParentID` = `g_1`.`ParentID` AND `c_1`.`ChildID` = `g_1`.`ChildID` AND
 					(`g_1`.`ParentID` <= 3 OR `g_1`.`ParentID` IS NULL)
-			)
-	)
+			))))
+	)))
 

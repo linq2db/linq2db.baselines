@@ -43,8 +43,8 @@ CREATE TABLE `CreateTable`
 	`UnsignedBigInt`   BIGINT UNSIGNED   NOT NULL,
 	`Decimal`          DECIMAL           NOT NULL,
 	`Decimal15_0`      DECIMAL(15)       NOT NULL,
-	`Decimal10_5`      DECIMAL(10,5)     NOT NULL,
-	`Decimal20_2`      DECIMAL(20,2)     NOT NULL,
+	`Decimal10_5`      DECIMAL(10, 5)    NOT NULL,
+	`Decimal20_2`      DECIMAL(20, 2)    NOT NULL,
 	`Float`            FLOAT             NOT NULL,
 	`Float10`          FLOAT(10)         NOT NULL,
 	`Double`           DOUBLE            NOT NULL,
@@ -138,13 +138,13 @@ DECLARE @BigInt_1 Int64
 SET     @BigInt_1 = -9223372036854775808
 DECLARE @UnsignedBigInt UInt64
 SET     @UnsignedBigInt = 18446744073709551615
-DECLARE @Decimal_1 NewDecimal(4,0) -- Decimal
+DECLARE @Decimal_1 NewDecimal(4, 0) -- Decimal
 SET     @Decimal_1 = 1234
-DECLARE @Decimal15_0 NewDecimal(15,0) -- Decimal
+DECLARE @Decimal15_0 NewDecimal(15, 0) -- Decimal
 SET     @Decimal15_0 = 123456789012345
-DECLARE @Decimal10_5 NewDecimal(9,4) -- Decimal
+DECLARE @Decimal10_5 NewDecimal(9, 4) -- Decimal
 SET     @Decimal10_5 = -12345.2345
-DECLARE @Decimal20_2 NewDecimal(9,2) -- Decimal
+DECLARE @Decimal20_2 NewDecimal(9, 2) -- Decimal
 SET     @Decimal20_2 = -3412345.23
 DECLARE @Float_1 Float -- Single
 SET     @Float_1 = 3244.24
