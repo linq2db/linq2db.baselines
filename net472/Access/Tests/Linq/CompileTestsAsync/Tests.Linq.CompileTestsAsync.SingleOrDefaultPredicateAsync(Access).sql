@@ -150,15 +150,27 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
-DECLARE @Id_2 Integer -- Int32
-SET     @Id_2 = 2
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Id_1 Integer -- Int32
+SET     @Id_1 = 2
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 2
 
 SELECT TOP 2
-	[c_1].[Id]
+	[c_2].[Value_1]
 FROM
-	[AsyncDataTable] [c_1]
+	(
+		SELECT
+			@Id as [Id],
+			[c_1].[Id] as [Value_1]
+		FROM
+			[AsyncDataTable] [c_1]
+		WHERE
+			[c_1].[Id] = @Id_1
+	) [c_2]
 WHERE
-	[c_1].[Id] = @Id_2
+	[c_2].[Id] = @p1
 
 BeforeExecute
 -- Access AccessOleDb

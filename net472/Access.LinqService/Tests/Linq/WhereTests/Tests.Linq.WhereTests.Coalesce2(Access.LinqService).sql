@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	Iif([p].[ParentID] = 1, True, False) = True
+	([p].[ParentID] = 1)
 

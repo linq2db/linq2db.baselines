@@ -61,9 +61,9 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[f].[c2],
+	[f].[Label],
 	[f].[SubSum],
-	[f].[c2_1],
+	[f].[c2],
 	[f].[Count_1]
 FROM
 	(
@@ -78,7 +78,7 @@ FROM
 				WHERE
 					([a_Parent_2].[ParentID] = [e].[ParentID] AND ([a_Parent_2].[Value1] = [e].[Value1] OR [a_Parent_2].[Value1] IS NULL AND [e].[Value1] IS NULL))
 			) as [Sum_1],
-			Iif([e].[Value1] IS NULL, 0, [e].[Value1]) as [c2],
+			Iif([e].[Value1] IS NULL, 0, [e].[Value1]) as [Label],
 			(
 				SELECT
 					Sum([c_1].[ChildID])
@@ -96,7 +96,7 @@ FROM
 						LEFT JOIN [Parent] [a_Parent_1] ON ([c_2].[ParentID] = [a_Parent_1].[ParentID])
 				WHERE
 					([a_Parent_1].[ParentID] = [e].[ParentID] AND ([a_Parent_1].[Value1] = [e].[Value1] OR [a_Parent_1].[Value1] IS NULL AND [e].[Value1] IS NULL))
-			) as [c2_1],
+			) as [c2],
 			[t1].[Count_1]
 		FROM
 			[Parent] [e]

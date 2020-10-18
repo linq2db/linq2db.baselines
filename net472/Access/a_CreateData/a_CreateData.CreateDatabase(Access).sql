@@ -549,7 +549,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2001-01-11 01:11:21#
@@ -599,7 +599,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 2.49
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2005-05-15 05:15:25#
@@ -649,7 +649,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 3.99
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-19 09:19:29#
@@ -699,7 +699,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 4
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 4.50
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-20 09:19:29#
@@ -749,7 +749,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 5.50
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-20 09:19:29#
@@ -799,7 +799,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 6
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 6.55
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-22 09:19:29#
@@ -849,7 +849,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 7
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 7.00
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-23 09:19:29#
@@ -899,7 +899,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 8
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 8.99
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-24 09:19:29#
@@ -949,7 +949,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 9
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 9.63
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-25 09:19:29#
@@ -999,7 +999,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 10
-DECLARE @MoneyValue VarChar(4,2) -- AnsiString
+DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 10.77
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-26 09:19:29#
@@ -1049,7 +1049,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 11
-DECLARE @MoneyValue VarChar(4,2) -- AnsiString
+DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 11.45
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-27#
@@ -1099,7 +1099,7 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 12
-DECLARE @MoneyValue VarChar(4,2) -- AnsiString
+DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 11.45
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2012-11-07 19:19:29#
@@ -2789,7 +2789,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2001-01-11 01:11:21#
@@ -2839,7 +2839,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 2.49
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2005-05-15 05:15:25#
@@ -2889,7 +2889,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 3.99
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-19 09:19:29#
@@ -2939,7 +2939,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 4
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 4.50
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-20 09:19:29#
@@ -2989,7 +2989,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 5.50
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-20 09:19:29#
@@ -3039,7 +3039,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 6
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 6.55
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-22 09:19:29#
@@ -3089,7 +3089,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 7
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 7.00
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-23 09:19:29#
@@ -3139,7 +3139,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 8
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 8.99
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-24 09:19:29#
@@ -3189,7 +3189,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 9
-DECLARE @MoneyValue VarChar(3,2) -- AnsiString
+DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 9.63
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-25 09:19:29#
@@ -3239,7 +3239,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 10
-DECLARE @MoneyValue VarChar(4,2) -- AnsiString
+DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 10.77
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-26 09:19:29#
@@ -3289,7 +3289,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 11
-DECLARE @MoneyValue VarChar(4,2) -- AnsiString
+DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 11.45
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2009-09-27#
@@ -3339,7 +3339,7 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 12
-DECLARE @MoneyValue VarChar(4,2) -- AnsiString
+DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 11.45
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2012-11-07 19:19:29#

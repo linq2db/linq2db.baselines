@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	0 <= Iif([p].[FirstName] > '55', 1, Iif([p].[FirstName] = '55', 0, -1)) AND
-	[p].[PersonID] = 1
+	[p].[FirstName] >= '55' AND [p].[PersonID] = 1
 

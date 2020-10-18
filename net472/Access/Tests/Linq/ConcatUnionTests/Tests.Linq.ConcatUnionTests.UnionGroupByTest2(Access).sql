@@ -2,34 +2,28 @@
 -- Access AccessOleDb
 
 SELECT
-	[t4].[year_1],
-	[t4].[year_2],
-	[t4].[int_1]
+	[t3].[year_1],
+	[t3].[year_2],
+	[t3].[int_1]
 FROM
 	(
 		SELECT
-			[t1].[year_1],
-			[t1].[year_1] as [year_2],
-			[t1].[c1] as [int_1]
+			[_].[SmallIntValue] as [year_1],
+			[_].[SmallIntValue] as [year_2],
+			3 as [int_1]
 		FROM
-			(
-				SELECT
-					[_].[SmallIntValue] as [year_1],
-					3 as [c1]
-				FROM
-					[LinqDataTypes] [_]
-			) [t1]
+			[LinqDataTypes] [_]
 		UNION
 		SELECT
-			[t3].[month_1] as [year_1],
-			[t3].[year_1] as [year_2],
-			[t3].[c1] as [int_1]
+			[t2].[month_1] as [year_1],
+			[t2].[year_1] as [year_2],
+			[t2].[int_1]
 		FROM
 			(
 				SELECT
-					[t2].[c1] as [month_1],
-					[t2].[c2] as [year_1],
-					1 as [c1]
+					[t1].[c1] as [month_1],
+					[t1].[c2] as [year_1],
+					1 as [int_1]
 				FROM
 					(
 						SELECT
@@ -37,23 +31,17 @@ FROM
 							DatePart('yyyy', [selectParam].[DateTimeValue]) as [c2]
 						FROM
 							[LinqDataTypes] [selectParam]
-					) [t2]
+					) [t1]
 				GROUP BY
-					[t2].[c1],
-					[t2].[c2]
-			) [t3]
-	) [t4]
+					[t1].[c1],
+					[t1].[c2]
+			) [t2]
+	) [t3]
 UNION
 SELECT
-	[t5].[year_1],
-	[t5].[year_1],
-	[t5].[c1]
+	DatePart('yyyy', [_1].[DateTimeValue]),
+	DatePart('yyyy', [_1].[DateTimeValue]),
+	2
 FROM
-	(
-		SELECT
-			DatePart('yyyy', [_1].[DateTimeValue]) as [year_1],
-			2 as [c1]
-		FROM
-			[LinqDataTypes] [_1]
-	) [t5]
+	[LinqDataTypes] [_1]
 

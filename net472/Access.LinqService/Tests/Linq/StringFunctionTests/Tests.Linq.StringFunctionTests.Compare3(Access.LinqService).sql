@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Iif(Mid([p].[FirstName], 2, 2) > 'oh', 1, Iif(Mid([p].[FirstName], 2, 2) = 'oh', 0, -1)) = 0 AND
-	[p].[PersonID] = 1
+	Mid([p].[FirstName], 2, 2) = 'oh' AND [p].[PersonID] = 1
 

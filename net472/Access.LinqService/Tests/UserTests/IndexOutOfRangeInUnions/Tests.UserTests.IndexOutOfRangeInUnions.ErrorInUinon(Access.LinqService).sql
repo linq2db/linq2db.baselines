@@ -35,22 +35,22 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[t1].[DocEntry],
+	[t1].[NumeroInterno],
 	[t1].[StatusValor],
-	[t1].[c1]
+	[t1].[DescricaoStatus]
 FROM
 	(
 		SELECT
-			[doSap].[DocEntry],
+			[doSap].[DocEntry] as [NumeroInterno],
 			Iif([doSap].[DocStatus] = 'O', 'Aberto', 'Fechado') as [StatusValor],
-			'Manual/Externo' as [c1]
+			'Manual/Externo' as [DescricaoStatus]
 		FROM
 			[O1] [doSap]
 		UNION
 		SELECT
-			[doSap_1].[DocEntry],
+			[doSap_1].[DocEntry] as [NumeroInterno],
 			Iif([doSap_1].[DocStatus] = 'O', 'Aberto', 'Fechado') as [StatusValor],
-			'Manual/Externo' as [c1]
+			'Manual/Externo' as [DescricaoStatus]
 		FROM
 			[O2] [doSap_1]
 	) [t1]

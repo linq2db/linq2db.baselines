@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 5000
-DECLARE @MoneyValue VarChar(1,0) -- AnsiString
+DECLARE @MoneyValue VarChar(1, 0) -- AnsiString
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue Date -- DateTime
 SET     @DateTimeValue = #2018-01-03#

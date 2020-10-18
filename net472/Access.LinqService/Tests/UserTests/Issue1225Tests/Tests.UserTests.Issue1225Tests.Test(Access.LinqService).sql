@@ -74,15 +74,25 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	'Id',
-	[selectParam].[Id],
-	Sum(Iif([a_ActualStage].[Id] IS NULL, NULL, [a_ActualStage].[Id]))
+	[t1].[c3],
+	[t1].[Id],
+	Sum(Iif([t1].[Id_1] IS NULL, NULL, [t1].[Id_1]))
 FROM
-	[Task] [selectParam]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON ([selectParam].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
+	(
+		SELECT
+			'Id' as [c1],
+			[selectParam].[Id] as [c2],
+			'Id' as [c3],
+			[selectParam].[Id],
+			[a_ActualStage].[Id] as [Id_1]
+		FROM
+			[Task] [selectParam]
+				LEFT JOIN [TaskStage] [a_ActualStage] ON ([selectParam].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
+	) [t1]
 GROUP BY
-	[selectParam].[Id],
-	[selectParam].[Id]
+	[t1].[c2],
+	[t1].[c3],
+	[t1].[Id]
 
 BeforeExecute
 -- Access AccessOleDb

@@ -10,7 +10,7 @@ SELECT TOP 1
 FROM
 	[GrandChild] [с]
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
@@ -21,7 +21,7 @@ WHERE
 		WHERE
 			[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = @id1_1 AND
 			[_].[ParentID] = @Value_1
-	)
+	))
 ORDER BY
 	[с].[ChildID]
 

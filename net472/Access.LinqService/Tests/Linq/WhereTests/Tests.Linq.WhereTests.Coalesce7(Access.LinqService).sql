@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	Iif([p].[ParentID] = 1, 10, 20) = 20
+	[p].[ParentID] <> 1
 
