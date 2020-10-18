@@ -25,14 +25,14 @@ SELECT
 FROM
 	"Entity1711" t
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			"Relationship1711" r
 		WHERE
 			r."Deleted" = False AND r."EntityId" = t."Id"
-	)
+	))
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
