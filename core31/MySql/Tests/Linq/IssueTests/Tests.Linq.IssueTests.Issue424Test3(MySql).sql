@@ -12,5 +12,5 @@ FROM
 	`Parent` `t1`
 ORDER BY
 	`t1`.`ParentID` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 

@@ -8,7 +8,7 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID` DESC
-LIMIT 2,5
+LIMIT 2, 5
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -20,5 +20,5 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID` DESC
-LIMIT 2,5
+LIMIT 2, 5
 

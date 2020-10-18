@@ -6,9 +6,16 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			`Child` `c_1`
+			(
+				SELECT
+					`c_1`.`ParentID` + 1 as `ID`
+				FROM
+					`Child` `c_1`
+				WHERE
+					`p1`.`ParentID` = `c_1`.`ParentID`
+			) `c_2`
 		WHERE
-			`c_1`.`ParentID` + 1 < `p1`.`ID` AND `p1`.`ParentID` = `c_1`.`ParentID`
+			`c_2`.`ID` < `p1`.`ID`
 	)
 FROM
 	(

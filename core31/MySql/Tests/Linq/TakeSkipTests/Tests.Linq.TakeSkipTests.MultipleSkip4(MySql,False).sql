@@ -32,7 +32,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT 6,9223372036854775807
+LIMIT 6, 9223372036854775807
 
 BeforeExecute
 -- MySql MySql.Official MySql

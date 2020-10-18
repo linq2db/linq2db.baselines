@@ -6,11 +6,25 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			`Child` `c_1`
-				INNER JOIN `GrandChild` `g_1` ON `c_1`.`ParentID` = `g_1`.`ParentID` AND `c_1`.`ChildID` = `g_1`.`ChildID`
+			(
+				SELECT
+					`c_2`.`ParentID` + 1 as `ID`
+				FROM
+					(
+						SELECT
+							`g_1`.`ParentID` + 1 as `ID`,
+							`g_1`.`ParentID`
+						FROM
+							`Child` `c_1`
+								INNER JOIN `GrandChild` `g_1` ON `c_1`.`ParentID` = `g_1`.`ParentID` AND `c_1`.`ChildID` = `g_1`.`ChildID`
+						WHERE
+							`p1`.`ParentID` = `c_1`.`ParentID`
+					) `c_2`
+				WHERE
+					`c_2`.`ID` < `p1`.`ID`
+			) `c_3`
 		WHERE
-			`g_1`.`ParentID` + 1 < `p1`.`ID` AND `g_1`.`ParentID` + 1 < `p1`.`ID` AND
-			`p1`.`ParentID` = `c_1`.`ParentID`
+			`c_3`.`ID` < `p1`.`ID`
 	)
 FROM
 	(

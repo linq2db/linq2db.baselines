@@ -2,13 +2,13 @@
 -- MySqlConnector MySql
 
 SELECT
-	`p_1`.`PersonID`,
+	`p_1`.`ID`,
 	`p_1`.`FirstName_1`
 FROM
 	(
 		SELECT
 			Concat('123', `p`.`FirstName`, '0123451234') as `FirstName`,
-			`p`.`PersonID`,
+			`p`.`PersonID` as `ID`,
 			`p`.`FirstName` as `FirstName_1`
 		FROM
 			`Person` `p`

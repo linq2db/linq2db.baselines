@@ -29,17 +29,29 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
-DECLARE @Id_2 Int32
-SET     @Id_2 = 2
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @Id_1 Int32
+SET     @Id_1 = 2
+DECLARE @p1 Int32
+SET     @p1 = 2
 DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	`c_1`.`Id`
+	`c_2`.`Value_1`
 FROM
-	`AsyncDataTable` `c_1`
+	(
+		SELECT
+			@Id as `Id`,
+			`c_1`.`Id` as `Value_1`
+		FROM
+			`AsyncDataTable` `c_1`
+		WHERE
+			`c_1`.`Id` = @Id_1
+	) `c_2`
 WHERE
-	`c_1`.`Id` = @Id_2
+	`c_2`.`Id` = @p1
 LIMIT @take
 
 BeforeExecute

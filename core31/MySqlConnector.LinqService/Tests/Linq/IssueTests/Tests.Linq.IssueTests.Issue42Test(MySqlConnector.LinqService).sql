@@ -20,7 +20,7 @@ LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @MoneyValue NewDecimal(5,4) -- Decimal
+DECLARE @MoneyValue NewDecimal(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -78,7 +78,7 @@ LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @MoneyValue NewDecimal(5,4) -- Decimal
+DECLARE @MoneyValue NewDecimal(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'

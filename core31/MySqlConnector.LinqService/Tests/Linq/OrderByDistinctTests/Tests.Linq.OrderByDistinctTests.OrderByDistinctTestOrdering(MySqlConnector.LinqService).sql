@@ -39,7 +39,7 @@ FROM
 	`OrderByDistinctData` `x`
 ORDER BY
 	`x`.`OrderData1`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -54,7 +54,7 @@ FROM
 	`OrderByDistinctData` `x`
 ORDER BY
 	`x`.`OrderData1`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -69,7 +69,7 @@ FROM
 	`OrderByDistinctData` `x`
 ORDER BY
 	`x`.`OrderData1` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -84,7 +84,7 @@ FROM
 	`OrderByDistinctData` `x`
 ORDER BY
 	`x`.`OrderData1` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -100,7 +100,7 @@ FROM
 ORDER BY
 	`x`.`OrderData1`,
 	`x`.`OrderData2`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -116,7 +116,7 @@ FROM
 ORDER BY
 	`x`.`OrderData1`,
 	`x`.`OrderData2`
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -132,7 +132,7 @@ FROM
 ORDER BY
 	`x`.`OrderData1`,
 	`x`.`OrderData2` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -148,7 +148,7 @@ FROM
 ORDER BY
 	`x`.`OrderData1`,
 	`x`.`OrderData2` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -164,7 +164,7 @@ FROM
 ORDER BY
 	`x`.`OrderData1` DESC,
 	`x`.`OrderData2` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -180,7 +180,7 @@ FROM
 ORDER BY
 	`x`.`OrderData1` DESC,
 	`x`.`OrderData2` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -196,7 +196,7 @@ FROM
 ORDER BY
 	`x`.`OrderData1`,
 	`x`.`OrderData2` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -212,7 +212,7 @@ FROM
 ORDER BY
 	`x`.`OrderData1`,
 	`x`.`OrderData2` DESC
-LIMIT @skip,@take
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql

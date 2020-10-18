@@ -10,5 +10,5 @@ FROM
 	`Child` `ch`
 WHERE
 	`ch`.`ChildID` >= 0 AND `ch`.`ChildID` <= 100
-LIMIT @skip,9223372036854775807
+LIMIT @skip, 9223372036854775807
 

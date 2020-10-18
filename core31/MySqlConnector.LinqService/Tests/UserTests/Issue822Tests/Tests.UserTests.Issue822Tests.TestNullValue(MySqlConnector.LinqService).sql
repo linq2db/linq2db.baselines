@@ -17,14 +17,14 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			`LinqDataTypes` `_1`
 		WHERE
 			`_1`.`ID` = @id_1 AND `_1`.`ID` = `_`.`ID`
-	)
+	))
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -45,12 +45,12 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			`LinqDataTypes` `_1`
 		WHERE
 			`_1`.`ID` = @id_1 AND `_1`.`ID` = `_`.`ID`
-	)
+	))
 

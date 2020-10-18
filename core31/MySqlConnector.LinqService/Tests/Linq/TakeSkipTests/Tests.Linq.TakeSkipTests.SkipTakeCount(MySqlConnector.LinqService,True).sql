@@ -14,6 +14,6 @@ FROM
 			`t1`.`ChildID`
 		FROM
 			`Child` `t1`
-		LIMIT @skip,@take
+		LIMIT @skip, @take
 	) `t2`
 
