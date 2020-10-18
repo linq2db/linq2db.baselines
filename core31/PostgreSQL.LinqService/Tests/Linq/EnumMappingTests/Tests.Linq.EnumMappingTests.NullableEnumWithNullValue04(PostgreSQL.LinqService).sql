@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 105
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 105
 
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" >= 101 AND r."ID" < :Id
+	r."ID" >= 101 AND r."ID" < :p1
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
@@ -109,11 +109,11 @@ ORDER BY
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 105
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 105
 
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" >= 101 AND r."ID" < :Id
+	r."ID" >= 101 AND r."ID" < :p1
 

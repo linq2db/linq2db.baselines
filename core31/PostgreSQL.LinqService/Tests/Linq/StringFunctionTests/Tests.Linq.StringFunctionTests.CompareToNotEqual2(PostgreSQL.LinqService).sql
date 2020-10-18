@@ -10,11 +10,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	(0 <> CASE
-		WHEN p."FirstName" > 'Jo' THEN 1
-		WHEN p."FirstName" = 'Jo' THEN 0
-		ELSE -1
-	END OR CASE
+	(p."FirstName" <> 'Jo' OR CASE
 		WHEN p."FirstName" > 'Jo' THEN 1
 		WHEN p."FirstName" = 'Jo' THEN 0
 		ELSE -1

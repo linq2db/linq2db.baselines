@@ -14,14 +14,14 @@ FROM
 		FROM
 			"Parent" p
 		WHERE
-			EXISTS(
+			(EXISTS(
 				SELECT
 					*
 				FROM
 					"Child" ch
 				WHERE
 					ch."ParentID" = p."ParentID"
-			)
+			))
 		GROUP BY
 			p."ParentID"
 	) p1
@@ -32,14 +32,14 @@ FROM
 			FROM
 				"Parent" p_1
 			WHERE
-				EXISTS(
+				(EXISTS(
 					SELECT
 						*
 					FROM
 						"Child" ch_1
 					WHERE
 						ch_1."ParentID" = p_1."ParentID"
-				)
+				))
 			GROUP BY
 				p_1."ParentID"
 		) gp2 ON p1."ParentID" = gp2."ParentID"

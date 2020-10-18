@@ -20,7 +20,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @MoneyValue Numeric(5,4) -- Decimal
+DECLARE @MoneyValue Numeric(5, 4) -- Decimal
 SET     @MoneyValue = 2.4900
 DECLARE @DateTimeValue Timestamp -- DateTime
 SET     @DateTimeValue = '2005-05-15 05:15:25.500'::timestamp
@@ -78,7 +78,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @MoneyValue Numeric(5,4) -- Decimal
+DECLARE @MoneyValue Numeric(5, 4) -- Decimal
 SET     @MoneyValue = 2.4900
 DECLARE @DateTimeValue Timestamp -- DateTime
 SET     @DateTimeValue = '2005-05-15 05:15:25.500'::timestamp

@@ -10,12 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	CASE
-		WHEN p."FirstName" > 'John'
-			THEN 1
-		WHEN p."FirstName" = 'John'
-			THEN 0
-		ELSE -1
-	END = 0 AND
-	p."PersonID" = 1
+	p."FirstName" = 'John' AND p."PersonID" = 1
 
