@@ -10,13 +10,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN [p].[FirstName] > 'John'
-			THEN 1
-		WHEN [p].[FirstName] = 'John'
-			THEN 0
-		ELSE -1
-	END = 0
+	[p].[FirstName] = 'John'
 
 BeforeExecute
 -- SQLite.MS SQLite

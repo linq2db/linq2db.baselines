@@ -10,12 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN Substr([p].[FirstName], 2, 2) > 'oh'
-			THEN 1
-		WHEN Substr([p].[FirstName], 2, 2) = 'oh'
-			THEN 0
-		ELSE -1
-	END = 0 AND
-	[p].[PersonID] = 1
+	Substr([p].[FirstName], 2, 2) = 'oh' AND [p].[PersonID] = 1
 
