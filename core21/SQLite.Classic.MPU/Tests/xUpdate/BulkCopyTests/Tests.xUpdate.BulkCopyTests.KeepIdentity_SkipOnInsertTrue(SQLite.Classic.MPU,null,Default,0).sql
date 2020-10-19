@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+
+UPDATE sqlite_sequence SET seq = 2 WHERE name = 'AllTypes'
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Value_1  -- Int32
 SET     @Value_1 = 0
 
@@ -31,7 +36,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 351
+SET     @lastId = 3
 
 SELECT
 	[_].[ID],
@@ -46,7 +51,7 @@ ORDER BY
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 351
+SET     @lastId = 3
 
 DELETE FROM
 	[AllTypes]

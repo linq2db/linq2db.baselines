@@ -35,30 +35,30 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[DocEntry],
+	[t1].[NumeroInterno],
 	[t1].[StatusValor],
-	[t1].[c1]
+	[t1].[DescricaoStatus]
 FROM
 	(
 		SELECT
-			[doSap].[DocEntry],
+			[doSap].[DocEntry] as [NumeroInterno],
 			CASE
 				WHEN [doSap].[DocStatus] = 'O'
 					THEN 'Aberto'
 				ELSE 'Fechado'
 			END as [StatusValor],
-			'Manual/Externo' as [c1]
+			'Manual/Externo' as [DescricaoStatus]
 		FROM
 			[O1] [doSap]
 		UNION
 		SELECT
-			[doSap_1].[DocEntry],
+			[doSap_1].[DocEntry] as [NumeroInterno],
 			CASE
 				WHEN [doSap_1].[DocStatus] = 'O'
 					THEN 'Aberto'
 				ELSE 'Fechado'
 			END as [StatusValor],
-			'Manual/Externo' as [c1]
+			'Manual/Externo' as [DescricaoStatus]
 		FROM
 			[O2] [doSap_1]
 	) [t1]
