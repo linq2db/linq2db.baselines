@@ -100,9 +100,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	CASE
-		WHEN [o].[ShipCity] = 'Seattle'
-			THEN 1
-		ELSE 0
-	END = 1
+	[o].[ShipCity] = 'Seattle'
 
