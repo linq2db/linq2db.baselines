@@ -115,43 +115,43 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[Id] as [R],
-			[t1].[ResourcePointID] as [R_1],
-			[t1].[Id_1] as [IR],
-			[t1].[ProductStatus] as [IR_1],
-			[t1].[Quantity] as [IR_2],
-			[t1].[ResourceID] as [IR_3],
-			[t1].[MaterialID] as [IR_4],
-			[t1].[Status] as [IR_5],
-			[t1].[Id_2] as [C_1],
-			[t1].[Id_3] as [SS],
-			[t1].[ChannelID] as [SS_1],
-			[t1].[AisleID] as [SS_2],
-			[t1].[Status_1] as [AisleStatus],
-			[t1].[Id_4] as [RP],
-			[t1].[IsStoragePlace] as [RP_1],
+			[t1].[R],
+			[t1].[R_1],
+			[t1].[IR],
+			[t1].[IR_1],
+			[t1].[IR_2],
+			[t1].[IR_3],
+			[t1].[IR_4],
+			[t1].[IR_5],
+			[t1].[C_1],
+			[t1].[SS],
+			[t1].[SS_1],
+			[t1].[SS_2],
+			[t1].[AisleStatus],
+			[t1].[RP],
+			[t1].[RP_1],
 			[t1].[RefQty],
-			[t1].[c1] as [MixedStock],
+			[t1].[MixedStock],
 			NULL as [c1],
 			NULL as [c2]
 		FROM
 			(
 				SELECT
-					[r_2].[Id],
-					[r_2].[ResourcePointID],
-					[ir_6].[Id] as [Id_1],
-					[ir_6].[ProductStatus],
-					[ir_6].[Quantity],
-					[ir_6].[ResourceID],
-					[ir_6].[MaterialID],
-					[ir_6].[Status],
-					[c_2].[Id] as [Id_2],
-					[ss_3].[Id] as [Id_3],
-					[ss_3].[ChannelID],
-					[ss_3].[AisleID],
-					[aisle].[Status] as [Status_1],
-					[rp_2].[Id] as [Id_4],
-					[rp_2].[IsStoragePlace],
+					[r_2].[Id] as [R],
+					[r_2].[ResourcePointID] as [R_1],
+					[ir_6].[Id] as [IR],
+					[ir_6].[ProductStatus] as [IR_1],
+					[ir_6].[Quantity] as [IR_2],
+					[ir_6].[ResourceID] as [IR_3],
+					[ir_6].[MaterialID] as [IR_4],
+					[ir_6].[Status] as [IR_5],
+					[c_2].[Id] as [C_1],
+					[ss_3].[Id] as [SS],
+					[ss_3].[ChannelID] as [SS_1],
+					[ss_3].[AisleID] as [SS_2],
+					[aisle].[Status] as [AisleStatus],
+					[rp_2].[Id] as [RP],
+					[rp_2].[IsStoragePlace] as [RP_1],
 					Coalesce((
 						SELECT
 							Sum([x].[Quantity])
@@ -166,7 +166,7 @@ FROM
 							[RefOutfeedTransportOrderResourceDTO] [x_1]
 						WHERE
 							[x_1].[ResourceID] = [r_2].[Id] AND [x_1].[InventoryResourceID] IS NULL
-					) as Decimal(29,10)) * [ir_6].[Quantity] as [RefQty],
+					) as Decimal(29, 10)) * [ir_6].[Quantity] as [RefQty],
 					CASE
 						WHEN EXISTS(
 							SELECT
@@ -181,7 +181,7 @@ FROM
 						)
 							THEN 1
 						ELSE 0
-					END as [c1]
+					END as [MixedStock]
 				FROM
 					[StorageShelfDTO] [ss_3]
 						INNER JOIN [ChannelDTO] [c_2] ON [ss_3].[ChannelID] = [c_2].[Id]

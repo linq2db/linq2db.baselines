@@ -20,7 +20,7 @@ LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @MoneyValue Decimal(3,2)
+DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.1'
@@ -78,7 +78,7 @@ LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @MoneyValue Decimal(3,2)
+DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.1'

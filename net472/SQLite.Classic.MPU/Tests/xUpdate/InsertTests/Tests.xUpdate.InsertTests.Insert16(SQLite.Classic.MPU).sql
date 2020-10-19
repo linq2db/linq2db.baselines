@@ -8,10 +8,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @name NVarChar(8) -- String
-SET     @name = 'Insert16'
 DECLARE @idx  -- Int32
-SET     @idx = 4
+SET     @idx = 12
 
 INSERT INTO [Person]
 (
@@ -22,7 +20,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	Cast((Length(@name) + @idx) as NVarChar(11)),
+	Cast(@idx as NVarChar(11)),
 	'M'
 )
 

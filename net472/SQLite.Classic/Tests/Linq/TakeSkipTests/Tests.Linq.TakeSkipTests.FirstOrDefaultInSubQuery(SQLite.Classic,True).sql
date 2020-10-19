@@ -53,13 +53,13 @@ DECLARE @take_1  -- Int32
 SET     @take_1 = 2
 
 SELECT
-	[t1].[Id],
+	[t1].[BatchId],
 	[t1].[CreationDate],
 	[t1].[Value_1]
 FROM
 	(
 		SELECT
-			[x].[Id],
+			[x].[Id] as [BatchId],
 			(
 				SELECT
 					[p].[Date]
@@ -77,7 +77,7 @@ FROM
 		LIMIT @take_1
 	) [t1]
 ORDER BY
-	[t1].[Id]
+	[t1].[BatchId]
 
 BeforeExecute
 -- SQLite.Classic SQLite
