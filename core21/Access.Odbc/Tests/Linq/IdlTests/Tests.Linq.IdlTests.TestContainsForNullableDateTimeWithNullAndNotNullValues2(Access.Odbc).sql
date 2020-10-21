@@ -17,8 +17,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p1 DateTime
-SET     @p1 = #2009-09-24 09:19:29#
+DECLARE @DateTimeValue2 DateTime
+SET     @DateTimeValue2 = #2009-09-24 09:19:29#
 
 SELECT
 	Count(*)
