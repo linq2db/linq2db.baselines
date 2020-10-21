@@ -2,15 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	[p].[MoneyValue]
+	[t].[MoneyValue]
 FROM
-	(
-		SELECT
-			Iif([t].[BoolValue] = False, True, False) as [b],
-			[t].[MoneyValue]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	([p].[b] = False AND [p].[b] IS NOT NULL)
+	[t].[BoolValue] <> False
 

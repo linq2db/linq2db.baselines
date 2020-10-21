@@ -2,14 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	[p].[c1]
+	[t].[MoneyValue] - 4.5
 FROM
-	(
-		SELECT
-			[t].[MoneyValue] - 4.5 as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	([p].[c1] = False OR [p].[c1] IS NULL)
+	([t].[MoneyValue] - 4.5 = False OR [t].[MoneyValue] - 4.5 IS NULL)
 

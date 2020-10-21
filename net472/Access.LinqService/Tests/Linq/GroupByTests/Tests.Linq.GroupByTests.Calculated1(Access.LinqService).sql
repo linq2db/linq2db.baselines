@@ -19,17 +19,10 @@ DECLARE @p1 VarWChar(1) -- String
 SET     @p1 = '1'
 
 SELECT
-	[underscore].[ParentID],
-	[underscore].[ChildID]
+	[selectParam].[ParentID],
+	[selectParam].[ChildID]
 FROM
-	(
-		SELECT
-			Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [Key_1],
-			[selectParam].[ParentID],
-			[selectParam].[ChildID]
-		FROM
-			[Child] [selectParam]
-	) [underscore]
+	[Child] [selectParam]
 WHERE
-	[underscore].[Key_1] = @p1
+	Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') = @p1
 
