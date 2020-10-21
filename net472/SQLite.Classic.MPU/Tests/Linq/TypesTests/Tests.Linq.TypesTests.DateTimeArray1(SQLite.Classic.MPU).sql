@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p1  -- DateTime
-SET     @p1 = '2001-01-11 01:11:21.1'
+DECLARE @DateTimeValue_1  -- DateTime
+SET     @DateTimeValue_1 = '2001-01-11 01:11:21.1'
 
 SELECT
 	[t].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN (@p1)
+	[t].[DateTimeValue] IN (@DateTimeValue_1)
 
