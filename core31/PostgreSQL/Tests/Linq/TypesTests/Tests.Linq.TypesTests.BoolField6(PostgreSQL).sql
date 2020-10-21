@@ -2,19 +2,9 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."MoneyValue"
+	t."MoneyValue"
 FROM
-	(
-		SELECT
-			CASE
-				WHEN t."BoolValue" = False
-					THEN True
-				ELSE False
-			END as b,
-			t."MoneyValue"
-		FROM
-			"LinqDataTypes" t
-	) p
+	"LinqDataTypes" t
 WHERE
-	(p.b = True AND p.b IS NOT NULL)
+	(t."BoolValue" = False)
 

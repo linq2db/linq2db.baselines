@@ -29,29 +29,17 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
 DECLARE @Id_1 Integer -- Int32
 SET     @Id_1 = 2
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 2
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	c_2."Value_1"
+	c_1."Id"
 FROM
-	(
-		SELECT
-			:Id as "Id",
-			c_1."Id" as "Value_1"
-		FROM
-			"AsyncDataTable" c_1
-		WHERE
-			c_1."Id" = :Id_1
-	) c_2
+	"AsyncDataTable" c_1
 WHERE
-	c_2."Id" = :p1
+	c_1."Id" = :Id_1
 LIMIT :take
 
 BeforeExecute

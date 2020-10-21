@@ -27,25 +27,18 @@ DECLARE @p1 Text(1) -- String
 SET     @p1 = '1'
 
 SELECT
-	underscore."ParentID",
-	underscore."ChildID"
+	"selectParam"."ParentID",
+	"selectParam"."ChildID"
 FROM
-	(
-		SELECT
-			CASE
-				WHEN "selectParam"."ParentID" > 2
-					THEN CASE
-					WHEN "selectParam"."ParentID" > 3
-						THEN '1'
-					ELSE '2'
-				END
-				ELSE '3'
-			END as "Key_1",
-			"selectParam"."ParentID",
-			"selectParam"."ChildID"
-		FROM
-			"Child" "selectParam"
-	) underscore
+	"Child" "selectParam"
 WHERE
-	underscore."Key_1" = :p1
+	CASE
+		WHEN "selectParam"."ParentID" > 2
+			THEN CASE
+			WHEN "selectParam"."ParentID" > 3
+				THEN '1'
+			ELSE '2'
+		END
+		ELSE '3'
+	END = :p1
 
