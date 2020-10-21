@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	([t].[MoneyValue] - 4.5 = 0 OR ([t].[MoneyValue] - 4.5 <> 0) IS NULL)
+	[t].[MoneyValue] - 4.5 = 0
 

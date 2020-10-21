@@ -2,14 +2,9 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[d].[c1]
+	[t].[DateTimeValue]
 FROM
-	(
-		SELECT
-			[t].[DateTimeValue] as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [d]
+	[LinqDataTypes] [t]
 WHERE
-	Cast(StrFTime('%d', [d].[c1]) as int) > 0
+	Cast(StrFTime('%d', [t].[DateTimeValue]) as int) > 0
 

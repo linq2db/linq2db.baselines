@@ -2,18 +2,9 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[p].[MoneyValue]
+	[t].[MoneyValue]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [t].[BoolValue] = 0 THEN 1
-				ELSE 0
-			END as [b],
-			[t].[MoneyValue]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	([p].[b] = 0 AND [p].[b] IS NOT NULL)
+	[t].[BoolValue] <> 0
 
