@@ -2,18 +2,11 @@
 -- MySqlConnector MySql
 
 SELECT
-	`t`.`ID_1`,
-	`t`.`ID_2`
+	`ch`.`ParentID`,
+	`p`.`ParentID`
 FROM
-	(
-		SELECT
-			`ch`.`ParentID` + `p`.`ParentID` as `ID`,
-			`ch`.`ParentID` as `ID_1`,
-			`p`.`ParentID` as `ID_2`
-		FROM
-			`Child` `ch`
-				INNER JOIN `Parent` `p` ON `ch`.`ParentID` = `p`.`ParentID`
-	) `t`
+	`Child` `ch`
+		INNER JOIN `Parent` `p` ON `ch`.`ParentID` = `p`.`ParentID`
 WHERE
-	`t`.`ID` > 2
+	`ch`.`ParentID` + `p`.`ParentID` > 2
 

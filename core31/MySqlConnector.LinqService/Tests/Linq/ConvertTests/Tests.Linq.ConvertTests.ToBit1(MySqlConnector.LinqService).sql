@@ -13,5 +13,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	((`t`.`MoneyValue` <> 0) AND (`t`.`MoneyValue` <> 0) IS NOT NULL)
+	(`t`.`MoneyValue` <> 0)
 

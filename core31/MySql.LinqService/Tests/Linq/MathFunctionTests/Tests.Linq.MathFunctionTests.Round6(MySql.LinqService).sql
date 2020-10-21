@@ -2,14 +2,9 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t`.`c1`
+	Round(`p`.`MoneyValue`, 0)
 FROM
-	(
-		SELECT
-			Round(`p`.`MoneyValue`, 0) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `p`
 WHERE
-	(`t`.`c1` <> 0 OR `t`.`c1` IS NULL)
+	(Round(`p`.`MoneyValue`, 0) <> 0 OR Round(`p`.`MoneyValue`, 0) IS NULL)
 

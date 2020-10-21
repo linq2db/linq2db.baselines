@@ -2,18 +2,21 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t`.`c1`
+	CASE
+		WHEN `p`.`MoneyValue` * 2 = Round(`p`.`MoneyValue` * 2, 1) AND `p`.`MoneyValue` <> Round(`p`.`MoneyValue`, 1)
+			THEN Round(`p`.`MoneyValue` / 2, 1) * 2
+		ELSE Round(`p`.`MoneyValue`, 1)
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN `p`.`MoneyValue` * 2 = Round(`p`.`MoneyValue` * 2, 1) AND `p`.`MoneyValue` <> Round(`p`.`MoneyValue`, 1)
-					THEN Round(`p`.`MoneyValue` / 2, 1) * 2
-				ELSE Round(`p`.`MoneyValue`, 1)
-			END as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `p`
 WHERE
-	(`t`.`c1` <> 0 OR `t`.`c1` IS NULL)
+	(CASE
+		WHEN `p`.`MoneyValue` * 2 = Round(`p`.`MoneyValue` * 2, 1) AND `p`.`MoneyValue` <> Round(`p`.`MoneyValue`, 1)
+			THEN Round(`p`.`MoneyValue` / 2, 1) * 2
+		ELSE Round(`p`.`MoneyValue`, 1)
+	END <> 0 OR CASE
+		WHEN `p`.`MoneyValue` * 2 = Round(`p`.`MoneyValue` * 2, 1) AND `p`.`MoneyValue` <> Round(`p`.`MoneyValue`, 1)
+			THEN Round(`p`.`MoneyValue` / 2, 1) * 2
+		ELSE Round(`p`.`MoneyValue`, 1)
+	END IS NULL)
 

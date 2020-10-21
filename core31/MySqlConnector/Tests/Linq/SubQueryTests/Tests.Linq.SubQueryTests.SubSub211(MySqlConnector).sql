@@ -6,42 +6,14 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			(
-				SELECT
-					`c_2`.`ParentID` + 1 as `ID`
-				FROM
-					(
-						SELECT
-							`g_1`.`ParentID` + 1 as `ID`,
-							`g_1`.`ParentID`
-						FROM
-							`Child` `c_1`
-								INNER JOIN `GrandChild` `g_1` ON `c_1`.`ParentID` = `g_1`.`ParentID` AND `c_1`.`ChildID` = `g_1`.`ChildID`
-						WHERE
-							`p1`.`ParentID` = `c_1`.`ParentID`
-					) `c_2`
-				WHERE
-					`c_2`.`ID` < `p1`.`ID`
-			) `c_3`
+			`Child` `c_1`
+				INNER JOIN `GrandChild` `g_1` ON `c_1`.`ParentID` = `g_1`.`ParentID` AND `c_1`.`ChildID` = `g_1`.`ChildID`
 		WHERE
-			`c_3`.`ID` < `p1`.`ID`
+			`g_1`.`ParentID` + 1 < `p2`.`ParentID` + 2 AND `g_1`.`ParentID` + 1 < `p2`.`ParentID` + 2 AND
+			`p2`.`ParentID` = `c_1`.`ParentID`
 	)
 FROM
-	(
-		SELECT
-			`p3`.`ID` + 1 as `ID`,
-			`p3`.`ParentID`
-		FROM
-			(
-				SELECT
-					`p2`.`ParentID` + 1 as `ID`,
-					`p2`.`ParentID`
-				FROM
-					`Parent` `p2`
-			) `p3`
-		WHERE
-			`p3`.`ID` > 0
-	) `p1`
+	`Parent` `p2`
 WHERE
-	`p1`.`ID` > 0
+	`p2`.`ParentID` + 2 > 0 AND `p2`.`ParentID` + 1 > 0
 
