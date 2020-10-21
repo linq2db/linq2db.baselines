@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @p1 DateTime2
-SET     @p1 = '2001-01-11T01:11:21.1000000'
+DECLARE @DateTimeValue_1 DateTime2
+SET     @DateTimeValue_1 = '2001-01-11T01:11:21.1000000'
 
 SELECT
 	[t].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN (@p1)
+	[t].[DateTimeValue] IN (@DateTimeValue_1)
 
