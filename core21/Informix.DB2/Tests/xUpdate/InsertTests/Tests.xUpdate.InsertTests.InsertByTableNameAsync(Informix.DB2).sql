@@ -127,5 +127,5 @@ DROP TABLE xxPerson
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-DROP TABLE xxPerson
+DROP TABLE IF EXISTS xxPerson
 

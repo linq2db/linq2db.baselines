@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-DROP TABLE xxPatient12
+DROP TABLE IF EXISTS xxPatient12
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
@@ -125,5 +125,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-DROP TABLE xxPatient12
+DROP TABLE IF EXISTS xxPatient12
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE xxPatient11
+DROP TABLE IF EXISTS xxPatient11
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -125,5 +125,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE xxPatient11
+DROP TABLE IF EXISTS xxPatient11
 

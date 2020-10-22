@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-DROP TABLE TestTable
+DROP TABLE IF EXISTS TestTable
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
