@@ -6,6 +6,7 @@ CREATE TEMPORARY TABLE "IsTemporaryTable"
 	"Id"    Int NOT NULL,
 	"Value" Int NOT NULL
 )
+ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
