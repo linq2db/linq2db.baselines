@@ -1,11 +1,12 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "IsGlobalTemporaryTable"
+CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 (
 	"Id"    Int NOT NULL,
 	"Value" Int NOT NULL
 )
+ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- Firebird
