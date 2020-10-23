@@ -11,6 +11,7 @@ CREATE TEMPORARY TABLE "CreateIfNotExistsTable"
 	"Id"    Int NOT NULL,
 	"Value" Int NOT NULL
 )
+ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
