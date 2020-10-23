@@ -13,12 +13,21 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE GLOBAL TEMPORARY TABLE CreateIfNotExistsTable
-(
-	Id    Int NOT NULL,
-	Value Int NOT NULL
-)
-ON COMMIT PRESERVE ROWS
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE GLOBAL TEMPORARY TABLE CreateIfNotExistsTable
+		(
+			Id    Int NOT NULL,
+			Value Int NOT NULL
+		)
+		ON COMMIT PRESERVE ROWS
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -50,5 +59,12 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE CreateIfNotExistsTable
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE CreateIfNotExistsTable';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
