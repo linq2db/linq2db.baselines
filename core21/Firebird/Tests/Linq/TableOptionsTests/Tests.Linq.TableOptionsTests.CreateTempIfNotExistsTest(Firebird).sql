@@ -36,11 +36,12 @@ BeforeExecute
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CreateIfNotExistsTable')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "CreateIfNotExistsTable"
+			CREATE GLOBAL TEMPORARY TABLE "CreateIfNotExistsTable"
 			(
 				"Id"    Int NOT NULL,
 				"Value" Int NOT NULL
 			)
+			ON COMMIT PRESERVE ROWS
 		';
 END
 
