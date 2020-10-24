@@ -14,7 +14,7 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-CREATE TABLE TempTable
+CREATE TEMP TABLE TempTable
 (
 	ID Int NOT NULL
 )

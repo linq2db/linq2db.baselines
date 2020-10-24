@@ -14,7 +14,7 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-CREATE TABLE TempTable
+CREATE TABLE IF NOT EXISTS TempTable
 (
 	ID Int NOT NULL
 )
@@ -34,5 +34,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-DROP TABLE TempTable
+DROP TABLE IF EXISTS TempTable
 
