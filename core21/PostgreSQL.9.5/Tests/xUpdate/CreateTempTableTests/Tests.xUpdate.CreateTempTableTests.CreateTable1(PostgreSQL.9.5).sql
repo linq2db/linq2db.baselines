@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS "TempTable"
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TempTable"
+CREATE TABLE IF NOT EXISTS "TempTable"
 (
 	"ID" Int NOT NULL
 )
@@ -43,5 +43,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TempTable"
+DROP TABLE IF EXISTS "TempTable"
 
