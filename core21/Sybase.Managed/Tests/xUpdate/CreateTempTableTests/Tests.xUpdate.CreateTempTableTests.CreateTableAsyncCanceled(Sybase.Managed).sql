@@ -15,7 +15,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-CREATE TABLE [TempTable]
+CREATE TABLE #TempTable
 (
 	[ID] Int NOT NULL
 )

@@ -15,10 +15,13 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [TempTable]
-(
-	[ID] Int NOT NULL
-)
+IF (OBJECT_ID(N'TempTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [TempTable]
+		(
+			[ID] Int NOT NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -47,5 +50,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TempTable]
+IF (OBJECT_ID(N'TempTable') IS NOT NULL)
+	DROP TABLE [TempTable]
 
