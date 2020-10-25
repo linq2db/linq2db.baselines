@@ -43,12 +43,11 @@ BeforeExecute
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE GLOBAL TEMPORARY TABLE CreateIfNotExistsTable
+		CREATE TABLE CreateIfNotExistsTable
 		(
 			Id    Int NOT NULL,
 			Value Int NOT NULL
 		)
-		ON COMMIT PRESERVE ROWS
 	';
 EXCEPTION
 	WHEN OTHERS THEN
