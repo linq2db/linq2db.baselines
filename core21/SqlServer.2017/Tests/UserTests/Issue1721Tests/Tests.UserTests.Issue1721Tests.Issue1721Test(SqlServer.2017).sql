@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [I1721Model]
+CREATE TABLE [#I1721Model]
 (
 	[TestDateTime2]           DateTime2      NOT NULL,
 	[TestDateTimeOffset]      DateTimeOffset NOT NULL,
@@ -14,5 +14,5 @@ CREATE TABLE [I1721Model]
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [I1721Model]
+DROP TABLE [#I1721Model]
 
