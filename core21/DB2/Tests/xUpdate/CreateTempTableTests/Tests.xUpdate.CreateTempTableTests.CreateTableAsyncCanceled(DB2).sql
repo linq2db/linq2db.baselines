@@ -17,7 +17,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
-CREATE TABLE "TempTable"
+DECLARE GLOBAL TEMPORARY TABLE SESSION."TempTable"
 (
 	ID Int NOT NULL
 )

@@ -9,7 +9,7 @@ END
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
-CREATE TABLE "TempTable"
+DECLARE GLOBAL TEMPORARY TABLE SESSION."TempTable"
 (
 	ID Int NOT NULL
 )
@@ -17,7 +17,7 @@ CREATE TABLE "TempTable"
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
-INSERT INTO "TempTable"
+INSERT INTO SESSION."TempTable"
 (
 	ID
 )
@@ -29,7 +29,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
-DROP TABLE "TempTable"
+DROP TABLE SESSION."TempTable"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
