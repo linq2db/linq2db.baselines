@@ -15,7 +15,7 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012 (asynchronously)
 
-CREATE TABLE [TempTable]
+CREATE TABLE [#TempTable]
 (
 	[ID] Int NOT NULL
 )
