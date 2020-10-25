@@ -7,10 +7,11 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
 
-CREATE TABLE [TempTable]
-(
-	[ID] Int NOT NULL
-)
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
+	CREATE TABLE [TempTable]
+	(
+		[ID] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
@@ -36,5 +37,6 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
 
-DROP TABLE [TempTable]
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [TempTable]
 
