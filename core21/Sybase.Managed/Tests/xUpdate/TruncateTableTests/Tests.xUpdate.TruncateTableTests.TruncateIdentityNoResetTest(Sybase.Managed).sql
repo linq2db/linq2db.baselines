@@ -1,24 +1,21 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'TestIdTrun') IS NOT NULL)
-	DROP TABLE [TestIdTrun]
+IF (OBJECT_ID(N'test_temp') IS NULL)
+	EXECUTE('
+		CREATE TABLE [test_temp]
+		(
+			[ID]     Int     IDENTITY NOT NULL,
+			[Field1] Decimal          NOT NULL,
+
+			CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [TestIdTrun]
-(
-	[ID]     Int     IDENTITY NOT NULL,
-	[Field1] Decimal          NOT NULL,
-
-	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY CLUSTERED ([ID])
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -30,47 +27,7 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-INSERT INTO [TestIdTrun]
-(
-	[Field1]
-)
-VALUES
-(
-	1
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT TOP 3
-	[t1].[ID],
-	[t1].[Field1]
-FROM
-	[TestIdTrun] [t1]
-ORDER BY
-	[t1].[ID]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-TRUNCATE TABLE [TestIdTrun]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [TestIdTrun]
-(
-	[Field1]
-)
-VALUES
-(
-	1
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -86,12 +43,53 @@ SELECT TOP 3
 	[t1].[ID],
 	[t1].[Field1]
 FROM
-	[TestIdTrun] [t1]
+	[test_temp] [t1]
 ORDER BY
 	[t1].[ID]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TestIdTrun]
+TRUNCATE TABLE [test_temp]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+INSERT INTO [test_temp]
+(
+	[Field1]
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+INSERT INTO [test_temp]
+(
+	[Field1]
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT TOP 3
+	[t1].[ID],
+	[t1].[Field1]
+FROM
+	[test_temp] [t1]
+ORDER BY
+	[t1].[ID]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'test_temp') IS NOT NULL)
+	DROP TABLE [test_temp]
 
