@@ -1,23 +1,18 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-DROP TABLE [TestIdTrun]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-CREATE TABLE [TestIdTrun]
+CREATE TABLE [test_temp]
 (
 	[ID]     Int      NOT NULL IDENTITY,
 	[Field1] Decimal  NOT NULL,
 
-	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY CLUSTERED ([ID])
+	CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
 )
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -29,47 +24,7 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-INSERT INTO [TestIdTrun]
-(
-	[Field1]
-)
-VALUES
-(
-	1
-)
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-SELECT TOP 3
-	[t1].[ID],
-	[t1].[Field1]
-FROM
-	[TestIdTrun] [t1]
-ORDER BY
-	[t1].[ID]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-DELETE FROM [TestIdTrun]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-INSERT INTO [TestIdTrun]
-(
-	[Field1]
-)
-VALUES
-(
-	1
-)
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -85,12 +40,52 @@ SELECT TOP 3
 	[t1].[ID],
 	[t1].[Field1]
 FROM
-	[TestIdTrun] [t1]
+	[test_temp] [t1]
 ORDER BY
 	[t1].[ID]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-DROP TABLE [TestIdTrun]
+DELETE FROM [test_temp]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+INSERT INTO [test_temp]
+(
+	[Field1]
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+INSERT INTO [test_temp]
+(
+	[Field1]
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT TOP 3
+	[t1].[ID],
+	[t1].[Field1]
+FROM
+	[test_temp] [t1]
+ORDER BY
+	[t1].[ID]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [test_temp]
 
