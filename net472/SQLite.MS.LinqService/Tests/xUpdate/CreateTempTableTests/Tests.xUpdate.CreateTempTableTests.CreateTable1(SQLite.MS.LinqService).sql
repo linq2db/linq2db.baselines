@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS [TempTable]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [TempTable]
+CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[ID] INTEGER NOT NULL
 )
@@ -43,5 +43,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [TempTable]
+DROP TABLE IF EXISTS [TempTable]
 

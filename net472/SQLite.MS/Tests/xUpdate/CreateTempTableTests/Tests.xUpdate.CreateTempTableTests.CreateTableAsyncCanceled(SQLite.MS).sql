@@ -14,7 +14,7 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-CREATE TABLE [TempTable]
+CREATE TEMPORARY TABLE [TempTable]
 (
 	[ID] INTEGER NOT NULL
 )
