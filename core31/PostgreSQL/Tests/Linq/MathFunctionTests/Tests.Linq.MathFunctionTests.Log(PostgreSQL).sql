@@ -2,14 +2,9 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	Floor(Ln(Cast(p."MoneyValue" as Float)))
 FROM
-	(
-		SELECT
-			Floor(Ln(Cast(p."MoneyValue" as Float))) as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	t.c1 <> 0.10000000000000001
+	(Floor(Ln(Cast(p."MoneyValue" as Float))) <> 0.10000000000000001 OR Floor(Ln(Cast(p."MoneyValue" as Float))) IS NULL)
 
