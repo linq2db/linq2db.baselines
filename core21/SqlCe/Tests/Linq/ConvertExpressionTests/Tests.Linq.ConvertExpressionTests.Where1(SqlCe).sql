@@ -17,12 +17,12 @@ FROM
 				[c_1].[ParentID]
 		) [t1] ON [p].[ParentID] = [t1].[ParentID]
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			[Child] [c_2]
 		WHERE
 			[p].[ParentID] = [c_2].[ParentID] AND [c_2].[ParentID] > 1
-	)
+	))
 
