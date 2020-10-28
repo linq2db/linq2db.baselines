@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Issue] [i]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -56,7 +56,7 @@ WHERE
 		WHERE
 			[_1].[TaggableType] = N'Issue' AND [i].[Id] = [_1].[TaggableId] AND
 			[a_Tag].[Name] = N'Visu'
-	))
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012

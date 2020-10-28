@@ -17,7 +17,7 @@ FROM
 				[t].[ParentID] = [q].[ParentID]
 		) [t1]
 WHERE
-	([t1].[Count_1] > 0)
+	[t1].[Count_1] > 0
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -35,5 +35,5 @@ FROM
 				[t].[ParentID] = [q].[ParentID]
 		) [t1]
 WHERE
-	([t1].[Count_1] > 0)
+	[t1].[Count_1] > 0
 

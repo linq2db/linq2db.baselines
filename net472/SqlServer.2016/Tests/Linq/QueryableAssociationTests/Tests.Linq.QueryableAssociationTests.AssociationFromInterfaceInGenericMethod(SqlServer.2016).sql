@@ -16,14 +16,14 @@ SELECT
 FROM
 	[TreeItem] [x]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			[TreeItem] [t1]
 		WHERE
 			[x].[Id] = [t1].[ParentId]
-	))
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012

@@ -66,12 +66,12 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	((NOT EXISTS(
+	NOT EXISTS(
 		SELECT
 			*
 		FROM
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ParentID] <= 3
-	)))
+	)
 

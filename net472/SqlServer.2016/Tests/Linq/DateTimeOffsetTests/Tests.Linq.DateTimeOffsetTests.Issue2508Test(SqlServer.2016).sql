@@ -55,7 +55,7 @@ SELECT
 FROM
 	[Transactions] [t]
 WHERE
-	([t].[TransactionDate] > @TransactionDate)
+	[t].[TransactionDate] > @TransactionDate
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
