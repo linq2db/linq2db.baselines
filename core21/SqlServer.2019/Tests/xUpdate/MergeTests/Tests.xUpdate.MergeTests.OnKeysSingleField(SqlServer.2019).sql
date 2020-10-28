@@ -235,7 +235,7 @@ USING (
 (
 	[Field1]
 )
-ON (([Target].[Field1] IS NULL AND [Source].[Field1] IS NULL OR [Target].[Field1] = [Source].[Field1]))
+ON (([Target].[Field1] = [Source].[Field1] OR [Target].[Field1] IS NULL AND [Source].[Field1] IS NULL))
 
 WHEN MATCHED THEN
 UPDATE

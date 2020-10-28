@@ -10,7 +10,7 @@ USING (
 		[Child] [t]
 			LEFT JOIN [Parent] [a_Parent] ON [t].[ParentID] = [a_Parent].[ParentID]
 	WHERE
-		[a_Parent].[ParentID] = 2 AND EXISTS(
+		[a_Parent].[ParentID] = 2 AND (EXISTS(
 			SELECT
 				*
 			FROM
@@ -19,7 +19,7 @@ USING (
 			WHERE
 				[t].[ParentID] = [g_1].[ParentID] AND [t].[ChildID] = [g_1].[ChildID] AND
 				[a_Child].[ChildID] = 22
-		)
+		))
 ) [Source]
 (
 	[ParentID],
@@ -44,7 +44,7 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	FROM
 		[Parent] [a_Parent_1]
 	WHERE
-		[a_Parent_1].[ParentID] = 2 AND EXISTS(
+		[a_Parent_1].[ParentID] = 2 AND (EXISTS(
 			SELECT
 				*
 			FROM
@@ -53,7 +53,7 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 			WHERE
 				[Target].[ParentID] = [g_2].[ParentID] AND [Target].[ChildID] = [g_2].[ChildID] AND
 				[a_Child_1].[ChildID] = 22
-		) AND
+		)) AND
 		[Target].[ParentID] = [a_Parent_1].[ParentID]
 ) THEN DELETE
 ;

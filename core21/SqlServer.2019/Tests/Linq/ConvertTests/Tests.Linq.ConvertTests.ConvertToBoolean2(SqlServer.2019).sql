@@ -2,14 +2,9 @@
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[p].[c1]
+	Convert(Bit, [t].[MoneyValue] - 4.5)
 FROM
-	(
-		SELECT
-			Convert(Bit, [t].[MoneyValue] - 4.5) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	NOT ([p].[c1] IS NOT NULL AND [p].[c1] = 1)
+	(Convert(Bit, [t].[MoneyValue] - 4.5) = 0 OR Convert(Bit, [t].[MoneyValue] - 4.5) IS NULL)
 

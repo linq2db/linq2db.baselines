@@ -2,14 +2,9 @@
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[p].[c1]
+	Convert(Int, Convert(Float, [t].[MoneyValue]))
 FROM
-	(
-		SELECT
-			Convert(Int, Convert(Float, [t].[MoneyValue])) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	[p].[c1] > 0
+	Convert(Int, Convert(Float, [t].[MoneyValue])) > 0
 
