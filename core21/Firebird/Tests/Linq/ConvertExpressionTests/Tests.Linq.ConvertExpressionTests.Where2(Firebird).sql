@@ -14,12 +14,12 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			"Child" "c_2"
 		WHERE
 			"p"."ParentID" = "c_2"."ParentID" AND "c_2"."ParentID" > 1
-	)
+	))
 

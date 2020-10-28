@@ -29,14 +29,14 @@ AS
 	FROM
 		"Parent" "p"
 	WHERE
-		EXISTS(
+		(EXISTS(
 			SELECT
 				*
 			FROM
 				CTE1_ "c_2"
 			WHERE
 				"c_2"."ParentID" = "p"."ParentID"
-		)
+		))
 ),
 CTE3_ ("ParentID", "Value1")
 AS
@@ -47,14 +47,14 @@ AS
 	FROM
 		"Parent" "p_1"
 	WHERE
-		EXISTS(
+		(EXISTS(
 			SELECT
 				*
 			FROM
 				CTE2_ "c_3"
 			WHERE
 				"c_3"."ParentID" = "p_1"."ParentID"
-		)
+		))
 )
 SELECT
 	"c3"."ParentID",
@@ -79,38 +79,38 @@ FROM
 		INNER JOIN "Parent" "p_1" ON "p_2"."ParentID" = "p_1"."ParentID"
 		INNER JOIN "Child" "c4" ON "c4"."ParentID" = "p_1"."ParentID"
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			"Parent" "p_3"
 		WHERE
-			EXISTS(
+			(EXISTS(
 				SELECT
 					*
 				FROM
 					"Child" "c_2"
 				WHERE
 					"c_2"."ParentID" > 1 AND "c_2"."ParentID" = "p_3"."ParentID"
-			) AND
+			)) AND
 			"p_3"."ParentID" = "p_1"."ParentID"
-	) AND
+	)) AND
 	Mod("c4"."ParentID", 2) = 0 AND
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			"Child" "c_3"
 		WHERE
 			"c_3"."ParentID" > 1 AND "c_3"."ParentID" = "p"."ParentID"
-	) AND
+	)) AND
 	"c_1"."ParentID" > 1 AND
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			"Child" "c_4"
 		WHERE
 			"c_4"."ParentID" > 1 AND "c_4"."ParentID" = "p_2"."ParentID"
-	)
+	))
 

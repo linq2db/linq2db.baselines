@@ -11,7 +11,7 @@ SELECT
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ParentID" IN (
+	("c_1"."ParentID" IN (
 		SELECT
 			"t1"."ParentID"
 		FROM
@@ -21,5 +21,5 @@ WHERE
 				FROM
 					"Parent" "p"
 			) "t1"
-	)
+	))
 

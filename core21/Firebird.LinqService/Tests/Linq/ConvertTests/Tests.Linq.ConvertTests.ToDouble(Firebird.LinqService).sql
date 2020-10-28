@@ -2,14 +2,9 @@
 -- Firebird
 
 SELECT
-	"p"."c1"
+	Cast(Floor(Cast("t"."MoneyValue" as Float)) as Int)
 FROM
-	(
-		SELECT
-			Cast(Floor(Cast("t"."MoneyValue" as Float)) as Int) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	"p"."c1" > 0
+	Cast(Floor(Cast("t"."MoneyValue" as Float)) as Int) > 0
 

@@ -10,5 +10,5 @@ SELECT FIRST @take
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" LIKE 'J%' AND ("p"."PersonID" = 1 OR "p"."LastName" = 'fail')
+	"p"."FirstName" STARTING WITH 'J' AND ("p"."PersonID" = 1 OR "p"."LastName" = 'fail')
 

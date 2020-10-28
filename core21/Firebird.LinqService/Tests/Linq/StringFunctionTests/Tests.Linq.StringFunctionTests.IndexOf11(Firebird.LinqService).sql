@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird
-DECLARE @p1 Char(1) -- String
-SET     @p1 = '0'
 
 SELECT
 	"p"."FirstName",
@@ -12,9 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CASE
-		WHEN @p1 = 1 THEN 0
-		ELSE Position('oh', "p"."FirstName") - 1
-	END = 1 AND
-	"p"."PersonID" = 1
+	Position('oh', "p"."FirstName") - 1 = 1 AND "p"."PersonID" = 1
 
