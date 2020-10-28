@@ -2,14 +2,9 @@
 -- SqlServer.2017
 
 SELECT
-	[t].[c1]
+	DateAdd(month, (DatePart(year, [p].[DateTimeValue]) - 1900) * 12 + 9, 0)
 FROM
-	(
-		SELECT
-			DateAdd(month, (DatePart(year, [p].[DateTimeValue]) - 1900) * 12 + 9, 0) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	DatePart(month, [t].[c1]) = 10
+	DatePart(month, DateAdd(month, (DatePart(year, [p].[DateTimeValue]) - 1900) * 12 + 9, 0)) = 10
 

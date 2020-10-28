@@ -22,12 +22,4 @@ SELECT
 	Count(*)
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT
-				Count(*) as [c1]
-			FROM
-				[Child] [t]
-			WHERE
-				[t].[ParentID] = [p].[ParentID]
-		) [t1]
 

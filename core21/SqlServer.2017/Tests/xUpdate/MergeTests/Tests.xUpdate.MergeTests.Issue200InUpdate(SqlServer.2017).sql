@@ -51,7 +51,7 @@ USING (	VALUES
 	[datetime2DataType],
 	[datetimeoffsetDataType]
 )
-ON (([Target].[datetime2DataType] IS NULL AND [Source].[datetime2DataType] IS NULL OR [Target].[datetime2DataType] = [Source].[datetime2DataType]) AND ([Target].[datetimeoffsetDataType] IS NULL AND [Source].[datetimeoffsetDataType] IS NULL OR [Target].[datetimeoffsetDataType] = [Source].[datetimeoffsetDataType]) AND [Target].[datetime2DataType] = @datetime2DataType_2 AND [Target].[datetimeoffsetDataType] = @datetimeoffsetDataType_2)
+ON (([Target].[datetime2DataType] = [Source].[datetime2DataType] OR [Target].[datetime2DataType] IS NULL AND [Source].[datetime2DataType] IS NULL) AND ([Target].[datetimeoffsetDataType] = [Source].[datetimeoffsetDataType] OR [Target].[datetimeoffsetDataType] IS NULL AND [Source].[datetimeoffsetDataType] IS NULL) AND [Target].[datetime2DataType] = @datetime2DataType_2 AND [Target].[datetimeoffsetDataType] = @datetimeoffsetDataType_2)
 
 WHEN MATCHED THEN
 UPDATE

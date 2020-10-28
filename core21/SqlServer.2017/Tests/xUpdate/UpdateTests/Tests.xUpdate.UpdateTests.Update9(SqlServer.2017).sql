@@ -54,15 +54,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @ChildID Int -- Int32
-SET     @ChildID = 1002
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1002
 
 SELECT
 	Count(*)
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ChildID] = @ChildID
+	[c_1].[ChildID] = @p1
 
 BeforeExecute
 -- SqlServer.2017
