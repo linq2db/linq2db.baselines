@@ -166,14 +166,14 @@ FROM
 		FROM
 			[University] [t1]
 	) [lw_University]
-		INNER JOIN [Subject] [x] ON (EXISTS(
+		INNER JOIN [Subject] [x] ON EXISTS(
 			SELECT
 				*
 			FROM
 				[Faculty] [m_1]
 			WHERE
 				[lw_University].[Id] = [m_1].[UniversityId] AND [m_1].[Id] = [x].[FacultyId]
-		))
+		)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
