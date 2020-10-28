@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Child] [c_1]
 WHERE
-	([c_1].[ParentID] IN (
+	[c_1].[ParentID] IN (
 		SELECT
 			[t1].[ParentID]
 		FROM
@@ -24,5 +24,5 @@ WHERE
 					1
 				OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 			) [t1]
-	))
+	)
 
