@@ -39,12 +39,12 @@ SELECT
 FROM
 	"Child" w
 WHERE
-	NOT (EXISTS(
+	NOT EXISTS(
 		SELECT
 			*
 		FROM
 			"CTE_4" t4
 		WHERE
 			t4.cte_field_1 = w."ChildID"
-	))
+	)
 

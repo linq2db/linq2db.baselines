@@ -74,7 +74,7 @@ SELECT
 FROM
 	"Transactions" t
 WHERE
-	(t."TransactionDate" > :TransactionDate)
+	t."TransactionDate" > :TransactionDate
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL

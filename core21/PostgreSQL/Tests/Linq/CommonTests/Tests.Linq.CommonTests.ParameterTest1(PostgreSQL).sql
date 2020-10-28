@@ -8,14 +8,14 @@ SELECT
 FROM
 	"Child" p
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			"Parent" t
 		WHERE
 			t."ParentID" = :id AND t."ParentID" = p."ParentID"
-	))
+	)
 GROUP BY
 	p."ParentID"
 
@@ -29,14 +29,14 @@ SELECT
 FROM
 	"Child" p
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			"Parent" t
 		WHERE
 			t."ParentID" = :id AND t."ParentID" = p."ParentID"
-	))
+	)
 GROUP BY
 	p."ParentID"
 
