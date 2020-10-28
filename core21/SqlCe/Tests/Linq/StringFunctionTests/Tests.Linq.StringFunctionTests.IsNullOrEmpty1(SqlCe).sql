@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	NOT ([p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0) AND
+	([p].[FirstName] IS NOT NULL AND Len([p].[FirstName]) <> 0) AND
 	[p].[PersonID] = 1
 

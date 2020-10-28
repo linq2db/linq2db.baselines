@@ -17,7 +17,7 @@ FROM
 				[c_1].[ParentID]
 		) [t1] ON [p].[ParentID] = [t1].[ParentID]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -25,5 +25,5 @@ WHERE
 		WHERE
 			[p].[ParentID] = [c_2].[ParentID] AND [c_2].[ParentID] > 1 AND
 			[c_2].[ParentID] < 10
-	))
+	)
 
