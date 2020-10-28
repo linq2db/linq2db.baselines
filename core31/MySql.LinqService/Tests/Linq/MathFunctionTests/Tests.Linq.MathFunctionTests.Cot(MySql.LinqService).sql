@@ -2,14 +2,9 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t`.`c1`
+	Floor(Cot(`p`.`MoneyValue` / 15) * 15)
 FROM
-	(
-		SELECT
-			Floor(Cot(`p`.`MoneyValue` / 15) * 15) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `p`
 WHERE
-	`t`.`c1` <> 0.10000000000000001
+	(Floor(Cot(`p`.`MoneyValue` / 15) * 15) <> 0.10000000000000001 OR Floor(Cot(`p`.`MoneyValue` / 15) * 15) IS NULL)
 

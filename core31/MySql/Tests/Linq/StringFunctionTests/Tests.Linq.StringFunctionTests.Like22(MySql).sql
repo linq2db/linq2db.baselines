@@ -10,5 +10,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` NOT LIKE '%h~%n%' ESCAPE '~' AND `p`.`PersonID` = 1
+	`p`.`FirstName` NOT LIKE '%H~%n%' ESCAPE '~' AND `p`.`PersonID` = 1
 
