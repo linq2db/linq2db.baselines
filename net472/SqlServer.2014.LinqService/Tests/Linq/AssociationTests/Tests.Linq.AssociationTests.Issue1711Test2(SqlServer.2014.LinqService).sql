@@ -25,14 +25,14 @@ SELECT
 FROM
 	[Entity1711] [t]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			[Relationship1711] [r]
 		WHERE
 			[r].[Deleted] = 0 AND [r].[EntityId] = [t].[Id]
-	))
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012

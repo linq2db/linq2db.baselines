@@ -145,14 +145,14 @@ FROM
 			[a].[EmployeeId] = @employeeId AND ([a].[DateRevoke] IS NULL OR [a].[DateRevoke] > GetDate())
 	) [it]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			[TaskStages] [d]
 		WHERE
 			[it].[Id] = [d].[TaskId] AND [d].[Actual] = 1 AND ([d].[StageId] < 9000 OR [d].[StageId] IS NULL)
-	))
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
