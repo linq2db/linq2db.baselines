@@ -6,5 +6,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	(`t`.`BoolValue` = 0)
+	`t`.`BoolValue` = 0
 

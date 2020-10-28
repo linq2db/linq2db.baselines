@@ -68,13 +68,13 @@ SELECT
 FROM
 	`Child` `_`
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			`Parent` `_1`
 		WHERE
 			`_1`.`ParentID` = @id AND `_1`.`ParentID` = `_`.`ParentID`
-	)) AND
+	) AND
 	`_`.`ChildID` >= 0 AND `_`.`ChildID` <= 100
 
