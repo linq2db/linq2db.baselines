@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 104
+DECLARE @p1 Int -- Int32
+SET     @p1 = 104
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p1
 
 BeforeExecute
 -- SqlCe
@@ -91,11 +91,11 @@ ORDER BY
 
 BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 104
+DECLARE @p1 Int -- Int32
+SET     @p1 = 104
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p1
 
