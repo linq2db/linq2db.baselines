@@ -53,15 +53,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1002
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1002
 
 SELECT
 	Count(*)
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @ParentID
+	[p].[ParentID] = @p1
 
 BeforeExecute
 -- SqlServer.2012

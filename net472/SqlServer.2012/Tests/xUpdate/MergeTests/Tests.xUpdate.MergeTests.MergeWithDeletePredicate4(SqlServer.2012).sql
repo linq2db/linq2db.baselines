@@ -70,6 +70,8 @@ BeforeExecute
 -- SqlServer.2012
 DECLARE @patient_1 Int -- Int32
 SET     @patient_1 = 1
+DECLARE @patient_2 Int -- Int32
+SET     @patient_2 = 1
 
 MERGE INTO [Person] [Target]
 USING (
@@ -123,7 +125,7 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	FROM
 		[Patient] [a_Patient_1]
 	WHERE
-		[a_Patient_1].[PersonID] = @patient_1 AND [Target].[PersonID] = [a_Patient_1].[PersonID]
+		[a_Patient_1].[PersonID] = @patient_2 AND [Target].[PersonID] = [a_Patient_1].[PersonID]
 ) THEN DELETE
 ;
 
@@ -131,6 +133,8 @@ BeforeExecute
 -- SqlServer.2012
 DECLARE @patient_1 Int -- Int32
 SET     @patient_1 = 2
+DECLARE @patient_2 Int -- Int32
+SET     @patient_2 = 2
 
 MERGE INTO [Person] [Target]
 USING (
@@ -184,7 +188,7 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	FROM
 		[Patient] [a_Patient_1]
 	WHERE
-		[a_Patient_1].[PersonID] = @patient_1 AND [Target].[PersonID] = [a_Patient_1].[PersonID]
+		[a_Patient_1].[PersonID] = @patient_2 AND [Target].[PersonID] = [a_Patient_1].[PersonID]
 ) THEN DELETE
 ;
 

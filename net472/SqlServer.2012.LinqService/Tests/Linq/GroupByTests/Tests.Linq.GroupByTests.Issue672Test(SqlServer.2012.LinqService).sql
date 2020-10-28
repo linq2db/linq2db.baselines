@@ -86,7 +86,7 @@ FROM
 	[Stone] [s]
 WHERE
 	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE N'level - %' AND Len([s].[ImageFullUrl]) > 0
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND Len([s].[ImageFullUrl]) > 0
 GROUP BY
 	[s].[Name]
 
@@ -104,7 +104,7 @@ FROM
 	[Stone] [s]
 WHERE
 	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE N'level - %' AND
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
 	Len([s].[ImageFullUrl]) > 0 AND
 	[s].[Name] = @Name_1
 
@@ -122,7 +122,7 @@ FROM
 	[Stone] [s]
 WHERE
 	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE N'level - %' AND
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
 	Len([s].[ImageFullUrl]) > 0 AND
 	[s].[Name] = @Name_1
 
