@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Patient" pat
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
@@ -26,6 +26,6 @@ WHERE
 				LIMIT :take
 			) t1
 		WHERE
-			t1."Diagnosis" LIKE '%with%'
-	)
+			t1."Diagnosis" LIKE '%with%' ESCAPE '~'
+	))
 

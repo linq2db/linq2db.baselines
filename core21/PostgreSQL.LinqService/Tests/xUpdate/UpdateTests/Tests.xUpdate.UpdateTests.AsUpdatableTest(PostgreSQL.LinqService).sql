@@ -54,15 +54,15 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 1002
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 1002
 
 SELECT
 	Count(*)
 FROM
 	"Child" c_1
 WHERE
-	c_1."ChildID" = :ChildID
+	c_1."ChildID" = :p1
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
