@@ -25,7 +25,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -33,5 +33,5 @@ WHERE
 		WHERE
 			c_1.ChildID IN (11, 21, 22, 31, 32, 33, 41, 42, 43, 44, 61, 62, 63, 64, 65, 66, 77) AND
 			c_1.ParentID = p.ParentID
-	))
+	)
 

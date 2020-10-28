@@ -10,7 +10,7 @@ SELECT FIRST 1
 FROM
 	GrandChild t1
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -22,7 +22,7 @@ WHERE
 		WHERE
 			a_Parent.ParentID IS NOT NULL AND a_Parent.ParentID = @id1_1 AND
 			li.ParentID = @Value_1
-	))
+	)
 ORDER BY
 	t1.ChildID
 
