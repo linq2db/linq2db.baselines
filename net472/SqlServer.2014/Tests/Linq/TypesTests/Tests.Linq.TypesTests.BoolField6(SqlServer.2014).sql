@@ -6,5 +6,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	(IIF([t].[BoolValue] = 0, 1, 0) = 1 AND IIF([t].[BoolValue] = 0, 1, 0) IS NOT NULL)
+	([t].[BoolValue] = 0)
 

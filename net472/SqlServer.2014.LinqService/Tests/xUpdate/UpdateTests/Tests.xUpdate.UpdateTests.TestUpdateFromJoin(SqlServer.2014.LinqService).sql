@@ -39,7 +39,7 @@ SET
 	[gt_s_one].[col6] = IIF([x].[col3] = N'empty', N'', Convert(NVarChar(11), [am].[id]))
 FROM
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [am] ON Upper(Replace([x].[col3], N'auth.', N'')) = Upper([am].[code])
+		LEFT JOIN [access_mode] [am] ON (Upper(Replace([x].[col3], N'auth.', N'')) = Upper([am].[code]) OR Upper(Replace([x].[col3], N'auth.', N'')) IS NULL AND Upper([am].[code]) IS NULL)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012

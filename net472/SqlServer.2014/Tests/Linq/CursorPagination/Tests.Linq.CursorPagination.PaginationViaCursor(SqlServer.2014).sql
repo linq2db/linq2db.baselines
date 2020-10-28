@@ -201,7 +201,7 @@ SELECT
 FROM
 	[CTE_1] [q]
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
@@ -209,7 +209,7 @@ WHERE
 		WHERE
 			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
-	)
+	))
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -247,7 +247,7 @@ SELECT
 FROM
 	[CTE_1] [q]
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
@@ -255,7 +255,7 @@ WHERE
 		WHERE
 			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
-	)
+	))
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -293,7 +293,7 @@ SELECT
 FROM
 	[CTE_1] [q]
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
@@ -301,7 +301,7 @@ WHERE
 		WHERE
 			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
-	)
+	))
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012

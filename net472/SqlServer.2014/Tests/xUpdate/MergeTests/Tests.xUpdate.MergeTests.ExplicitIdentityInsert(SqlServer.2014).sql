@@ -274,8 +274,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 12
+DECLARE @p1 Int -- Int32
+SET     @p1 = 12
 
 SET IDENTITY_INSERT [Person] ON
 MERGE INTO [Person] [Target]
@@ -293,7 +293,7 @@ USING (
 )
 ON ([Target].[PersonID] = [Source].[ID] AND [Target].[FirstName] <> N'first 3')
 
-WHEN NOT MATCHED AND [Source].[Diagnosis] LIKE N'%sick%' THEN
+WHEN NOT MATCHED AND [Source].[Diagnosis] LIKE N'%sick%' ESCAPE N'~' THEN
 INSERT
 (
 	[PersonID],
@@ -303,7 +303,7 @@ INSERT
 )
 VALUES
 (
-	@ID_1,
+	@p1,
 	N'Inserted 1',
 	N'Inserted 2',
 	N'M'
