@@ -2,14 +2,9 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	Degrees(Cast([p].[MoneyValue] as INTEGER))
 FROM
-	(
-		SELECT
-			Degrees(Cast([p].[MoneyValue] as INTEGER)) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	Cast([t].[c1] as Float) <> 0.10000000000000001
+	(Cast(Degrees(Cast([p].[MoneyValue] as INTEGER)) as Float) <> 0.10000000000000001 OR Cast(Degrees(Cast([p].[MoneyValue] as INTEGER)) as Float) IS NULL)
 

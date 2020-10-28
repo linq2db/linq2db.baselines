@@ -74,18 +74,28 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	'Id',
-	[selectParam].[Id],
+	[t1].[c3],
+	[t1].[Id],
 	Sum(CASE
-		WHEN [a_ActualStage].[Id] IS NULL
-			THEN NULL
-		ELSE [a_ActualStage].[Id]
+		WHEN [t1].[Id_1] IS NULL THEN NULL
+		ELSE [t1].[Id_1]
 	END)
 FROM
-	[Task] [selectParam]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON [selectParam].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+	(
+		SELECT
+			'Id' as [c1],
+			[selectParam].[Id] as [c2],
+			'Id' as [c3],
+			[selectParam].[Id],
+			[a_ActualStage].[Id] as [Id_1]
+		FROM
+			[Task] [selectParam]
+				LEFT JOIN [TaskStage] [a_ActualStage] ON [selectParam].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+	) [t1]
 GROUP BY
-	[selectParam].[Id]
+	[t1].[c2],
+	[t1].[c3],
+	[t1].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
