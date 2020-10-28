@@ -84,8 +84,8 @@ FROM
 							`GrandChild` `t1`
 						GROUP BY
 							`t1`.`ChildID`
-					) `max_1` ON (`gc1`.`GrandChildID` IS NULL AND `max_1`.`c1` IS NULL OR `gc1`.`GrandChildID` = `max_1`.`c1`)
+					) `max_1` ON (`gc1`.`GrandChildID` = `max_1`.`c1` OR `gc1`.`GrandChildID` IS NULL AND `max_1`.`c1` IS NULL)
 		) `t2` ON `p`.`ParentID` = `t2`.`gc3`
 WHERE
-	(`t2`.`gc3` IS NULL AND `t2`.`ChildID` IS NULL AND `t2`.`GrandChildID` IS NULL OR (`t2`.`GrandChildID` IS NULL OR `t2`.`GrandChildID` NOT IN (111, 222)))
+	(`t2`.`gc3` IS NULL AND `t2`.`ChildID` IS NULL AND `t2`.`GrandChildID` IS NULL OR (`t2`.`GrandChildID` NOT IN (111, 222) OR `t2`.`GrandChildID` IS NULL))
 

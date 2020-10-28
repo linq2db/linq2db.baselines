@@ -66,5 +66,5 @@ SELECT
 FROM
 	`Parent` `f`
 WHERE
-	`f`.`ParentID` >= 1 AND `f`.`ParentID` <= 4
+	(`f`.`ParentID` >= 1) AND (`f`.`ParentID` <= 4)
 
