@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE N'Jo%' AND [p].[PersonID] = 1
+	[p].[FirstName] LIKE N'jo%' ESCAPE N'~' AND [p].[PersonID] = 1
 

@@ -2,8 +2,8 @@
 -- SqlServer.2019 SqlServer.2017
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
-DECLARE @ID Int -- Int32
-SET     @ID = 1
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1
 
 UPDATE
 	[t]
@@ -12,14 +12,14 @@ SET
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = @ID
+	[t].[ID] = @p1
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0504030201
-DECLARE @ID Int -- Int32
-SET     @ID = 2
+DECLARE @p1 Int -- Int32
+SET     @p1 = 2
 
 UPDATE
 	[t]
@@ -28,7 +28,7 @@ SET
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = @ID
+	[t].[ID] = @p1
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
