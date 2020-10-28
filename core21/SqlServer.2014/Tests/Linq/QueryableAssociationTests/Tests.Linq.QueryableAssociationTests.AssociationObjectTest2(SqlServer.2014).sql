@@ -82,12 +82,12 @@ SELECT
 FROM
 	[SomeTable] [x] WITH (NOLOCK)
 WHERE
-	[x].[Id] = 123 AND (EXISTS(
+	[x].[Id] = 123 AND EXISTS(
 		SELECT
 			*
 		FROM
 			dbo.fn_SomeFunction([x].[Id]) [t1]
-	))
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
