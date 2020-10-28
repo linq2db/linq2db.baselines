@@ -2,14 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	[t].[c1]
+	Int(Sin([p].[MoneyValue] / 15) * 15)
 FROM
-	(
-		SELECT
-			Int(Sin([p].[MoneyValue] / 15) * 15) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[c1] IS NULL OR [t].[c1] <> 0.10000000000000001)
+	(Int(Sin([p].[MoneyValue] / 15) * 15) <> 0.10000000000000001 OR Int(Sin([p].[MoneyValue] / 15) * 15) IS NULL)
 

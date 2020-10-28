@@ -2,14 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	[t].[c1]
+	Sgn([p].[MoneyValue])
 FROM
-	(
-		SELECT
-			Sgn([p].[MoneyValue]) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	[t].[c1] <> 0
+	Sgn([p].[MoneyValue]) <> 0
 

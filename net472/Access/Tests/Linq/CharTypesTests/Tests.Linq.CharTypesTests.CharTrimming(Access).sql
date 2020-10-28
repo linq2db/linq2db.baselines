@@ -10,8 +10,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @NChar_1 WChar(1) -- StringFixedLength
 SET     @NChar_1 = ' '
-DECLARE @Char_1 WChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar_1 WChar(1) -- StringFixedLength
+SET     @NChar_1 = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -21,15 +21,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@Char_1
+	@NChar_1
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NChar_1 WChar(1) -- StringFixedLength
 SET     @NChar_1 = '	'
-DECLARE @Char_1 WChar(1) -- StringFixedLength
-SET     @Char_1 = '	'
+DECLARE @NChar_1 WChar(1) -- StringFixedLength
+SET     @NChar_1 = '	'
 
 INSERT INTO [AllTypes]
 (
@@ -39,7 +39,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@Char_1
+	@NChar_1
 )
 
 BeforeExecute
@@ -47,8 +47,8 @@ BeforeExecute
 DECLARE @NChar_1 WChar(1) -- StringFixedLength
 SET     @NChar_1 = '
 '
-DECLARE @Char_1 WChar(1) -- StringFixedLength
-SET     @Char_1 = '
+DECLARE @NChar_1 WChar(1) -- StringFixedLength
+SET     @NChar_1 = '
 '
 
 INSERT INTO [AllTypes]
@@ -59,15 +59,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@Char_1
+	@NChar_1
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NChar_1 WChar(1) -- StringFixedLength
 SET     @NChar_1 = ''
-DECLARE @Char_1 WChar(1) -- StringFixedLength
-SET     @Char_1 = ''
+DECLARE @NChar_1 WChar(1) -- StringFixedLength
+SET     @NChar_1 = ''
 
 INSERT INTO [AllTypes]
 (
@@ -77,15 +77,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@Char_1
+	@NChar_1
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NChar_1 WChar(1) -- StringFixedLength
 SET     @NChar_1 = ''
-DECLARE @Char_1 WChar(1) -- StringFixedLength
-SET     @Char_1 = ''
+DECLARE @NChar_1 WChar(1) -- StringFixedLength
+SET     @NChar_1 = ''
 
 INSERT INTO [AllTypes]
 (
@@ -95,15 +95,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@Char_1
+	@NChar_1
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NChar_1 WChar(1) -- StringFixedLength
 SET     @NChar_1 = ''
-DECLARE @Char_1 WChar(1) -- StringFixedLength
-SET     @Char_1 = ''
+DECLARE @NChar_1 WChar(1) -- StringFixedLength
+SET     @NChar_1 = ''
 
 INSERT INTO [AllTypes]
 (
@@ -113,15 +113,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@Char_1
+	@NChar_1
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NChar_1 WChar(1) -- StringFixedLength
 SET     @NChar_1 = ' '
-DECLARE @Char_1 WChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar_1 WChar(1) -- StringFixedLength
+SET     @NChar_1 = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -131,7 +131,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@Char_1
+	@NChar_1
 )
 
 BeforeExecute
@@ -354,8 +354,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @NChar_1 WChar(1) -- StringFixedLength
 SET     @NChar_1 = chr(0)
-DECLARE @Char_1 WChar(1) -- StringFixedLength
-SET     @Char_1 = chr(0)
+DECLARE @NChar_1 WChar(1) -- StringFixedLength
+SET     @NChar_1 = chr(0)
 
 INSERT INTO [AllTypes]
 (
@@ -365,15 +365,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@Char_1
+	@NChar_1
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NChar_1 WChar -- StringFixedLength
 SET     @NChar_1 = NULL
-DECLARE @Char_1 WChar -- StringFixedLength
-SET     @Char_1 = NULL
+DECLARE @NChar_1 WChar -- StringFixedLength
+SET     @NChar_1 = NULL
 
 INSERT INTO [AllTypes]
 (
@@ -383,7 +383,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@Char_1
+	@NChar_1
 )
 
 BeforeExecute

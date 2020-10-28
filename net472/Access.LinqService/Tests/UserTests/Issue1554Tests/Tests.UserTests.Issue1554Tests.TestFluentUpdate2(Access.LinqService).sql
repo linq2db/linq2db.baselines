@@ -36,14 +36,14 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ClaimedKeyType VarWChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN VarWChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
+DECLARE @ClaimedKeyType VarWChar(2) -- String
+SET     @ClaimedKeyType = 'EC'
 
 UPDATE
 	[Issue1554FluentTable] [p]
 SET
 	[p].[ClaimedKeyType] = @ClaimedKeyType,
-	[p].[ClaimedKeyTypeN] = @ClaimedKeyTypeN
+	[p].[ClaimedKeyTypeN] = @ClaimedKeyType
 WHERE
 	[p].[Id] = 0
 

@@ -2,14 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	[t].[c1]
+	Iif([p].[MoneyValue] >= 0, Int([p].[MoneyValue]), -Int(-[p].[MoneyValue]))
 FROM
-	(
-		SELECT
-			Iif([p].[MoneyValue] >= 0, Int([p].[MoneyValue]), -Int(-[p].[MoneyValue])) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[c1] IS NULL OR [t].[c1] <> 0.1)
+	(Iif([p].[MoneyValue] >= 0, Int([p].[MoneyValue]), -Int(-[p].[MoneyValue])) <> 0.1 OR Iif([p].[MoneyValue] >= 0, Int([p].[MoneyValue]), -Int(-[p].[MoneyValue])) IS NULL)
 

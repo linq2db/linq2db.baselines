@@ -19,7 +19,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	(@param_1 IS NULL AND [_].[SmallIntValue] IS NULL OR @param_1 = [_].[SmallIntValue])
+	(@param_1 = [_].[SmallIntValue] OR @param_1 IS NULL AND [_].[SmallIntValue] IS NULL)
 
 BeforeExecute
 -- Access AccessOleDb
