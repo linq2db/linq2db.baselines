@@ -2,14 +2,9 @@
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	[t].[c1]
+	Floor(Log(Convert(Float, [p].[MoneyValue])) / 0.69314718055994529)
 FROM
-	(
-		SELECT
-			Floor(Log(Convert(Float, [p].[MoneyValue])) / 0.69314718055994529) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[c1] IS NULL OR [t].[c1] <> 0.10000000000000001)
+	(Floor(Log(Convert(Float, [p].[MoneyValue])) / 0.69314718055994529) <> 0.10000000000000001 OR Floor(Log(Convert(Float, [p].[MoneyValue])) / 0.69314718055994529) IS NULL)
 

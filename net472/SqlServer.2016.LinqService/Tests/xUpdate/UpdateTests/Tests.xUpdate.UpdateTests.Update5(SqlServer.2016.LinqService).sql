@@ -37,15 +37,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ChildID Int -- Int32
-SET     @ChildID = 1002
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1002
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
 	[c_1]
 SET
-	[c_1].[ChildID] = @ChildID
+	[c_1].[ChildID] = @p1
 FROM
 	[Child] [c_1]
 		LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
@@ -54,15 +54,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ChildID Int -- Int32
-SET     @ChildID = 1002
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1002
 
 SELECT
 	Count(*)
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ChildID] = @ChildID
+	[c_1].[ChildID] = @p1
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012

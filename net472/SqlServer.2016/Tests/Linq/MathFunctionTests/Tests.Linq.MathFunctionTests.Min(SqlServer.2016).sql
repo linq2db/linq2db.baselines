@@ -2,14 +2,9 @@
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	[t].[c1]
+	IIF([p].[MoneyValue] < 5, [p].[MoneyValue], 5)
 FROM
-	(
-		SELECT
-			IIF([p].[MoneyValue] < 5, [p].[MoneyValue], 5) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[c1] IS NULL OR [t].[c1] <> 0)
+	(IIF([p].[MoneyValue] < 5, [p].[MoneyValue], 5) <> 0 OR IIF([p].[MoneyValue] < 5, [p].[MoneyValue], 5) IS NULL)
 
