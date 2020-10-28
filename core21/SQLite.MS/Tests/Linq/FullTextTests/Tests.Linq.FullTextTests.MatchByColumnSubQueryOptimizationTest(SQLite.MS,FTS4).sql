@@ -7,7 +7,7 @@ SELECT
 FROM
 	[FTS4_TABLE] [r]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -15,5 +15,5 @@ WHERE
 		WHERE
 			([r_1].[rowid] = [r].[rowid] OR [r_1].[rowid] IS NULL AND [r].[rowid] IS NULL) AND
 			[r_1].[text1] MATCH 'found'
-	))
+	)
 
