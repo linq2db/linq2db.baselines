@@ -37,8 +37,8 @@ WHERE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @ChildID Int32
-SET     @ChildID = 1002
+DECLARE @p1 Int32
+SET     @p1 = 1002
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -46,21 +46,21 @@ UPDATE
 	`Child` `c_1`
 		LEFT JOIN `Parent` `a_Parent` ON `c_1`.`ParentID` = `a_Parent`.`ParentID`
 SET
-	`c_1`.`ChildID` = @ChildID
+	`c_1`.`ChildID` = @p1
 WHERE
 	`c_1`.`ChildID` = @id AND `a_Parent`.`Value1` = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @ChildID Int32
-SET     @ChildID = 1002
+DECLARE @p1 Int32
+SET     @p1 = 1002
 
 SELECT
 	Count(*)
 FROM
 	`Child` `c_1`
 WHERE
-	`c_1`.`ChildID` = @ChildID
+	`c_1`.`ChildID` = @p1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

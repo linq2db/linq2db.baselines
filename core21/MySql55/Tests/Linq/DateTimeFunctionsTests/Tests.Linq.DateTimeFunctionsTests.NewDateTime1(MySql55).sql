@@ -2,14 +2,9 @@
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`t`.`c1`
+	Cast(Concat(Cast(Extract(year from `p`.`DateTimeValue`) as CHAR(11)), '-10-1') as Date)
 FROM
-	(
-		SELECT
-			Cast(Concat(Cast(Extract(year from `p`.`DateTimeValue`) as CHAR(11)), '-', '10', '-', '1') as Date) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `p`
 WHERE
-	Extract(month from `t`.`c1`) = 10
+	Extract(month from Cast(Concat(Cast(Extract(year from `p`.`DateTimeValue`) as CHAR(11)), '-10-1') as Date)) = 10
 

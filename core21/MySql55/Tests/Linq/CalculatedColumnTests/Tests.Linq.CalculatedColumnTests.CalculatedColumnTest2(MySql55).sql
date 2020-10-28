@@ -40,5 +40,5 @@ SELECT
 FROM
 	`Person` `i`
 WHERE
-	(Concat(`i`.`LastName`, ', ', `i`.`FirstName`) IS NULL OR Concat(`i`.`LastName`, ', ', `i`.`FirstName`) <> 'Pupkin, John')
+	(Concat(`i`.`LastName`, ', ', `i`.`FirstName`) <> 'Pupkin, John' OR Concat(`i`.`LastName`, ', ', `i`.`FirstName`) IS NULL)
 

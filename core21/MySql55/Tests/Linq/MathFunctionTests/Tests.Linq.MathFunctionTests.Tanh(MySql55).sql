@@ -2,14 +2,9 @@
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`t`.`c1`
+	Floor(((Exp(`p`.`MoneyValue` / 15) - Exp(-(`p`.`MoneyValue` / 15))) / (Exp(`p`.`MoneyValue` / 15) + Exp(-(`p`.`MoneyValue` / 15)))) * 15)
 FROM
-	(
-		SELECT
-			Floor(((Exp(`p`.`MoneyValue` / 15) - Exp(-(`p`.`MoneyValue` / 15))) / (Exp(`p`.`MoneyValue` / 15) + Exp(-(`p`.`MoneyValue` / 15)))) * 15) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `p`
 WHERE
-	`t`.`c1` <> 0.10000000000000001
+	(Floor(((Exp(`p`.`MoneyValue` / 15) - Exp(-(`p`.`MoneyValue` / 15))) / (Exp(`p`.`MoneyValue` / 15) + Exp(-(`p`.`MoneyValue` / 15)))) * 15) <> 0.10000000000000001 OR Floor(((Exp(`p`.`MoneyValue` / 15) - Exp(-(`p`.`MoneyValue` / 15))) / (Exp(`p`.`MoneyValue` / 15) + Exp(-(`p`.`MoneyValue` / 15)))) * 15) IS NULL)
 

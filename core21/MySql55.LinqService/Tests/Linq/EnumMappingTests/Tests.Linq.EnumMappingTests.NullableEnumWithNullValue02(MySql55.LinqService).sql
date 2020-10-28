@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Id Int32
-SET     @Id = 105
+DECLARE @p1 Int32
+SET     @p1 = 105
 
 DELETE `r`
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` >= 101 AND `r`.`ID` < @Id
+	`r`.`ID` >= 101 AND `r`.`ID` < @p1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -110,12 +110,12 @@ ORDER BY
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Id Int32
-SET     @Id = 105
+DECLARE @p1 Int32
+SET     @p1 = 105
 
 DELETE `r`
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` >= 101 AND `r`.`ID` < @Id
+	`r`.`ID` >= 101 AND `r`.`ID` < @p1
 
