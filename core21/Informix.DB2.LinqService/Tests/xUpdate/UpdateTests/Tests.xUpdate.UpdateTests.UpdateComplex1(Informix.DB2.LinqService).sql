@@ -34,7 +34,7 @@ BeforeExecute
 DELETE FROM
 	Person
 WHERE
-	Person.FirstName LIKE 'UpdateComplex%'
+	Person.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -128,5 +128,5 @@ BeforeExecute
 DELETE FROM
 	Person
 WHERE
-	Person.FirstName LIKE 'UpdateComplex%'
+	Person.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
 

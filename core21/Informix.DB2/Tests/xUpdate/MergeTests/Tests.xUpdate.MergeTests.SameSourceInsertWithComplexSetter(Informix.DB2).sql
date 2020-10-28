@@ -220,10 +220,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @name VarChar(4) -- String
-SET     @name = 'test'
 DECLARE @idx Integer(4) -- Int32
-SET     @idx = 6
+SET     @idx = 10
 
 MERGE INTO TestMerge1 Target
 USING (
@@ -253,7 +251,7 @@ VALUES
 (
 	10 + Source.Id,
 	123,
-	Length(@name) + @idx,
+	@idx,
 	Source.Field2,
 	999,
 	888

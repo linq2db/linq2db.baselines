@@ -26,17 +26,15 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @name VarChar(8) -- String
-SET     @name = 'Update14'
 DECLARE @idx Integer(4) -- Int32
-SET     @idx = 4
+SET     @idx = 12
 
 UPDATE
 	Person
 SET
-	Person.LastName = To_Char(Length(@name) + @idx)
+	Person.LastName = To_Char(@idx)
 WHERE
-	Person.FirstName LIKE 'Update14%'
+	Person.FirstName LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -46,7 +44,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	t1.FirstName LIKE 'Update14%'
+	t1.FirstName LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -54,5 +52,5 @@ BeforeExecute
 DELETE FROM
 	Person
 WHERE
-	Person.FirstName LIKE 'Update14%'
+	Person.FirstName LIKE 'Update14%' ESCAPE '~'
 

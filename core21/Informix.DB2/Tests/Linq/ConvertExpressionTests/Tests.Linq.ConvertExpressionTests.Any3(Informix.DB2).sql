@@ -8,14 +8,14 @@ SELECT FIRST 1
 		FROM
 			Parent p
 		WHERE
-			EXISTS(
+			(EXISTS(
 				SELECT
 					*
 				FROM
 					Child c_1
 				WHERE
 					p.ParentID = c_1.ParentID AND c_1.ParentID > 1
-			)
+			))
 	)
 FROM SYSTABLES
 

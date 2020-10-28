@@ -4,12 +4,12 @@
 DELETE FROM
 	Parent
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Child t1
 		WHERE
 			Parent.ParentID = t1.ParentID
-	)
+	))
 

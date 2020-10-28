@@ -7,7 +7,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID > 0 AND EXISTS(
+	p.ParentID > 0 AND (EXISTS(
 		SELECT
 			*
 		FROM
@@ -15,5 +15,5 @@ WHERE
 		WHERE
 			p.ParentID = c_1.ParentID AND c_1.ParentID > 0 AND
 			c_1.ParentID > 3
-	)
+	))
 

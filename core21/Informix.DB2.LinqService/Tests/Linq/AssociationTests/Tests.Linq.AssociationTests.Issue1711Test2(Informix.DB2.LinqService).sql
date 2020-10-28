@@ -25,14 +25,14 @@ SELECT
 FROM
 	Entity1711 t
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Relationship1711 r
 		WHERE
 			r.Deleted = 'f' AND r.EntityId = t.Id
-	)
+	))
 
 BeforeExecute
 -- Informix.DB2 Informix

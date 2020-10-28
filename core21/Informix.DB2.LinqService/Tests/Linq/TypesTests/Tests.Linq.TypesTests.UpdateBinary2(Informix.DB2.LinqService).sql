@@ -2,29 +2,29 @@
 -- Informix.DB2 Informix
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = System.Byte[]
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 1
+DECLARE @p1 Integer(4) -- Int32
+SET     @p1 = 1
 
 UPDATE
 	LinqDataTypes
 SET
 	LinqDataTypes.BinaryValue = @BinaryValue
 WHERE
-	LinqDataTypes.ID = @ID
+	LinqDataTypes.ID = @p1
 
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = System.Byte[]
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 2
+DECLARE @p1 Integer(4) -- Int32
+SET     @p1 = 2
 
 UPDATE
 	LinqDataTypes
 SET
 	LinqDataTypes.BinaryValue = @BinaryValue
 WHERE
-	LinqDataTypes.ID = @ID
+	LinqDataTypes.ID = @p1
 
 BeforeExecute
 -- Informix.DB2 Informix

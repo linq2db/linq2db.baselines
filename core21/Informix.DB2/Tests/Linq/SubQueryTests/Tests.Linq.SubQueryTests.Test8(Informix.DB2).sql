@@ -7,14 +7,14 @@ SELECT
 FROM
 	Child c_1
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Parent p
 		WHERE
 			p.ParentID = 1 AND p.ParentID = c_1.ParentID
-	)
+	))
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -25,12 +25,12 @@ SELECT
 FROM
 	Child c_1
 WHERE
-	EXISTS(
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Parent p
 		WHERE
 			p.ParentID = 2 AND p.ParentID = c_1.ParentID
-	)
+	))
 
