@@ -2,14 +2,9 @@
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	Floor(Cot(Cast(p."MoneyValue" as Float) / 15) * 15)
 FROM
-	(
-		SELECT
-			Floor(Cot(Cast(p."MoneyValue" as Float) / 15) * 15) as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	t.c1 <> 0.10000000000000001
+	(Floor(Cot(Cast(p."MoneyValue" as Float) / 15) * 15) <> 0.10000000000000001 OR Floor(Cot(Cast(p."MoneyValue" as Float) / 15) * 15) IS NULL)
 

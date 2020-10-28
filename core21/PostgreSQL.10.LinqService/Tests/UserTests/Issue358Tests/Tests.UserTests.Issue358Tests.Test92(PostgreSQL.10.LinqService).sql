@@ -15,13 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	(CASE
-		WHEN t1."BoolValue" IN (True)
-			THEN True
-		ELSE False
-	END = True AND CASE
-		WHEN t1."BoolValue" IN (True)
-			THEN True
-		ELSE False
-	END IS NOT NULL)
+	t1."BoolValue" IN (True)
 
