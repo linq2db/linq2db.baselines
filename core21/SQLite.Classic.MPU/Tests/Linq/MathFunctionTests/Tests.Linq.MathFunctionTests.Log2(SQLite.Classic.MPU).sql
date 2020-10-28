@@ -2,14 +2,9 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	Floor(Log(Cast([p].[MoneyValue] as Float)) / 0.69314718055994529)
 FROM
-	(
-		SELECT
-			Floor(Log(Cast([p].[MoneyValue] as Float)) / 0.69314718055994529) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	[t].[c1] <> 0.10000000000000001
+	(Floor(Log(Cast([p].[MoneyValue] as Float)) / 0.69314718055994529) <> 0.10000000000000001 OR Floor(Log(Cast([p].[MoneyValue] as Float)) / 0.69314718055994529) IS NULL)
 

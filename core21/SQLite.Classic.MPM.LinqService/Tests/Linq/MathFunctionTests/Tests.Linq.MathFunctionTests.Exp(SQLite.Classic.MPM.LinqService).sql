@@ -2,14 +2,9 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	Floor(Exp(Cast([p].[MoneyValue] as Float)))
 FROM
-	(
-		SELECT
-			Floor(Exp(Cast([p].[MoneyValue] as Float))) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	[t].[c1] <> 0.10000000000000001
+	(Floor(Exp(Cast([p].[MoneyValue] as Float))) <> 0.10000000000000001 OR Floor(Exp(Cast([p].[MoneyValue] as Float))) IS NULL)
 

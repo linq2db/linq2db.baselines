@@ -2,14 +2,9 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	Floor(Atan2(Cast([p].[MoneyValue] as Float) / 15, 0) * 15)
 FROM
-	(
-		SELECT
-			Floor(Atan2(Cast([p].[MoneyValue] as Float) / 15, 0) * 15) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	[t].[c1] <> 0.10000000000000001
+	(Floor(Atan2(Cast([p].[MoneyValue] as Float) / 15, 0) * 15) <> 0.10000000000000001 OR Floor(Atan2(Cast([p].[MoneyValue] as Float) / 15, 0) * 15) IS NULL)
 

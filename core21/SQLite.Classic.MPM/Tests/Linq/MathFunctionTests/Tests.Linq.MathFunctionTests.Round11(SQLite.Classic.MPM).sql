@@ -2,18 +2,21 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	CASE
+		WHEN Cast([p].[MoneyValue] as Float) * 2 = Round(Cast([p].[MoneyValue] as Float) * 2, 1) AND Cast([p].[MoneyValue] as Float) <> Round(Cast([p].[MoneyValue] as Float), 1)
+			THEN Round(Cast([p].[MoneyValue] as Float) / 2, 1) * 2
+		ELSE Round(Cast([p].[MoneyValue] as Float), 1)
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN Cast([p].[MoneyValue] as Float) * 2 = Round(Cast([p].[MoneyValue] as Float) * 2, 1) AND Cast([p].[MoneyValue] as Float) <> Round(Cast([p].[MoneyValue] as Float), 1)
-					THEN Round(Cast([p].[MoneyValue] as Float) / 2, 1) * 2
-				ELSE Round(Cast([p].[MoneyValue] as Float), 1)
-			END as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[c1] IS NULL OR [t].[c1] <> 0)
+	(CASE
+		WHEN Cast([p].[MoneyValue] as Float) * 2 = Round(Cast([p].[MoneyValue] as Float) * 2, 1) AND Cast([p].[MoneyValue] as Float) <> Round(Cast([p].[MoneyValue] as Float), 1)
+			THEN Round(Cast([p].[MoneyValue] as Float) / 2, 1) * 2
+		ELSE Round(Cast([p].[MoneyValue] as Float), 1)
+	END <> 0 OR CASE
+		WHEN Cast([p].[MoneyValue] as Float) * 2 = Round(Cast([p].[MoneyValue] as Float) * 2, 1) AND Cast([p].[MoneyValue] as Float) <> Round(Cast([p].[MoneyValue] as Float), 1)
+			THEN Round(Cast([p].[MoneyValue] as Float) / 2, 1) * 2
+		ELSE Round(Cast([p].[MoneyValue] as Float), 1)
+	END IS NULL)
 

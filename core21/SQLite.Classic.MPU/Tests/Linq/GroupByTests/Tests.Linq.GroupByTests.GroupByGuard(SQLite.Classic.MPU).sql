@@ -33,7 +33,7 @@ GROUP BY
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p1 Char -- AnsiStringFixedLength
+DECLARE @p1  -- Int32
 SET     @p1 = 1
 
 SELECT
@@ -49,7 +49,7 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p1 Char -- AnsiStringFixedLength
+DECLARE @p1  -- Int32
 SET     @p1 = 0
 
 SELECT
