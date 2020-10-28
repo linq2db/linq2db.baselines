@@ -40,8 +40,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 2
-DECLARE @FirstName_1 VarChar(5) -- String
-SET     @FirstName_1 = 'John0'
+DECLARE @p1 VarChar(5) -- String
+SET     @p1 = 'John0'
 
 SELECT FIRST @take
 	"p"."FirstName",
@@ -52,7 +52,7 @@ SELECT FIRST @take
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = @FirstName_1 AND "p"."LastName" = 'Shepard'
+	"p"."FirstName" = @p1 AND "p"."LastName" = 'Shepard'
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -88,8 +88,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 2
-DECLARE @FirstName_1 VarChar(5) -- String
-SET     @FirstName_1 = 'John1'
+DECLARE @p1 VarChar(5) -- String
+SET     @p1 = 'John1'
 
 SELECT FIRST @take
 	"p"."FirstName",
@@ -100,7 +100,7 @@ SELECT FIRST @take
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = @FirstName_1 AND "p"."LastName" = 'Shepard'
+	"p"."FirstName" = @p1 AND "p"."LastName" = 'Shepard'
 
 BeforeExecute
 -- Firebird3 Firebird

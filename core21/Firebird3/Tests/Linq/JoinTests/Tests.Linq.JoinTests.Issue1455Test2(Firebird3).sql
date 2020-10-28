@@ -57,12 +57,6 @@ CREATE TABLE "Flat"
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @p1 VarChar(3) -- String
-SET     @p1 = '%C%'
-DECLARE @p2 VarChar(3) -- String
-SET     @p2 = '%C%'
-DECLARE @p3 VarChar(3) -- String
-SET     @p3 = '%C%'
 
 SELECT
 	"al_1"."alert",
@@ -76,7 +70,7 @@ FROM
 			"al"."CreationDate" as "alert_2"
 		FROM
 			"Alert" "al"
-				LEFT JOIN "AuditAlert" "au1" ON ("au1"."AlertKey" IS NULL AND "al"."AlertKey" IS NULL OR "au1"."AlertKey" = "al"."AlertKey") AND ("au1"."AlertCode" IS NULL AND "au1"."AlertCode" IS NULL OR "au1"."AlertCode" = "au1"."AlertCode")
+				LEFT JOIN "AuditAlert" "au1" ON ("au1"."AlertKey" = "al"."AlertKey" OR "au1"."AlertKey" IS NULL AND "al"."AlertKey" IS NULL) AND ("au1"."AlertCode" = "au1"."AlertCode" OR "au1"."AlertCode" IS NULL AND "au1"."AlertCode" IS NULL)
 		GROUP BY
 			"al"."AlertKey",
 			"al"."AlertCode",
@@ -85,7 +79,7 @@ FROM
 		LEFT JOIN "Trade" "trade1" ON "al_1"."alert" = Cast("trade1"."DealId" as VarChar(11) CHARACTER SET UNICODE_FSS)
 		LEFT JOIN "Nomin" "nomin1" ON "al_1"."alert" = Cast("nomin1"."CargoId" as VarChar(11) CHARACTER SET UNICODE_FSS)
 WHERE
-	(("nomin1"."DeliveryCounterParty" LIKE @p1 OR "trade1"."CounterParty" LIKE @p2) OR "al_1"."alert_1" LIKE @p3)
+	(("nomin1"."DeliveryCounterParty" LIKE '%C%' OR "trade1"."CounterParty" LIKE '%C%') OR "al_1"."alert_1" LIKE '%C%')
 GROUP BY
 	"al_1"."alert",
 	"al_1"."alert_1",

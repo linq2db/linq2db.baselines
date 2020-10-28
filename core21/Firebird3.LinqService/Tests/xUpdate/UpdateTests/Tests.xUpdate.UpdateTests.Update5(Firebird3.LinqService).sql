@@ -36,15 +36,15 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 1002
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 1002
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
 	"Child"
 SET
-	"Child"."ChildID" = @ChildID
+	"Child"."ChildID" = @p1
 WHERE
 	EXISTS(
 		SELECT
@@ -61,15 +61,15 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 1002
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 1002
 
 SELECT
 	Count(*)
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ChildID" = @ChildID
+	"c_1"."ChildID" = @p1
 
 BeforeExecute
 -- Firebird3 Firebird
