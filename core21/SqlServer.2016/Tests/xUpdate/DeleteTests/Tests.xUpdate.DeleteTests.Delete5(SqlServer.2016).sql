@@ -18,8 +18,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1001
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1001
 
 INSERT INTO [Parent]
 (
@@ -28,14 +28,14 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@ParentID,
+	@p1,
 	1
 )
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1002
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1002
 
 INSERT INTO [Parent]
 (
@@ -44,7 +44,7 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@ParentID,
+	@p1,
 	1
 )
 
