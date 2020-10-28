@@ -36,15 +36,15 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 1002
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 1002
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
 	"Child"
 SET
-	"ChildID" = :ChildID
+	"ChildID" = :p1
 FROM
 	"Child" c_1
 		LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
@@ -56,15 +56,15 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 1002
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 1002
 
 SELECT
 	Count(*)
 FROM
 	"Child" c_1
 WHERE
-	c_1."ChildID" = :ChildID
+	c_1."ChildID" = :p1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
