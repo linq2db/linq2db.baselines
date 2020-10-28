@@ -90,7 +90,7 @@ SELECT
 	[r].[OrderDate]
 FROM
 	[Orders] [r]
-		INNER JOIN [Customers] [a_Customer] ON ([r].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [r].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON ([r].[CustomerID] = [a_Customer].[CustomerID] OR [r].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 WHERE
 	[r].[OrderDate] > @OrderDate_1
 

@@ -82,7 +82,7 @@ SELECT
 	[o].[OrderID]
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 		LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
 WHERE
 	(NOT EXISTS(
@@ -91,14 +91,14 @@ WHERE
 		FROM
 			[Customers] [c_1]
 		WHERE
-			([c_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [c_1].[CustomerID] = [a_Customer].[CustomerID]) AND
-			[c_1].[CompanyName] NOT LIKE N'A%'
+			([c_1].[CustomerID] = [a_Customer].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL) AND
+			[c_1].[CompanyName] NOT LIKE N'A%' ESCAPE N'~'
 	) OR NOT EXISTS(
 		SELECT
 			*
 		FROM
 			[Employees] [e]
 		WHERE
-			[e].[EmployeeID] = [a_Employee].[EmployeeID] AND [e].[FirstName] NOT LIKE N'%t'
+			[e].[EmployeeID] = [a_Employee].[EmployeeID] AND [e].[FirstName] NOT LIKE N'%t' ESCAPE N'~'
 	))
 

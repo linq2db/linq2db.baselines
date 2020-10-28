@@ -83,10 +83,6 @@ BeforeExecute
 -- Northwind SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @p1 Bit -- Boolean
-SET     @p1 = 0
-DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1
 
 SELECT TOP (@take)
 	[c_1].[Fax],
@@ -103,5 +99,5 @@ SELECT TOP (@take)
 FROM
 	[Customers] [c_1]
 WHERE
-	IIF(@p1 = 1, 1, IIF(CharIndex(N't', Left([c_1].[City], 4), 2) = 0, -1, (4 - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3)))) - @Length_1 + 1)) = 3
+	IIF(CharIndex(N't', Left([c_1].[City], 4), 2) = 0, -1, 4 - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3)))) = 3
 

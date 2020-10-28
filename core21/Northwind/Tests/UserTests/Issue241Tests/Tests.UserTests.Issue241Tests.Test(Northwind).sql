@@ -16,7 +16,7 @@ SELECT
 FROM
 	[Customers] [x]
 WHERE
-	[x].[CompanyName] LIKE N'%t%'
+	[x].[CompanyName] LIKE N'%t%' ESCAPE N'~'
 GROUP BY
 	[x].[CustomerID],
 	[x].[Fax],
@@ -50,7 +50,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -72,7 +72,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -94,7 +94,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -116,7 +116,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -138,7 +138,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -160,7 +160,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -182,7 +182,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -204,7 +204,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -226,7 +226,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -248,7 +248,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -270,7 +270,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -292,7 +292,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -314,7 +314,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -336,7 +336,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -358,7 +358,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -380,7 +380,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -402,7 +402,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -424,7 +424,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -446,7 +446,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -468,7 +468,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -490,7 +490,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -512,7 +512,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -534,7 +534,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -556,7 +556,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -578,7 +578,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -600,7 +600,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -622,7 +622,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -644,7 +644,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -666,7 +666,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -688,7 +688,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -710,7 +710,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -732,7 +732,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -754,7 +754,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -776,7 +776,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -798,7 +798,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -820,7 +820,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -842,7 +842,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -864,7 +864,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -886,7 +886,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -908,7 +908,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -930,7 +930,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -952,7 +952,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -974,7 +974,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -996,7 +996,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1018,7 +1018,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1040,7 +1040,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1062,7 +1062,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1084,7 +1084,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1106,7 +1106,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1128,7 +1128,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1150,7 +1150,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1172,7 +1172,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1194,7 +1194,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1216,7 +1216,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1238,7 +1238,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1260,7 +1260,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1282,7 +1282,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1304,7 +1304,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1326,7 +1326,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind SqlServer.2017
@@ -1348,5 +1348,5 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE N'%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID_1
 
