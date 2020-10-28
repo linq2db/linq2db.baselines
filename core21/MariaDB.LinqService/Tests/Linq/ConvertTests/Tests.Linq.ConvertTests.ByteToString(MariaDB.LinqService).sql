@@ -2,14 +2,9 @@
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`p`.`c1`
+	Cast(Cast(`t`.`ID` as UNSIGNED) as CHAR(3))
 FROM
-	(
-		SELECT
-			Cast(Cast(`t`.`ID` as UNSIGNED) as CHAR(3)) as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `p`
+	`LinqDataTypes` `t`
 WHERE
-	Char_Length(`p`.`c1`) > 0
+	Char_Length(Cast(Cast(`t`.`ID` as UNSIGNED) as CHAR(3))) > 0
 

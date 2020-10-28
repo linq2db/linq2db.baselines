@@ -10,7 +10,7 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%'
+	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -51,7 +51,7 @@ UPDATE
 SET
 	`_`.`LastName` = `_`.`FirstName`
 WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%'
+	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -79,5 +79,5 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%'
+	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 

@@ -2,8 +2,8 @@
 -- MariaDB MySql.Official MySql
 DECLARE @s VarChar(7) -- String
 SET     @s = '123[456'
-DECLARE @ps VarChar(3) -- String
-SET     @ps = '%[%'
+DECLARE @ps VarChar(4) -- String
+SET     @ps = '%~[%'
 
 SELECT
 	`p`.`FirstName`,

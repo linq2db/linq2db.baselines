@@ -51,15 +51,15 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @ParentID Int32
-SET     @ParentID = 1002
+DECLARE @p1 Int32
+SET     @p1 = 1002
 
 SELECT
 	Count(*)
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`p`.`ParentID` = @p1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
