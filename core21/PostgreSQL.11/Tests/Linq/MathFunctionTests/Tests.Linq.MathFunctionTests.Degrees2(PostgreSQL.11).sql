@@ -2,14 +2,9 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	Degrees(Cast(p."MoneyValue" as Float))
 FROM
-	(
-		SELECT
-			Degrees(Cast(p."MoneyValue" as Float)) as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	t.c1 <> 0.10000000000000001
+	(Degrees(Cast(p."MoneyValue" as Float)) <> 0.10000000000000001 OR Degrees(Cast(p."MoneyValue" as Float)) IS NULL)
 

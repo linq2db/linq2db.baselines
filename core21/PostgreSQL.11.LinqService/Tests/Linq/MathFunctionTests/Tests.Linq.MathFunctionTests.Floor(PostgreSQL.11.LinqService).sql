@@ -2,14 +2,9 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	Floor(-(p."MoneyValue" + 1))
 FROM
-	(
-		SELECT
-			Floor(-(p."MoneyValue" + 1)) as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	t.c1 <> 0
+	Floor(-(p."MoneyValue" + 1)) <> 0
 
