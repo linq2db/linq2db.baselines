@@ -28,7 +28,7 @@ SELECT
 FROM
 	"Patient" pat
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -36,5 +36,5 @@ WHERE
 				LEFT JOIN "Patient" "a_Patient" ON per."PersonID" = "a_Patient"."PersonID"
 		WHERE
 			per."PersonID" = pat."PersonID" AND "a_Patient"."Diagnosis" LIKE '%with%' ESCAPE '~'
-	))
+	)
 

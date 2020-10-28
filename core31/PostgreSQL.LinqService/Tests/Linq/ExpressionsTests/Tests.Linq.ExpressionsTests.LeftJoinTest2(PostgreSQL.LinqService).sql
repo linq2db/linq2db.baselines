@@ -8,7 +8,7 @@ SELECT
 FROM
 	"GrandChild" g_1
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -16,5 +16,5 @@ WHERE
 				LEFT JOIN "Parent" gr ON t."ParentID" = gr."ParentID"
 		WHERE
 			t."ChildID" = g_1."ChildID"
-	))
+	)
 
