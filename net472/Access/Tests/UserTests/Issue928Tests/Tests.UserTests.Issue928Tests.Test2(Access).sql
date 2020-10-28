@@ -15,14 +15,14 @@ FROM
 			FROM
 				[Parent] [p]
 			WHERE
-				(EXISTS(
+				EXISTS(
 					SELECT
 						*
 					FROM
 						[Child] [ch]
 					WHERE
 						[ch].[ParentID] = [p].[ParentID]
-				))
+				)
 			GROUP BY
 				[p].[ParentID]
 		) [t1] ON ([t1].[ParentID] = [p1].[ParentID])
