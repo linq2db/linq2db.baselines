@@ -23,14 +23,14 @@ SELECT
 FROM
 	[TestEqualsTable1] [_]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			[TestEqualsTable2] [__]
 		WHERE
 			[_].[Id] = [__].[FK] AND [__].[Id] IS NULL
-	))
+	)
 
 BeforeExecute
 -- SqlCe

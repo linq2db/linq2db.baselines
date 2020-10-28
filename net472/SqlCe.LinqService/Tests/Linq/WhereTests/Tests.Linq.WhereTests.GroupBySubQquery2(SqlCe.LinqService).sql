@@ -7,7 +7,7 @@ SELECT
 FROM
 	[Child] [x]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -21,5 +21,5 @@ WHERE
 			) [t2]
 		WHERE
 			[t2].[c1] = [x].[ChildID]
-	))
+	)
 
