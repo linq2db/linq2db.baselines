@@ -9,7 +9,7 @@ BeforeExecute
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" LIKE 'UpdateComplex%'
+	"t1"."FirstName" STARTING WITH 'UpdateComplex'
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -51,7 +51,7 @@ UPDATE
 SET
 	"Person"."LastName" = "Person"."FirstName"
 WHERE
-	"Person"."FirstName" LIKE 'UpdateComplex%'
+	"Person"."FirstName" STARTING WITH 'UpdateComplex'
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -77,5 +77,5 @@ BeforeExecute
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" LIKE 'UpdateComplex%'
+	"t1"."FirstName" STARTING WITH 'UpdateComplex'
 

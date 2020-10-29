@@ -2,14 +2,9 @@
 -- Firebird3 Firebird
 
 SELECT
-	"p"."c1"
+	Cast("t"."MoneyValue" as VarChar(31) CHARACTER SET UNICODE_FSS)
 FROM
-	(
-		SELECT
-			Cast("t"."MoneyValue" as VarChar(31) CHARACTER SET UNICODE_FSS) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	Char_Length("p"."c1") > 0
+	Char_Length(Cast("t"."MoneyValue" as VarChar(31) CHARACTER SET UNICODE_FSS)) > 0
 
