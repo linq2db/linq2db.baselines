@@ -3,7 +3,7 @@
 DECLARE @s NVarChar(4000) -- String
 SET     @s = N'123[456'
 DECLARE @ps NVarChar(4000) -- String
-SET     @ps = N'%[[]%'
+SET     @ps = N'%~[%'
 
 SELECT
 	[p].[FirstName],
