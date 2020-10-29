@@ -9,5 +9,5 @@ FROM
 GROUP BY
 	[_].[ParentID]
 HAVING
-	(Sum([_].[ParentID]) IS NULL OR Sum([_].[ParentID]) <> 36)
+	(Sum([_].[ParentID]) <> 36 OR Sum([_].[ParentID]) IS NULL)
 
