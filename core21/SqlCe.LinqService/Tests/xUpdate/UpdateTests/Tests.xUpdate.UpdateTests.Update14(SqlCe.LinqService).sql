@@ -36,7 +36,7 @@ UPDATE
 SET
 	[Person].[LastName] = Convert(NVarChar(11), Len(@name) + @idx)
 WHERE
-	[Person].[FirstName] LIKE 'Update14%'
+	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe
@@ -46,7 +46,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'Update14%'
+	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe
@@ -54,5 +54,5 @@ BeforeExecute
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'Update14%'
+	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
