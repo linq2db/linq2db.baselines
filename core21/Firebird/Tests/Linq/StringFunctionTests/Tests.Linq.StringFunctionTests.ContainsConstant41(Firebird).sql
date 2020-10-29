@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- Firebird
-DECLARE @s VarChar(7) -- String
-SET     @s = '123[456'
-DECLARE @ps VarChar(3) -- String
-SET     @ps = '%[%'
 
 SELECT
 	"p"."FirstName",
@@ -14,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = 1 AND @s LIKE @ps ESCAPE '~'
+	"p"."PersonID" = 1 AND '123[456' CONTAINING '['
 

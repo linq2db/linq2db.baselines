@@ -4,7 +4,7 @@
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" LIKE 'Insert15%'
+	"t1"."FirstName" STARTING WITH 'Insert15'
 
 BeforeExecute
 -- Firebird
@@ -42,7 +42,7 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" LIKE 'Insert15%'
+	"t1"."FirstName" STARTING WITH 'Insert15'
 
 BeforeExecute
 -- Firebird
@@ -50,5 +50,5 @@ BeforeExecute
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" LIKE 'Insert15%'
+	"t1"."FirstName" STARTING WITH 'Insert15'
 
