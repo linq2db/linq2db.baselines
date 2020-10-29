@@ -86,7 +86,7 @@ FROM
 					LEFT JOIN [table3] [tbl3] ON [allG].[maxCol] = [tbl3].[id]
 					LEFT JOIN [b_table2] [btbl] ON [tbl3].[col] = [btbl].[id]
 		) [t2] ON [bt1].[col3] = [t2].[ctb]
-		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL OR [bt1].[textCol] = [ctb2].[col1])
+		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
 WHERE
 	[w].[commonTableId] = @id
 GROUP BY

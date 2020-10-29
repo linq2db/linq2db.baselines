@@ -2,17 +2,13 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[p].[c1]
+	CASE
+		WHEN [t].[MoneyValue] <> 0
+			THEN 1
+		ELSE 0
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [t].[MoneyValue] = 0 THEN 0
-				ELSE 1
-			END as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	([p].[c1] = 1 AND [p].[c1] IS NOT NULL)
+	[t].[MoneyValue] <> 0
 

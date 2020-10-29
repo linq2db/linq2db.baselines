@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p1  -- Int16
+DECLARE @p1  -- Int32
 SET     @p1 = 1234
 
 INSERT INTO [AllTypes]
