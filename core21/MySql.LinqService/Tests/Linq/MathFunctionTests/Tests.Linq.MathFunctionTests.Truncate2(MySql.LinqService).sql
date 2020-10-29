@@ -2,14 +2,9 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t`.`c1`
+	Truncate((-`p`.`MoneyValue`), 0)
 FROM
-	(
-		SELECT
-			Truncate((-`p`.`MoneyValue`), 0) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `p`
 WHERE
-	(`t`.`c1` IS NULL OR `t`.`c1` <> 0.10000000000000001)
+	Truncate((-`p`.`MoneyValue`), 0) <> 0.10000000000000001
 
