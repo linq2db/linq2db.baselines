@@ -9,7 +9,7 @@ BeforeExecute
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'UpdateComplex%'
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe
@@ -107,5 +107,5 @@ BeforeExecute
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'UpdateComplex%'
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 

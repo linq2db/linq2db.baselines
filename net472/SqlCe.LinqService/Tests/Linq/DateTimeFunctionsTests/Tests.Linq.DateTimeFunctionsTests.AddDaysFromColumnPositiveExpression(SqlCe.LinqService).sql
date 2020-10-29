@@ -42,10 +42,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @part1 Int -- Int32
-SET     @part1 = 4
-DECLARE @part2 Int -- Int32
-SET     @part2 = 4
 DECLARE @p1 DateTime
 SET     @p1 = '2018-01-02'
 
@@ -54,7 +50,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > @p1
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p1
 
 BeforeExecute
 -- SqlCe
