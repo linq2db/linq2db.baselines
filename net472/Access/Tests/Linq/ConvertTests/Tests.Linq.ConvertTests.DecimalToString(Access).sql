@@ -2,14 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	[p].[c1]
+	CStr([t].[MoneyValue])
 FROM
-	(
-		SELECT
-			CStr([t].[MoneyValue]) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	Len([p].[c1]) > 0
+	Len(CStr([t].[MoneyValue])) > 0
 

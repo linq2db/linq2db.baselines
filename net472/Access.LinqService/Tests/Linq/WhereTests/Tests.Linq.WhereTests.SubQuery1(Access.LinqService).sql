@@ -2,14 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	[pp].[Value_1]
+	Round([p].[MoneyValue], 2)
 FROM
-	(
-		SELECT
-			Round([p].[MoneyValue], 2) as [Value_1]
-		FROM
-			[LinqDataTypes] [p]
-	) [pp]
+	[LinqDataTypes] [p]
 WHERE
-	[pp].[Value_1] <> 0 AND [pp].[Value_1] <> 7
+	Round([p].[MoneyValue], 2) <> 0 AND Round([p].[MoneyValue], 2) <> 7
 
