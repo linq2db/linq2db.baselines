@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 Boolean
-SET     @p1 = False
 DECLARE @Length_1 Integer -- Int32
-SET     @Length_1 = 3
+SET     @Length_1 = 9
 
 SELECT
 	p_1."ID",
@@ -21,9 +19,8 @@ FROM
 	) p_1
 WHERE
 	CASE
-		WHEN :p1 = True THEN 5
 		WHEN Position('123' in Substring(Substring(p_1."FirstName", 1, 11), 6, Length(Substring(p_1."FirstName", 1, 11)) - 6)) + 5 = 0
 			THEN -1
-		ELSE (11 - Position('321' in Reverse(Substring(p_1."FirstName", 6, 6)))) - :Length_1 + 1
+		ELSE :Length_1 - Position('321' in Reverse(Substring(p_1."FirstName", 6, 6)))
 	END = 8
 
