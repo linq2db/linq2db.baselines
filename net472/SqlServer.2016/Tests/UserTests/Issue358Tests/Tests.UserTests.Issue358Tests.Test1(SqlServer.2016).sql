@@ -32,5 +32,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	([_].[BigIntValue] IS NULL OR [_].[BigIntValue] <> 2)
+	([_].[BigIntValue] <> 2 OR [_].[BigIntValue] IS NULL)
 

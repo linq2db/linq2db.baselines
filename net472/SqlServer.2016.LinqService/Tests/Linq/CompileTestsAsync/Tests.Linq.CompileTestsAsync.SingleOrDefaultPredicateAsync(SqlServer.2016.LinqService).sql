@@ -152,15 +152,15 @@ BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 2
+DECLARE @Id_2 Int -- Int32
+SET     @Id_2 = 2
 
 SELECT TOP (@take)
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] = @Id_1
+	[c_1].[Id] = @Id_2
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
