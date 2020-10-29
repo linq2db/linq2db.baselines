@@ -27,10 +27,6 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @diagnosis Text(3) -- String
 SET     @diagnosis = 'abc'
-DECLARE @i Integer -- Int32
-SET     @i = 0
-DECLARE @i_1 Integer -- Int32
-SET     @i_1 = 0
 
 INSERT INTO "Patient" AS t1
 (
@@ -40,19 +36,17 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as VarChar(11))
+	Cast(Length(:diagnosis) as VarChar(11))
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar(11))
+	"Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar(11))
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis Text(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer -- Int32
-SET     @i = 1
+SET     @i = 4
 DECLARE @i_1 Integer -- Int32
 SET     @i_1 = 1
 
@@ -64,7 +58,7 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as VarChar(11))
+	Cast(:i as VarChar(11))
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar(11))
@@ -73,10 +67,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis Text(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer -- Int32
-SET     @i = 2
+SET     @i = 5
 DECLARE @i_1 Integer -- Int32
 SET     @i_1 = 2
 
@@ -88,7 +80,7 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as VarChar(11))
+	Cast(:i as VarChar(11))
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar(11))

@@ -11,7 +11,7 @@ FROM
 	"Person" p
 		INNER JOIN "Patient" gjd_ri ON gjd_ri."PersonID" = p."PersonID"
 WHERE
-	Lower(p."FirstName") LIKE (('%' || Replace(Replace(Replace(Lower(:p1), '~', '~~'), '%', '~%'), '_', '~_')) || '%') ESCAPE '~'
+	Lower(p."FirstName") LIKE '%' || Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(:p1), '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -24,5 +24,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") LIKE (('%' || Replace(Replace(Replace(Lower(:input_1), '~', '~~'), '%', '~%'), '_', '~_')) || '%') ESCAPE '~'
+	Lower(p."FirstName") LIKE '%' || Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(:input_1), '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%' ESCAPE '~'
 
