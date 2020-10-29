@@ -10,7 +10,7 @@ SET
 		FROM
 			"Parent" x
 		WHERE
-			t1."ID" = x."ParentID" AND NOT (x."Value1" IS NOT NULL AND x."Value1" = 1)
+			t1."ID" = x."ParentID" AND (x."Value1" <> 1 OR x."Value1" IS NULL)
 	))
 FROM
 	(

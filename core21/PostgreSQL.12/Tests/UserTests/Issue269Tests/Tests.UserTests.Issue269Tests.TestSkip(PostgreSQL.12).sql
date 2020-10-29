@@ -26,6 +26,6 @@ WHERE
 				OFFSET :skip 
 			) t1
 		WHERE
-			t1."Diagnosis" LIKE '%with%'
+			t1."Diagnosis" LIKE '%with%' ESCAPE '~'
 	)
 
