@@ -54,6 +54,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 0
+DECLARE @id_1  -- Int32
+SET     @id_1 = 0
 
 SELECT
 	[bt1].[textCol],
@@ -85,10 +87,10 @@ FROM
 				) [allG]
 					LEFT JOIN [table3] [tbl3_1] ON [allG].[maxCol] = [tbl3_1].[id]
 					LEFT JOIN [b_table2] [btbl] ON [tbl3_1].[col] = [btbl].[id]
-		) [t1] ON ([bt1].[col3] IS NULL AND [t1].[c1] IS NULL OR [bt1].[col3] = [t1].[c1])
-		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL OR [bt1].[textCol] = [ctb2].[col1])
+		) [t1] ON ([bt1].[col3] = [t1].[c1] OR [bt1].[col3] IS NULL AND [t1].[c1] IS NULL)
+		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
 WHERE
-	[w_1].[commonTableId] = @id
+	[w_1].[commonTableId] = @id_1
 GROUP BY
 	[t1].[c2],
 	[t1].[c3],

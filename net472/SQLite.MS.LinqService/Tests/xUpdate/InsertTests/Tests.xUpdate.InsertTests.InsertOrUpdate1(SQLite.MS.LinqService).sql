@@ -26,15 +26,13 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @i  -- Int32
-SET     @i = 0
 DECLARE @id  -- Int32
 SET     @id = 5
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
+	[Diagnosis] = Cast(Length([Patient].[Diagnosis]) as NVarChar(11))
 WHERE
 	[Patient].[PersonID] = @id
 
