@@ -279,7 +279,7 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	FROM
 		[Patient] [p]
 	WHERE
-		[p].[Diagnosis] LIKE N'%very%' AND [p].[PersonID] = [Target].[PersonID]
+		[p].[Diagnosis] LIKE N'%very%' ESCAPE N'~' AND [p].[PersonID] = [Target].[PersonID]
 ) THEN DELETE
 ;
 
