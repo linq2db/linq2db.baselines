@@ -14,6 +14,30 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @FieldInt32 Integer -- Int32
+SET     @FieldInt32 = NULL
+DECLARE @FieldInt64 BigInt -- Int64
+SET     @FieldInt64 = NULL
+DECLARE @FieldBoolean SmallInt -- Boolean
+SET     @FieldBoolean = NULL
+DECLARE @FieldString VarChar -- String
+SET     @FieldString = NULL
+DECLARE @FieldChar Char -- StringFixedLength
+SET     @FieldChar = NULL
+DECLARE @FieldFloat Real -- Single
+SET     @FieldFloat = NULL
+DECLARE @FieldDouble Double
+SET     @FieldDouble = NULL
+DECLARE @FieldDateTime Timestamp -- DateTime
+SET     @FieldDateTime = NULL
+DECLARE @FieldDecimal Decimal
+SET     @FieldDecimal = NULL
+DECLARE @FieldDate Date
+SET     @FieldDate = NULL
+DECLARE @FieldEnumString VarChar -- String
+SET     @FieldEnumString = NULL
+DECLARE @FieldEnumNumber Integer -- Int32
+SET     @FieldEnumNumber = NULL
 
 INSERT INTO TestMerge1
 (
@@ -35,19 +59,19 @@ INSERT INTO TestMerge1
 VALUES
 (
 	@Id,
+	@FieldInt32,
+	@FieldInt64,
+	@FieldBoolean,
+	@FieldString,
+	@FieldChar,
+	@FieldFloat,
+	@FieldDouble,
+	@FieldDateTime,
+	@FieldDecimal,
+	@FieldDate,
 	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL
+	@FieldEnumString,
+	@FieldEnumNumber
 )
 
 BeforeExecute
@@ -76,6 +100,8 @@ DECLARE @FieldDate Date(16)
 SET     @FieldDate = TO_DATE('2000-11-23', '%Y-%m-%d')
 DECLARE @FieldEnumString VarChar(5) -- String
 SET     @FieldEnumString = 'FIRST'
+DECLARE @FieldEnumNumber Integer -- Int32
+SET     @FieldEnumNumber = NULL
 
 INSERT INTO TestMerge1
 (
@@ -109,7 +135,7 @@ VALUES
 	@FieldDate,
 	INTERVAL(0 09:44:34.65343) DAY TO FRACTION(5),
 	@FieldEnumString,
-	NULL
+	@FieldEnumNumber
 )
 
 BeforeExecute
@@ -184,6 +210,8 @@ DECLARE @FieldInt32 Integer(4) -- Int32
 SET     @FieldInt32 = -123
 DECLARE @FieldInt64 BigInt(8) -- Int64
 SET     @FieldInt64 = 987
+DECLARE @FieldBoolean SmallInt -- Boolean
+SET     @FieldBoolean = NULL
 DECLARE @FieldString VarChar(20) -- String
 SET     @FieldString = '`~!@#$%^&*()_+{}|[]\'
 DECLARE @FieldChar Char(1) -- StringFixedLength
@@ -225,7 +253,7 @@ VALUES
 	@Id,
 	@FieldInt32,
 	@FieldInt64,
-	NULL,
+	@FieldBoolean,
 	@FieldString,
 	@FieldChar,
 	@FieldFloat,
@@ -246,6 +274,8 @@ DECLARE @FieldInt32 Integer(4) -- Int32
 SET     @FieldInt32 = -123
 DECLARE @FieldInt64 BigInt(8) -- Int64
 SET     @FieldInt64 = 987
+DECLARE @FieldBoolean SmallInt -- Boolean
+SET     @FieldBoolean = NULL
 DECLARE @FieldString VarChar(12) -- String
 SET     @FieldString = '<>?/.,;''zZ":'
 DECLARE @FieldChar Char(1) -- StringFixedLength
@@ -260,6 +290,8 @@ DECLARE @FieldDecimal Decimal(16)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Date(16)
 SET     @FieldDate = TO_DATE('3210-11-23', '%Y-%m-%d')
+DECLARE @FieldEnumString VarChar -- String
+SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Integer(4) -- Int32
 SET     @FieldEnumNumber = -2147483647
 
@@ -285,7 +317,7 @@ VALUES
 	@Id,
 	@FieldInt32,
 	@FieldInt64,
-	NULL,
+	@FieldBoolean,
 	@FieldString,
 	@FieldChar,
 	@FieldFloat,
@@ -294,7 +326,7 @@ VALUES
 	@FieldDecimal,
 	@FieldDate,
 	INTERVAL(0 23:59:59.99999) DAY TO FRACTION(5),
-	NULL,
+	@FieldEnumString,
 	@FieldEnumNumber
 )
 
@@ -370,6 +402,8 @@ DECLARE @FieldInt32 Integer(4) -- Int32
 SET     @FieldInt32 = -123
 DECLARE @FieldInt64 BigInt(8) -- Int64
 SET     @FieldInt64 = 987
+DECLARE @FieldBoolean SmallInt -- Boolean
+SET     @FieldBoolean = NULL
 DECLARE @FieldString VarChar(12) -- String
 SET     @FieldString = '<>?/.,;''zZ":'
 DECLARE @FieldChar Char(1) -- StringFixedLength
@@ -384,6 +418,8 @@ DECLARE @FieldDecimal Decimal(16)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Date(16)
 SET     @FieldDate = TO_DATE('3210-11-23', '%Y-%m-%d')
+DECLARE @FieldEnumString VarChar -- String
+SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Integer(4) -- Int32
 SET     @FieldEnumNumber = -2147483647
 
@@ -409,7 +445,7 @@ VALUES
 	@Id,
 	@FieldInt32,
 	@FieldInt64,
-	NULL,
+	@FieldBoolean,
 	@FieldString,
 	@FieldChar,
 	@FieldFloat,
@@ -418,7 +454,7 @@ VALUES
 	@FieldDecimal,
 	@FieldDate,
 	INTERVAL(0 23:59:59.99999) DAY TO FRACTION(5),
-	NULL,
+	@FieldEnumString,
 	@FieldEnumNumber
 )
 

@@ -69,8 +69,6 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 DECLARE @diagnosis VarChar(3) -- String
 SET     @diagnosis = 'abc'
-DECLARE @i Integer(4) -- Int32
-SET     @i = 0
 
 INSERT INTO Patient
 (
@@ -80,7 +78,7 @@ INSERT INTO Patient
 VALUES
 (
 	@id,
-	To_Char(Length(@diagnosis) + @i)
+	To_Char(Length(@diagnosis))
 )
 
 BeforeExecute

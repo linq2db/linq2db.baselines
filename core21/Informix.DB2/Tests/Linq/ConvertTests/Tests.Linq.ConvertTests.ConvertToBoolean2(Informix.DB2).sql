@@ -7,13 +7,12 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN t.MoneyValue - 4.5 = 0
-					THEN 'f'
-				ELSE 't'
+				WHEN t.MoneyValue <> 4.5 THEN 't'
+				ELSE 'f'
 			END as c1
 		FROM
 			LinqDataTypes t
 	) p
 WHERE
-	NOT (p.c1 IS NOT NULL AND p.c1 = 't')
+	p.c1 = 'f'
 

@@ -15,13 +15,5 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	(CASE
-		WHEN t1.BigIntValue IN (2)
-			THEN 't'
-		ELSE 'f'
-	END = 'f' OR CASE
-		WHEN t1.BigIntValue IN (2)
-			THEN 't'
-		ELSE 'f'
-	END IS NULL)
+	(t1.BigIntValue NOT IN (2) OR t1.BigIntValue IS NULL)
 

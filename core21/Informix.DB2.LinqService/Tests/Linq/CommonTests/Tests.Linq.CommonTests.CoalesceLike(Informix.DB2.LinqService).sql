@@ -14,7 +14,7 @@ WHERE
 		WHEN CASE
 			WHEN p.FirstName IS NULL THEN NULL
 			ELSE CASE
-				WHEN p.FirstName LIKE 'Jo%'
+				WHEN p.FirstName LIKE 'Jo%' ESCAPE '~'
 					THEN 't'
 				ELSE 'f'
 			END
@@ -22,7 +22,7 @@ WHERE
 			THEN 'f'
 		WHEN p.FirstName IS NULL THEN NULL
 		ELSE CASE
-			WHEN p.FirstName LIKE 'Jo%'
+			WHEN p.FirstName LIKE 'Jo%' ESCAPE '~'
 				THEN 't'
 			ELSE 'f'
 		END

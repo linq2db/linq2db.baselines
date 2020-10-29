@@ -2,9 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t4.month_1,
-	t4.year_1,
-	t4.int_1
+	t5.month_1,
+	t5.year_1,
+	t5.int_1
 FROM
 	(
 		SELECT
@@ -31,23 +31,29 @@ FROM
 			) t2
 		UNION
 		SELECT
-			t3.SmallIntValue as month_1,
-			t3.SmallIntValue as year_1,
-			3 as int_1
+			t4.year_1 as month_1,
+			t4.year_1,
+			t4.int_1
 		FROM
-			LinqDataTypes t3
-	) t4
+			(
+				SELECT
+					t3.SmallIntValue as year_1,
+					3 as int_1
+				FROM
+					LinqDataTypes t3
+			) t4
+	) t5
 UNION
 SELECT
-	t6.year_1,
-	t6.year_1,
-	t6.int_1
+	t7.year_1,
+	t7.year_1,
+	t7.int_1
 FROM
 	(
 		SELECT
-			Year(t5.DateTimeValue) as year_1,
+			Year(t6.DateTimeValue) as year_1,
 			2 as int_1
 		FROM
-			LinqDataTypes t5
-	) t6
+			LinqDataTypes t6
+	) t7
 
