@@ -2,17 +2,18 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	CASE
+		WHEN p."MoneyValue" < 5 THEN p."MoneyValue"
+		ELSE 5
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN p."MoneyValue" < 5 THEN p."MoneyValue"
-				ELSE 5
-			END as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	(t.c1 IS NULL OR t.c1 <> 0)
+	(CASE
+		WHEN p."MoneyValue" < 5 THEN p."MoneyValue"
+		ELSE 5
+	END <> 0 OR CASE
+		WHEN p."MoneyValue" < 5 THEN p."MoneyValue"
+		ELSE 5
+	END IS NULL)
 
