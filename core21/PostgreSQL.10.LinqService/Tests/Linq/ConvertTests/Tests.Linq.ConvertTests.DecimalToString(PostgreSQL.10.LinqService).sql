@@ -2,14 +2,9 @@
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p.c1
+	Cast(t."MoneyValue" as VarChar(31))
 FROM
-	(
-		SELECT
-			Cast(t."MoneyValue" as VarChar(31)) as c1
-		FROM
-			"LinqDataTypes" t
-	) p
+	"LinqDataTypes" t
 WHERE
-	Length(p.c1) > 0
+	Length(Cast(t."MoneyValue" as VarChar(31))) > 0
 
