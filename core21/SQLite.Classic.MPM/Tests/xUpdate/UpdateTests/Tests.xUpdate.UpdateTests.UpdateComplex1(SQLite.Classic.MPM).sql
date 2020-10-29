@@ -9,7 +9,7 @@ BeforeExecute
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'UpdateComplex%'
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -109,5 +109,5 @@ BeforeExecute
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'UpdateComplex%'
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 

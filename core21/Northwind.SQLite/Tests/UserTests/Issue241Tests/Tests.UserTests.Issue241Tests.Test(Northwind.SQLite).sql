@@ -16,7 +16,7 @@ SELECT
 FROM
 	[Customers] [x]
 WHERE
-	[x].[CompanyName] LIKE '%t%'
+	[x].[CompanyName] LIKE '%t%' ESCAPE '~'
 GROUP BY
 	[x].[CustomerID],
 	[x].[Fax],
@@ -50,7 +50,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -72,7 +72,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -94,7 +94,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -116,7 +116,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -138,7 +138,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -160,7 +160,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -182,7 +182,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -204,7 +204,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -226,7 +226,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -248,7 +248,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -270,7 +270,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -292,7 +292,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -314,7 +314,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -336,7 +336,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -358,7 +358,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -380,7 +380,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -402,7 +402,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -424,7 +424,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -446,7 +446,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -468,7 +468,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -490,7 +490,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -512,7 +512,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -534,7 +534,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -556,7 +556,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -578,7 +578,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -600,7 +600,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -622,7 +622,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -644,7 +644,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -666,7 +666,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -688,7 +688,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -710,7 +710,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -732,7 +732,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -754,7 +754,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -776,7 +776,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -798,7 +798,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -820,7 +820,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -842,7 +842,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -864,7 +864,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -886,7 +886,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -908,7 +908,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -930,7 +930,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -952,7 +952,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -974,7 +974,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -996,7 +996,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1018,7 +1018,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1040,7 +1040,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1062,7 +1062,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1084,7 +1084,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1106,7 +1106,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1128,7 +1128,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1150,7 +1150,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1172,7 +1172,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1194,7 +1194,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1216,7 +1216,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1238,7 +1238,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1260,7 +1260,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1282,7 +1282,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1304,7 +1304,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1326,7 +1326,7 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1348,5 +1348,5 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID_1
 
