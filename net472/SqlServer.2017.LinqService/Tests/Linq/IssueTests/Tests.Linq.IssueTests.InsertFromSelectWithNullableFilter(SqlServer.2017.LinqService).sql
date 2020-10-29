@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p1 SmallInt -- Int16
+DECLARE @p1 Int -- Int32
 SET     @p1 = 1234
 
 INSERT INTO [AllTypes]
