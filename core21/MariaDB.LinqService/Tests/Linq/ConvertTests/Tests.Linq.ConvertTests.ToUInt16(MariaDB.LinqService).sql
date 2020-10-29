@@ -2,14 +2,9 @@
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`p`.`c1`
+	Cast(Floor(`t`.`MoneyValue`) as UNSIGNED)
 FROM
-	(
-		SELECT
-			Cast(Floor(`t`.`MoneyValue`) as UNSIGNED) as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `p`
+	`LinqDataTypes` `t`
 WHERE
-	`p`.`c1` > 0
+	Cast(Floor(`t`.`MoneyValue`) as UNSIGNED) > 0
 
