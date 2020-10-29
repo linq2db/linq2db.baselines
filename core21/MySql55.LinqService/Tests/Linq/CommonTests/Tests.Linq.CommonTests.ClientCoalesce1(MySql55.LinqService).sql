@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p1 Int32
-SET     @p1 = 100
+DECLARE @Value1 Int32
+SET     @Value1 = 100
 
 SELECT
-	Coalesce(`p`.`Value1`, @p1)
+	Coalesce(`p`.`Value1`, @Value1)
 FROM
 	`Parent` `p`
 

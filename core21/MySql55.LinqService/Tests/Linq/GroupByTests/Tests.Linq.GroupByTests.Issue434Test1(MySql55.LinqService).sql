@@ -11,7 +11,7 @@ FROM
 	`Person` `p`
 		INNER JOIN `Patient` `_gjd_ri` ON `_gjd_ri`.`PersonID` = `p`.`PersonID`
 WHERE
-	Lower(`p`.`FirstName`) LIKE Concat('%', Replace(Replace(Replace(Lower(@p1), '~', '~~'), '%', '~%'), '_', '~_'), '%') ESCAPE '~'
+	Lower(`p`.`FirstName`) LIKE Concat('%', Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(@p1), '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]'), '%') ESCAPE '~'
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -24,5 +24,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Lower(`p`.`FirstName`) LIKE Concat('%', Replace(Replace(Replace(Lower(@input_1), '~', '~~'), '%', '~%'), '_', '~_'), '%') ESCAPE '~'
+	Lower(`p`.`FirstName`) LIKE Concat('%', Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(@input_1), '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]'), '%') ESCAPE '~'
 
