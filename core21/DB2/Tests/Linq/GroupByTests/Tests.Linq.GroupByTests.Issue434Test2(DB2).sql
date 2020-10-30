@@ -9,7 +9,7 @@ FROM
 	"Person" "p"
 		INNER JOIN "Patient" "_gjd_ri" ON "_gjd_ri"."PersonID" = "p"."PersonID"
 WHERE
-	Lower("p"."FirstName") LIKE '%test%'
+	Lower("p"."FirstName") LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -20,5 +20,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Lower("p"."FirstName") LIKE '%test%'
+	Lower("p"."FirstName") LIKE '%test%' ESCAPE '~'
 

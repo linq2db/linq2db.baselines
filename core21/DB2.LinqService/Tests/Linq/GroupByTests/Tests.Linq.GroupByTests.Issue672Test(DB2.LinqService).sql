@@ -86,7 +86,7 @@ FROM
 	"Stone" "s"
 WHERE
 	("s"."Enabled" = 1 AND "s"."Enabled" IS NOT NULL) AND
-	"s"."Name" NOT LIKE 'level - %' AND CHARACTER_LENGTH("s"."ImageFullUrl",CODEUNITS32) > 0
+	"s"."Name" NOT LIKE 'level - %' ESCAPE '~' AND CHARACTER_LENGTH("s"."ImageFullUrl",CODEUNITS32) > 0
 GROUP BY
 	"s"."Name"
 
@@ -104,7 +104,7 @@ FROM
 	"Stone" "s"
 WHERE
 	("s"."Enabled" = 1 AND "s"."Enabled" IS NOT NULL) AND
-	"s"."Name" NOT LIKE 'level - %' AND
+	"s"."Name" NOT LIKE 'level - %' ESCAPE '~' AND
 	CHARACTER_LENGTH("s"."ImageFullUrl",CODEUNITS32) > 0 AND
 	"s"."Name" = @Name_1
 
@@ -122,7 +122,7 @@ FROM
 	"Stone" "s"
 WHERE
 	("s"."Enabled" = 1 AND "s"."Enabled" IS NOT NULL) AND
-	"s"."Name" NOT LIKE 'level - %' AND
+	"s"."Name" NOT LIKE 'level - %' ESCAPE '~' AND
 	CHARACTER_LENGTH("s"."ImageFullUrl",CODEUNITS32) > 0 AND
 	"s"."Name" = @Name_1
 

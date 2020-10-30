@@ -2,6 +2,8 @@
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
+DECLARE @id_1 Integer(4) -- Int32
+SET     @id_1 = 1
 
 SELECT
 	COUNT("left_1"."ParentID"),
@@ -22,7 +24,7 @@ FROM
 			FROM
 				"Parent" "p_1"
 			WHERE
-				"p_1"."ParentID" <> @id
+				"p_1"."ParentID" <> @id_1
 		) "t1" ON "t1"."ParentID" = "left_1"."ParentID"
 FETCH FIRST 2 ROWS ONLY
 
