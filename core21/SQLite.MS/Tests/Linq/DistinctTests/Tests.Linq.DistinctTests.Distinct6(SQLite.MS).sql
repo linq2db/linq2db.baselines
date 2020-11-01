@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ParentID_1  -- Int32
-SET     @ParentID_1 = 0
-DECLARE @Value1_1  -- Int32
-SET     @Value1_1 = 3
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 0
+DECLARE @Value1  -- Int32
+SET     @Value1 = 3
 
 SELECT DISTINCT
-	Coalesce([p].[Value1], [p].[ParentID] + @ParentID_1),
-	@Value1_1
+	Coalesce([p].[Value1], [p].[ParentID] + @ParentID),
+	@Value1
 FROM
 	[Parent] [p]
 
