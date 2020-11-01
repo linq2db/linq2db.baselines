@@ -30,8 +30,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 1
+DECLARE @id Integer -- Int32
+SET     @id = 1
 
 SELECT TOP 2
 	[_].[Id],
@@ -39,7 +39,7 @@ SELECT TOP 2
 FROM
 	[Issue1438] [_]
 WHERE
-	[_].[Id] = @id_1
+	[_].[Id] = @id
 
 BeforeExecute
 -- Access AccessOleDb
