@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 DECLARE @RandValue Integer -- Int32
-SET     @RandValue = 3
+SET     @RandValue = 0
 
 SELECT
 	Count(*)
