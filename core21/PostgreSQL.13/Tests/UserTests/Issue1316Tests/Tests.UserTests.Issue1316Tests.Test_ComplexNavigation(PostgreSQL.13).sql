@@ -24,8 +24,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @ID_1 Integer -- Int32
-SET     @ID_1 = 5
+DECLARE @ID Integer -- Int32
+SET     @ID = 5
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -34,13 +34,13 @@ SELECT
 FROM
 	"Issue1316Tests" t1
 WHERE
-	t1."ID" = :ID_1
+	t1."ID" = :ID
 LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id_1 Integer -- Int32
-SET     @Id_1 = 5
+DECLARE @Id Integer -- Int32
+SET     @Id = 5
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -49,7 +49,7 @@ SELECT
 FROM
 	"Issue1316Tests" t1
 WHERE
-	t1."ID" = :Id_1
+	t1."ID" = :Id
 LIMIT :take
 
 BeforeExecute

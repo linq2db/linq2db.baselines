@@ -46,8 +46,8 @@ DECLARE @p2 Integer -- Int32
 SET     @p2 = 10
 DECLARE @p3 Timestamp -- DateTime
 SET     @p3 = '2020-02-19 17:54:55.123'::timestamp
-DECLARE @DateTime_1 Timestamp -- DateTime
-SET     @DateTime_1 = '2020-02-29 17:54:55.123'::timestamp
+DECLARE @DateTime Timestamp -- DateTime
+SET     @DateTime = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @p4 Interval -- Object
 SET     @p4 = 01:00:00
 
@@ -58,5 +58,5 @@ SELECT
 FROM
 	GENERATE_SERIES(:p1, :p2) t1_1
 		LEFT JOIN GENERATE_SERIES(1, 10, 2) t2_1 ON (t2_1.* = t1_1.* OR t2_1.* IS NULL AND t1_1.* IS NULL),
-	GENERATE_SERIES(:p3, :DateTime_1, :p4) d
+	GENERATE_SERIES(:p3, :DateTime, :p4) d
 

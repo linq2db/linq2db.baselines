@@ -48,7 +48,8 @@ FROM
 GROUP BY GROUPING SETS (
 	(t1."Id1", t1."Id2"),
 	(t1."Id2"),
-	()
+	(),
+	(t1."Id1")
 )
 
 BeforeExecute

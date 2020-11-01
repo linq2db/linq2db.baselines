@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 2
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 2
 
 SELECT
 	p."ParentID",
@@ -9,5 +9,5 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	(p."ParentID" = :ParentID_1 AND p."Value1" IS NULL)
+	(p."ParentID" = :ParentID AND p."Value1" IS NULL)
 
