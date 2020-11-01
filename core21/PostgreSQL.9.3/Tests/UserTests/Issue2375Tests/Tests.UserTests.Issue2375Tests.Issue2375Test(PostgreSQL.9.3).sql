@@ -105,8 +105,8 @@ HAVING
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @Status_1 Integer -- Int32
-SET     @Status_1 = 40
+DECLARE @Status Integer -- Int32
+SET     @Status = 40
 DECLARE @ResourceLabel Text(1) -- String
 SET     @ResourceLabel = 'b'
 
@@ -119,7 +119,7 @@ FROM
 	"InventoryResourceDTO" inventory
 		INNER JOIN "WmsLoadCarrierDTO" lc ON inventory."ResourceID" = lc."Id"
 WHERE
-	(inventory."Status" = :Status_1 AND lc."ResourceLabel" = :ResourceLabel)
+	(inventory."Status" = :Status AND lc."ResourceLabel" = :ResourceLabel)
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

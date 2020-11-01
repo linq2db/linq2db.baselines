@@ -4,14 +4,12 @@
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Insert16%'
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @name Text(8) -- String
-SET     @name = 'Insert16'
 DECLARE @idx Integer -- Int32
-SET     @idx = 4
+SET     @idx = 12
 
 INSERT INTO "Person"
 (
@@ -22,7 +20,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	Cast((Length(:name) + :idx) as VarChar(11)),
+	Cast(:idx as VarChar(11)),
 	'M'
 )
 
@@ -34,7 +32,7 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Insert16%'
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -42,5 +40,5 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Insert16%'
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
