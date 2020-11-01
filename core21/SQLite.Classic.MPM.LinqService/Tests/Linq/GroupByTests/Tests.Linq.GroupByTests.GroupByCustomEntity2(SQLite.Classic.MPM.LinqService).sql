@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @RandValue  -- Int32
-SET     @RandValue = 3
+SET     @RandValue = 1
 
 SELECT
 	Count(*)
