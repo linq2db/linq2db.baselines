@@ -274,8 +274,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 12
+DECLARE @ID Int -- Int32
+SET     @ID = 12
 
 SET IDENTITY_INSERT [Person] ON
 MERGE INTO [Person] [Target]
@@ -303,7 +303,7 @@ INSERT
 )
 VALUES
 (
-	@ID_1,
+	@ID,
 	N'Inserted 1',
 	N'Inserted 2',
 	N'M'

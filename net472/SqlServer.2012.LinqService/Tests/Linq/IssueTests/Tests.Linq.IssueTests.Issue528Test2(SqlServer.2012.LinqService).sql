@@ -10,8 +10,8 @@ GROUP BY
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @FirstName_1 NVarChar(4000) -- String
-SET     @FirstName_1 = N'Jane'
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'Jane'
 
 SELECT
 	[keyParam].[FirstName],
@@ -22,12 +22,12 @@ SELECT
 FROM
 	[Person] [keyParam]
 WHERE
-	[keyParam].[FirstName] = @FirstName_1
+	[keyParam].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @FirstName_1 NVarChar(4000) -- String
-SET     @FirstName_1 = N'John'
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'John'
 
 SELECT
 	[keyParam].[FirstName],
@@ -38,12 +38,12 @@ SELECT
 FROM
 	[Person] [keyParam]
 WHERE
-	[keyParam].[FirstName] = @FirstName_1
+	[keyParam].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @FirstName_1 NVarChar(4000) -- String
-SET     @FirstName_1 = N'Jürgen'
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'Jürgen'
 
 SELECT
 	[keyParam].[FirstName],
@@ -54,12 +54,12 @@ SELECT
 FROM
 	[Person] [keyParam]
 WHERE
-	[keyParam].[FirstName] = @FirstName_1
+	[keyParam].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @FirstName_1 NVarChar(4000) -- String
-SET     @FirstName_1 = N'Tester'
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'Tester'
 
 SELECT
 	[keyParam].[FirstName],
@@ -70,5 +70,5 @@ SELECT
 FROM
 	[Person] [keyParam]
 WHERE
-	[keyParam].[FirstName] = @FirstName_1
+	[keyParam].[FirstName] = @FirstName
 
