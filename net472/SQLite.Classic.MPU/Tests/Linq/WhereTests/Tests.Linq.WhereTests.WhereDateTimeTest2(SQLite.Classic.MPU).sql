@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @DateTimeValue_1  -- DateTime
-SET     @DateTimeValue_1 = '2009-01-01'
+DECLARE @DateTimeValue  -- DateTime
+SET     @DateTimeValue = '2009-01-01'
 
 SELECT
 	[_].[ID],
@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	DateTime([_].[DateTimeValue]) > DateTime(@DateTimeValue_1)
+	DateTime([_].[DateTimeValue]) > DateTime(@DateTimeValue)
 

@@ -24,8 +24,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ID_1  -- Int32
-SET     @ID_1 = 5
+DECLARE @ID  -- Int32
+SET     @ID = 5
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -34,7 +34,7 @@ SELECT
 FROM
 	[Issue1316Tests] [_]
 WHERE
-	[_].[ID] = @ID_1
+	[_].[ID] = @ID
 LIMIT @take
 
 BeforeExecute
