@@ -28,8 +28,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @gender_1 NChar -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender NChar -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	[_].[FirstName],
@@ -40,12 +40,12 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = 1 AND [_].[Gender] = @gender_1
+	[_].[PersonID] = 1 AND [_].[Gender] = @gender
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @gender_1 NChar -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender NChar -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	[_].[FirstName],
@@ -56,5 +56,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = 1 AND @gender_1 = [_].[Gender]
+	[_].[PersonID] = 1 AND @gender = [_].[Gender]
 
