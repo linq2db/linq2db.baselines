@@ -50,8 +50,8 @@ BeforeExecute
 -- SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 1001
+DECLARE @ID Int -- Int32
+SET     @ID = 1001
 
 SELECT TOP (@take)
 	[t].[ID],
@@ -65,7 +65,7 @@ SELECT TOP (@take)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = @ID_1
+	[t].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.2017
