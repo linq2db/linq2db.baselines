@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @RandValue Integer -- Int32
-SET     @RandValue = 1
+SET     @RandValue = 2
 
 SELECT
 	Count(*)
