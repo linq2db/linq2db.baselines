@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 3
+DECLARE @id Integer -- Int32
+SET     @id = 3
 
 SELECT
 	t1."ID",
@@ -23,13 +23,13 @@ WHERE
 		FROM
 			"LinqDataTypes" t2
 		WHERE
-			t2."ID" = :id_1 AND t2."ID" = t1."ID"
+			t2."ID" = :id AND t2."ID" = t1."ID"
 	)
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 4
+DECLARE @id Integer -- Int32
+SET     @id = 4
 
 SELECT
 	t1."ID",
@@ -51,6 +51,6 @@ WHERE
 		FROM
 			"LinqDataTypes" t2
 		WHERE
-			t2."ID" = :id_1 AND t2."ID" = t1."ID"
+			t2."ID" = :id AND t2."ID" = t1."ID"
 	)
 
