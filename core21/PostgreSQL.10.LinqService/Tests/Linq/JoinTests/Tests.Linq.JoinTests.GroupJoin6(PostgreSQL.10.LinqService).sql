@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 
 SELECT
 	key_data_result."ParentID",
@@ -16,7 +16,7 @@ FROM
 		WHERE
 			p."ParentID" = 1
 	) key_data_result
-		INNER JOIN "Child" gjd_c ON gjd_c."ParentID" = key_data_result."ParentID" + :ParentID_1
+		INNER JOIN "Child" gjd_c ON gjd_c."ParentID" = key_data_result."ParentID" + :ParentID
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
