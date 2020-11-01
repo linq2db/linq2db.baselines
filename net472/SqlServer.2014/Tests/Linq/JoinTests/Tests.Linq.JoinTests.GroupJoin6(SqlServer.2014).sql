@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 1
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1
 
 SELECT
 	[key_data_result].[ParentID],
@@ -16,7 +16,7 @@ FROM
 		WHERE
 			[p].[ParentID] = 1
 	) [key_data_result]
-		INNER JOIN [Child] [_gjd_c] ON [_gjd_c].[ParentID] = [key_data_result].[ParentID] + @ParentID_1
+		INNER JOIN [Child] [_gjd_c] ON [_gjd_c].[ParentID] = [key_data_result].[ParentID] + @ParentID
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
