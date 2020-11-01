@@ -74,28 +74,18 @@ BeforeExecute
 -- Firebird
 
 SELECT
-	"t1"."Name",
-	"t1"."Value_1",
+	'Id',
+	"selectParam"."Id",
 	Sum(CASE
-		WHEN "t1"."Id" IS NULL THEN NULL
-		ELSE "t1"."Id"
+		WHEN "a_ActualStage"."Id" IS NULL
+			THEN NULL
+		ELSE "a_ActualStage"."Id"
 	END)
 FROM
-	(
-		SELECT
-			'Id' as "Key_1",
-			"selectParam"."Id" as "Key_2",
-			'Id' as "Name",
-			"selectParam"."Id" as "Value_1",
-			"a_ActualStage"."Id"
-		FROM
-			"Task" "selectParam"
-				LEFT JOIN "TaskStage" "a_ActualStage" ON "selectParam"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = 1
-	) "t1"
+	"Task" "selectParam"
+		LEFT JOIN "TaskStage" "a_ActualStage" ON "selectParam"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = 1
 GROUP BY
-	"t1"."Key_2",
-	"t1"."Name",
-	"t1"."Value_1"
+	"selectParam"."Id"
 
 BeforeExecute
 -- Firebird
