@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 1
 
@@ -11,13 +11,13 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID_1
+	c_1."ParentID" = :ParentID
 LIMIT :p1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 2
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 2
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 2
 
@@ -27,6 +27,6 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID_1
+	c_1."ParentID" = :ParentID
 LIMIT :p1
 
