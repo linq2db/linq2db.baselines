@@ -56,10 +56,10 @@ GROUP BY
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Value2_1 VarChar(20) -- String
-SET     @Value2_1 = '[{"Value":"Value1"}]'
-DECLARE @Id_1 Integer -- Int32
-SET     @Id_1 = 1
+DECLARE @Value2 VarChar(20) -- String
+SET     @Value2 = '[{"Value":"Value1"}]'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 
 SELECT
 	"t"."Id",
@@ -73,7 +73,7 @@ SELECT
 FROM
 	"ValueConversion" "t"
 WHERE
-	@Value2_1 = "t"."Value2" AND "t"."Id" = @Id_1
+	@Value2 = "t"."Value2" AND "t"."Id" = @Id
 
 BeforeExecute
 -- Firebird3 Firebird

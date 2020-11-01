@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Value1_1 Integer -- Int32
-SET     @Value1_1 = 3
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 3
 
 SELECT DISTINCT
 	Coalesce("p"."Value1", "p"."ParentID"),
-	Cast(@Value1_1 as Int)
+	Cast(@Value1 as Int)
 FROM
 	"Parent" "p"
 
