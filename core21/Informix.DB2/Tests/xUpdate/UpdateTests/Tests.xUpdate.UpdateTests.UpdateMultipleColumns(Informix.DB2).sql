@@ -45,8 +45,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ID_1 Integer(4) -- Int32
-SET     @ID_1 = 1001
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 1001
 
 SELECT FIRST 2
 	t.ID,
@@ -60,7 +60,7 @@ SELECT FIRST 2
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = @ID_1
+	t.ID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix

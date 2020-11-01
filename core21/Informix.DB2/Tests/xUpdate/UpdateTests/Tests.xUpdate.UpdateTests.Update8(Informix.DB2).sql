@@ -40,8 +40,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ParentID_1 Integer(4) -- Int32
-SET     @ParentID_1 = 1001
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1001
 
 SELECT FIRST 2
 	p.ParentID,
@@ -49,7 +49,7 @@ SELECT FIRST 2
 FROM
 	Parent p
 WHERE
-	p.ParentID = @ParentID_1
+	p.ParentID = @ParentID
 
 BeforeExecute
 -- Informix.DB2 Informix

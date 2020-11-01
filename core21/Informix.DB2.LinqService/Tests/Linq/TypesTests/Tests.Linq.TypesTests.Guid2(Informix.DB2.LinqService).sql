@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @GuidValue_1 Char(36) -- StringFixedLength
-SET     @GuidValue_1 = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
 
 SELECT FIRST 2
 	p.ID,
@@ -15,12 +15,12 @@ SELECT FIRST 2
 FROM
 	LinqDataTypes p
 WHERE
-	p.GuidValue = @GuidValue_1
+	p.GuidValue = @GuidValue
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @GuidValue_1 Char(36) -- StringFixedLength
-SET     @GuidValue_1 = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
+DECLARE @GuidValue Char(36) -- StringFixedLength
+SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
 SELECT FIRST 2
 	p.ID,
@@ -34,5 +34,5 @@ SELECT FIRST 2
 FROM
 	LinqDataTypes p
 WHERE
-	p.GuidValue = @GuidValue_1
+	p.GuidValue = @GuidValue
 
