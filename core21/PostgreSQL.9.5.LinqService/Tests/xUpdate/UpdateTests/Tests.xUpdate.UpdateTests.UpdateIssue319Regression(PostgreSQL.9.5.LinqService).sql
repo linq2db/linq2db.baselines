@@ -37,6 +37,8 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 100500
 DECLARE @id Integer -- Int32
 SET     @id = 100500
+DECLARE @id_1 Integer -- Int32
+SET     @id_1 = 100500
 
 UPDATE
 	"Parent"
@@ -59,7 +61,7 @@ FROM
 			"Parent" t2
 	) t3
 WHERE
-	t3."ParentID" = :id AND t3.ex > 0 AND "Parent"."ParentID" = t3."ParentID"
+	t3."ParentID" = :id_1 AND t3.ex > 0 AND "Parent"."ParentID" = t3."ParentID"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL

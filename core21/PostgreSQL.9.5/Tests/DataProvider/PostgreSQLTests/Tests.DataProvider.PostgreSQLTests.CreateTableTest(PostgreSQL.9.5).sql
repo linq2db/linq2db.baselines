@@ -27,8 +27,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @Guid_1 Uuid -- Guid
-SET     @Guid_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @Guid Uuid -- Guid
+SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -38,7 +38,7 @@ SELECT
 FROM
 	"CreateTableTestClass" t1
 WHERE
-	t1."Guid" = :Guid_1
+	t1."Guid" = :Guid
 LIMIT :take
 
 BeforeExecute
