@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @RandValue Int -- Int32
-SET     @RandValue = 2
+SET     @RandValue = 4
 
 SELECT
 	Count(*)
