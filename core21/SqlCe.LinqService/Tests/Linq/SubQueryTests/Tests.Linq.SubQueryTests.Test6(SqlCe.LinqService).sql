@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @id_1 Int -- Int32
-SET     @id_1 = 2
+DECLARE @id Int -- Int32
+SET     @id = 2
 
 SELECT
 	[c_1].[ChildID],
@@ -33,7 +33,7 @@ FROM
 				[g_2].[ChildID]
 		) [t2] ON [t2].[ChildID] = [c_1].[ChildID]
 WHERE
-	[c_1].[ParentID] = @id_1
+	[c_1].[ParentID] = @id
 ORDER BY
 	[c_1].[ParentID] DESC
 
