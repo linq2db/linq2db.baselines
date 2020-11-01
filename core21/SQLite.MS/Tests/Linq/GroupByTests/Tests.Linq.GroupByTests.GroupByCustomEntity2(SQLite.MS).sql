@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @RandValue  -- Int32
-SET     @RandValue = 3
+SET     @RandValue = 4
 
 SELECT
 	Count(*)
