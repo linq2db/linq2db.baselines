@@ -43,8 +43,8 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @FirstName_1 VarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName VarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -56,7 +56,7 @@ SELECT
 FROM
 	`TestInsertOrReplaceTable` `x`
 WHERE
-	`x`.`FirstName` = @FirstName_1
+	`x`.`FirstName` = @FirstName
 LIMIT @take
 
 BeforeExecute
@@ -86,8 +86,8 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @FirstName_1 VarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName VarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -99,7 +99,7 @@ SELECT
 FROM
 	`TestInsertOrReplaceTable` `x`
 WHERE
-	`x`.`FirstName` = @FirstName_1
+	`x`.`FirstName` = @FirstName
 LIMIT @take
 
 BeforeExecute

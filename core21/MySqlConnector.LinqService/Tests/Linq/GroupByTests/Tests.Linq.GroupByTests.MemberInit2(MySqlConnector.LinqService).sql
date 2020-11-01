@@ -8,7 +8,5 @@ FROM
 	`Child` `t1`
 GROUP BY
 	`t1`.`ParentID`,
-	`t1`.`ChildID`,
-	`t1`.`ParentID`,
 	`t1`.`ChildID`
 
