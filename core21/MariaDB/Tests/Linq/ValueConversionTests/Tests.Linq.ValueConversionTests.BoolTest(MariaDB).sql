@@ -43,8 +43,8 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @BoolValue_1 VarChar -- AnsiString
-SET     @BoolValue_1 = 'Y'
+DECLARE @BoolValue VarChar -- AnsiString
+SET     @BoolValue = 'Y'
 
 SELECT
 	`t`.`Id`,
@@ -54,7 +54,7 @@ SELECT
 FROM
 	`ValueConversion` `t`
 WHERE
-	`t`.`BoolValue` = @BoolValue_1
+	`t`.`BoolValue` = @BoolValue
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

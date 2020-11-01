@@ -74,28 +74,18 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`t1`.`c3`,
-	`t1`.`Id`,
+	'Id',
+	`selectParam`.`Id`,
 	Sum(CASE
-		WHEN `t1`.`Id_1` IS NULL THEN NULL
-		ELSE `t1`.`Id_1`
+		WHEN `a_ActualStage`.`Id` IS NULL
+			THEN NULL
+		ELSE `a_ActualStage`.`Id`
 	END)
 FROM
-	(
-		SELECT
-			'Id' as `c1`,
-			`selectParam`.`Id` as `c2`,
-			'Id' as `c3`,
-			`selectParam`.`Id`,
-			`a_ActualStage`.`Id` as `Id_1`
-		FROM
-			`Task` `selectParam`
-				LEFT JOIN `TaskStage` `a_ActualStage` ON `selectParam`.`Id` = `a_ActualStage`.`TaskId` AND `a_ActualStage`.`Actual` = 1
-	) `t1`
+	`Task` `selectParam`
+		LEFT JOIN `TaskStage` `a_ActualStage` ON `selectParam`.`Id` = `a_ActualStage`.`TaskId` AND `a_ActualStage`.`Actual` = 1
 GROUP BY
-	`t1`.`c2`,
-	`t1`.`c3`,
-	`t1`.`Id`
+	`selectParam`.`Id`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
