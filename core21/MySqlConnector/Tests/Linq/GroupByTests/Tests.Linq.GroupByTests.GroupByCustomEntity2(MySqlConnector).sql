@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 DECLARE @RandValue Int32
-SET     @RandValue = 3
+SET     @RandValue = 2
 
 SELECT
 	Count(*)
