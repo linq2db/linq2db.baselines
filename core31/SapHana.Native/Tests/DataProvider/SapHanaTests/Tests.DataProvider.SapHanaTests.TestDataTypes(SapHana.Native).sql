@@ -135,21 +135,21 @@ SELECT "decimalDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Native SapHana
-DECLARE @p Decimal(7,3)
+DECLARE @p Decimal(7, 3)
 SET     @p = 1234.567
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" = :p
 
 BeforeExecute
 -- SapHana.Native SapHana
-DECLARE @p Decimal(7,3)
+DECLARE @p Decimal(7, 3)
 SET     @p = 1234.567
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" = :p
 
 BeforeExecute
 -- SapHana.Native SapHana
-DECLARE @p Decimal(7,3)
+DECLARE @p Decimal(7, 3)
 SET     @p = 1234.567
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" = :p
@@ -187,21 +187,21 @@ SELECT "smalldecimalDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Native SapHana
-DECLARE @p Decimal(6,3)
+DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 
 SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" = :p
 
 BeforeExecute
 -- SapHana.Native SapHana
-DECLARE @p Decimal(6,3)
+DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 
 SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" = :p
 
 BeforeExecute
 -- SapHana.Native SapHana
-DECLARE @p Decimal(6,3)
+DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 
 SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" = :p

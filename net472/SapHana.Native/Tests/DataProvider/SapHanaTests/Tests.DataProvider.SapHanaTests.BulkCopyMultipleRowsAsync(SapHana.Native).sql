@@ -4,9 +4,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3000
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4000
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900000
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90000
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7000
@@ -118,9 +118,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3001
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4001
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900001
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90001
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7001
@@ -232,9 +232,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3002
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4002
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900002
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90002
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7002
@@ -346,9 +346,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3003
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4003
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900003
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90003
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7003
@@ -460,9 +460,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3004
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4004
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900004
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90004
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7004
@@ -574,9 +574,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3005
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4005
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900005
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90005
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7005
@@ -688,9 +688,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3006
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4006
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900006
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90006
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7006
@@ -802,9 +802,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3007
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4007
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900007
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90007
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7007
@@ -916,9 +916,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3008
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4008
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900008
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90008
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7008
@@ -1030,9 +1030,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3009
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4009
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900009
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90009
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7009
@@ -1144,9 +1144,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3010
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4010
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900010
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90010
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7010
@@ -1258,9 +1258,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3011
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4011
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900011
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90011
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7011
@@ -1372,9 +1372,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3012
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4012
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900012
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90012
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7012
@@ -1486,9 +1486,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3013
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4013
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900013
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90013
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7013
@@ -1600,9 +1600,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3014
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4014
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900014
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90014
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7014
@@ -1714,9 +1714,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3015
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4015
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900015
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90015
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7015
@@ -1828,9 +1828,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3016
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4016
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900016
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90016
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7016
@@ -1942,9 +1942,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3017
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4017
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900017
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90017
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7017
@@ -2056,9 +2056,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3018
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4018
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900018
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90018
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7018
@@ -2170,9 +2170,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3019
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4019
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900019
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90019
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7019
@@ -2284,9 +2284,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3020
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4020
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900020
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90020
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7020
@@ -2398,9 +2398,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3021
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4021
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900021
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90021
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7021
@@ -2512,9 +2512,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3022
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4022
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900022
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90022
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7022
@@ -2626,9 +2626,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3023
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4023
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900023
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90023
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7023
@@ -2740,9 +2740,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3024
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4024
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900024
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90024
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7024
@@ -2854,9 +2854,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3025
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4025
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900025
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90025
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7025
@@ -2968,9 +2968,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3026
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4026
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900026
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90026
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7026
@@ -3082,9 +3082,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3027
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4027
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900027
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90027
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7027
@@ -3196,9 +3196,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3028
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4028
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900028
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90028
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7028
@@ -3310,9 +3310,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3029
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4029
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900029
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90029
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7029
@@ -3424,9 +3424,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3030
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4030
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900030
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90030
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7030
@@ -3538,9 +3538,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3031
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4031
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900031
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90031
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7031
@@ -3652,9 +3652,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3032
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4032
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900032
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90032
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7032
@@ -3766,9 +3766,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3033
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4033
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900033
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90033
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7033
@@ -3880,9 +3880,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3034
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4034
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900034
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90034
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7034
@@ -3994,9 +3994,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3035
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4035
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900035
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90035
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7035
@@ -4108,9 +4108,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3036
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4036
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900036
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90036
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7036
@@ -4222,9 +4222,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3037
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4037
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900037
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90037
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7037
@@ -4336,9 +4336,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3038
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4038
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900038
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90038
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7038
@@ -4450,9 +4450,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3039
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4039
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900039
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90039
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7039
@@ -4564,9 +4564,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3040
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4040
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900040
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90040
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7040
@@ -4678,9 +4678,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3041
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4041
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900041
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90041
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7041
@@ -4792,9 +4792,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3042
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4042
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900042
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90042
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7042
@@ -4906,9 +4906,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3043
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4043
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900043
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90043
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7043
@@ -5020,9 +5020,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3044
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4044
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900044
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90044
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7044
@@ -5134,9 +5134,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3045
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4045
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900045
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90045
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7045
@@ -5248,9 +5248,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3046
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4046
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900046
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90046
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7046
@@ -5362,9 +5362,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3047
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4047
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900047
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90047
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7047
@@ -5476,9 +5476,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3048
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4048
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900048
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90048
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7048
@@ -5590,9 +5590,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3049
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4049
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900049
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90049
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7049
@@ -5704,9 +5704,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3050
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4050
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900050
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90050
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7050
@@ -5818,9 +5818,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3051
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4051
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900051
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90051
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7051
@@ -5932,9 +5932,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3052
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4052
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900052
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90052
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7052
@@ -6046,9 +6046,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3053
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4053
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900053
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90053
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7053
@@ -6160,9 +6160,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3054
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4054
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900054
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90054
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7054
@@ -6274,9 +6274,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3055
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4055
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900055
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90055
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7055
@@ -6388,9 +6388,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3056
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4056
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900056
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90056
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7056
@@ -6502,9 +6502,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3057
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4057
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900057
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90057
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7057
@@ -6616,9 +6616,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3058
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4058
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900058
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90058
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7058
@@ -6730,9 +6730,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3059
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4059
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900059
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90059
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7059
@@ -6844,9 +6844,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3060
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4060
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900060
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90060
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7060
@@ -6958,9 +6958,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3061
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4061
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900061
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90061
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7061
@@ -7072,9 +7072,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3062
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4062
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900062
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90062
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7062
@@ -7186,9 +7186,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3063
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4063
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900063
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90063
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7063
@@ -7300,9 +7300,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3064
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4064
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900064
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90064
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7064
@@ -7414,9 +7414,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3065
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4065
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900065
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90065
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7065
@@ -7528,9 +7528,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3066
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4066
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900066
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90066
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7066
@@ -7642,9 +7642,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3067
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4067
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900067
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90067
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7067
@@ -7756,9 +7756,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3068
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4068
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900068
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90068
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7068
@@ -7870,9 +7870,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3069
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4069
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900069
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90069
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7069
@@ -7984,9 +7984,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3070
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4070
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900070
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90070
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7070
@@ -8098,9 +8098,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3071
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4071
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900071
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90071
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7071
@@ -8212,9 +8212,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3072
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4072
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900072
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90072
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7072
@@ -8326,9 +8326,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3073
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4073
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900073
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90073
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7073
@@ -8440,9 +8440,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3074
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4074
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900074
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90074
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7074
@@ -8554,9 +8554,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3075
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4075
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900075
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90075
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7075
@@ -8668,9 +8668,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3076
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4076
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900076
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90076
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7076
@@ -8782,9 +8782,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3077
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4077
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900077
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90077
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7077
@@ -8896,9 +8896,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3078
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4078
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900078
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90078
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7078
@@ -9010,9 +9010,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3079
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4079
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900079
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90079
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7079
@@ -9124,9 +9124,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3080
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4080
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900080
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90080
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7080
@@ -9238,9 +9238,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3081
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4081
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900081
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90081
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7081
@@ -9352,9 +9352,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3082
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4082
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900082
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90082
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7082
@@ -9466,9 +9466,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3083
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4083
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900083
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90083
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7083
@@ -9580,9 +9580,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3084
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4084
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900084
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90084
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7084
@@ -9694,9 +9694,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3085
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4085
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900085
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90085
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7085
@@ -9808,9 +9808,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3086
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4086
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900086
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90086
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7086
@@ -9922,9 +9922,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3087
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4087
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900087
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90087
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7087
@@ -10036,9 +10036,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3088
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4088
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900088
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90088
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7088
@@ -10150,9 +10150,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3089
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4089
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900089
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90089
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7089
@@ -10264,9 +10264,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3090
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4090
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900090
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90090
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7090
@@ -10378,9 +10378,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3091
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4091
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900091
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90091
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7091
@@ -10492,9 +10492,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3092
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4092
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900092
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90092
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7092
@@ -10606,9 +10606,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3093
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4093
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900093
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90093
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7093
@@ -10720,9 +10720,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3094
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4094
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900094
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90094
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7094
@@ -10834,9 +10834,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3095
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4095
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900095
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90095
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7095
@@ -10948,9 +10948,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3096
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4096
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900096
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90096
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7096
@@ -11062,9 +11062,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3097
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4097
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900097
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90097
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7097
@@ -11176,9 +11176,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3098
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4098
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900098
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90098
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7098
@@ -11290,9 +11290,9 @@ DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3099
 DECLARE @smallintDataType  -- Int16
 SET     @smallintDataType = 4099
-DECLARE @decimalDataType Decimal(6,0)
+DECLARE @decimalDataType Decimal(6, 0)
 SET     @decimalDataType = 900099
-DECLARE @smalldecimalDataType Decimal(5,0)
+DECLARE @smalldecimalDataType Decimal(5, 0)
 SET     @smalldecimalDataType = 90099
 DECLARE @intDataType  -- Int32
 SET     @intDataType = 7099

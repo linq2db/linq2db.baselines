@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Native SapHana
 
-DROP TABLE "xxPatient42"
+DROP TABLE "xxPatient22"
 
 BeforeExecute
 -- SapHana.Native SapHana
 
-CREATE COLUMN TABLE "xxPatient42"
+CREATE COLUMN TABLE "xxPatient22"
 (
 	"PersonID"  Integer       NOT NULL,
 	"Diagnosis" NVarChar(255)     NULL,
@@ -22,11 +22,11 @@ DECLARE @PersonID_1  -- Int32
 SET     @PersonID_1 = 1
 
 UPDATE
-	"xxPatient42"
+	"xxPatient22"
 SET
-	"xxPatient42"."Diagnosis" = :"Diagnosis"
+	"xxPatient22"."Diagnosis" = :"Diagnosis"
 WHERE
-	"xxPatient42"."PersonID" = :"PersonID_1"
+	"xxPatient22"."PersonID" = :"PersonID_1"
 
 BeforeExecute
 -- SapHana.Native SapHana
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO "xxPatient42"
+INSERT INTO "xxPatient22"
 (
 	"PersonID",
 	"Diagnosis"
@@ -54,11 +54,11 @@ DECLARE @PersonID_1_1  -- Int32
 SET     @PersonID_1_1 = 2
 
 UPDATE
-	"xxPatient42"
+	"xxPatient22"
 SET
-	"xxPatient42"."Diagnosis" = :"Diagnosis"
+	"xxPatient22"."Diagnosis" = :"Diagnosis"
 WHERE
-	"xxPatient42"."PersonID" = :"PersonID_1_1"
+	"xxPatient22"."PersonID" = :"PersonID_1_1"
 
 BeforeExecute
 -- SapHana.Native SapHana
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO "xxPatient42"
+INSERT INTO "xxPatient22"
 (
 	"PersonID",
 	"Diagnosis"
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient42" "t1"
+	"xxPatient22" "t1"
 
 BeforeExecute
 -- SapHana.Native SapHana
@@ -94,11 +94,11 @@ DECLARE @PersonID_1_1_1  -- Int32
 SET     @PersonID_1_1_1 = 1
 
 UPDATE
-	"xxPatient42"
+	"xxPatient22"
 SET
-	"xxPatient42"."Diagnosis" = :"Diagnosis"
+	"xxPatient22"."Diagnosis" = :"Diagnosis"
 WHERE
-	"xxPatient42"."PersonID" = :"PersonID_1_1_1"
+	"xxPatient22"."PersonID" = :"PersonID_1_1_1"
 
 BeforeExecute
 -- SapHana.Native SapHana
@@ -108,11 +108,11 @@ DECLARE @PersonID_1_1_1_1  -- Int32
 SET     @PersonID_1_1_1_1 = 2
 
 UPDATE
-	"xxPatient42"
+	"xxPatient22"
 SET
-	"xxPatient42"."Diagnosis" = :"Diagnosis"
+	"xxPatient22"."Diagnosis" = :"Diagnosis"
 WHERE
-	"xxPatient42"."PersonID" = :"PersonID_1_1_1_1"
+	"xxPatient22"."PersonID" = :"PersonID_1_1_1_1"
 
 BeforeExecute
 -- SapHana.Native SapHana
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient42" "t1"
+	"xxPatient22" "t1"
 
 BeforeExecute
 -- SapHana.Native SapHana
 
-DROP TABLE "xxPatient42"
+DROP TABLE "xxPatient22"
 

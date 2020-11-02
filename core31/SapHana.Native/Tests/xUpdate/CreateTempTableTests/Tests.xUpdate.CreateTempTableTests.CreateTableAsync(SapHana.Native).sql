@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Native SapHana
+-- SapHana.Native SapHana (asynchronously)
 
 DROP TABLE "TempTable"
 

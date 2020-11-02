@@ -20,7 +20,7 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @MoneyValue Decimal(5,4)
+DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 2.4900
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2005-05-15 05:15:25.500'
@@ -78,7 +78,7 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @MoneyValue Decimal(5,4)
+DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 2.4900
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2005-05-15 05:15:25.500'

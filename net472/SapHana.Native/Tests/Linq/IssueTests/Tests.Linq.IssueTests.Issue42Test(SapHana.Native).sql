@@ -20,7 +20,7 @@ LIMIT :"take"
 
 BeforeExecute
 -- SapHana.Native SapHana
-DECLARE @MoneyValue Decimal(5,4)
+DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue  -- DateTime2
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -78,7 +78,7 @@ LIMIT :"take"
 
 BeforeExecute
 -- SapHana.Native SapHana
-DECLARE @MoneyValue Decimal(5,4)
+DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue  -- DateTime2
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
