@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p1 Timestamp(16) -- DateTime
-SET     @p1 = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @DateTimeValue_1 Timestamp(16) -- DateTime
+SET     @DateTimeValue_1 = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
 
 SELECT
 	t.ID,
@@ -17,5 +17,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.DateTimeValue IN (@p1)
+	t.DateTimeValue IN (@DateTimeValue_1)
 
