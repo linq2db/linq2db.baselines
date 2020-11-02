@@ -51,7 +51,7 @@ BeforeExecute
 SELECT
 	[t2].[ID],
 	[t2].[NAME],
-	[t2].[cnt]
+	[t2].[CountOf]
 FROM
 	(
 		SELECT
@@ -61,28 +61,28 @@ FROM
 				FROM
 					[KOMPO] [k_2]
 				WHERE
-					[k_2].[NUMBER] = [t1].[ID]
+					[k_2].[NUMBER] = [c_1].[ID]
 			) as [ex],
-			[t1].[ID],
-			[t1].[NAME],
-			[t1].[cnt]
+			[c_1].[ID],
+			[c_1].[NAME],
+			[c_1].[CountOf]
 		FROM
 			[KOMPO] [k_3]
 				INNER JOIN (
 					SELECT
-						[c_1].[ID],
-						[c_1].[NAME],
+						[t1].[ID],
+						[t1].[NAME],
 						(
 							SELECT
 								Count(*)
 							FROM
 								[KOMPO] [k_1]
 							WHERE
-								[k_1].[NUMBER] = [c_1].[ID]
-						) as [cnt]
+								[k_1].[NUMBER] = [t1].[ID]
+						) as [CountOf]
 					FROM
-						[CONFIG] [c_1]
-				) [t1] ON [t1].[ID] = [k_3].[NUMBER]
+						[CONFIG] [t1]
+				) [c_1] ON [c_1].[ID] = [k_3].[NUMBER]
 	) [t2]
 WHERE
 	[t2].[ex] > 1
