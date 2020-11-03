@@ -13,28 +13,28 @@ END
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "TestTable"
-(
-	ID          Int                                     NOT NULL,
-	"Field1"    VarChar(50) CHARACTER SET UNICODE_FSS,
-	"Field2"    VarChar(255) CHARACTER SET UNICODE_FSS,
-	"CreatedOn" TimeStamp,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "TestTable"
+		(
+			ID          Int                                     NOT NULL,
+			"Field1"    VarChar(50) CHARACTER SET UNICODE_FSS,
+			"Field2"    VarChar(255) CHARACTER SET UNICODE_FSS,
+			"CreatedOn" TimeStamp,
 
-	CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Firebird
-
-CREATE GENERATOR "GIDENTITY_TestTable"
-
-BeforeExecute
--- Firebird
-
-CREATE TRIGGER "TIDENTITY_TestTable" FOR "TestTable"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW.ID = GEN_ID("GIDENTITY_TestTable", 1);
+			CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_TestTable"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_TestTable" FOR "TestTable"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW.ID = GEN_ID("GIDENTITY_TestTable", 1);
+		END
+	';
 END
 
 BeforeExecute

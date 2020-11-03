@@ -1,28 +1,28 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "Stone"
-(
-	"Id"           Int                                     NOT NULL,
-	"Name"         VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"Enabled"      CHAR,
-	"ImageFullUrl" VarChar(255) CHARACTER SET UNICODE_FSS,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "Stone"
+		(
+			"Id"           Int                                     NOT NULL,
+			"Name"         VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+			"Enabled"      CHAR,
+			"ImageFullUrl" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_Stone" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- Firebird
-
-CREATE GENERATOR "GIDENTITY_Stone"
-
-BeforeExecute
--- Firebird
-
-CREATE TRIGGER "TIDENTITY_Stone" FOR "Stone"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW."Id" = GEN_ID("GIDENTITY_Stone", 1);
+			CONSTRAINT "PK_Stone" PRIMARY KEY ("Id")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_Stone"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_Stone" FOR "Stone"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."Id" = GEN_ID("GIDENTITY_Stone", 1);
+		END
+	';
 END
 
 BeforeExecute

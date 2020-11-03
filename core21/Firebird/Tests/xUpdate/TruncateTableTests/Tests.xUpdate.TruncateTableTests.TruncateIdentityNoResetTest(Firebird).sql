@@ -12,20 +12,18 @@ EXECUTE BLOCK AS BEGIN
 				CONSTRAINT "PK_test_temp" PRIMARY KEY (ID)
 			)
 		';
-END
-
-BeforeExecute
--- Firebird
-
-CREATE GENERATOR "GIDENTITY_test_temp"
-
-BeforeExecute
--- Firebird
-
-CREATE TRIGGER "TIDENTITY_test_temp" FOR "test_temp"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW.ID = GEN_ID("GIDENTITY_test_temp", 1);
+	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_test_temp')) THEN
+		EXECUTE STATEMENT '
+			CREATE GENERATOR "GIDENTITY_test_temp"
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_test_temp')) THEN
+		EXECUTE STATEMENT '
+			CREATE TRIGGER "TIDENTITY_test_temp" FOR "test_temp"
+			BEFORE INSERT POSITION 0
+			AS BEGIN
+				NEW.ID = GEN_ID("GIDENTITY_test_temp", 1);
+			END
+		';
 END
 
 BeforeExecute
