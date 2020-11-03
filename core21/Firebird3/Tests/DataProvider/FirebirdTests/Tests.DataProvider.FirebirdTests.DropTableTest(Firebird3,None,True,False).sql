@@ -25,23 +25,23 @@ END
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE TestIdentityDropTable
-(
-	Field Int  NOT NULL
-)
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE GENERATOR GIDENTITY_TestIdentityDropTable
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE TRIGGER TIDENTITY_TestIdentityDropTable FOR TestIdentityDropTable
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW.Field = GEN_ID(GIDENTITY_TestIdentityDropTable, 1);
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE TestIdentityDropTable
+		(
+			Field Int  NOT NULL
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR GIDENTITY_TestIdentityDropTable
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER TIDENTITY_TestIdentityDropTable FOR TestIdentityDropTable
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW.Field = GEN_ID(GIDENTITY_TestIdentityDropTable, 1);
+		END
+	';
 END
 
 BeforeExecute

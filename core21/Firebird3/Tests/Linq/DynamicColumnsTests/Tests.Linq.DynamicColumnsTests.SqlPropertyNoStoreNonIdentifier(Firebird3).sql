@@ -1,27 +1,27 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "DynamicTable"
-(
-	ID               Int  NOT NULL,
-	"Not Identifier" Int  NOT NULL,
-	"Some Value"     Int  NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "DynamicTable"
+		(
+			ID               Int  NOT NULL,
+			"Not Identifier" Int  NOT NULL,
+			"Some Value"     Int  NOT NULL,
 
-	CONSTRAINT "PK_DynamicTable" PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE GENERATOR "GIDENTITY_DynamicTable"
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE TRIGGER "TIDENTITY_DynamicTable" FOR "DynamicTable"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW.ID = GEN_ID("GIDENTITY_DynamicTable", 1);
+			CONSTRAINT "PK_DynamicTable" PRIMARY KEY (ID)
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_DynamicTable"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_DynamicTable" FOR "DynamicTable"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW.ID = GEN_ID("GIDENTITY_DynamicTable", 1);
+		END
+	';
 END
 
 BeforeExecute

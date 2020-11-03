@@ -1,26 +1,26 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Issue1279Table"
-(
-	"Id"      Int       NOT NULL,
-	"CharFld" NChar(1)  NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "Issue1279Table"
+		(
+			"Id"      Int       NOT NULL,
+			"CharFld" NChar(1)  NOT NULL,
 
-	CONSTRAINT "PK_Issue1279Table" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE GENERATOR "GIDENTITY_Issue1279Table"
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE TRIGGER "TIDENTITY_Issue1279Table" FOR "Issue1279Table"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW."Id" = GEN_ID("GIDENTITY_Issue1279Table", 1);
+			CONSTRAINT "PK_Issue1279Table" PRIMARY KEY ("Id")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_Issue1279Table"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_Issue1279Table" FOR "Issue1279Table"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."Id" = GEN_ID("GIDENTITY_Issue1279Table", 1);
+		END
+	';
 END
 
 BeforeExecute
