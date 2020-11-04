@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE OrderByDistinctData
+CREATE TABLE IF NOT EXISTS OrderByDistinctData
 (
 	Id            Int           NOT NULL,
 	DuplicateData NVarChar(255)     NULL,
@@ -534,5 +534,5 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE OrderByDistinctData
+DROP TABLE IF EXISTS OrderByDistinctData
 

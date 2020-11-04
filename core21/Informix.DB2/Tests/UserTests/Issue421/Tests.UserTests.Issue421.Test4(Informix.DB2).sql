@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE BlobClass19
+CREATE TABLE BlobClass10
 (
 	Id        Int  NOT NULL,
 	BlobValue byte     NULL,
@@ -14,7 +14,7 @@ BeforeExecute
 DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = System.Byte[]
 
-INSERT INTO BlobClass19
+INSERT INTO BlobClass10
 (
 	Id,
 	BlobValue
@@ -32,7 +32,7 @@ SELECT FIRST 1
 	t1.Id,
 	t1.BlobValue
 FROM
-	BlobClass19 t1
+	BlobClass10 t1
 WHERE
 	t1.Id = 1
 
@@ -43,12 +43,12 @@ SELECT FIRST 1
 	t1.Id,
 	t1.BlobValue
 FROM
-	BlobClass19 t1
+	BlobClass10 t1
 WHERE
 	t1.Id = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE BlobClass19
+DROP TABLE BlobClass10
 

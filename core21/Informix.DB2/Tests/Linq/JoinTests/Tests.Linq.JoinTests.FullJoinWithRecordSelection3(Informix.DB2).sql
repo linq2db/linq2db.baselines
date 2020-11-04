@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Fact
+CREATE TABLE IF NOT EXISTS Fact
 (
 	Id Int NOT NULL,
 
@@ -53,7 +53,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Tag
+CREATE TABLE IF NOT EXISTS Tag
 (
 	Id     Int           NOT NULL,
 	FactId Int           NOT NULL,
@@ -167,10 +167,10 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Tag
+DROP TABLE IF EXISTS Tag
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Fact
+DROP TABLE IF EXISTS Fact
 

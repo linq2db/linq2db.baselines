@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE UpdatedEntities
+CREATE TABLE IF NOT EXISTS UpdatedEntities
 (
 	id         Int NOT NULL,
 	Value1     Int NOT NULL,
@@ -135,7 +135,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE NewEntities
+CREATE TABLE IF NOT EXISTS NewEntities
 (
 	id     Int NOT NULL,
 	Value1 Int NOT NULL,
@@ -367,10 +367,10 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE NewEntities
+DROP TABLE IF EXISTS NewEntities
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE UpdatedEntities
+DROP TABLE IF EXISTS UpdatedEntities
 
