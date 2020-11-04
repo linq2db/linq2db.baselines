@@ -1,12 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [Position]
-(
-	[Group] Int NOT NULL,
-	[Order] Int NOT NULL,
-	[Id]    Int     NULL
-)
+IF (OBJECT_ID(N'[Position]', N'U') IS NULL)
+	CREATE TABLE [Position]
+	(
+		[Group] Int NOT NULL,
+		[Order] Int NOT NULL,
+		[Id]    Int     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -39,5 +40,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Position]
+IF (OBJECT_ID(N'[Position]', N'U') IS NOT NULL)
+	DROP TABLE [Position]
 

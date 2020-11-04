@@ -1,29 +1,31 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [gt_s_one]
-(
-	[id]   Int            NOT NULL,
-	[col1] NVarChar(4000)     NULL,
-	[col2] NVarChar(4000)     NULL,
-	[col3] NVarChar(4000)     NULL,
-	[col4] NVarChar(4000)     NULL,
-	[col5] NVarChar(4000)     NULL,
-	[col6] NVarChar(4000)     NULL,
+IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NULL)
+	CREATE TABLE [gt_s_one]
+	(
+		[id]   Int            NOT NULL,
+		[col1] NVarChar(4000)     NULL,
+		[col2] NVarChar(4000)     NULL,
+		[col3] NVarChar(4000)     NULL,
+		[col4] NVarChar(4000)     NULL,
+		[col5] NVarChar(4000)     NULL,
+		[col6] NVarChar(4000)     NULL,
 
-	CONSTRAINT [PK_gt_s_one] PRIMARY KEY CLUSTERED ([id])
-)
+		CONSTRAINT [PK_gt_s_one] PRIMARY KEY CLUSTERED ([id])
+	)
 
 BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [access_mode]
-(
-	[id]   Int            NOT NULL,
-	[code] NVarChar(4000)     NULL,
+IF (OBJECT_ID(N'[access_mode]', N'U') IS NULL)
+	CREATE TABLE [access_mode]
+	(
+		[id]   Int            NOT NULL,
+		[code] NVarChar(4000)     NULL,
 
-	CONSTRAINT [PK_access_mode] PRIMARY KEY CLUSTERED ([id])
-)
+		CONSTRAINT [PK_access_mode] PRIMARY KEY CLUSTERED ([id])
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -44,10 +46,12 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [access_mode]
+IF (OBJECT_ID(N'[access_mode]', N'U') IS NOT NULL)
+	DROP TABLE [access_mode]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [gt_s_one]
+IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NOT NULL)
+	DROP TABLE [gt_s_one]
 
