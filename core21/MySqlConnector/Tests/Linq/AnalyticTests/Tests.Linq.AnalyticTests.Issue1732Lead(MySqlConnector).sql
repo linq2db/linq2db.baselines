@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `Position`
+CREATE TABLE IF NOT EXISTS `Position`
 (
 	`Group` INT NOT NULL,
 	`Order` INT NOT NULL,
@@ -39,5 +39,5 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Position`
+DROP TABLE IF EXISTS `Position`
 
