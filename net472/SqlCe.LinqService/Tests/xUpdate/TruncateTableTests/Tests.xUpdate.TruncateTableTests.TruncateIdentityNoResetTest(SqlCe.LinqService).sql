@@ -1,23 +1,18 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [TestIdTrun]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TestIdTrun]
+CREATE TABLE [test_temp]
 (
 	[ID]     Int      NOT NULL IDENTITY,
 	[Field1] Decimal  NOT NULL,
 
-	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_test_temp] PRIMARY KEY ([ID])
 )
 
 BeforeExecute
 -- SqlCe
 
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -29,52 +24,7 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-INSERT INTO [TestIdTrun]
-(
-	[Field1]
-)
-VALUES
-(
-	1
-)
-
-BeforeExecute
--- SqlCe
-DECLARE @skip Int -- Int32
-SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT
-	[t1].[ID],
-	[t1].[Field1]
-FROM
-	[TestIdTrun] [t1]
-ORDER BY
-	[t1].[ID]
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
-
-BeforeExecute
--- SqlCe
-
-DELETE FROM [TestIdTrun]
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [TestIdTrun]
-(
-	[Field1]
-)
-VALUES
-(
-	1
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -94,7 +44,7 @@ SELECT
 	[t1].[ID],
 	[t1].[Field1]
 FROM
-	[TestIdTrun] [t1]
+	[test_temp] [t1]
 ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
@@ -102,5 +52,50 @@ OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY
 BeforeExecute
 -- SqlCe
 
-DROP TABLE [TestIdTrun]
+DELETE FROM [test_temp]
+
+BeforeExecute
+-- SqlCe
+
+INSERT INTO [test_temp]
+(
+	[Field1]
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- SqlCe
+
+INSERT INTO [test_temp]
+(
+	[Field1]
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @skip Int -- Int32
+SET     @skip = 1
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT
+	[t1].[ID],
+	[t1].[Field1]
+FROM
+	[test_temp] [t1]
+ORDER BY
+	[t1].[ID]
+OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [test_temp]
 
