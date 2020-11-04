@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [MasterClass]
+CREATE TABLE IF NOT EXISTS [MasterClass]
 (
 	[Id1]        INTEGER       NOT NULL,
 	[Id2]        INTEGER       NOT NULL,
@@ -53,5 +53,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [MasterClass]
+DROP TABLE IF EXISTS [MasterClass]
 

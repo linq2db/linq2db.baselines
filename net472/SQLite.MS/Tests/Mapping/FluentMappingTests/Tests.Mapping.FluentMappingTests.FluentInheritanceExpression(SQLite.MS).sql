@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [DescendantEntity]
+CREATE TABLE IF NOT EXISTS [DescendantEntity]
 (
 	[Id] INTEGER NOT NULL
 )
@@ -40,5 +40,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [DescendantEntity]
+DROP TABLE IF EXISTS [DescendantEntity]
 

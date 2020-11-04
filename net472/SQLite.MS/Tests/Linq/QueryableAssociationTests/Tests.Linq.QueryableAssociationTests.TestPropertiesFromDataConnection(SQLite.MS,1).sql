@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [EntityWithUser]
+CREATE TABLE IF NOT EXISTS [EntityWithUser]
 (
 	[UserId]                   INTEGER NOT NULL,
 	[BelongsToCurrentUser]     Bit     NOT NULL,
@@ -40,5 +40,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [EntityWithUser]
+DROP TABLE IF EXISTS [EntityWithUser]
 

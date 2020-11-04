@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SomeEntity]
+CREATE TABLE IF NOT EXISTS [SomeEntity]
 (
 	[Id]      INTEGER NOT NULL,
 	[OtherId] INTEGER     NULL
@@ -28,7 +28,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SomeOtherEntity]
+CREATE TABLE IF NOT EXISTS [SomeOtherEntity]
 (
 	[Id]       INTEGER       NOT NULL,
 	[Name]     NVarChar(255)     NULL,
@@ -74,10 +74,10 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SomeOtherEntity]
+DROP TABLE IF EXISTS [SomeOtherEntity]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SomeEntity]
+DROP TABLE IF EXISTS [SomeEntity]
 

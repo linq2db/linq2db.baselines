@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Item]
+CREATE TABLE IF NOT EXISTS [Item]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Name] NVarChar(255) NOT NULL,
@@ -48,7 +48,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [ItemText]
+CREATE TABLE IF NOT EXISTS [ItemText]
 (
 	[ItemId] INTEGER       NOT NULL,
 	[Lang]   NVarChar(255) NOT NULL,
@@ -170,10 +170,10 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ItemText]
+DROP TABLE IF EXISTS [ItemText]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Item]
+DROP TABLE IF EXISTS [Item]
 

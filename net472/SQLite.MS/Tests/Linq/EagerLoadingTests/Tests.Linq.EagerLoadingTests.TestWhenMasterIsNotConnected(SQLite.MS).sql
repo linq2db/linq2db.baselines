@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [MasterManyId]
+CREATE TABLE IF NOT EXISTS [MasterManyId]
 (
 	[Id1]   INTEGER       NOT NULL,
 	[Id2]   INTEGER       NOT NULL,
@@ -46,7 +46,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [DetailClass]
+CREATE TABLE IF NOT EXISTS [DetailClass]
 (
 	[DetailId]    INTEGER       NOT NULL,
 	[MasterId]    INTEGER           NULL,
@@ -152,10 +152,10 @@ GROUP BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [DetailClass]
+DROP TABLE IF EXISTS [DetailClass]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [MasterManyId]
+DROP TABLE IF EXISTS [MasterManyId]
 

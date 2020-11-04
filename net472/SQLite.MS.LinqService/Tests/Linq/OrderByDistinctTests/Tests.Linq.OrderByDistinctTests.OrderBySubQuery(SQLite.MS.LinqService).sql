@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [OrderByDistinctData]
+CREATE TABLE IF NOT EXISTS [OrderByDistinctData]
 (
 	[Id]            INTEGER       NOT NULL,
 	[DuplicateData] NVarChar(255)     NULL,
@@ -509,5 +509,5 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [OrderByDistinctData]
+DROP TABLE IF EXISTS [OrderByDistinctData]
 

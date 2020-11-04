@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [TakeSkipClass]
+CREATE TABLE IF NOT EXISTS [TakeSkipClass]
 (
 	[Value] VarChar(10)     NULL
 )
@@ -36,5 +36,5 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 

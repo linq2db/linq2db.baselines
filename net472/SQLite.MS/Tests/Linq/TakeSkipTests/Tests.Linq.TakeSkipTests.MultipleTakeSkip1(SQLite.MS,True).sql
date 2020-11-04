@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [TakeSkipClass]
+CREATE TABLE IF NOT EXISTS [TakeSkipClass]
 (
 	[Value] VarChar(10)     NULL
 )
@@ -41,5 +41,5 @@ LIMIT @take_1 OFFSET @skip
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 
