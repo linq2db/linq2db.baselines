@@ -1,14 +1,17 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Categories]
-(
-	[CategoryID]   Int           IDENTITY NOT NULL,
-	[CategoryName] NVarChar(255)          NOT NULL,
-	[Description]  NVarChar(255)              NULL,
+IF (OBJECT_ID(N'Categories') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Categories]
+		(
+			[CategoryID]   Int           IDENTITY NOT NULL,
+			[CategoryName] NVarChar(255)          NOT NULL,
+			[Description]  NVarChar(255)              NULL,
 
-	CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED ([CategoryID])
-)
+			CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED ([CategoryID])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -24,15 +27,18 @@ SELECT 'Name 2','Desc 2'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Products]
-(
-	[ProductID]       Int           IDENTITY NOT NULL,
-	[ProductName]     NVarChar(255)          NOT NULL,
-	[CategoryID]      Int                        NULL,
-	[QuantityPerUnit] NVarChar(255)              NULL,
+IF (OBJECT_ID(N'Products') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Products]
+		(
+			[ProductID]       Int           IDENTITY NOT NULL,
+			[ProductName]     NVarChar(255)          NOT NULL,
+			[CategoryID]      Int                        NULL,
+			[QuantityPerUnit] NVarChar(255)              NULL,
 
-	CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED ([ProductID])
-)
+			CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED ([ProductID])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -76,10 +82,12 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Products]
+IF (OBJECT_ID(N'Products') IS NOT NULL)
+	DROP TABLE [Products]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Categories]
+IF (OBJECT_ID(N'Categories') IS NOT NULL)
+	DROP TABLE [Categories]
 

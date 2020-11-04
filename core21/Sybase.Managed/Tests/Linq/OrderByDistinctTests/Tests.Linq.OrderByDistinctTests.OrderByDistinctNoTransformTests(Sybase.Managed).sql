@@ -1,15 +1,18 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [OrderByDistinctData]
-(
-	[Id]            Int           NOT NULL,
-	[DuplicateData] NVarChar(255)     NULL,
-	[OrderData1]    Int           NOT NULL,
-	[OrderData2]    Int           NOT NULL,
+IF (OBJECT_ID(N'OrderByDistinctData') IS NULL)
+	EXECUTE('
+		CREATE TABLE [OrderByDistinctData]
+		(
+			[Id]            Int           NOT NULL,
+			[DuplicateData] NVarChar(255)     NULL,
+			[OrderData1]    Int           NOT NULL,
+			[OrderData2]    Int           NOT NULL,
 
-	CONSTRAINT [PK_OrderByDistinctData] PRIMARY KEY CLUSTERED ([Id])
-)
+			CONSTRAINT [PK_OrderByDistinctData] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -54,5 +57,6 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [OrderByDistinctData]
+IF (OBJECT_ID(N'OrderByDistinctData') IS NOT NULL)
+	DROP TABLE [OrderByDistinctData]
 

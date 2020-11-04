@@ -1,12 +1,13 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TempTable]
+IF (OBJECT_ID(N'TempTable') IS NOT NULL)
+	DROP TABLE [TempTable]
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-CREATE TABLE [TempTable]
+CREATE TABLE #TempTable
 (
 	[ID] Int NOT NULL
 )
@@ -14,7 +15,7 @@ CREATE TABLE [TempTable]
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-INSERT INTO [TempTable]
+INSERT INTO #TempTable
 (
 	[ID]
 )
@@ -26,7 +27,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-DROP TABLE [TempTable]
+DROP TABLE #TempTable
 
 BeforeExecute
 -- Sybase.Managed Sybase
