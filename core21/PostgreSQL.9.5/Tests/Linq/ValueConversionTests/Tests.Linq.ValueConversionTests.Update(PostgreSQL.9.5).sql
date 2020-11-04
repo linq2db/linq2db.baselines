@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "ValueConversion"
+CREATE TABLE IF NOT EXISTS "ValueConversion"
 (
 	"Id"                      Int          NOT NULL,
 	"Value1"                  VarChar(200)     NULL,
@@ -187,5 +187,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "ValueConversion"
+DROP TABLE IF EXISTS "ValueConversion"
 
