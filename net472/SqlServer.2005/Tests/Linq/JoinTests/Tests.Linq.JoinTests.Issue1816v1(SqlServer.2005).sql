@@ -1,35 +1,38 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [stVersions]
-(
-	[inId]     Int NOT NULL,
-	[inIdMain] Int NOT NULL,
+IF (OBJECT_ID(N'[stVersions]', N'U') IS NULL)
+	CREATE TABLE [stVersions]
+	(
+		[inId]     Int NOT NULL,
+		[inIdMain] Int NOT NULL,
 
-	CONSTRAINT [PK_stVersions] PRIMARY KEY CLUSTERED ([inId])
-)
-
-BeforeExecute
--- SqlServer.2005
-
-CREATE TABLE [rlStatesTypesAndUserGroups]
-(
-	[inIdState] Int NOT NULL,
-	[inIdType]  Int NOT NULL,
-
-	CONSTRAINT [PK_rlStatesTypesAndUserGroups] PRIMARY KEY CLUSTERED ([inIdState], [inIdType])
-)
+		CONSTRAINT [PK_stVersions] PRIMARY KEY CLUSTERED ([inId])
+	)
 
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [stMain]
-(
-	[inId]     Int NOT NULL,
-	[inIdType] Int NOT NULL,
+IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NULL)
+	CREATE TABLE [rlStatesTypesAndUserGroups]
+	(
+		[inIdState] Int NOT NULL,
+		[inIdType]  Int NOT NULL,
 
-	CONSTRAINT [PK_stMain] PRIMARY KEY CLUSTERED ([inId])
-)
+		CONSTRAINT [PK_rlStatesTypesAndUserGroups] PRIMARY KEY CLUSTERED ([inIdState], [inIdType])
+	)
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[stMain]', N'U') IS NULL)
+	CREATE TABLE [stMain]
+	(
+		[inId]     Int NOT NULL,
+		[inIdType] Int NOT NULL,
+
+		CONSTRAINT [PK_stMain] PRIMARY KEY CLUSTERED ([inId])
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -45,15 +48,18 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [stMain]
+IF (OBJECT_ID(N'[stMain]', N'U') IS NOT NULL)
+	DROP TABLE [stMain]
 
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [rlStatesTypesAndUserGroups]
+IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NOT NULL)
+	DROP TABLE [rlStatesTypesAndUserGroups]
 
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [stVersions]
+IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
+	DROP TABLE [stVersions]
 

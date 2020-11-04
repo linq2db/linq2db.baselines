@@ -1,11 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Isue2424Table]
-(
-	[Id]       Int            NOT NULL,
-	[StrValue] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Isue2424Table]', N'U') IS NULL)
+	CREATE TABLE [Isue2424Table]
+	(
+		[Id]       Int            NOT NULL,
+		[StrValue] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -308,5 +309,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Isue2424Table]
+IF (OBJECT_ID(N'[Isue2424Table]', N'U') IS NOT NULL)
+	DROP TABLE [Isue2424Table]
 

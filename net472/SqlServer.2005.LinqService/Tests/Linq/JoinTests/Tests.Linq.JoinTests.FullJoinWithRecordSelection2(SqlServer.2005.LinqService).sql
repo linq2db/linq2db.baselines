@@ -1,12 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Fact]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'[Fact]', N'U') IS NULL)
+	CREATE TABLE [Fact]
+	(
+		[Id] Int NOT NULL,
 
-	CONSTRAINT [PK_Fact] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_Fact] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -53,14 +54,15 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Tag]
-(
-	[Id]     Int            NOT NULL,
-	[FactId] Int            NOT NULL,
-	[Name]   NVarChar(4000) NOT NULL,
+IF (OBJECT_ID(N'[Tag]', N'U') IS NULL)
+	CREATE TABLE [Tag]
+	(
+		[Id]     Int            NOT NULL,
+		[FactId] Int            NOT NULL,
+		[Name]   NVarChar(4000) NOT NULL,
 
-	CONSTRAINT [PK_Tag] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_Tag] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -167,10 +169,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Tag]
+IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
+	DROP TABLE [Tag]
 
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Fact]
+IF (OBJECT_ID(N'[Fact]', N'U') IS NOT NULL)
+	DROP TABLE [Fact]
 

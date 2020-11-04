@@ -1,13 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Issue913Test]
-(
-	[InstrumentID]  Int      NOT NULL,
-	[TradingStatus] NChar(1)     NULL,
+IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
+	CREATE TABLE [Issue913Test]
+	(
+		[InstrumentID]  Int      NOT NULL,
+		[TradingStatus] NChar(1)     NULL,
 
-	CONSTRAINT [PK_Issue913Test] PRIMARY KEY CLUSTERED ([InstrumentID])
-)
+		CONSTRAINT [PK_Issue913Test] PRIMARY KEY CLUSTERED ([InstrumentID])
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -88,5 +89,6 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Issue913Test]
+IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NOT NULL)
+	DROP TABLE [Issue913Test]
 
