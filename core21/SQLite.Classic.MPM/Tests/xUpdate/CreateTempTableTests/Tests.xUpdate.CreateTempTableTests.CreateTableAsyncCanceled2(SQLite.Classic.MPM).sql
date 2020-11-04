@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS [TempTable]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
-CREATE TABLE [TempTable]
+CREATE TEMPORARY TABLE [TempTable]
 (
 	[ID] INTEGER NOT NULL
 )

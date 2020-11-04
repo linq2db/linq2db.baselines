@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [EntityWithUser]
+CREATE TABLE IF NOT EXISTS [EntityWithUser]
 (
 	[UserId]                   INTEGER NOT NULL,
 	[BelongsToCurrentUser]     Bit     NOT NULL,
@@ -143,5 +143,5 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [EntityWithUser]
+DROP TABLE IF EXISTS [EntityWithUser]
 

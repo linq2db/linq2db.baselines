@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [ValueConversion]
+CREATE TABLE IF NOT EXISTS [ValueConversion]
 (
 	[Id]                      INTEGER       NOT NULL,
 	[Value1]                  NVarChar(200)     NULL,
@@ -131,5 +131,5 @@ LIMIT @take OFFSET @skip
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 

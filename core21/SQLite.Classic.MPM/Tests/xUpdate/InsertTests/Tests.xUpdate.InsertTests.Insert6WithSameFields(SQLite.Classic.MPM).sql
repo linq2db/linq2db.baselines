@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [InsertTable]
+CREATE TABLE IF NOT EXISTS [InsertTable]
 (
 	[Id]         INTEGER   NOT NULL,
 	[CreatedOn]  DateTime2     NULL,
@@ -44,5 +44,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [InsertTable]
+DROP TABLE IF EXISTS [InsertTable]
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [ConcatTest]
+CREATE TABLE IF NOT EXISTS [ConcatTest]
 (
 	[EntityId] INTEGER       NOT NULL,
 	[Discr]    INTEGER       NOT NULL,
@@ -49,5 +49,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [ConcatTest]
+DROP TABLE IF EXISTS [ConcatTest]
 

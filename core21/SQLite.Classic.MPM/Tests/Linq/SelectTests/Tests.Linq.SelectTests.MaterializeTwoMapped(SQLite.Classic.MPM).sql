@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [test_mapping_column_2_prop]
+CREATE TABLE IF NOT EXISTS [test_mapping_column_2_prop]
 (
 	[id]          BigInt NOT NULL,
 	[test_number] BigInt NOT NULL,
@@ -37,5 +37,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [test_mapping_column_2_prop]
+DROP TABLE IF EXISTS [test_mapping_column_2_prop]
 
