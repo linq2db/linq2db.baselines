@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
+-- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-CREATE TABLE "TempTable"
+CREATE TABLE IF NOT EXISTS "TempTable"
 (
 	"ID" Int NOT NULL
 )
@@ -35,5 +35,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-DROP TABLE "TempTable"
+DROP TABLE IF EXISTS "TempTable"
 

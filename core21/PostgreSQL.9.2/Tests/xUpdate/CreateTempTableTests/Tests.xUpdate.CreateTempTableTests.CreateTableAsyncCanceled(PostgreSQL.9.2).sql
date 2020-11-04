@@ -14,10 +14,11 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-CREATE TABLE "TempTable"
+CREATE TEMPORARY TABLE "TempTable"
 (
 	"ID" Int NOT NULL
 )
+ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
