@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "CteChild"
+CREATE TABLE IF NOT EXISTS "CteChild"
 (
 	"ChildID"  Int NOT NULL,
 	"ParentID" Int NOT NULL
@@ -56,5 +56,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "CteChild"
+DROP TABLE IF EXISTS "CteChild"
 

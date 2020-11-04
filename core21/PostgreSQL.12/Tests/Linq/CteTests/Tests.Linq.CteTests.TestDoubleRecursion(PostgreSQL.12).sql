@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "HierarchyTree"
+CREATE TABLE IF NOT EXISTS "HierarchyTree"
 (
 	"Id"       Int NOT NULL,
 	"ParentId" Int     NULL
@@ -82,5 +82,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "HierarchyTree"
+DROP TABLE IF EXISTS "HierarchyTree"
 

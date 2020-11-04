@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "WhereCases"
+CREATE TABLE IF NOT EXISTS "WhereCases"
 (
 	"Id"                Int     NOT NULL,
 	"BoolValue"         Boolean NOT NULL,
@@ -435,5 +435,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "WhereCases"
+DROP TABLE IF EXISTS "WhereCases"
 

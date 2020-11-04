@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Categories"
+CREATE TABLE IF NOT EXISTS "Categories"
 (
 	"CategoryID"   SERIAL  NOT NULL,
 	"CategoryName" text    NOT NULL,
@@ -25,7 +25,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Products"
+CREATE TABLE IF NOT EXISTS "Products"
 (
 	"ProductID"       SERIAL  NOT NULL,
 	"ProductName"     text    NOT NULL,
@@ -78,10 +78,10 @@ FROM
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Products"
+DROP TABLE IF EXISTS "Products"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Categories"
+DROP TABLE IF EXISTS "Categories"
 

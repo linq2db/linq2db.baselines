@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "InstanceClass"
+CREATE TABLE IF NOT EXISTS "InstanceClass"
 (
 	"Id"    Int NOT NULL,
 	"Value" Int NOT NULL
@@ -49,5 +49,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "InstanceClass"
+DROP TABLE IF EXISTS "InstanceClass"
 

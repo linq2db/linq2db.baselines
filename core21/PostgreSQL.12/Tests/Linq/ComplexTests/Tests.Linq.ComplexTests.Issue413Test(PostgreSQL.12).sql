@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "T1"
+CREATE TABLE IF NOT EXISTS "T1"
 (
 	"InstrumentId"         Int       NOT NULL,
 	"InstrumentCode"       text          NULL,
@@ -14,7 +14,7 @@ CREATE TABLE "T1"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "T2"
+CREATE TABLE IF NOT EXISTS "T2"
 (
 	"InstrumentId" Int NOT NULL,
 	"IndexId"      Int NOT NULL
@@ -23,7 +23,7 @@ CREATE TABLE "T2"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "T3"
+CREATE TABLE IF NOT EXISTS "T3"
 (
 	"InstrumentId" Int NOT NULL,
 	"IndexId"      Int NOT NULL
@@ -194,15 +194,15 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "T3"
+DROP TABLE IF EXISTS "T3"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "T2"
+DROP TABLE IF EXISTS "T2"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "T1"
+DROP TABLE IF EXISTS "T1"
 
