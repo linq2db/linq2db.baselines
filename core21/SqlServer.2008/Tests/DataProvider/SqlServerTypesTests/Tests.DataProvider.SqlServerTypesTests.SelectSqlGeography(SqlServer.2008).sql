@@ -1,13 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Issue1836]
-(
-	[Id]           Int       NOT NULL,
-	[HomeLocation] Geography     NULL,
+IF (OBJECT_ID(N'[Issue1836]', N'U') IS NULL)
+	CREATE TABLE [Issue1836]
+	(
+		[Id]           Int       NOT NULL,
+		[HomeLocation] Geography     NULL,
 
-	CONSTRAINT [PK_Issue1836] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_Issue1836] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -37,5 +38,6 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Issue1836]
+IF (OBJECT_ID(N'[Issue1836]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1836]
 

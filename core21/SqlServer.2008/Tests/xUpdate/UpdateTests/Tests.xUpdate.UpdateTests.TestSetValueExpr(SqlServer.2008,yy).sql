@@ -1,12 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [TextData]
-(
-	[Id]     Int           NOT NULL,
-	[Items1] NVarChar(Max)     NULL,
-	[Items2] NVarChar(Max)     NULL
-)
+IF (OBJECT_ID(N'[TextData]', N'U') IS NULL)
+	CREATE TABLE [TextData]
+	(
+		[Id]     Int           NOT NULL,
+		[Items1] NVarChar(Max)     NULL,
+		[Items2] NVarChar(Max)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -53,5 +54,6 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [TextData]
+IF (OBJECT_ID(N'[TextData]', N'U') IS NOT NULL)
+	DROP TABLE [TextData]
 

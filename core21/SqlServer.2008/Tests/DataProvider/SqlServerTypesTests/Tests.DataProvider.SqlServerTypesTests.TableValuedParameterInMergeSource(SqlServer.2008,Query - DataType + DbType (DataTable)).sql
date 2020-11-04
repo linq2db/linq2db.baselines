@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [TestMergeTVPTable]
+CREATE TABLE [#TestMergeTVPTable]
 (
 	[Id]   Int            NOT NULL,
 	[Name] NVarChar(4000)     NULL
@@ -12,7 +12,7 @@ BeforeExecute
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
-MERGE INTO [TestMergeTVPTable] [Target]
+MERGE INTO [#TestMergeTVPTable] [Target]
 USING (
 	SELECT
 		[_].[Id],
@@ -48,12 +48,12 @@ SELECT
 	[t1].[Id],
 	[t1].[Name]
 FROM
-	[TestMergeTVPTable] [t1]
+	[#TestMergeTVPTable] [t1]
 ORDER BY
 	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [TestMergeTVPTable]
+DROP TABLE [#TestMergeTVPTable]
 
