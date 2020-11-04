@@ -1,22 +1,27 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
+DROP SCHEMA IF EXISTS `testdata`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE SCHEMA `testdata`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+USE `testdata`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SET GLOBAL local_infile=ON;
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 SET @@global.sql_mode=(SELECT REPLACE(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', ''))
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS Doctor
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS Patient
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS InheritanceParent
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -29,11 +34,6 @@ CREATE TABLE InheritanceParent
 
 	 CONSTRAINT PK_InheritanceParent PRIMARY KEY CLUSTERED (InheritanceParentId)
 )
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS InheritanceChild
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -52,11 +52,6 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 
 -- Person Table
-
-DROP TABLE IF EXISTS Person
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 
 CREATE TABLE Person
 (
@@ -136,11 +131,6 @@ BeforeExecute
 
 -- Data Types test
 
-DROP TABLE IF EXISTS DataTypeTest
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 CREATE TABLE DataTypeTest
 (
 	DataTypeID      int              AUTO_INCREMENT NOT NULL,
@@ -171,21 +161,6 @@ CREATE TABLE DataTypeTest
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE IF EXISTS Parent
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS Child
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS GrandChild
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 CREATE TABLE Parent     (ParentID int, Value1 int)
 
 BeforeExecute
@@ -197,11 +172,6 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS LinqDataTypes
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -228,20 +198,10 @@ CREATE TABLE LinqDataTypes
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE IF EXISTS TestIdentity
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 CREATE TABLE TestIdentity (
 	ID int AUTO_INCREMENT NOT NULL,
 	CONSTRAINT PK_TestIdentity PRIMARY KEY CLUSTERED (ID)
 )
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS `AllTypes`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -394,11 +354,6 @@ SELECT
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE IF EXISTS `AllTypesNoYear`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 CREATE TABLE `AllTypesNoYear`
 (
 	ID                  int AUTO_INCREMENT       NOT NULL,
@@ -435,16 +390,6 @@ CREATE TABLE `AllTypesNoYear`
 
 	CONSTRAINT PK_AllTypes PRIMARY KEY CLUSTERED (ID)
 )
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS TestSameName
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS test_schema.TestSameName
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -486,16 +431,6 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 
 -- merge test tables
-DROP TABLE IF EXISTS TestMerge1
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS TestMerge2
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 CREATE TABLE TestMerge1
 (
 	Id       int          NOT NULL,
@@ -560,16 +495,6 @@ CREATE TABLE TestMerge2
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP PROCEDURE IF EXISTS TestProcedure
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP FUNCTION IF EXISTS TestFunction
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 CREATE PROCEDURE TestProcedure(IN param3 INT, INOUT param2 INT, OUT param1 INT)
 BEGIN
 	SELECT param2 + param2 INTO param2;
@@ -594,20 +519,10 @@ END
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP PROCEDURE IF EXISTS AddIssue792Record
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 CREATE PROCEDURE AddIssue792Record()
 BEGIN
 	INSERT INTO `AllTypes`(char20DataType) VALUES('issue792');
 END
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP PROCEDURE IF EXISTS `TestOutputParametersWithoutTableProcedure`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -619,11 +534,6 @@ CREATE PROCEDURE `TestOutputParametersWithoutTableProcedure`(
 BEGIN
 	SELECT 123 INTO aOutParam;
 END
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS FullTextIndexTest
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -651,20 +561,10 @@ INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('record not found',
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE IF EXISTS Issue1993
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 CREATE TABLE Issue1993 (
 	id			INTEGER UNSIGNED	NOT NULL   AUTO_INCREMENT,
 	description	VARCHAR(100)		NULL,
 PRIMARY KEY(id));
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP PROCEDURE IF EXISTS `Issue2313Parameters`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -724,7 +624,7 @@ CREATE PROCEDURE `Issue2313Parameters`(
 	IN `GeometryCollection` GEOMETRYCOLLECTION
 )
 BEGIN
-	SELECT 
+	SELECT
 	`VarChar255`,
 	`VarChar1`,
 	`Char255`,
@@ -783,11 +683,6 @@ END
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP PROCEDURE IF EXISTS `Issue2313Results`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 CREATE PROCEDURE `Issue2313Results`(
 	IN `VarChar255` VARCHAR(255),
 	IN `VarChar1` VARCHAR(1),
@@ -839,7 +734,7 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `Year` YEAR
 )
 BEGIN
-	SELECT 
+	SELECT
 	`VarChar255`,
 	`VarChar1`,
 	`Char255`,

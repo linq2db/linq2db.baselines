@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `HierarchyTree`
+CREATE TABLE IF NOT EXISTS `HierarchyTree`
 (
 	`Id`       INT NOT NULL,
 	`ParentId` INT     NULL
@@ -84,5 +84,5 @@ ORDER BY
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `HierarchyTree`
+DROP TABLE IF EXISTS `HierarchyTree`
 

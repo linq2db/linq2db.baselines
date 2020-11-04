@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySql.Official MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql (asynchronously)
 
-CREATE TABLE `TempTable`
+CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`ID` INT NOT NULL
 )
@@ -35,5 +35,5 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql (asynchronously)
 
-DROP TABLE `TempTable`
+DROP TABLE IF EXISTS `TempTable`
 

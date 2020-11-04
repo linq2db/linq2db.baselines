@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `WhereCases`
+CREATE TABLE IF NOT EXISTS `WhereCases`
 (
 	`Id`                INT     NOT NULL,
 	`BoolValue`         BOOLEAN NOT NULL,
@@ -435,5 +435,5 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `WhereCases`
+DROP TABLE IF EXISTS `WhereCases`
 
