@@ -1,16 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [UpdatedEntities]
-(
-	[id]         Int NOT NULL,
-	[Value1]     Int NOT NULL,
-	[Value2]     Int NOT NULL,
-	[Value3]     Int NOT NULL,
-	[RelationId] Int     NULL,
+IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
+	CREATE TABLE [UpdatedEntities]
+	(
+		[id]         Int NOT NULL,
+		[Value1]     Int NOT NULL,
+		[Value2]     Int NOT NULL,
+		[Value3]     Int NOT NULL,
+		[RelationId] Int     NULL,
 
-	CONSTRAINT [PK_UpdatedEntities] PRIMARY KEY CLUSTERED ([id])
-)
+		CONSTRAINT [PK_UpdatedEntities] PRIMARY KEY CLUSTERED ([id])
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -31,15 +32,16 @@ SELECT 3,31,32,33,3
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [NewEntities]
-(
-	[id]     Int NOT NULL,
-	[Value1] Int NOT NULL,
-	[Value2] Int NOT NULL,
-	[Value3] Int NOT NULL,
+IF (OBJECT_ID(N'[NewEntities]', N'U') IS NULL)
+	CREATE TABLE [NewEntities]
+	(
+		[id]     Int NOT NULL,
+		[Value1] Int NOT NULL,
+		[Value2] Int NOT NULL,
+		[Value3] Int NOT NULL,
 
-	CONSTRAINT [PK_NewEntities] PRIMARY KEY CLUSTERED ([id])
-)
+		CONSTRAINT [PK_NewEntities] PRIMARY KEY CLUSTERED ([id])
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -118,10 +120,12 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [NewEntities]
+IF (OBJECT_ID(N'[NewEntities]', N'U') IS NOT NULL)
+	DROP TABLE [NewEntities]
 
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [UpdatedEntities]
+IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
+	DROP TABLE [UpdatedEntities]
 

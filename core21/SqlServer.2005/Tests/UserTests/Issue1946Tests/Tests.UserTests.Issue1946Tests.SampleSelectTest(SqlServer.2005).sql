@@ -1,13 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Users]
-(
-	[Id]      Int NOT NULL,
-	[Version] Int     NULL,
+IF (OBJECT_ID(N'[Users]', N'U') IS NULL)
+	CREATE TABLE [Users]
+	(
+		[Id]      Int NOT NULL,
+		[Version] Int     NULL,
 
-	CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -34,5 +35,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Users]
+IF (OBJECT_ID(N'[Users]', N'U') IS NOT NULL)
+	DROP TABLE [Users]
 

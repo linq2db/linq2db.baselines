@@ -1,24 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[TestIdTrun]', N'U') IS NOT NULL)
-	DROP TABLE [TestIdTrun]
+IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
+	CREATE TABLE [test_temp]
+	(
+		[ID]     Int      NOT NULL IDENTITY,
+		[Field1] Decimal  NOT NULL,
+
+		CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
+	)
 
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [TestIdTrun]
-(
-	[ID]     Int      NOT NULL IDENTITY,
-	[Field1] Decimal  NOT NULL,
-
-	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY CLUSTERED ([ID])
-)
-
-BeforeExecute
--- SqlServer.2005
-
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -30,7 +25,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -56,7 +51,7 @@ FROM
 			[t1].[Field1],
 			ROW_NUMBER() OVER (ORDER BY [t1].[ID]) as [RN]
 		FROM
-			[TestIdTrun] [t1]
+			[test_temp] [t1]
 	) [t2]
 WHERE
 	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
@@ -64,12 +59,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
-DELETE FROM [TestIdTrun]
+DELETE FROM [test_temp]
 
 BeforeExecute
 -- SqlServer.2005
 
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -81,7 +76,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-INSERT INTO [TestIdTrun]
+INSERT INTO [test_temp]
 (
 	[Field1]
 )
@@ -107,7 +102,7 @@ FROM
 			[t1].[Field1],
 			ROW_NUMBER() OVER (ORDER BY [t1].[ID]) as [RN]
 		FROM
-			[TestIdTrun] [t1]
+			[test_temp] [t1]
 	) [t2]
 WHERE
 	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
@@ -115,5 +110,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [TestIdTrun]
+IF (OBJECT_ID(N'[test_temp]', N'U') IS NOT NULL)
+	DROP TABLE [test_temp]
 
