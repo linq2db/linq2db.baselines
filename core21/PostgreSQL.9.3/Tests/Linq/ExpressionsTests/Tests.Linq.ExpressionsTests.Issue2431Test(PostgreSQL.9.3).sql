@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE "Issue2431Table"
+CREATE TABLE IF NOT EXISTS "Issue2431Table"
 (
 	"Id"   Int     NOT NULL,
 	"Json" VarChar     NULL
@@ -34,5 +34,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Issue2431Table"
+DROP TABLE IF EXISTS "Issue2431Table"
 
