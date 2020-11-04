@@ -1,16 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-CREATE TABLE [UpdatedEntities]
-(
-	[id]         Int NOT NULL,
-	[Value1]     Int NOT NULL,
-	[Value2]     Int NOT NULL,
-	[Value3]     Int NOT NULL,
-	[RelationId] Int     NULL,
+IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
+	CREATE TABLE [UpdatedEntities]
+	(
+		[id]         Int NOT NULL,
+		[Value1]     Int NOT NULL,
+		[Value2]     Int NOT NULL,
+		[Value3]     Int NOT NULL,
+		[RelationId] Int     NULL,
 
-	CONSTRAINT [PK_UpdatedEntities] PRIMARY KEY CLUSTERED ([id])
-)
+		CONSTRAINT [PK_UpdatedEntities] PRIMARY KEY CLUSTERED ([id])
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -135,15 +136,16 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-CREATE TABLE [UpdateRelation]
-(
-	[id]            Int NOT NULL,
-	[RelatedValue1] Int NOT NULL,
-	[RelatedValue2] Int NOT NULL,
-	[RelatedValue3] Int NOT NULL,
+IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NULL)
+	CREATE TABLE [UpdateRelation]
+	(
+		[id]            Int NOT NULL,
+		[RelatedValue1] Int NOT NULL,
+		[RelatedValue2] Int NOT NULL,
+		[RelatedValue3] Int NOT NULL,
 
-	CONSTRAINT [PK_UpdateRelation] PRIMARY KEY CLUSTERED ([id])
-)
+		CONSTRAINT [PK_UpdateRelation] PRIMARY KEY CLUSTERED ([id])
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -282,10 +284,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [UpdateRelation]
+IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NOT NULL)
+	DROP TABLE [UpdateRelation]
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [UpdatedEntities]
+IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
+	DROP TABLE [UpdatedEntities]
 

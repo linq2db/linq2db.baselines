@@ -1,13 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-CREATE TABLE [User]
-(
-	[Id]   UniqueIdentifier NOT NULL,
-	[Name] NVarChar(4000)       NULL,
+IF (OBJECT_ID(N'[User]', N'U') IS NULL)
+	CREATE TABLE [User]
+	(
+		[Id]   UniqueIdentifier NOT NULL,
+		[Name] NVarChar(4000)       NULL,
 
-	CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -46,5 +47,6 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [User]
+IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
+	DROP TABLE [User]
 

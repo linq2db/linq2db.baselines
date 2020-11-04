@@ -1,14 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-CREATE TABLE [DynamicTable]
-(
-	[ID]             Int  NOT NULL IDENTITY,
-	[Not Identifier] Int  NOT NULL,
-	[Some Value]     Int  NOT NULL,
+IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NULL)
+	CREATE TABLE [DynamicTable]
+	(
+		[ID]             Int  NOT NULL IDENTITY,
+		[Not Identifier] Int  NOT NULL,
+		[Some Value]     Int  NOT NULL,
 
-	CONSTRAINT [PK_DynamicTable] PRIMARY KEY CLUSTERED ([ID])
-)
+		CONSTRAINT [PK_DynamicTable] PRIMARY KEY CLUSTERED ([ID])
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -61,5 +62,6 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [DynamicTable]
+IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
+	DROP TABLE [DynamicTable]
 

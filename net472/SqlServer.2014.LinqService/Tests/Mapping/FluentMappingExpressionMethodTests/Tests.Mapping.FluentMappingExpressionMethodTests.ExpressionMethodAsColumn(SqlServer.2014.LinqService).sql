@@ -1,11 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-CREATE TABLE [InstanceClass]
-(
-	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
-)
+IF (OBJECT_ID(N'[InstanceClass]', N'U') IS NULL)
+	CREATE TABLE [InstanceClass]
+	(
+		[Id]    Int NOT NULL,
+		[Value] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -379,5 +380,6 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [InstanceClass]
+IF (OBJECT_ID(N'[InstanceClass]', N'U') IS NOT NULL)
+	DROP TABLE [InstanceClass]
 
