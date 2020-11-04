@@ -1,14 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [WhereCases]
-(
-	[Id]                Int NOT NULL,
-	[BoolValue]         Bit NOT NULL,
-	[NullableBoolValue] Bit     NULL,
+IF (OBJECT_ID(N'[WhereCases]', N'U') IS NULL)
+	CREATE TABLE [WhereCases]
+	(
+		[Id]                Int NOT NULL,
+		[BoolValue]         Bit NOT NULL,
+		[NullableBoolValue] Bit     NULL,
 
-	CONSTRAINT [PK_WhereCases] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_WhereCases] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -634,5 +635,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [WhereCases]
+IF (OBJECT_ID(N'[WhereCases]', N'U') IS NOT NULL)
+	DROP TABLE [WhereCases]
 
