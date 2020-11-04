@@ -15,7 +15,7 @@ FROM
 	) t1
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -27,7 +27,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],

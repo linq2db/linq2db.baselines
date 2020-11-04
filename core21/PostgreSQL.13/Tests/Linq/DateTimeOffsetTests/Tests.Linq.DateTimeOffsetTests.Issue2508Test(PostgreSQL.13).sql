@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Transactions"
+CREATE TABLE IF NOT EXISTS "Transactions"
 (
 	"TransactionId"   Int         NOT NULL,
 	"TransactionDate" TimeStampTZ NOT NULL,
@@ -87,5 +87,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Transactions"
+DROP TABLE IF EXISTS "Transactions"
 

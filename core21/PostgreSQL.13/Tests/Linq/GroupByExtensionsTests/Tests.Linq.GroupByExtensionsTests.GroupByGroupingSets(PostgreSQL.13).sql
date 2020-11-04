@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "GroupSampleClass"
+CREATE TABLE IF NOT EXISTS "GroupSampleClass"
 (
 	"Id1"   Int NOT NULL,
 	"Id2"   Int NOT NULL,
@@ -54,5 +54,5 @@ GROUP BY GROUPING SETS (
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "GroupSampleClass"
+DROP TABLE IF EXISTS "GroupSampleClass"
 
