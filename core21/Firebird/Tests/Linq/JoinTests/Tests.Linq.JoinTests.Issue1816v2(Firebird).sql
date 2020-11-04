@@ -1,35 +1,50 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "stVersions"
-(
-	"inId"     Int NOT NULL,
-	"inIdMain" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stVersions')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "stVersions"
+			(
+				"inId"     Int NOT NULL,
+				"inIdMain" Int NOT NULL,
 
-	CONSTRAINT "PK_stVersions" PRIMARY KEY ("inId")
-)
-
-BeforeExecute
--- Firebird
-
-CREATE TABLE "rlStatesTypesAndUserGroups"
-(
-	"inIdState" Int NOT NULL,
-	"inIdType"  Int NOT NULL,
-
-	CONSTRAINT "PK_rlStatesTypesAndUserGroups" PRIMARY KEY ("inIdState", "inIdType")
-)
+				CONSTRAINT "PK_stVersions" PRIMARY KEY ("inId")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "stMain"
-(
-	"inId"     Int NOT NULL,
-	"inIdType" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'rlStatesTypesAndUserGroups')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "rlStatesTypesAndUserGroups"
+			(
+				"inIdState" Int NOT NULL,
+				"inIdType"  Int NOT NULL,
 
-	CONSTRAINT "PK_stMain" PRIMARY KEY ("inId")
-)
+				CONSTRAINT "PK_rlStatesTypesAndUserGroups" PRIMARY KEY ("inIdState", "inIdType")
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stMain')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "stMain"
+			(
+				"inId"     Int NOT NULL,
+				"inIdType" Int NOT NULL,
+
+				CONSTRAINT "PK_stMain" PRIMARY KEY ("inId")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -46,15 +61,24 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "stMain"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stMain')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "stMain"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "rlStatesTypesAndUserGroups"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'rlStatesTypesAndUserGroups')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "rlStatesTypesAndUserGroups"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "stVersions"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stVersions')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "stVersions"';
+END
 

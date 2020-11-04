@@ -2,19 +2,19 @@
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient21')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "xxPatient21"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient11')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "xxPatient11"';
 END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "xxPatient21"
+CREATE TABLE "xxPatient11"
 (
 	"PersonID"  Int                                    NOT NULL,
 	"Diagnosis" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_xxPatient21" PRIMARY KEY ("PersonID")
+	CONSTRAINT "PK_xxPatient11" PRIMARY KEY ("PersonID")
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO "xxPatient21" "t1"
+MERGE INTO "xxPatient11" "t1"
 USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
@@ -52,7 +52,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO "xxPatient21" "t1"
+MERGE INTO "xxPatient11" "t1"
 USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
@@ -79,7 +79,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient21" "t1"
+	"xxPatient11" "t1"
 
 BeforeExecute
 -- Firebird
@@ -88,7 +88,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO "xxPatient21" "t1"
+MERGE INTO "xxPatient11" "t1"
 USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
@@ -116,7 +116,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO "xxPatient21" "t1"
+MERGE INTO "xxPatient11" "t1"
 USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
@@ -143,13 +143,13 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient21" "t1"
+	"xxPatient11" "t1"
 
 BeforeExecute
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient21')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "xxPatient21"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient11')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "xxPatient11"';
 END
 

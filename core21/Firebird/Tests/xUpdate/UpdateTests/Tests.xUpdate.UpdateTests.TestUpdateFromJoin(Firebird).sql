@@ -1,29 +1,39 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "gt_s_one"
-(
-	"id"   Int                                    NOT NULL,
-	"col1" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"col2" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"col3" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"col4" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"col5" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"col6" VarChar(255) CHARACTER SET UNICODE_FSS,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'gt_s_one')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "gt_s_one"
+			(
+				"id"   Int                                    NOT NULL,
+				"col1" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"col2" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"col3" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"col4" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"col5" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"col6" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_gt_s_one" PRIMARY KEY ("id")
-)
+				CONSTRAINT "PK_gt_s_one" PRIMARY KEY ("id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "access_mode"
-(
-	"id"   Int                                    NOT NULL,
-	"code" VarChar(255) CHARACTER SET UNICODE_FSS,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'access_mode')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "access_mode"
+			(
+				"id"   Int                                    NOT NULL,
+				"code" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_access_mode" PRIMARY KEY ("id")
-)
+				CONSTRAINT "PK_access_mode" PRIMARY KEY ("id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -107,10 +117,16 @@ WHERE
 BeforeExecute
 -- Firebird
 
-DROP TABLE "access_mode"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'access_mode')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "access_mode"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "gt_s_one"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'gt_s_one')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "gt_s_one"';
+END
 

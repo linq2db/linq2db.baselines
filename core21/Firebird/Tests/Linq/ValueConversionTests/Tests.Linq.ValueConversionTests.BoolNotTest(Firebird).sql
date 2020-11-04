@@ -1,19 +1,24 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "ValueConversion"
-(
-	"Id"                      Int                                    NOT NULL,
-	"Value1"                  VarChar(200) CHARACTER SET UNICODE_FSS,
-	"Value2"                  VarChar(200) CHARACTER SET UNICODE_FSS,
-	"Enum"                    VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"EnumNullable"            VarChar(50),
-	"EnumWithNull"            VarChar(50),
-	"EnumWithNullDeclarative" VarChar(50),
-	"BoolValue"               VarChar(1)                             NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "ValueConversion"
+			(
+				"Id"                      Int                                    NOT NULL,
+				"Value1"                  VarChar(200) CHARACTER SET UNICODE_FSS,
+				"Value2"                  VarChar(200) CHARACTER SET UNICODE_FSS,
+				"Enum"                    VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
+				"EnumNullable"            VarChar(50),
+				"EnumWithNull"            VarChar(50),
+				"EnumWithNullDeclarative" VarChar(50),
+				"BoolValue"               VarChar(1)                             NOT NULL,
 
-	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
-)
+				CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -58,5 +63,8 @@ WHERE
 BeforeExecute
 -- Firebird
 
-DROP TABLE "ValueConversion"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ValueConversion"';
+END
 

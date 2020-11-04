@@ -1,27 +1,27 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "billing_devtypes"
-(
-	"devtypeid"  Int                                    NOT NULL,
-	"typename"   VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"GlobalType" Int                                    NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "billing_devtypes"
+		(
+			"devtypeid"  Int                                    NOT NULL,
+			"typename"   VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
+			"GlobalType" Int                                    NOT NULL,
 
-	CONSTRAINT "PK_billing_devtypes" PRIMARY KEY ("devtypeid")
-)
-
-BeforeExecute
--- Firebird
-
-CREATE GENERATOR "GIDENTITY_billing_devtypes"
-
-BeforeExecute
--- Firebird
-
-CREATE TRIGGER "TIDENTITY_billing_devtypes" FOR "billing_devtypes"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW."devtypeid" = GEN_ID("GIDENTITY_billing_devtypes", 1);
+			CONSTRAINT "PK_billing_devtypes" PRIMARY KEY ("devtypeid")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_billing_devtypes"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_billing_devtypes" FOR "billing_devtypes"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."devtypeid" = GEN_ID("GIDENTITY_billing_devtypes", 1);
+		END
+	';
 END
 
 BeforeExecute
@@ -39,61 +39,61 @@ CREATE TABLE "billing_devices"
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "billing_DevReadType"
-(
-	"Id"             Int                                    NOT NULL,
-	"DevTypeId"      Int                                    NOT NULL,
-	"Name"           VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"Responsibility" Int                                    NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "billing_DevReadType"
+		(
+			"Id"             Int                                    NOT NULL,
+			"DevTypeId"      Int                                    NOT NULL,
+			"Name"           VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
+			"Responsibility" Int                                    NOT NULL,
 
-	CONSTRAINT "PK_billing_DevReadType" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- Firebird
-
-CREATE GENERATOR "GIDENTITY_billing_DevReadType"
-
-BeforeExecute
--- Firebird
-
-CREATE TRIGGER "TIDENTITY_billing_DevReadType" FOR "billing_DevReadType"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW."Id" = GEN_ID("GIDENTITY_billing_DevReadType", 1);
+			CONSTRAINT "PK_billing_DevReadType" PRIMARY KEY ("Id")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_billing_DevReadType"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_billing_DevReadType" FOR "billing_DevReadType"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."Id" = GEN_ID("GIDENTITY_billing_DevReadType", 1);
+		END
+	';
 END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "billing_TempReading"
-(
-	"id"               Int                                    NOT NULL,
-	"DevSerNum"        VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"devid"            VarChar(50) CHARACTER SET UNICODE_FSS,
-	"tsdevice"         TimeStamp                              NOT NULL,
-	"value"            Decimal                                NOT NULL,
-	"Devtypeid"        Int,
-	"DevReadingTypeId" Int,
-	"ReadingTypeName"  VarChar(50) CHARACTER SET UNICODE_FSS,
-	"DevGlobalType"    Int                                    NOT NULL,
-	"Responsibility"   Int                                    NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "billing_TempReading"
+		(
+			"id"               Int                                    NOT NULL,
+			"DevSerNum"        VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
+			"devid"            VarChar(50) CHARACTER SET UNICODE_FSS,
+			"tsdevice"         TimeStamp                              NOT NULL,
+			"value"            Decimal                                NOT NULL,
+			"Devtypeid"        Int,
+			"DevReadingTypeId" Int,
+			"ReadingTypeName"  VarChar(50) CHARACTER SET UNICODE_FSS,
+			"DevGlobalType"    Int                                    NOT NULL,
+			"Responsibility"   Int                                    NOT NULL,
 
-	CONSTRAINT "PK_billing_TempReading" PRIMARY KEY ("id")
-)
-
-BeforeExecute
--- Firebird
-
-CREATE GENERATOR "GIDENTITY_billing_TempReading"
-
-BeforeExecute
--- Firebird
-
-CREATE TRIGGER "TIDENTITY_billing_TempReading" FOR "billing_TempReading"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW."id" = GEN_ID("GIDENTITY_billing_TempReading", 1);
+			CONSTRAINT "PK_billing_TempReading" PRIMARY KEY ("id")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_billing_TempReading"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_billing_TempReading" FOR "billing_TempReading"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."id" = GEN_ID("GIDENTITY_billing_TempReading", 1);
+		END
+	';
 END
 
 BeforeExecute

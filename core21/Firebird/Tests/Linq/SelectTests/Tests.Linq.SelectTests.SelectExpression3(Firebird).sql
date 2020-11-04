@@ -1,12 +1,17 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "SelectExpressionTable"
-(
-	ID Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SelectExpressionTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "SelectExpressionTable"
+			(
+				ID Int NOT NULL,
 
-	CONSTRAINT "PK_SelectExpressionTable" PRIMARY KEY (ID)
-)
+				CONSTRAINT "PK_SelectExpressionTable" PRIMARY KEY (ID)
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -30,5 +35,8 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "SelectExpressionTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SelectExpressionTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "SelectExpressionTable"';
+END
 

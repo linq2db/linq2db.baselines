@@ -1,29 +1,29 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "xxPerson_f_1a"
-(
-	"FirstName"  VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"PersonID"   Int                                     NOT NULL,
-	"LastName"   VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"MiddleName" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Gender"     Char(1)                                 NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "xxPerson_f_1a"
+		(
+			"FirstName"  VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+			"PersonID"   Int                                     NOT NULL,
+			"LastName"   VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+			"MiddleName" VarChar(255) CHARACTER SET UNICODE_FSS,
+			"Gender"     Char(1)                                 NOT NULL,
 
-	CONSTRAINT "PK_xxPerson_f_1a" PRIMARY KEY ("PersonID")
-)
-
-BeforeExecute
--- Firebird
-
-CREATE GENERATOR "GIDENTITY_xxPerson_f_1a"
-
-BeforeExecute
--- Firebird
-
-CREATE TRIGGER "TIDENTITY_xxPerson_f_1a" FOR "xxPerson_f_1a"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW."PersonID" = GEN_ID("GIDENTITY_xxPerson_f_1a", 1);
+			CONSTRAINT "PK_xxPerson_f_1a" PRIMARY KEY ("PersonID")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_xxPerson_f_1a"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_xxPerson_f_1a" FOR "xxPerson_f_1a"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."PersonID" = GEN_ID("GIDENTITY_xxPerson_f_1a", 1);
+		END
+	';
 END
 
 BeforeExecute
