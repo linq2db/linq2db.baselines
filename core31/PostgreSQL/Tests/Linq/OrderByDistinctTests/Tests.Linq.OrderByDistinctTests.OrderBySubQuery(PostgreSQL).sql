@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "OrderByDistinctData"
+CREATE TABLE IF NOT EXISTS "OrderByDistinctData"
 (
 	"Id"            Int  NOT NULL,
 	"DuplicateData" text     NULL,
@@ -71,5 +71,5 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "OrderByDistinctData"
+DROP TABLE IF EXISTS "OrderByDistinctData"
 
