@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -9,15 +9,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-
-BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -26,7 +18,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 DELETE FROM
 	[Child]
@@ -34,7 +26,7 @@ WHERE
 	[Child].[ParentID] >= 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -43,7 +35,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -53,7 +45,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],
