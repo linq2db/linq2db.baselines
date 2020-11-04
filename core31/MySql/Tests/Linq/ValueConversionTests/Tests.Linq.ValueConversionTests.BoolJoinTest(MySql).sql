@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `ValueConversion`
+CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
 	`Id`                      INT          NOT NULL,
 	`Value1`                  VARCHAR(200)     NULL,
@@ -62,5 +62,5 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `ValueConversion`
+DROP TABLE IF EXISTS `ValueConversion`
 

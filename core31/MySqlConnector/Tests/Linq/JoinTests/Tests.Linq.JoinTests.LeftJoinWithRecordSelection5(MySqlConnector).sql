@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `Fact`
+CREATE TABLE IF NOT EXISTS `Fact`
 (
 	`Id` INT NOT NULL,
 
@@ -23,7 +23,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `Tag`
+CREATE TABLE IF NOT EXISTS `Tag`
 (
 	`Id`     INT          NOT NULL,
 	`FactId` INT          NOT NULL,
@@ -63,10 +63,10 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Tag`
+DROP TABLE IF EXISTS `Tag`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Fact`
+DROP TABLE IF EXISTS `Fact`
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `sample_class`
+CREATE TABLE IF NOT EXISTS `sample_class`
 (
 	`id`    INT         NOT NULL,
 	`value` VARCHAR(50)     NULL
@@ -74,5 +74,5 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `sample_class`
+DROP TABLE IF EXISTS `sample_class`
 

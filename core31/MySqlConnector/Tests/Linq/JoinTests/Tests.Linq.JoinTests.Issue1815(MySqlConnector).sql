@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `StLink`
+CREATE TABLE IF NOT EXISTS `StLink`
 (
 	`InId`          INT    NOT NULL,
 	`InMaxQuantity` DOUBLE     NULL,
@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `EdtLink`
+CREATE TABLE IF NOT EXISTS `EdtLink`
 (
 	`InId`          INT    NOT NULL,
 	`InMaxQuantity` DOUBLE     NULL,
@@ -88,10 +88,10 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `EdtLink`
+DROP TABLE IF EXISTS `EdtLink`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `StLink`
+DROP TABLE IF EXISTS `StLink`
 

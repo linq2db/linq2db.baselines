@@ -8,7 +8,7 @@ WHERE
 	`t1`.`ID` > 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],

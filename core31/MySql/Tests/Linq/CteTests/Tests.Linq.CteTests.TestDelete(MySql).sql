@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `CteChild`
+CREATE TABLE IF NOT EXISTS `CteChild`
 (
 	`ChildID`  INT NOT NULL,
 	`ParentID` INT NOT NULL
@@ -48,5 +48,5 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `CteChild`
+DROP TABLE IF EXISTS `CteChild`
 
