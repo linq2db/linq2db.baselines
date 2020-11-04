@@ -1,13 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [BaseTable]
-(
-	[Value] Int NOT NULL,
-	[Id]    Int NOT NULL,
+IF (OBJECT_ID(N'[BaseTable]', N'U') IS NULL)
+	CREATE TABLE [BaseTable]
+	(
+		[Value] Int NOT NULL,
+		[Id]    Int NOT NULL,
 
-	CONSTRAINT [PK_BaseTable] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_BaseTable] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -49,5 +50,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [BaseTable]
+IF (OBJECT_ID(N'[BaseTable]', N'U') IS NOT NULL)
+	DROP TABLE [BaseTable]
 

@@ -7,10 +7,11 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [TempTable]
-(
-	[ID] Int NOT NULL
-)
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
+	CREATE TABLE [TempTable]
+	(
+		[ID] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -28,6 +29,14 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
+	[t1].[ID]
+FROM
+	[TempTable] [t1]
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+SELECT
 	[t].[ID]
 FROM
 	[Parent] [p]
@@ -36,5 +45,6 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [TempTable]
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [TempTable]
 
