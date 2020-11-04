@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SelectExpressionTable]
+CREATE TABLE IF NOT EXISTS [SelectExpressionTable]
 (
 	[ID] INTEGER NOT NULL,
 
@@ -32,5 +32,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SelectExpressionTable]
+DROP TABLE IF EXISTS [SelectExpressionTable]
 

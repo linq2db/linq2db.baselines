@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [DataClass]
+CREATE TABLE IF NOT EXISTS [DataClass]
 (
 	[Id]    INTEGER  NOT NULL,
 	[Value] NVarChar     NULL,
@@ -52,5 +52,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [DataClass]
+DROP TABLE IF EXISTS [DataClass]
 

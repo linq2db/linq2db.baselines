@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Invoice]
+CREATE TABLE IF NOT EXISTS [Invoice]
 (
 	[InvoiceID]                BigInt  NOT NULL,
 	[InvoiceReferenceNumberID] BigInt      NULL,
@@ -112,5 +112,5 @@ DROP TABLE [InvoiceLineItem]
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Invoice]
+DROP TABLE IF EXISTS [Invoice]
 
