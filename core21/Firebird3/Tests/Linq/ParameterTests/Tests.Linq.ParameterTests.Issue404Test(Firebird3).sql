@@ -1,10 +1,15 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Table404One"
-(
-	"Id" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404One')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Table404One"
+			(
+				"Id" Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -19,12 +24,17 @@ SELECT 2 FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Table404Two"
-(
-	"Id"           Int NOT NULL,
-	"Usage"        Int NOT NULL,
-	"FirstTableId" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404Two')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Table404Two"
+			(
+				"Id"           Int NOT NULL,
+				"Usage"        Int NOT NULL,
+				"FirstTableId" Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -151,20 +161,31 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Table404Two"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404Two')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Table404Two"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Table404One"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404One')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Table404One"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Table404One"
-(
-	"Id" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404One')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Table404One"
+			(
+				"Id" Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -179,12 +200,17 @@ SELECT 2 FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Table404Two"
-(
-	"Id"           Int NOT NULL,
-	"Usage"        Int NOT NULL,
-	"FirstTableId" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404Two')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Table404Two"
+			(
+				"Id"           Int NOT NULL,
+				"Usage"        Int NOT NULL,
+				"FirstTableId" Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -311,10 +337,16 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Table404Two"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404Two')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Table404Two"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Table404One"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404One')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Table404One"';
+END
 
