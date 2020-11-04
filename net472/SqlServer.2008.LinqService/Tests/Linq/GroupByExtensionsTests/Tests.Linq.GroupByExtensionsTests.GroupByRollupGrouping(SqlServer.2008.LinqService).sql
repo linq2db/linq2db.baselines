@@ -1,12 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [GroupSampleClass]
-(
-	[Id1]   Int NOT NULL,
-	[Id2]   Int NOT NULL,
-	[Value] Int NOT NULL
-)
+IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NULL)
+	CREATE TABLE [GroupSampleClass]
+	(
+		[Id1]   Int NOT NULL,
+		[Id2]   Int NOT NULL,
+		[Value] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -252,5 +253,6 @@ GROUP BY ROLLUP (
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [GroupSampleClass]
+IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NOT NULL)
+	DROP TABLE [GroupSampleClass]
 

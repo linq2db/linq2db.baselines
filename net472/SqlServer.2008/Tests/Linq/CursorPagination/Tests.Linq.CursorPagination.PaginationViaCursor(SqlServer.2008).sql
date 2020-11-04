@@ -1,12 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Booking]
-(
-	[BookingID]   Int      NOT NULL,
-	[ServiceDate] DateTime NOT NULL,
-	[Value]       Int      NOT NULL
-)
+IF (OBJECT_ID(N'[Booking]', N'U') IS NULL)
+	CREATE TABLE [Booking]
+	(
+		[BookingID]   Int      NOT NULL,
+		[ServiceDate] DateTime NOT NULL,
+		[Value]       Int      NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -306,5 +307,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Booking]
+IF (OBJECT_ID(N'[Booking]', N'U') IS NOT NULL)
+	DROP TABLE [Booking]
 

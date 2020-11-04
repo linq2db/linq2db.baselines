@@ -1,15 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [EventScheduleItem]
-(
-	[ParentEventScheduleItemId] Int     NULL,
-	[IsActive]                  Bit NOT NULL,
-	[EventId]                   Int NOT NULL,
-	[Id]                        Int NOT NULL,
+IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NULL)
+	CREATE TABLE [EventScheduleItem]
+	(
+		[ParentEventScheduleItemId] Int     NULL,
+		[IsActive]                  Bit NOT NULL,
+		[EventId]                   Int NOT NULL,
+		[Id]                        Int NOT NULL,
 
-	CONSTRAINT [PK_EventScheduleItem] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_EventScheduleItem] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -28,12 +29,13 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [EventScheduleItemPerson]
-(
-	[Id]                    Int NOT NULL,
-	[EventSchedulePersonId] Int NOT NULL,
-	[EventScheduleItemId]   Int NOT NULL
-)
+IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NULL)
+	CREATE TABLE [EventScheduleItemPerson]
+	(
+		[Id]                    Int NOT NULL,
+		[EventSchedulePersonId] Int NOT NULL,
+		[EventScheduleItemId]   Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -51,11 +53,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [EventSchedulePerson]
-(
-	[Id]             Int NOT NULL,
-	[TicketNumberId] Int     NULL
-)
+IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NULL)
+	CREATE TABLE [EventSchedulePerson]
+	(
+		[Id]             Int NOT NULL,
+		[TicketNumberId] Int     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -101,15 +104,18 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [EventSchedulePerson]
+IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NOT NULL)
+	DROP TABLE [EventSchedulePerson]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [EventScheduleItemPerson]
+IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NOT NULL)
+	DROP TABLE [EventScheduleItemPerson]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [EventScheduleItem]
+IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NOT NULL)
+	DROP TABLE [EventScheduleItem]
 
