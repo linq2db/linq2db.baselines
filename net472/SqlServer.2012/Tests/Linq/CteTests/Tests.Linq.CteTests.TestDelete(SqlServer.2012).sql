@@ -1,11 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [CteChild]
-(
-	[ChildID]  Int NOT NULL,
-	[ParentID] Int NOT NULL
-)
+IF (OBJECT_ID(N'[CteChild]', N'U') IS NULL)
+	CREATE TABLE [CteChild]
+	(
+		[ChildID]  Int NOT NULL,
+		[ParentID] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012
@@ -48,5 +49,6 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [CteChild]
+IF (OBJECT_ID(N'[CteChild]', N'U') IS NOT NULL)
+	DROP TABLE [CteChild]
 
