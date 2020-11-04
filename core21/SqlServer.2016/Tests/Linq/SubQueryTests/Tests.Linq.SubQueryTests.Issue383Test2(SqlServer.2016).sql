@@ -1,15 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Contract_Distributor_Agent]
-(
-	[Agent_Id]                      Int            NOT NULL,
-	[Distributor_Id]                Int            NOT NULL,
-	[Contract_Id]                   Int            NOT NULL,
-	[Distributor_Type_Code]         NVarChar(4000)     NULL,
-	[Distributor_Agent_Type_Prefix] NVarChar(4000)     NULL,
-	[Represents_Type_Prefix]        NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Contract_Distributor_Agent]', N'U') IS NULL)
+	CREATE TABLE [Contract_Distributor_Agent]
+	(
+		[Agent_Id]                      Int            NOT NULL,
+		[Distributor_Id]                Int            NOT NULL,
+		[Contract_Id]                   Int            NOT NULL,
+		[Distributor_Type_Code]         NVarChar(4000)     NULL,
+		[Distributor_Agent_Type_Prefix] NVarChar(4000)     NULL,
+		[Represents_Type_Prefix]        NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -29,12 +30,13 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Agent]
-(
-	[Agent_Id]   Int            NOT NULL,
-	[First_Name] NVarChar(4000)     NULL,
-	[Last_Name]  NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Agent]', N'U') IS NULL)
+	CREATE TABLE [Agent]
+	(
+		[Agent_Id]   Int            NOT NULL,
+		[First_Name] NVarChar(4000)     NULL,
+		[Last_Name]  NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -51,12 +53,13 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Distributor]
-(
-	[Distributor_Id]   Int            NOT NULL,
-	[Type_Code]        NVarChar(4000)     NULL,
-	[Distributor_Name] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Distributor]', N'U') IS NULL)
+	CREATE TABLE [Distributor]
+	(
+		[Distributor_Id]   Int            NOT NULL,
+		[Type_Code]        NVarChar(4000)     NULL,
+		[Distributor_Name] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -73,12 +76,13 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Distributor_Commercial_Propert]
-(
-	[Distributor_Id]         Int            NOT NULL,
-	[Commercial_Property_Id] Int            NOT NULL,
-	[Distributor_Type_Code]  NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Distributor_Commercial_Propert]', N'U') IS NULL)
+	CREATE TABLE [Distributor_Commercial_Propert]
+	(
+		[Distributor_Id]         Int            NOT NULL,
+		[Commercial_Property_Id] Int            NOT NULL,
+		[Distributor_Type_Code]  NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -95,16 +99,17 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Commercial_Property]
-(
-	[Commercial_Property_Id] Int            NOT NULL,
-	[Street_Number]          NVarChar(4000)     NULL,
-	[Street_Name]            NVarChar(4000)     NULL,
-	[State]                  NVarChar(4000)     NULL,
-	[Zip_Code]               NVarChar(4000)     NULL,
-	[Zip_Plus_4]             NVarChar(4000)     NULL,
-	[City_Code]              NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Commercial_Property]', N'U') IS NULL)
+	CREATE TABLE [Commercial_Property]
+	(
+		[Commercial_Property_Id] Int            NOT NULL,
+		[Street_Number]          NVarChar(4000)     NULL,
+		[Street_Name]            NVarChar(4000)     NULL,
+		[State]                  NVarChar(4000)     NULL,
+		[Zip_Code]               NVarChar(4000)     NULL,
+		[Zip_Plus_4]             NVarChar(4000)     NULL,
+		[City_Code]              NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -125,12 +130,13 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Contract_Dates]
-(
-	[Contract_Id]    Int            NOT NULL,
-	[Type_Code]      NVarChar(4000)     NULL,
-	[Effective_Date] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Contract_Dates]', N'U') IS NULL)
+	CREATE TABLE [Contract_Dates]
+	(
+		[Contract_Id]    Int            NOT NULL,
+		[Type_Code]      NVarChar(4000)     NULL,
+		[Effective_Date] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -147,11 +153,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Cities]
-(
-	[City_Code] NVarChar(4000)     NULL,
-	[City_Name] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Cities]', N'U') IS NULL)
+	CREATE TABLE [Cities]
+	(
+		[City_Code] NVarChar(4000)     NULL,
+		[City_Name] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -206,35 +213,42 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Cities]
+IF (OBJECT_ID(N'[Cities]', N'U') IS NOT NULL)
+	DROP TABLE [Cities]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Contract_Dates]
+IF (OBJECT_ID(N'[Contract_Dates]', N'U') IS NOT NULL)
+	DROP TABLE [Contract_Dates]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Commercial_Property]
+IF (OBJECT_ID(N'[Commercial_Property]', N'U') IS NOT NULL)
+	DROP TABLE [Commercial_Property]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Distributor_Commercial_Propert]
+IF (OBJECT_ID(N'[Distributor_Commercial_Propert]', N'U') IS NOT NULL)
+	DROP TABLE [Distributor_Commercial_Propert]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Distributor]
+IF (OBJECT_ID(N'[Distributor]', N'U') IS NOT NULL)
+	DROP TABLE [Distributor]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Agent]
+IF (OBJECT_ID(N'[Agent]', N'U') IS NOT NULL)
+	DROP TABLE [Agent]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Contract_Distributor_Agent]
+IF (OBJECT_ID(N'[Contract_Distributor_Agent]', N'U') IS NOT NULL)
+	DROP TABLE [Contract_Distributor_Agent]
 

@@ -1,19 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [ValueConversion]
-(
-	[Id]                      Int           NOT NULL,
-	[Value1]                  NVarChar(200)     NULL,
-	[Value2]                  NVarChar(200)     NULL,
-	[Enum]                    NVarChar(50)  NOT NULL,
-	[EnumNullable]            VarChar(50)       NULL,
-	[EnumWithNull]            VarChar(50)       NULL,
-	[EnumWithNullDeclarative] VarChar(50)       NULL,
-	[BoolValue]               VarChar(1)    NOT NULL,
+IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
+	CREATE TABLE [ValueConversion]
+	(
+		[Id]                      Int           NOT NULL,
+		[Value1]                  NVarChar(200)     NULL,
+		[Value2]                  NVarChar(200)     NULL,
+		[Enum]                    NVarChar(50)  NOT NULL,
+		[EnumNullable]            VarChar(50)       NULL,
+		[EnumWithNull]            VarChar(50)       NULL,
+		[EnumWithNullDeclarative] VarChar(50)       NULL,
+		[BoolValue]               VarChar(1)    NOT NULL,
 
-	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -56,5 +57,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [ValueConversion]
+IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
+	DROP TABLE [ValueConversion]
 
