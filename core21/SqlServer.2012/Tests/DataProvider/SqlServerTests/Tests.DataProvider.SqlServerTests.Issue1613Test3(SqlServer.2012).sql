@@ -1,10 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [Issue1613]
-(
-	[dt] DateTimeOffset     NULL
-)
+IF (OBJECT_ID(N'[Issue1613]', N'U') IS NULL)
+	CREATE TABLE [Issue1613]
+	(
+		[dt] DateTimeOffset     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012
@@ -46,5 +47,6 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Issue1613]
+IF (OBJECT_ID(N'[Issue1613]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1613]
 

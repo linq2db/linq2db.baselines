@@ -1,11 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [Issue1977Table]
-(
-	[firstField]  UniqueIdentifier NOT NULL,
-	[secondField] UniqueIdentifier NOT NULL
-)
+IF (OBJECT_ID(N'[Issue1977Table]', N'U') IS NULL)
+	CREATE TABLE [Issue1977Table]
+	(
+		[firstField]  UniqueIdentifier NOT NULL,
+		[secondField] UniqueIdentifier NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012
@@ -29,5 +30,6 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Issue1977Table]
+IF (OBJECT_ID(N'[Issue1977Table]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1977Table]
 

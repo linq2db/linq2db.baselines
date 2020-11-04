@@ -7,12 +7,13 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [TempTable]
-(
-	[ID] Int NOT NULL,
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
+	CREATE TABLE [TempTable]
+	(
+		[ID] Int NOT NULL,
 
-	CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
-)
+		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
+	)
 
 BeforeExecute
 -- SqlServer.2012
@@ -38,5 +39,6 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [TempTable]
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [TempTable]
 

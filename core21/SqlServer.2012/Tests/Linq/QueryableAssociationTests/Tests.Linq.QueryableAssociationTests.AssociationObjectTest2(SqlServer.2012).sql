@@ -1,11 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [SomeTable]
-(
-	[Id]       Int            NOT NULL,
-	[OwnerStr] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[SomeTable]', N'U') IS NULL)
+	CREATE TABLE [SomeTable]
+	(
+		[Id]       Int            NOT NULL,
+		[OwnerStr] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012
@@ -30,11 +31,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [SomeOtherEntity]
-(
-	[Id]       Int            NOT NULL,
-	[StrValue] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NULL)
+	CREATE TABLE [SomeOtherEntity]
+	(
+		[Id]       Int            NOT NULL,
+		[StrValue] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012
@@ -124,10 +126,12 @@ BeforeExecute
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [SomeOtherEntity]
+IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
+	DROP TABLE [SomeOtherEntity]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [SomeTable]
+IF (OBJECT_ID(N'[SomeTable]', N'U') IS NOT NULL)
+	DROP TABLE [SomeTable]
 
