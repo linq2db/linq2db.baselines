@@ -1,14 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [odata_person]
-(
-	[Name]            NVarChar(50)   NOT NULL,
-	[YearsExperience] Int            NOT NULL,
-	[Title]           NVarChar(4000) NOT NULL,
+IF (OBJECT_ID(N'[odata_person]', N'U') IS NULL)
+	CREATE TABLE [odata_person]
+	(
+		[Name]            NVarChar(50)   NOT NULL,
+		[YearsExperience] Int            NOT NULL,
+		[Title]           NVarChar(4000) NOT NULL,
 
-	CONSTRAINT [PK_odata_person] PRIMARY KEY CLUSTERED ([Name])
-)
+		CONSTRAINT [PK_odata_person] PRIMARY KEY CLUSTERED ([Name])
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -38,5 +39,6 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [odata_person]
+IF (OBJECT_ID(N'[odata_person]', N'U') IS NOT NULL)
+	DROP TABLE [odata_person]
 

@@ -1,14 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Categories]
-(
-	[CategoryID]   Int             NOT NULL IDENTITY,
-	[CategoryName] NVarChar(4000)  NOT NULL,
-	[Description]  NVarChar(4000)      NULL,
+IF (OBJECT_ID(N'[Categories]', N'U') IS NULL)
+	CREATE TABLE [Categories]
+	(
+		[CategoryID]   Int             NOT NULL IDENTITY,
+		[CategoryName] NVarChar(4000)  NOT NULL,
+		[Description]  NVarChar(4000)      NULL,
 
-	CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED ([CategoryID])
-)
+		CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED ([CategoryID])
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -25,15 +26,16 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Products]
-(
-	[ProductID]       Int             NOT NULL IDENTITY,
-	[ProductName]     NVarChar(4000)  NOT NULL,
-	[CategoryID]      Int                 NULL,
-	[QuantityPerUnit] NVarChar(4000)      NULL,
+IF (OBJECT_ID(N'[Products]', N'U') IS NULL)
+	CREATE TABLE [Products]
+	(
+		[ProductID]       Int             NOT NULL IDENTITY,
+		[ProductName]     NVarChar(4000)  NOT NULL,
+		[CategoryID]      Int                 NULL,
+		[QuantityPerUnit] NVarChar(4000)      NULL,
 
-	CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED ([ProductID])
-)
+		CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED ([ProductID])
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -78,10 +80,12 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Products]
+IF (OBJECT_ID(N'[Products]', N'U') IS NOT NULL)
+	DROP TABLE [Products]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Categories]
+IF (OBJECT_ID(N'[Categories]', N'U') IS NOT NULL)
+	DROP TABLE [Categories]
 
