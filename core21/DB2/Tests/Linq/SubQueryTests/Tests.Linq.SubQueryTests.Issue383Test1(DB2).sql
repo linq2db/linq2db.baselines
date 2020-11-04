@@ -1,15 +1,20 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Contract_Distributor_Agent"
-(
-	"Agent_Id"                      Int           NOT NULL,
-	"Distributor_Id"                Int           NOT NULL,
-	"Contract_Id"                   Int           NOT NULL,
-	"Distributor_Type_Code"         NVarChar(255)     NULL,
-	"Distributor_Agent_Type_Prefix" NVarChar(255)     NULL,
-	"Represents_Type_Prefix"        NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Contract_Distributor_Agent"
+		(
+			"Agent_Id"                      Int           NOT NULL,
+			"Distributor_Id"                Int           NOT NULL,
+			"Contract_Id"                   Int           NOT NULL,
+			"Distributor_Type_Code"         NVarChar(255)     NULL,
+			"Distributor_Agent_Type_Prefix" NVarChar(255)     NULL,
+			"Represents_Type_Prefix"        NVarChar(255)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -29,12 +34,17 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Agent"
-(
-	"Agent_Id"   Int           NOT NULL,
-	"First_Name" NVarChar(255)     NULL,
-	"Last_Name"  NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Agent"
+		(
+			"Agent_Id"   Int           NOT NULL,
+			"First_Name" NVarChar(255)     NULL,
+			"Last_Name"  NVarChar(255)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -51,12 +61,17 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Distributor"
-(
-	"Distributor_Id"   Int           NOT NULL,
-	"Type_Code"        NVarChar(255)     NULL,
-	"Distributor_Name" NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Distributor"
+		(
+			"Distributor_Id"   Int           NOT NULL,
+			"Type_Code"        NVarChar(255)     NULL,
+			"Distributor_Name" NVarChar(255)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -73,12 +88,17 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Distributor_Commercial_Propert"
-(
-	"Distributor_Id"         Int           NOT NULL,
-	"Commercial_Property_Id" Int           NOT NULL,
-	"Distributor_Type_Code"  NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Distributor_Commercial_Propert"
+		(
+			"Distributor_Id"         Int           NOT NULL,
+			"Commercial_Property_Id" Int           NOT NULL,
+			"Distributor_Type_Code"  NVarChar(255)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -95,16 +115,21 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Commercial_Property"
-(
-	"Commercial_Property_Id" Int           NOT NULL,
-	"Street_Number"          NVarChar(255)     NULL,
-	"Street_Name"            NVarChar(255)     NULL,
-	"State"                  NVarChar(255)     NULL,
-	"Zip_Code"               NVarChar(255)     NULL,
-	"Zip_Plus_4"             NVarChar(255)     NULL,
-	"City_Code"              NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Commercial_Property"
+		(
+			"Commercial_Property_Id" Int           NOT NULL,
+			"Street_Number"          NVarChar(255)     NULL,
+			"Street_Name"            NVarChar(255)     NULL,
+			"State"                  NVarChar(255)     NULL,
+			"Zip_Code"               NVarChar(255)     NULL,
+			"Zip_Plus_4"             NVarChar(255)     NULL,
+			"City_Code"              NVarChar(255)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -125,12 +150,17 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Contract_Dates"
-(
-	"Contract_Id"    Int           NOT NULL,
-	"Type_Code"      NVarChar(255)     NULL,
-	"Effective_Date" NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Contract_Dates"
+		(
+			"Contract_Id"    Int           NOT NULL,
+			"Type_Code"      NVarChar(255)     NULL,
+			"Effective_Date" NVarChar(255)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -147,11 +177,16 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Cities"
-(
-	"City_Code" NVarChar(255)     NULL,
-	"City_Name" NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Cities"
+		(
+			"City_Code" NVarChar(255)     NULL,
+			"City_Name" NVarChar(255)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -284,35 +319,56 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Cities"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Cities"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Contract_Dates"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Contract_Dates"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Commercial_Property"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Commercial_Property"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Distributor_Commercial_Propert"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Distributor_Commercial_Propert"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Distributor"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Distributor"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Agent"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Agent"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Contract_Distributor_Agent"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Contract_Distributor_Agent"';
+END
 

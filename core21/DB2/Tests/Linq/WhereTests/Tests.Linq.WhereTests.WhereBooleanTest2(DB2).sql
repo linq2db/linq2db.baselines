@@ -1,14 +1,19 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "WhereCases"
-(
-	"Id"                Int      NOT NULL,
-	"BoolValue"         smallint NOT NULL,
-	"NullableBoolValue" smallint     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "WhereCases"
+		(
+			"Id"                Int      NOT NULL,
+			"BoolValue"         smallint NOT NULL,
+			"NullableBoolValue" smallint     NULL,
 
-	CONSTRAINT "PK_WhereCases" PRIMARY KEY ("Id")
-)
+			CONSTRAINT "PK_WhereCases" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -435,5 +440,8 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "WhereCases"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "WhereCases"';
+END
 

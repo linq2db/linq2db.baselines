@@ -1,26 +1,31 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "TestTimeTypes"
-(
-	"Id"          Int           NOT NULL,
-	"Date1"       Date          NOT NULL,
-	"Date2"       Date          NOT NULL,
-	"Time"        Time          NOT NULL,
-	"TimeStamp0"  timestamp(0)  NOT NULL,
-	"TimeStamp1"  timestamp(1)  NOT NULL,
-	"TimeStamp2"  timestamp(2)  NOT NULL,
-	"TimeStamp3"  timestamp(3)  NOT NULL,
-	"TimeStamp4"  timestamp(4)  NOT NULL,
-	"TimeStamp5"  timestamp(5)  NOT NULL,
-	"TimeStamp6"  timestamp     NOT NULL,
-	"TimeStamp7"  timestamp(7)  NOT NULL,
-	"TimeStamp8"  timestamp(8)      NULL,
-	"TimeStamp9"  timestamp(9)      NULL,
-	"TimeStamp10" timestamp(10)     NULL,
-	"TimeStamp11" timestamp(11)     NULL,
-	"TimeStamp12" timestamp(12)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TestTimeTypes"
+		(
+			"Id"          Int           NOT NULL,
+			"Date1"       Date          NOT NULL,
+			"Date2"       Date          NOT NULL,
+			"Time"        Time          NOT NULL,
+			"TimeStamp0"  timestamp(0)  NOT NULL,
+			"TimeStamp1"  timestamp(1)  NOT NULL,
+			"TimeStamp2"  timestamp(2)  NOT NULL,
+			"TimeStamp3"  timestamp(3)  NOT NULL,
+			"TimeStamp4"  timestamp(4)  NOT NULL,
+			"TimeStamp5"  timestamp(5)  NOT NULL,
+			"TimeStamp6"  timestamp     NOT NULL,
+			"TimeStamp7"  timestamp(7)  NOT NULL,
+			"TimeStamp8"  timestamp(8)      NULL,
+			"TimeStamp9"  timestamp(9)      NULL,
+			"TimeStamp10" timestamp(10)     NULL,
+			"TimeStamp11" timestamp(11)     NULL,
+			"TimeStamp12" timestamp(12)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -563,5 +568,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "TestTimeTypes"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "TestTimeTypes"';
+END
 

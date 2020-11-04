@@ -1,12 +1,17 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "SelectExpressionTable"
-(
-	ID Int NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "SelectExpressionTable"
+		(
+			ID Int NOT NULL,
 
-	CONSTRAINT "PK_SelectExpressionTable" PRIMARY KEY (ID)
-)
+			CONSTRAINT "PK_SelectExpressionTable" PRIMARY KEY (ID)
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -30,5 +35,8 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "SelectExpressionTable"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "SelectExpressionTable"';
+END
 

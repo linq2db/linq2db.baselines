@@ -1,19 +1,24 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "ValueConversion"
-(
-	"Id"                      Int           NOT NULL,
-	"Value1"                  NVarChar(200)     NULL,
-	"Value2"                  NVarChar(200)     NULL,
-	"Enum"                    NVarChar(50)  NOT NULL,
-	"EnumNullable"            VarChar(50)       NULL,
-	"EnumWithNull"            VarChar(50)       NULL,
-	"EnumWithNullDeclarative" VarChar(50)       NULL,
-	"BoolValue"               VarChar(1)    NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "ValueConversion"
+		(
+			"Id"                      Int           NOT NULL,
+			"Value1"                  NVarChar(200)     NULL,
+			"Value2"                  NVarChar(200)     NULL,
+			"Enum"                    NVarChar(50)  NOT NULL,
+			"EnumNullable"            VarChar(50)       NULL,
+			"EnumWithNull"            VarChar(50)       NULL,
+			"EnumWithNullDeclarative" VarChar(50)       NULL,
+			"BoolValue"               VarChar(1)    NOT NULL,
 
-	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
-)
+			CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -58,5 +63,8 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "ValueConversion"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';
+END
 

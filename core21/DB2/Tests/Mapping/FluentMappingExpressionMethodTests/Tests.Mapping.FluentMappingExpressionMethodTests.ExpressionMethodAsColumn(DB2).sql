@@ -1,11 +1,16 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "InstanceClass"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "InstanceClass"
+		(
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -49,5 +54,8 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "InstanceClass"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "InstanceClass"';
+END
 

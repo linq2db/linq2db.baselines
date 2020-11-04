@@ -1,13 +1,18 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Issue913Test"
-(
-	"InstrumentID"  Int      NOT NULL,
-	"TradingStatus" NChar(1)     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue913Test"
+		(
+			"InstrumentID"  Int      NOT NULL,
+			"TradingStatus" NChar(1)     NULL,
 
-	CONSTRAINT "PK_Issue913Test" PRIMARY KEY ("InstrumentID")
-)
+			CONSTRAINT "PK_Issue913Test" PRIMARY KEY ("InstrumentID")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -47,5 +52,8 @@ GROUP BY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Issue913Test"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue913Test"';
+END
 
