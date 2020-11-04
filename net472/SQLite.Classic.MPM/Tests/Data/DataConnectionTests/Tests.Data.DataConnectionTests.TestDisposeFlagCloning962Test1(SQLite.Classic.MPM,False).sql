@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Categories]
+CREATE TABLE IF NOT EXISTS [Categories]
 (
 	[CategoryID]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[CategoryName] NVarChar(255)  NOT NULL,
@@ -23,7 +23,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Products]
+CREATE TABLE IF NOT EXISTS [Products]
 (
 	[ProductID]       INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[ProductName]     NVarChar(255)  NOT NULL,
@@ -74,10 +74,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Products]
+DROP TABLE IF EXISTS [Products]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Categories]
+DROP TABLE IF EXISTS [Categories]
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [UpdatedEntities]
+CREATE TABLE IF NOT EXISTS [UpdatedEntities]
 (
 	[id]         INTEGER NOT NULL,
 	[Value1]     INTEGER NOT NULL,
@@ -32,7 +32,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [NewEntities]
+CREATE TABLE IF NOT EXISTS [NewEntities]
 (
 	[id]     INTEGER NOT NULL,
 	[Value1] INTEGER NOT NULL,
@@ -127,10 +127,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [NewEntities]
+DROP TABLE IF EXISTS [NewEntities]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [UpdatedEntities]
+DROP TABLE IF EXISTS [UpdatedEntities]
 

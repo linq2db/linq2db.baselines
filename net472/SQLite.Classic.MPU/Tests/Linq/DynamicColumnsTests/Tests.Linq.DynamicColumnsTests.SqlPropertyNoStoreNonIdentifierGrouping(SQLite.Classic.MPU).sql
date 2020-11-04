@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [DynamicTable]
+CREATE TABLE IF NOT EXISTS [DynamicTable]
 (
 	[ID]             INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[Not Identifier] INTEGER  NOT NULL,
@@ -35,5 +35,5 @@ GROUP BY
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [DynamicTable]
+DROP TABLE IF EXISTS [DynamicTable]
 

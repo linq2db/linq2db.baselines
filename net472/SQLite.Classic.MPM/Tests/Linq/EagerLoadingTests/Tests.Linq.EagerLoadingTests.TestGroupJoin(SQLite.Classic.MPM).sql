@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [MasterClass]
+CREATE TABLE IF NOT EXISTS [MasterClass]
 (
 	[Id1]        INTEGER       NOT NULL,
 	[Id2]        INTEGER       NOT NULL,
@@ -36,7 +36,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [DetailClass]
+CREATE TABLE IF NOT EXISTS [DetailClass]
 (
 	[DetailId]    INTEGER       NOT NULL,
 	[MasterId]    INTEGER           NULL,
@@ -84,7 +84,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [SubDetailClass]
+CREATE TABLE IF NOT EXISTS [SubDetailClass]
 (
 	[SubDetailId]    INTEGER       NOT NULL,
 	[DetailId]       INTEGER           NULL,
@@ -1890,15 +1890,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [SubDetailClass]
+DROP TABLE IF EXISTS [SubDetailClass]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [DetailClass]
+DROP TABLE IF EXISTS [DetailClass]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [MasterClass]
+DROP TABLE IF EXISTS [MasterClass]
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [BaseTable]
+CREATE TABLE IF NOT EXISTS [BaseTable]
 (
 	[Value] INTEGER NOT NULL,
 	[Id]    INTEGER NOT NULL,
@@ -58,5 +58,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [BaseTable]
+DROP TABLE IF EXISTS [BaseTable]
 

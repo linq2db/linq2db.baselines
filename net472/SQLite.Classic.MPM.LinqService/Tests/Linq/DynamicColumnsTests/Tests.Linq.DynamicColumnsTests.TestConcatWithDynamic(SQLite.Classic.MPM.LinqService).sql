@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [M998_T066]
+CREATE TABLE IF NOT EXISTS [M998_T066]
 (
 	[F066_04] NVarChar(255)     NULL,
 	[F066_05] NVarChar(255)     NULL,
@@ -55,7 +55,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [M998_T000]
+CREATE TABLE IF NOT EXISTS [M998_T000]
 (
 	[F066_04] NVarChar(255)     NULL,
 	[F066_05] NVarChar(255)     NULL,
@@ -126,10 +126,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [M998_T000]
+DROP TABLE IF EXISTS [M998_T000]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [M998_T066]
+DROP TABLE IF EXISTS [M998_T066]
 

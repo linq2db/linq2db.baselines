@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Order]
+CREATE TABLE IF NOT EXISTS [Order]
 (
 	[OrderId]   INTEGER       NOT NULL,
 	[OrderType] INTEGER       NOT NULL,
@@ -25,7 +25,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [OrderDetail]
+CREATE TABLE IF NOT EXISTS [OrderDetail]
 (
 	[OrderDetailId] INTEGER       NOT NULL,
 	[Title]         NVarChar(255)     NULL,
@@ -91,10 +91,10 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [OrderDetail]
+DROP TABLE IF EXISTS [OrderDetail]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Order]
+DROP TABLE IF EXISTS [Order]
 

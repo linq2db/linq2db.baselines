@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [ParentRecord]
+CREATE TABLE IF NOT EXISTS [ParentRecord]
 (
 	[Id] INTEGER NOT NULL
 )
@@ -19,7 +19,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [ChildRecord]
+CREATE TABLE IF NOT EXISTS [ChildRecord]
 (
 	[Id]       INTEGER NOT NULL,
 	[ParentId] INTEGER NOT NULL,
@@ -85,10 +85,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [ChildRecord]
+DROP TABLE IF EXISTS [ChildRecord]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [ParentRecord]
+DROP TABLE IF EXISTS [ParentRecord]
 

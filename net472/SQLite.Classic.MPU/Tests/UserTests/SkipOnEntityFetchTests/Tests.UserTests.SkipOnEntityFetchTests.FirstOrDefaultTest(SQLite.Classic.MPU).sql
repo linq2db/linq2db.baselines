@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Attachment]
+CREATE TABLE IF NOT EXISTS [Attachment]
 (
 	[Id]            BigInt        NOT NULL,
 	[QuestionSetId] BigInt        NOT NULL,
@@ -51,5 +51,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Attachment]
+DROP TABLE IF EXISTS [Attachment]
 

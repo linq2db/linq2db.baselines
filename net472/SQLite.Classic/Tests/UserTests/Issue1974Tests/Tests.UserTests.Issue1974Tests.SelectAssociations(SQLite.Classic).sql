@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [Person1974]
+CREATE TABLE IF NOT EXISTS [Person1974]
 (
 	[ID]   INTEGER       NOT NULL,
 	[Name] NVarChar(255)     NULL
@@ -22,7 +22,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [Article]
+CREATE TABLE IF NOT EXISTS [Article]
 (
 	[ID]       NVarChar(255)     NULL,
 	[PersonId] INTEGER       NOT NULL,
@@ -61,10 +61,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [Article]
+DROP TABLE IF EXISTS [Article]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [Person1974]
+DROP TABLE IF EXISTS [Person1974]
 

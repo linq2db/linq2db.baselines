@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [SampleData]
+CREATE TABLE IF NOT EXISTS [SampleData]
 (
 	[Id]     INTEGER NOT NULL,
 	[Value1] INTEGER NOT NULL,
@@ -312,5 +312,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [SampleData]
+DROP TABLE IF EXISTS [SampleData]
 

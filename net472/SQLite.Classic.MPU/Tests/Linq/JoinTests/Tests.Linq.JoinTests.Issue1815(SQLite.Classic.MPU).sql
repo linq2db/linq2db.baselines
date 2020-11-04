@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [StLink]
+CREATE TABLE IF NOT EXISTS [StLink]
 (
 	[InId]          INTEGER NOT NULL,
 	[InMaxQuantity] Float       NULL,
@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [EdtLink]
+CREATE TABLE IF NOT EXISTS [EdtLink]
 (
 	[InId]          INTEGER NOT NULL,
 	[InMaxQuantity] Float       NULL,
@@ -88,10 +88,10 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [EdtLink]
+DROP TABLE IF EXISTS [EdtLink]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [StLink]
+DROP TABLE IF EXISTS [StLink]
 

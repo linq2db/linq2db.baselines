@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [MainEntityObject]
+CREATE TABLE IF NOT EXISTS [MainEntityObject]
 (
 	[Id]        INTEGER      NOT NULL,
 	[MainValue] NVarChar(50)     NULL,
@@ -24,7 +24,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [ChildEntityObject]
+CREATE TABLE IF NOT EXISTS [ChildEntityObject]
 (
 	[Id]    INTEGER      NOT NULL,
 	[Value] NVarChar(50)     NULL
@@ -56,10 +56,10 @@ ORDER BY
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [ChildEntityObject]
+DROP TABLE IF EXISTS [ChildEntityObject]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [MainEntityObject]
+DROP TABLE IF EXISTS [MainEntityObject]
 

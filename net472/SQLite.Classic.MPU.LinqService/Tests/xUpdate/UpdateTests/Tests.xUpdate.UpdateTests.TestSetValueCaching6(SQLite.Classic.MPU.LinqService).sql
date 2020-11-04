@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [UpdateSetTest]
+CREATE TABLE IF NOT EXISTS [UpdateSetTest]
 (
 	[Id]     INTEGER NOT NULL,
 	[Value1] Guid    NOT NULL,
@@ -113,5 +113,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [UpdateSetTest]
+DROP TABLE IF EXISTS [UpdateSetTest]
 
