@@ -13,26 +13,26 @@ END
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "TestIdTrun"
-(
-	ID       Int      NOT NULL,
-	"Field1" Decimal  NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "TestIdTrun"
+		(
+			ID       Int      NOT NULL,
+			"Field1" Decimal  NOT NULL,
 
-	CONSTRAINT "PK_TestIdTrun" PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE GENERATOR "GIDENTITY_TestIdTrun"
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE TRIGGER "TIDENTITY_TestIdTrun" FOR "TestIdTrun"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW.ID = GEN_ID("GIDENTITY_TestIdTrun", 1);
+			CONSTRAINT "PK_TestIdTrun" PRIMARY KEY (ID)
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_TestIdTrun"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_TestIdTrun" FOR "TestIdTrun"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW.ID = GEN_ID("GIDENTITY_TestIdTrun", 1);
+		END
+	';
 END
 
 BeforeExecute

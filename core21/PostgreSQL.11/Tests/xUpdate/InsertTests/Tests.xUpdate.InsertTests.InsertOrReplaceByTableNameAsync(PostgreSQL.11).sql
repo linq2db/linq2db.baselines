@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-DROP TABLE IF EXISTS "xxPatient23"
+DROP TABLE IF EXISTS "xxPatient12"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-CREATE TABLE "xxPatient23"
+CREATE TABLE "xxPatient12"
 (
 	"PersonID"  Int  NOT NULL,
 	"Diagnosis" text     NULL,
 
-	CONSTRAINT "PK_xxPatient23" PRIMARY KEY ("PersonID")
+	CONSTRAINT "PK_xxPatient12" PRIMARY KEY ("PersonID")
 )
 
 BeforeExecute
@@ -21,7 +21,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis Text(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO "xxPatient23" AS t1
+INSERT INTO "xxPatient12" AS t1
 (
 	"PersonID",
 	"Diagnosis"
@@ -41,7 +41,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis Text(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO "xxPatient23" AS t1
+INSERT INTO "xxPatient12" AS t1
 (
 	"PersonID",
 	"Diagnosis"
@@ -60,7 +60,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient23" t1
+	"xxPatient12" t1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -69,7 +69,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis Text(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO "xxPatient23" AS t1
+INSERT INTO "xxPatient12" AS t1
 (
 	"PersonID",
 	"Diagnosis"
@@ -89,7 +89,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis Text(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO "xxPatient23" AS t1
+INSERT INTO "xxPatient12" AS t1
 (
 	"PersonID",
 	"Diagnosis"
@@ -108,10 +108,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient23" t1
+	"xxPatient12" t1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-DROP TABLE IF EXISTS "xxPatient23"
+DROP TABLE IF EXISTS "xxPatient12"
 

@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE IF EXISTS "xxPatient21"
+DROP TABLE IF EXISTS "xxPatient11"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE "xxPatient21"
+CREATE TABLE "xxPatient11"
 (
 	"PersonID"  Int  NOT NULL,
 	"Diagnosis" text     NULL,
 
-	CONSTRAINT "PK_xxPatient21" PRIMARY KEY ("PersonID")
+	CONSTRAINT "PK_xxPatient11" PRIMARY KEY ("PersonID")
 )
 
 BeforeExecute
@@ -22,11 +22,11 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient21"
+	"xxPatient11"
 SET
 	"Diagnosis" = :Diagnosis
 WHERE
-	"xxPatient21"."PersonID" = :PersonID
+	"xxPatient11"."PersonID" = :PersonID
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis Text(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO "xxPatient21"
+INSERT INTO "xxPatient11"
 (
 	"PersonID",
 	"Diagnosis"
@@ -54,11 +54,11 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient21"
+	"xxPatient11"
 SET
 	"Diagnosis" = :Diagnosis
 WHERE
-	"xxPatient21"."PersonID" = :PersonID
+	"xxPatient11"."PersonID" = :PersonID
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis Text(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO "xxPatient21"
+INSERT INTO "xxPatient11"
 (
 	"PersonID",
 	"Diagnosis"
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient21" t1
+	"xxPatient11" t1
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -94,11 +94,11 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient21"
+	"xxPatient11"
 SET
 	"Diagnosis" = :Diagnosis
 WHERE
-	"xxPatient21"."PersonID" = :PersonID
+	"xxPatient11"."PersonID" = :PersonID
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -108,11 +108,11 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient21"
+	"xxPatient11"
 SET
 	"Diagnosis" = :Diagnosis
 WHERE
-	"xxPatient21"."PersonID" = :PersonID
+	"xxPatient11"."PersonID" = :PersonID
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient21" t1
+	"xxPatient11" t1
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE IF EXISTS "xxPatient21"
+DROP TABLE IF EXISTS "xxPatient11"
 

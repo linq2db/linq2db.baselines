@@ -21,10 +21,20 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-CREATE TABLE TempTable
-(
-	ID Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE GLOBAL TEMPORARY TABLE TempTable
+		(
+			ID Int NOT NULL
+		)
+		ON COMMIT PRESERVE ROWS
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12

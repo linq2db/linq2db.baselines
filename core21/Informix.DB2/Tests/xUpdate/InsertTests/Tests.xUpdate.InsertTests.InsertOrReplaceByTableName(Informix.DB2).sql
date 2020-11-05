@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE xxPatient21
+DROP TABLE IF EXISTS xxPatient11
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE xxPatient21
+CREATE TABLE xxPatient11
 (
 	PersonID  Int           NOT NULL,
 	Diagnosis NVarChar(255)     NULL,
@@ -22,11 +22,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	xxPatient21
+	xxPatient11
 SET
-	xxPatient21.Diagnosis = @Diagnosis
+	xxPatient11.Diagnosis = @Diagnosis
 WHERE
-	xxPatient21.PersonID = @PersonID
+	xxPatient11.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO xxPatient21
+INSERT INTO xxPatient11
 (
 	PersonID,
 	Diagnosis
@@ -54,11 +54,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	xxPatient21
+	xxPatient11
 SET
-	xxPatient21.Diagnosis = @Diagnosis
+	xxPatient11.Diagnosis = @Diagnosis
 WHERE
-	xxPatient21.PersonID = @PersonID
+	xxPatient11.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO xxPatient21
+INSERT INTO xxPatient11
 (
 	PersonID,
 	Diagnosis
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPatient21 t1
+	xxPatient11 t1
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -94,11 +94,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	xxPatient21
+	xxPatient11
 SET
-	xxPatient21.Diagnosis = @Diagnosis
+	xxPatient11.Diagnosis = @Diagnosis
 WHERE
-	xxPatient21.PersonID = @PersonID
+	xxPatient11.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -108,11 +108,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	xxPatient21
+	xxPatient11
 SET
-	xxPatient21.Diagnosis = @Diagnosis
+	xxPatient11.Diagnosis = @Diagnosis
 WHERE
-	xxPatient21.PersonID = @PersonID
+	xxPatient11.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPatient21 t1
+	xxPatient11 t1
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE xxPatient21
+DROP TABLE IF EXISTS xxPatient11
 

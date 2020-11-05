@@ -1,7 +1,8 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [xxPerson]
+IF (OBJECT_ID(N'xxPerson') IS NOT NULL)
+	DROP TABLE [xxPerson]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -126,5 +127,6 @@ DROP TABLE [xxPerson]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [xxPerson]
+IF (OBJECT_ID(N'xxPerson') IS NOT NULL)
+	DROP TABLE [xxPerson]
 

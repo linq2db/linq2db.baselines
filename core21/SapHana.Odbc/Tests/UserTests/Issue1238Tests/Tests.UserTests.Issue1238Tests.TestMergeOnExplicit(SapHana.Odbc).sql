@@ -8,7 +8,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "InheritanceParent" "Target"
-USING (	SELECT 143 "Key1",NULL "Key2",1 "Data_1" FROM DUMMY) "Source"
+USING (	SELECT 143 "Key1", NULL "Key2", 1 "Data_1" FROM DUMMY) "Source"
 ON ("Target"."InheritanceParentId" = "Source"."Key1" AND ("Target"."Name" IS NULL AND "Source"."Key2" IS NULL OR "Target"."Name" = "Source"."Key2"))
 
 WHEN MATCHED THEN
@@ -42,7 +42,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "InheritanceParent" "Target"
-USING (	SELECT 143 "Key1",NULL "Key2",1 "Data_1" FROM DUMMY) "Source"
+USING (	SELECT 143 "Key1", NULL "Key2", 1 "Data_1" FROM DUMMY) "Source"
 ON ("Target"."InheritanceParentId" = "Source"."Key1" AND ("Target"."Name" IS NULL AND "Source"."Key2" IS NULL OR "Target"."Name" = "Source"."Key2"))
 
 WHEN MATCHED THEN

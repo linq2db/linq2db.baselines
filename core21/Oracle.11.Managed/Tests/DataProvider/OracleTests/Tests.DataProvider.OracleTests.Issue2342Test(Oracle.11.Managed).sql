@@ -1,11 +1,21 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE Issue2342Entity
-(
-	Id   Number(19)   NOT NULL,
-	Name VarChar(256)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE GLOBAL TEMPORARY TABLE Issue2342Entity
+		(
+			Id   Number(19)   NOT NULL,
+			Name VarChar(256)     NULL
+		)
+		ON COMMIT PRESERVE ROWS
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -19,5 +29,17 @@ INSERT INTO Issue2342Entity (Id, Name) VALUES (:p1, :p2)
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Issue2342Entity
+TRUNCATE TABLE Issue2342Entity
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE Issue2342Entity';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

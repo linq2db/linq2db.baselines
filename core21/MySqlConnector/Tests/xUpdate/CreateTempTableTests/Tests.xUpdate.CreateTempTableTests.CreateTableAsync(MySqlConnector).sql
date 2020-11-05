@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MySqlConnector MySql
+-- MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-CREATE TABLE `TempTable`
+CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`ID` INT NOT NULL
 )
@@ -35,5 +35,5 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-DROP TABLE `TempTable`
+DROP TABLE IF EXISTS `TempTable`
 

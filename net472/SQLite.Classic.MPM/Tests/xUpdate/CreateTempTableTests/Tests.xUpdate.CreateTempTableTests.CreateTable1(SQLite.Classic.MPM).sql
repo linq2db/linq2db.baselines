@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS [TempTable]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [TempTable]
+CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[ID] INTEGER NOT NULL
 )
@@ -27,6 +27,14 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
+	[t1].[ID]
+FROM
+	[TempTable] [t1]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
 	[t].[ID]
 FROM
 	[Parent] [p]
@@ -35,5 +43,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [TempTable]
+DROP TABLE IF EXISTS [TempTable]
 

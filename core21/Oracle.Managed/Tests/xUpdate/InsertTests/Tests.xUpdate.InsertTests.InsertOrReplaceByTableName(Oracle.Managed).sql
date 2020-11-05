@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE xxPatient21';
+	EXECUTE IMMEDIATE 'DROP TABLE xxPatient11';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -13,12 +13,12 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE xxPatient21
+CREATE TABLE xxPatient11
 (
 	PersonID  Int          NOT NULL,
 	Diagnosis VarChar(255)     NULL,
 
-	CONSTRAINT PK_xxPatient21 PRIMARY KEY (PersonID)
+	CONSTRAINT PK_xxPatient11 PRIMARY KEY (PersonID)
 )
 
 BeforeExecute
@@ -28,7 +28,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis Varchar2(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO xxPatient21 t1
+MERGE INTO xxPatient11 t1
 USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
 (
 	t1.PersonID = s.PersonID
@@ -56,7 +56,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis Varchar2(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO xxPatient21 t1
+MERGE INTO xxPatient11 t1
 USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
 (
 	t1.PersonID = s.PersonID
@@ -83,7 +83,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPatient21 t1
+	xxPatient11 t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -92,7 +92,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis Varchar2(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO xxPatient21 t1
+MERGE INTO xxPatient11 t1
 USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
 (
 	t1.PersonID = s.PersonID
@@ -120,7 +120,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis Varchar2(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO xxPatient21 t1
+MERGE INTO xxPatient11 t1
 USING (SELECT :PersonID AS PersonID FROM SYS.DUAL) s ON
 (
 	t1.PersonID = s.PersonID
@@ -147,13 +147,13 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPatient21 t1
+	xxPatient11 t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE xxPatient21';
+	EXECUTE IMMEDIATE 'DROP TABLE xxPatient11';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

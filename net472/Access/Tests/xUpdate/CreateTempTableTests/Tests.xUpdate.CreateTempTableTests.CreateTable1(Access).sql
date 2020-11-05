@@ -27,6 +27,14 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
+	[t1].[ID]
+FROM
+	[TempTable] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
 	[t].[ID]
 FROM
 	[Parent] [p]

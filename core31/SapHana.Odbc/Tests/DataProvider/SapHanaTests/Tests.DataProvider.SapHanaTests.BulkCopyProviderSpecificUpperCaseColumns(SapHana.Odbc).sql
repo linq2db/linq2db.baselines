@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4000
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1000
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -44,7 +44,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4001
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1001
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -86,7 +86,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4002
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1002
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -128,7 +128,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4003
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1003
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -170,7 +170,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4004
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1004
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -212,7 +212,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4005
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1005
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -254,7 +254,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4006
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1006
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -296,7 +296,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4007
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1007
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -338,7 +338,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4008
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1008
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
@@ -380,7 +380,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 4009
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1009
 DECLARE @DateTimeValue  -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'

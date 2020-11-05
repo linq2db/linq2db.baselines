@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p1  -- Int32
-SET     @p1 = 10
+DECLARE @take  -- Int32
+SET     @take = 10
 
 SELECT
 	"key_data_result"."ParentID",

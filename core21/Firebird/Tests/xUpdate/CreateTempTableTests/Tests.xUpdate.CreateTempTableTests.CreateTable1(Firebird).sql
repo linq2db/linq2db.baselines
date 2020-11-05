@@ -9,10 +9,15 @@ END
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "TempTable"
-(
-	ID Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "TempTable"
+			(
+				ID Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -30,6 +35,14 @@ BeforeExecute
 -- Firebird
 
 SELECT
+	"t1".ID
+FROM
+	"TempTable" "t1"
+
+BeforeExecute
+-- Firebird
+
+SELECT
 	"t".ID
 FROM
 	"Parent" "p"
@@ -38,5 +51,8 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "TempTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TempTable"';
+END
 

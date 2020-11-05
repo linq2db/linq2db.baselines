@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-CREATE TABLE [TempTable]
+CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[ID] INTEGER NOT NULL
 )
@@ -35,5 +35,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-DROP TABLE [TempTable]
+DROP TABLE IF EXISTS [TempTable]
 

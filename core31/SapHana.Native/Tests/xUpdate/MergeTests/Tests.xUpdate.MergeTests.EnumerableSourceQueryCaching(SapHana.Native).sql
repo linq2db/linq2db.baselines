@@ -8,7 +8,7 @@ BeforeExecute
 -- SapHana.Native SapHana
 
 MERGE INTO "TestMerge1" "Target"
-USING (	SELECT 0 "Id",1 "Field1",2 "Field2",4 "Field4" FROM DUMMY) "Source"
+USING (	SELECT 0 "Id", 1 "Field1", 2 "Field2", 4 "Field4" FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
@@ -52,7 +52,7 @@ BeforeExecute
 -- SapHana.Native SapHana
 
 MERGE INTO "TestMerge1" "Target"
-USING (	SELECT 10 "Id",11 "Field1",12 "Field2",14 "Field4" FROM DUMMY) "Source"
+USING (	SELECT 10 "Id", 11 "Field1", 12 "Field2", 14 "Field4" FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
@@ -96,9 +96,9 @@ BeforeExecute
 -- SapHana.Native SapHana
 
 MERGE INTO "TestMerge1" "Target"
-USING (	SELECT 20 "Id",21 "Field1",22 "Field2",24 "Field4" FROM DUMMY
+USING (	SELECT 20 "Id", 21 "Field1", 22 "Field2", 24 "Field4" FROM DUMMY
 	UNION ALL
-	SELECT 30,31,32,34 FROM DUMMY) "Source"
+	SELECT 30, 31, 32, 34 FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN

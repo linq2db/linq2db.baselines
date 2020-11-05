@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "BlobClass19"
+CREATE TABLE "BlobClass10"
 (
 	"Id"        Int   NOT NULL,
 	"BlobValue" bytea     NULL,
 
-	CONSTRAINT "PK_BlobClass19" PRIMARY KEY ("Id")
+	CONSTRAINT "PK_BlobClass10" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-INSERT INTO "BlobClass19"
+INSERT INTO "BlobClass10"
 (
 	"Id",
 	"BlobValue"
@@ -30,7 +30,7 @@ SELECT
 	t1."Id",
 	t1."BlobValue"
 FROM
-	"BlobClass19" t1
+	"BlobClass10" t1
 WHERE
 	t1."Id" = 1
 LIMIT 1
@@ -42,7 +42,7 @@ SELECT
 	t1."Id",
 	t1."BlobValue"
 FROM
-	"BlobClass19" t1
+	"BlobClass10" t1
 WHERE
 	t1."Id" = 1
 LIMIT 1
@@ -50,5 +50,5 @@ LIMIT 1
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "BlobClass19"
+DROP TABLE "BlobClass10"
 

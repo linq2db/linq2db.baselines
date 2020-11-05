@@ -2,7 +2,7 @@
 -- SapHana.Native SapHana
 
 MERGE INTO "AllTypes" "Target"
-USING (	SELECT 10 "ID",char(0) "charDataType",char(0) "ncharDataType",NULL "nvarcharDataType" FROM DUMMY) "Source"
+USING (	SELECT 10 "ID", char(0) "charDataType", char(0) "ncharDataType", NULL "nvarcharDataType" FROM DUMMY) "Source"
 ON ("Target"."ID" = "Source"."ID")
 
 WHEN MATCHED THEN

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TempTable
+DROP TABLE IF EXISTS TempTable
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE TempTable
+CREATE TABLE IF NOT EXISTS TempTable
 (
 	ID Int NOT NULL
 )
@@ -27,6 +27,14 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.ID
+FROM
+	TempTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
 	t.ID
 FROM
 	Parent p
@@ -35,5 +43,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TempTable
+DROP TABLE IF EXISTS TempTable
 

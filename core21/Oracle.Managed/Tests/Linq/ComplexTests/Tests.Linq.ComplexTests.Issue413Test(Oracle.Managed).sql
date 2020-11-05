@@ -1,33 +1,60 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE T1
-(
-	InstrumentId         Int          NOT NULL,
-	InstrumentCode       VarChar(255)     NULL,
-	CreateDate           timestamp    NOT NULL,
-	SourceInstrumentCode VarChar(255)     NULL,
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE T1
+		(
+			InstrumentId         Int          NOT NULL,
+			InstrumentCode       VarChar(255)     NULL,
+			CreateDate           timestamp    NOT NULL,
+			SourceInstrumentCode VarChar(255)     NULL,
 
-	CONSTRAINT PK_T1 PRIMARY KEY (InstrumentId)
-)
+			CONSTRAINT PK_T1 PRIMARY KEY (InstrumentId)
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE T2
-(
-	InstrumentId Int NOT NULL,
-	IndexId      Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE T2
+		(
+			InstrumentId Int NOT NULL,
+			IndexId      Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE T3
-(
-	InstrumentId Int NOT NULL,
-	IndexId      Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE T3
+		(
+			InstrumentId Int NOT NULL,
+			IndexId      Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -194,15 +221,36 @@ ORDER BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE T3
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE T3';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE T2
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE T2';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE T1
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE T1';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

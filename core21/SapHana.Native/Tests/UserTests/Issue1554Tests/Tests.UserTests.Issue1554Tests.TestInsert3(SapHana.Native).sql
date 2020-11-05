@@ -12,12 +12,12 @@ CREATE COLUMN TABLE "Issue1554Table"
 
 BeforeExecute
 -- SapHana.Native SapHana
-DECLARE @Id_1_1  -- Int32
-SET     @Id_1_1 = 0
-DECLARE @ClaimedKeyType_1_1 NVarChar(2) -- String
-SET     @ClaimedKeyType_1_1 = 'EC'
-DECLARE @ClaimedKeyTypeN_1_1 NVarChar(2) -- String
-SET     @ClaimedKeyTypeN_1_1 = 'EC'
+DECLARE @Id_1  -- Int32
+SET     @Id_1 = 0
+DECLARE @ClaimedKeyType_1 NVarChar(2) -- String
+SET     @ClaimedKeyType_1 = 'EC'
+DECLARE @ClaimedKeyTypeN_1 NVarChar(2) -- String
+SET     @ClaimedKeyTypeN_1 = 'EC'
 
 INSERT INTO "Issue1554Table"
 (
@@ -27,9 +27,9 @@ INSERT INTO "Issue1554Table"
 )
 VALUES
 (
-	:"Id_1_1",
-	:"ClaimedKeyType_1_1",
-	:"ClaimedKeyTypeN_1_1"
+	:"Id_1",
+	:"ClaimedKeyType_1",
+	:"ClaimedKeyTypeN_1"
 )
 
 BeforeExecute

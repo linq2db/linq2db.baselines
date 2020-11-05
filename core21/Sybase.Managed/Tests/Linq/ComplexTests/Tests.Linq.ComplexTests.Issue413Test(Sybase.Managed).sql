@@ -1,33 +1,42 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [T1]
-(
-	[InstrumentId]         Int           NOT NULL,
-	[InstrumentCode]       NVarChar(255)     NULL,
-	[CreateDate]           DateTime      NOT NULL,
-	[SourceInstrumentCode] NVarChar(255)     NULL,
+IF (OBJECT_ID(N'T1') IS NULL)
+	EXECUTE('
+		CREATE TABLE [T1]
+		(
+			[InstrumentId]         Int           NOT NULL,
+			[InstrumentCode]       NVarChar(255)     NULL,
+			[CreateDate]           DateTime      NOT NULL,
+			[SourceInstrumentCode] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-CREATE TABLE [T2]
-(
-	[InstrumentId] Int NOT NULL,
-	[IndexId]      Int NOT NULL
-)
+			CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [T3]
-(
-	[InstrumentId] Int NOT NULL,
-	[IndexId]      Int NOT NULL
-)
+IF (OBJECT_ID(N'T2') IS NULL)
+	EXECUTE('
+		CREATE TABLE [T2]
+		(
+			[InstrumentId] Int NOT NULL,
+			[IndexId]      Int NOT NULL
+		)
+	')
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'T3') IS NULL)
+	EXECUTE('
+		CREATE TABLE [T3]
+		(
+			[InstrumentId] Int NOT NULL,
+			[IndexId]      Int NOT NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -194,15 +203,18 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [T3]
+IF (OBJECT_ID(N'T3') IS NOT NULL)
+	DROP TABLE [T3]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [T2]
+IF (OBJECT_ID(N'T2') IS NOT NULL)
+	DROP TABLE [T2]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [T1]
+IF (OBJECT_ID(N'T1') IS NOT NULL)
+	DROP TABLE [T1]
 

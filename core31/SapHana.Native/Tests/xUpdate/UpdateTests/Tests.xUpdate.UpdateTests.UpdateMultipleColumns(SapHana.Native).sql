@@ -12,7 +12,7 @@ BeforeExecute
 -- SapHana.Native SapHana
 DECLARE @ID  -- Int32
 SET     @ID = 1001
-DECLARE @MoneyValue Decimal(4,0)
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 100

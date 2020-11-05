@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS `TempTable`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `TempTable`
+CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`ID` INT NOT NULL
 )
@@ -27,6 +27,14 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
+	`t1`.`ID`
+FROM
+	`TempTable` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
 	`t`.`ID`
 FROM
 	`Parent` `p`
@@ -35,5 +43,5 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `TempTable`
+DROP TABLE IF EXISTS `TempTable`
 

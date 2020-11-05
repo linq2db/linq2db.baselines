@@ -1,27 +1,27 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Categories"
-(
-	"CategoryID"   Int                                     NOT NULL,
-	"CategoryName" VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"Description"  VarChar(255) CHARACTER SET UNICODE_FSS,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "Categories"
+		(
+			"CategoryID"   Int                                     NOT NULL,
+			"CategoryName" VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+			"Description"  VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_Categories" PRIMARY KEY ("CategoryID")
-)
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE GENERATOR "GIDENTITY_Categories"
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE TRIGGER "TIDENTITY_Categories" FOR "Categories"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW."CategoryID" = GEN_ID("GIDENTITY_Categories", 1);
+			CONSTRAINT "PK_Categories" PRIMARY KEY ("CategoryID")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_Categories"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_Categories" FOR "Categories"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."CategoryID" = GEN_ID("GIDENTITY_Categories", 1);
+		END
+	';
 END
 
 BeforeExecute
@@ -38,28 +38,28 @@ SELECT 'Name 2','Desc 2' FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Products"
-(
-	"ProductID"       Int                                     NOT NULL,
-	"ProductName"     VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
-	"CategoryID"      Int,
-	"QuantityPerUnit" VarChar(255) CHARACTER SET UNICODE_FSS,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "Products"
+		(
+			"ProductID"       Int                                     NOT NULL,
+			"ProductName"     VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+			"CategoryID"      Int,
+			"QuantityPerUnit" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_Products" PRIMARY KEY ("ProductID")
-)
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE GENERATOR "GIDENTITY_Products"
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE TRIGGER "TIDENTITY_Products" FOR "Products"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW."ProductID" = GEN_ID("GIDENTITY_Products", 1);
+			CONSTRAINT "PK_Products" PRIMARY KEY ("ProductID")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_Products"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_Products" FOR "Products"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."ProductID" = GEN_ID("GIDENTITY_Products", 1);
+		END
+	';
 END
 
 BeforeExecute

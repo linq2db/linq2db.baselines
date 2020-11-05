@@ -27,6 +27,14 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
+	[t1].[ID]
+FROM
+	[TempTable] [t1]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
 	[t].[ID]
 FROM
 	[Parent] [p]
