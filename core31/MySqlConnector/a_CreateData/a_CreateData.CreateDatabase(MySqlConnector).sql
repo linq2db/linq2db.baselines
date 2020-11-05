@@ -11,6 +11,11 @@ CREATE SCHEMA `testdata2`
 BeforeExecute
 -- MySqlConnector MySql
 
+ALTER DATABASE `testdata2` CHARACTER SET utf8 COLLATE utf8_general_ci
+
+BeforeExecute
+-- MySqlConnector MySql
+
 USE `testdata2`
 
 BeforeExecute
