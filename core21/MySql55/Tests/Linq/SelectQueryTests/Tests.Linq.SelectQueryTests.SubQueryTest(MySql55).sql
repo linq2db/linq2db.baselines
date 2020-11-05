@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `SampleClass`
+CREATE TABLE IF NOT EXISTS `SampleClass`
 (
 	`Id`    INT NOT NULL,
 	`Value` INT NOT NULL
@@ -60,5 +60,5 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `SampleClass`
+DROP TABLE IF EXISTS `SampleClass`
 
