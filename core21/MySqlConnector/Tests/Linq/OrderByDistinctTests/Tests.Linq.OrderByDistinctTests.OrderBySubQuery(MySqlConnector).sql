@@ -54,7 +54,7 @@ SELECT
 		FROM
 			`OrderByDistinctData` `s`
 		WHERE
-			(`s`.`DuplicateData` IS NULL AND `t`.`DuplicateData` IS NULL OR `s`.`DuplicateData` = `t`.`DuplicateData`)
+			(`s`.`DuplicateData` = `t`.`DuplicateData` OR `s`.`DuplicateData` IS NULL AND `t`.`DuplicateData` IS NULL)
 	)
 FROM
 	(
