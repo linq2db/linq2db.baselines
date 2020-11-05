@@ -56,8 +56,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @FirstName_1 VarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName VarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT FIRST 1
 	x.FirstName,
@@ -68,7 +68,7 @@ SELECT FIRST 1
 FROM
 	Person x
 WHERE
-	x.FirstName = @FirstName_1
+	x.FirstName = @FirstName
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -95,8 +95,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @FirstName_1 VarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName VarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT FIRST 1
 	x.FirstName,
@@ -107,7 +107,7 @@ SELECT FIRST 1
 FROM
 	Person x
 WHERE
-	x.FirstName = @FirstName_1
+	x.FirstName = @FirstName
 
 BeforeExecute
 -- Informix.DB2 Informix

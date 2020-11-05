@@ -32,7 +32,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN p.FirstName LIKE '%Jo%'
+				WHEN p.FirstName LIKE '%Jo%' ESCAPE '~'
 					THEN 't'
 				ELSE 'f'
 			END as Field1,

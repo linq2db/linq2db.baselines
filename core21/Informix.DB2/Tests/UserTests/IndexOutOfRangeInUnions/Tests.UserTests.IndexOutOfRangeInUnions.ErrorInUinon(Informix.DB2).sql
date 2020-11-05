@@ -61,7 +61,7 @@ FROM
 		SELECT
 			t2.NumeroInterno,
 			t2.StatusValor,
-			t2.DescricaoStatus
+			'Manual/Externo' as DescricaoStatus
 		FROM
 			(
 				SELECT
@@ -70,8 +70,7 @@ FROM
 						WHEN doSap_1.DocStatus = 'O'
 							THEN 'Aberto'
 						ELSE 'Fechado'
-					END as StatusValor,
-					'Manual/Externo' as DescricaoStatus
+					END as StatusValor
 				FROM
 					O2 doSap_1
 			) t2
@@ -80,7 +79,7 @@ UNION
 SELECT
 	t4.NumeroInterno,
 	t4.StatusValor,
-	t4.DescricaoStatus
+	'Manual/Externo'
 FROM
 	(
 		SELECT
@@ -89,8 +88,7 @@ FROM
 				WHEN doSap_2.DocStatus = 'O'
 					THEN 'Aberto'
 				ELSE 'Fechado'
-			END as StatusValor,
-			'Manual/Externo' as DescricaoStatus
+			END as StatusValor
 		FROM
 			O3 doSap_2
 	) t4

@@ -28,8 +28,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @gender_1 Char(1) -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender Char(1) -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	t1.FirstName,
@@ -40,12 +40,12 @@ SELECT
 FROM
 	Person t1
 WHERE
-	t1.PersonID = 1 AND t1.Gender = @gender_1
+	t1.PersonID = 1 AND t1.Gender = @gender
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @gender_1 Char(1) -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender Char(1) -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	t1.FirstName,
@@ -56,5 +56,5 @@ SELECT
 FROM
 	Person t1
 WHERE
-	t1.PersonID = 1 AND @gender_1 = t1.Gender
+	t1.PersonID = 1 AND @gender = t1.Gender
 
