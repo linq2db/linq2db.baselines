@@ -14,7 +14,7 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
-CREATE TABLE [TempTable]
+CREATE TEMPORARY TABLE [TempTable]
 (
 	[ID] INTEGER NOT NULL
 )

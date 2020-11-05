@@ -14,7 +14,7 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
-CREATE TABLE [TempTable]
+CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[ID] INTEGER NOT NULL
 )
@@ -47,5 +47,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [TempTable]
+DROP TABLE IF EXISTS [TempTable]
 
