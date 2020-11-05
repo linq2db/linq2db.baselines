@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ps NVarChar(3) -- String
-SET     @ps = '%[%'
+DECLARE @ps NVarChar(4) -- String
+SET     @ps = '%~[%'
 
 SELECT
 	[p].[FirstName],
