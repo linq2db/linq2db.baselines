@@ -33,8 +33,8 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 VarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName VarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT FIRST @take
 	"x"."FirstName",
@@ -45,7 +45,7 @@ SELECT FIRST @take
 FROM
 	"Person" "x"
 WHERE
-	"x"."FirstName" = @FirstName_1
+	"x"."FirstName" = @FirstName
 
 BeforeExecute
 -- Firebird
@@ -74,8 +74,8 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 VarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName VarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT FIRST @take
 	"x"."FirstName",
@@ -86,7 +86,7 @@ SELECT FIRST @take
 FROM
 	"Person" "x"
 WHERE
-	"x"."FirstName" = @FirstName_1
+	"x"."FirstName" = @FirstName
 
 BeforeExecute
 -- Firebird
