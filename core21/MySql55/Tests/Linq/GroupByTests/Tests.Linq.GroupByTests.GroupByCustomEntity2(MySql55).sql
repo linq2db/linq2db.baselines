@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @RandValue Int32
-SET     @RandValue = 1
+SET     @RandValue = 4
 
 SELECT
 	Count(*)
