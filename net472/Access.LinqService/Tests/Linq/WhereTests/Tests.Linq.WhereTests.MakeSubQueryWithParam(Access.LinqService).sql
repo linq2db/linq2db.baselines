@@ -2,18 +2,14 @@
 -- Access AccessOleDb
 DECLARE @n Integer -- Int32
 SET     @n = 1
+DECLARE @n_1 Integer -- Int32
+SET     @n_1 = 1
 
 SELECT
-	[p_1].[PersonID],
-	[p_1].[FirstName]
+	[p].[PersonID] + @n,
+	[p].[FirstName]
 FROM
-	(
-		SELECT
-			[p].[PersonID] + @n as [PersonID],
-			[p].[FirstName]
-		FROM
-			[Person] [p]
-	) [p_1]
+	[Person] [p]
 WHERE
-	[p_1].[PersonID] = 2
+	[p].[PersonID] = @n_1
 
