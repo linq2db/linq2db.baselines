@@ -31,8 +31,8 @@ GROUP BY
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @FirstName_1 VarChar(4) -- String
-SET     @FirstName_1 = 'Jane'
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'Jane'
 
 SELECT
 	`keyParam`.`FirstName`,
@@ -43,12 +43,12 @@ SELECT
 FROM
 	`Person` `keyParam`
 WHERE
-	`keyParam`.`FirstName` = @FirstName_1
+	`keyParam`.`FirstName` = @FirstName
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @FirstName_1 VarChar(4) -- String
-SET     @FirstName_1 = 'John'
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
 
 SELECT
 	`keyParam`.`FirstName`,
@@ -59,12 +59,12 @@ SELECT
 FROM
 	`Person` `keyParam`
 WHERE
-	`keyParam`.`FirstName` = @FirstName_1
+	`keyParam`.`FirstName` = @FirstName
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @FirstName_1 VarChar(6) -- String
-SET     @FirstName_1 = 'Jürgen'
+DECLARE @FirstName VarChar(6) -- String
+SET     @FirstName = 'Jürgen'
 
 SELECT
 	`keyParam`.`FirstName`,
@@ -75,12 +75,12 @@ SELECT
 FROM
 	`Person` `keyParam`
 WHERE
-	`keyParam`.`FirstName` = @FirstName_1
+	`keyParam`.`FirstName` = @FirstName
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @FirstName_1 VarChar(6) -- String
-SET     @FirstName_1 = 'Tester'
+DECLARE @FirstName VarChar(6) -- String
+SET     @FirstName = 'Tester'
 
 SELECT
 	`keyParam`.`FirstName`,
@@ -91,5 +91,5 @@ SELECT
 FROM
 	`Person` `keyParam`
 WHERE
-	`keyParam`.`FirstName` = @FirstName_1
+	`keyParam`.`FirstName` = @FirstName
 
