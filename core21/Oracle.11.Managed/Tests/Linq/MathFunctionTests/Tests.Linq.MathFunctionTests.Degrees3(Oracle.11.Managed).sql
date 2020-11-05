@@ -11,5 +11,5 @@ FROM
 			LinqDataTypes p
 	) t
 WHERE
-	(Cast(t.c1 as Float) IS NULL OR Cast(t.c1 as Float) <> 0.10000000000000001D)
+	(Cast(t.c1 as Float) <> 0.10000000000000001D OR Cast(t.c1 as Float) IS NULL)
 

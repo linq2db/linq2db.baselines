@@ -4,13 +4,13 @@ DECLARE @take Int32
 SET     @take = 1000
 
 SELECT
-	t2.Diagnosis,
+	t2.value_1,
 	t2.PersonID,
 	t2.y
 FROM
 	(
 		SELECT
-			a_Patient.Diagnosis,
+			a_Patient.Diagnosis as value_1,
 			a_Patient.PersonID,
 			Round(AVG(t1.PersonID), 27) as y
 		FROM

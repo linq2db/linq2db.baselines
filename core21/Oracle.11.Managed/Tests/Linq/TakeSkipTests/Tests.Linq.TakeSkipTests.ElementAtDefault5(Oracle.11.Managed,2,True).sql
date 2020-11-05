@@ -22,9 +22,9 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @skip Int32
-SET     @skip = 2
-DECLARE @take Int32
-SET     @take = 1
+SET     @skip = 3
+DECLARE @skip_1 Int32
+SET     @skip_1 = 2
 
 SELECT
 	t3.FirstName,
@@ -55,8 +55,8 @@ FROM
 					t1.LastName
 			) t2
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip
 	) t3
 WHERE
-	t3.RN > :skip
+	t3.RN > :skip_1
 

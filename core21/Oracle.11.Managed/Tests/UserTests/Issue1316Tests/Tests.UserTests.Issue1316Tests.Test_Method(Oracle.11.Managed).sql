@@ -24,8 +24,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @ID_1 Int32
-SET     @ID_1 = 5
+DECLARE @ID Int32
+SET     @ID = 5
 DECLARE @take Int32
 SET     @take = 2
 
@@ -34,7 +34,7 @@ SELECT
 FROM
 	Issue1316Tests t1
 WHERE
-	t1.ID = :ID_1 AND ROWNUM <= :take
+	t1.ID = :ID AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

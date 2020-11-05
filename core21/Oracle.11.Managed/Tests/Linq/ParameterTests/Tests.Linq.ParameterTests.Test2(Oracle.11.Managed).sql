@@ -2,6 +2,8 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @id1 Int32
 SET     @id1 = 1
+DECLARE @id1_1 Int32
+SET     @id1_1 = 1
 DECLARE @id2 Int32
 SET     @id2 = 10000
 DECLARE @take Int32
@@ -18,7 +20,7 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			((p.ParentID = :id1 OR p.ParentID >= :id1) OR p.ParentID >= :id2)
+			((p.ParentID = :id1 OR p.ParentID >= :id1_1) OR p.ParentID >= :id2)
 		ORDER BY
 			p.ParentID
 	) t1
@@ -29,6 +31,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @id1 Int32
 SET     @id1 = 2
+DECLARE @id1_1 Int32
+SET     @id1_1 = 2
 DECLARE @id2 Int32
 SET     @id2 = 10000
 DECLARE @take Int32
@@ -45,7 +49,7 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			((p.ParentID = :id1 OR p.ParentID >= :id1) OR p.ParentID >= :id2)
+			((p.ParentID = :id1 OR p.ParentID >= :id1_1) OR p.ParentID >= :id2)
 		ORDER BY
 			p.ParentID
 	) t1

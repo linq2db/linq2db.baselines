@@ -31,8 +31,8 @@ GROUP BY
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FirstName_1 Varchar2(4) -- String
-SET     @FirstName_1 = 'John'
+DECLARE @FirstName Varchar2(4) -- String
+SET     @FirstName = 'John'
 
 SELECT
 	keyParam.FirstName,
@@ -43,12 +43,12 @@ SELECT
 FROM
 	Person keyParam
 WHERE
-	keyParam.FirstName = :FirstName_1
+	keyParam.FirstName = :FirstName
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FirstName_1 Varchar2(6) -- String
-SET     @FirstName_1 = 'Tester'
+DECLARE @FirstName Varchar2(6) -- String
+SET     @FirstName = 'Tester'
 
 SELECT
 	keyParam.FirstName,
@@ -59,12 +59,12 @@ SELECT
 FROM
 	Person keyParam
 WHERE
-	keyParam.FirstName = :FirstName_1
+	keyParam.FirstName = :FirstName
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FirstName_1 Varchar2(4) -- String
-SET     @FirstName_1 = 'Jane'
+DECLARE @FirstName Varchar2(4) -- String
+SET     @FirstName = 'Jane'
 
 SELECT
 	keyParam.FirstName,
@@ -75,12 +75,12 @@ SELECT
 FROM
 	Person keyParam
 WHERE
-	keyParam.FirstName = :FirstName_1
+	keyParam.FirstName = :FirstName
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FirstName_1 Varchar2(6) -- String
-SET     @FirstName_1 = 'Jürgen'
+DECLARE @FirstName Varchar2(6) -- String
+SET     @FirstName = 'Jürgen'
 
 SELECT
 	keyParam.FirstName,
@@ -91,5 +91,5 @@ SELECT
 FROM
 	Person keyParam
 WHERE
-	keyParam.FirstName = :FirstName_1
+	keyParam.FirstName = :FirstName
 

@@ -2,16 +2,10 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t2.c1
+	t1.ParentID + 1
 FROM
 	Parent cp
-		INNER JOIN (
-			SELECT
-				t1.ParentID + 1 as c1,
-				t1.ParentID
-			FROM
-				Child t1
-		) t2 ON cp.ParentID = t2.ParentID
+		INNER JOIN Child t1 ON (t1.ParentID > 0 OR t1.ParentID > 1) AND cp.ParentID = t1.ParentID
 WHERE
-	(t2.c1 > 0 OR t2.c1 > 3) AND (t2.c1 > 1 OR t2.c1 > 2)
+	(t1.ParentID > -1 OR t1.ParentID > 2)
 

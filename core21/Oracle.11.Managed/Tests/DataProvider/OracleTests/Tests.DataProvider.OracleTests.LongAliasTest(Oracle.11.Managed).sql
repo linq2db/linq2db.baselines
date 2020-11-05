@@ -14,10 +14,15 @@ CREATE TABLE TempTestTable
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT DISTINCT
-	t.AAAAAAAAAAAAAAAAAAAAAAAAAAAABC
+SELECT
+	t1.AAAAAAAAAAAAAAAAAAAAAAAAAAAABC
 FROM
-	TempTestTable t
+	(
+		SELECT DISTINCT
+			t.AAAAAAAAAAAAAAAAAAAAAAAAAAAABC
+		FROM
+			TempTestTable t
+	) t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
