@@ -21,8 +21,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @id_1 Int -- Int32
-SET     @id_1 = 3
+DECLARE @id Int -- Int32
+SET     @id = 3
 
 SELECT TOP (@take)
 	[_].[ID],
@@ -30,5 +30,5 @@ SELECT TOP (@take)
 FROM
 	[AllTypes] [_]
 WHERE
-	[_].[ID] = @id_1
+	[_].[ID] = @id
 
