@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @p1 Char(1) -- String
-SET     @p1 = '0'
 DECLARE @Length_1 Integer -- Int32
-SET     @Length_1 = 3
+SET     @Length_1 = 9
 
 SELECT
 	"p_1".ID,
@@ -21,9 +19,8 @@ FROM
 	) "p_1"
 WHERE
 	CASE
-		WHEN @p1 = 1 THEN 5
 		WHEN Position('123', Left("p_1"."FirstName", 11), 6) = 0
 			THEN -1
-		ELSE (11 - Position('321', Reverse(Substring("p_1"."FirstName" from 6 for 6)))) - @Length_1 + 1
+		ELSE @Length_1 - Position('321', Reverse(Substring("p_1"."FirstName" from 6 for 6)))
 	END = 8
 

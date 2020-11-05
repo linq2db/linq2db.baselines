@@ -47,8 +47,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 2
-DECLARE @ID_1 Integer -- Int32
-SET     @ID_1 = 1001
+DECLARE @ID Integer -- Int32
+SET     @ID = 1001
 
 SELECT FIRST @take
 	"t".ID,
@@ -62,7 +62,7 @@ SELECT FIRST @take
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = @ID_1
+	"t".ID = @ID
 
 BeforeExecute
 -- Firebird3 Firebird

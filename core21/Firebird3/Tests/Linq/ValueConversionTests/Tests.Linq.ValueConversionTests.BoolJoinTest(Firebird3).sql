@@ -44,8 +44,6 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @BoolValue VarChar -- String
 SET     @BoolValue = 'Y'
-DECLARE @BoolValue_2 VarChar -- String
-SET     @BoolValue_2 = 'Y'
 
 SELECT
 	"t1"."Enum"
@@ -56,7 +54,7 @@ FROM
 				"t2"."BoolValue"
 			FROM
 				"ValueConversion" "t2"
-		) "t2_1" ON "t2_1"."BoolValue" = @BoolValue AND "t1"."BoolValue" = @BoolValue_2
+		) "t2_1" ON "t2_1"."BoolValue" = @BoolValue AND "t1"."BoolValue" = @BoolValue
 
 BeforeExecute
 -- Firebird3 Firebird

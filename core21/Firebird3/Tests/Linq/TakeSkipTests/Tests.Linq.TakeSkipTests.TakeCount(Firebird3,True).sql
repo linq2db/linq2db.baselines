@@ -8,7 +8,6 @@ SELECT
 FROM
 	(
 		SELECT FIRST @take
-			"t1"."ParentID",
 			"t1"."ChildID"
 		FROM
 			"Child" "t1"
