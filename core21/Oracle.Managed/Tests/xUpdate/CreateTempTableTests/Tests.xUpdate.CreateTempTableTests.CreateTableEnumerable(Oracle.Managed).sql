@@ -21,10 +21,19 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE TempTable
-(
-	ID Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE TempTable
+		(
+			ID Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -51,5 +60,12 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE TempTable
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE TempTable';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

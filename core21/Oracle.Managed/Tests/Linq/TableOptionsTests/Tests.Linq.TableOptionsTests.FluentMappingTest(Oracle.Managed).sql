@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE TempTable';
+	EXECUTE IMMEDIATE 'DROP TABLE TestTable';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -15,10 +15,12 @@ BeforeExecute
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE TempTable
+		CREATE GLOBAL TEMPORARY TABLE TestTable
 		(
-			ID Int NOT NULL
+			Id    Int NOT NULL,
+			Value Int NOT NULL
 		)
+		ON COMMIT PRESERVE ROWS
 	';
 EXCEPTION
 	WHEN OTHERS THEN
@@ -30,37 +32,33 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO TempTable
-(
-	ID
-)
 SELECT
-	p.ParentID
+	t4.Id_1,
+	t4.Value_1,
+	t4.Id,
+	t4.Value_2,
+	t3.Id,
+	t3.Value
 FROM
-	Parent p
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-SELECT
-	t1.ID
-FROM
-	TempTable t1
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-SELECT
-	t.ID
-FROM
-	Parent p
-		INNER JOIN TempTable t ON p.ParentID = t.ID
+	(
+		SELECT
+			t2.Id,
+			t1.Id as Id_1,
+			t1.Value as Value_1,
+			t2.Value as Value_2
+		FROM
+			TestTable t1,
+			TestTable t2
+	) t4
+		INNER JOIN TestTable t3 ON t4.Id = t3.Id
+WHERE
+	t4.Id_1 = t4.Id
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE TempTable';
+	EXECUTE IMMEDIATE 'DROP TABLE TestTable';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

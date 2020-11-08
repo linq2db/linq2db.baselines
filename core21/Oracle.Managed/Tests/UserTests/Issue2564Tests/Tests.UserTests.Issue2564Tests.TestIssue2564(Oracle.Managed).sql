@@ -29,16 +29,16 @@ CREATE TABLE Issue2564Table
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @from_1 TimeStamp -- DateTime
-SET     @from_1 = TO_TIMESTAMP('2020-10-23 16:32:42.400402', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @from_1 = TO_TIMESTAMP('2020-11-07 18:14:47.114544', 'YYYY-MM-DD HH24:MI:SS.FF6')
 DECLARE @to_1 TimeStamp -- DateTime
-SET     @to_1 = TO_TIMESTAMP('2020-10-24 16:32:42.400402', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @to_1 = TO_TIMESTAMP('2020-11-08 18:14:47.114544', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
 SELECT
 	Min(t1.TranslatedMessage1),
 	t1.Key_2,
 	t1.Key_3,
 	Count(*),
-	Sum((CAST (t1.TimestampGone as DATE) - CAST (t1.TimestampGenerated as DATE)) * 86400000)
+	Sum(1000 * (EXTRACT(SECOND FROM CAST (t1.TimestampGone as TIMESTAMP) - CAST (t1.TimestampGenerated as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST (t1.TimestampGone as TIMESTAMP) - CAST (t1.TimestampGenerated as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST (t1.TimestampGone as TIMESTAMP) - CAST (t1.TimestampGenerated as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST (t1.TimestampGone as TIMESTAMP) - CAST (t1.TimestampGenerated as TIMESTAMP))))))
 FROM
 	(
 		SELECT

@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE TempTable';
+	EXECUTE IMMEDIATE 'DROP TABLE CreateIfNotExistsTable';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -15,9 +15,10 @@ BeforeExecute
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE TempTable
+		CREATE TABLE CreateIfNotExistsTable
 		(
-			ID Int NOT NULL
+			Id    Int NOT NULL,
+			Value Int NOT NULL
 		)
 	';
 EXCEPTION
@@ -30,41 +31,46 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO TempTable
+INSERT INTO CreateIfNotExistsTable
 (
-	ID
+	Id,
+	Value
 )
-SELECT
-	p.ParentID
-FROM
-	Parent p
+VALUES
+(
+	1,
+	2
+)
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.ID
+	t1.Id,
+	t1.Value
 FROM
-	TempTable t1
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-SELECT
-	t.ID
-FROM
-	Parent p
-		INNER JOIN TempTable t ON p.ParentID = t.ID
+	CreateIfNotExistsTable t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE TempTable';
+	EXECUTE IMMEDIATE '
+		CREATE TABLE CreateIfNotExistsTable
+		(
+			Id    Int NOT NULL,
+			Value Int NOT NULL
+		)
+	';
 EXCEPTION
 	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
+		IF SQLCODE != -955 THEN
 			RAISE;
 		END IF;
 END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+DROP TABLE CreateIfNotExistsTable
 
