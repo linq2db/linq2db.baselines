@@ -6,6 +6,11 @@ SET @@global.sql_mode=(SELECT REPLACE(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', '
 BeforeExecute
 -- MySqlConnector MySql
 
+SET GLOBAL local_infile=ON;
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE IF EXISTS Doctor
 
 BeforeExecute
@@ -724,7 +729,7 @@ CREATE PROCEDURE `Issue2313Parameters`(
 	IN `GeometryCollection` GEOMETRYCOLLECTION
 )
 BEGIN
-	SELECT 
+	SELECT
 	`VarChar255`,
 	`VarChar1`,
 	`Char255`,
@@ -849,7 +854,7 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `Year` YEAR
 )
 BEGIN
-	SELECT 
+	SELECT
 	`VarChar255`,
 	`VarChar1`,
 	`Char255`,
