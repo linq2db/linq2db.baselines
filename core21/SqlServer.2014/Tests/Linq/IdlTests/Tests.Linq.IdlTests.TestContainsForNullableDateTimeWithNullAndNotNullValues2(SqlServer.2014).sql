@@ -17,13 +17,13 @@ FROM
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @p1 DateTime2
-SET     @p1 = '2009-09-24T09:19:29.0900000'
+DECLARE @DateTimeValue2 DateTime2
+SET     @DateTimeValue2 = '2009-09-24T09:19:29.0900000'
 
 SELECT
 	Count(*)
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN (@p1) OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN (@DateTimeValue2) OR [x].[DateTimeValue2] IS NULL)
 
