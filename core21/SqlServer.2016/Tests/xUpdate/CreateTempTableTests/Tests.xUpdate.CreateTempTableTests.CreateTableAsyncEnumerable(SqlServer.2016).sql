@@ -15,10 +15,11 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012 (asynchronously)
 
-CREATE TABLE [TempTable]
-(
-	[ID] Int NOT NULL
-)
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
+	CREATE TABLE [TempTable]
+	(
+		[ID] Int NOT NULL
+	)
 
 BeforeExecute
 INSERT ASYNC BULK [TempTable](ID
@@ -35,5 +36,6 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012 (asynchronously)
 
-DROP TABLE [TempTable]
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [TempTable]
 

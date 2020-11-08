@@ -7,7 +7,7 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012 (asynchronously)
 
-CREATE TABLE [TempTable]
+CREATE TABLE [#TempTable]
 (
 	[ID] Int NOT NULL
 )
@@ -15,7 +15,7 @@ CREATE TABLE [TempTable]
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012 (asynchronously)
 
-INSERT INTO [TempTable]
+INSERT INTO [#TempTable]
 (
 	[ID]
 )
@@ -27,7 +27,7 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012 (asynchronously)
 
-DROP TABLE [TempTable]
+DROP TABLE [#TempTable]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
