@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p1 Timestamp(20) -- DateTime
-SET     @p1 = '2001-01-11-01.11.21.100000'
+DECLARE @DateTimeValue_1 Timestamp(20) -- DateTime
+SET     @DateTimeValue_1 = '2001-01-11-01.11.21.100000'
 
 SELECT
 	"t".ID,
@@ -17,5 +17,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."DateTimeValue" IN (@p1)
+	"t"."DateTimeValue" IN (@DateTimeValue_1)
 
