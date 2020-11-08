@@ -14,7 +14,7 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql (asynchronously)
 
-CREATE TABLE `TempTable`
+CREATE TEMPORARY TABLE `TempTable`
 (
 	`ID` INT NOT NULL
 )

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `T1`
+CREATE TABLE IF NOT EXISTS `T1`
 (
 	`InstrumentId`         INT          NOT NULL,
 	`InstrumentCode`       VARCHAR(255)     NULL,
@@ -14,7 +14,7 @@ CREATE TABLE `T1`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `T2`
+CREATE TABLE IF NOT EXISTS `T2`
 (
 	`InstrumentId` INT NOT NULL,
 	`IndexId`      INT NOT NULL
@@ -23,7 +23,7 @@ CREATE TABLE `T2`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `T3`
+CREATE TABLE IF NOT EXISTS `T3`
 (
 	`InstrumentId` INT NOT NULL,
 	`IndexId`      INT NOT NULL
@@ -194,15 +194,15 @@ ORDER BY
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `T3`
+DROP TABLE IF EXISTS `T3`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `T2`
+DROP TABLE IF EXISTS `T2`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `T1`
+DROP TABLE IF EXISTS `T1`
 
