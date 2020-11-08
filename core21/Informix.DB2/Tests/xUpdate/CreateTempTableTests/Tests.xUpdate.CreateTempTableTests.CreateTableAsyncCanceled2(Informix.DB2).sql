@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TempTable
+DROP TABLE IF EXISTS TempTable
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-CREATE TABLE TempTable
+CREATE TEMP TABLE TempTable
 (
 	ID Int NOT NULL
 )

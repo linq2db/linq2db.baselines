@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE DropTableTest
+DROP TABLE IF EXISTS DropTableTest
 
 BeforeExecute
 -- Informix.DB2 Informix
