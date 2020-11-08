@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @p1 Date -- DateTime
-SET     @p1 = #2001-01-11 01:11:21#
+DECLARE @DateTimeValue_1 Date -- DateTime
+SET     @DateTimeValue_1 = #2001-01-11 01:11:21#
 
 SELECT
 	[t].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN (@p1)
+	[t].[DateTimeValue] IN (@DateTimeValue_1)
 
