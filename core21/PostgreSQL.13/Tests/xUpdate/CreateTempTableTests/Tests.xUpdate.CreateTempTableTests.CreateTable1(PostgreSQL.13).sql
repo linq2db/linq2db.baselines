@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS "TempTable"
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TempTable"
+CREATE TABLE IF NOT EXISTS "TempTable"
 (
 	"ID" Int NOT NULL
 )
@@ -27,6 +27,14 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	t1."ID"
+FROM
+	"TempTable" t1
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
 	t."ID"
 FROM
 	"Parent" p
@@ -35,5 +43,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TempTable"
+DROP TABLE IF EXISTS "TempTable"
 
