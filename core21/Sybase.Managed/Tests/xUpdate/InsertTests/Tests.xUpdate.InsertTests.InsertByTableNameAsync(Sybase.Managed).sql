@@ -121,5 +121,6 @@ DROP TABLE [xxPerson]
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-DROP TABLE [xxPerson]
+IF (OBJECT_ID(N'xxPerson') IS NOT NULL)
+	DROP TABLE [xxPerson]
 

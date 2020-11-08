@@ -1,7 +1,8 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TestTrun]
+IF (OBJECT_ID(N'TestTrun') IS NOT NULL)
+	DROP TABLE [TestTrun]
 
 BeforeExecute
 -- Sybase.Managed Sybase

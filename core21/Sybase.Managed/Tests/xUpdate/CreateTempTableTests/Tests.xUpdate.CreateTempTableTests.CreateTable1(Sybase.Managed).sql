@@ -1,15 +1,19 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TempTable]
+IF (OBJECT_ID(N'TempTable') IS NOT NULL)
+	DROP TABLE [TempTable]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [TempTable]
-(
-	[ID] Int NOT NULL
-)
+IF (OBJECT_ID(N'TempTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [TempTable]
+		(
+			[ID] Int NOT NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -27,6 +31,14 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
+	[t1].[ID]
+FROM
+	[TempTable] [t1]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
 	[t].[ID]
 FROM
 	[Parent] [p]
@@ -35,5 +47,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TempTable]
+IF (OBJECT_ID(N'TempTable') IS NOT NULL)
+	DROP TABLE [TempTable]
 
