@@ -1,33 +1,36 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [T1]
-(
-	[InstrumentId]         Int            NOT NULL,
-	[InstrumentCode]       NVarChar(4000)     NULL,
-	[CreateDate]           DateTime       NOT NULL,
-	[SourceInstrumentCode] NVarChar(4000)     NULL,
+IF (OBJECT_ID(N'[T1]', N'U') IS NULL)
+	CREATE TABLE [T1]
+	(
+		[InstrumentId]         Int            NOT NULL,
+		[InstrumentCode]       NVarChar(4000)     NULL,
+		[CreateDate]           DateTime       NOT NULL,
+		[SourceInstrumentCode] NVarChar(4000)     NULL,
 
-	CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
-)
-
-BeforeExecute
--- SqlServer.2017
-
-CREATE TABLE [T2]
-(
-	[InstrumentId] Int NOT NULL,
-	[IndexId]      Int NOT NULL
-)
+		CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
+	)
 
 BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [T3]
-(
-	[InstrumentId] Int NOT NULL,
-	[IndexId]      Int NOT NULL
-)
+IF (OBJECT_ID(N'[T2]', N'U') IS NULL)
+	CREATE TABLE [T2]
+	(
+		[InstrumentId] Int NOT NULL,
+		[IndexId]      Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[T3]', N'U') IS NULL)
+	CREATE TABLE [T3]
+	(
+		[InstrumentId] Int NOT NULL,
+		[IndexId]      Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -194,15 +197,18 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [T3]
+IF (OBJECT_ID(N'[T3]', N'U') IS NOT NULL)
+	DROP TABLE [T3]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [T2]
+IF (OBJECT_ID(N'[T2]', N'U') IS NOT NULL)
+	DROP TABLE [T2]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [T1]
+IF (OBJECT_ID(N'[T1]', N'U') IS NOT NULL)
+	DROP TABLE [T1]
 
