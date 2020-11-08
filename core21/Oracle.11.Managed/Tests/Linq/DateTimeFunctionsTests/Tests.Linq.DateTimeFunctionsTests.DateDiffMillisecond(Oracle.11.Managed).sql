@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	(CAST ((t.DateTimeValue + 1D * INTERVAL '1' SECOND) as DATE) - CAST (t.DateTimeValue as DATE)) * 86400000
+	1000 * (EXTRACT(SECOND FROM CAST ((t.DateTimeValue + 2023456789D * INTERVAL '0.001' SECOND) as TIMESTAMP) - CAST (t.DateTimeValue as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST ((t.DateTimeValue + 2023456789D * INTERVAL '0.001' SECOND) as TIMESTAMP) - CAST (t.DateTimeValue as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST ((t.DateTimeValue + 2023456789D * INTERVAL '0.001' SECOND) as TIMESTAMP) - CAST (t.DateTimeValue as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST ((t.DateTimeValue + 2023456789D * INTERVAL '0.001' SECOND) as TIMESTAMP) - CAST (t.DateTimeValue as TIMESTAMP)))))
 FROM
 	LinqDataTypes t
 
