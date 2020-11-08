@@ -1,33 +1,48 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE T1
-(
-	"InstrumentId"         Int                                    NOT NULL,
-	"InstrumentCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
-	"CreateDate"           TimeStamp                              NOT NULL,
-	"SourceInstrumentCode" VarChar(255) CHARACTER SET UNICODE_FSS,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T1')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE T1
+			(
+				"InstrumentId"         Int                                    NOT NULL,
+				"InstrumentCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
+				"CreateDate"           TimeStamp                              NOT NULL,
+				"SourceInstrumentCode" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
-)
-
-BeforeExecute
--- Firebird
-
-CREATE TABLE T2
-(
-	"InstrumentId" Int NOT NULL,
-	"IndexId"      Int NOT NULL
-)
+				CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE T3
-(
-	"InstrumentId" Int NOT NULL,
-	"IndexId"      Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T2')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE T2
+			(
+				"InstrumentId" Int NOT NULL,
+				"IndexId"      Int NOT NULL
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T3')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE T3
+			(
+				"InstrumentId" Int NOT NULL,
+				"IndexId"      Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -194,15 +209,24 @@ ORDER BY
 BeforeExecute
 -- Firebird
 
-DROP TABLE T3
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T3')) THEN
+		EXECUTE STATEMENT 'DROP TABLE T3';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE T2
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T2')) THEN
+		EXECUTE STATEMENT 'DROP TABLE T2';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE T1
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T1')) THEN
+		EXECUTE STATEMENT 'DROP TABLE T1';
+END
 

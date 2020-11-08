@@ -1,28 +1,28 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "Parent564"
-(
-	"Id"          Int                                     NOT NULL,
-	"Type"        VarChar(255) CHARACTER SET UNICODE_FSS,
-	"StringValue" VarChar(20) CHARACTER SET UNICODE_FSS,
-	"IntValue"    Int,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "Parent564"
+		(
+			"Id"          Int                                     NOT NULL,
+			"Type"        VarChar(255) CHARACTER SET UNICODE_FSS,
+			"StringValue" VarChar(20) CHARACTER SET UNICODE_FSS,
+			"IntValue"    Int,
 
-	CONSTRAINT "PK_Parent564" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- Firebird
-
-CREATE GENERATOR "GIDENTITY_Parent564"
-
-BeforeExecute
--- Firebird
-
-CREATE TRIGGER "TIDENTITY_Parent564" FOR "Parent564"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW."Id" = GEN_ID("GIDENTITY_Parent564", 1);
+			CONSTRAINT "PK_Parent564" PRIMARY KEY ("Id")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_Parent564"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_Parent564" FOR "Parent564"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."Id" = GEN_ID("GIDENTITY_Parent564", 1);
+		END
+	';
 END
 
 BeforeExecute

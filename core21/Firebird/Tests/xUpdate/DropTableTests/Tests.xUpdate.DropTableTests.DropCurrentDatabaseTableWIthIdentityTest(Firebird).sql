@@ -13,26 +13,26 @@ END
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "DropTableTestID"
-(
-	ID  Int  NOT NULL,
-	ID1 Int  NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "DropTableTestID"
+		(
+			ID  Int  NOT NULL,
+			ID1 Int  NOT NULL,
 
-	CONSTRAINT "PK_DropTableTestID" PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Firebird
-
-CREATE GENERATOR "GIDENTITY_DropTableTestID"
-
-BeforeExecute
--- Firebird
-
-CREATE TRIGGER "TIDENTITY_DropTableTestID" FOR "DropTableTestID"
-BEFORE INSERT POSITION 0
-AS BEGIN
-	NEW.ID = GEN_ID("GIDENTITY_DropTableTestID", 1);
+			CONSTRAINT "PK_DropTableTestID" PRIMARY KEY (ID)
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_DropTableTestID"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_DropTableTestID" FOR "DropTableTestID"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW.ID = GEN_ID("GIDENTITY_DropTableTestID", 1);
+		END
+	';
 END
 
 BeforeExecute

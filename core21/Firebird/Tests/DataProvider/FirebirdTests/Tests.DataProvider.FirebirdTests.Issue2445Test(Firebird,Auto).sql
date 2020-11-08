@@ -26,7 +26,7 @@ SELECT
 	"t1"."OwnerId",
 	"a_Owner"."Id",
 	"a_Owner"."Name",
-	"a_Owner"."cnt"
+	"a_Owner"."CountOfTCards"
 FROM
 	"Card" "t1"
 		LEFT JOIN (
@@ -40,7 +40,7 @@ FROM
 						"Card" "t"
 					WHERE
 						"t"."OwnerId" = "cl"."Id"
-				) as "cnt"
+				) as "CountOfTCards"
 			FROM
 				"Client" "cl"
 		) "a_Owner" ON "a_Owner"."Id" = "t1"."OwnerId"

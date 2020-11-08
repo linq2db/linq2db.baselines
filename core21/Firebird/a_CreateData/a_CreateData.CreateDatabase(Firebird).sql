@@ -333,7 +333,7 @@ BeforeExecute
 CREATE TRIGGER "CREATE_DataTypeTest" FOR "DataTypeTest"
 BEFORE INSERT POSITION 0
 AS BEGIN
-	NEW."DataTypeID" = GEN_ID("DataTypeID", 1); 
+	NEW."DataTypeID" = GEN_ID("DataTypeID", 1);
 END;
 
 BeforeExecute
@@ -632,7 +632,7 @@ RETURNS (
 	)
 AS
 BEGIN
-	FOR 
+	FOR
 		SELECT "PersonID", "FirstName", "LastName", "MiddleName", "Gender" FROM "Person"
 		INTO
 			:PersonID,
@@ -779,7 +779,7 @@ RETURNS (
 	)
 AS
 BEGIN
-	FOR 
+	FOR
 		SELECT
 			"Person"."PersonID",
 			"FirstName",
@@ -818,7 +818,7 @@ RETURNS (
 	)
 AS
 BEGIN
-	FOR 
+	FOR
 		SELECT
 			"Person"."PersonID",
 			"MiddleName",
