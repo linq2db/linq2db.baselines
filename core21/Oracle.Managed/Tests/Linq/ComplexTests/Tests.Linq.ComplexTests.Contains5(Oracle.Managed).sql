@@ -13,9 +13,14 @@ FROM
 WHERE
 	c_1.ParentID IN (
 		SELECT
-			p.ParentID
+			t1.ParentID
 		FROM
-			Parent p
-		OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
+			(
+				SELECT
+					p.ParentID
+				FROM
+					Parent p
+				OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
+			) t1
 	)
 

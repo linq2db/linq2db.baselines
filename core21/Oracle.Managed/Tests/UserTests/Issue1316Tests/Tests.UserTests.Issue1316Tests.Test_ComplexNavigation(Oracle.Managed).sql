@@ -24,8 +24,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @ID_1 Int32
-SET     @ID_1 = 5
+DECLARE @ID Int32
+SET     @ID = 5
 DECLARE @take Int32
 SET     @take = 2
 
@@ -34,13 +34,13 @@ SELECT
 FROM
 	Issue1316Tests t1
 WHERE
-	t1.ID = :ID_1
+	t1.ID = :ID
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @Id_1 Int32
-SET     @Id_1 = 5
+DECLARE @Id Int32
+SET     @Id = 5
 DECLARE @take Int32
 SET     @take = 2
 
@@ -49,7 +49,7 @@ SELECT
 FROM
 	Issue1316Tests t1
 WHERE
-	t1.ID = :Id_1
+	t1.ID = :Id
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute

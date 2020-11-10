@@ -304,7 +304,7 @@ WHERE
 	FROM
 		Patient a_Patient_1
 	WHERE
-		Source.Diagnosis LIKE '%very%' AND a_Patient_1.Diagnosis LIKE '%very%' AND
+		Source.Diagnosis LIKE '%very%' ESCAPE '~' AND a_Patient_1.Diagnosis LIKE '%very%' ESCAPE '~' AND
 		Target.PersonID = a_Patient_1.PersonID
 )
 

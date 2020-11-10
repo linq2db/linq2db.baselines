@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID + 1 = 2
+	p.PersonID = 1
 

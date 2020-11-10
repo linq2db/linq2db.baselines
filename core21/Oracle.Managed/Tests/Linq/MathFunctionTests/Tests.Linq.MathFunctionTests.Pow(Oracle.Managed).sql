@@ -11,5 +11,5 @@ FROM
 			LinqDataTypes p
 	) t
 WHERE
-	t.c1 <> 0D
+	(t.c1 <> 0D OR t.c1 IS NULL)
 

@@ -33,8 +33,8 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @BoolValue_1 Varchar2 -- String
-SET     @BoolValue_1 = 'Y'
+DECLARE @BoolValue Varchar2 -- String
+SET     @BoolValue = 'Y'
 
 SELECT
 	t.Id,
@@ -44,7 +44,7 @@ SELECT
 FROM
 	ValueConversion t
 WHERE
-	t.BoolValue = :BoolValue_1
+	t.BoolValue = :BoolValue
 
 BeforeExecute
 -- Oracle.Managed Oracle12

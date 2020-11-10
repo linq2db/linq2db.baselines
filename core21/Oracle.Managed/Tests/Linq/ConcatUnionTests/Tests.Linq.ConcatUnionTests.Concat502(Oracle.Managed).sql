@@ -25,5 +25,5 @@ FROM
 			c_2.ParentID = 3
 	) p
 WHERE
-	(p.Value1 IS NULL OR p.Value1 <> 2)
+	(p.Value1 <> 2 OR p.Value1 IS NULL)
 

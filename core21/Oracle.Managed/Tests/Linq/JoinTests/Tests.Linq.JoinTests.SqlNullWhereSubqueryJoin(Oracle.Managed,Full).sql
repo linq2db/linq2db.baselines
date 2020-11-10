@@ -24,5 +24,5 @@ FROM
 			FROM
 				Parent t2
 			FETCH NEXT :take_1 ROWS ONLY
-		) p ON p1.ParentID = p.ParentID AND (p1.Value1 IS NULL AND p.Value1 IS NULL OR p1.Value1 = p.Value1)
+		) p ON p1.ParentID = p.ParentID AND (p1.Value1 = p.Value1 OR p1.Value1 IS NULL AND p.Value1 IS NULL)
 

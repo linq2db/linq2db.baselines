@@ -20,7 +20,7 @@ BeforeExecute
 SELECT
 	t.Id,
 	t.Value,
-	s.c1
+	1
 FROM
 	SampleClass t
 		INNER JOIN (
