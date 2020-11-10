@@ -17,12 +17,7 @@ FROM
 					t2.ChildID,
 					ROWNUM as RN
 				FROM
-					(
-						SELECT
-							t1.ChildID
-						FROM
-							Child t1
-					) t2
+					Child t2
 				WHERE
 					ROWNUM <= :skip
 			) t3

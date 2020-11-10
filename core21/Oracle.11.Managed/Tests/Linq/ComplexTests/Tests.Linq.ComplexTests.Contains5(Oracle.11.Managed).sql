@@ -24,12 +24,7 @@ WHERE
 							t1.ParentID,
 							ROWNUM as RN
 						FROM
-							(
-								SELECT
-									p.ParentID
-								FROM
-									Parent p
-							) t1
+							Parent t1
 						WHERE
 							ROWNUM <= :skip
 					) t2

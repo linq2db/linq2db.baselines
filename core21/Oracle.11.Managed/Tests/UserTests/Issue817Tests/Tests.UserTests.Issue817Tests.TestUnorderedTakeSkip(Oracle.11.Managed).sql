@@ -12,12 +12,7 @@ FROM
 		SELECT
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
-					1 as c1
-				FROM
-					Person t1
-			) t2
+			Person t2
 		WHERE
 			ROWNUM <= :skip
 	) t3

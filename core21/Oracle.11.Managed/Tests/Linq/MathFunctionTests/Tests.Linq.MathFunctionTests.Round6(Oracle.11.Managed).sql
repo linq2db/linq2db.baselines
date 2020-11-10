@@ -2,14 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t.c1
+	Round(Cast(t.MoneyValue as Float), 0)
 FROM
-	(
-		SELECT
-			Round(Cast(p.MoneyValue as Float), 0) as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes t
 WHERE
-	(t.c1 <> 0D OR t.c1 IS NULL)
+	(Round(Cast(t.MoneyValue as Float), 0) <> 0D OR Round(Cast(t.MoneyValue as Float), 0) IS NULL)
 
