@@ -24,15 +24,15 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ID_1 Integer(4) -- Int32
-SET     @ID_1 = 5
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 5
 
 SELECT
 	"_".ID
 FROM
 	"Issue1316Tests" "_"
 WHERE
-	"_".ID = @ID_1
+	"_".ID = @ID
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute

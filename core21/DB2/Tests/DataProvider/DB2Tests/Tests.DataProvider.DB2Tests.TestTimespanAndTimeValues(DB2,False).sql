@@ -395,8 +395,8 @@ FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp8_1 Timestamp(20) -- DateTime
-SET     @TimeStamp8_1 = 1000-01-10-02.20.30.00000001
+DECLARE @TimeStamp8 Timestamp(20) -- DateTime
+SET     @TimeStamp8 = 1000-01-10-02.20.30.00000001
 
 SELECT
 	"_"."Id",
@@ -419,13 +419,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp8" = @TimeStamp8_1
+	"_"."TimeStamp8" = @TimeStamp8
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp9_1 Timestamp(20) -- DateTime
-SET     @TimeStamp9_1 = 1000-01-10-02.20.30.000000001
+DECLARE @TimeStamp9 Timestamp(20) -- DateTime
+SET     @TimeStamp9 = 1000-01-10-02.20.30.000000001
 
 SELECT
 	"_"."Id",
@@ -448,13 +448,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp9" = @TimeStamp9_1
+	"_"."TimeStamp9" = @TimeStamp9
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp10_1 Timestamp(20) -- DateTime
-SET     @TimeStamp10_1 = 1000-01-10-02.20.30.0000000001
+DECLARE @TimeStamp10 Timestamp(20) -- DateTime
+SET     @TimeStamp10 = 1000-01-10-02.20.30.0000000001
 
 SELECT
 	"_"."Id",
@@ -477,13 +477,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp10" = @TimeStamp10_1
+	"_"."TimeStamp10" = @TimeStamp10
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp11_1 Timestamp(20) -- DateTime
-SET     @TimeStamp11_1 = 1000-01-10-02.20.30.00000000001
+DECLARE @TimeStamp11 Timestamp(20) -- DateTime
+SET     @TimeStamp11 = 1000-01-10-02.20.30.00000000001
 
 SELECT
 	"_"."Id",
@@ -506,13 +506,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp11" = @TimeStamp11_1
+	"_"."TimeStamp11" = @TimeStamp11
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp12_1 Timestamp(20) -- DateTime
-SET     @TimeStamp12_1 = 1000-01-10-02.20.30.000000000001
+DECLARE @TimeStamp12 Timestamp(20) -- DateTime
+SET     @TimeStamp12 = 1000-01-10-02.20.30.000000000001
 
 SELECT
 	"_"."Id",
@@ -535,7 +535,7 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp12" = @TimeStamp12_1
+	"_"."TimeStamp12" = @TimeStamp12
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute

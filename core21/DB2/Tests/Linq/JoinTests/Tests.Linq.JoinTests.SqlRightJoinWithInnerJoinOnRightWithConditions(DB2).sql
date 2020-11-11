@@ -4,6 +4,8 @@ DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 2
+DECLARE @id1_1 Integer(4) -- Int32
+SET     @id1_1 = 1
 
 SELECT
 	"left_3"."left_2",
@@ -28,8 +30,8 @@ FROM
 			FROM
 				"Parent" "p_2"
 			WHERE
-				"p_2"."ParentID" <> @id1
-		) "t1" ON ("t1"."Value1" + 2 IS NOT NULL AND "t1"."Value1" + 2 = "left_3"."left_1")
+				"p_2"."ParentID" <> @id1_1
+		) "t1" ON "t1"."Value1" + 2 = "left_3"."left_1"
 ORDER BY
 	"left_3"."left_2"
 
