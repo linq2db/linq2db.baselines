@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ParentID_1  -- Int32
-SET     @ParentID_1 = 2
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -29,7 +29,7 @@ FROM
 						FROM
 							[Parent] [p]
 						WHERE
-							[p].[ParentID] = @ParentID_1
+							[p].[ParentID] = @ParentID
 						LIMIT @take
 					) [t1]
 			) [lw_Parent]
@@ -40,8 +40,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ParentID_2  -- Int32
-SET     @ParentID_2 = 2
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -62,7 +62,7 @@ FROM
 				FROM
 					[Parent] [p]
 				WHERE
-					[p].[ParentID] = @ParentID_2
+					[p].[ParentID] = @ParentID
 				LIMIT @take
 			) [t1]
 	) [lw_Parent]

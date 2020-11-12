@@ -1834,7 +1834,7 @@ FROM
 				INNER JOIN [DetailClass] [d] ON [r].[Id1] = [d].[MasterId]
 	) [key_data_result]
 		INNER JOIN [SubDetailClass] [detail] ON [key_data_result].[DetailId] = [detail].[DetailId]
-		LEFT JOIN [SubDetailClass] [a_Detail] ON ([detail].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL OR [detail].[DetailId] = [a_Detail].[DetailId])
+		LEFT JOIN [SubDetailClass] [a_Detail] ON ([detail].[DetailId] = [a_Detail].[DetailId] OR [detail].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
