@@ -188,8 +188,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @cond VarChar(4) -- String
-SET     @cond = 'aaa%'
 DECLARE @uptoDate TimeStamp -- DateTime
 SET     @uptoDate = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
@@ -201,7 +199,7 @@ FROM
 		INNER JOIN T3 "w" ON "idx"."IndexId" = "w"."IndexId"
 		INNER JOIN T1 "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
 WHERE
-	"ins"."SourceInstrumentCode" IS NOT NULL AND "ins_1"."InstrumentCode" LIKE @cond ESCAPE '~' AND
+	"ins"."SourceInstrumentCode" IS NOT NULL AND "ins_1"."InstrumentCode" STARTING WITH 'aaa' AND
 	"ins_1"."CreateDate" <= @uptoDate
 ORDER BY
 	"ins"."SourceInstrumentCode"

@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" LIKE 'Jo%' AND "p"."PersonID" = 1
+	"p"."FirstName" STARTING WITH 'Jo' AND "p"."PersonID" = 1
 
