@@ -29,8 +29,8 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @Id_1 UniqueIdentifier -- Guid
-SET     @Id_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT TOP (@take)
 	[x].[Id],
@@ -38,7 +38,7 @@ SELECT TOP (@take)
 FROM
 	[TestTable] [x]
 WHERE
-	[x].[Id] = @Id_1
+	[x].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
@@ -58,8 +58,8 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @Id_1 UniqueIdentifier -- Guid
-SET     @Id_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT TOP (@take)
 	[x].[Id],
@@ -67,7 +67,7 @@ SELECT TOP (@take)
 FROM
 	[TestTable] [x]
 WHERE
-	[x].[Id] = @Id_1
+	[x].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
