@@ -14,12 +14,12 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	Count(*)
+	[t1].[MyGroupedCount]
 FROM
 	[Issue1192Table] [t_1]
 		LEFT JOIN (
 			SELECT
-				*
+				Count(*) as [MyGroupedCount]
 			FROM
 				[Issue1192Table] [t]
 			WHERE
