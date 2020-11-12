@@ -36,7 +36,7 @@ UPDATE
 SET
 	`_`.`LastName` = Cast((Char_Length(@name) + @idx) as CHAR(11))
 WHERE
-	`_`.`FirstName` LIKE 'Update14%'
+	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -46,7 +46,7 @@ SELECT
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'Update14%'
+	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -55,5 +55,5 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'Update14%'
+	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 
