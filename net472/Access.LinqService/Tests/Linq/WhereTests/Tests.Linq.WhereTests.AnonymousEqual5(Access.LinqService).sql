@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 3
-DECLARE @Value1_1 Integer -- Int32
-SET     @Value1_1 = 3
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 3
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 3
 
 SELECT
 	[p].[ParentID],
@@ -11,5 +11,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	([p].[ParentID] = @ParentID_1 AND [p].[Value1] = @Value1_1)
+	([p].[ParentID] = @ParentID AND [p].[Value1] = @Value1)
 
