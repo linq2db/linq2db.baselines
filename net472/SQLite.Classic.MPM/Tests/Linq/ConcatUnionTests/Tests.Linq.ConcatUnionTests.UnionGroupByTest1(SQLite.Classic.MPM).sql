@@ -39,17 +39,11 @@ FROM
 	) [t3]
 UNION
 SELECT
-	[t4].[year_1],
-	[t4].[year_1],
-	[t4].[int_1]
+	Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int),
+	Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int),
+	2
 FROM
-	(
-		SELECT
-			Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int) as [year_1],
-			2 as [int_1]
-		FROM
-			[LinqDataTypes] [_1]
-	) [t4]
+	[LinqDataTypes] [_1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

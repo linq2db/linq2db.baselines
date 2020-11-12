@@ -89,6 +89,10 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Value_1  -- Guid
 SET     @Value_1 = Cast(x'00000000000000000000000000000000' as blob)
+DECLARE @Value_2  -- Guid
+SET     @Value_2 = Cast(x'00000000000000000000000000000000' as blob)
+DECLARE @Value_3  -- Guid
+SET     @Value_3 = Cast(x'00000000000000000000000000000000' as blob)
 
 SELECT
 	[cr].[R],
@@ -188,7 +192,7 @@ FROM
 						INNER JOIN [WmsLoadCarrierDTO] [r_2] ON [refS].[ResourceID] = [r_2].[Id]
 						INNER JOIN [InventoryResourceDTO] [ir_6] ON [r_2].[Id] = [ir_6].[ResourceID]
 				WHERE
-					[ir_6].[MaterialID] = @Value_1 AND [ir_6].[ProductStatus] = 0 AND
+					[ir_6].[MaterialID] = @Value_2 AND [ir_6].[ProductStatus] = 0 AND
 					[ir_6].[Quantity] > 0
 			) [t1]
 		UNION
@@ -218,7 +222,7 @@ FROM
 				INNER JOIN [InventoryResourceDTO] [ir_7] ON [r_3].[Id] = [ir_7].[ResourceID]
 		WHERE
 			[rp_3].[IsStoragePlace] = 1 AND
-			[ir_7].[MaterialID] = @Value_1 AND
+			[ir_7].[MaterialID] = @Value_3 AND
 			[ir_7].[ProductStatus] = 0 AND
 			[ir_7].[Quantity] > 0
 	) [cr]
