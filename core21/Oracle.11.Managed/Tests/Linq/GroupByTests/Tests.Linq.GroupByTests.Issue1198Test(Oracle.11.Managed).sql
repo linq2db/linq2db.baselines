@@ -14,18 +14,25 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	t1.MyGroupedCount
+FROM
 	(
 		SELECT
-			Count(*)
+			(
+				SELECT
+					Count(*)
+				FROM
+					Issue1192Table t
+				WHERE
+					t.Status = 3 AND t.MyOtherId = 12
+			) as MyGroupedCount
 		FROM
-			Issue1192Table t
+			Issue1192Table t_1
 		WHERE
-			t.Status = 3 AND t.MyOtherId = 12
-	)
-FROM
-	Issue1192Table t_1
+			t_1.MyOtherId = 12
+	) t1
 WHERE
-	t_1.MyOtherId = 12 AND ROWNUM <= :take
+	ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
