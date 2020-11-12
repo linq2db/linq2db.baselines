@@ -42,8 +42,8 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N'
 
 BeforeExecute
 -- SqlCe
-DECLARE @BoolValue_1 NVarChar -- String
-SET     @BoolValue_1 = 'Y'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'Y'
 
 SELECT
 	[t].[Id],
@@ -53,7 +53,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue_1
+	[t].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlCe

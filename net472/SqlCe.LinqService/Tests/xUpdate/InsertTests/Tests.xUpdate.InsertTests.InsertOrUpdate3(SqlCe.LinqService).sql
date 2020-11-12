@@ -26,15 +26,13 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @i Int -- Int32
-SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
 	[Patient]
 SET
-	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
+	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]))
 WHERE
 	[Patient].[PersonID] = @id
 
