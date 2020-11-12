@@ -35,6 +35,8 @@ BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @parentId Int -- Int32
 SET     @parentId = 111
+DECLARE @parentId_1 Int -- Int32
+SET     @parentId_1 = 111
 
 SELECT
 	[version_1].[inIdMain]
@@ -78,7 +80,7 @@ FROM
 		FROM
 			[stLinks] [link_2]
 		WHERE
-			[link_2].[inIdChild] = @parentId
+			[link_2].[inIdChild] = @parentId_1
 	) [u]
 		INNER JOIN [stVersions] [version_1] ON [u].[Link_1] = [version_1].[inId]
 
