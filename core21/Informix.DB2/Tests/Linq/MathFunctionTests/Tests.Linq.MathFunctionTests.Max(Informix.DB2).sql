@@ -9,11 +9,8 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	(CASE
+	CASE
 		WHEN t.MoneyValue > 5.1 THEN t.MoneyValue
 		ELSE 5.1
-	END <> 0 OR CASE
-		WHEN t.MoneyValue > 5.1 THEN t.MoneyValue
-		ELSE 5.1
-	END IS NULL)
+	END <> 0
 
