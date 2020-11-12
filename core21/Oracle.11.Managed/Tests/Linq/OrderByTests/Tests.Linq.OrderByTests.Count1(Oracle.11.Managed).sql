@@ -4,5 +4,5 @@
 SELECT
 	Count(*)
 FROM
-	Parent t1
+	"Parent" t1
 

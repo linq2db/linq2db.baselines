@@ -2,14 +2,14 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Parent p
+	"Parent" p
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			Child t1
+			"Child" t1
 		WHERE
-			p.ParentID = t1.ParentID
+			p."ParentID" = t1."ParentID"
 	)
 

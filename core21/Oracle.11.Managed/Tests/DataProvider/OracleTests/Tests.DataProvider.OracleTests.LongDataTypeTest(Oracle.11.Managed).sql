@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	ALLTYPES t
+	"AllTypes" t
 WHERE
 	t.ID > 2
 
@@ -10,9 +10,9 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t.LONGDATATYPE
+	t."longDataType"
 FROM
-	ALLTYPES t
+	"AllTypes" t
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -21,9 +21,9 @@ SET     @str = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO ALLTYPES
+INSERT INTO "AllTypes"
 (
-	LONGDATATYPE
+	"longDataType"
 )
 VALUES
 (
@@ -38,9 +38,9 @@ DECLARE @id Decimal(2, 0)
 SET     @id = 41
 
 SELECT
-	t.LONGDATATYPE
+	t."longDataType"
 FROM
-	ALLTYPES t
+	"AllTypes" t
 WHERE
 	t.ID = :id
 
@@ -49,9 +49,9 @@ BeforeExecute
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO ALLTYPES
+INSERT INTO "AllTypes"
 (
-	LONGDATATYPE
+	"longDataType"
 )
 VALUES
 (
@@ -66,9 +66,9 @@ DECLARE @id2 Decimal(2, 0)
 SET     @id2 = 42
 
 SELECT
-	t.LONGDATATYPE
+	t."longDataType"
 FROM
-	ALLTYPES t
+	"AllTypes" t
 WHERE
 	t.ID = :id2
 
@@ -76,7 +76,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	ALLTYPES t
+	"AllTypes" t
 WHERE
 	t.ID > 2
 

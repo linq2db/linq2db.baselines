@@ -4,13 +4,13 @@ DECLARE @param Varchar2(4) -- String
 SET     @param = 'JOHN'
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	Lower(p.FirstName) = Lower(:param) AND p.PersonID = 1
+	Lower(p."FirstName") = Lower(:param) AND p."PersonID" = 1
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE CreateTableTypes
+CREATE TABLE "CreateTableTypes"
 (
-	Id                 Int        NOT NULL,
-	StringEnumNullable VarChar(2)     NULL
+	"Id"                 Int        NOT NULL,
+	"StringEnumNullable" VarChar(2)     NULL
 )
 
 BeforeExecute
@@ -14,10 +14,10 @@ SET     @Id = 1
 DECLARE @StringEnumNullable Varchar2 -- String
 SET     @StringEnumNullable = NULL
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	StringEnumNullable
+	"Id",
+	"StringEnumNullable"
 )
 VALUES
 (
@@ -32,10 +32,10 @@ SET     @Id = 2
 DECLARE @StringEnumNullable Varchar2(2) -- String
 SET     @StringEnumNullable = '40'
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	StringEnumNullable
+	"Id",
+	"StringEnumNullable"
 )
 VALUES
 (
@@ -47,15 +47,15 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id,
-	t1.StringEnumNullable
+	t1."Id",
+	t1."StringEnumNullable"
 FROM
-	CreateTableTypes t1
+	"CreateTableTypes" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE CreateTableTypes
+DROP TABLE "CreateTableTypes"
 

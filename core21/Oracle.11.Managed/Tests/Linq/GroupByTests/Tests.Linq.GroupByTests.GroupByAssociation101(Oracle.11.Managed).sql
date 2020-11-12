@@ -2,13 +2,13 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	a_Parent.Value1
+	a_Parent."Value1"
 FROM
-	GrandChild t1
-		INNER JOIN Parent a_Parent ON t1.ParentID = a_Parent.ParentID
+	"GrandChild" t1
+		INNER JOIN "Parent" a_Parent ON t1."ParentID" = a_Parent."ParentID"
 GROUP BY
-	a_Parent.ParentID,
-	a_Parent.Value1
+	a_Parent."ParentID",
+	a_Parent."Value1"
 HAVING
-	Max(t1.ParentID) > 2
+	Max(t1."ParentID") > 2
 

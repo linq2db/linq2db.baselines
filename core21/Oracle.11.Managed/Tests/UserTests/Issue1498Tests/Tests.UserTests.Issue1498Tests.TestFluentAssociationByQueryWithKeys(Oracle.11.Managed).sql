@@ -1,25 +1,25 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE Topic
+CREATE TABLE "Topic"
 (
-	Id    Int          NOT NULL,
-	Title VarChar(255)     NULL,
-	Text  VarChar(255)     NULL,
+	"Id"    Int          NOT NULL,
+	"Title" VarChar(255)     NULL,
+	"Text"  VarChar(255)     NULL,
 
-	CONSTRAINT PK_Topic PRIMARY KEY (Id)
+	CONSTRAINT "PK_Topic" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE Message
+CREATE TABLE "Message"
 (
-	Id      Int          NOT NULL,
-	TopicId Int          NOT NULL,
-	Text    VarChar(255)     NULL,
+	"Id"      Int          NOT NULL,
+	"TopicId" Int          NOT NULL,
+	"Text"    VarChar(255)     NULL,
 
-	CONSTRAINT PK_Message PRIMARY KEY (Id)
+	CONSTRAINT "PK_Message" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -31,11 +31,11 @@ SET     @Title = 'title'
 DECLARE @Text Varchar2(4) -- String
 SET     @Text = 'text'
 
-INSERT INTO Topic
+INSERT INTO "Topic"
 (
-	Id,
-	Title,
-	Text
+	"Id",
+	"Title",
+	"Text"
 )
 VALUES
 (
@@ -53,11 +53,11 @@ SET     @TopicId = 6
 DECLARE @Text Varchar2(7) -- String
 SET     @Text = 'message'
 
-INSERT INTO Message
+INSERT INTO "Message"
 (
-	Id,
-	TopicId,
-	Text
+	"Id",
+	"TopicId",
+	"Text"
 )
 VALUES
 (
@@ -75,11 +75,11 @@ SET     @TopicId = 7
 DECLARE @Text Varchar2(7) -- String
 SET     @Text = 'message'
 
-INSERT INTO Message
+INSERT INTO "Message"
 (
-	Id,
-	TopicId,
-	Text
+	"Id",
+	"TopicId",
+	"Text"
 )
 VALUES
 (
@@ -94,29 +94,29 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	key_data_result.Id,
-	key_data_result.Title,
-	key_data_result.Text,
-	detail.Id
+	key_data_result."Id",
+	key_data_result."Title",
+	key_data_result."Text",
+	detail."Id"
 FROM
 	(
 		SELECT DISTINCT
-			t1.Id,
-			t1.Title,
-			t1.Text
+			t1."Id",
+			t1."Title",
+			t1."Text"
 		FROM
 			(
 				SELECT
-					x.Id,
-					x.Title,
-					x.Text
+					x."Id",
+					x."Title",
+					x."Text"
 				FROM
-					Topic x
+					"Topic" x
 				WHERE
-					x.Id = 6 AND ROWNUM <= :take
+					x."Id" = 6 AND ROWNUM <= :take
 			) t1
 	) key_data_result
-		INNER JOIN Message detail ON detail.TopicId = key_data_result.Id
+		INNER JOIN "Message" detail ON detail."TopicId" = key_data_result."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -124,21 +124,21 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x.Id,
-	x.Title,
-	x.Text
+	x."Id",
+	x."Title",
+	x."Text"
 FROM
-	Topic x
+	"Topic" x
 WHERE
-	x.Id = 6 AND ROWNUM <= :take
+	x."Id" = 6 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Message
+DROP TABLE "Message"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Topic
+DROP TABLE "Topic"
 

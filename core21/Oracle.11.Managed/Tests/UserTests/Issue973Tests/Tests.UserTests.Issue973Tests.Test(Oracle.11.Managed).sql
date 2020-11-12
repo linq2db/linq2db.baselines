@@ -10,12 +10,12 @@ DECLARE @param Int32
 SET     @param = 4
 
 SELECT
-	o.ParentID,
-	o.Value1
+	o."ParentID",
+	o."Value1"
 FROM
-	Parent o
+	"Parent" o
 WHERE
-	(o.ParentID IN (:values_1, :values_2, :values_3) OR o.ParentID = :param)
+	(o."ParentID" IN (:values_1, :values_2, :values_3) OR o."ParentID" = :param)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -23,12 +23,12 @@ DECLARE @param Int32
 SET     @param = 4
 
 SELECT
-	o.ParentID,
-	o.Value1
+	o."ParentID",
+	o."Value1"
 FROM
-	Parent o
+	"Parent" o
 WHERE
-	((o.ParentID IN (1, 2, 3) OR o.ParentID IS NULL) OR o.ParentID = :param)
+	((o."ParentID" IN (1, 2, 3) OR o."ParentID" IS NULL) OR o."ParentID" = :param)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -42,12 +42,12 @@ DECLARE @param Int32
 SET     @param = 4
 
 SELECT
-	o.ParentID,
-	o.Value1
+	o."ParentID",
+	o."Value1"
 FROM
-	Parent o
+	"Parent" o
 WHERE
-	(o.ParentID IN (:values_1, :values_2, :values_3) OR o.ParentID = :param)
+	(o."ParentID" IN (:values_1, :values_2, :values_3) OR o."ParentID" = :param)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -55,10 +55,10 @@ DECLARE @param Int32
 SET     @param = 4
 
 SELECT
-	o.ParentID,
-	o.Value1
+	o."ParentID",
+	o."Value1"
 FROM
-	Parent o
+	"Parent" o
 WHERE
-	((o.ParentID IN (4, 5, 6) OR o.ParentID IS NULL) OR o.ParentID = :param)
+	((o."ParentID" IN (4, 5, 6) OR o."ParentID" IS NULL) OR o."ParentID" = :param)
 

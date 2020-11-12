@@ -4,9 +4,9 @@ DECLARE @GuidValue_1 Raw(16) -- Binary
 SET     @GuidValue_1 = HEXTORAW('C070F9D2AC3587499CD55BADB1757436')
 
 SELECT
-	p.GuidValue
+	p."GuidValue"
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	p.GuidValue = :GuidValue_1
+	p."GuidValue" = :GuidValue_1
 

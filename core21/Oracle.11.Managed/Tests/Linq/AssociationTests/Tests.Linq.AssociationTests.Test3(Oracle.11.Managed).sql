@@ -2,10 +2,10 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.ParentID
+	p."ParentID"
 FROM
-	Parent p
-		INNER JOIN Child ch ON p.ParentID = ch.ParentID
+	"Parent" p
+		INNER JOIN "Child" ch ON p."ParentID" = ch."ParentID"
 WHERE
-	(p.ParentID < 4 OR p.ParentID >= 4)
+	(p."ParentID" < 4 OR p."ParentID" >= 4)
 

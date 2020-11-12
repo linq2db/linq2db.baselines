@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE CreateTableTypes
+CREATE TABLE "CreateTableTypes"
 (
-	StringConverted VarChar2(4000) NOT NULL,
-	Id              Int            NOT NULL
+	"StringConverted" VarChar2(4000) NOT NULL,
+	"Id"              Int            NOT NULL
 )
 
 BeforeExecute
@@ -14,10 +14,10 @@ SET     @Id = 1
 DECLARE @StringConverted NVarchar2(4) -- String
 SET     @StringConverted = 'null'
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	StringConverted
+	"Id",
+	"StringConverted"
 )
 VALUES
 (
@@ -32,10 +32,10 @@ SET     @Id = 2
 DECLARE @StringConverted NVarchar2(53) -- String
 SET     @StringConverted = '[{"Item1":1,"Item2":"one"},{"Item1":2,"Item2":"two"}]'
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	StringConverted
+	"Id",
+	"StringConverted"
 )
 VALUES
 (
@@ -47,15 +47,15 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id,
-	t1.StringConverted
+	t1."Id",
+	t1."StringConverted"
 FROM
-	CreateTableTypes t1
+	"CreateTableTypes" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE CreateTableTypes
+DROP TABLE "CreateTableTypes"
 

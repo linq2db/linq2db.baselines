@@ -2,8 +2,8 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t.ParentID,
-	t.count_1
+	t."ParentID",
+	t."count_1"
 FROM
 	(
 		SELECT
@@ -11,14 +11,14 @@ FROM
 				SELECT
 					Count(*)
 				FROM
-					Child t1
+					"Child" t1
 				WHERE
-					p.ParentID = t1.ParentID
-			) as count_1,
-			p.ParentID
+					p."ParentID" = t1."ParentID"
+			) as "count_1",
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 	) t
 WHERE
-	t.count_1 > 0
+	t."count_1" > 0
 

@@ -2,32 +2,32 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.ParentID,
-	t1.Value1
+	t1."ParentID",
+	t1."Value1"
 FROM
 	(
 		SELECT
-			p.ParentID,
-			p.Value1
+			p."ParentID",
+			p."Value1"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID = 1
+			p."ParentID" = 1
 		UNION ALL
 		SELECT
-			p_1.ParentID,
-			p_1.Value1
+			p_1."ParentID",
+			p_1."Value1"
 		FROM
-			Parent p_1
+			"Parent" p_1
 		WHERE
-			p_1.ParentID = 2
+			p_1."ParentID" = 2
 	) t1
 UNION ALL
 SELECT
-	p_2.ParentID,
-	p_2.Value1
+	p_2."ParentID",
+	p_2."Value1"
 FROM
-	Parent p_2
+	"Parent" p_2
 WHERE
-	p_2.ParentID = 4
+	p_2."ParentID" = 4
 

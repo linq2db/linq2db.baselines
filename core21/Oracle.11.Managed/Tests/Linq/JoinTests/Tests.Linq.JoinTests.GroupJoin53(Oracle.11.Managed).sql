@@ -6,14 +6,14 @@ SET     @take = 1
 SELECT
 	(
 		SELECT
-			ch.ParentID
+			ch."ParentID"
 		FROM
-			Child ch
+			"Child" ch
 		WHERE
-			ch.ParentID = p.ParentID AND ROWNUM <= :take
+			ch."ParentID" = p."ParentID" AND ROWNUM <= :take
 	)
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = 1
+	p."ParentID" = 1
 

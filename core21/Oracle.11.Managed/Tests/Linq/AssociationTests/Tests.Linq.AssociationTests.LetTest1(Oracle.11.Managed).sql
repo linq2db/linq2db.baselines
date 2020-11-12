@@ -2,15 +2,15 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.ParentID,
+	p."ParentID",
 	(
 		SELECT
 			Count(*)
 		FROM
-			Child t1
+			"Child" t1
 		WHERE
-			p.ParentID = t1.ParentID
+			p."ParentID" = t1."ParentID"
 	)
 FROM
-	Parent p
+	"Parent" p
 

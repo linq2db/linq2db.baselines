@@ -5,11 +5,11 @@ SET     @val = HEXTORAW('010203')
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO ALLTYPES
+INSERT INTO "AllTypes"
 (
 	ID,
-	BINARYDATATYPE,
-	GUIDDATATYPE
+	"binaryDataType",
+	"guidDataType"
 )
 VALUES
 (
@@ -30,17 +30,17 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t2.BINARYDATATYPE,
+	t2."binaryDataType",
 	(
 		SELECT
 			Count(*)
 		FROM
-			ALLTYPES t1
+			"AllTypes" t1
 		WHERE
-			t1.ID = 1000 AND t1.GUIDDATATYPE = :val
+			t1.ID = 1000 AND t1."guidDataType" = :val
 	)
 FROM
-	ALLTYPES t2
+	"AllTypes" t2
 WHERE
 	t2.ID = :n AND ROWNUM <= :take
 
@@ -50,7 +50,7 @@ DECLARE @n Decimal(2, 0)
 SET     @n = 25
 
 DELETE FROM
-	ALLTYPES t1
+	"AllTypes" t1
 WHERE
 	t1.ID = :n
 

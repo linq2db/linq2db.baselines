@@ -6,17 +6,17 @@ DECLARE @userId Int32
 SET     @userId = 32
 
 SELECT
-	p.ParentID
+	p."ParentID"
 FROM
-	Parent p
-		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
+	"Parent" p
+		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 WHERE
-	c_1.ChildID = :childId AND EXISTS(
+	c_1."ChildID" = :childId AND EXISTS(
 		SELECT
 			*
 		FROM
-			GrandChild permission
+			"GrandChild" permission
 		WHERE
-			p.ParentID = permission.ParentID AND permission.ChildID = :userId
+			p."ParentID" = permission."ParentID" AND permission."ChildID" = :userId
 	)
 
