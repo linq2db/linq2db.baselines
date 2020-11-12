@@ -4,7 +4,7 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT
-	[t2].[ParentID]
+	[t1_1].[ParentID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
@@ -19,5 +19,5 @@ FROM
 					WHERE
 						[p].[ParentID] = [c_1].[ParentID]
 				) [t1]
-		) [t2]
+		) [t1_1]
 
