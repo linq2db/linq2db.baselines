@@ -11,5 +11,5 @@ FROM
 			"LinqDataTypes" "p"
 	) "t"
 WHERE
-	(Float("t"."c1") IS NULL OR Float("t"."c1") <> 0.10000000000000001)
+	(Float("t"."c1") <> 0.10000000000000001 OR Float("t"."c1") IS NULL)
 

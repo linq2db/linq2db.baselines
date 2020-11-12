@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."c1"
+	Float("t"."MoneyValue")
 FROM
-	(
-		SELECT
-			Float("t"."MoneyValue") as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	"p"."c1" > 0
+	Float("t"."MoneyValue") > 0
 
