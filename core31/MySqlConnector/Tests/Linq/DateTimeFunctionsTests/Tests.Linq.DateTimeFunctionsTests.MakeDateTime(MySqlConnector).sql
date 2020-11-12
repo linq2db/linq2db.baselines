@@ -2,14 +2,9 @@
 -- MySqlConnector MySql
 
 SELECT
-	`t`.`c1`
+	Cast(Concat('2010-', Cast(`t`.`ID` as CHAR(11)), '-1') as Date)
 FROM
-	(
-		SELECT
-			Cast(Concat('2010-', Cast(`p`.`ID` as CHAR(11)), '-', '1') as Date) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `t`
 WHERE
-	Extract(year from `t`.`c1`) = 2010
+	Extract(year from Cast(Concat('2010-', Cast(`t`.`ID` as CHAR(11)), '-1') as Date)) = 2010
 
