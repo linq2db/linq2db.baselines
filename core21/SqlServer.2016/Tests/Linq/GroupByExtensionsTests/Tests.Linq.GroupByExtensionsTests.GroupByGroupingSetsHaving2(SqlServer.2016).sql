@@ -47,8 +47,7 @@ FROM
 GROUP BY GROUPING SETS (
 	([g_1].[Id1], [g_1].[Id2]),
 	([g_1].[Id2]),
-	(),
-	([g_1].[Id1])
+	()
 )
 HAVING
 	Count(*) > 0
