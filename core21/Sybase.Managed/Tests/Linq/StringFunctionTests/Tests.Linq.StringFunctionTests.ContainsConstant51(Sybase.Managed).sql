@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ps UniVarChar(5) -- String
-SET     @ps = '%[[]%'
+DECLARE @ps UniVarChar(4) -- String
+SET     @ps = '%~[%'
 
 SELECT
 	[p].[FirstName],

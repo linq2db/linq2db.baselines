@@ -37,8 +37,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @FirstName_1 UniVarChar(5) -- String
-SET     @FirstName_1 = 'John0'
+DECLARE @FirstName UniVarChar(5) -- String
+SET     @FirstName = 'John0'
 
 SELECT TOP 2
 	[p].[FirstName],
@@ -49,7 +49,7 @@ SELECT TOP 2
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName_1 AND [p].[LastName] = 'Shepard'
+	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
@@ -81,8 +81,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @FirstName_1 UniVarChar(5) -- String
-SET     @FirstName_1 = 'John1'
+DECLARE @FirstName UniVarChar(5) -- String
+SET     @FirstName = 'John1'
 
 SELECT TOP 2
 	[p].[FirstName],
@@ -93,7 +93,7 @@ SELECT TOP 2
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName_1 AND [p].[LastName] = 'Shepard'
+	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
 -- Sybase.Managed Sybase
