@@ -31,7 +31,7 @@ SELECT
 FROM
 	"Person" "p_1"
 WHERE
-	("p_1"."FirstName" CONTAINING 'Jo' AND ("p_1"."FirstName" CONTAINING 'Jo') IS NOT NULL)
+	"p_1"."FirstName" CONTAINING 'Jo'
 ORDER BY
 	"p_1"."FirstName" CONTAINING 'Jo'
 
