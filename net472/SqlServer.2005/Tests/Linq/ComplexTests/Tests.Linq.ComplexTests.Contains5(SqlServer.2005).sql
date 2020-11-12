@@ -13,16 +13,21 @@ FROM
 WHERE
 	[c_1].[ParentID] IN (
 		SELECT
-			[t1].[ParentID]
+			[t1_1].[ParentID]
 		FROM
 			(
 				SELECT
-					[p].[ParentID],
-					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+					[t1].[ParentID]
 				FROM
-					[Parent] [p]
-			) [t1]
-		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+					(
+						SELECT
+							[p].[ParentID],
+							ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+						FROM
+							[Parent] [p]
+					) [t1]
+				WHERE
+					[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+			) [t1_1]
 	)
 
