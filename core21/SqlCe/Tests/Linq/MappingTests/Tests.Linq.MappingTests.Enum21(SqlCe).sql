@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @gender_1 NChar(1) -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender NChar(1) -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[Gender] = @gender_1
+	[p].[Gender] = @gender
 
