@@ -22,10 +22,10 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -46,17 +46,17 @@ FROM
 					Max(x.OrderData1)
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -75,17 +75,17 @@ FROM
 					x.OrderData1
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -106,17 +106,17 @@ FROM
 					Min(x.OrderData1) DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -135,17 +135,17 @@ FROM
 					x.OrderData1 DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -167,17 +167,17 @@ FROM
 					Max(x.OrderData2)
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -197,17 +197,17 @@ FROM
 					x.OrderData2
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -229,17 +229,17 @@ FROM
 					Min(x.OrderData2) DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -259,17 +259,17 @@ FROM
 					x.OrderData2 DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -291,17 +291,17 @@ FROM
 					Min(x.OrderData2) DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -321,17 +321,17 @@ FROM
 					x.OrderData2 DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -353,17 +353,17 @@ FROM
 					Min(x.OrderData2) DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
+DECLARE @skip Int32
+SET     @skip = 0
 
 SELECT
 	t2.DuplicateData
@@ -383,7 +383,7 @@ FROM
 					x.OrderData2 DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :skip

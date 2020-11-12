@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @value2 Decimal(5, 0)
+DECLARE @value2 Int32
 SET     @value2 = 13621
 DECLARE @id Int32
 SET     @id = 100500
@@ -58,7 +58,7 @@ SET     @id = 100500
 UPDATE
 	LinqDataTypes
 SET
-	LinqDataTypes.SmallIntValue = Cast(Floor(LinqDataTypes.MoneyValue / (:value2 / Cast(LinqDataTypes.IntValue as Decimal(29, 10)))) as SmallInt)
+	LinqDataTypes.SmallIntValue = Cast(Floor(LinqDataTypes.MoneyValue / (:value2 / LinqDataTypes.IntValue)) as SmallInt)
 WHERE
 	LinqDataTypes.ID = :id
 

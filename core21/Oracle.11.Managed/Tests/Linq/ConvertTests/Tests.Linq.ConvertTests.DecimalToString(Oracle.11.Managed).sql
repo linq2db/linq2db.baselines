@@ -2,14 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.c1
+	Cast(t.MoneyValue as VarChar2(31))
 FROM
-	(
-		SELECT
-			Cast(t.MoneyValue as VarChar2(31)) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes t
 WHERE
-	Length(p.c1) > 0
+	Length(Cast(t.MoneyValue as VarChar2(31))) > 0
 

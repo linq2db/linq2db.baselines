@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @skip Int32
-SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 7
+SET     @skip = 8
 DECLARE @skip_1 Int32
-SET     @skip_1 = 2
+SET     @skip_1 = 1
+DECLARE @skip_1_1 Int32
+SET     @skip_1_1 = 2
 
 SELECT
 	t6.ParentID,
@@ -43,15 +43,15 @@ FROM
 											t1.ChildID DESC
 									) t2
 								WHERE
-									ROWNUM <= (:skip + :take)
+									ROWNUM <= :skip
 							) t3
 						WHERE
-							t3.RN > :skip
+							t3.RN > :skip_1
 					) t4
 				ORDER BY
 					t4.ChildID
 			) t5
 	) t6
 WHERE
-	t6.RN > :skip_1
+	t6.RN > :skip_1_1
 

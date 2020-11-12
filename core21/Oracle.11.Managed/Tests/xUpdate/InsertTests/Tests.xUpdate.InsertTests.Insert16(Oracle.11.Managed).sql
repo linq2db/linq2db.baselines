@@ -4,14 +4,12 @@
 DELETE FROM
 	Person t1
 WHERE
-	t1.FirstName LIKE 'Insert16%'
+	t1.FirstName LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @name Varchar2(8) -- String
-SET     @name = 'Insert16'
 DECLARE @idx Int32
-SET     @idx = 4
+SET     @idx = 12
 
 INSERT INTO Person
 (
@@ -22,7 +20,7 @@ INSERT INTO Person
 VALUES
 (
 	'Insert16',
-	Cast((Length(:name) + :idx) as VarChar2(11)),
+	Cast(:idx as VarChar2(11)),
 	'M'
 )
 
@@ -34,7 +32,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	t1.FirstName LIKE 'Insert16%'
+	t1.FirstName LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -42,5 +40,5 @@ BeforeExecute
 DELETE FROM
 	Person t1
 WHERE
-	t1.FirstName LIKE 'Insert16%'
+	t1.FirstName LIKE 'Insert16%' ESCAPE '~'
 

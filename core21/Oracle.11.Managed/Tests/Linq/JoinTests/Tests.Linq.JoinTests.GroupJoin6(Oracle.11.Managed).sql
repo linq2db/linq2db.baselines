@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @p1 Int32
-SET     @p1 = 1
+DECLARE @ParentID Int32
+SET     @ParentID = 1
 
 SELECT
 	key_data_result.ParentID,
@@ -16,7 +16,7 @@ FROM
 		WHERE
 			p.ParentID = 1
 	) key_data_result
-		INNER JOIN Child gjd_c ON gjd_c.ParentID = key_data_result.ParentID + :p1
+		INNER JOIN Child gjd_c ON gjd_c.ParentID = key_data_result.ParentID + :ParentID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

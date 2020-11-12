@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @p1 Int16
+DECLARE @p1 Int32
 SET     @p1 = 1234
 
 INSERT INTO AllTypes

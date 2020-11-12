@@ -10,8 +10,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @NString Varchar2(6) -- String
 SET     @NString = 'test01'
-DECLARE @String Varchar2(6) -- String
-SET     @String = 'test01'
 
 INSERT INTO AllTypes
 (
@@ -21,15 +19,13 @@ INSERT INTO AllTypes
 VALUES
 (
 	:NString,
-	:String
+	:NString
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test02  '
-DECLARE @String Varchar2(8) -- String
-SET     @String = 'test02  '
 
 INSERT INTO AllTypes
 (
@@ -39,15 +35,13 @@ INSERT INTO AllTypes
 VALUES
 (
 	:NString,
-	:String
+	:NString
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test03	 '
-DECLARE @String Varchar2(8) -- String
-SET     @String = 'test03	 '
 
 INSERT INTO AllTypes
 (
@@ -57,7 +51,7 @@ INSERT INTO AllTypes
 VALUES
 (
 	:NString,
-	:String
+	:NString
 )
 
 BeforeExecute
@@ -65,9 +59,6 @@ BeforeExecute
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test04
  '
-DECLARE @String Varchar2(8) -- String
-SET     @String = 'test04
- '
 
 INSERT INTO AllTypes
 (
@@ -77,15 +68,13 @@ INSERT INTO AllTypes
 VALUES
 (
 	:NString,
-	:String
+	:NString
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test05 '
-DECLARE @String Varchar2(8) -- String
-SET     @String = 'test05 '
 
 INSERT INTO AllTypes
 (
@@ -95,15 +84,13 @@ INSERT INTO AllTypes
 VALUES
 (
 	:NString,
-	:String
+	:NString
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test06 '
-DECLARE @String Varchar2(8) -- String
-SET     @String = 'test06 '
 
 INSERT INTO AllTypes
 (
@@ -113,15 +100,13 @@ INSERT INTO AllTypes
 VALUES
 (
 	:NString,
-	:String
+	:NString
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test07 '
-DECLARE @String Varchar2(8) -- String
-SET     @String = 'test07 '
 
 INSERT INTO AllTypes
 (
@@ -131,15 +116,13 @@ INSERT INTO AllTypes
 VALUES
 (
 	:NString,
-	:String
+	:NString
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test08  '
-DECLARE @String Varchar2(8) -- String
-SET     @String = 'test08  '
 
 INSERT INTO AllTypes
 (
@@ -149,7 +132,7 @@ INSERT INTO AllTypes
 VALUES
 (
 	:NString,
-	:String
+	:NString
 )
 
 BeforeExecute
@@ -390,8 +373,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @NString Varchar2 -- String
 SET     @NString = NULL
-DECLARE @String Varchar2 -- String
-SET     @String = NULL
 
 INSERT INTO AllTypes
 (
@@ -401,7 +382,7 @@ INSERT INTO AllTypes
 VALUES
 (
 	:NString,
-	:String
+	:NString
 )
 
 BeforeExecute

@@ -9,7 +9,7 @@ FROM
 		SELECT
 			t5.ParentID,
 			t5.ChildID,
-			ROWNUM as c1
+			ROWNUM as RN
 		FROM
 			(
 				SELECT
@@ -47,5 +47,5 @@ FROM
 			) t5
 	) t6
 WHERE
-	t6.c1 > 2
+	t6.RN > 2
 

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @ParentID_1 Int32
-SET     @ParentID_1 = 2
-DECLARE @ChildID_1 Int32
-SET     @ChildID_1 = 21
+DECLARE @ParentID Int32
+SET     @ParentID = 2
+DECLARE @ChildID Int32
+SET     @ChildID = 21
 
 SELECT
 	ch.ParentID,
@@ -11,6 +11,6 @@ SELECT
 FROM
 	Child ch
 WHERE
-	(ch.ParentID <> :ParentID_1 OR ch.ChildID <> :ChildID_1) AND
+	(ch.ParentID <> :ParentID OR ch.ChildID <> :ChildID) AND
 	ch.ParentID > 0
 

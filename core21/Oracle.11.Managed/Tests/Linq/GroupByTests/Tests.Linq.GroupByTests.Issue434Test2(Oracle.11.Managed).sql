@@ -9,7 +9,7 @@ FROM
 	Person p
 		INNER JOIN Patient gjd_ri ON gjd_ri.PersonID = p.PersonID
 WHERE
-	Lower(p.FirstName) LIKE '%test%'
+	Lower(p.FirstName) LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -20,5 +20,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	Lower(p.FirstName) LIKE '%test%'
+	Lower(p.FirstName) LIKE '%test%' ESCAPE '~'
 
