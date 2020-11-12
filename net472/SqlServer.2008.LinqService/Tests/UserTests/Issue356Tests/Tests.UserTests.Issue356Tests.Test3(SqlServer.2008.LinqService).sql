@@ -4,8 +4,8 @@ DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @skip Int -- Int32
 SET     @skip = 10
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 10
+DECLARE @skip_1 Int -- Int32
+SET     @skip_1 = 20
 
 SELECT TOP (@take)
 	[cp].[ParentID],
@@ -38,7 +38,7 @@ FROM
 						) [t3]
 				) [t4]
 			WHERE
-				[t4].[RN] > @skip AND [t4].[RN] <= (@skip + @take_1)
+				[t4].[RN] > @skip AND [t4].[RN] <= @skip_1
 		) [c_1]
 WHERE
 	[c_1].[ParentID] = [cp].[ParentID]

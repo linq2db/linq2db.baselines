@@ -6,12 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			[t2].[ParentID],
 			[t2].[ChildID]
 		FROM
 			(
 				SELECT
-					[t1].[ParentID],
 					[t1].[ChildID],
 					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 				FROM
@@ -19,5 +17,5 @@ FROM
 			) [t2]
 		WHERE
 			[t2].[RN] > 2
-	) [t3]
+	) [t2_1]
 
