@@ -23,10 +23,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @firstName_1 NVarChar(6) -- String
-SET     @firstName_1 = 'Jürgen'
-DECLARE @lastName_1 NVarChar(5) -- String
-SET     @lastName_1 = 'König'
+DECLARE @firstName NVarChar(6) -- String
+SET     @firstName = 'Jürgen'
+DECLARE @lastName NVarChar(5) -- String
+SET     @lastName = 'König'
 
 SELECT
 	[_].[FirstName],

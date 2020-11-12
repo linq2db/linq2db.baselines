@@ -92,8 +92,8 @@ GROUP BY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Name_1 NVarChar(6) -- String
-SET     @Name_1 = 'group1'
+DECLARE @Name NVarChar(6) -- String
+SET     @Name = 'group1'
 
 SELECT
 	[s].[Id],
@@ -110,8 +110,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Name_1 NVarChar(6) -- String
-SET     @Name_1 = 'group2'
+DECLARE @Name NVarChar(6) -- String
+SET     @Name = 'group2'
 
 SELECT
 	[s].[Id],

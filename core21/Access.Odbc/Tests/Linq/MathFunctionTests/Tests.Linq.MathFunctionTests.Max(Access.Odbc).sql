@@ -2,14 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t].[c1]
+	Iif([p].[MoneyValue] > 5.1, [p].[MoneyValue], 5.1)
 FROM
-	(
-		SELECT
-			Iif([p].[MoneyValue] > 5.1, [p].[MoneyValue], 5.1) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[c1] IS NULL OR [t].[c1] <> 0)
+	(Iif([p].[MoneyValue] > 5.1, [p].[MoneyValue], 5.1) <> 0 OR Iif([p].[MoneyValue] > 5.1, [p].[MoneyValue], 5.1) IS NULL)
 
