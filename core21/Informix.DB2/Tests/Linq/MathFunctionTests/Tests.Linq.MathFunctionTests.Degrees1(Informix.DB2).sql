@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	Floor(t.MoneyValue * 57.29577951308237993927443245)
 FROM
-	(
-		SELECT
-			Floor(p.MoneyValue * 57.29577951308237993927443245) as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes t
 WHERE
-	t.c1 <> 0.1
+	Floor(t.MoneyValue * 57.29577951308237993927443245) <> 0.1
 

@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p1 SmallInt(4) -- Int16
+DECLARE @p1 Integer(4) -- Int32
 SET     @p1 = 1234
 
 INSERT INTO AllTypes

@@ -29,18 +29,12 @@ SELECT
 FROM
 	(
 		SELECT
-			p3.ID + 1 as ID,
+			p3.ParentID + 2 as ID,
 			p3.ParentID
 		FROM
-			(
-				SELECT
-					p2.ParentID + 1 as ID,
-					p2.ParentID
-				FROM
-					Parent p2
-			) p3
+			Parent p3
 		WHERE
-			p3.ID > 0
+			p3.ParentID > -1
 	) p1
 WHERE
 	p1.ID > 0

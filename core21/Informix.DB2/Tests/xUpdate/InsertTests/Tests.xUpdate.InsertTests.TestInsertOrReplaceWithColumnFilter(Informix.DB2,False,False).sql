@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @FirstName_1 VarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName VarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT FIRST 1
 	x.ID,
@@ -70,7 +70,7 @@ SELECT FIRST 1
 FROM
 	TestInsertOrReplaceTable x
 WHERE
-	x.FirstName = @FirstName_1
+	x.FirstName = @FirstName
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @FirstName_1 VarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName VarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT FIRST 1
 	x.ID,
@@ -102,7 +102,7 @@ SELECT FIRST 1
 FROM
 	TestInsertOrReplaceTable x
 WHERE
-	x.FirstName = @FirstName_1
+	x.FirstName = @FirstName
 
 BeforeExecute
 -- Informix.DB2 Informix

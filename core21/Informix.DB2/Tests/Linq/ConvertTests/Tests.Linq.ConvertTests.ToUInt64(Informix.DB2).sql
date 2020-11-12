@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.c1
+	Cast(Floor(p.MoneyValue) as Decimal)
 FROM
-	(
-		SELECT
-			Cast(Floor(t.MoneyValue) as Decimal) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes p
 WHERE
-	p.c1 > 0
+	Cast(Floor(p.MoneyValue) as Decimal) > 0
 

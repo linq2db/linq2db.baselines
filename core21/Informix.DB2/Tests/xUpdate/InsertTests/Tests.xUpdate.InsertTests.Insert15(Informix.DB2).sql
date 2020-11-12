@@ -4,7 +4,7 @@
 DELETE FROM
 	Person
 WHERE
-	Person.FirstName LIKE 'Insert15%'
+	Person.FirstName LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -40,7 +40,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	t1.FirstName LIKE 'Insert15%'
+	t1.FirstName LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -48,5 +48,5 @@ BeforeExecute
 DELETE FROM
 	Person
 WHERE
-	Person.FirstName LIKE 'Insert15%'
+	Person.FirstName LIKE 'Insert15%' ESCAPE '~'
 

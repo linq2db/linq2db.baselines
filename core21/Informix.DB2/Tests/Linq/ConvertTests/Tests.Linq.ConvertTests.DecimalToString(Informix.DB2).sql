@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.c1
+	To_Char(p.MoneyValue)
 FROM
-	(
-		SELECT
-			To_Char(t.MoneyValue) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes p
 WHERE
-	Length(p.c1) > 0
+	Length(To_Char(p.MoneyValue)) > 0
 

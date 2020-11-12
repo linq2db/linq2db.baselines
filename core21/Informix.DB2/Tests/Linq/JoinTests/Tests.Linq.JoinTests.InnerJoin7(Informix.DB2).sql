@@ -2,15 +2,10 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	t.ParentID + p.ParentID
 FROM
-	(
-		SELECT
-			ch.ParentID + p.ParentID as c1
-		FROM
-			Child ch
-				INNER JOIN Parent p ON ch.ParentID = p.ParentID
-	) t
+	Child t
+		INNER JOIN Parent p ON t.ParentID = p.ParentID
 WHERE
-	t.c1 > 2
+	t.ParentID + p.ParentID > 2
 

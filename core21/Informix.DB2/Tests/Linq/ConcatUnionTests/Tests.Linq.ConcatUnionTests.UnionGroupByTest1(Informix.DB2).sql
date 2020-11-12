@@ -39,17 +39,11 @@ FROM
 	) t4
 UNION
 SELECT
-	t6.year_1,
-	t6.year_1,
-	t6.int_1
+	Year(t5.DateTimeValue),
+	Year(t5.DateTimeValue),
+	2
 FROM
-	(
-		SELECT
-			Year(t5.DateTimeValue) as year_1,
-			2 as int_1
-		FROM
-			LinqDataTypes t5
-	) t6
+	LinqDataTypes t5
 
 BeforeExecute
 -- Informix.DB2 Informix

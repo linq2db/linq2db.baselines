@@ -2,17 +2,18 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	CASE
+		WHEN t.MoneyValue > 5.1 THEN t.MoneyValue
+		ELSE 5.1
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN p.MoneyValue > 5.1 THEN p.MoneyValue
-				ELSE 5.1
-			END as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes t
 WHERE
-	(t.c1 IS NULL OR t.c1 <> 0)
+	(CASE
+		WHEN t.MoneyValue > 5.1 THEN t.MoneyValue
+		ELSE 5.1
+	END <> 0 OR CASE
+		WHEN t.MoneyValue > 5.1 THEN t.MoneyValue
+		ELSE 5.1
+	END IS NULL)
 

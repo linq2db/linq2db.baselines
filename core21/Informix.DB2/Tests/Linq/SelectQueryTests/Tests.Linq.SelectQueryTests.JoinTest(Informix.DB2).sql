@@ -31,14 +31,13 @@ BeforeExecute
 SELECT
 	t.Id,
 	t."Value",
-	s.Key_1,
-	s.SecondValue
+	1,
+	3
 FROM
 	SampleClass t
 		INNER JOIN (
 			SELECT FIRST 1
-				1 as Key_1,
-				3 as SecondValue
+				1 as Key_1
 			FROM SYSTABLES
 		) s ON s.Key_1 = t.Id
 

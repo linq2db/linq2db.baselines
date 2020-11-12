@@ -437,8 +437,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_2 VarChar(1) -- String
-SET     @BoolValue_2 = 'N'
+DECLARE @BoolValue_1 VarChar(1) -- String
+SET     @BoolValue_1 = 'N'
 
 SELECT
 	t.Id,
@@ -448,7 +448,7 @@ SELECT
 FROM
 	ValueConversion t
 WHERE
-	t.BoolValue = @BoolValue_2
+	t.BoolValue = @BoolValue_1
 
 BeforeExecute
 -- Informix.DB2 Informix

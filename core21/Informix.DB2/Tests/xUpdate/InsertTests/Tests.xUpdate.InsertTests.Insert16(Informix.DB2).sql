@@ -4,14 +4,12 @@
 DELETE FROM
 	Person
 WHERE
-	Person.FirstName LIKE 'Insert16%'
+	Person.FirstName LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @name VarChar(8) -- String
-SET     @name = 'Insert16'
 DECLARE @idx Integer(4) -- Int32
-SET     @idx = 4
+SET     @idx = 12
 
 INSERT INTO Person
 (
@@ -22,7 +20,7 @@ INSERT INTO Person
 VALUES
 (
 	'Insert16',
-	To_Char(Length(@name) + @idx),
+	To_Char(@idx),
 	'M'
 )
 
@@ -34,7 +32,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	t1.FirstName LIKE 'Insert16%'
+	t1.FirstName LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -42,5 +40,5 @@ BeforeExecute
 DELETE FROM
 	Person
 WHERE
-	Person.FirstName LIKE 'Insert16%'
+	Person.FirstName LIKE 'Insert16%' ESCAPE '~'
 

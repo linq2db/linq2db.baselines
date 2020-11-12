@@ -37,5 +37,5 @@ FROM
 			t2.ParentID
 	) tt
 WHERE
-	(tt.Sum_1 IS NULL OR tt.Sum_1 <> 0)
+	(tt.Sum_1 <> 0 OR tt.Sum_1 IS NULL)
 
