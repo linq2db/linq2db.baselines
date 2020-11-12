@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.FirstName LIKE 'Jo%' AND p.LastName NOT LIKE 'Je%'
+	p.FirstName LIKE 'Jo%' ESCAPE '~' AND p.LastName NOT LIKE 'Je%' ESCAPE '~'
 

@@ -305,7 +305,7 @@ VALUES
 	'Inserted 2',
 	'M'
 )
- WHERE Source.Diagnosis LIKE '%sick%'
+ WHERE Source.Diagnosis LIKE '%sick%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.Managed Oracle12

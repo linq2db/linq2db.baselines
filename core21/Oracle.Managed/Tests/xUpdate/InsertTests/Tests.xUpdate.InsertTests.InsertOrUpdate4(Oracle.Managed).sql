@@ -32,12 +32,8 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @i_1 Int32
-SET     @i_1 = 0
 DECLARE @diagnosis Varchar2(3) -- String
 SET     @diagnosis = 'abc'
-DECLARE @i Int32
-SET     @i = 0
 
 MERGE INTO Patient t1
 USING (SELECT :id AS PersonID FROM SYS.DUAL) s ON
@@ -47,7 +43,7 @@ USING (SELECT :id AS PersonID FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1.Diagnosis = Cast((Length(t1.Diagnosis) + :i_1) as VarChar2(11))
+		t1.Diagnosis = Cast(Length(t1.Diagnosis) as VarChar2(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -57,7 +53,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast((Length(:diagnosis) + :i) as VarChar2(11))
+		Cast(Length(:diagnosis) as VarChar2(11))
 	)
 
 BeforeExecute
@@ -66,10 +62,8 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i_1 Int32
 SET     @i_1 = 1
-DECLARE @diagnosis Varchar2(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Int32
-SET     @i = 1
+SET     @i = 4
 
 MERGE INTO Patient t1
 USING (SELECT :id AS PersonID FROM SYS.DUAL) s ON
@@ -89,7 +83,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast((Length(:diagnosis) + :i) as VarChar2(11))
+		Cast(:i as VarChar2(11))
 	)
 
 BeforeExecute
@@ -98,10 +92,8 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i_1 Int32
 SET     @i_1 = 2
-DECLARE @diagnosis Varchar2(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Int32
-SET     @i = 2
+SET     @i = 5
 
 MERGE INTO Patient t1
 USING (SELECT :id AS PersonID FROM SYS.DUAL) s ON
@@ -121,7 +113,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast((Length(:diagnosis) + :i) as VarChar2(11))
+		Cast(:i as VarChar2(11))
 	)
 
 BeforeExecute

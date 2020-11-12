@@ -2,14 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.c1
+	Cast(t.MoneyValue as Decimal(29, 10))
 FROM
-	(
-		SELECT
-			Cast(t.MoneyValue as Decimal(29, 10)) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes t
 WHERE
-	p.c1 > 0
+	Cast(t.MoneyValue as Decimal(29, 10)) > 0
 

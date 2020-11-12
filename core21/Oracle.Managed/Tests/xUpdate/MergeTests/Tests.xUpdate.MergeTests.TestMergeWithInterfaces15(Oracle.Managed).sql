@@ -21,9 +21,9 @@ UPDATE
 SET
 	Target.Value = '3'
 WHERE
-	(Target.Value IS NULL AND Source.Value_1 IS NOT NULL OR Target.Value IS NOT NULL AND Source.Value_1 IS NULL OR Target.Value <> Source.Value_1)
+	(Target.Value <> Source.Value_1 OR Target.Value IS NULL AND Source.Value_1 IS NOT NULL OR Target.Value IS NOT NULL AND Source.Value_1 IS NULL)
 DELETE WHERE
-	(Target.Value IS NULL AND Source.Value_1 IS NOT NULL OR Target.Value IS NOT NULL AND Source.Value_1 IS NULL OR Target.Value <> Source.Value_1)
+	(Target.Value <> Source.Value_1 OR Target.Value IS NULL AND Source.Value_1 IS NOT NULL OR Target.Value IS NOT NULL AND Source.Value_1 IS NULL)
 
 BeforeExecute
 -- Oracle.Managed Oracle12

@@ -4,7 +4,7 @@
 DELETE FROM
 	Person t1
 WHERE
-	t1.FirstName LIKE 'Insert14%'
+	t1.FirstName LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -39,7 +39,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.FirstName LIKE 'Insert14%'
+	p.FirstName LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -47,5 +47,5 @@ BeforeExecute
 DELETE FROM
 	Person t1
 WHERE
-	t1.FirstName LIKE 'Insert14%'
+	t1.FirstName LIKE 'Insert14%' ESCAPE '~'
 

@@ -583,8 +583,8 @@ CREATE TABLE ITEM_GROUP
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @sfcBo_1 Varchar2(20) -- String
-SET     @sfcBo_1 = 'SFCBO:8110,C17C05016'
+DECLARE @sfcBo Varchar2(20) -- String
+SET     @sfcBo = 'SFCBO:8110,C17C05016'
 
 WITH GetAllowedNcCode (NcCodeBo, NcCode, NcCodeDescription)
 AS
@@ -597,7 +597,7 @@ AS
 		NC_CODE ncCode_1
 			INNER JOIN NC_GROUP_MEMBER ncGroupMember ON ncCode_1.HANDLE = ncGroupMember.NC_CODE_OR_GROUP_GBO
 	WHERE
-		((ncGroupMember.NC_GROUP_BO IS NOT NULL AND ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_AUTO' OR ncGroupMember.NC_GROUP_BO IS NOT NULL AND ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_MAN') OR ncGroupMember.NC_GROUP_BO IS NOT NULL AND ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_ALL')
+		((ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_AUTO' OR ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_MAN') OR ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_ALL')
 ),
 FindProductionFailedNcData
 (
@@ -644,7 +644,7 @@ AS
 			INNER JOIN GetAllowedNcCode ncCodeItem ON ncCodeItem.NcCodeBo = ncData.NC_CODE_BO
 			INNER JOIN SFC sfc_1 ON ncData.NC_CONTEXT_GBO = sfc_1.HANDLE
 			INNER JOIN OPERATION operationItem ON ncData.OPERATION_BO = operationItem.HANDLE
-			INNER JOIN CUSTOM_FIELDS customFields ON (sfc_1.SHOP_ORDER_BO IS NULL AND customFields.HANDLE IS NULL OR sfc_1.SHOP_ORDER_BO = customFields.HANDLE) AND 'ORDER_TYPE' = customFields.ATTRIBUTE AND 'ZPRN' = customFields.VALUE
+			INNER JOIN CUSTOM_FIELDS customFields ON (sfc_1.SHOP_ORDER_BO = customFields.HANDLE OR sfc_1.SHOP_ORDER_BO IS NULL AND customFields.HANDLE IS NULL) AND 'ORDER_TYPE' = customFields.ATTRIBUTE AND 'ZPRN' = customFields.VALUE
 ),
 FilterByTestOperation
 (
@@ -692,11 +692,11 @@ AS
 		sfcStep.HANDLE
 	FROM
 		FindProductionFailedNcData inputItem
-			INNER JOIN SFC_ROUTING sfcRouting ON (inputItem.SfcBo IS NULL AND sfcRouting.SFC_BO IS NULL OR inputItem.SfcBo = sfcRouting.SFC_BO)
+			INNER JOIN SFC_ROUTING sfcRouting ON (inputItem.SfcBo = sfcRouting.SFC_BO OR inputItem.SfcBo IS NULL AND sfcRouting.SFC_BO IS NULL)
 			INNER JOIN SFC_ROUTER sfcRouter ON sfcRouting.HANDLE = sfcRouter.SFC_ROUTING_BO
 			INNER JOIN SFC_STEP sfcStep ON sfcRouter.HANDLE = sfcStep.SFC_ROUTER_BO
-			INNER JOIN ROUTER_STEP routerStep ON (sfcRouter.ROUTER_BO IS NULL AND routerStep.ROUTER_BO IS NULL OR sfcRouter.ROUTER_BO = routerStep.ROUTER_BO) AND (sfcStep.STEP_ID IS NULL AND routerStep.STEP_ID IS NULL OR sfcStep.STEP_ID = routerStep.STEP_ID)
-			INNER JOIN ROUTER_OPERATION routerOperation ON routerStep.HANDLE = routerOperation.ROUTER_STEP_BO AND (inputItem.CurrentOperationBo IS NULL AND routerOperation.OPERATION_BO IS NULL OR inputItem.CurrentOperationBo = routerOperation.OPERATION_BO)
+			INNER JOIN ROUTER_STEP routerStep ON (sfcRouter.ROUTER_BO = routerStep.ROUTER_BO OR sfcRouter.ROUTER_BO IS NULL AND routerStep.ROUTER_BO IS NULL) AND (sfcStep.STEP_ID = routerStep.STEP_ID OR sfcStep.STEP_ID IS NULL AND routerStep.STEP_ID IS NULL)
+			INNER JOIN ROUTER_OPERATION routerOperation ON routerStep.HANDLE = routerOperation.ROUTER_STEP_BO AND (inputItem.CurrentOperationBo = routerOperation.OPERATION_BO OR inputItem.CurrentOperationBo IS NULL AND routerOperation.OPERATION_BO IS NULL)
 			INNER JOIN CUSTOM_FIELDS customFields_1 ON routerOperation.HANDLE = customFields_1.HANDLE AND 'OPERATION_TYPE' = customFields_1.ATTRIBUTE AND 'T' = customFields_1.VALUE
 			INNER JOIN ROUTER router_1 ON sfcRouter.ROUTER_BO = router_1.HANDLE
 	WHERE
@@ -782,19 +782,19 @@ AS
 		usr_1.BADGE_NUMBER
 	FROM
 		FilterByTestOperation inputItem_1
-			LEFT JOIN SITE site_1 ON (site_1.SITE IS NULL AND inputItem_1.Parent_Site IS NULL OR site_1.SITE = inputItem_1.Parent_Site)
+			LEFT JOIN SITE site_1 ON (site_1.SITE = inputItem_1.Parent_Site OR site_1.SITE IS NULL AND inputItem_1.Parent_Site IS NULL)
 			LEFT JOIN USR usr_1 ON usr_1.HANDLE = inputItem_1.Parent_UserBo
 			LEFT JOIN SHOP_ORDER shopOrder_1 ON shopOrder_1.HANDLE = inputItem_1.Parent_ShopOrderBo
 			LEFT JOIN RESRCE resrce_1 ON resrce_1.HANDLE = inputItem_1.Parent_ResourceBo
 			LEFT JOIN WORK_CENTER workCenter_1 ON workCenter_1.HANDLE = inputItem_1.Parent_WorkCenterBo
-			LEFT JOIN WORK_CENTER_MEMBER workCenterMember ON (workCenterMember.WORK_CENTER_OR_RESOURCE_GBO IS NULL AND inputItem_1.Parent_WorkCenterBo IS NULL OR workCenterMember.WORK_CENTER_OR_RESOURCE_GBO = inputItem_1.Parent_WorkCenterBo)
+			LEFT JOIN WORK_CENTER_MEMBER workCenterMember ON (workCenterMember.WORK_CENTER_OR_RESOURCE_GBO = inputItem_1.Parent_WorkCenterBo OR workCenterMember.WORK_CENTER_OR_RESOURCE_GBO IS NULL AND inputItem_1.Parent_WorkCenterBo IS NULL)
 			LEFT JOIN WORK_CENTER line_1 ON line_1.HANDLE = workCenterMember.WORK_CENTER_BO
 			LEFT JOIN ITEM item_1 ON item_1.HANDLE = inputItem_1.Parent_ItemBo
-			LEFT JOIN ITEM_GROUP_MEMBER itemGroupMember ON (itemGroupMember.ITEM_BO IS NULL AND inputItem_1.Parent_ItemBo IS NULL OR itemGroupMember.ITEM_BO = inputItem_1.Parent_ItemBo)
+			LEFT JOIN ITEM_GROUP_MEMBER itemGroupMember ON (itemGroupMember.ITEM_BO = inputItem_1.Parent_ItemBo OR itemGroupMember.ITEM_BO IS NULL AND inputItem_1.Parent_ItemBo IS NULL)
 			LEFT JOIN ITEM_GROUP itemGroup_1 ON itemGroup_1.HANDLE = itemGroupMember.ITEM_GROUP_BO
-			LEFT JOIN CUSTOM_FIELDS customField ON customField.ATTRIBUTE = 'PRODUCT_LINE' AND (customField.HANDLE IS NULL AND inputItem_1.Parent_ItemBo IS NULL OR customField.HANDLE = inputItem_1.Parent_ItemBo)
-			LEFT JOIN CUSTOM_FIELDS customField_1 ON customField_1.ATTRIBUTE = 'SPART' AND (customField_1.HANDLE IS NULL AND inputItem_1.Parent_ItemBo IS NULL OR customField_1.HANDLE = inputItem_1.Parent_ItemBo)
-			LEFT JOIN CUSTOM_FIELDS customField_2 ON customField_2.ATTRIBUTE = 'TEST_CATEGORY' AND (customField_2.HANDLE IS NULL AND inputItem_1.RouterOperationBo IS NULL OR customField_2.HANDLE = inputItem_1.RouterOperationBo)
+			LEFT JOIN CUSTOM_FIELDS customField ON customField.ATTRIBUTE = 'PRODUCT_LINE' AND (customField.HANDLE = inputItem_1.Parent_ItemBo OR customField.HANDLE IS NULL AND inputItem_1.Parent_ItemBo IS NULL)
+			LEFT JOIN CUSTOM_FIELDS customField_1 ON customField_1.ATTRIBUTE = 'SPART' AND (customField_1.HANDLE = inputItem_1.Parent_ItemBo OR customField_1.HANDLE IS NULL AND inputItem_1.Parent_ItemBo IS NULL)
+			LEFT JOIN CUSTOM_FIELDS customField_2 ON customField_2.ATTRIBUTE = 'TEST_CATEGORY' AND (customField_2.HANDLE = inputItem_1.RouterOperationBo OR customField_2.HANDLE IS NULL AND inputItem_1.RouterOperationBo IS NULL)
 )
 SELECT
 	item_2.Description,
@@ -836,7 +836,7 @@ SELECT
 FROM
 	GetAdditionalData item_2
 WHERE
-	item_2.Parent_Parent_SfcBo = :sfcBo_1
+	item_2.Parent_Parent_SfcBo = :sfcBo
 
 BeforeExecute
 -- Oracle.Managed Oracle12
