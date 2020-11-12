@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 5000
+DECLARE @p1 Int32
+SET     @p1 = 5000
 
 SELECT
 	key_data_result.ParentID,
@@ -18,7 +18,7 @@ FROM
 				FROM
 					Parent t
 				WHERE
-					t.ParentID > 0 AND ROWNUM <= :take
+					t.ParentID > 0 AND ROWNUM <= :p1
 			) t1
 	) key_data_result
 		INNER JOIN Child c_1 ON c_1.ParentID = key_data_result.ParentID AND c_1.ChildID > -100

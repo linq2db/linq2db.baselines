@@ -2,8 +2,8 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ParentID_1  -- Int32
 SET     @ParentID_1 = 3
-DECLARE @take  -- Int32
-SET     @take = 1
+DECLARE @p1  -- Int32
+SET     @p1 = 1
 
 SELECT
 	[lw_Parent_1].[Key_1],
@@ -30,7 +30,7 @@ FROM
 							[Parent] [p]
 						WHERE
 							[p].[ParentID] = @ParentID_1
-						LIMIT @take
+						LIMIT @p1
 					) [t1]
 			) [lw_Parent]
 				INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]

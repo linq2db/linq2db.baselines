@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @p1 Int32
+SET     @p1 = 1
 
 SELECT
 	lw_Parent.ParentID_1,
@@ -32,7 +32,7 @@ FROM
 							Parent p
 						WHERE
 							p.ParentID < 2
-						FETCH NEXT :take ROWS ONLY
+						FETCH NEXT :p1 ROWS ONLY
 					) t1
 			) key_data_result
 				INNER JOIN Child detail ON key_data_result.ParentID = detail.ParentID
