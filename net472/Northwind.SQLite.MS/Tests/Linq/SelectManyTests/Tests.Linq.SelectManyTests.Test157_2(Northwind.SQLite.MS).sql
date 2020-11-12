@@ -140,7 +140,7 @@ FROM
 				[Orders] [join_2]
 					LEFT JOIN [Shippers] [a_Shipper] ON [join_2].[ShipVia] = [a_Shipper].[ShipperID]
 					LEFT JOIN [Employees] [a_Employee] ON [join_2].[EmployeeID] = [a_Employee].[EmployeeID]
-					LEFT JOIN [Customers] [a_Customer] ON ([join_2].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [join_2].[CustomerID] = [a_Customer].[CustomerID])
+					LEFT JOIN [Customers] [a_Customer] ON ([join_2].[CustomerID] = [a_Customer].[CustomerID] OR [join_2].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 		) [t1] ON [query].[EmployeeID] = [t1].[EmployeeID]
 		LEFT JOIN [Order Details] [join_3] ON [t1].[OrderID] = [join_3].[OrderID]
 		LEFT JOIN (

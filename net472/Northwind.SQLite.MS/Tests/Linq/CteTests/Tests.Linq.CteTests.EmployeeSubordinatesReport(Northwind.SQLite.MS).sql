@@ -23,7 +23,7 @@ AS
 			FROM
 				[Employees] [e2]
 			WHERE
-				([e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL OR [e2].[ReportsTo] = [e].[ReportsTo])
+				([e2].[ReportsTo] = [e].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL)
 		),
 		(
 			SELECT
@@ -31,7 +31,7 @@ AS
 			FROM
 				[Employees] [e2_1]
 			WHERE
-				([e2_1].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL OR [e2_1].[ReportsTo] = [e].[ReportsTo])
+				([e2_1].[ReportsTo] = [e].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL)
 		)
 	FROM
 		[Employees] [e]
@@ -69,7 +69,7 @@ FROM
 				FROM
 					[Employees] [e2]
 				WHERE
-					([e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL OR [e2].[ReportsTo] = [e].[ReportsTo])
+					([e2].[ReportsTo] = [e].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL)
 			) as [NumberOfSubordinates]
 		FROM
 			[Employees] [e]
@@ -85,7 +85,7 @@ FROM
 					FROM
 						[Employees] [e2_1]
 					WHERE
-						([e2_1].[ReportsTo] IS NULL AND [e_1].[ReportsTo] IS NULL OR [e2_1].[ReportsTo] = [e_1].[ReportsTo])
+						([e2_1].[ReportsTo] = [e_1].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [e_1].[ReportsTo] IS NULL)
 				) as [NumberOfSubordinates]
 			FROM
 				[Employees] [e_1]
