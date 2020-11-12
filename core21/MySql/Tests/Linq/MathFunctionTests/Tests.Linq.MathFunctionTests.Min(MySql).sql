@@ -9,11 +9,8 @@ SELECT
 FROM
 	`LinqDataTypes` `p`
 WHERE
-	(CASE
+	CASE
 		WHEN `p`.`MoneyValue` < 5 THEN `p`.`MoneyValue`
 		ELSE 5
-	END <> 0 OR CASE
-		WHEN `p`.`MoneyValue` < 5 THEN `p`.`MoneyValue`
-		ELSE 5
-	END IS NULL)
+	END <> 0
 
