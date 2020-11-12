@@ -21,9 +21,7 @@ CREATE TABLE [#TInserted]
 BeforeExecute
 -- SqlServer.2008
 DECLARE @id Int -- Int32
-SET     @id = 1001
-DECLARE @param Int -- Int32
-SET     @param = 200
+SET     @id = 1201
 
 INSERT INTO [Child]
 (
@@ -40,7 +38,7 @@ INTO [#TInserted]
 )
 SELECT
 	[c_1].[ParentID],
-	@id + @param
+	@id
 FROM
 	[Child] [c_1]
 WHERE

@@ -11,10 +11,15 @@ FROM
 	[Person] [y]
 UNION ALL
 SELECT
-	[x].[FirstName]
+	[t1].[FirstName]
 FROM
-	[Person] [x],
-	[Patient] [z]
-WHERE
-	([x].[FirstName] = @p1 OR [z].[PersonID] = @p2)
+	(
+		SELECT
+			[x].[FirstName]
+		FROM
+			[Person] [x],
+			[Patient] [z]
+		WHERE
+			([x].[FirstName] = @p1 OR [z].[PersonID] = @p2)
+	) [t1]
 
