@@ -11,5 +11,5 @@ FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	([t].[c1] <> 0 OR [t].[c1] IS NULL) AND ([t].[c1] <> 7 OR [t].[c1] IS NULL)
+	[t].[c1] <> 0 AND [t].[c1] <> 7
 
