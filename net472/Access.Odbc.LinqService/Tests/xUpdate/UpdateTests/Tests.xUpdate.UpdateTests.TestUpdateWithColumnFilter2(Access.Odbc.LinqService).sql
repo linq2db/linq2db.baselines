@@ -51,8 +51,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(18) -- String
-SET     @FirstName_1 = 'UpdateColumnFilter'
+DECLARE @FirstName NVarChar(18) -- String
+SET     @FirstName = 'UpdateColumnFilter'
 
 SELECT TOP 2
 	[x].[FirstName],

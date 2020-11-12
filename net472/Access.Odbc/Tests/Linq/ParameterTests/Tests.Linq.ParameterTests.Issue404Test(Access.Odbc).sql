@@ -208,8 +208,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Usage_2 Int -- Int32
-SET     @Usage_2 = 0
+DECLARE @Usage_1 Int -- Int32
+SET     @Usage_1 = 0
 
 SELECT
 	[key_data_result].[Id],
@@ -240,8 +240,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Usage_2 Int -- Int32
-SET     @Usage_2 = 1
+DECLARE @Usage_1 Int -- Int32
+SET     @Usage_1 = 1
 
 SELECT
 	[key_data_result].[Id],
@@ -490,8 +490,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Usage_2 Int -- Int32
-SET     @Usage_2 = 0
+DECLARE @Usage_1 Int -- Int32
+SET     @Usage_1 = 0
 
 SELECT
 	[key_data_result].[Id],
@@ -522,8 +522,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Usage_2 Int -- Int32
-SET     @Usage_2 = 1
+DECLARE @Usage_1 Int -- Int32
+SET     @Usage_1 = 1
 
 SELECT
 	[key_data_result].[Id],

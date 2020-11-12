@@ -18,10 +18,10 @@ GROUP BY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID NVarChar -- String
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID_1 Int -- Int32
-SET     @ChildID_1 = 11
+DECLARE @ChildID Int -- Int32
+SET     @ChildID = 11
 
 SELECT
 	[elemParam].[ChildID]

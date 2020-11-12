@@ -12,10 +12,10 @@ GROUP BY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 1
-DECLARE @ChildID_1 Int -- Int32
-SET     @ChildID_1 = 11
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1
+DECLARE @ChildID Int -- Int32
+SET     @ChildID = 11
 
 SELECT
 	[keyParam].[ParentID],

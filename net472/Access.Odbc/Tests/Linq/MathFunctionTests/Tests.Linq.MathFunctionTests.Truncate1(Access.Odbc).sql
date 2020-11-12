@@ -11,5 +11,5 @@ FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	([t].[c1] IS NULL OR [t].[c1] <> 0.1)
+	([t].[c1] <> 0.1 OR [t].[c1] IS NULL)
 
