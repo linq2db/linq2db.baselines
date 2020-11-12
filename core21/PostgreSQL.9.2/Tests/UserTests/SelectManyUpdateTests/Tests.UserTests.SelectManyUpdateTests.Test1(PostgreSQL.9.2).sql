@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = NULL
+	"Value1" = :Value1
 FROM
 	"Parent" c_1
 WHERE
