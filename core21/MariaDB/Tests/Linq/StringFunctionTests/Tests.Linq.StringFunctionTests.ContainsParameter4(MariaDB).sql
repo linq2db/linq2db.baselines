@@ -45,7 +45,7 @@ FROM
 			`Person` `p`
 	) `p_1`
 WHERE
-	(`p_1`.`Field1` = 1 AND `p_1`.`Field1` IS NOT NULL)
+	`p_1`.`Field1` = 1
 ORDER BY
 	`p_1`.`Field1`
 
