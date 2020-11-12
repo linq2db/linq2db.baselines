@@ -6,7 +6,7 @@ SELECT
 FROM
 	`Person` `nm`
 WHERE
-	NOT (`nm`.`MiddleName` IS NULL OR Char_Length(`nm`.`MiddleName`) IS NOT NULL AND Char_Length(`nm`.`MiddleName`) = 0)
+	(`nm`.`MiddleName` IS NOT NULL AND (Char_Length(`nm`.`MiddleName`) <> 0 OR Char_Length(`nm`.`MiddleName`) IS NULL))
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
