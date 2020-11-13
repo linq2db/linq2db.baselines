@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE ColumnOrderTest
+CREATE TABLE "ColumnOrderTest"
 (
-	RecordID       Int          NOT NULL,
-	EffectiveStart timestamp    NOT NULL,
-	EffectiveEnd   timestamp        NULL,
-	Key            Int          NOT NULL,
-	Code           VarChar(255)     NULL,
-	Name           VarChar(255)     NULL,
-	Audit1ID       Int          NOT NULL,
-	Audit2ID       Int          NOT NULL,
+	"RecordID"       Int          NOT NULL,
+	"EffectiveStart" timestamp    NOT NULL,
+	"EffectiveEnd"   timestamp        NULL,
+	"Key"            Int          NOT NULL,
+	"Code"           VarChar(255)     NULL,
+	"Name"           VarChar(255)     NULL,
+	"Audit1ID"       Int          NOT NULL,
+	"Audit2ID"       Int          NOT NULL,
 
-	CONSTRAINT PK_ColumnOrderTest PRIMARY KEY (RecordID)
+	CONSTRAINT "PK_ColumnOrderTest" PRIMARY KEY ("RecordID")
 )
 
 BeforeExecute
@@ -310,5 +310,5 @@ SYSTEM.ADDISSUE792RECORD
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE ColumnOrderTest
+DROP TABLE "ColumnOrderTest"
 

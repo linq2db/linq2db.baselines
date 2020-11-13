@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE aa
+CREATE TABLE "aa"
 (
-	bb Int          NOT NULL,
-	cc VarChar(255)     NULL,
+	"bb" Int          NOT NULL,
+	"cc" VarChar(255)     NULL,
 
-	CONSTRAINT PK_aa PRIMARY KEY (bb)
+	CONSTRAINT "PK_aa" PRIMARY KEY ("bb")
 )
 
 BeforeExecute
@@ -16,10 +16,10 @@ SET     @cc = 'hallo'
 DECLARE @bb Int32
 SET     @bb = 99
 
-INSERT INTO aa
+INSERT INTO "aa"
 (
-	cc,
-	bb
+	"cc",
+	"bb"
 )
 VALUES
 (
@@ -31,13 +31,13 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.cc,
-	t1.bb
+	t1."cc",
+	t1."bb"
 FROM
-	aa t1
+	"aa" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE aa
+DROP TABLE "aa"
 

@@ -4,7 +4,7 @@
 SELECT
 	Count(*)
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
 	p.ID = 1
 

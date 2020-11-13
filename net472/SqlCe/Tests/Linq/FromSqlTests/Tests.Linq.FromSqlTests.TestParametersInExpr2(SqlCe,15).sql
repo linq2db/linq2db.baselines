@@ -49,7 +49,7 @@ SELECT
 FROM
 	[sample_class] [c_1]
 		INNER JOIN (
-			SELECT * FROM sample_class where id >= @startId and id < @p1
+			SELECT * FROM [sample_class] where [id] >= @startId and [id] < @p1
 		) [s] ON [s].[id] = [c_1].[id]
 WHERE
 	[s].[id] > 10

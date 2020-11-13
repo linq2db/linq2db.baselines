@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE TempTable';
+	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -15,7 +15,7 @@ BeforeExecute
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE TempTable
+		CREATE TABLE "TempTable"
 		(
 			ID Int NOT NULL
 		)
@@ -30,14 +30,14 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
-INSERT INTO TempTable
+INSERT INTO "TempTable"
 (
 	ID
 )
 SELECT
-	p.ParentID
+	p."ParentID"
 FROM
-	Parent p
+	"Parent" p
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -45,14 +45,14 @@ BeforeExecute
 SELECT
 	t.ID
 FROM
-	Parent p
-		INNER JOIN TempTable t ON p.ParentID = t.ID
+	"Parent" p
+		INNER JOIN "TempTable" t ON p."ParentID" = t.ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE TempTable';
+	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

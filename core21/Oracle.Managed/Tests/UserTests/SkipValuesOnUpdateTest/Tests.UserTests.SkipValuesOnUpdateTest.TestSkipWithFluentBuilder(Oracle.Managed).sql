@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE PR_1598_Update_Fluent_Table
+CREATE TABLE "PR_1598_Update_Fluent_Table"
 (
-	Id   Int          NOT NULL,
-	Name VarChar(255)     NULL,
-	Age  Int              NULL,
+	"Id"   Int          NOT NULL,
+	"Name" VarChar(255)     NULL,
+	"Age"  Int              NULL,
 
-	CONSTRAINT PK_PR_1598_Update_Fluent_Table PRIMARY KEY (Id)
+	CONSTRAINT "PK_PR_1598_Update_Fluent_Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -19,11 +19,11 @@ SET     @Name = NULL
 DECLARE @Age Int32
 SET     @Age = 2
 
-INSERT INTO PR_1598_Update_Fluent_Table
+INSERT INTO "PR_1598_Update_Fluent_Table"
 (
-	Id,
-	Name,
-	Age
+	"Id",
+	"Name",
+	"Age"
 )
 VALUES
 (
@@ -38,13 +38,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Update_Fluent_Table t
+	"PR_1598_Update_Fluent_Table" t
 WHERE
-	t.Id = 1
+	t."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -57,12 +57,12 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	PR_1598_Update_Fluent_Table
+	"PR_1598_Update_Fluent_Table"
 SET
-	PR_1598_Update_Fluent_Table.Name = :Name,
-	PR_1598_Update_Fluent_Table.Age = :Age
+	"PR_1598_Update_Fluent_Table"."Name" = :Name,
+	"PR_1598_Update_Fluent_Table"."Age" = :Age
 WHERE
-	PR_1598_Update_Fluent_Table.Id = :Id
+	"PR_1598_Update_Fluent_Table"."Id" = :Id
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -70,13 +70,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Update_Fluent_Table t
+	"PR_1598_Update_Fluent_Table" t
 WHERE
-	t.Id = 1
+	t."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -87,11 +87,11 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	PR_1598_Update_Fluent_Table
+	"PR_1598_Update_Fluent_Table"
 SET
-	PR_1598_Update_Fluent_Table.Name = :Name
+	"PR_1598_Update_Fluent_Table"."Name" = :Name
 WHERE
-	PR_1598_Update_Fluent_Table.Id = :Id
+	"PR_1598_Update_Fluent_Table"."Id" = :Id
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -99,17 +99,17 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Update_Fluent_Table t
+	"PR_1598_Update_Fluent_Table" t
 WHERE
-	t.Id = 1
+	t."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE PR_1598_Update_Fluent_Table
+DROP TABLE "PR_1598_Update_Fluent_Table"
 

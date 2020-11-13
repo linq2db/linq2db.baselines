@@ -5,12 +5,12 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE T1
 		(
-			InstrumentId         Int          NOT NULL,
-			InstrumentCode       VarChar(255)     NULL,
-			CreateDate           timestamp    NOT NULL,
-			SourceInstrumentCode VarChar(255)     NULL,
+			"InstrumentId"         Int          NOT NULL,
+			"InstrumentCode"       VarChar(255)     NULL,
+			"CreateDate"           timestamp    NOT NULL,
+			"SourceInstrumentCode" VarChar(255)     NULL,
 
-			CONSTRAINT PK_T1 PRIMARY KEY (InstrumentId)
+			CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
 		)
 	';
 EXCEPTION
@@ -27,8 +27,8 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE T2
 		(
-			InstrumentId Int NOT NULL,
-			IndexId      Int NOT NULL
+			"InstrumentId" Int NOT NULL,
+			"IndexId"      Int NOT NULL
 		)
 	';
 EXCEPTION
@@ -45,8 +45,8 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE T3
 		(
-			InstrumentId Int NOT NULL,
-			IndexId      Int NOT NULL
+			"InstrumentId" Int NOT NULL,
+			"IndexId"      Int NOT NULL
 		)
 	';
 EXCEPTION
@@ -65,8 +65,8 @@ SET     @IndexId = 1
 
 INSERT INTO T3
 (
-	InstrumentId,
-	IndexId
+	"InstrumentId",
+	"IndexId"
 )
 VALUES
 (
@@ -83,8 +83,8 @@ SET     @IndexId = 1
 
 INSERT INTO T3
 (
-	InstrumentId,
-	IndexId
+	"InstrumentId",
+	"IndexId"
 )
 VALUES
 (
@@ -101,8 +101,8 @@ SET     @IndexId = 1
 
 INSERT INTO T3
 (
-	InstrumentId,
-	IndexId
+	"InstrumentId",
+	"IndexId"
 )
 VALUES
 (
@@ -119,8 +119,8 @@ SET     @IndexId = 1
 
 INSERT INTO T2
 (
-	InstrumentId,
-	IndexId
+	"InstrumentId",
+	"IndexId"
 )
 VALUES
 (
@@ -137,8 +137,8 @@ SET     @IndexId = 1
 
 INSERT INTO T2
 (
-	InstrumentId,
-	IndexId
+	"InstrumentId",
+	"IndexId"
 )
 VALUES
 (
@@ -159,10 +159,10 @@ SET     @SourceInstrumentCode = 'NOTNULL'
 
 INSERT INTO T1
 (
-	InstrumentId,
-	InstrumentCode,
-	CreateDate,
-	SourceInstrumentCode
+	"InstrumentId",
+	"InstrumentCode",
+	"CreateDate",
+	"SourceInstrumentCode"
 )
 VALUES
 (
@@ -185,10 +185,10 @@ SET     @SourceInstrumentCode = NULL
 
 INSERT INTO T1
 (
-	InstrumentId,
-	InstrumentCode,
-	CreateDate,
-	SourceInstrumentCode
+	"InstrumentId",
+	"InstrumentCode",
+	"CreateDate",
+	"SourceInstrumentCode"
 )
 VALUES
 (
@@ -206,17 +206,17 @@ DECLARE @uptoDate TimeStamp -- DateTime
 SET     @uptoDate = TO_TIMESTAMP('2020-02-29 17:54:55.123123', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
 SELECT DISTINCT
-	ins.SourceInstrumentCode
+	ins."SourceInstrumentCode"
 FROM
 	T1 ins_1
-		INNER JOIN T2 idx ON ins_1.InstrumentId = idx.InstrumentId
-		INNER JOIN T3 w ON idx.IndexId = w.IndexId
-		INNER JOIN T1 ins ON w.InstrumentId = ins.InstrumentId
+		INNER JOIN T2 idx ON ins_1."InstrumentId" = idx."InstrumentId"
+		INNER JOIN T3 w ON idx."IndexId" = w."IndexId"
+		INNER JOIN T1 ins ON w."InstrumentId" = ins."InstrumentId"
 WHERE
-	ins.SourceInstrumentCode IS NOT NULL AND ins_1.InstrumentCode LIKE :cond ESCAPE '~' AND
-	ins_1.CreateDate <= :uptoDate
+	ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond ESCAPE '~' AND
+	ins_1."CreateDate" <= :uptoDate
 ORDER BY
-	ins.SourceInstrumentCode
+	ins."SourceInstrumentCode"
 
 BeforeExecute
 -- Oracle.Managed Oracle12

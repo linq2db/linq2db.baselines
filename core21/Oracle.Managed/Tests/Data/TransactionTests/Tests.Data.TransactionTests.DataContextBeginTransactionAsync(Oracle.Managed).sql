@@ -2,10 +2,10 @@
 -- Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	t1.ParentID,
-	t1.Value1
+	t1."ParentID",
+	t1."Value1"
 FROM
-	Parent t1
+	"Parent" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -14,10 +14,10 @@ SET     @ParentID = 1010
 DECLARE @Value1 Int32
 SET     @Value1 = 1010
 
-INSERT INTO Parent
+INSERT INTO "Parent"
 (
-	ParentID,
-	Value1
+	"ParentID",
+	"Value1"
 )
 VALUES
 (

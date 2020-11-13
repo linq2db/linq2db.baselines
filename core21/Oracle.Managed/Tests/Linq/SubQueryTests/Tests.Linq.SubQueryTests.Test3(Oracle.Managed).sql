@@ -2,10 +2,10 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	ch.ChildID
+	ch."ChildID"
 FROM
-	Parent p
-		LEFT JOIN Child ch ON ch.ParentID = p.ParentID AND ch.ChildID = ch.ParentID * 10 + 1
+	"Parent" p
+		LEFT JOIN "Child" ch ON ch."ParentID" = p."ParentID" AND ch."ChildID" = ch."ParentID" * 10 + 1
 WHERE
-	p.ParentID <> 5
+	p."ParentID" <> 5
 

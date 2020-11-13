@@ -4,7 +4,7 @@
 SELECT
 	1
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = 1
+	p."PersonID" = 1
 

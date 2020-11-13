@@ -55,15 +55,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-				FETCH FIRST 1 ROWS ONLY
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
 
@@ -74,7 +68,6 @@ SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -89,15 +82,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-				FETCH FIRST 1 ROWS ONLY
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_2 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
@@ -108,7 +95,6 @@ SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -123,15 +109,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-				FETCH FIRST 1 ROWS ONLY
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_2 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
@@ -142,7 +122,6 @@ SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -211,15 +190,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-				FETCH FIRST 1 ROWS ONLY
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
 
@@ -230,7 +203,6 @@ SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -245,15 +217,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-				FETCH FIRST 1 ROWS ONLY
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_2 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
@@ -264,7 +230,6 @@ SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -279,15 +244,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"c_1"."Id"
 		FROM
-			(
-				SELECT
-					"c_1"."Id"
-				FROM
-					"Table404One" "c_1"
-				FETCH FIRST 1 ROWS ONLY
-			) "t1"
+			"Table404One" "c_1"
 	) "key_data_result"
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_2 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
@@ -298,7 +257,6 @@ SELECT
 	"c_1"."Id"
 FROM
 	"Table404One" "c_1"
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	Sum(c_1.ParentID)
+	Sum(c_1."ParentID")
 FROM
-	Child c_1
+	"Child" c_1
 

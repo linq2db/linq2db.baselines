@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE SAMPLE_CLASS
+CREATE TABLE "sample_class"
 (
-	ID      Int                                   NOT NULL,
+	"id"    Int                                   NOT NULL,
 	"value" VarChar(50) CHARACTER SET UNICODE_FSS
 )
 
 BeforeExecute
 -- Firebird
 
-INSERT INTO SAMPLE_CLASS
+INSERT INTO "sample_class"
 (
-	ID,
+	"id",
 	"value"
 )
 SELECT 1,'Str_1' FROM rdb$database UNION ALL
@@ -45,14 +45,14 @@ SET     @endId = 15
 
 SELECT
 	"s"."value",
-	"s".ID
+	"s"."id"
 FROM
-	SAMPLE_CLASS "c_1"
+	"sample_class" "c_1"
 		INNER JOIN (
-			SELECT * FROM SAMPLE_CLASS where id >= @startId and id < @endId
-		) "s" ON "s".ID = "c_1".ID
+			SELECT * FROM "sample_class" where "id" >= @startId and "id" < @endId
+		) "s" ON "s"."id" = "c_1"."id"
 WHERE
-	"s".ID > 10
+	"s"."id" > 10
 
 BeforeExecute
 -- Firebird
@@ -63,14 +63,14 @@ SET     @endId = 15
 
 SELECT
 	"t"."value",
-	"t".ID
+	"t"."id"
 FROM
-	SAMPLE_CLASS "t"
+	"sample_class" "t"
 WHERE
-	"t".ID >= @startId AND "t".ID < @endId AND "t".ID > 10
+	"t"."id" >= @startId AND "t"."id" < @endId AND "t"."id" > 10
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE SAMPLE_CLASS
+DROP TABLE "sample_class"
 

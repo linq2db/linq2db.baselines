@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE TakeSkipClass
+CREATE TABLE "TakeSkipClass"
 (
-	Value VarChar(10)     NULL
+	"Value" VarChar(10)     NULL
 )
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO TakeSkipClass (Value) VALUES ('Value1')
-	INTO TakeSkipClass (Value) VALUES ('Value2')
-	INTO TakeSkipClass (Value) VALUES ('Value3')
-	INTO TakeSkipClass (Value) VALUES ('Value4')
-	INTO TakeSkipClass (Value) VALUES ('Value5')
-	INTO TakeSkipClass (Value) VALUES ('Value6')
-	INTO TakeSkipClass (Value) VALUES ('Value7')
-	INTO TakeSkipClass (Value) VALUES ('Value8')
+	INTO "TakeSkipClass" ("Value") VALUES ('Value1')
+	INTO "TakeSkipClass" ("Value") VALUES ('Value2')
+	INTO "TakeSkipClass" ("Value") VALUES ('Value3')
+	INTO "TakeSkipClass" ("Value") VALUES ('Value4')
+	INTO "TakeSkipClass" ("Value") VALUES ('Value5')
+	INTO "TakeSkipClass" ("Value") VALUES ('Value6')
+	INTO "TakeSkipClass" ("Value") VALUES ('Value7')
+	INTO "TakeSkipClass" ("Value") VALUES ('Value8')
 SELECT * FROM dual
 
 BeforeExecute
@@ -26,15 +26,15 @@ DECLARE @skip Int32
 SET     @skip = 6
 
 SELECT
-	t1.Value
+	t1."Value"
 FROM
-	TakeSkipClass t1
+	"TakeSkipClass" t1
 ORDER BY
-	t1.Value
+	t1."Value"
 OFFSET :skip ROWS
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE TakeSkipClass
+DROP TABLE "TakeSkipClass"
 

@@ -8,24 +8,24 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			Child t1
+			"Child" t1
 		WHERE
-			p.ParentID = t1.ParentID
+			p."ParentID" = t1."ParentID"
 	),
-	t2.ParentID,
-	t2.ChildID
+	t2."ParentID",
+	t2."ChildID"
 FROM
-	Parent p
+	"Parent" p
 		OUTER APPLY (
 			SELECT
-				ch.ParentID,
-				ch.ChildID
+				ch."ParentID",
+				ch."ChildID"
 			FROM
-				Child ch
+				"Child" ch
 			WHERE
-				ch.ParentID = p.ParentID
+				ch."ParentID" = p."ParentID"
 			FETCH NEXT :take ROWS ONLY
 		) t2
 WHERE
-	p.ParentID = 1
+	p."ParentID" = 1
 

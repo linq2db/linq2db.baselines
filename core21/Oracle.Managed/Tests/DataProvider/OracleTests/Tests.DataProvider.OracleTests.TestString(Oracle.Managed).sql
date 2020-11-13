@@ -21,12 +21,12 @@ SELECT Cast(NULL    as varchar2(20)) FROM sys.dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT textDataType FROM AllTypes WHERE ID = 2
+SELECT "textDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT textDataType FROM AllTypes WHERE ID = 1
+SELECT "textDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -51,12 +51,12 @@ SELECT Cast(NULL    as nvarchar2(20)) FROM sys.dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT ntextDataType FROM AllTypes WHERE ID = 2
+SELECT "ntextDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT ntextDataType FROM AllTypes WHERE ID = 1
+SELECT "ntextDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12

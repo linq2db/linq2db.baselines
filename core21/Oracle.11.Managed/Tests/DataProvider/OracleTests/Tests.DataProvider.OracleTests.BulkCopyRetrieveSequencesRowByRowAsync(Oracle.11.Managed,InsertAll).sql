@@ -2,28 +2,28 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	SequenceTest t1
+	SEQUENCETEST t1
 WHERE
-	t1.Value = 'SeqValue'
+	t1.VALUE = 'SeqValue'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT SequenceTestSeq.nextval ID from DUAL connect by level <= 4
+SELECT SEQUENCETESTSEQ.nextval ID from DUAL connect by level <= 4
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 DECLARE @Value_1 Varchar2(5) -- String
 SET     @Value_1 = 'Value'
 
-INSERT INTO SequenceTest
+INSERT INTO SEQUENCETEST
 (
 	ID,
-	Value
+	VALUE
 )
 VALUES
 (
-	SequenceTestSeq.nextval,
+	SEQUENCETESTSEQ.nextval,
 	:Value_1
 )
 
@@ -32,14 +32,14 @@ BeforeExecute
 DECLARE @Value_1 Varchar2(5) -- String
 SET     @Value_1 = 'Value'
 
-INSERT INTO SequenceTest
+INSERT INTO SEQUENCETEST
 (
 	ID,
-	Value
+	VALUE
 )
 VALUES
 (
-	SequenceTestSeq.nextval,
+	SEQUENCETESTSEQ.nextval,
 	:Value_1
 )
 
@@ -48,14 +48,14 @@ BeforeExecute
 DECLARE @Value_1 Varchar2(5) -- String
 SET     @Value_1 = 'Value'
 
-INSERT INTO SequenceTest
+INSERT INTO SEQUENCETEST
 (
 	ID,
-	Value
+	VALUE
 )
 VALUES
 (
-	SequenceTestSeq.nextval,
+	SEQUENCETESTSEQ.nextval,
 	:Value_1
 )
 
@@ -64,14 +64,14 @@ BeforeExecute
 DECLARE @Value_1 Varchar2(5) -- String
 SET     @Value_1 = 'Value'
 
-INSERT INTO SequenceTest
+INSERT INTO SEQUENCETEST
 (
 	ID,
-	Value
+	VALUE
 )
 VALUES
 (
-	SequenceTestSeq.nextval,
+	SEQUENCETESTSEQ.nextval,
 	:Value_1
 )
 

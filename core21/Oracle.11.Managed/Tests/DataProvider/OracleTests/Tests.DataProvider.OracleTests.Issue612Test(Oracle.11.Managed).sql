@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE DateTimeOffsetTable
+CREATE TABLE "DateTimeOffsetTable"
 (
-	DateTimeOffsetValue timestamp with time zone NOT NULL
+	"DateTimeOffsetValue" timestamp with time zone NOT NULL
 )
 
 BeforeExecute
@@ -11,9 +11,9 @@ BeforeExecute
 DECLARE @DateTimeOffsetValue TimeStampTZ -- DateTimeOffset
 SET     @DateTimeOffsetValue = 03/30/2017 15:32:58.512655 +03:00
 
-INSERT INTO DateTimeOffsetTable
+INSERT INTO "DateTimeOffsetTable"
 (
-	DateTimeOffsetValue
+	"DateTimeOffsetValue"
 )
 VALUES
 (
@@ -26,14 +26,14 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	x.DateTimeOffsetValue
+	x."DateTimeOffsetValue"
 FROM
-	DateTimeOffsetTable x
+	"DateTimeOffsetTable" x
 WHERE
 	ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE DateTimeOffsetTable
+DROP TABLE "DateTimeOffsetTable"
 

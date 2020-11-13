@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	cp.ParentID,
-	cp.Value1
+	cp."ParentID",
+	cp."Value1"
 FROM
-	Parent cp,
-	Child c_1
+	"Parent" cp,
+	"Child" c_1
 

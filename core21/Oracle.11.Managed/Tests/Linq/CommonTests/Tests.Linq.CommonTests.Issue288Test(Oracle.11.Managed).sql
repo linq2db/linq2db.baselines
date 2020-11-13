@@ -4,11 +4,11 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	p.FirstName
+	p."FirstName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName IS NULL AND ROWNUM <= :take
+	p."FirstName" IS NULL AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -18,9 +18,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	p.FirstName
+	p."FirstName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName = :ID AND ROWNUM <= :take
+	p."FirstName" = :ID AND ROWNUM <= :take
 

@@ -4,19 +4,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	o.ParentID,
-	o.Value1,
-	cg.ParentID,
-	cg.ChildID
+	o."ParentID",
+	o."Value1",
+	cg."ParentID",
+	cg."ChildID"
 FROM
-	Parent o
+	"Parent" o
 		LEFT JOIN (
 			SELECT
-				t1.ParentID,
-				t1.ChildID
+				t1."ParentID",
+				t1."ChildID"
 			FROM
-				Child t1
+				"Child" t1
 			WHERE
 				ROWNUM <= :take
-		) cg ON o.ParentID = cg.ParentID
+		) cg ON o."ParentID" = cg."ParentID"
 

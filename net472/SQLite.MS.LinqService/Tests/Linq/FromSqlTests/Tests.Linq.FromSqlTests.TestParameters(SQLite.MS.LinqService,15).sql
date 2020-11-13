@@ -380,8 +380,8 @@ SELECT
 FROM
 	(
 		SELECT * FROM
-		sample_class
-		where id >= @startId and id < @p1
+		[sample_class]
+		where [id] >= @startId and [id] < @p1
 	) [c_1]
 WHERE
 	[c_1].[id] > 10

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP SEQUENCE PersonSeq
+DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE SEQUENCE PersonSeq MINVALUE 1 START WITH 5
+CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -19,12 +19,12 @@ SET     @MiddleName = 'som middle name'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -42,15 +42,15 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x.FirstName,
-	x.PersonID,
-	x.LastName,
-	x.MiddleName,
-	x.Gender
+	x."FirstName",
+	x."PersonID",
+	x."LastName",
+	x."MiddleName",
+	x."Gender"
 FROM
-	Person x
+	"Person" x
 WHERE
-	x.FirstName = :FirstName_1 AND ROWNUM <= :take
+	x."FirstName" = :FirstName_1 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -64,13 +64,13 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	Person
+	"Person"
 SET
-	Person.FirstName = :FirstName,
-	Person.LastName = :LastName,
-	Person.Gender = :Gender
+	"Person"."FirstName" = :FirstName,
+	"Person"."LastName" = :LastName,
+	"Person"."Gender" = :Gender
 WHERE
-	Person.PersonID = :ID
+	"Person"."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -80,15 +80,15 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x.FirstName,
-	x.PersonID,
-	x.LastName,
-	x.MiddleName,
-	x.Gender
+	x."FirstName",
+	x."PersonID",
+	x."LastName",
+	x."MiddleName",
+	x."Gender"
 FROM
-	Person x
+	"Person" x
 WHERE
-	x.FirstName = :FirstName_1 AND ROWNUM <= :take
+	x."FirstName" = :FirstName_1 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -96,7 +96,7 @@ DECLARE @newName Varchar2(25) -- String
 SET     @newName = 'UpdateColumnFilterUpdated'
 
 DELETE FROM
-	Person x
+	"Person" x
 WHERE
-	x.FirstName = :newName
+	x."FirstName" = :newName
 

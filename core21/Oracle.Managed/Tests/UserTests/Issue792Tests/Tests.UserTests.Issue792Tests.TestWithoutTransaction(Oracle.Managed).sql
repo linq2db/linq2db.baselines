@@ -4,7 +4,7 @@
 SELECT
 	Count(*)
 FROM
-	AllTypes t1
+	"AllTypes" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -14,7 +14,7 @@ SET     @take = 1
 SELECT
 	user
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -209,13 +209,13 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	AllTypes t1
+	"AllTypes" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	AllTypes t1
+	"AllTypes" t1
 WHERE
-	t1.char20DataType = 'issue792'
+	t1."char20DataType" = 'issue792'
 

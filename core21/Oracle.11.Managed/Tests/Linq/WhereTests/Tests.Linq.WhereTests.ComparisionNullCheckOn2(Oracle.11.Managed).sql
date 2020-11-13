@@ -2,10 +2,10 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	(p.Value1 IS NULL OR 1 <> p.Value1)
+	(p."Value1" IS NULL OR 1 <> p."Value1")
 

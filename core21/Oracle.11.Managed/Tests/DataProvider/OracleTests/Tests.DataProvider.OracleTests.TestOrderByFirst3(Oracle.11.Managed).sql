@@ -6,25 +6,25 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t2.ParentID,
-	t2.Value1
+	t2."ParentID",
+	t2."Value1"
 FROM
 	(
 		SELECT
-			t1.ParentID,
-			t1.Value1,
+			t1."ParentID",
+			t1."Value1",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.ParentID,
-					x.Value1
+					x."ParentID",
+					x."Value1"
 				FROM
-					Parent x
+					"Parent" x
 				WHERE
-					x.Value1 = 1
+					x."Value1" = 1
 				ORDER BY
-					x.ParentID DESC
+					x."ParentID" DESC
 			) t1
 		WHERE
 			ROWNUM <= (:skip + :take)

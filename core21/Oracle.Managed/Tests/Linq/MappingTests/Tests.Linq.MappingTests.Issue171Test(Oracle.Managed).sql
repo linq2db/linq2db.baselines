@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t.Gender
+	t."Gender"
 FROM
-	Person t
+	"Person" t
 WHERE
-	t.Gender = 'M'
+	t."Gender" = 'M'
 

@@ -27,22 +27,22 @@ DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	t1.FirstName
+	t1."FirstName"
 FROM
 	(
 		SELECT
-			p.FirstName
+			p."FirstName"
 		FROM
-			Person p
+			"Person" p
 		WHERE
-			p.FirstName LIKE '1'
+			p."FirstName" LIKE '1'
 		UNION ALL
 		SELECT
-			p_1.FirstName
+			p_1."FirstName"
 		FROM
-			Person p_1
+			"Person" p_1
 		WHERE
-			Cast(p_1.PersonID as VarChar2(11)) LIKE :pattern ESCAPE '~'
+			Cast(p_1."PersonID" as VarChar2(11)) LIKE :pattern ESCAPE '~'
 	) t1
 FETCH NEXT :take ROWS ONLY
 

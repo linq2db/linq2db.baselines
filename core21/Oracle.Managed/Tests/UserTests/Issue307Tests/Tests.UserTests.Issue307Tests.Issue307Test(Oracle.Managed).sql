@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP SEQUENCE PersonSeq
+DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE SEQUENCE PersonSeq MINVALUE 1 START WITH 5
+CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > 4
+	t1."PersonID" > 4
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -29,12 +29,12 @@ SET     @LastName = 'LastName307'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	Gender,
-	FirstName,
-	MiddleName,
-	LastName
+	"Gender",
+	"FirstName",
+	"MiddleName",
+	"LastName"
 )
 VALUES
 (
@@ -44,7 +44,7 @@ VALUES
 	:LastName
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -54,22 +54,22 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.PersonID,
-	t1.Gender,
-	t1.FirstName,
-	t1.MiddleName,
-	t1.LastName
+	t1."PersonID",
+	t1."Gender",
+	t1."FirstName",
+	t1."MiddleName",
+	t1."LastName"
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID = :id1
+	t1."PersonID" = :id1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > 4
+	t1."PersonID" > 4
 

@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t.DateTimeValue
+	t."DateTimeValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	To_Number(To_Char(t.DateTimeValue, 'DD')) > 0
+	To_Number(To_Char(t."DateTimeValue", 'DD')) > 0
 

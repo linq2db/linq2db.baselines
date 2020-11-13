@@ -2,13 +2,13 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName LIKE 'Jo%' AND p.LastName NOT LIKE 'Je%'
+	p."FirstName" LIKE 'Jo%' AND p."LastName" NOT LIKE 'Je%'
 

@@ -2,8 +2,8 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	a_Patient.Diagnosis
+	a_Patient."Diagnosis"
 FROM
-	Person x
-		LEFT JOIN Patient a_Patient ON x.PersonID = a_Patient.PersonID
+	"Person" x
+		LEFT JOIN "Patient" a_Patient ON x."PersonID" = a_Patient."PersonID"
 

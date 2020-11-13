@@ -6,19 +6,19 @@ DECLARE @Length_1 Int32
 SET     @Length_1 = 1
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
 	CASE
-		WHEN :p1 = 1 THEN Length(p.LastName) - 1
-		WHEN InStr(p.LastName, 'p') = 0
+		WHEN :p1 = 1 THEN Length(p."LastName") - 1
+		WHEN InStr(p."LastName", 'p') = 0
 			THEN -1
-		ELSE (Length(p.LastName) - InStr(Reverse(p.LastName), 'p')) - :Length_1 + 1
+		ELSE (Length(p."LastName") - InStr(Reverse(p."LastName"), 'p')) - :Length_1 + 1
 	END = 2 AND
-	p.PersonID = 1
+	p."PersonID" = 1
 

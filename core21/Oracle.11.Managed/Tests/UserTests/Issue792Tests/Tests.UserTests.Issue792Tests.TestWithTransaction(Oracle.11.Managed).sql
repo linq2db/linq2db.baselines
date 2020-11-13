@@ -4,7 +4,7 @@
 SELECT
 	Count(*)
 FROM
-	AllTypes t1
+	"AllTypes" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -14,7 +14,7 @@ SET     @take = 1
 SELECT
 	user
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -215,5 +215,5 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	AllTypes t1
+	"AllTypes" t1
 

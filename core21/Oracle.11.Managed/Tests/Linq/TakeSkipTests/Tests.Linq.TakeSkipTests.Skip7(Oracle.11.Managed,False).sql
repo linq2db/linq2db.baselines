@@ -4,21 +4,21 @@ DECLARE @n Int32
 SET     @n = 3
 
 SELECT
-	t3.ParentID,
-	t3.ChildID
+	t3."ParentID",
+	t3."ChildID"
 FROM
 	(
 		SELECT
-			t2.ParentID,
-			t2.ChildID,
+			t2."ParentID",
+			t2."ChildID",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					t1.ParentID,
-					t1.ChildID
+					t1."ParentID",
+					t1."ChildID"
 				FROM
-					Child t1
+					"Child" t1
 			) t2
 	) t3
 WHERE

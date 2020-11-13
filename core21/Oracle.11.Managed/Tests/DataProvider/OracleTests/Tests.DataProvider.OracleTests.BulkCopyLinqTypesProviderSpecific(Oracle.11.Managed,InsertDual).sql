@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	MoneyValue,
-	DateTimeValue,
-	BoolValue,
-	BinaryValue,
-	SmallIntValue,
-	StringValue
+	"MoneyValue",
+	"DateTimeValue",
+	"BoolValue",
+	"BinaryValue",
+	"SmallIntValue",
+	"StringValue"
 )
 
 	SELECT 4000,1000,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),1,NULL,0,NULL FROM DUAL  UNION ALL
@@ -27,7 +27,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID >= 4000
 

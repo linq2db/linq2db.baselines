@@ -4,17 +4,17 @@ DECLARE @Id Int32
 SET     @Id = 102
 
 DELETE FROM
-	LinqDataTypes r
+	"LinqDataTypes" r
 WHERE
 	r.ID >= 101 AND r.ID < :Id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	BigIntValue
+	"BigIntValue"
 )
 VALUES
 (
@@ -26,9 +26,9 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
-	t1.ID = 101 AND t1.BigIntValue = 12
+	t1.ID = 101 AND t1."BigIntValue" = 12
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -36,7 +36,7 @@ DECLARE @Id Int32
 SET     @Id = 102
 
 DELETE FROM
-	LinqDataTypes r
+	"LinqDataTypes" r
 WHERE
 	r.ID >= 101 AND r.ID < :Id
 

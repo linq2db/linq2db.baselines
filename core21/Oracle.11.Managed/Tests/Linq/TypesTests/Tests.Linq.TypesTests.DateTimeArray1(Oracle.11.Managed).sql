@@ -5,17 +5,17 @@ SET     @DateTimeValue_1 = TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-D
 
 SELECT
 	t.ID,
-	t.MoneyValue,
-	t.DateTimeValue,
-	t.DateTimeValue2,
-	t.BoolValue,
-	t.GuidValue,
-	t.SmallIntValue,
-	t.IntValue,
-	t.BigIntValue,
-	t.StringValue
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."DateTimeValue2",
+	t."BoolValue",
+	t."GuidValue",
+	t."SmallIntValue",
+	t."IntValue",
+	t."BigIntValue",
+	t."StringValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	t.DateTimeValue IN (:DateTimeValue_1)
+	t."DateTimeValue" IN (:DateTimeValue_1)
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE SEQUENCE seq_A
+CREATE SEQUENCE SEQ_A
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -33,7 +33,7 @@ VALUES
 (
 	:COLUMNA,
 	:COLUMNB,
-	seq_A.nextval
+	SEQ_A.nextval
 )
 RETURNING 
 	COLUMN_C INTO :IDENTITY_PARAMETER
@@ -57,7 +57,7 @@ VALUES
 (
 	:COLUMNA,
 	:COLUMNB,
-	seq_A.nextval
+	SEQ_A.nextval
 )
 RETURNING 
 	COLUMN_C INTO :IDENTITY_PARAMETER
@@ -65,7 +65,7 @@ RETURNING
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP SEQUENCE seq_A
+DROP SEQUENCE SEQ_A
 
 BeforeExecute
 -- Oracle.Managed Oracle12

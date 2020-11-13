@@ -2,2899 +2,2899 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	lw_Parent."ParentID",
+	detail."ParentID",
+	detail."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID < 2
+			p."ParentID" < 2
 	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID < 2
+	p."ParentID" < 2
 

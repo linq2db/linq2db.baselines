@@ -6,13 +6,13 @@ DECLARE @name Varchar2(4) -- String
 SET     @name = 'John'
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = :id AND p.FirstName = :name
+	p."PersonID" = :id AND p."FirstName" = :name
 

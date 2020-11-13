@@ -6,19 +6,19 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	COUNT(left_1.ParentID),
-	COUNT(t1.ParentID),
+	COUNT(left_1."ParentID"),
+	COUNT(t1."ParentID"),
 	COUNT(*)
 FROM
-	Parent left_1
+	"Parent" left_1
 		FULL JOIN (
 			SELECT
-				p.ParentID
+				p."ParentID"
 			FROM
-				Parent p
+				"Parent" p
 			WHERE
-				p.ParentID <> :id
-		) t1 ON t1.ParentID = left_1.ParentID
+				p."ParentID" <> :id
+		) t1 ON t1."ParentID" = left_1."ParentID"
 WHERE
 	ROWNUM <= :take
 

@@ -2,23 +2,23 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	x.ParentID,
-	x.ChildID,
-	x.GrandChildID
+	x."ParentID",
+	x."ChildID",
+	x."GrandChildID"
 FROM
-	GrandChild x
+	"GrandChild" x
 WHERE
-	x.ParentID IN (2)
+	x."ParentID" IN (2)
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	x.ParentID,
-	x.ChildID,
-	x.GrandChildID
+	x."ParentID",
+	x."ChildID",
+	x."GrandChildID"
 FROM
-	GrandChild x
+	"GrandChild" x
 WHERE
-	x.ParentID IN (3)
+	x."ParentID" IN (3)
 

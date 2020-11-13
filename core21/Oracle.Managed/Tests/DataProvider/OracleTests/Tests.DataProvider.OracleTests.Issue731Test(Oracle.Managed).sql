@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE Issue731Table
+CREATE TABLE "Issue731Table"
 (
-	Id         Int     NOT NULL,
-	Guid       Raw(16) NOT NULL,
-	BinaryGuid BLOB    NOT NULL,
-	BlobValue  BLOB        NULL,
-	RawValue   Raw(5)      NULL
+	"Id"         Int     NOT NULL,
+	"Guid"       Raw(16) NOT NULL,
+	"BinaryGuid" BLOB    NOT NULL,
+	"BlobValue"  BLOB        NULL,
+	"RawValue"   Raw(5)      NULL
 )
 
 BeforeExecute
@@ -23,13 +23,13 @@ SET     @BlobValue = HEXTORAW('010203')
 DECLARE @RawValue Blob -- Object
 SET     @RawValue = HEXTORAW('040506')
 
-INSERT INTO Issue731Table
+INSERT INTO "Issue731Table"
 (
-	Id,
-	Guid,
-	BinaryGuid,
-	BlobValue,
-	RawValue
+	"Id",
+	"Guid",
+	"BinaryGuid",
+	"BlobValue",
+	"RawValue"
 )
 VALUES
 (
@@ -46,19 +46,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Id,
-	t1.Guid,
-	t1.BinaryGuid,
-	t1.BlobValue,
-	t1.RawValue
+	t1."Id",
+	t1."Guid",
+	t1."BinaryGuid",
+	t1."BlobValue",
+	t1."RawValue"
 FROM
-	Issue731Table t1
+	"Issue731Table" t1
 WHERE
-	t1.Id = 1
+	t1."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE Issue731Table
+DROP TABLE "Issue731Table"
 

@@ -3,16 +3,16 @@
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO t_test_user
+INSERT INTO "t_test_user"
 (
-	user_id,
-	name
+	"user_id",
+	"name"
 )
 VALUES
 (
-	sq_test_user.nextval,
+	"sq_test_user".nextval,
 	'user'
 )
 RETURNING 
-	user_id INTO :IDENTITY_PARAMETER
+	"user_id" INTO :IDENTITY_PARAMETER
 

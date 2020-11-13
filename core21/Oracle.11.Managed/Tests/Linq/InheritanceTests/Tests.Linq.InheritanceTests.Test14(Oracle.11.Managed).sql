@@ -6,9 +6,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x.ChildID
+	x."ChildID"
 FROM
-	Child x
+	"Child" x
 WHERE
-	x.ChildID = :id AND ROWNUM <= :take
+	x."ChildID" = :id AND ROWNUM <= :take
 

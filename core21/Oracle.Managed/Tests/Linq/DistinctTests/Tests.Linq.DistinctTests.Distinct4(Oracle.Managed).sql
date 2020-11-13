@@ -2,8 +2,8 @@
 -- Oracle.Managed Oracle12
 
 SELECT DISTINCT
-	Nvl(p.Value1, MOD(p.ParentID, 2)),
-	p.Value1
+	Nvl(p."Value1", MOD(p."ParentID", 2)),
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 
