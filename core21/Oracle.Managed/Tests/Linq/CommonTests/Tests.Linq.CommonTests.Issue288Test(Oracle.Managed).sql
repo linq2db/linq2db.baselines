@@ -4,11 +4,11 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	p.FirstName
+	p."FirstName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName IS NULL
+	p."FirstName" IS NULL
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -19,10 +19,10 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	p.FirstName
+	p."FirstName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName = :ID
+	p."FirstName" = :ID
 FETCH NEXT :take ROWS ONLY
 

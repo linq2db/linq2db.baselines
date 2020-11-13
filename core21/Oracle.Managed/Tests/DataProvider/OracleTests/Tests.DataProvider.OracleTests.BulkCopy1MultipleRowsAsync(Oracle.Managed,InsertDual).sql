@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-INSERT INTO stg_trade_information
+INSERT INTO STG_TRADE_INFORMATION
 (
 	STG_TRADE_ID,
 	STG_TRADE_VERSION,
 	INFORMATION_TYPE_ID,
 	INFORMATION_TYPE_NAME,
-	value,
-	value_as_integer,
-	value_as_date
+	VALUE,
+	VALUE_AS_INTEGER,
+	VALUE_AS_DATE
 )
 
 	SELECT 375,1,20224,'Gas Month',NULL,NULL,NULL FROM DUAL  UNION ALL

@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.FirstName
+	p."FirstName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName || ' I' = 'John I'
+	p."FirstName" || ' I' = 'John I'
 

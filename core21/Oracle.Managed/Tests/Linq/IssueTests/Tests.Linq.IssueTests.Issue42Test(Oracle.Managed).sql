@@ -5,17 +5,17 @@ SET     @take = 1
 
 SELECT
 	t1.ID,
-	t1.MoneyValue,
-	t1.DateTimeValue,
-	t1.DateTimeValue2,
-	t1.BoolValue,
-	t1.GuidValue,
-	t1.SmallIntValue,
-	t1.IntValue,
-	t1.BigIntValue,
-	t1.StringValue
+	t1."MoneyValue",
+	t1."DateTimeValue",
+	t1."DateTimeValue2",
+	t1."BoolValue",
+	t1."GuidValue",
+	t1."SmallIntValue",
+	t1."IntValue",
+	t1."BigIntValue",
+	t1."StringValue"
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -42,19 +42,19 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 UPDATE
-	LinqDataTypes
+	"LinqDataTypes"
 SET
-	LinqDataTypes.MoneyValue = :MoneyValue,
-	LinqDataTypes.DateTimeValue = :DateTimeValue,
-	LinqDataTypes.DateTimeValue2 = :DateTimeValue2,
-	LinqDataTypes.BoolValue = :BoolValue,
-	LinqDataTypes.GuidValue = :GuidValue,
-	LinqDataTypes.SmallIntValue = :SmallIntValue,
-	LinqDataTypes.IntValue = :IntValue,
-	LinqDataTypes.BigIntValue = :BigIntValue,
-	LinqDataTypes.StringValue = :StringValue
+	"LinqDataTypes"."MoneyValue" = :MoneyValue,
+	"LinqDataTypes"."DateTimeValue" = :DateTimeValue,
+	"LinqDataTypes"."DateTimeValue2" = :DateTimeValue2,
+	"LinqDataTypes"."BoolValue" = :BoolValue,
+	"LinqDataTypes"."GuidValue" = :GuidValue,
+	"LinqDataTypes"."SmallIntValue" = :SmallIntValue,
+	"LinqDataTypes"."IntValue" = :IntValue,
+	"LinqDataTypes"."BigIntValue" = :BigIntValue,
+	"LinqDataTypes"."StringValue" = :StringValue
 WHERE
-	LinqDataTypes.ID = :ID
+	"LinqDataTypes".ID = :ID
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -63,17 +63,17 @@ SET     @take = 1
 
 SELECT
 	t1.ID,
-	t1.MoneyValue,
-	t1.DateTimeValue,
-	t1.DateTimeValue2,
-	t1.BoolValue,
-	t1.GuidValue,
-	t1.SmallIntValue,
-	t1.IntValue,
-	t1.BigIntValue,
-	t1.StringValue
+	t1."MoneyValue",
+	t1."DateTimeValue",
+	t1."DateTimeValue2",
+	t1."BoolValue",
+	t1."GuidValue",
+	t1."SmallIntValue",
+	t1."IntValue",
+	t1."BigIntValue",
+	t1."StringValue"
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -100,17 +100,17 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 UPDATE
-	LinqDataTypes
+	"LinqDataTypes"
 SET
-	LinqDataTypes.MoneyValue = :MoneyValue,
-	LinqDataTypes.DateTimeValue = :DateTimeValue,
-	LinqDataTypes.DateTimeValue2 = :DateTimeValue2,
-	LinqDataTypes.BoolValue = :BoolValue,
-	LinqDataTypes.GuidValue = :GuidValue,
-	LinqDataTypes.SmallIntValue = :SmallIntValue,
-	LinqDataTypes.IntValue = :IntValue,
-	LinqDataTypes.BigIntValue = :BigIntValue,
-	LinqDataTypes.StringValue = :StringValue
+	"LinqDataTypes"."MoneyValue" = :MoneyValue,
+	"LinqDataTypes"."DateTimeValue" = :DateTimeValue,
+	"LinqDataTypes"."DateTimeValue2" = :DateTimeValue2,
+	"LinqDataTypes"."BoolValue" = :BoolValue,
+	"LinqDataTypes"."GuidValue" = :GuidValue,
+	"LinqDataTypes"."SmallIntValue" = :SmallIntValue,
+	"LinqDataTypes"."IntValue" = :IntValue,
+	"LinqDataTypes"."BigIntValue" = :BigIntValue,
+	"LinqDataTypes"."StringValue" = :StringValue
 WHERE
-	LinqDataTypes.ID = :ID
+	"LinqDataTypes".ID = :ID
 

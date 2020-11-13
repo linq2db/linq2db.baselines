@@ -2,19 +2,19 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Child t1
+	"Child" t1
 WHERE
-	t1.ChildID > 1000
+	t1."ChildID" > 1000
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1001
 
-INSERT INTO Child
+INSERT INTO "Child"
 (
-	ParentID,
-	ChildID
+	"ParentID",
+	"ChildID"
 )
 VALUES
 (
@@ -30,9 +30,9 @@ SET     @id = 1001
 SELECT
 	Count(*)
 FROM
-	Child c_1
+	"Child" c_1
 WHERE
-	c_1.ChildID = :id
+	c_1."ChildID" = :id
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -42,21 +42,21 @@ DECLARE @id Int32
 SET     @id = 1001
 
 UPDATE
-	Child
+	"Child"
 SET
-	Child.ChildID = :ChildID
+	"Child"."ChildID" = :ChildID
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			Child c_1
-				LEFT JOIN Parent a_Parent ON c_1.ParentID = a_Parent.ParentID
+			"Child" c_1
+				LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"
 		WHERE
-			c_1.ChildID = :id AND
-			a_Parent.Value1 = 1 AND
-			Child.ParentID = c_1.ParentID AND
-			Child.ChildID = c_1.ChildID
+			c_1."ChildID" = :id AND
+			a_Parent."Value1" = 1 AND
+			"Child"."ParentID" = c_1."ParentID" AND
+			"Child"."ChildID" = c_1."ChildID"
 	)
 
 BeforeExecute
@@ -65,15 +65,15 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Child c_1
+	"Child" c_1
 WHERE
-	c_1.ChildID = 5000
+	c_1."ChildID" = 5000
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Child t1
+	"Child" t1
 WHERE
-	t1.ChildID > 1000
+	t1."ChildID" > 1000
 

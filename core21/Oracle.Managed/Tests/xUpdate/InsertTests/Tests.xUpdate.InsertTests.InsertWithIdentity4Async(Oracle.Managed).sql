@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > 4
+	t1."PersonID" > 4
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
@@ -19,12 +19,12 @@ SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -34,7 +34,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
@@ -44,15 +44,15 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName = :FirstName_1 AND p.LastName = 'Shepard'
+	p."FirstName" = :FirstName_1 AND p."LastName" = 'Shepard'
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -68,12 +68,12 @@ SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -83,7 +83,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
@@ -93,22 +93,22 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName = :FirstName_1 AND p.LastName = 'Shepard'
+	p."FirstName" = :FirstName_1 AND p."LastName" = 'Shepard'
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > 4
+	t1."PersonID" > 4
 

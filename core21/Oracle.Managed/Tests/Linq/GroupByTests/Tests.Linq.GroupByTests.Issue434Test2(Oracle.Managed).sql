@@ -2,23 +2,23 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.PersonID,
-	gjd_ri.PersonID,
-	gjd_ri.Diagnosis
+	p."PersonID",
+	gjd_ri."PersonID",
+	gjd_ri."Diagnosis"
 FROM
-	Person p
-		INNER JOIN Patient gjd_ri ON gjd_ri.PersonID = p.PersonID
+	"Person" p
+		INNER JOIN "Patient" gjd_ri ON gjd_ri."PersonID" = p."PersonID"
 WHERE
-	Lower(p.FirstName) LIKE '%test%'
+	Lower(p."FirstName") LIKE '%test%'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.FirstName,
-	p.PersonID
+	p."FirstName",
+	p."PersonID"
 FROM
-	Person p
+	"Person" p
 WHERE
-	Lower(p.FirstName) LIKE '%test%'
+	Lower(p."FirstName") LIKE '%test%'
 

@@ -13,7 +13,7 @@ SET     @take = 1
 SELECT
 	user
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -22,5 +22,5 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	SYSTEM.LinqDataTypes@ORC12 t1
+	SYSTEM."LinqDataTypes"@ORC12 t1
 

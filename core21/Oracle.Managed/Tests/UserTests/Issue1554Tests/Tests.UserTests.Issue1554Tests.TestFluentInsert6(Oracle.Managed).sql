@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE Issue1554FluentTable
+CREATE TABLE "Issue1554FluentTable"
 (
-	Id              Int        NOT NULL,
-	ClaimedKeyType  VarChar(3) NOT NULL,
-	ClaimedKeyTypeN VarChar(3)     NULL,
+	"Id"              Int        NOT NULL,
+	"ClaimedKeyType"  VarChar(3) NOT NULL,
+	"ClaimedKeyTypeN" VarChar(3)     NULL,
 
-	CONSTRAINT PK_Issue1554FluentTable PRIMARY KEY (Id)
+	CONSTRAINT "PK_Issue1554FluentTable" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -19,11 +19,11 @@ SET     @ClaimedKeyType = 'EC'
 DECLARE @ClaimedKeyTypeN Varchar2(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
-INSERT INTO Issue1554FluentTable
+INSERT INTO "Issue1554FluentTable"
 (
-	Id,
-	ClaimedKeyType,
-	ClaimedKeyTypeN
+	"Id",
+	"ClaimedKeyType",
+	"ClaimedKeyTypeN"
 )
 VALUES
 (
@@ -38,15 +38,15 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	t1.Id,
-	t1.ClaimedKeyType,
-	t1.ClaimedKeyTypeN
+	t1."Id",
+	t1."ClaimedKeyType",
+	t1."ClaimedKeyTypeN"
 FROM
-	Issue1554FluentTable t1
+	"Issue1554FluentTable" t1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE Issue1554FluentTable
+DROP TABLE "Issue1554FluentTable"
 

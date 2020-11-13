@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t.MoneyValue
+	t."MoneyValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	t.MoneyValue > 0
+	t."MoneyValue" > 0
 

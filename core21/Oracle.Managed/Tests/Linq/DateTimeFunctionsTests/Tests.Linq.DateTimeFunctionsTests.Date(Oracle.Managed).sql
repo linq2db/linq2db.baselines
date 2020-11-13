@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Trunc(t.DateTimeValue, 'DD')
+	Trunc(t."DateTimeValue", 'DD')
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 

@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Substr(p.FirstName, Length(p.FirstName) - 2, 3)
+	Substr(p."FirstName", Length(p."FirstName") - 2, 3)
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = 1
+	p."PersonID" = 1
 

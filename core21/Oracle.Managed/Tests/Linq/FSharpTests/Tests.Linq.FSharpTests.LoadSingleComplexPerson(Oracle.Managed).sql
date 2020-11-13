@@ -6,14 +6,14 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	p.PersonID,
-	p.Gender,
-	p.FirstName,
-	p.MiddleName,
-	p.LastName
+	p."PersonID",
+	p."Gender",
+	p."FirstName",
+	p."MiddleName",
+	p."LastName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = :ID
+	p."PersonID" = :ID
 FETCH NEXT :take ROWS ONLY
 

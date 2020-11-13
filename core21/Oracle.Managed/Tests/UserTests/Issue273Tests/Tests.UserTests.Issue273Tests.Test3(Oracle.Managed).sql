@@ -3,9 +3,9 @@
 
 SELECT
 	x.ID,
-	x.BigIntValue
+	x."BigIntValue"
 FROM
-	LinqDataTypes x
+	"LinqDataTypes" x
 WHERE
-	x.BigIntValue IN (0)
+	x."BigIntValue" IN (0)
 

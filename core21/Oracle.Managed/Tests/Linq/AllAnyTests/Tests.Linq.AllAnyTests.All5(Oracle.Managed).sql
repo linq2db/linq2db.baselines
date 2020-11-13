@@ -8,9 +8,9 @@ SELECT
 		SELECT
 			*
 		FROM
-			Child c_1
+			"Child" c_1
 		WHERE
-			c_1.ParentID <= :n
+			c_1."ParentID" <= :n
 	)) THEN 1 ELSE 0 END
 FROM SYS.DUAL
 

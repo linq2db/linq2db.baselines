@@ -2,14 +2,14 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	NOT (p.FirstName IS NULL OR Length(p.FirstName) = 0) AND
-	p.PersonID = 1
+	NOT (p."FirstName" IS NULL OR Length(p."FirstName") = 0) AND
+	p."PersonID" = 1
 

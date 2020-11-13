@@ -1,230 +1,230 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT bigintDataType FROM AllTypes WHERE ID = 1
+SELECT "bigintDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT bigintDataType FROM AllTypes WHERE ID = 2
+SELECT "bigintDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT numericDataType FROM AllTypes WHERE ID = 1
+SELECT "numericDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT numericDataType FROM AllTypes WHERE ID = 2
+SELECT "numericDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT bitDataType FROM AllTypes WHERE ID = 1
+SELECT "bitDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT bitDataType FROM AllTypes WHERE ID = 2
+SELECT "bitDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT smallintDataType FROM AllTypes WHERE ID = 1
+SELECT "smallintDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT smallintDataType FROM AllTypes WHERE ID = 2
+SELECT "smallintDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT decimalDataType FROM AllTypes WHERE ID = 1
+SELECT "decimalDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT decimalDataType FROM AllTypes WHERE ID = 2
+SELECT "decimalDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT smallmoneyDataType FROM AllTypes WHERE ID = 1
+SELECT "smallmoneyDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT smallmoneyDataType FROM AllTypes WHERE ID = 2
+SELECT "smallmoneyDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT intDataType FROM AllTypes WHERE ID = 1
+SELECT "intDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT intDataType FROM AllTypes WHERE ID = 2
+SELECT "intDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT tinyintDataType FROM AllTypes WHERE ID = 1
+SELECT "tinyintDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT tinyintDataType FROM AllTypes WHERE ID = 2
+SELECT "tinyintDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT moneyDataType FROM AllTypes WHERE ID = 1
+SELECT "moneyDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT moneyDataType FROM AllTypes WHERE ID = 2
+SELECT "moneyDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT floatDataType FROM AllTypes WHERE ID = 1
+SELECT "floatDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT floatDataType FROM AllTypes WHERE ID = 2
+SELECT "floatDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT realDataType FROM AllTypes WHERE ID = 1
+SELECT "realDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT realDataType FROM AllTypes WHERE ID = 2
+SELECT "realDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetimeDataType FROM AllTypes WHERE ID = 1
+SELECT "datetimeDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetimeDataType FROM AllTypes WHERE ID = 2
+SELECT "datetimeDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetime2DataType FROM AllTypes WHERE ID = 1
+SELECT "datetime2DataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetime2DataType FROM AllTypes WHERE ID = 2
+SELECT "datetime2DataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetimeoffsetDataType FROM AllTypes WHERE ID = 1
+SELECT "datetimeoffsetDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetimeoffsetDataType FROM AllTypes WHERE ID = 2
+SELECT "datetimeoffsetDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT localZoneDataType FROM AllTypes WHERE ID = 1
+SELECT "localZoneDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT localZoneDataType FROM AllTypes WHERE ID = 2
+SELECT "localZoneDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT charDataType FROM AllTypes WHERE ID = 1
+SELECT "charDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT charDataType FROM AllTypes WHERE ID = 2
+SELECT "charDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT varcharDataType FROM AllTypes WHERE ID = 1
+SELECT "varcharDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT varcharDataType FROM AllTypes WHERE ID = 2
+SELECT "varcharDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT textDataType FROM AllTypes WHERE ID = 1
+SELECT "textDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT textDataType FROM AllTypes WHERE ID = 2
+SELECT "textDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT ncharDataType FROM AllTypes WHERE ID = 1
+SELECT "ncharDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT ncharDataType FROM AllTypes WHERE ID = 2
+SELECT "ncharDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT nvarcharDataType FROM AllTypes WHERE ID = 1
+SELECT "nvarcharDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT nvarcharDataType FROM AllTypes WHERE ID = 2
+SELECT "nvarcharDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT ntextDataType FROM AllTypes WHERE ID = 1
+SELECT "ntextDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT ntextDataType FROM AllTypes WHERE ID = 2
+SELECT "ntextDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT binaryDataType FROM AllTypes WHERE ID = 1
+SELECT "binaryDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT binaryDataType FROM AllTypes WHERE ID = 2
+SELECT "binaryDataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT XMLSERIALIZE(DOCUMENT xmlDataType AS CLOB NO INDENT) FROM AllTypes WHERE ID = 1
+SELECT XMLSERIALIZE(DOCUMENT "xmlDataType" AS CLOB NO INDENT) FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT XMLSERIALIZE(DOCUMENT xmlDataType AS CLOB NO INDENT) FROM AllTypes WHERE ID = 2
+SELECT XMLSERIALIZE(DOCUMENT "xmlDataType" AS CLOB NO INDENT) FROM "AllTypes" WHERE ID = 2
 

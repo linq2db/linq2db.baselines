@@ -2,16 +2,16 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	c_1.ParentID,
-	c_1.ParentID,
-	Nvl(c_1.Value1, 0)
+	c_1."ParentID",
+	c_1."ParentID",
+	Nvl(c_1."Value1", 0)
 FROM
-	Parent c_1
+	"Parent" c_1
 UNION ALL
 SELECT
-	c_2.ParentID,
-	c_2.ChildID,
-	c_2.ParentID + 1
+	c_2."ParentID",
+	c_2."ChildID",
+	c_2."ParentID" + 1
 FROM
-	Child c_2
+	"Child" c_2
 

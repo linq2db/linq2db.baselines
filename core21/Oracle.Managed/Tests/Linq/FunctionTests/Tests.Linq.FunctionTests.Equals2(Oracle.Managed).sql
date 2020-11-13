@@ -6,10 +6,10 @@ DECLARE @ChildID_1 Int32
 SET     @ChildID_1 = 21
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 WHERE
-	NOT (ch.ParentID = :ParentID_1 AND ch.ChildID = :ChildID_1)
+	NOT (ch."ParentID" = :ParentID_1 AND ch."ChildID" = :ChildID_1)
 
