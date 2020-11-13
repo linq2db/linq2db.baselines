@@ -75,8 +75,8 @@ AS RETURN
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
+DECLARE @p1 Int -- Int32
+SET     @p1 = 2
 
 SELECT
 	[lw_SomeEntity].[Id],
@@ -88,7 +88,7 @@ FROM
 			[t2].[Id]
 		FROM
 			(
-				SELECT TOP (@take)
+				SELECT TOP (@p1)
 					[t1].[Id]
 				FROM
 					[SomeEntity] [t1] WITH (NOLOCK)
@@ -98,8 +98,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
+DECLARE @p1 Int -- Int32
+SET     @p1 = 2
 
 SELECT
 	[lw_SomeEntity].[Id],
@@ -111,7 +111,7 @@ FROM
 			[t2].[Id]
 		FROM
 			(
-				SELECT TOP (@take)
+				SELECT TOP (@p1)
 					[t1].[Id]
 				FROM
 					[SomeEntity] [t1] WITH (NOLOCK)
