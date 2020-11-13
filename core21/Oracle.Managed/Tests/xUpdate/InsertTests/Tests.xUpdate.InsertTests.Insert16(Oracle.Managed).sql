@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Insert16%'
+	t1."FirstName" LIKE 'Insert16%'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -13,11 +13,11 @@ SET     @name = 'Insert16'
 DECLARE @idx Int32
 SET     @idx = 4
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	Gender
+	"FirstName",
+	"LastName",
+	"Gender"
 )
 VALUES
 (
@@ -32,15 +32,15 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Insert16%'
+	t1."FirstName" LIKE 'Insert16%'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Insert16%'
+	t1."FirstName" LIKE 'Insert16%'
 

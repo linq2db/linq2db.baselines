@@ -12,11 +12,11 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	o.ParentID,
-	o.Value1
+	o."ParentID",
+	o."Value1"
 FROM
-	Parent o
+	"Parent" o
 WHERE
-	(o.ParentID IN (:p, :p_1, :p_2) OR o.ParentID = :param)
+	(o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param)
 FETCH NEXT :take ROWS ONLY
 

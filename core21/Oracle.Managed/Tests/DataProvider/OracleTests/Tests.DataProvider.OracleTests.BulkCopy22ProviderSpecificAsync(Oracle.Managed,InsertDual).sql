@@ -2,24 +2,24 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	MoneyValue,
-	DateTimeValue,
-	DateTimeValue2,
-	BoolValue,
-	SmallIntValue,
-	IntValue,
-	BigIntValue,
-	StringValue
+	"MoneyValue",
+	"DateTimeValue",
+	"DateTimeValue2",
+	"BoolValue",
+	"SmallIntValue",
+	"IntValue",
+	"BigIntValue",
+	"StringValue"
 )
 
 	SELECT 1003,0,TO_TIMESTAMP('2020-02-29 17:54:55.123123', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,NULL,NULL,NULL,NULL FROM DUAL  UNION ALL
@@ -31,7 +31,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 

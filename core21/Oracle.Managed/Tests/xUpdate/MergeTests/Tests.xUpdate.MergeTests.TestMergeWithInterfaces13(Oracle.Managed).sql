@@ -1,32 +1,32 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE ReviewIndexes
+CREATE TABLE "ReviewIndexes"
 (
-	Id    Int          NOT NULL,
-	Value VarChar(255)     NULL,
+	"Id"    Int          NOT NULL,
+	"Value" VarChar(255)     NULL,
 
-	CONSTRAINT PK_ReviewIndexes PRIMARY KEY (Id)
+	CONSTRAINT "PK_ReviewIndexes" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-MERGE INTO ReviewIndexes Target
-USING (	SELECT 1 Id, '2' Value_1 FROM sys.dual) Source
-ON (Target.Id = Source.Id)
+MERGE INTO "ReviewIndexes" Target
+USING (	SELECT 1 "Id", '2' "Value_1" FROM sys.dual) "Source"
+ON (Target."Id" = "Source"."Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target.Value = Source.Value_1
+	Target."Value" = "Source"."Value_1"
 WHERE
-	Target.Id <> Source.Id
+	Target."Id" <> "Source"."Id"
 DELETE WHERE
-	Target.Id <> Source.Id
+	Target."Id" <> "Source"."Id"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE ReviewIndexes
+DROP TABLE "ReviewIndexes"
 

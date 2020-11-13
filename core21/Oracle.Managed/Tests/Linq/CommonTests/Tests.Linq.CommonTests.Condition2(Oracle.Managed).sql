@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.FirstName,
-	p.MiddleName,
-	p.LastName
+	p."FirstName",
+	p."MiddleName",
+	p."LastName"
 FROM
-	Person p
+	"Person" p
 

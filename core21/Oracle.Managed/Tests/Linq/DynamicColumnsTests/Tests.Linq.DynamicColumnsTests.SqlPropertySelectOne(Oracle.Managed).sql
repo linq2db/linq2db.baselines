@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	x.FirstName
+	x."FirstName"
 FROM
-	Person x
+	"Person" x
 

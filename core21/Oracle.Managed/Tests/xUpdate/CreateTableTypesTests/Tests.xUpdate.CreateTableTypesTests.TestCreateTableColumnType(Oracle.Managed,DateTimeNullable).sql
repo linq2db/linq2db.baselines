@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE CreateTableTypes
+CREATE TABLE "CreateTableTypes"
 (
-	Id               Int       NOT NULL,
-	DateTimeNullable timestamp     NULL
+	"Id"               Int       NOT NULL,
+	"DateTimeNullable" timestamp     NULL
 )
 
 BeforeExecute
@@ -14,10 +14,10 @@ SET     @Id = 1
 DECLARE @DateTimeNullable TimeStamp -- DateTime
 SET     @DateTimeNullable = NULL
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	DateTimeNullable
+	"Id",
+	"DateTimeNullable"
 )
 VALUES
 (
@@ -32,10 +32,10 @@ SET     @Id = 2
 DECLARE @DateTimeNullable TimeStamp -- DateTime
 SET     @DateTimeNullable = TO_TIMESTAMP('2018-11-25 01:02:03.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	DateTimeNullable
+	"Id",
+	"DateTimeNullable"
 )
 VALUES
 (
@@ -47,15 +47,15 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.Id,
-	t1.DateTimeNullable
+	t1."Id",
+	t1."DateTimeNullable"
 FROM
-	CreateTableTypes t1
+	"CreateTableTypes" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE CreateTableTypes
+DROP TABLE "CreateTableTypes"
 

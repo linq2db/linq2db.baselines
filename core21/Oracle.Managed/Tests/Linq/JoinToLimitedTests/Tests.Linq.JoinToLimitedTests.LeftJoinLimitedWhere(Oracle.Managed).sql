@@ -4,18 +4,18 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	o.ParentID,
-	o.Value1,
-	x.ParentID,
-	x.ChildID
+	o."ParentID",
+	o."Value1",
+	x."ParentID",
+	x."ChildID"
 FROM
-	Parent o
+	"Parent" o
 		LEFT JOIN (
 			SELECT
-				t1.ParentID,
-				t1.ChildID
+				t1."ParentID",
+				t1."ChildID"
 			FROM
-				Child t1
+				"Child" t1
 			FETCH NEXT :take ROWS ONLY
-		) x ON x.ParentID = o.ParentID
+		) x ON x."ParentID" = o."ParentID"
 

@@ -2,8 +2,8 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t.DateTimeValue,
-	t.SmallIntValue
+	t."DateTimeValue",
+	t."SmallIntValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 

@@ -2,12 +2,12 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.ParentID,
-	t1.ChildID
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	Child t1
+	"Child" t1
 ORDER BY
-	t1.ChildID DESC,
-	t1.ParentID + 1
+	t1."ChildID" DESC,
+	t1."ParentID" + 1
 OFFSET 3 ROWS
 

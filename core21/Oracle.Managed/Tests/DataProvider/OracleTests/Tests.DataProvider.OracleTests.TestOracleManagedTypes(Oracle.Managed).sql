@@ -21,15 +21,15 @@ SELECT Cast('12345' as char(6)) FROM sys.dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT ntextDataType     FROM AllTypes WHERE ID = 2
+SELECT "ntextDataType"     FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetimeDataType  FROM AllTypes WHERE ID = 2
+SELECT "datetimeDataType"  FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetime2DataType FROM AllTypes WHERE ID = 2
+SELECT "datetime2DataType" FROM "AllTypes" WHERE ID = 2
 

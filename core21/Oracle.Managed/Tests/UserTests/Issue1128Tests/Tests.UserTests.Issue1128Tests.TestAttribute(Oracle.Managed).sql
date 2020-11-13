@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE AttributeBase
+CREATE TABLE "AttributeBase"
 (
-	Id Int NOT NULL,
+	"Id" Int NOT NULL,
 
-	CONSTRAINT PK_AttributeBase PRIMARY KEY (Id)
+	CONSTRAINT "PK_AttributeBase" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -13,9 +13,9 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 1
 
-INSERT INTO AttributeBase
+INSERT INTO "AttributeBase"
 (
-	Id
+	"Id"
 )
 VALUES
 (
@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE AttributeBase
+DROP TABLE "AttributeBase"
 

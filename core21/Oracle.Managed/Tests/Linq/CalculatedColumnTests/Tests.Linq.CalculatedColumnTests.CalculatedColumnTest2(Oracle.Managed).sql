@@ -2,43 +2,43 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.PersonID,
-	t1.FirstName,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender,
-	t1.LastName || ', ' || t1.FirstName,
+	t1."PersonID",
+	t1."FirstName",
+	t1."LastName",
+	t1."MiddleName",
+	t1."Gender",
+	t1."LastName" || ', ' || t1."FirstName",
 	(
 		SELECT
 			Count(*)
 		FROM
-			Doctor d
+			"Doctor" d
 		WHERE
-			d.PersonID = t1.PersonID
+			d."PersonID" = t1."PersonID"
 	)
 FROM
-	Person t1
+	"Person" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	i.PersonID,
-	i.FirstName,
-	i.LastName,
-	i.MiddleName,
-	i.Gender,
-	i.LastName || ', ' || i.FirstName,
+	i."PersonID",
+	i."FirstName",
+	i."LastName",
+	i."MiddleName",
+	i."Gender",
+	i."LastName" || ', ' || i."FirstName",
 	(
 		SELECT
 			Count(*)
 		FROM
-			Doctor d
+			"Doctor" d
 		WHERE
-			d.PersonID = i.PersonID
+			d."PersonID" = i."PersonID"
 	)
 FROM
-	Person i
+	"Person" i
 WHERE
-	i.LastName || ', ' || i.FirstName <> 'Pupkin, John'
+	i."LastName" || ', ' || i."FirstName" <> 'Pupkin, John'
 

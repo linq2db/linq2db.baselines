@@ -2,10 +2,10 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 ORDER BY
-	MOD(ch.ChildID, 2) DESC
+	MOD(ch."ChildID", 2) DESC
 

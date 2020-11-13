@@ -4,7 +4,7 @@
 SELECT
 	Count(*)
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID > 2
+	p."ParentID" > 2
 

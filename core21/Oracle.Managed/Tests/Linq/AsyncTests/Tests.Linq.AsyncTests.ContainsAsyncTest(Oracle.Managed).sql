@@ -8,9 +8,9 @@ SELECT
 		SELECT
 			*
 		FROM
-			Person t1
+			"Person" t1
 		WHERE
-			t1.PersonID = :ID
+			t1."PersonID" = :ID
 	) THEN 1 ELSE 0 END
 FROM SYS.DUAL
 

@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE TypesTest
+CREATE TABLE TYPESTEST
 (
-	Char10       CHAR(10)          NULL,
-	NChar10      NCHAR(10)         NULL,
-	VarChar10    VARCHAR(10)       NULL,
-	VarChar2_10  VARCHAR2(10)      NULL,
-	NVarChar2_10 NVARCHAR2(10)     NULL
+	"Char10"       CHAR(10)          NULL,
+	"NChar10"      NCHAR(10)         NULL,
+	"VarChar10"    VARCHAR(10)       NULL,
+	"VarChar2_10"  VARCHAR2(10)      NULL,
+	"NVarChar2_10" NVARCHAR2(10)     NULL
 )
 
 BeforeExecute
@@ -124,5 +124,5 @@ BeforeExecute
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE TypesTest
+DROP TABLE TYPESTEST
 

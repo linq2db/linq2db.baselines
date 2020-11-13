@@ -2,13 +2,13 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.ParentID,
-	t1.ChildID
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	GrandChild t1
+	"GrandChild" t1
 GROUP BY
-	t1.ParentID,
-	t1.ChildID
+	t1."ParentID",
+	t1."ChildID"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -18,11 +18,11 @@ DECLARE @ChildID_1 Int32
 SET     @ChildID_1 = 11
 
 SELECT
-	keyParam.ParentID,
-	keyParam.ChildID,
-	keyParam.GrandChildID
+	keyParam."ParentID",
+	keyParam."ChildID",
+	keyParam."GrandChildID"
 FROM
-	GrandChild keyParam
+	"GrandChild" keyParam
 WHERE
-	(keyParam.ParentID = :ParentID_1 AND keyParam.ChildID = :ChildID_1)
+	(keyParam."ParentID" = :ParentID_1 AND keyParam."ChildID" = :ChildID_1)
 

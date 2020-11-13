@@ -7,9 +7,9 @@ SELECT
 	Trunc(CURRENT_TIMESTAMP, 'DD'),
 	Count(*)
 FROM
-	Parent v
-		INNER JOIN Child s ON v.ParentID = s.ParentID
+	"Parent" v
+		INNER JOIN "Child" s ON v."ParentID" = s."ParentID"
 WHERE
-	v.Value1 > 0
+	v."Value1" > 0
 FETCH NEXT :take ROWS ONLY
 

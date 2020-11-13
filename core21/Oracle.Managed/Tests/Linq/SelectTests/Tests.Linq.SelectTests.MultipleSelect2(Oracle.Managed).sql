@@ -2,8 +2,8 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	pp.PersonID,
-	pp.FirstName
+	pp."PersonID",
+	pp."FirstName"
 FROM
-	Person pp
+	"Person" pp
 

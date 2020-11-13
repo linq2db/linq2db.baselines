@@ -4,9 +4,9 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
 DELETE FROM
-	Parent t1
+	"Parent" t1
 WHERE
-	t1.ParentID = :ParentID
+	t1."ParentID" = :ParentID
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -15,10 +15,10 @@ SET     @ParentID = 1001
 DECLARE @Value1 Int32
 SET     @Value1 = 1001
 
-INSERT INTO Parent
+INSERT INTO "Parent"
 (
-	ParentID,
-	Value1
+	"ParentID",
+	"Value1"
 )
 VALUES
 (
@@ -34,9 +34,9 @@ SET     @ParentID = 1001
 SELECT
 	Count(*)
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -44,9 +44,9 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
 DELETE FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -56,9 +56,9 @@ SET     @ParentID = 1001
 SELECT
 	Count(*)
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -66,7 +66,7 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
 DELETE FROM
-	Parent t1
+	"Parent" t1
 WHERE
-	t1.ParentID = :ParentID
+	t1."ParentID" = :ParentID
 

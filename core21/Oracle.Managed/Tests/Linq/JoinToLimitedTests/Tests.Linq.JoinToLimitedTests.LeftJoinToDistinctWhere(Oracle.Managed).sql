@@ -2,19 +2,19 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	o.ParentID,
-	o.Value1,
-	t1.ParentID,
-	t1.ChildID
+	o."ParentID",
+	o."Value1",
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	Parent o
+	"Parent" o
 		OUTER APPLY (
 			SELECT DISTINCT
-				x.ParentID,
-				x.ChildID
+				x."ParentID",
+				x."ChildID"
 			FROM
-				Child x
+				"Child" x
 			WHERE
-				x.ParentID = o.ParentID
+				x."ParentID" = o."ParentID"
 		) t1
 

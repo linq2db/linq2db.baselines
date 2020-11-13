@@ -31,12 +31,12 @@ SELECT timestamp '2012-12-12 12:12:12.012 +05:00' FROM sys.dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetimeoffsetDataType FROM AllTypes WHERE ID = 1
+SELECT "datetimeoffsetDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT datetimeoffsetDataType FROM AllTypes WHERE ID = 1
+SELECT "datetimeoffsetDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12

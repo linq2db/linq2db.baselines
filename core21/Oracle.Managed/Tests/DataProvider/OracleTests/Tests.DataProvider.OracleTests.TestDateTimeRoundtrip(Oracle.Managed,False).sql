@@ -1,19 +1,19 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE Test0431
+CREATE TABLE "Test0431"
 (
-	"Date"           date                        NOT NULL,
-	DateTime         timestamp                   NOT NULL,
-	DateTime_        date                        NOT NULL,
-	DateTime2        timestamp                   NOT NULL,
-	DateTime2_0      timestamp(0)                NOT NULL,
-	DateTime2_1      timestamp(1)                NOT NULL,
-	DateTime2_9      timestamp(9)                NOT NULL,
-	DateTimeOffset_  timestamp with time zone    NOT NULL,
-	DateTimeOffset_0 timestamp(0) with time zone NOT NULL,
-	DateTimeOffset_1 timestamp(1) with time zone NOT NULL,
-	DateTimeOffset_9 timestamp(9) with time zone NOT NULL
+	"Date"             date                        NOT NULL,
+	"DateTime"         timestamp                   NOT NULL,
+	"DateTime_"        date                        NOT NULL,
+	"DateTime2"        timestamp                   NOT NULL,
+	"DateTime2_0"      timestamp(0)                NOT NULL,
+	"DateTime2_1"      timestamp(1)                NOT NULL,
+	"DateTime2_9"      timestamp(9)                NOT NULL,
+	"DateTimeOffset_"  timestamp with time zone    NOT NULL,
+	"DateTimeOffset_0" timestamp(0) with time zone NOT NULL,
+	"DateTimeOffset_1" timestamp(1) with time zone NOT NULL,
+	"DateTimeOffset_9" timestamp(9) with time zone NOT NULL
 )
 
 BeforeExecute
@@ -41,19 +41,19 @@ SET     @DateTimeOffset_1 = 01/03/2020 04:05:06.7 +00:45
 DECLARE @DateTimeOffset_9 TimeStampTZ -- DateTimeOffset
 SET     @DateTimeOffset_9 = 01/03/2020 04:05:06.7891234 +00:45
 
-INSERT INTO Test0431
+INSERT INTO "Test0431"
 (
 	"Date",
-	DateTime,
-	DateTime_,
-	DateTime2,
-	DateTime2_0,
-	DateTime2_1,
-	DateTime2_9,
-	DateTimeOffset_,
-	DateTimeOffset_0,
-	DateTimeOffset_1,
-	DateTimeOffset_9
+	"DateTime",
+	"DateTime_",
+	"DateTime2",
+	"DateTime2_0",
+	"DateTime2_1",
+	"DateTime2_9",
+	"DateTimeOffset_",
+	"DateTimeOffset_0",
+	"DateTimeOffset_1",
+	"DateTimeOffset_9"
 )
 VALUES
 (
@@ -75,18 +75,18 @@ BeforeExecute
 
 SELECT
 	t1."Date",
-	t1.DateTime,
-	t1.DateTime_,
-	t1.DateTime2,
-	t1.DateTime2_0,
-	t1.DateTime2_1,
-	t1.DateTime2_9,
-	t1.DateTimeOffset_,
-	t1.DateTimeOffset_0,
-	t1.DateTimeOffset_1,
-	t1.DateTimeOffset_9
+	t1."DateTime",
+	t1."DateTime_",
+	t1."DateTime2",
+	t1."DateTime2_0",
+	t1."DateTime2_1",
+	t1."DateTime2_9",
+	t1."DateTimeOffset_",
+	t1."DateTimeOffset_0",
+	t1."DateTimeOffset_1",
+	t1."DateTimeOffset_9"
 FROM
-	Test0431 t1
+	"Test0431" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -95,18 +95,18 @@ SET     @pDate = TO_TIMESTAMP('2020-01-03 00:00:00.000000', 'YYYY-MM-DD HH24:MI:
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
 	r."Date" = :pDate
 
@@ -117,20 +117,20 @@ SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTime = :pDateTime
+	r."DateTime" = :pDateTime
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -139,20 +139,20 @@ SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.000000', 'YYYY-MM-DD HH24
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTime_ = :pDateTime
+	r."DateTime_" = :pDateTime
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -161,20 +161,20 @@ SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTime2 = :pDateTime
+	r."DateTime2" = :pDateTime
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -183,20 +183,20 @@ SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.000000', 'YYYY-MM-DD HH24
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTime2_0 = :pDateTime
+	r."DateTime2_0" = :pDateTime
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -205,20 +205,20 @@ SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.700000', 'YYYY-MM-DD HH24
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTime2_1 = :pDateTime
+	r."DateTime2_1" = :pDateTime
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -227,20 +227,20 @@ SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTime2_9 = :pDateTime
+	r."DateTime2_9" = :pDateTime
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -249,20 +249,20 @@ SET     @pDateTimeOffset = 01/03/2020 04:05:06.789123 +00:45
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTimeOffset_ = :pDateTimeOffset
+	r."DateTimeOffset_" = :pDateTimeOffset
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -271,20 +271,20 @@ SET     @pDateTimeOffset = 01/03/2020 04:05:06 +00:45
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTimeOffset_0 = :pDateTimeOffset
+	r."DateTimeOffset_0" = :pDateTimeOffset
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -293,20 +293,20 @@ SET     @pDateTimeOffset = 01/03/2020 04:05:06.7 +00:45
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTimeOffset_1 = :pDateTimeOffset
+	r."DateTimeOffset_1" = :pDateTimeOffset
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -315,23 +315,23 @@ SET     @pDateTimeOffset = 01/03/2020 04:05:06.7891234 +00:45
 
 SELECT
 	r."Date",
-	r.DateTime,
-	r.DateTime_,
-	r.DateTime2,
-	r.DateTime2_0,
-	r.DateTime2_1,
-	r.DateTime2_9,
-	r.DateTimeOffset_,
-	r.DateTimeOffset_0,
-	r.DateTimeOffset_1,
-	r.DateTimeOffset_9
+	r."DateTime",
+	r."DateTime_",
+	r."DateTime2",
+	r."DateTime2_0",
+	r."DateTime2_1",
+	r."DateTime2_9",
+	r."DateTimeOffset_",
+	r."DateTimeOffset_0",
+	r."DateTimeOffset_1",
+	r."DateTimeOffset_9"
 FROM
-	Test0431 r
+	"Test0431" r
 WHERE
-	r.DateTimeOffset_9 = :pDateTimeOffset
+	r."DateTimeOffset_9" = :pDateTimeOffset
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE Test0431
+DROP TABLE "Test0431"
 

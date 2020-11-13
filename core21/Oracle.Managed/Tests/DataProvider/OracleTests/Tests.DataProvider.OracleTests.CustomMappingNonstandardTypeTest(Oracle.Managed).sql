@@ -3,9 +3,9 @@
 
 SELECT
 	t1.ID,
-	t1.datetimeoffsetDataType
+	t1."datetimeoffsetDataType"
 FROM
-	AllTypes t1
+	"AllTypes" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -15,19 +15,19 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 UPDATE
-	AllTypes
+	"AllTypes"
 SET
-	AllTypes.datetimeoffsetDataType = :MyDate
+	"AllTypes"."datetimeoffsetDataType" = :MyDate
 WHERE
-	AllTypes.ID = :ID
+	"AllTypes".ID = :ID
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 UPDATE
-	AllTypes
+	"AllTypes"
 SET
-	AllTypes.datetimeoffsetDataType = NULL
+	"AllTypes"."datetimeoffsetDataType" = NULL
 WHERE
-	AllTypes.ID = 1
+	"AllTypes".ID = 1
 

@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	TestMerge1 t1
+	"TestMerge1" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -15,12 +15,12 @@ SET     @Field2 = NULL
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -41,12 +41,12 @@ SET     @Field2 = NULL
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -67,12 +67,12 @@ SET     @Field2 = 3
 DECLARE @Field4 Int32
 SET     @Field4 = 203
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -93,12 +93,12 @@ SET     @Field2 = 6
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge1
+INSERT INTO "TestMerge1"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -112,7 +112,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	TestMerge2 t1
+	"TestMerge2" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -125,12 +125,12 @@ SET     @Field2 = 3
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -151,12 +151,12 @@ SET     @Field2 = 7
 DECLARE @Field4 Int32
 SET     @Field4 = 214
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -177,12 +177,12 @@ SET     @Field2 = 4
 DECLARE @Field4 Int32
 SET     @Field4 = NULL
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -203,12 +203,12 @@ SET     @Field2 = NULL
 DECLARE @Field4 Int32
 SET     @Field4 = 216
 
-INSERT INTO TestMerge2
+INSERT INTO "TestMerge2"
 (
-	Id,
-	Field1,
-	Field2,
-	Field4
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4"
 )
 VALUES
 (
@@ -223,24 +223,24 @@ BeforeExecute
 DECLARE @param Int32
 SET     @param = 4
 
-MERGE INTO TestMerge1 Target
+MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
-		t1.Id,
-		t1.Field1,
-		t1.Field2,
-		t1.Field3
+		t1."Id",
+		t1."Field1",
+		t1."Field2",
+		t1."Field3"
 	FROM
-		TestMerge2 t1
-) Source
-ON (Target.Id = Source.Id)
+		"TestMerge2" t1
+) "Source"
+ON (Target."Id" = "Source"."Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target.Field1 = Source.Field1,
-	Target.Field2 = Source.Field2,
-	Target.Field3 = Source.Field3
+	Target."Field1" = "Source"."Field1",
+	Target."Field2" = "Source"."Field2",
+	Target."Field3" = "Source"."Field3"
 WHERE
-	Target.Id = :param
+	Target."Id" = :param
 

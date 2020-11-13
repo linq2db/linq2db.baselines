@@ -17,14 +17,14 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t.c1
+	t."c1"
 FROM
 	(
 		SELECT
-			Abs(p.MoneyValue) as c1
+			Abs(p."MoneyValue") as "c1"
 		FROM
-			LinqDataTypes p
+			"LinqDataTypes" p
 	) t
 WHERE
-	t.c1 > 0
+	t."c1" > 0
 

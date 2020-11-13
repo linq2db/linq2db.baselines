@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE DropTableTest';
+	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTest"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -18,13 +18,13 @@ SET     @take = 1
 SELECT
 	user
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE DropTableTest
+CREATE TABLE "DropTableTest"
 (
 	ID Int NOT NULL
 )
@@ -32,7 +32,7 @@ CREATE TABLE DropTableTest
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO SYSTEM.DropTableTest
+INSERT INTO SYSTEM."DropTableTest"
 (
 	ID
 )
@@ -47,12 +47,12 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	SYSTEM.DropTableTest t1
+	SYSTEM."DropTableTest" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE SYSTEM.DropTableTest
+DROP TABLE SYSTEM."DropTableTest"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -60,5 +60,5 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	SYSTEM.DropTableTest t1
+	SYSTEM."DropTableTest" t1
 

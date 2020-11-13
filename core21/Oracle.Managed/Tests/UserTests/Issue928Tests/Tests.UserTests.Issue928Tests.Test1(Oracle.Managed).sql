@@ -2,28 +2,28 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p1.ParentID,
-	p1.Value1,
-	t1.ParentID,
-	t1.Sum_1
+	p1."ParentID",
+	p1."Value1",
+	t1."ParentID",
+	t1."Sum_1"
 FROM
-	Parent p1
+	"Parent" p1
 		OUTER APPLY (
 			SELECT
-				p.ParentID,
-				Sum(p.ParentID) as Sum_1
+				p."ParentID",
+				Sum(p."ParentID") as "Sum_1"
 			FROM
-				Parent p
+				"Parent" p
 			WHERE
-				p.ParentID = p1.ParentID AND EXISTS(
+				p."ParentID" = p1."ParentID" AND EXISTS(
 					SELECT
 						*
 					FROM
-						Child ch
+						"Child" ch
 					WHERE
-						ch.ParentID = p.ParentID
+						ch."ParentID" = p."ParentID"
 				)
 			GROUP BY
-				p.ParentID
+				p."ParentID"
 		) t1
 

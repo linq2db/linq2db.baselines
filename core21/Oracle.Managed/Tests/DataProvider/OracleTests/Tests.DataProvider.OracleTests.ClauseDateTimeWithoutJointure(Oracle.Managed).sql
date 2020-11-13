@@ -7,36 +7,36 @@ SET     @take = 1
 
 SELECT
 	a.ID,
-	a.BIGINTDATATYPE,
-	a.NUMERICDATATYPE,
-	a.BITDATATYPE,
-	a.SMALLINTDATATYPE,
-	a.DECIMALDATATYPE,
-	a.SMALLMONEYDATATYPE,
-	a.INTDATATYPE,
-	a.TINYINTDATATYPE,
-	a.MONEYDATATYPE,
-	a.FLOATDATATYPE,
-	a.REALDATATYPE,
-	a.DATETIMEDATATYPE,
-	a.DATETIME2DATATYPE,
-	a.DATETIMEOFFSETDATATYPE,
-	a.LOCALZONEDATATYPE,
-	a.CHARDATATYPE,
-	a.VARCHARDATATYPE,
-	a.TEXTDATATYPE,
-	a.NCHARDATATYPE,
-	a.NVARCHARDATATYPE,
-	a.NTEXTDATATYPE,
-	a.BINARYDATATYPE,
-	a.BFILEDATATYPE,
-	a.GUIDDATATYPE,
-	a.LONGDATATYPE,
-	a.URIDATATYPE,
-	a.XMLDATATYPE
+	a."bigintDataType",
+	a."numericDataType",
+	a."bitDataType",
+	a."smallintDataType",
+	a."decimalDataType",
+	a."smallmoneyDataType",
+	a."intDataType",
+	a."tinyintDataType",
+	a."moneyDataType",
+	a."floatDataType",
+	a."realDataType",
+	a."datetimeDataType",
+	a."datetime2DataType",
+	a."datetimeoffsetDataType",
+	a."localZoneDataType",
+	a."charDataType",
+	a."varcharDataType",
+	a."textDataType",
+	a."ncharDataType",
+	a."nvarcharDataType",
+	a."ntextDataType",
+	a."binaryDataType",
+	a."bfileDataType",
+	a."guidDataType",
+	a."longDataType",
+	a."uriDataType",
+	a."xmlDataType"
 FROM
-	ALLTYPES a
+	"AllTypes" a
 WHERE
-	a.DATETIMEDATATYPE = :date_1
+	a."datetimeDataType" = :date_1
 FETCH NEXT :take ROWS ONLY
 

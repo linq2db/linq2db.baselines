@@ -11,5 +11,5 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	LinqDataTypes@ORC12 t1
+	"LinqDataTypes"@ORC12 t1
 

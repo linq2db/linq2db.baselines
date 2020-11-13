@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE PR_1598_Insert_Null_Table
+CREATE TABLE "PR_1598_Insert_Null_Table"
 (
-	Id   Int          NOT NULL,
-	Name VarChar(255)     NULL,
-	Age  Int              NULL,
+	"Id"   Int          NOT NULL,
+	"Name" VarChar(255)     NULL,
+	"Age"  Int              NULL,
 
-	CONSTRAINT PK_PR_1598_Insert_Null_Table PRIMARY KEY (Id)
+	CONSTRAINT "PK_PR_1598_Insert_Null_Table" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -17,10 +17,10 @@ SET     @Id = 1
 DECLARE @Name Varchar2(5) -- String
 SET     @Name = 'Tommy'
 
-INSERT INTO PR_1598_Insert_Null_Table
+INSERT INTO "PR_1598_Insert_Null_Table"
 (
-	Id,
-	Name
+	"Id",
+	"Name"
 )
 VALUES
 (
@@ -34,17 +34,17 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Insert_Null_Table t
+	"PR_1598_Insert_Null_Table" t
 WHERE
-	t.Id = 1
+	t."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE PR_1598_Insert_Null_Table
+DROP TABLE "PR_1598_Insert_Null_Table"
 

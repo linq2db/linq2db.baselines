@@ -4,17 +4,17 @@ DECLARE @id Int32
 SET     @id = 1
 
 SELECT
-	p.ParentID,
-	p.Value1,
-	c_1.ParentID,
-	c_1.ChildID,
-	g_1.ParentID,
-	g_1.ChildID,
-	g_1.GrandChildID
+	p."ParentID",
+	p."Value1",
+	c_1."ParentID",
+	c_1."ChildID",
+	g_1."ParentID",
+	g_1."ChildID",
+	g_1."GrandChildID"
 FROM
-	Parent p
-		INNER JOIN Child c_1 ON p.ParentID = c_1.ChildID
-		INNER JOIN GrandChild g_1 ON p.ParentID = g_1.ParentID
+	"Parent" p
+		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ChildID"
+		INNER JOIN "GrandChild" g_1 ON p."ParentID" = g_1."ParentID"
 WHERE
-	p.ParentID = :id AND c_1.ChildID > 0
+	p."ParentID" = :id AND c_1."ChildID" > 0
 
