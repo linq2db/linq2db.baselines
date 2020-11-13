@@ -4,19 +4,12 @@ DECLARE @take  -- Int32
 SET     @take = 5
 
 SELECT
-	[t1].[c1],
+	Date(CURRENT_TIMESTAMP),
 	Count(*)
 FROM
-	(
-		SELECT
-			Date(CURRENT_TIMESTAMP) as [c1]
-		FROM
-			[Parent] [v]
-				INNER JOIN [Child] [s] ON [v].[ParentID] = [s].[ParentID]
-		WHERE
-			[v].[Value1] > 0
-	) [t1]
-GROUP BY
-	[t1].[c1]
+	[Parent] [v]
+		INNER JOIN [Child] [s] ON [v].[ParentID] = [s].[ParentID]
+WHERE
+	[v].[Value1] > 0
 LIMIT @take
 
