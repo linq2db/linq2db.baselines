@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE CreateIfNotExistsTable';
+	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -15,10 +15,10 @@ BeforeExecute
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE CreateIfNotExistsTable
+		CREATE TABLE "CreateIfNotExistsTable"
 		(
-			Id    Int NOT NULL,
-			Value Int NOT NULL
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL
 		)
 	';
 EXCEPTION
@@ -31,10 +31,10 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO CreateIfNotExistsTable
+INSERT INTO "CreateIfNotExistsTable"
 (
-	Id,
-	Value
+	"Id",
+	"Value"
 )
 VALUES
 (
@@ -46,20 +46,20 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id,
-	t1.Value
+	t1."Id",
+	t1."Value"
 FROM
-	CreateIfNotExistsTable t1
+	"CreateIfNotExistsTable" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE CreateIfNotExistsTable
+		CREATE TABLE "CreateIfNotExistsTable"
 		(
-			Id    Int NOT NULL,
-			Value Int NOT NULL
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL
 		)
 	';
 EXCEPTION
@@ -72,5 +72,5 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE CreateIfNotExistsTable
+DROP TABLE "CreateIfNotExistsTable"
 

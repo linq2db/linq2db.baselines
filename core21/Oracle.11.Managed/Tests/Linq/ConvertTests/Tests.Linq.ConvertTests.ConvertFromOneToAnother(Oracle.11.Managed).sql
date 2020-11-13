@@ -8,7 +8,7 @@ SET     @take = 1
 SELECT
 	Cast(:value_1 as Decimal(29, 10))
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -22,7 +22,7 @@ SET     @take = 1
 SELECT
 	Cast(:value_1 as Decimal(29, 10))
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -36,7 +36,7 @@ SET     @take = 1
 SELECT
 	Cast(:value_1 as Decimal(29, 10))
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -50,7 +50,7 @@ SET     @take = 1
 SELECT
 	Cast(:value_1 as Real)
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -64,7 +64,7 @@ SET     @take = 1
 SELECT
 	Cast(:value_1 as Real)
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -78,7 +78,7 @@ SET     @take = 1
 SELECT
 	Cast(:value_1 as Real)
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -92,7 +92,7 @@ SET     @take = 1
 SELECT
 	Cast(:value_1 as Float)
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -106,7 +106,7 @@ SET     @take = 1
 SELECT
 	Cast(:value_1 as Float)
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 
@@ -120,7 +120,7 @@ SET     @take = 1
 SELECT
 	Cast(:value_1 as Float)
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= :take
 

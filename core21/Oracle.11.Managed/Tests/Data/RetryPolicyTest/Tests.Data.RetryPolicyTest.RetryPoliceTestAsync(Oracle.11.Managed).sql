@@ -4,5 +4,5 @@
 SELECT
 	1
 FROM
-	FakeClass t1
+	"FakeClass" t1
 

@@ -6,9 +6,9 @@ SET     @take = 1
 SELECT
 	(
 		SELECT
-			p.Value1
+			p."Value1"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
 			ROWNUM <= :take
 	)

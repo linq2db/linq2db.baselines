@@ -4,16 +4,16 @@ DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	p_1.ParentID,
-	r.ChildID
+	p_1."ParentID",
+	r."ChildID"
 FROM
 	(
 		SELECT
-			p.ParentID
+			p."ParentID"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID > 0 AND ROWNUM <= :take
+			p."ParentID" > 0 AND ROWNUM <= :take
 	) p_1
-		INNER JOIN Child r ON p_1.ParentID = r.ParentID
+		INNER JOIN "Child" r ON p_1."ParentID" = r."ParentID"
 

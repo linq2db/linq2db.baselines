@@ -2,17 +2,17 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t2.ParentID
+	t2."ParentID"
 FROM
 	(
 		SELECT
-			t1.ParentID
+			t1."ParentID"
 		FROM
-			GrandChild t1
+			"GrandChild" t1
 		GROUP BY
-			t1.ParentID,
-			t1.ChildID
+			t1."ParentID",
+			t1."ChildID"
 	) t2
 GROUP BY
-	t2.ParentID
+	t2."ParentID"
 

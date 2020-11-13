@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p.ParentID
+	p."ParentID"
 FROM
-	Parent p
+	"Parent" p
 

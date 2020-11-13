@@ -2,29 +2,29 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	n.c1,
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	n."c1",
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
 	(
 		SELECT
-			'Janet' as c1
+			'Janet' as "c1"
 		FROM SYS.DUAL
 		UNION ALL
 		SELECT
-			'Doe' as c1
+			'Doe' as "c1"
 		FROM SYS.DUAL
 		UNION ALL
 		SELECT
-			'John' as c1
+			'John' as "c1"
 		FROM SYS.DUAL
 		UNION ALL
 		SELECT
-			'Doe' as c1
+			'Doe' as "c1"
 		FROM SYS.DUAL
 	) n
-		INNER JOIN Person p ON n.c1 = p.LastName
+		INNER JOIN "Person" p ON n."c1" = p."LastName"
 

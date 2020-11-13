@@ -4,13 +4,13 @@ DECLARE @str Varchar2(4) -- String
 SET     @str = '%oh%'
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName LIKE :str ESCAPE '~' AND p.PersonID = 1
+	p."FirstName" LIKE :str ESCAPE '~' AND p."PersonID" = 1
 

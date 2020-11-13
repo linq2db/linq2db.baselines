@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t.DateTimeValue + t.SmallIntValue * INTERVAL '1' DAY
+	t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' DAY
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 

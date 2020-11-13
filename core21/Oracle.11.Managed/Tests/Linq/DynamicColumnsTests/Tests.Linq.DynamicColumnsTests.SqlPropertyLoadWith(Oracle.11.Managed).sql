@@ -2,13 +2,13 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.PersonID,
-	t1.FirstName,
-	t1.LastName,
-	t1.MiddleName,
-	a_Patient.PersonID,
-	a_Patient.Diagnosis
+	t1."PersonID",
+	t1."FirstName",
+	t1."LastName",
+	t1."MiddleName",
+	a_Patient."PersonID",
+	a_Patient."Diagnosis"
 FROM
-	Person t1
-		LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
+	"Person" t1
+		LEFT JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
 

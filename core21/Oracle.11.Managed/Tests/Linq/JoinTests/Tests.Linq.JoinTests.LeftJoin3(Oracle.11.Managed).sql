@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	a_Parent.ParentID,
-	a_Parent.Value1
+	a_Parent."ParentID",
+	a_Parent."Value1"
 FROM
-	Child c_1
-		LEFT JOIN Parent a_Parent ON c_1.ParentID = a_Parent.ParentID
+	"Child" c_1
+		LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"
 

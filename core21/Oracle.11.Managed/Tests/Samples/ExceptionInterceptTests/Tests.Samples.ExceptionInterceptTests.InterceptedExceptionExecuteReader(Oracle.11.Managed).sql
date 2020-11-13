@@ -4,5 +4,5 @@
 SELECT
 	t1.ID
 FROM
-	TestTable t1
+	"TestTable" t1
 

@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	Max(t.PersonID)
+	Max(t."PersonID")
 FROM
-	Person t
+	"Person" t
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -17,12 +17,12 @@ SET     @Name_MiddleName = NULL
 DECLARE @Name_LastName Varchar2(2) -- String
 SET     @Name_LastName = 'ln'
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	Gender,
-	FirstName,
-	MiddleName,
-	LastName
+	"Gender",
+	"FirstName",
+	"MiddleName",
+	"LastName"
 )
 VALUES
 (
@@ -40,15 +40,15 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	p2.PersonID,
-	p2.Gender,
-	p2.FirstName,
-	p2.MiddleName,
-	p2.LastName
+	p2."PersonID",
+	p2."Gender",
+	p2."FirstName",
+	p2."MiddleName",
+	p2."LastName"
 FROM
-	Person p2
+	"Person" p2
 WHERE
-	p2.PersonID > :id AND ROWNUM <= :take
+	p2."PersonID" > :id AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -56,7 +56,7 @@ DECLARE @id Int32
 SET     @id = 4
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > :id
+	t1."PersonID" > :id
 

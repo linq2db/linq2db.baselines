@@ -1,30 +1,30 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP SEQUENCE PersonSeq
+DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE SEQUENCE PersonSeq MINVALUE 1 START WITH 5
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-DELETE FROM
-	Patient t1
+CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Doctor t1
+	"Patient" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Doctor" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+DELETE FROM
+	"Person" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -39,12 +39,12 @@ SET     @Gender = 'F'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -54,7 +54,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -69,12 +69,12 @@ SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -84,7 +84,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -99,12 +99,12 @@ SET     @Gender = 'O'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -114,7 +114,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -129,12 +129,12 @@ SET     @Gender = 'U'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -144,7 +144,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -159,12 +159,12 @@ SET     @Gender = 'F'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -174,7 +174,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -189,12 +189,12 @@ SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -204,7 +204,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -213,10 +213,10 @@ SET     @PersonID = 9
 DECLARE @Taxonomy Varchar2(10) -- String
 SET     @Taxonomy = 'Dr. Lector'
 
-INSERT INTO Doctor
+INSERT INTO "Doctor"
 (
-	PersonID,
-	Taxonomy
+	"PersonID",
+	"Taxonomy"
 )
 VALUES
 (
@@ -231,10 +231,10 @@ SET     @PersonID = 10
 DECLARE @Taxonomy Varchar2(10) -- String
 SET     @Taxonomy = 'Dr. who???'
 
-INSERT INTO Doctor
+INSERT INTO "Doctor"
 (
-	PersonID,
-	Taxonomy
+	"PersonID",
+	"Taxonomy"
 )
 VALUES
 (
@@ -249,10 +249,10 @@ SET     @PersonID = 7
 DECLARE @Diagnosis Varchar2(4) -- String
 SET     @Diagnosis = 'sick'
 
-INSERT INTO Patient
+INSERT INTO "Patient"
 (
-	PersonID,
-	Diagnosis
+	"PersonID",
+	"Diagnosis"
 )
 VALUES
 (
@@ -267,10 +267,10 @@ SET     @PersonID = 8
 DECLARE @Diagnosis Varchar2(9) -- String
 SET     @Diagnosis = 'very sick'
 
-INSERT INTO Patient
+INSERT INTO "Patient"
 (
-	PersonID,
-	Diagnosis
+	"PersonID",
+	"Diagnosis"
 )
 VALUES
 (
@@ -281,44 +281,44 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-MERGE INTO Person Target
+MERGE INTO "Person" Target
 USING (
 	SELECT
-		t1.PersonID as ID,
-		t1.FirstName,
-		a_Patient.Diagnosis
+		t1."PersonID" as ID,
+		t1."FirstName",
+		a_Patient."Diagnosis"
 	FROM
-		Person t1
-			LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
-) Source
-ON (Target.PersonID = Source.ID AND Source.FirstName = 'first 4')
+		"Person" t1
+			LEFT JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
+) "Source"
+ON (Target."PersonID" = "Source".ID AND "Source"."FirstName" = 'first 4')
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target.MiddleName = 'Updated'
+	Target."MiddleName" = 'Updated'
 WHERE
 	EXISTS(
 	SELECT
 		*
 	FROM
-		Patient a_Patient_1
+		"Patient" a_Patient_1
 	WHERE
-		Source.Diagnosis LIKE '%very%' AND a_Patient_1.Diagnosis LIKE '%very%' AND
-		Target.PersonID = a_Patient_1.PersonID
+		"Source"."Diagnosis" LIKE '%very%' AND a_Patient_1."Diagnosis" LIKE '%very%' AND
+		Target."PersonID" = a_Patient_1."PersonID"
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1."FirstName",
+	t1."PersonID",
+	t1."LastName",
+	t1."MiddleName",
+	t1."Gender"
 FROM
-	Person t1
+	"Person" t1
 ORDER BY
-	t1.PersonID
+	t1."PersonID"
 

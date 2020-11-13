@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > 4
+	t1."PersonID" > 4
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -17,11 +17,11 @@ SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	Gender
+	"FirstName",
+	"LastName",
+	"Gender"
 )
 VALUES
 (
@@ -30,7 +30,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -38,22 +38,22 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName = 'John' AND p.LastName = 'Shepard' AND
+	p."FirstName" = 'John' AND p."LastName" = 'Shepard' AND
 	ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > 4
+	t1."PersonID" > 4
 
