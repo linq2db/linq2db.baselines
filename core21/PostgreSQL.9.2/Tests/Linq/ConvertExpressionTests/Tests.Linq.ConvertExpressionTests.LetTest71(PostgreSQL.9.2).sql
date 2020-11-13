@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 5000
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 5000
 
 SELECT
 	key_data_result."ParentID",
@@ -19,7 +19,7 @@ FROM
 					"Parent" t
 				WHERE
 					t."ParentID" > 0
-				LIMIT :take
+				LIMIT :p1
 			) t1
 	) key_data_result
 		INNER JOIN "Child" c_1 ON c_1."ParentID" = key_data_result."ParentID" AND c_1."ChildID" > -100
