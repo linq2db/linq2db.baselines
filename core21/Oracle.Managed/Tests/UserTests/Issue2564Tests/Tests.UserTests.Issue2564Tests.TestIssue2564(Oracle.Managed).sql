@@ -29,9 +29,9 @@ CREATE TABLE "Issue2564Table"
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @from_1 TimeStamp -- DateTime
-SET     @from_1 = TO_TIMESTAMP('2020-11-12 17:31:58.878788', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @from_1 = TO_TIMESTAMP('2020-11-12 18:29:46.009270', 'YYYY-MM-DD HH24:MI:SS.FF6')
 DECLARE @to_1 TimeStamp -- DateTime
-SET     @to_1 = TO_TIMESTAMP('2020-11-13 17:31:58.878789', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @to_1 = TO_TIMESTAMP('2020-11-13 18:29:46.009270', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
 SELECT
 	Min(t1."TranslatedMessage1"),
