@@ -12,6 +12,5 @@ FROM
 			Child c_1
 	) t1
 GROUP BY
-	t1.ParentID,
-	t1.RandValue
+	t1.ParentID
 

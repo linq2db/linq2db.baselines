@@ -7,11 +7,10 @@ FROM
 	(
 		SELECT
 			c_1.ParentID,
-			0 as RandValue
+			3 as RandValue
 		FROM
 			Child c_1
 	) t1
 GROUP BY
-	t1.ParentID,
-	t1.RandValue
+	t1.ParentID
 
