@@ -379,7 +379,7 @@ SELECT
 	[c_1].[id]
 FROM
 	(
-		SELECT * FROM sample_class where id >= ? and id < ?
+		SELECT * FROM [sample_class] where [id] >= ? and [id] < ?
 	) [c_1]
 WHERE
 	[c_1].[id] > 10
