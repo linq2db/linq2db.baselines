@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
+DECLARE @p1 Integer -- Int32
+SET     @p1 = 1
 
 SELECT
 	"lw_Parent"."ParentID_1",
@@ -25,7 +25,7 @@ FROM
 					"t1"."Value1"
 				FROM
 					(
-						SELECT FIRST @take
+						SELECT FIRST @p1
 							"p"."ParentID",
 							"p"."Value1"
 						FROM
