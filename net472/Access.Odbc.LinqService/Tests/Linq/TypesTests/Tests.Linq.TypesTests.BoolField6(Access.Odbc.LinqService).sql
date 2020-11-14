@@ -2,9 +2,15 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t].[MoneyValue]
+	[p].[MoneyValue]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Iif([t].[BoolValue] = False, True, False) as [b],
+			[t].[MoneyValue]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	[t].[BoolValue] = False
+	[p].[b] = True
 

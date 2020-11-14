@@ -2,9 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Iif([p].[MoneyValue] < 5, [p].[MoneyValue], 5)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Iif([p].[MoneyValue] < 5, [p].[MoneyValue], 5) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	Iif([p].[MoneyValue] < 5, [p].[MoneyValue], 5) <> 0
+	[t].[c1] <> 0
 
