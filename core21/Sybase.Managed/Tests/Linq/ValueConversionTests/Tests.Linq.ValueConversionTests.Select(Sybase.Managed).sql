@@ -11,6 +11,7 @@ CREATE TABLE [ValueConversion]
 	[EnumWithNull]            VarChar(50)       NULL,
 	[EnumWithNullDeclarative] VarChar(50)       NULL,
 	[BoolValue]               VarChar(1)    NOT NULL,
+	[DateTimeNullable]        DateTime          NULL,
 
 	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -27,18 +28,19 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
-SELECT 1,'{"some":"str1"}','[{"Value":"Value1"}]','Value1','Value1','Value1','Value1','Y' UNION ALL
-SELECT 2,'{"some":"str2"}','[{"Value":"Value2"}]','Value2','Value2','Value2','Value2','N' UNION ALL
-SELECT 3,'{"some":"str3"}','[{"Value":"Value3"}]','Value3','Value3','Value3','Value3','N' UNION ALL
-SELECT 4,'{"some":"str4"}','[{"Value":"Value4"}]','Value1',NULL,NULL,NULL,'N' UNION ALL
-SELECT 5,'{"some":"str5"}','[{"Value":"Value5"}]','Value2','Value1','Value1','Value1','Y' UNION ALL
-SELECT 6,'{"some":"str6"}','[{"Value":"Value6"}]','Value3','Value2','Value2','Value2','N' UNION ALL
-SELECT 7,'{"some":"str7"}','[{"Value":"Value7"}]','Value1','Value3','Value3','Value3','N' UNION ALL
-SELECT 8,'{"some":"str8"}','[{"Value":"Value8"}]','Value2',NULL,NULL,NULL,'N' UNION ALL
-SELECT 9,'{"some":"str9"}','[{"Value":"Value9"}]','Value3','Value1','Value1','Value1','Y' UNION ALL
-SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N'
+SELECT 1,'{"some":"str1"}','[{"Value":"Value1"}]','Value1','Value1','Value1','Value1','Y',NULL UNION ALL
+SELECT 2,'{"some":"str2"}','[{"Value":"Value2"}]','Value2','Value2','Value2','Value2','N','2020-11-13' UNION ALL
+SELECT 3,'{"some":"str3"}','[{"Value":"Value3"}]','Value3','Value3','Value3','Value3','N','2020-11-13' UNION ALL
+SELECT 4,'{"some":"str4"}','[{"Value":"Value4"}]','Value1',NULL,NULL,NULL,'N',NULL UNION ALL
+SELECT 5,'{"some":"str5"}','[{"Value":"Value5"}]','Value2','Value1','Value1','Value1','Y','2020-11-13' UNION ALL
+SELECT 6,'{"some":"str6"}','[{"Value":"Value6"}]','Value3','Value2','Value2','Value2','N','2020-11-13' UNION ALL
+SELECT 7,'{"some":"str7"}','[{"Value":"Value7"}]','Value1','Value3','Value3','Value3','N',NULL UNION ALL
+SELECT 8,'{"some":"str8"}','[{"Value":"Value8"}]','Value2',NULL,NULL,NULL,'N','2020-11-13' UNION ALL
+SELECT 9,'{"some":"str9"}','[{"Value":"Value9"}]','Value3','Value1','Value1','Value1','Y','2020-11-13' UNION ALL
+SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -51,7 +53,8 @@ SELECT
 	[t1].[EnumNullable],
 	[t1].[EnumWithNull],
 	[t1].[EnumWithNullDeclarative],
-	[t1].[BoolValue]
+	[t1].[BoolValue],
+	[t1].[DateTimeNullable]
 FROM
 	[ValueConversion] [t1]
 
