@@ -92,8 +92,8 @@ FROM
 				[a_Customer].[CustomerID]
 			FROM
 				[Orders] [o]
-					INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [o].[CustomerID] = [a_Customer].[CustomerID])
+					INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 			GROUP BY
 				[a_Customer].[CustomerID]
-		) [t1] ON ([t1].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL OR [t1].[CustomerID] = [c_1].[CustomerID])
+		) [t1] ON ([t1].[CustomerID] = [c_1].[CustomerID] OR [t1].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
 
