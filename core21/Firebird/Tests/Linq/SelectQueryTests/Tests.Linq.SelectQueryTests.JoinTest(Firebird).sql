@@ -23,14 +23,13 @@ BeforeExecute
 SELECT
 	"t"."Id",
 	"t"."Value",
-	"s"."Key_1",
-	"s"."SecondValue"
+	1,
+	3
 FROM
 	"SampleClass" "t"
 		INNER JOIN (
 			SELECT
-				1 as "Key_1",
-				3 as "SecondValue"
+				1 as "Key_1"
 			FROM rdb$database
 		) "s" ON "s"."Key_1" = "t"."Id"
 

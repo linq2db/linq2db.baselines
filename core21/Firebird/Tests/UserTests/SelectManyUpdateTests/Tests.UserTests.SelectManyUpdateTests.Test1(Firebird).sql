@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- Firebird
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
 
 UPDATE
 	"Parent"
 SET
-	"Parent"."Value1" = NULL
+	"Parent"."Value1" = @Value1
 WHERE
 	EXISTS(
 		SELECT
