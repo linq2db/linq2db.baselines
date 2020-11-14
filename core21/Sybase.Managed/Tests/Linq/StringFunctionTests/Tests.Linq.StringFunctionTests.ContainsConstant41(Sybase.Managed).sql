@@ -2,8 +2,8 @@
 -- Sybase.Managed Sybase
 DECLARE @s UniVarChar(7) -- String
 SET     @s = '123[456'
-DECLARE @ps UniVarChar(5) -- String
-SET     @ps = '%[[]%'
+DECLARE @ps UniVarChar(4) -- String
+SET     @ps = '%~[%'
 
 SELECT
 	[p].[FirstName],

@@ -2,14 +2,9 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[p].[c1]
+	Convert(TinyInt, [t].[MoneyValue])
 FROM
-	(
-		SELECT
-			Convert(TinyInt, [t].[MoneyValue]) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	[p].[c1] > 0
+	Convert(TinyInt, [t].[MoneyValue]) > 0
 
