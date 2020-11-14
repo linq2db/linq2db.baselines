@@ -6,11 +6,10 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT
-	[t1].[c1]
+	1
 FROM
 	(
 		SELECT
-			1 as [c1],
 			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 		FROM
 			[Person] [_]
