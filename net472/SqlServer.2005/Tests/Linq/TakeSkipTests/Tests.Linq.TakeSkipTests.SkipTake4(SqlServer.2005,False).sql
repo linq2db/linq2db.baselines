@@ -2,14 +2,14 @@
 -- SqlServer.2005
 
 SELECT
-	[t4].[ParentID],
-	[t4].[ChildID]
+	[t3].[ParentID],
+	[t3].[ChildID]
 FROM
 	(
 		SELECT
-			[t3].[ParentID],
-			[t3].[ChildID],
-			ROW_NUMBER() OVER (ORDER BY [t3].[ChildID]) as [RN]
+			[t2_1].[ParentID],
+			[t2_1].[ChildID],
+			ROW_NUMBER() OVER (ORDER BY [t2_1].[ChildID]) as [RN]
 		FROM
 			(
 				SELECT
@@ -26,8 +26,8 @@ FROM
 					) [t2]
 				WHERE
 					[t2].[RN] > 1 AND [t2].[RN] <= 8
-			) [t3]
-	) [t4]
+			) [t2_1]
+	) [t3]
 WHERE
-	[t4].[RN] > 2
+	[t3].[RN] > 2
 

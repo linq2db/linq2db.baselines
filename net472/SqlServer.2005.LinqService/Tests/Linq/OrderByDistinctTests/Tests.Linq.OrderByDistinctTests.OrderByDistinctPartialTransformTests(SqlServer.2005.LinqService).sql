@@ -502,7 +502,7 @@ FROM
 			[x].[OrderData2]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2005

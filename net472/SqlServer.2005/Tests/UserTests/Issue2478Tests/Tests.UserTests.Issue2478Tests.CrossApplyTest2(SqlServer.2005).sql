@@ -24,12 +24,4 @@ SELECT
 	Count(*)
 FROM
 	[Parent] [p]
-		CROSS APPLY (
-			SELECT
-				Count(*) as [c1]
-			FROM
-				[Child] [t]
-			WHERE
-				[t].[ParentID] <> [p].[ParentID] AND [p].[ParentID] <= 2
-		) [t1]
 

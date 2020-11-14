@@ -195,9 +195,9 @@ DECLARE @take Int -- Int32
 SET     @take = 5
 
 UPDATE
-	[t2]
+	[t1_1]
 SET
-	[t2].[Value1] = 1
+	[t1_1].[Value1] = 1
 FROM
 	(
 		SELECT
@@ -214,7 +214,7 @@ FROM
 			) [t1]
 		WHERE
 			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
-	) [t2]
+	) [t1_1]
 
 BeforeExecute
 -- SqlServer.2005
