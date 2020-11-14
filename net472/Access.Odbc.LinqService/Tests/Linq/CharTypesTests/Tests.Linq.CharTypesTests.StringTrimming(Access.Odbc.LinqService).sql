@@ -10,8 +10,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @NString NVarChar(6) -- String
 SET     @NString = 'test01'
-DECLARE @String NVarChar(6) -- String
-SET     @String = 'test01'
+DECLARE @NString NVarChar(6) -- String
+SET     @NString = 'test01'
 
 INSERT INTO [AllTypes]
 (
@@ -28,8 +28,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test02  '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test02  '
+DECLARE @NString NVarChar(8) -- String
+SET     @NString = 'test02  '
 
 INSERT INTO [AllTypes]
 (
@@ -46,8 +46,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test03	 '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test03	 '
+DECLARE @NString NVarChar(8) -- String
+SET     @NString = 'test03	 '
 
 INSERT INTO [AllTypes]
 (
@@ -65,8 +65,8 @@ BeforeExecute
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test04
  '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test04
+DECLARE @NString NVarChar(8) -- String
+SET     @NString = 'test04
  '
 
 INSERT INTO [AllTypes]
@@ -84,8 +84,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test05 '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test05 '
+DECLARE @NString NVarChar(8) -- String
+SET     @NString = 'test05 '
 
 INSERT INTO [AllTypes]
 (
@@ -102,8 +102,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test06 '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test06 '
+DECLARE @NString NVarChar(8) -- String
+SET     @NString = 'test06 '
 
 INSERT INTO [AllTypes]
 (
@@ -120,8 +120,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test07 '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test07 '
+DECLARE @NString NVarChar(8) -- String
+SET     @NString = 'test07 '
 
 INSERT INTO [AllTypes]
 (
@@ -138,8 +138,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test08  '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test08  '
+DECLARE @NString NVarChar(8) -- String
+SET     @NString = 'test08  '
 
 INSERT INTO [AllTypes]
 (
@@ -390,8 +390,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @NString NVarChar -- String
 SET     @NString = NULL
-DECLARE @String NVarChar -- String
-SET     @String = NULL
+DECLARE @NString NVarChar -- String
+SET     @NString = NULL
 
 INSERT INTO [AllTypes]
 (

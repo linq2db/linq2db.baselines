@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value2 VarChar(5, 0) -- AnsiString
+DECLARE @value2 Int(5, 0) -- Int32
 SET     @value2 = 13621
 DECLARE @id Int -- Int32
 SET     @id = 100500

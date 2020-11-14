@@ -36,8 +36,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ClaimedKeyType NVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
+DECLARE @ClaimedKeyType NVarChar(2) -- String
+SET     @ClaimedKeyType = 'EC'
 
 UPDATE
 	[Issue1554Table] [p]

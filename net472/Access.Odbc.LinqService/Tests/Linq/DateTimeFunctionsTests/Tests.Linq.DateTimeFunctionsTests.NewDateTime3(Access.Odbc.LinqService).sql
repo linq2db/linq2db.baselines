@@ -2,14 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t].[c1]
+	CDate(CStr(DatePart('yyyy', [t].[DateTimeValue])) + '-10-1 20:35:44')
 FROM
-	(
-		SELECT
-			CDate(CStr(DatePart('yyyy', [p].[DateTimeValue])) + '-10-1 20:35:44') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart('m', [t].[c1]) = 10
+	DatePart('m', CDate(CStr(DatePart('yyyy', [t].[DateTimeValue])) + '-10-1 20:35:44')) = 10
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(1) -- String
-SET     @FirstName_1 = '1'
+DECLARE @FirstName NVarChar(1) -- String
+SET     @FirstName = '1'
 
 SELECT
 	[r].[FirstName],
@@ -30,8 +30,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(1) -- String
-SET     @FirstName_1 = '1'
+DECLARE @FirstName NVarChar(1) -- String
+SET     @FirstName = '1'
 
 SELECT
 	[r].[FirstName],
