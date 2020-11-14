@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" - 1 = 0
+	"p"."PersonID" = 1
 
