@@ -20,13 +20,13 @@ BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID_1 Integer -- Int32
-SET     @ChildID_1 = 11
+DECLARE @ChildID Integer -- Int32
+SET     @ChildID = 11
 
 SELECT
 	"elemParam"."ChildID"
 FROM
 	"GrandChild" "elemParam"
 WHERE
-	("elemParam"."ParentID" + 1 = :ParentID AND "elemParam"."ChildID" = :ChildID_1)
+	("elemParam"."ParentID" + 1 = :ParentID AND "elemParam"."ChildID" = :ChildID)
 
