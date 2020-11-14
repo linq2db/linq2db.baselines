@@ -1787,7 +1787,7 @@ FROM
 			[m_1].[Id1] IN (1, 2)
 	) [lw_DetailClass]
 		INNER JOIN [SubDetailClass] [detail] ON [lw_DetailClass].[DetailId] = [detail].[DetailId]
-		LEFT JOIN [SubDetailClass] [a_Detail] ON ([detail].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL OR [detail].[DetailId] = [a_Detail].[DetailId])
+		LEFT JOIN [SubDetailClass] [a_Detail] ON ([detail].[DetailId] = [a_Detail].[DetailId] OR [detail].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL)
 
 BeforeExecute
 -- SQLite.MS SQLite

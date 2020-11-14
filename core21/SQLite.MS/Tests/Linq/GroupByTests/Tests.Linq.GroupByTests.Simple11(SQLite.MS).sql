@@ -18,15 +18,15 @@ GROUP BY
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ParentID NVarChar -- String
+DECLARE @ParentID  -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID_1  -- Int32
-SET     @ChildID_1 = 11
+DECLARE @ChildID  -- Int32
+SET     @ChildID = 11
 
 SELECT
 	[elemParam].[ChildID]
 FROM
 	[GrandChild] [elemParam]
 WHERE
-	([elemParam].[ParentID] + 1 = @ParentID AND [elemParam].[ChildID] = @ChildID_1)
+	([elemParam].[ParentID] + 1 = @ParentID AND [elemParam].[ChildID] = @ChildID)
 
