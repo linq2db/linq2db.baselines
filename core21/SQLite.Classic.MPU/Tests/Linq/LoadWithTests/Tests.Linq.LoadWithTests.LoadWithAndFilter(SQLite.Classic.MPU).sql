@@ -300,10 +300,10 @@ FROM
 				WHERE
 					[m_1].[Id] > 1
 			) [lw_MainItem]
-				INNER JOIN [SubItem1] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND ([e].[Value] IS NULL AND [e].[Value] IS NULL OR [e].[Value] = [e].[Value])
+				INNER JOIN [SubItem1] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND ([e].[Value] = [e].[Value] OR [e].[Value] IS NULL AND [e].[Value] IS NULL)
 	) [lw_SubItem1]
-		INNER JOIN [SubItem1_Sub] [e_1] ON [lw_SubItem1].[Id] = [e_1].[ParentId] AND ([e_1].[Value] IS NULL AND [e_1].[Value] IS NULL OR [e_1].[Value] = [e_1].[Value])
-		LEFT JOIN [SubItem1] [e_2] ON [e_1].[ParentId] = [e_2].[Id] AND ([e_2].[Value] IS NULL AND [e_2].[Value] IS NULL OR [e_2].[Value] = [e_2].[Value])
+		INNER JOIN [SubItem1_Sub] [e_1] ON [lw_SubItem1].[Id] = [e_1].[ParentId] AND ([e_1].[Value] = [e_1].[Value] OR [e_1].[Value] IS NULL AND [e_1].[Value] IS NULL)
+		LEFT JOIN [SubItem1] [e_2] ON [e_1].[ParentId] = [e_2].[Id] AND ([e_2].[Value] = [e_2].[Value] OR [e_2].[Value] IS NULL AND [e_2].[Value] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -324,7 +324,7 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [lw_MainItem]
-		INNER JOIN [SubItem1] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND ([e].[Value] IS NULL AND [e].[Value] IS NULL OR [e].[Value] = [e].[Value])
+		INNER JOIN [SubItem1] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND ([e].[Value] = [e].[Value] OR [e].[Value] IS NULL AND [e].[Value] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -347,7 +347,7 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [lw_MainItem]
-		INNER JOIN [SubItem2] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND ([e].[Value] IS NULL AND [e].[Value] IS NULL OR [e].[Value] = [e].[Value])
+		INNER JOIN [SubItem2] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND ([e].[Value] = [e].[Value] OR [e].[Value] IS NULL AND [e].[Value] IS NULL)
 		LEFT JOIN [MainItem] [a_Parent] ON [e].[ParentId] = [a_Parent].[Id]
 
 BeforeExecute
