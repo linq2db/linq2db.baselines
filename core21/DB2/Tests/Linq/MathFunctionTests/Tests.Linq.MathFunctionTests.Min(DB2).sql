@@ -2,15 +2,17 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CASE
-		WHEN "p"."MoneyValue" < 5 THEN "p"."MoneyValue"
-		ELSE 5
-	END
+	"t"."c1"
 FROM
-	"LinqDataTypes" "p"
+	(
+		SELECT
+			CASE
+				WHEN "p"."MoneyValue" < 5 THEN "p"."MoneyValue"
+				ELSE 5
+			END as "c1"
+		FROM
+			"LinqDataTypes" "p"
+	) "t"
 WHERE
-	CASE
-		WHEN "p"."MoneyValue" < 5 THEN "p"."MoneyValue"
-		ELSE 5
-	END <> 0
+	"t"."c1" <> 0
 
