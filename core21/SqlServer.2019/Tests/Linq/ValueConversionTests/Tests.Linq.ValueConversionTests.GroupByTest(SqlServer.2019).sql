@@ -57,10 +57,10 @@ GROUP BY
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @Value2_1 NVarChar(200) -- String
-SET     @Value2_1 = N'[{"Value":"Value1"}]'
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 1
+DECLARE @Value2 NVarChar(200) -- String
+SET     @Value2 = N'[{"Value":"Value1"}]'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
 
 SELECT
 	[t].[Id],
@@ -74,7 +74,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	@Value2_1 = [t].[Value2] AND [t].[Id] = @Id_1
+	@Value2 = [t].[Value2] AND [t].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
