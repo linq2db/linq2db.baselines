@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" LIKE '%oh%' AND "p"."PersonID" = 1
+	"p"."FirstName" CONTAINING 'oh' AND "p"."PersonID" = 1
 
