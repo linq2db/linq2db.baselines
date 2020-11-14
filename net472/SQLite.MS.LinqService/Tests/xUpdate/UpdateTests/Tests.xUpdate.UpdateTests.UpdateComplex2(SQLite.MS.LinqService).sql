@@ -9,7 +9,7 @@ BeforeExecute
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'UpdateComplex%'
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -50,7 +50,7 @@ UPDATE
 SET
 	[LastName] = [Person].[FirstName]
 WHERE
-	[Person].[FirstName] LIKE 'UpdateComplex%'
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -77,5 +77,5 @@ BeforeExecute
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'UpdateComplex%'
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
