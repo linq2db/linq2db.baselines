@@ -29,9 +29,23 @@ SELECT
 	"p_1"."MiddleName",
 	"p_1"."Gender"
 FROM
-	"Person" "p_1"
+	(
+		SELECT
+			CASE
+				WHEN "p"."FirstName" CONTAINING 'Jo'
+					THEN 1
+				ELSE 0
+			END as "Field1",
+			"p"."FirstName",
+			"p"."PersonID",
+			"p"."LastName",
+			"p"."MiddleName",
+			"p"."Gender"
+		FROM
+			"Person" "p"
+	) "p_1"
 WHERE
-	"p_1"."FirstName" CONTAINING 'Jo'
+	"p_1"."Field1" = 1
 ORDER BY
-	"p_1"."FirstName" CONTAINING 'Jo'
+	"p_1"."Field1"
 
