@@ -6,11 +6,10 @@ DECLARE @skip_1 Integer(4) -- Int32
 SET     @skip_1 = 2
 
 SELECT
-	"t1"."c1"
+	1
 FROM
 	(
 		SELECT
-			1 as "c1",
 			ROW_NUMBER() OVER () as RN
 		FROM
 			"Person" "_"

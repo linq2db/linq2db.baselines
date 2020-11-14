@@ -26,8 +26,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName_1 VarChar(18) -- String
-SET     @FirstName_1 = 'InsertColumnFilter'
+DECLARE @FirstName VarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 
 SELECT
 	"x"."FirstName",
@@ -38,7 +38,7 @@ SELECT
 FROM
 	"Person" "x"
 WHERE
-	"x"."FirstName" = @FirstName_1
+	"x"."FirstName" = @FirstName
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
