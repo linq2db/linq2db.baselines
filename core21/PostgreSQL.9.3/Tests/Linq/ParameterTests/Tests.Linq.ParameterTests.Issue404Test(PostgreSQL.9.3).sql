@@ -46,8 +46,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	key_data_result."Id",
@@ -57,33 +55,22 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1."Id"
+			c_1."Id"
 		FROM
-			(
-				SELECT
-					c_1."Id"
-				FROM
-					"Table404One" c_1
-				LIMIT :take
-			) t1
+			"Table404One" c_1
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	c_1."Id"
 FROM
 	"Table404One" c_1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @Usage_1 Integer -- Int32
 SET     @Usage_1 = 0
 
@@ -95,33 +82,22 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1."Id"
+			c_1."Id"
 		FROM
-			(
-				SELECT
-					c_1."Id"
-				FROM
-					"Table404One" c_1
-				LIMIT :take
-			) t1
+			"Table404One" c_1
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	c_1."Id"
 FROM
 	"Table404One" c_1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @Usage_1 Integer -- Int32
 SET     @Usage_1 = 1
 
@@ -133,28 +109,19 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1."Id"
+			c_1."Id"
 		FROM
-			(
-				SELECT
-					c_1."Id"
-				FROM
-					"Table404One" c_1
-				LIMIT :take
-			) t1
+			"Table404One" c_1
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	c_1."Id"
 FROM
 	"Table404One" c_1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -214,8 +181,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	key_data_result."Id",
@@ -225,33 +190,22 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1."Id"
+			c_1."Id"
 		FROM
-			(
-				SELECT
-					c_1."Id"
-				FROM
-					"Table404One" c_1
-				LIMIT :take
-			) t1
+			"Table404One" c_1
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	c_1."Id"
 FROM
 	"Table404One" c_1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @Usage_1 Integer -- Int32
 SET     @Usage_1 = 0
 
@@ -263,33 +217,22 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1."Id"
+			c_1."Id"
 		FROM
-			(
-				SELECT
-					c_1."Id"
-				FROM
-					"Table404One" c_1
-				LIMIT :take
-			) t1
+			"Table404One" c_1
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	c_1."Id"
 FROM
 	"Table404One" c_1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @Usage_1 Integer -- Int32
 SET     @Usage_1 = 1
 
@@ -301,28 +244,19 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1."Id"
+			c_1."Id"
 		FROM
-			(
-				SELECT
-					c_1."Id"
-				FROM
-					"Table404One" c_1
-				LIMIT :take
-			) t1
+			"Table404One" c_1
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	c_1."Id"
 FROM
 	"Table404One" c_1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
