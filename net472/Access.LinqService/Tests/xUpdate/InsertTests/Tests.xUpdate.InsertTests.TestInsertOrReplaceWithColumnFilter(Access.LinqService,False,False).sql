@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @FirstName_1 VarWChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName VarWChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP 1
 	[x].[ID],
@@ -70,7 +70,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- Access AccessOleDb
@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @FirstName_1 VarWChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName VarWChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP 1
 	[x].[ID],
@@ -102,7 +102,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- Access AccessOleDb
