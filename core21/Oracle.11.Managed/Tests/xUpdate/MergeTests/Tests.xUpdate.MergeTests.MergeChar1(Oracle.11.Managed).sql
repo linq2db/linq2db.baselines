@@ -1,22 +1,22 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP SEQUENCE AllTypesSeq
+DROP SEQUENCE "AllTypesSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE SEQUENCE AllTypesSeq MINVALUE 1 START WITH 3
+CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	charDataType,
-	ncharDataType
+	"charDataType",
+	"ncharDataType"
 )
 VALUES
 (
@@ -31,38 +31,38 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 3
 
-MERGE INTO AllTypes Target
+MERGE INTO "AllTypes" Target
 USING (
 	SELECT
 		t.ID,
-		t.charDataType,
-		t.ncharDataType,
-		t.nvarcharDataType
+		t."charDataType",
+		t."ncharDataType",
+		t."nvarcharDataType"
 	FROM
-		AllTypes t
+		"AllTypes" t
 	WHERE
 		t.ID = :id
-) Source
-ON (Target.ID = Source.ID)
+) "Source"
+ON (Target.ID = "Source".ID)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target.charDataType = Source.charDataType,
-	Target.ncharDataType = Source.ncharDataType,
-	Target.nvarcharDataType = Source.nvarcharDataType
+	Target."charDataType" = "Source"."charDataType",
+	Target."ncharDataType" = "Source"."ncharDataType",
+	Target."nvarcharDataType" = "Source"."nvarcharDataType"
 
 WHEN NOT MATCHED THEN
 INSERT
 (
-	charDataType,
-	ncharDataType,
-	nvarcharDataType
+	"charDataType",
+	"ncharDataType",
+	"nvarcharDataType"
 )
 VALUES
 (
-	Source.charDataType,
-	Source.ncharDataType,
-	Source.nvarcharDataType
+	"Source"."charDataType",
+	"Source"."ncharDataType",
+	"Source"."nvarcharDataType"
 )
 

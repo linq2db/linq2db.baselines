@@ -3,9 +3,9 @@
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO ALLTYPES
+INSERT INTO "AllTypes"
 (
-	INTDATATYPE
+	"intDataType"
 )
 VALUES
 (
@@ -20,9 +20,9 @@ DECLARE @value_1 NVarchar2(8) -- String
 SET     @value_1 = '致我们最爱的母亲'
 
 UPDATE
-	ALLTYPES
+	"AllTypes"
 SET
-	ALLTYPES.NVARCHARDATATYPE = :value_1
+	"AllTypes"."nvarcharDataType" = :value_1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -32,9 +32,9 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	p.NVARCHARDATATYPE
+	p."nvarcharDataType"
 FROM
-	ALLTYPES p
+	"AllTypes" p
 WHERE
 	p.ID = :id AND ROWNUM <= :take
 

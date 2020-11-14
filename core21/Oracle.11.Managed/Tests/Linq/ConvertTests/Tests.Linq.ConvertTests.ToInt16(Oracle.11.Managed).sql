@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	Cast(Floor(t.MoneyValue) as SmallInt)
+	Cast(Floor(t."MoneyValue") as SmallInt)
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	Cast(Floor(t.MoneyValue) as SmallInt) > 0
+	Cast(Floor(t."MoneyValue") as SmallInt) > 0
 

@@ -2,8 +2,8 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	pp.PersonID,
-	pp.FirstName
+	pp."PersonID",
+	pp."FirstName"
 FROM
-	Person pp
+	"Person" pp
 

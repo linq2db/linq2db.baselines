@@ -65,12 +65,12 @@ SET     @take = 1
 SELECT
 	(
 		SELECT
-			c_1.ParentID + 1
+			c_1."ParentID" + 1
 		FROM
-			Child c_1
+			"Child" c_1
 		WHERE
 			ROWNUM <= :take
 	)
 FROM
-	Parent p
+	"Parent" p
 

@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP SEQUENCE PersonSeq
+DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE SEQUENCE PersonSeq MINVALUE 1 START WITH 5
+CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > 4
+	t1."PersonID" > 4
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -29,12 +29,12 @@ SET     @LastName = 'b'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	Gender,
-	FirstName,
-	MiddleName,
-	LastName
+	"Gender",
+	"FirstName",
+	"MiddleName",
+	"LastName"
 )
 VALUES
 (
@@ -44,7 +44,7 @@ VALUES
 	:LastName
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -59,12 +59,12 @@ SET     @LastName = 'd'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	Gender,
-	FirstName,
-	MiddleName,
-	LastName
+	"Gender",
+	"FirstName",
+	"MiddleName",
+	"LastName"
 )
 VALUES
 (
@@ -74,7 +74,7 @@ VALUES
 	:LastName
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -84,15 +84,15 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.PersonID,
-	t1.Gender,
-	t1.FirstName,
-	t1.MiddleName,
-	t1.LastName
+	t1."PersonID",
+	t1."Gender",
+	t1."FirstName",
+	t1."MiddleName",
+	t1."LastName"
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID = :id1 AND ROWNUM <= :take
+	t1."PersonID" = :id1 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -102,21 +102,21 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.PersonID,
-	t1.Gender,
-	t1.FirstName,
-	t1.MiddleName,
-	t1.LastName
+	t1."PersonID",
+	t1."Gender",
+	t1."FirstName",
+	t1."MiddleName",
+	t1."LastName"
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID = :id2 AND ROWNUM <= :take
+	t1."PersonID" = :id2 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > 4
+	t1."PersonID" > 4
 

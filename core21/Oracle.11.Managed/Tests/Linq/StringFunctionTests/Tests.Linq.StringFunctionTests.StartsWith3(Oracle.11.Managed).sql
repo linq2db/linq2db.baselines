@@ -4,13 +4,13 @@ DECLARE @str Varchar2(7) -- String
 SET     @str = 'John123'
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	:str LIKE Replace(Replace(Replace(p.FirstName, '~', '~~'), '%', '~%'), '_', '~_') || '%' ESCAPE '~'
+	:str LIKE Replace(Replace(Replace(p."FirstName", '~', '~~'), '%', '~%'), '_', '~_') || '%' ESCAPE '~'
 

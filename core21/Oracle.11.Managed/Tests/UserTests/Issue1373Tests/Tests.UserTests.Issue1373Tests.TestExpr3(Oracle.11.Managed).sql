@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE Issue1373Tests
+CREATE TABLE "Issue1373Tests"
 (
-	Id     Int          NOT NULL,
-	Field1 VarChar(255)     NULL,
+	"Id"     Int          NOT NULL,
+	"Field1" VarChar(255)     NULL,
 
-	CONSTRAINT PK_Issue1373Tests PRIMARY KEY (Id)
+	CONSTRAINT "PK_Issue1373Tests" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -14,10 +14,10 @@ BeforeExecute
 DECLARE @Field1 NVarchar2 -- String
 SET     @Field1 = NULL
 
-INSERT INTO Issue1373Tests
+INSERT INTO "Issue1373Tests"
 (
-	Id,
-	Field1
+	"Id",
+	"Field1"
 )
 VALUES
 (
@@ -30,10 +30,10 @@ BeforeExecute
 DECLARE @Field1 NVarchar2 -- String
 SET     @Field1 = NULL
 
-INSERT INTO Issue1373Tests
+INSERT INTO "Issue1373Tests"
 (
-	Id,
-	Field1
+	"Id",
+	"Field1"
 )
 VALUES
 (
@@ -46,10 +46,10 @@ BeforeExecute
 DECLARE @Field1 NVarchar2(4) -- String
 SET     @Field1 = 'test'
 
-INSERT INTO Issue1373Tests
+INSERT INTO "Issue1373Tests"
 (
-	Id,
-	Field1
+	"Id",
+	"Field1"
 )
 VALUES
 (
@@ -61,15 +61,15 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id,
-	t1.Field1
+	t1."Id",
+	t1."Field1"
 FROM
-	Issue1373Tests t1
+	"Issue1373Tests" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Issue1373Tests
+DROP TABLE "Issue1373Tests"
 

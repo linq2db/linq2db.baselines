@@ -2,28 +2,28 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Parent t1
+	"Parent" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Child t1
+	"Child" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	GrandChild t1
+	"GrandChild" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 
-INSERT INTO Parent
+INSERT INTO "Parent"
 (
-	ParentID
+	"ParentID"
 )
 VALUES
 (
@@ -35,9 +35,9 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 2
 
-INSERT INTO Parent
+INSERT INTO "Parent"
 (
-	ParentID
+	"ParentID"
 )
 VALUES
 (
@@ -49,9 +49,9 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 10
 
-INSERT INTO Child
+INSERT INTO "Child"
 (
-	ChildID
+	"ChildID"
 )
 VALUES
 (
@@ -63,9 +63,9 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 20
 
-INSERT INTO Child
+INSERT INTO "Child"
 (
-	ChildID
+	"ChildID"
 )
 VALUES
 (
@@ -81,11 +81,11 @@ SET     @LeftId = 100
 DECLARE @RightId Int32
 SET     @RightId = 200
 
-INSERT INTO GrandChild
+INSERT INTO "GrandChild"
 (
-	GrandChildID,
-	ParentID,
-	ChildID
+	"GrandChildID",
+	"ParentID",
+	"ChildID"
 )
 VALUES
 (
@@ -97,41 +97,41 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-MERGE INTO GrandChild Target
+MERGE INTO "GrandChild" Target
 USING (
 	SELECT
-		t1.ParentID + t2.ChildID as source_field0,
-		t1.ParentID as LeftId,
-		t2.ChildID as RightId
+		t1."ParentID" + t2."ChildID" as "source_field0",
+		t1."ParentID" as "LeftId",
+		t2."ChildID" as "RightId"
 	FROM
-		Parent t1,
-		Child t2
-) Source
-ON (Target.GrandChildID = Source.source_field0)
+		"Parent" t1,
+		"Child" t2
+) "Source"
+ON (Target."GrandChildID" = "Source"."source_field0")
 
 WHEN NOT MATCHED THEN
 INSERT
 (
-	GrandChildID,
-	ParentID,
-	ChildID
+	"GrandChildID",
+	"ParentID",
+	"ChildID"
 )
 VALUES
 (
-	Source.source_field0,
-	Source.LeftId,
-	Source.RightId
+	"Source"."source_field0",
+	"Source"."LeftId",
+	"Source"."RightId"
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.GrandChildID,
-	t1.ParentID,
-	t1.ChildID
+	t1."GrandChildID",
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	GrandChild t1
+	"GrandChild" t1
 ORDER BY
-	t1.GrandChildID
+	t1."GrandChildID"
 

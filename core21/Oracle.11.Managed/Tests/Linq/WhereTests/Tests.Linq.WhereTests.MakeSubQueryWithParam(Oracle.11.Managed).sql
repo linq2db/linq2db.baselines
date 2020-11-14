@@ -4,10 +4,10 @@ DECLARE @n Int32
 SET     @n = 1
 
 SELECT
-	p.PersonID + :n,
-	p.FirstName
+	p."PersonID" + :n,
+	p."FirstName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID + :n = 2
+	p."PersonID" + :n = 2
 

@@ -1,36 +1,36 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE sample_class
+CREATE TABLE "sample_class"
 (
-	id    Int         NOT NULL,
-	value VarChar(50)     NULL
+	"id"    Int         NOT NULL,
+	"value" VarChar(50)     NULL
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO sample_class (id, value) VALUES (1,'Str_1')
-	INTO sample_class (id, value) VALUES (2,'Str_2')
-	INTO sample_class (id, value) VALUES (3,'Str_3')
-	INTO sample_class (id, value) VALUES (4,'Str_4')
-	INTO sample_class (id, value) VALUES (5,'Str_5')
-	INTO sample_class (id, value) VALUES (6,'Str_6')
-	INTO sample_class (id, value) VALUES (7,'Str_7')
-	INTO sample_class (id, value) VALUES (8,'Str_8')
-	INTO sample_class (id, value) VALUES (9,'Str_9')
-	INTO sample_class (id, value) VALUES (10,'Str_10')
-	INTO sample_class (id, value) VALUES (11,'Str_11')
-	INTO sample_class (id, value) VALUES (12,'Str_12')
-	INTO sample_class (id, value) VALUES (13,'Str_13')
-	INTO sample_class (id, value) VALUES (14,'Str_14')
-	INTO sample_class (id, value) VALUES (15,'Str_15')
-	INTO sample_class (id, value) VALUES (16,'Str_16')
-	INTO sample_class (id, value) VALUES (17,'Str_17')
-	INTO sample_class (id, value) VALUES (18,'Str_18')
-	INTO sample_class (id, value) VALUES (19,'Str_19')
-	INTO sample_class (id, value) VALUES (20,'Str_20')
+	INTO "sample_class" ("id", "value") VALUES (1,'Str_1')
+	INTO "sample_class" ("id", "value") VALUES (2,'Str_2')
+	INTO "sample_class" ("id", "value") VALUES (3,'Str_3')
+	INTO "sample_class" ("id", "value") VALUES (4,'Str_4')
+	INTO "sample_class" ("id", "value") VALUES (5,'Str_5')
+	INTO "sample_class" ("id", "value") VALUES (6,'Str_6')
+	INTO "sample_class" ("id", "value") VALUES (7,'Str_7')
+	INTO "sample_class" ("id", "value") VALUES (8,'Str_8')
+	INTO "sample_class" ("id", "value") VALUES (9,'Str_9')
+	INTO "sample_class" ("id", "value") VALUES (10,'Str_10')
+	INTO "sample_class" ("id", "value") VALUES (11,'Str_11')
+	INTO "sample_class" ("id", "value") VALUES (12,'Str_12')
+	INTO "sample_class" ("id", "value") VALUES (13,'Str_13')
+	INTO "sample_class" ("id", "value") VALUES (14,'Str_14')
+	INTO "sample_class" ("id", "value") VALUES (15,'Str_15')
+	INTO "sample_class" ("id", "value") VALUES (16,'Str_16')
+	INTO "sample_class" ("id", "value") VALUES (17,'Str_17')
+	INTO "sample_class" ("id", "value") VALUES (18,'Str_18')
+	INTO "sample_class" ("id", "value") VALUES (19,'Str_19')
+	INTO "sample_class" ("id", "value") VALUES (20,'Str_20')
 SELECT * FROM dual
 
 BeforeExecute
@@ -41,14 +41,14 @@ DECLARE @p1 Int32
 SET     @p1 = 14
 
 SELECT
-	c_1.value,
-	c_1.id
+	c_1."value",
+	c_1."id"
 FROM
 	(
-		SELECT * FROM sample_class where id >= :startId and id < :p1
+		SELECT * FROM "sample_class" where "id" >= :startId and "id" < :p1
 	) c_1
 WHERE
-	c_1.id > 10
+	c_1."id" > 10
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -58,15 +58,15 @@ DECLARE @endId Int32
 SET     @endId = 14
 
 SELECT
-	t.value,
-	t.id
+	t."value",
+	t."id"
 FROM
-	sample_class t
+	"sample_class" t
 WHERE
-	t.id >= :startId AND t.id < :endId AND t.id > 10
+	t."id" >= :startId AND t."id" < :endId AND t."id" > 10
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE sample_class
+DROP TABLE "sample_class"
 

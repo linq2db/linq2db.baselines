@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE OrderByDistinctData
+CREATE TABLE "OrderByDistinctData"
 (
-	Id            Int          NOT NULL,
-	DuplicateData VarChar(255)     NULL,
-	OrderData1    Int          NOT NULL,
-	OrderData2    Int          NOT NULL,
+	"Id"            Int          NOT NULL,
+	"DuplicateData" VarChar(255)     NULL,
+	"OrderData1"    Int          NOT NULL,
+	"OrderData2"    Int          NOT NULL,
 
-	CONSTRAINT PK_OrderByDistinctData PRIMARY KEY (Id)
+	CONSTRAINT "PK_OrderByDistinctData" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO OrderByDistinctData (Id, DuplicateData, OrderData1, OrderData2) VALUES (1,'One',1,1)
-	INTO OrderByDistinctData (Id, DuplicateData, OrderData1, OrderData2) VALUES (10,'Two',1,1)
-	INTO OrderByDistinctData (Id, DuplicateData, OrderData1, OrderData2) VALUES (100,'Three',1,1)
+	INTO "OrderByDistinctData" ("Id", "DuplicateData", "OrderData1", "OrderData2") VALUES (1,'One',1,1)
+	INTO "OrderByDistinctData" ("Id", "DuplicateData", "OrderData1", "OrderData2") VALUES (10,'Two',1,1)
+	INTO "OrderByDistinctData" ("Id", "DuplicateData", "OrderData1", "OrderData2") VALUES (100,'Three',1,1)
 SELECT * FROM dual
 
 BeforeExecute
@@ -28,22 +28,22 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				GROUP BY
-					x.DuplicateData
+					x."DuplicateData"
 				ORDER BY
-					Max(x.OrderData1)
+					Max(x."OrderData1")
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -59,20 +59,20 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				ORDER BY
-					x.OrderData1
+					x."OrderData1"
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -88,22 +88,22 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				GROUP BY
-					x.DuplicateData
+					x."DuplicateData"
 				ORDER BY
-					Min(x.OrderData1) DESC
+					Min(x."OrderData1") DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -119,20 +119,20 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				ORDER BY
-					x.OrderData1 DESC
+					x."OrderData1" DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -148,23 +148,23 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				GROUP BY
-					x.DuplicateData
+					x."DuplicateData"
 				ORDER BY
-					Max(x.OrderData1),
-					Max(x.OrderData2)
+					Max(x."OrderData1"),
+					Max(x."OrderData2")
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -180,21 +180,21 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				ORDER BY
-					x.OrderData1,
-					x.OrderData2
+					x."OrderData1",
+					x."OrderData2"
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -210,23 +210,23 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				GROUP BY
-					x.DuplicateData
+					x."DuplicateData"
 				ORDER BY
-					Max(x.OrderData1),
-					Min(x.OrderData2) DESC
+					Max(x."OrderData1"),
+					Min(x."OrderData2") DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -242,21 +242,21 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				ORDER BY
-					x.OrderData1,
-					x.OrderData2 DESC
+					x."OrderData1",
+					x."OrderData2" DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -272,23 +272,23 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				GROUP BY
-					x.DuplicateData
+					x."DuplicateData"
 				ORDER BY
-					Min(x.OrderData1) DESC,
-					Min(x.OrderData2) DESC
+					Min(x."OrderData1") DESC,
+					Min(x."OrderData2") DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -304,21 +304,21 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				ORDER BY
-					x.OrderData1 DESC,
-					x.OrderData2 DESC
+					x."OrderData1" DESC,
+					x."OrderData2" DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -334,23 +334,23 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				GROUP BY
-					x.DuplicateData
+					x."DuplicateData"
 				ORDER BY
-					Max(x.OrderData1),
-					Min(x.OrderData2) DESC
+					Max(x."OrderData1"),
+					Min(x."OrderData2") DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -366,21 +366,21 @@ DECLARE @skip Int32
 SET     @skip = 0
 
 SELECT
-	t2.DuplicateData
+	t2."DuplicateData"
 FROM
 	(
 		SELECT
-			t1.DuplicateData,
+			t1."DuplicateData",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					x.DuplicateData
+					x."DuplicateData"
 				FROM
-					OrderByDistinctData x
+					"OrderByDistinctData" x
 				ORDER BY
-					x.OrderData1,
-					x.OrderData2 DESC
+					x."OrderData1",
+					x."OrderData2" DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -391,5 +391,5 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE OrderByDistinctData
+DROP TABLE "OrderByDistinctData"
 

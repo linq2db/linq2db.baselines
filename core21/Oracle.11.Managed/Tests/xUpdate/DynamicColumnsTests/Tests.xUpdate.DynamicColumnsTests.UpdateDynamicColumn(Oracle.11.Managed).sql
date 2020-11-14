@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	Gender
+	"FirstName",
+	"LastName",
+	"Gender"
 )
 VALUES
 (
@@ -20,19 +20,19 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Person c_1
+	"Person" c_1
 WHERE
-	c_1.LastName = 'Limonadovy'
+	c_1."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 UPDATE
-	Person
+	"Person"
 SET
-	Person.FirstName = 'Johnny'
+	"Person"."FirstName" = 'Johnny'
 WHERE
-	Person.LastName = 'Limonadovy'
+	"Person"."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -40,15 +40,15 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Person c_1
+	"Person" c_1
 WHERE
-	c_1.FirstName = 'Johnny' AND c_1.LastName = 'Limonadovy'
+	c_1."FirstName" = 'Johnny' AND c_1."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.LastName = 'Limonadovy'
+	t1."LastName" = 'Limonadovy'
 

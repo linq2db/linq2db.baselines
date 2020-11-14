@@ -2,20 +2,20 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Insert16%' ESCAPE '~'
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @idx Int32
 SET     @idx = 12
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	Gender
+	"FirstName",
+	"LastName",
+	"Gender"
 )
 VALUES
 (
@@ -30,15 +30,15 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Insert16%' ESCAPE '~'
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Insert16%' ESCAPE '~'
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 

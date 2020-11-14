@@ -8,22 +8,22 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			Child ch
+			"Child" ch
 		WHERE
-			ch.ParentID < 2 AND (t1.ParentID = ch.ParentID + 1 AND t1.ChildID = ch.ChildID) AND
-			ch.ParentID + 2 > :n
+			ch."ParentID" < 2 AND (t1."ParentID" = ch."ParentID" + 1 AND t1."ChildID" = ch."ChildID") AND
+			ch."ParentID" + 2 > :n
 	)
 FROM
 	(
 		SELECT
-			ch_1.ParentID + 1 as ParentID,
-			ch_1.ChildID
+			ch_1."ParentID" + 1 as "ParentID",
+			ch_1."ChildID"
 		FROM
-			Child ch_1
+			"Child" ch_1
 		WHERE
-			ch_1.ParentID + 2 > :n
+			ch_1."ParentID" + 2 > :n
 	) t1
 GROUP BY
-	t1.ParentID,
-	t1.ChildID
+	t1."ParentID",
+	t1."ChildID"
 

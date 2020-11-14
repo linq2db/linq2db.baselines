@@ -6,23 +6,23 @@ DECLARE @n_1 Int32
 SET     @n_1 = 300000
 
 SELECT
-	t2.ParentID,
-	t2.Value1
+	t2."ParentID",
+	t2."Value1"
 FROM
 	(
 		SELECT
-			t1.ParentID,
-			t1.Value1,
+			t1."ParentID",
+			t1."Value1",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					p.ParentID,
-					p.Value1
+					p."ParentID",
+					p."Value1"
 				FROM
-					Parent p
+					"Parent" p
 				WHERE
-					p.ParentID > 1
+					p."ParentID" > 1
 			) t1
 		WHERE
 			ROWNUM <= :n

@@ -586,7 +586,7 @@ BeforeExecute
 DECLARE @sfcBo Varchar2(20) -- String
 SET     @sfcBo = 'SFCBO:8110,C17C05016'
 
-WITH GetAllowedNcCode (NcCodeBo, NcCode, NcCodeDescription)
+WITH "GetAllowedNcCode" ("NcCodeBo", "NcCode", "NcCodeDescription")
 AS
 (
 	SELECT DISTINCT
@@ -599,25 +599,25 @@ AS
 	WHERE
 		((ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_AUTO' OR ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_MAN') OR ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_ALL')
 ),
-FindProductionFailedNcData
+"FindProductionFailedNcData"
 (
-	SfcBo,
-	CurrentOperationBo,
-	Site,
-	UserBo,
-	ShopOrderBo,
-	ResourceBo,
-	WorkCenterBo,
-	ItemBo,
-	NcCodeBo,
-	NcCode,
-	NcCodeDescription,
-	OperationColumn,
-	OperationBo,
-	Description,
-	SfcColumn,
-	Handle,
-	PartitionDate
+	"SfcBo",
+	"CurrentOperationBo",
+	"Site",
+	"UserBo",
+	"ShopOrderBo",
+	"ResourceBo",
+	"WorkCenterBo",
+	"ItemBo",
+	"NcCodeBo",
+	"NcCode",
+	"NcCodeDescription",
+	"OperationColumn",
+	"OperationBo",
+	"Description",
+	"SfcColumn",
+	"Handle",
+	"PartitionDate"
 )
 AS
 (
@@ -630,9 +630,9 @@ AS
 		ncData.RESOURCE_BO,
 		ncData.WORK_CENTER_BO,
 		sfc_1.ITEM_BO,
-		ncCodeItem.NcCodeBo,
-		ncCodeItem.NcCode,
-		ncCodeItem.NcCodeDescription,
+		ncCodeItem."NcCodeBo",
+		ncCodeItem."NcCode",
+		ncCodeItem."NcCodeDescription",
 		operationItem.OPERATION,
 		ncData.OPERATION_BO,
 		operationItem.DESCRIPTION,
@@ -641,129 +641,129 @@ AS
 		ncData.PARTITION_DATE
 	FROM
 		NC_DATA ncData
-			INNER JOIN GetAllowedNcCode ncCodeItem ON ncCodeItem.NcCodeBo = ncData.NC_CODE_BO
+			INNER JOIN "GetAllowedNcCode" ncCodeItem ON ncCodeItem."NcCodeBo" = ncData.NC_CODE_BO
 			INNER JOIN SFC sfc_1 ON ncData.NC_CONTEXT_GBO = sfc_1.HANDLE
 			INNER JOIN OPERATION operationItem ON ncData.OPERATION_BO = operationItem.HANDLE
 			INNER JOIN CUSTOM_FIELDS customFields ON (sfc_1.SHOP_ORDER_BO = customFields.HANDLE OR sfc_1.SHOP_ORDER_BO IS NULL AND customFields.HANDLE IS NULL) AND 'ORDER_TYPE' = customFields.ATTRIBUTE AND 'ZPRN' = customFields.VALUE
 ),
-FilterByTestOperation
+"FilterByTestOperation"
 (
-	Parent_Site,
-	Parent_UserBo,
-	Parent_ShopOrderBo,
-	Parent_ResourceBo,
-	Parent_WorkCenterBo,
-	Parent_ItemBo,
-	RouterOperationBo,
-	Parent_SfcBo,
-	NcCodeBo,
-	NcCode,
-	NcCodeDescription,
-	OperationColumn,
-	OperationBo,
-	Description,
-	CurrentOperationBo,
-	SfcColumn,
-	Handle,
-	PartitionDate,
-	Handle_1
+	"Parent_Site",
+	"Parent_UserBo",
+	"Parent_ShopOrderBo",
+	"Parent_ResourceBo",
+	"Parent_WorkCenterBo",
+	"Parent_ItemBo",
+	"RouterOperationBo",
+	"Parent_SfcBo",
+	"NcCodeBo",
+	"NcCode",
+	"NcCodeDescription",
+	"OperationColumn",
+	"OperationBo",
+	"Description",
+	"CurrentOperationBo",
+	"SfcColumn",
+	"Handle",
+	"PartitionDate",
+	"Handle_1"
 )
 AS
 (
 	SELECT
-		inputItem.Site,
-		inputItem.UserBo,
-		inputItem.ShopOrderBo,
-		inputItem.ResourceBo,
-		inputItem.WorkCenterBo,
-		inputItem.ItemBo,
+		inputItem."Site",
+		inputItem."UserBo",
+		inputItem."ShopOrderBo",
+		inputItem."ResourceBo",
+		inputItem."WorkCenterBo",
+		inputItem."ItemBo",
 		routerOperation.HANDLE,
-		inputItem.SfcBo,
-		inputItem.NcCodeBo,
-		inputItem.NcCode,
-		inputItem.NcCodeDescription,
-		inputItem.OperationColumn,
-		inputItem.OperationBo,
-		inputItem.Description,
-		inputItem.CurrentOperationBo,
-		inputItem.SfcColumn,
-		inputItem.Handle,
-		inputItem.PartitionDate,
+		inputItem."SfcBo",
+		inputItem."NcCodeBo",
+		inputItem."NcCode",
+		inputItem."NcCodeDescription",
+		inputItem."OperationColumn",
+		inputItem."OperationBo",
+		inputItem."Description",
+		inputItem."CurrentOperationBo",
+		inputItem."SfcColumn",
+		inputItem."Handle",
+		inputItem."PartitionDate",
 		sfcStep.HANDLE
 	FROM
-		FindProductionFailedNcData inputItem
-			INNER JOIN SFC_ROUTING sfcRouting ON (inputItem.SfcBo = sfcRouting.SFC_BO OR inputItem.SfcBo IS NULL AND sfcRouting.SFC_BO IS NULL)
+		"FindProductionFailedNcData" inputItem
+			INNER JOIN SFC_ROUTING sfcRouting ON (inputItem."SfcBo" = sfcRouting.SFC_BO OR inputItem."SfcBo" IS NULL AND sfcRouting.SFC_BO IS NULL)
 			INNER JOIN SFC_ROUTER sfcRouter ON sfcRouting.HANDLE = sfcRouter.SFC_ROUTING_BO
 			INNER JOIN SFC_STEP sfcStep ON sfcRouter.HANDLE = sfcStep.SFC_ROUTER_BO
 			INNER JOIN ROUTER_STEP routerStep ON (sfcRouter.ROUTER_BO = routerStep.ROUTER_BO OR sfcRouter.ROUTER_BO IS NULL AND routerStep.ROUTER_BO IS NULL) AND (sfcStep.STEP_ID = routerStep.STEP_ID OR sfcStep.STEP_ID IS NULL AND routerStep.STEP_ID IS NULL)
-			INNER JOIN ROUTER_OPERATION routerOperation ON routerStep.HANDLE = routerOperation.ROUTER_STEP_BO AND (inputItem.CurrentOperationBo = routerOperation.OPERATION_BO OR inputItem.CurrentOperationBo IS NULL AND routerOperation.OPERATION_BO IS NULL)
+			INNER JOIN ROUTER_OPERATION routerOperation ON routerStep.HANDLE = routerOperation.ROUTER_STEP_BO AND (inputItem."CurrentOperationBo" = routerOperation.OPERATION_BO OR inputItem."CurrentOperationBo" IS NULL AND routerOperation.OPERATION_BO IS NULL)
 			INNER JOIN CUSTOM_FIELDS customFields_1 ON routerOperation.HANDLE = customFields_1.HANDLE AND 'OPERATION_TYPE' = customFields_1.ATTRIBUTE AND 'T' = customFields_1.VALUE
 			INNER JOIN ROUTER router_1 ON sfcRouter.ROUTER_BO = router_1.HANDLE
 	WHERE
 		(sfcRouter.COMPLETED = 'false' AND sfcRouter.IN_USE = 'true' OR sfcRouter.COMPLETED = 'true' AND router_1.ROUTER_TYPE = 'U')
 ),
-GetAdditionalData
+"GetAdditionalData"
 (
-	Parent_Parent_SfcBo,
-	Description,
-	NcCodeBo,
-	NcCode,
-	NcCodeDescription,
-	OperationColumn,
-	OperationBo,
-	Parent_UserBo,
-	Description_1,
-	CurrentOperationBo,
-	SfcColumn,
-	Parent_ShopOrderBo,
-	Parent_ItemBo,
-	Handle,
-	Parent_ResourceBo,
-	Parent_WorkCenterBo,
-	PartitionDate,
-	Parent_Site,
-	Handle_1,
-	RouterOperationBo,
-	ShopOrderColumn,
-	ResrceColumn,
-	Description_2,
-	WorkCenterColumn,
-	Description_3,
-	WorkCenterColumn_1,
-	Description_4,
-	ItemColumn,
-	Description_5,
-	Value,
-	Value_1,
-	ItemGroupColumn,
-	Description_6,
-	Value_2,
-	UserId,
-	BadgeNumber
+	"Parent_Parent_SfcBo",
+	"Description",
+	"NcCodeBo",
+	"NcCode",
+	"NcCodeDescription",
+	"OperationColumn",
+	"OperationBo",
+	"Parent_UserBo",
+	"Description_1",
+	"CurrentOperationBo",
+	"SfcColumn",
+	"Parent_ShopOrderBo",
+	"Parent_ItemBo",
+	"Handle",
+	"Parent_ResourceBo",
+	"Parent_WorkCenterBo",
+	"PartitionDate",
+	"Parent_Site",
+	"Handle_1",
+	"RouterOperationBo",
+	"ShopOrderColumn",
+	"ResrceColumn",
+	"Description_2",
+	"WorkCenterColumn",
+	"Description_3",
+	"WorkCenterColumn_1",
+	"Description_4",
+	"ItemColumn",
+	"Description_5",
+	"Value",
+	"Value_1",
+	"ItemGroupColumn",
+	"Description_6",
+	"Value_2",
+	"UserId",
+	"BadgeNumber"
 )
 AS
 (
 	SELECT
-		inputItem_1.Parent_SfcBo,
+		inputItem_1."Parent_SfcBo",
 		site_1.DESCRIPTION,
-		inputItem_1.NcCodeBo,
-		inputItem_1.NcCode,
-		inputItem_1.NcCodeDescription,
-		inputItem_1.OperationColumn,
-		inputItem_1.OperationBo,
-		inputItem_1.Parent_UserBo,
-		inputItem_1.Description,
-		inputItem_1.CurrentOperationBo,
-		inputItem_1.SfcColumn,
-		inputItem_1.Parent_ShopOrderBo,
-		inputItem_1.Parent_ItemBo,
-		inputItem_1.Handle,
-		inputItem_1.Parent_ResourceBo,
-		inputItem_1.Parent_WorkCenterBo,
-		inputItem_1.PartitionDate,
-		inputItem_1.Parent_Site,
-		inputItem_1.Handle_1,
-		inputItem_1.RouterOperationBo,
+		inputItem_1."NcCodeBo",
+		inputItem_1."NcCode",
+		inputItem_1."NcCodeDescription",
+		inputItem_1."OperationColumn",
+		inputItem_1."OperationBo",
+		inputItem_1."Parent_UserBo",
+		inputItem_1."Description",
+		inputItem_1."CurrentOperationBo",
+		inputItem_1."SfcColumn",
+		inputItem_1."Parent_ShopOrderBo",
+		inputItem_1."Parent_ItemBo",
+		inputItem_1."Handle",
+		inputItem_1."Parent_ResourceBo",
+		inputItem_1."Parent_WorkCenterBo",
+		inputItem_1."PartitionDate",
+		inputItem_1."Parent_Site",
+		inputItem_1."Handle_1",
+		inputItem_1."RouterOperationBo",
 		shopOrder_1.SHOP_ORDER,
 		resrce_1.RESRCE,
 		resrce_1.DESCRIPTION,
@@ -781,62 +781,62 @@ AS
 		usr_1.USER_ID,
 		usr_1.BADGE_NUMBER
 	FROM
-		FilterByTestOperation inputItem_1
-			LEFT JOIN SITE site_1 ON (site_1.SITE = inputItem_1.Parent_Site OR site_1.SITE IS NULL AND inputItem_1.Parent_Site IS NULL)
-			LEFT JOIN USR usr_1 ON usr_1.HANDLE = inputItem_1.Parent_UserBo
-			LEFT JOIN SHOP_ORDER shopOrder_1 ON shopOrder_1.HANDLE = inputItem_1.Parent_ShopOrderBo
-			LEFT JOIN RESRCE resrce_1 ON resrce_1.HANDLE = inputItem_1.Parent_ResourceBo
-			LEFT JOIN WORK_CENTER workCenter_1 ON workCenter_1.HANDLE = inputItem_1.Parent_WorkCenterBo
-			LEFT JOIN WORK_CENTER_MEMBER workCenterMember ON (workCenterMember.WORK_CENTER_OR_RESOURCE_GBO = inputItem_1.Parent_WorkCenterBo OR workCenterMember.WORK_CENTER_OR_RESOURCE_GBO IS NULL AND inputItem_1.Parent_WorkCenterBo IS NULL)
+		"FilterByTestOperation" inputItem_1
+			LEFT JOIN SITE site_1 ON (site_1.SITE = inputItem_1."Parent_Site" OR site_1.SITE IS NULL AND inputItem_1."Parent_Site" IS NULL)
+			LEFT JOIN USR usr_1 ON usr_1.HANDLE = inputItem_1."Parent_UserBo"
+			LEFT JOIN SHOP_ORDER shopOrder_1 ON shopOrder_1.HANDLE = inputItem_1."Parent_ShopOrderBo"
+			LEFT JOIN RESRCE resrce_1 ON resrce_1.HANDLE = inputItem_1."Parent_ResourceBo"
+			LEFT JOIN WORK_CENTER workCenter_1 ON workCenter_1.HANDLE = inputItem_1."Parent_WorkCenterBo"
+			LEFT JOIN WORK_CENTER_MEMBER workCenterMember ON (workCenterMember.WORK_CENTER_OR_RESOURCE_GBO = inputItem_1."Parent_WorkCenterBo" OR workCenterMember.WORK_CENTER_OR_RESOURCE_GBO IS NULL AND inputItem_1."Parent_WorkCenterBo" IS NULL)
 			LEFT JOIN WORK_CENTER line_1 ON line_1.HANDLE = workCenterMember.WORK_CENTER_BO
-			LEFT JOIN ITEM item_1 ON item_1.HANDLE = inputItem_1.Parent_ItemBo
-			LEFT JOIN ITEM_GROUP_MEMBER itemGroupMember ON (itemGroupMember.ITEM_BO = inputItem_1.Parent_ItemBo OR itemGroupMember.ITEM_BO IS NULL AND inputItem_1.Parent_ItemBo IS NULL)
+			LEFT JOIN ITEM item_1 ON item_1.HANDLE = inputItem_1."Parent_ItemBo"
+			LEFT JOIN ITEM_GROUP_MEMBER itemGroupMember ON (itemGroupMember.ITEM_BO = inputItem_1."Parent_ItemBo" OR itemGroupMember.ITEM_BO IS NULL AND inputItem_1."Parent_ItemBo" IS NULL)
 			LEFT JOIN ITEM_GROUP itemGroup_1 ON itemGroup_1.HANDLE = itemGroupMember.ITEM_GROUP_BO
-			LEFT JOIN CUSTOM_FIELDS customField ON customField.ATTRIBUTE = 'PRODUCT_LINE' AND (customField.HANDLE = inputItem_1.Parent_ItemBo OR customField.HANDLE IS NULL AND inputItem_1.Parent_ItemBo IS NULL)
-			LEFT JOIN CUSTOM_FIELDS customField_1 ON customField_1.ATTRIBUTE = 'SPART' AND (customField_1.HANDLE = inputItem_1.Parent_ItemBo OR customField_1.HANDLE IS NULL AND inputItem_1.Parent_ItemBo IS NULL)
-			LEFT JOIN CUSTOM_FIELDS customField_2 ON customField_2.ATTRIBUTE = 'TEST_CATEGORY' AND (customField_2.HANDLE = inputItem_1.RouterOperationBo OR customField_2.HANDLE IS NULL AND inputItem_1.RouterOperationBo IS NULL)
+			LEFT JOIN CUSTOM_FIELDS customField ON customField.ATTRIBUTE = 'PRODUCT_LINE' AND (customField.HANDLE = inputItem_1."Parent_ItemBo" OR customField.HANDLE IS NULL AND inputItem_1."Parent_ItemBo" IS NULL)
+			LEFT JOIN CUSTOM_FIELDS customField_1 ON customField_1.ATTRIBUTE = 'SPART' AND (customField_1.HANDLE = inputItem_1."Parent_ItemBo" OR customField_1.HANDLE IS NULL AND inputItem_1."Parent_ItemBo" IS NULL)
+			LEFT JOIN CUSTOM_FIELDS customField_2 ON customField_2.ATTRIBUTE = 'TEST_CATEGORY' AND (customField_2.HANDLE = inputItem_1."RouterOperationBo" OR customField_2.HANDLE IS NULL AND inputItem_1."RouterOperationBo" IS NULL)
 )
 SELECT
-	item_2.Description,
-	item_2.NcCodeBo,
-	item_2.NcCode,
-	item_2.NcCodeDescription,
-	item_2.OperationColumn,
-	item_2.OperationBo,
-	item_2.Parent_UserBo,
-	item_2.Description_1,
-	item_2.CurrentOperationBo,
-	item_2.Parent_Parent_SfcBo,
-	item_2.SfcColumn,
-	item_2.Parent_ShopOrderBo,
-	item_2.Parent_ItemBo,
-	item_2.Handle,
-	item_2.Parent_ResourceBo,
-	item_2.Parent_WorkCenterBo,
-	item_2.PartitionDate,
-	item_2.Parent_Site,
-	item_2.Handle_1,
-	item_2.RouterOperationBo,
-	item_2.ShopOrderColumn,
-	item_2.ResrceColumn,
-	item_2.Description_2,
-	item_2.WorkCenterColumn,
-	item_2.Description_3,
-	item_2.WorkCenterColumn_1,
-	item_2.Description_4,
-	item_2.ItemColumn,
-	item_2.Description_5,
-	item_2.Value,
-	item_2.Value_1,
-	item_2.ItemGroupColumn,
-	item_2.Description_6,
-	item_2.Value_2,
-	item_2.UserId,
-	item_2.BadgeNumber
+	item_2."Description",
+	item_2."NcCodeBo",
+	item_2."NcCode",
+	item_2."NcCodeDescription",
+	item_2."OperationColumn",
+	item_2."OperationBo",
+	item_2."Parent_UserBo",
+	item_2."Description_1",
+	item_2."CurrentOperationBo",
+	item_2."Parent_Parent_SfcBo",
+	item_2."SfcColumn",
+	item_2."Parent_ShopOrderBo",
+	item_2."Parent_ItemBo",
+	item_2."Handle",
+	item_2."Parent_ResourceBo",
+	item_2."Parent_WorkCenterBo",
+	item_2."PartitionDate",
+	item_2."Parent_Site",
+	item_2."Handle_1",
+	item_2."RouterOperationBo",
+	item_2."ShopOrderColumn",
+	item_2."ResrceColumn",
+	item_2."Description_2",
+	item_2."WorkCenterColumn",
+	item_2."Description_3",
+	item_2."WorkCenterColumn_1",
+	item_2."Description_4",
+	item_2."ItemColumn",
+	item_2."Description_5",
+	item_2."Value",
+	item_2."Value_1",
+	item_2."ItemGroupColumn",
+	item_2."Description_6",
+	item_2."Value_2",
+	item_2."UserId",
+	item_2."BadgeNumber"
 FROM
-	GetAdditionalData item_2
+	"GetAdditionalData" item_2
 WHERE
-	item_2.Parent_Parent_SfcBo = :sfcBo
+	item_2."Parent_Parent_SfcBo" = :sfcBo
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

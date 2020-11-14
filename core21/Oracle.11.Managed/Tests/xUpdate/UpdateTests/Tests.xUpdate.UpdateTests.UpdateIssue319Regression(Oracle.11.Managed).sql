@@ -5,10 +5,10 @@ SET     @ParentID = 100500
 DECLARE @Value1 Int32
 SET     @Value1 = NULL
 
-INSERT INTO Parent
+INSERT INTO "Parent"
 (
-	ParentID,
-	Value1
+	"ParentID",
+	"Value1"
 )
 VALUES
 (
@@ -24,11 +24,11 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.ParentID
+	t1."ParentID"
 FROM
-	Parent t1
+	"Parent" t1
 WHERE
-	t1.ParentID = :id AND ROWNUM <= :take
+	t1."ParentID" = :id AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -40,9 +40,9 @@ DECLARE @id_1 Int32
 SET     @id_1 = 100500
 
 UPDATE
-	Parent
+	"Parent"
 SET
-	Parent.Value1 = :ParentID
+	"Parent"."Value1" = :ParentID
 WHERE
 	EXISTS(
 		SELECT
@@ -50,27 +50,27 @@ WHERE
 		FROM
 			(
 				SELECT
-					t3.ParentID
+					t3."ParentID"
 				FROM
 					(
 						SELECT
-							t2.ParentID,
+							t2."ParentID",
 							(
 								SELECT
 									Count(*)
 								FROM
-									Parent t1
+									"Parent" t1
 								WHERE
-									t1.ParentID = :id
-							) as ex
+									t1."ParentID" = :id
+							) as "ex"
 						FROM
-							Parent t2
+							"Parent" t2
 					) t3
 				WHERE
-					t3.ParentID = :id_1 AND t3.ex > 0
+					t3."ParentID" = :id_1 AND t3."ex" > 0
 			) t4
 		WHERE
-			Parent.ParentID = t4.ParentID
+			"Parent"."ParentID" = t4."ParentID"
 	)
 
 BeforeExecute
@@ -79,7 +79,7 @@ DECLARE @id Int32
 SET     @id = 100500
 
 DELETE FROM
-	Parent t1
+	"Parent" t1
 WHERE
-	t1.ParentID = :id
+	t1."ParentID" = :id
 

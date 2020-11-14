@@ -4,19 +4,19 @@
 SELECT
 	Count(*)
 FROM
-	Child t1
+	"Child" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-WITH CTE1_ (ParentID, ChildID)
+WITH CTE1_ ("ParentID", "ChildID")
 AS
 (
 	SELECT
-		t1.ParentID,
-		t1.ChildID
+		t1."ParentID",
+		t1."ChildID"
 	FROM
-		Child t1
+		"Child" t1
 )
 SELECT
 	Count(*)
@@ -26,13 +26,13 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-WITH CTE1_ (ChildID)
+WITH CTE1_ ("ChildID")
 AS
 (
 	SELECT
-		c_2.ChildID
+		c_2."ChildID"
 	FROM
-		Child c_2
+		"Child" c_2
 )
 SELECT
 	Count(*)
@@ -42,13 +42,13 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-WITH CTE1_ (ChildID)
+WITH CTE1_ ("ChildID")
 AS
 (
 	SELECT
-		c_2.ChildID
+		c_2."ChildID"
 	FROM
-		Child c_2
+		"Child" c_2
 )
 SELECT
 	CASE WHEN EXISTS(

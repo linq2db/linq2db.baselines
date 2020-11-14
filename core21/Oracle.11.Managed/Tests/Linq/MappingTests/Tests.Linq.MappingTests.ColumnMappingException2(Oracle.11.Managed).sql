@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.LastName
+	t1."LastName"
 FROM
-	Person t1
+	"Person" t1
 

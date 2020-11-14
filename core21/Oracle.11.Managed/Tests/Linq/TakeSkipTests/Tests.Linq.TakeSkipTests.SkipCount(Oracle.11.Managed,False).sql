@@ -6,14 +6,14 @@ SELECT
 FROM
 	(
 		SELECT
-			t3.ChildID
+			t3."ChildID"
 		FROM
 			(
 				SELECT
-					t2.ChildID,
+					t2."ChildID",
 					ROWNUM as RN
 				FROM
-					Child t2
+					"Child" t2
 			) t3
 		WHERE
 			t3.RN > 2

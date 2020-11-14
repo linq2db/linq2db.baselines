@@ -15,5 +15,5 @@ SET     @:p6 = System.Object[]
 DECLARE @:p7 TimeStamp -- DateTime
 SET     @:p7 = System.Object[]
 
-INSERT INTO stg_trade_information (STG_TRADE_ID, STG_TRADE_VERSION, INFORMATION_TYPE_ID, INFORMATION_TYPE_NAME, value, value_as_integer, value_as_date) VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7)
+INSERT INTO STG_TRADE_INFORMATION (STG_TRADE_ID, STG_TRADE_VERSION, INFORMATION_TYPE_ID, INFORMATION_TYPE_NAME, VALUE, VALUE_AS_INTEGER, VALUE_AS_DATE) VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7)
 

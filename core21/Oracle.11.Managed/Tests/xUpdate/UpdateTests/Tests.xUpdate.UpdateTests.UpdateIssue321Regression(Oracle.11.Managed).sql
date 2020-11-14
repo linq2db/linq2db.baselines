@@ -21,18 +21,18 @@ SET     @BigIntValue = NULL
 DECLARE @StringValue Varchar2 -- String
 SET     @StringValue = NULL
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	MoneyValue,
-	DateTimeValue,
-	DateTimeValue2,
-	BoolValue,
-	GuidValue,
-	SmallIntValue,
-	IntValue,
-	BigIntValue,
-	StringValue
+	"MoneyValue",
+	"DateTimeValue",
+	"DateTimeValue2",
+	"BoolValue",
+	"GuidValue",
+	"SmallIntValue",
+	"IntValue",
+	"BigIntValue",
+	"StringValue"
 )
 VALUES
 (
@@ -56,11 +56,11 @@ DECLARE @id Int32
 SET     @id = 100500
 
 UPDATE
-	LinqDataTypes
+	"LinqDataTypes"
 SET
-	LinqDataTypes.SmallIntValue = Cast(Floor(LinqDataTypes.MoneyValue / (:value2 / LinqDataTypes.IntValue)) as SmallInt)
+	"LinqDataTypes"."SmallIntValue" = Cast(Floor("LinqDataTypes"."MoneyValue" / (:value2 / "LinqDataTypes"."IntValue")) as SmallInt)
 WHERE
-	LinqDataTypes.ID = :id
+	"LinqDataTypes".ID = :id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -70,9 +70,9 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.SmallIntValue
+	t1."SmallIntValue"
 FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID = :id AND ROWNUM <= :take
 
@@ -82,7 +82,7 @@ DECLARE @id Int32
 SET     @id = 100500
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID = :id
 

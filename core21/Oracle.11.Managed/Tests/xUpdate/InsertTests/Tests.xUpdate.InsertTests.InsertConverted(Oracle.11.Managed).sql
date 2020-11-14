@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID >= 1000
 
@@ -11,10 +11,10 @@ BeforeExecute
 DECLARE @tt Int64
 SET     @tt = 600000000
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	BigIntValue
+	"BigIntValue"
 )
 VALUES
 (
@@ -29,9 +29,9 @@ SET     @take = 1
 
 SELECT
 	t.ID,
-	t.BigIntValue
+	t."BigIntValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
 	t.ID = 1001 AND ROWNUM <= :take
 
@@ -39,7 +39,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID >= 1000
 

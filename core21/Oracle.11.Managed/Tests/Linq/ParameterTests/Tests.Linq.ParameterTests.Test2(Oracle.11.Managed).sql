@@ -10,19 +10,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.ParentID,
-	t1.Value1
+	t1."ParentID",
+	t1."Value1"
 FROM
 	(
 		SELECT
-			p.ParentID,
-			p.Value1
+			p."ParentID",
+			p."Value1"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			((p.ParentID = :id1 OR p.ParentID >= :id1_1) OR p.ParentID >= :id2)
+			((p."ParentID" = :id1 OR p."ParentID" >= :id1_1) OR p."ParentID" >= :id2)
 		ORDER BY
-			p.ParentID
+			p."ParentID"
 	) t1
 WHERE
 	ROWNUM <= :take
@@ -39,19 +39,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.ParentID,
-	t1.Value1
+	t1."ParentID",
+	t1."Value1"
 FROM
 	(
 		SELECT
-			p.ParentID,
-			p.Value1
+			p."ParentID",
+			p."Value1"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			((p.ParentID = :id1 OR p.ParentID >= :id1_1) OR p.ParentID >= :id2)
+			((p."ParentID" = :id1 OR p."ParentID" >= :id1_1) OR p."ParentID" >= :id2)
 		ORDER BY
-			p.ParentID
+			p."ParentID"
 	) t1
 WHERE
 	ROWNUM <= :take

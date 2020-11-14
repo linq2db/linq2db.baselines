@@ -2,18 +2,18 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	BoolValue,
-	BinaryValue
+	"BoolValue",
+	"BinaryValue"
 )
 VALUES
 (
@@ -29,14 +29,14 @@ SET     @take = 2
 
 SELECT
 	t.ID,
-	t.MoneyValue,
-	t.DateTimeValue,
-	t.BoolValue,
-	t.GuidValue,
-	t.BinaryValue,
-	t.SmallIntValue
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."BoolValue",
+	t."GuidValue",
+	t."BinaryValue",
+	t."SmallIntValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
 	t.ID = 1001 AND ROWNUM <= :take
 
@@ -44,7 +44,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	LinqDataTypes t1
+	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 

@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	Cast(t.MoneyValue as Real)
+	Cast(t."MoneyValue" as Real)
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	Cast(t.MoneyValue as Real) > 0
+	Cast(t."MoneyValue" as Real) > 0
 

@@ -4,12 +4,12 @@
 SELECT
 	(
 		SELECT DISTINCT
-			c_1.ParentID
+			c_1."ParentID"
 		FROM
-			Child c_1
+			"Child" c_1
 		WHERE
-			p.ParentID = c_1.ParentID
+			p."ParentID" = c_1."ParentID"
 	)
 FROM
-	Parent p
+	"Parent" p
 

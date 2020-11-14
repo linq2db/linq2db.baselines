@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE FluentMapping
+CREATE TABLE "FluentMapping"
 (
-	RecordID       Int       NOT NULL,
-	EffectiveStart timestamp NOT NULL,
-	EffectiveEnd   timestamp     NULL,
-	Key            Int       NOT NULL,
-	Unordered1     Int       NOT NULL,
-	Unordered2     Int       NOT NULL,
-	Audit1ID       Int       NOT NULL,
-	Audit2ID       Int       NOT NULL
+	"RecordID"       Int       NOT NULL,
+	"EffectiveStart" timestamp NOT NULL,
+	"EffectiveEnd"   timestamp     NULL,
+	"Key"            Int       NOT NULL,
+	"Unordered1"     Int       NOT NULL,
+	"Unordered2"     Int       NOT NULL,
+	"Audit1ID"       Int       NOT NULL,
+	"Audit2ID"       Int       NOT NULL
 )
 
 BeforeExecute
@@ -308,5 +308,5 @@ SYSTEM.ADDISSUE792RECORD
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE FluentMapping
+DROP TABLE "FluentMapping"
 

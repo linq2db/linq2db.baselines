@@ -6,10 +6,10 @@ DECLARE @Value1 Int32
 SET     @Value1 = 3
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	(p.ParentID = :ParentID AND p.Value1 = :Value1)
+	(p."ParentID" = :ParentID AND p."Value1" = :Value1)
 

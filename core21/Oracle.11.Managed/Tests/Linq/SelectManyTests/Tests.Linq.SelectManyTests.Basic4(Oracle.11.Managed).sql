@@ -2,8 +2,8 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.ParentID + 1
+	t1."ParentID" + 1
 FROM
-	Parent cp
-		INNER JOIN Child t1 ON cp.ParentID = t1.ParentID + 1
+	"Parent" cp
+		INNER JOIN "Child" t1 ON cp."ParentID" = t1."ParentID" + 1
 

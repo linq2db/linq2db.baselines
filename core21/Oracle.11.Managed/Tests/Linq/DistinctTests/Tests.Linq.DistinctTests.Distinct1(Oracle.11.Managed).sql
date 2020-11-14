@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT DISTINCT
-	ch.ParentID
+	ch."ParentID"
 FROM
-	Child ch
+	"Child" ch
 
 BeforeExecute
 -- SQLite.MS SQLite

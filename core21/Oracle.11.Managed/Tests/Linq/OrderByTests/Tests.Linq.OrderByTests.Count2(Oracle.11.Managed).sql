@@ -8,15 +8,15 @@ SELECT
 FROM
 	(
 		SELECT
-			t2.Value1
+			t2."Value1"
 		FROM
 			(
 				SELECT
-					t1.Value1
+					t1."Value1"
 				FROM
-					Parent t1
+					"Parent" t1
 				ORDER BY
-					t1.ParentID
+					t1."ParentID"
 			) t2
 		WHERE
 			ROWNUM <= :take

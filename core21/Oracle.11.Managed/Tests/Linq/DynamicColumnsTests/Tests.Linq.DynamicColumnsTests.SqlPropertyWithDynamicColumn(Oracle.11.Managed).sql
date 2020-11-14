@@ -2,12 +2,12 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	x.PersonID,
-	x.FirstName,
-	x.LastName,
-	x.MiddleName
+	x."PersonID",
+	x."FirstName",
+	x."LastName",
+	x."MiddleName"
 FROM
-	Person x
+	"Person" x
 WHERE
-	x.FirstName = 'John'
+	x."FirstName" = 'John'
 

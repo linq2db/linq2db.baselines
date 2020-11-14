@@ -5,15 +5,15 @@ SET     @take = 2
 
 SELECT
 	t.ID,
-	t.MoneyValue,
-	t.DateTimeValue,
-	t.BoolValue,
-	t.GuidValue,
-	t.BinaryValue,
-	t.SmallIntValue,
-	t.StringValue
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."BoolValue",
+	t."GuidValue",
+	t."BinaryValue",
+	t."SmallIntValue",
+	t."StringValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	t.MoneyValue * t.ID = 1.11 AND ROWNUM <= :take
+	t."MoneyValue" * t.ID = 1.11 AND ROWNUM <= :take
 

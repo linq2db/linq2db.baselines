@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE CreateTableTypes
+CREATE TABLE "CreateTableTypes"
 (
-	Id    Int NOT NULL,
-	Int32 Int NOT NULL
+	"Id"    Int NOT NULL,
+	"Int32" Int NOT NULL
 )
 
 BeforeExecute
@@ -14,10 +14,10 @@ SET     @Id = 1
 DECLARE @Int32 Int32
 SET     @Int32 = 0
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	Int32
+	"Id",
+	"Int32"
 )
 VALUES
 (
@@ -32,10 +32,10 @@ SET     @Id = 2
 DECLARE @Int32 Int32
 SET     @Int32 = 1
 
-INSERT INTO CreateTableTypes
+INSERT INTO "CreateTableTypes"
 (
-	Id,
-	Int32
+	"Id",
+	"Int32"
 )
 VALUES
 (
@@ -47,15 +47,15 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id,
-	t1.Int32
+	t1."Id",
+	t1."Int32"
 FROM
-	CreateTableTypes t1
+	"CreateTableTypes" t1
 ORDER BY
-	t1.Id
+	t1."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE CreateTableTypes
+DROP TABLE "CreateTableTypes"
 

@@ -12,7 +12,7 @@ FROM
 		SELECT
 			ROWNUM as RN
 		FROM
-			Person t2
+			"Person" t2
 		WHERE
 			ROWNUM <= :take
 	) t3

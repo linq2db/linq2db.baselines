@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE DropTableTest';
+	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTest"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -13,7 +13,7 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE DropTableTest
+CREATE TABLE "DropTableTest"
 (
 	ID Int NOT NULL
 )
@@ -21,7 +21,7 @@ CREATE TABLE DropTableTest
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO DropTableTest
+INSERT INTO "DropTableTest"
 (
 	ID
 )
@@ -36,12 +36,12 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	DropTableTest t1
+	"DropTableTest" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE DropTableTest
+DROP TABLE "DropTableTest"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -49,5 +49,5 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	DropTableTest t1
+	"DropTableTest" t1
 

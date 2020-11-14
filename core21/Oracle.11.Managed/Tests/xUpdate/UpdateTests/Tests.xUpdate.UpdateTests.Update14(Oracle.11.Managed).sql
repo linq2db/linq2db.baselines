@@ -9,12 +9,12 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -30,11 +30,11 @@ DECLARE @idx Int32
 SET     @idx = 12
 
 UPDATE
-	Person
+	"Person"
 SET
-	Person.LastName = Cast(:idx as VarChar2(11))
+	"Person"."LastName" = Cast(:idx as VarChar2(11))
 WHERE
-	Person.FirstName LIKE 'Update14%' ESCAPE '~'
+	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -42,15 +42,15 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Update14%' ESCAPE '~'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Update14%' ESCAPE '~'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 

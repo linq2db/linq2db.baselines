@@ -3,18 +3,18 @@
 
 SELECT
 	pp.ID,
-	pp.Name_1
+	pp."Name_1"
 FROM
 	(
 		SELECT
-			'  ' || p.FirstName || ' ' as Name,
-			p.PersonID as ID,
-			p.FirstName as Name_1
+			'  ' || p."FirstName" || ' ' as "Name",
+			p."PersonID" as ID,
+			p."FirstName" as "Name_1"
 		FROM
-			Person p
+			"Person" p
 		WHERE
-			p.PersonID = 1
+			p."PersonID" = 1
 	) pp
 WHERE
-	RTrim(pp.Name) = '  John'
+	RTrim(pp."Name") = '  John'
 

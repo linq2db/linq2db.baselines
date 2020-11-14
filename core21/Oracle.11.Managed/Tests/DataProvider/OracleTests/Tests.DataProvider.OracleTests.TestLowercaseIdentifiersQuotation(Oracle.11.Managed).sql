@@ -2,31 +2,31 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.Id
+	t1.BinaryDataID
 FROM
-	AllTypes t1
+	BinaryData t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.ID
+	t1.BINARYDATAID
 FROM
-	ALLTYPES t1
+	BINARYDATA t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1."Id"
+	t1."BinaryDataID"
 FROM
-	"AllTypes" t1
+	"BinaryData" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1.ID
+	t1.BINARYDATAID
 FROM
-	ALLTYPES t1
+	BINARYDATA t1
 

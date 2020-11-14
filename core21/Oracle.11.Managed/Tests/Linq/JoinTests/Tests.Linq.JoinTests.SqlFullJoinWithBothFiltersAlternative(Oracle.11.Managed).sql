@@ -6,29 +6,29 @@ DECLARE @id2 Int32
 SET     @id2 = 2
 
 SELECT
-	lr.ParentID,
-	lr.Value1,
-	t1.ParentID,
-	t1.Value1
+	lr."ParentID",
+	lr."Value1",
+	t1."ParentID",
+	t1."Value1"
 FROM
 	(
 		SELECT
-			p.ParentID,
-			p.Value1
+			p."ParentID",
+			p."Value1"
 		FROM
-			Parent p
+			"Parent" p
 		WHERE
-			p.ParentID <> :id1
+			p."ParentID" <> :id1
 	) lr
 		FULL JOIN (
 			SELECT
-				p_1.ParentID,
-				p_1.Value1
+				p_1."ParentID",
+				p_1."Value1"
 			FROM
-				Parent p_1
+				"Parent" p_1
 			WHERE
-				p_1.ParentID <> :id2
-		) t1 ON t1.ParentID = lr.ParentID
+				p_1."ParentID" <> :id2
+		) t1 ON t1."ParentID" = lr."ParentID"
 ORDER BY
-	lr.ParentID
+	lr."ParentID"
 
