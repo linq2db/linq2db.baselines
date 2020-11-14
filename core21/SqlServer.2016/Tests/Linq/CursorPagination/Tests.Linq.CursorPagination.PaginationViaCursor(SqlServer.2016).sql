@@ -121,8 +121,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @ServiceDate DateTime2
+SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 
 SELECT
 	[t].[BookingID],
@@ -131,15 +131,15 @@ SELECT
 FROM
 	[Booking] [t]
 WHERE
-	[t].[ServiceDate] > @ServiceDate_1
+	[t].[ServiceDate] > @ServiceDate
 ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @ServiceDate DateTime2
+SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @take BigInt -- Int64
 SET     @take = 12
 
@@ -160,15 +160,15 @@ FROM
 		FROM
 			[Booking] [t]
 		WHERE
-			[t].[ServiceDate] > @ServiceDate_1
+			[t].[ServiceDate] > @ServiceDate
 	) [q]
 WHERE
 	[q].[RowNumber] <= @take
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @ServiceDate DateTime2
+SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 84
 DECLARE @take BigInt -- Int64
@@ -191,7 +191,7 @@ AS
 	FROM
 		[Booking] [t]
 	WHERE
-		[t].[ServiceDate] > @ServiceDate_1
+		[t].[ServiceDate] > @ServiceDate
 )
 SELECT
 	[q].[RowNumber],
@@ -213,8 +213,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @ServiceDate DateTime2
+SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 66
 DECLARE @take BigInt -- Int64
@@ -237,7 +237,7 @@ AS
 	FROM
 		[Booking] [t]
 	WHERE
-		[t].[ServiceDate] > @ServiceDate_1
+		[t].[ServiceDate] > @ServiceDate
 )
 SELECT
 	[q].[RowNumber],
@@ -259,8 +259,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @ServiceDate DateTime2
+SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 48
 DECLARE @take BigInt -- Int64
@@ -283,7 +283,7 @@ AS
 	FROM
 		[Booking] [t]
 	WHERE
-		[t].[ServiceDate] > @ServiceDate_1
+		[t].[ServiceDate] > @ServiceDate
 )
 SELECT
 	[q].[RowNumber],
@@ -305,8 +305,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @ServiceDate DateTime2
+SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 30
 DECLARE @take BigInt -- Int64
@@ -329,7 +329,7 @@ AS
 	FROM
 		[Booking] [t]
 	WHERE
-		[t].[ServiceDate] > @ServiceDate_1
+		[t].[ServiceDate] > @ServiceDate
 )
 SELECT
 	[q].[RowNumber],
@@ -351,8 +351,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @ServiceDate DateTime2
+SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 12
 DECLARE @take BigInt -- Int64
@@ -375,7 +375,7 @@ AS
 	FROM
 		[Booking] [t]
 	WHERE
-		[t].[ServiceDate] > @ServiceDate_1
+		[t].[ServiceDate] > @ServiceDate
 )
 SELECT
 	[q].[RowNumber],
@@ -397,8 +397,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @ServiceDate DateTime2
+SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 1
 DECLARE @take BigInt -- Int64
@@ -421,7 +421,7 @@ AS
 	FROM
 		[Booking] [t]
 	WHERE
-		[t].[ServiceDate] > @ServiceDate_1
+		[t].[ServiceDate] > @ServiceDate
 )
 SELECT
 	[q].[RowNumber],
