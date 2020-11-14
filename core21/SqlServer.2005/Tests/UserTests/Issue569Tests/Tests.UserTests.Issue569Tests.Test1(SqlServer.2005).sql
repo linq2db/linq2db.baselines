@@ -38,7 +38,7 @@ FROM
 	) [t1]
 		LEFT JOIN [Doctor] [x] ON [x].[PersonID] = [t1].[PersonID] AND [x].[PersonID] = [t1].[PersonID_1]
 WHERE
-	[t1].[FirstName] LIKE N'J%'
+	[t1].[FirstName] LIKE N'J%' ESCAPE N'~'
 ORDER BY
 	[t1].[PersonID_1],
 	[t1].[FirstName],

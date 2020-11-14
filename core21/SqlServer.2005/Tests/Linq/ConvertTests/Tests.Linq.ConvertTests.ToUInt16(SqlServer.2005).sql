@@ -2,14 +2,9 @@
 -- SqlServer.2005
 
 SELECT
-	[p].[c1]
+	Convert(Int, [t].[MoneyValue])
 FROM
-	(
-		SELECT
-			Convert(Int, [t].[MoneyValue]) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	[p].[c1] > 0
+	Convert(Int, [t].[MoneyValue]) > 0
 
