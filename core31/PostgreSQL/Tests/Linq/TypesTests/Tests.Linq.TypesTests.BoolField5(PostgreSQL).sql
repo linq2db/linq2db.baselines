@@ -2,9 +2,19 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."MoneyValue"
+	p."MoneyValue"
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			CASE
+				WHEN t."BoolValue" = False
+					THEN True
+				ELSE False
+			END as b,
+			t."MoneyValue"
+		FROM
+			"LinqDataTypes" t
+	) p
 WHERE
-	t."BoolValue" <> False
+	p.b = False
 
