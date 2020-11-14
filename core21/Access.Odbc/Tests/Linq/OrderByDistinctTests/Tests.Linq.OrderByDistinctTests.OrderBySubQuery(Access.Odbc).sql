@@ -501,7 +501,7 @@ FROM
 				[OrderByDistinctData] [s]
 			GROUP BY
 				[s].[DuplicateData]
-		) [t2] ON (([t2].[DuplicateData] IS NULL AND [t].[DuplicateData] IS NULL OR [t2].[DuplicateData] = [t].[DuplicateData]))
+		) [t2] ON (([t2].[DuplicateData] = [t].[DuplicateData] OR [t2].[DuplicateData] IS NULL AND [t].[DuplicateData] IS NULL))
 ORDER BY
 	[t].[Id] DESC
 
