@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 DECLARE @n Int32
-SET     @n = 3
+SET     @n = 4
+DECLARE @n_1 Int32
+SET     @n_1 = 3
 
 SELECT
 	t2."ParentID",
@@ -23,8 +25,8 @@ FROM
 					p."ParentID" > 1
 			) t1
 		WHERE
-			ROWNUM <= (:n + 1)
+			ROWNUM <= :n
 	) t2
 WHERE
-	t2.RN > :n
+	t2.RN > :n_1
 

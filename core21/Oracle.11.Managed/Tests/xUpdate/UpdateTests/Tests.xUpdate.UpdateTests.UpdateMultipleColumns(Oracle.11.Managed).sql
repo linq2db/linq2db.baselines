@@ -45,8 +45,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @ID_1 Int32
-SET     @ID_1 = 1001
+DECLARE @ID Int32
+SET     @ID = 1001
 DECLARE @take Int32
 SET     @take = 2
 
@@ -62,7 +62,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = :ID_1 AND ROWNUM <= :take
+	t.ID = :ID AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

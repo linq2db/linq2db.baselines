@@ -44,21 +44,29 @@ SELECT
 FROM
 	(
 		SELECT
-			t1."Id",
-			t1."DuplicateData",
-			t1."OrderData1",
-			t1."OrderData2"
+			t2."Id",
+			t2."DuplicateData",
+			t2."OrderData1",
+			t2."OrderData2"
 		FROM
 			(
 				SELECT
-					x."Id",
-					x."DuplicateData",
-					x."OrderData1",
-					x."OrderData2"
+					t1."Id",
+					t1."DuplicateData",
+					t1."OrderData1",
+					t1."OrderData2"
 				FROM
-					"OrderByDistinctData" x
-				WHERE
-					x."Id" BETWEEN 1 AND 9
+					(
+						SELECT
+							x."Id",
+							x."DuplicateData",
+							x."OrderData1",
+							x."OrderData2"
+						FROM
+							"OrderByDistinctData" x
+						WHERE
+							x."Id" BETWEEN 1 AND 9
+					) t1
 				UNION ALL
 				SELECT
 					x_1."Id",
@@ -69,7 +77,7 @@ FROM
 					"OrderByDistinctData" x_1
 				WHERE
 					x_1."Id" BETWEEN 10 AND 90
-			) t1
+			) t2
 		UNION
 		SELECT
 			x_2."Id",
@@ -82,7 +90,6 @@ FROM
 			x_2."Id" BETWEEN 100 AND 900
 	) x_3
 GROUP BY
-	x_3."Id",
 	x_3."Id"
 ORDER BY
 	Max(x_3."DuplicateData")

@@ -26,17 +26,15 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @name Varchar2(8) -- String
-SET     @name = 'Update14'
 DECLARE @idx Int32
-SET     @idx = 4
+SET     @idx = 12
 
 UPDATE
 	"Person"
 SET
-	"Person"."LastName" = Cast((Length(:name) + :idx) as VarChar2(11))
+	"Person"."LastName" = Cast(:idx as VarChar2(11))
 WHERE
-	"Person"."FirstName" LIKE 'Update14%'
+	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -46,7 +44,7 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Update14%'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -54,5 +52,5 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Update14%'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
