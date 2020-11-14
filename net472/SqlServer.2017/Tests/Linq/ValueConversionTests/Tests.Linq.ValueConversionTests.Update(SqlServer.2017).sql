@@ -47,8 +47,6 @@ DECLARE @Value2 NVarChar(200) -- String
 SET     @Value2 = N'[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar(50) -- AnsiString
 SET     @EnumWithNull = NULL
-DECLARE @EnumWithNullDeclarative VarChar(50) -- AnsiString
-SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
 	[e]
@@ -56,7 +54,7 @@ SET
 	[e].[Value1] = [e].[Value1],
 	[e].[Value2] = @Value2,
 	[e].[EnumWithNull] = @EnumWithNull,
-	[e].[EnumWithNullDeclarative] = @EnumWithNullDeclarative
+	[e].[EnumWithNullDeclarative] = @EnumWithNull
 FROM
 	[ValueConversion] [e]
 WHERE
