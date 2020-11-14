@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 2
-DECLARE @ChildID_1 Int -- Int32
-SET     @ChildID_1 = 21
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 2
+DECLARE @ChildID Int -- Int32
+SET     @ChildID = 21
 
 SELECT
 	[ch].[ParentID],
@@ -11,5 +11,5 @@ SELECT
 FROM
 	[Child] [ch]
 WHERE
-	NOT ([ch].[ParentID] = @ParentID_1 AND [ch].[ChildID] = @ChildID_1)
+	([ch].[ParentID] <> @ParentID OR [ch].[ChildID] <> @ChildID)
 
