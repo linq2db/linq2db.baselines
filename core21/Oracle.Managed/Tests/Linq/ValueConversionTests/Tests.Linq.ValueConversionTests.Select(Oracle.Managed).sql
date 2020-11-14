@@ -93,13 +93,7 @@ SET     @take = 1
 SELECT
 	q."Value2"
 FROM
-	(
-		SELECT
-			t."Id",
-			t."Value2"
-		FROM
-			"ValueConversion" t
-	) q
+	"ValueConversion" q
 ORDER BY
 	q."Id"
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
