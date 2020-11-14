@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	x.PersonID
+	x."PersonID"
 FROM
-	Person x
+	"Person" x
 WHERE
-	x.FirstName = 'John'
+	x."FirstName" = 'John'
 

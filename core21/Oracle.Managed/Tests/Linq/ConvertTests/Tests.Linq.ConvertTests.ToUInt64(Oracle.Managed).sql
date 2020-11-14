@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Cast(Floor(t.MoneyValue) as Decimal)
+	Cast(Floor(t."MoneyValue") as Decimal)
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	Cast(Floor(t.MoneyValue) as Decimal) > 0
+	Cast(Floor(t."MoneyValue") as Decimal) > 0
 

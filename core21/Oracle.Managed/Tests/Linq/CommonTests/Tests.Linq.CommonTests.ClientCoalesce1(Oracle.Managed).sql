@@ -4,7 +4,7 @@ DECLARE @Value1 Int32
 SET     @Value1 = 100
 
 SELECT
-	Nvl(p.Value1, :Value1)
+	Nvl(p."Value1", :Value1)
 FROM
-	Parent p
+	"Parent" p
 

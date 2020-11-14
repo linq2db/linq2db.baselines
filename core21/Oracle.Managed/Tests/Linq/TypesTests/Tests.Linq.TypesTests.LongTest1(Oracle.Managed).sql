@@ -5,17 +5,17 @@ SET     @value_1 = 0
 
 SELECT
 	t.ID,
-	t.MoneyValue,
-	t.DateTimeValue,
-	t.DateTimeValue2,
-	t.BoolValue,
-	t.GuidValue,
-	t.SmallIntValue,
-	t.IntValue,
-	t.BigIntValue,
-	t.StringValue
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."DateTimeValue2",
+	t."BoolValue",
+	t."GuidValue",
+	t."SmallIntValue",
+	t."IntValue",
+	t."BigIntValue",
+	t."StringValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	t.BigIntValue = :value_1
+	t."BigIntValue" = :value_1
 

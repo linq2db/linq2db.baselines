@@ -3,7 +3,7 @@
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE DisposableTable
+		CREATE TABLE "DisposableTable"
 		(
 			ID Int NOT NULL
 		)
@@ -19,7 +19,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE DisposableTable';
+	EXECUTE IMMEDIATE 'DROP TABLE "DisposableTable"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

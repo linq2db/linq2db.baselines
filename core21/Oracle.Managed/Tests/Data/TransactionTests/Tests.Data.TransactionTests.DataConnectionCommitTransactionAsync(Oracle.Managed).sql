@@ -5,10 +5,10 @@ SET     @ParentID = 1010
 DECLARE @Value1 Int32
 SET     @Value1 = 1010
 
-INSERT INTO Parent
+INSERT INTO "Parent"
 (
-	ParentID,
-	Value1
+	"ParentID",
+	"Value1"
 )
 VALUES
 (
@@ -20,7 +20,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Parent t1
+	"Parent" t1
 WHERE
-	t1.ParentID = 1010
+	t1."ParentID" = 1010
 

@@ -6,11 +6,11 @@ DECLARE @ChildID Int32
 SET     @ChildID = 21
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	ch."ParentID",
+	ch."ChildID"
 FROM
-	Child ch
+	"Child" ch
 WHERE
-	(ch.ParentID <> :ParentID OR ch.ChildID <> :ChildID) AND
-	ch.ParentID > 0
+	(ch."ParentID" <> :ParentID OR ch."ChildID" <> :ChildID) AND
+	ch."ParentID" > 0
 

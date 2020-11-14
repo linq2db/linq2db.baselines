@@ -4,9 +4,9 @@
 SELECT
 	Count(*)
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID IS NULL
+	t1."PersonID" IS NULL
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -16,7 +16,7 @@ SET     @id = 1
 SELECT
 	Count(*)
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID = :id
+	t1."PersonID" = :id
 

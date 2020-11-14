@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Ceil(p.MoneyValue)
+	Ceil(p."MoneyValue")
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	Ceil(p.MoneyValue) <> 0
+	Ceil(p."MoneyValue") <> 0
 

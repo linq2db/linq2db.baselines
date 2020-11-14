@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Cast(Floor(Cast(p.MoneyValue as Float)) as Int)
+	Cast(Floor(Cast(p."MoneyValue" as Float)) as Int)
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	Cast(Floor(Cast(p.MoneyValue as Float)) as Int) > 0
+	Cast(Floor(Cast(p."MoneyValue" as Float)) as Int) > 0
 

@@ -23,11 +23,11 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.FirstName
+	t1."FirstName"
 FROM
-	Person t1
+	"Person" t1
 GROUP BY
-	t1.FirstName
+	t1."FirstName"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -35,15 +35,15 @@ DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'John'
 
 SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
+	keyParam."FirstName",
+	keyParam."PersonID",
+	keyParam."LastName",
+	keyParam."MiddleName",
+	keyParam."Gender"
 FROM
-	Person keyParam
+	"Person" keyParam
 WHERE
-	keyParam.FirstName = :FirstName
+	keyParam."FirstName" = :FirstName
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -51,15 +51,15 @@ DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Tester'
 
 SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
+	keyParam."FirstName",
+	keyParam."PersonID",
+	keyParam."LastName",
+	keyParam."MiddleName",
+	keyParam."Gender"
 FROM
-	Person keyParam
+	"Person" keyParam
 WHERE
-	keyParam.FirstName = :FirstName
+	keyParam."FirstName" = :FirstName
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -67,15 +67,15 @@ DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'Jane'
 
 SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
+	keyParam."FirstName",
+	keyParam."PersonID",
+	keyParam."LastName",
+	keyParam."MiddleName",
+	keyParam."Gender"
 FROM
-	Person keyParam
+	"Person" keyParam
 WHERE
-	keyParam.FirstName = :FirstName
+	keyParam."FirstName" = :FirstName
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -83,13 +83,13 @@ DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Jürgen'
 
 SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
+	keyParam."FirstName",
+	keyParam."PersonID",
+	keyParam."LastName",
+	keyParam."MiddleName",
+	keyParam."Gender"
 FROM
-	Person keyParam
+	"Person" keyParam
 WHERE
-	keyParam.FirstName = :FirstName
+	keyParam."FirstName" = :FirstName
 

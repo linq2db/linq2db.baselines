@@ -4,17 +4,17 @@ DECLARE @Id Int32
 SET     @Id = 102
 
 DELETE FROM
-	LinqDataTypes r
+	"LinqDataTypes" r
 WHERE
 	r.ID >= 101 AND r.ID < :Id
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO LinqDataTypes
+INSERT INTO "LinqDataTypes"
 (
 	ID,
-	BigIntValue
+	"BigIntValue"
 )
 VALUES
 (
@@ -28,11 +28,11 @@ DECLARE @TestField Int64
 SET     @TestField = 12
 
 UPDATE
-	LinqDataTypes
+	"LinqDataTypes"
 SET
-	LinqDataTypes.BigIntValue = :TestField
+	"LinqDataTypes"."BigIntValue" = :TestField
 WHERE
-	LinqDataTypes.ID = 101 AND LinqDataTypes.BigIntValue = 11
+	"LinqDataTypes".ID = 101 AND "LinqDataTypes"."BigIntValue" = 11
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -40,11 +40,11 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	r.BigIntValue
+	r."BigIntValue"
 FROM
-	LinqDataTypes r
+	"LinqDataTypes" r
 WHERE
-	r.ID = 101 AND r.BigIntValue = 12
+	r.ID = 101 AND r."BigIntValue" = 12
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -53,7 +53,7 @@ DECLARE @Id Int32
 SET     @Id = 102
 
 DELETE FROM
-	LinqDataTypes r
+	"LinqDataTypes" r
 WHERE
 	r.ID >= 101 AND r.ID < :Id
 

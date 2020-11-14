@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE SampleClass
+CREATE TABLE "SampleClass"
 (
-	Id    Int NOT NULL,
-	Value Int NOT NULL
+	"Id"    Int NOT NULL,
+	"Value" Int NOT NULL
 )
 
 BeforeExecute
@@ -21,5 +21,5 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE SampleClass
+DROP TABLE "SampleClass"
 

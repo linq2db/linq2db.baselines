@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Sign(p.MoneyValue)
+	Sign(p."MoneyValue")
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	Sign(p.MoneyValue) <> 0
+	Sign(p."MoneyValue") <> 0
 

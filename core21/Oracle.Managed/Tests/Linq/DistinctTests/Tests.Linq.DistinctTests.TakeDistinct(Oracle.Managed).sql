@@ -4,15 +4,15 @@ DECLARE @take Int32
 SET     @take = 4
 
 SELECT DISTINCT
-	t1.ParentID
+	t1."ParentID"
 FROM
 	(
 		SELECT
-			ch.ParentID
+			ch."ParentID"
 		FROM
-			Child ch
+			"Child" ch
 		ORDER BY
-			ch.ParentID
+			ch."ParentID"
 		FETCH NEXT :take ROWS ONLY
 	) t1
 

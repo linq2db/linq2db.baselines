@@ -4,14 +4,14 @@
 SELECT
 	(
 		SELECT
-			Max(ch.ChildID)
+			Max(ch."ChildID")
 		FROM
-			Child ch
+			"Child" ch
 		WHERE
-			ch.ParentID = p.ParentID
+			ch."ParentID" = p."ParentID"
 	)
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID <> 5
+	p."ParentID" <> 5
 

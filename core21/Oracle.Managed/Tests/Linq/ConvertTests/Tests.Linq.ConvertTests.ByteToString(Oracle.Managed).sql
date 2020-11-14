@@ -19,7 +19,7 @@ BeforeExecute
 SELECT
 	Cast(Cast(p.ID as Number(3)) as VarChar2(3))
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
 	Length(Cast(Cast(p.ID as Number(3)) as VarChar2(3))) > 0
 

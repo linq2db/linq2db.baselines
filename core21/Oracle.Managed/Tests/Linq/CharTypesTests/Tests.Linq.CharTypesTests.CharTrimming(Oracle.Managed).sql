@@ -4,17 +4,17 @@
 SELECT
 	Max(t1.ID)
 FROM
-	AllTypes t1
+	"AllTypes" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @NChar_1 Char -- StringFixedLength
 SET     @NChar_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -27,10 +27,10 @@ BeforeExecute
 DECLARE @NChar_1 Char -- StringFixedLength
 SET     @NChar_1 = '	'
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -44,10 +44,10 @@ DECLARE @NChar_1 Char -- StringFixedLength
 SET     @NChar_1 = '
 '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -60,10 +60,10 @@ BeforeExecute
 DECLARE @NChar_1 Char -- StringFixedLength
 SET     @NChar_1 = ''
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -76,10 +76,10 @@ BeforeExecute
 DECLARE @NChar_1 Char -- StringFixedLength
 SET     @NChar_1 = ''
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -92,10 +92,10 @@ BeforeExecute
 DECLARE @NChar_1 Char -- StringFixedLength
 SET     @NChar_1 = ''
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -108,10 +108,10 @@ BeforeExecute
 DECLARE @NChar_1 Char -- StringFixedLength
 SET     @NChar_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -126,10 +126,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -144,10 +144,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -162,10 +162,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -180,10 +180,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -198,10 +198,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -216,10 +216,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -234,10 +234,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -252,10 +252,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -270,10 +270,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -288,10 +288,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -306,10 +306,10 @@ SET     @NChar_1 = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -324,10 +324,10 @@ SET     @NChar_1 = '　'
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -340,10 +340,10 @@ BeforeExecute
 DECLARE @NChar_1 Char -- StringFixedLength
 SET     @NChar_1 = chr(0)
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -356,10 +356,10 @@ BeforeExecute
 DECLARE @NChar_1 Char -- StringFixedLength
 SET     @NChar_1 = NULL
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	ncharDataType,
-	char20DataType
+	"ncharDataType",
+	"char20DataType"
 )
 VALUES
 (
@@ -374,10 +374,10 @@ SET     @lastId = 2
 
 SELECT
 	t1.ID,
-	t1.char20DataType,
-	t1.ncharDataType
+	t1."char20DataType",
+	t1."ncharDataType"
 FROM
-	AllTypes t1
+	"AllTypes" t1
 WHERE
 	t1.ID > :lastId
 ORDER BY
@@ -389,7 +389,7 @@ DECLARE @lastId Int32
 SET     @lastId = 2
 
 DELETE FROM
-	AllTypes t1
+	"AllTypes" t1
 WHERE
 	t1.ID > :lastId
 

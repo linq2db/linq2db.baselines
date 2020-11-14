@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE TypeConvertTable
+CREATE TABLE "TypeConvertTable"
 (
-	Name      VarChar(50) NOT NULL,
-	BoolValue Char        NOT NULL,
-	GuidValue VarChar(50)     NULL
+	"Name"      VarChar(50) NOT NULL,
+	"BoolValue" Char        NOT NULL,
+	"GuidValue" VarChar(50)     NULL
 )
 
 BeforeExecute
@@ -17,11 +17,11 @@ SET     @BoolValue = 'N'
 DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-INSERT INTO TypeConvertTable
+INSERT INTO "TypeConvertTable"
 (
-	Name,
-	BoolValue,
-	GuidValue
+	"Name",
+	"BoolValue",
+	"GuidValue"
 )
 VALUES
 (
@@ -39,11 +39,11 @@ SET     @BoolValue = 'Y'
 DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-INSERT INTO TypeConvertTable
+INSERT INTO "TypeConvertTable"
 (
-	Name,
-	BoolValue,
-	GuidValue
+	"Name",
+	"BoolValue",
+	"GuidValue"
 )
 VALUES
 (
@@ -58,9 +58,9 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = 'N'
+	t1."BoolValue" = 'N'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -68,9 +68,9 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = 'Y'
+	t1."BoolValue" = 'Y'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -80,9 +80,9 @@ SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 SELECT
 	Count(*)
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.GuidValue = :GuidValue
+	t1."GuidValue" = :GuidValue
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -92,13 +92,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue_1
+	t1."BoolValue" = :BoolValue_1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -109,13 +109,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -126,13 +126,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue_1
+	t1."BoolValue" = :BoolValue_1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -143,13 +143,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -160,13 +160,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue_1
+	t1."BoolValue" = :BoolValue_1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -177,13 +177,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -194,13 +194,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue_1
+	t1."BoolValue" = :BoolValue_1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -211,13 +211,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -228,13 +228,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue_1
+	t1."BoolValue" = :BoolValue_1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -245,13 +245,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.BoolValue = :BoolValue
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -262,13 +262,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.GuidValue = :GuidValue
+	t1."GuidValue" = :GuidValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -279,17 +279,17 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
 FROM
-	TypeConvertTable t1
+	"TypeConvertTable" t1
 WHERE
-	t1.GuidValue = :GuidValue
+	t1."GuidValue" = :GuidValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE TypeConvertTable
+DROP TABLE "TypeConvertTable"
 

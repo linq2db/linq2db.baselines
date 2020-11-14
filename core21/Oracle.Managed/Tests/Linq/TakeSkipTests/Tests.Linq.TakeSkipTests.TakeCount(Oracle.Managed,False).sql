@@ -6,9 +6,9 @@ SELECT
 FROM
 	(
 		SELECT
-			t1.ChildID
+			t1."ChildID"
 		FROM
-			Child t1
+			"Child" t1
 		FETCH NEXT 5 ROWS ONLY
 	) t2
 

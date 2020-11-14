@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT DISTINCT
-	ch.ParentID
+	ch."ParentID"
 FROM
-	Child ch
+	"Child" ch
 ORDER BY
-	ch.ParentID
+	ch."ParentID"
 

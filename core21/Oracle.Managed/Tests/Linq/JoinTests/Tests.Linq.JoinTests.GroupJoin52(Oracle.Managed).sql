@@ -4,18 +4,18 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.ParentID
+	t1."ParentID"
 FROM
-	Parent p
+	"Parent" p
 		OUTER APPLY (
 			SELECT
-				ch.ParentID
+				ch."ParentID"
 			FROM
-				Child ch
+				"Child" ch
 			WHERE
-				ch.ParentID = p.ParentID
+				ch."ParentID" = p."ParentID"
 			FETCH NEXT :take ROWS ONLY
 		) t1
 WHERE
-	p.ParentID = 1
+	p."ParentID" = 1
 

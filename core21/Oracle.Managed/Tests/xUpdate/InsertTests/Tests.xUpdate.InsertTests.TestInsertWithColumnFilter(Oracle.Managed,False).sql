@@ -7,11 +7,11 @@ SET     @LastName = 'whatever'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	Gender
+	"FirstName",
+	"LastName",
+	"Gender"
 )
 VALUES
 (
@@ -28,15 +28,15 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x.FirstName,
-	x.PersonID,
-	x.LastName,
-	x.MiddleName,
-	x.Gender
+	x."FirstName",
+	x."PersonID",
+	x."LastName",
+	x."MiddleName",
+	x."Gender"
 FROM
-	Person x
+	"Person" x
 WHERE
-	x.FirstName = :FirstName
+	x."FirstName" = :FirstName
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -45,7 +45,7 @@ DECLARE @newName Varchar2(18) -- String
 SET     @newName = 'InsertColumnFilter'
 
 DELETE FROM
-	Person x
+	"Person" x
 WHERE
-	x.FirstName = :newName
+	x."FirstName" = :newName
 

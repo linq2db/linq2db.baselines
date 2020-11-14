@@ -3,12 +3,12 @@
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE test_temp
+		CREATE TABLE "test_temp"
 		(
-			ID     Int      NOT NULL,
-			Field1 Decimal  NOT NULL,
+			ID       Int      NOT NULL,
+			"Field1" Decimal  NOT NULL,
 
-			CONSTRAINT PK_test_temp PRIMARY KEY (ID)
+			CONSTRAINT "PK_test_temp" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -21,23 +21,23 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE SEQUENCE SIDENTITY_test_temp
+CREATE SEQUENCE "SIDENTITY_test_temp"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE OR REPLACE TRIGGER TIDENTITY_test_temp
-BEFORE INSERT ON test_temp FOR EACH ROW
+CREATE OR REPLACE TRIGGER "TIDENTITY_test_temp"
+BEFORE INSERT ON "test_temp" FOR EACH ROW
 BEGIN
-	SELECT SIDENTITY_test_temp.NEXTVAL INTO :NEW.ID FROM dual;
+	SELECT "SIDENTITY_test_temp".NEXTVAL INTO :NEW.ID FROM dual;
 END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO test_temp
+INSERT INTO "test_temp"
 (
-	Field1
+	"Field1"
 )
 VALUES
 (
@@ -47,9 +47,9 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO test_temp
+INSERT INTO "test_temp"
 (
-	Field1
+	"Field1"
 )
 VALUES
 (
@@ -65,9 +65,9 @@ SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1.Field1
+	t1."Field1"
 FROM
-	test_temp t1
+	"test_temp" t1
 ORDER BY
 	t1.ID
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
@@ -75,14 +75,14 @@ OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-TRUNCATE TABLE test_temp
+TRUNCATE TABLE "test_temp"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO test_temp
+INSERT INTO "test_temp"
 (
-	Field1
+	"Field1"
 )
 VALUES
 (
@@ -92,9 +92,9 @@ VALUES
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO test_temp
+INSERT INTO "test_temp"
 (
-	Field1
+	"Field1"
 )
 VALUES
 (
@@ -110,9 +110,9 @@ SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1.Field1
+	t1."Field1"
 FROM
-	test_temp t1
+	"test_temp" t1
 ORDER BY
 	t1.ID
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
@@ -122,7 +122,7 @@ BeforeExecute
 
 BEGIN
 	BEGIN
-		EXECUTE IMMEDIATE 'DROP TRIGGER TIDENTITY_test_temp';
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_test_temp"';
 	EXCEPTION
 		WHEN OTHERS THEN
 			IF SQLCODE != -4080 THEN
@@ -130,7 +130,7 @@ BEGIN
 			END IF;
 	END;
 	BEGIN
-		EXECUTE IMMEDIATE 'DROP SEQUENCE SIDENTITY_test_temp';
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_test_temp"';
 	EXCEPTION
 		WHEN OTHERS THEN
 			IF SQLCODE != -2289 THEN
@@ -138,7 +138,7 @@ BEGIN
 			END IF;
 	END;
 	BEGIN
-		EXECUTE IMMEDIATE 'DROP TABLE test_temp';
+		EXECUTE IMMEDIATE 'DROP TABLE "test_temp"';
 	EXCEPTION
 		WHEN OTHERS THEN
 			IF SQLCODE != -942 THEN

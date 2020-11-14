@@ -6,7 +6,7 @@ SET     @take = 1
 SELECT
 	1
 FROM
-	Person t1
+	"Person" t1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -17,6 +17,6 @@ SET     @take = 1
 SELECT
 	1
 FROM
-	Person t1
+	"Person" t1
 FETCH NEXT :take ROWS ONLY
 

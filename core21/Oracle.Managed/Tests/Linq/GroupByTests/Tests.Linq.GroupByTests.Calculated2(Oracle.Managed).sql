@@ -2,29 +2,29 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.c1
+	p."c1"
 FROM
 	(
 		SELECT
-			ch.Key_1 || '2' as c1
+			ch."Key_1" || '2' as "c1"
 		FROM
 			(
 				SELECT
 					CASE
-						WHEN selectParam.ParentID > 2
+						WHEN selectParam."ParentID" > 2
 							THEN CASE
-							WHEN selectParam.ParentID > 3
+							WHEN selectParam."ParentID" > 3
 								THEN '1'
 							ELSE '2'
 						END
 						ELSE '3'
-					END as Key_1
+					END as "Key_1"
 				FROM
-					Child selectParam
+					"Child" selectParam
 			) ch
 		GROUP BY
-			ch.Key_1
+			ch."Key_1"
 	) p
 WHERE
-	p.c1 = '22'
+	p."c1" = '22'
 

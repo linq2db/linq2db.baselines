@@ -6,13 +6,13 @@ DECLARE @toTest Varchar2(4) -- String
 SET     @toTest = '%[[%'
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = 1 AND :s LIKE :toTest ESCAPE '~'
+	p."PersonID" = 1 AND :s LIKE :toTest ESCAPE '~'
 

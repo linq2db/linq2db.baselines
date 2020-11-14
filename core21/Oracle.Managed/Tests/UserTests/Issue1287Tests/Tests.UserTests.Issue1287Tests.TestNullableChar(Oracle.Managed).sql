@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.charDataType
+	t1."charDataType"
 FROM
-	AllTypes t1
+	"AllTypes" t1
 WHERE
-	t1.charDataType = '1'
+	t1."charDataType" = '1'
 

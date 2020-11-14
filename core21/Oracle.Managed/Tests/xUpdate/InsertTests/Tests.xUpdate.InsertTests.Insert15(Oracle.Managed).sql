@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Insert15%' ESCAPE '~'
+	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -17,12 +17,12 @@ SET     @Name_MiddleName = NULL
 DECLARE @Name_LastName Varchar2(8) -- String
 SET     @Name_LastName = 'Insert15'
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	Gender,
-	FirstName,
-	MiddleName,
-	LastName
+	"Gender",
+	"FirstName",
+	"MiddleName",
+	"LastName"
 )
 VALUES
 (
@@ -38,15 +38,15 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Insert15%' ESCAPE '~'
+	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'Insert15%' ESCAPE '~'
+	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 

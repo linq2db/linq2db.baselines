@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE TempTestTable
+DROP TABLE "TempTestTable"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE TempTestTable
+CREATE TABLE "TempTestTable"
 (
 	AAAAAAAAAAAAAAAAAAAAAAAAAAAABC Number(19) NOT NULL
 )
@@ -21,11 +21,11 @@ FROM
 		SELECT DISTINCT
 			t.AAAAAAAAAAAAAAAAAAAAAAAAAAAABC
 		FROM
-			TempTestTable t
+			"TempTestTable" t
 	) t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE TempTestTable
+DROP TABLE "TempTestTable"
 

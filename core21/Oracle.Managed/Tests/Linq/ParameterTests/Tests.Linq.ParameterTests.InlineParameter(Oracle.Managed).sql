@@ -2,23 +2,23 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = 1
+	p."ParentID" = 1
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = 2
+	p."ParentID" = 2
 FETCH NEXT 1 ROWS ONLY
 

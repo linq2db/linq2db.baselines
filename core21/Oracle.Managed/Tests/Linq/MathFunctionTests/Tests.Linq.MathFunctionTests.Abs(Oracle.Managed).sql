@@ -17,9 +17,9 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	Abs(p.MoneyValue)
+	Abs(p."MoneyValue")
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	Abs(p.MoneyValue) > 0
+	Abs(p."MoneyValue") > 0
 

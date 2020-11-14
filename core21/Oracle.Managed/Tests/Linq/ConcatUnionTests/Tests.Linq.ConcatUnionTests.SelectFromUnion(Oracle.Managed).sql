@@ -7,17 +7,17 @@ SELECT
 FROM
 	(
 		SELECT
-			p.PersonID as ID
+			p."PersonID" as ID
 		FROM
-			Person p
+			"Person" p
 		WHERE
-			p.PersonID = 1
+			p."PersonID" = 1
 		UNION ALL
 		SELECT
-			p_1.PersonID as ID
+			p_1."PersonID" as ID
 		FROM
-			Person p_1
+			"Person" p_1
 		WHERE
-			p_1.PersonID <> 1
+			p_1."PersonID" <> 1
 	) t
 

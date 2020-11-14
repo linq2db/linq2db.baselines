@@ -8,9 +8,9 @@ SELECT
 		SELECT
 			*
 		FROM
-			Child c_1
+			"Child" c_1
 		WHERE
-			c_1.ParentID = :ParentID
+			c_1."ParentID" = :ParentID
 	) THEN 1 ELSE 0 END
 FROM SYS.DUAL
 
@@ -24,9 +24,9 @@ SELECT
 		SELECT
 			*
 		FROM
-			Child c_1
+			"Child" c_1
 		WHERE
-			c_1.ParentID = :ParentID
+			c_1."ParentID" = :ParentID
 	) THEN 1 ELSE 0 END
 FROM SYS.DUAL
 

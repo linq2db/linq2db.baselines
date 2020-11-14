@@ -2,14 +2,14 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t.c1
+	t."c1"
 FROM
 	(
 		SELECT
-			Floor(Exp(Cast(p.MoneyValue as Float))) as c1
+			Floor(Exp(Cast(p."MoneyValue" as Float))) as "c1"
 		FROM
-			LinqDataTypes p
+			"LinqDataTypes" p
 	) t
 WHERE
-	(t.c1 <> 0.10000000000000001D OR t.c1 IS NULL)
+	(t."c1" <> 0.10000000000000001D OR t."c1" IS NULL)
 

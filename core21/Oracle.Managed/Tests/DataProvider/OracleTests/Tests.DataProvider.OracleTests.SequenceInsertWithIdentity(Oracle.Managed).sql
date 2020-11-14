@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	SequenceTest t1
+	SEQUENCETEST t1
 WHERE
-	t1.Value = 'SeqValue'
+	t1.VALUE = 'SeqValue'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -13,14 +13,14 @@ SET     @Value_1 = 'SeqValue'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO SequenceTest
+INSERT INTO SEQUENCETEST
 (
 	ID,
-	Value
+	VALUE
 )
 VALUES
 (
-	SequenceTestSeq.nextval,
+	SEQUENCETESTSEQ.nextval,
 	:Value_1
 )
 RETURNING 
@@ -33,11 +33,11 @@ SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1.Value
+	t1.VALUE
 FROM
-	SequenceTest t1
+	SEQUENCETEST t1
 WHERE
-	t1.Value = 'SeqValue'
+	t1.VALUE = 'SeqValue'
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -46,7 +46,7 @@ DECLARE @id1 Int32
 SET     @id1 = 98
 
 DELETE FROM
-	SequenceTest t1
+	SEQUENCETEST t1
 WHERE
 	t1.ID = :id1
 
@@ -56,7 +56,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	SequenceTest t1
+	SEQUENCETEST t1
 WHERE
-	t1.Value = 'SeqValue'
+	t1.VALUE = 'SeqValue'
 

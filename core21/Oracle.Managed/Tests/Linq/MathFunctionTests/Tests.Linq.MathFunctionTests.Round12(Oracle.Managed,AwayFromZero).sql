@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Round(t.MoneyValue, 1)
+	Round(t."MoneyValue", 1)
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	Round(t.MoneyValue, 1) <> 0 AND Round(t.MoneyValue, 1) <> 7
+	Round(t."MoneyValue", 1) <> 0 AND Round(t."MoneyValue", 1) <> 7
 

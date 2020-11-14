@@ -4,7 +4,7 @@
 SELECT
 	Count(*)
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.FirstName IN ('oh', 'oh''', 'oh\')
+	p."FirstName" IN ('oh', 'oh''', 'oh\')
 
