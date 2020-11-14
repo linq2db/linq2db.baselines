@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 10
+DECLARE @p1  -- Int32
+SET     @p1 = 10
 
 SELECT
 	[key_data_result].[ParentID],
@@ -20,7 +20,7 @@ FROM
 					[p].[Value1]
 				FROM
 					[Parent] [p]
-				LIMIT @take
+				LIMIT @p1
 			) [t1]
 	) [key_data_result]
 		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID]
