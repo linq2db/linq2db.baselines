@@ -2,9 +2,9 @@
 -- SqlServer.2008
 
 SELECT
-	[t].[DateTimeValue]
+	[d].[DateTimeValue]
 FROM
-	[LinqDataTypes] [t]
+	[LinqDataTypes] [d]
 WHERE
-	DatePart(day, [t].[DateTimeValue]) > 0
+	DatePart(day, [d].[DateTimeValue]) > 0
 
