@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @p1 Smallint -- Int16
+DECLARE @p1 Integer -- Int32
 SET     @p1 = 1234
 
 INSERT INTO "AllTypes"
