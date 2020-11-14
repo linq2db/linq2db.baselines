@@ -2,17 +2,18 @@
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
-		WHEN t.MoneyValue > 0 THEN 1
-		WHEN t.MoneyValue < 0 THEN -1
-		ELSE 0
-	END
+	t.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			CASE
+				WHEN p.MoneyValue > 0 THEN 1
+				WHEN p.MoneyValue < 0 THEN -1
+				ELSE 0
+			END as c1
+		FROM
+			LinqDataTypes p
+	) t
 WHERE
-	CASE
-		WHEN t.MoneyValue > 0 THEN 1
-		WHEN t.MoneyValue < 0 THEN -1
-		ELSE 0
-	END <> 0
+	t.c1 <> 0
 

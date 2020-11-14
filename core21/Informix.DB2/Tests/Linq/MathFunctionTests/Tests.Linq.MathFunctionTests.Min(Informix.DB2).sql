@@ -2,15 +2,17 @@
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
-		WHEN t.MoneyValue < 5 THEN t.MoneyValue
-		ELSE 5
-	END
+	t.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			CASE
+				WHEN p.MoneyValue < 5 THEN p.MoneyValue
+				ELSE 5
+			END as c1
+		FROM
+			LinqDataTypes p
+	) t
 WHERE
-	CASE
-		WHEN t.MoneyValue < 5 THEN t.MoneyValue
-		ELSE 5
-	END <> 0
+	t.c1 <> 0
 

@@ -4,7 +4,16 @@
 SELECT
 	p.MoneyValue
 FROM
-	LinqDataTypes p
+	(
+		SELECT
+			CASE
+				WHEN t.BoolValue = 'f' THEN 't'
+				ELSE 'f'
+			END as b,
+			t.MoneyValue
+		FROM
+			LinqDataTypes t
+	) p
 WHERE
-	p.BoolValue = 'f'
+	p.b = 't'
 
