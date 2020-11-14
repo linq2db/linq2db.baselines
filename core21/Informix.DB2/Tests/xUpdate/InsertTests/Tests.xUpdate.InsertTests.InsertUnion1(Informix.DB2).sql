@@ -74,34 +74,22 @@ INSERT INTO Parent
 	Value1
 )
 SELECT
-	t3.ParentID + 1000,
-	t3.Value1
+	t1.ParentID + 1000,
+	t1.Value1
 FROM
 	(
 		SELECT
-			t1.ParentID,
-			t1.Value1
+			c_1.ParentID,
+			Cast(Floor(Cast(c_1.ChildID as Float) / 10) as Int) as Value1
 		FROM
-			(
-				SELECT
-					c_1.ParentID,
-					Cast(Floor(Cast(c_1.ChildID as Float) / 10) as Int) as Value1
-				FROM
-					Child c_1
-			) t1
+			Child c_1
 		UNION
 		SELECT
-			t2.ParentID,
-			t2.Value1
+			Nvl(c_2.ParentID, 0) as ParentID,
+			Floor(Cast(Nvl(c_2.GrandChildID, 0) as Float) / 100) as Value1
 		FROM
-			(
-				SELECT
-					Nvl(c_2.ParentID, 0) as ParentID,
-					Floor(Cast(Nvl(c_2.GrandChildID, 0) as Float) / 100) as Value1
-				FROM
-					GrandChild c_2
-			) t2
-	) t3
+			GrandChild c_2
+	) t1
 
 BeforeExecute
 -- Informix.DB2 Informix

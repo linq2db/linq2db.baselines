@@ -23,6 +23,6 @@ WHERE
 					per.FirstName DESC
 			) t1
 		WHERE
-			t1.Diagnosis LIKE '%with%'
+			t1.Diagnosis LIKE '%with%' ESCAPE '~'
 	)
 

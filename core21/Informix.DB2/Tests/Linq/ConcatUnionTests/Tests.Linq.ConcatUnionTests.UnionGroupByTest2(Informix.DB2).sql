@@ -17,13 +17,12 @@ FROM
 		SELECT
 			t3.month_1 as year_1,
 			t3.year_1 as year_2,
-			t3.int_1
+			1 as int_1
 		FROM
 			(
 				SELECT
 					t2.Key_1 as month_1,
-					t2.Key_2 as year_1,
-					1 as int_1
+					t2.Key_2 as year_1
 				FROM
 					(
 						SELECT
@@ -39,15 +38,9 @@ FROM
 	) t4
 UNION
 SELECT
-	t6.year_1,
-	t6.year_1,
-	t6.int_1
+	Year(t5.DateTimeValue),
+	Year(t5.DateTimeValue),
+	2
 FROM
-	(
-		SELECT
-			Year(t5.DateTimeValue) as year_1,
-			2 as int_1
-		FROM
-			LinqDataTypes t5
-	) t6
+	LinqDataTypes t5
 

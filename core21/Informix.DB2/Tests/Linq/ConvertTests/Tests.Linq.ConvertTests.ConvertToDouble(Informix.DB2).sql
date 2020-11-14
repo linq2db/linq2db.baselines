@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.c1
+	Cast(p.MoneyValue as Float)
 FROM
-	(
-		SELECT
-			Cast(t.MoneyValue as Float) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes p
 WHERE
-	p.c1 > 0
+	Cast(p.MoneyValue as Float) > 0
 

@@ -17,14 +17,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	Abs(t.MoneyValue)
 FROM
-	(
-		SELECT
-			Abs(p.MoneyValue) as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes t
 WHERE
-	t.c1 > 0
+	Abs(t.MoneyValue) > 0
 

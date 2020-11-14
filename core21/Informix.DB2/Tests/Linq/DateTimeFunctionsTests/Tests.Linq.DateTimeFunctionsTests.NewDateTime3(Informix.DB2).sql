@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	To_Date(To_Char(Year(t.DateTimeValue)) || '-10-1 20:35:44')
 FROM
-	(
-		SELECT
-			To_Date(To_Char(Year(p.DateTimeValue)) || '-10-1 20:35:44') as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes t
 WHERE
-	Month(t.c1) = 10
+	Month(To_Date(To_Char(Year(t.DateTimeValue)) || '-10-1 20:35:44')) = 10
 
