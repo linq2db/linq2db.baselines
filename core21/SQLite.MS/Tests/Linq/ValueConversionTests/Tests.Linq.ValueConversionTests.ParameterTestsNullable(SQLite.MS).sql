@@ -45,17 +45,27 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @testedList NVarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
+DECLARE @testDate  -- DateTime
+SET     @testDate = '2020-11-13'
 
 SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2]
+	[t].[DateTimeNullable]
 FROM
 	[ValueConversion] [t]
 WHERE
-	@testedList = [t].[Value2]
+	DateTime(@testDate) = DateTime([t].[DateTimeNullable])
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @testDate  -- DateTime
+SET     @testDate = '2020-11-13'
+
+SELECT
+	[t].[DateTimeNullable]
+FROM
+	[ValueConversion] [t]
+WHERE
+	DateTime([t].[DateTimeNullable]) = DateTime(@testDate)
 
 BeforeExecute
 -- SQLite.MS SQLite
