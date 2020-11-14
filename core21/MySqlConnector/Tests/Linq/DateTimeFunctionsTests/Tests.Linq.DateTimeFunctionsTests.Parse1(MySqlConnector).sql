@@ -2,9 +2,9 @@
 -- MySqlConnector MySql
 
 SELECT
-	`t`.`DateTimeValue`
+	`d`.`DateTimeValue`
 FROM
-	`LinqDataTypes` `t`
+	`LinqDataTypes` `d`
 WHERE
-	Extract(day from `t`.`DateTimeValue`) > 0
+	Extract(day from `d`.`DateTimeValue`) > 0
 
