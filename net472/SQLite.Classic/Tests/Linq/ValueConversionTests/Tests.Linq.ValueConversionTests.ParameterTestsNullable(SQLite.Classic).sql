@@ -45,21 +45,27 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @BoolValue VarChar -- AnsiString
-SET     @BoolValue = 'Y'
-DECLARE @BoolValue_2 VarChar -- AnsiString
-SET     @BoolValue_2 = 'Y'
+DECLARE @testDate  -- DateTime
+SET     @testDate = '2020-11-13'
 
 SELECT
-	[t1].[Enum]
+	[t].[DateTimeNullable]
 FROM
-	[ValueConversion] [t1]
-		INNER JOIN (
-			SELECT
-				[t2].[BoolValue]
-			FROM
-				[ValueConversion] [t2]
-		) [t2_1] ON [t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue_2
+	[ValueConversion] [t]
+WHERE
+	DateTime(@testDate) = DateTime([t].[DateTimeNullable])
+
+BeforeExecute
+-- SQLite.Classic SQLite
+DECLARE @testDate  -- DateTime
+SET     @testDate = '2020-11-13'
+
+SELECT
+	[t].[DateTimeNullable]
+FROM
+	[ValueConversion] [t]
+WHERE
+	DateTime([t].[DateTimeNullable]) = DateTime(@testDate)
 
 BeforeExecute
 -- SQLite.Classic SQLite
