@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @id_1 Int32
-SET     @id_1 = 2
+DECLARE @id Int32
+SET     @id = 2
 
 SELECT
 	`c_1`.`ChildID`,
@@ -25,7 +25,7 @@ SELECT
 FROM
 	`Child` `c_1`
 WHERE
-	`c_1`.`ParentID` = @id_1
+	`c_1`.`ParentID` = @id
 ORDER BY
 	`c_1`.`ParentID` DESC
 

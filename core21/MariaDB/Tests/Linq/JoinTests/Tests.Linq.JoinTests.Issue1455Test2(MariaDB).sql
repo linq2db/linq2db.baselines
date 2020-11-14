@@ -76,7 +76,7 @@ FROM
 			`al`.`CreationDate` as `alert_2`
 		FROM
 			`Alert` `al`
-				LEFT JOIN `AuditAlert` `au1` ON (`au1`.`AlertKey` IS NULL AND `al`.`AlertKey` IS NULL OR `au1`.`AlertKey` = `al`.`AlertKey`) AND (`au1`.`AlertCode` IS NULL AND `au1`.`AlertCode` IS NULL OR `au1`.`AlertCode` = `au1`.`AlertCode`)
+				LEFT JOIN `AuditAlert` `au1` ON (`au1`.`AlertKey` = `al`.`AlertKey` OR `au1`.`AlertKey` IS NULL AND `al`.`AlertKey` IS NULL) AND (`au1`.`AlertCode` = `au1`.`AlertCode` OR `au1`.`AlertCode` IS NULL AND `au1`.`AlertCode` IS NULL)
 		GROUP BY
 			`al`.`AlertKey`,
 			`al`.`AlertCode`,

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql (asynchronously)
-DECLARE @ParentID_1 Int32
-SET     @ParentID_1 = 1
+DECLARE @ParentID Int32
+SET     @ParentID = 1
 DECLARE @take Int32
 SET     @take = 1
 
@@ -11,13 +11,13 @@ SELECT
 FROM
 	`Child` `c_1`
 WHERE
-	`c_1`.`ParentID` = @ParentID_1
+	`c_1`.`ParentID` = @ParentID
 LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql (asynchronously)
-DECLARE @ParentID_1 Int32
-SET     @ParentID_1 = 2
+DECLARE @ParentID Int32
+SET     @ParentID = 2
 DECLARE @take Int32
 SET     @take = 1
 
@@ -27,6 +27,6 @@ SELECT
 FROM
 	`Child` `c_1`
 WHERE
-	`c_1`.`ParentID` = @ParentID_1
+	`c_1`.`ParentID` = @ParentID
 LIMIT @take
 
