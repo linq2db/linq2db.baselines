@@ -3,14 +3,15 @@
 
 CREATE TABLE ValueConversion
 (
-	Id                      Int           NOT NULL,
-	Value1                  NVarChar(200)     NULL,
-	Value2                  NVarChar(200)     NULL,
-	Enum                    NVarChar(50)  NOT NULL,
-	EnumNullable            VarChar(50)       NULL,
-	EnumWithNull            VarChar(50)       NULL,
-	EnumWithNullDeclarative VarChar(50)       NULL,
-	BoolValue               VarChar(1)    NOT NULL,
+	Id                      Int                       NOT NULL,
+	Value1                  NVarChar(200)                 NULL,
+	Value2                  NVarChar(200)                 NULL,
+	Enum                    NVarChar(50)              NOT NULL,
+	EnumNullable            VarChar(50)                   NULL,
+	EnumWithNull            VarChar(50)                   NULL,
+	EnumWithNullDeclarative VarChar(50)                   NULL,
+	BoolValue               VarChar(1)                NOT NULL,
+	DateTimeNullable        datetime year to fraction     NULL,
 
 	PRIMARY KEY (Id)
 )
@@ -33,6 +34,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable Timestamp -- DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO ValueConversion
 (
@@ -43,7 +46,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -54,7 +58,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -75,6 +80,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable Timestamp(16) -- DateTime
+SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -85,7 +92,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -96,7 +104,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -117,6 +126,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value3'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable Timestamp(16) -- DateTime
+SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -127,7 +138,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -138,7 +150,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -159,6 +172,8 @@ DECLARE @EnumWithNullDeclarative VarChar -- String
 SET     @EnumWithNullDeclarative = NULL
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable Timestamp -- DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO ValueConversion
 (
@@ -169,7 +184,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -180,7 +196,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -201,6 +218,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable Timestamp(16) -- DateTime
+SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -211,7 +230,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -222,7 +242,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -243,6 +264,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable Timestamp(16) -- DateTime
+SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -253,7 +276,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -264,7 +288,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -285,6 +310,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value3'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable Timestamp -- DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO ValueConversion
 (
@@ -295,7 +322,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -306,7 +334,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -327,6 +356,8 @@ DECLARE @EnumWithNullDeclarative VarChar -- String
 SET     @EnumWithNullDeclarative = NULL
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable Timestamp(16) -- DateTime
+SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -337,7 +368,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -348,7 +380,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -369,6 +402,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable Timestamp(16) -- DateTime
+SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -379,7 +414,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -390,7 +426,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -411,6 +448,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable Timestamp -- DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO ValueConversion
 (
@@ -421,7 +460,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -432,7 +472,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -465,7 +506,8 @@ SELECT FIRST 1
 	e.EnumNullable,
 	e.EnumWithNull,
 	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e.BoolValue,
+	e.DateTimeNullable
 FROM
 	ValueConversion e
 WHERE
@@ -487,6 +529,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable Timestamp -- DateTime
+SET     @DateTimeNullable = NULL
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
@@ -499,7 +543,8 @@ SET
 	ValueConversion.EnumNullable = @EnumNullable,
 	ValueConversion.EnumWithNull = @EnumWithNull,
 	ValueConversion.EnumWithNullDeclarative = @EnumWithNullDeclarative,
-	ValueConversion.BoolValue = @BoolValue
+	ValueConversion.BoolValue = @BoolValue,
+	ValueConversion.DateTimeNullable = @DateTimeNullable
 WHERE
 	ValueConversion.Id = @Id
 
@@ -514,7 +559,8 @@ SELECT FIRST 1
 	e.EnumNullable,
 	e.EnumWithNull,
 	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e.BoolValue,
+	e.DateTimeNullable
 FROM
 	ValueConversion e
 WHERE
@@ -536,6 +582,8 @@ DECLARE @EnumWithNullDeclarative VarChar -- String
 SET     @EnumWithNullDeclarative = NULL
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable Timestamp -- DateTime
+SET     @DateTimeNullable = NULL
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
 
@@ -548,7 +596,8 @@ SET
 	ValueConversion.EnumNullable = @EnumNullable,
 	ValueConversion.EnumWithNull = @EnumWithNull,
 	ValueConversion.EnumWithNullDeclarative = @EnumWithNullDeclarative,
-	ValueConversion.BoolValue = @BoolValue
+	ValueConversion.BoolValue = @BoolValue,
+	ValueConversion.DateTimeNullable = @DateTimeNullable
 WHERE
 	ValueConversion.Id = @Id
 
@@ -563,7 +612,8 @@ SELECT FIRST 1
 	e.EnumNullable,
 	e.EnumWithNull,
 	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e.BoolValue,
+	e.DateTimeNullable
 FROM
 	ValueConversion e
 WHERE
