@@ -2,14 +2,9 @@
 -- PostgreSQL.9.3 PostgreSQL
 
 SELECT
-	p.c1
+	Cast(Floor(t."MoneyValue") as Decimal)
 FROM
-	(
-		SELECT
-			Cast(Floor(t."MoneyValue") as Decimal) as c1
-		FROM
-			"LinqDataTypes" t
-	) p
+	"LinqDataTypes" t
 WHERE
-	p.c1 > 0
+	Cast(Floor(t."MoneyValue") as Decimal) > 0
 

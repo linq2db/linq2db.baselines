@@ -41,8 +41,6 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @diagnosis Text(3) -- String
 SET     @diagnosis = 'abc'
-DECLARE @i Integer -- Int32
-SET     @i = 0
 
 INSERT INTO "Patient"
 (
@@ -52,7 +50,7 @@ INSERT INTO "Patient"
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as VarChar(11))
+	Cast(Length(:diagnosis) as VarChar(11))
 )
 
 BeforeExecute
