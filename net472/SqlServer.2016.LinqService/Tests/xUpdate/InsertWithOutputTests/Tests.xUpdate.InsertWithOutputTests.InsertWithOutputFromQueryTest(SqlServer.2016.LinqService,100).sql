@@ -244,7 +244,7 @@ DECLARE @param Int -- Int32
 SET     @param = 100
 DECLARE @param_1 Int -- Int32
 SET     @param_1 = 100
-DECLARE @param_2 Int -- Int32
+DECLARE @param_2 NVarChar -- String
 SET     @param_2 = 100
 
 INSERT INTO [DestinationTable]
@@ -260,7 +260,7 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param_1,
-	[s].[ValueStr] + Convert(VarChar(100), @param_2)
+	[s].[ValueStr] + Convert(VarChar(11), @param_2)
 FROM
 	[TableWithData] [s]
 WHERE
