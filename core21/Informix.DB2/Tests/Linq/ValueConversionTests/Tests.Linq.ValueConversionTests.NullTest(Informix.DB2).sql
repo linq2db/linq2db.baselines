@@ -81,7 +81,7 @@ SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
 DECLARE @DateTimeNullable Timestamp(16) -- DateTime
-SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
+SET     @DateTimeNullable = TO_DATE('2020-02-29', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -127,7 +127,7 @@ SET     @EnumWithNullDeclarative = 'Value3'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
 DECLARE @DateTimeNullable Timestamp(16) -- DateTime
-SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
+SET     @DateTimeNullable = TO_DATE('2020-02-29', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -219,7 +219,7 @@ SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'Y'
 DECLARE @DateTimeNullable Timestamp(16) -- DateTime
-SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
+SET     @DateTimeNullable = TO_DATE('2020-02-29', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -265,7 +265,7 @@ SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
 DECLARE @DateTimeNullable Timestamp(16) -- DateTime
-SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
+SET     @DateTimeNullable = TO_DATE('2020-02-29', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -357,7 +357,7 @@ SET     @EnumWithNullDeclarative = NULL
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
 DECLARE @DateTimeNullable Timestamp(16) -- DateTime
-SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
+SET     @DateTimeNullable = TO_DATE('2020-02-29', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
@@ -403,7 +403,7 @@ SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'Y'
 DECLARE @DateTimeNullable Timestamp(16) -- DateTime
-SET     @DateTimeNullable = TO_DATE('2020-11-13', '%Y-%m-%d')
+SET     @DateTimeNullable = TO_DATE('2020-02-29', '%Y-%m-%d')
 
 INSERT INTO ValueConversion
 (
