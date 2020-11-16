@@ -17,13 +17,12 @@ FROM
 		SELECT
 			[t2].[month_1] as [year_1],
 			[t2].[year_1] as [year_2],
-			[t2].[int_1]
+			1 as [int_1]
 		FROM
 			(
 				SELECT
 					[t1].[c1] as [month_1],
-					[t1].[c2] as [year_1],
-					1 as [int_1]
+					[t1].[c2] as [year_1]
 				FROM
 					(
 						SELECT
@@ -39,15 +38,9 @@ FROM
 	) [t3]
 UNION
 SELECT
-	[t4].[year_1],
-	[t4].[year_1],
-	[t4].[int_1]
+	Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int),
+	Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int),
+	2
 FROM
-	(
-		SELECT
-			Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int) as [year_1],
-			2 as [int_1]
-		FROM
-			[LinqDataTypes] [_1]
-	) [t4]
+	[LinqDataTypes] [_1]
 
