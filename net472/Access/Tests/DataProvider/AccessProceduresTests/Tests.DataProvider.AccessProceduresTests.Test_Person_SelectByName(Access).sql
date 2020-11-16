@@ -23,10 +23,10 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @firstName_1 VarWChar(6) -- String
-SET     @firstName_1 = 'Jürgen'
-DECLARE @lastName_1 VarWChar(5) -- String
-SET     @lastName_1 = 'König'
+DECLARE @firstName VarWChar(6) -- String
+SET     @firstName = 'Jürgen'
+DECLARE @lastName VarWChar(5) -- String
+SET     @lastName = 'König'
 
 SELECT
 	[_].[FirstName],
@@ -37,5 +37,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] = @firstName_1 AND [_].[LastName] = @lastName_1
+	[_].[FirstName] = @firstName AND [_].[LastName] = @lastName
 
