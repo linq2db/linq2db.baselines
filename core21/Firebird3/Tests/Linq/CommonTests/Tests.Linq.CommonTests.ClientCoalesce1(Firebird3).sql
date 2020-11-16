@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 100
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 100
 
 SELECT
-	Coalesce("p"."Value1", Cast(@p1 as Int))
+	Coalesce("p"."Value1", Cast(@Value1 as Int))
 FROM
 	"Parent" "p"
 
