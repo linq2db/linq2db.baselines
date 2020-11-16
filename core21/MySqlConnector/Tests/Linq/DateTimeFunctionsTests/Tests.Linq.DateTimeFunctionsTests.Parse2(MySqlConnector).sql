@@ -2,14 +2,9 @@
 -- MySqlConnector MySql
 
 SELECT
-	`d`.`c1`
+	Cast(Concat(Cast(Extract(year from `d`.`DateTimeValue`) as CHAR(11)), '-02-24 00:00:00') as DATETIME)
 FROM
-	(
-		SELECT
-			Cast(Concat(Cast(Extract(year from `t`.`DateTimeValue`) as CHAR(11)), '-02-24 00:00:00') as DATETIME) as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `d`
+	`LinqDataTypes` `d`
 WHERE
-	Extract(day from `d`.`c1`) > 0
+	Extract(day from Cast(Concat(Cast(Extract(year from `d`.`DateTimeValue`) as CHAR(11)), '-02-24 00:00:00') as DATETIME)) > 0
 
