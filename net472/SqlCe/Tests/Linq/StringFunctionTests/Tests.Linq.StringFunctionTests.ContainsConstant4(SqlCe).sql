@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s LIKE '%[%'
+	[p].[PersonID] = 1 AND @s LIKE '%[%' ESCAPE '~'
 

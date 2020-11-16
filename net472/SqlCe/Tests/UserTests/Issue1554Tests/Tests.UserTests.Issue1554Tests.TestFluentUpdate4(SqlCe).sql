@@ -36,14 +36,12 @@ BeforeExecute
 -- SqlCe
 DECLARE @ClaimedKeyType NVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	[Issue1554FluentTable]
 SET
 	[Issue1554FluentTable].[ClaimedKeyType] = @ClaimedKeyType,
-	[Issue1554FluentTable].[ClaimedKeyTypeN] = @ClaimedKeyTypeN
+	[Issue1554FluentTable].[ClaimedKeyTypeN] = @ClaimedKeyType
 WHERE
 	[Issue1554FluentTable].[Id] = 0
 
