@@ -26,15 +26,13 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @i  -- Int32
-SET     @i = 0
 DECLARE @id  -- Int32
 SET     @id = 5
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
+	[Diagnosis] = Cast(Length([Patient].[Diagnosis]) as NVarChar(11))
 WHERE
 	[Patient].[PersonID] = @id
 
@@ -44,8 +42,6 @@ DECLARE @id  -- Int32
 SET     @id = 5
 DECLARE @diagnosis NVarChar(3) -- String
 SET     @diagnosis = 'abc'
-DECLARE @i  -- Int32
-SET     @i = 0
 
 INSERT INTO [Patient]
 (
@@ -55,7 +51,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	Cast((Length(@diagnosis) + @i) as NVarChar(11))
+	Cast(Length(@diagnosis) as NVarChar(11))
 )
 
 BeforeExecute
