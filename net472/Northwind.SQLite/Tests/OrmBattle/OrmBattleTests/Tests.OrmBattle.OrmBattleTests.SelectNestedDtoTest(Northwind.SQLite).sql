@@ -81,8 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @OrderDate_1  -- DateTime
-SET     @OrderDate_1 = '1998-01-01'
+DECLARE @OrderDate  -- DateTime
+SET     @OrderDate = '1998-01-01'
 
 SELECT
 	[r].[OrderID],
@@ -90,7 +90,7 @@ SELECT
 	[r].[OrderDate]
 FROM
 	[Orders] [r]
-		INNER JOIN [Customers] [a_Customer] ON ([r].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [r].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON ([r].[CustomerID] = [a_Customer].[CustomerID] OR [r].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 WHERE
-	DateTime([r].[OrderDate]) > DateTime(@OrderDate_1)
+	DateTime([r].[OrderDate]) > DateTime(@OrderDate)
 

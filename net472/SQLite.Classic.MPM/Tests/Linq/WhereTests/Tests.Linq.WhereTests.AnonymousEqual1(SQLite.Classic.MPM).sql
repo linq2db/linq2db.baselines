@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ParentID_1  -- Int32
-SET     @ParentID_1 = 2
-DECLARE @ChildID_1  -- Int32
-SET     @ChildID_1 = 21
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2
+DECLARE @ChildID  -- Int32
+SET     @ChildID = 21
 
 SELECT
 	[ch].[ParentID],
@@ -11,5 +11,5 @@ SELECT
 FROM
 	[Child] [ch]
 WHERE
-	([ch].[ParentID] = @ParentID_1 AND [ch].[ChildID] = @ChildID_1)
+	([ch].[ParentID] = @ParentID AND [ch].[ChildID] = @ChildID)
 

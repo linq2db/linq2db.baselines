@@ -2,14 +2,9 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	Round(Cast([t].[MoneyValue] as Float), 0)
 FROM
-	(
-		SELECT
-			Round(Cast([p].[MoneyValue] as Float), 0) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[c1] <> 0
+	(Round(Cast([t].[MoneyValue] as Float), 0) <> 0 OR Round(Cast([t].[MoneyValue] as Float), 0) IS NULL)
 

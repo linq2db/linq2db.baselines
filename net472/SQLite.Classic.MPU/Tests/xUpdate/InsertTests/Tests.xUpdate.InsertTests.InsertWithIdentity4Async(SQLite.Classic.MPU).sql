@@ -39,8 +39,8 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
-DECLARE @FirstName_1 NVarChar(5) -- String
-SET     @FirstName_1 = 'John0'
+DECLARE @FirstName NVarChar(5) -- String
+SET     @FirstName = 'John0'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -53,7 +53,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName_1 AND [p].[LastName] = 'Shepard'
+	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
 LIMIT @take
 
 BeforeExecute
@@ -89,8 +89,8 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
-DECLARE @FirstName_1 NVarChar(5) -- String
-SET     @FirstName_1 = 'John1'
+DECLARE @FirstName NVarChar(5) -- String
+SET     @FirstName = 'John1'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -103,7 +103,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName_1 AND [p].[LastName] = 'Shepard'
+	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
 LIMIT @take
 
 BeforeExecute
