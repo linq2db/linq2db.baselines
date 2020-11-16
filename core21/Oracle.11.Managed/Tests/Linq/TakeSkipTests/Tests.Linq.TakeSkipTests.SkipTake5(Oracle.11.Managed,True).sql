@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @skip Int32
-SET     @skip = 2
-DECLARE @take Int32
-SET     @take = 5
+SET     @skip = 7
+DECLARE @skip_1 Int32
+SET     @skip_1 = 2
 
 SELECT
 	t3."ParentID",
@@ -15,16 +15,10 @@ FROM
 			t2."ChildID",
 			ROWNUM as RN
 		FROM
-			(
-				SELECT
-					t1."ParentID",
-					t1."ChildID"
-				FROM
-					"Child" t1
-			) t2
+			"Child" t2
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip
 	) t3
 WHERE
-	t3.RN > :skip
+	t3.RN > :skip_1
 

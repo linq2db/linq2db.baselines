@@ -34,12 +34,7 @@ FROM
 					t1."ParentID",
 					ROWNUM as RN
 				FROM
-					(
-						SELECT
-							p."ParentID"
-						FROM
-							"GrandChild" p
-					) t1
+					"GrandChild" t1
 				WHERE
 					ROWNUM <= 15
 			) t2
