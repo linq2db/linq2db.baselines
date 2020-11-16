@@ -26,7 +26,7 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	[t2].[c1],
+	N'Title',
 	[t2].[Title],
 	[t2].[Value_1]
 FROM
@@ -45,7 +45,6 @@ FROM
 							[selectParam].[Title] = [$it].[Title]
 					) [t1]
 			) as [Value_1],
-			N'Title' as [c1],
 			[selectParam].[Title]
 		FROM
 			[odata_person] [selectParam]

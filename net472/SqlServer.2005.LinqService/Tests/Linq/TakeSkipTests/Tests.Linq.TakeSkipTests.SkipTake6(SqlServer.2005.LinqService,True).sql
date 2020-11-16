@@ -21,8 +21,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 12
-DECLARE @take Int -- Int32
-SET     @take = 3
+DECLARE @skip_1 Int -- Int32
+SET     @skip_1 = 15
 
 SELECT
 	[c_1].[ParentID],
@@ -41,8 +41,8 @@ FROM
 					[GrandChild] [p]
 			) [t1]
 		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
-	) [t2]
+			[t1].[RN] > @skip AND [t1].[RN] <= @skip_1
+	) [t1_1]
 WHERE
-	[c_1].[ParentID] = [t2].[ParentID]
+	[c_1].[ParentID] = [t1_1].[ParentID]
 

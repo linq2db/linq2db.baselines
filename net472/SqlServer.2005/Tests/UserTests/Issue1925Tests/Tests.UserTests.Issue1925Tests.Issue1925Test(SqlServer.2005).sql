@@ -15,20 +15,48 @@ INSERT INTO [SampleClass]
 	[Id],
 	[Value]
 )
-VALUES
-(
-	1,
-	N'6'
-)
+SELECT 1,N'6' UNION ALL
+SELECT 2,N'x[0-9]x' UNION ALL
+SELECT 3,N'x[0x' UNION ALL
+SELECT 4,N'x[]x' UNION ALL
+SELECT 5,N'x]' UNION ALL
+SELECT 6,N']x'
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT
-	[t1].[Id],
-	[t1].[Value]
+SELECT TOP (@take)
+	[r].[Id]
 FROM
-	[SampleClass] [t1]
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'%~]' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[r].[Id]
+FROM
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'~]%' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[r].[Id]
+FROM
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'%-%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2005
@@ -39,12 +67,23 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%[[]0%'
+	[r].[Value] LIKE N'%~[~]%' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[r].[Id],
+	[r].[Value]
+FROM
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'%~[0%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @asParamUnterm NVarChar(4000) -- String
-SET     @asParamUnterm = N'%[[]0%'
+SET     @asParamUnterm = N'%~[0%'
 
 SELECT
 	[r].[Id],
@@ -63,7 +102,18 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%[0-9]%'
+	[r].[Value] LIKE N'%~[0-9~]%' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[r].[Id],
+	[r].[Value]
+FROM
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'%6%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2005

@@ -59,8 +59,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 NVarChar(4000) -- String
-SET     @FirstName_1 = N'InsertOrReplaceColumnFilter'
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'InsertOrReplaceColumnFilter'
 
 SELECT TOP (@take)
 	[x].[ID],
@@ -70,7 +70,7 @@ SELECT TOP (@take)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlServer.2005
@@ -120,8 +120,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 NVarChar(4000) -- String
-SET     @FirstName_1 = N'InsertOrReplaceColumnFilter'
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'InsertOrReplaceColumnFilter'
 
 SELECT TOP (@take)
 	[x].[ID],
@@ -131,7 +131,7 @@ SELECT TOP (@take)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlServer.2005
