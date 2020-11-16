@@ -43,8 +43,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_2 Text -- AnsiString
-SET     @BoolValue_2 = 'N'
+DECLARE @BoolValue_1 Text -- AnsiString
+SET     @BoolValue_1 = 'N'
 
 SELECT
 	t."Id",
@@ -54,7 +54,7 @@ SELECT
 FROM
 	"ValueConversion" t
 WHERE
-	t."BoolValue" = :BoolValue_2
+	t."BoolValue" = :BoolValue_1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

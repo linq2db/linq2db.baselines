@@ -17,14 +17,9 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	Abs(p."MoneyValue")
 FROM
-	(
-		SELECT
-			Abs(p."MoneyValue") as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	t.c1 > 0
+	Abs(p."MoneyValue") > 0
 
