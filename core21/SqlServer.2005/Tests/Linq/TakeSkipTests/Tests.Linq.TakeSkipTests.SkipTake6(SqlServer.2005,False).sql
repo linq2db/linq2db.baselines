@@ -36,7 +36,7 @@ FROM
 			) [t1]
 		WHERE
 			[t1].[RN] > 12 AND [t1].[RN] <= 15
-	) [t2]
+	) [t1_1]
 WHERE
-	[c_1].[ParentID] = [t2].[ParentID]
+	[c_1].[ParentID] = [t1_1].[ParentID]
 
