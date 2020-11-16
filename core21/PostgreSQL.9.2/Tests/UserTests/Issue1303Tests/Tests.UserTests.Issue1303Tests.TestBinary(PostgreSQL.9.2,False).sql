@@ -47,8 +47,8 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @Array_2 Bytea(3) -- Binary
-SET     @Array_2 = E'\\x010203'
+DECLARE @Array_1 Bytea(3) -- Binary
+SET     @Array_1 = E'\\x010203'
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -59,13 +59,13 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = :Array_2
+	t1."Array" = :Array_1
 LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @Binary_2 Bytea(2) -- Binary
-SET     @Binary_2 = E'\\x0405'
+DECLARE @Binary_1 Bytea(2) -- Binary
+SET     @Binary_1 = E'\\x0405'
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -76,7 +76,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = :Binary_2
+	t1."Binary" = :Binary_1
 LIMIT :take
 
 BeforeExecute
