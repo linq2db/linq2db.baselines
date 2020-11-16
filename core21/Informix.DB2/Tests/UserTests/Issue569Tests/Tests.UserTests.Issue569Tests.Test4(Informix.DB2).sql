@@ -8,8 +8,7 @@ FROM
 	(
 		SELECT
 			child_1.ParentID,
-			child_1.ChildID,
-			parent_2.ParentID as ParentID_1
+			child_1.ChildID
 		FROM
 			Parent parent_2,
 			Child child_1

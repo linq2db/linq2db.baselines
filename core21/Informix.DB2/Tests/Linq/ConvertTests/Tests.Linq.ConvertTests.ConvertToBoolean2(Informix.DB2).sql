@@ -2,18 +2,12 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.c1
+	CASE
+		WHEN p.MoneyValue <> 4.5 THEN 't'
+		ELSE 'f'
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN t.MoneyValue - 4.5 = 0
-					THEN 'f'
-				ELSE 't'
-			END as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes p
 WHERE
-	NOT (p.c1 IS NOT NULL AND p.c1 = 't')
+	p.MoneyValue = 4.5
 

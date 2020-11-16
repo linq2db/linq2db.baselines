@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	Cast(t.MoneyValue as Float) * 57.295779513082323
 FROM
-	(
-		SELECT
-			Cast(p.MoneyValue as Float) * 57.295779513082323 as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes t
 WHERE
-	t.c1 <> 0.10000000000000001
+	Cast(t.MoneyValue as Float) * 57.295779513082323 <> 0.10000000000000001
 

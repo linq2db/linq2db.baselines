@@ -12,10 +12,10 @@ GROUP BY
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ParentID_1 Integer(4) -- Int32
-SET     @ParentID_1 = 1
-DECLARE @ChildID_1 Integer(4) -- Int32
-SET     @ChildID_1 = 11
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1
+DECLARE @ChildID Integer(4) -- Int32
+SET     @ChildID = 11
 
 SELECT
 	keyParam.ParentID,
@@ -24,5 +24,5 @@ SELECT
 FROM
 	GrandChild keyParam
 WHERE
-	(keyParam.ParentID = @ParentID_1 AND keyParam.ChildID = @ChildID_1)
+	(keyParam.ParentID = @ParentID AND keyParam.ChildID = @ChildID)
 
