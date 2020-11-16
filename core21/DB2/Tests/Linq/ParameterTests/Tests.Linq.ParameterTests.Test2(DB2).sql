@@ -2,6 +2,8 @@
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 1
+DECLARE @id1_1 Integer(4) -- Int32
+SET     @id1_1 = 1
 DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 10000
 
@@ -11,7 +13,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	(("p"."ParentID" = @id1 OR "p"."ParentID" >= @id1) OR "p"."ParentID" >= @id2)
+	(("p"."ParentID" = @id1 OR "p"."ParentID" >= @id1_1) OR "p"."ParentID" >= @id2)
 ORDER BY
 	"p"."ParentID"
 FETCH FIRST 1 ROWS ONLY
@@ -20,6 +22,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 2
+DECLARE @id1_1 Integer(4) -- Int32
+SET     @id1_1 = 2
 DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 10000
 
@@ -29,7 +33,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	(("p"."ParentID" = @id1 OR "p"."ParentID" >= @id1) OR "p"."ParentID" >= @id2)
+	(("p"."ParentID" = @id1 OR "p"."ParentID" >= @id1_1) OR "p"."ParentID" >= @id2)
 ORDER BY
 	"p"."ParentID"
 FETCH FIRST 1 ROWS ONLY

@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."c1"
+	Round("t"."MoneyValue", 0)
 FROM
-	(
-		SELECT
-			Round("p"."MoneyValue", 0) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	"t"."c1" <> 0
+	Round("t"."MoneyValue", 0) <> 0
 

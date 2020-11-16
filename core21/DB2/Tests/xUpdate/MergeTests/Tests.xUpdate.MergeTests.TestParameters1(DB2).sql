@@ -228,10 +228,12 @@ DECLARE @Val4 Integer(4) -- Int32
 SET     @Val4 = 34
 DECLARE @Val1 Integer(4) -- Int32
 SET     @Val1 = 1
-DECLARE @Val3 Integer(4) -- Int32
-SET     @Val3 = 3
 DECLARE @Val5_1 Integer(4) -- Int32
 SET     @Val5_1 = 5
+DECLARE @Val3 Integer(4) -- Int32
+SET     @Val3 = 3
+DECLARE @Val5_2 Integer(4) -- Int32
+SET     @Val5_2 = 5
 DECLARE @Field3 Integer(4) -- Int32
 SET     @Field3 = 125
 
@@ -261,13 +263,13 @@ INSERT
 )
 VALUES
 (
-	"Source"."OtherId" + @Val5,
+	"Source"."OtherId" + @Val5_1,
 	"Source"."Field1"
 )
 
 WHEN MATCHED AND "Source"."OtherId" = @Val3 THEN
 UPDATE
 SET
-	"Target"."Field4" = @Val5_1
+	"Target"."Field4" = @Val5_2
 WHEN MATCHED AND "Target"."Field3" = @Field3 THEN DELETE
 

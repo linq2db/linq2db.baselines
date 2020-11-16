@@ -98,8 +98,8 @@ FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Date1_1 Date(20)
-SET     @Date1_1 = '1234-05-06-00.00.00.000000'
+DECLARE @Date1 Date(20)
+SET     @Date1 = '1234-05-06-00.00.00.000000'
 
 SELECT
 	"_"."Id",
@@ -122,13 +122,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."Date1" = @Date1_1
+	"_"."Date1" = @Date1
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Date2_1 Timestamp(20) -- DateTime
-SET     @Date2_1 = '1234-05-07-00.00.00.000000'
+DECLARE @Date2 Timestamp(20) -- DateTime
+SET     @Date2 = '1234-05-07-00.00.00.000000'
 
 SELECT
 	"_"."Id",
@@ -151,13 +151,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."Date2" = @Date2_1
+	"_"."Date2" = @Date2
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Time_2 Time(6)
-SET     @Time_2 = '21:02:03'
+DECLARE @Time_1 Time(6)
+SET     @Time_1 = '21:02:03'
 
 SELECT
 	"_"."Id",
@@ -180,13 +180,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."Time" = @Time_2
+	"_"."Time" = @Time_1
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp0_1 Timestamp(20) -- DateTime
-SET     @TimeStamp0_1 = '1000-01-10-02.20.31.000000'
+DECLARE @TimeStamp0 Timestamp(20) -- DateTime
+SET     @TimeStamp0 = '1000-01-10-02.20.31.000000'
 
 SELECT
 	"_"."Id",
@@ -209,13 +209,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp0" = @TimeStamp0_1
+	"_"."TimeStamp0" = @TimeStamp0
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp1_1 Timestamp(20) -- DateTime
-SET     @TimeStamp1_1 = '1000-01-10-02.20.30.100000'
+DECLARE @TimeStamp1 Timestamp(20) -- DateTime
+SET     @TimeStamp1 = '1000-01-10-02.20.30.100000'
 
 SELECT
 	"_"."Id",
@@ -238,13 +238,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp1" = @TimeStamp1_1
+	"_"."TimeStamp1" = @TimeStamp1
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp2_1 Timestamp(20) -- DateTime
-SET     @TimeStamp2_1 = '1000-01-10-02.20.30.010000'
+DECLARE @TimeStamp2 Timestamp(20) -- DateTime
+SET     @TimeStamp2 = '1000-01-10-02.20.30.010000'
 
 SELECT
 	"_"."Id",
@@ -267,13 +267,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp2" = @TimeStamp2_1
+	"_"."TimeStamp2" = @TimeStamp2
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp3_1 Timestamp(20) -- DateTime
-SET     @TimeStamp3_1 = '1000-01-10-02.20.30.001000'
+DECLARE @TimeStamp3 Timestamp(20) -- DateTime
+SET     @TimeStamp3 = '1000-01-10-02.20.30.001000'
 
 SELECT
 	"_"."Id",
@@ -296,13 +296,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp3" = @TimeStamp3_1
+	"_"."TimeStamp3" = @TimeStamp3
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp4_1 Timestamp(20) -- DateTime
-SET     @TimeStamp4_1 = '1000-01-10-02.20.30.001100'
+DECLARE @TimeStamp4 Timestamp(20) -- DateTime
+SET     @TimeStamp4 = '1000-01-10-02.20.30.001100'
 
 SELECT
 	"_"."Id",
@@ -325,13 +325,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp4" = @TimeStamp4_1
+	"_"."TimeStamp4" = @TimeStamp4
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp5_1 Timestamp(20) -- DateTime
-SET     @TimeStamp5_1 = '1000-01-10-02.20.30.001010'
+DECLARE @TimeStamp5 Timestamp(20) -- DateTime
+SET     @TimeStamp5 = '1000-01-10-02.20.30.001010'
 
 SELECT
 	"_"."Id",
@@ -354,13 +354,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp5" = @TimeStamp5_1
+	"_"."TimeStamp5" = @TimeStamp5
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp6_1 Timestamp(20) -- DateTime
-SET     @TimeStamp6_1 = '1000-01-10-02.20.30.001001'
+DECLARE @TimeStamp6 Timestamp(20) -- DateTime
+SET     @TimeStamp6 = '1000-01-10-02.20.30.001001'
 
 SELECT
 	"_"."Id",
@@ -383,13 +383,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp6" = @TimeStamp6_1
+	"_"."TimeStamp6" = @TimeStamp6
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp7_1 Timestamp(20) -- DateTime
-SET     @TimeStamp7_1 = '1000-01-10-02.20.30.001000'
+DECLARE @TimeStamp7 Timestamp(20) -- DateTime
+SET     @TimeStamp7 = '1000-01-10-02.20.30.001000'
 
 SELECT
 	"_"."Id",
@@ -412,13 +412,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp7" = @TimeStamp7_1
+	"_"."TimeStamp7" = @TimeStamp7
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp8_1 Timestamp(20) -- DateTime
-SET     @TimeStamp8_1 = 1000-01-10-02.20.30.00000001
+DECLARE @TimeStamp8 Timestamp(20) -- DateTime
+SET     @TimeStamp8 = 1000-01-10-02.20.30.00000001
 
 SELECT
 	"_"."Id",
@@ -441,13 +441,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp8" = @TimeStamp8_1
+	"_"."TimeStamp8" = @TimeStamp8
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp9_1 Timestamp(20) -- DateTime
-SET     @TimeStamp9_1 = 1000-01-10-02.20.30.000000001
+DECLARE @TimeStamp9 Timestamp(20) -- DateTime
+SET     @TimeStamp9 = 1000-01-10-02.20.30.000000001
 
 SELECT
 	"_"."Id",
@@ -470,13 +470,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp9" = @TimeStamp9_1
+	"_"."TimeStamp9" = @TimeStamp9
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp10_1 Timestamp(20) -- DateTime
-SET     @TimeStamp10_1 = 1000-01-10-02.20.30.0000000001
+DECLARE @TimeStamp10 Timestamp(20) -- DateTime
+SET     @TimeStamp10 = 1000-01-10-02.20.30.0000000001
 
 SELECT
 	"_"."Id",
@@ -499,13 +499,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp10" = @TimeStamp10_1
+	"_"."TimeStamp10" = @TimeStamp10
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp11_1 Timestamp(20) -- DateTime
-SET     @TimeStamp11_1 = 1000-01-10-02.20.30.00000000001
+DECLARE @TimeStamp11 Timestamp(20) -- DateTime
+SET     @TimeStamp11 = 1000-01-10-02.20.30.00000000001
 
 SELECT
 	"_"."Id",
@@ -528,13 +528,13 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp11" = @TimeStamp11_1
+	"_"."TimeStamp11" = @TimeStamp11
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp12_1 Timestamp(20) -- DateTime
-SET     @TimeStamp12_1 = 1000-01-10-02.20.30.000000000001
+DECLARE @TimeStamp12 Timestamp(20) -- DateTime
+SET     @TimeStamp12 = 1000-01-10-02.20.30.000000000001
 
 SELECT
 	"_"."Id",
@@ -557,7 +557,7 @@ SELECT
 FROM
 	"TestTimeTypes" "_"
 WHERE
-	"_"."TimeStamp12" = @TimeStamp12_1
+	"_"."TimeStamp12" = @TimeStamp12
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
