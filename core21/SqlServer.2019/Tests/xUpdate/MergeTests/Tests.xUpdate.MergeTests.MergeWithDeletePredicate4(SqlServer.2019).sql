@@ -68,6 +68,8 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
+DECLARE @patient Int -- Int32
+SET     @patient = 1
 DECLARE @patient_1 Int -- Int32
 SET     @patient_1 = 1
 
@@ -83,7 +85,7 @@ USING (
 		[Person] [t]
 			LEFT JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
 	WHERE
-		[a_Patient].[PersonID] = @patient_1
+		[a_Patient].[PersonID] = @patient
 ) [Source]
 (
 	[ID],
@@ -129,6 +131,8 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
+DECLARE @patient Int -- Int32
+SET     @patient = 2
 DECLARE @patient_1 Int -- Int32
 SET     @patient_1 = 2
 
@@ -144,7 +148,7 @@ USING (
 		[Person] [t]
 			LEFT JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
 	WHERE
-		[a_Patient].[PersonID] = @patient_1
+		[a_Patient].[PersonID] = @patient
 ) [Source]
 (
 	[ID],
