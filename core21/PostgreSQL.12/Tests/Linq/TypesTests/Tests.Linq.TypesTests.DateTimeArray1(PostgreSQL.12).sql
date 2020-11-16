@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @DateTimeValue_1 Timestamp -- DateTime
-SET     @DateTimeValue_1 = '2001-01-11 01:11:21.100'::timestamp
+DECLARE @DateTimeValue Timestamp -- DateTime
+SET     @DateTimeValue = '2001-01-11 01:11:21.100'::timestamp
 
 SELECT
 	t."ID",
@@ -17,5 +17,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" IN (:DateTimeValue_1)
+	t."DateTimeValue" IN (:DateTimeValue)
 
