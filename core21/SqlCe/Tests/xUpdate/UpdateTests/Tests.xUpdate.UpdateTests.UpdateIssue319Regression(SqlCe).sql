@@ -36,6 +36,8 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500
 DECLARE @id Int -- Int32
 SET     @id = 100500
+DECLARE @id_1 Int -- Int32
+SET     @id_1 = 100500
 
 UPDATE
 	[Parent]
@@ -48,7 +50,6 @@ WHERE
 		FROM
 			(
 				SELECT
-					[_1].[Value1],
 					[_1].[ParentID]
 				FROM
 					[Parent] [_1]
@@ -61,7 +62,7 @@ WHERE
 								[_].[ParentID] = @id
 						) [t1] ON 1=1
 				WHERE
-					[_1].[ParentID] = @id AND [t1].[cnt] > 0
+					[_1].[ParentID] = @id_1 AND [t1].[cnt] > 0
 			) [t2]
 		WHERE
 			[Parent].[ParentID] = [t2].[ParentID]
