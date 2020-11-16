@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t].[DateTimeValue]
+	[d].[DateTimeValue]
 FROM
-	[LinqDataTypes] [t]
+	[LinqDataTypes] [d]
 WHERE
-	DatePart('d', [t].[DateTimeValue]) > 0
+	DatePart('d', [d].[DateTimeValue]) > 0
 

@@ -4,21 +4,7 @@
 SELECT
 	[t1].[Count_1]
 FROM
-	(
-		SELECT
-			[p3].[ID] + 1 as [ID],
-			[p3].[ParentID]
-		FROM
-			(
-				SELECT
-					[p2].[ParentID] + 1 as [ID],
-					[p2].[ParentID]
-				FROM
-					[Parent] [p2]
-			) [p3]
-		WHERE
-			[p3].[ID] > 0
-	) [p1]
+	[Parent] [p2]
 		LEFT JOIN (
 			SELECT
 				Count(*) as [Count_1],
@@ -27,7 +13,7 @@ FROM
 				[Child] [c_1]
 			GROUP BY
 				[c_1].[ParentID]
-		) [t1] ON ([t1].[ParentID] + 1 < [p1].[ID] AND [t1].[ParentID] + 1 < [p1].[ID] AND [p1].[ParentID] = [t1].[ParentID])
+		) [t1] ON ([t1].[ParentID] + 1 < [p2].[ParentID] + 2 AND [t1].[ParentID] + 1 < [p2].[ParentID] + 2 AND [p2].[ParentID] = [t1].[ParentID])
 WHERE
-	[p1].[ID] > 0
+	[p2].[ParentID] > -2 AND [p2].[ParentID] > -1
 

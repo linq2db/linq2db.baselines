@@ -19,10 +19,17 @@ DECLARE @p1 NVarChar(1) -- String
 SET     @p1 = '1'
 
 SELECT
-	[selectParam].[ParentID],
-	[selectParam].[ChildID]
+	[underscore].[ParentID],
+	[underscore].[ChildID]
 FROM
-	[Child] [selectParam]
+	(
+		SELECT
+			Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [Key_1],
+			[selectParam].[ParentID],
+			[selectParam].[ChildID]
+		FROM
+			[Child] [selectParam]
+	) [underscore]
 WHERE
-	Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') = ?
+	[underscore].[Key_1] = ?
 
