@@ -9,7 +9,7 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'UpdateComplex%'
+	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -106,5 +106,5 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'UpdateComplex%'
+	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 

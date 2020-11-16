@@ -31,7 +31,7 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Field1 Text -- String
+DECLARE @Field1 Unknown -- Object
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
