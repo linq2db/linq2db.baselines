@@ -5,7 +5,7 @@ DELETE FROM [Person]
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%'
+	[_].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -35,7 +35,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%'
+	[_].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -44,5 +44,5 @@ DELETE FROM [Person]
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%'
+	[_].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 

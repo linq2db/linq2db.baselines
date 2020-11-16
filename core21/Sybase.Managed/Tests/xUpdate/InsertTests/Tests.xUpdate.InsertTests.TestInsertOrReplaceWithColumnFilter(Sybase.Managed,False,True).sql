@@ -56,8 +56,8 @@ COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @FirstName_1 UniVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName UniVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP 1
 	[x].[ID],
@@ -67,7 +67,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -121,8 +121,8 @@ COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @FirstName_1 UniVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName UniVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP 1
 	[x].[ID],
@@ -132,7 +132,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- Sybase.Managed Sybase

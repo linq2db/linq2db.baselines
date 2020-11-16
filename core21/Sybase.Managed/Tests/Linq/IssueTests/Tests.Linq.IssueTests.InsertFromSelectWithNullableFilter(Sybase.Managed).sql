@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p1 SmallInt -- Int16
+DECLARE @p1 Integer -- Int32
 SET     @p1 = 1234
 
 INSERT INTO [AllTypes]

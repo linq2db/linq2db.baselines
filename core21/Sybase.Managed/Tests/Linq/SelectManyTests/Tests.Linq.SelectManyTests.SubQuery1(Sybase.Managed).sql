@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 1
+DECLARE @id Integer -- Int32
+SET     @id = 1
 
 SELECT
 	[p1].[PersonID],
@@ -10,5 +10,5 @@ FROM
 	[Person] [p1],
 	[Person] [p]
 WHERE
-	[p1].[PersonID] = [p].[PersonID] AND [p].[PersonID] = @id_1
+	[p1].[PersonID] = [p].[PersonID] AND [p].[PersonID] = @id
 
