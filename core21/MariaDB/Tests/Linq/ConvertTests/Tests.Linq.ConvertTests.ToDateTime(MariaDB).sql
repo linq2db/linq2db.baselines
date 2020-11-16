@@ -2,14 +2,9 @@
 -- MariaDB MySql.Official MySql
 
 SELECT
-	`p`.`c1`
+	Cast(Concat(Cast(Extract(year from `p`.`DateTimeValue`) as CHAR(11)), '-01-01 00:00:00') as DATETIME)
 FROM
-	(
-		SELECT
-			Cast(Concat(Cast(Extract(year from `t`.`DateTimeValue`) as CHAR(11)), '-01-01 00:00:00') as DATETIME) as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `p`
+	`LinqDataTypes` `p`
 WHERE
-	Extract(day from `p`.`c1`) > 0
+	Extract(day from Cast(Concat(Cast(Extract(year from `p`.`DateTimeValue`) as CHAR(11)), '-01-01 00:00:00') as DATETIME)) > 0
 
