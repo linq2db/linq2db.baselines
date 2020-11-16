@@ -22,8 +22,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @FirstName_1 Varchar2(18) -- String
-SET     @FirstName_1 = 'InsertColumnFilter'
+DECLARE @FirstName Varchar2(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -36,7 +36,7 @@ SELECT
 FROM
 	"Person" x
 WHERE
-	x."FirstName" = :FirstName_1
+	x."FirstName" = :FirstName
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute

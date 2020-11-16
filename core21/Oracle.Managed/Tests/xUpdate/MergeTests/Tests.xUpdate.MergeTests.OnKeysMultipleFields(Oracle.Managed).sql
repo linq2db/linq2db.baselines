@@ -231,7 +231,7 @@ USING (
 	WHERE
 		s."Field1" IS NOT NULL AND s."Field2" IS NOT NULL
 ) "Source"
-ON ((Target."Field1" IS NULL AND "Source"."Field1" IS NULL OR Target."Field1" = "Source"."Field1") AND (Target."Field2" IS NULL AND "Source"."Field2" IS NULL OR Target."Field2" = "Source"."Field2"))
+ON ((Target."Field1" = "Source"."Field1" OR Target."Field1" IS NULL AND "Source"."Field1" IS NULL) AND (Target."Field2" = "Source"."Field2" OR Target."Field2" IS NULL AND "Source"."Field2" IS NULL))
 
 WHEN MATCHED THEN
 UPDATE

@@ -9,6 +9,6 @@ SELECT
 	LISTAGG(c_1."ChildID", '..') WITHIN GROUP (ORDER BY c_1."ParentID" DESC, a_ParentTest."Value1", p."Value1" DESC)
 FROM
 	"Parent" p
-		LEFT JOIN "Parent" a_ParentTest ON p."ParentID" = a_ParentTest."ParentID" AND (p."Value1" IS NULL AND a_ParentTest."Value1" IS NULL OR p."Value1" = a_ParentTest."Value1")
+		LEFT JOIN "Parent" a_ParentTest ON p."ParentID" = a_ParentTest."ParentID" AND (p."Value1" = a_ParentTest."Value1" OR p."Value1" IS NULL AND a_ParentTest."Value1" IS NULL)
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 

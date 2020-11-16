@@ -2,14 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t."c1"
+	Cast(Cast(Floor(t."MoneyValue") as Int) as Float) * 57.295779513082323D
 FROM
-	(
-		SELECT
-			Cast(Cast(Floor(p."MoneyValue") as Int) as Float) * 57.295779513082323D as "c1"
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" t
 WHERE
-	(Cast(t."c1" as Float) IS NULL OR Cast(t."c1" as Float) <> 0.10000000000000001D)
+	(Cast((Cast(Cast(Floor(t."MoneyValue") as Int) as Float) * 57.295779513082323D) as Float) <> 0.10000000000000001D OR Cast((Cast(Cast(Floor(t."MoneyValue") as Int) as Float) * 57.295779513082323D) as Float) IS NULL)
 
