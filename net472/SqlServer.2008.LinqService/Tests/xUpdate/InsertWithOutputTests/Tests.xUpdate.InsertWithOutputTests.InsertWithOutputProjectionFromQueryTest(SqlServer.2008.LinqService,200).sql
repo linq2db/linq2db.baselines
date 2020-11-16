@@ -241,7 +241,7 @@ CREATE TABLE [DestinationTable]
 BeforeExecute
 -- SqlServer.2008
 DECLARE @param Int -- Int32
-SET     @param = 200
+SET     @param = 300
 
 INSERT INTO [DestinationTable]
 (
@@ -253,7 +253,7 @@ OUTPUT
 	[INSERTED].[Id] + 1,
 	[INSERTED].[ValueStr] + Convert(VarChar(11), 1)
 SELECT
-	[s].[Id] + 100 + @param,
+	[s].[Id] + @param,
 	[s].[Value] + 100,
 	[s].[ValueStr] + Convert(VarChar(11), 100)
 FROM

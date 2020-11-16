@@ -55,15 +55,7 @@ SELECT
 FROM
 	[Transactions] [t]
 WHERE
-	(CASE
-		WHEN [t].[TransactionDate] > @TransactionDate
-			THEN 1
-		ELSE 0
-	END = 1 AND CASE
-		WHEN [t].[TransactionDate] > @TransactionDate
-			THEN 1
-		ELSE 0
-	END IS NOT NULL)
+	[t].[TransactionDate] > @TransactionDate
 
 BeforeExecute
 -- SqlServer.2008

@@ -45,8 +45,8 @@ BeforeExecute
 -- SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 1001
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
 
 SELECT TOP (@take)
 	[p].[ParentID],
@@ -54,7 +54,7 @@ SELECT TOP (@take)
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @ParentID_1
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- SqlServer.2008

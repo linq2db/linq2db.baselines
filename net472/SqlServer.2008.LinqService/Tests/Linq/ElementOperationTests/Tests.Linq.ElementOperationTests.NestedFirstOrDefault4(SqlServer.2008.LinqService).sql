@@ -4,8 +4,8 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[t1_1].[ParentID],
+	[t1_1].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
@@ -24,5 +24,5 @@ FROM
 				) [t1]
 			ORDER BY
 				[t1].[ChildID]
-		) [t2]
+		) [t1_1]
 
