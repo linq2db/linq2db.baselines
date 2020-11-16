@@ -12,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND NOT (`p`.`MiddleName` IS NOT NULL AND `p`.`PersonID` = @n)
+	`p`.`PersonID` = 1 AND (`p`.`MiddleName` IS NULL OR `p`.`PersonID` <> @n)
 
