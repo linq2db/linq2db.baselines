@@ -106,8 +106,8 @@ ORDER BY
 
 BeforeExecute
 -- Northwind SqlServer.2017
-DECLARE @OrderID_1 Int -- Int32
-SET     @OrderID_1 = 10248
+DECLARE @OrderID Int -- Int32
+SET     @OrderID = 10248
 
 SELECT
 	[o].[ShipCountry],
@@ -127,5 +127,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[OrderID] = @OrderID_1
+	[o].[OrderID] = @OrderID
 

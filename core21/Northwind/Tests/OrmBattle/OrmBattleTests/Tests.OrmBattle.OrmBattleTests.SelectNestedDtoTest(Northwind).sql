@@ -81,8 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind SqlServer.2017
-DECLARE @OrderDate_1 DateTime2
-SET     @OrderDate_1 = '1998-01-01T00:00:00'
+DECLARE @OrderDate DateTime2
+SET     @OrderDate = '1998-01-01T00:00:00'
 
 SELECT
 	[r].[OrderID],
@@ -90,7 +90,7 @@ SELECT
 	[r].[OrderDate]
 FROM
 	[Orders] [r]
-		INNER JOIN [Customers] [a_Customer] ON ([r].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [r].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON ([r].[CustomerID] = [a_Customer].[CustomerID] OR [r].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 WHERE
-	[r].[OrderDate] > @OrderDate_1
+	[r].[OrderDate] > @OrderDate
 

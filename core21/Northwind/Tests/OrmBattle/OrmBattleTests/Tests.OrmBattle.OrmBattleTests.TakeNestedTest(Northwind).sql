@@ -100,7 +100,7 @@ SELECT
 	[detail].[OrderID]
 FROM
 	[Customers] [c_1]
-		INNER JOIN [Orders] [detail] ON ([c_1].[CustomerID] IS NULL AND [detail].[CustomerID] IS NULL OR [c_1].[CustomerID] = [detail].[CustomerID])
+		INNER JOIN [Orders] [detail] ON ([c_1].[CustomerID] = [detail].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [detail].[CustomerID] IS NULL)
 ORDER BY
 	[detail].[OrderDate] DESC
 
