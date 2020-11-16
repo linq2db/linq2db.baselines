@@ -28,8 +28,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @gender_1 NChar(1) -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender NChar(1) -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	[_].[FirstName],
@@ -44,8 +44,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @gender_1 NChar(1) -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender NChar(1) -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	[_].[FirstName],

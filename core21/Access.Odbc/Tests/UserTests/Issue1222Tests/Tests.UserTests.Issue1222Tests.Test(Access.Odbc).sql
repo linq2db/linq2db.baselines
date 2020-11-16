@@ -35,8 +35,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @parentId Int -- Int32
 SET     @parentId = 111
-DECLARE @parentId Int -- Int32
-SET     @parentId = 111
+DECLARE @parentId_1 Int -- Int32
+SET     @parentId_1 = 111
 
 SELECT
 	[version_1].[inIdMain]
