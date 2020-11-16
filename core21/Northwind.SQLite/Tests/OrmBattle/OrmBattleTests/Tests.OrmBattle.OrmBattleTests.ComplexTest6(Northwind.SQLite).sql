@@ -110,6 +110,6 @@ SELECT
 	[c_1].[OrderID]
 FROM
 	[Customers] [c_2]
-		INNER JOIN [Orders] [c_1] ON ([a_Customer].[CustomerID] IS NULL AND [c_2].[CustomerID] IS NULL OR [a_Customer].[CustomerID] = [c_2].[CustomerID])
-			INNER JOIN [Customers] [a_Customer] ON ([c_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [c_1].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Orders] [c_1] ON ([a_Customer].[CustomerID] = [c_2].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_2].[CustomerID] IS NULL)
+			INNER JOIN [Customers] [a_Customer] ON ([c_1].[CustomerID] = [a_Customer].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 

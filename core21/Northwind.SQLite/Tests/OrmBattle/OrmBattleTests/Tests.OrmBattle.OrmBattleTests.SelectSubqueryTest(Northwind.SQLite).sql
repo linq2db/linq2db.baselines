@@ -103,9 +103,9 @@ FROM
 			[o].[OrderID]
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [o].[CustomerID] = [a_Customer].[CustomerID])
+				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 	) [key_data_result]
-		INNER JOIN [Customers] [_c] ON ([_c].[CustomerID] IS NULL AND [key_data_result].[CustomerID] IS NULL OR [_c].[CustomerID] = [key_data_result].[CustomerID])
+		INNER JOIN [Customers] [_c] ON ([_c].[CustomerID] = [key_data_result].[CustomerID] OR [_c].[CustomerID] IS NULL AND [key_data_result].[CustomerID] IS NULL)
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -115,5 +115,5 @@ SELECT
 	[o].[OrderID]
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 

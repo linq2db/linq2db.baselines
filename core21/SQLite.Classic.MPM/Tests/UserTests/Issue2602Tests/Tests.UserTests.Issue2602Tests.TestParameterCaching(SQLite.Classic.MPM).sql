@@ -18,8 +18,8 @@ CREATE TABLE [EmailAttachment]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id_1  -- Int32
-SET     @Id_1 = 35
+DECLARE @Id  -- Int32
+SET     @Id = 35
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -39,7 +39,7 @@ FROM
 				FROM
 					[Emails] [c_1]
 				WHERE
-					[c_1].[Id] = @Id_1
+					[c_1].[Id] = @Id
 				LIMIT @take
 			) [t1]
 	) [lw_Email]
@@ -47,8 +47,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id_1  -- Int32
-SET     @Id_1 = 35
+DECLARE @Id  -- Int32
+SET     @Id = 35
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -57,13 +57,13 @@ SELECT
 FROM
 	[Emails] [c_1]
 WHERE
-	[c_1].[Id] = @Id_1
+	[c_1].[Id] = @Id
 LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id_1  -- Int32
-SET     @Id_1 = 36
+DECLARE @Id  -- Int32
+SET     @Id = 36
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -83,7 +83,7 @@ FROM
 				FROM
 					[Emails] [c_1]
 				WHERE
-					[c_1].[Id] = @Id_1
+					[c_1].[Id] = @Id
 				LIMIT @take
 			) [t1]
 	) [lw_Email]
@@ -91,8 +91,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id_1  -- Int32
-SET     @Id_1 = 36
+DECLARE @Id  -- Int32
+SET     @Id = 36
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -101,7 +101,7 @@ SELECT
 FROM
 	[Emails] [c_1]
 WHERE
-	[c_1].[Id] = @Id_1
+	[c_1].[Id] = @Id
 LIMIT @take
 
 BeforeExecute
