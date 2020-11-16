@@ -63,7 +63,7 @@ SET     @take = 1
 
 SELECT
 	[a_Other].[StrValue],
-	[a_Other].[StrValue] + N'_A_C',
+	[a_Other].[StrValue_1] + N'_C',
 	[a_Other].[Id]
 FROM
 	[SomeEntity] [e]

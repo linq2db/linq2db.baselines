@@ -20,13 +20,13 @@ BeforeExecute
 -- SqlServer.2017
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID_1 Int -- Int32
-SET     @ChildID_1 = 11
+DECLARE @ChildID Int -- Int32
+SET     @ChildID = 11
 
 SELECT
 	[elemParam].[ChildID]
 FROM
 	[GrandChild] [elemParam]
 WHERE
-	([elemParam].[ParentID] + 1 = @ParentID AND [elemParam].[ChildID] = @ChildID_1)
+	([elemParam].[ParentID] + 1 = @ParentID AND [elemParam].[ChildID] = @ChildID)
 
