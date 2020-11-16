@@ -10,7 +10,7 @@ SET
 		FROM
 			[Parent] [x]
 		WHERE
-			[a_Table1].[ID] = [x].[ParentID] AND NOT ([x].[Value1] IS NOT NULL AND [x].[Value1] = 1)
+			[a_Table1].[ID] = [x].[ParentID] AND ([x].[Value1] <> 1 OR [x].[Value1] IS NULL)
 	)) THEN 1 ELSE 0 END
 FROM
 	[Parent] [x_1]
