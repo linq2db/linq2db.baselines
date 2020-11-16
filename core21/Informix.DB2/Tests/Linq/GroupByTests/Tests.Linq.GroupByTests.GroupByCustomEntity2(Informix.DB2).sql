@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			c_1.ParentID,
-			4 as RandValue
+			2 as RandValue
 		FROM
 			Child c_1
 	) t1
