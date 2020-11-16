@@ -15,6 +15,5 @@ FROM
 			`LinqDataTypes` `p`
 	) `pp`
 WHERE
-	(`pp`.`Value_1` IS NULL OR `pp`.`Value_1` <> 0) AND
-	(`pp`.`Value_1` IS NULL OR `pp`.`Value_1` <> 7)
+	`pp`.`Value_1` <> 0 AND `pp`.`Value_1` <> 7
 

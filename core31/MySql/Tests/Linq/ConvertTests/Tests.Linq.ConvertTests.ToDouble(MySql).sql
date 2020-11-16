@@ -2,14 +2,9 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`p`.`c1`
+	Cast(Floor(`p`.`MoneyValue`) as SIGNED)
 FROM
-	(
-		SELECT
-			Cast(Floor(`t`.`MoneyValue`) as SIGNED) as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `p`
+	`LinqDataTypes` `p`
 WHERE
-	`p`.`c1` > 0
+	Cast(Floor(`p`.`MoneyValue`) as SIGNED) > 0
 

@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p1 Int16
+DECLARE @p1 Int32
 SET     @p1 = 1234
 
 INSERT INTO `AllTypes`

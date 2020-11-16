@@ -8,7 +8,7 @@ SELECT
 		FROM
 			`GrandChild` `x`
 		WHERE
-			`x`.`ParentID` = 1 AND NOT ((`x`.`ChildID` IS NOT NULL AND `x`.`ChildID` = 11) AND (`x`.`GrandChildID` IS NOT NULL AND `x`.`GrandChildID` = 777))
+			`x`.`ParentID` = 1 AND ((`x`.`ChildID` <> 11 OR `x`.`ChildID` IS NULL) OR (`x`.`GrandChildID` <> 777 OR `x`.`GrandChildID` IS NULL))
 	)) as `c1`
 
 BeforeExecute
@@ -21,6 +21,6 @@ SELECT
 		FROM
 			`GrandChild` `x`
 		WHERE
-			`x`.`ParentID` = 1 AND NOT ((`x`.`GrandChildID` IS NOT NULL AND `x`.`GrandChildID` = 777) AND (`x`.`ChildID` IS NOT NULL AND `x`.`ChildID` = 11))
+			`x`.`ParentID` = 1 AND ((`x`.`GrandChildID` <> 777 OR `x`.`GrandChildID` IS NULL) OR (`x`.`ChildID` <> 11 OR `x`.`ChildID` IS NULL))
 	)) as `c1`
 
