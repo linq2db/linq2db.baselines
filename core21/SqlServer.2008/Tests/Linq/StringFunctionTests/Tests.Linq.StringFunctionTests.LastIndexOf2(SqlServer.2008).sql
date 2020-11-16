@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @p1 Bit -- Boolean
-SET     @p1 = 0
-DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 3
 
 SELECT
 	[p_1].[ID],
@@ -21,9 +17,8 @@ FROM
 	) [p_1]
 WHERE
 	CASE
-		WHEN @p1 = 1 THEN 5
 		WHEN CharIndex(N'123', [p_1].[FirstName], 6) = 0
 			THEN -1
-		ELSE (Len([p_1].[FirstName]) - CharIndex(N'321', Reverse(Substring([p_1].[FirstName], 6, Len([p_1].[FirstName]) - 5)))) - @Length_1 + 1
+		ELSE Len([p_1].[FirstName]) - CharIndex(N'321', Reverse(Substring([p_1].[FirstName], 6, Len([p_1].[FirstName]) - 5))) - 2
 	END = 8
 

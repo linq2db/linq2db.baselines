@@ -20,7 +20,7 @@ USING (	VALUES
 	[datetime2DataType],
 	[datetimeoffsetDataType]
 )
-ON ([Source].[datetime2DataType] <> @DateTime AND [Source].[datetimeoffsetDataType] <> @DateTimeOffset)
+ON (([Source].[datetime2DataType] <> @DateTime OR [Source].[datetime2DataType] IS NULL) AND ([Source].[datetimeoffsetDataType] <> @DateTimeOffset OR [Source].[datetimeoffsetDataType] IS NULL))
 
 WHEN NOT MATCHED THEN
 INSERT

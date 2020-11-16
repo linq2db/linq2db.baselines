@@ -108,13 +108,7 @@ FROM
 			[q].[Value2],
 			ROW_NUMBER() OVER (ORDER BY [q].[Id]) as [RN]
 		FROM
-			(
-				SELECT
-					[t].[Id],
-					[t].[Value2]
-				FROM
-					[ValueConversion] [t]
-			) [q]
+			[ValueConversion] [q]
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
