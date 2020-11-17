@@ -152,7 +152,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC) as [RowNumber],
+			ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC) as [RowNumber],
 			COUNT(*) OVER() as [c1],
 			[t].[BookingID],
 			[t].[ServiceDate],
@@ -185,7 +185,7 @@ AS
 (
 	SELECT
 		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
@@ -231,7 +231,7 @@ AS
 (
 	SELECT
 		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
@@ -277,7 +277,7 @@ AS
 (
 	SELECT
 		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
