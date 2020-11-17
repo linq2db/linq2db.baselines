@@ -151,7 +151,7 @@ BeforeExecute
 SELECT
 	t1."Key_1",
 	ARRAY_AGG(ALL t1.v ORDER BY t1."Id"),
-	ARRAY_AGG(t1.v ORDER BY t1.v, t1."Id" DESC),
+	ARRAY_AGG(t1.v ORDER BY t1."Id" DESC, t1.v),
 	ARRAY_AGG(t1.v)
 FROM
 	(
