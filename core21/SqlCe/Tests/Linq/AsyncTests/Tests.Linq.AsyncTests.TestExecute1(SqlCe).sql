@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe (asynchronously)
 
--- SqlCe
 SELECT TOP (1)
 	[p].[FirstName],
 	[p].[PersonID],
