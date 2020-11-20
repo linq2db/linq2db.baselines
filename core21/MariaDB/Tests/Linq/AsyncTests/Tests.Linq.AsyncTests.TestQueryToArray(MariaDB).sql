@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql (asynchronously)
 
--- MariaDB MySql.Official MySql
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
