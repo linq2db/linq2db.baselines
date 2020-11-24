@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 TimestampTz -- DateTimeOffset
+DECLARE @p1 TimestampTZ -- DateTimeOffset
 SET     @p1 = '2000-02-03 04:05:06.007'::timestamp
 DECLARE @take Integer -- Int32
 SET     @take = 2
