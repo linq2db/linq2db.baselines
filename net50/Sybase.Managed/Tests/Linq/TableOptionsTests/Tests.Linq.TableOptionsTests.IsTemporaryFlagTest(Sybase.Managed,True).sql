@@ -1,0 +1,23 @@
+﻿BeforeExecute
+-- Sybase.Managed Sybase
+
+CREATE TABLE #IsTemporaryTable
+(
+	[Id]    Int NOT NULL,
+	[Value] Int NOT NULL
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	#IsTemporaryTable [t1]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DROP TABLE #IsTemporaryTable
+
