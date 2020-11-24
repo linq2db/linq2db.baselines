@@ -1,0 +1,67 @@
+﻿BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT '
+		CREATE TABLE "Issue1438"
+		(
+			"Id"  Int   NOT NULL,
+			"Has" CHAR  NOT NULL,
+
+			CONSTRAINT "PK_Issue1438" PRIMARY KEY ("Id")
+		)
+	';
+	EXECUTE STATEMENT '
+		CREATE GENERATOR "GIDENTITY_Issue1438"
+	';
+	EXECUTE STATEMENT '
+		CREATE TRIGGER "TIDENTITY_Issue1438" FOR "Issue1438"
+		BEFORE INSERT POSITION 0
+		AS BEGIN
+			NEW."Id" = GEN_ID("GIDENTITY_Issue1438", 1);
+		END
+	';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @Has Char(1) -- String
+SET     @Has = '1'
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO "Issue1438"
+(
+	"Has"
+)
+VALUES
+(
+	@Has
+)
+RETURNING
+	"Id"
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+DECLARE @id_1 Integer -- Int32
+SET     @id_1 = 1
+
+SELECT FIRST @take
+	"t1"."Id",
+	"t1"."Has"
+FROM
+	"Issue1438" "t1"
+WHERE
+	"t1"."Id" = @id_1
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Issue1438"';
+	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Issue1438"';
+	EXECUTE STATEMENT 'DROP TABLE "Issue1438"';
+END
+
