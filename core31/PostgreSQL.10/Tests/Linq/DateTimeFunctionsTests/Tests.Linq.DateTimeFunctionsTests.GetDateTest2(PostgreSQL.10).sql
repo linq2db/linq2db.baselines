@@ -1,0 +1,15 @@
+﻿BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 5
+
+SELECT
+	Cast(CURRENT_TIMESTAMP as Date),
+	Count(*)
+FROM
+	"Parent" v
+		INNER JOIN "Child" s ON v."ParentID" = s."ParentID"
+WHERE
+	v."Value1" > 0
+LIMIT :take
+
