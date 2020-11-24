@@ -34,7 +34,7 @@ DECLARE @FieldDouble Double
 SET     @FieldDouble = NULL
 DECLARE @FieldDateTime Timestamp -- DateTime
 SET     @FieldDateTime = NULL
-DECLARE @FieldDateTime2 TimestampTz -- DateTimeOffset
+DECLARE @FieldDateTime2 TimestampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = NULL
 DECLARE @FieldBinary Bytea -- Binary
 SET     @FieldBinary = NULL
@@ -120,7 +120,7 @@ DECLARE @FieldDouble Double
 SET     @FieldDouble = -1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp -- DateTime
 SET     @FieldDateTime = '2000-11-12 21:14:15.167'::timestamp
-DECLARE @FieldDateTime2 TimestampTz -- DateTimeOffset
+DECLARE @FieldDateTime2 TimestampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = '2000-11-22T13:14:15.1244567+00:15'
 DECLARE @FieldBinary Bytea(0) -- Binary
 SET     @FieldBinary = E'\\x'
@@ -208,7 +208,7 @@ DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp -- DateTime
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
-DECLARE @FieldDateTime2 TimestampTz -- DateTimeOffset
+DECLARE @FieldDateTime2 TimestampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = '2001-11-22T13:14:15.1234567-00:15'
 DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\x000102030004'
@@ -295,7 +295,7 @@ DECLARE @FieldDouble Double
 SET     @FieldDouble = -2.2250738585072014E-308
 DECLARE @FieldDateTime Timestamp -- DateTime
 SET     @FieldDateTime = '2098-10-12 21:14:15.997'::timestamp
-DECLARE @FieldDateTime2 TimestampTz -- DateTimeOffset
+DECLARE @FieldDateTime2 TimestampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = '2001-11-22T13:14:16.1224567+01:39'
 DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\xFFC864321400'
@@ -381,7 +381,7 @@ DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime Timestamp -- DateTime
 SET     @FieldDateTime = '2098-10-12 21:14:15.907'::timestamp
-DECLARE @FieldDateTime2 TimestampTz -- DateTimeOffset
+DECLARE @FieldDateTime2 TimestampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = '2001-11-22T13:14:14.1233457-01:39'
 DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\xFFC864321400'
@@ -469,7 +469,7 @@ DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp -- DateTime
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
-DECLARE @FieldDateTime2 TimestampTz -- DateTimeOffset
+DECLARE @FieldDateTime2 TimestampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = '2001-11-22T13:14:15.3210000-00:15'
 DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\x000102030004'
@@ -555,7 +555,7 @@ DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime Timestamp -- DateTime
 SET     @FieldDateTime = '2098-10-12 21:14:15.913'::timestamp
-DECLARE @FieldDateTime2 TimestampTz -- DateTimeOffset
+DECLARE @FieldDateTime2 TimestampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = '2001-11-22T13:14:15.0000000-01:39'
 DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\xFFC864321400'
@@ -643,7 +643,7 @@ DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp -- DateTime
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
-DECLARE @FieldDateTime2 TimestampTz -- DateTimeOffset
+DECLARE @FieldDateTime2 TimestampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = '2001-11-22T13:14:15.9990000-00:15'
 DECLARE @FieldBinary Bytea(6) -- Binary
 SET     @FieldBinary = E'\\x000102030004'
