@@ -1,0 +1,36 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+CREATE TABLE BULKCOPYTABLE
+(
+	ID Int NOT NULL
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SELECT
+	sys_context('userenv','service_name')
+FROM SYS.DUAL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+INSERT ALL
+	INTO BULKCOPYTABLE@XE (ID) VALUES (1)
+	INTO BULKCOPYTABLE@XE (ID) VALUES (2)
+	INTO BULKCOPYTABLE@XE (ID) VALUES (3)
+	INTO BULKCOPYTABLE@XE (ID) VALUES (4)
+	INTO BULKCOPYTABLE@XE (ID) VALUES (5)
+	INTO BULKCOPYTABLE@XE (ID) VALUES (6)
+	INTO BULKCOPYTABLE@XE (ID) VALUES (7)
+	INTO BULKCOPYTABLE@XE (ID) VALUES (8)
+	INTO BULKCOPYTABLE@XE (ID) VALUES (9)
+	INTO BULKCOPYTABLE@XE (ID) VALUES (10)
+SELECT * FROM dual
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+DROP TABLE BULKCOPYTABLE
+
