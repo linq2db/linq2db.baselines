@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TABLE [ValueConversion]
 (
@@ -17,7 +17,7 @@ CREATE TABLE [ValueConversion]
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [ValueConversion]
 (
@@ -44,22 +44,31 @@ VALUES
 (10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue_2 VarChar -- AnsiString
-SET     @BoolValue_2 = 'N'
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @testDate  -- DateTime
+SET     @testDate = '2020-02-29'
 
 SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
-	[t].[BoolValue]
+	[t].[DateTimeNullable]
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue_2
+	DateTime(@testDate) = DateTime([t].[DateTimeNullable])
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @testDate  -- DateTime
+SET     @testDate = '2020-02-29'
+
+SELECT
+	[t].[DateTimeNullable]
+FROM
+	[ValueConversion] [t]
+WHERE
+	DateTime([t].[DateTimeNullable]) = DateTime(@testDate)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE [ValueConversion]
 

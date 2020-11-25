@@ -45,18 +45,27 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue_2 VarChar -- AnsiString
-SET     @BoolValue_2 = 'N'
+DECLARE @testDate  -- DateTime
+SET     @testDate = '2020-02-29'
 
 SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
-	[t].[BoolValue]
+	[t].[DateTimeNullable]
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue_2
+	DateTime(@testDate) = DateTime([t].[DateTimeNullable])
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @testDate  -- DateTime
+SET     @testDate = '2020-02-29'
+
+SELECT
+	[t].[DateTimeNullable]
+FROM
+	[ValueConversion] [t]
+WHERE
+	DateTime([t].[DateTimeNullable]) = DateTime(@testDate)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
