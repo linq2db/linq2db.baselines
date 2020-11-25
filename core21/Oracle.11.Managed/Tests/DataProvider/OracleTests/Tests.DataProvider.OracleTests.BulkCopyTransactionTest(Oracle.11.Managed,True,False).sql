@@ -7,7 +7,7 @@ CREATE TABLE BULKCOPYTABLE
 )
 
 BeforeExecute
-INSERT BULK BULKCOPYTABLE(ID
+INSERT BULK BULKCOPYTABLE(ID)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

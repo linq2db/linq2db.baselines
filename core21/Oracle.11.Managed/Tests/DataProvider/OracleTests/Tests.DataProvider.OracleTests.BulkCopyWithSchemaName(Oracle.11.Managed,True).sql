@@ -19,7 +19,7 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
-INSERT BULK SYSTEM.BULKCOPYTABLE(ID
+INSERT BULK SYSTEM.BULKCOPYTABLE(ID)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
