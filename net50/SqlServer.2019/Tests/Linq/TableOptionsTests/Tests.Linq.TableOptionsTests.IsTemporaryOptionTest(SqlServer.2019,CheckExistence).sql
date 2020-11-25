@@ -9,7 +9,7 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	)
 
 BeforeExecute
-INSERT BULK [#temp_table1](ID, Value
+INSERT BULK [#temp_table1](ID, Value)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
-INSERT BULK [#temp_table1](ID, Value
+INSERT BULK [#temp_table1](ID, Value)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
