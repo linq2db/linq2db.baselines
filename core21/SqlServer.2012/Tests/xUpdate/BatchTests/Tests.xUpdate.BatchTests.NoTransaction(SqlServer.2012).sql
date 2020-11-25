@@ -43,7 +43,7 @@ WHERE
 	[t1].[ParentID] = @ParentID
 
 BeforeExecute
-INSERT BULK [Parent](ParentID, Value1
+INSERT BULK [Parent](ParentID, Value1)
 
 BeforeExecute
 -- SqlServer.2012

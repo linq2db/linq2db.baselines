@@ -11,7 +11,7 @@ CREATE TABLE [#TestTable]
 )
 
 BeforeExecute
-INSERT BULK [#TestTable](Field1, Field11, Field2, Field21, Field3
+INSERT BULK [#TestTable](Field1, Field11, Field2, Field21, Field3)
 
 BeforeExecute
 -- SqlServer.2012
