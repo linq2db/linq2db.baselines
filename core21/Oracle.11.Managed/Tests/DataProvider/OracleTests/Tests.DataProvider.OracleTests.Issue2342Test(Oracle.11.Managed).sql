@@ -1,21 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE GLOBAL TEMPORARY TABLE "Issue2342Entity"
-		(
-			"Id"   Number(19)   NOT NULL,
-			"Name" VarChar(256)     NULL
-		)
-		ON COMMIT PRESERVE ROWS
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
+CREATE TABLE "Issue2342Entity"
+(
+	"Id"   Number(19)   NOT NULL,
+	"Name" VarChar(256)     NULL
+)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -34,12 +24,5 @@ TRUNCATE TABLE "Issue2342Entity"
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue2342Entity"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
+DROP TABLE "Issue2342Entity"
 

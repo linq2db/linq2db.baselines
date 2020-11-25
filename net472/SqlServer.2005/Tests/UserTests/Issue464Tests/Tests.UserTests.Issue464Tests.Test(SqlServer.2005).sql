@@ -8,7 +8,7 @@ CREATE TABLE [Issue464]
 )
 
 BeforeExecute
-INSERT BULK [Issue464](Id, Value
+INSERT BULK [Issue464](Id, Value)
 
 BeforeExecute
 -- SqlServer.2005

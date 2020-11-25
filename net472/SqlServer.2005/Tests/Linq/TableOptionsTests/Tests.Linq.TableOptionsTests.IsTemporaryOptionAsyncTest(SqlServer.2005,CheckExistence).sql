@@ -9,7 +9,7 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	)
 
 BeforeExecute
-INSERT ASYNC BULK [#temp_table1](ID, Value
+INSERT ASYNC BULK [#temp_table1](ID, Value)
 
 BeforeExecute
 -- SqlServer.2005 (asynchronously)
@@ -82,7 +82,7 @@ VALUES
 )
 
 BeforeExecute
-INSERT ASYNC BULK [#temp_table1](ID, Value
+INSERT ASYNC BULK [#temp_table1](ID, Value)
 
 BeforeExecute
 -- SqlServer.2005 (asynchronously)
