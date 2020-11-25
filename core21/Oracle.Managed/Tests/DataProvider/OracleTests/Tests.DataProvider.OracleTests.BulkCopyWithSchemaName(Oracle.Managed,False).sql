@@ -18,7 +18,7 @@ FROM
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
-INSERT BULK BULKCOPYTABLE(ID
+INSERT BULK BULKCOPYTABLE(ID)
 
 BeforeExecute
 -- Oracle.Managed Oracle12
