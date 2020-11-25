@@ -23,7 +23,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY t1."Value1" DESC, t1."Value3")
+	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY t1."Value3", t1."Value1" DESC)
 FROM
 	"SampleClass" t1
 GROUP BY

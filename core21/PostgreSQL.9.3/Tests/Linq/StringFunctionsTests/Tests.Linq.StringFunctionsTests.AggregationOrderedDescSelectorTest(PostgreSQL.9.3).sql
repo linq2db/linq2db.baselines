@@ -30,7 +30,7 @@ BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
 SELECT
-	STRING_AGG(t1."Value1", ' -> ' ORDER BY t1."Value1", t1."Value3" DESC)
+	STRING_AGG(t1."Value1", ' -> ' ORDER BY t1."Value3" DESC, t1."Value1")
 FROM
 	"SampleClass" t1
 GROUP BY
