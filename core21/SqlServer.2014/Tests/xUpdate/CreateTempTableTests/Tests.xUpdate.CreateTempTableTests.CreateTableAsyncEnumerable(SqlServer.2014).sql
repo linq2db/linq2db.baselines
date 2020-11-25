@@ -22,7 +22,7 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
-INSERT ASYNC BULK [TempTable](ID
+INSERT ASYNC BULK [TempTable](ID)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
