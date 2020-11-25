@@ -11,6 +11,7 @@ CREATE TABLE [ValueConversion]
 	[EnumWithNull]            VarChar(50)       NULL,
 	[EnumWithNullDeclarative] VarChar(50)       NULL,
 	[BoolValue]               VarChar(1)    NOT NULL,
+	[DateTimeNullable]        DateTime          NULL,
 
 	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -33,6 +34,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]
 (
@@ -43,10 +46,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -75,6 +80,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
 (
@@ -85,10 +92,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -117,6 +126,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value3'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
 (
@@ -127,10 +138,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -159,6 +172,8 @@ DECLARE @EnumWithNullDeclarative VarChar -- AnsiString
 SET     @EnumWithNullDeclarative = NULL
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]
 (
@@ -169,10 +184,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -201,6 +218,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
 (
@@ -211,10 +230,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -243,6 +264,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
 (
@@ -253,10 +276,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -285,6 +310,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value3'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]
 (
@@ -295,10 +322,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -327,6 +356,8 @@ DECLARE @EnumWithNullDeclarative VarChar -- AnsiString
 SET     @EnumWithNullDeclarative = NULL
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
 (
@@ -337,10 +368,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -369,6 +402,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
 (
@@ -379,10 +414,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -411,6 +448,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]
 (
@@ -421,10 +460,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -446,7 +487,8 @@ SELECT
 	[t1].[EnumNullable],
 	[t1].[EnumWithNull],
 	[t1].[EnumWithNullDeclarative],
-	[t1].[BoolValue]
+	[t1].[BoolValue],
+	[t1].[DateTimeNullable]
 FROM
 	[ValueConversion] [t1]
 

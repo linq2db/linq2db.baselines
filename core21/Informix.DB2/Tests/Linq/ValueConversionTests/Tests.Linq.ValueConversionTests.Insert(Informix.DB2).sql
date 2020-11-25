@@ -3,14 +3,15 @@
 
 CREATE TABLE ValueConversion
 (
-	Id                      Int           NOT NULL,
-	Value1                  NVarChar(200)     NULL,
-	Value2                  NVarChar(200)     NULL,
-	Enum                    NVarChar(50)  NOT NULL,
-	EnumNullable            VarChar(50)       NULL,
-	EnumWithNull            VarChar(50)       NULL,
-	EnumWithNullDeclarative VarChar(50)       NULL,
-	BoolValue               VarChar(1)    NOT NULL,
+	Id                      Int                       NOT NULL,
+	Value1                  NVarChar(200)                 NULL,
+	Value2                  NVarChar(200)                 NULL,
+	Enum                    NVarChar(50)              NOT NULL,
+	EnumNullable            VarChar(50)                   NULL,
+	EnumWithNull            VarChar(50)                   NULL,
+	EnumWithNullDeclarative VarChar(50)                   NULL,
+	BoolValue               VarChar(1)                NOT NULL,
+	DateTimeNullable        datetime year to fraction     NULL,
 
 	PRIMARY KEY (Id)
 )
@@ -56,7 +57,8 @@ SELECT FIRST 1
 	e.EnumNullable,
 	e.EnumWithNull,
 	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e.BoolValue,
+	e.DateTimeNullable
 FROM
 	ValueConversion e
 WHERE
@@ -103,7 +105,8 @@ SELECT FIRST 1
 	e.EnumNullable,
 	e.EnumWithNull,
 	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e.BoolValue,
+	e.DateTimeNullable
 FROM
 	ValueConversion e
 WHERE
@@ -127,6 +130,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable Timestamp -- DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO ValueConversion
 (
@@ -137,7 +142,8 @@ INSERT INTO ValueConversion
 	EnumNullable,
 	EnumWithNull,
 	EnumWithNullDeclarative,
-	BoolValue
+	BoolValue,
+	DateTimeNullable
 )
 VALUES
 (
@@ -148,7 +154,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -162,7 +169,8 @@ SELECT FIRST 1
 	e.EnumNullable,
 	e.EnumWithNull,
 	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e.BoolValue,
+	e.DateTimeNullable
 FROM
 	ValueConversion e
 WHERE
