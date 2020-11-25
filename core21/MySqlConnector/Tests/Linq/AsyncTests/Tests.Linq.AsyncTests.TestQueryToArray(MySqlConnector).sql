@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
--- MySqlConnector MySql
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,

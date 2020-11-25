@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
--- Oracle.Managed Oracle12
 SELECT
 	p."FirstName",
 	p."PersonID",

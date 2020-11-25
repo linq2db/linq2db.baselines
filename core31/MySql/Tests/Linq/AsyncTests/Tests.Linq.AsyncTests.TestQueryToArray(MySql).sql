@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 
--- MySql MySql.Official MySql
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
