@@ -20,7 +20,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
-INSERT BULK [AllTypes](intDataType
+INSERT BULK [AllTypes](intDataType)
 
 BeforeExecute
 -- SqlServer.2017
