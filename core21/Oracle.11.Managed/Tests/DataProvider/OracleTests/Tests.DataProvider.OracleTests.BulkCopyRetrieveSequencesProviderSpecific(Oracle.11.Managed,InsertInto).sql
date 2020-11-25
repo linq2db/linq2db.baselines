@@ -12,11 +12,5 @@ BeforeExecute
 SELECT SEQUENCETESTSEQ.nextval ID from DUAL connect by level <= 4
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @:p1 Int32
-SET     @:p1 = System.Object[]
-DECLARE @:p2 Varchar2 -- String
-SET     @:p2 = System.Object[]
-
-INSERT INTO SEQUENCETEST (ID, VALUE) VALUES (:p1, :p2)
+INSERT BULK SEQUENCETEST(ID, VALUE
 
