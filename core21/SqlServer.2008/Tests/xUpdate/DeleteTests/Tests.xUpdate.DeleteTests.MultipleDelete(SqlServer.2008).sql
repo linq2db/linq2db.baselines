@@ -8,7 +8,7 @@ WHERE
 	[t1].[ParentID] >= 1000
 
 BeforeExecute
-INSERT BULK [Parent](ParentID, Value1
+INSERT BULK [Parent](ParentID, Value1)
 
 BeforeExecute
 -- SqlServer.2008
