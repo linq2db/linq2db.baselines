@@ -1,14 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT TOP (1)
+SELECT
 	[p].[FirstName],
 	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	[p].[LastName]
 FROM
 	[Person] [p]
-WHERE
-	[p].[PersonID] = 1
 
