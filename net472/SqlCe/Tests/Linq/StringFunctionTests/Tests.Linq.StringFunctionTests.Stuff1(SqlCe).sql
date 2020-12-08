@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Stuff([p].[FirstName], 3, 1, '123') = 'Jo123n' AND
-	[p].[PersonID] = 1
+	Stuff([p].[FirstName], 3, 1, '123') = 'Jo123n' AND [p].[PersonID] = 1
 

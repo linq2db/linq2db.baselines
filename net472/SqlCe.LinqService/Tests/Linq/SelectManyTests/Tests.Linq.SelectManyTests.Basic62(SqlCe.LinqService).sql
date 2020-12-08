@@ -2,17 +2,10 @@
 -- SqlCe
 
 SELECT
-	[_1].[c1]
+	[_].[ParentID] + [cp].[ParentID]
 FROM
 	[Parent] [cp]
-		CROSS APPLY (
-			SELECT
-				[_].[ParentID] + [cp].[ParentID] as [c1]
-			FROM
-				[Child] [_]
-			WHERE
-				[cp].[ParentID] = [_].[ParentID]
-		) [_1]
+		CROSS JOIN [Child] [_]
 WHERE
-	[_1].[c1] > 1
+	[_].[ParentID] + [cp].[ParentID] > 1 AND [cp].[ParentID] = [_].[ParentID]
 

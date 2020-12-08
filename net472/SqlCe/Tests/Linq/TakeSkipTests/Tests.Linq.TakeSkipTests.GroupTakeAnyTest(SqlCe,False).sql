@@ -22,16 +22,20 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	CASE WHEN EXISTS(
-		SELECT TOP (1)
-			1
-		FROM
-			[TakeSkipClass] [t1]
-		GROUP BY
-			[t1].[Value]
-		HAVING
-			Count(*) > 1
-	) THEN 1 ELSE 0 END
+	CASE
+		WHEN EXISTS(
+			SELECT TOP (1)
+				1
+			FROM
+				[TakeSkipClass] [t1]
+			GROUP BY
+				[t1].[Value]
+			HAVING
+				Count(*) > 1
+		)
+			THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SqlCe

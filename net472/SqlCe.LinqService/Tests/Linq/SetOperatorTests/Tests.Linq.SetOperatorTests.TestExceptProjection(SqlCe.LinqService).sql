@@ -295,8 +295,7 @@ FROM
 							[SampleData] [t_1]
 						WHERE
 							[t_1].[Id] % 4 = 0 AND [t].[Id] = [t_1].[Id] AND [t].[Value1] = [t_1].[Value2] / 10
-					) AND
-					[t].[Id] % 2 = 0
+					) AND [t].[Id] % 2 = 0
 			) [r]
 		WHERE
 			NOT EXISTS(

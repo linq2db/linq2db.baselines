@@ -14,6 +14,5 @@ WHERE
 		WHEN Len([p].[FirstName]) = 2
 			THEN [p].[FirstName] + '123'
 		ELSE Stuff([p].[FirstName], 3, 0, '123')
-	END = 'Jo123hn' AND
-	[p].[PersonID] = 1
+	END = 'Jo123hn' AND [p].[PersonID] = 1
 
