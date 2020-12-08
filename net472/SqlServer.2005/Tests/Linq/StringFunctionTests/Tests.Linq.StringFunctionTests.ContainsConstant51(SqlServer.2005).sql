@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @ps NVarChar(4000) -- String
-SET     @ps = N'%[[]%'
+DECLARE @ps_1 NVarChar(4000) -- String
+SET     @ps_1 = N'%~[%'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND N'123[456' LIKE @ps ESCAPE N'~'
+	[p].[PersonID] = 1 AND N'123[456' LIKE @ps_1 ESCAPE N'~'
 

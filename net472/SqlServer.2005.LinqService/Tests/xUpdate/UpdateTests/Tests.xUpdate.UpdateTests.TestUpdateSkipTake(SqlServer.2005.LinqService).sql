@@ -192,7 +192,7 @@ BeforeExecute
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
-SET     @take = 5
+SET     @take = 6
 
 UPDATE
 	[t2]
@@ -213,7 +213,7 @@ FROM
 					[x].[ParentID] > 1000
 			) [t1]
 		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+			[t1].[RN] > @skip AND [t1].[RN] <= @take
 	) [t2]
 
 BeforeExecute

@@ -49,8 +49,7 @@ FROM
 						[Table3] [r3]
 					WHERE
 						[r3].[Id_3] = [rTable1].[Id_1]
-				) AND
-				[r2].[Id_2] = [rTable1].[Id_1]
+				) AND [r2].[Id_2] = [rTable1].[Id_1]
 		) [t1]
 
 BeforeExecute

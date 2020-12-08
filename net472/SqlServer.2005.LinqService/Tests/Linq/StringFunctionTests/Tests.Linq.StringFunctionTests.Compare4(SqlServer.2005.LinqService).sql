@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower(Substring([p].[FirstName], 2, 2)) = N'oh' AND
-	[p].[PersonID] = 1
+	Lower(Substring([p].[FirstName], 2, 2)) = N'oh' AND [p].[PersonID] = 1
 

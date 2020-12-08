@@ -186,15 +186,9 @@ FROM
 				[c_1].[City_Code]
 			FROM
 				[Cities] [c_1]
-		) [t1] ON ([t1].[City_Code] IS NULL AND [cp].[City_Code] IS NULL OR [t1].[City_Code] = [cp].[City_Code])
+		) [t1] ON ([t1].[City_Code] = [cp].[City_Code] OR [t1].[City_Code] IS NULL AND [cp].[City_Code] IS NULL)
 WHERE
-	[cda].[Contract_Id] = 198827882 AND
-	[cda].[Distributor_Type_Code] = N'CC' AND
-	[cda].[Distributor_Agent_Type_Prefix] = N'OFFICE' AND
-	[cda].[Represents_Type_Prefix] = N'REPRESENTS' AND
-	[cd].[Type_Code] = N'ESTCOE' AND
-	[d].[Type_Code] = N'RE' AND
-	[dcp].[Distributor_Type_Code] = N'RE'
+	[cda].[Contract_Id] = 198827882 AND [cda].[Distributor_Type_Code] = N'CC' AND [cda].[Distributor_Agent_Type_Prefix] = N'OFFICE' AND [cda].[Represents_Type_Prefix] = N'REPRESENTS' AND [cd].[Type_Code] = N'ESTCOE' AND [d].[Type_Code] = N'RE' AND [dcp].[Distributor_Type_Code] = N'RE'
 
 BeforeExecute
 -- SqlServer.2005

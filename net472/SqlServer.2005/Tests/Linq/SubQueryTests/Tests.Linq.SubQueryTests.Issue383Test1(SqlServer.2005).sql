@@ -219,15 +219,9 @@ FROM
 				INNER JOIN [Commercial_Property] [cp] ON [dcp].[Commercial_Property_Id] = [cp].[Commercial_Property_Id]
 				INNER JOIN [Contract_Dates] [cd] ON [cda].[Contract_Id] = [cd].[Contract_Id]
 		WHERE
-			[cda].[Contract_Id] = 198827882 AND
-			[cda].[Distributor_Type_Code] = N'CC' AND
-			[cda].[Distributor_Agent_Type_Prefix] = N'OFFICE' AND
-			[cda].[Represents_Type_Prefix] = N'REPRESENTS' AND
-			[cd].[Type_Code] = N'ESTCOE' AND
-			[d].[Type_Code] = N'RE' AND
-			[dcp].[Distributor_Type_Code] = N'RE'
+			[cda].[Contract_Id] = 198827882 AND [cda].[Distributor_Type_Code] = N'CC' AND [cda].[Distributor_Agent_Type_Prefix] = N'OFFICE' AND [cda].[Represents_Type_Prefix] = N'REPRESENTS' AND [cd].[Type_Code] = N'ESTCOE' AND [d].[Type_Code] = N'RE' AND [dcp].[Distributor_Type_Code] = N'RE'
 	) [key_data_result]
-		INNER JOIN [Cities] [detail] ON ([detail].[City_Code] IS NULL AND [key_data_result].[City_Code] IS NULL OR [detail].[City_Code] = [key_data_result].[City_Code])
+		INNER JOIN [Cities] [detail] ON ([detail].[City_Code] = [key_data_result].[City_Code] OR [detail].[City_Code] IS NULL AND [key_data_result].[City_Code] IS NULL)
 
 BeforeExecute
 -- SqlServer.2005
@@ -266,13 +260,7 @@ FROM
 		INNER JOIN [Commercial_Property] [cp] ON [dcp].[Commercial_Property_Id] = [cp].[Commercial_Property_Id]
 		INNER JOIN [Contract_Dates] [cd] ON [cda].[Contract_Id] = [cd].[Contract_Id]
 WHERE
-	[cda].[Contract_Id] = 198827882 AND
-	[cda].[Distributor_Type_Code] = N'CC' AND
-	[cda].[Distributor_Agent_Type_Prefix] = N'OFFICE' AND
-	[cda].[Represents_Type_Prefix] = N'REPRESENTS' AND
-	[cd].[Type_Code] = N'ESTCOE' AND
-	[d].[Type_Code] = N'RE' AND
-	[dcp].[Distributor_Type_Code] = N'RE'
+	[cda].[Contract_Id] = 198827882 AND [cda].[Distributor_Type_Code] = N'CC' AND [cda].[Distributor_Agent_Type_Prefix] = N'OFFICE' AND [cda].[Represents_Type_Prefix] = N'REPRESENTS' AND [cd].[Type_Code] = N'ESTCOE' AND [d].[Type_Code] = N'RE' AND [dcp].[Distributor_Type_Code] = N'RE'
 
 BeforeExecute
 -- SqlServer.2005

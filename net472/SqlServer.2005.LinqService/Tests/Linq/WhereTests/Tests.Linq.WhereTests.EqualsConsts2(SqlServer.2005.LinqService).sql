@@ -10,8 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] = N'John' OR [p].[FirstName] = N'John''s') AND
-	[p].[PersonID] > 0 AND
-	[p].[PersonID] < 2 AND
-	[p].[LastName] <> N'123'
+	([p].[FirstName] = N'John' OR [p].[FirstName] = N'John''s') AND [p].[PersonID] > 0 AND [p].[PersonID] < 2 AND [p].[LastName] <> N'123'
 
