@@ -294,10 +294,8 @@ FROM
 						FROM
 							[SampleData] [t_1]
 						WHERE
-							[t_1].[Id] MOD 4 = 0 AND [t].[Id] = [t_1].[Id] AND
-							[t].[Value1] = [t_1].[Value2] / 10
-					) AND
-					[t].[Id] MOD 2 = 0
+							[t_1].[Id] MOD 4 = 0 AND [t].[Id] = [t_1].[Id] AND [t].[Value1] = [t_1].[Value2] / 10
+					) AND [t].[Id] MOD 2 = 0
 			) [r]
 		WHERE
 			NOT EXISTS(
@@ -306,8 +304,7 @@ FROM
 				FROM
 					[SampleData] [t_2]
 				WHERE
-					[t_2].[Id] MOD 6 = 0 AND [r].[Id] = [t_2].[Id] AND
-					[r].[Value1] = [t_2].[Value1]
+					[t_2].[Id] MOD 6 = 0 AND [r].[Id] = [t_2].[Id] AND [r].[Value1] = [t_2].[Value1]
 			)
 	) [t1]
 

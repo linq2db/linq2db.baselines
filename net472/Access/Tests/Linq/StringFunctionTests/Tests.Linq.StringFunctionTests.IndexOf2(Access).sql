@@ -12,6 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Iif(@Length_1 = 0 AND Len([p].[LastName]) > 2, 2, InStr(3, [p].[LastName], 'e', 1) - 1) = 4 AND
-	[p].[PersonID] = 2
+	Iif(@Length_1 = 0 AND Len([p].[LastName]) > 2, 2, InStr(3, [p].[LastName], 'e', 1) - 1) = 4 AND [p].[PersonID] = 2
 

@@ -92,16 +92,15 @@ FROM
 							SELECT
 								DatePart('m', [q].[EntryDate]) as [MonthNumber],
 								[a_Workstation].[Id_WorkstationGroup],
-								[q].[Qty],
-								[a_Defect].[Ok]
+								[a_Defect].[Ok],
+								[q].[Qty]
 							FROM
 								(([tblFtq] [q]
 									INNER JOIN [tblDefect] [a_Defect] ON ([q].[Id_Defect] = [a_Defect].[Id]))
 										INNER JOIN [tblWorkstation] [a_Workstation] ON ([a_Defect].[Id_Workstation] = [a_Workstation].[Id]))
 									INNER JOIN [tblWorkstationGroup] [a_WorkstationGroup] ON ([a_Workstation].[Id_WorkstationGroup] = [a_WorkstationGroup].[Id])
 							WHERE
-								[q].[EntryDate] >= @dateMin AND [q].[EntryDate] <= @dateMax AND
-								[a_WorkstationGroup].[Id_Sector] = @sectorId
+								[q].[EntryDate] >= @dateMin AND [q].[EntryDate] <= @dateMax AND [a_WorkstationGroup].[Id_Sector] = @sectorId
 						) [t1]
 					GROUP BY
 						[t1].[MonthNumber],

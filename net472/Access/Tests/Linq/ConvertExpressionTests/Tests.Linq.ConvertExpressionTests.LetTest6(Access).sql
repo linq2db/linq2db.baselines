@@ -23,14 +23,14 @@ BeforeExecute
 
 SELECT
 	[cp].[ParentID],
-	EXISTS(
+	Iif(EXISTS(
 		SELECT
 			*
 		FROM
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [cp].[ParentID] AND [c_1].[ChildID] > -100
-	),
+	), True, False),
 	[t1].[Count_1],
 	(
 		SELECT TOP 1
@@ -38,8 +38,7 @@ SELECT
 		FROM
 			[Child] [c_2]
 		WHERE
-			[c_2].[ParentID] = [cp].[ParentID] AND [c_2].[ChildID] > -100 AND
-			[c_2].[ParentID] > 0
+			[c_2].[ParentID] = [cp].[ParentID] AND [c_2].[ChildID] > -100 AND [c_2].[ParentID] > 0
 		ORDER BY
 			[c_2].[ChildID]
 	)

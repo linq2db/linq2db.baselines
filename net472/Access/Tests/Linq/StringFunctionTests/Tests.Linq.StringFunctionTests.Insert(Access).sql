@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Iif(Len([p].[FirstName]) = 2, [p].[FirstName] + '123', Left([p].[FirstName], 2) + '123' + Right([p].[FirstName], Len([p].[FirstName]) - 2)) = 'Jo123hn' AND
-	[p].[PersonID] = 1
+	Iif(Len([p].[FirstName]) = 2, [p].[FirstName] + '123', Left([p].[FirstName], 2) + '123' + Right([p].[FirstName], Len([p].[FirstName]) - 2)) = 'Jo123hn' AND [p].[PersonID] = 1
 

@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Iif(Len([p].[FirstName]) > 6, [p].[FirstName], [p].[FirstName] + string(6 - Len([p].[FirstName]), '*')) + '123' = 'John**123' AND
-	[p].[PersonID] = 1
+	Iif(Len([p].[FirstName]) > 6, [p].[FirstName], [p].[FirstName] + string(6 - Len([p].[FirstName]), '*')) + '123' = 'John**123' AND [p].[PersonID] = 1
 

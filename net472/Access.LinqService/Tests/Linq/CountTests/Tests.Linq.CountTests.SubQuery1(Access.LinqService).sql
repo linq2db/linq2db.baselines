@@ -13,7 +13,7 @@ FROM
 			FROM
 				[Child] [c_1]
 			WHERE
-				([c_1].[ChildID] IS NULL OR [c_1].[ChildID] <> 0)
+				([c_1].[ChildID] <> 0 OR [c_1].[ChildID] IS NULL)
 			GROUP BY
 				[c_1].[ParentID]
 		) [t1] ON ([p].[ParentID] = [t1].[ParentID] AND [t1].[ParentID] = [p].[ParentID])
