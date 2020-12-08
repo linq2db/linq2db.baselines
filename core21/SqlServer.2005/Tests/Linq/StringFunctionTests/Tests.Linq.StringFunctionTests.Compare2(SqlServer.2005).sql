@@ -10,5 +10,11 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower([p].[FirstName]) > N'joh' AND [p].[PersonID] = 1
+	CASE
+		WHEN Lower([p].[FirstName]) > N'joh'
+			THEN 1
+		WHEN Lower([p].[FirstName]) = N'joh'
+			THEN 0
+		ELSE -1
+	END > 0 AND [p].[PersonID] = 1
 

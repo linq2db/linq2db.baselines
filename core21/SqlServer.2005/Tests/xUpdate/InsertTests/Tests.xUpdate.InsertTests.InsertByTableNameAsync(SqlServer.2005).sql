@@ -110,8 +110,7 @@ SELECT
 FROM
 	[xxPerson] [p]
 WHERE
-	[p].[FirstName] = N'Steven' AND [p].[LastName] = N'King' AND
-	[p].[Gender] = 'M'
+	[p].[FirstName] = N'Steven' AND [p].[LastName] = N'King' AND [p].[Gender] = 'M'
 
 BeforeExecute
 -- SqlServer.2005 (asynchronously)

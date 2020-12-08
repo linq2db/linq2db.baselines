@@ -17,8 +17,7 @@ WHERE
 		WHEN [p].[MiddleName] IS NOT NULL
 			THEN 0
 		ELSE 1
-	END = 1 AND
-	CASE
+	END = 1 AND CASE
 		WHEN [p].[FirstName] IS NULL
 			THEN 3
 		WHEN [p].[PersonID] = 2 THEN 2

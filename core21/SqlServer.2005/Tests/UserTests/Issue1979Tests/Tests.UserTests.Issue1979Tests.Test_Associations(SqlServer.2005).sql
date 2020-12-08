@@ -54,8 +54,7 @@ WHERE
 						Convert(BigInt, [_1].[TagId]) = [_].[Id]
 				) [a_Tag]
 		WHERE
-			[_1].[TaggableType] = N'Issue' AND [i].[Id] = [_1].[TaggableId] AND
-			[a_Tag].[Name] = N'Visu'
+			[_1].[TaggableType] = N'Issue' AND [i].[Id] = [_1].[TaggableId] AND [a_Tag].[Name] = N'Visu'
 	)
 
 BeforeExecute

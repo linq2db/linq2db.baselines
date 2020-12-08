@@ -16,6 +16,5 @@ WHERE
 		WHEN @Length_1 = 0 AND Len([p].[LastName]) > 2
 			THEN 2
 		ELSE CharIndex(N'e', [p].[LastName], 3) - 1
-	END = 4 AND
-	[p].[PersonID] = 2
+	END = 4 AND [p].[PersonID] = 2
 
