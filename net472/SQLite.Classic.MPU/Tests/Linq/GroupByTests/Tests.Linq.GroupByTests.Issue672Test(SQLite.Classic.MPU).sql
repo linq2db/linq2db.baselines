@@ -83,15 +83,14 @@ SELECT
 FROM
 	[Stone] [s]
 WHERE
-	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE 'level - %' AND Length([s].[ImageFullUrl]) > 0
+	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND [s].[Name] NOT LIKE 'level - %' ESCAPE '~' AND Length([s].[ImageFullUrl]) > 0
 GROUP BY
 	[s].[Name]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Name_1 NVarChar(6) -- String
-SET     @Name_1 = 'group1'
+DECLARE @Name NVarChar(6) -- String
+SET     @Name = 'group1'
 
 SELECT
 	[s].[Id],
@@ -101,15 +100,12 @@ SELECT
 FROM
 	[Stone] [s]
 WHERE
-	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE 'level - %' AND
-	Length([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = @Name_1
+	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND [s].[Name] NOT LIKE 'level - %' ESCAPE '~' AND Length([s].[ImageFullUrl]) > 0 AND [s].[Name] = @Name
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Name_1 NVarChar(6) -- String
-SET     @Name_1 = 'group2'
+DECLARE @Name NVarChar(6) -- String
+SET     @Name = 'group2'
 
 SELECT
 	[s].[Id],
@@ -119,10 +115,7 @@ SELECT
 FROM
 	[Stone] [s]
 WHERE
-	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE 'level - %' AND
-	Length([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = @Name_1
+	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND [s].[Name] NOT LIKE 'level - %' ESCAPE '~' AND Length([s].[ImageFullUrl]) > 0 AND [s].[Name] = @Name
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

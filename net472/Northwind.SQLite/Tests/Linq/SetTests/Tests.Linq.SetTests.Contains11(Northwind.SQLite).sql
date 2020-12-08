@@ -10,8 +10,7 @@ SELECT
 			[EmployeeTerritories] [keyParam]
 				LEFT JOIN [Employees] [a_Employee] ON [keyParam].[EmployeeID] = [a_Employee].[EmployeeID]
 		WHERE
-			[a_Employee_1].[EmployeeID] = [a_Employee].[EmployeeID] AND
-			[a_Employee].[FirstName] LIKE '%an%'
+			[a_Employee_1].[EmployeeID] = [a_Employee].[EmployeeID] AND [a_Employee].[FirstName] LIKE '%an%' ESCAPE '~'
 	)
 FROM
 	[EmployeeTerritories] [t1]

@@ -12,8 +12,7 @@ UPDATE
 SET
 	[TypeDiscriminator] = 1
 WHERE
-	[InheritanceParent].[InheritanceParentId] = 143 AND
-	[InheritanceParent].[Name] IS NULL
+	[InheritanceParent].[InheritanceParentId] = 143 AND [InheritanceParent].[Name] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -47,8 +46,7 @@ UPDATE
 SET
 	[TypeDiscriminator] = 1
 WHERE
-	[InheritanceParent].[InheritanceParentId] = 143 AND
-	[InheritanceParent].[Name] IS NULL
+	[InheritanceParent].[InheritanceParentId] = 143 AND [InheritanceParent].[Name] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

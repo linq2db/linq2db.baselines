@@ -217,8 +217,7 @@ AS
 			LEFT JOIN [RateLines] [lines] ON [lines].[TL_TI] = [rateEntry_52].[TI_PK]
 			LEFT JOIN [RateLineItem] [items] ON [items].[TM_TL] = [lines].[TL_PK]
 	WHERE
-		([rateEntry_52].[TI_RateEndDate] IS NULL OR DateTime([rateEntry_52].[TI_RateEndDate]) > DateTime(CURRENT_TIMESTAMP)) AND
-		[items].[TM_Type] IN ('MIN', 'FLT', 'BAS', 'UNT')
+		([rateEntry_52].[TI_RateEndDate] IS NULL OR DateTime([rateEntry_52].[TI_RateEndDate]) > DateTime(CURRENT_TIMESTAMP)) AND [items].[TM_Type] IN ('MIN', 'FLT', 'BAS', 'UNT')
 	GROUP BY
 		[rateEntry_52].[TI_PK],
 		[rateEntry_52].[TI_LineOrder],

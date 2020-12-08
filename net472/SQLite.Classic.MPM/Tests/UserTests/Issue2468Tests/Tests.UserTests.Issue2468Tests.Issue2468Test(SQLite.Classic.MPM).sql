@@ -51,20 +51,18 @@ WHERE
 		WHEN 10 = [x].[Color] THEN 'Red'
 		WHEN 20 = [x].[Color] THEN 'Green'
 		ELSE NULL
-	END LIKE '%Bl%' AND
-	CASE
+	END LIKE '%Bl%' ESCAPE '~' AND CASE
 		WHEN 0 = [x].[CMYKColor] THEN 'Cyan'
 		WHEN 10 = [x].[CMYKColor] THEN 'Magenta'
 		WHEN 20 = [x].[CMYKColor] THEN 'Yellow'
 		WHEN 40 = [x].[CMYKColor] THEN 'Black'
 		ELSE NULL
-	END LIKE '%Cya%' AND
-	CASE
+	END LIKE '%Cya%' ESCAPE '~' AND CASE
 		WHEN [x].[Status] = 3 THEN 'Done'
 		WHEN [x].[Status] = 1 THEN 'Open'
 		WHEN [x].[Status] = 2 THEN 'InProgress'
 		ELSE 'Unknown'
-	END LIKE '%en%'
+	END LIKE '%en%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
