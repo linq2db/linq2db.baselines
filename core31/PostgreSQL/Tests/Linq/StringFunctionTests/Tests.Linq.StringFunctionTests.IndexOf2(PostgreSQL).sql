@@ -16,6 +16,5 @@ WHERE
 		WHEN :Length_1 = 0 AND Length(p."LastName") > 2
 			THEN 2
 		ELSE Position('e' in Substring(p."LastName", 3, Length(p."LastName") - 3)) + 1
-	END = 4 AND
-	p."PersonID" = 2
+	END = 4 AND p."PersonID" = 2
 

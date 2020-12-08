@@ -4,7 +4,7 @@
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Insert16%'
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
@@ -34,7 +34,7 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Insert16%'
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
@@ -42,5 +42,5 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Insert16%'
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
