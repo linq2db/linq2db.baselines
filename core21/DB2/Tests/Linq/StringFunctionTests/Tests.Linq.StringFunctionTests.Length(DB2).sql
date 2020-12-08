@@ -12,6 +12,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) = @Length_1 AND
-	"p"."PersonID" = 1
+	CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) = @Length_1 AND "p"."PersonID" = 1
 

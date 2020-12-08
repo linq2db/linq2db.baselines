@@ -29,14 +29,18 @@ BeforeExecute
 
 SELECT
 	"t"."ParentID",
-	CASE WHEN EXISTS(
-		SELECT
-			*
-		FROM
-			"Child" "c_1"
-		WHERE
-			"c_1"."ParentID" = "t"."ParentID" AND "c_1"."ChildID" > -100
-	) THEN 1 ELSE 0 END,
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" = "t"."ParentID" AND "c_1"."ChildID" > -100
+		)
+			THEN 1
+		ELSE 0
+	END,
 	(
 		SELECT
 			Count(*)
@@ -51,8 +55,7 @@ SELECT
 		FROM
 			"Child" "c_3"
 		WHERE
-			"c_3"."ParentID" = "t"."ParentID" AND "c_3"."ChildID" > -100 AND
-			"c_3"."ParentID" > 0
+			"c_3"."ParentID" = "t"."ParentID" AND "c_3"."ChildID" > -100 AND "c_3"."ParentID" > 0
 		ORDER BY
 			"c_3"."ChildID"
 		FETCH FIRST 1 ROWS ONLY

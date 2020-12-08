@@ -70,11 +70,7 @@ WHERE
 		FROM
 			"SampleData" "t_2"
 		WHERE
-			Mod("t_2"."Id", 4) = 0 AND
-			"t1"."Id" = "t_2"."Id" AND
-			"t1"."Value1" = "t_2"."Value1" AND
-			"t1"."Value2" = "t_2"."Value2" AND
-			"t1"."Value3" = "t_2"."Value3"
+			Mod("t_2"."Id", 4) = 0 AND "t1"."Id" = "t_2"."Id" AND "t1"."Value1" = "t_2"."Value1" AND "t1"."Value2" = "t_2"."Value2" AND "t1"."Value3" = "t_2"."Value3"
 	)
 
 BeforeExecute

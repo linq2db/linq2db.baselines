@@ -13,6 +13,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."MoneyValue" * Decimal("t".ID, 29, 10) = 1.11
+	"t"."MoneyValue" * "t".ID = 1.11
 FETCH FIRST 2 ROWS ONLY
 

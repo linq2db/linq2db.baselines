@@ -14,6 +14,5 @@ WHERE
 		WHEN CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) > 6
 			THEN "p"."FirstName"
 		ELSE VarChar(Repeat(' ', 6 - CHARACTER_LENGTH("p"."FirstName",CODEUNITS32)), 1000) || "p"."FirstName"
-	END = '123  John' AND
-	"p"."PersonID" = 1
+	END = '123  John' AND "p"."PersonID" = 1
 

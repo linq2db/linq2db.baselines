@@ -101,8 +101,7 @@ SET
 		FROM
 			"billing_DevReadingType" "w"
 		WHERE
-			"w"."Name" = "billing_TempReading"."ReadingTypeName" AND
-			"w"."DevTypeId" = "billing_TempReading"."Devtypeid"
+			"w"."Name" = "billing_TempReading"."ReadingTypeName" AND "w"."DevTypeId" = "billing_TempReading"."Devtypeid"
 		FETCH FIRST 1 ROWS ONLY
 	),
 	"billing_TempReading"."Responsibility" = (
@@ -111,8 +110,7 @@ SET
 		FROM
 			"billing_DevReadingType" "w_1"
 		WHERE
-			"w_1"."Name" = "billing_TempReading"."ReadingTypeName" AND
-			"w_1"."DevTypeId" = "billing_TempReading"."Devtypeid"
+			"w_1"."Name" = "billing_TempReading"."ReadingTypeName" AND "w_1"."DevTypeId" = "billing_TempReading"."Devtypeid"
 		FETCH FIRST 1 ROWS ONLY
 	)
 

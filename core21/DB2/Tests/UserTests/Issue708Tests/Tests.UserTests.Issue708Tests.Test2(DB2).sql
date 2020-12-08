@@ -75,6 +75,5 @@ WHERE
 			"Parent" "_1"
 		WHERE
 			"_1"."ParentID" = @id AND "_1"."ParentID" = "_"."ParentID"
-	) AND
-	"_"."ChildID" >= 0 AND "_"."ChildID" <= 100
+	) AND "_"."ChildID" >= 0 AND "_"."ChildID" <= 100
 

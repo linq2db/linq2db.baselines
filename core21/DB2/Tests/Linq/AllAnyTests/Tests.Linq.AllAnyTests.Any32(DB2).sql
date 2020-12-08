@@ -13,7 +13,6 @@ WHERE
 		FROM
 			"Child" "c_1"
 		WHERE
-			"p"."ParentID" = "c_1"."ParentID" AND "c_1"."ParentID" > 0 AND
-			"c_1"."ParentID" > 3
+			"p"."ParentID" = "c_1"."ParentID" AND "c_1"."ParentID" > 0 AND "c_1"."ParentID" > 3
 	)
 

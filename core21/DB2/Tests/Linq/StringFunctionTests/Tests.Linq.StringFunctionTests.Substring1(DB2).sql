@@ -10,6 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Substr("p"."FirstName", 2, CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) - 1) = 'ohn' AND
-	"p"."PersonID" = 1
+	Substr("p"."FirstName", 2, CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) - 1) = 'ohn' AND "p"."PersonID" = 1
 

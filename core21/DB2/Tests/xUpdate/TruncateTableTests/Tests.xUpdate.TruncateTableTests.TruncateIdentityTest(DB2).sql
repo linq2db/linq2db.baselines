@@ -45,8 +45,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
-DECLARE @skip_1 Integer(4) -- Int32
-SET     @skip_1 = 3
+DECLARE @take_1 Integer(4) -- Int32
+SET     @take_1 = 3
 
 SELECT
 	"t2".ID,
@@ -61,7 +61,7 @@ FROM
 			"TestIdTrun" "t1"
 	) "t2"
 WHERE
-	"t2".RN > @skip AND "t2".RN <= @skip_1
+	"t2".RN > @skip AND "t2".RN <= @take_1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -101,8 +101,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
-DECLARE @skip_1 Integer(4) -- Int32
-SET     @skip_1 = 3
+DECLARE @take_1 Integer(4) -- Int32
+SET     @take_1 = 3
 
 SELECT
 	"t2".ID,
@@ -117,7 +117,7 @@ FROM
 			"TestIdTrun" "t1"
 	) "t2"
 WHERE
-	"t2".RN > @skip AND "t2".RN <= @skip_1
+	"t2".RN > @skip AND "t2".RN <= @take_1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Upper("p"."FirstName") = Upper(@param) AND "p"."PersonID" = 1
+	(Upper("p"."FirstName") = Upper(@param) OR Upper("p"."FirstName") IS NULL AND Upper(@param) IS NULL) AND "p"."PersonID" = 1
 

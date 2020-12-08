@@ -303,15 +303,14 @@ USING (
 	"Diagnosis",
 	"FirstName"
 )
-ON ("Target"."PersonID" = "Source"."PersonID" AND "Source"."Diagnosis" LIKE '%very%')
+ON ("Target"."PersonID" = "Source"."PersonID" AND "Source"."Diagnosis" LIKE '%very%' ESCAPE '~')
 WHEN MATCHED AND EXISTS(
 	SELECT
 		*
 	FROM
 		"Person" "a_Person_1"
 	WHERE
-		"Source"."FirstName" = 'first 4' AND "a_Person_1"."FirstName" = 'first 4' AND
-		"Target"."PersonID" = "a_Person_1"."PersonID"
+		"Source"."FirstName" = 'first 4' AND "a_Person_1"."FirstName" = 'first 4' AND "Target"."PersonID" = "a_Person_1"."PersonID"
 ) THEN DELETE
 
 BeforeExecute

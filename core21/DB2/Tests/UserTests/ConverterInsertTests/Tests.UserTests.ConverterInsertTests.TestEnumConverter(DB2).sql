@@ -68,9 +68,5 @@ SET     @Gender = 'M'
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."PersonID" = @PersonID AND
-	"t1"."FirstName" = @FirstName AND
-	"t1"."LastName" = @LastName AND
-	"t1"."MiddleName" = @MiddleName AND
-	"t1"."Gender" = @Gender
+	"t1"."PersonID" = @PersonID AND "t1"."FirstName" = @FirstName AND "t1"."LastName" = @LastName AND "t1"."MiddleName" = @MiddleName AND "t1"."Gender" = @Gender
 

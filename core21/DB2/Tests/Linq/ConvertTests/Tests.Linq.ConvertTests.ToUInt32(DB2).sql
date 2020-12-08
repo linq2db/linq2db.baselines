@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."c1"
+	BigInt("t"."MoneyValue")
 FROM
-	(
-		SELECT
-			BigInt("t"."MoneyValue") as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	"p"."c1" > 0
+	BigInt("t"."MoneyValue") > 0
 

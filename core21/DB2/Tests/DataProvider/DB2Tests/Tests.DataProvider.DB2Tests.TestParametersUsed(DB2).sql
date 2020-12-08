@@ -27,8 +27,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @text_1 VarChar(3) -- String
-SET     @text_1 = 'bla'
+DECLARE @text VarChar(3) -- String
+SET     @text = 'bla'
 
 SELECT
 	"f"."Id",
@@ -36,7 +36,7 @@ SELECT
 FROM
 	"TestParametersTable" "f"
 WHERE
-	"f"."Text" = @text_1
+	"f"."Text" = @text
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
