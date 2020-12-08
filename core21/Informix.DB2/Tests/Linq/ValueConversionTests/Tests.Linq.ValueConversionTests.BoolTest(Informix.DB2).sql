@@ -478,8 +478,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_1 VarChar(1) -- String
-SET     @BoolValue_1 = 'Y'
+DECLARE @BoolValue VarChar(1) -- String
+SET     @BoolValue = 'Y'
 
 SELECT
 	t.Id,
@@ -489,7 +489,7 @@ SELECT
 FROM
 	ValueConversion t
 WHERE
-	t.BoolValue = @BoolValue_1
+	t.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix

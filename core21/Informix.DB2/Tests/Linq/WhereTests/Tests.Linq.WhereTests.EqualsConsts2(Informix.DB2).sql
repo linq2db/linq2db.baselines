@@ -10,8 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	(p.FirstName = 'John' OR p.FirstName = 'John''s') AND
-	p.PersonID > 0 AND
-	p.PersonID < 2 AND
-	p.LastName <> '123'
+	(p.FirstName = 'John' OR p.FirstName = 'John''s') AND p.PersonID > 0 AND p.PersonID < 2 AND p.LastName <> '123'
 

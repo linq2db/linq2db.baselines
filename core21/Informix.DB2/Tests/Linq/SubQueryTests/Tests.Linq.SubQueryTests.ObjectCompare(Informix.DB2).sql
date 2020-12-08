@@ -16,6 +16,5 @@ FROM
 				LEFT JOIN Parent a_Parent ON c_1.ParentID = a_Parent.ParentID
 	) c_2
 WHERE
-	(p.ParentID = c_2.ParentID AND (p.Value1 IS NULL AND c_2.Value1 IS NULL OR p.Value1 = c_2.Value1)) AND
-	c_2.ChildID > 0
+	(p.ParentID = c_2.ParentID AND (p.Value1 = c_2.Value1 OR p.Value1 IS NULL AND c_2.Value1 IS NULL)) AND c_2.ChildID > 0
 

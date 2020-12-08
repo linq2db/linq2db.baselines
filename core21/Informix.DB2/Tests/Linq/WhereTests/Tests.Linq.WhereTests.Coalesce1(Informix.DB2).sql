@@ -10,6 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = 1 AND Nvl(p.MiddleName, 'None') = 'None' AND
-	Nvl(p.FirstName, 'None') = 'John'
+	p.PersonID = 1 AND Nvl(p.MiddleName, 'None') = 'None' AND Nvl(p.FirstName, 'None') = 'John'
 

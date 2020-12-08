@@ -2,7 +2,10 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.PersonID = 1
+	CASE
+		WHEN p.PersonID = 1 THEN 't'
+		ELSE 'f'
+	END
 FROM
 	Person p
 

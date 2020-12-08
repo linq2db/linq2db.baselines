@@ -22,6 +22,5 @@ FROM
 		LEFT JOIN Child a_Child ON g_1.ParentID = a_Child.ParentID AND g_1.ChildID = a_Child.ChildID,
 	Parent c_2
 WHERE
-	p_1.p = g_1.ParentID AND g_1.ParentID = c_2.ParentID AND
-	a_Child.ChildID = 1
+	p_1.p = g_1.ParentID AND g_1.ParentID = c_2.ParentID AND a_Child.ChildID = 1
 

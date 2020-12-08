@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			To_Date(To_Char(t.DateTimeValue)) as c1
+			t.DateTimeValue as c1
 		FROM
 			LinqDataTypes t
 	) d

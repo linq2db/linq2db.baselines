@@ -36,7 +36,7 @@ UPDATE
 SET
 	Person.LastName = To_Char(Length(@name) + @idx)
 WHERE
-	Person.FirstName LIKE 'Update14%'
+	Person.FirstName LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -46,7 +46,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	t1.FirstName LIKE 'Update14%'
+	t1.FirstName LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -54,5 +54,5 @@ BeforeExecute
 DELETE FROM
 	Person
 WHERE
-	Person.FirstName LIKE 'Update14%'
+	Person.FirstName LIKE 'Update14%' ESCAPE '~'
 

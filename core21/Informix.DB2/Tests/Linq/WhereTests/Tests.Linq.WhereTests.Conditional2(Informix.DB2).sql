@@ -15,8 +15,7 @@ WHERE
 			THEN 3
 		WHEN p.MiddleName IS NULL THEN 1
 		ELSE 2
-	END = 1 AND
-	CASE
+	END = 1 AND CASE
 		WHEN p.FirstName IS NULL THEN 3
 		WHEN p.FirstName IS NOT NULL
 			THEN 1

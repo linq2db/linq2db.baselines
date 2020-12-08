@@ -75,6 +75,5 @@ WHERE
 			Parent t2
 		WHERE
 			t2.ParentID = @id AND t2.ParentID = t1.ParentID
-	) AND
-	t1.ChildID >= 0 AND t1.ChildID <= 100
+	) AND t1.ChildID >= 0 AND t1.ChildID <= 100
 
