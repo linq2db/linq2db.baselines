@@ -4,14 +4,18 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Parent" p
-		WHERE
-			p."ParentID" = 1 AND p."ParentID" = :ParentID
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Parent" p
+			WHERE
+				p."ParentID" = 1 AND p."ParentID" = :ParentID
+		)
+			THEN True
+		ELSE False
+	END
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -19,12 +23,16 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Parent" p
-		WHERE
-			p."ParentID" = 1 AND p."ParentID" = :ParentID
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Parent" p
+			WHERE
+				p."ParentID" = 1 AND p."ParentID" = :ParentID
+		)
+			THEN True
+		ELSE False
+	END
 
