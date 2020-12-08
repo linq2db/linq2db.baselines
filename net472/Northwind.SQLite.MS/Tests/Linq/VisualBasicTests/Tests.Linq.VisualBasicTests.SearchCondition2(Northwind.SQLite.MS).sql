@@ -76,7 +76,6 @@ WHERE
 		FROM
 			[Orders] [t1]
 		WHERE
-			([cust].[CustomerID] IS NULL AND [t1].[CustomerID] IS NULL OR [cust].[CustomerID] = [t1].[CustomerID])
-	) > 0 AND
-	[cust].[CompanyName] LIKE 'H%'
+			([cust].[CustomerID] = [t1].[CustomerID] OR [cust].[CustomerID] IS NULL AND [t1].[CustomerID] IS NULL)
+	) > 0 AND [cust].[CompanyName] LIKE 'H%' ESCAPE '~'
 

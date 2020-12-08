@@ -279,8 +279,7 @@ SET
 			[UpdatedEntities] [c_2],
 			[NewEntities] [t_1]
 		WHERE
-			[t_1].[id] = [c_2].[id] AND [t_1].[id] <> @someId AND
-			[UpdatedEntities].[id] = [c_2].[id]
+			[t_1].[id] = [c_2].[id] AND [t_1].[id] <> @someId AND [UpdatedEntities].[id] = [c_2].[id]
 	),
 	[Value3] = (
 		SELECT
@@ -289,8 +288,7 @@ SET
 			[UpdatedEntities] [c_3],
 			[NewEntities] [t_2]
 		WHERE
-			[t_2].[id] = [c_3].[id] AND [t_2].[id] <> @someId AND
-			[UpdatedEntities].[id] = [c_3].[id]
+			[t_2].[id] = [c_3].[id] AND [t_2].[id] <> @someId AND [UpdatedEntities].[id] = [c_3].[id]
 	)
 WHERE
 	EXISTS(
@@ -300,8 +298,7 @@ WHERE
 			[UpdatedEntities] [c_4],
 			[NewEntities] [t_3]
 		WHERE
-			[t_3].[id] = [c_4].[id] AND [t_3].[id] <> @someId AND
-			[UpdatedEntities].[id] = [c_4].[id]
+			[t_3].[id] = [c_4].[id] AND [t_3].[id] <> @someId AND [UpdatedEntities].[id] = [c_4].[id]
 	)
 
 BeforeExecute
