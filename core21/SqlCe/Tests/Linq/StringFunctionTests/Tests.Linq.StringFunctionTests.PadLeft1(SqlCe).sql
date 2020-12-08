@@ -14,6 +14,5 @@ WHERE
 		WHEN Len([p].[FirstName]) > 6
 			THEN [p].[FirstName]
 		ELSE Replicate(' ', 6 - Len([p].[FirstName])) + [p].[FirstName]
-	END = '123  John' AND
-	[p].[PersonID] = 1
+	END = '123  John' AND [p].[PersonID] = 1
 

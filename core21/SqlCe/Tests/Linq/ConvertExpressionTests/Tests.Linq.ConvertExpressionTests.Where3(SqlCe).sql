@@ -23,7 +23,6 @@ WHERE
 		FROM
 			[Child] [c_2]
 		WHERE
-			[p].[ParentID] = [c_2].[ParentID] AND [c_2].[ParentID] > 1 AND
-			[c_2].[ParentID] < 10
+			[p].[ParentID] = [c_2].[ParentID] AND [c_2].[ParentID] > 1 AND [c_2].[ParentID] < 10
 	)
 
