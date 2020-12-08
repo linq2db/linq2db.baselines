@@ -47,8 +47,8 @@ LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Array_2 Binary(3)
-SET     @Array_2 = X'010203'
+DECLARE @Array_1 Binary(3)
+SET     @Array_1 = X'010203'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -59,13 +59,13 @@ SELECT
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Array] = @Array_2
+	[_].[Array] = @Array_1
 LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Binary_2 Binary(2)
-SET     @Binary_2 = X'0405'
+DECLARE @Binary_1 Binary(2)
+SET     @Binary_1 = X'0405'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -76,7 +76,7 @@ SELECT
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Binary] = @Binary_2
+	[_].[Binary] = @Binary_1
 LIMIT @take
 
 BeforeExecute

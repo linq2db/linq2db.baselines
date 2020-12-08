@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LeftStr([p].[FirstName], 1) || RightStr([p].[FirstName], Length([p].[FirstName]) - 3) = 'Jn' AND
-	[p].[PersonID] = 1
+	LeftStr([p].[FirstName], 1) || RightStr([p].[FirstName], Length([p].[FirstName]) - 3) = 'Jn' AND [p].[PersonID] = 1
 

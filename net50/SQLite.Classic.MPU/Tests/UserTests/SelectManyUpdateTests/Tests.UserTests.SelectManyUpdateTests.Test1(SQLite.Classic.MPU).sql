@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Value1  -- Int32
+SET     @Value1 = NULL
 
 UPDATE
 	[Parent]
 SET
-	[Value1] = NULL
+	[Value1] = @Value1
 WHERE
 	EXISTS(
 		SELECT
