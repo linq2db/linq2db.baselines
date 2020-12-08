@@ -33,8 +33,8 @@ GROUP BY
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p1 Char -- AnsiStringFixedLength
-SET     @p1 = 1
+DECLARE @p_1 NVarChar -- String
+SET     @p_1 = 1
 
 SELECT
 	[keyParam].[FirstName],
@@ -45,12 +45,12 @@ SELECT
 FROM
 	[Person] [keyParam]
 WHERE
-	[keyParam].[Gender] = @p1
+	[keyParam].[Gender] = @p_1
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p1 Char -- AnsiStringFixedLength
-SET     @p1 = 0
+DECLARE @p_1 NVarChar -- String
+SET     @p_1 = 0
 
 SELECT
 	[keyParam].[FirstName],
@@ -61,7 +61,7 @@ SELECT
 FROM
 	[Person] [keyParam]
 WHERE
-	[keyParam].[Gender] = @p1
+	[keyParam].[Gender] = @p_1
 
 BeforeExecute
 -- SQLite.MS SQLite

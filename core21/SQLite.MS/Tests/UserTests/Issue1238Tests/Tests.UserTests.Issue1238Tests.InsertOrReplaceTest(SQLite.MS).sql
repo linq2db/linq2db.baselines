@@ -16,8 +16,7 @@ UPDATE
 SET
 	[TypeDiscriminator] = @Data_1
 WHERE
-	[InheritanceParent].[InheritanceParentId] = @Key1 AND
-	[InheritanceParent].[Name] IS NULL
+	[InheritanceParent].[InheritanceParentId] = @Key1 AND [InheritanceParent].[Name] IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -61,8 +60,7 @@ UPDATE
 SET
 	[TypeDiscriminator] = @Data_1
 WHERE
-	[InheritanceParent].[InheritanceParentId] = @Key1 AND
-	[InheritanceParent].[Name] IS NULL
+	[InheritanceParent].[InheritanceParentId] = @Key1 AND [InheritanceParent].[Name] IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -102,17 +102,16 @@ WHERE
 			*
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [o].[CustomerID] = [a_Customer].[CustomerID])
+				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 				LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
 		WHERE
-			([a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL OR [a_Customer].[CustomerID] = [c_1].[CustomerID]) AND
-			NOT EXISTS(
+			([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL) AND NOT EXISTS(
 				SELECT
 					*
 				FROM
 					[Employees] [e]
 				WHERE
-					[a_Employee].[EmployeeID] = [e].[EmployeeID] AND [e].[FirstName] LIKE 'A%'
+					[a_Employee].[EmployeeID] = [e].[EmployeeID] AND [e].[FirstName] LIKE 'A%' ESCAPE '~'
 			)
 	)
 

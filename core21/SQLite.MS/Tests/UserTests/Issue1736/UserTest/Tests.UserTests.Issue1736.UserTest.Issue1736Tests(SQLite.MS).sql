@@ -89,6 +89,10 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Value_1  -- Guid
 SET     @Value_1 = X'00000000000000000000000000000000'
+DECLARE @Value_2  -- Guid
+SET     @Value_2 = X'00000000000000000000000000000000'
+DECLARE @Value_3  -- Guid
+SET     @Value_3 = X'00000000000000000000000000000000'
 
 SELECT
 	[cr].[R],
@@ -170,10 +174,7 @@ FROM
 							FROM
 								[InventoryResourceDTO] [irMix]
 							WHERE
-								[irMix].[ResourceID] = [r_2].[Id] AND
-								[irMix].[Status] >= 0 AND
-								[irMix].[Status] <= 1 AND
-								([irMix].[MaterialID] <> @Value_1 OR [irMix].[ProductStatus] <> 0)
+								[irMix].[ResourceID] = [r_2].[Id] AND [irMix].[Status] >= 0 AND [irMix].[Status] <= 1 AND ([irMix].[MaterialID] <> @Value_1 OR [irMix].[ProductStatus] <> 0)
 						)
 							THEN 1
 						ELSE 0
@@ -188,8 +189,7 @@ FROM
 						INNER JOIN [WmsLoadCarrierDTO] [r_2] ON [refS].[ResourceID] = [r_2].[Id]
 						INNER JOIN [InventoryResourceDTO] [ir_6] ON [r_2].[Id] = [ir_6].[ResourceID]
 				WHERE
-					[ir_6].[MaterialID] = @Value_1 AND [ir_6].[ProductStatus] = 0 AND
-					[ir_6].[Quantity] > 0
+					[ir_6].[MaterialID] = @Value_2 AND [ir_6].[ProductStatus] = 0 AND [ir_6].[Quantity] > 0
 			) [t1]
 		UNION
 		SELECT
@@ -217,10 +217,7 @@ FROM
 				INNER JOIN [WmsLoadCarrierDTO] [r_3] ON [rp_3].[Id] = [r_3].[ResourcePointID]
 				INNER JOIN [InventoryResourceDTO] [ir_7] ON [r_3].[Id] = [ir_7].[ResourceID]
 		WHERE
-			[rp_3].[IsStoragePlace] = 1 AND
-			[ir_7].[MaterialID] = @Value_1 AND
-			[ir_7].[ProductStatus] = 0 AND
-			[ir_7].[Quantity] > 0
+			[rp_3].[IsStoragePlace] = 1 AND [ir_7].[MaterialID] = @Value_3 AND [ir_7].[ProductStatus] = 0 AND [ir_7].[Quantity] > 0
 	) [cr]
 WHERE
 	[cr].[IR_2] > [cr].[RefQty]

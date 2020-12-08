@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p1  -- Int32
-SET     @p1 = 1
+DECLARE @p_1  -- Int32
+SET     @p_1 = 1
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],@p1 || ' Day')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],@p_1 || ' Day')
 FROM
 	[LinqDataTypes] [t]
 
