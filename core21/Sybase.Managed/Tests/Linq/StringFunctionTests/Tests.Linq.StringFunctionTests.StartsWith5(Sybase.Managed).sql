@@ -11,5 +11,5 @@ FROM
 	[Person] [p1],
 	[Person] [p2]
 WHERE
-	[p1].[PersonID] = [p2].[PersonID] AND Str_Replace([p1].[FirstName], 'J', '%') LIKE (Str_Replace(Str_Replace(Str_Replace(Str_Replace([p2].[FirstName], 'J', '%'), '~', '~~'), '%', '~%'), '_', '~_') + '%') ESCAPE '~'
+	[p1].[PersonID] = [p2].[PersonID] AND Str_Replace([p1].[FirstName], 'J', '%') LIKE Str_Replace(Str_Replace(Str_Replace(Str_Replace(Str_Replace(Str_Replace(Str_Replace([p2].[FirstName], 'J', '%'), '~', '~' + '~'), '_', '~' + '_'), '%', '~' + '%'), '[', '~' + '['), ']', '~' + ']'), '^', '~' + '^') + '%' ESCAPE '~'
 

@@ -19,7 +19,7 @@ FROM
 				[Parent] [p]
 			WHERE
 				[p].[ParentID] <> @id1
-		) [t1] ON ([t1].[Value1] + 2 IS NOT NULL AND [t1].[Value1] + 2 = [left_1].[Value1])
+		) [t1] ON [t1].[Value1] + 2 = [left_1].[Value1]
 ORDER BY
 	[left_1].[ParentID]
 

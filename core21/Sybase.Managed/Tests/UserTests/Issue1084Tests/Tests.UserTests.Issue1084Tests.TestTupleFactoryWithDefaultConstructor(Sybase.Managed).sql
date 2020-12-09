@@ -26,7 +26,7 @@ SELECT
 	[joinedTable].[StatusBitmask]
 FROM
 	[i1084_person] [k_1]
-		LEFT JOIN [i1084_student] [joinedTable] ON ([k_1].[Id] = [joinedTable].[Id] AND Convert(NVarChar(11), [k_1].[Number]) = [joinedTable].[Number])
+		LEFT JOIN [i1084_student] [joinedTable] ON ([k_1].[Id] = [joinedTable].[Id] AND (Convert(NVarChar(11), [k_1].[Number]) = [joinedTable].[Number] OR Convert(NVarChar(11), [k_1].[Number]) IS NULL AND [joinedTable].[Number] IS NULL))
 
 BeforeExecute
 -- Sybase.Managed Sybase
