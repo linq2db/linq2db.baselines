@@ -18,6 +18,5 @@ FROM
 	) t1,
 	"Person" p3
 WHERE
-	t1."PersonID" = t1."PersonID_1" AND t1."LastName" = p3."LastName" AND
-	t1."PersonID" = 1
+	t1."PersonID" = t1."PersonID_1" AND t1."LastName" = p3."LastName" AND t1."PersonID" = 1
 
