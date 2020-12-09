@@ -45,8 +45,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Text -- AnsiString
-SET     @BoolValue_1 = 'Y'
+DECLARE @BoolValue Text -- AnsiString
+SET     @BoolValue = 'Y'
 
 SELECT
 	t."Id",
@@ -56,7 +56,7 @@ SELECT
 FROM
 	"ValueConversion" t
 WHERE
-	t."BoolValue" = :BoolValue_1
+	t."BoolValue" = :BoolValue
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

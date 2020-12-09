@@ -45,7 +45,7 @@ DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Text(1) -- String
 SET     @FirstName = 'c'
-DECLARE @MiddleName Text -- String
+DECLARE @MiddleName Unknown -- Object
 SET     @MiddleName = NULL
 DECLARE @LastName Text(1) -- String
 SET     @LastName = 'd'
