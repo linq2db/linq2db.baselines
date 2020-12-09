@@ -39,17 +39,11 @@ FROM
 	) [t3]
 UNION
 SELECT
-	[t4].[year_1],
-	[t4].[year_1],
-	[t4].[int_1]
+	DatePart(year, [_1].[DateTimeValue]),
+	DatePart(year, [_1].[DateTimeValue]),
+	2
 FROM
-	(
-		SELECT
-			DatePart(year, [_1].[DateTimeValue]) as [year_1],
-			2 as [int_1]
-		FROM
-			[LinqDataTypes] [_1]
-	) [t4]
+	[LinqDataTypes] [_1]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
