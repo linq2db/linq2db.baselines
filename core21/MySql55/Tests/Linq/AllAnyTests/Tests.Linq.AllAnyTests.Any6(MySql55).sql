@@ -2,12 +2,16 @@
 -- MySql55 MySql.Official MySql
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			`Child` `c_1`
-		WHERE
-			`c_1`.`ParentID` > 3
-	) as `c1`
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				`Child` `c_1`
+			WHERE
+				`c_1`.`ParentID` > 3
+		)
+			THEN 1
+		ELSE 0
+	END as `c1`
 

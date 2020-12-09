@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p1 VarChar(2) -- String
-SET     @p1 = '23'
+DECLARE @p_1 VarChar(2) -- String
+SET     @p_1 = '23'
 
 SELECT
-	@p1 as `c1`
+	@p_1 as `c1`
 
