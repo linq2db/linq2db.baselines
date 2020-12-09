@@ -26,8 +26,8 @@ GROUP BY
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 Boolean
-SET     @p1 = False
+DECLARE @p_1 Boolean
+SET     @p_1 = False
 
 SELECT
 	underscore."ParentID",
@@ -53,5 +53,5 @@ FROM
 			"Parent" "selectParam"
 	) underscore
 WHERE
-	underscore."Key_1" = :p1
+	underscore."Key_1" = :p_1
 

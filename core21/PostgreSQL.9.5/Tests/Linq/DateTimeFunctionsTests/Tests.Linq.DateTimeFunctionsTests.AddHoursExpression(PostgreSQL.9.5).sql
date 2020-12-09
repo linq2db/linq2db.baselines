@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 22
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 22
 
 SELECT
-	t."DateTimeValue" + :p1 * Interval '1 Hour'
+	t."DateTimeValue" + :p_1 * Interval '1 Hour'
 FROM
 	"LinqDataTypes" t
 
