@@ -4,7 +4,7 @@
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'Insert15%'
+	[Person].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'Insert15%'
+	[_].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -48,5 +48,5 @@ BeforeExecute
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'Insert15%'
+	[Person].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
