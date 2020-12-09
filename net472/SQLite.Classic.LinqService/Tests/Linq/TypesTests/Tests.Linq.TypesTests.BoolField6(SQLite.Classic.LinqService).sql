@@ -2,15 +2,18 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[t].[MoneyValue]
+	[p].[MoneyValue]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CASE
+				WHEN [t].[BoolValue] = 0 THEN 1
+				ELSE 0
+			END as [b],
+			[t].[MoneyValue]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	(CASE
-		WHEN [t].[BoolValue] = 0 THEN 1
-		ELSE 0
-	END = 1 AND CASE
-		WHEN [t].[BoolValue] = 0 THEN 1
-		ELSE 0
-	END IS NOT NULL)
+	[p].[b] = 1
 

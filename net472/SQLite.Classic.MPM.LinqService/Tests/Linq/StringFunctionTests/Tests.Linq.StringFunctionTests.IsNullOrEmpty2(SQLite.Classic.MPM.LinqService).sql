@@ -2,7 +2,11 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	([p].[FirstName] IS NULL OR Length([p].[FirstName]) = 0)
+	CASE
+		WHEN ([p].[FirstName] IS NULL OR Length([p].[FirstName]) = 0)
+			THEN 1
+		ELSE 0
+	END
 FROM
 	[Person] [p]
 WHERE
