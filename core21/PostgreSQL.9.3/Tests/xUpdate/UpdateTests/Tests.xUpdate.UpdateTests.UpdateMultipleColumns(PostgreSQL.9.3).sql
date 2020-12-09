@@ -45,8 +45,8 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @ID_1 Integer -- Int32
-SET     @ID_1 = 1001
+DECLARE @ID Integer -- Int32
+SET     @ID = 1001
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -62,7 +62,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."ID" = :ID_1
+	t."ID" = :ID
 LIMIT :take
 
 BeforeExecute
