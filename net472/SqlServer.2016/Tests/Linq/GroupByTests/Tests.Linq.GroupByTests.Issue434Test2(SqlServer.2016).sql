@@ -9,7 +9,7 @@ FROM
 	[Person] [p]
 		INNER JOIN [Patient] [_gjd_ri] ON [_gjd_ri].[PersonID] = [p].[PersonID]
 WHERE
-	Lower([p].[FirstName]) LIKE N'%test%'
+	Lower([p].[FirstName]) LIKE N'%test%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -20,5 +20,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower([p].[FirstName]) LIKE N'%test%'
+	Lower([p].[FirstName]) LIKE N'%test%' ESCAPE N'~'
 
