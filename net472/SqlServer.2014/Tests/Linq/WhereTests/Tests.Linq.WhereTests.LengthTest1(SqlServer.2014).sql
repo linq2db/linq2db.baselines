@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	NOT (Len([nm].[MiddleName]) IS NOT NULL AND Len([nm].[MiddleName]) = 0)
+	(Len([nm].[MiddleName]) <> 0 OR Len([nm].[MiddleName]) IS NULL)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012

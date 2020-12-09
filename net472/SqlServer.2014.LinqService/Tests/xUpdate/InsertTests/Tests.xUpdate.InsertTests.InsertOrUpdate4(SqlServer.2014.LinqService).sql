@@ -25,12 +25,8 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @i_1 Int -- Int32
-SET     @i_1 = 0
 DECLARE @diagnosis NVarChar(4000) -- String
 SET     @diagnosis = N'abc'
-DECLARE @i Int -- Int32
-SET     @i = 0
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -40,7 +36,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i_1)
+		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -50,7 +46,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		Convert(NVarChar(11), Len(@diagnosis))
 	);
 
 BeforeExecute
