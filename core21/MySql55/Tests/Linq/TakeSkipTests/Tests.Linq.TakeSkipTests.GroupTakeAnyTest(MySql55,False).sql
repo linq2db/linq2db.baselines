@@ -23,17 +23,21 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			`TakeSkipClass` `t1`
-		GROUP BY
-			`t1`.`Value`
-		HAVING
-			Count(*) > 1
-		LIMIT 1
-	) as `c1`
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				`TakeSkipClass` `t1`
+			GROUP BY
+				`t1`.`Value`
+			HAVING
+				Count(*) > 1
+			LIMIT 1
+		)
+			THEN 1
+		ELSE 0
+	END as `c1`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
