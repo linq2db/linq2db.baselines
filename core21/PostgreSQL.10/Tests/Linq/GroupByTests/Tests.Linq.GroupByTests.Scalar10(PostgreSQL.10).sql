@@ -8,8 +8,7 @@ SELECT
 		FROM
 			"Child" id
 		WHERE
-			t1."ParentID" = id."ParentID" AND id."ChildID" < 30 AND
-			id."ChildID" >= 20
+			t1."ParentID" = id."ParentID" AND id."ChildID" < 30 AND id."ChildID" >= 20
 	)
 FROM
 	"Child" t1
