@@ -25,7 +25,7 @@ BeforeExecute
 DECLARE @val Blob -- Object
 SET     @val = HEXTORAW('010203')
 DECLARE @n Decimal(2, 0)
-SET     @n = 25
+SET     @n = 41
 DECLARE @take Int32
 SET     @take = 1
 
@@ -47,7 +47,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @n Decimal(2, 0)
-SET     @n = 25
+SET     @n = 41
 
 DELETE FROM
 	"AllTypes" t1
