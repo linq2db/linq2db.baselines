@@ -46,8 +46,8 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FirstName_1 Varchar2(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName Varchar2(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -59,7 +59,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName_1 AND ROWNUM <= :take
+	x."FirstName" = :FirstName AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -101,8 +101,8 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FirstName_1 Varchar2(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName Varchar2(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -114,7 +114,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName_1 AND ROWNUM <= :take
+	x."FirstName" = :FirstName AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

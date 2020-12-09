@@ -20,23 +20,27 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	CASE WHEN EXISTS(
-		SELECT
-			*
-		FROM
-			(
-				SELECT
-					*
-				FROM
-					"TakeSkipClass" t1
-				GROUP BY
-					t1."Value"
-				HAVING
-					Count(*) > 1
-			) t2
-		WHERE
-			ROWNUM <= 1
-	) THEN 1 ELSE 0 END
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				(
+					SELECT
+						*
+					FROM
+						"TakeSkipClass" t1
+					GROUP BY
+						t1."Value"
+					HAVING
+						Count(*) > 1
+				) t2
+			WHERE
+				ROWNUM <= 1
+		)
+			THEN 1
+		ELSE 0
+	END
 FROM SYS.DUAL
 
 BeforeExecute
