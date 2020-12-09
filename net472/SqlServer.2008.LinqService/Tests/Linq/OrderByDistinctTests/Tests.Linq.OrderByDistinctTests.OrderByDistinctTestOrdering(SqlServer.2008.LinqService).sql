@@ -109,7 +109,7 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -129,7 +129,7 @@ FROM
 			[OrderByDistinctData] [x]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -151,7 +151,7 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -171,7 +171,7 @@ FROM
 			[OrderByDistinctData] [x]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -193,7 +193,7 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -213,7 +213,7 @@ FROM
 			[OrderByDistinctData] [x]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -235,7 +235,7 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -255,7 +255,7 @@ FROM
 			[OrderByDistinctData] [x]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -277,7 +277,7 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -297,7 +297,7 @@ FROM
 			[OrderByDistinctData] [x]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -319,7 +319,7 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
@@ -339,7 +339,7 @@ FROM
 			[OrderByDistinctData] [x]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008
