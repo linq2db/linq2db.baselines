@@ -11,7 +11,7 @@ AS
 	WHERE
 		c_1."ParentID" > 1
 ),
-"LAST0" ("ParentID")
+"LATEST" ("ParentID")
 AS
 (
 	SELECT
@@ -64,7 +64,7 @@ FROM
 		INNER JOIN "CTE1_" c_4 ON p_2."ParentID" = c_4."ParentID"
 		INNER JOIN "CTE2_" c2 ON p_2."ParentID" = c2."ParentID"
 		INNER JOIN "CTE3_" c3 ON p_2."ParentID" = c3."ParentID"
-		INNER JOIN "LAST0" c4_1 ON c4_1."ParentID" = c3."ParentID"
+		INNER JOIN "LATEST" c4_1 ON c4_1."ParentID" = c3."ParentID"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
@@ -92,20 +92,15 @@ WHERE
 					"Child" c_2
 				WHERE
 					c_2."ParentID" > 1 AND c_2."ParentID" = p_3."ParentID"
-			) AND
-			p_3."ParentID" = p_1."ParentID"
-	) AND
-	c4."ParentID" % 2 = 0 AND
-	EXISTS(
+			) AND p_3."ParentID" = p_1."ParentID"
+	) AND c4."ParentID" % 2 = 0 AND EXISTS(
 		SELECT
 			*
 		FROM
 			"Child" c_3
 		WHERE
 			c_3."ParentID" > 1 AND c_3."ParentID" = p."ParentID"
-	) AND
-	c_1."ParentID" > 1 AND
-	EXISTS(
+	) AND c_1."ParentID" > 1 AND EXISTS(
 		SELECT
 			*
 		FROM
