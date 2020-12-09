@@ -43,8 +43,8 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 1001
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1001
 
 SELECT TOP 2
 	[p].[ParentID],
@@ -52,7 +52,7 @@ SELECT TOP 2
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @ParentID_1
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase

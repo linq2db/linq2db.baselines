@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p1 Bit -- Boolean
-SET     @p1 = 0
-DECLARE @Length_1 Integer -- Int32
-SET     @Length_1 = 3
+DECLARE @Length_2 Integer -- Int32
+SET     @Length_2 = 9
 
 SELECT
 	[p_1].[ID],
@@ -21,9 +19,8 @@ FROM
 	) [p_1]
 WHERE
 	CASE
-		WHEN @p1 = 1 THEN 5
-		WHEN CharIndex('123', Substring(Left([p_1].[FirstName], 11), 6, Len(Left([p_1].[FirstName], 11)))) + 5 = 0
+		WHEN CharIndex('123', Substring(Left([p_1].[FirstName], 11), 6, Len(Left([p_1].[FirstName], 11)))) + 6 - 1 = 0
 			THEN -1
-		ELSE (11 - CharIndex('321', Reverse(Substring([p_1].[FirstName], 6, 6)))) - @Length_1 + 1
+		ELSE @Length_2 - CharIndex('321', Reverse(Substring([p_1].[FirstName], 6, 6)))
 	END = 8
 

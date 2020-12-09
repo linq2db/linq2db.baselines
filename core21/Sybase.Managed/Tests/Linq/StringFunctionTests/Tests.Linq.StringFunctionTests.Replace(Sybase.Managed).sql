@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Str_Replace([p].[FirstName], 'hn', 'lie') = 'Jolie' AND
-	[p].[PersonID] = 1
+	Str_Replace([p].[FirstName], 'hn', 'lie') = 'Jolie' AND [p].[PersonID] = 1
 

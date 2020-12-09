@@ -38,7 +38,7 @@ SET
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'Update14%'
+	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -48,7 +48,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'Update14%'
+	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -57,5 +57,5 @@ DELETE FROM [Person]
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'Update14%'
+	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
 

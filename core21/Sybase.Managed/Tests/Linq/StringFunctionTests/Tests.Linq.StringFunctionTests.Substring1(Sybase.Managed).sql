@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Substring([p].[FirstName], 2, Len([p].[FirstName]) - 1) = 'ohn' AND
-	[p].[PersonID] = 1
+	Substring([p].[FirstName], 2, Len([p].[FirstName]) - 1) = 'ohn' AND [p].[PersonID] = 1
 
