@@ -10,5 +10,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	'John123' LIKE Concat(Replace(Replace(Replace(`p`.`FirstName`, '~', '~~'), '%', '~%'), '_', '~_'), '%') ESCAPE '~'
+	'John123' LIKE Concat(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(`p`.`FirstName`, '~', Concat('~', '~')), '%', Concat('~', '%')), '_', Concat('~', '_')), '?', Concat('~', '?')), '*', Concat('~', '*')), '#', Concat('~', '#')), '[', Concat('~', '[')), ']', Concat('~', ']')), '%') ESCAPE '~'
 
