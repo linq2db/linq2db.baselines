@@ -28,8 +28,8 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @gender_1 Char(1) -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender Char(1) -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	"_"."FirstName",
@@ -40,12 +40,12 @@ SELECT
 FROM
 	"Person" "_"
 WHERE
-	"_"."PersonID" = 1 AND "_"."Gender" = @gender_1
+	"_"."PersonID" = 1 AND "_"."Gender" = @gender
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @gender_1 Char(1) -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender Char(1) -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	"_"."FirstName",
@@ -56,5 +56,5 @@ SELECT
 FROM
 	"Person" "_"
 WHERE
-	"_"."PersonID" = 1 AND @gender_1 = "_"."Gender"
+	"_"."PersonID" = 1 AND @gender = "_"."Gender"
 
