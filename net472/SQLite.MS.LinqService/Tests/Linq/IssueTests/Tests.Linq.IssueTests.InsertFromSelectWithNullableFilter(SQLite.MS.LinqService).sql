@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p1  -- Int16
-SET     @p1 = 1234
+DECLARE @p_1  -- Int32
+SET     @p_1 = 1234
 
 INSERT INTO [AllTypes]
 (
@@ -41,6 +41,6 @@ FROM
 			[AllTypes] [_]
 				INNER JOIN [AllTypes] [c_1] ON [_].[smallintDataType] = [c_1].[intDataType]
 		WHERE
-			[_].[smallintDataType] = @p1
+			[_].[smallintDataType] = @p_1
 	) [t1]
 
