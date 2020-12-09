@@ -15,11 +15,11 @@ SET     @take = 1
 SELECT
 	(
 		SELECT
-			"keyParam"."Taxonomy"
+			d."Taxonomy"
 		FROM
-			"Doctor" "keyParam"
+			"Doctor" d
 		WHERE
-			t1."PersonID" = "keyParam"."PersonID"
+			t1."PersonID" = d."PersonID"
 		LIMIT :take
 	)
 FROM
