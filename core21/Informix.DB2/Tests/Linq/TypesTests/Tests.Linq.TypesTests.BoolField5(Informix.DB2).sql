@@ -15,5 +15,5 @@ FROM
 			LinqDataTypes t
 	) p
 WHERE
-	(p.b = 'f' AND p.b IS NOT NULL)
+	p.b = 'f'
 

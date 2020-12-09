@@ -23,8 +23,8 @@ GROUP BY
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p1 VarChar(1) -- String
-SET     @p1 = '1'
+DECLARE @p_1 VarChar(1) -- String
+SET     @p_1 = '1'
 
 SELECT
 	underscore.ParentID,
@@ -47,5 +47,5 @@ FROM
 			Child selectParam
 	) underscore
 WHERE
-	underscore.Key_1 = @p1
+	underscore.Key_1 = @p_1
 

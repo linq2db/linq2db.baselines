@@ -15,13 +15,9 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	(CASE
+	CASE
 		WHEN t1.BoolValue IN ('t')
 			THEN 't'
 		ELSE 'f'
-	END = 't' AND CASE
-		WHEN t1.BoolValue IN ('t')
-			THEN 't'
-		ELSE 'f'
-	END IS NOT NULL)
+	END = 't'
 

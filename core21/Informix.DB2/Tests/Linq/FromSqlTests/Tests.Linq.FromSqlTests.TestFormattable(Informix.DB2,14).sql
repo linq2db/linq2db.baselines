@@ -369,17 +369,17 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p1 Integer(4) -- Int32
-SET     @p1 = 5
-DECLARE @p2 Integer(4) -- Int32
-SET     @p2 = 14
+DECLARE @p_1 Integer(4) -- Int32
+SET     @p_1 = 5
+DECLARE @p_2 Integer(4) -- Int32
+SET     @p_2 = 14
 
 SELECT
 	c_1."value",
 	c_1.id
 FROM
 	(
-		SELECT * FROM sample_class where id >= @p1 and id < @p2
+		SELECT * FROM sample_class where id >= @p_1 and id < @p_2
 	) c_1
 WHERE
 	c_1.id > 10

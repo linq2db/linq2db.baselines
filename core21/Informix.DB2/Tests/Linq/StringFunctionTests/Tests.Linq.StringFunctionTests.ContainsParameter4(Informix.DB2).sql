@@ -32,7 +32,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN p.FirstName LIKE '%Jo%'
+				WHEN p.FirstName LIKE '%Jo%' ESCAPE '~'
 					THEN 't'
 				ELSE 'f'
 			END as Field1,
@@ -45,7 +45,7 @@ FROM
 			Person p
 	) p_1
 WHERE
-	(p_1.Field1 = 't' AND p_1.Field1 IS NOT NULL)
+	p_1.Field1 = 't'
 ORDER BY
 	p_1.Field1
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE IF NOT EXISTS T1
+CREATE TABLE T1
 (
 	InstrumentId         Int                       NOT NULL,
 	InstrumentCode       NVarChar(255)                 NULL,
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS T1
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE IF NOT EXISTS T2
+CREATE TABLE T2
 (
 	InstrumentId Int NOT NULL,
 	IndexId      Int NOT NULL
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS T2
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE IF NOT EXISTS T3
+CREATE TABLE T3
 (
 	InstrumentId Int NOT NULL,
 	IndexId      Int NOT NULL
@@ -173,8 +173,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @cond VarChar(4) -- String
-SET     @cond = 'aaa%'
+DECLARE @cond_1 VarChar(4) -- String
+SET     @cond_1 = 'aaa%'
 DECLARE @uptoDate Timestamp(16) -- DateTime
 SET     @uptoDate = TO_DATE('2020-02-29 17:54:55.12312', '%Y-%m-%d %H:%M:%S.%F5')
 
@@ -186,7 +186,7 @@ FROM
 		INNER JOIN T3 w ON idx.IndexId = w.IndexId
 		INNER JOIN T1 ins ON w.InstrumentId = ins.InstrumentId
 WHERE
-	ins.SourceInstrumentCode IS NOT NULL AND ins_1.InstrumentCode LIKE @cond ESCAPE '~' AND
+	ins.SourceInstrumentCode IS NOT NULL AND ins_1.InstrumentCode LIKE @cond_1 ESCAPE '~' AND
 	ins_1.CreateDate <= @uptoDate
 ORDER BY
 	ins.SourceInstrumentCode
@@ -194,15 +194,15 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS T3
+DROP TABLE T3
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS T2
+DROP TABLE T2
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS T1
+DROP TABLE T1
 

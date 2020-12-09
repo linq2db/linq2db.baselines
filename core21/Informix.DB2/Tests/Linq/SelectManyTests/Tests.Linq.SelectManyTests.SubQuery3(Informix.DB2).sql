@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @id_1 Integer(4) -- Int32
-SET     @id_1 = 1
+DECLARE @id Integer(4) -- Int32
+SET     @id = 1
 
 SELECT
 	t2.PersonID,
@@ -21,7 +21,7 @@ FROM
 				FROM
 					Person p2
 				WHERE
-					p2.PersonID = @id_1
+					p2.PersonID = @id
 			) t1
 	) t2
 WHERE
