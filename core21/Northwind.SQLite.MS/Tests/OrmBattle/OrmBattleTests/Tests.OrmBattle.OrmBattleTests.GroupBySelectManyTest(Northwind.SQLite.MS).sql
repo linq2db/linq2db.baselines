@@ -103,5 +103,5 @@ FROM
 		GROUP BY
 			[t1].[City]
 	) [cp]
-		INNER JOIN [Customers] [keyParam] ON ([cp].[City] IS NULL AND [keyParam].[City] IS NULL OR [cp].[City] = [keyParam].[City])
+		INNER JOIN [Customers] [keyParam] ON ([cp].[City] = [keyParam].[City] OR [cp].[City] IS NULL AND [keyParam].[City] IS NULL)
 
