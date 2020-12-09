@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -11,7 +11,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	x."ParentID" = :ParentID_1
+	x."ParentID" = :ParentID
 ORDER BY
 	x."ParentID" DESC
 LIMIT :take
