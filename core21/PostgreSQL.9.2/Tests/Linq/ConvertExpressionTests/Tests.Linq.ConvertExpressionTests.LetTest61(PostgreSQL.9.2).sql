@@ -25,14 +25,18 @@ SET     @take = 1
 
 SELECT
 	cp."ParentID",
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Child" c_1
-		WHERE
-			c_1."ParentID" = cp."ParentID" AND c_1."ChildID" > -100
-	),
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" c_1
+			WHERE
+				c_1."ParentID" = cp."ParentID" AND c_1."ChildID" > -100
+		)
+			THEN True
+		ELSE False
+	END,
 	(
 		SELECT
 			Count(*)
@@ -47,8 +51,7 @@ SELECT
 		FROM
 			"Child" c_3
 		WHERE
-			c_3."ParentID" = cp."ParentID" AND c_3."ChildID" > -100 AND
-			c_3."ParentID" > 0
+			c_3."ParentID" = cp."ParentID" AND c_3."ChildID" > -100 AND c_3."ParentID" > 0
 		ORDER BY
 			c_3."ChildID"
 		LIMIT :take

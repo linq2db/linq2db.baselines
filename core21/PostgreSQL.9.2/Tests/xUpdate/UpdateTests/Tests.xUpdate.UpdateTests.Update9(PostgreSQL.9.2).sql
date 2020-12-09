@@ -49,10 +49,7 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
 		INNER JOIN "Parent" p ON c_1."ParentID" = p."ParentID"
 WHERE
-	c_1."ChildID" = :id AND
-	"a_Parent"."Value1" = 1 AND
-	"Child"."ParentID" = c_1."ParentID" AND
-	"Child"."ChildID" = c_1."ChildID"
+	c_1."ChildID" = :id AND "a_Parent"."Value1" = 1 AND "Child"."ParentID" = c_1."ParentID" AND "Child"."ChildID" = c_1."ChildID"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

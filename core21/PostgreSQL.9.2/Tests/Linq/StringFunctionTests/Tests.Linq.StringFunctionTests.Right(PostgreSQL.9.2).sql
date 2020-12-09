@@ -10,6 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Substring(p."FirstName", Length(p."FirstName") - 2, 3) = 'ohn' AND
-	p."PersonID" = 1
+	Substring(p."FirstName", Length(p."FirstName") - 2, 3) = 'ohn' AND p."PersonID" = 1
 

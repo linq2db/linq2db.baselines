@@ -115,8 +115,7 @@ SELECT
 FROM
 	"xxPerson" p
 WHERE
-	p."FirstName" = 'Steven' AND p."LastName" = 'King' AND
-	p."Gender" = 'M'
+	p."FirstName" = 'Steven' AND p."LastName" = 'King' AND p."Gender" = 'M'
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
