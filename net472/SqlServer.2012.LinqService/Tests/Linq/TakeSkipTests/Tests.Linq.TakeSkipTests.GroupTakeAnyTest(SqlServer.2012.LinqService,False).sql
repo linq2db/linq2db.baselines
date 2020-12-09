@@ -66,7 +66,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	CASE WHEN EXISTS(
+	IIF(EXISTS(
 		SELECT TOP (1)
 			*
 		FROM
@@ -75,7 +75,7 @@ SELECT
 			[t1].[Value]
 		HAVING
 			Count(*) > 1
-	) THEN 1 ELSE 0 END
+	), 1, 0)
 
 BeforeExecute
 -- SqlServer.2012
