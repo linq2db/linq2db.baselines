@@ -10,6 +10,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Concat('123', LPad(`p`.`FirstName`, 6, ' ')) = '123  John' AND
-	`p`.`PersonID` = 1
+	Concat('123', LPad(`p`.`FirstName`, 6, ' ')) = '123  John' AND `p`.`PersonID` = 1
 

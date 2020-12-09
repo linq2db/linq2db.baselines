@@ -13,8 +13,7 @@ FROM
 					`GrandChild` `keyParam`
 						INNER JOIN `Parent` `a_Parent` ON `keyParam`.`ParentID` = `a_Parent`.`ParentID`
 				WHERE
-					`a_Parent_2`.`ParentID` = `a_Parent`.`ParentID` AND
-					`keyParam`.`ChildID` >= 20
+					`a_Parent_2`.`ParentID` = `a_Parent`.`ParentID` AND `keyParam`.`ChildID` >= 20
 			) as `cnt`,
 			(
 				SELECT
@@ -23,8 +22,7 @@ FROM
 					`GrandChild` `keyParam_1`
 						INNER JOIN `Parent` `a_Parent_1` ON `keyParam_1`.`ParentID` = `a_Parent_1`.`ParentID`
 				WHERE
-					`a_Parent_2`.`ParentID` = `a_Parent_1`.`ParentID` AND
-					`keyParam_1`.`ChildID` >= 19
+					`a_Parent_2`.`ParentID` = `a_Parent_1`.`ParentID` AND `keyParam_1`.`ChildID` >= 19
 			) as `ex`,
 			`a_Parent_2`.`Value1`
 		FROM

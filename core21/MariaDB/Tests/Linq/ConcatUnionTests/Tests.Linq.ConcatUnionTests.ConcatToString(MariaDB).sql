@@ -21,8 +21,8 @@ FROM
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @pattern VarChar(3) -- String
-SET     @pattern = '%1%'
+DECLARE @pattern_1 VarChar(3) -- String
+SET     @pattern_1 = '%1%'
 DECLARE @take Int32
 SET     @take = 10
 
@@ -42,7 +42,7 @@ FROM
 		FROM
 			`Person` `p_1`
 		WHERE
-			Cast(`p_1`.`PersonID` as CHAR(11)) LIKE @pattern ESCAPE '~'
+			Cast(`p_1`.`PersonID` as CHAR(11)) LIKE @pattern_1 ESCAPE '~'
 	) `t1`
 LIMIT @take
 
