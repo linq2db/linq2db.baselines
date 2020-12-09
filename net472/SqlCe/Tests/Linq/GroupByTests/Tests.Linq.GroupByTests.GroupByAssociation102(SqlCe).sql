@@ -15,10 +15,10 @@ FROM
 					SELECT
 						[a_Parent_1].[ParentID]
 					FROM
-						[GrandChild] [keyParam]
-							INNER JOIN [Parent] [a_Parent_1] ON [keyParam].[ParentID] = [a_Parent_1].[ParentID]
+						[GrandChild] [_]
+							INNER JOIN [Parent] [a_Parent_1] ON [_].[ParentID] = [a_Parent_1].[ParentID]
 					WHERE
-						[keyParam].[ChildID] >= 20
+						[_].[ChildID] >= 20
 					GROUP BY
 						[a_Parent_1].[ParentID]
 				) [t1] ON [a_Parent].[ParentID] = [t1].[ParentID]
