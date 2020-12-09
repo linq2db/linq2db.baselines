@@ -8,8 +8,7 @@ SELECT
 		FROM
 			"Child" c_1
 		WHERE
-			p."ParentID" = c_1."ParentID" AND c_1."ParentID" > 1 AND
-			c_1."ParentID" < 10
+			p."ParentID" = c_1."ParentID" AND c_1."ParentID" > 1 AND c_1."ParentID" < 10
 	)
 FROM
 	"Parent" p
@@ -20,7 +19,6 @@ WHERE
 		FROM
 			"Child" c_2
 		WHERE
-			p."ParentID" = c_2."ParentID" AND c_2."ParentID" > 1 AND
-			c_2."ParentID" < 10
+			p."ParentID" = c_2."ParentID" AND c_2."ParentID" > 1 AND c_2."ParentID" < 10
 	)
 

@@ -23,17 +23,21 @@ BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"TakeSkipClass" t1
-		GROUP BY
-			t1."Value"
-		HAVING
-			Count(*) > 1
-		LIMIT 1
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"TakeSkipClass" t1
+			GROUP BY
+				t1."Value"
+			HAVING
+				Count(*) > 1
+			LIMIT 1
+		)
+			THEN True
+		ELSE False
+	END
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
