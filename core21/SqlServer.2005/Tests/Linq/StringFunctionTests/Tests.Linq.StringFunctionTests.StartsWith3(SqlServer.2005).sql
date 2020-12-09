@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@str LIKE (Replace(Replace(Replace([p].[FirstName], N'~', N'~~'), N'%', N'~%'), N'_', N'~_') + N'%') ESCAPE N'~'
+	@str LIKE Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace([p].[FirstName], N'~', N'~' + N'~'), N'%', N'~' + N'%'), N'_', N'~' + N'_'), N'?', N'~' + N'?'), N'*', N'~' + N'*'), N'#', N'~' + N'#'), N'[', N'~' + N'['), N']', N'~' + N']') + N'%' ESCAPE N'~'
 

@@ -25,10 +25,10 @@ SELECT 'Value9'
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @skip Int -- Int32
-SET     @skip = 3
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 4
+DECLARE @skip_3 Int -- Int32
+SET     @skip_3 = 3
+DECLARE @skip_4 Int -- Int32
+SET     @skip_4 = 4
 
 SELECT
 	[t2].[Value_1]
@@ -41,7 +41,7 @@ FROM
 			[TakeSkipClass] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @skip_1
+	[t2].[RN] > @skip_3 AND [t2].[RN] <= @skip_4
 
 BeforeExecute
 -- SqlServer.2005
