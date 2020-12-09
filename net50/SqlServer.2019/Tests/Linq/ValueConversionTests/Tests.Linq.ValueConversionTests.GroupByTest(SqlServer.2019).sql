@@ -11,6 +11,7 @@ CREATE TABLE [ValueConversion]
 	[EnumWithNull]            VarChar(50)       NULL,
 	[EnumWithNullDeclarative] VarChar(50)       NULL,
 	[BoolValue]               VarChar(1)    NOT NULL,
+	[DateTimeNullable]        DateTime          NULL,
 
 	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -27,19 +28,20 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
-(1,N'{"some":"str1"}',N'[{"Value":"Value1"}]',N'Value1','Value1','Value1','Value1','Y'),
-(2,N'{"some":"str2"}',N'[{"Value":"Value2"}]',N'Value2','Value2','Value2','Value2','N'),
-(3,N'{"some":"str3"}',N'[{"Value":"Value3"}]',N'Value3','Value3','Value3','Value3','N'),
-(4,N'{"some":"str4"}',N'[{"Value":"Value4"}]',N'Value1',NULL,NULL,NULL,'N'),
-(5,N'{"some":"str5"}',N'[{"Value":"Value5"}]',N'Value2','Value1','Value1','Value1','Y'),
-(6,N'{"some":"str6"}',N'[{"Value":"Value6"}]',N'Value3','Value2','Value2','Value2','N'),
-(7,N'{"some":"str7"}',N'[{"Value":"Value7"}]',N'Value1','Value3','Value3','Value3','N'),
-(8,N'{"some":"str8"}',N'[{"Value":"Value8"}]',N'Value2',NULL,NULL,NULL,'N'),
-(9,N'{"some":"str9"}',N'[{"Value":"Value9"}]',N'Value3','Value1','Value1','Value1','Y'),
-(10,NULL,NULL,N'Value1','Value2','Value2','Value2','N')
+(1,N'{"some":"str1"}',N'[{"Value":"Value1"}]',N'Value1','Value1','Value1','Value1','Y',NULL),
+(2,N'{"some":"str2"}',N'[{"Value":"Value2"}]',N'Value2','Value2','Value2','Value2','N','2020-02-29T00:00:00'),
+(3,N'{"some":"str3"}',N'[{"Value":"Value3"}]',N'Value3','Value3','Value3','Value3','N','2020-02-29T00:00:00'),
+(4,N'{"some":"str4"}',N'[{"Value":"Value4"}]',N'Value1',NULL,NULL,NULL,'N',NULL),
+(5,N'{"some":"str5"}',N'[{"Value":"Value5"}]',N'Value2','Value1','Value1','Value1','Y','2020-02-29T00:00:00'),
+(6,N'{"some":"str6"}',N'[{"Value":"Value6"}]',N'Value3','Value2','Value2','Value2','N','2020-02-29T00:00:00'),
+(7,N'{"some":"str7"}',N'[{"Value":"Value7"}]',N'Value1','Value3','Value3','Value3','N',NULL),
+(8,N'{"some":"str8"}',N'[{"Value":"Value8"}]',N'Value2',NULL,NULL,NULL,'N','2020-02-29T00:00:00'),
+(9,N'{"some":"str9"}',N'[{"Value":"Value9"}]',N'Value3','Value1','Value1','Value1','Y','2020-02-29T00:00:00'),
+(10,NULL,NULL,N'Value1','Value2','Value2','Value2','N',NULL)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -57,10 +59,10 @@ GROUP BY
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @Value2_1 NVarChar(200) -- String
-SET     @Value2_1 = N'[{"Value":"Value1"}]'
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 1
+DECLARE @Value2 NVarChar(200) -- String
+SET     @Value2 = N'[{"Value":"Value1"}]'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
 
 SELECT
 	[t].[Id],
@@ -70,11 +72,12 @@ SELECT
 	[t].[EnumNullable],
 	[t].[EnumWithNull],
 	[t].[EnumWithNullDeclarative],
-	[t].[BoolValue]
+	[t].[BoolValue],
+	[t].[DateTimeNullable]
 FROM
 	[ValueConversion] [t]
 WHERE
-	@Value2_1 = [t].[Value2] AND [t].[Id] = @Id_1
+	@Value2 = [t].[Value2] AND [t].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

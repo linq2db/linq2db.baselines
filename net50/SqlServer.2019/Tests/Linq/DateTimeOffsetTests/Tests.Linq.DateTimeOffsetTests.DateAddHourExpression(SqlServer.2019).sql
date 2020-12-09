@@ -47,11 +47,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @p1 Int -- Int32
-SET     @p1 = 1
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 1
 
 SELECT
-	DateAdd(hour, @p1, [t].[TransactionDate])
+	DateAdd(hour, @p_1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 
