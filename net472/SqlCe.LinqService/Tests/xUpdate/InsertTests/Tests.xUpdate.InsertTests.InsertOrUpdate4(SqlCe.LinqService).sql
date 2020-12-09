@@ -26,15 +26,13 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @i Int -- Int32
-SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
 	[Patient]
 SET
-	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
+	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]))
 WHERE
 	[Patient].[PersonID] = @id
 
@@ -44,8 +42,6 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @diagnosis NVarChar(3) -- String
 SET     @diagnosis = 'abc'
-DECLARE @i Int -- Int32
-SET     @i = 0
 
 INSERT INTO [Patient]
 (
@@ -55,7 +51,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	Convert(NVarChar(11), Len(@diagnosis) + @i)
+	Convert(NVarChar(11), Len(@diagnosis))
 )
 
 BeforeExecute
