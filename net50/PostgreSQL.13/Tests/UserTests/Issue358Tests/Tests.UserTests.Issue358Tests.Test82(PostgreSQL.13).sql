@@ -15,13 +15,9 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	(CASE
+	CASE
 		WHEN t1."BigIntValue" IN (2)
 			THEN True
 		ELSE False
-	END = True AND CASE
-		WHEN t1."BigIntValue" IN (2)
-			THEN True
-		ELSE False
-	END IS NOT NULL)
+	END = True
 
