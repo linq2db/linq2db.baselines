@@ -7,17 +7,17 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			Child keyParam
+			Child ch
 		WHERE
-			t1.ParentID = keyParam.ParentID AND keyParam.ChildID > 20
+			t1.ParentID = ch.ParentID AND ch.ChildID > 20
 	),
 	(
 		SELECT
 			Count(*)
 		FROM
-			Child keyParam_1
+			Child ch_1
 		WHERE
-			t1.ParentID = keyParam_1.ParentID AND keyParam_1.ChildID > 10
+			t1.ParentID = ch_1.ParentID AND ch_1.ChildID > 10
 	)
 FROM
 	Child t1
