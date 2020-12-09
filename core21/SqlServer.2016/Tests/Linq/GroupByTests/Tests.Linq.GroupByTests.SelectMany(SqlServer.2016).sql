@@ -2,8 +2,8 @@
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
+	[c_1].[ParentID],
+	[c_1].[ChildID]
 FROM
 	(
 		SELECT
@@ -13,5 +13,5 @@ FROM
 		GROUP BY
 			[t1].[ParentID]
 	) [cp]
-		INNER JOIN [Child] [keyParam] ON [cp].[ParentID] = [keyParam].[ParentID]
+		INNER JOIN [Child] [c_1] ON [cp].[ParentID] = [c_1].[ParentID]
 
