@@ -296,8 +296,7 @@ DELETE WHERE
 	FROM
 		"Patient" a_Patient_1
 	WHERE
-		"Source"."Diagnosis" = 'very sick' AND a_Patient_1."Diagnosis" = 'very sick' AND
-		Target."PersonID" = a_Patient_1."PersonID"
+		"Source"."Diagnosis" = 'very sick' AND a_Patient_1."Diagnosis" = 'very sick' AND Target."PersonID" = a_Patient_1."PersonID"
 )
 
 BeforeExecute

@@ -10,8 +10,7 @@ SELECT
 		FROM
 			"Child" ch
 		WHERE
-			ch."ParentID" = p."ParentID" AND ch."ChildID" = ch."ParentID" * 10 + 1 AND
-			ROWNUM <= :take
+			ch."ParentID" = p."ParentID" AND ch."ChildID" = ch."ParentID" * 10 + 1 AND ROWNUM <= :take
 	)
 FROM
 	"Parent" p

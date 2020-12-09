@@ -51,10 +51,7 @@ FROM
 		FROM
 			"Issue2564Table" m_1
 		WHERE
-			m_1."TimestampGone" IS NOT NULL AND
-			m_1."TimestampGenerated" >= :from_1 AND
-			m_1."TimestampGenerated" <= :to_1 AND
-			m_1."MessageClassName" = 'Error'
+			m_1."TimestampGone" IS NOT NULL AND m_1."TimestampGenerated" >= :from_1 AND m_1."TimestampGenerated" <= :to_1 AND m_1."MessageClassName" = 'Error'
 	) t1
 GROUP BY
 	t1."Key_1",

@@ -38,7 +38,8 @@ BeforeExecute
 
 SELECT
 	t1."Id",
-	t1."Value"
+	t1."Value",
+	'M' || Cast(t1."Id" as VarChar2(11))
 FROM
 	"InstanceClass" t1
 

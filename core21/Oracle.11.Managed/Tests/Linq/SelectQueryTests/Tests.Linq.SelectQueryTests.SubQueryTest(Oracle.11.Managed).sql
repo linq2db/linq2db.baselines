@@ -20,8 +20,8 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1."Value1",
-	t1."Value2"
+	t2."Value1",
+	t2."Value2"
 FROM
 	(
 		SELECT
@@ -33,10 +33,16 @@ FROM
 			t."Value" = 1
 		UNION
 		SELECT
-			CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
-			CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
-		FROM SYS.DUAL
-	) t1
+			t1."Value1",
+			t1."Value2"
+		FROM
+			(
+				SELECT
+					CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
+					CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
+				FROM SYS.DUAL
+			) t1
+	) t2
 WHERE
 	ROWNUM <= :take
 

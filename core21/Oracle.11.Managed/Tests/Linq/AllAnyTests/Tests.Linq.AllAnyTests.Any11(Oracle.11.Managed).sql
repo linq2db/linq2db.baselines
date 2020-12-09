@@ -16,7 +16,6 @@ WHERE
 		FROM
 			"GrandChild" x
 		WHERE
-			c_1."ParentID" = x."ParentID" AND c_1."ChildID" = x."ChildID" AND
-			x."ParentID" < 0
+			c_1."ParentID" = x."ParentID" AND c_1."ChildID" = x."ChildID" AND x."ParentID" < 0
 	)
 

@@ -40,8 +40,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = '擊敗奴隸' AND p."LastName" = 'Юникодкин' AND
-	ROWNUM <= :take
+	p."FirstName" = '擊敗奴隸' AND p."LastName" = 'Юникодкин' AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

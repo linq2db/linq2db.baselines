@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @p1 Int32
-SET     @p1 = 5000
+DECLARE @p_1 Int32
+SET     @p_1 = 5000
 
 SELECT
 	key_data_result."ParentID",
@@ -18,7 +18,7 @@ FROM
 				FROM
 					"Parent" t
 				WHERE
-					t."ParentID" > 0 AND ROWNUM <= :p1
+					t."ParentID" > 0 AND ROWNUM <= :p_1
 			) t1
 	) key_data_result
 		INNER JOIN "Child" c_1 ON c_1."ParentID" = key_data_result."ParentID" AND c_1."ChildID" > -100
@@ -32,14 +32,18 @@ SET     @take_1 = 5000
 
 SELECT
 	t."ParentID",
-	CASE WHEN EXISTS(
-		SELECT
-			*
-		FROM
-			"Child" c_1
-		WHERE
-			c_1."ParentID" = t."ParentID" AND c_1."ChildID" > -100
-	) THEN 1 ELSE 0 END,
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" c_1
+			WHERE
+				c_1."ParentID" = t."ParentID" AND c_1."ChildID" > -100
+		)
+			THEN 1
+		ELSE 0
+	END,
 	(
 		SELECT
 			Count(*)
@@ -54,10 +58,7 @@ SELECT
 		FROM
 			"Child" c_3
 		WHERE
-			c_3."ParentID" = t."ParentID" AND
-			c_3."ChildID" > -100 AND
-			c_3."ParentID" > 0 AND
-			ROWNUM <= :take
+			c_3."ParentID" = t."ParentID" AND c_3."ChildID" > -100 AND c_3."ParentID" > 0 AND ROWNUM <= :take
 	)
 FROM
 	"Parent" t

@@ -16,6 +16,5 @@ WHERE
 		WHEN :Length_1 = 0 AND Length(p."LastName") > 2
 			THEN 2
 		ELSE InStr(p."LastName", 'e', 3) - 1
-	END = 4 AND
-	p."PersonID" = 2
+	END = 4 AND p."PersonID" = 2
 

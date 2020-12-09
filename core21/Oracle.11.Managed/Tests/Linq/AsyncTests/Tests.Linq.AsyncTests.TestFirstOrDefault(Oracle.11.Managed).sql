@@ -17,6 +17,5 @@ SELECT
 FROM
 	"Parent" o
 WHERE
-	(o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param) AND
-	ROWNUM <= :take
+	(o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param) AND ROWNUM <= :take
 

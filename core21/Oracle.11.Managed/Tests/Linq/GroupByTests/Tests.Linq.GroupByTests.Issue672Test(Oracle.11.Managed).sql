@@ -99,15 +99,14 @@ SELECT
 FROM
 	"Stone" s
 WHERE
-	(s."Enabled" = 1 AND s."Enabled" IS NOT NULL) AND s."Name" NOT LIKE 'level - %' AND
-	Length(s."ImageFullUrl") > 0
+	(s."Enabled" = 1 AND s."Enabled" IS NOT NULL) AND s."Name" NOT LIKE 'level - %' ESCAPE '~' AND Length(s."ImageFullUrl") > 0
 GROUP BY
 	s."Name"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @Name_1 Varchar2(6) -- String
-SET     @Name_1 = 'group1'
+DECLARE @Name Varchar2(6) -- String
+SET     @Name = 'group1'
 
 SELECT
 	s."Id",
@@ -117,15 +116,12 @@ SELECT
 FROM
 	"Stone" s
 WHERE
-	(s."Enabled" = 1 AND s."Enabled" IS NOT NULL) AND
-	s."Name" NOT LIKE 'level - %' AND
-	Length(s."ImageFullUrl") > 0 AND
-	s."Name" = :Name_1
+	(s."Enabled" = 1 AND s."Enabled" IS NOT NULL) AND s."Name" NOT LIKE 'level - %' ESCAPE '~' AND Length(s."ImageFullUrl") > 0 AND s."Name" = :Name
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @Name_1 Varchar2(6) -- String
-SET     @Name_1 = 'group2'
+DECLARE @Name Varchar2(6) -- String
+SET     @Name = 'group2'
 
 SELECT
 	s."Id",
@@ -135,10 +131,7 @@ SELECT
 FROM
 	"Stone" s
 WHERE
-	(s."Enabled" = 1 AND s."Enabled" IS NOT NULL) AND
-	s."Name" NOT LIKE 'level - %' AND
-	Length(s."ImageFullUrl") > 0 AND
-	s."Name" = :Name_1
+	(s."Enabled" = 1 AND s."Enabled" IS NOT NULL) AND s."Name" NOT LIKE 'level - %' ESCAPE '~' AND Length(s."ImageFullUrl") > 0 AND s."Name" = :Name
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

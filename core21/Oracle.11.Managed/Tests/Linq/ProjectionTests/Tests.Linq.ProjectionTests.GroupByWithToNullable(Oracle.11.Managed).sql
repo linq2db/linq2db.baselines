@@ -4,14 +4,14 @@ DECLARE @take Int32
 SET     @take = 1000
 
 SELECT
-	t1."Diagnosis",
-	t1."PersonID",
+	t1."value_1",
+	t1."id",
 	t1."y"
 FROM
 	(
 		SELECT
-			a_Patient."Diagnosis",
-			a_Patient."PersonID",
+			a_Patient."Diagnosis" as "value_1",
+			a_Patient."PersonID" as "id",
 			Round(AVG(selectParam."PersonID"), 27) as "y"
 		FROM
 			"Person" selectParam

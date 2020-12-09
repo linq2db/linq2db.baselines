@@ -1,60 +1,33 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE T1
-		(
-			"InstrumentId"         Int          NOT NULL,
-			"InstrumentCode"       VarChar(255)     NULL,
-			"CreateDate"           timestamp    NOT NULL,
-			"SourceInstrumentCode" VarChar(255)     NULL,
+CREATE TABLE T1
+(
+	"InstrumentId"         Int          NOT NULL,
+	"InstrumentCode"       VarChar(255)     NULL,
+	"CreateDate"           timestamp    NOT NULL,
+	"SourceInstrumentCode" VarChar(255)     NULL,
 
-			CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
+	CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
+)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE T2
-		(
-			"InstrumentId" Int NOT NULL,
-			"IndexId"      Int NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
+CREATE TABLE T2
+(
+	"InstrumentId" Int NOT NULL,
+	"IndexId"      Int NOT NULL
+)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE T3
-		(
-			"InstrumentId" Int NOT NULL,
-			"IndexId"      Int NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
+CREATE TABLE T3
+(
+	"InstrumentId" Int NOT NULL,
+	"IndexId"      Int NOT NULL
+)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -200,8 +173,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @cond Varchar2(4) -- String
-SET     @cond = 'aaa%'
+DECLARE @cond_1 Varchar2(4) -- String
+SET     @cond_1 = 'aaa%'
 DECLARE @uptoDate TimeStamp -- DateTime
 SET     @uptoDate = TO_TIMESTAMP('2020-02-29 17:54:55.123123', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
@@ -213,44 +186,22 @@ FROM
 		INNER JOIN T3 w ON idx."IndexId" = w."IndexId"
 		INNER JOIN T1 ins ON w."InstrumentId" = ins."InstrumentId"
 WHERE
-	ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond ESCAPE '~' AND
-	ins_1."CreateDate" <= :uptoDate
+	ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond_1 ESCAPE '~' AND ins_1."CreateDate" <= :uptoDate
 ORDER BY
 	ins."SourceInstrumentCode"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE T3';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
+DROP TABLE T3
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE T2';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
+DROP TABLE T2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE T1';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
+DROP TABLE T1
 

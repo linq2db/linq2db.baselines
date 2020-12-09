@@ -158,8 +158,7 @@ SELECT
 FROM
 	"xxPerson_o" p
 WHERE
-	p."FirstName" = 'Steven' AND p."LastName" = 'King' AND
-	p."Gender" = 'M'
+	p."FirstName" = 'Steven' AND p."LastName" = 'King' AND p."Gender" = 'M'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

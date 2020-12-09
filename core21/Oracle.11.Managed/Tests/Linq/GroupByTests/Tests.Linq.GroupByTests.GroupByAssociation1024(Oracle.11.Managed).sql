@@ -51,8 +51,5 @@ FROM
 			a_Parent_4."Value1"
 	) g_1
 WHERE
-	g_1."cnt" > 2 AND
-	g_1."Sum_1" > 0 AND
-	g_1."Max_1" > 0 AND
-	g_1."ex" > 0
+	g_1."cnt" > 2 AND g_1."Sum_1" > 0 AND g_1."Max_1" > 0 AND g_1."ex" > 0
 
