@@ -22,16 +22,20 @@ BeforeExecute
 -- Firebird
 
 SELECT
-	CASE WHEN EXISTS(
-		SELECT FIRST 1
-			*
-		FROM
-			"TakeSkipClass" "t1"
-		GROUP BY
-			"t1"."Value"
-		HAVING
-			Count(*) > 1
-	) THEN 1 ELSE 0 END
+	CASE
+		WHEN EXISTS(
+			SELECT FIRST 1
+				"t1"."Value"
+			FROM
+				"TakeSkipClass" "t1"
+			GROUP BY
+				"t1"."Value"
+			HAVING
+				Count(*) > 1
+		)
+			THEN 1
+		ELSE 0
+	END
 FROM rdb$database
 
 BeforeExecute

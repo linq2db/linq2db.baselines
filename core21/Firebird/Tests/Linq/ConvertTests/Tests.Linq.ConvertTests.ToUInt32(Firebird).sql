@@ -2,14 +2,9 @@
 -- Firebird
 
 SELECT
-	"p"."c1"
+	Cast(Floor("t"."MoneyValue") as BigInt)
 FROM
-	(
-		SELECT
-			Cast(Floor("t"."MoneyValue") as BigInt) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	"p"."c1" > 0
+	Cast(Floor("t"."MoneyValue") as BigInt) > 0
 
