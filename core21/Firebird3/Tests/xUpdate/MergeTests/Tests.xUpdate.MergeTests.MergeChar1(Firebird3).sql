@@ -23,8 +23,8 @@ RETURNING
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 3
+DECLARE @id Integer -- Int32
+SET     @id = 3
 
 MERGE INTO "AllTypes" "Target"
 USING (
@@ -36,7 +36,7 @@ USING (
 	FROM
 		"AllTypes" "t"
 	WHERE
-		"t".ID = @id_1
+		"t".ID = @id
 ) "Source"
 (
 	ID,
