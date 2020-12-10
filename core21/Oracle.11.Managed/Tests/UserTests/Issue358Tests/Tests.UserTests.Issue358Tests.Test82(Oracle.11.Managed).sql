@@ -15,9 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	CASE
-		WHEN t1."BigIntValue" IN (2)
-			THEN 1
-		ELSE 0
-	END = 1
+	t1."BigIntValue" IN (2)
 
