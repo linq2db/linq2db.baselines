@@ -17,30 +17,30 @@ FROM
 			) as "cnt",
 			(
 				SELECT
-					Sum(keyParam_1."ParentID")
+					Sum(p."ParentID")
 				FROM
-					"GrandChild" keyParam_1
-						INNER JOIN "Parent" a_Parent_1 ON keyParam_1."ParentID" = a_Parent_1."ParentID"
+					"GrandChild" p
+						INNER JOIN "Parent" a_Parent_1 ON p."ParentID" = a_Parent_1."ParentID"
 				WHERE
-					a_Parent_4."ParentID" = a_Parent_1."ParentID" AND keyParam_1."ChildID" >= 19
+					a_Parent_4."ParentID" = a_Parent_1."ParentID" AND p."ChildID" >= 19
 			) as "Sum_1",
 			(
 				SELECT
-					Max(keyParam_2."ParentID")
+					Max(p_1."ParentID")
 				FROM
-					"GrandChild" keyParam_2
-						INNER JOIN "Parent" a_Parent_2 ON keyParam_2."ParentID" = a_Parent_2."ParentID"
+					"GrandChild" p_1
+						INNER JOIN "Parent" a_Parent_2 ON p_1."ParentID" = a_Parent_2."ParentID"
 				WHERE
-					a_Parent_4."ParentID" = a_Parent_2."ParentID" AND keyParam_2."ChildID" >= 19
+					a_Parent_4."ParentID" = a_Parent_2."ParentID" AND p_1."ChildID" >= 19
 			) as "Max_1",
 			(
 				SELECT
-					Max(keyParam_3."ParentID")
+					Max(p_2."ParentID")
 				FROM
-					"GrandChild" keyParam_3
-						INNER JOIN "Parent" a_Parent_3 ON keyParam_3."ParentID" = a_Parent_3."ParentID"
+					"GrandChild" p_2
+						INNER JOIN "Parent" a_Parent_3 ON p_2."ParentID" = a_Parent_3."ParentID"
 				WHERE
-					a_Parent_4."ParentID" = a_Parent_3."ParentID" AND keyParam_3."ChildID" >= 18
+					a_Parent_4."ParentID" = a_Parent_3."ParentID" AND p_2."ChildID" >= 18
 			) as "ex",
 			a_Parent_4."Value1"
 		FROM

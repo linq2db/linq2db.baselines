@@ -5,23 +5,23 @@ SELECT
 	Count([t1].[ParentID]),
 	(
 		SELECT
-			Sum([keyParam].[ChildID])
+			Sum([c_1].[ChildID])
 		FROM
-			[Child] [keyParam]
+			[Child] [c_1]
 		WHERE
-			[t2].[ParentID] = [keyParam].[ParentID] AND [keyParam].[ChildID] > 30
+			[t2].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] > 30
 	)
 FROM
 	[Child] [t2]
 		LEFT JOIN (
 			SELECT
-				[keyParam_1].[ParentID]
+				[_].[ParentID]
 			FROM
-				[Child] [keyParam_1]
+				[Child] [_]
 			WHERE
-				[keyParam_1].[ChildID] > 30
+				[_].[ChildID] > 30
 			GROUP BY
-				[keyParam_1].[ParentID]
+				[_].[ParentID]
 		) [t1] ON ([t2].[ParentID] = [t1].[ParentID])
 GROUP BY
 	[t2].[ParentID]

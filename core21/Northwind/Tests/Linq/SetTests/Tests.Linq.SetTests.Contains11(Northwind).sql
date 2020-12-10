@@ -7,8 +7,8 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[EmployeeTerritories] [keyParam]
-				LEFT JOIN [Employees] [a_Employee] ON [keyParam].[EmployeeID] = [a_Employee].[EmployeeID]
+			[EmployeeTerritories] [t]
+				LEFT JOIN [Employees] [a_Employee] ON [t].[EmployeeID] = [a_Employee].[EmployeeID]
 		WHERE
 			[a_Employee_1].[EmployeeID] = [a_Employee].[EmployeeID] AND
 			[a_Employee].[FirstName] LIKE N'%an%'

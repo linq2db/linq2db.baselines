@@ -18,13 +18,13 @@ FROM
 			) as cnt,
 			(
 				SELECT
-					Sum("keyParam_1"."ParentID")
+					Sum(p."ParentID")
 				FROM
-					"GrandChild" "keyParam_1"
-						INNER JOIN "Parent" "a_Parent_1" ON "keyParam_1"."ParentID" = "a_Parent_1"."ParentID"
+					"GrandChild" p
+						INNER JOIN "Parent" "a_Parent_1" ON p."ParentID" = "a_Parent_1"."ParentID"
 				WHERE
 					"a_Parent_2"."ParentID" = "a_Parent_1"."ParentID" AND
-					"keyParam_1"."ChildID" >= 19
+					p."ChildID" >= 19
 			) as ex,
 			"a_Parent_2"."Value1"
 		FROM

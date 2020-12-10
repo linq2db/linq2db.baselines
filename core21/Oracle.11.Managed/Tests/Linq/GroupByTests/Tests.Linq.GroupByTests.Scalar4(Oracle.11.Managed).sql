@@ -15,11 +15,11 @@ FROM
 		SELECT
 			(
 				SELECT
-					Min(keyParam_1."ChildID")
+					Min(ch."ChildID")
 				FROM
-					"Child" keyParam_1
+					"Child" ch
 				WHERE
-					t1."ParentID" = keyParam_1."ParentID" AND keyParam_1."ParentID" > 2
+					t1."ParentID" = ch."ParentID" AND ch."ParentID" > 2
 			) as "ex",
 			t1."ParentID"
 		FROM
