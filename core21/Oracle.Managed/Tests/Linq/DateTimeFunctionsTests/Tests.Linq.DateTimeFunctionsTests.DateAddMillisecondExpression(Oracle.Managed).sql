@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p1 Int32
-SET     @p1 = 226
+DECLARE @p_1 Int32
+SET     @p_1 = 226
 
 SELECT
-	t."DateTimeValue" + :p1 * INTERVAL '0.001' SECOND
+	t."DateTimeValue" + :p_1 * INTERVAL '0.001' SECOND
 FROM
 	"LinqDataTypes" t
 

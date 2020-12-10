@@ -28,8 +28,8 @@ RETURNING
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @id_1 Int32
-SET     @id_1 = 3
+DECLARE @id Int32
+SET     @id = 3
 
 MERGE INTO "AllTypes" Target
 USING (
@@ -41,7 +41,7 @@ USING (
 	FROM
 		"AllTypes" t
 	WHERE
-		t.ID = :id_1
+		t.ID = :id
 ) "Source"
 ON (Target.ID = "Source".ID)
 

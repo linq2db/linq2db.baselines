@@ -36,7 +36,7 @@ UPDATE
 SET
 	"Person"."LastName" = Cast((Length(:name) + :idx) as VarChar2(11))
 WHERE
-	"Person"."FirstName" LIKE 'Update14%'
+	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -46,7 +46,7 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Update14%'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -54,5 +54,5 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Update14%'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 

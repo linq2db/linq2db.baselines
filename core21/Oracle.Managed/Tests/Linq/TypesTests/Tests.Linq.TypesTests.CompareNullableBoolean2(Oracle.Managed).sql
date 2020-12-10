@@ -16,8 +16,8 @@ FROM
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @param2_1 Int16
-SET     @param2_1 = 0
+DECLARE @param4 Int16
+SET     @param4 = 0
 
 SELECT
 	t1.ID,
@@ -32,5 +32,5 @@ FROM
 	"LinqDataTypes" t1
 		INNER JOIN "LinqDataTypes" t2 ON t1.ID = t2.ID
 WHERE
-	t1."BoolValue" = :param2_1
+	t1."BoolValue" = :param4
 
