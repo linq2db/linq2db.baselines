@@ -2,8 +2,8 @@
 -- Access AccessOleDb
 DECLARE @s VarWChar(7) -- String
 SET     @s = '123-456'
-DECLARE @toTest VarWChar(3) -- String
-SET     @toTest = '%-%'
+DECLARE @toTest VarWChar(5) -- String
+SET     @toTest = '%[-]%'
 
 SELECT
 	[p].[FirstName],

@@ -143,7 +143,7 @@ SELECT TOP 2
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE '%-%'
+	[r].[Value] LIKE '%[-]%'
 
 BeforeExecute
 -- Access AccessOleDb
@@ -189,7 +189,7 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE '%[[]0-9]%'
+	[r].[Value] LIKE '%[[]0[-]9]%'
 
 BeforeExecute
 -- Access AccessOleDb
