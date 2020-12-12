@@ -17,7 +17,7 @@ FROM
 	) [p_1]
 WHERE
 	CASE
-		WHEN CharIndex('123', Substring([p_1].[FirstName], 6, Len([p_1].[FirstName]))) + 6 - 1 = 0
+		WHEN CharIndex('123', Substring([p_1].[FirstName], 6, Len([p_1].[FirstName]))) + 5 = 0
 			THEN -1
 		ELSE Len([p_1].[FirstName]) - CharIndex('321', Reverse(Substring([p_1].[FirstName], 6, Len([p_1].[FirstName]) - 5))) - 2
 	END = 8
