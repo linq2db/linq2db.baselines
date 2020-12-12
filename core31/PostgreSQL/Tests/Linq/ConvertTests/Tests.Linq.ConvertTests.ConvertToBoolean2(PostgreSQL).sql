@@ -10,5 +10,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	(NOT (t."MoneyValue" - 4.5 <> 0))
+	(t."MoneyValue" = 4.5)
 

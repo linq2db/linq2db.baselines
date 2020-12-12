@@ -15,9 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	CASE
-		WHEN t1."BoolValue" IN (True)
-			THEN True
-		ELSE False
-	END = False
+	(t1."BoolValue" NOT IN (True) OR t1."BoolValue" IS NULL)
 
