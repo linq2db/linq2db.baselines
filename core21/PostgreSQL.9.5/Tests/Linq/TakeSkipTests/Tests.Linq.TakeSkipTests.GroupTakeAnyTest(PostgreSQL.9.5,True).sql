@@ -28,7 +28,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				t1."Value"
 			FROM
 				"TakeSkipClass" t1
 			GROUP BY
