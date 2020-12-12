@@ -15,9 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	CASE
-		WHEN "_"."BigIntValue" IN (2)
-			THEN 1
-		ELSE 0
-	END = 0
+	("_"."BigIntValue" NOT IN (2) OR "_"."BigIntValue" IS NULL)
 
