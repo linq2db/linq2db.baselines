@@ -17,7 +17,7 @@ FROM
 	) p_1
 WHERE
 	CASE
-		WHEN Position('123' in Substring(p_1."FirstName", 6, Length(p_1."FirstName") - 6)) + 6 - 1 = 0
+		WHEN Position('123' in Substring(p_1."FirstName", 6, Length(p_1."FirstName") - 6)) + 5 = 0
 			THEN -1
 		ELSE Length(p_1."FirstName") - Position('321' in Reverse(Substring(p_1."FirstName", 6, Length(p_1."FirstName") - 5))) - 2
 	END = 8
