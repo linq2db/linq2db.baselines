@@ -27,7 +27,7 @@ SET     @take = 1
 SELECT
 	IIF(EXISTS(
 		SELECT TOP (@take)
-			*
+			[t1].[Value]
 		FROM
 			[TakeSkipClass] [t1]
 		GROUP BY
