@@ -83,17 +83,17 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[keyParam].[Fax],
-	[keyParam].[Phone],
-	[keyParam].[Country],
-	[keyParam].[PostalCode],
-	[keyParam].[Region],
-	[keyParam].[City],
-	[keyParam].[Address],
-	[keyParam].[ContactTitle],
-	[keyParam].[ContactName],
-	[keyParam].[CompanyName],
-	[keyParam].[CustomerID]
+	[c_1].[Fax],
+	[c_1].[Phone],
+	[c_1].[Country],
+	[c_1].[PostalCode],
+	[c_1].[Region],
+	[c_1].[City],
+	[c_1].[Address],
+	[c_1].[ContactTitle],
+	[c_1].[ContactName],
+	[c_1].[CompanyName],
+	[c_1].[CustomerID]
 FROM
 	(
 		SELECT
@@ -103,5 +103,5 @@ FROM
 		GROUP BY
 			[t1].[City]
 	) [cp]
-		INNER JOIN [Customers] [keyParam] ON ([cp].[City] = [keyParam].[City] OR [cp].[City] IS NULL AND [keyParam].[City] IS NULL)
+		INNER JOIN [Customers] [c_1] ON ([cp].[City] = [c_1].[City] OR [cp].[City] IS NULL AND [c_1].[City] IS NULL)
 
