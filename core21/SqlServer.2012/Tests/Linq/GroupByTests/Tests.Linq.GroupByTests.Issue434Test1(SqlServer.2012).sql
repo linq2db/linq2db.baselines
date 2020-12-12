@@ -11,7 +11,7 @@ FROM
 	[Person] [p]
 		INNER JOIN [Patient] [_gjd_ri] ON [_gjd_ri].[PersonID] = [p].[PersonID]
 WHERE
-	Lower([p].[FirstName]) LIKE N'%' + Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(@p_1), N'~', N'~' + N'~'), N'%', N'~' + N'%'), N'_', N'~' + N'_'), N'?', N'~' + N'?'), N'*', N'~' + N'*'), N'#', N'~' + N'#'), N'[', N'~' + N'['), N']', N'~' + N']') + N'%' ESCAPE N'~'
+	Lower([p].[FirstName]) LIKE N'%' + Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(@p_1), N'~', N'~~'), N'%', N'~%'), N'_', N'~_'), N'?', N'~?'), N'*', N'~*'), N'#', N'~#'), N'[', N'~['), N']', N'~]') + N'%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2012
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower([p].[FirstName]) LIKE N'%' + Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(@input_1), N'~', N'~' + N'~'), N'%', N'~' + N'%'), N'_', N'~' + N'_'), N'?', N'~' + N'?'), N'*', N'~' + N'*'), N'#', N'~' + N'#'), N'[', N'~' + N'['), N']', N'~' + N']') + N'%' ESCAPE N'~'
+	Lower([p].[FirstName]) LIKE N'%' + Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(@input_1), N'~', N'~~'), N'%', N'~%'), N'_', N'~_'), N'?', N'~?'), N'*', N'~*'), N'#', N'~#'), N'[', N'~['), N']', N'~]') + N'%' ESCAPE N'~'
 
