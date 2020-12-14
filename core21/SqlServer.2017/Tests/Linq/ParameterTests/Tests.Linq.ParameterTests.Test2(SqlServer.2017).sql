@@ -5,7 +5,9 @@ SET     @take = 1
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 DECLARE @id2 Int -- Int32
-SET     @id2 = 10000
+SET     @id2 = 1
+DECLARE @id3 Int -- Int32
+SET     @id3 = 10000
 
 SELECT TOP (@take)
 	[p].[ParentID],
@@ -13,7 +15,7 @@ SELECT TOP (@take)
 FROM
 	[Parent] [p]
 WHERE
-	(([p].[ParentID] = @id1 OR [p].[ParentID] >= @id1) OR [p].[ParentID] >= @id2)
+	(([p].[ParentID] = @id1 OR [p].[ParentID] >= @id2) OR [p].[ParentID] >= @id3)
 ORDER BY
 	[p].[ParentID]
 
@@ -24,7 +26,9 @@ SET     @take = 1
 DECLARE @id1 Int -- Int32
 SET     @id1 = 2
 DECLARE @id2 Int -- Int32
-SET     @id2 = 10000
+SET     @id2 = 2
+DECLARE @id3 Int -- Int32
+SET     @id3 = 10000
 
 SELECT TOP (@take)
 	[p].[ParentID],
@@ -32,7 +36,7 @@ SELECT TOP (@take)
 FROM
 	[Parent] [p]
 WHERE
-	(([p].[ParentID] = @id1 OR [p].[ParentID] >= @id1) OR [p].[ParentID] >= @id2)
+	(([p].[ParentID] = @id1 OR [p].[ParentID] >= @id2) OR [p].[ParentID] >= @id3)
 ORDER BY
 	[p].[ParentID]
 

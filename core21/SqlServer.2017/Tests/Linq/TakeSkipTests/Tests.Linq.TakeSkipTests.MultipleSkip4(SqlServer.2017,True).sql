@@ -25,8 +25,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @skip Int -- Int32
-SET     @skip = 6
+DECLARE @skip_3 Int -- Int32
+SET     @skip_3 = 6
 
 SELECT
 	[t1].[Value]
@@ -34,7 +34,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET @skip ROWS
+OFFSET @skip_3 ROWS
 
 BeforeExecute
 -- SqlServer.2017
