@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
--- SQLite.MS SQLite
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
