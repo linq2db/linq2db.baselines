@@ -11,8 +11,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @patient_1 Int -- Int32
-SET     @patient_1 = 2
+DECLARE @patient Int -- Int32
+SET     @patient = 2
 
 MERGE INTO [Person] [Target]
 USING (
@@ -26,7 +26,7 @@ USING (
 		[Person] [t]
 			LEFT JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
 	WHERE
-		[a_Patient].[PersonID] = @patient_1
+		[a_Patient].[PersonID] = @patient
 ) [Source]
 (
 	[ID],
@@ -66,14 +66,14 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	FROM
 		[Patient] [a_Patient_1]
 	WHERE
-		[a_Patient_1].[PersonID] = @patient_1 AND [Target].[PersonID] = [a_Patient_1].[PersonID]
+		[a_Patient_1].[PersonID] = @patient AND [Target].[PersonID] = [a_Patient_1].[PersonID]
 ) THEN DELETE
 ;
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @patient_1 Int -- Int32
-SET     @patient_1 = 3
+DECLARE @patient Int -- Int32
+SET     @patient = 3
 
 MERGE INTO [Person] [Target]
 USING (
@@ -87,7 +87,7 @@ USING (
 		[Person] [t]
 			LEFT JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
 	WHERE
-		[a_Patient].[PersonID] = @patient_1
+		[a_Patient].[PersonID] = @patient
 ) [Source]
 (
 	[ID],
@@ -127,7 +127,7 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	FROM
 		[Patient] [a_Patient_1]
 	WHERE
-		[a_Patient_1].[PersonID] = @patient_1 AND [Target].[PersonID] = [a_Patient_1].[PersonID]
+		[a_Patient_1].[PersonID] = @patient AND [Target].[PersonID] = [a_Patient_1].[PersonID]
 ) THEN DELETE
 ;
 
