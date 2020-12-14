@@ -8,7 +8,7 @@ WHERE
 	[t1].[ID] >= 3
 
 BeforeExecute
-INSERT ASYNC BULK [AllTypes2](ID, dateDataType, datetimeoffsetDataType, datetime2DataType, timeDataType, hierarchyidDataType, geographyDataType, geometryDataType
+INSERT ASYNC BULK [AllTypes2](ID, dateDataType, datetimeoffsetDataType, datetime2DataType, timeDataType, hierarchyidDataType, geographyDataType, geometryDataType)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
