@@ -20,16 +20,16 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p1 Guid
-SET     @p1 = 'b3d9b51c-89f9-442a-893b-cd8a6f667d37'
-DECLARE @p2 Guid
-SET     @p2 = '61efdcd4-659d-41e8-910c-506a9c2f31c5'
+DECLARE @p_1 Guid
+SET     @p_1 = 'b3d9b51c-89f9-442a-893b-cd8a6f667d37'
+DECLARE @p_2 Guid
+SET     @p_2 = '61efdcd4-659d-41e8-910c-506a9c2f31c5'
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	@p1,
-	@p2
+	@p_1,
+	@p_2
 FROM
 	`SelectExpressionTable` `_`
 LIMIT @take
