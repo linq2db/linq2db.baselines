@@ -15,15 +15,15 @@ SET     @take = 1
 SELECT
 	(
 		SELECT
-			keyParam.Taxonomy
+			d."Taxonomy"
 		FROM
-			Doctor keyParam
+			"Doctor" d
 		WHERE
-			t1.PersonID = keyParam.PersonID
+			t1."PersonID" = d."PersonID"
 		FETCH NEXT :take ROWS ONLY
 	)
 FROM
-	Doctor t1
+	"Doctor" t1
 GROUP BY
-	t1.PersonID
+	t1."PersonID"
 

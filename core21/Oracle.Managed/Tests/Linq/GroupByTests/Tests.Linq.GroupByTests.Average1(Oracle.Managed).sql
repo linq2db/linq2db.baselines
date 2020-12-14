@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Round(AVG(c_1.ChildID), 27)
+	Round(AVG(c_1."ChildID"), 27)
 FROM
-	Child c_1
+	"Child" c_1
 

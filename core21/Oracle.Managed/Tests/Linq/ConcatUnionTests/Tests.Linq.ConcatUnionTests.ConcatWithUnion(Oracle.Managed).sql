@@ -2,37 +2,37 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t3.ParentID
+	t3."ParentID"
 FROM
 	(
 		SELECT
-			t1.ParentID
+			t1."ParentID"
 		FROM
 			(
 				SELECT
-					c_1.ParentID
+					c_1."ParentID"
 				FROM
-					Parent c_1
+					"Parent" c_1
 				UNION
 				SELECT
-					c_2.ParentID
+					c_2."ParentID"
 				FROM
-					Parent c_2
+					"Parent" c_2
 			) t1
 		UNION ALL
 		SELECT
-			t2.ParentID
+			t2."ParentID"
 		FROM
 			(
 				SELECT
-					c_3.ParentID
+					c_3."ParentID"
 				FROM
-					Parent c_3
+					"Parent" c_3
 				UNION
 				SELECT
-					c_4.ParentID
+					c_4."ParentID"
 				FROM
-					Parent c_4
+					"Parent" c_4
 			) t2
 	) t3
 

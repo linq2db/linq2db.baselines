@@ -2,21 +2,21 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	nm.MiddleName
+	nm."MiddleName"
 FROM
-	Person nm
+	"Person" nm
 WHERE
-	NOT (nm.MiddleName IS NULL OR Length(nm.MiddleName) IS NOT NULL AND Length(nm.MiddleName) = 0)
+	NOT (nm."MiddleName" IS NULL OR Length(nm."MiddleName") IS NOT NULL AND Length(nm."MiddleName") = 0)
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1."FirstName",
+	t1."PersonID",
+	t1."LastName",
+	t1."MiddleName",
+	t1."Gender"
 FROM
-	Person t1
+	"Person" t1
 

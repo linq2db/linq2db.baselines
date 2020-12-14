@@ -2,9 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.GuidValue
+	p."GuidValue"
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
-	p.GuidValue IN (Cast('c070f9d2ac3587499cd55badb1757436' as raw(16)))
+	p."GuidValue" IN (Cast('c070f9d2ac3587499cd55badb1757436' as raw(16)))
 

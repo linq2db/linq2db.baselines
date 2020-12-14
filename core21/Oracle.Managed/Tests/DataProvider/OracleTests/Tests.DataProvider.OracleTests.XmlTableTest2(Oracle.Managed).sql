@@ -8,9 +8,9 @@ SET     @p1 = '<t>
 '
 
 SELECT
-	t2.field1,
-	t2.field2
+	t2."field1",
+	t2."field2"
 FROM
-	Parent t1
-		INNER JOIN XmlTable('/t/r' PASSING XmlType(:p1) COLUMNS field1 Int path 'c0', field2 VarChar(255) path 'c1') t2 ON t1.ParentID = t2.field1
+	"Parent" t1
+		INNER JOIN XmlTable('/t/r' PASSING XmlType(:p1) COLUMNS "field1" Int path 'c0', "field2" VarChar(255) path 'c1') t2 ON t1."ParentID" = t2."field1"
 

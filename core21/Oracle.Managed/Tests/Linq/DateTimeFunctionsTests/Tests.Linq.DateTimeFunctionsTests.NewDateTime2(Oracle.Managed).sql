@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.DateTimeValue
+	p."DateTimeValue"
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 

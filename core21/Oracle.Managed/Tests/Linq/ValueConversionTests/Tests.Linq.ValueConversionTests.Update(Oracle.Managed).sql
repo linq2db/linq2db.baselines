@@ -1,34 +1,35 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE ValueConversion
+CREATE TABLE "ValueConversion"
 (
-	Id                      Int           NOT NULL,
-	Value1                  VarChar2(200)     NULL,
-	Value2                  VarChar2(200)     NULL,
-	Enum                    VarChar2(50)  NOT NULL,
-	EnumNullable            VarChar(50)       NULL,
-	EnumWithNull            VarChar(50)       NULL,
-	EnumWithNullDeclarative VarChar(50)       NULL,
-	BoolValue               VarChar(1)    NOT NULL,
+	"Id"                      Int           NOT NULL,
+	"Value1"                  VarChar2(200)     NULL,
+	"Value2"                  VarChar2(200)     NULL,
+	"Enum"                    VarChar2(50)  NOT NULL,
+	"EnumNullable"            VarChar(50)       NULL,
+	"EnumWithNull"            VarChar(50)       NULL,
+	"EnumWithNullDeclarative" VarChar(50)       NULL,
+	"BoolValue"               VarChar(1)    NOT NULL,
+	"DateTimeNullable"        timestamp         NULL,
 
-	CONSTRAINT PK_ValueConversion PRIMARY KEY (Id)
+	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (1,'{"some":"str1"}','[{"Value":"Value1"}]','Value1','Value1','Value1','Value1','Y')
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (2,'{"some":"str2"}','[{"Value":"Value2"}]','Value2','Value2','Value2','Value2','N')
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (3,'{"some":"str3"}','[{"Value":"Value3"}]','Value3','Value3','Value3','Value3','N')
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (4,'{"some":"str4"}','[{"Value":"Value4"}]','Value1',NULL,NULL,NULL,'N')
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (5,'{"some":"str5"}','[{"Value":"Value5"}]','Value2','Value1','Value1','Value1','Y')
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (6,'{"some":"str6"}','[{"Value":"Value6"}]','Value3','Value2','Value2','Value2','N')
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (7,'{"some":"str7"}','[{"Value":"Value7"}]','Value1','Value3','Value3','Value3','N')
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (8,'{"some":"str8"}','[{"Value":"Value8"}]','Value2',NULL,NULL,NULL,'N')
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (9,'{"some":"str9"}','[{"Value":"Value9"}]','Value3','Value1','Value1','Value1','Y')
-	INTO ValueConversion (Id, Value1, Value2, Enum, EnumNullable, EnumWithNull, EnumWithNullDeclarative, BoolValue) VALUES (10,NULL,NULL,'Value1','Value2','Value2','Value2','N')
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (1,'{"some":"str1"}','[{"Value":"Value1"}]','Value1','Value1','Value1','Value1','Y',NULL)
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (2,'{"some":"str2"}','[{"Value":"Value2"}]','Value2','Value2','Value2','Value2','N',TO_TIMESTAMP('2020-02-29 01:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'))
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (3,'{"some":"str3"}','[{"Value":"Value3"}]','Value3','Value3','Value3','Value3','N',TO_TIMESTAMP('2020-02-29 01:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'))
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (4,'{"some":"str4"}','[{"Value":"Value4"}]','Value1',NULL,NULL,NULL,'N',NULL)
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (5,'{"some":"str5"}','[{"Value":"Value5"}]','Value2','Value1','Value1','Value1','Y',TO_TIMESTAMP('2020-02-29 01:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'))
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (6,'{"some":"str6"}','[{"Value":"Value6"}]','Value3','Value2','Value2','Value2','N',TO_TIMESTAMP('2020-02-29 01:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'))
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (7,'{"some":"str7"}','[{"Value":"Value7"}]','Value1','Value3','Value3','Value3','N',NULL)
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (8,'{"some":"str8"}','[{"Value":"Value8"}]','Value2',NULL,NULL,NULL,'N',TO_TIMESTAMP('2020-02-29 01:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'))
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (9,'{"some":"str9"}','[{"Value":"Value9"}]','Value3','Value1','Value1','Value1','Y',TO_TIMESTAMP('2020-02-29 01:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'))
+	INTO "ValueConversion" ("Id", "Value1", "Value2", "Enum", "EnumNullable", "EnumWithNull", "EnumWithNullDeclarative", "BoolValue", "DateTimeNullable") VALUES (10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL)
 SELECT * FROM dual
 
 BeforeExecute
@@ -41,14 +42,14 @@ DECLARE @EnumWithNullDeclarative Varchar2 -- String
 SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
-	ValueConversion
+	"ValueConversion"
 SET
-	ValueConversion.Value1 = ValueConversion.Value1,
-	ValueConversion.Value2 = :Value2,
-	ValueConversion.EnumWithNull = :EnumWithNull,
-	ValueConversion.EnumWithNullDeclarative = :EnumWithNullDeclarative
+	"ValueConversion"."Value1" = "ValueConversion"."Value1",
+	"ValueConversion"."Value2" = :Value2,
+	"ValueConversion"."EnumWithNull" = :EnumWithNull,
+	"ValueConversion"."EnumWithNullDeclarative" = :EnumWithNullDeclarative
 WHERE
-	ValueConversion.Id = 1
+	"ValueConversion"."Id" = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -56,18 +57,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e."Id",
+	e."Value1",
+	e."Value2",
+	e."Enum",
+	e."EnumNullable",
+	e."EnumWithNull",
+	e."EnumWithNullDeclarative",
+	e."BoolValue",
+	e."DateTimeNullable"
 FROM
-	ValueConversion e
+	"ValueConversion" e
 WHERE
-	e.Id = 1
+	e."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -86,21 +88,24 @@ DECLARE @EnumWithNullDeclarative Varchar2(6) -- String
 SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue Varchar2 -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable TimeStamp -- DateTime
+SET     @DateTimeNullable = NULL
 DECLARE @Id Int32
 SET     @Id = 2
 
 UPDATE
-	ValueConversion
+	"ValueConversion"
 SET
-	ValueConversion.Value1 = :Value1,
-	ValueConversion.Value2 = :Value2,
-	ValueConversion.Enum = :Enum,
-	ValueConversion.EnumNullable = :EnumNullable,
-	ValueConversion.EnumWithNull = :EnumWithNull,
-	ValueConversion.EnumWithNullDeclarative = :EnumWithNullDeclarative,
-	ValueConversion.BoolValue = :BoolValue
+	"ValueConversion"."Value1" = :Value1,
+	"ValueConversion"."Value2" = :Value2,
+	"ValueConversion"."Enum" = :Enum,
+	"ValueConversion"."EnumNullable" = :EnumNullable,
+	"ValueConversion"."EnumWithNull" = :EnumWithNull,
+	"ValueConversion"."EnumWithNullDeclarative" = :EnumWithNullDeclarative,
+	"ValueConversion"."BoolValue" = :BoolValue,
+	"ValueConversion"."DateTimeNullable" = :DateTimeNullable
 WHERE
-	ValueConversion.Id = :Id
+	"ValueConversion"."Id" = :Id
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -108,18 +113,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e."Id",
+	e."Value1",
+	e."Value2",
+	e."Enum",
+	e."EnumNullable",
+	e."EnumWithNull",
+	e."EnumWithNullDeclarative",
+	e."BoolValue",
+	e."DateTimeNullable"
 FROM
-	ValueConversion e
+	"ValueConversion" e
 WHERE
-	e.Id = 2
+	e."Id" = 2
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -138,21 +144,24 @@ DECLARE @EnumWithNullDeclarative Varchar2 -- String
 SET     @EnumWithNullDeclarative = NULL
 DECLARE @BoolValue Varchar2 -- String
 SET     @BoolValue = 'N'
+DECLARE @DateTimeNullable TimeStamp -- DateTime
+SET     @DateTimeNullable = NULL
 DECLARE @Id Int32
 SET     @Id = 3
 
 UPDATE
-	ValueConversion
+	"ValueConversion"
 SET
-	ValueConversion.Value1 = :Value1,
-	ValueConversion.Value2 = :Value2,
-	ValueConversion.Enum = :Enum,
-	ValueConversion.EnumNullable = :EnumNullable,
-	ValueConversion.EnumWithNull = :EnumWithNull,
-	ValueConversion.EnumWithNullDeclarative = :EnumWithNullDeclarative,
-	ValueConversion.BoolValue = :BoolValue
+	"ValueConversion"."Value1" = :Value1,
+	"ValueConversion"."Value2" = :Value2,
+	"ValueConversion"."Enum" = :Enum,
+	"ValueConversion"."EnumNullable" = :EnumNullable,
+	"ValueConversion"."EnumWithNull" = :EnumWithNull,
+	"ValueConversion"."EnumWithNullDeclarative" = :EnumWithNullDeclarative,
+	"ValueConversion"."BoolValue" = :BoolValue,
+	"ValueConversion"."DateTimeNullable" = :DateTimeNullable
 WHERE
-	ValueConversion.Id = :Id
+	"ValueConversion"."Id" = :Id
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -160,22 +169,23 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e."Id",
+	e."Value1",
+	e."Value2",
+	e."Enum",
+	e."EnumNullable",
+	e."EnumWithNull",
+	e."EnumWithNullDeclarative",
+	e."BoolValue",
+	e."DateTimeNullable"
 FROM
-	ValueConversion e
+	"ValueConversion" e
 WHERE
-	e.Id = 3
+	e."Id" = 3
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE ValueConversion
+DROP TABLE "ValueConversion"
 

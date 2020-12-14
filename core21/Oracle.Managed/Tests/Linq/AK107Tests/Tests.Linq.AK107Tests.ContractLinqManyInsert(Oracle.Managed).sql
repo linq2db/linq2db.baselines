@@ -5,34 +5,34 @@ SET     @Name = 'user'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO t_test_user
+INSERT INTO "t_test_user"
 (
-	user_id,
-	name
+	"user_id",
+	"name"
 )
 VALUES
 (
-	sq_test_user.nextval,
+	"sq_test_user".nextval,
 	:Name
 )
 RETURNING 
-	user_id INTO :IDENTITY_PARAMETER
+	"user_id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-INSERT INTO t_test_user_contract
+INSERT INTO "t_test_user_contract"
 (
-	user_contract_id,
-	user_id,
-	contract_no,
-	name
+	"user_contract_id",
+	"user_id",
+	"contract_no",
+	"name"
 )
 SELECT
-	sq_test_user_contract.nextval,
-	t1.user_id,
+	"sq_test_user_contract".nextval,
+	t1."user_id",
 	1,
 	'contract'
 FROM
-	t_test_user t1
+	"t_test_user" t1
 

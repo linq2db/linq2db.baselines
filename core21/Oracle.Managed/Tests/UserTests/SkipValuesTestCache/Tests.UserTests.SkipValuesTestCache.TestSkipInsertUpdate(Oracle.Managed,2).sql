@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE PR_1598_Insert_Table_Cache
+CREATE TABLE "PR_1598_Insert_Table_Cache"
 (
-	Id   Int          NOT NULL,
-	Name VarChar(255)     NULL,
-	Age  Int              NULL,
+	"Id"   Int          NOT NULL,
+	"Name" VarChar(255)     NULL,
+	"Age"  Int              NULL,
 
-	CONSTRAINT PK_PR_1598_Insert_Table_Cache PRIMARY KEY (Id)
+	CONSTRAINT "PK_PR_1598_Insert_Table_Cache" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -19,11 +19,11 @@ SET     @Name = 'John'
 DECLARE @Age Int32
 SET     @Age = 2
 
-INSERT INTO PR_1598_Insert_Table_Cache
+INSERT INTO "PR_1598_Insert_Table_Cache"
 (
-	Id,
-	Name,
-	Age
+	"Id",
+	"Name",
+	"Age"
 )
 VALUES
 (
@@ -38,13 +38,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Insert_Table_Cache t
+	"PR_1598_Insert_Table_Cache" t
 WHERE
-	t.Id = 1
+	t."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -57,12 +57,12 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	PR_1598_Insert_Table_Cache
+	"PR_1598_Insert_Table_Cache"
 SET
-	PR_1598_Insert_Table_Cache.Name = :Name,
-	PR_1598_Insert_Table_Cache.Age = :Age
+	"PR_1598_Insert_Table_Cache"."Name" = :Name,
+	"PR_1598_Insert_Table_Cache"."Age" = :Age
 WHERE
-	PR_1598_Insert_Table_Cache.Id = :Id
+	"PR_1598_Insert_Table_Cache"."Id" = :Id
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -70,17 +70,17 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Insert_Table_Cache t
+	"PR_1598_Insert_Table_Cache" t
 WHERE
-	t.Id = 1
+	t."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE PR_1598_Insert_Table_Cache
+DROP TABLE "PR_1598_Insert_Table_Cache"
 

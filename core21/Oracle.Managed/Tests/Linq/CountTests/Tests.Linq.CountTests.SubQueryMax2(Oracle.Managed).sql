@@ -2,15 +2,15 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	Max(t2.cnt)
+	Max(t2."cnt")
 FROM
-	Parent p
+	"Parent" p
 		OUTER APPLY (
 			SELECT
-				Count(*) as cnt
+				Count(*) as "cnt"
 			FROM
-				Child t1
+				"Child" t1
 			WHERE
-				p.ParentID = t1.ParentID
+				p."ParentID" = t1."ParentID"
 		) t2
 

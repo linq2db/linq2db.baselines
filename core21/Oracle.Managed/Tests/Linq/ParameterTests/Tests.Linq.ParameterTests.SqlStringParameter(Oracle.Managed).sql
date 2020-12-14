@@ -6,15 +6,15 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	t.FirstName,
-	t.PersonID,
-	t.LastName,
-	t.MiddleName,
-	t.Gender
+	t."FirstName",
+	t."PersonID",
+	t."LastName",
+	t."MiddleName",
+	t."Gender"
 FROM
-	Person t
+	"Person" t
 WHERE
-	t.FirstName = :p
+	t."FirstName" = :p
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -25,14 +25,14 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	t.FirstName,
-	t.PersonID,
-	t.LastName,
-	t.MiddleName,
-	t.Gender
+	t."FirstName",
+	t."PersonID",
+	t."LastName",
+	t."MiddleName",
+	t."Gender"
 FROM
-	Person t
+	"Person" t
 WHERE
-	t.FirstName = :p
+	t."FirstName" = :p
 FETCH NEXT :take ROWS ONLY
 

@@ -1,18 +1,19 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE ValueConversion
+CREATE TABLE "ValueConversion"
 (
-	Id                      Int           NOT NULL,
-	Value1                  VarChar2(200)     NULL,
-	Value2                  VarChar2(200)     NULL,
-	Enum                    VarChar2(50)  NOT NULL,
-	EnumNullable            VarChar(50)       NULL,
-	EnumWithNull            VarChar(50)       NULL,
-	EnumWithNullDeclarative VarChar(50)       NULL,
-	BoolValue               VarChar(1)    NOT NULL,
+	"Id"                      Int           NOT NULL,
+	"Value1"                  VarChar2(200)     NULL,
+	"Value2"                  VarChar2(200)     NULL,
+	"Enum"                    VarChar2(50)  NOT NULL,
+	"EnumNullable"            VarChar(50)       NULL,
+	"EnumWithNull"            VarChar(50)       NULL,
+	"EnumWithNullDeclarative" VarChar(50)       NULL,
+	"BoolValue"               VarChar(1)    NOT NULL,
+	"DateTimeNullable"        timestamp         NULL,
 
-	CONSTRAINT PK_ValueConversion PRIMARY KEY (Id)
+	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -28,13 +29,13 @@ SET     @Value2 = '[{"Value":"inserted"}]'
 DECLARE @BoolValue Varchar2 -- String
 SET     @BoolValue = 'Y'
 
-INSERT INTO ValueConversion
+INSERT INTO "ValueConversion"
 (
-	Id,
-	Value1,
-	Enum,
-	Value2,
-	BoolValue
+	"Id",
+	"Value1",
+	"Enum",
+	"Value2",
+	"BoolValue"
 )
 VALUES
 (
@@ -51,18 +52,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e."Id",
+	e."Value1",
+	e."Value2",
+	e."Enum",
+	e."EnumNullable",
+	e."EnumWithNull",
+	e."EnumWithNullDeclarative",
+	e."BoolValue",
+	e."DateTimeNullable"
 FROM
-	ValueConversion e
+	"ValueConversion" e
 WHERE
-	e.Id = 1
+	e."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -78,13 +80,13 @@ SET     @Enum = 'Value2'
 DECLARE @BoolValue Varchar2 -- String
 SET     @BoolValue = 'N'
 
-INSERT INTO ValueConversion
+INSERT INTO "ValueConversion"
 (
-	Id,
-	Value1,
-	Value2,
-	Enum,
-	BoolValue
+	"Id",
+	"Value1",
+	"Value2",
+	"Enum",
+	"BoolValue"
 )
 VALUES
 (
@@ -101,18 +103,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e."Id",
+	e."Value1",
+	e."Value2",
+	e."Enum",
+	e."EnumNullable",
+	e."EnumWithNull",
+	e."EnumWithNullDeclarative",
+	e."BoolValue",
+	e."DateTimeNullable"
 FROM
-	ValueConversion e
+	"ValueConversion" e
 WHERE
-	e.Id = 2
+	e."Id" = 2
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -133,17 +136,20 @@ DECLARE @EnumWithNullDeclarative Varchar2(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue Varchar2 -- String
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable TimeStamp -- DateTime
+SET     @DateTimeNullable = NULL
 
-INSERT INTO ValueConversion
+INSERT INTO "ValueConversion"
 (
-	Id,
-	Value1,
-	Value2,
-	Enum,
-	EnumNullable,
-	EnumWithNull,
-	EnumWithNullDeclarative,
-	BoolValue
+	"Id",
+	"Value1",
+	"Value2",
+	"Enum",
+	"EnumNullable",
+	"EnumWithNull",
+	"EnumWithNullDeclarative",
+	"BoolValue",
+	"DateTimeNullable"
 )
 VALUES
 (
@@ -154,7 +160,8 @@ VALUES
 	:EnumNullable,
 	:EnumWithNull,
 	:EnumWithNullDeclarative,
-	:BoolValue
+	:BoolValue,
+	:DateTimeNullable
 )
 
 BeforeExecute
@@ -163,18 +170,19 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue
+	e."Id",
+	e."Value1",
+	e."Value2",
+	e."Enum",
+	e."EnumNullable",
+	e."EnumWithNull",
+	e."EnumWithNullDeclarative",
+	e."BoolValue",
+	e."DateTimeNullable"
 FROM
-	ValueConversion e
+	"ValueConversion" e
 WHERE
-	e.Id = 3
+	e."Id" = 3
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -183,10 +191,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	ValueConversion t1
+	"ValueConversion" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE ValueConversion
+DROP TABLE "ValueConversion"
 

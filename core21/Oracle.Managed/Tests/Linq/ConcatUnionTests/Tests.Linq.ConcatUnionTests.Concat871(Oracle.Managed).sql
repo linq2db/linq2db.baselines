@@ -2,14 +2,14 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	c_1.Value1,
+	c_1."Value1",
 	NULL
 FROM
-	Parent c_1
+	"Parent" c_1
 UNION ALL
 SELECT
 	NULL,
-	c_2.ParentID
+	c_2."ParentID"
 FROM
-	Child c_2
+	"Child" c_2
 

@@ -6,7 +6,7 @@ SELECT
 		SELECT
 			*
 		FROM
-			Parent p
+			"Parent" p
 	) THEN 1 ELSE 0 END
 FROM SYS.DUAL
 

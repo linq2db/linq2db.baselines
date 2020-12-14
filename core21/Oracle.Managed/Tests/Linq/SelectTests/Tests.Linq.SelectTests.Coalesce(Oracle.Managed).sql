@@ -2,11 +2,11 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.PersonID,
-	Nvl(p.FirstName, 'None'),
-	Nvl(p.MiddleName, 'None')
+	p."PersonID",
+	Nvl(p."FirstName", 'None'),
+	Nvl(p."MiddleName", 'None')
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = 1
+	p."PersonID" = 1
 

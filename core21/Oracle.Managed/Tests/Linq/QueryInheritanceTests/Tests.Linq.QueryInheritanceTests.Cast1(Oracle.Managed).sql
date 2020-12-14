@@ -63,5 +63,5 @@ BeforeExecute
 SELECT
 	*
 FROM
-	Parent t
+	"Parent" t
 

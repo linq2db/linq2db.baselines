@@ -2,10 +2,11 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p.PersonID,
-	p.FirstName
+	p."PersonID",
+	p."FirstName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	'123' || p.FirstName || '456' = '123John456' AND p.PersonID = 1
+	'123' || p."FirstName" || '456' = '123John456' AND
+	p."PersonID" = 1
 

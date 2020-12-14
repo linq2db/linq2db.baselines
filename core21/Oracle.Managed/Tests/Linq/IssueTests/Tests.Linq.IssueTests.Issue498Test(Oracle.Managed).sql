@@ -2,11 +2,11 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	x.ParentID,
+	x."ParentID",
 	Count(*)
 FROM
-	Child x
-		INNER JOIN GrandChild y ON x.ParentID = y.ParentID AND x.ChildID = y.ChildID
+	"Child" x
+		INNER JOIN "GrandChild" y ON x."ParentID" = y."ParentID" AND x."ChildID" = y."ChildID"
 GROUP BY
-	x.ParentID
+	x."ParentID"
 

@@ -6,11 +6,11 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.DateTimeValue
+	t."DateTimeValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	t.DateTimeValue > :dateTime
+	t."DateTimeValue" > :dateTime
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -21,10 +21,10 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.DateTimeValue
+	t."DateTimeValue"
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 WHERE
-	t.DateTimeValue > :dateTime
+	t."DateTimeValue" > :dateTime
 FETCH NEXT :take ROWS ONLY
 

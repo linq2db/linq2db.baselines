@@ -6,12 +6,12 @@ DECLARE @take Int32
 SET     @take = 5
 
 SELECT
-	t1.ParentID,
-	t1.ChildID
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	Child t1
+	"Child" t1
 ORDER BY
-	t1.ChildID DESC
+	t1."ChildID" DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -22,11 +22,11 @@ DECLARE @take Int32
 SET     @take = 5
 
 SELECT
-	t1.ParentID,
-	t1.ChildID
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	Child t1
+	"Child" t1
 ORDER BY
-	t1.ChildID DESC
+	t1."ChildID" DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 

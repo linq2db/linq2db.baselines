@@ -4,24 +4,24 @@ DECLARE @doe Varchar2(3) -- String
 SET     @doe = 'Doe'
 
 SELECT
-	t1.FirstName
+	t1."FirstName"
 FROM
-	Person p
+	"Person" p
 		CROSS APPLY (
 			SELECT
-				p.FirstName
+				p."FirstName"
 			FROM SYS.DUAL
 			UNION ALL
 			SELECT
-				p.LastName as FirstName
+				p."LastName" as "FirstName"
 			FROM SYS.DUAL
 			UNION ALL
 			SELECT
-				'John' as FirstName
+				'John' as "FirstName"
 			FROM SYS.DUAL
 			UNION ALL
 			SELECT
-				:doe as FirstName
+				:doe as "FirstName"
 			FROM SYS.DUAL
 		) t1
 
@@ -52,24 +52,24 @@ DECLARE @doe Varchar2(4) -- String
 SET     @doe = 'Doe1'
 
 SELECT
-	t1.FirstName
+	t1."FirstName"
 FROM
-	Person p
+	"Person" p
 		CROSS APPLY (
 			SELECT
-				p.FirstName
+				p."FirstName"
 			FROM SYS.DUAL
 			UNION ALL
 			SELECT
-				p.LastName as FirstName
+				p."LastName" as "FirstName"
 			FROM SYS.DUAL
 			UNION ALL
 			SELECT
-				'John' as FirstName
+				'John' as "FirstName"
 			FROM SYS.DUAL
 			UNION ALL
 			SELECT
-				:doe as FirstName
+				:doe as "FirstName"
 			FROM SYS.DUAL
 		) t1
 

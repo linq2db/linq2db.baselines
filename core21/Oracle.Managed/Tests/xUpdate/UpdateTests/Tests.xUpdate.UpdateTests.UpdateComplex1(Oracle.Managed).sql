@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP SEQUENCE PersonSeq
+DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE SEQUENCE PersonSeq MINVALUE 1 START WITH 5
+CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'UpdateComplex%'
+	t1."FirstName" LIKE 'UpdateComplex%'
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -29,12 +29,12 @@ SET     @Name_LastName = 'Empty'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	Gender,
-	FirstName,
-	MiddleName,
-	LastName
+	"Gender",
+	"FirstName",
+	"MiddleName",
+	"LastName"
 )
 VALUES
 (
@@ -44,7 +44,7 @@ VALUES
 	:Name_LastName
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -54,15 +54,15 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.PersonID,
-	t1.Gender,
-	t1.FirstName,
-	t1.MiddleName,
-	t1.LastName
+	t1."PersonID",
+	t1."Gender",
+	t1."FirstName",
+	t1."MiddleName",
+	t1."LastName"
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID = :id
+	t1."PersonID" = :id
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -79,14 +79,14 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	Person
+	"Person"
 SET
-	Person.Gender = :Gender,
-	Person.FirstName = :Name_FirstName,
-	Person.MiddleName = :Name_MiddleName,
-	Person.LastName = :Name_LastName
+	"Person"."Gender" = :Gender,
+	"Person"."FirstName" = :Name_FirstName,
+	"Person"."MiddleName" = :Name_MiddleName,
+	"Person"."LastName" = :Name_LastName
 WHERE
-	Person.PersonID = :ID
+	"Person"."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -96,22 +96,22 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.PersonID,
-	t1.Gender,
-	t1.FirstName,
-	t1.MiddleName,
-	t1.LastName
+	t1."PersonID",
+	t1."Gender",
+	t1."FirstName",
+	t1."MiddleName",
+	t1."LastName"
 FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID = :id
+	t1."PersonID" = :id
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.FirstName LIKE 'UpdateComplex%'
+	t1."FirstName" LIKE 'UpdateComplex%'
 

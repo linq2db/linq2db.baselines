@@ -3,10 +3,10 @@
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE GLOBAL TEMPORARY TABLE temp_table1
+		CREATE GLOBAL TEMPORARY TABLE "temp_table1"
 		(
-			ID    Int NOT NULL,
-			Value Int NOT NULL
+			ID      Int NOT NULL,
+			"Value" Int NOT NULL
 		)
 		ON COMMIT PRESERVE ROWS
 	';
@@ -21,7 +21,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
-	INTO temp_table1 (ID, Value) VALUES (1,2)
+	INTO "temp_table1" (ID, "Value") VALUES (1,2)
 SELECT * FROM dual
 
 BeforeExecute
@@ -29,10 +29,10 @@ BeforeExecute
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE GLOBAL TEMPORARY TABLE temp_table2
+		CREATE GLOBAL TEMPORARY TABLE "temp_table2"
 		(
-			ID    Int NOT NULL,
-			Value Int NOT NULL
+			ID      Int NOT NULL,
+			"Value" Int NOT NULL
 		)
 		ON COMMIT PRESERVE ROWS
 	';
@@ -46,40 +46,40 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-INSERT INTO temp_table2
+INSERT INTO "temp_table2"
 (
 	ID,
-	Value
+	"Value"
 )
 SELECT
 	t1.ID,
-	t1.Value
+	t1."Value"
 FROM
-	temp_table1 t1
+	"temp_table1" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,
-	t1.Value
+	t1."Value"
 FROM
-	temp_table1 t1
+	"temp_table1" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,
-	t1.Value
+	t1."Value"
 FROM
-	temp_table2 t1
+	"temp_table2" t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
-	INTO temp_table1 (ID, Value) VALUES (2,3)
+	INTO "temp_table1" (ID, "Value") VALUES (2,3)
 SELECT * FROM dual
 
 BeforeExecute
@@ -89,10 +89,10 @@ SET     @ID = 3
 DECLARE @Value_1 Int32
 SET     @Value_1 = 3
 
-INSERT INTO temp_table1
+INSERT INTO "temp_table1"
 (
 	ID,
-	Value
+	"Value"
 )
 VALUES
 (
@@ -104,24 +104,24 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO temp_table1 (ID, Value) VALUES (4,5)
+	INTO "temp_table1" (ID, "Value") VALUES (4,5)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-TRUNCATE TABLE temp_table1
+TRUNCATE TABLE "temp_table1"
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-TRUNCATE TABLE temp_table2
+TRUNCATE TABLE "temp_table2"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE temp_table2';
+	EXECUTE IMMEDIATE 'DROP TABLE "temp_table2"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -133,7 +133,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE temp_table1';
+	EXECUTE IMMEDIATE 'DROP TABLE "temp_table1"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

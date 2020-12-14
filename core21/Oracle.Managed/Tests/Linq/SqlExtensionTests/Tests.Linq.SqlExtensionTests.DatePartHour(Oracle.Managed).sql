@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	To_Number(To_Char(t.DateTimeValue, 'HH24'))
+	To_Number(To_Char(t."DateTimeValue", 'HH24'))
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 

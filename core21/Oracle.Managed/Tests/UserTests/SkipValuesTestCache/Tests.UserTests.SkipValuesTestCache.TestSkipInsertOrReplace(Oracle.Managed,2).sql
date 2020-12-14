@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE PR_1598_Insert_Table_Cache
+CREATE TABLE "PR_1598_Insert_Table_Cache"
 (
-	Id   Int          NOT NULL,
-	Name VarChar(255)     NULL,
-	Age  Int              NULL,
+	"Id"   Int          NOT NULL,
+	"Name" VarChar(255)     NULL,
+	"Age"  Int              NULL,
 
-	CONSTRAINT PK_PR_1598_Insert_Table_Cache PRIMARY KEY (Id)
+	CONSTRAINT "PK_PR_1598_Insert_Table_Cache" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -19,22 +19,22 @@ SET     @Name = 'John'
 DECLARE @Age Int32
 SET     @Age = 2
 
-MERGE INTO PR_1598_Insert_Table_Cache t1
-USING (SELECT :Id AS Id FROM SYS.DUAL) s ON
+MERGE INTO "PR_1598_Insert_Table_Cache" t1
+USING (SELECT :Id AS "Id" FROM SYS.DUAL) s ON
 (
-	t1.Id = s.Id
+	t1."Id" = s."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1.Name = :Name,
-		t1.Age = :Age
+		t1."Name" = :Name,
+		t1."Age" = :Age
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		Id,
-		Name,
-		Age
+		"Id",
+		"Name",
+		"Age"
 	)
 	VALUES
 	(
@@ -49,13 +49,13 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Insert_Table_Cache t
+	"PR_1598_Insert_Table_Cache" t
 WHERE
-	t.Id = 1
+	t."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -67,22 +67,22 @@ SET     @Name = 'John'
 DECLARE @Age Int32
 SET     @Age = 2
 
-MERGE INTO PR_1598_Insert_Table_Cache t1
-USING (SELECT :Id AS Id FROM SYS.DUAL) s ON
+MERGE INTO "PR_1598_Insert_Table_Cache" t1
+USING (SELECT :Id AS "Id" FROM SYS.DUAL) s ON
 (
-	t1.Id = s.Id
+	t1."Id" = s."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1.Name = :Name,
-		t1.Age = :Age
+		t1."Name" = :Name,
+		t1."Age" = :Age
 WHEN NOT MATCHED THEN
 	INSERT
 	(
-		Id,
-		Name,
-		Age
+		"Id",
+		"Name",
+		"Age"
 	)
 	VALUES
 	(
@@ -97,17 +97,17 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.Id,
-	t.Name,
-	t.Age
+	t."Id",
+	t."Name",
+	t."Age"
 FROM
-	PR_1598_Insert_Table_Cache t
+	"PR_1598_Insert_Table_Cache" t
 WHERE
-	t.Id = 1
+	t."Id" = 1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE PR_1598_Insert_Table_Cache
+DROP TABLE "PR_1598_Insert_Table_Cache"
 

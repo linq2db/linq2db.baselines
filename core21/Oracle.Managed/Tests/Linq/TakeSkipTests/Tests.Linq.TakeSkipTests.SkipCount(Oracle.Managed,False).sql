@@ -6,10 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			t1.ParentID,
-			t1.ChildID
+			t1."ParentID",
+			t1."ChildID"
 		FROM
-			Child t1
+			"Child" t1
 		OFFSET 2 ROWS
 	) t2
 
