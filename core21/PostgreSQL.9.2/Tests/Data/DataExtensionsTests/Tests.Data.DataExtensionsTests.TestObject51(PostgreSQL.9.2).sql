@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
--- PostgreSQL.9.2 PostgreSQL
 SELECT
 	p."FirstName",
 	p."PersonID",
