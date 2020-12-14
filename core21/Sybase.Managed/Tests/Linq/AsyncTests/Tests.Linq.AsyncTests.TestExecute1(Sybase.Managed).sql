@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
--- Sybase.Managed Sybase
 SELECT TOP 1
 	[p].[FirstName],
 	[p].[PersonID],
