@@ -8,7 +8,7 @@ CREATE TABLE [#temp_table1]
 )
 
 BeforeExecute
-INSERT ASYNC BULK [#temp_table1](ID, Value
+INSERT ASYNC BULK [#temp_table1](ID, Value)
 
 BeforeExecute
 -- SqlServer.2012 (asynchronously)
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
-INSERT ASYNC BULK [#temp_table1](ID, Value
+INSERT ASYNC BULK [#temp_table1](ID, Value)
 
 BeforeExecute
 -- SqlServer.2012 (asynchronously)
