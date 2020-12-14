@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Length_1 Integer -- Int32
-SET     @Length_1 = 1
 
 SELECT
 	p."FirstName",
@@ -12,10 +10,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	CASE
-		WHEN :Length_1 = 0 AND Length(p."LastName") > 2
-			THEN 2
-		ELSE Position('e' in Substring(p."LastName", 3, Length(p."LastName") - 3)) + 1
-	END = 4 AND
+	Position('e' in Substring(p."LastName", 3, Length(p."LastName") - 3)) + 1 = 4 AND
 	p."PersonID" = 2
 
