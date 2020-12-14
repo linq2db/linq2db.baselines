@@ -13,13 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	(CASE
-		WHEN t."MoneyValue" - 4.5 = 0
-			THEN False
-		ELSE True
-	END = False OR CASE
-		WHEN t."MoneyValue" - 4.5 = 0
-			THEN False
-		ELSE True
-	END IS NULL)
+	(t."MoneyValue" = 4.5)
 
