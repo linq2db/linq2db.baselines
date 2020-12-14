@@ -1,6 +1,6 @@
 ﻿BeforeExecute
-INSERT BULK [Parent](ParentID, Value1
+INSERT BULK [Parent](ParentID, Value1)
 
 BeforeExecute
-INSERT BULK [Child](ParentID, ChildID
+INSERT BULK [Child](ParentID, ChildID)
 
