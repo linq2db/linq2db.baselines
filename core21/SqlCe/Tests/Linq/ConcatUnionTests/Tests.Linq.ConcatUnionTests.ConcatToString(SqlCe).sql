@@ -23,8 +23,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 10
-DECLARE @pattern NVarChar(3) -- String
-SET     @pattern = '%1%'
+DECLARE @pattern_1 NVarChar(3) -- String
+SET     @pattern_1 = '%1%'
 
 SELECT TOP (@take)
 	[t1].[FirstName]
@@ -42,6 +42,6 @@ FROM
 		FROM
 			[Person] [p_1]
 		WHERE
-			Convert(NVarChar(11), [p_1].[PersonID]) LIKE @pattern ESCAPE '~'
+			Convert(NVarChar(11), [p_1].[PersonID]) LIKE @pattern_1 ESCAPE '~'
 	) [t1]
 
