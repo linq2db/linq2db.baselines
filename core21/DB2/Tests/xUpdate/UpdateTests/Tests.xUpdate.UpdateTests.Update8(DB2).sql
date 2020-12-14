@@ -40,8 +40,8 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID_1 Integer(4) -- Int32
-SET     @ParentID_1 = 1001
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1001
 
 SELECT
 	"p"."ParentID",
@@ -49,7 +49,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = @ParentID_1
+	"p"."ParentID" = @ParentID
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute

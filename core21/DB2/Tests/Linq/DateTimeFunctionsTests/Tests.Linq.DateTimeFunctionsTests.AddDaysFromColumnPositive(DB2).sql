@@ -42,15 +42,15 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p1 Timestamp(20) -- DateTime
-SET     @p1 = '2018-01-02-00.00.00.000000'
+DECLARE @p_1 Timestamp(20) -- DateTime
+SET     @p_1 = '2018-01-02-00.00.00.000000'
 
 SELECT
 	Count(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND "t"."DateTimeValue" + "t"."SmallIntValue" Day > @p1
+	"t".ID = 5000 AND "t"."DateTimeValue" + "t"."SmallIntValue" Day > @p_1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

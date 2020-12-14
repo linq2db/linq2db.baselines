@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			TimeStamp(RTrim(Char("t"."DateTimeValue"))) as "c1"
+			"t"."DateTimeValue" as "c1"
 		FROM
 			"LinqDataTypes" "t"
 	) "d"
