@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 5
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 5
 
 SELECT
-	@p1
+	@p_1
 

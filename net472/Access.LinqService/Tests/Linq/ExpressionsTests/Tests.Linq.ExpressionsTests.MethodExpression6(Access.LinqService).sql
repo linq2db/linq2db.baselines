@@ -2,12 +2,12 @@
 -- Access AccessOleDb
 
 SELECT
-	[t1].[Count6]
+	[t1].[cnt]
 FROM
 	[Parent] [p]
 		LEFT JOIN (
 			SELECT
-				Count(*) as [Count6],
+				Count(*) as [cnt],
 				[c_1].[ParentID]
 			FROM
 				[Child] [c_1]
