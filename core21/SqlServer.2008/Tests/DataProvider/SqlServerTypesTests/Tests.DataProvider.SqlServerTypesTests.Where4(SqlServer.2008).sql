@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @hid_1 hierarchyid -- Udt -- Object
-SET     @hid_1 = /1/
+DECLARE @hid hierarchyid -- Udt -- Object
+SET     @hid = /1/
 
 SELECT
 	[t].[ID],
@@ -9,5 +9,5 @@ SELECT
 FROM
 	[SqlTypes] [t]
 WHERE
-	(@hid_1.IsDescendantOf([t].[HID]) = 1 AND @hid_1.IsDescendantOf([t].[HID]) IS NOT NULL)
+	(@hid.IsDescendantOf([t].[HID]) = 1 AND @hid.IsDescendantOf([t].[HID]) IS NOT NULL)
 
