@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP SEQUENCE PersonSeq
+DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE SEQUENCE PersonSeq MINVALUE 1 START WITH 5
+CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -21,12 +21,12 @@ SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	MiddleName,
-	Gender
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 VALUES
 (
@@ -36,7 +36,7 @@ VALUES
 	:Gender
 )
 RETURNING 
-	PersonID INTO :IDENTITY_PARAMETER
+	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -46,15 +46,15 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.PersonID,
-	t.FirstName,
-	t.LastName,
-	t.MiddleName,
-	t.Gender
+	t."PersonID",
+	t."FirstName",
+	t."LastName",
+	t."MiddleName",
+	t."Gender"
 FROM
-	Person t
+	"Person" t
 WHERE
-	t.PersonID = :id AND ROWNUM <= :take
+	t."PersonID" = :id AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -64,15 +64,15 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t.PersonID,
-	t.FirstName,
-	t.LastName,
-	t.MiddleName,
-	t.Gender
+	t."PersonID",
+	t."FirstName",
+	t."LastName",
+	t."MiddleName",
+	t."Gender"
 FROM
-	Person t
+	"Person" t
 WHERE
-	t.PersonID = :id AND ROWNUM <= :take
+	t."PersonID" = :id AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -88,11 +88,11 @@ DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID = :PersonID AND
-	t1.FirstName = :FirstName AND
-	t1.LastName = :LastName AND
-	t1.MiddleName = :MiddleName AND
-	t1.Gender = :Gender
+	t1."PersonID" = :PersonID AND
+	t1."FirstName" = :FirstName AND
+	t1."LastName" = :LastName AND
+	t1."MiddleName" = :MiddleName AND
+	t1."Gender" = :Gender
 

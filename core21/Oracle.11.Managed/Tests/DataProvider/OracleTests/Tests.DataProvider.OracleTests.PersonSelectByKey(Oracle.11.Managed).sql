@@ -26,5 +26,5 @@ SET     @pID = 1
 DECLARE @retCursor RefCursor -- Object
 SET     @retCursor = NULL
 
-Person_SelectByKey
+PERSON_SELECTBYKEY
 

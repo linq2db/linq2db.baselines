@@ -6,9 +6,9 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	p.LastName
+	p."LastName"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.PersonID = :ID AND ROWNUM <= :take
+	p."PersonID" = :ID AND ROWNUM <= :take
 

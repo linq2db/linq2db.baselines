@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE SampleClass
+CREATE TABLE "SampleClass"
 (
-	Id    Int NOT NULL,
-	Value Int NOT NULL
+	"Id"    Int NOT NULL,
+	"Value" Int NOT NULL
 )
 
 BeforeExecute
@@ -22,5 +22,5 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE SampleClass
+DROP TABLE "SampleClass"
 

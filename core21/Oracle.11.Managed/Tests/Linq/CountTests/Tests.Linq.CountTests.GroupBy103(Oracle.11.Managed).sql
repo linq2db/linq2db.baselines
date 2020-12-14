@@ -6,14 +6,14 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			Child keyParam
+			"Child" ch
 		WHERE
-			(t1.ParentID = keyParam.ParentID AND t1.ChildID = keyParam.ChildID) AND
-			keyParam.ChildID > 20
+			(t1."ParentID" = ch."ParentID" AND t1."ChildID" = ch."ChildID") AND
+			ch."ChildID" > 20
 	)
 FROM
-	Child t1
+	"Child" t1
 GROUP BY
-	t1.ParentID,
-	t1.ChildID
+	t1."ParentID",
+	t1."ChildID"
 

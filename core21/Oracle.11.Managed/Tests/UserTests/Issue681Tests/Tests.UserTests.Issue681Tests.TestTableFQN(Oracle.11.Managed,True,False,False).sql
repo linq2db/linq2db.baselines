@@ -11,5 +11,5 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	LinqDataTypes@XE t1
+	"LinqDataTypes"@XE t1
 

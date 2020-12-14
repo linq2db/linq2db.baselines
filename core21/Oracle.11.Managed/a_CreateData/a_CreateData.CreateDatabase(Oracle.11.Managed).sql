@@ -4,7 +4,7 @@
 -- Cleanup schema
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP SEQUENCE ' || 'PersonSeq';
+	EXECUTE IMMEDIATE 'DROP SEQUENCE ' || '"PersonSeq"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -2289 THEN
@@ -15,17 +15,17 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Doctor
+DROP TABLE "Doctor"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Patient
+DROP TABLE "Patient"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Person
+DROP TABLE "Person"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -40,37 +40,42 @@ DROP TABLE BinaryData
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP SEQUENCE DataTypeTestSeq
+DROP SEQUENCE "DataTypeTestSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE DataTypeTest
+DROP TABLE "DataTypeTest"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE GrandChild
+DROP TABLE "GrandChild"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Child
+DROP TABLE "Child"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE Parent
+DROP TABLE "Parent"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE StringTest
+DROP TABLE "StringTest"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE LinqDataTypes
+DROP TABLE "LinqDataTypes"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+DROP TABLE LINQDATATYPESBC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -90,47 +95,47 @@ DROP TABLE "STG_TRADE_INFORMATION"
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP table t_test_user_contract
+DROP table "t_test_user_contract"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP table t_test_user
+DROP table "t_test_user"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP sequence sq_test_user
+DROP sequence "sq_test_user"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP sequence sq_test_user_contract
+DROP sequence "sq_test_user_contract"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP table t_entity
+DROP table "t_entity"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 --StringTest Table
-CREATE TABLE StringTest
-	( StringValue1                VARCHAR2(50) NULL
-	, StringValue2                CHAR(50)     NULL
-	, KeyValue                    VARCHAR2(50) NOT NULL
+CREATE TABLE "StringTest"
+	( "StringValue1"                VARCHAR2(50) NULL
+	, "StringValue2"                CHAR(50)     NULL
+	, "KeyValue"                    VARCHAR2(50) NOT NULL
 	)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO StringTest (StringValue1, StringValue2, KeyValue) VALUES ('Value1', 'Value2', 'HasValues')
+INSERT INTO "StringTest" ("StringValue1", "StringValue2", "KeyValue") VALUES ('Value1', 'Value2', 'HasValues')
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO StringTest (StringValue1, StringValue2, KeyValue) VALUES (null,     null,     'NullValues')
+INSERT INTO "StringTest" ("StringValue1", "StringValue2", "KeyValue") VALUES (null,     null,     'NullValues')
 
 
 -- Inheritance Parent/Child
@@ -138,32 +143,32 @@ INSERT INTO StringTest (StringValue1, StringValue2, KeyValue) VALUES (null,     
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE InheritanceParent
+DROP TABLE "InheritanceParent"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE InheritanceParent
+CREATE TABLE "InheritanceParent"
 (
-	InheritanceParentId NUMBER        NOT NULL PRIMARY KEY,
-	TypeDiscriminator   NUMBER            NULL,
-	Name                NVARCHAR2(50)     NULL
+	"InheritanceParentId" NUMBER        NOT NULL PRIMARY KEY,
+	"TypeDiscriminator"   NUMBER            NULL,
+	"Name"                NVARCHAR2(50)     NULL
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE InheritanceChild
+DROP TABLE "InheritanceChild"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE InheritanceChild
+CREATE TABLE "InheritanceChild"
 (
-	InheritanceChildId  NUMBER        NOT NULL PRIMARY KEY,
-	InheritanceParentId NUMBER        NOT NULL,
-	TypeDiscriminator   NUMBER            NULL,
-	Name                NVARCHAR2(50)     NULL
+	"InheritanceChildId"  NUMBER        NOT NULL PRIMARY KEY,
+	"InheritanceParentId" NUMBER        NOT NULL,
+	"TypeDiscriminator"   NUMBER            NULL,
+	"Name"                NVARCHAR2(50)     NULL
 )
 
 BeforeExecute
@@ -171,19 +176,19 @@ BeforeExecute
 
 -- Person Table
 
-CREATE SEQUENCE PersonSeq
+CREATE SEQUENCE "PersonSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE Person
-	( PersonID                     NUMBER NOT NULL PRIMARY KEY
-	, Firstname                    VARCHAR2(50) NOT NULL
-	, Lastname                     VARCHAR2(50) NOT NULL
-	, Middlename                   VARCHAR2(50)
-	, Gender                       CHAR(1) NOT NULL
+CREATE TABLE "Person"
+	( "PersonID"                     NUMBER NOT NULL PRIMARY KEY
+	, "FirstName"                    VARCHAR2(50) NOT NULL
+	, "LastName"                     VARCHAR2(50) NOT NULL
+	, "MiddleName"                   VARCHAR2(50)
+	, "Gender"                       CHAR(1) NOT NULL
 
-	, CONSTRAINT Ck_Person_Gender  CHECK (Gender IN ('M', 'F', 'U', 'O'))
+	, CONSTRAINT "Ck_Person_Gender"  CHECK ("Gender" IN ('M', 'F', 'U', 'O'))
 	)
 
 BeforeExecute
@@ -191,15 +196,15 @@ BeforeExecute
 
 -- Insert Trigger for Person
 
-CREATE OR REPLACE TRIGGER Person_Add
+CREATE OR REPLACE TRIGGER "Person_Add"
 BEFORE INSERT
-ON Person
+ON "Person"
 FOR EACH ROW
 BEGIN
 SELECT
-	PersonSeq.NEXTVAL
+	"PersonSeq".NEXTVAL
 INTO
-	:NEW.PersonID
+	:NEW."PersonID"
 FROM
 	dual;
 END;
@@ -209,12 +214,12 @@ BeforeExecute
 
 -- Doctor Table Extension
 
-CREATE TABLE Doctor
-	( PersonID                       NUMBER NOT NULL PRIMARY KEY
-	, Taxonomy                       NVARCHAR2(50) NOT NULL
+CREATE TABLE "Doctor"
+	( "PersonID"                       NUMBER NOT NULL PRIMARY KEY
+	, "Taxonomy"                       NVARCHAR2(50) NOT NULL
 
-	, CONSTRAINT Fk_Doctor_Person FOREIGN KEY (PersonID)
-		REFERENCES Person (PersonID) ON DELETE CASCADE
+	, CONSTRAINT "Fk_Doctor_Person" FOREIGN KEY ("PersonID")
+		REFERENCES "Person" ("PersonID") ON DELETE CASCADE
 	)
 
 BeforeExecute
@@ -222,12 +227,12 @@ BeforeExecute
 
 -- Patient Table Extension
 
-CREATE TABLE Patient
-	( PersonID                       NUMBER NOT NULL PRIMARY KEY
-	, Diagnosis                      NVARCHAR2(256) NOT NULL
+CREATE TABLE "Patient"
+	( "PersonID"                       NUMBER NOT NULL PRIMARY KEY
+	, "Diagnosis"                      NVARCHAR2(256) NOT NULL
 
-	, CONSTRAINT Fk_Patient_Person FOREIGN KEY (PersonID)
-		REFERENCES Person (PersonID) ON DELETE CASCADE
+	, CONSTRAINT "Fk_Patient_Person" FOREIGN KEY ("PersonID")
+		REFERENCES "Person" ("PersonID") ON DELETE CASCADE
 	)
 
 BeforeExecute
@@ -235,32 +240,32 @@ BeforeExecute
 
 -- Sample data for Person/Doctor/Patient
 
-INSERT INTO Person  (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
+INSERT INTO "Person"  ("FirstName", "LastName", "Gender") VALUES ('John',   'Pupkin',    'M')
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO Person  (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
+INSERT INTO "Person"  ("FirstName", "LastName", "Gender") VALUES ('Tester', 'Testerson', 'M')
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO Person  (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
+INSERT INTO "Person"  ("FirstName", "LastName", "Gender") VALUES ('Jane',   'Doe',       'F')
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO Person  (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
+INSERT INTO "Person"  ("FirstName", "LastName", "MiddleName", "Gender") VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO Doctor  (PersonID,  Taxonomy)  VALUES (1, 'Psychiatry')
+INSERT INTO "Doctor"  ("PersonID",  "Taxonomy")  VALUES (1, 'Psychiatry')
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO Patient (PersonID,  Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
+INSERT INTO "Patient" ("PersonID",  "Diagnosis") VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -271,9 +276,9 @@ CREATE OR REPLACE
 PROCEDURE Person_Delete(pPersonID IN NUMBER) IS
 BEGIN
 DELETE FROM
-	Person
+	"Person"
 WHERE
-	PersonID = pPersonID;
+	"PersonID" = pPersonID;
 END;
 
 BeforeExecute
@@ -290,12 +295,12 @@ PROCEDURE Person_Insert_OutputParameter
 	, pPersonID   OUT NUMBER
 	) IS
 BEGIN
-INSERT INTO Person
-	( LastName,  FirstName,  MiddleName,  Gender)
+INSERT INTO "Person"
+	( "LastName",  "FirstName",  "MiddleName",  "Gender")
 VALUES
 	(pLastName, pFirstName, pMiddleName, pGender)
 RETURNING
-	PersonID
+	"PersonID"
 INTO
 	pPersonID;
 END;
@@ -314,22 +319,22 @@ RETURN SYS_REFCURSOR IS
 	retCursor SYS_REFCURSOR;
 	lPersonID NUMBER;
 BEGIN
-INSERT INTO Person
-	( LastName,  FirstName,  MiddleName,  Gender)
+INSERT INTO "Person"
+	( "LastName",  "FirstName",  "MiddleName",  "Gender")
 VALUES
 	(pLastName, pFirstName, pMiddleName, pGender)
 RETURNING
-	PersonID
+	"PersonID"
 INTO
 	lPersonID;
 
 OPEN retCursor FOR
 	SELECT
-		PersonID, Firstname, Lastname, Middlename, Gender
+		"PersonID", "FirstName", "LastName", "MiddleName", "Gender"
 	FROM
-		Person
+		"Person"
 	WHERE
-		PersonID = lPersonID;
+		"PersonID" = lPersonID;
 RETURN
 	retCursor;
 END;
@@ -346,9 +351,9 @@ RETURN SYS_REFCURSOR IS
 BEGIN
 OPEN retCursor FOR
 	SELECT
-		PersonID, Firstname, Lastname, Middlename, Gender
+		"PersonID", "FirstName", "LastName", "MiddleName", "Gender"
 	FROM
-		Person;
+		"Person";
 RETURN
 	retCursor;
 END;
@@ -365,11 +370,11 @@ RETURN SYS_REFCURSOR IS
 BEGIN
 OPEN retCursor FOR
 	SELECT
-		PersonID, Firstname, Lastname, Middlename, Gender
+		"PersonID", "FirstName", "LastName", "MiddleName", "Gender"
 	FROM
-		Person
+		"Person"
 	WHERE
-		Gender = pGender;
+		"Gender" = pGender;
 RETURN
 	retCursor;
 END;
@@ -386,11 +391,11 @@ RETURN SYS_REFCURSOR IS
 BEGIN
 OPEN retCursor FOR
 	SELECT
-		PersonID, Firstname, Lastname, Middlename, Gender
+		"PersonID", "FirstName", "LastName", "MiddleName", "Gender"
 	FROM
-		Person
+		"Person"
 	WHERE
-		PersonID = pID;
+		"PersonID" = pID;
 RETURN
 	retCursor;
 END;
@@ -410,11 +415,11 @@ RETURN SYS_REFCURSOR IS
 BEGIN
 OPEN retCursor FOR
 	SELECT
-		PersonID, Firstname, Lastname, Middlename, Gender
+		"PersonID", "FirstName", "LastName", "MiddleName", "Gender"
 	FROM
-		Person
+		"Person"
 	WHERE
-		FirstName = pFirstName AND LastName = pLastName;
+		"FirstName" = pFirstName AND "LastName" = pLastName;
 RETURN
 	retCursor;
 END;
@@ -434,11 +439,11 @@ RETURN SYS_REFCURSOR IS
 BEGIN
 OPEN retCursor FOR
 	SELECT
-		PersonID, Firstname, Lastname, Middlename, Gender
+		"PersonID", "FirstName", "LastName", "MiddleName", "Gender"
 	FROM
-		Person
+		"Person"
 	WHERE
-		FirstName LIKE pFirstName AND LastName LIKE pLastName;
+		"FirstName" LIKE pFirstName AND "LastName" LIKE pLastName;
 RETURN
 	retCursor;
 END;
@@ -456,14 +461,14 @@ PROCEDURE Person_Update
 	) IS
 BEGIN
 UPDATE
-	Person
+	"Person"
 SET
-	LastName   = pLastName,
-	FirstName  = pFirstName,
-	MiddleName = pMiddleName,
-	Gender     = pGender
+	"LastName"   = pLastName,
+	"FirstName"  = pFirstName,
+	"MiddleName" = pMiddleName,
+	"Gender"     = pGender
 WHERE
-	PersonID   = pPersonID;
+	"PersonID"   = pPersonID;
 END;
 
 BeforeExecute
@@ -478,11 +483,11 @@ RETURN SYS_REFCURSOR IS
 BEGIN
 OPEN retCursor FOR
 SELECT
-	Person.*, Patient.Diagnosis
+	"Person".*, "Patient"."Diagnosis"
 FROM
-	Patient, Person
+	"Patient", "Person"
 WHERE
-	Patient.PersonID = Person.PersonID;
+	"Patient"."PersonID" = "Person"."PersonID";
 RETURN
 	retCursor;
 END;
@@ -502,12 +507,12 @@ RETURN SYS_REFCURSOR IS
 BEGIN
 OPEN retCursor FOR
 SELECT
-	Person.*, Patient.Diagnosis
+	"Person".*, "Patient"."Diagnosis"
 FROM
-	Patient, Person
+	"Patient", "Person"
 WHERE
-	Patient.PersonID = Person.PersonID
-	AND FirstName = pFirstName AND LastName = pLastName;
+	"Patient"."PersonID" = "Person"."PersonID"
+	AND "FirstName" = pFirstName AND "LastName" = pLastName;
 RETURN
 	retCursor;
 END;
@@ -692,35 +697,35 @@ BeforeExecute
 
 -- Data Types test
 
-CREATE SEQUENCE DataTypeTestSeq
+CREATE SEQUENCE "DataTypeTestSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE DataTypeTest
+CREATE TABLE "DataTypeTest"
 (
-	DataTypeID      INTEGER      NOT NULL PRIMARY KEY,
-	Binary_         RAW(50)          NULL,
-	Boolean_        NUMBER(1,0)      NULL,
-	Byte_           NUMBER(3,0)      NULL,
-	Bytes_          BLOB             NULL,
-	Char_           NCHAR            NULL,
-	DateTime_       DATE             NULL,
-	Decimal_        NUMBER(19,5)     NULL,
-	Double_         DOUBLE PRECISION NULL,
-	Guid_           RAW(16)          NULL,
-	Int16_          NUMBER(5,0)      NULL,
-	Int32_          NUMBER(10,0)     NULL,
-	Int64_          NUMBER(20,0)     NULL,
-	Money_          NUMBER           NULL,
-	SByte_          NUMBER(3,0)      NULL,
-	Single_         FLOAT            NULL,
-	Stream_         BLOB             NULL,
-	String_         NVARCHAR2(50)    NULL,
-	UInt16_         NUMBER(5,0)      NULL,
-	UInt32_         NUMBER(10,0)     NULL,
-	UInt64_         NUMBER(20,0)     NULL,
-	Xml_            XMLTYPE          NULL
+	"DataTypeID"      INTEGER      NOT NULL PRIMARY KEY,
+	"Binary_"         RAW(50)          NULL,
+	"Boolean_"        NUMBER(1,0)      NULL,
+	"Byte_"           NUMBER(3,0)      NULL,
+	"Bytes_"          BLOB             NULL,
+	"Char_"           NCHAR            NULL,
+	"DateTime_"       DATE             NULL,
+	"Decimal_"        NUMBER(19,5)     NULL,
+	"Double_"         DOUBLE PRECISION NULL,
+	"Guid_"           RAW(16)          NULL,
+	"Int16_"          NUMBER(5,0)      NULL,
+	"Int32_"          NUMBER(10,0)     NULL,
+	"Int64_"          NUMBER(20,0)     NULL,
+	"Money_"          NUMBER           NULL,
+	"SByte_"          NUMBER(3,0)      NULL,
+	"Single_"         FLOAT            NULL,
+	"Stream_"         BLOB             NULL,
+	"String_"         NVARCHAR2(50)    NULL,
+	"UInt16_"         NUMBER(5,0)      NULL,
+	"UInt32_"         NUMBER(10,0)     NULL,
+	"UInt64_"         NUMBER(20,0)     NULL,
+	"Xml_"            XMLTYPE          NULL
 )
 
 BeforeExecute
@@ -728,15 +733,15 @@ BeforeExecute
 
 -- Insert Trigger for DataTypeTest
 
-CREATE OR REPLACE TRIGGER DataTypeTest_Add
+CREATE OR REPLACE TRIGGER "DataTypeTest_Add"
 BEFORE INSERT
-ON DataTypeTest
+ON "DataTypeTest"
 FOR EACH ROW
 BEGIN
 SELECT
-	DataTypeTestSeq.NEXTVAL
+	"DataTypeTestSeq".NEXTVAL
 INTO
-	:NEW.DataTypeID
+	:NEW."DataTypeID"
 FROM
 	dual;
 END;
@@ -744,10 +749,10 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO DataTypeTest
-	(Binary_,      Boolean_,    Byte_,     Bytes_,   Char_, DateTime_, Decimal_,
-	 Double_,         Guid_,   Int16_,     Int32_,  Int64_,    Money_,   SByte_,
-	 Single_,       Stream_,  String_,    UInt16_, UInt32_,   UInt64_,     Xml_)
+INSERT INTO "DataTypeTest"
+	("Binary_",      "Boolean_",    "Byte_",     "Bytes_",   "Char_", "DateTime_", "Decimal_",
+	 "Double_",         "Guid_",   "Int16_",     "Int32_",  "Int64_",    "Money_",   "SByte_",
+	 "Single_",       "Stream_",  "String_",    "UInt16_", "UInt32_",   "UInt64_",     "Xml_")
 VALUES
 	(   NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL,
 	    NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL,
@@ -756,11 +761,10 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO DataTypeTest
-	(Binary_,      Boolean_,    Byte_,     Bytes_,   Char_, DateTime_, Decimal_,
-	 Double_,         Guid_,   Int16_,     Int32_,  Int64_,    Money_,   SByte_,
-	 Single_,       Stream_,  String_,    UInt16_, UInt32_,   UInt64_,
-	 Xml_)
+INSERT INTO "DataTypeTest"
+	("Binary_",      "Boolean_",    "Byte_",     "Bytes_",   "Char_", "DateTime_", "Decimal_",
+	 "Double_",         "Guid_",   "Int16_",     "Int32_",  "Int64_",    "Money_",   "SByte_",
+	 "Single_",       "Stream_",  "String_",    "UInt16_", "UInt32_",   "UInt64_",     "Xml_")
 VALUES
 	(SYS_GUID(),          1,      255, SYS_GUID(),     'B',   SYSDATE, 12345.67,
 	   1234.567, SYS_GUID(),    32767,      32768, 1000000,   12.3456,      127,
@@ -770,30 +774,48 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE Parent      (ParentID int, Value1 int)
+CREATE TABLE "Parent"      ("ParentID" int, "Value1" int)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE Child       (ParentID int, ChildID int)
+CREATE TABLE "Child"       ("ParentID" int, "ChildID" int)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE GrandChild  (ParentID int, ChildID int, GrandChildID int)
+CREATE TABLE "GrandChild"  ("ParentID" int, "ChildID" int, "GrandChildID" int)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE LinqDataTypes
+CREATE TABLE "LinqDataTypes"
 (
-	ID             int,
+	ID               int,
+	"MoneyValue"     decimal(10,4),
+	"DateTimeValue"  timestamp,
+	"DateTimeValue2" timestamp,
+	"BoolValue"      smallint,
+	"GuidValue"      raw(16),
+	"BinaryValue"    blob         NULL,
+	"SmallIntValue"  smallint,
+	"IntValue"       int          NULL,
+	"BigIntValue"    number(20,0) NULL,
+	"StringValue"    VARCHAR2(50) NULL
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+-- uppercased table for native bulk copy
+CREATE TABLE LinqDataTypesBC
+(
+	ID               int,
 	MoneyValue     decimal(10,4),
 	DateTimeValue  timestamp,
 	DateTimeValue2 timestamp,
 	BoolValue      smallint,
 	GuidValue      raw(16),
-	BinaryValue    blob         NULL,
 	SmallIntValue  smallint,
 	IntValue       int          NULL,
 	BigIntValue    number(20,0) NULL,
@@ -812,9 +834,10 @@ CREATE SEQUENCE SequenceTestSeq
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
+-- names not escaped to test native bulk copy
 CREATE TABLE SequenceTest
 (
-	ID                 int NOT NULL PRIMARY KEY,
+	ID      int NOT NULL PRIMARY KEY,
 	Value VARCHAR2(50) NOT NULL
 )
 
@@ -835,66 +858,66 @@ CREATE TABLE "STG_TRADE_INFORMATION"
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-create table t_test_user
+create table "t_test_user"
 (
-	user_id  number primary key,
-	name     varchar2(255) not null unique
+	"user_id"  number primary key,
+	"name"     varchar2(255) not null unique
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-create table t_test_user_contract
+create table "t_test_user_contract"
 (
-	user_contract_id number primary key,
-	user_id          number not null references t_test_user on delete cascade,
-	contract_no      number not null,
-	name             varchar2(255) not null,
-	unique           (user_id, contract_no)
+	"user_contract_id" number primary key,
+	"user_id"          number not null references "t_test_user" on delete cascade,
+	"contract_no"      number not null,
+	"name"             varchar2(255) not null,
+	unique           ("user_id", "contract_no")
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-create sequence sq_test_user
+create sequence "sq_test_user"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-create sequence sq_test_user_contract
+create sequence "sq_test_user_contract"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP SEQUENCE TestIdentitySeq
+DROP SEQUENCE "TestIdentitySeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE TestIdentity
+DROP TABLE "TestIdentity"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE TestIdentity (
-	ID NUMBER NOT NULL PRIMARY KEY
+CREATE TABLE "TestIdentity" (
+	"ID" NUMBER NOT NULL PRIMARY KEY
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE SEQUENCE TestIdentitySeq
+CREATE SEQUENCE "TestIdentitySeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE OR REPLACE TRIGGER TestIdentity_Add
+CREATE OR REPLACE TRIGGER "TestIdentity_Add"
 BEFORE INSERT
-ON TestIdentity
+ON "TestIdentity"
 FOR EACH ROW
 BEGIN
 SELECT
-	TestIdentitySeq.NEXTVAL
+	"TestIdentitySeq".NEXTVAL
 INTO
 	:NEW.ID
 FROM
@@ -904,68 +927,68 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE AllTypes
+DROP TABLE "AllTypes"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE AllTypes
+CREATE TABLE "AllTypes"
 (
-	ID                       int                        NOT NULL PRIMARY KEY,
+	"ID"                         int                        NOT NULL PRIMARY KEY,
 
-	bigintDataType           number(20,0)                   NULL,
-	numericDataType          numeric                        NULL,
-	bitDataType              number(1,0)                    NULL,
-	smallintDataType         number(5,0)                    NULL,
-	decimalDataType          number(*,6)                    NULL,
-	smallmoneyDataType       number(10,4)                   NULL,
-	intDataType              number(10,0)                   NULL,
-	tinyintDataType          number(3,0)                    NULL,
-	moneyDataType            number                         NULL,
-	floatDataType            binary_double                  NULL,
-	realDataType             binary_float                   NULL,
+	"bigintDataType"           number(20,0)                   NULL,
+	"numericDataType"          numeric                        NULL,
+	"bitDataType"              number(1,0)                    NULL,
+	"smallintDataType"         number(5,0)                    NULL,
+	"decimalDataType"          number(*,6)                    NULL,
+	"smallmoneyDataType"       number(10,4)                   NULL,
+	"intDataType"              number(10,0)                   NULL,
+	"tinyintDataType"          number(3,0)                    NULL,
+	"moneyDataType"            number                         NULL,
+	"floatDataType"            binary_double                  NULL,
+	"realDataType"             binary_float                   NULL,
 
-	datetimeDataType         date                           NULL,
-	datetime2DataType        timestamp                      NULL,
-	datetimeoffsetDataType   timestamp with time zone       NULL,
-	localZoneDataType        timestamp with local time zone NULL,
+	"datetimeDataType"         date                           NULL,
+	"datetime2DataType"        timestamp                      NULL,
+	"datetimeoffsetDataType"   timestamp with time zone       NULL,
+	"localZoneDataType"        timestamp with local time zone NULL,
 
-	charDataType             char(1)                        NULL,
-	char20DataType           char(20)                       NULL,
-	varcharDataType          varchar2(20)                   NULL,
-	textDataType             clob                           NULL,
-	ncharDataType            nchar(20)                      NULL,
-	nvarcharDataType         nvarchar2(20)                  NULL,
-	ntextDataType            nclob                          NULL,
+	"charDataType"             char(1)                        NULL,
+	"char20DataType"           char(20)                       NULL,
+	"varcharDataType"          varchar2(20)                   NULL,
+	"textDataType"             clob                           NULL,
+	"ncharDataType"            nchar(20)                      NULL,
+	"nvarcharDataType"         nvarchar2(20)                  NULL,
+	"ntextDataType"            nclob                          NULL,
 
-	binaryDataType           blob                           NULL,
-	bfileDataType            bfile                          NULL,
-	guidDataType             raw(16)                        NULL,
-	longDataType             long                           NULL,
+	"binaryDataType"           blob                           NULL,
+	"bfileDataType"            bfile                          NULL,
+	"guidDataType"             raw(16)                        NULL,
+	"longDataType"             long                           NULL,
 
-	uriDataType              UriType                        NULL,
-	xmlDataType              XmlType                        NULL
+	"uriDataType"              UriType                        NULL,
+	"xmlDataType"              XmlType                        NULL
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP SEQUENCE AllTypesSeq
+DROP SEQUENCE "AllTypesSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE SEQUENCE AllTypesSeq
+CREATE SEQUENCE "AllTypesSeq"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE OR REPLACE TRIGGER AllTypes_Add
+CREATE OR REPLACE TRIGGER "AllTypes_Add"
 BEFORE INSERT
-ON AllTypes
+ON "AllTypes"
 FOR EACH ROW
 BEGIN
-	SELECT AllTypesSeq.NEXTVAL INTO :NEW.ID FROM dual;
+	SELECT "AllTypesSeq".NEXTVAL INTO :NEW.ID FROM dual;
 END;
 
 BeforeExecute
@@ -976,39 +999,39 @@ CREATE OR REPLACE DIRECTORY DATA_DIR AS 'C:\DataFiles'
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO AllTypes
+INSERT INTO "AllTypes"
 (
-	bigintDataType,
-	numericDataType,
-	bitDataType,
-	smallintDataType,
-	decimalDataType,
-	smallmoneyDataType,
-	intDataType,
-	tinyintDataType,
-	moneyDataType,
-	floatDataType,
-	realDataType,
+	"bigintDataType",
+	"numericDataType",
+	"bitDataType",
+	"smallintDataType",
+	"decimalDataType",
+	"smallmoneyDataType",
+	"intDataType",
+	"tinyintDataType",
+	"moneyDataType",
+	"floatDataType",
+	"realDataType",
 
-	datetimeDataType,
-	datetime2DataType,
-	datetimeoffsetDataType,
-	localZoneDataType,
+	"datetimeDataType",
+	"datetime2DataType",
+	"datetimeoffsetDataType",
+	"localZoneDataType",
 
-	charDataType,
-	varcharDataType,
-	textDataType,
-	ncharDataType,
-	nvarcharDataType,
-	ntextDataType,
+	"charDataType",
+	"varcharDataType",
+	"textDataType",
+	"ncharDataType",
+	"nvarcharDataType",
+	"ntextDataType",
 
-	binaryDataType,
-	bfileDataType,
-	guidDataType,
-	longDataType,
+	"binaryDataType",
+	"bfileDataType",
+	"guidDataType",
+	"longDataType",
 
-	uriDataType,
-	xmlDataType
+	"uriDataType",
+	"xmlDataType"
 )
 SELECT
 	NULL bigintDataType,
@@ -1081,55 +1104,55 @@ FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-create table t_entity
+create table "t_entity"
 (
-	entity_id integer primary key,
-	time      date,
-	duration  interval day(3) to second(2)
+	"entity_id" integer primary key,
+	"time"      date,
+	"duration"  interval day(3) to second(2)
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE LongRawTable
+DROP TABLE "LongRawTable"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE LongRawTable
+CREATE TABLE "LongRawTable"
 (
-	ID              NUMBER        NOT NULL PRIMARY KEY,
-	longRawDataType long raw      NULL
+	"ID"                NUMBER        NOT NULL PRIMARY KEY,
+	"longRawDataType" long raw      NULL
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO LongRawTable
+INSERT INTO "LongRawTable"
 SELECT 1, NULL                        FROM dual UNION ALL
 SELECT 2, to_blob('4c4f4e4720524157') FROM dual -- "LONG RAW"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE DecimalOverflow
+DROP TABLE "DecimalOverflow"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE DecimalOverflow
+CREATE TABLE "DecimalOverflow"
 (
-	Decimal1 numeric(38,20),
-	Decimal2 numeric(31,2),
-	Decimal3 numeric(38,36),
-	Decimal4 numeric(29,0),
-	Decimal5 numeric(38,38)
+	"Decimal1" numeric(38,20),
+	"Decimal2" numeric(31,2),
+	"Decimal3" numeric(38,36),
+	"Decimal4" numeric(29,0),
+	"Decimal5" numeric(38,38)
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO DecimalOverflow
+INSERT INTO "DecimalOverflow"
 SELECT  123456789012345.12345678901234567890,  1234567890123456789.91,  12.345678901234512345678901234567890,  1234567890123456789,  .12345678901234512345678901234567890 FROM dual UNION ALL
 SELECT -123456789012345.12345678901234567890, -1234567890123456789.91, -12.345678901234512345678901234567890, -1234567890123456789, -.12345678901234512345678901234567890 FROM dual UNION ALL
 SELECT  12345678901234.567890123456789,                          NULL,                                  NULL,                 NULL,                                  NULL FROM dual UNION ALL
@@ -1145,69 +1168,69 @@ SELECT -12345678901234.5678901234567,                            NULL,          
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE TestMerge1
+DROP TABLE "TestMerge1"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE TestMerge2
+DROP TABLE "TestMerge2"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE TestMerge1
+CREATE TABLE "TestMerge1"
 (
-	Id		NUMBER	NOT NULL PRIMARY KEY,
-	Field1	NUMBER	NULL,
-	Field2	NUMBER	NULL,
-	Field3	NUMBER	NULL,
-	Field4	NUMBER	NULL,
-	Field5	NUMBER	NULL,
+	"Id"		NUMBER	NOT NULL PRIMARY KEY,
+	"Field1"	NUMBER	NULL,
+	"Field2"	NUMBER	NULL,
+	"Field3"	NUMBER	NULL,
+	"Field4"	NUMBER	NULL,
+	"Field5"	NUMBER	NULL,
 
-	FieldInt64      NUMBER(20, 0)               NULL,
-	FieldBoolean    NUMBER(1, 0)                NULL,
-	FieldString     VARCHAR(20)                 NULL,
-	FieldNString    NVARCHAR2(20)               NULL,
-	FieldChar       CHAR(1)                     NULL,
-	FieldNChar      NCHAR(1)                    NULL,
-	FieldFloat      BINARY_FLOAT                NULL,
-	FieldDouble     BINARY_DOUBLE               NULL,
-	FieldDateTime   DATE                        NULL,
-	FieldDateTime2  TIMESTAMP(7) WITH TIME ZONE NULL,
-	FieldBinary     BLOB                        NULL,
-	FieldGuid       RAW(16)                     NULL,
-	FieldDecimal    DECIMAL(24, 10)             NULL,
-	FieldEnumString VARCHAR(20)                 NULL,
-	FieldEnumNumber NUMBER                      NULL
+	"FieldInt64"      NUMBER(20, 0)               NULL,
+	"FieldBoolean"    NUMBER(1, 0)                NULL,
+	"FieldString"     VARCHAR(20)                 NULL,
+	"FieldNString"    NVARCHAR2(20)               NULL,
+	"FieldChar"       CHAR(1)                     NULL,
+	"FieldNChar"      NCHAR(1)                    NULL,
+	"FieldFloat"      BINARY_FLOAT                NULL,
+	"FieldDouble"     BINARY_DOUBLE               NULL,
+	"FieldDateTime"   DATE                        NULL,
+	"FieldDateTime2"  TIMESTAMP(7) WITH TIME ZONE NULL,
+	"FieldBinary"     BLOB                        NULL,
+	"FieldGuid"       RAW(16)                     NULL,
+	"FieldDecimal"    DECIMAL(24, 10)             NULL,
+	"FieldEnumString" VARCHAR(20)                 NULL,
+	"FieldEnumNumber" NUMBER                      NULL
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE TestMerge2
+CREATE TABLE "TestMerge2"
 (
-	Id		NUMBER	NOT NULL PRIMARY KEY,
-	Field1	NUMBER	NULL,
-	Field2	NUMBER	NULL,
-	Field3	NUMBER	NULL,
-	Field4	NUMBER	NULL,
-	Field5	NUMBER	NULL,
+	"Id"		NUMBER	NOT NULL PRIMARY KEY,
+	"Field1"	NUMBER	NULL,
+	"Field2"	NUMBER	NULL,
+	"Field3"	NUMBER	NULL,
+	"Field4"	NUMBER	NULL,
+	"Field5"	NUMBER	NULL,
 
-	FieldInt64      NUMBER(20, 0)               NULL,
-	FieldBoolean    NUMBER(1, 0)                NULL,
-	FieldString     VARCHAR(20)                 NULL,
-	FieldNString    NVARCHAR2(20)               NULL,
-	FieldChar       CHAR(1)                     NULL,
-	FieldNChar      NCHAR(1)                    NULL,
-	FieldFloat      BINARY_FLOAT                NULL,
-	FieldDouble     BINARY_DOUBLE               NULL,
-	FieldDateTime   DATE                        NULL,
-	FieldDateTime2  TIMESTAMP(7) WITH TIME ZONE NULL,
-	FieldBinary     BLOB                        NULL,
-	FieldGuid       RAW(16)                     NULL,
-	FieldDecimal    DECIMAL(24, 10)             NULL,
-	FieldEnumString VARCHAR(20)                 NULL,
-	FieldEnumNumber NUMBER                      NULL
+	"FieldInt64"      NUMBER(20, 0)               NULL,
+	"FieldBoolean"    NUMBER(1, 0)                NULL,
+	"FieldString"     VARCHAR(20)                 NULL,
+	"FieldNString"    NVARCHAR2(20)               NULL,
+	"FieldChar"       CHAR(1)                     NULL,
+	"FieldNChar"      NCHAR(1)                    NULL,
+	"FieldFloat"      BINARY_FLOAT                NULL,
+	"FieldDouble"     BINARY_DOUBLE               NULL,
+	"FieldDateTime"   DATE                        NULL,
+	"FieldDateTime2"  TIMESTAMP(7) WITH TIME ZONE NULL,
+	"FieldBinary"     BLOB                        NULL,
+	"FieldGuid"       RAW(16)                     NULL,
+	"FieldDecimal"    DECIMAL(24, 10)             NULL,
+	"FieldEnumString" VARCHAR(20)                 NULL,
+	"FieldEnumNumber" NUMBER                      NULL
 )
 
 BeforeExecute
@@ -1216,7 +1239,7 @@ BeforeExecute
 CREATE OR REPLACE
 PROCEDURE AddIssue792Record() IS
 BEGIN
-	INSERT INTO dbo.AllTypes(char20DataType) VALUES('issue792');
+	INSERT INTO dbo."AllTypes"("char20DataType") VALUES('issue792');
 END;
 
 BeforeExecute
@@ -1225,7 +1248,7 @@ BeforeExecute
 CREATE OR REPLACE
 PROCEDURE AllOutputParameters
 (
-	ID                       IN OUT int                            ,
+	ID                         IN OUT int                          ,
 
 	bigintDataType           IN OUT number                         ,
 	numericDataType          IN OUT number                         ,
@@ -1256,7 +1279,7 @@ PROCEDURE AllOutputParameters
  	bfileDataType            IN OUT bfile                          ,
 	guidDataType             IN OUT raw                            ,
 
-	--uriDataType              IN OUT UriType                        ,
+	--uriDataType              IN OUT UriType                      ,
 	xmlDataType              IN OUT XmlType
 
 ) IS
@@ -1264,37 +1287,37 @@ BEGIN
 	SELECT
 		at.ID,
 
-		at.bigintDataType,
-		at.numericDataType,
-		at.bitDataType,
-		at.smallintDataType,
-		at.decimalDataType,
-		at.smallmoneyDataType,
-		at.intDataType,
-		at.tinyintDataType,
-		at.moneyDataType,
-		at.floatDataType,
-		at.realDataType,
+		at."bigintDataType",
+		at."numericDataType",
+		at."bitDataType",
+		at."smallintDataType",
+		at."decimalDataType",
+		at."smallmoneyDataType",
+		at."intDataType",
+		at."tinyintDataType",
+		at."moneyDataType",
+		at."floatDataType",
+		at."realDataType",
 
-		at.datetimeDataType,
-		at.datetime2DataType,
-		at.datetimeoffsetDataType,
-		at.localZoneDataType,
+		at."datetimeDataType",
+		at."datetime2DataType",
+		at."datetimeoffsetDataType",
+		at."localZoneDataType",
 
-		at.charDataType,
-		at.char20DataType,
-		at.varcharDataType,
-		at.textDataType,
-		at.ncharDataType,
-		at.nvarcharDataType,
-		at.ntextDataType,
+		at."charDataType",
+		at."char20DataType",
+		at."varcharDataType",
+		at."textDataType",
+		at."ncharDataType",
+		at."nvarcharDataType",
+		at."ntextDataType",
 
-		at.binaryDataType,
- 		at.bfileDataType,
-		at.guidDataType,
+		at."binaryDataType",
+ 		at."bfileDataType",
+		at."guidDataType",
 
-		--at.uriDataType,
-		at.xmlDataType
+		--at."uriDataType",
+		at."xmlDataType"
 
 		INTO
 
@@ -1332,7 +1355,7 @@ BEGIN
 		--uriDataType,
 		xmlDataType
 
-	FROM ALLTYPES at
+	FROM "AllTypes" at
 	WHERE at.ID = 2;
 END;
 
@@ -1365,158 +1388,158 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP VIEW SchemaTestView
+DROP VIEW "SchemaTestView"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP MATERIALIZED VIEW SchemaTestMatView
+DROP MATERIALIZED VIEW "SchemaTestMatView"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE SchemaTestTable
+DROP TABLE "SchemaTestTable"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE SchemaTestTable
+CREATE TABLE "SchemaTestTable"
 (
-	Id  NUMBER NOT NULL PRIMARY KEY
+	"Id"  NUMBER NOT NULL PRIMARY KEY
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE VIEW SchemaTestView AS SELECT Id FROM SchemaTestTable
+CREATE VIEW "SchemaTestView" AS SELECT "Id" FROM "SchemaTestTable"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE MATERIALIZED VIEW SchemaTestMatView AS SELECT Id FROM SchemaTestTable
+CREATE MATERIALIZED VIEW "SchemaTestMatView" AS SELECT "Id" FROM "SchemaTestTable"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-COMMENT ON TABLE SchemaTestTable IS 'This is table'
+COMMENT ON TABLE "SchemaTestTable" IS 'This is table'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-COMMENT ON MATERIALIZED VIEW SchemaTestMatView IS 'This is matview'
+COMMENT ON MATERIALIZED VIEW "SchemaTestMatView" IS 'This is matview'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-COMMENT ON COLUMN SchemaTestTable.Id IS 'This is column'
+COMMENT ON COLUMN "SchemaTestTable"."Id" IS 'This is column'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-COMMENT ON COLUMN SchemaTestView.Id IS 'This is view column'
+COMMENT ON COLUMN "SchemaTestView"."Id" IS 'This is view column'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-COMMENT ON COLUMN SchemaTestMatView.Id IS 'This is matview column'
+COMMENT ON COLUMN "SchemaTestMatView"."Id" IS 'This is matview column'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (1,1.11,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('659112effe6ff94dbb6bbb16e413c883' as raw(16)),1,NULL,1,NULL)
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (2,2.49,TO_TIMESTAMP('2005-05-15 05:15:25.500000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('613a66bc407b8146ac38f9aaf55b706b' as raw(16)),2,NULL,2,'')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (3,3.99,TO_TIMESTAMP('2009-09-19 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('c070f9d2ac3587499cd55badb1757436' as raw(16)),3,NULL,NULL,'1')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (4,4.50,TO_TIMESTAMP('2009-09-20 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('db2f934043154a4eac2cca371604fb4b' as raw(16)),4,NULL,NULL,'2')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (5,5.50,TO_TIMESTAMP('2009-09-20 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('ca3ebefe5fcbb240ad392979d312afca' as raw(16)),5,NULL,NULL,'3')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (6,6.55,TO_TIMESTAMP('2009-09-22 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('1d5d3c8ddb4730479fe7968f6228a4c0' as raw(16)),6,NULL,NULL,'4')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (7,7.00,TO_TIMESTAMP('2009-09-23 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('15410948af83dd46a906bff26ee21ee2' as raw(16)),7,NULL,NULL,'5')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (8,8.99,TO_TIMESTAMP('2009-09-24 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('1f9f13c13513d44c937e92602f732dd3' as raw(16)),8,NULL,NULL,'6')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (9,9.63,TO_TIMESTAMP('2009-09-25 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('12c5c5464b3df74cb4e71de080789e5d' as raw(16)),9,NULL,NULL,'7')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (10,10.77,TO_TIMESTAMP('2009-09-26 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('55bcb2617f14404b93eda4aa83602fee' as raw(16)),10,NULL,NULL,'8')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (11,11.45,TO_TIMESTAMP('2009-09-27 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('181d02d3f097c04d98d0f0c7df4a1230' as raw(16)),11,NULL,NULL,'9')
-	INTO LinqDataTypes (ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES (12,11.45,TO_TIMESTAMP('2012-11-07 19:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('181d0203f097c04d98d0f0c7df4a1230' as raw(16)),12,NULL,NULL,'0')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1,1.11,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('659112effe6ff94dbb6bbb16e413c883' as raw(16)),1,NULL,1,NULL)
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (2,2.49,TO_TIMESTAMP('2005-05-15 05:15:25.500000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('613a66bc407b8146ac38f9aaf55b706b' as raw(16)),2,NULL,2,'')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (3,3.99,TO_TIMESTAMP('2009-09-19 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('c070f9d2ac3587499cd55badb1757436' as raw(16)),3,NULL,NULL,'1')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (4,4.50,TO_TIMESTAMP('2009-09-20 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('db2f934043154a4eac2cca371604fb4b' as raw(16)),4,NULL,NULL,'2')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (5,5.50,TO_TIMESTAMP('2009-09-20 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('ca3ebefe5fcbb240ad392979d312afca' as raw(16)),5,NULL,NULL,'3')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (6,6.55,TO_TIMESTAMP('2009-09-22 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('1d5d3c8ddb4730479fe7968f6228a4c0' as raw(16)),6,NULL,NULL,'4')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (7,7.00,TO_TIMESTAMP('2009-09-23 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('15410948af83dd46a906bff26ee21ee2' as raw(16)),7,NULL,NULL,'5')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (8,8.99,TO_TIMESTAMP('2009-09-24 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('1f9f13c13513d44c937e92602f732dd3' as raw(16)),8,NULL,NULL,'6')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (9,9.63,TO_TIMESTAMP('2009-09-25 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('12c5c5464b3df74cb4e71de080789e5d' as raw(16)),9,NULL,NULL,'7')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (10,10.77,TO_TIMESTAMP('2009-09-26 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('55bcb2617f14404b93eda4aa83602fee' as raw(16)),10,NULL,NULL,'8')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (11,11.45,TO_TIMESTAMP('2009-09-27 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('181d02d3f097c04d98d0f0c7df4a1230' as raw(16)),11,NULL,NULL,'9')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (12,11.45,TO_TIMESTAMP('2012-11-07 19:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('181d0203f097c04d98d0f0c7df4a1230' as raw(16)),12,NULL,NULL,'0')
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO Parent (ParentID, Value1) VALUES (1,1)
-	INTO Parent (ParentID, Value1) VALUES (2,NULL)
-	INTO Parent (ParentID, Value1) VALUES (3,3)
-	INTO Parent (ParentID, Value1) VALUES (4,NULL)
-	INTO Parent (ParentID, Value1) VALUES (5,5)
-	INTO Parent (ParentID, Value1) VALUES (6,6)
-	INTO Parent (ParentID, Value1) VALUES (7,1)
+	INTO "Parent" ("ParentID", "Value1") VALUES (1,1)
+	INTO "Parent" ("ParentID", "Value1") VALUES (2,NULL)
+	INTO "Parent" ("ParentID", "Value1") VALUES (3,3)
+	INTO "Parent" ("ParentID", "Value1") VALUES (4,NULL)
+	INTO "Parent" ("ParentID", "Value1") VALUES (5,5)
+	INTO "Parent" ("ParentID", "Value1") VALUES (6,6)
+	INTO "Parent" ("ParentID", "Value1") VALUES (7,1)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO Child (ParentID, ChildID) VALUES (1,11)
-	INTO Child (ParentID, ChildID) VALUES (2,21)
-	INTO Child (ParentID, ChildID) VALUES (2,22)
-	INTO Child (ParentID, ChildID) VALUES (3,31)
-	INTO Child (ParentID, ChildID) VALUES (3,32)
-	INTO Child (ParentID, ChildID) VALUES (3,33)
-	INTO Child (ParentID, ChildID) VALUES (4,41)
-	INTO Child (ParentID, ChildID) VALUES (4,42)
-	INTO Child (ParentID, ChildID) VALUES (4,43)
-	INTO Child (ParentID, ChildID) VALUES (4,44)
-	INTO Child (ParentID, ChildID) VALUES (6,61)
-	INTO Child (ParentID, ChildID) VALUES (6,62)
-	INTO Child (ParentID, ChildID) VALUES (6,63)
-	INTO Child (ParentID, ChildID) VALUES (6,64)
-	INTO Child (ParentID, ChildID) VALUES (6,65)
-	INTO Child (ParentID, ChildID) VALUES (6,66)
-	INTO Child (ParentID, ChildID) VALUES (7,77)
+	INTO "Child" ("ParentID", "ChildID") VALUES (1,11)
+	INTO "Child" ("ParentID", "ChildID") VALUES (2,21)
+	INTO "Child" ("ParentID", "ChildID") VALUES (2,22)
+	INTO "Child" ("ParentID", "ChildID") VALUES (3,31)
+	INTO "Child" ("ParentID", "ChildID") VALUES (3,32)
+	INTO "Child" ("ParentID", "ChildID") VALUES (3,33)
+	INTO "Child" ("ParentID", "ChildID") VALUES (4,41)
+	INTO "Child" ("ParentID", "ChildID") VALUES (4,42)
+	INTO "Child" ("ParentID", "ChildID") VALUES (4,43)
+	INTO "Child" ("ParentID", "ChildID") VALUES (4,44)
+	INTO "Child" ("ParentID", "ChildID") VALUES (6,61)
+	INTO "Child" ("ParentID", "ChildID") VALUES (6,62)
+	INTO "Child" ("ParentID", "ChildID") VALUES (6,63)
+	INTO "Child" ("ParentID", "ChildID") VALUES (6,64)
+	INTO "Child" ("ParentID", "ChildID") VALUES (6,65)
+	INTO "Child" ("ParentID", "ChildID") VALUES (6,66)
+	INTO "Child" ("ParentID", "ChildID") VALUES (7,77)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (1,11,111)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (2,21,211)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (2,21,212)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (2,22,221)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (2,22,222)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (3,31,311)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (3,31,312)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (3,31,313)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (3,32,321)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (3,32,322)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (3,32,323)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (3,33,331)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (3,33,332)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (3,33,333)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (4,41,411)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (4,41,412)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (4,41,413)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (4,41,414)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (4,42,421)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (4,42,422)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (4,42,423)
-	INTO GrandChild (ParentID, ChildID, GrandChildID) VALUES (4,42,424)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (1,11,111)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (2,21,211)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (2,21,212)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (2,22,221)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (2,22,222)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (3,31,311)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (3,31,312)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (3,31,313)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (3,32,321)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (3,32,322)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (3,32,323)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (3,33,331)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (3,33,332)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (3,33,333)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (4,41,411)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (4,41,412)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (4,41,413)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (4,41,414)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (4,42,421)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (4,42,422)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (4,42,423)
+	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (4,42,424)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO InheritanceParent (TypeDiscriminator, InheritanceParentId, Name) VALUES (NULL,1,NULL)
-	INTO InheritanceParent (TypeDiscriminator, InheritanceParentId, Name) VALUES (1,2,NULL)
-	INTO InheritanceParent (TypeDiscriminator, InheritanceParentId, Name) VALUES (2,3,'InheritanceParent2')
+	INTO "InheritanceParent" ("TypeDiscriminator", "InheritanceParentId", "Name") VALUES (NULL,1,NULL)
+	INTO "InheritanceParent" ("TypeDiscriminator", "InheritanceParentId", "Name") VALUES (1,2,NULL)
+	INTO "InheritanceParent" ("TypeDiscriminator", "InheritanceParentId", "Name") VALUES (2,3,'InheritanceParent2')
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO InheritanceChild (InheritanceParentId, TypeDiscriminator, InheritanceChildId, Name) VALUES (1,NULL,1,NULL)
-	INTO InheritanceChild (InheritanceParentId, TypeDiscriminator, InheritanceChildId, Name) VALUES (2,1,2,NULL)
-	INTO InheritanceChild (InheritanceParentId, TypeDiscriminator, InheritanceChildId, Name) VALUES (3,2,3,'InheritanceParent2')
+	INTO "InheritanceChild" ("InheritanceParentId", "TypeDiscriminator", "InheritanceChildId", "Name") VALUES (1,NULL,1,NULL)
+	INTO "InheritanceChild" ("InheritanceParentId", "TypeDiscriminator", "InheritanceChildId", "Name") VALUES (2,1,2,NULL)
+	INTO "InheritanceChild" ("InheritanceParentId", "TypeDiscriminator", "InheritanceChildId", "Name") VALUES (3,2,3,'InheritanceParent2')
 SELECT * FROM dual
 

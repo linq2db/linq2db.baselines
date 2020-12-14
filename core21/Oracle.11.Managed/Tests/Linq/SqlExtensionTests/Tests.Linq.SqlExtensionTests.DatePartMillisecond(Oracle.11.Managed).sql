@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	(to_Number(To_Char(t.DateTimeValue, 'FF'))) / 1000
+	(to_Number(To_Char(t."DateTimeValue", 'FF'))) / 1000
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 

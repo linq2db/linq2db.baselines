@@ -4,10 +4,10 @@ DECLARE @n Int32
 SET     @n = 2
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID IN (1, :n)
+	p."ParentID" IN (1, :n)
 

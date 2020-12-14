@@ -4,23 +4,23 @@ DECLARE @skip Int32
 SET     @skip = 3
 
 SELECT
-	t2.ParentID,
-	t2.ChildID
+	t2."ParentID",
+	t2."ChildID"
 FROM
 	(
 		SELECT
-			t1.ParentID,
-			t1.ChildID,
+			t1."ParentID",
+			t1."ChildID",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					ch.ParentID,
-					ch.ChildID
+					ch."ParentID",
+					ch."ChildID"
 				FROM
-					Child ch
+					"Child" ch
 				WHERE
-					(ch.ChildID > 3 OR ch.ChildID < 4)
+					(ch."ChildID" > 3 OR ch."ChildID" < 4)
 			) t1
 	) t2
 WHERE

@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO t_test_user
+INSERT INTO "t_test_user"
 (
-	user_id,
-	name
+	"user_id",
+	"name"
 )
 VALUES
 (
-	sq_test_user.nextval,
+	"sq_test_user".nextval,
 	'user'
 )
 

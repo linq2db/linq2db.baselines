@@ -63,10 +63,10 @@ DECLARE @user_1 Int32
 SET     @user_1 = 3
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p."ParentID",
+	p."Value1"
 FROM
-	Parent p
+	"Parent" p
 WHERE
-	p.ParentID = :user_1
+	p."ParentID" = :user_1
 

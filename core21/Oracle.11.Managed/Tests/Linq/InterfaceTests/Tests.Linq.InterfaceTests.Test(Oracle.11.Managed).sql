@@ -4,7 +4,7 @@
 SELECT
 	Count(*)
 FROM
-	Parent t1
+	"Parent" t1
 GROUP BY
-	t1.ParentID
+	t1."ParentID"
 

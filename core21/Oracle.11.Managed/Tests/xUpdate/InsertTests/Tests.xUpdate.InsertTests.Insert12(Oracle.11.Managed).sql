@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	Max(t.PersonID)
+	Max(t."PersonID")
 FROM
-	Person t
+	"Person" t
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -13,11 +13,11 @@ SET     @FirstName = 'FirstName'
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'F'
 
-INSERT INTO Person
+INSERT INTO "Person"
 (
-	FirstName,
-	LastName,
-	Gender
+	"FirstName",
+	"LastName",
+	"Gender"
 )
 VALUES
 (
@@ -32,7 +32,7 @@ DECLARE @id Int32
 SET     @id = 4
 
 DELETE FROM
-	Person t1
+	"Person" t1
 WHERE
-	t1.PersonID > :id
+	t1."PersonID" > :id
 

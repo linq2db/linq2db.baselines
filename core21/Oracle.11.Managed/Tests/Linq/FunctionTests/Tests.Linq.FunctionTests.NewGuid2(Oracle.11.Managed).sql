@@ -6,7 +6,7 @@ SET     @take = 1
 SELECT
 	Sys_Guid()
 FROM
-	LinqDataTypes p
+	"LinqDataTypes" p
 WHERE
 	ROWNUM <= :take
 

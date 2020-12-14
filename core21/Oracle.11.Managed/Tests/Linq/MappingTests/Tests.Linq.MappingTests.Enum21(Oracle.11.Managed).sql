@@ -4,13 +4,13 @@ DECLARE @gender_1 Char(1) -- AnsiStringFixedLength
 SET     @gender_1 = 'M'
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
-	Person p
+	"Person" p
 WHERE
-	p.Gender = :gender_1
+	p."Gender" = :gender_1
 

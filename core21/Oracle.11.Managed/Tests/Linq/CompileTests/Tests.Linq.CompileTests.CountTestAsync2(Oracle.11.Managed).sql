@@ -6,9 +6,9 @@ SET     @ParentID = 1
 SELECT
 	Count(*)
 FROM
-	Child c_1
+	"Child" c_1
 WHERE
-	c_1.ParentID = :ParentID
+	c_1."ParentID" = :ParentID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
@@ -18,7 +18,7 @@ SET     @ParentID = -1
 SELECT
 	Count(*)
 FROM
-	Child c_1
+	"Child" c_1
 WHERE
-	c_1.ParentID = :ParentID
+	c_1."ParentID" = :ParentID
 

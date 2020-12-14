@@ -6,7 +6,7 @@ DECLARE @part2 Int32
 SET     @part2 = 4
 
 SELECT
-	t.DateTimeValue + ((t.SmallIntValue + :part1) - :part2) * INTERVAL '3' MONTH
+	t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * INTERVAL '3' MONTH
 FROM
-	LinqDataTypes t
+	"LinqDataTypes" t
 
