@@ -68,7 +68,7 @@ BeforeExecute
 SELECT
 	CASE WHEN EXISTS(
 		SELECT TOP (1)
-			1
+			[t1].[Value]
 		FROM
 			[TakeSkipClass] [t1]
 		GROUP BY

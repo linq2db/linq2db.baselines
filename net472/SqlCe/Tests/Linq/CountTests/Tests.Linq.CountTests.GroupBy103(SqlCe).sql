@@ -7,15 +7,15 @@ FROM
 	[Child] [t2]
 		LEFT JOIN (
 			SELECT
-				[keyParam].[ParentID],
-				[keyParam].[ChildID]
+				[ch].[ParentID],
+				[ch].[ChildID]
 			FROM
-				[Child] [keyParam]
+				[Child] [ch]
 			WHERE
-				[keyParam].[ChildID] > 20
+				[ch].[ChildID] > 20
 			GROUP BY
-				[keyParam].[ParentID],
-				[keyParam].[ChildID]
+				[ch].[ParentID],
+				[ch].[ChildID]
 		) [t1] ON ([t2].[ParentID] = [t1].[ParentID] AND [t2].[ChildID] = [t1].[ChildID])
 GROUP BY
 	[t2].[ParentID],
