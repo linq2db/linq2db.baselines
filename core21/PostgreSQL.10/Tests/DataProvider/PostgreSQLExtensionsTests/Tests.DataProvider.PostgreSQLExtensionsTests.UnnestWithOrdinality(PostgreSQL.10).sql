@@ -155,7 +155,7 @@ FROM
 	"SampleClass" t
 		INNER JOIN LATERAL UNNEST(t."StrArray") WITH ORDINALITY v(value, idx) ON 1=1
 WHERE
-	v.value LIKE 'V%'
+	v.value LIKE 'V%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
