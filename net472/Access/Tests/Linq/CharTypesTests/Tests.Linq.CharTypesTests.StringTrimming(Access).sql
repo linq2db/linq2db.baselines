@@ -10,8 +10,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @NString VarWChar(6) -- String
 SET     @NString = 'test01'
-DECLARE @String VarWChar(6) -- String
-SET     @String = 'test01'
+DECLARE @NString VarWChar(6) -- String
+SET     @NString = 'test01'
 
 INSERT INTO [AllTypes]
 (
@@ -21,15 +21,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test02  '
-DECLARE @String VarWChar(8) -- String
-SET     @String = 'test02  '
+DECLARE @NString VarWChar(8) -- String
+SET     @NString = 'test02  '
 
 INSERT INTO [AllTypes]
 (
@@ -39,15 +39,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test03	 '
-DECLARE @String VarWChar(8) -- String
-SET     @String = 'test03	 '
+DECLARE @NString VarWChar(8) -- String
+SET     @NString = 'test03	 '
 
 INSERT INTO [AllTypes]
 (
@@ -57,7 +57,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
@@ -65,8 +65,8 @@ BeforeExecute
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test04
  '
-DECLARE @String VarWChar(8) -- String
-SET     @String = 'test04
+DECLARE @NString VarWChar(8) -- String
+SET     @NString = 'test04
  '
 
 INSERT INTO [AllTypes]
@@ -77,15 +77,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test05 '
-DECLARE @String VarWChar(8) -- String
-SET     @String = 'test05 '
+DECLARE @NString VarWChar(8) -- String
+SET     @NString = 'test05 '
 
 INSERT INTO [AllTypes]
 (
@@ -95,15 +95,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test06 '
-DECLARE @String VarWChar(8) -- String
-SET     @String = 'test06 '
+DECLARE @NString VarWChar(8) -- String
+SET     @NString = 'test06 '
 
 INSERT INTO [AllTypes]
 (
@@ -113,15 +113,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test07 '
-DECLARE @String VarWChar(8) -- String
-SET     @String = 'test07 '
+DECLARE @NString VarWChar(8) -- String
+SET     @NString = 'test07 '
 
 INSERT INTO [AllTypes]
 (
@@ -131,15 +131,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test08  '
-DECLARE @String VarWChar(8) -- String
-SET     @String = 'test08  '
+DECLARE @NString VarWChar(8) -- String
+SET     @NString = 'test08  '
 
 INSERT INTO [AllTypes]
 (
@@ -149,7 +149,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
@@ -390,8 +390,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @NString VarWChar -- String
 SET     @NString = NULL
-DECLARE @String VarWChar -- String
-SET     @String = NULL
+DECLARE @NString VarWChar -- String
+SET     @NString = NULL
 
 INSERT INTO [AllTypes]
 (
@@ -401,7 +401,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute

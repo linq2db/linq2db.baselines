@@ -480,8 +480,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
-DECLARE @BoolValue_2 VarChar(1) -- AnsiString
-SET     @BoolValue_2 = 'Y'
+DECLARE @BoolValue VarChar(1) -- AnsiString
+SET     @BoolValue = 'Y'
 
 SELECT
 	[t1].[Enum]
@@ -492,7 +492,7 @@ FROM
 				[t2].[BoolValue]
 			FROM
 				[ValueConversion] [t2]
-		) [t2_1] ON ([t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue_2)
+		) [t2_1] ON ([t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue)
 
 BeforeExecute
 -- Access AccessOleDb

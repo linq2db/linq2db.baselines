@@ -24,10 +24,10 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @firstName_1 VarWChar(6) -- String
-SET     @firstName_1 = 'Tester'
-DECLARE @lastName_1 VarWChar(9) -- String
-SET     @lastName_1 = 'Testerson'
+DECLARE @firstName VarWChar(6) -- String
+SET     @firstName = 'Tester'
+DECLARE @lastName VarWChar(9) -- String
+SET     @lastName = 'Testerson'
 
 SELECT
 	[a_Person].[PersonID],
@@ -40,7 +40,7 @@ FROM
 	[Patient] [_]
 		INNER JOIN [Person] [a_Person] ON ([_].[PersonID] = [a_Person].[PersonID])
 WHERE
-	[a_Person].[FirstName] = @firstName_1 AND [a_Person].[LastName] = @lastName_1
+	[a_Person].[FirstName] = @firstName AND [a_Person].[LastName] = @lastName
 ORDER BY
 	[a_Person].[PersonID]
 
