@@ -22,7 +22,7 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
-INSERT BULK [TempTable](ID
+INSERT BULK [TempTable](ID)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

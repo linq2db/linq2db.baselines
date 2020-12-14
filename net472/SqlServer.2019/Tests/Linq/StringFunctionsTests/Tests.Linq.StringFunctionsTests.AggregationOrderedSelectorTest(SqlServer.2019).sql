@@ -30,7 +30,7 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1] DESC, [t1].[Value3])
+	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value3], [t1].[Value1] DESC)
 FROM
 	[SampleClass] [t1]
 GROUP BY
