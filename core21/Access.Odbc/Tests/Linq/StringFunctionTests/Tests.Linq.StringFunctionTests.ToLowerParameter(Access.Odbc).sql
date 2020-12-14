@@ -2,6 +2,8 @@
 -- Access.Odbc AccessODBC
 DECLARE @param NVarChar(4) -- String
 SET     @param = 'JOHN'
+DECLARE @param NVarChar(4) -- String
+SET     @param = 'JOHN'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +14,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LCase([p].[FirstName]) = LCase(?) AND [p].[PersonID] = 1
+	(LCase([p].[FirstName]) = LCase(?) OR LCase([p].[FirstName]) IS NULL AND LCase(?) IS NULL) AND
+	[p].[PersonID] = 1
 
