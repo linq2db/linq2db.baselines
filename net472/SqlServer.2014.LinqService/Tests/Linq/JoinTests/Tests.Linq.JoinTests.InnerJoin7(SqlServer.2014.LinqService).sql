@@ -2,15 +2,10 @@
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-	[t].[c1]
+	[ch].[ParentID] + [p].[ParentID]
 FROM
-	(
-		SELECT
-			[ch].[ParentID] + [p].[ParentID] as [c1]
-		FROM
-			[Child] [ch]
-				INNER JOIN [Parent] [p] ON [ch].[ParentID] = [p].[ParentID]
-	) [t]
+	[Child] [ch]
+		INNER JOIN [Parent] [p] ON [ch].[ParentID] = [p].[ParentID]
 WHERE
-	[t].[c1] > 2
+	[ch].[ParentID] + [p].[ParentID] > 2
 

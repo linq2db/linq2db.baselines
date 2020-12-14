@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @p1 Int -- Int32
-SET     @p1 = 1
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 1
 
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
 FROM
-	[GetParentByID](@p1) [p]
+	[GetParentByID](@p_1) [p]
 

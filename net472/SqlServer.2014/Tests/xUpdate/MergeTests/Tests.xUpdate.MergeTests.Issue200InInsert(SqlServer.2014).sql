@@ -7,10 +7,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @datetime2DataType_2 DateTime2
-SET     @datetime2DataType_2 = '2020-02-29T17:54:55.1231234'
-DECLARE @datetimeoffsetDataType_2 DateTimeOffset
-SET     @datetimeoffsetDataType_2 = '2020-02-29 17:54:55.1231234 +00:40'
+DECLARE @datetime2DataType DateTime2
+SET     @datetime2DataType = '2020-02-29T17:54:55.1231234'
+DECLARE @datetimeoffsetDataType DateTimeOffset
+SET     @datetimeoffsetDataType = '2020-02-29 17:54:55.1231234 +00:40'
 DECLARE @dto2 DateTimeOffset
 SET     @dto2 = '2020-02-29 17:54:55.1231237 +00:40'
 DECLARE @dt2 DateTime2
@@ -26,7 +26,8 @@ USING (	VALUES
 	[datetimeoffsetDataType],
 	[ID]
 )
-ON ([Source].[datetime2DataType] = @datetime2DataType_2 AND [Source].[datetimeoffsetDataType] = @datetimeoffsetDataType_2)
+ON ([Source].[datetime2DataType] = @datetime2DataType AND
+[Source].[datetimeoffsetDataType] = @datetimeoffsetDataType)
 
 WHEN NOT MATCHED THEN
 INSERT
