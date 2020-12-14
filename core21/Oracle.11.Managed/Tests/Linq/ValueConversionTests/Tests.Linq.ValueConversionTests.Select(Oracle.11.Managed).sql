@@ -62,11 +62,18 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t."Id",
-	t."Value1",
-	t."Value2"
+	t1."Id",
+	t1."Value1",
+	t1."Value2"
 FROM
-	"ValueConversion" t
+	(
+		SELECT
+			t."Id",
+			t."Value1",
+			t."Value2"
+		FROM
+			"ValueConversion" t
+	) t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -79,18 +86,25 @@ FROM
 	"ValueConversion" t
 UNION ALL
 SELECT
-	t_1."Id",
-	t_1."Value1",
-	t_1."Value2"
+	t1."Id",
+	t1."Value1",
+	t1."Value2"
 FROM
-	"ValueConversion" t_1
+	(
+		SELECT
+			t_1."Id",
+			t_1."Value1",
+			t_1."Value2"
+		FROM
+			"ValueConversion" t_1
+	) t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @take_1 Int32
+SET     @take_1 = 2
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t2."Value2"
@@ -115,7 +129,7 @@ FROM
 					q."Id"
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :take_1
 	) t2
 WHERE
 	t2.RN > :skip
