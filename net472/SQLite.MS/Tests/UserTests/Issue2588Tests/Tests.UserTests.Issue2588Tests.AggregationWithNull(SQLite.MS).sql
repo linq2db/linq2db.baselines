@@ -38,6 +38,16 @@ WHERE
 	[x].[Id] = 0
 
 BeforeExecute
+-- SQLite.MS SQLite (asynchronously)
+
+SELECT
+	Max([x].[Value])
+FROM
+	[TestClass] [x]
+WHERE
+	[x].[Id] = 0
+
+BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE [TestClass]
