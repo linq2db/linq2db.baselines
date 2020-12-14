@@ -10,7 +10,7 @@ SELECT
 	[p].[Value1]
 FROM
 	[Child] [t]
-		CROSS APPLY GetParentByID(([t].[ParentID] + @offset_1)) [p]
+		CROSS APPLY GetParentByID([t].[ParentID] + @offset_1) [p]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
