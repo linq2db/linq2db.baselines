@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	(IIF([_].[BigIntValue] IN (2), 1, 0) = 1 AND IIF([_].[BigIntValue] IN (2), 1, 0) IS NOT NULL)
+	IIF([_].[BigIntValue] IN (2), 1, 0) = 1
 
