@@ -1527,20 +1527,20 @@ CREATE TABLE DataType
 )
 
 BeforeExecute
-INSERT BULK [LinqDataTypes](ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue
+INSERT BULK [LinqDataTypes](ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue)
 
 BeforeExecute
-INSERT BULK [Parent](ParentID, Value1
+INSERT BULK [Parent](ParentID, Value1)
 
 BeforeExecute
-INSERT BULK [Child](ParentID, ChildID
+INSERT BULK [Child](ParentID, ChildID)
 
 BeforeExecute
-INSERT BULK [GrandChild](ParentID, ChildID, GrandChildID
+INSERT BULK [GrandChild](ParentID, ChildID, GrandChildID)
 
 BeforeExecute
-INSERT BULK [InheritanceParent](TypeDiscriminator, InheritanceParentId, Name
+INSERT BULK [InheritanceParent](TypeDiscriminator, InheritanceParentId, Name)
 
 BeforeExecute
-INSERT BULK [InheritanceChild](InheritanceParentId, TypeDiscriminator, InheritanceChildId, Name
+INSERT BULK [InheritanceChild](InheritanceParentId, TypeDiscriminator, InheritanceChildId, Name)
 
