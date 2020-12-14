@@ -10,7 +10,7 @@ DELETE [_]
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE N'UpdateComplex%'
+	[_].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2008
@@ -108,5 +108,5 @@ DELETE [_]
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE N'UpdateComplex%'
+	[_].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 

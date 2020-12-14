@@ -53,8 +53,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @id_1 Int -- Int32
-SET     @id_1 = 1
+DECLARE @id Int -- Int32
+SET     @id = 1
 
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
@@ -64,7 +64,7 @@ USING (
 	FROM
 		[TestNullableParameterSource] [_]
 	WHERE
-		[_].[Id] = @id_1
+		[_].[Id] = @id
 ) [Source]
 (
 	[source_field0],

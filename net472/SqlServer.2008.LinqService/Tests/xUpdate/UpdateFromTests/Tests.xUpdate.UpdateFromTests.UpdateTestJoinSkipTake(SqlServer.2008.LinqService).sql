@@ -262,7 +262,7 @@ SET     @someId = 100
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
-SET     @take = 2
+SET     @take = 3
 
 UPDATE
 	[t2]
@@ -296,7 +296,7 @@ FROM
 					[t].[id] <> @someId
 			) [t1]
 		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+			[t1].[RN] > @skip AND [t1].[RN] <= @take
 	) [t2]
 
 BeforeExecute
