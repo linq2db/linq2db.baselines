@@ -118,6 +118,6 @@ WHERE
 		FROM
 			[Orders] [t2]
 		WHERE
-			([c_1].[CustomerID] IS NULL AND [t2].[CustomerID] IS NULL OR [c_1].[CustomerID] = [t2].[CustomerID])
+			([c_1].[CustomerID] = [t2].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [t2].[CustomerID] IS NULL)
 	) > 0
 
