@@ -31,8 +31,8 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @FirstName_1 VarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName VarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -45,7 +45,7 @@ SELECT
 FROM
 	`Person` `x`
 WHERE
-	`x`.`FirstName` = @FirstName_1
+	`x`.`FirstName` = @FirstName
 LIMIT @take
 
 BeforeExecute
@@ -70,8 +70,8 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @FirstName_1 VarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName VarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -84,7 +84,7 @@ SELECT
 FROM
 	`Person` `x`
 WHERE
-	`x`.`FirstName` = @FirstName_1
+	`x`.`FirstName` = @FirstName
 LIMIT @take
 
 BeforeExecute
