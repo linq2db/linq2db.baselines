@@ -22,8 +22,8 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @skip Int32
-SET     @skip = 6
+DECLARE @skip_3 Int32
+SET     @skip_3 = 6
 
 SELECT
 	t1."Value"
@@ -31,7 +31,7 @@ FROM
 	"TakeSkipClass" t1
 ORDER BY
 	t1."Value"
-OFFSET :skip ROWS
+OFFSET :skip_3 ROWS
 
 BeforeExecute
 -- Oracle.Managed Oracle12

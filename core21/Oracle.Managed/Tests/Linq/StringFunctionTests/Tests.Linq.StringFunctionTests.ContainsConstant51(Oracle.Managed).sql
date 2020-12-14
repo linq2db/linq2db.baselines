@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @ps Varchar2(3) -- String
-SET     @ps = '%[%'
+DECLARE @ps_1 Varchar2(3) -- String
+SET     @ps_1 = '%[%'
 
 SELECT
 	p."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND '123[456' LIKE :ps ESCAPE '~'
+	p."PersonID" = 1 AND '123[456' LIKE :ps_1 ESCAPE '~'
 

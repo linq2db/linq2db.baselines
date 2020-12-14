@@ -38,8 +38,8 @@ RETURNING
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
-DECLARE @FirstName_1 Varchar2(5) -- String
-SET     @FirstName_1 = 'John0'
+DECLARE @FirstName Varchar2(5) -- String
+SET     @FirstName = 'John0'
 DECLARE @take Int32
 SET     @take = 2
 
@@ -52,7 +52,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :FirstName_1 AND p."LastName" = 'Shepard'
+	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -87,8 +87,8 @@ RETURNING
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
-DECLARE @FirstName_1 Varchar2(5) -- String
-SET     @FirstName_1 = 'John1'
+DECLARE @FirstName Varchar2(5) -- String
+SET     @FirstName = 'John1'
 DECLARE @take Int32
 SET     @take = 2
 
@@ -101,7 +101,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :FirstName_1 AND p."LastName" = 'Shepard'
+	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute

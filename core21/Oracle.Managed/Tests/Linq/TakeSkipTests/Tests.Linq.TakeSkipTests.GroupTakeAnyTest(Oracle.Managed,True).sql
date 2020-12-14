@@ -22,17 +22,21 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	CASE WHEN EXISTS(
-		SELECT
-			t1."Value"
-		FROM
-			"TakeSkipClass" t1
-		GROUP BY
-			t1."Value"
-		HAVING
-			Count(*) > 1
-		FETCH NEXT :take ROWS ONLY
-	) THEN 1 ELSE 0 END
+	CASE
+		WHEN EXISTS(
+			SELECT
+				t1."Value"
+			FROM
+				"TakeSkipClass" t1
+			GROUP BY
+				t1."Value"
+			HAVING
+				Count(*) > 1
+			FETCH NEXT :take ROWS ONLY
+		)
+			THEN 1
+		ELSE 0
+	END
 FROM SYS.DUAL
 
 BeforeExecute
