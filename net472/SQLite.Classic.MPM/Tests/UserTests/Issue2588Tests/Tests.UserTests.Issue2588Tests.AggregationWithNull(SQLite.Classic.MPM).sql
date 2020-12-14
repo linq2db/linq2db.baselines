@@ -38,6 +38,16 @@ WHERE
 	[x].[Id] = 0
 
 BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+
+SELECT
+	Max([x].[Value])
+FROM
+	[TestClass] [x]
+WHERE
+	[x].[Id] = 0
+
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE [TestClass]

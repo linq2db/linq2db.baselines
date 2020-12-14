@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
--- SQLite.Classic SQLite
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
