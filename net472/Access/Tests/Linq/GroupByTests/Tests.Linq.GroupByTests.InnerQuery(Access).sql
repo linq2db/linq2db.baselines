@@ -13,11 +13,11 @@ BeforeExecute
 SELECT
 	(
 		SELECT TOP 1
-			[keyParam].[Taxonomy]
+			[d].[Taxonomy]
 		FROM
-			[Doctor] [keyParam]
+			[Doctor] [d]
 		WHERE
-			[t1].[PersonID] = [keyParam].[PersonID]
+			[t1].[PersonID] = [d].[PersonID]
 	)
 FROM
 	[Doctor] [t1]

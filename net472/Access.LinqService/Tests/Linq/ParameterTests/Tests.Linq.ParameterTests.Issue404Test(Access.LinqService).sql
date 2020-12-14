@@ -187,21 +187,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[c_1].[Id]
 		FROM
-			(
-				SELECT TOP 1
-					[c_1].[Id]
-				FROM
-					[Table404One] [c_1]
-			) [t1]
+			[Table404One] [c_1]
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON ([_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -219,21 +214,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[c_1].[Id]
 		FROM
-			(
-				SELECT TOP 1
-					[c_1].[Id]
-				FROM
-					[Table404One] [c_1]
-			) [t1]
+			[Table404One] [c_1]
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON ([_v].[Usage] = @Usage_2 AND [_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -251,21 +241,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[c_1].[Id]
 		FROM
-			(
-				SELECT TOP 1
-					[c_1].[Id]
-				FROM
-					[Table404One] [c_1]
-			) [t1]
+			[Table404One] [c_1]
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON ([_v].[Usage] = @Usage_2 AND [_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -469,21 +454,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[c_1].[Id]
 		FROM
-			(
-				SELECT TOP 1
-					[c_1].[Id]
-				FROM
-					[Table404One] [c_1]
-			) [t1]
+			[Table404One] [c_1]
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON ([_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -501,21 +481,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[c_1].[Id]
 		FROM
-			(
-				SELECT TOP 1
-					[c_1].[Id]
-				FROM
-					[Table404One] [c_1]
-			) [t1]
+			[Table404One] [c_1]
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON ([_v].[Usage] = @Usage_2 AND [_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
@@ -533,21 +508,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[c_1].[Id]
 		FROM
-			(
-				SELECT TOP 1
-					[c_1].[Id]
-				FROM
-					[Table404One] [c_1]
-			) [t1]
+			[Table404One] [c_1]
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON ([_v].[Usage] = @Usage_2 AND [_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
+SELECT
 	[c_1].[Id]
 FROM
 	[Table404One] [c_1]
