@@ -9,13 +9,13 @@ FROM
 	([Child] [t3]
 		LEFT JOIN (
 			SELECT
-				[keyParam].[ParentID]
+				[c_1].[ParentID]
 			FROM
-				[Child] [keyParam]
+				[Child] [c_1]
 			WHERE
-				[keyParam].[ChildID] > 30
+				[c_1].[ChildID] > 30
 			GROUP BY
-				[keyParam].[ParentID]
+				[c_1].[ParentID]
 		) [t1] ON ([t3].[ParentID] = [t1].[ParentID]))
 		LEFT JOIN (
 			SELECT
