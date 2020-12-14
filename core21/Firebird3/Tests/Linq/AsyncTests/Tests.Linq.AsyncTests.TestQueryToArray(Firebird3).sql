@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird (asynchronously)
 
--- Firebird3 Firebird
 SELECT FIRST 1
 	"p"."FirstName",
 	"p"."PersonID",
