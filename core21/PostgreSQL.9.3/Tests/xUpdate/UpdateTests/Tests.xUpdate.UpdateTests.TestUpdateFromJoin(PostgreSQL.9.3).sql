@@ -45,7 +45,7 @@ SET
 	END
 FROM
 	gt_s_one x
-		LEFT JOIN access_mode am ON Upper(Replace(x.col3, 'auth.', '')) = Upper(am.code)
+		LEFT JOIN access_mode am ON (Upper(Replace(x.col3, 'auth.', '')) = Upper(am.code) OR Upper(Replace(x.col3, 'auth.', '')) IS NULL AND Upper(am.code) IS NULL)
 WHERE
 	gt_s_one.id = x.id
 
