@@ -61,8 +61,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 NVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName NVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP (@take)
 	[x].[ID],
@@ -72,7 +72,7 @@ SELECT TOP (@take)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlCe
@@ -95,8 +95,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 NVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName NVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP (@take)
 	[x].[ID],
@@ -106,7 +106,7 @@ SELECT TOP (@take)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlCe
