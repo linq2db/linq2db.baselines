@@ -21,8 +21,8 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @id_1 Int -- Int32
-SET     @id_1 = 3
+DECLARE @id Int -- Int32
+SET     @id = 3
 
 SELECT
 	[t].[ID],
@@ -31,12 +31,12 @@ SELECT
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[ID] = @id_1
+	[t].[ID] = @id
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @id_1 Int -- Int32
-SET     @id_1 = 3
+DECLARE @id Int -- Int32
+SET     @id = 3
 
 MERGE INTO [AllTypes] [Target]
 USING (
@@ -47,7 +47,7 @@ USING (
 	FROM
 		[AllTypes] [t]
 	WHERE
-		[t].[ID] = @id_1
+		[t].[ID] = @id
 ) [Source]
 (
 	[ID],
