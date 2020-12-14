@@ -84,9 +84,9 @@ FROM
 						[t1].[c_tb1l_Id]
 				) [allE]
 					LEFT JOIN [table3] [tbl3] ON [allE].[maxCol] = [tbl3].[id]
-					LEFT JOIN [table3] [btbl] ON ([btbl].[col] IS NULL AND [tbl3].[col] IS NULL OR [btbl].[col] = [tbl3].[col])
+					LEFT JOIN [table3] [btbl] ON ([btbl].[col] = [tbl3].[col] OR [btbl].[col] IS NULL AND [tbl3].[col] IS NULL)
 		) [t2] ON [bt1].[col3] = [t2].[ctb]
-		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL OR [bt1].[textCol] = [ctb2].[col1])
+		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
 WHERE
 	[t1_1].[commonTableId] = @id
 GROUP BY

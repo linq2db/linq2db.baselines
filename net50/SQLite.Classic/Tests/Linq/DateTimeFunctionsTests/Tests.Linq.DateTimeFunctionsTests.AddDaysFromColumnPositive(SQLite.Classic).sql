@@ -42,15 +42,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p1  -- DateTime
-SET     @p1 = '2018-01-02'
+DECLARE @p_1  -- DateTime
+SET     @p_1 = '2018-01-02'
 
 SELECT
 	Count(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateTime(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],[t].[SmallIntValue] || ' Day')) > DateTime(@p1)
+	[t].[ID] = 5000 AND DateTime(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],[t].[SmallIntValue] || ' Day')) > DateTime(@p_1)
 
 BeforeExecute
 -- SQLite.Classic SQLite
