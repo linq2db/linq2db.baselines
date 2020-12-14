@@ -7,9 +7,9 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[EmployeeTerritories] [keyParam]
+			[EmployeeTerritories] [t]
 		WHERE
-			[t1].[EmployeeID] = [keyParam].[EmployeeID] AND ([keyParam].[EmployeeID] = 1 AND [keyParam].[TerritoryID] = N'01581' OR [keyParam].[EmployeeID] = 1 AND [keyParam].[TerritoryID] = N'02116' OR [keyParam].[EmployeeID] = 1 AND [keyParam].[TerritoryID] = N'31406')
+			[t1].[EmployeeID] = [t].[EmployeeID] AND ([t].[EmployeeID] = 1 AND [t].[TerritoryID] = N'01581' OR [t].[EmployeeID] = 1 AND [t].[TerritoryID] = N'02116' OR [t].[EmployeeID] = 1 AND [t].[TerritoryID] = N'31406')
 	)
 FROM
 	[EmployeeTerritories] [t1]
