@@ -12,5 +12,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") = Lower(:param) AND p."PersonID" = 1
+	(Lower(p."FirstName") = Lower(:param) OR Lower(p."FirstName") IS NULL AND Lower(:param) IS NULL) AND
+	p."PersonID" = 1
 
