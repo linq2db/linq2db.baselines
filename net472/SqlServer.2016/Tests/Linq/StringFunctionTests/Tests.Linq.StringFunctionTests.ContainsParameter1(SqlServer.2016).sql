@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @str NVarChar(4000) -- String
-SET     @str = N'%oh%'
+DECLARE @str_1 NVarChar(4000) -- String
+SET     @str_1 = N'%oh%'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @str ESCAPE N'~' AND [p].[PersonID] = 1
+	[p].[FirstName] LIKE @str_1 ESCAPE N'~' AND [p].[PersonID] = 1
 
