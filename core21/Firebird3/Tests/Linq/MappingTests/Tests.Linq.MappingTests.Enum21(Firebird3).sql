@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @gender_1 Char(1) -- String
-SET     @gender_1 = 'M'
+DECLARE @gender Char(1) -- String
+SET     @gender = 'M'
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."Gender" = @gender_1
+	"p"."Gender" = @gender
 

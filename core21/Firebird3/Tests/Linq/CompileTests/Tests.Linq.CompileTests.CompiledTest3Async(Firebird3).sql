@@ -1,30 +1,30 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird (asynchronously)
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 1
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 1
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 
-SELECT FIRST @p1
+SELECT FIRST @p_1
 	"c_1"."ParentID",
 	"c_1"."ChildID"
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ParentID" = @ParentID_1
+	"c_1"."ParentID" = @ParentID
 
 BeforeExecute
 -- Firebird3 Firebird (asynchronously)
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 2
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 2
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 2
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 2
 
-SELECT FIRST @p1
+SELECT FIRST @p_1
 	"c_1"."ParentID",
 	"c_1"."ChildID"
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ParentID" = @ParentID_1
+	"c_1"."ParentID" = @ParentID
 

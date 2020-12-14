@@ -63,6 +63,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @parentId Integer -- Int32
 SET     @parentId = 111
+DECLARE @parentId_1 Integer -- Int32
+SET     @parentId_1 = 111
 
 SELECT
 	"version_1"."inIdMain"
@@ -106,7 +108,7 @@ FROM
 		FROM
 			"stLinks" "link_2"
 		WHERE
-			"link_2"."inIdChild" = @parentId
+			"link_2"."inIdChild" = @parentId_1
 	) "u"
 		INNER JOIN "stVersions" "version_1" ON "u"."Link_1" = "version_1"."inId"
 

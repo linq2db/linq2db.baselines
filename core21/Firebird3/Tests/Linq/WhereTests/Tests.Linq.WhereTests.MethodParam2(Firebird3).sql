@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @ID_1 Integer -- Int32
-SET     @ID_1 = 1
+DECLARE @ID Integer -- Int32
+SET     @ID = 1
 
 SELECT
 	"p"."PersonID"
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = @ID_1
+	"p"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @ID_1 Integer -- Int32
-SET     @ID_1 = 2
+DECLARE @ID Integer -- Int32
+SET     @ID = 2
 
 SELECT
 	"p"."PersonID"
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = @ID_1
+	"p"."PersonID" = @ID
 

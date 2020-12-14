@@ -39,17 +39,11 @@ FROM
 	) "t4"
 UNION
 SELECT
-	"t6"."year_1",
-	"t6"."year_1",
-	"t6"."int_1"
+	Cast(Floor(Extract(year from "t5"."DateTimeValue")) as int),
+	Cast(Floor(Extract(year from "t5"."DateTimeValue")) as int),
+	2
 FROM
-	(
-		SELECT
-			Cast(Floor(Extract(year from "t5"."DateTimeValue")) as int) as "year_1",
-			2 as "int_1"
-		FROM
-			"LinqDataTypes" "t5"
-	) "t6"
+	"LinqDataTypes" "t5"
 
 BeforeExecute
 -- Firebird3 Firebird

@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" NOT LIKE '%o~%h%' ESCAPE '~' AND "p"."PersonID" = 1
+	("p"."FirstName" NOT CONTAINING 'o%h') AND "p"."PersonID" = 1
 

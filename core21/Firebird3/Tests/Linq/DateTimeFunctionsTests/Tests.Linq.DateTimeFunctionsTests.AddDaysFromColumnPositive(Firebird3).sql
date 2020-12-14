@@ -42,15 +42,15 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @p1 TimeStamp -- DateTime
-SET     @p1 = CAST('2018-01-02' AS timestamp)
+DECLARE @p_1 TimeStamp -- DateTime
+SET     @p_1 = CAST('2018-01-02' AS timestamp)
 
 SELECT
 	Count(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") > @p1
+	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") > @p_1
 
 BeforeExecute
 -- Firebird3 Firebird
