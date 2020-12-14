@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @FirstName_1 Text(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName Text(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -72,7 +72,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName_1
+	x."FirstName" = :FirstName
 LIMIT :take
 
 BeforeExecute
@@ -94,8 +94,8 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @FirstName_1 Text(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName Text(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -107,7 +107,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName_1
+	x."FirstName" = :FirstName
 LIMIT :take
 
 BeforeExecute
