@@ -152,7 +152,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC) as [RowNumber],
+			ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC) as [RowNumber],
 			COUNT(*) OVER() as [c1],
 			[t].[BookingID],
 			[t].[ServiceDate],
@@ -164,52 +164,6 @@ FROM
 	) [q]
 WHERE
 	[q].[RowNumber] <= @take
-
-BeforeExecute
--- SqlServer.2017
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
-DECLARE @cursorValue Int -- Int32
-SET     @cursorValue = 84
-DECLARE @take BigInt -- Int64
-SET     @take = 12
-
-WITH [CTE_1]
-(
-	[Cursor],
-	[RowNumber],
-	[ServiceDate],
-	[Value]
-)
-AS
-(
-	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
-		[t].[ServiceDate],
-		[t].[Value]
-	FROM
-		[Booking] [t]
-	WHERE
-		[t].[ServiceDate] > @ServiceDate_1
-)
-SELECT
-	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
-	[q].[Value]
-FROM
-	[CTE_1] [q]
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[CTE_1] [c_1]
-		WHERE
-			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
-			[q].[RowNumber] <= [c_1].[RowNumber] + @take
-	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -231,53 +185,7 @@ AS
 (
 	SELECT
 		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
-		[t].[ServiceDate],
-		[t].[Value]
-	FROM
-		[Booking] [t]
-	WHERE
-		[t].[ServiceDate] > @ServiceDate_1
-)
-SELECT
-	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
-	[q].[Value]
-FROM
-	[CTE_1] [q]
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[CTE_1] [c_1]
-		WHERE
-			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
-			[q].[RowNumber] <= [c_1].[RowNumber] + @take
-	)
-
-BeforeExecute
--- SqlServer.2017
-DECLARE @ServiceDate_1 DateTime2
-SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
-DECLARE @cursorValue Int -- Int32
-SET     @cursorValue = 48
-DECLARE @take BigInt -- Int64
-SET     @take = 12
-
-WITH [CTE_1]
-(
-	[Cursor],
-	[RowNumber],
-	[ServiceDate],
-	[Value]
-)
-AS
-(
-	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
@@ -323,7 +231,7 @@ AS
 (
 	SELECT
 		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
@@ -354,7 +262,7 @@ BeforeExecute
 DECLARE @ServiceDate_1 DateTime2
 SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
-SET     @cursorValue = 12
+SET     @cursorValue = 94
 DECLARE @take BigInt -- Int64
 SET     @take = 12
 
@@ -369,7 +277,99 @@ AS
 (
 	SELECT
 		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
+		[t].[ServiceDate],
+		[t].[Value]
+	FROM
+		[Booking] [t]
+	WHERE
+		[t].[ServiceDate] > @ServiceDate_1
+)
+SELECT
+	[q].[RowNumber],
+	[q].[Cursor],
+	[q].[ServiceDate],
+	[q].[Value]
+FROM
+	[CTE_1] [q]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[CTE_1] [c_1]
+		WHERE
+			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[q].[RowNumber] <= [c_1].[RowNumber] + @take
+	)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @ServiceDate_1 DateTime2
+SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @cursorValue Int -- Int32
+SET     @cursorValue = 58
+DECLARE @take BigInt -- Int64
+SET     @take = 12
+
+WITH [CTE_1]
+(
+	[Cursor],
+	[RowNumber],
+	[ServiceDate],
+	[Value]
+)
+AS
+(
+	SELECT
+		[t].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
+		[t].[ServiceDate],
+		[t].[Value]
+	FROM
+		[Booking] [t]
+	WHERE
+		[t].[ServiceDate] > @ServiceDate_1
+)
+SELECT
+	[q].[RowNumber],
+	[q].[Cursor],
+	[q].[ServiceDate],
+	[q].[Value]
+FROM
+	[CTE_1] [q]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[CTE_1] [c_1]
+		WHERE
+			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[q].[RowNumber] <= [c_1].[RowNumber] + @take
+	)
+
+BeforeExecute
+-- SqlServer.2017
+DECLARE @ServiceDate_1 DateTime2
+SET     @ServiceDate_1 = '2020-02-27T17:54:55.1231234'
+DECLARE @cursorValue Int -- Int32
+SET     @cursorValue = 22
+DECLARE @take BigInt -- Int64
+SET     @take = 12
+
+WITH [CTE_1]
+(
+	[Cursor],
+	[RowNumber],
+	[ServiceDate],
+	[Value]
+)
+AS
+(
+	SELECT
+		[t].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
@@ -415,7 +415,7 @@ AS
 (
 	SELECT
 		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[BookingID] DESC, [t].[ServiceDate] DESC),
+		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
