@@ -22,7 +22,7 @@ BeforeExecute
 DECLARE @skip Int -- Int32
 SET     @skip = 12
 DECLARE @take Int -- Int32
-SET     @take = 3
+SET     @take = 15
 
 SELECT
 	[c_1].[ParentID],
@@ -41,7 +41,7 @@ FROM
 					[GrandChild] [p]
 			) [t1]
 		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+			[t1].[RN] > @skip AND [t1].[RN] <= @take
 	) [t2]
 WHERE
 	[c_1].[ParentID] = [t2].[ParentID]
