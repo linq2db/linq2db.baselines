@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @GuidValue_1  -- Guid
-SET     @GuidValue_1 = X'C070F9D2AC3587499CD55BADB1757436'
+DECLARE @GuidValue  -- Guid
+SET     @GuidValue = X'C070F9D2AC3587499CD55BADB1757436'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -17,13 +17,13 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	[p].[GuidValue] = @GuidValue_1
+	[p].[GuidValue] = @GuidValue
 LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @GuidValue_1  -- Guid
-SET     @GuidValue_1 = X'DB2F934043154A4EAC2CCA371604FB4B'
+DECLARE @GuidValue  -- Guid
+SET     @GuidValue = X'DB2F934043154A4EAC2CCA371604FB4B'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -39,6 +39,6 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	[p].[GuidValue] = @GuidValue_1
+	[p].[GuidValue] = @GuidValue
 LIMIT @take
 

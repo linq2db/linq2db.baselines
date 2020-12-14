@@ -88,5 +88,5 @@ SELECT
 	[o].[OrderDate]
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 
