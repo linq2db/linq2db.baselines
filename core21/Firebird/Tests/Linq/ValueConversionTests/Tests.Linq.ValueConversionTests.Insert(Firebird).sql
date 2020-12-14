@@ -11,6 +11,7 @@ CREATE TABLE "ValueConversion"
 	"EnumWithNull"            VarChar(50),
 	"EnumWithNullDeclarative" VarChar(50),
 	"BoolValue"               VarChar(1)                             NOT NULL,
+	"DateTimeNullable"        TimeStamp,
 
 	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
 )
@@ -58,7 +59,8 @@ SELECT FIRST @take
 	"e"."EnumNullable",
 	"e"."EnumWithNull",
 	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue"
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
 FROM
 	"ValueConversion" "e"
 WHERE
@@ -107,7 +109,8 @@ SELECT FIRST @take
 	"e"."EnumNullable",
 	"e"."EnumWithNull",
 	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue"
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
 FROM
 	"ValueConversion" "e"
 WHERE
@@ -131,6 +134,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar -- String
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable TimeStamp -- DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO "ValueConversion"
 (
@@ -141,7 +146,8 @@ INSERT INTO "ValueConversion"
 	"EnumNullable",
 	"EnumWithNull",
 	"EnumWithNullDeclarative",
-	"BoolValue"
+	"BoolValue",
+	"DateTimeNullable"
 )
 VALUES
 (
@@ -152,7 +158,8 @@ VALUES
 	@EnumNullable,
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
-	@BoolValue
+	@BoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute
@@ -168,7 +175,8 @@ SELECT FIRST @take
 	"e"."EnumNullable",
 	"e"."EnumWithNull",
 	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue"
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
 FROM
 	"ValueConversion" "e"
 WHERE
