@@ -11,6 +11,7 @@ CREATE TABLE [ValueConversion]
 	[EnumWithNull]            VarChar(50)       NULL,
 	[EnumWithNullDeclarative] VarChar(50)       NULL,
 	[BoolValue]               VarChar(1)    NOT NULL,
+	[DateTimeNullable]        DateTime          NULL,
 
 	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -56,7 +57,8 @@ SELECT TOP 1
 	[e].[EnumNullable],
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue]
+	[e].[BoolValue],
+	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
 WHERE
@@ -103,7 +105,8 @@ SELECT TOP 1
 	[e].[EnumNullable],
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue]
+	[e].[BoolValue],
+	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
 WHERE
@@ -127,6 +130,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
+DECLARE @DateTimeNullable DateTime
+SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]
 (
@@ -137,10 +142,12 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -162,7 +169,8 @@ SELECT TOP 1
 	[e].[EnumNullable],
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue]
+	[e].[BoolValue],
+	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
 WHERE
