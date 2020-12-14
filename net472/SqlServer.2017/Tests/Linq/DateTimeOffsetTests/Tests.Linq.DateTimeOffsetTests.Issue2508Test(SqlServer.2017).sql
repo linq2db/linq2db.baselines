@@ -55,7 +55,7 @@ SELECT
 FROM
 	[Transactions] [t]
 WHERE
-	(IIF([t].[TransactionDate] > @TransactionDate, 1, 0) = 1 AND IIF([t].[TransactionDate] > @TransactionDate, 1, 0) IS NOT NULL)
+	[t].[TransactionDate] > @TransactionDate
 
 BeforeExecute
 -- SqlServer.2017
