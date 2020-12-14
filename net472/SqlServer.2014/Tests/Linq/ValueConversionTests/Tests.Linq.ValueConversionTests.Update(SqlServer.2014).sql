@@ -11,6 +11,7 @@ CREATE TABLE [ValueConversion]
 	[EnumWithNull]            VarChar(50)       NULL,
 	[EnumWithNullDeclarative] VarChar(50)       NULL,
 	[BoolValue]               VarChar(1)    NOT NULL,
+	[DateTimeNullable]        DateTime          NULL,
 
 	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -27,19 +28,20 @@ INSERT INTO [ValueConversion]
 	[EnumNullable],
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
-	[BoolValue]
+	[BoolValue],
+	[DateTimeNullable]
 )
 VALUES
-(1,N'{"some":"str1"}',N'[{"Value":"Value1"}]',N'Value1','Value1','Value1','Value1','Y'),
-(2,N'{"some":"str2"}',N'[{"Value":"Value2"}]',N'Value2','Value2','Value2','Value2','N'),
-(3,N'{"some":"str3"}',N'[{"Value":"Value3"}]',N'Value3','Value3','Value3','Value3','N'),
-(4,N'{"some":"str4"}',N'[{"Value":"Value4"}]',N'Value1',NULL,NULL,NULL,'N'),
-(5,N'{"some":"str5"}',N'[{"Value":"Value5"}]',N'Value2','Value1','Value1','Value1','Y'),
-(6,N'{"some":"str6"}',N'[{"Value":"Value6"}]',N'Value3','Value2','Value2','Value2','N'),
-(7,N'{"some":"str7"}',N'[{"Value":"Value7"}]',N'Value1','Value3','Value3','Value3','N'),
-(8,N'{"some":"str8"}',N'[{"Value":"Value8"}]',N'Value2',NULL,NULL,NULL,'N'),
-(9,N'{"some":"str9"}',N'[{"Value":"Value9"}]',N'Value3','Value1','Value1','Value1','Y'),
-(10,NULL,NULL,N'Value1','Value2','Value2','Value2','N')
+(1,N'{"some":"str1"}',N'[{"Value":"Value1"}]',N'Value1','Value1','Value1','Value1','Y',NULL),
+(2,N'{"some":"str2"}',N'[{"Value":"Value2"}]',N'Value2','Value2','Value2','Value2','N','2020-02-29T00:00:00'),
+(3,N'{"some":"str3"}',N'[{"Value":"Value3"}]',N'Value3','Value3','Value3','Value3','N','2020-02-29T00:00:00'),
+(4,N'{"some":"str4"}',N'[{"Value":"Value4"}]',N'Value1',NULL,NULL,NULL,'N',NULL),
+(5,N'{"some":"str5"}',N'[{"Value":"Value5"}]',N'Value2','Value1','Value1','Value1','Y','2020-02-29T00:00:00'),
+(6,N'{"some":"str6"}',N'[{"Value":"Value6"}]',N'Value3','Value2','Value2','Value2','N','2020-02-29T00:00:00'),
+(7,N'{"some":"str7"}',N'[{"Value":"Value7"}]',N'Value1','Value3','Value3','Value3','N',NULL),
+(8,N'{"some":"str8"}',N'[{"Value":"Value8"}]',N'Value2',NULL,NULL,NULL,'N','2020-02-29T00:00:00'),
+(9,N'{"some":"str9"}',N'[{"Value":"Value9"}]',N'Value3','Value1','Value1','Value1','Y','2020-02-29T00:00:00'),
+(10,NULL,NULL,N'Value1','Value2','Value2','Value2','N',NULL)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -75,7 +77,8 @@ SELECT TOP (@take)
 	[e].[EnumNullable],
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue]
+	[e].[BoolValue],
+	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
 WHERE
@@ -97,6 +100,8 @@ DECLARE @EnumWithNullDeclarative VarChar(50) -- AnsiString
 SET     @EnumWithNullDeclarative = N'Value2'
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = N'N'
+DECLARE @DateTimeNullable DateTime2
+SET     @DateTimeNullable = NULL
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
@@ -109,7 +114,8 @@ SET
 	[t1].[EnumNullable] = @EnumNullable,
 	[t1].[EnumWithNull] = @EnumWithNull,
 	[t1].[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
-	[t1].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = @BoolValue,
+	[t1].[DateTimeNullable] = @DateTimeNullable
 FROM
 	[ValueConversion] [t1]
 WHERE
@@ -128,7 +134,8 @@ SELECT TOP (@take)
 	[e].[EnumNullable],
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue]
+	[e].[BoolValue],
+	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
 WHERE
@@ -150,6 +157,8 @@ DECLARE @EnumWithNullDeclarative VarChar(50) -- AnsiString
 SET     @EnumWithNullDeclarative = NULL
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = N'N'
+DECLARE @DateTimeNullable DateTime2
+SET     @DateTimeNullable = NULL
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 
@@ -162,7 +171,8 @@ SET
 	[t1].[EnumNullable] = @EnumNullable,
 	[t1].[EnumWithNull] = @EnumWithNull,
 	[t1].[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
-	[t1].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = @BoolValue,
+	[t1].[DateTimeNullable] = @DateTimeNullable
 FROM
 	[ValueConversion] [t1]
 WHERE
@@ -181,7 +191,8 @@ SELECT TOP (@take)
 	[e].[EnumNullable],
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue]
+	[e].[BoolValue],
+	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
 WHERE

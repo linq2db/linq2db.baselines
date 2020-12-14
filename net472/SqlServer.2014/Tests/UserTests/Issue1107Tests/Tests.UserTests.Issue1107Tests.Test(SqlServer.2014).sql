@@ -10,7 +10,7 @@ CREATE TABLE [Issue1107TB]
 )
 
 BeforeExecute
-INSERT BULK [Issue1107TB](Id, TestDate
+INSERT BULK [Issue1107TB](Id, TestDate)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
