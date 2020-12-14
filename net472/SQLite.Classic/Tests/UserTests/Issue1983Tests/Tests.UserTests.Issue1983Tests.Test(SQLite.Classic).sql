@@ -51,7 +51,7 @@ FROM
 			[Issue1983Person] [p]
 	) [cu]
 WHERE
-	([cu].[CountOfCards] = 0 OR [cu].[CountOfCards] <> 0)
+	([cu].[CountOfCards] = 0 OR ([cu].[CountOfCards] <> 0 OR [cu].[CountOfCards] IS NULL))
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -62,7 +62,7 @@ SELECT
 	[cu_1].[CountOfCards],
 	[cu_1].[CountOfCards2],
 	[cu_1].[CountOfCards3],
-	[cu_1].[cnt],
+	[cu_1].[CountOfCards2_1],
 	[cu_1].[CountOfCards3_1]
 FROM
 	(
@@ -87,7 +87,7 @@ FROM
 					[Issue1983Card] [card]
 				WHERE
 					[card].[PersonId] = [cu].[Id] AND [card].[CardType] = 2
-			) as [cnt],
+			) as [CountOfCards2_1],
 			(
 				SELECT
 					Count(*)
@@ -100,7 +100,7 @@ FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
 WHERE
-	([cu_1].[ex] = 0 OR [cu_1].[ex] <> 0)
+	([cu_1].[ex] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -111,7 +111,7 @@ SELECT
 	[cu_1].[CountOfCards],
 	[cu_1].[CountOfCards2],
 	[cu_1].[CountOfCards3],
-	[cu_1].[cnt_1],
+	[cu_1].[CountOfCards2_1],
 	[cu_1].[CountOfCards3_1]
 FROM
 	(
@@ -144,7 +144,7 @@ FROM
 					[Issue1983Card] [card]
 				WHERE
 					[card].[PersonId] = [cu].[Id] AND [card].[CardType] = 2
-			) as [cnt_1],
+			) as [CountOfCards2_1],
 			(
 				SELECT
 					Count(*)
@@ -157,7 +157,7 @@ FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
 WHERE
-	([cu_1].[cnt] = 0 OR [cu_1].[ex] <> 0)
+	([cu_1].[cnt] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
 
 BeforeExecute
 -- SQLite.Classic SQLite

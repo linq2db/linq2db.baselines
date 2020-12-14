@@ -16,7 +16,7 @@ SELECT
 FROM
 	[Customers] [x]
 WHERE
-	[x].[CompanyName] LIKE '%t%'
+	[x].[CompanyName] LIKE '%t%' ESCAPE '~'
 GROUP BY
 	[x].[CustomerID],
 	[x].[Fax],
@@ -32,8 +32,8 @@ GROUP BY
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'ALFKI'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'ALFKI'
 
 SELECT
 	[_].[Fax],
@@ -50,12 +50,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'ANATR'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'ANATR'
 
 SELECT
 	[_].[Fax],
@@ -72,12 +72,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'ANTON'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'ANTON'
 
 SELECT
 	[_].[Fax],
@@ -94,12 +94,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'AROUT'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'AROUT'
 
 SELECT
 	[_].[Fax],
@@ -116,12 +116,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'BLAUS'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'BLAUS'
 
 SELECT
 	[_].[Fax],
@@ -138,12 +138,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'BLONP'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'BLONP'
 
 SELECT
 	[_].[Fax],
@@ -160,12 +160,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'BOTTM'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'BOTTM'
 
 SELECT
 	[_].[Fax],
@@ -182,12 +182,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'CACTU'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'CACTU'
 
 SELECT
 	[_].[Fax],
@@ -204,12 +204,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'CENTC'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'CENTC'
 
 SELECT
 	[_].[Fax],
@@ -226,12 +226,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'CONSH'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'CONSH'
 
 SELECT
 	[_].[Fax],
@@ -248,12 +248,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'DRACD'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'DRACD'
 
 SELECT
 	[_].[Fax],
@@ -270,12 +270,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'DUMON'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'DUMON'
 
 SELECT
 	[_].[Fax],
@@ -292,12 +292,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'EASTC'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'EASTC'
 
 SELECT
 	[_].[Fax],
@@ -314,12 +314,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'ERNSH'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'ERNSH'
 
 SELECT
 	[_].[Fax],
@@ -336,12 +336,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'FISSA'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'FISSA'
 
 SELECT
 	[_].[Fax],
@@ -358,12 +358,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'FRANR'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'FRANR'
 
 SELECT
 	[_].[Fax],
@@ -380,12 +380,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'FURIB'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'FURIB'
 
 SELECT
 	[_].[Fax],
@@ -402,12 +402,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'GALED'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'GALED'
 
 SELECT
 	[_].[Fax],
@@ -424,12 +424,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'GODOS'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'GODOS'
 
 SELECT
 	[_].[Fax],
@@ -446,12 +446,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'GOURL'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'GOURL'
 
 SELECT
 	[_].[Fax],
@@ -468,12 +468,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'GREAL'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'GREAL'
 
 SELECT
 	[_].[Fax],
@@ -490,12 +490,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'GROSR'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'GROSR'
 
 SELECT
 	[_].[Fax],
@@ -512,12 +512,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'HILAA'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'HILAA'
 
 SELECT
 	[_].[Fax],
@@ -534,12 +534,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'HUNGC'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'HUNGC'
 
 SELECT
 	[_].[Fax],
@@ -556,12 +556,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'HUNGO'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'HUNGO'
 
 SELECT
 	[_].[Fax],
@@ -578,12 +578,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'ISLAT'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'ISLAT'
 
 SELECT
 	[_].[Fax],
@@ -600,12 +600,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'LAZYK'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'LAZYK'
 
 SELECT
 	[_].[Fax],
@@ -622,12 +622,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'LEHMS'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'LEHMS'
 
 SELECT
 	[_].[Fax],
@@ -644,12 +644,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'LETSS'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'LETSS'
 
 SELECT
 	[_].[Fax],
@@ -666,12 +666,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'LINOD'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'LINOD'
 
 SELECT
 	[_].[Fax],
@@ -688,12 +688,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'LONEP'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'LONEP'
 
 SELECT
 	[_].[Fax],
@@ -710,12 +710,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'MAGAA'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'MAGAA'
 
 SELECT
 	[_].[Fax],
@@ -732,12 +732,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'MORGK'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'MORGK'
 
 SELECT
 	[_].[Fax],
@@ -754,12 +754,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'NORTS'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'NORTS'
 
 SELECT
 	[_].[Fax],
@@ -776,12 +776,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'OCEAN'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'OCEAN'
 
 SELECT
 	[_].[Fax],
@@ -798,12 +798,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'OLDWO'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'OLDWO'
 
 SELECT
 	[_].[Fax],
@@ -820,12 +820,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'OTTIK'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'OTTIK'
 
 SELECT
 	[_].[Fax],
@@ -842,12 +842,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'PARIS'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'PARIS'
 
 SELECT
 	[_].[Fax],
@@ -864,12 +864,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'QUICK'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'QUICK'
 
 SELECT
 	[_].[Fax],
@@ -886,12 +886,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'RATTC'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'RATTC'
 
 SELECT
 	[_].[Fax],
@@ -908,12 +908,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'RICSU'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'RICSU'
 
 SELECT
 	[_].[Fax],
@@ -930,12 +930,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'ROMEY'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'ROMEY'
 
 SELECT
 	[_].[Fax],
@@ -952,12 +952,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'SANTG'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'SANTG'
 
 SELECT
 	[_].[Fax],
@@ -974,12 +974,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'SAVEA'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'SAVEA'
 
 SELECT
 	[_].[Fax],
@@ -996,12 +996,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'SEVES'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'SEVES'
 
 SELECT
 	[_].[Fax],
@@ -1018,12 +1018,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'SIMOB'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'SIMOB'
 
 SELECT
 	[_].[Fax],
@@ -1040,12 +1040,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'SPECD'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'SPECD'
 
 SELECT
 	[_].[Fax],
@@ -1062,12 +1062,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'SPLIR'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'SPLIR'
 
 SELECT
 	[_].[Fax],
@@ -1084,12 +1084,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'THEBI'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'THEBI'
 
 SELECT
 	[_].[Fax],
@@ -1106,12 +1106,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'THECR'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'THECR'
 
 SELECT
 	[_].[Fax],
@@ -1128,12 +1128,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'TOMSP'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'TOMSP'
 
 SELECT
 	[_].[Fax],
@@ -1150,12 +1150,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'TORTU'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'TORTU'
 
 SELECT
 	[_].[Fax],
@@ -1172,12 +1172,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'TRADH'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'TRADH'
 
 SELECT
 	[_].[Fax],
@@ -1194,12 +1194,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'TRAIH'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'TRAIH'
 
 SELECT
 	[_].[Fax],
@@ -1216,12 +1216,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'VAFFE'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'VAFFE'
 
 SELECT
 	[_].[Fax],
@@ -1238,12 +1238,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'VICTE'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'VICTE'
 
 SELECT
 	[_].[Fax],
@@ -1260,12 +1260,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'VINET'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'VINET'
 
 SELECT
 	[_].[Fax],
@@ -1282,12 +1282,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'WARTH'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'WARTH'
 
 SELECT
 	[_].[Fax],
@@ -1304,12 +1304,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'WELLI'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'WELLI'
 
 SELECT
 	[_].[Fax],
@@ -1326,12 +1326,12 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @CustomerID_1 NVarChar(5) -- String
-SET     @CustomerID_1 = 'WHITC'
+DECLARE @CustomerID NVarChar(5) -- String
+SET     @CustomerID = 'WHITC'
 
 SELECT
 	[_].[Fax],
@@ -1348,5 +1348,5 @@ SELECT
 FROM
 	[Customers] [_]
 WHERE
-	[_].[CompanyName] LIKE '%t%' AND [_].[CustomerID] = @CustomerID_1
+	[_].[CompanyName] LIKE '%t%' ESCAPE '~' AND [_].[CustomerID] = @CustomerID
 

@@ -2,10 +2,14 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Parent] [p]
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[Parent] [p]
+		)
+			THEN 1
+		ELSE 0
+	END
 

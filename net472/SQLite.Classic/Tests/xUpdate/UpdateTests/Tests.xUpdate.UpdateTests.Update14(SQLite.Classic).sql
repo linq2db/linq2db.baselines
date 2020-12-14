@@ -36,7 +36,7 @@ UPDATE
 SET
 	[LastName] = Cast((Length(@name) + @idx) as NVarChar(11))
 WHERE
-	[Person].[FirstName] LIKE 'Update14%'
+	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -46,7 +46,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'Update14%'
+	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -54,5 +54,5 @@ BeforeExecute
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] LIKE 'Update14%'
+	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 

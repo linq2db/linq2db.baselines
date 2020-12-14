@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p2 NVarChar(2) -- String
-SET     @p2 = '01'
-DECLARE @p1 NVarChar(2) -- String
-SET     @p1 = '01'
+DECLARE @p_2 NVarChar(2) -- String
+SET     @p_2 = '01'
+DECLARE @p_1 NVarChar(2) -- String
+SET     @p_1 = '01'
 
 SELECT
 	Sum([t1].[MoneyValue]),
@@ -16,13 +16,13 @@ FROM
 				WHEN Length(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)) = 1
 					THEN '0' || Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as VarChar(11))
 				ELSE Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)
-			END || '-' || @p2) as [c1],
+			END || '-' || @p_2) as [c1],
 			[selectParam].[MoneyValue],
 			Date(Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as VarChar(11)) || '-' || CASE
 				WHEN Length(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)) = 1
 					THEN '0' || Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as VarChar(11))
 				ELSE Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)
-			END || '-' || @p1) as [c2]
+			END || '-' || @p_1) as [c2]
 		FROM
 			[LinqDataTypes] [selectParam]
 	) [t1]
