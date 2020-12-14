@@ -48,8 +48,8 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 2
-DECLARE @Array_2 Binary(3)
-SET     @Array_2 = X'010203'
+DECLARE @Array_1 Binary(3)
+SET     @Array_1 = X'010203'
 
 SELECT FIRST @take
 	"t1".ID,
@@ -58,14 +58,14 @@ SELECT FIRST @take
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Array" = @Array_2
+	"t1"."Array" = @Array_1
 
 BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 2
-DECLARE @Binary_2 Binary(2)
-SET     @Binary_2 = X'0405'
+DECLARE @Binary_1 Binary(2)
+SET     @Binary_1 = X'0405'
 
 SELECT FIRST @take
 	"t1".ID,
@@ -74,7 +74,7 @@ SELECT FIRST @take
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Binary" = @Binary_2
+	"t1"."Binary" = @Binary_1
 
 BeforeExecute
 -- Firebird

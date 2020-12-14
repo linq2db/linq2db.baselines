@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	(@param_1 IS NULL AND "t1"."SmallIntValue" IS NULL OR @param_1 = "t1"."SmallIntValue")
+	(@param_1 = "t1"."SmallIntValue" OR @param_1 IS NULL AND "t1"."SmallIntValue" IS NULL)
 
 BeforeExecute
 -- Firebird

@@ -36,14 +36,12 @@ BeforeExecute
 -- Firebird
 DECLARE @ClaimedKeyType VarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN VarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	"Issue1554Table"
 SET
 	"Issue1554Table"."ClaimedKeyType" = @ClaimedKeyType,
-	"Issue1554Table"."ClaimedKeyTypeN" = @ClaimedKeyTypeN
+	"Issue1554Table"."ClaimedKeyTypeN" = @ClaimedKeyType
 WHERE
 	"Issue1554Table"."Id" = 0
 
