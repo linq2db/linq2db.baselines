@@ -81,8 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @OrderDate_1  -- DateTime
-SET     @OrderDate_1 = '1997-01-01'
+DECLARE @OrderDate  -- DateTime
+SET     @OrderDate = '1997-01-01'
 DECLARE @take  -- Int32
 SET     @take = 10
 
@@ -104,7 +104,7 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	DateTime([o].[OrderDate]) > DateTime(@OrderDate_1)
+	DateTime([o].[OrderDate]) > DateTime(@OrderDate)
 ORDER BY
 	[o].[OrderDate],
 	[o].[OrderID]
