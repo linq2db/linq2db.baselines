@@ -31,8 +31,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName_1 Text(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName Text(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -45,7 +45,7 @@ SELECT
 FROM
 	"Person" x
 WHERE
-	x."FirstName" = :FirstName_1
+	x."FirstName" = :FirstName
 LIMIT :take
 
 BeforeExecute
@@ -70,8 +70,8 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName_1 Text(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName Text(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -84,7 +84,7 @@ SELECT
 FROM
 	"Person" x
 WHERE
-	x."FirstName" = :FirstName_1
+	x."FirstName" = :FirstName
 LIMIT :take
 
 BeforeExecute
