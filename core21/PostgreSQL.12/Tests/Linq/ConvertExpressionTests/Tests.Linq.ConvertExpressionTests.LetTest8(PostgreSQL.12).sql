@@ -8,14 +8,18 @@ SET     @take_1 = 1
 SELECT
 	t1."ParentID",
 	t1."ChildID",
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Child" c_1
-		WHERE
-			c_1."ParentID" = p."ParentID" AND c_1."ChildID" > -100
-	),
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" c_1
+			WHERE
+				c_1."ParentID" = p."ParentID" AND c_1."ChildID" > -100
+		)
+			THEN True
+		ELSE False
+	END,
 	(
 		SELECT
 			Count(*)
