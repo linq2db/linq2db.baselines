@@ -34,14 +34,18 @@ SELECT DISTINCT
 	t2."ParentID",
 	t3."ChildID",
 	t3."ParentID",
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Child" c_2
-		WHERE
-			c_2."ChildID" > 2
-	),
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" c_2
+			WHERE
+				c_2."ChildID" > 2
+		)
+			THEN True
+		ELSE False
+	END,
 	t2."ChildID",
 	t2."ParentID",
 	t3."ChildID",
