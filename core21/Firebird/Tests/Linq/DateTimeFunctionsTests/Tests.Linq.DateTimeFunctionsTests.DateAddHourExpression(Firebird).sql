@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Firebird
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 1
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 1
 
 SELECT
-	DateAdd(Hour, Cast(@p1 as Int), "t"."DateTimeValue")
+	DateAdd(Hour, Cast(@p_1 as Int), "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
 

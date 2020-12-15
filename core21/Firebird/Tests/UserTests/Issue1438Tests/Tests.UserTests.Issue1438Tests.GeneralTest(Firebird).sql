@@ -45,8 +45,8 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 2
-DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 1
+DECLARE @id Integer -- Int32
+SET     @id = 1
 
 SELECT FIRST @take
 	"t1"."Id",
@@ -54,7 +54,7 @@ SELECT FIRST @take
 FROM
 	"Issue1438" "t1"
 WHERE
-	"t1"."Id" = @id_1
+	"t1"."Id" = @id
 
 BeforeExecute
 -- Firebird
