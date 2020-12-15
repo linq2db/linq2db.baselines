@@ -293,7 +293,8 @@ USING (
 	[MiddleName],
 	[Gender]
 )
-ON ([Target].[PersonID] + 50 = [Source].[source_field0] AND [Target].[FirstName] <> N'first 3')
+ON ([Target].[PersonID] + 50 = [Source].[source_field0] AND
+[Target].[FirstName] <> N'first 3')
 
 WHEN NOT MATCHED AND [Source].[FirstName] = N'first 3' THEN
 INSERT

@@ -2,14 +2,9 @@
 -- SqlServer.2012
 
 SELECT
-	[p].[c1]
+	Convert(SmallInt, [t].[MoneyValue])
 FROM
-	(
-		SELECT
-			Convert(SmallInt, [t].[MoneyValue]) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	[p].[c1] > 0
+	Convert(SmallInt, [t].[MoneyValue]) > 0
 
