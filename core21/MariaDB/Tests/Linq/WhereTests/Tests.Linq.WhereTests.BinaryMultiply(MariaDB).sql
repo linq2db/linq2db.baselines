@@ -10,5 +10,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` * 10 - 9 = 1
+	`p`.`PersonID` * 10 = 10
 

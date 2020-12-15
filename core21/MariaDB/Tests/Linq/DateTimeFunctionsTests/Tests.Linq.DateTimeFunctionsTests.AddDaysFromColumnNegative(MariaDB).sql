@@ -42,15 +42,15 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @p1 DateTime
-SET     @p1 = '2018-01-02'
+DECLARE @p_1 DateTime
+SET     @p_1 = '2018-01-02'
 
 SELECT
 	Count(*)
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) < @p1
+	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) < @p_1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
