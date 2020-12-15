@@ -72,7 +72,7 @@ SELECT TOP (@take)
 			[User] [x]
 				LEFT JOIN [Language] [a_Language] ON [x].[LanguageId] = [a_Language].[Id]
 		WHERE
-			[x].[UserGroupId] = [x_2].[Id] AND [a_Language].[Name] LIKE N'%En%'
+			[x].[UserGroupId] = [x_2].[Id] AND [a_Language].[Name] LIKE N'%En%' ESCAPE N'~'
 	),
 	(
 		SELECT
@@ -81,7 +81,7 @@ SELECT TOP (@take)
 			[User] [x_1]
 				LEFT JOIN [Language] [a_Language_1] ON [x_1].[LanguageId] = [a_Language_1].[Id]
 		WHERE
-			[x_1].[UserGroupId] = [x_2].[Id] AND [a_Language_1].[Name] LIKE N'%Lis%'
+			[x_1].[UserGroupId] = [x_2].[Id] AND [a_Language_1].[Name] LIKE N'%Lis%' ESCAPE N'~'
 	)
 FROM
 	[UserGroup] [x_2]
