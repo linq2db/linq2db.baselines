@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
+
+UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
+
+BeforeExecute
+-- SQLite.MS SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 0
 DECLARE @FirstName NVarChar(4) -- String
