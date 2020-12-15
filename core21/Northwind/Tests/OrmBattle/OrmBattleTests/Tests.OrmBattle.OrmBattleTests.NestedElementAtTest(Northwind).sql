@@ -122,7 +122,7 @@ FROM
 			FROM
 				[Orders] [t1]
 			WHERE
-				([c_1].[CustomerID] IS NULL AND [t1].[CustomerID] IS NULL OR [c_1].[CustomerID] = [t1].[CustomerID])
+				([c_1].[CustomerID] = [t1].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [t1].[CustomerID] IS NULL)
 			ORDER BY
 				1
 			OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
@@ -134,6 +134,6 @@ WHERE
 		FROM
 			[Orders] [t3]
 		WHERE
-			([c_1].[CustomerID] IS NULL AND [t3].[CustomerID] IS NULL OR [c_1].[CustomerID] = [t3].[CustomerID])
+			([c_1].[CustomerID] = [t3].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [t3].[CustomerID] IS NULL)
 	) > 5
 
