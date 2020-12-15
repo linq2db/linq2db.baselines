@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @DateTimeValue_1 DateTime2
-SET     @DateTimeValue_1 = '2009-09-27T00:00:00'
+DECLARE @DateTimeValue DateTime2
+SET     @DateTimeValue = '2009-09-27T00:00:00'
 
 SELECT
 	[_].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	[_].[DateTimeValue] = @DateTimeValue_1
+	[_].[DateTimeValue] = @DateTimeValue
 

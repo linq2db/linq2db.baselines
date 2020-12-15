@@ -73,7 +73,7 @@ FROM
 	(
 		SELECT
 			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [c1],
-			CASE WHEN [selectParam].[TradingStatus] = N'D' THEN 1 ELSE 0 END as [c2]
+			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [c2]
 		FROM
 			[Issue913Test] [selectParam]
 	) [t1]
