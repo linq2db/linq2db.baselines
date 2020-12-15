@@ -38,7 +38,7 @@ SET
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE N'Update14%'
+	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -48,7 +48,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE N'Update14%'
+	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -57,5 +57,5 @@ DELETE [_]
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE N'Update14%'
+	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 

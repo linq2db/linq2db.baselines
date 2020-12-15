@@ -479,11 +479,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
-DECLARE @p1 Int -- Int32
-SET     @p1 = 5
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 5
 
 SELECT
-	DateAdd(day, @p1, [t].[TransactionDate])
+	DateAdd(day, @p_1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 

@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	(@param_1 IS NULL AND [_].[SmallIntValue] IS NULL OR @param_1 = [_].[SmallIntValue])
+	@param_1 = [_].[SmallIntValue]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
