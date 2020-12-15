@@ -21,8 +21,8 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @pattern VarChar(3) -- String
-SET     @pattern = '%1%'
+DECLARE @pattern_1 VarChar(3) -- String
+SET     @pattern_1 = '%1%'
 
 SELECT
 	"t1"."FirstName"
@@ -40,7 +40,7 @@ FROM
 		FROM
 			"Person" "p_1"
 		WHERE
-			RTrim(Char("p_1"."PersonID")) LIKE @pattern ESCAPE '~'
+			RTrim(Char("p_1"."PersonID")) LIKE @pattern_1 ESCAPE '~'
 	) "t1"
 FETCH FIRST 10 ROWS ONLY
 

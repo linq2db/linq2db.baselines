@@ -1,48 +1,33 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE T1
-		(
-			"InstrumentId"         Int           NOT NULL,
-			"InstrumentCode"       NVarChar(255)     NULL,
-			"CreateDate"           timestamp     NOT NULL,
-			"SourceInstrumentCode" NVarChar(255)     NULL,
+CREATE TABLE T1
+(
+	"InstrumentId"         Int           NOT NULL,
+	"InstrumentCode"       NVarChar(255)     NULL,
+	"CreateDate"           timestamp     NOT NULL,
+	"SourceInstrumentCode" NVarChar(255)     NULL,
 
-			CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
-		)
-	';
-END
+	CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
+)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE T2
-		(
-			"InstrumentId" Int NOT NULL,
-			"IndexId"      Int NOT NULL
-		)
-	';
-END
+CREATE TABLE T2
+(
+	"InstrumentId" Int NOT NULL,
+	"IndexId"      Int NOT NULL
+)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE T3
-		(
-			"InstrumentId" Int NOT NULL,
-			"IndexId"      Int NOT NULL
-		)
-	';
-END
+CREATE TABLE T3
+(
+	"InstrumentId" Int NOT NULL,
+	"IndexId"      Int NOT NULL
+)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -188,8 +173,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @cond VarChar(4) -- String
-SET     @cond = 'aaa%'
+DECLARE @cond_1 VarChar(4) -- String
+SET     @cond_1 = 'aaa%'
 DECLARE @uptoDate Timestamp(20) -- DateTime
 SET     @uptoDate = '2020-02-29-17.54.55.123123'
 
@@ -201,7 +186,7 @@ FROM
 		INNER JOIN T3 "w" ON "idx"."IndexId" = "w"."IndexId"
 		INNER JOIN T1 "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
 WHERE
-	"ins"."SourceInstrumentCode" IS NOT NULL AND "_"."InstrumentCode" LIKE @cond ESCAPE '~' AND
+	"ins"."SourceInstrumentCode" IS NOT NULL AND "_"."InstrumentCode" LIKE @cond_1 ESCAPE '~' AND
 	"_"."CreateDate" <= @uptoDate
 ORDER BY
 	"ins"."SourceInstrumentCode"
@@ -209,24 +194,15 @@ ORDER BY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE T3';
-END
+DROP TABLE T3
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE T2';
-END
+DROP TABLE T2
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE T1';
-END
+DROP TABLE T1
 

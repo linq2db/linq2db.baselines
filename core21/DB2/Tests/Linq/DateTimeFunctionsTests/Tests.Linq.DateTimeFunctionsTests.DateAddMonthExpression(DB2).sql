@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p1 Integer(4) -- Int32
-SET     @p1 = 2
+DECLARE @p_1 Integer(4) -- Int32
+SET     @p_1 = 2
 
 SELECT
-	"t"."DateTimeValue" + @p1 Month
+	"t"."DateTimeValue" + @p_1 Month
 FROM
 	"LinqDataTypes" "t"
 
