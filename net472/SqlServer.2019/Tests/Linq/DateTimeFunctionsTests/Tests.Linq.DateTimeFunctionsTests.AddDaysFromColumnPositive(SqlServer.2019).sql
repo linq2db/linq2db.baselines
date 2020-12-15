@@ -42,15 +42,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @p1 DateTime2
-SET     @p1 = '2018-01-02T00:00:00'
+DECLARE @p_1 DateTime2
+SET     @p_1 = '2018-01-02T00:00:00'
 
 SELECT
 	Count(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p1
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p_1
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

@@ -258,6 +258,6 @@ ON (([Target].[Id] = [Source].[Id] OR [Target].[Id] = @Val4))
 WHEN NOT MATCHED By Source AND [Target].[Id] = @Val3 THEN UPDATE
 SET
 	[Target].[Field4] = @Val5
-WHEN NOT MATCHED BY SOURCE AND [Target].[Field3] <> @Val2 THEN DELETE
+WHEN NOT MATCHED BY SOURCE AND ([Target].[Field3] <> @Val2 OR [Target].[Field3] IS NULL) THEN DELETE
 ;
 

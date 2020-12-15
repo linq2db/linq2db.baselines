@@ -16,19 +16,48 @@ INSERT INTO [SampleClass]
 	[Value]
 )
 VALUES
-(
-	1,
-	N'6'
-)
+(1,N'6'),
+(2,N'x[0-9]x'),
+(3,N'x[0x'),
+(4,N'x[]x'),
+(5,N'x]'),
+(6,N']x')
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT
-	[t1].[Id],
-	[t1].[Value]
+SELECT TOP (@take)
+	[r].[Id]
 FROM
-	[SampleClass] [t1]
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'%~]' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[r].[Id]
+FROM
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'~]%' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[r].[Id]
+FROM
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'%-%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -39,20 +68,7 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%[[]0%'
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-DECLARE @asParamUnterm NVarChar(4000) -- String
-SET     @asParamUnterm = N'%[[]0%'
-
-SELECT
-	[r].[Id],
-	[r].[Value]
-FROM
-	[SampleClass] [r]
-WHERE
-	[r].[Value] LIKE @asParamUnterm ESCAPE N'~'
+	[r].[Value] LIKE N'%~[~]%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -63,7 +79,42 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%[0-9]%'
+	[r].[Value] LIKE N'%~[0%' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @asParamUnterm_1 NVarChar(4000) -- String
+SET     @asParamUnterm_1 = N'%~[0%'
+
+SELECT
+	[r].[Id],
+	[r].[Value]
+FROM
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE @asParamUnterm_1 ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+SELECT
+	[r].[Id],
+	[r].[Value]
+FROM
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'%~[0-9~]%' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+SELECT
+	[r].[Id],
+	[r].[Value]
+FROM
+	[SampleClass] [r]
+WHERE
+	[r].[Value] LIKE N'%6%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

@@ -297,6 +297,6 @@ USING (
 	[Diagnosis]
 )
 ON ([Target].[PersonID] = [Source].[ID] AND [Source].[Diagnosis] IS NOT NULL)
-WHEN MATCHED AND ([Source].[Diagnosis] IS NULL OR [Source].[Diagnosis] <> N'sick') THEN DELETE
+WHEN MATCHED AND ([Source].[Diagnosis] <> N'sick' OR [Source].[Diagnosis] IS NULL) THEN DELETE
 ;
 

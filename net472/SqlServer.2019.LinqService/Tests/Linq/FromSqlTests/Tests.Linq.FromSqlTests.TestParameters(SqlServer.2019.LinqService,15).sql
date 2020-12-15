@@ -371,8 +371,8 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @startId BigInt -- Int64
 SET     @startId = 5
-DECLARE @p1 Int -- Int32
-SET     @p1 = 15
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 15
 
 SELECT
 	[c_1].[value],
@@ -381,7 +381,7 @@ FROM
 	(
 		SELECT * FROM
 		[sample_class]
-		where [id] >= @startId and [id] < @p1
+		where [id] >= @startId and [id] < @p_1
 	) [c_1]
 WHERE
 	[c_1].[id] > 10
