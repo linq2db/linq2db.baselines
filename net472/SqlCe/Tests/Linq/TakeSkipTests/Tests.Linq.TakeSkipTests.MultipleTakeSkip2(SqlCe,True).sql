@@ -24,8 +24,8 @@ SELECT 'Value8'
 
 BeforeExecute
 -- SqlCe
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 3
+DECLARE @skip_2 Int -- Int32
+SET     @skip_2 = 3
 DECLARE @take_1 Int -- Int32
 SET     @take_1 = 2
 
@@ -35,7 +35,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET @skip_1 ROWS FETCH NEXT @take_1 ROWS ONLY 
+OFFSET @skip_2 ROWS FETCH NEXT @take_1 ROWS ONLY 
 
 BeforeExecute
 -- SqlCe
