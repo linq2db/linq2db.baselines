@@ -71,8 +71,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @Usage_2 Integer -- Int32
-SET     @Usage_2 = 0
+DECLARE @Usage_1 Integer -- Int32
+SET     @Usage_1 = 0
 
 SELECT
 	key_data_result."Id",
@@ -86,7 +86,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_2 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
@@ -98,8 +98,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @Usage_2 Integer -- Int32
-SET     @Usage_2 = 1
+DECLARE @Usage_1 Integer -- Int32
+SET     @Usage_1 = 1
 
 SELECT
 	key_data_result."Id",
@@ -113,7 +113,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_2 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
@@ -206,8 +206,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @Usage_2 Integer -- Int32
-SET     @Usage_2 = 0
+DECLARE @Usage_1 Integer -- Int32
+SET     @Usage_1 = 0
 
 SELECT
 	key_data_result."Id",
@@ -221,7 +221,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_2 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
@@ -233,8 +233,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @Usage_2 Integer -- Int32
-SET     @Usage_2 = 1
+DECLARE @Usage_1 Integer -- Int32
+SET     @Usage_1 = 1
 
 SELECT
 	key_data_result."Id",
@@ -248,7 +248,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_2 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL

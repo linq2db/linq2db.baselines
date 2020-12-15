@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 Text(4) -- String
-SET     @p1 = 'test'
+DECLARE @p_1 Text(4) -- String
+SET     @p_1 = 'test'
 
 SELECT
 	p."PersonID",
@@ -11,7 +11,7 @@ FROM
 	"Person" p
 		INNER JOIN "Patient" gjd_ri ON gjd_ri."PersonID" = p."PersonID"
 WHERE
-	Lower(p."FirstName") LIKE (('%' || Replace(Replace(Replace(Lower(:p1), '~', '~~'), '%', '~%'), '_', '~_')) || '%') ESCAPE '~'
+	Lower(p."FirstName") LIKE '%' || Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(:p_1), '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
@@ -24,5 +24,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") LIKE (('%' || Replace(Replace(Replace(Lower(:input_1), '~', '~~'), '%', '~%'), '_', '~_')) || '%') ESCAPE '~'
+	Lower(p."FirstName") LIKE '%' || Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower(:input_1), '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%' ESCAPE '~'
 
