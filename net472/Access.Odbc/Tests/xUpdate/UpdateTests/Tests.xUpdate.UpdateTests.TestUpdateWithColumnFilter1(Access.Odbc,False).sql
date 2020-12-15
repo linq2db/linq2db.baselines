@@ -51,8 +51,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName NVarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT TOP 1
 	[x].[FirstName],
@@ -87,8 +87,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName NVarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT TOP 1
 	[x].[FirstName],

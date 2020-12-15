@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ps NVarChar(5) -- String
-SET     @ps = '%[[]%'
+DECLARE @ps_1 NVarChar(5) -- String
+SET     @ps_1 = '%[[]%'
 
 SELECT
 	[p].[FirstName],
