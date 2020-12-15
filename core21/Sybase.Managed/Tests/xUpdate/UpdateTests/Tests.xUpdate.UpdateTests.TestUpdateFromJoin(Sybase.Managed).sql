@@ -45,7 +45,7 @@ SET
 	END
 FROM
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [am] ON Upper(Str_Replace([x].[col3], 'auth.', '')) = Upper([am].[code])
+		LEFT JOIN [access_mode] [am] ON (Upper(Str_Replace([x].[col3], 'auth.', '')) = Upper([am].[code]) OR Upper(Str_Replace([x].[col3], 'auth.', '')) IS NULL AND Upper([am].[code]) IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase

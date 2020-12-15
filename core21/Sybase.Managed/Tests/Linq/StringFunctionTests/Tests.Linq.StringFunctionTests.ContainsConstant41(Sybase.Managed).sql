@@ -2,8 +2,8 @@
 -- Sybase.Managed Sybase
 DECLARE @s UniVarChar(7) -- String
 SET     @s = '123[456'
-DECLARE @ps UniVarChar(5) -- String
-SET     @ps = '%[[]%'
+DECLARE @ps_1 UniVarChar(4) -- String
+SET     @ps_1 = '%~[%'
 
 SELECT
 	[p].[FirstName],
@@ -14,5 +14,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s LIKE @ps ESCAPE '~'
+	[p].[PersonID] = 1 AND @s LIKE @ps_1 ESCAPE '~'
 

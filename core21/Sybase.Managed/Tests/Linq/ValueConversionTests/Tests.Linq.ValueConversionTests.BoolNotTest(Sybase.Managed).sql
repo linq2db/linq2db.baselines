@@ -44,8 +44,8 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue_2 VarChar -- AnsiString
-SET     @BoolValue_2 = 'N'
+DECLARE @BoolValue_1 VarChar -- AnsiString
+SET     @BoolValue_1 = 'N'
 
 SELECT
 	[t].[Id],
@@ -55,7 +55,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue_2
+	[t].[BoolValue] = @BoolValue_1
 
 BeforeExecute
 -- Sybase.Managed Sybase

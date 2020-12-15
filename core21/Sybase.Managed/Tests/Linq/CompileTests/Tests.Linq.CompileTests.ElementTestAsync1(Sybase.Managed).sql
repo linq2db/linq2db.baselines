@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 
 SELECT TOP 1
 	[c_1].[ParentID],
@@ -9,12 +9,12 @@ SELECT TOP 1
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ParentID] = @ParentID_1
+	[c_1].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 2
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 2
 
 SELECT TOP 1
 	[c_1].[ParentID],
@@ -22,5 +22,5 @@ SELECT TOP 1
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ParentID] = @ParentID_1
+	[c_1].[ParentID] = @ParentID
 

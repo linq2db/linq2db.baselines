@@ -28,8 +28,8 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @gender_1 UniChar -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender UniChar -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	[_].[FirstName],
@@ -40,12 +40,12 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = 1 AND [_].[Gender] = @gender_1
+	[_].[PersonID] = 1 AND [_].[Gender] = @gender
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @gender_1 UniChar -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender UniChar -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	[_].[FirstName],
@@ -56,5 +56,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = 1 AND @gender_1 = [_].[Gender]
+	[_].[PersonID] = 1 AND @gender = [_].[Gender]
 

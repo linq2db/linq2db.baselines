@@ -35,7 +35,11 @@ FROM
 					THEN 1
 				ELSE 0
 			END as [c1],
-			CASE WHEN [selectParam].[TradingStatus] = 'D' THEN 1 ELSE 0 END as [c2]
+			CASE
+				WHEN [selectParam].[TradingStatus] = 'D'
+					THEN 1
+				ELSE 0
+			END as [c2]
 		FROM
 			[Issue913Test] [selectParam]
 	) [t1]

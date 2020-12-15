@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 1
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 1
 
 SELECT
-	DateAdd(weekday, @p1, [t].[DateTimeValue])
+	DateAdd(weekday, @p_1, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 
