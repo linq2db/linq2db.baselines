@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @skip Int -- Int32
-SET     @skip = 3
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 8
+DECLARE @skip_2 Int -- Int32
+SET     @skip_2 = 3
+DECLARE @skip_3 Int -- Int32
+SET     @skip_3 = 8
 
 SELECT
 	[t2].[ParentID],
@@ -18,14 +18,14 @@ FROM
 			[Child] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @skip_1
+	[t2].[RN] > @skip_2 AND [t2].[RN] <= @skip_3
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @skip Int -- Int32
-SET     @skip = 3
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 8
+DECLARE @skip_2 Int -- Int32
+SET     @skip_2 = 3
+DECLARE @skip_3 Int -- Int32
+SET     @skip_3 = 8
 
 SELECT
 	[t2].[ParentID],
@@ -40,5 +40,5 @@ FROM
 			[Child] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @skip_1
+	[t2].[RN] > @skip_2 AND [t2].[RN] <= @skip_3
 

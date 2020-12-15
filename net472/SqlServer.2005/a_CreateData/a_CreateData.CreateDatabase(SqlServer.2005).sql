@@ -575,6 +575,7 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2016 BEGIN
 -- SKIP SqlServer.2017 BEGIN
 -- SKIP SqlServer.2019 BEGIN
+-- SKIP SqlServer.2019.SA BEGIN
 -- SKIP SqlAzure BEGIN
 	datetime2DataType        varchar(50)       NULL,
 	datetimeoffsetDataType   varchar(50)       NULL,
@@ -594,6 +595,7 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2016 END
 -- SKIP SqlServer.2017 END
 -- SKIP SqlServer.2019 END
+-- SKIP SqlServer.2019.SA END
 -- SKIP SqlAzure END
 
 ) ON [PRIMARY]
@@ -767,6 +769,7 @@ BeforeExecute
 -- SKIP SqlServer.2016 BEGIN
 -- SKIP SqlServer.2017 BEGIN
 -- SKIP SqlServer.2019 BEGIN
+-- SKIP SqlServer.2019.SA BEGIN
 -- SKIP SqlAzure BEGIN
 CREATE TABLE LinqDataTypes
 (
@@ -792,6 +795,7 @@ BeforeExecute
 -- SKIP SqlServer.2016 END
 -- SKIP SqlServer.2017 END
 -- SKIP SqlServer.2019 END
+-- SKIP SqlServer.2019.SA END
 -- SKIP SqlServer.2008 END
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
