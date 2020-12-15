@@ -13,7 +13,7 @@ WHERE
 		FROM
 			[FTS4_TABLE] [r_1]
 		WHERE
-			([r_1].[rowid] IS NULL AND [r].[rowid] IS NULL OR [r_1].[rowid] = [r].[rowid]) AND
+			([r_1].[rowid] = [r].[rowid] OR [r_1].[rowid] IS NULL AND [r].[rowid] IS NULL) AND
 			[r_1].[FTS4_TABLE] MATCH 'something'
 	)
 

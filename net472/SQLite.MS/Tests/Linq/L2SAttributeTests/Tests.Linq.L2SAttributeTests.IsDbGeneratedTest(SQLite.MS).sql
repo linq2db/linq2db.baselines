@@ -1,5 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
+
+UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
+
+BeforeExecute
+-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'Test'
 DECLARE @LastName NVarChar(4) -- String
@@ -32,7 +37,7 @@ SELECT last_insert_rowid()
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @PersonID  -- Int32
-SET     @PersonID = 6
+SET     @PersonID = 5
 
 DELETE FROM
 	[Person]
