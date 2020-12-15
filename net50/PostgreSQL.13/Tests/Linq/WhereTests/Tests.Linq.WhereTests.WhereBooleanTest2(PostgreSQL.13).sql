@@ -63,7 +63,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND t."Id" > 0)
+	(t."BoolValue" = True OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -87,7 +87,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = True AND t."Id" > 0)
+	(t."BoolValue" = False OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -111,7 +111,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = True AND t."Id" > 0)
+	(t."BoolValue" = False OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -135,7 +135,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND t."Id" > 0)
+	(t."BoolValue" = True OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -159,7 +159,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND t."Id" > 0)
+	(t."BoolValue" = True OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -184,7 +184,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT ((t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
+	(t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -209,7 +209,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT ((t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
+	((t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -234,7 +234,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT ((t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
+	((t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -258,7 +258,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
+	(t."NullableBoolValue" IS NOT NULL OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -282,7 +282,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
+	(t."NullableBoolValue" IS NULL OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -306,7 +306,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
+	(t."NullableBoolValue" IS NULL OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -330,7 +330,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
+	(t."NullableBoolValue" IS NOT NULL OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -355,7 +355,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
+	(t."BoolValue" = True OR t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -367,7 +367,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND
+	(t."BoolValue" = True OR t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL) AND
 	t."Id" > 0
 
 BeforeExecute
@@ -380,7 +380,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND t."Id" > 0)
+	(t."BoolValue" = False AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -405,7 +405,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
+	(t."BoolValue" = True OR (t."NullableBoolValue" = True OR t."NullableBoolValue" IS NULL) OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -417,7 +417,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL)) AND
+	(t."BoolValue" = True OR (t."NullableBoolValue" = True OR t."NullableBoolValue" IS NULL)) AND
 	t."Id" > 0
 
 BeforeExecute
@@ -430,7 +430,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL)) AND t."Id" > 0)
+	(t."BoolValue" = False AND (t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) OR t."Id" <= 0)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
