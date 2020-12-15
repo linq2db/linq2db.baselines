@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @str VarWChar(4) -- String
-SET     @str = '%oh%'
+DECLARE @str_1 VarWChar(4) -- String
+SET     @str_1 = '%oh%'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @str AND [p].[PersonID] = 1
+	[p].[FirstName] LIKE @str_1 AND [p].[PersonID] = 1
 

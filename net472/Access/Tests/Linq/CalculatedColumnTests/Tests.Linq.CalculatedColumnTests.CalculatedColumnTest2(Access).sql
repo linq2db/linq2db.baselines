@@ -8,6 +8,7 @@ SELECT
 	[t2].[MiddleName],
 	[t2].[Gender],
 	[t2].[LastName] + ', ' + [t2].[FirstName],
+	[t2].[LastName] + ', ' + [t2].[FirstName],
 	[t1].[cnt]
 FROM
 	[Person] [t2]
@@ -30,6 +31,7 @@ SELECT
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
+	[i].[LastName] + ', ' + [i].[FirstName],
 	[i].[LastName] + ', ' + [i].[FirstName],
 	[t1].[cnt]
 FROM

@@ -21,8 +21,8 @@ FROM
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @pattern VarWChar(3) -- String
-SET     @pattern = '%1%'
+DECLARE @pattern_1 VarWChar(3) -- String
+SET     @pattern_1 = '%1%'
 
 SELECT TOP 10
 	[t1].[FirstName]
@@ -40,6 +40,6 @@ FROM
 		FROM
 			[Person] [p_1]
 		WHERE
-			CStr([p_1].[PersonID]) LIKE @pattern
+			CStr([p_1].[PersonID]) LIKE @pattern_1
 	) [t1]
 
