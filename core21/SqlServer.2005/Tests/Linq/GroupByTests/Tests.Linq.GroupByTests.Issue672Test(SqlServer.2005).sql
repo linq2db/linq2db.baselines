@@ -86,14 +86,14 @@ FROM
 	[Stone] [s]
 WHERE
 	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE N'level - %' AND Len([s].[ImageFullUrl]) > 0
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND Len([s].[ImageFullUrl]) > 0
 GROUP BY
 	[s].[Name]
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Name_1 NVarChar(4000) -- String
-SET     @Name_1 = N'group1'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'group1'
 
 SELECT
 	[s].[Id],
@@ -104,14 +104,14 @@ FROM
 	[Stone] [s]
 WHERE
 	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE N'level - %' AND
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
 	Len([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = @Name_1
+	[s].[Name] = @Name
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Name_1 NVarChar(4000) -- String
-SET     @Name_1 = N'group2'
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'group2'
 
 SELECT
 	[s].[Id],
@@ -122,9 +122,9 @@ FROM
 	[Stone] [s]
 WHERE
 	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE N'level - %' AND
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
 	Len([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = @Name_1
+	[s].[Name] = @Name
 
 BeforeExecute
 -- SqlServer.2005
