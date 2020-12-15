@@ -2,8 +2,8 @@
 -- SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 100
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 101
 
 SELECT
 	[c_1].[ParentID],
@@ -13,16 +13,21 @@ FROM
 WHERE
 	[c_1].[ParentID] IN (
 		SELECT
-			[t1].[ParentID]
+			[t2].[ParentID]
 		FROM
 			(
 				SELECT
-					[p].[ParentID],
-					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+					[t1].[ParentID]
 				FROM
-					[Parent] [p]
-			) [t1]
-		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+					(
+						SELECT
+							[p].[ParentID],
+							ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+						FROM
+							[Parent] [p]
+					) [t1]
+				WHERE
+					[t1].[RN] > @skip AND [t1].[RN] <= @take_1
+			) [t2]
 	)
 

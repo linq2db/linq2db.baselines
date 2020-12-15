@@ -4,14 +4,18 @@
 UPDATE
 	[a_Table1]
 SET
-	[a_Table1].[BoolValue] = CASE WHEN (NOT EXISTS(
-		SELECT
-			*
-		FROM
-			[Parent] [x]
-		WHERE
-			[a_Table1].[ID] = [x].[ParentID] AND NOT ([x].[Value1] IS NOT NULL AND [x].[Value1] = 1)
-	)) THEN 1 ELSE 0 END
+	[a_Table1].[BoolValue] = CASE
+		WHEN (NOT EXISTS(
+			SELECT
+				*
+			FROM
+				[Parent] [x]
+			WHERE
+				[a_Table1].[ID] = [x].[ParentID] AND ([x].[Value1] <> 1 OR [x].[Value1] IS NULL)
+		))
+			THEN 1
+		ELSE 0
+	END
 FROM
 	[Parent] [x_1]
 		INNER JOIN [LinqDataTypes] [a_Table1] ON [x_1].[ParentID] = [a_Table1].[ID]
