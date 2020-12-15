@@ -282,7 +282,7 @@ USING (
 )
 ON ([Target].[PersonID] = [Source].[ID] AND [Target].[FirstName] <> N'first 3')
 
-WHEN NOT MATCHED AND [Source].[Diagnosis] LIKE N'%sick%' THEN
+WHEN NOT MATCHED AND [Source].[Diagnosis] LIKE N'%sick%' ESCAPE N'~' THEN
 INSERT
 (
 	[FirstName],
