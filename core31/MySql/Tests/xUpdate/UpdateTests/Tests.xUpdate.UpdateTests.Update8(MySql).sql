@@ -41,8 +41,8 @@ WHERE
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @ParentID_1 Int32
-SET     @ParentID_1 = 1001
+DECLARE @ParentID Int32
+SET     @ParentID = 1001
 DECLARE @take Int32
 SET     @take = 2
 
@@ -52,7 +52,7 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` = @ParentID_1
+	`p`.`ParentID` = @ParentID
 LIMIT @take
 
 BeforeExecute
