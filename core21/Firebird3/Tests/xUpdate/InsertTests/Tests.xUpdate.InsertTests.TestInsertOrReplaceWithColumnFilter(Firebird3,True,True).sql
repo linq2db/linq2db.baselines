@@ -53,8 +53,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 VarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName VarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT FIRST @take
 	"x".ID,
@@ -64,7 +64,7 @@ SELECT FIRST @take
 FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
-	"x"."FirstName" = @FirstName_1
+	"x"."FirstName" = @FirstName
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -108,8 +108,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 VarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName VarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT FIRST @take
 	"x".ID,
@@ -119,7 +119,7 @@ SELECT FIRST @take
 FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
-	"x"."FirstName" = @FirstName_1
+	"x"."FirstName" = @FirstName
 
 BeforeExecute
 -- Firebird3 Firebird

@@ -23,8 +23,6 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 10
-DECLARE @pattern VarChar(3) -- String
-SET     @pattern = '%1%'
 
 SELECT FIRST @take
 	"t1"."FirstName"
@@ -42,6 +40,6 @@ FROM
 		FROM
 			"Person" "p_1"
 		WHERE
-			Cast("p_1"."PersonID" as VarChar(11) CHARACTER SET UNICODE_FSS) LIKE @pattern ESCAPE '~'
+			(Cast("p_1"."PersonID" as VarChar(11) CHARACTER SET UNICODE_FSS) CONTAINING '1')
 	) "t1"
 

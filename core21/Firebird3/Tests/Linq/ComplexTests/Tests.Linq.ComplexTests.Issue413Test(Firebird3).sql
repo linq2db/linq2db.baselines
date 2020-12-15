@@ -1,48 +1,33 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T1')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE T1
-			(
-				"InstrumentId"         Int                                    NOT NULL,
-				"InstrumentCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
-				"CreateDate"           TimeStamp                              NOT NULL,
-				"SourceInstrumentCode" VarChar(255) CHARACTER SET UNICODE_FSS,
+CREATE TABLE T1
+(
+	"InstrumentId"         Int                                    NOT NULL,
+	"InstrumentCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
+	"CreateDate"           TimeStamp                              NOT NULL,
+	"SourceInstrumentCode" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-				CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
-			)
-		';
-END
+	CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
+)
 
 BeforeExecute
 -- Firebird3 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T2')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE T2
-			(
-				"InstrumentId" Int NOT NULL,
-				"IndexId"      Int NOT NULL
-			)
-		';
-END
+CREATE TABLE T2
+(
+	"InstrumentId" Int NOT NULL,
+	"IndexId"      Int NOT NULL
+)
 
 BeforeExecute
 -- Firebird3 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T3')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE T3
-			(
-				"InstrumentId" Int NOT NULL,
-				"IndexId"      Int NOT NULL
-			)
-		';
-END
+CREATE TABLE T3
+(
+	"InstrumentId" Int NOT NULL,
+	"IndexId"      Int NOT NULL
+)
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -188,8 +173,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @cond VarChar(4) -- String
-SET     @cond = 'aaa%'
 DECLARE @uptoDate TimeStamp -- DateTime
 SET     @uptoDate = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
@@ -201,7 +184,7 @@ FROM
 		INNER JOIN T3 "w" ON "idx"."IndexId" = "w"."IndexId"
 		INNER JOIN T1 "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
 WHERE
-	"ins"."SourceInstrumentCode" IS NOT NULL AND "ins_1"."InstrumentCode" LIKE @cond ESCAPE '~' AND
+	"ins"."SourceInstrumentCode" IS NOT NULL AND "ins_1"."InstrumentCode" STARTING WITH 'aaa' AND
 	"ins_1"."CreateDate" <= @uptoDate
 ORDER BY
 	"ins"."SourceInstrumentCode"
@@ -209,24 +192,15 @@ ORDER BY
 BeforeExecute
 -- Firebird3 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T3')) THEN
-		EXECUTE STATEMENT 'DROP TABLE T3';
-END
+DROP TABLE T3
 
 BeforeExecute
 -- Firebird3 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T2')) THEN
-		EXECUTE STATEMENT 'DROP TABLE T2';
-END
+DROP TABLE T2
 
 BeforeExecute
 -- Firebird3 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T1')) THEN
-		EXECUTE STATEMENT 'DROP TABLE T1';
-END
+DROP TABLE T1
 
