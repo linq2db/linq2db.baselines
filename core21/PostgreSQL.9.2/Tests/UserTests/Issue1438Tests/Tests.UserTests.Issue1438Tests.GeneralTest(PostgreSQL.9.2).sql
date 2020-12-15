@@ -27,8 +27,8 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 1
+DECLARE @id Integer -- Int32
+SET     @id = 1
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -38,7 +38,7 @@ SELECT
 FROM
 	"Issue1438" t1
 WHERE
-	t1."Id" = :id_1
+	t1."Id" = :id
 LIMIT :take
 
 BeforeExecute
