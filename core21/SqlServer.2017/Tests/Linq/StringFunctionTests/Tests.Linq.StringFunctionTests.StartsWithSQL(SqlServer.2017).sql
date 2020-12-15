@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE N'Jo%' AND [p].[LastName] NOT LIKE N'Je%'
+	[p].[FirstName] LIKE N'Jo%' ESCAPE N'~' AND [p].[LastName] NOT LIKE N'Je%' ESCAPE N'~'
 
