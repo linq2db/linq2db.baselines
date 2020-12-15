@@ -17,7 +17,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
-SET     @id = 3
+SET     @id = 2
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -33,7 +33,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
-SET     @id = 2
+SET     @id = 3
 DECLARE @take  -- Int32
 SET     @take = 1
 
