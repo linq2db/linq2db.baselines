@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2017
-DECLARE @p1 Int -- Int32
-SET     @p1 = 1320
+DECLARE @ID Int -- Int32
+SET     @ID = 1320
 
 SELECT
 	[t].[c1]
 FROM
 	(
 		SELECT
-			DateAdd(month, (@p1 + [p].[ID]) - 1, 0) as [c1]
+			DateAdd(month, (@ID + [p].[ID]) - 1, 0) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
