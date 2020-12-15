@@ -25,17 +25,21 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	EXISTS(
-		SELECT
-			t1."Value"
-		FROM
-			"TakeSkipClass" t1
-		GROUP BY
-			t1."Value"
-		HAVING
-			Count(*) > 1
-		LIMIT :take
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				t1."Value"
+			FROM
+				"TakeSkipClass" t1
+			GROUP BY
+				t1."Value"
+			HAVING
+				Count(*) > 1
+			LIMIT :take
+		)
+			THEN True
+		ELSE False
+	END
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
