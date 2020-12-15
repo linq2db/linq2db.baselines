@@ -11,7 +11,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN [p].[FirstName] LIKE '%Jo%'
+				WHEN [p].[FirstName] LIKE '%Jo%' ESCAPE '~'
 					THEN 1
 				ELSE 0
 			END as [Field1],
@@ -24,7 +24,7 @@ FROM
 			[Person] [p]
 	) [p_1]
 WHERE
-	([p_1].[Field1] = 1 AND [p_1].[Field1] IS NOT NULL)
+	[p_1].[Field1] = 1
 ORDER BY
 	[p_1].[Field1]
 

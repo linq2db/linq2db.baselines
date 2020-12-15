@@ -100,5 +100,5 @@ SELECT
 FROM
 	[Orders] [t1]
 ORDER BY
-	[t1].[Freight] * Cast([t1].[OrderID] as Decimal(29, 10)) DESC
+	[t1].[Freight] * [t1].[OrderID] DESC
 
