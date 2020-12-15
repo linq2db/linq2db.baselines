@@ -18,6 +18,6 @@ FROM
 	) cp
 		INNER JOIN "Child" c_1
 			INNER JOIN "Parent" a_ParentID2_1 ON c_1."ParentID" = a_ParentID2_1."ParentID"
-		ON (cp."ParentID" = a_ParentID2_1."ParentID" AND (cp."Value1" IS NULL AND a_ParentID2_1."Value1" IS NULL OR cp."Value1" = a_ParentID2_1."Value1"))
+		ON (cp."ParentID" = a_ParentID2_1."ParentID" AND (cp."Value1" = a_ParentID2_1."Value1" OR cp."Value1" IS NULL AND a_ParentID2_1."Value1" IS NULL))
 		LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"
 

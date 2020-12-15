@@ -42,15 +42,15 @@ VALUES
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p1 TimeStamp -- DateTime
-SET     @p1 = TO_TIMESTAMP('2018-01-02 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+DECLARE @p_1 TimeStamp -- DateTime
+SET     @p_1 = TO_TIMESTAMP('2018-01-02 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
 
 SELECT
 	Count(*)
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = 5000 AND t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' DAY < :p1
+	t.ID = 5000 AND t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' DAY < :p_1
 
 BeforeExecute
 -- Oracle.Managed Oracle12

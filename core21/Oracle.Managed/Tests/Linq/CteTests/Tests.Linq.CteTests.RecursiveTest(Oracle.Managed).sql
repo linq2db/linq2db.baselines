@@ -18,7 +18,7 @@ AS
 	FROM
 		"GrandChild" gc
 			INNER JOIN "Parent" p ON p."ParentID" = gc."ParentID"
-			INNER JOIN MY_CTE ct ON ct."ChildID" = gc."ChildID"
+			INNER JOIN MY_CTE ct ON (ct."ChildID" = gc."ChildID" OR ct."ChildID" IS NULL AND gc."ChildID" IS NULL)
 	WHERE
 		ct."GrandChildID" <= 10
 )
