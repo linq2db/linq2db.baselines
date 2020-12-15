@@ -36,8 +36,8 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @FirstName_1 Text(5) -- String
-SET     @FirstName_1 = 'John0'
+DECLARE @FirstName Text(5) -- String
+SET     @FirstName = 'John0'
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -50,7 +50,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :FirstName_1 AND p."LastName" = 'Shepard'
+	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
 LIMIT :take
 
 BeforeExecute
@@ -83,8 +83,8 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @FirstName_1 Text(5) -- String
-SET     @FirstName_1 = 'John1'
+DECLARE @FirstName Text(5) -- String
+SET     @FirstName = 'John1'
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -97,7 +97,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :FirstName_1 AND p."LastName" = 'Shepard'
+	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
 LIMIT :take
 
 BeforeExecute
