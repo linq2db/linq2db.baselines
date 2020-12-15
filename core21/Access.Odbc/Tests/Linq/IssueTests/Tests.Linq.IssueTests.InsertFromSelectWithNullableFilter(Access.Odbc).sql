@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p1 SmallInt -- Int16
-SET     @p1 = 1234
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 1234
 
 INSERT INTO [AllTypes]
 (
