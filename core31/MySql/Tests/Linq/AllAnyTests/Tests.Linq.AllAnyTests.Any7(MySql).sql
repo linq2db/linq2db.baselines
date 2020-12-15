@@ -2,10 +2,14 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			`Child` `t1`
-	) as `c1`
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				`Child` `t1`
+		)
+			THEN 1
+		ELSE 0
+	END as `c1`
 
