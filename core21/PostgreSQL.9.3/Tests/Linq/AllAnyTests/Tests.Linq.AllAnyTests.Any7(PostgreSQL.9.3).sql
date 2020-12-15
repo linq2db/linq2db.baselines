@@ -2,10 +2,14 @@
 -- PostgreSQL.9.3 PostgreSQL
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Child" t1
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" t1
+		)
+			THEN True
+		ELSE False
+	END
 

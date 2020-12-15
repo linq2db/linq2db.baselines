@@ -33,14 +33,18 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"AsyncDataTable" c_1
-		WHERE
-			c_1."Id" = :Id
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"AsyncDataTable" c_1
+			WHERE
+				c_1."Id" = :Id
+		)
+			THEN True
+		ELSE False
+	END
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

@@ -10,8 +10,8 @@ GROUP BY
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 
 SELECT
 	"keyParam"."ParentID",
@@ -19,5 +19,5 @@ SELECT
 FROM
 	"Child" "keyParam"
 WHERE
-	"keyParam"."ParentID" = :ParentID_1
+	"keyParam"."ParentID" = :ParentID
 
