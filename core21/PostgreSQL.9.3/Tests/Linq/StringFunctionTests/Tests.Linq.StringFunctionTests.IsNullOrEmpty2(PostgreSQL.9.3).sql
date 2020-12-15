@@ -2,7 +2,11 @@
 -- PostgreSQL.9.3 PostgreSQL
 
 SELECT
-	(p."FirstName" IS NULL OR Length(p."FirstName") = 0)
+	CASE
+		WHEN (p."FirstName" IS NULL OR Length(p."FirstName") = 0)
+			THEN True
+		ELSE False
+	END
 FROM
 	"Person" p
 WHERE
