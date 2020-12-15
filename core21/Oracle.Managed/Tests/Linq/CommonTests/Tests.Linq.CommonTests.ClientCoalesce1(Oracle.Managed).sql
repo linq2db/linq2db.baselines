@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p1 Int32
-SET     @p1 = 100
+DECLARE @Value1 Int32
+SET     @Value1 = 100
 
 SELECT
-	Nvl(p."Value1", :p1)
+	Nvl(p."Value1", :Value1)
 FROM
 	"Parent" p
 

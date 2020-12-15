@@ -29,6 +29,22 @@ SELECT :p FROM SYS.DUAL
 BeforeExecute
 --  Oracle.Managed Oracle12
 
+CREATE TABLE "OracleBulkCopyTable"
+(
+	ID Int NOT NULL
+)
+
+BeforeExecute
+INSERT BULK "OracleBulkCopyTable"(ID)
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+DROP TABLE "OracleBulkCopyTable"
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
 SELECT USER FROM DUAL
 
 BeforeExecute

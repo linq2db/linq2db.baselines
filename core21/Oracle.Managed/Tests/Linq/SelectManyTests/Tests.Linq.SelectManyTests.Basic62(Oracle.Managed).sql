@@ -2,17 +2,10 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t2."c1"
+	t1."ParentID" + cp."ParentID"
 FROM
 	"Parent" cp
-		CROSS APPLY (
-			SELECT
-				t1."ParentID" + cp."ParentID" as "c1"
-			FROM
-				"Child" t1
-			WHERE
-				cp."ParentID" = t1."ParentID"
-		) t2
+		CROSS JOIN "Child" t1
 WHERE
-	t2."c1" > 1
+	t1."ParentID" + cp."ParentID" > 1 AND cp."ParentID" = t1."ParentID"
 
