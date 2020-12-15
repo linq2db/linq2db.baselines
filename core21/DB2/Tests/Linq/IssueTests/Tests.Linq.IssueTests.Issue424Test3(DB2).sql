@@ -2,8 +2,8 @@
 -- DB2 DB2.LUW DB2LUW
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
-DECLARE @skip_1 Integer(4) -- Int32
-SET     @skip_1 = 2
+DECLARE @take_1 Integer(4) -- Int32
+SET     @take_1 = 2
 
 SELECT
 	"t3"."ParentID",
@@ -24,5 +24,5 @@ FROM
 			) "t2"
 	) "t3"
 WHERE
-	"t3".RN > @skip AND "t3".RN <= @skip_1
+	"t3".RN > @skip AND "t3".RN <= @take_1
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p1 Integer(4) -- Int32
-SET     @p1 = 1
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1
 
 SELECT
 	"key_data_result"."ParentID",
@@ -16,7 +16,7 @@ FROM
 		WHERE
 			"p"."ParentID" = 1
 	) "key_data_result"
-		INNER JOIN "Child" "_gjd_c" ON "_gjd_c"."ParentID" = "key_data_result"."ParentID" + @p1
+		INNER JOIN "Child" "_gjd_c" ON "_gjd_c"."ParentID" = "key_data_result"."ParentID" + @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
