@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+--  Oracle.Managed Oracle11
 
 SELECT
 	t1."Decimal1",
