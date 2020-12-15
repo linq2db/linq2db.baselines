@@ -2,12 +2,12 @@
 -- SqlCe
 
 SELECT
-	[t1].[ChildCount]
+	[t1].[Sum_1]
 FROM
 	[Parent] [p]
 		LEFT JOIN (
 			SELECT
-				Sum([c_1].[ParentID] * [c_1].[ChildID]) as [ChildCount],
+				Sum([c_1].[ParentID] * [c_1].[ChildID]) as [Sum_1],
 				[c_1].[ParentID]
 			FROM
 				[Child] [c_1]
