@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @DateTimeValue_1 DateTime
-SET     @DateTimeValue_1 = #2001-01-11 01:11:21#
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = #2001-01-11 01:11:21#
 
 SELECT
 	[t].[ID],

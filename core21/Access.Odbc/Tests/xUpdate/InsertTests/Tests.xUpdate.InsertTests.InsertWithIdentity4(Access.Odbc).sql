@@ -39,8 +39,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(5) -- String
-SET     @FirstName_1 = 'John0'
+DECLARE @FirstName NVarChar(5) -- String
+SET     @FirstName = 'John0'
 
 SELECT TOP 2
 	[p].[FirstName],
@@ -86,8 +86,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(5) -- String
-SET     @FirstName_1 = 'John1'
+DECLARE @FirstName NVarChar(5) -- String
+SET     @FirstName = 'John1'
 
 SELECT TOP 2
 	[p].[FirstName],

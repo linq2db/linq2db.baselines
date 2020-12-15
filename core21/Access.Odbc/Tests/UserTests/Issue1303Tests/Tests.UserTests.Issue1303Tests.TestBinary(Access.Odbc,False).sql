@@ -44,8 +44,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Array_2 VarBinary(3) -- Binary
-SET     @Array_2 = 0x010203
+DECLARE @Array_1 VarBinary(3) -- Binary
+SET     @Array_1 = 0x010203
 
 SELECT TOP 2
 	[_].[ID],
@@ -58,8 +58,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Binary_2 VarBinary(2) -- Binary
-SET     @Binary_2 = 0x0405
+DECLARE @Binary_1 VarBinary(2) -- Binary
+SET     @Binary_1 = 0x0405
 
 SELECT TOP 2
 	[_].[ID],
