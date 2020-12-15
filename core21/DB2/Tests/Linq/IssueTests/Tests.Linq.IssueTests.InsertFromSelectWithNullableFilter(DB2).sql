@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p1 SmallInt(4) -- Int16
-SET     @p1 = 1234
+DECLARE @p_1 Integer(4) -- Int32
+SET     @p_1 = 1234
 
 INSERT INTO ALLTYPES
 (
@@ -41,6 +41,6 @@ FROM
 			ALLTYPES "_"
 				INNER JOIN ALLTYPES "c_1" ON "_".SMALLINTDATATYPE = "c_1".INTDATATYPE
 		WHERE
-			"_".SMALLINTDATATYPE = @p1
+			"_".SMALLINTDATATYPE = @p_1
 	) "t1"
 

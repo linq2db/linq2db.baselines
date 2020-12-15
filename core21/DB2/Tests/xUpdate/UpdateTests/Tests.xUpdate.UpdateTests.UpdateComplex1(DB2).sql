@@ -9,7 +9,7 @@ BeforeExecute
 DELETE FROM
 	"Person" "_"
 WHERE
-	"_"."FirstName" LIKE 'UpdateComplex%'
+	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -106,5 +106,5 @@ BeforeExecute
 DELETE FROM
 	"Person" "_"
 WHERE
-	"_"."FirstName" LIKE 'UpdateComplex%'
+	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 

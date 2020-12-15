@@ -66,18 +66,18 @@ DECLARE @someId Integer(4) -- Int32
 SET     @someId = 100
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
-DECLARE @skip_1 Integer(4) -- Int32
-SET     @skip_1 = 3
+DECLARE @take_1 Integer(4) -- Int32
+SET     @take_1 = 3
 DECLARE @int2 Integer(4) -- Int32
 SET     @int2 = 22
-DECLARE @skip_2 Integer(4) -- Int32
-SET     @skip_2 = 3
+DECLARE @take_2 Integer(4) -- Int32
+SET     @take_2 = 3
 DECLARE @int3 Integer(4) -- Int32
 SET     @int3 = 33
-DECLARE @skip_3 Integer(4) -- Int32
-SET     @skip_3 = 3
-DECLARE @skip_4 Integer(4) -- Int32
-SET     @skip_4 = 3
+DECLARE @take_3 Integer(4) -- Int32
+SET     @take_3 = 3
+DECLARE @take_4 Integer(4) -- Int32
+SET     @take_4 = 3
 
 UPDATE
 	"UpdatedEntities"
@@ -109,7 +109,7 @@ SET
 							"t"."id" <> @someId
 					) "t1"
 				WHERE
-					"t1".RN > @skip AND "t1".RN <= @skip_1
+					"t1".RN > @skip AND "t1".RN <= @take_1
 			) "t2"
 		WHERE
 			"UpdatedEntities"."id" = "t2"."id"
@@ -141,7 +141,7 @@ SET
 							"t_1"."id" <> @someId
 					) "t3"
 				WHERE
-					"t3".RN > @skip AND "t3".RN <= @skip_2
+					"t3".RN > @skip AND "t3".RN <= @take_2
 			) "t4"
 		WHERE
 			"UpdatedEntities"."id" = "t4"."id"
@@ -173,7 +173,7 @@ SET
 							"t_2"."id" <> @someId
 					) "t5"
 				WHERE
-					"t5".RN > @skip AND "t5".RN <= @skip_3
+					"t5".RN > @skip AND "t5".RN <= @take_3
 			) "t6"
 		WHERE
 			"UpdatedEntities"."id" = "t6"."id"
@@ -204,7 +204,7 @@ WHERE
 							"t_3"."id" <> @someId
 					) "t7"
 				WHERE
-					"t7".RN > @skip AND "t7".RN <= @skip_4
+					"t7".RN > @skip AND "t7".RN <= @take_4
 			) "t8"
 		WHERE
 			"UpdatedEntities"."id" = "t8"."id"
