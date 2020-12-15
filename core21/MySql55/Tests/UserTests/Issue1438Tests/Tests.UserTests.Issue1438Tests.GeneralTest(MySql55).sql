@@ -30,8 +30,8 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @id_1 Int32
-SET     @id_1 = 1
+DECLARE @id Int32
+SET     @id = 1
 DECLARE @take Int32
 SET     @take = 2
 
@@ -41,7 +41,7 @@ SELECT
 FROM
 	`Issue1438` `_`
 WHERE
-	`_`.`Id` = @id_1
+	`_`.`Id` = @id
 LIMIT @take
 
 BeforeExecute
