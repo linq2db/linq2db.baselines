@@ -2,7 +2,7 @@
 -- SqlServer.2017
 
 SELECT
-	CASE WHEN [p].[PersonID] = 1 THEN 1 ELSE 0 END
+	IIF([p].[PersonID] = 1, 1, 0)
 FROM
 	[Person] [p]
 
