@@ -6,7 +6,7 @@ SELECT
 FROM
 	`Person` `nm`
 WHERE
-	NOT (`nm`.`FirstName` IS NULL OR Char_Length(`nm`.`FirstName`) = 0)
+	(`nm`.`FirstName` IS NOT NULL AND Char_Length(`nm`.`FirstName`) <> 0)
 
 BeforeExecute
 -- MySqlConnector MySql

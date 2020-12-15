@@ -10,6 +10,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	NOT (`p`.`FirstName` IS NULL OR Char_Length(`p`.`FirstName`) = 0) AND
+	(`p`.`FirstName` IS NOT NULL AND Char_Length(`p`.`FirstName`) <> 0) AND
 	`p`.`PersonID` = 1
 
