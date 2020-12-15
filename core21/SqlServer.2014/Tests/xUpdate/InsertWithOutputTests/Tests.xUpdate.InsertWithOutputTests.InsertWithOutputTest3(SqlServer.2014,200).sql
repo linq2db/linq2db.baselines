@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @id_2 Int -- Int32
-SET     @id_2 = 1001
+DECLARE @id Int -- Int32
+SET     @id = 1001
 
 INSERT INTO [Child]
 (
@@ -13,7 +13,7 @@ OUTPUT
 	[INSERTED].[ParentID]
 SELECT
 	[c_1].[ParentID],
-	@id_2
+	@id
 FROM
 	[Child] [c_1]
 WHERE
