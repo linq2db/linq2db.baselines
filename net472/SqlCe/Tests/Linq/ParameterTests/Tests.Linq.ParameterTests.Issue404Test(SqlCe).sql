@@ -69,8 +69,8 @@ FROM
 
 BeforeExecute
 -- SqlCe
-DECLARE @Usage_2 Int -- Int32
-SET     @Usage_2 = 0
+DECLARE @Usage_1 Int -- Int32
+SET     @Usage_1 = 0
 
 SELECT
 	[key_data_result].[Id],
@@ -84,7 +84,7 @@ FROM
 		FROM
 			[Table404One] [c_1]
 	) [key_data_result]
-		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_2 AND [_v].[FirstTableId] = [key_data_result].[Id]
+		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
 -- SqlCe
@@ -96,8 +96,8 @@ FROM
 
 BeforeExecute
 -- SqlCe
-DECLARE @Usage_2 Int -- Int32
-SET     @Usage_2 = 1
+DECLARE @Usage_1 Int -- Int32
+SET     @Usage_1 = 1
 
 SELECT
 	[key_data_result].[Id],
@@ -111,7 +111,7 @@ FROM
 		FROM
 			[Table404One] [c_1]
 	) [key_data_result]
-		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_2 AND [_v].[FirstTableId] = [key_data_result].[Id]
+		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
 -- SqlCe
@@ -202,8 +202,8 @@ FROM
 
 BeforeExecute
 -- SqlCe
-DECLARE @Usage_2 Int -- Int32
-SET     @Usage_2 = 0
+DECLARE @Usage_1 Int -- Int32
+SET     @Usage_1 = 0
 
 SELECT
 	[key_data_result].[Id],
@@ -217,7 +217,7 @@ FROM
 		FROM
 			[Table404One] [c_1]
 	) [key_data_result]
-		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_2 AND [_v].[FirstTableId] = [key_data_result].[Id]
+		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
 -- SqlCe
@@ -229,8 +229,8 @@ FROM
 
 BeforeExecute
 -- SqlCe
-DECLARE @Usage_2 Int -- Int32
-SET     @Usage_2 = 1
+DECLARE @Usage_1 Int -- Int32
+SET     @Usage_1 = 1
 
 SELECT
 	[key_data_result].[Id],
@@ -244,7 +244,7 @@ FROM
 		FROM
 			[Table404One] [c_1]
 	) [key_data_result]
-		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_2 AND [_v].[FirstTableId] = [key_data_result].[Id]
+		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
 -- SqlCe
