@@ -6,14 +6,14 @@ DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
 SELECT
-	CASE WHEN EXISTS(
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ChildID] > -100
-	) THEN 1 ELSE 0 END,
+	), 1, 0),
 	(
 		SELECT
 			Count(*)
