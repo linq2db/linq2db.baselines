@@ -43,8 +43,8 @@ BeforeExecute
 -- SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 2
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 3
 
 SELECT
 	[t2].[ID],
@@ -59,7 +59,7 @@ FROM
 			[TestIdTrun] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
+	[t2].[RN] > @skip AND [t2].[RN] <= @take_1
 
 BeforeExecute
 -- SqlServer.2008
@@ -94,8 +94,8 @@ BeforeExecute
 -- SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 2
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 3
 
 SELECT
 	[t2].[ID],
@@ -110,7 +110,7 @@ FROM
 			[TestIdTrun] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
+	[t2].[RN] > @skip AND [t2].[RN] <= @take_1
 
 BeforeExecute
 -- SqlServer.2008

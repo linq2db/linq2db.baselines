@@ -26,10 +26,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 3
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 5
+DECLARE @skip_3 Int -- Int32
+SET     @skip_3 = 3
+DECLARE @take_3 Int -- Int32
+SET     @take_3 = 5
 
 SELECT
 	[t2].[Value_1]
@@ -42,7 +42,7 @@ FROM
 			[TakeSkipClass] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @skip_1
+	[t2].[RN] > @skip_3 AND [t2].[RN] <= @take_3
 
 BeforeExecute
 -- SqlServer.2008
