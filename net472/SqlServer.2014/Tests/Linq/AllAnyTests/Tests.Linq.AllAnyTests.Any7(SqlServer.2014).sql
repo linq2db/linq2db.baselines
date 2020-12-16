@@ -2,10 +2,10 @@
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-	CASE WHEN EXISTS(
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
 			[Child] [t1]
-	) THEN 1 ELSE 0 END
+	), 1, 0)
 
