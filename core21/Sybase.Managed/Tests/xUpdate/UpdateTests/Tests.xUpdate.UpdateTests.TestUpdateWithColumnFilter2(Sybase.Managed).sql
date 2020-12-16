@@ -31,8 +31,8 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @FirstName_1 UniVarChar(18) -- String
-SET     @FirstName_1 = 'UpdateColumnFilter'
+DECLARE @FirstName UniVarChar(18) -- String
+SET     @FirstName = 'UpdateColumnFilter'
 
 SELECT TOP 2
 	[x].[FirstName],
@@ -43,7 +43,7 @@ SELECT TOP 2
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- Sybase.Managed Sybase
