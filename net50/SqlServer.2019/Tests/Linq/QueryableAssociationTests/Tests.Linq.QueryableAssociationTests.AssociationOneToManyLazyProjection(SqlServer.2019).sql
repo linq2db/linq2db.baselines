@@ -75,8 +75,8 @@ AS RETURN
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @p1 Int -- Int32
-SET     @p1 = 2
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 2
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -92,7 +92,7 @@ FROM
 			[t1].[OwnerStr]
 		FROM
 			(
-				SELECT TOP (@p1)
+				SELECT TOP (@p_1)
 					[e].[Id],
 					[e].[OwnerStr]
 				FROM
@@ -111,8 +111,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @p1 Int -- Int32
-SET     @p1 = 2
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 2
 
 SELECT
 	[key_data_result].[Id],
@@ -126,7 +126,7 @@ FROM
 			[t1].[OwnerStr]
 		FROM
 			(
-				SELECT TOP (@p1)
+				SELECT TOP (@p_1)
 					[e].[Id],
 					[e].[OwnerStr]
 				FROM

@@ -10,5 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] <> N'Jo' AND [p].[PersonID] = 1
+	(IIF([p].[FirstName] > N'Jo', 1, IIF([p].[FirstName] = N'Jo', 0, -1)) <> 0 OR IIF([p].[FirstName] > N'Jo', 1, IIF([p].[FirstName] = N'Jo', 0, -1)) IS NULL) AND
+	[p].[PersonID] = 1
 

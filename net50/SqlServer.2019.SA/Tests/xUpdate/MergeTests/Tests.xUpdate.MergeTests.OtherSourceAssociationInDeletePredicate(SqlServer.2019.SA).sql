@@ -282,7 +282,7 @@ USING (
 	[Diagnosis],
 	[FirstName]
 )
-ON ([Target].[PersonID] = [Source].[PersonID] AND [Source].[Diagnosis] LIKE N'%very%')
+ON ([Target].[PersonID] = [Source].[PersonID] AND [Source].[Diagnosis] LIKE N'%very%' ESCAPE N'~')
 WHEN MATCHED AND EXISTS(
 	SELECT
 		*

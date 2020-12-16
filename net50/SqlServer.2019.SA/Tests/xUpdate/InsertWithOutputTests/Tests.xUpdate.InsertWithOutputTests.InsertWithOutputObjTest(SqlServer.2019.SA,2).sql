@@ -10,12 +10,12 @@ CREATE TABLE [TableWithData]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 2
-DECLARE @Value_2 Int -- Int32
-SET     @Value_2 = 200
-DECLARE @ValueStr_1 NVarChar(50) -- String
-SET     @ValueStr_1 = N'SomeStr2'
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 200
+DECLARE @ValueStr NVarChar(50) -- String
+SET     @ValueStr = N'SomeStr2'
 
 INSERT INTO [TableWithData]
 (
@@ -29,9 +29,9 @@ OUTPUT
 	[INSERTED].[ValueStr]
 VALUES
 (
-	@Id_1,
-	@Value_2,
-	@ValueStr_1
+	@Id,
+	@Value_1,
+	@ValueStr
 )
 
 BeforeExecute
