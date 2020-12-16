@@ -97,5 +97,5 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	([c_1].[CustomerID] LIKE N'A%' OR [c_1].[CustomerID] LIKE N'L%')
+	([c_1].[CustomerID] LIKE N'A%' ESCAPE N'~' OR [c_1].[CustomerID] LIKE N'L%' ESCAPE N'~')
 

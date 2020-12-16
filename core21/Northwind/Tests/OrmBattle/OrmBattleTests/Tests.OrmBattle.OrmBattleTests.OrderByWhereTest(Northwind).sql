@@ -83,8 +83,8 @@ BeforeExecute
 -- Northwind SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 10
-DECLARE @OrderDate_1 DateTime2
-SET     @OrderDate_1 = '1997-01-01T00:00:00'
+DECLARE @OrderDate DateTime2
+SET     @OrderDate = '1997-01-01T00:00:00'
 
 SELECT TOP (@take)
 	[o].[ShipCountry],
@@ -104,7 +104,7 @@ SELECT TOP (@take)
 FROM
 	[Orders] [o]
 WHERE
-	[o].[OrderDate] > @OrderDate_1
+	[o].[OrderDate] > @OrderDate
 ORDER BY
 	[o].[OrderDate],
 	[o].[OrderID]

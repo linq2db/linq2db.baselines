@@ -83,14 +83,9 @@ BeforeExecute
 -- Northwind SqlServer.2017
 
 SELECT
-	[r].[c1]
+	[o].[Freight] * 1000
 FROM
-	(
-		SELECT
-			[o].[Freight] * 1000 as [c1]
-		FROM
-			[Orders] [o]
-	) [r]
+	[Orders] [o]
 WHERE
-	[r].[c1] > 100000
+	[o].[Freight] * 1000 > 100000
 
