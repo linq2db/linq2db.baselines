@@ -31,7 +31,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 <= IIF([i].[StrValue] > N'4', 1, IIF([i].[StrValue] = N'4', 0, -1))
+	[i].[StrValue] >= N'4'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -44,7 +44,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'4', 1, IIF([i].[StrValue] = N'4', 0, -1)) >= 0
+	[i].[StrValue] >= N'4'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -57,7 +57,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 >= IIF([i].[StrValue] > N'2', 1, IIF([i].[StrValue] = N'2', 0, -1))
+	[i].[StrValue] <= N'2'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -70,7 +70,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'2', 1, IIF([i].[StrValue] = N'2', 0, -1)) <= 0
+	[i].[StrValue] <= N'2'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -83,7 +83,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 < IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1))
+	[i].[StrValue] > N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -96,7 +96,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1)) > 0
+	[i].[StrValue] > N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -109,7 +109,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 > IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1))
+	[i].[StrValue] < N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -122,7 +122,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1)) < 0
+	[i].[StrValue] < N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -135,7 +135,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 = IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1))
+	[i].[StrValue] = N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -148,7 +148,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1)) = 0
+	[i].[StrValue] = N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -161,7 +161,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 >= IIF([i].[StrValue] > N'2', 1, IIF([i].[StrValue] = N'2', 0, -1))
+	[i].[StrValue] <= N'2'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -174,7 +174,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'2', 1, IIF([i].[StrValue] = N'2', 0, -1)) <= 0
+	[i].[StrValue] <= N'2'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -187,7 +187,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 <= IIF([i].[StrValue] > N'4', 1, IIF([i].[StrValue] = N'4', 0, -1))
+	[i].[StrValue] >= N'4'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -200,7 +200,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'4', 1, IIF([i].[StrValue] = N'4', 0, -1)) >= 0
+	[i].[StrValue] >= N'4'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -213,7 +213,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 > IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1))
+	[i].[StrValue] < N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -226,7 +226,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1)) < 0
+	[i].[StrValue] < N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -239,7 +239,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 < IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1))
+	[i].[StrValue] > N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -252,7 +252,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'3', 1, IIF([i].[StrValue] = N'3', 0, -1)) > 0
+	[i].[StrValue] > N'3'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -265,7 +265,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 <= IIF([i].[StrValue] > N'5', 1, IIF([i].[StrValue] = N'5', 0, -1))
+	[i].[StrValue] >= N'5'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -278,7 +278,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'5', 1, IIF([i].[StrValue] = N'5', 0, -1)) >= 0
+	[i].[StrValue] >= N'5'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -291,7 +291,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	0 >= IIF([i].[StrValue] > N'1', 1, IIF([i].[StrValue] = N'1', 0, -1))
+	[i].[StrValue] <= N'1'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -304,7 +304,7 @@ SELECT TOP (@take)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	IIF([i].[StrValue] > N'1', 1, IIF([i].[StrValue] = N'1', 0, -1)) <= 0
+	[i].[StrValue] <= N'1'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
