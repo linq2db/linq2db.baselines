@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p1 Int -- Int32
-SET     @p1 = 1
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 1
 
 SELECT
-	DateAdd(hour, @p1, [t].[DateTimeValue])
+	DateAdd(hour, @p_1, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @p1 Int32
-SET     @p1 = 10
+DECLARE @p_1 Int32
+SET     @p_1 = 10
 
 SELECT
 	key_data_result."ParentID",
@@ -21,7 +21,7 @@ FROM
 				FROM
 					"Parent" p
 				WHERE
-					ROWNUM <= :p1
+					ROWNUM <= :p_1
 			) t1
 	) key_data_result
 		INNER JOIN "Child" c_1 ON c_1."ParentID" = key_data_result."ParentID"

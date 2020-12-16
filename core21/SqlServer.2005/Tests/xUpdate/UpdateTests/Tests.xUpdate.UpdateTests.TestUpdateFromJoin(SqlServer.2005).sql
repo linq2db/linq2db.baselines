@@ -47,7 +47,7 @@ SET
 	END
 FROM
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [am] ON Upper(Replace([x].[col3], N'auth.', N'')) = Upper([am].[code])
+		LEFT JOIN [access_mode] [am] ON (Upper(Replace([x].[col3], N'auth.', N'')) = Upper([am].[code]) OR Upper(Replace([x].[col3], N'auth.', N'')) IS NULL AND Upper([am].[code]) IS NULL)
 
 BeforeExecute
 -- SqlServer.2005

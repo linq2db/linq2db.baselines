@@ -64,8 +64,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
+DECLARE @take_1  -- Int32
+SET     @take_1 = 2
 
 SELECT
 	[t1].[Value]
@@ -73,7 +73,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-LIMIT @take
+LIMIT @take_1
 
 BeforeExecute
 -- SQLite.Classic SQLite

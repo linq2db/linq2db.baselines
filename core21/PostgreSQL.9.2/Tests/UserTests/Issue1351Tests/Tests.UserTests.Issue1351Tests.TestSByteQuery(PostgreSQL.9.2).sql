@@ -30,7 +30,7 @@ SELECT
 FROM
 	"T1351Model" t1
 WHERE
-	(t1."TestNullable" IS NULL OR t1."TestNullable" <> 1)
+	(t1."TestNullable" <> 1 OR t1."TestNullable" IS NULL)
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

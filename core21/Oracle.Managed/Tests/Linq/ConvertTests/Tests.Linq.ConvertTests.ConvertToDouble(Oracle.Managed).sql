@@ -2,14 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	p."c1"
+	Cast(t."MoneyValue" as Float)
 FROM
-	(
-		SELECT
-			Cast(t."MoneyValue" as Float) as "c1"
-		FROM
-			"LinqDataTypes" t
-	) p
+	"LinqDataTypes" t
 WHERE
-	p."c1" > 0D
+	Cast(t."MoneyValue" as Float) > 0D
 

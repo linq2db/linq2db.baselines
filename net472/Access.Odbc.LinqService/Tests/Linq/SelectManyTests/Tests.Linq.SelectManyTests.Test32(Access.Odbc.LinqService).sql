@@ -10,7 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[p].[PersonID] + 1 as [ID],
+			[p].[PersonID] + 2 as [ID],
 			[p].[FirstName],
 			[p].[PersonID],
 			[p].[LastName],
@@ -19,8 +19,8 @@ FROM
 		FROM
 			[Person] [p]
 		WHERE
-			[p].[PersonID] = 1
+			[p].[PersonID] = 1 AND [p].[PersonID] = 1
 	) [p_1]
 WHERE
-	[p_1].[ID] + 1 = 3 AND [p_1].[ID] = 2
+	[p_1].[ID] = 3
 

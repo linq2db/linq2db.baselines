@@ -92,8 +92,8 @@ FROM
 							SELECT
 								DatePart('m', [q].[EntryDate]) as [MonthNumber],
 								[a_Workstation].[Id_WorkstationGroup],
-								[q].[Qty],
-								[a_Defect].[Ok]
+								[a_Defect].[Ok],
+								[q].[Qty]
 							FROM
 								(([tblFtq] [q]
 									INNER JOIN [tblDefect] [a_Defect] ON ([q].[Id_Defect] = [a_Defect].[Id]))

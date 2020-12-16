@@ -2,14 +2,9 @@
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`p`.`c1`
+	Cast(`t`.`MoneyValue` as CHAR(31))
 FROM
-	(
-		SELECT
-			Cast(`t`.`MoneyValue` as CHAR(31)) as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `p`
+	`LinqDataTypes` `t`
 WHERE
-	Char_Length(`p`.`c1`) > 0
+	Char_Length(Cast(`t`.`MoneyValue` as CHAR(31))) > 0
 

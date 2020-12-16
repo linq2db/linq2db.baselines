@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
-DECLARE @p1 NVarChar(4000) -- String
-SET     @p1 = N'bread'
-DECLARE @p2 Int -- Int32
-SET     @p2 = 1048
-DECLARE @p3 Int -- Int32
-SET     @p3 = 3
+DECLARE @p_1 NVarChar(4000) -- String
+SET     @p_1 = N'bread'
+DECLARE @p_2 Int -- Int32
+SET     @p_2 = 1048
+DECLARE @p_3 Int -- Int32
+SET     @p_3 = 3
 
 SELECT
 	[c_1].[CategoryID],
@@ -14,7 +14,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]
-		INNER JOIN FREETEXTTABLE([Categories], ([CategoryName], [Description]), @p1, LANGUAGE @p2, @p3) [t] ON [c_1].[CategoryID] = [t].[KEY]
+		INNER JOIN FREETEXTTABLE([Categories], ([CategoryName], [Description]), @p_1, LANGUAGE @p_2, @p_3) [t] ON [c_1].[CategoryID] = [t].[KEY]
 ORDER BY
 	[t].[RANK] DESC
 

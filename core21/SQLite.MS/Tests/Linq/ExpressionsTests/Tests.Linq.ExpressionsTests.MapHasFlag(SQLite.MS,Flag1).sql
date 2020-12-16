@@ -31,8 +31,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p1  -- Int32
-SET     @p1 = 1
+DECLARE @p_1  -- Int32
+SET     @p_1 = 1
 
 SELECT
 	[t].[Id],
@@ -41,7 +41,7 @@ SELECT
 FROM
 	[MappingTestClass] [t]
 WHERE
-	(Cast([t].[Flags] as INTEGER) & @p1) <> 0
+	([t].[Flags] & @p_1) <> 0
 
 BeforeExecute
 -- SQLite.MS SQLite

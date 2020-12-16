@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @gender_1 String(1) -- AnsiStringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender String(1) -- AnsiStringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	`p`.`FirstName`,
@@ -12,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`Gender` = @gender_1
+	`p`.`Gender` = @gender
 

@@ -150,8 +150,8 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 1
+DECLARE @Id Int -- Int32
+SET     @Id = 1
 
 SELECT
 	[key_data_result].[Id],
@@ -173,7 +173,7 @@ FROM
 		FROM
 			[Blog] [b]
 		WHERE
-			[b].[Id] = @Id_1
+			[b].[Id] = @Id
 	) [key_data_result]
 		INNER JOIN [Post] [detail] ON [key_data_result].[Id] = [detail].[BlogId]
 ORDER BY

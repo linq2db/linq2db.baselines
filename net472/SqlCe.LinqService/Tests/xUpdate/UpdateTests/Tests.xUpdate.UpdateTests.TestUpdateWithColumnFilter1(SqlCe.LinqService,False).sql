@@ -33,8 +33,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 NVarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName NVarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT TOP (@take)
 	[x].[FirstName],
@@ -45,7 +45,7 @@ SELECT TOP (@take)
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlCe
@@ -71,8 +71,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @FirstName_1 NVarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName NVarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT TOP (@take)
 	[x].[FirstName],
@@ -83,7 +83,7 @@ SELECT TOP (@take)
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlCe

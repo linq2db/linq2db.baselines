@@ -3,7 +3,7 @@
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
-SET     @take = 1
+SET     @take = 2
 
 SELECT
 	[t1].[c1]
@@ -16,5 +16,5 @@ FROM
 			[Person] [_]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 

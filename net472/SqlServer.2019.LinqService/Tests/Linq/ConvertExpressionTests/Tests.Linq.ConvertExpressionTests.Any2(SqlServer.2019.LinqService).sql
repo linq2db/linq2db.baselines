@@ -2,7 +2,7 @@
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	CASE WHEN EXISTS(
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
@@ -16,5 +16,5 @@ SELECT
 				WHERE
 					[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] > 1
 			)
-	) THEN 1 ELSE 0 END
+	), 1, 0)
 

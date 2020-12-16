@@ -22,8 +22,8 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @FirstName_1 VarWChar(18) -- String
-SET     @FirstName_1 = 'InsertColumnFilter'
+DECLARE @FirstName VarWChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 
 SELECT TOP 1
 	[x].[FirstName],
@@ -34,7 +34,7 @@ SELECT TOP 1
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- Access AccessOleDb

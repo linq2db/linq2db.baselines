@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			DateAdd(month, (1320 + [p].[ID]) - 1, 0) as [c1]
+			DateAdd(month, [p].[ID] + 1319, 0) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

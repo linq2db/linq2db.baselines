@@ -2,8 +2,8 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
-DECLARE @ps NVarChar(3) -- String
-SET     @ps = '%[%'
+DECLARE @ps NVarChar(4) -- String
+SET     @ps = '%~[%'
 
 SELECT
 	[p].[FirstName],

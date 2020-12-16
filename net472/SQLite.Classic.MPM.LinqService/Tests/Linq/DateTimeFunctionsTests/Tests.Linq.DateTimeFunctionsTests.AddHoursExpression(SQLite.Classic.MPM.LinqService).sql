@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p1  -- Int32
-SET     @p1 = 22
+DECLARE @p_1  -- Int32
+SET     @p_1 = 22
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],@p1 || ' Hour')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],@p_1 || ' Hour')
 FROM
 	[LinqDataTypes] [t]
 

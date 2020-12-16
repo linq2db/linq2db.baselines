@@ -227,7 +227,7 @@ FROM
 			[d].[Type_Code] = 'RE' AND
 			[dcp].[Distributor_Type_Code] = 'RE'
 	) [key_data_result]
-		INNER JOIN [Cities] [detail] ON ([detail].[City_Code] IS NULL AND [key_data_result].[City_Code] IS NULL OR [detail].[City_Code] = [key_data_result].[City_Code])
+		INNER JOIN [Cities] [detail] ON ([detail].[City_Code] = [key_data_result].[City_Code] OR [detail].[City_Code] IS NULL AND [key_data_result].[City_Code] IS NULL)
 
 BeforeExecute
 -- SqlCe

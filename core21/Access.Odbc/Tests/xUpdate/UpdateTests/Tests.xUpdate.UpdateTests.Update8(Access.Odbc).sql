@@ -40,8 +40,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 1001
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
 
 SELECT TOP 2
 	[p].[ParentID],

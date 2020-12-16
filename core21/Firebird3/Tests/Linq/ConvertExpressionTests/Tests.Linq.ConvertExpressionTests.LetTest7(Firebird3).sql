@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 5000
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 5000
 
 SELECT
 	"key_data_result"."ParentID",
@@ -13,7 +13,7 @@ FROM
 			"t1"."ParentID"
 		FROM
 			(
-				SELECT FIRST @p1
+				SELECT FIRST @p_1
 					"t"."ParentID"
 				FROM
 					"Parent" "t"
@@ -32,14 +32,18 @@ SET     @take_1 = 1
 
 SELECT FIRST @take
 	"t"."ParentID",
-	CASE WHEN EXISTS(
-		SELECT
-			*
-		FROM
-			"Child" "c_1"
-		WHERE
-			"c_1"."ParentID" = "t"."ParentID" AND "c_1"."ChildID" > -100
-	) THEN 1 ELSE 0 END,
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" = "t"."ParentID" AND "c_1"."ChildID" > -100
+		)
+			THEN 1
+		ELSE 0
+	END,
 	(
 		SELECT
 			Count(*)

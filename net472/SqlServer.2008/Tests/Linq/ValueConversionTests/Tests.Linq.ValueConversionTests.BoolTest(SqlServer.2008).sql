@@ -45,8 +45,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @BoolValue_1 VarChar -- AnsiString
-SET     @BoolValue_1 = N'Y'
+DECLARE @BoolValue VarChar -- AnsiString
+SET     @BoolValue = N'Y'
 
 SELECT
 	[t].[Id],
@@ -56,7 +56,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue_1
+	[t].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlServer.2008

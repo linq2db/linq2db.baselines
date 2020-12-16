@@ -88,9 +88,9 @@ SELECT
 FROM
 	[Customers] [c_1],
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 WHERE
-	([c_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [c_1].[CustomerID] = [a_Customer].[CustomerID])
+	([c_1].[CustomerID] = [a_Customer].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 ORDER BY
 	[c_1].[ContactName],
 	[o].[OrderDate]

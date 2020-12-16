@@ -37,7 +37,7 @@ USING (	VALUES
 (
 	[Field]
 )
-ON (([Target].[Field] IS NULL AND [Source].[Field] IS NULL OR [Target].[Field] = [Source].[Field]))
+ON (([Target].[Field] = [Source].[Field] OR [Target].[Field] IS NULL AND [Source].[Field] IS NULL))
 
 WHEN NOT MATCHED THEN
 INSERT

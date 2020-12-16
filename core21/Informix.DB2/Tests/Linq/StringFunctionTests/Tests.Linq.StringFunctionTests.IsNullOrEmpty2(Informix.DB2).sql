@@ -2,7 +2,11 @@
 -- Informix.DB2 Informix
 
 SELECT
-	(p.FirstName IS NULL OR Length(p.FirstName) = 0)
+	CASE
+		WHEN (p.FirstName IS NULL OR Length(p.FirstName) = 0)
+			THEN 't'
+		ELSE 'f'
+	END
 FROM
 	Person p
 WHERE

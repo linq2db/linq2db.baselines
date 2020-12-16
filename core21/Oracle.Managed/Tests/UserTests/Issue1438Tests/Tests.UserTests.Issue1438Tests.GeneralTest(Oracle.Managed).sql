@@ -43,8 +43,8 @@ RETURNING
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @id_1 Int32
-SET     @id_1 = 1
+DECLARE @id Int32
+SET     @id = 1
 DECLARE @take Int32
 SET     @take = 2
 
@@ -54,7 +54,7 @@ SELECT
 FROM
 	"Issue1438" t1
 WHERE
-	t1."Id" = :id_1
+	t1."Id" = :id
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute

@@ -24,15 +24,15 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Id_1 Integer -- Int32
-SET     @Id_1 = 5
+DECLARE @Id Integer -- Int32
+SET     @Id = 5
 
 SELECT TOP 2
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]
 WHERE
-	[_].[ID] = @Id_1
+	[_].[ID] = @Id
 
 BeforeExecute
 -- Access AccessOleDb

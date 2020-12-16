@@ -492,10 +492,10 @@ GROUP BY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value2_1 NVarChar(20) -- String
-SET     @Value2_1 = '[{"Value":"Value1"}]'
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 1
+DECLARE @Value2 NVarChar(20) -- String
+SET     @Value2 = '[{"Value":"Value1"}]'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
 
 SELECT
 	[t].[Id],

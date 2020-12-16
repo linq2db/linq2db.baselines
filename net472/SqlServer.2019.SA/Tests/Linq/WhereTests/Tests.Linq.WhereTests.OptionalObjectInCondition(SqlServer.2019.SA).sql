@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
-DECLARE @FirstName_1 NVarChar(4000) -- String
-SET     @FirstName_1 = N'1'
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'1'
 
 SELECT
 	[r].[FirstName],
@@ -12,7 +12,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @FirstName_1
+	[r].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -30,8 +30,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
-DECLARE @FirstName_1 NVarChar(4000) -- String
-SET     @FirstName_1 = N'1'
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'1'
 
 SELECT
 	[r].[FirstName],
@@ -42,5 +42,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @FirstName_1
+	[r].[FirstName] = @FirstName
 

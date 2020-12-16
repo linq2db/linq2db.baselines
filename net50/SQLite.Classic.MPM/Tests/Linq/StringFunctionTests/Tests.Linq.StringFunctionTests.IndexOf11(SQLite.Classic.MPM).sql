@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p1  -- Boolean
-SET     @p1 = 0
 
 SELECT
 	[p].[FirstName],
@@ -12,9 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN @p1 = 1 THEN 0
-		ELSE CharIndex('oh', [p].[FirstName]) - 1
-	END = 1 AND
-	[p].[PersonID] = 1
+	CharIndex('oh', [p].[FirstName]) = 2 AND [p].[PersonID] = 1
 

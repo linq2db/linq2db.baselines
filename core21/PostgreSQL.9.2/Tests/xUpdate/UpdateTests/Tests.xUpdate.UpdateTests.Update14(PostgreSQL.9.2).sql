@@ -36,7 +36,7 @@ UPDATE
 SET
 	"LastName" = Cast((Length(:name) + :idx) as VarChar(11))
 WHERE
-	"Person"."FirstName" LIKE 'Update14%'
+	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
@@ -46,7 +46,7 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Update14%'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
@@ -54,5 +54,5 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'Update14%'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 

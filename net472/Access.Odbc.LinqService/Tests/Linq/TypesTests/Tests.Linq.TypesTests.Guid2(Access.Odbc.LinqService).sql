@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @GuidValue_1 UniqueIdentifier -- Guid
-SET     @GuidValue_1 = '{d2f970c0-35ac-4987-9cd5-5badb1757436}'
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{d2f970c0-35ac-4987-9cd5-5badb1757436}'
 
 SELECT TOP 2
 	[p].[ID],
@@ -19,8 +19,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @GuidValue_1 UniqueIdentifier -- Guid
-SET     @GuidValue_1 = '{40932fdb-1543-4e4a-ac2c-ca371604fb4b}'
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '{40932fdb-1543-4e4a-ac2c-ca371604fb4b}'
 
 SELECT TOP 2
 	[p].[ID],

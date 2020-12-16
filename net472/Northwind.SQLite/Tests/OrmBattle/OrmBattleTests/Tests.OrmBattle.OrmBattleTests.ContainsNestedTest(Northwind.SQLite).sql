@@ -96,16 +96,20 @@ SELECT
 	[c_1].[ContactName],
 	[c_1].[CompanyName],
 	[c_1].[CustomerID],
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [o].[CustomerID] = [a_Customer].[CustomerID])
-		WHERE
-			DateTime([o].[OrderDate]) > DateTime(@OrderDate) AND
-			([a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL OR [a_Customer].[CustomerID] = [c_1].[CustomerID])
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[Orders] [o]
+					INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+			WHERE
+				DateTime([o].[OrderDate]) > DateTime(@OrderDate) AND
+				([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
+		)
+			THEN 1
+		ELSE 0
+	END
 FROM
 	[Customers] [c_1]
 

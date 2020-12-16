@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @id_1 Int -- Int32
-SET     @id_1 = 2
+DECLARE @id Int -- Int32
+SET     @id = 2
 
 SELECT
 	[c_1].[ChildID],

@@ -68,17 +68,21 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	EXISTS(
-		SELECT
-			[t1].[Value]
-		FROM
-			[TakeSkipClass] [t1]
-		GROUP BY
-			[t1].[Value]
-		HAVING
-			Count(*) > 1
-		LIMIT @take
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				[t1].[Value]
+			FROM
+				[TakeSkipClass] [t1]
+			GROUP BY
+				[t1].[Value]
+			HAVING
+				Count(*) > 1
+			LIMIT @take
+		)
+			THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite

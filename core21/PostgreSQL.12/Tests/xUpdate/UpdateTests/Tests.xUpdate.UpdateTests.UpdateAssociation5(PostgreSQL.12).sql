@@ -4,14 +4,18 @@
 UPDATE
 	"LinqDataTypes"
 SET
-	"BoolValue" = (NOT EXISTS(
-		SELECT
-			*
-		FROM
-			"Parent" x
-		WHERE
-			t1."ID" = x."ParentID" AND NOT (x."Value1" IS NOT NULL AND x."Value1" = 1)
-	))
+	"BoolValue" = CASE
+		WHEN (NOT EXISTS(
+			SELECT
+				*
+			FROM
+				"Parent" x
+			WHERE
+				t1."ID" = x."ParentID" AND (x."Value1" <> 1 OR x."Value1" IS NULL)
+		))
+			THEN True
+		ELSE False
+	END
 FROM
 	(
 		SELECT DISTINCT

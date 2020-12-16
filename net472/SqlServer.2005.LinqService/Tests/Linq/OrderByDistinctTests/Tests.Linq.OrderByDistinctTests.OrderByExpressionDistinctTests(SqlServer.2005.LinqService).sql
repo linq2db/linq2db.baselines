@@ -499,7 +499,7 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2005
@@ -521,7 +521,7 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2005

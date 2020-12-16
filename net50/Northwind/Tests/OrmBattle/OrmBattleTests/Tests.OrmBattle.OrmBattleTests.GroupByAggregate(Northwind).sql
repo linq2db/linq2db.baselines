@@ -93,7 +93,7 @@ FROM
 				FROM
 					[Orders] [o]
 				WHERE
-					([selectParam].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL OR [selectParam].[CustomerID] = [o].[CustomerID])
+					([selectParam].[CustomerID] = [o].[CustomerID] OR [selectParam].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
 			) >= 80, 1, 0) as [Key_1]
 		FROM
 			[Customers] [selectParam]
@@ -103,8 +103,8 @@ GROUP BY
 
 BeforeExecute
 -- Northwind SqlServer.2017
-DECLARE @p1 Bit -- Boolean
-SET     @p1 = 0
+DECLARE @p_1 Bit -- Boolean
+SET     @p_1 = 0
 
 SELECT
 	[underscore].[Fax],
@@ -127,7 +127,7 @@ FROM
 				FROM
 					[Orders] [o]
 				WHERE
-					([selectParam].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL OR [selectParam].[CustomerID] = [o].[CustomerID])
+					([selectParam].[CustomerID] = [o].[CustomerID] OR [selectParam].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
 			) >= 80, 1, 0) as [Key_1],
 			[selectParam].[Fax],
 			[selectParam].[Phone],
@@ -144,5 +144,5 @@ FROM
 			[Customers] [selectParam]
 	) [underscore]
 WHERE
-	[underscore].[Key_1] = @p1
+	[underscore].[Key_1] = @p_1
 

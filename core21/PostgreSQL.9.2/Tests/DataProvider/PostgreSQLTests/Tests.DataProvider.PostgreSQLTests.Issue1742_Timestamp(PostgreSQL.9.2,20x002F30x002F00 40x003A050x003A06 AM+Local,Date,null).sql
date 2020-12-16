@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @p1 Timestamp -- DateTime
+DECLARE @p1 Date
 SET     @p1 = '2000-02-03 04:05:06.007'::timestamp
 DECLARE @take Integer -- Int32
 SET     @take = 2

@@ -99,6 +99,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	[c_1].[ContactName] LIKE '%and%'
+	[c_1].[ContactName] LIKE '%and%' ESCAPE '~'
 LIMIT @take
 

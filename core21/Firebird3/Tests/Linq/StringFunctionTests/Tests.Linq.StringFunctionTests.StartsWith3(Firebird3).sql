@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @str VarChar(7) -- String
-SET     @str = 'John123'
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	@str LIKE (Replace(Replace(Replace("p"."FirstName", '~', '~~'), '%', '~%'), '_', '~_') || '%') ESCAPE '~'
+	'John123' STARTING WITH "p"."FirstName"
 

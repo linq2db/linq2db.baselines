@@ -103,6 +103,6 @@ FROM
 			FROM
 				[Orders] [t1]
 			WHERE
-				([c_1].[CustomerID] IS NULL AND [t1].[CustomerID] IS NULL OR [c_1].[CustomerID] = [t1].[CustomerID])
+				([c_1].[CustomerID] = [t1].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [t1].[CustomerID] IS NULL)
 		) [t2]
 

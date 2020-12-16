@@ -17,5 +17,6 @@ HAVING
 			[EmployeeTerritories] [t2]
 		WHERE
 			[a_Employee].[EmployeeID] = [t2].[EmployeeID]
-	) > 1 AND Count(*) > 2
+	) > 1 AND
+	Count(*) > 2
 

@@ -10,8 +10,8 @@ GROUP BY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 1
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1
 
 SELECT
 	[keyParam].[ParentID],
@@ -23,8 +23,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 2
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 2
 
 SELECT
 	[keyParam].[ParentID],
@@ -36,8 +36,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 3
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 3
 
 SELECT
 	[keyParam].[ParentID],
@@ -49,8 +49,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 4
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 4
 
 SELECT
 	[keyParam].[ParentID],
@@ -62,8 +62,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 6
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 6
 
 SELECT
 	[keyParam].[ParentID],
@@ -75,8 +75,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 7
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 7
 
 SELECT
 	[keyParam].[ParentID],

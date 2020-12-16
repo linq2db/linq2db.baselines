@@ -36,6 +36,8 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500
 DECLARE @id Int -- Int32
 SET     @id = 100500
+DECLARE @id_1 Int -- Int32
+SET     @id_1 = 100500
 
 UPDATE
 	[_2]
@@ -58,7 +60,7 @@ FROM
 			[Parent] [_1]
 	) [_2]
 WHERE
-	[_2].[ParentID] = @id AND [_2].[ex] > 0
+	[_2].[ParentID] = @id_1 AND [_2].[ex] > 0
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

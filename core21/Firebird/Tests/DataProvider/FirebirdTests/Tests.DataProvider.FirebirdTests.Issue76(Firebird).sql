@@ -21,14 +21,18 @@ FROM
 			NULL as "ParentId",
 			"f"."Id",
 			"f"."Caption",
-			CASE WHEN EXISTS(
-				SELECT
-					*
-				FROM
-					"Issue76Entity" "f2"
-				WHERE
-					"f2"."ParentId" = "f"."Id"
-			) THEN 1 ELSE 0 END as "c1"
+			CASE
+				WHEN EXISTS(
+					SELECT
+						*
+					FROM
+						"Issue76Entity" "f2"
+					WHERE
+						"f2"."ParentId" = "f"."Id"
+				)
+					THEN 1
+				ELSE 0
+			END as "c1"
 		FROM
 			"Issue76Entity" "f"
 	) "folder"

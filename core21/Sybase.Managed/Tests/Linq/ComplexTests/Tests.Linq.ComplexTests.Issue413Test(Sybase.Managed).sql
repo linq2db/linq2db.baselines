@@ -1,42 +1,33 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'T1') IS NULL)
-	EXECUTE('
-		CREATE TABLE [T1]
-		(
-			[InstrumentId]         Int           NOT NULL,
-			[InstrumentCode]       NVarChar(255)     NULL,
-			[CreateDate]           DateTime      NOT NULL,
-			[SourceInstrumentCode] NVarChar(255)     NULL,
+CREATE TABLE [T1]
+(
+	[InstrumentId]         Int           NOT NULL,
+	[InstrumentCode]       NVarChar(255)     NULL,
+	[CreateDate]           DateTime      NOT NULL,
+	[SourceInstrumentCode] NVarChar(255)     NULL,
 
-			CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
-		)
-	')
+	CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
+)
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'T2') IS NULL)
-	EXECUTE('
-		CREATE TABLE [T2]
-		(
-			[InstrumentId] Int NOT NULL,
-			[IndexId]      Int NOT NULL
-		)
-	')
+CREATE TABLE [T2]
+(
+	[InstrumentId] Int NOT NULL,
+	[IndexId]      Int NOT NULL
+)
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'T3') IS NULL)
-	EXECUTE('
-		CREATE TABLE [T3]
-		(
-			[InstrumentId] Int NOT NULL,
-			[IndexId]      Int NOT NULL
-		)
-	')
+CREATE TABLE [T3]
+(
+	[InstrumentId] Int NOT NULL,
+	[IndexId]      Int NOT NULL
+)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -182,8 +173,8 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @cond UniVarChar(4) -- String
-SET     @cond = 'aaa%'
+DECLARE @cond_1 UniVarChar(4) -- String
+SET     @cond_1 = 'aaa%'
 DECLARE @uptoDate DateTime
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
@@ -195,7 +186,7 @@ FROM
 		INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 		INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 WHERE
-	[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond ESCAPE '~' AND
+	[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond_1 ESCAPE '~' AND
 	[_].[CreateDate] <= @uptoDate
 ORDER BY
 	[ins].[SourceInstrumentCode]
@@ -203,18 +194,15 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'T3') IS NOT NULL)
-	DROP TABLE [T3]
+DROP TABLE [T3]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'T2') IS NOT NULL)
-	DROP TABLE [T2]
+DROP TABLE [T2]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'T1') IS NOT NULL)
-	DROP TABLE [T1]
+DROP TABLE [T1]
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @GuidValue_1 VarBinary(16) -- Binary
-SET     @GuidValue_1 = BX'C070F9D2AC3587499CD55BADB1757436'
+DECLARE @GuidValue VarBinary(16) -- Binary
+SET     @GuidValue = BX'C070F9D2AC3587499CD55BADB1757436'
 
 SELECT
 	"p".ID,
@@ -15,13 +15,13 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	"p"."GuidValue" = @GuidValue_1
+	"p"."GuidValue" = @GuidValue
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @GuidValue_1 VarBinary(16) -- Binary
-SET     @GuidValue_1 = BX'DB2F934043154A4EAC2CCA371604FB4B'
+DECLARE @GuidValue VarBinary(16) -- Binary
+SET     @GuidValue = BX'DB2F934043154A4EAC2CCA371604FB4B'
 
 SELECT
 	"p".ID,
@@ -35,6 +35,6 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	"p"."GuidValue" = @GuidValue_1
+	"p"."GuidValue" = @GuidValue
 FETCH FIRST 2 ROWS ONLY
 

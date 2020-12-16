@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird
-DECLARE @str VarChar(6) -- String
-SET     @str = '%o~%h%'
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" NOT LIKE @str ESCAPE '~' AND "p"."PersonID" = 1
+	("p"."FirstName" NOT CONTAINING 'o%h') AND "p"."PersonID" = 1
 

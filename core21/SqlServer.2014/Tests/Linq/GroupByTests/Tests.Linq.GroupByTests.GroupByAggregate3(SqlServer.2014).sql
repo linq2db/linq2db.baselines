@@ -22,8 +22,8 @@ GROUP BY
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @p1 Bit -- Boolean
-SET     @p1 = 0
+DECLARE @p_1 Bit -- Boolean
+SET     @p_1 = 0
 
 SELECT
 	[underscore].[ParentID],
@@ -45,5 +45,5 @@ FROM
 			[Parent] [selectParam]
 	) [underscore]
 WHERE
-	[underscore].[Key_1] = @p1
+	[underscore].[Key_1] = @p_1
 

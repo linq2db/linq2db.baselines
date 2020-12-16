@@ -91,8 +91,8 @@ FROM
 				Count(*) as [cnt]
 			FROM
 				[Orders] [o]
-					INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL OR [o].[CustomerID] = [a_Customer].[CustomerID])
+					INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 			WHERE
-				([a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL OR [a_Customer].[CustomerID] = [c_1].[CustomerID])
+				([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
 		) [t1]
 

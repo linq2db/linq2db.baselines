@@ -2,8 +2,8 @@
 -- Access.Odbc AccessODBC
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
-DECLARE @ps NVarChar(5) -- String
-SET     @ps = '%[[]%'
+DECLARE @ps_1 NVarChar(5) -- String
+SET     @ps_1 = '%[[]%'
 
 SELECT
 	[p].[FirstName],

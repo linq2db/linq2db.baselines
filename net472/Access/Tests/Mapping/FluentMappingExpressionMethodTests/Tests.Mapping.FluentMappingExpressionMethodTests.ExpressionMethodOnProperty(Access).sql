@@ -375,7 +375,7 @@ SELECT
 FROM
 	[InstanceClass] [t]
 WHERE
-	(CStr([t].[Id]) + CStr([t].[Value])) = CStr([t].[Id]) + CStr([t].[Value])
+	CStr([t].[Id]) + CStr([t].[Value]) = CStr([t].[Id]) + CStr([t].[Value])
 
 BeforeExecute
 -- Access AccessOleDb

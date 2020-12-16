@@ -47,8 +47,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = 'Y'
-DECLARE @BoolValue_2 VarChar -- AnsiString
-SET     @BoolValue_2 = 'Y'
 
 SELECT
 	[t1].[Enum]
@@ -59,7 +57,7 @@ FROM
 				[t2].[BoolValue]
 			FROM
 				[ValueConversion] [t2]
-		) [t2_1] ON [t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue_2
+		) [t2_1] ON [t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

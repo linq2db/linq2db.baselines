@@ -51,8 +51,8 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @FirstName_1 VarWChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName VarWChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT TOP 1
 	[x].[FirstName],
@@ -63,7 +63,7 @@ SELECT TOP 1
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- Access AccessOleDb
@@ -87,8 +87,8 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @FirstName_1 VarWChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName VarWChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 
 SELECT TOP 1
 	[x].[FirstName],
@@ -99,7 +99,7 @@ SELECT TOP 1
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName_1
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- Access AccessOleDb

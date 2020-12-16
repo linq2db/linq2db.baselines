@@ -86,22 +86,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_2 Char(1) -- StringFixedLength
-SET     @BoolValue_2 = 'N'
-
-SELECT FIRST 1
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
-FROM
-	TypeConvertTable t1
-WHERE
-	t1.BoolValue = @BoolValue_2
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'Y'
+SET     @BoolValue_1 = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -114,8 +100,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_2 Char(1) -- StringFixedLength
-SET     @BoolValue_2 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'Y'
 
 SELECT FIRST 1
 	t1.Name,
@@ -124,12 +110,12 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue_2
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'Y'
+SET     @BoolValue_1 = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -142,8 +128,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_2 Char(1) -- StringFixedLength
-SET     @BoolValue_2 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'Y'
 
 SELECT FIRST 1
 	t1.Name,
@@ -152,12 +138,12 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue_2
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'Y'
+SET     @BoolValue_1 = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -170,8 +156,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_2 Char(1) -- StringFixedLength
-SET     @BoolValue_2 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'Y'
 
 SELECT FIRST 1
 	t1.Name,
@@ -180,12 +166,12 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue_2
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'Y'
+SET     @BoolValue_1 = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -198,8 +184,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_2 Char(1) -- StringFixedLength
-SET     @BoolValue_2 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'Y'
 
 SELECT FIRST 1
 	t1.Name,
@@ -208,12 +194,12 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue_2
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'Y'
+SET     @BoolValue_1 = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -226,8 +212,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @GuidValue_1 VarChar(36) -- String
-SET     @GuidValue_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'Y'
 
 SELECT FIRST 1
 	t1.Name,
@@ -236,12 +222,12 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = @GuidValue_1
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @GuidValue_1 VarChar(36) -- String
-SET     @GuidValue_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @GuidValue VarChar(36) -- String
+SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT FIRST 1
 	t1.Name,
@@ -250,7 +236,21 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = @GuidValue_1
+	t1.GuidValue = @GuidValue
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @GuidValue VarChar(36) -- String
+SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+
+SELECT FIRST 1
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
+FROM
+	TypeConvertTable t1
+WHERE
+	t1.GuidValue = @GuidValue
 
 BeforeExecute
 -- Informix.DB2 Informix

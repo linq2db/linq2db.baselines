@@ -81,8 +81,6 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @p1  -- Boolean
-SET     @p1 = 0
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -101,9 +99,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	CASE
-		WHEN @p1 = 1 THEN 0
-		ELSE CharIndex('tt', [c_1].[City]) - 1
-	END = 3
+	CharIndex('tt', [c_1].[City]) - 1 = 3
 LIMIT @take
 

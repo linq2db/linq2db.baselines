@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @id1_1 Int -- Int32
-SET     @id1_1 = 3
+DECLARE @id2 Int -- Int32
+SET     @id2 = 3
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 3
 

@@ -47,8 +47,8 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @Array_2 Blob -- Object
-SET     @Array_2 = HEXTORAW('010203')
+DECLARE @Array_1 Blob -- Object
+SET     @Array_1 = HEXTORAW('010203')
 DECLARE @take Int32
 SET     @take = 2
 
@@ -59,13 +59,13 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = :Array_2
+	t1."Array" = :Array_1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @Binary_2 Blob -- Object
-SET     @Binary_2 = HEXTORAW('0405')
+DECLARE @Binary_1 Blob -- Object
+SET     @Binary_1 = HEXTORAW('0405')
 DECLARE @take Int32
 SET     @take = 2
 
@@ -76,7 +76,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = :Binary_2
+	t1."Binary" = :Binary_1
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute

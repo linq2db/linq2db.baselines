@@ -24,15 +24,15 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Id_1 Integer(4) -- Int32
-SET     @Id_1 = 5
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 5
 
 SELECT FIRST 2
 	t1.ID
 FROM
 	Issue1316Tests t1
 WHERE
-	t1.ID = @Id_1
+	t1.ID = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -4,7 +4,7 @@
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" LIKE 'Insert14%'
+	"t1"."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -38,7 +38,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" LIKE 'Insert14%'
+	"p"."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -46,5 +46,5 @@ BeforeExecute
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" LIKE 'Insert14%'
+	"t1"."FirstName" LIKE 'Insert14%' ESCAPE '~'
 

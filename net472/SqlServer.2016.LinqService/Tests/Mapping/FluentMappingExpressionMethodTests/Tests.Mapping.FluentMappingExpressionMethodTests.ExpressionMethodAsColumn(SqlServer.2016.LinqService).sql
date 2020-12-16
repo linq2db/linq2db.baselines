@@ -372,7 +372,8 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Value]
+	[t1].[Value],
+	N'M' + Convert(NVarChar(11), [t1].[Id])
 FROM
 	[InstanceClass] [t1]
 

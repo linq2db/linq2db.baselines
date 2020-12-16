@@ -100,7 +100,7 @@ SELECT
 	[detail].[OrderID]
 FROM
 	[Customers] [i]
-		INNER JOIN [Orders] [detail] ON ([i].[CustomerID] IS NULL AND [detail].[CustomerID] IS NULL OR [i].[CustomerID] = [detail].[CustomerID])
+		INNER JOIN [Orders] [detail] ON ([i].[CustomerID] = [detail].[CustomerID] OR [i].[CustomerID] IS NULL AND [detail].[CustomerID] IS NULL)
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite

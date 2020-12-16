@@ -20,14 +20,14 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	EXISTS(
+	Iif(EXISTS(
 		SELECT
 			*
 		FROM
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ChildID] > -100
-	),
+	), True, False),
 	[t1].[Count_1],
 	(
 		SELECT TOP 1

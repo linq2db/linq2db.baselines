@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 Smallint -- Int16
-SET     @p1 = 1234
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 1234
 
 INSERT INTO "AllTypes"
 (
@@ -41,6 +41,6 @@ FROM
 			"AllTypes" t1
 				INNER JOIN "AllTypes" c_1 ON t1."smallintDataType" = c_1."intDataType"
 		WHERE
-			t1."smallintDataType" = :p1
+			t1."smallintDataType" = :p_1
 	) t2
 

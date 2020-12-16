@@ -21,8 +21,6 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @pattern VarChar(3) -- String
-SET     @pattern = '%1%'
 
 SELECT FIRST 10
 	t1.FirstName
@@ -40,6 +38,6 @@ FROM
 		FROM
 			Person p_1
 		WHERE
-			To_Char(p_1.PersonID) LIKE @pattern ESCAPE '~'
+			To_Char(p_1.PersonID) LIKE '%1%' ESCAPE '~'
 	) t1
 

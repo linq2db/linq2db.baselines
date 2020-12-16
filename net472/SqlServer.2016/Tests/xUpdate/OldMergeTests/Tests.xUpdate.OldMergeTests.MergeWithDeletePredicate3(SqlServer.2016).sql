@@ -11,10 +11,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 2
 DECLARE @PersonID_1 Int -- Int32
 SET     @PersonID_1 = 2
-DECLARE @PersonID_2 Int -- Int32
-SET     @PersonID_2 = 2
 
 MERGE INTO [Person] [Target]
 USING (
@@ -28,7 +28,7 @@ USING (
 		[Person] [t]
 			LEFT JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
 	WHERE
-		[a_Patient].[PersonID] = @PersonID_1
+		[a_Patient].[PersonID] = @PersonID
 ) [Source]
 (
 	[ID],
@@ -68,7 +68,7 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	FROM
 		[Patient] [a_Patient_1]
 	WHERE
-		[a_Patient_1].[PersonID] = @PersonID_2 AND [Target].[PersonID] = [a_Patient_1].[PersonID]
+		[a_Patient_1].[PersonID] = @PersonID_1 AND [Target].[PersonID] = [a_Patient_1].[PersonID]
 ) THEN DELETE
 ;
 

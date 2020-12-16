@@ -19,9 +19,15 @@ WHERE
 	t."Value" = 1
 UNION
 SELECT
-	CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY,
-	CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY
-FROM SYS.DUAL
+	t1."Value1",
+	t1."Value2"
+FROM
+	(
+		SELECT
+			CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
+			CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
+		FROM SYS.DUAL
+	) t1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -39,9 +45,15 @@ FROM
 			t."Value" = 1
 		UNION
 		SELECT
-			CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
-			CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
-		FROM SYS.DUAL
+			t1."Value1",
+			t1."Value2"
+		FROM
+			(
+				SELECT
+					CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
+					CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
+				FROM SYS.DUAL
+			) t1
 	) v
 
 BeforeExecute

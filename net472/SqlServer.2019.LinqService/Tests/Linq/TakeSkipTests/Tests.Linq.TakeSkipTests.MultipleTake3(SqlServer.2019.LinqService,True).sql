@@ -120,10 +120,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @take_2 Int -- Int32
+SET     @take_2 = 1
 
-SELECT TOP (@take)
+SELECT TOP (@take_2)
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

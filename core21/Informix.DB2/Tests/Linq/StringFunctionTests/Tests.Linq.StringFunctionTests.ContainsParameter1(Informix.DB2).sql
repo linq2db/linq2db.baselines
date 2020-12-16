@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @str VarChar(4) -- String
-SET     @str = '%oh%'
 
 SELECT
 	p.FirstName,
@@ -12,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.FirstName LIKE @str ESCAPE '~' AND p.PersonID = 1
+	p.FirstName LIKE '%oh%' ESCAPE '~' AND p.PersonID = 1
 

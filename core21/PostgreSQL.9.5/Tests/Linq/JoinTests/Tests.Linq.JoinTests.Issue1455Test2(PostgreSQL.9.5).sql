@@ -57,12 +57,12 @@ CREATE TABLE "Flat"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 Text(3) -- String
-SET     @p1 = '%C%'
-DECLARE @p2 Text(3) -- String
-SET     @p2 = '%C%'
-DECLARE @p3 Text(3) -- String
-SET     @p3 = '%C%'
+DECLARE @p_1 Text(3) -- String
+SET     @p_1 = '%C%'
+DECLARE @p_2 Text(3) -- String
+SET     @p_2 = '%C%'
+DECLARE @p_3 Text(3) -- String
+SET     @p_3 = '%C%'
 
 SELECT
 	al_1.alert,
@@ -76,7 +76,7 @@ FROM
 			al."CreationDate" as alert_2
 		FROM
 			"Alert" al
-				LEFT JOIN "AuditAlert" au1 ON (au1."AlertKey" IS NULL AND al."AlertKey" IS NULL OR au1."AlertKey" = al."AlertKey") AND (au1."AlertCode" IS NULL AND au1."AlertCode" IS NULL OR au1."AlertCode" = au1."AlertCode")
+				LEFT JOIN "AuditAlert" au1 ON (au1."AlertKey" = al."AlertKey" OR au1."AlertKey" IS NULL AND al."AlertKey" IS NULL) AND (au1."AlertCode" = au1."AlertCode" OR au1."AlertCode" IS NULL AND au1."AlertCode" IS NULL)
 		GROUP BY
 			al."AlertKey",
 			al."AlertCode",
@@ -85,7 +85,7 @@ FROM
 		LEFT JOIN "Trade" trade1 ON al_1.alert = Cast(trade1."DealId" as VarChar(11))
 		LEFT JOIN "Nomin" nomin1 ON al_1.alert = Cast(nomin1."CargoId" as VarChar(11))
 WHERE
-	((nomin1."DeliveryCounterParty" LIKE :p1 OR trade1."CounterParty" LIKE :p2) OR al_1.alert_1 LIKE :p3)
+	((nomin1."DeliveryCounterParty" LIKE :p_1 OR trade1."CounterParty" LIKE :p_2) OR al_1.alert_1 LIKE :p_3)
 GROUP BY
 	al_1.alert,
 	al_1.alert_1,

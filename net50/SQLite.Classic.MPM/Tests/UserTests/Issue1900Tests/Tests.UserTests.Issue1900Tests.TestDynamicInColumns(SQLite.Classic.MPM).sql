@@ -26,7 +26,7 @@ BeforeExecute
 SELECT
 	[p].[AGE],
 	[p].[NAME],
-	[p].[OPTIONS]
+	[p].[OPTIONS] & 15
 FROM
 	[PERSON_1900] [p]
 WHERE

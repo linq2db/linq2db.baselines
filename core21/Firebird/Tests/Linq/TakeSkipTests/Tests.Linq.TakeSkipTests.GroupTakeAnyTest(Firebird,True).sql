@@ -24,16 +24,20 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	CASE WHEN EXISTS(
-		SELECT FIRST @take
-			"t1"."Value"
-		FROM
-			"TakeSkipClass" "t1"
-		GROUP BY
-			"t1"."Value"
-		HAVING
-			Count(*) > 1
-	) THEN 1 ELSE 0 END
+	CASE
+		WHEN EXISTS(
+			SELECT FIRST @take
+				"t1"."Value"
+			FROM
+				"TakeSkipClass" "t1"
+			GROUP BY
+				"t1"."Value"
+			HAVING
+				Count(*) > 1
+		)
+			THEN 1
+		ELSE 0
+	END
 FROM rdb$database
 
 BeforeExecute

@@ -76,7 +76,7 @@ FROM
 				FROM
 					[Orders] [o]
 				WHERE
-					([selectParam].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL OR [selectParam].[CustomerID] = [o].[CustomerID])
+					([selectParam].[CustomerID] = [o].[CustomerID] OR [selectParam].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
 			) >= 80, 1, 0) as [Key_1]
 		FROM
 			[Customers] [selectParam]

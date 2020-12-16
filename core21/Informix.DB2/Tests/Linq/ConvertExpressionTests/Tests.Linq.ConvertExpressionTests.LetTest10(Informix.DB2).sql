@@ -2,11 +2,15 @@
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	EXISTS(
-		SELECT
-			*
-		FROM
-			Parent p
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				Parent p
+		)
+			THEN 't'
+		ELSE 'f'
+	END
 FROM SYSTABLES
 
