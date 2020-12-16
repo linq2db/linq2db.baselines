@@ -25,12 +25,12 @@ SELECT 'Value9' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take_2 Integer -- Int32
-SET     @take_2 = 2
-DECLARE @skip_2 Integer -- Int32
-SET     @skip_2 = 3
+DECLARE @take_3 Integer -- Int32
+SET     @take_3 = 2
+DECLARE @skip_3 Integer -- Int32
+SET     @skip_3 = 3
 
-SELECT FIRST @take_2 SKIP @skip_2
+SELECT FIRST @take_3 SKIP @skip_3
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
