@@ -10,12 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN Lower(Substring([p].[FirstName], 2, 2)) > N'oh'
-			THEN 1
-		WHEN Lower(Substring([p].[FirstName], 2, 2)) = N'oh'
-			THEN 0
-		ELSE -1
-	END = 0 AND
+	Lower(Substring([p].[FirstName], 2, 2)) = N'oh' AND
 	[p].[PersonID] = 1
 
