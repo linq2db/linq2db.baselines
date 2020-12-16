@@ -10,8 +10,8 @@ GROUP BY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(4) -- String
-SET     @FirstName_1 = 'Jane'
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'Jane'
 
 SELECT
 	[keyParam].[FirstName],
@@ -26,8 +26,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(4) -- String
-SET     @FirstName_1 = 'John'
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
 
 SELECT
 	[keyParam].[FirstName],
@@ -42,8 +42,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(6) -- String
-SET     @FirstName_1 = 'Jürgen'
+DECLARE @FirstName NVarChar(6) -- String
+SET     @FirstName = 'Jürgen'
 
 SELECT
 	[keyParam].[FirstName],
@@ -58,8 +58,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(6) -- String
-SET     @FirstName_1 = 'Tester'
+DECLARE @FirstName NVarChar(6) -- String
+SET     @FirstName = 'Tester'
 
 SELECT
 	[keyParam].[FirstName],

@@ -24,10 +24,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @firstName_1 NVarChar(6) -- String
-SET     @firstName_1 = 'Tester'
-DECLARE @lastName_1 NVarChar(9) -- String
-SET     @lastName_1 = 'Testerson'
+DECLARE @firstName NVarChar(6) -- String
+SET     @firstName = 'Tester'
+DECLARE @lastName NVarChar(9) -- String
+SET     @lastName = 'Testerson'
 
 SELECT
 	[a_Person].[PersonID],

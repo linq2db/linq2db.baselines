@@ -30,8 +30,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @id_1 Int -- Int32
-SET     @id_1 = 1
+DECLARE @id Int -- Int32
+SET     @id = 1
 
 SELECT TOP 2
 	[_].[Id],

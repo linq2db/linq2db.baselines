@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p1 Int -- Int32
-SET     @p1 = 0
-DECLARE @Value1_1 Int -- Int32
-SET     @Value1_1 = 3
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 0
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 3
 
 SELECT DISTINCT
 	Iif([p].[Value1] IS NULL, [p].[ParentID] + ?, [p].[Value1]),
