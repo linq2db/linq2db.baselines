@@ -16,6 +16,7 @@ SELECT
 	`i`.`MiddleName`,
 	`i`.`Gender`,
 	Concat(`i`.`LastName`, ', ', `i`.`FirstName`),
+	Concat(`i`.`LastName`, ', ', `i`.`FirstName`),
 	(
 		SELECT
 			Count(*)
