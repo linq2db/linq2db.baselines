@@ -81,10 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @p1  -- Boolean
-SET     @p1 = 0
-DECLARE @Length_1  -- Int32
-SET     @Length_1 = 1
+DECLARE @Length_2  -- Int32
+SET     @Length_2 = 4
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -104,10 +102,9 @@ FROM
 	[Customers] [c_1]
 WHERE
 	CASE
-		WHEN @p1 = 1 THEN 1
 		WHEN CharIndex('t', LeftStr([c_1].[City], 4), 2) = 0
 			THEN -1
-		ELSE (4 - CharIndex('t', Reverse(Substr([c_1].[City], 2, 3)))) - @Length_1 + 1
+		ELSE @Length_2 - CharIndex('t', Reverse(Substr([c_1].[City], 2, 3)))
 	END = 3
 LIMIT @take
 
