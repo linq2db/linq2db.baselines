@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Iif(LCase([p].[FirstName]) > 'joh', 1, Iif(LCase([p].[FirstName]) = 'joh', 0, -1)) > 0 AND
-	[p].[PersonID] = 1
+	LCase([p].[FirstName]) > 'joh' AND [p].[PersonID] = 1
 
