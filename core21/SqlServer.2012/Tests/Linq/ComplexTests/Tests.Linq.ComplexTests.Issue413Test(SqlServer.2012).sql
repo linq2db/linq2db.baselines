@@ -1,36 +1,33 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[T1]', N'U') IS NULL)
-	CREATE TABLE [T1]
-	(
-		[InstrumentId]         Int            NOT NULL,
-		[InstrumentCode]       NVarChar(4000)     NULL,
-		[CreateDate]           DateTime       NOT NULL,
-		[SourceInstrumentCode] NVarChar(4000)     NULL,
+CREATE TABLE [T1]
+(
+	[InstrumentId]         Int            NOT NULL,
+	[InstrumentCode]       NVarChar(4000)     NULL,
+	[CreateDate]           DateTime       NOT NULL,
+	[SourceInstrumentCode] NVarChar(4000)     NULL,
 
-		CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
-	)
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[T2]', N'U') IS NULL)
-	CREATE TABLE [T2]
-	(
-		[InstrumentId] Int NOT NULL,
-		[IndexId]      Int NOT NULL
-	)
+	CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
+)
 
 BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[T3]', N'U') IS NULL)
-	CREATE TABLE [T3]
-	(
-		[InstrumentId] Int NOT NULL,
-		[IndexId]      Int NOT NULL
-	)
+CREATE TABLE [T2]
+(
+	[InstrumentId] Int NOT NULL,
+	[IndexId]      Int NOT NULL
+)
+
+BeforeExecute
+-- SqlServer.2012
+
+CREATE TABLE [T3]
+(
+	[InstrumentId] Int NOT NULL,
+	[IndexId]      Int NOT NULL
+)
 
 BeforeExecute
 -- SqlServer.2012
@@ -176,8 +173,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @cond NVarChar(4000) -- String
-SET     @cond = N'aaa%'
+DECLARE @cond_1 NVarChar(4000) -- String
+SET     @cond_1 = N'aaa%'
 DECLARE @uptoDate DateTime2
 SET     @uptoDate = '2020-02-29T17:54:55.1231234'
 
@@ -189,7 +186,7 @@ FROM
 		INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 		INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 WHERE
-	[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond ESCAPE N'~' AND
+	[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond_1 ESCAPE N'~' AND
 	[_].[CreateDate] <= @uptoDate
 ORDER BY
 	[ins].[SourceInstrumentCode]
@@ -197,18 +194,15 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[T3]', N'U') IS NOT NULL)
-	DROP TABLE [T3]
+DROP TABLE [T3]
 
 BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[T2]', N'U') IS NOT NULL)
-	DROP TABLE [T2]
+DROP TABLE [T2]
 
 BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[T1]', N'U') IS NOT NULL)
-	DROP TABLE [T1]
+DROP TABLE [T1]
 
