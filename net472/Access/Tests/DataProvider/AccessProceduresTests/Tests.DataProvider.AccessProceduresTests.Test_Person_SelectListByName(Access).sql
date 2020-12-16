@@ -9,17 +9,17 @@ Person_SelectListByName
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @firstName VarWChar(3) -- String
-SET     @firstName = '%e%'
-DECLARE @lastName VarWChar(3) -- String
-SET     @lastName = '%o%'
+DECLARE @firstName_1 VarWChar(3) -- String
+SET     @firstName_1 = '%e%'
+DECLARE @lastName_1 VarWChar(3) -- String
+SET     @lastName_1 = '%o%'
 
 SELECT
 	Count(*)
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE @firstName AND [_].[LastName] LIKE @lastName
+	[_].[FirstName] LIKE @firstName_1 AND [_].[LastName] LIKE @lastName_1
 
 BeforeExecute
 -- Access AccessOleDb

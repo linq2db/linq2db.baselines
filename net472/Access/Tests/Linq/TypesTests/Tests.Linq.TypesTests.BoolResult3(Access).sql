@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	[p].[PersonID] = 1
+	Iif([p].[PersonID] = 1, True, False)
 FROM
 	[Person] [p]
 

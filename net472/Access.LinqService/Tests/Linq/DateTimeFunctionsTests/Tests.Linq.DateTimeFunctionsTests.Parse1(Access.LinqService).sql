@@ -2,9 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	[t].[DateTimeValue]
+	[d].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			[t].[DateTimeValue] as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [d]
 WHERE
-	DatePart('d', [t].[DateTimeValue]) > 0
+	DatePart('d', [d].[c1]) > 0
 
