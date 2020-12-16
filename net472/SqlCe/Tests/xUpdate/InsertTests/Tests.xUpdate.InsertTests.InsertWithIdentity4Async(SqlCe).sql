@@ -41,8 +41,8 @@ BeforeExecute
 -- SqlCe (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @FirstName_1 NVarChar(5) -- String
-SET     @FirstName_1 = 'John0'
+DECLARE @FirstName NVarChar(5) -- String
+SET     @FirstName = 'John0'
 
 SELECT TOP (@take)
 	[p].[FirstName],
@@ -53,7 +53,7 @@ SELECT TOP (@take)
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName_1 AND [p].[LastName] = 'Shepard'
+	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
 -- SqlCe (asynchronously)
@@ -90,8 +90,8 @@ BeforeExecute
 -- SqlCe (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @FirstName_1 NVarChar(5) -- String
-SET     @FirstName_1 = 'John1'
+DECLARE @FirstName NVarChar(5) -- String
+SET     @FirstName = 'John1'
 
 SELECT TOP (@take)
 	[p].[FirstName],
@@ -102,7 +102,7 @@ SELECT TOP (@take)
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName_1 AND [p].[LastName] = 'Shepard'
+	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
 -- SqlCe
