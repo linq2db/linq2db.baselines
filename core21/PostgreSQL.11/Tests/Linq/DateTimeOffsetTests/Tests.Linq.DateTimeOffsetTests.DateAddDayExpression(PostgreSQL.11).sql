@@ -66,11 +66,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 Integer -- Int32
-SET     @p1 = 5
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 5
 
 SELECT
-	t."TransactionDate" + :p1 * Interval '1 Day'
+	t."TransactionDate" + :p_1 * Interval '1 Day'
 FROM
 	"Transactions" t
 
