@@ -11,7 +11,7 @@ AS
 	WHERE
 		c_1."ParentID" > 1
 ),
-"LAST0" ("ParentID")
+"LATEST" ("ParentID")
 AS
 (
 	SELECT
@@ -64,7 +64,7 @@ FROM
 		INNER JOIN "CTE1_" c_4 ON p_2."ParentID" = c_4."ParentID"
 		INNER JOIN "CTE2_" c2 ON p_2."ParentID" = c2."ParentID"
 		INNER JOIN "CTE3_" c3 ON p_2."ParentID" = c3."ParentID"
-		INNER JOIN "LAST0" c4_1 ON c4_1."ParentID" = c3."ParentID"
+		INNER JOIN "LATEST" c4_1 ON c4_1."ParentID" = c3."ParentID"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
