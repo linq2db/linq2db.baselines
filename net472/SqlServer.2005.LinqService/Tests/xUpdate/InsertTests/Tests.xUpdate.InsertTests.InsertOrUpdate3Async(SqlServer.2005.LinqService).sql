@@ -23,8 +23,6 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @i Int -- Int32
-SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -33,7 +31,7 @@ BEGIN TRAN
 UPDATE
 	[t1]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
 FROM
 	[Patient] [t1]
 WHERE

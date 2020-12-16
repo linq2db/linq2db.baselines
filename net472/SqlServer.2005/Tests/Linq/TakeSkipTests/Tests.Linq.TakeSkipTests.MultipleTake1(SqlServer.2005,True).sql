@@ -20,10 +20,10 @@ SELECT 'BOLTO'
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 2
+DECLARE @take_2 Int -- Int32
+SET     @take_2 = 2
 
-SELECT TOP (@take_1)
+SELECT TOP (@take_2)
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

@@ -2,8 +2,8 @@
 -- SqlServer.2005
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @GuidValue_1 UniqueIdentifier -- Guid
-SET     @GuidValue_1 = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
 
 SELECT TOP (@take)
 	[p].[ID],
@@ -17,14 +17,14 @@ SELECT TOP (@take)
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	[p].[GuidValue] = @GuidValue_1
+	[p].[GuidValue] = @GuidValue
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @GuidValue_1 UniqueIdentifier -- Guid
-SET     @GuidValue_1 = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
+DECLARE @GuidValue UniqueIdentifier -- Guid
+SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
 SELECT TOP (@take)
 	[p].[ID],
@@ -38,5 +38,5 @@ SELECT TOP (@take)
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	[p].[GuidValue] = @GuidValue_1
+	[p].[GuidValue] = @GuidValue
 
