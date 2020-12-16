@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @str VarChar(4) -- String
-SET     @str = '%oh%'
+DECLARE @str_1 VarChar(4) -- String
+SET     @str_1 = '%oh%'
 
 SELECT
 	`p`.`FirstName`,
@@ -12,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` LIKE @str ESCAPE '~' AND `p`.`PersonID` = 1
+	`p`.`FirstName` LIKE @str_1 ESCAPE '~' AND `p`.`PersonID` = 1
 

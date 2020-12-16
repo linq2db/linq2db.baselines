@@ -46,8 +46,8 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @ID_1 Int32
-SET     @ID_1 = 1001
+DECLARE @ID Int32
+SET     @ID = 1001
 DECLARE @take Int32
 SET     @take = 2
 
@@ -63,7 +63,7 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`ID` = @ID_1
+	`t`.`ID` = @ID
 LIMIT @take
 
 BeforeExecute
