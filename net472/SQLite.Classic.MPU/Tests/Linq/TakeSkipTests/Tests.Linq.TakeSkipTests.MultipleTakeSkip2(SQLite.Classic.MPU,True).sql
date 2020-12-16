@@ -25,10 +25,10 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take_1  -- Int32
-SET     @take_1 = 2
-DECLARE @skip_1  -- Int32
-SET     @skip_1 = 3
+DECLARE @take_2  -- Int32
+SET     @take_2 = 2
+DECLARE @skip_2  -- Int32
+SET     @skip_2 = 3
 
 SELECT
 	[t1].[Value]
@@ -36,7 +36,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-LIMIT @take_1 OFFSET @skip_1
+LIMIT @take_2 OFFSET @skip_2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

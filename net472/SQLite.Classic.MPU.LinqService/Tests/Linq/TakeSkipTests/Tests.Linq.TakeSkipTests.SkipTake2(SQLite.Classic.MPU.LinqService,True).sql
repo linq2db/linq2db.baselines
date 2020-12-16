@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 5
-DECLARE @skip  -- Int32
-SET     @skip = 2
+DECLARE @skip_2  -- Int32
+SET     @skip_2 = 5
+DECLARE @skip_3  -- Int32
+SET     @skip_3 = 2
 
 SELECT
 	[t1].[ParentID],
@@ -12,14 +12,14 @@ FROM
 	[Child] [t1]
 ORDER BY
 	[t1].[ChildID] DESC
-LIMIT @take OFFSET @skip
+LIMIT @skip_2 OFFSET @skip_3
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 5
-DECLARE @skip  -- Int32
-SET     @skip = 2
+DECLARE @skip_3  -- Int32
+SET     @skip_3 = 5
+DECLARE @skip_4  -- Int32
+SET     @skip_4 = 2
 
 SELECT
 	[t1].[ParentID],
@@ -28,5 +28,5 @@ FROM
 	[Child] [t1]
 ORDER BY
 	[t1].[ChildID] DESC
-LIMIT @take OFFSET @skip
+LIMIT @skip_3 OFFSET @skip_4
 

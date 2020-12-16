@@ -33,14 +33,18 @@ DECLARE @Id  -- Int32
 SET     @Id = 2
 
 SELECT
-	(NOT EXISTS(
-		SELECT
-			*
-		FROM
-			[AsyncDataTable] [c_1]
-		WHERE
-			[c_1].[Id] <> @Id
-	))
+	CASE
+		WHEN (NOT EXISTS(
+			SELECT
+				*
+			FROM
+				[AsyncDataTable] [c_1]
+			WHERE
+				[c_1].[Id] <> @Id
+		))
+			THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

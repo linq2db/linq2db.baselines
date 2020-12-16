@@ -371,8 +371,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @startId  -- Int64
 SET     @startId = 5
-DECLARE @p1  -- Int32
-SET     @p1 = 15
+DECLARE @p_1  -- Int32
+SET     @p_1 = 15
 
 SELECT
 	[s].[value],
@@ -380,7 +380,7 @@ SELECT
 FROM
 	[sample_class] [c_1]
 		INNER JOIN (
-			SELECT * FROM [sample_class] where [id] >= @startId and [id] < @p1
+			SELECT * FROM [sample_class] where [id] >= @startId and [id] < @p_1
 		) [s] ON [s].[id] = [c_1].[id]
 WHERE
 	[s].[id] > 10

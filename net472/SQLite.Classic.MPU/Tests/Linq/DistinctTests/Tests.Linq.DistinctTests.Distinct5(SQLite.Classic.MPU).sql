@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value1_1  -- Int32
-SET     @Value1_1 = 3
+DECLARE @Value1  -- Int32
+SET     @Value1 = 3
 
 SELECT DISTINCT
 	Coalesce([p].[Value1], [p].[ParentID] % 2),
-	@Value1_1
+	@Value1
 FROM
 	[Parent] [p]
 

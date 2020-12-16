@@ -4,14 +4,18 @@ DECLARE @ParentID  -- Int32
 SET     @ParentID = 1
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Child] [c_1]
-		WHERE
-			[c_1].[ParentID] = @ParentID
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[Child] [c_1]
+			WHERE
+				[c_1].[ParentID] = @ParentID
+		)
+			THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -19,12 +23,16 @@ DECLARE @ParentID  -- Int32
 SET     @ParentID = -1
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Child] [c_1]
-		WHERE
-			[c_1].[ParentID] = @ParentID
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[Child] [c_1]
+			WHERE
+				[c_1].[ParentID] = @ParentID
+		)
+			THEN 1
+		ELSE 0
+	END
 
