@@ -191,8 +191,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 5
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 6
 
 DELETE [t2]
 FROM
@@ -209,7 +209,7 @@ FROM
 					[x].[ParentID] > 1000
 			) [t1]
 		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+			[t1].[RN] > @skip AND [t1].[RN] <= @take_1
 	) [t2]
 
 BeforeExecute

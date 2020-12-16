@@ -24,10 +24,10 @@ SELECT 'Value8'
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take_2 Int -- Int32
-SET     @take_2 = 1
+DECLARE @take_3 Int -- Int32
+SET     @take_3 = 1
 
-SELECT TOP (@take_2)
+SELECT TOP (@take_3)
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
