@@ -47,11 +47,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p1 Int -- Int32
-SET     @p1 = 226
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 226
 
 SELECT
-	DateAdd(millisecond, @p1, [t].[TransactionDate])
+	DateAdd(millisecond, @p_1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 
