@@ -45,8 +45,8 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ID_1 Integer(4) -- Int32
-SET     @ID_1 = 1001
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 1001
 
 SELECT
 	"t".ID,
@@ -60,7 +60,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = @ID_1
+	"t".ID = @ID
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute

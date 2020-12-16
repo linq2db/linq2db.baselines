@@ -42,7 +42,8 @@ BeforeExecute
 
 SELECT
 	"t1"."Id",
-	"t1"."Value"
+	"t1"."Value",
+	'M' || RTrim(Char("t1"."Id"))
 FROM
 	"InstanceClass" "t1"
 

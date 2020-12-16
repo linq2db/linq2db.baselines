@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."c1"
+	Real("t"."MoneyValue")
 FROM
-	(
-		SELECT
-			Real("t"."MoneyValue") as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	"p"."c1" > 0
+	Real("t"."MoneyValue") > 0
 
