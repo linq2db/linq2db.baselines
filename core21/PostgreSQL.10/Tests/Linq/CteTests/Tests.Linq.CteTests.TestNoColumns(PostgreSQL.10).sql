@@ -51,10 +51,14 @@ AS
 		"Child" c_2
 )
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"CTE1_" t1
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"CTE1_" t1
+		)
+			THEN True
+		ELSE False
+	END
 

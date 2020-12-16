@@ -66,11 +66,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 Integer -- Int32
-SET     @p1 = -1
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = -1
 
 SELECT
-	t."TransactionDate" + :p1 * Interval '1 Month' * 3
+	t."TransactionDate" + :p_1 * Interval '1 Month' * 3
 FROM
 	"Transactions" t
 

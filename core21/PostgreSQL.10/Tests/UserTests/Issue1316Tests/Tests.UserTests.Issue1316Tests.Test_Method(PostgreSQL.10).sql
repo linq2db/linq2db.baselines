@@ -24,8 +24,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @ID_1 Integer -- Int32
-SET     @ID_1 = 5
+DECLARE @ID Integer -- Int32
+SET     @ID = 5
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -34,7 +34,7 @@ SELECT
 FROM
 	"Issue1316Tests" t1
 WHERE
-	t1."ID" = :ID_1
+	t1."ID" = :ID
 LIMIT :take
 
 BeforeExecute

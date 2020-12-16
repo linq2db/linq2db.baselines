@@ -21,8 +21,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
+DECLARE @take_2 Integer -- Int32
+SET     @take_2 = 2
 
 SELECT
 	t1."Value"
@@ -30,7 +30,7 @@ FROM
 	"TakeSkipClass" t1
 ORDER BY
 	t1."Value"
-LIMIT :take
+LIMIT :take_2
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
