@@ -87,6 +87,6 @@ SELECT
 FROM
 	[Orders] [o]
 ORDER BY
-	IIF([o].[Freight] > 0 AND [o].[ShippedDate] IS NOT NULL, 1, IIF((NOT ([o].[Freight] > 0 AND [o].[ShippedDate] IS NOT NULL)), 0, NULL)),
+	IIF([o].[Freight] > 0 AND [o].[ShippedDate] IS NOT NULL, 1, IIF(([o].[Freight] <= 0 OR [o].[ShippedDate] IS NULL), 0, NULL)),
 	[o].[OrderID]
 
