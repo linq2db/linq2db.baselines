@@ -28,8 +28,8 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @gender_1 String -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender String -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	`_`.`FirstName`,
@@ -40,12 +40,12 @@ SELECT
 FROM
 	`Person` `_`
 WHERE
-	`_`.`PersonID` = 1 AND `_`.`Gender` = @gender_1
+	`_`.`PersonID` = 1 AND `_`.`Gender` = @gender
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @gender_1 String -- StringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender String -- StringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	`_`.`FirstName`,
@@ -56,5 +56,5 @@ SELECT
 FROM
 	`Person` `_`
 WHERE
-	`_`.`PersonID` = 1 AND @gender_1 = `_`.`Gender`
+	`_`.`PersonID` = 1 AND @gender = `_`.`Gender`
 
