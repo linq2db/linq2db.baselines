@@ -28,8 +28,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
-DECLARE @gender_1 NChar(1) -- StringFixedLength
-SET     @gender_1 = N'M'
+DECLARE @gender NChar(1) -- StringFixedLength
+SET     @gender = N'M'
 
 SELECT
 	[_].[FirstName],
@@ -40,12 +40,12 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = 1 AND [_].[Gender] = @gender_1
+	[_].[PersonID] = 1 AND [_].[Gender] = @gender
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
-DECLARE @gender_1 NChar(1) -- StringFixedLength
-SET     @gender_1 = N'M'
+DECLARE @gender NChar(1) -- StringFixedLength
+SET     @gender = N'M'
 
 SELECT
 	[_].[FirstName],
@@ -56,5 +56,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = 1 AND @gender_1 = [_].[Gender]
+	[_].[PersonID] = 1 AND @gender = [_].[Gender]
 

@@ -26,15 +26,15 @@ BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 5
+DECLARE @Id Int -- Int32
+SET     @Id = 5
 
 SELECT TOP (@take)
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]
 WHERE
-	[_].[ID] = @Id_1
+	[_].[ID] = @Id
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017

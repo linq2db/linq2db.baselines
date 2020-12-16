@@ -30,7 +30,7 @@ SELECT
 FROM
 	[T1351Model] [_]
 WHERE
-	([_].[TestNullable] IS NULL OR [_].[TestNullable] <> 1)
+	([_].[TestNullable] <> 1 OR [_].[TestNullable] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
