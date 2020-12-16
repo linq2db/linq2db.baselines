@@ -34,10 +34,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @datetime2DataType_2 DateTime2
-SET     @datetime2DataType_2 = '2020-02-29T17:54:55.1231234'
-DECLARE @datetimeoffsetDataType_2 DateTimeOffset
-SET     @datetimeoffsetDataType_2 = '2020-02-29 17:54:55.1231234 +00:40'
+DECLARE @datetime2DataType DateTime2
+SET     @datetime2DataType = '2020-02-29T17:54:55.1231234'
+DECLARE @datetimeoffsetDataType DateTimeOffset
+SET     @datetimeoffsetDataType = '2020-02-29 17:54:55.1231234 +00:40'
 DECLARE @dto2 DateTimeOffset
 SET     @dto2 = '2020-02-29 17:54:55.1231237 +00:40'
 DECLARE @dt2 DateTime2
@@ -51,7 +51,10 @@ USING (	VALUES
 	[datetime2DataType],
 	[datetimeoffsetDataType]
 )
-ON (([Target].[datetime2DataType] IS NULL AND [Source].[datetime2DataType] IS NULL OR [Target].[datetime2DataType] = [Source].[datetime2DataType]) AND ([Target].[datetimeoffsetDataType] IS NULL AND [Source].[datetimeoffsetDataType] IS NULL OR [Target].[datetimeoffsetDataType] = [Source].[datetimeoffsetDataType]) AND [Target].[datetime2DataType] = @datetime2DataType_2 AND [Target].[datetimeoffsetDataType] = @datetimeoffsetDataType_2)
+ON (([Target].[datetime2DataType] = [Source].[datetime2DataType] OR [Target].[datetime2DataType] IS NULL AND [Source].[datetime2DataType] IS NULL) AND
+([Target].[datetimeoffsetDataType] = [Source].[datetimeoffsetDataType] OR [Target].[datetimeoffsetDataType] IS NULL AND [Source].[datetimeoffsetDataType] IS NULL) AND
+[Target].[datetime2DataType] = @datetime2DataType AND
+[Target].[datetimeoffsetDataType] = @datetimeoffsetDataType)
 
 WHEN MATCHED THEN
 UPDATE
