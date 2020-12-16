@@ -51,8 +51,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(18) -- String
-SET     @FirstName_1 = 'InsertColumnFilter'
+DECLARE @FirstName NVarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 
 SELECT TOP 1
 	[x].[FirstName],
@@ -90,8 +90,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(18) -- String
-SET     @FirstName_1 = 'InsertColumnFilter'
+DECLARE @FirstName NVarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 
 SELECT TOP 1
 	[x].[FirstName],

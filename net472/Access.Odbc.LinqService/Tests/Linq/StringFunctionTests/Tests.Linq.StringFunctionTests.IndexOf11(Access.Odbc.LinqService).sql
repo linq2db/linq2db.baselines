@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p1 Bit -- Boolean
-SET     @p1 = False
 
 SELECT
 	[p].[FirstName],
@@ -12,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Iif(?, 0, InStr(1, [p].[FirstName], 'oh', 1) - 1) = 1 AND
-	[p].[PersonID] = 1
+	InStr(1, [p].[FirstName], 'oh', 1) = 2 AND [p].[PersonID] = 1
 

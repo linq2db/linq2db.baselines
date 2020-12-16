@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName NVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP 1
 	[x].[ID],
@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @FirstName_1 NVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName NVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT TOP 1
 	[x].[ID],

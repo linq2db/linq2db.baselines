@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p1 DateTime
-SET     @p1 = #2018-01-02#
+DECLARE @p_1 DateTime
+SET     @p_1 = #2018-01-02#
 
 SELECT
 	Count(*)

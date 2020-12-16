@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	([p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0),
+	Iif(([p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0), True, False),
 	[p].[FirstName],
-	([p].[MiddleName] IS NULL OR Len([p].[MiddleName]) = 0),
+	Iif(([p].[MiddleName] IS NULL OR Len([p].[MiddleName]) = 0), True, False),
 	[p].[MiddleName],
 	[p].[LastName]
 FROM

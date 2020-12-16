@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 1
+DECLARE @ID Int -- Int32
+SET     @ID = 1
 
 SELECT
 	[p].[PersonID]
@@ -12,8 +12,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 2
+DECLARE @ID Int -- Int32
+SET     @ID = 2
 
 SELECT
 	[p].[PersonID]
