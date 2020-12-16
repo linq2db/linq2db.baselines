@@ -47,11 +47,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @p1 Int -- Int32
-SET     @p1 = 11
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 11
 
 SELECT
-	DateAdd(year, @p1, [t].[TransactionDate])
+	DateAdd(year, @p_1, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 
