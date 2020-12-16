@@ -36,8 +36,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FirstName_1 Varchar2(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName Varchar2(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -50,7 +50,7 @@ SELECT
 FROM
 	"Person" x
 WHERE
-	x."FirstName" = :FirstName_1 AND ROWNUM <= :take
+	x."FirstName" = :FirstName AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -74,8 +74,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @FirstName_1 Varchar2(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName Varchar2(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -88,7 +88,7 @@ SELECT
 FROM
 	"Person" x
 WHERE
-	x."FirstName" = :FirstName_1 AND ROWNUM <= :take
+	x."FirstName" = :FirstName AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	:str LIKE (Replace(Replace(Replace(p."FirstName", '~', '~~'), '%', '~%'), '_', '~_') || '%') ESCAPE '~'
+	:str LIKE Replace(Replace(Replace(p."FirstName", '~', '~~'), '%', '~%'), '_', '~_') || '%' ESCAPE '~'
 

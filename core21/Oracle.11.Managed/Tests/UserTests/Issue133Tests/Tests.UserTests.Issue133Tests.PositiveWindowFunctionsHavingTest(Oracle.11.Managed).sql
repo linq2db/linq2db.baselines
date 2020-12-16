@@ -10,5 +10,5 @@ FROM
 GROUP BY
 	t1."ParentID"
 HAVING
-	(Sum(t1."ParentID") IS NULL OR Sum(t1."ParentID") <> 36)
+	(Sum(t1."ParentID") <> 36 OR Sum(t1."ParentID") IS NULL)
 
