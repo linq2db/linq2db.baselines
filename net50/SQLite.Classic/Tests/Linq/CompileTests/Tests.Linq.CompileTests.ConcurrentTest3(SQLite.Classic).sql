@@ -1,5 +1,4 @@
 ﻿BeforeExecute
--BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
@@ -15,7 +14,8 @@ WHERE
 	[p].[ParentID] = @id
 LIMIT @take
 
-- SQLite.Classic SQLite
+BeforeExecute
+-- SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 2
 DECLARE @take  -- Int32
