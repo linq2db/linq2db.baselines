@@ -42,14 +42,18 @@ SELECT
 	[n].[DATUM],
 	[c_1].[STATUS_TYPE_ID],
 	[c_1].[NR],
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[CASH] [u]
-		WHERE
-			[u].[ID_DETAIL] = [n].[ID]
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[CASH] [u]
+			WHERE
+				[u].[ID_DETAIL] = [n].[ID]
+		)
+			THEN 1
+		ELSE 0
+	END
 FROM
 	[DETAIL] [n]
 		LEFT JOIN [STATUS_DATA] [c_1] ON [c_1].[STATUS_TYPE_ID] = [n].[TYP_STATUS] AND [c_1].[NR] = [n].[NR]
