@@ -99,5 +99,5 @@ SELECT TOP (@take)
 FROM
 	[Customers] [c_1]
 WHERE
-	IIF([c_1].[City] > N'Seattle', 1, IIF([c_1].[City] = N'Seattle', 0, -1)) >= 0
+	[c_1].[City] >= N'Seattle'
 
