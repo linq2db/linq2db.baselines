@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @p1 Bit -- Boolean
-SET     @p1 = 1
 
 SELECT
 	[p].[FirstName],
@@ -12,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	IIF(@p1 = 1, 0, CharIndex(N'', [p].[FirstName]) - 1) = 0 AND
 	[p].[PersonID] = 1
 

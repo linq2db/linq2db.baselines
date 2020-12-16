@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @ps NVarChar(4000) -- String
-SET     @ps = N'%[[]%'
+SET     @ps = N'%~[%'
 
 SELECT
 	[p].[FirstName],

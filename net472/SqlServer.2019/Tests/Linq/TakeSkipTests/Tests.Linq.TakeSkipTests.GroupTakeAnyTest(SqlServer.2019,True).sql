@@ -25,7 +25,7 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT
-	CASE WHEN EXISTS(
+	IIF(EXISTS(
 		SELECT TOP (@take)
 			[t1].[Value]
 		FROM
@@ -34,7 +34,7 @@ SELECT
 			[t1].[Value]
 		HAVING
 			Count(*) > 1
-	) THEN 1 ELSE 0 END
+	), 1, 0)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

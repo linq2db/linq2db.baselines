@@ -10,8 +10,6 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test01'
-DECLARE @String NVarChar(4000) -- String
-SET     @String = N'test01'
 
 INSERT INTO [AllTypes]
 (
@@ -21,15 +19,13 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test02  '
-DECLARE @String NVarChar(4000) -- String
-SET     @String = N'test02  '
 
 INSERT INTO [AllTypes]
 (
@@ -39,15 +35,13 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test03	 '
-DECLARE @String NVarChar(4000) -- String
-SET     @String = N'test03	 '
 
 INSERT INTO [AllTypes]
 (
@@ -57,7 +51,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
@@ -65,9 +59,6 @@ BeforeExecute
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test04
  '
-DECLARE @String NVarChar(4000) -- String
-SET     @String = N'test04
- '
 
 INSERT INTO [AllTypes]
 (
@@ -77,15 +68,13 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test05 '
-DECLARE @String NVarChar(4000) -- String
-SET     @String = N'test05 '
 
 INSERT INTO [AllTypes]
 (
@@ -95,15 +84,13 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test06 '
-DECLARE @String NVarChar(4000) -- String
-SET     @String = N'test06 '
 
 INSERT INTO [AllTypes]
 (
@@ -113,15 +100,13 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test07 '
-DECLARE @String NVarChar(4000) -- String
-SET     @String = N'test07 '
 
 INSERT INTO [AllTypes]
 (
@@ -131,15 +116,13 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test08  '
-DECLARE @String NVarChar(4000) -- String
-SET     @String = N'test08  '
 
 INSERT INTO [AllTypes]
 (
@@ -149,7 +132,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute
@@ -390,8 +373,6 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = NULL
-DECLARE @String NVarChar(4000) -- String
-SET     @String = NULL
 
 INSERT INTO [AllTypes]
 (
@@ -401,7 +382,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@String
+	@NString
 )
 
 BeforeExecute

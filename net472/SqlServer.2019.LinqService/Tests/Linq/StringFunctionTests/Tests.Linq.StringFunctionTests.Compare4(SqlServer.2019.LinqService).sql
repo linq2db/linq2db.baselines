@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower(Substring([p].[FirstName], 2, 2)) = N'oh' AND
+	IIF(Lower(Substring([p].[FirstName], 2, 2)) > N'oh', 1, IIF(Lower(Substring([p].[FirstName], 2, 2)) = N'oh', 0, -1)) = 0 AND
 	[p].[PersonID] = 1
 
