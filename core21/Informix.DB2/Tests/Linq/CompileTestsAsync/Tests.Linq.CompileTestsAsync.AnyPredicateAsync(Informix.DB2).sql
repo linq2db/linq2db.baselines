@@ -152,14 +152,18 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
-	EXISTS(
-		SELECT
-			*
-		FROM
-			AsyncDataTable c_1
-		WHERE
-			c_1.Id = 2
-	)
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				AsyncDataTable c_1
+			WHERE
+				c_1.Id = 2
+		)
+			THEN 't'
+		ELSE 'f'
+	END
 FROM SYSTABLES
 
 BeforeExecute

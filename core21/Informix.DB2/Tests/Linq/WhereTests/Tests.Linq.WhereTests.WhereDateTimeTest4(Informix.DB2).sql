@@ -17,8 +17,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @DateTimeValue_1 Timestamp(16) -- DateTime
-SET     @DateTimeValue_1 = TO_DATE('2009-09-27', '%Y-%m-%d')
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
+SET     @DateTimeValue = TO_DATE('2009-09-27', '%Y-%m-%d')
 
 SELECT
 	t1.ID,
@@ -34,5 +34,5 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	t1.DateTimeValue = @DateTimeValue_1
+	t1.DateTimeValue = @DateTimeValue
 

@@ -150,6 +150,10 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
+DECLARE @Id_1 Integer(4) -- Int32
+SET     @Id_1 = 2
+DECLARE @p_1 Integer(4) -- Int32
+SET     @p_1 = 2
 
 SELECT FIRST 1
 	c_2.Value_1
@@ -161,10 +165,10 @@ FROM
 		FROM
 			AsyncDataTable c_1
 		WHERE
-			c_1.Id = 2
+			c_1.Id = @Id_1
 	) c_2
 WHERE
-	c_2.Id = 2
+	c_2.Id = @p_1
 
 BeforeExecute
 -- Informix.DB2 Informix
