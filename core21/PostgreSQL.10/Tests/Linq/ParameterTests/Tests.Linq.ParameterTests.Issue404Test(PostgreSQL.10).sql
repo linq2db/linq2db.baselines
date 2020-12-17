@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Table404One"
+CREATE TABLE IF NOT EXISTS "Table404One"
 (
 	"Id" Int NOT NULL
 )
@@ -20,7 +20,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Table404Two"
+CREATE TABLE IF NOT EXISTS "Table404Two"
 (
 	"Id"           Int NOT NULL,
 	"Usage"        Int NOT NULL,
@@ -126,17 +126,17 @@ FROM
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Table404Two"
+DROP TABLE IF EXISTS "Table404Two"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Table404One"
+DROP TABLE IF EXISTS "Table404One"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Table404One"
+CREATE TABLE IF NOT EXISTS "Table404One"
 (
 	"Id" Int NOT NULL
 )
@@ -155,7 +155,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Table404Two"
+CREATE TABLE IF NOT EXISTS "Table404Two"
 (
 	"Id"           Int NOT NULL,
 	"Usage"        Int NOT NULL,
@@ -261,10 +261,10 @@ FROM
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Table404Two"
+DROP TABLE IF EXISTS "Table404Two"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Table404One"
+DROP TABLE IF EXISTS "Table404One"
 

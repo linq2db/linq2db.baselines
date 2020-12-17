@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "UpdatedEntities"
+CREATE TABLE IF NOT EXISTS "UpdatedEntities"
 (
 	id           Int NOT NULL,
 	"Value1"     Int NOT NULL,
@@ -32,7 +32,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "NewEntities"
+CREATE TABLE IF NOT EXISTS "NewEntities"
 (
 	id       Int NOT NULL,
 	"Value1" Int NOT NULL,
@@ -115,10 +115,10 @@ FROM
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "NewEntities"
+DROP TABLE IF EXISTS "NewEntities"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "UpdatedEntities"
+DROP TABLE IF EXISTS "UpdatedEntities"
 

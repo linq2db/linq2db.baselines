@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "DynamicTable"
+CREATE TABLE IF NOT EXISTS "DynamicTable"
 (
 	"ID"             SERIAL  NOT NULL,
 	"Not Identifier" Int     NOT NULL,
@@ -37,5 +37,5 @@ GROUP BY
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "DynamicTable"
+DROP TABLE IF EXISTS "DynamicTable"
 
