@@ -1,14 +1,19 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "StLink"
-(
-	"InId"          Int   NOT NULL,
-	"InMaxQuantity" Float,
-	"InMinQuantity" Float,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StLink')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "StLink"
+			(
+				"InId"          Int   NOT NULL,
+				"InMaxQuantity" Float,
+				"InMinQuantity" Float,
 
-	CONSTRAINT "PK_StLink" PRIMARY KEY ("InId")
-)
+				CONSTRAINT "PK_StLink" PRIMARY KEY ("InId")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -25,14 +30,19 @@ SELECT 2,NULL,NULL FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "EdtLink"
-(
-	"InId"          Int   NOT NULL,
-	"InMaxQuantity" Float,
-	"InMinQuantity" Float,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'EdtLink')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "EdtLink"
+			(
+				"InId"          Int   NOT NULL,
+				"InMaxQuantity" Float,
+				"InMinQuantity" Float,
 
-	CONSTRAINT "PK_EdtLink" PRIMARY KEY ("InId")
-)
+				CONSTRAINT "PK_EdtLink" PRIMARY KEY ("InId")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -90,10 +100,16 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "EdtLink"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'EdtLink')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "EdtLink"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "StLink"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StLink')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "StLink"';
+END
 
