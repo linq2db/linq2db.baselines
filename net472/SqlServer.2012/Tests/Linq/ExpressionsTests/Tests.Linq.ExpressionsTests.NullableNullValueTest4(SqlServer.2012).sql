@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] <> COALESCE(NULL, 2147483647)
+	[p].[PersonID] IS NOT NULL
 
