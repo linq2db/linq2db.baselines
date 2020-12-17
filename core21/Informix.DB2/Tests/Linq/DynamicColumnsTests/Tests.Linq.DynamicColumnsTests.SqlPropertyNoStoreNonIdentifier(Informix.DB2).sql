@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE DynamicTable
+CREATE TABLE IF NOT EXISTS DynamicTable
 (
 	ID               SERIAL  NOT NULL,
 	"Not Identifier" Int     NOT NULL,
@@ -39,5 +39,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE DynamicTable
+DROP TABLE IF EXISTS DynamicTable
 

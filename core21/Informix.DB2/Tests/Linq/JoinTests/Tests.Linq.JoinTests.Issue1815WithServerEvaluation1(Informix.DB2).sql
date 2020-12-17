@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE StLink
+CREATE TABLE IF NOT EXISTS StLink
 (
 	InId          Int   NOT NULL,
 	InMaxQuantity Float     NULL,
@@ -57,7 +57,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE EdtLink
+CREATE TABLE IF NOT EXISTS EdtLink
 (
 	InId          Int   NOT NULL,
 	InMaxQuantity Float     NULL,
@@ -129,10 +129,10 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE EdtLink
+DROP TABLE IF EXISTS EdtLink
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE StLink
+DROP TABLE IF EXISTS StLink
 

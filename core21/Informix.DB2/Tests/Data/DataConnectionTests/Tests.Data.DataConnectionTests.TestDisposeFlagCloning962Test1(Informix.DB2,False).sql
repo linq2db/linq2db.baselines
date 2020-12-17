@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Categories
+CREATE TABLE IF NOT EXISTS Categories
 (
 	CategoryID   SERIAL         NOT NULL,
 	CategoryName NVarChar(255)  NOT NULL,
@@ -49,7 +49,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Products
+CREATE TABLE IF NOT EXISTS Products
 (
 	ProductID       SERIAL         NOT NULL,
 	ProductName     NVarChar(255)  NOT NULL,
@@ -217,10 +217,10 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Products
+DROP TABLE IF EXISTS Products
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Categories
+DROP TABLE IF EXISTS Categories
 

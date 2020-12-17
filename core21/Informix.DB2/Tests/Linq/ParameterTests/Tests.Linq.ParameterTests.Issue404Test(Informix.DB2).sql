@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Table404One
+CREATE TABLE IF NOT EXISTS Table404One
 (
 	Id Int NOT NULL
 )
@@ -37,7 +37,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Table404Two
+CREATE TABLE IF NOT EXISTS Table404Two
 (
 	Id           Int NOT NULL,
 	"Usage"      Int NOT NULL,
@@ -258,17 +258,17 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Table404Two
+DROP TABLE IF EXISTS Table404Two
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Table404One
+DROP TABLE IF EXISTS Table404One
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Table404One
+CREATE TABLE IF NOT EXISTS Table404One
 (
 	Id Int NOT NULL
 )
@@ -304,7 +304,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Table404Two
+CREATE TABLE IF NOT EXISTS Table404Two
 (
 	Id           Int NOT NULL,
 	"Usage"      Int NOT NULL,
@@ -525,10 +525,10 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Table404Two
+DROP TABLE IF EXISTS Table404Two
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Table404One
+DROP TABLE IF EXISTS Table404One
 

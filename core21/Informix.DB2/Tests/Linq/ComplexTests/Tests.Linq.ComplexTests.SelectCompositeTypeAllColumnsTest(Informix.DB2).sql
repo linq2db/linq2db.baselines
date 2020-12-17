@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE "User"
+CREATE TABLE IF NOT EXISTS "User"
 (
 	city            NVarChar(255)     NULL,
 	user_name       NVarChar(255)     NULL,
@@ -49,5 +49,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE "User"
+DROP TABLE IF EXISTS "User"
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE InstanceClass
+CREATE TABLE IF NOT EXISTS InstanceClass
 (
 	Id      Int NOT NULL,
 	"Value" Int NOT NULL
@@ -380,5 +380,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE InstanceClass
+DROP TABLE IF EXISTS InstanceClass
 

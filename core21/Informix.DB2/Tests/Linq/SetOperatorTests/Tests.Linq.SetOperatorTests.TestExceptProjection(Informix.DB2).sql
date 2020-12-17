@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE SampleData
+CREATE TABLE IF NOT EXISTS SampleData
 (
 	Id     Int NOT NULL,
 	Value1 Int NOT NULL,
@@ -318,5 +318,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE SampleData
+DROP TABLE IF EXISTS SampleData
 

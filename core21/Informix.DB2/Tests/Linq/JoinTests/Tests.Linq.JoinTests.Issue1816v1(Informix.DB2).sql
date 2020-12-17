@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE stVersions
+CREATE TABLE IF NOT EXISTS stVersions
 (
 	inId     Int NOT NULL,
 	inIdMain Int NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE stVersions
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE rlStatesTypesAndUserGroups
+CREATE TABLE IF NOT EXISTS rlStatesTypesAndUserGroups
 (
 	inIdState Int NOT NULL,
 	inIdType  Int NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE rlStatesTypesAndUserGroups
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE stMain
+CREATE TABLE IF NOT EXISTS stMain
 (
 	inId     Int NOT NULL,
 	inIdType Int NOT NULL,
@@ -45,15 +45,15 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE stMain
+DROP TABLE IF EXISTS stMain
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE rlStatesTypesAndUserGroups
+DROP TABLE IF EXISTS rlStatesTypesAndUserGroups
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE stVersions
+DROP TABLE IF EXISTS stVersions
 
