@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Table404One`
+CREATE TABLE IF NOT EXISTS `Table404One`
 (
 	`Id` INT NOT NULL
 )
@@ -20,7 +20,7 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Table404Two`
+CREATE TABLE IF NOT EXISTS `Table404Two`
 (
 	`Id`           INT NOT NULL,
 	`Usage`        INT NOT NULL,
@@ -126,17 +126,17 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Table404Two`
+DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Table404One`
+DROP TABLE IF EXISTS `Table404One`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Table404One`
+CREATE TABLE IF NOT EXISTS `Table404One`
 (
 	`Id` INT NOT NULL
 )
@@ -155,7 +155,7 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Table404Two`
+CREATE TABLE IF NOT EXISTS `Table404Two`
 (
 	`Id`           INT NOT NULL,
 	`Usage`        INT NOT NULL,
@@ -261,10 +261,10 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Table404Two`
+DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Table404One`
+DROP TABLE IF EXISTS `Table404One`
 

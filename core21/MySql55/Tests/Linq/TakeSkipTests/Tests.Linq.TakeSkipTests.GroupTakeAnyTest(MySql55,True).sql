@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `TakeSkipClass`
+CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
 	`Value` VARCHAR(10)     NULL
 )
@@ -44,5 +44,5 @@ SELECT
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `TakeSkipClass`
+DROP TABLE IF EXISTS `TakeSkipClass`
 
