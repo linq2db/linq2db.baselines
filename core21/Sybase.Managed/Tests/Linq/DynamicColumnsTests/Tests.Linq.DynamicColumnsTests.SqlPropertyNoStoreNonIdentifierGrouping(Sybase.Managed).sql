@@ -1,14 +1,17 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [DynamicTable]
-(
-	[ID]             Int IDENTITY NOT NULL,
-	[Not Identifier] Int          NOT NULL,
-	[Some Value]     Int          NOT NULL,
+IF (OBJECT_ID(N'DynamicTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [DynamicTable]
+		(
+			[ID]             Int IDENTITY NOT NULL,
+			[Not Identifier] Int          NOT NULL,
+			[Some Value]     Int          NOT NULL,
 
-	CONSTRAINT [PK_DynamicTable] PRIMARY KEY CLUSTERED ([ID])
-)
+			CONSTRAINT [PK_DynamicTable] PRIMARY KEY CLUSTERED ([ID])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -36,5 +39,6 @@ GROUP BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [DynamicTable]
+IF (OBJECT_ID(N'DynamicTable') IS NOT NULL)
+	DROP TABLE [DynamicTable]
 

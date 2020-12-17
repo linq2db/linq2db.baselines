@@ -1,12 +1,15 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Fact]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'Fact') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Fact]
+		(
+			[Id] Int NOT NULL,
 
-	CONSTRAINT [PK_Fact] PRIMARY KEY CLUSTERED ([Id])
-)
+			CONSTRAINT [PK_Fact] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -22,14 +25,17 @@ SELECT 5
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Tag]
-(
-	[Id]     Int           NOT NULL,
-	[FactId] Int           NOT NULL,
-	[Name]   NVarChar(255) NOT NULL,
+IF (OBJECT_ID(N'Tag') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Tag]
+		(
+			[Id]     Int           NOT NULL,
+			[FactId] Int           NOT NULL,
+			[Name]   NVarChar(255) NOT NULL,
 
-	CONSTRAINT [PK_Tag] PRIMARY KEY CLUSTERED ([Id])
-)
+			CONSTRAINT [PK_Tag] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -61,10 +67,12 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Tag]
+IF (OBJECT_ID(N'Tag') IS NOT NULL)
+	DROP TABLE [Tag]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Fact]
+IF (OBJECT_ID(N'Fact') IS NOT NULL)
+	DROP TABLE [Fact]
 

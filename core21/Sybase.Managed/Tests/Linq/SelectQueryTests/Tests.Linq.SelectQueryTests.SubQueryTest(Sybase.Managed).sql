@@ -1,11 +1,14 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [SampleClass]
-(
-	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
-)
+IF (OBJECT_ID(N'SampleClass') IS NULL)
+	EXECUTE('
+		CREATE TABLE [SampleClass]
+		(
+			[Id]    Int NOT NULL,
+			[Value] Int NOT NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -56,5 +59,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [SampleClass]
+IF (OBJECT_ID(N'SampleClass') IS NOT NULL)
+	DROP TABLE [SampleClass]
 

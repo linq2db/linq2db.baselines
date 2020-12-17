@@ -1,12 +1,15 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [AsyncDataTable]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'AsyncDataTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [AsyncDataTable]
+		(
+			[Id] Int NOT NULL,
 
-	CONSTRAINT [PK_AsyncDataTable] PRIMARY KEY CLUSTERED ([Id])
-)
+			CONSTRAINT [PK_AsyncDataTable] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -48,5 +51,6 @@ SELECT
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [AsyncDataTable]
+IF (OBJECT_ID(N'AsyncDataTable') IS NOT NULL)
+	DROP TABLE [AsyncDataTable]
 
