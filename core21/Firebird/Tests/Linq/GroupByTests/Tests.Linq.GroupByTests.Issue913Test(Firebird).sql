@@ -1,13 +1,18 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "Issue913Test"
-(
-	"InstrumentID"  Int      NOT NULL,
-	"TradingStatus" NChar(1),
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue913Test')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Issue913Test"
+			(
+				"InstrumentID"  Int      NOT NULL,
+				"TradingStatus" NChar(1),
 
-	CONSTRAINT "PK_Issue913Test" PRIMARY KEY ("InstrumentID")
-)
+				CONSTRAINT "PK_Issue913Test" PRIMARY KEY ("InstrumentID")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -50,5 +55,8 @@ GROUP BY
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Issue913Test"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue913Test')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue913Test"';
+END
 

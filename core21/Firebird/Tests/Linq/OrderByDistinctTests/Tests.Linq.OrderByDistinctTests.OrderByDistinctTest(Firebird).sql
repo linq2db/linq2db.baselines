@@ -1,15 +1,20 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "OrderByDistinctData"
-(
-	"Id"            Int                                    NOT NULL,
-	"DuplicateData" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"OrderData1"    Int                                    NOT NULL,
-	"OrderData2"    Int                                    NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'OrderByDistinctData')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "OrderByDistinctData"
+			(
+				"Id"            Int                                    NOT NULL,
+				"DuplicateData" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"OrderData1"    Int                                    NOT NULL,
+				"OrderData2"    Int                                    NOT NULL,
 
-	CONSTRAINT "PK_OrderByDistinctData" PRIMARY KEY ("Id")
-)
+				CONSTRAINT "PK_OrderByDistinctData" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -103,5 +108,8 @@ ORDER BY
 BeforeExecute
 -- Firebird
 
-DROP TABLE "OrderByDistinctData"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'OrderByDistinctData')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "OrderByDistinctData"';
+END
 

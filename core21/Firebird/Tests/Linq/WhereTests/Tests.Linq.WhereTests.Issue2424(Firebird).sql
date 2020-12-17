@@ -1,11 +1,16 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "Isue2424Table"
-(
-	"Id"       Int                                    NOT NULL,
-	"StrValue" VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Isue2424Table')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Isue2424Table"
+			(
+				"Id"       Int                                    NOT NULL,
+				"StrValue" VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -308,5 +313,8 @@ WHERE
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Isue2424Table"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Isue2424Table')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Isue2424Table"';
+END
 
