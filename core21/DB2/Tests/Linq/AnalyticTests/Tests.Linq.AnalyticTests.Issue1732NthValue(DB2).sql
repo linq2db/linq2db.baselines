@@ -1,12 +1,17 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Position"
-(
-	"Group" Int NOT NULL,
-	"Order" Int NOT NULL,
-	"Id"    Int     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Position"
+		(
+			"Group" Int NOT NULL,
+			"Order" Int NOT NULL,
+			"Id"    Int     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -39,5 +44,8 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Position"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Position"';
+END
 

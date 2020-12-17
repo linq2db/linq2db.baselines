@@ -1,29 +1,39 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "gt_s_one"
-(
-	"id"   Int           NOT NULL,
-	"col1" NVarChar(255)     NULL,
-	"col2" NVarChar(255)     NULL,
-	"col3" NVarChar(255)     NULL,
-	"col4" NVarChar(255)     NULL,
-	"col5" NVarChar(255)     NULL,
-	"col6" NVarChar(255)     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "gt_s_one"
+		(
+			"id"   Int           NOT NULL,
+			"col1" NVarChar(255)     NULL,
+			"col2" NVarChar(255)     NULL,
+			"col3" NVarChar(255)     NULL,
+			"col4" NVarChar(255)     NULL,
+			"col5" NVarChar(255)     NULL,
+			"col6" NVarChar(255)     NULL,
 
-	CONSTRAINT "PK_gt_s_one" PRIMARY KEY ("id")
-)
+			CONSTRAINT "PK_gt_s_one" PRIMARY KEY ("id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "access_mode"
-(
-	"id"   Int           NOT NULL,
-	"code" NVarChar(255)     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "access_mode"
+		(
+			"id"   Int           NOT NULL,
+			"code" NVarChar(255)     NULL,
 
-	CONSTRAINT "PK_access_mode" PRIMARY KEY ("id")
-)
+			CONSTRAINT "PK_access_mode" PRIMARY KEY ("id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -107,10 +117,16 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "access_mode"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "access_mode"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "gt_s_one"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "gt_s_one"';
+END
 

@@ -1,14 +1,19 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Categories"
-(
-	"CategoryID"   Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"CategoryName" NVarChar(255)                              NOT NULL,
-	"Description"  NVarChar(255)                                  NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Categories"
+		(
+			"CategoryID"   Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"CategoryName" NVarChar(255)                              NOT NULL,
+			"Description"  NVarChar(255)                                  NULL,
 
-	CONSTRAINT "PK_Categories" PRIMARY KEY ("CategoryID")
-)
+			CONSTRAINT "PK_Categories" PRIMARY KEY ("CategoryID")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -25,15 +30,20 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Products"
-(
-	"ProductID"       Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"ProductName"     NVarChar(255)                              NOT NULL,
-	"CategoryID"      Int                                            NULL,
-	"QuantityPerUnit" NVarChar(255)                                  NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Products"
+		(
+			"ProductID"       Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"ProductName"     NVarChar(255)                              NOT NULL,
+			"CategoryID"      Int                                            NULL,
+			"QuantityPerUnit" NVarChar(255)                                  NULL,
 
-	CONSTRAINT "PK_Products" PRIMARY KEY ("ProductID")
-)
+			CONSTRAINT "PK_Products" PRIMARY KEY ("ProductID")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -78,10 +88,16 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Products"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Products"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Categories"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Categories"';
+END
 

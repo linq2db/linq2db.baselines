@@ -1,11 +1,16 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Isue2424Table"
-(
-	"Id"       Int           NOT NULL,
-	"StrValue" NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Isue2424Table"
+		(
+			"Id"       Int           NOT NULL,
+			"StrValue" NVarChar(255)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -287,5 +292,8 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "Isue2424Table"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Isue2424Table"';
+END
 
