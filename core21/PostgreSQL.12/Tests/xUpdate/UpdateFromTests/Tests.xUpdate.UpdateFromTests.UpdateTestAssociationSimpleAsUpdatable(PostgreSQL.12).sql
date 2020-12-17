@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "UpdatedEntities"
+CREATE TABLE IF NOT EXISTS "UpdatedEntities"
 (
 	id           Int NOT NULL,
 	"Value1"     Int NOT NULL,
@@ -32,7 +32,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "UpdateRelation"
+CREATE TABLE IF NOT EXISTS "UpdateRelation"
 (
 	id              Int NOT NULL,
 	"RelatedValue1" Int NOT NULL,
@@ -92,10 +92,10 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "UpdateRelation"
+DROP TABLE IF EXISTS "UpdateRelation"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "UpdatedEntities"
+DROP TABLE IF EXISTS "UpdatedEntities"
 
