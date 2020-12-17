@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Contract_Distributor_Agent`
+CREATE TABLE IF NOT EXISTS `Contract_Distributor_Agent`
 (
 	`Agent_Id`                      INT          NOT NULL,
 	`Distributor_Id`                INT          NOT NULL,
@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Agent`
+CREATE TABLE IF NOT EXISTS `Agent`
 (
 	`Agent_Id`   INT          NOT NULL,
 	`First_Name` VARCHAR(255)     NULL,
@@ -51,7 +51,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Distributor`
+CREATE TABLE IF NOT EXISTS `Distributor`
 (
 	`Distributor_Id`   INT          NOT NULL,
 	`Type_Code`        VARCHAR(255)     NULL,
@@ -73,7 +73,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Distributor_Commercial_Propert`
+CREATE TABLE IF NOT EXISTS `Distributor_Commercial_Propert`
 (
 	`Distributor_Id`         INT          NOT NULL,
 	`Commercial_Property_Id` INT          NOT NULL,
@@ -95,7 +95,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Commercial_Property`
+CREATE TABLE IF NOT EXISTS `Commercial_Property`
 (
 	`Commercial_Property_Id` INT          NOT NULL,
 	`Street_Number`          VARCHAR(255)     NULL,
@@ -125,7 +125,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Contract_Dates`
+CREATE TABLE IF NOT EXISTS `Contract_Dates`
 (
 	`Contract_Id`    INT          NOT NULL,
 	`Type_Code`      VARCHAR(255)     NULL,
@@ -147,7 +147,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Cities`
+CREATE TABLE IF NOT EXISTS `Cities`
 (
 	`City_Code` VARCHAR(255)     NULL,
 	`City_Name` VARCHAR(255)     NULL
@@ -284,35 +284,35 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Cities`
+DROP TABLE IF EXISTS `Cities`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Contract_Dates`
+DROP TABLE IF EXISTS `Contract_Dates`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Commercial_Property`
+DROP TABLE IF EXISTS `Commercial_Property`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Distributor_Commercial_Propert`
+DROP TABLE IF EXISTS `Distributor_Commercial_Propert`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Distributor`
+DROP TABLE IF EXISTS `Distributor`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Agent`
+DROP TABLE IF EXISTS `Agent`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Contract_Distributor_Agent`
+DROP TABLE IF EXISTS `Contract_Distributor_Agent`
 

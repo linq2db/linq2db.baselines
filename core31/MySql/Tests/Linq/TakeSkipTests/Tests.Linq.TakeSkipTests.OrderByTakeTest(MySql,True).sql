@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `TakeSkipClass`
+CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
 	`Value` VARCHAR(10)     NULL
 )
@@ -35,5 +35,5 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `TakeSkipClass`
+DROP TABLE IF EXISTS `TakeSkipClass`
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `OrderByDistinctData`
+CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
 	`Id`            INT          NOT NULL,
 	`DuplicateData` VARCHAR(255)     NULL,
@@ -108,5 +108,5 @@ LIMIT @skip, @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `OrderByDistinctData`
+DROP TABLE IF EXISTS `OrderByDistinctData`
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `InstanceClass`
+CREATE TABLE IF NOT EXISTS `InstanceClass`
 (
 	`Id`    INT NOT NULL,
 	`Value` INT NOT NULL
@@ -50,5 +50,5 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `InstanceClass`
+DROP TABLE IF EXISTS `InstanceClass`
 

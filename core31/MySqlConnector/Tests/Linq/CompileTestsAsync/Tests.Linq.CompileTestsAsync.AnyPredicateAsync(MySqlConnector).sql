@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `AsyncDataTable`
+CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 (
 	`Id` INT NOT NULL,
 
@@ -49,5 +49,5 @@ SELECT
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `AsyncDataTable`
+DROP TABLE IF EXISTS `AsyncDataTable`
 

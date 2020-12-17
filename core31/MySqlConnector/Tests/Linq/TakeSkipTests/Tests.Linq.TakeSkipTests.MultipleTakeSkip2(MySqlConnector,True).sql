@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `TakeSkipClass`
+CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
 	`Value` VARCHAR(10)     NULL
 )
@@ -41,5 +41,5 @@ LIMIT @skip_2, @take_2
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `TakeSkipClass`
+DROP TABLE IF EXISTS `TakeSkipClass`
 
