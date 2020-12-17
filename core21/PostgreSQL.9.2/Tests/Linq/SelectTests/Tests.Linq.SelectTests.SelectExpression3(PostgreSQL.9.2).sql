@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE "SelectExpressionTable"
+CREATE TABLE IF NOT EXISTS "SelectExpressionTable"
 (
 	"ID" Int NOT NULL,
 
@@ -32,5 +32,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "SelectExpressionTable"
+DROP TABLE IF EXISTS "SelectExpressionTable"
 
