@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "SampleClass"
+CREATE TABLE IF NOT EXISTS "SampleClass"
 (
 	"Id"     Int         NOT NULL,
 	"Value1" text            NULL,
@@ -42,5 +42,5 @@ GROUP BY
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "SampleClass"
+DROP TABLE IF EXISTS "SampleClass"
 
