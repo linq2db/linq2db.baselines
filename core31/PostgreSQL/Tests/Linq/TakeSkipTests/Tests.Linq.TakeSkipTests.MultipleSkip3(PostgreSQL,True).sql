@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TakeSkipClass"
+CREATE TABLE IF NOT EXISTS "TakeSkipClass"
 (
 	"Value" VarChar(10)     NULL
 )
@@ -39,5 +39,5 @@ OFFSET :skip_3
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TakeSkipClass"
+DROP TABLE IF EXISTS "TakeSkipClass"
 
