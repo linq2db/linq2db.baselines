@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `stVersions`
+CREATE TABLE IF NOT EXISTS `stVersions`
 (
 	`inId`     INT NOT NULL,
 	`inIdMain` INT NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE `stVersions`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `rlStatesTypesAndUserGroups`
+CREATE TABLE IF NOT EXISTS `rlStatesTypesAndUserGroups`
 (
 	`inIdState` INT NOT NULL,
 	`inIdType`  INT NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE `rlStatesTypesAndUserGroups`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `stMain`
+CREATE TABLE IF NOT EXISTS `stMain`
 (
 	`inId`     INT NOT NULL,
 	`inIdType` INT NOT NULL,
@@ -46,15 +46,15 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `stMain`
+DROP TABLE IF EXISTS `stMain`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `rlStatesTypesAndUserGroups`
+DROP TABLE IF EXISTS `rlStatesTypesAndUserGroups`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `stVersions`
+DROP TABLE IF EXISTS `stVersions`
 

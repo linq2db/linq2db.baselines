@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `UpdatedEntities`
+CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 (
 	`id`         INT NOT NULL,
 	`Value1`     INT NOT NULL,
@@ -32,7 +32,7 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `NewEntities`
+CREATE TABLE IF NOT EXISTS `NewEntities`
 (
 	`id`     INT NOT NULL,
 	`Value1` INT NOT NULL,
@@ -93,10 +93,10 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `NewEntities`
+DROP TABLE IF EXISTS `NewEntities`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `UpdatedEntities`
+DROP TABLE IF EXISTS `UpdatedEntities`
 

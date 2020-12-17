@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `SelectExpressionTable`
+CREATE TABLE IF NOT EXISTS `SelectExpressionTable`
 (
 	`ID` INT NOT NULL,
 
@@ -37,5 +37,5 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `SelectExpressionTable`
+DROP TABLE IF EXISTS `SelectExpressionTable`
 

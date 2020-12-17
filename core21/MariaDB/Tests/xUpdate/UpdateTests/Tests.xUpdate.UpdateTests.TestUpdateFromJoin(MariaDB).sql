@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `gt_s_one`
+CREATE TABLE IF NOT EXISTS `gt_s_one`
 (
 	`id`   INT          NOT NULL,
 	`col1` VARCHAR(255)     NULL,
@@ -17,7 +17,7 @@ CREATE TABLE `gt_s_one`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `access_mode`
+CREATE TABLE IF NOT EXISTS `access_mode`
 (
 	`id`   INT          NOT NULL,
 	`code` VARCHAR(255)     NULL,
@@ -48,10 +48,10 @@ SET
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `access_mode`
+DROP TABLE IF EXISTS `access_mode`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `gt_s_one`
+DROP TABLE IF EXISTS `gt_s_one`
 
