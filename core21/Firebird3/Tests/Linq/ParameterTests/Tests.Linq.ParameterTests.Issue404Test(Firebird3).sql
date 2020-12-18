@@ -2,6 +2,14 @@
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404One')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Table404One"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404One')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Table404One"
@@ -20,6 +28,14 @@ INSERT INTO "Table404One"
 )
 SELECT 1 FROM rdb$database UNION ALL
 SELECT 2 FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404Two')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Table404Two"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -151,6 +167,14 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404One')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Table404One"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404One')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Table404One"
@@ -169,6 +193,14 @@ INSERT INTO "Table404One"
 )
 SELECT 1 FROM rdb$database UNION ALL
 SELECT 2 FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Table404Two')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Table404Two"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

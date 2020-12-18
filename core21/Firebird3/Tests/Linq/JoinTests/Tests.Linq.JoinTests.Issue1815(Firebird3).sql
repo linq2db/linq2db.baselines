@@ -2,6 +2,14 @@
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StLink')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "StLink"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StLink')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "StLink"
@@ -26,6 +34,14 @@ INSERT INTO "StLink"
 )
 SELECT 1,2,1 FROM rdb$database UNION ALL
 SELECT 2,NULL,NULL FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'EdtLink')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "EdtLink"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

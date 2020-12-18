@@ -2,6 +2,14 @@
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'gt_s_one')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "gt_s_one"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'gt_s_one')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "gt_s_one"
@@ -17,6 +25,14 @@ EXECUTE BLOCK AS BEGIN
 				CONSTRAINT "PK_gt_s_one" PRIMARY KEY ("id")
 			)
 		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'access_mode')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "access_mode"';
 END
 
 BeforeExecute

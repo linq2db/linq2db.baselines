@@ -2,6 +2,14 @@
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Contract_Distributor_Agent')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Contract_Distributor_Agent"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Contract_Distributor_Agent')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Contract_Distributor_Agent"
@@ -34,6 +42,14 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Agent')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Agent"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Agent')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Agent"
@@ -55,6 +71,14 @@ INSERT INTO "Agent"
 	"Last_Name"
 )
 SELECT 1,'x','x' FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Distributor')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Distributor"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -86,6 +110,14 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Distributor_Commercial_Propert')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Distributor_Commercial_Propert"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Distributor_Commercial_Propert')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Distributor_Commercial_Propert"
@@ -107,6 +139,14 @@ INSERT INTO "Distributor_Commercial_Propert"
 	"Distributor_Type_Code"
 )
 SELECT 1,1,'RE' FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Commercial_Property')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Commercial_Property"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -146,6 +186,14 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Contract_Dates')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Contract_Dates"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Contract_Dates')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Contract_Dates"
@@ -167,6 +215,14 @@ INSERT INTO "Contract_Dates"
 	"Effective_Date"
 )
 SELECT 198827882,'ESTCOE','x' FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Cities')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Cities"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
