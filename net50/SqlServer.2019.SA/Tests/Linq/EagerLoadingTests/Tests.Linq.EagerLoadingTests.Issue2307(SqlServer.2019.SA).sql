@@ -1,12 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-CREATE TABLE [AttendanceSheet]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'[AttendanceSheet]', N'U') IS NOT NULL)
+	DROP TABLE [AttendanceSheet]
 
-	CONSTRAINT [PK_AttendanceSheet] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+IF (OBJECT_ID(N'[AttendanceSheet]', N'U') IS NULL)
+	CREATE TABLE [AttendanceSheet]
+	(
+		[Id] Int NOT NULL,
+
+		CONSTRAINT [PK_AttendanceSheet] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -22,11 +29,18 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-CREATE TABLE [AttendanceSheetRow]
-(
-	[Id]                Int NOT NULL,
-	[AttendanceSheetId] Int NOT NULL
-)
+IF (OBJECT_ID(N'[AttendanceSheetRow]', N'U') IS NOT NULL)
+	DROP TABLE [AttendanceSheetRow]
+
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+IF (OBJECT_ID(N'[AttendanceSheetRow]', N'U') IS NULL)
+	CREATE TABLE [AttendanceSheetRow]
+	(
+		[Id]                Int NOT NULL,
+		[AttendanceSheetId] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -64,10 +78,12 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [AttendanceSheetRow]
+IF (OBJECT_ID(N'[AttendanceSheetRow]', N'U') IS NOT NULL)
+	DROP TABLE [AttendanceSheetRow]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [AttendanceSheet]
+IF (OBJECT_ID(N'[AttendanceSheet]', N'U') IS NOT NULL)
+	DROP TABLE [AttendanceSheet]
 

@@ -1,14 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-CREATE TABLE [DynamicTable]
-(
-	[ID]             Int  NOT NULL IDENTITY,
-	[Not Identifier] Int  NOT NULL,
-	[Some Value]     Int  NOT NULL,
+IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
+	DROP TABLE [DynamicTable]
 
-	CONSTRAINT [PK_DynamicTable] PRIMARY KEY CLUSTERED ([ID])
-)
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NULL)
+	CREATE TABLE [DynamicTable]
+	(
+		[ID]             Int  NOT NULL IDENTITY,
+		[Not Identifier] Int  NOT NULL,
+		[Some Value]     Int  NOT NULL,
+
+		CONSTRAINT [PK_DynamicTable] PRIMARY KEY CLUSTERED ([ID])
+	)
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -37,5 +44,6 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [DynamicTable]
+IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
+	DROP TABLE [DynamicTable]
 
