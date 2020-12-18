@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS i1084_person
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS i1084_person
 (
 	"Id"            Int NOT NULL,
@@ -20,6 +25,11 @@ INSERT INTO i1084_person
 VALUES
 (1,1,0),
 (2,2,0)
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS i1084_student
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
