@@ -13,5 +13,8 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	(t.MoneyValue = 4.5)
+	CASE
+		WHEN t.MoneyValue <> 4.5 THEN 't'
+		ELSE 'f'
+	END = 'f'
 
