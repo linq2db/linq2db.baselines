@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+DROP TABLE IF EXISTS gt_s_one
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS gt_s_one
 (
 	id   Int  NOT NULL,
@@ -13,6 +18,11 @@ CREATE TABLE IF NOT EXISTS gt_s_one
 
 	CONSTRAINT "PK_gt_s_one" PRIMARY KEY (id)
 )
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+DROP TABLE IF EXISTS access_mode
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

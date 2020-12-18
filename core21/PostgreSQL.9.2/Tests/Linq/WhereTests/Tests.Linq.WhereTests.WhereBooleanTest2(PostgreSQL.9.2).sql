@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+DROP TABLE IF EXISTS "WhereCases"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "WhereCases"
 (
 	"Id"                Int     NOT NULL,
