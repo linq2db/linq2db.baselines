@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [TakeSkipClass]
 (
 	[Value] VarChar(10)     NULL
 )
@@ -87,5 +92,5 @@ SELECT
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 

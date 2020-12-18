@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [MasterClass]
+DROP TABLE IF EXISTS [MasterClass]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [MasterClass]
 (
 	[Id1]        INTEGER       NOT NULL,
 	[Id2]        INTEGER       NOT NULL,
@@ -36,7 +41,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [DetailClass]
+DROP TABLE IF EXISTS [DetailClass]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [DetailClass]
 (
 	[DetailId]    INTEGER       NOT NULL,
 	[MasterId]    INTEGER           NULL,
@@ -151,10 +161,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [DetailClass]
+DROP TABLE IF EXISTS [DetailClass]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [MasterClass]
+DROP TABLE IF EXISTS [MasterClass]
 

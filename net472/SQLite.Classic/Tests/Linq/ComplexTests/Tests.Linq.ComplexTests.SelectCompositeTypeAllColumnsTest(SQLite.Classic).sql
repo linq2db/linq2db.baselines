@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [User]
+DROP TABLE IF EXISTS [User]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [User]
 (
 	[city]            NVarChar(255)     NULL,
 	[user_name]       NVarChar(255)     NULL,
@@ -36,5 +41,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [User]
+DROP TABLE IF EXISTS [User]
 

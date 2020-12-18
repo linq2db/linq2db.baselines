@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [UpdatedEntities]
+DROP TABLE IF EXISTS [UpdatedEntities]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [UpdatedEntities]
 (
 	[id]         INTEGER NOT NULL,
 	[Value1]     INTEGER NOT NULL,
@@ -135,7 +140,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [UpdateRelation]
+DROP TABLE IF EXISTS [UpdateRelation]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [UpdateRelation]
 (
 	[id]            INTEGER NOT NULL,
 	[RelatedValue1] INTEGER NOT NULL,
@@ -288,10 +298,10 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [UpdateRelation]
+DROP TABLE IF EXISTS [UpdateRelation]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [UpdatedEntities]
+DROP TABLE IF EXISTS [UpdatedEntities]
 

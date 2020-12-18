@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [AsyncDataTable]
+DROP TABLE IF EXISTS [AsyncDataTable]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [AsyncDataTable]
 (
 	[Id] INTEGER NOT NULL,
 
@@ -45,5 +50,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [AsyncDataTable]
+DROP TABLE IF EXISTS [AsyncDataTable]
 
