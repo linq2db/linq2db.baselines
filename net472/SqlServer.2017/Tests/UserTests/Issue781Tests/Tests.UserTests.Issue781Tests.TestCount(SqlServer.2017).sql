@@ -20,7 +20,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -32,7 +32,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
