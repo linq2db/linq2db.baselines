@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+DROP TABLE IF EXISTS "DynamicTable"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "DynamicTable"
 (
 	"ID"             SERIAL  NOT NULL,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+DROP TABLE IF EXISTS "BaseTable"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "BaseTable"
 (
 	"Value" Int NOT NULL,

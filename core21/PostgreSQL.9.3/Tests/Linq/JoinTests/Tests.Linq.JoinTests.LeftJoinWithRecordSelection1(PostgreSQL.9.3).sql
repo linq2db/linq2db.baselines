@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+DROP TABLE IF EXISTS "Fact"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "Fact"
 (
 	"Id" Int NOT NULL,
@@ -19,6 +24,11 @@ VALUES
 (3),
 (4),
 (5)
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+DROP TABLE IF EXISTS "Tag"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
