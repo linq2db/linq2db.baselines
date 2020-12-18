@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
+DROP TABLE IF EXISTS `SampleData`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `SampleData`
 (
 	`Id`     INT NOT NULL,

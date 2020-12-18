@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
+DROP TABLE IF EXISTS `OrderByDistinctData`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
 	`Id`            INT          NOT NULL,

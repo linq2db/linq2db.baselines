@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
+DROP TABLE IF EXISTS `DynamicTable`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `DynamicTable`
 (
 	`ID`             INT AUTO_INCREMENT NOT NULL,

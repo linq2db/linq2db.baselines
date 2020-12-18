@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
+DROP TABLE IF EXISTS `Position`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Position`
 (
 	`Group` INT NOT NULL,

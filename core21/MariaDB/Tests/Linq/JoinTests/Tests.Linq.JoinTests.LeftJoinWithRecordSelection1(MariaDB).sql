@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
+DROP TABLE IF EXISTS `Fact`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Fact`
 (
 	`Id` INT NOT NULL,
@@ -19,6 +24,11 @@ VALUES
 (3),
 (4),
 (5)
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+DROP TABLE IF EXISTS `Tag`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
