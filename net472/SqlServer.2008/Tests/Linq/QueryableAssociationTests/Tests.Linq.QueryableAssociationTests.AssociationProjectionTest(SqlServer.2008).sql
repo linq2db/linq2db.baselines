@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [SomeEntity]
-(
-	[Id]       Int            NOT NULL,
-	[OwnerStr] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[SomeEntity]', N'U') IS NOT NULL)
+	DROP TABLE [SomeEntity]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[SomeEntity]', N'U') IS NULL)
+	CREATE TABLE [SomeEntity]
+	(
+		[Id]       Int            NOT NULL,
+		[OwnerStr] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -30,11 +37,18 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [SomeOtherEntity]
-(
-	[Id]       Int            NOT NULL,
-	[StrValue] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
+	DROP TABLE [SomeOtherEntity]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NULL)
+	CREATE TABLE [SomeOtherEntity]
+	(
+		[Id]       Int            NOT NULL,
+		[StrValue] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -81,10 +95,12 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [SomeOtherEntity]
+IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
+	DROP TABLE [SomeOtherEntity]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [SomeEntity]
+IF (OBJECT_ID(N'[SomeEntity]', N'U') IS NOT NULL)
+	DROP TABLE [SomeEntity]
 
