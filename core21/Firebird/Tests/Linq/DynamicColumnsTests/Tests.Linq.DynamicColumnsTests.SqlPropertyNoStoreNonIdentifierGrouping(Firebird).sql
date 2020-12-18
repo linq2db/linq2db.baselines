@@ -2,6 +2,18 @@
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_DynamicTable')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_DynamicTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_DynamicTable')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_DynamicTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DynamicTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "DynamicTable"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DynamicTable')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "DynamicTable"

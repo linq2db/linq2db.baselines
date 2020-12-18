@@ -2,6 +2,18 @@
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Categories')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Categories"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Categories')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Categories"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Categories')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Categories"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Categories')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Categories"
@@ -37,6 +49,18 @@ INSERT INTO "Categories"
 )
 SELECT 'Name 1','Desc 1' FROM rdb$database UNION ALL
 SELECT 'Name 2','Desc 2' FROM rdb$database
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Products')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Products"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Products')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Products"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Products')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Products"';
+END
 
 BeforeExecute
 -- Firebird

@@ -2,6 +2,14 @@
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Fact')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Fact"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Fact')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Fact"
@@ -23,6 +31,14 @@ INSERT INTO "Fact"
 SELECT 3 FROM rdb$database UNION ALL
 SELECT 4 FROM rdb$database UNION ALL
 SELECT 5 FROM rdb$database
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Tag')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Tag"';
+END
 
 BeforeExecute
 -- Firebird

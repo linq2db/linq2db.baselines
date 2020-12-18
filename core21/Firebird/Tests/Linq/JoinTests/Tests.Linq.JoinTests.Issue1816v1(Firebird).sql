@@ -2,6 +2,14 @@
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stVersions')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "stVersions"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stVersions')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "stVersions"
@@ -18,6 +26,14 @@ BeforeExecute
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'rlStatesTypesAndUserGroups')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "rlStatesTypesAndUserGroups"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'rlStatesTypesAndUserGroups')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "rlStatesTypesAndUserGroups"
@@ -28,6 +44,14 @@ EXECUTE BLOCK AS BEGIN
 				CONSTRAINT "PK_rlStatesTypesAndUserGroups" PRIMARY KEY ("inIdState", "inIdType")
 			)
 		';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stMain')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "stMain"';
 END
 
 BeforeExecute

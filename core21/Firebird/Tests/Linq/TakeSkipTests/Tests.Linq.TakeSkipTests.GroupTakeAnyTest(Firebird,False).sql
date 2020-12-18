@@ -2,6 +2,14 @@
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TakeSkipClass')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TakeSkipClass"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TakeSkipClass')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "TakeSkipClass"

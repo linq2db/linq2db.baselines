@@ -2,6 +2,14 @@
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'UpdatedEntities')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "UpdatedEntities"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'UpdatedEntities')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "UpdatedEntities"
@@ -32,6 +40,14 @@ SELECT 0,1,1,3,0 FROM rdb$database UNION ALL
 SELECT 1,11,12,13,1 FROM rdb$database UNION ALL
 SELECT 2,21,22,23,2 FROM rdb$database UNION ALL
 SELECT 3,31,32,33,3 FROM rdb$database
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'UpdateRelation')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "UpdateRelation"';
+END
 
 BeforeExecute
 -- Firebird
