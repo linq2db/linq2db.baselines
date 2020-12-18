@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'Fact') IS NOT NULL)
+	DROP TABLE [Fact]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'Fact') IS NULL)
 	EXECUTE('
 		CREATE TABLE [Fact]
@@ -21,6 +27,12 @@ INSERT INTO [Fact]
 SELECT 3 UNION ALL
 SELECT 4 UNION ALL
 SELECT 5
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Tag') IS NOT NULL)
+	DROP TABLE [Tag]
 
 BeforeExecute
 -- Sybase.Managed Sybase

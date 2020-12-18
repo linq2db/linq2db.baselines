@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'UpdatedEntities') IS NOT NULL)
+	DROP TABLE [UpdatedEntities]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'UpdatedEntities') IS NULL)
 	EXECUTE('
 		CREATE TABLE [UpdatedEntities]
@@ -30,6 +36,12 @@ SELECT 0,1,1,3,0 UNION ALL
 SELECT 1,11,12,13,1 UNION ALL
 SELECT 2,21,22,23,2 UNION ALL
 SELECT 3,31,32,33,3
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'UpdateRelation') IS NOT NULL)
+	DROP TABLE [UpdateRelation]
 
 BeforeExecute
 -- Sybase.Managed Sybase

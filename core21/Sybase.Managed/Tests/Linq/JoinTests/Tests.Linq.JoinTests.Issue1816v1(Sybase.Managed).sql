@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'stVersions') IS NOT NULL)
+	DROP TABLE [stVersions]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'stVersions') IS NULL)
 	EXECUTE('
 		CREATE TABLE [stVersions]
@@ -15,6 +21,12 @@ IF (OBJECT_ID(N'stVersions') IS NULL)
 BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'rlStatesTypesAndUserGroups') IS NOT NULL)
+	DROP TABLE [rlStatesTypesAndUserGroups]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'rlStatesTypesAndUserGroups') IS NULL)
 	EXECUTE('
 		CREATE TABLE [rlStatesTypesAndUserGroups]
@@ -25,6 +37,12 @@ IF (OBJECT_ID(N'rlStatesTypesAndUserGroups') IS NULL)
 			CONSTRAINT PK_rlStatesTypesAndUserGroups PRIMARY KEY CLUSTERED ([inIdState], [inIdType])
 		)
 	')
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'stMain') IS NOT NULL)
+	DROP TABLE [stMain]
 
 BeforeExecute
 -- Sybase.Managed Sybase

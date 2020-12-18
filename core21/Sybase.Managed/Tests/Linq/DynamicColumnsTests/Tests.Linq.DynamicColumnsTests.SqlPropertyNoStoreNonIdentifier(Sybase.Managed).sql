@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'DynamicTable') IS NOT NULL)
+	DROP TABLE [DynamicTable]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'DynamicTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [DynamicTable]

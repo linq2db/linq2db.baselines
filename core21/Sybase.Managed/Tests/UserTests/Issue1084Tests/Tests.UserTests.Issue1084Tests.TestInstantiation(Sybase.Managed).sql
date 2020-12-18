@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'i1084_person') IS NOT NULL)
+	DROP TABLE [i1084_person]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'i1084_person') IS NULL)
 	EXECUTE('
 		CREATE TABLE [i1084_person]
@@ -22,6 +28,12 @@ INSERT INTO [i1084_person]
 )
 SELECT 1,1,0 UNION ALL
 SELECT 2,2,0
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'i1084_student') IS NOT NULL)
+	DROP TABLE [i1084_student]
 
 BeforeExecute
 -- Sybase.Managed Sybase

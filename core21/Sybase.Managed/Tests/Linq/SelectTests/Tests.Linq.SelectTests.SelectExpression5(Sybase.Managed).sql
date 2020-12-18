@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'SelectExpressionTable') IS NOT NULL)
+	DROP TABLE [SelectExpressionTable]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'SelectExpressionTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [SelectExpressionTable]

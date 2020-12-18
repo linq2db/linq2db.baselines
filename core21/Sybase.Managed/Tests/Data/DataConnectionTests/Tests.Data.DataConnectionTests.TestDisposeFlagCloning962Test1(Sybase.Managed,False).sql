@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'Categories') IS NOT NULL)
+	DROP TABLE [Categories]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'Categories') IS NULL)
 	EXECUTE('
 		CREATE TABLE [Categories]
@@ -23,6 +29,12 @@ INSERT INTO [Categories]
 )
 SELECT 'Name 1','Desc 1' UNION ALL
 SELECT 'Name 2','Desc 2'
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Products') IS NOT NULL)
+	DROP TABLE [Products]
 
 BeforeExecute
 -- Sybase.Managed Sybase

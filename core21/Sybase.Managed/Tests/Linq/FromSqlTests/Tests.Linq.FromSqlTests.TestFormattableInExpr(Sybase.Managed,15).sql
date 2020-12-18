@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'sample_class') IS NOT NULL)
+	DROP TABLE [sample_class]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'sample_class') IS NULL)
 	EXECUTE('
 		CREATE TABLE [sample_class]

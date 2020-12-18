@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'Contract_Distributor_Agent') IS NOT NULL)
+	DROP TABLE [Contract_Distributor_Agent]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'Contract_Distributor_Agent') IS NULL)
 	EXECUTE('
 		CREATE TABLE [Contract_Distributor_Agent]
@@ -31,6 +37,12 @@ SELECT 1,1,198827882,'CC','OFFICE','REPRESENTS'
 BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'Agent') IS NOT NULL)
+	DROP TABLE [Agent]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'Agent') IS NULL)
 	EXECUTE('
 		CREATE TABLE [Agent]
@@ -51,6 +63,12 @@ INSERT INTO [Agent]
 	[Last_Name]
 )
 SELECT 1,'x','x'
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Distributor') IS NOT NULL)
+	DROP TABLE [Distributor]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -79,6 +97,12 @@ SELECT 1,'RE','x'
 BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'Distributor_Commercial_Propert') IS NOT NULL)
+	DROP TABLE Distributor_Commercial_Propert
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'Distributor_Commercial_Propert') IS NULL)
 	EXECUTE('
 		CREATE TABLE Distributor_Commercial_Propert
@@ -99,6 +123,12 @@ INSERT INTO Distributor_Commercial_Propert
 	[Distributor_Type_Code]
 )
 SELECT 1,1,'RE'
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Commercial_Property') IS NOT NULL)
+	DROP TABLE [Commercial_Property]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -135,6 +165,12 @@ SELECT 1,'x','x','x','x','x','x'
 BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'Contract_Dates') IS NOT NULL)
+	DROP TABLE [Contract_Dates]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'Contract_Dates') IS NULL)
 	EXECUTE('
 		CREATE TABLE [Contract_Dates]
@@ -155,6 +191,12 @@ INSERT INTO [Contract_Dates]
 	[Effective_Date]
 )
 SELECT 198827882,'ESTCOE','x'
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Cities') IS NOT NULL)
+	DROP TABLE [Cities]
 
 BeforeExecute
 -- Sybase.Managed Sybase

@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'OrderByDistinctData') IS NOT NULL)
+	DROP TABLE [OrderByDistinctData]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'OrderByDistinctData') IS NULL)
 	EXECUTE('
 		CREATE TABLE [OrderByDistinctData]

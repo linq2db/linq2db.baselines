@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'StLink') IS NOT NULL)
+	DROP TABLE [StLink]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'StLink') IS NULL)
 	EXECUTE('
 		CREATE TABLE [StLink]
@@ -24,6 +30,12 @@ INSERT INTO [StLink]
 )
 SELECT 1,2,1 UNION ALL
 SELECT 2,NULL,NULL
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'EdtLink') IS NOT NULL)
+	DROP TABLE [EdtLink]
 
 BeforeExecute
 -- Sybase.Managed Sybase

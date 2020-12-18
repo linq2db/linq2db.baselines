@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'ValueConversion') IS NOT NULL)
+	DROP TABLE [ValueConversion]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'ValueConversion') IS NULL)
 	EXECUTE('
 		CREATE TABLE [ValueConversion]

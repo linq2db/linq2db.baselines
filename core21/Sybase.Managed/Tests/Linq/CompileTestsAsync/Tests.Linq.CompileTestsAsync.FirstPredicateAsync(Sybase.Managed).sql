@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'AsyncDataTable') IS NOT NULL)
+	DROP TABLE [AsyncDataTable]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'AsyncDataTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [AsyncDataTable]
