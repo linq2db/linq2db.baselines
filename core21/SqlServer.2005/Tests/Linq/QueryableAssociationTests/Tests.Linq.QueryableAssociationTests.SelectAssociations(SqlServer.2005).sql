@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[Entity]', N'U') IS NOT NULL)
+	DROP TABLE [Entity]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Entity]', N'U') IS NULL)
 	CREATE TABLE [Entity]
 	(
@@ -15,6 +21,12 @@ INSERT INTO [Entity]
 	[Id]
 )
 SELECT 1
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NOT NULL)
+	DROP TABLE [Entity2Language]
 
 BeforeExecute
 -- SqlServer.2005
@@ -37,6 +49,12 @@ INSERT INTO [Entity2Language]
 	[LanguageId]
 )
 SELECT 1,1,1
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
+	DROP TABLE [Language]
 
 BeforeExecute
 -- SqlServer.2005

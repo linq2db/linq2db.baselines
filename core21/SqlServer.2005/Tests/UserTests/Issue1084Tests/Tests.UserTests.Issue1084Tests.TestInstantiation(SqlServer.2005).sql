@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[i1084_person]', N'U') IS NOT NULL)
+	DROP TABLE [i1084_person]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[i1084_person]', N'U') IS NULL)
 	CREATE TABLE [i1084_person]
 	(
@@ -20,6 +26,12 @@ INSERT INTO [i1084_person]
 )
 SELECT 1,1,0 UNION ALL
 SELECT 2,2,0
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[i1084_student]', N'U') IS NOT NULL)
+	DROP TABLE [i1084_student]
 
 BeforeExecute
 -- SqlServer.2005

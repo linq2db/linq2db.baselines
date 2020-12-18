@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
+	DROP TABLE [Table404One]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Table404One]', N'U') IS NULL)
 	CREATE TABLE [Table404One]
 	(
@@ -16,6 +22,12 @@ INSERT INTO [Table404One]
 )
 SELECT 1 UNION ALL
 SELECT 2
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
+	DROP TABLE [Table404Two]
 
 BeforeExecute
 -- SqlServer.2005
@@ -138,6 +150,12 @@ IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
+	DROP TABLE [Table404One]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Table404One]', N'U') IS NULL)
 	CREATE TABLE [Table404One]
 	(
@@ -153,6 +171,12 @@ INSERT INTO [Table404One]
 )
 SELECT 1 UNION ALL
 SELECT 2
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
+	DROP TABLE [Table404Two]
 
 BeforeExecute
 -- SqlServer.2005

@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NOT NULL)
+	DROP TABLE [AsyncDataTable]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NULL)
 	CREATE TABLE [AsyncDataTable]
 	(

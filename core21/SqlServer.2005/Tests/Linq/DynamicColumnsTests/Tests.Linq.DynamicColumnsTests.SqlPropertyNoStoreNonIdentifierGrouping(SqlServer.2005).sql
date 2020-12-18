@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
+	DROP TABLE [DynamicTable]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NULL)
 	CREATE TABLE [DynamicTable]
 	(

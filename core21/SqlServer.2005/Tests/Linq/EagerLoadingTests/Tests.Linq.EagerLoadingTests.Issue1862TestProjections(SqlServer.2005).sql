@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[Blog]', N'U') IS NOT NULL)
+	DROP TABLE [Blog]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Blog]', N'U') IS NULL)
 	CREATE TABLE [Blog]
 	(
@@ -21,6 +27,12 @@ INSERT INTO [Blog]
 	[UserId]
 )
 SELECT 1,N'Another .NET Core Guy',N'Doing .NET Core Stuff',N'bc7b663d0fde43278f925d8cc3a11d11'
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Post]', N'U') IS NOT NULL)
+	DROP TABLE [Post]
 
 BeforeExecute
 -- SqlServer.2005
@@ -54,6 +66,12 @@ SELECT 4,1,N'Post 4',N'Content 4',0
 BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
+	DROP TABLE [Tag]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Tag]', N'U') IS NULL)
 	CREATE TABLE [Tag]
 	(
@@ -76,6 +94,12 @@ SELECT 2,N'EF Core',0 UNION ALL
 SELECT 3,N'Dapper',0 UNION ALL
 SELECT 4,N'Slapper Dapper',0 UNION ALL
 SELECT 5,N'SqlKata',1
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[PostTag]', N'U') IS NOT NULL)
+	DROP TABLE [PostTag]
 
 BeforeExecute
 -- SqlServer.2005

@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[WhereCases]', N'U') IS NOT NULL)
+	DROP TABLE [WhereCases]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[WhereCases]', N'U') IS NULL)
 	CREATE TABLE [WhereCases]
 	(

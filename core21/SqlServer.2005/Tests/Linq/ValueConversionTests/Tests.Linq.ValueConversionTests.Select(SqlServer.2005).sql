@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
+	DROP TABLE [ValueConversion]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	CREATE TABLE [ValueConversion]
 	(
