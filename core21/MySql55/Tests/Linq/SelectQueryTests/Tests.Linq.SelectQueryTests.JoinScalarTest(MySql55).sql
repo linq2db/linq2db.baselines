@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
+DROP TABLE IF EXISTS `SampleClass`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `SampleClass`
 (
 	`Id`    INT NOT NULL,

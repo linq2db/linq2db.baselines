@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
+DROP TABLE IF EXISTS `WhereCases`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `WhereCases`
 (
 	`Id`                INT     NOT NULL,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
+DROP TABLE IF EXISTS `BaseTable`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `BaseTable`
 (
 	`Value` INT NOT NULL,

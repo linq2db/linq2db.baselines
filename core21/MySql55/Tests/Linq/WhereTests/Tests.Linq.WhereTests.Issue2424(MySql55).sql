@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
+DROP TABLE IF EXISTS `Isue2424Table`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Isue2424Table`
 (
 	`Id`       INT          NOT NULL,

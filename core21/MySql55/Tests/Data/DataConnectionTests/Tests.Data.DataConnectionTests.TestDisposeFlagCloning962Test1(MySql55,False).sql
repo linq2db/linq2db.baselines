@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
+DROP TABLE IF EXISTS `Categories`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Categories`
 (
 	`CategoryID`   INT          AUTO_INCREMENT NOT NULL,
@@ -21,6 +26,11 @@ INSERT INTO `Categories`
 VALUES
 ('Name 1','Desc 1'),
 ('Name 2','Desc 2')
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+DROP TABLE IF EXISTS `Products`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
+DROP TABLE IF EXISTS `stVersions`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `stVersions`
 (
 	`inId`     INT NOT NULL,
@@ -12,6 +17,11 @@ CREATE TABLE IF NOT EXISTS `stVersions`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+DROP TABLE IF EXISTS `rlStatesTypesAndUserGroups`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `rlStatesTypesAndUserGroups`
 (
 	`inIdState` INT NOT NULL,
@@ -19,6 +29,11 @@ CREATE TABLE IF NOT EXISTS `rlStatesTypesAndUserGroups`
 
 	CONSTRAINT `PK_rlStatesTypesAndUserGroups` PRIMARY KEY CLUSTERED (`inIdState`, `inIdType`)
 )
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+DROP TABLE IF EXISTS `stMain`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

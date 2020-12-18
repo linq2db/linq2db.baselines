@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
+DROP TABLE IF EXISTS `gt_s_one`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `gt_s_one`
 (
 	`id`   INT          NOT NULL,
@@ -13,6 +18,11 @@ CREATE TABLE IF NOT EXISTS `gt_s_one`
 
 	CONSTRAINT `PK_gt_s_one` PRIMARY KEY CLUSTERED (`id`)
 )
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+DROP TABLE IF EXISTS `access_mode`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
