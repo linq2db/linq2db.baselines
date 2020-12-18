@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [InsertTable]
+DROP TABLE IF EXISTS [InsertTable]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [InsertTable]
 (
 	[Id]         INTEGER   NOT NULL,
 	[CreatedOn]  DateTime2     NULL,
@@ -44,5 +49,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [InsertTable]
+DROP TABLE IF EXISTS [InsertTable]
 

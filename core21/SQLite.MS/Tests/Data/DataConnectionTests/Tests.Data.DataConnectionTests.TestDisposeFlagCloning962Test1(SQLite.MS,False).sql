@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Categories]
+DROP TABLE IF EXISTS [Categories]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Categories]
 (
 	[CategoryID]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[CategoryName] NVarChar(255)  NOT NULL,
@@ -23,7 +28,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Products]
+DROP TABLE IF EXISTS [Products]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Products]
 (
 	[ProductID]       INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[ProductName]     NVarChar(255)  NOT NULL,
@@ -74,10 +84,10 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Products]
+DROP TABLE IF EXISTS [Products]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Categories]
+DROP TABLE IF EXISTS [Categories]
 
