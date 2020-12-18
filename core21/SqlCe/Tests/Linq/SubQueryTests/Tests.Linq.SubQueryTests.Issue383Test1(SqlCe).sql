@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Contract_Distributor_Agent]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Contract_Distributor_Agent]
 (
 	[Agent_Id]                      Int           NOT NULL,
@@ -28,6 +33,11 @@ SELECT 1,1,198827882,'CC','OFFICE','REPRESENTS'
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [Agent]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Agent]
 (
 	[Agent_Id]   Int           NOT NULL,
@@ -45,6 +55,11 @@ INSERT INTO [Agent]
 	[Last_Name]
 )
 SELECT 1,'x','x'
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Distributor]
 
 BeforeExecute
 -- SqlCe
@@ -70,6 +85,11 @@ SELECT 1,'RE','x'
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [Distributor_Commercial_Propert]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Distributor_Commercial_Propert]
 (
 	[Distributor_Id]         Int           NOT NULL,
@@ -87,6 +107,11 @@ INSERT INTO [Distributor_Commercial_Propert]
 	[Distributor_Type_Code]
 )
 SELECT 1,1,'RE'
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Commercial_Property]
 
 BeforeExecute
 -- SqlCe
@@ -120,6 +145,11 @@ SELECT 1,'x','x','x','x','x','x'
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [Contract_Dates]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Contract_Dates]
 (
 	[Contract_Id]    Int           NOT NULL,
@@ -137,6 +167,11 @@ INSERT INTO [Contract_Dates]
 	[Effective_Date]
 )
 SELECT 198827882,'ESTCOE','x'
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Cities]
 
 BeforeExecute
 -- SqlCe

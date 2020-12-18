@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Fact]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Fact]
 (
 	[Id] Int NOT NULL,
@@ -18,6 +23,11 @@ INSERT INTO [Fact]
 SELECT 3 UNION ALL
 SELECT 4 UNION ALL
 SELECT 5
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Tag]
 
 BeforeExecute
 -- SqlCe
