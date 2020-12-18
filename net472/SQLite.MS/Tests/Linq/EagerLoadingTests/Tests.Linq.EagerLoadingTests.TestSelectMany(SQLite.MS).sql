@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [MasterClass]
+DROP TABLE IF EXISTS [MasterClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [MasterClass]
 (
 	[Id1]        INTEGER       NOT NULL,
 	[Id2]        INTEGER       NOT NULL,
@@ -36,7 +41,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [DetailClass]
+DROP TABLE IF EXISTS [DetailClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [DetailClass]
 (
 	[DetailId]    INTEGER       NOT NULL,
 	[MasterId]    INTEGER           NULL,
@@ -84,7 +94,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SubDetailClass]
+DROP TABLE IF EXISTS [SubDetailClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [SubDetailClass]
 (
 	[SubDetailId]    INTEGER       NOT NULL,
 	[DetailId]       INTEGER           NULL,
@@ -1839,15 +1854,15 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SubDetailClass]
+DROP TABLE IF EXISTS [SubDetailClass]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [DetailClass]
+DROP TABLE IF EXISTS [DetailClass]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [MasterClass]
+DROP TABLE IF EXISTS [MasterClass]
 
