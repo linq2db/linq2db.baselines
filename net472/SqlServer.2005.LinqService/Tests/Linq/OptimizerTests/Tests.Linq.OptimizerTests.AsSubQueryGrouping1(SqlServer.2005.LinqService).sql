@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
+	DROP TABLE [FirstOptimizerData]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NULL)
 	CREATE TABLE [FirstOptimizerData]
 	(
@@ -292,6 +298,12 @@ VALUES
 	@DataKey33,
 	@ValueStr
 )
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
+	DROP TABLE [SecondOptimizerData]
 
 BeforeExecute
 -- SqlServer.2005

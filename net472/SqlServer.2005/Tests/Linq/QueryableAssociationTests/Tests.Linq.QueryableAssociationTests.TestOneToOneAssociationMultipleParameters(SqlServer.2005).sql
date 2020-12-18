@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[UserGroup]', N'U') IS NOT NULL)
+	DROP TABLE [UserGroup]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[UserGroup]', N'U') IS NULL)
 	CREATE TABLE [UserGroup]
 	(
@@ -15,6 +21,12 @@ INSERT INTO [UserGroup]
 	[Id]
 )
 SELECT 1
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
+	DROP TABLE [User]
 
 BeforeExecute
 -- SqlServer.2005
@@ -39,6 +51,12 @@ INSERT INTO [User]
 SELECT 1,1,1 UNION ALL
 SELECT 2,1,1 UNION ALL
 SELECT 3,1,2
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
+	DROP TABLE [Language]
 
 BeforeExecute
 -- SqlServer.2005

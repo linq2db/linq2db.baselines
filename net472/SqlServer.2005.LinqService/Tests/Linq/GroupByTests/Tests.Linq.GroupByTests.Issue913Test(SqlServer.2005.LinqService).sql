@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NOT NULL)
+	DROP TABLE [Issue913Test]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
 	CREATE TABLE [Issue913Test]
 	(

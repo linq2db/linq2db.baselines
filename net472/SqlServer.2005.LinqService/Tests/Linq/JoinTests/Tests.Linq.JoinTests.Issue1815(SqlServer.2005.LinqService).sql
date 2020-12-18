@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[StLink]', N'U') IS NOT NULL)
+	DROP TABLE [StLink]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[StLink]', N'U') IS NULL)
 	CREATE TABLE [StLink]
 	(
@@ -54,6 +60,12 @@ VALUES
 	@InMaxQuantity,
 	@InMinQuantity
 )
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[EdtLink]', N'U') IS NOT NULL)
+	DROP TABLE [EdtLink]
 
 BeforeExecute
 -- SqlServer.2005

@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
+	DROP TABLE [TakeSkipClass]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	CREATE TABLE [TakeSkipClass]
 	(

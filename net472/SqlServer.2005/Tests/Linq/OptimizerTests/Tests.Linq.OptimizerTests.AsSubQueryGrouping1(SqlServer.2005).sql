@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
+	DROP TABLE [FirstOptimizerData]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NULL)
 	CREATE TABLE [FirstOptimizerData]
 	(
@@ -38,6 +44,12 @@ SELECT 1,4,30,100,400,1000,2000,5000,N'Str_2' UNION ALL
 SELECT 2,3,40,200,300,1000,3000,4000,N'Str_3' UNION ALL
 SELECT 2,4,50,200,400,1000,3000,5000,N'Str_4' UNION ALL
 SELECT 3,4,60,300,400,1000,4000,5000,N'Str_5'
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
+	DROP TABLE [SecondOptimizerData]
 
 BeforeExecute
 -- SqlServer.2005

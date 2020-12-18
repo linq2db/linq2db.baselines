@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[Fact]', N'U') IS NOT NULL)
+	DROP TABLE [Fact]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Fact]', N'U') IS NULL)
 	CREATE TABLE [Fact]
 	(
@@ -19,6 +25,12 @@ INSERT INTO [Fact]
 SELECT 3 UNION ALL
 SELECT 4 UNION ALL
 SELECT 5
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
+	DROP TABLE [Tag]
 
 BeforeExecute
 -- SqlServer.2005

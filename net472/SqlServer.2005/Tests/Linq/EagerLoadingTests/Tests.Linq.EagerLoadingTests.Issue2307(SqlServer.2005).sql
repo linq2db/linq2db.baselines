@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[AttendanceSheet]', N'U') IS NOT NULL)
+	DROP TABLE [AttendanceSheet]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[AttendanceSheet]', N'U') IS NULL)
 	CREATE TABLE [AttendanceSheet]
 	(
@@ -18,6 +24,12 @@ INSERT INTO [AttendanceSheet]
 )
 SELECT 1 UNION ALL
 SELECT 2
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[AttendanceSheetRow]', N'U') IS NOT NULL)
+	DROP TABLE [AttendanceSheetRow]
 
 BeforeExecute
 -- SqlServer.2005

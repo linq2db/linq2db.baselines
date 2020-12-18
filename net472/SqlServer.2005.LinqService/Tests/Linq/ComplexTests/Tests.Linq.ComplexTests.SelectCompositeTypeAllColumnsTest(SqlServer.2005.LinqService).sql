@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
+	DROP TABLE [User]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	CREATE TABLE [User]
 	(

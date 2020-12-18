@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[Isue2424Table]', N'U') IS NOT NULL)
+	DROP TABLE [Isue2424Table]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Isue2424Table]', N'U') IS NULL)
 	CREATE TABLE [Isue2424Table]
 	(

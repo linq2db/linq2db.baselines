@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NOT NULL)
+	DROP TABLE [IntegerConverts]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NULL)
 	CREATE TABLE [IntegerConverts]
 	(

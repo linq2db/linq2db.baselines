@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
+	DROP TABLE [UpdatedEntities]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	CREATE TABLE [UpdatedEntities]
 	(
@@ -132,6 +138,12 @@ VALUES
 	@Value3,
 	@RelationId
 )
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NOT NULL)
+	DROP TABLE [UpdateRelation]
 
 BeforeExecute
 -- SqlServer.2005

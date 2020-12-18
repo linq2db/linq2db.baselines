@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[sample_class]', N'U') IS NOT NULL)
+	DROP TABLE [sample_class]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[sample_class]', N'U') IS NULL)
 	CREATE TABLE [sample_class]
 	(

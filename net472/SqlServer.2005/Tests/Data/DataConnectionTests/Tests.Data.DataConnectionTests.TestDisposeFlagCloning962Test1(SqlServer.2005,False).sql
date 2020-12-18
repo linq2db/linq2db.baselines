@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[Categories]', N'U') IS NOT NULL)
+	DROP TABLE [Categories]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Categories]', N'U') IS NULL)
 	CREATE TABLE [Categories]
 	(
@@ -21,6 +27,12 @@ INSERT INTO [Categories]
 )
 SELECT N'Name 1',N'Desc 1' UNION ALL
 SELECT N'Name 2',N'Desc 2'
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Products]', N'U') IS NOT NULL)
+	DROP TABLE [Products]
 
 BeforeExecute
 -- SqlServer.2005

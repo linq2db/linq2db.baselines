@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NOT NULL)
+	DROP TABLE [SelectExpressionTable]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NULL)
 	CREATE TABLE [SelectExpressionTable]
 	(

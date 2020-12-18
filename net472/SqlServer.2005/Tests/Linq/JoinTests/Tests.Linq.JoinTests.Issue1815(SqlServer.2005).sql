@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[StLink]', N'U') IS NOT NULL)
+	DROP TABLE [StLink]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[StLink]', N'U') IS NULL)
 	CREATE TABLE [StLink]
 	(
@@ -22,6 +28,12 @@ INSERT INTO [StLink]
 )
 SELECT 1,2,1 UNION ALL
 SELECT 2,NULL,NULL
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[EdtLink]', N'U') IS NOT NULL)
+	DROP TABLE [EdtLink]
 
 BeforeExecute
 -- SqlServer.2005

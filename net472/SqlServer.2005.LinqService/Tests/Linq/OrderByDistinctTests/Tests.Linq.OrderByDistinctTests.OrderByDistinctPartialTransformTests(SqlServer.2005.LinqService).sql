@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
+	DROP TABLE [OrderByDistinctData]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NULL)
 	CREATE TABLE [OrderByDistinctData]
 	(

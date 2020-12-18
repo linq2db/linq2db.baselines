@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NOT NULL)
+	DROP TABLE [gt_s_one]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NULL)
 	CREATE TABLE [gt_s_one]
 	(
@@ -14,6 +20,12 @@ IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NULL)
 
 		CONSTRAINT [PK_gt_s_one] PRIMARY KEY CLUSTERED ([id])
 	)
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[access_mode]', N'U') IS NOT NULL)
+	DROP TABLE [access_mode]
 
 BeforeExecute
 -- SqlServer.2005
