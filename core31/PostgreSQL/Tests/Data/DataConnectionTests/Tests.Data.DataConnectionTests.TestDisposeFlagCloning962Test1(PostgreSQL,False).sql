@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "Categories"
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "Categories"
 (
 	"CategoryID"   SERIAL  NOT NULL,
@@ -21,6 +26,11 @@ INSERT INTO "Categories"
 VALUES
 ('Name 1','Desc 1'),
 ('Name 2','Desc 2')
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "Products"
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
