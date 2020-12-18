@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
+DROP TABLE IF EXISTS `Table404One`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Table404One`
 (
 	`Id` INT NOT NULL
@@ -16,6 +21,11 @@ INSERT INTO `Table404One`
 VALUES
 (1),
 (2)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -136,6 +146,11 @@ DROP TABLE IF EXISTS `Table404One`
 BeforeExecute
 -- MySql MySql.Official MySql
 
+DROP TABLE IF EXISTS `Table404One`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Table404One`
 (
 	`Id` INT NOT NULL
@@ -151,6 +166,11 @@ INSERT INTO `Table404One`
 VALUES
 (1),
 (2)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
 -- MySql MySql.Official MySql

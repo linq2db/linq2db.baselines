@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
+DROP TABLE IF EXISTS `CteChild`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `CteChild`
 (
 	`ChildID`  INT NOT NULL,

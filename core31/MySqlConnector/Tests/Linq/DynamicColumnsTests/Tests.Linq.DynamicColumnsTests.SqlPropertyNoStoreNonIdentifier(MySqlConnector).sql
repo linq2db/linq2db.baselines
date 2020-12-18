@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
+DROP TABLE IF EXISTS `DynamicTable`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 CREATE TABLE IF NOT EXISTS `DynamicTable`
 (
 	`ID`             INT AUTO_INCREMENT NOT NULL,

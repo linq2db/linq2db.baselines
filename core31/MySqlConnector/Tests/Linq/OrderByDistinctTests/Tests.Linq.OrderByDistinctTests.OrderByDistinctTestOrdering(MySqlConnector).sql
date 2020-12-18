@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
+DROP TABLE IF EXISTS `OrderByDistinctData`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
 	`Id`            INT          NOT NULL,

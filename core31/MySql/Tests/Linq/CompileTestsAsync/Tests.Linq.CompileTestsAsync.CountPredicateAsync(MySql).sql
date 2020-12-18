@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
+DROP TABLE IF EXISTS `AsyncDataTable`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 (
 	`Id` INT NOT NULL,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
+DROP TABLE IF EXISTS `Contract_Distributor_Agent`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Contract_Distributor_Agent`
 (
 	`Agent_Id`                      INT          NOT NULL,
@@ -29,6 +34,11 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
+DROP TABLE IF EXISTS `Agent`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Agent`
 (
 	`Agent_Id`   INT          NOT NULL,
@@ -47,6 +57,11 @@ INSERT INTO `Agent`
 )
 VALUES
 (1,'x','x')
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `Distributor`
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -73,6 +88,11 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
+DROP TABLE IF EXISTS `Distributor_Commercial_Propert`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Distributor_Commercial_Propert`
 (
 	`Distributor_Id`         INT          NOT NULL,
@@ -91,6 +111,11 @@ INSERT INTO `Distributor_Commercial_Propert`
 )
 VALUES
 (1,1,'RE')
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `Commercial_Property`
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -125,6 +150,11 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
+DROP TABLE IF EXISTS `Contract_Dates`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 CREATE TABLE IF NOT EXISTS `Contract_Dates`
 (
 	`Contract_Id`    INT          NOT NULL,
@@ -143,6 +173,11 @@ INSERT INTO `Contract_Dates`
 )
 VALUES
 (198827882,'ESTCOE','x')
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `Cities`
 
 BeforeExecute
 -- MySql MySql.Official MySql

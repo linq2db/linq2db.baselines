@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
+DROP TABLE IF EXISTS `InstanceClass`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 CREATE TABLE IF NOT EXISTS `InstanceClass`
 (
 	`Id`    INT NOT NULL,

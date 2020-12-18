@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
+DROP TABLE IF EXISTS `i1084_person`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 CREATE TABLE IF NOT EXISTS `i1084_person`
 (
 	`Id`            INT NOT NULL,
@@ -20,6 +25,11 @@ INSERT INTO `i1084_person`
 VALUES
 (1,1,0),
 (2,2,0)
+
+BeforeExecute
+-- MySqlConnector MySql
+
+DROP TABLE IF EXISTS `i1084_student`
 
 BeforeExecute
 -- MySqlConnector MySql

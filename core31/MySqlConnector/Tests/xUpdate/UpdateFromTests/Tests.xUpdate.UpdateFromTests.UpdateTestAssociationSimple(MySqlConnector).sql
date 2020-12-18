@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
+DROP TABLE IF EXISTS `UpdatedEntities`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 (
 	`id`         INT NOT NULL,
@@ -28,6 +33,11 @@ VALUES
 (1,11,12,13,1),
 (2,21,22,23,2),
 (3,31,32,33,3)
+
+BeforeExecute
+-- MySqlConnector MySql
+
+DROP TABLE IF EXISTS `UpdateRelation`
 
 BeforeExecute
 -- MySqlConnector MySql
