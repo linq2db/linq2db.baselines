@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS Fact
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS Fact
 (
 	Id Int NOT NULL,
@@ -49,6 +54,11 @@ VALUES
 (
 	@Id
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Tag
 
 BeforeExecute
 -- Informix.DB2 Informix

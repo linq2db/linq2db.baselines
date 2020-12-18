@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS stVersions
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS stVersions
 (
 	inId     Int NOT NULL,
@@ -12,6 +17,11 @@ CREATE TABLE IF NOT EXISTS stVersions
 BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS rlStatesTypesAndUserGroups
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS rlStatesTypesAndUserGroups
 (
 	inIdState Int NOT NULL,
@@ -19,6 +29,11 @@ CREATE TABLE IF NOT EXISTS rlStatesTypesAndUserGroups
 
 	PRIMARY KEY (inIdState, inIdType)
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS stMain
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS StLink
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS StLink
 (
 	InId          Int   NOT NULL,
@@ -53,6 +58,11 @@ VALUES
 	@InMaxQuantity,
 	@InMinQuantity
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS EdtLink
 
 BeforeExecute
 -- Informix.DB2 Informix

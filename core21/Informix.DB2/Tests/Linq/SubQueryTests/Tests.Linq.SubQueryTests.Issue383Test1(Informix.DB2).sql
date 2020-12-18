@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS Contract_Distributor_Agent
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS Contract_Distributor_Agent
 (
 	Agent_Id                      Int           NOT NULL,
@@ -48,6 +53,11 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS Agent
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS Agent
 (
 	Agent_Id   Int           NOT NULL,
@@ -76,6 +86,11 @@ VALUES
 	@First_Name,
 	@Last_Name
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Distributor
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -112,6 +127,11 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS Distributor_Commercial_Propert
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS Distributor_Commercial_Propert
 (
 	Distributor_Id         Int           NOT NULL,
@@ -140,6 +160,11 @@ VALUES
 	@Commercial_Property_Id,
 	@Distributor_Type_Code
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Commercial_Property
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -196,6 +221,11 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS Contract_Dates
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS Contract_Dates
 (
 	Contract_Id    Int           NOT NULL,
@@ -224,6 +254,11 @@ VALUES
 	@Type_Code,
 	@Effective_Date
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Cities
 
 BeforeExecute
 -- Informix.DB2 Informix

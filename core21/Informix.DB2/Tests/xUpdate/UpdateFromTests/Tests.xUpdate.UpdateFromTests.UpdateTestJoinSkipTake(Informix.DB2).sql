@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS UpdatedEntities
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS UpdatedEntities
 (
 	id         Int NOT NULL,
@@ -131,6 +136,11 @@ VALUES
 	@Value3,
 	@RelationId
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS NewEntities
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS i1084_person
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS i1084_person
 (
 	Id            Int NOT NULL,
@@ -51,6 +56,11 @@ VALUES
 	@Number_1,
 	@StatusBitmask
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS i1084_student
 
 BeforeExecute
 -- Informix.DB2 Informix

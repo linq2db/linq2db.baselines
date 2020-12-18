@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS Table404One
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS Table404One
 (
 	Id Int NOT NULL
@@ -33,6 +38,11 @@ VALUES
 (
 	@Id
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Table404Two
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -268,6 +278,11 @@ DROP TABLE IF EXISTS Table404One
 BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS Table404One
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS Table404One
 (
 	Id Int NOT NULL
@@ -300,6 +315,11 @@ VALUES
 (
 	@Id
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Table404Two
 
 BeforeExecute
 -- Informix.DB2 Informix

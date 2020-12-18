@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS Categories
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS Categories
 (
 	CategoryID   SERIAL         NOT NULL,
@@ -45,6 +50,11 @@ VALUES
 	@CategoryName,
 	@Description
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Products
 
 BeforeExecute
 -- Informix.DB2 Informix
