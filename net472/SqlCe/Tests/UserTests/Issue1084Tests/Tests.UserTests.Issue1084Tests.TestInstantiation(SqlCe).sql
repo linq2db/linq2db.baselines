@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [i1084_person]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [i1084_person]
 (
 	[Id]            Int NOT NULL,
@@ -19,6 +24,11 @@ INSERT INTO [i1084_person]
 )
 SELECT 1,1,0 UNION ALL
 SELECT 2,2,0
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [i1084_student]
 
 BeforeExecute
 -- SqlCe

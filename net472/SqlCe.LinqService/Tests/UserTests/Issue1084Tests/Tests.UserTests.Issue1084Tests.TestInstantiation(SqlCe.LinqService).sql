@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [i1084_person]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [i1084_person]
 (
 	[Id]            Int NOT NULL,
@@ -51,6 +56,11 @@ VALUES
 	@Number_1,
 	@StatusBitmask
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [i1084_student]
 
 BeforeExecute
 -- SqlCe
