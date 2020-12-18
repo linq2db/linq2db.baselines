@@ -1,10 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [UserGroup]
-(
-	[Id] Int NOT NULL
-)
+IF (OBJECT_ID(N'[UserGroup]', N'U') IS NOT NULL)
+	DROP TABLE [UserGroup]
+
+BeforeExecute
+-- SqlServer.2016 SqlServer.2012
+
+IF (OBJECT_ID(N'[UserGroup]', N'U') IS NULL)
+	CREATE TABLE [UserGroup]
+	(
+		[Id] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -19,12 +26,19 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [User]
-(
-	[Id]          Int NOT NULL,
-	[UserGroupId] Int NOT NULL,
-	[LanguageId]  Int NOT NULL
-)
+IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
+	DROP TABLE [User]
+
+BeforeExecute
+-- SqlServer.2016 SqlServer.2012
+
+IF (OBJECT_ID(N'[User]', N'U') IS NULL)
+	CREATE TABLE [User]
+	(
+		[Id]          Int NOT NULL,
+		[UserGroupId] Int NOT NULL,
+		[LanguageId]  Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -42,11 +56,18 @@ VALUES
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Language]
-(
-	[Id]   Int            NOT NULL,
-	[Name] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
+	DROP TABLE [Language]
+
+BeforeExecute
+-- SqlServer.2016 SqlServer.2012
+
+IF (OBJECT_ID(N'[Language]', N'U') IS NULL)
+	CREATE TABLE [Language]
+	(
+		[Id]   Int            NOT NULL,
+		[Name] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -89,15 +110,18 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Language]
+IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
+	DROP TABLE [Language]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [User]
+IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
+	DROP TABLE [User]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [UserGroup]
+IF (OBJECT_ID(N'[UserGroup]', N'U') IS NOT NULL)
+	DROP TABLE [UserGroup]
 

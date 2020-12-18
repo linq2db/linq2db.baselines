@@ -1,12 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [AsyncDataTable]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NOT NULL)
+	DROP TABLE [AsyncDataTable]
 
-	CONSTRAINT [PK_AsyncDataTable] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2016 SqlServer.2012
+
+IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NULL)
+	CREATE TABLE [AsyncDataTable]
+	(
+		[Id] Int NOT NULL,
+
+		CONSTRAINT [PK_AsyncDataTable] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -166,5 +173,6 @@ SELECT
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [AsyncDataTable]
+IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NOT NULL)
+	DROP TABLE [AsyncDataTable]
 
