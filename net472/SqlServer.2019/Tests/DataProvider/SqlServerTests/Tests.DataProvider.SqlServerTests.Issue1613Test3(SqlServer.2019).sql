@@ -1,10 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [Issue1613]
-(
-	[dt] DateTimeOffset     NULL
-)
+IF (OBJECT_ID(N'[Issue1613]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1613]
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+IF (OBJECT_ID(N'[Issue1613]', N'U') IS NULL)
+	CREATE TABLE [Issue1613]
+	(
+		[dt] DateTimeOffset     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -46,5 +53,6 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Issue1613]
+IF (OBJECT_ID(N'[Issue1613]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1613]
 
