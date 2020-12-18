@@ -13,8 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	CASE
-		WHEN t.MoneyValue <> 0 THEN 't'
-		ELSE 'f'
-	END = 't'
+	(t.MoneyValue <> 0)
 
