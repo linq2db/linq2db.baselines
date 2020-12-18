@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [UpdateSetTest]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [UpdateSetTest]
 (
 	[Id]     Int  NOT NULL,
