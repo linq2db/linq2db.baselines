@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "ValueConversion"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "ValueConversion"
 (
 	"Id"                      Int          NOT NULL,

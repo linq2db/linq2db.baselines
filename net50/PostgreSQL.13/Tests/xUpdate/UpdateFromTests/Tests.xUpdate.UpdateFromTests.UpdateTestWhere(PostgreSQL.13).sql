@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "UpdatedEntities"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "UpdatedEntities"
 (
 	id           Int NOT NULL,
@@ -28,6 +33,11 @@ VALUES
 (1,11,12,13,1),
 (2,21,22,23,2),
 (3,31,32,33,3)
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "NewEntities"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
