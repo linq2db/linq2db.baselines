@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Contract_Distributor_Agent]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Contract_Distributor_Agent]
 (
 	[Agent_Id]                      Int           NOT NULL,
@@ -48,6 +53,11 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Agent]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Agent]
 (
 	[Agent_Id]   Int           NOT NULL,
@@ -76,6 +86,11 @@ VALUES
 	@First_Name,
 	@Last_Name
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Distributor]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -112,6 +127,11 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Distributor_Commercial_Propert]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Distributor_Commercial_Propert]
 (
 	[Distributor_Id]         Int           NOT NULL,
@@ -140,6 +160,11 @@ VALUES
 	@Commercial_Property_Id,
 	@Distributor_Type_Code
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Commercial_Property]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -196,6 +221,11 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Contract_Dates]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Contract_Dates]
 (
 	[Contract_Id]    Int           NOT NULL,
@@ -224,6 +254,11 @@ VALUES
 	@Type_Code,
 	@Effective_Date
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Cities]
 
 BeforeExecute
 -- Access AccessOleDb

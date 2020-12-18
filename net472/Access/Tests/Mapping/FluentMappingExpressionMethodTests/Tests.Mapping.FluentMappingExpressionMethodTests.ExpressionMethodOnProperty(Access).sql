@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [InstanceClass]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [InstanceClass]
 (
 	[Id]    Int NOT NULL,

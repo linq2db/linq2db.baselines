@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [DynamicTable]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [DynamicTable]
 (
 	[ID]             Int  NOT NULL IDENTITY,

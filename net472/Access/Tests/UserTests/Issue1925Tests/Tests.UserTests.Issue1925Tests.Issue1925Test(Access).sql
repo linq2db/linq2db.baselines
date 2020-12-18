@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [SampleClass]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [SampleClass]
 (
 	[Id]    Int           NOT NULL,

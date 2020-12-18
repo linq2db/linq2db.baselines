@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Categories]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Categories]
 (
 	[CategoryID]   Int            NOT NULL IDENTITY,
@@ -45,6 +50,11 @@ VALUES
 	@CategoryName,
 	@Description
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Products]
 
 BeforeExecute
 -- Access AccessOleDb

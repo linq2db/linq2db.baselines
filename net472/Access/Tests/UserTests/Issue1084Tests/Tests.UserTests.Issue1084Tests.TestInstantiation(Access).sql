@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [i1084_person]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [i1084_person]
 (
 	[Id]            Int NOT NULL,
@@ -51,6 +56,11 @@ VALUES
 	@Number_1,
 	@StatusBitmask
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [i1084_student]
 
 BeforeExecute
 -- Access AccessOleDb

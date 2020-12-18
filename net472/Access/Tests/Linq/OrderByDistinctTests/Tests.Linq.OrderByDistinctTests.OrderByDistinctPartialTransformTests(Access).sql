@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [OrderByDistinctData]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [OrderByDistinctData]
 (
 	[Id]            Int           NOT NULL,
