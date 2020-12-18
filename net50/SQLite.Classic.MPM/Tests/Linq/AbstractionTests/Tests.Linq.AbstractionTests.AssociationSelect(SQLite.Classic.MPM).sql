@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [SampleClass1]
+DROP TABLE IF EXISTS [SampleClass1]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SampleClass1]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL
@@ -30,7 +35,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [SampleClass2]
+DROP TABLE IF EXISTS [SampleClass2]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SampleClass2]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL
@@ -59,7 +69,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [ChildEntitity]
+DROP TABLE IF EXISTS [ChildEntitity]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ChildEntitity]
 (
 	[Id]       INTEGER NOT NULL,
 	[ParentId] INTEGER     NULL,
@@ -180,7 +195,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [SubEntitity]
+DROP TABLE IF EXISTS [SubEntitity]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SubEntitity]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL
@@ -361,20 +381,20 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [SubEntitity]
+DROP TABLE IF EXISTS [SubEntitity]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [ChildEntitity]
+DROP TABLE IF EXISTS [ChildEntitity]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [SampleClass2]
+DROP TABLE IF EXISTS [SampleClass2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [SampleClass1]
+DROP TABLE IF EXISTS [SampleClass1]
 

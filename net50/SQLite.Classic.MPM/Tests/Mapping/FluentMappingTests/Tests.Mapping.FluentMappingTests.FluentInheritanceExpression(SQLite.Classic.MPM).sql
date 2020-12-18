@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [DescendantEntity]
+DROP TABLE IF EXISTS [DescendantEntity]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [DescendantEntity]
 (
 	[Id] INTEGER NOT NULL
 )
@@ -40,5 +45,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [DescendantEntity]
+DROP TABLE IF EXISTS [DescendantEntity]
 
