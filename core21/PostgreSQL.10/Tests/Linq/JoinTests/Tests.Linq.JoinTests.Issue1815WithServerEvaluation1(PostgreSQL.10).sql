@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "StLink"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "StLink"
 (
 	"InId"          Int   NOT NULL,
@@ -22,6 +27,11 @@ INSERT INTO "StLink"
 VALUES
 (1,2,1),
 (2,NULL,NULL)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "EdtLink"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
