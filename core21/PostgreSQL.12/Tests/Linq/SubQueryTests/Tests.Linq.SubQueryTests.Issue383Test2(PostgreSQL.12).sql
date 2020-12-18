@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "Contract_Distributor_Agent"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "Contract_Distributor_Agent"
 (
 	"Agent_Id"                      Int  NOT NULL,
@@ -29,6 +34,11 @@ VALUES
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "Agent"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "Agent"
 (
 	"Agent_Id"   Int  NOT NULL,
@@ -47,6 +57,11 @@ INSERT INTO "Agent"
 )
 VALUES
 (1,'x','x')
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "Distributor"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -73,6 +88,11 @@ VALUES
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "Distributor_Commercial_Propert"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "Distributor_Commercial_Propert"
 (
 	"Distributor_Id"         Int  NOT NULL,
@@ -91,6 +111,11 @@ INSERT INTO "Distributor_Commercial_Propert"
 )
 VALUES
 (1,1,'RE')
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "Commercial_Property"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -125,6 +150,11 @@ VALUES
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "Contract_Dates"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "Contract_Dates"
 (
 	"Contract_Id"    Int  NOT NULL,
@@ -143,6 +173,11 @@ INSERT INTO "Contract_Dates"
 )
 VALUES
 (198827882,'ESTCOE','x')
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "Cities"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

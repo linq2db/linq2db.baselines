@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "OrderByDistinctData"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "OrderByDistinctData"
 (
 	"Id"            Int  NOT NULL,

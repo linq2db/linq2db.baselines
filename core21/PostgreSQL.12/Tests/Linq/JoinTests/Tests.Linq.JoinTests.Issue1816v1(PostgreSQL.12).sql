@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "stVersions"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "stVersions"
 (
 	"inId"     Int NOT NULL,
@@ -12,6 +17,11 @@ CREATE TABLE IF NOT EXISTS "stVersions"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "rlStatesTypesAndUserGroups"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "rlStatesTypesAndUserGroups"
 (
 	"inIdState" Int NOT NULL,
@@ -19,6 +29,11 @@ CREATE TABLE IF NOT EXISTS "rlStatesTypesAndUserGroups"
 
 	CONSTRAINT "PK_rlStatesTypesAndUserGroups" PRIMARY KEY ("inIdState", "inIdType")
 )
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "stMain"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
