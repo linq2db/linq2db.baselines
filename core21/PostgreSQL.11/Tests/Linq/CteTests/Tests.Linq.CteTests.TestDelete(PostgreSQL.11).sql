@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE IF EXISTS "CteChild"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "CteChild"
 (
 	"ChildID"  Int NOT NULL,
