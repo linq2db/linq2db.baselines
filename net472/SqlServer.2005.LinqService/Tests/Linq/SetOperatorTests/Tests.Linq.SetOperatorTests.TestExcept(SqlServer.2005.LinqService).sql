@@ -1,15 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [SampleData]
-(
-	[Id]     Int NOT NULL,
-	[Value1] Int NOT NULL,
-	[Value2] Int NOT NULL,
-	[Value3] Int NOT NULL,
+IF (OBJECT_ID(N'[SampleData]', N'U') IS NULL)
+	CREATE TABLE [SampleData]
+	(
+		[Id]     Int NOT NULL,
+		[Value1] Int NOT NULL,
+		[Value2] Int NOT NULL,
+		[Value3] Int NOT NULL,
 
-	CONSTRAINT [PK_SampleData] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_SampleData] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -323,5 +324,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [SampleData]
+IF (OBJECT_ID(N'[SampleData]', N'U') IS NOT NULL)
+	DROP TABLE [SampleData]
 

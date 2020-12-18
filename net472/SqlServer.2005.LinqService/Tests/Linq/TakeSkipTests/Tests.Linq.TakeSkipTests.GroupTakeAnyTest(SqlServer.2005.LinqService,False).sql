@@ -1,10 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [TakeSkipClass]
-(
-	[Value] VarChar(10)     NULL
-)
+IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
+	CREATE TABLE [TakeSkipClass]
+	(
+		[Value] VarChar(10)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -84,5 +85,6 @@ SELECT
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [TakeSkipClass]
+IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
+	DROP TABLE [TakeSkipClass]
 
