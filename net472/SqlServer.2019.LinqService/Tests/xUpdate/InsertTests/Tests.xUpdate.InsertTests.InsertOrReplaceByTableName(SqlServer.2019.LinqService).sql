@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[xxPatient43]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient43]
+IF (OBJECT_ID(N'[xxPatient22]', N'U') IS NOT NULL)
+	DROP TABLE [xxPatient22]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [xxPatient43]
+CREATE TABLE [xxPatient22]
 (
 	[PersonID]  Int            NOT NULL,
 	[Diagnosis] NVarChar(4000)     NULL,
 
-	CONSTRAINT [PK_xxPatient43] PRIMARY KEY CLUSTERED ([PersonID])
+	CONSTRAINT [PK_xxPatient22] PRIMARY KEY CLUSTERED ([PersonID])
 )
 
 BeforeExecute
@@ -22,7 +22,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'ABC1'
 
-MERGE INTO [xxPatient43] [t1]
+MERGE INTO [xxPatient22] [t1]
 USING (SELECT @PersonID AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
@@ -50,7 +50,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'ABC2'
 
-MERGE INTO [xxPatient43] [t1]
+MERGE INTO [xxPatient22] [t1]
 USING (SELECT @PersonID AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
@@ -77,7 +77,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient43] [t1]
+	[xxPatient22] [t1]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -86,7 +86,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'ABC1'
 
-MERGE INTO [xxPatient43] [t1]
+MERGE INTO [xxPatient22] [t1]
 USING (SELECT @PersonID AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
@@ -114,7 +114,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'ABC2'
 
-MERGE INTO [xxPatient43] [t1]
+MERGE INTO [xxPatient22] [t1]
 USING (SELECT @PersonID AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
@@ -141,11 +141,11 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient43] [t1]
+	[xxPatient22] [t1]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[xxPatient43]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient43]
+IF (OBJECT_ID(N'[xxPatient22]', N'U') IS NOT NULL)
+	DROP TABLE [xxPatient22]
 
