@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SqlCe
 
-CREATE TABLE [BlobClass10]
+CREATE TABLE [BlobClass]
 (
 	[Id]        Int            NOT NULL,
 	[BlobValue] VarBinary(100)     NULL,
 
-	CONSTRAINT [PK_BlobClass10] PRIMARY KEY ([Id])
+	CONSTRAINT [PK_BlobClass] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
 -- SqlCe
 
-INSERT INTO [BlobClass10]
+INSERT INTO [BlobClass]
 (
 	[Id],
 	[BlobValue]
@@ -30,7 +30,7 @@ SELECT TOP (1)
 	[_].[Id],
 	[_].[BlobValue]
 FROM
-	[BlobClass10] [_]
+	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
 
@@ -41,12 +41,12 @@ SELECT TOP (1)
 	[_].[Id],
 	[_].[BlobValue]
 FROM
-	[BlobClass10] [_]
+	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
 
 BeforeExecute
 -- SqlCe
 
-DROP TABLE [BlobClass10]
+DROP TABLE [BlobClass]
 
