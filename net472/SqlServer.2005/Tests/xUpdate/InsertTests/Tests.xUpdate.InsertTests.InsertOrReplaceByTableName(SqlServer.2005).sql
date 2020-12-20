@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[xxPatient21]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient21]
+IF (OBJECT_ID(N'[xxPatient]', N'U') IS NOT NULL)
+	DROP TABLE [xxPatient]
 
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [xxPatient21]
+CREATE TABLE [xxPatient]
 (
 	[PersonID]  Int            NOT NULL,
 	[Diagnosis] NVarChar(4000)     NULL,
 
-	CONSTRAINT [PK_xxPatient21] PRIMARY KEY CLUSTERED ([PersonID])
+	CONSTRAINT [PK_xxPatient] PRIMARY KEY CLUSTERED ([PersonID])
 )
 
 BeforeExecute
@@ -29,13 +29,13 @@ UPDATE
 SET
 	[t1].[Diagnosis] = @Diagnosis
 FROM
-	[xxPatient21] [t1]
+	[xxPatient] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient21]
+	INSERT INTO [xxPatient]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -63,13 +63,13 @@ UPDATE
 SET
 	[t1].[Diagnosis] = @Diagnosis
 FROM
-	[xxPatient21] [t1]
+	[xxPatient] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient21]
+	INSERT INTO [xxPatient]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -89,7 +89,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient21] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- SqlServer.2005
@@ -105,13 +105,13 @@ UPDATE
 SET
 	[t1].[Diagnosis] = @Diagnosis
 FROM
-	[xxPatient21] [t1]
+	[xxPatient] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient21]
+	INSERT INTO [xxPatient]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -139,13 +139,13 @@ UPDATE
 SET
 	[t1].[Diagnosis] = @Diagnosis
 FROM
-	[xxPatient21] [t1]
+	[xxPatient] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient21]
+	INSERT INTO [xxPatient]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -165,11 +165,11 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient21] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[xxPatient21]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient21]
+IF (OBJECT_ID(N'[xxPatient]', N'U') IS NOT NULL)
+	DROP TABLE [xxPatient]
 
