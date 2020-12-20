@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `BlobClass20`
+CREATE TABLE `BlobClass`
 (
 	`Id`        INT            NOT NULL,
 	`BlobValue` VARBINARY(100)     NULL,
 
-	CONSTRAINT `PK_BlobClass20` PRIMARY KEY CLUSTERED (`Id`)
+	CONSTRAINT `PK_BlobClass` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
 -- MySqlConnector MySql
 
-INSERT INTO `BlobClass20`
+INSERT INTO `BlobClass`
 (
 	`Id`,
 	`BlobValue`
@@ -30,7 +30,7 @@ SELECT
 	`_`.`Id`,
 	`_`.`BlobValue`
 FROM
-	`BlobClass20` `_`
+	`BlobClass` `_`
 WHERE
 	`_`.`Id` = 1
 LIMIT 1
@@ -42,7 +42,7 @@ SELECT
 	`_`.`Id`,
 	`_`.`BlobValue`
 FROM
-	`BlobClass20` `_`
+	`BlobClass` `_`
 WHERE
 	`_`.`Id` = 1
 LIMIT 1
@@ -50,5 +50,5 @@ LIMIT 1
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `BlobClass20`
+DROP TABLE `BlobClass`
 
