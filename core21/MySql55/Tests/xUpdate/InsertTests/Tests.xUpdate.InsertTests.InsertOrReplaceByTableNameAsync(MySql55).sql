@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-DROP TABLE IF EXISTS `xxPatient12`
+DROP TABLE IF EXISTS `xxPatient`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-CREATE TABLE `xxPatient12`
+CREATE TABLE `xxPatient`
 (
 	`PersonID`  INT          NOT NULL,
 	`Diagnosis` VARCHAR(255)     NULL,
 
-	CONSTRAINT `PK_xxPatient12` PRIMARY KEY CLUSTERED (`PersonID`)
+	CONSTRAINT `PK_xxPatient` PRIMARY KEY CLUSTERED (`PersonID`)
 )
 
 BeforeExecute
@@ -21,7 +21,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO `xxPatient12`
+INSERT INTO `xxPatient`
 (
 	`PersonID`,
 	`Diagnosis`
@@ -41,7 +41,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO `xxPatient12`
+INSERT INTO `xxPatient`
 (
 	`PersonID`,
 	`Diagnosis`
@@ -60,7 +60,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	`xxPatient12` `t1`
+	`xxPatient` `t1`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
@@ -69,7 +69,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO `xxPatient12`
+INSERT INTO `xxPatient`
 (
 	`PersonID`,
 	`Diagnosis`
@@ -89,7 +89,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO `xxPatient12`
+INSERT INTO `xxPatient`
 (
 	`PersonID`,
 	`Diagnosis`
@@ -108,10 +108,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	`xxPatient12` `t1`
+	`xxPatient` `t1`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-DROP TABLE IF EXISTS `xxPatient12`
+DROP TABLE IF EXISTS `xxPatient`
 

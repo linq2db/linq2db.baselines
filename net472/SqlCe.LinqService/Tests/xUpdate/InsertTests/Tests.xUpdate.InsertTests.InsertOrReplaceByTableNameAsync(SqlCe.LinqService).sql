@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [xxPatient24]
+DROP TABLE [xxPatient]
 
 BeforeExecute
 -- SqlCe
 
-CREATE TABLE [xxPatient24]
+CREATE TABLE [xxPatient]
 (
 	[PersonID]  Int           NOT NULL,
 	[Diagnosis] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_xxPatient24] PRIMARY KEY ([PersonID])
+	CONSTRAINT [PK_xxPatient] PRIMARY KEY ([PersonID])
 )
 
 BeforeExecute
@@ -22,11 +22,11 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[xxPatient24]
+	[xxPatient]
 SET
-	[xxPatient24].[Diagnosis] = @Diagnosis
+	[xxPatient].[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient24].[PersonID] = @PersonID
+	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SqlCe
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO [xxPatient24]
+INSERT INTO [xxPatient]
 (
 	[PersonID],
 	[Diagnosis]
@@ -54,11 +54,11 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[xxPatient24]
+	[xxPatient]
 SET
-	[xxPatient24].[Diagnosis] = @Diagnosis
+	[xxPatient].[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient24].[PersonID] = @PersonID
+	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SqlCe
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO [xxPatient24]
+INSERT INTO [xxPatient]
 (
 	[PersonID],
 	[Diagnosis]
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient24] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- SqlCe
@@ -94,11 +94,11 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[xxPatient24]
+	[xxPatient]
 SET
-	[xxPatient24].[Diagnosis] = @Diagnosis
+	[xxPatient].[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient24].[PersonID] = @PersonID
+	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SqlCe
@@ -108,11 +108,11 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[xxPatient24]
+	[xxPatient]
 SET
-	[xxPatient24].[Diagnosis] = @Diagnosis
+	[xxPatient].[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient24].[PersonID] = @PersonID
+	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SqlCe
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient24] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- SqlCe
 
-DROP TABLE [xxPatient24]
+DROP TABLE [xxPatient]
 

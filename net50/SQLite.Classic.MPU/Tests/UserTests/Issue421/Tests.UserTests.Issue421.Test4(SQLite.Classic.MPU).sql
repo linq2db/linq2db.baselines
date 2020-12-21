@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [BlobClass29]
+CREATE TABLE [BlobClass]
 (
 	[Id]        INTEGER        NOT NULL,
 	[BlobValue] VarBinary(100)     NULL,
 
-	CONSTRAINT [PK_BlobClass29] PRIMARY KEY ([Id])
+	CONSTRAINT [PK_BlobClass] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-INSERT INTO [BlobClass29]
+INSERT INTO [BlobClass]
 (
 	[Id],
 	[BlobValue]
@@ -30,7 +30,7 @@ SELECT
 	[_].[Id],
 	[_].[BlobValue]
 FROM
-	[BlobClass29] [_]
+	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
 LIMIT 1
@@ -42,7 +42,7 @@ SELECT
 	[_].[Id],
 	[_].[BlobValue]
 FROM
-	[BlobClass29] [_]
+	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
 LIMIT 1
@@ -50,5 +50,5 @@ LIMIT 1
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [BlobClass29]
+DROP TABLE [BlobClass]
 
