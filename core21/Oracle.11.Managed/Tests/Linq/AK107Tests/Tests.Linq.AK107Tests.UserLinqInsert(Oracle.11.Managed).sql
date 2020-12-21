@@ -8,7 +8,7 @@ INSERT INTO "t_test_user"
 )
 VALUES
 (
-	"sq_test_user".nextval,
+	"sequence_schema"."sq_test_user".nextval,
 	'user'
 )
 
