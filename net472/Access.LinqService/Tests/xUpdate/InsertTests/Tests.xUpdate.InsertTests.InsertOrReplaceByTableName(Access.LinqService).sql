@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-DROP TABLE [xxPatient22]
+DROP TABLE [xxPatient]
 
 BeforeExecute
 -- Access AccessOleDb
 
-CREATE TABLE [xxPatient22]
+CREATE TABLE [xxPatient]
 (
 	[PersonID]  Int           NOT NULL,
 	[Diagnosis] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_xxPatient22] PRIMARY KEY CLUSTERED ([PersonID])
+	CONSTRAINT [PK_xxPatient] PRIMARY KEY CLUSTERED ([PersonID])
 )
 
 BeforeExecute
@@ -22,7 +22,7 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[xxPatient22] [t1]
+	[xxPatient] [t1]
 SET
 	[t1].[Diagnosis] = @Diagnosis
 WHERE
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO [xxPatient22]
+INSERT INTO [xxPatient]
 (
 	[PersonID],
 	[Diagnosis]
@@ -54,7 +54,7 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[xxPatient22] [t1]
+	[xxPatient] [t1]
 SET
 	[t1].[Diagnosis] = @Diagnosis
 WHERE
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO [xxPatient22]
+INSERT INTO [xxPatient]
 (
 	[PersonID],
 	[Diagnosis]
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient22] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -94,7 +94,7 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[xxPatient22] [t1]
+	[xxPatient] [t1]
 SET
 	[t1].[Diagnosis] = @Diagnosis
 WHERE
@@ -108,7 +108,7 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[xxPatient22] [t1]
+	[xxPatient] [t1]
 SET
 	[t1].[Diagnosis] = @Diagnosis
 WHERE
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient22] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
 
-DROP TABLE [xxPatient22]
+DROP TABLE [xxPatient]
 
