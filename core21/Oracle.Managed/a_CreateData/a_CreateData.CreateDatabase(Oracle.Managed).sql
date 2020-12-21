@@ -105,7 +105,17 @@ DROP table "t_test_user"
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP sequence "sq_test_user"
+DROP USER "c##sequence_schema" CASCADE
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE USER "c##sequence_schema" IDENTIFIED BY "secret_password"
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+GRANT CREATE SEQUENCE TO "c##sequence_schema"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -879,7 +889,7 @@ create table "t_test_user_contract"
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-create sequence "sq_test_user"
+create sequence "c##sequence_schema"."sq_test_user"
 
 BeforeExecute
 -- Oracle.Managed Oracle12
