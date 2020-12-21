@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.Managed Oracle12
 DECLARE @Name Varchar2(4) -- String
 SET     @Name = 'user'
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -12,22 +12,20 @@ INSERT INTO "t_test_user"
 )
 VALUES
 (
-	"sequence_schema"."sq_test_user".nextval,
+	"c##sequence_schema"."sq_test_user".nextval,
 	:Name
 )
 RETURNING 
 	"user_id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.Managed Oracle12
 DECLARE @UserId Int64
-SET     @UserId = 2
+SET     @UserId = 6
 DECLARE @ContractNo Int64
 SET     @ContractNo = 1
-DECLARE @Name Varchar2(8) -- String
-SET     @Name = 'contract'
-DECLARE @IDENTITY_PARAMETER Decimal
-SET     @IDENTITY_PARAMETER = NULL
+DECLARE @Name Varchar2(9) -- String
+SET     @Name = 'contract1'
 
 INSERT INTO "t_test_user_contract"
 (
@@ -43,6 +41,4 @@ VALUES
 	:ContractNo,
 	:Name
 )
-RETURNING 
-	"user_contract_id" INTO :IDENTITY_PARAMETER
 
