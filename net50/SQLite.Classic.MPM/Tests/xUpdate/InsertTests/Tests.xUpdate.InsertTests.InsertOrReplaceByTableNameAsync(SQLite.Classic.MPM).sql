@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
-DROP TABLE IF EXISTS [xxPatient36]
+DROP TABLE IF EXISTS [xxPatient]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
-CREATE TABLE [xxPatient36]
+CREATE TABLE [xxPatient]
 (
 	[PersonID]  INTEGER       NOT NULL,
 	[Diagnosis] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_xxPatient36] PRIMARY KEY ([PersonID])
+	CONSTRAINT [PK_xxPatient] PRIMARY KEY ([PersonID])
 )
 
 BeforeExecute
@@ -22,11 +22,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[xxPatient36]
+	[xxPatient]
 SET
 	[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient36].[PersonID] = @PersonID
+	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO [xxPatient36]
+INSERT INTO [xxPatient]
 (
 	[PersonID],
 	[Diagnosis]
@@ -54,11 +54,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[xxPatient36]
+	[xxPatient]
 SET
 	[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient36].[PersonID] = @PersonID
+	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO [xxPatient36]
+INSERT INTO [xxPatient]
 (
 	[PersonID],
 	[Diagnosis]
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient36] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
@@ -94,11 +94,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[xxPatient36]
+	[xxPatient]
 SET
 	[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient36].[PersonID] = @PersonID
+	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
@@ -108,11 +108,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[xxPatient36]
+	[xxPatient]
 SET
 	[Diagnosis] = @Diagnosis
 WHERE
-	[xxPatient36].[PersonID] = @PersonID
+	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient36] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
-DROP TABLE IF EXISTS [xxPatient36]
+DROP TABLE IF EXISTS [xxPatient]
 
