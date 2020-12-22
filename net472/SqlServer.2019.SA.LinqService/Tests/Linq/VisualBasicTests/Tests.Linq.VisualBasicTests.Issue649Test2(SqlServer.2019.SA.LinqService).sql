@@ -24,7 +24,7 @@ CREATE TABLE [person649]
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 DECLARE @added DateTime2
-SET     @added = '2017-01-01T00:00:00'
+SET     @added = '2017-01-01T00:00:00.0000000'
 
 SELECT
 	[a_Person].[personid],
