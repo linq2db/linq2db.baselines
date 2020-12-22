@@ -14,19 +14,26 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[t1].[MyGroupedCount]
+	Count(*)
 FROM
-	[Issue1192Table] [t_1]
+	(
+		SELECT
+			1 as [c1]
+		FROM
+			[Issue1192Table] [t]
+		WHERE
+			[t].[MyOtherId] = 12
+	) [t2]
 		LEFT JOIN (
 			SELECT
-				Count(*) as [MyGroupedCount]
+				*
 			FROM
-				[Issue1192Table] [t]
+				[Issue1192Table] [t_1]
 			WHERE
-				[t].[Status] = 3 AND [t].[MyOtherId] = 12
-		) [t1] ON 1=1
-WHERE
-	[t_1].[MyOtherId] = 12
+				[t_1].[Status] = 3 AND [t_1].[MyOtherId] = 12
+		) [t1] ON [t2].[c1] = 1
+GROUP BY
+	[t2].[c1]
 
 BeforeExecute
 -- SqlCe
