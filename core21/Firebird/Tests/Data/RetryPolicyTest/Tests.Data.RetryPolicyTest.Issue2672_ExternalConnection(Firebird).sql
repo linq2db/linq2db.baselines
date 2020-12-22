@@ -1,0 +1,26 @@
+﻿BeforeExecute
+--  Firebird
+
+CREATE TABLE "MyEntity"
+(
+	"Id"   BigInt                                 NOT NULL,
+	"Name" VarChar(256) CHARACTER SET UNICODE_FSS NOT NULL
+)
+
+BeforeExecute
+--  Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'MyEntity')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "MyEntity"';
+END
+
+BeforeExecute
+--  Firebird
+
+CREATE TABLE "MyEntity"
+(
+	"Id"   BigInt                                 NOT NULL,
+	"Name" VarChar(256) CHARACTER SET UNICODE_FSS NOT NULL
+)
+
