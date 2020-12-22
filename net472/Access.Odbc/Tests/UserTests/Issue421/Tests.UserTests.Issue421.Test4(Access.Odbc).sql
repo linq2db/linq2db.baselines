@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-CREATE TABLE [BlobClass19]
+CREATE TABLE [BlobClass]
 (
 	[Id]        Int            NOT NULL,
 	[BlobValue] VarBinary(100)     NULL,
 
-	CONSTRAINT [PK_BlobClass19] PRIMARY KEY CLUSTERED ([Id])
+	CONSTRAINT [PK_BlobClass] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-INSERT INTO [BlobClass19]
+INSERT INTO [BlobClass]
 (
 	[Id],
 	[BlobValue]
@@ -30,7 +30,7 @@ SELECT TOP 1
 	[_].[Id],
 	[_].[BlobValue]
 FROM
-	[BlobClass19] [_]
+	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
 
@@ -41,12 +41,12 @@ SELECT TOP 1
 	[_].[Id],
 	[_].[BlobValue]
 FROM
-	[BlobClass19] [_]
+	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-DROP TABLE [BlobClass19]
+DROP TABLE [BlobClass]
 
