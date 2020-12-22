@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-DROP TABLE IF EXISTS xxPatient12
+DROP TABLE IF EXISTS xxPatient
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-CREATE TABLE xxPatient12
+CREATE TABLE xxPatient
 (
 	PersonID  Int           NOT NULL,
 	Diagnosis NVarChar(255)     NULL,
@@ -22,11 +22,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	xxPatient12
+	xxPatient
 SET
-	xxPatient12.Diagnosis = @Diagnosis
+	xxPatient.Diagnosis = @Diagnosis
 WHERE
-	xxPatient12.PersonID = @PersonID
+	xxPatient.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO xxPatient12
+INSERT INTO xxPatient
 (
 	PersonID,
 	Diagnosis
@@ -54,11 +54,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	xxPatient12
+	xxPatient
 SET
-	xxPatient12.Diagnosis = @Diagnosis
+	xxPatient.Diagnosis = @Diagnosis
 WHERE
-	xxPatient12.PersonID = @PersonID
+	xxPatient.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO xxPatient12
+INSERT INTO xxPatient
 (
 	PersonID,
 	Diagnosis
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPatient12 t1
+	xxPatient t1
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
@@ -94,11 +94,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	xxPatient12
+	xxPatient
 SET
-	xxPatient12.Diagnosis = @Diagnosis
+	xxPatient.Diagnosis = @Diagnosis
 WHERE
-	xxPatient12.PersonID = @PersonID
+	xxPatient.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
@@ -108,11 +108,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	xxPatient12
+	xxPatient
 SET
-	xxPatient12.Diagnosis = @Diagnosis
+	xxPatient.Diagnosis = @Diagnosis
 WHERE
-	xxPatient12.PersonID = @PersonID
+	xxPatient.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	xxPatient12 t1
+	xxPatient t1
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-DROP TABLE IF EXISTS xxPatient12
+DROP TABLE IF EXISTS xxPatient
 
