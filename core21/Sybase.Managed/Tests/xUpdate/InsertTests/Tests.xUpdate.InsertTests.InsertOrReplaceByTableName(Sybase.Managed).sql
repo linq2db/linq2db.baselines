@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'xxPatient11') IS NOT NULL)
-	DROP TABLE [xxPatient11]
+IF (OBJECT_ID(N'xxPatient') IS NOT NULL)
+	DROP TABLE [xxPatient]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [xxPatient11]
+CREATE TABLE [xxPatient]
 (
 	[PersonID]  Int           NOT NULL,
 	[Diagnosis] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_xxPatient11] PRIMARY KEY CLUSTERED ([PersonID])
+	CONSTRAINT [PK_xxPatient] PRIMARY KEY CLUSTERED ([PersonID])
 )
 
 BeforeExecute
@@ -27,17 +27,17 @@ SET     @Diagnosis = 'ABC1'
 BEGIN TRAN
 
 UPDATE
-	[xxPatient11]
+	[xxPatient]
 SET
 	[t1].[Diagnosis] = @Diagnosis_1
 FROM
-	[xxPatient11] [t1]
+	[xxPatient] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient11]
+	INSERT INTO [xxPatient]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -63,17 +63,17 @@ SET     @Diagnosis = 'ABC2'
 BEGIN TRAN
 
 UPDATE
-	[xxPatient11]
+	[xxPatient]
 SET
 	[t1].[Diagnosis] = @Diagnosis_1
 FROM
-	[xxPatient11] [t1]
+	[xxPatient] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient11]
+	INSERT INTO [xxPatient]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -93,7 +93,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient11] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -107,17 +107,17 @@ SET     @Diagnosis = 'ABC1'
 BEGIN TRAN
 
 UPDATE
-	[xxPatient11]
+	[xxPatient]
 SET
 	[t1].[Diagnosis] = @Diagnosis_1
 FROM
-	[xxPatient11] [t1]
+	[xxPatient] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient11]
+	INSERT INTO [xxPatient]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -143,17 +143,17 @@ SET     @Diagnosis = 'ABC2'
 BEGIN TRAN
 
 UPDATE
-	[xxPatient11]
+	[xxPatient]
 SET
 	[t1].[Diagnosis] = @Diagnosis_1
 FROM
-	[xxPatient11] [t1]
+	[xxPatient] [t1]
 WHERE
 	[t1].[PersonID] = @PersonID
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [xxPatient11]
+	INSERT INTO [xxPatient]
 	(
 		[PersonID],
 		[Diagnosis]
@@ -173,11 +173,11 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[xxPatient11] [t1]
+	[xxPatient] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'xxPatient11') IS NOT NULL)
-	DROP TABLE [xxPatient11]
+IF (OBJECT_ID(N'xxPatient') IS NOT NULL)
+	DROP TABLE [xxPatient]
 
