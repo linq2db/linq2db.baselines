@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "BlobClass10"
+CREATE TABLE "BlobClass"
 (
 	"Id"        Int  NOT NULL,
 	"BlobValue" Blob     NULL,
 
-	CONSTRAINT "PK_BlobClass10" PRIMARY KEY ("Id")
+	CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-INSERT INTO "BlobClass10"
+INSERT INTO "BlobClass"
 (
 	"Id",
 	"BlobValue"
@@ -30,7 +30,7 @@ SELECT
 	"_"."Id",
 	"_"."BlobValue"
 FROM
-	"BlobClass10" "_"
+	"BlobClass" "_"
 WHERE
 	"_"."Id" = 1
 FETCH FIRST 1 ROWS ONLY
@@ -42,7 +42,7 @@ SELECT
 	"_"."Id",
 	"_"."BlobValue"
 FROM
-	"BlobClass10" "_"
+	"BlobClass" "_"
 WHERE
 	"_"."Id" = 1
 FETCH FIRST 1 ROWS ONLY
@@ -50,5 +50,5 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "BlobClass10"
+DROP TABLE "BlobClass"
 
