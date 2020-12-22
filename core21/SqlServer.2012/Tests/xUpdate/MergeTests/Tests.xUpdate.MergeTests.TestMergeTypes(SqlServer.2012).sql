@@ -131,7 +131,7 @@ SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '2000-11-23T00:00:00'
+SET     @FieldDate = '2000-11-23T00:00:00.0000000'
 DECLARE @FieldTime Time
 SET     @FieldTime = '09:44:34.6534321'
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -219,7 +219,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '2123-11-23T00:00:00'
+SET     @FieldDate = '2123-11-23T00:00:00.0000000'
 DECLARE @FieldTime Time
 SET     @FieldTime = '00:44:34.6414321'
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -306,7 +306,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '3210-11-23T00:00:00'
+SET     @FieldDate = '3210-11-23T00:00:00.0000000'
 DECLARE @FieldTime Time
 SET     @FieldTime = '00:00:00'
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -392,7 +392,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '3210-11-23T00:00:00'
+SET     @FieldDate = '3210-11-23T00:00:00.0000000'
 DECLARE @FieldTime Time
 SET     @FieldTime = '23:59:59.9999999'
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -480,7 +480,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '2123-11-23T00:00:00'
+SET     @FieldDate = '2123-11-23T00:00:00.0000000'
 DECLARE @FieldTime Time
 SET     @FieldTime = '14:44:33.2340000'
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -566,7 +566,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '3210-11-23T00:00:00'
+SET     @FieldDate = '3210-11-23T00:00:00.0000000'
 DECLARE @FieldTime Time
 SET     @FieldTime = '23:59:59.9999999'
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -654,7 +654,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '2123-11-23T00:00:00'
+SET     @FieldDate = '2123-11-23T00:00:00.0000000'
 DECLARE @FieldTime Time
 SET     @FieldTime = '22:44:33'
 DECLARE @FieldEnumString NVarChar(5) -- String
