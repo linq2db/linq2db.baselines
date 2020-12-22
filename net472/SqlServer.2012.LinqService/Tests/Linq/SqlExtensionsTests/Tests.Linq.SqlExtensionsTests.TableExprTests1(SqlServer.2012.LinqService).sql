@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [sample_table_temp]
-(
-	[id]    Int NOT NULL,
-	[value] Int NOT NULL
-)
+IF (OBJECT_ID(N'[sample_table_temp]', N'U') IS NOT NULL)
+	DROP TABLE [sample_table_temp]
+
+BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[sample_table_temp]', N'U') IS NULL)
+	CREATE TABLE [sample_table_temp]
+	(
+		[id]    Int NOT NULL,
+		[value] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012
@@ -43,5 +50,6 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [sample_table_temp]
+IF (OBJECT_ID(N'[sample_table_temp]', N'U') IS NOT NULL)
+	DROP TABLE [sample_table_temp]
 
