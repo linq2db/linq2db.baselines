@@ -2,16 +2,17 @@
 -- Informix.DB2 Informix
 
 SELECT
+	t2.c1,
 	Count(*)
 FROM
 	(
 		SELECT
-			c_1.ParentID,
-			3 as RandValue
+			1 as c1
 		FROM
-			Child c_1
-	) t1
+			Person t1
+		WHERE
+			1 = 0
+	) t2
 GROUP BY
-	t1.ParentID,
-	t1.RandValue
+	t2.c1
 
