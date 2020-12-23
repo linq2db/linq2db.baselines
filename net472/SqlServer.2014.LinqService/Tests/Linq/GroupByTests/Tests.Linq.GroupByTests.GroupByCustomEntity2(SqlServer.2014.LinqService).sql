@@ -1,10 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
+DECLARE @RandValue Int -- Int32
+SET     @RandValue = 3
 
 SELECT
 	Count(*)
 FROM
-	[Child] [c_1]
+	(
+		SELECT
+			[c_1].[ParentID],
+			@RandValue as [RandValue]
+		FROM
+			[Child] [c_1]
+	) [t1]
 GROUP BY
-	[c_1].[ParentID]
+	[t1].[ParentID],
+	[t1].[RandValue]
 
