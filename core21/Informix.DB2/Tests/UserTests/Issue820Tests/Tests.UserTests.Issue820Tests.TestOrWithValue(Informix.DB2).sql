@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Value_1 SmallInt(2) -- Int16
+DECLARE @Value_1 Integer(4) -- Int32
 SET     @Value_1 = 1
 
 SELECT

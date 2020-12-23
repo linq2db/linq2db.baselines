@@ -34,14 +34,16 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ClaimedKeyType VarChar(2) -- String
-SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyType Binary(1)
+SET     @ClaimedKeyType = 2
+DECLARE @ClaimedKeyTypeN Binary(1)
+SET     @ClaimedKeyTypeN = 2
 
 UPDATE
 	Issue1554Table
 SET
 	Issue1554Table.ClaimedKeyType = @ClaimedKeyType,
-	Issue1554Table.ClaimedKeyTypeN = @ClaimedKeyType
+	Issue1554Table.ClaimedKeyTypeN = @ClaimedKeyTypeN
 WHERE
 	Issue1554Table.Id = 0
 
