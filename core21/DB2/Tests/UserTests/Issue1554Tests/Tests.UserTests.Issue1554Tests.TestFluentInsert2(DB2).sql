@@ -14,8 +14,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 0
-DECLARE @ClaimedKeyType VarChar(2) -- String
-SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyType Binary(1)
+SET     @ClaimedKeyType = 2
 DECLARE @ClaimedKeyTypeN VarChar -- String
 SET     @ClaimedKeyTypeN = NULL
 
