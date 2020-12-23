@@ -20,12 +20,19 @@ SELECT
 		FROM
 			"Issue1192Table" t
 		WHERE
-			t."Status" = 3 AND t."MyOtherId" = 12
+			t1."Key_1" = 1 AND t."Status" = 3 AND t."MyOtherId" = 12
 	)
 FROM
-	"Issue1192Table" t_1
-WHERE
-	t_1."MyOtherId" = 12
+	(
+		SELECT
+			1 as "Key_1"
+		FROM
+			"Issue1192Table" t_1
+		WHERE
+			t_1."MyOtherId" = 12
+	) t1
+GROUP BY
+	t1."Key_1"
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
