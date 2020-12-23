@@ -34,14 +34,16 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ClaimedKeyType VarChar(2) -- String
-SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyType Binary(1)
+SET     @ClaimedKeyType = 2
+DECLARE @ClaimedKeyTypeN Binary(1)
+SET     @ClaimedKeyTypeN = 2
 
 UPDATE
 	"Issue1554FluentTable"
 SET
 	"Issue1554FluentTable"."ClaimedKeyType" = @ClaimedKeyType,
-	"Issue1554FluentTable"."ClaimedKeyTypeN" = @ClaimedKeyType
+	"Issue1554FluentTable"."ClaimedKeyTypeN" = @ClaimedKeyTypeN
 WHERE
 	"Issue1554FluentTable"."Id" = 0
 

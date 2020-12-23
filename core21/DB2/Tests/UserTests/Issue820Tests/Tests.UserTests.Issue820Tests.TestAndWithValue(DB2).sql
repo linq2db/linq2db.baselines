@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value_1 SmallInt(2) -- Int16
+DECLARE @Value_1 Integer(4) -- Int32
 SET     @Value_1 = 1
 
 SELECT
