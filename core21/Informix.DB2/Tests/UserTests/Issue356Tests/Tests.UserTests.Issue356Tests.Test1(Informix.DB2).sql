@@ -87,6 +87,5 @@ FROM
 WHERE
 	c_1.ParentID = cp.ParentID
 ORDER BY
-	cp.ParentID,
-	c_1.ChildID
+	cp.ParentID
 
