@@ -46,8 +46,6 @@ FROM
 											FROM
 												"Child" t2
 										) t3
-									ORDER BY
-										t3."ParentID"
 								) t4
 							WHERE
 								ROWNUM <= :take_2

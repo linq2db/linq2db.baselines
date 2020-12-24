@@ -6,8 +6,8 @@ DECLARE @take_1 Int32
 SET     @take_1 = 10
 
 SELECT
-	t5."ParentID",
-	t5."ChildID"
+	t4."ParentID",
+	t4."ChildID"
 FROM
 	(
 		SELECT
@@ -17,30 +17,22 @@ FROM
 			"Parent" cp
 				CROSS JOIN (
 					SELECT
-						t4."ParentID",
-						t4."ChildID"
+						t3."ParentID",
+						t3."ChildID"
 					FROM
 						(
 							SELECT
-								t3."ParentID",
-								t3."ChildID"
+								t1."ParentID",
+								t1."ChildID"
 							FROM
-								(
-									SELECT
-										t1."ParentID",
-										t1."ChildID"
-									FROM
-										"Child" t1
-									UNION
-									SELECT
-										t2."ParentID",
-										t2."ChildID"
-									FROM
-										"Child" t2
-								) t3
-							ORDER BY
-								t3."ParentID"
-						) t4
+								"Child" t1
+							UNION
+							SELECT
+								t2."ParentID",
+								t2."ChildID"
+							FROM
+								"Child" t2
+						) t3
 					WHERE
 						ROWNUM <= :take
 				) c_1
@@ -48,7 +40,7 @@ FROM
 			c_1."ParentID" = cp."ParentID"
 		ORDER BY
 			cp."ParentID"
-	) t5
+	) t4
 WHERE
 	ROWNUM <= :take_1
 
