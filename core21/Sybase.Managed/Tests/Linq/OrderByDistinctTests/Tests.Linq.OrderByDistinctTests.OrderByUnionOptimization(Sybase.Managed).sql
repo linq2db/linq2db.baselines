@@ -43,7 +43,7 @@ SELECT 600,'Three',5,5
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT DISTINCT
 	[x_3].[Id],
 	[x_3].[Id]
 FROM
@@ -94,11 +94,6 @@ FROM
 		WHERE
 			[x_2].[Id] BETWEEN 100 AND 900
 	) [x_3]
-GROUP BY
-	[x_3].[Id],
-	[x_3].[Id]
-ORDER BY
-	Max([x_3].[DuplicateData])
 
 BeforeExecute
 -- Sybase.Managed Sybase
