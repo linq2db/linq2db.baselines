@@ -94,6 +94,8 @@ FROM
 		WHERE
 			"x_2"."Id" BETWEEN 100 AND 900
 	) "x_3"
+ORDER BY
+	"x_3"."DuplicateData"
 
 BeforeExecute
 -- Firebird
