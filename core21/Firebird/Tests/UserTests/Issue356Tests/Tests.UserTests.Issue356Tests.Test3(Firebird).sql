@@ -30,8 +30,6 @@ FROM
 					FROM
 						"Child" "t2"
 				) "t3"
-			ORDER BY
-				"t3"."ParentID"
 		) "c_1"
 WHERE
 	"c_1"."ParentID" = "cp"."ParentID"
