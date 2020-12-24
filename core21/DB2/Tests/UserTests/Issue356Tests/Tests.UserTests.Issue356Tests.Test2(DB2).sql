@@ -24,6 +24,8 @@ FROM
 					FROM
 						"Child" "t2"
 				) "t3"
+			ORDER BY
+				"t3"."ParentID"
 			FETCH FIRST 10 ROWS ONLY
 		) "c_1"
 WHERE

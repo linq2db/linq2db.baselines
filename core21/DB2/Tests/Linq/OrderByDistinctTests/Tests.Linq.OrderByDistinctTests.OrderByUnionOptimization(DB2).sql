@@ -44,7 +44,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT DISTINCT
+SELECT
 	"x_3"."Id",
 	"x_3"."Id"
 FROM
@@ -95,6 +95,11 @@ FROM
 		WHERE
 			"x_2"."Id" BETWEEN 100 AND 900
 	) "x_3"
+GROUP BY
+	"x_3"."Id",
+	"x_3"."Id"
+ORDER BY
+	Max("x_3"."DuplicateData")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

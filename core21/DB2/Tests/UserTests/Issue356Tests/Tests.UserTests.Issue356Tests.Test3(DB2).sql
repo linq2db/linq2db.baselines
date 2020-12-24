@@ -19,7 +19,7 @@ FROM
 					SELECT
 						"t3"."ParentID",
 						"t3"."ChildID",
-						ROW_NUMBER() OVER () as RN
+						ROW_NUMBER() OVER (ORDER BY "t3"."ParentID") as RN
 					FROM
 						(
 							SELECT
