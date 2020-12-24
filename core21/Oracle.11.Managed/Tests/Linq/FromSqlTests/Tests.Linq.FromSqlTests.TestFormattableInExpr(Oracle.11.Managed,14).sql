@@ -1,11 +1,32 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "sample_class"
-(
-	"id"    Int         NOT NULL,
-	"value" VarChar(50)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "sample_class"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "sample_class"
+		(
+			"id"    Int         NOT NULL,
+			"value" VarChar(50)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -69,5 +90,12 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "sample_class"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "sample_class"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

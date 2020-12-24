@@ -1,29 +1,71 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "gt_s_one"
-(
-	"id"   Int          NOT NULL,
-	"col1" VarChar(255)     NULL,
-	"col2" VarChar(255)     NULL,
-	"col3" VarChar(255)     NULL,
-	"col4" VarChar(255)     NULL,
-	"col5" VarChar(255)     NULL,
-	"col6" VarChar(255)     NULL,
-
-	CONSTRAINT "PK_gt_s_one" PRIMARY KEY ("id")
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "gt_s_one"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "access_mode"
-(
-	"id"   Int          NOT NULL,
-	"code" VarChar(255)     NULL,
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "gt_s_one"
+		(
+			"id"   Int          NOT NULL,
+			"col1" VarChar(255)     NULL,
+			"col2" VarChar(255)     NULL,
+			"col3" VarChar(255)     NULL,
+			"col4" VarChar(255)     NULL,
+			"col5" VarChar(255)     NULL,
+			"col6" VarChar(255)     NULL,
 
-	CONSTRAINT "PK_access_mode" PRIMARY KEY ("id")
-)
+			CONSTRAINT "PK_gt_s_one" PRIMARY KEY ("id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "access_mode"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "access_mode"
+		(
+			"id"   Int          NOT NULL,
+			"code" VarChar(255)     NULL,
+
+			CONSTRAINT "PK_access_mode" PRIMARY KEY ("id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -105,10 +147,24 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "access_mode"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "access_mode"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "gt_s_one"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "gt_s_one"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

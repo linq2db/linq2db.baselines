@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "BlobClass10"
+CREATE TABLE "BlobClass"
 (
 	"Id"        Int  NOT NULL,
 	"BlobValue" Blob     NULL,
 
-	CONSTRAINT "PK_BlobClass10" PRIMARY KEY ("Id")
+	CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-INSERT INTO "BlobClass10"
+INSERT INTO "BlobClass"
 (
 	"Id",
 	"BlobValue"
@@ -30,7 +30,7 @@ SELECT
 	t1."Id",
 	t1."BlobValue"
 FROM
-	"BlobClass10" t1
+	"BlobClass" t1
 WHERE
 	t1."Id" = 1 AND ROWNUM <= 1
 
@@ -41,12 +41,12 @@ SELECT
 	t1."Id",
 	t1."BlobValue"
 FROM
-	"BlobClass10" t1
+	"BlobClass" t1
 WHERE
 	t1."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "BlobClass10"
+DROP TABLE "BlobClass"
 

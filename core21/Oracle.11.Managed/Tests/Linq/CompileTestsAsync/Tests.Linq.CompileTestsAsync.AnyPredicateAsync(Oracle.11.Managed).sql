@@ -1,12 +1,33 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "AsyncDataTable"
-(
-	"Id" Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "AsyncDataTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_AsyncDataTable" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "AsyncDataTable"
+		(
+			"Id" Int NOT NULL,
+
+			CONSTRAINT "PK_AsyncDataTable" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -47,5 +68,12 @@ FROM SYS.DUAL
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "AsyncDataTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "AsyncDataTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

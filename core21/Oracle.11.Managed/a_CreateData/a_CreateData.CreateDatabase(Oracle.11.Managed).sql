@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
+ALTER SYSTEM SET DEFERRED_SEGMENT_CREATION=FALSE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
 -- Cleanup schema
 
 BEGIN
@@ -105,7 +110,17 @@ DROP table "t_test_user"
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP sequence "sq_test_user"
+DROP USER "c##sequence_schema" CASCADE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+CREATE USER "c##sequence_schema" IDENTIFIED BY "secret_password"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+GRANT CREATE SEQUENCE TO "c##sequence_schema"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -755,8 +770,8 @@ INSERT INTO "DataTypeTest"
 	 "Single_",       "Stream_",  "String_",    "UInt16_", "UInt32_",   "UInt64_",     "Xml_")
 VALUES
 	(   NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL,
-	    NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL,
-	    NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL)
+		NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL,
+		NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -879,7 +894,7 @@ create table "t_test_user_contract"
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-create sequence "sq_test_user"
+create sequence "c##sequence_schema"."sq_test_user"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1276,7 +1291,7 @@ PROCEDURE AllOutputParameters
 	ntextDataType            IN OUT nclob                          ,
 
 	binaryDataType           IN OUT blob                           ,
- 	bfileDataType            IN OUT bfile                          ,
+	bfileDataType            IN OUT bfile                          ,
 	guidDataType             IN OUT raw                            ,
 
 	--uriDataType              IN OUT UriType                      ,
@@ -1349,7 +1364,7 @@ BEGIN
 		ntextDataType,
 
 		binaryDataType,
- 		bfileDataType,
+		bfileDataType,
 		guidDataType,
 
 		--uriDataType,
@@ -1369,7 +1384,7 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE OR REPLACE PACKAGE BODY ISSUE2132 AS 
+CREATE OR REPLACE PACKAGE BODY ISSUE2132 AS
 procedure test is
 	begin
 		return 4;

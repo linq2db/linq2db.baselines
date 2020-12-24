@@ -1,13 +1,34 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "BaseTable"
-(
-	"Value" Int NOT NULL,
-	"Id"    Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "BaseTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "BaseTable"
+		(
+			"Value" Int NOT NULL,
+			"Id"    Int NOT NULL,
+
+			CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -45,5 +66,12 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "BaseTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "BaseTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

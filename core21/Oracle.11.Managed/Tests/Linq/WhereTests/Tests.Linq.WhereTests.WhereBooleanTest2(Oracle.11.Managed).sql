@@ -1,14 +1,35 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "WhereCases"
-(
-	"Id"                Int     NOT NULL,
-	"BoolValue"         Char(1) NOT NULL,
-	"NullableBoolValue" Char(1)     NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "WhereCases"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_WhereCases" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "WhereCases"
+		(
+			"Id"                Int     NOT NULL,
+			"BoolValue"         Char(1) NOT NULL,
+			"NullableBoolValue" Char(1)     NULL,
+
+			CONSTRAINT "PK_WhereCases" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -430,5 +451,12 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "WhereCases"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "WhereCases"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
