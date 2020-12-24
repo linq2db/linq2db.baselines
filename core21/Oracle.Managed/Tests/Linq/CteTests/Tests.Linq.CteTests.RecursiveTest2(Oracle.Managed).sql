@@ -1,11 +1,32 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "HierarchyTree"
-(
-	"Id"       Int NOT NULL,
-	"ParentId" Int     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "HierarchyTree"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "HierarchyTree"
+		(
+			"Id"       Int NOT NULL,
+			"ParentId" Int     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -80,5 +101,12 @@ ORDER BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "HierarchyTree"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "HierarchyTree"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

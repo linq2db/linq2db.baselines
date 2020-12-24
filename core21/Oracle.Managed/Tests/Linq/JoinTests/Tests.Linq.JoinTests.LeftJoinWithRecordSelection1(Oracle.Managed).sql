@@ -1,12 +1,33 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Fact"
-(
-	"Id" Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Fact"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_Fact" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Fact"
+		(
+			"Id" Int NOT NULL,
+
+			CONSTRAINT "PK_Fact" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -20,14 +41,35 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Tag"
-(
-	"Id"     Int          NOT NULL,
-	"FactId" Int          NOT NULL,
-	"Name"   VarChar(255) NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Tag"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_Tag" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Tag"
+		(
+			"Id"     Int          NOT NULL,
+			"FactId" Int          NOT NULL,
+			"Name"   VarChar(255) NOT NULL,
+
+			CONSTRAINT "PK_Tag" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -55,10 +97,24 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Tag"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Tag"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Fact"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Fact"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
