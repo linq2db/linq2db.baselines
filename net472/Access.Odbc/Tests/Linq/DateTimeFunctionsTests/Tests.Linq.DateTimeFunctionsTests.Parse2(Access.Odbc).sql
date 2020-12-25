@@ -2,14 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[d].[c1]
+	CDate(CStr(DatePart('yyyy', [t].[DateTimeValue])) + '-02-24 00:00:00')
 FROM
-	(
-		SELECT
-			CDate(CStr(DatePart('yyyy', [t].[DateTimeValue])) + '-02-24 00:00:00') as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [d]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart('d', [d].[c1]) > 0
+	DatePart('d', CDate(CStr(DatePart('yyyy', [t].[DateTimeValue])) + '-02-24 00:00:00')) > 0
 
