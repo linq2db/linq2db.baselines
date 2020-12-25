@@ -8,7 +8,7 @@ INSERT INTO "t_test_user"
 )
 VALUES
 (
-	"sequence_schema"."sq_test_user".nextval,
+	"c##sequence_schema"."sq_test_user".nextval,
 	'user'
 )
 
