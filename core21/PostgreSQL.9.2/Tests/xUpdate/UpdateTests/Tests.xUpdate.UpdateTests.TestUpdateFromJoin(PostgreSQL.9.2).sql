@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE gt_s_one
+DROP TABLE IF EXISTS gt_s_one
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS gt_s_one
 (
 	id   Int  NOT NULL,
 	col1 text     NULL,
@@ -17,7 +22,12 @@ CREATE TABLE gt_s_one
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE access_mode
+DROP TABLE IF EXISTS access_mode
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS access_mode
 (
 	id   Int  NOT NULL,
 	code text     NULL,
@@ -52,10 +62,10 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE access_mode
+DROP TABLE IF EXISTS access_mode
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE gt_s_one
+DROP TABLE IF EXISTS gt_s_one
 

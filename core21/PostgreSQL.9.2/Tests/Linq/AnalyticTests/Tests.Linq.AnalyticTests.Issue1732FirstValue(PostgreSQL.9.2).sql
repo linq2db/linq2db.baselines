@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE "Position"
+DROP TABLE IF EXISTS "Position"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Position"
 (
 	"Group" Int NOT NULL,
 	"Order" Int NOT NULL,
@@ -39,5 +44,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "Position"
+DROP TABLE IF EXISTS "Position"
 

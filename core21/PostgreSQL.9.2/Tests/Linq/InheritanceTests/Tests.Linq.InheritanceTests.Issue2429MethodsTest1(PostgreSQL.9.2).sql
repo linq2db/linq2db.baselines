@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE "BaseTable"
+DROP TABLE IF EXISTS "BaseTable"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "BaseTable"
 (
 	"Value" Int NOT NULL,
 	"Id"    Int NOT NULL,
@@ -51,5 +56,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "BaseTable"
+DROP TABLE IF EXISTS "BaseTable"
 
