@@ -1,14 +1,27 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "StLink"
-(
-	"InId"          Int   NOT NULL,
-	"InMaxQuantity" Float     NULL,
-	"InMinQuantity" Float     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "StLink"';
+END
 
-	CONSTRAINT "PK_StLink" PRIMARY KEY ("InId")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "StLink"
+		(
+			"InId"          Int   NOT NULL,
+			"InMaxQuantity" Float     NULL,
+			"InMinQuantity" Float     NULL,
+
+			CONSTRAINT "PK_StLink" PRIMARY KEY ("InId")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -26,14 +39,27 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "EdtLink"
-(
-	"InId"          Int   NOT NULL,
-	"InMaxQuantity" Float     NULL,
-	"InMinQuantity" Float     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "EdtLink"';
+END
 
-	CONSTRAINT "PK_EdtLink" PRIMARY KEY ("InId")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "EdtLink"
+		(
+			"InId"          Int   NOT NULL,
+			"InMaxQuantity" Float     NULL,
+			"InMinQuantity" Float     NULL,
+
+			CONSTRAINT "PK_EdtLink" PRIMARY KEY ("InId")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -90,10 +116,16 @@ FETCH FIRST 2 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "EdtLink"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "EdtLink"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "StLink"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "StLink"';
+END
 
