@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [SuperClass]
+DROP TABLE IF EXISTS [SuperClass]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SuperClass]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,
@@ -32,7 +37,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Subclass1]
+DROP TABLE IF EXISTS [Subclass1]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Subclass1]
 (
 	[Id]       INTEGER       NOT NULL,
 	[ParentId] INTEGER           NULL,
@@ -65,7 +75,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Subclass2]
+DROP TABLE IF EXISTS [Subclass2]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Subclass2]
 (
 	[Id]       INTEGER       NOT NULL,
 	[ParentId] INTEGER           NULL,
@@ -115,15 +130,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Subclass2]
+DROP TABLE IF EXISTS [Subclass2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Subclass1]
+DROP TABLE IF EXISTS [Subclass1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [SuperClass]
+DROP TABLE IF EXISTS [SuperClass]
 

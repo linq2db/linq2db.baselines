@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [ConcatTest]
+DROP TABLE IF EXISTS [ConcatTest]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ConcatTest]
 (
 	[EntityId] INTEGER       NOT NULL,
 	[Discr]    INTEGER       NOT NULL,
@@ -49,5 +54,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [ConcatTest]
+DROP TABLE IF EXISTS [ConcatTest]
 
