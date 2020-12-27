@@ -1,35 +1,98 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "stVersions"
-(
-	"inId"     Int NOT NULL,
-	"inIdMain" Int NOT NULL,
-
-	CONSTRAINT "PK_stVersions" PRIMARY KEY ("inId")
-)
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-CREATE TABLE "rlStatesTypesAndUserGroups"
-(
-	"inIdState" Int NOT NULL,
-	"inIdType"  Int NOT NULL,
-
-	CONSTRAINT "PK_rlStatesTypesAndUserGroups" PRIMARY KEY ("inIdState", "inIdType")
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "stVersions"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "stMain"
-(
-	"inId"     Int NOT NULL,
-	"inIdType" Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "stVersions"
+		(
+			"inId"     Int NOT NULL,
+			"inIdMain" Int NOT NULL,
 
-	CONSTRAINT "PK_stMain" PRIMARY KEY ("inId")
-)
+			CONSTRAINT "PK_stVersions" PRIMARY KEY ("inId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "rlStatesTypesAndUserGroups"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "rlStatesTypesAndUserGroups"
+		(
+			"inIdState" Int NOT NULL,
+			"inIdType"  Int NOT NULL,
+
+			CONSTRAINT "PK_rlStatesTypesAndUserGroups" PRIMARY KEY ("inIdState", "inIdType")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "stMain"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "stMain"
+		(
+			"inId"     Int NOT NULL,
+			"inIdType" Int NOT NULL,
+
+			CONSTRAINT "PK_stMain" PRIMARY KEY ("inId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -46,15 +109,36 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "stMain"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "stMain"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "rlStatesTypesAndUserGroups"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "rlStatesTypesAndUserGroups"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "stVersions"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "stVersions"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

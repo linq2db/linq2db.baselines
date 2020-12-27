@@ -1,16 +1,37 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "UpdatedEntities"
-(
-	"id"         Int NOT NULL,
-	"Value1"     Int NOT NULL,
-	"Value2"     Int NOT NULL,
-	"Value3"     Int NOT NULL,
-	"RelationId" Int     NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdatedEntities"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_UpdatedEntities" PRIMARY KEY ("id")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UpdatedEntities"
+		(
+			"id"         Int NOT NULL,
+			"Value1"     Int NOT NULL,
+			"Value2"     Int NOT NULL,
+			"Value3"     Int NOT NULL,
+			"RelationId" Int     NULL,
+
+			CONSTRAINT "PK_UpdatedEntities" PRIMARY KEY ("id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -25,15 +46,36 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "UpdateRelation"
-(
-	"id"            Int NOT NULL,
-	"RelatedValue1" Int NOT NULL,
-	"RelatedValue2" Int NOT NULL,
-	"RelatedValue3" Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdateRelation"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_UpdateRelation" PRIMARY KEY ("id")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UpdateRelation"
+		(
+			"id"            Int NOT NULL,
+			"RelatedValue1" Int NOT NULL,
+			"RelatedValue2" Int NOT NULL,
+			"RelatedValue3" Int NOT NULL,
+
+			CONSTRAINT "PK_UpdateRelation" PRIMARY KEY ("id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -87,10 +129,24 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "UpdateRelation"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdateRelation"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "UpdatedEntities"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdatedEntities"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
