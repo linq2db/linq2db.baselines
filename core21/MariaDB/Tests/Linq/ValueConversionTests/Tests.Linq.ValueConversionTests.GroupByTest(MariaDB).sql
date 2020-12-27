@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `ValueConversion`
+DROP TABLE IF EXISTS `ValueConversion`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
 	`Id`                      INT          NOT NULL,
 	`Value1`                  VARCHAR(200)     NULL,
@@ -82,5 +87,5 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `ValueConversion`
+DROP TABLE IF EXISTS `ValueConversion`
 

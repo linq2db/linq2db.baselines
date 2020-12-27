@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `StLink`
+DROP TABLE IF EXISTS `StLink`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `StLink`
 (
 	`InId`          INT    NOT NULL,
 	`InMaxQuantity` DOUBLE     NULL,
@@ -26,7 +31,12 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `EdtLink`
+DROP TABLE IF EXISTS `EdtLink`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `EdtLink`
 (
 	`InId`          INT    NOT NULL,
 	`InMaxQuantity` DOUBLE     NULL,
@@ -94,10 +104,10 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `EdtLink`
+DROP TABLE IF EXISTS `EdtLink`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `StLink`
+DROP TABLE IF EXISTS `StLink`
 
