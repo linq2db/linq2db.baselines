@@ -91,11 +91,6 @@ DROP TRIGGER "CREATE_DataTypeTest";
 BeforeExecute
 -- Firebird
 
-DROP TRIGGER "CREATE_BinaryDataID";
-
-BeforeExecute
--- Firebird
-
 DROP TABLE "Dual";
 
 BeforeExecute

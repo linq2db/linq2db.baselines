@@ -2,26 +2,41 @@
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT '
-		CREATE TABLE "DynamicTable"
-		(
-			ID               Int  NOT NULL,
-			"Not Identifier" Int  NOT NULL,
-			"Some Value"     Int  NOT NULL,
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_DynamicTable')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_DynamicTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_DynamicTable')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_DynamicTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DynamicTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "DynamicTable"';
+END
 
-			CONSTRAINT "PK_DynamicTable" PRIMARY KEY (ID)
-		)
-	';
-	EXECUTE STATEMENT '
-		CREATE GENERATOR "GIDENTITY_DynamicTable"
-	';
-	EXECUTE STATEMENT '
-		CREATE TRIGGER "TIDENTITY_DynamicTable" FOR "DynamicTable"
-		BEFORE INSERT POSITION 0
-		AS BEGIN
-			NEW.ID = GEN_ID("GIDENTITY_DynamicTable", 1);
-		END
-	';
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DynamicTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "DynamicTable"
+			(
+				ID               Int  NOT NULL,
+				"Not Identifier" Int  NOT NULL,
+				"Some Value"     Int  NOT NULL,
+
+				CONSTRAINT "PK_DynamicTable" PRIMARY KEY (ID)
+			)
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_DynamicTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE GENERATOR "GIDENTITY_DynamicTable"
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_DynamicTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TRIGGER "TIDENTITY_DynamicTable" FOR "DynamicTable"
+			BEFORE INSERT POSITION 0
+			AS BEGIN
+				NEW.ID = GEN_ID("GIDENTITY_DynamicTable", 1);
+			END
+		';
 END
 
 BeforeExecute
@@ -46,8 +61,11 @@ BeforeExecute
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_DynamicTable"';
-	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_DynamicTable"';
-	EXECUTE STATEMENT 'DROP TABLE "DynamicTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_DynamicTable')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_DynamicTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_DynamicTable')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_DynamicTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DynamicTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "DynamicTable"';
 END
 
