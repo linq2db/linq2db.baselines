@@ -1,12 +1,21 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [SelectExpressionTable]
-(
-	[ID] Int NOT NULL,
+IF (OBJECT_ID(N'SelectExpressionTable') IS NOT NULL)
+	DROP TABLE [SelectExpressionTable]
 
-	CONSTRAINT [PK_SelectExpressionTable] PRIMARY KEY CLUSTERED ([ID])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'SelectExpressionTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [SelectExpressionTable]
+		(
+			[ID] Int NOT NULL,
+
+			CONSTRAINT [PK_SelectExpressionTable] PRIMARY KEY CLUSTERED ([ID])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -28,5 +37,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [SelectExpressionTable]
+IF (OBJECT_ID(N'SelectExpressionTable') IS NOT NULL)
+	DROP TABLE [SelectExpressionTable]
 

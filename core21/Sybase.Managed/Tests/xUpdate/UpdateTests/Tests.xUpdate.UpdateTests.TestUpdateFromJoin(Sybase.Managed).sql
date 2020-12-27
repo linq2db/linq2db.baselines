@@ -1,29 +1,47 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [gt_s_one]
-(
-	[id]   Int           NOT NULL,
-	[col1] NVarChar(255)     NULL,
-	[col2] NVarChar(255)     NULL,
-	[col3] NVarChar(255)     NULL,
-	[col4] NVarChar(255)     NULL,
-	[col5] NVarChar(255)     NULL,
-	[col6] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_gt_s_one] PRIMARY KEY CLUSTERED ([id])
-)
+IF (OBJECT_ID(N'gt_s_one') IS NOT NULL)
+	DROP TABLE [gt_s_one]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [access_mode]
-(
-	[id]   Int           NOT NULL,
-	[code] NVarChar(255)     NULL,
+IF (OBJECT_ID(N'gt_s_one') IS NULL)
+	EXECUTE('
+		CREATE TABLE [gt_s_one]
+		(
+			[id]   Int           NOT NULL,
+			[col1] NVarChar(255)     NULL,
+			[col2] NVarChar(255)     NULL,
+			[col3] NVarChar(255)     NULL,
+			[col4] NVarChar(255)     NULL,
+			[col5] NVarChar(255)     NULL,
+			[col6] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_access_mode] PRIMARY KEY CLUSTERED ([id])
-)
+			CONSTRAINT [PK_gt_s_one] PRIMARY KEY CLUSTERED ([id])
+		)
+	')
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'access_mode') IS NOT NULL)
+	DROP TABLE [access_mode]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'access_mode') IS NULL)
+	EXECUTE('
+		CREATE TABLE [access_mode]
+		(
+			[id]   Int           NOT NULL,
+			[code] NVarChar(255)     NULL,
+
+			CONSTRAINT [PK_access_mode] PRIMARY KEY CLUSTERED ([id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -50,10 +68,12 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [access_mode]
+IF (OBJECT_ID(N'access_mode') IS NOT NULL)
+	DROP TABLE [access_mode]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [gt_s_one]
+IF (OBJECT_ID(N'gt_s_one') IS NOT NULL)
+	DROP TABLE [gt_s_one]
 
