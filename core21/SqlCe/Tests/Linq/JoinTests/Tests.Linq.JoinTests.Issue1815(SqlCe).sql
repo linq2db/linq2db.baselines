@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [StLink]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [StLink]
 (
 	[InId]          Int   NOT NULL,
@@ -21,6 +26,11 @@ INSERT INTO [StLink]
 )
 SELECT 1,2,1 UNION ALL
 SELECT 2,NULL,NULL
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [EdtLink]
 
 BeforeExecute
 -- SqlCe
