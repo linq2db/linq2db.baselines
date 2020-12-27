@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE BaseTable
+DROP TABLE IF EXISTS BaseTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS BaseTable
 (
 	"Value" Int NOT NULL,
 	Id      Int NOT NULL,
@@ -52,5 +57,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE BaseTable
+DROP TABLE IF EXISTS BaseTable
 

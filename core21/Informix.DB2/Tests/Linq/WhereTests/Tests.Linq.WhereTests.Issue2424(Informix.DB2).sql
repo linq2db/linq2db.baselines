@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Isue2424Table
+DROP TABLE IF EXISTS Isue2424Table
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Isue2424Table
 (
 	Id       Int           NOT NULL,
 	StrValue NVarChar(255)     NULL
@@ -306,5 +311,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Isue2424Table
+DROP TABLE IF EXISTS Isue2424Table
 

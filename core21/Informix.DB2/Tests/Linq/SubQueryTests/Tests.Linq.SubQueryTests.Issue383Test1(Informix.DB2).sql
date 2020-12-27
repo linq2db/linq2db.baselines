@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Contract_Distributor_Agent
+DROP TABLE IF EXISTS Contract_Distributor_Agent
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Contract_Distributor_Agent
 (
 	Agent_Id                      Int           NOT NULL,
 	Distributor_Id                Int           NOT NULL,
@@ -48,7 +53,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Agent
+DROP TABLE IF EXISTS Agent
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Agent
 (
 	Agent_Id   Int           NOT NULL,
 	First_Name NVarChar(255)     NULL,
@@ -80,7 +90,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Distributor
+DROP TABLE IF EXISTS Distributor
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Distributor
 (
 	Distributor_Id   Int           NOT NULL,
 	Type_Code        NVarChar(255)     NULL,
@@ -112,7 +127,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Distributor_Commercial_Propert
+DROP TABLE IF EXISTS Distributor_Commercial_Propert
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Distributor_Commercial_Propert
 (
 	Distributor_Id         Int           NOT NULL,
 	Commercial_Property_Id Int           NOT NULL,
@@ -144,7 +164,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Commercial_Property
+DROP TABLE IF EXISTS Commercial_Property
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Commercial_Property
 (
 	Commercial_Property_Id Int           NOT NULL,
 	Street_Number          NVarChar(255)     NULL,
@@ -196,7 +221,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Contract_Dates
+DROP TABLE IF EXISTS Contract_Dates
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Contract_Dates
 (
 	Contract_Id    Int           NOT NULL,
 	Type_Code      NVarChar(255)     NULL,
@@ -228,7 +258,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Cities
+DROP TABLE IF EXISTS Cities
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Cities
 (
 	City_Code NVarChar(255)     NULL,
 	City_Name NVarChar(255)     NULL
@@ -372,35 +407,35 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Cities
+DROP TABLE IF EXISTS Cities
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Contract_Dates
+DROP TABLE IF EXISTS Contract_Dates
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Commercial_Property
+DROP TABLE IF EXISTS Commercial_Property
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Distributor_Commercial_Propert
+DROP TABLE IF EXISTS Distributor_Commercial_Propert
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Distributor
+DROP TABLE IF EXISTS Distributor
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Agent
+DROP TABLE IF EXISTS Agent
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Contract_Distributor_Agent
+DROP TABLE IF EXISTS Contract_Distributor_Agent
 
