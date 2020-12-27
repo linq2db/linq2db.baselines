@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [StLink]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [StLink]
 (
 	[InId]          Int   NOT NULL,
@@ -53,6 +58,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [EdtLink]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

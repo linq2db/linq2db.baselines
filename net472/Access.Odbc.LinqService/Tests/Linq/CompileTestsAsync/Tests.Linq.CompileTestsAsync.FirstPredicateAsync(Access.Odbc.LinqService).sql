@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [AsyncDataTable]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [AsyncDataTable]
 (
 	[Id] Int NOT NULL,
