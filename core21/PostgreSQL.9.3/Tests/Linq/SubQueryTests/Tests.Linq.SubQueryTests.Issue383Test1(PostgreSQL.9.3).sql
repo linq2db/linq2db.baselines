@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE "Contract_Distributor_Agent"
+DROP TABLE IF EXISTS "Contract_Distributor_Agent"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Contract_Distributor_Agent"
 (
 	"Agent_Id"                      Int  NOT NULL,
 	"Distributor_Id"                Int  NOT NULL,
@@ -29,7 +34,12 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE "Agent"
+DROP TABLE IF EXISTS "Agent"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Agent"
 (
 	"Agent_Id"   Int  NOT NULL,
 	"First_Name" text     NULL,
@@ -51,7 +61,12 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE "Distributor"
+DROP TABLE IF EXISTS "Distributor"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Distributor"
 (
 	"Distributor_Id"   Int  NOT NULL,
 	"Type_Code"        text     NULL,
@@ -73,7 +88,12 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE "Distributor_Commercial_Propert"
+DROP TABLE IF EXISTS "Distributor_Commercial_Propert"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Distributor_Commercial_Propert"
 (
 	"Distributor_Id"         Int  NOT NULL,
 	"Commercial_Property_Id" Int  NOT NULL,
@@ -95,7 +115,12 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE "Commercial_Property"
+DROP TABLE IF EXISTS "Commercial_Property"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Commercial_Property"
 (
 	"Commercial_Property_Id" Int  NOT NULL,
 	"Street_Number"          text     NULL,
@@ -125,7 +150,12 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE "Contract_Dates"
+DROP TABLE IF EXISTS "Contract_Dates"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Contract_Dates"
 (
 	"Contract_Id"    Int  NOT NULL,
 	"Type_Code"      text     NULL,
@@ -147,7 +177,12 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE "Cities"
+DROP TABLE IF EXISTS "Cities"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Cities"
 (
 	"City_Code" text     NULL,
 	"City_Name" text     NULL
@@ -284,35 +319,35 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Cities"
+DROP TABLE IF EXISTS "Cities"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Contract_Dates"
+DROP TABLE IF EXISTS "Contract_Dates"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Commercial_Property"
+DROP TABLE IF EXISTS "Commercial_Property"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Distributor_Commercial_Propert"
+DROP TABLE IF EXISTS "Distributor_Commercial_Propert"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Distributor"
+DROP TABLE IF EXISTS "Distributor"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Agent"
+DROP TABLE IF EXISTS "Agent"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Contract_Distributor_Agent"
+DROP TABLE IF EXISTS "Contract_Distributor_Agent"
 
