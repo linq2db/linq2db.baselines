@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [UpdateSetTest]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [UpdateSetTest]
 (
 	[Id]     Int  NOT NULL,
