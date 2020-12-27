@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `i1084_person`
+DROP TABLE IF EXISTS `i1084_person`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `i1084_person`
 (
 	`Id`            INT NOT NULL,
 	`Number`        INT NOT NULL,
@@ -24,7 +29,12 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `i1084_student`
+DROP TABLE IF EXISTS `i1084_student`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `i1084_student`
 (
 	`Id`            INT          NOT NULL,
 	`Number`        VARCHAR(255)     NULL,
@@ -59,10 +69,10 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `i1084_student`
+DROP TABLE IF EXISTS `i1084_student`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `i1084_person`
+DROP TABLE IF EXISTS `i1084_person`
 

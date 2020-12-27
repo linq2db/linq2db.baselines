@@ -1,7 +1,22 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SET @@global.sql_mode=(SELECT REPLACE(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', ''))
+DROP SCHEMA IF EXISTS `testdata`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE SCHEMA `testdata`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+ALTER DATABASE `testdata` CHARACTER SET utf8 COLLATE utf8_general_ci
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+USE `testdata`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -11,17 +26,7 @@ SET GLOBAL local_infile=ON;
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE IF EXISTS Doctor
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS Patient
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS InheritanceParent
+SET @@global.sql_mode=(SELECT REPLACE(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', ''))
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -34,11 +39,6 @@ CREATE TABLE InheritanceParent
 
 	 CONSTRAINT PK_InheritanceParent PRIMARY KEY CLUSTERED (InheritanceParentId)
 )
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS InheritanceChild
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -57,11 +57,6 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 -- Person Table
-
-DROP TABLE IF EXISTS Person
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 
 CREATE TABLE Person
 (
@@ -141,11 +136,6 @@ BeforeExecute
 
 -- Data Types test
 
-DROP TABLE IF EXISTS DataTypeTest
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 CREATE TABLE DataTypeTest
 (
 	DataTypeID      int              AUTO_INCREMENT NOT NULL,
@@ -176,21 +166,6 @@ CREATE TABLE DataTypeTest
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE IF EXISTS Parent
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS Child
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS GrandChild
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 CREATE TABLE Parent     (ParentID int, Value1 int)
 
 BeforeExecute
@@ -202,11 +177,6 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS LinqDataTypes
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -231,20 +201,10 @@ CREATE TABLE LinqDataTypes
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE IF EXISTS TestIdentity
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 CREATE TABLE TestIdentity (
 	ID int AUTO_INCREMENT NOT NULL,
 	CONSTRAINT PK_TestIdentity PRIMARY KEY CLUSTERED (ID)
 )
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS `AllTypes`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -399,11 +359,6 @@ SELECT
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE IF EXISTS `AllTypesNoYear`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 CREATE TABLE `AllTypesNoYear`
 (
 	ID                  int AUTO_INCREMENT       NOT NULL,
@@ -440,16 +395,6 @@ CREATE TABLE `AllTypesNoYear`
 
 	CONSTRAINT PK_AllTypes PRIMARY KEY CLUSTERED (ID)
 )
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS TestSameName
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS test_schema.TestSameName
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -491,16 +436,6 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 -- merge test tables
-DROP TABLE IF EXISTS TestMerge1
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS TestMerge2
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 CREATE TABLE TestMerge1
 (
 	Id       int          NOT NULL,
@@ -565,16 +500,6 @@ CREATE TABLE TestMerge2
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP PROCEDURE IF EXISTS TestProcedure
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP FUNCTION IF EXISTS TestFunction
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 CREATE PROCEDURE TestProcedure(IN param3 INT, INOUT param2 INT, OUT param1 INT)
 BEGIN
 	SELECT param2 + param2 INTO param2;
@@ -599,20 +524,10 @@ END
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP PROCEDURE IF EXISTS AddIssue792Record
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 CREATE PROCEDURE AddIssue792Record()
 BEGIN
 	INSERT INTO `AllTypes`(char20DataType) VALUES('issue792');
 END
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP PROCEDURE IF EXISTS `TestOutputParametersWithoutTableProcedure`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -624,11 +539,6 @@ CREATE PROCEDURE `TestOutputParametersWithoutTableProcedure`(
 BEGIN
 	SELECT 123 INTO aOutParam;
 END
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS FullTextIndexTest
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -660,20 +570,10 @@ INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('record not found',
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE IF EXISTS Issue1993
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 CREATE TABLE Issue1993 (
 	id			INTEGER UNSIGNED	NOT NULL   AUTO_INCREMENT,
 	description	VARCHAR(100)		NULL,
 PRIMARY KEY(id));
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP PROCEDURE IF EXISTS `Issue2313Parameters`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -784,11 +684,6 @@ BEGIN
 	`GeometryCollection`
 	FROM Person;
 END
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP PROCEDURE IF EXISTS `Issue2313Results`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

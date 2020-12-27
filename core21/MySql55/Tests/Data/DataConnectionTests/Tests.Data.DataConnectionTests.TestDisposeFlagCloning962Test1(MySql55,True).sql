@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Categories`
+DROP TABLE IF EXISTS `Categories`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Categories`
 (
 	`CategoryID`   INT          AUTO_INCREMENT NOT NULL,
 	`CategoryName` VARCHAR(255)                NOT NULL,
@@ -25,7 +30,12 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Products`
+DROP TABLE IF EXISTS `Products`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Products`
 (
 	`ProductID`       INT          AUTO_INCREMENT NOT NULL,
 	`ProductName`     VARCHAR(255)                NOT NULL,
@@ -78,10 +88,10 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Products`
+DROP TABLE IF EXISTS `Products`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Categories`
+DROP TABLE IF EXISTS `Categories`
 

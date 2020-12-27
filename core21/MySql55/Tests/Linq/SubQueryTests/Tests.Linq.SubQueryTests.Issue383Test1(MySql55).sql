@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Contract_Distributor_Agent`
+DROP TABLE IF EXISTS `Contract_Distributor_Agent`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Contract_Distributor_Agent`
 (
 	`Agent_Id`                      INT          NOT NULL,
 	`Distributor_Id`                INT          NOT NULL,
@@ -29,7 +34,12 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Agent`
+DROP TABLE IF EXISTS `Agent`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Agent`
 (
 	`Agent_Id`   INT          NOT NULL,
 	`First_Name` VARCHAR(255)     NULL,
@@ -51,7 +61,12 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Distributor`
+DROP TABLE IF EXISTS `Distributor`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Distributor`
 (
 	`Distributor_Id`   INT          NOT NULL,
 	`Type_Code`        VARCHAR(255)     NULL,
@@ -73,7 +88,12 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Distributor_Commercial_Propert`
+DROP TABLE IF EXISTS `Distributor_Commercial_Propert`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Distributor_Commercial_Propert`
 (
 	`Distributor_Id`         INT          NOT NULL,
 	`Commercial_Property_Id` INT          NOT NULL,
@@ -95,7 +115,12 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Commercial_Property`
+DROP TABLE IF EXISTS `Commercial_Property`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Commercial_Property`
 (
 	`Commercial_Property_Id` INT          NOT NULL,
 	`Street_Number`          VARCHAR(255)     NULL,
@@ -125,7 +150,12 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Contract_Dates`
+DROP TABLE IF EXISTS `Contract_Dates`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Contract_Dates`
 (
 	`Contract_Id`    INT          NOT NULL,
 	`Type_Code`      VARCHAR(255)     NULL,
@@ -147,7 +177,12 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Cities`
+DROP TABLE IF EXISTS `Cities`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Cities`
 (
 	`City_Code` VARCHAR(255)     NULL,
 	`City_Name` VARCHAR(255)     NULL
@@ -284,35 +319,35 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Cities`
+DROP TABLE IF EXISTS `Cities`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Contract_Dates`
+DROP TABLE IF EXISTS `Contract_Dates`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Commercial_Property`
+DROP TABLE IF EXISTS `Commercial_Property`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Distributor_Commercial_Propert`
+DROP TABLE IF EXISTS `Distributor_Commercial_Propert`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Distributor`
+DROP TABLE IF EXISTS `Distributor`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Agent`
+DROP TABLE IF EXISTS `Agent`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Contract_Distributor_Agent`
+DROP TABLE IF EXISTS `Contract_Distributor_Agent`
 

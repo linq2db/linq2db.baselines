@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Fact`
+DROP TABLE IF EXISTS `Fact`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Fact`
 (
 	`Id` INT NOT NULL,
 
@@ -23,7 +28,12 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Tag`
+DROP TABLE IF EXISTS `Tag`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Tag`
 (
 	`Id`     INT          NOT NULL,
 	`FactId` INT          NOT NULL,
@@ -63,10 +73,10 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Tag`
+DROP TABLE IF EXISTS `Tag`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Fact`
+DROP TABLE IF EXISTS `Fact`
 
