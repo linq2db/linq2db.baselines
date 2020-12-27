@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [DataClass]
+DROP TABLE IF EXISTS [DataClass]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [DataClass]
 (
 	[Id]    INTEGER  NOT NULL,
 	[Value] NVarChar     NULL,
@@ -46,5 +51,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [DataClass]
+DROP TABLE IF EXISTS [DataClass]
 

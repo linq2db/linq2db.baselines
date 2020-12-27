@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Position]
+DROP TABLE IF EXISTS [Position]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Position]
 (
 	[Group] INTEGER NOT NULL,
 	[Order] INTEGER NOT NULL,
@@ -112,5 +117,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Position]
+DROP TABLE IF EXISTS [Position]
 

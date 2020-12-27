@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [FirstOptimizerData]
+DROP TABLE IF EXISTS [FirstOptimizerData]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [FirstOptimizerData]
 (
 	[Key1]      INTEGER      NOT NULL,
 	[Key2]      INTEGER      NOT NULL,
@@ -42,7 +47,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [SecondOptimizerData]
+DROP TABLE IF EXISTS [SecondOptimizerData]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SecondOptimizerData]
 (
 	[Key1]      INTEGER      NOT NULL,
 	[Key2]      INTEGER      NOT NULL,
@@ -101,10 +111,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [SecondOptimizerData]
+DROP TABLE IF EXISTS [SecondOptimizerData]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [FirstOptimizerData]
+DROP TABLE IF EXISTS [FirstOptimizerData]
 

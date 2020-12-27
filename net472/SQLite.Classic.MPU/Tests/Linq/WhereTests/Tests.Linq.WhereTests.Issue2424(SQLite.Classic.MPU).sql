@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Isue2424Table]
+DROP TABLE IF EXISTS [Isue2424Table]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Isue2424Table]
 (
 	[Id]       INTEGER       NOT NULL,
 	[StrValue] NVarChar(255)     NULL
@@ -331,5 +336,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Isue2424Table]
+DROP TABLE IF EXISTS [Isue2424Table]
 

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [EnumCardinality]
+DROP TABLE IF EXISTS [EnumCardinality]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [EnumCardinality]
 (
 	[Id]        INTEGER  NOT NULL,
 	[Property1] NChar(1) NOT NULL,
@@ -148,5 +153,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [EnumCardinality]
+DROP TABLE IF EXISTS [EnumCardinality]
 

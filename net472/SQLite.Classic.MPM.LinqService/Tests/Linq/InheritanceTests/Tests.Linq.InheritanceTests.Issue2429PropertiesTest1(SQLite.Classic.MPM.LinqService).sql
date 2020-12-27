@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [BaseTable]
+DROP TABLE IF EXISTS [BaseTable]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [BaseTable]
 (
 	[Value] INTEGER NOT NULL,
 	[Id]    INTEGER NOT NULL,
@@ -58,5 +63,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [BaseTable]
+DROP TABLE IF EXISTS [BaseTable]
 
