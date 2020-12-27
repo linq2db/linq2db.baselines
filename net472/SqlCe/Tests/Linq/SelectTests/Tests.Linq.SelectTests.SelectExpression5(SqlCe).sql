@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [SelectExpressionTable]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [SelectExpressionTable]
 (
 	[ID] Int NOT NULL,

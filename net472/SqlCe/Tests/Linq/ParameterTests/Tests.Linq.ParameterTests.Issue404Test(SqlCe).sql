@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Table404One]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Table404One]
 (
 	[Id] Int NOT NULL
@@ -15,6 +20,11 @@ INSERT INTO [Table404One]
 )
 SELECT 1 UNION ALL
 SELECT 2
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Table404Two]
 
 BeforeExecute
 -- SqlCe
@@ -134,6 +144,11 @@ DROP TABLE [Table404One]
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [Table404One]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Table404One]
 (
 	[Id] Int NOT NULL
@@ -148,6 +163,11 @@ INSERT INTO [Table404One]
 )
 SELECT 1 UNION ALL
 SELECT 2
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Table404Two]
 
 BeforeExecute
 -- SqlCe
