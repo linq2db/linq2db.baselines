@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `SelectExpressionTable`
+DROP TABLE IF EXISTS `SelectExpressionTable`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `SelectExpressionTable`
 (
 	`ID` INT NOT NULL,
 
@@ -32,5 +37,5 @@ LIMIT @take
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `SelectExpressionTable`
+DROP TABLE IF EXISTS `SelectExpressionTable`
 

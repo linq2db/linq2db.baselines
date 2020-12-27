@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [UpdatedEntities]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [UpdatedEntities]
 (
 	[id]         Int NOT NULL,
@@ -131,6 +136,11 @@ VALUES
 	@Value3,
 	@RelationId
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [UpdateRelation]
 
 BeforeExecute
 -- SqlCe

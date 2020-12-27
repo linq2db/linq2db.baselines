@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [WmsResourceTypeDTO]
+DROP TABLE IF EXISTS [WmsResourceTypeDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [WmsResourceTypeDTO]
 (
 	[Id]        Guid          NOT NULL,
 	[Width]     INTEGER       NOT NULL,
@@ -29,7 +34,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [WmsLoadCarrierDTO]
+DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [WmsLoadCarrierDTO]
 (
 	[Id]                          Guid          NOT NULL,
 	[DontTouch]                   Bit           NOT NULL,
@@ -95,7 +105,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [WMS_ResourceA]
+DROP TABLE IF EXISTS [WMS_ResourceA]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [WMS_ResourceA]
 (
 	[Id]                          Guid          NOT NULL,
 	[DontTouch]                   Bit           NOT NULL,
@@ -258,15 +273,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [WMS_ResourceA]
+DROP TABLE IF EXISTS [WMS_ResourceA]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [WmsLoadCarrierDTO]
+DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [WmsResourceTypeDTO]
+DROP TABLE IF EXISTS [WmsResourceTypeDTO]
 

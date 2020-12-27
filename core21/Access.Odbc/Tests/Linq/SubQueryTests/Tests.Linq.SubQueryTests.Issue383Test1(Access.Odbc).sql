@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Contract_Distributor_Agent]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Contract_Distributor_Agent]
 (
 	[Agent_Id]                      Int           NOT NULL,
@@ -48,6 +53,11 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Agent]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Agent]
 (
 	[Agent_Id]   Int           NOT NULL,
@@ -76,6 +86,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Distributor]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -112,6 +127,11 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Distributor_Commercial_Propert]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Distributor_Commercial_Propert]
 (
 	[Distributor_Id]         Int           NOT NULL,
@@ -140,6 +160,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Commercial_Property]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -196,6 +221,11 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Contract_Dates]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Contract_Dates]
 (
 	[Contract_Id]    Int           NOT NULL,
@@ -224,6 +254,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Cities]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

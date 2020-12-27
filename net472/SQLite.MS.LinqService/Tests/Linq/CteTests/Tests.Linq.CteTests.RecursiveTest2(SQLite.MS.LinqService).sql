@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [HierarchyTree]
 (
 	[Id]       INTEGER NOT NULL,
 	[ParentId] INTEGER     NULL
@@ -380,5 +385,5 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
 

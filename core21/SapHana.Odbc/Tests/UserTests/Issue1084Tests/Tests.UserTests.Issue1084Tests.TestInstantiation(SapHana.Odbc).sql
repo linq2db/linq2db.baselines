@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "i1084_person"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "i1084_person"
 (
 	"Id"            Integer NOT NULL,
@@ -51,6 +56,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "i1084_student"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

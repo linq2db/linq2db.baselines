@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "UpdatedEntities"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "UpdatedEntities"
 (
 	"id"         Integer NOT NULL,
@@ -131,6 +136,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "UpdateRelation"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [gt_s_one]
+DROP TABLE IF EXISTS [gt_s_one]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [gt_s_one]
 (
 	[id]   INTEGER       NOT NULL,
 	[col1] NVarChar(255)     NULL,
@@ -17,7 +22,12 @@ CREATE TABLE [gt_s_one]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [access_mode]
+DROP TABLE IF EXISTS [access_mode]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [access_mode]
 (
 	[id]   INTEGER       NOT NULL,
 	[code] NVarChar(255)     NULL,
@@ -107,10 +117,10 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [access_mode]
+DROP TABLE IF EXISTS [access_mode]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [gt_s_one]
+DROP TABLE IF EXISTS [gt_s_one]
 

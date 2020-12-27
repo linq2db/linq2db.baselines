@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [StLink]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [StLink]
 (
 	[InId]          Int   NOT NULL,
@@ -53,6 +58,11 @@ VALUES
 	@InMaxQuantity,
 	@InMinQuantity
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [EdtLink]
 
 BeforeExecute
 -- SqlCe

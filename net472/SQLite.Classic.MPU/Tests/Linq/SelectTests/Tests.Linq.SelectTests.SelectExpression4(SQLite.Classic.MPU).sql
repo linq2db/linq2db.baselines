@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [SelectExpressionTable]
+DROP TABLE IF EXISTS [SelectExpressionTable]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SelectExpressionTable]
 (
 	[ID] INTEGER NOT NULL,
 
@@ -32,5 +37,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [SelectExpressionTable]
+DROP TABLE IF EXISTS [SelectExpressionTable]
 

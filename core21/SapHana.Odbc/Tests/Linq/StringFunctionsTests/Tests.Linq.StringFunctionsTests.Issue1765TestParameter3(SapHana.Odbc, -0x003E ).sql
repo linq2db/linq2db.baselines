@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "SampleClass"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "SampleClass"
 (
 	"Id"     Integer      NOT NULL,
@@ -104,7 +109,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	STRING_AGG("t1"."Value4", ' -> ' ORDER BY "t1"."Value4", "t1"."Value3" DESC)
+	STRING_AGG("t1"."Value4", ' -> ' ORDER BY "t1"."Value3" DESC, "t1"."Value4")
 FROM
 	"SampleClass" "t1"
 GROUP BY

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [SelectExpressionTable]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [SelectExpressionTable]
 (
 	[ID] Int NOT NULL,

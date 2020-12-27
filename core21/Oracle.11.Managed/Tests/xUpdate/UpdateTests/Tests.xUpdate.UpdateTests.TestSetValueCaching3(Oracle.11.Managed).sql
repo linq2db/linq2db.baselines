@@ -1,18 +1,39 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "UpdateSetTest"
-(
-	"Id"     Int     NOT NULL,
-	"Value1" Raw(16) NOT NULL,
-	"Value2" Int     NOT NULL,
-	"Value3" Int     NOT NULL,
-	"Value4" Raw(16)     NULL,
-	"Value5" Int         NULL,
-	"Value6" Int         NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdateSetTest"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_UpdateSetTest" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UpdateSetTest"
+		(
+			"Id"     Int     NOT NULL,
+			"Value1" Raw(16) NOT NULL,
+			"Value2" Int     NOT NULL,
+			"Value3" Int     NOT NULL,
+			"Value4" Raw(16)     NULL,
+			"Value5" Int         NULL,
+			"Value6" Int         NULL,
+
+			CONSTRAINT "PK_UpdateSetTest" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -80,5 +101,12 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "UpdateSetTest"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdateSetTest"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

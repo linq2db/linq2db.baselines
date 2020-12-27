@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "UpdateSetTest"
+DROP TABLE IF EXISTS "UpdateSetTest"
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "UpdateSetTest"
 (
 	"Id"     Int  NOT NULL,
 	"Value1" uuid NOT NULL,
@@ -91,5 +96,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "UpdateSetTest"
+DROP TABLE IF EXISTS "UpdateSetTest"
 

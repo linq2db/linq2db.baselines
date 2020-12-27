@@ -1,15 +1,36 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "OrderByDistinctData"
-(
-	"Id"            Int          NOT NULL,
-	"DuplicateData" VarChar(255)     NULL,
-	"OrderData1"    Int          NOT NULL,
-	"OrderData2"    Int          NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "OrderByDistinctData"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_OrderByDistinctData" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "OrderByDistinctData"
+		(
+			"Id"            Int          NOT NULL,
+			"DuplicateData" VarChar(255)     NULL,
+			"OrderData1"    Int          NOT NULL,
+			"OrderData2"    Int          NOT NULL,
+
+			CONSTRAINT "PK_OrderByDistinctData" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -54,5 +75,12 @@ OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "OrderByDistinctData"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "OrderByDistinctData"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

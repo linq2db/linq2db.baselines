@@ -1,15 +1,24 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Contract_Distributor_Agent]
-(
-	[Agent_Id]                    Int           NOT NULL,
-	[Distributor_Id]              Int           NOT NULL,
-	[Contract_Id]                 Int           NOT NULL,
-	[Distributor_Type_Code]       NVarChar(255)     NULL,
-	Distributor_Agent_Type_Prefix NVarChar(255)     NULL,
-	[Represents_Type_Prefix]      NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Contract_Distributor_Agent') IS NOT NULL)
+	DROP TABLE [Contract_Distributor_Agent]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Contract_Distributor_Agent') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Contract_Distributor_Agent]
+		(
+			[Agent_Id]                    Int           NOT NULL,
+			[Distributor_Id]              Int           NOT NULL,
+			[Contract_Id]                 Int           NOT NULL,
+			[Distributor_Type_Code]       NVarChar(255)     NULL,
+			Distributor_Agent_Type_Prefix NVarChar(255)     NULL,
+			[Represents_Type_Prefix]      NVarChar(255)     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -28,12 +37,21 @@ SELECT 1,1,198827882,'CC','OFFICE','REPRESENTS'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Agent]
-(
-	[Agent_Id]   Int           NOT NULL,
-	[First_Name] NVarChar(255)     NULL,
-	[Last_Name]  NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Agent') IS NOT NULL)
+	DROP TABLE [Agent]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Agent') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Agent]
+		(
+			[Agent_Id]   Int           NOT NULL,
+			[First_Name] NVarChar(255)     NULL,
+			[Last_Name]  NVarChar(255)     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -49,12 +67,21 @@ SELECT 1,'x','x'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Distributor]
-(
-	[Distributor_Id]   Int           NOT NULL,
-	[Type_Code]        NVarChar(255)     NULL,
-	[Distributor_Name] NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Distributor') IS NOT NULL)
+	DROP TABLE [Distributor]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Distributor') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Distributor]
+		(
+			[Distributor_Id]   Int           NOT NULL,
+			[Type_Code]        NVarChar(255)     NULL,
+			[Distributor_Name] NVarChar(255)     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -70,12 +97,21 @@ SELECT 1,'RE','x'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE Distributor_Commercial_Propert
-(
-	[Distributor_Id]         Int           NOT NULL,
-	[Commercial_Property_Id] Int           NOT NULL,
-	[Distributor_Type_Code]  NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Distributor_Commercial_Propert') IS NOT NULL)
+	DROP TABLE Distributor_Commercial_Propert
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Distributor_Commercial_Propert') IS NULL)
+	EXECUTE('
+		CREATE TABLE Distributor_Commercial_Propert
+		(
+			[Distributor_Id]         Int           NOT NULL,
+			[Commercial_Property_Id] Int           NOT NULL,
+			[Distributor_Type_Code]  NVarChar(255)     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -91,16 +127,25 @@ SELECT 1,1,'RE'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Commercial_Property]
-(
-	[Commercial_Property_Id] Int           NOT NULL,
-	[Street_Number]          NVarChar(255)     NULL,
-	[Street_Name]            NVarChar(255)     NULL,
-	[State]                  NVarChar(255)     NULL,
-	[Zip_Code]               NVarChar(255)     NULL,
-	[Zip_Plus_4]             NVarChar(255)     NULL,
-	[City_Code]              NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Commercial_Property') IS NOT NULL)
+	DROP TABLE [Commercial_Property]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Commercial_Property') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Commercial_Property]
+		(
+			[Commercial_Property_Id] Int           NOT NULL,
+			[Street_Number]          NVarChar(255)     NULL,
+			[Street_Name]            NVarChar(255)     NULL,
+			[State]                  NVarChar(255)     NULL,
+			[Zip_Code]               NVarChar(255)     NULL,
+			[Zip_Plus_4]             NVarChar(255)     NULL,
+			[City_Code]              NVarChar(255)     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -120,12 +165,21 @@ SELECT 1,'x','x','x','x','x','x'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Contract_Dates]
-(
-	[Contract_Id]    Int           NOT NULL,
-	[Type_Code]      NVarChar(255)     NULL,
-	[Effective_Date] NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Contract_Dates') IS NOT NULL)
+	DROP TABLE [Contract_Dates]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Contract_Dates') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Contract_Dates]
+		(
+			[Contract_Id]    Int           NOT NULL,
+			[Type_Code]      NVarChar(255)     NULL,
+			[Effective_Date] NVarChar(255)     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -141,11 +195,20 @@ SELECT 198827882,'ESTCOE','x'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Cities]
-(
-	[City_Code] NVarChar(255)     NULL,
-	[City_Name] NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Cities') IS NOT NULL)
+	DROP TABLE [Cities]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Cities') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Cities]
+		(
+			[City_Code] NVarChar(255)     NULL,
+			[City_Name] NVarChar(255)     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -277,35 +340,42 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Cities]
+IF (OBJECT_ID(N'Cities') IS NOT NULL)
+	DROP TABLE [Cities]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Contract_Dates]
+IF (OBJECT_ID(N'Contract_Dates') IS NOT NULL)
+	DROP TABLE [Contract_Dates]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Commercial_Property]
+IF (OBJECT_ID(N'Commercial_Property') IS NOT NULL)
+	DROP TABLE [Commercial_Property]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE Distributor_Commercial_Propert
+IF (OBJECT_ID(N'Distributor_Commercial_Propert') IS NOT NULL)
+	DROP TABLE Distributor_Commercial_Propert
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Distributor]
+IF (OBJECT_ID(N'Distributor') IS NOT NULL)
+	DROP TABLE [Distributor]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Agent]
+IF (OBJECT_ID(N'Agent') IS NOT NULL)
+	DROP TABLE [Agent]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Contract_Distributor_Agent]
+IF (OBJECT_ID(N'Contract_Distributor_Agent') IS NOT NULL)
+	DROP TABLE [Contract_Distributor_Agent]
 

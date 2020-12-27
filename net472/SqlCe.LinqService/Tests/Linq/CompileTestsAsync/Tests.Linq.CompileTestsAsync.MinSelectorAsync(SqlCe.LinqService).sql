@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [AsyncDataTable]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [AsyncDataTable]
 (
 	[Id] Int NOT NULL,

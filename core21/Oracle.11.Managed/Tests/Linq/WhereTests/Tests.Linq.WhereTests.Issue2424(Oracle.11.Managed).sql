@@ -1,11 +1,32 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "Isue2424Table"
-(
-	"Id"       Int          NOT NULL,
-	"StrValue" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Isue2424Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Isue2424Table"
+		(
+			"Id"       Int          NOT NULL,
+			"StrValue" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -305,5 +326,12 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Isue2424Table"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Isue2424Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

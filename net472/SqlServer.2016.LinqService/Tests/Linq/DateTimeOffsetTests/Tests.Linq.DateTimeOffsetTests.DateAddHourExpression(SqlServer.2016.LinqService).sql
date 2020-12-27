@@ -1,13 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-CREATE TABLE [Transactions]
-(
-	[TransactionId]   Int            NOT NULL,
-	[TransactionDate] DateTimeOffset NOT NULL,
+IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
+	DROP TABLE [Transactions]
 
-	CONSTRAINT [PK_Transactions] PRIMARY KEY CLUSTERED ([TransactionId])
-)
+BeforeExecute
+-- SqlServer.2016 SqlServer.2012
+
+IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
+	CREATE TABLE [Transactions]
+	(
+		[TransactionId]   Int            NOT NULL,
+		[TransactionDate] DateTimeOffset NOT NULL,
+
+		CONSTRAINT [PK_Transactions] PRIMARY KEY CLUSTERED ([TransactionId])
+	)
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
@@ -490,5 +497,6 @@ FROM
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Transactions]
+IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
+	DROP TABLE [Transactions]
 

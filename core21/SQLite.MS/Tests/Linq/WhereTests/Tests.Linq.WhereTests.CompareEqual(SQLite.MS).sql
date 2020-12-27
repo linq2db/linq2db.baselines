@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [WhereCompareData]
+DROP TABLE IF EXISTS [WhereCompareData]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [WhereCompareData]
 (
 	[Id]            INTEGER NOT NULL,
 	[NotNullable]   INTEGER NOT NULL,
@@ -134,5 +139,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [WhereCompareData]
+DROP TABLE IF EXISTS [WhereCompareData]
 

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `UpdatedEntities`
+DROP TABLE IF EXISTS `UpdatedEntities`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 (
 	`id`         INT NOT NULL,
 	`Value1`     INT NOT NULL,
@@ -32,7 +37,12 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `UpdateRelation`
+DROP TABLE IF EXISTS `UpdateRelation`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `UpdateRelation`
 (
 	`id`            INT NOT NULL,
 	`RelatedValue1` INT NOT NULL,
@@ -90,10 +100,10 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `UpdateRelation`
+DROP TABLE IF EXISTS `UpdateRelation`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `UpdatedEntities`
+DROP TABLE IF EXISTS `UpdatedEntities`
 

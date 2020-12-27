@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "GroupSampleClass"
+DROP TABLE IF EXISTS "GroupSampleClass"
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "GroupSampleClass"
 (
 	"Id1"   Int NOT NULL,
 	"Id2"   Int NOT NULL,
@@ -55,5 +60,5 @@ HAVING
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "GroupSampleClass"
+DROP TABLE IF EXISTS "GroupSampleClass"
 

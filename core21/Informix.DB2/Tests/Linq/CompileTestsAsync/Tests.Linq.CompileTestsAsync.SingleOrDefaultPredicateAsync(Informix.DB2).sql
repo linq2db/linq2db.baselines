@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE AsyncDataTable
+DROP TABLE IF EXISTS AsyncDataTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS AsyncDataTable
 (
 	Id Int NOT NULL,
 
@@ -163,5 +168,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE AsyncDataTable
+DROP TABLE IF EXISTS AsyncDataTable
 

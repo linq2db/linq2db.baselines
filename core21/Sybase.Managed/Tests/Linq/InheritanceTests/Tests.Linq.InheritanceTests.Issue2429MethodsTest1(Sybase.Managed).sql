@@ -1,13 +1,22 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [BaseTable]
-(
-	[Value] Int NOT NULL,
-	[Id]    Int NOT NULL,
+IF (OBJECT_ID(N'BaseTable') IS NOT NULL)
+	DROP TABLE [BaseTable]
 
-	CONSTRAINT [PK_BaseTable] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'BaseTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [BaseTable]
+		(
+			[Value] Int NOT NULL,
+			[Id]    Int NOT NULL,
+
+			CONSTRAINT [PK_BaseTable] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -44,5 +53,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [BaseTable]
+IF (OBJECT_ID(N'BaseTable') IS NOT NULL)
+	DROP TABLE [BaseTable]
 

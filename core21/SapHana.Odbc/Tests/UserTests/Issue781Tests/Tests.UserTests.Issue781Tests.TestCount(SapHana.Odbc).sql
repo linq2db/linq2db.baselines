@@ -8,14 +8,19 @@ FROM
 		SELECT
 			0 as "c1"
 		FROM
-			"Person" "selectParam"
-				LEFT JOIN "Patient" "a_Patient" ON "selectParam"."PersonID" = "a_Patient"."PersonID"
+			(
+				SELECT
+					'test' || "a_Patient"."Diagnosis" as "c1"
+				FROM
+					"Person" "selectParam"
+						LEFT JOIN "Patient" "a_Patient" ON "selectParam"."PersonID" = "a_Patient"."PersonID"
+			) "t1"
 		GROUP BY
-			'test' || "a_Patient"."Diagnosis"
-	) "t1"
+			"t1"."c1"
+	) "t2"
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -27,7 +32,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],

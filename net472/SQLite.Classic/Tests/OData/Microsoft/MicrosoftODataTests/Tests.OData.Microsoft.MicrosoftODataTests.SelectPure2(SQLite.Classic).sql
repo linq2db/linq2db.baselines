@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [odata_person]
+DROP TABLE IF EXISTS [odata_person]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [odata_person]
 (
 	[Name]            NVarChar(50)  NOT NULL,
 	[YearsExperience] INTEGER       NOT NULL,
@@ -50,5 +55,5 @@ GROUP BY
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [odata_person]
+DROP TABLE IF EXISTS [odata_person]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
@@ -36,7 +36,7 @@ WHERE
 			WHEN "p"."FirstName" IS NULL
 				THEN NULL
 			ELSE CASE
-				WHEN "p"."FirstName" LIKE 'Jo%'
+				WHEN "p"."FirstName" LIKE 'Jo%' ESCAPE '~'
 					THEN 1
 				ELSE 0
 			END
@@ -46,7 +46,7 @@ WHERE
 			WHEN "p"."FirstName" IS NULL
 				THEN NULL
 			ELSE CASE
-				WHEN "p"."FirstName" LIKE 'Jo%'
+				WHEN "p"."FirstName" LIKE 'Jo%' ESCAPE '~'
 					THEN 1
 				ELSE 0
 			END

@@ -1,12 +1,25 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "AsyncDataTable"
-(
-	"Id" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AsyncDataTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "AsyncDataTable"';
+END
 
-	CONSTRAINT "PK_AsyncDataTable" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AsyncDataTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "AsyncDataTable"
+			(
+				"Id" Int NOT NULL,
+
+				CONSTRAINT "PK_AsyncDataTable" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -49,5 +62,8 @@ FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "AsyncDataTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AsyncDataTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "AsyncDataTable"';
+END
 

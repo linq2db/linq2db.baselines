@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [UpdatedEntities]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [UpdatedEntities]
 (
 	[id]         Int NOT NULL,
@@ -131,6 +136,11 @@ VALUES
 	@Value3,
 	@RelationId
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [UpdateRelation]
 
 BeforeExecute
 -- Access AccessOleDb

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [sample_table_temp]
+DROP TABLE IF EXISTS [sample_table_temp]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [sample_table_temp]
 (
 	[id]    INTEGER NOT NULL,
 	[value] INTEGER NOT NULL
@@ -34,5 +39,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [sample_table_temp]
+DROP TABLE IF EXISTS [sample_table_temp]
 

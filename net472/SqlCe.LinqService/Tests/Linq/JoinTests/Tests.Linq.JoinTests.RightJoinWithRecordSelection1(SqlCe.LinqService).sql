@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Fact]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Fact]
 (
 	[Id] Int NOT NULL,
@@ -49,6 +54,11 @@ VALUES
 (
 	@Id
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Tag]
 
 BeforeExecute
 -- SqlCe

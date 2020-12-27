@@ -39,15 +39,9 @@ FROM
 	) "t3"
 UNION
 SELECT
-	"t4"."year_1",
-	"t4"."year_1",
-	"t4"."int_1"
+	Year("_1"."DateTimeValue"),
+	Year("_1"."DateTimeValue"),
+	2
 FROM
-	(
-		SELECT
-			Year("_1"."DateTimeValue") as "year_1",
-			2 as "int_1"
-		FROM
-			"LinqDataTypes" "_1"
-	) "t4"
+	"LinqDataTypes" "_1"
 

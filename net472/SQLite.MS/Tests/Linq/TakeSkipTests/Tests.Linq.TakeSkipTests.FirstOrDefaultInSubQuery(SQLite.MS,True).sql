@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Batch]
+DROP TABLE IF EXISTS [Batch]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Batch]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,
@@ -25,7 +30,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Confirmation]
+DROP TABLE IF EXISTS [Confirmation]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Confirmation]
 (
 	[BatchId] INTEGER   NOT NULL,
 	[Date]    DateTime2 NOT NULL
@@ -82,10 +92,10 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Confirmation]
+DROP TABLE IF EXISTS [Confirmation]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Batch]
+DROP TABLE IF EXISTS [Batch]
 

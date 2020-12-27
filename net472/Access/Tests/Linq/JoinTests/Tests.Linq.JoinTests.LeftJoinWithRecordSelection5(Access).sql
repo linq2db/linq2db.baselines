@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Fact]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Fact]
 (
 	[Id] Int NOT NULL,
@@ -49,6 +54,11 @@ VALUES
 (
 	@Id
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Tag]
 
 BeforeExecute
 -- Access AccessOleDb

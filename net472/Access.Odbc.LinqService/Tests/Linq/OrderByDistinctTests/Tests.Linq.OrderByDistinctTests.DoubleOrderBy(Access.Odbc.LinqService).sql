@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [OrderByDistinctData]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [OrderByDistinctData]
 (
 	[Id]            Int           NOT NULL,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
+ALTER SYSTEM SET DEFERRED_SEGMENT_CREATION=FALSE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
 -- Cleanup schema
 
 BEGIN
@@ -765,8 +770,8 @@ INSERT INTO "DataTypeTest"
 	 "Single_",       "Stream_",  "String_",    "UInt16_", "UInt32_",   "UInt64_",     "Xml_")
 VALUES
 	(   NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL,
-	    NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL,
-	    NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL)
+		NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL,
+		NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -1286,7 +1291,7 @@ PROCEDURE AllOutputParameters
 	ntextDataType            IN OUT nclob                          ,
 
 	binaryDataType           IN OUT blob                           ,
- 	bfileDataType            IN OUT bfile                          ,
+	bfileDataType            IN OUT bfile                          ,
 	guidDataType             IN OUT raw                            ,
 
 	--uriDataType              IN OUT UriType                      ,
@@ -1359,7 +1364,7 @@ BEGIN
 		ntextDataType,
 
 		binaryDataType,
- 		bfileDataType,
+		bfileDataType,
 		guidDataType,
 
 		--uriDataType,
@@ -1379,7 +1384,7 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE OR REPLACE PACKAGE BODY ISSUE2132 AS 
+CREATE OR REPLACE PACKAGE BODY ISSUE2132 AS
 procedure test is
 	begin
 		return 4;

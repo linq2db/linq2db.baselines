@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [SampleClass]
-(
-	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
-)
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
+	DROP TABLE [SampleClass]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
+	CREATE TABLE [SampleClass]
+	(
+		[Id]    Int NOT NULL,
+		[Value] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -68,5 +75,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [SampleClass]
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
+	DROP TABLE [SampleClass]
 

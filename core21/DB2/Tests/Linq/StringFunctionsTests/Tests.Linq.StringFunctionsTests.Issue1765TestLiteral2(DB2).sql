@@ -1,14 +1,27 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "SampleClass"
-(
-	"Id"     Int          NOT NULL,
-	"Value1" NVarChar(50)     NULL,
-	"Value2" NVarChar(50)     NULL,
-	"Value3" NVarChar(50)     NULL,
-	"Value4" VarChar(50)      NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "SampleClass"
+		(
+			"Id"     Int          NOT NULL,
+			"Value1" NVarChar(50)     NULL,
+			"Value2" NVarChar(50)     NULL,
+			"Value3" NVarChar(50)     NULL,
+			"Value4" VarChar(50)      NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -37,5 +50,8 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "SampleClass"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
+END
 

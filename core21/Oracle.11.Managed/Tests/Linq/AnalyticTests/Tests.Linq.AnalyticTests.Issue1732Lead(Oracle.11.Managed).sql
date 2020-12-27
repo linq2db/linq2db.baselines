@@ -1,12 +1,33 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "Position"
-(
-	"Group" Int NOT NULL,
-	"Order" Int NOT NULL,
-	"Id"    Int     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Position"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Position"
+		(
+			"Group" Int NOT NULL,
+			"Order" Int NOT NULL,
+			"Id"    Int     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -34,5 +55,12 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Position"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Position"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

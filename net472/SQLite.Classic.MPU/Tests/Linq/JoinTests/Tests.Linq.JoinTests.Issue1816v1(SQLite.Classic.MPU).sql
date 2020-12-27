@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [stVersions]
+DROP TABLE IF EXISTS [stVersions]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [stVersions]
 (
 	[inId]     INTEGER NOT NULL,
 	[inIdMain] INTEGER NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE [stVersions]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [rlStatesTypesAndUserGroups]
+DROP TABLE IF EXISTS [rlStatesTypesAndUserGroups]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [rlStatesTypesAndUserGroups]
 (
 	[inIdState] INTEGER NOT NULL,
 	[inIdType]  INTEGER NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE [rlStatesTypesAndUserGroups]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [stMain]
+DROP TABLE IF EXISTS [stMain]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [stMain]
 (
 	[inId]     INTEGER NOT NULL,
 	[inIdType] INTEGER NOT NULL,
@@ -45,15 +60,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [stMain]
+DROP TABLE IF EXISTS [stMain]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [rlStatesTypesAndUserGroups]
+DROP TABLE IF EXISTS [rlStatesTypesAndUserGroups]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [stVersions]
+DROP TABLE IF EXISTS [stVersions]
 

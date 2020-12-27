@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [sample_class]
+DROP TABLE IF EXISTS [sample_class]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [sample_class]
 (
 	[id]    INTEGER      NOT NULL,
 	[value] NVarChar(50)     NULL
@@ -55,5 +60,5 @@ DROP TABLE [sample_other_class]
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [sample_class]
+DROP TABLE IF EXISTS [sample_class]
 

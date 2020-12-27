@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [User]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [User]
 (
 	[city]            NVarChar(255)     NULL,

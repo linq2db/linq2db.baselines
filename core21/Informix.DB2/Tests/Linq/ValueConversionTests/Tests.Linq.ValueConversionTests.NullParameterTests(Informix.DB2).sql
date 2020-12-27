@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE ValueConversion
+DROP TABLE IF EXISTS ValueConversion
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS ValueConversion
 (
 	Id                      Int                       NOT NULL,
 	Value1                  NVarChar(200)                 NULL,
@@ -491,5 +496,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE ValueConversion
+DROP TABLE IF EXISTS ValueConversion
 

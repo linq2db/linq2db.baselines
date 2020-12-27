@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Table404One]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Table404One]
 (
 	[Id] Int NOT NULL
@@ -33,6 +38,11 @@ VALUES
 (
 	@Id
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Table404Two]
 
 BeforeExecute
 -- SqlCe
@@ -268,6 +278,11 @@ DROP TABLE [Table404One]
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [Table404One]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Table404One]
 (
 	[Id] Int NOT NULL
@@ -300,6 +315,11 @@ VALUES
 (
 	@Id
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Table404Two]
 
 BeforeExecute
 -- SqlCe

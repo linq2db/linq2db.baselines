@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [MappingTestClass]
+DROP TABLE IF EXISTS [MappingTestClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [MappingTestClass]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL,
@@ -46,5 +51,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [MappingTestClass]
+DROP TABLE IF EXISTS [MappingTestClass]
 

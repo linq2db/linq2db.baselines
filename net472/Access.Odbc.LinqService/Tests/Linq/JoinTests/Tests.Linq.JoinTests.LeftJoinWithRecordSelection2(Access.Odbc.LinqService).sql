@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Fact]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Fact]
 (
 	[Id] Int NOT NULL,
@@ -49,6 +54,11 @@ VALUES
 (
 	?
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Tag]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	? LIKE (Replace(Replace(Replace("p"."FirstName", '~', '~~'), '%', '~%'), '_', '~_') || '%') ESCAPE '~'
+	? LIKE Replace(Replace(Replace("p"."FirstName", '~', '~~'), '%', '~%'), '_', '~_') || '%' ESCAPE '~'
 

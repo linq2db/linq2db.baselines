@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [StLink]
+DROP TABLE IF EXISTS [StLink]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [StLink]
 (
 	[InId]          INTEGER NOT NULL,
 	[InMaxQuantity] Float       NULL,
@@ -26,7 +31,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [EdtLink]
+DROP TABLE IF EXISTS [EdtLink]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [EdtLink]
 (
 	[InId]          INTEGER NOT NULL,
 	[InMaxQuantity] Float       NULL,
@@ -88,10 +98,10 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [EdtLink]
+DROP TABLE IF EXISTS [EdtLink]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [StLink]
+DROP TABLE IF EXISTS [StLink]
 

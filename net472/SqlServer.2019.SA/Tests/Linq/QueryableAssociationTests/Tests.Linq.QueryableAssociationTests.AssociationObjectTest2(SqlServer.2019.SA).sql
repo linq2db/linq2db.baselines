@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-CREATE TABLE [SomeTable]
-(
-	[Id]       Int            NOT NULL,
-	[OwnerStr] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[SomeTable]', N'U') IS NOT NULL)
+	DROP TABLE [SomeTable]
+
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+IF (OBJECT_ID(N'[SomeTable]', N'U') IS NULL)
+	CREATE TABLE [SomeTable]
+	(
+		[Id]       Int            NOT NULL,
+		[OwnerStr] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -30,11 +37,18 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-CREATE TABLE [SomeOtherEntity]
-(
-	[Id]       Int            NOT NULL,
-	[StrValue] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
+	DROP TABLE [SomeOtherEntity]
+
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NULL)
+	CREATE TABLE [SomeOtherEntity]
+	(
+		[Id]       Int            NOT NULL,
+		[StrValue] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -124,10 +138,12 @@ BeforeExecute
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [SomeOtherEntity]
+IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
+	DROP TABLE [SomeOtherEntity]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [SomeTable]
+IF (OBJECT_ID(N'[SomeTable]', N'U') IS NOT NULL)
+	DROP TABLE [SomeTable]
 

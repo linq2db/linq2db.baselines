@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [CONFIG]
+DROP TABLE IF EXISTS [CONFIG]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [CONFIG]
 (
 	[ID]   INTEGER       NOT NULL,
 	[NAME] NVarChar(255)     NULL,
@@ -24,7 +29,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [KOMPO]
+DROP TABLE IF EXISTS [KOMPO]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [KOMPO]
 (
 	[TYP]    INTEGER NOT NULL,
 	[NUMBER] INTEGER NOT NULL,
@@ -90,10 +100,10 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [KOMPO]
+DROP TABLE IF EXISTS [KOMPO]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [CONFIG]
+DROP TABLE IF EXISTS [CONFIG]
 

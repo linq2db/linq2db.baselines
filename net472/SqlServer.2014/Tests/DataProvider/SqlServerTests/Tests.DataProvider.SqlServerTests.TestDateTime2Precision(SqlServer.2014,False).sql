@@ -1,19 +1,26 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-CREATE TABLE [DateTime2Table]
-(
-	[Id]  Int          NOT NULL,
-	[DTD] DateTime2    NOT NULL,
-	[DT0] DateTime2(0) NOT NULL,
-	[DT1] DateTime2(1) NOT NULL,
-	[DT2] DateTime2(2) NOT NULL,
-	[DT3] DateTime2(3) NOT NULL,
-	[DT4] DateTime2(4) NOT NULL,
-	[DT5] DateTime2(5) NOT NULL,
-	[DT6] DateTime2(6) NOT NULL,
-	[DT7] DateTime2    NOT NULL
-)
+IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NOT NULL)
+	DROP TABLE [DateTime2Table]
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+
+IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NULL)
+	CREATE TABLE [DateTime2Table]
+	(
+		[Id]  Int          NOT NULL,
+		[DTD] DateTime2    NOT NULL,
+		[DT0] DateTime2(0) NOT NULL,
+		[DT1] DateTime2(1) NOT NULL,
+		[DT2] DateTime2(2) NOT NULL,
+		[DT3] DateTime2(3) NOT NULL,
+		[DT4] DateTime2(4) NOT NULL,
+		[DT5] DateTime2(5) NOT NULL,
+		[DT6] DateTime2(6) NOT NULL,
+		[DT7] DateTime2    NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -286,5 +293,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [DateTime2Table]
+IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NOT NULL)
+	DROP TABLE [DateTime2Table]
 

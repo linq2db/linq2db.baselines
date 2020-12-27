@@ -1,15 +1,36 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "Issue2032Table"
-(
-	"Id"       Int            NOT NULL,
-	"Decimal1" Decimal(10, 4) NOT NULL,
-	"Decimal2" Decimal(10, 4)     NULL,
-	"Decimal3" Decimal(10, 4)     NULL,
-	"Int1"     Int                NULL,
-	"Int2"     Int                NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue2032Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue2032Table"
+		(
+			"Id"       Int            NOT NULL,
+			"Decimal1" Decimal(10, 4) NOT NULL,
+			"Decimal2" Decimal(10, 4)     NULL,
+			"Decimal3" Decimal(10, 4)     NULL,
+			"Int1"     Int                NULL,
+			"Int2"     Int                NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -37,5 +58,12 @@ ORDER BY
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Issue2032Table"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue2032Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

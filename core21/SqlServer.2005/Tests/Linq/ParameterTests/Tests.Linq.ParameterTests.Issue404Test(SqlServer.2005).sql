@@ -1,10 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Table404One]
-(
-	[Id] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
+	DROP TABLE [Table404One]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Table404One]', N'U') IS NULL)
+	CREATE TABLE [Table404One]
+	(
+		[Id] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -19,12 +26,19 @@ SELECT 2
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Table404Two]
-(
-	[Id]           Int NOT NULL,
-	[Usage]        Int NOT NULL,
-	[FirstTableId] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
+	DROP TABLE [Table404Two]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Table404Two]', N'U') IS NULL)
+	CREATE TABLE [Table404Two]
+	(
+		[Id]           Int NOT NULL,
+		[Usage]        Int NOT NULL,
+		[FirstTableId] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -124,20 +138,29 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Table404Two]
+IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
+	DROP TABLE [Table404Two]
 
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Table404One]
+IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
+	DROP TABLE [Table404One]
 
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Table404One]
-(
-	[Id] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
+	DROP TABLE [Table404One]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Table404One]', N'U') IS NULL)
+	CREATE TABLE [Table404One]
+	(
+		[Id] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -152,12 +175,19 @@ SELECT 2
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Table404Two]
-(
-	[Id]           Int NOT NULL,
-	[Usage]        Int NOT NULL,
-	[FirstTableId] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
+	DROP TABLE [Table404Two]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Table404Two]', N'U') IS NULL)
+	CREATE TABLE [Table404Two]
+	(
+		[Id]           Int NOT NULL,
+		[Usage]        Int NOT NULL,
+		[FirstTableId] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -257,10 +287,12 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Table404Two]
+IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
+	DROP TABLE [Table404Two]
 
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Table404One]
+IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
+	DROP TABLE [Table404One]
 

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [SampleClass]
 (
 	[Id]     INTEGER      NOT NULL,
 	[Value1] NVarChar(50)     NULL,
@@ -114,5 +119,5 @@ GROUP BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 

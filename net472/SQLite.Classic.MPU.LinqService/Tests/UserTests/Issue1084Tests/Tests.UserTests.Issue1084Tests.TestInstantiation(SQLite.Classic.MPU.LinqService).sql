@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [i1084_person]
+DROP TABLE IF EXISTS [i1084_person]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [i1084_person]
 (
 	[Id]            INTEGER NOT NULL,
 	[Number]        INTEGER NOT NULL,
@@ -55,7 +60,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [i1084_student]
+DROP TABLE IF EXISTS [i1084_student]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [i1084_student]
 (
 	[Id]            INTEGER       NOT NULL,
 	[Number]        NVarChar(255)     NULL,
@@ -121,10 +131,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [i1084_student]
+DROP TABLE IF EXISTS [i1084_student]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [i1084_person]
+DROP TABLE IF EXISTS [i1084_person]
 

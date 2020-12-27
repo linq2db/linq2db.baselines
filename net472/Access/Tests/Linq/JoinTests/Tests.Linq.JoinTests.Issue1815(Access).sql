@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [StLink]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [StLink]
 (
 	[InId]          Int   NOT NULL,
@@ -53,6 +58,11 @@ VALUES
 	@InMaxQuantity,
 	@InMinQuantity
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [EdtLink]
 
 BeforeExecute
 -- Access AccessOleDb

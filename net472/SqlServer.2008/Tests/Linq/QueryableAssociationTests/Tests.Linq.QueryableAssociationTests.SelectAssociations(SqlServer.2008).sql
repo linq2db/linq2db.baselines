@@ -1,10 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Entity]
-(
-	[Id] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Entity]', N'U') IS NOT NULL)
+	DROP TABLE [Entity]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Entity]', N'U') IS NULL)
+	CREATE TABLE [Entity]
+	(
+		[Id] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -19,12 +26,19 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Entity2Language]
-(
-	[Id]         Int NOT NULL,
-	[EntityId]   Int NOT NULL,
-	[LanguageId] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NOT NULL)
+	DROP TABLE [Entity2Language]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NULL)
+	CREATE TABLE [Entity2Language]
+	(
+		[Id]         Int NOT NULL,
+		[EntityId]   Int NOT NULL,
+		[LanguageId] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -41,11 +55,18 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Language]
-(
-	[Id]   Int            NOT NULL,
-	[Name] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
+	DROP TABLE [Language]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Language]', N'U') IS NULL)
+	CREATE TABLE [Language]
+	(
+		[Id]   Int            NOT NULL,
+		[Name] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -85,15 +106,18 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Language]
+IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
+	DROP TABLE [Language]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Entity2Language]
+IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NOT NULL)
+	DROP TABLE [Entity2Language]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Entity]
+IF (OBJECT_ID(N'[Entity]', N'U') IS NOT NULL)
+	DROP TABLE [Entity]
 

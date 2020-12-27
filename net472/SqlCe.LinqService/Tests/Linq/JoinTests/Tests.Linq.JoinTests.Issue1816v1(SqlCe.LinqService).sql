@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [stVersions]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [stVersions]
 (
 	[inId]     Int NOT NULL,
@@ -12,6 +17,11 @@ CREATE TABLE [stVersions]
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [rlStatesTypesAndUserGroups]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [rlStatesTypesAndUserGroups]
 (
 	[inIdState] Int NOT NULL,
@@ -19,6 +29,11 @@ CREATE TABLE [rlStatesTypesAndUserGroups]
 
 	CONSTRAINT [PK_rlStatesTypesAndUserGroups] PRIMARY KEY ([inIdState], [inIdType])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [stMain]
 
 BeforeExecute
 -- SqlCe

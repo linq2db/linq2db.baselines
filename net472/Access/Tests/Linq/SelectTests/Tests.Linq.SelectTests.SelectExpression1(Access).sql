@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [SelectExpressionTable]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [SelectExpressionTable]
 (
 	[ID] Int NOT NULL,

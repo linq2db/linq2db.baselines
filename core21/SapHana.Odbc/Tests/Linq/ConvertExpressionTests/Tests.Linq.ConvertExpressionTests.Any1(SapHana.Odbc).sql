@@ -1,13 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-
-BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -16,7 +8,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 DELETE FROM
 	[Child]
@@ -24,7 +16,7 @@ WHERE
 	[Child].[ParentID] >= 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -33,7 +25,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -43,7 +35,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],
@@ -61,20 +53,24 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	CASE WHEN EXISTS(
-		SELECT
-			*
-		FROM
-			"Parent" "p"
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM
-					"Child" "c_1"
-				WHERE
-					"p"."ParentID" = "c_1"."ParentID" AND "c_1"."ParentID" > 1
-			)
-	) THEN 1 ELSE 0 END
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Parent" "p"
+			WHERE
+				EXISTS(
+					SELECT
+						*
+					FROM
+						"Child" "c_1"
+					WHERE
+						"p"."ParentID" = "c_1"."ParentID" AND "c_1"."ParentID" > 1
+				)
+		)
+			THEN 1
+		ELSE 0
+	END
 FROM DUMMY
 

@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Value1  -- Int32
+SET     @Value1 = NULL
 
 UPDATE
 	"Parent"
 SET
-	"Parent"."Value1" = NULL
+	"Parent"."Value1" = ?
 WHERE
 	EXISTS(
 		SELECT

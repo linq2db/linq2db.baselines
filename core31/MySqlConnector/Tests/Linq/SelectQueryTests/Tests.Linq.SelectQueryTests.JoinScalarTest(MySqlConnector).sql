@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `SampleClass`
+DROP TABLE IF EXISTS `SampleClass`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `SampleClass`
 (
 	`Id`    INT NOT NULL,
 	`Value` INT NOT NULL
@@ -35,5 +40,5 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `SampleClass`
+DROP TABLE IF EXISTS `SampleClass`
 

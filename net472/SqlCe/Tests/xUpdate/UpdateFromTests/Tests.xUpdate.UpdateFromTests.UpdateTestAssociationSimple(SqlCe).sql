@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [UpdatedEntities]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [UpdatedEntities]
 (
 	[id]         Int NOT NULL,
@@ -27,6 +32,11 @@ SELECT 0,1,1,3,0 UNION ALL
 SELECT 1,11,12,13,1 UNION ALL
 SELECT 2,21,22,23,2 UNION ALL
 SELECT 3,31,32,33,3
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [UpdateRelation]
 
 BeforeExecute
 -- SqlCe

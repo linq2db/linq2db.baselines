@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [MainEntityObject]
+DROP TABLE IF EXISTS [MainEntityObject]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [MainEntityObject]
 (
 	[Id]        INTEGER      NOT NULL,
 	[MainValue] NVarChar(50)     NULL,
@@ -24,7 +29,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [ChildEntityObject]
+DROP TABLE IF EXISTS [ChildEntityObject]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ChildEntityObject]
 (
 	[Id]    INTEGER      NOT NULL,
 	[Value] NVarChar(50)     NULL
@@ -66,10 +76,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [ChildEntityObject]
+DROP TABLE IF EXISTS [ChildEntityObject]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [MainEntityObject]
+DROP TABLE IF EXISTS [MainEntityObject]
 

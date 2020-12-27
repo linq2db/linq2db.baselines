@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
@@ -8,7 +8,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -38,14 +38,14 @@ FROM
 	) "t1"
 		LEFT JOIN "Doctor" "x" ON "x"."PersonID" = "t1"."PersonID" AND "x"."PersonID" = "t1"."PersonID_1"
 WHERE
-	"t1"."FirstName" LIKE 'J%'
+	"t1"."FirstName" LIKE 'J%' ESCAPE '~'
 ORDER BY
 	"t1"."PersonID_1",
 	"t1"."FirstName",
 	"x"."Taxonomy"
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],

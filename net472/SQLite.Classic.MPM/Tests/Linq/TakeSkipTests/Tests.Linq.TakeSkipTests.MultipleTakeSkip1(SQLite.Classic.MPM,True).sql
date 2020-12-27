@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [TakeSkipClass]
 (
 	[Value] VarChar(10)     NULL
 )
@@ -41,5 +46,5 @@ LIMIT @skip_2 OFFSET @skip_3
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 

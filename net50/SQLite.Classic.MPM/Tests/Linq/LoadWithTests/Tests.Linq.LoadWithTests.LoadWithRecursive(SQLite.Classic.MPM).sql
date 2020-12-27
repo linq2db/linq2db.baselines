@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [MainItem]
+DROP TABLE IF EXISTS [MainItem]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [MainItem]
 (
 	[Id]    INTEGER      NOT NULL,
 	[Value] NVarChar(50)     NULL
@@ -30,7 +35,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [MainItem2]
+DROP TABLE IF EXISTS [MainItem2]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [MainItem2]
 (
 	[Id]         INTEGER      NOT NULL,
 	[Value]      NVarChar(50)     NULL,
@@ -56,7 +66,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [SubItem1]
+DROP TABLE IF EXISTS [SubItem1]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SubItem1]
 (
 	[Id]       INTEGER      NOT NULL,
 	[Value]    NVarChar(50)     NULL,
@@ -97,7 +112,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [SubItem1_Sub]
+DROP TABLE IF EXISTS [SubItem1_Sub]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SubItem1_Sub]
 (
 	[Id]       INTEGER      NOT NULL,
 	[Value]    NVarChar(50)     NULL,
@@ -138,7 +158,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [SubItem2]
+DROP TABLE IF EXISTS [SubItem2]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SubItem2]
 (
 	[Id]       INTEGER      NOT NULL,
 	[Value]    NVarChar(50)     NULL,
@@ -335,25 +360,25 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [SubItem2]
+DROP TABLE IF EXISTS [SubItem2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [SubItem1_Sub]
+DROP TABLE IF EXISTS [SubItem1_Sub]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [SubItem1]
+DROP TABLE IF EXISTS [SubItem1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [MainItem2]
+DROP TABLE IF EXISTS [MainItem2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [MainItem]
+DROP TABLE IF EXISTS [MainItem]
 

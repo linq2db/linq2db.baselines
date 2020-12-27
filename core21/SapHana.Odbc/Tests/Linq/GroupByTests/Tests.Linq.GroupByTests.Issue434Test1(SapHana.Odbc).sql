@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p1 NVarChar(4) -- String
-SET     @p1 = 'test'
+DECLARE @p_2 NVarChar(6) -- String
+SET     @p_2 = '%test%'
 
 SELECT
 	"p"."PersonID",
@@ -11,12 +11,12 @@ FROM
 	"Person" "p"
 		INNER JOIN "Patient" "_gjd_ri" ON "_gjd_ri"."PersonID" = "p"."PersonID"
 WHERE
-	Lower("p"."FirstName") LIKE (('%' || Replace(Replace(Replace(Lower(?), '~', '~~'), '%', '~%'), '_', '~_')) || '%') ESCAPE '~'
+	Lower("p"."FirstName") LIKE ? ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @input_1 NVarChar(4) -- String
-SET     @input_1 = 'test'
+DECLARE @input_2 NVarChar(6) -- String
+SET     @input_2 = '%test%'
 
 SELECT
 	"p"."FirstName",
@@ -24,5 +24,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Lower("p"."FirstName") LIKE (('%' || Replace(Replace(Replace(Lower(?), '~', '~~'), '%', '~%'), '_', '~_')) || '%') ESCAPE '~'
+	Lower("p"."FirstName") LIKE ? ESCAPE '~'
 

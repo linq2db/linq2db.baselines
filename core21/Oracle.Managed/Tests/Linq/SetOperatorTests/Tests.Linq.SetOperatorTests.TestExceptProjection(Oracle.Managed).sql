@@ -1,15 +1,36 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "SampleData"
-(
-	"Id"     Int NOT NULL,
-	"Value1" Int NOT NULL,
-	"Value2" Int NOT NULL,
-	"Value3" Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "SampleData"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_SampleData" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "SampleData"
+		(
+			"Id"     Int NOT NULL,
+			"Value1" Int NOT NULL,
+			"Value2" Int NOT NULL,
+			"Value3" Int NOT NULL,
+
+			CONSTRAINT "PK_SampleData" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -68,5 +89,12 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "SampleData"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "SampleData"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

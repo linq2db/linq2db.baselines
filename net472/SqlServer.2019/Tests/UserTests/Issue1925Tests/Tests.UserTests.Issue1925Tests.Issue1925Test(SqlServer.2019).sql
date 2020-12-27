@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [SampleClass]
-(
-	[Id]    Int            NOT NULL,
-	[Value] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
+	DROP TABLE [SampleClass]
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
+	CREATE TABLE [SampleClass]
+	(
+		[Id]    Int            NOT NULL,
+		[Value] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -167,5 +174,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [SampleClass]
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
+	DROP TABLE [SampleClass]
 

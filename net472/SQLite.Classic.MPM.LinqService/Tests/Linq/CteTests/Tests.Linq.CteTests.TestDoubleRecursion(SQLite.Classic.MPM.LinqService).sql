@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [HierarchyTree]
 (
 	[Id]       INTEGER NOT NULL,
 	[ParentId] INTEGER     NULL
@@ -378,5 +383,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
 

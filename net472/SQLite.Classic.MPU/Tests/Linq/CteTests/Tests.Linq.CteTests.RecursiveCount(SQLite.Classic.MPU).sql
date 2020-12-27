@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [HierarchyTree]
 (
 	[Id]       INTEGER NOT NULL,
 	[ParentId] INTEGER     NULL
@@ -81,5 +86,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
 

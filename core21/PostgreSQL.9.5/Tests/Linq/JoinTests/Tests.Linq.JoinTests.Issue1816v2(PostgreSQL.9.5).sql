@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "stVersions"
+DROP TABLE IF EXISTS "stVersions"
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "stVersions"
 (
 	"inId"     Int NOT NULL,
 	"inIdMain" Int NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE "stVersions"
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "rlStatesTypesAndUserGroups"
+DROP TABLE IF EXISTS "rlStatesTypesAndUserGroups"
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "rlStatesTypesAndUserGroups"
 (
 	"inIdState" Int NOT NULL,
 	"inIdType"  Int NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE "rlStatesTypesAndUserGroups"
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "stMain"
+DROP TABLE IF EXISTS "stMain"
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "stMain"
 (
 	"inId"     Int NOT NULL,
 	"inIdType" Int NOT NULL,
@@ -46,15 +61,15 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "stMain"
+DROP TABLE IF EXISTS "stMain"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "rlStatesTypesAndUserGroups"
+DROP TABLE IF EXISTS "rlStatesTypesAndUserGroups"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "stVersions"
+DROP TABLE IF EXISTS "stVersions"
 

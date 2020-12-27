@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `BaseTable`
+DROP TABLE IF EXISTS `BaseTable`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `BaseTable`
 (
 	`Value` INT NOT NULL,
 	`Id`    INT NOT NULL,
@@ -51,5 +56,5 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `BaseTable`
+DROP TABLE IF EXISTS `BaseTable`
 

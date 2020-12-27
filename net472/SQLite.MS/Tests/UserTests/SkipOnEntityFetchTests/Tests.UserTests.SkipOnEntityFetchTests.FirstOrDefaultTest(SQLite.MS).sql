@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Attachment]
+DROP TABLE IF EXISTS [Attachment]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Attachment]
 (
 	[Id]            BigInt        NOT NULL,
 	[QuestionSetId] BigInt        NOT NULL,
@@ -51,5 +56,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Attachment]
+DROP TABLE IF EXISTS [Attachment]
 

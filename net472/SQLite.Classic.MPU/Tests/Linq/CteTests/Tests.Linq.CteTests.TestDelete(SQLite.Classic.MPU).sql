@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [CteChild]
 (
 	[ChildID]  INTEGER NOT NULL,
 	[ParentID] INTEGER NOT NULL
@@ -56,5 +61,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
 

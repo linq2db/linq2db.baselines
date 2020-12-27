@@ -1,16 +1,29 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "UpdatedEntities"
-(
-	"id"         Int NOT NULL,
-	"Value1"     Int NOT NULL,
-	"Value2"     Int NOT NULL,
-	"Value3"     Int NOT NULL,
-	"RelationId" Int,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'UpdatedEntities')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "UpdatedEntities"';
+END
 
-	CONSTRAINT "PK_UpdatedEntities" PRIMARY KEY ("id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'UpdatedEntities')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "UpdatedEntities"
+			(
+				"id"         Int NOT NULL,
+				"Value1"     Int NOT NULL,
+				"Value2"     Int NOT NULL,
+				"Value3"     Int NOT NULL,
+				"RelationId" Int,
+
+				CONSTRAINT "PK_UpdatedEntities" PRIMARY KEY ("id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -31,15 +44,28 @@ SELECT 3,31,32,33,3 FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "NewEntities"
-(
-	"id"     Int NOT NULL,
-	"Value1" Int NOT NULL,
-	"Value2" Int NOT NULL,
-	"Value3" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NewEntities')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "NewEntities"';
+END
 
-	CONSTRAINT "PK_NewEntities" PRIMARY KEY ("id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NewEntities')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "NewEntities"
+			(
+				"id"     Int NOT NULL,
+				"Value1" Int NOT NULL,
+				"Value2" Int NOT NULL,
+				"Value3" Int NOT NULL,
+
+				CONSTRAINT "PK_NewEntities" PRIMARY KEY ("id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -122,10 +148,16 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "NewEntities"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NewEntities')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "NewEntities"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "UpdatedEntities"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'UpdatedEntities')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "UpdatedEntities"';
+END
 

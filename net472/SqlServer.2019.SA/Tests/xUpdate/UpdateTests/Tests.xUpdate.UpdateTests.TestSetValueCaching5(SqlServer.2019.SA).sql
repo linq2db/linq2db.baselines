@@ -1,18 +1,25 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-CREATE TABLE [UpdateSetTest]
-(
-	[Id]     Int              NOT NULL,
-	[Value1] UniqueIdentifier NOT NULL,
-	[Value2] Int              NOT NULL,
-	[Value3] Int              NOT NULL,
-	[Value4] UniqueIdentifier     NULL,
-	[Value5] Int                  NULL,
-	[Value6] Int                  NULL,
+IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NOT NULL)
+	DROP TABLE [UpdateSetTest]
 
-	CONSTRAINT [PK_UpdateSetTest] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NULL)
+	CREATE TABLE [UpdateSetTest]
+	(
+		[Id]     Int              NOT NULL,
+		[Value1] UniqueIdentifier NOT NULL,
+		[Value2] Int              NOT NULL,
+		[Value3] Int              NOT NULL,
+		[Value4] UniqueIdentifier     NULL,
+		[Value5] Int                  NULL,
+		[Value6] Int                  NULL,
+
+		CONSTRAINT [PK_UpdateSetTest] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -93,5 +100,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [UpdateSetTest]
+IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NOT NULL)
+	DROP TABLE [UpdateSetTest]
 

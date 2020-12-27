@@ -30,14 +30,6 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

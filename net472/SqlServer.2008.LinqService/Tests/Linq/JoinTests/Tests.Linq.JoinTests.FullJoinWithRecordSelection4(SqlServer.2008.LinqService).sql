@@ -1,12 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Fact]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'[Fact]', N'U') IS NOT NULL)
+	DROP TABLE [Fact]
 
-	CONSTRAINT [PK_Fact] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Fact]', N'U') IS NULL)
+	CREATE TABLE [Fact]
+	(
+		[Id] Int NOT NULL,
+
+		CONSTRAINT [PK_Fact] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -53,14 +60,21 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Tag]
-(
-	[Id]     Int            NOT NULL,
-	[FactId] Int            NOT NULL,
-	[Name]   NVarChar(4000) NOT NULL,
+IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
+	DROP TABLE [Tag]
 
-	CONSTRAINT [PK_Tag] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Tag]', N'U') IS NULL)
+	CREATE TABLE [Tag]
+	(
+		[Id]     Int            NOT NULL,
+		[FactId] Int            NOT NULL,
+		[Name]   NVarChar(4000) NOT NULL,
+
+		CONSTRAINT [PK_Tag] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -167,10 +181,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Tag]
+IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
+	DROP TABLE [Tag]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Fact]
+IF (OBJECT_ID(N'[Fact]', N'U') IS NOT NULL)
+	DROP TABLE [Fact]
 
