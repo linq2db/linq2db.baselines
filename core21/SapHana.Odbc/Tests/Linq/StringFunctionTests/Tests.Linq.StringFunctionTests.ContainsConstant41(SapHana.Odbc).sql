@@ -2,8 +2,8 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
-DECLARE @ps NVarChar(3) -- String
-SET     @ps = '%[%'
+DECLARE @ps_1 NVarChar(3) -- String
+SET     @ps_1 = '%[%'
 
 SELECT
 	"p"."FirstName",

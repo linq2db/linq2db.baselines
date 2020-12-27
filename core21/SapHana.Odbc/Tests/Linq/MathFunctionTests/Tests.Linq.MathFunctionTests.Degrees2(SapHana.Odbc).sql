@@ -2,14 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t"."c1"
+	Cast("p"."MoneyValue" as Double) * 57.295779513082323
 FROM
-	(
-		SELECT
-			Cast("p"."MoneyValue" as Double) * 57.295779513082323 as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "p"
 WHERE
-	"t"."c1" <> 0.10000000000000001
+	Cast("p"."MoneyValue" as Double) * 57.295779513082323 <> 0.10000000000000001
 

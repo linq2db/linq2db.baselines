@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "BlobClass19"
+CREATE COLUMN TABLE "BlobClass"
 (
 	"Id"        Integer        NOT NULL,
 	"BlobValue" VarBinary(100)     NULL,
@@ -12,7 +12,7 @@ CREATE COLUMN TABLE "BlobClass19"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-INSERT INTO "BlobClass19"
+INSERT INTO "BlobClass"
 (
 	"Id",
 	"BlobValue"
@@ -30,7 +30,7 @@ SELECT
 	"_"."Id",
 	"_"."BlobValue"
 FROM
-	"BlobClass19" "_"
+	"BlobClass" "_"
 WHERE
 	"_"."Id" = 1
 LIMIT 1
@@ -42,7 +42,7 @@ SELECT
 	"_"."Id",
 	"_"."BlobValue"
 FROM
-	"BlobClass19" "_"
+	"BlobClass" "_"
 WHERE
 	"_"."Id" = 1
 LIMIT 1
@@ -50,5 +50,5 @@ LIMIT 1
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "BlobClass19"
+DROP TABLE "BlobClass"
 

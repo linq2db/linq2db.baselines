@@ -82,10 +82,10 @@ DECLARE @FieldTime  -- Time
 SET     @FieldTime = 23:59:59.9999999
 DECLARE @FieldTime_1  -- Time
 SET     @FieldTime_1 = 14:44:33.2340000
-DECLARE @FieldTime  -- Time
-SET     @FieldTime = 23:59:59.9999999
 DECLARE @FieldTime_2  -- Time
-SET     @FieldTime_2 = 22:44:33
+SET     @FieldTime_2 = 23:59:59.9999999
+DECLARE @FieldTime_3  -- Time
+SET     @FieldTime_3 = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
 USING (	SELECT 3 "Id", -123 "FieldInt32", 987 "FieldInt64", NULL "FieldBoolean", '<>?/.,;''zZ":' "FieldString", '`~!@#$%^&*()_+{}|[]\' "FieldNString", '' "FieldChar", '' "FieldNChar", -1.1755E-38 "FieldFloat", 2.2250738585072014E-308 "FieldDouble", '2098-10-12 21:14:15.907' "FieldDateTime", x'FFC864321400' "FieldBinary", 'ffffffff-ffff-ffff-ffff-ffffffffffff' "FieldGuid", -0.123 "FieldDecimal", '3210-11-23' "FieldDate", ? "FieldTime", NULL "FieldEnumString", -2147483647 "FieldEnumNumber" FROM DUMMY

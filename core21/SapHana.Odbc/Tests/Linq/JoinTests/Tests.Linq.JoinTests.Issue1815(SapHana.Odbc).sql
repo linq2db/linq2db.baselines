@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "StLink"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "StLink"
 (
 	"InId"          Integer NOT NULL,
@@ -53,6 +58,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "EdtLink"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -19,5 +19,5 @@ FROM
 	) "cp"
 		INNER JOIN ("Child" "c_1"
 			LEFT JOIN "Parent" "a_Parent_1" ON "c_1"."ParentID" = "a_Parent_1"."ParentID")
-		ON ("cp"."ParentID" = "a_Parent_1"."ParentID" AND ("cp"."Value1" IS NULL AND "a_Parent_1"."Value1" IS NULL OR "cp"."Value1" = "a_Parent_1"."Value1"))
+		ON ("cp"."ParentID" = "a_Parent_1"."ParentID" AND ("cp"."Value1" = "a_Parent_1"."Value1" OR "cp"."Value1" IS NULL AND "a_Parent_1"."Value1" IS NULL))
 

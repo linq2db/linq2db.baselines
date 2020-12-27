@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p1  -- Int32
-SET     @p1 = 22
+DECLARE @p_2  -- Int32
+SET     @p_2 = 79200
 
 SELECT
-	Add_Seconds("t"."DateTimeValue", ? * 3600)
+	Add_Seconds("t"."DateTimeValue", ?)
 FROM
 	"LinqDataTypes" "t"
 

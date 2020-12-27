@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p1 NVarChar(5) -- String
-SET     @p1 = '2010-'
+DECLARE @ID NVarChar(5) -- String
+SET     @ID = '2010-'
 
 SELECT
 	"t"."c1"

@@ -10,8 +10,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NString NVarChar(6) -- String
 SET     @NString = 'test01'
-DECLARE @String NVarChar(6) -- String
-SET     @String = 'test01'
+DECLARE @NString_1 NVarChar(6) -- String
+SET     @NString_1 = 'test01'
 
 INSERT INTO "AllTypes"
 (
@@ -28,8 +28,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test02  '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test02  '
+DECLARE @NString_1 NVarChar(8) -- String
+SET     @NString_1 = 'test02  '
 
 INSERT INTO "AllTypes"
 (
@@ -46,8 +46,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test03	 '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test03	 '
+DECLARE @NString_1 NVarChar(8) -- String
+SET     @NString_1 = 'test03	 '
 
 INSERT INTO "AllTypes"
 (
@@ -65,8 +65,8 @@ BeforeExecute
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test04
  '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test04
+DECLARE @NString_1 NVarChar(8) -- String
+SET     @NString_1 = 'test04
  '
 
 INSERT INTO "AllTypes"
@@ -84,8 +84,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test05 '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test05 '
+DECLARE @NString_1 NVarChar(8) -- String
+SET     @NString_1 = 'test05 '
 
 INSERT INTO "AllTypes"
 (
@@ -102,8 +102,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test06 '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test06 '
+DECLARE @NString_1 NVarChar(8) -- String
+SET     @NString_1 = 'test06 '
 
 INSERT INTO "AllTypes"
 (
@@ -120,8 +120,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test07 '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test07 '
+DECLARE @NString_1 NVarChar(8) -- String
+SET     @NString_1 = 'test07 '
 
 INSERT INTO "AllTypes"
 (
@@ -138,8 +138,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test08  '
-DECLARE @String NVarChar(8) -- String
-SET     @String = 'test08  '
+DECLARE @NString_1 NVarChar(8) -- String
+SET     @NString_1 = 'test08  '
 
 INSERT INTO "AllTypes"
 (
@@ -372,8 +372,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NString NVarChar -- String
 SET     @NString = NULL
-DECLARE @String NVarChar -- String
-SET     @String = NULL
+DECLARE @NString_1 NVarChar -- String
+SET     @NString_1 = NULL
 
 INSERT INTO "AllTypes"
 (
