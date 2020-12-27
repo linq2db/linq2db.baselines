@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Table404One]
+DROP TABLE IF EXISTS [Table404One]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Table404One]
 (
 	[Id] INTEGER NOT NULL
 )
@@ -37,7 +42,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Table404Two]
+DROP TABLE IF EXISTS [Table404Two]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Table404Two]
 (
 	[Id]           INTEGER NOT NULL,
 	[Usage]        INTEGER NOT NULL,
@@ -258,17 +268,22 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Table404Two]
+DROP TABLE IF EXISTS [Table404Two]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Table404One]
+DROP TABLE IF EXISTS [Table404One]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Table404One]
+DROP TABLE IF EXISTS [Table404One]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Table404One]
 (
 	[Id] INTEGER NOT NULL
 )
@@ -304,7 +319,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Table404Two]
+DROP TABLE IF EXISTS [Table404Two]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Table404Two]
 (
 	[Id]           INTEGER NOT NULL,
 	[Usage]        INTEGER NOT NULL,
@@ -525,10 +545,10 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Table404Two]
+DROP TABLE IF EXISTS [Table404Two]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Table404One]
+DROP TABLE IF EXISTS [Table404One]
 

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [DynamicTable]
+DROP TABLE IF EXISTS [DynamicTable]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [DynamicTable]
 (
 	[ID]             INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[Not Identifier] INTEGER  NOT NULL,
@@ -59,5 +64,5 @@ GROUP BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [DynamicTable]
+DROP TABLE IF EXISTS [DynamicTable]
 
