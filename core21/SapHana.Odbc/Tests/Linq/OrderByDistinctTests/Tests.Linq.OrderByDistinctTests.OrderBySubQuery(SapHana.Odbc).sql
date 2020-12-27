@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "OrderByDistinctData"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "OrderByDistinctData"
 (
 	"Id"            Integer       NOT NULL,
@@ -492,7 +497,7 @@ SELECT
 		FROM
 			"OrderByDistinctData" "s"
 		WHERE
-			("s"."DuplicateData" IS NULL AND "t"."DuplicateData" IS NULL OR "s"."DuplicateData" = "t"."DuplicateData")
+			("s"."DuplicateData" = "t"."DuplicateData" OR "s"."DuplicateData" IS NULL AND "t"."DuplicateData" IS NULL)
 	)
 FROM
 	(

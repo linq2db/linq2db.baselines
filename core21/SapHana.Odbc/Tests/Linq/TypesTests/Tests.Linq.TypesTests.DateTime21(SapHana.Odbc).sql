@@ -23,7 +23,7 @@ LIMIT ?
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @dt  -- DateTime
-SET     @dt = '2010-12-14 06:00:07.425'
+SET     @dt = '2010-12-14 05:00:07.425'
 
 UPDATE
 	"LinqDataTypes"

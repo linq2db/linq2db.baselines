@@ -18,10 +18,10 @@ GROUP BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID NVarChar -- String
+DECLARE @ParentID  -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID_1  -- Int32
-SET     @ChildID_1 = 11
+DECLARE @ChildID  -- Int32
+SET     @ChildID = 11
 
 SELECT
 	"elemParam"."ChildID"

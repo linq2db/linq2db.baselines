@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @str NVarChar(4) -- String
-SET     @str = '%oh%'
+DECLARE @str_1 NVarChar(4) -- String
+SET     @str_1 = '%oh%'
 
 SELECT
 	"p"."FirstName",

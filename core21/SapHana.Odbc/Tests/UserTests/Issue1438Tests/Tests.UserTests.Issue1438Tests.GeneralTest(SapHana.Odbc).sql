@@ -30,8 +30,8 @@ SELECT MAX("Id") FROM "Issue1438"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id_1  -- Int32
-SET     @id_1 = 1
+DECLARE @id  -- Int32
+SET     @id = 1
 DECLARE @take  -- Int32
 SET     @take = 2
 

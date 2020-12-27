@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "UpdatedEntities"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "UpdatedEntities"
 (
 	"id"         Integer NOT NULL,
@@ -135,6 +140,11 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "NewEntities"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "NewEntities"
 (
 	"id"     Integer NOT NULL,
@@ -259,20 +269,20 @@ DECLARE @take  -- Int32
 SET     @take = 2
 DECLARE @int2  -- Int32
 SET     @int2 = 22
-DECLARE @someId  -- Int32
-SET     @someId = 100
-DECLARE @take  -- Int32
-SET     @take = 2
+DECLARE @someId_1  -- Int32
+SET     @someId_1 = 100
+DECLARE @take_1  -- Int32
+SET     @take_1 = 2
 DECLARE @int3  -- Int32
 SET     @int3 = 33
-DECLARE @someId  -- Int32
-SET     @someId = 100
-DECLARE @take  -- Int32
-SET     @take = 2
-DECLARE @someId  -- Int32
-SET     @someId = 100
-DECLARE @take  -- Int32
-SET     @take = 2
+DECLARE @someId_2  -- Int32
+SET     @someId_2 = 100
+DECLARE @take_2  -- Int32
+SET     @take_2 = 2
+DECLARE @someId_3  -- Int32
+SET     @someId_3 = 100
+DECLARE @take_3  -- Int32
+SET     @take_3 = 2
 
 UPDATE
 	"UpdatedEntities"

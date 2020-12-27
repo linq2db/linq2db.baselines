@@ -6,5 +6,5 @@ SELECT
 	"t1"."dataType",
 	"t1"."stgeometryDataType"
 FROM
-	"TESTHANA"."AllTypesGeo" "t1"
+	"AllTypesGeo" "t1"
 

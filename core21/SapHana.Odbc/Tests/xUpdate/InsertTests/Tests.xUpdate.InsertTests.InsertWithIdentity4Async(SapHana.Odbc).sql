@@ -39,8 +39,8 @@ SELECT MAX("PersonID") FROM "Person"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @FirstName_1 NVarChar(5) -- String
-SET     @FirstName_1 = 'John0'
+DECLARE @FirstName NVarChar(5) -- String
+SET     @FirstName = 'John0'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -89,8 +89,8 @@ SELECT MAX("PersonID") FROM "Person"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @FirstName_1 NVarChar(5) -- String
-SET     @FirstName_1 = 'John1'
+DECLARE @FirstName NVarChar(5) -- String
+SET     @FirstName = 'John1'
 DECLARE @take  -- Int32
 SET     @take = 2
 

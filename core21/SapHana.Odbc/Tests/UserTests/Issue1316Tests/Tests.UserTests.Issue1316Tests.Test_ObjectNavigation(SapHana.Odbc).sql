@@ -24,8 +24,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id_1  -- Int32
-SET     @Id_1 = 5
+DECLARE @Id  -- Int32
+SET     @Id = 5
 DECLARE @take  -- Int32
 SET     @take = 2
 

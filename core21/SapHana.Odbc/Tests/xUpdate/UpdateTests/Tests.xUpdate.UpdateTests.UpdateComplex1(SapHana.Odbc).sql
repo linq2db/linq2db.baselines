@@ -52,7 +52,7 @@ BeforeExecute
 DELETE FROM
 	"Person" "_"
 WHERE
-	"_"."FirstName" LIKE 'UpdateComplex%'
+	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -152,5 +152,5 @@ BeforeExecute
 DELETE FROM
 	"Person" "_"
 WHERE
-	"_"."FirstName" LIKE 'UpdateComplex%'
+	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 

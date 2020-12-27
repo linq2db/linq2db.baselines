@@ -2,14 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"p"."c1"
+	Cast(Floor("t"."MoneyValue") as SmallInt)
 FROM
-	(
-		SELECT
-			Cast(Floor("t"."MoneyValue") as SmallInt) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	"p"."c1" > 0
+	Cast(Floor("t"."MoneyValue") as SmallInt) > 0
 

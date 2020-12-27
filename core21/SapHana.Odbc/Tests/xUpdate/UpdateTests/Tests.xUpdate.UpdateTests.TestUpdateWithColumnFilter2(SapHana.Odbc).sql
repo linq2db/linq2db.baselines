@@ -74,8 +74,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName_1 NVarChar(18) -- String
-SET     @FirstName_1 = 'UpdateColumnFilter'
+DECLARE @FirstName NVarChar(18) -- String
+SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @take  -- Int32
 SET     @take = 2
 
