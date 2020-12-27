@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [DynamicTable]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [DynamicTable]
 (
 	[ID]             Int  NOT NULL IDENTITY,
