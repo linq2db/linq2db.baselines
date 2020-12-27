@@ -1,14 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [StLink]
-(
-	[InId]          Int   NOT NULL,
-	[InMaxQuantity] Float     NULL,
-	[InMinQuantity] Float     NULL,
+IF (OBJECT_ID(N'[StLink]', N'U') IS NOT NULL)
+	DROP TABLE [StLink]
 
-	CONSTRAINT [PK_StLink] PRIMARY KEY CLUSTERED ([InId])
-)
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[StLink]', N'U') IS NULL)
+	CREATE TABLE [StLink]
+	(
+		[InId]          Int   NOT NULL,
+		[InMaxQuantity] Float     NULL,
+		[InMinQuantity] Float     NULL,
+
+		CONSTRAINT [PK_StLink] PRIMARY KEY CLUSTERED ([InId])
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -26,14 +33,21 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [EdtLink]
-(
-	[InId]          Int   NOT NULL,
-	[InMaxQuantity] Float     NULL,
-	[InMinQuantity] Float     NULL,
+IF (OBJECT_ID(N'[EdtLink]', N'U') IS NOT NULL)
+	DROP TABLE [EdtLink]
 
-	CONSTRAINT [PK_EdtLink] PRIMARY KEY CLUSTERED ([InId])
-)
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[EdtLink]', N'U') IS NULL)
+	CREATE TABLE [EdtLink]
+	(
+		[InId]          Int   NOT NULL,
+		[InMaxQuantity] Float     NULL,
+		[InMinQuantity] Float     NULL,
+
+		CONSTRAINT [PK_EdtLink] PRIMARY KEY CLUSTERED ([InId])
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -86,10 +100,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [EdtLink]
+IF (OBJECT_ID(N'[EdtLink]', N'U') IS NOT NULL)
+	DROP TABLE [EdtLink]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [StLink]
+IF (OBJECT_ID(N'[StLink]', N'U') IS NOT NULL)
+	DROP TABLE [StLink]
 
