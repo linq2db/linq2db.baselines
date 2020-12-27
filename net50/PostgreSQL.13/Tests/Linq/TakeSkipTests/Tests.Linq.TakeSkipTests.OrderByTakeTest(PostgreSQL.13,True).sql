@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TakeSkipClass"
+DROP TABLE IF EXISTS "TakeSkipClass"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TakeSkipClass"
 (
 	"Value" VarChar(10)     NULL
 )
@@ -35,5 +40,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TakeSkipClass"
+DROP TABLE IF EXISTS "TakeSkipClass"
 

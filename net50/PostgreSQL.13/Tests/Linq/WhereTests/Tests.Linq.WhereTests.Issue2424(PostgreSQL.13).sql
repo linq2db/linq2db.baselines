@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Isue2424Table"
+DROP TABLE IF EXISTS "Isue2424Table"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Isue2424Table"
 (
 	"Id"       Int  NOT NULL,
 	"StrValue" text     NULL
@@ -331,5 +336,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Isue2424Table"
+DROP TABLE IF EXISTS "Isue2424Table"
 
