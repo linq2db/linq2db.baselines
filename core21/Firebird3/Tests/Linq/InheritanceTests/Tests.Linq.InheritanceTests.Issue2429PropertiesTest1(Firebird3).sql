@@ -1,13 +1,26 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "BaseTable"
-(
-	"Value" Int NOT NULL,
-	"Id"    Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BaseTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "BaseTable"';
+END
 
-	CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BaseTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "BaseTable"
+			(
+				"Value" Int NOT NULL,
+				"Id"    Int NOT NULL,
+
+				CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -48,5 +61,8 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "BaseTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BaseTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "BaseTable"';
+END
 

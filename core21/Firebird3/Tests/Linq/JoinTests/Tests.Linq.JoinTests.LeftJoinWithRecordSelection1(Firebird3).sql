@@ -1,12 +1,25 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Fact"
-(
-	"Id" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Fact')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Fact"';
+END
 
-	CONSTRAINT "PK_Fact" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Fact')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Fact"
+			(
+				"Id" Int NOT NULL,
+
+				CONSTRAINT "PK_Fact" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -22,14 +35,27 @@ SELECT 5 FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Tag"
-(
-	"Id"     Int                                    NOT NULL,
-	"FactId" Int                                    NOT NULL,
-	"Name"   VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Tag')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Tag"';
+END
 
-	CONSTRAINT "PK_Tag" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Tag')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Tag"
+			(
+				"Id"     Int                                    NOT NULL,
+				"FactId" Int                                    NOT NULL,
+				"Name"   VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+
+				CONSTRAINT "PK_Tag" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -61,10 +87,16 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Tag"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Tag')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Tag"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Fact"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Fact')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Fact"';
+END
 
