@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [test_mapping_column_2_prop]
+DROP TABLE IF EXISTS [test_mapping_column_2_prop]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [test_mapping_column_2_prop]
 (
 	[id]          BigInt NOT NULL,
 	[test_number] BigInt NOT NULL,
@@ -37,5 +42,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [test_mapping_column_2_prop]
+DROP TABLE IF EXISTS [test_mapping_column_2_prop]
 

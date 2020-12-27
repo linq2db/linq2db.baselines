@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Fact]
+DROP TABLE IF EXISTS [Fact]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Fact]
 (
 	[Id] INTEGER NOT NULL,
 
@@ -23,7 +28,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Tag]
+DROP TABLE IF EXISTS [Tag]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Tag]
 (
 	[Id]     INTEGER       NOT NULL,
 	[FactId] INTEGER       NOT NULL,
@@ -63,10 +73,10 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Tag]
+DROP TABLE IF EXISTS [Tag]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Fact]
+DROP TABLE IF EXISTS [Fact]
 
