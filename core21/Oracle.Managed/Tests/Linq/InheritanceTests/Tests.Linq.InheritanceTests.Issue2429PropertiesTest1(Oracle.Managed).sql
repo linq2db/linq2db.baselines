@@ -1,13 +1,34 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "BaseTable"
-(
-	"Value" Int NOT NULL,
-	"Id"    Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "BaseTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "BaseTable"
+		(
+			"Value" Int NOT NULL,
+			"Id"    Int NOT NULL,
+
+			CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -47,5 +68,12 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "BaseTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "BaseTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

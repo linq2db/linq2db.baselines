@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE SEQUENCE SEQ_A
+CREATE SEQUENCE SEQ_A START WITH 1 MINVALUE 0
 
 BeforeExecute
 -- Oracle.Managed Oracle12
