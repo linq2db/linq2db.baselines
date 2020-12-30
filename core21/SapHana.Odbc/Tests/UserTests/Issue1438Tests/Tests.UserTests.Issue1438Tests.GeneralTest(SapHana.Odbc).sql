@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT MAX("Id") FROM "Issue1438"
+SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
