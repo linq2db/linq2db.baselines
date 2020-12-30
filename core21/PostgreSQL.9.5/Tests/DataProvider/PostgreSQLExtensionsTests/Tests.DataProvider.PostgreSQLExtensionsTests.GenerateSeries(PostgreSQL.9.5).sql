@@ -52,11 +52,11 @@ DECLARE @p_4 Interval -- Object
 SET     @p_4 = 01:00:00
 
 SELECT
-	t1_1,
-	t2_1,
+	t1,
+	t2,
 	d
 FROM
-	GENERATE_SERIES(:p_1, :p_2) t1_1
-		LEFT JOIN GENERATE_SERIES(1, 10, 2) t2_1 ON (t2_1.* = t1_1.* OR t2_1.* IS NULL AND t1_1.* IS NULL),
+	GENERATE_SERIES(:p_1, :p_2) t1
+		LEFT JOIN GENERATE_SERIES(1, 10, 2) t2 ON (t2.* = t1.* OR t2.* IS NULL AND t1.* IS NULL),
 	GENERATE_SERIES(:p_3, :DateTime, :p_4) d
 
