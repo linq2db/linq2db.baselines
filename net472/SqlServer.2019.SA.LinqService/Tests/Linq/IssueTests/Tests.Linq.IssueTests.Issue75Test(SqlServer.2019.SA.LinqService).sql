@@ -18,41 +18,41 @@ FROM
 				SELECT
 					Count(*)
 				FROM
-					[Child] [c2_1]
+					[Child] [c2]
 				WHERE
-					[c2_1].[ParentID] = [c_1].[ParentID]
+					[c2].[ParentID] = [c_1].[ParentID]
 			) as [CountChildren2],
 			IIF(EXISTS(
 				SELECT
 					*
 				FROM
-					[Child] [c2_2]
+					[Child] [c2_1]
 				WHERE
-					[c2_2].[ParentID] = [c_1].[ParentID]
+					[c2_1].[ParentID] = [c_1].[ParentID]
 			), 1, 0) as [c1],
 			IIF((NOT EXISTS(
 				SELECT
 					*
 				FROM
-					[Child] [c2_3]
+					[Child] [c2_2]
 				WHERE
-					[c2_3].[ParentID] <> [c_1].[ParentID]
+					[c2_2].[ParentID] <> [c_1].[ParentID]
 			)), 1, 0) as [c2],
 			(
 				SELECT
-					Min([c2_4].[ChildID])
+					Min([c2_3].[ChildID])
+				FROM
+					[Child] [c2_3]
+				WHERE
+					[c2_3].[ParentID] = [c_1].[ParentID]
+			) as [AllChildrenMin],
+			(
+				SELECT
+					Max([c2_4].[ChildID])
 				FROM
 					[Child] [c2_4]
 				WHERE
 					[c2_4].[ParentID] = [c_1].[ParentID]
-			) as [AllChildrenMin],
-			(
-				SELECT
-					Max([c2_5].[ChildID])
-				FROM
-					[Child] [c2_5]
-				WHERE
-					[c2_5].[ParentID] = [c_1].[ParentID]
 			) as [AllChildrenMax]
 		FROM
 			[Child] [c_1]
