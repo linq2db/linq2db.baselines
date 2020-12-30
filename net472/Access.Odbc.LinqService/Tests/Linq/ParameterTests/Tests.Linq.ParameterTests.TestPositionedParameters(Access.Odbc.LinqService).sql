@@ -6,24 +6,24 @@ DECLARE @y10 Int -- Int32
 SET     @y10 = 10
 DECLARE @z2 Int -- Int32
 SET     @z2 = 2
-DECLARE @x4 Int -- Int32
-SET     @x4 = 3
-DECLARE @z3 Int -- Int32
-SET     @z3 = 2
 DECLARE @x5 Int -- Int32
 SET     @x5 = 3
-DECLARE @y11 Int -- Int32
-SET     @y11 = 10
-DECLARE @z4 Int -- Int32
-SET     @z4 = 2
-DECLARE @x6 Int -- Int32
-SET     @x6 = 3
 DECLARE @z5 Int -- Int32
 SET     @z5 = 2
-DECLARE @y12 Int -- Int32
-SET     @y12 = 10
+DECLARE @x4 Int -- Int32
+SET     @x4 = 3
+DECLARE @y11 Int -- Int32
+SET     @y11 = 10
+DECLARE @z3 Int -- Int32
+SET     @z3 = 2
+DECLARE @x6 Int -- Int32
+SET     @x6 = 3
 DECLARE @z6 Int -- Int32
 SET     @z6 = 2
+DECLARE @y12 Int -- Int32
+SET     @y12 = 10
+DECLARE @z4 Int -- Int32
+SET     @z4 = 2
 DECLARE @x7 Int -- Int32
 SET     @x7 = 3
 DECLARE @y13 Int -- Int32
