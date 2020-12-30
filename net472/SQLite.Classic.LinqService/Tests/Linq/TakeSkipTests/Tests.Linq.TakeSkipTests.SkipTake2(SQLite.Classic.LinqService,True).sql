@@ -16,10 +16,10 @@ LIMIT @skip OFFSET @skip_1
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @skip  -- Int32
+SET     @skip = 5
 DECLARE @skip_1  -- Int32
-SET     @skip_1 = 5
-DECLARE @skip_2  -- Int32
-SET     @skip_2 = 2
+SET     @skip_1 = 2
 
 SELECT
 	[t1].[ParentID],
@@ -28,5 +28,5 @@ FROM
 	[Child] [t1]
 ORDER BY
 	[t1].[ChildID] DESC
-LIMIT @skip_1 OFFSET @skip_2
+LIMIT @skip OFFSET @skip_1
 
