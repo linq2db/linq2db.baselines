@@ -221,7 +221,7 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-MERGE INTO "TestMerge1" Target_1
+MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
 		t1."Id" as "OtherId",
@@ -233,7 +233,7 @@ USING (
 	FROM
 		"TestMerge2" t1
 ) "Source"
-ON (Target_1."Id" = "Source"."OtherId")
+ON (Target."Id" = "Source"."OtherId")
 
 WHEN NOT MATCHED THEN
 INSERT

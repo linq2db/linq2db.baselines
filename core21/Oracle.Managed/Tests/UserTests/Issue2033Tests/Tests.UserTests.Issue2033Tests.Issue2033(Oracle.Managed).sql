@@ -590,14 +590,14 @@ WITH "GetAllowedNcCode" ("NcCodeBo", "NcCode", "NcCodeDescription")
 AS
 (
 	SELECT DISTINCT
-		ncCode_1.HANDLE,
-		ncCode_1.NC_CODE,
-		ncCode_1.DESCRIPTION
+		ncCode.HANDLE,
+		ncCode.NC_CODE,
+		ncCode.DESCRIPTION
 	FROM
-		NC_CODE ncCode_1
-			INNER JOIN NC_GROUP_MEMBER ncGroupMember ON ncCode_1.HANDLE = ncGroupMember.NC_CODE_OR_GROUP_GBO
+		NC_CODE ncCode
+			INNER JOIN NC_GROUP_MEMBER ncGroupMember ON ncCode.HANDLE = ncGroupMember.NC_CODE_OR_GROUP_GBO
 	WHERE
-		((ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_AUTO' OR ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_MAN') OR ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode_1.SITE || ',CATAN_ALL')
+		((ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO' OR ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_MAN') OR ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_ALL')
 ),
 "FindProductionFailedNcData"
 (
@@ -764,19 +764,19 @@ AS
 		inputItem_1."Parent_Site",
 		inputItem_1."Handle_1",
 		inputItem_1."RouterOperationBo",
-		shopOrder_1.SHOP_ORDER,
+		shopOrder.SHOP_ORDER,
 		resrce_1.RESRCE,
 		resrce_1.DESCRIPTION,
-		workCenter_1.WORK_CENTER,
-		workCenter_1.DESCRIPTION,
-		line_1.WORK_CENTER,
-		line_1.DESCRIPTION,
+		workCenter.WORK_CENTER,
+		workCenter.DESCRIPTION,
+		line.WORK_CENTER,
+		line.DESCRIPTION,
 		item_1.ITEM,
 		item_1.DESCRIPTION,
 		customField.VALUE,
 		customField_1.VALUE,
-		itemGroup_1.ITEM_GROUP,
-		itemGroup_1.DESCRIPTION,
+		itemGroup.ITEM_GROUP,
+		itemGroup.DESCRIPTION,
 		customField_2.VALUE,
 		usr_1.USER_ID,
 		usr_1.BADGE_NUMBER
@@ -784,14 +784,14 @@ AS
 		"FilterByTestOperation" inputItem_1
 			LEFT JOIN SITE site_1 ON (site_1.SITE = inputItem_1."Parent_Site" OR site_1.SITE IS NULL AND inputItem_1."Parent_Site" IS NULL)
 			LEFT JOIN USR usr_1 ON usr_1.HANDLE = inputItem_1."Parent_UserBo"
-			LEFT JOIN SHOP_ORDER shopOrder_1 ON shopOrder_1.HANDLE = inputItem_1."Parent_ShopOrderBo"
+			LEFT JOIN SHOP_ORDER shopOrder ON shopOrder.HANDLE = inputItem_1."Parent_ShopOrderBo"
 			LEFT JOIN RESRCE resrce_1 ON resrce_1.HANDLE = inputItem_1."Parent_ResourceBo"
-			LEFT JOIN WORK_CENTER workCenter_1 ON workCenter_1.HANDLE = inputItem_1."Parent_WorkCenterBo"
+			LEFT JOIN WORK_CENTER workCenter ON workCenter.HANDLE = inputItem_1."Parent_WorkCenterBo"
 			LEFT JOIN WORK_CENTER_MEMBER workCenterMember ON (workCenterMember.WORK_CENTER_OR_RESOURCE_GBO = inputItem_1."Parent_WorkCenterBo" OR workCenterMember.WORK_CENTER_OR_RESOURCE_GBO IS NULL AND inputItem_1."Parent_WorkCenterBo" IS NULL)
-			LEFT JOIN WORK_CENTER line_1 ON line_1.HANDLE = workCenterMember.WORK_CENTER_BO
+			LEFT JOIN WORK_CENTER line ON line.HANDLE = workCenterMember.WORK_CENTER_BO
 			LEFT JOIN ITEM item_1 ON item_1.HANDLE = inputItem_1."Parent_ItemBo"
 			LEFT JOIN ITEM_GROUP_MEMBER itemGroupMember ON (itemGroupMember.ITEM_BO = inputItem_1."Parent_ItemBo" OR itemGroupMember.ITEM_BO IS NULL AND inputItem_1."Parent_ItemBo" IS NULL)
-			LEFT JOIN ITEM_GROUP itemGroup_1 ON itemGroup_1.HANDLE = itemGroupMember.ITEM_GROUP_BO
+			LEFT JOIN ITEM_GROUP itemGroup ON itemGroup.HANDLE = itemGroupMember.ITEM_GROUP_BO
 			LEFT JOIN CUSTOM_FIELDS customField ON customField.ATTRIBUTE = 'PRODUCT_LINE' AND (customField.HANDLE = inputItem_1."Parent_ItemBo" OR customField.HANDLE IS NULL AND inputItem_1."Parent_ItemBo" IS NULL)
 			LEFT JOIN CUSTOM_FIELDS customField_1 ON customField_1.ATTRIBUTE = 'SPART' AND (customField_1.HANDLE = inputItem_1."Parent_ItemBo" OR customField_1.HANDLE IS NULL AND inputItem_1."Parent_ItemBo" IS NULL)
 			LEFT JOIN CUSTOM_FIELDS customField_2 ON customField_2.ATTRIBUTE = 'TEST_CATEGORY' AND (customField_2.HANDLE = inputItem_1."RouterOperationBo" OR customField_2.HANDLE IS NULL AND inputItem_1."RouterOperationBo" IS NULL)
