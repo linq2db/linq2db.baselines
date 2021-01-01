@@ -51,8 +51,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @$VB$Local_id  -- Int32
-SET     @$VB$Local_id = 1
+DECLARE @Local_id  -- Int32
+SET     @Local_id = 1
 
 SELECT
 	[p].[ParentID],
@@ -60,5 +60,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @$VB$Local_id
+	[p].[ParentID] = @Local_id
 
