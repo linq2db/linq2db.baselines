@@ -9,8 +9,8 @@ FROM
 ORDER BY
 	CASE
 		WHEN t1."ParentID" > 0 AND t1."ChildID" <> t1."ParentID"
-			THEN 1
-		ELSE 0
+			THEN True
+		ELSE False
 	END DESC,
 	t1."ChildID"
 
