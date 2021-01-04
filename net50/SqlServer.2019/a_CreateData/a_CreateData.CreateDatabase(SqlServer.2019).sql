@@ -1343,8 +1343,8 @@ BEGIN
 	INSERT INTO #PeopleIds
 	SELECT Person.PersonID
 	FROM Person
-	WHERE LOWER(FirstName) like '%' + @nameFilter + '%'
-	OR LOWER(LastName) like '%' + @nameFilter + '%';
+	WHERE FirstName like '%' + @nameFilter + '%'
+	OR LastName like '%' + @nameFilter + '%';
 
 	-- 0: List of matching person ids.
 	SELECT PersonID FROM #PeopleIds;
