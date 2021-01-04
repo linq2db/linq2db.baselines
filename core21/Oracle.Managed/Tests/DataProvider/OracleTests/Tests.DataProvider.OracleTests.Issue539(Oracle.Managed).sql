@@ -1,5 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
+
+DROP SEQUENCE "AllTypesSeq"
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
+
+BeforeExecute
+-- Oracle.Managed Oracle12
 DECLARE @val Blob -- Object
 SET     @val = HEXTORAW('010203')
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -25,7 +35,7 @@ BeforeExecute
 DECLARE @val Blob -- Object
 SET     @val = HEXTORAW('010203')
 DECLARE @n Decimal(1, 0)
-SET     @n = 7
+SET     @n = 3
 DECLARE @take Int32
 SET     @take = 1
 
@@ -48,7 +58,7 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @n Decimal(1, 0)
-SET     @n = 7
+SET     @n = 3
 
 DELETE FROM
 	"AllTypes" t1

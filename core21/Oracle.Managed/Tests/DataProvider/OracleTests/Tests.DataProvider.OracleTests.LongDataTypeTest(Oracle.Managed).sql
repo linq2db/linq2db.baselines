@@ -1,6 +1,16 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
+DROP SEQUENCE "AllTypesSeq"
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
 DELETE FROM
 	"AllTypes" t
 WHERE
@@ -35,7 +45,7 @@ RETURNING
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @id Decimal(1, 0)
-SET     @id = 8
+SET     @id = 3
 
 SELECT
 	t."longDataType"
@@ -63,7 +73,7 @@ RETURNING
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @id2 Decimal(1, 0)
-SET     @id2 = 9
+SET     @id2 = 4
 
 SELECT
 	t."longDataType"
