@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [TakeSkipClass]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [TakeSkipClass]
 (
 	[Value] VarChar(10)     NULL

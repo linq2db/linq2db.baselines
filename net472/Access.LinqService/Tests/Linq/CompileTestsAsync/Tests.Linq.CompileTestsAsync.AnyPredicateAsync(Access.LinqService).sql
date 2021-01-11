@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [AsyncDataTable]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [AsyncDataTable]
 (
 	[Id] Int NOT NULL,

@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+DECLARE @guid VarWChar(36) -- String
+SET     @guid = 'febe3eca-cb5f-40b2-ad39-2979d312afca'
 
 SELECT
 	[t].[GuidValue]
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	LCase(Mid([t].[GuidValue], 2, 36)) = 'febe3eca-cb5f-40b2-ad39-2979d312afca'
+	LCase(Mid([t].[GuidValue], 2, 36)) = @guid
 
