@@ -1,13 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Blog]
-(
-	[Id]     Int            NOT NULL,
-	[Title]  NVarChar(4000)     NULL,
-	[Slogan] NVarChar(4000)     NULL,
-	[UserId] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Blog]', N'U') IS NOT NULL)
+	DROP TABLE [Blog]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Blog]', N'U') IS NULL)
+	CREATE TABLE [Blog]
+	(
+		[Id]     Int            NOT NULL,
+		[Title]  NVarChar(4000)     NULL,
+		[Slogan] NVarChar(4000)     NULL,
+		[UserId] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -25,14 +32,21 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Post]
-(
-	[Id]          Int            NOT NULL,
-	[BlogId]      Int            NOT NULL,
-	[Title]       NVarChar(4000)     NULL,
-	[PostContent] NVarChar(4000)     NULL,
-	[IsDeleted]   Bit            NOT NULL
-)
+IF (OBJECT_ID(N'[Post]', N'U') IS NOT NULL)
+	DROP TABLE [Post]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Post]', N'U') IS NULL)
+	CREATE TABLE [Post]
+	(
+		[Id]          Int            NOT NULL,
+		[BlogId]      Int            NOT NULL,
+		[Title]       NVarChar(4000)     NULL,
+		[PostContent] NVarChar(4000)     NULL,
+		[IsDeleted]   Bit            NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -54,12 +68,19 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Tag]
-(
-	[Id]        Int            NOT NULL,
-	[Name]      NVarChar(4000)     NULL,
-	[IsDeleted] Bit            NOT NULL
-)
+IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
+	DROP TABLE [Tag]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Tag]', N'U') IS NULL)
+	CREATE TABLE [Tag]
+	(
+		[Id]        Int            NOT NULL,
+		[Name]      NVarChar(4000)     NULL,
+		[IsDeleted] Bit            NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -80,13 +101,20 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [PostTag]
-(
-	[Id]        Int NOT NULL,
-	[PostId]    Int NOT NULL,
-	[TagId]     Int NOT NULL,
-	[IsDeleted] Bit NOT NULL
-)
+IF (OBJECT_ID(N'[PostTag]', N'U') IS NOT NULL)
+	DROP TABLE [PostTag]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[PostTag]', N'U') IS NULL)
+	CREATE TABLE [PostTag]
+	(
+		[Id]        Int NOT NULL,
+		[PostId]    Int NOT NULL,
+		[TagId]     Int NOT NULL,
+		[IsDeleted] Bit NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -201,20 +229,24 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [PostTag]
+IF (OBJECT_ID(N'[PostTag]', N'U') IS NOT NULL)
+	DROP TABLE [PostTag]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Tag]
+IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
+	DROP TABLE [Tag]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Post]
+IF (OBJECT_ID(N'[Post]', N'U') IS NOT NULL)
+	DROP TABLE [Post]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Blog]
+IF (OBJECT_ID(N'[Blog]', N'U') IS NOT NULL)
+	DROP TABLE [Blog]
 

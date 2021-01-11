@@ -1,20 +1,27 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [ValueConversion]
-(
-	[Id]                      Int           NOT NULL,
-	[Value1]                  NVarChar(200)     NULL,
-	[Value2]                  NVarChar(200)     NULL,
-	[Enum]                    NVarChar(50)  NOT NULL,
-	[EnumNullable]            VarChar(50)       NULL,
-	[EnumWithNull]            VarChar(50)       NULL,
-	[EnumWithNullDeclarative] VarChar(50)       NULL,
-	[BoolValue]               VarChar(1)    NOT NULL,
-	[DateTimeNullable]        DateTime          NULL,
+IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
+	DROP TABLE [ValueConversion]
 
-	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
+	CREATE TABLE [ValueConversion]
+	(
+		[Id]                      Int           NOT NULL,
+		[Value1]                  NVarChar(200)     NULL,
+		[Value2]                  NVarChar(200)     NULL,
+		[Enum]                    NVarChar(50)  NOT NULL,
+		[EnumNullable]            VarChar(50)       NULL,
+		[EnumWithNull]            VarChar(50)       NULL,
+		[EnumWithNullDeclarative] VarChar(50)       NULL,
+		[BoolValue]               VarChar(1)    NOT NULL,
+		[DateTimeNullable]        DateTime          NULL,
+
+		CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -60,5 +67,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [ValueConversion]
+IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
+	DROP TABLE [ValueConversion]
 
