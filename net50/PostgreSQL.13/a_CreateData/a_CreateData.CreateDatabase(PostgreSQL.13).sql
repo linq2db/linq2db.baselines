@@ -818,6 +818,27 @@ COMMENT ON COLUMN             "Issue2023"."PersonID" IS 'This is the Issue2023.P
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
+DROP FUNCTION IF EXISTS "SchemaName"."fnTest"(INT)
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+DROP SCHEMA IF EXISTS "SchemaName"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE SCHEMA "SchemaName"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE OR REPLACE FUNCTION "SchemaName"."fnTest"(param INT) RETURNS VARCHAR(20)
+AS $$ BEGIN RETURN 'issue2679test'; END $$ LANGUAGE PLPGSQL;
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
