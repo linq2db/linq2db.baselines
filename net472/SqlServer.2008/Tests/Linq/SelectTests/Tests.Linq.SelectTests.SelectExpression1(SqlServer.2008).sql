@@ -1,12 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [SelectExpressionTable]
-(
-	[ID] Int NOT NULL,
+IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NOT NULL)
+	DROP TABLE [SelectExpressionTable]
 
-	CONSTRAINT [PK_SelectExpressionTable] PRIMARY KEY CLUSTERED ([ID])
-)
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NULL)
+	CREATE TABLE [SelectExpressionTable]
+	(
+		[ID] Int NOT NULL,
+
+		CONSTRAINT [PK_SelectExpressionTable] PRIMARY KEY CLUSTERED ([ID])
+	)
 
 BeforeExecute
 -- SqlServer.2008
@@ -36,5 +43,6 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [SelectExpressionTable]
+IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NOT NULL)
+	DROP TABLE [SelectExpressionTable]
 
