@@ -803,6 +803,27 @@ BeforeExecute
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+DROP FUNCTION IF EXISTS "SchemaName"."fnTest"(INT)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+DROP SCHEMA IF EXISTS "SchemaName"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE SCHEMA "SchemaName"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE OR REPLACE FUNCTION "SchemaName"."fnTest"(param INT) RETURNS VARCHAR(20)
+AS $$ BEGIN RETURN 'issue2679test'; END $$ LANGUAGE PLPGSQL;
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
