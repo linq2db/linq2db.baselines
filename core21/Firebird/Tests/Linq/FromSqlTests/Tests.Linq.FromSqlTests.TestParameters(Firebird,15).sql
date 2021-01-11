@@ -1,11 +1,24 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "sample_class"
-(
-	"id"    Int                                   NOT NULL,
-	"value" VarChar(50) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'sample_class')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "sample_class"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'sample_class')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "sample_class"
+			(
+				"id"    Int                                   NOT NULL,
+				"value" VarChar(50) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -73,5 +86,8 @@ WHERE
 BeforeExecute
 -- Firebird
 
-DROP TABLE "sample_class"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'sample_class')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "sample_class"';
+END
 

@@ -1,15 +1,28 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "SampleData"
-(
-	"Id"     Int NOT NULL,
-	"Value1" Int NOT NULL,
-	"Value2" Int NOT NULL,
-	"Value3" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleData')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "SampleData"';
+END
 
-	CONSTRAINT "PK_SampleData" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleData')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "SampleData"
+			(
+				"Id"     Int NOT NULL,
+				"Value1" Int NOT NULL,
+				"Value2" Int NOT NULL,
+				"Value3" Int NOT NULL,
+
+				CONSTRAINT "PK_SampleData" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
@@ -75,5 +88,8 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "SampleData"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleData')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "SampleData"';
+END
 
