@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-CREATE TABLE sample_class
+DROP TABLE IF EXISTS sample_class
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS sample_class
 (
 	id    Int  NOT NULL,
 	value text     NULL
@@ -72,5 +77,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE sample_class
+DROP TABLE IF EXISTS sample_class
 
