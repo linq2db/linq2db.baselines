@@ -2,26 +2,41 @@
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT '
-		CREATE TABLE "Categories"
-		(
-			"CategoryID"   Int                                     NOT NULL,
-			"CategoryName" VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
-			"Description"  VarChar(255) CHARACTER SET UNICODE_FSS,
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Categories')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Categories"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Categories')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Categories"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Categories')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Categories"';
+END
 
-			CONSTRAINT "PK_Categories" PRIMARY KEY ("CategoryID")
-		)
-	';
-	EXECUTE STATEMENT '
-		CREATE GENERATOR "GIDENTITY_Categories"
-	';
-	EXECUTE STATEMENT '
-		CREATE TRIGGER "TIDENTITY_Categories" FOR "Categories"
-		BEFORE INSERT POSITION 0
-		AS BEGIN
-			NEW."CategoryID" = GEN_ID("GIDENTITY_Categories", 1);
-		END
-	';
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Categories')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Categories"
+			(
+				"CategoryID"   Int                                     NOT NULL,
+				"CategoryName" VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+				"Description"  VarChar(255) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_Categories" PRIMARY KEY ("CategoryID")
+			)
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Categories')) THEN
+		EXECUTE STATEMENT '
+			CREATE GENERATOR "GIDENTITY_Categories"
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Categories')) THEN
+		EXECUTE STATEMENT '
+			CREATE TRIGGER "TIDENTITY_Categories" FOR "Categories"
+			BEFORE INSERT POSITION 0
+			AS BEGIN
+				NEW."CategoryID" = GEN_ID("GIDENTITY_Categories", 1);
+			END
+		';
 END
 
 BeforeExecute
@@ -39,27 +54,42 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT '
-		CREATE TABLE "Products"
-		(
-			"ProductID"       Int                                     NOT NULL,
-			"ProductName"     VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
-			"CategoryID"      Int,
-			"QuantityPerUnit" VarChar(255) CHARACTER SET UNICODE_FSS,
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Products')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Products"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Products')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Products"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Products')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Products"';
+END
 
-			CONSTRAINT "PK_Products" PRIMARY KEY ("ProductID")
-		)
-	';
-	EXECUTE STATEMENT '
-		CREATE GENERATOR "GIDENTITY_Products"
-	';
-	EXECUTE STATEMENT '
-		CREATE TRIGGER "TIDENTITY_Products" FOR "Products"
-		BEFORE INSERT POSITION 0
-		AS BEGIN
-			NEW."ProductID" = GEN_ID("GIDENTITY_Products", 1);
-		END
-	';
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Products')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Products"
+			(
+				"ProductID"       Int                                     NOT NULL,
+				"ProductName"     VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
+				"CategoryID"      Int,
+				"QuantityPerUnit" VarChar(255) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_Products" PRIMARY KEY ("ProductID")
+			)
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Products')) THEN
+		EXECUTE STATEMENT '
+			CREATE GENERATOR "GIDENTITY_Products"
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Products')) THEN
+		EXECUTE STATEMENT '
+			CREATE TRIGGER "TIDENTITY_Products" FOR "Products"
+			BEFORE INSERT POSITION 0
+			AS BEGIN
+				NEW."ProductID" = GEN_ID("GIDENTITY_Products", 1);
+			END
+		';
 END
 
 BeforeExecute
@@ -105,17 +135,23 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Products"';
-	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Products"';
-	EXECUTE STATEMENT 'DROP TABLE "Products"';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Products')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Products"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Products')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Products"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Products')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Products"';
 END
 
 BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Categories"';
-	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Categories"';
-	EXECUTE STATEMENT 'DROP TABLE "Categories"';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Categories')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Categories"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Categories')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Categories"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Categories')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Categories"';
 END
 
