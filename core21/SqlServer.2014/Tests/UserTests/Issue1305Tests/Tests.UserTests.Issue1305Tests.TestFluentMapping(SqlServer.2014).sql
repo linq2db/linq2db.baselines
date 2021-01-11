@@ -28,7 +28,7 @@ BeforeExecute
 
 
 				SELECT
-					TABLE_CATALOG + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                          as TableID,
+					TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
 					TABLE_CATALOG                                                                  as CatalogName,
 					TABLE_SCHEMA                                                                   as SchemaName,
 					TABLE_NAME                                                                     as TableName,
@@ -67,7 +67,7 @@ BeforeExecute
 
 
 				SELECT
-					k.TABLE_CATALOG + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME                          as TableID,
+					k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 					k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
 					k.COLUMN_NAME                                                                        as ColumnName,
 					k.ORDINAL_POSITION                                                                   as Ordinal
@@ -87,7 +87,7 @@ BeforeExecute
 
 
 				SELECT
-					TABLE_CATALOG + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                                               as TableID,
+					TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                                               as TableID,
 					COLUMN_NAME                                                                                         as Name,
 					CASE WHEN IS_NULLABLE = 'YES' THEN 1 ELSE 0 END                                                     as IsNullable,
 					ORDINAL_POSITION                                                                                    as Ordinal,
@@ -138,7 +138,7 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-					SPECIFIC_CATALOG + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME                          as ProcedureID,
+					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 					SPECIFIC_CATALOG                                                                        as CatalogName,
 					SPECIFIC_SCHEMA                                                                         as SchemaName,
 					SPECIFIC_NAME                                                                           as ProcedureName,
@@ -150,7 +150,7 @@ SELECT
 					ISNULL(CONVERT(varchar(8000), x.Value), '')                                             as Description
 				FROM
 					INFORMATION_SCHEMA.ROUTINES
-					LEFT JOIN SYS.EXTENDED_PROPERTIES x
+					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							x.name = 'MS_Description' AND x.class = 1
 
@@ -158,7 +158,7 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-					SPECIFIC_CATALOG + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME                          as ProcedureID,
+					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 					ORDINAL_POSITION                                                                        as Ordinal,
 					PARAMETER_MODE                                                                          as Mode,
 					PARAMETER_NAME                                                                          as ParameterName,
@@ -176,7 +176,7 @@ SELECT
 					ISNULL(CONVERT(varchar(8000), x.Value), '')                                             as Description
 				FROM
 					INFORMATION_SCHEMA.PARAMETERS
-					LEFT JOIN SYS.EXTENDED_PROPERTIES x
+					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							ORDINAL_POSITION = x.minor_id AND
 							x.name = 'MS_Description' AND x.class = 2

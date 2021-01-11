@@ -1,13 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-CREATE TABLE [BaseTable]
-(
-	[Value] Int NOT NULL,
-	[Id]    Int NOT NULL,
+IF (OBJECT_ID(N'[BaseTable]', N'U') IS NOT NULL)
+	DROP TABLE [BaseTable]
 
-	CONSTRAINT [PK_BaseTable] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+
+IF (OBJECT_ID(N'[BaseTable]', N'U') IS NULL)
+	CREATE TABLE [BaseTable]
+	(
+		[Value] Int NOT NULL,
+		[Id]    Int NOT NULL,
+
+		CONSTRAINT [PK_BaseTable] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -49,5 +56,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [BaseTable]
+IF (OBJECT_ID(N'[BaseTable]', N'U') IS NOT NULL)
+	DROP TABLE [BaseTable]
 
