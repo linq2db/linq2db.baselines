@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [WhereCases]
+DROP TABLE IF EXISTS [WhereCases]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [WhereCases]
 (
 	[Id]                INTEGER NOT NULL,
 	[BoolValue]         Bit     NOT NULL,
@@ -634,5 +639,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [WhereCases]
+DROP TABLE IF EXISTS [WhereCases]
 

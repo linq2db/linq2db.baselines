@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [AsyncDataTable]
+DROP TABLE IF EXISTS [AsyncDataTable]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [AsyncDataTable]
 (
 	[Id] INTEGER NOT NULL,
 
@@ -170,5 +175,5 @@ SELECT
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [AsyncDataTable]
+DROP TABLE IF EXISTS [AsyncDataTable]
 
