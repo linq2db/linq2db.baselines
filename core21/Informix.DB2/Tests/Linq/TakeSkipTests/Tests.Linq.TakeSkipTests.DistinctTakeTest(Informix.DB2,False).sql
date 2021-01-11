@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE TakeSkipClass
+DROP TABLE IF EXISTS TakeSkipClass
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS TakeSkipClass
 (
 	"Value" VarChar(10)     NULL
 )
@@ -73,5 +78,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TakeSkipClass
+DROP TABLE IF EXISTS TakeSkipClass
 

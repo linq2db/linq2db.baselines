@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE SelectExpressionTable
+DROP TABLE IF EXISTS SelectExpressionTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS SelectExpressionTable
 (
 	ID Int NOT NULL,
 
@@ -33,5 +38,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE SelectExpressionTable
+DROP TABLE IF EXISTS SelectExpressionTable
 
