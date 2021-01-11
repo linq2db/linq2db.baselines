@@ -1,15 +1,36 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Contract_Distributor_Agent"
-(
-	"Agent_Id"                      Int          NOT NULL,
-	"Distributor_Id"                Int          NOT NULL,
-	"Contract_Id"                   Int          NOT NULL,
-	"Distributor_Type_Code"         VarChar(255)     NULL,
-	"Distributor_Agent_Type_Prefix" VarChar(255)     NULL,
-	"Represents_Type_Prefix"        VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Contract_Distributor_Agent"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Contract_Distributor_Agent"
+		(
+			"Agent_Id"                      Int          NOT NULL,
+			"Distributor_Id"                Int          NOT NULL,
+			"Contract_Id"                   Int          NOT NULL,
+			"Distributor_Type_Code"         VarChar(255)     NULL,
+			"Distributor_Agent_Type_Prefix" VarChar(255)     NULL,
+			"Represents_Type_Prefix"        VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -21,12 +42,33 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Agent"
-(
-	"Agent_Id"   Int          NOT NULL,
-	"First_Name" VarChar(255)     NULL,
-	"Last_Name"  VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Agent"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Agent"
+		(
+			"Agent_Id"   Int          NOT NULL,
+			"First_Name" VarChar(255)     NULL,
+			"Last_Name"  VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -38,12 +80,33 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Distributor"
-(
-	"Distributor_Id"   Int          NOT NULL,
-	"Type_Code"        VarChar(255)     NULL,
-	"Distributor_Name" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Distributor"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Distributor"
+		(
+			"Distributor_Id"   Int          NOT NULL,
+			"Type_Code"        VarChar(255)     NULL,
+			"Distributor_Name" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -55,12 +118,33 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Distributor_Commercial_Propert"
-(
-	"Distributor_Id"         Int          NOT NULL,
-	"Commercial_Property_Id" Int          NOT NULL,
-	"Distributor_Type_Code"  VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Distributor_Commercial_Propert"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Distributor_Commercial_Propert"
+		(
+			"Distributor_Id"         Int          NOT NULL,
+			"Commercial_Property_Id" Int          NOT NULL,
+			"Distributor_Type_Code"  VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -72,16 +156,37 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Commercial_Property"
-(
-	"Commercial_Property_Id" Int          NOT NULL,
-	"Street_Number"          VarChar(255)     NULL,
-	"Street_Name"            VarChar(255)     NULL,
-	"State"                  VarChar(255)     NULL,
-	"Zip_Code"               VarChar(255)     NULL,
-	"Zip_Plus_4"             VarChar(255)     NULL,
-	"City_Code"              VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Commercial_Property"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Commercial_Property"
+		(
+			"Commercial_Property_Id" Int          NOT NULL,
+			"Street_Number"          VarChar(255)     NULL,
+			"Street_Name"            VarChar(255)     NULL,
+			"State"                  VarChar(255)     NULL,
+			"Zip_Code"               VarChar(255)     NULL,
+			"Zip_Plus_4"             VarChar(255)     NULL,
+			"City_Code"              VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -93,12 +198,33 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Contract_Dates"
-(
-	"Contract_Id"    Int          NOT NULL,
-	"Type_Code"      VarChar(255)     NULL,
-	"Effective_Date" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Contract_Dates"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Contract_Dates"
+		(
+			"Contract_Id"    Int          NOT NULL,
+			"Type_Code"      VarChar(255)     NULL,
+			"Effective_Date" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -110,11 +236,32 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Cities"
-(
-	"City_Code" VarChar(255)     NULL,
-	"City_Name" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Cities"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Cities"
+		(
+			"City_Code" VarChar(255)     NULL,
+			"City_Name" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -202,9 +349,9 @@ SELECT
 	a."First_Name",
 	a."Last_Name",
 	d."Distributor_Name",
-	cp_5."Street_Number",
-	cp_5."Street_Name",
-	cp_5."City_Code",
+	cp."Street_Number",
+	cp."Street_Name",
+	cp."City_Code",
 	cda."Agent_Id",
 	cda."Distributor_Id",
 	cda."Contract_Id",
@@ -217,10 +364,10 @@ SELECT
 	dcp."Distributor_Id",
 	dcp."Commercial_Property_Id",
 	dcp."Distributor_Type_Code",
-	cp_5."Commercial_Property_Id",
-	cp_5."State",
-	cp_5."Zip_Code",
-	cp_5."Zip_Plus_4",
+	cp."Commercial_Property_Id",
+	cp."State",
+	cp."Zip_Code",
+	cp."Zip_Plus_4",
 	cd."Contract_Id",
 	cd."Type_Code",
 	cd."Effective_Date"
@@ -229,7 +376,7 @@ FROM
 		INNER JOIN "Agent" a ON cda."Agent_Id" = a."Agent_Id"
 		INNER JOIN "Distributor" d ON cda."Distributor_Id" = d."Distributor_Id"
 		INNER JOIN "Distributor_Commercial_Propert" dcp ON d."Distributor_Id" = dcp."Distributor_Id"
-		INNER JOIN "Commercial_Property" cp_5 ON dcp."Commercial_Property_Id" = cp_5."Commercial_Property_Id"
+		INNER JOIN "Commercial_Property" cp ON dcp."Commercial_Property_Id" = cp."Commercial_Property_Id"
 		INNER JOIN "Contract_Dates" cd ON cda."Contract_Id" = cd."Contract_Id"
 WHERE
 	cda."Contract_Id" = 198827882 AND
@@ -243,35 +390,84 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Cities"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Cities"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Contract_Dates"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Contract_Dates"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Commercial_Property"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Commercial_Property"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Distributor_Commercial_Propert"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Distributor_Commercial_Propert"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Distributor"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Distributor"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Agent"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Agent"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Contract_Distributor_Agent"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Contract_Distributor_Agent"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

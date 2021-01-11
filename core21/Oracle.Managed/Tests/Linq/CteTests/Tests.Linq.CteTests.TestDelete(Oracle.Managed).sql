@@ -1,11 +1,32 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "CteChild"
-(
-	"ChildID"  Int NOT NULL,
-	"ParentID" Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "CteChild"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CteChild"
+		(
+			"ChildID"  Int NOT NULL,
+			"ParentID" Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -57,5 +78,12 @@ DELETE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "CteChild"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "CteChild"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

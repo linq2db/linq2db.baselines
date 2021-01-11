@@ -1,13 +1,34 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "Issue913Test"
-(
-	"InstrumentID"  Int        NOT NULL,
-	"TradingStatus" VarChar(1)     NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue913Test"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_Issue913Test" PRIMARY KEY ("InstrumentID")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue913Test"
+		(
+			"InstrumentID"  Int        NOT NULL,
+			"TradingStatus" VarChar(1)     NULL,
+
+			CONSTRAINT "PK_Issue913Test" PRIMARY KEY ("InstrumentID")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -47,5 +68,12 @@ GROUP BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Issue913Test"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue913Test"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

@@ -1,14 +1,35 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "StLink"
-(
-	"InId"          Int   NOT NULL,
-	"InMaxQuantity" Float     NULL,
-	"InMinQuantity" Float     NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "StLink"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_StLink" PRIMARY KEY ("InId")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "StLink"
+		(
+			"InId"          Int   NOT NULL,
+			"InMaxQuantity" Float     NULL,
+			"InMinQuantity" Float     NULL,
+
+			CONSTRAINT "PK_StLink" PRIMARY KEY ("InId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -21,14 +42,35 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "EdtLink"
-(
-	"InId"          Int   NOT NULL,
-	"InMaxQuantity" Float     NULL,
-	"InMinQuantity" Float     NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "EdtLink"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_EdtLink" PRIMARY KEY ("InId")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "EdtLink"
+		(
+			"InId"          Int   NOT NULL,
+			"InMaxQuantity" Float     NULL,
+			"InMinQuantity" Float     NULL,
+
+			CONSTRAINT "PK_EdtLink" PRIMARY KEY ("InId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -78,10 +120,24 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "EdtLink"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "EdtLink"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "StLink"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "StLink"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

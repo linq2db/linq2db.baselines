@@ -1,18 +1,39 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "UpdateSetTest"
-(
-	"Id"     Int     NOT NULL,
-	"Value1" Raw(16) NOT NULL,
-	"Value2" Int     NOT NULL,
-	"Value3" Int     NOT NULL,
-	"Value4" Raw(16)     NULL,
-	"Value5" Int         NULL,
-	"Value6" Int         NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdateSetTest"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_UpdateSetTest" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UpdateSetTest"
+		(
+			"Id"     Int     NOT NULL,
+			"Value1" Raw(16) NOT NULL,
+			"Value2" Int     NOT NULL,
+			"Value3" Int     NOT NULL,
+			"Value4" Raw(16)     NULL,
+			"Value5" Int         NULL,
+			"Value6" Int         NULL,
+
+			CONSTRAINT "PK_UpdateSetTest" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -82,5 +103,12 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "UpdateSetTest"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdateSetTest"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

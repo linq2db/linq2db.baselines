@@ -1,10 +1,31 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "TakeSkipClass"
-(
-	"Value" VarChar(10)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TakeSkipClass"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TakeSkipClass"
+		(
+			"Value" VarChar(10)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -30,5 +51,12 @@ FETCH NEXT 2 ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "TakeSkipClass"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TakeSkipClass"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

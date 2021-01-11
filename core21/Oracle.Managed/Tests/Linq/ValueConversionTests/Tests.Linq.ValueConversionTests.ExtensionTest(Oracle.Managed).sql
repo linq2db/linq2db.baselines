@@ -1,20 +1,41 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "ValueConversion"
-(
-	"Id"                      Int           NOT NULL,
-	"Value1"                  VarChar2(200)     NULL,
-	"Value2"                  VarChar2(200)     NULL,
-	"Enum"                    VarChar2(50)  NOT NULL,
-	"EnumNullable"            VarChar(50)       NULL,
-	"EnumWithNull"            VarChar(50)       NULL,
-	"EnumWithNullDeclarative" VarChar(50)       NULL,
-	"BoolValue"               VarChar(1)    NOT NULL,
-	"DateTimeNullable"        timestamp         NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "ValueConversion"
+		(
+			"Id"                      Int           NOT NULL,
+			"Value1"                  VarChar2(200)     NULL,
+			"Value2"                  VarChar2(200)     NULL,
+			"Enum"                    VarChar2(50)  NOT NULL,
+			"EnumNullable"            VarChar(50)       NULL,
+			"EnumWithNull"            VarChar(50)       NULL,
+			"EnumWithNullDeclarative" VarChar(50)       NULL,
+			"BoolValue"               VarChar(1)    NOT NULL,
+			"DateTimeNullable"        timestamp         NULL,
+
+			CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -55,5 +76,12 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "ValueConversion"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
