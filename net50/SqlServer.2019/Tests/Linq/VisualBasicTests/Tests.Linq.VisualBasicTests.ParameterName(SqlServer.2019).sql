@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -59,8 +51,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @$VB$Local_id Int -- Int32
-SET     @$VB$Local_id = 1
+DECLARE @Local_id Int -- Int32
+SET     @Local_id = 1
 
 SELECT
 	[p].[ParentID],
@@ -68,5 +60,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @$VB$Local_id
+	[p].[ParentID] = @Local_id
 

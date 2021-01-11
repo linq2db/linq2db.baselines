@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Northwind SqlServer.2017
 DECLARE @OrderDate DateTime2
-SET     @OrderDate = '1997-11-14T00:00:00'
+SET     @OrderDate = '1997-11-14T00:00:00.0000000'
 
 SELECT
 	[order_1].[OrderID]
@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- Northwind SqlServer.2017
 DECLARE @OrderDate DateTime2
-SET     @OrderDate = '1997-11-14T00:00:00'
+SET     @OrderDate = '1997-11-14T00:00:00.0000000'
 
 SELECT
 	[order_1].[OrderID]
