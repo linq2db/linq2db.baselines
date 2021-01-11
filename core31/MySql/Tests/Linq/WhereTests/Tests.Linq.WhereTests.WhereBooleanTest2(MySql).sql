@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `WhereCases`
+DROP TABLE IF EXISTS `WhereCases`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `WhereCases`
 (
 	`Id`                INT     NOT NULL,
 	`BoolValue`         BOOLEAN NOT NULL,
@@ -435,5 +440,5 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `WhereCases`
+DROP TABLE IF EXISTS `WhereCases`
 

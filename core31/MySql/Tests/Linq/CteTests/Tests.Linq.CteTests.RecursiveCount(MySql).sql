@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `HierarchyTree`
+DROP TABLE IF EXISTS `HierarchyTree`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `HierarchyTree`
 (
 	`Id`       INT NOT NULL,
 	`ParentId` INT     NULL
@@ -81,5 +86,5 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `HierarchyTree`
+DROP TABLE IF EXISTS `HierarchyTree`
 

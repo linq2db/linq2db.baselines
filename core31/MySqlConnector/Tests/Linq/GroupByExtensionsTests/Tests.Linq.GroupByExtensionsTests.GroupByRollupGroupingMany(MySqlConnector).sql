@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `GroupSampleClass`
+DROP TABLE IF EXISTS `GroupSampleClass`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `GroupSampleClass`
 (
 	`Id1`   INT NOT NULL,
 	`Id2`   INT NOT NULL,
@@ -53,5 +58,5 @@ WITH ROLLUP
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `GroupSampleClass`
+DROP TABLE IF EXISTS `GroupSampleClass`
 
