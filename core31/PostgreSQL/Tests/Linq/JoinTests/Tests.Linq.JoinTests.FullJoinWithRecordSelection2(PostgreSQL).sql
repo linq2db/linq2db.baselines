@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Fact"
+DROP TABLE IF EXISTS "Fact"
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Fact"
 (
 	"Id" Int NOT NULL,
 
@@ -23,7 +28,12 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Tag"
+DROP TABLE IF EXISTS "Tag"
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Tag"
 (
 	"Id"     Int  NOT NULL,
 	"FactId" Int  NOT NULL,
@@ -64,10 +74,10 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Tag"
+DROP TABLE IF EXISTS "Tag"
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Fact"
+DROP TABLE IF EXISTS "Fact"
 

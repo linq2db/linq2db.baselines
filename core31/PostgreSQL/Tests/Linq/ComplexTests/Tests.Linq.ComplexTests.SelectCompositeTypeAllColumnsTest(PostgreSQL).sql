@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "User"
+DROP TABLE IF EXISTS "User"
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "User"
 (
 	city            text     NULL,
 	user_name       text     NULL,
@@ -36,5 +41,5 @@ FROM
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "User"
+DROP TABLE IF EXISTS "User"
 
