@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `TakeSkipClass`
+DROP TABLE IF EXISTS `TakeSkipClass`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
 	`Value` VARCHAR(10)     NULL
 )
@@ -42,5 +47,5 @@ LIMIT @skip_3, @skip_4
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `TakeSkipClass`
+DROP TABLE IF EXISTS `TakeSkipClass`
 

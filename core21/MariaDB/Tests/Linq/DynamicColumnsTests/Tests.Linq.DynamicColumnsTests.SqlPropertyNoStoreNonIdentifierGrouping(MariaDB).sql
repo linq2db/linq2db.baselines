@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `DynamicTable`
+DROP TABLE IF EXISTS `DynamicTable`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `DynamicTable`
 (
 	`ID`             INT AUTO_INCREMENT NOT NULL,
 	`Not Identifier` INT                NOT NULL,
@@ -37,5 +42,5 @@ GROUP BY
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `DynamicTable`
+DROP TABLE IF EXISTS `DynamicTable`
 

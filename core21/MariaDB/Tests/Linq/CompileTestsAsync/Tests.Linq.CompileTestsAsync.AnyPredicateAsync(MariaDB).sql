@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `AsyncDataTable`
+DROP TABLE IF EXISTS `AsyncDataTable`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 (
 	`Id` INT NOT NULL,
 
@@ -49,5 +54,5 @@ SELECT
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `AsyncDataTable`
+DROP TABLE IF EXISTS `AsyncDataTable`
 

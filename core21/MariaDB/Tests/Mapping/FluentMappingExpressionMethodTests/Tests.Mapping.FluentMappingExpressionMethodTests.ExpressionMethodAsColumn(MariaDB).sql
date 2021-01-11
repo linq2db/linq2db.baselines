@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `InstanceClass`
+DROP TABLE IF EXISTS `InstanceClass`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `InstanceClass`
 (
 	`Id`    INT NOT NULL,
 	`Value` INT NOT NULL
@@ -50,5 +55,5 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `InstanceClass`
+DROP TABLE IF EXISTS `InstanceClass`
 
