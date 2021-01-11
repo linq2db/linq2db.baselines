@@ -1,10 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [TakeSkipClass]
-(
-	[Value] VarChar(10)     NULL
-)
+IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
+	DROP TABLE [TakeSkipClass]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
+	CREATE TABLE [TakeSkipClass]
+	(
+		[Value] VarChar(10)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -150,5 +157,6 @@ OFFSET @skip_1 ROWS FETCH NEXT @take_2 ROWS ONLY
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [TakeSkipClass]
+IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
+	DROP TABLE [TakeSkipClass]
 
