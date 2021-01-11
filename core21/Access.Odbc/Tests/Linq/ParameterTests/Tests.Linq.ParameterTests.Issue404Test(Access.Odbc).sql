@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Table404One]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Table404One]
 (
 	[Id] Int NOT NULL
@@ -33,6 +38,11 @@ VALUES
 (
 	?
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Table404Two]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -268,6 +278,11 @@ DROP TABLE [Table404One]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Table404One]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Table404One]
 (
 	[Id] Int NOT NULL
@@ -300,6 +315,11 @@ VALUES
 (
 	?
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Table404Two]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

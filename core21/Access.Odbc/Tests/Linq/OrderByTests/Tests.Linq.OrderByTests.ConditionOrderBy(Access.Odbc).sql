@@ -7,11 +7,11 @@ SELECT
 FROM
 	[Child] [t1]
 ORDER BY
-	Iif([t1].[ParentID] > 0 AND [t1].[ChildID] <> [t1].[ParentID], 1, 0) DESC,
+	Iif([t1].[ParentID] > 0 AND [t1].[ChildID] <> [t1].[ParentID], True, False) DESC,
 	[t1].[ChildID]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 DELETE FROM
 	[Child]
@@ -19,7 +19,7 @@ WHERE
 	[Child].[ParentID] >= 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -28,15 +28,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-
-BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -45,7 +37,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -55,7 +47,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],

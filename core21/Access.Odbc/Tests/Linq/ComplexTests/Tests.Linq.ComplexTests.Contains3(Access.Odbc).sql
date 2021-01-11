@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -9,15 +9,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-
-BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -26,7 +18,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 DELETE FROM
 	[Child]
@@ -34,7 +26,7 @@ WHERE
 	[Child].[ParentID] >= 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -43,7 +35,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -53,7 +45,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],
@@ -80,11 +72,11 @@ FROM
 		INNER JOIN [Parent] [p] ON ([ch].[ParentID] = [p].[ParentID]))
 		LEFT JOIN (
 			SELECT
-				[gc_1].[ParentID] as [gc],
-				[gc_1].[ChildID],
-				[gc_1].[GrandChildID]
+				[gc].[ParentID] as [gc],
+				[gc].[ChildID],
+				[gc].[GrandChildID]
 			FROM
-				[GrandChild] [gc_1]
+				[GrandChild] [gc]
 					INNER JOIN (
 						SELECT
 							Max([t1].[GrandChildID]) as [c1]
@@ -92,7 +84,7 @@ FROM
 							[GrandChild] [t1]
 						GROUP BY
 							[t1].[ChildID]
-					) [max_1] ON (([gc_1].[GrandChildID] = [max_1].[c1] OR [gc_1].[GrandChildID] IS NULL AND [max_1].[c1] IS NULL))
+					) [max_1] ON (([gc].[GrandChildID] = [max_1].[c1] OR [gc].[GrandChildID] IS NULL AND [max_1].[c1] IS NULL))
 		) [t2] ON ([p].[ParentID] = [t2].[gc])
 WHERE
 	([t2].[gc] IS NULL AND [t2].[ChildID] IS NULL AND [t2].[GrandChildID] IS NULL OR ([t2].[GrandChildID] NOT IN (111, 222) OR [t2].[GrandChildID] IS NULL))

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [TakeSkipClass]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [TakeSkipClass]
 (
 	[Value] VarChar(10)     NULL

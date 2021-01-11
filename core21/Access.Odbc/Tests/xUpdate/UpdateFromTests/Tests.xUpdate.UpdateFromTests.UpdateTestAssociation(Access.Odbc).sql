@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [UpdatedEntities]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [UpdatedEntities]
 (
 	[id]         Int NOT NULL,
@@ -131,6 +136,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [UpdateRelation]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
