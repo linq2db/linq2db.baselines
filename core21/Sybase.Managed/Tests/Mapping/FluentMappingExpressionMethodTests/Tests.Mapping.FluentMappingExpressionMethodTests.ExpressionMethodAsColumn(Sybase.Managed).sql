@@ -1,11 +1,20 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [InstanceClass]
-(
-	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
-)
+IF (OBJECT_ID(N'InstanceClass') IS NOT NULL)
+	DROP TABLE [InstanceClass]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'InstanceClass') IS NULL)
+	EXECUTE('
+		CREATE TABLE [InstanceClass]
+		(
+			[Id]    Int NOT NULL,
+			[Value] Int NOT NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -49,5 +58,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [InstanceClass]
+IF (OBJECT_ID(N'InstanceClass') IS NOT NULL)
+	DROP TABLE [InstanceClass]
 

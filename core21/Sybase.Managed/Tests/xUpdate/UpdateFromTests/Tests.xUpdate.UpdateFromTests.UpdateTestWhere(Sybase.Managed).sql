@@ -1,16 +1,25 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [UpdatedEntities]
-(
-	[id]         Int NOT NULL,
-	[Value1]     Int NOT NULL,
-	[Value2]     Int NOT NULL,
-	[Value3]     Int NOT NULL,
-	[RelationId] Int     NULL,
+IF (OBJECT_ID(N'UpdatedEntities') IS NOT NULL)
+	DROP TABLE [UpdatedEntities]
 
-	CONSTRAINT [PK_UpdatedEntities] PRIMARY KEY CLUSTERED ([id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'UpdatedEntities') IS NULL)
+	EXECUTE('
+		CREATE TABLE [UpdatedEntities]
+		(
+			[id]         Int NOT NULL,
+			[Value1]     Int NOT NULL,
+			[Value2]     Int NOT NULL,
+			[Value3]     Int NOT NULL,
+			[RelationId] Int     NULL,
+
+			CONSTRAINT [PK_UpdatedEntities] PRIMARY KEY CLUSTERED ([id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -31,15 +40,24 @@ SELECT 3,31,32,33,3
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [NewEntities]
-(
-	[id]     Int NOT NULL,
-	[Value1] Int NOT NULL,
-	[Value2] Int NOT NULL,
-	[Value3] Int NOT NULL,
+IF (OBJECT_ID(N'NewEntities') IS NOT NULL)
+	DROP TABLE [NewEntities]
 
-	CONSTRAINT [PK_NewEntities] PRIMARY KEY CLUSTERED ([id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'NewEntities') IS NULL)
+	EXECUTE('
+		CREATE TABLE [NewEntities]
+		(
+			[id]     Int NOT NULL,
+			[Value1] Int NOT NULL,
+			[Value2] Int NOT NULL,
+			[Value3] Int NOT NULL,
+
+			CONSTRAINT [PK_NewEntities] PRIMARY KEY CLUSTERED ([id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -93,10 +111,12 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [NewEntities]
+IF (OBJECT_ID(N'NewEntities') IS NOT NULL)
+	DROP TABLE [NewEntities]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [UpdatedEntities]
+IF (OBJECT_ID(N'UpdatedEntities') IS NOT NULL)
+	DROP TABLE [UpdatedEntities]
 

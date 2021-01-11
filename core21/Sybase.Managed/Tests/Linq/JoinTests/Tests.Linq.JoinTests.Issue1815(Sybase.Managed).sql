@@ -1,14 +1,23 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [StLink]
-(
-	[InId]          Int   NOT NULL,
-	[InMaxQuantity] Float     NULL,
-	[InMinQuantity] Float     NULL,
+IF (OBJECT_ID(N'StLink') IS NOT NULL)
+	DROP TABLE [StLink]
 
-	CONSTRAINT [PK_StLink] PRIMARY KEY CLUSTERED ([InId])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'StLink') IS NULL)
+	EXECUTE('
+		CREATE TABLE [StLink]
+		(
+			[InId]          Int   NOT NULL,
+			[InMaxQuantity] Float     NULL,
+			[InMinQuantity] Float     NULL,
+
+			CONSTRAINT [PK_StLink] PRIMARY KEY CLUSTERED ([InId])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -25,14 +34,23 @@ SELECT 2,NULL,NULL
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [EdtLink]
-(
-	[InId]          Int   NOT NULL,
-	[InMaxQuantity] Float     NULL,
-	[InMinQuantity] Float     NULL,
+IF (OBJECT_ID(N'EdtLink') IS NOT NULL)
+	DROP TABLE [EdtLink]
 
-	CONSTRAINT [PK_EdtLink] PRIMARY KEY CLUSTERED ([InId])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'EdtLink') IS NULL)
+	EXECUTE('
+		CREATE TABLE [EdtLink]
+		(
+			[InId]          Int   NOT NULL,
+			[InMaxQuantity] Float     NULL,
+			[InMinQuantity] Float     NULL,
+
+			CONSTRAINT [PK_EdtLink] PRIMARY KEY CLUSTERED ([InId])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -80,10 +98,12 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [EdtLink]
+IF (OBJECT_ID(N'EdtLink') IS NOT NULL)
+	DROP TABLE [EdtLink]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [StLink]
+IF (OBJECT_ID(N'StLink') IS NOT NULL)
+	DROP TABLE [StLink]
 

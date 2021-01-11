@@ -1,20 +1,29 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [ValueConversion]
-(
-	[Id]                      Int           NOT NULL,
-	[Value1]                  NVarChar(200)     NULL,
-	[Value2]                  NVarChar(200)     NULL,
-	[Enum]                    NVarChar(50)  NOT NULL,
-	[EnumNullable]            VarChar(50)       NULL,
-	[EnumWithNull]            VarChar(50)       NULL,
-	[EnumWithNullDeclarative] VarChar(50)       NULL,
-	[BoolValue]               VarChar(1)    NOT NULL,
-	[DateTimeNullable]        DateTime          NULL,
+IF (OBJECT_ID(N'ValueConversion') IS NOT NULL)
+	DROP TABLE [ValueConversion]
 
-	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'ValueConversion') IS NULL)
+	EXECUTE('
+		CREATE TABLE [ValueConversion]
+		(
+			[Id]                      Int           NOT NULL,
+			[Value1]                  NVarChar(200)     NULL,
+			[Value2]                  NVarChar(200)     NULL,
+			[Enum]                    NVarChar(50)  NOT NULL,
+			[EnumNullable]            VarChar(50)       NULL,
+			[EnumWithNull]            VarChar(50)       NULL,
+			[EnumWithNullDeclarative] VarChar(50)       NULL,
+			[BoolValue]               VarChar(1)    NOT NULL,
+			[DateTimeNullable]        DateTime          NULL,
+
+			CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -192,5 +201,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [ValueConversion]
+IF (OBJECT_ID(N'ValueConversion') IS NOT NULL)
+	DROP TABLE [ValueConversion]
 

@@ -1,13 +1,22 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Issue913Test]
-(
-	[InstrumentID]  Int      NOT NULL,
-	[TradingStatus] NChar(1)     NULL,
+IF (OBJECT_ID(N'Issue913Test') IS NOT NULL)
+	DROP TABLE [Issue913Test]
 
-	CONSTRAINT [PK_Issue913Test] PRIMARY KEY CLUSTERED ([InstrumentID])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Issue913Test') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Issue913Test]
+		(
+			[InstrumentID]  Int      NOT NULL,
+			[TradingStatus] NChar(1)     NULL,
+
+			CONSTRAINT [PK_Issue913Test] PRIMARY KEY CLUSTERED ([InstrumentID])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -50,5 +59,6 @@ GROUP BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Issue913Test]
+IF (OBJECT_ID(N'Issue913Test') IS NOT NULL)
+	DROP TABLE [Issue913Test]
 

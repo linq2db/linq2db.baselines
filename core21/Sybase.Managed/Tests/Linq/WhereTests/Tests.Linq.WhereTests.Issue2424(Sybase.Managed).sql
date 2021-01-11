@@ -1,11 +1,20 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Isue2424Table]
-(
-	[Id]       Int           NOT NULL,
-	[StrValue] NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Isue2424Table') IS NOT NULL)
+	DROP TABLE [Isue2424Table]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Isue2424Table') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Isue2424Table]
+		(
+			[Id]       Int           NOT NULL,
+			[StrValue] NVarChar(255)     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -264,5 +273,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Isue2424Table]
+IF (OBJECT_ID(N'Isue2424Table') IS NOT NULL)
+	DROP TABLE [Isue2424Table]
 

@@ -1,15 +1,24 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [SampleData]
-(
-	[Id]     Int NOT NULL,
-	[Value1] Int NOT NULL,
-	[Value2] Int NOT NULL,
-	[Value3] Int NOT NULL,
+IF (OBJECT_ID(N'SampleData') IS NOT NULL)
+	DROP TABLE [SampleData]
 
-	CONSTRAINT [PK_SampleData] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'SampleData') IS NULL)
+	EXECUTE('
+		CREATE TABLE [SampleData]
+		(
+			[Id]     Int NOT NULL,
+			[Value1] Int NOT NULL,
+			[Value2] Int NOT NULL,
+			[Value3] Int NOT NULL,
+
+			CONSTRAINT [PK_SampleData] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -73,5 +82,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [SampleData]
+IF (OBJECT_ID(N'SampleData') IS NOT NULL)
+	DROP TABLE [SampleData]
 
