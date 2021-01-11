@@ -1,12 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-CREATE TABLE [TableWithData]
-(
-	[Id]       Int          NOT NULL,
-	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
+IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
+	DROP TABLE [TableWithData]
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+
+IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
+	CREATE TABLE [TableWithData]
+	(
+		[Id]       Int          NOT NULL,
+		[Value]    Int          NOT NULL,
+		[ValueStr] NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -244,7 +251,7 @@ DECLARE @param Int -- Int32
 SET     @param = 100
 DECLARE @param_1 Int -- Int32
 SET     @param_1 = 100
-DECLARE @param_2 NVarChar -- String
+DECLARE @param_2 Int -- Int32
 SET     @param_2 = 100
 
 INSERT INTO [DestinationTable]
@@ -260,7 +267,7 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param_1,
-	[s].[ValueStr] + Convert(VarChar(11), @param_2)
+	[s].[ValueStr] + Convert(VarChar(100), @param_2)
 FROM
 	[TableWithData] [s]
 WHERE
@@ -286,5 +293,6 @@ DROP TABLE [DestinationTable]
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [TableWithData]
+IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
+	DROP TABLE [TableWithData]
 
