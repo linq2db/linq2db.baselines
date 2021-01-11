@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [OrderByDistinctData]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [OrderByDistinctData]
 (
 	[Id]            Int           NOT NULL,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Categories]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Categories]
 (
 	[CategoryID]   Int            NOT NULL IDENTITY,
@@ -20,6 +25,11 @@ INSERT INTO [Categories]
 )
 SELECT 'Name 1','Desc 1' UNION ALL
 SELECT 'Name 2','Desc 2'
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Products]
 
 BeforeExecute
 -- SqlCe
