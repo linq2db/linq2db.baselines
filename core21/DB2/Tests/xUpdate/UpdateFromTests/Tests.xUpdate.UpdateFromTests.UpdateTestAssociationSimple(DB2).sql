@@ -1,16 +1,29 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "UpdatedEntities"
-(
-	"id"         Int NOT NULL,
-	"Value1"     Int NOT NULL,
-	"Value2"     Int NOT NULL,
-	"Value3"     Int NOT NULL,
-	"RelationId" Int     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdatedEntities"';
+END
 
-	CONSTRAINT "PK_UpdatedEntities" PRIMARY KEY ("id")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UpdatedEntities"
+		(
+			"id"         Int NOT NULL,
+			"Value1"     Int NOT NULL,
+			"Value2"     Int NOT NULL,
+			"Value3"     Int NOT NULL,
+			"RelationId" Int     NULL,
+
+			CONSTRAINT "PK_UpdatedEntities" PRIMARY KEY ("id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -32,15 +45,28 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "UpdateRelation"
-(
-	"id"            Int NOT NULL,
-	"RelatedValue1" Int NOT NULL,
-	"RelatedValue2" Int NOT NULL,
-	"RelatedValue3" Int NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdateRelation"';
+END
 
-	CONSTRAINT "PK_UpdateRelation" PRIMARY KEY ("id")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UpdateRelation"
+		(
+			"id"            Int NOT NULL,
+			"RelatedValue1" Int NOT NULL,
+			"RelatedValue2" Int NOT NULL,
+			"RelatedValue3" Int NOT NULL,
+
+			CONSTRAINT "PK_UpdateRelation" PRIMARY KEY ("id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -95,10 +121,16 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "UpdateRelation"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdateRelation"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DROP TABLE "UpdatedEntities"
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "UpdatedEntities"';
+END
 

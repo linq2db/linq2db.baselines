@@ -221,7 +221,7 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-MERGE INTO "TestMerge1" "Target_1"
+MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
 		"_"."Id" as "OtherId",
@@ -241,7 +241,7 @@ USING (
 	"Source",
 	"case_1"
 )
-ON ("Target_1"."Id" = "Source"."OtherId")
+ON ("Target"."Id" = "Source"."OtherId")
 
 WHEN NOT MATCHED AND "Source"."Source" = 216 THEN
 INSERT
