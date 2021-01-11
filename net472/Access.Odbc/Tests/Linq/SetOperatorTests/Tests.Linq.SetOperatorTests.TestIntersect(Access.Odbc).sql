@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [SampleData]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [SampleData]
 (
 	[Id]     Int NOT NULL,

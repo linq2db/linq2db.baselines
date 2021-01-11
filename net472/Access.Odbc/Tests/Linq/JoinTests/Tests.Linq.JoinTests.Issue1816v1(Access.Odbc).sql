@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [stVersions]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [stVersions]
 (
 	[inId]     Int NOT NULL,
@@ -12,6 +17,11 @@ CREATE TABLE [stVersions]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [rlStatesTypesAndUserGroups]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [rlStatesTypesAndUserGroups]
 (
 	[inIdState] Int NOT NULL,
@@ -19,6 +29,11 @@ CREATE TABLE [rlStatesTypesAndUserGroups]
 
 	CONSTRAINT [PK_rlStatesTypesAndUserGroups] PRIMARY KEY CLUSTERED ([inIdState], [inIdType])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [stMain]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
