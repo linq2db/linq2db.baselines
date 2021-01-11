@@ -1,20 +1,27 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [FirstOptimizerData]
-(
-	[Key1]      Int          NOT NULL,
-	[Key2]      Int          NOT NULL,
-	[DataKey11] Int          NOT NULL,
-	[DataKey21] Int          NOT NULL,
-	[DataKey22] Int          NOT NULL,
-	[DataKey31] Int          NOT NULL,
-	[DataKey32] Int          NOT NULL,
-	[DataKey33] Int          NOT NULL,
-	[ValueStr]  NVarChar(50)     NULL,
+IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
+	DROP TABLE [FirstOptimizerData]
 
-	CONSTRAINT [PK_FirstOptimizerData] PRIMARY KEY CLUSTERED ([Key1], [Key2])
-)
+BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NULL)
+	CREATE TABLE [FirstOptimizerData]
+	(
+		[Key1]      Int          NOT NULL,
+		[Key2]      Int          NOT NULL,
+		[DataKey11] Int          NOT NULL,
+		[DataKey21] Int          NOT NULL,
+		[DataKey22] Int          NOT NULL,
+		[DataKey31] Int          NOT NULL,
+		[DataKey32] Int          NOT NULL,
+		[DataKey33] Int          NOT NULL,
+		[ValueStr]  NVarChar(50)     NULL,
+
+		CONSTRAINT [PK_FirstOptimizerData] PRIMARY KEY CLUSTERED ([Key1], [Key2])
+	)
 
 BeforeExecute
 -- SqlServer.2012
@@ -42,20 +49,27 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [SecondOptimizerData]
-(
-	[Key1]      Int          NOT NULL,
-	[Key2]      Int          NOT NULL,
-	[DataKey11] Int          NOT NULL,
-	[DataKey21] Int          NOT NULL,
-	[DataKey22] Int          NOT NULL,
-	[DataKey31] Int          NOT NULL,
-	[DataKey32] Int          NOT NULL,
-	[DataKey33] Int          NOT NULL,
-	[ValueStr]  NVarChar(50)     NULL,
+IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
+	DROP TABLE [SecondOptimizerData]
 
-	CONSTRAINT [PK_SecondOptimizerData] PRIMARY KEY CLUSTERED ([Key1], [Key2])
-)
+BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NULL)
+	CREATE TABLE [SecondOptimizerData]
+	(
+		[Key1]      Int          NOT NULL,
+		[Key2]      Int          NOT NULL,
+		[DataKey11] Int          NOT NULL,
+		[DataKey21] Int          NOT NULL,
+		[DataKey22] Int          NOT NULL,
+		[DataKey31] Int          NOT NULL,
+		[DataKey32] Int          NOT NULL,
+		[DataKey33] Int          NOT NULL,
+		[ValueStr]  NVarChar(50)     NULL,
+
+		CONSTRAINT [PK_SecondOptimizerData] PRIMARY KEY CLUSTERED ([Key1], [Key2])
+	)
 
 BeforeExecute
 -- SqlServer.2012
@@ -98,10 +112,12 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [SecondOptimizerData]
+IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
+	DROP TABLE [SecondOptimizerData]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [FirstOptimizerData]
+IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
+	DROP TABLE [FirstOptimizerData]
 

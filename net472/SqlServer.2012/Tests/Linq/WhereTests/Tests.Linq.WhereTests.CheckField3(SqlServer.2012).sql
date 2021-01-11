@@ -2,10 +2,10 @@
 -- SqlServer.2012
 
 SELECT
-	[p_1].[Value1],
-	[p_1].[ParentID]
+	[p].[Value1],
+	[p].[ParentID]
 FROM
-	[Parent] [p_1]
+	[Parent] [p]
 WHERE
-	[p_1].[ParentID] = 1
+	[p].[ParentID] = 1
 
