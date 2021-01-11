@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `DynamicTable`
+DROP TABLE IF EXISTS `DynamicTable`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `DynamicTable`
 (
 	`ID`             INT AUTO_INCREMENT NOT NULL,
 	`Not Identifier` INT                NOT NULL,
@@ -32,5 +37,5 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `DynamicTable`
+DROP TABLE IF EXISTS `DynamicTable`
 

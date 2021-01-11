@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Isue2424Table`
+DROP TABLE IF EXISTS `Isue2424Table`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Isue2424Table`
 (
 	`Id`       INT          NOT NULL,
 	`StrValue` VARCHAR(255)     NULL
@@ -331,5 +336,5 @@ LIMIT @take
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Isue2424Table`
+DROP TABLE IF EXISTS `Isue2424Table`
 

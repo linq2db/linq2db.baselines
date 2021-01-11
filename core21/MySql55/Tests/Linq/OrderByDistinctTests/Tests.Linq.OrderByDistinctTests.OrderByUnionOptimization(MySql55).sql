@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `OrderByDistinctData`
+DROP TABLE IF EXISTS `OrderByDistinctData`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
 	`Id`            INT          NOT NULL,
 	`DuplicateData` VARCHAR(255)     NULL,
@@ -101,5 +106,5 @@ ORDER BY
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `OrderByDistinctData`
+DROP TABLE IF EXISTS `OrderByDistinctData`
 

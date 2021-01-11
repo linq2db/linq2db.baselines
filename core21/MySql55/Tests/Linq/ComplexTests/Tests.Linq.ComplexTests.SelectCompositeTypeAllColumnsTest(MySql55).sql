@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `User`
+DROP TABLE IF EXISTS `User`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `User`
 (
 	`city`            VARCHAR(255)     NULL,
 	`user_name`       VARCHAR(255)     NULL,
@@ -36,5 +41,5 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `User`
+DROP TABLE IF EXISTS `User`
 

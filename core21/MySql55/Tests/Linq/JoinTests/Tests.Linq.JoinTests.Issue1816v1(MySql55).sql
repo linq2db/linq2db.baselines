@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `stVersions`
+DROP TABLE IF EXISTS `stVersions`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `stVersions`
 (
 	`inId`     INT NOT NULL,
 	`inIdMain` INT NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE `stVersions`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `rlStatesTypesAndUserGroups`
+DROP TABLE IF EXISTS `rlStatesTypesAndUserGroups`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `rlStatesTypesAndUserGroups`
 (
 	`inIdState` INT NOT NULL,
 	`inIdType`  INT NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE `rlStatesTypesAndUserGroups`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `stMain`
+DROP TABLE IF EXISTS `stMain`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `stMain`
 (
 	`inId`     INT NOT NULL,
 	`inIdType` INT NOT NULL,
@@ -45,15 +60,15 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `stMain`
+DROP TABLE IF EXISTS `stMain`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `rlStatesTypesAndUserGroups`
+DROP TABLE IF EXISTS `rlStatesTypesAndUserGroups`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `stVersions`
+DROP TABLE IF EXISTS `stVersions`
 
