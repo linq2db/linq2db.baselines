@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @skip_5 Int -- Int32
-SET     @skip_5 = 2
-DECLARE @skip_4 Int -- Int32
-SET     @skip_4 = 5
+DECLARE @skip_1 Int -- Int32
+SET     @skip_1 = 2
+DECLARE @skip Int -- Int32
+SET     @skip = 5
 
 SELECT
 	[t1].[ParentID],
@@ -12,14 +12,14 @@ FROM
 	[Child] [t1]
 ORDER BY
 	[t1].[ChildID] DESC
-OFFSET @skip_5 ROWS FETCH NEXT @skip_4 ROWS ONLY 
+OFFSET @skip_1 ROWS FETCH NEXT @skip ROWS ONLY 
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @skip_6 Int -- Int32
-SET     @skip_6 = 2
-DECLARE @skip_5 Int -- Int32
-SET     @skip_5 = 5
+DECLARE @skip_1 Int -- Int32
+SET     @skip_1 = 2
+DECLARE @skip Int -- Int32
+SET     @skip = 5
 
 SELECT
 	[t1].[ParentID],
@@ -28,5 +28,5 @@ FROM
 	[Child] [t1]
 ORDER BY
 	[t1].[ChildID] DESC
-OFFSET @skip_6 ROWS FETCH NEXT @skip_5 ROWS ONLY 
+OFFSET @skip_1 ROWS FETCH NEXT @skip ROWS ONLY 
 

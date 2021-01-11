@@ -1,15 +1,22 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [WhereCompareData]
-(
-	[Id]            Int NOT NULL,
-	[NotNullable]   Int NOT NULL,
-	[Nullable]      Int     NULL,
-	[OtherNullable] Int     NULL,
+IF (OBJECT_ID(N'[WhereCompareData]', N'U') IS NOT NULL)
+	DROP TABLE [WhereCompareData]
 
-	CONSTRAINT [PK_WhereCompareData] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+IF (OBJECT_ID(N'[WhereCompareData]', N'U') IS NULL)
+	CREATE TABLE [WhereCompareData]
+	(
+		[Id]            Int NOT NULL,
+		[NotNullable]   Int NOT NULL,
+		[Nullable]      Int     NULL,
+		[OtherNullable] Int     NULL,
+
+		CONSTRAINT [PK_WhereCompareData] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -134,5 +141,6 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [WhereCompareData]
+IF (OBJECT_ID(N'[WhereCompareData]', N'U') IS NOT NULL)
+	DROP TABLE [WhereCompareData]
 

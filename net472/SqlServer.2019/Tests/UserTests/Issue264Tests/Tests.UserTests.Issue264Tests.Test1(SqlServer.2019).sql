@@ -21,7 +21,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],

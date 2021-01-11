@@ -1,15 +1,22 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [OrderByDistinctData]
-(
-	[Id]            Int            NOT NULL,
-	[DuplicateData] NVarChar(4000)     NULL,
-	[OrderData1]    Int            NOT NULL,
-	[OrderData2]    Int            NOT NULL,
+IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
+	DROP TABLE [OrderByDistinctData]
 
-	CONSTRAINT [PK_OrderByDistinctData] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NULL)
+	CREATE TABLE [OrderByDistinctData]
+	(
+		[Id]            Int            NOT NULL,
+		[DuplicateData] NVarChar(4000)     NULL,
+		[OrderData1]    Int            NOT NULL,
+		[OrderData2]    Int            NOT NULL,
+
+		CONSTRAINT [PK_OrderByDistinctData] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -292,5 +299,6 @@ OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [OrderByDistinctData]
+IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
+	DROP TABLE [OrderByDistinctData]
 
