@@ -1,5 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+
+DROP SEQUENCE "AllTypesSeq"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -26,8 +36,8 @@ SET
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @id Decimal(2, 0)
-SET     @id = 44
+DECLARE @id Decimal(1, 0)
+SET     @id = 3
 DECLARE @take Int32
 SET     @take = 2
 

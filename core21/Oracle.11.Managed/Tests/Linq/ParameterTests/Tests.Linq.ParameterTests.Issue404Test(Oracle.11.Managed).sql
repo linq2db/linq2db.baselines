@@ -1,10 +1,31 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "Table404One"
-(
-	"Id" Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table404One"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Table404One"
+		(
+			"Id" Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -17,12 +38,33 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "Table404Two"
-(
-	"Id"           Int NOT NULL,
-	"Usage"        Int NOT NULL,
-	"FirstTableId" Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table404Two"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Table404Two"
+		(
+			"Id"           Int NOT NULL,
+			"Usage"        Int NOT NULL,
+			"FirstTableId" Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -118,20 +160,55 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Table404Two"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table404Two"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Table404One"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table404One"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "Table404One"
-(
-	"Id" Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table404One"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Table404One"
+		(
+			"Id" Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -144,12 +221,33 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "Table404Two"
-(
-	"Id"           Int NOT NULL,
-	"Usage"        Int NOT NULL,
-	"FirstTableId" Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table404Two"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Table404Two"
+		(
+			"Id"           Int NOT NULL,
+			"Usage"        Int NOT NULL,
+			"FirstTableId" Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -245,10 +343,24 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Table404Two"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table404Two"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Table404One"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table404One"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

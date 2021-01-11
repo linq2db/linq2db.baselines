@@ -1,12 +1,33 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-CREATE TABLE "GroupSampleClass"
-(
-	"Id1"   Int NOT NULL,
-	"Id2"   Int NOT NULL,
-	"Value" Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "GroupSampleClass"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "GroupSampleClass"
+		(
+			"Id1"   Int NOT NULL,
+			"Id2"   Int NOT NULL,
+			"Value" Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -50,5 +71,12 @@ HAVING
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "GroupSampleClass"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "GroupSampleClass"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
