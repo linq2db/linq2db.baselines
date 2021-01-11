@@ -10,11 +10,19 @@ FROM
 		CROSS APPLY (
 			SELECT
 				Count(*) as [Count_1],
-				Sum([t].[ChildID]) as [Sum_1]
+				Sum([c_1].[ChildID]) as [Sum_1]
 			FROM
-				[Child] [t]
-			WHERE
-				[t].[ParentID] <> [p].[ParentID] AND [p].[ParentID] <= 2
+				(
+					SELECT
+						1 as [c1],
+						[t].[ChildID]
+					FROM
+						[Child] [t]
+					WHERE
+						[t].[ParentID] <> [p].[ParentID] AND [p].[ParentID] <= 2
+				) [c_1]
+			GROUP BY
+				[c_1].[c1]
 		) [t1]
 
 BeforeExecute
@@ -28,8 +36,16 @@ FROM
 			SELECT
 				Count(*) as [c1]
 			FROM
-				[Child] [t]
-			WHERE
-				[t].[ParentID] <> [p].[ParentID] AND [p].[ParentID] <= 2
+				(
+					SELECT
+						1 as [c1],
+						[t].[ChildID]
+					FROM
+						[Child] [t]
+					WHERE
+						[t].[ParentID] <> [p].[ParentID] AND [p].[ParentID] <= 2
+				) [c_1]
+			GROUP BY
+				[c_1].[c1]
 		) [t1]
 
