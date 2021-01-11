@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [TakeSkipClass]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [TakeSkipClass]
 (
 	[Value] NVarChar(10)     NULL

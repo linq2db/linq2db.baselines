@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [DynamicTable]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [DynamicTable]
 (
 	[ID]             Int  NOT NULL IDENTITY,

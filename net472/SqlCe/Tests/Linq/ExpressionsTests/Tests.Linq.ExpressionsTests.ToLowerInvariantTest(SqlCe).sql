@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
