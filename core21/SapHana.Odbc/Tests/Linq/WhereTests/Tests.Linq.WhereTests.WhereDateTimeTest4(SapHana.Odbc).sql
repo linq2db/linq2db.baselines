@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],
@@ -17,8 +17,8 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @DateTimeValue_1  -- DateTime
-SET     @DateTimeValue_1 = '2009-09-27'
+DECLARE @DateTimeValue  -- DateTime
+SET     @DateTimeValue = '2009-09-27'
 
 SELECT
 	"_"."ID",

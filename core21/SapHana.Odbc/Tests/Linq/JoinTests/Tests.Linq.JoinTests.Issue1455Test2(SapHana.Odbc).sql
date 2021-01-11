@@ -57,12 +57,12 @@ CREATE COLUMN TABLE "Flat"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p1 NVarChar(3) -- String
-SET     @p1 = '%C%'
-DECLARE @p2 NVarChar(3) -- String
-SET     @p2 = '%C%'
-DECLARE @p3 NVarChar(3) -- String
-SET     @p3 = '%C%'
+DECLARE @p_1 NVarChar(3) -- String
+SET     @p_1 = '%C%'
+DECLARE @p_2 NVarChar(3) -- String
+SET     @p_2 = '%C%'
+DECLARE @p_3 NVarChar(3) -- String
+SET     @p_3 = '%C%'
 
 SELECT
 	"al_1"."alert",
@@ -76,7 +76,7 @@ FROM
 			"al"."CreationDate" as "alert_2"
 		FROM
 			"Alert" "al"
-				LEFT JOIN "AuditAlert" "au1" ON ("au1"."AlertKey" IS NULL AND "al"."AlertKey" IS NULL OR "au1"."AlertKey" = "al"."AlertKey") AND ("au1"."AlertCode" IS NULL AND "au1"."AlertCode" IS NULL OR "au1"."AlertCode" = "au1"."AlertCode")
+				LEFT JOIN "AuditAlert" "au1" ON ("au1"."AlertKey" = "al"."AlertKey" OR "au1"."AlertKey" IS NULL AND "al"."AlertKey" IS NULL) AND ("au1"."AlertCode" = "au1"."AlertCode" OR "au1"."AlertCode" IS NULL AND "au1"."AlertCode" IS NULL)
 		GROUP BY
 			"al"."AlertKey",
 			"al"."AlertCode",

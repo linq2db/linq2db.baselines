@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
-DROP TABLE "xxPatient23"
+DROP TABLE "xxPatient"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
-CREATE COLUMN TABLE "xxPatient23"
+CREATE COLUMN TABLE "xxPatient"
 (
 	"PersonID"  Integer       NOT NULL,
 	"Diagnosis" NVarChar(255)     NULL,
@@ -22,11 +22,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient23"
+	"xxPatient"
 SET
-	"xxPatient23"."Diagnosis" = ?
+	"xxPatient"."Diagnosis" = ?
 WHERE
-	"xxPatient23"."PersonID" = ?
+	"xxPatient"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO "xxPatient23"
+INSERT INTO "xxPatient"
 (
 	"PersonID",
 	"Diagnosis"
@@ -54,11 +54,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient23"
+	"xxPatient"
 SET
-	"xxPatient23"."Diagnosis" = ?
+	"xxPatient"."Diagnosis" = ?
 WHERE
-	"xxPatient23"."PersonID" = ?
+	"xxPatient"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO "xxPatient23"
+INSERT INTO "xxPatient"
 (
 	"PersonID",
 	"Diagnosis"
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient23" "t1"
+	"xxPatient" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -94,11 +94,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient23"
+	"xxPatient"
 SET
-	"xxPatient23"."Diagnosis" = ?
+	"xxPatient"."Diagnosis" = ?
 WHERE
-	"xxPatient23"."PersonID" = ?
+	"xxPatient"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -108,11 +108,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient23"
+	"xxPatient"
 SET
-	"xxPatient23"."Diagnosis" = ?
+	"xxPatient"."Diagnosis" = ?
 WHERE
-	"xxPatient23"."PersonID" = ?
+	"xxPatient"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient23" "t1"
+	"xxPatient" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
-DROP TABLE "xxPatient23"
+DROP TABLE "xxPatient"
 

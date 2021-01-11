@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "gt_s_one"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "gt_s_one"
 (
 	"id"   Integer       NOT NULL,
@@ -13,6 +18,11 @@ CREATE COLUMN TABLE "gt_s_one"
 
 	PRIMARY KEY ("id")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "access_mode"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -36,7 +46,7 @@ SET
 			"x"."col1"
 		FROM
 			"gt_s_one" "x"
-				LEFT JOIN "access_mode" "am" ON Upper(Replace("x"."col3", 'auth.', '')) = Upper("am"."code")
+				LEFT JOIN "access_mode" "am" ON (Upper(Replace("x"."col3", 'auth.', '')) = Upper("am"."code") OR Upper(Replace("x"."col3", 'auth.', '')) IS NULL AND Upper("am"."code") IS NULL)
 		WHERE
 			"gt_s_one"."id" = "x"."id"
 	),
@@ -45,7 +55,7 @@ SET
 			"x_1"."col2"
 		FROM
 			"gt_s_one" "x_1"
-				LEFT JOIN "access_mode" "am_1" ON Upper(Replace("x_1"."col3", 'auth.', '')) = Upper("am_1"."code")
+				LEFT JOIN "access_mode" "am_1" ON (Upper(Replace("x_1"."col3", 'auth.', '')) = Upper("am_1"."code") OR Upper(Replace("x_1"."col3", 'auth.', '')) IS NULL AND Upper("am_1"."code") IS NULL)
 		WHERE
 			"gt_s_one"."id" = "x_1"."id"
 	),
@@ -54,7 +64,7 @@ SET
 			Replace("x_2"."col3", 'auth.', '')
 		FROM
 			"gt_s_one" "x_2"
-				LEFT JOIN "access_mode" "am_2" ON Upper(Replace("x_2"."col3", 'auth.', '')) = Upper("am_2"."code")
+				LEFT JOIN "access_mode" "am_2" ON (Upper(Replace("x_2"."col3", 'auth.', '')) = Upper("am_2"."code") OR Upper(Replace("x_2"."col3", 'auth.', '')) IS NULL AND Upper("am_2"."code") IS NULL)
 		WHERE
 			"gt_s_one"."id" = "x_2"."id"
 	),
@@ -63,7 +73,7 @@ SET
 			"x_3"."col4"
 		FROM
 			"gt_s_one" "x_3"
-				LEFT JOIN "access_mode" "am_3" ON Upper(Replace("x_3"."col3", 'auth.', '')) = Upper("am_3"."code")
+				LEFT JOIN "access_mode" "am_3" ON (Upper(Replace("x_3"."col3", 'auth.', '')) = Upper("am_3"."code") OR Upper(Replace("x_3"."col3", 'auth.', '')) IS NULL AND Upper("am_3"."code") IS NULL)
 		WHERE
 			"gt_s_one"."id" = "x_3"."id"
 	),
@@ -76,7 +86,7 @@ SET
 			END
 		FROM
 			"gt_s_one" "x_4"
-				LEFT JOIN "access_mode" "am_4" ON Upper(Replace("x_4"."col3", 'auth.', '')) = Upper("am_4"."code")
+				LEFT JOIN "access_mode" "am_4" ON (Upper(Replace("x_4"."col3", 'auth.', '')) = Upper("am_4"."code") OR Upper(Replace("x_4"."col3", 'auth.', '')) IS NULL AND Upper("am_4"."code") IS NULL)
 		WHERE
 			"gt_s_one"."id" = "x_4"."id"
 	),
@@ -89,7 +99,7 @@ SET
 			END
 		FROM
 			"gt_s_one" "x_5"
-				LEFT JOIN "access_mode" "am_5" ON Upper(Replace("x_5"."col3", 'auth.', '')) = Upper("am_5"."code")
+				LEFT JOIN "access_mode" "am_5" ON (Upper(Replace("x_5"."col3", 'auth.', '')) = Upper("am_5"."code") OR Upper(Replace("x_5"."col3", 'auth.', '')) IS NULL AND Upper("am_5"."code") IS NULL)
 		WHERE
 			"gt_s_one"."id" = "x_5"."id"
 	)
@@ -99,7 +109,7 @@ WHERE
 			*
 		FROM
 			"gt_s_one" "x_6"
-				LEFT JOIN "access_mode" "am_6" ON Upper(Replace("x_6"."col3", 'auth.', '')) = Upper("am_6"."code")
+				LEFT JOIN "access_mode" "am_6" ON (Upper(Replace("x_6"."col3", 'auth.', '')) = Upper("am_6"."code") OR Upper(Replace("x_6"."col3", 'auth.', '')) IS NULL AND Upper("am_6"."code") IS NULL)
 		WHERE
 			"gt_s_one"."id" = "x_6"."id"
 	)

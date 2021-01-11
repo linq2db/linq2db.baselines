@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Issue913Test"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Issue913Test"
 (
 	"InstrumentID"  Integer  NOT NULL,
@@ -77,7 +82,11 @@ FROM
 					THEN 1
 				ELSE 0
 			END as "c1",
-			CASE WHEN "selectParam"."TradingStatus" = 'D' THEN 1 ELSE 0 END as "c2"
+			CASE
+				WHEN "selectParam"."TradingStatus" = 'D'
+					THEN 1
+				ELSE 0
+			END as "c2"
 		FROM
 			"Issue913Test" "selectParam"
 	) "t1"
