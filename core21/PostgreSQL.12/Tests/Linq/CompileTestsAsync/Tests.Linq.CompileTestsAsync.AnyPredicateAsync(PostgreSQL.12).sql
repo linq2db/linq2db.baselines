@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "AsyncDataTable"
+DROP TABLE IF EXISTS "AsyncDataTable"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "AsyncDataTable"
 (
 	"Id" Int NOT NULL,
 
@@ -49,5 +54,5 @@ SELECT
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "AsyncDataTable"
+DROP TABLE IF EXISTS "AsyncDataTable"
 
