@@ -604,21 +604,21 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:12'
+SET     @p = '2012-12-12T12:12:12.0000000'
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:12'
+SET     @p = '2012-12-12T12:12:12.0000000'
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:12'
+SET     @p = '2012-12-12T12:12:12.0000000'
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
@@ -656,21 +656,21 @@ SELECT smalldatetimeDataType FROM [AllTypes] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @p SmallDateTime -- DateTime
-SET     @p = '2012-12-12T12:12:00'
+SET     @p = '2012-12-12T12:12:00.0000000'
 
 SELECT ID FROM [AllTypes] WHERE smalldatetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:00'
+SET     @p = '2012-12-12T12:12:00.0000000'
 
 SELECT ID FROM [AllTypes] WHERE smalldatetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:00'
+SET     @p = '2012-12-12T12:12:00.0000000'
 
 SELECT ID FROM [AllTypes] WHERE smalldatetimeDataType = @p
 

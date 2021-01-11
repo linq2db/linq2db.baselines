@@ -1,13 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-
-BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -16,7 +8,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 DELETE FROM
 	[Child]
@@ -24,7 +16,7 @@ WHERE
 	[Child].[ParentID] >= 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -33,7 +25,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -43,7 +35,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],
@@ -59,8 +51,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
-DECLARE @$VB$Local_id Int -- Int32
-SET     @$VB$Local_id = 1
+DECLARE @Local_id Int -- Int32
+SET     @Local_id = 1
 
 SELECT
 	[p].[ParentID],
@@ -68,5 +60,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @$VB$Local_id
+	[p].[ParentID] = @Local_id
 
