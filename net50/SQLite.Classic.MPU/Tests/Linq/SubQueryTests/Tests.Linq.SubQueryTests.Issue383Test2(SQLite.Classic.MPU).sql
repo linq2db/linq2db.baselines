@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Contract_Distributor_Agent]
+DROP TABLE IF EXISTS [Contract_Distributor_Agent]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Contract_Distributor_Agent]
 (
 	[Agent_Id]                      INTEGER       NOT NULL,
 	[Distributor_Id]                INTEGER       NOT NULL,
@@ -29,7 +34,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Agent]
+DROP TABLE IF EXISTS [Agent]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Agent]
 (
 	[Agent_Id]   INTEGER       NOT NULL,
 	[First_Name] NVarChar(255)     NULL,
@@ -51,7 +61,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Distributor]
+DROP TABLE IF EXISTS [Distributor]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Distributor]
 (
 	[Distributor_Id]   INTEGER       NOT NULL,
 	[Type_Code]        NVarChar(255)     NULL,
@@ -73,7 +88,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Distributor_Commercial_Propert]
+DROP TABLE IF EXISTS [Distributor_Commercial_Propert]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Distributor_Commercial_Propert]
 (
 	[Distributor_Id]         INTEGER       NOT NULL,
 	[Commercial_Property_Id] INTEGER       NOT NULL,
@@ -95,7 +115,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Commercial_Property]
+DROP TABLE IF EXISTS [Commercial_Property]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Commercial_Property]
 (
 	[Commercial_Property_Id] INTEGER       NOT NULL,
 	[Street_Number]          NVarChar(255)     NULL,
@@ -125,7 +150,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Contract_Dates]
+DROP TABLE IF EXISTS [Contract_Dates]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Contract_Dates]
 (
 	[Contract_Id]    INTEGER       NOT NULL,
 	[Type_Code]      NVarChar(255)     NULL,
@@ -147,7 +177,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Cities]
+DROP TABLE IF EXISTS [Cities]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Cities]
 (
 	[City_Code] NVarChar(255)     NULL,
 	[City_Name] NVarChar(255)     NULL
@@ -204,35 +239,35 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Cities]
+DROP TABLE IF EXISTS [Cities]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Contract_Dates]
+DROP TABLE IF EXISTS [Contract_Dates]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Commercial_Property]
+DROP TABLE IF EXISTS [Commercial_Property]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Distributor_Commercial_Propert]
+DROP TABLE IF EXISTS [Distributor_Commercial_Propert]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Distributor]
+DROP TABLE IF EXISTS [Distributor]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Agent]
+DROP TABLE IF EXISTS [Agent]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Contract_Distributor_Agent]
+DROP TABLE IF EXISTS [Contract_Distributor_Agent]
 
