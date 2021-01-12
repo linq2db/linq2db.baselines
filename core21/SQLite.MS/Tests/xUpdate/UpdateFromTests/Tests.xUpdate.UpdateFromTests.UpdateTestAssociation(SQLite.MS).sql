@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [UpdatedEntities]
+DROP TABLE IF EXISTS [UpdatedEntities]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [UpdatedEntities]
 (
 	[id]         INTEGER NOT NULL,
 	[Value1]     INTEGER NOT NULL,
@@ -32,7 +37,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [UpdateRelation]
+DROP TABLE IF EXISTS [UpdateRelation]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [UpdateRelation]
 (
 	[id]            INTEGER NOT NULL,
 	[RelatedValue1] INTEGER NOT NULL,
@@ -101,10 +111,10 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [UpdateRelation]
+DROP TABLE IF EXISTS [UpdateRelation]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [UpdatedEntities]
+DROP TABLE IF EXISTS [UpdatedEntities]
 

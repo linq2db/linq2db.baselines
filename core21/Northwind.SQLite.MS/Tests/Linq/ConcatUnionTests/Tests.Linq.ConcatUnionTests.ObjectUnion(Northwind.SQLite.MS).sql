@@ -19,38 +19,38 @@ SELECT
 FROM
 	(
 		SELECT
-			[p_9].[ProductID] as [p],
-			[p_9].[ProductName],
-			[p_9].[SupplierID] as [p_1],
-			[p_9].[CategoryID] as [p_2],
-			[p_9].[QuantityPerUnit] as [p_3],
-			[p_9].[UnitPrice] as [p_4],
-			[p_9].[UnitsInStock] as [p_5],
-			[p_9].[UnitsOnOrder] as [p_6],
-			[p_9].[ReorderLevel] as [p_7],
-			[p_9].[Discontinued] as [p_8],
+			[p].[ProductID] as [p],
+			[p].[ProductName],
+			[p].[SupplierID] as [p_1],
+			[p].[CategoryID] as [p_2],
+			[p].[QuantityPerUnit] as [p_3],
+			[p].[UnitPrice] as [p_4],
+			[p].[UnitsInStock] as [p_5],
+			[p].[UnitsOnOrder] as [p_6],
+			[p].[ReorderLevel] as [p_7],
+			[p].[Discontinued] as [p_8],
 			[g_1].[CategoryName],
-			[p_9].[ProductName] as [ProductName_1]
+			[p].[ProductName] as [ProductName_1]
 		FROM
-			[Products] [p_9]
-				LEFT JOIN [Categories] [g_1] ON [p_9].[CategoryID] = [g_1].[CategoryID]
+			[Products] [p]
+				LEFT JOIN [Categories] [g_1] ON [p].[CategoryID] = [g_1].[CategoryID]
 		UNION
 		SELECT
-			[p_10].[ProductID] as [p],
-			[p_10].[ProductName],
-			[p_10].[SupplierID] as [p_1],
-			[p_10].[CategoryID] as [p_2],
-			[p_10].[QuantityPerUnit] as [p_3],
-			[p_10].[UnitPrice] as [p_4],
-			[p_10].[UnitsInStock] as [p_5],
-			[p_10].[UnitsOnOrder] as [p_6],
-			[p_10].[ReorderLevel] as [p_7],
-			[p_10].[Discontinued] as [p_8],
+			[p_1].[ProductID] as [p],
+			[p_1].[ProductName],
+			[p_1].[SupplierID] as [p_1],
+			[p_1].[CategoryID] as [p_2],
+			[p_1].[QuantityPerUnit] as [p_3],
+			[p_1].[UnitPrice] as [p_4],
+			[p_1].[UnitsInStock] as [p_5],
+			[p_1].[UnitsOnOrder] as [p_6],
+			[p_1].[ReorderLevel] as [p_7],
+			[p_1].[Discontinued] as [p_8],
 			[g_2].[CategoryName],
-			[p_10].[ProductName] as [ProductName_1]
+			[p_1].[ProductName] as [ProductName_1]
 		FROM
-			[Products] [p_10]
-				LEFT JOIN [Categories] [g_2] ON [p_10].[CategoryID] = [g_2].[CategoryID]
+			[Products] [p_1]
+				LEFT JOIN [Categories] [g_2] ON [p_1].[CategoryID] = [g_2].[CategoryID]
 	) [t1]
 LIMIT @take
 

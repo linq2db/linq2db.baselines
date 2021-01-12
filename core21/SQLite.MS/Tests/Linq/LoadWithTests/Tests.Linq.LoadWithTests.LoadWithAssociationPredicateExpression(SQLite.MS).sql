@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [ParentRecord]
+DROP TABLE IF EXISTS [ParentRecord]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [ParentRecord]
 (
 	[Id] INTEGER NOT NULL
 )
@@ -19,7 +24,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [ChildRecord]
+DROP TABLE IF EXISTS [ChildRecord]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [ChildRecord]
 (
 	[Id]       INTEGER NOT NULL,
 	[ParentId] INTEGER NOT NULL,
@@ -85,10 +95,10 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ChildRecord]
+DROP TABLE IF EXISTS [ChildRecord]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ParentRecord]
+DROP TABLE IF EXISTS [ParentRecord]
 
