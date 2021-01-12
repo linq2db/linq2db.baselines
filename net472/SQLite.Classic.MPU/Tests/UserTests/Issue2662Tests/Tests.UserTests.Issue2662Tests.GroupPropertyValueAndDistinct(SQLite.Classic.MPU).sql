@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [CountDistinctTest]
+DROP TABLE IF EXISTS [CountDistinctTest]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [CountDistinctTest]
 (
 	[ID]       INTEGER NOT NULL,
 	[GroupCol] INTEGER NOT NULL,
@@ -150,5 +155,5 @@ GROUP BY
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [CountDistinctTest]
+DROP TABLE IF EXISTS [CountDistinctTest]
 

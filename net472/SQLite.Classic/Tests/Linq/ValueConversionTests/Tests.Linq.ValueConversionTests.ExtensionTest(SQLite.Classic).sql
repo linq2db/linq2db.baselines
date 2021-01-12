@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ValueConversion]
 (
 	[Id]                      INTEGER       NOT NULL,
 	[Value1]                  NVarChar(200)     NULL,
@@ -66,5 +71,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 
