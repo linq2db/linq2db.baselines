@@ -40,16 +40,6 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	LinqDataTypes r
-WHERE
-	r.ID = 101 AND r.BigIntValue = 11
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 102
 

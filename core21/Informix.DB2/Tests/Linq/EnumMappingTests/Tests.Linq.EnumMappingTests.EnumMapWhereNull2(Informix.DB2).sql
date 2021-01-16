@@ -22,16 +22,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT FIRST 1
-	r.BigIntValue
-FROM
-	LinqDataTypes r
-WHERE
-	r.ID = 101 AND r.BigIntValue IS NULL
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 102
 

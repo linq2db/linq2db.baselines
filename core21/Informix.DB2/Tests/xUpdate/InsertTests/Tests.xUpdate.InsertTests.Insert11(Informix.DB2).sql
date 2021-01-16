@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT
-	Max(t.PersonID)
-FROM
-	Person t
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(2) -- String
@@ -31,22 +23,6 @@ VALUES
 	@Name_MiddleName,
 	@Name_LastName
 )
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @id Integer(4) -- Int32
-SET     @id = 4
-
-SELECT FIRST 2
-	p2.PersonID,
-	p2.Gender,
-	p2.FirstName,
-	p2.MiddleName,
-	p2.LastName
-FROM
-	Person p2
-WHERE
-	p2.PersonID > @id
 
 BeforeExecute
 -- Informix.DB2 Informix

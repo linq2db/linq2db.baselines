@@ -108,25 +108,6 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	Count(*)
-FROM
-	xxPerson t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	xxPerson p
-WHERE
-	p.FirstName = 'Steven' AND p.LastName = 'King' AND
-	p.Gender = 'M'
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE xxPerson
 
 BeforeExecute

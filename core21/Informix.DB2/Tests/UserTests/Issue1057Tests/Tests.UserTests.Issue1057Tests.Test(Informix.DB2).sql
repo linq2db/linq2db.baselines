@@ -82,19 +82,6 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	p.Id,
-	p.TargetName,
-	a_ActualStage.Id
-FROM
-	"Task" p
-		LEFT JOIN TaskStage a_ActualStage ON p.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = 't'
-WHERE
-	p.TargetName = 'bda.Requests'
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE TaskStage
 
 BeforeExecute

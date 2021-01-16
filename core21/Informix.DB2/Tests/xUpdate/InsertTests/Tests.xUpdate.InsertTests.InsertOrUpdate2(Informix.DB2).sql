@@ -83,37 +83,11 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 SELECT
-	p.PersonID,
-	p.Diagnosis
-FROM
-	Patient p
-WHERE
-	p.PersonID = @id
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
-
-SELECT
 	1
 FROM
 	Patient t1
 WHERE
 	t1.PersonID = @id
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
-
-SELECT
-	p.PersonID,
-	p.Diagnosis
-FROM
-	Patient p
-WHERE
-	p.PersonID = @id
 
 BeforeExecute
 -- Informix.DB2 Informix

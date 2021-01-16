@@ -48,24 +48,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT FIRST 1
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue,
-	e.DateTimeNullable
-FROM
-	ValueConversion e
-WHERE
-	e.Id = 1
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Value1 VarChar -- String
@@ -93,24 +75,6 @@ VALUES
 	@Enum,
 	@BoolValue
 )
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT FIRST 1
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue,
-	e.DateTimeNullable
-FROM
-	ValueConversion e
-WHERE
-	e.Id = 2
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -157,32 +121,6 @@ VALUES
 	@BoolValue,
 	@DateTimeNullable
 )
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT FIRST 1
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue,
-	e.DateTimeNullable
-FROM
-	ValueConversion e
-WHERE
-	e.Id = 3
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	ValueConversion t1
 
 BeforeExecute
 -- Informix.DB2 Informix

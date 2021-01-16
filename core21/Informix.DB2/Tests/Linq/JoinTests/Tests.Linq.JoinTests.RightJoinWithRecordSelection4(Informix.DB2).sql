@@ -141,20 +141,6 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	f.Id,
-	ft.Id,
-	ft.FactId,
-	ft.Name
-FROM
-	Tag ft
-		RIGHT JOIN Fact f ON ft.FactId = f.Id
-WHERE
-	f.Id > 3
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS Tag
 
 BeforeExecute

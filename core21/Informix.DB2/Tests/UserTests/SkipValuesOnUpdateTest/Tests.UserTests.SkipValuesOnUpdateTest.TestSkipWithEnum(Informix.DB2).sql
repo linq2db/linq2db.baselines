@@ -39,19 +39,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT FIRST 1
-	t.Id,
-	t.Name,
-	t.Age,
-	t.Gender
-FROM
-	PR_1598_Update_Enum_Table t
-WHERE
-	t.Id = 1
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Integer(4) -- Int32
@@ -72,19 +59,6 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT FIRST 1
-	t.Id,
-	t.Name,
-	t.Age,
-	t.Gender
-FROM
-	PR_1598_Update_Enum_Table t
-WHERE
-	t.Id = 1
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Integer(4) -- Int32
@@ -99,19 +73,6 @@ SET
 	PR_1598_Update_Enum_Table.Age = @Age
 WHERE
 	PR_1598_Update_Enum_Table.Id = @Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT FIRST 1
-	t.Id,
-	t.Name,
-	t.Age,
-	t.Gender
-FROM
-	PR_1598_Update_Enum_Table t
-WHERE
-	t.Id = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

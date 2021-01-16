@@ -26,22 +26,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.ID
-FROM
-	TempTable t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	t.ID
-FROM
-	Parent p
-		INNER JOIN TempTable t ON p.ParentID = t.ID
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS TempTable
 

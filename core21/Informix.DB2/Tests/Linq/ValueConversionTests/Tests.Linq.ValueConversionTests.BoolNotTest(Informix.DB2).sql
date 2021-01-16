@@ -483,21 +483,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_1 VarChar(1) -- String
-SET     @BoolValue_1 = 'N'
-
-SELECT
-	t.Id,
-	t.Value1,
-	t.Value2,
-	t.BoolValue
-FROM
-	ValueConversion t
-WHERE
-	t.BoolValue = @BoolValue_1
-
-BeforeExecute
--- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS ValueConversion
 

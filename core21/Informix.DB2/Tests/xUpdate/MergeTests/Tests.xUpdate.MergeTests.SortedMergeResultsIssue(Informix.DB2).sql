@@ -120,16 +120,3 @@ VALUES
 	Source.Id
 )
 
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	t1.GrandChildID,
-	t1.ParentID,
-	t1.ChildID
-FROM
-	GrandChild t1
-ORDER BY
-	t1.GrandChildID,
-	t1.ChildID
-

@@ -42,14 +42,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	InheritanceParent t1
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Data_1 Integer(4) -- Int32
 SET     @Data_1 = 1
 DECLARE @Key1 Integer(4) -- Int32
@@ -61,12 +53,4 @@ SET
 	InheritanceParent.TypeDiscriminator = @Data_1
 WHERE
 	InheritanceParent.InheritanceParentId = @Key1 AND InheritanceParent.Name IS NULL
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	InheritanceParent t1
 

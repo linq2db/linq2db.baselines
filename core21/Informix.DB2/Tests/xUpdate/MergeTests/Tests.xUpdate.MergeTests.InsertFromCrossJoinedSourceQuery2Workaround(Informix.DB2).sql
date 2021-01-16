@@ -218,17 +218,3 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	t1.Id,
-	t1.Field1,
-	t2.Field2,
-	t1.Field3,
-	t2.Field4,
-	t1.Field5
-FROM
-	TestMerge1 t1,
-	TestMerge2 t2
-

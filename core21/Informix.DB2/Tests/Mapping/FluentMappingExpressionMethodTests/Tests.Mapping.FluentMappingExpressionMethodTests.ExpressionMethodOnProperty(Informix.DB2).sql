@@ -375,15 +375,5 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	Count(*)
-FROM
-	InstanceClass t
-WHERE
-	To_Char(t.Id) || To_Char(t."Value") = To_Char(t.Id) || To_Char(t."Value")
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS InstanceClass
 

@@ -24,18 +24,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT
-	entity.ID,
-	entity.BigIntValue,
-	entity.IntValue
-FROM
-	LinqDataTypes entity
-WHERE
-	entity.BigIntValue = 12
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 102
 

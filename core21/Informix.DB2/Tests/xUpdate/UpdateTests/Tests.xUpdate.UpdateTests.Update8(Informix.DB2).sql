@@ -40,19 +40,6 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1001
-
-SELECT FIRST 2
-	p.ParentID,
-	p.Value1
-FROM
-	Parent p
-WHERE
-	p.ParentID = @ParentID
-
-BeforeExecute
--- Informix.DB2 Informix
 
 DELETE FROM
 	Child

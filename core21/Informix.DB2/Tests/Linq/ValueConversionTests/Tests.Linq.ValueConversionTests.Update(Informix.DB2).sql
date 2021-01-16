@@ -500,24 +500,6 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT FIRST 1
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue,
-	e.DateTimeNullable
-FROM
-	ValueConversion e
-WHERE
-	e.Id = 1
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Value1 VarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 VarChar(22) -- String
@@ -553,24 +535,6 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT FIRST 1
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue,
-	e.DateTimeNullable
-FROM
-	ValueConversion e
-WHERE
-	e.Id = 2
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Value1 VarChar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 VarChar -- String
@@ -603,24 +567,6 @@ SET
 	ValueConversion.DateTimeNullable = @DateTimeNullable
 WHERE
 	ValueConversion.Id = @Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT FIRST 1
-	e.Id,
-	e.Value1,
-	e.Value2,
-	e.Enum,
-	e.EnumNullable,
-	e.EnumWithNull,
-	e.EnumWithNullDeclarative,
-	e.BoolValue,
-	e.DateTimeNullable
-FROM
-	ValueConversion e
-WHERE
-	e.Id = 3
 
 BeforeExecute
 -- Informix.DB2 Informix

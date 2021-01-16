@@ -101,44 +101,6 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 2
-	x.InId,
-	CASE
-		WHEN j.InId IS NULL THEN x.InMinQuantity
-		ELSE j.InMinQuantity
-	END,
-	CASE
-		WHEN j.InId IS NULL THEN x.InMaxQuantity
-		ELSE j.InMaxQuantity
-	END
-FROM
-	StLink x
-		LEFT JOIN EdtLink j ON x.InId = j.InId
-WHERE
-	x.InId = 1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT FIRST 2
-	x.InId,
-	CASE
-		WHEN j.InId IS NULL THEN x.InMinQuantity
-		ELSE j.InMinQuantity
-	END,
-	CASE
-		WHEN j.InId IS NULL THEN x.InMaxQuantity
-		ELSE j.InMaxQuantity
-	END
-FROM
-	StLink x
-		LEFT JOIN EdtLink j ON x.InId = j.InId
-WHERE
-	x.InId = 2
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS EdtLink
 
 BeforeExecute

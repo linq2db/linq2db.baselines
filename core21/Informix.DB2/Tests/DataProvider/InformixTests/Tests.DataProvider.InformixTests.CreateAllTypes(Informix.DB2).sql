@@ -36,33 +36,5 @@ CREATE TABLE AllTypeCreateTest
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.ID,
-	t1.bigintDataType,
-	t1.int8DataType,
-	t1.intDataType,
-	t1.smallintDataType,
-	t1.decimalDataType,
-	t1.moneyDataType,
-	t1.realDataType,
-	t1.floatDataType,
-	t1.boolDataType,
-	t1.charDataType,
-	t1.char20DataType,
-	t1.varcharDataType,
-	t1.ncharDataType,
-	t1.nvarcharDataType,
-	t1.lvarcharDataType,
-	t1.textDataType,
-	t1.dateDataType,
-	t1.datetimeDataType,
-	t1.intervalDataType,
-	t1.byteDataType
-FROM
-	AllTypeCreateTest t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE AllTypeCreateTest
 

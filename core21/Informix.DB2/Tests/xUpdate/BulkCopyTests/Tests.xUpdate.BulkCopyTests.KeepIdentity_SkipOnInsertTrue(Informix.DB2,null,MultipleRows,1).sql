@@ -70,21 +70,6 @@ BeforeExecute
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 3
 
-SELECT
-	t1.ID,
-	t1.intDataType
-FROM
-	AllTypes t1
-WHERE
-	t1.ID > @lastId
-ORDER BY
-	t1.ID
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @lastId Integer(4) -- Int32
-SET     @lastId = 3
-
 DELETE FROM
 	AllTypes
 WHERE

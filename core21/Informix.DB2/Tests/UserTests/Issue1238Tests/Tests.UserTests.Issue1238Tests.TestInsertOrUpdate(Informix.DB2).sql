@@ -33,26 +33,10 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	Count(*)
-FROM
-	InheritanceParent t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
 UPDATE
 	InheritanceParent
 SET
 	InheritanceParent.TypeDiscriminator = 1
 WHERE
 	InheritanceParent.InheritanceParentId = 143 AND InheritanceParent.Name IS NULL
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	InheritanceParent t1
 

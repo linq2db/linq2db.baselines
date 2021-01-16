@@ -15,18 +15,5 @@ CREATE TABLE CustomerBase
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	cb.Id,
-	cb.Name,
-	cb.ContactEmail,
-	Nvl(cb.Enabled, 'f')
-FROM
-	CustomerBase cb
-WHERE
-	cb.ClientType = 'Client'
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE CustomerBase
 

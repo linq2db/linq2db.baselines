@@ -48,25 +48,6 @@ BeforeExecute
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
 
-SELECT FIRST 2
-	t.ID,
-	t.MoneyValue,
-	t.DateTimeValue,
-	t.BoolValue,
-	t.GuidValue,
-	t.BinaryValue,
-	t.SmallIntValue,
-	t.StringValue
-FROM
-	LinqDataTypes t
-WHERE
-	t.ID = @ID
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 1001
-
 DELETE FROM
 	LinqDataTypes
 WHERE

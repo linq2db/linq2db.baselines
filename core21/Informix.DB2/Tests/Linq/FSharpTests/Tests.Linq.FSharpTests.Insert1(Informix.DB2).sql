@@ -27,16 +27,6 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	Count(*)
-FROM
-	Child c_1
-WHERE
-	c_1.ChildID = 1001
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 WHERE

@@ -80,14 +80,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	xxPatient t1
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer(4) -- Int32
@@ -113,14 +105,6 @@ SET
 	xxPatient.Diagnosis = @Diagnosis
 WHERE
 	xxPatient.PersonID = @PersonID
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	xxPatient t1
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -34,18 +34,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT FIRST 1
-	t.Id,
-	t.Name,
-	t.Age
-FROM
-	PR_1598_Insert_Table t
-WHERE
-	t.Id = 1
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Name VarChar(4) -- String
@@ -65,18 +53,6 @@ VALUES
 	@Name,
 	@Age
 )
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT FIRST 1
-	t.Id,
-	t.Name,
-	t.Age
-FROM
-	PR_1598_Insert_Table t
-WHERE
-	t.Id = 2
 
 BeforeExecute
 -- Informix.DB2 Informix

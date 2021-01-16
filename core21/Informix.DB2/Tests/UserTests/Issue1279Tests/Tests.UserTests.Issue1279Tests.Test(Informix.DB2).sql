@@ -26,14 +26,5 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
-	t1.Id,
-	t1.CharFld
-FROM
-	Issue1279Table t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE Issue1279Table
 

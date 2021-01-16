@@ -11,18 +11,5 @@ CREATE TABLE Issue2434Table
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.Id,
-	t1.FirstName,
-	t1.LastName,
-	t1.FirstName || ' ' || t1.LastName
-FROM
-	Issue2434Table t1
-ORDER BY
-	t1.FirstName || ' ' || t1.LastName
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE Issue2434Table
 

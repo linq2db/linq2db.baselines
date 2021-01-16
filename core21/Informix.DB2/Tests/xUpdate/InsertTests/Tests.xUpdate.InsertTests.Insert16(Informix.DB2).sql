@@ -29,16 +29,6 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	Count(*)
-FROM
-	Person t1
-WHERE
-	t1.FirstName LIKE 'Insert16%' ESCAPE '~'
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE

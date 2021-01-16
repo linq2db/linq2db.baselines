@@ -116,19 +116,6 @@ BeforeExecute
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
-SELECT FIRST 2
-	p.PersonID,
-	p.Diagnosis
-FROM
-	Patient p
-WHERE
-	p.PersonID = @id
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
-
 DELETE FROM
 	Patient
 WHERE
