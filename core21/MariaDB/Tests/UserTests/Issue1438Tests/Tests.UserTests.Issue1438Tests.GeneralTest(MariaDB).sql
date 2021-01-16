@@ -30,22 +30,6 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @id Int32
-SET     @id = 1
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`_`.`Id`,
-	`_`.`Has`
-FROM
-	`Issue1438` `_`
-WHERE
-	`_`.`Id` = @id
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 
 DROP TABLE `Issue1438`
 

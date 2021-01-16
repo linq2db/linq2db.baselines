@@ -39,22 +39,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`,
-	`t`.`Gender`
-FROM
-	`PR_1598_Update_Enum_Table` `t`
-WHERE
-	`t`.`Id` = 1
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Int32
@@ -75,22 +59,6 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`,
-	`t`.`Gender`
-FROM
-	`PR_1598_Update_Enum_Table` `t`
-WHERE
-	`t`.`Id` = 1
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Int32
@@ -105,22 +73,6 @@ SET
 	`t1`.`Age` = @Age
 WHERE
 	`t1`.`Id` = @Id
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`,
-	`t`.`Gender`
-FROM
-	`PR_1598_Update_Enum_Table` `t`
-WHERE
-	`t`.`Id` = 1
-LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

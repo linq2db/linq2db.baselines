@@ -48,27 +48,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`e`.`Id`,
-	`e`.`Value1`,
-	`e`.`Value2`,
-	`e`.`Enum`,
-	`e`.`EnumNullable`,
-	`e`.`EnumWithNull`,
-	`e`.`EnumWithNullDeclarative`,
-	`e`.`BoolValue`,
-	`e`.`DateTimeNullable`
-FROM
-	`ValueConversion` `e`
-WHERE
-	`e`.`Id` = 1
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Value1 VarChar -- String
@@ -96,27 +75,6 @@ VALUES
 	@Enum,
 	@BoolValue
 )
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`e`.`Id`,
-	`e`.`Value1`,
-	`e`.`Value2`,
-	`e`.`Enum`,
-	`e`.`EnumNullable`,
-	`e`.`EnumWithNull`,
-	`e`.`EnumWithNullDeclarative`,
-	`e`.`BoolValue`,
-	`e`.`DateTimeNullable`
-FROM
-	`ValueConversion` `e`
-WHERE
-	`e`.`Id` = 2
-LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -163,35 +121,6 @@ VALUES
 	@BoolValue,
 	@DateTimeNullable
 )
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`e`.`Id`,
-	`e`.`Value1`,
-	`e`.`Value2`,
-	`e`.`Enum`,
-	`e`.`EnumNullable`,
-	`e`.`EnumWithNull`,
-	`e`.`EnumWithNullDeclarative`,
-	`e`.`BoolValue`,
-	`e`.`DateTimeNullable`
-FROM
-	`ValueConversion` `e`
-WHERE
-	`e`.`Id` = 3
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	Count(*)
-FROM
-	`ValueConversion` `t1`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
-
-SELECT
-	Max(`t`.`PersonID`)
-FROM
-	`Person` `t`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender String(1) -- StringFixedLength

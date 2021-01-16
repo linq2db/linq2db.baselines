@@ -34,17 +34,5 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	Max(`t1`.`Value1`),
-	GROUP_CONCAT(`t1`.`Value1` ORDER BY `t1`.`Value1` DESC SEPARATOR ' -> ')
-FROM
-	`SampleClass` `t1`
-GROUP BY
-	`t1`.`Id`,
-	`t1`.`Value1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE IF EXISTS `SampleClass`
 

@@ -26,14 +26,6 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	Count(*)
-FROM
-	`InheritanceParent` `t1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 INSERT INTO `InheritanceParent`
 (
 	`InheritanceParentId`,
@@ -48,12 +40,4 @@ VALUES
 )
 ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	Count(*)
-FROM
-	`InheritanceParent` `t1`
 

@@ -39,21 +39,6 @@ BeforeExecute
 DECLARE @lastId Int32
 SET     @lastId = 3
 
-SELECT
-	`_`.`ID`,
-	`_`.`intDataType`
-FROM
-	`AllTypes` `_`
-WHERE
-	`_`.`ID` > @lastId
-ORDER BY
-	`_`.`ID`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @lastId Int32
-SET     @lastId = 3
-
 DELETE `t1`
 FROM
 	`AllTypes` `t1`

@@ -31,25 +31,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @FirstName VarChar(18) -- String
-SET     @FirstName = 'UpdateColumnFilter'
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`x`.`FirstName`,
-	`x`.`PersonID`,
-	`x`.`LastName`,
-	`x`.`MiddleName`,
-	`x`.`Gender`
-FROM
-	`Person` `x`
-WHERE
-	`x`.`FirstName` = @FirstName
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @ID Int32
@@ -61,25 +42,6 @@ SET
 	`t1`.`FirstName` = @FirstName
 WHERE
 	`t1`.`PersonID` = @ID
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @ID Int32
-SET     @ID = 5
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`x`.`FirstName`,
-	`x`.`PersonID`,
-	`x`.`LastName`,
-	`x`.`MiddleName`,
-	`x`.`Gender`
-FROM
-	`Person` `x`
-WHERE
-	`x`.`PersonID` = @ID
-LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -103,25 +65,6 @@ SET
 	`t1`.`Gender` = @Gender
 WHERE
 	`t1`.`PersonID` = @ID
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @ID Int32
-SET     @ID = 5
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
-	`_`.`Gender`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`PersonID` = @ID
-LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

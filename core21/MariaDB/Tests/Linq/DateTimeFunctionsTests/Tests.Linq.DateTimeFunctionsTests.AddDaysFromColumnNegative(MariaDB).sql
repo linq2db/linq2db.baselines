@@ -42,18 +42,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @p_1 DateTime
-SET     @p_1 = '2018-01-02'
-
-SELECT
-	Count(*)
-FROM
-	`LinqDataTypes` `t`
-WHERE
-	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) < @p_1
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM

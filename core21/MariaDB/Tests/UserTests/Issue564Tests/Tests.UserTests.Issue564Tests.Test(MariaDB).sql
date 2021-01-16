@@ -50,13 +50,5 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	Count(*)
-FROM
-	`Parent564` `t1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE `Parent564`
 

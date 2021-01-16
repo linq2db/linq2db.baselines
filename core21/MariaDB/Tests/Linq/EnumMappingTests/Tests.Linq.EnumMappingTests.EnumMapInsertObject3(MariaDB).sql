@@ -29,16 +29,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-
-SELECT
-	Count(*)
-FROM
-	`LinqDataTypes` `r`
-WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 102
 

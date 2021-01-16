@@ -41,22 +41,6 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @ParentID Int32
-SET     @ParentID = 1001
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`p`.`ParentID`,
-	`p`.`Value1`
-FROM
-	`Parent` `p`
-WHERE
-	`p`.`ParentID` = @ParentID
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM

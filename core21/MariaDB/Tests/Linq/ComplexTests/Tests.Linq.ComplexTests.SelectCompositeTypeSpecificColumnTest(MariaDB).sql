@@ -12,21 +12,5 @@ CREATE TABLE `User`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`u`.`city`
-FROM
-	`User` `u`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`u`.`street`
-FROM
-	`User` `u`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE `User`
 

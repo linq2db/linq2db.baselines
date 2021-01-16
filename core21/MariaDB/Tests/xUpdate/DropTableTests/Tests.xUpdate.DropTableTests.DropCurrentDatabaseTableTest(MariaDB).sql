@@ -26,21 +26,5 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`t1`.`ID`
-FROM
-	`DropTableTest` `t1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE `DropTableTest`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`DropTableTest` `t1`
 

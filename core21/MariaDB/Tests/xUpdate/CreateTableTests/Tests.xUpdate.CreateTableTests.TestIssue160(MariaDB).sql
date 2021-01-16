@@ -30,14 +30,5 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`t1`.`cc`,
-	`t1`.`bb`
-FROM
-	`aa` `t1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE `aa`
 

@@ -4,14 +4,6 @@
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`p`.`ParentID`
-FROM
-	`Parent` `p`
-
-BeforeExecute
 -- MariaDB MySql.Official MySql (asynchronously)
 
 CREATE TEMPORARY TABLE `TempTable`

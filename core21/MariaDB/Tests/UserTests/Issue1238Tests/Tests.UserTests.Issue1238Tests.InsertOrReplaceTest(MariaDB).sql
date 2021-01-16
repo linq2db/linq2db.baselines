@@ -31,14 +31,6 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-
-SELECT
-	Count(*)
-FROM
-	`InheritanceParent` `t1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -60,12 +52,4 @@ VALUES
 )
 ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data_1
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	Count(*)
-FROM
-	`InheritanceParent` `t1`
 

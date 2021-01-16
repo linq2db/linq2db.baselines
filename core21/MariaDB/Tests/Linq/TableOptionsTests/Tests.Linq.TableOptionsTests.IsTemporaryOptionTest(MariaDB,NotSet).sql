@@ -44,24 +44,6 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`t1`.`ID`,
-	`t1`.`Value`
-FROM
-	`temp_table1` `t1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`t1`.`ID`,
-	`t1`.`Value`
-FROM
-	`temp_table2` `t1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 INSERT INTO `temp_table1`
 (
 	`ID`,

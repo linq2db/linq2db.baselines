@@ -50,26 +50,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`_`.`ID`,
-	`_`.`MoneyValue`,
-	`_`.`DateTimeValue`,
-	`_`.`BoolValue`,
-	`_`.`GuidValue`,
-	`_`.`BinaryValue`,
-	`_`.`SmallIntValue`,
-	`_`.`StringValue`
-FROM
-	`LinqDataTypes` `_`
-WHERE
-	`_`.`ID` = 1000
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 
 DELETE `_`
 FROM

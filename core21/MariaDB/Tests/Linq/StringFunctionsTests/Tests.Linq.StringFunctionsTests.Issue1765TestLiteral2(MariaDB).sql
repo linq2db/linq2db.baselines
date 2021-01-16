@@ -34,13 +34,5 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	GROUP_CONCAT(`t1`.`Value4` SEPARATOR ' -> ')
-FROM
-	`SampleClass` `t1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE IF EXISTS `SampleClass`
 

@@ -24,21 +24,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @ID Int32
-SET     @ID = 5
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`_`.`ID`
-FROM
-	`Issue1316Tests` `_`
-WHERE
-	`_`.`ID` = @ID
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 
 DROP TABLE `Issue1316Tests`
 

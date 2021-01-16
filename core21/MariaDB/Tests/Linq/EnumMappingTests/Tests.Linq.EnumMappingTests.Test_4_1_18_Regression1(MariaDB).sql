@@ -27,17 +27,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-
-SELECT
-	`r`.`BigIntValue`,
-	`r`.`IntValue`
-FROM
-	`LinqDataTypes` `r`
-WHERE
-	`r`.`ID` = 101
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 102
 

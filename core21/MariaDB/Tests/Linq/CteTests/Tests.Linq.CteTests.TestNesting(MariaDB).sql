@@ -28,31 +28,6 @@ CREATE TABLE `NestingC`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-WITH `CTE_1` (`Property2`)
-AS
-(
-	SELECT
-		`a`.`Property2`
-	FROM
-		`NestingC` `a`
-)
-SELECT
-	`c2`.`Property1`,
-	`t_1`.`Property2`,
-	`t_1`.`Property3`
-FROM
-	(
-		SELECT
-			`c1`.`Property2` as `Property1`
-		FROM
-			`CTE_1` `c1`,
-			`NestingC` `t`
-	) `c2`,
-	`NestingC` `t_1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE `NestingC`
 
 BeforeExecute

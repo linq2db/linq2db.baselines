@@ -24,16 +24,6 @@ CREATE TABLE `Books`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`author`.`Id`,
-	`author`.`Name`
-FROM
-	`Authors` `author`
-		INNER JOIN `Books` `book` ON `book`.`AuthorId` = `author`.`Id`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE `Books`
 
 BeforeExecute

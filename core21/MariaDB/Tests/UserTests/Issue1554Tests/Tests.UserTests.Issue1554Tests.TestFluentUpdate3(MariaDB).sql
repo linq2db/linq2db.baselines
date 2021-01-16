@@ -49,19 +49,6 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`ClaimedKeyType`,
-	`t1`.`ClaimedKeyTypeN`
-FROM
-	`Issue1554FluentTable` `t1`
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 
 DROP TABLE `Issue1554FluentTable`
 

@@ -21,13 +21,5 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`row_1`.`Value`
-FROM
-	`ValueItem` `row_1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE `ValueItem`
 

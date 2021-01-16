@@ -59,20 +59,6 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`f`.`Id`,
-	`ft`.`Id`,
-	`ft`.`FactId`,
-	`ft`.`Name`
-FROM
-	`Tag` `ft`
-		RIGHT JOIN `Fact` `f` ON `ft`.`FactId` = `f`.`Id`
-WHERE
-	`f`.`Id` > 3
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
 DROP TABLE IF EXISTS `Tag`
 
 BeforeExecute
