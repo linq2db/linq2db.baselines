@@ -102,25 +102,6 @@ RETURNING
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	Count(*)
-FROM
-	"xxPerson" t1
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	Count(*)
-FROM
-	"xxPerson" p
-WHERE
-	p."FirstName" = 'Steven' AND p."LastName" = 'King' AND
-	p."Gender" = 'M'
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "xxPerson"
 
 BeforeExecute

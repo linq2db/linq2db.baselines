@@ -29,36 +29,12 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
-SELECT
-	Count(*)
-FROM
-	"Parent" p
-WHERE
-	p."ParentID" = :id AND p."Value1" = 1
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
 UPDATE
 	"Parent"
 SET
 	"Value1" = 2
 WHERE
 	"Parent"."ParentID" = :id
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	"Parent" p
-WHERE
-	p."ParentID" = :id AND p."Value1" = 2
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

@@ -33,44 +33,6 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."PersonID",
-	t."FirstName",
-	t."LastName",
-	t."MiddleName",
-	t."Gender"
-FROM
-	"Person" t
-WHERE
-	t."PersonID" = :id
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."PersonID",
-	t."FirstName",
-	t."LastName",
-	t."MiddleName",
-	t."Gender"
-FROM
-	"Person" t
-WHERE
-	t."PersonID" = :id
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @FirstName Text(3) -- String

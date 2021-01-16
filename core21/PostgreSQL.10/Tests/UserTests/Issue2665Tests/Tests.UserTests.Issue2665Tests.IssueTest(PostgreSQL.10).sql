@@ -34,29 +34,6 @@ CREATE TABLE "ProductAttributeMapping"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	pa."Id"
-FROM
-	"ProductAttributeMapping" pam
-		INNER JOIN "ProductAttributeTable" pa ON pam."ProductAttributeId" = pa."Id"
-WHERE
-	EXISTS(
-		SELECT
-			p."Id"
-		FROM
-			"ProductTable" p
-				INNER JOIN "ProductAttributeMapping" pam_1 ON p."Id" = pam_1."ProductId"
-		WHERE
-			p."Id" >= pam."ProductId"
-		GROUP BY
-			p."Id"
-		HAVING
-			Count(*) = 1
-	)
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "ProductAttributeMapping"
 
 BeforeExecute

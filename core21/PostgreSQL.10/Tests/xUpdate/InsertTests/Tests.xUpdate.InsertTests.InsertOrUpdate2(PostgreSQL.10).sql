@@ -43,19 +43,6 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-SELECT
-	p."PersonID",
-	p."Diagnosis"
-FROM
-	"Patient" p
-WHERE
-	p."PersonID" = :id
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
 INSERT INTO "Patient" AS t1
 (
 	"PersonID",
@@ -67,19 +54,6 @@ VALUES
 	'positive'
 )
 ON CONFLICT ("PersonID") DO NOTHING
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-SELECT
-	p."PersonID",
-	p."Diagnosis"
-FROM
-	"Patient" p
-WHERE
-	p."PersonID" = :id
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

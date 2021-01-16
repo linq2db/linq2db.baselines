@@ -50,13 +50,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	Count(*)
-FROM
-	"Parent564" t1
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "Parent564"
 

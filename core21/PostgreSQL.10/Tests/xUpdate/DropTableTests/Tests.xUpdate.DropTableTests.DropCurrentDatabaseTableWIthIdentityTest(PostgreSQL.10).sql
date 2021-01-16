@@ -29,23 +29,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t."ID",
-	t."ID1"
-FROM
-	"DropTableTestID" t
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "DropTableTestID"
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."ID",
-	t1."ID1"
-FROM
-	"DropTableTestID" t1
 

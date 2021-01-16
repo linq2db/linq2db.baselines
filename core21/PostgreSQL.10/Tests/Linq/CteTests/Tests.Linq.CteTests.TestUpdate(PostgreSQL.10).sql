@@ -57,26 +57,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	c_1."ChildID",
-	c_1."ParentID"
-FROM
-	"CteChild" c_1
-WHERE
-	c_1."ParentID" % 2 = 0
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	c_1."ChildID"
-FROM
-	"CteChild" c_1
-WHERE
-	c_1."ParentID" % 2 = 0
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "CteChild"
 

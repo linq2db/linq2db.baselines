@@ -82,19 +82,6 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	p."Id",
-	p."TargetName",
-	"a_ActualStage"."Id"
-FROM
-	"Task" p
-		LEFT JOIN "TaskStage" "a_ActualStage" ON p."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True
-WHERE
-	p."TargetName" = 'bda.Requests'
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "TaskStage"
 
 BeforeExecute

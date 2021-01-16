@@ -71,16 +71,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 3
-
-SELECT
-	t."TransactionDate" + :p_1 * Interval '1 Day'
-FROM
-	"Transactions" t
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "Transactions"
 

@@ -10,13 +10,3 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = 1
 
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t."BinaryValue"
-FROM
-	"LinqDataTypes" t
-WHERE
-	t."ID" = 1
-

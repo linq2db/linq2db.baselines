@@ -34,16 +34,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	STRING_AGG(t1."Value1", ' -> ' ORDER BY t1."Value3", t1."Value1" DESC)
-FROM
-	"SampleClass" t1
-GROUP BY
-	t1."Id",
-	t1."Value1"
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "SampleClass"
 

@@ -40,20 +40,6 @@ ON CONFLICT (id) DO UPDATE SET
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	t1.id,
-	t1.name,
-	t1.created_by,
-	t1.updated_by
-FROM
-	test_insert_or_replace t1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -78,20 +64,6 @@ VALUES
 ON CONFLICT (id) DO UPDATE SET
 	name = :Name,
 	updated_by = :UpdatedBy
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	t1.id,
-	t1.name,
-	t1.created_by,
-	t1.updated_by
-FROM
-	test_insert_or_replace t1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
