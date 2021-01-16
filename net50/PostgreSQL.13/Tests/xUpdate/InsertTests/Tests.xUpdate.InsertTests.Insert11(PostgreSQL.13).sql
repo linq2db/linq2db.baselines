@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	Max(t."PersonID")
+FROM
+	"Person" t
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(2) -- String
@@ -23,6 +31,25 @@ VALUES
 	:Name_MiddleName,
 	:Name_LastName
 )
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @id Integer -- Int32
+SET     @id = 4
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	p2."PersonID",
+	p2."Gender",
+	p2."FirstName",
+	p2."MiddleName",
+	p2."LastName"
+FROM
+	"Person" p2
+WHERE
+	p2."PersonID" > :id
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

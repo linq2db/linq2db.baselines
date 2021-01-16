@@ -29,5 +29,13 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	d."Not Identifier"
+FROM
+	"DynamicTable" d
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE IF EXISTS "DynamicTable"
 

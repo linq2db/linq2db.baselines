@@ -83,6 +83,20 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	v."Value1"
+FROM
+	"UpdatedEntities" v
+		LEFT JOIN "UpdateRelation" "a_Relation" ON v."RelationId" = "a_Relation".id
+WHERE
+	"a_Relation"."RelatedValue1" = 11
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "UpdateRelation"
 

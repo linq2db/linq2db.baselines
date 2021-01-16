@@ -30,6 +30,21 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."Id",
+	t."Name",
+	t."Age"
+FROM
+	"PR_1598_Insert_Table_Cache" t
+WHERE
+	t."Id" = 1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Name Text(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Integer -- Int32
@@ -41,6 +56,21 @@ SET
 	"Name" = :Name
 WHERE
 	"PR_1598_Insert_Table_Cache"."Id" = :Id
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."Id",
+	t."Name",
+	t."Age"
+FROM
+	"PR_1598_Insert_Table_Cache" t
+WHERE
+	t."Id" = 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

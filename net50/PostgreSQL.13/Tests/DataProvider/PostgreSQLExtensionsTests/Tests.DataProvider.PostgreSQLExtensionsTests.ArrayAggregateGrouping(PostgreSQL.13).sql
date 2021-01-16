@@ -153,5 +153,53 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t1."Key_1",
+	ARRAY_AGG(ALL t1.v ORDER BY t1."Id"),
+	ARRAY_AGG(t1.v ORDER BY t1."Id" DESC, t1.v),
+	ARRAY_AGG(t1.v)
+FROM
+	(
+		SELECT
+			"selectParam"."Id" / 3 as "Key_1",
+			"selectParam"."Id",
+			v.* as v
+		FROM
+			"SampleClass" "selectParam"
+				INNER JOIN LATERAL UNNEST("selectParam"."StrArray") v ON 1=1
+	) t1
+GROUP BY
+	t1."Key_1"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	ARRAY_AGG(v.*)
+FROM
+	"SampleClass" t
+		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	ARRAY_AGG(DISTINCT v.*)
+FROM
+	"SampleClass" t
+		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	ARRAY_AGG(v.* ORDER BY v.*)
+FROM
+	"SampleClass" t
+		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE IF EXISTS "SampleClass"
 

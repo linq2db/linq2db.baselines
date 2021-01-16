@@ -73,6 +73,23 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	'Id',
+	"selectParam"."Id",
+	Sum(CASE
+		WHEN "a_ActualStage"."Id" IS NULL
+			THEN NULL
+		ELSE "a_ActualStage"."Id"
+	END)
+FROM
+	"Task" "selectParam"
+		LEFT JOIN "TaskStage" "a_ActualStage" ON "selectParam"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True
+GROUP BY
+	"selectParam"."Id"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE "TaskStage"
 
 BeforeExecute

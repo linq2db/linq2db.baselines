@@ -46,6 +46,24 @@ FROM
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t1."ID",
+	t1."Value"
+FROM
+	temp_table1 t1
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."ID",
+	t1."Value"
+FROM
+	temp_table2 t1
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
 INSERT INTO temp_table1
 (
 	"ID",

@@ -26,5 +26,19 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t."Id",
+	t."Value",
+	s.c1
+FROM
+	"SampleClass" t
+		INNER JOIN (
+			SELECT
+				1 as c1
+		) s ON s.c1 = t."Id"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE IF EXISTS "SampleClass"
 

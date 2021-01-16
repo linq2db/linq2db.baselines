@@ -71,6 +71,18 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @TransactionDate TimestampTZ -- DateTimeOffset
+SET     @TransactionDate = '2020-02-29T21:14:55.1231234+00:40'
+
+SELECT
+	t."TransactionId"
+FROM
+	"Transactions" t
+WHERE
+	t."TransactionDate" > :TransactionDate
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "Transactions"
 

@@ -29,6 +29,34 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t1."Id",
+	t1."BlobValue"
+FROM
+	"BlobClass" t1
+WHERE
+	t1."Id" = 1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t1."Id",
+	t1."BlobValue"
+FROM
+	"BlobClass" t1
+WHERE
+	t1."Id" = 1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE "BlobClass"
 
