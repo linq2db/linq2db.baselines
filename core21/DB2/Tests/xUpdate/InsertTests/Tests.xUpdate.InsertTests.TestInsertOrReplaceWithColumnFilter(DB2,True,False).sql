@@ -51,22 +51,6 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-
-SELECT
-	"x".ID,
-	"x"."FirstName",
-	"x"."LastName",
-	"x"."MiddleName"
-FROM
-	"TestInsertOrReplaceTable" "x"
-WHERE
-	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -102,22 +86,6 @@ WHEN NOT MATCHED THEN
 		@LastName,
 		@MiddleName
 	)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-
-SELECT
-	"x".ID,
-	"x"."FirstName",
-	"x"."LastName",
-	"x"."MiddleName"
-FROM
-	"TestInsertOrReplaceTable" "x"
-WHERE
-	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

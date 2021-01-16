@@ -25,16 +25,6 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	Count(*)
-FROM
-	"Parent" "p"
-WHERE
-	"p"."Value1" = 11
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "t1"
 WHERE

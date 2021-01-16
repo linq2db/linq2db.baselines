@@ -37,21 +37,6 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
-FROM
-	"Person" "_"
-WHERE
-	"_"."FirstName" = 'test_inherited_insert'
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -72,21 +57,6 @@ SET
 	"Person"."Gender" = @Gender
 WHERE
 	"Person"."PersonID" = @ID
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
-FROM
-	"Person" "_"
-WHERE
-	"_"."FirstName" = 'test_inherited_insert'
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

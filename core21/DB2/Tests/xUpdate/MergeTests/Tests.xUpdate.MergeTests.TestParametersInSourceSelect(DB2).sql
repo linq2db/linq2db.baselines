@@ -242,18 +242,3 @@ UPDATE
 SET
 	"Target"."Field1" = "Source"."source_field0" + 111
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"_"."Id",
-	"_"."Field1",
-	"_"."Field2",
-	"_"."Field3",
-	"_"."Field4",
-	"_"."Field5"
-FROM
-	"TestMerge1" "_"
-WHERE
-	"_"."Id" = 3
-

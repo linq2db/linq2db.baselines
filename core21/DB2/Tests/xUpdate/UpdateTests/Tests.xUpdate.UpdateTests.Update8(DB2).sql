@@ -40,20 +40,6 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1001
-
-SELECT
-	"p"."ParentID",
-	"p"."Value1"
-FROM
-	"Parent" "p"
-WHERE
-	"p"."ParentID" = @ParentID
-FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"Child" "t1"

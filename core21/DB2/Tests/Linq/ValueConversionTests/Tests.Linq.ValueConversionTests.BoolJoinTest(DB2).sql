@@ -58,22 +58,6 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue VarChar(1) -- String
-SET     @BoolValue = 'Y'
-
-SELECT
-	"t1"."Enum"
-FROM
-	"ValueConversion" "t1"
-		INNER JOIN (
-			SELECT
-				"t2"."BoolValue"
-			FROM
-				"ValueConversion" "t2"
-		) "t2_1" ON "t2_1"."BoolValue" = @BoolValue AND "t1"."BoolValue" = @BoolValue
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;

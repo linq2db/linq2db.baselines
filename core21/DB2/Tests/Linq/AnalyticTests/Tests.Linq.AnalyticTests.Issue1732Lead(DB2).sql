@@ -38,19 +38,6 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @group_1 Integer(4) -- Int32
-SET     @group_1 = 7
-
-SELECT
-	"p"."Id",
-	LEAD("p"."Id", 1, -1) OVER(ORDER BY "p"."Order")
-FROM
-	"Position" "p"
-WHERE
-	"p"."Group" = @group_1
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;

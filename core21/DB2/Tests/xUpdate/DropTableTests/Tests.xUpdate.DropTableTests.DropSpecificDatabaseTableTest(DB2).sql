@@ -9,24 +9,6 @@ END
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	current schema
-FROM
-	"LinqDataTypes" "_"
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	current server
-FROM
-	"LinqDataTypes" "_"
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 CREATE TABLE "DropTableTest"
 (
 	ID Int NOT NULL
@@ -47,21 +29,5 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1".ID
-FROM
-	TESTDB.DB2INST1."DropTableTest" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 DROP TABLE TESTDB.DB2INST1."DropTableTest"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t1".ID
-FROM
-	TESTDB.DB2INST1."DropTableTest" "t1"
 

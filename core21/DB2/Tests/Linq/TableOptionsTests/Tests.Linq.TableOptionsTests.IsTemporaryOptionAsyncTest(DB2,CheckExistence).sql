@@ -52,24 +52,6 @@ FROM
 	SESSION."temp_table1" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t1".ID,
-	"t1"."Value"
-FROM
-	SESSION."temp_table1" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t1".ID,
-	"t1"."Value"
-FROM
-	SESSION."temp_table2" "t1"
-
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO SESSION."temp_table1"

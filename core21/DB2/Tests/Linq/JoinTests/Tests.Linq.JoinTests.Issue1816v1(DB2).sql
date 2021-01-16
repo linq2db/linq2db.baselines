@@ -73,17 +73,6 @@ END
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"v"."inId",
-	"r"."inIdState"
-FROM
-	"stVersions" "v"
-		INNER JOIN "stMain" "a_Main" ON "v"."inIdMain" = "a_Main"."inId"
-		LEFT JOIN "rlStatesTypesAndUserGroups" "r" ON "r"."inIdType" = "a_Main"."inIdType"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "stMain"';

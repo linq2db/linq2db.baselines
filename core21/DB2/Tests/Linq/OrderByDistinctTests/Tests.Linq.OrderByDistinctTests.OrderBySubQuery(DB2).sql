@@ -57,31 +57,6 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."DuplicateData",
-	(
-		SELECT
-			Count(*)
-		FROM
-			"OrderByDistinctData" "s"
-		WHERE
-			("s"."DuplicateData" = "t"."DuplicateData" OR "s"."DuplicateData" IS NULL AND "t"."DuplicateData" IS NULL)
-	)
-FROM
-	(
-		SELECT
-			"t1"."Id",
-			"t1"."DuplicateData"
-		FROM
-			"OrderByDistinctData" "t1"
-		FETCH FIRST 2 ROWS ONLY
-	) "t"
-ORDER BY
-	"t"."Id" DESC
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "OrderByDistinctData"';

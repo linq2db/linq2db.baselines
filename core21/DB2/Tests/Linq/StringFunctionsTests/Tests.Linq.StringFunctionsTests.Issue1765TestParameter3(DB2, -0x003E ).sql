@@ -41,19 +41,6 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @separator VarChar(4) -- String
-SET     @separator = ' -> '
-
-SELECT
-	LISTAGG("t1"."Value4", @separator) WITHIN GROUP (ORDER BY "t1"."Value3" DESC, "t1"."Value4")
-FROM
-	"SampleClass" "t1"
-GROUP BY
-	"t1"."Id",
-	"t1"."Value4"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;

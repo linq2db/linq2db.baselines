@@ -7,14 +7,6 @@ BEGIN
 END
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"p"."ParentID"
-FROM
-	"Parent" "p"
-
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 BEGIN
@@ -42,15 +34,6 @@ VALUES
 (5),
 (6),
 (7)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t".ID
-FROM
-	"Parent" "p"
-		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t".ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)

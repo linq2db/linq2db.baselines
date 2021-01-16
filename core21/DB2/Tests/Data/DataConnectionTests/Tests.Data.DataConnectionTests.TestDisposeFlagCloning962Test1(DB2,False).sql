@@ -81,29 +81,6 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"lw_Category"."CategoryID",
-	"detail"."ProductID",
-	"detail"."ProductName",
-	"detail"."CategoryID",
-	"detail"."QuantityPerUnit"
-FROM
-	"Categories" "lw_Category"
-		INNER JOIN "Products" "detail" ON "lw_Category"."CategoryID" = "detail"."CategoryID"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t1"."CategoryID",
-	"t1"."CategoryName",
-	"t1"."Description"
-FROM
-	"Categories" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "Products"';

@@ -37,14 +37,6 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"d"."Not Identifier"
-FROM
-	"DynamicTable" "d"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "DynamicTable"';

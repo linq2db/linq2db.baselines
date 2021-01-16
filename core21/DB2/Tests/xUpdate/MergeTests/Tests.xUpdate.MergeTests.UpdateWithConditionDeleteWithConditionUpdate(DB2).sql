@@ -221,19 +221,6 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
-	"t1"."Field5"
-FROM
-	"TestMerge2" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "TestMerge1" "Target"
 USING (	VALUES
 		(3, NULL, 3, CAST(NULL AS Int)),
@@ -261,19 +248,4 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"Target"."Field1" = 222
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
-	"t1"."Field5"
-FROM
-	"TestMerge1" "t1"
-ORDER BY
-	"t1"."Id"
 

@@ -77,40 +77,6 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @id1 Integer(4) -- Int32
-SET     @id1 = 5
-
-SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
-FROM
-	"Person" "_"
-WHERE
-	"_"."PersonID" = @id1
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @id2 Integer(4) -- Int32
-SET     @id2 = 6
-
-SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
-FROM
-	"Person" "_"
-WHERE
-	"_"."PersonID" = @id2
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"Person" "t1"

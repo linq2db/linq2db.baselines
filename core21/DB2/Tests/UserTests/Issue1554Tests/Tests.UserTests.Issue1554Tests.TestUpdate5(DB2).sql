@@ -50,16 +50,5 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."ClaimedKeyType",
-	"t1"."ClaimedKeyTypeN"
-FROM
-	"Issue1554Table" "t1"
-FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 DROP TABLE "Issue1554Table"
 

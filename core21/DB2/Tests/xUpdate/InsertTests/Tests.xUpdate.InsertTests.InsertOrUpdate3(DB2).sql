@@ -114,20 +114,6 @@ BeforeExecute
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
-SELECT
-	"p"."PersonID",
-	"p"."Diagnosis"
-FROM
-	"Patient" "p"
-WHERE
-	"p"."PersonID" = @id
-FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
-
 DELETE FROM
 	"Patient" "t1"
 WHERE

@@ -29,18 +29,6 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t"."ParentID",
-	"t"."Value1"
-FROM
-	"Parent" "t"
-WHERE
-	"t"."ParentID" = 1010
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "t1"
 WHERE

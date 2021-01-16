@@ -7,14 +7,6 @@ BEGIN
 END
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"p"."ParentID"
-FROM
-	"Parent" "p"
-
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."TempTable"

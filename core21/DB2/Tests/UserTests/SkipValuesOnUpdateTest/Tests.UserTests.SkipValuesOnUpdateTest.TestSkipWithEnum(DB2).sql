@@ -39,20 +39,6 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age",
-	"t"."Gender"
-FROM
-	"PR_1598_Update_Enum_Table" "t"
-WHERE
-	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Integer(4) -- Int32
@@ -73,20 +59,6 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age",
-	"t"."Gender"
-FROM
-	"PR_1598_Update_Enum_Table" "t"
-WHERE
-	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Integer(4) -- Int32
@@ -101,20 +73,6 @@ SET
 	"PR_1598_Update_Enum_Table"."Age" = @Age
 WHERE
 	"PR_1598_Update_Enum_Table"."Id" = @Id
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age",
-	"t"."Gender"
-FROM
-	"PR_1598_Update_Enum_Table" "t"
-WHERE
-	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

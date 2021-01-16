@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	Max("t"."PersonID")
-FROM
-	"Person" "t"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Person"
 (
 	"FirstName",

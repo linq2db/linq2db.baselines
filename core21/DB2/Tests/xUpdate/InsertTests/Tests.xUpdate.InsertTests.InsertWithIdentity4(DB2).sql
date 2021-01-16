@@ -41,23 +41,6 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John0'
-
-SELECT
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender"
-FROM
-	"Person" "p"
-WHERE
-	"p"."FirstName" = @FirstName AND "p"."LastName" = 'Shepard'
-FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName VarChar(7) -- String
 SET     @LastName = 'Shepard'
@@ -86,23 +69,6 @@ FROM
 			@Gender
 		)
 	)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John1'
-
-SELECT
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender"
-FROM
-	"Person" "p"
-WHERE
-	"p"."FirstName" = @FirstName AND "p"."LastName" = 'Shepard'
-FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

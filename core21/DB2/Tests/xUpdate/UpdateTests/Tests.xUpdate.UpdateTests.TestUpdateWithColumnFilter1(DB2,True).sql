@@ -33,23 +33,6 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
-
-SELECT
-	"x"."FirstName",
-	"x"."PersonID",
-	"x"."LastName",
-	"x"."MiddleName",
-	"x"."Gender"
-FROM
-	"Person" "x"
-WHERE
-	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(25) -- String
-SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName VarChar(12) -- String
@@ -68,23 +51,6 @@ SET
 	"Person"."Gender" = @Gender
 WHERE
 	"Person"."PersonID" = @ID
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(25) -- String
-SET     @FirstName = 'UpdateColumnFilterUpdated'
-
-SELECT
-	"x"."FirstName",
-	"x"."PersonID",
-	"x"."LastName",
-	"x"."MiddleName",
-	"x"."Gender"
-FROM
-	"Person" "x"
-WHERE
-	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

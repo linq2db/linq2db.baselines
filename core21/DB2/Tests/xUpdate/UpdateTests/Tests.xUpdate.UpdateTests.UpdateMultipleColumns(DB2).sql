@@ -48,26 +48,6 @@ BeforeExecute
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
 
-SELECT
-	"t".ID,
-	"t"."MoneyValue",
-	"t"."DateTimeValue",
-	"t"."BoolValue",
-	"t"."GuidValue",
-	"t"."BinaryValue",
-	"t"."SmallIntValue",
-	"t"."StringValue"
-FROM
-	"LinqDataTypes" "t"
-WHERE
-	"t".ID = @ID
-FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 1001
-
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE

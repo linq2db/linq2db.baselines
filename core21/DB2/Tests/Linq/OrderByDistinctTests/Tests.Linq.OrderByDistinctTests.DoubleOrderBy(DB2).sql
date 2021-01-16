@@ -57,28 +57,6 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"c_1"."Id",
-	"c_1"."DuplicateData",
-	"c_1"."OrderData1",
-	"c_1"."OrderData2"
-FROM
-	(
-		SELECT
-			"t1"."Id"
-		FROM
-			"OrderByDistinctData" "t1"
-		ORDER BY
-			"t1"."OrderData2"
-		FETCH FIRST 3 ROWS ONLY
-	) "q2"
-		INNER JOIN "OrderByDistinctData" "c_1" ON "c_1"."Id" = "q2"."Id"
-ORDER BY
-	"c_1"."OrderData1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "OrderByDistinctData"';

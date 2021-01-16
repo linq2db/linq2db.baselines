@@ -33,44 +33,5 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_".ID,
-	"_"."Array",
-	"_"."Binary"
-FROM
-	"Issue1303" "_"
-WHERE
-	"_".ID = 1
-FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"_".ID,
-	"_"."Array",
-	"_"."Binary"
-FROM
-	"Issue1303" "_"
-WHERE
-	"_"."Array" = BX'010203'
-FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"_".ID,
-	"_"."Array",
-	"_"."Binary"
-FROM
-	"Issue1303" "_"
-WHERE
-	"_"."Binary" = BX'0405'
-FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 DROP TABLE "Issue1303"
 

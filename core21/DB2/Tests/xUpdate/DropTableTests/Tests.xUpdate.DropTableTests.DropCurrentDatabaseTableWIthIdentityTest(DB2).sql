@@ -32,23 +32,5 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t".ID,
-	"t".ID1
-FROM
-	"DropTableTestID" "t"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 DROP TABLE "DropTableTestID"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t1".ID,
-	"t1".ID1
-FROM
-	"DropTableTestID" "t1"
 

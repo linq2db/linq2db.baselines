@@ -221,21 +221,6 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
-	"t1"."Field5"
-FROM
-	"TestMerge2" "t1"
-ORDER BY
-	"t1"."Id"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "TestMerge1" "Target"
 USING (	VALUES
 		(3, NULL, 3, CAST(NULL AS Int), NULL, CAST(NULL AS Int)),
@@ -271,19 +256,4 @@ VALUES
 	"Source"."Field04",
 	"Source"."Field05"
 )
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
-	"t1"."Field5"
-FROM
-	"TestMerge1" "t1"
-ORDER BY
-	"t1"."Id"
 

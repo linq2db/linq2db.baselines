@@ -18,23 +18,6 @@ CREATE TABLE "TestEqualsTable2"
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"_"."Id"
-FROM
-	"TestEqualsTable1" "_"
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"TestEqualsTable2" "__"
-		WHERE
-			"_"."Id" = "__".FK AND "__"."Id" IS NULL
-	)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 DROP TABLE "TestEqualsTable2"
 
 BeforeExecute

@@ -128,15 +128,3 @@ VALUES
 	"Source"."RightId"
 )
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t1"."GrandChildID",
-	"t1"."ParentID",
-	"t1"."ChildID"
-FROM
-	"GrandChild" "t1"
-ORDER BY
-	"t1"."GrandChildID"
-

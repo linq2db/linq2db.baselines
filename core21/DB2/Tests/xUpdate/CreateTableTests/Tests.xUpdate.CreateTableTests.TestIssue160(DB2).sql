@@ -30,14 +30,5 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"t1"."cc",
-	"t1"."bb"
-FROM
-	"aa" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 DROP TABLE "aa"
 

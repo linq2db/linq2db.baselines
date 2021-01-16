@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-SELECT
-	Max("t"."PersonID")
-FROM
-	"Person" "t"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender Char(1) -- StringFixedLength

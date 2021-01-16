@@ -41,16 +41,6 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
-	Count(*)
-FROM
-	"Person" "_"
-WHERE
-	"_"."FirstName" LIKE 'Update14%' ESCAPE '~'
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "_"
 WHERE
