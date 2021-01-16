@@ -73,6 +73,23 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	N'Id',
+	[selectParam].[Id],
+	Sum(CASE
+		WHEN [a_ActualStage].[Id] IS NULL
+			THEN NULL
+		ELSE [a_ActualStage].[Id]
+	END)
+FROM
+	[Task] [selectParam]
+		LEFT JOIN [TaskStage] [a_ActualStage] ON [selectParam].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+GROUP BY
+	[selectParam].[Id]
+
+BeforeExecute
+-- SqlServer.2005
+
 DROP TABLE [TaskStage]
 
 BeforeExecute

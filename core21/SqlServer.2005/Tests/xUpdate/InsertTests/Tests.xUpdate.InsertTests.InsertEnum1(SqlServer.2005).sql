@@ -25,6 +25,20 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @id Int -- Int32
+SET     @id = 1001
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 2
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [_]
+WHERE
+	[_].[ParentID] = @id AND [_].[Value1] = @Value1
+
+BeforeExecute
+-- SqlServer.2005
 
 DELETE [t1]
 FROM

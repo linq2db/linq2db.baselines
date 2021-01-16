@@ -34,6 +34,18 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[SomeValue1],
+	[t1].[SomeValue2]
+FROM
+	[ValuesTable] [t1]
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @SomeValue1 Int -- Int32
 SET     @SomeValue1 = 8
 DECLARE @SomeValue2 Int -- Int32
@@ -50,6 +62,18 @@ FROM
 	[ValuesTable] [t1]
 WHERE
 	[t1].[Id] = @Id
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[SomeValue1],
+	[t1].[SomeValue2]
+FROM
+	[ValuesTable] [t1]
 
 BeforeExecute
 -- SqlServer.2005

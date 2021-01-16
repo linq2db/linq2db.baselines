@@ -25,6 +25,18 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+
+SELECT
+	[entity].[ID],
+	[entity].[BigIntValue],
+	[entity].[IntValue]
+FROM
+	[LinqDataTypes] [entity]
+WHERE
+	[entity].[BigIntValue] = 12
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 

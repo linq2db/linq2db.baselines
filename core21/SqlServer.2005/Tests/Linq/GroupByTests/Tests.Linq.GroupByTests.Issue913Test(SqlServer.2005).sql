@@ -31,6 +31,32 @@ SELECT 3,N'D'
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	[t1].[c2],
+	Count(*)
+FROM
+	(
+		SELECT
+			CASE
+				WHEN [selectParam].[TradingStatus] = N'D'
+					THEN 1
+				ELSE 0
+			END as [c1],
+			CASE
+				WHEN [selectParam].[TradingStatus] = N'D'
+					THEN 1
+				ELSE 0
+			END as [c2]
+		FROM
+			[Issue913Test] [selectParam]
+	) [t1]
+GROUP BY
+	[t1].[c1],
+	[t1].[c2]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NOT NULL)
 	DROP TABLE [Issue913Test]
 

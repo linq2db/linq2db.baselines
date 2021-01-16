@@ -12,3 +12,13 @@ FROM
 WHERE
 	[t].[ID] = 1
 
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[t].[BinaryValue]
+FROM
+	[LinqDataTypes] [t]
+WHERE
+	[t].[ID] = 1
+

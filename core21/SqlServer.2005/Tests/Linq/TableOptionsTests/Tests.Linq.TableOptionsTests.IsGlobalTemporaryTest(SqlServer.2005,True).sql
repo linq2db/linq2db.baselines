@@ -10,5 +10,14 @@ CREATE TABLE [##IsGlobalTemporaryTable]
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[##IsGlobalTemporaryTable] [t1]
+
+BeforeExecute
+-- SqlServer.2005
+
 DROP TABLE [##IsGlobalTemporaryTable]
 

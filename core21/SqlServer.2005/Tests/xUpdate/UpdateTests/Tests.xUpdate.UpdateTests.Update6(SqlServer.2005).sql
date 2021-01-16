@@ -30,6 +30,18 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 1
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @id Int -- Int32
+SET     @id = 1001
+
 UPDATE
 	[p]
 SET
@@ -38,6 +50,18 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @id
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @id Int -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 2
 
 BeforeExecute
 -- SqlServer.2005

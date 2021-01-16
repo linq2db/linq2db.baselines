@@ -1,5 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	DB_NAME()
+FROM
+	[LinqDataTypes] [_]
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @LastName NVarChar(4000) -- String

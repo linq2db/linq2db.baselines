@@ -47,6 +47,18 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[SomeValue1],
+	[t1].[SomeValue2]
+FROM
+	[ValuesTable] [t1]
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @param Int -- Int32
 SET     @param = 8
 
@@ -54,6 +66,18 @@ UPDATE
 	[t1]
 SET
 	[t1].[SomeValue2] = @param
+FROM
+	[ValuesTable] [t1]
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[t1].[Id],
+	[t1].[SomeValue1],
+	[t1].[SomeValue2]
 FROM
 	[ValuesTable] [t1]
 

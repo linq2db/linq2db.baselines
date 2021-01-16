@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	Max([t].[PersonID])
+FROM
+	[Person] [t]
+
+BeforeExecute
+-- SqlServer.2005
+
 INSERT INTO [Person]
 (
 	[FirstName],

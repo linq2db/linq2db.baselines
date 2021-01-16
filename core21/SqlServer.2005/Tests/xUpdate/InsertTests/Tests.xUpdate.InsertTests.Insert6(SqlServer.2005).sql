@@ -26,6 +26,16 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[Value1] = 11
+
+BeforeExecute
+-- SqlServer.2005
+
 DELETE [t1]
 FROM
 	[Parent] [t1]

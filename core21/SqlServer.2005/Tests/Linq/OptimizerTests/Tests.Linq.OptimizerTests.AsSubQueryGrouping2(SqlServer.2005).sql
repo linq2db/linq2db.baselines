@@ -95,6 +95,24 @@ SELECT 3,4,60,300,400,1000,4000,5000,N'Str_5'
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	COUNT([x].[Key2]),
+	COUNT([x].[Key1])
+FROM
+	(
+		SELECT
+			[t1].[Key1],
+			[t1].[Key2]
+		FROM
+			[FirstOptimizerData] [t1]
+		GROUP BY
+			[t1].[Key1],
+			[t1].[Key2]
+	) [x]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
 	DROP TABLE [SecondOptimizerData]
 

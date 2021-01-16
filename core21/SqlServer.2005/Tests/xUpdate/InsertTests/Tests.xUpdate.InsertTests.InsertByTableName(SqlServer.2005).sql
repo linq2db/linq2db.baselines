@@ -103,6 +103,25 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	Count(*)
+FROM
+	[xxPerson] [t1]
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	Count(*)
+FROM
+	[xxPerson] [p]
+WHERE
+	[p].[FirstName] = N'Steven' AND [p].[LastName] = N'King' AND
+	[p].[Gender] = 'M'
+
+BeforeExecute
+-- SqlServer.2005
+
 DROP TABLE [xxPerson]
 
 BeforeExecute

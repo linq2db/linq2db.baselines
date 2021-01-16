@@ -49,6 +49,32 @@ SELECT 600,N'Three',5,5
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT
+	[t].[DuplicateData],
+	(
+		SELECT
+			Count(*)
+		FROM
+			[OrderByDistinctData] [s]
+		WHERE
+			([s].[DuplicateData] = [t].[DuplicateData] OR [s].[DuplicateData] IS NULL AND [t].[DuplicateData] IS NULL)
+	)
+FROM
+	(
+		SELECT TOP (@take)
+			[t1].[Id],
+			[t1].[DuplicateData]
+		FROM
+			[OrderByDistinctData] [t1]
+	) [t]
+ORDER BY
+	[t].[Id] DESC
+
+BeforeExecute
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
 	DROP TABLE [OrderByDistinctData]

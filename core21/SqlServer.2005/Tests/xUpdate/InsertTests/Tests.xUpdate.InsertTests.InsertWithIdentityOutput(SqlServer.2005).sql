@@ -37,6 +37,24 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'John0'
+
+SELECT TOP (@take)
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = @FirstName AND [p].[LastName] = N'Shepard'
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
 DECLARE @LastName NVarChar(4000) -- String
@@ -62,6 +80,24 @@ VALUES
 )
 
 SELECT SCOPE_IDENTITY()
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'John1'
+
+SELECT TOP (@take)
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = @FirstName AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
 -- SqlServer.2005
