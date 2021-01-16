@@ -42,6 +42,14 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Data_1  -- Int32
 SET     @Data_1 = 1
 DECLARE @Key1  -- Int32
@@ -53,4 +61,12 @@ SET
 	"InheritanceParent"."TypeDiscriminator" = ?
 WHERE
 	"InheritanceParent"."InheritanceParentId" = ? AND "InheritanceParent"."Name" IS NULL
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
 

@@ -25,6 +25,16 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	Count(*)
+FROM
+	"Parent" "p"
+WHERE
+	"p"."Value1" = 11
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DELETE FROM
 	"Parent" "t1"
 WHERE

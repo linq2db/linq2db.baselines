@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	Max("t"."PersonID")
+FROM
+	"Person" "t"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender NChar(1) -- StringFixedLength

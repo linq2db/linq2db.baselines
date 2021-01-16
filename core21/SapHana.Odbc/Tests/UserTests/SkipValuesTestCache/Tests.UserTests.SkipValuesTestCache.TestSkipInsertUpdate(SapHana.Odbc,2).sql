@@ -34,6 +34,21 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"t"."Id",
+	"t"."Name",
+	"t"."Age"
+FROM
+	"PR_1598_Insert_Table_Cache" "t"
+WHERE
+	"t"."Id" = 1
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age  -- Int32
@@ -48,6 +63,21 @@ SET
 	"PR_1598_Insert_Table_Cache"."Age" = ?
 WHERE
 	"PR_1598_Insert_Table_Cache"."Id" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"t"."Id",
+	"t"."Name",
+	"t"."Age"
+FROM
+	"PR_1598_Insert_Table_Cache" "t"
+WHERE
+	"t"."Id" = 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -69,6 +69,32 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @skip_2  -- Int32
+SET     @skip_2 = 3
+
+SELECT
+	"t1"."Value"
+FROM
+	"TakeSkipClass" "t1"
+ORDER BY
+	"t1"."Value"
+LIMIT 4200000000 OFFSET ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @skip_2  -- Int32
+SET     @skip_2 = 4
+
+SELECT
+	"t1"."Value"
+FROM
+	"TakeSkipClass" "t1"
+ORDER BY
+	"t1"."Value"
+LIMIT 4200000000 OFFSET ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TakeSkipClass"
 

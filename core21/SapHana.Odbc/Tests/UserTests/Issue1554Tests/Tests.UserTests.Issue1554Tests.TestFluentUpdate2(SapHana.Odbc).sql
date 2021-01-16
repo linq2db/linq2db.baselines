@@ -49,6 +49,19 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
+	"t1"."Id",
+	"t1"."ClaimedKeyType",
+	"t1"."ClaimedKeyTypeN"
+FROM
+	"Issue1554FluentTable" "t1"
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "Issue1554FluentTable"
 

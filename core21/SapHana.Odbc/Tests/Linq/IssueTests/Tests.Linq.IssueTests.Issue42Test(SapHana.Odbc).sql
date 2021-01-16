@@ -1,5 +1,25 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"t1"."ID",
+	"t1"."MoneyValue",
+	"t1"."DateTimeValue",
+	"t1"."DateTimeValue2",
+	"t1"."BoolValue",
+	"t1"."GuidValue",
+	"t1"."SmallIntValue",
+	"t1"."IntValue",
+	"t1"."BigIntValue",
+	"t1"."StringValue"
+FROM
+	"LinqDataTypes" "t1"
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue  -- DateTime
@@ -35,6 +55,26 @@ SET
 	"LinqDataTypes"."StringValue" = ?
 WHERE
 	"LinqDataTypes"."ID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"t1"."ID",
+	"t1"."MoneyValue",
+	"t1"."DateTimeValue",
+	"t1"."DateTimeValue2",
+	"t1"."BoolValue",
+	"t1"."GuidValue",
+	"t1"."SmallIntValue",
+	"t1"."IntValue",
+	"t1"."BigIntValue",
+	"t1"."StringValue"
+FROM
+	"LinqDataTypes" "t1"
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

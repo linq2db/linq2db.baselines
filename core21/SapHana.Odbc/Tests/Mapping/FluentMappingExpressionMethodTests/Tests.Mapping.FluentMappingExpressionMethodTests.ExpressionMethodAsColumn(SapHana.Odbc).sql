@@ -375,5 +375,15 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"t1"."Id",
+	"t1"."Value",
+	'M' || Cast("t1"."Id" as NVarChar(11))
+FROM
+	"InstanceClass" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "InstanceClass"
 

@@ -41,6 +41,16 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	Count(*)
+FROM
+	"Person" "_"
+WHERE
+	"_"."FirstName" LIKE 'Update14%' ESCAPE '~'
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DELETE FROM
 	"Person" "_"
 WHERE

@@ -24,6 +24,16 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	Count(*)
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r"."ID" = 101 AND "r"."BigIntValue" IN (12)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 102
 

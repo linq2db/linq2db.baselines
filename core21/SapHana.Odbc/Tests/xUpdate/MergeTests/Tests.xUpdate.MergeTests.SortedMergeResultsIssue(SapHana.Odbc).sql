@@ -117,3 +117,16 @@ VALUES
 	"Source"."Id"
 )
 
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."GrandChildID",
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"GrandChild" "t1"
+ORDER BY
+	"t1"."GrandChildID",
+	"t1"."ChildID"
+

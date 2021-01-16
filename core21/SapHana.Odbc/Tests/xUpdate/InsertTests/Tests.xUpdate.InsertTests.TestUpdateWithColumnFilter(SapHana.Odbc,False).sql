@@ -76,6 +76,25 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"x"."FirstName",
+	"x"."PersonID",
+	"x"."LastName",
+	"x"."MiddleName",
+	"x"."Gender"
+FROM
+	"Person" "x"
+WHERE
+	"x"."FirstName" = ?
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FirstName NVarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
@@ -91,6 +110,25 @@ SET
 	"Person"."Gender" = ?
 WHERE
 	"Person"."PersonID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FirstName NVarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"x"."FirstName",
+	"x"."PersonID",
+	"x"."LastName",
+	"x"."MiddleName",
+	"x"."Gender"
+FROM
+	"Person" "x"
+WHERE
+	"x"."FirstName" = ?
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

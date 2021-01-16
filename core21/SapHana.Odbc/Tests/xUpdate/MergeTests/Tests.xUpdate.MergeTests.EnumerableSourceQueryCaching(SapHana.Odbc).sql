@@ -30,6 +30,21 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+ORDER BY
+	"t1"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DELETE FROM
 	"TestMerge1" "t1"
 
@@ -55,6 +70,21 @@ VALUES
 	"Source"."Field2",
 	"Source"."Field4"
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+ORDER BY
+	"t1"."Id"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -86,4 +116,19 @@ VALUES
 	"Source"."Field2",
 	"Source"."Field4"
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+ORDER BY
+	"t1"."Id"
 

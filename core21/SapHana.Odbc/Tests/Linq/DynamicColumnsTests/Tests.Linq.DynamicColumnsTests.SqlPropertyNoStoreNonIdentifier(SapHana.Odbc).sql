@@ -36,5 +36,13 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"d"."Not Identifier"
+FROM
+	"DynamicTable" "d"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "DynamicTable"
 

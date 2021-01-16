@@ -100,6 +100,44 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
+	"x"."InId",
+	"j"."InId",
+	"j"."InMaxQuantity",
+	"j"."InMinQuantity",
+	"x"."InMinQuantity",
+	"x"."InMaxQuantity"
+FROM
+	"StLink" "x"
+		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+WHERE
+	"x"."InId" = 1
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
+	"x"."InId",
+	"j"."InId",
+	"j"."InMaxQuantity",
+	"j"."InMinQuantity",
+	"x"."InMinQuantity",
+	"x"."InMaxQuantity"
+FROM
+	"StLink" "x"
+		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+WHERE
+	"x"."InId" = 2
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "EdtLink"
 

@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	Max("_"."ID")
+FROM
+	"AllTypes" "_"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = ' '
 DECLARE @NChar_2 NChar(1) -- StringFixedLength
@@ -359,6 +367,22 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @lastId  -- Int32
+SET     @lastId = 2
+
+SELECT
+	"_"."ID",
+	"_"."char20DataType",
+	"_"."nchar20DataType"
+FROM
+	"AllTypes" "_"
+WHERE
+	"_"."ID" > ?
+ORDER BY
+	"_"."ID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

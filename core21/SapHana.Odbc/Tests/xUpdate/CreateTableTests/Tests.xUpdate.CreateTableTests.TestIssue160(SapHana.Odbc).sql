@@ -30,5 +30,14 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"t1"."cc",
+	"t1"."bb"
+FROM
+	"aa" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "aa"
 

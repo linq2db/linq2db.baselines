@@ -73,6 +73,21 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @id  -- Int32
+SET     @id = 1
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
+	"_"."Value5"
+FROM
+	"UpdateSetTest" "_"
+WHERE
+	"_"."Id" = ?
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Value5  -- Int32
 SET     @Value5 = 12
 DECLARE @id  -- Int32
@@ -84,6 +99,21 @@ SET
 	"UpdateSetTest"."Value5" = ?
 WHERE
 	"UpdateSetTest"."Id" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @id  -- Int32
+SET     @id = 1
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
+	"_"."Value5"
+FROM
+	"UpdateSetTest" "_"
+WHERE
+	"_"."Id" = ?
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

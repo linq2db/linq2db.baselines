@@ -30,6 +30,21 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"t"."Id",
+	"t"."Name",
+	"t"."Age"
+FROM
+	"PR_1598_Insert_Null_Table" "t"
+WHERE
+	"t"."Id" = 1
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "PR_1598_Insert_Null_Table"
 

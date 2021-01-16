@@ -34,6 +34,14 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 MERGE INTO "InheritanceParent" "Target"
 USING (	SELECT 143 "Key1", NULL "Key2", 1 "Data_1" FROM DUMMY) "Source"
 ON ("Target"."InheritanceParentId" = "Source"."Key1" AND
@@ -57,4 +65,12 @@ VALUES
 	"Source"."Key2",
 	"Source"."Data_1"
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
 

@@ -31,7 +31,31 @@ BeforeExecute
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 
+SELECT
+	Count(*)
+FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
+
 DELETE FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
+
+SELECT
+	Count(*)
+FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = ?

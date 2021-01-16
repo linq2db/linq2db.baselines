@@ -29,6 +29,16 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	Count(*)
+FROM
+	"Person" "_"
+WHERE
+	"_"."FirstName" LIKE 'Insert16%' ESCAPE '~'
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DELETE FROM
 	"Person" "_"
 WHERE

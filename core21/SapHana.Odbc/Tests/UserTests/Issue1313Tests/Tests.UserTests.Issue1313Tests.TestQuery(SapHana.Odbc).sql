@@ -21,5 +21,13 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"row_1"."Value"
+FROM
+	"ValueItem" "row_1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "ValueItem"
 

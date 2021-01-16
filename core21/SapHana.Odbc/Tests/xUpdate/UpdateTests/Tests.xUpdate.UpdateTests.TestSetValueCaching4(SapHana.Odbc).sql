@@ -73,6 +73,21 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @id  -- Int32
+SET     @id = 1
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
+	"_"."Value4"
+FROM
+	"UpdateSetTest" "_"
+WHERE
+	"_"."Id" = ?
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Value4 Char(36) -- AnsiStringFixedLength
 SET     @Value4 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @id  -- Int32
@@ -84,6 +99,21 @@ SET
 	"UpdateSetTest"."Value4" = ?
 WHERE
 	"UpdateSetTest"."Id" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @id  -- Int32
+SET     @id = 1
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
+	"_"."Value4"
+FROM
+	"UpdateSetTest" "_"
+WHERE
+	"_"."Id" = ?
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

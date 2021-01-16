@@ -189,6 +189,85 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"key_data_result"."Id",
+	"_v"."Id",
+	"_v"."Usage",
+	"_v"."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			"c_1"."Id"
+		FROM
+			"Table404One" "c_1"
+	) "key_data_result"
+		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"c_1"."Id"
+FROM
+	"Table404One" "c_1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Usage_1  -- Int32
+SET     @Usage_1 = 0
+
+SELECT
+	"key_data_result"."Id",
+	"_v"."Id",
+	"_v"."Usage",
+	"_v"."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			"c_1"."Id"
+		FROM
+			"Table404One" "c_1"
+	) "key_data_result"
+		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = ? AND "_v"."FirstTableId" = "key_data_result"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"c_1"."Id"
+FROM
+	"Table404One" "c_1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Usage_1  -- Int32
+SET     @Usage_1 = 1
+
+SELECT
+	"key_data_result"."Id",
+	"_v"."Id",
+	"_v"."Usage",
+	"_v"."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			"c_1"."Id"
+		FROM
+			"Table404One" "c_1"
+	) "key_data_result"
+		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = ? AND "_v"."FirstTableId" = "key_data_result"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"c_1"."Id"
+FROM
+	"Table404One" "c_1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "Table404Two"
 
 BeforeExecute
@@ -383,6 +462,85 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"key_data_result"."Id",
+	"_v"."Id",
+	"_v"."Usage",
+	"_v"."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			"c_1"."Id"
+		FROM
+			"Table404One" "c_1"
+	) "key_data_result"
+		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"c_1"."Id"
+FROM
+	"Table404One" "c_1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Usage_1  -- Int32
+SET     @Usage_1 = 0
+
+SELECT
+	"key_data_result"."Id",
+	"_v"."Id",
+	"_v"."Usage",
+	"_v"."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			"c_1"."Id"
+		FROM
+			"Table404One" "c_1"
+	) "key_data_result"
+		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = ? AND "_v"."FirstTableId" = "key_data_result"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"c_1"."Id"
+FROM
+	"Table404One" "c_1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Usage_1  -- Int32
+SET     @Usage_1 = 1
+
+SELECT
+	"key_data_result"."Id",
+	"_v"."Id",
+	"_v"."Usage",
+	"_v"."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			"c_1"."Id"
+		FROM
+			"Table404One" "c_1"
+	) "key_data_result"
+		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = ? AND "_v"."FirstTableId" = "key_data_result"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"c_1"."Id"
+FROM
+	"Table404One" "c_1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

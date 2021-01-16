@@ -483,6 +483,42 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @testedList NVarChar(20) -- String
+SET     @testedList = '[{"Value":"Value1"}]'
+
+SELECT
+	"t"."Id"
+FROM
+	"ValueConversion" "t"
+WHERE
+	? = "t"."Value2"
+GROUP BY
+	"t"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Value2 NVarChar(20) -- String
+SET     @Value2 = '[{"Value":"Value1"}]'
+DECLARE @Id  -- Int32
+SET     @Id = 1
+
+SELECT
+	"t"."Id",
+	"t"."Value1",
+	"t"."Value2",
+	"t"."Enum",
+	"t"."EnumNullable",
+	"t"."EnumWithNull",
+	"t"."EnumWithNullDeclarative",
+	"t"."BoolValue",
+	"t"."DateTimeNullable"
+FROM
+	"ValueConversion" "t"
+WHERE
+	? = "t"."Value2" AND "t"."Id" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "ValueConversion"
 

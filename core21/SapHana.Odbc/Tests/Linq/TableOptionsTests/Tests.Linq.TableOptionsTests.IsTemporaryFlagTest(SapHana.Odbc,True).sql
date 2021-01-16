@@ -10,5 +10,14 @@ CREATE COLUMN TABLE "IsTemporaryTable"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"t1"."Id",
+	"t1"."Value"
+FROM
+	"IsTemporaryTable" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "IsTemporaryTable"
 

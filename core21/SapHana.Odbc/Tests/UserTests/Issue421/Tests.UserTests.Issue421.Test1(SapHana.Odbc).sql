@@ -29,6 +29,20 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"_"."Id",
+	"_"."BlobValue"
+FROM
+	"BlobClass" "_"
+WHERE
+	"_"."Id" = 1
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @BlobValue Binary(3)
 SET     @BlobValue = x'030201'
 
@@ -38,6 +52,20 @@ SET
 	"BlobClass"."BlobValue" = ?
 WHERE
 	"BlobClass"."Id" = 1
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"_"."Id",
+	"_"."BlobValue"
+FROM
+	"BlobClass" "_"
+WHERE
+	"_"."Id" = 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

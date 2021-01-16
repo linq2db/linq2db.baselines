@@ -1,6 +1,25 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	Count(*)
+FROM
+	"AllTypes" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	current_schema
+FROM
+	"LinqDataTypes" "_"
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 SELECT CURRENT_SCHEMA FROM DUMMY
 
 BeforeExecute
@@ -257,6 +276,14 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT * FROM "TESTDB"."GetParentByID"(0)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	Count(*)
+FROM
+	"AllTypes" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

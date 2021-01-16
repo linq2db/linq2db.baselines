@@ -375,5 +375,15 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	Count(*)
+FROM
+	"InstanceClass" "t"
+WHERE
+	Cast("t"."Id" as NVarChar(11)) || Cast("t"."Value" as NVarChar(11)) = Cast("t"."Id" as NVarChar(11)) || Cast("t"."Value" as VarChar(11))
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "InstanceClass"
 

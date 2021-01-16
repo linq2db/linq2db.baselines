@@ -54,5 +54,17 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"t1"."Not Identifier",
+	Count(*),
+	Sum("t1"."Some Value")
+FROM
+	"DynamicTable" "t1"
+GROUP BY
+	"t1"."Not Identifier"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "DynamicTable"
 

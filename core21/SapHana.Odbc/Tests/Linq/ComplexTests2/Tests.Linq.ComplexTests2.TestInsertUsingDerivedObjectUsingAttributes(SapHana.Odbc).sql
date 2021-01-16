@@ -79,6 +79,23 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"_"."FirstName",
+	"_"."PersonID",
+	"_"."LastName",
+	"_"."MiddleName",
+	"_"."Gender"
+FROM
+	"Person" "_"
+WHERE
+	"_"."FirstName" = 'test_inherited_insert'
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName NVarChar(4) -- String
@@ -99,6 +116,23 @@ SET
 	"Person"."Gender" = ?
 WHERE
 	"Person"."PersonID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"_"."FirstName",
+	"_"."PersonID",
+	"_"."LastName",
+	"_"."MiddleName",
+	"_"."Gender"
+FROM
+	"Person" "_"
+WHERE
+	"_"."FirstName" = 'test_inherited_insert'
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

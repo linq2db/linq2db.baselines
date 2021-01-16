@@ -61,6 +61,24 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"x"."ID",
+	"x"."FirstName",
+	"x"."LastName",
+	"x"."MiddleName"
+FROM
+	"TestInsertOrReplaceTable" "x"
+WHERE
+	"x"."FirstName" = ?
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FirstName NVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @ID  -- Int32
@@ -73,6 +91,24 @@ SET
 	"TestInsertOrReplaceTable"."LastName" = ?
 WHERE
 	"TestInsertOrReplaceTable"."ID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FirstName NVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"x"."ID",
+	"x"."FirstName",
+	"x"."LastName",
+	"x"."MiddleName"
+FROM
+	"TestInsertOrReplaceTable" "x"
+WHERE
+	"x"."FirstName" = ?
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

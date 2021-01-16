@@ -26,12 +26,36 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"_"."Id",
+	"_"."BlobValue"
+FROM
+	"BlobClass" "_"
+WHERE
+	"_"."Id" = 1
+LIMIT 1
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 UPDATE
 	"BlobClass"
 SET
 	"BlobClass"."BlobValue" = x'030201'
 WHERE
 	"BlobClass"."Id" = 1
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"_"."Id",
+	"_"."BlobValue"
+FROM
+	"BlobClass" "_"
+WHERE
+	"_"."Id" = 1
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

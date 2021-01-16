@@ -105,6 +105,21 @@ BeforeExecute
 DECLARE @lastId  -- Int32
 SET     @lastId = 3
 
+SELECT
+	"_"."ID",
+	"_"."intDataType"
+FROM
+	"AllTypes" "_"
+WHERE
+	"_"."ID" > ?
+ORDER BY
+	"_"."ID"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @lastId  -- Int32
+SET     @lastId = 3
+
 DELETE FROM
 	"AllTypes" "t1"
 WHERE

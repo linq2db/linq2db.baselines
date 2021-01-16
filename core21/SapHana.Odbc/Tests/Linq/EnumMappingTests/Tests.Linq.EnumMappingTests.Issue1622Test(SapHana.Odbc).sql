@@ -29,6 +29,34 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
+	"e"."Id",
+	"e"."SomeText"
+FROM
+	"Issue1622Table" "e"
+WHERE
+	"e"."SomeText" = 'Value1_suffix'
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
+	"e"."Id",
+	"e"."SomeText"
+FROM
+	"Issue1622Table" "e"
+WHERE
+	"e"."Id" = 1
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "Issue1622Table"
 

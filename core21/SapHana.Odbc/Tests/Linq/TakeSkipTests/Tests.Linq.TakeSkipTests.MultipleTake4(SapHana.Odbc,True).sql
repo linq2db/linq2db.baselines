@@ -125,6 +125,19 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take_3  -- Int32
+SET     @take_3 = 1
+
+SELECT
+	"t1"."Value"
+FROM
+	"TakeSkipClass" "t1"
+ORDER BY
+	"t1"."Value"
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TakeSkipClass"
 

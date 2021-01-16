@@ -1,5 +1,16 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	current_schema
+FROM
+	"LinqDataTypes" "_"
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_SCHEMA FROM DUMMY
 

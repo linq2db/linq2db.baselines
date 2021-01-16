@@ -236,5 +236,25 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"t1"."Key_1",
+	Count(*)
+FROM
+	(
+		SELECT DISTINCT
+			"selectParam"."Id1" as "Key_1",
+			"selectParam"."Id2" as "Key_2",
+			"selectParam"."Value" as "Value_1"
+		FROM
+			"GroupSampleClass" "selectParam"
+	) "t1"
+GROUP BY ROLLUP (
+	"t1"."Key_1",
+	"t1"."Key_2"
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "GroupSampleClass"
 

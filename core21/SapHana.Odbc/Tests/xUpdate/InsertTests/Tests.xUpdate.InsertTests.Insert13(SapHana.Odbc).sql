@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	Max("t"."PersonID")
+FROM
+	"Person" "t"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 INSERT INTO "Person"
 (
 	"FirstName",

@@ -20,6 +20,23 @@ CREATE COLUMN TABLE "Relationship1711"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"t"."Id"
+FROM
+	"Entity1711" "t"
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Relationship1711" "r"
+		WHERE
+			"r"."Deleted" = 0 AND "r"."EntityId" = "t"."Id"
+	)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "Relationship1711"
 
 BeforeExecute

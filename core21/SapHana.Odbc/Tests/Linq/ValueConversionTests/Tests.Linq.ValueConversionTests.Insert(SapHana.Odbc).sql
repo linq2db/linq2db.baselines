@@ -48,6 +48,27 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 1
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Value1 NVarChar -- String
@@ -75,6 +96,27 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 2
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -121,6 +163,35 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 3
+LIMIT ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	Count(*)
+FROM
+	"ValueConversion" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
