@@ -40,6 +40,27 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"xxPerson" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
+FROM
+	"xxPerson" "t1"
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 
@@ -47,6 +68,14 @@ DELETE FROM
 	"xxPerson" "t1"
 WHERE
 	"t1"."PersonID" = @ID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"xxPerson" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -52,6 +52,19 @@ BeforeExecute
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
+SELECT
+	"p"."PersonID",
+	"p"."Diagnosis"
+FROM
+	"Patient" "p"
+WHERE
+	"p"."PersonID" = @id
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @id Integer(4) -- Int32
+SET     @id = 5
+
 MERGE INTO "Patient" "t1"
 USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
@@ -68,6 +81,19 @@ WHEN NOT MATCHED THEN
 		@id,
 		'positive'
 	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @id Integer(4) -- Int32
+SET     @id = 5
+
+SELECT
+	"p"."PersonID",
+	"p"."Diagnosis"
+FROM
+	"Patient" "p"
+WHERE
+	"p"."PersonID" = @id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

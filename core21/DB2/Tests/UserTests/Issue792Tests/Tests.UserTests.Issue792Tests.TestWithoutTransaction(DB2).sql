@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	Count(*)
+FROM
+	ALLTYPES "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 select current_schema from sysibm.sysdummy1
 
 BeforeExecute
@@ -46,6 +54,14 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 0
 
 TESTDB.DB2INST1.PERSON_SELECTBYKEY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	ALLTYPES "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

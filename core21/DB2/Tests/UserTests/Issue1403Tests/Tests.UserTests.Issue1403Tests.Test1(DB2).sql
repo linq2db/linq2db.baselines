@@ -26,5 +26,15 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"t1"."event_description",
+	"t1"."event_id"
+FROM
+	"Issue1403Tests_1" "t1"
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DROP TABLE "Issue1403Tests_1"
 

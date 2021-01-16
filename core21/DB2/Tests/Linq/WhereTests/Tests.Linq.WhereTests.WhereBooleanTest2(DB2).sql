@@ -47,6 +47,407 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"t1"."Id",
+	"t1"."BoolValue",
+	"t1"."NullableBoolValue"
+FROM
+	"WhereCases" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."BoolValue" = 0 AND "t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 1 OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."BoolValue" = 1 AND "t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 0 OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."BoolValue" = 1 AND "t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 0 OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."BoolValue" = 0 AND "t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 1 OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."BoolValue" = 0 AND "t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 1 OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."NullableBoolValue" = 0 OR "t"."NullableBoolValue" IS NULL) AND
+	"t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."NullableBoolValue" = 1 AND "t"."NullableBoolValue" IS NOT NULL OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."NullableBoolValue" = 1 AND "t"."NullableBoolValue" IS NOT NULL) AND
+	"t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	(("t"."NullableBoolValue" = 0 OR "t"."NullableBoolValue" IS NULL) OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."NullableBoolValue" = 1 AND "t"."NullableBoolValue" IS NOT NULL) AND
+	"t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	(("t"."NullableBoolValue" = 0 OR "t"."NullableBoolValue" IS NULL) OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."NullableBoolValue" IS NULL AND "t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."NullableBoolValue" IS NOT NULL OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."NullableBoolValue" IS NOT NULL AND "t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."NullableBoolValue" IS NULL OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."NullableBoolValue" IS NOT NULL AND "t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."NullableBoolValue" IS NULL OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."NullableBoolValue" IS NULL AND "t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."NullableBoolValue" IS NOT NULL OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."BoolValue" = 0 AND ("t"."NullableBoolValue" = 0 OR "t"."NullableBoolValue" IS NULL) AND
+	"t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 1 OR "t"."NullableBoolValue" = 1 AND "t"."NullableBoolValue" IS NOT NULL OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 1 OR "t"."NullableBoolValue" = 1 AND "t"."NullableBoolValue" IS NOT NULL) AND
+	"t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 0 AND ("t"."NullableBoolValue" = 0 OR "t"."NullableBoolValue" IS NULL) OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	"t"."BoolValue" = 0 AND ("t"."NullableBoolValue" = 0 AND "t"."NullableBoolValue" IS NOT NULL) AND
+	"t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 1 OR ("t"."NullableBoolValue" = 1 OR "t"."NullableBoolValue" IS NULL) OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 1 OR ("t"."NullableBoolValue" = 1 OR "t"."NullableBoolValue" IS NULL)) AND
+	"t"."Id" > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."BoolValue",
+	"t"."NullableBoolValue"
+FROM
+	"WhereCases" "t"
+WHERE
+	("t"."BoolValue" = 0 AND ("t"."NullableBoolValue" = 0 AND "t"."NullableBoolValue" IS NOT NULL) OR "t"."Id" <= 0)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "WhereCases"';

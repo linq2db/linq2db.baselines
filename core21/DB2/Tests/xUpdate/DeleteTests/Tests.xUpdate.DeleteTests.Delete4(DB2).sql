@@ -41,6 +41,16 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	Count(*)
+FROM
+	"GrandChild" "gc"
+WHERE
+	"gc"."ParentID" = 1
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DELETE FROM
 	"GrandChild" "t1"
 WHERE
@@ -57,6 +67,16 @@ WHERE
 			"t1"."ChildID" = "gc"."ChildID" AND
 			"t1"."GrandChildID" = "gc"."GrandChildID"
 	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"GrandChild" "gc"
+WHERE
+	"gc"."ParentID" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

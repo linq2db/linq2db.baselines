@@ -76,6 +76,40 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"x"."InId",
+	"j"."InId",
+	"j"."InMaxQuantity",
+	"j"."InMinQuantity",
+	"x"."InMinQuantity",
+	"x"."InMaxQuantity"
+FROM
+	"StLink" "x"
+		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+WHERE
+	"x"."InId" = 1
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"x"."InId",
+	"j"."InId",
+	"j"."InMaxQuantity",
+	"j"."InMinQuantity",
+	"x"."InMinQuantity",
+	"x"."InMaxQuantity"
+FROM
+	"StLink" "x"
+		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+WHERE
+	"x"."InId" = 2
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "EdtLink"';

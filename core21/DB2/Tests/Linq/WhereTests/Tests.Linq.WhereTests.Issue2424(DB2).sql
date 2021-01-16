@@ -36,6 +36,270 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" >= '4'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" >= '4'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" <= '2'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" <= '2'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" > '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" > '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" < '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" < '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" = '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" = '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" <= '2'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" <= '2'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" >= '4'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" >= '4'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" < '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" < '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" > '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" > '3'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" >= '5'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" >= '5'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" <= '1'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"i"."Id",
+	"i"."StrValue"
+FROM
+	"Isue2424Table" "i"
+WHERE
+	"i"."StrValue" <= '1'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "Isue2424Table"';

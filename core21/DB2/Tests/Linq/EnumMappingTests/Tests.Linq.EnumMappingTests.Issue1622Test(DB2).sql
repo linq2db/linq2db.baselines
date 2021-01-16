@@ -30,5 +30,29 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"e"."Id",
+	"e"."SomeText"
+FROM
+	"Issue1622Table" "e"
+WHERE
+	"e"."SomeText" = 'Value1_suffix'
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"e"."Id",
+	"e"."SomeText"
+FROM
+	"Issue1622Table" "e"
+WHERE
+	"e"."Id" = 1
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DROP TABLE "Issue1622Table"
 

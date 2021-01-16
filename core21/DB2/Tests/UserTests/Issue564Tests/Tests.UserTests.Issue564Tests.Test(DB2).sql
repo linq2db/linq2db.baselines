@@ -50,5 +50,13 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	Count(*)
+FROM
+	"Parent564" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DROP TABLE "Parent564"
 

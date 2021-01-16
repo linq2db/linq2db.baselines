@@ -24,6 +24,17 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"entity".ID,
+	"entity"."BigIntValue"
+FROM
+	"LinqDataTypes" "entity"
+WHERE
+	"entity"."BigIntValue" = 12
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 102
 

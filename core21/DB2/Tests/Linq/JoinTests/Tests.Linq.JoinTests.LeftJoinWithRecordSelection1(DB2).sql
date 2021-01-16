@@ -75,6 +75,20 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"fact_1"."Id",
+	"tagGroup"."Id",
+	"tagGroup"."FactId",
+	"tagGroup"."Name"
+FROM
+	"Fact" "fact_1"
+		LEFT JOIN "Tag" "tagGroup" ON "fact_1"."Id" = "tagGroup"."FactId"
+WHERE
+	"fact_1"."Id" > 3
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "Tag"';

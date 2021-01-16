@@ -25,6 +25,18 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"t".ID,
+	"t"."BigIntValue"
+FROM
+	"LinqDataTypes" "t"
+WHERE
+	"t".ID = 1001
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE

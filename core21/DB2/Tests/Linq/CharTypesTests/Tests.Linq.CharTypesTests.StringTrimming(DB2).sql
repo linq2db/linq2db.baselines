@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Max("_".ID)
+FROM
+	ALLTYPES "_"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @NString VarChar(6) -- String
 SET     @NString = 'test01'
 
@@ -292,6 +300,21 @@ VALUES
 (
 	@NString
 )
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @lastId Integer(4) -- Int32
+SET     @lastId = 223006
+
+SELECT
+	"_".ID,
+	"_".CHAR20DATATYPE
+FROM
+	ALLTYPES "_"
+WHERE
+	"_".ID > @lastId
+ORDER BY
+	"_".ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

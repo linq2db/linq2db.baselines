@@ -22,6 +22,17 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"r"."BigIntValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID = 101 AND "r"."BigIntValue" IS NULL
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 102
 

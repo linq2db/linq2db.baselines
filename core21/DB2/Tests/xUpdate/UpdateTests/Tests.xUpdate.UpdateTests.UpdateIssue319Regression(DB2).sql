@@ -18,6 +18,19 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @id Integer(4) -- Int32
+SET     @id = 100500
+
+SELECT
+	"_"."ParentID"
+FROM
+	"Parent" "_"
+WHERE
+	"_"."ParentID" = @id
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 100500
 DECLARE @id Integer(4) -- Int32

@@ -29,12 +29,36 @@ BeforeExecute
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 
+SELECT
+	Count(*)
+FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = @ParentID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1001
+
 UPDATE
 	"Parent"
 SET
 	"Parent"."ParentID" = "Parent"."ParentID" + 1
 WHERE
 	"Parent"."ParentID" = @ParentID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1002
+
+SELECT
+	Count(*)
+FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -49,6 +49,44 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"r"."Value_1"
+FROM
+	(
+		SELECT
+			"t1"."Id",
+			"t1"."Value_1"
+		FROM
+			(
+				SELECT
+					"t"."Id",
+					"t"."Value1" as "Value_1"
+				FROM
+					"SampleData" "t"
+				WHERE
+					Mod("t"."Id", 2) = 0
+				EXCEPT
+				SELECT
+					"t_1"."Id",
+					"t_1"."Value2" / 10 as "Value_1"
+				FROM
+					"SampleData" "t_1"
+				WHERE
+					Mod("t_1"."Id", 4) = 0
+			) "t1"
+		EXCEPT
+		SELECT
+			"t_2"."Id",
+			"t_2"."Value1" as "Value_1"
+		FROM
+			"SampleData" "t_2"
+		WHERE
+			Mod("t_2"."Id", 6) = 0
+	) "r"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "SampleData"';

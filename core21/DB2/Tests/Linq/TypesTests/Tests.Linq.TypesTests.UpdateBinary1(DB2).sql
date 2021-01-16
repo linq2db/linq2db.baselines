@@ -10,3 +10,13 @@ SET
 WHERE
 	"LinqDataTypes".ID = 1
 
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."BinaryValue"
+FROM
+	"LinqDataTypes" "t"
+WHERE
+	"t".ID = 1
+

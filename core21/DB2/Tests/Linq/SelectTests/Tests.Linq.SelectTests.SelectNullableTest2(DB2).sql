@@ -51,6 +51,24 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"_".ID,
+	"_"."MoneyValue",
+	"_"."DateTimeValue",
+	"_"."BoolValue",
+	"_"."GuidValue",
+	"_"."BinaryValue",
+	"_"."SmallIntValue",
+	"_"."StringValue"
+FROM
+	"LinqDataTypes" "_"
+WHERE
+	"_".ID = 1000
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DELETE FROM
 	"LinqDataTypes" "_"
 WHERE

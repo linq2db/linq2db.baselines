@@ -42,6 +42,22 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @part1 Integer(4) -- Int32
+SET     @part1 = 4
+DECLARE @part2 Integer(4) -- Int32
+SET     @part2 = 4
+DECLARE @p_1 Timestamp(20) -- DateTime
+SET     @p_1 = '2018-01-02-00.00.00.000000'
+
+SELECT
+	Count(*)
+FROM
+	"LinqDataTypes" "t"
+WHERE
+	"t".ID = 5000 AND "t"."DateTimeValue" + (("t"."SmallIntValue" + @part1) - @part2) Day > @p_1
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"LinqDataTypes" "t1"

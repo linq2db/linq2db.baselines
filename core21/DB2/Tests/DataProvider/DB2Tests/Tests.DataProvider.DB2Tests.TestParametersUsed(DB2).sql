@@ -27,6 +27,19 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @text VarChar(3) -- String
+SET     @text = 'bla'
+
+SELECT
+	"f"."Id",
+	"f"."Text"
+FROM
+	"TestParametersTable" "f"
+WHERE
+	"f"."Text" = @text
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "TestParametersTable"
 

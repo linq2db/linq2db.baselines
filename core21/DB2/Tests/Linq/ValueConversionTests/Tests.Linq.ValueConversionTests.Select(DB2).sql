@@ -59,6 +59,99 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Value2",
+	"t1"."Enum",
+	"t1"."EnumNullable",
+	"t1"."EnumWithNull",
+	"t1"."EnumWithNullDeclarative",
+	"t1"."BoolValue",
+	"t1"."DateTimeNullable"
+FROM
+	"ValueConversion" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."Value1",
+	"t"."Value2"
+FROM
+	"ValueConversion" "t"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Value2"
+FROM
+	(
+		SELECT
+			"t"."Id",
+			"t"."Value1",
+			"t"."Value2"
+		FROM
+			"ValueConversion" "t"
+	) "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t"."Id",
+	"t"."Value1",
+	"t"."Value2"
+FROM
+	"ValueConversion" "t"
+UNION ALL
+SELECT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Value2"
+FROM
+	(
+		SELECT
+			"t_1"."Id",
+			"t_1"."Value1",
+			"t_1"."Value2"
+		FROM
+			"ValueConversion" "t_1"
+	) "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 1
+DECLARE @take_1 Integer(4) -- Int32
+SET     @take_1 = 2
+
+SELECT
+	"t1"."Value2"
+FROM
+	(
+		SELECT
+			"q"."Value2",
+			ROW_NUMBER() OVER (ORDER BY "q"."Id") as RN
+		FROM
+			(
+				SELECT
+					"t"."Id",
+					"t"."Value2"
+				FROM
+					"ValueConversion" "t"
+			) "q"
+	) "t1"
+WHERE
+	"t1".RN > @skip AND "t1".RN <= @take_1
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';

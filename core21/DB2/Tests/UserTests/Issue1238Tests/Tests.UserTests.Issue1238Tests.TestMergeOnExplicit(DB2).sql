@@ -40,6 +40,14 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 MERGE INTO "InheritanceParent" "Target"
 USING (	VALUES
 		(143, CAST(NULL AS NVarChar(255)), 1)) "Source"
@@ -69,4 +77,12 @@ VALUES
 	"Source"."Key2",
 	"Source"."Data_1"
 )
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
 

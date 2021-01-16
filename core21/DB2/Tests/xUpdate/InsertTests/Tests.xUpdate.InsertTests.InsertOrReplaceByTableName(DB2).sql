@@ -75,6 +75,14 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"xxPatient" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
@@ -128,6 +136,14 @@ WHEN NOT MATCHED THEN
 		@PersonID,
 		@Diagnosis
 	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"xxPatient" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

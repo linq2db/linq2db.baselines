@@ -31,6 +31,20 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @id Integer(4) -- Int32
+SET     @id = 1
+
+SELECT
+	"_"."Id",
+	"_"."Has"
+FROM
+	"Issue1438" "_"
+WHERE
+	"_"."Id" = @id
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "Issue1438"
 

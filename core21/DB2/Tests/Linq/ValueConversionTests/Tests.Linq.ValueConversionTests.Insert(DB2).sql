@@ -48,6 +48,25 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 1
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Value1 VarChar -- String
@@ -75,6 +94,25 @@ VALUES
 	@Enum,
 	@BoolValue
 )
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 2
+FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -121,6 +159,33 @@ VALUES
 	@BoolValue,
 	@DateTimeNullable
 )
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 3
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"ValueConversion" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

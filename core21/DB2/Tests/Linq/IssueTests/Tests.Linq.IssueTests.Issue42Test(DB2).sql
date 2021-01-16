@@ -1,5 +1,23 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1".ID,
+	"t1"."MoneyValue",
+	"t1"."DateTimeValue",
+	"t1"."DateTimeValue2",
+	"t1"."BoolValue",
+	"t1"."GuidValue",
+	"t1"."SmallIntValue",
+	"t1"."IntValue",
+	"t1"."BigIntValue",
+	"t1"."StringValue"
+FROM
+	"LinqDataTypes" "t1"
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @MoneyValue (5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp(20) -- DateTime
@@ -35,6 +53,24 @@ SET
 	"LinqDataTypes"."StringValue" = @StringValue
 WHERE
 	"LinqDataTypes".ID = @ID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1".ID,
+	"t1"."MoneyValue",
+	"t1"."DateTimeValue",
+	"t1"."DateTimeValue2",
+	"t1"."BoolValue",
+	"t1"."GuidValue",
+	"t1"."SmallIntValue",
+	"t1"."IntValue",
+	"t1"."BigIntValue",
+	"t1"."StringValue"
+FROM
+	"LinqDataTypes" "t1"
+FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

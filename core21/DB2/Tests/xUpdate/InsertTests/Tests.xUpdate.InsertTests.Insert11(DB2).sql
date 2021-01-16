@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Max("t"."PersonID")
+FROM
+	"Person" "t"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(2) -- String
@@ -23,6 +31,23 @@ VALUES
 	@Name_MiddleName,
 	@Name_LastName
 )
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @id Integer(4) -- Int32
+SET     @id = 4
+
+SELECT
+	"p2"."PersonID",
+	"p2"."Gender",
+	"p2"."FirstName",
+	"p2"."MiddleName",
+	"p2"."LastName"
+FROM
+	"Person" "p2"
+WHERE
+	"p2"."PersonID" > @id
+FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

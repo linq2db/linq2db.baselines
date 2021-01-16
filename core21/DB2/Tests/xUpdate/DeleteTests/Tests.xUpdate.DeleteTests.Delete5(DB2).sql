@@ -49,8 +49,28 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	Count(*)
+FROM
+	"Parent" "_"
+WHERE
+	"_"."ParentID" > 1000
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" IN (1001, 1002)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Parent" "_"
+WHERE
+	"_"."ParentID" > 1000
 

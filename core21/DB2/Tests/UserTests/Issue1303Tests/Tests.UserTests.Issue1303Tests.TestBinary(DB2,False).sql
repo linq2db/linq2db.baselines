@@ -33,5 +33,48 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"_".ID,
+	"_"."Array",
+	"_"."Binary"
+FROM
+	"Issue1303" "_"
+WHERE
+	"_".ID = 1
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Array_1 VarBinary(3) -- Binary
+SET     @Array_1 = BX'010203'
+
+SELECT
+	"_".ID,
+	"_"."Array",
+	"_"."Binary"
+FROM
+	"Issue1303" "_"
+WHERE
+	"_"."Array" = @Array_1
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Binary_1 VarBinary(2) -- Binary
+SET     @Binary_1 = BX'0405'
+
+SELECT
+	"_".ID,
+	"_"."Array",
+	"_"."Binary"
+FROM
+	"Issue1303" "_"
+WHERE
+	"_"."Binary" = @Binary_1
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DROP TABLE "Issue1303"
 

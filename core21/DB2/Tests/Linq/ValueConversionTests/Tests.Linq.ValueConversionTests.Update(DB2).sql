@@ -75,6 +75,25 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 1
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Value1 VarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 VarChar(22) -- String
@@ -110,6 +129,25 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 2
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Value1 VarChar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 VarChar -- String
@@ -142,6 +180,25 @@ SET
 	"ValueConversion"."DateTimeNullable" = @DateTimeNullable
 WHERE
 	"ValueConversion"."Id" = @Id
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 3
+FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -26,12 +26,36 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"_"."Id",
+	"_"."BlobValue"
+FROM
+	"BlobClass" "_"
+WHERE
+	"_"."Id" = 1
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 UPDATE
 	"BlobClass"
 SET
 	"BlobClass"."BlobValue" = BX'030201'
 WHERE
 	"BlobClass"."Id" = 1
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"_"."Id",
+	"_"."BlobValue"
+FROM
+	"BlobClass" "_"
+WHERE
+	"_"."Id" = 1
+FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

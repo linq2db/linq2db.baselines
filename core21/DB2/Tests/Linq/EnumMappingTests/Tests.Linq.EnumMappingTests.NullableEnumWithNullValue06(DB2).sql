@@ -82,6 +82,33 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"r".ID,
+	"r"."IntValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID >= 101 AND "r".ID <= 104
+ORDER BY
+	"r".ID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"r".ID,
+	"r"."IntValue",
+	"r"."StringValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID >= 101 AND "r".ID <= 104
+ORDER BY
+	"r".ID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 105
 

@@ -87,6 +87,48 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"key_data_result"."Id",
+	"key_data_result"."Title",
+	"key_data_result"."Text",
+	"detail"."Id"
+FROM
+	(
+		SELECT DISTINCT
+			"t1"."Id",
+			"t1"."Title",
+			"t1"."Text"
+		FROM
+			(
+				SELECT
+					"x"."Id",
+					"x"."Title",
+					"x"."Text"
+				FROM
+					"Topic" "x"
+				WHERE
+					"x"."Id" = 6
+				FETCH FIRST 1 ROWS ONLY
+			) "t1"
+	) "key_data_result"
+		INNER JOIN "Message" "detail" ON "detail"."TopicId" = "key_data_result"."Id"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"x"."Id",
+	"x"."Title",
+	"x"."Text"
+FROM
+	"Topic" "x"
+WHERE
+	"x"."Id" = 6
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DROP TABLE "Message"
 
 BeforeExecute

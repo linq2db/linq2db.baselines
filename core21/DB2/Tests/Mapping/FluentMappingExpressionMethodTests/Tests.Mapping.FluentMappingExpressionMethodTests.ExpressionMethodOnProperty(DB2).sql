@@ -53,6 +53,16 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	Count(*)
+FROM
+	"InstanceClass" "t"
+WHERE
+	RTrim(Char("t"."Id")) || RTrim(Char("t"."Value")) = RTrim(Char("t"."Id")) || RTrim(Char("t"."Value"))
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "InstanceClass"';

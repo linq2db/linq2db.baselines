@@ -113,6 +113,25 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	Count(*)
+FROM
+	"xxPerson" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"xxPerson" "p"
+WHERE
+	"p"."FirstName" = 'Steven' AND "p"."LastName" = 'King' AND
+	"p"."Gender" = 'M'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DROP TABLE "xxPerson"
 
 BeforeExecute

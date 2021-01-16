@@ -31,5 +31,18 @@ VALUES
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"t"."Id",
+	"t"."Name",
+	"t"."Age"
+FROM
+	"PR_1598_Insert_Null_Table" "t"
+WHERE
+	"t"."Id" = 1
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 DROP TABLE "PR_1598_Insert_Null_Table"
 

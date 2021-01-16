@@ -31,7 +31,31 @@ BeforeExecute
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 
+SELECT
+	Count(*)
+FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = @ParentID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1001
+
 DELETE FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = @ParentID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1001
+
+SELECT
+	Count(*)
+FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = @ParentID
