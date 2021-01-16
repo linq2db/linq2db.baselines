@@ -45,6 +45,25 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`_`.`PersonID`,
+	`_`.`Gender`,
+	`_`.`FirstName`,
+	`_`.`MiddleName`,
+	`_`.`LastName`
+FROM
+	`Person` `_`
+WHERE
+	`_`.`PersonID` = @id
+LIMIT @take
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -65,6 +84,25 @@ SET
 	`t1`.`LastName` = @Name_LastName
 WHERE
 	`t1`.`PersonID` = @ID
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`_`.`PersonID`,
+	`_`.`Gender`,
+	`_`.`FirstName`,
+	`_`.`MiddleName`,
+	`_`.`LastName`
+FROM
+	`Person` `_`
+WHERE
+	`_`.`PersonID` = @id
+LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

@@ -92,6 +92,17 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
+SELECT
+	`v`.`id`,
+	`v`.`Value1`,
+	`v`.`Value2`,
+	`v`.`Value3`
+FROM
+	`UpdatedEntities` `v`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 DROP TABLE IF EXISTS `NewEntities`
 
 BeforeExecute

@@ -56,6 +56,14 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`xxPatient` `t1`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
@@ -93,6 +101,14 @@ VALUES
 )
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`xxPatient` `t1`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

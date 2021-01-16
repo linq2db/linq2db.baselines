@@ -83,6 +83,22 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`v`.`Value1`,
+	`v`.`Value2`,
+	`v`.`Value3`
+FROM
+	`UpdatedEntities` `v`
+		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
+WHERE
+	`a_Relation`.`RelatedValue1` = 11
+LIMIT @take
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `UpdateRelation`
 

@@ -11,5 +11,29 @@ CREATE TABLE `T1351Model`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
+SELECT
+	`_`.`ID`,
+	`_`.`TestField`,
+	`_`.`TestNullable`
+FROM
+	`T1351Model` `_`
+WHERE
+	`_`.`TestField` = 0
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`_`.`ID`,
+	`_`.`TestField`,
+	`_`.`TestNullable`
+FROM
+	`T1351Model` `_`
+WHERE
+	(`_`.`TestNullable` <> 1 OR `_`.`TestNullable` IS NULL)
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 DROP TABLE `T1351Model`
 

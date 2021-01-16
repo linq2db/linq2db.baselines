@@ -26,12 +26,36 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
+SELECT
+	`_`.`Id`,
+	`_`.`BlobValue`
+FROM
+	`BlobClass` `_`
+WHERE
+	`_`.`Id` = 1
+LIMIT 1
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 UPDATE
 	`BlobClass` `_`
 SET
 	`_`.`BlobValue` = 0x030201
 WHERE
 	`_`.`Id` = 1
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`_`.`Id`,
+	`_`.`BlobValue`
+FROM
+	`BlobClass` `_`
+WHERE
+	`_`.`Id` = 1
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

@@ -29,5 +29,23 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
+SELECT
+	`t`.`ID`,
+	`t`.`ID1`
+FROM
+	`DropTableTestID` `t`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 DROP TABLE `DropTableTestID`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`t1`.`ID`,
+	`t1`.`ID1`
+FROM
+	`DropTableTestID` `t1`
 

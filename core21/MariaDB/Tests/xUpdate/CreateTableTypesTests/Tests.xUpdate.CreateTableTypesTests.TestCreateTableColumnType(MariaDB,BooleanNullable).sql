@@ -46,5 +46,16 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
+SELECT
+	`t1`.`Id`,
+	`t1`.`BooleanNullable`
+FROM
+	`CreateTableTypes` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 DROP TABLE `CreateTableTypes`
 

@@ -57,6 +57,85 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
+SELECT
+	`key_data_result`.`Id`,
+	`_v`.`Id`,
+	`_v`.`Usage`,
+	`_v`.`FirstTableId`
+FROM
+	(
+		SELECT DISTINCT
+			`c_1`.`Id`
+		FROM
+			`Table404One` `c_1`
+	) `key_data_result`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`FirstTableId` = `key_data_result`.`Id`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`c_1`.`Id`
+FROM
+	`Table404One` `c_1`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @Usage_1 Int32
+SET     @Usage_1 = 0
+
+SELECT
+	`key_data_result`.`Id`,
+	`_v`.`Id`,
+	`_v`.`Usage`,
+	`_v`.`FirstTableId`
+FROM
+	(
+		SELECT DISTINCT
+			`c_1`.`Id`
+		FROM
+			`Table404One` `c_1`
+	) `key_data_result`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`c_1`.`Id`
+FROM
+	`Table404One` `c_1`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @Usage_1 Int32
+SET     @Usage_1 = 1
+
+SELECT
+	`key_data_result`.`Id`,
+	`_v`.`Id`,
+	`_v`.`Usage`,
+	`_v`.`FirstTableId`
+FROM
+	(
+		SELECT DISTINCT
+			`c_1`.`Id`
+		FROM
+			`Table404One` `c_1`
+	) `key_data_result`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`c_1`.`Id`
+FROM
+	`Table404One` `c_1`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
@@ -119,6 +198,85 @@ VALUES
 (4,0,2),
 (5,1,2),
 (6,1,2)
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`key_data_result`.`Id`,
+	`_v`.`Id`,
+	`_v`.`Usage`,
+	`_v`.`FirstTableId`
+FROM
+	(
+		SELECT DISTINCT
+			`c_1`.`Id`
+		FROM
+			`Table404One` `c_1`
+	) `key_data_result`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`FirstTableId` = `key_data_result`.`Id`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`c_1`.`Id`
+FROM
+	`Table404One` `c_1`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @Usage_1 Int32
+SET     @Usage_1 = 0
+
+SELECT
+	`key_data_result`.`Id`,
+	`_v`.`Id`,
+	`_v`.`Usage`,
+	`_v`.`FirstTableId`
+FROM
+	(
+		SELECT DISTINCT
+			`c_1`.`Id`
+		FROM
+			`Table404One` `c_1`
+	) `key_data_result`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`c_1`.`Id`
+FROM
+	`Table404One` `c_1`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @Usage_1 Int32
+SET     @Usage_1 = 1
+
+SELECT
+	`key_data_result`.`Id`,
+	`_v`.`Id`,
+	`_v`.`Usage`,
+	`_v`.`FirstTableId`
+FROM
+	(
+		SELECT DISTINCT
+			`c_1`.`Id`
+		FROM
+			`Table404One` `c_1`
+	) `key_data_result`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`c_1`.`Id`
+FROM
+	`Table404One` `c_1`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

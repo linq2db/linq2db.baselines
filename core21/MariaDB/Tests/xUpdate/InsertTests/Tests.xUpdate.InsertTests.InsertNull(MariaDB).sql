@@ -28,6 +28,16 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
+SELECT
+	Count(*)
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`ParentID` = 1001
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 DELETE `t1`
 FROM
 	`Parent` `t1`

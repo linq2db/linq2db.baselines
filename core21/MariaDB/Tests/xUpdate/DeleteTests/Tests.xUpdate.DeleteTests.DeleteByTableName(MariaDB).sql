@@ -40,6 +40,29 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`xxPerson` `t1`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`t1`.`FirstName`,
+	`t1`.`PersonID`,
+	`t1`.`LastName`,
+	`t1`.`MiddleName`,
+	`t1`.`Gender`
+FROM
+	`xxPerson` `t1`
+LIMIT @take
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -48,6 +71,14 @@ FROM
 	`xxPerson` `t1`
 WHERE
 	`t1`.`PersonID` = @ID
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`xxPerson` `t1`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

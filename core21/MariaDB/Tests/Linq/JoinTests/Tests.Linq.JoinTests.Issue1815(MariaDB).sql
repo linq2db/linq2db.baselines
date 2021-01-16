@@ -59,6 +59,44 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`x`.`InId`,
+	`j`.`InId`,
+	`j`.`InMaxQuantity`,
+	`j`.`InMinQuantity`,
+	`x`.`InMinQuantity`,
+	`x`.`InMaxQuantity`
+FROM
+	`StLink` `x`
+		LEFT JOIN `EdtLink` `j` ON `x`.`InId` = `j`.`InId`
+WHERE
+	`x`.`InId` = 1
+LIMIT @take
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`x`.`InId`,
+	`j`.`InId`,
+	`j`.`InMaxQuantity`,
+	`j`.`InMinQuantity`,
+	`x`.`InMinQuantity`,
+	`x`.`InMaxQuantity`
+FROM
+	`StLink` `x`
+		LEFT JOIN `EdtLink` `j` ON `x`.`InId` = `j`.`InId`
+WHERE
+	`x`.`InId` = 2
+LIMIT @take
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `EdtLink`
 

@@ -31,6 +31,21 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @skip_3 Int32
+SET     @skip_3 = 3
+DECLARE @skip_4 Int32
+SET     @skip_4 = 1
+
+SELECT
+	`t1`.`Value`
+FROM
+	`TakeSkipClass` `t1`
+ORDER BY
+	`t1`.`Value`
+LIMIT @skip_3, @skip_4
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 
