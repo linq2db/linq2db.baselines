@@ -38,24 +38,6 @@ ON CONFLICT ("ID") DO UPDATE SET
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName Text(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	x."ID",
-	x."FirstName",
-	x."LastName",
-	x."MiddleName"
-FROM
-	"TestInsertOrReplaceTable" x
-WHERE
-	x."FirstName" = :FirstName
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName Text(27) -- String
@@ -83,24 +65,6 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"FirstName" = :FirstName,
 	"LastName" = :LastName,
 	"MiddleName" = :MiddleName
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName Text(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	x."ID",
-	x."FirstName",
-	x."LastName",
-	x."MiddleName"
-FROM
-	"TestInsertOrReplaceTable" x
-WHERE
-	x."FirstName" = :FirstName
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

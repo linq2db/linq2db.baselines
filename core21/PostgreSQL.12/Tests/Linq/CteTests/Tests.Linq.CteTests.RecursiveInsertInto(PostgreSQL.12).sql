@@ -101,17 +101,6 @@ FROM
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
-	t1."Level"
-FROM
-	"HierarchyData" t1
-ORDER BY
-	t1."Id"
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "HierarchyData"
 
 BeforeExecute

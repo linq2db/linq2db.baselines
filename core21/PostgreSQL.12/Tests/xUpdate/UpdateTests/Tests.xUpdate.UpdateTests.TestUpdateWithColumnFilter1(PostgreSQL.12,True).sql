@@ -33,25 +33,6 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	x."FirstName",
-	x."PersonID",
-	x."LastName",
-	x."MiddleName",
-	x."Gender"
-FROM
-	"Person" x
-WHERE
-	x."FirstName" = :FirstName
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName Text(25) -- String
-SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName Text(12) -- String
@@ -70,25 +51,6 @@ SET
 	"Gender" = :Gender
 WHERE
 	"Person"."PersonID" = :ID
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName Text(25) -- String
-SET     @FirstName = 'UpdateColumnFilterUpdated'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	x."FirstName",
-	x."PersonID",
-	x."LastName",
-	x."MiddleName",
-	x."Gender"
-FROM
-	"Person" x
-WHERE
-	x."FirstName" = :FirstName
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

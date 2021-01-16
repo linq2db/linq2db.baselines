@@ -30,19 +30,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @group_1 Integer -- Int32
-SET     @group_1 = 7
-
-SELECT
-	p."Id",
-	LEAD(p."Id", 1, -1) OVER(ORDER BY p."Order")
-FROM
-	"Position" p
-WHERE
-	p."Group" = :group_1
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "Position"
 

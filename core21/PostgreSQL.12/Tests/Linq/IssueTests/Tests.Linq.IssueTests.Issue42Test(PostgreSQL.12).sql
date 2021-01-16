@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t1."ID",
-	t1."MoneyValue",
-	t1."DateTimeValue",
-	t1."DateTimeValue2",
-	t1."BoolValue",
-	t1."GuidValue",
-	t1."SmallIntValue",
-	t1."IntValue",
-	t1."BigIntValue",
-	t1."StringValue"
-FROM
-	"LinqDataTypes" t1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @MoneyValue Numeric(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp -- DateTime
@@ -55,26 +35,6 @@ SET
 	"StringValue" = :StringValue
 WHERE
 	"LinqDataTypes"."ID" = :ID
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t1."ID",
-	t1."MoneyValue",
-	t1."DateTimeValue",
-	t1."DateTimeValue2",
-	t1."BoolValue",
-	t1."GuidValue",
-	t1."SmallIntValue",
-	t1."IntValue",
-	t1."BigIntValue",
-	t1."StringValue"
-FROM
-	"LinqDataTypes" t1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
