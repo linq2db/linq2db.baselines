@@ -25,20 +25,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`ID`,
-	`t`.`BigIntValue`
-FROM
-	`LinqDataTypes` `t`
-WHERE
-	`t`.`ID` = 1001
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
 
 DELETE `t1`
 FROM

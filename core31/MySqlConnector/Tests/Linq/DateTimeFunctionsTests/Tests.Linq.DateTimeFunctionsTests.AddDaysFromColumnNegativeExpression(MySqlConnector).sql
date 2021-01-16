@@ -42,22 +42,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @part1 Int32
-SET     @part1 = 4
-DECLARE @part2 Int32
-SET     @part2 = 4
-DECLARE @p_1 Datetime -- DateTime
-SET     @p_1 = '2018-01-02'
-
-SELECT
-	Count(*)
-FROM
-	`LinqDataTypes` `t`
-WHERE
-	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval ((`t`.`SmallIntValue` + @part1) - @part2) Day) < @p_1
-
-BeforeExecute
--- MySqlConnector MySql
 
 DELETE `t1`
 FROM

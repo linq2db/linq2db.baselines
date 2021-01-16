@@ -29,23 +29,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t`.`ID`,
-	`t`.`ID1`
-FROM
-	`DropTableTestID` `t`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE `DropTableTestID`
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`t1`.`ID`,
-	`t1`.`ID1`
-FROM
-	`DropTableTestID` `t1`
 

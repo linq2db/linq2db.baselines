@@ -37,25 +37,5 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`Key_1`,
-	Count(*)
-FROM
-	(
-		SELECT DISTINCT
-			`selectParam`.`Id1` as `Key_1`,
-			`selectParam`.`Id2` as `Key_2`,
-			`selectParam`.`Value` as `Value_1`
-		FROM
-			`GroupSampleClass` `selectParam`
-	) `t1`
-GROUP BY
-	`t1`.`Key_1`,
-	`t1`.`Key_2`
-WITH ROLLUP
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE IF EXISTS `GroupSampleClass`
 

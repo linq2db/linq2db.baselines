@@ -15,18 +15,5 @@ CREATE TABLE `CustomerBase`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`cb`.`Id`,
-	`cb`.`Name`,
-	`cb`.`ContactEmail`,
-	Coalesce(`cb`.`Enabled`, 0)
-FROM
-	`CustomerBase` `cb`
-WHERE
-	`cb`.`ClientType` = 'Client'
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE `CustomerBase`
 

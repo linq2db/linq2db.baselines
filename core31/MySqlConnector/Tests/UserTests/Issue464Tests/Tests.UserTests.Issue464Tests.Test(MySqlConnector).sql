@@ -23,14 +23,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`Issue464` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE `Issue464`
 

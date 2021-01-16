@@ -24,16 +24,6 @@ CREATE TABLE `Books`
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`author`.`Id`,
-	`author`.`Name`
-FROM
-	`Authors` `author`
-		INNER JOIN `Books` `book` ON `book`.`AuthorId` = `author`.`Id`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE `Books`
 
 BeforeExecute

@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t1`.`ID`,
-	`t1`.`MoneyValue`,
-	`t1`.`DateTimeValue`,
-	`t1`.`DateTimeValue2`,
-	`t1`.`BoolValue`,
-	`t1`.`GuidValue`,
-	`t1`.`SmallIntValue`,
-	`t1`.`IntValue`,
-	`t1`.`BigIntValue`,
-	`t1`.`StringValue`
-FROM
-	`LinqDataTypes` `t1`
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @MoneyValue NewDecimal(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Datetime -- DateTime
@@ -55,26 +35,6 @@ SET
 	`t1`.`StringValue` = @StringValue
 WHERE
 	`t1`.`ID` = @ID
-
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t1`.`ID`,
-	`t1`.`MoneyValue`,
-	`t1`.`DateTimeValue`,
-	`t1`.`DateTimeValue2`,
-	`t1`.`BoolValue`,
-	`t1`.`GuidValue`,
-	`t1`.`SmallIntValue`,
-	`t1`.`IntValue`,
-	`t1`.`BigIntValue`,
-	`t1`.`StringValue`
-FROM
-	`LinqDataTypes` `t1`
-LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

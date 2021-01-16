@@ -34,17 +34,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	Max(`t1`.`Value4`),
-	GROUP_CONCAT(`t1`.`Value4` SEPARATOR ' -> ')
-FROM
-	`SampleClass` `t1`
-GROUP BY
-	`t1`.`Id`,
-	`t1`.`Value4`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE IF EXISTS `SampleClass`
 

@@ -25,18 +25,6 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-
-SELECT
-	`entity`.`ID`,
-	`entity`.`BigIntValue`,
-	`entity`.`IntValue`
-FROM
-	`LinqDataTypes` `entity`
-WHERE
-	`entity`.`BigIntValue` = 12
-
-BeforeExecute
--- MySql MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 102
 

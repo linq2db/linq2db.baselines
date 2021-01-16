@@ -29,20 +29,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
-FROM
-	`BlobClass` `_`
-WHERE
-	`_`.`Id` = 1
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @BlobValue Blob(3) -- Binary
 SET     @BlobValue = 0x030201
 
@@ -52,20 +38,6 @@ SET
 	`_`.`BlobValue` = @BlobValue
 WHERE
 	`_`.`Id` = 1
-
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
-FROM
-	`BlobClass` `_`
-WHERE
-	`_`.`Id` = 1
-LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

@@ -50,26 +50,6 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
-SELECT
-	`t`.`Id`,
-	`t`.`Value1`,
-	`t`.`Value2`,
-	`t`.`Enum`,
-	`t`.`EnumNullable`,
-	`t`.`EnumWithNull`,
-	`t`.`EnumWithNullDeclarative`,
-	`t`.`BoolValue`,
-	`t`.`DateTimeNullable`
-FROM
-	`ValueConversion` `t`
-WHERE
-	`t`.`Value2` = @testedList
-
-BeforeExecute
--- MySql MySql.Official MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

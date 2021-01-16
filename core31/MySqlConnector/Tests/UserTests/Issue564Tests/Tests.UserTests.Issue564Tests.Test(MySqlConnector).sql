@@ -50,13 +50,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	Count(*)
-FROM
-	`Parent564` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE `Parent564`
 

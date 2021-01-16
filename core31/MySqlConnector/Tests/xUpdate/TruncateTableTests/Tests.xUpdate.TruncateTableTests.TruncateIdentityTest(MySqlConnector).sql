@@ -40,22 +40,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @skip Int32
-SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`t1`.`ID`,
-	`t1`.`Field1`
-FROM
-	`TestIdTrun` `t1`
-ORDER BY
-	`t1`.`ID`
-LIMIT @skip, @take
-
-BeforeExecute
--- MySqlConnector MySql
 
 TRUNCATE TABLE `TestIdTrun`
 
@@ -82,22 +66,6 @@ VALUES
 (
 	1
 )
-
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @skip Int32
-SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`t1`.`ID`,
-	`t1`.`Field1`
-FROM
-	`TestIdTrun` `t1`
-ORDER BY
-	`t1`.`ID`
-LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector MySql

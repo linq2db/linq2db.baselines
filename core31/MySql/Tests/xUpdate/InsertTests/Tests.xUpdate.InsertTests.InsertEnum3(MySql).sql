@@ -25,18 +25,6 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @id Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	`Parent` `_`
-WHERE
-	`_`.`ParentID` = @id
-
-BeforeExecute
--- MySql MySql.Official MySql
 
 DELETE `t1`
 FROM

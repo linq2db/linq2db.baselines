@@ -25,17 +25,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	1
-FROM
-	`SelectExpressionTable` `_`
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
 
 DROP TABLE IF EXISTS `SelectExpressionTable`
 

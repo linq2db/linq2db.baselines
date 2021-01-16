@@ -4,14 +4,6 @@
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`p`.`ParentID`
-FROM
-	`Parent` `p`
-
-BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
 CREATE TEMPORARY TABLE `TempTable`

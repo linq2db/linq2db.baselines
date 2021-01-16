@@ -42,24 +42,6 @@ FROM
 	`temp_table1` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`t1`.`ID`,
-	`t1`.`Value`
-FROM
-	`temp_table1` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`t1`.`ID`,
-	`t1`.`Value`
-FROM
-	`temp_table2` `t1`
-
-BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 
 INSERT INTO `temp_table1`

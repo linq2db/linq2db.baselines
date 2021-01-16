@@ -46,16 +46,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t1`.`Id`,
-	`t1`.`Int64`
-FROM
-	`CreateTableTypes` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE `CreateTableTypes`
 

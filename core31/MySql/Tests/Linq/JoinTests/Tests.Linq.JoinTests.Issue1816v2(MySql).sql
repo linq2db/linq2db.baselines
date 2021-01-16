@@ -49,18 +49,6 @@ CREATE TABLE IF NOT EXISTS `stMain`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`v`.`inId`,
-	`r`.`inIdState`,
-	`a_Main`.`inIdType`
-FROM
-	`stVersions` `v`
-		INNER JOIN `stMain` `a_Main` ON `v`.`inIdMain` = `a_Main`.`inId`
-		LEFT JOIN `rlStatesTypesAndUserGroups` `r` ON `r`.`inIdType` = `a_Main`.`inIdType`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE IF EXISTS `stMain`
 
 BeforeExecute

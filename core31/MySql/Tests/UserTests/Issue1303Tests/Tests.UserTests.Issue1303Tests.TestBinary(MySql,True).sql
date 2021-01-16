@@ -33,44 +33,5 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`_`.`ID`,
-	`_`.`Array`,
-	`_`.`Binary`
-FROM
-	`Issue1303` `_`
-WHERE
-	`_`.`ID` = 1
-LIMIT 2
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`_`.`ID`,
-	`_`.`Array`,
-	`_`.`Binary`
-FROM
-	`Issue1303` `_`
-WHERE
-	`_`.`Array` = 0x010203
-LIMIT 2
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`_`.`ID`,
-	`_`.`Array`,
-	`_`.`Binary`
-FROM
-	`Issue1303` `_`
-WHERE
-	`_`.`Binary` = 0x0405
-LIMIT 2
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE `Issue1303`
 

@@ -27,18 +27,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @id Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	`Parent` `_`
-WHERE
-	`_`.`ParentID` = @id
-
-BeforeExecute
--- MySqlConnector MySql
 
 DELETE `t1`
 FROM

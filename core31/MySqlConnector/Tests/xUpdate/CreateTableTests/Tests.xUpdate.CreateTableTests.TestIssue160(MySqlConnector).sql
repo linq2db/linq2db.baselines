@@ -30,14 +30,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t1`.`cc`,
-	`t1`.`bb`
-FROM
-	`aa` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE `aa`
 

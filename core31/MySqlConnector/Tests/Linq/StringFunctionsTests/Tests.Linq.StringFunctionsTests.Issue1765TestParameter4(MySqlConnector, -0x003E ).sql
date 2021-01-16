@@ -33,20 +33,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @separator VarChar(4) -- String
-SET     @separator = ' -> '
-
-SELECT
-	Max(`t1`.`Value4`),
-	GROUP_CONCAT(`t1`.`Value4` SEPARATOR @separator)
-FROM
-	`SampleClass` `t1`
-GROUP BY
-	`t1`.`Id`,
-	`t1`.`Value4`
-
-BeforeExecute
--- MySqlConnector MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 

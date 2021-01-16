@@ -34,21 +34,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
-FROM
-	`PR_1598_Insert_Table_Cache` `t`
-WHERE
-	`t`.`Id` = 1
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Int32
@@ -63,21 +48,6 @@ SET
 	`t1`.`Age` = @Age
 WHERE
 	`t1`.`Id` = @Id
-
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
-FROM
-	`PR_1598_Insert_Table_Cache` `t`
-WHERE
-	`t`.`Id` = 1
-LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

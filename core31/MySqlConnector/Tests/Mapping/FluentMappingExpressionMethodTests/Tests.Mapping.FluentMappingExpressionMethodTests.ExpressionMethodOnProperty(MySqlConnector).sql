@@ -45,15 +45,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	Count(*)
-FROM
-	`InstanceClass` `t`
-WHERE
-	(Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) = Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) OR Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) IS NULL AND Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) IS NULL)
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE IF EXISTS `InstanceClass`
 

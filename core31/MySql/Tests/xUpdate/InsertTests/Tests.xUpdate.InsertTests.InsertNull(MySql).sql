@@ -28,16 +28,6 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	Count(*)
-FROM
-	`Parent` `p`
-WHERE
-	`p`.`ParentID` = 1001
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DELETE `t1`
 FROM
 	`Parent` `t1`

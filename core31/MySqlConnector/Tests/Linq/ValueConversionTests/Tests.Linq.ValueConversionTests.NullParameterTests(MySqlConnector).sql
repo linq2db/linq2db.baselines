@@ -51,17 +51,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t`.`Id`,
-	`t`.`Value1`,
-	`t`.`Value2`
-FROM
-	`ValueConversion` `t`
-WHERE
-	`t`.`Value2` IS NULL
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE IF EXISTS `ValueConversion`
 

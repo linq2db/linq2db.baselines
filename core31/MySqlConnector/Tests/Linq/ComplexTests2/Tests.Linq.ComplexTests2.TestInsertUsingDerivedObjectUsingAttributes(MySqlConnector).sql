@@ -36,23 +36,6 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
-	`_`.`Gender`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -73,23 +56,6 @@ SET
 	`t1`.`Gender` = @Gender
 WHERE
 	`t1`.`PersonID` = @ID
-
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
-	`_`.`Gender`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

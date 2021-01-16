@@ -21,13 +21,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`row_1`.`Value`
-FROM
-	`ValueItem` `row_1`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE `ValueItem`
 

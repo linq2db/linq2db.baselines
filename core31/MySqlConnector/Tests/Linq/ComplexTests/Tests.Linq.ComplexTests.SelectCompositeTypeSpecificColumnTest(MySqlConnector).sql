@@ -12,21 +12,5 @@ CREATE TABLE `User`
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`u`.`city`
-FROM
-	`User` `u`
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`u`.`street`
-FROM
-	`User` `u`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE `User`
 

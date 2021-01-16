@@ -29,13 +29,5 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`d`.`Not Identifier`
-FROM
-	`DynamicTable` `d`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE IF EXISTS `DynamicTable`
 

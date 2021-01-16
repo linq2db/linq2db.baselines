@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	Count(*)
-FROM
-	`AllTypes` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_SCHEMA = database()
 
 BeforeExecute

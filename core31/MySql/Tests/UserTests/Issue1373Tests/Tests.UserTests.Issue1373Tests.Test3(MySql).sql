@@ -66,16 +66,5 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
-	`t1`.`Field1`
-FROM
-	`Issue1373Tests` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE `Issue1373Tests`
 

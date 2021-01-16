@@ -50,13 +50,5 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	Count(*)
-FROM
-	`Parent564` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE `Parent564`
 

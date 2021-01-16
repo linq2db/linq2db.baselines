@@ -32,31 +32,7 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-SELECT
-	Count(*)
-FROM
-	`Parent` `p`
-WHERE
-	`p`.`ParentID` = @ParentID
-
-BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @ParentID Int32
-SET     @ParentID = 1001
-
 DELETE `p`
-FROM
-	`Parent` `p`
-WHERE
-	`p`.`ParentID` = @ParentID
-
-BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @ParentID Int32
-SET     @ParentID = 1001
-
-SELECT
-	Count(*)
 FROM
 	`Parent` `p`
 WHERE

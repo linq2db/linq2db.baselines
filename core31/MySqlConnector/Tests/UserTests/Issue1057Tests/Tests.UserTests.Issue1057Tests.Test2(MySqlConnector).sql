@@ -82,30 +82,6 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`p`.`Id`,
-	`p`.`TargetName`,
-	`a_ActualStage`.`Id`
-FROM
-	`Task` `p`
-		LEFT JOIN `TaskStage` `a_ActualStage` ON `p`.`Id` = `a_ActualStage`.`TaskId` AND `a_ActualStage`.`Actual` = 1
-WHERE
-	`p`.`TargetName` = 'bda.Requests'
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`p`.`Id`,
-	`p`.`TargetName`,
-	`a_ActualStage`.`Id`
-FROM
-	`Task` `p`
-		LEFT JOIN `TaskStage` `a_ActualStage` ON `p`.`Id` = `a_ActualStage`.`TaskId` AND `a_ActualStage`.`Actual` = 1
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE `TaskStage`
 
 BeforeExecute

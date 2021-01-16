@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-
-SELECT
-	Max(`t`.`PersonID`)
-FROM
-	`Person` `t`
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender String(1) -- StringFixedLength

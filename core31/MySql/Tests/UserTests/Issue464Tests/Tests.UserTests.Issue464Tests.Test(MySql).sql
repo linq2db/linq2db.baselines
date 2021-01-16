@@ -23,14 +23,5 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`Issue464` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE `Issue464`
 

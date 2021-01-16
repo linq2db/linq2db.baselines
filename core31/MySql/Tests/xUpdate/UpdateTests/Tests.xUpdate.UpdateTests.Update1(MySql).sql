@@ -30,36 +30,12 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-SELECT
-	Count(*)
-FROM
-	`Parent` `p`
-WHERE
-	`p`.`ParentID` = @ParentID
-
-BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @ParentID Int32
-SET     @ParentID = 1001
-
 UPDATE
 	`Parent` `t1`
 SET
 	`t1`.`ParentID` = `t1`.`ParentID` + 1
 WHERE
 	`t1`.`ParentID` = @ParentID
-
-BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @ParentID Int32
-SET     @ParentID = 1002
-
-SELECT
-	Count(*)
-FROM
-	`Parent` `p`
-WHERE
-	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql MySql.Official MySql

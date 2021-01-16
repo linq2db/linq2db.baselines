@@ -34,21 +34,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
-FROM
-	`PR_1598_Update_Table` `t`
-WHERE
-	`t`.`Id` = 1
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'Franki'
 DECLARE @Age Int32
@@ -66,21 +51,6 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
-FROM
-	`PR_1598_Update_Table` `t`
-WHERE
-	`t`.`Id` = 1
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Id Int32
@@ -92,21 +62,6 @@ SET
 	`t1`.`Name` = @Name
 WHERE
 	`t1`.`Id` = @Id
-
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`Id`,
-	`t`.`Name`,
-	`t`.`Age`
-FROM
-	`PR_1598_Update_Table` `t`
-WHERE
-	`t`.`Id` = 1
-LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

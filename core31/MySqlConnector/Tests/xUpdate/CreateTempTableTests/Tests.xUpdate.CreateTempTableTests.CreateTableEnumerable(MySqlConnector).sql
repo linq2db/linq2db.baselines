@@ -6,14 +6,6 @@ DROP TABLE IF EXISTS `TempTable`
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`p`.`ParentID`
-FROM
-	`Parent` `p`
-
-BeforeExecute
--- MySqlConnector MySql
-
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`ID` INT NOT NULL
@@ -34,15 +26,6 @@ VALUES
 (5),
 (6),
 (7)
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`t`.`ID`
-FROM
-	`Parent` `p`
-		INNER JOIN `TempTable` `t` ON `p`.`ParentID` = `t`.`ID`
 
 BeforeExecute
 -- MySqlConnector MySql
