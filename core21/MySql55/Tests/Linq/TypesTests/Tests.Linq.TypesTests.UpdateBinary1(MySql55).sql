@@ -10,13 +10,3 @@ SET
 WHERE
 	`t`.`ID` = 1
 
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
-	`t`.`BinaryValue`
-FROM
-	`LinqDataTypes` `t`
-WHERE
-	`t`.`ID` = 1
-

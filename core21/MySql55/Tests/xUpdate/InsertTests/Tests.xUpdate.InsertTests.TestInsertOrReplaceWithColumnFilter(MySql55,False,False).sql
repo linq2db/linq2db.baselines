@@ -43,24 +43,6 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @FirstName VarChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`x`.`ID`,
-	`x`.`FirstName`,
-	`x`.`LastName`,
-	`x`.`MiddleName`
-FROM
-	`TestInsertOrReplaceTable` `x`
-WHERE
-	`x`.`FirstName` = @FirstName
-LIMIT @take
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -83,24 +65,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`FirstName` = @FirstName,
 	`LastName` = @LastName
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @FirstName VarChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`x`.`ID`,
-	`x`.`FirstName`,
-	`x`.`LastName`,
-	`x`.`MiddleName`
-FROM
-	`TestInsertOrReplaceTable` `x`
-WHERE
-	`x`.`FirstName` = @FirstName
-LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

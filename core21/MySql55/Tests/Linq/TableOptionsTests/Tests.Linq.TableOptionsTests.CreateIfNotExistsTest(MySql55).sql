@@ -29,15 +29,6 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`CreateIfNotExistsTable` `t1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
 	`Id`    INT NOT NULL,

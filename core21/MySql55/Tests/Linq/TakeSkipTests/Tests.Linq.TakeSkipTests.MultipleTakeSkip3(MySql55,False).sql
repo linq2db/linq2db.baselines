@@ -32,16 +32,5 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`t1`.`Value`
-FROM
-	`TakeSkipClass` `t1`
-ORDER BY
-	`t1`.`Value`
-LIMIT 3, 1
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 DROP TABLE IF EXISTS `TakeSkipClass`
 

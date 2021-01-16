@@ -92,17 +92,6 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`v`.`id`,
-	`v`.`Value1`,
-	`v`.`Value2`,
-	`v`.`Value3`
-FROM
-	`UpdatedEntities` `v`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 DROP TABLE IF EXISTS `NewEntities`
 
 BeforeExecute

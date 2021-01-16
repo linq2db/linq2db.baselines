@@ -29,23 +29,5 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`t`.`ID`,
-	`t`.`ID1`
-FROM
-	`DropTableTestID` `t`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 DROP TABLE `DropTableTestID`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
-	`t1`.`ID`,
-	`t1`.`ID1`
-FROM
-	`DropTableTestID` `t1`
 

@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	Count(*)
-FROM
-	`AllTypes` `t1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_SCHEMA = database()
 
 BeforeExecute
@@ -230,14 +222,6 @@ DECLARE @param1 Int32
 SET     @param1 = NULL
 
 `testdata`.`TestProcedure`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
-	Count(*)
-FROM
-	`AllTypes` `t1`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

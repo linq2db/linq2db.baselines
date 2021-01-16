@@ -27,18 +27,6 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @id Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	`Parent` `p`
-WHERE
-	`p`.`ParentID` = @id AND `p`.`Value1` = 1
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 DECLARE @Value1 Int32
 SET     @Value1 = 2
 DECLARE @id Int32
@@ -53,18 +41,6 @@ WHERE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @id Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	`Parent` `p`
-WHERE
-	`p`.`ParentID` = @id AND `p`.`Value1` = 2
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 DECLARE @Value1 Int32
 SET     @Value1 = 3
 DECLARE @id Int32
@@ -76,18 +52,6 @@ SET
 	`p`.`Value1` = @Value1
 WHERE
 	`p`.`ParentID` = @id
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @id Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	`Parent` `p`
-WHERE
-	`p`.`ParentID` = @id AND `p`.`Value1` = 3
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

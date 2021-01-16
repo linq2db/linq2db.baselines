@@ -30,21 +30,6 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @skip_2 Int32
-SET     @skip_2 = 3
-DECLARE @take_2 Int32
-SET     @take_2 = 2
-
-SELECT
-	`t1`.`Value`
-FROM
-	`TakeSkipClass` `t1`
-ORDER BY
-	`t1`.`Value`
-LIMIT @skip_2, @take_2
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 

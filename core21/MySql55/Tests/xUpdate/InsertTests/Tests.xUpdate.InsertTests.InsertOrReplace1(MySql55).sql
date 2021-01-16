@@ -88,22 +88,6 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 2
-
-SELECT
-	`p`.`PersonID`,
-	`p`.`Diagnosis`
-FROM
-	`Patient` `p`
-WHERE
-	`p`.`PersonID` = @id
-LIMIT @take
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @id Int32
-SET     @id = 5
 
 DELETE `t1`
 FROM

@@ -20,23 +20,6 @@ CREATE TABLE `Relationship1711`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`t`.`Id`
-FROM
-	`Entity1711` `t`
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			`Relationship1711` `r`
-		WHERE
-			`r`.`Deleted` = 0 AND `r`.`EntityId` = `t`.`Id`
-	)
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 DROP TABLE `Relationship1711`
 
 BeforeExecute

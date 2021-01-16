@@ -50,20 +50,6 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
-SELECT
-	`t`.`Id`,
-	`t`.`Value1`,
-	`t`.`Value2`
-FROM
-	`ValueConversion` `t`
-WHERE
-	@testedList = `t`.`Value2`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

@@ -43,16 +43,6 @@ WHERE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-
-SELECT
-	Count(*)
-FROM
-	`LinqDataTypes` `r`
-WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` = 11
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 102
 

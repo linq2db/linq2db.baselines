@@ -28,20 +28,6 @@ WHERE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t`.`ParentID`,
-	`t`.`Value1`
-FROM
-	`Parent` `t`
-WHERE
-	`t`.`ParentID` = 1010
-LIMIT @take
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 
 DELETE `t1`
 FROM
