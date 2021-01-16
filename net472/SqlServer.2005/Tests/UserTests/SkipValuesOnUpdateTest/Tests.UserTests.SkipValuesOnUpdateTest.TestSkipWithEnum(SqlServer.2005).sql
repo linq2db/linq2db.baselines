@@ -39,21 +39,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
-	[t].[Gender]
-FROM
-	[PR_1598_Update_Enum_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Jack'
 DECLARE @Age Int -- Int32
@@ -76,21 +61,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
-	[t].[Gender]
-FROM
-	[PR_1598_Update_Enum_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Francine'
 DECLARE @Age Int -- Int32
@@ -107,21 +77,6 @@ FROM
 	[PR_1598_Update_Enum_Table] [t1]
 WHERE
 	[t1].[Id] = @Id
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
-	[t].[Gender]
-FROM
-	[PR_1598_Update_Enum_Table] [t]
-WHERE
-	[t].[Id] = 1
 
 BeforeExecute
 -- SqlServer.2005

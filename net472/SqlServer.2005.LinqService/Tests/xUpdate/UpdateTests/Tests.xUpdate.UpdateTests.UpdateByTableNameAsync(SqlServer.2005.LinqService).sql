@@ -46,28 +46,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-
-SELECT
-	Count(*)
-FROM
-	[xxPerson] [t1]
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
-FROM
-	[xxPerson] [t1]
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -90,20 +68,6 @@ FROM
 	[xxPerson] [t1]
 WHERE
 	[t1].[PersonID] = @ID
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
-FROM
-	[xxPerson] [t1]
 
 BeforeExecute
 -- SqlServer.2005

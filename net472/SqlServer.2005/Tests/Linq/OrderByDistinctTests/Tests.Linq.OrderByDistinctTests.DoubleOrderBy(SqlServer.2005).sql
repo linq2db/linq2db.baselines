@@ -49,29 +49,6 @@ SELECT 600,N'Three',5,5
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 3
-
-SELECT
-	[c_1].[Id],
-	[c_1].[DuplicateData],
-	[c_1].[OrderData1],
-	[c_1].[OrderData2]
-FROM
-	(
-		SELECT TOP (@take)
-			[t1].[Id]
-		FROM
-			[OrderByDistinctData] [t1]
-		ORDER BY
-			[t1].[OrderData2]
-	) [q2]
-		INNER JOIN [OrderByDistinctData] [c_1] ON [c_1].[Id] = [q2].[Id]
-ORDER BY
-	[c_1].[OrderData1]
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
 	DROP TABLE [OrderByDistinctData]

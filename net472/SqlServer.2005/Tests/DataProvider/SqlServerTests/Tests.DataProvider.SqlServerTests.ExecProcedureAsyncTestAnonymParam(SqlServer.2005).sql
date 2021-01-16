@@ -1,14 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	DB_NAME()
-FROM
-	[LinqDataTypes] [_]
-
-BeforeExecute
 -- SqlServer.2005 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'233bf399-9710-4e79-873d-2ec7bf1e0001'

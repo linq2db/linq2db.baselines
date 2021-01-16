@@ -31,16 +31,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	1
-FROM
-	[SelectExpressionTable] [_]
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NOT NULL)
 	DROP TABLE [SelectExpressionTable]

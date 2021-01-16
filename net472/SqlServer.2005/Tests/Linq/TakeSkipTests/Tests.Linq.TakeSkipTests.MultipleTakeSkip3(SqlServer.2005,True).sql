@@ -32,26 +32,6 @@ SELECT 'Value9'
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @skip_3 Int -- Int32
-SET     @skip_3 = 3
-DECLARE @skip_4 Int -- Int32
-SET     @skip_4 = 4
-
-SELECT
-	[t2].[Value_1]
-FROM
-	(
-		SELECT
-			[t1].[Value] as [Value_1],
-			ROW_NUMBER() OVER (ORDER BY [t1].[Value]) as [RN]
-		FROM
-			[TakeSkipClass] [t1]
-	) [t2]
-WHERE
-	[t2].[RN] > @skip_3 AND [t2].[RN] <= @skip_4
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
 	DROP TABLE [TakeSkipClass]

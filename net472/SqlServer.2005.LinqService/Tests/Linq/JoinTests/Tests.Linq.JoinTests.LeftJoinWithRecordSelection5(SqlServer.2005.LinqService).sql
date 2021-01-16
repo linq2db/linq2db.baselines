@@ -145,20 +145,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[ft].[Id],
-	[t].[Id],
-	[t].[FactId],
-	[t].[Name]
-FROM
-	[Fact] [ft]
-		LEFT JOIN [Tag] [t] ON [t].[FactId] = [ft].[Id]
-WHERE
-	[ft].[Id] > 3
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
 	DROP TABLE [Tag]
 

@@ -55,19 +55,6 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT
-	[p].[PersonID],
-	[p].[Diagnosis]
-FROM
-	[Patient] [p]
-WHERE
-	[p].[PersonID] = @id
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @id Int -- Int32
-SET     @id = 5
-
 BEGIN TRAN
 
 IF NOT EXISTS(
@@ -91,19 +78,6 @@ BEGIN
 END
 
 COMMIT
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-SELECT
-	[p].[PersonID],
-	[p].[Diagnosis]
-FROM
-	[Patient] [p]
-WHERE
-	[p].[PersonID] = @id
 
 BeforeExecute
 -- SqlServer.2005

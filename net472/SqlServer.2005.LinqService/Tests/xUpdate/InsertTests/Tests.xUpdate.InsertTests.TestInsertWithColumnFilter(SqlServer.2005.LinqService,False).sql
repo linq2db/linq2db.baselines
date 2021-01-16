@@ -22,24 +22,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'InsertColumnFilter'
-
-SELECT TOP (@take)
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
-FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @newName NVarChar(4000) -- String
 SET     @newName = N'InsertColumnFilter'
 

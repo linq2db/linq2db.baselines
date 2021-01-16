@@ -83,33 +83,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-
-SELECT
-	[r].[ID],
-	[r].[StringValue]
-FROM
-	[LinqDataTypes] [r]
-WHERE
-	[r].[ID] >= 101 AND [r].[ID] <= 104
-ORDER BY
-	[r].[ID]
-
-BeforeExecute
--- SqlServer.2005
-
-SELECT
-	[r].[ID],
-	[r].[IntValue],
-	[r].[StringValue]
-FROM
-	[LinqDataTypes] [r]
-WHERE
-	[r].[ID] >= 101 AND [r].[ID] <= 104
-ORDER BY
-	[r].[ID]
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 105
 

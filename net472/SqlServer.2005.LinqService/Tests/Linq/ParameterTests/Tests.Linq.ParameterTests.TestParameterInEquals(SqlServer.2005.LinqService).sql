@@ -18,23 +18,6 @@ CREATE TABLE [TestEqualsTable2]
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[_].[Id]
-FROM
-	[TestEqualsTable1] [_]
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[TestEqualsTable2] [__]
-		WHERE
-			[_].[Id] = [__].[FK] AND [__].[Id] IS NULL
-	)
-
-BeforeExecute
--- SqlServer.2005
-
 DROP TABLE [TestEqualsTable2]
 
 BeforeExecute

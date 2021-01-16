@@ -34,20 +34,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Mixed_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Age Int -- Int32
 SET     @Age = 20
 DECLARE @Id Int -- Int32
@@ -61,20 +47,6 @@ FROM
 	[PR_1598_Mixed_Table] [t1]
 WHERE
 	[t1].[Id] = @Id
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Mixed_Table] [t]
-WHERE
-	[t].[Id] = 1
 
 BeforeExecute
 -- SqlServer.2005
@@ -96,20 +68,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Mixed_Table] [t]
-WHERE
-	[t].[Id] = 2
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Jessy'
 DECLARE @Age Int -- Int32
@@ -126,20 +84,6 @@ FROM
 	[PR_1598_Mixed_Table] [t1]
 WHERE
 	[t1].[Id] = @Id
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Mixed_Table] [t]
-WHERE
-	[t].[Id] = 2
 
 BeforeExecute
 -- SqlServer.2005

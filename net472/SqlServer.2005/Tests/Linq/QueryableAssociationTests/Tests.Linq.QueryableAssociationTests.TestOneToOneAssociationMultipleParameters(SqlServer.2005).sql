@@ -81,27 +81,6 @@ SELECT 2,N'French'
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
-
-SELECT TOP (@take)
-	[x_1].[Id],
-	[a_FirstUserWithMultipleParameters].[Id]
-FROM
-	[UserGroup] [x_1]
-		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[x].[Id]
-			FROM
-				[User] [x]
-			WHERE
-				[x].[UserGroupId] = [x_1].[Id]
-		) [a_FirstUserWithMultipleParameters]
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
 	DROP TABLE [Language]

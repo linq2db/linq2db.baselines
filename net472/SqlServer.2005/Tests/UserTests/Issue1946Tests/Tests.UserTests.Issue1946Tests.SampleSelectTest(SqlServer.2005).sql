@@ -28,18 +28,6 @@ SELECT 1,0
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @maxVersion Int -- Int32
-SET     @maxVersion = 1
-
-SELECT
-	[u].[Id]
-FROM
-	[Users] [u]
-WHERE
-	[u].[Version] < @maxVersion
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[Users]', N'U') IS NOT NULL)
 	DROP TABLE [Users]

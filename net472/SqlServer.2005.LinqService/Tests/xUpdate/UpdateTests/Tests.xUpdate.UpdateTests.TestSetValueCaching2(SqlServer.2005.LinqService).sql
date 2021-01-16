@@ -77,20 +77,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-DECLARE @id Int -- Int32
-SET     @id = 1
-
-SELECT TOP (@take)
-	[_].[Value2]
-FROM
-	[UpdateSetTest] [_]
-WHERE
-	[_].[Id] = @id
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Value2 Int -- Int32
 SET     @Value2 = 12
 DECLARE @id Int -- Int32
@@ -100,20 +86,6 @@ UPDATE
 	[_]
 SET
 	[_].[Value2] = @Value2
-FROM
-	[UpdateSetTest] [_]
-WHERE
-	[_].[Id] = @id
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-DECLARE @id Int -- Int32
-SET     @id = 1
-
-SELECT TOP (@take)
-	[_].[Value2]
 FROM
 	[UpdateSetTest] [_]
 WHERE

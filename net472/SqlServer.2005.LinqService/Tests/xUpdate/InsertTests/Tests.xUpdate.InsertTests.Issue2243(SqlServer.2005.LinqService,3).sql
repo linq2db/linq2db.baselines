@@ -54,19 +54,6 @@ COMMIT
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[t1].[id],
-	[t1].[name],
-	[t1].[created_by],
-	[t1].[updated_by]
-FROM
-	[test_insert_or_replace] [t1]
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Test2'
 DECLARE @UpdatedBy NVarChar(4000) -- String
@@ -105,19 +92,6 @@ BEGIN
 END
 
 COMMIT
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[t1].[id],
-	[t1].[name],
-	[t1].[created_by],
-	[t1].[updated_by]
-FROM
-	[test_insert_or_replace] [t1]
 
 BeforeExecute
 -- SqlServer.2005

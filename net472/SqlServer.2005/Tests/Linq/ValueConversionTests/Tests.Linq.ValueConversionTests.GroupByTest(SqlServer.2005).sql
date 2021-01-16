@@ -51,42 +51,6 @@ SELECT 10,NULL,NULL,N'Value1','Value2','Value2','Value2','N',NULL
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @testedList NVarChar(200) -- String
-SET     @testedList = N'[{"Value":"Value1"}]'
-
-SELECT
-	[t].[Id]
-FROM
-	[ValueConversion] [t]
-WHERE
-	@testedList = [t].[Value2]
-GROUP BY
-	[t].[Id]
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @Value2 NVarChar(200) -- String
-SET     @Value2 = N'[{"Value":"Value1"}]'
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-
-SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
-	[t].[Enum],
-	[t].[EnumNullable],
-	[t].[EnumWithNull],
-	[t].[EnumWithNullDeclarative],
-	[t].[BoolValue],
-	[t].[DateTimeNullable]
-FROM
-	[ValueConversion] [t]
-WHERE
-	@Value2 = [t].[Value2] AND [t].[Id] = @Id
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
 	DROP TABLE [ValueConversion]

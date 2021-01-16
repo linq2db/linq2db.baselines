@@ -32,16 +32,6 @@ SELECT 'Value8'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT TOP (1)
-	[t1].[Value]
-FROM
-	[TakeSkipClass] [t1]
-ORDER BY
-	[t1].[Value]
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
 	DROP TABLE [TakeSkipClass]
 

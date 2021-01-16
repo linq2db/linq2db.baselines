@@ -50,13 +50,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	Count(*)
-FROM
-	[Parent564] [t1]
-
-BeforeExecute
--- SqlServer.2005
-
 DROP TABLE [Parent564]
 

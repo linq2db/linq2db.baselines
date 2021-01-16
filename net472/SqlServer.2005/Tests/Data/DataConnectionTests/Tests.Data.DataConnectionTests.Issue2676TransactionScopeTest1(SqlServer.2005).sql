@@ -51,16 +51,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[_].[Id]
-FROM
-	[TransactionScopeTable] [_]
-ORDER BY
-	[_].[Id]
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[TransactionScopeTable]', N'U') IS NOT NULL)
 	DROP TABLE [TransactionScopeTable]
 

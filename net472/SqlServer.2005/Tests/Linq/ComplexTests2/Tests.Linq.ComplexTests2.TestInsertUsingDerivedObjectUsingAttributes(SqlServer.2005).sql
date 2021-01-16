@@ -33,22 +33,6 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
-FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] = N'test_inherited_insert'
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test_inherited_insert'
 DECLARE @LastName NVarChar(4000) -- String
@@ -71,22 +55,6 @@ FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] = @ID
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
-FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] = N'test_inherited_insert'
 
 BeforeExecute
 -- SqlServer.2005

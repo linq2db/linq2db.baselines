@@ -89,35 +89,6 @@ SELECT 2,2
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @EventId Int -- Int32
-SET     @EventId = 1
-
-SELECT
-	[p].[Id],
-	[detail].[EventSchedulePersonId],
-	[detail].[Id],
-	[a_Person].[TicketNumberId]
-FROM
-	[EventScheduleItem] [p]
-		INNER JOIN [EventScheduleItemPerson] [detail] ON [p].[Id] = [detail].[EventScheduleItemId]
-		LEFT JOIN [EventSchedulePerson] [a_Person] ON [detail].[EventSchedulePersonId] = [a_Person].[Id]
-WHERE
-	[p].[EventId] = @EventId AND [p].[IsActive] = 1
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @eventId Int -- Int32
-SET     @eventId = 1
-
-SELECT
-	[p].[Id]
-FROM
-	[EventScheduleItem] [p]
-WHERE
-	[p].[EventId] = @eventId AND [p].[IsActive] = 1
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NOT NULL)
 	DROP TABLE [EventSchedulePerson]

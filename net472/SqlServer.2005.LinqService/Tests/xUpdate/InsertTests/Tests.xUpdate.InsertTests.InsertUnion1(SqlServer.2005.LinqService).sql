@@ -36,16 +36,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	Count(*)
-FROM
-	[Parent] [c_1]
-WHERE
-	[c_1].[ParentID] > 1000
-
-BeforeExecute
--- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[Parent] [t1]

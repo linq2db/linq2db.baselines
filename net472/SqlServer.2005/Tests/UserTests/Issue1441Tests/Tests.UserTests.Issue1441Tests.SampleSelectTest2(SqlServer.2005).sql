@@ -24,16 +24,6 @@ CREATE TABLE [Books]
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[author].[Id],
-	[author].[Name]
-FROM
-	[Authors] [author]
-		INNER JOIN [Books] [book] ON [book].[AuthorId] = [author].[Id]
-
-BeforeExecute
--- SqlServer.2005
-
 DROP TABLE [Books]
 
 BeforeExecute

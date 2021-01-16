@@ -10,22 +10,5 @@ CREATE TABLE [Issue1982Table]
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[Issue1982Table] [_]
-			WHERE
-				[_].[Time] < Cast(Convert(Char, [_].[DateTime], 114) as DateTime)
-		)
-			THEN 1
-		ELSE 0
-	END
-
-BeforeExecute
--- SqlServer.2005
-
 DROP TABLE [Issue1982Table]
 

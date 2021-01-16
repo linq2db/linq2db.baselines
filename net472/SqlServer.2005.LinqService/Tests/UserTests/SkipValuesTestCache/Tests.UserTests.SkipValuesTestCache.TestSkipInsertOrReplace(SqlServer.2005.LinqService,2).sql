@@ -51,20 +51,6 @@ COMMIT
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Insert_Table_Cache] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
 DECLARE @Age Int -- Int32
@@ -101,20 +87,6 @@ BEGIN
 END
 
 COMMIT
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Insert_Table_Cache] [t]
-WHERE
-	[t].[Id] = 1
 
 BeforeExecute
 -- SqlServer.2005

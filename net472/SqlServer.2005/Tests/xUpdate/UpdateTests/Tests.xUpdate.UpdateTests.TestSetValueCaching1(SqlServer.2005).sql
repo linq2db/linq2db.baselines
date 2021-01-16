@@ -54,20 +54,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-DECLARE @id Int -- Int32
-SET     @id = 1
-
-SELECT TOP (@take)
-	[_].[Value1]
-FROM
-	[UpdateSetTest] [_]
-WHERE
-	[_].[Id] = @id
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Value1 UniqueIdentifier -- Guid
 SET     @Value1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @id Int -- Int32
@@ -77,20 +63,6 @@ UPDATE
 	[_]
 SET
 	[_].[Value1] = @Value1
-FROM
-	[UpdateSetTest] [_]
-WHERE
-	[_].[Id] = @id
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-DECLARE @id Int -- Int32
-SET     @id = 1
-
-SELECT TOP (@take)
-	[_].[Value1]
 FROM
 	[UpdateSetTest] [_]
 WHERE

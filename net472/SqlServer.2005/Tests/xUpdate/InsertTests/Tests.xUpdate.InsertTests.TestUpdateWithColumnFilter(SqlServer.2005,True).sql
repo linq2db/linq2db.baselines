@@ -31,24 +31,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'InsertColumnFilter'
-
-SELECT TOP (@take)
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
-FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 DECLARE @LastName NVarChar(4000) -- String
@@ -71,24 +53,6 @@ FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] = @ID
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'InsertColumnFilter'
-
-SELECT TOP (@take)
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
-FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlServer.2005

@@ -157,25 +157,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-
-SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[AsyncDataTable] [c_1]
-			WHERE
-				[c_1].[Id] = @Id
-		)
-			THEN 1
-		ELSE 0
-	END
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NOT NULL)
 	DROP TABLE [AsyncDataTable]

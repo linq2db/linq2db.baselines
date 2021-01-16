@@ -56,18 +56,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[Not Identifier],
-	Count(*),
-	Sum([t1].[Some Value])
-FROM
-	[DynamicTable] [t1]
-GROUP BY
-	[t1].[Not Identifier]
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
 	DROP TABLE [DynamicTable]
 

@@ -31,24 +31,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'UpdateColumnFilter'
-
-SELECT TOP (@take)
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
-FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
 DECLARE @ID Int -- Int32
@@ -62,24 +44,6 @@ FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] = @ID
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-DECLARE @ID Int -- Int32
-SET     @ID = 5
-
-SELECT TOP (@take)
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
-FROM
-	[Person] [x]
-WHERE
-	[x].[PersonID] = @ID
 
 BeforeExecute
 -- SqlServer.2005
@@ -105,24 +69,6 @@ FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] = @ID
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-DECLARE @ID Int -- Int32
-SET     @ID = 5
-
-SELECT TOP (@take)
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
-FROM
-	[Person] [_]
-WHERE
-	[_].[PersonID] = @ID
 
 BeforeExecute
 -- SqlServer.2005

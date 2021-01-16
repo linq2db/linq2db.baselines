@@ -15,18 +15,5 @@ CREATE TABLE [CustomerBase]
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[cb].[Id],
-	[cb].[Name],
-	[cb].[ContactEmail],
-	Coalesce([cb].[Enabled], 0)
-FROM
-	[CustomerBase] [cb]
-WHERE
-	[cb].[ClientType] = N'Client'
-
-BeforeExecute
--- SqlServer.2005
-
 DROP TABLE [CustomerBase]
 

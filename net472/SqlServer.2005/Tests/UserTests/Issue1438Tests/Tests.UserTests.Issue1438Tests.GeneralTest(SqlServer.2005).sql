@@ -27,21 +27,6 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-DECLARE @id Int -- Int32
-SET     @id = 1
-
-SELECT TOP (@take)
-	[_].[Id],
-	[_].[Has]
-FROM
-	[Issue1438] [_]
-WHERE
-	[_].[Id] = @id
-
-BeforeExecute
--- SqlServer.2005
 
 DROP TABLE [Issue1438]
 

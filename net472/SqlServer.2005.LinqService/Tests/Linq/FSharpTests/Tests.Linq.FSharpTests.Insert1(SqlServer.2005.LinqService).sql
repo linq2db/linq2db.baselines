@@ -28,16 +28,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	Count(*)
-FROM
-	[Child] [c_1]
-WHERE
-	[c_1].[ChildID] = 1001
-
-BeforeExecute
--- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[Child] [t1]

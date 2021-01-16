@@ -21,13 +21,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[row_1].[Value]
-FROM
-	[ValueItem] [row_1]
-
-BeforeExecute
--- SqlServer.2005
-
 DROP TABLE [ValueItem]
 

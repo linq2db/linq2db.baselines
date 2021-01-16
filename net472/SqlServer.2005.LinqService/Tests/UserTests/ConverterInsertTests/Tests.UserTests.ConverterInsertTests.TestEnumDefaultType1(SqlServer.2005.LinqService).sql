@@ -33,24 +33,6 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-SELECT TOP (@take)
-	[t].[PersonID],
-	[t].[FirstName],
-	[t].[LastName],
-	[t].[MiddleName],
-	[t].[Gender]
-FROM
-	[Person] [t]
-WHERE
-	[t].[PersonID] = @id
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 DECLARE @FirstName NVarChar(4000) -- String

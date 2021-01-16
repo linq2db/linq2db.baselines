@@ -31,17 +31,6 @@ SELECT N'Springwood',N'Freddy',N'Elm Street',13
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[city],
-	[t1].[user_name],
-	[t1].[street],
-	[t1].[building_number]
-FROM
-	[User] [t1]
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
 	DROP TABLE [User]
 

@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[DateTimeValue2],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[SmallIntValue],
-	[t1].[IntValue],
-	[t1].[BigIntValue],
-	[t1].[StringValue]
-FROM
-	[LinqDataTypes] [t1]
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
@@ -56,25 +37,6 @@ FROM
 	[LinqDataTypes] [t1]
 WHERE
 	[t1].[ID] = @ID
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[DateTimeValue2],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[SmallIntValue],
-	[t1].[IntValue],
-	[t1].[BigIntValue],
-	[t1].[StringValue]
-FROM
-	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlServer.2005
