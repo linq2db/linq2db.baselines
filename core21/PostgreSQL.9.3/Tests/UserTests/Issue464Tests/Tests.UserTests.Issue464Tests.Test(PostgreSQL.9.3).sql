@@ -23,14 +23,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t1."Id",
-	t1."Value"
-FROM
-	"Issue464" t1
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
 DROP TABLE "Issue464"
 

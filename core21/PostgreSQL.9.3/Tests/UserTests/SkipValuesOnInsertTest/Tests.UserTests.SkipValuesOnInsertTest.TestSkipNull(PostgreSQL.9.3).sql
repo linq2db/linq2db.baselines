@@ -30,21 +30,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."Id",
-	t."Name",
-	t."Age"
-FROM
-	"PR_1598_Insert_Null_Table" t
-WHERE
-	t."Id" = 1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
 
 DROP TABLE "PR_1598_Insert_Null_Table"
 

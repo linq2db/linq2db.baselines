@@ -27,16 +27,6 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	Count(*)
-FROM
-	"Parent" p
-WHERE
-	p."ParentID" = 1001
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
 DELETE FROM
 	"Parent" t1
 WHERE

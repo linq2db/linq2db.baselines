@@ -35,16 +35,6 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	Count(*)
-FROM
-	"Person" p
-WHERE
-	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
 DELETE FROM
 	"Person" t1
 WHERE

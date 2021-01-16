@@ -49,17 +49,6 @@ CREATE TABLE IF NOT EXISTS "stMain"
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	v."inId",
-	r."inIdState"
-FROM
-	"stVersions" v
-		INNER JOIN "stMain" "a_Main" ON v."inIdMain" = "a_Main"."inId"
-		LEFT JOIN "rlStatesTypesAndUserGroups" r ON r."inIdType" = "a_Main"."inIdType"
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
 DROP TABLE IF EXISTS "stMain"
 
 BeforeExecute

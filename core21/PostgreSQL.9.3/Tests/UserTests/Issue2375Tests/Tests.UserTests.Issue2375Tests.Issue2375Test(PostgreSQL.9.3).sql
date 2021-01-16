@@ -91,39 +91,6 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	inventory."Status",
-	lc."ResourceLabel"
-FROM
-	"InventoryResourceDTO" inventory
-		INNER JOIN "WmsLoadCarrierDTO" lc ON inventory."ResourceID" = lc."Id"
-GROUP BY
-	inventory."Status",
-	lc."ResourceLabel"
-HAVING
-	Count(*) > 1
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-DECLARE @Status Integer -- Int32
-SET     @Status = 40
-DECLARE @ResourceLabel Text(1) -- String
-SET     @ResourceLabel = 'b'
-
-SELECT
-	inventory."Id",
-	inventory."Status",
-	inventory."ResourceID",
-	inventory."ModifiedTimeStamp"
-FROM
-	"InventoryResourceDTO" inventory
-		INNER JOIN "WmsLoadCarrierDTO" lc ON inventory."ResourceID" = lc."Id"
-WHERE
-	(inventory."Status" = :Status AND lc."ResourceLabel" = :ResourceLabel)
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
 DROP TABLE "WmsLoadCarrierDTO"
 
 BeforeExecute

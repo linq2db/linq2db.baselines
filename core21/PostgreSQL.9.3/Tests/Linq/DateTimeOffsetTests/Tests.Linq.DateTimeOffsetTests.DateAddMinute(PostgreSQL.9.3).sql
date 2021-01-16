@@ -72,13 +72,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t."TransactionDate" + 5 * Interval '1 Minute'
-FROM
-	"Transactions" t
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
 DROP TABLE IF EXISTS "Transactions"
 

@@ -26,25 +26,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	t."ID",
-	t."MoneyValue",
-	t."DateTimeValue",
-	t."BoolValue",
-	t."GuidValue",
-	t."BinaryValue",
-	t."SmallIntValue"
-FROM
-	"LinqDataTypes" t
-WHERE
-	t."ID" = 1001
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
 
 DELETE FROM
 	"LinqDataTypes" t1

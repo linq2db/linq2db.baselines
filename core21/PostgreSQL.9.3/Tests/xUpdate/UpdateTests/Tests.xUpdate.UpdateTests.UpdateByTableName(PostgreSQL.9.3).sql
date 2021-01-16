@@ -45,29 +45,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-
-SELECT
-	Count(*)
-FROM
-	"xxPerson" t1
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	t1."FirstName",
-	t1."PersonID",
-	t1."LastName",
-	t1."MiddleName",
-	t1."Gender"
-FROM
-	"xxPerson" t1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Text(4) -- String
@@ -88,21 +65,6 @@ SET
 	"Gender" = :Gender
 WHERE
 	"xxPerson"."PersonID" = :ID
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	t1."FirstName",
-	t1."PersonID",
-	t1."LastName",
-	t1."MiddleName",
-	t1."Gender"
-FROM
-	"xxPerson" t1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

@@ -31,25 +31,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @FirstName Text(18) -- String
-SET     @FirstName = 'UpdateColumnFilter'
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	x."FirstName",
-	x."PersonID",
-	x."LastName",
-	x."MiddleName",
-	x."Gender"
-FROM
-	"Person" x
-WHERE
-	x."FirstName" = :FirstName
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @ID Integer -- Int32
@@ -61,25 +42,6 @@ SET
 	"FirstName" = :FirstName
 WHERE
 	"Person"."PersonID" = :ID
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	x."FirstName",
-	x."PersonID",
-	x."LastName",
-	x."MiddleName",
-	x."Gender"
-FROM
-	"Person" x
-WHERE
-	x."PersonID" = :ID
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -103,25 +65,6 @@ SET
 	"Gender" = :Gender
 WHERE
 	"Person"."PersonID" = :ID
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	t1."FirstName",
-	t1."PersonID",
-	t1."LastName",
-	t1."MiddleName",
-	t1."Gender"
-FROM
-	"Person" t1
-WHERE
-	t1."PersonID" = :ID
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

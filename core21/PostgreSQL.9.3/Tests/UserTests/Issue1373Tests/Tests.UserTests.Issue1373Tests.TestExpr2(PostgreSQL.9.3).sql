@@ -60,16 +60,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	t1."Id",
-	t1."Field1"
-FROM
-	"Issue1373Tests" t1
-ORDER BY
-	t1."Id"
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
 DROP TABLE "Issue1373Tests"
 

@@ -13,17 +13,6 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	t1."ID"
-FROM
-	test_schema.testserialidentity t1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
 
 DELETE FROM
 	test_schema.testserialidentity t1

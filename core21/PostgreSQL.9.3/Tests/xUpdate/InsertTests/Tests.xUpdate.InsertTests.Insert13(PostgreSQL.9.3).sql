@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-SELECT
-	Max(t."PersonID")
-FROM
-	"Person" t
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
 INSERT INTO "Person"
 (
 	"FirstName",
