@@ -29,6 +29,15 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"CreateIfNotExistsTable" t1
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 (
 	"Id"    Int NOT NULL,

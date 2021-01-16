@@ -12,6 +12,19 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	Length(t."BinaryValue")
+FROM
+	"LinqDataTypes" t
+WHERE
+	t."ID" = 1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @BinaryValue Bytea -- Binary
 SET     @BinaryValue = NULL
 

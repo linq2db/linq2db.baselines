@@ -24,6 +24,20 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."ID",
+	t."BigIntValue"
+FROM
+	"LinqDataTypes" t
+WHERE
+	t."ID" = 1001
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
 	"LinqDataTypes" t1

@@ -27,6 +27,314 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" >= '4'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" >= '4'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" <= '2'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" <= '2'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" > '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" > '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" < '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" < '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" = '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" = '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" <= '2'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" <= '2'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" >= '4'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" >= '4'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" < '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" < '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" > '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" > '3'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" >= '5'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" >= '5'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" <= '1'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	i."Id",
+	i."StrValue"
+FROM
+	"Isue2424Table" i
+WHERE
+	i."StrValue" <= '1'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "Isue2424Table"
 

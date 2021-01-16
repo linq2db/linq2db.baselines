@@ -31,10 +31,34 @@ BeforeExecute
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
+SELECT
+	Count(*)
+FROM
+	"Parent" p
+WHERE
+	p."ParentID" = :ParentID
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1001
+
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" = :ParentID
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1001
+
+SELECT
+	Count(*)
+FROM
+	"Parent" p
+WHERE
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL

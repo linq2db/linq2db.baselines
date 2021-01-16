@@ -48,6 +48,26 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT
+	x."DuplicateData",
+	x."OrderData2"
+FROM
+	"OrderByDistinctData" x
+GROUP BY
+	x."DuplicateData",
+	x."OrderData2"
+ORDER BY
+	Max(x."OrderData1"),
+	x."OrderData2" DESC
+LIMIT :take OFFSET :skip 
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "OrderByDistinctData"
 

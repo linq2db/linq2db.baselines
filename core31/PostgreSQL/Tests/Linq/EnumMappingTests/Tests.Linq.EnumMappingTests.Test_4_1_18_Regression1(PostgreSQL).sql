@@ -26,6 +26,17 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	r."BigIntValue",
+	r."IntValue"
+FROM
+	"LinqDataTypes" r
+WHERE
+	r."ID" = 101
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 102
 
