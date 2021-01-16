@@ -17,12 +17,32 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+SELECT
+	Count(*)
+FROM
+	"Person" c_1
+WHERE
+	c_1."LastName" = 'Limonadovy'
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 UPDATE
 	"Person"
 SET
 	"FirstName" = 'Johnny'
 WHERE
 	"Person"."LastName" = 'Limonadovy'
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+SELECT
+	Count(*)
+FROM
+	"Person" c_1
+WHERE
+	c_1."FirstName" = 'Johnny' AND c_1."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

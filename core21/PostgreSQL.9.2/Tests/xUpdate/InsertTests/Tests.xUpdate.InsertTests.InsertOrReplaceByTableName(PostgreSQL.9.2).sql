@@ -80,6 +80,14 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
+
+SELECT
+	Count(*)
+FROM
+	"xxPatient" t1
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
 DECLARE @Diagnosis Text(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -105,6 +113,14 @@ SET
 	"Diagnosis" = :Diagnosis
 WHERE
 	"xxPatient"."PersonID" = :PersonID
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+SELECT
+	Count(*)
+FROM
+	"xxPatient" t1
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

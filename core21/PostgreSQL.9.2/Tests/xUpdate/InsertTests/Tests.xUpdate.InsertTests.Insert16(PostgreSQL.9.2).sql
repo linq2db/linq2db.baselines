@@ -29,6 +29,16 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+SELECT
+	Count(*)
+FROM
+	"Person" t1
+WHERE
+	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 DELETE FROM
 	"Person" t1
 WHERE

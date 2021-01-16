@@ -59,6 +59,20 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+SELECT
+	fact_1."Id",
+	"tagGroup"."Id",
+	"tagGroup"."FactId",
+	"tagGroup"."Name"
+FROM
+	"Fact" fact_1
+		LEFT JOIN "Tag" "tagGroup" ON fact_1."Id" = "tagGroup"."FactId"
+WHERE
+	fact_1."Id" > 3
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 DROP TABLE IF EXISTS "Tag"
 
 BeforeExecute

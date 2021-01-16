@@ -50,6 +50,22 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
+DECLARE @BoolValue Text -- AnsiString
+SET     @BoolValue = 'Y'
+
+SELECT
+	t1."Enum"
+FROM
+	"ValueConversion" t1
+		INNER JOIN (
+			SELECT
+				t2."BoolValue"
+			FROM
+				"ValueConversion" t2
+		) t2_1 ON t2_1."BoolValue" = :BoolValue AND t1."BoolValue" = :BoolValue
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
 
 DROP TABLE IF EXISTS "ValueConversion"
 

@@ -71,6 +71,16 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 1
+
+SELECT
+	t."TransactionDate" + :p_1 * Interval '1 Year'
+FROM
+	"Transactions" t
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
 
 DROP TABLE IF EXISTS "Transactions"
 

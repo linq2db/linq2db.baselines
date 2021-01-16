@@ -45,5 +45,15 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+SELECT
+	t1."Id",
+	t1."Value",
+	'M' || Cast(t1."Id" as VarChar(11))
+FROM
+	"InstanceClass" t1
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 DROP TABLE IF EXISTS "InstanceClass"
 

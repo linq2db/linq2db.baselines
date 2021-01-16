@@ -109,5 +109,23 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+SELECT
+	t1."Id",
+	t1."Byte",
+	t1."SByte",
+	t1."Int16",
+	t1."UInt16",
+	t1."Int32",
+	t1."UInt32",
+	t1."Int64",
+	t1."UInt64"
+FROM
+	"ExtraBulkCopyTypesTable" t1
+ORDER BY
+	t1."Id"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 DROP TABLE "ExtraBulkCopyTypesTable"
 

@@ -71,6 +71,16 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 22
+
+SELECT
+	t."TransactionDate" + :p_1 * Interval '1 Hour'
+FROM
+	"Transactions" t
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
 
 DROP TABLE IF EXISTS "Transactions"
 

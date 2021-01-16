@@ -34,5 +34,17 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+SELECT
+	Max(t1."Value1"),
+	STRING_AGG(t1."Value1", ' -> ')
+FROM
+	"SampleClass" t1
+GROUP BY
+	t1."Id",
+	t1."Value1"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 DROP TABLE IF EXISTS "SampleClass"
 

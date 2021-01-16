@@ -90,6 +90,52 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	key_data_result."Id",
+	key_data_result."Title",
+	key_data_result."Text",
+	detail."Id"
+FROM
+	(
+		SELECT DISTINCT
+			t1."Id",
+			t1."Title",
+			t1."Text"
+		FROM
+			(
+				SELECT
+					x."Id",
+					x."Title",
+					x."Text"
+				FROM
+					"Topic" x
+				WHERE
+					x."Id" = 6
+				LIMIT :take
+			) t1
+	) key_data_result
+		INNER JOIN "Message" detail ON detail."TopicId" = key_data_result."Id"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	x."Id",
+	x."Title",
+	x."Text"
+FROM
+	"Topic" x
+WHERE
+	x."Id" = 6
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
 
 DROP TABLE "Message"
 

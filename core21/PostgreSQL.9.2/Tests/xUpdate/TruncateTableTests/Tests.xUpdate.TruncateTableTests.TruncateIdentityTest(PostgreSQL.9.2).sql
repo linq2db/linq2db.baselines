@@ -40,6 +40,22 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+DECLARE @skip Integer -- Int32
+SET     @skip = 1
+
+SELECT
+	t1."ID",
+	t1."Field1"
+FROM
+	"TestIdTrun" t1
+ORDER BY
+	t1."ID"
+LIMIT :take OFFSET :skip 
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
 
 TRUNCATE TABLE "TestIdTrun" RESTART IDENTITY
 
@@ -66,6 +82,22 @@ VALUES
 (
 	1
 )
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+DECLARE @skip Integer -- Int32
+SET     @skip = 1
+
+SELECT
+	t1."ID",
+	t1."Field1"
+FROM
+	"TestIdTrun" t1
+ORDER BY
+	t1."ID"
+LIMIT :take OFFSET :skip 
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

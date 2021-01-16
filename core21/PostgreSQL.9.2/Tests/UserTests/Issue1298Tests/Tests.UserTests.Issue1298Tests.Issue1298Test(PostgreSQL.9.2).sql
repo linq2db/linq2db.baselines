@@ -93,3 +93,25 @@ VALUES
 	:ref1
 )
 
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+DECLARE @take_1 Integer -- Int32
+SET     @take_1 = 1
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	x.ref1,
+	(
+		SELECT
+			q.asdfgh
+		FROM
+			qwerty q
+		WHERE
+			q."Id" = x.ref1
+		LIMIT :take_1
+	)
+FROM
+	mega_composites x
+LIMIT :take
+
