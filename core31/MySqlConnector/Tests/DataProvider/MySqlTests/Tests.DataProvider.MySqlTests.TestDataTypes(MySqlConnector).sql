@@ -5,8 +5,8 @@ SELECT bigintDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Int64
-SET     @p0 = NULL
+DECLARE @p Int64
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bigintDataType IS NULL OR @p IS NOT NULL AND bigintDataType = @p
 
@@ -19,8 +19,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bigintDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bigintDataType IS NULL OR @p IS NOT NULL AND bigintDataType = @p
 
@@ -57,8 +57,8 @@ SELECT smallintDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Int16
-SET     @p0 = NULL
+DECLARE @p Int16
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS NOT NULL AND smallintDataType = @p
 
@@ -71,8 +71,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS NOT NULL AND smallintDataType = @p
 
@@ -109,8 +109,8 @@ SELECT tinyintDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Byte -- SByte
-SET     @p0 = NULL
+DECLARE @p Byte -- SByte
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS NOT NULL AND tinyintDataType = @p
 
@@ -123,8 +123,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS NOT NULL AND tinyintDataType = @p
 
@@ -161,8 +161,8 @@ SELECT mediumintDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Int32
-SET     @p0 = NULL
+DECLARE @p Int32
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND mediumintDataType IS NULL OR @p IS NOT NULL AND mediumintDataType = @p
 
@@ -175,8 +175,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND mediumintDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND mediumintDataType IS NULL OR @p IS NOT NULL AND mediumintDataType = @p
 
@@ -213,8 +213,8 @@ SELECT intDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Int32
-SET     @p0 = NULL
+DECLARE @p Int32
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT NULL AND intDataType = @p
 
@@ -227,8 +227,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT 
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT NULL AND intDataType = @p
 
@@ -265,8 +265,8 @@ SELECT numericDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 NewDecimal -- Decimal
-SET     @p0 = NULL
+DECLARE @p NewDecimal -- Decimal
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS NOT NULL AND numericDataType = @p
 
@@ -279,8 +279,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS NOT NULL AND numericDataType = @p
 
@@ -317,8 +317,8 @@ SELECT decimalDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 NewDecimal -- Decimal
-SET     @p0 = NULL
+DECLARE @p NewDecimal -- Decimal
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
 
@@ -331,8 +331,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
 
@@ -369,8 +369,8 @@ SELECT doubleDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Double
-SET     @p0 = NULL
+DECLARE @p Double
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND doubleDataType IS NULL OR @p IS NOT NULL AND doubleDataType = @p
 
@@ -383,8 +383,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND doubleDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND doubleDataType IS NULL OR @p IS NOT NULL AND doubleDataType = @p
 
@@ -421,8 +421,8 @@ SELECT floatDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Float -- Single
-SET     @p0 = NULL
+DECLARE @p Float -- Single
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NOT NULL AND floatDataType = @p
 
@@ -435,8 +435,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NOT NULL AND floatDataType = @p
 
@@ -473,8 +473,8 @@ SELECT dateDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Datetime -- DateTime
-SET     @p0 = NULL
+DECLARE @p Datetime -- DateTime
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
 
@@ -487,8 +487,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
 
@@ -525,8 +525,8 @@ SELECT datetimeDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Datetime -- DateTime
-SET     @p0 = NULL
+DECLARE @p Datetime -- DateTime
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
@@ -539,8 +539,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
@@ -577,8 +577,8 @@ SELECT datetimeDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Datetime -- DateTime
-SET     @p0 = NULL
+DECLARE @p Datetime -- DateTime
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
@@ -591,8 +591,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
@@ -629,8 +629,8 @@ SELECT timestampDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timestampDataType IS NULL OR @p IS NOT NULL AND timestampDataType = @p
 
@@ -643,8 +643,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timestampDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timestampDataType IS NULL OR @p IS NOT NULL AND timestampDataType = @p
 
@@ -681,8 +681,8 @@ SELECT timeDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Time
-SET     @p0 = NULL
+DECLARE @p Time
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p
 
@@ -695,8 +695,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p
 
@@ -733,8 +733,8 @@ SELECT yearDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Int32
-SET     @p0 = NULL
+DECLARE @p Int32
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND yearDataType IS NULL OR @p IS NOT NULL AND yearDataType = @p
 
@@ -747,8 +747,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND yearDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND yearDataType IS NULL OR @p IS NOT NULL AND yearDataType = @p
 
@@ -785,8 +785,8 @@ SELECT year2DataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Int32
-SET     @p0 = NULL
+DECLARE @p Int32
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year2DataType IS NULL OR @p IS NOT NULL AND year2DataType = @p
 
@@ -799,8 +799,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year2DataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year2DataType IS NULL OR @p IS NOT NULL AND year2DataType = @p
 
@@ -837,8 +837,8 @@ SELECT year4DataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Int32
-SET     @p0 = NULL
+DECLARE @p Int32
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year4DataType IS NULL OR @p IS NOT NULL AND year4DataType = @p
 
@@ -851,8 +851,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year4DataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year4DataType IS NULL OR @p IS NOT NULL AND year4DataType = @p
 
@@ -889,8 +889,8 @@ SELECT charDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 String -- AnsiStringFixedLength
-SET     @p0 = NULL
+DECLARE @p String -- AnsiStringFixedLength
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
@@ -903,8 +903,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
@@ -941,8 +941,8 @@ SELECT charDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 String -- AnsiStringFixedLength
-SET     @p0 = NULL
+DECLARE @p String -- AnsiStringFixedLength
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
@@ -955,8 +955,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
@@ -993,8 +993,8 @@ SELECT charDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 String -- StringFixedLength
-SET     @p0 = NULL
+DECLARE @p String -- StringFixedLength
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
@@ -1007,8 +1007,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
@@ -1045,8 +1045,8 @@ SELECT varcharDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- AnsiString
-SET     @p0 = NULL
+DECLARE @p VarChar -- AnsiString
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
 
@@ -1059,8 +1059,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
 
@@ -1097,8 +1097,8 @@ SELECT varcharDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
 
@@ -1111,8 +1111,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
 
@@ -1149,8 +1149,8 @@ SELECT textDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
 
@@ -1163,8 +1163,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
 
@@ -1201,8 +1201,8 @@ SELECT binaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
 
@@ -1215,8 +1215,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
 
@@ -1253,8 +1253,8 @@ SELECT binaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Blob -- Binary
-SET     @p0 = NULL
+DECLARE @p Blob -- Binary
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
 
@@ -1267,8 +1267,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
 
@@ -1305,8 +1305,8 @@ SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
@@ -1319,8 +1319,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
@@ -1357,8 +1357,8 @@ SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Blob -- Binary
-SET     @p0 = NULL
+DECLARE @p Blob -- Binary
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
@@ -1371,8 +1371,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
@@ -1409,8 +1409,8 @@ SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Blob -- Binary
-SET     @p0 = NULL
+DECLARE @p Blob -- Binary
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
@@ -1423,8 +1423,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
@@ -1461,8 +1461,8 @@ SELECT blobDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
 
@@ -1475,8 +1475,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
 
@@ -1513,8 +1513,8 @@ SELECT blobDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Blob -- Binary
-SET     @p0 = NULL
+DECLARE @p Blob -- Binary
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
 
@@ -1527,8 +1527,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
 
@@ -1565,8 +1565,8 @@ SELECT blobDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 Blob -- Binary
-SET     @p0 = NULL
+DECLARE @p Blob -- Binary
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
 
@@ -1579,8 +1579,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
 
@@ -1624,8 +1624,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bitDataType IS NULL OR @p IS NOT 
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bitDataType IS NULL OR @p IS NOT NULL AND bitDataType = @p
 
@@ -1662,8 +1662,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND enumDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND enumDataType IS NULL OR @p IS NOT NULL AND enumDataType = @p
 
@@ -1700,8 +1700,8 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND setDataType IS NULL OR @p IS NOT 
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p0 VarChar -- String
-SET     @p0 = NULL
+DECLARE @p VarChar -- String
+SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND setDataType IS NULL OR @p IS NOT NULL AND setDataType = @p
 
