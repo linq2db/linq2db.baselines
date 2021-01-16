@@ -33,6 +33,21 @@ SELECT 1,100 FROM rdb$database
 BeforeExecute
 -- Firebird
 
+SELECT
+	"t"."Id",
+	"t"."Value",
+	"s"."c1"
+FROM
+	"SampleClass" "t"
+		INNER JOIN (
+			SELECT
+				1 as "c1"
+			FROM rdb$database
+		) "s" ON "s"."c1" = "t"."Id"
+
+BeforeExecute
+-- Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleClass')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "SampleClass"';

@@ -7,6 +7,14 @@ EXECUTE BLOCK AS BEGIN
 END
 
 BeforeExecute
+-- Firebird
+
+SELECT
+	"p"."ParentID"
+FROM
+	"Parent" "p"
+
+BeforeExecute
 -- Firebird (asynchronously)
 
 EXECUTE BLOCK AS BEGIN

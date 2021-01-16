@@ -21,5 +21,13 @@ VALUES
 BeforeExecute
 -- Firebird
 
+SELECT
+	"row_1"."Value"
+FROM
+	"ValueItem" "row_1"
+
+BeforeExecute
+-- Firebird
+
 DROP TABLE "ValueItem"
 

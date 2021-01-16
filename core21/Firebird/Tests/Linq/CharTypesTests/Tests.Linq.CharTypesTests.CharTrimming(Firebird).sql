@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- Firebird
+
+SELECT
+	Max("t1".ID)
+FROM
+	"AllTypes" "t1"
+
+BeforeExecute
+-- Firebird
 DECLARE @Char_1 Char -- String
 SET     @Char_1 = ' '
 
@@ -278,6 +286,21 @@ VALUES
 (
 	Cast(@Char_1 as NChar(1))
 )
+
+BeforeExecute
+-- Firebird
+DECLARE @lastId Integer -- Int32
+SET     @lastId = 2
+
+SELECT
+	"t1".ID,
+	"t1"."char20DataType"
+FROM
+	"AllTypes" "t1"
+WHERE
+	"t1".ID > @lastId
+ORDER BY
+	"t1".ID
 
 BeforeExecute
 -- Firebird

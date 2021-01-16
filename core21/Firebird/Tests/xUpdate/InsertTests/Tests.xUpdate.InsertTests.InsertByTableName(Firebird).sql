@@ -127,6 +127,25 @@ RETURNING
 BeforeExecute
 -- Firebird
 
+SELECT
+	Count(*)
+FROM
+	"xxPerson_f_35" "t1"
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	Count(*)
+FROM
+	"xxPerson_f_35" "p"
+WHERE
+	"p"."FirstName" = 'Steven' AND "p"."LastName" = 'King' AND
+	"p"."Gender" = 'M'
+
+BeforeExecute
+-- Firebird
+
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_xxPerson_f_35"';
 	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_xxPerson_f_35"';

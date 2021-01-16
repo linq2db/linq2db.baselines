@@ -24,6 +24,19 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t".ID,
+	"t"."BigIntValue"
+FROM
+	"LinqDataTypes" "t"
+WHERE
+	"t".ID = 1001
+
+BeforeExecute
+-- Firebird
 
 DELETE FROM
 	"LinqDataTypes" "t1"

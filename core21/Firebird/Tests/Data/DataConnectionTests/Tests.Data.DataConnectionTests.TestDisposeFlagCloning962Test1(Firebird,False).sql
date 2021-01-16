@@ -111,6 +111,29 @@ SELECT 'Prod 6',1,'q 6' FROM rdb$database
 BeforeExecute
 -- Firebird
 
+SELECT
+	"lw_Category"."CategoryID",
+	"detail"."ProductID",
+	"detail"."ProductName",
+	"detail"."CategoryID",
+	"detail"."QuantityPerUnit"
+FROM
+	"Categories" "lw_Category"
+		INNER JOIN "Products" "detail" ON "lw_Category"."CategoryID" = "detail"."CategoryID"
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	"t1"."CategoryID",
+	"t1"."CategoryName",
+	"t1"."Description"
+FROM
+	"Categories" "t1"
+
+BeforeExecute
+-- Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Products')) THEN
 		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Products"';

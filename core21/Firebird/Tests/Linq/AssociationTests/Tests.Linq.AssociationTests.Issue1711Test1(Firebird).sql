@@ -20,6 +20,23 @@ CREATE TABLE "Relationship1711"
 BeforeExecute
 -- Firebird
 
+SELECT
+	"t"."Id"
+FROM
+	"Entity1711" "t"
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Relationship1711" "t1"
+		WHERE
+			"t"."Id" = "t1"."EntityId"
+	)
+
+BeforeExecute
+-- Firebird
+
 DROP TABLE "Relationship1711"
 
 BeforeExecute

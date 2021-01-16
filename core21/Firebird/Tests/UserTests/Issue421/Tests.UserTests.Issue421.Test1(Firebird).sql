@@ -29,6 +29,19 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t1"."Id",
+	"t1"."BlobValue"
+FROM
+	"BlobClass" "t1"
+WHERE
+	"t1"."Id" = 1
+
+BeforeExecute
+-- Firebird
 DECLARE @BlobValue Binary(3)
 SET     @BlobValue = X'030201'
 
@@ -38,6 +51,19 @@ SET
 	"BlobClass"."BlobValue" = @BlobValue
 WHERE
 	"BlobClass"."Id" = 1
+
+BeforeExecute
+-- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t1"."Id",
+	"t1"."BlobValue"
+FROM
+	"BlobClass" "t1"
+WHERE
+	"t1"."Id" = 1
 
 BeforeExecute
 -- Firebird

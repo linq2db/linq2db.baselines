@@ -34,6 +34,32 @@ SELECT 100,1 FROM rdb$database
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"x"."Value",
+	"x"."Id"
+FROM
+	"BaseTable" "x"
+WHERE
+	"x"."Id" = 1
+
+BeforeExecute
+-- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"x"."Value",
+	"x"."Id"
+FROM
+	"BaseTable" "x"
+WHERE
+	"x"."Id" = 1 AND "x"."Value" = 100
+
+BeforeExecute
+-- Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BaseTable')) THEN

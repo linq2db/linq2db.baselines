@@ -37,6 +37,17 @@ SELECT 'Springwood','Freddy','Elm Street',13 FROM rdb$database
 BeforeExecute
 -- Firebird
 
+SELECT
+	"t1"."city",
+	"t1"."user_name",
+	"t1"."street",
+	"t1"."building_number"
+FROM
+	"User" "t1"
+
+BeforeExecute
+-- Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'User')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "User"';

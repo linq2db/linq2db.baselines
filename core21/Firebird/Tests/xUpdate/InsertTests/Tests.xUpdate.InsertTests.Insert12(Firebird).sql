@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- Firebird
+
+SELECT
+	Max("t"."PersonID")
+FROM
+	"Person" "t"
+
+BeforeExecute
+-- Firebird
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender Char(1) -- String

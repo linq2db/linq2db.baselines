@@ -29,5 +29,21 @@ VALUES
 BeforeExecute
 -- Firebird
 
+SELECT
+	"t1".ID
+FROM
+	"DropTableTest" "t1"
+
+BeforeExecute
+-- Firebird
+
 DROP TABLE "DropTableTest"
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	"t1".ID
+FROM
+	"DropTableTest" "t1"
 

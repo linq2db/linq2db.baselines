@@ -120,3 +120,13 @@ VALUES
 	"Source"."Id"
 )
 
+BeforeExecute
+-- Firebird
+
+SELECT
+	"t1"."GrandChildID",
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"GrandChild" "t1"
+

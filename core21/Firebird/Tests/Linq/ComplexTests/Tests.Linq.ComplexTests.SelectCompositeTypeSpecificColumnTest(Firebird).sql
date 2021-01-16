@@ -12,5 +12,21 @@ CREATE TABLE "User"
 BeforeExecute
 -- Firebird
 
+SELECT
+	"u"."city"
+FROM
+	"User" "u"
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	"u"."street"
+FROM
+	"User" "u"
+
+BeforeExecute
+-- Firebird
+
 DROP TABLE "User"
 

@@ -31,6 +31,24 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @FirstName VarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
+
+SELECT FIRST @take
+	"x"."FirstName",
+	"x"."PersonID",
+	"x"."LastName",
+	"x"."MiddleName",
+	"x"."Gender"
+FROM
+	"Person" "x"
+WHERE
+	"x"."FirstName" = @FirstName
+
+BeforeExecute
+-- Firebird
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -48,6 +66,24 @@ SET
 	"Person"."Gender" = @Gender
 WHERE
 	"Person"."PersonID" = @ID
+
+BeforeExecute
+-- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @FirstName VarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
+
+SELECT FIRST @take
+	"x"."FirstName",
+	"x"."PersonID",
+	"x"."LastName",
+	"x"."MiddleName",
+	"x"."Gender"
+FROM
+	"Person" "x"
+WHERE
+	"x"."FirstName" = @FirstName
 
 BeforeExecute
 -- Firebird

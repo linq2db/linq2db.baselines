@@ -43,6 +43,24 @@ RETURNING
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @id1 Integer -- Int32
+SET     @id1 = 5
+
+SELECT FIRST @take
+	"t1"."PersonID",
+	"t1"."Gender",
+	"t1"."FirstName",
+	"t1"."MiddleName",
+	"t1"."LastName"
+FROM
+	"Person" "t1"
+WHERE
+	"t1"."PersonID" = @id1
+
+BeforeExecute
+-- Firebird
 
 DELETE FROM
 	"Person" "t1"

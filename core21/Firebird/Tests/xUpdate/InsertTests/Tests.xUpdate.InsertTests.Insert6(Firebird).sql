@@ -25,6 +25,16 @@ WHERE
 BeforeExecute
 -- Firebird
 
+SELECT
+	Count(*)
+FROM
+	"Parent" "p"
+WHERE
+	"p"."Value1" = 11
+
+BeforeExecute
+-- Firebird
+
 DELETE FROM
 	"Parent" "t1"
 WHERE

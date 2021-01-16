@@ -64,6 +64,33 @@ VALUES
 
 BeforeExecute
 -- Firebird
+
+SELECT
+	"r".ID,
+	"r"."IntValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID >= 101 AND "r".ID <= 103
+ORDER BY
+	"r".ID
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	"r".ID,
+	"r"."IntValue",
+	"r"."StringValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID >= 101 AND "r".ID <= 103
+ORDER BY
+	"r".ID
+
+BeforeExecute
+-- Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 104
 

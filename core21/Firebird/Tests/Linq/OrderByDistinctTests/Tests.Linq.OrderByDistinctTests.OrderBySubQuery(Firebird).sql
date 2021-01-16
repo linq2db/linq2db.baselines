@@ -55,6 +55,32 @@ SELECT 600,'Three',5,5 FROM rdb$database
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	"t"."DuplicateData",
+	(
+		SELECT
+			Count(*)
+		FROM
+			"OrderByDistinctData" "s"
+		WHERE
+			("s"."DuplicateData" = "t"."DuplicateData" OR "s"."DuplicateData" IS NULL AND "t"."DuplicateData" IS NULL)
+	)
+FROM
+	(
+		SELECT FIRST @take
+			"t1"."Id",
+			"t1"."DuplicateData"
+		FROM
+			"OrderByDistinctData" "t1"
+	) "t"
+ORDER BY
+	"t"."Id" DESC
+
+BeforeExecute
+-- Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'OrderByDistinctData')) THEN

@@ -39,6 +39,14 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird
+
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
+
+BeforeExecute
+-- Firebird
 DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -69,4 +77,12 @@ WHEN NOT MATCHED THEN
 		Cast(@Key2 as VarChar(255) CHARACTER SET UNICODE_FSS),
 		@Data_1
 	)
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
 

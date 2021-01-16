@@ -48,6 +48,26 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 1
+
+BeforeExecute
+-- Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Value1 VarChar -- String
@@ -75,6 +95,26 @@ VALUES
 	Cast(@Enum as VarChar(50) CHARACTER SET UNICODE_FSS),
 	Cast(@BoolValue as VarChar(1))
 )
+
+BeforeExecute
+-- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 2
 
 BeforeExecute
 -- Firebird
@@ -121,6 +161,34 @@ VALUES
 	@BoolValue,
 	@DateTimeNullable
 )
+
+BeforeExecute
+-- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"e"."Id",
+	"e"."Value1",
+	"e"."Value2",
+	"e"."Enum",
+	"e"."EnumNullable",
+	"e"."EnumWithNull",
+	"e"."EnumWithNullDeclarative",
+	"e"."BoolValue",
+	"e"."DateTimeNullable"
+FROM
+	"ValueConversion" "e"
+WHERE
+	"e"."Id" = 3
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	Count(*)
+FROM
+	"ValueConversion" "t1"
 
 BeforeExecute
 -- Firebird

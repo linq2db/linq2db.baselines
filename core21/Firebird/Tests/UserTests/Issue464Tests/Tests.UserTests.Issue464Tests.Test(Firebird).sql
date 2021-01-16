@@ -22,5 +22,14 @@ SELECT 3,3 FROM rdb$database
 BeforeExecute
 -- Firebird
 
+SELECT
+	"t1"."Id",
+	"t1"."Value"
+FROM
+	"Issue464" "t1"
+
+BeforeExecute
+-- Firebird
+
 DROP TABLE "Issue464"
 

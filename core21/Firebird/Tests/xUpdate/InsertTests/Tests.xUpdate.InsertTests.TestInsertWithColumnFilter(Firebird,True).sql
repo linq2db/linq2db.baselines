@@ -26,6 +26,24 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @FirstName VarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
+
+SELECT FIRST @take
+	"x"."FirstName",
+	"x"."PersonID",
+	"x"."LastName",
+	"x"."MiddleName",
+	"x"."Gender"
+FROM
+	"Person" "x"
+WHERE
+	"x"."FirstName" = @FirstName
+
+BeforeExecute
+-- Firebird
 DECLARE @newName VarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

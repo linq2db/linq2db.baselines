@@ -27,6 +27,18 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
+SELECT
+	Count(*)
+FROM
+	"Child" "c_1"
+WHERE
+	"c_1"."ChildID" = @id
+
+BeforeExecute
+-- Firebird
+DECLARE @id Integer -- Int32
+SET     @id = 1001
+
 UPDATE
 	"Child"
 SET
@@ -44,6 +56,18 @@ WHERE
 			"Child"."ParentID" = "c_1"."ParentID" AND
 			"Child"."ChildID" = "c_1"."ChildID"
 	)
+
+BeforeExecute
+-- Firebird
+DECLARE @ChildID Integer -- Int32
+SET     @ChildID = 1002
+
+SELECT
+	Count(*)
+FROM
+	"Child" "c_1"
+WHERE
+	"c_1"."ChildID" = @ChildID
 
 BeforeExecute
 -- Firebird

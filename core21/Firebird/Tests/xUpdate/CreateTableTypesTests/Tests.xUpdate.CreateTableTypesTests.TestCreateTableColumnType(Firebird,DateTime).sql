@@ -46,5 +46,16 @@ VALUES
 BeforeExecute
 -- Firebird
 
+SELECT
+	"t1"."Id",
+	"t1"."DateTime"
+FROM
+	"CreateTableTypes" "t1"
+ORDER BY
+	"t1"."Id"
+
+BeforeExecute
+-- Firebird
+
 DROP TABLE "CreateTableTypes"
 
