@@ -25,6 +25,16 @@ WHERE
 BeforeExecute
 -- SqlCe
 
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[Value1] = 11
+
+BeforeExecute
+-- SqlCe
+
 DELETE FROM
 	[Parent]
 WHERE

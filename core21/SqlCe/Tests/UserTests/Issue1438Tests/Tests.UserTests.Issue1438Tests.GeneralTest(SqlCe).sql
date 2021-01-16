@@ -30,6 +30,21 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
+DECLARE @id Int -- Int32
+SET     @id = 1
+
+SELECT TOP (@take)
+	[_].[Id],
+	[_].[Has]
+FROM
+	[Issue1438] [_]
+WHERE
+	[_].[Id] = @id
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [Issue1438]
 

@@ -29,6 +29,16 @@ VALUES
 BeforeExecute
 -- SqlCe
 
+SELECT
+	Count(*)
+FROM
+	[Person] [_]
+WHERE
+	[_].[FirstName] LIKE 'Insert16%' ESCAPE '~'
+
+BeforeExecute
+-- SqlCe
+
 DELETE FROM
 	[Person]
 WHERE

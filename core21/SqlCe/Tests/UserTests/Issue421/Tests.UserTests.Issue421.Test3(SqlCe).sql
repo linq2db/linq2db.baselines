@@ -29,6 +29,32 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Id],
+	[_].[BlobValue]
+FROM
+	[BlobClass] [_]
+WHERE
+	[_].[Id] = 1
+
+BeforeExecute
+-- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Id],
+	[_].[BlobValue]
+FROM
+	[BlobClass] [_]
+WHERE
+	[_].[Id] = 1
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [BlobClass]
 

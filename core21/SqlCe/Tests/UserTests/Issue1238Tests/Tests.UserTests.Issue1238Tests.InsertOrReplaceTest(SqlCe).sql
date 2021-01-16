@@ -43,6 +43,14 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+
+SELECT
+	Count(*)
+FROM
+	[InheritanceParent] [t1]
+
+BeforeExecute
+-- SqlCe
 DECLARE @Data_1 Int -- Int32
 SET     @Data_1 = 1
 DECLARE @Key1 Int -- Int32
@@ -55,4 +63,12 @@ SET
 WHERE
 	[InheritanceParent].[InheritanceParentId] = @Key1 AND
 	[InheritanceParent].[Name] IS NULL
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	Count(*)
+FROM
+	[InheritanceParent] [t1]
 

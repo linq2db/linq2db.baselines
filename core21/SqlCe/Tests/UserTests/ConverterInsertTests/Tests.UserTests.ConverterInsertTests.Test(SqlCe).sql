@@ -36,6 +36,42 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+SELECT TOP (@take)
+	[t].[PersonID],
+	[t].[FirstName],
+	[t].[LastName],
+	[t].[MiddleName],
+	[t].[Gender]
+FROM
+	[Person] [t]
+WHERE
+	[t].[PersonID] = @id
+
+BeforeExecute
+-- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+SELECT TOP (@take)
+	[t].[PersonID],
+	[t].[FirstName],
+	[t].[LastName],
+	[t].[MiddleName],
+	[t].[Gender]
+FROM
+	[Person] [t]
+WHERE
+	[t].[PersonID] = @id
+
+BeforeExecute
+-- SqlCe
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 DECLARE @FirstName NVarChar(3) -- String

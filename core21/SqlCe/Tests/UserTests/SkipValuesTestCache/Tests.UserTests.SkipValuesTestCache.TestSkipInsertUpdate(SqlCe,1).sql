@@ -30,6 +30,20 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Insert_Table_Cache] [t]
+WHERE
+	[t].[Id] = 1
+
+BeforeExecute
+-- SqlCe
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Int -- Int32
@@ -41,6 +55,20 @@ SET
 	[PR_1598_Insert_Table_Cache].[Name] = @Name
 WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
+
+BeforeExecute
+-- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Insert_Table_Cache] [t]
+WHERE
+	[t].[Id] = 1
 
 BeforeExecute
 -- SqlCe

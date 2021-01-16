@@ -64,6 +64,33 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+
+SELECT
+	[r].[ID],
+	[r].[IntValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] >= 101 AND [r].[ID] <= 103
+ORDER BY
+	[r].[ID]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[r].[ID],
+	[r].[IntValue],
+	[r].[StringValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] >= 101 AND [r].[ID] <= 103
+ORDER BY
+	[r].[ID]
+
+BeforeExecute
+-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 104
 

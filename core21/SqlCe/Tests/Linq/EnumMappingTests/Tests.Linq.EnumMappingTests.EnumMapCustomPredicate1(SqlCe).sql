@@ -24,6 +24,17 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+
+SELECT
+	[entity].[ID],
+	[entity].[BigIntValue]
+FROM
+	[LinqDataTypes] [entity]
+WHERE
+	[entity].[BigIntValue] = 12
+
+BeforeExecute
+-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 

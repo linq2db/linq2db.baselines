@@ -24,6 +24,16 @@ CREATE TABLE [Books]
 BeforeExecute
 -- SqlCe
 
+SELECT
+	[author].[Id],
+	[author].[Name]
+FROM
+	[Authors] [author]
+		INNER JOIN [Books] [book] ON [book].[AuthorId] = [author].[Id]
+
+BeforeExecute
+-- SqlCe
+
 DROP TABLE [Books]
 
 BeforeExecute

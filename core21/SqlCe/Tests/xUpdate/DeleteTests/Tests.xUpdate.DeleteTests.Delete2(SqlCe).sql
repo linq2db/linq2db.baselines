@@ -31,10 +31,34 @@ BeforeExecute
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @ParentID
+
+BeforeExecute
+-- SqlCe
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
+
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] = @ParentID
+
+BeforeExecute
+-- SqlCe
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- SqlCe

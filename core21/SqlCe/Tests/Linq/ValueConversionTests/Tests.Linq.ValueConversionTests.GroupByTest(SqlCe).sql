@@ -49,6 +49,42 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL
 
 BeforeExecute
 -- SqlCe
+DECLARE @testedList NVarChar(20) -- String
+SET     @testedList = '[{"Value":"Value1"}]'
+
+SELECT
+	[t].[Id]
+FROM
+	[ValueConversion] [t]
+WHERE
+	@testedList = [t].[Value2]
+GROUP BY
+	[t].[Id]
+
+BeforeExecute
+-- SqlCe
+DECLARE @Value2 NVarChar(20) -- String
+SET     @Value2 = '[{"Value":"Value1"}]'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+SELECT
+	[t].[Id],
+	[t].[Value1],
+	[t].[Value2],
+	[t].[Enum],
+	[t].[EnumNullable],
+	[t].[EnumWithNull],
+	[t].[EnumWithNullDeclarative],
+	[t].[BoolValue],
+	[t].[DateTimeNullable]
+FROM
+	[ValueConversion] [t]
+WHERE
+	@Value2 = [t].[Value2] AND [t].[Id] = @Id
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [ValueConversion]
 

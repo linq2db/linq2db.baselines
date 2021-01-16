@@ -21,5 +21,13 @@ VALUES
 BeforeExecute
 -- SqlCe
 
+SELECT
+	[row_1].[Value]
+FROM
+	[ValueItem] [row_1]
+
+BeforeExecute
+-- SqlCe
+
 DROP TABLE [ValueItem]
 
