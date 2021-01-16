@@ -26,6 +26,14 @@ ON DUPLICATE KEY UPDATE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+SELECT
+	Count(*)
+FROM
+	`InheritanceParent` `t1`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 INSERT INTO `InheritanceParent`
 (
 	`InheritanceParentId`,
@@ -40,4 +48,12 @@ VALUES
 )
 ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`InheritanceParent` `t1`
 

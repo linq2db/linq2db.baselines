@@ -30,12 +30,36 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 1001
 
+SELECT
+	Count(*)
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`ParentID` = @id AND `p`.`Value1` = 1
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 1001
+
 UPDATE
 	`Parent` `p`
 SET
 	`p`.`Value1` = 2
 WHERE
 	`p`.`ParentID` = @id
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`ParentID` = @id AND `p`.`Value1` = 2
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

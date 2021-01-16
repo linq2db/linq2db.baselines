@@ -27,5 +27,14 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+SELECT DISTINCT
+	`t1`.`Value`
+FROM
+	`TakeSkipClass` `t1`
+LIMIT 3
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 DROP TABLE IF EXISTS `TakeSkipClass`
 

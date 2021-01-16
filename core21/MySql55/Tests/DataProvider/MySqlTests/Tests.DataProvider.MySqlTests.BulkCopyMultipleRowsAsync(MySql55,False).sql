@@ -3069,6 +3069,57 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+SELECT
+	Count(*)
+FROM
+	`AllTypes` `_`
+WHERE
+	`_`.`varcharDataType` = '_btest'
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 10
+
+SELECT
+	`_`.`intUnsignedDataType`,
+	`_`.`setDataType`,
+	`_`.`enumDataType`,
+	`_`.`bitDataType`,
+	`_`.`blobDataType`,
+	`_`.`varbinaryDataType`,
+	`_`.`binaryDataType`,
+	`_`.`textDataType`,
+	`_`.`varcharDataType`,
+	`_`.`charDataType`,
+	`_`.`timeDataType`,
+	`_`.`timestampDataType`,
+	`_`.`datetimeDataType`,
+	`_`.`dateDataType`,
+	`_`.`floatDataType`,
+	`_`.`doubleDataType`,
+	`_`.`decimalDataType`,
+	`_`.`numericDataType`,
+	`_`.`intDataType`,
+	`_`.`mediumintDataType`,
+	`_`.`tinyintDataType`,
+	`_`.`smallintDataType`,
+	`_`.`bigintDataType`,
+	`_`.`ID`,
+	`_`.`year4DataType`,
+	`_`.`year2DataType`,
+	`_`.`yearDataType`
+FROM
+	`AllTypes` `_`
+WHERE
+	`_`.`varcharDataType` = '_btest'
+ORDER BY
+	`_`.`ID`
+LIMIT @take
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 DELETE `t1`
 FROM
 	`AllTypes` `t1`

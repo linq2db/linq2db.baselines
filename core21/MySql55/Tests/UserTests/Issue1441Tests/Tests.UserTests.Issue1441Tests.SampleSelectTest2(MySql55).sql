@@ -24,6 +24,16 @@ CREATE TABLE `Books`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+SELECT
+	`author`.`Id`,
+	`author`.`Name`
+FROM
+	`Authors` `author`
+		INNER JOIN `Books` `book` ON `book`.`AuthorId` = `author`.`Id`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 DROP TABLE `Books`
 
 BeforeExecute

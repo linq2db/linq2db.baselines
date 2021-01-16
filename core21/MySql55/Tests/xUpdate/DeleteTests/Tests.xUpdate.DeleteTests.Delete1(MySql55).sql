@@ -32,11 +32,35 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
+SELECT
+	Count(*)
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`ParentID` = @ParentID
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+DECLARE @ParentID Int32
+SET     @ParentID = 1001
+
 DELETE `t1`
 FROM
 	`Parent` `t1`
 WHERE
 	`t1`.`ParentID` = @ParentID
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+DECLARE @ParentID Int32
+SET     @ParentID = 1001
+
+SELECT
+	Count(*)
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

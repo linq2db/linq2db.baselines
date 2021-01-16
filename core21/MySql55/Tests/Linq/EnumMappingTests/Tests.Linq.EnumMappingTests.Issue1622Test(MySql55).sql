@@ -29,6 +29,34 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`e`.`Id`,
+	`e`.`SomeText`
+FROM
+	`Issue1622Table` `e`
+WHERE
+	`e`.`SomeText` = 'Value1_suffix'
+LIMIT @take
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`e`.`Id`,
+	`e`.`SomeText`
+FROM
+	`Issue1622Table` `e`
+WHERE
+	`e`.`Id` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
 
 DROP TABLE `Issue1622Table`
 

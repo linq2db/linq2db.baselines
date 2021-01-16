@@ -24,6 +24,21 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 5
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`_`.`ID`
+FROM
+	`Issue1316Tests` `_`
+WHERE
+	`_`.`ID` = @Id
+LIMIT @take
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
 
 DROP TABLE `Issue1316Tests`
 

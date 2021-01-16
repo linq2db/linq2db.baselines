@@ -19,5 +19,16 @@ CREATE TABLE `TestTable`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+SELECT
+	`t1`.`ID`,
+	`t1`.`Field1`,
+	`t1`.`Field2`,
+	`t1`.`CreatedOn`
+FROM
+	`TestTable` `t1`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 DROP TABLE `TestTable`
 

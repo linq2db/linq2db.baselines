@@ -25,6 +25,17 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	1
+FROM
+	`SelectExpressionTable` `_`
+LIMIT @take
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
 
 DROP TABLE IF EXISTS `SelectExpressionTable`
 

@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
+SELECT
+	Max(`t`.`PersonID`)
+FROM
+	`Person` `t`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 INSERT INTO `Person`
 (
 	`FirstName`,

@@ -80,6 +80,28 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+SELECT
+	`t1`.`Id`,
+	`t1`.`TargetName`,
+	`t1`.`Id_1`,
+	`t1`.`TaskId`,
+	`t1`.`Actual`
+FROM
+	(
+		SELECT DISTINCT
+			`t`.`Id`,
+			`t`.`TargetName`,
+			`a_ActualStage`.`Id` as `Id_1`,
+			`a_ActualStage`.`TaskId`,
+			`a_ActualStage`.`Actual`
+		FROM
+			`Issue1096Task` `t`
+				LEFT JOIN `Issue1096TaskStage` `a_ActualStage` ON `t`.`Id` = `a_ActualStage`.`TaskId` AND `a_ActualStage`.`Actual` = 1
+	) `t1`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 DROP TABLE `Issue1096TaskStage`
 
 BeforeExecute

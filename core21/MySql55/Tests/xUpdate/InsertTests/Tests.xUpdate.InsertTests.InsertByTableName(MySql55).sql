@@ -108,6 +108,25 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+SELECT
+	Count(*)
+FROM
+	`xxPerson` `t1`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`xxPerson` `p`
+WHERE
+	`p`.`FirstName` = 'Steven' AND `p`.`LastName` = 'King' AND
+	`p`.`Gender` = 'M'
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 DROP TABLE `xxPerson`
 
 BeforeExecute

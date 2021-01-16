@@ -51,9 +51,29 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+SELECT
+	Count(*)
+FROM
+	`Parent` `_`
+WHERE
+	`_`.`ParentID` > 1000
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 DELETE `t1`
 FROM
 	`Parent` `t1`
 WHERE
 	`t1`.`ParentID` IN (1001, 1002)
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`Parent` `_`
+WHERE
+	`_`.`ParentID` > 1000
 

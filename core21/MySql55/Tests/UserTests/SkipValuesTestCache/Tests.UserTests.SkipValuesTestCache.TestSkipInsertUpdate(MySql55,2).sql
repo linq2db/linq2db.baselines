@@ -34,6 +34,21 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`Id`,
+	`t`.`Name`,
+	`t`.`Age`
+FROM
+	`PR_1598_Insert_Table_Cache` `t`
+WHERE
+	`t`.`Id` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Int32
@@ -48,6 +63,21 @@ SET
 	`t1`.`Age` = @Age
 WHERE
 	`t1`.`Id` = @Id
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`Id`,
+	`t`.`Name`,
+	`t`.`Age`
+FROM
+	`PR_1598_Insert_Table_Cache` `t`
+WHERE
+	`t`.`Id` = 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

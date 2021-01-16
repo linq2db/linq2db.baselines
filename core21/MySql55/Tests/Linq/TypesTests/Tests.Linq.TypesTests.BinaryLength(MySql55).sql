@@ -12,6 +12,19 @@ WHERE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	Length(`t`.`BinaryValue`)
+FROM
+	`LinqDataTypes` `t`
+WHERE
+	`t`.`ID` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
 DECLARE @BinaryValue Blob -- Binary
 SET     @BinaryValue = NULL
 
