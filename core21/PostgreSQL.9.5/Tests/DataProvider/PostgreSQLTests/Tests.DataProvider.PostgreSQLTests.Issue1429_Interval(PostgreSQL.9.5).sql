@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	Max(t1."ID")
-FROM
-	"AllTypes" t1
-
-BeforeExecute
--- PostgreSQL.9.5 PostgreSQL
 DECLARE @timeDataType Interval -- Object
 SET     @timeDataType = 00:01:00
 DECLARE @intervalDataType Interval -- Object

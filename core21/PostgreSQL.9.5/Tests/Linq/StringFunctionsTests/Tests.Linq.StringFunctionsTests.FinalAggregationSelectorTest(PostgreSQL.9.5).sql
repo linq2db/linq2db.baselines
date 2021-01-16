@@ -34,13 +34,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	STRING_AGG(t1."Value1", ' -> ')
-FROM
-	"SampleClass" t1
-
-BeforeExecute
--- PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "SampleClass"
 

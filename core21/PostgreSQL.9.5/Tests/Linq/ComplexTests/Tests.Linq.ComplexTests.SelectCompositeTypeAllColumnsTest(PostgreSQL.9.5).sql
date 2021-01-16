@@ -30,16 +30,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1.city,
-	t1.user_name,
-	t1.street,
-	t1.building_number
-FROM
-	"User" t1
-
-BeforeExecute
--- PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "User"
 
