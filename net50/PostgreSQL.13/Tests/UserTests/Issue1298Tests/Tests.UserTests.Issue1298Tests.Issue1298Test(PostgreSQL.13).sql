@@ -93,28 +93,3 @@ VALUES
 	:ref1
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	x.ref1,
-	t1.asdfgh,
-	t1.is_empty
-FROM
-	mega_composites x
-		LEFT JOIN LATERAL (
-			SELECT
-				q.asdfgh,
-				1 as is_empty
-			FROM
-				qwerty q
-			WHERE
-				q."Id" = x.ref1
-			LIMIT :take_1
-		) t1 ON 1=1
-LIMIT :take
-

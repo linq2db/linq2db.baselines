@@ -31,21 +31,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take_3 Integer -- Int32
-SET     @take_3 = 2
-DECLARE @skip_3 Integer -- Int32
-SET     @skip_3 = 3
-
-SELECT
-	t1."Value"
-FROM
-	"TakeSkipClass" t1
-ORDER BY
-	t1."Value"
-LIMIT :take_3 OFFSET :skip_3 
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "TakeSkipClass"
 

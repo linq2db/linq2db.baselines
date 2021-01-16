@@ -59,20 +59,6 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	fact_1."Id",
-	"leftTag"."Id",
-	"leftTag"."FactId",
-	"leftTag"."Name"
-FROM
-	"Tag" "leftTag"
-		RIGHT JOIN "Fact" fact_1 ON "leftTag"."FactId" = fact_1."Id"
-WHERE
-	fact_1."Id" > 3
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "Tag"
 
 BeforeExecute

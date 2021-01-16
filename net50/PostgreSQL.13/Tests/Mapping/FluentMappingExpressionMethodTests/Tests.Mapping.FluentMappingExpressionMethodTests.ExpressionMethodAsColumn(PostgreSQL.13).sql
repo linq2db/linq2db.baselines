@@ -45,15 +45,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
-	t1."Value",
-	'M' || Cast(t1."Id" as VarChar(11))
-FROM
-	"InstanceClass" t1
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "InstanceClass"
 

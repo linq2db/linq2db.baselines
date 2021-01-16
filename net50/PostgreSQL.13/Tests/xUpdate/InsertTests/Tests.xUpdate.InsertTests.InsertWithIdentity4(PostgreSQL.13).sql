@@ -37,25 +37,6 @@ RETURNING
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(5) -- String
-SET     @FirstName = 'John0'
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	p."FirstName",
-	p."PersonID",
-	p."LastName",
-	p."MiddleName",
-	p."Gender"
-FROM
-	"Person" p
-WHERE
-	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName Text(7) -- String
 SET     @LastName = 'Shepard'
@@ -80,25 +61,6 @@ VALUES
 )
 RETURNING 
 	"PersonID"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName Text(5) -- String
-SET     @FirstName = 'John1'
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	p."FirstName",
-	p."PersonID",
-	p."LastName",
-	p."MiddleName",
-	p."Gender"
-FROM
-	"Person" p
-WHERE
-	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

@@ -112,17 +112,6 @@ WHERE
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	v.id,
-	v."Value1",
-	v."Value2",
-	v."Value3"
-FROM
-	"UpdatedEntities" v
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "NewEntities"
 
 BeforeExecute

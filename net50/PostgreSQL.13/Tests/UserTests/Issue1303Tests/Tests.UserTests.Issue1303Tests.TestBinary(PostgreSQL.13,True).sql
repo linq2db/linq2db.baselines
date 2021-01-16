@@ -33,44 +33,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."ID",
-	t1."Array",
-	t1."Binary"
-FROM
-	"Issue1303" t1
-WHERE
-	t1."ID" = 1
-LIMIT 2
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."ID",
-	t1."Array",
-	t1."Binary"
-FROM
-	"Issue1303" t1
-WHERE
-	t1."Array" = E'\\x010203'
-LIMIT 2
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."ID",
-	t1."Array",
-	t1."Binary"
-FROM
-	"Issue1303" t1
-WHERE
-	t1."Binary" = E'\\x0405'
-LIMIT 2
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "Issue1303"
 

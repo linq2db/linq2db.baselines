@@ -27,22 +27,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Guid Uuid -- Guid
-SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t1."TimeOffset",
-	t1."Guid"
-FROM
-	"CreateTableTestClass" t1
-WHERE
-	t1."Guid" = :Guid
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE "CreateTableTestClass"
 

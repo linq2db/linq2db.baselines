@@ -46,16 +46,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
-	t1."StringConverted"
-FROM
-	"CreateTableTypes" t1
-ORDER BY
-	t1."Id"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "CreateTableTypes"
 
