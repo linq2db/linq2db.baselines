@@ -34,6 +34,32 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[x].[Value],
+	[x].[Id]
+FROM
+	[BaseTable] [x]
+WHERE
+	[x].[Id] = 1
+
+BeforeExecute
+-- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[x].[Value],
+	[x].[Id]
+FROM
+	[BaseTable] [x]
+WHERE
+	[x].[Id] = 1 AND [x].[Value] = 100
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [BaseTable]
 

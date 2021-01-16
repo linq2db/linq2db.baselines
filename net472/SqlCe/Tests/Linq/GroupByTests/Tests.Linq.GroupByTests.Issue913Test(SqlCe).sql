@@ -29,5 +29,31 @@ SELECT 3,'D'
 BeforeExecute
 -- SqlCe
 
+SELECT
+	[t1].[c2],
+	Count(*)
+FROM
+	(
+		SELECT
+			CASE
+				WHEN [selectParam].[TradingStatus] = 'D'
+					THEN 1
+				ELSE 0
+			END as [c1],
+			CASE
+				WHEN [selectParam].[TradingStatus] = 'D'
+					THEN 1
+				ELSE 0
+			END as [c2]
+		FROM
+			[Issue913Test] [selectParam]
+	) [t1]
+GROUP BY
+	[t1].[c1],
+	[t1].[c2]
+
+BeforeExecute
+-- SqlCe
+
 DROP TABLE [Issue913Test]
 

@@ -4,6 +4,14 @@
 DROP TABLE [TempTable]
 
 BeforeExecute
+-- SqlCe
+
+SELECT
+	[p].[ParentID]
+FROM
+	[Parent] [p]
+
+BeforeExecute
 -- SqlCe (asynchronously)
 
 CREATE TABLE [TempTable]

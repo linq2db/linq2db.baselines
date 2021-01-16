@@ -44,5 +44,15 @@ SELECT 20,120
 BeforeExecute
 -- SqlCe
 
+SELECT
+	Count(*)
+FROM
+	[InstanceClass] [t]
+WHERE
+	Convert(NVarChar(11), [t].[Id]) + Convert(NVarChar(11), [t].[Value]) = Convert(NVarChar(11), [t].[Id]) + Convert(NVarChar(11), [t].[Value])
+
+BeforeExecute
+-- SqlCe
+
 DROP TABLE [InstanceClass]
 

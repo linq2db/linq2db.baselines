@@ -24,6 +24,19 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[ID],
+	[t].[BigIntValue]
+FROM
+	[LinqDataTypes] [t]
+WHERE
+	[t].[ID] = 1001
+
+BeforeExecute
+-- SqlCe
 
 DELETE FROM
 	[LinqDataTypes]

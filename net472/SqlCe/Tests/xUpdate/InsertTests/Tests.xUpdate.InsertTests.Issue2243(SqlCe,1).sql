@@ -52,6 +52,19 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[t1].[id],
+	[t1].[name],
+	[t1].[created_by],
+	[t1].[updated_by]
+FROM
+	[test_insert_or_replace] [t1]
+
+BeforeExecute
+-- SqlCe
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test2'
 DECLARE @UpdatedBy NVarChar(10) -- String
@@ -66,6 +79,19 @@ SET
 	[test_insert_or_replace].[updated_by] = @UpdatedBy
 WHERE
 	[test_insert_or_replace].[id] = @Id
+
+BeforeExecute
+-- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[t1].[id],
+	[t1].[name],
+	[t1].[created_by],
+	[t1].[updated_by]
+FROM
+	[test_insert_or_replace] [t1]
 
 BeforeExecute
 -- SqlCe

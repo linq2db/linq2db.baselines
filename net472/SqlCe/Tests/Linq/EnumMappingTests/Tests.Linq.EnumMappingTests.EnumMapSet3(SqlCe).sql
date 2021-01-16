@@ -34,6 +34,16 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+
+SELECT
+	Count(*)
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 101 AND [r].[IntValue] = 4
+
+BeforeExecute
+-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 

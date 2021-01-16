@@ -29,6 +29,16 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	1
+FROM
+	[SelectExpressionTable] [_]
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [SelectExpressionTable]
 

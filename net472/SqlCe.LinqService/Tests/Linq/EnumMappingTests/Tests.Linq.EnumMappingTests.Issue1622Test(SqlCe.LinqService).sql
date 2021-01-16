@@ -29,6 +29,32 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[e].[Id],
+	[e].[SomeText]
+FROM
+	[Issue1622Table] [e]
+WHERE
+	[e].[SomeText] = 'Value1_suffix'
+
+BeforeExecute
+-- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[e].[Id],
+	[e].[SomeText]
+FROM
+	[Issue1622Table] [e]
+WHERE
+	[e].[Id] = 1
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [Issue1622Table]
 

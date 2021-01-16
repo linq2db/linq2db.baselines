@@ -155,6 +155,18 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+
+SELECT
+	Max([c_1].[Id])
+FROM
+	[AsyncDataTable] [c_1]
+WHERE
+	[c_1].[Id] > @Id
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [AsyncDataTable]
 

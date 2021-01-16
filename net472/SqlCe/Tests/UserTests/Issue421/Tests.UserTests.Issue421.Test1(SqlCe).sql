@@ -25,6 +25,19 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Id],
+	[_].[BlobValue]
+FROM
+	[BlobClass] [_]
+WHERE
+	[_].[Id] = 1
+
+BeforeExecute
+-- SqlCe
 DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = 0x030201
 
@@ -34,6 +47,19 @@ SET
 	[BlobClass].[BlobValue] = @BlobValue
 WHERE
 	[BlobClass].[Id] = 1
+
+BeforeExecute
+-- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[Id],
+	[_].[BlobValue]
+FROM
+	[BlobClass] [_]
+WHERE
+	[_].[Id] = 1
 
 BeforeExecute
 -- SqlCe

@@ -29,6 +29,18 @@ SELECT 'Value8'
 
 BeforeExecute
 -- SqlCe
+DECLARE @take_3 Int -- Int32
+SET     @take_3 = 1
+
+SELECT TOP (@take_3)
+	[t1].[Value]
+FROM
+	[TakeSkipClass] [t1]
+ORDER BY
+	[t1].[Value]
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [TakeSkipClass]
 

@@ -375,5 +375,15 @@ VALUES
 BeforeExecute
 -- SqlCe
 
+SELECT
+	[t1].[Id],
+	[t1].[Value],
+	'M' + Convert(NVarChar(11), [t1].[Id])
+FROM
+	[InstanceClass] [t1]
+
+BeforeExecute
+-- SqlCe
+
 DROP TABLE [InstanceClass]
 

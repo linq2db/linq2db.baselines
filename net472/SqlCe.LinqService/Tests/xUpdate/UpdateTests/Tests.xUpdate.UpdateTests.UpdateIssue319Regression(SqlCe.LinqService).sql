@@ -18,6 +18,20 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+DECLARE @id Int -- Int32
+SET     @id = 100500
+
+SELECT TOP (@take)
+	[_].[ParentID]
+FROM
+	[Parent] [_]
+WHERE
+	[_].[ParentID] = @id
+
+BeforeExecute
+-- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500
 DECLARE @id Int -- Int32

@@ -80,6 +80,14 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+
+SELECT
+	Count(*)
+FROM
+	[xxPatient] [t1]
+
+BeforeExecute
+-- SqlCe
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Int -- Int32
@@ -105,6 +113,14 @@ SET
 	[xxPatient].[Diagnosis] = @Diagnosis
 WHERE
 	[xxPatient].[PersonID] = @PersonID
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	Count(*)
+FROM
+	[xxPatient] [t1]
 
 BeforeExecute
 -- SqlCe

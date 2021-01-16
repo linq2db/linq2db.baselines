@@ -18,6 +18,23 @@ CREATE TABLE [TestEqualsTable2]
 BeforeExecute
 -- SqlCe
 
+SELECT
+	[_].[Id]
+FROM
+	[TestEqualsTable1] [_]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[TestEqualsTable2] [__]
+		WHERE
+			[_].[Id] = [__].[FK] AND [__].[Id] IS NULL
+	)
+
+BeforeExecute
+-- SqlCe
+
 DROP TABLE [TestEqualsTable2]
 
 BeforeExecute

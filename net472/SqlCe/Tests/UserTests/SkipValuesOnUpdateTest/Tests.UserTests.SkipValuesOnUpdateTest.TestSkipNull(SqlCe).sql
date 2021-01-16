@@ -34,6 +34,20 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Update_Null_Table] [t]
+WHERE
+	[t].[Id] = 1
+
+BeforeExecute
+-- SqlCe
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Int -- Int32
@@ -51,6 +65,20 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Update_Null_Table] [t]
+WHERE
+	[t].[Id] = 1
+
+BeforeExecute
+-- SqlCe
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'Franki'
 DECLARE @Id Int -- Int32
@@ -62,6 +90,20 @@ SET
 	[PR_1598_Update_Null_Table].[Name] = @Name
 WHERE
 	[PR_1598_Update_Null_Table].[Id] = @Id
+
+BeforeExecute
+-- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Update_Null_Table] [t]
+WHERE
+	[t].[Id] = 1
 
 BeforeExecute
 -- SqlCe

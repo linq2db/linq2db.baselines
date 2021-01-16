@@ -23,6 +23,16 @@ VALUES
 BeforeExecute
 -- SqlCe
 
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = 1001
+
+BeforeExecute
+-- SqlCe
+
 DELETE FROM
 	[Parent]
 WHERE

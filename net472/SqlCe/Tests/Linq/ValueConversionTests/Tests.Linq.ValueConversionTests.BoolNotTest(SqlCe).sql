@@ -49,6 +49,21 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL
 
 BeforeExecute
 -- SqlCe
+DECLARE @BoolValue_1 NVarChar -- String
+SET     @BoolValue_1 = 'N'
+
+SELECT
+	[t].[Id],
+	[t].[Value1],
+	[t].[Value2],
+	[t].[BoolValue]
+FROM
+	[ValueConversion] [t]
+WHERE
+	[t].[BoolValue] = @BoolValue_1
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [ValueConversion]
 

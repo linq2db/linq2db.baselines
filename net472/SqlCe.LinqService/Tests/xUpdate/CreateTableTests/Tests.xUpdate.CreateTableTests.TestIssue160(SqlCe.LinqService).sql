@@ -30,5 +30,14 @@ VALUES
 BeforeExecute
 -- SqlCe
 
+SELECT
+	[t1].[cc],
+	[t1].[bb]
+FROM
+	[aa] [t1]
+
+BeforeExecute
+-- SqlCe
+
 DROP TABLE [aa]
 

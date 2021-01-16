@@ -30,6 +30,20 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Insert_Null_Table] [t]
+WHERE
+	[t].[Id] = 1
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [PR_1598_Insert_Null_Table]
 

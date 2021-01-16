@@ -26,12 +26,34 @@ VALUES
 BeforeExecute
 -- SqlCe
 
+SELECT TOP (1)
+	[_].[Id],
+	[_].[BlobValue]
+FROM
+	[BlobClass] [_]
+WHERE
+	[_].[Id] = 1
+
+BeforeExecute
+-- SqlCe
+
 UPDATE
 	[BlobClass]
 SET
 	[BlobClass].[BlobValue] = 0x030201
 WHERE
 	[BlobClass].[Id] = 1
+
+BeforeExecute
+-- SqlCe
+
+SELECT TOP (1)
+	[_].[Id],
+	[_].[BlobValue]
+FROM
+	[BlobClass] [_]
+WHERE
+	[_].[Id] = 1
 
 BeforeExecute
 -- SqlCe

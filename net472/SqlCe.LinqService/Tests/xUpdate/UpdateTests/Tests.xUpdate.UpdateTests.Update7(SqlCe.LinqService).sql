@@ -26,6 +26,18 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @id Int -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 1
+
+BeforeExecute
+-- SqlCe
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 DECLARE @id Int -- Int32
@@ -40,6 +52,18 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @id Int -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 2
+
+BeforeExecute
+-- SqlCe
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 DECLARE @id Int -- Int32
@@ -51,6 +75,18 @@ SET
 	[Parent].[Value1] = @Value1
 WHERE
 	[Parent].[ParentID] = @id
+
+BeforeExecute
+-- SqlCe
+DECLARE @id Int -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 3
 
 BeforeExecute
 -- SqlCe

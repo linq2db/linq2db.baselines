@@ -57,6 +57,42 @@ SELECT 2,4,3
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[x].[InId],
+	[j].[InId],
+	[j].[InMaxQuantity],
+	[j].[InMinQuantity],
+	[x].[InMinQuantity],
+	[x].[InMaxQuantity]
+FROM
+	[StLink] [x]
+		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
+WHERE
+	[x].[InId] = 1
+
+BeforeExecute
+-- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[x].[InId],
+	[j].[InId],
+	[j].[InMaxQuantity],
+	[j].[InMinQuantity],
+	[x].[InMinQuantity],
+	[x].[InMaxQuantity]
+FROM
+	[StLink] [x]
+		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
+WHERE
+	[x].[InId] = 2
+
+BeforeExecute
+-- SqlCe
 
 DROP TABLE [EdtLink]
 

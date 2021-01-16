@@ -29,5 +29,23 @@ VALUES
 BeforeExecute
 -- SqlCe
 
+SELECT
+	[t].[ID],
+	[t].[ID1]
+FROM
+	[DropTableTestID] [t]
+
+BeforeExecute
+-- SqlCe
+
 DROP TABLE [DropTableTestID]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t1].[ID],
+	[t1].[ID1]
+FROM
+	[DropTableTestID] [t1]
 
