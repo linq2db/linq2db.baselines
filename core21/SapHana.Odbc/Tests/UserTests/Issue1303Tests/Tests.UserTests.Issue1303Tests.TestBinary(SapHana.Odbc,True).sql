@@ -33,44 +33,5 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"_"."ID",
-	"_"."Array",
-	"_"."Binary"
-FROM
-	"Issue1303" "_"
-WHERE
-	"_"."ID" = 1
-LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"_"."ID",
-	"_"."Array",
-	"_"."Binary"
-FROM
-	"Issue1303" "_"
-WHERE
-	"_"."Array" = x'010203'
-LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"_"."ID",
-	"_"."Array",
-	"_"."Binary"
-FROM
-	"Issue1303" "_"
-WHERE
-	"_"."Binary" = x'0405'
-LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "Issue1303"
 

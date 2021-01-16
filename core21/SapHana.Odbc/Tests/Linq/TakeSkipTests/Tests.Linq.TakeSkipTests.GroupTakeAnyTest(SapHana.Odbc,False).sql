@@ -70,26 +70,5 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				"t1"."Value"
-			FROM
-				"TakeSkipClass" "t1"
-			GROUP BY
-				"t1"."Value"
-			HAVING
-				Count(*) > 1
-			LIMIT 1
-		)
-			THEN 1
-		ELSE 0
-	END
-FROM DUMMY
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "TakeSkipClass"
 

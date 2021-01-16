@@ -26,22 +26,5 @@ FROM
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"t1"."ID"
-FROM
-	"TempTable" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t"."ID"
-FROM
-	"Parent" "p"
-		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t"."ID"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "TempTable"
 

@@ -47,28 +47,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 1001
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	"t"."ID",
-	"t"."MoneyValue",
-	"t"."DateTimeValue",
-	"t"."BoolValue",
-	"t"."GuidValue",
-	"t"."BinaryValue",
-	"t"."SmallIntValue",
-	"t"."StringValue"
-FROM
-	"LinqDataTypes" "t"
-WHERE
-	"t"."ID" = ?
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 1001
 
 DELETE FROM
 	"LinqDataTypes" "t1"

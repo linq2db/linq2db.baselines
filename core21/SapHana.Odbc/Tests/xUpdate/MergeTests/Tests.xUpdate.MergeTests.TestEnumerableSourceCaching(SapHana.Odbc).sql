@@ -38,17 +38,6 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"t1"."Id",
-	"t1"."Value"
-FROM
-	"CacheTestTable" "t1"
-ORDER BY
-	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "CacheTestTable" "Target"
 USING (	SELECT 1 "Id", 1 "Value_1" FROM DUMMY
 	UNION ALL
@@ -73,17 +62,6 @@ VALUES
 	"Source"."Id",
 	"Source"."Value_1"
 )
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t1"."Id",
-	"t1"."Value"
-FROM
-	"CacheTestTable" "t1"
-ORDER BY
-	"t1"."Id"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

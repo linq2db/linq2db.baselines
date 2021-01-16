@@ -66,16 +66,5 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1"
-FROM
-	"Issue1373Tests" "t1"
-ORDER BY
-	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "Issue1373Tests"
 

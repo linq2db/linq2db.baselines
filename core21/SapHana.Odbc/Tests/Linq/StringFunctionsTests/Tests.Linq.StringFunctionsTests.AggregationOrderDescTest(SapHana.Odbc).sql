@@ -108,17 +108,5 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	Max("t1"."Value1"),
-	STRING_AGG("t1"."Value1", ' -> ' ORDER BY "t1"."Value1" DESC)
-FROM
-	"SampleClass" "t1"
-GROUP BY
-	"t1"."Id",
-	"t1"."Value1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "SampleClass"
 

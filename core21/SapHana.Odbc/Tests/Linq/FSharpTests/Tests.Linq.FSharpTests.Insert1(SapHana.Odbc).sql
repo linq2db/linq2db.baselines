@@ -27,16 +27,6 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	Count(*)
-FROM
-	"Child" "c_1"
-WHERE
-	"c_1"."ChildID" = 1001
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Child" "t1"
 WHERE

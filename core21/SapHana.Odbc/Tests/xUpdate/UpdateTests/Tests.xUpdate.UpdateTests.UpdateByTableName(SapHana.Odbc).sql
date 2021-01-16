@@ -45,29 +45,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	Count(*)
-FROM
-	"xxPerson" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	"t1"."FirstName",
-	"t1"."PersonID",
-	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender"
-FROM
-	"xxPerson" "t1"
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -88,21 +65,6 @@ SET
 	"xxPerson"."Gender" = ?
 WHERE
 	"xxPerson"."PersonID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	"t1"."FirstName",
-	"t1"."PersonID",
-	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender"
-FROM
-	"xxPerson" "t1"
-LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

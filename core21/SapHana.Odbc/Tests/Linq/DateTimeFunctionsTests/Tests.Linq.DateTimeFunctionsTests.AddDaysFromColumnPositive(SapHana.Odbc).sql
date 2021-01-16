@@ -42,18 +42,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p_1  -- DateTime
-SET     @p_1 = '2018-01-02'
-
-SELECT
-	Count(*)
-FROM
-	"LinqDataTypes" "t"
-WHERE
-	"t"."ID" = 5000 AND Add_Days("t"."DateTimeValue", "t"."SmallIntValue") > ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"LinqDataTypes" "t1"

@@ -236,28 +236,5 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"g_1"."Id1",
-	Count(*)
-FROM
-	(
-		SELECT DISTINCT
-			"selectParam"."Id1",
-			"selectParam"."Id2",
-			"selectParam"."Value" as "Value_1"
-		FROM
-			"GroupSampleClass" "selectParam"
-	) "g_1"
-GROUP BY GROUPING SETS (
-	("g_1"."Id1", "g_1"."Id2"),
-	("g_1"."Id2"),
-	()
-)
-HAVING
-	Count(*) > 0
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "GroupSampleClass"
 

@@ -87,25 +87,6 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
-FROM
-	"Person" "_"
-WHERE
-	"_"."PersonID" = ?
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -126,25 +107,6 @@ SET
 	"Person"."LastName" = ?
 WHERE
 	"Person"."PersonID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
-FROM
-	"Person" "_"
-WHERE
-	"_"."PersonID" = ?
-LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -52,20 +52,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	"t1"."id",
-	"t1"."name",
-	"t1"."created_by",
-	"t1"."updated_by"
-FROM
-	"test_insert_or_replace" "t1"
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test2'
 DECLARE @UpdatedBy NVarChar(10) -- String
@@ -80,20 +66,6 @@ SET
 	"test_insert_or_replace"."updated_by" = ?
 WHERE
 	"test_insert_or_replace"."id" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	"t1"."id",
-	"t1"."name",
-	"t1"."created_by",
-	"t1"."updated_by"
-FROM
-	"test_insert_or_replace" "t1"
-LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

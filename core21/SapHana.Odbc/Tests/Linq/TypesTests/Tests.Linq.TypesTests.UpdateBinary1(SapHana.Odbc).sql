@@ -10,13 +10,3 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = 1
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t"."BinaryValue"
-FROM
-	"LinqDataTypes" "t"
-WHERE
-	"t"."ID" = 1
-

@@ -24,17 +24,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"r"."ID",
-	"r"."BigIntValue"
-FROM
-	"LinqDataTypes" "r"
-WHERE
-	"r"."ID" = 101
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 102
 

@@ -29,36 +29,12 @@ BeforeExecute
 DECLARE @id  -- Int32
 SET     @id = 1001
 
-SELECT
-	Count(*)
-FROM
-	"Parent" "p"
-WHERE
-	"p"."ParentID" = ? AND "p"."Value1" = 1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 1001
-
 UPDATE
 	"Parent"
 SET
 	"Parent"."Value1" = 2
 WHERE
 	"Parent"."ParentID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	"Parent" "p"
-WHERE
-	"p"."ParentID" = ? AND "p"."Value1" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -108,25 +108,6 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	Count(*)
-FROM
-	"xxPerson" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	Count(*)
-FROM
-	"xxPerson" "p"
-WHERE
-	"p"."FirstName" = 'Steven' AND "p"."LastName" = 'King' AND
-	"p"."Gender" = 'M'
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "xxPerson"
 
 BeforeExecute

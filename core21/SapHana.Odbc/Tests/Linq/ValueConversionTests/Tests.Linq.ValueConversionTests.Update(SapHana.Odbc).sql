@@ -502,27 +502,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
-	"e"."Enum",
-	"e"."EnumNullable",
-	"e"."EnumWithNull",
-	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue",
-	"e"."DateTimeNullable"
-FROM
-	"ValueConversion" "e"
-WHERE
-	"e"."Id" = 1
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Value1 NVarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 NVarChar(22) -- String
@@ -558,27 +537,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
-	"e"."Enum",
-	"e"."EnumNullable",
-	"e"."EnumWithNull",
-	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue",
-	"e"."DateTimeNullable"
-FROM
-	"ValueConversion" "e"
-WHERE
-	"e"."Id" = 2
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Value1 NVarChar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarChar -- String
@@ -611,27 +569,6 @@ SET
 	"ValueConversion"."DateTimeNullable" = ?
 WHERE
 	"ValueConversion"."Id" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"e"."Id",
-	"e"."Value1",
-	"e"."Value2",
-	"e"."Enum",
-	"e"."EnumNullable",
-	"e"."EnumWithNull",
-	"e"."EnumWithNullDeclarative",
-	"e"."BoolValue",
-	"e"."DateTimeNullable"
-FROM
-	"ValueConversion" "e"
-WHERE
-	"e"."Id" = 3
-LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

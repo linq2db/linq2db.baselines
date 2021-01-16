@@ -34,14 +34,6 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	Count(*)
-FROM
-	"InheritanceParent" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"InheritanceParent"
 SET
@@ -49,12 +41,4 @@ SET
 WHERE
 	"InheritanceParent"."InheritanceParentId" = 143 AND
 	"InheritanceParent"."Name" IS NULL
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	Count(*)
-FROM
-	"InheritanceParent" "t1"
 

@@ -35,22 +35,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
-DECLARE @skip  -- Int32
-SET     @skip = 1
-
-SELECT
-	"t1"."ID",
-	"t1"."Field1"
-FROM
-	"test_temp" "t1"
-ORDER BY
-	"t1"."ID"
-LIMIT ? OFFSET ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM "test_temp"
 
@@ -77,22 +61,6 @@ VALUES
 (
 	1
 )
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
-DECLARE @skip  -- Int32
-SET     @skip = 1
-
-SELECT
-	"t1"."ID",
-	"t1"."Field1"
-FROM
-	"test_temp" "t1"
-ORDER BY
-	"t1"."ID"
-LIMIT ? OFFSET ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

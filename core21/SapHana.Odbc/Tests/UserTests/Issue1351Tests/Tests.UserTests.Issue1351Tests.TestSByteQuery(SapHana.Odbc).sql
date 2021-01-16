@@ -11,29 +11,5 @@ CREATE COLUMN TABLE "T1351Model"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"_"."ID",
-	"_"."TestField",
-	"_"."TestNullable"
-FROM
-	"T1351Model" "_"
-WHERE
-	"_"."TestField" = 0
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"_"."ID",
-	"_"."TestField",
-	"_"."TestNullable"
-FROM
-	"T1351Model" "_"
-WHERE
-	("_"."TestNullable" <> 1 OR "_"."TestNullable" IS NULL)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "T1351Model"
 

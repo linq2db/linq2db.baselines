@@ -30,22 +30,6 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 1
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	"_"."Id",
-	"_"."Has"
-FROM
-	"Issue1438" "_"
-WHERE
-	"_"."Id" = ?
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "Issue1438"
 

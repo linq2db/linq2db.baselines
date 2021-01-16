@@ -23,24 +23,6 @@ CREATE COLUMN TABLE "person649"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @added  -- DateTime
-SET     @added = '2017-01-01'
-
-SELECT
-	"a_Person"."personid",
-	"a_Person"."personname",
-	Max("f"."added")
-FROM
-	"activity649" "f"
-		INNER JOIN "person649" "a_Person" ON "f"."personid" = "a_Person"."personid"
-WHERE
-	"f"."added" >= ?
-GROUP BY
-	"a_Person"."personid",
-	"a_Person"."personname"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "person649"
 

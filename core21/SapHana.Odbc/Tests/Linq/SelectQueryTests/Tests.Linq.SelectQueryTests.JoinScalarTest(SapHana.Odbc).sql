@@ -33,20 +33,5 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"t"."Id",
-	"t"."Value",
-	"s"."c1"
-FROM
-	"SampleClass" "t"
-		INNER JOIN (
-			SELECT
-				1 as "c1"
-FROM DUMMY
-		) "s" ON "s"."c1" = "t"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "SampleClass"
 

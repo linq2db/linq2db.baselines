@@ -26,29 +26,5 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"_"."Id",
-	"_"."BlobValue"
-FROM
-	"BlobClass" "_"
-WHERE
-	"_"."Id" = 1
-LIMIT 1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"_"."Id",
-	"_"."BlobValue"
-FROM
-	"BlobClass" "_"
-WHERE
-	"_"."Id" = 1
-LIMIT 1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "BlobClass"
 

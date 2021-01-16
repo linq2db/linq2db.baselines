@@ -19,16 +19,5 @@ CREATE COLUMN TABLE "TestTable"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"t1"."ID",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."CreatedOn"
-FROM
-	"TestTable" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "TestTable"
 

@@ -12,19 +12,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	Length("t"."BinaryValue")
-FROM
-	"LinqDataTypes" "t"
-WHERE
-	"t"."ID" = 1
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 

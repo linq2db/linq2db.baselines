@@ -28,20 +28,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"t"."ParentID",
-	"t"."Value1"
-FROM
-	"Parent" "t"
-WHERE
-	"t"."ParentID" = 1010
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"Parent" "t1"

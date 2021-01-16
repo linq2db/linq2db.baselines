@@ -34,21 +34,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Update_Table" "t"
-WHERE
-	"t"."Id" = 1
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Jacob'
 DECLARE @Age  -- Int32
@@ -66,21 +51,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Update_Table" "t"
-WHERE
-	"t"."Id" = 1
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Age  -- Int32
 SET     @Age = 22
 DECLARE @Id  -- Int32
@@ -92,21 +62,6 @@ SET
 	"PR_1598_Update_Table"."Age" = ?
 WHERE
 	"PR_1598_Update_Table"."Id" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Update_Table" "t"
-WHERE
-	"t"."Id" = 1
-LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

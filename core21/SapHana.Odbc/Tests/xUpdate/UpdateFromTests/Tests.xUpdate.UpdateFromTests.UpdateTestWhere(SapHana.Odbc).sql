@@ -320,17 +320,6 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"v"."id",
-	"v"."Value1",
-	"v"."Value2",
-	"v"."Value3"
-FROM
-	"UpdatedEntities" "v"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "NewEntities"
 
 BeforeExecute

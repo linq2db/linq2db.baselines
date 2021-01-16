@@ -483,21 +483,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue VarChar(1) -- AnsiString
-SET     @BoolValue = 'Y'
-
-SELECT
-	"t"."Id",
-	"t"."Value1",
-	"t"."Value2",
-	"t"."BoolValue"
-FROM
-	"ValueConversion" "t"
-WHERE
-	"t"."BoolValue" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "ValueConversion"
 

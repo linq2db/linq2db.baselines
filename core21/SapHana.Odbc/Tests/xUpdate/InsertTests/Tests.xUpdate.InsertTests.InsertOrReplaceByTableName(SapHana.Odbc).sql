@@ -80,14 +80,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	Count(*)
-FROM
-	"xxPatient" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID  -- Int32
@@ -113,14 +105,6 @@ SET
 	"xxPatient"."Diagnosis" = ?
 WHERE
 	"xxPatient"."PersonID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	Count(*)
-FROM
-	"xxPatient" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

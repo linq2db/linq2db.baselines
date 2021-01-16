@@ -97,25 +97,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
-FROM
-	"Person" "_"
-WHERE
-	"_"."PersonID" = ?
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"Person" "_"

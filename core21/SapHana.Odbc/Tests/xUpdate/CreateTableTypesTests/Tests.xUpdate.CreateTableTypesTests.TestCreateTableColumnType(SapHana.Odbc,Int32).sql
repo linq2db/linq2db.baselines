@@ -46,16 +46,5 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"t1"."Id",
-	"t1"."Int32"
-FROM
-	"CreateTableTypes" "t1"
-ORDER BY
-	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "CreateTableTypes"
 

@@ -29,23 +29,5 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"t"."ID",
-	"t"."ID1"
-FROM
-	"DropTableTestID" "t"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "DropTableTestID"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t1"."ID",
-	"t1"."ID1"
-FROM
-	"DropTableTestID" "t1"
 

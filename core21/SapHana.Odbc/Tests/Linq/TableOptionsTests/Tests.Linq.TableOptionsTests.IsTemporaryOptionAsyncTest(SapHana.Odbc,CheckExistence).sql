@@ -49,24 +49,6 @@ FROM
 	"temp_table1" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t1"."ID",
-	"t1"."Value"
-FROM
-	"temp_table1" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t1"."ID",
-	"t1"."Value"
-FROM
-	"temp_table2" "t1"
-
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 2

@@ -131,22 +131,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	"p"."PersonID",
-	"p"."Diagnosis"
-FROM
-	"Patient" "p"
-WHERE
-	"p"."PersonID" = ?
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 5
 
 DELETE FROM
 	"Patient" "t1"

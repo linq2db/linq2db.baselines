@@ -15,18 +15,5 @@ CREATE COLUMN TABLE "CustomerBase"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"cb"."Id",
-	"cb"."Name",
-	"cb"."ContactEmail",
-	Coalesce("cb"."Enabled", 0)
-FROM
-	"CustomerBase" "cb"
-WHERE
-	"cb"."ClientType" = 'Client'
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "CustomerBase"
 
