@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	Max(t1."ID")
-FROM
-	"AllTypes" t1
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @NString Text(6) -- String
 SET     @NString = 'test01'
 
@@ -300,21 +292,6 @@ VALUES
 (
 	:NString
 )
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @lastId Integer -- Int32
-SET     @lastId = 2
-
-SELECT
-	t1."ID",
-	t1."char20DataType"
-FROM
-	"AllTypes" t1
-WHERE
-	t1."ID" > :lastId
-ORDER BY
-	t1."ID"
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL

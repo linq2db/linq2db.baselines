@@ -46,16 +46,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
-	t1."StringEnumNullable"
-FROM
-	"CreateTableTypes" t1
-ORDER BY
-	t1."Id"
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "CreateTableTypes"
 

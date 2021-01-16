@@ -34,21 +34,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."Id",
-	t."Name",
-	t."Age"
-FROM
-	"PR_1598_Update_Null_Table" t
-WHERE
-	t."Id" = 1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @Name Text(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Integer -- Int32
@@ -66,21 +51,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."Id",
-	t."Name",
-	t."Age"
-FROM
-	"PR_1598_Update_Null_Table" t
-WHERE
-	t."Id" = 1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @Name Text(6) -- String
 SET     @Name = 'Franki'
 DECLARE @Id Integer -- Int32
@@ -92,21 +62,6 @@ SET
 	"Name" = :Name
 WHERE
 	"PR_1598_Update_Null_Table"."Id" = :Id
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."Id",
-	t."Name",
-	t."Age"
-FROM
-	"PR_1598_Update_Null_Table" t
-WHERE
-	t."Id" = 1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL

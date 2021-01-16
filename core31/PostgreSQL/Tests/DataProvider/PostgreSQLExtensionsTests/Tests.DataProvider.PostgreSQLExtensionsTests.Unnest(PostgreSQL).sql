@@ -153,16 +153,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	v
-FROM
-	"SampleClass" t
-		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
-WHERE
-	v.* LIKE 'V%' ESCAPE '~'
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "SampleClass"
 

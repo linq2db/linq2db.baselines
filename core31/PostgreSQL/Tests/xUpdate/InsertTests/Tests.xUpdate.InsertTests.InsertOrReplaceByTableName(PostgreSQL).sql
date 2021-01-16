@@ -56,14 +56,6 @@ ON CONFLICT ("PersonID") DO UPDATE SET
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	Count(*)
-FROM
-	"xxPatient" t1
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis Text(4) -- String
@@ -101,14 +93,6 @@ VALUES
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	Count(*)
-FROM
-	"xxPatient" t1
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL

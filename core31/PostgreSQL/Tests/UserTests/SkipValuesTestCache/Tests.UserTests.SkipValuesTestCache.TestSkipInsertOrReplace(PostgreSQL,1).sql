@@ -32,21 +32,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."Id",
-	t."Name",
-	t."Age"
-FROM
-	"PR_1598_Insert_Table_Cache" t
-WHERE
-	t."Id" = 1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(4) -- String
@@ -64,21 +49,6 @@ VALUES
 )
 ON CONFLICT ("Id") DO UPDATE SET
 	"Name" = :Name
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."Id",
-	t."Name",
-	t."Age"
-FROM
-	"PR_1598_Insert_Table_Cache" t
-WHERE
-	t."Id" = 1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL

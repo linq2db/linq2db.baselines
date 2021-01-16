@@ -25,16 +25,6 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	Count(*)
-FROM
-	"Parent" p
-WHERE
-	p."Value1" = 11
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
-
 DELETE FROM
 	"Parent" t1
 WHERE
