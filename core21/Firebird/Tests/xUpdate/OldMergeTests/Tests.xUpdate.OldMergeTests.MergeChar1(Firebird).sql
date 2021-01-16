@@ -26,20 +26,6 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
-SELECT
-	"t".ID,
-	"t"."charDataType",
-	"t"."ncharDataType"
-FROM
-	"AllTypes" "t"
-WHERE
-	"t".ID = @id
-
-BeforeExecute
--- Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 3
-
 MERGE INTO "AllTypes" "Target"
 USING (
 	SELECT

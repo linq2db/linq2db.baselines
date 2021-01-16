@@ -64,14 +64,6 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
-	Count(*)
-FROM
-	"Parent564" "t1"
-
-BeforeExecute
--- Firebird
-
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Parent564"';
 	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Parent564"';

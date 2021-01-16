@@ -29,36 +29,12 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
-SELECT
-	Count(*)
-FROM
-	"Parent" "p"
-WHERE
-	"p"."ParentID" = @id AND "p"."Value1" = 1
-
-BeforeExecute
--- Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
 UPDATE
 	"Parent"
 SET
 	"Parent"."Value1" = 2
 WHERE
 	"Parent"."ParentID" = @id
-
-BeforeExecute
--- Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	"Parent" "p"
-WHERE
-	"p"."ParentID" = @id AND "p"."Value1" = 2
 
 BeforeExecute
 -- Firebird

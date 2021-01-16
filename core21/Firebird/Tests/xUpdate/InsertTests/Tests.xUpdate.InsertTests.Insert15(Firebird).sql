@@ -37,16 +37,6 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
-	Count(*)
-FROM
-	"Person" "t1"
-WHERE
-	"t1"."FirstName" STARTING WITH 'Insert15'
-
-BeforeExecute
--- Firebird
-
 DELETE FROM
 	"Person" "t1"
 WHERE

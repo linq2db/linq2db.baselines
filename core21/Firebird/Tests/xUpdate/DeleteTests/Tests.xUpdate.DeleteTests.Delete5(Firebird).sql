@@ -49,28 +49,8 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
-	Count(*)
-FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" > 1000
-
-BeforeExecute
--- Firebird
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" IN (1001, 1002)
-
-BeforeExecute
--- Firebird
-
-SELECT
-	Count(*)
-FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" > 1000
 

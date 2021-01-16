@@ -42,50 +42,6 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	"key_data_result"."Id",
-	"key_data_result"."Title",
-	"key_data_result"."Text",
-	"detail"."Id"
-FROM
-	(
-		SELECT DISTINCT
-			"t1"."Id",
-			"t1"."Title",
-			"t1"."Text"
-		FROM
-			(
-				SELECT FIRST @take
-					"x"."Id",
-					"x"."Title",
-					"x"."Text"
-				FROM
-					"Topic" "x"
-				WHERE
-					"x"."Id" = 6
-			) "t1"
-	) "key_data_result"
-		INNER JOIN "Message" "detail" ON "detail"."TopicId" = "key_data_result"."Id"
-
-BeforeExecute
--- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"x"."Id",
-	"x"."Title",
-	"x"."Text"
-FROM
-	"Topic" "x"
-WHERE
-	"x"."Id" = 6
-
-BeforeExecute
--- Firebird
 
 DROP TABLE "Message"
 

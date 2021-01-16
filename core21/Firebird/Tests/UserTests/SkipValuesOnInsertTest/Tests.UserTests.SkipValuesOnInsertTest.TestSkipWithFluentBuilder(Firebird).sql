@@ -30,20 +30,6 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Insert_Fluent_Table" "t"
-WHERE
-	"t"."Id" = 1
-
-BeforeExecute
--- Firebird
 
 DROP TABLE "PR_1598_Insert_Fluent_Table"
 

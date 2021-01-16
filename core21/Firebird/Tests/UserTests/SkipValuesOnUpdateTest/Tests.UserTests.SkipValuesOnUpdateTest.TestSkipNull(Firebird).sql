@@ -34,20 +34,6 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Update_Null_Table" "t"
-WHERE
-	"t"."Id" = 1
-
-BeforeExecute
--- Firebird
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Integer -- Int32
@@ -65,20 +51,6 @@ WHERE
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Update_Null_Table" "t"
-WHERE
-	"t"."Id" = 1
-
-BeforeExecute
--- Firebird
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'Franki'
 DECLARE @Id Integer -- Int32
@@ -90,20 +62,6 @@ SET
 	"PR_1598_Update_Null_Table"."Name" = @Name
 WHERE
 	"PR_1598_Update_Null_Table"."Id" = @Id
-
-BeforeExecute
--- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Update_Null_Table" "t"
-WHERE
-	"t"."Id" = 1
 
 BeforeExecute
 -- Firebird

@@ -51,24 +51,6 @@ END
 
 BeforeExecute
 -- Firebird
-DECLARE @added TimeStamp -- DateTime
-SET     @added = CAST('2017-01-01' AS timestamp)
-
-SELECT
-	"a_Person"."personid",
-	"a_Person"."personname",
-	Max("p"."added")
-FROM
-	"activity649" "p"
-		INNER JOIN "person649" "a_Person" ON "p"."personid" = "a_Person"."personid"
-WHERE
-	"p"."added" >= @added
-GROUP BY
-	"a_Person"."personid",
-	"a_Person"."personname"
-
-BeforeExecute
--- Firebird
 
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_person649"';

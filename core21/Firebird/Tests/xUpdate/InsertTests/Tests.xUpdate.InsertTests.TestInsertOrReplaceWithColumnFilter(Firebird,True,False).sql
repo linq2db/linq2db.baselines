@@ -51,23 +51,6 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @FirstName VarChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-
-SELECT FIRST @take
-	"x".ID,
-	"x"."FirstName",
-	"x"."LastName",
-	"x"."MiddleName"
-FROM
-	"TestInsertOrReplaceTable" "x"
-WHERE
-	"x"."FirstName" = @FirstName
-
-BeforeExecute
--- Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -103,23 +86,6 @@ WHEN NOT MATCHED THEN
 		@LastName,
 		@MiddleName
 	)
-
-BeforeExecute
--- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @FirstName VarChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-
-SELECT FIRST @take
-	"x".ID,
-	"x"."FirstName",
-	"x"."LastName",
-	"x"."MiddleName"
-FROM
-	"TestInsertOrReplaceTable" "x"
-WHERE
-	"x"."FirstName" = @FirstName
 
 BeforeExecute
 -- Firebird

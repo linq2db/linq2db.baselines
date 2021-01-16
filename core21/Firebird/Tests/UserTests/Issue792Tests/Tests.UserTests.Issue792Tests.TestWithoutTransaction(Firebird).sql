@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	Count(*)
-FROM
-	"AllTypes" "t1"
-
-BeforeExecute
--- Firebird
-
 "AddIssue792Record"
 
 BeforeExecute
@@ -206,14 +198,6 @@ DECLARE @RETURN_VALUE Integer(4) -- Int32
 SET     @RETURN_VALUE = 0
 
 "Scalar_ReturnParameter"
-
-BeforeExecute
--- Firebird
-
-SELECT
-	Count(*)
-FROM
-	"AllTypes" "t1"
 
 BeforeExecute
 -- Firebird

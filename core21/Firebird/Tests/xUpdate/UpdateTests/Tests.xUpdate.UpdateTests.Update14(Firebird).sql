@@ -41,16 +41,6 @@ WHERE
 BeforeExecute
 -- Firebird
 
-SELECT
-	Count(*)
-FROM
-	"Person" "t1"
-WHERE
-	"t1"."FirstName" STARTING WITH 'Update14'
-
-BeforeExecute
--- Firebird
-
 DELETE FROM
 	"Person" "t1"
 WHERE

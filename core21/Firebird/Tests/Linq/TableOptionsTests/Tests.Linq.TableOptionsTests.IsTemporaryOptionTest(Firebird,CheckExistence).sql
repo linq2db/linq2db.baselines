@@ -55,24 +55,6 @@ FROM
 BeforeExecute
 -- Firebird
 
-SELECT
-	"t1".ID,
-	"t1"."Value"
-FROM
-	"temp_table1" "t1"
-
-BeforeExecute
--- Firebird
-
-SELECT
-	"t1".ID,
-	"t1"."Value"
-FROM
-	"temp_table2" "t1"
-
-BeforeExecute
--- Firebird
-
 INSERT INTO "temp_table1"
 (
 	ID,

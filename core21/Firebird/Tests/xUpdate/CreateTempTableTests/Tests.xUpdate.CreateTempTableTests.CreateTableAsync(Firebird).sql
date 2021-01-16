@@ -32,15 +32,6 @@ FROM
 	"Parent" "p"
 
 BeforeExecute
--- Firebird
-
-SELECT
-	"t".ID
-FROM
-	"Parent" "p"
-		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t".ID
-
-BeforeExecute
 -- Firebird (asynchronously)
 
 EXECUTE BLOCK AS BEGIN

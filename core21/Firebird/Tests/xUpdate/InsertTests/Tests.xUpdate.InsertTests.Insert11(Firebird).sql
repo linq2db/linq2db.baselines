@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- Firebird
-
-SELECT
-	Max("t"."PersonID")
-FROM
-	"Person" "t"
-
-BeforeExecute
--- Firebird
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(2) -- String
@@ -33,24 +25,6 @@ VALUES
 	@Name_MiddleName,
 	@Name_LastName
 )
-
-BeforeExecute
--- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-DECLARE @id Integer -- Int32
-SET     @id = 4
-
-SELECT FIRST @take
-	"p2"."PersonID",
-	"p2"."Gender",
-	"p2"."FirstName",
-	"p2"."MiddleName",
-	"p2"."LastName"
-FROM
-	"Person" "p2"
-WHERE
-	"p2"."PersonID" > @id
 
 BeforeExecute
 -- Firebird

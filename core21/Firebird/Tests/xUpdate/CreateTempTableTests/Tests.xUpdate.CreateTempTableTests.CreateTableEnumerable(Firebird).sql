@@ -9,14 +9,6 @@ END
 BeforeExecute
 -- Firebird
 
-SELECT
-	"p"."ParentID"
-FROM
-	"Parent" "p"
-
-BeforeExecute
--- Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT '
@@ -41,15 +33,6 @@ SELECT 4 FROM rdb$database UNION ALL
 SELECT 5 FROM rdb$database UNION ALL
 SELECT 6 FROM rdb$database UNION ALL
 SELECT 7 FROM rdb$database
-
-BeforeExecute
--- Firebird
-
-SELECT
-	"t".ID
-FROM
-	"Parent" "p"
-		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t".ID
 
 BeforeExecute
 -- Firebird

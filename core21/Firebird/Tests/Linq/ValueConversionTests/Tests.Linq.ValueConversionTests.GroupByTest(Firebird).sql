@@ -57,42 +57,6 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL FROM rdb$databa
 
 BeforeExecute
 -- Firebird
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
-SELECT
-	"t"."Id"
-FROM
-	"ValueConversion" "t"
-WHERE
-	@testedList = "t"."Value2"
-GROUP BY
-	"t"."Id"
-
-BeforeExecute
--- Firebird
-DECLARE @Value2 VarChar(20) -- String
-SET     @Value2 = '[{"Value":"Value1"}]'
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-
-SELECT
-	"t"."Id",
-	"t"."Value1",
-	"t"."Value2",
-	"t"."Enum",
-	"t"."EnumNullable",
-	"t"."EnumWithNull",
-	"t"."EnumWithNullDeclarative",
-	"t"."BoolValue",
-	"t"."DateTimeNullable"
-FROM
-	"ValueConversion" "t"
-WHERE
-	@Value2 = "t"."Value2" AND "t"."Id" = @Id
-
-BeforeExecute
--- Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN

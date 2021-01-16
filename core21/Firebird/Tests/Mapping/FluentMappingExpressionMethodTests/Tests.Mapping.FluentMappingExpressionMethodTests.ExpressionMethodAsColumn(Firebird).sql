@@ -52,16 +52,6 @@ SELECT 20,120 FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."Value",
-	'M' || Cast("t1"."Id" as VarChar(11) CHARACTER SET UNICODE_FSS)
-FROM
-	"InstanceClass" "t1"
-
-BeforeExecute
--- Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'InstanceClass')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "InstanceClass"';

@@ -30,20 +30,6 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Insert_Table_Cache" "t"
-WHERE
-	"t"."Id" = 1
-
-BeforeExecute
--- Firebird
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Integer -- Int32
@@ -55,20 +41,6 @@ SET
 	"PR_1598_Insert_Table_Cache"."Name" = @Name
 WHERE
 	"PR_1598_Insert_Table_Cache"."Id" = @Id
-
-BeforeExecute
--- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Insert_Table_Cache" "t"
-WHERE
-	"t"."Id" = 1
 
 BeforeExecute
 -- Firebird

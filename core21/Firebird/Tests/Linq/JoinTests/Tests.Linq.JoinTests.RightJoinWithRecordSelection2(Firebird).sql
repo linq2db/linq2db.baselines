@@ -73,20 +73,6 @@ SELECT 3,4,'Tag4' FROM rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
-	"fact_1"."Id",
-	"leftTag"."Id",
-	"leftTag"."FactId",
-	"leftTag"."Name"
-FROM
-	"Tag" "leftTag"
-		RIGHT JOIN "Fact" "fact_1" ON "leftTag"."FactId" = "fact_1"."Id"
-WHERE
-	"fact_1"."Id" > 3
-
-BeforeExecute
--- Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Tag')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "Tag"';

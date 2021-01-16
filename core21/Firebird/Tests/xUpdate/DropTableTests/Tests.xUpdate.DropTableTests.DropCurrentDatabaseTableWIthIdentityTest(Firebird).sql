@@ -50,27 +50,9 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
-	"t".ID,
-	"t".ID1
-FROM
-	"DropTableTestID" "t"
-
-BeforeExecute
--- Firebird
-
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_DropTableTestID"';
 	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_DropTableTestID"';
 	EXECUTE STATEMENT 'DROP TABLE "DropTableTestID"';
 END
-
-BeforeExecute
--- Firebird
-
-SELECT
-	"t1".ID,
-	"t1".ID1
-FROM
-	"DropTableTestID" "t1"
 

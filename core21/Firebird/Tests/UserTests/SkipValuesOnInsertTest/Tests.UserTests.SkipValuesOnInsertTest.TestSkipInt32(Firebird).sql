@@ -30,20 +30,6 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Insert_Table" "t"
-WHERE
-	"t"."Id" = 1
-
-BeforeExecute
--- Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name VarChar(5) -- String
@@ -59,20 +45,6 @@ VALUES
 	@Id,
 	@Name
 )
-
-BeforeExecute
--- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Insert_Table" "t"
-WHERE
-	"t"."Id" = 2
 
 BeforeExecute
 -- Firebird

@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- Firebird
 
-SELECT
-	Max("t"."PersonID")
-FROM
-	"Person" "t"
-
-BeforeExecute
--- Firebird
-
 INSERT INTO "Person"
 (
 	"PersonID",

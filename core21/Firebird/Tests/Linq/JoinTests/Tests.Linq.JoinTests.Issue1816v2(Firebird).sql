@@ -73,18 +73,6 @@ END
 BeforeExecute
 -- Firebird
 
-SELECT
-	"v"."inId",
-	"r"."inIdState",
-	"a_Main"."inIdType"
-FROM
-	"stVersions" "v"
-		INNER JOIN "stMain" "a_Main" ON "v"."inIdMain" = "a_Main"."inId"
-		LEFT JOIN "rlStatesTypesAndUserGroups" "r" ON "r"."inIdType" = "a_Main"."inIdType"
-
-BeforeExecute
--- Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stMain')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "stMain"';

@@ -27,16 +27,6 @@ VALUES
 BeforeExecute
 -- Firebird
 
-SELECT
-	Count(*)
-FROM
-	"Child" "c_1"
-WHERE
-	"c_1"."ChildID" = 1001
-
-BeforeExecute
--- Firebird
-
 DELETE FROM
 	"Child" "t1"
 WHERE
