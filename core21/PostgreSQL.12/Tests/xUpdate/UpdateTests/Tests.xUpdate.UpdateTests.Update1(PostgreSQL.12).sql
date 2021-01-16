@@ -29,12 +29,36 @@ BeforeExecute
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
+SELECT
+	Count(*)
+FROM
+	"Parent" p
+WHERE
+	p."ParentID" = :ParentID
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1001
+
 UPDATE
 	"Parent"
 SET
 	"ParentID" = "Parent"."ParentID" + 1
 WHERE
 	"Parent"."ParentID" = :ParentID
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1002
+
+SELECT
+	Count(*)
+FROM
+	"Parent" p
+WHERE
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

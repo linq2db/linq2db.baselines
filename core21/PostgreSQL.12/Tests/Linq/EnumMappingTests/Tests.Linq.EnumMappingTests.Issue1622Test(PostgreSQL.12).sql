@@ -29,6 +29,34 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	e."Id",
+	e."SomeText"
+FROM
+	"Issue1622Table" e
+WHERE
+	e."SomeText" = 'Value1_suffix'
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	e."Id",
+	e."SomeText"
+FROM
+	"Issue1622Table" e
+WHERE
+	e."Id" = 1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE "Issue1622Table"
 

@@ -153,5 +153,17 @@ VALUES
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	v.value,
+	v.idx
+FROM
+	"SampleClass" t
+		INNER JOIN LATERAL UNNEST(t."StrArray") WITH ORDINALITY v(value, idx) ON 1=1
+WHERE
+	v.value LIKE 'V%' ESCAPE '~'
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE IF EXISTS "SampleClass"
 

@@ -51,6 +51,21 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @id Integer -- Int32
+SET     @id = 1
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	t1."Value4"
+FROM
+	"UpdateSetTest" t1
+WHERE
+	t1."Id" = :id
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value4 Uuid -- Guid
 SET     @Value4 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @id Integer -- Int32
@@ -62,6 +77,21 @@ SET
 	"Value4" = :Value4
 WHERE
 	"UpdateSetTest"."Id" = :id
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @id Integer -- Int32
+SET     @id = 1
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	t1."Value4"
+FROM
+	"UpdateSetTest" t1
+WHERE
+	t1."Id" = :id
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
