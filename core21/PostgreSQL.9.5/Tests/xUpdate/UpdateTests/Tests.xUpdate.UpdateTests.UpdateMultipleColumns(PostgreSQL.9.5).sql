@@ -47,6 +47,28 @@ BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	t."ID",
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."BoolValue",
+	t."GuidValue",
+	t."BinaryValue",
+	t."SmallIntValue",
+	t."StringValue"
+FROM
+	"LinqDataTypes" t
+WHERE
+	t."ID" = :ID
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+DECLARE @ID Integer -- Int32
+SET     @ID = 1001
 
 DELETE FROM
 	"LinqDataTypes" t1

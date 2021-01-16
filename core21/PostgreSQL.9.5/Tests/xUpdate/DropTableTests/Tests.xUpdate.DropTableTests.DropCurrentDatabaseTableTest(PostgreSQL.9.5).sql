@@ -26,5 +26,21 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t1."ID"
+FROM
+	"DropTableTest" t1
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE "DropTableTest"
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."ID"
+FROM
+	"DropTableTest" t1
 

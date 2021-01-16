@@ -37,5 +37,25 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t1."Id1",
+	Count(*)
+FROM
+	(
+		SELECT DISTINCT
+			"selectParam"."Id1",
+			"selectParam"."Id2",
+			"selectParam"."Value" as "Value_1"
+		FROM
+			"GroupSampleClass" "selectParam"
+	) t1
+GROUP BY ROLLUP (
+	t1."Id1",
+	t1."Id2"
+)
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE IF EXISTS "GroupSampleClass"
 

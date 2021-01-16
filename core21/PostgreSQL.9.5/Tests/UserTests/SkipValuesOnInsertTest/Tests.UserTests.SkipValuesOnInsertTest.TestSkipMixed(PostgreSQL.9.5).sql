@@ -34,6 +34,21 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."Id",
+	t."Name",
+	t."Age"
+FROM
+	"PR_1598_Mixed_Table" t
+WHERE
+	t."Id" = 1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
 DECLARE @Id Integer -- Int32
@@ -45,6 +60,21 @@ SET
 	"Age" = :Age
 WHERE
 	"PR_1598_Mixed_Table"."Id" = :Id
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."Id",
+	t."Name",
+	t."Age"
+FROM
+	"PR_1598_Mixed_Table" t
+WHERE
+	t."Id" = 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
@@ -66,6 +96,21 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."Id",
+	t."Name",
+	t."Age"
+FROM
+	"PR_1598_Mixed_Table" t
+WHERE
+	t."Id" = 2
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
 DECLARE @Name Text(5) -- String
 SET     @Name = 'Jessy'
 DECLARE @Age Integer -- Int32
@@ -80,6 +125,21 @@ SET
 	"Age" = :Age
 WHERE
 	"PR_1598_Mixed_Table"."Id" = :Id
+
+BeforeExecute
+-- PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."Id",
+	t."Name",
+	t."Age"
+FROM
+	"PR_1598_Mixed_Table" t
+WHERE
+	t."Id" = 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
