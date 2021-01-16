@@ -38,6 +38,20 @@ SELECT 'Value9' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take_3 Integer -- Int32
+SET     @take_3 = 2
+DECLARE @skip_3 Integer -- Int32
+SET     @skip_3 = 3
+
+SELECT FIRST @take_3 SKIP @skip_3
+	"t1"."Value"
+FROM
+	"TakeSkipClass" "t1"
+ORDER BY
+	"t1"."Value"
+
+BeforeExecute
+-- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TakeSkipClass')) THEN

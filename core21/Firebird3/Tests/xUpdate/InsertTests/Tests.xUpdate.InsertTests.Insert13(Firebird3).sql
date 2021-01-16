@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	Max("t"."PersonID")
+FROM
+	"Person" "t"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 INSERT INTO "Person"
 (
 	"PersonID",

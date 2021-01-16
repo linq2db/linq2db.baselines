@@ -265,3 +265,18 @@ SET
 	"Target"."Field3" = "Source"."Field3"
 WHEN MATCHED AND "Source"."Id" = 4 THEN DELETE
 
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+ORDER BY
+	"t1"."Id"
+

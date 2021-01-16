@@ -40,6 +40,182 @@ SELECT 100,'Three',1,1 FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip DISTINCT
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1"
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1"
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip DISTINCT
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1" DESC
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1" DESC
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip DISTINCT
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1",
+	"x"."OrderData2"
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1",
+	"x"."OrderData2"
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip DISTINCT
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1",
+	"x"."OrderData2" DESC
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1",
+	"x"."OrderData2" DESC
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip DISTINCT
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1" DESC,
+	"x"."OrderData2" DESC
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1" DESC,
+	"x"."OrderData2" DESC
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip DISTINCT
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1",
+	"x"."OrderData2" DESC
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1",
+	"x"."OrderData2" DESC
+
+BeforeExecute
+-- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'OrderByDistinctData')) THEN

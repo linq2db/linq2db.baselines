@@ -24,6 +24,16 @@ CREATE TABLE "Books"
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	"author"."Id",
+	"author"."Name"
+FROM
+	"Authors" "author"
+		INNER JOIN "Books" "book" ON "book"."AuthorId" = "author"."Id"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 DROP TABLE "Books"
 
 BeforeExecute

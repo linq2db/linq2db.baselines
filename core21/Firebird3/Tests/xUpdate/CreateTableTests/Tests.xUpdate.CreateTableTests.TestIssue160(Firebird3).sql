@@ -30,5 +30,14 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	"t1"."cc",
+	"t1"."bb"
+FROM
+	"aa" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 DROP TABLE "aa"
 

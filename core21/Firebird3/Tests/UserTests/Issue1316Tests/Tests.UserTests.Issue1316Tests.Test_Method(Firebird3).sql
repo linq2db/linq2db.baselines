@@ -24,6 +24,20 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+DECLARE @ID Integer -- Int32
+SET     @ID = 5
+
+SELECT FIRST @take
+	"t1".ID
+FROM
+	"Issue1316Tests" "t1"
+WHERE
+	"t1".ID = @ID
+
+BeforeExecute
+-- Firebird3 Firebird
 
 DROP TABLE "Issue1316Tests"
 

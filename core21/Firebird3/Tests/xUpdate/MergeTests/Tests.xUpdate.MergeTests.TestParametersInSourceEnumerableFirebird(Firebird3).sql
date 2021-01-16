@@ -220,6 +220,19 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge2" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @Val Time
 SET     @Val = 00:05:00
 
@@ -241,4 +254,19 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"Target"."Field1" = 111
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+WHERE
+	"t1"."Id" = 3
 

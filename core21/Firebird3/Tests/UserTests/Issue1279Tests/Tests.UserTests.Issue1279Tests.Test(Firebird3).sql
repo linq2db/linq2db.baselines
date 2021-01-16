@@ -39,6 +39,17 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t1"."Id",
+	"t1"."CharFld"
+FROM
+	"Issue1279Table" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Issue1279Table"';

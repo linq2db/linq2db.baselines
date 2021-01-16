@@ -34,6 +34,20 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t"."Id",
+	"t"."Name",
+	"t"."Age"
+FROM
+	"PR_1598_Update_Table" "t"
+WHERE
+	"t"."Id" = 1
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Jacob'
 DECLARE @Age Integer -- Int32
@@ -51,6 +65,20 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t"."Id",
+	"t"."Name",
+	"t"."Age"
+FROM
+	"PR_1598_Update_Table" "t"
+WHERE
+	"t"."Id" = 1
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @Age Integer -- Int32
 SET     @Age = 22
 DECLARE @Id Integer -- Int32
@@ -62,6 +90,20 @@ SET
 	"PR_1598_Update_Table"."Age" = @Age
 WHERE
 	"PR_1598_Update_Table"."Id" = @Id
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t"."Id",
+	"t"."Name",
+	"t"."Age"
+FROM
+	"PR_1598_Update_Table" "t"
+WHERE
+	"t"."Id" = 1
 
 BeforeExecute
 -- Firebird3 Firebird

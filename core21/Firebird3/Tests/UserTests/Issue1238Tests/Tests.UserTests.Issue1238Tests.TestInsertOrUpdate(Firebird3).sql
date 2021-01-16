@@ -34,6 +34,14 @@ WHEN NOT MATCHED THEN
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 MERGE INTO "InheritanceParent" "t1"
 USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM rdb$database) "s" ON
 (
@@ -57,4 +65,12 @@ WHEN NOT MATCHED THEN
 		NULL,
 		1
 	)
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	Count(*)
+FROM
+	"InheritanceParent" "t1"
 

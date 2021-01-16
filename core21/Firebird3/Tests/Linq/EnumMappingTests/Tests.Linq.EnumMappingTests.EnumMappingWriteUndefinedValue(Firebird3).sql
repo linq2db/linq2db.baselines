@@ -24,6 +24,17 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+
+SELECT
+	"r".ID,
+	"r"."BigIntValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID = 101
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 102
 

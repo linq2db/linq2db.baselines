@@ -62,6 +62,28 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+
+SELECT
+	Count(*)
+FROM
+	"xxPerson_f3_32" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT FIRST @take
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
+FROM
+	"xxPerson_f3_32" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -82,6 +104,20 @@ SET
 	"xxPerson_f3_32"."Gender" = @Gender
 WHERE
 	"xxPerson_f3_32"."PersonID" = @ID
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT FIRST @take
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
+FROM
+	"xxPerson_f3_32" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird

@@ -41,6 +41,16 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	Count(*)
+FROM
+	"GrandChild" "gc"
+WHERE
+	"gc"."ParentID" = 1
+
+BeforeExecute
+-- Firebird3 Firebird
+
 DELETE FROM
 	"GrandChild" "t1"
 WHERE
@@ -57,6 +67,16 @@ WHERE
 			"t1"."ChildID" = "gc"."ChildID" AND
 			"t1"."GrandChildID" = "gc"."GrandChildID"
 	)
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	Count(*)
+FROM
+	"GrandChild" "gc"
+WHERE
+	"gc"."ParentID" = 1
 
 BeforeExecute
 -- Firebird3 Firebird

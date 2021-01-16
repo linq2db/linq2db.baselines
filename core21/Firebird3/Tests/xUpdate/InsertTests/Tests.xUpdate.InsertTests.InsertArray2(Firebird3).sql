@@ -26,6 +26,24 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT FIRST @take
+	"t".ID,
+	"t"."MoneyValue",
+	"t"."DateTimeValue",
+	"t"."BoolValue",
+	"t"."GuidValue",
+	"t"."BinaryValue",
+	"t"."SmallIntValue"
+FROM
+	"LinqDataTypes" "t"
+WHERE
+	"t".ID = 1001
+
+BeforeExecute
+-- Firebird3 Firebird
 
 DELETE FROM
 	"LinqDataTypes" "t1"

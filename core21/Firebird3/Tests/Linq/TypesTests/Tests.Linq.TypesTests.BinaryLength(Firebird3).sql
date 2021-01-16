@@ -12,6 +12,18 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	Octet_Length("t"."BinaryValue")
+FROM
+	"LinqDataTypes" "t"
+WHERE
+	"t".ID = 1
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 

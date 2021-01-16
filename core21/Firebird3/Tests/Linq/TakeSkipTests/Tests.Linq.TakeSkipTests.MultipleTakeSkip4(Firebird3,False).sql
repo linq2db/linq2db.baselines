@@ -39,6 +39,16 @@ SELECT 'Value9' FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT FIRST 2 SKIP 3
+	"t1"."Value"
+FROM
+	"TakeSkipClass" "t1"
+ORDER BY
+	"t1"."Value"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TakeSkipClass')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TakeSkipClass"';

@@ -43,6 +43,21 @@ RETURNING
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+DECLARE @id Integer -- Int32
+SET     @id = 1
+
+SELECT FIRST @take
+	"t1"."Id",
+	"t1"."Has"
+FROM
+	"Issue1438" "t1"
+WHERE
+	"t1"."Id" = @id
+
+BeforeExecute
+-- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Issue1438"';

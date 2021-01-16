@@ -221,6 +221,19 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge2" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 MERGE INTO "TestMerge1" "Target"
 USING (	SELECT 3, NULL, 3, NULL FROM rdb$database
 	UNION ALL
@@ -251,4 +264,19 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"Target"."Field1" = 222
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+ORDER BY
+	"t1"."Id"
 

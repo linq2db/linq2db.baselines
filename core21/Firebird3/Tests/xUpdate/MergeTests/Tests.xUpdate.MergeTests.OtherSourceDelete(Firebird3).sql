@@ -234,3 +234,18 @@ USING (
 ON ("Source"."OtherId" = "Target"."Id" AND "Target"."Id" = 3)
 WHEN MATCHED THEN DELETE
 
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+ORDER BY
+	"t1"."Id"
+

@@ -50,6 +50,49 @@ SELECT 212,21 FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
+WITH RECURSIVE CTE_1 ("Id")
+AS
+(
+	SELECT
+		"t"."Id"
+	FROM
+		"HierarchyTree" "t"
+	WHERE
+		"t"."ParentId" IS NULL
+),
+CTE_2 ("ParentId", "Id")
+AS
+(
+	SELECT
+		"t1"."ParentId",
+		"t1"."Id"
+	FROM
+		"HierarchyTree" "t1"
+),
+"hierarchyDown" ("Id", "Level")
+AS
+(
+	SELECT
+		"t_1"."Id",
+		0
+	FROM
+		CTE_1 "t_1"
+	UNION ALL
+	SELECT
+		"t_2"."Id",
+		"h"."Level" + 1
+	FROM
+		"hierarchyDown" "h"
+			INNER JOIN CTE_2 "t_2" ON "t_2"."ParentId" = "h"."Id"
+)
+SELECT
+	Count(*)
+FROM
+	"hierarchyDown" "t2"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'HierarchyTree')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "HierarchyTree"';

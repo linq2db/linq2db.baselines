@@ -26,12 +26,34 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT FIRST 1
+	"t1"."Id",
+	"t1"."BlobValue"
+FROM
+	"BlobClass" "t1"
+WHERE
+	"t1"."Id" = 1
+
+BeforeExecute
+-- Firebird3 Firebird
+
 UPDATE
 	"BlobClass"
 SET
 	"BlobClass"."BlobValue" = X'030201'
 WHERE
 	"BlobClass"."Id" = 1
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT FIRST 1
+	"t1"."Id",
+	"t1"."BlobValue"
+FROM
+	"BlobClass" "t1"
+WHERE
+	"t1"."Id" = 1
 
 BeforeExecute
 -- Firebird3 Firebird

@@ -7,6 +7,14 @@ EXECUTE BLOCK AS BEGIN
 END
 
 BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"p"."ParentID"
+FROM
+	"Parent" "p"
+
+BeforeExecute
 -- Firebird3 Firebird (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
@@ -33,6 +41,15 @@ SELECT 4 FROM rdb$database UNION ALL
 SELECT 5 FROM rdb$database UNION ALL
 SELECT 6 FROM rdb$database UNION ALL
 SELECT 7 FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t".ID
+FROM
+	"Parent" "p"
+		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t".ID
 
 BeforeExecute
 -- Firebird3 Firebird (asynchronously)

@@ -55,6 +55,36 @@ SELECT 600,'Three',5,5 FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip DISTINCT
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+ORDER BY
+	Mod("x"."OrderData1", 3)
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 0
+
+SELECT FIRST @take SKIP @skip
+	"x"."DuplicateData"
+FROM
+	"OrderByDistinctData" "x"
+GROUP BY
+	"x"."DuplicateData"
+ORDER BY
+	Max(Mod("x"."OrderData1", 3))
+
+BeforeExecute
+-- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'OrderByDistinctData')) THEN

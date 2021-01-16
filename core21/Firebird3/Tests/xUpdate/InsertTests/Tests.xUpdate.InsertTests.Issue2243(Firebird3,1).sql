@@ -48,6 +48,19 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT FIRST @take
+	"t1"."id",
+	"t1"."name",
+	"t1"."created_by",
+	"t1"."updated_by"
+FROM
+	"test_insert_or_replace" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -80,6 +93,19 @@ WHEN NOT MATCHED THEN
 		@Name,
 		@CreatedBy
 	)
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT FIRST @take
+	"t1"."id",
+	"t1"."name",
+	"t1"."created_by",
+	"t1"."updated_by"
+FROM
+	"test_insert_or_replace" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird

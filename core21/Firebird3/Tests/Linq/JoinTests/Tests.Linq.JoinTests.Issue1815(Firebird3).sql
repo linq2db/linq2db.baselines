@@ -73,6 +73,42 @@ SELECT 2,4,3 FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT FIRST @take
+	"x"."InId",
+	"j"."InId",
+	"j"."InMaxQuantity",
+	"j"."InMinQuantity",
+	"x"."InMinQuantity",
+	"x"."InMaxQuantity"
+FROM
+	"StLink" "x"
+		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+WHERE
+	"x"."InId" = 1
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT FIRST @take
+	"x"."InId",
+	"j"."InId",
+	"j"."InMaxQuantity",
+	"j"."InMinQuantity",
+	"x"."InMinQuantity",
+	"x"."InMaxQuantity"
+FROM
+	"StLink" "x"
+		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+WHERE
+	"x"."InId" = 2
+
+BeforeExecute
+-- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'EdtLink')) THEN

@@ -28,6 +28,19 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t"."ParentID",
+	"t"."Value1"
+FROM
+	"Parent" "t"
+WHERE
+	"t"."ParentID" = 1010
+
+BeforeExecute
+-- Firebird3 Firebird
 
 DELETE FROM
 	"Parent" "t1"

@@ -27,6 +27,16 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	Count(*)
+FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = 1001
+
+BeforeExecute
+-- Firebird3 Firebird
+
 DELETE FROM
 	"Parent" "t1"
 WHERE

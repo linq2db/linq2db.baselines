@@ -36,6 +36,21 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+ORDER BY
+	"t1"."Id"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 DELETE FROM
 	"TestMerge1" "t1"
 
@@ -67,6 +82,21 @@ VALUES
 	"Source"."Field2",
 	"Source"."Field4"
 )
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+ORDER BY
+	"t1"."Id"
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -104,4 +134,19 @@ VALUES
 	"Source"."Field2",
 	"Source"."Field4"
 )
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t1"."Id",
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Field3",
+	"t1"."Field4",
+	"t1"."Field5"
+FROM
+	"TestMerge1" "t1"
+ORDER BY
+	"t1"."Id"
 

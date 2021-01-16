@@ -58,6 +58,93 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL FROM rdb$databa
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Value2",
+	"t1"."Enum",
+	"t1"."EnumNullable",
+	"t1"."EnumWithNull",
+	"t1"."EnumWithNullDeclarative",
+	"t1"."BoolValue",
+	"t1"."DateTimeNullable"
+FROM
+	"ValueConversion" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t"."Id",
+	"t"."Value1",
+	"t"."Value2"
+FROM
+	"ValueConversion" "t"
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Value2"
+FROM
+	(
+		SELECT
+			"t"."Id",
+			"t"."Value1",
+			"t"."Value2"
+		FROM
+			"ValueConversion" "t"
+	) "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t"."Id",
+	"t"."Value1",
+	"t"."Value2"
+FROM
+	"ValueConversion" "t"
+UNION ALL
+SELECT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Value2"
+FROM
+	(
+		SELECT
+			"t_1"."Id",
+			"t_1"."Value1",
+			"t_1"."Value2"
+		FROM
+			"ValueConversion" "t_1"
+	) "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @skip Integer -- Int32
+SET     @skip = 1
+
+SELECT FIRST @take SKIP @skip
+	"q"."Value2"
+FROM
+	(
+		SELECT
+			"t"."Id",
+			"t"."Value2"
+		FROM
+			"ValueConversion" "t"
+	) "q"
+ORDER BY
+	"q"."Id"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "ValueConversion"';

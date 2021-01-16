@@ -47,6 +47,18 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT FIRST @take
+	"t1"."Id",
+	"t1"."ClaimedKeyType",
+	"t1"."ClaimedKeyTypeN"
+FROM
+	"Issue1554FluentTable" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
 
 DROP TABLE "Issue1554FluentTable"
 

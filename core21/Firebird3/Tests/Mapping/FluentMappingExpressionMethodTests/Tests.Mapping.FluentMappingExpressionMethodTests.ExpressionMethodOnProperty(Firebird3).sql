@@ -52,6 +52,16 @@ SELECT 20,120 FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	Count(*)
+FROM
+	"InstanceClass" "t"
+WHERE
+	Cast("t"."Id" as VarChar(11) CHARACTER SET UNICODE_FSS) || Cast("t"."Value" as VarChar(11) CHARACTER SET UNICODE_FSS) = Cast("t"."Id" as VarChar(11) CHARACTER SET UNICODE_FSS) || Cast("t"."Value" as VarChar(11))
+
+BeforeExecute
+-- Firebird3 Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'InstanceClass')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "InstanceClass"';

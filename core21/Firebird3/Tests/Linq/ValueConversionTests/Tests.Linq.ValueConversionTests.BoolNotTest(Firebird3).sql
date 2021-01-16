@@ -57,6 +57,21 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL FROM rdb$databa
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @BoolValue_1 VarChar -- String
+SET     @BoolValue_1 = 'N'
+
+SELECT
+	"t"."Id",
+	"t"."Value1",
+	"t"."Value2",
+	"t"."BoolValue"
+FROM
+	"ValueConversion" "t"
+WHERE
+	"t"."BoolValue" = @BoolValue_1
+
+BeforeExecute
+-- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN

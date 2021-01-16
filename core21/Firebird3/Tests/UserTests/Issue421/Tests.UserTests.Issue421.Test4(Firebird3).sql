@@ -26,5 +26,27 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT FIRST 1
+	"t1"."Id",
+	"t1"."BlobValue"
+FROM
+	"BlobClass10" "t1"
+WHERE
+	"t1"."Id" = 1
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT FIRST 1
+	"t1"."Id",
+	"t1"."BlobValue"
+FROM
+	"BlobClass10" "t1"
+WHERE
+	"t1"."Id" = 1
+
+BeforeExecute
+-- Firebird3 Firebird
+
 DROP TABLE "BlobClass10"
 

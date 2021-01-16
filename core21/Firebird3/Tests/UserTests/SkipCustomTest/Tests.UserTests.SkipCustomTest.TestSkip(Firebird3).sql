@@ -34,6 +34,20 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t"."Id",
+	"t"."Name",
+	"t"."Age"
+FROM
+	"PR_1598_SkipCustom_Table" "t"
+WHERE
+	"t"."Id" = 1
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name VarChar(3) -- String
@@ -49,6 +63,20 @@ VALUES
 	@Id,
 	@Name
 )
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"t"."Id",
+	"t"."Name",
+	"t"."Age"
+FROM
+	"PR_1598_SkipCustom_Table" "t"
+WHERE
+	"t"."Id" = 2
 
 BeforeExecute
 -- Firebird3 Firebird

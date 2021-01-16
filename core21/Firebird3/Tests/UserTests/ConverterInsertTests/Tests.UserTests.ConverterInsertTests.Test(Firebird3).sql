@@ -35,6 +35,42 @@ RETURNING
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @id Integer -- Int32
+SET     @id = 5
+
+SELECT FIRST @take
+	"t"."PersonID",
+	"t"."FirstName",
+	"t"."LastName",
+	"t"."MiddleName",
+	"t"."Gender"
+FROM
+	"Person" "t"
+WHERE
+	"t"."PersonID" = @id
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @id Integer -- Int32
+SET     @id = 5
+
+SELECT FIRST @take
+	"t"."PersonID",
+	"t"."FirstName",
+	"t"."LastName",
+	"t"."MiddleName",
+	"t"."Gender"
+FROM
+	"Person" "t"
+WHERE
+	"t"."PersonID" = @id
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @FirstName VarChar(3) -- String

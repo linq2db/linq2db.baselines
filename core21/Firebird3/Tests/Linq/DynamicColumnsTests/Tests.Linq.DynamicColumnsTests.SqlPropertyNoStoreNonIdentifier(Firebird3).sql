@@ -52,6 +52,14 @@ SELECT 77,0 FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
+SELECT
+	"d"."Not Identifier"
+FROM
+	"DynamicTable" "d"
+
+BeforeExecute
+-- Firebird3 Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_DynamicTable')) THEN
 		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_DynamicTable"';
