@@ -26,12 +26,36 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t1."Id",
+	t1."BlobValue"
+FROM
+	"BlobClass" t1
+WHERE
+	t1."Id" = 1
+LIMIT 1
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
 UPDATE
 	"BlobClass"
 SET
 	"BlobValue" = E'\\x030201'
 WHERE
 	"BlobClass"."Id" = 1
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."BlobValue"
+FROM
+	"BlobClass" t1
+WHERE
+	t1."Id" = 1
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

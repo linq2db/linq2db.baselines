@@ -4,6 +4,14 @@
 DROP TABLE IF EXISTS "TempTable"
 
 BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	p."ParentID"
+FROM
+	"Parent" p
+
+BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 CREATE TEMPORARY TABLE "TempTable"

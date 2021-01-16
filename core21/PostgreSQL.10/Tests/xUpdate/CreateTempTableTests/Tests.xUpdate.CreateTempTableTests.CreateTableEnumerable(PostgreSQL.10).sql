@@ -6,6 +6,14 @@ DROP TABLE IF EXISTS "TempTable"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	p."ParentID"
+FROM
+	"Parent" p
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
 	"ID" Int NOT NULL
@@ -26,6 +34,15 @@ VALUES
 (5),
 (6),
 (7)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t."ID"
+FROM
+	"Parent" p
+		INNER JOIN "TempTable" t ON p."ParentID" = t."ID"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

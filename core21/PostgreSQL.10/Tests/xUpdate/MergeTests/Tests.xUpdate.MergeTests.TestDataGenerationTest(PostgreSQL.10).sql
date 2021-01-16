@@ -218,3 +218,33 @@ VALUES
 	:Field4
 )
 
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Field1",
+	t1."Field2",
+	t1."Field3",
+	t1."Field4",
+	t1."Field5"
+FROM
+	"TestMerge1" t1
+ORDER BY
+	t1."Id"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Field1",
+	t1."Field2",
+	t1."Field3",
+	t1."Field4",
+	t1."Field5"
+FROM
+	"TestMerge2" t1
+ORDER BY
+	t1."Id"
+

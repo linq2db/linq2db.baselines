@@ -24,6 +24,18 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @id Integer -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	"Child" c_1
+WHERE
+	c_1."ChildID" = :id
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 5000
 DECLARE @id Integer -- Int32
@@ -41,6 +53,16 @@ WHERE
 	"a_Parent"."Value1" = 1 AND
 	"Child"."ParentID" = c_1."ParentID" AND
 	"Child"."ChildID" = c_1."ChildID"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	Count(*)
+FROM
+	"Child" c_1
+WHERE
+	c_1."ChildID" = 5000
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

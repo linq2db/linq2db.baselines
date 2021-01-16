@@ -72,5 +72,13 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t."TransactionDate" + -1 * Interval '1 Month' * 3
+FROM
+	"Transactions" t
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE IF EXISTS "Transactions"
 
