@@ -24,6 +24,18 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Child] [c_1]
+WHERE
+	[c_1].[ChildID] = @id
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 1002
 DECLARE @id Integer -- Int32
@@ -36,6 +48,18 @@ SET
 	[c_1].[ChildID] = @ChildID
 WHERE
 	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @ChildID Integer -- Int32
+SET     @ChildID = 1002
+
+SELECT
+	Count(*)
+FROM
+	[Child] [c_1]
+WHERE
+	[c_1].[ChildID] = @ChildID
 
 BeforeExecute
 -- Access AccessOleDb

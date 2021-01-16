@@ -41,6 +41,16 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	Count(*)
+FROM
+	[GrandChild] [gc]
+WHERE
+	[gc].[ParentID] = 1
+
+BeforeExecute
+-- Access AccessOleDb
+
 DELETE FROM
 	[GrandChild] [t1]
 WHERE
@@ -57,6 +67,16 @@ WHERE
 			[t1].[ChildID] = [gc].[ChildID] AND
 			[t1].[GrandChildID] = [gc].[GrandChildID]
 	)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	Count(*)
+FROM
+	[GrandChild] [gc]
+WHERE
+	[gc].[ParentID] = 1
 
 BeforeExecute
 -- Access AccessOleDb

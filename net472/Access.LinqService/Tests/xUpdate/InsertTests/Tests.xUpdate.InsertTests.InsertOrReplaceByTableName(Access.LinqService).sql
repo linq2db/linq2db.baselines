@@ -80,6 +80,14 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+
+SELECT
+	Count(*)
+FROM
+	[xxPatient] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -105,6 +113,14 @@ SET
 	[t1].[Diagnosis] = @Diagnosis
 WHERE
 	[t1].[PersonID] = @PersonID
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	Count(*)
+FROM
+	[xxPatient] [t1]
 
 BeforeExecute
 -- Access AccessOleDb

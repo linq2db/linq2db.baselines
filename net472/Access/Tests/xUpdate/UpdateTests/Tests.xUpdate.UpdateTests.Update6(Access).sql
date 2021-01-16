@@ -29,12 +29,36 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 1
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 1001
+
 UPDATE
 	[Parent] [p]
 SET
 	[p].[Value1] = 2
 WHERE
 	[p].[ParentID] = @id
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 2
 
 BeforeExecute
 -- Access AccessOleDb

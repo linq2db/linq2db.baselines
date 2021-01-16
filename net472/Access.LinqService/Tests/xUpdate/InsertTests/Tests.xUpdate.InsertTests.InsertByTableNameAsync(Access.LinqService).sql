@@ -103,6 +103,25 @@ SELECT @@IDENTITY
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	Count(*)
+FROM
+	[xxPerson] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	Count(*)
+FROM
+	[xxPerson] [p]
+WHERE
+	[p].[FirstName] = 'Steven' AND [p].[LastName] = 'King' AND
+	[p].[Gender] = 'M'
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [xxPerson]
 
 BeforeExecute

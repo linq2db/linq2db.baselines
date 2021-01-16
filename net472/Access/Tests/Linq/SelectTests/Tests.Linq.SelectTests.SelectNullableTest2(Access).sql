@@ -51,6 +51,23 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT TOP 1
+	[_].[ID],
+	[_].[MoneyValue],
+	[_].[DateTimeValue],
+	[_].[BoolValue],
+	[_].[GuidValue],
+	[_].[BinaryValue],
+	[_].[SmallIntValue],
+	[_].[StringValue]
+FROM
+	[LinqDataTypes] [_]
+WHERE
+	[_].[ID] = 1000
+
+BeforeExecute
+-- Access AccessOleDb
+
 DELETE FROM
 	[LinqDataTypes] [_]
 WHERE

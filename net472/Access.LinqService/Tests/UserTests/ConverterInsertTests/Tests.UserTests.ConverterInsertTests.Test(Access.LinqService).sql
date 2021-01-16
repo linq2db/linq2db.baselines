@@ -56,6 +56,38 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 5
+
+SELECT TOP 1
+	[t].[PersonID],
+	[t].[FirstName],
+	[t].[LastName],
+	[t].[MiddleName],
+	[t].[Gender]
+FROM
+	[Person] [t]
+WHERE
+	[t].[PersonID] = @id
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 5
+
+SELECT TOP 1
+	[t].[PersonID],
+	[t].[FirstName],
+	[t].[LastName],
+	[t].[MiddleName],
+	[t].[Gender]
+FROM
+	[Person] [t]
+WHERE
+	[t].[PersonID] = @id
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @FirstName VarWChar(3) -- String

@@ -375,5 +375,15 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	Count(*)
+FROM
+	[InstanceClass] [t]
+WHERE
+	CStr([t].[Id]) + CStr([t].[Value]) = CStr([t].[Id]) + CStr([t].[Value])
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [InstanceClass]
 

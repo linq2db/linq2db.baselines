@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	Max([t].[PersonID])
+FROM
+	[Person] [t]
+
+BeforeExecute
+-- Access AccessOleDb
+
 INSERT INTO [Person]
 (
 	[FirstName],

@@ -36,5 +36,13 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	[d].[Not Identifier]
+FROM
+	[DynamicTable] [d]
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [DynamicTable]
 

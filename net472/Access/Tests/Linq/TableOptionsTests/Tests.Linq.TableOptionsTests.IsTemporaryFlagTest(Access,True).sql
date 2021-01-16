@@ -10,5 +10,14 @@ CREATE TABLE [IsTemporaryTable]
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[IsTemporaryTable] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [IsTemporaryTable]
 

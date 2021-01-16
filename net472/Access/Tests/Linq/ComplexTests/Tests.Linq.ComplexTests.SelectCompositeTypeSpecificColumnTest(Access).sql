@@ -12,5 +12,21 @@ CREATE TABLE [User]
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	[u].[city]
+FROM
+	[User] [u]
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[u].[street]
+FROM
+	[User] [u]
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [User]
 

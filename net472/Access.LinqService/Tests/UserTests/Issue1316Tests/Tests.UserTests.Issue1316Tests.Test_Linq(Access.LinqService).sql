@@ -25,5 +25,15 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT TOP 2
+	[_].[ID]
+FROM
+	[Issue1316Tests] [_]
+WHERE
+	[_].[ID] IN (4, 5, 6)
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [Issue1316Tests]
 

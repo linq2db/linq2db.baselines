@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+
+SELECT
+	Count(*)
+FROM
+	[AllTypes] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 0
 
@@ -78,6 +86,14 @@ BeforeExecute
 -- Access AccessOleDb
 
 [ThisProcedureNotVisibleFromODBC]
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	Count(*)
+FROM
+	[AllTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb

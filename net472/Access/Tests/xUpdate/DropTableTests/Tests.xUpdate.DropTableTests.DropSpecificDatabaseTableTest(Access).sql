@@ -26,5 +26,21 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	[t1].[ID]
+FROM
+	[Database\TestData].[DropTableTest] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [Database\TestData].[DropTableTest]
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t1].[ID]
+FROM
+	[Database\TestData].[DropTableTest] [t1]
 

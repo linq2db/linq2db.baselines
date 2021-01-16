@@ -25,6 +25,16 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[Value1] = 11
+
+BeforeExecute
+-- Access AccessOleDb
+
 DELETE FROM
 	[Parent] [t1]
 WHERE

@@ -35,6 +35,16 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	Count(*)
+FROM
+	[Person] [_]
+WHERE
+	[_].[FirstName] LIKE 'Insert15%'
+
+BeforeExecute
+-- Access AccessOleDb
+
 DELETE FROM
 	[Person] [_]
 WHERE

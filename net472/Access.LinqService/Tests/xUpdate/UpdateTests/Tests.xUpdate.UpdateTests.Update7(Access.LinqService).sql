@@ -26,6 +26,18 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 1
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 2
 DECLARE @id Integer -- Int32
@@ -40,6 +52,18 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 2
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 DECLARE @id Integer -- Int32
@@ -51,6 +75,18 @@ SET
 	[p].[Value1] = @Value1
 WHERE
 	[p].[ParentID] = @id
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 3
 
 BeforeExecute
 -- Access AccessOleDb

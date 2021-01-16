@@ -34,6 +34,18 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+
+SELECT TOP 1
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Mixed_Table] [t]
+WHERE
+	[t].[Id] = 1
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
 DECLARE @Id Integer -- Int32
@@ -45,6 +57,18 @@ SET
 	[t1].[Age] = @Age
 WHERE
 	[t1].[Id] = @Id
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT TOP 1
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Mixed_Table] [t]
+WHERE
+	[t].[Id] = 1
 
 BeforeExecute
 -- Access AccessOleDb
@@ -66,6 +90,18 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+
+SELECT TOP 1
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Mixed_Table] [t]
+WHERE
+	[t].[Id] = 2
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @Name VarWChar(5) -- String
 SET     @Name = 'Jessy'
 DECLARE @Age Integer -- Int32
@@ -80,6 +116,18 @@ SET
 	[t1].[Age] = @Age
 WHERE
 	[t1].[Id] = @Id
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT TOP 1
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Mixed_Table] [t]
+WHERE
+	[t].[Id] = 2
 
 BeforeExecute
 -- Access AccessOleDb

@@ -502,6 +502,24 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
+
+SELECT TOP 1
+	[e].[Id],
+	[e].[Value1],
+	[e].[Value2],
+	[e].[Enum],
+	[e].[EnumNullable],
+	[e].[EnumWithNull],
+	[e].[EnumWithNullDeclarative],
+	[e].[BoolValue],
+	[e].[DateTimeNullable]
+FROM
+	[ValueConversion] [e]
+WHERE
+	[e].[Id] = 1
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @Value1 VarWChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 VarWChar(22) -- String
@@ -537,6 +555,24 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
+
+SELECT TOP 1
+	[e].[Id],
+	[e].[Value1],
+	[e].[Value2],
+	[e].[Enum],
+	[e].[EnumNullable],
+	[e].[EnumWithNull],
+	[e].[EnumWithNullDeclarative],
+	[e].[BoolValue],
+	[e].[DateTimeNullable]
+FROM
+	[ValueConversion] [e]
+WHERE
+	[e].[Id] = 2
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @Value1 VarWChar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 VarWChar -- String
@@ -569,6 +605,24 @@ SET
 	[t1].[DateTimeNullable] = @DateTimeNullable
 WHERE
 	[t1].[Id] = @Id
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT TOP 1
+	[e].[Id],
+	[e].[Value1],
+	[e].[Value2],
+	[e].[Enum],
+	[e].[EnumNullable],
+	[e].[EnumWithNull],
+	[e].[EnumWithNullDeclarative],
+	[e].[BoolValue],
+	[e].[DateTimeNullable]
+FROM
+	[ValueConversion] [e]
+WHERE
+	[e].[Id] = 3
 
 BeforeExecute
 -- Access AccessOleDb

@@ -155,6 +155,18 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+
+SELECT
+	Max([c_1].[Id])
+FROM
+	[AsyncDataTable] [c_1]
+WHERE
+	[c_1].[Id] > @Id
+
+BeforeExecute
+-- Access AccessOleDb
 
 DROP TABLE [AsyncDataTable]
 

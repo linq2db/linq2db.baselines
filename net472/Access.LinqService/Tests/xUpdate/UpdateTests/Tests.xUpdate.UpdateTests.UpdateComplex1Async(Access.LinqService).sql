@@ -64,6 +64,22 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 5
+
+SELECT TOP 1
+	[_].[PersonID],
+	[_].[Gender],
+	[_].[FirstName],
+	[_].[MiddleName],
+	[_].[LastName]
+FROM
+	[Person] [_]
+WHERE
+	[_].[PersonID] = @id
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarWChar(13) -- String
@@ -84,6 +100,22 @@ SET
 	[t1].[LastName] = @Name_LastName
 WHERE
 	[t1].[PersonID] = @ID
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 5
+
+SELECT TOP 1
+	[_].[PersonID],
+	[_].[Gender],
+	[_].[FirstName],
+	[_].[MiddleName],
+	[_].[LastName]
+FROM
+	[Person] [_]
+WHERE
+	[_].[PersonID] = @id
 
 BeforeExecute
 -- Access AccessOleDb

@@ -26,5 +26,14 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT TOP 1
+	[t1].[event_id],
+	[t1].[event_description]
+FROM
+	[Issue1403Tests_2] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [Issue1403Tests_2]
 

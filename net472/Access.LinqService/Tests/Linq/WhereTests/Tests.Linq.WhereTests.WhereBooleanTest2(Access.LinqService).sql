@@ -238,5 +238,310 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	[t1].[Id],
+	[t1].[BoolValue],
+	[t1].[NullableBoolValue]
+FROM
+	[WhereCases] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	[t].[BoolValue] = False AND [t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = True OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	[t].[BoolValue] = True AND [t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = False OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	[t].[BoolValue] = True AND [t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = False OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	[t].[BoolValue] = False AND [t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = True OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	[t].[BoolValue] = False AND [t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = True OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND
+	[t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL) AND
+	[t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	(([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL) AND
+	[t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	(([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	[t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND
+	[t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = True OR [t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = True OR [t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL) AND
+	[t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	[t].[BoolValue] = False AND ([t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL) AND
+	[t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = True OR ([t].[NullableBoolValue] = True OR [t].[NullableBoolValue] IS NULL) OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = True OR ([t].[NullableBoolValue] = True OR [t].[NullableBoolValue] IS NULL)) AND
+	[t].[Id] > 0
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL) OR [t].[Id] <= 0)
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [WhereCases]
 

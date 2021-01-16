@@ -56,6 +56,20 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access AccessOleDb
+
+SELECT TOP 1
+	[_].[FirstName],
+	[_].[PersonID],
+	[_].[LastName],
+	[_].[MiddleName],
+	[_].[Gender]
+FROM
+	[Person] [_]
+WHERE
+	[_].[FirstName] = 'test_inherited_insert'
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @FirstName VarWChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarWChar(4) -- String
@@ -76,6 +90,20 @@ SET
 	[t1].[Gender] = @Gender
 WHERE
 	[t1].[PersonID] = @ID
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT TOP 1
+	[_].[FirstName],
+	[_].[PersonID],
+	[_].[LastName],
+	[_].[MiddleName],
+	[_].[Gender]
+FROM
+	[Person] [_]
+WHERE
+	[_].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
 -- Access AccessOleDb

@@ -111,6 +111,19 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
+SELECT TOP 2
+	[p].[PersonID],
+	[p].[Diagnosis]
+FROM
+	[Patient] [p]
+WHERE
+	[p].[PersonID] = @id
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 5
+
 DELETE FROM
 	[Patient] [t1]
 WHERE

@@ -46,5 +46,16 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	[t1].[Id],
+	[t1].[StringEnum]
+FROM
+	[CreateTableTypes] [t1]
+ORDER BY
+	[t1].[Id]
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [CreateTableTypes]
 

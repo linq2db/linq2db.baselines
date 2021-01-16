@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+
+SELECT
+	Max([_].[ID])
+FROM
+	[AllTypes] [_]
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @NString VarWChar(6) -- String
 SET     @NString = 'test01'
 DECLARE @NString_1 VarWChar(6) -- String
@@ -395,6 +403,22 @@ VALUES
 	@NString,
 	@NString_1
 )
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @lastId Integer -- Int32
+SET     @lastId = 2
+
+SELECT
+	[_].[ID],
+	[_].[char20DataType],
+	[_].[ncharDataType]
+FROM
+	[AllTypes] [_]
+WHERE
+	[_].[ID] > @lastId
+ORDER BY
+	[_].[ID]
 
 BeforeExecute
 -- Access AccessOleDb

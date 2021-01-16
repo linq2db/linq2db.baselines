@@ -30,5 +30,27 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT TOP 1
+	[_].[Id],
+	[_].[BlobValue]
+FROM
+	[BlobClass] [_]
+WHERE
+	[_].[Id] = 1
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT TOP 1
+	[_].[Id],
+	[_].[BlobValue]
+FROM
+	[BlobClass] [_]
+WHERE
+	[_].[Id] = 1
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [BlobClass]
 

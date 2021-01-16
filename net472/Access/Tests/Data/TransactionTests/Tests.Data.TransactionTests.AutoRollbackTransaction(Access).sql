@@ -29,6 +29,17 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT TOP 1
+	[t].[ParentID],
+	[t].[Value1]
+FROM
+	[Parent] [t]
+WHERE
+	[t].[ParentID] = 1010
+
+BeforeExecute
+-- Access AccessOleDb
+
 DELETE FROM
 	[Parent] [t1]
 WHERE

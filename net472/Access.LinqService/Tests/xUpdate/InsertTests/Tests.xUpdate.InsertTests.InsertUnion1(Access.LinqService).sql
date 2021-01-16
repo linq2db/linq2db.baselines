@@ -35,6 +35,16 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	Count(*)
+FROM
+	[Parent] [c_1]
+WHERE
+	[c_1].[ParentID] > 1000
+
+BeforeExecute
+-- Access AccessOleDb
+
 DELETE FROM
 	[Parent] [t1]
 WHERE

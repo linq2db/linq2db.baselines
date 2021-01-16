@@ -25,6 +25,17 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT TOP 1
+	[t].[ID],
+	[t].[BigIntValue]
+FROM
+	[LinqDataTypes] [t]
+WHERE
+	[t].[ID] = 1001
+
+BeforeExecute
+-- Access AccessOleDb
+
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE

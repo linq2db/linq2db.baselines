@@ -30,5 +30,14 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	[t1].[cc],
+	[t1].[bb]
+FROM
+	[aa] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [aa]
 

@@ -50,6 +50,24 @@ FROM
 
 BeforeExecute
 -- Access AccessOleDb
+
+SELECT
+	[t1].[ID],
+	[t1].[Value]
+FROM
+	[temp_table1] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t1].[ID],
+	[t1].[Value]
+FROM
+	[temp_table2] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
 DECLARE @Value_1 Integer -- Int32

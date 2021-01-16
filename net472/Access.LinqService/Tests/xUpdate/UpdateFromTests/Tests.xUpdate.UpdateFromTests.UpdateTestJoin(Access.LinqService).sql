@@ -283,6 +283,17 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	[v].[id],
+	[v].[Value1],
+	[v].[Value2],
+	[v].[Value3]
+FROM
+	[UpdatedEntities] [v]
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [NewEntities]
 
 BeforeExecute
