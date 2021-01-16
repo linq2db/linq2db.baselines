@@ -74,16 +74,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[t1].[ID],
-	[t1].[Date]
-FROM
-	[DateTable] [t1]
-ORDER BY
-	[t1].[ID]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [DateTable]
 

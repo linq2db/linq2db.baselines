@@ -42,14 +42,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT
-	Count(*)
-FROM
-	[InheritanceParent] [t1]
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Data_1 Integer -- Int32
 SET     @Data_1 = 1
 DECLARE @Key1 Integer -- Int32
@@ -61,12 +53,4 @@ SET
 	[t1].[TypeDiscriminator] = @Data_1
 WHERE
 	[t1].[InheritanceParentId] = @Key1 AND [t1].[Name] IS NULL
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	Count(*)
-FROM
-	[InheritanceParent] [t1]
 

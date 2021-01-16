@@ -50,13 +50,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	Count(*)
-FROM
-	[Parent564] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [Parent564]
 

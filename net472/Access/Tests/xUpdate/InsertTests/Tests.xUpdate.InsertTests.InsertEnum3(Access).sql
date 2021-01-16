@@ -24,18 +24,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	[Parent] [_]
-WHERE
-	[_].[ParentID] = @id
-
-BeforeExecute
--- Access AccessOleDb
 
 DELETE FROM
 	[Parent] [t1]

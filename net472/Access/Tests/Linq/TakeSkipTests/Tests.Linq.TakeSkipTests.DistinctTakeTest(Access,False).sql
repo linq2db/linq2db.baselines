@@ -70,13 +70,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT DISTINCT TOP 3
-	[t1].[Value]
-FROM
-	[TakeSkipClass] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [TakeSkipClass]
 

@@ -375,15 +375,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[Value],
-	'M' + CStr([t1].[Id])
-FROM
-	[InstanceClass] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [InstanceClass]
 

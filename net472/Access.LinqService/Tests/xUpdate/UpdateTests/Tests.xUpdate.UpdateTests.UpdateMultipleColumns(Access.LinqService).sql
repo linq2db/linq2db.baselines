@@ -48,25 +48,6 @@ BeforeExecute
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
-SELECT TOP 2
-	[t].[ID],
-	[t].[MoneyValue],
-	[t].[DateTimeValue],
-	[t].[BoolValue],
-	[t].[GuidValue],
-	[t].[BinaryValue],
-	[t].[SmallIntValue],
-	[t].[StringValue]
-FROM
-	[LinqDataTypes] [t]
-WHERE
-	[t].[ID] = @ID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ID Integer -- Int32
-SET     @ID = 1001
-
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE

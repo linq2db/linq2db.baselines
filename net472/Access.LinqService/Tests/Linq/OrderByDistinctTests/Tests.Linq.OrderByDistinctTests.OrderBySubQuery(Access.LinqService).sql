@@ -487,31 +487,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[t].[DuplicateData],
-	[t2].[Count_1]
-FROM
-	(
-		SELECT TOP 2
-			[t1].[Id],
-			[t1].[DuplicateData]
-		FROM
-			[OrderByDistinctData] [t1]
-	) [t]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
-				[s].[DuplicateData]
-			FROM
-				[OrderByDistinctData] [s]
-			GROUP BY
-				[s].[DuplicateData]
-		) [t2] ON (([t2].[DuplicateData] = [t].[DuplicateData] OR [t2].[DuplicateData] IS NULL AND [t].[DuplicateData] IS NULL))
-ORDER BY
-	[t].[Id] DESC
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [OrderByDistinctData]
 

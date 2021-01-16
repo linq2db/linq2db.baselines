@@ -141,20 +141,6 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[fact_1].[Id],
-	[tagGroup].[Id],
-	[tagGroup].[FactId],
-	[tagGroup].[Name]
-FROM
-	[Fact] [fact_1]
-		LEFT JOIN [Tag] [tagGroup] ON ([fact_1].[Id] = [tagGroup].[FactId])
-WHERE
-	[fact_1].[Id] > 3
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [Tag]
 
 BeforeExecute

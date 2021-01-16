@@ -48,24 +48,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT TOP 1
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Value1 VarWChar -- String
@@ -93,24 +75,6 @@ VALUES
 	@Enum,
 	@BoolValue
 )
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 2
 
 BeforeExecute
 -- Access AccessOleDb
@@ -157,32 +121,6 @@ VALUES
 	@BoolValue,
 	@DateTimeNullable
 )
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 3
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	Count(*)
-FROM
-	[ValueConversion] [t1]
 
 BeforeExecute
 -- Access AccessOleDb

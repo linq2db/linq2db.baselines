@@ -4,14 +4,6 @@
 DROP TABLE [TempTable]
 
 BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[p].[ParentID]
-FROM
-	[Parent] [p]
-
-BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
 CREATE TABLE [TempTable]
@@ -116,15 +108,6 @@ VALUES
 (
 	@ID
 )
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[t].[ID]
-FROM
-	[Parent] [p]
-		INNER JOIN [TempTable] [t] ON ([p].[ParentID] = [t].[ID])
 
 BeforeExecute
 -- Access AccessOleDb

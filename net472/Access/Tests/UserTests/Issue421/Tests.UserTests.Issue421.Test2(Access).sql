@@ -26,32 +26,10 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
-FROM
-	[BlobClass] [_]
-WHERE
-	[_].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
-
 UPDATE
 	[BlobClass] [_]
 SET
 	[_].[BlobValue] = 0x030201
-WHERE
-	[_].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
-FROM
-	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
 

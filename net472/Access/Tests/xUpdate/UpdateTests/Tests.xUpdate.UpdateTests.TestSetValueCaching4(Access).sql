@@ -73,18 +73,6 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 1
-
-SELECT TOP 2
-	[_].[Value4]
-FROM
-	[UpdateSetTest] [_]
-WHERE
-	[_].[Id] = @id
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Value4 Guid
 SET     @Value4 = '{a948600d-de21-4f74-8ac2-9516b287076e}'
 DECLARE @id Integer -- Int32
@@ -94,18 +82,6 @@ UPDATE
 	[UpdateSetTest] [_]
 SET
 	[_].[Value4] = @Value4
-WHERE
-	[_].[Id] = @id
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 1
-
-SELECT TOP 2
-	[_].[Value4]
-FROM
-	[UpdateSetTest] [_]
 WHERE
 	[_].[Id] = @id
 

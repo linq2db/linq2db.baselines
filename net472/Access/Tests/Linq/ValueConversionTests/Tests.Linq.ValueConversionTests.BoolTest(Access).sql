@@ -483,21 +483,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BoolValue VarChar(1) -- AnsiString
-SET     @BoolValue = 'Y'
-
-SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
-	[t].[BoolValue]
-FROM
-	[ValueConversion] [t]
-WHERE
-	[t].[BoolValue] = @BoolValue
-
-BeforeExecute
--- Access AccessOleDb
 
 DROP TABLE [ValueConversion]
 

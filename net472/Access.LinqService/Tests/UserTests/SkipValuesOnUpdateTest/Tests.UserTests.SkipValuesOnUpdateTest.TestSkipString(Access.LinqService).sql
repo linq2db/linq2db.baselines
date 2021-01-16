@@ -34,18 +34,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Update_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Name VarWChar(5) -- String
 SET     @Name = 'Jacob'
 DECLARE @Age Integer -- Int32
@@ -63,18 +51,6 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Update_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Age Integer -- Int32
 SET     @Age = 22
 DECLARE @Id Integer -- Int32
@@ -86,18 +62,6 @@ SET
 	[t1].[Age] = @Age
 WHERE
 	[t1].[Id] = @Id
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Update_Table] [t]
-WHERE
-	[t].[Id] = 1
 
 BeforeExecute
 -- Access AccessOleDb

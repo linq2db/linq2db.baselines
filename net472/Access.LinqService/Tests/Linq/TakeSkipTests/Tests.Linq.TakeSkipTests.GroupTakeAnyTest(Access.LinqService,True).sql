@@ -70,17 +70,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	Count(*) > 0
-FROM
-	[TakeSkipClass] [t1]
-GROUP BY
-	[t1].[Value]
-HAVING
-	Count(*) > 1
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [TakeSkipClass]
 

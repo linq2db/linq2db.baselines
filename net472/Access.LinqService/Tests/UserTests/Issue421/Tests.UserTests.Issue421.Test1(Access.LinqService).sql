@@ -29,17 +29,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
-FROM
-	[BlobClass] [_]
-WHERE
-	[_].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = 0x030201
 
@@ -47,17 +36,6 @@ UPDATE
 	[BlobClass] [_]
 SET
 	[_].[BlobValue] = @BlobValue
-WHERE
-	[_].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
-FROM
-	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
 

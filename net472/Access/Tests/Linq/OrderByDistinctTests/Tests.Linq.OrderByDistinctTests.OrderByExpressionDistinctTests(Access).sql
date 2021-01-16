@@ -487,29 +487,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
-	[x].[DuplicateData]
-FROM
-	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Max([x].[OrderData1] MOD 3)
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 3
-	[x].[DuplicateData]
-FROM
-	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Max([x].[OrderData1] MOD 3)
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [OrderByDistinctData]
 

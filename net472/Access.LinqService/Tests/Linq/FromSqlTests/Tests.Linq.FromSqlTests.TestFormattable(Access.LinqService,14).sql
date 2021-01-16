@@ -374,38 +374,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 5
-DECLARE @p_2 Integer -- Int32
-SET     @p_2 = 14
-
-SELECT
-	[c_1].[value],
-	[c_1].[id]
-FROM
-	(
-		SELECT * FROM [sample_class] where [id] >= @p_1 and [id] < @p_2
-	) [c_1]
-WHERE
-	[c_1].[id] > 10
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @startId Integer -- Int32
-SET     @startId = 5
-DECLARE @endId Integer -- Int32
-SET     @endId = 14
-
-SELECT
-	[t].[value],
-	[t].[id]
-FROM
-	[sample_class] [t]
-WHERE
-	[t].[id] >= @startId AND [t].[id] < @endId AND [t].[id] > 10
-
-BeforeExecute
--- Access AccessOleDb
 
 DROP TABLE [sample_class]
 

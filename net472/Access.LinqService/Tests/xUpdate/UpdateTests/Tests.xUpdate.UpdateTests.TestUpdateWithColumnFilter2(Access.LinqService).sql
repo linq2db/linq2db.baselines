@@ -51,22 +51,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @FirstName VarWChar(18) -- String
-SET     @FirstName = 'UpdateColumnFilter'
-
-SELECT TOP 2
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
-FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @FirstName
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @FirstName VarWChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @ID Integer -- Int32
@@ -78,22 +62,6 @@ SET
 	[t1].[FirstName] = @FirstName
 WHERE
 	[t1].[PersonID] = @ID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-
-SELECT TOP 2
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
-FROM
-	[Person] [x]
-WHERE
-	[x].[PersonID] = @ID
 
 BeforeExecute
 -- Access AccessOleDb
@@ -117,22 +85,6 @@ SET
 	[t1].[Gender] = @Gender
 WHERE
 	[t1].[PersonID] = @ID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-
-SELECT TOP 2
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
-FROM
-	[Person] [_]
-WHERE
-	[_].[PersonID] = @ID
 
 BeforeExecute
 -- Access AccessOleDb

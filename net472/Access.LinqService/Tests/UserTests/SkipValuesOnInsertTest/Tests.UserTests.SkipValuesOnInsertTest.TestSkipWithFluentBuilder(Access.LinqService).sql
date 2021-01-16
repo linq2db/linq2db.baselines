@@ -31,17 +31,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Insert_Fluent_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [PR_1598_Insert_Fluent_Table]
 

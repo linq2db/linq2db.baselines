@@ -67,18 +67,6 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 100500
 
-SELECT TOP 1
-	[_].[SmallIntValue]
-FROM
-	[LinqDataTypes] [_]
-WHERE
-	[_].[ID] = @id
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 100500
-
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE

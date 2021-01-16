@@ -40,19 +40,6 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1001
-
-SELECT TOP 2
-	[p].[ParentID],
-	[p].[Value1]
-FROM
-	[Parent] [p]
-WHERE
-	[p].[ParentID] = @ParentID
-
-BeforeExecute
--- Access AccessOleDb
 
 DELETE FROM
 	[Child] [t1]

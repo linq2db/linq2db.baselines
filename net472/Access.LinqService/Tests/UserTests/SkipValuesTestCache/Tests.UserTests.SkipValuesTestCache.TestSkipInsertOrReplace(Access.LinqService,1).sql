@@ -44,18 +44,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Insert_Table_Cache] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Name VarWChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Integer -- Int32
@@ -67,18 +55,6 @@ SET
 	[t1].[Name] = @Name
 WHERE
 	[t1].[Id] = @Id
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Insert_Table_Cache] [t]
-WHERE
-	[t].[Id] = 1
 
 BeforeExecute
 -- Access AccessOleDb

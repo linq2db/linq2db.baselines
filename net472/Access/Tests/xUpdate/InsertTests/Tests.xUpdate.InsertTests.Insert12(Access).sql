@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-
-SELECT
-	Max([t].[PersonID])
-FROM
-	[Person] [t]
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @FirstName VarWChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender WChar(1) -- StringFixedLength

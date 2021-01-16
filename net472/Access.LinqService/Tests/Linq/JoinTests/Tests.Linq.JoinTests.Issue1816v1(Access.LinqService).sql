@@ -49,17 +49,6 @@ CREATE TABLE [stMain]
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[v].[inId],
-	[r].[inIdState]
-FROM
-	([stVersions] [v]
-		INNER JOIN [stMain] [a_Main] ON ([v].[inIdMain] = [a_Main].[inId]))
-		LEFT JOIN [rlStatesTypesAndUserGroups] [r] ON ([r].[inIdType] = [a_Main].[inIdType])
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [stMain]
 
 BeforeExecute

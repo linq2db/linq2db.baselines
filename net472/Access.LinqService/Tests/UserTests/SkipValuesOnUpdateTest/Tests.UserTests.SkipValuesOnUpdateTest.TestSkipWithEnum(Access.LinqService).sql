@@ -39,19 +39,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
-	[t].[Gender]
-FROM
-	[PR_1598_Update_Enum_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Name VarWChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Integer -- Int32
@@ -72,19 +59,6 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
-	[t].[Gender]
-FROM
-	[PR_1598_Update_Enum_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Name VarWChar(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Integer -- Int32
@@ -99,19 +73,6 @@ SET
 	[t1].[Age] = @Age
 WHERE
 	[t1].[Id] = @Id
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
-	[t].[Gender]
-FROM
-	[PR_1598_Update_Enum_Table] [t]
-WHERE
-	[t].[Id] = 1
 
 BeforeExecute
 -- Access AccessOleDb

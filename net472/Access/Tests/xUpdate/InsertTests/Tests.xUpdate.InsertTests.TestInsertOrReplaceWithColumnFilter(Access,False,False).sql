@@ -61,21 +61,6 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @FirstName VarWChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
-
-SELECT TOP 1
-	[x].[ID],
-	[x].[FirstName],
-	[x].[LastName],
-	[x].[MiddleName]
-FROM
-	[TestInsertOrReplaceTable] [x]
-WHERE
-	[x].[FirstName] = @FirstName
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @FirstName VarWChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName VarWChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @ID Integer -- Int32
@@ -88,21 +73,6 @@ SET
 	[t1].[LastName] = @LastName
 WHERE
 	[t1].[ID] = @ID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @FirstName VarWChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-
-SELECT TOP 1
-	[x].[ID],
-	[x].[FirstName],
-	[x].[LastName],
-	[x].[MiddleName]
-FROM
-	[TestInsertOrReplaceTable] [x]
-WHERE
-	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- Access AccessOleDb

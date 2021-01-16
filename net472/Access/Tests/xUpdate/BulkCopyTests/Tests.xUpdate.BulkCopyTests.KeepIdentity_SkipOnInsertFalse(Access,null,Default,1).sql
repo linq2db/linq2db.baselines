@@ -55,21 +55,6 @@ BeforeExecute
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
-SELECT
-	[_].[ID],
-	[_].[intDataType]
-FROM
-	[AllTypes] [_]
-WHERE
-	[_].[ID] > @lastId
-ORDER BY
-	[_].[ID]
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @lastId Integer -- Int32
-SET     @lastId = 3
-
 DELETE FROM
 	[AllTypes] [t1]
 WHERE

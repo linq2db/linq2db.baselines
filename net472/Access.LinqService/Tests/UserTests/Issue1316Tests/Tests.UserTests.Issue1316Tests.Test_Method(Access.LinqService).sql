@@ -24,18 +24,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-
-SELECT TOP 2
-	[_].[ID]
-FROM
-	[Issue1316Tests] [_]
-WHERE
-	[_].[ID] = @ID
-
-BeforeExecute
--- Access AccessOleDb
 
 DROP TABLE [Issue1316Tests]
 

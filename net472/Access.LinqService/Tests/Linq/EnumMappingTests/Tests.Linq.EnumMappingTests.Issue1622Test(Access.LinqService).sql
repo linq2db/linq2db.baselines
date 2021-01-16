@@ -30,27 +30,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[e].[Id],
-	[e].[SomeText]
-FROM
-	[Issue1622Table] [e]
-WHERE
-	[e].[SomeText] = 'Value1_suffix'
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 2
-	[e].[Id],
-	[e].[SomeText]
-FROM
-	[Issue1622Table] [e]
-WHERE
-	[e].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [Issue1622Table]
 

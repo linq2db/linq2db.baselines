@@ -24,16 +24,6 @@ CREATE TABLE [Books]
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[author].[Id],
-	[author].[Name]
-FROM
-	[Authors] [author]
-		INNER JOIN [Books] [book] ON ([book].[AuthorId] = [author].[Id])
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [Books]
 
 BeforeExecute

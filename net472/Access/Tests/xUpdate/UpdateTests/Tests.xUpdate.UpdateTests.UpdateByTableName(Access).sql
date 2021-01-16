@@ -45,26 +45,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT
-	Count(*)
-FROM
-	[xxPerson] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 2
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
-FROM
-	[xxPerson] [t1]
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @FirstName VarWChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarWChar(4) -- String
@@ -85,18 +65,6 @@ SET
 	[t1].[Gender] = @Gender
 WHERE
 	[t1].[PersonID] = @ID
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 2
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
-FROM
-	[xxPerson] [t1]
 
 BeforeExecute
 -- Access AccessOleDb

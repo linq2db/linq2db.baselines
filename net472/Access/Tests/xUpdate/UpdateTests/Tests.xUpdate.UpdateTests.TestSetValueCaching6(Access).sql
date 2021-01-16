@@ -73,18 +73,6 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 1
-
-SELECT TOP 2
-	[_].[Value6]
-FROM
-	[UpdateSetTest] [_]
-WHERE
-	[_].[Id] = @id
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Value6 Integer -- Int32
 SET     @Value6 = 8
 DECLARE @id Integer -- Int32
@@ -94,18 +82,6 @@ UPDATE
 	[UpdateSetTest] [_]
 SET
 	[_].[Value6] = @Value6
-WHERE
-	[_].[Id] = @id
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 1
-
-SELECT TOP 2
-	[_].[Value6]
-FROM
-	[UpdateSetTest] [_]
 WHERE
 	[_].[Id] = @id
 

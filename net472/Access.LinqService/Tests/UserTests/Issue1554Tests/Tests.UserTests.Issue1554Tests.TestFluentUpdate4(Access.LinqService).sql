@@ -50,15 +50,5 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 2
-	[t1].[Id],
-	[t1].[ClaimedKeyType],
-	[t1].[ClaimedKeyTypeN]
-FROM
-	[Issue1554FluentTable] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [Issue1554FluentTable]
 

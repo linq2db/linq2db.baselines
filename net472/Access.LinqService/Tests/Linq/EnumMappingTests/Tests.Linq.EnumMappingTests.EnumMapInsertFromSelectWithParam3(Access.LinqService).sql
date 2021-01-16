@@ -42,16 +42,6 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT
-	Count(*)
-FROM
-	[LinqDataTypes] [r]
-WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 102
 

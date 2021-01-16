@@ -15,18 +15,5 @@ CREATE TABLE [CustomerBase]
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[cb].[Id],
-	[cb].[Name],
-	[cb].[ContactEmail],
-	Iif([cb].[Enabled] IS NULL, False, [cb].[Enabled])
-FROM
-	[CustomerBase] [cb]
-WHERE
-	[cb].[ClientType] = 'Client'
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [CustomerBase]
 

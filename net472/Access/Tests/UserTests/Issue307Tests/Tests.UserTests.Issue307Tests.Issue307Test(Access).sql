@@ -64,22 +64,6 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @id1 Integer -- Int32
-SET     @id1 = 5
-
-SELECT TOP 1
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
-FROM
-	[Person] [_]
-WHERE
-	[_].[PersonID] = @id1
-
-BeforeExecute
--- Access AccessOleDb
 
 DELETE FROM
 	[Person] [t1]

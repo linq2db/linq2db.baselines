@@ -11,18 +11,6 @@ CREATE TABLE [Issue1189Customer]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @DateTime Date -- DateTime
-SET     @DateTime = #2020-02-29 17:54:55#
-
-SELECT
-	[k_1].[ID],
-	[k_1].[NAME],
-	@DateTime
-FROM
-	[Issue1189Customer] [k_1]
-
-BeforeExecute
--- Access AccessOleDb
 
 DROP TABLE [Issue1189Customer]
 

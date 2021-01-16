@@ -26,14 +26,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[t1].[Id],
-	[t1].[CharFld]
-FROM
-	[Issue1279Table] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [Issue1279Table]
 

@@ -52,17 +52,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT TOP 2
-	[t1].[id],
-	[t1].[name],
-	[t1].[created_by],
-	[t1].[updated_by]
-FROM
-	[test_insert_or_replace] [t1]
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Name VarWChar(5) -- String
 SET     @Name = 'Test2'
 DECLARE @UpdatedBy VarWChar(10) -- String
@@ -77,17 +66,6 @@ SET
 	[t1].[updated_by] = @UpdatedBy
 WHERE
 	[t1].[id] = @Id
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 2
-	[t1].[id],
-	[t1].[name],
-	[t1].[created_by],
-	[t1].[updated_by]
-FROM
-	[test_insert_or_replace] [t1]
 
 BeforeExecute
 -- Access AccessOleDb

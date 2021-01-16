@@ -487,26 +487,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[c_1].[Id],
-	[c_1].[DuplicateData],
-	[c_1].[OrderData1],
-	[c_1].[OrderData2]
-FROM
-	(
-		SELECT TOP 3
-			[t1].[Id]
-		FROM
-			[OrderByDistinctData] [t1]
-		ORDER BY
-			[t1].[OrderData2]
-	) [q2]
-		INNER JOIN [OrderByDistinctData] [c_1] ON ([c_1].[Id] = [q2].[Id])
-ORDER BY
-	[c_1].[OrderData1]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [OrderByDistinctData]
 

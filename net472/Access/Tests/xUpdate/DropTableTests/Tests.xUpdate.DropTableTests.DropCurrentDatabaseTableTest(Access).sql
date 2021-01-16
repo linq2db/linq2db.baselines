@@ -26,21 +26,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[t1].[ID]
-FROM
-	[DropTableTest] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [DropTableTest]
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[t1].[ID]
-FROM
-	[DropTableTest] [t1]
 

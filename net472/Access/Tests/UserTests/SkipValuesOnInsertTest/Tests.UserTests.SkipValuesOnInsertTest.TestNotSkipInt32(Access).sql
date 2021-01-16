@@ -34,18 +34,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Insert_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name VarWChar(5) -- String
@@ -65,18 +53,6 @@ VALUES
 	@Name,
 	@Age
 )
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_Insert_Table] [t]
-WHERE
-	[t].[Id] = 2
 
 BeforeExecute
 -- Access AccessOleDb

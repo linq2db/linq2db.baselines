@@ -483,24 +483,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BoolValue VarChar(1) -- AnsiString
-SET     @BoolValue = 'Y'
-DECLARE @BoolValue_2 VarChar(1) -- AnsiString
-SET     @BoolValue_2 = 'Y'
-
-SELECT
-	[t1].[Enum]
-FROM
-	[ValueConversion] [t1]
-		INNER JOIN (
-			SELECT
-				[t2].[BoolValue]
-			FROM
-				[ValueConversion] [t2]
-		) [t2_1] ON ([t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue_2)
-
-BeforeExecute
--- Access AccessOleDb
 
 DROP TABLE [ValueConversion]
 

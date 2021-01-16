@@ -35,27 +35,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[x].[Value],
-	[x].[Id]
-FROM
-	[BaseTable] [x]
-WHERE
-	[x].[Id] = 1
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[x].[Value],
-	[x].[Id]
-FROM
-	[BaseTable] [x]
-WHERE
-	[x].[Id] = 1 AND [x].[Value] = 100
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [BaseTable]
 

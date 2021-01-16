@@ -27,16 +27,6 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	Count(*)
-FROM
-	[Parent] [p]
-WHERE
-	[p].[ParentID] = 1001
-
-BeforeExecute
--- Access AccessOleDb
-
 DELETE FROM
 	[Parent] [t1]
 WHERE

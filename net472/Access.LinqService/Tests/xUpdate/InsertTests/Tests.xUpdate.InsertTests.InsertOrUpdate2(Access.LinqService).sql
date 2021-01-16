@@ -78,37 +78,11 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT
-	[p].[PersonID],
-	[p].[Diagnosis]
-FROM
-	[Patient] [p]
-WHERE
-	[p].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-SELECT
 	1
 FROM
 	[Patient] [t1]
 WHERE
 	[t1].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-SELECT
-	[p].[PersonID],
-	[p].[Diagnosis]
-FROM
-	[Patient] [p]
-WHERE
-	[p].[PersonID] = @id
 
 BeforeExecute
 -- Access AccessOleDb
