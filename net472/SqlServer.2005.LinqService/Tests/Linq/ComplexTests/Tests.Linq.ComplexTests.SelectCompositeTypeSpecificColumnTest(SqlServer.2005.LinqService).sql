@@ -12,5 +12,21 @@ CREATE TABLE [User]
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	[u].[city]
+FROM
+	[User] [u]
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[u].[street]
+FROM
+	[User] [u]
+
+BeforeExecute
+-- SqlServer.2005
+
 DROP TABLE [User]
 

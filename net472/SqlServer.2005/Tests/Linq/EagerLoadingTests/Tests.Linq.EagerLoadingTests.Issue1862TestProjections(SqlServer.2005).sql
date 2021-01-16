@@ -130,6 +130,100 @@ SELECT 4,4,5,0
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+SELECT
+	[key_data_result_1].[Id],
+	[key_data_result_1].[BlogId],
+	[key_data_result_1].[Title],
+	[key_data_result_1].[PostContent],
+	[key_data_result_1].[IsDeleted],
+	[key_data_result_1].[Id_1],
+	[key_data_result_1].[Title_1],
+	[key_data_result_1].[Slogan],
+	[key_data_result_1].[UserId],
+	[detail_1].[TagId],
+	[a_Tag].[Name]
+FROM
+	(
+		SELECT DISTINCT
+			[detail].[Id],
+			[detail].[BlogId],
+			[detail].[Title],
+			[detail].[PostContent],
+			[detail].[IsDeleted],
+			[key_data_result].[Id] as [Id_1],
+			[key_data_result].[Title] as [Title_1],
+			[key_data_result].[Slogan],
+			[key_data_result].[UserId]
+		FROM
+			(
+				SELECT DISTINCT
+					[b].[Id],
+					[b].[Title],
+					[b].[Slogan],
+					[b].[UserId]
+				FROM
+					[Blog] [b]
+				WHERE
+					[b].[Id] = @Id
+			) [key_data_result]
+				INNER JOIN [Post] [detail] ON [key_data_result].[Id] = [detail].[BlogId]
+	) [key_data_result_1]
+		INNER JOIN [PostTag] [detail_1] ON [key_data_result_1].[Id] = [detail_1].[PostId] AND [detail_1].[IsDeleted] = 0
+		INNER JOIN [Tag] [a_Tag] ON [detail_1].[TagId] = [a_Tag].[Id]
+ORDER BY
+	[detail_1].[TagId]
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+SELECT
+	[key_data_result].[Id],
+	[key_data_result].[Title],
+	[key_data_result].[Slogan],
+	[key_data_result].[UserId],
+	[detail].[Id],
+	[detail].[Title],
+	[detail].[PostContent],
+	[detail].[BlogId],
+	[detail].[IsDeleted]
+FROM
+	(
+		SELECT DISTINCT
+			[b].[Id],
+			[b].[Title],
+			[b].[Slogan],
+			[b].[UserId]
+		FROM
+			[Blog] [b]
+		WHERE
+			[b].[Id] = @Id
+	) [key_data_result]
+		INNER JOIN [Post] [detail] ON [key_data_result].[Id] = [detail].[BlogId]
+ORDER BY
+	[detail].[Id]
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @blogId Int -- Int32
+SET     @blogId = 1
+
+SELECT
+	[b].[Id],
+	[b].[Title],
+	[b].[Slogan],
+	[b].[UserId]
+FROM
+	[Blog] [b]
+WHERE
+	[b].[Id] = @blogId
+
+BeforeExecute
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[PostTag]', N'U') IS NOT NULL)
 	DROP TABLE [PostTag]

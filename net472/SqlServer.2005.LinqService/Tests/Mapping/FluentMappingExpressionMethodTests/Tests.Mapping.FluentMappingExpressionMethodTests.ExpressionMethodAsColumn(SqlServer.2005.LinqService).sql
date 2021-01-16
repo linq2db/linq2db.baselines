@@ -377,6 +377,16 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	[t1].[Id],
+	[t1].[Value],
+	N'M' + Convert(NVarChar(11), [t1].[Id])
+FROM
+	[InstanceClass] [t1]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[InstanceClass]', N'U') IS NOT NULL)
 	DROP TABLE [InstanceClass]
 

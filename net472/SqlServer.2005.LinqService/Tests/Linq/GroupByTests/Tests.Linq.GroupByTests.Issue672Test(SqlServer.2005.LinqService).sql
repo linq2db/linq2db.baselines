@@ -80,5 +80,54 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	[s].[Name]
+FROM
+	[Stone] [s]
+WHERE
+	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND Len([s].[ImageFullUrl]) > 0
+GROUP BY
+	[s].[Name]
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'group1'
+
+SELECT
+	[s].[Id],
+	[s].[Name],
+	[s].[Enabled],
+	[s].[ImageFullUrl]
+FROM
+	[Stone] [s]
+WHERE
+	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
+	Len([s].[ImageFullUrl]) > 0 AND
+	[s].[Name] = @Name
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'group2'
+
+SELECT
+	[s].[Id],
+	[s].[Name],
+	[s].[Enabled],
+	[s].[ImageFullUrl]
+FROM
+	[Stone] [s]
+WHERE
+	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
+	Len([s].[ImageFullUrl]) > 0 AND
+	[s].[Name] = @Name
+
+BeforeExecute
+-- SqlServer.2005
+
 DROP TABLE [Stone]
 

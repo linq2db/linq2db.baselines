@@ -32,6 +32,30 @@ SELECT N'N2',4,N'Engineer'
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	N'Title',
+	[selectParam].[Title],
+	(
+		SELECT
+			Count(*)
+		FROM
+			(
+				SELECT DISTINCT
+					[$it].[YearsExperience]
+				FROM
+					[odata_person] [$it]
+				WHERE
+					[selectParam].[Title] = [$it].[Title]
+			) [t1]
+	)
+FROM
+	[odata_person] [selectParam]
+GROUP BY
+	[selectParam].[Title]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[odata_person]', N'U') IS NOT NULL)
 	DROP TABLE [odata_person]
 

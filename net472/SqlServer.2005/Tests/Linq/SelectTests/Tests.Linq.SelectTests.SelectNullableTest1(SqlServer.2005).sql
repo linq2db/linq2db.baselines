@@ -50,6 +50,27 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[_].[ID],
+	[_].[MoneyValue],
+	[_].[DateTimeValue],
+	[_].[DateTimeValue2],
+	[_].[BoolValue],
+	[_].[GuidValue],
+	[_].[SmallIntValue],
+	[_].[IntValue],
+	[_].[BigIntValue],
+	[_].[StringValue]
+FROM
+	[LinqDataTypes] [_]
+WHERE
+	[_].[ID] = 1000
+
+BeforeExecute
+-- SqlServer.2005
 
 DELETE [_]
 FROM

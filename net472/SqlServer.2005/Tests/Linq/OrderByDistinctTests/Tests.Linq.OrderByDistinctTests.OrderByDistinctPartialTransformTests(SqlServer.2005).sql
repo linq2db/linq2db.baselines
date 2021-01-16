@@ -49,6 +49,31 @@ SELECT 600,N'Three',5,5
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @skip Int -- Int32
+SET     @skip = 0
+DECLARE @take Int -- Int32
+SET     @take = 3
+
+SELECT
+	[t1].[DuplicateData],
+	[t1].[OrderData2]
+FROM
+	(
+		SELECT
+			[x].[DuplicateData],
+			[x].[OrderData2],
+			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1]), [x].[OrderData2] DESC) as [RN]
+		FROM
+			[OrderByDistinctData] [x]
+		GROUP BY
+			[x].[DuplicateData],
+			[x].[OrderData2]
+	) [t1]
+WHERE
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
+
+BeforeExecute
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
 	DROP TABLE [OrderByDistinctData]

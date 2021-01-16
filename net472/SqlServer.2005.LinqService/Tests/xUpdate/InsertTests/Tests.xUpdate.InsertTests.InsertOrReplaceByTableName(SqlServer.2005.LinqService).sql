@@ -85,6 +85,14 @@ COMMIT
 
 BeforeExecute
 -- SqlServer.2005
+
+SELECT
+	Count(*)
+FROM
+	[xxPatient] [t1]
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'ABC1'
 DECLARE @PersonID Int -- Int32
@@ -150,6 +158,14 @@ BEGIN
 END
 
 COMMIT
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	Count(*)
+FROM
+	[xxPatient] [t1]
 
 BeforeExecute
 -- SqlServer.2005

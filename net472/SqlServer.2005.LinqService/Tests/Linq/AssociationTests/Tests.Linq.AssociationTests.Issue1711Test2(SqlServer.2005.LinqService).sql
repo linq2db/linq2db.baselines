@@ -20,6 +20,23 @@ CREATE TABLE [Relationship1711]
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	[t].[Id]
+FROM
+	[Entity1711] [t]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Relationship1711] [r]
+		WHERE
+			[r].[Deleted] = 0 AND [r].[EntityId] = [t].[Id]
+	)
+
+BeforeExecute
+-- SqlServer.2005
+
 DROP TABLE [Relationship1711]
 
 BeforeExecute

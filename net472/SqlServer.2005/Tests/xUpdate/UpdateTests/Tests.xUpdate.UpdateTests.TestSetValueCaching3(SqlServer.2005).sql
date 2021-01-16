@@ -54,6 +54,20 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+DECLARE @id Int -- Int32
+SET     @id = 1
+
+SELECT TOP (@take)
+	[_].[Value3]
+FROM
+	[UpdateSetTest] [_]
+WHERE
+	[_].[Id] = @id
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Value3 Int -- Int32
 SET     @Value3 = 8
 DECLARE @id Int -- Int32
@@ -63,6 +77,20 @@ UPDATE
 	[_]
 SET
 	[_].[Value3] = @Value3
+FROM
+	[UpdateSetTest] [_]
+WHERE
+	[_].[Id] = @id
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+DECLARE @id Int -- Int32
+SET     @id = 1
+
+SELECT TOP (@take)
+	[_].[Value3]
 FROM
 	[UpdateSetTest] [_]
 WHERE

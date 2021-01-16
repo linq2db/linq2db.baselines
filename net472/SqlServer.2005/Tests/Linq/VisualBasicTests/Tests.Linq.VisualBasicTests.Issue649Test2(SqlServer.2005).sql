@@ -23,6 +23,24 @@ CREATE TABLE [person649]
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @added DateTime
+SET     @added = '2017-01-01T00:00:00'
+
+SELECT
+	[a_Person].[personid],
+	[a_Person].[personname],
+	Max([p].[added])
+FROM
+	[activity649] [p]
+		INNER JOIN [person649] [a_Person] ON [p].[personid] = [a_Person].[personid]
+WHERE
+	[p].[added] >= @added
+GROUP BY
+	[a_Person].[personid],
+	[a_Person].[personname]
+
+BeforeExecute
+-- SqlServer.2005
 
 DROP TABLE [person649]
 

@@ -38,6 +38,14 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	[d].[Not Identifier]
+FROM
+	[DynamicTable] [d]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
 	DROP TABLE [DynamicTable]
 

@@ -42,6 +42,18 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @p_1 DateTime
+SET     @p_1 = '2018-01-02T00:00:00'
+
+SELECT
+	Count(*)
+FROM
+	[LinqDataTypes] [t]
+WHERE
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) < @p_1
+
+BeforeExecute
+-- SqlServer.2005
 
 DELETE [t1]
 FROM

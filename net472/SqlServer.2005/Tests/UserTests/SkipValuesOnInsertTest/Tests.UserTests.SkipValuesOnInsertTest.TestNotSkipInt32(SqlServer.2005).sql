@@ -34,6 +34,20 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Insert_Table] [t]
+WHERE
+	[t].[Id] = 1
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(4000) -- String
@@ -53,6 +67,20 @@ VALUES
 	@Name,
 	@Age
 )
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Insert_Table] [t]
+WHERE
+	[t].[Id] = 2
 
 BeforeExecute
 -- SqlServer.2005

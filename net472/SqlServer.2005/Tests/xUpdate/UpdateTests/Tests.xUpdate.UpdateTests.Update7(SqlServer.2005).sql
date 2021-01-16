@@ -27,6 +27,18 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @id Int -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 1
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 DECLARE @id Int -- Int32
@@ -43,6 +55,18 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @id Int -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 2
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 DECLARE @id Int -- Int32
@@ -56,6 +80,18 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @id
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @id Int -- Int32
+SET     @id = 1001
+
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @id AND [p].[Value1] = 3
 
 BeforeExecute
 -- SqlServer.2005

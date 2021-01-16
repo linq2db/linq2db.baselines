@@ -30,6 +30,16 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	Count(*)
+FROM
+	[Person] [_]
+WHERE
+	[_].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2005
+
 DELETE [_]
 FROM
 	[Person] [_]

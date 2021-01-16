@@ -47,6 +47,24 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[t].[ID],
+	[t].[MoneyValue],
+	[t].[DateTimeValue],
+	[t].[BoolValue],
+	[t].[GuidValue],
+	[t].[BinaryValue],
+	[t].[SmallIntValue]
+FROM
+	[LinqDataTypes] [t]
+WHERE
+	[t].[ID] = 1001
+
+BeforeExecute
+-- SqlServer.2005
 
 DELETE [t1]
 FROM

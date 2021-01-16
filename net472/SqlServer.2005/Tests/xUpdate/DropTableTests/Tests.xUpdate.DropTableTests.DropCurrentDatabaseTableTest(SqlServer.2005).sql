@@ -27,5 +27,21 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	[t1].[ID]
+FROM
+	[DropTableTest] [t1]
+
+BeforeExecute
+-- SqlServer.2005
+
 DROP TABLE [DropTableTest]
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[t1].[ID]
+FROM
+	[DropTableTest] [t1]
 

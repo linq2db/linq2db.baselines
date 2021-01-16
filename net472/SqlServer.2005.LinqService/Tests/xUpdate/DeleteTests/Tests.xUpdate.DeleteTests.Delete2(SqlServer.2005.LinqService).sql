@@ -32,7 +32,31 @@ BeforeExecute
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
+SELECT
+	Count(*)
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @ParentID
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
+
 DELETE [p]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @ParentID
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
+
+SELECT
+	Count(*)
 FROM
 	[Parent] [p]
 WHERE

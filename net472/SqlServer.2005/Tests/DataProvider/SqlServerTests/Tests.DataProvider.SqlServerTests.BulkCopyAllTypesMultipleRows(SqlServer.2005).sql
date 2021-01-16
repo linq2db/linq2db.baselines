@@ -71,6 +71,59 @@ SET IDENTITY_INSERT [AllTypes] OFF
 
 BeforeExecute
 -- SqlServer.2005
+
+SELECT
+	[t].[ID],
+	[t].[bigintDataType],
+	[t].[numericDataType],
+	[t].[bitDataType],
+	[t].[smallintDataType],
+	[t].[decimalDataType],
+	[t].[smallmoneyDataType],
+	[t].[intDataType],
+	[t].[tinyintDataType],
+	[t].[moneyDataType],
+	[t].[floatDataType],
+	[t].[realDataType],
+	[t].[datetimeDataType],
+	[t].[smalldatetimeDataType],
+	[t].[charDataType],
+	[t].[varcharDataType],
+	[t].[textDataType],
+	[t].[ncharDataType],
+	[t].[nvarcharDataType],
+	[t].[ntextDataType],
+	[t].[binaryDataType],
+	[t].[varbinaryDataType],
+	[t].[imageDataType],
+	[t].[timestampDataType],
+	[t].[uniqueidentifierDataType],
+	[t].[sql_variantDataType],
+	[t].[nvarchar_max_DataType],
+	[t].[varchar_max_DataType],
+	[t].[varbinary_max_DataType],
+	[t].[xmlDataType],
+	[t].[datetime2DataType],
+	[t].[datetimeoffsetDataType],
+	[t].[datetimeoffset0DataType],
+	[t].[datetimeoffset1DataType],
+	[t].[datetimeoffset2DataType],
+	[t].[datetimeoffset3DataType],
+	[t].[datetimeoffset4DataType],
+	[t].[datetimeoffset5DataType],
+	[t].[datetimeoffset6DataType],
+	[t].[datetimeoffset7DataType],
+	[t].[dateDataType],
+	[t].[timeDataType]
+FROM
+	[AllTypes] [t]
+WHERE
+	[t].[ID] IN (700, 701)
+ORDER BY
+	[t].[ID]
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @ID Int -- Int32
 SET     @ID = 700
 

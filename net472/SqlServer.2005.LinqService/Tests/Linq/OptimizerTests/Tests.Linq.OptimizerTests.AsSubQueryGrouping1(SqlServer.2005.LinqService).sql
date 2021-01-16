@@ -603,6 +603,21 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			[t1].[Key1]
+		FROM
+			[FirstOptimizerData] [t1]
+		GROUP BY
+			[t1].[Key1]
+	) [x]
+
+BeforeExecute
+-- SqlServer.2005
+
 IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
 	DROP TABLE [SecondOptimizerData]
 

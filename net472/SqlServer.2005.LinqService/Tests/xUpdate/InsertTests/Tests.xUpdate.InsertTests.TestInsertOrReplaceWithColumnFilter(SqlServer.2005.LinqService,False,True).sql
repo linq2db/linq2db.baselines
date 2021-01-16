@@ -52,6 +52,23 @@ COMMIT
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'InsertOrReplaceColumnFilter'
+
+SELECT TOP (@take)
+	[x].[ID],
+	[x].[FirstName],
+	[x].[LastName],
+	[x].[MiddleName]
+FROM
+	[TestInsertOrReplaceTable] [x]
+WHERE
+	[x].[FirstName] = @FirstName
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'
 DECLARE @LastName NVarChar(4000) -- String
@@ -93,6 +110,23 @@ BEGIN
 END
 
 COMMIT
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'InsertOrReplaceColumnFilter'
+
+SELECT TOP (@take)
+	[x].[ID],
+	[x].[FirstName],
+	[x].[LastName],
+	[x].[MiddleName]
+FROM
+	[TestInsertOrReplaceTable] [x]
+WHERE
+	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlServer.2005

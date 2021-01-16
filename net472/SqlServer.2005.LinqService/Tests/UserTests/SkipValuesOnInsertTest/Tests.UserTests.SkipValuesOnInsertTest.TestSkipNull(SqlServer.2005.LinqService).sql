@@ -30,6 +30,20 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[Id],
+	[t].[Name],
+	[t].[Age]
+FROM
+	[PR_1598_Insert_Null_Table] [t]
+WHERE
+	[t].[Id] = 1
+
+BeforeExecute
+-- SqlServer.2005
 
 DROP TABLE [PR_1598_Insert_Null_Table]
 

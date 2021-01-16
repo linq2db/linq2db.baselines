@@ -20,5 +20,16 @@ CREATE TABLE [TestTable]
 BeforeExecute
 -- SqlServer.2005
 
+SELECT
+	[t1].[ID],
+	[t1].[Field1],
+	[t1].[Field2],
+	[t1].[CreatedOn]
+FROM
+	[TestTable] [t1]
+
+BeforeExecute
+-- SqlServer.2005
+
 DROP TABLE [TestTable]
 

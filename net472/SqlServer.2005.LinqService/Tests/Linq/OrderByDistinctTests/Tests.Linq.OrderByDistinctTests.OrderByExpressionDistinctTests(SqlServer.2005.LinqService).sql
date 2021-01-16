@@ -488,6 +488,50 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @skip Int -- Int32
+SET     @skip = 0
+DECLARE @take Int -- Int32
+SET     @take = 3
+
+SELECT
+	[t1].[DuplicateData]
+FROM
+	(
+		SELECT
+			[x].[DuplicateData],
+			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1] % 3)) as [RN]
+		FROM
+			[OrderByDistinctData] [x]
+		GROUP BY
+			[x].[DuplicateData]
+	) [t1]
+WHERE
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @skip Int -- Int32
+SET     @skip = 0
+DECLARE @take Int -- Int32
+SET     @take = 3
+
+SELECT
+	[t1].[DuplicateData]
+FROM
+	(
+		SELECT
+			[x].[DuplicateData],
+			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1] % 3)) as [RN]
+		FROM
+			[OrderByDistinctData] [x]
+		GROUP BY
+			[x].[DuplicateData]
+	) [t1]
+WHERE
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
+
+BeforeExecute
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
 	DROP TABLE [OrderByDistinctData]

@@ -33,5 +33,41 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
+SELECT TOP (2)
+	[_].[ID],
+	[_].[Array],
+	[_].[Binary]
+FROM
+	[Issue1303] [_]
+WHERE
+	[_].[ID] = 1
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT TOP (2)
+	[_].[ID],
+	[_].[Array],
+	[_].[Binary]
+FROM
+	[Issue1303] [_]
+WHERE
+	[_].[Array] = 0x010203
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT TOP (2)
+	[_].[ID],
+	[_].[Array],
+	[_].[Binary]
+FROM
+	[Issue1303] [_]
+WHERE
+	[_].[Binary] = 0x0405
+
+BeforeExecute
+-- SqlServer.2005
+
 DROP TABLE [Issue1303]
 

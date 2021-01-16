@@ -28,6 +28,292 @@ SELECT 5,N'5'
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= N'4'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= N'4'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= N'2'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= N'2'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] > N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] > N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] < N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] < N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] = N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] = N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= N'2'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= N'2'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= N'4'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= N'4'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] < N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] < N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] > N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] > N'3'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= N'5'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= N'5'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= N'1'
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= N'1'
+
+BeforeExecute
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[Isue2424Table]', N'U') IS NOT NULL)
 	DROP TABLE [Isue2424Table]

@@ -278,6 +278,19 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[v].[Value1]
+FROM
+	[UpdatedEntities] [v]
+		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
+WHERE
+	[a_Relation].[RelatedValue1] = 11
+
+BeforeExecute
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NOT NULL)
 	DROP TABLE [UpdateRelation]

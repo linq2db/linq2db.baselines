@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2005
+
+SELECT
+	Max([t].[PersonID])
+FROM
+	[Person] [t]
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -23,6 +31,24 @@ VALUES
 	@Name_MiddleName,
 	@Name_LastName
 )
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 2
+DECLARE @id Int -- Int32
+SET     @id = 4
+
+SELECT TOP (@take)
+	[p2].[PersonID],
+	[p2].[Gender],
+	[p2].[FirstName],
+	[p2].[MiddleName],
+	[p2].[LastName]
+FROM
+	[Person] [p2]
+WHERE
+	[p2].[PersonID] > @id
 
 BeforeExecute
 -- SqlServer.2005

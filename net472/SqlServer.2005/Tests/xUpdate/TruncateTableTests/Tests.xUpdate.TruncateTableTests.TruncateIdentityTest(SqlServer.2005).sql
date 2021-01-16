@@ -41,6 +41,28 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @skip Int -- Int32
+SET     @skip = 1
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 3
+
+SELECT
+	[t2].[ID],
+	[t2].[Field1]
+FROM
+	(
+		SELECT
+			[t1].[ID],
+			[t1].[Field1],
+			ROW_NUMBER() OVER (ORDER BY [t1].[ID]) as [RN]
+		FROM
+			[TestIdTrun] [t1]
+	) [t2]
+WHERE
+	[t2].[RN] > @skip AND [t2].[RN] <= @take_1
+
+BeforeExecute
+-- SqlServer.2005
 
 TRUNCATE TABLE [TestIdTrun]
 
@@ -67,6 +89,28 @@ VALUES
 (
 	1
 )
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @skip Int -- Int32
+SET     @skip = 1
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 3
+
+SELECT
+	[t2].[ID],
+	[t2].[Field1]
+FROM
+	(
+		SELECT
+			[t1].[ID],
+			[t1].[Field1],
+			ROW_NUMBER() OVER (ORDER BY [t1].[ID]) as [RN]
+		FROM
+			[TestIdTrun] [t1]
+	) [t2]
+WHERE
+	[t2].[RN] > @skip AND [t2].[RN] <= @take_1
 
 BeforeExecute
 -- SqlServer.2005
