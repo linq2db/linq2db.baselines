@@ -30,5 +30,27 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT FIRST 2
+	e.Id,
+	e.SomeText
+FROM
+	Issue1622Table e
+WHERE
+	e.SomeText = 'Value1_suffix'
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 2
+	e.Id,
+	e.SomeText
+FROM
+	Issue1622Table e
+WHERE
+	e.Id = 1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE Issue1622Table
 

@@ -33,5 +33,20 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	t.Id,
+	t."Value",
+	s.c1
+FROM
+	SampleClass t
+		INNER JOIN (
+			SELECT FIRST 1
+				1 as c1
+			FROM SYSTABLES
+		) s ON s.c1 = t.Id
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS SampleClass
 

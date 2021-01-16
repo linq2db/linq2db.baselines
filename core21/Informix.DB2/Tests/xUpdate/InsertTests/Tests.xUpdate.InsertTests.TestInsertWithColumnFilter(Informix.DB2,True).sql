@@ -26,6 +26,22 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstName VarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
+
+SELECT FIRST 1
+	x.FirstName,
+	x.PersonID,
+	x.LastName,
+	x.MiddleName,
+	x.Gender
+FROM
+	Person x
+WHERE
+	x.FirstName = @FirstName
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @newName VarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

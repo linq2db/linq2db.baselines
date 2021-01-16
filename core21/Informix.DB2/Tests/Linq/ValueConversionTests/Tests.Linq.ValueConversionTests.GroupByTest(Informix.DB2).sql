@@ -483,6 +483,42 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @testedList VarChar(20) -- String
+SET     @testedList = '[{"Value":"Value1"}]'
+
+SELECT
+	t.Id
+FROM
+	ValueConversion t
+WHERE
+	@testedList = t.Value2
+GROUP BY
+	t.Id
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Value2 VarChar(20) -- String
+SET     @Value2 = '[{"Value":"Value1"}]'
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+
+SELECT
+	t.Id,
+	t.Value1,
+	t.Value2,
+	t.Enum,
+	t.EnumNullable,
+	t.EnumWithNull,
+	t.EnumWithNullDeclarative,
+	t.BoolValue,
+	t.DateTimeNullable
+FROM
+	ValueConversion t
+WHERE
+	@Value2 = t.Value2 AND t.Id = @Id
+
+BeforeExecute
+-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS ValueConversion
 

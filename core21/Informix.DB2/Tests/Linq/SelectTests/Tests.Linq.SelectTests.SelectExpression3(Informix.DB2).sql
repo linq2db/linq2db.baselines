@@ -30,5 +30,13 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT FIRST 1
+	1
+FROM
+	SelectExpressionTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS SelectExpressionTable
 

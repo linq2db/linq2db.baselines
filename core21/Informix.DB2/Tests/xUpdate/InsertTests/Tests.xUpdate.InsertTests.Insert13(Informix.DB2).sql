@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	Max(t.PersonID)
+FROM
+	Person t
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 INSERT INTO Person
 (
 	FirstName,

@@ -10,5 +10,14 @@ CREATE TEMP TABLE IsTemporaryTable
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	t1.Id,
+	t1."Value"
+FROM
+	IsTemporaryTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IsTemporaryTable
 

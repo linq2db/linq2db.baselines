@@ -38,6 +38,14 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	Count(*)
+FROM
+	InheritanceParent t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 MERGE INTO InheritanceParent Target
 USING (	SELECT 143::Int, NULL::NVarChar(255), 1::Int FROM table(set{1})) Source
 (
@@ -65,4 +73,12 @@ VALUES
 	Source.Key2,
 	Source.Data_1
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	Count(*)
+FROM
+	InheritanceParent t1
 

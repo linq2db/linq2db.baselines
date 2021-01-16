@@ -26,5 +26,21 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	t1.ID
+FROM
+	DropTableTest t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE DropTableTest
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.ID
+FROM
+	DropTableTest t1
 

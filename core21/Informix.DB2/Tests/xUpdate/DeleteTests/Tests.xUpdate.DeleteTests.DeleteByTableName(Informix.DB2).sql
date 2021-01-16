@@ -40,6 +40,26 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+
+SELECT
+	Count(*)
+FROM
+	xxPerson t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 2
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
+FROM
+	xxPerson t1
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 
@@ -47,6 +67,14 @@ DELETE FROM
 	xxPerson
 WHERE
 	xxPerson.PersonID = @ID
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	Count(*)
+FROM
+	xxPerson t1
 
 BeforeExecute
 -- Informix.DB2 Informix

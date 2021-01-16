@@ -46,5 +46,16 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	t1.Id,
+	t1.BooleanNullable
+FROM
+	CreateTableTypes t1
+ORDER BY
+	t1.Id
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE CreateTableTypes
 

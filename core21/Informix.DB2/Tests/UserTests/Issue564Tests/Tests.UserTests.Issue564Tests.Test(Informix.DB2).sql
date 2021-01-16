@@ -50,5 +50,13 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	Count(*)
+FROM
+	Parent564 t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE Parent564
 

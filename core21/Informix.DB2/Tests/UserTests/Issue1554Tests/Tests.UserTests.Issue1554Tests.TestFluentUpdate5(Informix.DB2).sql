@@ -50,5 +50,15 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT FIRST 2
+	t1.Id,
+	t1.ClaimedKeyType,
+	t1.ClaimedKeyTypeN
+FROM
+	Issue1554FluentTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE Issue1554FluentTable
 

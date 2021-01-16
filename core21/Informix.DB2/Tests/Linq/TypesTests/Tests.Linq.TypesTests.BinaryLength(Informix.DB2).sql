@@ -12,6 +12,16 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
+
+SELECT FIRST 1
+	Length(t.BinaryValue)
+FROM
+	LinqDataTypes t
+WHERE
+	t.ID = 1
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
 

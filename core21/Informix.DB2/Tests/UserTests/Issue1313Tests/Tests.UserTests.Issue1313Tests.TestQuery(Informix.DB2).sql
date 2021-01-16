@@ -21,5 +21,13 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	row_1."Value"
+FROM
+	ValueItem row_1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE ValueItem
 

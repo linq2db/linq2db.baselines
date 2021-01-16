@@ -1,5 +1,22 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+
+SELECT FIRST 1
+	t1.ID,
+	t1.MoneyValue,
+	t1.DateTimeValue,
+	t1.DateTimeValue2,
+	t1.BoolValue,
+	t1.GuidValue,
+	t1.SmallIntValue,
+	t1.IntValue,
+	t1.BigIntValue,
+	t1.StringValue
+FROM
+	LinqDataTypes t1
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @MoneyValue Decimal(16)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp(16) -- DateTime
@@ -35,6 +52,23 @@ SET
 	LinqDataTypes.StringValue = @StringValue
 WHERE
 	LinqDataTypes.ID = @ID
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	t1.ID,
+	t1.MoneyValue,
+	t1.DateTimeValue,
+	t1.DateTimeValue2,
+	t1.BoolValue,
+	t1.GuidValue,
+	t1.SmallIntValue,
+	t1.IntValue,
+	t1.BigIntValue,
+	t1.StringValue
+FROM
+	LinqDataTypes t1
 
 BeforeExecute
 -- Informix.DB2 Informix

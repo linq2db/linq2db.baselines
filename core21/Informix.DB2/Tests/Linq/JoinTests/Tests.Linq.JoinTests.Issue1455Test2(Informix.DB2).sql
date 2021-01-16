@@ -58,6 +58,36 @@ CREATE TABLE Flat
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	al_1.alert,
+	al_1.alert_1,
+	al_1.alert_2
+FROM
+	(
+		SELECT
+			al.AlertKey as alert,
+			al.AlertCode as alert_1,
+			al.CreationDate as alert_2
+		FROM
+			Alert al
+				LEFT JOIN AuditAlert au1 ON (au1.AlertKey = al.AlertKey OR au1.AlertKey IS NULL AND al.AlertKey IS NULL) AND (au1.AlertCode = au1.AlertCode OR au1.AlertCode IS NULL AND au1.AlertCode IS NULL)
+		GROUP BY
+			al.AlertKey,
+			al.AlertCode,
+			al.CreationDate
+	) al_1
+		LEFT JOIN Trade trade1 ON (al_1.alert = To_Char(trade1.DealId) OR al_1.alert IS NULL AND To_Char(trade1.DealId) IS NULL)
+		LEFT JOIN Nomin nomin1 ON (al_1.alert = To_Char(nomin1.CargoId) OR al_1.alert IS NULL AND To_Char(nomin1.CargoId) IS NULL)
+WHERE
+	((nomin1.DeliveryCounterParty LIKE '%C%' OR trade1.CounterParty LIKE '%C%') OR al_1.alert_1 LIKE '%C%')
+GROUP BY
+	al_1.alert,
+	al_1.alert_1,
+	al_1.alert_2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE Flat
 
 BeforeExecute

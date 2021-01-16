@@ -25,6 +25,17 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT FIRST 1
+	t.ID,
+	t.BigIntValue
+FROM
+	LinqDataTypes t
+WHERE
+	t.ID = 1001
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DELETE FROM
 	LinqDataTypes
 WHERE

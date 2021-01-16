@@ -42,6 +42,17 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	t1.Id,
+	t1."Value"
+FROM
+	CacheTestTable t1
+ORDER BY
+	t1.Id
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 MERGE INTO CacheTestTable Target
 USING (	SELECT 1::Int, 1::Int FROM table(set{1})
 	UNION ALL
@@ -70,6 +81,17 @@ VALUES
 	Source.Id,
 	Source.Value_1
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1."Value"
+FROM
+	CacheTestTable t1
+ORDER BY
+	t1.Id
 
 BeforeExecute
 -- Informix.DB2 Informix

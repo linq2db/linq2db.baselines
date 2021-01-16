@@ -70,5 +70,13 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT FIRST 3 DISTINCT
+	t1."Value"
+FROM
+	TakeSkipClass t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS TakeSkipClass
 

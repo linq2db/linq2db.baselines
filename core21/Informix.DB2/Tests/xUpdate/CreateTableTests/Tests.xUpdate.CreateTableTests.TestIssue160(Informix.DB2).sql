@@ -30,5 +30,14 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	t1.cc,
+	t1.bb
+FROM
+	aa t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE aa
 

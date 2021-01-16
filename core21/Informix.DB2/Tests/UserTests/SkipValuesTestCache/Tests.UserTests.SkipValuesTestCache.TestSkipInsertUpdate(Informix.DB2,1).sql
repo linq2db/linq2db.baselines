@@ -30,6 +30,18 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+
+SELECT FIRST 1
+	t.Id,
+	t.Name,
+	t.Age
+FROM
+	PR_1598_Insert_Table_Cache t
+WHERE
+	t.Id = 1
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Integer(4) -- Int32
@@ -41,6 +53,18 @@ SET
 	PR_1598_Insert_Table_Cache.Name = @Name
 WHERE
 	PR_1598_Insert_Table_Cache.Id = @Id
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	t.Id,
+	t.Name,
+	t.Age
+FROM
+	PR_1598_Insert_Table_Cache t
+WHERE
+	t.Id = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

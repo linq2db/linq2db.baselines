@@ -58,6 +58,22 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+
+SELECT FIRST 1
+	x.FirstName,
+	x.PersonID,
+	x.LastName,
+	x.MiddleName,
+	x.Gender
+FROM
+	Person x
+WHERE
+	x.FirstName = @FirstName
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @FirstName VarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName VarChar(12) -- String
@@ -76,6 +92,22 @@ SET
 	Person.Gender = @Gender
 WHERE
 	Person.PersonID = @ID
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @FirstName VarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
+
+SELECT FIRST 1
+	x.FirstName,
+	x.PersonID,
+	x.LastName,
+	x.MiddleName,
+	x.Gender
+FROM
+	Person x
+WHERE
+	x.FirstName = @FirstName
 
 BeforeExecute
 -- Informix.DB2 Informix

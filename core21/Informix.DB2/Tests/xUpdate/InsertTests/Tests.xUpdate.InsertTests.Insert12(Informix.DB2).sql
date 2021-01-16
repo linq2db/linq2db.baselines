@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+
+SELECT
+	Max(t.PersonID)
+FROM
+	Person t
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender Char(1) -- StringFixedLength

@@ -61,6 +61,22 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @id Integer(4) -- Int32
+SET     @id = 5
+
+SELECT FIRST 1
+	t.PersonID,
+	t.FirstName,
+	t.LastName,
+	t.MiddleName,
+	t.Gender
+FROM
+	Person t
+WHERE
+	t.PersonID = @id
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 5
 DECLARE @FirstName VarChar(3) -- String

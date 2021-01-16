@@ -82,6 +82,33 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+
+SELECT
+	r.ID,
+	r.IntValue
+FROM
+	LinqDataTypes r
+WHERE
+	r.ID >= 101 AND r.ID <= 104
+ORDER BY
+	r.ID
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.ID,
+	r.IntValue,
+	r.StringValue
+FROM
+	LinqDataTypes r
+WHERE
+	r.ID >= 101 AND r.ID <= 104
+ORDER BY
+	r.ID
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 105
 

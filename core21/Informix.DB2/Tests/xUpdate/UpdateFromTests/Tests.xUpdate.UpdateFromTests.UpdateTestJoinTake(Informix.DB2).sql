@@ -366,6 +366,17 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	v.id,
+	v.Value1,
+	v.Value2,
+	v.Value3
+FROM
+	UpdatedEntities v
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS NewEntities
 
 BeforeExecute

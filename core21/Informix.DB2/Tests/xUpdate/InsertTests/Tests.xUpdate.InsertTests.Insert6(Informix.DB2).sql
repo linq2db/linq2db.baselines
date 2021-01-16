@@ -25,6 +25,16 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	Count(*)
+FROM
+	Parent p
+WHERE
+	p.Value1 = 11
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DELETE FROM
 	Parent
 WHERE

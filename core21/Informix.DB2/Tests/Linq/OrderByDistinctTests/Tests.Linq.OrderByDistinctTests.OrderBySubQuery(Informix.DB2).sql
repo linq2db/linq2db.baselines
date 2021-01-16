@@ -487,5 +487,29 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	t.DuplicateData,
+	(
+		SELECT
+			Count(*)
+		FROM
+			OrderByDistinctData s
+		WHERE
+			(s.DuplicateData = t.DuplicateData OR s.DuplicateData IS NULL AND t.DuplicateData IS NULL)
+	)
+FROM
+	(
+		SELECT FIRST 2
+			t1.Id,
+			t1.DuplicateData
+		FROM
+			OrderByDistinctData t1
+	) t
+ORDER BY
+	t.Id DESC
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS OrderByDistinctData
 

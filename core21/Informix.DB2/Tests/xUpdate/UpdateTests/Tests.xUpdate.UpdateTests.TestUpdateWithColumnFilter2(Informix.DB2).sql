@@ -56,6 +56,22 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstName VarChar(18) -- String
+SET     @FirstName = 'UpdateColumnFilter'
+
+SELECT FIRST 2
+	x.FirstName,
+	x.PersonID,
+	x.LastName,
+	x.MiddleName,
+	x.Gender
+FROM
+	Person x
+WHERE
+	x.FirstName = @FirstName
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @ID Integer(4) -- Int32
@@ -67,6 +83,22 @@ SET
 	Person.FirstName = @FirstName
 WHERE
 	Person.PersonID = @ID
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 5
+
+SELECT FIRST 2
+	x.FirstName,
+	x.PersonID,
+	x.LastName,
+	x.MiddleName,
+	x.Gender
+FROM
+	Person x
+WHERE
+	x.PersonID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -90,6 +122,22 @@ SET
 	Person.Gender = @Gender
 WHERE
 	Person.PersonID = @ID
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 5
+
+SELECT FIRST 2
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
+FROM
+	Person t1
+WHERE
+	t1.PersonID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix

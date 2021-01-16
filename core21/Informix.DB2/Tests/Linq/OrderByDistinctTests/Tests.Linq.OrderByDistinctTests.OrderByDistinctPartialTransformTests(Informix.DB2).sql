@@ -487,5 +487,20 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT SKIP 0 FIRST 3
+	x.DuplicateData,
+	x.OrderData2
+FROM
+	OrderByDistinctData x
+GROUP BY
+	x.DuplicateData,
+	x.OrderData2
+ORDER BY
+	Max(x.OrderData1),
+	x.OrderData2 DESC
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS OrderByDistinctData
 

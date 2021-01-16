@@ -61,6 +61,20 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
+
+SELECT FIRST 1
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
+FROM
+	Person t1
+WHERE
+	t1.FirstName = 'test_inherited_insert'
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -81,6 +95,20 @@ SET
 	Person.Gender = @Gender
 WHERE
 	Person.PersonID = @ID
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
+FROM
+	Person t1
+WHERE
+	t1.FirstName = 'test_inherited_insert'
 
 BeforeExecute
 -- Informix.DB2 Informix

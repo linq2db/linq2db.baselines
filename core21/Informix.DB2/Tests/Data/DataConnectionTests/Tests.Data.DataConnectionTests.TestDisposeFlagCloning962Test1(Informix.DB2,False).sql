@@ -204,6 +204,29 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	lw_Category.CategoryID,
+	detail.ProductID,
+	detail.ProductName,
+	detail.CategoryID,
+	detail.QuantityPerUnit
+FROM
+	Categories lw_Category
+		INNER JOIN Products detail ON lw_Category.CategoryID = detail.CategoryID
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.CategoryID,
+	t1.CategoryName,
+	t1.Description
+FROM
+	Categories t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS Products
 
 BeforeExecute

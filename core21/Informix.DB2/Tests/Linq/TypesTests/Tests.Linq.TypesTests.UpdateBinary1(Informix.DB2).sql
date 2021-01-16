@@ -10,3 +10,13 @@ SET
 WHERE
 	LinqDataTypes.ID = 1
 
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t.BinaryValue
+FROM
+	LinqDataTypes t
+WHERE
+	t.ID = 1
+

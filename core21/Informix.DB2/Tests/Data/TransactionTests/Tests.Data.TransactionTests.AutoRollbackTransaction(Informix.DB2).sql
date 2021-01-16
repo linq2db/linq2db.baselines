@@ -29,6 +29,17 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT FIRST 1
+	t.ParentID,
+	t.Value1
+FROM
+	Parent t
+WHERE
+	t.ParentID = 1010
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DELETE FROM
 	Parent
 WHERE

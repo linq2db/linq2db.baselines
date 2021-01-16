@@ -26,6 +26,17 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+
+SELECT
+	r.BigIntValue,
+	r.IntValue
+FROM
+	LinqDataTypes r
+WHERE
+	r.ID = 101
+
+BeforeExecute
+-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 102
 
