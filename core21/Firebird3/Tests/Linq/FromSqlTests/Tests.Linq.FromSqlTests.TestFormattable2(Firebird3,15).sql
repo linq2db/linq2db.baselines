@@ -51,38 +51,6 @@ SELECT 20,'Str_20' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @startId BigInt -- Int64
-SET     @startId = 5
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 15
-
-SELECT
-	"c_1"."value",
-	"c_1"."id"
-FROM
-	(
-		SELECT * FROM "sample_class" where "id" >= @startId and "id" < @p_1
-	) "c_1"
-WHERE
-	"c_1"."id" > 10
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @startId Integer -- Int32
-SET     @startId = 5
-DECLARE @endId Integer -- Int32
-SET     @endId = 15
-
-SELECT
-	"t"."value",
-	"t"."id"
-FROM
-	"sample_class" "t"
-WHERE
-	"t"."id" >= @startId AND "t"."id" < @endId AND "t"."id" > 10
-
-BeforeExecute
--- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'sample_class')) THEN

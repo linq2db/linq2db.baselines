@@ -33,18 +33,6 @@ SELECT 'BOLTO' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT FIRST @take
-	"t1"."Value"
-FROM
-	"TakeSkipClass" "t1"
-ORDER BY
-	"t1"."Value"
-
-BeforeExecute
--- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TakeSkipClass')) THEN

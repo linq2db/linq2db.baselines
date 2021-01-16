@@ -34,20 +34,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Mixed_Table" "t"
-WHERE
-	"t"."Id" = 1
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
 DECLARE @Id Integer -- Int32
@@ -59,20 +45,6 @@ SET
 	"PR_1598_Mixed_Table"."Age" = @Age
 WHERE
 	"PR_1598_Mixed_Table"."Id" = @Id
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Mixed_Table" "t"
-WHERE
-	"t"."Id" = 1
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -94,20 +66,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Mixed_Table" "t"
-WHERE
-	"t"."Id" = 2
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Jessy'
 DECLARE @Age Integer -- Int32
@@ -122,20 +80,6 @@ SET
 	"PR_1598_Mixed_Table"."Age" = @Age
 WHERE
 	"PR_1598_Mixed_Table"."Id" = @Id
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t"."Id",
-	"t"."Name",
-	"t"."Age"
-FROM
-	"PR_1598_Mixed_Table" "t"
-WHERE
-	"t"."Id" = 2
 
 BeforeExecute
 -- Firebird3 Firebird

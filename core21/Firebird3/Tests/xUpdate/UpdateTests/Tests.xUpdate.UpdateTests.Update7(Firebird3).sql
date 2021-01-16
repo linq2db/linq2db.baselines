@@ -26,18 +26,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	"Parent" "p"
-WHERE
-	"p"."ParentID" = @id AND "p"."Value1" = 1
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 2
 DECLARE @id Integer -- Int32
@@ -52,18 +40,6 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	"Parent" "p"
-WHERE
-	"p"."ParentID" = @id AND "p"."Value1" = 2
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 DECLARE @id Integer -- Int32
@@ -75,18 +51,6 @@ SET
 	"Parent"."Value1" = @Value1
 WHERE
 	"Parent"."ParentID" = @id
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	"Parent" "p"
-WHERE
-	"p"."ParentID" = @id AND "p"."Value1" = 3
 
 BeforeExecute
 -- Firebird3 Firebird

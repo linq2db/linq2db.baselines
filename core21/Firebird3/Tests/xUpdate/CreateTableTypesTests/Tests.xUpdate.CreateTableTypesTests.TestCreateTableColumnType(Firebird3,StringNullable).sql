@@ -46,16 +46,5 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."String"
-FROM
-	"CreateTableTypes" "t1"
-ORDER BY
-	"t1"."Id"
-
-BeforeExecute
--- Firebird3 Firebird
-
 DROP TABLE "CreateTableTypes"
 

@@ -75,14 +75,6 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird3 Firebird
-
-SELECT
-	Count(*)
-FROM
-	"xxPatient11" "t1"
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
@@ -136,14 +128,6 @@ WHEN NOT MATCHED THEN
 		Cast(@PersonID as Int),
 		@Diagnosis
 	)
-
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT
-	Count(*)
-FROM
-	"xxPatient11" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird

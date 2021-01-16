@@ -29,19 +29,6 @@ END
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"cb"."Id",
-	"cb"."Name",
-	"cb"."ContactEmail",
-	Coalesce("cb"."Enabled", 0)
-FROM
-	"CustomerBase" "cb"
-WHERE
-	"cb"."ClientType" = 'Client'
-
-BeforeExecute
--- Firebird3 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_CustomerBase"';
 	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_CustomerBase"';

@@ -173,24 +173,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @uptoDate TimeStamp -- DateTime
-SET     @uptoDate = CAST('2020-02-29 17:54:55.123' AS timestamp)
-
-SELECT DISTINCT
-	"ins"."SourceInstrumentCode"
-FROM
-	T1 "ins_1"
-		INNER JOIN T2 "idx" ON "ins_1"."InstrumentId" = "idx"."InstrumentId"
-		INNER JOIN T3 "w" ON "idx"."IndexId" = "w"."IndexId"
-		INNER JOIN T1 "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
-WHERE
-	"ins"."SourceInstrumentCode" IS NOT NULL AND "ins_1"."InstrumentCode" STARTING WITH 'aaa' AND
-	"ins_1"."CreateDate" <= @uptoDate
-ORDER BY
-	"ins"."SourceInstrumentCode"
-
-BeforeExecute
--- Firebird3 Firebird
 
 DROP TABLE T3
 

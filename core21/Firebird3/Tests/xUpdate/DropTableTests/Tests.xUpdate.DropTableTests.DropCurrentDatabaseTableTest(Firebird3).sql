@@ -29,21 +29,5 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1".ID
-FROM
-	"DropTableTest" "t1"
-
-BeforeExecute
--- Firebird3 Firebird
-
 DROP TABLE "DropTableTest"
-
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT
-	"t1".ID
-FROM
-	"DropTableTest" "t1"
 

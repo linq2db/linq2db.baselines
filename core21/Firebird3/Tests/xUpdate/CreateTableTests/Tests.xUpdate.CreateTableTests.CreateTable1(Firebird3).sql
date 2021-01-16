@@ -40,17 +40,6 @@ END
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1".ID,
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."CreatedOn"
-FROM
-	"TestTable" "t1"
-
-BeforeExecute
--- Firebird3 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_TestTable"';
 	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_TestTable"';

@@ -29,32 +29,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT FIRST @take
-	"e"."Id",
-	"e"."SomeText"
-FROM
-	"Issue1622Table" "e"
-WHERE
-	"e"."SomeText" = 'Value1_suffix'
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT FIRST @take
-	"e"."Id",
-	"e"."SomeText"
-FROM
-	"Issue1622Table" "e"
-WHERE
-	"e"."Id" = 1
-
-BeforeExecute
--- Firebird3 Firebird
 
 DROP TABLE "Issue1622Table"
 

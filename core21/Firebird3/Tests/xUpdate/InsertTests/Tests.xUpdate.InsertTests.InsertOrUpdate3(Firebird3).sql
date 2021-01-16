@@ -109,21 +109,6 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-SELECT FIRST @take
-	"p"."PersonID",
-	"p"."Diagnosis"
-FROM
-	"Patient" "p"
-WHERE
-	"p"."PersonID" = @id
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

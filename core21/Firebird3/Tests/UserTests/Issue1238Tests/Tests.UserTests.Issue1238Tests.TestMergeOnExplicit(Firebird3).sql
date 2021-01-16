@@ -39,14 +39,6 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	Count(*)
-FROM
-	"InheritanceParent" "t1"
-
-BeforeExecute
--- Firebird3 Firebird
-
 MERGE INTO "InheritanceParent" "Target"
 USING (	SELECT 143, NULL, 1 FROM rdb$database) "Source"
 (
@@ -75,12 +67,4 @@ VALUES
 	"Source"."Key2",
 	"Source"."Data_1"
 )
-
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT
-	Count(*)
-FROM
-	"InheritanceParent" "t1"
 

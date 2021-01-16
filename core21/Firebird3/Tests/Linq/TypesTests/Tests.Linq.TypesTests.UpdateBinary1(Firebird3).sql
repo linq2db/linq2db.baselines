@@ -10,13 +10,3 @@ SET
 WHERE
 	"LinqDataTypes".ID = 1
 
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT
-	"t"."BinaryValue"
-FROM
-	"LinqDataTypes" "t"
-WHERE
-	"t".ID = 1
-

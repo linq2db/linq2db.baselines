@@ -221,19 +221,6 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
-	"t1"."Field5"
-FROM
-	"TestMerge2" "t1"
-
-BeforeExecute
--- Firebird3 Firebird
-
 MERGE INTO "TestMerge1" "Target"
 USING (	SELECT 3, NULL, 3, NULL, NULL, NULL FROM rdb$database
 	UNION ALL
@@ -260,19 +247,4 @@ SET
 	"Target"."Field3" = "Source"."inner_1",
 	"Target"."Field4" = "Source"."with_1",
 	"Target"."Field5" = "Source"."left_1"
-
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT
-	"t1"."Id",
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Field3",
-	"t1"."Field4",
-	"t1"."Field5"
-FROM
-	"TestMerge1" "t1"
-ORDER BY
-	"t1"."Id"
 

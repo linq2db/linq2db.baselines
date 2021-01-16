@@ -110,19 +110,6 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"v"."Value1"
-FROM
-	"UpdatedEntities" "v"
-		LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id"
-WHERE
-	"a_Relation"."RelatedValue1" = 11
-
-BeforeExecute
--- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'UpdateRelation')) THEN

@@ -31,24 +31,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-DECLARE @FirstName VarChar(18) -- String
-SET     @FirstName = 'UpdateColumnFilter'
-
-SELECT FIRST @take
-	"x"."FirstName",
-	"x"."PersonID",
-	"x"."LastName",
-	"x"."MiddleName",
-	"x"."Gender"
-FROM
-	"Person" "x"
-WHERE
-	"x"."FirstName" = @FirstName
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @ID Integer -- Int32
@@ -60,24 +42,6 @@ SET
 	"Person"."FirstName" = @FirstName
 WHERE
 	"Person"."PersonID" = @ID
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-
-SELECT FIRST @take
-	"x"."FirstName",
-	"x"."PersonID",
-	"x"."LastName",
-	"x"."MiddleName",
-	"x"."Gender"
-FROM
-	"Person" "x"
-WHERE
-	"x"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -101,24 +65,6 @@ SET
 	"Person"."Gender" = @Gender
 WHERE
 	"Person"."PersonID" = @ID
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-
-SELECT FIRST @take
-	"t1"."FirstName",
-	"t1"."PersonID",
-	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender"
-FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird3 Firebird

@@ -50,19 +50,6 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-SELECT
-	"p"."PersonID",
-	"p"."Diagnosis"
-FROM
-	"Patient" "p"
-WHERE
-	"p"."PersonID" = @id
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
 MERGE INTO "Patient" "t1"
 USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
@@ -79,19 +66,6 @@ WHEN NOT MATCHED THEN
 		Cast(@id as Int),
 		'positive'
 	)
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-SELECT
-	"p"."PersonID",
-	"p"."Diagnosis"
-FROM
-	"Patient" "p"
-WHERE
-	"p"."PersonID" = @id
 
 BeforeExecute
 -- Firebird3 Firebird

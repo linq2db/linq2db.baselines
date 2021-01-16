@@ -25,16 +25,6 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	Count(*)
-FROM
-	"Parent" "p"
-WHERE
-	"p"."Value1" = 11
-
-BeforeExecute
--- Firebird3 Firebird
-
 DELETE FROM
 	"Parent" "t1"
 WHERE

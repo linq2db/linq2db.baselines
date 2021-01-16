@@ -45,27 +45,6 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-DECLARE @ID Integer -- Int32
-SET     @ID = 1001
-
-SELECT FIRST @take
-	"t".ID,
-	"t"."MoneyValue",
-	"t"."DateTimeValue",
-	"t"."BoolValue",
-	"t"."GuidValue",
-	"t"."BinaryValue",
-	"t"."SmallIntValue",
-	"t"."StringValue"
-FROM
-	"LinqDataTypes" "t"
-WHERE
-	"t".ID = @ID
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 

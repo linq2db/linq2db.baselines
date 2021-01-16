@@ -41,14 +41,6 @@ SELECT 3,'Z1',NULL,NULL,'Z4' FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	LIST("t1"."Value4", ' -> ')
-FROM
-	"SampleClass" "t1"
-
-BeforeExecute
--- Firebird3 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleClass')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "SampleClass"';

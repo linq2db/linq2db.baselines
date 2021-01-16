@@ -37,19 +37,6 @@ SELECT 7,40,NULL FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @group_1 Integer -- Int32
-SET     @group_1 = 7
-
-SELECT
-	"p"."Id",
-	LEAD("p"."Id", 1, -1) OVER(ORDER BY "p"."Order")
-FROM
-	"Position" "p"
-WHERE
-	"p"."Group" = @group_1
-
-BeforeExecute
--- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Position')) THEN

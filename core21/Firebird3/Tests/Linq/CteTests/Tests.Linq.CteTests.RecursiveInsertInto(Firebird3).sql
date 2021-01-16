@@ -111,17 +111,6 @@ SELECT * FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."Level"
-FROM
-	"HierarchyData" "t1"
-ORDER BY
-	"t1"."Id"
-
-BeforeExecute
--- Firebird3 Firebird
-
 DROP TABLE "HierarchyData"
 
 BeforeExecute

@@ -35,22 +35,6 @@ RETURNING
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t1"."FirstName",
-	"t1"."PersonID",
-	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender"
-FROM
-	"Person" "t1"
-WHERE
-	"t1"."FirstName" = 'test_inherited_insert'
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -71,22 +55,6 @@ SET
 	"Person"."Gender" = @Gender
 WHERE
 	"Person"."PersonID" = @ID
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t1"."FirstName",
-	"t1"."PersonID",
-	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender"
-FROM
-	"Person" "t1"
-WHERE
-	"t1"."FirstName" = 'test_inherited_insert'
 
 BeforeExecute
 -- Firebird3 Firebird

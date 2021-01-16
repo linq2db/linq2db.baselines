@@ -61,21 +61,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-DECLARE @skip Integer -- Int32
-SET     @skip = 1
-
-SELECT FIRST @take SKIP @skip
-	"t1".ID,
-	"t1"."Field1"
-FROM
-	"TestIdTrun" "t1"
-ORDER BY
-	"t1".ID
-
-BeforeExecute
--- Firebird3 Firebird
 
 DELETE FROM "TestIdTrun"
 
@@ -107,21 +92,6 @@ VALUES
 (
 	1
 )
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
-DECLARE @skip Integer -- Int32
-SET     @skip = 1
-
-SELECT FIRST @take SKIP @skip
-	"t1".ID,
-	"t1"."Field1"
-FROM
-	"TestIdTrun" "t1"
-ORDER BY
-	"t1".ID
 
 BeforeExecute
 -- Firebird3 Firebird

@@ -57,22 +57,6 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL FROM rdb$databa
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @BoolValue VarChar -- String
-SET     @BoolValue = 'Y'
-
-SELECT
-	"t1"."Enum"
-FROM
-	"ValueConversion" "t1"
-		INNER JOIN (
-			SELECT
-				"t2"."BoolValue"
-			FROM
-				"ValueConversion" "t2"
-		) "t2_1" ON "t2_1"."BoolValue" = @BoolValue AND "t1"."BoolValue" = @BoolValue
-
-BeforeExecute
--- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN

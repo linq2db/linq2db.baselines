@@ -66,16 +66,5 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."Field1"
-FROM
-	"Issue1373Tests" "t1"
-ORDER BY
-	"t1"."Id"
-
-BeforeExecute
--- Firebird3 Firebird
-
 DROP TABLE "Issue1373Tests"
 

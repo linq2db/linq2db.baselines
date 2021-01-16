@@ -42,17 +42,6 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT
-	"t1"."Id",
-	"t1"."Value"
-FROM
-	"CacheTestTable" "t1"
-ORDER BY
-	"t1"."Id"
-
-BeforeExecute
--- Firebird3 Firebird
-
 MERGE INTO "CacheTestTable" "Target"
 USING (	SELECT 1, 1 FROM rdb$database
 	UNION ALL
@@ -81,17 +70,6 @@ VALUES
 	"Source"."Id",
 	"Source"."Value_1"
 )
-
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT
-	"t1"."Id",
-	"t1"."Value"
-FROM
-	"CacheTestTable" "t1"
-ORDER BY
-	"t1"."Id"
 
 BeforeExecute
 -- Firebird3 Firebird

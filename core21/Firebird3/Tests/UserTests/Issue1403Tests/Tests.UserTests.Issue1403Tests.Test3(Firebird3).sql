@@ -25,17 +25,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"t1"."event_description",
-	"t1"."event_id"
-FROM
-	"Issue1403Tests_3" "t1"
-
-BeforeExecute
--- Firebird3 Firebird
 
 DROP TABLE "Issue1403Tests_3"
 

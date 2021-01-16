@@ -22,18 +22,6 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"r"."BigIntValue"
-FROM
-	"LinqDataTypes" "r"
-WHERE
-	"r".ID = 101 AND "r"."BigIntValue" IS NULL
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 102
 

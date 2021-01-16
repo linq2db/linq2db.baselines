@@ -302,14 +302,3 @@ WHEN MATCHED AND EXISTS(
 		"Target"."PersonID" = "a_Person_1"."PersonID"
 ) THEN DELETE
 
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT
-	"t1"."PersonID",
-	"t1"."Diagnosis"
-FROM
-	"Patient" "t1"
-ORDER BY
-	"t1"."PersonID"
-
