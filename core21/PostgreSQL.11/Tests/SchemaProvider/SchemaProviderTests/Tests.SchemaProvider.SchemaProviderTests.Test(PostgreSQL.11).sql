@@ -1,5 +1,16 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	current_schema()
+FROM
+	"LinqDataTypes" t1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SHOW  server_version_num
 

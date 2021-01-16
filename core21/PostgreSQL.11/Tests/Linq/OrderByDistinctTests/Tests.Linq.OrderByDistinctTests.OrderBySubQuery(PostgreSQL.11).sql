@@ -48,6 +48,33 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	t."DuplicateData",
+	(
+		SELECT
+			Count(*)
+		FROM
+			"OrderByDistinctData" s
+		WHERE
+			(s."DuplicateData" = t."DuplicateData" OR s."DuplicateData" IS NULL AND t."DuplicateData" IS NULL)
+	)
+FROM
+	(
+		SELECT
+			t1."Id",
+			t1."DuplicateData"
+		FROM
+			"OrderByDistinctData" t1
+		LIMIT :take
+	) t
+ORDER BY
+	t."Id" DESC
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "OrderByDistinctData"
 

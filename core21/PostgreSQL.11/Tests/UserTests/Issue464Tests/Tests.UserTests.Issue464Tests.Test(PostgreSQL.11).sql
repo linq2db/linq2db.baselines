@@ -23,5 +23,14 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"Issue464" t1
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE "Issue464"
 

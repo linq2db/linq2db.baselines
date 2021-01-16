@@ -51,6 +51,25 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @id Integer -- Int32
+SET     @id = 5
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t1."PersonID",
+	t1."Gender",
+	t1."FirstName",
+	t1."MiddleName",
+	t1."LastName"
+FROM
+	"Person" t1
+WHERE
+	t1."PersonID" = :id
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
 	"Person" t1

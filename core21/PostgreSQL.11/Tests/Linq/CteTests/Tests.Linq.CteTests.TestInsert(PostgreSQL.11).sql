@@ -46,5 +46,32 @@ FROM
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	t1."ChildID",
+	t1."ParentID"
+FROM
+	"CteChild" t1
+ORDER BY
+	t1."ChildID",
+	t1."ParentID"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	c4."ChildID",
+	c4."ParentID"
+FROM
+	"Child" c_1
+		INNER JOIN "Child" c4 ON c4."ParentID" = c_1."ParentID"
+WHERE
+	c4."ParentID" % 2 = 0 AND c_1."ParentID" > 1
+ORDER BY
+	c4."ChildID",
+	c4."ParentID"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE "CteChild"
 
