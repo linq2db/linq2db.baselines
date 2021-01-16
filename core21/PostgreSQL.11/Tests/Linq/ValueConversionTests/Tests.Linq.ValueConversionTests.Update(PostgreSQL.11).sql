@@ -67,27 +67,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	e."Id",
-	e."Value1",
-	e."Value2",
-	e."Enum",
-	e."EnumNullable",
-	e."EnumWithNull",
-	e."EnumWithNullDeclarative",
-	e."BoolValue",
-	e."DateTimeNullable"
-FROM
-	"ValueConversion" e
-WHERE
-	e."Id" = 1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value1 Text(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 Text(22) -- String
@@ -123,27 +102,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	e."Id",
-	e."Value1",
-	e."Value2",
-	e."Enum",
-	e."EnumNullable",
-	e."EnumWithNull",
-	e."EnumWithNullDeclarative",
-	e."BoolValue",
-	e."DateTimeNullable"
-FROM
-	"ValueConversion" e
-WHERE
-	e."Id" = 2
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value1 Text -- String
 SET     @Value1 = NULL
 DECLARE @Value2 Text -- String
@@ -176,27 +134,6 @@ SET
 	"DateTimeNullable" = :DateTimeNullable
 WHERE
 	"ValueConversion"."Id" = :Id
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	e."Id",
-	e."Value1",
-	e."Value2",
-	e."Enum",
-	e."EnumNullable",
-	e."EnumWithNull",
-	e."EnumWithNullDeclarative",
-	e."BoolValue",
-	e."DateTimeNullable"
-FROM
-	"ValueConversion" e
-WHERE
-	e."Id" = 3
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

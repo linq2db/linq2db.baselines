@@ -30,21 +30,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."Id",
-	t."Name",
-	t."Age"
-FROM
-	"PR_1598_Insert_Table" t
-WHERE
-	t."Id" = 1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name Text(5) -- String
@@ -60,21 +45,6 @@ VALUES
 	:Id,
 	:Name
 )
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t."Id",
-	t."Name",
-	t."Age"
-FROM
-	"PR_1598_Insert_Table" t
-WHERE
-	t."Id" = 2
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

@@ -37,27 +37,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	GROUPING(t1."Id1"),
-	t1."Id1",
-	Count(*)
-FROM
-	(
-		SELECT DISTINCT
-			"selectParam"."Id1",
-			"selectParam"."Id2",
-			"selectParam"."Value" as "Value_1"
-		FROM
-			"GroupSampleClass" "selectParam"
-	) t1
-GROUP BY GROUPING SETS (
-	(t1."Id1", t1."Id2"),
-	(t1."Id2"),
-	()
-)
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "GroupSampleClass"
 

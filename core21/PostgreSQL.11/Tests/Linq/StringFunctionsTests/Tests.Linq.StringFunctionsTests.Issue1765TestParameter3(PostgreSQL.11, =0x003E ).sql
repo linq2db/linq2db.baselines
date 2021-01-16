@@ -33,19 +33,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @separator Text(4) -- String
-SET     @separator = ' => '
-
-SELECT
-	STRING_AGG(t1."Value4", :separator ORDER BY t1."Value3" DESC, t1."Value4")
-FROM
-	"SampleClass" t1
-GROUP BY
-	t1."Id",
-	t1."Value4"
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "SampleClass"
 

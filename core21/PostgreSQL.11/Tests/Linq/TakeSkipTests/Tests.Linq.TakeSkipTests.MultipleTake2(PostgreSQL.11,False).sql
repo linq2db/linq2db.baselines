@@ -27,16 +27,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Value"
-FROM
-	"TakeSkipClass" t1
-ORDER BY
-	t1."Value"
-LIMIT 2
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "TakeSkipClass"
 

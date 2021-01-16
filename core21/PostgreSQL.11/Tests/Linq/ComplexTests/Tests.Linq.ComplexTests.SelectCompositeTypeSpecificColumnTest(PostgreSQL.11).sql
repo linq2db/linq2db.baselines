@@ -12,21 +12,5 @@ CREATE TABLE "User"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	u.city
-FROM
-	"User" u
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	u.street
-FROM
-	"User" u
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "User"
 

@@ -29,20 +29,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t1."Id",
-	t1."BlobValue"
-FROM
-	"BlobClass" t1
-WHERE
-	t1."Id" = 1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BlobValue Bytea(3) -- Binary
 SET     @BlobValue = E'\\x030201'
 
@@ -52,20 +38,6 @@ SET
 	"BlobValue" = :BlobValue
 WHERE
 	"BlobClass"."Id" = 1
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t1."Id",
-	t1."BlobValue"
-FROM
-	"BlobClass" t1
-WHERE
-	t1."Id" = 1
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

@@ -48,27 +48,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	e."Id",
-	e."Value1",
-	e."Value2",
-	e."Enum",
-	e."EnumNullable",
-	e."EnumWithNull",
-	e."EnumWithNullDeclarative",
-	e."BoolValue",
-	e."DateTimeNullable"
-FROM
-	"ValueConversion" e
-WHERE
-	e."Id" = 1
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Value1 Text -- String
@@ -96,27 +75,6 @@ VALUES
 	:Enum,
 	:BoolValue
 )
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	e."Id",
-	e."Value1",
-	e."Value2",
-	e."Enum",
-	e."EnumNullable",
-	e."EnumWithNull",
-	e."EnumWithNullDeclarative",
-	e."BoolValue",
-	e."DateTimeNullable"
-FROM
-	"ValueConversion" e
-WHERE
-	e."Id" = 2
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -163,35 +121,6 @@ VALUES
 	:BoolValue,
 	:DateTimeNullable
 )
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	e."Id",
-	e."Value1",
-	e."Value2",
-	e."Enum",
-	e."EnumNullable",
-	e."EnumWithNull",
-	e."EnumWithNullDeclarative",
-	e."BoolValue",
-	e."DateTimeNullable"
-FROM
-	"ValueConversion" e
-WHERE
-	e."Id" = 3
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	Count(*)
-FROM
-	"ValueConversion" t1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

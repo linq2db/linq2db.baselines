@@ -21,13 +21,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	row_1."Value"
-FROM
-	"ValueItem" row_1
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE "ValueItem"
 

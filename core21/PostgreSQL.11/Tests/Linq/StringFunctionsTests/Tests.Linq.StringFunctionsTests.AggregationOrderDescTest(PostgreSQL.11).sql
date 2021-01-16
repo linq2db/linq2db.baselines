@@ -34,17 +34,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	Max(t1."Value1"),
-	STRING_AGG(t1."Value1", ' -> ' ORDER BY t1."Value1" DESC)
-FROM
-	"SampleClass" t1
-GROUP BY
-	t1."Id",
-	t1."Value1"
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS "SampleClass"
 

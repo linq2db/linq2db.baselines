@@ -50,21 +50,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Text -- AnsiString
-SET     @BoolValue = 'Y'
-
-SELECT
-	t."Id",
-	t."Value1",
-	t."Value2",
-	t."BoolValue"
-FROM
-	"ValueConversion" t
-WHERE
-	t."BoolValue" = :BoolValue
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "ValueConversion"
 
