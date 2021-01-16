@@ -35,22 +35,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @skip Int -- Int32
-SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT
-	[t1].[ID],
-	[t1].[Field1]
-FROM
-	[test_temp] [t1]
-ORDER BY
-	[t1].[ID]
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
-
-BeforeExecute
--- SqlCe
 
 DELETE FROM [test_temp]
 
@@ -77,22 +61,6 @@ VALUES
 (
 	1
 )
-
-BeforeExecute
--- SqlCe
-DECLARE @skip Int -- Int32
-SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT
-	[t1].[ID],
-	[t1].[Field1]
-FROM
-	[test_temp] [t1]
-ORDER BY
-	[t1].[ID]
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- SqlCe

@@ -12,21 +12,5 @@ CREATE TABLE [User]
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[u].[city]
-FROM
-	[User] [u]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[u].[street]
-FROM
-	[User] [u]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [User]
 

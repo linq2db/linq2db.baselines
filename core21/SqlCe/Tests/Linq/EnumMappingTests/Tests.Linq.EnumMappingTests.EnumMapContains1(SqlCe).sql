@@ -24,16 +24,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-
-SELECT
-	Count(*)
-FROM
-	[LinqDataTypes] [r]
-WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] IN (12)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 

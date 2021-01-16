@@ -27,16 +27,6 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
-	Count(*)
-FROM
-	[Child] [c_1]
-WHERE
-	[c_1].[ChildID] = 1001
-
-BeforeExecute
--- SqlCe
-
 DELETE FROM
 	[Child]
 WHERE

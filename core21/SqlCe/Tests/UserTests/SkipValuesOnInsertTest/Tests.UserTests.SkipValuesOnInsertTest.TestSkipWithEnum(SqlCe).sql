@@ -39,21 +39,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
-	[t].[Gender]
-FROM
-	[PR_1598_Insert_Enum_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(5) -- String
@@ -73,21 +58,6 @@ VALUES
 	@Name,
 	@Age
 )
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age],
-	[t].[Gender]
-FROM
-	[PR_1598_Insert_Enum_Table] [t]
-WHERE
-	[t].[Id] = 2
 
 BeforeExecute
 -- SqlCe

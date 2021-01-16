@@ -34,14 +34,6 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
-	Count(*)
-FROM
-	[InheritanceParent] [t1]
-
-BeforeExecute
--- SqlCe
-
 UPDATE
 	[InheritanceParent]
 SET
@@ -49,12 +41,4 @@ SET
 WHERE
 	[InheritanceParent].[InheritanceParentId] = 143 AND
 	[InheritanceParent].[Name] IS NULL
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	Count(*)
-FROM
-	[InheritanceParent] [t1]
 

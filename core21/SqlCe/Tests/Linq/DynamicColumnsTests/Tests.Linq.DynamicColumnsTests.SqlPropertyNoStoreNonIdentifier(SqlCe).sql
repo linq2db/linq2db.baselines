@@ -28,13 +28,5 @@ SELECT 77,0
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[d].[Not Identifier]
-FROM
-	[DynamicTable] [d]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [DynamicTable]
 

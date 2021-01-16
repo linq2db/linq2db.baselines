@@ -22,14 +22,5 @@ SELECT 3,3
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[Id],
-	[t1].[Value]
-FROM
-	[Issue464] [t1]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [Issue464]
 

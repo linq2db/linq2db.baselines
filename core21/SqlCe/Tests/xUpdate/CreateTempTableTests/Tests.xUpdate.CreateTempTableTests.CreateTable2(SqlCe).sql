@@ -26,14 +26,5 @@ FROM
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t].[ID]
-FROM
-	[Parent] [p]
-		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [TempTable]
 

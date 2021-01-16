@@ -10,14 +10,5 @@ CREATE TABLE [IsTemporaryTable]
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[Id],
-	[t1].[Value]
-FROM
-	[IsTemporaryTable] [t1]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [IsTemporaryTable]
 

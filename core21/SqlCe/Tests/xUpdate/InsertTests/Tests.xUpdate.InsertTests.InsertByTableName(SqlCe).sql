@@ -108,25 +108,6 @@ SELECT @@IDENTITY
 BeforeExecute
 -- SqlCe
 
-SELECT
-	Count(*)
-FROM
-	[xxPerson] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	Count(*)
-FROM
-	[xxPerson] [p]
-WHERE
-	[p].[FirstName] = 'Steven' AND [p].[LastName] = 'King' AND
-	[p].[Gender] = 'M'
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [xxPerson]
 
 BeforeExecute

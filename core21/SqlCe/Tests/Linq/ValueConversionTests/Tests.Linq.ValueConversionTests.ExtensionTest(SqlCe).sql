@@ -49,26 +49,6 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL
 
 BeforeExecute
 -- SqlCe
-DECLARE @testedList NVarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
-SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
-	[t].[Enum],
-	[t].[EnumNullable],
-	[t].[EnumWithNull],
-	[t].[EnumWithNullDeclarative],
-	[t].[BoolValue],
-	[t].[DateTimeNullable]
-FROM
-	[ValueConversion] [t]
-WHERE
-	[t].[Value2] = @testedList
-
-BeforeExecute
--- SqlCe
 
 DROP TABLE [ValueConversion]
 

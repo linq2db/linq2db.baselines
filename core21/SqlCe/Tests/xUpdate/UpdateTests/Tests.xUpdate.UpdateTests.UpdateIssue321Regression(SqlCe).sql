@@ -64,20 +64,6 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @id Int -- Int32
-SET     @id = 100500
-
-SELECT TOP (@take)
-	[_].[SmallIntValue]
-FROM
-	[LinqDataTypes] [_]
-WHERE
-	[_].[ID] = @id
-
-BeforeExecute
--- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 100500
 

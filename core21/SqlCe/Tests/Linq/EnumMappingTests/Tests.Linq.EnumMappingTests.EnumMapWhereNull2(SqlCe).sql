@@ -22,18 +22,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[r].[BigIntValue]
-FROM
-	[LinqDataTypes] [r]
-WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] IS NULL
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 

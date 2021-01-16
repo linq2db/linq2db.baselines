@@ -7,34 +7,6 @@ WHERE
 	[Child].[ParentID] >= 1000
 
 BeforeExecute
--- SQLite.Default SQLite.MS SQLite
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
-FROM
-	[Child] [t1]
-
-BeforeExecute
--- SQLite.Default SQLite.MS SQLite
-
-SELECT
-	[t1].[ParentID],
-	[t1].[Value1]
-FROM
-	[Parent] [t1]
-
-BeforeExecute
--- SQLite.Default SQLite.MS SQLite
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
-	[t1].[GrandChildID]
-FROM
-	[GrandChild] [t1]
-
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
@@ -67,16 +39,6 @@ FROM
 		FROM
 			[GrandChild] [c_2]
 	) [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	Count(*)
-FROM
-	[Parent] [c_1]
-WHERE
-	[c_1].[ParentID] > 1000
 
 BeforeExecute
 -- SqlCe

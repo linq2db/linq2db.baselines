@@ -31,24 +31,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @FirstName NVarChar(18) -- String
-SET     @FirstName = 'InsertColumnFilter'
-
-SELECT TOP (@take)
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
-FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlCe
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -69,24 +51,6 @@ SET
 	[Person].[Gender] = @Gender
 WHERE
 	[Person].[PersonID] = @ID
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @FirstName NVarChar(18) -- String
-SET     @FirstName = 'InsertColumnFilter'
-
-SELECT TOP (@take)
-	[x].[FirstName],
-	[x].[PersonID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
-FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @FirstName
 
 BeforeExecute
 -- SqlCe
