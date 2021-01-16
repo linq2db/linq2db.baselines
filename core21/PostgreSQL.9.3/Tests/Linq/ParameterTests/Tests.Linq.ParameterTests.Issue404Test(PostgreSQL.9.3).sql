@@ -57,6 +57,85 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+SELECT
+	key_data_result."Id",
+	v."Id",
+	v."Usage",
+	v."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			c_1."Id"
+		FROM
+			"Table404One" c_1
+	) key_data_result
+		INNER JOIN "Table404Two" v ON v."FirstTableId" = key_data_result."Id"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	c_1."Id"
+FROM
+	"Table404One" c_1
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @Usage_1 Integer -- Int32
+SET     @Usage_1 = 0
+
+SELECT
+	key_data_result."Id",
+	v."Id",
+	v."Usage",
+	v."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			c_1."Id"
+		FROM
+			"Table404One" c_1
+	) key_data_result
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	c_1."Id"
+FROM
+	"Table404One" c_1
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @Usage_1 Integer -- Int32
+SET     @Usage_1 = 1
+
+SELECT
+	key_data_result."Id",
+	v."Id",
+	v."Usage",
+	v."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			c_1."Id"
+		FROM
+			"Table404One" c_1
+	) key_data_result
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	c_1."Id"
+FROM
+	"Table404One" c_1
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DROP TABLE IF EXISTS "Table404Two"
 
 BeforeExecute
@@ -119,6 +198,85 @@ VALUES
 (4,0,2),
 (5,1,2),
 (6,1,2)
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	key_data_result."Id",
+	v."Id",
+	v."Usage",
+	v."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			c_1."Id"
+		FROM
+			"Table404One" c_1
+	) key_data_result
+		INNER JOIN "Table404Two" v ON v."FirstTableId" = key_data_result."Id"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	c_1."Id"
+FROM
+	"Table404One" c_1
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @Usage_1 Integer -- Int32
+SET     @Usage_1 = 0
+
+SELECT
+	key_data_result."Id",
+	v."Id",
+	v."Usage",
+	v."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			c_1."Id"
+		FROM
+			"Table404One" c_1
+	) key_data_result
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	c_1."Id"
+FROM
+	"Table404One" c_1
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @Usage_1 Integer -- Int32
+SET     @Usage_1 = 1
+
+SELECT
+	key_data_result."Id",
+	v."Id",
+	v."Usage",
+	v."FirstTableId"
+FROM
+	(
+		SELECT DISTINCT
+			c_1."Id"
+		FROM
+			"Table404One" c_1
+	) key_data_result
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	c_1."Id"
+FROM
+	"Table404One" c_1
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

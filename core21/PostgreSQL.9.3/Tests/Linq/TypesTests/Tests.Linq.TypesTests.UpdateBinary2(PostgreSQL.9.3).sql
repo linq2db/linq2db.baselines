@@ -26,3 +26,20 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :ID
 
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	t."ID",
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."BoolValue",
+	t."GuidValue",
+	t."BinaryValue",
+	t."SmallIntValue",
+	t."StringValue"
+FROM
+	"LinqDataTypes" t
+WHERE
+	t."ID" IN (1, 2)
+

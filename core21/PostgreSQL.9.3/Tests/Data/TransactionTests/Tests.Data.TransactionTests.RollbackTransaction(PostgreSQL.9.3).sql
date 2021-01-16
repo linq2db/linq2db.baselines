@@ -28,6 +28,20 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."ParentID",
+	t."Value1"
+FROM
+	"Parent" t
+WHERE
+	t."ParentID" = 1010
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
 
 DELETE FROM
 	"Parent" t1

@@ -72,5 +72,13 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+SELECT
+	t."TransactionDate" + 3 * Interval '1 Day'
+FROM
+	"Transactions" t
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DROP TABLE IF EXISTS "Transactions"
 

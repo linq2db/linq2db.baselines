@@ -18,6 +18,21 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+DECLARE @id Integer -- Int32
+SET     @id = 100500
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t1."ParentID"
+FROM
+	"Parent" t1
+WHERE
+	t1."ParentID" = :id
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 100500
 DECLARE @id Integer -- Int32

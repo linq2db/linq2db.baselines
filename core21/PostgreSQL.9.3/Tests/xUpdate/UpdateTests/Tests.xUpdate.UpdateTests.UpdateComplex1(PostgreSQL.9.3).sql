@@ -41,6 +41,25 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+DECLARE @id Integer -- Int32
+SET     @id = 5
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t1."PersonID",
+	t1."Gender",
+	t1."FirstName",
+	t1."MiddleName",
+	t1."LastName"
+FROM
+	"Person" t1
+WHERE
+	t1."PersonID" = :id
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(13) -- String
@@ -61,6 +80,25 @@ SET
 	"LastName" = :Name_LastName
 WHERE
 	"Person"."PersonID" = :ID
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @id Integer -- Int32
+SET     @id = 5
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t1."PersonID",
+	t1."Gender",
+	t1."FirstName",
+	t1."MiddleName",
+	t1."LastName"
+FROM
+	"Person" t1
+WHERE
+	t1."PersonID" = :id
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

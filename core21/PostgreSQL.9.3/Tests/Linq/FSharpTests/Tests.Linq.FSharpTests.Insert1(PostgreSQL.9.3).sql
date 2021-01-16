@@ -27,6 +27,16 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+SELECT
+	Count(*)
+FROM
+	"Child" c_1
+WHERE
+	c_1."ChildID" = 1001
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DELETE FROM
 	"Child" t1
 WHERE

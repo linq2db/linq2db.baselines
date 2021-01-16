@@ -82,6 +82,33 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	r."ID",
+	r."StringValue"
+FROM
+	"LinqDataTypes" r
+WHERE
+	r."ID" >= 101 AND r."ID" <= 104
+ORDER BY
+	r."ID"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	r."ID",
+	r."IntValue",
+	r."StringValue"
+FROM
+	"LinqDataTypes" r
+WHERE
+	r."ID" >= 101 AND r."ID" <= 104
+ORDER BY
+	r."ID"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 105
 

@@ -34,6 +34,19 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	t1."Id",
+	t1."ClaimedKeyType",
+	t1."ClaimedKeyTypeN"
+FROM
+	"Issue1554FluentTable" t1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
 
 DROP TABLE "Issue1554FluentTable"
 

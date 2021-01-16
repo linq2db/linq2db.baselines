@@ -26,5 +26,14 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+SELECT
+	t."ID"
+FROM
+	"Parent" p
+		INNER JOIN "TempTable" t ON p."ParentID" = t."ID"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DROP TABLE IF EXISTS "TempTable"
 

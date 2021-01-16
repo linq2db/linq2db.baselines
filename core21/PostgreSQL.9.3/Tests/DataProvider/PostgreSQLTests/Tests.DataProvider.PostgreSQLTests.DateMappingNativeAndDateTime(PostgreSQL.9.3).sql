@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	Max(t1."ID")
+FROM
+	"AllTypes" t1
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
 DECLARE @date1 Date
 SET     @date1 = 2020-02-29
 
@@ -25,6 +33,34 @@ VALUES
 (
 	:date2
 )
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @maxId Integer -- Int32
+SET     @maxId = 2
+
+SELECT
+	t1."dateDataType"
+FROM
+	"AllTypes" t1
+WHERE
+	t1."ID" > :maxId
+ORDER BY
+	t1."ID"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @maxId Integer -- Int32
+SET     @maxId = 2
+
+SELECT
+	t1."dateDataType"
+FROM
+	"AllTypes" t1
+WHERE
+	t1."ID" > :maxId
+ORDER BY
+	t1."ID"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

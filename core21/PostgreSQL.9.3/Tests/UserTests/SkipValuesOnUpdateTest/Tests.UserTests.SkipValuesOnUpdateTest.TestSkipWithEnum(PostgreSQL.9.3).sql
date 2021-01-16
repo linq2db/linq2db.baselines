@@ -39,6 +39,22 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."Id",
+	t."Name",
+	t."Age",
+	t."Gender"
+FROM
+	"PR_1598_Update_Enum_Table" t
+WHERE
+	t."Id" = 1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
 DECLARE @Name Text(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Integer -- Int32
@@ -59,6 +75,22 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."Id",
+	t."Name",
+	t."Age",
+	t."Gender"
+FROM
+	"PR_1598_Update_Enum_Table" t
+WHERE
+	t."Id" = 1
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
 DECLARE @Name Text(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Integer -- Int32
@@ -73,6 +105,22 @@ SET
 	"Age" = :Age
 WHERE
 	"PR_1598_Update_Enum_Table"."Id" = :Id
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	t."Id",
+	t."Name",
+	t."Age",
+	t."Gender"
+FROM
+	"PR_1598_Update_Enum_Table" t
+WHERE
+	t."Id" = 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

@@ -45,5 +45,15 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+SELECT
+	Count(*)
+FROM
+	"InstanceClass" t
+WHERE
+	Cast(t."Id" as VarChar(11)) || Cast(t."Value" as VarChar(11)) = Cast(t."Id" as VarChar(11)) || Cast(t."Value" as VarChar(11))
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DROP TABLE IF EXISTS "InstanceClass"
 

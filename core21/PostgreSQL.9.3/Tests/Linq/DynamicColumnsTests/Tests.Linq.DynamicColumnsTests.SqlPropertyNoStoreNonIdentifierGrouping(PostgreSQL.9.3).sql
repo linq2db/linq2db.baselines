@@ -30,5 +30,17 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+SELECT
+	t1."Not Identifier",
+	Count(*),
+	Sum(t1."Some Value")
+FROM
+	"DynamicTable" t1
+GROUP BY
+	t1."Not Identifier"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DROP TABLE IF EXISTS "DynamicTable"
 

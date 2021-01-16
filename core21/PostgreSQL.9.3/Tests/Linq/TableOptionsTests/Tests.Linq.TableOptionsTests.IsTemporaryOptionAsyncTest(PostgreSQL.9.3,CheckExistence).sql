@@ -44,6 +44,24 @@ FROM
 	temp_table1 t1
 
 BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	t1."ID",
+	t1."Value"
+FROM
+	temp_table1 t1
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	t1."ID",
+	t1."Value"
+FROM
+	temp_table2 t1
+
+BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL (asynchronously)
 
 INSERT INTO temp_table1

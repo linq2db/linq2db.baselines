@@ -41,6 +41,16 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+SELECT
+	Count(*)
+FROM
+	"Person" t1
+WHERE
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DELETE FROM
 	"Person" t1
 WHERE

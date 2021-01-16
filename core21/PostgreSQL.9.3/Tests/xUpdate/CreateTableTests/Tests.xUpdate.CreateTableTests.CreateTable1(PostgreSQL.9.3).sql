@@ -19,5 +19,16 @@ CREATE TABLE "TestTable"
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+SELECT
+	t1."ID",
+	t1."Field1",
+	t1."Field2",
+	t1."CreatedOn"
+FROM
+	"TestTable" t1
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DROP TABLE "TestTable"
 
