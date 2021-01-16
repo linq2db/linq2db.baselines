@@ -26,6 +26,16 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	Count(*)
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`Value1` = 11
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DELETE `t1`
 FROM
 	`Parent` `t1`

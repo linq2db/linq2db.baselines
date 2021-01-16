@@ -27,6 +27,17 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+
+SELECT
+	`r`.`BigIntValue`,
+	`r`.`IntValue`
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` = 101
+
+BeforeExecute
+-- MySql MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 102
 

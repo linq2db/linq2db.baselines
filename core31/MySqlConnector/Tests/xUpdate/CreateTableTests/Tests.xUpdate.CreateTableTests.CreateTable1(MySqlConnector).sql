@@ -19,5 +19,16 @@ CREATE TABLE `TestTable`
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`t1`.`ID`,
+	`t1`.`Field1`,
+	`t1`.`Field2`,
+	`t1`.`CreatedOn`
+FROM
+	`TestTable` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE `TestTable`
 

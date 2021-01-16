@@ -3066,3 +3066,54 @@ VALUES
 (5998,'one','Green',7,0x010203,0x7B16,0x060F04,'test','_btest','A',@p499,'2020-02-29 17:54:55','2020-02-29 17:54:55','2020-02-29',8698,9798,9998,8998,7998,6998,110,4998,3998,98,98,98),
 (5999,'one','Green',7,0x010203,0x7B16,0x060F04,'test','_btest','A',@p500,'2020-02-29 17:54:55','2020-02-29 17:54:55','2020-02-29',8699,9799,9999,8999,7999,6999,111,4999,3999,99,99,99)
 
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`AllTypes` `_`
+WHERE
+	`_`.`varcharDataType` = '_btest'
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 10
+
+SELECT
+	`_`.`intUnsignedDataType`,
+	`_`.`setDataType`,
+	`_`.`enumDataType`,
+	`_`.`bitDataType`,
+	`_`.`blobDataType`,
+	`_`.`varbinaryDataType`,
+	`_`.`binaryDataType`,
+	`_`.`textDataType`,
+	`_`.`varcharDataType`,
+	`_`.`charDataType`,
+	`_`.`timeDataType`,
+	`_`.`timestampDataType`,
+	`_`.`datetimeDataType`,
+	`_`.`dateDataType`,
+	`_`.`floatDataType`,
+	`_`.`doubleDataType`,
+	`_`.`decimalDataType`,
+	`_`.`numericDataType`,
+	`_`.`intDataType`,
+	`_`.`mediumintDataType`,
+	`_`.`tinyintDataType`,
+	`_`.`smallintDataType`,
+	`_`.`bigintDataType`,
+	`_`.`ID`,
+	`_`.`year4DataType`,
+	`_`.`year2DataType`,
+	`_`.`yearDataType`
+FROM
+	`AllTypes` `_`
+WHERE
+	`_`.`varcharDataType` = '_btest'
+ORDER BY
+	`_`.`ID`
+LIMIT @take
+

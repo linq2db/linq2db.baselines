@@ -49,6 +49,18 @@ CREATE TABLE IF NOT EXISTS `stMain`
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`v`.`inId`,
+	`r`.`inIdState`,
+	`a_Main`.`inIdType`
+FROM
+	`stVersions` `v`
+		INNER JOIN `stMain` `a_Main` ON `v`.`inIdMain` = `a_Main`.`inId`
+		LEFT JOIN `rlStatesTypesAndUserGroups` `r` ON `r`.`inIdType` = `a_Main`.`inIdType`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE IF EXISTS `stMain`
 
 BeforeExecute

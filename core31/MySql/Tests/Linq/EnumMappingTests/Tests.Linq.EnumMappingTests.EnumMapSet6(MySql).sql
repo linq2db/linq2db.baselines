@@ -35,6 +35,16 @@ WHERE
 
 BeforeExecute
 -- MySql MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` = 101 AND `r`.`IntValue` = 4
+
+BeforeExecute
+-- MySql MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 102
 

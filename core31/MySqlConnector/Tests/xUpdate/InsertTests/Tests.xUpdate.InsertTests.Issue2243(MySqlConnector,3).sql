@@ -40,6 +40,20 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`t1`.`id`,
+	`t1`.`name`,
+	`t1`.`created_by`,
+	`t1`.`updated_by`
+FROM
+	`test_insert_or_replace` `t1`
+LIMIT @take
+
+BeforeExecute
+-- MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -64,6 +78,20 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`name` = @Name,
 	`updated_by` = @UpdatedBy
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`t1`.`id`,
+	`t1`.`name`,
+	`t1`.`created_by`,
+	`t1`.`updated_by`
+FROM
+	`test_insert_or_replace` `t1`
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

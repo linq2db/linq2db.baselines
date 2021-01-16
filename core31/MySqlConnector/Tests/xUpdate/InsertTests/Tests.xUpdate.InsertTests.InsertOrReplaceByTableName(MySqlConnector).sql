@@ -56,6 +56,14 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MySqlConnector MySql
+
+SELECT
+	Count(*)
+FROM
+	`xxPatient` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
@@ -93,6 +101,14 @@ VALUES
 )
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	Count(*)
+FROM
+	`xxPatient` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql

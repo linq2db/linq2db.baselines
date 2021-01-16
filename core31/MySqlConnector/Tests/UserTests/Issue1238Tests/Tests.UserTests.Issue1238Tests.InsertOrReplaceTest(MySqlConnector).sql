@@ -31,6 +31,14 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MySqlConnector MySql
+
+SELECT
+	Count(*)
+FROM
+	`InheritanceParent` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
 DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -52,4 +60,12 @@ VALUES
 )
 ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data_1
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	Count(*)
+FROM
+	`InheritanceParent` `t1`
 

@@ -33,6 +33,25 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`x`.`FirstName`,
+	`x`.`PersonID`,
+	`x`.`LastName`,
+	`x`.`MiddleName`,
+	`x`.`Gender`
+FROM
+	`Person` `x`
+WHERE
+	`x`.`FirstName` = @FirstName
+LIMIT @take
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @FirstName VarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @Gender String(1) -- AnsiStringFixedLength
@@ -48,6 +67,25 @@ SET
 	`t1`.`Gender` = @Gender
 WHERE
 	`t1`.`PersonID` = @ID
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @FirstName VarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`x`.`FirstName`,
+	`x`.`PersonID`,
+	`x`.`LastName`,
+	`x`.`MiddleName`,
+	`x`.`Gender`
+FROM
+	`Person` `x`
+WHERE
+	`x`.`FirstName` = @FirstName
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

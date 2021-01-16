@@ -101,6 +101,17 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
+SELECT
+	`t1`.`Id`,
+	`t1`.`Level`
+FROM
+	`HierarchyData` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 DROP TABLE `HierarchyData`
 
 BeforeExecute

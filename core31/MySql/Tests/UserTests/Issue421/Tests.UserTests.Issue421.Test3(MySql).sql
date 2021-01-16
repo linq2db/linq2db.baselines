@@ -29,6 +29,34 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`_`.`Id`,
+	`_`.`BlobValue`
+FROM
+	`BlobClass` `_`
+WHERE
+	`_`.`Id` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`_`.`Id`,
+	`_`.`BlobValue`
+FROM
+	`BlobClass` `_`
+WHERE
+	`_`.`Id` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
 
 DROP TABLE `BlobClass`
 

@@ -41,6 +41,16 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
+SELECT
+	Count(*)
+FROM
+	`Person` `_`
+WHERE
+	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 DELETE `_`
 FROM
 	`Person` `_`

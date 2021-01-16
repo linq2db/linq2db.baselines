@@ -45,5 +45,15 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`,
+	Concat('M', Cast(`t1`.`Id` as CHAR(11)))
+FROM
+	`InstanceClass` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE IF EXISTS `InstanceClass`
 

@@ -36,6 +36,16 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	Count(*)
+FROM
+	`Person` `p`
+WHERE
+	`p`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DELETE `t1`
 FROM
 	`Person` `t1`

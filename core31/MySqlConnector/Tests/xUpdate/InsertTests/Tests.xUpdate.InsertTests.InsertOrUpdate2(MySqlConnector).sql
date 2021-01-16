@@ -45,6 +45,19 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 5
 
+SELECT
+	`p`.`PersonID`,
+	`p`.`Diagnosis`
+FROM
+	`Patient` `p`
+WHERE
+	`p`.`PersonID` = @id
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @id Int32
+SET     @id = 5
+
 INSERT IGNORE INTO `Patient`
 (
 	`PersonID`,
@@ -55,6 +68,19 @@ VALUES
 	@id,
 	'positive'
 )
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @id Int32
+SET     @id = 5
+
+SELECT
+	`p`.`PersonID`,
+	`p`.`Diagnosis`
+FROM
+	`Patient` `p`
+WHERE
+	`p`.`PersonID` = @id
 
 BeforeExecute
 -- MySqlConnector MySql

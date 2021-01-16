@@ -29,5 +29,13 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`d`.`Not Identifier`
+FROM
+	`DynamicTable` `d`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE IF EXISTS `DynamicTable`
 

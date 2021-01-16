@@ -26,5 +26,29 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`_`.`Id`,
+	`_`.`BlobValue`
+FROM
+	`BlobClass` `_`
+WHERE
+	`_`.`Id` = 1
+LIMIT 1
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`_`.`Id`,
+	`_`.`BlobValue`
+FROM
+	`BlobClass` `_`
+WHERE
+	`_`.`Id` = 1
+LIMIT 1
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE `BlobClass`
 

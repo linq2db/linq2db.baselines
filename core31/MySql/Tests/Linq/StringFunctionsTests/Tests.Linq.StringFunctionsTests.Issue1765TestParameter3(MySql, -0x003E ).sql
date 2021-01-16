@@ -33,6 +33,19 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @separator VarChar(4) -- String
+SET     @separator = ' -> '
+
+SELECT
+	GROUP_CONCAT(`t1`.`Value4` ORDER BY `t1`.`Value3` DESC, `t1`.`Value4` SEPARATOR @separator)
+FROM
+	`SampleClass` `t1`
+GROUP BY
+	`t1`.`Id`,
+	`t1`.`Value4`
+
+BeforeExecute
+-- MySql MySql.Official MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 

@@ -30,6 +30,21 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`Id`,
+	`t`.`Name`,
+	`t`.`Age`
+FROM
+	`PR_1598_Insert_Null_Table` `t`
+WHERE
+	`t`.`Id` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySqlConnector MySql
 
 DROP TABLE `PR_1598_Insert_Null_Table`
 

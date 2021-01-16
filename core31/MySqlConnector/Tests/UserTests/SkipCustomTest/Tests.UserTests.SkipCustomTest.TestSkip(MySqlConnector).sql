@@ -34,6 +34,21 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`Id`,
+	`t`.`Name`,
+	`t`.`Age`
+FROM
+	`PR_1598_SkipCustom_Table` `t`
+WHERE
+	`t`.`Id` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Name VarChar(3) -- String
@@ -49,6 +64,21 @@ VALUES
 	@Id,
 	@Name
 )
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`Id`,
+	`t`.`Name`,
+	`t`.`Age`
+FROM
+	`PR_1598_SkipCustom_Table` `t`
+WHERE
+	`t`.`Id` = 2
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

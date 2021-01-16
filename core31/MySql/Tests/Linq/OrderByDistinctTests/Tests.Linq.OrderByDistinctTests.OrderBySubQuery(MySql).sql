@@ -48,6 +48,33 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`t`.`DuplicateData`,
+	(
+		SELECT
+			Count(*)
+		FROM
+			`OrderByDistinctData` `s`
+		WHERE
+			(`s`.`DuplicateData` = `t`.`DuplicateData` OR `s`.`DuplicateData` IS NULL AND `t`.`DuplicateData` IS NULL)
+	)
+FROM
+	(
+		SELECT
+			`t1`.`Id`,
+			`t1`.`DuplicateData`
+		FROM
+			`OrderByDistinctData` `t1`
+		LIMIT @take
+	) `t`
+ORDER BY
+	`t`.`Id` DESC
+
+BeforeExecute
+-- MySql MySql.Official MySql
 
 DROP TABLE IF EXISTS `OrderByDistinctData`
 

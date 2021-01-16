@@ -34,6 +34,29 @@ CREATE TABLE `ProductAttributeMapping`
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`pa`.`Id`
+FROM
+	`ProductAttributeMapping` `pam`
+		INNER JOIN `ProductAttributeTable` `pa` ON `pam`.`ProductAttributeId` = `pa`.`Id`
+WHERE
+	EXISTS(
+		SELECT
+			`p`.`Id`
+		FROM
+			`ProductTable` `p`
+				INNER JOIN `ProductAttributeMapping` `pam_1` ON `p`.`Id` = `pam_1`.`ProductId`
+		WHERE
+			`p`.`Id` >= `pam`.`ProductId`
+		GROUP BY
+			`p`.`Id`
+		HAVING
+			Count(*) = 1
+	)
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE `ProductAttributeMapping`
 
 BeforeExecute

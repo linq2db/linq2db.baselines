@@ -28,6 +28,20 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`ParentID`,
+	`t`.`Value1`
+FROM
+	`Parent` `t`
+WHERE
+	`t`.`ParentID` = 1010
+LIMIT @take
+
+BeforeExecute
+-- MySqlConnector MySql
 
 DELETE `t1`
 FROM

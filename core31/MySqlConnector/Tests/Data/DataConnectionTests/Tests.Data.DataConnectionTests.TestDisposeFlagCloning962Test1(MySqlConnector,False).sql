@@ -65,6 +65,29 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`lw_Category`.`CategoryID`,
+	`detail`.`ProductID`,
+	`detail`.`ProductName`,
+	`detail`.`CategoryID`,
+	`detail`.`QuantityPerUnit`
+FROM
+	`Categories` `lw_Category`
+		INNER JOIN `Products` `detail` ON `lw_Category`.`CategoryID` = `detail`.`CategoryID`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`t1`.`CategoryID`,
+	`t1`.`CategoryName`,
+	`t1`.`Description`
+FROM
+	`Categories` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE IF EXISTS `Products`
 
 BeforeExecute

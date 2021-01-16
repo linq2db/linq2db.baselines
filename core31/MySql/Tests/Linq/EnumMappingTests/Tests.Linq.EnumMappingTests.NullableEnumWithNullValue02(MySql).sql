@@ -83,6 +83,33 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+
+SELECT
+	`r`.`ID`,
+	`r`.`IntValue`
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` >= 101 AND `r`.`ID` <= 104
+ORDER BY
+	`r`.`ID`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`r`.`ID`,
+	`r`.`IntValue`,
+	`r`.`StringValue`
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` >= 101 AND `r`.`ID` <= 104
+ORDER BY
+	`r`.`ID`
+
+BeforeExecute
+-- MySql MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 105
 

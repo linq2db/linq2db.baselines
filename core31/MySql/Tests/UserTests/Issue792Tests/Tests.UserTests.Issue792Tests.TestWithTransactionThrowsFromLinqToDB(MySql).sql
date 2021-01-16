@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
+SELECT
+	Count(*)
+FROM
+	`AllTypes` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_SCHEMA = database()
 
 BeforeExecute

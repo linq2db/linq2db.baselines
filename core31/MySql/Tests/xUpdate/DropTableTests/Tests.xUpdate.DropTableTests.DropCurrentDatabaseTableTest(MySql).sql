@@ -26,5 +26,21 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
+SELECT
+	`t1`.`ID`
+FROM
+	`DropTableTest` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 DROP TABLE `DropTableTest`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`t1`.`ID`
+FROM
+	`DropTableTest` `t1`
 

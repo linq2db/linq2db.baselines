@@ -34,6 +34,21 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`Id`,
+	`t`.`Name`,
+	`t`.`Age`
+FROM
+	`PR_1598_Mixed_Table` `t`
+WHERE
+	`t`.`Id` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySqlConnector MySql
 DECLARE @Age Int32
 SET     @Age = 20
 DECLARE @Id Int32
@@ -45,6 +60,21 @@ SET
 	`t1`.`Age` = @Age
 WHERE
 	`t1`.`Id` = @Id
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`Id`,
+	`t`.`Name`,
+	`t`.`Age`
+FROM
+	`PR_1598_Mixed_Table` `t`
+WHERE
+	`t`.`Id` = 1
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -66,6 +96,21 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`Id`,
+	`t`.`Name`,
+	`t`.`Age`
+FROM
+	`PR_1598_Mixed_Table` `t`
+WHERE
+	`t`.`Id` = 2
+LIMIT @take
+
+BeforeExecute
+-- MySqlConnector MySql
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Jessy'
 DECLARE @Age Int32
@@ -80,6 +125,21 @@ SET
 	`t1`.`Age` = @Age
 WHERE
 	`t1`.`Id` = @Id
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t`.`Id`,
+	`t`.`Name`,
+	`t`.`Age`
+FROM
+	`PR_1598_Mixed_Table` `t`
+WHERE
+	`t`.`Id` = 2
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

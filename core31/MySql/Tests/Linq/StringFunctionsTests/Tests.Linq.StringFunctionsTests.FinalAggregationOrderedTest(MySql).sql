@@ -34,5 +34,37 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
+SELECT
+	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` SEPARATOR ' -> ')
+FROM
+	`SampleClass` `t`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` SEPARATOR ' -> ')
+FROM
+	`SampleClass` `t`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` DESC SEPARATOR ' -> ')
+FROM
+	`SampleClass` `t`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` DESC SEPARATOR ' -> ')
+FROM
+	`SampleClass` `t`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 DROP TABLE IF EXISTS `SampleClass`
 

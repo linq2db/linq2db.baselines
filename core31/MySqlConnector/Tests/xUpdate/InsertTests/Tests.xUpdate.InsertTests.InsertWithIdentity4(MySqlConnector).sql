@@ -41,6 +41,25 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySqlConnector MySql
 DECLARE @FirstName VarChar(5) -- String
+SET     @FirstName = 'John0'
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`p`.`FirstName`,
+	`p`.`PersonID`,
+	`p`.`LastName`,
+	`p`.`MiddleName`,
+	`p`.`Gender`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`FirstName` = @FirstName AND `p`.`LastName` = 'Shepard'
+LIMIT @take
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName VarChar(7) -- String
 SET     @LastName = 'Shepard'
@@ -68,6 +87,25 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT LAST_INSERT_ID()
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @FirstName VarChar(5) -- String
+SET     @FirstName = 'John1'
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`p`.`FirstName`,
+	`p`.`PersonID`,
+	`p`.`LastName`,
+	`p`.`MiddleName`,
+	`p`.`Gender`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`FirstName` = @FirstName AND `p`.`LastName` = 'Shepard'
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

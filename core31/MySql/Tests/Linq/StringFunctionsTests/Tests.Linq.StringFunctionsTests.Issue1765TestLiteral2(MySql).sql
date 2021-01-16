@@ -34,5 +34,13 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
+SELECT
+	GROUP_CONCAT(`t1`.`Value4` SEPARATOR ' -> ')
+FROM
+	`SampleClass` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 DROP TABLE IF EXISTS `SampleClass`
 

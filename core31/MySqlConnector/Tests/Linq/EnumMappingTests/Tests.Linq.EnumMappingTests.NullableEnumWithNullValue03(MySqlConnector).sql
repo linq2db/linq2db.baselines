@@ -65,6 +65,33 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
+
+SELECT
+	`r`.`ID`,
+	`r`.`StringValue`
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` >= 101 AND `r`.`ID` <= 103
+ORDER BY
+	`r`.`ID`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`r`.`ID`,
+	`r`.`IntValue`,
+	`r`.`StringValue`
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` >= 101 AND `r`.`ID` <= 103
+ORDER BY
+	`r`.`ID`
+
+BeforeExecute
+-- MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 104
 

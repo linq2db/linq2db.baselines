@@ -10,5 +10,14 @@ CREATE TEMPORARY TABLE `IsTemporaryTable`
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`IsTemporaryTable` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE `IsTemporaryTable`
 

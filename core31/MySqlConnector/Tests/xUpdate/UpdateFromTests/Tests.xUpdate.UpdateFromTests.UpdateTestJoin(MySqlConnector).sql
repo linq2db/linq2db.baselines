@@ -92,6 +92,17 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`v`.`id`,
+	`v`.`Value1`,
+	`v`.`Value2`,
+	`v`.`Value3`
+FROM
+	`UpdatedEntities` `v`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE IF EXISTS `NewEntities`
 
 BeforeExecute

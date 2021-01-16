@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	Max(`t`.`PersonID`)
+FROM
+	`Person` `t`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 INSERT INTO `Person`
 (
 	`FirstName`,

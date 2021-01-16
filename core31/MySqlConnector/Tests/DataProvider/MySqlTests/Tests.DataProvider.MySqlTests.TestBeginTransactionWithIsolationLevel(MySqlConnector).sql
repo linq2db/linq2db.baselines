@@ -18,3 +18,31 @@ SET
 WHERE
 	`t1`.`ParentID` = 1
 
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`p`.`ParentID`,
+	`p`.`Value1`
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`ParentID` = 1
+LIMIT @take
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`p`.`ParentID`,
+	`p`.`Value1`
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`ParentID` = 1
+LIMIT @take
+

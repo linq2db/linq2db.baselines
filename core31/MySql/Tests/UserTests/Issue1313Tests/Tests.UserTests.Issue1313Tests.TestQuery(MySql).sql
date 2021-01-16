@@ -21,5 +21,13 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
+SELECT
+	`row_1`.`Value`
+FROM
+	`ValueItem` `row_1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 DROP TABLE `ValueItem`
 

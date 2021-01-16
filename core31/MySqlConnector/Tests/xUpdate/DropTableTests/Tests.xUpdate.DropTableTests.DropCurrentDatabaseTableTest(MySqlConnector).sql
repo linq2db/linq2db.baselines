@@ -26,5 +26,21 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`t1`.`ID`
+FROM
+	`DropTableTest` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE `DropTableTest`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`t1`.`ID`
+FROM
+	`DropTableTest` `t1`
 

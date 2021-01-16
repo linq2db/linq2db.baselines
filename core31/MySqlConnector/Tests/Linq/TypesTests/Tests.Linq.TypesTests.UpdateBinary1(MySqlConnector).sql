@@ -10,3 +10,13 @@ SET
 WHERE
 	`t`.`ID` = 1
 
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`t`.`BinaryValue`
+FROM
+	`LinqDataTypes` `t`
+WHERE
+	`t`.`ID` = 1
+

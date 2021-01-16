@@ -50,6 +50,22 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @BoolValue VarChar -- AnsiString
+SET     @BoolValue = 'Y'
+
+SELECT
+	`t1`.`Enum`
+FROM
+	`ValueConversion` `t1`
+		INNER JOIN (
+			SELECT
+				`t2`.`BoolValue`
+			FROM
+				`ValueConversion` `t2`
+		) `t2_1` ON `t2_1`.`BoolValue` = @BoolValue AND `t1`.`BoolValue` = @BoolValue
+
+BeforeExecute
+-- MySql MySql.Official MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 
