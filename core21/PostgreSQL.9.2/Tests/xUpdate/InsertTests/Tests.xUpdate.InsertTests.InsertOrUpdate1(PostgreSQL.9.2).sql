@@ -83,22 +83,6 @@ BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	p."PersonID",
-	p."Diagnosis"
-FROM
-	"Patient" p
-WHERE
-	p."PersonID" = :id
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 5
 
 DELETE FROM
 	"Patient" t1

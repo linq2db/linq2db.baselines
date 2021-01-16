@@ -15,18 +15,5 @@ CREATE TABLE "CustomerBase"
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	cb."Id",
-	cb."Name",
-	cb."ContactEmail",
-	Coalesce(cb."Enabled", False)
-FROM
-	"CustomerBase" cb
-WHERE
-	cb."ClientType" = 'Client'
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-
 DROP TABLE "CustomerBase"
 

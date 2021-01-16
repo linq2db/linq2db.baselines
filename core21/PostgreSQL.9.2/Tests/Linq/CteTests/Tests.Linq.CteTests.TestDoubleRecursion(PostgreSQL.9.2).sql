@@ -43,49 +43,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-WITH RECURSIVE "CTE_1" ("Id")
-AS
-(
-	SELECT
-		t."Id"
-	FROM
-		"HierarchyTree" t
-	WHERE
-		t."ParentId" IS NULL
-),
-"CTE_2" ("ParentId", "Id")
-AS
-(
-	SELECT
-		t1."ParentId",
-		t1."Id"
-	FROM
-		"HierarchyTree" t1
-),
-"hierarchyDown" ("Id", "Level")
-AS
-(
-	SELECT
-		t_1."Id",
-		0
-	FROM
-		"CTE_1" t_1
-	UNION ALL
-	SELECT
-		t_2."Id",
-		h."Level" + 1
-	FROM
-		"hierarchyDown" h
-			INNER JOIN "CTE_2" t_2 ON t_2."ParentId" = h."Id"
-)
-SELECT
-	Count(*)
-FROM
-	"hierarchyDown" h1
-		INNER JOIN "hierarchyDown" h2 ON h2."Id" = h1."Id"
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-
 DROP TABLE IF EXISTS "HierarchyTree"
 

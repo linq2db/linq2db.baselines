@@ -30,14 +30,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	t1.cc,
-	t1.bb
-FROM
-	aa t1
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-
 DROP TABLE aa
 

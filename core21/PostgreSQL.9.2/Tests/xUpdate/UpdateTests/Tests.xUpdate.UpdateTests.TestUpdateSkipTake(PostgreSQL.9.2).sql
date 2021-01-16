@@ -215,20 +215,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	p."ParentID",
-	p."Value1"
-FROM
-	"Parent" p
-WHERE
-	p."ParentID" = 1009
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
 
 DELETE FROM
 	"Parent" t1

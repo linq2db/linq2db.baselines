@@ -33,20 +33,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @separator Text(4) -- String
-SET     @separator = ' => '
-
-SELECT
-	Max(t1."Value4"),
-	STRING_AGG(t1."Value4", :separator)
-FROM
-	"SampleClass" t1
-GROUP BY
-	t1."Id",
-	t1."Value4"
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
 
 DROP TABLE IF EXISTS "SampleClass"
 

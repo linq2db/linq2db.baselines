@@ -54,24 +54,6 @@ BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @FirstName Text(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	x."ID",
-	x."FirstName",
-	x."LastName",
-	x."MiddleName"
-FROM
-	"TestInsertOrReplaceTable" x
-WHERE
-	x."FirstName" = :FirstName
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-DECLARE @FirstName Text(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName Text(12) -- String
@@ -87,24 +69,6 @@ SET
 	"MiddleName" = :MiddleName
 WHERE
 	"TestInsertOrReplaceTable"."ID" = :ID
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-DECLARE @FirstName Text(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	x."ID",
-	x."FirstName",
-	x."LastName",
-	x."MiddleName"
-FROM
-	"TestInsertOrReplaceTable" x
-WHERE
-	x."FirstName" = :FirstName
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

@@ -26,18 +26,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	"Parent" p
-WHERE
-	p."ParentID" = :id AND p."Value1" = 1
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 2
 DECLARE @id Integer -- Int32
@@ -52,18 +40,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	"Parent" p
-WHERE
-	p."ParentID" = :id AND p."Value1" = 2
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 DECLARE @id Integer -- Int32
@@ -75,18 +51,6 @@ SET
 	"Value1" = :Value1
 WHERE
 	"Parent"."ParentID" = :id
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	"Parent" p
-WHERE
-	p."ParentID" = :id AND p."Value1" = 3
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

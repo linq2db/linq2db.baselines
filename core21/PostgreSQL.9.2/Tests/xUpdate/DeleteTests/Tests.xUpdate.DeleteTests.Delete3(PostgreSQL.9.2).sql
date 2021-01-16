@@ -37,16 +37,6 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	Count(*)
-FROM
-	"Child" c_1
-WHERE
-	c_1."ParentID" = 1
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-
 DELETE FROM
 	"Child" t1
 WHERE
@@ -62,16 +52,6 @@ WHERE
 			t1."ParentID" = c_1."ParentID" AND
 			t1."ChildID" = c_1."ChildID"
 	)
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-
-SELECT
-	Count(*)
-FROM
-	"Child" c_1
-WHERE
-	c_1."ParentID" = 1
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

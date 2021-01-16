@@ -82,30 +82,6 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	p."Id",
-	p."TargetName",
-	"a_ActualStage"."Id"
-FROM
-	"Task" p
-		LEFT JOIN "TaskStage" "a_ActualStage" ON p."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True
-WHERE
-	p."TargetName" = 'bda.Requests'
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-
-SELECT
-	p."Id",
-	p."TargetName",
-	"a_ActualStage"."Id"
-FROM
-	"Task" p
-		LEFT JOIN "TaskStage" "a_ActualStage" ON p."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-
 DROP TABLE "TaskStage"
 
 BeforeExecute

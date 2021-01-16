@@ -72,13 +72,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	t."TransactionDate" + 2 * Interval '1 Month'
-FROM
-	"Transactions" t
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-
 DROP TABLE IF EXISTS "Transactions"
 

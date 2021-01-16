@@ -72,13 +72,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-SELECT
-	EXTRACT(EPOCH FROM ((t."TransactionDate" + 96 * Interval '1 Hour')::timestamp - t."TransactionDate"::timestamp)) / 86400
-FROM
-	"Transactions" t
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-
 DROP TABLE IF EXISTS "Transactions"
 

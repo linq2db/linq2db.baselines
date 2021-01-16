@@ -51,21 +51,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 1
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	t1."Value3"
-FROM
-	"UpdateSetTest" t1
-WHERE
-	t1."Id" = :id
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
 DECLARE @Value3 Integer -- Int32
 SET     @Value3 = 8
 DECLARE @id Integer -- Int32
@@ -77,21 +62,6 @@ SET
 	"Value3" = :Value3
 WHERE
 	"UpdateSetTest"."Id" = :id
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 1
-DECLARE @take Integer -- Int32
-SET     @take = 2
-
-SELECT
-	t1."Value3"
-FROM
-	"UpdateSetTest" t1
-WHERE
-	t1."Id" = :id
-LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-
-SELECT
-	Max(t."PersonID")
-FROM
-	"Person" t
-
-BeforeExecute
--- PostgreSQL.9.2 PostgreSQL
 DECLARE @FirstName Text(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender Text(1) -- String
