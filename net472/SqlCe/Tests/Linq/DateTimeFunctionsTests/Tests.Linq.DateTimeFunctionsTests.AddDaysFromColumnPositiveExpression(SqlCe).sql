@@ -42,22 +42,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @part1 Int -- Int32
-SET     @part1 = 4
-DECLARE @part2 Int -- Int32
-SET     @part2 = 4
-DECLARE @p_1 DateTime
-SET     @p_1 = '2018-01-02'
-
-SELECT
-	Count(*)
-FROM
-	[LinqDataTypes] [t]
-WHERE
-	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > @p_1
-
-BeforeExecute
--- SqlCe
 
 DELETE FROM
 	[LinqDataTypes]

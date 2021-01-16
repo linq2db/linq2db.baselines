@@ -45,28 +45,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-
-SELECT
-	Count(*)
-FROM
-	[xxPerson] [t1]
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
-FROM
-	[xxPerson] [t1]
-
-BeforeExecute
--- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -87,20 +65,6 @@ SET
 	[xxPerson].[Gender] = @Gender
 WHERE
 	[xxPerson].[PersonID] = @ID
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
-FROM
-	[xxPerson] [t1]
 
 BeforeExecute
 -- SqlCe

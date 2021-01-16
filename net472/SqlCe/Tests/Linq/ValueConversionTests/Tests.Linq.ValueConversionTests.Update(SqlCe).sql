@@ -66,26 +66,6 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 1
-
-BeforeExecute
--- SqlCe
 DECLARE @Value1 NVarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 NVarChar(22) -- String
@@ -121,26 +101,6 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 2
-
-BeforeExecute
--- SqlCe
 DECLARE @Value1 NVarChar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarChar -- String
@@ -173,26 +133,6 @@ SET
 	[ValueConversion].[DateTimeNullable] = @DateTimeNullable
 WHERE
 	[ValueConversion].[Id] = @Id
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 3
 
 BeforeExecute
 -- SqlCe

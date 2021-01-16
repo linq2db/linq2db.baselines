@@ -281,21 +281,6 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[v].[Value1],
-	[v].[Value2],
-	[v].[Value3]
-FROM
-	[UpdatedEntities] [v]
-		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
-WHERE
-	[a_Relation].[RelatedValue1] = 11
-
-BeforeExecute
--- SqlCe
 
 DROP TABLE [UpdateRelation]
 

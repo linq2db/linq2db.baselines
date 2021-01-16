@@ -6,14 +6,6 @@ DROP TABLE [TempTable]
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[p].[ParentID]
-FROM
-	[Parent] [p]
-
-BeforeExecute
--- SqlCe
-
 CREATE TABLE [TempTable]
 (
 	[ID] Int NOT NULL
@@ -33,15 +25,6 @@ SELECT 4 UNION ALL
 SELECT 5 UNION ALL
 SELECT 6 UNION ALL
 SELECT 7
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t].[ID]
-FROM
-	[Parent] [p]
-		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 BeforeExecute
 -- SqlCe

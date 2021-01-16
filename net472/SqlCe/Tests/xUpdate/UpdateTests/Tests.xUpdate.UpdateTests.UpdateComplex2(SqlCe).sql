@@ -54,24 +54,6 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-SELECT TOP (@take)
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
-FROM
-	[Person] [_]
-WHERE
-	[_].[PersonID] = @id
-
-BeforeExecute
--- SqlCe
 
 DELETE FROM
 	[Person]

@@ -34,20 +34,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_SkipCustom_Table] [t]
-WHERE
-	[t].[Id] = 1
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(3) -- String
@@ -63,20 +49,6 @@ VALUES
 	@Id,
 	@Name
 )
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t].[Id],
-	[t].[Name],
-	[t].[Age]
-FROM
-	[PR_1598_SkipCustom_Table] [t]
-WHERE
-	[t].[Id] = 2
 
 BeforeExecute
 -- SqlCe

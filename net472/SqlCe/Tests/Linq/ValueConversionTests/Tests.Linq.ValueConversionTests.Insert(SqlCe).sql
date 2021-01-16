@@ -38,26 +38,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 1
-
-BeforeExecute
--- SqlCe
 
 INSERT INTO [ValueConversion]
 (
@@ -75,26 +55,6 @@ VALUES
 	'Value2',
 	'N'
 )
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 2
 
 BeforeExecute
 -- SqlCe
@@ -141,34 +101,6 @@ VALUES
 	@BoolValue,
 	@DateTimeNullable
 )
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 3
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	Count(*)
-FROM
-	[ValueConversion] [t1]
 
 BeforeExecute
 -- SqlCe

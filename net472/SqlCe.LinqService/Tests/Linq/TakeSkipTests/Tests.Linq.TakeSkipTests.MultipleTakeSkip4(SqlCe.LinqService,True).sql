@@ -139,21 +139,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 3
-DECLARE @take_2 Int -- Int32
-SET     @take_2 = 2
-
-SELECT
-	[t1].[Value]
-FROM
-	[TakeSkipClass] [t1]
-ORDER BY
-	[t1].[Value]
-OFFSET @skip_1 ROWS FETCH NEXT @take_2 ROWS ONLY 
-
-BeforeExecute
--- SqlCe
 
 DROP TABLE [TakeSkipClass]
 

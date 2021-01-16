@@ -50,13 +50,5 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
-	Count(*)
-FROM
-	[Parent564] [t1]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [Parent564]
 

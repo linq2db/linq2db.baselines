@@ -15,18 +15,5 @@ CREATE TABLE [CustomerBase]
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[cb].[Id],
-	[cb].[Name],
-	[cb].[ContactEmail],
-	Coalesce([cb].[Enabled], 0)
-FROM
-	[CustomerBase] [cb]
-WHERE
-	[cb].[ClientType] = 'Client'
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [CustomerBase]
 

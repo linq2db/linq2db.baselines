@@ -30,21 +30,6 @@ SELECT 'Value9'
 
 BeforeExecute
 -- SqlCe
-DECLARE @skip_3 Int -- Int32
-SET     @skip_3 = 3
-DECLARE @skip_4 Int -- Int32
-SET     @skip_4 = 1
-
-SELECT
-	[t1].[Value]
-FROM
-	[TakeSkipClass] [t1]
-ORDER BY
-	[t1].[Value]
-OFFSET @skip_3 ROWS FETCH NEXT @skip_4 ROWS ONLY 
-
-BeforeExecute
--- SqlCe
 
 DROP TABLE [TakeSkipClass]
 

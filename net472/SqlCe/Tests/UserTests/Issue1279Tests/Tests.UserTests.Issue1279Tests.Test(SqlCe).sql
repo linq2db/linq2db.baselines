@@ -25,17 +25,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t1].[Id],
-	[t1].[CharFld]
-FROM
-	[Issue1279Table] [t1]
-
-BeforeExecute
--- SqlCe
 
 DROP TABLE [Issue1279Table]
 

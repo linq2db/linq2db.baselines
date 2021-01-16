@@ -25,17 +25,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[t1].[event_id],
-	[t1].[event_description]
-FROM
-	[Issue1403Tests_2] [t1]
-
-BeforeExecute
--- SqlCe
 
 DROP TABLE [Issue1403Tests_2]
 

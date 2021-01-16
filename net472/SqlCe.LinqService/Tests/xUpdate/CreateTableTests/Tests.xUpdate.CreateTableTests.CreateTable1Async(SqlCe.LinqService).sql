@@ -19,16 +19,5 @@ CREATE TABLE [TestTable]
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[ID],
-	[t1].[Field1],
-	[t1].[Field2],
-	[t1].[CreatedOn]
-FROM
-	[TestTable] [t1]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [TestTable]
 

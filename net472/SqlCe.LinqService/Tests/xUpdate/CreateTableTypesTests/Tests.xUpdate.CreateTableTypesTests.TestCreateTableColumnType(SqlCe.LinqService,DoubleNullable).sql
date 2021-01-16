@@ -46,16 +46,5 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[Id],
-	[t1].[DoubleNullable]
-FROM
-	[CreateTableTypes] [t1]
-ORDER BY
-	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [CreateTableTypes]
 

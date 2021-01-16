@@ -41,16 +41,6 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
-	Count(*)
-FROM
-	[GrandChild] [gc]
-WHERE
-	[gc].[ParentID] = 1
-
-BeforeExecute
--- SqlCe
-
 DELETE FROM
 	[GrandChild]
 WHERE
@@ -67,16 +57,6 @@ WHERE
 			[GrandChild].[ChildID] = [gc].[ChildID] AND
 			[GrandChild].[GrandChildID] = [gc].[GrandChildID]
 	)
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	Count(*)
-FROM
-	[GrandChild] [gc]
-WHERE
-	[gc].[ParentID] = 1
 
 BeforeExecute
 -- SqlCe

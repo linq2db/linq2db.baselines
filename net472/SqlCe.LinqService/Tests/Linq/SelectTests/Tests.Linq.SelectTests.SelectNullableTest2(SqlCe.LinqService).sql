@@ -50,25 +50,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[BinaryValue],
-	[_].[SmallIntValue],
-	[_].[StringValue]
-FROM
-	[LinqDataTypes] [_]
-WHERE
-	[_].[ID] = 1000
-
-BeforeExecute
--- SqlCe
 
 DELETE FROM
 	[LinqDataTypes]

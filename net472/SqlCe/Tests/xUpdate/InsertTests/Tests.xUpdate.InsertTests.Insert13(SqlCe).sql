@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-SELECT
-	Max([t].[PersonID])
-FROM
-	[Person] [t]
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [Person]
 (
 	[FirstName],

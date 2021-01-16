@@ -41,24 +41,6 @@ FROM
 	[temp_table1] [t1]
 
 BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[ID],
-	[t1].[Value]
-FROM
-	[temp_table1] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[ID],
-	[t1].[Value]
-FROM
-	[temp_table2] [t1]
-
-BeforeExecute
 -- SqlCe (asynchronously)
 
 INSERT INTO [temp_table1]

@@ -26,27 +26,5 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT TOP (1)
-	[_].[Id],
-	[_].[BlobValue]
-FROM
-	[BlobClass] [_]
-WHERE
-	[_].[Id] = 1
-
-BeforeExecute
--- SqlCe
-
-SELECT TOP (1)
-	[_].[Id],
-	[_].[BlobValue]
-FROM
-	[BlobClass] [_]
-WHERE
-	[_].[Id] = 1
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [BlobClass]
 

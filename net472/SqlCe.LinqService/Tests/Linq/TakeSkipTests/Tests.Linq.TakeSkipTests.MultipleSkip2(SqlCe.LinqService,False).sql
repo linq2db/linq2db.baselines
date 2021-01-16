@@ -70,27 +70,5 @@ VALUES
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[Value]
-FROM
-	[TakeSkipClass] [t1]
-ORDER BY
-	[t1].[Value]
-OFFSET 3 ROWS
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[Value]
-FROM
-	[TakeSkipClass] [t1]
-ORDER BY
-	[t1].[Value]
-OFFSET 4 ROWS
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [TakeSkipClass]
 

@@ -49,22 +49,6 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL
 
 BeforeExecute
 -- SqlCe
-DECLARE @BoolValue NVarChar -- String
-SET     @BoolValue = 'Y'
-
-SELECT
-	[t1].[Enum]
-FROM
-	[ValueConversion] [t1]
-		INNER JOIN (
-			SELECT
-				[t2].[BoolValue]
-			FROM
-				[ValueConversion] [t2]
-		) [t2_1] ON [t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue
-
-BeforeExecute
--- SqlCe
 
 DROP TABLE [ValueConversion]
 

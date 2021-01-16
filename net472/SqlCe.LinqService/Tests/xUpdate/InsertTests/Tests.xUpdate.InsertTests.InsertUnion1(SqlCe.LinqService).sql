@@ -35,16 +35,6 @@ FROM
 BeforeExecute
 -- SqlCe
 
-SELECT
-	Count(*)
-FROM
-	[Parent] [c_1]
-WHERE
-	[c_1].[ParentID] > 1000
-
-BeforeExecute
--- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE

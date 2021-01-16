@@ -40,28 +40,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-
-SELECT
-	Count(*)
-FROM
-	[xxPerson] [t1]
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
-FROM
-	[xxPerson] [t1]
-
-BeforeExecute
--- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -69,14 +47,6 @@ DELETE FROM
 	[xxPerson]
 WHERE
 	[xxPerson].[PersonID] = @ID
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	Count(*)
-FROM
-	[xxPerson] [t1]
 
 BeforeExecute
 -- SqlCe

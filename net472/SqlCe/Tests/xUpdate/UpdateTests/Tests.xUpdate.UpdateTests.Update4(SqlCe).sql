@@ -27,18 +27,6 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
-SELECT
-	Count(*)
-FROM
-	[Child] [c_1]
-WHERE
-	[c_1].[ChildID] = @id
-
-BeforeExecute
--- SqlCe
-DECLARE @id Int -- Int32
-SET     @id = 1001
-
 UPDATE
 	[Child]
 SET
@@ -56,18 +44,6 @@ WHERE
 			[Child].[ParentID] = [c_1].[ParentID] AND
 			[Child].[ChildID] = [c_1].[ChildID]
 	)
-
-BeforeExecute
--- SqlCe
-DECLARE @ChildID Int -- Int32
-SET     @ChildID = 1002
-
-SELECT
-	Count(*)
-FROM
-	[Child] [c_1]
-WHERE
-	[c_1].[ChildID] = @ChildID
 
 BeforeExecute
 -- SqlCe
