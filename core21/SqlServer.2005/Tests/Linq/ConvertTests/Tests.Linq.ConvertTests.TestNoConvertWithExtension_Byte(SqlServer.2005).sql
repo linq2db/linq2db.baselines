@@ -56,33 +56,6 @@ SELECT 1,0,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[x].[Id],
-	[x].[Byte],
-	[x].[SByte],
-	[x].[Int16],
-	[x].[UInt16],
-	[x].[Int32],
-	[x].[UInt32],
-	[x].[Int64],
-	[x].[UInt64],
-	[x].[ByteN],
-	[x].[SByteN],
-	[x].[Int16N],
-	[x].[UInt16N],
-	[x].[Int32N],
-	[x].[UInt32N],
-	[x].[Int64N],
-	[x].[UInt64N]
-FROM
-	[IntegerConverts] [x]
-		INNER JOIN [IntegerConverts] [y] ON [y].[Byte] = [x].[Byte]
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NOT NULL)
 	DROP TABLE [IntegerConverts]

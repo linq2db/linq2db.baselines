@@ -14,18 +14,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	DataLength([t].[BinaryValue])
-FROM
-	[LinqDataTypes] [t]
-WHERE
-	[t].[ID] = 1
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @BinaryValue VarBinary(8000) -- Binary
 SET     @BinaryValue = NULL
 

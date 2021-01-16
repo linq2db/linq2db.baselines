@@ -70,26 +70,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 1
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Value1 NVarChar(200) -- String
 SET     @Value1 = N'{"some":"updated2}"}'
 DECLARE @Value2 NVarChar(200) -- String
@@ -127,26 +107,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 2
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Value1 NVarChar(200) -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarChar(200) -- String
@@ -181,26 +141,6 @@ FROM
 	[ValueConversion] [t1]
 WHERE
 	[t1].[Id] = @Id
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[e].[Id],
-	[e].[Value1],
-	[e].[Value2],
-	[e].[Enum],
-	[e].[EnumNullable],
-	[e].[EnumWithNull],
-	[e].[EnumWithNullDeclarative],
-	[e].[BoolValue],
-	[e].[DateTimeNullable]
-FROM
-	[ValueConversion] [e]
-WHERE
-	[e].[Id] = 3
 
 BeforeExecute
 -- SqlServer.2005

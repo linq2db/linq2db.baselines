@@ -46,14 +46,6 @@ COMMIT
 
 BeforeExecute
 -- SqlServer.2005
-
-SELECT
-	Count(*)
-FROM
-	[InheritanceParent] [t1]
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Data_1 Int -- Int32
 SET     @Data_1 = 1
 DECLARE @Key1 Int -- Int32
@@ -90,12 +82,4 @@ BEGIN
 END
 
 COMMIT
-
-BeforeExecute
--- SqlServer.2005
-
-SELECT
-	Count(*)
-FROM
-	[InheritanceParent] [t1]
 

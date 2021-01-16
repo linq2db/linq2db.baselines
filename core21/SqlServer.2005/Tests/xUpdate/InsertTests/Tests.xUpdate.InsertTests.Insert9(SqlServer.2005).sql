@@ -54,18 +54,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @id Int -- Int32
-SET     @id = 1001
-
-SELECT
-	Count(*)
-FROM
-	[Child] [c_1]
-WHERE
-	[c_1].[ParentID] = @id
-
-BeforeExecute
--- SqlServer.2005
 
 DELETE [t1]
 FROM

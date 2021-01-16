@@ -6,26 +6,6 @@ IF (OBJECT_ID(N'[DropTableTest]', N'U') IS NOT NULL)
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	SCHEMA_NAME()
-FROM
-	[LinqDataTypes] [_]
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	DB_NAME()
-FROM
-	[LinqDataTypes] [_]
-
-BeforeExecute
--- SqlServer.2005
 
 CREATE TABLE [DropTableTest]
 (
@@ -47,21 +27,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t1].[ID]
-FROM
-	[TestData2005].[dbo].[DropTableTest] [t1]
-
-BeforeExecute
--- SqlServer.2005
-
 DROP TABLE [TestData2005].[dbo].[DropTableTest]
-
-BeforeExecute
--- SqlServer.2005
-
-SELECT
-	[t1].[ID]
-FROM
-	[TestData2005].[dbo].[DropTableTest] [t1]
 

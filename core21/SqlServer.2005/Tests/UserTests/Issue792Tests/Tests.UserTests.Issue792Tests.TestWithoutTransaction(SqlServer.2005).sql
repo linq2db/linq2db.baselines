@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	Count(*)
-FROM
-	[AllTypes] [t1]
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	SCHEMA_NAME()
-FROM
-	[LinqDataTypes] [_]
-
-BeforeExecute
--- SqlServer.2005
-
 select @@version
 
 BeforeExecute
@@ -287,14 +269,6 @@ DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestData2005].[dbo].[VariableResults]
-
-BeforeExecute
--- SqlServer.2005
-
-SELECT
-	Count(*)
-FROM
-	[AllTypes] [t1]
 
 BeforeExecute
 -- SqlServer.2005

@@ -42,44 +42,6 @@ SELECT 10,100,1000,10000
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[r].[Value_1]
-FROM
-	(
-		SELECT
-			[t1].[Id],
-			[t1].[Value_1]
-		FROM
-			(
-				SELECT
-					[t].[Id],
-					[t].[Value1] as [Value_1]
-				FROM
-					[SampleData] [t]
-				WHERE
-					[t].[Id] % 2 = 0
-				EXCEPT
-				SELECT
-					[t_1].[Id],
-					[t_1].[Value2] / 10 as [Value_1]
-				FROM
-					[SampleData] [t_1]
-				WHERE
-					[t_1].[Id] % 4 = 0
-			) [t1]
-		EXCEPT
-		SELECT
-			[t_2].[Id],
-			[t_2].[Value1] as [Value_1]
-		FROM
-			[SampleData] [t_2]
-		WHERE
-			[t_2].[Id] % 6 = 0
-	) [r]
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[SampleData]', N'U') IS NOT NULL)
 	DROP TABLE [SampleData]
 

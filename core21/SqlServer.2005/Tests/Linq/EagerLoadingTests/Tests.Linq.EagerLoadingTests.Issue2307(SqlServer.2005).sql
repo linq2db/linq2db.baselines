@@ -57,25 +57,6 @@ SELECT 4,2
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[sheet].[Id],
-	[detail].[Id],
-	[detail].[AttendanceSheetId]
-FROM
-	[AttendanceSheet] [sheet]
-		INNER JOIN [AttendanceSheetRow] [detail] ON [detail].[AttendanceSheetId] = [sheet].[Id]
-
-BeforeExecute
--- SqlServer.2005
-
-SELECT
-	[sheet].[Id]
-FROM
-	[AttendanceSheet] [sheet]
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[AttendanceSheetRow]', N'U') IS NOT NULL)
 	DROP TABLE [AttendanceSheetRow]
 

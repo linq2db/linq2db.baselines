@@ -30,15 +30,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[t].[ID]
-FROM
-	[Parent] [p]
-		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 

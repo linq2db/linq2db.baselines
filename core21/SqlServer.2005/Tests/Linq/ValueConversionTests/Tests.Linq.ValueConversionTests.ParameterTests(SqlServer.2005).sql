@@ -51,20 +51,6 @@ SELECT 10,NULL,NULL,N'Value1','Value2','Value2','Value2','N',NULL
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @testedList NVarChar(200) -- String
-SET     @testedList = N'[{"Value":"Value1"}]'
-
-SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2]
-FROM
-	[ValueConversion] [t]
-WHERE
-	@testedList = [t].[Value2]
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
 	DROP TABLE [ValueConversion]

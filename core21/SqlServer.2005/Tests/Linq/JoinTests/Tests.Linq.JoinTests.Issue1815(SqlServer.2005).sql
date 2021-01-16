@@ -61,42 +61,6 @@ SELECT 2,4,3
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
-	[x].[InMaxQuantity]
-FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
-WHERE
-	[x].[InId] = 1
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
-
-SELECT TOP (@take)
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
-	[x].[InMaxQuantity]
-FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
-WHERE
-	[x].[InId] = 2
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[EdtLink]', N'U') IS NOT NULL)
 	DROP TABLE [EdtLink]

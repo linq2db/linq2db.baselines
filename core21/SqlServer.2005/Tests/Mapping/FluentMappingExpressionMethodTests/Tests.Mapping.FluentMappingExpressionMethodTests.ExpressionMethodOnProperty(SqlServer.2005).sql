@@ -46,16 +46,6 @@ SELECT 20,120
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	Count(*)
-FROM
-	[InstanceClass] [t]
-WHERE
-	Convert(NVarChar(11), [t].[Id]) + Convert(NVarChar(11), [t].[Value]) = Convert(NVarChar(11), [t].[Id]) + Convert(VarChar(11), [t].[Value])
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[InstanceClass]', N'U') IS NOT NULL)
 	DROP TABLE [InstanceClass]
 

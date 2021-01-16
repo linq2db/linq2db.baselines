@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-
-SELECT
-	Max([_].[ID])
-FROM
-	[AllTypes] [_]
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 
@@ -366,22 +358,6 @@ VALUES
 	@NChar_1,
 	@NChar_1
 )
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @lastId Int -- Int32
-SET     @lastId = 2
-
-SELECT
-	[_].[ID],
-	[_].[char20DataType],
-	[_].[ncharDataType]
-FROM
-	[AllTypes] [_]
-WHERE
-	[_].[ID] > @lastId
-ORDER BY
-	[_].[ID]
 
 BeforeExecute
 -- SqlServer.2005

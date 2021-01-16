@@ -62,20 +62,6 @@ SELECT 4,6,N'Tag6'
 BeforeExecute
 -- SqlServer.2005
 
-SELECT
-	[fact_1].[Id],
-	[leftTag].[Id],
-	[leftTag].[FactId],
-	[leftTag].[Name]
-FROM
-	[Tag] [leftTag]
-		FULL JOIN [Fact] [fact_1] ON [leftTag].[FactId] = [fact_1].[Id]
-WHERE
-	([fact_1].[Id] > 3 OR [leftTag].[FactId] > 3)
-
-BeforeExecute
--- SqlServer.2005
-
 IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
 	DROP TABLE [Tag]
 

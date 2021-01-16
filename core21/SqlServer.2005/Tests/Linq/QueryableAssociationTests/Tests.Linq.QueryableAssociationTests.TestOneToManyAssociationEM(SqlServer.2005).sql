@@ -80,32 +80,6 @@ SELECT 2,N'French'
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[x_2].[Id],
-	(
-		SELECT
-			Count(*)
-		FROM
-			[User] [x]
-		WHERE
-			[x].[UserGroupId] = [x_2].[Id] AND [x].[LanguageId] = 1
-	),
-	(
-		SELECT
-			Count(*)
-		FROM
-			[User] [x_1]
-		WHERE
-			[x_1].[UserGroupId] = [x_2].[Id] AND [x_1].[LanguageId] = 2
-	)
-FROM
-	[UserGroup] [x_2]
-
-BeforeExecute
--- SqlServer.2005
 
 IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
 	DROP TABLE [Language]

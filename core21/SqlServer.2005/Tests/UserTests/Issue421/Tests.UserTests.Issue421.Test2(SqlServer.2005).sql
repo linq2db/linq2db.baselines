@@ -26,32 +26,10 @@ VALUES
 BeforeExecute
 -- SqlServer.2005
 
-SELECT TOP (1)
-	[_].[Id],
-	[_].[BlobValue]
-FROM
-	[BlobClass] [_]
-WHERE
-	[_].[Id] = 1
-
-BeforeExecute
--- SqlServer.2005
-
 UPDATE
 	[_]
 SET
 	[_].[BlobValue] = 0x030201
-FROM
-	[BlobClass] [_]
-WHERE
-	[_].[Id] = 1
-
-BeforeExecute
--- SqlServer.2005
-
-SELECT TOP (1)
-	[_].[Id],
-	[_].[BlobValue]
 FROM
 	[BlobClass] [_]
 WHERE
