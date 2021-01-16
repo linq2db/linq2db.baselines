@@ -5,8 +5,8 @@ SELECT bitDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 Boolean
-SET     @p0 = False
+DECLARE @p Boolean
+SET     @p = False
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND bitDataType IS NULL OR @p IS NOT NULL AND bitDataType = @p
 
@@ -19,8 +19,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND bitDataType IS NULL OR @p IS NOT 
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 Boolean
-SET     @p0 = False
+DECLARE @p Boolean
+SET     @p = False
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND bitDataType IS NULL OR @p IS NOT NULL AND bitDataType = @p
 
@@ -57,8 +57,8 @@ SELECT smallintDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 SmallInt -- Int16
-SET     @p0 = NULL
+DECLARE @p SmallInt -- Int16
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS NOT NULL AND smallintDataType = @p
 
@@ -71,8 +71,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS NOT NULL AND smallintDataType = @p
 
@@ -109,8 +109,8 @@ SELECT decimalDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarChar -- AnsiString
-SET     @p0 = NULL
+DECLARE @p VarChar -- AnsiString
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
 
@@ -123,8 +123,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
 
@@ -161,8 +161,8 @@ SELECT intDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 Integer -- Int32
-SET     @p0 = NULL
+DECLARE @p Integer -- Int32
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT NULL AND intDataType = @p
 
@@ -175,8 +175,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT 
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT NULL AND intDataType = @p
 
@@ -213,8 +213,8 @@ SELECT tinyintDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 TinyInt -- SByte
-SET     @p0 = NULL
+DECLARE @p TinyInt -- SByte
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS NOT NULL AND tinyintDataType = @p
 
@@ -227,8 +227,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS NOT NULL AND tinyintDataType = @p
 
@@ -265,8 +265,8 @@ SELECT moneyDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND moneyDataType IS NULL OR @p IS NOT NULL AND moneyDataType = @p
 
@@ -279,8 +279,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND moneyDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND moneyDataType IS NULL OR @p IS NOT NULL AND moneyDataType = @p
 
@@ -317,8 +317,8 @@ SELECT floatDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 Double
-SET     @p0 = NULL
+DECLARE @p Double
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NOT NULL AND floatDataType = @p
 
@@ -331,8 +331,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NOT NULL AND floatDataType = @p
 
@@ -369,8 +369,8 @@ SELECT realDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 Single
-SET     @p0 = NULL
+DECLARE @p Single
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND realDataType IS NULL OR @p IS NOT NULL AND realDataType = @p
 
@@ -383,8 +383,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND realDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND realDataType IS NULL OR @p IS NOT NULL AND realDataType = @p
 
@@ -421,8 +421,8 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 Date -- DateTime
-SET     @p0 = NULL
+DECLARE @p Date -- DateTime
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
@@ -435,8 +435,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
@@ -473,8 +473,8 @@ SELECT charDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 Char -- AnsiStringFixedLength
-SET     @p0 = NULL
+DECLARE @p Char -- AnsiStringFixedLength
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
@@ -487,8 +487,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
@@ -525,8 +525,8 @@ SELECT varcharDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarChar -- AnsiString
-SET     @p0 = NULL
+DECLARE @p VarChar -- AnsiString
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
 
@@ -539,8 +539,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
 
@@ -577,8 +577,8 @@ SELECT textDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 LongVarChar -- AnsiString
-SET     @p0 = NULL
+DECLARE @p LongVarChar -- AnsiString
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
 
@@ -591,8 +591,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
 
@@ -629,8 +629,8 @@ SELECT ncharDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 WChar -- StringFixedLength
-SET     @p0 = NULL
+DECLARE @p WChar -- StringFixedLength
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND ncharDataType IS NULL OR @p IS NOT NULL AND ncharDataType = @p
 
@@ -643,8 +643,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND ncharDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND ncharDataType IS NULL OR @p IS NOT NULL AND ncharDataType = @p
 
@@ -681,8 +681,8 @@ SELECT nvarcharDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND nvarcharDataType IS NULL OR @p IS NOT NULL AND nvarcharDataType = @p
 
@@ -695,8 +695,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND nvarcharDataType IS NULL OR @p IS
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND nvarcharDataType IS NULL OR @p IS NOT NULL AND nvarcharDataType = @p
 
@@ -733,8 +733,8 @@ SELECT ntextDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 LongVarWChar -- String
-SET     @p0 = NULL
+DECLARE @p LongVarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND ntextDataType IS NULL OR @p IS NOT NULL AND ntextDataType = @p
 
@@ -747,8 +747,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND ntextDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND ntextDataType IS NULL OR @p IS NOT NULL AND ntextDataType = @p
 
@@ -785,8 +785,8 @@ SELECT binaryDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
 
@@ -799,8 +799,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
 
@@ -837,8 +837,8 @@ SELECT varbinaryDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarBinary -- Binary
-SET     @p0 = NULL
+DECLARE @p VarBinary -- Binary
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
@@ -851,8 +851,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p I
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
@@ -889,8 +889,8 @@ SELECT imageDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND imageDataType IS NULL OR @p IS NOT NULL AND imageDataType = @p
 
@@ -903,8 +903,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND imageDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND imageDataType IS NULL OR @p IS NOT NULL AND imageDataType = @p
 
@@ -941,8 +941,8 @@ SELECT oleobjectDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 Variant -- Object
-SET     @p0 = NULL
+DECLARE @p Variant -- Object
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND oleobjectDataType IS NULL OR @p IS NOT NULL AND oleobjectDataType = @p
 
@@ -955,8 +955,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND oleobjectDataType IS NULL OR @p I
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND oleobjectDataType IS NULL OR @p IS NOT NULL AND oleobjectDataType = @p
 
@@ -986,8 +986,8 @@ SELECT uniqueidentifierDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 Guid
-SET     @p0 = NULL
+DECLARE @p Guid
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND uniqueidentifierDataType IS NULL OR @p IS NOT NULL AND uniqueidentifierDataType = @p
 
@@ -1000,8 +1000,8 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND uniqueidentifierDataType IS NULL 
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p0 VarWChar -- String
-SET     @p0 = NULL
+DECLARE @p VarWChar -- String
+SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND uniqueidentifierDataType IS NULL OR @p IS NOT NULL AND uniqueidentifierDataType = @p
 
