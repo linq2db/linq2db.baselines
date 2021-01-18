@@ -363,33 +363,6 @@ SYS.SETMODFLG
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @DBNAME Varchar2 -- String
-SET     @DBNAME = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @DBOWNER Varchar2 -- String
-SET     @DBOWNER = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @STATUS Varchar2 -- String
-SET     @STATUS = NULL
-
-SYS.SUBPTXT
-
-BeforeExecute
--- Oracle.Managed Oracle12
 
 SYSTEM.ADDISSUE792RECORD
 
@@ -806,19 +779,6 @@ XDB.XDB$PATCHUPSCHEMA
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-
-XDB.XDB_DATASTORE_PROC
-
-BeforeExecute
--- Oracle.Managed Oracle12
 DECLARE @OLD_VERSION Varchar2 -- String
 SET     @OLD_VERSION = ''
 
@@ -936,15 +896,6 @@ MDSYS.BITOR
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @SZ Decimal(22)
-SET     @SZ = 0
-DECLARE @SZ Decimal(22)
-SET     @SZ = 0
-
-MDSYS.ELOCATIONSETJVMHEAPSIZE
-
-BeforeExecute
--- Oracle.Managed Oracle12
 
 MDSYS.ENABLEGEORASTER
 
@@ -990,19 +941,6 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 DVSYS.MACOLS_INIT_SESSION
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @P_FACTOR Varchar2 -- String
-SET     @P_FACTOR = ''
-DECLARE @P_FACTOR Varchar2 -- String
-SET     @P_FACTOR = ''
-DECLARE @P_VALUE Varchar2 -- String
-SET     @P_VALUE = ''
-DECLARE @P_VALUE Varchar2 -- String
-SET     @P_VALUE = ''
-
-DVSYS.SET_FACTOR
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -1321,33 +1259,6 @@ SYS.SETMODFLG
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @DBNAME Varchar2 -- String
-SET     @DBNAME = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @DBOWNER Varchar2 -- String
-SET     @DBOWNER = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @STATUS Varchar2 -- String
-SET     @STATUS = NULL
-
-SYS.SUBPTXT
-
-BeforeExecute
--- Oracle.Managed Oracle12
 
 OUTLN.ORA$GRANT_SYS_SELECT
 
@@ -1588,19 +1499,6 @@ XDB.XDB$PATCHUPSCHEMA
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-
-XDB.XDB_DATASTORE_PROC
-
-BeforeExecute
--- Oracle.Managed Oracle12
 DECLARE @OLD_VERSION Varchar2 -- String
 SET     @OLD_VERSION = ''
 
@@ -1718,15 +1616,6 @@ MDSYS.BITOR
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @SZ Decimal(22)
-SET     @SZ = 0
-DECLARE @SZ Decimal(22)
-SET     @SZ = 0
-
-MDSYS.ELOCATIONSETJVMHEAPSIZE
-
-BeforeExecute
--- Oracle.Managed Oracle12
 
 MDSYS.ENABLEGEORASTER
 
@@ -1772,19 +1661,6 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 DVSYS.MACOLS_INIT_SESSION
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @P_FACTOR Varchar2 -- String
-SET     @P_FACTOR = ''
-DECLARE @P_FACTOR Varchar2 -- String
-SET     @P_FACTOR = ''
-DECLARE @P_VALUE Varchar2 -- String
-SET     @P_VALUE = ''
-DECLARE @P_VALUE Varchar2 -- String
-SET     @P_VALUE = ''
-
-DVSYS.SET_FACTOR
 
 BeforeExecute
 -- Oracle.Managed Oracle12
