@@ -150,46 +150,6 @@ SYS.SUBPTXT2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @DBNAME Varchar2 -- String
-SET     @DBNAME = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @DBOWNER Varchar2 -- String
-SET     @DBOWNER = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @STATUS Varchar2 -- String
-SET     @STATUS = NULL
-
-SYS.SUBPTXT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE_IN Varchar2 -- String
-SET     @NEW_TABLESPACE_IN = ''
-
-SYS.SET_TABLESPACE
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @OBJECT_SCHEMA Varchar2 -- String
 SET     @OBJECT_SCHEMA = ''
 DECLARE @OBJECT_NAME Varchar2 -- String
@@ -1330,19 +1290,6 @@ CTXSYS.DRI_MOVE_CTXSYS
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-
-XDB.XDB_DATASTORE_PROC
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @SCHREF Varchar2 -- String
 SET     @SCHREF = NULL
 DECLARE @NAMESP Varchar2 -- String
@@ -1658,46 +1605,6 @@ DECLARE @TXT Varchar2 -- String
 SET     @TXT = ''
 
 SYS.SUBPTXT2
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @DBNAME Varchar2 -- String
-SET     @DBNAME = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @DBOWNER Varchar2 -- String
-SET     @DBOWNER = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @STATUS Varchar2 -- String
-SET     @STATUS = NULL
-
-SYS.SUBPTXT
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE Varchar2 -- String
-SET     @NEW_TABLESPACE = ''
-DECLARE @NEW_TABLESPACE_IN Varchar2 -- String
-SET     @NEW_TABLESPACE_IN = ''
-
-SYS.SET_TABLESPACE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -2657,19 +2564,6 @@ DECLARE @PRINT_ONLY Varchar2 -- String
 SET     @PRINT_ONLY = NULL
 
 CTXSYS.DRI_MOVE_CTXSYS
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @RID Varchar2(256) -- String
-SET     @RID = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-DECLARE @OUTLOB Clob -- Object
-SET     @OUTLOB = ''
-
-XDB.XDB_DATASTORE_PROC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
