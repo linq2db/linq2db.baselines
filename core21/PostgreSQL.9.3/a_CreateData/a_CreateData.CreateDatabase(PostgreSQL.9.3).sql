@@ -810,6 +810,11 @@ COMMENT ON COLUMN             "Issue2023"."PersonID" IS 'This is the Issue2023.P
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+DROP FUNCTION IF EXISTS "SchemaName"."fnTest"(INT)
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DROP SCHEMA IF EXISTS "SchemaName"
 
 BeforeExecute
