@@ -803,6 +803,11 @@ BeforeExecute
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+DROP FUNCTION IF EXISTS "SchemaName"."fnTest"(INT)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 DROP SCHEMA IF EXISTS "SchemaName"
 
 BeforeExecute
