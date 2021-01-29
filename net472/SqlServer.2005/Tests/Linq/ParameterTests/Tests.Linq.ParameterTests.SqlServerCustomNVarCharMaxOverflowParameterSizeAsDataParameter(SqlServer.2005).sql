@@ -11,7 +11,8 @@ CREATE TABLE [AllTypesCustomMaxLength]
 BeforeExecute
 -- SqlServer.2005
 DECLARE @NVarChar NVarChar(5000) -- String
-SET     @NVarChar = N'яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя'-- value above truncated for logging, actual length is 5000
+SET     @NVarChar = N'яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя'
+-- value above truncated for logging, actual length is 5000
 
 INSERT INTO [AllTypesCustomMaxLength]
 (
