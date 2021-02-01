@@ -4,7 +4,6 @@
 SELECT
 	Count(*),
 	COUNT([c_1].[ChildID]),
-	COUNT([c_1].[ChildID]),
 	COUNT(ALL [c_1].[ChildID]),
 	COUNT(DISTINCT [c_1].[ChildID])
 FROM
