@@ -2,11 +2,11 @@
 -- SqlServer.2017
 
 SELECT
-	[p_1].[Value1],
-	[p_1].[Value1] * 100,
-	[p_1].[ParentID]
+	[p].[Value1],
+	[p].[Value1] * 100,
+	[p].[ParentID]
 FROM
-	[Parent] [p_1]
+	[Parent] [p]
 WHERE
-	[p_1].[ParentID] = 1 AND [p_1].[Value1] * 100 > 0
+	[p].[ParentID] = 1 AND [p].[Value1] * 100 > 0
 

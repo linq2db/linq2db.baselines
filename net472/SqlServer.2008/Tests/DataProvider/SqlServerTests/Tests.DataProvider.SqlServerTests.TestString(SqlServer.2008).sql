@@ -31,7 +31,7 @@ SELECT Cast(NULL    as varchar(20))
 BeforeExecute
 -- SqlServer.2008
 
-SELECT COUNT(*) FROM sys.Databases WHERE database_id = DB_ID() AND collation_name LIKE '%_SC'
+SELECT COUNT(*) FROM sys.databases WHERE database_id = DB_ID() AND collation_name LIKE '%_SC'
 
 BeforeExecute
 -- SqlServer.2008

@@ -23,12 +23,12 @@ BeforeExecute
 
 
 				SELECT
-					TABLE_CATALOG + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                          as TableID,
+					TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
 					TABLE_CATALOG                                                                  as CatalogName,
 					TABLE_SCHEMA                                                                   as SchemaName,
 					TABLE_NAME                                                                     as TableName,
 					CASE WHEN TABLE_TYPE = 'VIEW' THEN 1 ELSE 0 END                                as IsView,
-					ISNULL(CONVERT(varchar(8000), x.Value), '')                                    as Description,
+					ISNULL(CONVERT(varchar(8000), x.value), '')                                    as Description,
 					CASE WHEN TABLE_SCHEMA = 'dbo' THEN 1 ELSE 0 END                               as IsDefaultSchema
 				FROM
 					INFORMATION_SCHEMA.TABLES s
@@ -62,7 +62,7 @@ BeforeExecute
 
 
 				SELECT
-					k.TABLE_CATALOG + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME                          as TableID,
+					k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 					k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
 					k.COLUMN_NAME                                                                        as ColumnName,
 					k.ORDINAL_POSITION                                                                   as Ordinal
@@ -82,7 +82,7 @@ BeforeExecute
 
 
 				SELECT
-					TABLE_CATALOG + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                                               as TableID,
+					TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                                               as TableID,
 					COLUMN_NAME                                                                                         as Name,
 					CASE WHEN IS_NULLABLE = 'YES' THEN 1 ELSE 0 END                                                     as IsNullable,
 					ORDINAL_POSITION                                                                                    as Ordinal,
@@ -90,7 +90,7 @@ BeforeExecute
 					CHARACTER_MAXIMUM_LENGTH                                                                            as Length,
 					ISNULL(NUMERIC_PRECISION, DATETIME_PRECISION)                                                       as [Precision],
 					NUMERIC_SCALE                                                                                       as Scale,
-					ISNULL(CONVERT(varchar(8000), x.Value), '')                                                         as [Description],
+					ISNULL(CONVERT(varchar(8000), x.value), '')                                                         as [Description],
 					COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsIdentity') as IsIdentity,
 					CASE WHEN c.DATA_TYPE = 'timestamp'
 						OR COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsComputed') = 1
@@ -133,7 +133,7 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-					SPECIFIC_CATALOG + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME                          as ProcedureID,
+					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 					SPECIFIC_CATALOG                                                                        as CatalogName,
 					SPECIFIC_SCHEMA                                                                         as SchemaName,
 					SPECIFIC_NAME                                                                           as ProcedureName,
@@ -142,10 +142,10 @@ SELECT
 					CASE WHEN EXISTS(SELECT * FROM sys.objects where name = SPECIFIC_NAME AND type='AF')
 					                                                            THEN 1 ELSE 0 END           as IsAggregateFunction,
 					CASE WHEN SPECIFIC_SCHEMA = 'dbo'                           THEN 1 ELSE 0 END           as IsDefaultSchema,
-					ISNULL(CONVERT(varchar(8000), x.Value), '')                                             as Description
+					ISNULL(CONVERT(varchar(8000), x.value), '')                                             as Description
 				FROM
 					INFORMATION_SCHEMA.ROUTINES
-					LEFT JOIN SYS.EXTENDED_PROPERTIES x
+					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							x.name = 'MS_Description' AND x.class = 1
 
@@ -153,7 +153,7 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-					SPECIFIC_CATALOG + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME                          as ProcedureID,
+					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 					ORDINAL_POSITION                                                                        as Ordinal,
 					PARAMETER_MODE                                                                          as Mode,
 					PARAMETER_NAME                                                                          as ParameterName,
@@ -168,10 +168,10 @@ SELECT
 					USER_DEFINED_TYPE_SCHEMA                                                                as UDTSchema,
 					USER_DEFINED_TYPE_NAME                                                                  as UDTName,
 					1                                                                                       as IsNullable,
-					ISNULL(CONVERT(varchar(8000), x.Value), '')                                             as Description
+					ISNULL(CONVERT(varchar(8000), x.value), '')                                             as Description
 				FROM
 					INFORMATION_SCHEMA.PARAMETERS
-					LEFT JOIN SYS.EXTENDED_PROPERTIES x
+					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							ORDINAL_POSITION = x.minor_id AND
 							x.name = 'MS_Description' AND x.class = 2

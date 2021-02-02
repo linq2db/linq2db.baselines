@@ -278,9 +278,9 @@ SELECT
 	a."First_Name",
 	a."Last_Name",
 	d."Distributor_Name",
-	cp_5."Street_Number",
-	cp_5."Street_Name",
-	cp_5."City_Code",
+	cp."Street_Number",
+	cp."Street_Name",
+	cp."City_Code",
 	cda."Agent_Id",
 	cda."Distributor_Id",
 	cda."Contract_Id",
@@ -293,10 +293,10 @@ SELECT
 	dcp."Distributor_Id",
 	dcp."Commercial_Property_Id",
 	dcp."Distributor_Type_Code",
-	cp_5."Commercial_Property_Id",
-	cp_5."State",
-	cp_5."Zip_Code",
-	cp_5."Zip_Plus_4",
+	cp."Commercial_Property_Id",
+	cp."State",
+	cp."Zip_Code",
+	cp."Zip_Plus_4",
 	cd."Contract_Id",
 	cd."Type_Code",
 	cd."Effective_Date"
@@ -305,7 +305,7 @@ FROM
 		INNER JOIN "Agent" a ON cda."Agent_Id" = a."Agent_Id"
 		INNER JOIN "Distributor" d ON cda."Distributor_Id" = d."Distributor_Id"
 		INNER JOIN "Distributor_Commercial_Propert" dcp ON d."Distributor_Id" = dcp."Distributor_Id"
-		INNER JOIN "Commercial_Property" cp_5 ON dcp."Commercial_Property_Id" = cp_5."Commercial_Property_Id"
+		INNER JOIN "Commercial_Property" cp ON dcp."Commercial_Property_Id" = cp."Commercial_Property_Id"
 		INNER JOIN "Contract_Dates" cd ON cda."Contract_Id" = cd."Contract_Id"
 WHERE
 	cda."Contract_Id" = 198827882 AND

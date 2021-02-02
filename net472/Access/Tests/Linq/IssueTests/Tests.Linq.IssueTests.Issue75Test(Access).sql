@@ -19,44 +19,44 @@ FROM
 				SELECT
 					*
 				FROM
-					[Child] [c2_1]
+					[Child] [c2]
 				WHERE
-					[c2_1].[ParentID] = [c_1].[ParentID]
+					[c2].[ParentID] = [c_1].[ParentID]
 			), True, False) as [c1],
 			Iif((NOT EXISTS(
 				SELECT
 					*
 				FROM
-					[Child] [c2_2]
+					[Child] [c2_1]
 				WHERE
-					[c2_2].[ParentID] <> [c_1].[ParentID]
+					[c2_1].[ParentID] <> [c_1].[ParentID]
 			)), True, False) as [c2],
 			(
 				SELECT
-					Min([c2_3].[ChildID])
+					Min([c2_2].[ChildID])
+				FROM
+					[Child] [c2_2]
+				WHERE
+					[c2_2].[ParentID] = [c_1].[ParentID]
+			) as [AllChildrenMin],
+			(
+				SELECT
+					Max([c2_3].[ChildID])
 				FROM
 					[Child] [c2_3]
 				WHERE
 					[c2_3].[ParentID] = [c_1].[ParentID]
-			) as [AllChildrenMin],
-			(
-				SELECT
-					Max([c2_4].[ChildID])
-				FROM
-					[Child] [c2_4]
-				WHERE
-					[c2_4].[ParentID] = [c_1].[ParentID]
 			) as [AllChildrenMax]
 		FROM
 			[Child] [c_1]
 				LEFT JOIN (
 					SELECT
 						Count(*) as [CountChildren2],
-						[c2_5].[ParentID]
+						[c2_4].[ParentID]
 					FROM
-						[Child] [c2_5]
+						[Child] [c2_4]
 					GROUP BY
-						[c2_5].[ParentID]
+						[c2_4].[ParentID]
 				) [t1] ON ([t1].[ParentID] = [c_1].[ParentID])
 	) [child_1]
 		INNER JOIN [Parent] [parent_1] ON ([child_1].[ParentID] = [parent_1].[ParentID])

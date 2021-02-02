@@ -30,9 +30,9 @@ WITH [CTE1_] ([ChildID])
 AS
 (
 	SELECT
-		[c_2].[ChildID]
+		[c_1].[ChildID]
 	FROM
-		[Child] [c_2]
+		[Child] [c_1]
 )
 SELECT
 	Count(*)
@@ -46,9 +46,9 @@ WITH [CTE1_] ([ChildID])
 AS
 (
 	SELECT
-		[c_2].[ChildID]
+		[c_1].[ChildID]
 	FROM
-		[Child] [c_2]
+		[Child] [c_1]
 )
 SELECT
 	IIF(EXISTS(

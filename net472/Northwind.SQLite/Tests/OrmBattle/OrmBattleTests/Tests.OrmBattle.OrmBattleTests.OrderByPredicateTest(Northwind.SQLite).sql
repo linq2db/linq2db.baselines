@@ -90,9 +90,7 @@ ORDER BY
 	CASE
 		WHEN [o].[Freight] > 0 AND [o].[ShippedDate] IS NOT NULL
 			THEN 1
-		WHEN ([o].[Freight] <= 0 OR [o].[ShippedDate] IS NULL)
-			THEN 0
-		ELSE NULL
+		ELSE 0
 	END,
 	[o].[OrderID]
 
