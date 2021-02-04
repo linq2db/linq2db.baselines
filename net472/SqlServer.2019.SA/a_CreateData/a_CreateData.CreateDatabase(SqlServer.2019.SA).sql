@@ -589,6 +589,7 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2017 BEGIN
 -- SKIP SqlServer.2019 BEGIN
 -- SKIP SqlServer.2019.SA END
+-- SKIP SqlServer.2019.FEC END
 -- SKIP SqlAzure END
 
 ) ON [PRIMARY]
@@ -823,6 +824,7 @@ BeforeExecute
 -- SKIP SqlServer.2017 BEGIN
 -- SKIP SqlServer.2019 BEGIN
 -- SKIP SqlServer.2019.SA END
+-- SKIP SqlServer.2019.FEC END
 -- SKIP SqlServer.2008 END
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
