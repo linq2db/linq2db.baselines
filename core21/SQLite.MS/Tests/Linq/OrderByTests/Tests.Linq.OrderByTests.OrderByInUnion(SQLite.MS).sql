@@ -40,3 +40,32 @@ FROM
 ORDER BY
 	[t2].[ChildID] DESC
 
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t4].[ParentID],
+	[t4].[ChildID]
+FROM
+	(
+		SELECT
+			[t2].[ParentID],
+			[t2].[ChildID]
+		FROM
+			(
+				SELECT
+					[t1].[ParentID],
+					[t1].[ChildID]
+				FROM
+					[Child] [t1]
+			) [t2]
+		UNION ALL
+		SELECT
+			[t3].[ParentID],
+			[t3].[ChildID]
+		FROM
+			[Child] [t3]
+	) [t4]
+ORDER BY
+	[t4].[ChildID]
+
