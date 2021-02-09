@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" nm
 WHERE
-	(nm."FirstName" IS NOT NULL AND Length(nm."FirstName") <> 0)
+	NOT (nm."FirstName" IS NULL OR Length(nm."FirstName") = 0)
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
