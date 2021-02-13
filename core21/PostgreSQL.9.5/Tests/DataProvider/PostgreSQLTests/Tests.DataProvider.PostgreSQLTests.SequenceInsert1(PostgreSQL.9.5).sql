@@ -39,7 +39,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
-SET     @id = 1
+SET     @id = 41
 
 DELETE FROM
 	"SequenceTest1" t1
