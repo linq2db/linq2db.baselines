@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" "nm"
 WHERE
-	("nm"."FirstName" IS NOT NULL AND Char_Length("nm"."FirstName") <> 0)
+	NOT ("nm"."FirstName" IS NULL OR Char_Length("nm"."FirstName") = 0)
 
 BeforeExecute
 -- Firebird3 Firebird
