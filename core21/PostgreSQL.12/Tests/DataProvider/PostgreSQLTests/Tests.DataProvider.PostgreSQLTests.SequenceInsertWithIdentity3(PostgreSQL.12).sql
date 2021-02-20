@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
+ALTER SEQUENCE sequencetestseq RESTART WITH 1
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
 DELETE FROM
 	"SequenceTest3" t1
 WHERE
@@ -41,7 +46,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @id1 Integer -- Int32
-SET     @id1 = 4
+SET     @id1 = 1
 
 DELETE FROM
 	"SequenceTest3" t1
