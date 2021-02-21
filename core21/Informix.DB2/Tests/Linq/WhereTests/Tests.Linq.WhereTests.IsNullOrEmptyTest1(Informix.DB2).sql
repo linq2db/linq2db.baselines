@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	(nm.MiddleName IS NOT NULL AND (Length(nm.MiddleName) <> 0 OR Length(nm.MiddleName) IS NULL))
+	NOT (nm.MiddleName IS NULL OR Length(nm.MiddleName) = 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
