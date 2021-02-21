@@ -7,5 +7,6 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	(c_1."ParentID" <> 2 AND c_1."ParentID" <> 3) AND c_1."ChildID" <> 44
+	NOT (c_1."ParentID" = 2 OR c_1."ParentID" = 3) AND
+	c_1."ChildID" <> 44
 

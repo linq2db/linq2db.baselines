@@ -267,7 +267,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = True OR [t].[Id] <= 0)
+	NOT ([t].[BoolValue] = False AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -291,7 +291,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = False OR [t].[Id] <= 0)
+	NOT ([t].[BoolValue] = True AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -315,7 +315,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = False OR [t].[Id] <= 0)
+	NOT ([t].[BoolValue] = True AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -339,7 +339,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = True OR [t].[Id] <= 0)
+	NOT ([t].[BoolValue] = False AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -363,7 +363,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = True OR [t].[Id] <= 0)
+	NOT ([t].[BoolValue] = False AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -388,7 +388,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL OR [t].[Id] <= 0)
+	NOT (([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -413,7 +413,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	(([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) OR [t].[Id] <= 0)
+	NOT (([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -438,7 +438,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	(([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) OR [t].[Id] <= 0)
+	NOT (([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -463,7 +463,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = True OR [t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL OR [t].[Id] <= 0)
+	NOT ([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -475,7 +475,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = True OR [t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL) AND
+	NOT ([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL)) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -488,7 +488,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) OR [t].[Id] <= 0)
+	NOT (NOT ([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -513,7 +513,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = True OR ([t].[NullableBoolValue] = True OR [t].[NullableBoolValue] IS NULL) OR [t].[Id] <= 0)
+	NOT ([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -525,7 +525,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = True OR ([t].[NullableBoolValue] = True OR [t].[NullableBoolValue] IS NULL)) AND
+	NOT ([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL)) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -538,7 +538,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL) OR [t].[Id] <= 0)
+	NOT (NOT ([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL)) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
