@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	([nm].[FirstName] IS NOT NULL AND Length([nm].[FirstName]) <> 0)
+	NOT ([nm].[FirstName] IS NULL OR Length([nm].[FirstName]) = 0)
 
 BeforeExecute
 -- SQLite.MS SQLite
