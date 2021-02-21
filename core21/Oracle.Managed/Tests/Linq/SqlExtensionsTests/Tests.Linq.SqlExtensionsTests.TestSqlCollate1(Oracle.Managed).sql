@@ -2,16 +2,6 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	nm."FirstName"
-FROM
-	"Person" nm
-WHERE
-	NOT (nm."FirstName" IS NULL OR Length(nm."FirstName") = 0)
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-SELECT
 	t1."FirstName",
 	t1."PersonID",
 	t1."LastName",
@@ -19,4 +9,6 @@ SELECT
 	t1."Gender"
 FROM
 	"Person" t1
+ORDER BY
+	'1' || t1."FirstName" COLLATE latin_AI || '2'
 
