@@ -2,16 +2,6 @@
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	[nm].[FirstName]
-FROM
-	[Person] [nm]
-WHERE
-	NOT ([nm].[FirstName] IS NULL OR Len([nm].[FirstName]) = 0)
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -19,4 +9,6 @@ SELECT
 	[t1].[Gender]
 FROM
 	[Person] [t1]
+ORDER BY
+	N'1' + [t1].[FirstName] COLLATE Albanian_CI_AS + N'2'
 
