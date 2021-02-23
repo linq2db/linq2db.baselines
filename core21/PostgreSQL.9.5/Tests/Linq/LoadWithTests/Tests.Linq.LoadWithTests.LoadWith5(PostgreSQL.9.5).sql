@@ -10,8 +10,8 @@ SELECT
 	detail_1."GrandChildID",
 	"a_Child"."ParentID",
 	"a_Child"."ChildID",
-	"a_Parent"."ParentID",
-	"a_Parent"."Value1"
+	"a_Child"."ParentID_1",
+	"a_Child"."Value1"
 FROM
 	(
 		SELECT DISTINCT
@@ -28,9 +28,16 @@ FROM
 				INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 	) "lw_Child"
 		INNER JOIN "GrandChild" detail_1 ON "lw_Child"."ParentID" = detail_1."ParentID" AND "lw_Child"."ChildID" = detail_1."ChildID"
-		LEFT JOIN "Child" "a_Child"
-			LEFT JOIN "Parent" "a_Parent" ON "a_Child"."ParentID" = "a_Parent"."ParentID"
-		ON detail_1."ParentID" = "a_Child"."ParentID" AND detail_1."ChildID" = "a_Child"."ChildID"
+		LEFT JOIN (
+			SELECT
+				t2."ParentID",
+				t2."ChildID",
+				"a_Parent"."ParentID" as "ParentID_1",
+				"a_Parent"."Value1"
+			FROM
+				"Child" t2
+					LEFT JOIN "Parent" "a_Parent" ON t2."ParentID" = "a_Parent"."ParentID"
+		) "a_Child" ON detail_1."ParentID" = "a_Child"."ParentID" AND detail_1."ChildID" = "a_Child"."ChildID"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
