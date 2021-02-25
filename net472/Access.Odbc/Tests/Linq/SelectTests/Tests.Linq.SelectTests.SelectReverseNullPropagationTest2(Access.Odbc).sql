@@ -9,5 +9,5 @@ SELECT
 FROM
 	([Parent] [p]
 		LEFT JOIN [Child] [gr] ON ([p].[Value1] = [gr].[ParentID]))
-			LEFT JOIN [Parent] [a_Parent] ON ([gr].[ParentID] = [a_Parent].[ParentID])
+		LEFT JOIN [Parent] [a_Parent] ON ([gr].[ParentID] = [a_Parent].[ParentID])
 
