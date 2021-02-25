@@ -27,10 +27,10 @@ FROM
 			) `lw_Parent`
 				INNER JOIN `Child` `detail` ON `lw_Parent`.`ParentID` = `detail`.`ParentID`
 	) `lw_Child`
-		INNER JOIN `GrandChild` `detail_1` ON `lw_Child`.`ParentID` = `detail_1`.`ParentID` AND `lw_Child`.`ChildID` = `detail_1`.`ChildID`
-		LEFT JOIN (`Child` `a_Child`
-			LEFT JOIN `Parent` `a_Parent` ON `a_Child`.`ParentID` = `a_Parent`.`ParentID`)
-		ON `detail_1`.`ParentID` = `a_Child`.`ParentID` AND `detail_1`.`ChildID` = `a_Child`.`ChildID`
+		INNER JOIN (`GrandChild` `detail_1`
+			LEFT JOIN `Child` `a_Child` ON `detail_1`.`ParentID` = `a_Child`.`ParentID` AND `detail_1`.`ChildID` = `a_Child`.`ChildID`)
+		ON `lw_Child`.`ParentID` = `detail_1`.`ParentID` AND `lw_Child`.`ChildID` = `detail_1`.`ChildID`
+		LEFT JOIN `Parent` `a_Parent` ON `a_Child`.`ParentID` = `a_Parent`.`ParentID`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
