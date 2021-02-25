@@ -110,9 +110,8 @@ SELECT
 	[a_Category].[CategoryName]
 FROM
 	[Order Details] [od]
-		LEFT JOIN [Products] [a_Product]
-			LEFT JOIN [Categories] [a_Category] ON [a_Product].[CategoryID] = [a_Category].[CategoryID]
-		ON [od].[ProductID] = [a_Product].[ProductID]
+		LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
+		LEFT JOIN [Categories] [a_Category] ON [a_Product].[CategoryID] = [a_Category].[CategoryID]
 		LEFT JOIN [Orders] [a_Order] ON [od].[OrderID] = [a_Order].[OrderID]
 WHERE
 	[a_Category].[CategoryName] = N'Seafood'
