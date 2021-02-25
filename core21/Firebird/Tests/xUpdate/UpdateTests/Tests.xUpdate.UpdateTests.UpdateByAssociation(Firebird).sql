@@ -13,9 +13,8 @@ WHERE
 			*
 		FROM
 			"Person" "t1"
-				LEFT JOIN "Patient" "a_Patient"
-					LEFT JOIN "Person" "a_Person" ON "a_Patient"."PersonID" = "a_Person"."PersonID"
-				ON "t1"."PersonID" = "a_Patient"."PersonID"
+				LEFT JOIN "Patient" "a_Patient" ON "t1"."PersonID" = "a_Patient"."PersonID"
+				LEFT JOIN "Person" "a_Person" ON "a_Patient"."PersonID" = "a_Person"."PersonID"
 		WHERE
 			"t1"."PersonID" = @id AND "Person"."PersonID" = "t1"."PersonID"
 	)
