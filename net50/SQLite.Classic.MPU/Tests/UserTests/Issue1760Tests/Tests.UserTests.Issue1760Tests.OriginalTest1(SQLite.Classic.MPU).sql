@@ -36,21 +36,6 @@ SELECT
 	[allB].[id]
 FROM
 	[table1] [allB]
-		LEFT JOIN (
-			SELECT
-				[allG].[Col3]
-			FROM
-				(
-					SELECT
-						Max([tbl1].[id]) as [maxCol],
-						[tbl2].[col3] as [Col3]
-					FROM
-						[table1] [tbl1]
-							INNER JOIN [table2] [tbl2] ON [tbl1].[id_tbl2] = [tbl2].[id]
-					GROUP BY
-						[tbl2].[col3]
-				) [allG]
-		) [t1] ON [allB].[id] = [t1].[Col3]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

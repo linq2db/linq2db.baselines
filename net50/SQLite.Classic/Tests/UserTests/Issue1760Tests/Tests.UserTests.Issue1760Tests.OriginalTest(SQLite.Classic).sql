@@ -58,21 +58,21 @@ DECLARE @id_1  -- Int32
 SET     @id_1 = 0
 
 SELECT
-	[bt1].[textCol],
+	[t1].[textCol],
+	[t1].[c1],
 	[t1].[c2],
-	[t1].[c3],
-	[t1].[c4]
+	[t1].[c3]
 FROM
-	[table1] [w_1]
-		LEFT JOIN [table2] [bt1] ON [w_1].[c_tb1l_Id] = [bt1].[id]
-		LEFT JOIN (
-			SELECT
-				Coalesce([allG].[Col3], 0) as [c1],
-				Coalesce([btbl].[col1], '') as [c2],
-				Coalesce([btbl].[col2], '') as [c3],
-				Coalesce([btbl].[col3], '') as [c4]
-			FROM
-				(
+	(
+		SELECT
+			Coalesce([btbl].[col1], '') as [c1],
+			Coalesce([btbl].[col2], '') as [c2],
+			Coalesce([btbl].[col3], '') as [c3],
+			[bt1].[textCol]
+		FROM
+			[table1] [w_1]
+				LEFT JOIN [table2] [bt1] ON [w_1].[c_tb1l_Id] = [bt1].[id]
+				LEFT JOIN (
 					SELECT
 						Max([tbl3].[id]) as [maxCol],
 						[tbl2].[col3] as [Col3]
@@ -84,18 +84,18 @@ FROM
 						[tbl2].[col3] IS NOT NULL AND [w].[commonTableId] = @id
 					GROUP BY
 						[tbl2].[col3]
-				) [allG]
+				) [allG] ON ([bt1].[col3] = Coalesce([allG].[Col3], 0) OR [bt1].[col3] IS NULL AND Coalesce([allG].[Col3], 0) IS NULL)
 					LEFT JOIN [table3] [tbl3_1] ON [allG].[maxCol] = [tbl3_1].[id]
 					LEFT JOIN [b_table2] [btbl] ON [tbl3_1].[col] = [btbl].[id]
-		) [t1] ON ([bt1].[col3] = [t1].[c1] OR [bt1].[col3] IS NULL AND [t1].[c1] IS NULL)
-		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
-WHERE
-	[w_1].[commonTableId] = @id_1
+				LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
+		WHERE
+			[w_1].[commonTableId] = @id_1
+	) [t1]
 GROUP BY
+	[t1].[c1],
 	[t1].[c2],
 	[t1].[c3],
-	[t1].[c4],
-	[bt1].[textCol]
+	[t1].[textCol]
 
 BeforeExecute
 -- SQLite.Classic SQLite
