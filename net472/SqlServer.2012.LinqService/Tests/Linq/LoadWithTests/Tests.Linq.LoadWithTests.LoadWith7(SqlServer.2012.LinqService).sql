@@ -13,8 +13,8 @@ SELECT TOP (@take)
 	[a_Parent].[Value1]
 FROM
 	[Child] [t]
-		INNER JOIN [GrandChild] [c_1] ON [t].[ParentID] = [c_1].[ParentID] AND [t].[ChildID] = [c_1].[ChildID]
-		LEFT JOIN [Child] [a_Child]
-			LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
-		ON [c_1].[ParentID] = [a_Child].[ParentID] AND [c_1].[ChildID] = [a_Child].[ChildID]
+		INNER JOIN [GrandChild] [c_1]
+			LEFT JOIN [Child] [a_Child] ON [c_1].[ParentID] = [a_Child].[ParentID] AND [c_1].[ChildID] = [a_Child].[ChildID]
+		ON [t].[ParentID] = [c_1].[ParentID] AND [t].[ChildID] = [c_1].[ChildID]
+		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
 

@@ -117,25 +117,15 @@ SELECT
 	[t].[Id],
 	[t].[Value],
 	[a_Association1].[Id],
-	[a_Association1].[Value_1],
+	[a_Association1].[Value],
 	[a_Association1].[ParentId],
-	[a_Association1].[Id_1],
-	[a_Association1].[Value_2],
-	[a_Association1].[ParentId_1]
+	[a_Association2].[Id],
+	[a_Association2].[Value],
+	[a_Association2].[ParentId]
 FROM
 	[SuperClass] [t]
-		LEFT JOIN (
-			SELECT
-				[t1].[Id],
-				[t1].[Value] as [Value_1],
-				[t1].[ParentId],
-				[a_Association2].[Id] as [Id_1],
-				[a_Association2].[Value] as [Value_2],
-				[a_Association2].[ParentId] as [ParentId_1]
-			FROM
-				[Subclass1] [t1]
-					LEFT JOIN [Subclass2] [a_Association2] ON [t1].[Id] = [a_Association2].[ParentId]
-		) [a_Association1] ON [t].[Id] = [a_Association1].[ParentId]
+		LEFT JOIN [Subclass1] [a_Association1] ON [t].[Id] = [a_Association1].[ParentId]
+		LEFT JOIN [Subclass2] [a_Association2] ON [a_Association1].[Id] = [a_Association2].[ParentId]
 
 BeforeExecute
 -- SQLite.MS SQLite

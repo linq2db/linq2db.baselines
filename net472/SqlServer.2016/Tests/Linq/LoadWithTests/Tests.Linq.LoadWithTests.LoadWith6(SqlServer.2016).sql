@@ -13,10 +13,10 @@ SELECT
 	[a_Parent].[Value1]
 FROM
 	[Child] [lw_Child]
-		INNER JOIN [GrandChild] [detail] ON [lw_Child].[ParentID] = [detail].[ParentID] AND [lw_Child].[ChildID] = [detail].[ChildID]
-		LEFT JOIN [Child] [a_Child]
-			LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
-		ON [detail].[ParentID] = [a_Child].[ParentID] AND [detail].[ChildID] = [a_Child].[ChildID]
+		INNER JOIN [GrandChild] [detail]
+			LEFT JOIN [Child] [a_Child] ON [detail].[ParentID] = [a_Child].[ParentID] AND [detail].[ChildID] = [a_Child].[ChildID]
+		ON [lw_Child].[ParentID] = [detail].[ParentID] AND [lw_Child].[ChildID] = [detail].[ChildID]
+		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012

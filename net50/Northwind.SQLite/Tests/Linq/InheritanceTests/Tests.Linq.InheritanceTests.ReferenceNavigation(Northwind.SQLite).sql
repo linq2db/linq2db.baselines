@@ -26,27 +26,12 @@ SELECT
 	[a_Product].[UnitsOnOrder],
 	[a_Product].[ReorderLevel],
 	[a_Product].[Discontinued],
-	[a_Product].[CategoryName]
+	[a_Category].[CategoryName]
 FROM
 	[Order Details] [od]
-		LEFT JOIN (
-			SELECT
-				[a_Category].[CategoryName],
-				[t1].[ProductID],
-				[t1].[ProductName],
-				[t1].[SupplierID],
-				[t1].[CategoryID],
-				[t1].[QuantityPerUnit],
-				[t1].[UnitPrice],
-				[t1].[UnitsInStock],
-				[t1].[UnitsOnOrder],
-				[t1].[ReorderLevel],
-				[t1].[Discontinued]
-			FROM
-				[Products] [t1]
-					LEFT JOIN [Categories] [a_Category] ON [t1].[CategoryID] = [a_Category].[CategoryID]
-		) [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
+		LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
+		LEFT JOIN [Categories] [a_Category] ON [a_Product].[CategoryID] = [a_Category].[CategoryID]
 		LEFT JOIN [Orders] [a_Order] ON [od].[OrderID] = [a_Order].[OrderID]
 WHERE
-	[a_Product].[CategoryName] = 'Seafood'
+	[a_Category].[CategoryName] = 'Seafood'
 
