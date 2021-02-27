@@ -34,11 +34,12 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO "Issue2816Table" ("Id", "Text") VALUES (0,'a')
-	INTO "Issue2816Table" ("Id", "Text") VALUES (1,' m ')
-	INTO "Issue2816Table" ("Id", "Text") VALUES (2,' ')
-	INTO "Issue2816Table" ("Id", "Text") VALUES (3,'  ')
-	INTO "Issue2816Table" ("Id", "Text") VALUES (4,NULL)
+	INTO "Issue2816Table" ("Id", "Text") VALUES (0,'')
+	INTO "Issue2816Table" ("Id", "Text") VALUES (1,'a')
+	INTO "Issue2816Table" ("Id", "Text") VALUES (2,' m ')
+	INTO "Issue2816Table" ("Id", "Text") VALUES (3,' ')
+	INTO "Issue2816Table" ("Id", "Text") VALUES (4,'  ')
+	INTO "Issue2816Table" ("Id", "Text") VALUES (5,NULL)
 SELECT * FROM dual
 
 BeforeExecute
