@@ -18,6 +18,24 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 0
+DECLARE @Text VarChar -- String
+SET     @Text = ''
+
+INSERT INTO Issue2816Table
+(
+	Id,
+	Text
+)
+VALUES
+(
+	@Id,
+	@Text
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
 DECLARE @Text VarChar(1) -- String
 SET     @Text = 'a'
 
@@ -35,7 +53,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
+SET     @Id = 2
 DECLARE @Text VarChar(3) -- String
 SET     @Text = ' m '
 
@@ -53,7 +71,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
+SET     @Id = 3
 DECLARE @Text VarChar(1) -- String
 SET     @Text = ' '
 
@@ -71,7 +89,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
-SET     @Id = 3
+SET     @Id = 4
 DECLARE @Text VarChar(2) -- String
 SET     @Text = '  '
 
@@ -89,7 +107,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
-SET     @Id = 4
+SET     @Id = 5
 DECLARE @Text VarChar -- String
 SET     @Text = NULL
 
