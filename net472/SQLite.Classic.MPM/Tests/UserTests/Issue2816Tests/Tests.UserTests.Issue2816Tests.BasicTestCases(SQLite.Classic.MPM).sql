@@ -23,11 +23,12 @@ INSERT INTO [Issue2816Table]
 	[Text]
 )
 VALUES
-(0,'a'),
-(1,' m '),
-(2,' '),
-(3,'  '),
-(4,NULL)
+(0,''),
+(1,'a'),
+(2,' m '),
+(3,' '),
+(4,'  '),
+(5,NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
