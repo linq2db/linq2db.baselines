@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @Text NVarChar(4000) -- String
-SET     @Text = N'a'
+SET     @Text = N''
 
 INSERT INTO [Issue2816Table]
 (
@@ -39,7 +39,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Text NVarChar(4000) -- String
-SET     @Text = N' m '
+SET     @Text = N'a'
 
 INSERT INTO [Issue2816Table]
 (
@@ -57,7 +57,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Text NVarChar(4000) -- String
-SET     @Text = N' '
+SET     @Text = N' m '
 
 INSERT INTO [Issue2816Table]
 (
@@ -75,7 +75,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Text NVarChar(4000) -- String
-SET     @Text = N'  '
+SET     @Text = N' '
 
 INSERT INTO [Issue2816Table]
 (
@@ -92,6 +92,24 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 4
+DECLARE @Text NVarChar(4000) -- String
+SET     @Text = N'  '
+
+INSERT INTO [Issue2816Table]
+(
+	[Id],
+	[Text]
+)
+VALUES
+(
+	@Id,
+	@Text
+)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 5
 DECLARE @Text NVarChar(4000) -- String
 SET     @Text = NULL
 
