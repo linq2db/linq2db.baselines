@@ -30,11 +30,12 @@ INSERT INTO "Issue2816Table"
 	"Id",
 	"Text"
 )
-SELECT 0,'a' FROM rdb$database UNION ALL
-SELECT 1,' m ' FROM rdb$database UNION ALL
-SELECT 2,' ' FROM rdb$database UNION ALL
-SELECT 3,'  ' FROM rdb$database UNION ALL
-SELECT 4,NULL FROM rdb$database
+SELECT 0,'' FROM rdb$database UNION ALL
+SELECT 1,'a' FROM rdb$database UNION ALL
+SELECT 2,' m ' FROM rdb$database UNION ALL
+SELECT 3,' ' FROM rdb$database UNION ALL
+SELECT 4,'  ' FROM rdb$database UNION ALL
+SELECT 5,NULL FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
