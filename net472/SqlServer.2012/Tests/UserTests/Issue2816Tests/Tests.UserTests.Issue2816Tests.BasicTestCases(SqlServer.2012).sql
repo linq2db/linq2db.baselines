@@ -25,11 +25,12 @@ INSERT INTO [Issue2816Table]
 	[Text]
 )
 VALUES
-(0,N'a'),
-(1,N' m '),
-(2,N' '),
-(3,N'  '),
-(4,NULL)
+(0,N''),
+(1,N'a'),
+(2,N' m '),
+(3,N' '),
+(4,N'  '),
+(5,NULL)
 
 BeforeExecute
 -- SqlServer.2012
