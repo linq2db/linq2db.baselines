@@ -8,7 +8,6 @@ SELECT
 	`t1`.`MiddleName`,
 	`t1`.`Gender`,
 	Concat(`t1`.`LastName`, ', ', `t1`.`FirstName`),
-	Concat(`t1`.`LastName`, ', ', `t1`.`FirstName`),
 	(
 		SELECT
 			Count(*)
@@ -29,7 +28,6 @@ SELECT
 	`i`.`LastName`,
 	`i`.`MiddleName`,
 	`i`.`Gender`,
-	Concat(`i`.`LastName`, ', ', `i`.`FirstName`),
 	Concat(`i`.`LastName`, ', ', `i`.`FirstName`),
 	(
 		SELECT
