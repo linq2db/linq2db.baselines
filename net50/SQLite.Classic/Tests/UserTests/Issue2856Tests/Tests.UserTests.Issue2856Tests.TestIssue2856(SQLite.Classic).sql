@@ -18,7 +18,7 @@ SELECT
 FROM
 	[GlobalTaskDTO] [gt1]
 WHERE
-	[gt1].[RPSourceID] IN (Cast(x'046d0dc13c4b7a46b3a4d8d6d0a94c9b' as blob), Cast(x'46dcb62ab7a8ea42ab3eb6596fea197d' as blob))
+	[gt1].[RPSourceID] IN (Cast(x'f76b6c8c1bb2754cb790b668f46c3685' as blob), Cast(x'640de76c6d082a458640ede50d2ea2ba' as blob))
 UNION
 SELECT
 	[gt2].[RPDestinationID]
