@@ -8,7 +8,6 @@ SELECT
 	[t1].[MiddleName],
 	[t1].[Gender],
 	[t1].[LastName] + N', ' + [t1].[FirstName],
-	[t1].[LastName] + N', ' + [t1].[FirstName],
 	(
 		SELECT
 			Count(*)
@@ -29,7 +28,6 @@ SELECT
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
-	[i].[LastName] + N', ' + [i].[FirstName],
 	[i].[LastName] + N', ' + [i].[FirstName],
 	(
 		SELECT
