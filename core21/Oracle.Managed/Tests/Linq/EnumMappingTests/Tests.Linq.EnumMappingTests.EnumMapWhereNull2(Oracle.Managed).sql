@@ -26,7 +26,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	r."BigIntValue"
+	r."BigIntValue" as "TestField"
 FROM
 	"LinqDataTypes" r
 WHERE

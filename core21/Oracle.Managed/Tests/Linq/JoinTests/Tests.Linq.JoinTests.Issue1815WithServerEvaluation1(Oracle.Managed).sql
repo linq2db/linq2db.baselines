@@ -85,15 +85,15 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	x."InId",
+	x."InId" as "LinkId",
 	CASE
 		WHEN j."InId" IS NULL THEN x."InMinQuantity"
 		ELSE j."InMinQuantity"
-	END,
+	END as "MinQuantity",
 	CASE
 		WHEN j."InId" IS NULL THEN x."InMaxQuantity"
 		ELSE j."InMaxQuantity"
-	END
+	END as "MaxQuantity"
 FROM
 	"StLink" x
 		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
@@ -107,15 +107,15 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	x."InId",
+	x."InId" as "LinkId",
 	CASE
 		WHEN j."InId" IS NULL THEN x."InMinQuantity"
 		ELSE j."InMinQuantity"
-	END,
+	END as "MinQuantity",
 	CASE
 		WHEN j."InId" IS NULL THEN x."InMaxQuantity"
 		ELSE j."InMaxQuantity"
-	END
+	END as "MaxQuantity"
 FROM
 	"StLink" x
 		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"

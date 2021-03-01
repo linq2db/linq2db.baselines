@@ -29,7 +29,7 @@ SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1.VALUE
+	t1.VALUE as VALUE_1
 FROM
 	SEQUENCETEST t1
 WHERE

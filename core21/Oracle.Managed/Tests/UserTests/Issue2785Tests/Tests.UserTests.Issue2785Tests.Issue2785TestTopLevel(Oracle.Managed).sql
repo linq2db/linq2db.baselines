@@ -1,11 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @take Int32
-SET     @take = 1
+SET     @take = 10
 
 SELECT
-	Sys_Guid() as "c1"
+	a."PersonID" as "Id",
+	a."PersonID" as "Id2"
 FROM
-	"LinqDataTypes" p
+	"Person" a
 FETCH NEXT :take ROWS ONLY
 

@@ -85,12 +85,12 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	x."InId",
+	x."InId" as "LinkId",
 	j."InId",
 	j."InMaxQuantity",
 	j."InMinQuantity",
-	x."InMinQuantity",
-	x."InMaxQuantity"
+	x."InMinQuantity" as "MinQuantity",
+	x."InMaxQuantity" as "MaxQuantity"
 FROM
 	"StLink" x
 		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
@@ -104,12 +104,12 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	x."InId",
+	x."InId" as "LinkId",
 	j."InId",
 	j."InMaxQuantity",
 	j."InMinQuantity",
-	x."InMinQuantity",
-	x."InMaxQuantity"
+	x."InMinQuantity" as "MinQuantity",
+	x."InMaxQuantity" as "MaxQuantity"
 FROM
 	"StLink" x
 		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"

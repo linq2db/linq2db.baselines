@@ -21,7 +21,7 @@ SELECT
 			"Issue1192Table" t
 		WHERE
 			t."Status" = 3 AND t."MyOtherId" = 12
-	)
+	) as "MyGroupedCount"
 FROM
 	"Issue1192Table" t_1
 WHERE

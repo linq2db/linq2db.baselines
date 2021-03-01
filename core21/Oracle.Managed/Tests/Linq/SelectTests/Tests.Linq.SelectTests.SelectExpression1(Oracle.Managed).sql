@@ -46,8 +46,8 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	:p_1,
-	:p_2
+	:p_1 as "c1",
+	:p_2 as "c2"
 FROM
 	"SelectExpressionTable" t1
 FETCH NEXT :take ROWS ONLY

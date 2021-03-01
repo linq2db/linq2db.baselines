@@ -7,9 +7,9 @@ SELECT
 	c_1."ParentID",
 	c_1."ChildID",
 	c_1."GrandChildID",
-	a_Child_1."ParentID",
-	a_Child_1."ChildID",
-	a_Parent."ParentID",
+	a_Child_1."ParentID" as "ParentID_1",
+	a_Child_1."ChildID" as "ChildID_1",
+	a_Parent."ParentID" as "ParentID_2",
 	a_Parent."Value1"
 FROM
 	"GrandChild" p

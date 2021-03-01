@@ -51,7 +51,7 @@ SELECT
 	t1."entry_2",
 	t1."entry_3",
 	t1."entry_4",
-	t1."entry",
+	t1."entry" as "entry_5",
 	t1."rn"
 FROM
 	CTE_1 t1

@@ -53,7 +53,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	c_1."Id"
+	c_1."Id" as "Value_1"
 FROM
 	"AsyncDataTable" c_1
 WHERE
