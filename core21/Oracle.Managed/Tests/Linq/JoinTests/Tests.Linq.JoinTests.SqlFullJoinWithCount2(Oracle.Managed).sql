@@ -6,9 +6,9 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	COUNT(left_1."ParentID"),
-	COUNT(p_1."ParentID"),
-	COUNT(*)
+	COUNT(left_1."ParentID") as "c1",
+	COUNT(p_1."ParentID") as "c2",
+	COUNT(*) as "c3"
 FROM
 	(
 		SELECT

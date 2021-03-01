@@ -4,9 +4,9 @@ DECLARE @take Int32
 SET     @take = 1000
 
 SELECT
-	a_Patient."Diagnosis",
-	a_Patient."PersonID",
-	Round(AVG(selectParam."PersonID"), 27)
+	a_Patient."Diagnosis" as "value_1",
+	a_Patient."PersonID" as "id",
+	Round(AVG(selectParam."PersonID"), 27) as "y"
 FROM
 	"Person" selectParam
 		LEFT JOIN "Patient" a_Patient ON selectParam."PersonID" = a_Patient."PersonID"

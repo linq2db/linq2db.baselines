@@ -4,7 +4,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	person_1."PersonID"
+	person_1."PersonID" as ID
 FROM
 	"Person" person_1
 FETCH NEXT :take ROWS ONLY

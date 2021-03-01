@@ -6,7 +6,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Decimal(29, 10))
+	Cast(:value_1 as Decimal(29, 10)) as "c1"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -19,7 +19,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Decimal(29, 10))
+	Cast(:value_1 as Decimal(29, 10)) as "c1"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -32,7 +32,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Decimal(29, 10))
+	Cast(:value_1 as Decimal(29, 10)) as "c1"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -45,7 +45,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Real)
+	Cast(:value_1 as Real) as "c1"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -58,7 +58,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Real)
+	Cast(:value_1 as Real) as "c1"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -71,7 +71,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Real)
+	Cast(:value_1 as Real) as "c1"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -84,7 +84,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Float)
+	Cast(:value_1 as Float) as "c1"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -97,7 +97,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Float)
+	Cast(:value_1 as Float) as "c1"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -110,7 +110,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Float)
+	Cast(:value_1 as Float) as "c1"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY

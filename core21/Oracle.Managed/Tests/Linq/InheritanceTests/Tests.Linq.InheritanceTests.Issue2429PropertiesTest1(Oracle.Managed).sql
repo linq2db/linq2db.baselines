@@ -43,7 +43,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x."Value",
+	x."Value" as "Value_1",
 	x."Id"
 FROM
 	"BaseTable" x
@@ -57,7 +57,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x."Value",
+	x."Value" as "Value_1",
 	x."Id"
 FROM
 	"BaseTable" x

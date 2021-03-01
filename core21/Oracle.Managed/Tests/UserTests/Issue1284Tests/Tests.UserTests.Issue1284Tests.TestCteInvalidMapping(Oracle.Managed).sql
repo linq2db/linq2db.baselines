@@ -16,7 +16,7 @@ AS
 (
 	SELECT
 		person_1."PersonID",
-		1,
+		1 as "c1",
 		person_1."FirstName",
 		person_1."LastName",
 		person_1."MiddleName",

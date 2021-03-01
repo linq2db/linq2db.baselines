@@ -37,8 +37,8 @@ SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1."Array",
-	t1."Binary"
+	t1."Array" as "Array_1",
+	t1."Binary" as "Binary_1"
 FROM
 	"Issue1303" t1
 WHERE
@@ -54,8 +54,8 @@ SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1."Array",
-	t1."Binary"
+	t1."Array" as "Array_1",
+	t1."Binary" as "Binary_1"
 FROM
 	"Issue1303" t1
 WHERE
@@ -71,8 +71,8 @@ SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1."Array",
-	t1."Binary"
+	t1."Array" as "Array_1",
+	t1."Binary" as "Binary_1"
 FROM
 	"Issue1303" t1
 WHERE
