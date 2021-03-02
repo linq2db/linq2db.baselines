@@ -824,6 +824,52 @@ AS $$ BEGIN RETURN 'issue2679test'; END $$ LANGUAGE PLPGSQL;
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
+DROP TABLE IF EXISTS same_name2
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+DROP TABLE IF EXISTS same_name1
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+DROP TABLE IF EXISTS same_name
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE same_name (
+id INTEGER PRIMARY KEY
+)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE same_name1 (
+id			INTEGER PRIMARY KEY,
+same_name	INTEGER NULL,
+
+CONSTRAINT same_name
+	FOREIGN KEY (same_name)
+	REFERENCES same_name (id)
+)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE same_name2 (
+id			INTEGER PRIMARY KEY,
+same_name	INTEGER NULL,
+
+CONSTRAINT same_name
+	FOREIGN KEY (same_name)
+	REFERENCES same_name (id)
+)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
