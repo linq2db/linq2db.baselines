@@ -54,7 +54,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * INTERVAL '1' DAY > :p_1
+	t.ID = 5000 AND t."DateTimeValue" + Cast(((t."SmallIntValue" + :part1) - :part2) as Float) * INTERVAL '1' DAY > :p_1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

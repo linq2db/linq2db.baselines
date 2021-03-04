@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' MINUTE
+	t."DateTimeValue" + Cast(t."SmallIntValue" as Float) * INTERVAL '1' MINUTE
 FROM
 	"LinqDataTypes" t
 
