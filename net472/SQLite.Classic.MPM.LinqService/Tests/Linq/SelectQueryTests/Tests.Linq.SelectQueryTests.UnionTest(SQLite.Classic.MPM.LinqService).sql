@@ -11,7 +11,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,[t].[Value] || ' Day'),
+	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,Cast([t].[Value] as Float) || ' Day'),
 	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,2 || ' Day')
 FROM
 	[SampleClass] [t]
@@ -36,7 +36,7 @@ SELECT
 FROM
 	(
 		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,[t].[Value] || ' Day') as [Value1],
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,Cast([t].[Value] as Float) || ' Day') as [Value1],
 			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,2 || ' Day') as [Value2]
 		FROM
 			[SampleClass] [t]

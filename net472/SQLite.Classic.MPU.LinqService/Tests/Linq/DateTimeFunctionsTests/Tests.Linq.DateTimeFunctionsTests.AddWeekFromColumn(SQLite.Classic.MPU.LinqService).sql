@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],([t].[SmallIntValue]*7) || ' Day')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],(Cast([t].[SmallIntValue] as Float)*7) || ' Day')
 FROM
 	[LinqDataTypes] [t]
 

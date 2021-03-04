@@ -41,7 +41,7 @@ SELECT
 FROM
 	(
 		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,[t].[Value] || ' Day') as [Value1],
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,Cast([t].[Value] as Float) || ' Day') as [Value1],
 			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,2 || ' Day') as [Value2]
 		FROM
 			[SampleClass] [t]

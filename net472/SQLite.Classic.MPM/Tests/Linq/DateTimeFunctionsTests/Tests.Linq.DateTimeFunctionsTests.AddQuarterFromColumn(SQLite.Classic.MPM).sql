@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],([t].[SmallIntValue]*3) || ' Month')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],(Cast([t].[SmallIntValue] as Float)*3) || ' Month')
 FROM
 	[LinqDataTypes] [t]
 

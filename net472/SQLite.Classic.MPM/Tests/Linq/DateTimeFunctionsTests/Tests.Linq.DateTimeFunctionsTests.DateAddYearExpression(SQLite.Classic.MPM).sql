@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p_1  -- Int32
+DECLARE @p_1  -- Double
 SET     @p_1 = 11
 
 SELECT
