@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."DateTimeValue" + t."SmallIntValue" * Interval '1 Minute'
+	t."DateTimeValue" + Cast(t."SmallIntValue" as Float) * Interval '1 Minute'
 FROM
 	"LinqDataTypes" t
 
