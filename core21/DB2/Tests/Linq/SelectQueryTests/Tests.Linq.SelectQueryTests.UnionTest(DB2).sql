@@ -11,7 +11,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CURRENT_TIMESTAMP + "t"."Value" Day,
+	CURRENT_TIMESTAMP + Float("t"."Value") Day,
 	CURRENT_TIMESTAMP + 2 Day
 FROM
 	"SampleClass" "t"
@@ -37,7 +37,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CURRENT_TIMESTAMP + "t"."Value" Day as "Value1",
+			CURRENT_TIMESTAMP + Float("t"."Value") Day as "Value1",
 			CURRENT_TIMESTAMP + 2 Day as "Value2"
 		FROM
 			"SampleClass" "t"

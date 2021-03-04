@@ -40,7 +40,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CURRENT_TIMESTAMP + "t"."Value" Day as "Value1",
+			CURRENT_TIMESTAMP + Float("t"."Value") Day as "Value1",
 			CURRENT_TIMESTAMP + 2 Day as "Value2"
 		FROM
 			"SampleClass" "t"
