@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue])
+	DateAdd(day, Convert(Float, [t].[SmallIntValue]), [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 
