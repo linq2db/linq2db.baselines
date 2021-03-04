@@ -162,6 +162,12 @@ SELECT
 	t1."StrArray" @> t2."StrArray",
 	t1."StrArray" <@ t2."StrArray",
 	t1."StrArray" && t2."StrArray",
+	t1."IntValue" = ANY(t2."IntArray"),
+	t1."IntValue" < ANY(t2."IntArray"),
+	t1."IntValue" <= ANY(t2."IntArray"),
+	t1."IntValue" > ANY(t2."IntArray"),
+	t1."IntValue" >= ANY(t2."IntArray"),
+	t1."IntValue" <> ANY(t2."IntArray"),
 	ARRAY_APPEND(t1."StrArray", t2."StrValue"),
 	ARRAY_APPEND(t1."IntArray", t2."Id"),
 	ARRAY_APPEND(t1."LongArray", t2."LongValue"),
@@ -188,6 +194,8 @@ SELECT
 FROM
 	"SampleClass" t1
 		INNER JOIN "SampleClass" t2 ON t2."Id" <> t1."Id"
+WHERE
+	(((((t1."StrArray" > t2."StrArray" OR t1."StrArray" > t2."StrArray") OR (t1."StrArray" @> t2."StrArray" OR t1."StrArray" <@ t2."StrArray")) OR ((t1."StrArray" && t2."StrArray" OR t1."IntValue" = ANY(t2."IntArray")) OR (t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray")))) OR (((t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray")) OR (t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(t2."IntArray"))) OR ((t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray")) OR (t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray"))))) OR t1."IntValue" <> ANY(t2."IntArray"))
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
