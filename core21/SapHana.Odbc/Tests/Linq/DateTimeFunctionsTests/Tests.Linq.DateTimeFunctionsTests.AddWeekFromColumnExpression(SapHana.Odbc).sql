@@ -6,7 +6,7 @@ DECLARE @part2  -- Int32
 SET     @part2 = 4
 
 SELECT
-	Add_Days("t"."DateTimeValue", (("t"."SmallIntValue" + ?) - ?) * 7)
+	Add_Days("t"."DateTimeValue", Cast((("t"."SmallIntValue" + ?) - ?) as Double) * 7)
 FROM
 	"LinqDataTypes" "t"
 

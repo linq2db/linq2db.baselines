@@ -50,7 +50,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."ID" = 5000 AND Add_Days("t"."DateTimeValue", "t"."SmallIntValue") > ?
+	"t"."ID" = 5000 AND Add_Days("t"."DateTimeValue", Cast("t"."SmallIntValue" as Double)) > ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

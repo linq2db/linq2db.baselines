@@ -6,7 +6,7 @@ DECLARE @part2  -- Int32
 SET     @part2 = 4
 
 SELECT
-	Add_Seconds("t"."DateTimeValue", (("t"."SmallIntValue" + ?) - ?) * 3600)
+	Add_Seconds("t"."DateTimeValue", Cast((("t"."SmallIntValue" + ?) - ?) as Double) * 3600)
 FROM
 	"LinqDataTypes" "t"
 
