@@ -51,7 +51,7 @@ FROM
 			FROM
 				(
 					SELECT
-						DateAdd(day, [t].[Value], GetDate()) as [Value1],
+						DateAdd(day, Convert(Float, [t].[Value]), GetDate()) as [Value1],
 						DateAdd(day, 2, GetDate()) as [Value2]
 					FROM
 						[SampleClass] [t]

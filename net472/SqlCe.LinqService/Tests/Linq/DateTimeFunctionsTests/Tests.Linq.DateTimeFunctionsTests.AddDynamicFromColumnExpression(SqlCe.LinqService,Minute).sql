@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	DateAdd(minute, [t].[SmallIntValue], [t].[DateTimeValue])
+	DateAdd(minute, Convert(Float, [t].[SmallIntValue]), [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 
