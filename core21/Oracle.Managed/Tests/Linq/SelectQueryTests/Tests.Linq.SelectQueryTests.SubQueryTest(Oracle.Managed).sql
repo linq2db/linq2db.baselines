@@ -54,8 +54,8 @@ FROM
 			FROM
 				(
 					SELECT
-						CURRENT_TIMESTAMP + t."Value" * INTERVAL '1' DAY as "Value1",
-						CURRENT_TIMESTAMP + 2 * INTERVAL '1' DAY as "Value2"
+						CURRENT_TIMESTAMP + Cast(t."Value" as Float) * INTERVAL '1' DAY as "Value1",
+						CURRENT_TIMESTAMP + 2D * INTERVAL '1' DAY as "Value2"
 					FROM
 						"SampleClass" t
 					WHERE
@@ -67,8 +67,8 @@ FROM
 					FROM
 						(
 							SELECT
-								CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
-								CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
+								CURRENT_TIMESTAMP + 3D * INTERVAL '1' DAY as "Value1",
+								CURRENT_TIMESTAMP + 4D * INTERVAL '1' DAY as "Value2"
 							FROM SYS.DUAL
 						) t1
 				) t2

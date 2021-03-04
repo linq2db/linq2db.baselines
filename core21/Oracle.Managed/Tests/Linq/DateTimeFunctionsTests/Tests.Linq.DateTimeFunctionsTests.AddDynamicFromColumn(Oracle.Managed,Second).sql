@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' SECOND
+	t."DateTimeValue" + Cast(t."SmallIntValue" as Float) * INTERVAL '1' SECOND
 FROM
 	"LinqDataTypes" t
 
