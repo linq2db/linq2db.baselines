@@ -71,7 +71,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Integer -- Int32
+DECLARE @p_1 Double
 SET     @p_1 = 1
 
 SELECT
