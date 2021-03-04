@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	DateAdd(month, [t].[SmallIntValue], [t].[DateTimeValue])
+	DateAdd(month, Convert(Float, [t].[SmallIntValue]), [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

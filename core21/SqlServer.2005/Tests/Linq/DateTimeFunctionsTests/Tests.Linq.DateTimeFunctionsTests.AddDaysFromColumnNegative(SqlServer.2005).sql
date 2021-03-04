@@ -50,7 +50,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) < @p_1
+	[t].[ID] = 5000 AND DateAdd(day, Convert(Float, [t].[SmallIntValue]), [t].[DateTimeValue]) < @p_1
 
 BeforeExecute
 -- SqlServer.2005
