@@ -34,7 +34,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day) as `Value1`,
+			Date_Add(CURRENT_TIMESTAMP, Interval Cast(`t`.`Value` as Decimal(29, 10)) Day) as `Value1`,
 			Date_Add(CURRENT_TIMESTAMP, Interval 2 Day) as `Value2`
 		FROM
 			`SampleClass` `t`

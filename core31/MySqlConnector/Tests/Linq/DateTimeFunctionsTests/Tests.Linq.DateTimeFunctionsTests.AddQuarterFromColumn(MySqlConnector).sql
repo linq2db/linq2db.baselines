@@ -2,7 +2,7 @@
 -- MySqlConnector MySql
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Quarter)
+	Date_Add(`t`.`DateTimeValue`, Interval Cast(`t`.`SmallIntValue` as Decimal(29, 10)) Quarter)
 FROM
 	`LinqDataTypes` `t`
 
