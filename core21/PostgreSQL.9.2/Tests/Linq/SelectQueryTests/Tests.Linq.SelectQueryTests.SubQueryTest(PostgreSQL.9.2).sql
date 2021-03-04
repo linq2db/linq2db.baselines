@@ -34,7 +34,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CURRENT_TIMESTAMP + t."Value" * Interval '1 Day' as "Value1",
+			CURRENT_TIMESTAMP + Cast(t."Value" as Float) * Interval '1 Day' as "Value1",
 			CURRENT_TIMESTAMP + 2 * Interval '1 Day' as "Value2"
 		FROM
 			"SampleClass" t

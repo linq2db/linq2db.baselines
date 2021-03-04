@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @p_1 Integer -- Int32
+DECLARE @p_1 Double
 SET     @p_1 = -35
 
 SELECT
