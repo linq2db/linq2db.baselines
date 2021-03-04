@@ -50,7 +50,7 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) > @p_1
+	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval Cast(`t`.`SmallIntValue` as Decimal(29, 10)) Day) > @p_1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @p_1 Int32
+DECLARE @p_1 Double
 SET     @p_1 = 41
 
 SELECT
