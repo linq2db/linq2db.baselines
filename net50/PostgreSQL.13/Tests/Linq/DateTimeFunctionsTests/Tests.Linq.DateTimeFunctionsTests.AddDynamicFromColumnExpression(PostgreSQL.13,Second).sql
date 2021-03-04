@@ -6,7 +6,7 @@ DECLARE @part2 Integer -- Int32
 SET     @part2 = 4
 
 SELECT
-	t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Second'
+	t."DateTimeValue" + Cast(((t."SmallIntValue" + :part1) - :part2) as Float) * Interval '1 Second'
 FROM
 	"LinqDataTypes" t
 
