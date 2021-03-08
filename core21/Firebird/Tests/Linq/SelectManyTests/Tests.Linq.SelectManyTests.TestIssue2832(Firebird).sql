@@ -5,7 +5,7 @@ EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT '
 		CREATE TABLE "DctSetpointtype"
 		(
-			"Id" BigInt  NOT NULL,
+			"Id" Int  NOT NULL,
 
 			CONSTRAINT "PK_DctSetpointtype" PRIMARY KEY ("Id")
 		)
@@ -28,7 +28,7 @@ BeforeExecute
 CREATE TABLE "VWellTree"
 (
 	"ShopId" Decimal,
-	"WellId" BigInt
+	"WellId" Int
 )
 
 BeforeExecute
@@ -38,8 +38,8 @@ EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT '
 		CREATE TABLE "DctOu"
 		(
-			"ParentId" BigInt,
-			"Id"       BigInt  NOT NULL,
+			"ParentId" Int,
+			"Id"       Int  NOT NULL,
 
 			CONSTRAINT "PK_DctOu" PRIMARY KEY ("Id")
 		)
@@ -61,10 +61,10 @@ BeforeExecute
 
 CREATE TABLE "UacUsersDatagroup"
 (
-	"Inheritablepermission" Int    NOT NULL,
-	"Permission"            Int    NOT NULL,
-	"DatagroupId"           BigInt NOT NULL,
-	"UserId"                BigInt NOT NULL,
+	"Inheritablepermission" Int NOT NULL,
+	"Permission"            Int NOT NULL,
+	"DatagroupId"           Int NOT NULL,
+	"UserId"                Int NOT NULL,
 
 	CONSTRAINT "PK_UacUsersDatagroup" PRIMARY KEY ("UserId", "DatagroupId")
 )
@@ -74,8 +74,8 @@ BeforeExecute
 
 CREATE TABLE "Deviation"
 (
-	"WellId"         BigInt NOT NULL,
-	"SetpointtypeId" BigInt NOT NULL
+	"WellId"         Int NOT NULL,
+	"SetpointtypeId" Int NOT NULL
 )
 
 BeforeExecute
