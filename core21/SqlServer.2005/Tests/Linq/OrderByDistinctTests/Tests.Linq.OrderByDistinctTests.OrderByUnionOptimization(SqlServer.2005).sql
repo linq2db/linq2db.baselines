@@ -56,29 +56,21 @@ SELECT
 FROM
 	(
 		SELECT
-			[t2].[Id],
-			[t2].[DuplicateData],
-			[t2].[OrderData1],
-			[t2].[OrderData2]
+			[t1].[Id],
+			[t1].[DuplicateData],
+			[t1].[OrderData1],
+			[t1].[OrderData2]
 		FROM
 			(
 				SELECT
-					[t1].[Id],
-					[t1].[DuplicateData],
-					[t1].[OrderData1],
-					[t1].[OrderData2]
+					[x].[Id],
+					[x].[DuplicateData],
+					[x].[OrderData1],
+					[x].[OrderData2]
 				FROM
-					(
-						SELECT
-							[x].[Id],
-							[x].[DuplicateData],
-							[x].[OrderData1],
-							[x].[OrderData2]
-						FROM
-							[OrderByDistinctData] [x]
-						WHERE
-							[x].[Id] BETWEEN 1 AND 9
-					) [t1]
+					[OrderByDistinctData] [x]
+				WHERE
+					[x].[Id] BETWEEN 1 AND 9
 				UNION ALL
 				SELECT
 					[x_1].[Id],
@@ -89,7 +81,7 @@ FROM
 					[OrderByDistinctData] [x_1]
 				WHERE
 					[x_1].[Id] BETWEEN 10 AND 90
-			) [t2]
+			) [t1]
 		UNION
 		SELECT
 			[x_2].[Id],
