@@ -3,7 +3,7 @@
 
 CREATE TABLE `DctSetpointtype`
 (
-	`Id` BIGINT AUTO_INCREMENT NOT NULL,
+	`Id` INT AUTO_INCREMENT NOT NULL,
 
 	CONSTRAINT `PK_DctSetpointtype` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -14,7 +14,7 @@ BeforeExecute
 CREATE TABLE `VWellTree`
 (
 	`ShopId` DECIMAL     NULL,
-	`WellId` BIGINT      NULL
+	`WellId` INT         NULL
 )
 
 BeforeExecute
@@ -22,8 +22,8 @@ BeforeExecute
 
 CREATE TABLE `DctOu`
 (
-	`ParentId` BIGINT                    NULL,
-	`Id`       BIGINT AUTO_INCREMENT NOT NULL,
+	`ParentId` INT                    NULL,
+	`Id`       INT AUTO_INCREMENT NOT NULL,
 
 	CONSTRAINT `PK_DctOu` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -33,10 +33,10 @@ BeforeExecute
 
 CREATE TABLE `UacUsersDatagroup`
 (
-	`Inheritablepermission` INT    NOT NULL,
-	`Permission`            INT    NOT NULL,
-	`DatagroupId`           BIGINT NOT NULL,
-	`UserId`                BIGINT NOT NULL,
+	`Inheritablepermission` INT NOT NULL,
+	`Permission`            INT NOT NULL,
+	`DatagroupId`           INT NOT NULL,
+	`UserId`                INT NOT NULL,
 
 	CONSTRAINT `PK_UacUsersDatagroup` PRIMARY KEY CLUSTERED (`UserId`, `DatagroupId`)
 )
@@ -46,8 +46,8 @@ BeforeExecute
 
 CREATE TABLE `Deviation`
 (
-	`WellId`         BIGINT NOT NULL,
-	`SetpointtypeId` BIGINT NOT NULL
+	`WellId`         INT NOT NULL,
+	`SetpointtypeId` INT NOT NULL
 )
 
 BeforeExecute
