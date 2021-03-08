@@ -3,7 +3,7 @@
 
 CREATE TABLE "DctSetpointtype"
 (
-	"Id" Number(19)  NOT NULL,
+	"Id" Int  NOT NULL,
 
 	CONSTRAINT "PK_DctSetpointtype" PRIMARY KEY ("Id")
 )
@@ -27,8 +27,8 @@ BeforeExecute
 
 CREATE TABLE "VWellTree"
 (
-	"ShopId" Decimal        NULL,
-	"WellId" Number(19)     NULL
+	"ShopId" Decimal     NULL,
+	"WellId" Int         NULL
 )
 
 BeforeExecute
@@ -36,8 +36,8 @@ BeforeExecute
 
 CREATE TABLE "DctOu"
 (
-	"ParentId" Number(19)      NULL,
-	"Id"       Number(19)  NOT NULL,
+	"ParentId" Int      NULL,
+	"Id"       Int  NOT NULL,
 
 	CONSTRAINT "PK_DctOu" PRIMARY KEY ("Id")
 )
@@ -61,10 +61,10 @@ BeforeExecute
 
 CREATE TABLE "UacUsersDatagroup"
 (
-	"Inheritablepermission" Int        NOT NULL,
-	"Permission"            Int        NOT NULL,
-	"DatagroupId"           Number(19) NOT NULL,
-	"UserId"                Number(19) NOT NULL,
+	"Inheritablepermission" Int NOT NULL,
+	"Permission"            Int NOT NULL,
+	"DatagroupId"           Int NOT NULL,
+	"UserId"                Int NOT NULL,
 
 	CONSTRAINT "PK_UacUsersDatagroup" PRIMARY KEY ("UserId", "DatagroupId")
 )
@@ -74,8 +74,8 @@ BeforeExecute
 
 CREATE TABLE "Deviation"
 (
-	"WellId"         Number(19) NOT NULL,
-	"SetpointtypeId" Number(19) NOT NULL
+	"WellId"         Int NOT NULL,
+	"SetpointtypeId" Int NOT NULL
 )
 
 BeforeExecute
