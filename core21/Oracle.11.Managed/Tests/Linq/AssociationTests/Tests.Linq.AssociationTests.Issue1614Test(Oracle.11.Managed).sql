@@ -41,15 +41,36 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Lookup"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Lookup"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Resource"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Resource"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "User"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "User"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

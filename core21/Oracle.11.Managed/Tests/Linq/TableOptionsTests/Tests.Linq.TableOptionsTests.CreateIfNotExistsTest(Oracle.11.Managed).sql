@@ -72,5 +72,12 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "CreateIfNotExistsTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

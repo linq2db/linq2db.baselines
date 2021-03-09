@@ -127,7 +127,14 @@ ORDER BY
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "HierarchyData"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "HierarchyData"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
