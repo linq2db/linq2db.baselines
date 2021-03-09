@@ -11,8 +11,8 @@ FROM
 			FROM
 				(
 					SELECT
-						Sum(t2.ID) as Sum_1,
-						t2.ParentID
+						Sum(t1.ID) as Sum_1,
+						t1.ParentID
 					FROM
 						(
 							SELECT
@@ -24,23 +24,17 @@ FROM
 								c_1.ParentID < 4
 							UNION ALL
 							SELECT
-								t1.ParentID,
-								t1.ID
+								Nvl(g_1.ParentID, 0) as ParentID,
+								Nvl(g_1.GrandChildID, 0) as ID
 							FROM
-								(
-									SELECT
-										Nvl(g_1.ParentID, 0) as ParentID,
-										Nvl(g_1.GrandChildID, 0) as ID
-									FROM
-										GrandChild g_1
-									WHERE
-										g_1.ParentID >= 4
-								) t1
-						) t2
+								GrandChild g_1
+							WHERE
+								g_1.ParentID >= 4
+						) t1
 					GROUP BY
-						t2.ParentID
+						t1.ParentID
 				) tt
 			WHERE
 				(tt.Sum_1 <> 0 OR tt.Sum_1 IS NULL)
-		) t3 ON p.ParentID = t3.tt
+		) t2 ON p.ParentID = t2.tt
 

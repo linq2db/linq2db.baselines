@@ -284,8 +284,8 @@ SELECT
 FROM
 	(
 		SELECT
-			t2.Id,
-			t2.Value_1
+			t1.Id,
+			t1.Value_1
 		FROM
 			(
 				SELECT
@@ -297,19 +297,13 @@ FROM
 					Mod(t.Id, 2) = 0
 				EXCEPT
 				SELECT
-					t1.Id,
-					t1.Value_1
+					t_1.Id,
+					t_1.Value2 / 10 as Value_1
 				FROM
-					(
-						SELECT
-							t_1.Id,
-							t_1.Value2 / 10 as Value_1
-						FROM
-							SampleData t_1
-						WHERE
-							Mod(t_1.Id, 4) = 0
-					) t1
-			) t2
+					SampleData t_1
+				WHERE
+					Mod(t_1.Id, 4) = 0
+			) t1
 		EXCEPT
 		SELECT
 			t_2.Id,
