@@ -98,6 +98,5 @@ OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[test_temp]', N'U') IS NOT NULL)
-	DROP TABLE [test_temp]
+DROP TABLE IF EXISTS [test_temp]
 

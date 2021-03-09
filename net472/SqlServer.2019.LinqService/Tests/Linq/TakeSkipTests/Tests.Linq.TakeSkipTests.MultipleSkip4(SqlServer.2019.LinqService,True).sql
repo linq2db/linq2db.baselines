@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -141,6 +140,5 @@ OFFSET @skip_2 ROWS
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 

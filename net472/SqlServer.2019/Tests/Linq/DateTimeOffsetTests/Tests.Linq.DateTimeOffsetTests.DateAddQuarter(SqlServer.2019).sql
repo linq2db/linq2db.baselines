@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
-	DROP TABLE [Transactions]
+DROP TABLE IF EXISTS [Transactions]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -63,6 +62,5 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
-	DROP TABLE [Transactions]
+DROP TABLE IF EXISTS [Transactions]
 

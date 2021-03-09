@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
-	DROP TABLE [stVersions]
+DROP TABLE IF EXISTS [stVersions]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -19,8 +18,7 @@ IF (OBJECT_ID(N'[stVersions]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NOT NULL)
-	DROP TABLE [rlStatesTypesAndUserGroups]
+DROP TABLE IF EXISTS [rlStatesTypesAndUserGroups]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -37,8 +35,7 @@ IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[stMain]', N'U') IS NOT NULL)
-	DROP TABLE [stMain]
+DROP TABLE IF EXISTS [stMain]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -66,18 +63,15 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[stMain]', N'U') IS NOT NULL)
-	DROP TABLE [stMain]
+DROP TABLE IF EXISTS [stMain]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NOT NULL)
-	DROP TABLE [rlStatesTypesAndUserGroups]
+DROP TABLE IF EXISTS [rlStatesTypesAndUserGroups]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
-	DROP TABLE [stVersions]
+DROP TABLE IF EXISTS [stVersions]
 

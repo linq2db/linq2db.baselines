@@ -121,6 +121,5 @@ DROP TABLE [xxPerson]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[xxPerson]', N'U') IS NOT NULL)
-	DROP TABLE [xxPerson]
+DROP TABLE IF EXISTS [xxPerson]
 

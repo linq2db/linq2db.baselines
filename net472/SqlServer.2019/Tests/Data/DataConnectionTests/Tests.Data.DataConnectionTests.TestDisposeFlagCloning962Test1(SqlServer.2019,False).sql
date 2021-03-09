@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Categories]', N'U') IS NOT NULL)
-	DROP TABLE [Categories]
+DROP TABLE IF EXISTS [Categories]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -32,8 +31,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Products]', N'U') IS NOT NULL)
-	DROP TABLE [Products]
+DROP TABLE IF EXISTS [Products]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -92,12 +90,10 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Products]', N'U') IS NOT NULL)
-	DROP TABLE [Products]
+DROP TABLE IF EXISTS [Products]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Categories]', N'U') IS NOT NULL)
-	DROP TABLE [Categories]
+DROP TABLE IF EXISTS [Categories]
 

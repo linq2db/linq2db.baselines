@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
-	DROP TABLE [UpdatedEntities]
+DROP TABLE IF EXISTS [UpdatedEntities]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -39,8 +38,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NOT NULL)
-	DROP TABLE [UpdateRelation]
+DROP TABLE IF EXISTS [UpdateRelation]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -101,12 +99,10 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NOT NULL)
-	DROP TABLE [UpdateRelation]
+DROP TABLE IF EXISTS [UpdateRelation]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
-	DROP TABLE [UpdatedEntities]
+DROP TABLE IF EXISTS [UpdatedEntities]
 
