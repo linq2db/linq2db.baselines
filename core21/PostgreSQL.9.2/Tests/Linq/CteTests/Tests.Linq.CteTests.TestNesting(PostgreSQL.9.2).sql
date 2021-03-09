@@ -53,15 +53,15 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "NestingC"
+DROP TABLE IF EXISTS "NestingC"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "NestingB"
+DROP TABLE IF EXISTS "NestingB"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "NestingA"
+DROP TABLE IF EXISTS "NestingA"
 

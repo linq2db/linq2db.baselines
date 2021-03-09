@@ -103,5 +103,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "Issue1564Category"
+DROP TABLE IF EXISTS "Issue1564Category"
 

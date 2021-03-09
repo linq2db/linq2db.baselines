@@ -28,5 +28,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "CustomerBase"
+DROP TABLE IF EXISTS "CustomerBase"
 

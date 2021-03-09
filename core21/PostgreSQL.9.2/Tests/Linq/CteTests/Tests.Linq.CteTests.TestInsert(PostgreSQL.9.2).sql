@@ -73,5 +73,5 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "CteChild"
+DROP TABLE IF EXISTS "CteChild"
 

@@ -20,5 +20,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "IsTemporaryTable"
+DROP TABLE IF EXISTS "IsTemporaryTable"
 

@@ -24,5 +24,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "Issue1189Customer"
+DROP TABLE IF EXISTS "Issue1189Customer"
 
