@@ -187,5 +187,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE ValueConversion
+DROP TABLE IF EXISTS ValueConversion
 

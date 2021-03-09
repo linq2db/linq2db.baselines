@@ -35,5 +35,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Issue1279Table
+DROP TABLE IF EXISTS Issue1279Table
 

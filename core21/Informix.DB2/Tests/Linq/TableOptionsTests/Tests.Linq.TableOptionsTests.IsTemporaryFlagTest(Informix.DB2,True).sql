@@ -19,5 +19,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IsTemporaryTable
+DROP TABLE IF EXISTS IsTemporaryTable
 

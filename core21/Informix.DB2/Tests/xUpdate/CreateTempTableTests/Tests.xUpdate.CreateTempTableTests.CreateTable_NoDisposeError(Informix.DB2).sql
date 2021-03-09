@@ -1,33 +1,23 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE ValueItem
+DROP TABLE IF EXISTS TempTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TEMP TABLE TempTable
 (
-	"Value" Int NOT NULL
+	ID Int NOT NULL
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-INSERT INTO ValueItem
-(
-	"Value"
-)
-VALUES
-(
-	123
-)
+DROP TABLE TempTable
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	row_1."Value"
-FROM
-	ValueItem row_1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ValueItem
+DROP TABLE IF EXISTS TempTable
 

@@ -87,10 +87,10 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE stVersions
+DROP TABLE IF EXISTS stVersions
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE stLinks
+DROP TABLE IF EXISTS stLinks
 

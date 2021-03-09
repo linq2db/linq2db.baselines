@@ -28,5 +28,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE "User"
+DROP TABLE IF EXISTS "User"
 

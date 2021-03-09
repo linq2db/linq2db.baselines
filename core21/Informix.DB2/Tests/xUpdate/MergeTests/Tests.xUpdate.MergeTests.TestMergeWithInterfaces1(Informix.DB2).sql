@@ -40,5 +40,5 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE ReviewIndexes
+DROP TABLE IF EXISTS ReviewIndexes
 

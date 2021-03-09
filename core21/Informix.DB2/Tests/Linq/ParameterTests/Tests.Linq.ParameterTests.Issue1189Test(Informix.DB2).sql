@@ -22,5 +22,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Issue1189Customer
+DROP TABLE IF EXISTS Issue1189Customer
 

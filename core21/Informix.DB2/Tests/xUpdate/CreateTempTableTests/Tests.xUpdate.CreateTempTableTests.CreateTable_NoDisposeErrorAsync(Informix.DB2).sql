@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 
@@ -14,22 +14,10 @@ CREATE TEMP TABLE TempTable
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-INSERT INTO TempTable
-(
-	ID
-)
-SELECT
-	p.ParentID
-FROM
-	Parent p
+DROP TABLE TempTable
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE TempTable
 

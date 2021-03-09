@@ -77,5 +77,5 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Issue1373Tests
+DROP TABLE IF EXISTS Issue1373Tests
 

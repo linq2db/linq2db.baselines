@@ -57,15 +57,15 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE ProductAttributeMapping
+DROP TABLE IF EXISTS ProductAttributeMapping
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE ProductAttributeTable
+DROP TABLE IF EXISTS ProductAttributeTable
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE ProductTable
+DROP TABLE IF EXISTS ProductTable
 

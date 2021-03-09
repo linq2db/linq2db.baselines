@@ -60,5 +60,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Issue1554FluentTable
+DROP TABLE IF EXISTS Issue1554FluentTable
 

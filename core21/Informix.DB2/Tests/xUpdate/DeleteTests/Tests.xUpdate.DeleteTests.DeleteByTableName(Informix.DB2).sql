@@ -79,5 +79,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE xxPerson
+DROP TABLE IF EXISTS xxPerson
 

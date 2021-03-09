@@ -58,5 +58,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Parent564
+DROP TABLE IF EXISTS Parent564
 

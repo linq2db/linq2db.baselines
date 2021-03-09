@@ -15,5 +15,5 @@ INSERT BULK Issue1107TB
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Issue1107TB
+DROP TABLE IF EXISTS Issue1107TB
 

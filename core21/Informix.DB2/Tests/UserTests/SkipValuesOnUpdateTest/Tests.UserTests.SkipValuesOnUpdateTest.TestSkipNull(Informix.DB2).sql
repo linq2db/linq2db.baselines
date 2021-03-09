@@ -102,5 +102,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE PR_1598_Update_Null_Table
+DROP TABLE IF EXISTS PR_1598_Update_Null_Table
 

@@ -126,5 +126,5 @@ BeforeExecute
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE ColumnOrderTest
+DROP TABLE IF EXISTS ColumnOrderTest
 

@@ -88,25 +88,25 @@ GROUP BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Flat
+DROP TABLE IF EXISTS Flat
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Nomin
+DROP TABLE IF EXISTS Nomin
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Trade
+DROP TABLE IF EXISTS Trade
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE AuditAlert
+DROP TABLE IF EXISTS AuditAlert
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Alert
+DROP TABLE IF EXISTS Alert
 

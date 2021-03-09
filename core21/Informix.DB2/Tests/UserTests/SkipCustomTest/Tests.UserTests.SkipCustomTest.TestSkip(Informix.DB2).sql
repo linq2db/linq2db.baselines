@@ -77,5 +77,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE PR_1598_SkipCustom_Table
+DROP TABLE IF EXISTS PR_1598_SkipCustom_Table
 
