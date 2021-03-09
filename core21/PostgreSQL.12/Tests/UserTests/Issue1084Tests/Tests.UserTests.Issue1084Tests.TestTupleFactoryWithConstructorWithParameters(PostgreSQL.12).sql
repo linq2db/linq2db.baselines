@@ -21,10 +21,10 @@ CREATE TABLE i1084_student
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE i1084_student
+DROP TABLE IF EXISTS i1084_student
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE i1084_person
+DROP TABLE IF EXISTS i1084_person
 

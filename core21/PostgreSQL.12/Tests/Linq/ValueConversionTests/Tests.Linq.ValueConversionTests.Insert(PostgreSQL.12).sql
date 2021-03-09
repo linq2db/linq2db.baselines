@@ -196,5 +196,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "ValueConversion"
+DROP TABLE IF EXISTS "ValueConversion"
 

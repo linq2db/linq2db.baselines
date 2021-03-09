@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "AttributeBase"
+DROP TABLE IF EXISTS "AttributeBase"
 
