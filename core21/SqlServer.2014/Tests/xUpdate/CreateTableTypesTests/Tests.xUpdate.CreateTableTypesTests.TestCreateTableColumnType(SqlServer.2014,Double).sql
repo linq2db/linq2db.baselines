@@ -57,5 +57,6 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [CreateTableTypes]
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NOT NULL)
+	DROP TABLE [CreateTableTypes]
 

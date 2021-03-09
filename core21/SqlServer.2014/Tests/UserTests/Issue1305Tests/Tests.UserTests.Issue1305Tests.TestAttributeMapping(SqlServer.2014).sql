@@ -442,5 +442,6 @@ sp_describe_first_result_set
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [ColumnOrderTest]
+IF (OBJECT_ID(N'[ColumnOrderTest]', N'U') IS NOT NULL)
+	DROP TABLE [ColumnOrderTest]
 
