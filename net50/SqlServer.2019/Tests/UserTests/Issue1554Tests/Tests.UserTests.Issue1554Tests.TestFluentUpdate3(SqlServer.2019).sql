@@ -64,5 +64,6 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Issue1554FluentTable]
+IF (OBJECT_ID(N'[Issue1554FluentTable]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1554FluentTable]
 

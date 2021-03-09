@@ -24,5 +24,6 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Issue2434Table]
+IF (OBJECT_ID(N'[Issue2434Table]', N'U') IS NOT NULL)
+	DROP TABLE [Issue2434Table]
 

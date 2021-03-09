@@ -18,10 +18,12 @@ CREATE TABLE [LargeNumberEntity]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [LargeNumberEntity]
+IF (OBJECT_ID(N'[LargeNumberEntity]', N'U') IS NOT NULL)
+	DROP TABLE [LargeNumberEntity]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [FewNumberEntity]
+IF (OBJECT_ID(N'[FewNumberEntity]', N'U') IS NOT NULL)
+	DROP TABLE [FewNumberEntity]
 

@@ -97,5 +97,6 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [CacheTestTable]
+IF (OBJECT_ID(N'[CacheTestTable]', N'U') IS NOT NULL)
+	DROP TABLE [CacheTestTable]
 

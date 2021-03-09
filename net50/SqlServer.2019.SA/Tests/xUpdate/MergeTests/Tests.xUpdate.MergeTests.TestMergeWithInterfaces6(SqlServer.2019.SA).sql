@@ -37,5 +37,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [ReviewIndexes]
+IF (OBJECT_ID(N'[ReviewIndexes]', N'U') IS NOT NULL)
+	DROP TABLE [ReviewIndexes]
 

@@ -37,5 +37,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [TableWithData]
+IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
+	DROP TABLE [TableWithData]
 

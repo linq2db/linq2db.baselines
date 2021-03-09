@@ -36,5 +36,6 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [AllTypesCustomMaxLength]
+IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NOT NULL)
+	DROP TABLE [AllTypesCustomMaxLength]
 
