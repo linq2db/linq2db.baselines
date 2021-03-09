@@ -137,10 +137,10 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Message"
+DROP TABLE IF EXISTS "Message"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Topic"
+DROP TABLE IF EXISTS "Topic"
 

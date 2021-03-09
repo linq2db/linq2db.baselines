@@ -57,5 +57,5 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "CreateTableTypes"
+DROP TABLE IF EXISTS "CreateTableTypes"
 

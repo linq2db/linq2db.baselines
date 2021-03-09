@@ -291,5 +291,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "TypeConvertTable"
+DROP TABLE IF EXISTS "TypeConvertTable"
 

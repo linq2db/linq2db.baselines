@@ -77,5 +77,5 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Issue1373Tests"
+DROP TABLE IF EXISTS "Issue1373Tests"
 
