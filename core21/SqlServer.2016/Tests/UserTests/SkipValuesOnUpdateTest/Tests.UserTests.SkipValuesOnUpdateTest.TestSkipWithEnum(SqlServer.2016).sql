@@ -126,5 +126,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [PR_1598_Update_Enum_Table]
+IF (OBJECT_ID(N'[PR_1598_Update_Enum_Table]', N'U') IS NOT NULL)
+	DROP TABLE [PR_1598_Update_Enum_Table]
 

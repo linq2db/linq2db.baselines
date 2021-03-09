@@ -114,7 +114,8 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [HierarchyData]
+IF (OBJECT_ID(N'[HierarchyData]', N'U') IS NOT NULL)
+	DROP TABLE [HierarchyData]
 
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012

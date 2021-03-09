@@ -73,5 +73,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [Issue1363]
+IF (OBJECT_ID(N'[Issue1363]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1363]
 

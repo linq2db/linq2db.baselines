@@ -442,5 +442,6 @@ SET     @ReturnFullRow = 0
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [ColumnOrderTest]
+IF (OBJECT_ID(N'[ColumnOrderTest]', N'U') IS NOT NULL)
+	DROP TABLE [ColumnOrderTest]
 
