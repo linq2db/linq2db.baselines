@@ -41,15 +41,24 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Lookup"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Lookup')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Lookup"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Resource"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Resource')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Resource"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "User"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'User')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "User"';
+END
 

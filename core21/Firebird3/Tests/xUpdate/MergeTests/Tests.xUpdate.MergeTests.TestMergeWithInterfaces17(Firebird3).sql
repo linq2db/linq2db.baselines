@@ -23,5 +23,8 @@ WHEN MATCHED AND "Target"."Id" = "Source"."Id" THEN DELETE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "ReviewIndexes"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ReviewIndexes')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ReviewIndexes"';
+END
 

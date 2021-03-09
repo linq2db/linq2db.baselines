@@ -10,5 +10,8 @@ CREATE TABLE "HierarchyTree"
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "HierarchyTree"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'HierarchyTree')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "HierarchyTree"';
+END
 

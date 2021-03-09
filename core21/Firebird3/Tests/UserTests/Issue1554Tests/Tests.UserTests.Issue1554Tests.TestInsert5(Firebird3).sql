@@ -47,5 +47,8 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Issue1554Table"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1554Table')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1554Table"';
+END
 

@@ -96,8 +96,11 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_xxPerson_f3_1a"';
-	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_xxPerson_f3_1a"';
-	EXECUTE STATEMENT 'DROP TABLE "xxPerson_f3_1a"';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_xxPerson_f3_1a')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_xxPerson_f3_1a"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_xxPerson_f3_1a')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_xxPerson_f3_1a"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPerson_f3_1a')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "xxPerson_f3_1a"';
 END
 

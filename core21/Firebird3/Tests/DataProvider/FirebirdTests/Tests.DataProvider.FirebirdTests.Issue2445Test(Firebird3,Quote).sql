@@ -48,10 +48,16 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Client"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Client')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Client"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Card"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Card')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Card"';
+END
 
