@@ -196,5 +196,12 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "ValueConversion"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

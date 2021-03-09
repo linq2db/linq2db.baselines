@@ -94,25 +94,60 @@ GROUP BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Flat"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Flat"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Nomin"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Nomin"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Trade"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Trade"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "AuditAlert"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "AuditAlert"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Alert"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Alert"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

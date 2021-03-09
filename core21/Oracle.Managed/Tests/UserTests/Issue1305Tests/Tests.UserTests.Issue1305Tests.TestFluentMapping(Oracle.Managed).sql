@@ -303,5 +303,12 @@ SYSTEM.TEST2132
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "FluentMapping"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentMapping"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

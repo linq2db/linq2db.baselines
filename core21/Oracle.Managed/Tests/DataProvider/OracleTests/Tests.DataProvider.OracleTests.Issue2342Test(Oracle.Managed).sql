@@ -24,5 +24,12 @@ TRUNCATE TABLE "Issue2342Entity"
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Issue2342Entity"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue2342Entity"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

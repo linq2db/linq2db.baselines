@@ -109,5 +109,12 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "PR_1598_Insert_Table_Cache"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "PR_1598_Insert_Table_Cache"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

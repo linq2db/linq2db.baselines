@@ -305,5 +305,12 @@ SYSTEM.TEST2132
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "ColumnOrderTest"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ColumnOrderTest"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

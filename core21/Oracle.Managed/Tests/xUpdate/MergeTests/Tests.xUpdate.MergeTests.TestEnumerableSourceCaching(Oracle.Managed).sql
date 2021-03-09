@@ -88,5 +88,12 @@ ORDER BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "CacheTestTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "CacheTestTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

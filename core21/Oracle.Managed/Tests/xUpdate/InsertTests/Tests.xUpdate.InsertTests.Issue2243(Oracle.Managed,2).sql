@@ -112,5 +112,12 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "test_insert_or_replace"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "test_insert_or_replace"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

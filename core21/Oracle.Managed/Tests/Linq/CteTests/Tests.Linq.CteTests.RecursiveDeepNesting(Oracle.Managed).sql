@@ -10,5 +10,12 @@ CREATE TABLE "HierarchyTree"
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "HierarchyTree"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "HierarchyTree"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
