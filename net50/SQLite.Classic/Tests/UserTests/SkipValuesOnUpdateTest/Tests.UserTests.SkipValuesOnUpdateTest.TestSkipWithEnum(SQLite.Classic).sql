@@ -125,5 +125,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [PR_1598_Update_Enum_Table]
+DROP TABLE IF EXISTS [PR_1598_Update_Enum_Table]
 

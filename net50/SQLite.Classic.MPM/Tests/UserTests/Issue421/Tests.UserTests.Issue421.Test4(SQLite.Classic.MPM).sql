@@ -50,5 +50,5 @@ LIMIT 1
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [BlobClass]
+DROP TABLE IF EXISTS [BlobClass]
 

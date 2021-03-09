@@ -26,5 +26,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [CustomerBase]
+DROP TABLE IF EXISTS [CustomerBase]
 

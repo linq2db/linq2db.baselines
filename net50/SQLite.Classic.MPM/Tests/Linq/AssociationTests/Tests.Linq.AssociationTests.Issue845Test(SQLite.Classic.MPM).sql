@@ -30,10 +30,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Department]
+DROP TABLE IF EXISTS [Department]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Employee]
+DROP TABLE IF EXISTS [Employee]
 

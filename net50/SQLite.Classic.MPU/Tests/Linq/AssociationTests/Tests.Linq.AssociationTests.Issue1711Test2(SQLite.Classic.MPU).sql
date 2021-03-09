@@ -37,10 +37,10 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Relationship1711]
+DROP TABLE IF EXISTS [Relationship1711]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Entity1711]
+DROP TABLE IF EXISTS [Entity1711]
 

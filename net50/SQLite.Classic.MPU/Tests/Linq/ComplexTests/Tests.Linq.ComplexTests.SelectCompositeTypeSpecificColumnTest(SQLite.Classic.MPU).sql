@@ -28,5 +28,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [User]
+DROP TABLE IF EXISTS [User]
 
