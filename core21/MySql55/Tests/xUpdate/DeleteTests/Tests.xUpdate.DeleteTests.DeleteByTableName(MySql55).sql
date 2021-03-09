@@ -83,5 +83,5 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `xxPerson`
+DROP TABLE IF EXISTS `xxPerson`
 

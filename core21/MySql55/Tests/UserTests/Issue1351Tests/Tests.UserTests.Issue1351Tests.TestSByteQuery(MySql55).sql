@@ -35,5 +35,5 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `T1351Model`
+DROP TABLE IF EXISTS `T1351Model`
 

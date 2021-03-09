@@ -96,20 +96,20 @@ SET
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `billing_TempReading`
+DROP TABLE IF EXISTS `billing_TempReading`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `billing_DevReadingType`
+DROP TABLE IF EXISTS `billing_DevReadingType`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `billing_devices`
+DROP TABLE IF EXISTS `billing_devices`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `billing_devtypes`
+DROP TABLE IF EXISTS `billing_devtypes`
 

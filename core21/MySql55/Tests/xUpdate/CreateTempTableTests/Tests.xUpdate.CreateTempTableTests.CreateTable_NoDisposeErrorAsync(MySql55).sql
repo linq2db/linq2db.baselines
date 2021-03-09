@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql.Official MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 
@@ -14,22 +14,10 @@ CREATE TEMPORARY TABLE `TempTable`
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-INSERT INTO `TempTable`
-(
-	`ID`
-)
-SELECT
-	`p`.`ParentID`
-FROM
-	`Parent` `p`
+DROP TABLE `TempTable`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE `TempTable`
 

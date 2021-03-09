@@ -57,15 +57,15 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `ProductAttributeMapping`
+DROP TABLE IF EXISTS `ProductAttributeMapping`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `ProductAttributeTable`
+DROP TABLE IF EXISTS `ProductAttributeTable`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `ProductTable`
+DROP TABLE IF EXISTS `ProductTable`
 

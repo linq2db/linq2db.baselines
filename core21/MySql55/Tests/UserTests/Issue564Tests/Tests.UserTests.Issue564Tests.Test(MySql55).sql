@@ -58,5 +58,5 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Parent564`
+DROP TABLE IF EXISTS `Parent564`
 

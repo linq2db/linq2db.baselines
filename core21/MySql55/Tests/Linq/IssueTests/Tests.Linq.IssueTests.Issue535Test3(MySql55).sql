@@ -28,5 +28,5 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `CustomerBase`
+DROP TABLE IF EXISTS `CustomerBase`
 

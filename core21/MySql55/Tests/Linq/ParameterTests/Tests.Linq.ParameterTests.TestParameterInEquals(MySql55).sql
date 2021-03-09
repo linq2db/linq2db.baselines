@@ -35,10 +35,10 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `TestEqualsTable2`
+DROP TABLE IF EXISTS `TestEqualsTable2`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `TestEqualsTable1`
+DROP TABLE IF EXISTS `TestEqualsTable1`
 

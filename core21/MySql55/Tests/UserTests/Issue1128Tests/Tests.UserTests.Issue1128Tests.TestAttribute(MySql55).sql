@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `AttributeBase`
+DROP TABLE IF EXISTS `AttributeBase`
 

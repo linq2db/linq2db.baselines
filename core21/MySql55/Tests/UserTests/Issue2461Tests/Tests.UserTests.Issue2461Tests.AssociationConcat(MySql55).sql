@@ -19,10 +19,10 @@ CREATE TABLE `CUST_DTL`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `CUST_DTL`
+DROP TABLE IF EXISTS `CUST_DTL`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `MRECEIPT`
+DROP TABLE IF EXISTS `MRECEIPT`
 

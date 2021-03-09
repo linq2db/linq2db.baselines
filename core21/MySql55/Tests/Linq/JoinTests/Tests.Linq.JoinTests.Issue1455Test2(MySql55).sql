@@ -94,25 +94,25 @@ GROUP BY
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Flat`
+DROP TABLE IF EXISTS `Flat`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Nomin`
+DROP TABLE IF EXISTS `Nomin`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Trade`
+DROP TABLE IF EXISTS `Trade`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `AuditAlert`
+DROP TABLE IF EXISTS `AuditAlert`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Alert`
+DROP TABLE IF EXISTS `Alert`
 
