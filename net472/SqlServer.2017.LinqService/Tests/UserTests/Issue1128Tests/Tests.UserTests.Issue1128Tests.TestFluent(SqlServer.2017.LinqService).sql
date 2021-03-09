@@ -25,5 +25,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [AttributeBase]
+IF (OBJECT_ID(N'[AttributeBase]', N'U') IS NOT NULL)
+	DROP TABLE [AttributeBase]
 

@@ -28,5 +28,6 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [User]
+IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
+	DROP TABLE [User]
 

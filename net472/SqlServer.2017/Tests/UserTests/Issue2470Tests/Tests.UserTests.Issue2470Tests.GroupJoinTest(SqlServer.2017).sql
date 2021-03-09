@@ -58,10 +58,12 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [dbo].[OrderItems]
+IF (OBJECT_ID(N'[dbo].[OrderItems]', N'U') IS NOT NULL)
+	DROP TABLE [dbo].[OrderItems]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [dbo].[Orders]
+IF (OBJECT_ID(N'[dbo].[Orders]', N'U') IS NOT NULL)
+	DROP TABLE [dbo].[Orders]
 

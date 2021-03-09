@@ -42,10 +42,12 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [person649]
+IF (OBJECT_ID(N'[person649]', N'U') IS NOT NULL)
+	DROP TABLE [person649]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [activity649]
+IF (OBJECT_ID(N'[activity649]', N'U') IS NOT NULL)
+	DROP TABLE [activity649]
 

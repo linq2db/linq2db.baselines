@@ -129,5 +129,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Stone]
+IF (OBJECT_ID(N'[Stone]', N'U') IS NOT NULL)
+	DROP TABLE [Stone]
 
