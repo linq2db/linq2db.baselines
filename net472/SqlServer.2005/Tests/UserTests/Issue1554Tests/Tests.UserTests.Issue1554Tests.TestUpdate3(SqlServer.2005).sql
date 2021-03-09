@@ -64,5 +64,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Issue1554Table]
+IF (OBJECT_ID(N'[Issue1554Table]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1554Table]
 
