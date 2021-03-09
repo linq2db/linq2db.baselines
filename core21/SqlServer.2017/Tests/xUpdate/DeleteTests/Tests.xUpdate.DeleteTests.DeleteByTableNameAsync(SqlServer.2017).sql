@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017 (asynchronously)
 
-IF (OBJECT_ID(N'[xxPerson]', N'U') IS NOT NULL)
-	DROP TABLE [xxPerson]
+DROP TABLE IF EXISTS [xxPerson]
 
 BeforeExecute
 -- SqlServer.2017 (asynchronously)

@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[TextData]', N'U') IS NOT NULL)
-	DROP TABLE [TextData]
+DROP TABLE IF EXISTS [TextData]
 
 BeforeExecute
 -- SqlServer.2017
@@ -60,6 +59,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[TextData]', N'U') IS NOT NULL)
-	DROP TABLE [TextData]
+DROP TABLE IF EXISTS [TextData]
 

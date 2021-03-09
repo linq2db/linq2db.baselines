@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [GroupSampleClass]
+DROP TABLE IF EXISTS [GroupSampleClass]
 
 BeforeExecute
 -- SqlServer.2017
@@ -61,6 +60,5 @@ GROUP BY GROUPING SETS (
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [GroupSampleClass]
+DROP TABLE IF EXISTS [GroupSampleClass]
 

@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[CteChild]', N'U') IS NOT NULL)
-	DROP TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
 
 BeforeExecute
 -- SqlServer.2017
@@ -55,6 +54,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[CteChild]', N'U') IS NOT NULL)
-	DROP TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
 

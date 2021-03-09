@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[SomeTable]', N'U') IS NOT NULL)
-	DROP TABLE [SomeTable]
+DROP TABLE IF EXISTS [SomeTable]
 
 BeforeExecute
 -- SqlServer.2017
@@ -37,8 +36,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
-	DROP TABLE [SomeOtherEntity]
+DROP TABLE IF EXISTS [SomeOtherEntity]
 
 BeforeExecute
 -- SqlServer.2017
@@ -138,12 +136,10 @@ BeforeExecute
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
-	DROP TABLE [SomeOtherEntity]
+DROP TABLE IF EXISTS [SomeOtherEntity]
 
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[SomeTable]', N'U') IS NOT NULL)
-	DROP TABLE [SomeTable]
+DROP TABLE IF EXISTS [SomeTable]
 

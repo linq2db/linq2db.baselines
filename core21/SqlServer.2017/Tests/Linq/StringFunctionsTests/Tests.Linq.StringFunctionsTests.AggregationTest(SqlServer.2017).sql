@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
 -- SqlServer.2017
@@ -48,6 +47,5 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 

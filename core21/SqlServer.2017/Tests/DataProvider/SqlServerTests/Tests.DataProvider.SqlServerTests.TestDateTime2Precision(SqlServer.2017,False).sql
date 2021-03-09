@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NOT NULL)
-	DROP TABLE [DateTime2Table]
+DROP TABLE IF EXISTS [DateTime2Table]
 
 BeforeExecute
 -- SqlServer.2017
@@ -293,6 +292,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NOT NULL)
-	DROP TABLE [DateTime2Table]
+DROP TABLE IF EXISTS [DateTime2Table]
 

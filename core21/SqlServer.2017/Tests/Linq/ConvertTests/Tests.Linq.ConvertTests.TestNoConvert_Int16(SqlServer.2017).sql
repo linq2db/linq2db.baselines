@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NOT NULL)
-	DROP TABLE [IntegerConverts]
+DROP TABLE IF EXISTS [IntegerConverts]
 
 BeforeExecute
 -- SqlServer.2017
@@ -85,6 +84,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NOT NULL)
-	DROP TABLE [IntegerConverts]
+DROP TABLE IF EXISTS [IntegerConverts]
 
