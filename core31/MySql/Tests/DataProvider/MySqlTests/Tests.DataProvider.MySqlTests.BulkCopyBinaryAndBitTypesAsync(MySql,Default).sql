@@ -92,5 +92,5 @@ ORDER BY
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `NeedS.esca Pin``g`
+DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 

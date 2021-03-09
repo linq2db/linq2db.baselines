@@ -129,5 +129,5 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Stone`
+DROP TABLE IF EXISTS `Stone`
 

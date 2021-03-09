@@ -321,5 +321,5 @@ SET     @param1 = NULL
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `ColumnOrderTest`
+DROP TABLE IF EXISTS `ColumnOrderTest`
 

@@ -194,15 +194,15 @@ ORDER BY
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `T3`
+DROP TABLE IF EXISTS `T3`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `T2`
+DROP TABLE IF EXISTS `T2`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `T1`
+DROP TABLE IF EXISTS `T1`
 

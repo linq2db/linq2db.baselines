@@ -87,10 +87,10 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `stVersions`
+DROP TABLE IF EXISTS `stVersions`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `stLinks`
+DROP TABLE IF EXISTS `stLinks`
 

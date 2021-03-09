@@ -21,5 +21,5 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `SampleClass`
+DROP TABLE IF EXISTS `SampleClass`
 

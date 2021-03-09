@@ -152,5 +152,5 @@ SELECT
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `TestSchemaTypesTable`
+DROP TABLE IF EXISTS `TestSchemaTypesTable`
 

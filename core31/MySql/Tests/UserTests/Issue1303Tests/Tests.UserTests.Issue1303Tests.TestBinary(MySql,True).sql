@@ -72,5 +72,5 @@ LIMIT 2
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Issue1303`
+DROP TABLE IF EXISTS `Issue1303`
 

@@ -96,20 +96,20 @@ SET
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `billing_TempReading`
+DROP TABLE IF EXISTS `billing_TempReading`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `billing_DevReadingType`
+DROP TABLE IF EXISTS `billing_DevReadingType`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `billing_devices`
+DROP TABLE IF EXISTS `billing_devices`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `billing_devtypes`
+DROP TABLE IF EXISTS `billing_devtypes`
 

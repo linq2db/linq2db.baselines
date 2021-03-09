@@ -41,15 +41,15 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Lookup`
+DROP TABLE IF EXISTS `Lookup`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Resource`
+DROP TABLE IF EXISTS `Resource`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `User`
+DROP TABLE IF EXISTS `User`
 

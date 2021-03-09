@@ -82,5 +82,5 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Issue1303`
+DROP TABLE IF EXISTS `Issue1303`
 

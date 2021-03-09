@@ -358,5 +358,5 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `CreateTable`
+DROP TABLE IF EXISTS `CreateTable`
 

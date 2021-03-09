@@ -346,5 +346,5 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `CreateTable`
+DROP TABLE IF EXISTS `CreateTable`
 

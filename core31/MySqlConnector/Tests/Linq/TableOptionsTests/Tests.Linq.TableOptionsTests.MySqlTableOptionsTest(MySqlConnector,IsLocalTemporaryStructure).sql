@@ -10,5 +10,5 @@ CREATE TEMPORARY TABLE `TestTable`
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `TestTable`
+DROP TABLE IF EXISTS `TestTable`
 
