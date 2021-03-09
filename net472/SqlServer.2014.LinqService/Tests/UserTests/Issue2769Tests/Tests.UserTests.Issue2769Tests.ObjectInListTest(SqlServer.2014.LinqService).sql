@@ -21,5 +21,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [SampleClass]
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
+	DROP TABLE [SampleClass]
 

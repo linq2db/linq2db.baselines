@@ -81,5 +81,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [PR_1598_SkipCustom_Table]
+IF (OBJECT_ID(N'[PR_1598_SkipCustom_Table]', N'U') IS NOT NULL)
+	DROP TABLE [PR_1598_SkipCustom_Table]
 

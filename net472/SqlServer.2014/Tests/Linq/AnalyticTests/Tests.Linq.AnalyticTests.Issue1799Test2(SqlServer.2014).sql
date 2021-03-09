@@ -55,15 +55,18 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [Issue1799Table3]
+IF (OBJECT_ID(N'[Issue1799Table3]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1799Table3]
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [Issue1799Table2]
+IF (OBJECT_ID(N'[Issue1799Table2]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1799Table2]
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [Issue1799Table1]
+IF (OBJECT_ID(N'[Issue1799Table1]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1799Table1]
 
