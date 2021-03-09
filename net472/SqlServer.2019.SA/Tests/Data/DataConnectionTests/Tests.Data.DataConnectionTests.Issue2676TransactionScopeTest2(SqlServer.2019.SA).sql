@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[TransactionScopeTable]', N'U') IS NOT NULL)
-	DROP TABLE [TransactionScopeTable]
+DROP TABLE IF EXISTS [TransactionScopeTable]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -49,6 +48,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[TransactionScopeTable]', N'U') IS NOT NULL)
-	DROP TABLE [TransactionScopeTable]
+DROP TABLE IF EXISTS [TransactionScopeTable]
 

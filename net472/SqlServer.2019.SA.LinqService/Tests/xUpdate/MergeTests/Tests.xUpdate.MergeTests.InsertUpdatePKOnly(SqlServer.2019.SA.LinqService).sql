@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NOT NULL)
-	DROP TABLE [PKOnlyTable]
+DROP TABLE IF EXISTS [PKOnlyTable]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -66,6 +65,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NOT NULL)
-	DROP TABLE [PKOnlyTable]
+DROP TABLE IF EXISTS [PKOnlyTable]
 

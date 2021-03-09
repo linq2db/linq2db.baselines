@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Issue1836]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1836]
+DROP TABLE IF EXISTS [Issue1836]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -44,6 +43,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Issue1836]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1836]
+DROP TABLE IF EXISTS [Issue1836]
 

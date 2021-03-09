@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017 (asynchronously)
 
-IF (OBJECT_ID(N'[xxPatient]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient]
+DROP TABLE IF EXISTS [xxPatient]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017 (asynchronously)
@@ -146,6 +145,5 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017 (asynchronously)
 
-IF (OBJECT_ID(N'[xxPatient]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient]
+DROP TABLE IF EXISTS [xxPatient]
 

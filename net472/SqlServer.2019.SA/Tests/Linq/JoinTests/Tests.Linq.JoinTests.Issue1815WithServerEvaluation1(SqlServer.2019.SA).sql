@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[StLink]', N'U') IS NOT NULL)
-	DROP TABLE [StLink]
+DROP TABLE IF EXISTS [StLink]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -33,8 +32,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[EdtLink]', N'U') IS NOT NULL)
-	DROP TABLE [EdtLink]
+DROP TABLE IF EXISTS [EdtLink]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -94,12 +92,10 @@ WHERE
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[EdtLink]', N'U') IS NOT NULL)
-	DROP TABLE [EdtLink]
+DROP TABLE IF EXISTS [EdtLink]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[StLink]', N'U') IS NOT NULL)
-	DROP TABLE [StLink]
+DROP TABLE IF EXISTS [StLink]
 
