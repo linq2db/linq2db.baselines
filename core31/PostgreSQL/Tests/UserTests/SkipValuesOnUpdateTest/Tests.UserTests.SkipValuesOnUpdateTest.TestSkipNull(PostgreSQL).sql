@@ -111,5 +111,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "PR_1598_Update_Null_Table"
+DROP TABLE IF EXISTS "PR_1598_Update_Null_Table"
 

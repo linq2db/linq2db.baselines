@@ -144,5 +144,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "PR_1598_Mixed_Table"
+DROP TABLE IF EXISTS "PR_1598_Mixed_Table"
 

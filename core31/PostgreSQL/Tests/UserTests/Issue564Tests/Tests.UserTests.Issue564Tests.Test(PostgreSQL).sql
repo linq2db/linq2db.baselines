@@ -58,5 +58,5 @@ FROM
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Parent564"
+DROP TABLE IF EXISTS "Parent564"
 

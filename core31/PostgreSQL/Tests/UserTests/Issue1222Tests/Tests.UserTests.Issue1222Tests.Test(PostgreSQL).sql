@@ -87,10 +87,10 @@ FROM
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "stVersions"
+DROP TABLE IF EXISTS "stVersions"
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "stLinks"
+DROP TABLE IF EXISTS "stLinks"
 
