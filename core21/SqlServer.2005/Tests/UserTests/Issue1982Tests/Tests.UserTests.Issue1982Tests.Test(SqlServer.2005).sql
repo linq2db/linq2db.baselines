@@ -27,5 +27,6 @@ SELECT
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [Issue1982Table]
+IF (OBJECT_ID(N'[Issue1982Table]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1982Table]
 
