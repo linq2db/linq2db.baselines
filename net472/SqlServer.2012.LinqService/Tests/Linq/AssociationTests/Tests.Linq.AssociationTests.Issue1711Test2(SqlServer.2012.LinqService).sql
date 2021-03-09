@@ -37,10 +37,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Relationship1711]
+IF (OBJECT_ID(N'[Relationship1711]', N'U') IS NOT NULL)
+	DROP TABLE [Relationship1711]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Entity1711]
+IF (OBJECT_ID(N'[Entity1711]', N'U') IS NOT NULL)
+	DROP TABLE [Entity1711]
 

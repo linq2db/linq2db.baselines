@@ -35,10 +35,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [TestEqualsTable2]
+IF (OBJECT_ID(N'[TestEqualsTable2]', N'U') IS NOT NULL)
+	DROP TABLE [TestEqualsTable2]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [TestEqualsTable1]
+IF (OBJECT_ID(N'[TestEqualsTable1]', N'U') IS NOT NULL)
+	DROP TABLE [TestEqualsTable1]
 

@@ -35,5 +35,6 @@ IF (OBJECT_ID(N'[tempdb]..[##temp_table]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [##temp_table]
+IF (OBJECT_ID(N'[tempdb]..[##temp_table]', N'U') IS NOT NULL)
+	DROP TABLE [##temp_table]
 

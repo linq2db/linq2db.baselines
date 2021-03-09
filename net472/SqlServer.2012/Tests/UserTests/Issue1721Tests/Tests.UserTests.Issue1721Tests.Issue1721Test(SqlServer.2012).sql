@@ -14,5 +14,6 @@ CREATE TABLE [#I1721Model]
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [#I1721Model]
+IF (OBJECT_ID(N'[tempdb]..[#I1721Model]', N'U') IS NOT NULL)
+	DROP TABLE [#I1721Model]
 

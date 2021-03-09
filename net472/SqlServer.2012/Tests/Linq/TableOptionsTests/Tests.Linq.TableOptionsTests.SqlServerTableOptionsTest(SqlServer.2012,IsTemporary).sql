@@ -10,5 +10,6 @@ CREATE TABLE [#TestTable]
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [#TestTable]
+IF (OBJECT_ID(N'[tempdb]..[#TestTable]', N'U') IS NOT NULL)
+	DROP TABLE [#TestTable]
 
