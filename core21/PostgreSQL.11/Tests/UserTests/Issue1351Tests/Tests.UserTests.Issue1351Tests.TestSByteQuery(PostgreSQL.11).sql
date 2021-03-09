@@ -35,5 +35,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "T1351Model"
+DROP TABLE IF EXISTS "T1351Model"
 

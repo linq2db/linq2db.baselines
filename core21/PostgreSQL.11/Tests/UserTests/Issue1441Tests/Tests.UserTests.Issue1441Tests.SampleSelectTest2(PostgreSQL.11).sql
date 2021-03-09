@@ -34,10 +34,10 @@ FROM
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Books"
+DROP TABLE IF EXISTS "Books"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Authors"
+DROP TABLE IF EXISTS "Authors"
 

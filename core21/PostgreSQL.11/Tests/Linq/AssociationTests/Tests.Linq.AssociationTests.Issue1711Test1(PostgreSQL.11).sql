@@ -37,10 +37,10 @@ WHERE
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Relationship1711"
+DROP TABLE IF EXISTS "Relationship1711"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Entity1711"
+DROP TABLE IF EXISTS "Entity1711"
 

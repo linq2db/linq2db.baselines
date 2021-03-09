@@ -1,28 +1,24 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "MRECEIPT"
+DROP TABLE IF EXISTS "TempTable"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TEMPORARY TABLE "TempTable"
 (
-	"RECEIPT_NO" text     NULL,
-	"CUSTKEY"    text     NULL
+	"ID" Int NOT NULL
 )
+ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "CUST_DTL"
-(
-	"CUSTKEY"   text     NULL,
-	"BILLGROUP" text     NULL
-)
+DROP TABLE "TempTable"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "CUST_DTL"
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "MRECEIPT"
+DROP TABLE IF EXISTS "TempTable"
 
