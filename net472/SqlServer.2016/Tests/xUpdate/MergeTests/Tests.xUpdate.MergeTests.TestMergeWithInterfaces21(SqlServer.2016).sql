@@ -25,5 +25,6 @@ WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = 3 THEN DELETE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [ReviewIndexes]
+IF (OBJECT_ID(N'[ReviewIndexes]', N'U') IS NOT NULL)
+	DROP TABLE [ReviewIndexes]
 

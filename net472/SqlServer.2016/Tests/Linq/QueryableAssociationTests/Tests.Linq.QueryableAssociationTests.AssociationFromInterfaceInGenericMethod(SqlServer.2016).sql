@@ -61,5 +61,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
-DROP TABLE [TreeItem]
+IF (OBJECT_ID(N'[TreeItem]', N'U') IS NOT NULL)
+	DROP TABLE [TreeItem]
 
