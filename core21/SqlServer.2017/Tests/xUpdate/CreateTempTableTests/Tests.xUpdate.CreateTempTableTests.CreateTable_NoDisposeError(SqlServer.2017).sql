@@ -5,7 +5,7 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlServer.2017 (asynchronously)
+-- SqlServer.2017
 
 CREATE TABLE [#TempTable]
 (
@@ -13,25 +13,13 @@ CREATE TABLE [#TempTable]
 )
 
 BeforeExecute
--- SqlServer.2017 (asynchronously)
+-- SqlServer.2017
 
-INSERT INTO [#TempTable]
-(
-	[ID]
-)
-SELECT
-	[p].[ParentID]
-FROM
-	[Parent] [p]
-
-BeforeExecute
--- SqlServer.2017 (asynchronously)
-
-IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
-	DROP TABLE [#TempTable]
+DROP TABLE [#TempTable]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [TempTable]
+IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [#TempTable]
 

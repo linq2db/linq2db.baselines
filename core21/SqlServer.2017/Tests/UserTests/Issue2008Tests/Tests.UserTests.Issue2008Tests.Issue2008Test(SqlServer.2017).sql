@@ -56,15 +56,18 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Table3]
+IF (OBJECT_ID(N'[Table3]', N'U') IS NOT NULL)
+	DROP TABLE [Table3]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Table2]
+IF (OBJECT_ID(N'[Table2]', N'U') IS NOT NULL)
+	DROP TABLE [Table2]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Table1]
+IF (OBJECT_ID(N'[Table1]', N'U') IS NOT NULL)
+	DROP TABLE [Table1]
 

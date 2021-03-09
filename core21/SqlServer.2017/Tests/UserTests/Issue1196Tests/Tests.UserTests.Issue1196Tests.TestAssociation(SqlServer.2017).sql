@@ -121,15 +121,18 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Assignments]
+IF (OBJECT_ID(N'[Assignments]', N'U') IS NOT NULL)
+	DROP TABLE [Assignments]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [FirmInfo]
+IF (OBJECT_ID(N'[FirmInfo]', N'U') IS NOT NULL)
+	DROP TABLE [FirmInfo]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Requests]
+IF (OBJECT_ID(N'[Requests]', N'U') IS NOT NULL)
+	DROP TABLE [Requests]
 
