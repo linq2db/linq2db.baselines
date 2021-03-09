@@ -35,5 +35,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [T1351Model]
+IF (OBJECT_ID(N'[T1351Model]', N'U') IS NOT NULL)
+	DROP TABLE [T1351Model]
 

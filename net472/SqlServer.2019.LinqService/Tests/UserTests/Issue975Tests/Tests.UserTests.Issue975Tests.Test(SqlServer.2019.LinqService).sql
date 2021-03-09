@@ -157,15 +157,18 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Assignments]
+IF (OBJECT_ID(N'[Assignments]', N'U') IS NOT NULL)
+	DROP TABLE [Assignments]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [TaskStages]
+IF (OBJECT_ID(N'[TaskStages]', N'U') IS NOT NULL)
+	DROP TABLE [TaskStages]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Tasks]
+IF (OBJECT_ID(N'[Tasks]', N'U') IS NOT NULL)
+	DROP TABLE [Tasks]
 

@@ -94,25 +94,30 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Flat]
+IF (OBJECT_ID(N'[Flat]', N'U') IS NOT NULL)
+	DROP TABLE [Flat]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Nomin]
+IF (OBJECT_ID(N'[Nomin]', N'U') IS NOT NULL)
+	DROP TABLE [Nomin]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Trade]
+IF (OBJECT_ID(N'[Trade]', N'U') IS NOT NULL)
+	DROP TABLE [Trade]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [AuditAlert]
+IF (OBJECT_ID(N'[AuditAlert]', N'U') IS NOT NULL)
+	DROP TABLE [AuditAlert]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Alert]
+IF (OBJECT_ID(N'[Alert]', N'U') IS NOT NULL)
+	DROP TABLE [Alert]
 

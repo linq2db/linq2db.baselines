@@ -27,7 +27,8 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [#TempTable]
+IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [#TempTable]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

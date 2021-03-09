@@ -53,15 +53,18 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [NestingC]
+IF (OBJECT_ID(N'[NestingC]', N'U') IS NOT NULL)
+	DROP TABLE [NestingC]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [NestingB]
+IF (OBJECT_ID(N'[NestingB]', N'U') IS NOT NULL)
+	DROP TABLE [NestingB]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [NestingA]
+IF (OBJECT_ID(N'[NestingA]', N'U') IS NOT NULL)
+	DROP TABLE [NestingA]
 

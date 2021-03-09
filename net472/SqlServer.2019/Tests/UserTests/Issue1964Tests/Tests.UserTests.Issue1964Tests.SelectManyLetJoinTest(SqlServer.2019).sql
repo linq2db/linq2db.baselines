@@ -80,10 +80,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [dbo].[BranchInfo]
+IF (OBJECT_ID(N'[dbo].[BranchInfo]', N'U') IS NOT NULL)
+	DROP TABLE [dbo].[BranchInfo]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [dbo].[Attachment]
+IF (OBJECT_ID(N'[dbo].[Attachment]', N'U') IS NOT NULL)
+	DROP TABLE [dbo].[Attachment]
 

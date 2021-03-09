@@ -49,5 +49,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [ConversionsTestTable]
+IF (OBJECT_ID(N'[ConversionsTestTable]', N'U') IS NOT NULL)
+	DROP TABLE [ConversionsTestTable]
 

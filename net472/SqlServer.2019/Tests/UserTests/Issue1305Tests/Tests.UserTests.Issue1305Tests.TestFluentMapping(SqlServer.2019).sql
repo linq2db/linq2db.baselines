@@ -440,5 +440,6 @@ SET     @ReturnFullRow = 0
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [FluentMapping]
+IF (OBJECT_ID(N'[FluentMapping]', N'U') IS NOT NULL)
+	DROP TABLE [FluentMapping]
 

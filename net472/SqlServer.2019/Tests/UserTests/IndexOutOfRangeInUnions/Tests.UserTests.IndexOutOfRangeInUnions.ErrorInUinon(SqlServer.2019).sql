@@ -65,15 +65,18 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [O3]
+IF (OBJECT_ID(N'[O3]', N'U') IS NOT NULL)
+	DROP TABLE [O3]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [O2]
+IF (OBJECT_ID(N'[O2]', N'U') IS NOT NULL)
+	DROP TABLE [O2]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [O1]
+IF (OBJECT_ID(N'[O1]', N'U') IS NOT NULL)
+	DROP TABLE [O1]
 

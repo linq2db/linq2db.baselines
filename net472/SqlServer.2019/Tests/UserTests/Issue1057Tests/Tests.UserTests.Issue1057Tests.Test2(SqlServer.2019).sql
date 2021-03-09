@@ -106,10 +106,12 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [TaskStage]
+IF (OBJECT_ID(N'[TaskStage]', N'U') IS NOT NULL)
+	DROP TABLE [TaskStage]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Task]
+IF (OBJECT_ID(N'[Task]', N'U') IS NOT NULL)
+	DROP TABLE [Task]
 
