@@ -89,10 +89,10 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `Message`
+DROP TABLE IF EXISTS `Message`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `Topic`
+DROP TABLE IF EXISTS `Topic`
 

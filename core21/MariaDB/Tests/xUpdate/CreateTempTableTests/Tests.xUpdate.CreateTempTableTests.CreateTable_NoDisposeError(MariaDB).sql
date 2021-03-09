@@ -1,33 +1,23 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `ValueItem`
+DROP TABLE IF EXISTS `TempTable`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TEMPORARY TABLE `TempTable`
 (
-	`Value` INT NOT NULL
+	`ID` INT NOT NULL
 )
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-INSERT INTO `ValueItem`
-(
-	`Value`
-)
-VALUES
-(
-	123
-)
+DROP TABLE `TempTable`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT
-	`row_1`.`Value`
-FROM
-	`ValueItem` `row_1`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DROP TABLE IF EXISTS `ValueItem`
+DROP TABLE IF EXISTS `TempTable`
 

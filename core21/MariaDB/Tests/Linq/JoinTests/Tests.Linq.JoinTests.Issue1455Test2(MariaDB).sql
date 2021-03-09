@@ -94,25 +94,25 @@ GROUP BY
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `Flat`
+DROP TABLE IF EXISTS `Flat`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `Nomin`
+DROP TABLE IF EXISTS `Nomin`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `Trade`
+DROP TABLE IF EXISTS `Trade`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `AuditAlert`
+DROP TABLE IF EXISTS `AuditAlert`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `Alert`
+DROP TABLE IF EXISTS `Alert`
 

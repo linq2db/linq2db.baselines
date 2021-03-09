@@ -53,15 +53,15 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `NestingC`
+DROP TABLE IF EXISTS `NestingC`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `NestingB`
+DROP TABLE IF EXISTS `NestingB`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `NestingA`
+DROP TABLE IF EXISTS `NestingA`
 

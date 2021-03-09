@@ -57,5 +57,5 @@ ORDER BY
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `CreateTableTypes`
+DROP TABLE IF EXISTS `CreateTableTypes`
 

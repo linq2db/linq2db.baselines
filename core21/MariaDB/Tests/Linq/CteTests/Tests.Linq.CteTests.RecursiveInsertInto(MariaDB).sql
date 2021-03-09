@@ -112,7 +112,7 @@ ORDER BY
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `HierarchyData`
+DROP TABLE IF EXISTS `HierarchyData`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
