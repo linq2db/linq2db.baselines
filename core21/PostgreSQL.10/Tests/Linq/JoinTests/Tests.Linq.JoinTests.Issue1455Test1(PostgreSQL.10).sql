@@ -94,25 +94,25 @@ GROUP BY
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Flat"
+DROP TABLE IF EXISTS "Flat"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Nomin"
+DROP TABLE IF EXISTS "Nomin"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Trade"
+DROP TABLE IF EXISTS "Trade"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "AuditAlert"
+DROP TABLE IF EXISTS "AuditAlert"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Alert"
+DROP TABLE IF EXISTS "Alert"
 

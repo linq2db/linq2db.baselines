@@ -95,10 +95,10 @@ WHERE
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TaskStage"
+DROP TABLE IF EXISTS "TaskStage"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Task"
+DROP TABLE IF EXISTS "Task"
 

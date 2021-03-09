@@ -44,5 +44,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "CreateTableTestClass"
+DROP TABLE IF EXISTS "CreateTableTestClass"
 
