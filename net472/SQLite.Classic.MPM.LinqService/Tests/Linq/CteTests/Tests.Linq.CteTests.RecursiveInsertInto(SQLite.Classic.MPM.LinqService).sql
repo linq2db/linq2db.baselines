@@ -408,7 +408,7 @@ ORDER BY
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [HierarchyData]
+DROP TABLE IF EXISTS [HierarchyData]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

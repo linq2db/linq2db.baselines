@@ -17,5 +17,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Entity]
+DROP TABLE IF EXISTS [Entity]
 

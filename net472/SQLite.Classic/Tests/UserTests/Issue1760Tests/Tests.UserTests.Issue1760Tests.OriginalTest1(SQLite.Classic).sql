@@ -40,15 +40,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [table3]
+DROP TABLE IF EXISTS [table3]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [table2]
+DROP TABLE IF EXISTS [table2]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [table1]
+DROP TABLE IF EXISTS [table1]
 

@@ -194,15 +194,15 @@ ORDER BY
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [T3]
+DROP TABLE IF EXISTS [T3]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [T2]
+DROP TABLE IF EXISTS [T2]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [T1]
+DROP TABLE IF EXISTS [T1]
 

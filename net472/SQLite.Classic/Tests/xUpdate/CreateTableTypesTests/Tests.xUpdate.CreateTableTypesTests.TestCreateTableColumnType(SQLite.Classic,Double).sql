@@ -57,5 +57,5 @@ ORDER BY
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [CreateTableTypes]
+DROP TABLE IF EXISTS [CreateTableTypes]
 

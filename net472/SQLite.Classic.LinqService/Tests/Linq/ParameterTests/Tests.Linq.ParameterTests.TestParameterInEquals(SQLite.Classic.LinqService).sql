@@ -35,10 +35,10 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [TestEqualsTable2]
+DROP TABLE IF EXISTS [TestEqualsTable2]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [TestEqualsTable1]
+DROP TABLE IF EXISTS [TestEqualsTable1]
 

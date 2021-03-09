@@ -90,10 +90,10 @@ GROUP BY
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [TaskStage]
+DROP TABLE IF EXISTS [TaskStage]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Task]
+DROP TABLE IF EXISTS [Task]
 

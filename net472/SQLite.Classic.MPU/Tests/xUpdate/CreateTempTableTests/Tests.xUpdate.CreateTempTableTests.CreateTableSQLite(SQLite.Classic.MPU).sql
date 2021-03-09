@@ -30,5 +30,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [#TempTable]
+DROP TABLE IF EXISTS [#TempTable]
 

@@ -61,15 +61,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [C]
+DROP TABLE IF EXISTS [C]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [B]
+DROP TABLE IF EXISTS [B]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [A]
+DROP TABLE IF EXISTS [A]
 

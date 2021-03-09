@@ -21,10 +21,10 @@ CREATE TABLE [i1084_student]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [i1084_student]
+DROP TABLE IF EXISTS [i1084_student]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [i1084_person]
+DROP TABLE IF EXISTS [i1084_person]
 

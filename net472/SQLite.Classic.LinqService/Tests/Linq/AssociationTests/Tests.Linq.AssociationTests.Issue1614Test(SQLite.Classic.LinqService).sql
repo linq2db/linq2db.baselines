@@ -41,15 +41,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [Lookup]
+DROP TABLE IF EXISTS [Lookup]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [Resource]
+DROP TABLE IF EXISTS [Resource]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [User]
+DROP TABLE IF EXISTS [User]
 

@@ -94,25 +94,25 @@ GROUP BY
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Flat]
+DROP TABLE IF EXISTS [Flat]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Nomin]
+DROP TABLE IF EXISTS [Nomin]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Trade]
+DROP TABLE IF EXISTS [Trade]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [AuditAlert]
+DROP TABLE IF EXISTS [AuditAlert]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Alert]
+DROP TABLE IF EXISTS [Alert]
 

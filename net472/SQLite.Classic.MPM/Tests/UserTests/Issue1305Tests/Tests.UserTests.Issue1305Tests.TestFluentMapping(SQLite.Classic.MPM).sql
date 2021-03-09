@@ -16,5 +16,5 @@ CREATE TABLE [FluentMapping]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [FluentMapping]
+DROP TABLE IF EXISTS [FluentMapping]
 

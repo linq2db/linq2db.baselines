@@ -37,5 +37,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [DynamicColumnsTestTable]
+DROP TABLE IF EXISTS [DynamicColumnsTestTable]
 

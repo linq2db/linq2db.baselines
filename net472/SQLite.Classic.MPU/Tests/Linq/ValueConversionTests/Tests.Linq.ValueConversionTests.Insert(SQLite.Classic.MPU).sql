@@ -196,5 +196,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 

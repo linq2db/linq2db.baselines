@@ -117,20 +117,20 @@ SET
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [billing_TempReading]
+DROP TABLE IF EXISTS [billing_TempReading]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [billing_DevReadingType]
+DROP TABLE IF EXISTS [billing_DevReadingType]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [billing_devices]
+DROP TABLE IF EXISTS [billing_devices]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [billing_devtypes]
+DROP TABLE IF EXISTS [billing_devtypes]
 

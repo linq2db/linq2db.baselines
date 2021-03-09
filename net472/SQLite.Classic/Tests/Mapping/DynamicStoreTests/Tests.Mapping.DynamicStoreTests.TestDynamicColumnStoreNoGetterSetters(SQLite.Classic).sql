@@ -10,5 +10,5 @@ CREATE TABLE [DynamicColumnsTestTable]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [DynamicColumnsTestTable]
+DROP TABLE IF EXISTS [DynamicColumnsTestTable]
 

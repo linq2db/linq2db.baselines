@@ -19,5 +19,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [IsTemporaryTable]
+DROP TABLE IF EXISTS [IsTemporaryTable]
 
