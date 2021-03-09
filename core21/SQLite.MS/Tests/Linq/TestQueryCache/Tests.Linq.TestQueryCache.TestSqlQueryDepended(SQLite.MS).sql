@@ -16,5 +16,5 @@ CREATE TABLE [ManyFields]
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ManyFields]
+DROP TABLE IF EXISTS [ManyFields]
 

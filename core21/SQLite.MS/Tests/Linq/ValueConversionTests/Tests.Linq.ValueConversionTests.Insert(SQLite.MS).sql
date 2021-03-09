@@ -196,5 +196,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 

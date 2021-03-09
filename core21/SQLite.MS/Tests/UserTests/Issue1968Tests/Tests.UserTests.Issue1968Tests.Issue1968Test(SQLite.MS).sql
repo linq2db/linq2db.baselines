@@ -188,15 +188,15 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Subject]
+DROP TABLE IF EXISTS [Subject]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Faculty]
+DROP TABLE IF EXISTS [Faculty]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [University]
+DROP TABLE IF EXISTS [University]
 

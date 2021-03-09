@@ -35,10 +35,10 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Chipcard]
+DROP TABLE IF EXISTS [Chipcard]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Issue1965Person]
+DROP TABLE IF EXISTS [Issue1965Person]
 

@@ -112,7 +112,7 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [HierarchyData]
+DROP TABLE IF EXISTS [HierarchyData]
 
 BeforeExecute
 -- SQLite.MS SQLite

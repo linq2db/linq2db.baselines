@@ -73,5 +73,5 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
 

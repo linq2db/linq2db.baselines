@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [TempTable]
 
@@ -14,22 +14,10 @@ CREATE TEMPORARY TABLE [TempTable]
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-INSERT INTO [TempTable]
-(
-	[ID]
-)
-SELECT
-	[p].[ParentID]
-FROM
-	[Parent] [p]
+DROP TABLE [TempTable]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [TempTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE [TempTable]
 
