@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [FirstOptimizerData]
+DROP TABLE IF EXISTS [FirstOptimizerData]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -49,8 +48,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [SecondOptimizerData]
+DROP TABLE IF EXISTS [SecondOptimizerData]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -112,12 +110,10 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [SecondOptimizerData]
+DROP TABLE IF EXISTS [SecondOptimizerData]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [FirstOptimizerData]
+DROP TABLE IF EXISTS [FirstOptimizerData]
 

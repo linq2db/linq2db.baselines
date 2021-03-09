@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[BaseTable]', N'U') IS NOT NULL)
-	DROP TABLE [BaseTable]
+DROP TABLE IF EXISTS [BaseTable]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -56,6 +55,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[BaseTable]', N'U') IS NOT NULL)
-	DROP TABLE [BaseTable]
+DROP TABLE IF EXISTS [BaseTable]
 

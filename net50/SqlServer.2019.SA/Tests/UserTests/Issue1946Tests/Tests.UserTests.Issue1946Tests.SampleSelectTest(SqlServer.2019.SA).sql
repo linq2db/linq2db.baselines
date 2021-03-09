@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Users]', N'U') IS NOT NULL)
-	DROP TABLE [Users]
+DROP TABLE IF EXISTS [Users]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -42,6 +41,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Users]', N'U') IS NOT NULL)
-	DROP TABLE [Users]
+DROP TABLE IF EXISTS [Users]
 
