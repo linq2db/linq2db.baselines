@@ -17,8 +17,8 @@ SET
 		ELSE 0
 	END
 FROM
+	[LinqDataTypes] [a_Table1],
 	[Parent] [x_1]
-		INNER JOIN [LinqDataTypes] [a_Table1] ON [x_1].[ParentID] = [a_Table1].[ID]
 WHERE
-	[x_1].[ParentID] IN (10000, 20000)
+	[x_1].[ParentID] IN (10000, 20000) AND [x_1].[ParentID] = [a_Table1].[ID]
 
