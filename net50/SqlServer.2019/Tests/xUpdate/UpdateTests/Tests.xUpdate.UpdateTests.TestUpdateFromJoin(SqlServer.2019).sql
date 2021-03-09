@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NOT NULL)
-	DROP TABLE [gt_s_one]
+DROP TABLE IF EXISTS [gt_s_one]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -24,8 +23,7 @@ IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[access_mode]', N'U') IS NOT NULL)
-	DROP TABLE [access_mode]
+DROP TABLE IF EXISTS [access_mode]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -58,12 +56,10 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[access_mode]', N'U') IS NOT NULL)
-	DROP TABLE [access_mode]
+DROP TABLE IF EXISTS [access_mode]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NOT NULL)
-	DROP TABLE [gt_s_one]
+DROP TABLE IF EXISTS [gt_s_one]
 

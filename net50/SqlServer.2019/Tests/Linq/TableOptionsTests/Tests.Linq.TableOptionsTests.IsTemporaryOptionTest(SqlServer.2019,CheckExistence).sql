@@ -98,12 +98,10 @@ TRUNCATE TABLE [#temp_table2]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NOT NULL)
-	DROP TABLE [#temp_table2]
+DROP TABLE IF EXISTS [#temp_table2]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NOT NULL)
-	DROP TABLE [#temp_table1]
+DROP TABLE IF EXISTS [#temp_table1]
 

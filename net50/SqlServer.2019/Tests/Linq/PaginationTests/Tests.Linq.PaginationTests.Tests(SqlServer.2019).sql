@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[PaginationData]', N'U') IS NOT NULL)
-	DROP TABLE [PaginationData]
+DROP TABLE IF EXISTS [PaginationData]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -490,6 +489,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[PaginationData]', N'U') IS NOT NULL)
-	DROP TABLE [PaginationData]
+DROP TABLE IF EXISTS [PaginationData]
 

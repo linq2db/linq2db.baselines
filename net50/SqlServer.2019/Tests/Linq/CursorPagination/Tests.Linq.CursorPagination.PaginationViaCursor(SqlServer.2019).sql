@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Booking]', N'U') IS NOT NULL)
-	DROP TABLE [Booking]
+DROP TABLE IF EXISTS [Booking]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -451,6 +450,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Booking]', N'U') IS NOT NULL)
-	DROP TABLE [Booking]
+DROP TABLE IF EXISTS [Booking]
 

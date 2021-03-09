@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Entity]', N'U') IS NOT NULL)
-	DROP TABLE [Entity]
+DROP TABLE IF EXISTS [Entity]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -26,8 +25,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NOT NULL)
-	DROP TABLE [Entity2Language]
+DROP TABLE IF EXISTS [Entity2Language]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -55,8 +53,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
-	DROP TABLE [Language]
+DROP TABLE IF EXISTS [Language]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -106,18 +103,15 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
-	DROP TABLE [Language]
+DROP TABLE IF EXISTS [Language]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NOT NULL)
-	DROP TABLE [Entity2Language]
+DROP TABLE IF EXISTS [Entity2Language]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Entity]', N'U') IS NOT NULL)
-	DROP TABLE [Entity]
+DROP TABLE IF EXISTS [Entity]
 
