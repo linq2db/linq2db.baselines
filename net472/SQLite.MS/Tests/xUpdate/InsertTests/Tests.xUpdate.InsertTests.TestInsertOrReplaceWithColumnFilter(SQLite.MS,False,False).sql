@@ -113,5 +113,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [TestInsertOrReplaceTable]
+DROP TABLE IF EXISTS [TestInsertOrReplaceTable]
 

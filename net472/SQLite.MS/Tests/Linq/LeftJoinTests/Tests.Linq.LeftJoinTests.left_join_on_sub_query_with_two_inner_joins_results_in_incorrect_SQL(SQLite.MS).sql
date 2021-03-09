@@ -61,15 +61,15 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [C]
+DROP TABLE IF EXISTS [C]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [B]
+DROP TABLE IF EXISTS [B]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [A]
+DROP TABLE IF EXISTS [A]
 

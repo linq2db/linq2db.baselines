@@ -127,5 +127,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Stone]
+DROP TABLE IF EXISTS [Stone]
 

@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [AttributeBase]
+DROP TABLE IF EXISTS [AttributeBase]
 

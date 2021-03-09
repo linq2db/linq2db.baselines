@@ -72,5 +72,5 @@ LIMIT 2
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Issue1303]
+DROP TABLE IF EXISTS [Issue1303]
 

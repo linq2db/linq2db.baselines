@@ -87,5 +87,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [DynamicColumnTable]
+DROP TABLE IF EXISTS [DynamicColumnTable]
 
