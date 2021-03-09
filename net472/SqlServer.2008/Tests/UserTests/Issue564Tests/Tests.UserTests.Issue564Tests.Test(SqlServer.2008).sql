@@ -58,5 +58,6 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Parent564]
+IF (OBJECT_ID(N'[Parent564]', N'U') IS NOT NULL)
+	DROP TABLE [Parent564]
 

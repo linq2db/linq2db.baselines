@@ -61,15 +61,18 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Issue]
+IF (OBJECT_ID(N'[Issue]', N'U') IS NOT NULL)
+	DROP TABLE [Issue]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Tagging]
+IF (OBJECT_ID(N'[Tagging]', N'U') IS NOT NULL)
+	DROP TABLE [Tagging]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Tag]
+IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
+	DROP TABLE [Tag]
 

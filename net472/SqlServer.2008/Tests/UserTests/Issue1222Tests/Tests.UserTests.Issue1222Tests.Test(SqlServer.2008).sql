@@ -87,10 +87,12 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [stVersions]
+IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
+	DROP TABLE [stVersions]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [stLinks]
+IF (OBJECT_ID(N'[stLinks]', N'U') IS NOT NULL)
+	DROP TABLE [stLinks]
 

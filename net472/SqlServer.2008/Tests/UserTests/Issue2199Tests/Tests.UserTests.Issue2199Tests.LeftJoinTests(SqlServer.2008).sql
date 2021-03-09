@@ -57,10 +57,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Country]
+IF (OBJECT_ID(N'[Country]', N'U') IS NOT NULL)
+	DROP TABLE [Country]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Manufacturer]
+IF (OBJECT_ID(N'[Manufacturer]', N'U') IS NOT NULL)
+	DROP TABLE [Manufacturer]
 
