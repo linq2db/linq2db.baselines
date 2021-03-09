@@ -81,5 +81,8 @@ WHERE
 BeforeExecute
 -- Firebird
 
-DROP TABLE "PR_1598_SkipCustom_Table"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'PR_1598_SkipCustom_Table')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "PR_1598_SkipCustom_Table"';
+END
 

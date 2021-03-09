@@ -57,15 +57,24 @@ WHERE
 BeforeExecute
 -- Firebird
 
-DROP TABLE "ProductAttributeMapping"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ProductAttributeMapping')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ProductAttributeMapping"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "ProductAttributeTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ProductAttributeTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ProductAttributeTable"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "ProductTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ProductTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ProductTable"';
+END
 

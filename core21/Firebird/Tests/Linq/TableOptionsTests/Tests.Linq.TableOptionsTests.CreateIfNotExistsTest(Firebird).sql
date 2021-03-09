@@ -60,5 +60,8 @@ END
 BeforeExecute
 -- Firebird
 
-DROP TABLE "CreateIfNotExistsTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CreateIfNotExistsTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "CreateIfNotExistsTable"';
+END
 
