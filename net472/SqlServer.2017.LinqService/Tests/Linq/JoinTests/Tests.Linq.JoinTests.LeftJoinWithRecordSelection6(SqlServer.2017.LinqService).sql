@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[Fact]', N'U') IS NOT NULL)
-	DROP TABLE [Fact]
+DROP TABLE IF EXISTS [Fact]
 
 BeforeExecute
 -- SqlServer.2017
@@ -60,8 +59,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
-	DROP TABLE [Tag]
+DROP TABLE IF EXISTS [Tag]
 
 BeforeExecute
 -- SqlServer.2017
@@ -159,12 +157,10 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
-	DROP TABLE [Tag]
+DROP TABLE IF EXISTS [Tag]
 
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[Fact]', N'U') IS NOT NULL)
-	DROP TABLE [Fact]
+DROP TABLE IF EXISTS [Fact]
 

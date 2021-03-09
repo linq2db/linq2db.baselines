@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
-	DROP TABLE [DynamicTable]
+DROP TABLE IF EXISTS [DynamicTable]
 
 BeforeExecute
 -- SqlServer.2017
@@ -39,6 +38,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
-	DROP TABLE [DynamicTable]
+DROP TABLE IF EXISTS [DynamicTable]
 

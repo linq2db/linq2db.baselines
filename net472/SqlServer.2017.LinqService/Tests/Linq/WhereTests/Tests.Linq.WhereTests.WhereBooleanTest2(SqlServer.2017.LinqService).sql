@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[WhereCases]', N'U') IS NOT NULL)
-	DROP TABLE [WhereCases]
+DROP TABLE IF EXISTS [WhereCases]
 
 BeforeExecute
 -- SqlServer.2017
@@ -641,6 +640,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[WhereCases]', N'U') IS NOT NULL)
-	DROP TABLE [WhereCases]
+DROP TABLE IF EXISTS [WhereCases]
 

@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
-	DROP TABLE [OrderByDistinctData]
+DROP TABLE IF EXISTS [OrderByDistinctData]
 
 BeforeExecute
 -- SqlServer.2017
@@ -523,6 +522,5 @@ OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
-	DROP TABLE [OrderByDistinctData]
+DROP TABLE IF EXISTS [OrderByDistinctData]
 
