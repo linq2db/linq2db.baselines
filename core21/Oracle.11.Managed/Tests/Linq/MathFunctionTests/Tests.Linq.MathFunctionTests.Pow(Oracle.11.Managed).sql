@@ -2,14 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t."c1"
+	Floor(Power(Cast(p."MoneyValue" as Float), 3D))
 FROM
-	(
-		SELECT
-			Floor(Power(Cast(p."MoneyValue" as Float), 3D)) as "c1"
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	(t."c1" <> 0D OR t."c1" IS NULL)
+	(Floor(Power(Cast(p."MoneyValue" as Float), 3D)) <> 0D OR Floor(Power(Cast(p."MoneyValue" as Float), 3D)) IS NULL)
 
