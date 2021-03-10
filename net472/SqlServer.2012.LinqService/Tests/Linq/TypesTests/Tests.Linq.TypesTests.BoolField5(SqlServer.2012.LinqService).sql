@@ -2,15 +2,9 @@
 -- SqlServer.2012
 
 SELECT
-	[p].[MoneyValue]
+	[t].[MoneyValue]
 FROM
-	(
-		SELECT
-			IIF([t].[BoolValue] = 0, 1, 0) as [b],
-			[t].[MoneyValue]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	[p].[b] = 0
+	[t].[BoolValue] <> 0
 
