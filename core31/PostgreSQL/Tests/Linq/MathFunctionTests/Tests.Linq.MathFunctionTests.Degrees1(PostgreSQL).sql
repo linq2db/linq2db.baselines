@@ -2,14 +2,9 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	Floor(Degrees(p."MoneyValue"))
 FROM
-	(
-		SELECT
-			Floor(Degrees(p."MoneyValue")) as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	t.c1 <> 0.1
+	Floor(Degrees(p."MoneyValue")) <> 0.1
 

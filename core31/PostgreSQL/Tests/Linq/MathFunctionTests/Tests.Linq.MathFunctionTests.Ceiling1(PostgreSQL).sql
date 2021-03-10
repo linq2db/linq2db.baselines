@@ -2,14 +2,9 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	Ceiling(-(p."MoneyValue" + 1))
 FROM
-	(
-		SELECT
-			Ceiling(-(p."MoneyValue" + 1)) as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	t.c1 <> 0
+	Ceiling(-(p."MoneyValue" + 1)) <> 0
 

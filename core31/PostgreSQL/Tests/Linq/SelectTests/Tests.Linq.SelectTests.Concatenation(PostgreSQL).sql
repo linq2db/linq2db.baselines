@@ -2,19 +2,11 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p_1."ID",
-	p_1."FirstName_1"
+	p."PersonID",
+	p."FirstName"
 FROM
-	(
-		SELECT
-			'123' || p."FirstName" || '456' as "FirstName",
-			p."PersonID" as "ID",
-			p."FirstName" as "FirstName_1"
-		FROM
-			"Person" p
-		WHERE
-			p."PersonID" = 1
-	) p_1
+	"Person" p
 WHERE
-	p_1."FirstName" = '123John456'
+	'123' || p."FirstName" || '456' = '123John456' AND
+	p."PersonID" = 1
 
