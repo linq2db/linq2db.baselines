@@ -2,14 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t].[c1]
+	-Int([p].[MoneyValue] + 1)
 FROM
-	(
-		SELECT
-			-Int([p].[MoneyValue] + 1) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	[t].[c1] <> 0
+	-Int([p].[MoneyValue] + 1) <> 0
 
