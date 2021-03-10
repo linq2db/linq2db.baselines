@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	d.c1
+	t.DateTimeValue
 FROM
-	(
-		SELECT
-			t.DateTimeValue as c1
-		FROM
-			LinqDataTypes t
-	) d
+	LinqDataTypes t
 WHERE
-	Day(d.c1) > 0
+	Day(t.DateTimeValue) > 0
 

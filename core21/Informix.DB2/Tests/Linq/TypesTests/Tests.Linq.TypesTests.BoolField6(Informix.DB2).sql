@@ -2,18 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.MoneyValue
+	t.MoneyValue
 FROM
-	(
-		SELECT
-			CASE
-				WHEN t.BoolValue = 'f' THEN 't'
-				ELSE 'f'
-			END as b,
-			t.MoneyValue
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes t
 WHERE
-	p.b = 't'
+	(t.BoolValue = 'f')
 
