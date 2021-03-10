@@ -2,9 +2,9 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t2].[year_1],
-	[t2].[year_2],
-	[t2].[int_1]
+	[t3].[year_1],
+	[t3].[year_2],
+	[t3].[int_1]
 FROM
 	(
 		SELECT
@@ -15,22 +15,28 @@ FROM
 			[LinqDataTypes] [_]
 		UNION
 		SELECT
-			[t1].[month_1] as [year_1],
-			[t1].[year_1] as [year_2],
-			[t1].[int_1]
+			[t2].[month_1] as [year_1],
+			[t2].[year_1] as [year_2],
+			[t2].[int_1]
 		FROM
 			(
 				SELECT
-					Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as [month_1],
-					Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as [year_1],
+					[t1].[c1] as [month_1],
+					[t1].[c2] as [year_1],
 					1 as [int_1]
 				FROM
-					[LinqDataTypes] [selectParam]
+					(
+						SELECT
+							Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as [c1],
+							Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as [c2]
+						FROM
+							[LinqDataTypes] [selectParam]
+					) [t1]
 				GROUP BY
-					Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int),
-					Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int)
-			) [t1]
-	) [t2]
+					[t1].[c1],
+					[t1].[c2]
+			) [t2]
+	) [t3]
 UNION
 SELECT
 	Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int),

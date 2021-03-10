@@ -2,10 +2,16 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[selectParam].[ChildID] + 1,
-	Sum([selectParam].[ParentID])
+	[t1].[c1],
+	Sum([t1].[ParentID])
 FROM
-	[Child] [selectParam]
+	(
+		SELECT
+			[selectParam].[ChildID] + 1 as [c1],
+			[selectParam].[ParentID]
+		FROM
+			[Child] [selectParam]
+	) [t1]
 GROUP BY
-	[selectParam].[ChildID] + 1
+	[t1].[c1]
 

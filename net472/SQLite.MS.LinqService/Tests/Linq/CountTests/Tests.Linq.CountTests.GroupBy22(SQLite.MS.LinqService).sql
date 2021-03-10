@@ -12,13 +12,18 @@ SELECT
 		FROM
 			[Child] [ch]
 		WHERE
-			[ch].[ParentID] < 2 AND [ch_1].[ParentID] + 1 = [ch].[ParentID] + 1 AND
+			[ch].[ParentID] < 2 AND [t1].[c1] = [ch].[ParentID] + 1 AND
 			[ch].[ParentID] > @n
 	)
 FROM
-	[Child] [ch_1]
-WHERE
-	[ch_1].[ParentID] > @n_1
+	(
+		SELECT
+			[ch_1].[ParentID] + 1 as [c1]
+		FROM
+			[Child] [ch_1]
+		WHERE
+			[ch_1].[ParentID] > @n_1
+	) [t1]
 GROUP BY
-	[ch_1].[ParentID] + 1
+	[t1].[c1]
 
