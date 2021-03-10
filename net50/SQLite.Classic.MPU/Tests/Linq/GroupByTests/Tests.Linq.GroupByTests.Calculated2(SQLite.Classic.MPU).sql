@@ -6,27 +6,24 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN [selectParam].[ParentID] > 2
-					THEN CASE
-					WHEN [selectParam].[ParentID] > 3
-						THEN '1'
-					ELSE '2'
-				END
-				ELSE '3'
-			END || '2' as [c1]
+			[ch].[c1] || '2' as [c1]
 		FROM
-			[Child] [selectParam]
+			(
+				SELECT
+					CASE
+						WHEN [selectParam].[ParentID] > 2
+							THEN CASE
+							WHEN [selectParam].[ParentID] > 3
+								THEN '1'
+							ELSE '2'
+						END
+						ELSE '3'
+					END as [c1]
+				FROM
+					[Child] [selectParam]
+			) [ch]
 		GROUP BY
-			CASE
-				WHEN [selectParam].[ParentID] > 2
-					THEN CASE
-					WHEN [selectParam].[ParentID] > 3
-						THEN '1'
-					ELSE '2'
-				END
-				ELSE '3'
-			END
+			[ch].[c1]
 	) [p]
 WHERE
 	[p].[c1] = '22'

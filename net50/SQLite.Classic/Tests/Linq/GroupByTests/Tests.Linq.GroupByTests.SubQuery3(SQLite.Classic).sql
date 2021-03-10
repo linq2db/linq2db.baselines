@@ -2,10 +2,16 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[ch].[ChildID] + 1,
-	Sum([ch].[ParentID])
+	[t1].[n],
+	Sum([t1].[ParentID])
 FROM
-	[Child] [ch]
+	(
+		SELECT
+			[ch].[ChildID] + 1 as [n],
+			[ch].[ParentID]
+		FROM
+			[Child] [ch]
+	) [t1]
 GROUP BY
-	[ch].[ChildID] + 1
+	[t1].[n]
 

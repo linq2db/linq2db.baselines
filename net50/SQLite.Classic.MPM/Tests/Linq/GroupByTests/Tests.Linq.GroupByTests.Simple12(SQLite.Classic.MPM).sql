@@ -2,10 +2,16 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[selectParam].[ChildID]
+	[t1].[ChildID]
 FROM
-	[GrandChild] [selectParam]
+	(
+		SELECT
+			[selectParam].[ParentID] + 1 as [c1],
+			[selectParam].[ChildID]
+		FROM
+			[GrandChild] [selectParam]
+	) [t1]
 GROUP BY
-	[selectParam].[ParentID] + 1,
-	[selectParam].[ChildID]
+	[t1].[c1],
+	[t1].[ChildID]
 

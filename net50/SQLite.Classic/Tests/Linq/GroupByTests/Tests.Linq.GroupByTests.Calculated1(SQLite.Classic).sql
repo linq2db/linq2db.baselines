@@ -2,27 +2,24 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN [selectParam].[ParentID] > 2
-			THEN CASE
-			WHEN [selectParam].[ParentID] > 3
-				THEN '1'
-			ELSE '2'
-		END
-		ELSE '3'
-	END
+	[t1].[c1]
 FROM
-	[Child] [selectParam]
+	(
+		SELECT
+			CASE
+				WHEN [selectParam].[ParentID] > 2
+					THEN CASE
+					WHEN [selectParam].[ParentID] > 3
+						THEN '1'
+					ELSE '2'
+				END
+				ELSE '3'
+			END as [c1]
+		FROM
+			[Child] [selectParam]
+	) [t1]
 GROUP BY
-	CASE
-		WHEN [selectParam].[ParentID] > 2
-			THEN CASE
-			WHEN [selectParam].[ParentID] > 3
-				THEN '1'
-			ELSE '2'
-		END
-		ELSE '3'
-	END
+	[t1].[c1]
 
 BeforeExecute
 -- SQLite.Classic SQLite

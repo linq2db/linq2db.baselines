@@ -2,10 +2,15 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Cast(StrFTime('%Y', [a_Types].[DateTimeValue]) as int)
+	[t1].[c1]
 FROM
-	[Parent] [selectParam]
-		LEFT JOIN [LinqDataTypes] [a_Types] ON [selectParam].[ParentID] = [a_Types].[ID]
+	(
+		SELECT
+			Cast(StrFTime('%Y', [a_Types].[DateTimeValue]) as int) as [c1]
+		FROM
+			[Parent] [selectParam]
+				LEFT JOIN [LinqDataTypes] [a_Types] ON [selectParam].[ParentID] = [a_Types].[ID]
+	) [t1]
 GROUP BY
-	Cast(StrFTime('%Y', [a_Types].[DateTimeValue]) as int)
+	[t1].[c1]
 

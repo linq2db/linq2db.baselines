@@ -2,9 +2,14 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[ch].[ParentID] + 1
+	[t1].[ParentID]
 FROM
-	[Child] [ch]
+	(
+		SELECT
+			[ch].[ParentID] + 1 as [ParentID]
+		FROM
+			[Child] [ch]
+	) [t1]
 GROUP BY
-	[ch].[ParentID] + 1
+	[t1].[ParentID]
 
