@@ -2,18 +2,9 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p."MoneyValue"
+	t."MoneyValue"
 FROM
-	(
-		SELECT
-			CASE
-				WHEN t."BoolValue" = 0 THEN 1
-				ELSE 0
-			END as "b",
-			t."MoneyValue"
-		FROM
-			"LinqDataTypes" t
-	) p
+	"LinqDataTypes" t
 WHERE
-	p."b" = 0
+	(t."BoolValue" <> 0)
 
