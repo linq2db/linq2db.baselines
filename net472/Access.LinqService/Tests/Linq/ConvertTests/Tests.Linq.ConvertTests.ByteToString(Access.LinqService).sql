@@ -2,9 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	CStr([t].[ID])
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CStr([t].[ID]) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Len(CStr([t].[ID])) > 0
+	Len([p].[c1]) > 0
 

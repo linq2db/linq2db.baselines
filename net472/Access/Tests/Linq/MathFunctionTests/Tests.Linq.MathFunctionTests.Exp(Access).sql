@@ -2,9 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	Int(Exp([p].[MoneyValue]))
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Int(Exp([p].[MoneyValue])) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Int(Exp([p].[MoneyValue])) <> 0.10000000000000001 OR Int(Exp([p].[MoneyValue])) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 

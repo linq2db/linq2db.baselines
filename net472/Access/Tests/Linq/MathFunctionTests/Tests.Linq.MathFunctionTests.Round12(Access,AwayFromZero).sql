@@ -2,10 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	Iif([p].[MoneyValue] * 10 - Int([p].[MoneyValue] * 10) = 0.5 AND Int([p].[MoneyValue] * 10) MOD 2 = 0, -Int(-([p].[MoneyValue] * 10)), Round([p].[MoneyValue] * 10, 0)) / 10
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Iif([p].[MoneyValue] * 10 - Int([p].[MoneyValue] * 10) = 0.5 AND Int([p].[MoneyValue] * 10) MOD 2 = 0, -Int(-([p].[MoneyValue] * 10)), Round([p].[MoneyValue] * 10, 0)) / 10 as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	Iif([p].[MoneyValue] * 10 - Int([p].[MoneyValue] * 10) = 0.5 AND Int([p].[MoneyValue] * 10) MOD 2 = 0, -Int(-([p].[MoneyValue] * 10)), Round([p].[MoneyValue] * 10, 0)) / 10 <> 0 AND
-	Iif([p].[MoneyValue] * 10 - Int([p].[MoneyValue] * 10) = 0.5 AND Int([p].[MoneyValue] * 10) MOD 2 = 0, -Int(-([p].[MoneyValue] * 10)), Round([p].[MoneyValue] * 10, 0)) / 10 <> 7
+	[t].[c1] <> 0 AND [t].[c1] <> 7
 

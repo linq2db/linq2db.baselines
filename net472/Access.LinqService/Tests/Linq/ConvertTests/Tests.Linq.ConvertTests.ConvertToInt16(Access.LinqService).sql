@@ -2,9 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	Round([t].[MoneyValue], 0)
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Round([t].[MoneyValue], 0) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Round([t].[MoneyValue], 0) > 0
+	[p].[c1] > 0
 

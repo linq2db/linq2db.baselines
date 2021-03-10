@@ -2,9 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	Int(Int([p].[MoneyValue]) * 57.295779513082323)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Int(Int([p].[MoneyValue]) * 57.295779513082323) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Int(Int([p].[MoneyValue]) * 57.295779513082323) <> 0.10000000000000001 OR Int(Int([p].[MoneyValue]) * 57.295779513082323) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 

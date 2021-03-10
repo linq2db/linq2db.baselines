@@ -2,9 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	Int(((Exp([p].[MoneyValue] / 15) - Exp(-([p].[MoneyValue] / 15))) / 2) * 15)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Int(((Exp([p].[MoneyValue] / 15) - Exp(-([p].[MoneyValue] / 15))) / 2) * 15) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Int(((Exp([p].[MoneyValue] / 15) - Exp(-([p].[MoneyValue] / 15))) / 2) * 15) <> 0.10000000000000001 OR Int(((Exp([p].[MoneyValue] / 15) - Exp(-([p].[MoneyValue] / 15))) / 2) * 15) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 
