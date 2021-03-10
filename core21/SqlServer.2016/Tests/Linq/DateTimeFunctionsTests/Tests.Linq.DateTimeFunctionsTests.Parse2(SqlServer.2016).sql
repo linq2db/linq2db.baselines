@@ -2,9 +2,14 @@
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	Convert(DateTime2, Convert(VarChar(11), DatePart(year, [t].[DateTimeValue])) + N'-02-24 00:00:00', 120)
+	[d].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(DateTime2, Convert(VarChar(11), DatePart(year, [t].[DateTimeValue])) + N'-02-24 00:00:00', 120) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [d]
 WHERE
-	DatePart(day, Convert(DateTime2, Convert(VarChar(11), DatePart(year, [t].[DateTimeValue])) + N'-02-24 00:00:00', 120)) > 0
+	DatePart(day, [d].[c1]) > 0
 

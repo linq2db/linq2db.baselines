@@ -2,9 +2,14 @@
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	Sign([p].[MoneyValue])
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Sign([p].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	Sign([p].[MoneyValue]) <> 0
+	[t].[c1] <> 0
 

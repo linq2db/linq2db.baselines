@@ -2,9 +2,14 @@
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	IIF([p].[MoneyValue] - Floor([p].[MoneyValue]) = 0.5 AND Floor([p].[MoneyValue]) % 2 = 0, Floor([p].[MoneyValue]), Round([p].[MoneyValue], 0))
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			IIF([p].[MoneyValue] - Floor([p].[MoneyValue]) = 0.5 AND Floor([p].[MoneyValue]) % 2 = 0, Floor([p].[MoneyValue]), Round([p].[MoneyValue], 0)) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	IIF([p].[MoneyValue] - Floor([p].[MoneyValue]) = 0.5 AND Floor([p].[MoneyValue]) % 2 = 0, Floor([p].[MoneyValue]), Round([p].[MoneyValue], 0)) <> 0
+	[t].[c1] <> 0
 

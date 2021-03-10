@@ -2,10 +2,17 @@
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	[_].[ParentID] + [cp].[ParentID]
+	[_1].[c1]
 FROM
 	[Parent] [cp]
-		CROSS JOIN [Child] [_]
+		CROSS APPLY (
+			SELECT
+				[_].[ParentID] + [cp].[ParentID] as [c1]
+			FROM
+				[Child] [_]
+			WHERE
+				[cp].[ParentID] = [_].[ParentID]
+		) [_1]
 WHERE
-	[_].[ParentID] + [cp].[ParentID] > 1 AND [cp].[ParentID] = [_].[ParentID]
+	[_1].[c1] > 1
 

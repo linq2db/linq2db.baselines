@@ -17,9 +17,14 @@ BeforeExecute
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	Convert(NVarChar(3), Convert(TinyInt, [t].[ID]))
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(NVarChar(3), Convert(TinyInt, [t].[ID])) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Len(Convert(NVarChar(3), Convert(TinyInt, [t].[ID]))) > 0
+	Len([p].[c1]) > 0
 

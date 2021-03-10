@@ -2,9 +2,14 @@
 -- SqlServer.2016 SqlServer.2012
 
 SELECT
-	IIF(Convert(Float, [p].[MoneyValue]) - Floor(Convert(Float, [p].[MoneyValue])) = 0.5 AND (Convert(Int, Floor(Convert(Float, [p].[MoneyValue]))) % 2) = 0, Floor(Convert(Float, [p].[MoneyValue])), Round(Convert(Float, [p].[MoneyValue]), 0))
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			IIF(Convert(Float, [p].[MoneyValue]) - Floor(Convert(Float, [p].[MoneyValue])) = 0.5 AND (Convert(Int, Floor(Convert(Float, [p].[MoneyValue]))) % 2) = 0, Floor(Convert(Float, [p].[MoneyValue])), Round(Convert(Float, [p].[MoneyValue]), 0)) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	IIF(Convert(Float, [p].[MoneyValue]) - Floor(Convert(Float, [p].[MoneyValue])) = 0.5 AND (Convert(Int, Floor(Convert(Float, [p].[MoneyValue]))) % 2) = 0, Floor(Convert(Float, [p].[MoneyValue])), Round(Convert(Float, [p].[MoneyValue]), 0)) <> 0
+	[t].[c1] <> 0
 
