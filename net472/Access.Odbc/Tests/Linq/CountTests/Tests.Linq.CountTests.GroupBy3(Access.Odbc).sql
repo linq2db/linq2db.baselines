@@ -2,29 +2,23 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t2].[c1],
-	Min([t2].[ChildID]),
+	[ch_1].[ParentID] + 1,
+	Min([ch_1].[ChildID]),
 	Count([t1].[ParentID])
 FROM
-	(
-		SELECT
-			[ch].[ParentID] + 1 as [c1],
-			[ch].[ChildID]
-		FROM
-			[Child] [ch]
-		WHERE
-			[ch].[ParentID] > 0
-	) [t2]
+	[Child] [ch_1]
 		LEFT JOIN (
 			SELECT
-				[ch_1].[ParentID]
+				[ch].[ParentID]
 			FROM
-				[Child] [ch_1]
+				[Child] [ch]
 			WHERE
-				[ch_1].[ChildID] > 25 AND [ch_1].[ParentID] > 0
+				[ch].[ChildID] > 25 AND [ch].[ParentID] > 0
 			GROUP BY
-				[ch_1].[ParentID]
-		) [t1] ON ([t2].[c1] = [t1].[ParentID] + 1)
+				[ch].[ParentID]
+		) [t1] ON ([ch_1].[ParentID] + 1 = [t1].[ParentID] + 1)
+WHERE
+	[ch_1].[ParentID] > 0
 GROUP BY
-	[t2].[c1]
+	[ch_1].[ParentID] + 1
 
