@@ -2,9 +2,14 @@
 -- SqlServer.2017
 
 SELECT
-	Convert(Decimal(29, 10), [t].[MoneyValue])
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(Decimal(29, 10), [t].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Convert(Decimal(29, 10), [t].[MoneyValue]) > 0
+	[p].[c1] > 0
 

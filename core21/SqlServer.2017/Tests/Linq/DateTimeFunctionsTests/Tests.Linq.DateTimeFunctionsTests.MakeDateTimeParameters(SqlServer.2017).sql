@@ -4,9 +4,14 @@ DECLARE @ID Int -- Int32
 SET     @ID = 1320
 
 SELECT
-	DateAdd(month, (@ID + [p].[ID]) - 1, 0)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			DateAdd(month, (@ID + [p].[ID]) - 1, 0) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart(year, DateAdd(month, (@ID + [p].[ID]) - 1, 0)) = 2010
+	DatePart(year, [t].[c1]) = 2010
 

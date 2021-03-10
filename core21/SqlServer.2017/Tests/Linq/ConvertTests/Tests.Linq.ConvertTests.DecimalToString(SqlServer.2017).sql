@@ -2,9 +2,14 @@
 -- SqlServer.2017
 
 SELECT
-	Convert(NVarChar(31), [t].[MoneyValue])
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(NVarChar(31), [t].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Len(Convert(NVarChar(31), [t].[MoneyValue])) > 0
+	Len([p].[c1]) > 0
 
