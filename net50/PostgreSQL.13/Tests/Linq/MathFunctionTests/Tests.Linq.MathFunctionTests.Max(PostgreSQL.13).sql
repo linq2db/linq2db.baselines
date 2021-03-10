@@ -2,17 +2,15 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	CASE
+		WHEN p."MoneyValue" > 5.1 THEN p."MoneyValue"
+		ELSE 5.1
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN p."MoneyValue" > 5.1 THEN p."MoneyValue"
-				ELSE 5.1
-			END as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	t.c1 <> 0
+	CASE
+		WHEN p."MoneyValue" > 5.1 THEN p."MoneyValue"
+		ELSE 5.1
+	END <> 0
 
