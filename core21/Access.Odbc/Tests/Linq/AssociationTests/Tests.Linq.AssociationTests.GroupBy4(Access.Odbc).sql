@@ -2,9 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	DatePart('yyyy', [selectParam].[DateTimeValue])
+	[t1].[c1]
 FROM
-	[LinqDataTypes] [selectParam]
+	(
+		SELECT
+			DatePart('yyyy', [selectParam].[DateTimeValue]) as [c1]
+		FROM
+			[LinqDataTypes] [selectParam]
+	) [t1]
 GROUP BY
-	DatePart('yyyy', [selectParam].[DateTimeValue])
+	[t1].[c1]
 
