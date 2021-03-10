@@ -2,17 +2,18 @@
 -- SqlServer.2005
 
 SELECT
-	Convert(Int, CASE
-		WHEN [t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Floor([t].[MoneyValue]) % 2 = 0
-			THEN Floor([t].[MoneyValue])
-		ELSE Round([t].[MoneyValue], 0)
-	END)
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(Int, CASE
+				WHEN [t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Floor([t].[MoneyValue]) % 2 = 0
+					THEN Floor([t].[MoneyValue])
+				ELSE Round([t].[MoneyValue], 0)
+			END) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Convert(Int, CASE
-		WHEN [t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Floor([t].[MoneyValue]) % 2 = 0
-			THEN Floor([t].[MoneyValue])
-		ELSE Round([t].[MoneyValue], 0)
-	END) > 0
+	[p].[c1] > 0
 

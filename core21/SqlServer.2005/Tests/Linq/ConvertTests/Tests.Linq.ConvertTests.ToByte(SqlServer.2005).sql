@@ -2,9 +2,14 @@
 -- SqlServer.2005
 
 SELECT
-	Convert(TinyInt, [t].[MoneyValue])
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(TinyInt, [t].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Convert(TinyInt, [t].[MoneyValue]) > 0
+	[p].[c1] > 0
 

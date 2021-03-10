@@ -2,9 +2,14 @@
 -- SqlServer.2005
 
 SELECT
-	Convert(DateTime, Convert(VarChar(11), DatePart(year, [p].[DateTimeValue])) + N'-10-1 20:35:44', 120)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Convert(DateTime, Convert(VarChar(11), DatePart(year, [p].[DateTimeValue])) + N'-10-1 20:35:44', 120) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart(month, Convert(DateTime, Convert(VarChar(11), DatePart(year, [p].[DateTimeValue])) + N'-10-1 20:35:44', 120)) = 10
+	DatePart(month, [t].[c1]) = 10
 

@@ -2,9 +2,14 @@
 -- SqlServer.2005
 
 SELECT
-	Convert(Bit, [t].[MoneyValue])
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(Bit, [t].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Convert(Bit, [t].[MoneyValue]) = 1
+	[p].[c1] = 1
 
