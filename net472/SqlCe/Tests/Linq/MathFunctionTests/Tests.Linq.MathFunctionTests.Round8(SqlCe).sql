@@ -2,18 +2,17 @@
 -- SqlCe
 
 SELECT
-	[t].[c1]
+	CASE
+		WHEN Convert(Float, [p].[MoneyValue]) - Floor(Convert(Float, [p].[MoneyValue])) = 0.5 AND Convert(Int, Floor(Convert(Float, [p].[MoneyValue]))) % 2 = 0
+			THEN Floor(Convert(Float, [p].[MoneyValue]))
+		ELSE Round(Convert(Float, [p].[MoneyValue]), 0)
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN Convert(Float, [p].[MoneyValue]) - Floor(Convert(Float, [p].[MoneyValue])) = 0.5 AND Convert(Int, Floor(Convert(Float, [p].[MoneyValue]))) % 2 = 0
-					THEN Floor(Convert(Float, [p].[MoneyValue]))
-				ELSE Round(Convert(Float, [p].[MoneyValue]), 0)
-			END as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	[t].[c1] <> 0
+	CASE
+		WHEN Convert(Float, [p].[MoneyValue]) - Floor(Convert(Float, [p].[MoneyValue])) = 0.5 AND Convert(Int, Floor(Convert(Float, [p].[MoneyValue]))) % 2 = 0
+			THEN Floor(Convert(Float, [p].[MoneyValue]))
+		ELSE Round(Convert(Float, [p].[MoneyValue]), 0)
+	END <> 0
 
