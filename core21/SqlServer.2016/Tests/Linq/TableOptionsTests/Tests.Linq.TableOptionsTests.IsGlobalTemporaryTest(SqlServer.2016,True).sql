@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [##IsGlobalTemporaryTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [##IsGlobalTemporaryTable]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -17,7 +17,7 @@ FROM
 	[##IsGlobalTemporaryTable] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [##IsGlobalTemporaryTable]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @table Structured -- Object
 SET     @table = Tests.DataProvider.SqlServerTypesTests+<GetSqlDataRecords>d__22
 

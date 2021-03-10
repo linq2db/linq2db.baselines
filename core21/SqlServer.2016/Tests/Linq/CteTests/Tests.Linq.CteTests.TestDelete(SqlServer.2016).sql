@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[CteChild]', N'U') IS NOT NULL)
-	DROP TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[CteChild]', N'U') IS NULL)
 	CREATE TABLE [CteChild]
@@ -15,7 +14,7 @@ IF (OBJECT_ID(N'[CteChild]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [CteChild]
 (
@@ -35,7 +34,7 @@ VALUES
 (1009,9)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 WITH [CTE_1] ([ParentID])
 AS
@@ -53,8 +52,7 @@ FROM
 		INNER JOIN [CTE_1] [ct] ON [ct].[ParentID] = [c_2].[ParentID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[CteChild]', N'U') IS NOT NULL)
-	DROP TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
 

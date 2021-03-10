@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Requests]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [Requests]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [FirmInfo]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [FirmInfo]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Assignments]
 (
@@ -29,7 +29,7 @@ CREATE TABLE [Assignments]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1002
 DECLARE @FirmId Int -- Int32
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -61,7 +61,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @DirectionId UniqueIdentifier -- Guid
 SET     @DirectionId = 'c5c0a778-694e-49d1-b1a0-f8ef5569c673'
 DECLARE @TargetId Int -- Int32
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[c_1].[Id],
@@ -101,7 +101,7 @@ WHERE
 	[r].[Id] = 1002
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[c_1].[Id],
@@ -119,17 +119,17 @@ WHERE
 	[r].[Id] = 1002
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Assignments]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [FirmInfo]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Requests]
 

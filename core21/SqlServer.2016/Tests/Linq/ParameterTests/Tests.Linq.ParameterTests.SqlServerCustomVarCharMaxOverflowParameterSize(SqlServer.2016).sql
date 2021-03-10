@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [AllTypesCustomMaxLength]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [AllTypesCustomMaxLength]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @VarChar_1 VarChar -- AnsiString
 SET     @VarChar_1 = Tests.Linq.ParameterTests+VarChar
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[VarBinary],
@@ -33,7 +33,7 @@ FROM
 	[AllTypesCustomMaxLength] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [AllTypesCustomMaxLength]
 

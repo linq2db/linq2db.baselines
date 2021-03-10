@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Blog]', N'U') IS NOT NULL)
-	DROP TABLE [Blog]
+DROP TABLE IF EXISTS [Blog]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Blog]', N'U') IS NULL)
 	CREATE TABLE [Blog]
@@ -17,7 +16,7 @@ IF (OBJECT_ID(N'[Blog]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Blog]
 (
@@ -30,13 +29,12 @@ VALUES
 (1,N'Another .NET Core Guy',N'Doing .NET Core Stuff',N'bc7b663d0fde43278f925d8cc3a11d11')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Post]', N'U') IS NOT NULL)
-	DROP TABLE [Post]
+DROP TABLE IF EXISTS [Post]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Post]', N'U') IS NULL)
 	CREATE TABLE [Post]
@@ -49,7 +47,7 @@ IF (OBJECT_ID(N'[Post]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Post]
 (
@@ -66,13 +64,12 @@ VALUES
 (4,1,N'Post 4',N'Content 4',0)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
-	DROP TABLE [Tag]
+DROP TABLE IF EXISTS [Tag]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Tag]', N'U') IS NULL)
 	CREATE TABLE [Tag]
@@ -83,7 +80,7 @@ IF (OBJECT_ID(N'[Tag]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Tag]
 (
@@ -99,13 +96,12 @@ VALUES
 (5,N'SqlKata',1)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[PostTag]', N'U') IS NOT NULL)
-	DROP TABLE [PostTag]
+DROP TABLE IF EXISTS [PostTag]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[PostTag]', N'U') IS NULL)
 	CREATE TABLE [PostTag]
@@ -117,7 +113,7 @@ IF (OBJECT_ID(N'[PostTag]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [PostTag]
 (
@@ -133,7 +129,7 @@ VALUES
 (4,4,5,0)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -181,7 +177,7 @@ ORDER BY
 	[detail_1].[TagId]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -212,7 +208,7 @@ ORDER BY
 	[detail].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
@@ -227,26 +223,22 @@ WHERE
 	[b].[Id] = @blogId
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[PostTag]', N'U') IS NOT NULL)
-	DROP TABLE [PostTag]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
-	DROP TABLE [Tag]
+DROP TABLE IF EXISTS [PostTag]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Post]', N'U') IS NOT NULL)
-	DROP TABLE [Post]
+DROP TABLE IF EXISTS [Tag]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Blog]', N'U') IS NOT NULL)
-	DROP TABLE [Blog]
+DROP TABLE IF EXISTS [Post]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [Blog]
 

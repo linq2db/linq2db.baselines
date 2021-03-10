@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [PR_1598_Insert_Table_Cache]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [PR_1598_Insert_Table_Cache]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -39,7 +39,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -53,7 +53,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -81,7 +81,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -95,7 +95,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [PR_1598_Insert_Table_Cache]
 

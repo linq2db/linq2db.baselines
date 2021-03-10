@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Contract_Distributor_Agent]', N'U') IS NOT NULL)
-	DROP TABLE [Contract_Distributor_Agent]
+DROP TABLE IF EXISTS [Contract_Distributor_Agent]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Contract_Distributor_Agent]', N'U') IS NULL)
 	CREATE TABLE [Contract_Distributor_Agent]
@@ -19,7 +18,7 @@ IF (OBJECT_ID(N'[Contract_Distributor_Agent]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Contract_Distributor_Agent]
 (
@@ -34,13 +33,12 @@ VALUES
 (1,1,198827882,N'CC',N'OFFICE',N'REPRESENTS')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Agent]', N'U') IS NOT NULL)
-	DROP TABLE [Agent]
+DROP TABLE IF EXISTS [Agent]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Agent]', N'U') IS NULL)
 	CREATE TABLE [Agent]
@@ -51,7 +49,7 @@ IF (OBJECT_ID(N'[Agent]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Agent]
 (
@@ -63,13 +61,12 @@ VALUES
 (1,N'x',N'x')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Distributor]', N'U') IS NOT NULL)
-	DROP TABLE [Distributor]
+DROP TABLE IF EXISTS [Distributor]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Distributor]', N'U') IS NULL)
 	CREATE TABLE [Distributor]
@@ -80,7 +77,7 @@ IF (OBJECT_ID(N'[Distributor]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Distributor]
 (
@@ -92,13 +89,12 @@ VALUES
 (1,N'RE',N'x')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Distributor_Commercial_Propert]', N'U') IS NOT NULL)
-	DROP TABLE [Distributor_Commercial_Propert]
+DROP TABLE IF EXISTS [Distributor_Commercial_Propert]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Distributor_Commercial_Propert]', N'U') IS NULL)
 	CREATE TABLE [Distributor_Commercial_Propert]
@@ -109,7 +105,7 @@ IF (OBJECT_ID(N'[Distributor_Commercial_Propert]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Distributor_Commercial_Propert]
 (
@@ -121,13 +117,12 @@ VALUES
 (1,1,N'RE')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Commercial_Property]', N'U') IS NOT NULL)
-	DROP TABLE [Commercial_Property]
+DROP TABLE IF EXISTS [Commercial_Property]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Commercial_Property]', N'U') IS NULL)
 	CREATE TABLE [Commercial_Property]
@@ -142,7 +137,7 @@ IF (OBJECT_ID(N'[Commercial_Property]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Commercial_Property]
 (
@@ -158,13 +153,12 @@ VALUES
 (1,N'x',N'x',N'x',N'x',N'x',N'x')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Contract_Dates]', N'U') IS NOT NULL)
-	DROP TABLE [Contract_Dates]
+DROP TABLE IF EXISTS [Contract_Dates]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Contract_Dates]', N'U') IS NULL)
 	CREATE TABLE [Contract_Dates]
@@ -175,7 +169,7 @@ IF (OBJECT_ID(N'[Contract_Dates]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Contract_Dates]
 (
@@ -187,13 +181,12 @@ VALUES
 (198827882,N'ESTCOE',N'x')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Cities]', N'U') IS NOT NULL)
-	DROP TABLE [Cities]
+DROP TABLE IF EXISTS [Cities]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Cities]', N'U') IS NULL)
 	CREATE TABLE [Cities]
@@ -203,7 +196,7 @@ IF (OBJECT_ID(N'[Cities]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Cities]
 (
@@ -214,7 +207,7 @@ VALUES
 (N'x',N'Urupinsk')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[a].[First_Name],
@@ -253,44 +246,37 @@ WHERE
 	[dcp].[Distributor_Type_Code] = N'RE'
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Cities]', N'U') IS NOT NULL)
-	DROP TABLE [Cities]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-IF (OBJECT_ID(N'[Contract_Dates]', N'U') IS NOT NULL)
-	DROP TABLE [Contract_Dates]
+DROP TABLE IF EXISTS [Cities]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Commercial_Property]', N'U') IS NOT NULL)
-	DROP TABLE [Commercial_Property]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-IF (OBJECT_ID(N'[Distributor_Commercial_Propert]', N'U') IS NOT NULL)
-	DROP TABLE [Distributor_Commercial_Propert]
+DROP TABLE IF EXISTS [Contract_Dates]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Distributor]', N'U') IS NOT NULL)
-	DROP TABLE [Distributor]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-IF (OBJECT_ID(N'[Agent]', N'U') IS NOT NULL)
-	DROP TABLE [Agent]
+DROP TABLE IF EXISTS [Commercial_Property]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Contract_Distributor_Agent]', N'U') IS NOT NULL)
-	DROP TABLE [Contract_Distributor_Agent]
+DROP TABLE IF EXISTS [Distributor_Commercial_Propert]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [Distributor]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [Agent]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [Contract_Distributor_Agent]
 

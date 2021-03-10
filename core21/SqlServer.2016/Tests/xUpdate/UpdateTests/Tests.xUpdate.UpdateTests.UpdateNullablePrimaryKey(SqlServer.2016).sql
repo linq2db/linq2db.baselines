@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int -- Int32
@@ -15,7 +15,7 @@ WHERE
 	[t1].[ParentID] = @ParentID AND [t1].[ChildID] IS NULL
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int -- Int32

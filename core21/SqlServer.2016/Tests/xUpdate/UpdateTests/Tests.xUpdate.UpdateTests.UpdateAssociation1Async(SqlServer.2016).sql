@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 DELETE [t1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[ChildID] = 10000
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 DELETE [t1]
 FROM
@@ -17,7 +17,7 @@ WHERE
 	[t1].[ParentID] = 20000
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 INSERT INTO [Parent]
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 INSERT INTO [Child]
 (
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 UPDATE
 	[Parent]
@@ -58,7 +58,7 @@ WHERE
 	[child_1].[ChildID] = 10000
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 DELETE [t1]
 FROM
@@ -67,7 +67,7 @@ WHERE
 	[t1].[ChildID] = 10000
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 DELETE [t1]
 FROM

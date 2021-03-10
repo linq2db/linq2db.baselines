@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [InheritanceParent] [t1]
 USING (SELECT 143 AS [InheritanceParentId], NULL AS [Name]) [s] ON
@@ -33,7 +33,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Count(*)
@@ -41,7 +41,7 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [InheritanceParent] [t1]
 USING (SELECT 143 AS [InheritanceParentId], NULL AS [Name]) [s] ON
@@ -68,7 +68,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Count(*)

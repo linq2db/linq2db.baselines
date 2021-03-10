@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[BaseTable]', N'U') IS NOT NULL)
-	DROP TABLE [BaseTable]
+DROP TABLE IF EXISTS [BaseTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[BaseTable]', N'U') IS NULL)
 	CREATE TABLE [BaseTable]
@@ -17,7 +16,7 @@ IF (OBJECT_ID(N'[BaseTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [BaseTable]
 (
@@ -28,7 +27,7 @@ VALUES
 (100,1)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -41,7 +40,7 @@ WHERE
 	[x].[Id] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -54,8 +53,7 @@ WHERE
 	[x].[Id] = 1 AND [x].[Value] = 100
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[BaseTable]', N'U') IS NOT NULL)
-	DROP TABLE [BaseTable]
+DROP TABLE IF EXISTS [BaseTable]
 

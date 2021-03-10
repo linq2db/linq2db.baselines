@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 DROP TABLE [#TestTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 CREATE TABLE [#TestTable]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [#TestTable]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[Field1],
@@ -26,7 +26,7 @@ FROM
 	[#TestTable] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 DROP TABLE [#TestTable]
 

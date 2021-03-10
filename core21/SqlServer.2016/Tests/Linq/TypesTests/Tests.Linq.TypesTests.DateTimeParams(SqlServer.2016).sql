@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @dateTime DateTime2
@@ -13,7 +13,7 @@ WHERE
 	[t].[DateTimeValue] > @dateTime
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @dateTime DateTime2

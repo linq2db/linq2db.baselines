@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[ParentID]
@@ -9,7 +9,7 @@ GROUP BY
 	[t1].[ParentID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
@@ -22,7 +22,7 @@ WHERE
 	[keyParam].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 
@@ -35,7 +35,7 @@ WHERE
 	[keyParam].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
 
@@ -48,7 +48,7 @@ WHERE
 	[keyParam].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
 
@@ -61,7 +61,7 @@ WHERE
 	[keyParam].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
 
@@ -74,7 +74,7 @@ WHERE
 	[keyParam].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 7
 

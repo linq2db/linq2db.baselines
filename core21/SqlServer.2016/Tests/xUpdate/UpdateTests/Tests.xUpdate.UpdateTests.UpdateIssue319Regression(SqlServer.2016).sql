@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500
 DECLARE @Value1 Int -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @id Int -- Int32
@@ -31,7 +31,7 @@ WHERE
 	[_].[ParentID] = @id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500
 DECLARE @id Int -- Int32
@@ -63,7 +63,7 @@ WHERE
 	[_2].[ParentID] = @id_1 AND [_2].[ex] > 0
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 100500
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 
@@ -13,7 +13,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t].[BinaryValue]

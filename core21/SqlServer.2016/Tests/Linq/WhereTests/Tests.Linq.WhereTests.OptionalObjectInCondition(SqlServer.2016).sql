@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'1'
 
@@ -15,7 +15,7 @@ WHERE
 	[r].[FirstName] = @FirstName
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[r].[FirstName],
@@ -29,7 +29,7 @@ WHERE
 	[r].[FirstName] IS NULL
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'1'
 

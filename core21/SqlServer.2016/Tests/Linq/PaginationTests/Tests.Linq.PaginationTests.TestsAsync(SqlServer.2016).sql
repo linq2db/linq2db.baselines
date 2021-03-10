@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[PaginationData]', N'U') IS NOT NULL)
-	DROP TABLE [PaginationData]
+DROP TABLE IF EXISTS [PaginationData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[PaginationData]', N'U') IS NULL)
 	CREATE TABLE [PaginationData]
@@ -15,7 +14,7 @@ IF (OBJECT_ID(N'[PaginationData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [PaginationData]
 (
@@ -325,7 +324,7 @@ VALUES
 (299,9867)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 0
 DECLARE @take Int -- Int32
@@ -344,7 +343,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 20
 DECLARE @take Int -- Int32
@@ -364,7 +363,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @Id Int -- Int32
@@ -400,7 +399,7 @@ ORDER BY
 	[c_1].[RowNumber]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @Id Int -- Int32
@@ -444,7 +443,7 @@ ORDER BY
 	[c_1].[RowNumber]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @Id Int -- Int32
@@ -466,7 +465,7 @@ WHERE
 	[h].[Id] = @Id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @Id Int -- Int32
@@ -488,8 +487,7 @@ WHERE
 	[h].[Id] = @Id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[PaginationData]', N'U') IS NOT NULL)
-	DROP TABLE [PaginationData]
+DROP TABLE IF EXISTS [PaginationData]
 

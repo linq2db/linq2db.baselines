@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [TestMerge1] [Target]
 USING (	VALUES
@@ -37,7 +37,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -52,14 +52,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [TestMerge1] [Target]
 USING (	VALUES
@@ -90,7 +90,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -105,14 +105,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [TestMerge1] [Target]
 USING (	VALUES
@@ -144,7 +144,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],

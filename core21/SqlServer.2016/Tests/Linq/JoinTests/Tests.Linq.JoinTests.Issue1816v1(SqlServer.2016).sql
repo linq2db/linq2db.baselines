@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
-	DROP TABLE [stVersions]
+DROP TABLE IF EXISTS [stVersions]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[stVersions]', N'U') IS NULL)
 	CREATE TABLE [stVersions]
@@ -17,13 +16,12 @@ IF (OBJECT_ID(N'[stVersions]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NOT NULL)
-	DROP TABLE [rlStatesTypesAndUserGroups]
+DROP TABLE IF EXISTS [rlStatesTypesAndUserGroups]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NULL)
 	CREATE TABLE [rlStatesTypesAndUserGroups]
@@ -35,13 +33,12 @@ IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[stMain]', N'U') IS NOT NULL)
-	DROP TABLE [stMain]
+DROP TABLE IF EXISTS [stMain]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[stMain]', N'U') IS NULL)
 	CREATE TABLE [stMain]
@@ -53,7 +50,7 @@ IF (OBJECT_ID(N'[stMain]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[v].[inId],
@@ -64,20 +61,17 @@ FROM
 		LEFT JOIN [rlStatesTypesAndUserGroups] [r] ON [r].[inIdType] = [a_Main].[inIdType]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[stMain]', N'U') IS NOT NULL)
-	DROP TABLE [stMain]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NOT NULL)
-	DROP TABLE [rlStatesTypesAndUserGroups]
+DROP TABLE IF EXISTS [stMain]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
-	DROP TABLE [stVersions]
+DROP TABLE IF EXISTS [rlStatesTypesAndUserGroups]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [stVersions]
 

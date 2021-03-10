@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[TransactionScopeTable]', N'U') IS NOT NULL)
-	DROP TABLE [TransactionScopeTable]
+DROP TABLE IF EXISTS [TransactionScopeTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [TransactionScopeTable]
 (
@@ -13,7 +12,7 @@ CREATE TABLE [TransactionScopeTable]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [TransactionScopeTable]
 (
@@ -25,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [TransactionScopeTable]
 (
@@ -37,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[_].[Id]
@@ -47,8 +46,7 @@ ORDER BY
 	[_].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[TransactionScopeTable]', N'U') IS NOT NULL)
-	DROP TABLE [TransactionScopeTable]
+DROP TABLE IF EXISTS [TransactionScopeTable]
 

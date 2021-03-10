@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [activity649]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [activity649]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [person649]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [person649]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @added DateTime2
 SET     @added = '2017-01-01T00:00:00.0000000'
 
@@ -40,12 +40,12 @@ GROUP BY
 	[a_Person].[personname]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [person649]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [activity649]
 

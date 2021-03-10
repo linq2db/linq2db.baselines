@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[tempdb]..[#TestTable]', N'U') IS NOT NULL)
-	DROP TABLE [#TestTable]
+DROP TABLE IF EXISTS [#TestTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [#TestTable]
 (
@@ -14,7 +13,7 @@ CREATE TABLE [#TestTable]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -29,7 +28,7 @@ FROM
 		INNER JOIN [#TestTable] [t3] ON [t2].[Id] = [t3].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [#TestTable]
 

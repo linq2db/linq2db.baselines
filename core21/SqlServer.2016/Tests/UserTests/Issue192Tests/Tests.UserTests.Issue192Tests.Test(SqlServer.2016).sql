@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [TypeConvertTable]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [TypeConvertTable]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Name NVarChar(50) -- String
 SET     @Name = N'NotVerified'
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Name NVarChar(50) -- String
 SET     @Name = N'Verified'
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Count(*)
@@ -63,7 +63,7 @@ WHERE
 	[_].[BoolValue] = 'N'
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Count(*)
@@ -73,7 +73,7 @@ WHERE
 	[_].[BoolValue] = 'Y'
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
@@ -85,7 +85,7 @@ WHERE
 	[_].[GuidValue] = @GuidValue
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
@@ -101,7 +101,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue_1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -117,7 +117,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
@@ -133,7 +133,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue_1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -149,7 +149,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
@@ -165,7 +165,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue_1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -181,7 +181,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
@@ -197,7 +197,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue_1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -213,7 +213,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
@@ -229,7 +229,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue_1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -245,7 +245,7 @@ WHERE
 	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @GuidValue VarChar(50) -- AnsiString
@@ -261,7 +261,7 @@ WHERE
 	[_].[GuidValue] = @GuidValue
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @GuidValue VarChar(50) -- AnsiString
@@ -277,7 +277,7 @@ WHERE
 	[_].[GuidValue] = @GuidValue
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [TypeConvertTable]
 

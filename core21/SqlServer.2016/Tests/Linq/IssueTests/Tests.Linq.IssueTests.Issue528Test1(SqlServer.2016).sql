@@ -20,7 +20,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[FirstName]
@@ -30,7 +30,7 @@ GROUP BY
 	[t1].[FirstName]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Jane'
 
@@ -46,7 +46,7 @@ WHERE
 	[keyParam].[FirstName] = @FirstName
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 
@@ -62,7 +62,7 @@ WHERE
 	[keyParam].[FirstName] = @FirstName
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Jürgen'
 
@@ -78,7 +78,7 @@ WHERE
 	[keyParam].[FirstName] = @FirstName
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Tester'
 
