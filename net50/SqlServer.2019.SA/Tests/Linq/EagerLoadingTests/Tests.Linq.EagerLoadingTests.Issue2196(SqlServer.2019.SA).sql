@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NOT NULL)
-	DROP TABLE [EventScheduleItem]
+DROP TABLE IF EXISTS [EventScheduleItem]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -35,8 +34,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NOT NULL)
-	DROP TABLE [EventScheduleItemPerson]
+DROP TABLE IF EXISTS [EventScheduleItemPerson]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -65,8 +63,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NOT NULL)
-	DROP TABLE [EventSchedulePerson]
+DROP TABLE IF EXISTS [EventSchedulePerson]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -122,18 +119,15 @@ WHERE
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NOT NULL)
-	DROP TABLE [EventSchedulePerson]
+DROP TABLE IF EXISTS [EventSchedulePerson]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NOT NULL)
-	DROP TABLE [EventScheduleItemPerson]
+DROP TABLE IF EXISTS [EventScheduleItemPerson]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NOT NULL)
-	DROP TABLE [EventScheduleItem]
+DROP TABLE IF EXISTS [EventScheduleItem]
 

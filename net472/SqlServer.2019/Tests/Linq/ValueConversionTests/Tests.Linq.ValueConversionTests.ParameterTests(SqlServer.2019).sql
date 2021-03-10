@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
-	DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -67,6 +66,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
-	DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 

@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[AttendanceSheet]', N'U') IS NOT NULL)
-	DROP TABLE [AttendanceSheet]
+DROP TABLE IF EXISTS [AttendanceSheet]
 
 BeforeExecute
 -- SqlServer.2017
@@ -46,8 +45,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[AttendanceSheetRow]', N'U') IS NOT NULL)
-	DROP TABLE [AttendanceSheetRow]
+DROP TABLE IF EXISTS [AttendanceSheetRow]
 
 BeforeExecute
 -- SqlServer.2017
@@ -153,12 +151,10 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[AttendanceSheetRow]', N'U') IS NOT NULL)
-	DROP TABLE [AttendanceSheetRow]
+DROP TABLE IF EXISTS [AttendanceSheetRow]
 
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[AttendanceSheet]', N'U') IS NOT NULL)
-	DROP TABLE [AttendanceSheet]
+DROP TABLE IF EXISTS [AttendanceSheet]
 

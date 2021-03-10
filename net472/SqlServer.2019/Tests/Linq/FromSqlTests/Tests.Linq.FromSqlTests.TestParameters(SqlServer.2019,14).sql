@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[sample_class]', N'U') IS NOT NULL)
-	DROP TABLE [sample_class]
+DROP TABLE IF EXISTS [sample_class]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -81,6 +80,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[sample_class]', N'U') IS NOT NULL)
-	DROP TABLE [sample_class]
+DROP TABLE IF EXISTS [sample_class]
 

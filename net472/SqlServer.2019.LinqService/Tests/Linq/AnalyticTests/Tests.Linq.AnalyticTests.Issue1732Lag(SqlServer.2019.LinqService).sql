@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Position]', N'U') IS NOT NULL)
-	DROP TABLE [Position]
+DROP TABLE IF EXISTS [Position]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -119,6 +118,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[Position]', N'U') IS NOT NULL)
-	DROP TABLE [Position]
+DROP TABLE IF EXISTS [Position]
 

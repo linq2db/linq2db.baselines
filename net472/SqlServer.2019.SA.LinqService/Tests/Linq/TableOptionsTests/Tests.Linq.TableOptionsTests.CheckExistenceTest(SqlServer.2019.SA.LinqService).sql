@@ -10,6 +10,5 @@ IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NOT NULL)
-	DROP TABLE [DisposableTable]
+DROP TABLE IF EXISTS [DisposableTable]
 

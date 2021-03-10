@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[i1084_person]', N'U') IS NOT NULL)
-	DROP TABLE [i1084_person]
+DROP TABLE IF EXISTS [i1084_person]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -62,8 +61,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[i1084_student]', N'U') IS NOT NULL)
-	DROP TABLE [i1084_student]
+DROP TABLE IF EXISTS [i1084_student]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -135,12 +133,10 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[i1084_student]', N'U') IS NOT NULL)
-	DROP TABLE [i1084_student]
+DROP TABLE IF EXISTS [i1084_student]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[i1084_person]', N'U') IS NOT NULL)
-	DROP TABLE [i1084_person]
+DROP TABLE IF EXISTS [i1084_person]
 

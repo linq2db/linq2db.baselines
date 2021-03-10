@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[WhereCompareData]', N'U') IS NOT NULL)
-	DROP TABLE [WhereCompareData]
+DROP TABLE IF EXISTS [WhereCompareData]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -141,6 +140,5 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[WhereCompareData]', N'U') IS NOT NULL)
-	DROP TABLE [WhereCompareData]
+DROP TABLE IF EXISTS [WhereCompareData]
 

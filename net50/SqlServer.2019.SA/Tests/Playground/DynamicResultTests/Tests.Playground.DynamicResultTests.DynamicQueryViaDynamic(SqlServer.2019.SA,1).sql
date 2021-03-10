@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[RawDynamicData]', N'U') IS NOT NULL)
-	DROP TABLE [RawDynamicData]
+DROP TABLE IF EXISTS [RawDynamicData]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -58,6 +57,5 @@ select * from RawDynamicData where AId >= @param
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[RawDynamicData]', N'U') IS NOT NULL)
-	DROP TABLE [RawDynamicData]
+DROP TABLE IF EXISTS [RawDynamicData]
 

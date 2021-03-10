@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[Car]', N'U') IS NOT NULL)
-	DROP TABLE [Car]
+DROP TABLE IF EXISTS [Car]
 
 BeforeExecute
 -- SqlServer.2017
@@ -171,6 +170,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[Car]', N'U') IS NOT NULL)
-	DROP TABLE [Car]
+DROP TABLE IF EXISTS [Car]
 

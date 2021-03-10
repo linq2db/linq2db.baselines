@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NOT NULL)
-	DROP TABLE [UpdateSetTest]
+DROP TABLE IF EXISTS [UpdateSetTest]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -100,6 +99,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NOT NULL)
-	DROP TABLE [UpdateSetTest]
+DROP TABLE IF EXISTS [UpdateSetTest]
 

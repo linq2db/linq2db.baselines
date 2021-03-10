@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NOT NULL)
-	DROP TABLE [SelectExpressionTable]
+DROP TABLE IF EXISTS [SelectExpressionTable]
 
 BeforeExecute
 -- SqlServer.2017
@@ -38,6 +37,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NOT NULL)
-	DROP TABLE [SelectExpressionTable]
+DROP TABLE IF EXISTS [SelectExpressionTable]
 

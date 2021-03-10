@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
-	DROP TABLE [Table404One]
+DROP TABLE IF EXISTS [Table404One]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -44,8 +43,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
-	DROP TABLE [Table404Two]
+DROP TABLE IF EXISTS [Table404Two]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -272,20 +270,17 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
-	DROP TABLE [Table404Two]
+DROP TABLE IF EXISTS [Table404Two]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
-	DROP TABLE [Table404One]
+DROP TABLE IF EXISTS [Table404One]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
-	DROP TABLE [Table404One]
+DROP TABLE IF EXISTS [Table404One]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -327,8 +322,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
-	DROP TABLE [Table404Two]
+DROP TABLE IF EXISTS [Table404Two]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -555,12 +549,10 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Table404Two]', N'U') IS NOT NULL)
-	DROP TABLE [Table404Two]
+DROP TABLE IF EXISTS [Table404Two]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Table404One]', N'U') IS NOT NULL)
-	DROP TABLE [Table404One]
+DROP TABLE IF EXISTS [Table404One]
 

@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Blog]', N'U') IS NOT NULL)
-	DROP TABLE [Blog]
+DROP TABLE IF EXISTS [Blog]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -32,8 +31,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Post]', N'U') IS NOT NULL)
-	DROP TABLE [Post]
+DROP TABLE IF EXISTS [Post]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -68,8 +66,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
-	DROP TABLE [Tag]
+DROP TABLE IF EXISTS [Tag]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -101,8 +98,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[PostTag]', N'U') IS NOT NULL)
-	DROP TABLE [PostTag]
+DROP TABLE IF EXISTS [PostTag]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -229,24 +225,20 @@ WHERE
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[PostTag]', N'U') IS NOT NULL)
-	DROP TABLE [PostTag]
+DROP TABLE IF EXISTS [PostTag]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
-	DROP TABLE [Tag]
+DROP TABLE IF EXISTS [Tag]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Post]', N'U') IS NOT NULL)
-	DROP TABLE [Post]
+DROP TABLE IF EXISTS [Post]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Blog]', N'U') IS NOT NULL)
-	DROP TABLE [Blog]
+DROP TABLE IF EXISTS [Blog]
 

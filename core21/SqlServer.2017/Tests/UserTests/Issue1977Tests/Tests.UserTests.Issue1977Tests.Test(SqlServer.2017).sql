@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[Issue1977Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1977Table]
+DROP TABLE IF EXISTS [Issue1977Table]
 
 BeforeExecute
 -- SqlServer.2017
@@ -36,6 +35,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[Issue1977Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1977Table]
+DROP TABLE IF EXISTS [Issue1977Table]
 

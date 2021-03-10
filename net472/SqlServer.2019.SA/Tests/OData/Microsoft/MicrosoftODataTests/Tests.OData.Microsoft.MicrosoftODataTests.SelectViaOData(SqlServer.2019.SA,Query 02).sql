@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[odata_person]', N'U') IS NOT NULL)
-	DROP TABLE [odata_person]
+DROP TABLE IF EXISTS [odata_person]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -57,6 +56,5 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[odata_person]', N'U') IS NOT NULL)
-	DROP TABLE [odata_person]
+DROP TABLE IF EXISTS [odata_person]
 

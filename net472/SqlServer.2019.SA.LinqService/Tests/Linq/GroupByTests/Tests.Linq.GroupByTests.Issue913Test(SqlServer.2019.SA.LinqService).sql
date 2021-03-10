@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NOT NULL)
-	DROP TABLE [Issue913Test]
+DROP TABLE IF EXISTS [Issue913Test]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -91,6 +90,5 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NOT NULL)
-	DROP TABLE [Issue913Test]
+DROP TABLE IF EXISTS [Issue913Test]
 

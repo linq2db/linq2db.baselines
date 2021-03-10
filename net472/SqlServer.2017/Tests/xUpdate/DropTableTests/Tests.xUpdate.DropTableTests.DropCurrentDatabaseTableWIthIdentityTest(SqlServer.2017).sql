@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[DropTableTestID]', N'U') IS NOT NULL)
-	DROP TABLE [DropTableTestID]
+DROP TABLE IF EXISTS [DropTableTestID]
 
 BeforeExecute
 -- SqlServer.2017

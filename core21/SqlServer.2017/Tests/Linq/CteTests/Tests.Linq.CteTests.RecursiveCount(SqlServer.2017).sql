@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NOT NULL)
-	DROP TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
 
 BeforeExecute
 -- SqlServer.2017
@@ -88,6 +87,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NOT NULL)
-	DROP TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
 
