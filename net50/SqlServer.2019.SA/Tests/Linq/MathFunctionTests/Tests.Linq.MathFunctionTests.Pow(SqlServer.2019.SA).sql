@@ -2,9 +2,14 @@
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
-	Floor(Power(Convert(Float, [p].[MoneyValue]), 3))
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Floor(Power(Convert(Float, [p].[MoneyValue]), 3)) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Floor(Power(Convert(Float, [p].[MoneyValue]), 3)) <> 0 OR Floor(Power(Convert(Float, [p].[MoneyValue]), 3)) IS NULL)
+	([t].[c1] <> 0 OR [t].[c1] IS NULL)
 
