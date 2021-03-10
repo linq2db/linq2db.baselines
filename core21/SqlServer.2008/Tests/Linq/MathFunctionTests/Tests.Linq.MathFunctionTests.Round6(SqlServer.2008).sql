@@ -2,9 +2,14 @@
 -- SqlServer.2008
 
 SELECT
-	Round(Convert(Float, [p].[MoneyValue]), 0)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Round(Convert(Float, [p].[MoneyValue]), 0) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Round(Convert(Float, [p].[MoneyValue]), 0) <> 0 OR Round(Convert(Float, [p].[MoneyValue]), 0) IS NULL)
+	[t].[c1] <> 0
 

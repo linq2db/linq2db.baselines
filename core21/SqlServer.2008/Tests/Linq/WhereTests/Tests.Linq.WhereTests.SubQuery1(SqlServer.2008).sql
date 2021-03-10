@@ -2,22 +2,18 @@
 -- SqlServer.2008
 
 SELECT
-	CASE
-		WHEN [p].[MoneyValue] * 2 = Round([p].[MoneyValue] * 2, 2) AND [p].[MoneyValue] <> Round([p].[MoneyValue], 2)
-			THEN Round([p].[MoneyValue] / 2, 2) * 2
-		ELSE Round([p].[MoneyValue], 2)
-	END
+	[pp].[Value_1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			CASE
+				WHEN [p].[MoneyValue] * 2 = Round([p].[MoneyValue] * 2, 2) AND [p].[MoneyValue] <> Round([p].[MoneyValue], 2)
+					THEN Round([p].[MoneyValue] / 2, 2) * 2
+				ELSE Round([p].[MoneyValue], 2)
+			END as [Value_1]
+		FROM
+			[LinqDataTypes] [p]
+	) [pp]
 WHERE
-	CASE
-		WHEN [p].[MoneyValue] * 2 = Round([p].[MoneyValue] * 2, 2) AND [p].[MoneyValue] <> Round([p].[MoneyValue], 2)
-			THEN Round([p].[MoneyValue] / 2, 2) * 2
-		ELSE Round([p].[MoneyValue], 2)
-	END <> 0 AND
-	CASE
-		WHEN [p].[MoneyValue] * 2 = Round([p].[MoneyValue] * 2, 2) AND [p].[MoneyValue] <> Round([p].[MoneyValue], 2)
-			THEN Round([p].[MoneyValue] / 2, 2) * 2
-		ELSE Round([p].[MoneyValue], 2)
-	END <> 7
+	[pp].[Value_1] <> 0 AND [pp].[Value_1] <> 7
 
