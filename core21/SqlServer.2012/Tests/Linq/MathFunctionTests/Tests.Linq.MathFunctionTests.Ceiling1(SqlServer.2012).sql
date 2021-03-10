@@ -2,9 +2,14 @@
 -- SqlServer.2012
 
 SELECT
-	Ceiling(-([p].[MoneyValue] + 1))
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Ceiling(-([p].[MoneyValue] + 1)) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	Ceiling(-([p].[MoneyValue] + 1)) <> 0
+	[t].[c1] <> 0
 

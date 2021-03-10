@@ -2,9 +2,14 @@
 -- SqlServer.2012
 
 SELECT
-	Round([p].[MoneyValue], 0, 1)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Round([p].[MoneyValue], 0, 1) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Round([p].[MoneyValue], 0, 1) <> 0.1 OR Round([p].[MoneyValue], 0, 1) IS NULL)
+	([t].[c1] <> 0.1 OR [t].[c1] IS NULL)
 

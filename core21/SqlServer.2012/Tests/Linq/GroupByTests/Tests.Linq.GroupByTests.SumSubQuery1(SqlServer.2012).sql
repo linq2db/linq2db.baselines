@@ -4,18 +4,18 @@ DECLARE @n Int -- Int32
 SET     @n = 1
 
 SELECT
-	Sum([t1].[c1] - 3)
+	Sum([ch_1].[ParentID] - 3)
 FROM
 	(
 		SELECT
-			[ch].[ParentID] + 1 as [c1],
+			[ch].[ParentID] + 1 as [ParentID],
 			[ch].[ChildID]
 		FROM
 			[Child] [ch]
-		WHERE
-			[ch].[ParentID] + 2 > @n
-	) [t1]
+	) [ch_1]
+WHERE
+	[ch_1].[ParentID] + 1 > @n
 GROUP BY
-	[t1].[c1],
-	[t1].[ChildID]
+	[ch_1].[ParentID],
+	[ch_1].[ChildID]
 

@@ -2,8 +2,16 @@
 -- SqlServer.2012
 
 SELECT
-	[_].[ParentID] + 1
+	[_1].[c1]
 FROM
 	[Parent] [cp]
-		INNER JOIN [Child] [_] ON [_].[ParentID] > 0 AND [cp].[ParentID] = [_].[ParentID]
+		INNER JOIN (
+			SELECT
+				[_].[ParentID] + 1 as [c1],
+				[_].[ParentID]
+			FROM
+				[Child] [_]
+		) [_1] ON [cp].[ParentID] = [_1].[ParentID]
+WHERE
+	[_1].[c1] > 1
 

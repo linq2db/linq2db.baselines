@@ -2,9 +2,14 @@
 -- SqlServer.2012
 
 SELECT
-	Round(Convert(Float, -[p].[MoneyValue]), 0, 1)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Round(Convert(Float, -[p].[MoneyValue]), 0, 1) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Round(Convert(Float, -[p].[MoneyValue]), 0, 1) <> 0.10000000000000001 OR Round(Convert(Float, -[p].[MoneyValue]), 0, 1) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 

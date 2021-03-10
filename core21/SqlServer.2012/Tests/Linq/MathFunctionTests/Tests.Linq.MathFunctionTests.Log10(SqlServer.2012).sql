@@ -2,9 +2,14 @@
 -- SqlServer.2012
 
 SELECT
-	Floor(Log10(Convert(Float, [p].[MoneyValue])))
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Floor(Log10(Convert(Float, [p].[MoneyValue]))) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Floor(Log10(Convert(Float, [p].[MoneyValue]))) <> 0.10000000000000001 OR Floor(Log10(Convert(Float, [p].[MoneyValue]))) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 
