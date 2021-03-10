@@ -17,9 +17,14 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(Cast(t."ID" as SmallInt) as VarChar(3))
+	p.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			Cast(Cast(t."ID" as SmallInt) as VarChar(3)) as c1
+		FROM
+			"LinqDataTypes" t
+	) p
 WHERE
-	Length(Cast(Cast(t."ID" as SmallInt) as VarChar(3))) > 0
+	Length(p.c1) > 0
 

@@ -2,15 +2,23 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."PersonID",
-	p."FirstName"
+	p_1."ID",
+	p_1."FirstName_1"
 FROM
-	"Person" p
+	(
+		SELECT
+			'123' || p."FirstName" || '012345' as "FirstName",
+			p."PersonID" as "ID",
+			p."FirstName" as "FirstName_1"
+		FROM
+			"Person" p
+		WHERE
+			p."PersonID" = 1
+	) p_1
 WHERE
 	CASE
-		WHEN Position('123' in Substring('123' || p."FirstName" || '012345', 6, Length('123' || p."FirstName" || '012345') - 6)) + 5 = 0
+		WHEN Position('123' in Substring(p_1."FirstName", 6, Length(p_1."FirstName") - 6)) + 5 = 0
 			THEN -1
-		ELSE Length('123' || p."FirstName" || '012345') - Position('321' in Reverse(Substring('123' || p."FirstName" || '012345', 6, Length('123' || p."FirstName" || '012345') - 5))) - 2
-	END = 8 AND
-	p."PersonID" = 1
+		ELSE Length(p_1."FirstName") - Position('321' in Reverse(Substring(p_1."FirstName", 6, Length(p_1."FirstName") - 5))) - 2
+	END = 8
 

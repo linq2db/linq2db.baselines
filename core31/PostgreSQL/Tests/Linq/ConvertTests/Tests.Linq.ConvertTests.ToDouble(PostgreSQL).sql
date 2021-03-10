@@ -2,9 +2,14 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(Floor(Cast(t."MoneyValue" as Float)) as Int)
+	p.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			Cast(Floor(Cast(t."MoneyValue" as Float)) as Int) as c1
+		FROM
+			"LinqDataTypes" t
+	) p
 WHERE
-	Cast(Floor(Cast(t."MoneyValue" as Float)) as Int) > 0
+	p.c1 > 0
 

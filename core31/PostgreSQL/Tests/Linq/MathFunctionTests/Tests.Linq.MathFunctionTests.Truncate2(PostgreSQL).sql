@@ -2,9 +2,14 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Trunc((-p."MoneyValue"), 0)
+	t.c1
 FROM
-	"LinqDataTypes" p
+	(
+		SELECT
+			Trunc((-p."MoneyValue"), 0) as c1
+		FROM
+			"LinqDataTypes" p
+	) t
 WHERE
-	Trunc((-p."MoneyValue"), 0) <> 0.10000000000000001
+	(t.c1 <> 0.10000000000000001 OR t.c1 IS NULL)
 
