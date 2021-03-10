@@ -2,18 +2,11 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p_1].[Value1],
-	[p_1].[Value_1],
-	[p_1].[ParentID]
+	[p].[Value1],
+	[p].[Value1] * 100,
+	[p].[ParentID]
 FROM
-	(
-		SELECT
-			[p].[ParentID],
-			[p].[Value1] * 100 as [Value_1],
-			[p].[Value1]
-		FROM
-			[Parent] [p]
-	) [p_1]
+	[Parent] [p]
 WHERE
-	[p_1].[ParentID] = 1 AND [p_1].[Value_1] > 0
+	[p].[ParentID] = 1 AND [p].[Value1] * 100 > 0
 
