@@ -2,9 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Int(Log([p].[MoneyValue]) / 2.3025850929940459)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Int(Log([p].[MoneyValue]) / 2.3025850929940459) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Int(Log([p].[MoneyValue]) / 2.3025850929940459) <> 0.10000000000000001 OR Int(Log([p].[MoneyValue]) / 2.3025850929940459) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 
