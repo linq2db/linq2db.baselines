@@ -2,12 +2,19 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Sum([selectParam].[MoneyValue]),
-	DatePart('yyyy', [selectParam].[DateTimeValue]),
-	DatePart('m', [selectParam].[DateTimeValue])
+	Sum([t1].[MoneyValue]),
+	[t1].[c2],
+	[t1].[c1]
 FROM
-	[LinqDataTypes] [selectParam]
+	(
+		SELECT
+			DatePart('m', [selectParam].[DateTimeValue]) as [c1],
+			DatePart('yyyy', [selectParam].[DateTimeValue]) as [c2],
+			[selectParam].[MoneyValue]
+		FROM
+			[LinqDataTypes] [selectParam]
+	) [t1]
 GROUP BY
-	DatePart('m', [selectParam].[DateTimeValue]),
-	DatePart('yyyy', [selectParam].[DateTimeValue])
+	[t1].[c1],
+	[t1].[c2]
 

@@ -6,11 +6,16 @@ SELECT
 FROM
 	(
 		SELECT
-			Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') + '2' as [c1]
+			[ch].[c1] + '2' as [c1]
 		FROM
-			[Child] [selectParam]
+			(
+				SELECT
+					Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [c1]
+				FROM
+					[Child] [selectParam]
+			) [ch]
 		GROUP BY
-			Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3')
+			[ch].[c1]
 	) [p]
 WHERE
 	[p].[c1] = '22'

@@ -2,10 +2,16 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[selectParam].[ChildID],
-	Avg([selectParam].[ParentID])
+	[t1].[c1],
+	Avg([t1].[ParentID])
 FROM
-	[Child] [selectParam]
+	(
+		SELECT
+			[selectParam].[ChildID] as [c1],
+			[selectParam].[ParentID]
+		FROM
+			[Child] [selectParam]
+	) [t1]
 GROUP BY
-	[selectParam].[ChildID]
+	[t1].[c1]
 
