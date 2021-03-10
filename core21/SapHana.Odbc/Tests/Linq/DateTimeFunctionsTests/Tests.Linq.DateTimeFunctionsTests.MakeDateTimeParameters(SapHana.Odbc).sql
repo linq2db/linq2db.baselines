@@ -2,16 +2,13 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID NVarChar(5) -- String
 SET     @ID = '2010-'
+DECLARE @ID_1 NVarChar(5) -- String
+SET     @ID_1 = '2010-'
 
 SELECT
-	"t"."c1"
+	Cast((? || Cast("p"."ID" as VarChar(11)) || '-1') as Date)
 FROM
-	(
-		SELECT
-			Cast((? || Cast("p"."ID" as VarChar(11)) || '-1') as Date) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "p"
 WHERE
-	Year("t"."c1") = 2010
+	Year(Cast((? || Cast("p"."ID" as VarChar(11)) || '-1') as Date)) = 2010
 
