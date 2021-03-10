@@ -2,14 +2,9 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t].[c1]
+	Date(Cast((Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) + 1) as VarChar(11)) || '-10-01')
 FROM
-	(
-		SELECT
-			Date(Cast((Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) + 1) as VarChar(11)) || '-10-01') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	Cast(StrFTime('%m', [t].[c1]) as int) = 10
+	Cast(StrFTime('%m', Date(Cast((Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) + 1) as VarChar(11)) || '-10-01')) as int) = 10
 
