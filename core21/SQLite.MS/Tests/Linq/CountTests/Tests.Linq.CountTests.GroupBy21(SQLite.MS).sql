@@ -8,22 +8,28 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[Child] [ch]
+			(
+				SELECT
+					[ch].[ParentID] + 1 as [ParentID],
+					[ch].[ChildID]
+				FROM
+					[Child] [ch]
+			) [ch_1]
 		WHERE
-			[ch].[ParentID] < 2 AND ([t1].[c1] = [ch].[ParentID] + 1 AND [t1].[ChildID] = [ch].[ChildID]) AND
-			[ch].[ParentID] + 2 > @n
+			[ch_1].[ParentID] < 3 AND ([ch_3].[ParentID] = [ch_1].[ParentID] AND [ch_3].[ChildID] = [ch_1].[ChildID]) AND
+			[ch_1].[ParentID] + 1 > @n
 	)
 FROM
 	(
 		SELECT
-			[ch_1].[ParentID] + 1 as [c1],
-			[ch_1].[ChildID]
+			[ch_2].[ParentID] + 1 as [ParentID],
+			[ch_2].[ChildID]
 		FROM
-			[Child] [ch_1]
-		WHERE
-			[ch_1].[ParentID] + 2 > @n
-	) [t1]
+			[Child] [ch_2]
+	) [ch_3]
+WHERE
+	[ch_3].[ParentID] + 1 > @n
 GROUP BY
-	[t1].[c1],
-	[t1].[ChildID]
+	[ch_3].[ParentID],
+	[ch_3].[ChildID]
 

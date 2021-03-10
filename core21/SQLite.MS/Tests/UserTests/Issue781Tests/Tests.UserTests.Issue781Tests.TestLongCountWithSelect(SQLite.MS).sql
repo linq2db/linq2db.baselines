@@ -8,16 +8,11 @@ FROM
 		SELECT
 			0 as [c1]
 		FROM
-			(
-				SELECT
-					'test' || [a_Patient].[Diagnosis] as [c1]
-				FROM
-					[Person] [selectParam]
-						LEFT JOIN [Patient] [a_Patient] ON [selectParam].[PersonID] = [a_Patient].[PersonID]
-			) [t1]
+			[Person] [selectParam]
+				LEFT JOIN [Patient] [a_Patient] ON [selectParam].[PersonID] = [a_Patient].[PersonID]
 		GROUP BY
-			[t1].[c1]
-	) [t2]
+			'test' || [a_Patient].[Diagnosis]
+	) [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -29,14 +24,9 @@ FROM
 		SELECT
 			0 as [c1]
 		FROM
-			(
-				SELECT
-					'test' || [a_Patient].[Diagnosis] as [c1]
-				FROM
-					[Person] [selectParam]
-						LEFT JOIN [Patient] [a_Patient] ON [selectParam].[PersonID] = [a_Patient].[PersonID]
-			) [t1]
+			[Person] [selectParam]
+				LEFT JOIN [Patient] [a_Patient] ON [selectParam].[PersonID] = [a_Patient].[PersonID]
 		GROUP BY
-			[t1].[c1]
-	) [t2]
+			'test' || [a_Patient].[Diagnosis]
+	) [t1]
 

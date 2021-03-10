@@ -2,10 +2,15 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[_].[ParentID] + 1
+	[_1].[c1]
 FROM
 	[Parent] [cp],
-	[Child] [_]
+	(
+		SELECT
+			[_].[ParentID] + 1 as [c1]
+		FROM
+			[Child] [_]
+	) [_1]
 WHERE
-	[_].[ParentID] > 0
+	[_1].[c1] > 1
 
