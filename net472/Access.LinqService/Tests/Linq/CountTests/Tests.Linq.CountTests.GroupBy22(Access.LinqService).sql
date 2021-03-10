@@ -8,19 +8,24 @@ SET     @n_1 = -1
 SELECT
 	Count([t1].[ParentID])
 FROM
-	[Child] [ch_1]
+	(
+		SELECT
+			[ch].[ParentID] + 1 as [c1]
+		FROM
+			[Child] [ch]
+		WHERE
+			[ch].[ParentID] > @n
+	) [t2]
 		LEFT JOIN (
 			SELECT
-				[ch].[ParentID]
+				[ch_1].[ParentID]
 			FROM
-				[Child] [ch]
+				[Child] [ch_1]
 			WHERE
-				[ch].[ParentID] < 2 AND [ch].[ParentID] > @n
+				[ch_1].[ParentID] < 2 AND [ch_1].[ParentID] > @n_1
 			GROUP BY
-				[ch].[ParentID]
-		) [t1] ON ([ch_1].[ParentID] + 1 = [t1].[ParentID] + 1)
-WHERE
-	[ch_1].[ParentID] > @n_1
+				[ch_1].[ParentID]
+		) [t1] ON ([t2].[c1] = [t1].[ParentID] + 1)
 GROUP BY
-	[ch_1].[ParentID] + 1
+	[t2].[c1]
 

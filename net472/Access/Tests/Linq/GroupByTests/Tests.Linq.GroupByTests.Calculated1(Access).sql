@@ -2,11 +2,16 @@
 -- Access AccessOleDb
 
 SELECT
-	Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3')
+	[t1].[c1]
 FROM
-	[Child] [selectParam]
+	(
+		SELECT
+			Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [c1]
+		FROM
+			[Child] [selectParam]
+	) [t1]
 GROUP BY
-	Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3')
+	[t1].[c1]
 
 BeforeExecute
 -- Access AccessOleDb
