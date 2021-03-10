@@ -2,9 +2,14 @@
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
-	Degrees(Convert(Float, [p].[MoneyValue]))
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Degrees(Convert(Float, [p].[MoneyValue])) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Degrees(Convert(Float, [p].[MoneyValue])) <> 0.10000000000000001 OR Degrees(Convert(Float, [p].[MoneyValue])) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 

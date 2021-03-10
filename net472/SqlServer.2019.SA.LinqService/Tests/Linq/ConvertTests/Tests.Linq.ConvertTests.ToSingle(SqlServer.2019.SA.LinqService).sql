@@ -2,9 +2,14 @@
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
-	Convert(Real, [t].[MoneyValue])
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(Real, [t].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Convert(Real, [t].[MoneyValue]) > 0
+	[p].[c1] > 0
 
