@@ -83,22 +83,25 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[t1].[c1]
+	CASE
+		WHEN [selectParam].[Freight] > 50
+			THEN CASE
+			WHEN [selectParam].[Freight] > 100
+				THEN 'expensive'
+			ELSE 'average'
+		END
+		ELSE 'cheap'
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [selectParam].[Freight] > 50
-					THEN CASE
-					WHEN [selectParam].[Freight] > 100
-						THEN 'expensive'
-					ELSE 'average'
-				END
-				ELSE 'cheap'
-			END as [c1]
-		FROM
-			[Orders] [selectParam]
-	) [t1]
+	[Orders] [selectParam]
 GROUP BY
-	[t1].[c1]
+	CASE
+		WHEN [selectParam].[Freight] > 50
+			THEN CASE
+			WHEN [selectParam].[Freight] > 100
+				THEN 'expensive'
+			ELSE 'average'
+		END
+		ELSE 'cheap'
+	END
 

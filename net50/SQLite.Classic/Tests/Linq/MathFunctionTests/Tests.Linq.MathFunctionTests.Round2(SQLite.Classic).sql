@@ -2,18 +2,17 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	CASE
+		WHEN Cast([p].[MoneyValue] as Float) - Floor(Cast([p].[MoneyValue] as Float)) = 0.5 AND Floor(Cast([p].[MoneyValue] as Float)) % 2 = 0
+			THEN Floor(Cast([p].[MoneyValue] as Float))
+		ELSE Round(Cast([p].[MoneyValue] as Float), 0)
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN Cast([p].[MoneyValue] as Float) - Floor(Cast([p].[MoneyValue] as Float)) = 0.5 AND Floor(Cast([p].[MoneyValue] as Float)) % 2 = 0
-					THEN Floor(Cast([p].[MoneyValue] as Float))
-				ELSE Round(Cast([p].[MoneyValue] as Float), 0)
-			END as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	[t].[c1] <> 0
+	CASE
+		WHEN Cast([p].[MoneyValue] as Float) - Floor(Cast([p].[MoneyValue] as Float)) = 0.5 AND Floor(Cast([p].[MoneyValue] as Float)) % 2 = 0
+			THEN Floor(Cast([p].[MoneyValue] as Float))
+		ELSE Round(Cast([p].[MoneyValue] as Float), 0)
+	END <> 0
 

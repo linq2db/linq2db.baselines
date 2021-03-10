@@ -2,24 +2,27 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[c1]
+	CASE
+		WHEN [selectParam].[ParentID] > 2
+			THEN CASE
+			WHEN [selectParam].[ParentID] > 3
+				THEN '1'
+			ELSE '2'
+		END
+		ELSE '3'
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [selectParam].[ParentID] > 2
-					THEN CASE
-					WHEN [selectParam].[ParentID] > 3
-						THEN '1'
-					ELSE '2'
-				END
-				ELSE '3'
-			END as [c1]
-		FROM
-			[Child] [selectParam]
-	) [t1]
+	[Child] [selectParam]
 GROUP BY
-	[t1].[c1]
+	CASE
+		WHEN [selectParam].[ParentID] > 2
+			THEN CASE
+			WHEN [selectParam].[ParentID] > 3
+				THEN '1'
+			ELSE '2'
+		END
+		ELSE '3'
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -27,25 +30,18 @@ DECLARE @p_1 NVarChar(1) -- String
 SET     @p_1 = '1'
 
 SELECT
-	[underscore].[ParentID],
-	[underscore].[ChildID]
+	[selectParam].[ParentID],
+	[selectParam].[ChildID]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [selectParam].[ParentID] > 2
-					THEN CASE
-					WHEN [selectParam].[ParentID] > 3
-						THEN '1'
-					ELSE '2'
-				END
-				ELSE '3'
-			END as [Key_1],
-			[selectParam].[ParentID],
-			[selectParam].[ChildID]
-		FROM
-			[Child] [selectParam]
-	) [underscore]
+	[Child] [selectParam]
 WHERE
-	[underscore].[Key_1] = @p_1
+	CASE
+		WHEN [selectParam].[ParentID] > 2
+			THEN CASE
+			WHEN [selectParam].[ParentID] > 3
+				THEN '1'
+			ELSE '2'
+		END
+		ELSE '3'
+	END = @p_1
 
