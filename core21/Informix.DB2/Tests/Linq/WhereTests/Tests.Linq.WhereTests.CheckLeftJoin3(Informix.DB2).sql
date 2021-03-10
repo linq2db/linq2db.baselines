@@ -8,14 +8,13 @@ FROM
 	Parent p
 		LEFT JOIN (
 			SELECT
-				1 + c_1.ParentID as ParentID,
+				1 + c_1.ParentID as ch,
 				c_1.ChildID
 			FROM
 				GrandChild c_1
 			WHERE
 				c_1.ParentID > 0
-		) lj1 ON p.ParentID = lj1.ParentID
+		) t1 ON p.ParentID = t1.ch
 WHERE
-	(lj1.ParentID IS NULL AND lj1.ChildID IS NULL) AND
-	(lj1.ParentID IS NULL AND lj1.ChildID IS NULL)
+	(t1.ch IS NULL AND t1.ChildID IS NULL) AND (t1.ch IS NULL AND t1.ChildID IS NULL)
 

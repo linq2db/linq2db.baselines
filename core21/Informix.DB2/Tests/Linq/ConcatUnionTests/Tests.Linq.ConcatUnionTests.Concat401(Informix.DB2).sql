@@ -15,18 +15,12 @@ FROM
 			c_1.ParentID = 1
 		UNION ALL
 		SELECT
-			t1.ParentID,
-			t1.ChildID
+			c_2.ParentID,
+			c_2.ChildID + 1000 as ChildID
 		FROM
-			(
-				SELECT
-					c_2.ParentID,
-					c_2.ChildID + 1000 as ChildID
-				FROM
-					Child c_2
-				WHERE
-					c_2.ParentID = 3
-			) t1
+			Child c_2
+		WHERE
+			c_2.ParentID = 3
 	) c_3
 WHERE
 	c_3.ChildID <> 1032

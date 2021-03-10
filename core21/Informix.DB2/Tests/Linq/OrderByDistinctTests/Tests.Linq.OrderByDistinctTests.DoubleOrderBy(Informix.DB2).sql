@@ -488,10 +488,10 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	q1.Id_1,
-	q1.DuplicateData,
-	q1.OrderData1,
-	q1.OrderData2
+	c_1.Id,
+	c_1.DuplicateData,
+	c_1.OrderData1,
+	c_1.OrderData2
 FROM
 	(
 		SELECT FIRST 3
@@ -501,16 +501,9 @@ FROM
 		ORDER BY
 			t1.OrderData2
 	) q2
-		INNER JOIN (
-			SELECT
-				c_1.Id,
-				c_1.Id as Id_1,
-				c_1.DuplicateData,
-				c_1.OrderData1,
-				c_1.OrderData2
-			FROM
-				OrderByDistinctData c_1
-		) q1 ON q1.Id = q2.Id
+		INNER JOIN OrderByDistinctData c_1 ON c_1.Id = q2.Id
+ORDER BY
+	c_1.OrderData1
 
 BeforeExecute
 -- Informix.DB2 Informix
