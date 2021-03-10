@@ -2,16 +2,11 @@
 -- Access AccessOleDb
 
 SELECT
-	[t1].[c1],
+	DateValue([selectParam].[DateTimeValue]),
 	Count(*)
 FROM
-	(
-		SELECT
-			DateValue([selectParam].[DateTimeValue]) as [c1]
-		FROM
-			[LinqDataTypes] [selectParam]
-				INNER JOIN [Parent] [p] ON ([selectParam].[ID] = [p].[ParentID])
-	) [t1]
+	[LinqDataTypes] [selectParam]
+		INNER JOIN [Parent] [p] ON ([selectParam].[ID] = [p].[ParentID])
 GROUP BY
-	[t1].[c1]
+	DateValue([selectParam].[DateTimeValue])
 

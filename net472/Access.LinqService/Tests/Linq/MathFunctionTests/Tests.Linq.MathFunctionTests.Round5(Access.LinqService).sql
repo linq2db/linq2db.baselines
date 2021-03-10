@@ -2,14 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	[t].[c1]
+	Iif([p].[MoneyValue] - Int([p].[MoneyValue]) = 0.5 AND Int([p].[MoneyValue]) MOD 2 = 0, -Int(-[p].[MoneyValue]), Round([p].[MoneyValue], 0))
 FROM
-	(
-		SELECT
-			Iif([p].[MoneyValue] - Int([p].[MoneyValue]) = 0.5 AND Int([p].[MoneyValue]) MOD 2 = 0, -Int(-[p].[MoneyValue]), Round([p].[MoneyValue], 0)) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[c1] <> 0 OR [t].[c1] IS NULL)
+	(Iif([p].[MoneyValue] - Int([p].[MoneyValue]) = 0.5 AND Int([p].[MoneyValue]) MOD 2 = 0, -Int(-[p].[MoneyValue]), Round([p].[MoneyValue], 0)) <> 0 OR Iif([p].[MoneyValue] - Int([p].[MoneyValue]) = 0.5 AND Int([p].[MoneyValue]) MOD 2 = 0, -Int(-[p].[MoneyValue]), Round([p].[MoneyValue], 0)) IS NULL)
 
