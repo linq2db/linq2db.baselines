@@ -2,14 +2,9 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[c1]
+	Cast(Cast([t].[ID] as TinyInt) as NVarChar(3))
 FROM
-	(
-		SELECT
-			Cast(Cast([t].[ID] as TinyInt) as NVarChar(3)) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	Length([p].[c1]) > 0
+	Length(Cast(Cast([t].[ID] as TinyInt) as NVarChar(3))) > 0
 
