@@ -2,9 +2,14 @@
 -- MySqlConnector MySql
 
 SELECT
-	Degrees(`p`.`MoneyValue`)
+	`t`.`c1`
 FROM
-	`LinqDataTypes` `p`
+	(
+		SELECT
+			Degrees(`p`.`MoneyValue`) as `c1`
+		FROM
+			`LinqDataTypes` `p`
+	) `t`
 WHERE
-	(Degrees(`p`.`MoneyValue`) <> 0.10000000000000001 OR Degrees(`p`.`MoneyValue`) IS NULL)
+	(`t`.`c1` <> 0.10000000000000001 OR `t`.`c1` IS NULL)
 

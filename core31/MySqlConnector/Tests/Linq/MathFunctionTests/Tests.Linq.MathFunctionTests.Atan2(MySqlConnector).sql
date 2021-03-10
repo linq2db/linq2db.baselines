@@ -2,9 +2,14 @@
 -- MySqlConnector MySql
 
 SELECT
-	Floor(Atan2(`p`.`MoneyValue` / 15, 0) * 15)
+	`t`.`c1`
 FROM
-	`LinqDataTypes` `p`
+	(
+		SELECT
+			Floor(Atan2(`p`.`MoneyValue` / 15, 0) * 15) as `c1`
+		FROM
+			`LinqDataTypes` `p`
+	) `t`
 WHERE
-	(Floor(Atan2(`p`.`MoneyValue` / 15, 0) * 15) <> 0.10000000000000001 OR Floor(Atan2(`p`.`MoneyValue` / 15, 0) * 15) IS NULL)
+	(`t`.`c1` <> 0.10000000000000001 OR `t`.`c1` IS NULL)
 

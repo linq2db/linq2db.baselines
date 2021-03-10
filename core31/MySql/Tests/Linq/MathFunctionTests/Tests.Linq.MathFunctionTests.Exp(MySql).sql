@@ -2,9 +2,14 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	Floor(Exp(`p`.`MoneyValue`))
+	`t`.`c1`
 FROM
-	`LinqDataTypes` `p`
+	(
+		SELECT
+			Floor(Exp(`p`.`MoneyValue`)) as `c1`
+		FROM
+			`LinqDataTypes` `p`
+	) `t`
 WHERE
-	(Floor(Exp(`p`.`MoneyValue`)) <> 0.10000000000000001 OR Floor(Exp(`p`.`MoneyValue`)) IS NULL)
+	(`t`.`c1` <> 0.10000000000000001 OR `t`.`c1` IS NULL)
 

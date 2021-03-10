@@ -2,9 +2,14 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	Floor(Log(2, `p`.`MoneyValue`))
+	`t`.`c1`
 FROM
-	`LinqDataTypes` `p`
+	(
+		SELECT
+			Floor(Log(2, `p`.`MoneyValue`)) as `c1`
+		FROM
+			`LinqDataTypes` `p`
+	) `t`
 WHERE
-	(Floor(Log(2, `p`.`MoneyValue`)) <> 0.10000000000000001 OR Floor(Log(2, `p`.`MoneyValue`)) IS NULL)
+	(`t`.`c1` <> 0.10000000000000001 OR `t`.`c1` IS NULL)
 

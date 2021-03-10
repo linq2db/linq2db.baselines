@@ -2,9 +2,9 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t3`.`year_1`,
-	`t3`.`year_2`,
-	`t3`.`int_1`
+	`t2`.`year_1`,
+	`t2`.`year_2`,
+	`t2`.`int_1`
 FROM
 	(
 		SELECT
@@ -15,28 +15,22 @@ FROM
 			`LinqDataTypes` `_`
 		UNION
 		SELECT
-			`t2`.`month_1` as `year_1`,
-			`t2`.`year_1` as `year_2`,
-			`t2`.`int_1`
+			`t1`.`month_1` as `year_1`,
+			`t1`.`year_1` as `year_2`,
+			`t1`.`int_1`
 		FROM
 			(
 				SELECT
-					`t1`.`c1` as `month_1`,
-					`t1`.`c2` as `year_1`,
+					Extract(month from `selectParam`.`DateTimeValue`) as `month_1`,
+					Extract(year from `selectParam`.`DateTimeValue`) as `year_1`,
 					1 as `int_1`
 				FROM
-					(
-						SELECT
-							Extract(month from `selectParam`.`DateTimeValue`) as `c1`,
-							Extract(year from `selectParam`.`DateTimeValue`) as `c2`
-						FROM
-							`LinqDataTypes` `selectParam`
-					) `t1`
+					`LinqDataTypes` `selectParam`
 				GROUP BY
-					`t1`.`c1`,
-					`t1`.`c2`
-			) `t2`
-	) `t3`
+					Extract(month from `selectParam`.`DateTimeValue`),
+					Extract(year from `selectParam`.`DateTimeValue`)
+			) `t1`
+	) `t2`
 UNION
 SELECT
 	Extract(year from `_1`.`DateTimeValue`),

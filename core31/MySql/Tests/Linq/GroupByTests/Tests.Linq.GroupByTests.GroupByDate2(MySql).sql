@@ -19,19 +19,12 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	Sum(`t1`.`MoneyValue`),
-	`t1`.`c2`,
-	`t1`.`c1`
+	Sum(`selectParam`.`MoneyValue`),
+	Extract(year from `selectParam`.`DateTimeValue`),
+	Extract(month from `selectParam`.`DateTimeValue`)
 FROM
-	(
-		SELECT
-			Extract(month from `selectParam`.`DateTimeValue`) as `c1`,
-			Extract(year from `selectParam`.`DateTimeValue`) as `c2`,
-			`selectParam`.`MoneyValue`
-		FROM
-			`LinqDataTypes` `selectParam`
-	) `t1`
+	`LinqDataTypes` `selectParam`
 GROUP BY
-	`t1`.`c1`,
-	`t1`.`c2`
+	Extract(month from `selectParam`.`DateTimeValue`),
+	Extract(year from `selectParam`.`DateTimeValue`)
 

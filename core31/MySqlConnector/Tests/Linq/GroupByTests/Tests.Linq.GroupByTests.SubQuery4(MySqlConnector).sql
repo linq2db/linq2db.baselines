@@ -2,16 +2,10 @@
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`c1`,
-	Sum(`t1`.`ParentID`)
+	`selectParam`.`ChildID` + 1,
+	Sum(`selectParam`.`ParentID`)
 FROM
-	(
-		SELECT
-			`selectParam`.`ChildID` + 1 as `c1`,
-			`selectParam`.`ParentID`
-		FROM
-			`Child` `selectParam`
-	) `t1`
+	`Child` `selectParam`
 GROUP BY
-	`t1`.`c1`
+	`selectParam`.`ChildID` + 1
 

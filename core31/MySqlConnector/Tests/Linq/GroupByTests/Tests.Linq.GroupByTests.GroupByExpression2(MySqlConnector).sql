@@ -2,16 +2,10 @@
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`c1`,
-	Avg(`t1`.`ParentID`)
+	`selectParam`.`ChildID`,
+	Avg(`selectParam`.`ParentID`)
 FROM
-	(
-		SELECT
-			`selectParam`.`ChildID` as `c1`,
-			`selectParam`.`ParentID`
-		FROM
-			`Child` `selectParam`
-	) `t1`
+	`Child` `selectParam`
 GROUP BY
-	`t1`.`c1`
+	`selectParam`.`ChildID`
 
