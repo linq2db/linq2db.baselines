@@ -1,31 +1,37 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @n  -- Int32
-SET     @n = -1
+SET     @n = 0
 DECLARE @n_1  -- Int32
-SET     @n_1 = -1
+SET     @n_1 = 0
 
 SELECT
 	(
 		SELECT
 			Count(*)
 		FROM
-			[Child] [ch]
+			(
+				SELECT
+					[ch].[ParentID] + 1 as [ParentID],
+					[ch].[ChildID]
+				FROM
+					[Child] [ch]
+			) [ch_1]
 		WHERE
-			[ch].[ParentID] < 2 AND ([t1].[c1] = [ch].[ParentID] + 1 AND [t1].[ChildID] = [ch].[ChildID]) AND
-			[ch].[ParentID] > @n
+			[ch_1].[ParentID] < 3 AND ([ch_3].[ParentID] = [ch_1].[ParentID] AND [ch_3].[ChildID] = [ch_1].[ChildID]) AND
+			[ch_1].[ParentID] > @n
 	)
 FROM
 	(
 		SELECT
-			[ch_1].[ParentID] + 1 as [c1],
-			[ch_1].[ChildID]
+			[ch_2].[ParentID] + 1 as [ParentID],
+			[ch_2].[ChildID]
 		FROM
-			[Child] [ch_1]
-		WHERE
-			[ch_1].[ParentID] > @n_1
-	) [t1]
+			[Child] [ch_2]
+	) [ch_3]
+WHERE
+	[ch_3].[ParentID] > @n_1
 GROUP BY
-	[t1].[c1],
-	[t1].[ChildID]
+	[ch_3].[ParentID],
+	[ch_3].[ChildID]
 

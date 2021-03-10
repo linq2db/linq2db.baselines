@@ -2,9 +2,14 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as BigInt)
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Cast([t].[MoneyValue] as BigInt) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Cast([t].[MoneyValue] as BigInt) > 0
+	[p].[c1] > 0
 

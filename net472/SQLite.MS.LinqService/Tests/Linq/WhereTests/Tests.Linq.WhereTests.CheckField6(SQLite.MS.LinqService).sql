@@ -2,11 +2,18 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[p].[Value1],
-	[p].[Value1] * 100,
-	[p].[ParentID]
+	[p_1].[Value1],
+	[p_1].[Value_1],
+	[p_1].[ParentID]
 FROM
-	[Parent] [p]
+	(
+		SELECT
+			[p].[ParentID],
+			[p].[Value1] * 100 as [Value_1],
+			[p].[Value1]
+		FROM
+			[Parent] [p]
+	) [p_1]
 WHERE
-	[p].[ParentID] = 1 AND [p].[Value1] * 100 > 0
+	[p_1].[ParentID] = 1 AND [p_1].[Value_1] > 0
 

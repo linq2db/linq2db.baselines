@@ -2,13 +2,18 @@
 -- SQLite.MS SQLite
 
 SELECT
-	CASE
-		WHEN [t].[MoneyValue] <> 0
-			THEN 1
-		ELSE 0
-	END
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CASE
+				WHEN [t].[MoneyValue] <> 0
+					THEN 1
+				ELSE 0
+			END as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	([t].[MoneyValue] <> 0)
+	[p].[c1] = 1
 
