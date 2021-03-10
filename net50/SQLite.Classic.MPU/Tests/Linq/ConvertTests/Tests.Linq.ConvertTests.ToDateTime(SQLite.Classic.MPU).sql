@@ -2,9 +2,14 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	DateTime(Cast(Cast(StrFTime('%Y', [t].[DateTimeValue]) as int) as VarChar(11)) || '-01-01 00:00:00')
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			DateTime(Cast(Cast(StrFTime('%Y', [t].[DateTimeValue]) as int) as VarChar(11)) || '-01-01 00:00:00') as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Cast(StrFTime('%d', DateTime(Cast(Cast(StrFTime('%Y', [t].[DateTimeValue]) as int) as VarChar(11)) || '-01-01 00:00:00')) as int) > 0
+	Cast(StrFTime('%d', [p].[c1]) as int) > 0
 

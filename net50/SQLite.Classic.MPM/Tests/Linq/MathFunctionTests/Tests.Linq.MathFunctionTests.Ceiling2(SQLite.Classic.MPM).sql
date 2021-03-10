@@ -2,9 +2,14 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Ceiling([p].[MoneyValue])
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Ceiling([p].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	Ceiling([p].[MoneyValue]) <> 0
+	[t].[c1] <> 0
 

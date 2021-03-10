@@ -6,9 +6,14 @@ DECLARE @p_2 NVarChar(2) -- String
 SET     @p_2 = '01'
 
 SELECT
-	Date(Cast(Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) as VarChar(11)) || '-' || @p_1 || '-' || @p_2)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Date(Cast(Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) as VarChar(11)) || '-' || @p_1 || '-' || @p_2) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	Cast(StrFTime('%m', Date(Cast(Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) as VarChar(11)) || '-' || @p_1 || '-' || @p_2)) as int) = 10
+	Cast(StrFTime('%m', [t].[c1]) as int) = 10
 

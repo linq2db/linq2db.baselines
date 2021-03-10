@@ -2,9 +2,14 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as Decimal)
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Cast([t].[MoneyValue] as Decimal) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Cast([t].[MoneyValue] as Decimal) > 0
+	[p].[c1] > 0
 

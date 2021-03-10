@@ -2,10 +2,16 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[PersonID] + 1,
-	[p].[FirstName]
+	[p_1].[PersonID],
+	[p_1].[FirstName]
 FROM
-	[Person] [p]
+	(
+		SELECT
+			[p].[PersonID] + 1 as [PersonID],
+			[p].[FirstName]
+		FROM
+			[Person] [p]
+	) [p_1]
 WHERE
-	[p].[PersonID] = 1
+	[p_1].[PersonID] = 2
 

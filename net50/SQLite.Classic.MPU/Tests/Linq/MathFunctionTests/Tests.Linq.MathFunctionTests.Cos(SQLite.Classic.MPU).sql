@@ -2,9 +2,14 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Floor(Cos(Cast([p].[MoneyValue] as Float) / 15) * 15)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Floor(Cos(Cast([p].[MoneyValue] as Float) / 15) * 15) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Floor(Cos(Cast([p].[MoneyValue] as Float) / 15) * 15) <> 0.10000000000000001 OR Floor(Cos(Cast([p].[MoneyValue] as Float) / 15) * 15) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 

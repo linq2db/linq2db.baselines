@@ -2,9 +2,14 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as TinyInt)
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Cast([t].[MoneyValue] as TinyInt) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	Cast([t].[MoneyValue] as TinyInt) > 0
+	[p].[c1] > 0
 

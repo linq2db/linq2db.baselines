@@ -2,9 +2,9 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[t3].[month_1],
-	[t3].[year_1],
-	[t3].[int_1]
+	[t4].[month_1],
+	[t4].[year_1],
+	[t4].[int_1]
 FROM
 	(
 		SELECT
@@ -31,19 +31,31 @@ FROM
 			) [t2]
 		UNION
 		SELECT
-			[_].[SmallIntValue] as [month_1],
-			[_].[SmallIntValue] as [year_1],
-			3 as [int_1]
+			[t3].[year_1] as [month_1],
+			[t3].[year_1],
+			[t3].[int_1]
 		FROM
-			[LinqDataTypes] [_]
-	) [t3]
+			(
+				SELECT
+					[_].[SmallIntValue] as [year_1],
+					3 as [int_1]
+				FROM
+					[LinqDataTypes] [_]
+			) [t3]
+	) [t4]
 UNION
 SELECT
-	Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int),
-	Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int),
-	2
+	[t5].[year_1],
+	[t5].[year_1],
+	[t5].[int_1]
 FROM
-	[LinqDataTypes] [_1]
+	(
+		SELECT
+			Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int) as [year_1],
+			2 as [int_1]
+		FROM
+			[LinqDataTypes] [_1]
+	) [t5]
 
 BeforeExecute
 -- SQLite.Classic SQLite

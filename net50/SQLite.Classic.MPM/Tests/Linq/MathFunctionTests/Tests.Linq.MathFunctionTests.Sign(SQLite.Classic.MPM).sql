@@ -2,9 +2,14 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Sign([p].[MoneyValue])
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Sign([p].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	Sign([p].[MoneyValue]) <> 0
+	[t].[c1] <> 0
 

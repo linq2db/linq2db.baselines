@@ -2,17 +2,18 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN [p].[MoneyValue] >= 0
-			THEN Floor([p].[MoneyValue])
-		ELSE Ceiling([p].[MoneyValue])
-	END
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			CASE
+				WHEN [p].[MoneyValue] >= 0
+					THEN Floor([p].[MoneyValue])
+				ELSE Ceiling([p].[MoneyValue])
+			END as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	CASE
-		WHEN [p].[MoneyValue] >= 0
-			THEN Floor([p].[MoneyValue])
-		ELSE Ceiling([p].[MoneyValue])
-	END <> 0.1
+	[t].[c1] <> 0.1
 

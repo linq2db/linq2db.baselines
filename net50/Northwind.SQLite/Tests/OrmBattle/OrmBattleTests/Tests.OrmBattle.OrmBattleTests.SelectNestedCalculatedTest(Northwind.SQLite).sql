@@ -83,9 +83,14 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[o].[Freight] * 1000
+	[r].[c1]
 FROM
-	[Orders] [o]
+	(
+		SELECT
+			[o].[Freight] * 1000 as [c1]
+		FROM
+			[Orders] [o]
+	) [r]
 WHERE
-	[o].[Freight] * 1000 > 100000
+	[r].[c1] > 100000
 
