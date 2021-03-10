@@ -2,15 +2,9 @@
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[p].[MoneyValue]
+	[t].[MoneyValue]
 FROM
-	(
-		SELECT
-			IIF([t].[BoolValue] = 0, 1, 0) as [b],
-			[t].[MoneyValue]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	[p].[b] = 1
+	[t].[BoolValue] = 0
 
