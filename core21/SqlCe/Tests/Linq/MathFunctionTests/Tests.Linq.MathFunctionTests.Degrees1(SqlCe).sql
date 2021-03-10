@@ -2,9 +2,14 @@
 -- SqlCe
 
 SELECT
-	Floor(Degrees([p].[MoneyValue]))
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Floor(Degrees([p].[MoneyValue])) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	Floor(Degrees([p].[MoneyValue])) <> 0.1
+	[t].[c1] <> 0.1
 

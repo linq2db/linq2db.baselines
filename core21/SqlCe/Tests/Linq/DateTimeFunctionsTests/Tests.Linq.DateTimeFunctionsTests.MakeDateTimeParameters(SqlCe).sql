@@ -4,9 +4,14 @@ DECLARE @ID NVarChar(5) -- String
 SET     @ID = '2010-'
 
 SELECT
-	Convert(Datetime, @ID + Convert(NVarChar(11), [p].[ID]) + '-1')
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Convert(Datetime, @ID + Convert(NVarChar(11), [p].[ID]) + '-1') as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart(year, Convert(Datetime, @ID + Convert(NVarChar(11), [p].[ID]) + '-1')) = 2010
+	DatePart(year, [t].[c1]) = 2010
 

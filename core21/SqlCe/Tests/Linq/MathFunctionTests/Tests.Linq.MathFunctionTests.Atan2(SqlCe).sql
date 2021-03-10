@@ -2,9 +2,14 @@
 -- SqlCe
 
 SELECT
-	Floor(Atn2(Convert(Float, [p].[MoneyValue]) / 15, 0) * 15)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Floor(Atn2(Convert(Float, [p].[MoneyValue]) / 15, 0) * 15) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Floor(Atn2(Convert(Float, [p].[MoneyValue]) / 15, 0) * 15) <> 0.10000000000000001 OR Floor(Atn2(Convert(Float, [p].[MoneyValue]) / 15, 0) * 15) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 

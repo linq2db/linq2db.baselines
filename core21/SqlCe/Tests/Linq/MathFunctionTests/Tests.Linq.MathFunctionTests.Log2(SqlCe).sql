@@ -2,9 +2,14 @@
 -- SqlCe
 
 SELECT
-	Floor(Log(Convert(Float, [p].[MoneyValue])) / 0.69314718055994529)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Floor(Log(Convert(Float, [p].[MoneyValue])) / 0.69314718055994529) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	(Floor(Log(Convert(Float, [p].[MoneyValue])) / 0.69314718055994529) <> 0.10000000000000001 OR Floor(Log(Convert(Float, [p].[MoneyValue])) / 0.69314718055994529) IS NULL)
+	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
 

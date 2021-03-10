@@ -2,9 +2,14 @@
 -- SqlCe
 
 SELECT
-	Convert(DateTime, '2010-' + Convert(NVarChar(11), [p].[ID]) + '-1 20:35:44')
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Convert(DateTime, '2010-' + Convert(NVarChar(11), [p].[ID]) + '-1 20:35:44') as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart(year, Convert(DateTime, '2010-' + Convert(NVarChar(11), [p].[ID]) + '-1 20:35:44')) = 2010
+	DatePart(year, [t].[c1]) = 2010
 

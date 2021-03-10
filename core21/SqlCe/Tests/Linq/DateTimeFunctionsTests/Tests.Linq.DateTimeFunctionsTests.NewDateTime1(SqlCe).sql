@@ -2,9 +2,14 @@
 -- SqlCe
 
 SELECT
-	Convert(Datetime, Convert(NVarChar(11), DatePart(year, [p].[DateTimeValue])) + '-10-1')
+	[t].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Convert(Datetime, Convert(NVarChar(11), DatePart(year, [p].[DateTimeValue])) + '-10-1') as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart(month, Convert(Datetime, Convert(NVarChar(11), DatePart(year, [p].[DateTimeValue])) + '-10-1')) = 10
+	DatePart(month, [t].[c1]) = 10
 

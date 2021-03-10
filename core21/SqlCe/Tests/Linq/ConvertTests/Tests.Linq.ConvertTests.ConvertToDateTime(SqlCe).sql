@@ -2,9 +2,14 @@
 -- SqlCe
 
 SELECT
-	Convert(DateTime, Convert(NVarChar(11), DatePart(year, [t].[DateTimeValue])) + '-01-01 00:00:00')
+	[p].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(DateTime, Convert(NVarChar(11), DatePart(year, [t].[DateTimeValue])) + '-01-01 00:00:00') as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	DatePart(day, Convert(DateTime, Convert(NVarChar(11), DatePart(year, [t].[DateTimeValue])) + '-01-01 00:00:00')) > 0
+	DatePart(day, [p].[c1]) > 0
 
