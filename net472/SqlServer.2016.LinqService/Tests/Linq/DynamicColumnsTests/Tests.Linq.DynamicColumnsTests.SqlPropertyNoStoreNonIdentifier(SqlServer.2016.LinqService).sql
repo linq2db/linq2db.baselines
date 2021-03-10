@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
-	DROP TABLE [DynamicTable]
+DROP TABLE IF EXISTS [DynamicTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NULL)
 	CREATE TABLE [DynamicTable]
@@ -18,7 +17,7 @@ IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NotIdentifier Int -- Int32
 SET     @NotIdentifier = 77
 DECLARE @Value_1 Int -- Int32
@@ -36,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[d].[Not Identifier]
@@ -44,8 +43,7 @@ FROM
 	[DynamicTable] [d]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NOT NULL)
-	DROP TABLE [DynamicTable]
+DROP TABLE IF EXISTS [DynamicTable]
 

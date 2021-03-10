@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
-	DROP TABLE [UpdatedEntities]
+DROP TABLE IF EXISTS [UpdatedEntities]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	CREATE TABLE [UpdatedEntities]
@@ -20,7 +19,7 @@ IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [UpdatedEntities]
 (
@@ -37,13 +36,12 @@ VALUES
 (3,31,32,33,3)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[NewEntities]', N'U') IS NOT NULL)
-	DROP TABLE [NewEntities]
+DROP TABLE IF EXISTS [NewEntities]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[NewEntities]', N'U') IS NULL)
 	CREATE TABLE [NewEntities]
@@ -57,7 +55,7 @@ IF (OBJECT_ID(N'[NewEntities]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [NewEntities]
 (
@@ -73,7 +71,7 @@ VALUES
 (3,3,3,3)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @int2 Int -- Int32
@@ -96,7 +94,7 @@ WHERE
 	[t].[id] <> @someId
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[v].[id],
@@ -107,14 +105,12 @@ FROM
 	[UpdatedEntities] [v]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[NewEntities]', N'U') IS NOT NULL)
-	DROP TABLE [NewEntities]
+DROP TABLE IF EXISTS [NewEntities]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
-	DROP TABLE [UpdatedEntities]
+DROP TABLE IF EXISTS [UpdatedEntities]
 

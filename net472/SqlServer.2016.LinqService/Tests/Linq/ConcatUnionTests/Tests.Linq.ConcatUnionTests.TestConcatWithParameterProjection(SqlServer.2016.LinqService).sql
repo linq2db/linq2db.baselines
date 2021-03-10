@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @someValue Int -- Int32
 SET     @someValue = 3
 DECLARE @someValue_1 Int -- Int32

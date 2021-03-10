@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [User]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [User]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [User]
 (
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [User]
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[a_Data].[Value_1],
@@ -49,7 +49,7 @@ FROM
 		) [a_Data] ON [t].[Id] = [t].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [User]
 

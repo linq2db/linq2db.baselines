@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [SampleClass]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [SampleClass]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[a].[Id],
@@ -19,7 +19,7 @@ WHERE
 	([a].[Id] = 0 AND IIF([a].[NullValue] IS NULL, 0, [a].[NullValue]) = 0 OR [a].[Id] = 1 AND IIF([a].[NullValue] IS NULL, 0, [a].[NullValue]) = 1 OR [a].[Id] = 2 AND IIF([a].[NullValue] IS NULL, 0, [a].[NullValue]) = 2)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [SampleClass]
 

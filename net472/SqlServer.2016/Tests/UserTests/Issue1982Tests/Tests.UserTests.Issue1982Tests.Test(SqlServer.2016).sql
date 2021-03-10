@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Issue1982Table]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [Issue1982Table]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	IIF(EXISTS(
@@ -21,7 +21,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Issue1982Table]
 

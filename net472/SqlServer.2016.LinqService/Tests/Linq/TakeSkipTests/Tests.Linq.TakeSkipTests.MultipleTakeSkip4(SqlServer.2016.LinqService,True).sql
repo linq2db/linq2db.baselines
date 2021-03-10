@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	CREATE TABLE [TakeSkipClass]
@@ -14,7 +13,7 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value1'
 
@@ -28,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value2'
 
@@ -42,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value3'
 
@@ -56,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value4'
 
@@ -70,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value5'
 
@@ -84,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value6'
 
@@ -98,7 +97,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value7'
 
@@ -112,7 +111,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value8'
 
@@ -126,7 +125,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value9'
 
@@ -140,7 +139,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @skip_1 Int -- Int32
 SET     @skip_1 = 3
 DECLARE @take_2 Int -- Int32
@@ -155,8 +154,7 @@ ORDER BY
 OFFSET @skip_1 ROWS FETCH NEXT @take_2 ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 

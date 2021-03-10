@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [ReviewIndexes]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [ReviewIndexes]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [ReviewIndexes] [Target]
 USING (	VALUES
@@ -23,7 +23,7 @@ WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = 3 THEN DELETE
 ;
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [ReviewIndexes]
 

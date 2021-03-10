@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NOT NULL)
-	DROP TABLE [IntegerConverts]
+DROP TABLE IF EXISTS [IntegerConverts]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NULL)
 	CREATE TABLE [IntegerConverts]
@@ -30,7 +29,7 @@ IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [IntegerConverts]
 (
@@ -56,7 +55,7 @@ VALUES
 (1,0,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -83,8 +82,7 @@ FROM
 		INNER JOIN [IntegerConverts] [y] ON ([y].[UInt16N] = [x].[UInt16N] OR [y].[UInt16N] IS NULL AND [x].[UInt16N] IS NULL)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NOT NULL)
-	DROP TABLE [IntegerConverts]
+DROP TABLE IF EXISTS [IntegerConverts]
 

@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SomeEntity]', N'U') IS NOT NULL)
-	DROP TABLE [SomeEntity]
+DROP TABLE IF EXISTS [SomeEntity]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[SomeEntity]', N'U') IS NULL)
 	CREATE TABLE [SomeEntity]
@@ -15,7 +14,7 @@ IF (OBJECT_ID(N'[SomeEntity]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [SomeEntity]
 (
@@ -35,13 +34,12 @@ VALUES
 (10,N'Own_10')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
-	DROP TABLE [SomeOtherEntity]
+DROP TABLE IF EXISTS [SomeOtherEntity]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NULL)
 	CREATE TABLE [SomeOtherEntity]
@@ -51,7 +49,7 @@ IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [SomeOtherEntity]
 (
@@ -71,14 +69,14 @@ VALUES
 (10,N'Str_10')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
 RETURNS TABLE
@@ -88,7 +86,7 @@ AS RETURN
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 2
 
@@ -111,7 +109,7 @@ FROM
 		INNER JOIN [SomeOtherEntity] [detail] ON [detail].[Id] = [lw_SomeEntity].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 2
 
@@ -134,7 +132,7 @@ FROM
 		CROSS APPLY dbo.fn_SomeFunction([lw_SomeEntity].[Id]) [detail]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @take_1 Int -- Int32
@@ -158,21 +156,19 @@ FROM
 		) [a_Other]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
-	DROP TABLE [SomeOtherEntity]
+DROP TABLE IF EXISTS [SomeOtherEntity]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SomeEntity]', N'U') IS NOT NULL)
-	DROP TABLE [SomeEntity]
+DROP TABLE IF EXISTS [SomeEntity]
 

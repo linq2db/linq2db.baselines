@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Person]
 (
@@ -22,7 +22,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @diagnosis NVarChar(4000) -- String
@@ -50,7 +50,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i_1 Int -- Int32
@@ -82,7 +82,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i_1 Int -- Int32
@@ -114,7 +114,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -129,7 +129,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -140,7 +140,7 @@ WHERE
 	[t1].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 5
 

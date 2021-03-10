@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Count(*)
@@ -25,7 +25,7 @@ FROM
 		) [c2] ON [p].[ParentID] = [c2].[ParentID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 WITH [CTE_1] ([ParentID], [ChildID])
 AS

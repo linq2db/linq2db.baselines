@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Sum(IIF([a_Parent].[Value1] IS NULL, 0, [a_Parent].[Value1]))

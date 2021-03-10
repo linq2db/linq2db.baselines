@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [TreeItem]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [TreeItem]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[x].[Id],
@@ -26,7 +26,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[key_data_result].[Id],
@@ -47,7 +47,7 @@ FROM
 		INNER JOIN [TreeItem] [detail] ON [key_data_result].[Id] = [detail].[ParentId]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t].[Id],
@@ -59,7 +59,7 @@ WHERE
 	[a_Parent].[Id] > 0
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [TreeItem]
 

@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue1836]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1836]
+DROP TABLE IF EXISTS [Issue1836]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Issue1836]', N'U') IS NULL)
 	CREATE TABLE [Issue1836]
@@ -17,7 +16,7 @@ IF (OBJECT_ID(N'[Issue1836]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @HomeLocation NVarChar(4000) -- String
@@ -35,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @HomeLocation geography -- Udt -- Object
@@ -53,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -64,8 +63,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue1836]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1836]
+DROP TABLE IF EXISTS [Issue1836]
 

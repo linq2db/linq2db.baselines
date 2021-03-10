@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @id1 Int -- Int32
@@ -20,7 +20,7 @@ ORDER BY
 	[p].[ParentID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @id1 Int -- Int32

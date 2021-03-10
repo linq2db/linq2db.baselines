@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[ParentID] > 1000
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 UPDATE
 	[p]
@@ -28,7 +28,7 @@ WHERE
 	[p].[ParentID] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 

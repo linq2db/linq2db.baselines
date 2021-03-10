@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[UserGroup]', N'U') IS NOT NULL)
-	DROP TABLE [UserGroup]
+DROP TABLE IF EXISTS [UserGroup]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[UserGroup]', N'U') IS NULL)
 	CREATE TABLE [UserGroup]
@@ -14,7 +13,7 @@ IF (OBJECT_ID(N'[UserGroup]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [UserGroup]
 (
@@ -24,13 +23,12 @@ VALUES
 (1)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
-	DROP TABLE [User]
+DROP TABLE IF EXISTS [User]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	CREATE TABLE [User]
@@ -41,7 +39,7 @@ IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [User]
 (
@@ -55,13 +53,12 @@ VALUES
 (3,1,2)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
-	DROP TABLE [Language]
+DROP TABLE IF EXISTS [Language]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Language]', N'U') IS NULL)
 	CREATE TABLE [Language]
@@ -71,7 +68,7 @@ IF (OBJECT_ID(N'[Language]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Language]
 (
@@ -83,7 +80,7 @@ VALUES
 (2,N'French')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @take_1 Int -- Int32
@@ -119,20 +116,17 @@ FROM
 		) [a_FirstUsersWithLanguage_1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
-	DROP TABLE [Language]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
-	DROP TABLE [User]
+DROP TABLE IF EXISTS [Language]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[UserGroup]', N'U') IS NOT NULL)
-	DROP TABLE [UserGroup]
+DROP TABLE IF EXISTS [User]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [UserGroup]
 

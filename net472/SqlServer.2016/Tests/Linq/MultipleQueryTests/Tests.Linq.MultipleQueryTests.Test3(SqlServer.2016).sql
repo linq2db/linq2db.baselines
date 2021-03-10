@@ -50,7 +50,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[ParentID],
@@ -59,7 +59,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	1

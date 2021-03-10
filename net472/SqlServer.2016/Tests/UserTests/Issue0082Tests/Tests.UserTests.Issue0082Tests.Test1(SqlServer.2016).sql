@@ -50,7 +50,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[o].[ParentID],
@@ -74,7 +74,7 @@ FROM
 	[Parent] [o]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Count(*)
@@ -82,7 +82,7 @@ FROM
 	[Parent] [o]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[x].[ParentID],

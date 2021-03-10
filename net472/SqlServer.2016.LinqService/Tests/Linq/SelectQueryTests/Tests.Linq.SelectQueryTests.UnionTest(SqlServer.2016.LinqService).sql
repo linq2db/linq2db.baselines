@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [SampleClass]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [SampleClass]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
@@ -29,7 +29,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[v].[Value2]
@@ -55,7 +55,7 @@ FROM
 	) [v]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [SampleClass]
 

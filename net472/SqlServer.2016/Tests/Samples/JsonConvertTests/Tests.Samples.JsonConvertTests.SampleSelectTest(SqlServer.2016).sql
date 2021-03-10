@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [SampleClass]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [SampleClass]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Data_1 VarChar(4000) -- AnsiString
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t].[Id],
@@ -37,7 +37,7 @@ WHERE
 	JSON_VALUE([t].[Data], N'$.Property1') = 'Pr1'
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [SampleClass]
 

@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue1613]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1613]
+DROP TABLE IF EXISTS [Issue1613]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Issue1613]', N'U') IS NULL)
 	CREATE TABLE [Issue1613]
@@ -14,7 +13,7 @@ IF (OBJECT_ID(N'[Issue1613]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Issue1613]
 (
@@ -28,7 +27,7 @@ VALUES
 ('2020-03-04 17:54:55.1231234 +00:40')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[c1]
@@ -43,7 +42,7 @@ GROUP BY
 	[t1].[c1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[r].[dt]
@@ -51,8 +50,7 @@ FROM
 	[Issue1613] [r]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue1613]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1613]
+DROP TABLE IF EXISTS [Issue1613]
 

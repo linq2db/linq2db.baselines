@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Max([c_1].[ChildID]),
@@ -13,7 +13,7 @@ GROUP BY
 	[p].[ParentID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Max([c_1].[ParentID])
@@ -21,7 +21,7 @@ FROM
 	[Child] [c_1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	MAX(ALL [t1].[ParentID])
@@ -29,7 +29,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	MAX(DISTINCT [t1].[ParentID])

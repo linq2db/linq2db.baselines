@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Issue1373Tests]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [Issue1373Tests]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = NULL
 
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = NULL
 
@@ -42,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = N'test'
 
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -69,7 +69,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Issue1373Tests]
 

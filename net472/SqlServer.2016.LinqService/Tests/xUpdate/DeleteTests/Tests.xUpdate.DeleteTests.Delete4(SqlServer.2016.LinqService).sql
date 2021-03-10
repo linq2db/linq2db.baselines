@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[GrandChildID] IN (1001, 1002)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [GrandChild]
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [GrandChild]
 (
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Count(*)
@@ -50,7 +50,7 @@ WHERE
 	[gc].[ParentID] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [gc]
 FROM
@@ -60,7 +60,7 @@ WHERE
 	[a_Parent].[ParentID] = 1 AND [gc].[GrandChildID] IN (1001, 1002)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Count(*)
@@ -70,7 +70,7 @@ WHERE
 	[gc].[ParentID] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM

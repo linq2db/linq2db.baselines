@@ -50,7 +50,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @user_1 Int -- Int32
 SET     @user_1 = 3
 

@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NOT NULL)
-	DROP TABLE [EventScheduleItem]
+DROP TABLE IF EXISTS [EventScheduleItem]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NULL)
 	CREATE TABLE [EventScheduleItem]
@@ -19,7 +18,7 @@ IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [EventScheduleItem]
 (
@@ -33,13 +32,12 @@ VALUES
 (2,1,2,2)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NOT NULL)
-	DROP TABLE [EventScheduleItemPerson]
+DROP TABLE IF EXISTS [EventScheduleItemPerson]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NULL)
 	CREATE TABLE [EventScheduleItemPerson]
@@ -50,7 +48,7 @@ IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [EventScheduleItemPerson]
 (
@@ -63,13 +61,12 @@ VALUES
 (2,2,2)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NOT NULL)
-	DROP TABLE [EventSchedulePerson]
+DROP TABLE IF EXISTS [EventSchedulePerson]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NULL)
 	CREATE TABLE [EventSchedulePerson]
@@ -79,7 +76,7 @@ IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [EventSchedulePerson]
 (
@@ -91,7 +88,7 @@ VALUES
 (2,2)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @EventId Int -- Int32
 SET     @EventId = 1
 
@@ -108,7 +105,7 @@ WHERE
 	[p].[EventId] = @EventId AND [p].[IsActive] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
@@ -120,20 +117,17 @@ WHERE
 	[p].[EventId] = @eventId AND [p].[IsActive] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NOT NULL)
-	DROP TABLE [EventSchedulePerson]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NOT NULL)
-	DROP TABLE [EventScheduleItemPerson]
+DROP TABLE IF EXISTS [EventSchedulePerson]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NOT NULL)
-	DROP TABLE [EventScheduleItem]
+DROP TABLE IF EXISTS [EventScheduleItemPerson]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [EventScheduleItem]
 

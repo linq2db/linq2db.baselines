@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SampleData]', N'U') IS NOT NULL)
-	DROP TABLE [SampleData]
+DROP TABLE IF EXISTS [SampleData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[SampleData]', N'U') IS NULL)
 	CREATE TABLE [SampleData]
@@ -19,7 +18,7 @@ IF (OBJECT_ID(N'[SampleData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 Int -- Int32
@@ -45,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value1 Int -- Int32
@@ -71,7 +70,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value1 Int -- Int32
@@ -97,7 +96,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Value1 Int -- Int32
@@ -123,7 +122,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Value1 Int -- Int32
@@ -149,7 +148,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Value1 Int -- Int32
@@ -175,7 +174,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 7
 DECLARE @Value1 Int -- Int32
@@ -201,7 +200,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 8
 DECLARE @Value1 Int -- Int32
@@ -227,7 +226,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 9
 DECLARE @Value1 Int -- Int32
@@ -253,7 +252,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @Value1 Int -- Int32
@@ -279,7 +278,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -323,8 +322,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SampleData]', N'U') IS NOT NULL)
-	DROP TABLE [SampleData]
+DROP TABLE IF EXISTS [SampleData]
 

@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
-	DROP TABLE [OrderByDistinctData]
+DROP TABLE IF EXISTS [OrderByDistinctData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NULL)
 	CREATE TABLE [OrderByDistinctData]
@@ -19,7 +18,7 @@ IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -45,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -71,7 +70,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -97,7 +96,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -123,7 +122,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -149,7 +148,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -175,7 +174,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -201,7 +200,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 20
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -227,7 +226,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 30
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -253,7 +252,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 40
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -279,7 +278,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 50
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -305,7 +304,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 60
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -331,7 +330,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 100
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -357,7 +356,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 200
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -383,7 +382,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 300
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -409,7 +408,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 400
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -435,7 +434,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 500
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -461,7 +460,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 600
 DECLARE @DuplicateData NVarChar(4000) -- String
@@ -487,7 +486,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @skip Int -- Int32
 SET     @skip = 0
 DECLARE @take Int -- Int32
@@ -504,7 +503,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @skip Int -- Int32
 SET     @skip = 0
 DECLARE @take Int -- Int32
@@ -521,7 +520,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @skip Int -- Int32
 SET     @skip = 0
 DECLARE @take Int -- Int32
@@ -538,7 +537,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @skip Int -- Int32
 SET     @skip = 0
 DECLARE @take Int -- Int32
@@ -555,8 +554,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
-	DROP TABLE [OrderByDistinctData]
+DROP TABLE IF EXISTS [OrderByDistinctData]
 

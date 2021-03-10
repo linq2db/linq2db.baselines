@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Issue1316Tests]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Issue1316Tests]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -35,7 +35,7 @@ WHERE
 	[_].[ID] IN (4, 5, 6)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Issue1316Tests]
 

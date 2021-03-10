@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[lw_Parent].[ParentID],
@@ -17,7 +17,7 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[lw_Parent].[ParentID],
@@ -36,7 +36,7 @@ FROM
 		INNER JOIN [GrandChild] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[p].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'
 
@@ -16,7 +16,7 @@ WHERE
 	[x].[FirstName] = @t
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'
 
