@@ -1,21 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @n Int -- Int32
-SET     @n = -1
+SET     @n = 0
 
 SELECT
-	Sum([t1].[c1] - 3)
+	Sum([ch_1].[ParentID] - 3)
 FROM
 	(
 		SELECT
-			[ch].[ParentID] + 1 as [c1],
+			[ch].[ParentID] + 1 as [ParentID],
 			[ch].[ChildID]
 		FROM
 			[Child] [ch]
-		WHERE
-			[ch].[ParentID] > @n
-	) [t1]
+	) [ch_1]
+WHERE
+	[ch_1].[ParentID] > @n
 GROUP BY
-	[t1].[c1],
-	[t1].[ChildID]
+	[ch_1].[ParentID],
+	[ch_1].[ChildID]
 
