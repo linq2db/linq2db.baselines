@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."c1"
+	Floor(Log(Float("p"."MoneyValue")) / 0.69314718055994529)
 FROM
-	(
-		SELECT
-			Floor(Log(Float("p"."MoneyValue")) / 0.69314718055994529) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "p"
 WHERE
-	("t"."c1" <> 0.10000000000000001 OR "t"."c1" IS NULL)
+	(Floor(Log(Float("p"."MoneyValue")) / 0.69314718055994529) <> 0.10000000000000001 OR Floor(Log(Float("p"."MoneyValue")) / 0.69314718055994529) IS NULL)
 
