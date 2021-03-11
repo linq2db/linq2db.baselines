@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[MainTable]', N'U') IS NOT NULL)
-	DROP TABLE [MainTable]
+DROP TABLE IF EXISTS [MainTable]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -71,8 +70,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NOT NULL)
-	DROP TABLE [AssociatedTable]
+DROP TABLE IF EXISTS [AssociatedTable]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
@@ -141,12 +139,10 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NOT NULL)
-	DROP TABLE [AssociatedTable]
+DROP TABLE IF EXISTS [AssociatedTable]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-IF (OBJECT_ID(N'[MainTable]', N'U') IS NOT NULL)
-	DROP TABLE [MainTable]
+DROP TABLE IF EXISTS [MainTable]
 
