@@ -27,25 +27,18 @@ DECLARE @p_1 NVarChar(4000) -- String
 SET     @p_1 = N'1'
 
 SELECT
-	[underscore].[ParentID],
-	[underscore].[ChildID]
+	[selectParam].[ParentID],
+	[selectParam].[ChildID]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [selectParam].[ParentID] > 2
-					THEN CASE
-					WHEN [selectParam].[ParentID] > 3
-						THEN N'1'
-					ELSE N'2'
-				END
-				ELSE N'3'
-			END as [Key_1],
-			[selectParam].[ParentID],
-			[selectParam].[ChildID]
-		FROM
-			[Child] [selectParam]
-	) [underscore]
+	[Child] [selectParam]
 WHERE
-	[underscore].[Key_1] = @p_1
+	CASE
+		WHEN [selectParam].[ParentID] > 2
+			THEN CASE
+			WHEN [selectParam].[ParentID] > 3
+				THEN N'1'
+			ELSE N'2'
+		END
+		ELSE N'3'
+	END = @p_1
 

@@ -2,19 +2,11 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`pp`.`ID`,
-	`pp`.`Name_1`
+	`p`.`PersonID`,
+	`p`.`FirstName`
 FROM
-	(
-		SELECT
-			Concat('  ', `p`.`FirstName`, ' ') as `Name`,
-			`p`.`PersonID` as `ID`,
-			`p`.`FirstName` as `Name_1`
-		FROM
-			`Person` `p`
-		WHERE
-			`p`.`PersonID` = 1
-	) `pp`
+	`Person` `p`
 WHERE
-	Trim(`pp`.`Name`) = 'John'
+	Trim(Concat('  ', `p`.`FirstName`, ' ')) = 'John' AND
+	`p`.`PersonID` = 1
 

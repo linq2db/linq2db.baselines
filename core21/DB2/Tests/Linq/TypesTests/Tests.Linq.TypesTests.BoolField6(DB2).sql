@@ -2,18 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."MoneyValue"
+	"t"."MoneyValue"
 FROM
-	(
-		SELECT
-			CASE
-				WHEN "t"."BoolValue" = 0 THEN 1
-				ELSE 0
-			END as "b",
-			"t"."MoneyValue"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	"p"."b" = 1
+	("t"."BoolValue" = 0)
 
