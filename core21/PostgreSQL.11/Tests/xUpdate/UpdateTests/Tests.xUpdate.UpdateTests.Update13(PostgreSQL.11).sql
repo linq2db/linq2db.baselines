@@ -4,9 +4,9 @@
 UPDATE
 	"Parent"
 SET
-	"ParentID" = "Parent"."ParentID"
+	"ParentID" = p1."ParentID"
 FROM
-	"Parent" p2
+	"Parent" p1
 WHERE
-	"Parent"."ParentID" < 3 AND "Parent"."ParentID" = "Parent"."ParentID"
+	p1."ParentID" < 3 AND p1."ParentID" = "Parent"."ParentID"
 
