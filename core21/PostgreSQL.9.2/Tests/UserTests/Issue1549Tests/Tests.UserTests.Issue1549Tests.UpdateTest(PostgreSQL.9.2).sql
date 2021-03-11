@@ -65,8 +65,7 @@ SET
 FROM
 	"billing_DevReadingType" drt
 WHERE
-	drt."Name" = "billing_TempReading"."ReadingTypeName" AND
-	drt."DevTypeId" = "billing_TempReading"."Devtypeid"
+	(drt."Name" = "billing_TempReading"."ReadingTypeName" AND drt."DevTypeId" = "billing_TempReading"."Devtypeid")
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
