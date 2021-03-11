@@ -8,7 +8,7 @@ UPDATE
 SET
 	"Value1" = :Value1
 FROM
-	"Parent" c_1
+	"Parent" x
 WHERE
-	"Parent"."ParentID" IN (0, 0) AND "Parent"."ParentID" = "Parent"."Value1"
+	x."ParentID" IN (0, 0) AND x."ParentID" = "Parent"."Value1"
 
