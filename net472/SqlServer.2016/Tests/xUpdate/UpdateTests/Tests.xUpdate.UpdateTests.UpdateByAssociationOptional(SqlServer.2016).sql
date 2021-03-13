@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[MainTable]', N'U') IS NOT NULL)
-	DROP TABLE [MainTable]
+DROP TABLE IF EXISTS [MainTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[MainTable]', N'U') IS NULL)
 	CREATE TABLE [MainTable]
@@ -15,7 +14,7 @@ IF (OBJECT_ID(N'[MainTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [MainTable]
 (
@@ -28,13 +27,12 @@ VALUES
 (3,N'value 3')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NOT NULL)
-	DROP TABLE [AssociatedTable]
+DROP TABLE IF EXISTS [AssociatedTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NULL)
 	CREATE TABLE [AssociatedTable]
@@ -43,7 +41,7 @@ IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [AssociatedTable]
 (
@@ -54,7 +52,7 @@ VALUES
 (3)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -70,7 +68,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -81,14 +79,12 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NOT NULL)
-	DROP TABLE [AssociatedTable]
+DROP TABLE IF EXISTS [AssociatedTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[MainTable]', N'U') IS NOT NULL)
-	DROP TABLE [MainTable]
+DROP TABLE IF EXISTS [MainTable]
 
