@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- Sybase.Managed Sybase
 
 SELECT
 	[p].[GuidValue]
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
-	NewID()
+	NewID(1)
 

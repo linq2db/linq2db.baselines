@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- Sybase.Managed Sybase
 
-DELETE [t1]
+DELETE FROM [Child]
 FROM
 	[Child] [t1]
 WHERE
 	[t1].[ChildID] > 1000
 
 BeforeExecute
--- SqlServer.2016
-DECLARE @id Int -- Int32
+-- Sybase.Managed Sybase
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 INSERT INTO [Child]
@@ -24,8 +24,8 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
-DECLARE @id Int -- Int32
+-- Sybase.Managed Sybase
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
@@ -36,12 +36,12 @@ WHERE
 	[c_1].[ChildID] = @id
 
 BeforeExecute
--- SqlServer.2016
-DECLARE @id Int -- Int32
+-- Sybase.Managed Sybase
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
-	[c_1]
+	[Child]
 SET
 	[c_1].[ChildID] = [c_1].[ChildID] + 2
 FROM
@@ -51,8 +51,8 @@ WHERE
 	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
 
 BeforeExecute
--- SqlServer.2016
-DECLARE @ChildID Int -- Int32
+-- Sybase.Managed Sybase
+DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 1003
 
 SELECT
@@ -63,9 +63,9 @@ WHERE
 	[c_1].[ChildID] = @ChildID
 
 BeforeExecute
--- SqlServer.2016
+-- Sybase.Managed Sybase
 
-DELETE [t1]
+DELETE FROM [Child]
 FROM
 	[Child] [t1]
 WHERE
