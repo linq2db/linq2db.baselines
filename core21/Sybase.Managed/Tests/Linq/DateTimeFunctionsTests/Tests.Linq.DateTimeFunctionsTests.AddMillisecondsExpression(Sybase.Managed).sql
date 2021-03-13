@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p_1 Integer -- Int32
+DECLARE @p_1 Double
 SET     @p_1 = 226
 
 SELECT
