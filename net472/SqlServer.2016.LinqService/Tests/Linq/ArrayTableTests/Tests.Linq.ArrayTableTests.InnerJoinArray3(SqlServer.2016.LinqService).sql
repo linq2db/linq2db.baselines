@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[p].[FirstName],
@@ -24,7 +24,7 @@ FROM
 		) [t1] ON [p].[LastName] = [t1].[c1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[p].[FirstName],

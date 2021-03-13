@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -9,7 +9,7 @@ FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1234
 DECLARE @outputID Int -- Int32

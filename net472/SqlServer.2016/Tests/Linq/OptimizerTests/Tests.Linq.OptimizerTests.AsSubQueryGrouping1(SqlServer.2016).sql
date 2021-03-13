@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [FirstOptimizerData]
+DROP TABLE IF EXISTS [FirstOptimizerData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NULL)
 	CREATE TABLE [FirstOptimizerData]
@@ -24,7 +23,7 @@ IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [FirstOptimizerData]
 (
@@ -47,13 +46,12 @@ VALUES
 (3,4,60,300,400,1000,4000,5000,N'Str_5')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [SecondOptimizerData]
+DROP TABLE IF EXISTS [SecondOptimizerData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NULL)
 	CREATE TABLE [SecondOptimizerData]
@@ -72,7 +70,7 @@ IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [SecondOptimizerData]
 (
@@ -95,7 +93,7 @@ VALUES
 (3,4,60,300,400,1000,4000,5000,N'Str_5')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	COUNT(*)
@@ -110,14 +108,12 @@ FROM
 	) [x]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [SecondOptimizerData]
+DROP TABLE IF EXISTS [SecondOptimizerData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [FirstOptimizerData]
+DROP TABLE IF EXISTS [FirstOptimizerData]
 

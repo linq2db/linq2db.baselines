@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NOT NULL)
-	DROP TABLE [UpdateSetTest]
+DROP TABLE IF EXISTS [UpdateSetTest]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NULL)
 	CREATE TABLE [UpdateSetTest]
@@ -22,7 +21,7 @@ IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 UniqueIdentifier -- Guid
@@ -60,7 +59,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value5 Int -- Int32
 SET     @Value5 = 11
 DECLARE @id Int -- Int32
@@ -76,7 +75,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -90,7 +89,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value5 Int -- Int32
 SET     @Value5 = 12
 DECLARE @id Int -- Int32
@@ -106,7 +105,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -120,8 +119,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NOT NULL)
-	DROP TABLE [UpdateSetTest]
+DROP TABLE IF EXISTS [UpdateSetTest]
 

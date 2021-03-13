@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
-	DROP TABLE [User]
+DROP TABLE IF EXISTS [User]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	CREATE TABLE [User]
@@ -17,7 +16,7 @@ IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Residence_City NVarChar(4000) -- String
 SET     @Residence_City = N'Springwood'
 DECLARE @Name NVarChar(4000) -- String
@@ -43,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[city],
@@ -54,8 +53,7 @@ FROM
 	[User] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
-	DROP TABLE [User]
+DROP TABLE IF EXISTS [User]
 

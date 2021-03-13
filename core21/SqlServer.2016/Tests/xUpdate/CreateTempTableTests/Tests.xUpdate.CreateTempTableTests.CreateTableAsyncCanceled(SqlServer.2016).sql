@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
-	DROP TABLE [TempTable]
+DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[p].[ParentID]
@@ -13,7 +12,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 CREATE TABLE [#TempTable]
 (
@@ -21,7 +20,7 @@ CREATE TABLE [#TempTable]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [TempTable]
 

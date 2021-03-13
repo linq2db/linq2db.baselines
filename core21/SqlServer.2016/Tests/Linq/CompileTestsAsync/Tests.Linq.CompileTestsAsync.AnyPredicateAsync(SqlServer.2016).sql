@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NOT NULL)
-	DROP TABLE [AsyncDataTable]
+DROP TABLE IF EXISTS [AsyncDataTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NULL)
 	CREATE TABLE [AsyncDataTable]
@@ -16,7 +15,7 @@ IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [AsyncDataTable]
 (
@@ -35,7 +34,7 @@ VALUES
 (10)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
@@ -50,8 +49,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NOT NULL)
-	DROP TABLE [AsyncDataTable]
+DROP TABLE IF EXISTS [AsyncDataTable]
 

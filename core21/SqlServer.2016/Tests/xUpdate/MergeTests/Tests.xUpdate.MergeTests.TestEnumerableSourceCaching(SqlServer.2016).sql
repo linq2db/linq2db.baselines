@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [CacheTestTable]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [CacheTestTable]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [CacheTestTable] [Target]
 USING (	VALUES
@@ -41,7 +41,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -52,7 +52,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [CacheTestTable] [Target]
 USING (	VALUES
@@ -84,7 +84,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -95,7 +95,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [CacheTestTable]
 

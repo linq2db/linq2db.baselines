@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SampleData]', N'U') IS NOT NULL)
-	DROP TABLE [SampleData]
+DROP TABLE IF EXISTS [SampleData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[SampleData]', N'U') IS NULL)
 	CREATE TABLE [SampleData]
@@ -19,7 +18,7 @@ IF (OBJECT_ID(N'[SampleData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [SampleData]
 (
@@ -41,7 +40,7 @@ VALUES
 (10,100,1000,10000)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t2].[Id],
@@ -90,8 +89,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SampleData]', N'U') IS NOT NULL)
-	DROP TABLE [SampleData]
+DROP TABLE IF EXISTS [SampleData]
 

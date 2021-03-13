@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @n Int -- Int32
 SET     @n = 300000
 DECLARE @take Int -- Int32

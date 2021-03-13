@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue2816Table]
+DROP TABLE IF EXISTS [Issue2816Table]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NULL)
 	CREATE TABLE [Issue2816Table]
@@ -17,7 +16,7 @@ IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Text NVarChar(4000) -- String
@@ -36,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Text NVarChar(4000) -- String
@@ -55,7 +54,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Text NVarChar(4000) -- String
@@ -74,7 +73,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[p].[Id],
@@ -86,8 +85,7 @@ WHERE
                  　]%')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue2816Table]
+DROP TABLE IF EXISTS [Issue2816Table]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @p_2 NVarChar(4000) -- String
 SET     @p_2 = N'%test%'
 
@@ -14,7 +14,7 @@ WHERE
 	Lower([p].[FirstName]) LIKE @p_2 ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @input_2 NVarChar(4000) -- String
 SET     @input_2 = N'%test%'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[c1]
@@ -14,7 +14,7 @@ GROUP BY
 	[t1].[c1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @p_1 NVarChar(4000) -- String
 SET     @p_1 = N'1'
 

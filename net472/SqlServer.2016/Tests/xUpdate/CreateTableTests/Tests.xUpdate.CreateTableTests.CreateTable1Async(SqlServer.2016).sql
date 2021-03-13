@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
-IF (OBJECT_ID(N'[TestTable]', N'U') IS NOT NULL)
-	DROP TABLE [TestTable]
+DROP TABLE IF EXISTS [TestTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 CREATE TABLE [TestTable]
 (
@@ -18,7 +17,7 @@ CREATE TABLE [TestTable]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[ID],
@@ -29,7 +28,7 @@ FROM
 	[TestTable] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 DROP TABLE [TestTable]
 

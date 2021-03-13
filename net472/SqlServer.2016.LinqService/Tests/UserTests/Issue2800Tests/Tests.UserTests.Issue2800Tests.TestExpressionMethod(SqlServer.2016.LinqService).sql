@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Car]', N'U') IS NOT NULL)
-	DROP TABLE [Car]
+DROP TABLE IF EXISTS [Car]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Car]', N'U') IS NULL)
 	CREATE TABLE [Car]
@@ -17,7 +16,7 @@ IF (OBJECT_ID(N'[Car]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(50) -- String
@@ -35,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(50) -- String
@@ -53,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[x].[Id],
@@ -62,7 +61,7 @@ FROM
 	[Car] [x]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -71,65 +70,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-SELECT
-	[x].[Id],
-	[x].[Name]
-FROM
-	[Car] [x]
-WHERE
-	([x].[Name] <> N'Special' OR [x].[Name] IS NULL)
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-SELECT
-	[x].[Id],
-	[x].[Name]
-FROM
-	[Car] [x]
-WHERE
-	[x].[Name] = N'Special'
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-SELECT
-	[x].[Id],
-	[x].[Name]
-FROM
-	[Car] [x]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[x].[Id],
@@ -140,7 +81,7 @@ WHERE
 	([x].[Name] <> N'Special' OR [x].[Name] IS NULL)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -149,7 +90,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[x].[Id],
@@ -160,7 +101,7 @@ WHERE
 	[x].[Name] = N'Special'
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -169,8 +110,65 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Car]', N'U') IS NOT NULL)
-	DROP TABLE [Car]
+SELECT
+	[x].[Id],
+	[x].[Name]
+FROM
+	[Car] [x]
+
+BeforeExecute
+-- SqlServer.2016
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SqlServer.2016
+
+SELECT
+	[x].[Id],
+	[x].[Name]
+FROM
+	[Car] [x]
+WHERE
+	([x].[Name] <> N'Special' OR [x].[Name] IS NULL)
+
+BeforeExecute
+-- SqlServer.2016
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SqlServer.2016
+
+SELECT
+	[x].[Id],
+	[x].[Name]
+FROM
+	[Car] [x]
+WHERE
+	[x].[Name] = N'Special'
+
+BeforeExecute
+-- SqlServer.2016
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [Car]
 

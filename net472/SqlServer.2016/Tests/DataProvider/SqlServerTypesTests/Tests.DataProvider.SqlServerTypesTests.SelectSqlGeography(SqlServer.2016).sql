@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue1836]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1836]
+DROP TABLE IF EXISTS [Issue1836]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Issue1836]', N'U') IS NULL)
 	CREATE TABLE [Issue1836]
@@ -17,7 +16,7 @@ IF (OBJECT_ID(N'[Issue1836]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @p1 geography -- Udt -- Object
 SET     @p1 = LINESTRING (-122.36 47.656, -122.343 47.656)
 
@@ -31,7 +30,7 @@ VALUES
 (2,@p1)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -42,8 +41,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue1836]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1836]
+DROP TABLE IF EXISTS [Issue1836]
 

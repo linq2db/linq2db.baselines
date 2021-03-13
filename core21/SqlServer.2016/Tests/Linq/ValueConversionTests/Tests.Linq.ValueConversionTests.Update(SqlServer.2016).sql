@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
-	DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	CREATE TABLE [ValueConversion]
@@ -24,7 +23,7 @@ IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [ValueConversion]
 (
@@ -51,7 +50,7 @@ VALUES
 (10,NULL,NULL,N'Value1','Value2','Value2','Value2','N',NULL)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value2 NVarChar(200) -- String
 SET     @Value2 = N'[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar(50) -- AnsiString
@@ -70,7 +69,7 @@ WHERE
 	[e].[Id] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -90,7 +89,7 @@ WHERE
 	[e].[Id] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value1 NVarChar(200) -- String
 SET     @Value1 = N'{"some":"updated2}"}'
 DECLARE @Value2 NVarChar(200) -- String
@@ -127,7 +126,7 @@ WHERE
 	[t1].[Id] = @Id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -147,7 +146,7 @@ WHERE
 	[e].[Id] = 2
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value1 NVarChar(200) -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarChar(200) -- String
@@ -184,7 +183,7 @@ WHERE
 	[t1].[Id] = @Id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -204,8 +203,7 @@ WHERE
 	[e].[Id] = 3
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
-	DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 

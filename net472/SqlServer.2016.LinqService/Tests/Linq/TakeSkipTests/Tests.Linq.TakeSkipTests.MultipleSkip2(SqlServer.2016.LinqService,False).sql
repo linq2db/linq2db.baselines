@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	CREATE TABLE [TakeSkipClass]
@@ -14,7 +13,7 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'PLUTO'
 
@@ -28,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'PIPPO'
 
@@ -42,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'PLUTO'
 
@@ -56,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'BOLTO'
 
@@ -70,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Value]
@@ -81,7 +80,7 @@ ORDER BY
 OFFSET 3 ROWS
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Value]
@@ -92,8 +91,7 @@ ORDER BY
 OFFSET 4 ROWS
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
+DROP TABLE IF EXISTS [TakeSkipClass]
 

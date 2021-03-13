@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Key_1]
@@ -21,7 +21,7 @@ GROUP BY
 	[t1].[Key_1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @p_1 Bit -- Boolean
 SET     @p_1 = 0
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [T1351Model]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [T1351Model]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[_].[ID],
@@ -21,7 +21,7 @@ WHERE
 	[_].[TestField] = 0
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[_].[ID],
@@ -33,7 +33,7 @@ WHERE
 	([_].[TestNullable] <> 1 OR [_].[TestNullable] IS NULL)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [T1351Model]
 

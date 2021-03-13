@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NOT NULL)
-	DROP TABLE [PKOnlyTable]
+DROP TABLE IF EXISTS [PKOnlyTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NULL)
 	CREATE TABLE [PKOnlyTable]
@@ -16,7 +15,7 @@ IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [PKOnlyTable]
 (
@@ -26,7 +25,7 @@ VALUES
 (2)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [PKOnlyTable] [Target]
 USING (	VALUES
@@ -50,7 +49,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[ID]
@@ -60,8 +59,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NOT NULL)
-	DROP TABLE [PKOnlyTable]
+DROP TABLE IF EXISTS [PKOnlyTable]
 

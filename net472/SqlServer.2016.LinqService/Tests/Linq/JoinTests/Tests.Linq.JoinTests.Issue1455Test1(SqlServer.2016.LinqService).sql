@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Alert]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Alert]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [AuditAlert]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [AuditAlert]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Trade]
 (
@@ -30,7 +30,7 @@ CREATE TABLE [Trade]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Nomin]
 (
@@ -40,7 +40,7 @@ CREATE TABLE [Nomin]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Flat]
 (
@@ -56,7 +56,7 @@ CREATE TABLE [Flat]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @cpty NVarChar(4000) -- String
 SET     @cpty = N'%C%'
 DECLARE @cpty_1 NVarChar(4000) -- String
@@ -92,27 +92,27 @@ GROUP BY
 	[al_1].[alert_2]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Flat]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Nomin]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Trade]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [AuditAlert]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Alert]
 

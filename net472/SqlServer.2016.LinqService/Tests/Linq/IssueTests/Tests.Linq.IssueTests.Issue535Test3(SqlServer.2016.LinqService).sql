@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [CustomerBase]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [CustomerBase]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[cb].[Id],
@@ -26,7 +26,7 @@ WHERE
 	[cb].[ClientType] = N'Client'
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [CustomerBase]
 

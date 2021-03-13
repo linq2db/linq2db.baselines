@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[a_Parent].[ParentID],
@@ -14,7 +14,7 @@ ORDER BY
 	[m_1].[ChildID] DESC
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[a_Parent].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Max([_].[ID])
@@ -7,7 +7,7 @@ FROM
 	[AllTypes] [_]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test01'
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test02  '
 
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test03	 '
 
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test04
  '
@@ -72,7 +72,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test05 '
 
@@ -88,7 +88,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test06 '
 
@@ -104,7 +104,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test07 '
 
@@ -120,7 +120,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test08  '
 
@@ -136,7 +136,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test09  '
 DECLARE @String NVarChar(4000) -- String
@@ -154,7 +154,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test10  '
 DECLARE @String NVarChar(4000) -- String
@@ -172,7 +172,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test11  '
 DECLARE @String NVarChar(4000) -- String
@@ -190,7 +190,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test12  '
 DECLARE @String NVarChar(4000) -- String
@@ -208,7 +208,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test13  '
 DECLARE @String NVarChar(4000) -- String
@@ -226,7 +226,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test14  '
 DECLARE @String NVarChar(4000) -- String
@@ -244,7 +244,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test15  '
 DECLARE @String NVarChar(4000) -- String
@@ -262,7 +262,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test16  '
 DECLARE @String NVarChar(4000) -- String
@@ -280,7 +280,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test17  '
 DECLARE @String NVarChar(4000) -- String
@@ -298,7 +298,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test18  '
 DECLARE @String NVarChar(4000) -- String
@@ -316,7 +316,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test19  '
 DECLARE @String NVarChar(4000) -- String
@@ -334,7 +334,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test20　 '
 DECLARE @String NVarChar(4000) -- String
@@ -352,7 +352,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test21' + char(0) + N' '
 DECLARE @String NVarChar(4000) -- String
@@ -370,7 +370,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = NULL
 
@@ -386,7 +386,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
@@ -402,7 +402,7 @@ ORDER BY
 	[_].[ID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 

@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [FirstOptimizerData]
+DROP TABLE IF EXISTS [FirstOptimizerData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NULL)
 	CREATE TABLE [FirstOptimizerData]
@@ -24,7 +23,7 @@ IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 1
 DECLARE @Key2 Int -- Int32
@@ -70,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 1
 DECLARE @Key2 Int -- Int32
@@ -116,7 +115,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 1
 DECLARE @Key2 Int -- Int32
@@ -162,7 +161,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 2
 DECLARE @Key2 Int -- Int32
@@ -208,7 +207,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 2
 DECLARE @Key2 Int -- Int32
@@ -254,7 +253,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 3
 DECLARE @Key2 Int -- Int32
@@ -300,13 +299,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [SecondOptimizerData]
+DROP TABLE IF EXISTS [SecondOptimizerData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NULL)
 	CREATE TABLE [SecondOptimizerData]
@@ -325,7 +323,7 @@ IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 1
 DECLARE @Key2 Int -- Int32
@@ -371,7 +369,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 1
 DECLARE @Key2 Int -- Int32
@@ -417,7 +415,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 1
 DECLARE @Key2 Int -- Int32
@@ -463,7 +461,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 2
 DECLARE @Key2 Int -- Int32
@@ -509,7 +507,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 2
 DECLARE @Key2 Int -- Int32
@@ -555,7 +553,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 3
 DECLARE @Key2 Int -- Int32
@@ -601,7 +599,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	COUNT([x].[Key2]),
@@ -619,14 +617,12 @@ FROM
 	) [x]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [SecondOptimizerData]
+DROP TABLE IF EXISTS [SecondOptimizerData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NOT NULL)
-	DROP TABLE [FirstOptimizerData]
+DROP TABLE IF EXISTS [FirstOptimizerData]
 

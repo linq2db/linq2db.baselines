@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NOT NULL)
-	DROP TABLE [SelectExpressionTable]
+DROP TABLE IF EXISTS [SelectExpressionTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NULL)
 	CREATE TABLE [SelectExpressionTable]
@@ -16,7 +15,7 @@ IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -30,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @p_1 UniqueIdentifier -- Guid
@@ -45,8 +44,7 @@ FROM
 	[SelectExpressionTable] [_]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NOT NULL)
-	DROP TABLE [SelectExpressionTable]
+DROP TABLE IF EXISTS [SelectExpressionTable]
 

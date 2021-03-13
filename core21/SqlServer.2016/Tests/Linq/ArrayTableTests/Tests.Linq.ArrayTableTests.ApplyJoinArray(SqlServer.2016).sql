@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe'
 
@@ -43,7 +43,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe1'
 

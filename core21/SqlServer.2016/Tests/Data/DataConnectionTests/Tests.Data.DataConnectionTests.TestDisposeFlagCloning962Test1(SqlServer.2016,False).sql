@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Categories]', N'U') IS NOT NULL)
-	DROP TABLE [Categories]
+DROP TABLE IF EXISTS [Categories]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Categories]', N'U') IS NULL)
 	CREATE TABLE [Categories]
@@ -18,7 +17,7 @@ IF (OBJECT_ID(N'[Categories]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Categories]
 (
@@ -30,13 +29,12 @@ VALUES
 (N'Name 2',N'Desc 2')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Products]', N'U') IS NOT NULL)
-	DROP TABLE [Products]
+DROP TABLE IF EXISTS [Products]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Products]', N'U') IS NULL)
 	CREATE TABLE [Products]
@@ -50,7 +48,7 @@ IF (OBJECT_ID(N'[Products]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Products]
 (
@@ -67,7 +65,7 @@ VALUES
 (N'Prod 6',1,N'q 6')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[lw_Category].[CategoryID],
@@ -80,7 +78,7 @@ FROM
 		INNER JOIN [Products] [detail] ON [lw_Category].[CategoryID] = [detail].[CategoryID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[CategoryID],
@@ -90,14 +88,12 @@ FROM
 	[Categories] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Products]', N'U') IS NOT NULL)
-	DROP TABLE [Products]
+DROP TABLE IF EXISTS [Products]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Categories]', N'U') IS NOT NULL)
-	DROP TABLE [Categories]
+DROP TABLE IF EXISTS [Categories]
 

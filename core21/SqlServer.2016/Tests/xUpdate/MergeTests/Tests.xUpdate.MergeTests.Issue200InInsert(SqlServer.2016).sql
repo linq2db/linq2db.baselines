@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @datetime2DataType DateTime2
 SET     @datetime2DataType = '2020-02-29T17:54:55.1231234'
 DECLARE @datetimeoffsetDataType DateTimeOffset
@@ -46,7 +46,7 @@ VALUES
 SET IDENTITY_INSERT [AllTypes2] OFF
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[ID],

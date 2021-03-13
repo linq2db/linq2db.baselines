@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Booking]', N'U') IS NOT NULL)
-	DROP TABLE [Booking]
+DROP TABLE IF EXISTS [Booking]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Booking]', N'U') IS NULL)
 	CREATE TABLE [Booking]
@@ -16,7 +15,7 @@ IF (OBJECT_ID(N'[Booking]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Booking]
 (
@@ -127,7 +126,7 @@ VALUES
 (100,'2020-02-27T17:54:55.123',100)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 
@@ -144,7 +143,7 @@ ORDER BY
 	[t].[BookingID] DESC
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @take BigInt -- Int64
@@ -173,7 +172,7 @@ WHERE
 	[q].[RowNumber] <= @take
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
@@ -219,7 +218,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
@@ -265,7 +264,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
@@ -311,7 +310,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
@@ -357,7 +356,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
@@ -403,7 +402,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = '2020-02-27T17:54:55.1231234'
 DECLARE @cursorValue Int -- Int32
@@ -449,8 +448,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Booking]', N'U') IS NOT NULL)
-	DROP TABLE [Booking]
+DROP TABLE IF EXISTS [Booking]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Max([_].[ID])
@@ -7,7 +7,7 @@ FROM
 	[AllTypes] [_]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N'	'
 
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N'
 '
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N''
 
@@ -72,7 +72,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N''
 
@@ -88,7 +88,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N''
 
@@ -104,7 +104,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 
@@ -120,7 +120,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -138,7 +138,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -156,7 +156,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -174,7 +174,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -192,7 +192,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -210,7 +210,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -228,7 +228,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -246,7 +246,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -264,7 +264,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -282,7 +282,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -300,7 +300,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -318,7 +318,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N'　'
 DECLARE @Char_1 NChar(1) -- StringFixedLength
@@ -336,7 +336,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = char(0)
 
@@ -352,7 +352,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @NChar_1 NChar -- StringFixedLength
 SET     @NChar_1 = NULL
 
@@ -368,7 +368,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
@@ -384,7 +384,7 @@ ORDER BY
 	[_].[ID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 

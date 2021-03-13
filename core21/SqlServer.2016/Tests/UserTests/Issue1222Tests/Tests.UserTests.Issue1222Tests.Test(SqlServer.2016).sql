@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [stLinks]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [stLinks]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [stVersions]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [stVersions]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @parentId Int -- Int32
 SET     @parentId = 111
 DECLARE @parentId_1 Int -- Int32
@@ -85,12 +85,12 @@ FROM
 		INNER JOIN [stVersions] [version_1] ON [u].[Link_1] = [version_1].[inId]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [stVersions]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [stLinks]
 

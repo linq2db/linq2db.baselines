@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	@param = [_].[SmallIntValue]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[_].[ID],

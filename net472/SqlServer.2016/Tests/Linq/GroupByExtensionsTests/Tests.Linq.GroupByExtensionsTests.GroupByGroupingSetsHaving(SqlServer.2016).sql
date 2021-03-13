@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [GroupSampleClass]
+DROP TABLE IF EXISTS [GroupSampleClass]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NULL)
 	CREATE TABLE [GroupSampleClass]
@@ -16,7 +15,7 @@ IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [GroupSampleClass]
 (
@@ -37,7 +36,7 @@ VALUES
 (10,1,0)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id1],
@@ -60,8 +59,7 @@ HAVING
 	(Count(*) > 0 OR GROUPING([t1].[Id1]) = 1)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [GroupSampleClass]
+DROP TABLE IF EXISTS [GroupSampleClass]
 

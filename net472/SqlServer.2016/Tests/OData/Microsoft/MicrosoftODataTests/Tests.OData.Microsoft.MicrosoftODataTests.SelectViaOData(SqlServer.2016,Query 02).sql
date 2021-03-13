@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[odata_person]', N'U') IS NOT NULL)
-	DROP TABLE [odata_person]
+DROP TABLE IF EXISTS [odata_person]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[odata_person]', N'U') IS NULL)
 	CREATE TABLE [odata_person]
@@ -18,7 +17,7 @@ IF (OBJECT_ID(N'[odata_person]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [odata_person]
 (
@@ -31,7 +30,7 @@ VALUES
 (N'N2',4,N'Engineer')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	N'Title',
@@ -55,8 +54,7 @@ GROUP BY
 	[selectParam].[Title]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[odata_person]', N'U') IS NOT NULL)
-	DROP TABLE [odata_person]
+DROP TABLE IF EXISTS [odata_person]
 

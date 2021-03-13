@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @childId Int -- Int32
 SET     @childId = 32
 DECLARE @userId Int -- Int32

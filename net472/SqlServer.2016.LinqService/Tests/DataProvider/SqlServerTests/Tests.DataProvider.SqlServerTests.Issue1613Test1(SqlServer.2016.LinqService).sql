@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue1613]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1613]
+DROP TABLE IF EXISTS [Issue1613]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Issue1613]', N'U') IS NULL)
 	CREATE TABLE [Issue1613]
@@ -14,7 +13,7 @@ IF (OBJECT_ID(N'[Issue1613]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @DateTimeOffset DateTimeOffset
 SET     @DateTimeOffset = '2020-02-29 17:54:55.1231234 +00:40'
 
@@ -28,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @DateTimeOffset DateTimeOffset
 SET     @DateTimeOffset = '2020-03-01 17:54:55.1231234 +00:40'
 
@@ -42,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @DateTimeOffset DateTimeOffset
 SET     @DateTimeOffset = '2020-03-02 17:54:55.1231234 +00:40'
 
@@ -56,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @DateTimeOffset DateTimeOffset
 SET     @DateTimeOffset = '2020-03-03 17:54:55.1231234 +00:40'
 
@@ -70,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @DateTimeOffset DateTimeOffset
 SET     @DateTimeOffset = '2020-03-04 17:54:55.1231234 +00:40'
 
@@ -84,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[dt]
@@ -94,7 +93,7 @@ GROUP BY
 	[t1].[dt]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[r].[dt]
@@ -102,8 +101,7 @@ FROM
 	[Issue1613] [r]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Issue1613]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1613]
+DROP TABLE IF EXISTS [Issue1613]
 

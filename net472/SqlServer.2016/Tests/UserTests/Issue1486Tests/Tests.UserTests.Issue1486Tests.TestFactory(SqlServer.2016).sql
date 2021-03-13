@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  SqlServer.2012
+--  SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
---  SqlServer.2012
+--  SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 

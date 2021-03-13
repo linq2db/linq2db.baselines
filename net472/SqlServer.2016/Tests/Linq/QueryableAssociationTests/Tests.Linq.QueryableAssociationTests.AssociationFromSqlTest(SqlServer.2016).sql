@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [FewNumberEntity]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [FewNumberEntity]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [LargeNumberEntity]
 (
@@ -16,12 +16,12 @@ CREATE TABLE [LargeNumberEntity]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [LargeNumberEntity]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [FewNumberEntity]
 

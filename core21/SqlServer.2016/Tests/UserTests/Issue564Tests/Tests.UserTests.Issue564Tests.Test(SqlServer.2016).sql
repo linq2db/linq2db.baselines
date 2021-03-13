@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Parent564]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [Parent564]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Type_1 NVarChar(4000) -- String
 SET     @Type_1 = N'Child564A'
 DECLARE @StringValue NVarChar(20) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Type_1 NVarChar(4000) -- String
 SET     @Type_1 = N'Child564B'
 DECLARE @IntValue Int -- Int32
@@ -48,7 +48,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Count(*)
@@ -56,7 +56,7 @@ FROM
 	[Parent564] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Parent564]
 

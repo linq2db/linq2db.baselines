@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
-	DROP TABLE [Transactions]
+DROP TABLE IF EXISTS [Transactions]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	CREATE TABLE [Transactions]
@@ -17,7 +16,7 @@ IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 1
 DECLARE @TransactionDate DateTimeOffset
@@ -35,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 2
 DECLARE @TransactionDate DateTimeOffset
@@ -53,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 3
 DECLARE @TransactionDate DateTimeOffset
@@ -71,7 +70,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 4
 DECLARE @TransactionDate DateTimeOffset
@@ -89,7 +88,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 5
 DECLARE @TransactionDate DateTimeOffset
@@ -107,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 6
 DECLARE @TransactionDate DateTimeOffset
@@ -125,7 +124,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 7
 DECLARE @TransactionDate DateTimeOffset
@@ -143,7 +142,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 8
 DECLARE @TransactionDate DateTimeOffset
@@ -161,7 +160,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 9
 DECLARE @TransactionDate DateTimeOffset
@@ -179,7 +178,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 10
 DECLARE @TransactionDate DateTimeOffset
@@ -197,7 +196,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 11
 DECLARE @TransactionDate DateTimeOffset
@@ -215,7 +214,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 12
 DECLARE @TransactionDate DateTimeOffset
@@ -233,7 +232,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 13
 DECLARE @TransactionDate DateTimeOffset
@@ -251,7 +250,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 14
 DECLARE @TransactionDate DateTimeOffset
@@ -269,7 +268,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 15
 DECLARE @TransactionDate DateTimeOffset
@@ -287,7 +286,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 16
 DECLARE @TransactionDate DateTimeOffset
@@ -305,7 +304,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 17
 DECLARE @TransactionDate DateTimeOffset
@@ -323,7 +322,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 18
 DECLARE @TransactionDate DateTimeOffset
@@ -341,7 +340,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 19
 DECLARE @TransactionDate DateTimeOffset
@@ -359,7 +358,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 20
 DECLARE @TransactionDate DateTimeOffset
@@ -377,7 +376,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 21
 DECLARE @TransactionDate DateTimeOffset
@@ -395,7 +394,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 22
 DECLARE @TransactionDate DateTimeOffset
@@ -413,7 +412,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 23
 DECLARE @TransactionDate DateTimeOffset
@@ -431,7 +430,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 24
 DECLARE @TransactionDate DateTimeOffset
@@ -449,7 +448,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 25
 DECLARE @TransactionDate DateTimeOffset
@@ -467,7 +466,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 26
 DECLARE @TransactionDate DateTimeOffset
@@ -485,7 +484,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 5
 
@@ -495,8 +494,7 @@ FROM
 	[Transactions] [t]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
-	DROP TABLE [Transactions]
+DROP TABLE IF EXISTS [Transactions]
 

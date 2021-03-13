@@ -1,31 +1,31 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[Doctor] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'first 1'
 DECLARE @LastName NVarChar(4000) -- String
@@ -53,7 +53,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'first 2'
 DECLARE @LastName NVarChar(4000) -- String
@@ -81,7 +81,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'first 3'
 DECLARE @LastName NVarChar(4000) -- String
@@ -109,7 +109,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'first 4'
 DECLARE @LastName NVarChar(4000) -- String
@@ -137,7 +137,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'first 5'
 DECLARE @LastName NVarChar(4000) -- String
@@ -165,7 +165,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'first 6'
 DECLARE @LastName NVarChar(4000) -- String
@@ -193,7 +193,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 9
 DECLARE @Taxonomy NVarChar(4000) -- String
@@ -211,7 +211,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 10
 DECLARE @Taxonomy NVarChar(4000) -- String
@@ -229,7 +229,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 7
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -247,7 +247,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 8
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -265,7 +265,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	Max([_].[PersonID])
@@ -273,7 +273,7 @@ FROM
 	[Person] [_]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @ID Int -- Int32
 SET     @ID = 12
 
@@ -312,7 +312,7 @@ VALUES
 SET IDENTITY_INSERT [Person] OFF
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[FirstName],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Issue1107TB]
 (
@@ -13,7 +13,7 @@ BeforeExecute
 INSERT BULK [Issue1107TB](Id, TestDate)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Issue1107TB]
 

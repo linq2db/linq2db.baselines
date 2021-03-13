@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [dbo].[Attachment]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[Attachment]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [dbo].[BranchInfo]
 (
@@ -44,7 +44,7 @@ CREATE TABLE [dbo].[BranchInfo]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[m_1].[BranchAddress],
@@ -78,12 +78,12 @@ WHERE
 	[m_1].[BranchIsShow] = 0 AND [m_1].[Status] = 0
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [dbo].[BranchInfo]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [dbo].[Attachment]
 

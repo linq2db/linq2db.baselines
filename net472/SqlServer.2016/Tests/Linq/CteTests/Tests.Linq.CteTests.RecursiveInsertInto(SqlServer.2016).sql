@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NOT NULL)
-	DROP TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NULL)
 	CREATE TABLE [HierarchyTree]
@@ -15,7 +14,7 @@ IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [HierarchyTree]
 (
@@ -43,7 +42,7 @@ VALUES
 (212,21)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [HierarchyData]
 (
@@ -52,7 +51,7 @@ CREATE TABLE [HierarchyData]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 WITH [CTE_1] ([Id])
 AS
@@ -101,7 +100,7 @@ FROM
 	[hierarchyDown] [t2]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -112,13 +111,12 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [HierarchyData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NOT NULL)
-	DROP TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
 

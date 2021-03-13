@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Entity]', N'U') IS NOT NULL)
-	DROP TABLE [Entity]
+DROP TABLE IF EXISTS [Entity]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Entity]', N'U') IS NULL)
 	CREATE TABLE [Entity]
@@ -14,7 +13,7 @@ IF (OBJECT_ID(N'[Entity]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Entity]
 (
@@ -24,13 +23,12 @@ VALUES
 (1)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NOT NULL)
-	DROP TABLE [Entity2Language]
+DROP TABLE IF EXISTS [Entity2Language]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NULL)
 	CREATE TABLE [Entity2Language]
@@ -41,7 +39,7 @@ IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Entity2Language]
 (
@@ -53,13 +51,12 @@ VALUES
 (1,1,1)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
-	DROP TABLE [Language]
+DROP TABLE IF EXISTS [Language]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[Language]', N'U') IS NULL)
 	CREATE TABLE [Language]
@@ -69,7 +66,7 @@ IF (OBJECT_ID(N'[Language]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [Language]
 (
@@ -80,7 +77,7 @@ VALUES
 (1,N'English')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @take_1 Int -- Int32
@@ -104,20 +101,17 @@ FROM
 		) [a_Entity2Language]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Language]', N'U') IS NOT NULL)
-	DROP TABLE [Language]
-
-BeforeExecute
--- SqlServer.2016 SqlServer.2012
-
-IF (OBJECT_ID(N'[Entity2Language]', N'U') IS NOT NULL)
-	DROP TABLE [Entity2Language]
+DROP TABLE IF EXISTS [Language]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[Entity]', N'U') IS NOT NULL)
-	DROP TABLE [Entity]
+DROP TABLE IF EXISTS [Entity2Language]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [Entity]
 

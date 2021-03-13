@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
-	DROP TABLE [OrderByDistinctData]
+DROP TABLE IF EXISTS [OrderByDistinctData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NULL)
 	CREATE TABLE [OrderByDistinctData]
@@ -19,7 +18,7 @@ IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [OrderByDistinctData]
 (
@@ -49,7 +48,7 @@ VALUES
 (600,N'Three',5,5)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[x_3].[Id],
@@ -101,8 +100,7 @@ ORDER BY
 	Max([x_3].[DuplicateData])
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
-	DROP TABLE [OrderByDistinctData]
+DROP TABLE IF EXISTS [OrderByDistinctData]
 

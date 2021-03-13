@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Manufacturer]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [Manufacturer]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Country]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [Country]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[e_1].[ManufacturerId],
@@ -55,12 +55,12 @@ WHERE
 	[e_1].[ManufacturerId] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Country]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Manufacturer]
 

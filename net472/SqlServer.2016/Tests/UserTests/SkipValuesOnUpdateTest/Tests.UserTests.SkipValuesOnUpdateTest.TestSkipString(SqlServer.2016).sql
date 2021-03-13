@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [PR_1598_Update_Table]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [PR_1598_Update_Table]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -47,7 +47,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Jacob'
 DECLARE @Age Int -- Int32
@@ -66,7 +66,7 @@ WHERE
 	[t1].[Id] = @Id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -80,7 +80,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Age Int -- Int32
 SET     @Age = 22
 DECLARE @Id Int -- Int32
@@ -96,7 +96,7 @@ WHERE
 	[t1].[Id] = @Id
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -110,7 +110,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [PR_1598_Update_Table]
 

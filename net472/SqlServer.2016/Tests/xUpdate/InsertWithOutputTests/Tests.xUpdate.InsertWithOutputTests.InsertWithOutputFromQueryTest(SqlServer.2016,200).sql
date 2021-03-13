@@ -1,11 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData]
+DROP TABLE IF EXISTS [TableWithData]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 	CREATE TABLE [TableWithData]
@@ -16,7 +15,7 @@ IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 INSERT INTO [TableWithData]
 (
@@ -37,7 +36,7 @@ VALUES
 (10,-10,N'Str10')
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [DestinationTable]
 (
@@ -47,7 +46,7 @@ CREATE TABLE [DestinationTable]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @param Int -- Int32
 SET     @param = 200
 DECLARE @param_1 Int -- Int32
@@ -75,7 +74,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 SELECT
 	[s].[Id],
@@ -87,13 +86,12 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [DestinationTable]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
-IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData]
+DROP TABLE IF EXISTS [TableWithData]
 

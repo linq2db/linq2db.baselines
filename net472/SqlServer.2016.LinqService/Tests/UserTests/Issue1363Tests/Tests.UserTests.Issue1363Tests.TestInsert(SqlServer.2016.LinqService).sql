@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Issue1363]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [Issue1363]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id UniqueIdentifier -- Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id UniqueIdentifier -- Guid
 SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @testId UniqueIdentifier -- Guid
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id2 UniqueIdentifier -- Guid
@@ -71,7 +71,7 @@ WHERE
 	[_].[required_field] = @id2
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Issue1363]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [Issue1303]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [Issue1303]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @Array_1 VarBinary(10) -- Binary
 SET     @Array_1 = 0x010203
 DECLARE @Binary_1 VarBinary(2) -- Binary
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -45,7 +45,7 @@ WHERE
 	[_].[ID] = 1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @Array_1 VarBinary(10) -- Binary
@@ -61,7 +61,7 @@ WHERE
 	[_].[Array] = @Array_1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @Binary_1 VarBinary(2) -- Binary
@@ -77,7 +77,7 @@ WHERE
 	[_].[Binary] = @Binary_1
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [Issue1303]
 

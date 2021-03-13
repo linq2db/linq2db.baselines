@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [TestNullableParameterTarget]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [TestNullableParameterTarget]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 CREATE TABLE [TestNullableParameterSource]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [TestNullableParameterSource]
 )
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
@@ -52,7 +52,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -86,12 +86,12 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [TestNullableParameterSource]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 
 DROP TABLE [TestNullableParameterTarget]
 

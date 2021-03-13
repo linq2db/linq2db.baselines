@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 3
 
@@ -18,7 +18,7 @@ WHERE
 	[c_1].[ParentID] = [t1].[ParentID]
 
 BeforeExecute
--- SqlServer.2016 SqlServer.2012
+-- SqlServer.2016
 DECLARE @skip Int -- Int32
 SET     @skip = 12
 DECLARE @take Int -- Int32
