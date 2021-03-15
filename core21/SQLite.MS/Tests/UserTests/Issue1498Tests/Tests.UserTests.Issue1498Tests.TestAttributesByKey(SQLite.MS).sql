@@ -89,10 +89,10 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Message]
+DROP TABLE IF EXISTS [Message]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Topic]
+DROP TABLE IF EXISTS [Topic]
 

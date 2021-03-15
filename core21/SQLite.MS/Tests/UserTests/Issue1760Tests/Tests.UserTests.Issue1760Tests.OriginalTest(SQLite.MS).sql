@@ -100,25 +100,25 @@ GROUP BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [c_table2]
+DROP TABLE IF EXISTS [c_table2]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [b_table2]
+DROP TABLE IF EXISTS [b_table2]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [table3]
+DROP TABLE IF EXISTS [table3]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [table2]
+DROP TABLE IF EXISTS [table2]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [table1]
+DROP TABLE IF EXISTS [table1]
 

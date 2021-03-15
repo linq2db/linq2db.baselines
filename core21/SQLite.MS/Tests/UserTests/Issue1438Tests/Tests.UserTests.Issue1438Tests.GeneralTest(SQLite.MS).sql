@@ -45,5 +45,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Issue1438]
+DROP TABLE IF EXISTS [Issue1438]
 

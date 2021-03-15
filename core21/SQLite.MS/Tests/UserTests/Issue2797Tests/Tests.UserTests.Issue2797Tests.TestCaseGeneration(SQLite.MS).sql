@@ -22,5 +22,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 

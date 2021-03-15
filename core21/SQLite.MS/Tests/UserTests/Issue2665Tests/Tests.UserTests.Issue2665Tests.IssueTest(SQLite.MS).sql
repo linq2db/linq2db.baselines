@@ -57,15 +57,15 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ProductAttributeMapping]
+DROP TABLE IF EXISTS [ProductAttributeMapping]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ProductAttributeTable]
+DROP TABLE IF EXISTS [ProductAttributeTable]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ProductTable]
+DROP TABLE IF EXISTS [ProductTable]
 
