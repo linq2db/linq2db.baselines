@@ -23,5 +23,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "Issue1107TB"
+DROP TABLE IF EXISTS "Issue1107TB"
 

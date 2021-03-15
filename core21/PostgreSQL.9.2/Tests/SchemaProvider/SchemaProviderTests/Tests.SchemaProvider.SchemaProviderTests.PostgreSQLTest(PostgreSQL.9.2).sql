@@ -263,5 +263,5 @@ SELECT * FROM testdata."public"."TestTableFunctionSchema"()
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "ArrayTest"
+DROP TABLE IF EXISTS "ArrayTest"
 

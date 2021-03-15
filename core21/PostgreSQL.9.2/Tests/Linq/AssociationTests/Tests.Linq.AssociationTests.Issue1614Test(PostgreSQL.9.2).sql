@@ -41,15 +41,15 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "Lookup"
+DROP TABLE IF EXISTS "Lookup"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "Resource"
+DROP TABLE IF EXISTS "Resource"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "User"
+DROP TABLE IF EXISTS "User"
 

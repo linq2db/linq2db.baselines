@@ -24,5 +24,5 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "Issue2434Table"
+DROP TABLE IF EXISTS "Issue2434Table"
 
