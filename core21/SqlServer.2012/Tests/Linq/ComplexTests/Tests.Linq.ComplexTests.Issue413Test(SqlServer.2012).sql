@@ -194,15 +194,18 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [T3]
+IF (OBJECT_ID(N'[T3]', N'U') IS NOT NULL)
+	DROP TABLE [T3]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [T2]
+IF (OBJECT_ID(N'[T2]', N'U') IS NOT NULL)
+	DROP TABLE [T2]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [T1]
+IF (OBJECT_ID(N'[T1]', N'U') IS NOT NULL)
+	DROP TABLE [T1]
 
