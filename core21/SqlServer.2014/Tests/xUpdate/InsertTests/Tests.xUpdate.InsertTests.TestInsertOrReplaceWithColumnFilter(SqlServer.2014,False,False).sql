@@ -119,5 +119,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [TestInsertOrReplaceTable]
+IF (OBJECT_ID(N'[TestInsertOrReplaceTable]', N'U') IS NOT NULL)
+	DROP TABLE [TestInsertOrReplaceTable]
 
