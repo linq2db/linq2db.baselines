@@ -57,5 +57,12 @@ ORDER BY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "CreateTableTypes"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "CreateTableTypes"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

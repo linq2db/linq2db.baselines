@@ -1036,7 +1036,14 @@ SELECT * FROM dual
 BeforeExecute
 --  Oracle.Managed Oracle12
 
-DROP TABLE "OracleBulkCopyTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "OracleBulkCopyTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 --  Oracle.Managed Oracle12

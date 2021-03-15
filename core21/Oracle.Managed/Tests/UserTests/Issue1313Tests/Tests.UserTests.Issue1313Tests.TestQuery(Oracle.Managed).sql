@@ -29,5 +29,12 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "ValueItem"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ValueItem"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

@@ -24,5 +24,12 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Issue1189Customer"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1189Customer"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

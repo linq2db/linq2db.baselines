@@ -53,15 +53,36 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "NestingC"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "NestingC"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "NestingB"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "NestingB"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "NestingA"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "NestingA"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

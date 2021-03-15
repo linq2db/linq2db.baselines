@@ -125,5 +125,12 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "PR_1598_Update_Enum_Table"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "PR_1598_Update_Enum_Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
