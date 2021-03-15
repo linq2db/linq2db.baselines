@@ -17,5 +17,5 @@ CREATE TABLE [TestTable]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [TestTable]
+DROP TABLE IF EXISTS [TestTable]
 

@@ -391,15 +391,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [RateLineItem]
+DROP TABLE IF EXISTS [RateLineItem]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [RateLines]
+DROP TABLE IF EXISTS [RateLines]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [RateEntry]
+DROP TABLE IF EXISTS [RateEntry]
 

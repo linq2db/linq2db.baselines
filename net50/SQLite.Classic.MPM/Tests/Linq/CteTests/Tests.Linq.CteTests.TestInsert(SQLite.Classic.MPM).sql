@@ -73,5 +73,5 @@ ORDER BY
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
 

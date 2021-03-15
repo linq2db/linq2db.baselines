@@ -47,15 +47,15 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Table860_3]
+DROP TABLE IF EXISTS [Table860_3]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Table860_2]
+DROP TABLE IF EXISTS [Table860_2]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Table860_1]
+DROP TABLE IF EXISTS [Table860_1]
 

@@ -83,10 +83,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [stVersions]
+DROP TABLE IF EXISTS [stVersions]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [stLinks]
+DROP TABLE IF EXISTS [stLinks]
 

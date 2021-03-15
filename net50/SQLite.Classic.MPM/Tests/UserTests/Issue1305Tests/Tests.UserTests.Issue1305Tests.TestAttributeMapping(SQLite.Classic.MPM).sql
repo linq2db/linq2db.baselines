@@ -18,5 +18,5 @@ CREATE TABLE [ColumnOrderTest]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [ColumnOrderTest]
+DROP TABLE IF EXISTS [ColumnOrderTest]
 

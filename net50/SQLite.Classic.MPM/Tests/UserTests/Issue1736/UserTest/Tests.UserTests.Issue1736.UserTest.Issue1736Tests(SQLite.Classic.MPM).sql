@@ -232,45 +232,45 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [InventoryResourceDTO]
+DROP TABLE IF EXISTS [InventoryResourceDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [WmsLoadCarrierDTO]
+DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [WmsResourcePointDTO]
+DROP TABLE IF EXISTS [WmsResourcePointDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [RefResPointAisleDTO]
+DROP TABLE IF EXISTS [RefResPointAisleDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [AisleDTO]
+DROP TABLE IF EXISTS [AisleDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [RefOutfeedTransportOrderResourceDTO]
+DROP TABLE IF EXISTS [RefOutfeedTransportOrderResourceDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [RefResourceStorageShelfDTO]
+DROP TABLE IF EXISTS [RefResourceStorageShelfDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [ChannelDTO]
+DROP TABLE IF EXISTS [ChannelDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [StorageShelfDTO]
+DROP TABLE IF EXISTS [StorageShelfDTO]
 

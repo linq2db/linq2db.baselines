@@ -81,10 +81,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Transaction]
+DROP TABLE IF EXISTS [Transaction]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Account]
+DROP TABLE IF EXISTS [Account]
 

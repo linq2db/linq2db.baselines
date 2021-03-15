@@ -34,10 +34,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Books]
+DROP TABLE IF EXISTS [Books]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Authors]
+DROP TABLE IF EXISTS [Authors]
 

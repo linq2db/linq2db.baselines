@@ -56,5 +56,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Parent564]
+DROP TABLE IF EXISTS [Parent564]
 

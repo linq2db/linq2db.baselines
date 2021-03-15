@@ -107,12 +107,12 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [InvoiceReferenceNumber]
+DROP TABLE IF EXISTS [InvoiceReferenceNumber]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [InvoiceLineItem]
+DROP TABLE IF EXISTS [InvoiceLineItem]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

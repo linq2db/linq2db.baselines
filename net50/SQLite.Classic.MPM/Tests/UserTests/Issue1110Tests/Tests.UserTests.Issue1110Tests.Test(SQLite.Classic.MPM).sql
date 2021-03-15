@@ -30,5 +30,5 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Issue1110TB]
+DROP TABLE IF EXISTS [Issue1110TB]
 
