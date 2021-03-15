@@ -83,5 +83,5 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `xxPerson`
+DROP TABLE IF EXISTS `xxPerson`
 

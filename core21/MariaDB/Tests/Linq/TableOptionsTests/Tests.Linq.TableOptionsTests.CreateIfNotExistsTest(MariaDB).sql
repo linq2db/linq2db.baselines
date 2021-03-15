@@ -47,5 +47,5 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `CreateIfNotExistsTable`
+DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 

@@ -95,10 +95,10 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `TaskStage`
+DROP TABLE IF EXISTS `TaskStage`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `Task`
+DROP TABLE IF EXISTS `Task`
 

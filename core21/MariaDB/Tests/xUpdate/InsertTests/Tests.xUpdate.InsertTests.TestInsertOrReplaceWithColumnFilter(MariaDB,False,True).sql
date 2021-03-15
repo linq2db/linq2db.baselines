@@ -105,5 +105,5 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `TestInsertOrReplaceTable`
+DROP TABLE IF EXISTS `TestInsertOrReplaceTable`
 

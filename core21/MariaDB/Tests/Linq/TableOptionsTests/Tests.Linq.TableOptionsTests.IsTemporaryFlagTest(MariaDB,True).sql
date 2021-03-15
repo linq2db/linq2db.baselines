@@ -19,5 +19,5 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `IsTemporaryTable`
+DROP TABLE IF EXISTS `IsTemporaryTable`
 

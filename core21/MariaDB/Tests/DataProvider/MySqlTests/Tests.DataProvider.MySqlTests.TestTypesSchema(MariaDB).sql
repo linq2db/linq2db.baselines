@@ -152,5 +152,5 @@ SELECT
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `TestSchemaTypesTable`
+DROP TABLE IF EXISTS `TestSchemaTypesTable`
 

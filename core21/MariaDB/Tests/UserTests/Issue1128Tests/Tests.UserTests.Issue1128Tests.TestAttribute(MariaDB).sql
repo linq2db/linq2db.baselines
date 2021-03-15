@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `AttributeBase`
+DROP TABLE IF EXISTS `AttributeBase`
 

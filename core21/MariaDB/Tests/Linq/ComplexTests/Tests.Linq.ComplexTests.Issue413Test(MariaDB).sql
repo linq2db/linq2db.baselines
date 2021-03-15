@@ -194,15 +194,15 @@ ORDER BY
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `T3`
+DROP TABLE IF EXISTS `T3`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `T2`
+DROP TABLE IF EXISTS `T2`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `T1`
+DROP TABLE IF EXISTS `T1`
 
