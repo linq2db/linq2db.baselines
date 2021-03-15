@@ -77,5 +77,5 @@ SET
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [TestTable]
+DROP TABLE IF EXISTS [TestTable]
 

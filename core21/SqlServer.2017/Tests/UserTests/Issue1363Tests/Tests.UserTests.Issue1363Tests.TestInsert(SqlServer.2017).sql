@@ -73,5 +73,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Issue1363]
+DROP TABLE IF EXISTS [Issue1363]
 

@@ -37,5 +37,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [ReviewIndexes]
+DROP TABLE IF EXISTS [ReviewIndexes]
 

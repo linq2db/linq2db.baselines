@@ -121,15 +121,15 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Assignments]
+DROP TABLE IF EXISTS [Assignments]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [FirmInfo]
+DROP TABLE IF EXISTS [FirmInfo]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Requests]
+DROP TABLE IF EXISTS [Requests]
 
