@@ -192,15 +192,24 @@ ORDER BY
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE T3
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T3')) THEN
+		EXECUTE STATEMENT 'DROP TABLE T3';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE T2
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T2')) THEN
+		EXECUTE STATEMENT 'DROP TABLE T2';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE T1
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T1')) THEN
+		EXECUTE STATEMENT 'DROP TABLE T1';
+END
 

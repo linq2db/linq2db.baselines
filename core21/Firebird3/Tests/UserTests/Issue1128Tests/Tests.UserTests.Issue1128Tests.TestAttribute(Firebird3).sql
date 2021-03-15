@@ -25,5 +25,8 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "AttributeBase"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AttributeBase')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "AttributeBase"';
+END
 

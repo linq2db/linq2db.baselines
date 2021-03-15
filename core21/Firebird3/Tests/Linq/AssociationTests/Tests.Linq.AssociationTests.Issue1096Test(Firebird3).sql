@@ -102,10 +102,16 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Issue1096TaskStage"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096TaskStage')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1096TaskStage"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Issue1096Task"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096Task')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1096Task"';
+END
 

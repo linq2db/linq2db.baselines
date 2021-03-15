@@ -219,5 +219,8 @@ SET     @RETURN_VALUE = 0
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "ColumnOrderTest"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ColumnOrderTest')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ColumnOrderTest"';
+END
 

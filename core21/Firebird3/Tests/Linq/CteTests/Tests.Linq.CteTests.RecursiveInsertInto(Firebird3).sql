@@ -122,7 +122,10 @@ ORDER BY
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "HierarchyData"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'HierarchyData')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "HierarchyData"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

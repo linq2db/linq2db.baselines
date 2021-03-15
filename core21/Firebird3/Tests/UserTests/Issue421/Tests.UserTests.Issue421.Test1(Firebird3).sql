@@ -68,5 +68,8 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "BlobClass"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BlobClass')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "BlobClass"';
+END
 
