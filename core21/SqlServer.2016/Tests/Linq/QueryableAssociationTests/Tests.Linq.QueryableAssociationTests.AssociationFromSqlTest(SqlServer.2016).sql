@@ -18,10 +18,10 @@ CREATE TABLE [LargeNumberEntity]
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [LargeNumberEntity]
+DROP TABLE IF EXISTS [LargeNumberEntity]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [FewNumberEntity]
+DROP TABLE IF EXISTS [FewNumberEntity]
 

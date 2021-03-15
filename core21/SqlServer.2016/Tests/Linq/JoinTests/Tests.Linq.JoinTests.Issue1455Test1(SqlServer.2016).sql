@@ -94,25 +94,25 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Flat]
+DROP TABLE IF EXISTS [Flat]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Nomin]
+DROP TABLE IF EXISTS [Nomin]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Trade]
+DROP TABLE IF EXISTS [Trade]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [AuditAlert]
+DROP TABLE IF EXISTS [AuditAlert]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Alert]
+DROP TABLE IF EXISTS [Alert]
 

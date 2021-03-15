@@ -29,5 +29,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [ValueItem]
+DROP TABLE IF EXISTS [ValueItem]
 

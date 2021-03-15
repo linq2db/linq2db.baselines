@@ -58,5 +58,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Parent564]
+DROP TABLE IF EXISTS [Parent564]
 

@@ -45,5 +45,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [PR_1598_Insert_Fluent_Table]
+DROP TABLE IF EXISTS [PR_1598_Insert_Fluent_Table]
 

@@ -58,10 +58,10 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [dbo].[OrderItems]
+DROP TABLE IF EXISTS [dbo].[OrderItems]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [dbo].[Orders]
+DROP TABLE IF EXISTS [dbo].[Orders]
 

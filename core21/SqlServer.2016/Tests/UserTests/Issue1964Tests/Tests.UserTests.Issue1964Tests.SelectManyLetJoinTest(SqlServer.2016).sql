@@ -80,10 +80,10 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [dbo].[BranchInfo]
+DROP TABLE IF EXISTS [dbo].[BranchInfo]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [dbo].[Attachment]
+DROP TABLE IF EXISTS [dbo].[Attachment]
 
