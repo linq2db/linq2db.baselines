@@ -124,10 +124,10 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "WmsLoadCarrierDTO"
+DROP TABLE IF EXISTS "WmsLoadCarrierDTO"
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "InventoryResourceDTO"
+DROP TABLE IF EXISTS "InventoryResourceDTO"
 

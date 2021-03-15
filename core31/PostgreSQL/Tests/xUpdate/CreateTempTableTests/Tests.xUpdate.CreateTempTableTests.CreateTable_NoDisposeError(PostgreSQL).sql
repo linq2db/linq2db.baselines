@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-CREATE TEMPORARY TABLE "IsTemporaryTable"
+DROP TABLE IF EXISTS "TempTable"
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+CREATE TEMPORARY TABLE "TempTable"
 (
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
+	"ID" Int NOT NULL
 )
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
-	t1."Value"
-FROM
-	"IsTemporaryTable" t1
+DROP TABLE "TempTable"
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "IsTemporaryTable"
+DROP TABLE IF EXISTS "TempTable"
 

@@ -57,5 +57,5 @@ FROM
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "SampleClass"
+DROP TABLE IF EXISTS "SampleClass"
 
