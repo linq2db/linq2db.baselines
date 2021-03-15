@@ -37,10 +37,24 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Relationship1711"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Relationship1711"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "Entity1711"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Entity1711"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

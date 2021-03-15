@@ -22,5 +22,12 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "SampleClass"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

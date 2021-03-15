@@ -28,5 +28,12 @@ DELETE WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "ReviewIndexes"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ReviewIndexes"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
