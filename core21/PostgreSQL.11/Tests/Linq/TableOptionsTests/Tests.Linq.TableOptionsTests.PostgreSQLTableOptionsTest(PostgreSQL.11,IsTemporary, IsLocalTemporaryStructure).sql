@@ -11,5 +11,5 @@ ON COMMIT PRESERVE ROWS
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TestTable"
+DROP TABLE IF EXISTS "TestTable"
 
