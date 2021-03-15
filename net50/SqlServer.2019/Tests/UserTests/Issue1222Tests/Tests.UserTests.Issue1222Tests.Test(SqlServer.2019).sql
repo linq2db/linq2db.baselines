@@ -87,10 +87,10 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [stVersions]
+DROP TABLE IF EXISTS [stVersions]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [stLinks]
+DROP TABLE IF EXISTS [stLinks]
 

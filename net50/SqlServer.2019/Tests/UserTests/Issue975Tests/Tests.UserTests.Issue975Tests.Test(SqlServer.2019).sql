@@ -157,15 +157,15 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Assignments]
+DROP TABLE IF EXISTS [Assignments]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [TaskStages]
+DROP TABLE IF EXISTS [TaskStages]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Tasks]
+DROP TABLE IF EXISTS [Tasks]
 

@@ -72,7 +72,7 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [sample_other_class]
+DROP TABLE IF EXISTS [sample_other_class]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

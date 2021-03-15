@@ -35,5 +35,5 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [AllTypesCustomMaxLength]
+DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
 

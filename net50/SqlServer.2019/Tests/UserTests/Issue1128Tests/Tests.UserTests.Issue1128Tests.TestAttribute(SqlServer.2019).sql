@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [AttributeBase]
+DROP TABLE IF EXISTS [AttributeBase]
 

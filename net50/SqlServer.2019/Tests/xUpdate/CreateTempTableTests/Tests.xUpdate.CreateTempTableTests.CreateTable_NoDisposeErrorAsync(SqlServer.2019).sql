@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019 SqlServer.2017 (asynchronously)
 
 DROP TABLE IF EXISTS [TempTable]
 
@@ -14,22 +14,10 @@ CREATE TABLE [#TempTable]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
 
-INSERT INTO [#TempTable]
-(
-	[ID]
-)
-SELECT
-	[p].[ParentID]
-FROM
-	[Parent] [p]
+DROP TABLE [#TempTable]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
 
 DROP TABLE IF EXISTS [#TempTable]
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-
-DROP TABLE [TempTable]
 

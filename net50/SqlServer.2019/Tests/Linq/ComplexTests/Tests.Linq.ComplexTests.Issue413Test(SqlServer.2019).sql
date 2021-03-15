@@ -194,15 +194,15 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [T3]
+DROP TABLE IF EXISTS [T3]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [T2]
+DROP TABLE IF EXISTS [T2]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [T1]
+DROP TABLE IF EXISTS [T1]
 

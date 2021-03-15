@@ -1,33 +1,23 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [ValueItem]
+DROP TABLE IF EXISTS [TempTable]
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+CREATE TABLE [#TempTable]
 (
-	[Value] Int NOT NULL
+	[ID] Int NOT NULL
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-INSERT INTO [ValueItem]
-(
-	[Value]
-)
-VALUES
-(
-	123
-)
+DROP TABLE [#TempTable]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-SELECT
-	[row_1].[Value]
-FROM
-	[ValueItem] [row_1]
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-
-DROP TABLE IF EXISTS [ValueItem]
+DROP TABLE IF EXISTS [#TempTable]
 
