@@ -1,27 +1,23 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-CREATE TABLE [FewNumberEntity]
+DROP TABLE IF EXISTS [TempTable]
+
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+CREATE TABLE [#TempTable]
 (
-	[Id]     Int NOT NULL,
-	[UserId] Int NOT NULL
+	[ID] Int NOT NULL
 )
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-CREATE TABLE [LargeNumberEntity]
-(
-	[Id] Int NOT NULL
-)
+DROP TABLE [#TempTable]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE IF EXISTS [LargeNumberEntity]
-
-BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
-
-DROP TABLE IF EXISTS [FewNumberEntity]
+DROP TABLE IF EXISTS [#TempTable]
 

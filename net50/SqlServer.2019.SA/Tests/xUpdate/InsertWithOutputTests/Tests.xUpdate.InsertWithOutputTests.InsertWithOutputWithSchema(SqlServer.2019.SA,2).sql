@@ -37,5 +37,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [TestSchema].[TableWithDataAndSchema]
+DROP TABLE IF EXISTS [TestSchema].[TableWithDataAndSchema]
 

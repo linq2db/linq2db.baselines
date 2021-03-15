@@ -23,5 +23,5 @@ SELECT
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Issue1982Table]
+DROP TABLE IF EXISTS [Issue1982Table]
 
