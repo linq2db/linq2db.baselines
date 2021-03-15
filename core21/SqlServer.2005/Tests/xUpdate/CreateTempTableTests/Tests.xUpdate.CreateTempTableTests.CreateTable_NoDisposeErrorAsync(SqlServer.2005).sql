@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
@@ -15,23 +15,11 @@ CREATE TABLE [#TempTable]
 BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
-INSERT INTO [#TempTable]
-(
-	[ID]
-)
-SELECT
-	[p].[ParentID]
-FROM
-	[Parent] [p]
+DROP TABLE [#TempTable]
 
 BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [#TempTable]
-
-BeforeExecute
--- SqlServer.2005
-
-DROP TABLE [TempTable]
 
