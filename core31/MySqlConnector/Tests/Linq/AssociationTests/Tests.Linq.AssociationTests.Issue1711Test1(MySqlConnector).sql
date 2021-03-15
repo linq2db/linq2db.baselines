@@ -37,10 +37,10 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Relationship1711`
+DROP TABLE IF EXISTS `Relationship1711`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Entity1711`
+DROP TABLE IF EXISTS `Entity1711`
 

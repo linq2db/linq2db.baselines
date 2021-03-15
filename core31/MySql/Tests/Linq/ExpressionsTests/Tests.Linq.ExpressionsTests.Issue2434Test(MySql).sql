@@ -24,5 +24,5 @@ ORDER BY
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Issue2434Table`
+DROP TABLE IF EXISTS `Issue2434Table`
 

@@ -196,5 +196,5 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `ValueConversion`
+DROP TABLE IF EXISTS `ValueConversion`
 

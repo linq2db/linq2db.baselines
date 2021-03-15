@@ -42,10 +42,10 @@ GROUP BY
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `person649`
+DROP TABLE IF EXISTS `person649`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `activity649`
+DROP TABLE IF EXISTS `activity649`
 

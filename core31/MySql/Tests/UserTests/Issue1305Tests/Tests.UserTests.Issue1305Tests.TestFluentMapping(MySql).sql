@@ -319,5 +319,5 @@ SET     @param1 = NULL
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `FluentMapping`
+DROP TABLE IF EXISTS `FluentMapping`
 

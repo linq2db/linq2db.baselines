@@ -31,10 +31,10 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `i1084_student`
+DROP TABLE IF EXISTS `i1084_student`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `i1084_person`
+DROP TABLE IF EXISTS `i1084_person`
 

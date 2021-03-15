@@ -291,5 +291,5 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `TypeConvertTable`
+DROP TABLE IF EXISTS `TypeConvertTable`
 

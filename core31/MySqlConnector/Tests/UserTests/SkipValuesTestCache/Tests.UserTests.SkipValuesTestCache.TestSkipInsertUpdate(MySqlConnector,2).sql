@@ -82,5 +82,5 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `PR_1598_Insert_Table_Cache`
+DROP TABLE IF EXISTS `PR_1598_Insert_Table_Cache`
 

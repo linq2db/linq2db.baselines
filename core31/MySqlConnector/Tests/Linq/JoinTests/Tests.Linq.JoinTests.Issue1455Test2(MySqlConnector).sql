@@ -94,25 +94,25 @@ GROUP BY
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Flat`
+DROP TABLE IF EXISTS `Flat`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Nomin`
+DROP TABLE IF EXISTS `Nomin`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Trade`
+DROP TABLE IF EXISTS `Trade`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `AuditAlert`
+DROP TABLE IF EXISTS `AuditAlert`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Alert`
+DROP TABLE IF EXISTS `Alert`
 

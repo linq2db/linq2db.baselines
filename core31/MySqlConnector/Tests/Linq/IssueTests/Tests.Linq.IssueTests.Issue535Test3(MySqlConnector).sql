@@ -28,5 +28,5 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `CustomerBase`
+DROP TABLE IF EXISTS `CustomerBase`
 

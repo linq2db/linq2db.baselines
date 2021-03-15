@@ -110,5 +110,5 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `TestInsertOrReplaceTable`
+DROP TABLE IF EXISTS `TestInsertOrReplaceTable`
 
