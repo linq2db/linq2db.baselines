@@ -77,15 +77,15 @@ FROM
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "O3"
+DROP TABLE IF EXISTS "O3"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "O2"
+DROP TABLE IF EXISTS "O2"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "O1"
+DROP TABLE IF EXISTS "O1"
 

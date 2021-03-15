@@ -112,7 +112,7 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "HierarchyData"
+DROP TABLE IF EXISTS "HierarchyData"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

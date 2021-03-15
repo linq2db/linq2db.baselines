@@ -83,5 +83,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "PR_1598_SkipCustom_Table"
+DROP TABLE IF EXISTS "PR_1598_SkipCustom_Table"
 
