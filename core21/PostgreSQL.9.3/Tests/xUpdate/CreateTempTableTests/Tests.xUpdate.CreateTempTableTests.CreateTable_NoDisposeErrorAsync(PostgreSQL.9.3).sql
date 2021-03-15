@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
+-- PostgreSQL.9.3 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 
@@ -15,22 +15,10 @@ ON COMMIT PRESERVE ROWS
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL (asynchronously)
 
-INSERT INTO "TempTable"
-(
-	"ID"
-)
-SELECT
-	p."ParentID"
-FROM
-	"Parent" p
+DROP TABLE "TempTable"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
-DROP TABLE "TempTable"
 

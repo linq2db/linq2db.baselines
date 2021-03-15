@@ -101,20 +101,20 @@ SET
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "billing_TempReading"
+DROP TABLE IF EXISTS "billing_TempReading"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "billing_DevReadingType"
+DROP TABLE IF EXISTS "billing_DevReadingType"
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE billing_devices
+DROP TABLE IF EXISTS billing_devices
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE billing_devtypes
+DROP TABLE IF EXISTS billing_devtypes
 

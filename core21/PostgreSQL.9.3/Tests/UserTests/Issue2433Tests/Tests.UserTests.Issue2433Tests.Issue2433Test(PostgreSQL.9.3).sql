@@ -15,5 +15,5 @@ INSERT BULK "InventoryResourceDTO"(Id, Status, ResourceID, ModifiedTimeStamp
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "InventoryResourceDTO"
+DROP TABLE IF EXISTS "InventoryResourceDTO"
 

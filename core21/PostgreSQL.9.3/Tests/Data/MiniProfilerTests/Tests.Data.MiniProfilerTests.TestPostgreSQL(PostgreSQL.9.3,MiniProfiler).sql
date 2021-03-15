@@ -342,7 +342,7 @@ CREATE TABLE "TestPostgreSQLTypeName"
 BeforeExecute
 --  PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "TestPostgreSQLTypeName"
+DROP TABLE IF EXISTS "TestPostgreSQLTypeName"
 
 BeforeExecute
 --  PostgreSQL.9.3 PostgreSQL

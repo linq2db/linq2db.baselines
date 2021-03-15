@@ -28,5 +28,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "User"
+DROP TABLE IF EXISTS "User"
 

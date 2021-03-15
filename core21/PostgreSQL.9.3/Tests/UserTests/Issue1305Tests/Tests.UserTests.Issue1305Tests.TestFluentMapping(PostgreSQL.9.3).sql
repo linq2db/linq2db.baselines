@@ -284,5 +284,5 @@ SELECT * FROM testdata."public"."TestTableFunctionSchema"()
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "FluentMapping"
+DROP TABLE IF EXISTS "FluentMapping"
 
