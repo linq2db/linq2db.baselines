@@ -255,5 +255,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TypeConvertTable
+DROP TABLE IF EXISTS TypeConvertTable
 

@@ -41,15 +41,15 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Lookup
+DROP TABLE IF EXISTS Lookup
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE "Resource"
+DROP TABLE IF EXISTS "Resource"
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE "User"
+DROP TABLE IF EXISTS "User"
 

@@ -40,5 +40,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TestTable
+DROP TABLE IF EXISTS TestTable
 

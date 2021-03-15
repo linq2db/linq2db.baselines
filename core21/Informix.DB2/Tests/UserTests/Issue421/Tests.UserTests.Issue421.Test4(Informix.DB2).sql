@@ -50,5 +50,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE BlobClass
+DROP TABLE IF EXISTS BlobClass
 

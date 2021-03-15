@@ -42,10 +42,10 @@ GROUP BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE person649
+DROP TABLE IF EXISTS person649
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE activity649
+DROP TABLE IF EXISTS activity649
 

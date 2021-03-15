@@ -96,5 +96,5 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE CacheTestTable
+DROP TABLE IF EXISTS CacheTestTable
 

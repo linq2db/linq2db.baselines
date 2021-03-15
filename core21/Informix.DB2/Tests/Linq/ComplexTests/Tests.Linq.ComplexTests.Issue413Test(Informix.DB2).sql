@@ -192,15 +192,15 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE T3
+DROP TABLE IF EXISTS T3
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE T2
+DROP TABLE IF EXISTS T2
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE T1
+DROP TABLE IF EXISTS T1
 

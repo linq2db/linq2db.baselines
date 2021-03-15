@@ -35,5 +35,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE T1351Model
+DROP TABLE IF EXISTS T1351Model
 

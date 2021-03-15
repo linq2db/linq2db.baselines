@@ -21,5 +21,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE SampleClass
+DROP TABLE IF EXISTS SampleClass
 

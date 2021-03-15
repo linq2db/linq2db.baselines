@@ -90,10 +90,10 @@ GROUP BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TaskStage
+DROP TABLE IF EXISTS TaskStage
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE "Task"
+DROP TABLE IF EXISTS "Task"
 

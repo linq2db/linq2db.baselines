@@ -31,5 +31,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE DateTimeTestTable
+DROP TABLE IF EXISTS DateTimeTestTable
 

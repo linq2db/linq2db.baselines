@@ -44,5 +44,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Issue1438
+DROP TABLE IF EXISTS Issue1438
 
