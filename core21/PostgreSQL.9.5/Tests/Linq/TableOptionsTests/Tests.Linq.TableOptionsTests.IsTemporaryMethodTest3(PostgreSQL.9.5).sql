@@ -41,5 +41,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TestTable"
+DROP TABLE IF EXISTS "TestTable"
 

@@ -35,10 +35,10 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TestEqualsTable2"
+DROP TABLE IF EXISTS "TestEqualsTable2"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TestEqualsTable1"
+DROP TABLE IF EXISTS "TestEqualsTable1"
 

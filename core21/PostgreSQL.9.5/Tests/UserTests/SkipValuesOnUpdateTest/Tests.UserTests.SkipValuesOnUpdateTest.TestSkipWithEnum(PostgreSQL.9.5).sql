@@ -125,5 +125,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "PR_1598_Update_Enum_Table"
+DROP TABLE IF EXISTS "PR_1598_Update_Enum_Table"
 

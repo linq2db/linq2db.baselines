@@ -194,15 +194,15 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "T3"
+DROP TABLE IF EXISTS "T3"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "T2"
+DROP TABLE IF EXISTS "T2"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "T1"
+DROP TABLE IF EXISTS "T1"
 
