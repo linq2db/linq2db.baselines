@@ -34,10 +34,16 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Books"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Books')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Books"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Authors"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Authors')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Authors"';
+END
 

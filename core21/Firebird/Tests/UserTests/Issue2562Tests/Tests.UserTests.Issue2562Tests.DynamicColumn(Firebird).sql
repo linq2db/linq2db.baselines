@@ -63,10 +63,16 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "ExternalId2562"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ExternalId2562')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ExternalId2562"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Person2562"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Person2562')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Person2562"';
+END
 

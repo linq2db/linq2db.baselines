@@ -193,5 +193,8 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "ValueConversion"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ValueConversion"';
+END
 

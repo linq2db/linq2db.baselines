@@ -53,15 +53,24 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "NestingC"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NestingC')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "NestingC"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "NestingB"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NestingB')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "NestingB"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "NestingA"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NestingA')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "NestingA"';
+END
 
