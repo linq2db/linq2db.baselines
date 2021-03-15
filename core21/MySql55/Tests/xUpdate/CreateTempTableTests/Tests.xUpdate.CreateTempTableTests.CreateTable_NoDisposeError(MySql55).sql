@@ -1,33 +1,23 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `ValueItem`
+DROP TABLE IF EXISTS `TempTable`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TEMPORARY TABLE `TempTable`
 (
-	`Value` INT NOT NULL
+	`ID` INT NOT NULL
 )
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-INSERT INTO `ValueItem`
-(
-	`Value`
-)
-VALUES
-(
-	123
-)
+DROP TABLE `TempTable`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`row_1`.`Value`
-FROM
-	`ValueItem` `row_1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DROP TABLE IF EXISTS `ValueItem`
+DROP TABLE IF EXISTS `TempTable`
 

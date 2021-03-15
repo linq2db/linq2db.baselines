@@ -112,10 +112,10 @@ TRUNCATE TABLE `temp_table2`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `temp_table2`
+DROP TABLE IF EXISTS `temp_table2`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `temp_table1`
+DROP TABLE IF EXISTS `temp_table1`
 

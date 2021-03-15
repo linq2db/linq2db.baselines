@@ -41,15 +41,15 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Lookup`
+DROP TABLE IF EXISTS `Lookup`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Resource`
+DROP TABLE IF EXISTS `Resource`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `User`
+DROP TABLE IF EXISTS `User`
 
