@@ -11,9 +11,9 @@ FROM
 	Person p
 		INNER JOIN (
 			SELECT FIRST 1
-				'Doe' as Item
+				'Doe' as c1
 			FROM SYSTABLES
-		) n ON p.LastName = n.Item
+		) n ON p.LastName = n.c1
 
 BeforeExecute
 -- SQLite.Default SQLite.MS SQLite
