@@ -42,17 +42,17 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[r].[Value_1]
+	[r].[Value1]
 FROM
 	(
 		SELECT
 			[t1].[Id],
-			[t1].[Value_1]
+			[t1].[Value1]
 		FROM
 			(
 				SELECT
 					[t].[Id],
-					[t].[Value1] as [Value_1]
+					[t].[Value1]
 				FROM
 					[SampleData] [t]
 				WHERE
@@ -60,7 +60,7 @@ FROM
 				EXCEPT
 				SELECT
 					[t_1].[Id],
-					[t_1].[Value2] / 10 as [Value_1]
+					[t_1].[Value2] / 10 as [Value1]
 				FROM
 					[SampleData] [t_1]
 				WHERE
@@ -69,7 +69,7 @@ FROM
 		EXCEPT
 		SELECT
 			[t_2].[Id],
-			[t_2].[Value1] as [Value_1]
+			[t_2].[Value1]
 		FROM
 			[SampleData] [t_2]
 		WHERE

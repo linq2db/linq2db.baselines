@@ -179,6 +179,7 @@ DECLARE @uptoDate  -- DateTime
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
 SELECT DISTINCT
+	[ins].[SourceInstrumentCode],
 	[ins].[SourceInstrumentCode]
 FROM
 	[T1] [_]

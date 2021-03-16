@@ -32,20 +32,20 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[v].[Value2]
+	[v].[c2]
 FROM
 	(
 		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,[t].[Value] || ' Day') as [Value1],
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,2 || ' Day') as [Value2]
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,[t].[Value] || ' Day') as [c1],
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,2 || ' Day') as [c2]
 		FROM
 			[SampleClass] [t]
 		WHERE
 			[t].[Value] = 1
 		UNION
 		SELECT
-			[t1].[Value1],
-			[t1].[Value2]
+			[t1].[Value1] as [c1],
+			[t1].[Value2] as [c2]
 		FROM
 			(
 				SELECT

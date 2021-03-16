@@ -2,20 +2,20 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t3].[month_1],
-	[t3].[year_1],
+	[t3].[c1],
+	[t3].[c2],
 	[t3].[int_1]
 FROM
 	(
 		SELECT
-			[t2].[month_1],
-			[t2].[year_1],
+			[t2].[c1],
+			[t2].[c2],
 			[t2].[int_1]
 		FROM
 			(
 				SELECT
-					[t1].[c1] as [month_1],
-					[t1].[c2] as [year_1],
+					[t1].[c1],
+					[t1].[c2],
 					1 as [int_1]
 				FROM
 					(
@@ -31,8 +31,8 @@ FROM
 			) [t2]
 		UNION
 		SELECT
-			[_].[SmallIntValue] as [month_1],
-			[_].[SmallIntValue] as [year_1],
+			[_].[SmallIntValue] as [c1],
+			[_].[SmallIntValue] as [c2],
 			3 as [int_1]
 		FROM
 			[LinqDataTypes] [_]

@@ -299,6 +299,7 @@ SELECT
 	[cp].[Zip_Plus_4],
 	[cd].[Contract_Id],
 	[cd].[Type_Code],
+	[cd].[Effective_Date],
 	[cd].[Effective_Date]
 FROM
 	[Contract_Distributor_Agent] [cda]

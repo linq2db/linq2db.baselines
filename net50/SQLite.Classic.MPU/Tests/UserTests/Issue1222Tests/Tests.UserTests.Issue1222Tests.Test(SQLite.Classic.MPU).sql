@@ -39,46 +39,46 @@ SELECT
 FROM
 	(
 		SELECT
-			[link_1].[inIdChild] as [Link_1],
-			[link_1].[inId] as [Link_2],
-			[link_1].[inIdParent] as [Link_3],
-			[link_1].[inIdChild] as [Link_4],
-			[link_1].[inIdTypeRel] as [Link_5],
-			[link_1].[inMaxQuantity] as [Link_6],
-			[link_1].[inMinQuantity] as [Link_7],
-			[link_1].[inIdMeasure] as [Link_8],
-			[link_1].[inIdUnit] as [Link_9],
-			[link_1].[State] as [Link_10],
-			[link_1].[dtModified] as [Link_11],
-			[link_1].[inIdOrgOwner] as [Link_12],
-			[link_1].[dtSynchDate] as [Link_13],
-			[link_1].[stGUID] as [Link_14]
+			[link_1].[inIdChild],
+			[link_1].[inId],
+			[link_1].[inIdParent],
+			[link_1].[inIdChild] as [inIdChild_1],
+			[link_1].[inIdTypeRel],
+			[link_1].[inMaxQuantity],
+			[link_1].[inMinQuantity],
+			[link_1].[inIdMeasure],
+			[link_1].[inIdUnit],
+			[link_1].[State] as [State_1],
+			[link_1].[dtModified],
+			[link_1].[inIdOrgOwner],
+			[link_1].[dtSynchDate],
+			[link_1].[stGUID]
 		FROM
 			[stLinks] [link_1]
 		WHERE
 			[link_1].[inIdParent] = @parentId
 		UNION ALL
 		SELECT
-			[link_2].[inIdParent] as [Link_1],
-			[link_2].[inId] as [Link_2],
-			[link_2].[inIdParent] as [Link_3],
-			[link_2].[inIdChild] as [Link_4],
-			[link_2].[inIdTypeRel] as [Link_5],
-			[link_2].[inMaxQuantity] as [Link_6],
-			[link_2].[inMinQuantity] as [Link_7],
-			[link_2].[inIdMeasure] as [Link_8],
-			[link_2].[inIdUnit] as [Link_9],
-			[link_2].[State] as [Link_10],
-			[link_2].[dtModified] as [Link_11],
-			[link_2].[inIdOrgOwner] as [Link_12],
-			[link_2].[dtSynchDate] as [Link_13],
-			[link_2].[stGUID] as [Link_14]
+			[link_2].[inIdParent] as [inIdChild],
+			[link_2].[inId],
+			[link_2].[inIdParent],
+			[link_2].[inIdChild] as [inIdChild_1],
+			[link_2].[inIdTypeRel],
+			[link_2].[inMaxQuantity],
+			[link_2].[inMinQuantity],
+			[link_2].[inIdMeasure],
+			[link_2].[inIdUnit],
+			[link_2].[State] as [State_1],
+			[link_2].[dtModified],
+			[link_2].[inIdOrgOwner],
+			[link_2].[dtSynchDate],
+			[link_2].[stGUID]
 		FROM
 			[stLinks] [link_2]
 		WHERE
 			[link_2].[inIdChild] = @parentId_1
 	) [u]
-		INNER JOIN [stVersions] [version_1] ON [u].[Link_1] = [version_1].[inId]
+		INNER JOIN [stVersions] [version_1] ON [u].[inIdChild] = [version_1].[inId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

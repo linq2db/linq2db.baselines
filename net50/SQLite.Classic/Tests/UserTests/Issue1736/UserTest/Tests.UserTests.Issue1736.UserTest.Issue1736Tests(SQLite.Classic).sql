@@ -95,63 +95,63 @@ DECLARE @Value_3  -- Guid
 SET     @Value_3 = Cast(x'00000000000000000000000000000000' as blob)
 
 SELECT
-	[cr].[R],
-	[cr].[R_1],
-	[cr].[IR],
-	[cr].[IR_1],
-	[cr].[IR_2],
-	[cr].[IR_3],
-	[cr].[IR_4],
-	[cr].[IR_5],
-	[cr].[C_1],
+	[cr].[Id],
+	[cr].[ResourcePointID],
 	[cr].[SS],
-	[cr].[SS_1],
-	[cr].[SS_2],
+	[cr].[ProductStatus],
+	[cr].[C_2],
+	[cr].[ResourceID],
+	[cr].[MaterialID],
+	[cr].[Status],
+	[cr].[C_1],
+	[cr].[Id_3],
+	[cr].[ChannelID],
+	[cr].[AisleID],
 	[cr].[AisleStatus],
-	[cr].[RP],
-	[cr].[RP_1],
+	[cr].[Id_4],
+	[cr].[IsStoragePlace],
 	[cr].[RefQty],
 	[cr].[MixedStock]
 FROM
 	(
 		SELECT
-			[t1].[R],
-			[t1].[R_1],
-			[t1].[IR],
-			[t1].[IR_1],
-			[t1].[IR_2],
-			[t1].[IR_3],
-			[t1].[IR_4],
-			[t1].[IR_5],
-			[t1].[C_1],
-			[t1].[SS],
-			[t1].[SS_1],
-			[t1].[SS_2],
-			[t1].[AisleStatus],
-			[t1].[RP],
-			[t1].[RP_1],
+			[t1].[Id],
+			[t1].[ResourcePointID],
+			[t1].[Id_1],
+			[t1].[ProductStatus],
+			[t1].[Quantity],
+			[t1].[ResourceID],
+			[t1].[MaterialID],
+			[t1].[Status],
+			[t1].[Id_2] as [C_1],
+			[t1].[Id_3],
+			[t1].[ChannelID],
+			[t1].[AisleID],
+			[t1].[Status_1] as [AisleStatus],
+			[t1].[Id_4],
+			[t1].[IsStoragePlace],
 			[t1].[RefQty],
 			[t1].[MixedStock],
-			NULL as [c1],
-			NULL as [c2]
+			NULL as [C_2],
+			NULL as [SS]
 		FROM
 			(
 				SELECT
-					[r].[Id] as [R],
-					[r].[ResourcePointID] as [R_1],
-					[ir].[Id] as [IR],
-					[ir].[ProductStatus] as [IR_1],
-					[ir].[Quantity] as [IR_2],
-					[ir].[ResourceID] as [IR_3],
-					[ir].[MaterialID] as [IR_4],
-					[ir].[Status] as [IR_5],
-					[c_1].[Id] as [C_1],
-					[ss].[Id] as [SS],
-					[ss].[ChannelID] as [SS_1],
-					[ss].[AisleID] as [SS_2],
-					[aisle].[Status] as [AisleStatus],
-					[rp].[Id] as [RP],
-					[rp].[IsStoragePlace] as [RP_1],
+					[r].[Id],
+					[r].[ResourcePointID],
+					[ir].[Id] as [Id_1],
+					[ir].[ProductStatus],
+					[ir].[Quantity],
+					[ir].[ResourceID],
+					[ir].[MaterialID],
+					[ir].[Status],
+					[c_1].[Id] as [Id_2],
+					[ss].[Id] as [Id_3],
+					[ss].[ChannelID],
+					[ss].[AisleID],
+					[aisle].[Status] as [Status_1],
+					[rp].[Id] as [Id_4],
+					[rp].[IsStoragePlace],
 					Coalesce((
 						SELECT
 							Sum([x].[Quantity])
@@ -181,7 +181,13 @@ FROM
 						)
 							THEN 1
 						ELSE 0
-					END as [MixedStock]
+					END as [MixedStock],
+					[ir].[Quantity] as [Quantity_1],
+					[ir].[Id] as [Id_5],
+					[ir].[ProductStatus] as [ProductStatus_1],
+					[ir].[ResourceID] as [ResourceID_1],
+					[ir].[MaterialID] as [MaterialID_1],
+					[ir].[Status] as [Status_2]
 				FROM
 					[StorageShelfDTO] [ss]
 						INNER JOIN [ChannelDTO] [c_1] ON [ss].[ChannelID] = [c_1].[Id]
@@ -197,25 +203,25 @@ FROM
 			) [t1]
 		UNION
 		SELECT
-			[r_1].[Id] as [R],
-			[r_1].[ResourcePointID] as [R_1],
-			[ir_1].[Id] as [IR],
-			[ir_1].[ProductStatus] as [IR_1],
-			[ir_1].[Quantity] as [IR_2],
-			[ir_1].[ResourceID] as [IR_3],
-			[ir_1].[MaterialID] as [IR_4],
-			[ir_1].[Status] as [IR_5],
+			[r_1].[Id],
+			[r_1].[ResourcePointID],
+			[ir_1].[Id] as [Id_1],
+			[ir_1].[ProductStatus],
+			[ir_1].[Quantity],
+			[ir_1].[ResourceID],
+			[ir_1].[MaterialID],
+			[ir_1].[Status],
 			[rp_1].[Id] as [C_1],
-			NULL as [SS],
-			NULL as [SS_1],
-			NULL as [SS_2],
+			NULL as [Id_3],
+			NULL as [ChannelID],
+			NULL as [AisleID],
 			0 as [AisleStatus],
-			NULL as [RP],
-			[rp_1].[IsStoragePlace] as [RP_1],
+			NULL as [Id_4],
+			[rp_1].[IsStoragePlace],
 			0 as [RefQty],
 			0 as [MixedStock],
-			NULL as [c1],
-			NULL as [c2]
+			NULL as [C_2],
+			NULL as [SS]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
@@ -227,7 +233,7 @@ FROM
 			[ir_1].[Quantity] > 0
 	) [cr]
 WHERE
-	[cr].[IR_2] > [cr].[RefQty]
+	[cr].[C_2] > [cr].[RefQty]
 
 BeforeExecute
 -- SQLite.Classic SQLite

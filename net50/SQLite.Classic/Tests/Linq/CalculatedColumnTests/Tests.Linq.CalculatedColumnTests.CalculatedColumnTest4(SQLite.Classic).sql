@@ -7,7 +7,7 @@ SELECT
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender],
-	[t1].[AsSqlFullName],
+	[t1].[FullName],
 	[t1].[DoctorCount]
 FROM
 	[Doctor] [cp]
@@ -18,6 +18,7 @@ FROM
 				[c_1].[LastName],
 				[c_1].[MiddleName],
 				[c_1].[Gender],
+				[c_1].[LastName] || ', ' || [c_1].[FirstName] as [FullName],
 				[c_1].[LastName] || ', ' || [c_1].[FirstName] as [AsSqlFullName],
 				(
 					SELECT

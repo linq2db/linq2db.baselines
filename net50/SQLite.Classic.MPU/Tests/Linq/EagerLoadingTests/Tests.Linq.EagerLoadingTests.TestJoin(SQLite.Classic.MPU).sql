@@ -98,7 +98,7 @@ SET     @p_1 = 20
 
 SELECT
 	[key_data_result].[Id1],
-	[key_data_result].[MasterId],
+	[key_data_result].[MasterId_1],
 	[_mm].[Id1],
 	[_mm].[Id2],
 	[_mm].[Value],
@@ -107,7 +107,8 @@ FROM
 	(
 		SELECT DISTINCT
 			[d].[MasterId],
-			[m_1].[Id1]
+			[m_1].[Id1],
+			[d].[MasterId] as [MasterId_1]
 		FROM
 			(
 				SELECT
@@ -129,7 +130,8 @@ SELECT
 	[d].[DetailId],
 	[d].[MasterId],
 	[d].[DetailValue],
-	[m_1].[Id1]
+	[m_1].[Id1],
+	[d].[MasterId]
 FROM
 	(
 		SELECT
