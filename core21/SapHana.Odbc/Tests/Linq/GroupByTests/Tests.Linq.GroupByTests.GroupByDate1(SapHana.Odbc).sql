@@ -3,18 +3,18 @@
 
 SELECT
 	Sum("t1"."MoneyValue"),
-	"t1"."c2",
-	"t1"."c1"
+	"t1"."Key_2",
+	"t1"."Key_1"
 FROM
 	(
 		SELECT
-			Month("selectParam"."DateTimeValue") as "c1",
-			Year("selectParam"."DateTimeValue") as "c2",
+			Month("selectParam"."DateTimeValue") as "Key_1",
+			Year("selectParam"."DateTimeValue") as "Key_2",
 			"selectParam"."MoneyValue"
 		FROM
 			"LinqDataTypes" "selectParam"
 	) "t1"
 GROUP BY
-	"t1"."c1",
-	"t1"."c2"
+	"t1"."Key_1",
+	"t1"."Key_2"
 
