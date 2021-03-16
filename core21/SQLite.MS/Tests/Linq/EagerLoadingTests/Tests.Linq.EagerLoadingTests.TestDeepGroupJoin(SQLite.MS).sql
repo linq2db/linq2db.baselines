@@ -1844,13 +1844,13 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[m_1].[m_1],
-	[m_1].[m_2]
+	[m_1].[Id1],
+	[m_1].[Id2]
 FROM
 	(
 		SELECT
-			[t1].[Id1] as [m_1],
-			[t1].[Id2] as [m_2]
+			[t1].[Id1],
+			[t1].[Id2]
 		FROM
 			[MasterClass] [t1]
 		ORDER BY

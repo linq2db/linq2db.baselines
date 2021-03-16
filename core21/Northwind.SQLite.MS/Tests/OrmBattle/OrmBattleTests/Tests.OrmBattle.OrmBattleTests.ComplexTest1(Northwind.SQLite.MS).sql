@@ -84,7 +84,7 @@ BeforeExecute
 
 SELECT
 	[key_data_result].[ProductID],
-	[key_data_result].[SupplierID_1],
+	[key_data_result].[SupplierID],
 	[__p].[ProductID],
 	[__p].[ProductName],
 	[__p].[SupplierID],
@@ -99,8 +99,7 @@ FROM
 	(
 		SELECT DISTINCT
 			[detail].[ProductID],
-			[supplier].[SupplierID],
-			[supplier].[SupplierID] as [SupplierID_1]
+			[supplier].[SupplierID]
 		FROM
 			[Suppliers] [supplier],
 			[Products] [detail]
