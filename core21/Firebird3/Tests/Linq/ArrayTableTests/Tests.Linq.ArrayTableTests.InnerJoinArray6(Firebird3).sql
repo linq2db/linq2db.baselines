@@ -11,7 +11,7 @@ FROM
 	"Person" "p"
 		INNER JOIN (
 			SELECT
-				'Doe' as "Item"
+				'Doe' as "c1"
 			FROM rdb$database
-		) "n" ON "p"."LastName" = "n"."Item"
+		) "n" ON "p"."LastName" = "n"."c1"
 

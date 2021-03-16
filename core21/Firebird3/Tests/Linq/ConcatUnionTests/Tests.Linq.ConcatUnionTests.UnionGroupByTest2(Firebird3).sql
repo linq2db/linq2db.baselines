@@ -21,20 +21,20 @@ FROM
 		FROM
 			(
 				SELECT
-					"t2"."Key_1" as "month_1",
-					"t2"."Key_2" as "year_1",
+					"t2"."month_1",
+					"t2"."year_1",
 					1 as "int_1"
 				FROM
 					(
 						SELECT
-							Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as "Key_1",
-							Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as "Key_2"
+							Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as "month_1",
+							Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as "year_1"
 						FROM
 							"LinqDataTypes" "selectParam"
 					) "t2"
 				GROUP BY
-					"t2"."Key_1",
-					"t2"."Key_2"
+					"t2"."month_1",
+					"t2"."year_1"
 			) "t3"
 	) "t4"
 UNION
