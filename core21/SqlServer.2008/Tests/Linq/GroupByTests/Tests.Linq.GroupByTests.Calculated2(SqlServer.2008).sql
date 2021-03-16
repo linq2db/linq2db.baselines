@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[ch].[c1] + N'2' as [c1]
+			[ch].[Key_1] + N'2' as [c1]
 		FROM
 			(
 				SELECT
@@ -18,12 +18,12 @@ FROM
 							ELSE N'2'
 						END
 						ELSE N'3'
-					END as [c1]
+					END as [Key_1]
 				FROM
 					[Child] [selectParam]
 			) [ch]
 		GROUP BY
-			[ch].[c1]
+			[ch].[Key_1]
 	) [p]
 WHERE
 	[p].[c1] = N'22'
