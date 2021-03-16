@@ -46,10 +46,6 @@ SELECT DISTINCT
 			THEN True
 		ELSE False
 	END,
-	t2."ChildID",
-	t2."ParentID",
-	t3."ChildID",
-	t3."ParentID",
 	t4."ChildID",
 	t4."ParentID",
 	t5."ChildID",
