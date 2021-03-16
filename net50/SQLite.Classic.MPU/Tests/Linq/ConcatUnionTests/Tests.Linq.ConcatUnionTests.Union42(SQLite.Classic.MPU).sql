@@ -2,18 +2,18 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p_1].[c1]
+	[p_1].[val]
 FROM
 	(
 		SELECT
-			[p].[ParentID],
-			1 as [c1]
+			[p].[ParentID] as [id],
+			1 as [val]
 		FROM
 			[Parent] [p]
 		UNION
 		SELECT
-			[ch].[ParentID],
-			0 as [c1]
+			[ch].[ParentID] as [id],
+			0 as [val]
 		FROM
 			[Child] [ch]
 	) [p_1]

@@ -67,18 +67,18 @@ INSERT INTO [Parent]
 )
 SELECT
 	[t1].[ParentID] + 1000,
-	[t1].[c1]
+	[t1].[Value1]
 FROM
 	(
 		SELECT
 			[c_1].[ParentID],
-			Cast(Floor(Cast([c_1].[ChildID] as Float) / 10) as INTEGER) as [c1]
+			Cast(Floor(Cast([c_1].[ChildID] as Float) / 10) as INTEGER) as [Value1]
 		FROM
 			[Child] [c_1]
 		UNION
 		SELECT
 			Coalesce([c_2].[ParentID], 0) as [ParentID],
-			Floor(Cast(Coalesce([c_2].[GrandChildID], 0) as Float) / 100) as [c1]
+			Floor(Cast(Coalesce([c_2].[GrandChildID], 0) as Float) / 100) as [Value1]
 		FROM
 			[GrandChild] [c_2]
 	) [t1]

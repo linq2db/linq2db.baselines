@@ -56,9 +56,9 @@ DECLARE @id  -- Int32
 SET     @id = 0
 
 SELECT
-	[t2].[ctb_1],
-	[t2].[ctb_2],
-	[t2].[ctb],
+	[t2].[all_1],
+	[t2].[all_2],
+	[t2].[btbl],
 	[t2].[col1],
 	[t2].[col2],
 	[t2].[col3]
@@ -67,9 +67,9 @@ FROM
 		LEFT JOIN [table2] [bt1] ON [w].[c_tb1l_Id] = [bt1].[id]
 		LEFT JOIN (
 			SELECT
-				[btbl].[id] as [ctb],
-				[allG].[Col3] as [ctb_1],
-				[tbl3].[col] as [ctb_2],
+				[btbl].[id] as [btbl],
+				[allG].[Col3] as [all_1],
+				[tbl3].[col] as [all_2],
 				[btbl].[col1],
 				[btbl].[col2],
 				[btbl].[col3]
@@ -85,14 +85,14 @@ FROM
 				) [allG]
 					LEFT JOIN [table3] [tbl3] ON [allG].[maxCol] = [tbl3].[id]
 					LEFT JOIN [b_table2] [btbl] ON [tbl3].[col] = [btbl].[id]
-		) [t2] ON [bt1].[col3] = [t2].[ctb]
+		) [t2] ON [bt1].[col3] = [t2].[btbl]
 		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
 WHERE
 	[w].[commonTableId] = @id
 GROUP BY
-	[t2].[ctb_1],
-	[t2].[ctb_2],
-	[t2].[ctb],
+	[t2].[all_1],
+	[t2].[all_2],
+	[t2].[btbl],
 	[t2].[col1],
 	[t2].[col2],
 	[t2].[col3]

@@ -11,13 +11,13 @@ FROM
 			FROM
 				(
 					SELECT
-						Sum([t1].[ChildID]) as [Sum_1],
+						Sum([t1].[ID]) as [Sum_1],
 						[t1].[ParentID]
 					FROM
 						(
 							SELECT
 								[c_1].[ParentID],
-								[c_1].[ChildID]
+								[c_1].[ChildID] as [ID]
 							FROM
 								[Child] [c_1]
 							WHERE
@@ -25,7 +25,7 @@ FROM
 							UNION ALL
 							SELECT
 								Coalesce([g_1].[ParentID], 0) as [ParentID],
-								Coalesce([g_1].[GrandChildID], 0) as [ChildID]
+								Coalesce([g_1].[GrandChildID], 0) as [ID]
 							FROM
 								[GrandChild] [g_1]
 							WHERE

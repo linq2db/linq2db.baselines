@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[c1]
+	[t1].[Key_1]
 FROM
 	(
 		SELECT
@@ -14,12 +14,12 @@ FROM
 					ELSE '2'
 				END
 				ELSE '3'
-			END as [c1]
+			END as [Key_1]
 		FROM
 			[Child] [selectParam]
 	) [t1]
 GROUP BY
-	[t1].[c1]
+	[t1].[Key_1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

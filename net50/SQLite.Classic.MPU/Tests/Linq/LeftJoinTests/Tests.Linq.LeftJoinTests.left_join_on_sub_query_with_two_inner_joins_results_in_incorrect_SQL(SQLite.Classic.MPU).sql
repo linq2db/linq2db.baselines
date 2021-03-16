@@ -44,15 +44,15 @@ BeforeExecute
 SELECT
 	[a_1].[Id],
 	[t1].[bc],
-	[t1].[Id],
-	[t1].[Id_1]
+	[t1].[bid],
+	[t1].[cid]
 FROM
 	[A] [a_1]
 		LEFT JOIN (
 			SELECT
 				[b_1].[AId] as [bc],
-				[b_1].[Id],
-				[c_1].[Id] as [Id_1]
+				[b_1].[Id] as [bid],
+				[c_1].[Id] as [cid]
 			FROM
 				[B] [b_1]
 					INNER JOIN [C] [c_1] ON [b_1].[Id] = [c_1].[BId]
