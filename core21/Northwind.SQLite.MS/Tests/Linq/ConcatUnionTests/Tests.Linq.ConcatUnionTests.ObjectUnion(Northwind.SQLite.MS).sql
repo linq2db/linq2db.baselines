@@ -4,31 +4,31 @@ DECLARE @take  -- Int32
 SET     @take = 5
 
 SELECT
-	[t1].[p],
+	[t1].[ProductID],
 	[t1].[ProductName],
-	[t1].[p_1],
-	[t1].[p_2],
-	[t1].[p_3],
-	[t1].[p_4],
-	[t1].[p_5],
-	[t1].[p_6],
-	[t1].[p_7],
-	[t1].[p_8],
+	[t1].[SupplierID],
+	[t1].[CategoryID],
+	[t1].[QuantityPerUnit],
+	[t1].[UnitPrice],
+	[t1].[UnitsInStock],
+	[t1].[UnitsOnOrder],
+	[t1].[ReorderLevel],
+	[t1].[Discontinued],
 	[t1].[CategoryName],
 	[t1].[ProductName_1]
 FROM
 	(
 		SELECT
-			[p].[ProductID] as [p],
+			[p].[ProductID],
 			[p].[ProductName],
-			[p].[SupplierID] as [p_1],
-			[p].[CategoryID] as [p_2],
-			[p].[QuantityPerUnit] as [p_3],
-			[p].[UnitPrice] as [p_4],
-			[p].[UnitsInStock] as [p_5],
-			[p].[UnitsOnOrder] as [p_6],
-			[p].[ReorderLevel] as [p_7],
-			[p].[Discontinued] as [p_8],
+			[p].[SupplierID],
+			[p].[CategoryID],
+			[p].[QuantityPerUnit],
+			[p].[UnitPrice],
+			[p].[UnitsInStock],
+			[p].[UnitsOnOrder],
+			[p].[ReorderLevel],
+			[p].[Discontinued],
 			[g_1].[CategoryName],
 			[p].[ProductName] as [ProductName_1]
 		FROM
@@ -36,16 +36,16 @@ FROM
 				LEFT JOIN [Categories] [g_1] ON [p].[CategoryID] = [g_1].[CategoryID]
 		UNION
 		SELECT
-			[p_1].[ProductID] as [p],
+			[p_1].[ProductID],
 			[p_1].[ProductName],
-			[p_1].[SupplierID] as [p_1],
-			[p_1].[CategoryID] as [p_2],
-			[p_1].[QuantityPerUnit] as [p_3],
-			[p_1].[UnitPrice] as [p_4],
-			[p_1].[UnitsInStock] as [p_5],
-			[p_1].[UnitsOnOrder] as [p_6],
-			[p_1].[ReorderLevel] as [p_7],
-			[p_1].[Discontinued] as [p_8],
+			[p_1].[SupplierID],
+			[p_1].[CategoryID],
+			[p_1].[QuantityPerUnit],
+			[p_1].[UnitPrice],
+			[p_1].[UnitsInStock],
+			[p_1].[UnitsOnOrder],
+			[p_1].[ReorderLevel],
+			[p_1].[Discontinued],
 			[g_2].[CategoryName],
 			[p_1].[ProductName] as [ProductName_1]
 		FROM

@@ -5,23 +5,23 @@ SET     @take = 1
 
 SELECT
 	[t2].[ShipCountry],
-	Sum([t2].[Via1]),
-	Sum([t2].[Via3]),
-	Sum([t2].[Via3_1])
+	Sum([t2].[Freight]),
+	Sum([t2].[c1]),
+	Sum([t2].[c2])
 FROM
 	(
 		SELECT
 			[t1].[ShipCountry],
-			[t1].[Via1],
-			[t1].[Via3],
-			[t1].[Via3_1]
+			[t1].[Freight],
+			[t1].[c1],
+			[t1].[c2]
 		FROM
 			(
 				SELECT
 					[x].[ShipCountry],
-					[x].[Freight] as [Via1],
-					0 as [Via3],
-					0 as [Via3_1]
+					[x].[Freight],
+					0 as [c1],
+					0 as [c2]
 				FROM
 					[Orders] [x]
 				WHERE
@@ -29,9 +29,9 @@ FROM
 				UNION
 				SELECT
 					[x_1].[ShipCountry],
-					0 as [Via1],
-					[x_1].[Freight] as [Via3],
-					0 as [Via3_1]
+					0 as [Freight],
+					[x_1].[Freight] as [c1],
+					0 as [c2]
 				FROM
 					[Orders] [x_1]
 				WHERE
@@ -40,9 +40,9 @@ FROM
 		UNION
 		SELECT
 			[x_2].[ShipCountry],
-			0 as [Via1],
-			0 as [Via3],
-			[x_2].[Freight] as [Via3_1]
+			0 as [Freight],
+			0 as [c1],
+			[x_2].[Freight] as [c2]
 		FROM
 			[Orders] [x_2]
 		WHERE
