@@ -14,7 +14,7 @@ FROM
 			FROM
 				(
 					SELECT
-						1 as [c1],
+						1 as [Key_1],
 						[t].[ChildID]
 					FROM
 						[Child] [t]
@@ -22,7 +22,7 @@ FROM
 						[t].[ParentID] <> [p].[ParentID] AND [p].[ParentID] <= 2
 				) [c_1]
 			GROUP BY
-				[c_1].[c1]
+				[c_1].[Key_1]
 		) [t1]
 
 BeforeExecute
@@ -38,7 +38,7 @@ FROM
 			FROM
 				(
 					SELECT
-						1 as [c1],
+						1 as [Key_1],
 						[t].[ChildID]
 					FROM
 						[Child] [t]
@@ -46,6 +46,6 @@ FROM
 						[t].[ParentID] <> [p].[ParentID] AND [p].[ParentID] <= 2
 				) [c_1]
 			GROUP BY
-				[c_1].[c1]
+				[c_1].[Key_1]
 		) [t1]
 

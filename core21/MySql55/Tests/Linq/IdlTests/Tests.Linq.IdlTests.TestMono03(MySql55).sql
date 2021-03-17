@@ -11,11 +11,11 @@ FROM
 	`Person` `y`
 UNION ALL
 SELECT
-	`t1`.`FirstName`
+	`t1`.`Name`
 FROM
 	(
 		SELECT
-			`x`.`FirstName`
+			`x`.`FirstName` as `Name`
 		FROM
 			`Person` `x`,
 			`Patient` `z`

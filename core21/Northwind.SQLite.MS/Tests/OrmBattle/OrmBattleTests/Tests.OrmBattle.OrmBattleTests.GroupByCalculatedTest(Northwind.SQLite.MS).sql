@@ -83,7 +83,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[t1].[c1]
+	[t1].[Key_1]
 FROM
 	(
 		SELECT
@@ -95,10 +95,10 @@ FROM
 					ELSE 'average'
 				END
 				ELSE 'cheap'
-			END as [c1]
+			END as [Key_1]
 		FROM
 			[Orders] [selectParam]
 	) [t1]
 GROUP BY
-	[t1].[c1]
+	[t1].[Key_1]
 

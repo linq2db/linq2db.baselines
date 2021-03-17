@@ -33,19 +33,19 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[t1].[c2],
+	[t1].[c1],
 	Count(*)
 FROM
 	(
 		SELECT
-			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [c1],
-			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [c2]
+			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [Key_1],
+			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [c1]
 		FROM
 			[Issue913Test] [selectParam]
 	) [t1]
 GROUP BY
-	[t1].[c1],
-	[t1].[c2]
+	[t1].[Key_1],
+	[t1].[c1]
 
 BeforeExecute
 -- SqlServer.2012

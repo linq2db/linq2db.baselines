@@ -2,7 +2,7 @@
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[t1].[c1],
+	[t1].[ParentID],
 	Min([t1].[ChildID]),
 	(
 		SELECT
@@ -10,13 +10,13 @@ SELECT
 		FROM
 			[Child] [ch]
 		WHERE
-			[t1].[c1] = [ch].[ParentID] + 1 AND [ch].[ChildID] > 25 AND
+			[t1].[ParentID] = [ch].[ParentID] + 1 AND [ch].[ChildID] > 25 AND
 			[ch].[ParentID] > 0
 	)
 FROM
 	(
 		SELECT
-			[ch_1].[ParentID] + 1 as [c1],
+			[ch_1].[ParentID] + 1 as [ParentID],
 			[ch_1].[ChildID]
 		FROM
 			[Child] [ch_1]
@@ -24,5 +24,5 @@ FROM
 			[ch_1].[ParentID] > 0
 	) [t1]
 GROUP BY
-	[t1].[c1]
+	[t1].[ParentID]
 

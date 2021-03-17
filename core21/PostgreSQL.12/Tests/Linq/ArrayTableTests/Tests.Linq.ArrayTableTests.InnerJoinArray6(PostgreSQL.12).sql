@@ -11,6 +11,6 @@ FROM
 	"Person" p
 		INNER JOIN (
 			SELECT
-				'Doe' as "Item"
-		) n ON p."LastName" = n."Item"
+				'Doe' as c1
+		) n ON p."LastName" = n.c1
 

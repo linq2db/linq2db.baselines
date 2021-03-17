@@ -55,19 +55,19 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[t1].[c1],
+	[t1].[Key_1],
 	Count(*)
 FROM
 	(
 		SELECT
-			DateAdd(year, -1, [selectParam].[TransactionDate]) as [c1]
+			DateAdd(year, -1, [selectParam].[TransactionDate]) as [Key_1]
 		FROM
 			[Transactions] [selectParam]
 	) [t1]
 GROUP BY
-	[t1].[c1]
+	[t1].[Key_1]
 ORDER BY
-	[t1].[c1]
+	[t1].[Key_1]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

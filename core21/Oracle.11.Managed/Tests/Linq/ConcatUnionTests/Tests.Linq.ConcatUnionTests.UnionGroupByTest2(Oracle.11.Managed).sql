@@ -21,20 +21,20 @@ FROM
 		FROM
 			(
 				SELECT
-					t2."Key_1" as "month_1",
-					t2."Key_2" as "year_1",
+					t2."month_1",
+					t2."year_1",
 					1 as "int_1"
 				FROM
 					(
 						SELECT
-							To_Number(To_Char(selectParam."DateTimeValue", 'MM')) as "Key_1",
-							To_Number(To_Char(selectParam."DateTimeValue", 'YYYY')) as "Key_2"
+							To_Number(To_Char(selectParam."DateTimeValue", 'MM')) as "month_1",
+							To_Number(To_Char(selectParam."DateTimeValue", 'YYYY')) as "year_1"
 						FROM
 							"LinqDataTypes" selectParam
 					) t2
 				GROUP BY
-					t2."Key_1",
-					t2."Key_2"
+					t2."month_1",
+					t2."year_1"
 			) t3
 	) t4
 UNION

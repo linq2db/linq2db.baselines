@@ -3,16 +3,16 @@
 
 SELECT
 	Sum("t1"."MoneyValue"),
-	To_Number(To_Char("t1"."c1", 'YYYY')),
-	To_Number(To_Char("t1"."c1", 'MM'))
+	To_Number(To_Char("t1"."Key_1", 'YYYY')),
+	To_Number(To_Char("t1"."Key_1", 'MM'))
 FROM
 	(
 		SELECT
-			Date(RTrim(Char(To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')))) || '-' || RTrim(Char(To_Number(To_Char("selectParam"."DateTimeValue", 'MM')))) || '-1') as "c1",
+			Date(RTrim(Char(To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')))) || '-' || RTrim(Char(To_Number(To_Char("selectParam"."DateTimeValue", 'MM')))) || '-1') as "Key_1",
 			"selectParam"."MoneyValue"
 		FROM
 			"LinqDataTypes" "selectParam"
 	) "t1"
 GROUP BY
-	"t1"."c1"
+	"t1"."Key_1"
 

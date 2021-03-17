@@ -38,10 +38,6 @@ SELECT DISTINCT
 		WHERE
 			[c_2].[ChildID] > 2
 	), 1, 0),
-	[t2].[ChildID],
-	[t2].[ParentID],
-	[t3].[ChildID],
-	[t3].[ParentID],
 	[t4].[ChildID],
 	[t4].[ParentID],
 	[t5].[ChildID],

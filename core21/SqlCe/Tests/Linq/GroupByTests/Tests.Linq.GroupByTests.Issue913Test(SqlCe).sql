@@ -30,7 +30,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[c2],
+	[t1].[c1],
 	Count(*)
 FROM
 	(
@@ -39,18 +39,18 @@ FROM
 				WHEN [selectParam].[TradingStatus] = 'D'
 					THEN 1
 				ELSE 0
-			END as [c1],
+			END as [Key_1],
 			CASE
 				WHEN [selectParam].[TradingStatus] = 'D'
 					THEN 1
 				ELSE 0
-			END as [c2]
+			END as [c1]
 		FROM
 			[Issue913Test] [selectParam]
 	) [t1]
 GROUP BY
-	[t1].[c1],
-	[t1].[c2]
+	[t1].[Key_1],
+	[t1].[c1]
 
 BeforeExecute
 -- SqlCe
