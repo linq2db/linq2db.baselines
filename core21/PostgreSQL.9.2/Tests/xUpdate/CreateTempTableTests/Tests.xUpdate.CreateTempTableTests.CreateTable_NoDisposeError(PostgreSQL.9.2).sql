@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE IF EXISTS "TempTable"
+DROP TABLE IF EXISTS "#TempTable"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TEMPORARY TABLE "TempTable"
+CREATE TEMPORARY TABLE "#TempTable"
 (
 	"ID" Int NOT NULL
 )
@@ -15,10 +15,10 @@ ON COMMIT PRESERVE ROWS
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "TempTable"
+DROP TABLE "#TempTable"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE IF EXISTS "TempTable"
+DROP TABLE IF EXISTS "#TempTable"
 
