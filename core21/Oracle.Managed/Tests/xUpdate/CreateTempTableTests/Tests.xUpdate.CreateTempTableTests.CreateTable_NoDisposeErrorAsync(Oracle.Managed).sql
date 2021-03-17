@@ -31,14 +31,7 @@ END;
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
+DROP TABLE "TempTable"
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
