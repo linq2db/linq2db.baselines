@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE IF EXISTS `#TempTable`
+DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TEMPORARY TABLE `#TempTable`
+CREATE TEMPORARY TABLE `TempTable`
 (
 	`ID` INT NOT NULL
 )
@@ -14,10 +14,10 @@ CREATE TEMPORARY TABLE `#TempTable`
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `#TempTable`
+DROP TABLE `TempTable`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE IF EXISTS `#TempTable`
+DROP TABLE IF EXISTS `TempTable`
 
