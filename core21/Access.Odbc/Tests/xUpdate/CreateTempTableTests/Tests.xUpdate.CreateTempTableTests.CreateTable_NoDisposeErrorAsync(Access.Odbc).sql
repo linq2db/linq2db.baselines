@@ -6,7 +6,7 @@ DROP TABLE [TempTable]
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [TempTable]
 (
 	[ID] Int NOT NULL
 )
@@ -14,10 +14,10 @@ CREATE TABLE [#TempTable]
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-DROP TABLE [#TempTable]
+DROP TABLE [TempTable]
 
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-DROP TABLE [#TempTable]
+DROP TABLE [TempTable]
 
