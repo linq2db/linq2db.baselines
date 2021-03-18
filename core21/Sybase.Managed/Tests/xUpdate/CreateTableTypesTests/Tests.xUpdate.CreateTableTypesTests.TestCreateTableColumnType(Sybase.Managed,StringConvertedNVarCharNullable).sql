@@ -57,5 +57,6 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [CreateTableTypes]
+IF (OBJECT_ID(N'CreateTableTypes') IS NOT NULL)
+	DROP TABLE [CreateTableTypes]
 

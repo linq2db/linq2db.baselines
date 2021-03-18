@@ -136,5 +136,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [PR_1598_Mixed_Table]
+IF (OBJECT_ID(N'PR_1598_Mixed_Table') IS NOT NULL)
+	DROP TABLE [PR_1598_Mixed_Table]
 

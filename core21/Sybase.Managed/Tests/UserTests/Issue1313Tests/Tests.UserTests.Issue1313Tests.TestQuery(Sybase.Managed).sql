@@ -29,5 +29,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [ValueItem]
+IF (OBJECT_ID(N'ValueItem') IS NOT NULL)
+	DROP TABLE [ValueItem]
 

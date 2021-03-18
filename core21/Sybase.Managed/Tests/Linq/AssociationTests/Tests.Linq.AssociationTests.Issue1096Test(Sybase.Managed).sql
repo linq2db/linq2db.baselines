@@ -102,10 +102,12 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Issue1096TaskStage]
+IF (OBJECT_ID(N'Issue1096TaskStage') IS NOT NULL)
+	DROP TABLE [Issue1096TaskStage]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Issue1096Task]
+IF (OBJECT_ID(N'Issue1096Task') IS NOT NULL)
+	DROP TABLE [Issue1096Task]
 

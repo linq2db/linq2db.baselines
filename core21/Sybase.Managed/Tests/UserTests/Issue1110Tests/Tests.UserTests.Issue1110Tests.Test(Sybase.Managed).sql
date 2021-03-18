@@ -30,5 +30,6 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Issue1110TB]
+IF (OBJECT_ID(N'Issue1110TB') IS NOT NULL)
+	DROP TABLE [Issue1110TB]
 

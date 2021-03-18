@@ -37,10 +37,12 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Relationship1711]
+IF (OBJECT_ID(N'Relationship1711') IS NOT NULL)
+	DROP TABLE [Relationship1711]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Entity1711]
+IF (OBJECT_ID(N'Entity1711') IS NOT NULL)
+	DROP TABLE [Entity1711]
 

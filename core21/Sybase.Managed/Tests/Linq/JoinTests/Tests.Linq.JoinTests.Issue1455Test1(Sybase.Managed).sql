@@ -94,25 +94,30 @@ GROUP BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Flat]
+IF (OBJECT_ID(N'Flat') IS NOT NULL)
+	DROP TABLE [Flat]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Nomin]
+IF (OBJECT_ID(N'Nomin') IS NOT NULL)
+	DROP TABLE [Nomin]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Trade]
+IF (OBJECT_ID(N'Trade') IS NOT NULL)
+	DROP TABLE [Trade]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [AuditAlert]
+IF (OBJECT_ID(N'AuditAlert') IS NOT NULL)
+	DROP TABLE [AuditAlert]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Alert]
+IF (OBJECT_ID(N'Alert') IS NOT NULL)
+	DROP TABLE [Alert]
 

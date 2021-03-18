@@ -194,15 +194,18 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [T3]
+IF (OBJECT_ID(N'T3') IS NOT NULL)
+	DROP TABLE [T3]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [T2]
+IF (OBJECT_ID(N'T2') IS NOT NULL)
+	DROP TABLE [T2]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [T1]
+IF (OBJECT_ID(N'T1') IS NOT NULL)
+	DROP TABLE [T1]
 

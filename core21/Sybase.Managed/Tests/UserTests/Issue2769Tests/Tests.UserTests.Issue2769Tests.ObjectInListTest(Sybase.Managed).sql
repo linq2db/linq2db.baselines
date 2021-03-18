@@ -21,5 +21,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [SampleClass]
+IF (OBJECT_ID(N'SampleClass') IS NOT NULL)
+	DROP TABLE [SampleClass]
 

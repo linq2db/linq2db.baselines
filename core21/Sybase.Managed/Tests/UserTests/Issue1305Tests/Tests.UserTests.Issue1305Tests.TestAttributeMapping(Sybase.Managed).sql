@@ -415,5 +415,6 @@ SET FMTONLY OFF
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [ColumnOrderTest]
+IF (OBJECT_ID(N'ColumnOrderTest') IS NOT NULL)
+	DROP TABLE [ColumnOrderTest]
 

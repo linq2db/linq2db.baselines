@@ -24,5 +24,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Issue1189Customer]
+IF (OBJECT_ID(N'Issue1189Customer') IS NOT NULL)
+	DROP TABLE [Issue1189Customer]
 

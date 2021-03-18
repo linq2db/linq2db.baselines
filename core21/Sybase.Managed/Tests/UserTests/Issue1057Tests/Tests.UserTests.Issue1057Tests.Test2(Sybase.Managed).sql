@@ -106,10 +106,12 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TaskStage]
+IF (OBJECT_ID(N'TaskStage') IS NOT NULL)
+	DROP TABLE [TaskStage]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Task]
+IF (OBJECT_ID(N'Task') IS NOT NULL)
+	DROP TABLE [Task]
 

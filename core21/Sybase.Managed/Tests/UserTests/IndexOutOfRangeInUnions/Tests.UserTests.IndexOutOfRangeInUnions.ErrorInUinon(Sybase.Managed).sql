@@ -77,15 +77,18 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [O3]
+IF (OBJECT_ID(N'O3') IS NOT NULL)
+	DROP TABLE [O3]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [O2]
+IF (OBJECT_ID(N'O2') IS NOT NULL)
+	DROP TABLE [O2]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [O1]
+IF (OBJECT_ID(N'O1') IS NOT NULL)
+	DROP TABLE [O1]
 

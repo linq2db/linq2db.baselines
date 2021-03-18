@@ -122,5 +122,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [test_insert_or_replace]
+IF (OBJECT_ID(N'test_insert_or_replace') IS NOT NULL)
+	DROP TABLE [test_insert_or_replace]
 

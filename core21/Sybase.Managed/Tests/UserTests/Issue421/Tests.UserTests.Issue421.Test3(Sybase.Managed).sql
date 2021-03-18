@@ -52,5 +52,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [BlobClass]
+IF (OBJECT_ID(N'BlobClass') IS NOT NULL)
+	DROP TABLE [BlobClass]
 

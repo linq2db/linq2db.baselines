@@ -96,5 +96,6 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [CacheTestTable]
+IF (OBJECT_ID(N'CacheTestTable') IS NOT NULL)
+	DROP TABLE [CacheTestTable]
 

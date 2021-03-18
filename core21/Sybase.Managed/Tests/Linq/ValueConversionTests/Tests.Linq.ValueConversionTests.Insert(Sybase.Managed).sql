@@ -187,5 +187,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [ValueConversion]
+IF (OBJECT_ID(N'ValueConversion') IS NOT NULL)
+	DROP TABLE [ValueConversion]
 

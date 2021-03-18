@@ -413,5 +413,6 @@ SET FMTONLY OFF
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [FluentMapping]
+IF (OBJECT_ID(N'FluentMapping') IS NOT NULL)
+	DROP TABLE [FluentMapping]
 

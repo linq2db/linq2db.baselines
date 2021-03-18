@@ -46,5 +46,6 @@ sp_configure 'allow updates', 0
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TableTest1064]
+IF (OBJECT_ID(N'TableTest1064') IS NOT NULL)
+	DROP TABLE [TableTest1064]
 
