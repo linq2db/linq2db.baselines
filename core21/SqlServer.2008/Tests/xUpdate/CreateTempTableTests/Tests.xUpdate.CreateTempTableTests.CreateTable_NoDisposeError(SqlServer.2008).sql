@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
-	DROP TABLE [#TempTable]
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [TempTable]
 
 BeforeExecute
 -- SqlServer.2008
