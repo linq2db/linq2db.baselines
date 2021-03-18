@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE IF EXISTS [#TempTable]
+DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
 -- SqlServer.2016
