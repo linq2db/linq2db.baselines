@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE IF EXISTS [#TempTable]
+DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
