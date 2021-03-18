@@ -22,5 +22,6 @@ SELECT 0,'2018-01-01'
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Issue1107TB]
+IF (OBJECT_ID(N'Issue1107TB') IS NOT NULL)
+	DROP TABLE [Issue1107TB]
 

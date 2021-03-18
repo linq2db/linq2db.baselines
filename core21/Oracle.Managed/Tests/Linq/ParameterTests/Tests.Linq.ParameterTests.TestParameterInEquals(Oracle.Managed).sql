@@ -35,10 +35,24 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "TestEqualsTable2"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TestEqualsTable2"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "TestEqualsTable1"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TestEqualsTable1"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

@@ -30,10 +30,12 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Department]
+IF (OBJECT_ID(N'[Department]', N'U') IS NOT NULL)
+	DROP TABLE [Department]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Employee]
+IF (OBJECT_ID(N'[Employee]', N'U') IS NOT NULL)
+	DROP TABLE [Employee]
 

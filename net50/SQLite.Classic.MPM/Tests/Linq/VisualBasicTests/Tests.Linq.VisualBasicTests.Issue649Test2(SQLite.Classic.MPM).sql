@@ -38,10 +38,10 @@ GROUP BY
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [person649]
+DROP TABLE IF EXISTS [person649]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [activity649]
+DROP TABLE IF EXISTS [activity649]
 

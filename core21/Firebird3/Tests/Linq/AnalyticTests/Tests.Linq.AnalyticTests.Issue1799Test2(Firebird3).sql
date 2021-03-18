@@ -55,15 +55,24 @@ GROUP BY
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Issue1799Table3"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1799Table3')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1799Table3"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Issue1799Table2"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1799Table2')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1799Table2"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Issue1799Table1"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1799Table1')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1799Table1"';
+END
 

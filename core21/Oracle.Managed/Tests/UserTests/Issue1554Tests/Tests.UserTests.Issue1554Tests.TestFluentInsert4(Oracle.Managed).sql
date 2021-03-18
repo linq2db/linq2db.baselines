@@ -46,5 +46,12 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Issue1554FluentTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1554FluentTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

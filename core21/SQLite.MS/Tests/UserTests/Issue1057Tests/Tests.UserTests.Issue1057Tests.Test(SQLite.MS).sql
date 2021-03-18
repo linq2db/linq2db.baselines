@@ -95,10 +95,10 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [TaskStage]
+DROP TABLE IF EXISTS [TaskStage]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Task]
+DROP TABLE IF EXISTS [Task]
 

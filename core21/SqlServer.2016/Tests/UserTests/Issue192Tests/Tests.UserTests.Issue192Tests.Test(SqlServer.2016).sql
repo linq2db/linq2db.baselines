@@ -279,5 +279,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [TypeConvertTable]
+DROP TABLE IF EXISTS [TypeConvertTable]
 

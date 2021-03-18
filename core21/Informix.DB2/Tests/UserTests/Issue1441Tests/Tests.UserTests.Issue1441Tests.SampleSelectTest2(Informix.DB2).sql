@@ -34,10 +34,10 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Books
+DROP TABLE IF EXISTS Books
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Authors
+DROP TABLE IF EXISTS Authors
 

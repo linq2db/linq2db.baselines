@@ -28,5 +28,5 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `User`
+DROP TABLE IF EXISTS `User`
 

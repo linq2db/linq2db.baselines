@@ -70,5 +70,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "BlobClass"
+DROP TABLE IF EXISTS "BlobClass"
 

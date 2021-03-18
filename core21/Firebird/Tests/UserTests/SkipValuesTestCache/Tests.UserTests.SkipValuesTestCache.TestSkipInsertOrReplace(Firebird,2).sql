@@ -107,5 +107,8 @@ WHERE
 BeforeExecute
 -- Firebird
 
-DROP TABLE "PR_1598_Insert_Table_Cache"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'PR_1598_Insert_Table_Cache')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "PR_1598_Insert_Table_Cache"';
+END
 

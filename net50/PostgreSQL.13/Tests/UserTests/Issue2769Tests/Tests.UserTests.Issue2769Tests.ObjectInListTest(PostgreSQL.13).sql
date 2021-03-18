@@ -21,5 +21,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "SampleClass"
+DROP TABLE IF EXISTS "SampleClass"
 

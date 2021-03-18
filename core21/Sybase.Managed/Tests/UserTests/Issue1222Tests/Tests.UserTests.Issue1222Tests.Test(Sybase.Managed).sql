@@ -87,10 +87,12 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [stVersions]
+IF (OBJECT_ID(N'stVersions') IS NOT NULL)
+	DROP TABLE [stVersions]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [stLinks]
+IF (OBJECT_ID(N'stLinks') IS NOT NULL)
+	DROP TABLE [stLinks]
 

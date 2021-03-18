@@ -110,5 +110,5 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `TestInsertOrReplaceTable`
+DROP TABLE IF EXISTS `TestInsertOrReplaceTable`
 

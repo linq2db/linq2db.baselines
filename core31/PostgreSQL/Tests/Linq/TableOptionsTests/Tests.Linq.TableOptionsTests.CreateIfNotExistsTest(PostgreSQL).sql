@@ -47,5 +47,5 @@ CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "CreateIfNotExistsTable"
+DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 

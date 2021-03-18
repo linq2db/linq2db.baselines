@@ -29,5 +29,5 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE ValueItem
+DROP TABLE IF EXISTS ValueItem
 

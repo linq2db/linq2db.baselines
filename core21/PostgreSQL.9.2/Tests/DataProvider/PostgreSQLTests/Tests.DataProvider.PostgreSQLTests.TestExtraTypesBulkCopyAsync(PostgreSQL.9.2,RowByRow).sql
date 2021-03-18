@@ -127,5 +127,5 @@ ORDER BY
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "ExtraBulkCopyTypesTable"
+DROP TABLE IF EXISTS "ExtraBulkCopyTypesTable"
 

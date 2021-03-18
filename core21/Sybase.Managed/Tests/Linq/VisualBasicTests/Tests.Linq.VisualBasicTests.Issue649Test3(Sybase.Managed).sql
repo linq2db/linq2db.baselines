@@ -42,10 +42,12 @@ GROUP BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [person649]
+IF (OBJECT_ID(N'person649') IS NOT NULL)
+	DROP TABLE [person649]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [activity649]
+IF (OBJECT_ID(N'activity649') IS NOT NULL)
+	DROP TABLE [activity649]
 

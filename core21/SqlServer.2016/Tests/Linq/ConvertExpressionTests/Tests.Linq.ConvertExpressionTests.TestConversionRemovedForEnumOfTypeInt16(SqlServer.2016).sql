@@ -49,5 +49,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [ConversionsTestTable]
+DROP TABLE IF EXISTS [ConversionsTestTable]
 

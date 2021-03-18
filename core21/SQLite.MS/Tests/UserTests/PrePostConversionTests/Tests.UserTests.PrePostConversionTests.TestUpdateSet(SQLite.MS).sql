@@ -82,5 +82,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ValuesTable]
+DROP TABLE IF EXISTS [ValuesTable]
 

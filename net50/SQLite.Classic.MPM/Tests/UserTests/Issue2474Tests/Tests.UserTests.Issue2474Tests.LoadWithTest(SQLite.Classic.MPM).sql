@@ -63,15 +63,15 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [CASH]
+DROP TABLE IF EXISTS [CASH]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [STATUS_DATA]
+DROP TABLE IF EXISTS [STATUS_DATA]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [DETAIL]
+DROP TABLE IF EXISTS [DETAIL]
 

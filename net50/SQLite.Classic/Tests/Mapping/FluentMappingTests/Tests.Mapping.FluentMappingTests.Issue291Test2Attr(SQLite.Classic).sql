@@ -80,5 +80,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [my_table]
+DROP TABLE IF EXISTS [my_table]
 

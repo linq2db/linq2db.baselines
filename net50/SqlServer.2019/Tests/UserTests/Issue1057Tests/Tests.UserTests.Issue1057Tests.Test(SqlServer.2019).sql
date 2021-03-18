@@ -95,10 +95,10 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [TaskStage]
+DROP TABLE IF EXISTS [TaskStage]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Task]
+DROP TABLE IF EXISTS [Task]
 

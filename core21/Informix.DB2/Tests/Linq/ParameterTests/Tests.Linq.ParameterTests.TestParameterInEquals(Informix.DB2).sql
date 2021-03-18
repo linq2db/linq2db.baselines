@@ -35,10 +35,10 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TestEqualsTable2
+DROP TABLE IF EXISTS TestEqualsTable2
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TestEqualsTable1
+DROP TABLE IF EXISTS TestEqualsTable1
 

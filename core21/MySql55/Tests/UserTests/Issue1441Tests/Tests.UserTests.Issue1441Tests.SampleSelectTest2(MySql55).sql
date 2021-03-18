@@ -34,10 +34,10 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Books`
+DROP TABLE IF EXISTS `Books`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Authors`
+DROP TABLE IF EXISTS `Authors`
 

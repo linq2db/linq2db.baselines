@@ -127,10 +127,10 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Message
+DROP TABLE IF EXISTS Message
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Topic
+DROP TABLE IF EXISTS Topic
 

@@ -21,10 +21,16 @@ CREATE TABLE "i1084_student"
 BeforeExecute
 -- Firebird
 
-DROP TABLE "i1084_student"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'i1084_student')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "i1084_student"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "i1084_person"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'i1084_person')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "i1084_person"';
+END
 

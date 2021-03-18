@@ -110,5 +110,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE TestInsertOrReplaceTable
+DROP TABLE IF EXISTS TestInsertOrReplaceTable
 

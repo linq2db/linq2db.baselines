@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE AttributeBase
+DROP TABLE IF EXISTS AttributeBase
 

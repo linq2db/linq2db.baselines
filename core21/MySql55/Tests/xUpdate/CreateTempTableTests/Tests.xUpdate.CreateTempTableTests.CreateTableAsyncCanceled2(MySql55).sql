@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-DROP TABLE `TempTable`
+DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

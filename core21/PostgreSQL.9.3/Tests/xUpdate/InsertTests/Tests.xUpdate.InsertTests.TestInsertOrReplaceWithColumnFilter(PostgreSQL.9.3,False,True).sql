@@ -109,5 +109,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "TestInsertOrReplaceTable"
+DROP TABLE IF EXISTS "TestInsertOrReplaceTable"
 

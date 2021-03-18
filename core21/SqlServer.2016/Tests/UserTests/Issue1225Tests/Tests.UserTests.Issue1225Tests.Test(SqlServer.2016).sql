@@ -86,10 +86,10 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [TaskStage]
+DROP TABLE IF EXISTS [TaskStage]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Task]
+DROP TABLE IF EXISTS [Task]
 

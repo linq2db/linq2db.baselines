@@ -30,5 +30,6 @@ SET
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [ReviewIndexes]
+IF (OBJECT_ID(N'[ReviewIndexes]', N'U') IS NOT NULL)
+	DROP TABLE [ReviewIndexes]
 

@@ -107,10 +107,10 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [EmailAttachment]
+DROP TABLE IF EXISTS [EmailAttachment]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Emails]
+DROP TABLE IF EXISTS [Emails]
 

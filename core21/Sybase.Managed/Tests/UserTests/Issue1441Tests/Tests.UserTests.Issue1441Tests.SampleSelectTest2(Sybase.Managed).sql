@@ -34,10 +34,12 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Books]
+IF (OBJECT_ID(N'Books') IS NOT NULL)
+	DROP TABLE [Books]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Authors]
+IF (OBJECT_ID(N'Authors') IS NOT NULL)
+	DROP TABLE [Authors]
 

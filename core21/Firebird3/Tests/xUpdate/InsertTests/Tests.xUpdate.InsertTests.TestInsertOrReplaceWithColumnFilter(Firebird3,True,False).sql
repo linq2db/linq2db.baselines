@@ -124,5 +124,8 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "TestInsertOrReplaceTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestInsertOrReplaceTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TestInsertOrReplaceTable"';
+END
 

@@ -58,15 +58,15 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Issue1799Table3`
+DROP TABLE IF EXISTS `Issue1799Table3`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Issue1799Table2`
+DROP TABLE IF EXISTS `Issue1799Table2`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Issue1799Table1`
+DROP TABLE IF EXISTS `Issue1799Table1`
 

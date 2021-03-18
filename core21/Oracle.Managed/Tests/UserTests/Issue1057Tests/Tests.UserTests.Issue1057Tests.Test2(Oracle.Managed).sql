@@ -106,10 +106,24 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "TaskStage"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TaskStage"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Task"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Task"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

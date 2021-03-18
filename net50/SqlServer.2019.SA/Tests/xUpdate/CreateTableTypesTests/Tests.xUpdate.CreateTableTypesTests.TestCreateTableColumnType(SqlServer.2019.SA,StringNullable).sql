@@ -57,5 +57,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [CreateTableTypes]
+DROP TABLE IF EXISTS [CreateTableTypes]
 

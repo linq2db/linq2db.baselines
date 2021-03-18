@@ -137,5 +137,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TestInsertOrReplaceTable]
+IF (OBJECT_ID(N'TestInsertOrReplaceTable') IS NOT NULL)
+	DROP TABLE [TestInsertOrReplaceTable]
 

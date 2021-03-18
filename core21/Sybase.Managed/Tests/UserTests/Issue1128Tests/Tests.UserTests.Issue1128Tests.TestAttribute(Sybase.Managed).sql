@@ -25,5 +25,6 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [AttributeBase]
+IF (OBJECT_ID(N'AttributeBase') IS NOT NULL)
+	DROP TABLE [AttributeBase]
 

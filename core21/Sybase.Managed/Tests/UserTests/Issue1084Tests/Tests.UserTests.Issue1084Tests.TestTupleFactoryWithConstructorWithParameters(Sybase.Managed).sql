@@ -21,10 +21,12 @@ CREATE TABLE [i1084_student]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [i1084_student]
+IF (OBJECT_ID(N'i1084_student') IS NOT NULL)
+	DROP TABLE [i1084_student]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [i1084_person]
+IF (OBJECT_ID(N'i1084_person') IS NOT NULL)
+	DROP TABLE [i1084_person]
 

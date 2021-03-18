@@ -321,5 +321,5 @@ SET     @param1 = NULL
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `ColumnOrderTest`
+DROP TABLE IF EXISTS `ColumnOrderTest`
 

@@ -57,5 +57,5 @@ ORDER BY
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `CreateTableTypes`
+DROP TABLE IF EXISTS `CreateTableTypes`
 

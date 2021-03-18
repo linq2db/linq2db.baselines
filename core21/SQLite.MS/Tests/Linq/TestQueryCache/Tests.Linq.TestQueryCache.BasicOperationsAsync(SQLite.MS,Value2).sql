@@ -161,10 +161,10 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SampleClassWithIdentity]
+DROP TABLE IF EXISTS [SampleClassWithIdentity]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 

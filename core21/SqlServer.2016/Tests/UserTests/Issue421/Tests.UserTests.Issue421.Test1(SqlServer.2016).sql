@@ -70,5 +70,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [BlobClass]
+DROP TABLE IF EXISTS [BlobClass]
 

@@ -28,5 +28,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [GlobalTaskDTO]
+DROP TABLE IF EXISTS [GlobalTaskDTO]
 

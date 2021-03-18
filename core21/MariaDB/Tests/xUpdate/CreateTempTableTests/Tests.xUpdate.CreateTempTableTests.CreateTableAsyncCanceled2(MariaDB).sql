@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql (asynchronously)
 
-DROP TABLE `TempTable`
+DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

@@ -45,5 +45,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Issue1554FluentTable]
+DROP TABLE IF EXISTS [Issue1554FluentTable]
 

@@ -37,10 +37,10 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Relationship1711]
+DROP TABLE IF EXISTS [Relationship1711]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Entity1711]
+DROP TABLE IF EXISTS [Entity1711]
 

@@ -60,5 +60,5 @@ LIMIT 1
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `BlobClass`
+DROP TABLE IF EXISTS `BlobClass`
 

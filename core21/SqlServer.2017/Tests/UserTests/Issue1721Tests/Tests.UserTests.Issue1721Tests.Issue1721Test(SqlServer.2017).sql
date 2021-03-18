@@ -14,5 +14,5 @@ CREATE TABLE [#I1721Model]
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [#I1721Model]
+DROP TABLE IF EXISTS [#I1721Model]
 

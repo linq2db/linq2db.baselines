@@ -152,5 +152,5 @@ SELECT
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `TestSchemaTypesTable`
+DROP TABLE IF EXISTS `TestSchemaTypesTable`
 

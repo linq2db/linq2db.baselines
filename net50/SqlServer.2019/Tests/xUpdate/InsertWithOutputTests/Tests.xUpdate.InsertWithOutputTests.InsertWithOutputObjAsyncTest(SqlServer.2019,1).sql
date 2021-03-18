@@ -37,5 +37,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [TableWithData]
+DROP TABLE IF EXISTS [TableWithData]
 

@@ -112,7 +112,7 @@ ORDER BY
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `HierarchyData`
+DROP TABLE IF EXISTS `HierarchyData`
 
 BeforeExecute
 -- MySql MySql.Official MySql

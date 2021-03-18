@@ -37,5 +37,5 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Issue1279Table]
+DROP TABLE IF EXISTS [Issue1279Table]
 

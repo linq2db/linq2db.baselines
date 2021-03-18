@@ -34,10 +34,24 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Books"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Books"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "Authors"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Authors"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

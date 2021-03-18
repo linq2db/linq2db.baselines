@@ -29,5 +29,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "ValueItem"
+DROP TABLE IF EXISTS "ValueItem"
 

@@ -42,10 +42,10 @@ GROUP BY
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE person649
+DROP TABLE IF EXISTS person649
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE activity649
+DROP TABLE IF EXISTS activity649
 

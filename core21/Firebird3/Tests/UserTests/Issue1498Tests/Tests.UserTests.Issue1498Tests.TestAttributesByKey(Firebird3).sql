@@ -87,10 +87,16 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Message"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Message')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Message"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "Topic"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Topic')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Topic"';
+END
 

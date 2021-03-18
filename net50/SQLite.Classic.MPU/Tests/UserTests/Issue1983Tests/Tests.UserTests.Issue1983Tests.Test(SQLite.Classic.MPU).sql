@@ -162,10 +162,10 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Issue1983Card]
+DROP TABLE IF EXISTS [Issue1983Card]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Issue1983Person]
+DROP TABLE IF EXISTS [Issue1983Person]
 

@@ -279,5 +279,8 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "TypeConvertTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TypeConvertTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TypeConvertTable"';
+END
 

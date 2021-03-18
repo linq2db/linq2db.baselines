@@ -119,5 +119,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [TestInsertOrReplaceTable]
+DROP TABLE IF EXISTS [TestInsertOrReplaceTable]
 

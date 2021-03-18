@@ -255,5 +255,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TypeConvertTable]
+IF (OBJECT_ID(N'TypeConvertTable') IS NOT NULL)
+	DROP TABLE [TypeConvertTable]
 

@@ -442,5 +442,5 @@ SET     @ReturnFullRow = 0
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [ColumnOrderTest]
+DROP TABLE IF EXISTS [ColumnOrderTest]
 

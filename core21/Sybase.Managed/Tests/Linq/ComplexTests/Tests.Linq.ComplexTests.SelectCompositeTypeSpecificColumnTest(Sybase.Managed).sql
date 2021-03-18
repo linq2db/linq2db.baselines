@@ -28,5 +28,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [User]
+IF (OBJECT_ID(N'User') IS NOT NULL)
+	DROP TABLE [User]
 

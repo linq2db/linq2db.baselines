@@ -53,15 +53,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [NestingC]
+DROP TABLE IF EXISTS [NestingC]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [NestingB]
+DROP TABLE IF EXISTS [NestingB]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [NestingA]
+DROP TABLE IF EXISTS [NestingA]
 

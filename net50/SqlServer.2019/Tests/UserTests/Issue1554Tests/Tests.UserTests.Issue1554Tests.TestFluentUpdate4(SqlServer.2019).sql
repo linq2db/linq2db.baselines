@@ -62,5 +62,5 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Issue1554FluentTable]
+DROP TABLE IF EXISTS [Issue1554FluentTable]
 

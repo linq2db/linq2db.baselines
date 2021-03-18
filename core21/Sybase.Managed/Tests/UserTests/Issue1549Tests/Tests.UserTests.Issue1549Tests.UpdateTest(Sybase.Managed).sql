@@ -94,20 +94,24 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [billing_TempReading]
+IF (OBJECT_ID(N'billing_TempReading') IS NOT NULL)
+	DROP TABLE [billing_TempReading]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [billing_DevReadingType]
+IF (OBJECT_ID(N'billing_DevReadingType') IS NOT NULL)
+	DROP TABLE [billing_DevReadingType]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [billing_devices]
+IF (OBJECT_ID(N'billing_devices') IS NOT NULL)
+	DROP TABLE [billing_devices]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [billing_devtypes]
+IF (OBJECT_ID(N'billing_devtypes') IS NOT NULL)
+	DROP TABLE [billing_devtypes]
 

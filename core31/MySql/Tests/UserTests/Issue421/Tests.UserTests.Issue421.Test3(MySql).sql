@@ -58,5 +58,5 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `BlobClass`
+DROP TABLE IF EXISTS `BlobClass`
 

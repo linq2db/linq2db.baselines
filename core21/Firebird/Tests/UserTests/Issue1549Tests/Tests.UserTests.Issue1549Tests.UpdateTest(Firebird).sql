@@ -164,31 +164,43 @@ BeforeExecute
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_billing_TempReading"';
-	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_billing_TempReading"';
-	EXECUTE STATEMENT 'DROP TABLE "billing_TempReading"';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_billing_TempReading')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_billing_TempReading"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_billing_TempReading')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_billing_TempReading"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'billing_TempReading')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "billing_TempReading"';
 END
 
 BeforeExecute
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_billing_DevReadType"';
-	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_billing_DevReadType"';
-	EXECUTE STATEMENT 'DROP TABLE "billing_DevReadType"';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_billing_DevReadType')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_billing_DevReadType"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_billing_DevReadType')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_billing_DevReadType"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'billing_DevReadType')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "billing_DevReadType"';
 END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "billing_devices"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'billing_devices')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "billing_devices"';
+END
 
 BeforeExecute
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_billing_devtypes"';
-	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_billing_devtypes"';
-	EXECUTE STATEMENT 'DROP TABLE "billing_devtypes"';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_billing_devtypes')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_billing_devtypes"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_billing_devtypes')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_billing_devtypes"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'billing_devtypes')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "billing_devtypes"';
 END
 

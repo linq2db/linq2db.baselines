@@ -102,10 +102,10 @@ FROM
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Issue1096TaskStage"
+DROP TABLE IF EXISTS "Issue1096TaskStage"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Issue1096Task"
+DROP TABLE IF EXISTS "Issue1096Task"
 

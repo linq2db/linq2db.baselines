@@ -77,5 +77,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Issue1373Tests]
+DROP TABLE IF EXISTS [Issue1373Tests]
 

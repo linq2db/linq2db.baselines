@@ -74,5 +74,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
-DROP TABLE "Issue1363"
+DROP TABLE IF EXISTS "Issue1363"
 

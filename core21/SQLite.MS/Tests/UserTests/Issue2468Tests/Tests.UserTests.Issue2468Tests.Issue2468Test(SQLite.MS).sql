@@ -69,5 +69,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [InventoryResourceDTO]
+DROP TABLE IF EXISTS [InventoryResourceDTO]
 

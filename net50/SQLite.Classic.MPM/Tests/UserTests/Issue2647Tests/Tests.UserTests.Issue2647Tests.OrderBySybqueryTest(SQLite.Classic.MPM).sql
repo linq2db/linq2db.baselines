@@ -40,5 +40,5 @@ ORDER BY
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Issue2647Table]
+DROP TABLE IF EXISTS [Issue2647Table]
 

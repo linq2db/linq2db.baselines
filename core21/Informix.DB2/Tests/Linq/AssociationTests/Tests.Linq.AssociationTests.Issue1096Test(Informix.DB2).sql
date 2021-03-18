@@ -102,10 +102,10 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Issue1096TaskStage
+DROP TABLE IF EXISTS Issue1096TaskStage
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Issue1096Task
+DROP TABLE IF EXISTS Issue1096Task
 

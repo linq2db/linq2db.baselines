@@ -116,17 +116,23 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_stVersions"';
-	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_stVersions"';
-	EXECUTE STATEMENT 'DROP TABLE "stVersions"';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_stVersions')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_stVersions"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_stVersions')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_stVersions"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stVersions')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "stVersions"';
 END
 
 BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_stLinks"';
-	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_stLinks"';
-	EXECUTE STATEMENT 'DROP TABLE "stLinks"';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_stLinks')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_stLinks"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_stLinks')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_stLinks"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stLinks')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "stLinks"';
 END
 

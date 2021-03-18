@@ -109,10 +109,12 @@ TRUNCATE TABLE #temp_table2
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE #temp_table2
+IF (OBJECT_ID(N'tempdb..#temp_table2') IS NOT NULL)
+	DROP TABLE #temp_table2
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE #temp_table1
+IF (OBJECT_ID(N'tempdb..#temp_table1') IS NOT NULL)
+	DROP TABLE #temp_table1
 

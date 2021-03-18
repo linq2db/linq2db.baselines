@@ -285,5 +285,5 @@ SELECT * FROM testdata."public"."TestTableFunctionSchema"()
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "ColumnOrderTest"
+DROP TABLE IF EXISTS "ColumnOrderTest"
 

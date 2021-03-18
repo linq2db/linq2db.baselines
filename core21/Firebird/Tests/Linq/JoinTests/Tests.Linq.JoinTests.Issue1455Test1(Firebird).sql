@@ -88,25 +88,40 @@ GROUP BY
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Flat"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Flat')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Flat"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Nomin"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Nomin')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Nomin"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Trade"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Trade')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Trade"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "AuditAlert"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AuditAlert')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "AuditAlert"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Alert"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Alert')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Alert"';
+END
 

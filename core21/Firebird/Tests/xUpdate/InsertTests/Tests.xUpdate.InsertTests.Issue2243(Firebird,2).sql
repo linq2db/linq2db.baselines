@@ -110,5 +110,8 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "test_insert_or_replace"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'test_insert_or_replace')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "test_insert_or_replace"';
+END
 

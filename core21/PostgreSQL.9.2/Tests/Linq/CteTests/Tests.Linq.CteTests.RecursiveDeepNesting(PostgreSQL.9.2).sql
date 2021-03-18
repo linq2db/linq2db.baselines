@@ -10,5 +10,5 @@ CREATE TABLE "HierarchyTree"
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE "HierarchyTree"
+DROP TABLE IF EXISTS "HierarchyTree"
 

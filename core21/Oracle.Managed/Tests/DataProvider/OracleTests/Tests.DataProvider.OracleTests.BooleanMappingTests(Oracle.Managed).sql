@@ -32,5 +32,12 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "BooleanMapping"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "BooleanMapping"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

@@ -129,5 +129,5 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Stone"
+DROP TABLE IF EXISTS "Stone"
 

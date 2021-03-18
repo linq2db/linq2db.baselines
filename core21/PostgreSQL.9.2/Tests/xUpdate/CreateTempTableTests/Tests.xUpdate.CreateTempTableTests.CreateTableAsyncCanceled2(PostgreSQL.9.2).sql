@@ -27,7 +27,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
-DROP TABLE "TempTable"
+DROP TABLE IF EXISTS "TempTable"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

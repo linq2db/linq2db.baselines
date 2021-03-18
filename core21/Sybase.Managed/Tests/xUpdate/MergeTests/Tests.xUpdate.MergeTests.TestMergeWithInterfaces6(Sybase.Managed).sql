@@ -35,5 +35,6 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [ReviewIndexes]
+IF (OBJECT_ID(N'ReviewIndexes') IS NOT NULL)
+	DROP TABLE [ReviewIndexes]
 

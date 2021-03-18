@@ -67,5 +67,12 @@ SET
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-DROP TABLE "TestTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TestTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

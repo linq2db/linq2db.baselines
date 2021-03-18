@@ -127,10 +127,12 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Message]
+IF (OBJECT_ID(N'Message') IS NOT NULL)
+	DROP TABLE [Message]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Topic]
+IF (OBJECT_ID(N'Topic') IS NOT NULL)
+	DROP TABLE [Topic]
 

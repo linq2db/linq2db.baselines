@@ -47,5 +47,5 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `CreateIfNotExistsTable`
+DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 

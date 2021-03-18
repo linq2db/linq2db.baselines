@@ -124,10 +124,10 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [WmsLoadCarrierDTO]
+DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [InventoryResourceDTO]
+DROP TABLE IF EXISTS [InventoryResourceDTO]
 

@@ -38,5 +38,5 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `Issue1279Table`
+DROP TABLE IF EXISTS `Issue1279Table`
 

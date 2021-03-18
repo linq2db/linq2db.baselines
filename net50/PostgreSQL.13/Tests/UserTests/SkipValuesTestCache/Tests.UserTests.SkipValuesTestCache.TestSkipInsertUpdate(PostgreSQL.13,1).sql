@@ -75,5 +75,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "PR_1598_Insert_Table_Cache"
+DROP TABLE IF EXISTS "PR_1598_Insert_Table_Cache"
 

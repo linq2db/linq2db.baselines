@@ -46,5 +46,5 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "PR_1598_Insert_Fluent_Table"
+DROP TABLE IF EXISTS "PR_1598_Insert_Fluent_Table"
 

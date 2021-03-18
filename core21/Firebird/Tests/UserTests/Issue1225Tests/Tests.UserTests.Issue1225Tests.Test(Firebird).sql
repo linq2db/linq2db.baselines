@@ -90,10 +90,16 @@ GROUP BY
 BeforeExecute
 -- Firebird
 
-DROP TABLE "TaskStage"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TaskStage')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TaskStage"';
+END
 
 BeforeExecute
 -- Firebird
 
-DROP TABLE "Task"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Task')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Task"';
+END
 

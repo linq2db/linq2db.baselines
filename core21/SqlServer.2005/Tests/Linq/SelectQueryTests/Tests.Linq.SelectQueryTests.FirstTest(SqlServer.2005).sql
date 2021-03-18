@@ -19,5 +19,6 @@ SELECT TOP (@take)
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [SampleClass]
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
+	DROP TABLE [SampleClass]
 

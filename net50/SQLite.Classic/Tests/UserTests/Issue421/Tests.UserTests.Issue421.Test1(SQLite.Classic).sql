@@ -70,5 +70,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [BlobClass]
+DROP TABLE IF EXISTS [BlobClass]
 

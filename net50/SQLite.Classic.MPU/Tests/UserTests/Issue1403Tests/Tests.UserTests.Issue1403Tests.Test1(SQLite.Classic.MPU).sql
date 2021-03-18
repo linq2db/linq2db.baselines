@@ -38,5 +38,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Issue1403Tests_1]
+DROP TABLE IF EXISTS [Issue1403Tests_1]
 

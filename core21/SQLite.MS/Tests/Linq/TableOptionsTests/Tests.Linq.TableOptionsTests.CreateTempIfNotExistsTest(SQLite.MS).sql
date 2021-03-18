@@ -33,5 +33,5 @@ CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [CreateIfNotExistsTable]
+DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 

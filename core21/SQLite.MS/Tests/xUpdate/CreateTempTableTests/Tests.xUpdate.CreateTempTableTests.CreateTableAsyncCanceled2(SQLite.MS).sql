@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-DROP TABLE [TempTable]
+DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
 -- SQLite.MS SQLite

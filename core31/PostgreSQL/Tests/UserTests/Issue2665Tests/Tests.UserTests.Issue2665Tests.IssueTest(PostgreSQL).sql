@@ -57,15 +57,15 @@ WHERE
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "ProductAttributeMapping"
+DROP TABLE IF EXISTS "ProductAttributeMapping"
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "ProductAttributeTable"
+DROP TABLE IF EXISTS "ProductAttributeTable"
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "ProductTable"
+DROP TABLE IF EXISTS "ProductTable"
 

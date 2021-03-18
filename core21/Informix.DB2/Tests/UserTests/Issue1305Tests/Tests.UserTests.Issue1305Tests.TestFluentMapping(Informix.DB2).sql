@@ -124,5 +124,5 @@ BeforeExecute
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE FluentMapping
+DROP TABLE IF EXISTS FluentMapping
 

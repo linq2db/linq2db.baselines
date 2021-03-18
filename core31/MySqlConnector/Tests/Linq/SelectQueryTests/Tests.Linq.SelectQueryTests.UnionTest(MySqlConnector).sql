@@ -57,5 +57,5 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `SampleClass`
+DROP TABLE IF EXISTS `SampleClass`
 

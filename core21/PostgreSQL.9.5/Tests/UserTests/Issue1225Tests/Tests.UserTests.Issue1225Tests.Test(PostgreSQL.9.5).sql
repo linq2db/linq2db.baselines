@@ -90,10 +90,10 @@ GROUP BY
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "TaskStage"
+DROP TABLE IF EXISTS "TaskStage"
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE "Task"
+DROP TABLE IF EXISTS "Task"
 

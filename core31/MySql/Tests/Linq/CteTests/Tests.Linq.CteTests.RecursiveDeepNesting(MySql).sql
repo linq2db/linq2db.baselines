@@ -10,5 +10,5 @@ CREATE TABLE `HierarchyTree`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `HierarchyTree`
+DROP TABLE IF EXISTS `HierarchyTree`
 

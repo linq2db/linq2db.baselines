@@ -24,5 +24,5 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Issue1189Customer`
+DROP TABLE IF EXISTS `Issue1189Customer`
 

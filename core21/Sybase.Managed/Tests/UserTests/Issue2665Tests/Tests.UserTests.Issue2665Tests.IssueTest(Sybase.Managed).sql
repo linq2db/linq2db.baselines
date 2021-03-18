@@ -57,15 +57,18 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [ProductAttributeMapping]
+IF (OBJECT_ID(N'ProductAttributeMapping') IS NOT NULL)
+	DROP TABLE [ProductAttributeMapping]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [ProductAttributeTable]
+IF (OBJECT_ID(N'ProductAttributeTable') IS NOT NULL)
+	DROP TABLE [ProductAttributeTable]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [ProductTable]
+IF (OBJECT_ID(N'ProductTable') IS NOT NULL)
+	DROP TABLE [ProductTable]
 

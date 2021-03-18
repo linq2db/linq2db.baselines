@@ -29,5 +29,5 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DROP TABLE `ValueItem`
+DROP TABLE IF EXISTS `ValueItem`
 

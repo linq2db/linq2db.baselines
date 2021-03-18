@@ -79,5 +79,5 @@ LIMIT @take
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `PR_1598_Insert_Table`
+DROP TABLE IF EXISTS `PR_1598_Insert_Table`
 

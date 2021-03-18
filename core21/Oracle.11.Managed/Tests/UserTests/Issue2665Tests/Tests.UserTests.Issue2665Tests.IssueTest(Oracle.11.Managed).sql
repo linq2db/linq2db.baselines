@@ -57,15 +57,36 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "ProductAttributeMapping"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ProductAttributeMapping"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "ProductAttributeTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ProductAttributeTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "ProductTable"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ProductTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

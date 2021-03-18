@@ -56,15 +56,15 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Table3]
+DROP TABLE IF EXISTS [Table3]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Table2]
+DROP TABLE IF EXISTS [Table2]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Table1]
+DROP TABLE IF EXISTS [Table1]
 

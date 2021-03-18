@@ -129,5 +129,5 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Stone
+DROP TABLE IF EXISTS Stone
 

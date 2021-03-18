@@ -30,5 +30,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Issue1110TB]
+DROP TABLE IF EXISTS [Issue1110TB]
 

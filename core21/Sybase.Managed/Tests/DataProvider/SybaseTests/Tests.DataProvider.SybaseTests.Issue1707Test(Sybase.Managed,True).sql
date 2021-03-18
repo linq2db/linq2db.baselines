@@ -221,5 +221,6 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Issue1707]
+IF (OBJECT_ID(N'Issue1707') IS NOT NULL)
+	DROP TABLE [Issue1707]
 

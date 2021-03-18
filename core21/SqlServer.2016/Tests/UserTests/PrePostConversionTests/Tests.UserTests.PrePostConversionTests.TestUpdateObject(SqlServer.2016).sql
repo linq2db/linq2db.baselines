@@ -78,5 +78,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [ValuesTable]
+DROP TABLE IF EXISTS [ValuesTable]
 

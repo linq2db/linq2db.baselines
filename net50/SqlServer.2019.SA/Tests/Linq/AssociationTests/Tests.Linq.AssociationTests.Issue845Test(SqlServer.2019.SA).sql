@@ -30,10 +30,10 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Department]
+DROP TABLE IF EXISTS [Department]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Employee]
+DROP TABLE IF EXISTS [Employee]
 

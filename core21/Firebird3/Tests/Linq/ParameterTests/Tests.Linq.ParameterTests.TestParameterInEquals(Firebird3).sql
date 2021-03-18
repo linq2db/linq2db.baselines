@@ -35,10 +35,16 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "TestEqualsTable2"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestEqualsTable2')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TestEqualsTable2"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "TestEqualsTable1"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestEqualsTable1')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TestEqualsTable1"';
+END
 

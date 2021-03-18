@@ -68,15 +68,15 @@ ORDER BY
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [IIRs]
+DROP TABLE IF EXISTS [IIRs]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [EmailAttachments]
+DROP TABLE IF EXISTS [EmailAttachments]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [mails]
+DROP TABLE IF EXISTS [mails]
 

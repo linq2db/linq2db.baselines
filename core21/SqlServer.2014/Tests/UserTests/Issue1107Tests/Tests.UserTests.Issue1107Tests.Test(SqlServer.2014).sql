@@ -15,5 +15,6 @@ INSERT BULK [Issue1107TB](Id, TestDate)
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [Issue1107TB]
+IF (OBJECT_ID(N'[Issue1107TB]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1107TB]
 

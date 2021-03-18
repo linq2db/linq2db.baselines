@@ -37,10 +37,10 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Relationship1711
+DROP TABLE IF EXISTS Relationship1711
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Entity1711
+DROP TABLE IF EXISTS Entity1711
 

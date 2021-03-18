@@ -112,10 +112,10 @@ DELETE FROM [temp_table2]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [temp_table2]
+DROP TABLE IF EXISTS [temp_table2]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [temp_table1]
+DROP TABLE IF EXISTS [temp_table1]
 

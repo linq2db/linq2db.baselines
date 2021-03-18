@@ -73,5 +73,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [PR_1598_Insert_Table]
+IF (OBJECT_ID(N'PR_1598_Insert_Table') IS NOT NULL)
+	DROP TABLE [PR_1598_Insert_Table]
 

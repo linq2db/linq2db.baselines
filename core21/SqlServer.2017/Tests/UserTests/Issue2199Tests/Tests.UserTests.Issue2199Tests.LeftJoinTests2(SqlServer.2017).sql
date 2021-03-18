@@ -57,10 +57,10 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Country]
+DROP TABLE IF EXISTS [Country]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Manufacturer]
+DROP TABLE IF EXISTS [Manufacturer]
 

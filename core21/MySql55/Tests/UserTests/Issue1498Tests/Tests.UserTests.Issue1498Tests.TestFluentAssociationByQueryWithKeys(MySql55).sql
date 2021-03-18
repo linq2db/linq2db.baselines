@@ -137,10 +137,10 @@ LIMIT @take
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Message`
+DROP TABLE IF EXISTS `Message`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Topic`
+DROP TABLE IF EXISTS `Topic`
 

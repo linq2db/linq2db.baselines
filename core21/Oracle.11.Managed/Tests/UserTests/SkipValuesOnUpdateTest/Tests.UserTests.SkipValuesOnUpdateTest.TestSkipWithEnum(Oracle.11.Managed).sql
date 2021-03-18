@@ -122,5 +122,12 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "PR_1598_Update_Enum_Table"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "PR_1598_Update_Enum_Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

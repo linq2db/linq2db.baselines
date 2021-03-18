@@ -20,5 +20,8 @@ FROM
 BeforeExecute
 -- Firebird
 
-DROP TABLE "IsGlobalTemporaryTable"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'IsGlobalTemporaryTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "IsGlobalTemporaryTable"';
+END
 

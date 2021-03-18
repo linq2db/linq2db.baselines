@@ -45,5 +45,8 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE "PR_1598_Insert_Null_Table"
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'PR_1598_Insert_Null_Table')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "PR_1598_Insert_Null_Table"';
+END
 

@@ -27,7 +27,8 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-DROP TABLE #TempTable
+IF (OBJECT_ID(N'tempdb..#TempTable') IS NOT NULL)
+	DROP TABLE #TempTable
 
 BeforeExecute
 -- Sybase.Managed Sybase

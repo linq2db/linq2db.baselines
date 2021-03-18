@@ -24,5 +24,5 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE Issue2434Table
+DROP TABLE IF EXISTS Issue2434Table
 

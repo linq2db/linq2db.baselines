@@ -31,10 +31,24 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "i1084_student"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "i1084_student"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DROP TABLE "i1084_person"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "i1084_person"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

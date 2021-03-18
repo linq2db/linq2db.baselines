@@ -129,5 +129,5 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Stone`
+DROP TABLE IF EXISTS `Stone`
 

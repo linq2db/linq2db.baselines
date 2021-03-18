@@ -102,10 +102,10 @@ FROM
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Issue1096TaskStage`
+DROP TABLE IF EXISTS `Issue1096TaskStage`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE `Issue1096Task`
+DROP TABLE IF EXISTS `Issue1096Task`
 

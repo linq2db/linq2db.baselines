@@ -57,5 +57,5 @@ ORDER BY
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE CreateTableTypes
+DROP TABLE IF EXISTS CreateTableTypes
 

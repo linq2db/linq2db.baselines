@@ -77,15 +77,24 @@ FROM
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE O3
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'O3')) THEN
+		EXECUTE STATEMENT 'DROP TABLE O3';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE O2
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'O2')) THEN
+		EXECUTE STATEMENT 'DROP TABLE O2';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-DROP TABLE O1
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'O1')) THEN
+		EXECUTE STATEMENT 'DROP TABLE O1';
+END
 

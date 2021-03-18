@@ -35,10 +35,12 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TestEqualsTable2]
+IF (OBJECT_ID(N'TestEqualsTable2') IS NOT NULL)
+	DROP TABLE [TestEqualsTable2]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [TestEqualsTable1]
+IF (OBJECT_ID(N'TestEqualsTable1') IS NOT NULL)
+	DROP TABLE [TestEqualsTable1]
 

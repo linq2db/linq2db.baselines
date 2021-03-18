@@ -58,5 +58,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Parent564]
+IF (OBJECT_ID(N'Parent564') IS NOT NULL)
+	DROP TABLE [Parent564]
 

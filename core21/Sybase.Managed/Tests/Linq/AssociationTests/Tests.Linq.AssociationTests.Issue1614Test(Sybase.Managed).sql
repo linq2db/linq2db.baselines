@@ -41,15 +41,18 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Lookup]
+IF (OBJECT_ID(N'Lookup') IS NOT NULL)
+	DROP TABLE [Lookup]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [Resource]
+IF (OBJECT_ID(N'Resource') IS NOT NULL)
+	DROP TABLE [Resource]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DROP TABLE [User]
+IF (OBJECT_ID(N'User') IS NOT NULL)
+	DROP TABLE [User]
 
