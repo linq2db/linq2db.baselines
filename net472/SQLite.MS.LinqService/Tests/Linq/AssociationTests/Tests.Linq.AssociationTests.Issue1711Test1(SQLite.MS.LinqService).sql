@@ -37,10 +37,10 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Relationship1711]
+DROP TABLE IF EXISTS [Relationship1711]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Entity1711]
+DROP TABLE IF EXISTS [Entity1711]
 

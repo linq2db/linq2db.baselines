@@ -26,5 +26,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [CustomerBase]
+DROP TABLE IF EXISTS [CustomerBase]
 

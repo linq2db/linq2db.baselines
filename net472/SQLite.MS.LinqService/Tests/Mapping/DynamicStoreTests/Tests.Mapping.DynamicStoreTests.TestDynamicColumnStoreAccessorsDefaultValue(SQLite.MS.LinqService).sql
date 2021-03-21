@@ -37,5 +37,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [DynamicColumnsTestTable]
+DROP TABLE IF EXISTS [DynamicColumnsTestTable]
 

@@ -17,5 +17,5 @@ CREATE TABLE [TestTable]
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [TestTable]
+DROP TABLE IF EXISTS [TestTable]
 

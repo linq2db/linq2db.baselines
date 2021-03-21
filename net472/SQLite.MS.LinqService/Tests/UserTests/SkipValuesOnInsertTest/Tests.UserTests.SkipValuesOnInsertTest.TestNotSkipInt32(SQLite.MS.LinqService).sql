@@ -87,5 +87,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [PR_1598_Insert_Table]
+DROP TABLE IF EXISTS [PR_1598_Insert_Table]
 
