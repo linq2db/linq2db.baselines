@@ -34,10 +34,10 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Books]
+DROP TABLE IF EXISTS [Books]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Authors]
+DROP TABLE IF EXISTS [Authors]
 

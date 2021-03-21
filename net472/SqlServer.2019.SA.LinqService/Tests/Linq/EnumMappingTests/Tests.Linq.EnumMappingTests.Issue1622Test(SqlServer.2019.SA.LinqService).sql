@@ -56,5 +56,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [Issue1622Table]
+DROP TABLE IF EXISTS [Issue1622Table]
 

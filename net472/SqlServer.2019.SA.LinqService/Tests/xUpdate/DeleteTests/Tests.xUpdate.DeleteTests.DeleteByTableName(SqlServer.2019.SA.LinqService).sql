@@ -82,5 +82,5 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [xxPerson]
+DROP TABLE IF EXISTS [xxPerson]
 

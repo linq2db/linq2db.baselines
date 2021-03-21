@@ -289,7 +289,7 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [DestinationTable]
+DROP TABLE IF EXISTS [DestinationTable]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017

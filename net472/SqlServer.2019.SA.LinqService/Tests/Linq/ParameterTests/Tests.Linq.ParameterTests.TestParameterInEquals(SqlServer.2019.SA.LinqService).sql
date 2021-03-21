@@ -35,10 +35,10 @@ WHERE
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [TestEqualsTable2]
+DROP TABLE IF EXISTS [TestEqualsTable2]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [TestEqualsTable1]
+DROP TABLE IF EXISTS [TestEqualsTable1]
 

@@ -19,5 +19,5 @@ SELECT TOP (@take)
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 
