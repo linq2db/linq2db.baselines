@@ -28,5 +28,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [DataClass]
+IF (OBJECT_ID(N'[DataClass]', N'U') IS NOT NULL)
+	DROP TABLE [DataClass]
 

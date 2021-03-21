@@ -135,10 +135,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [Message]
+IF (OBJECT_ID(N'[Message]', N'U') IS NOT NULL)
+	DROP TABLE [Message]
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [Topic]
+IF (OBJECT_ID(N'[Topic]', N'U') IS NOT NULL)
+	DROP TABLE [Topic]
 

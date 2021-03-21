@@ -55,5 +55,6 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [#TestMergeTVPTable]
+IF (OBJECT_ID(N'[tempdb]..[#TestMergeTVPTable]', N'U') IS NOT NULL)
+	DROP TABLE [#TestMergeTVPTable]
 

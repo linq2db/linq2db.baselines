@@ -73,5 +73,6 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [CteChild]
+IF (OBJECT_ID(N'[CteChild]', N'U') IS NOT NULL)
+	DROP TABLE [CteChild]
 
