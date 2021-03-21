@@ -98,20 +98,24 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [billing_TempReading]
+IF (OBJECT_ID(N'[billing_TempReading]', N'U') IS NOT NULL)
+	DROP TABLE [billing_TempReading]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [billing_DevReadingType]
+IF (OBJECT_ID(N'[billing_DevReadingType]', N'U') IS NOT NULL)
+	DROP TABLE [billing_DevReadingType]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [billing_devices]
+IF (OBJECT_ID(N'[billing_devices]', N'U') IS NOT NULL)
+	DROP TABLE [billing_devices]
 
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [billing_devtypes]
+IF (OBJECT_ID(N'[billing_devtypes]', N'U') IS NOT NULL)
+	DROP TABLE [billing_devtypes]
 

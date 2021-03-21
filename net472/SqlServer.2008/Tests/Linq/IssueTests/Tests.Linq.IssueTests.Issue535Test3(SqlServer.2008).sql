@@ -28,5 +28,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [CustomerBase]
+IF (OBJECT_ID(N'[CustomerBase]', N'U') IS NOT NULL)
+	DROP TABLE [CustomerBase]
 

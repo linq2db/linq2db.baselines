@@ -19,5 +19,6 @@ FROM
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [##IsGlobalTemporaryTable]
+IF (OBJECT_ID(N'[tempdb]..[##IsGlobalTemporaryTable]', N'U') IS NOT NULL)
+	DROP TABLE [##IsGlobalTemporaryTable]
 

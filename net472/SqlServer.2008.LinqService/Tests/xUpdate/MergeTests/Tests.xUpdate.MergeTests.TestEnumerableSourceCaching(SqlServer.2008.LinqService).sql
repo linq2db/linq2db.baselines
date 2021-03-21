@@ -97,5 +97,6 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [CacheTestTable]
+IF (OBJECT_ID(N'[CacheTestTable]', N'U') IS NOT NULL)
+	DROP TABLE [CacheTestTable]
 

@@ -288,7 +288,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [DestinationTable]
+IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NOT NULL)
+	DROP TABLE [DestinationTable]
 
 BeforeExecute
 -- SqlServer.2008

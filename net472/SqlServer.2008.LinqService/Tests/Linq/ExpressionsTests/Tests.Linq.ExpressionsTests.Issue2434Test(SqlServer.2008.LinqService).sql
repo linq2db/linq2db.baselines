@@ -24,5 +24,6 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Issue2434Table]
+IF (OBJECT_ID(N'[Issue2434Table]', N'U') IS NOT NULL)
+	DROP TABLE [Issue2434Table]
 

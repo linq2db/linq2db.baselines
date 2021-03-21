@@ -70,5 +70,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [BlobClass]
+IF (OBJECT_ID(N'[BlobClass]', N'U') IS NOT NULL)
+	DROP TABLE [BlobClass]
 

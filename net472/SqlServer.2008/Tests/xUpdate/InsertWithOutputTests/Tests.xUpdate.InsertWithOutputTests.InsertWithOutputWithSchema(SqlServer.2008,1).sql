@@ -37,5 +37,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [TestSchema].[TableWithDataAndSchema]
+IF (OBJECT_ID(N'[TestSchema].[TableWithDataAndSchema]', N'U') IS NOT NULL)
+	DROP TABLE [TestSchema].[TableWithDataAndSchema]
 
