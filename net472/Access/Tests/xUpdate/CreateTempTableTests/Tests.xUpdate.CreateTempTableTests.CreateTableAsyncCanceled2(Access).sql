@@ -24,7 +24,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- Access AccessOleDb
+-- Access AccessOleDb (asynchronously)
 
 DROP TABLE [TempTable]
 

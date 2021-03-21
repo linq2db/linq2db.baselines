@@ -14,20 +14,20 @@ FROM
 		FROM
 			(
 				SELECT
-					[t1].[c1] as [month_1],
-					[t1].[c2] as [year_1],
+					[t1].[month_1],
+					[t1].[year_1],
 					1 as [int_1]
 				FROM
 					(
 						SELECT
-							DatePart('m', [selectParam].[DateTimeValue]) as [c1],
-							DatePart('yyyy', [selectParam].[DateTimeValue]) as [c2]
+							DatePart('m', [selectParam].[DateTimeValue]) as [month_1],
+							DatePart('yyyy', [selectParam].[DateTimeValue]) as [year_1]
 						FROM
 							[LinqDataTypes] [selectParam]
 					) [t1]
 				GROUP BY
-					[t1].[c1],
-					[t1].[c2]
+					[t1].[month_1],
+					[t1].[year_1]
 			) [t2]
 		UNION
 		SELECT
