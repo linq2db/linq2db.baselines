@@ -57,15 +57,15 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [ProductAttributeMapping]
+DROP TABLE IF EXISTS [ProductAttributeMapping]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [ProductAttributeTable]
+DROP TABLE IF EXISTS [ProductAttributeTable]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [ProductTable]
+DROP TABLE IF EXISTS [ProductTable]
 

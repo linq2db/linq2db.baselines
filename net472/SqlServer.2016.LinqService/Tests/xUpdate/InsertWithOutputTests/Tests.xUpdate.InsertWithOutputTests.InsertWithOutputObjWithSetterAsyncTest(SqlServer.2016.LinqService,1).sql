@@ -37,5 +37,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [TableWithData]
+DROP TABLE IF EXISTS [TableWithData]
 

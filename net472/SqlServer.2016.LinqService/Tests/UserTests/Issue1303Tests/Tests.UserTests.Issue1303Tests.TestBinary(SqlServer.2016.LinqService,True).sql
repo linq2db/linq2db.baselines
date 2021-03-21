@@ -69,5 +69,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Issue1303]
+DROP TABLE IF EXISTS [Issue1303]
 

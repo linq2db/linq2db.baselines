@@ -25,5 +25,5 @@ WHEN MATCHED AND [Target].[Id] = [Source].[Id] THEN DELETE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [ReviewIndexes]
+DROP TABLE IF EXISTS [ReviewIndexes]
 

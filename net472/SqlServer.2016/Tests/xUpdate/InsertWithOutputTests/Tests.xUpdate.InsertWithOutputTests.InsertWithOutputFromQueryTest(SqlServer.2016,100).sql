@@ -88,7 +88,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [DestinationTable]
+DROP TABLE IF EXISTS [DestinationTable]
 
 BeforeExecute
 -- SqlServer.2016

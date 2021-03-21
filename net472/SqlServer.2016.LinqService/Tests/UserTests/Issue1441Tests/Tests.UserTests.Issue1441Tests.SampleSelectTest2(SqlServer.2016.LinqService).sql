@@ -34,10 +34,10 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Books]
+DROP TABLE IF EXISTS [Books]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Authors]
+DROP TABLE IF EXISTS [Authors]
 

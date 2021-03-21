@@ -24,5 +24,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Issue2434Table]
+DROP TABLE IF EXISTS [Issue2434Table]
 

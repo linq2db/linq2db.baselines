@@ -126,5 +126,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [PR_1598_Update_Enum_Table]
+DROP TABLE IF EXISTS [PR_1598_Update_Enum_Table]
 

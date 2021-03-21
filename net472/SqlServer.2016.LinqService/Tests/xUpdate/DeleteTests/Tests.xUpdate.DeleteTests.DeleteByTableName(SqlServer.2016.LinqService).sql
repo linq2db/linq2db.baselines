@@ -82,5 +82,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [xxPerson]
+DROP TABLE IF EXISTS [xxPerson]
 

@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [AttributeBase]
+DROP TABLE IF EXISTS [AttributeBase]
 

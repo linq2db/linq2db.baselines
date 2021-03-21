@@ -33,7 +33,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 DROP TABLE IF EXISTS [TempTable]
 

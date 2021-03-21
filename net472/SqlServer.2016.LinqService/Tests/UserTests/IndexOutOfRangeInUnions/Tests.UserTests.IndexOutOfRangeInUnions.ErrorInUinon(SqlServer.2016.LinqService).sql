@@ -65,15 +65,15 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [O3]
+DROP TABLE IF EXISTS [O3]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [O2]
+DROP TABLE IF EXISTS [O2]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [O1]
+DROP TABLE IF EXISTS [O1]
 
