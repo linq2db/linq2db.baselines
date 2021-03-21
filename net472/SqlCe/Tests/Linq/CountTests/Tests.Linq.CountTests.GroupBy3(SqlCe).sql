@@ -2,13 +2,13 @@
 -- SqlCe
 
 SELECT
-	[t2].[c1],
+	[t2].[ParentID],
 	Min([t2].[ChildID]),
 	Count([t1].[ParentID])
 FROM
 	(
 		SELECT
-			[ch].[ParentID] + 1 as [c1],
+			[ch].[ParentID] + 1 as [ParentID],
 			[ch].[ChildID]
 		FROM
 			[Child] [ch]
@@ -24,7 +24,7 @@ FROM
 				[ch_1].[ChildID] > 25 AND [ch_1].[ParentID] > 0
 			GROUP BY
 				[ch_1].[ParentID]
-		) [t1] ON [t2].[c1] = [t1].[ParentID] + 1
+		) [t1] ON [t2].[ParentID] = [t1].[ParentID] + 1
 GROUP BY
-	[t2].[c1]
+	[t2].[ParentID]
 
