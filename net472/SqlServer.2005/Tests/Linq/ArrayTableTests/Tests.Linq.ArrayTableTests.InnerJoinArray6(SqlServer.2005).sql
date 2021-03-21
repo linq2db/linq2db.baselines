@@ -11,6 +11,6 @@ FROM
 	[Person] [p]
 		INNER JOIN (
 			SELECT
-				N'Doe' as [Item]
-		) [n] ON [p].[LastName] = [n].[Item]
+				N'Doe' as [c1]
+		) [n] ON [p].[LastName] = [n].[c1]
 

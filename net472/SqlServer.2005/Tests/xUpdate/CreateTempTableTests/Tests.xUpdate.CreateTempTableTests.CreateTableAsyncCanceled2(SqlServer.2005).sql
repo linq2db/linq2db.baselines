@@ -25,9 +25,10 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
-DROP TABLE [#TempTable]
+IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [#TempTable]
 
 BeforeExecute
 -- SqlServer.2005
