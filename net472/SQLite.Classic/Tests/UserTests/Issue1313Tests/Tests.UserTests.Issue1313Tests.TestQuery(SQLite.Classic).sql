@@ -29,5 +29,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [ValueItem]
+DROP TABLE IF EXISTS [ValueItem]
 

@@ -24,5 +24,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Issue1189Customer]
+DROP TABLE IF EXISTS [Issue1189Customer]
 

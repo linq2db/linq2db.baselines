@@ -102,10 +102,10 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Issue1096TaskStage]
+DROP TABLE IF EXISTS [Issue1096TaskStage]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Issue1096Task]
+DROP TABLE IF EXISTS [Issue1096Task]
 

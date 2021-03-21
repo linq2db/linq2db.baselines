@@ -87,7 +87,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [InsertTestClassDest]
+DROP TABLE IF EXISTS [InsertTestClassDest]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

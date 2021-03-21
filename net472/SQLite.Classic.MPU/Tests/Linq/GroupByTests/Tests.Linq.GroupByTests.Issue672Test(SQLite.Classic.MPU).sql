@@ -127,5 +127,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Stone]
+DROP TABLE IF EXISTS [Stone]
 

@@ -17,5 +17,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [Entity]
+DROP TABLE IF EXISTS [Entity]
 

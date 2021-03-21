@@ -56,23 +56,23 @@ DECLARE @id  -- Int32
 SET     @id = 0
 
 SELECT
-	[t2].[ctb_1],
-	[t2].[ctb_2],
-	[t2].[ctb_3],
-	[t2].[col],
-	[t2].[ctb],
-	[t2].[col_1]
+	[t2].[allE],
+	[t2].[allE_1],
+	[t2].[tbl3],
+	[t2].[tbl3_1],
+	[t2].[btbl],
+	[t2].[col]
 FROM
 	[table1] [t1_1]
 		LEFT JOIN [table2] [bt1] ON [t1_1].[c_tb1l_Id] = [bt1].[id]
 		LEFT JOIN (
 			SELECT
-				[btbl].[id] as [ctb],
-				[allE].[Id] as [ctb_1],
-				[allE].[maxCol] as [ctb_2],
-				[tbl3].[id] as [ctb_3],
-				[tbl3].[col],
-				[btbl].[col] as [col_1]
+				[btbl].[id] as [btbl],
+				[allE].[Id] as [allE],
+				[allE].[maxCol] as [allE_1],
+				[tbl3].[id] as [tbl3],
+				[tbl3].[col] as [tbl3_1],
+				[btbl].[col]
 			FROM
 				(
 					SELECT
@@ -85,40 +85,40 @@ FROM
 				) [allE]
 					LEFT JOIN [table3] [tbl3] ON [allE].[maxCol] = [tbl3].[id]
 					LEFT JOIN [table3] [btbl] ON ([btbl].[col] = [tbl3].[col] OR [btbl].[col] IS NULL AND [tbl3].[col] IS NULL)
-		) [t2] ON [bt1].[col3] = [t2].[ctb]
+		) [t2] ON [bt1].[col3] = [t2].[btbl]
 		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
 WHERE
 	[t1_1].[commonTableId] = @id
 GROUP BY
-	[t2].[ctb_1],
-	[t2].[ctb_2],
-	[t2].[ctb_3],
-	[t2].[ctb],
-	[t2].[col],
-	[t2].[col_1]
+	[t2].[allE],
+	[t2].[allE_1],
+	[t2].[tbl3],
+	[t2].[btbl],
+	[t2].[tbl3_1],
+	[t2].[col]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [c_table2]
+DROP TABLE IF EXISTS [c_table2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [b_table2]
+DROP TABLE IF EXISTS [b_table2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [table3]
+DROP TABLE IF EXISTS [table3]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [table2]
+DROP TABLE IF EXISTS [table2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [table1]
+DROP TABLE IF EXISTS [table1]
 

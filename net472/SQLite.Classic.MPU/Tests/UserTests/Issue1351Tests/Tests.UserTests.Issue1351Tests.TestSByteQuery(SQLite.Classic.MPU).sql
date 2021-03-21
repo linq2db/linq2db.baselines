@@ -35,5 +35,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [T1351Model]
+DROP TABLE IF EXISTS [T1351Model]
 

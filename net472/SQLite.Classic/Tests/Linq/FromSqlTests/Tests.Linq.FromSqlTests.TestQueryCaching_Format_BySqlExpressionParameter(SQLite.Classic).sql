@@ -55,7 +55,7 @@ CREATE TABLE [sample_other_class]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [sample_other_class]
+DROP TABLE IF EXISTS [sample_other_class]
 
 BeforeExecute
 -- SQLite.Classic SQLite

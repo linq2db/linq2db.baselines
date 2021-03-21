@@ -77,5 +77,5 @@ ORDER BY
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Issue1373Tests]
+DROP TABLE IF EXISTS [Issue1373Tests]
 
