@@ -10,5 +10,6 @@ CREATE TABLE [HierarchyTree]
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [HierarchyTree]
+IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NOT NULL)
+	DROP TABLE [HierarchyTree]
 

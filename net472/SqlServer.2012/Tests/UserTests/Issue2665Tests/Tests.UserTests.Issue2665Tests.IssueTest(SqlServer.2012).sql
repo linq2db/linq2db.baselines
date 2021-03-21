@@ -57,15 +57,18 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [ProductAttributeMapping]
+IF (OBJECT_ID(N'[ProductAttributeMapping]', N'U') IS NOT NULL)
+	DROP TABLE [ProductAttributeMapping]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [ProductAttributeTable]
+IF (OBJECT_ID(N'[ProductAttributeTable]', N'U') IS NOT NULL)
+	DROP TABLE [ProductAttributeTable]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [ProductTable]
+IF (OBJECT_ID(N'[ProductTable]', N'U') IS NOT NULL)
+	DROP TABLE [ProductTable]
 

@@ -33,7 +33,7 @@ SELECT
 	[t1].[ManufacturerId],
 	[t1].[CountryCode],
 	[t1].[Name],
-	[t1].[Code],
+	[t1].[co],
 	[t1].[Name_1]
 FROM
 	[Manufacturer] [e_1]
@@ -43,7 +43,7 @@ FROM
 				[e].[ManufacturerId],
 				[e].[CountryCode],
 				[e].[Name],
-				[ce_1].[Code],
+				[ce_1].[Code] as [co],
 				[ce_1].[Name] as [Name_1]
 			FROM
 				[Manufacturer] [e]
@@ -57,10 +57,12 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Country]
+IF (OBJECT_ID(N'[Country]', N'U') IS NOT NULL)
+	DROP TABLE [Country]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Manufacturer]
+IF (OBJECT_ID(N'[Manufacturer]', N'U') IS NOT NULL)
+	DROP TABLE [Manufacturer]
 

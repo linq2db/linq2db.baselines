@@ -25,5 +25,6 @@ WHEN MATCHED THEN DELETE
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [ReviewIndexes]
+IF (OBJECT_ID(N'[ReviewIndexes]', N'U') IS NOT NULL)
+	DROP TABLE [ReviewIndexes]
 

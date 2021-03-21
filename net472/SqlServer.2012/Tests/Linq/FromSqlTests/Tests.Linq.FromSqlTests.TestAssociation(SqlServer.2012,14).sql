@@ -73,7 +73,8 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [sample_other_class]
+IF (OBJECT_ID(N'[sample_other_class]', N'U') IS NOT NULL)
+	DROP TABLE [sample_other_class]
 
 BeforeExecute
 -- SqlServer.2012

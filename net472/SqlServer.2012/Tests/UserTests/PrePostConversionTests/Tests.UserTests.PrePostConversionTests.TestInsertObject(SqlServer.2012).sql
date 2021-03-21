@@ -47,5 +47,6 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [ValuesTable]
+IF (OBJECT_ID(N'[ValuesTable]', N'U') IS NOT NULL)
+	DROP TABLE [ValuesTable]
 
