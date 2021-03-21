@@ -86,16 +86,16 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	[t1].[c1]
+	[t1].[Key_1]
 FROM
 	(
 		SELECT
-			CAST([selectParam].[dt] AS TIME) as [c1]
+			CAST([selectParam].[dt] AS TIME) as [Key_1]
 		FROM
 			[Issue1613] [selectParam]
 	) [t1]
 GROUP BY
-	[t1].[c1]
+	[t1].[Key_1]
 
 BeforeExecute
 -- SqlServer.2017

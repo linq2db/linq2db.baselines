@@ -61,5 +61,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [TreeItem]
+DROP TABLE IF EXISTS [TreeItem]
 

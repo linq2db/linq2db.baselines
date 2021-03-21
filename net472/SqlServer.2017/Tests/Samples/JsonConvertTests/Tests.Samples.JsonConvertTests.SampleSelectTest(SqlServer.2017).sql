@@ -39,5 +39,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 

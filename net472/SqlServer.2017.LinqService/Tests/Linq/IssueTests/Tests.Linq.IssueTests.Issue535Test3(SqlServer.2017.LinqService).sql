@@ -28,5 +28,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [CustomerBase]
+DROP TABLE IF EXISTS [CustomerBase]
 

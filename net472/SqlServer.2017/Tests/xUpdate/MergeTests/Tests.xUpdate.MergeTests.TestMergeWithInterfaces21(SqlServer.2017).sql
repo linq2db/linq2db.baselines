@@ -25,5 +25,5 @@ WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = 3 THEN DELETE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [ReviewIndexes]
+DROP TABLE IF EXISTS [ReviewIndexes]
 

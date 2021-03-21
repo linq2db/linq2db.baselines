@@ -14,7 +14,7 @@ FROM
 			FROM
 				(
 					SELECT
-						1 as [c1],
+						1 as [Key_1],
 						[t].[ChildID]
 					FROM
 						[Child] [t]
@@ -22,7 +22,7 @@ FROM
 						[t].[ParentID] = [q].[ParentID]
 				) [c_1]
 			GROUP BY
-				[c_1].[c1]
+				[c_1].[Key_1]
 		) [t1]
 WHERE
 	[t1].[Count_1] > 0
@@ -40,14 +40,14 @@ FROM
 			FROM
 				(
 					SELECT
-						1 as [c1]
+						1 as [Key_1]
 					FROM
 						[Child] [t]
 					WHERE
 						[t].[ParentID] = [q].[ParentID]
 				) [c_1]
 			GROUP BY
-				[c_1].[c1]
+				[c_1].[Key_1]
 		) [t1]
 WHERE
 	[t1].[Count_1] > 0

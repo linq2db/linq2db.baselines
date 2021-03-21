@@ -28,5 +28,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [DataClass]
+DROP TABLE IF EXISTS [DataClass]
 
