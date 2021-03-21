@@ -48,5 +48,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [BlobClass]
+DROP TABLE IF EXISTS [BlobClass]
 

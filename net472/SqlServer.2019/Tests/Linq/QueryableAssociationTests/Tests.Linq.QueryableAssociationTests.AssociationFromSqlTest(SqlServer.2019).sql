@@ -18,10 +18,10 @@ CREATE TABLE [LargeNumberEntity]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [LargeNumberEntity]
+DROP TABLE IF EXISTS [LargeNumberEntity]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [FewNumberEntity]
+DROP TABLE IF EXISTS [FewNumberEntity]
 

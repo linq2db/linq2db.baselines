@@ -129,5 +129,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Stone]
+DROP TABLE IF EXISTS [Stone]
 

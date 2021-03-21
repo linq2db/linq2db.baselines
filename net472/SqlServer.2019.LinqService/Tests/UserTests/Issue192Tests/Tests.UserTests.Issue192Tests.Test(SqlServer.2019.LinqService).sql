@@ -279,5 +279,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [TypeConvertTable]
+DROP TABLE IF EXISTS [TypeConvertTable]
 

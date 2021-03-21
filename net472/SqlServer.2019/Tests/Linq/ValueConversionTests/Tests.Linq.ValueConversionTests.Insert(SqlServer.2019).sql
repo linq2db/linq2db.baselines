@@ -193,5 +193,5 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 

@@ -29,5 +29,5 @@ FROM
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [ValueItem]
+DROP TABLE IF EXISTS [ValueItem]
 

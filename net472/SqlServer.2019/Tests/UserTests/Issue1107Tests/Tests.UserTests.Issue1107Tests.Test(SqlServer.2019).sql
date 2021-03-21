@@ -15,5 +15,5 @@ INSERT BULK [Issue1107TB](Id, TestDate)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Issue1107TB]
+DROP TABLE IF EXISTS [Issue1107TB]
 

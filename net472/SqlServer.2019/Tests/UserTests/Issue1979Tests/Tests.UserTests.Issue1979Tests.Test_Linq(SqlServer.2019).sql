@@ -52,15 +52,15 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Issue]
+DROP TABLE IF EXISTS [Issue]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Tagging]
+DROP TABLE IF EXISTS [Tagging]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [Tag]
+DROP TABLE IF EXISTS [Tag]
 

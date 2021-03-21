@@ -10,5 +10,5 @@ CREATE TABLE [##TestTable]
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [##TestTable]
+DROP TABLE IF EXISTS [##TestTable]
 
