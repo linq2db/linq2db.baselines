@@ -6,7 +6,7 @@ DECLARE @part2  -- Int32
 SET     @part2 = 4
 
 SELECT
-	Add_Months("t"."DateTimeValue", (("t"."SmallIntValue" + ?) - ?) * 3)
+	Add_Months("t"."DateTimeValue", Cast((("t"."SmallIntValue" + ?) - ?) as Double) * 3)
 FROM
 	"LinqDataTypes" "t"
 

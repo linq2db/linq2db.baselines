@@ -11,7 +11,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Add_Days(CURRENT_TIMESTAMP, "t"."Value"),
+	Add_Days(CURRENT_TIMESTAMP, Cast("t"."Value" as Double)),
 	Add_Days(CURRENT_TIMESTAMP, 2)
 FROM
 	"SampleClass" "t"
@@ -37,7 +37,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Add_Days(CURRENT_TIMESTAMP, "t"."Value") as "Value1",
+			Add_Days(CURRENT_TIMESTAMP, Cast("t"."Value" as Double)) as "Value1",
 			Add_Days(CURRENT_TIMESTAMP, 2) as "Value2"
 		FROM
 			"SampleClass" "t"
