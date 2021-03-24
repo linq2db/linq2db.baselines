@@ -2,7 +2,7 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Week)
+	Date_Add(`t`.`DateTimeValue`, Interval Cast(`t`.`SmallIntValue` as Decimal(29, 10)) Week)
 FROM
 	`LinqDataTypes` `t`
 
