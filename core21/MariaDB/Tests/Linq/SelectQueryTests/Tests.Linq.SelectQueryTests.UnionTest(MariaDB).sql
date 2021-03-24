@@ -11,7 +11,7 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 
 SELECT
-	Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day),
+	Date_Add(CURRENT_TIMESTAMP, Interval Cast(`t`.`Value` as Decimal(29, 10)) Day),
 	Date_Add(CURRENT_TIMESTAMP, Interval 2 Day)
 FROM
 	`SampleClass` `t`
@@ -36,7 +36,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day) as `Value1`,
+			Date_Add(CURRENT_TIMESTAMP, Interval Cast(`t`.`Value` as Decimal(29, 10)) Day) as `Value1`,
 			Date_Add(CURRENT_TIMESTAMP, Interval 2 Day) as `Value2`
 		FROM
 			`SampleClass` `t`
