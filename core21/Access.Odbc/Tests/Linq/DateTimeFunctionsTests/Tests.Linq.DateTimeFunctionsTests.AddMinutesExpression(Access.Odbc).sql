@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p_1 Int -- Int32
+DECLARE @p_1 Double
 SET     @p_1 = -8
 
 SELECT
