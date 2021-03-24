@@ -41,15 +41,15 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Lookup]
+DROP TABLE IF EXISTS [Lookup]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Resource]
+DROP TABLE IF EXISTS [Resource]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [User]
+DROP TABLE IF EXISTS [User]
 

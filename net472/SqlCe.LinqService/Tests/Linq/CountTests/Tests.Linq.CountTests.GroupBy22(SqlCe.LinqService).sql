@@ -10,7 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[ch].[ParentID] + 1 as [c1]
+			[ch].[ParentID] + 1 as [ParentID]
 		FROM
 			[Child] [ch]
 		WHERE
@@ -25,7 +25,7 @@ FROM
 				[ch_1].[ParentID] < 2 AND [ch_1].[ParentID] > @n_1
 			GROUP BY
 				[ch_1].[ParentID]
-		) [t1] ON [t2].[c1] = [t1].[ParentID] + 1
+		) [t1] ON [t2].[ParentID] = [t1].[ParentID] + 1
 GROUP BY
-	[t2].[c1]
+	[t2].[ParentID]
 

@@ -440,5 +440,5 @@ SET     @ReturnFullRow = 0
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [FluentMapping]
+DROP TABLE IF EXISTS [FluentMapping]
 

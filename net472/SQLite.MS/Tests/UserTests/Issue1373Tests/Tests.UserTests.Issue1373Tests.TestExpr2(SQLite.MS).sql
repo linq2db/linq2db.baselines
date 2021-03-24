@@ -71,5 +71,5 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Issue1373Tests]
+DROP TABLE IF EXISTS [Issue1373Tests]
 

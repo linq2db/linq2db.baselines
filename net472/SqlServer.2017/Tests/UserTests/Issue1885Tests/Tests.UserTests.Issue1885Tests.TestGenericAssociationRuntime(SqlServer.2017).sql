@@ -51,5 +51,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [User]
+DROP TABLE IF EXISTS [User]
 

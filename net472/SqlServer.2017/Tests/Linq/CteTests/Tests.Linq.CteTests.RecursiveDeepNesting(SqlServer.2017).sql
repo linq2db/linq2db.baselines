@@ -10,5 +10,5 @@ CREATE TABLE [HierarchyTree]
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [HierarchyTree]
+DROP TABLE IF EXISTS [HierarchyTree]
 

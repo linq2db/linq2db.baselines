@@ -35,7 +35,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -74,7 +74,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -113,7 +113,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -152,5 +152,5 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 

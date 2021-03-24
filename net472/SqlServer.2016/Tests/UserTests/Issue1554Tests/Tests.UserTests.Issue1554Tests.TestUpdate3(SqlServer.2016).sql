@@ -64,5 +64,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Issue1554Table]
+DROP TABLE IF EXISTS [Issue1554Table]
 

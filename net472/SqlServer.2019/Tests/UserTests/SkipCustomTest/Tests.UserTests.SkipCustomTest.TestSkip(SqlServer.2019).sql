@@ -81,5 +81,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [PR_1598_SkipCustom_Table]
+DROP TABLE IF EXISTS [PR_1598_SkipCustom_Table]
 

@@ -47,15 +47,15 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Table860_3]
+DROP TABLE IF EXISTS [Table860_3]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Table860_2]
+DROP TABLE IF EXISTS [Table860_2]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [Table860_1]
+DROP TABLE IF EXISTS [Table860_1]
 

@@ -97,5 +97,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [CacheTestTable]
+DROP TABLE IF EXISTS [CacheTestTable]
 

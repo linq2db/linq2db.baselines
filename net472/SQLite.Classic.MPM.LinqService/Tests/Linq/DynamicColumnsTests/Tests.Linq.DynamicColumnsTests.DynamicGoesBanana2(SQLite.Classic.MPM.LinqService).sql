@@ -56,5 +56,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [BananaTable]
+DROP TABLE IF EXISTS [BananaTable]
 

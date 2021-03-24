@@ -75,25 +75,25 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Table5]
+DROP TABLE IF EXISTS [Table5]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Table4]
+DROP TABLE IF EXISTS [Table4]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Table3]
+DROP TABLE IF EXISTS [Table3]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Table2]
+DROP TABLE IF EXISTS [Table2]
 
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Table1]
+DROP TABLE IF EXISTS [Table1]
 

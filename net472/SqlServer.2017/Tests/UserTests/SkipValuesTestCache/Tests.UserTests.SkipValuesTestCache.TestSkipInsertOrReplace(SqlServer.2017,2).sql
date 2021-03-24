@@ -107,5 +107,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [PR_1598_Insert_Table_Cache]
+DROP TABLE IF EXISTS [PR_1598_Insert_Table_Cache]
 

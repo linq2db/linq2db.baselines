@@ -19,5 +19,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [##IsGlobalTemporaryTable]
+DROP TABLE IF EXISTS [##IsGlobalTemporaryTable]
 

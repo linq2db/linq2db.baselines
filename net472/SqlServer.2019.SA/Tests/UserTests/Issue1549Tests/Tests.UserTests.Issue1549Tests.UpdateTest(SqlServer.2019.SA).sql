@@ -98,20 +98,20 @@ FROM
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [billing_TempReading]
+DROP TABLE IF EXISTS [billing_TempReading]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [billing_DevReadingType]
+DROP TABLE IF EXISTS [billing_DevReadingType]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [billing_devices]
+DROP TABLE IF EXISTS [billing_devices]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [billing_devtypes]
+DROP TABLE IF EXISTS [billing_devtypes]
 

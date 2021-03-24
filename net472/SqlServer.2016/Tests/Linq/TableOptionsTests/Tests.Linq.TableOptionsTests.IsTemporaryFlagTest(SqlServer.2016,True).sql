@@ -19,5 +19,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [TestSchema].[#IsTemporaryTable]
+DROP TABLE IF EXISTS [TestSchema].[#IsTemporaryTable]
 

@@ -95,63 +95,63 @@ DECLARE @Value_3  -- Guid
 SET     @Value_3 = X'00000000000000000000000000000000'
 
 SELECT
-	[cr].[R],
-	[cr].[R_1],
-	[cr].[IR],
-	[cr].[IR_1],
-	[cr].[IR_2],
-	[cr].[IR_3],
-	[cr].[IR_4],
-	[cr].[IR_5],
-	[cr].[C_1],
-	[cr].[SS],
-	[cr].[SS_1],
-	[cr].[SS_2],
+	[cr].[R_r_Id],
+	[cr].[ResourcePointID],
+	[cr].[IR_ir_Id],
+	[cr].[ProductStatus],
+	[cr].[Quantity],
+	[cr].[ResourceID],
+	[cr].[MaterialID],
+	[cr].[Status],
+	[cr].[C_c_Id],
+	[cr].[SS_ss_Id],
+	[cr].[ChannelID],
+	[cr].[AisleID],
 	[cr].[AisleStatus],
-	[cr].[RP],
-	[cr].[RP_1],
+	[cr].[RP_rp_Id],
+	[cr].[IsStoragePlace],
 	[cr].[RefQty],
 	[cr].[MixedStock]
 FROM
 	(
 		SELECT
-			[t1].[R],
-			[t1].[R_1],
-			[t1].[IR],
-			[t1].[IR_1],
-			[t1].[IR_2],
-			[t1].[IR_3],
-			[t1].[IR_4],
-			[t1].[IR_5],
-			[t1].[C_1],
-			[t1].[SS],
-			[t1].[SS_1],
-			[t1].[SS_2],
+			[t1].[R_r_Id],
+			[t1].[ResourcePointID],
+			[t1].[IR_ir_Id],
+			[t1].[ProductStatus],
+			[t1].[Quantity],
+			[t1].[ResourceID],
+			[t1].[MaterialID],
+			[t1].[Status],
+			[t1].[C_c_Id],
+			[t1].[SS_ss_Id],
+			[t1].[ChannelID],
+			[t1].[AisleID],
 			[t1].[AisleStatus],
-			[t1].[RP],
-			[t1].[RP_1],
+			[t1].[RP_rp_Id],
+			[t1].[IsStoragePlace],
 			[t1].[RefQty],
 			[t1].[MixedStock],
-			NULL as [c1],
-			NULL as [c2]
+			NULL as [C_1],
+			NULL as [SS]
 		FROM
 			(
 				SELECT
-					[r].[Id] as [R],
-					[r].[ResourcePointID] as [R_1],
-					[ir].[Id] as [IR],
-					[ir].[ProductStatus] as [IR_1],
-					[ir].[Quantity] as [IR_2],
-					[ir].[ResourceID] as [IR_3],
-					[ir].[MaterialID] as [IR_4],
-					[ir].[Status] as [IR_5],
-					[c_1].[Id] as [C_1],
-					[ss].[Id] as [SS],
-					[ss].[ChannelID] as [SS_1],
-					[ss].[AisleID] as [SS_2],
+					[r].[Id] as [R_r_Id],
+					[r].[ResourcePointID],
+					[ir].[Id] as [IR_ir_Id],
+					[ir].[ProductStatus],
+					[ir].[Quantity],
+					[ir].[ResourceID],
+					[ir].[MaterialID],
+					[ir].[Status],
+					[c_1].[Id] as [C_c_Id],
+					[ss].[Id] as [SS_ss_Id],
+					[ss].[ChannelID],
+					[ss].[AisleID],
 					[aisle].[Status] as [AisleStatus],
-					[rp].[Id] as [RP],
-					[rp].[IsStoragePlace] as [RP_1],
+					[rp].[Id] as [RP_rp_Id],
+					[rp].[IsStoragePlace],
 					Coalesce((
 						SELECT
 							Sum([x].[Quantity])
@@ -197,25 +197,25 @@ FROM
 			) [t1]
 		UNION
 		SELECT
-			[r_1].[Id] as [R],
-			[r_1].[ResourcePointID] as [R_1],
-			[ir_1].[Id] as [IR],
-			[ir_1].[ProductStatus] as [IR_1],
-			[ir_1].[Quantity] as [IR_2],
-			[ir_1].[ResourceID] as [IR_3],
-			[ir_1].[MaterialID] as [IR_4],
-			[ir_1].[Status] as [IR_5],
-			[rp_1].[Id] as [C_1],
-			NULL as [SS],
-			NULL as [SS_1],
-			NULL as [SS_2],
+			[r_1].[Id] as [R_r_Id],
+			[r_1].[ResourcePointID],
+			[ir_1].[Id] as [IR_ir_Id],
+			[ir_1].[ProductStatus],
+			[ir_1].[Quantity],
+			[ir_1].[ResourceID],
+			[ir_1].[MaterialID],
+			[ir_1].[Status],
+			[rp_1].[Id] as [C_c_Id],
+			NULL as [SS_ss_Id],
+			NULL as [ChannelID],
+			NULL as [AisleID],
 			0 as [AisleStatus],
-			NULL as [RP],
-			[rp_1].[IsStoragePlace] as [RP_1],
+			NULL as [RP_rp_Id],
+			[rp_1].[IsStoragePlace],
 			0 as [RefQty],
 			0 as [MixedStock],
-			NULL as [c1],
-			NULL as [c2]
+			NULL as [C_1],
+			NULL as [SS]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
@@ -227,50 +227,50 @@ FROM
 			[ir_1].[Quantity] > 0
 	) [cr]
 WHERE
-	[cr].[IR_2] > [cr].[RefQty]
+	[cr].[Quantity] > [cr].[RefQty]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [InventoryResourceDTO]
+DROP TABLE IF EXISTS [InventoryResourceDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [WmsLoadCarrierDTO]
+DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [WmsResourcePointDTO]
+DROP TABLE IF EXISTS [WmsResourcePointDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [RefResPointAisleDTO]
+DROP TABLE IF EXISTS [RefResPointAisleDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [AisleDTO]
+DROP TABLE IF EXISTS [AisleDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [RefOutfeedTransportOrderResourceDTO]
+DROP TABLE IF EXISTS [RefOutfeedTransportOrderResourceDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [RefResourceStorageShelfDTO]
+DROP TABLE IF EXISTS [RefResourceStorageShelfDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [ChannelDTO]
+DROP TABLE IF EXISTS [ChannelDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [StorageShelfDTO]
+DROP TABLE IF EXISTS [StorageShelfDTO]
 

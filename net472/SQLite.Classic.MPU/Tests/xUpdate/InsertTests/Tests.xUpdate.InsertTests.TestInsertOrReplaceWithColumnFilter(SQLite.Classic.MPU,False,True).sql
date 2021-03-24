@@ -109,5 +109,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [TestInsertOrReplaceTable]
+DROP TABLE IF EXISTS [TestInsertOrReplaceTable]
 

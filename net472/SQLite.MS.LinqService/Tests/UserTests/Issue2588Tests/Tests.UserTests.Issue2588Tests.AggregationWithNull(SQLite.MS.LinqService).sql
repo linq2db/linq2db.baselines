@@ -50,5 +50,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [TestClass]
+DROP TABLE IF EXISTS [TestClass]
 

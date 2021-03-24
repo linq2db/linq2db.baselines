@@ -71,5 +71,6 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2008
 
-DROP TABLE [Issue1373Tests]
+IF (OBJECT_ID(N'[Issue1373Tests]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1373Tests]
 

@@ -291,5 +291,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [TypeConvertTable]
+DROP TABLE IF EXISTS [TypeConvertTable]
 

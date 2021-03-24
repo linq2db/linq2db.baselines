@@ -88,10 +88,10 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [TestNullableParameterSource]
+DROP TABLE IF EXISTS [TestNullableParameterSource]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [TestNullableParameterTarget]
+DROP TABLE IF EXISTS [TestNullableParameterTarget]
 

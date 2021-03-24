@@ -127,7 +127,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON ([p].[ParentID] = [t].[ID])
 
 BeforeExecute
--- Access.Odbc AccessODBC
+-- Access.Odbc AccessODBC (asynchronously)
 
 DROP TABLE [TempTable]
 

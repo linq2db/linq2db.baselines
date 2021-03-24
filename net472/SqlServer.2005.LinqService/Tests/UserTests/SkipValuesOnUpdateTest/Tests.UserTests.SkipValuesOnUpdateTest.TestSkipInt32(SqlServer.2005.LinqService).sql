@@ -112,5 +112,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 
-DROP TABLE [PR_1598_Update_Table]
+IF (OBJECT_ID(N'[PR_1598_Update_Table]', N'U') IS NOT NULL)
+	DROP TABLE [PR_1598_Update_Table]
 

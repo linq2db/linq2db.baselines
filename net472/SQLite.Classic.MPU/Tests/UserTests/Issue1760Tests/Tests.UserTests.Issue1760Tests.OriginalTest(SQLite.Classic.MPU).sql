@@ -59,15 +59,15 @@ SET     @id_1 = 0
 
 SELECT
 	[t1].[textCol],
-	[t1].[c1],
-	[t1].[c2],
-	[t1].[c3]
+	[t1].[b1],
+	[t1].[b2],
+	[t1].[b3]
 FROM
 	(
 		SELECT
-			Coalesce([btbl].[col1], '') as [c1],
-			Coalesce([btbl].[col2], '') as [c2],
-			Coalesce([btbl].[col3], '') as [c3],
+			Coalesce([btbl].[col1], '') as [b1],
+			Coalesce([btbl].[col2], '') as [b2],
+			Coalesce([btbl].[col3], '') as [b3],
 			[bt1].[textCol]
 		FROM
 			[table1] [w_1]
@@ -92,33 +92,33 @@ FROM
 			[w_1].[commonTableId] = @id_1
 	) [t1]
 GROUP BY
-	[t1].[c1],
-	[t1].[c2],
-	[t1].[c3],
+	[t1].[b1],
+	[t1].[b2],
+	[t1].[b3],
 	[t1].[textCol]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [c_table2]
+DROP TABLE IF EXISTS [c_table2]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [b_table2]
+DROP TABLE IF EXISTS [b_table2]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [table3]
+DROP TABLE IF EXISTS [table3]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [table2]
+DROP TABLE IF EXISTS [table2]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [table1]
+DROP TABLE IF EXISTS [table1]
 

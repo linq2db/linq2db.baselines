@@ -385,7 +385,7 @@ CREATE TABLE [sample_other_class]
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [sample_other_class]
+DROP TABLE IF EXISTS [sample_other_class]
 
 BeforeExecute
 -- SQLite.MS SQLite

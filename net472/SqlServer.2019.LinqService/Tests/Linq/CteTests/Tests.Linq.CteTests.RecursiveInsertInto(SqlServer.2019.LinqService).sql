@@ -409,7 +409,7 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [HierarchyData]
+DROP TABLE IF EXISTS [HierarchyData]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

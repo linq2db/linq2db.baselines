@@ -80,5 +80,5 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [xxPerson]
+DROP TABLE IF EXISTS [xxPerson]
 

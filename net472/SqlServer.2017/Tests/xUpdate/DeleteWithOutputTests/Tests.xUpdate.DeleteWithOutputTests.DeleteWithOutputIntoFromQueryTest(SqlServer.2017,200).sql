@@ -95,7 +95,7 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [DestinationTable]
+DROP TABLE IF EXISTS [DestinationTable]
 
 BeforeExecute
 -- SqlServer.2017

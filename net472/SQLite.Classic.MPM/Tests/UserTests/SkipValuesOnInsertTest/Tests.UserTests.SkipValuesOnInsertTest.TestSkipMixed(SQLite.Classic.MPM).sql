@@ -144,5 +144,5 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [PR_1598_Mixed_Table]
+DROP TABLE IF EXISTS [PR_1598_Mixed_Table]
 

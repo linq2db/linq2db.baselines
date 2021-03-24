@@ -193,5 +193,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [ValueConversion]
+DROP TABLE IF EXISTS [ValueConversion]
 

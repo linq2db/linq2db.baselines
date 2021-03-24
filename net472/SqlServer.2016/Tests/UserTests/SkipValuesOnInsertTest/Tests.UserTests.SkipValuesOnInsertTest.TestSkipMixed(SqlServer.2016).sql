@@ -144,5 +144,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [PR_1598_Mixed_Table]
+DROP TABLE IF EXISTS [PR_1598_Mixed_Table]
 

@@ -78,5 +78,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [my_table]
+DROP TABLE IF EXISTS [my_table]
 

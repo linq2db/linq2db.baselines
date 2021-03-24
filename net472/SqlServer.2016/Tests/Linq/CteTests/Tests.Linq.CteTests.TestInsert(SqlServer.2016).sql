@@ -73,5 +73,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
 

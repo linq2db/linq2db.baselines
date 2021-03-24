@@ -25,5 +25,5 @@ WHEN NOT MATCHED BY SOURCE THEN DELETE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [ReviewIndexes]
+DROP TABLE IF EXISTS [ReviewIndexes]
 

@@ -19,10 +19,10 @@ CREATE TABLE [CUST_DTL]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [CUST_DTL]
+DROP TABLE IF EXISTS [CUST_DTL]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [MRECEIPT]
+DROP TABLE IF EXISTS [MRECEIPT]
 

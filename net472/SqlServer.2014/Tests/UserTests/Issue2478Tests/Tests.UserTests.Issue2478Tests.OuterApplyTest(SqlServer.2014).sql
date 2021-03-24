@@ -12,14 +12,14 @@ FROM
 			FROM
 				(
 					SELECT
-						1 as [c1]
+						1 as [Key_1]
 					FROM
 						[Child] [t]
 					WHERE
 						[t].[ParentID] = [p].[ParentID]
 				) [t1]
 			GROUP BY
-				[t1].[c1]
+				[t1].[Key_1]
 		) [t2]
 
 BeforeExecute
@@ -35,13 +35,13 @@ FROM
 			FROM
 				(
 					SELECT
-						1 as [c1]
+						1 as [Key_1]
 					FROM
 						[Child] [t]
 					WHERE
 						[t].[ParentID] = [p].[ParentID]
 				) [t1]
 			GROUP BY
-				[t1].[c1]
+				[t1].[Key_1]
 		) [t2]
 

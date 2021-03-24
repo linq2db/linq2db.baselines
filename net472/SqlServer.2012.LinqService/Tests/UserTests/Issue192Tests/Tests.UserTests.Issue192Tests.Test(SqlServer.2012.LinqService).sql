@@ -279,5 +279,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [TypeConvertTable]
+IF (OBJECT_ID(N'[TypeConvertTable]', N'U') IS NOT NULL)
+	DROP TABLE [TypeConvertTable]
 

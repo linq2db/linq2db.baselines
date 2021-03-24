@@ -75,25 +75,30 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Table5]
+IF (OBJECT_ID(N'[Table5]', N'U') IS NOT NULL)
+	DROP TABLE [Table5]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Table4]
+IF (OBJECT_ID(N'[Table4]', N'U') IS NOT NULL)
+	DROP TABLE [Table4]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Table3]
+IF (OBJECT_ID(N'[Table3]', N'U') IS NOT NULL)
+	DROP TABLE [Table3]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Table2]
+IF (OBJECT_ID(N'[Table2]', N'U') IS NOT NULL)
+	DROP TABLE [Table2]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Table1]
+IF (OBJECT_ID(N'[Table1]', N'U') IS NOT NULL)
+	DROP TABLE [Table1]
 

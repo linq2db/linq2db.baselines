@@ -131,10 +131,10 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Message]
+DROP TABLE IF EXISTS [Message]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Topic]
+DROP TABLE IF EXISTS [Topic]
 

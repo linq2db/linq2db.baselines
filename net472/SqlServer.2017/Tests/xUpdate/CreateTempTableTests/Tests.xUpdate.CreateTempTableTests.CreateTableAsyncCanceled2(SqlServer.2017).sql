@@ -24,9 +24,9 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
-DROP TABLE [#TempTable]
+DROP TABLE IF EXISTS [#TempTable]
 
 BeforeExecute
 -- SqlServer.2017

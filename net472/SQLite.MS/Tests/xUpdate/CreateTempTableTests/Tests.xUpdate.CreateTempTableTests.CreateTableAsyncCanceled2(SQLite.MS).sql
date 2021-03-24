@@ -24,9 +24,9 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
-DROP TABLE [TempTable]
+DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
 -- SQLite.MS SQLite

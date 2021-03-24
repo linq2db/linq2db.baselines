@@ -24,7 +24,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- Access.Odbc AccessODBC
+-- Access.Odbc AccessODBC (asynchronously)
 
 DROP TABLE [TempTable]
 

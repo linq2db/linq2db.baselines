@@ -28,5 +28,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [GlobalTaskDTO]
+DROP TABLE IF EXISTS [GlobalTaskDTO]
 

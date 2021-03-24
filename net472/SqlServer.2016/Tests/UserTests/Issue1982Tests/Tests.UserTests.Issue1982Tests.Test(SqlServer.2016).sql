@@ -23,5 +23,5 @@ SELECT
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [Issue1982Table]
+DROP TABLE IF EXISTS [Issue1982Table]
 

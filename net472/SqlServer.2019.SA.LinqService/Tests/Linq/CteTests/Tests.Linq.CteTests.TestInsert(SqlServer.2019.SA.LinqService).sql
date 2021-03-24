@@ -73,5 +73,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
-DROP TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
 

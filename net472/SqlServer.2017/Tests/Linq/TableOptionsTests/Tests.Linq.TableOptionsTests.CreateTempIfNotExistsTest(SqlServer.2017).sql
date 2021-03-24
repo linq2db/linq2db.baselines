@@ -34,5 +34,5 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [#CreateIfNotExistsTable]
+DROP TABLE IF EXISTS [#CreateIfNotExistsTable]
 

@@ -21,5 +21,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
 

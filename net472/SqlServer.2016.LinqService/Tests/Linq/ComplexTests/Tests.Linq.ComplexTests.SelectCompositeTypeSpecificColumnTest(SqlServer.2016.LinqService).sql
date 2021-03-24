@@ -28,5 +28,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [User]
+DROP TABLE IF EXISTS [User]
 

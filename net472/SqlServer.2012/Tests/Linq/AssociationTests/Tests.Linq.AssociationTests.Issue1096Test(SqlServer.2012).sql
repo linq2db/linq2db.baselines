@@ -102,10 +102,12 @@ FROM
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Issue1096TaskStage]
+IF (OBJECT_ID(N'[Issue1096TaskStage]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1096TaskStage]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [Issue1096Task]
+IF (OBJECT_ID(N'[Issue1096Task]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1096Task]
 

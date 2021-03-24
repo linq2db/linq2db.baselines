@@ -55,5 +55,5 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [#TestMergeTVPTable]
+DROP TABLE IF EXISTS [#TestMergeTVPTable]
 

@@ -37,5 +37,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [TestSchema].[TableWithDataAndSchema]
+DROP TABLE IF EXISTS [TestSchema].[TableWithDataAndSchema]
 

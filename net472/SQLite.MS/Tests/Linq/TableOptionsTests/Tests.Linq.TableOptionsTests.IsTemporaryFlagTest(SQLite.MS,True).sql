@@ -19,5 +19,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [IsTemporaryTable]
+DROP TABLE IF EXISTS [IsTemporaryTable]
 

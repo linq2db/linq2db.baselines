@@ -77,7 +77,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [InsertTestClassDest]
+DROP TABLE IF EXISTS [InsertTestClassDest]
 
 BeforeExecute
 -- SQLite.MS SQLite

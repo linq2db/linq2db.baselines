@@ -60,5 +60,5 @@ LIMIT 1
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [BlobClass]
+DROP TABLE IF EXISTS [BlobClass]
 

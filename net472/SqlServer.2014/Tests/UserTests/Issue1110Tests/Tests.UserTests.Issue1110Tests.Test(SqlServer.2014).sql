@@ -30,5 +30,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [Issue1110TB]
+IF (OBJECT_ID(N'[Issue1110TB]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1110TB]
 

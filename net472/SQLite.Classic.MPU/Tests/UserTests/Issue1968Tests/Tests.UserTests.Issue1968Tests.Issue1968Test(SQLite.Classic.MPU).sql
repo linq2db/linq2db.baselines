@@ -188,15 +188,15 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Subject]
+DROP TABLE IF EXISTS [Subject]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [Faculty]
+DROP TABLE IF EXISTS [Faculty]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE [University]
+DROP TABLE IF EXISTS [University]
 

@@ -42,10 +42,10 @@ GROUP BY
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [person649]
+DROP TABLE IF EXISTS [person649]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-DROP TABLE [activity649]
+DROP TABLE IF EXISTS [activity649]
 

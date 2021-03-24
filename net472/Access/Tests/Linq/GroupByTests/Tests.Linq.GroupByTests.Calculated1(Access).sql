@@ -2,16 +2,16 @@
 -- Access AccessOleDb
 
 SELECT
-	[t1].[c1]
+	[t1].[Key_1]
 FROM
 	(
 		SELECT
-			Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [c1]
+			Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [Key_1]
 		FROM
 			[Child] [selectParam]
 	) [t1]
 GROUP BY
-	[t1].[c1]
+	[t1].[Key_1]
 
 BeforeExecute
 -- Access AccessOleDb

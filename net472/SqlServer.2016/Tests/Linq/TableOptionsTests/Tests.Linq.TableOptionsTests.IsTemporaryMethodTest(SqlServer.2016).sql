@@ -30,5 +30,5 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [#TestTable]
+DROP TABLE IF EXISTS [#TestTable]
 

@@ -37,5 +37,5 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [Issue1403Tests_1]
+DROP TABLE IF EXISTS [Issue1403Tests_1]
 

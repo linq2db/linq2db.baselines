@@ -80,5 +80,5 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE [xxPerson]
+DROP TABLE IF EXISTS [xxPerson]
 

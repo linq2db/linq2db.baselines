@@ -39,21 +39,21 @@ BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
-	GROUPING([t1].[Key_1]),
-	[t1].[Key_1],
+	GROUPING([t1].[Id1]),
+	[t1].[Id1],
 	Count(*)
 FROM
 	(
 		SELECT DISTINCT
-			[selectParam].[Id1] as [Key_1],
-			[selectParam].[Id2] as [Key_2],
+			[selectParam].[Id1],
+			[selectParam].[Id2],
 			[selectParam].[Value] as [Value_1]
 		FROM
 			[GroupSampleClass] [selectParam]
 	) [t1]
 GROUP BY CUBE (
-	[t1].[Key_1],
-	[t1].[Key_2]
+	[t1].[Id1],
+	[t1].[Id2]
 )
 
 BeforeExecute

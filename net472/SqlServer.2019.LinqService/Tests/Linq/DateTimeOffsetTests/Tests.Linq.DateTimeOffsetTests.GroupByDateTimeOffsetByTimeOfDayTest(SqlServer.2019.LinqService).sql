@@ -487,19 +487,19 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[t1].[c1],
+	[t1].[Key_1],
 	Count(*)
 FROM
 	(
 		SELECT
-			CAST([selectParam].[TransactionDate] AS TIME) as [c1]
+			CAST([selectParam].[TransactionDate] AS TIME) as [Key_1]
 		FROM
 			[Transactions] [selectParam]
 	) [t1]
 GROUP BY
-	[t1].[c1]
+	[t1].[Key_1]
 ORDER BY
-	[t1].[c1]
+	[t1].[Key_1]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

@@ -402,7 +402,7 @@ FROM
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [sample_other_class]
+DROP TABLE IF EXISTS [sample_other_class]
 
 BeforeExecute
 -- SqlServer.2016

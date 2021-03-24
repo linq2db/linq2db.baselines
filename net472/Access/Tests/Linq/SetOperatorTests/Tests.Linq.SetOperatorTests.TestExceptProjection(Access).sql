@@ -280,16 +280,16 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[t1].[Value1]
+	[t1].[Value_1]
 FROM
 	(
 		SELECT DISTINCT
-			[r].[Value1]
+			[r].[Value_1]
 		FROM
 			(
 				SELECT DISTINCT
 					[t].[Id],
-					[t].[Value1]
+					[t].[Value1] as [Value_1]
 				FROM
 					[SampleData] [t]
 				WHERE
@@ -312,7 +312,7 @@ FROM
 					[SampleData] [t_2]
 				WHERE
 					[t_2].[Id] MOD 6 = 0 AND [r].[Id] = [t_2].[Id] AND
-					[r].[Value1] = [t_2].[Value1]
+					[r].[Value_1] = [t_2].[Value1]
 			)
 	) [t1]
 

@@ -127,7 +127,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON ([p].[ParentID] = [t].[ID])
 
 BeforeExecute
--- Access AccessOleDb
+-- Access AccessOleDb (asynchronously)
 
 DROP TABLE [TempTable]
 

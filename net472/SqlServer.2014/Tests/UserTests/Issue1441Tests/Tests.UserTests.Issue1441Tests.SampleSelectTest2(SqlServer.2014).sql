@@ -34,10 +34,12 @@ FROM
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [Books]
+IF (OBJECT_ID(N'[Books]', N'U') IS NOT NULL)
+	DROP TABLE [Books]
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
-DROP TABLE [Authors]
+IF (OBJECT_ID(N'[Authors]', N'U') IS NOT NULL)
+	DROP TABLE [Authors]
 

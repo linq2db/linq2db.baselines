@@ -88,10 +88,12 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [TestNullableParameterSource]
+IF (OBJECT_ID(N'[TestNullableParameterSource]', N'U') IS NOT NULL)
+	DROP TABLE [TestNullableParameterSource]
 
 BeforeExecute
 -- SqlServer.2012
 
-DROP TABLE [TestNullableParameterTarget]
+IF (OBJECT_ID(N'[TestNullableParameterTarget]', N'U') IS NOT NULL)
+	DROP TABLE [TestNullableParameterTarget]
 

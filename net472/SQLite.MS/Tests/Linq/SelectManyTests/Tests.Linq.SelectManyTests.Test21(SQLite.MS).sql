@@ -2,14 +2,14 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[PersonID],
+	[t1].[ID1],
 	[t1].[FirstName],
 	[p3].[LastName]
 FROM
 	(
 		SELECT
-			[p].[PersonID],
-			[p2].[PersonID] as [PersonID_1],
+			[p].[PersonID] as [ID1],
+			[p2].[PersonID] as [ID2],
 			[p].[LastName],
 			[p2].[FirstName]
 		FROM
@@ -18,6 +18,6 @@ FROM
 	) [t1],
 	[Person] [p3]
 WHERE
-	[t1].[PersonID] = [t1].[PersonID_1] AND [t1].[LastName] = [p3].[LastName] AND
-	[t1].[PersonID] = 1
+	[t1].[ID1] = [t1].[ID2] AND [t1].[LastName] = [p3].[LastName] AND
+	[t1].[ID1] = 1
 

@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE [AttributeBase]
+DROP TABLE IF EXISTS [AttributeBase]
 
