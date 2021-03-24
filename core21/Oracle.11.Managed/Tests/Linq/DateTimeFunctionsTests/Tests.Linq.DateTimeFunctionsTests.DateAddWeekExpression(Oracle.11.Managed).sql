@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @p_1 Int32
-SET     @p_1 = -1
+DECLARE @p_1 BinaryDouble -- Double
+SET     @p_1 = -1D
 
 SELECT
 	t."DateTimeValue" + :p_1 * INTERVAL '7' DAY
