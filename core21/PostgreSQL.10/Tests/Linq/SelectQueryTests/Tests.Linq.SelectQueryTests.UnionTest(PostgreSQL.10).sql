@@ -11,7 +11,7 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	CURRENT_TIMESTAMP + t."Value" * Interval '1 Day',
+	CURRENT_TIMESTAMP + Cast(t."Value" as Float) * Interval '1 Day',
 	CURRENT_TIMESTAMP + 2 * Interval '1 Day'
 FROM
 	"SampleClass" t
@@ -36,7 +36,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CURRENT_TIMESTAMP + t."Value" * Interval '1 Day' as "Value1",
+			CURRENT_TIMESTAMP + Cast(t."Value" as Float) * Interval '1 Day' as "Value1",
 			CURRENT_TIMESTAMP + 2 * Interval '1 Day' as "Value2"
 		FROM
 			"SampleClass" t
