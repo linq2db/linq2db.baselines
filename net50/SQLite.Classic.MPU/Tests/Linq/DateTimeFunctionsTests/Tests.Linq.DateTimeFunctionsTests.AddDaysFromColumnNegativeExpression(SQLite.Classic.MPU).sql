@@ -54,7 +54,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateTime(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],(([t].[SmallIntValue] + @part1) - @part2) || ' Day')) < DateTime(@p_1)
+	[t].[ID] = 5000 AND DateTime(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],Cast((([t].[SmallIntValue] + @part1) - @part2) as Float) || ' Day')) < DateTime(@p_1)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
