@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p_1 Int32
-SET     @p_1 = 3
+DECLARE @p_1 BinaryDouble -- Double
+SET     @p_1 = 3D
 
 SELECT
 	t."DateTimeValue" + :p_1 * INTERVAL '1' DAY

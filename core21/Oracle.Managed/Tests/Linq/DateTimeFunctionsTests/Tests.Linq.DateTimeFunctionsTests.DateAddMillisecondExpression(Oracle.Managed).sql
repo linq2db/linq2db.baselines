@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @p_1 Int32
-SET     @p_1 = 226
+DECLARE @p_1 BinaryDouble -- Double
+SET     @p_1 = 226D
 
 SELECT
 	t."DateTimeValue" + :p_1 * INTERVAL '0.001' SECOND
