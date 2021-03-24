@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."DateTimeValue" + "t"."SmallIntValue" Minute
+	"t"."DateTimeValue" + Float("t"."SmallIntValue") Minute
 FROM
 	"LinqDataTypes" "t"
 

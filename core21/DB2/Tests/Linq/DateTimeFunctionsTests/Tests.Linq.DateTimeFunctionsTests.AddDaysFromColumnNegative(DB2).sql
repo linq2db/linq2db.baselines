@@ -50,7 +50,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND "t"."DateTimeValue" + "t"."SmallIntValue" Day < @p_1
+	"t".ID = 5000 AND "t"."DateTimeValue" + Float("t"."SmallIntValue") Day < @p_1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

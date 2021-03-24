@@ -6,7 +6,7 @@ DECLARE @part2 Integer(4) -- Int32
 SET     @part2 = 4
 
 SELECT
-	"t"."DateTimeValue" + (("t"."SmallIntValue" + @part1) - @part2) Day
+	"t"."DateTimeValue" + Float(("t"."SmallIntValue" + @part1) - @part2) Day
 FROM
 	"LinqDataTypes" "t"
 
