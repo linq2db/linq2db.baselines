@@ -46,7 +46,7 @@ FROM
 			FROM
 				(
 					SELECT
-						DateAdd(day, [t].[Value], CURRENT_TIMESTAMP) as [Value1],
+						DateAdd(day, Convert(Float, [t].[Value]), CURRENT_TIMESTAMP) as [Value1],
 						DateAdd(day, 2, CURRENT_TIMESTAMP) as [Value2]
 					FROM
 						[SampleClass] [t]
