@@ -54,7 +54,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."ID" = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Day' < :p_1
+	t."ID" = 5000 AND t."DateTimeValue" + Cast(((t."SmallIntValue" + :part1) - :part2) as Float) * Interval '1 Day' < :p_1
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
