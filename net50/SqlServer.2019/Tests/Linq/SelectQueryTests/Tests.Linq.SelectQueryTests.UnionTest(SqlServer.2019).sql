@@ -11,7 +11,7 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
+	DateAdd(day, Convert(Float, [t].[Value]), CURRENT_TIMESTAMP),
 	DateAdd(day, 2, CURRENT_TIMESTAMP)
 FROM
 	[SampleClass] [t]
@@ -36,7 +36,7 @@ SELECT
 FROM
 	(
 		SELECT
-			DateAdd(day, [t].[Value], CURRENT_TIMESTAMP) as [Value1],
+			DateAdd(day, Convert(Float, [t].[Value]), CURRENT_TIMESTAMP) as [Value1],
 			DateAdd(day, 2, CURRENT_TIMESTAMP) as [Value2]
 		FROM
 			[SampleClass] [t]
