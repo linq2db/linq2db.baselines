@@ -2936,19 +2936,19 @@ TESTDB.SYSIBMADM.REGISTER_INTERNAL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NAME VarChar(128) -- String
-SET     @NAME = ''
 DECLARE @JOB (1, 0) -- Decimal
 SET     @JOB = 0
+DECLARE @NAME VarChar(128) -- String
+SET     @NAME = ''
 
 TESTDB.SYSIBMADM.REMOVE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NAME VarChar(128) -- String
-SET     @NAME = ''
 DECLARE @JOB (1, 0) -- Decimal
 SET     @JOB = 0
+DECLARE @NAME VarChar(128) -- String
+SET     @NAME = ''
 
 TESTDB.SYSIBMADM.REMOVE
 
