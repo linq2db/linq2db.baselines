@@ -1,18 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DELETE FROM
-	"LinqDataTypes" t1
-WHERE
-	t1.ID > 1000
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-DELETE FROM
-	"Child" t1
-WHERE
-	t1."ChildID" > 1000
+CREATE TABLE "Dest1"
+(
+	ID            Int          NOT NULL,
+	"Value"       SmallInt         NULL,
+	"StringValue" VarChar(255)     NULL
+)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -27,7 +21,7 @@ SET     @value_1 = NULL
 
 INSERT ALL
 WHEN "Value_1" IS NULL THEN
-	INTO "LinqDataTypes"
+	INTO "Dest1"
 	(
 		ID,
 		"StringValue"
@@ -38,7 +32,7 @@ WHEN "Value_1" IS NULL THEN
 		:value_2
 	)
 WHEN "Value_1" IS NOT NULL THEN
-	INTO "LinqDataTypes"
+	INTO "Dest1"
 	(
 		ID,
 		"StringValue"
@@ -59,31 +53,22 @@ SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1."MoneyValue",
-	t1."DateTimeValue",
-	t1."BoolValue",
-	t1."GuidValue",
-	t1."BinaryValue",
-	t1."SmallIntValue",
+	t1."Value",
 	t1."StringValue"
 FROM
-	"LinqDataTypes" t1
+	"Dest1" t1
 WHERE
 	t1.ID > 1000 AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-DELETE FROM
-	"LinqDataTypes" t1
-WHERE
-	t1.ID > 1000
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-DELETE FROM
-	"Child" t1
-WHERE
-	t1."ChildID" > 1000
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Dest1"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
