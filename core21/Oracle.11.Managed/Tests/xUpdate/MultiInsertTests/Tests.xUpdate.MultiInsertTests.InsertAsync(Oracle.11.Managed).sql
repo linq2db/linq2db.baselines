@@ -70,6 +70,14 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
+	"Dest1" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+
+SELECT
+	Count(*)
+FROM
 	"Dest2" x
 WHERE
 	x.ID = 1003
