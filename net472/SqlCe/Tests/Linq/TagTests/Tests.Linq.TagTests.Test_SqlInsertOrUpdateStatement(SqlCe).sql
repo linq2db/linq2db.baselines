@@ -16,8 +16,7 @@ BeforeExecute
 UPDATE
 	[TestTable]
 SET
-	[TestTable].[Id] = 1,
-	[TestTable].[Fd] = 2
+	[TestTable].[Id] = 1
 WHERE
 	[TestTable].[Id] = 1
 
@@ -27,11 +26,13 @@ BeforeExecute
 /* My Test */
 INSERT INTO [TestTable]
 (
-	[Id]
+	[Id],
+	[Fd]
 )
 VALUES
 (
-	1
+	1,
+	2
 )
 
 BeforeExecute
