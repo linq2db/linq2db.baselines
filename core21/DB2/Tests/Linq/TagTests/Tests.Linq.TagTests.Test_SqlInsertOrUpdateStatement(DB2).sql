@@ -1,0 +1,44 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "TestTable"
+(
+	"Id" Int NOT NULL,
+	"Fd" Int     NULL,
+
+	CONSTRAINT "PK_TestTable" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+/* My Test */
+MERGE INTO "TestTable" "t1"
+USING (SELECT 1 AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+(
+	"t1"."Id" = "s"."Id"
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		"t1"."Id" = 1
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		"Id",
+		"Fd"
+	)
+	VALUES
+	(
+		1,
+		2
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "TestTable"';
+END
+
