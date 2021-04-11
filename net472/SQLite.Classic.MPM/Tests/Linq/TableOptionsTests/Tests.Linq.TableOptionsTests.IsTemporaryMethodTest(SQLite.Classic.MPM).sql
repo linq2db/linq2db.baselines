@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [TestTable]
+DROP TABLE IF EXISTS temp.[TestTable]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE [TestTable]
+CREATE TEMPORARY TABLE temp.[TestTable]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL
@@ -23,12 +23,12 @@ SELECT
 	[t3].[Id],
 	[t3].[Value]
 FROM
-	[TestTable] [t1]
-		INNER JOIN [TestTable] [t2] ON [t1].[Id] = [t2].[Id]
-		INNER JOIN [TestTable] [t3] ON [t2].[Id] = [t3].[Id]
+	temp.[TestTable] [t1]
+		INNER JOIN temp.[TestTable] [t2] ON [t1].[Id] = [t2].[Id]
+		INNER JOIN temp.[TestTable] [t3] ON [t2].[Id] = [t3].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [TestTable]
+DROP TABLE IF EXISTS temp.[TestTable]
 
