@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p_1 Bool -- Boolean
-SET     @p_1 = 0
 
 SELECT
 	Count(*) as `cnt`
 WHERE
-	@p_1
+	1 = 0
 
 BeforeExecute
 -- MySqlConnector MySql
