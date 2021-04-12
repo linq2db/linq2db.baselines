@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Boolean
-SET     @p_1 = False
 
 SELECT
 	Count(*)
 WHERE
-	:p_1
+	1 = 0
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
