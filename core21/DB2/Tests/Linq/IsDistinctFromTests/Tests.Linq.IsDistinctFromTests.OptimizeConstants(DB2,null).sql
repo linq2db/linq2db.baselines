@@ -1,0 +1,18 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM SYSIBM.SYSDUMMY1
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @p_1 SmallInt(4) -- Int16
+SET     @p_1 = 0
+
+SELECT
+	Count(*)
+FROM SYSIBM.SYSDUMMY1
+WHERE
+	@p_1
+
