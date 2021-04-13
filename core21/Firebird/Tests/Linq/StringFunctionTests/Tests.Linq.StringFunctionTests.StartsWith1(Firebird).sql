@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" STARTING WITH 'Jo' AND "p"."PersonID" = 1
+	Lower("p"."FirstName") STARTING WITH 'jo' AND "p"."PersonID" = 1
 
