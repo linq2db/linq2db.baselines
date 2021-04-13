@@ -9,7 +9,7 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	t1."FirstName" ILIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
@@ -47,7 +47,7 @@ UPDATE
 SET
 	"LastName" = "Person"."FirstName"
 WHERE
-	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	"Person"."FirstName" ILIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
@@ -74,5 +74,5 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	t1."FirstName" ILIKE 'UpdateComplex%' ESCAPE '~'
 
