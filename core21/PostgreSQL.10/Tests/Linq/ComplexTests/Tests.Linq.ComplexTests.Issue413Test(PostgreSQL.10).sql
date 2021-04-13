@@ -186,7 +186,7 @@ FROM
 		INNER JOIN "T3" w ON idx."IndexId" = w."IndexId"
 		INNER JOIN "T1" ins ON w."InstrumentId" = ins."InstrumentId"
 WHERE
-	ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond_1 ESCAPE '~' AND
+	ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" ILIKE :cond_1 ESCAPE '~' AND
 	ins_1."CreateDate" <= :uptoDate
 ORDER BY
 	ins."SourceInstrumentCode"
