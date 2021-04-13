@@ -4,13 +4,21 @@ DECLARE @s NVarChar(8) -- String
 SET     @s = '123]]456'
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	Count(*)
 FROM
 	[Person] [p]
 WHERE
 	[p].[PersonID] = 1 AND @s LIKE '%]]%' ESCAPE '~'
+
+BeforeExecute
+-- SqlCe
+DECLARE @s NVarChar(8) -- String
+SET     @s = '123]]456'
+
+SELECT
+	Count(*)
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = 1 AND @s NOT LIKE '%]]%' ESCAPE '~'
 
