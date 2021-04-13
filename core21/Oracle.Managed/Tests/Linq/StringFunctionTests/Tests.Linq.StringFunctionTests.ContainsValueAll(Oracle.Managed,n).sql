@@ -1,16 +1,24 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @s Varchar2(7) -- String
-SET     @s = '123n456'
+DECLARE @s_1 Varchar2(7) -- String
+SET     @s_1 = '123n456'
 
 SELECT
-	p."FirstName",
-	p."PersonID",
-	p."LastName",
-	p."MiddleName",
-	p."Gender"
+	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND :s LIKE '%n%' ESCAPE '~'
+	p."PersonID" = 1 AND :s_1 LIKE '%n%' ESCAPE '~'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @s_1 Varchar2(7) -- String
+SET     @s_1 = '123n456'
+
+SELECT
+	Count(*)
+FROM
+	"Person" p
+WHERE
+	p."PersonID" = 1 AND :s_1 NOT LIKE '%n%' ESCAPE '~'
 

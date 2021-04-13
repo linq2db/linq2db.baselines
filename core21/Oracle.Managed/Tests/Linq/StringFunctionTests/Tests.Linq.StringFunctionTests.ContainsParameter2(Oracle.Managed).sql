@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @str_1 Varchar2(6) -- String
-SET     @str_1 = '%o~%h%'
 
 SELECT
 	p."FirstName",
@@ -12,5 +10,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" NOT LIKE :str_1 ESCAPE '~' AND p."PersonID" = 1
+	Lower(p."FirstName") NOT LIKE '%o~%h%' ESCAPE '~' AND
+	p."PersonID" = 1
 
