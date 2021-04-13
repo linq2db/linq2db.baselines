@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	'John123' STARTING WITH "p"."FirstName"
+	'john123' STARTING WITH Lower("p"."FirstName")
 
