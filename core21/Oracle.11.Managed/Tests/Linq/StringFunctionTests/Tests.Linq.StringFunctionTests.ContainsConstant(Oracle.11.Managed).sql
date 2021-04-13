@@ -2,13 +2,20 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	p."FirstName",
-	p."PersonID",
-	p."LastName",
-	p."MiddleName",
-	p."Gender"
+	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE '%oh%' ESCAPE '~' AND p."PersonID" = 1
+	Lower(p."FirstName") LIKE '%joh%' ESCAPE '~' AND p."PersonID" = 1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SELECT
+	Count(*)
+FROM
+	"Person" p
+WHERE
+	Lower(p."FirstName") NOT LIKE '%joh%' ESCAPE '~' AND
+	p."PersonID" = 1
 
