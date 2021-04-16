@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @DateTimeValue TimeStamp -- DateTime
-SET     @DateTimeValue = TO_TIMESTAMP('2009-09-27 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @DateTimeValue = TIMESTAMP '2009-09-27 00:00:00.000000'
 
 SELECT
 	t1.ID,
