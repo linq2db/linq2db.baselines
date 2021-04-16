@@ -5,7 +5,7 @@ SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue TimeStamp -- DateTime
-SET     @DateTimeValue = TO_TIMESTAMP('2018-01-03 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @DateTimeValue = TIMESTAMP '2018-01-03 00:00:00.000000'
 DECLARE @BoolValue Int16
 SET     @BoolValue = 0
 DECLARE @GuidValue Raw(16) -- Binary
@@ -43,7 +43,7 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p_1 TimeStamp -- DateTime
-SET     @p_1 = TO_TIMESTAMP('2018-01-02 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @p_1 = TIMESTAMP '2018-01-02 00:00:00.000000'
 
 SELECT
 	Count(*)

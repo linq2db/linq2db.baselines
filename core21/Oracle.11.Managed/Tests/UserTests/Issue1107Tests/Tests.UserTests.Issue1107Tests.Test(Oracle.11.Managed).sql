@@ -13,7 +13,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO "Issue1107TB" ("Id", "TestDate") VALUES (0,TO_TIMESTAMP('2018-01-01 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'))
+	INTO "Issue1107TB" ("Id", "TestDate") VALUES (0,TIMESTAMP '2018-01-01 00:00:00.000000')
 SELECT * FROM dual
 
 BeforeExecute
