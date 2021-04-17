@@ -31,51 +31,41 @@ SELECT 3,NULL,N'def',NULL
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
-WHERE
-	CASE WHEN [s].[Int] = @value_1 OR [s].[Int] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 0
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value_1 OR [s].[NullableInt] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 0
+	[s].[NullableInt] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[Int] = @value_1 OR [s].[Int] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 1
+	1 = 0
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value_1 OR [s].[NullableInt] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 1
+	[s].[NullableInt] IS NULL
 
 BeforeExecute
 -- SqlServer.2005
