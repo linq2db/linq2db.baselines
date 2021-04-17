@@ -78,7 +78,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."String" = ? OR "s"."String" IS NULL AND ? IS NULL THEN 1 ELSE 0 END = 0
+	CASE WHEN "s"."String" = ? OR "s"."String" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -92,7 +92,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."NullableString" = ? OR "s"."NullableString" IS NULL AND ? IS NULL THEN 1 ELSE 0 END = 0
+	CASE WHEN "s"."NullableString" = ? OR "s"."NullableString" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -106,7 +106,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."String" = ? OR "s"."String" IS NULL AND ? IS NULL THEN 1 ELSE 0 END = 1
+	CASE WHEN "s"."String" = ? OR "s"."String" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -120,7 +120,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."NullableString" = ? OR "s"."NullableString" IS NULL AND ? IS NULL THEN 1 ELSE 0 END = 1
+	CASE WHEN "s"."NullableString" = ? OR "s"."NullableString" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

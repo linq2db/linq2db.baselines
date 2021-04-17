@@ -68,59 +68,41 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value_1  -- Int32
-SET     @value_1 = NULL
-DECLARE @value_2  -- Int32
-SET     @value_2 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
-WHERE
-	CASE WHEN "s"."Int" = ? OR "s"."Int" IS NULL AND ? IS NULL THEN 1 ELSE 0 END = 0
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value_1  -- Int32
-SET     @value_1 = NULL
-DECLARE @value_2  -- Int32
-SET     @value_2 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."NullableInt" = ? OR "s"."NullableInt" IS NULL AND ? IS NULL THEN 1 ELSE 0 END = 0
+	"s"."NullableInt" IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value_1  -- Int32
-SET     @value_1 = NULL
-DECLARE @value_2  -- Int32
-SET     @value_2 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."Int" = ? OR "s"."Int" IS NULL AND ? IS NULL THEN 1 ELSE 0 END = 1
+	1 = 0
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value_1  -- Int32
-SET     @value_1 = NULL
-DECLARE @value_2  -- Int32
-SET     @value_2 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."NullableInt" = ? OR "s"."NullableInt" IS NULL AND ? IS NULL THEN 1 ELSE 0 END = 1
+	"s"."NullableInt" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
