@@ -29,51 +29,43 @@ SELECT 3,NULL,'def',NULL
 
 BeforeExecute
 -- SqlCe
-DECLARE @value_1 NVarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 0
+	[s].[String] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
-DECLARE @value_1 NVarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 0
+	[s].[NullableString] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
-DECLARE @value_1 NVarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 1
+	[s].[String] IS NULL
 
 BeforeExecute
 -- SqlCe
-DECLARE @value_1 NVarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 1
+	[s].[NullableString] IS NULL
 
 BeforeExecute
 -- SqlCe
