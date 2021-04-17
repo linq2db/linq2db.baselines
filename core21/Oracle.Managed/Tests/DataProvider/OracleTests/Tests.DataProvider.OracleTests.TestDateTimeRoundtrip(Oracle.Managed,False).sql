@@ -19,19 +19,19 @@ CREATE TABLE "Test0431"
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Date_1 Date
-SET     @Date_1 = TO_TIMESTAMP('2020-01-03 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @Date_1 = TIMESTAMP '2020-01-03 00:00:00.000000'
 DECLARE @DateTime TimeStamp -- DateTime
-SET     @DateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @DateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
 DECLARE @DateTime_ TimeStamp -- DateTime
-SET     @DateTime_ = TO_TIMESTAMP('2020-01-03 04:05:06.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @DateTime_ = TIMESTAMP '2020-01-03 04:05:06.000000'
 DECLARE @DateTime2 TimeStamp -- DateTime
-SET     @DateTime2 = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @DateTime2 = TIMESTAMP '2020-01-03 04:05:06.789123'
 DECLARE @DateTime2_0 TimeStamp -- DateTime
-SET     @DateTime2_0 = TO_TIMESTAMP('2020-01-03 04:05:06.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @DateTime2_0 = TIMESTAMP '2020-01-03 04:05:06.000000'
 DECLARE @DateTime2_1 TimeStamp -- DateTime
-SET     @DateTime2_1 = TO_TIMESTAMP('2020-01-03 04:05:06.700000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @DateTime2_1 = TIMESTAMP '2020-01-03 04:05:06.700000'
 DECLARE @DateTime2_9 TimeStamp -- DateTime
-SET     @DateTime2_9 = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @DateTime2_9 = TIMESTAMP '2020-01-03 04:05:06.789123'
 DECLARE @DateTimeOffset_ TimeStampTZ -- DateTimeOffset
 SET     @DateTimeOffset_ = 01/03/2020 04:05:06.789123 +00:45
 DECLARE @DateTimeOffset_0 TimeStampTZ -- DateTimeOffset
@@ -91,7 +91,7 @@ FROM
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @pDate Date
-SET     @pDate = TO_TIMESTAMP('2020-01-03 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @pDate = TIMESTAMP '2020-01-03 00:00:00.000000'
 
 SELECT
 	r."Date",
@@ -113,7 +113,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
-SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
 
 SELECT
 	r."Date",
@@ -135,7 +135,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
-SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.000000'
 
 SELECT
 	r."Date",
@@ -157,7 +157,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
-SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
 
 SELECT
 	r."Date",
@@ -179,7 +179,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
-SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.000000'
 
 SELECT
 	r."Date",
@@ -201,7 +201,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
-SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.700000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.700000'
 
 SELECT
 	r."Date",
@@ -223,7 +223,7 @@ WHERE
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
-SET     @pDateTime = TO_TIMESTAMP('2020-01-03 04:05:06.789123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
 
 SELECT
 	r."Date",
