@@ -37,51 +37,43 @@ SELECT 3,NULL,'def',NULL FROM rdb$database
 
 BeforeExecute
 -- Firebird
-DECLARE @value_1 VarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."String" IS DISTINCT FROM @value_1
+	"s"."String" IS NOT NULL
 
 BeforeExecute
 -- Firebird
-DECLARE @value_1 VarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."NullableString" IS DISTINCT FROM @value_1
+	"s"."NullableString" IS NOT NULL
 
 BeforeExecute
 -- Firebird
-DECLARE @value_1 VarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."String" IS NOT DISTINCT FROM @value_1
+	"s"."String" IS NULL
 
 BeforeExecute
 -- Firebird
-DECLARE @value_1 VarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."NullableString" IS NOT DISTINCT FROM @value_1
+	"s"."NullableString" IS NULL
 
 BeforeExecute
 -- Firebird
