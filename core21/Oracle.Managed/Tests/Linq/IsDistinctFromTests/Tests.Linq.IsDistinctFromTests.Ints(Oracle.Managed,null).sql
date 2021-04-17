@@ -40,51 +40,41 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @value_1 Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
-WHERE
-	DECODE(s."Int", :value_1, 1, 0) = 0
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @value_1 Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableInt", :value_1, 1, 0) = 0
+	s."NullableInt" IS NOT NULL
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @value_1 Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."Int", :value_1, 1, 0) = 1
+	1 = 0
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @value_1 Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableInt", :value_1, 1, 0) = 1
+	s."NullableInt" IS NULL
 
 BeforeExecute
 -- Oracle.Managed Oracle12

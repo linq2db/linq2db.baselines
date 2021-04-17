@@ -48,7 +48,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	DECODE(s."String", :value_1, 1, 0) = 0
+	DECODE(s."String", :value_1, 0, 1) = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -60,7 +60,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableString", :value_1, 1, 0) = 0
+	DECODE(s."NullableString", :value_1, 0, 1) = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -72,7 +72,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	DECODE(s."String", :value_1, 1, 0) = 1
+	DECODE(s."String", :value_1, 0, 1) = 0
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -84,7 +84,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableString", :value_1, 1, 0) = 1
+	DECODE(s."NullableString", :value_1, 0, 1) = 0
 
 BeforeExecute
 -- Oracle.Managed Oracle12
