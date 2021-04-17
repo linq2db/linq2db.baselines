@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 0
+	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -52,7 +52,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 0
+	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -64,7 +64,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 1
+	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -76,7 +76,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 1 ELSE 0 END = 1
+	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
