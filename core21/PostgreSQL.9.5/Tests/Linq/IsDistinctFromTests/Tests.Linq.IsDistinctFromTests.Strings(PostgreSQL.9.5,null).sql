@@ -30,51 +30,43 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Text -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."String" IS DISTINCT FROM :value_1
+	s."String" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Text -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."NullableString" IS DISTINCT FROM :value_1
+	s."NullableString" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Text -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."String" IS NOT DISTINCT FROM :value_1
+	s."String" IS NULL
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Text -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."NullableString" IS NOT DISTINCT FROM :value_1
+	s."NullableString" IS NULL
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
