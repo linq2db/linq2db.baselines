@@ -30,51 +30,41 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @value_1 Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
-WHERE
-	NOT `s`.`Int` <=> @value_1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @value_1 Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`NullableInt` <=> @value_1
+	`s`.`NullableInt` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @value_1 Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` <=> @value_1
+	1 = 0
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @value_1 Int32
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`NullableInt` <=> @value_1
+	`s`.`NullableInt` IS NULL
 
 BeforeExecute
 -- MySqlConnector MySql

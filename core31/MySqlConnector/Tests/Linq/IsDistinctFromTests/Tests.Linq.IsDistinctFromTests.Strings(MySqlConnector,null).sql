@@ -30,51 +30,43 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @value_1 VarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`String` <=> @value_1
+	`s`.`String` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @value_1 VarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`NullableString` <=> @value_1
+	`s`.`NullableString` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @value_1 VarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`String` <=> @value_1
+	`s`.`String` IS NULL
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @value_1 VarChar -- String
-SET     @value_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`NullableString` <=> @value_1
+	`s`.`NullableString` IS NULL
 
 BeforeExecute
 -- MySqlConnector MySql
