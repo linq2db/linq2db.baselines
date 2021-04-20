@@ -76,6 +76,15 @@ DROP PROCEDURE "Scalar_ReturnParameter";
 BeforeExecute
 -- Firebird3 Firebird
 
+-- SKIP Firebird BEGIN
+-- SKIP Firebird3 END
+-- SKIP Firebird4 BEGIN
+SELECT 1 FROM rdb$database
+-- SKIP Firebird4 END
+
+BeforeExecute
+-- Firebird3 Firebird
+
 DROP VIEW "PersonView";
 
 BeforeExecute
@@ -508,6 +517,10 @@ CREATE TABLE "AllTypes"
 	"ncharDataType"            char(20) character set UNICODE_FSS,
 	"nvarcharDataType"         varchar(20) character set UNICODE_FSS,
 
+-- SKIP Firebird BEGIN
+-- SKIP Firebird3 END
+-- SKIP Firebird END
+
 	"blobDataType"             blob
 );
 
@@ -549,6 +562,10 @@ VALUES
 	NULL,
 	NULL,
 
+-- SKIP Firebird BEGIN
+-- SKIP Firebird3 END
+-- SKIP Firebird END
+
 	NULL
 );
 
@@ -575,6 +592,10 @@ VALUES
 	'567',
 	'23233',
 	'3323',
+
+-- SKIP Firebird BEGIN
+-- SKIP Firebird3 END
+-- SKIP Firebird END
 
 	'12345'
 );
@@ -1028,8 +1049,18 @@ CREATE PROCEDURE "AddIssue792Record"
 AS
 BEGIN
 	INSERT INTO "AllTypes"("char20DataType") VALUES('issue792');
-	SUSPEND;
 END;
+
+BeforeExecute
+-- Firebird3 Firebird
+
+-- SKIP Firebird4 BEGIN
+SELECT 1 FROM rdb$database
+-- SKIP Firebird4 END
+
+-- SKIP Firebird BEGIN
+-- SKIP Firebird3 END
+-- SKIP Firebird END
 
 BeforeExecute
 -- Firebird3 Firebird
