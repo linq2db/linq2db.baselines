@@ -11,8 +11,8 @@ BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	DateAdd(Day, 1, CURRENT_TIMESTAMP),
-	DateAdd(Day, 2, CURRENT_TIMESTAMP)
+	DateAdd(Day, 1, LOCALTIMESTAMP),
+	DateAdd(Day, 2, LOCALTIMESTAMP)
 FROM rdb$database
 
 BeforeExecute

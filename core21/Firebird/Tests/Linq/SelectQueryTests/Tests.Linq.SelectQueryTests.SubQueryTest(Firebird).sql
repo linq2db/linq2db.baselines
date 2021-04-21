@@ -41,8 +41,8 @@ SELECT FIRST @take
 FROM
 	(
 		SELECT
-			DateAdd(Day, "t"."Value", CURRENT_TIMESTAMP) as "Value1",
-			DateAdd(Day, 2, CURRENT_TIMESTAMP) as "Value2"
+			DateAdd(Day, "t"."Value", LOCALTIMESTAMP) as "Value1",
+			DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
 		FROM
 			"SampleClass" "t"
 		WHERE
@@ -54,8 +54,8 @@ FROM
 		FROM
 			(
 				SELECT
-					DateAdd(Day, 3, CURRENT_TIMESTAMP) as "Value1",
-					DateAdd(Day, 4, CURRENT_TIMESTAMP) as "Value2"
+					DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
+					DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
 				FROM rdb$database
 			) "t1"
 	) "t2"
