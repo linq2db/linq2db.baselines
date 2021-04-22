@@ -1,16 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	DATABASE()
-FROM
-	`LinqDataTypes` `_`
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @param3 Int32
 SET     @param3 = 123
 DECLARE @param2 Int32
@@ -18,7 +7,7 @@ SET     @param2 = 5
 DECLARE @param1 Int32
 SET     @param1 = NULL
 
-`testdata2`.`TestProcedure`
+`TestProcedure`
 
 BeforeExecute
 -- MySqlConnector MySql
