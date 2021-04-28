@@ -2,5 +2,5 @@
 -- PostgreSQL.9.2 PostgreSQL
 
 SELECT
-	NULL
+	Cast(NULL as Int)
 
