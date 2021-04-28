@@ -19,7 +19,7 @@ VALUES
 (
 	1001,
 	True,
-	NULL
+	Cast(NULL as bytea)
 )
 
 BeforeExecute
