@@ -41,7 +41,7 @@ FROM
 					THEN 1
 				ELSE 0
 			END as "a",
-			NULL as "b"
+			Cast(NULL as smallint) as "b"
 		FROM
 			"Parent" "x_1"
 	) "t4"

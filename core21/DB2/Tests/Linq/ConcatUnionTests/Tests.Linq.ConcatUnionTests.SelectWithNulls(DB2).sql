@@ -14,14 +14,14 @@ FROM
 	"LinqDataTypes" "t1"
 UNION ALL
 SELECT
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL
+	Cast(NULL as Int),
+	Cast(NULL as Decimal),
+	Cast(NULL as timestamp),
+	Cast(NULL as smallint),
+	Cast(NULL as char(16) for bit data),
+	Cast(NULL as VarBinary),
+	Cast(NULL as SmallInt),
+	Cast(NULL as NVarChar(255))
 FROM
 	"LinqDataTypes" "d"
 
