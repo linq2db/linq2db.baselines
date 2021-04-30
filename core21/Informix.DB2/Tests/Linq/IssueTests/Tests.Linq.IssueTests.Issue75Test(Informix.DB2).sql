@@ -22,7 +22,7 @@ FROM
 				WHERE
 					c2.ParentID = c_1.ParentID
 			) as CountChildren2,
-			CASE
+			Cast(CASE
 				WHEN EXISTS(
 					SELECT
 						*
@@ -33,8 +33,8 @@ FROM
 				)
 					THEN 't'
 				ELSE 'f'
-			END as c1,
-			CASE
+			END as BOOLEAN) as c1,
+			Cast(CASE
 				WHEN (NOT EXISTS(
 					SELECT
 						*
@@ -45,7 +45,7 @@ FROM
 				))
 					THEN 't'
 				ELSE 'f'
-			END as c2,
+			END as BOOLEAN) as c2,
 			(
 				SELECT
 					Min(c2_3.ChildID)

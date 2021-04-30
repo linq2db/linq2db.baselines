@@ -80,7 +80,7 @@ FROM
 				WHERE
 					(a_Parent.ParentID = e.ParentID AND (a_Parent.Value1 = e.Value1 OR a_Parent.Value1 IS NULL AND e.Value1 IS NULL))
 			) as SubSum,
-			CASE
+			Cast(CASE
 				WHEN EXISTS(
 					SELECT
 						*
@@ -92,7 +92,7 @@ FROM
 				)
 					THEN 't'
 				ELSE 'f'
-			END as c2,
+			END as BOOLEAN) as c2,
 			(
 				SELECT
 					Count(*)

@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			"p1"."ParentID",
-			NULL as "Value1"
+			Cast(NULL as Int) as "Value1"
 		FROM
 			"Parent" "p1"
 		UNION

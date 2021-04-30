@@ -3,12 +3,12 @@
 
 SELECT
 	c_1."Value1",
-	NULL
+	Cast(NULL as Int)
 FROM
 	"Parent" c_1
 UNION ALL
 SELECT
-	NULL,
+	Cast(NULL as Int),
 	c_2."ParentID"
 FROM
 	"Child" c_2

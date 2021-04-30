@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
-	CASE
+	Cast(CASE
 		WHEN (NOT EXISTS(
 			SELECT
 				*
@@ -13,6 +13,6 @@ SELECT FIRST 1
 		))
 			THEN 't'
 		ELSE 'f'
-	END
+	END as BOOLEAN)
 FROM SYSTABLES
 
