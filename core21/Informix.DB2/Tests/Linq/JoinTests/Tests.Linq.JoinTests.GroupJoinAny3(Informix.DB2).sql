@@ -3,7 +3,7 @@
 
 SELECT
 	p.ParentID,
-	CASE
+	Cast(CASE
 		WHEN EXISTS(
 			SELECT
 				*
@@ -14,7 +14,7 @@ SELECT
 		)
 			THEN 't'
 		ELSE 'f'
-	END
+	END as BOOLEAN)
 FROM
 	Parent p
 

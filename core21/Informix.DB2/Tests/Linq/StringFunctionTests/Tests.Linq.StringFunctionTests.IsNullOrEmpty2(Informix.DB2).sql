@@ -2,11 +2,11 @@
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
+	Cast(CASE
 		WHEN (p.FirstName IS NULL OR Length(p.FirstName) = 0)
 			THEN 't'
 		ELSE 'f'
-	END
+	END as BOOLEAN)
 FROM
 	Person p
 WHERE
