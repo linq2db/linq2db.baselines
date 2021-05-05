@@ -35,7 +35,7 @@ DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
 DECLARE @BigIntValue BigInt -- Int64
 SET     @BigIntValue = 1
-DECLARE @StringValue NVarChar(4000) -- String
+DECLARE @StringValue NVarChar(255) -- String
 SET     @StringValue = NULL
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -94,7 +94,7 @@ DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
 DECLARE @BigIntValue BigInt -- Int64
 SET     @BigIntValue = 1
-DECLARE @StringValue NVarChar(4000) -- String
+DECLARE @StringValue NVarChar(255) -- String
 SET     @StringValue = NULL
 DECLARE @ID Int -- Int32
 SET     @ID = 1
