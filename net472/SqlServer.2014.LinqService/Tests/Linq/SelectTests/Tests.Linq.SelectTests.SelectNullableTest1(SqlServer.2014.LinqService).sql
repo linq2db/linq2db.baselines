@@ -18,7 +18,7 @@ DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
 DECLARE @BigIntValue BigInt -- Int64
 SET     @BigIntValue = NULL
-DECLARE @StringValue NVarChar(4000) -- String
+DECLARE @StringValue NVarChar(255) -- String
 SET     @StringValue = NULL
 
 INSERT INTO [LinqDataTypes]
