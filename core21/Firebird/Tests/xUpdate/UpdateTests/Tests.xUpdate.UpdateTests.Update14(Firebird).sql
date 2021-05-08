@@ -36,7 +36,7 @@ UPDATE
 SET
 	"Person"."LastName" = Cast((Char_Length(Cast(@name as VarChar(255) CHARACTER SET UNICODE_FSS)) + Cast(@idx as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
 WHERE
-	"Person"."FirstName" STARTING WITH 'Update14'
+	Lower("Person"."FirstName") STARTING WITH 'update14'
 
 BeforeExecute
 -- Firebird
@@ -46,7 +46,7 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" STARTING WITH 'Update14'
+	Lower("t1"."FirstName") STARTING WITH 'update14'
 
 BeforeExecute
 -- Firebird
@@ -54,5 +54,5 @@ BeforeExecute
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" STARTING WITH 'Update14'
+	Lower("t1"."FirstName") STARTING WITH 'update14'
 
