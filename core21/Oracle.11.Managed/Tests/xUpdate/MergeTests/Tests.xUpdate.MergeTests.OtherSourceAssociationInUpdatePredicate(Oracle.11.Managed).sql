@@ -305,7 +305,7 @@ WHERE
 		"Patient" a_Patient_1
 	WHERE
 		("Source"."Diagnosis" = a_Patient_1."Diagnosis" OR "Source"."Diagnosis" IS NULL AND a_Patient_1."Diagnosis" IS NULL) AND
-		a_Patient_1."Diagnosis" LIKE '%very%' ESCAPE '~' AND
+		Lower(a_Patient_1."Diagnosis") LIKE '%very%' ESCAPE '~' AND
 		Target."PersonID" = a_Patient_1."PersonID"
 )
 

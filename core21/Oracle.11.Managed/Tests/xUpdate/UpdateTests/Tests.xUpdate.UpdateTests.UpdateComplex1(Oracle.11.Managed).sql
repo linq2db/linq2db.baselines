@@ -14,7 +14,7 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	Lower(t1."FirstName") LIKE 'updatecomplex%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -111,5 +111,5 @@ BeforeExecute
 DELETE FROM
 	"Person" t1
 WHERE
-	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	Lower(t1."FirstName") LIKE 'updatecomplex%' ESCAPE '~'
 
