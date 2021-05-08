@@ -21,8 +21,6 @@ FROM
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @pattern_1 Varchar2(3) -- String
-SET     @pattern_1 = '%1%'
 DECLARE @take Int32
 SET     @take = 10
 
@@ -42,7 +40,7 @@ FROM
 		FROM
 			"Person" p_1
 		WHERE
-			Cast(p_1."PersonID" as VarChar2(11)) LIKE :pattern_1 ESCAPE '~'
+			Lower(Cast(p_1."PersonID" as VarChar2(11))) LIKE '%1%' ESCAPE '~'
 	) t1
 FETCH NEXT :take ROWS ONLY
 

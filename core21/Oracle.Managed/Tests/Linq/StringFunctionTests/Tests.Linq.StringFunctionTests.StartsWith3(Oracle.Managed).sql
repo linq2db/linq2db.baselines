@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @str Varchar2(7) -- String
-SET     @str = 'John123'
+DECLARE @str_1 Varchar2(7) -- String
+SET     @str_1 = 'john123'
 
 SELECT
 	p."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	:str LIKE Replace(Replace(Replace(p."FirstName", '~', '~~'), '%', '~%'), '_', '~_') || '%' ESCAPE '~'
+	:str_1 LIKE Replace(Replace(Replace(Lower(p."FirstName"), '~', '~~'), '%', '~%'), '_', '~_') || '%' ESCAPE '~'
 

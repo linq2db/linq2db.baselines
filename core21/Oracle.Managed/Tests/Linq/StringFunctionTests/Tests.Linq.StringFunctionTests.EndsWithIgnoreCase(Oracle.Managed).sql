@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") LIKE '%o~%h%' ESCAPE '~' AND p."PersonID" = 1
+	Lower(p."FirstName") LIKE '%john' ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -16,6 +16,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") NOT LIKE '%o~%h%' ESCAPE '~' AND
+	Lower(p."FirstName") NOT LIKE '%john' ESCAPE '~' AND
 	p."PersonID" = 1
 

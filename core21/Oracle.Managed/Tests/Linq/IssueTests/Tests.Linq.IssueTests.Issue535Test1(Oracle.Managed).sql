@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE 'J%' ESCAPE '~' AND (p."PersonID" = 1 OR p."LastName" = 'fail')
+	Lower(p."FirstName") LIKE 'j%' ESCAPE '~' AND (p."PersonID" = 1 OR p."LastName" = 'fail')
 FETCH NEXT :take ROWS ONLY
 
