@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT FIRST 1
+SELECT
 	Cast(CASE
 		WHEN EXISTS(
 			SELECT
@@ -14,12 +14,12 @@ SELECT FIRST 1
 			THEN 't'
 		ELSE 'f'
 	END as BOOLEAN)
-FROM SYSTABLES
+FROM table(set{1})
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT FIRST 1
+SELECT
 	Cast(CASE
 		WHEN EXISTS(
 			SELECT
@@ -32,5 +32,5 @@ SELECT FIRST 1
 			THEN 't'
 		ELSE 'f'
 	END as BOOLEAN)
-FROM SYSTABLES
+FROM table(set{1})
 

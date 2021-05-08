@@ -2,13 +2,15 @@
 -- Informix.DB2 Informix
 
 SELECT
-	'test1'
+	Count(*)
 FROM table(set{1})
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	'test2'
+	Count(*)
 FROM table(set{1})
+WHERE
+	1 = 0
 

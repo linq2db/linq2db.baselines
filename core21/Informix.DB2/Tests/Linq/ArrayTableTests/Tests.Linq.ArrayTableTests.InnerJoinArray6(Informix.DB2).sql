@@ -10,9 +10,9 @@ SELECT
 FROM
 	Person p
 		INNER JOIN (
-			SELECT FIRST 1
+			SELECT
 				'Doe' as c1
-			FROM SYSTABLES
+			FROM table(set{1})
 		) n ON p.LastName = n.c1
 
 BeforeExecute
