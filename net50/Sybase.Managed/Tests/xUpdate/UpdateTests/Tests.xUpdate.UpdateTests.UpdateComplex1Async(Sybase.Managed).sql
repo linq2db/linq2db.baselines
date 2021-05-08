@@ -10,7 +10,7 @@ DELETE FROM [Person]
 FROM
 	[Person] [t1]
 WHERE
-	[t1].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
+	Lower([t1].[FirstName]) LIKE 'updatecomplex%' ESCAPE '~'
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
@@ -104,5 +104,5 @@ DELETE FROM [Person]
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
+	Lower([_].[FirstName]) LIKE 'updatecomplex%' ESCAPE '~'
 

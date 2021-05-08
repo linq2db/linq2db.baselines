@@ -106,5 +106,5 @@ FROM
 			[Parent] [e]
 	) [f]
 WHERE
-	[f].[c1] LIKE '%1%' ESCAPE '~' AND [f].[Sum_1] > 0
+	Lower([f].[c1]) LIKE '%1%' ESCAPE '~' AND [f].[Sum_1] > 0
 

@@ -57,12 +57,6 @@ CREATE TABLE [Flat]
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @cpty_3 UniVarChar(3) -- String
-SET     @cpty_3 = '%C%'
-DECLARE @cpty_4 UniVarChar(3) -- String
-SET     @cpty_4 = '%C%'
-DECLARE @cpty_5 UniVarChar(3) -- String
-SET     @cpty_5 = '%C%'
 
 SELECT
 	[al_1].[alert],
@@ -85,7 +79,7 @@ FROM
 		LEFT JOIN [Trade] [trade1] ON ([al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [trade1].[DealId]) IS NULL)
 		LEFT JOIN [Nomin] [nomin1] ON ([al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [nomin1].[CargoId]) IS NULL)
 WHERE
-	(([nomin1].[DeliveryCounterParty] LIKE @cpty_3 ESCAPE '~' OR [trade1].[CounterParty] LIKE @cpty_4 ESCAPE '~') OR [al_1].[alert_1] LIKE @cpty_5 ESCAPE '~')
+	((Lower([nomin1].[DeliveryCounterParty]) LIKE '%c%' ESCAPE '~' OR Lower([trade1].[CounterParty]) LIKE '%c%' ESCAPE '~') OR Lower([al_1].[alert_1]) LIKE '%c%' ESCAPE '~')
 GROUP BY
 	[al_1].[alert],
 	[al_1].[alert_1],

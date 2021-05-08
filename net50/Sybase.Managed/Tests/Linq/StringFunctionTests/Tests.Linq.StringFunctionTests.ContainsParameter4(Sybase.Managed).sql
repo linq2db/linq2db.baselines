@@ -32,7 +32,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN [p].[FirstName] LIKE '%Jo%' ESCAPE '~'
+				WHEN Lower([p].[FirstName]) LIKE '%jo%' ESCAPE '~'
 					THEN 1
 				ELSE 0
 			END as [Field1],

@@ -21,8 +21,6 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @pattern_1 UniVarChar(3) -- String
-SET     @pattern_1 = '%1%'
 
 SELECT TOP 10
 	[t1].[FirstName]
@@ -40,6 +38,6 @@ FROM
 		FROM
 			[Person] [p_1]
 		WHERE
-			Convert(NVarChar(11), [p_1].[PersonID]) LIKE @pattern_1 ESCAPE '~'
+			Lower(Convert(NVarChar(11), [p_1].[PersonID])) LIKE '%1%' ESCAPE '~'
 	) [t1]
 

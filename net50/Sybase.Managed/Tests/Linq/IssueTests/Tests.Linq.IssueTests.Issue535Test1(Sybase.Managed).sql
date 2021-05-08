@@ -8,5 +8,5 @@ SELECT TOP 1
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE 'J%' ESCAPE '~' AND ([p].[PersonID] = 1 OR [p].[LastName] = 'fail')
+	Lower([p].[FirstName]) LIKE 'j%' ESCAPE '~' AND ([p].[PersonID] = 1 OR [p].[LastName] = 'fail')
 

@@ -173,8 +173,6 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @cond_1 UniVarChar(4) -- String
-SET     @cond_1 = 'aaa%'
 DECLARE @uptoDate DateTime
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
@@ -186,7 +184,7 @@ FROM
 		INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 		INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 WHERE
-	[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond_1 ESCAPE '~' AND
+	[ins].[SourceInstrumentCode] IS NOT NULL AND Lower([_].[InstrumentCode]) LIKE 'aaa%' ESCAPE '~' AND
 	[_].[CreateDate] <= @uptoDate
 ORDER BY
 	[ins].[SourceInstrumentCode]

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @str_1 UniVarChar(4) -- String
-SET     @str_1 = '%oh%'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @str_1 ESCAPE '~' AND [p].[PersonID] = 1
+	Lower([p].[FirstName]) LIKE '%oh%' ESCAPE '~' AND [p].[PersonID] = 1
 
