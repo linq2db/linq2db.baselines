@@ -6,5 +6,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND '123[456' ILIKE '%~[%' ESCAPE '~'
+	p."FirstName" NOT LIKE '%Joh%' ESCAPE '~' AND p."PersonID" = 1
 
