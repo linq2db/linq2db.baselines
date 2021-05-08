@@ -100,7 +100,8 @@ FROM
 	"Stone" "s"
 WHERE
 	("s"."Enabled" = 1 AND "s"."Enabled" IS NOT NULL) AND
-	("s"."Name" NOT STARTING WITH 'level - ') AND Char_Length("s"."ImageFullUrl") > 0
+	(Lower("s"."Name") NOT STARTING WITH 'level - ') AND
+	Char_Length("s"."ImageFullUrl") > 0
 GROUP BY
 	"s"."Name"
 
@@ -118,7 +119,7 @@ FROM
 	"Stone" "s"
 WHERE
 	("s"."Enabled" = 1 AND "s"."Enabled" IS NOT NULL) AND
-	("s"."Name" NOT STARTING WITH 'level - ') AND
+	(Lower("s"."Name") NOT STARTING WITH 'level - ') AND
 	Char_Length("s"."ImageFullUrl") > 0 AND
 	"s"."Name" = @Name
 
@@ -136,7 +137,7 @@ FROM
 	"Stone" "s"
 WHERE
 	("s"."Enabled" = 1 AND "s"."Enabled" IS NOT NULL) AND
-	("s"."Name" NOT STARTING WITH 'level - ') AND
+	(Lower("s"."Name") NOT STARTING WITH 'level - ') AND
 	Char_Length("s"."ImageFullUrl") > 0 AND
 	"s"."Name" = @Name
 

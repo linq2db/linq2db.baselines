@@ -4,7 +4,7 @@
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" STARTING WITH 'Insert14'
+	Lower("t1"."FirstName") STARTING WITH 'insert14'
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -39,7 +39,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" STARTING WITH 'Insert14'
+	Lower("p"."FirstName") STARTING WITH 'insert14'
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -47,5 +47,5 @@ BeforeExecute
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" STARTING WITH 'Insert14'
+	Lower("t1"."FirstName") STARTING WITH 'insert14'
 

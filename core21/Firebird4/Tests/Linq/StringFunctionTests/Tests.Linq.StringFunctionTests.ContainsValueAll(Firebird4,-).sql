@@ -2,13 +2,19 @@
 -- Firebird4 Firebird
 
 SELECT
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender"
+	Count(*)
 FROM
 	"Person" "p"
 WHERE
 	"p"."PersonID" = 1 AND ('123-456' CONTAINING '-')
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT
+	Count(*)
+FROM
+	"Person" "p"
+WHERE
+	"p"."PersonID" = 1 AND ('123-456' NOT CONTAINING '-')
 

@@ -11,5 +11,5 @@ FROM
 	"Person" "p1",
 	"Person" "p2"
 WHERE
-	"p1"."PersonID" = "p2"."PersonID" AND (Replace("p1"."FirstName", 'J', '%') STARTING WITH Replace("p2"."FirstName", 'J', '%'))
+	"p1"."PersonID" = "p2"."PersonID" AND (Lower(Replace("p1"."FirstName", 'J', '%')) STARTING WITH Lower(Replace("p2"."FirstName", 'J', '%')))
 
