@@ -36,7 +36,7 @@ WHERE
 			WHEN "p"."FirstName" IS NULL
 				THEN NULL
 			ELSE CASE
-				WHEN "p"."FirstName" STARTING WITH 'Jo'
+				WHEN Lower("p"."FirstName") STARTING WITH 'jo'
 					THEN 1
 				ELSE 0
 			END
@@ -45,7 +45,7 @@ WHERE
 		WHEN "p"."FirstName" IS NULL
 			THEN NULL
 		ELSE CASE
-			WHEN "p"."FirstName" STARTING WITH 'Jo'
+			WHEN Lower("p"."FirstName") STARTING WITH 'jo'
 				THEN 1
 			ELSE 0
 		END
