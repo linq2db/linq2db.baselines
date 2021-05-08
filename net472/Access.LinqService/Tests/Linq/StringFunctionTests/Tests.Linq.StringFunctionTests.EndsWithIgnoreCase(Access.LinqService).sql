@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE '%jOh%' AND [p].[PersonID] = 1
+	[p].[FirstName] LIKE '%JOHN' AND [p].[PersonID] = 1
 
 BeforeExecute
 -- Access AccessOleDb
@@ -16,5 +16,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] NOT LIKE '%jOh%' AND [p].[PersonID] = 1
+	[p].[FirstName] NOT LIKE '%JOHN' AND [p].[PersonID] = 1
 
