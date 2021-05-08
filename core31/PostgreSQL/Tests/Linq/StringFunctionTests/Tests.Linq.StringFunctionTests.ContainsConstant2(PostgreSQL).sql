@@ -2,13 +2,19 @@
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."FirstName",
-	p."PersonID",
-	p."LastName",
-	p."MiddleName",
-	p."Gender"
+	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" NOT LIKE '%o~%h%' ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" ILIKE '%o~%h%' ESCAPE '~' AND p."PersonID" = 1
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	Count(*)
+FROM
+	"Person" p
+WHERE
+	p."FirstName" NOT ILIKE '%o~%h%' ESCAPE '~' AND p."PersonID" = 1
 

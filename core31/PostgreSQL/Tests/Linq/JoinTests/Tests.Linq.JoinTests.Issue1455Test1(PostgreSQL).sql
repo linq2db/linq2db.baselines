@@ -85,7 +85,7 @@ FROM
 		LEFT JOIN "Trade" trade1 ON al_1.alert = Cast(trade1."DealId" as VarChar(11))
 		LEFT JOIN "Nomin" nomin1 ON al_1.alert = Cast(nomin1."CargoId" as VarChar(11))
 WHERE
-	((nomin1."DeliveryCounterParty" LIKE :cpty_3 ESCAPE '~' OR trade1."CounterParty" LIKE :cpty_4 ESCAPE '~') OR al_1.alert_1 LIKE :cpty_5 ESCAPE '~')
+	((nomin1."DeliveryCounterParty" ILIKE :cpty_3 ESCAPE '~' OR trade1."CounterParty" ILIKE :cpty_4 ESCAPE '~') OR al_1.alert_1 ILIKE :cpty_5 ESCAPE '~')
 GROUP BY
 	al_1.alert,
 	al_1.alert_1,

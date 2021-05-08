@@ -38,7 +38,7 @@ FROM
 	) t1
 		LEFT JOIN "Doctor" x ON x."PersonID" = t1."PersonID" AND x."PersonID" = t1."PersonID_1"
 WHERE
-	t1."FirstName" LIKE 'J%' ESCAPE '~'
+	t1."FirstName" ILIKE 'J%' ESCAPE '~'
 ORDER BY
 	t1."PersonID_1",
 	t1."FirstName",
