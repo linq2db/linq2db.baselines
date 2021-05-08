@@ -159,7 +159,7 @@ FROM
 	"SampleClass" t
 		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
 WHERE
-	v.* LIKE 'V%' ESCAPE '~'
+	v.* ILIKE 'V%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

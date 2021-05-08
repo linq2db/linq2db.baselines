@@ -4,7 +4,7 @@
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
-	t1."Value" LIKE 'SeqValue%' ESCAPE '~'
+	t1."Value" ILIKE 'SeqValue%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -657,5 +657,5 @@ BeforeExecute
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
-	t1."Value" LIKE 'SeqValue%' ESCAPE '~'
+	t1."Value" ILIKE 'SeqValue%' ESCAPE '~'
 

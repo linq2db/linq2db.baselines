@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" NOT LIKE :str_1 ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" NOT ILIKE :str_1 ESCAPE '~' AND p."PersonID" = 1
 
