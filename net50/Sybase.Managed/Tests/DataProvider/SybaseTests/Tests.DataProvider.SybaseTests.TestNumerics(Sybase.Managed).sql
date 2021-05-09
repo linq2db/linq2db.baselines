@@ -5232,21 +5232,21 @@ SELECT Cast(-3.402823E+38 as real)
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Real -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Real -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Real -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
@@ -5263,21 +5263,21 @@ SELECT Cast(3.402823E+38 as real)
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Real -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Real -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Real -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 
