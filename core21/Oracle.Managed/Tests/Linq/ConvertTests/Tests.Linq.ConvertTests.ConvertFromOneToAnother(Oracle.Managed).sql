@@ -14,7 +14,7 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @value_1 BinaryFloat -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 DECLARE @take Int32
 SET     @take = 1
 
@@ -53,7 +53,7 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @value_1 BinaryFloat -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 DECLARE @take Int32
 SET     @take = 1
 
@@ -92,7 +92,7 @@ FETCH NEXT :take ROWS ONLY
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @value_1 BinaryFloat -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 DECLARE @take Int32
 SET     @take = 1
 

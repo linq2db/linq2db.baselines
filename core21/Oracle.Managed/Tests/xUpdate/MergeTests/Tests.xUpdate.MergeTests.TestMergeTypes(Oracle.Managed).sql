@@ -103,7 +103,7 @@ SET     @FieldChar = '*'
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = 'ё'
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = -3.40282E+38
+SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = -1.7976931348623157E+308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
@@ -179,7 +179,7 @@ SET     @FieldChar = '&'
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = '>'
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 1.7976931348623157E+308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
@@ -254,7 +254,7 @@ DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = '
 '
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = 1.1755E-38
+SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = -2.2250738585072014E-308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
@@ -328,7 +328,7 @@ SET     @FieldChar = ''
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = ''
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 2.2250738585072014E-308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
@@ -404,7 +404,7 @@ SET     @FieldChar = '1'
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 1.7976931348623157E+308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
@@ -478,7 +478,7 @@ SET     @FieldChar = ' '
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 2.2250738585072014E-308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
@@ -554,7 +554,7 @@ SET     @FieldChar = '-'
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = '~'
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 1.7976931348623157E+308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
