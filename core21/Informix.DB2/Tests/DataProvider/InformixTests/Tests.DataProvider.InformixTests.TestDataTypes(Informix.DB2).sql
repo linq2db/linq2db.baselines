@@ -197,21 +197,21 @@ SELECT realDataType FROM AllTypes WHERE ID = 2
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @p Real(4) -- Single
-SET     @p = 20.31
+SET     @p = 20.3099995
 
 SELECT ID FROM AllTypes WHERE realDataType = ?
 
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @p Real(4) -- Single
-SET     @p = 20.31
+SET     @p = 20.3099995
 
 SELECT ID FROM AllTypes WHERE realDataType = ?
 
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @p Real(4) -- Single
-SET     @p = 20.31
+SET     @p = 20.3099995
 
 SELECT ID FROM AllTypes WHERE realDataType = ?
 
