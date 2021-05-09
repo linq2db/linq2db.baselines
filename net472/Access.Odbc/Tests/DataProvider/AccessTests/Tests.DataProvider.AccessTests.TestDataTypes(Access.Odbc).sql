@@ -404,21 +404,21 @@ SELECT realDataType FROM [AllTypes] WHERE ID = 2
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @p Real -- Single
-SET     @p = 16.2
+SET     @p = 16.2000008
 
 SELECT ID FROM [AllTypes] WHERE realDataType = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @p Real -- Single
-SET     @p = 16.2
+SET     @p = 16.2000008
 
 SELECT ID FROM [AllTypes] WHERE realDataType = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @p Real -- Single
-SET     @p = 16.2
+SET     @p = 16.2000008
 
 SELECT ID FROM [AllTypes] WHERE realDataType = ?
 

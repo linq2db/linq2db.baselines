@@ -2318,21 +2318,21 @@ SELECT csng(-3.402823E+38)
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @p Real -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @p Real -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @p Real -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT ?
 
@@ -2349,21 +2349,21 @@ SELECT csng(3.402823E+38)
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @p Real -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @p Real -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @p Real -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT ?
 
