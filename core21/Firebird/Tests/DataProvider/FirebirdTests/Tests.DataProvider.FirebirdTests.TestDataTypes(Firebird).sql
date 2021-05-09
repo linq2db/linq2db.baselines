@@ -240,21 +240,21 @@ SELECT "floatDataType" FROM "AllTypes" WHERE ID = 2
 BeforeExecute
 -- Firebird
 DECLARE @p Float -- Single
-SET     @p = 20.31
+SET     @p = 20.3099995
 
 SELECT ID FROM "AllTypes" WHERE "floatDataType" = @p
 
 BeforeExecute
 -- Firebird
 DECLARE @p Float -- Single
-SET     @p = 20.31
+SET     @p = 20.3099995
 
 SELECT ID FROM "AllTypes" WHERE "floatDataType" = @p
 
 BeforeExecute
 -- Firebird
 DECLARE @p Float -- Single
-SET     @p = 20.31
+SET     @p = 20.3099995
 
 SELECT ID FROM "AllTypes" WHERE "floatDataType" = @p
 
