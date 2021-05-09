@@ -14,7 +14,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @value_1  -- Single
-SET     @value_1 = 6579.6465
+SET     @value_1 = 6579.64648
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -53,7 +53,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @value_1  -- Single
-SET     @value_1 = 6579.6465
+SET     @value_1 = 6579.64648
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -92,7 +92,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @value_1  -- Single
-SET     @value_1 = 6579.6465
+SET     @value_1 = 6579.64648
 DECLARE @take  -- Int32
 SET     @take = 1
 
