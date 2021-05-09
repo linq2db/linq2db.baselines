@@ -448,21 +448,21 @@ SELECT realDataType FROM ALLTYPES WHERE ID = 2
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p Real(4) -- Single
-SET     @p = 20.31
+SET     @p = 20.3099995
 
 SELECT ID FROM ALLTYPES WHERE realDataType = @p
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p Real(4) -- Single
-SET     @p = 20.31
+SET     @p = 20.3099995
 
 SELECT ID FROM ALLTYPES WHERE realDataType = @p
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p Real(4) -- Single
-SET     @p = 20.31
+SET     @p = 20.3099995
 
 SELECT ID FROM ALLTYPES WHERE realDataType = @p
 
