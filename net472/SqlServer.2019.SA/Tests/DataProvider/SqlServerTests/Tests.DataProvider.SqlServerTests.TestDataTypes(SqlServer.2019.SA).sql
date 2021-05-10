@@ -552,21 +552,21 @@ SELECT realDataType FROM [AllTypes] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 DECLARE @p Real -- Single
-SET     @p = 16.2
+SET     @p = 16.2000008
 
 SELECT ID FROM [AllTypes] WHERE realDataType = @p
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 DECLARE @p Real -- Single
-SET     @p = 16.2
+SET     @p = 16.2000008
 
 SELECT ID FROM [AllTypes] WHERE realDataType = @p
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 DECLARE @p Real -- Single
-SET     @p = 16.2
+SET     @p = 16.2000008
 
 SELECT ID FROM [AllTypes] WHERE realDataType = @p
 

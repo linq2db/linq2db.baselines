@@ -2588,21 +2588,21 @@ SELECT Cast(-3.4E+28 as binary_double) FROM sys.dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p BinaryFloat -- Single
-SET     @p = -3.4E+28
+SET     @p = -3.39999998E+28
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                  
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p BinaryFloat -- Single
-SET     @p = -3.4E+28
+SET     @p = -3.39999998E+28
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                   
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p BinaryFloat -- Single
-SET     @p = -3.4E+28
+SET     @p = -3.39999998E+28
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                    
 
@@ -2619,21 +2619,21 @@ SELECT Cast(3.4E+28 as binary_double) FROM sys.dual
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p BinaryFloat -- Single
-SET     @p = 3.4E+28
+SET     @p = 3.39999998E+28
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                     
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p BinaryFloat -- Single
-SET     @p = 3.4E+28
+SET     @p = 3.39999998E+28
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                      
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p BinaryFloat -- Single
-SET     @p = 3.4E+28
+SET     @p = 3.39999998E+28
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                       
 

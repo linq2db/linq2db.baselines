@@ -105,7 +105,7 @@ SET     @FieldChar = '*'
 DECLARE @FieldNChar WChar(1) -- StringFixedLength
 SET     @FieldNChar = 'ё'
 DECLARE @FieldFloat Single
-SET     @FieldFloat = -3.40282E+38
+SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = -1.7976931348623157E+308
 DECLARE @FieldDateTime Date -- DateTime
@@ -185,7 +185,7 @@ SET     @FieldChar = '&'
 DECLARE @FieldNChar WChar(1) -- StringFixedLength
 SET     @FieldNChar = '>'
 DECLARE @FieldFloat Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Date -- DateTime
@@ -264,7 +264,7 @@ DECLARE @FieldNChar WChar(1) -- StringFixedLength
 SET     @FieldNChar = '
 '
 DECLARE @FieldFloat Single
-SET     @FieldFloat = 1.1755E-38
+SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = -2.2250738585072014E-308
 DECLARE @FieldDateTime Date -- DateTime
@@ -342,7 +342,7 @@ SET     @FieldChar = ''
 DECLARE @FieldNChar WChar(1) -- StringFixedLength
 SET     @FieldNChar = ''
 DECLARE @FieldFloat Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime Date -- DateTime
@@ -422,7 +422,7 @@ SET     @FieldChar = '1'
 DECLARE @FieldNChar WChar(1) -- StringFixedLength
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Date -- DateTime
@@ -500,7 +500,7 @@ SET     @FieldChar = ' '
 DECLARE @FieldNChar WChar(1) -- StringFixedLength
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime Date -- DateTime
@@ -580,7 +580,7 @@ SET     @FieldChar = '-'
 DECLARE @FieldNChar WChar(1) -- StringFixedLength
 SET     @FieldNChar = '~'
 DECLARE @FieldFloat Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Date -- DateTime

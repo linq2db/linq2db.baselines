@@ -117,7 +117,7 @@ SET     @FieldChar = N'*'
 DECLARE @FieldNChar NChar(1) -- StringFixedLength
 SET     @FieldNChar = N'ё'
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = -3.40282E+38
+SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = -1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime2
@@ -205,7 +205,7 @@ SET     @FieldChar = N'&'
 DECLARE @FieldNChar NChar(1) -- StringFixedLength
 SET     @FieldNChar = N'>'
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime2
@@ -292,7 +292,7 @@ DECLARE @FieldNChar NChar(1) -- StringFixedLength
 SET     @FieldNChar = N'
 '
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 1.1755E-38
+SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = -2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime2
@@ -378,7 +378,7 @@ SET     @FieldChar = N''
 DECLARE @FieldNChar NChar(1) -- StringFixedLength
 SET     @FieldNChar = N''
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime2
@@ -466,7 +466,7 @@ SET     @FieldChar = N'1'
 DECLARE @FieldNChar NChar(1) -- StringFixedLength
 SET     @FieldNChar = N' '
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime2
@@ -552,7 +552,7 @@ SET     @FieldChar = N' '
 DECLARE @FieldNChar NChar(1) -- StringFixedLength
 SET     @FieldNChar = N' '
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime2
@@ -640,7 +640,7 @@ SET     @FieldChar = N'-'
 DECLARE @FieldNChar NChar(1) -- StringFixedLength
 SET     @FieldNChar = N'~'
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime2

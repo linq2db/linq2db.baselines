@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @value_1 Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 
 SELECT TOP 1
 	@value_1
@@ -41,7 +41,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @value_1 Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 
 SELECT TOP 1
 	@value_1
@@ -71,7 +71,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @value_1 Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 
 SELECT TOP 1
 	@value_1

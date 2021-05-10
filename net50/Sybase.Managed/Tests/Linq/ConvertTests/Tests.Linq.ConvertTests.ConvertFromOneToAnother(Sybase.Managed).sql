@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.6465
+SET     @value_1 = 6579.64648
 
 SELECT TOP 1
 	Convert(Decimal(29, 10), @value_1)
@@ -41,7 +41,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.6465
+SET     @value_1 = 6579.64648
 
 SELECT TOP 1
 	Convert(Real, @value_1)
@@ -71,7 +71,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.6465
+SET     @value_1 = 6579.64648
 
 SELECT TOP 1
 	Convert(Float, @value_1)

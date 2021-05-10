@@ -14,7 +14,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -53,7 +53,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -92,7 +92,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 DECLARE @take Integer -- Int32
 SET     @take = 1
 

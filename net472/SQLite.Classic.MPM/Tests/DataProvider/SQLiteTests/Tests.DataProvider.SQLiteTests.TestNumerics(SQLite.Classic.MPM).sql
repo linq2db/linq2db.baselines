@@ -2432,56 +2432,56 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'bit')
+	CAST(1.10000002 as 'bit')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'decimal')
+	CAST(1.10000002 as 'decimal')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'money')
+	CAST(1.10000002 as 'money')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'numeric')
+	CAST(1.10000002 as 'numeric')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'float')
+	CAST(1.10000002 as 'float')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'real')
+	CAST(1.10000002 as 'real')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = 1.1
+SET     @p = 1.10000002
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = 1.1
+SET     @p = 1.10000002
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = 1.1
+SET     @p = 1.10000002
 
 SELECT @p
 
@@ -2489,56 +2489,56 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'bit')
+	CAST(1.10000002 as 'bit')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'decimal')
+	CAST(1.10000002 as 'decimal')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'money')
+	CAST(1.10000002 as 'money')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'numeric')
+	CAST(1.10000002 as 'numeric')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'float')
+	CAST(1.10000002 as 'float')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(1.1 as 'real')
+	CAST(1.10000002 as 'real')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = 1.1
+SET     @p = 1.10000002
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = 1.1
+SET     @p = 1.10000002
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = 1.1
+SET     @p = 1.10000002
 
 SELECT @p
 
@@ -4889,56 +4889,56 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(-3.402823E+38 as 'bit')
+	CAST(-3.40282306E+38 as 'bit')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(-3.402823E+38 as 'decimal')
+	CAST(-3.40282306E+38 as 'decimal')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(-3.402823E+38 as 'money')
+	CAST(-3.40282306E+38 as 'money')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(-3.402823E+38 as 'numeric')
+	CAST(-3.40282306E+38 as 'numeric')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(-3.402823E+38 as 'float')
+	CAST(-3.40282306E+38 as 'float')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(-3.402823E+38 as 'real')
+	CAST(-3.40282306E+38 as 'real')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
@@ -4946,56 +4946,56 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(3.402823E+38 as 'bit')
+	CAST(3.40282306E+38 as 'bit')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(3.402823E+38 as 'decimal')
+	CAST(3.40282306E+38 as 'decimal')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(3.402823E+38 as 'money')
+	CAST(3.40282306E+38 as 'money')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(3.402823E+38 as 'numeric')
+	CAST(3.40282306E+38 as 'numeric')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(3.402823E+38 as 'float')
+	CAST(3.40282306E+38 as 'float')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST(3.402823E+38 as 'real')
+	CAST(3.40282306E+38 as 'real')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 

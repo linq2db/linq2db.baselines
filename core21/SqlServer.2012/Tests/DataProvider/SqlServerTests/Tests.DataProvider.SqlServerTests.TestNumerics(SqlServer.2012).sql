@@ -4638,21 +4638,21 @@ SELECT Cast(-3.402823E+38 as real)
 BeforeExecute
 -- SqlServer.2012
 DECLARE @p Real -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2012
 DECLARE @p Real -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2012
 DECLARE @p Real -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
@@ -4669,21 +4669,21 @@ SELECT Cast(3.402823E+38 as real)
 BeforeExecute
 -- SqlServer.2012
 DECLARE @p Real -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2012
 DECLARE @p Real -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2012
 DECLARE @p Real -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 

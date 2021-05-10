@@ -134,9 +134,9 @@ SET     @Decimal10_5 = -12345.2345
 DECLARE @Decimal20_2 Decimal(9, 2)
 SET     @Decimal20_2 = -3412345.23
 DECLARE @Float_1 Float -- Single
-SET     @Float_1 = 3244.24
+SET     @Float_1 = 3244.23999
 DECLARE @Float10 Float -- Single
-SET     @Float10 = 124.354
+SET     @Float10 = 124.353996
 DECLARE @Double_1 Double
 SET     @Double_1 = 452.23523
 DECLARE @Float30 Double

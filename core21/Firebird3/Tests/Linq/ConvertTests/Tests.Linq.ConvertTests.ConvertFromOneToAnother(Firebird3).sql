@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 DECLARE @value_1 Float -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 
 SELECT FIRST @take
 	Cast(@value_1 as Decimal(18, 10))
@@ -51,7 +51,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 DECLARE @value_1 Float -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 
 SELECT FIRST @take
 	Cast(@value_1 as Real)
@@ -87,7 +87,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 1
 DECLARE @value_1 Float -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 
 SELECT FIRST @take
 	Cast(@value_1 as Float)
