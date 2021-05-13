@@ -507,6 +507,7 @@ CREATE TABLE "AllTypes"
 	"intDataType"              int,
 	"floatDataType"            float,
 	"realDataType"             real,
+	"doubleDataType"           double precision,
 
 	"timestampDataType"        timestamp,
 
@@ -552,6 +553,7 @@ VALUES
 	NULL,
 	NULL,
 	NULL,
+	NULL,
 
 	NULL,
 
@@ -583,6 +585,7 @@ VALUES
 	7777777,
 	20.31,
 	16,
+	16.17,
 
 	Cast('2012-12-12 12:12:12' as timestamp),
 
