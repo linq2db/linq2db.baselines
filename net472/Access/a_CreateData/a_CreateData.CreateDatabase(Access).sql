@@ -547,6 +547,21 @@ ALTER TABLE RelationsTable ADD CONSTRAINT FK_NotNullable FOREIGN KEY (Int1, Int2
 
 BeforeExecute
 -- Access AccessOleDb
+
+DROP TABLE CollatedTable
+
+BeforeExecute
+-- Access AccessOleDb
+
+CREATE TABLE CollatedTable
+(
+	Id				INT NOT NULL,
+	CaseSensitive	NVARCHAR(20) NOT NULL,
+	CaseInsensitive	NVARCHAR(20) NOT NULL
+)
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
@@ -2784,6 +2799,21 @@ BeforeExecute
 -- Access.Data Access AccessOleDb
 
 ALTER TABLE RelationsTable ADD CONSTRAINT FK_NotNullable FOREIGN KEY (Int1, Int2) REFERENCES RelationsTable(ID1, ID2);
+
+BeforeExecute
+-- Access.Data Access AccessOleDb
+
+DROP TABLE CollatedTable
+
+BeforeExecute
+-- Access.Data Access AccessOleDb
+
+CREATE TABLE CollatedTable
+(
+	Id				INT NOT NULL,
+	CaseSensitive	NVARCHAR(20) NOT NULL,
+	CaseInsensitive	NVARCHAR(20) NOT NULL
+)
 
 BeforeExecute
 -- Access.Data Access AccessOleDb
