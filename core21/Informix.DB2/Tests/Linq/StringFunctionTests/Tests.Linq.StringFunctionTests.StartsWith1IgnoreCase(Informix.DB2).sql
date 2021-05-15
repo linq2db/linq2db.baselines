@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.FirstName LIKE '%jOh%' ESCAPE '~' AND p.PersonID = 1
+	Lower(p.FirstName) LIKE 'joh%' ESCAPE '~' AND p.PersonID = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -16,5 +16,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	NOT p.FirstName LIKE '%jOh%' ESCAPE '~' AND p.PersonID = 1
+	NOT Lower(p.FirstName) LIKE 'joh%' ESCAPE '~' AND p.PersonID = 1
 

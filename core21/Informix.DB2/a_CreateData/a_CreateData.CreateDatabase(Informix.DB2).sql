@@ -408,6 +408,21 @@ CREATE PROCEDURE AddIssue792Record()
 END PROCEDURE
 
 BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE CollatedTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE CollatedTable
+(
+	Id				INT NOT NULL,
+	CaseSensitive	VARCHAR(20) NOT NULL,
+	CaseInsensitive	NVARCHAR(20) NOT NULL
+)
+
+BeforeExecute
 INSERT BULK LinqDataTypes
 
 BeforeExecute
