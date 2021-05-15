@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" LIKE '%o~%h%' ESCAPE '~' AND "p"."PersonID" = 1
+	Lower("p"."FirstName") LIKE 'joh%' ESCAPE '~' AND "p"."PersonID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -16,5 +16,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" NOT LIKE '%o~%h%' ESCAPE '~' AND "p"."PersonID" = 1
+	Lower("p"."FirstName") NOT LIKE 'joh%' ESCAPE '~' AND
+	"p"."PersonID" = 1
 
