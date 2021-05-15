@@ -1,5 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[p].[FirstName]
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = 1
+
+BeforeExecute
+-- SqlServer.2008
 
 SELECT
 	Count(*)
