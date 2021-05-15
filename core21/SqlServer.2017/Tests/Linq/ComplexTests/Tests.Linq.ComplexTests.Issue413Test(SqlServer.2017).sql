@@ -173,8 +173,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @cond_1 NVarChar(4000) -- String
-SET     @cond_1 = N'aaa%'
 DECLARE @uptoDate DateTime2
 SET     @uptoDate = '2020-02-29T17:54:55.1231234'
 
@@ -186,7 +184,7 @@ FROM
 		INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 		INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 WHERE
-	[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond_1 ESCAPE N'~' AND
+	[ins].[SourceInstrumentCode] IS NOT NULL AND Lower([_].[InstrumentCode]) LIKE N'aaa%' ESCAPE N'~' AND
 	[_].[CreateDate] <= @uptoDate
 ORDER BY
 	[ins].[SourceInstrumentCode]

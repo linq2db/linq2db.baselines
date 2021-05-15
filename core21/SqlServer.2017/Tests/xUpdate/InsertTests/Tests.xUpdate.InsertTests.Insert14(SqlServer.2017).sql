@@ -5,7 +5,7 @@ DELETE [t1]
 FROM
 	[Person] [t1]
 WHERE
-	[t1].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
+	Lower([t1].[FirstName]) LIKE N'insert14%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2017
@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
+	Lower([p].[FirstName]) LIKE N'insert14%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2017
@@ -49,5 +49,5 @@ DELETE [t1]
 FROM
 	[Person] [t1]
 WHERE
-	[t1].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
+	Lower([t1].[FirstName]) LIKE N'insert14%' ESCAPE N'~'
 

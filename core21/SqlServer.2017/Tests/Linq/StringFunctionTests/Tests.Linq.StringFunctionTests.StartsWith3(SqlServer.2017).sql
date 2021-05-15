@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
-DECLARE @str NVarChar(4000) -- String
-SET     @str = N'John123'
+DECLARE @str_1 NVarChar(4000) -- String
+SET     @str_1 = N'john123'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@str LIKE Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace([p].[FirstName], N'~', N'~~'), N'%', N'~%'), N'_', N'~_'), N'?', N'~?'), N'*', N'~*'), N'#', N'~#'), N'[', N'~['), N']', N'~]') + N'%' ESCAPE N'~'
+	@str_1 LIKE Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Lower([p].[FirstName]), N'~', N'~~'), N'%', N'~%'), N'_', N'~_'), N'?', N'~?'), N'*', N'~*'), N'#', N'~#'), N'[', N'~['), N']', N'~]') + N'%' ESCAPE N'~'
 
