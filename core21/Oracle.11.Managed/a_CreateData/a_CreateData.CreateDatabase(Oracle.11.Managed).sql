@@ -1461,6 +1461,27 @@ COMMENT ON COLUMN "SchemaTestMatView"."Id" IS 'This is matview column'
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
+DROP TABLE "CollatedTable"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+CREATE TABLE "CollatedTable"
+(
+	"Id"				INT NOT NULL,
+	"CaseSensitive"		VARCHAR2(20) NOT NULL,
+-- SKIP Oracle.11.Managed END
+-- SKIP Oracle.11.Native END
+-- SKIP Oracle.Managed BEGIN
+-- SKIP Oracle.Native BEGIN
+	"CaseInsensitive"	VARCHAR2(20) NOT NULL
+-- SKIP Oracle.Managed END
+-- SKIP Oracle.Native END
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
 INSERT ALL
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1,1.11,TIMESTAMP '2001-01-11 01:11:21.100000',NULL,1,Cast('659112effe6ff94dbb6bbb16e413c883' as raw(16)),1,NULL,1,NULL)
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (2,2.49,TIMESTAMP '2005-05-15 05:15:25.500000',NULL,0,Cast('613a66bc407b8146ac38f9aaf55b706b' as raw(16)),2,NULL,2,'')
