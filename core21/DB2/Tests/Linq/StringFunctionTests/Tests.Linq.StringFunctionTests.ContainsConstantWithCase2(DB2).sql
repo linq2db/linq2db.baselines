@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" LIKE '%o~%h%' ESCAPE '~' AND "p"."PersonID" = 1
+	"p"."FirstName" LIKE '%Joh%' ESCAPE '~' AND "p"."PersonID" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -16,5 +16,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" NOT LIKE '%o~%h%' ESCAPE '~' AND "p"."PersonID" = 1
+	"p"."FirstName" NOT LIKE '%Joh%' ESCAPE '~' AND "p"."PersonID" = 1
 

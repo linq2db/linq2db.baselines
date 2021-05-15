@@ -2,13 +2,19 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender"
+	Count(*)
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" LIKE '%oh%' ESCAPE '~' AND "p"."PersonID" = 1
+	"p"."FirstName" LIKE '%jOh%' ESCAPE '~' AND "p"."PersonID" = 1
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" NOT LIKE '%jOh%' ESCAPE '~' AND "p"."PersonID" = 1
 

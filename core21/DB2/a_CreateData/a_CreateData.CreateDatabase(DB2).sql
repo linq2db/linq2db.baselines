@@ -475,6 +475,21 @@ END
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+DROP TABLE "CollatedTable"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "CollatedTable"
+(
+	"Id"				INT NOT NULL,
+	"CaseSensitive"		NVARCHAR(20) NOT NULL,
+	"CaseInsensitive"	NVARCHAR(20) NOT NULL
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 INSERT INTO "LinqDataTypes"
 (
 	ID,
