@@ -1537,6 +1537,21 @@ CREATE TABLE DataType
 )
 
 BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+
+DROP TABLE CollatedTable
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+
+CREATE TABLE CollatedTable
+(
+	Id				INT NOT NULL,
+	CaseSensitive	NVARCHAR(20) COLLATE Latin1_General_100_CS_AI NOT NULL,
+	CaseInsensitive	NVARCHAR(20) COLLATE Latin1_General_100_CI_AI NOT NULL
+)
+
+BeforeExecute
 INSERT BULK [LinqDataTypes](ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue)
 
 BeforeExecute
