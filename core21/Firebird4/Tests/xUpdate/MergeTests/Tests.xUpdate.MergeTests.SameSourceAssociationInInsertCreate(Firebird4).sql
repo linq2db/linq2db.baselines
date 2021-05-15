@@ -291,7 +291,7 @@ USING (
 )
 ON ("Target"."PersonID" = "Source".ID AND "Target"."FirstName" <> 'first 3')
 
-WHEN NOT MATCHED AND ("Source"."Diagnosis" CONTAINING 'sick') THEN
+WHEN NOT MATCHED AND "Source"."Diagnosis" LIKE '%sick%' ESCAPE '~' THEN
 INSERT
 (
 	"FirstName",

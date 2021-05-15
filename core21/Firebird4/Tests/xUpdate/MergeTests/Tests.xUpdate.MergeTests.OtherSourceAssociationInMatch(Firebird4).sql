@@ -296,8 +296,8 @@ ON (EXISTS(
 		"Patient" "a_Patient_1"
 	WHERE
 		"Target"."PersonID" = "Source".ID AND
-		("a_Patient_1"."Diagnosis" CONTAINING 'very') AND
-		("Source"."Diagnosis" CONTAINING 'sick') AND
+		"a_Patient_1"."Diagnosis" LIKE '%very%' ESCAPE '~' AND
+		"Source"."Diagnosis" LIKE '%sick%' ESCAPE '~' AND
 		"Target"."PersonID" = "a_Patient_1"."PersonID"
 ))
 

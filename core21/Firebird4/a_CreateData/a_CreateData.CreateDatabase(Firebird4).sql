@@ -508,6 +508,7 @@ CREATE TABLE "AllTypes"
 	"intDataType"              int,
 	"floatDataType"            float,
 	"realDataType"             real,
+	"doubleDataType"           double precision,
 
 	"timestampDataType"        timestamp,
 
@@ -559,6 +560,7 @@ VALUES
 	NULL,
 	NULL,
 	NULL,
+	NULL,
 
 	NULL,
 
@@ -596,6 +598,7 @@ VALUES
 	7777777,
 	20.31,
 	16,
+	16.17,
 
 	Cast('2012-12-12 12:12:12' as timestamp),
 
@@ -1106,6 +1109,21 @@ BEGIN
 END;
 -- SKIP Firebird3 END
 -- SKIP Firebird END
+
+BeforeExecute
+-- Firebird4 Firebird
+
+DROP TABLE "CollatedTable"
+
+BeforeExecute
+-- Firebird4 Firebird
+
+CREATE TABLE "CollatedTable"
+(
+	"Id"				INT NOT NULL,
+	"CaseSensitive"		VARCHAR(20) CHARACTER SET UTF8 COLLATE UNICODE,
+	"CaseInsensitive"	VARCHAR(20) CHARACTER SET UTF8 COLLATE UNICODE_CI
+)
 
 BeforeExecute
 -- Firebird4 Firebird
