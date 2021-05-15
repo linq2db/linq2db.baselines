@@ -8,7 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s LIKE N'%~[%' ESCAPE N'~'
+	[p].[PersonID] = 1 AND Lower(@s) LIKE N'%~[%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2012
@@ -20,5 +20,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s NOT LIKE N'%~[%' ESCAPE N'~'
+	[p].[PersonID] = 1 AND Lower(@s) NOT LIKE N'%~[%' ESCAPE N'~'
 

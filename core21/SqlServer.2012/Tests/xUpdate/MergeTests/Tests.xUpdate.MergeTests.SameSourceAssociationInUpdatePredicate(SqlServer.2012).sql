@@ -290,8 +290,8 @@ WHEN MATCHED AND EXISTS(
 	FROM
 		[Patient] [a_Patient_1]
 	WHERE
-		[Source].[Diagnosis] LIKE N'%very%' ESCAPE N'~' AND
-		[a_Patient_1].[Diagnosis] LIKE N'%very%' ESCAPE N'~' AND
+		Lower([Source].[Diagnosis]) LIKE N'%very%' ESCAPE N'~' AND
+		Lower([a_Patient_1].[Diagnosis]) LIKE N'%very%' ESCAPE N'~' AND
 		[Target].[PersonID] = [a_Patient_1].[PersonID]
 ) THEN
 UPDATE
