@@ -287,8 +287,8 @@ ON (EXISTS(
 		[Patient] [a_Patient_1]
 	WHERE
 		[Target].[PersonID] = [Source].[ID] AND
-		[a_Patient_1].[Diagnosis] LIKE N'%very%' ESCAPE N'~' AND
-		[Source].[Diagnosis] LIKE N'%sick%' ESCAPE N'~' AND
+		Lower([a_Patient_1].[Diagnosis]) LIKE N'%very%' ESCAPE N'~' AND
+		Lower([Source].[Diagnosis]) LIKE N'%sick%' ESCAPE N'~' AND
 		[Target].[PersonID] = [a_Patient_1].[PersonID]
 ))
 

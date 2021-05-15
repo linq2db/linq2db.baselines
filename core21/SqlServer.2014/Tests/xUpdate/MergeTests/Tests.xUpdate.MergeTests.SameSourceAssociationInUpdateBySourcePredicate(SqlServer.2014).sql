@@ -280,7 +280,7 @@ WHEN NOT MATCHED By Source AND EXISTS(
 	FROM
 		[Patient] [a_Patient]
 	WHERE
-		[a_Patient].[Diagnosis] LIKE N'%very%' ESCAPE N'~' AND
+		Lower([a_Patient].[Diagnosis]) LIKE N'%very%' ESCAPE N'~' AND
 		[Target].[PersonID] = [a_Patient].[PersonID]
 ) THEN UPDATE
 SET

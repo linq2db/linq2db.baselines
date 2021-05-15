@@ -6,7 +6,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE N'%JOHN' ESCAPE N'~' AND [p].[PersonID] = 1
+	Lower([p].[FirstName]) LIKE N'%john' ESCAPE N'~' AND
+	[p].[PersonID] = 1
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -16,5 +17,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] NOT LIKE N'%JOHN' ESCAPE N'~' AND [p].[PersonID] = 1
+	Lower([p].[FirstName]) NOT LIKE N'%john' ESCAPE N'~' AND
+	[p].[PersonID] = 1
 

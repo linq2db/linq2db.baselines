@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @p_2 NVarChar(4000) -- String
-SET     @p_2 = N'%test%'
 
 SELECT
 	[p].[PersonID],
@@ -11,12 +9,10 @@ FROM
 	[Person] [p]
 		INNER JOIN [Patient] [_gjd_ri] ON [_gjd_ri].[PersonID] = [p].[PersonID]
 WHERE
-	Lower([p].[FirstName]) LIKE @p_2 ESCAPE N'~'
+	Lower(Lower([p].[FirstName])) LIKE N'%test%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @input_2 NVarChar(4000) -- String
-SET     @input_2 = N'%test%'
 
 SELECT
 	[p].[FirstName],
@@ -24,5 +20,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower([p].[FirstName]) LIKE @input_2 ESCAPE N'~'
+	Lower(Lower([p].[FirstName])) LIKE N'%test%' ESCAPE N'~'
 

@@ -40,7 +40,7 @@ SELECT TOP (@take)
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%~]' ESCAPE N'~'
+	Lower([r].[Value]) LIKE N'%~]' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -52,7 +52,7 @@ SELECT TOP (@take)
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'~]%' ESCAPE N'~'
+	Lower([r].[Value]) LIKE N'~]%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -64,7 +64,7 @@ SELECT TOP (@take)
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%-%' ESCAPE N'~'
+	Lower([r].[Value]) LIKE N'%-%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -75,7 +75,7 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%~[~]%' ESCAPE N'~'
+	Lower([r].[Value]) LIKE N'%~[~]%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -86,20 +86,7 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%~[0%' ESCAPE N'~'
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-DECLARE @asParamUnterm_1 NVarChar(4000) -- String
-SET     @asParamUnterm_1 = N'%~[0%'
-
-SELECT
-	[r].[Id],
-	[r].[Value]
-FROM
-	[SampleClass] [r]
-WHERE
-	[r].[Value] LIKE @asParamUnterm_1 ESCAPE N'~'
+	Lower([r].[Value]) LIKE N'%~[0%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -110,7 +97,7 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%~[0-9~]%' ESCAPE N'~'
+	Lower([r].[Value]) LIKE N'%~[0%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
@@ -121,7 +108,18 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE N'%6%' ESCAPE N'~'
+	Lower([r].[Value]) LIKE N'%~[0-9~]%' ESCAPE N'~'
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+
+SELECT
+	[r].[Id],
+	[r].[Value]
+FROM
+	[SampleClass] [r]
+WHERE
+	Lower([r].[Value]) LIKE N'%6%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012

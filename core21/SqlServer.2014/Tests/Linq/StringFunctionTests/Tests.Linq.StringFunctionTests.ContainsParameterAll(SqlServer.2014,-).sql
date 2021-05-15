@@ -1,14 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @s NVarChar(4000) -- String
-SET     @s = N'123-456'
-DECLARE @toTest_1 NVarChar(4000) -- String
-SET     @toTest_1 = N'%-%'
+DECLARE @s_1 NVarChar(4000) -- String
+SET     @s_1 = N'123-456'
 
 SELECT
 	Count(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s LIKE @toTest_1 ESCAPE N'~'
+	[p].[PersonID] = 1 AND @s_1 LIKE N'%-%' ESCAPE N'~'
 
