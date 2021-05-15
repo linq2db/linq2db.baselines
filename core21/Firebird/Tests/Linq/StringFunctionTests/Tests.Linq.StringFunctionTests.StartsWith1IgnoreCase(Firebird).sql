@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = 1 AND '123]456' LIKE '%]%' ESCAPE '~'
+	Lower("p"."FirstName") STARTING WITH 'joh' AND "p"."PersonID" = 1
 
 BeforeExecute
 -- Firebird
@@ -16,5 +16,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = 1 AND '123]456' NOT LIKE '%]%' ESCAPE '~'
+	(Lower("p"."FirstName") NOT STARTING WITH 'joh') AND
+	"p"."PersonID" = 1
 
