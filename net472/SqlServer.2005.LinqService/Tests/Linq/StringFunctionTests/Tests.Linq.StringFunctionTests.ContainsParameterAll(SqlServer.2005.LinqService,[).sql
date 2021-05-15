@@ -6,11 +6,7 @@ DECLARE @toTest NVarChar(4000) -- String
 SET     @toTest = N'%~[%'
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	Count(*)
 FROM
 	[Person] [p]
 WHERE
