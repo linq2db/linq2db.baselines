@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE '%o~%h%' ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" LIKE '%JOHN' ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -16,5 +16,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" NOT LIKE '%o~%h%' ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" NOT LIKE '%JOHN' ESCAPE '~' AND p."PersonID" = 1
 
