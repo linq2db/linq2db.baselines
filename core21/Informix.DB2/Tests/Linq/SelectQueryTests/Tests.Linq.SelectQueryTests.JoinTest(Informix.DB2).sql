@@ -41,10 +41,10 @@ SELECT
 FROM
 	SampleClass t
 		INNER JOIN (
-			SELECT FIRST 1
+			SELECT
 				1 as Key_1,
 				3 as SecondValue
-			FROM SYSTABLES
+			FROM table(set{1})
 		) s ON s.Key_1 = t.Id
 
 BeforeExecute

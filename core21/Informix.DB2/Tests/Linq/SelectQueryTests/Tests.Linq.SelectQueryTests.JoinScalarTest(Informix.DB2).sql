@@ -40,9 +40,9 @@ SELECT
 FROM
 	SampleClass t
 		INNER JOIN (
-			SELECT FIRST 1
+			SELECT
 				1 as c1
-			FROM SYSTABLES
+			FROM table(set{1})
 		) s ON s.c1 = t.Id
 
 BeforeExecute

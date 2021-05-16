@@ -10,10 +10,10 @@ CREATE TABLE SampleClass
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT
 	CURRENT + Interval(1) Day to Day,
 	CURRENT + Interval(2) Day to Day
-FROM SYSTABLES
+FROM table(set{1})
 
 BeforeExecute
 -- Informix.DB2 Informix
