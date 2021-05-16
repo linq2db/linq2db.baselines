@@ -1,14 +1,12 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
+DECLARE @toTest_1 VarChar(3) -- String
+SET     @toTest_1 = '%n%'
 
 SELECT
-	"p"."FirstName",
-	"p"."PersonID",
-	"p"."LastName",
-	"p"."MiddleName",
-	"p"."Gender"
+	Count(*)
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = 1 AND '123n456' CONTAINING 'n'
+	"p"."PersonID" = 1 AND '123n456' LIKE @toTest_1 ESCAPE '~'
 

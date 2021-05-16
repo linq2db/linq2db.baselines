@@ -299,7 +299,7 @@ WHEN MATCHED AND EXISTS(
 	FROM
 		"Patient" "a_Patient_1"
 	WHERE
-		("Source"."Diagnosis" CONTAINING 'very') AND ("a_Patient_1"."Diagnosis" CONTAINING 'very') AND
+		"Source"."Diagnosis" LIKE '%very%' ESCAPE '~' AND "a_Patient_1"."Diagnosis" LIKE '%very%' ESCAPE '~' AND
 		"Target"."PersonID" = "a_Patient_1"."PersonID"
 ) THEN
 UPDATE

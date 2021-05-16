@@ -880,6 +880,21 @@ CONSTRAINT same_name
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE "CollatedTable"
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE "CollatedTable"
+(
+	"Id"				INT NOT NULL,
+	"CaseSensitive"		VARCHAR(20) NOT NULL,
+	"CaseInsensitive"	VARCHAR(20) NOT NULL
+)
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+
 INSERT INTO "LinqDataTypes"
 (
 	"ID",

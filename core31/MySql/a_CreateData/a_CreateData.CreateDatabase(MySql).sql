@@ -791,6 +791,21 @@ END
 BeforeExecute
 -- MySql MySql.Official MySql
 
+DROP TABLE `CollatedTable`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE `CollatedTable`
+(
+	`Id`				INT NOT NULL,
+	`CaseSensitive`		VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+	`CaseInsensitive`	VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,

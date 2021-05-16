@@ -2,11 +2,17 @@
 -- PostgreSQL.9.2 PostgreSQL
 
 SELECT
-	p."FirstName",
-	p."PersonID",
-	p."LastName",
-	p."MiddleName",
-	p."Gender"
+	Count(*)
+FROM
+	"Person" p
+WHERE
+	p."FirstName" LIKE '%o~%h%' ESCAPE '~' AND p."PersonID" = 1
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+SELECT
+	Count(*)
 FROM
 	"Person" p
 WHERE

@@ -360,6 +360,21 @@ CREATE TABLE TestMerge2
 BeforeExecute
 -- SqlCe
 
+DROP TABLE CollatedTable
+
+BeforeExecute
+-- SqlCe
+
+CREATE TABLE CollatedTable
+(
+	Id				INT NOT NULL,
+	CaseSensitive	NVARCHAR(20) NOT NULL,
+	CaseInsensitive	NVARCHAR(20) NOT NULL
+)
+
+BeforeExecute
+-- SqlCe
+
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -844,6 +859,21 @@ CREATE TABLE TestMerge2
 	FieldDecimal    DECIMAL(24, 10)   NULL,
 	FieldEnumString NVARCHAR(20)      NULL,
 	FieldEnumNumber INT               NULL
+)
+
+BeforeExecute
+-- SqlCe.Data SqlCe
+
+DROP TABLE CollatedTable
+
+BeforeExecute
+-- SqlCe.Data SqlCe
+
+CREATE TABLE CollatedTable
+(
+	Id				INT NOT NULL,
+	CaseSensitive	NVARCHAR(20) NOT NULL,
+	CaseInsensitive	NVARCHAR(20) NOT NULL
 )
 
 BeforeExecute

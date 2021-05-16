@@ -291,7 +291,7 @@ USING (
 	"Diagnosis",
 	"FirstName"
 )
-ON ("Target"."PersonID" = "Source"."PersonID" AND ("Source"."Diagnosis" CONTAINING 'very'))
+ON ("Target"."PersonID" = "Source"."PersonID" AND "Source"."Diagnosis" LIKE '%very%' ESCAPE '~')
 WHEN MATCHED AND EXISTS(
 	SELECT
 		*
