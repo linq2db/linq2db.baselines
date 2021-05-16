@@ -1470,13 +1470,7 @@ CREATE TABLE "CollatedTable"
 (
 	"Id"				INT NOT NULL,
 	"CaseSensitive"		VARCHAR2(20) NOT NULL,
--- SKIP Oracle.11.Managed END
--- SKIP Oracle.11.Native END
--- SKIP Oracle.Managed BEGIN
--- SKIP Oracle.Native BEGIN
 	"CaseInsensitive"	VARCHAR2(20) NOT NULL
--- SKIP Oracle.Managed END
--- SKIP Oracle.Native END
 )
 
 BeforeExecute
