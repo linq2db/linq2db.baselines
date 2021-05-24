@@ -20,8 +20,6 @@ SET     @LastName = N'whatever'
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -47,8 +45,6 @@ BEGIN
 		@LastName
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -78,8 +74,6 @@ SET     @MiddleName = N'updated name'
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -108,8 +102,6 @@ BEGIN
 		@MiddleName
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005

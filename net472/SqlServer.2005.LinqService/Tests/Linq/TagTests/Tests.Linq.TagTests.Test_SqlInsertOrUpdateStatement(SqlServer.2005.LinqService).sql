@@ -13,8 +13,6 @@ BeforeExecute
 -- SqlServer.2005
 
 /* My Test */
-BEGIN TRAN
-
 /* My Test */
 UPDATE
 	[t1]
@@ -39,8 +37,6 @@ BEGIN
 		2
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005

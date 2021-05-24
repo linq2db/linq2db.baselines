@@ -28,8 +28,6 @@ SET     @id = 5
 DECLARE @diagnosis NVarChar(4000) -- String
 SET     @diagnosis = N'abc'
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -53,8 +51,6 @@ BEGIN
 	)
 END
 
-COMMIT
-
 BeforeExecute
 -- SqlServer.2005
 DECLARE @i_1 Int -- Int32
@@ -65,8 +61,6 @@ DECLARE @diagnosis NVarChar(4000) -- String
 SET     @diagnosis = N'abc'
 DECLARE @i Int -- Int32
 SET     @i = 1
-
-BEGIN TRAN
 
 UPDATE
 	[t1]
@@ -90,8 +84,6 @@ BEGIN
 		Convert(NVarChar(11), Len(@diagnosis) + @i)
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -104,8 +96,6 @@ SET     @diagnosis = N'abc'
 DECLARE @i Int -- Int32
 SET     @i = 2
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -128,8 +118,6 @@ BEGIN
 		Convert(NVarChar(11), Len(@diagnosis) + @i)
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005

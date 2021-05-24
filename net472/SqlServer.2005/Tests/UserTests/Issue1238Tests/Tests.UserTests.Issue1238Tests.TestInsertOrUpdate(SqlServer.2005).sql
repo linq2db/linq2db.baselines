@@ -8,8 +8,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -35,8 +33,6 @@ BEGIN
 		1
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -49,8 +45,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -76,8 +70,6 @@ BEGIN
 		1
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
