@@ -16,8 +16,6 @@ SET     @Key2 = NULL
 DECLARE @Data_1 Integer -- Int32
 SET     @Data_1 = 1
 
-BEGIN TRAN
-
 UPDATE
 	[InheritanceParent]
 SET
@@ -43,8 +41,6 @@ BEGIN
 		@Data_1
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -65,8 +61,6 @@ SET     @Key2 = NULL
 DECLARE @Data_1 Integer -- Int32
 SET     @Data_1 = 1
 
-BEGIN TRAN
-
 UPDATE
 	[InheritanceParent]
 SET
@@ -92,8 +86,6 @@ BEGIN
 		@Data_1
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

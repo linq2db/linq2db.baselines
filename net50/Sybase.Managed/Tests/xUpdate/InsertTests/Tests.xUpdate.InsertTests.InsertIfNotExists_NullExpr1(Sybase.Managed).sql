@@ -14,8 +14,6 @@ CREATE TABLE [test_insert_or_replace]
 BeforeExecute
 -- Sybase.Managed Sybase
 
-BEGIN TRAN
-
 IF NOT EXISTS(
 	SELECT 1 
 	FROM
@@ -35,14 +33,10 @@ BEGIN
 		'test'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-BEGIN TRAN
-
 IF NOT EXISTS(
 	SELECT 1 
 	FROM
@@ -62,8 +56,6 @@ BEGIN
 		'test'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

@@ -24,8 +24,6 @@ SET     @PersonID = 1
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-BEGIN TRAN
-
 UPDATE
 	[xxPatient]
 SET
@@ -48,8 +46,6 @@ BEGIN
 		@Diagnosis
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -60,8 +56,6 @@ SET     @PersonID = 2
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-BEGIN TRAN
-
 UPDATE
 	[xxPatient]
 SET
@@ -84,8 +78,6 @@ BEGIN
 		@Diagnosis
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -104,8 +96,6 @@ SET     @PersonID = 1
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-BEGIN TRAN
-
 UPDATE
 	[xxPatient]
 SET
@@ -128,8 +118,6 @@ BEGIN
 		@Diagnosis
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -140,8 +128,6 @@ SET     @PersonID = 2
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-BEGIN TRAN
-
 UPDATE
 	[xxPatient]
 SET
@@ -164,8 +150,6 @@ BEGIN
 		@Diagnosis
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

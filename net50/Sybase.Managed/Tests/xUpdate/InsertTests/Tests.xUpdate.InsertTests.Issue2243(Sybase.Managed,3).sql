@@ -24,8 +24,6 @@ SET     @Name = 'Test1'
 DECLARE @CreatedBy UniVarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER3'
 
-BEGIN TRAN
-
 UPDATE
 	[test_insert_or_replace]
 SET
@@ -51,8 +49,6 @@ BEGIN
 		@CreatedBy
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -78,8 +74,6 @@ SET     @Name = 'Test2'
 DECLARE @CreatedBy UniVarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER3'
 
-BEGIN TRAN
-
 UPDATE
 	[test_insert_or_replace]
 SET
@@ -105,8 +99,6 @@ BEGIN
 		@CreatedBy
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

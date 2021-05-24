@@ -8,8 +8,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-BEGIN TRAN
-
 UPDATE
 	[InheritanceParent]
 SET
@@ -35,8 +33,6 @@ BEGIN
 		1
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -49,8 +45,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-BEGIN TRAN
-
 UPDATE
 	[InheritanceParent]
 SET
@@ -76,8 +70,6 @@ BEGIN
 		1
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
