@@ -5,7 +5,7 @@ CREATE TABLE [test_insert_or_replace]
 (
 	[id]         Int            NOT NULL,
 	[name]       NVarChar(4000)     NULL,
-	[created_by] NVarChar(4000) NOT NULL,
+	[created_by] NVarChar(4000)     NULL,
 	[updated_by] NVarChar(4000)     NULL,
 
 	CONSTRAINT [PK_test_insert_or_replace] PRIMARY KEY CLUSTERED ([id])
