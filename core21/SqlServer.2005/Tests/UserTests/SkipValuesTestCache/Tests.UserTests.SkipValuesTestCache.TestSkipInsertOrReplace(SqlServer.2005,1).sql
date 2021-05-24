@@ -17,8 +17,6 @@ SET     @Name = N'John'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -41,8 +39,6 @@ BEGIN
 		@Name
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -65,8 +61,6 @@ SET     @Name = N'John'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -89,8 +83,6 @@ BEGIN
 		@Name
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
