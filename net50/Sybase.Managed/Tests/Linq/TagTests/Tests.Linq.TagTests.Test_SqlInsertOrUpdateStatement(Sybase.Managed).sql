@@ -13,8 +13,6 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 /* My Test */
-BEGIN TRAN
-
 /* My Test */
 UPDATE
 	[TestTable]
@@ -39,8 +37,6 @@ BEGIN
 		2
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

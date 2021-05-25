@@ -5,7 +5,7 @@ CREATE TABLE "test_insert_or_replace"
 (
 	"id"         Int                                    NOT NULL,
 	"name"       VarChar(255) CHARACTER SET UNICODE_FSS,
-	"created_by" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+	"created_by" VarChar(255) CHARACTER SET UNICODE_FSS,
 	"updated_by" VarChar(255) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_test_insert_or_replace" PRIMARY KEY ("id")

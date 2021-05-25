@@ -26,8 +26,6 @@ BeforeExecute
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 IF NOT EXISTS(
 	SELECT 1 
 	FROM
@@ -48,8 +46,6 @@ BEGIN
 	)
 END
 
-COMMIT
-
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
@@ -67,8 +63,6 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 5
-
-BEGIN TRAN
 
 IF NOT EXISTS(
 	SELECT 1 
@@ -89,8 +83,6 @@ BEGIN
 		'positive'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

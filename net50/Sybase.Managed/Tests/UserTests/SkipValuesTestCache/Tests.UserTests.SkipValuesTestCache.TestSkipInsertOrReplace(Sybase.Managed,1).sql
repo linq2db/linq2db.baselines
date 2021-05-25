@@ -19,8 +19,6 @@ SET     @Id = 1
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 
-BEGIN TRAN
-
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
@@ -43,8 +41,6 @@ BEGIN
 		@Name
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -67,8 +63,6 @@ SET     @Id = 1
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 
-BEGIN TRAN
-
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
@@ -91,8 +85,6 @@ BEGIN
 		@Name
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

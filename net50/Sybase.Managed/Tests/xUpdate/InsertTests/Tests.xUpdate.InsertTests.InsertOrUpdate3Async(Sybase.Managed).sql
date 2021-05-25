@@ -28,8 +28,6 @@ SET     @i = 0
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 UPDATE
 	[Patient]
 SET
@@ -52,8 +50,6 @@ BEGIN
 		'abc'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
@@ -62,8 +58,6 @@ SET     @i = 1
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 UPDATE
 	[Patient]
 SET
@@ -86,8 +80,6 @@ BEGIN
 		'abc'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
@@ -96,8 +88,6 @@ SET     @i = 2
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 UPDATE
 	[Patient]
 SET
@@ -120,8 +110,6 @@ BEGIN
 		'abc'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)

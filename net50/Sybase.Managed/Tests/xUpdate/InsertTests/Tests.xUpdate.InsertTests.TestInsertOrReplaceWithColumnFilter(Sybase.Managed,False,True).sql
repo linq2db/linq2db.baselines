@@ -24,8 +24,6 @@ SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName UniVarChar(8) -- String
 SET     @LastName = 'whatever'
 
-BEGIN TRAN
-
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
@@ -51,8 +49,6 @@ BEGIN
 		@LastName
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -86,8 +82,6 @@ SET     @LastName = 'whatever'
 DECLARE @MiddleName UniVarChar(12) -- String
 SET     @MiddleName = 'updated name'
 
-BEGIN TRAN
-
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
@@ -116,8 +110,6 @@ BEGIN
 		@MiddleName
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

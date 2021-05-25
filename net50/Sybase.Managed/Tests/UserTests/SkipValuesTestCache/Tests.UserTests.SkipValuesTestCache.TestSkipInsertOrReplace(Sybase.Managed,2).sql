@@ -23,8 +23,6 @@ SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
-BEGIN TRAN
-
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
@@ -50,8 +48,6 @@ BEGIN
 		@Age
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -78,8 +74,6 @@ SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
-BEGIN TRAN
-
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
@@ -105,8 +99,6 @@ BEGIN
 		@Age
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
