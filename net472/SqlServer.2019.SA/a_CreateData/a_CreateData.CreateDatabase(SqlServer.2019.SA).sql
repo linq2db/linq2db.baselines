@@ -1547,8 +1547,8 @@ BeforeExecute
 CREATE TABLE CollatedTable
 (
 	Id				INT NOT NULL,
-	CaseSensitive	NVARCHAR(20) COLLATE Latin1_General_100_CS_AI NOT NULL,
-	CaseInsensitive	NVARCHAR(20) COLLATE Latin1_General_100_CI_AI NOT NULL
+	CaseSensitive	NVARCHAR(20) COLLATE Latin1_General_CS_AI NOT NULL,
+	CaseInsensitive	NVARCHAR(20) COLLATE Latin1_General_CI_AI NOT NULL
 )
 
 BeforeExecute
