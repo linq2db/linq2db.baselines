@@ -1,20 +1,27 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[t1].[ChildID]
+	[key_data_result].[ParentID],
+	[detail].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[p].[ParentID]
+		FROM
+			[Parent] [p]
+		WHERE
+			[p].[ParentID] <> 5
+	) [key_data_result]
+		INNER JOIN [Child] [detail] ON [detail].[ParentID] = [key_data_result].[ParentID] AND [detail].[ChildID] = [detail].[ParentID] * 10 + 1
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[p].[ParentID]
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[ch].[ChildID]
-			FROM
-				[Child] [ch]
-			WHERE
-				[ch].[ParentID] = [p].[ParentID] AND [ch].[ChildID] = [ch].[ParentID] * 10 + 1
-		) [t1]
 WHERE
 	[p].[ParentID] <> 5
 

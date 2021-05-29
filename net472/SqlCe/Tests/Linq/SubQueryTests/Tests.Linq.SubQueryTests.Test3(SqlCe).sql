@@ -2,10 +2,26 @@
 -- SqlCe
 
 SELECT
-	[ch].[ChildID]
+	[key_data_result].[ParentID],
+	[detail].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[p].[ParentID]
+		FROM
+			[Parent] [p]
+		WHERE
+			[p].[ParentID] <> 5
+	) [key_data_result]
+		INNER JOIN [Child] [detail] ON [detail].[ParentID] = [key_data_result].[ParentID] AND [detail].[ChildID] = [detail].[ParentID] * 10 + 1
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[p].[ParentID]
 FROM
 	[Parent] [p]
-		LEFT JOIN [Child] [ch] ON [ch].[ParentID] = [p].[ParentID] AND [ch].[ChildID] = [ch].[ParentID] * 10 + 1
 WHERE
 	[p].[ParentID] <> 5
 

@@ -1,22 +1,29 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[key_data_result].[ParentID],
+	[key_data_result].[Value1],
+	[detail].[ParentID],
+	[detail].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[p].[ParentID],
+			[p].[Value1]
+		FROM
+			[Parent] [p]
+	) [key_data_result]
+		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
+ORDER BY
+	[detail].[ChildID]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[p].[ParentID],
+	[p].[Value1]
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[t1].[ParentID],
-				[t1].[ChildID]
-			FROM
-				[Child] [t1]
-			WHERE
-				[p].[ParentID] = [t1].[ParentID]
-			ORDER BY
-				[t1].[ChildID]
-		) [t2]
 
