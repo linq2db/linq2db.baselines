@@ -44,7 +44,7 @@ CREATE TABLE "billing_TempReading"
 	"DevSerNum"        text       NOT NULL,
 	devid              text           NULL,
 	tsdevice           TimeStamp  NOT NULL,
-	value              Decimal    NOT NULL,
+	value              decimal    NOT NULL,
 	"Devtypeid"        Int            NULL,
 	"DevReadingTypeId" Int            NULL,
 	"ReadingTypeName"  text           NULL,
