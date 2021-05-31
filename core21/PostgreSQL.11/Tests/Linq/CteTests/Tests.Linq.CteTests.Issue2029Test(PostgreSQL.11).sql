@@ -4,7 +4,7 @@
 CREATE TABLE "NC_CODE"
 (
 	"HANDLE"             text      NOT NULL,
-	"CHANGE_STAMP"       Decimal       NULL,
+	"CHANGE_STAMP"       decimal       NULL,
 	"SITE"               text          NULL,
 	"NC_CODE"            text          NULL,
 	"DESCRIPTION"        text          NULL,
@@ -23,7 +23,7 @@ CREATE TABLE "NC_GROUP_MEMBER"
 	"HANDLE"               text    NOT NULL,
 	"NC_GROUP_BO"          text        NULL,
 	"NC_CODE_OR_GROUP_GBO" text        NULL,
-	"SEQUENCE"             Decimal     NULL
+	"SEQUENCE"             decimal     NULL
 )
 
 BeforeExecute
