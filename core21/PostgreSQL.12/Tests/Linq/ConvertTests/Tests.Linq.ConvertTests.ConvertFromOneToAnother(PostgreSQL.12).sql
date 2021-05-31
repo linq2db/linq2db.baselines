@@ -6,7 +6,7 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Decimal(29, 10))
+	Cast(:value_1 as decimal(29, 10))
 FROM
 	"LinqDataTypes" t1
 LIMIT :take
@@ -19,7 +19,7 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Decimal(29, 10))
+	Cast(:value_1 as decimal(29, 10))
 FROM
 	"LinqDataTypes" t1
 LIMIT :take
@@ -32,7 +32,7 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Decimal(29, 10))
+	Cast(:value_1 as decimal(29, 10))
 FROM
 	"LinqDataTypes" t1
 LIMIT :take
