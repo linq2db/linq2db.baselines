@@ -15,7 +15,7 @@ FROM
 UNION ALL
 SELECT
 	Cast(NULL as Int),
-	Cast(NULL as Decimal),
+	Cast(NULL as decimal),
 	Cast(NULL as TimeStamp),
 	Cast(NULL as Boolean),
 	Cast(NULL as uuid),
