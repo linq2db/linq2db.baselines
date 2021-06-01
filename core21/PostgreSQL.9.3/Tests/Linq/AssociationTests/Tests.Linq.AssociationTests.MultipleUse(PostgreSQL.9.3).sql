@@ -2,37 +2,50 @@
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
 
 SELECT
-	t1."ParentID",
-	t1."ChildID",
-	t1."ParentID_1",
-	t1."Value1"
+	key_data_result."ChildID",
+	detail."ParentID",
+	detail."ChildID",
+	"a_Parent"."ParentID",
+	"a_Parent"."Value1"
+FROM
+	(
+		SELECT DISTINCT
+			s."ChildID"
+		FROM
+			"Child" s
+		WHERE
+			(
+				SELECT
+					1
+				FROM
+					"Child" c_1
+				WHERE
+					c_1."ChildID" = s."ChildID"
+				LIMIT :take
+			) IS NOT NULL
+	) key_data_result
+		INNER JOIN "Child" detail ON detail."ChildID" = key_data_result."ChildID"
+		LEFT JOIN "Parent" "a_Parent" ON detail."ParentID" = "a_Parent"."ParentID"
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	s."ChildID"
 FROM
 	"Child" s
-		LEFT JOIN LATERAL (
-			SELECT
-				c_1."ParentID",
-				c_1."ChildID",
-				"a_Parent"."ParentID" as "ParentID_1",
-				"a_Parent"."Value1"
-			FROM
-				"Child" c_1
-					LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
-			WHERE
-				c_1."ChildID" = s."ChildID"
-			LIMIT :take
-		) t1 ON 1=1
 WHERE
 	(
 		SELECT
 			1
 		FROM
-			"Child" c_2
+			"Child" c_1
 		WHERE
-			c_2."ChildID" = s."ChildID"
-		LIMIT :take_1
+			c_1."ChildID" = s."ChildID"
+		LIMIT :take
 	) IS NOT NULL
 
