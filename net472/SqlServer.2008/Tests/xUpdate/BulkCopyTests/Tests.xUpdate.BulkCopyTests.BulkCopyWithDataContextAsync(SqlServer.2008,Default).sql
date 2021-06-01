@@ -7,24 +7,10 @@ CREATE TABLE [SimpleBulkCopyTable]
 )
 
 BeforeExecute
--- SqlServer.2008 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-VALUES
-(1)
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2008 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-VALUES
-(2)
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
 -- SqlServer.2008
