@@ -7,24 +7,10 @@ CREATE TABLE [SimpleBulkCopyTable]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-VALUES
-(1)
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-VALUES
-(2)
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012 (asynchronously)
@@ -41,24 +27,10 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-VALUES
-(10)
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-VALUES
-(20)
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012 (asynchronously)
