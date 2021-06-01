@@ -1,25 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-
-SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	ch."ParentID",
-	ch."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			p."ParentID",
-			p."Value1"
-		FROM
-			"Parent" p
-		WHERE
-			p."ParentID" = 1
-	) key_data_result
-		INNER JOIN "Child" ch ON ch."ParentID" = key_data_result."ParentID"
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	(
@@ -30,10 +12,20 @@ SELECT
 		WHERE
 			p."ParentID" = t1."ParentID"
 	),
-	p."ParentID",
-	p."Value1"
+	t2."ParentID",
+	t2."ChildID"
 FROM
 	"Parent" p
+		LEFT JOIN LATERAL (
+			SELECT
+				ch."ParentID",
+				ch."ChildID"
+			FROM
+				"Child" ch
+			WHERE
+				ch."ParentID" = p."ParentID"
+			LIMIT :take
+		) t2 ON 1=1
 WHERE
 	p."ParentID" = 1
 
