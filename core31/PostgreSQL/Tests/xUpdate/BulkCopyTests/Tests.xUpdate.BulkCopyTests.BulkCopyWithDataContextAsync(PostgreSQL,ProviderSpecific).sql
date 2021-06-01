@@ -7,24 +7,10 @@ CREATE TABLE "SimpleBulkCopyTable"
 )
 
 BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL (asynchronously)
-
-INSERT INTO "SimpleBulkCopyTable"
-(
-	"Id"
-)
-VALUES
-(1)
+INSERT ASYNC BULK "SimpleBulkCopyTable"(Id
 
 BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL (asynchronously)
-
-INSERT INTO "SimpleBulkCopyTable"
-(
-	"Id"
-)
-VALUES
-(2)
+INSERT ASYNC BULK "SimpleBulkCopyTable"(Id
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
