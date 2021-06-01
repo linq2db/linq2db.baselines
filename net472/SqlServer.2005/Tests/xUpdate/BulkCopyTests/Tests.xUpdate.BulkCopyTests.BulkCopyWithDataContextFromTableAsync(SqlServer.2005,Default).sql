@@ -7,58 +7,22 @@ CREATE TABLE [SimpleBulkCopyTable]
 )
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-SELECT 1
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-SELECT 2
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-SELECT 3
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-SELECT 10
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-SELECT 20
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-SELECT 30
+INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
 -- SqlServer.2005
