@@ -1,24 +1,39 @@
 ﻿BeforeExecute
 -- SqlServer.2005
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 10
+
+SELECT
+	[key_data_result].[ParentID],
+	[key_data_result].[Value1],
+	[_c].[ParentID],
+	[_c].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[ParentID],
+			[t1].[Value1]
+		FROM
+			(
+				SELECT TOP (@p_1)
+					[p].[ParentID],
+					[p].[Value1]
+				FROM
+					[Parent] [p]
+			) [t1]
+	) [key_data_result]
+		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID]
+ORDER BY
+	[_c].[ChildID]
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @take Int -- Int32
 SET     @take = 10
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT TOP (@take)
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[p].[ParentID],
+	[p].[Value1]
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[c_1].[ParentID],
-				[c_1].[ChildID]
-			FROM
-				[Child] [c_1]
-			WHERE
-				[c_1].[ParentID] = [p].[ParentID]
-			ORDER BY
-				[c_1].[ChildID]
-		) [t1]
 
