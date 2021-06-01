@@ -7,14 +7,7 @@ CREATE TABLE "SimpleBulkCopyTable"
 )
 
 BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "SimpleBulkCopyTable"
-(
-	"Id"
-)
-VALUES
-(1)
+INSERT BULK "SimpleBulkCopyTable"(Id
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
