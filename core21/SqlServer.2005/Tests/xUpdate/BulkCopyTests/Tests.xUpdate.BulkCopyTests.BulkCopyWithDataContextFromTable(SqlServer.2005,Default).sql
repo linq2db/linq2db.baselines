@@ -7,31 +7,13 @@ CREATE TABLE [SimpleBulkCopyTable]
 )
 
 BeforeExecute
--- SqlServer.2005
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-SELECT 1
+INSERT BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2005
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-SELECT 2
+INSERT BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2005
-
-INSERT INTO [SimpleBulkCopyTable]
-(
-	[Id]
-)
-SELECT 3
+INSERT BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
 -- SqlServer.2005
