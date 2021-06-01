@@ -3,16 +3,14 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 
-SELECT TOP (@take)
-	[p].[ChildID]
-FROM
-	[Child] [p]
-
-BeforeExecute
--- SqlCe
-
 SELECT
-	1
+	[t1].[ChildID]
 FROM
-	[Parent] [p]
+	[Parent] [p_1]
+		OUTER APPLY (
+			SELECT TOP (@take)
+				[p].[ChildID]
+			FROM
+				[Child] [p]
+		) [t1]
 
