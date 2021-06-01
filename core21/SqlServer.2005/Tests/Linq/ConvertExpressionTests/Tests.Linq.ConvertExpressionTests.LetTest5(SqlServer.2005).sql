@@ -1,9 +1,25 @@
 ﻿BeforeExecute
 -- SqlServer.2005
+
+SELECT
+	[key_data_result].[ParentID],
+	[_c].[ParentID],
+	[_c].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[p].[ParentID]
+		FROM
+			[Parent] [p]
+	) [key_data_result]
+		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100
+ORDER BY
+	[_c].[ChildID]
+
+BeforeExecute
+-- SqlServer.2005
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT
 	CASE
@@ -27,8 +43,7 @@ SELECT
 			[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100
 	),
 	[t1].[First1],
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
@@ -42,15 +57,4 @@ FROM
 			ORDER BY
 				[c_3].[ChildID]
 		) [t1]
-		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[c_4].[ParentID],
-				[c_4].[ChildID]
-			FROM
-				[Child] [c_4]
-			WHERE
-				[c_4].[ParentID] = [p].[ParentID] AND [c_4].[ChildID] > -100
-			ORDER BY
-				[c_4].[ChildID]
-		) [t2]
 
