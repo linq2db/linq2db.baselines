@@ -27,14 +27,7 @@ VALUES
 (2)
 
 BeforeExecute
--- MySqlConnector MySql (asynchronously)
-
-INSERT INTO `SimpleBulkCopyTable`
-(
-	`Id`
-)
-VALUES
-(3)
+INSERT ASYNC BULK `SimpleBulkCopyTable`(Id
 
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
@@ -57,14 +50,7 @@ VALUES
 (20)
 
 BeforeExecute
--- MySqlConnector MySql (asynchronously)
-
-INSERT INTO `SimpleBulkCopyTable`
-(
-	`Id`
-)
-VALUES
-(30)
+INSERT ASYNC BULK `SimpleBulkCopyTable`(Id
 
 BeforeExecute
 -- MySqlConnector MySql

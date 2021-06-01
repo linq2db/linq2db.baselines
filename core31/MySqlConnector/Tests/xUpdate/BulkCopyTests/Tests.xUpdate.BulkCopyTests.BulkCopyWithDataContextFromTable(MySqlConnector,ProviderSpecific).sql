@@ -27,14 +27,7 @@ VALUES
 (2)
 
 BeforeExecute
--- MySqlConnector MySql
-
-INSERT INTO `SimpleBulkCopyTable`
-(
-	`Id`
-)
-VALUES
-(3)
+INSERT BULK `SimpleBulkCopyTable`(Id
 
 BeforeExecute
 -- MySqlConnector MySql

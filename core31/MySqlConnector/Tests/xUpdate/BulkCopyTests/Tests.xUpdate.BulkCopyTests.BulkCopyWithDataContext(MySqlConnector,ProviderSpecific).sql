@@ -7,14 +7,7 @@ CREATE TABLE `SimpleBulkCopyTable`
 )
 
 BeforeExecute
--- MySqlConnector MySql
-
-INSERT INTO `SimpleBulkCopyTable`
-(
-	`Id`
-)
-VALUES
-(1)
+INSERT BULK `SimpleBulkCopyTable`(Id
 
 BeforeExecute
 -- MySqlConnector MySql
