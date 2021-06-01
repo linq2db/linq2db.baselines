@@ -1,33 +1,25 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	ch."ParentID",
-	ch."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			p."ParentID",
-			p."Value1"
-		FROM
-			"Parent" p
-		WHERE
-			p."ParentID" >= 1
-	) key_data_result
-		INNER JOIN "Child" ch ON ch."ParentID" = key_data_result."ParentID"
-ORDER BY
-	ch."ChildID"
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
-SELECT
-	p."ParentID",
-	p."Value1"
+	t1."ParentID",
+	t1."ChildID"
 FROM
 	"Parent" p
+		LEFT JOIN LATERAL (
+			SELECT
+				ch."ParentID",
+				ch."ChildID"
+			FROM
+				"Child" ch
+			WHERE
+				ch."ParentID" = p."ParentID"
+			ORDER BY
+				ch."ChildID"
+			LIMIT :take
+		) t1 ON 1=1
 WHERE
 	p."ParentID" >= 1
 ORDER BY
