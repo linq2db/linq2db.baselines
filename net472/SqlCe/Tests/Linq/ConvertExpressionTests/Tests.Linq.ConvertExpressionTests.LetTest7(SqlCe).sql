@@ -1,11 +1,34 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 5000
+
+SELECT
+	[key_data_result].[ParentID],
+	[_c].[ParentID],
+	[_c].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[ParentID]
+		FROM
+			(
+				SELECT TOP (@p_1)
+					[t].[ParentID]
+				FROM
+					[Parent] [t]
+				WHERE
+					[t].[ParentID] > 0
+			) [t1]
+	) [key_data_result]
+		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100
+
+BeforeExecute
+-- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 5000
 DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
-DECLARE @take_2 Int -- Int32
-SET     @take_2 = 1
 
 SELECT TOP (@take)
 	[t].[ParentID],
@@ -21,10 +44,8 @@ SELECT TOP (@take)
 			THEN 1
 		ELSE 0
 	END,
-	[t3].[Count_1],
-	[t1].[First1],
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[t2].[Count_1],
+	[t1].[First1]
 FROM
 	[Parent] [t]
 		OUTER APPLY (
@@ -36,26 +57,17 @@ FROM
 				[c_2].[ParentID] = [t].[ParentID] AND [c_2].[ChildID] > -100 AND
 				[c_2].[ParentID] > 0
 		) [t1]
-		OUTER APPLY (
-			SELECT TOP (@take_2)
-				[c_3].[ParentID],
-				[c_3].[ChildID]
-			FROM
-				[Child] [c_3]
-			WHERE
-				[c_3].[ParentID] = [t].[ParentID] AND [c_3].[ChildID] > -100
-		) [t2]
 		LEFT JOIN (
 			SELECT
 				Count(*) as [Count_1],
-				[c_4].[ParentID]
+				[c_3].[ParentID]
 			FROM
-				[Child] [c_4]
+				[Child] [c_3]
 			WHERE
-				[c_4].[ChildID] > -100
+				[c_3].[ChildID] > -100
 			GROUP BY
-				[c_4].[ParentID]
-		) [t3] ON [t3].[ParentID] = [t].[ParentID]
+				[c_3].[ParentID]
+		) [t2] ON [t2].[ParentID] = [t].[ParentID]
 WHERE
 	[t].[ParentID] > 0
 
