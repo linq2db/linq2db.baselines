@@ -2,25 +2,15 @@
 -- SqlCe
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[detail].[ParentID]
-FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
-		FROM
-			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[t1].[ParentID]
 FROM
 	[Parent] [p]
+		OUTER APPLY (
+			SELECT DISTINCT
+				[c_1].[ParentID]
+			FROM
+				[Child] [c_1]
+			WHERE
+				[p].[ParentID] = [c_1].[ParentID]
+		) [t1]
 
