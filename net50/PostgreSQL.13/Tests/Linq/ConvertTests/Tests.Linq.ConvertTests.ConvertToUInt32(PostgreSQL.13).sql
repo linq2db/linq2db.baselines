@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Bigint -- Int64
-SET     @p_1 = 0
 
 SELECT
 	p.c1
@@ -17,5 +15,5 @@ FROM
 			"LinqDataTypes" t
 	) p
 WHERE
-	p.c1 > :p_1
+	p.c1 > 0
 
