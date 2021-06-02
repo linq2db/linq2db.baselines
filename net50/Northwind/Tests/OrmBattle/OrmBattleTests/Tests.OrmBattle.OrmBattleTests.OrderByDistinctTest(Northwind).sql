@@ -82,10 +82,15 @@ FROM
 BeforeExecute
 -- Northwind SqlServer.2017
 
-SELECT DISTINCT
-	[c_1].[City]
+SELECT
+	[c_2].[City]
 FROM
-	[Customers] [c_1]
+	(
+		SELECT DISTINCT
+			[c_1].[City]
+		FROM
+			[Customers] [c_1]
+	) [c_2]
 ORDER BY
-	[c_1].[City]
+	[c_2].[City]
 
