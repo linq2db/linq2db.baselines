@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT DISTINCT TOP 2
-	[t1].[ParentID],
-	[t1].[Value1]
+SELECT TOP 2
+	[t2].[ParentID],
+	[t2].[Value1]
 FROM
-	[Parent] [t1]
+	(
+		SELECT DISTINCT
+			[t1].[ParentID],
+			[t1].[Value1]
+		FROM
+			[Parent] [t1]
+	) [t2]
 ORDER BY
-	[t1].[ParentID] DESC
+	[t2].[ParentID] DESC
 
