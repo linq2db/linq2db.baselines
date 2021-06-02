@@ -9,7 +9,7 @@ BeforeExecute
 CREATE TABLE "TestIdTrun"
 (
 	"ID"     SERIAL   NOT NULL,
-	"Field1" decimal  NOT NULL,
+	"Field1" Decimal  NOT NULL,
 
 	CONSTRAINT "PK_TestIdTrun" PRIMARY KEY ("ID")
 )
