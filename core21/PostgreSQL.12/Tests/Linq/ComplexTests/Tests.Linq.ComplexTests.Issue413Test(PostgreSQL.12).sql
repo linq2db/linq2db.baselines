@@ -178,18 +178,23 @@ SET     @cond_1 = 'aaa%'
 DECLARE @uptoDate Timestamp -- DateTime
 SET     @uptoDate = '2020-02-29 17:54:55.123'::timestamp
 
-SELECT DISTINCT
-	ins."SourceInstrumentCode"
+SELECT
+	t4."SourceInstrumentCode"
 FROM
-	"T1" ins_1
-		INNER JOIN "T2" idx ON ins_1."InstrumentId" = idx."InstrumentId"
-		INNER JOIN "T3" w ON idx."IndexId" = w."IndexId"
-		INNER JOIN "T1" ins ON w."InstrumentId" = ins."InstrumentId"
-WHERE
-	ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond_1 ESCAPE '~' AND
-	ins_1."CreateDate" <= :uptoDate
+	(
+		SELECT DISTINCT
+			ins."SourceInstrumentCode"
+		FROM
+			"T1" ins_1
+				INNER JOIN "T2" idx ON ins_1."InstrumentId" = idx."InstrumentId"
+				INNER JOIN "T3" w ON idx."IndexId" = w."IndexId"
+				INNER JOIN "T1" ins ON w."InstrumentId" = ins."InstrumentId"
+		WHERE
+			ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond_1 ESCAPE '~' AND
+			ins_1."CreateDate" <= :uptoDate
+	) t4
 ORDER BY
-	ins."SourceInstrumentCode"
+	t4."SourceInstrumentCode"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
