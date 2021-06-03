@@ -59,7 +59,7 @@ FROM
 GROUP BY
 	[x].[DuplicateData]
 ORDER BY
-	Max([x].[OrderData1] % 3)
+	Min([x].[OrderData1] % 3)
 
 BeforeExecute
 -- Sybase.Managed Sybase
