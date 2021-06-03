@@ -104,7 +104,7 @@ GROUP BY
 	"x_3"."Id",
 	"x_3"."Id"
 ORDER BY
-	Max("x_3"."DuplicateData")
+	Min("x_3"."DuplicateData")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
