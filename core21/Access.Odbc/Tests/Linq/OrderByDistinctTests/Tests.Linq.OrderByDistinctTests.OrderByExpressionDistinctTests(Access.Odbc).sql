@@ -494,7 +494,7 @@ FROM
 GROUP BY
 	[x].[DuplicateData]
 ORDER BY
-	Min([x].[OrderData1] MOD 3)
+	Max([x].[OrderData1] MOD 3)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

@@ -494,7 +494,7 @@ FROM
 GROUP BY
 	[x].[DuplicateData]
 ORDER BY
-	Min([x].[OrderData1])
+	Max([x].[OrderData1])
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -518,7 +518,7 @@ FROM
 GROUP BY
 	[x].[DuplicateData]
 ORDER BY
-	Max([x].[OrderData1]) DESC
+	Min([x].[OrderData1]) DESC
 
 BeforeExecute
 -- Access.Odbc AccessODBC
