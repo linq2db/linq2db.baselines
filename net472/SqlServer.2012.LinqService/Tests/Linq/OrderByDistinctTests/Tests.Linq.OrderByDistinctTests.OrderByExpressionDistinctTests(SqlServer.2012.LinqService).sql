@@ -500,7 +500,7 @@ FROM
 GROUP BY
 	[x].[DuplicateData]
 ORDER BY
-	Min([x].[OrderData1] % 3)
+	Max([x].[OrderData1] % 3)
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
