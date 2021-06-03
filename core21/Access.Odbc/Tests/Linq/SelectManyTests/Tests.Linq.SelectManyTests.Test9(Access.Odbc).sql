@@ -28,4 +28,6 @@ FROM
 WHERE
 	[cross_1].[p] = [g_1].[ParentID] AND [g_1].[ParentID] = [cross_1].[ParentID] AND
 	[a_Child].[ChildID] = 1
+ORDER BY
+	[cross_1].[p]
 

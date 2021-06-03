@@ -496,7 +496,7 @@ GROUP BY
 	x.DuplicateData,
 	x.OrderData2
 ORDER BY
-	Max(x.OrderData1),
+	Min(x.OrderData1),
 	x.OrderData2 DESC
 
 BeforeExecute

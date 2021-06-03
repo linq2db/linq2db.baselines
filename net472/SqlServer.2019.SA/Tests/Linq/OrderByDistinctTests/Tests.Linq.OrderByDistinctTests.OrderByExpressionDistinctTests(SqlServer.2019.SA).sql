@@ -61,7 +61,7 @@ FROM
 GROUP BY
 	[x].[DuplicateData]
 ORDER BY
-	Max([x].[OrderData1] % 3)
+	Min([x].[OrderData1] % 3)
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute

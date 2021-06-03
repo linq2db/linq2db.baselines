@@ -64,7 +64,7 @@ FROM
 				GROUP BY
 					x."DuplicateData"
 				ORDER BY
-					Max(x."OrderData1")
+					Min(x."OrderData1")
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -124,7 +124,7 @@ FROM
 				GROUP BY
 					x."DuplicateData"
 				ORDER BY
-					Min(x."OrderData1") DESC
+					Max(x."OrderData1") DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -184,8 +184,8 @@ FROM
 				GROUP BY
 					x."DuplicateData"
 				ORDER BY
-					Max(x."OrderData1"),
-					Max(x."OrderData2")
+					Min(x."OrderData1"),
+					Min(x."OrderData2")
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -246,8 +246,8 @@ FROM
 				GROUP BY
 					x."DuplicateData"
 				ORDER BY
-					Max(x."OrderData1"),
-					Min(x."OrderData2") DESC
+					Min(x."OrderData1"),
+					Max(x."OrderData2") DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -308,8 +308,8 @@ FROM
 				GROUP BY
 					x."DuplicateData"
 				ORDER BY
-					Min(x."OrderData1") DESC,
-					Min(x."OrderData2") DESC
+					Max(x."OrderData1") DESC,
+					Max(x."OrderData2") DESC
 			) t1
 		WHERE
 			ROWNUM <= :take
@@ -370,8 +370,8 @@ FROM
 				GROUP BY
 					x."DuplicateData"
 				ORDER BY
-					Max(x."OrderData1"),
-					Min(x."OrderData2") DESC
+					Min(x."OrderData1"),
+					Max(x."OrderData2") DESC
 			) t1
 		WHERE
 			ROWNUM <= :take

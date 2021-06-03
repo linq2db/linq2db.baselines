@@ -6,27 +6,33 @@ DECLARE @skip Int32
 SET     @skip = 1
 
 SELECT
-	t3."ParentID",
-	t3."Value1"
+	t4."ParentID",
+	t4."Value1"
 FROM
 	(
 		SELECT
-			t2."ParentID",
-			t2."Value1",
+			t3."ParentID",
+			t3."Value1",
 			ROWNUM as RN
 		FROM
 			(
-				SELECT DISTINCT
-					t1."ParentID",
-					t1."Value1"
+				SELECT
+					t2."ParentID",
+					t2."Value1"
 				FROM
-					"Parent" t1
+					(
+						SELECT DISTINCT
+							t1."ParentID",
+							t1."Value1"
+						FROM
+							"Parent" t1
+					) t2
 				ORDER BY
-					t1."ParentID" DESC
-			) t2
+					t2."ParentID" DESC
+			) t3
 		WHERE
 			ROWNUM <= :take_1
-	) t3
+	) t4
 WHERE
-	t3.RN > :skip
+	t4.RN > :skip
 
