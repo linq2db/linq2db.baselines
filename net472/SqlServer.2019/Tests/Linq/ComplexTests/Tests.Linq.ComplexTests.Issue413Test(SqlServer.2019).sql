@@ -178,23 +178,18 @@ SET     @cond_1 = N'aaa%'
 DECLARE @uptoDate DateTime2
 SET     @uptoDate = '2020-02-29T17:54:55.1231234'
 
-SELECT
-	[t4].[SourceInstrumentCode]
+SELECT DISTINCT
+	[ins].[SourceInstrumentCode]
 FROM
-	(
-		SELECT DISTINCT
-			[ins].[SourceInstrumentCode]
-		FROM
-			[T1] [_]
-				INNER JOIN [T2] [idx] ON [_].[InstrumentId] = [idx].[InstrumentId]
-				INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
-				INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
-		WHERE
-			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond_1 ESCAPE N'~' AND
-			[_].[CreateDate] <= @uptoDate
-	) [t4]
+	[T1] [_]
+		INNER JOIN [T2] [idx] ON [_].[InstrumentId] = [idx].[InstrumentId]
+		INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
+		INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
+WHERE
+	[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond_1 ESCAPE N'~' AND
+	[_].[CreateDate] <= @uptoDate
 ORDER BY
-	[t4].[SourceInstrumentCode]
+	[ins].[SourceInstrumentCode]
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
