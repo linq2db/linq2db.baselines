@@ -1,10 +1,15 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT DISTINCT
-	[ch].[ParentID]
+SELECT
+	[t1].[ParentID]
 FROM
-	[Child] [ch]
+	(
+		SELECT DISTINCT
+			[ch].[ParentID]
+		FROM
+			[Child] [ch]
+	) [t1]
 ORDER BY
-	[ch].[ParentID]
+	[t1].[ParentID]
 
