@@ -45,7 +45,7 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Max(x."OrderData1")
+	Min(x."OrderData1")
 LIMIT :take OFFSET :skip 
 
 BeforeExecute
@@ -77,7 +77,7 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Min(x."OrderData1") DESC
+	Max(x."OrderData1") DESC
 LIMIT :take OFFSET :skip 
 
 BeforeExecute
@@ -109,8 +109,8 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Max(x."OrderData1"),
-	Max(x."OrderData2")
+	Min(x."OrderData1"),
+	Min(x."OrderData2")
 LIMIT :take OFFSET :skip 
 
 BeforeExecute
@@ -143,8 +143,8 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Max(x."OrderData1"),
-	Min(x."OrderData2") DESC
+	Min(x."OrderData1"),
+	Max(x."OrderData2") DESC
 LIMIT :take OFFSET :skip 
 
 BeforeExecute
@@ -177,8 +177,8 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Min(x."OrderData1") DESC,
-	Min(x."OrderData2") DESC
+	Max(x."OrderData1") DESC,
+	Max(x."OrderData2") DESC
 LIMIT :take OFFSET :skip 
 
 BeforeExecute
@@ -211,8 +211,8 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Max(x."OrderData1"),
-	Min(x."OrderData2") DESC
+	Min(x."OrderData1"),
+	Max(x."OrderData2") DESC
 LIMIT :take OFFSET :skip 
 
 BeforeExecute
