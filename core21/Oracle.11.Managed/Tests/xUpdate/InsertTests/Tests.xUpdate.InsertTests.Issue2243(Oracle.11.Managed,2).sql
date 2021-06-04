@@ -5,7 +5,7 @@ CREATE TABLE "test_insert_or_replace"
 (
 	"id"         Int          NOT NULL,
 	"name"       VarChar(255)     NULL,
-	"created_by" VarChar(255) NOT NULL,
+	"created_by" VarChar(255)     NULL,
 	"updated_by" VarChar(255)     NULL,
 
 	CONSTRAINT "PK_test_insert_or_replace" PRIMARY KEY ("id")

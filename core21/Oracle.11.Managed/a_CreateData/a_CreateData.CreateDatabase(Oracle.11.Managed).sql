@@ -1461,19 +1461,34 @@ COMMENT ON COLUMN "SchemaTestMatView"."Id" IS 'This is matview column'
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
+DROP TABLE "CollatedTable"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+CREATE TABLE "CollatedTable"
+(
+	"Id"				INT NOT NULL,
+	"CaseSensitive"		VARCHAR2(20) NOT NULL,
+	"CaseInsensitive"	VARCHAR2(20) NOT NULL
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
 INSERT ALL
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1,1.11,TO_TIMESTAMP('2001-01-11 01:11:21.100000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('659112effe6ff94dbb6bbb16e413c883' as raw(16)),1,NULL,1,NULL)
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (2,2.49,TO_TIMESTAMP('2005-05-15 05:15:25.500000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('613a66bc407b8146ac38f9aaf55b706b' as raw(16)),2,NULL,2,'')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (3,3.99,TO_TIMESTAMP('2009-09-19 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('c070f9d2ac3587499cd55badb1757436' as raw(16)),3,NULL,NULL,'1')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (4,4.50,TO_TIMESTAMP('2009-09-20 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('db2f934043154a4eac2cca371604fb4b' as raw(16)),4,NULL,NULL,'2')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (5,5.50,TO_TIMESTAMP('2009-09-20 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('ca3ebefe5fcbb240ad392979d312afca' as raw(16)),5,NULL,NULL,'3')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (6,6.55,TO_TIMESTAMP('2009-09-22 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('1d5d3c8ddb4730479fe7968f6228a4c0' as raw(16)),6,NULL,NULL,'4')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (7,7.00,TO_TIMESTAMP('2009-09-23 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('15410948af83dd46a906bff26ee21ee2' as raw(16)),7,NULL,NULL,'5')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (8,8.99,TO_TIMESTAMP('2009-09-24 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('1f9f13c13513d44c937e92602f732dd3' as raw(16)),8,NULL,NULL,'6')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (9,9.63,TO_TIMESTAMP('2009-09-25 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('12c5c5464b3df74cb4e71de080789e5d' as raw(16)),9,NULL,NULL,'7')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (10,10.77,TO_TIMESTAMP('2009-09-26 09:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,0,Cast('55bcb2617f14404b93eda4aa83602fee' as raw(16)),10,NULL,NULL,'8')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (11,11.45,TO_TIMESTAMP('2009-09-27 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('181d02d3f097c04d98d0f0c7df4a1230' as raw(16)),11,NULL,NULL,'9')
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (12,11.45,TO_TIMESTAMP('2012-11-07 19:19:29.090000', 'YYYY-MM-DD HH24:MI:SS.FF6'),NULL,1,Cast('181d0203f097c04d98d0f0c7df4a1230' as raw(16)),12,NULL,NULL,'0')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1,1.11,TIMESTAMP '2001-01-11 01:11:21.100000',NULL,1,Cast('659112effe6ff94dbb6bbb16e413c883' as raw(16)),1,NULL,1,NULL)
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (2,2.49,TIMESTAMP '2005-05-15 05:15:25.500000',NULL,0,Cast('613a66bc407b8146ac38f9aaf55b706b' as raw(16)),2,NULL,2,'')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (3,3.99,TIMESTAMP '2009-09-19 09:19:29.090000',NULL,1,Cast('c070f9d2ac3587499cd55badb1757436' as raw(16)),3,NULL,NULL,'1')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (4,4.50,TIMESTAMP '2009-09-20 09:19:29.090000',NULL,0,Cast('db2f934043154a4eac2cca371604fb4b' as raw(16)),4,NULL,NULL,'2')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (5,5.50,TIMESTAMP '2009-09-20 09:19:29.090000',NULL,1,Cast('ca3ebefe5fcbb240ad392979d312afca' as raw(16)),5,NULL,NULL,'3')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (6,6.55,TIMESTAMP '2009-09-22 09:19:29.090000',NULL,0,Cast('1d5d3c8ddb4730479fe7968f6228a4c0' as raw(16)),6,NULL,NULL,'4')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (7,7.00,TIMESTAMP '2009-09-23 09:19:29.090000',NULL,1,Cast('15410948af83dd46a906bff26ee21ee2' as raw(16)),7,NULL,NULL,'5')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (8,8.99,TIMESTAMP '2009-09-24 09:19:29.090000',NULL,0,Cast('1f9f13c13513d44c937e92602f732dd3' as raw(16)),8,NULL,NULL,'6')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (9,9.63,TIMESTAMP '2009-09-25 09:19:29.090000',NULL,1,Cast('12c5c5464b3df74cb4e71de080789e5d' as raw(16)),9,NULL,NULL,'7')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (10,10.77,TIMESTAMP '2009-09-26 09:19:29.090000',NULL,0,Cast('55bcb2617f14404b93eda4aa83602fee' as raw(16)),10,NULL,NULL,'8')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (11,11.45,TIMESTAMP '2009-09-27 00:00:00.000000',NULL,1,Cast('181d02d3f097c04d98d0f0c7df4a1230' as raw(16)),11,NULL,NULL,'9')
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (12,11.45,TIMESTAMP '2012-11-07 19:19:29.090000',NULL,1,Cast('181d0203f097c04d98d0f0c7df4a1230' as raw(16)),12,NULL,NULL,'0')
 SELECT * FROM dual
 
 BeforeExecute
