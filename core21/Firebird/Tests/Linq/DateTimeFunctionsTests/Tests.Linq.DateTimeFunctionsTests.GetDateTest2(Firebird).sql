@@ -9,7 +9,7 @@ SELECT FIRST @take
 FROM
 	(
 		SELECT
-			Cast(CURRENT_TIMESTAMP as Date) as "c1"
+			Cast(LOCALTIMESTAMP as Date) as "c1"
 		FROM
 			"Parent" "v"
 				INNER JOIN "Child" "s" ON "v"."ParentID" = "s"."ParentID"

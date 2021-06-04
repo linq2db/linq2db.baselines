@@ -2639,21 +2639,21 @@ SELECT Cast(-3.402823E+38 as real) FROM "Dual"
 BeforeExecute
 -- Firebird
 DECLARE @p Float -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT Cast(@p as float)       FROM "Dual"
 
 BeforeExecute
 -- Firebird
 DECLARE @p Float -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT Cast(@p as float)       FROM "Dual"
 
 BeforeExecute
 -- Firebird
 DECLARE @p Float -- Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT Cast(@p as float)       FROM "Dual"
 
@@ -2670,21 +2670,21 @@ SELECT Cast(3.402823E+38 as real) FROM "Dual"
 BeforeExecute
 -- Firebird
 DECLARE @p Float -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT Cast(@p as float)       FROM "Dual"
 
 BeforeExecute
 -- Firebird
 DECLARE @p Float -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT Cast(@p as float)       FROM "Dual"
 
 BeforeExecute
 -- Firebird
 DECLARE @p Float -- Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT Cast(@p as float)       FROM "Dual"
 
