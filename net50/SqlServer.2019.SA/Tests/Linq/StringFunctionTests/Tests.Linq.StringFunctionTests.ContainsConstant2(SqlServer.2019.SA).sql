@@ -2,11 +2,17 @@
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	Count(*)
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] LIKE N'%o~%h%' ESCAPE N'~' AND [p].[PersonID] = 1
+
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+SELECT
+	Count(*)
 FROM
 	[Person] [p]
 WHERE
