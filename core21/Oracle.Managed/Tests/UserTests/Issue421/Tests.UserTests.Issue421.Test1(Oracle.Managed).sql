@@ -13,7 +13,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @BlobValue Raw(3) -- Binary
+DECLARE @BlobValue Blob -- Object
 SET     @BlobValue = HEXTORAW('010203')
 
 INSERT INTO "BlobClass"
@@ -43,7 +43,7 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @BlobValue Raw(3) -- Binary
+DECLARE @BlobValue Blob -- Object
 SET     @BlobValue = HEXTORAW('030201')
 
 UPDATE

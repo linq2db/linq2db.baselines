@@ -12,7 +12,7 @@ CREATE TABLE "Issue1189Customer"
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @DateTime TimeStamp -- DateTime
-SET     @DateTime = TO_TIMESTAMP('2020-02-29 17:54:55.123123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @DateTime = TIMESTAMP '2020-02-29 17:54:55.123123'
 
 SELECT
 	k_1.ID,

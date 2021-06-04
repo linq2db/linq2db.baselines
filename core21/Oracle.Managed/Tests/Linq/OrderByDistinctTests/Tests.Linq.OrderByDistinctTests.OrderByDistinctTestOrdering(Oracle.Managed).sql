@@ -55,7 +55,7 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Max(x."OrderData1")
+	Min(x."OrderData1")
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -87,7 +87,7 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Min(x."OrderData1") DESC
+	Max(x."OrderData1") DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -119,8 +119,8 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Max(x."OrderData1"),
-	Max(x."OrderData2")
+	Min(x."OrderData1"),
+	Min(x."OrderData2")
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -153,8 +153,8 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Max(x."OrderData1"),
-	Min(x."OrderData2") DESC
+	Min(x."OrderData1"),
+	Max(x."OrderData2") DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -187,8 +187,8 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Min(x."OrderData1") DESC,
-	Min(x."OrderData2") DESC
+	Max(x."OrderData1") DESC,
+	Max(x."OrderData2") DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -221,8 +221,8 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	Max(x."OrderData1"),
-	Min(x."OrderData2") DESC
+	Min(x."OrderData1"),
+	Max(x."OrderData2") DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
