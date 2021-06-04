@@ -19,7 +19,7 @@ FROM
 				UNION
 				SELECT
 					c_2."ParentID" as "Value1",
-					NULL as "Value1_1"
+					Cast(NULL as Int) as "Value1_1"
 				FROM
 					"Parent" c_2
 			) t1

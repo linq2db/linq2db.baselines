@@ -24,7 +24,7 @@ WHERE
 				GROUP BY
 					"a_Patient"."Diagnosis"
 				ORDER BY
-					Min(per."FirstName") DESC
+					Max(per."FirstName") DESC
 				OFFSET :skip 
 			) t1
 		WHERE
