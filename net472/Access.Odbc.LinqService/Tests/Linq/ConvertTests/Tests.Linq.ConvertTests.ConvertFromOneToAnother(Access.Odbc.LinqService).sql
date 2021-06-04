@@ -11,7 +11,7 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 
 SELECT TOP 1
 	?
@@ -41,7 +41,7 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 
 SELECT TOP 1
 	?
@@ -71,7 +71,7 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.646
+SET     @value_1 = 6579.64648
 
 SELECT TOP 1
 	?
