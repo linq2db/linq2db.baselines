@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE [TableWithPrimaryKey]
+CREATE TEMPORARY TABLE temp.[TableWithPrimaryKey]
 (
 	[Key] INTEGER NOT NULL,
 
@@ -11,5 +11,5 @@ CREATE TEMPORARY TABLE [TableWithPrimaryKey]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [TableWithPrimaryKey]
+DROP TABLE IF EXISTS temp.[TableWithPrimaryKey]
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE [#TempTable]
+CREATE TEMPORARY TABLE temp.[#TempTable]
 (
 	[ID]    INTEGER NOT NULL,
 	[Field] INTEGER NOT NULL
@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE [#TempTable]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-INSERT INTO [#TempTable]
+INSERT INTO temp.[#TempTable]
 (
 	[ID],
 	[Field]
@@ -25,10 +25,10 @@ SELECT
 	[t1].[ID],
 	[t1].[Field]
 FROM
-	[#TempTable] [t1]
+	temp.[#TempTable] [t1]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [#TempTable]
+DROP TABLE IF EXISTS temp.[#TempTable]
 
