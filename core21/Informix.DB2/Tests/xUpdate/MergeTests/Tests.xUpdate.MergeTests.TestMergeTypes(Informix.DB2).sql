@@ -89,7 +89,7 @@ SET     @FieldString = 'normal strinG'
 DECLARE @FieldChar Char(1) -- StringFixedLength
 SET     @FieldChar = '*'
 DECLARE @FieldFloat Real(4) -- Single
-SET     @FieldFloat = -3.40282E+38
+SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = -1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp(16) -- DateTime
@@ -153,7 +153,7 @@ SET     @FieldString = 'test' || chr(13) || chr(10) || '	'
 DECLARE @FieldChar Char(1) -- StringFixedLength
 SET     @FieldChar = '&'
 DECLARE @FieldFloat Real(4) -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp(16) -- DateTime
@@ -217,7 +217,7 @@ SET     @FieldString = '`~!@#$%^&*()_+{}|[]\'
 DECLARE @FieldChar Char(1) -- StringFixedLength
 SET     @FieldChar = chr(13)
 DECLARE @FieldFloat Real(4) -- Single
-SET     @FieldFloat = 1.1755E-38
+SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = -2.2250738585072014E-308
 DECLARE @FieldDateTime Timestamp(16) -- DateTime
@@ -281,7 +281,7 @@ SET     @FieldString = '<>?/.,;''zZ":'
 DECLARE @FieldChar Char(1) -- StringFixedLength
 SET     @FieldChar = ''
 DECLARE @FieldFloat Real(4) -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime Timestamp(16) -- DateTime
@@ -345,7 +345,7 @@ SET     @FieldString = 'test' || chr(13) || chr(10) || '	'
 DECLARE @FieldChar Char(1) -- StringFixedLength
 SET     @FieldChar = '1'
 DECLARE @FieldFloat Real(4) -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp(16) -- DateTime
@@ -409,7 +409,7 @@ SET     @FieldString = '<>?/.,;''zZ":'
 DECLARE @FieldChar Char(1) -- StringFixedLength
 SET     @FieldChar = ' '
 DECLARE @FieldFloat Real(4) -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime Timestamp(16) -- DateTime
@@ -473,7 +473,7 @@ SET     @FieldString = 'test' || chr(13) || chr(10) || '	 ' || chr(13) || ' '
 DECLARE @FieldChar Char(1) -- StringFixedLength
 SET     @FieldChar = '-'
 DECLARE @FieldFloat Real(4) -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp(16) -- DateTime

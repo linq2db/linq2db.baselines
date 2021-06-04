@@ -53,7 +53,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
+	Cast(CASE
 		WHEN EXISTS(
 			SELECT
 				*
@@ -65,7 +65,7 @@ SELECT
 		)
 			THEN 't'
 		ELSE 'f'
-	END
+	END as BOOLEAN)
 FROM
 	Parent p
 

@@ -22,7 +22,7 @@ WHERE
 				GROUP BY
 					a_Patient.Diagnosis
 				ORDER BY
-					Min(per.FirstName) DESC
+					Max(per.FirstName) DESC
 			) t1
 		WHERE
 			t1.Diagnosis LIKE '%with%' ESCAPE '~'

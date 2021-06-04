@@ -31,11 +31,11 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
+			Cast(CASE
 				WHEN p.FirstName LIKE '%Jo%' ESCAPE '~'
 					THEN 't'
 				ELSE 'f'
-			END as Field1,
+			END as BOOLEAN) as Field1,
 			p.FirstName,
 			p.PersonID,
 			p.LastName,

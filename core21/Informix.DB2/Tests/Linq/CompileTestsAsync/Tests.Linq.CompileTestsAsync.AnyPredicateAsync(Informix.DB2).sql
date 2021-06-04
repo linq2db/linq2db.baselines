@@ -156,8 +156,8 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
-SELECT FIRST 1
-	CASE
+SELECT
+	Cast(CASE
 		WHEN EXISTS(
 			SELECT
 				*
@@ -168,8 +168,8 @@ SELECT FIRST 1
 		)
 			THEN 't'
 		ELSE 'f'
-	END
-FROM SYSTABLES
+	END as BOOLEAN)
+FROM table(set{1})
 
 BeforeExecute
 -- Informix.DB2 Informix
