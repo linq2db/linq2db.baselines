@@ -9,10 +9,6 @@ CREATE TABLE [ExpressionTestClass]
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @db NVarChar -- String
-SET     @db = Tests.Model.TestDataConnection
-DECLARE @p_1 NVarChar -- String
-SET     @p_1 = Tests.Linq.ExpressionTests+ExpressionTestsFakeType
 
 SELECT
 	DATE(),
