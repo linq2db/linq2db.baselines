@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE [IsTemporaryTable]
+CREATE TEMPORARY TABLE temp.[IsTemporaryTable]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL
@@ -14,10 +14,10 @@ SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
-	[IsTemporaryTable] [t1]
+	temp.[IsTemporaryTable] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [IsTemporaryTable]
+DROP TABLE IF EXISTS temp.[IsTemporaryTable]
 
