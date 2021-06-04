@@ -590,6 +590,7 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2019 END
 -- SKIP SqlServer.2019.SA END
 -- SKIP SqlServer.2019.FEC END
+-- SKIP SqlServer.Contained END
 -- SKIP SqlAzure END
 
 ) ON [PRIMARY]
@@ -1526,6 +1527,21 @@ CREATE TABLE DataType
 (
 	id INT NOT NULL
 
+)
+
+BeforeExecute
+-- SqlServer.2008
+
+DROP TABLE CollatedTable
+
+BeforeExecute
+-- SqlServer.2008
+
+CREATE TABLE CollatedTable
+(
+	Id				INT NOT NULL,
+	CaseSensitive	NVARCHAR(20) COLLATE Latin1_General_CS_AI NOT NULL,
+	CaseInsensitive	NVARCHAR(20) COLLATE Latin1_General_CI_AI NOT NULL
 )
 
 BeforeExecute
