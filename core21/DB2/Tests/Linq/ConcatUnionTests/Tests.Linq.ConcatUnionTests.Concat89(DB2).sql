@@ -9,7 +9,7 @@ FROM
 UNION ALL
 SELECT
 	"c_2"."ParentID",
-	NULL
+	Cast(NULL as Int)
 FROM
 	"Parent" "c_2"
 
