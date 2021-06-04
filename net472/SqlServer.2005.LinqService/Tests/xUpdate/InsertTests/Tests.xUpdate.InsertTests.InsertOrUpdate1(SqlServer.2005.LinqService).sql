@@ -26,8 +26,6 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -51,16 +49,12 @@ BEGIN
 	)
 END
 
-COMMIT
-
 BeforeExecute
 -- SqlServer.2005
 DECLARE @i Int -- Int32
 SET     @i = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
-
-BEGIN TRAN
 
 UPDATE
 	[t1]
@@ -84,8 +78,6 @@ BEGIN
 		N'abc'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -94,8 +86,6 @@ SET     @i = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -118,8 +108,6 @@ BEGIN
 		N'abc'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005

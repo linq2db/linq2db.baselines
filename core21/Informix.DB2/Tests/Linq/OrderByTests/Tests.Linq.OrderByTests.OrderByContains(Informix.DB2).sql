@@ -10,9 +10,9 @@ SELECT
 FROM
 	Person t1
 ORDER BY
-	CASE
+	Cast(CASE
 		WHEN t1.PersonID IN (1, 3)
 			THEN 't'
 		ELSE 'f'
-	END
+	END as BOOLEAN)
 

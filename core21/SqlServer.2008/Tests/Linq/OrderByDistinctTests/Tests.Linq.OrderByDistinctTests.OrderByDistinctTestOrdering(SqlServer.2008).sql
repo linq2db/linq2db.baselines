@@ -46,7 +46,7 @@ FROM
 	(
 		SELECT
 			[x].[DuplicateData],
-			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1])) as [RN]
+			ROW_NUMBER() OVER (ORDER BY Min([x].[OrderData1])) as [RN]
 		FROM
 			[OrderByDistinctData] [x]
 		GROUP BY
@@ -88,7 +88,7 @@ FROM
 	(
 		SELECT
 			[x].[DuplicateData],
-			ROW_NUMBER() OVER (ORDER BY Min([x].[OrderData1]) DESC) as [RN]
+			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1]) DESC) as [RN]
 		FROM
 			[OrderByDistinctData] [x]
 		GROUP BY
@@ -130,7 +130,7 @@ FROM
 	(
 		SELECT
 			[x].[DuplicateData],
-			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1]), Max([x].[OrderData2])) as [RN]
+			ROW_NUMBER() OVER (ORDER BY Min([x].[OrderData1]), Min([x].[OrderData2])) as [RN]
 		FROM
 			[OrderByDistinctData] [x]
 		GROUP BY
@@ -172,7 +172,7 @@ FROM
 	(
 		SELECT
 			[x].[DuplicateData],
-			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1]), Min([x].[OrderData2]) DESC) as [RN]
+			ROW_NUMBER() OVER (ORDER BY Min([x].[OrderData1]), Max([x].[OrderData2]) DESC) as [RN]
 		FROM
 			[OrderByDistinctData] [x]
 		GROUP BY
@@ -214,7 +214,7 @@ FROM
 	(
 		SELECT
 			[x].[DuplicateData],
-			ROW_NUMBER() OVER (ORDER BY Min([x].[OrderData1]) DESC, Min([x].[OrderData2]) DESC) as [RN]
+			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1]) DESC, Max([x].[OrderData2]) DESC) as [RN]
 		FROM
 			[OrderByDistinctData] [x]
 		GROUP BY
@@ -256,7 +256,7 @@ FROM
 	(
 		SELECT
 			[x].[DuplicateData],
-			ROW_NUMBER() OVER (ORDER BY Max([x].[OrderData1]), Min([x].[OrderData2]) DESC) as [RN]
+			ROW_NUMBER() OVER (ORDER BY Min([x].[OrderData1]), Max([x].[OrderData2]) DESC) as [RN]
 		FROM
 			[OrderByDistinctData] [x]
 		GROUP BY

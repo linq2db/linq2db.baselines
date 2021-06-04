@@ -19,8 +19,6 @@ SET     @Age = 2
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -46,8 +44,6 @@ BEGIN
 		@Age
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -72,8 +68,6 @@ SET     @Age = 2
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -99,8 +93,6 @@ BEGIN
 		@Age
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005

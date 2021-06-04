@@ -6,11 +6,7 @@ DECLARE @ps NVarChar(4000) -- String
 SET     @ps = N'%~[%'
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	Count(*)
 FROM
 	[Person] [p]
 WHERE

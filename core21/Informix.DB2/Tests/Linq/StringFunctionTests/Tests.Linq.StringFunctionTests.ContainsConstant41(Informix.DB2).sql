@@ -4,11 +4,7 @@ DECLARE @s VarChar(7) -- String
 SET     @s = '123[456'
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	Count(*)
 FROM
 	Person p
 WHERE

@@ -39,7 +39,7 @@ BeforeExecute
 
 SELECT
 	p.ParentID,
-	CASE
+	Cast(CASE
 		WHEN EXISTS(
 			SELECT
 				*
@@ -50,7 +50,7 @@ SELECT
 		)
 			THEN 't'
 		ELSE 'f'
-	END,
+	END as BOOLEAN),
 	(
 		SELECT
 			Count(*)

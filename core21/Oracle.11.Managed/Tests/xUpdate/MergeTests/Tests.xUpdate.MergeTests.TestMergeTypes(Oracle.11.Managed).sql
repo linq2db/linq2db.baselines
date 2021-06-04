@@ -103,11 +103,11 @@ SET     @FieldChar = '*'
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = 'ё'
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = -3.40282E+38
+SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = -1.7976931348623157E+308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TO_TIMESTAMP('2000-11-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @FieldDateTime = TIMESTAMP '2000-11-12 21:14:15.167000'
 DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2000 13:14:15.1244567 +00:15
 DECLARE @FieldGuid Raw(16) -- Binary
@@ -179,11 +179,11 @@ SET     @FieldChar = '&'
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = '>'
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 1.7976931348623157E+308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TO_TIMESTAMP('2001-10-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @FieldDateTime = TIMESTAMP '2001-10-12 21:14:15.167000'
 DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:15.1234567 -00:15
 DECLARE @FieldGuid Raw(16) -- Binary
@@ -254,11 +254,11 @@ DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = '
 '
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = 1.1755E-38
+SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = -2.2250738585072014E-308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TO_TIMESTAMP('2098-10-12 21:14:15.997000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @FieldDateTime = TIMESTAMP '2098-10-12 21:14:15.997000'
 DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:16.1224567 +01:39
 DECLARE @FieldGuid Raw(16) -- Binary
@@ -328,11 +328,11 @@ SET     @FieldChar = ''
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = ''
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 2.2250738585072014E-308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TO_TIMESTAMP('2098-10-12 21:14:15.907000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @FieldDateTime = TIMESTAMP '2098-10-12 21:14:15.907000'
 DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:14.1233457 -01:39
 DECLARE @FieldGuid Raw(16) -- Binary
@@ -404,11 +404,11 @@ SET     @FieldChar = '1'
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 1.7976931348623157E+308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TO_TIMESTAMP('2001-10-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @FieldDateTime = TIMESTAMP '2001-10-12 21:14:15.167000'
 DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:15.321 -00:15
 DECLARE @FieldGuid Raw(16) -- Binary
@@ -478,11 +478,11 @@ SET     @FieldChar = ' '
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 2.2250738585072014E-308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TO_TIMESTAMP('2098-10-12 21:14:15.913000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @FieldDateTime = TIMESTAMP '2098-10-12 21:14:15.913000'
 DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:15 -01:39
 DECLARE @FieldGuid Raw(16) -- Binary
@@ -554,11 +554,11 @@ SET     @FieldChar = '-'
 DECLARE @FieldNChar Char -- StringFixedLength
 SET     @FieldNChar = '~'
 DECLARE @FieldFloat BinaryFloat -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble BinaryDouble -- Double
 SET     @FieldDouble = 1.7976931348623157E+308D
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TO_TIMESTAMP('2001-10-12 21:14:15.167000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @FieldDateTime = TIMESTAMP '2001-10-12 21:14:15.167000'
 DECLARE @FieldDateTime2 TimeStampTZ -- DateTimeOffset
 SET     @FieldDateTime2 = 11/22/2001 13:14:15.999 -00:15
 DECLARE @FieldGuid Raw(16) -- Binary

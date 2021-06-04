@@ -590,6 +590,7 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2019 BEGIN
 -- SKIP SqlServer.2019.SA END
 -- SKIP SqlServer.2019.FEC END
+-- SKIP SqlServer.Contained END
 -- SKIP SqlAzure END
 
 ) ON [PRIMARY]
@@ -825,6 +826,7 @@ BeforeExecute
 -- SKIP SqlServer.2019 BEGIN
 -- SKIP SqlServer.2019.SA END
 -- SKIP SqlServer.2019.FEC END
+-- SKIP SqlServer.Contained END
 -- SKIP SqlServer.2008 END
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
@@ -1534,6 +1536,21 @@ CREATE TABLE DataType
 (
 	id INT NOT NULL
 
+)
+
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+DROP TABLE CollatedTable
+
+BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+
+CREATE TABLE CollatedTable
+(
+	Id				INT NOT NULL,
+	CaseSensitive	NVARCHAR(20) COLLATE Latin1_General_CS_AI NOT NULL,
+	CaseInsensitive	NVARCHAR(20) COLLATE Latin1_General_CI_AI NOT NULL
 )
 
 BeforeExecute

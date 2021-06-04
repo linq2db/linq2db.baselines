@@ -52,7 +52,7 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @added TimeStamp -- DateTime
-SET     @added = TO_TIMESTAMP('2017-01-01 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @added = TIMESTAMP '2017-01-01 00:00:00.000000'
 
 SELECT
 	a_Person."personid",

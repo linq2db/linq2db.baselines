@@ -6,11 +6,7 @@ DECLARE @toTest_1 VarChar(4) -- String
 SET     @toTest_1 = '%~%%'
 
 SELECT
-	`p`.`FirstName`,
-	`p`.`PersonID`,
-	`p`.`LastName`,
-	`p`.`MiddleName`,
-	`p`.`Gender`
+	Count(*)
 FROM
 	`Person` `p`
 WHERE

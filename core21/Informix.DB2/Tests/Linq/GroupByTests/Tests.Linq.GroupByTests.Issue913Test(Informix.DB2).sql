@@ -77,16 +77,16 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
+			Cast(CASE
 				WHEN selectParam.TradingStatus = 'D'
 					THEN 't'
 				ELSE 'f'
-			END as Key_1,
-			CASE
+			END as BOOLEAN) as Key_1,
+			Cast(CASE
 				WHEN selectParam.TradingStatus = 'D'
 					THEN 't'
 				ELSE 'f'
-			END as c1
+			END as BOOLEAN) as c1
 		FROM
 			Issue913Test selectParam
 	) t1

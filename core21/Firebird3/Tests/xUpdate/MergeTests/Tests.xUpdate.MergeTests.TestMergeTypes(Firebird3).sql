@@ -99,7 +99,7 @@ SET     @FieldChar = '*'
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = _utf8 x'D191'
 DECLARE @FieldFloat Float -- Single
-SET     @FieldFloat = -3.40282E+38
+SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2000-11-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
@@ -170,7 +170,7 @@ SET     @FieldChar = '&'
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = '>'
 DECLARE @FieldFloat Float -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2001-10-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
@@ -241,7 +241,7 @@ DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = '
 '
 DECLARE @FieldFloat Float -- Single
-SET     @FieldFloat = 1.1755E-38
+SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2098-10-12 21:14:15.997' AS timestamp)
 DECLARE @FieldGuid Guid
@@ -311,7 +311,7 @@ SET     @FieldChar = ''
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = ''
 DECLARE @FieldFloat Float -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2098-10-12 21:14:15.907' AS timestamp)
 DECLARE @FieldGuid Guid
@@ -382,7 +382,7 @@ SET     @FieldChar = '1'
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Float -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2001-10-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
@@ -452,7 +452,7 @@ SET     @FieldChar = ' '
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Float -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2098-10-12 21:14:15.913' AS timestamp)
 DECLARE @FieldGuid Guid
@@ -523,7 +523,7 @@ SET     @FieldChar = '-'
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = '~'
 DECLARE @FieldFloat Float -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDateTime TimeStamp -- DateTime
 SET     @FieldDateTime = CAST('2001-10-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid

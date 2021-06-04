@@ -76,6 +76,15 @@ DROP PROCEDURE "Scalar_ReturnParameter";
 BeforeExecute
 -- Firebird
 
+-- SKIP Firebird END
+-- SKIP Firebird3 END
+-- SKIP Firebird4 BEGIN
+SELECT 1 FROM rdb$database
+-- SKIP Firebird4 END
+
+BeforeExecute
+-- Firebird
+
 DROP VIEW "PersonView";
 
 BeforeExecute
@@ -498,6 +507,7 @@ CREATE TABLE "AllTypes"
 	"intDataType"              int,
 	"floatDataType"            float,
 	"realDataType"             real,
+	"doubleDataType"           double precision,
 
 	"timestampDataType"        timestamp,
 
@@ -507,6 +517,8 @@ CREATE TABLE "AllTypes"
 	"textDataType"             blob sub_type TEXT,
 	"ncharDataType"            char(20) character set UNICODE_FSS,
 	"nvarcharDataType"         varchar(20) character set UNICODE_FSS,
+
+-- SKIP Firebird END
 
 	"blobDataType"             blob
 );
@@ -539,15 +551,18 @@ VALUES
 	NULL,
 	NULL,
 	NULL,
-
 	NULL,
 
 	NULL,
+
 	NULL,
 	NULL,
 	NULL,
 	NULL,
 	NULL,
+	NULL,
+
+-- SKIP Firebird END
 
 	NULL
 );
@@ -566,6 +581,7 @@ VALUES
 	7777777,
 	20.31,
 	16,
+	16.17,
 
 	Cast('2012-12-12 12:12:12' as timestamp),
 
@@ -575,6 +591,8 @@ VALUES
 	'567',
 	'23233',
 	'3323',
+
+-- SKIP Firebird END
 
 	'12345'
 );
@@ -1028,8 +1046,31 @@ CREATE PROCEDURE "AddIssue792Record"
 AS
 BEGIN
 	INSERT INTO "AllTypes"("char20DataType") VALUES('issue792');
-	SUSPEND;
 END;
+
+BeforeExecute
+-- Firebird
+
+-- SKIP Firebird4 BEGIN
+SELECT 1 FROM rdb$database
+-- SKIP Firebird4 END
+
+-- SKIP Firebird END
+
+BeforeExecute
+-- Firebird
+
+DROP TABLE "CollatedTable"
+
+BeforeExecute
+-- Firebird
+
+CREATE TABLE "CollatedTable"
+(
+	"Id"				INT NOT NULL,
+	"CaseSensitive"		VARCHAR(20) CHARACTER SET UTF8 COLLATE UNICODE,
+	"CaseInsensitive"	VARCHAR(20) CHARACTER SET UTF8 COLLATE UNICODE_CI
+)
 
 BeforeExecute
 -- Firebird

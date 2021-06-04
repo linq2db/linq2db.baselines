@@ -2391,21 +2391,21 @@ SELECT csng(-3.402823E+38)
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @p Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @p Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @p Single
-SET     @p = -3.402823E+38
+SET     @p = -3.40282306E+38
 
 SELECT @p
 
@@ -2422,21 +2422,21 @@ SELECT csng(3.402823E+38)
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @p Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @p Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @p Single
-SET     @p = 3.402823E+38
+SET     @p = 3.40282306E+38
 
 SELECT @p
 

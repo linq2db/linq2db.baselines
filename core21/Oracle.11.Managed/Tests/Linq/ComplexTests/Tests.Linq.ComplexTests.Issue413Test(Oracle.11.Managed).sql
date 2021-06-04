@@ -126,7 +126,7 @@ SET     @InstrumentId = 1
 DECLARE @InstrumentCode Varchar2(4) -- String
 SET     @InstrumentCode = 'aaa1'
 DECLARE @CreateDate TimeStamp -- DateTime
-SET     @CreateDate = TO_TIMESTAMP('2020-02-28 17:54:55.123123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @CreateDate = TIMESTAMP '2020-02-28 17:54:55.123123'
 DECLARE @SourceInstrumentCode Varchar2(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
 
@@ -152,7 +152,7 @@ SET     @InstrumentId = 2
 DECLARE @InstrumentCode Varchar2(4) -- String
 SET     @InstrumentCode = 'aaa2'
 DECLARE @CreateDate TimeStamp -- DateTime
-SET     @CreateDate = TO_TIMESTAMP('2020-02-28 17:54:55.123123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @CreateDate = TIMESTAMP '2020-02-28 17:54:55.123123'
 DECLARE @SourceInstrumentCode Varchar2 -- String
 SET     @SourceInstrumentCode = NULL
 
@@ -176,20 +176,25 @@ BeforeExecute
 DECLARE @cond_1 Varchar2(4) -- String
 SET     @cond_1 = 'aaa%'
 DECLARE @uptoDate TimeStamp -- DateTime
-SET     @uptoDate = TO_TIMESTAMP('2020-02-29 17:54:55.123123', 'YYYY-MM-DD HH24:MI:SS.FF6')
+SET     @uptoDate = TIMESTAMP '2020-02-29 17:54:55.123123'
 
-SELECT DISTINCT
-	ins."SourceInstrumentCode"
+SELECT
+	t4."SourceInstrumentCode"
 FROM
-	T1 ins_1
-		INNER JOIN T2 idx ON ins_1."InstrumentId" = idx."InstrumentId"
-		INNER JOIN T3 w ON idx."IndexId" = w."IndexId"
-		INNER JOIN T1 ins ON w."InstrumentId" = ins."InstrumentId"
-WHERE
-	ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond_1 ESCAPE '~' AND
-	ins_1."CreateDate" <= :uptoDate
+	(
+		SELECT DISTINCT
+			ins."SourceInstrumentCode"
+		FROM
+			T1 ins_1
+				INNER JOIN T2 idx ON ins_1."InstrumentId" = idx."InstrumentId"
+				INNER JOIN T3 w ON idx."IndexId" = w."IndexId"
+				INNER JOIN T1 ins ON w."InstrumentId" = ins."InstrumentId"
+		WHERE
+			ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond_1 ESCAPE '~' AND
+			ins_1."CreateDate" <= :uptoDate
+	) t4
 ORDER BY
-	ins."SourceInstrumentCode"
+	t4."SourceInstrumentCode"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT
 	DBSERVERNAME
-FROM SYSTABLES
+FROM table(set{1})
 
 BeforeExecute
 -- Informix.DB2 Informix

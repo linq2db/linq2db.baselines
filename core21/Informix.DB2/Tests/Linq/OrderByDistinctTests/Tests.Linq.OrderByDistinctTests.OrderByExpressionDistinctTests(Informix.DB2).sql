@@ -494,7 +494,7 @@ FROM
 GROUP BY
 	x.DuplicateData
 ORDER BY
-	Max(Mod(x.OrderData1, 3))
+	Min(Mod(x.OrderData1, 3))
 
 BeforeExecute
 -- Informix.DB2 Informix

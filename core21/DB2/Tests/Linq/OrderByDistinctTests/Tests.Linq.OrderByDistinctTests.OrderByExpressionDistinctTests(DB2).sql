@@ -67,7 +67,7 @@ FROM
 	(
 		SELECT
 			"x"."DuplicateData",
-			ROW_NUMBER() OVER (ORDER BY Max(Mod("x"."OrderData1", 3))) as RN
+			ROW_NUMBER() OVER (ORDER BY Min(Mod("x"."OrderData1", 3))) as RN
 		FROM
 			"OrderByDistinctData" "x"
 		GROUP BY

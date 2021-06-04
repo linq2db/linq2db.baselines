@@ -2,13 +2,19 @@
 -- MySqlConnector MySql
 
 SELECT
-	`p`.`FirstName`,
-	`p`.`PersonID`,
-	`p`.`LastName`,
-	`p`.`MiddleName`,
-	`p`.`Gender`
+	Count(*)
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` LIKE '%oh%' ESCAPE '~' AND `p`.`PersonID` = 1
+	`p`.`FirstName` LIKE '%jOh%' ESCAPE '~' AND `p`.`PersonID` = 1
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	Count(*)
+FROM
+	`Person` `p`
+WHERE
+	`p`.`FirstName` NOT LIKE '%jOh%' ESCAPE '~' AND `p`.`PersonID` = 1
 

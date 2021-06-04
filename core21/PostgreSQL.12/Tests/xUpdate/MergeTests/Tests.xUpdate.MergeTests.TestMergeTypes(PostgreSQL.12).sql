@@ -115,7 +115,7 @@ SET     @FieldChar = '*'
 DECLARE @FieldNChar Text -- StringFixedLength
 SET     @FieldNChar = 'ё'
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = -3.40282E+38
+SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = -1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp -- DateTime
@@ -203,7 +203,7 @@ SET     @FieldChar = '&'
 DECLARE @FieldNChar Text -- StringFixedLength
 SET     @FieldNChar = '>'
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp -- DateTime
@@ -290,7 +290,7 @@ DECLARE @FieldNChar Text -- StringFixedLength
 SET     @FieldNChar = '
 '
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 1.1755E-38
+SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = -2.2250738585072014E-308
 DECLARE @FieldDateTime Timestamp -- DateTime
@@ -376,7 +376,7 @@ SET     @FieldChar = ''
 DECLARE @FieldNChar Text -- StringFixedLength
 SET     @FieldNChar = ''
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime Timestamp -- DateTime
@@ -464,7 +464,7 @@ SET     @FieldChar = '1'
 DECLARE @FieldNChar Text -- StringFixedLength
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp -- DateTime
@@ -550,7 +550,7 @@ SET     @FieldChar = ' '
 DECLARE @FieldNChar Text -- StringFixedLength
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = -1.1755E-38
+SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime Timestamp -- DateTime
@@ -638,7 +638,7 @@ SET     @FieldChar = '-'
 DECLARE @FieldNChar Text -- StringFixedLength
 SET     @FieldNChar = '~'
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 3.40282E+38
+SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime Timestamp -- DateTime

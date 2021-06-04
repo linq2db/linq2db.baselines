@@ -26,8 +26,6 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 IF NOT EXISTS(
 	SELECT 1 
 	FROM
@@ -48,8 +46,6 @@ BEGIN
 	)
 END
 
-COMMIT
-
 BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
@@ -67,8 +63,6 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 5
-
-BEGIN TRAN
 
 IF NOT EXISTS(
 	SELECT 1 
@@ -89,8 +83,6 @@ BEGIN
 		N'positive'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005

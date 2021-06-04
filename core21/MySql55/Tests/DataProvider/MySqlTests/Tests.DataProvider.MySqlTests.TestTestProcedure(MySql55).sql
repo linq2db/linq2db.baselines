@@ -1,16 +1,5 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	DATABASE()
-FROM
-	`LinqDataTypes` `_`
-LIMIT @take
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 DECLARE @param3 Int32
 SET     @param3 = 123
 DECLARE @param2 Int32
@@ -18,7 +7,7 @@ SET     @param2 = 5
 DECLARE @param1 Int32
 SET     @param1 = NULL
 
-`testdata`.`TestProcedure`
+`TestProcedure`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

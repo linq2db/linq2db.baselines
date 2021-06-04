@@ -15,7 +15,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.6465
+SET     @value_1 = 6579.64648
 
 SELECT TOP (@take)
 	Convert(Decimal(29, 10), @value_1)
@@ -51,7 +51,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.6465
+SET     @value_1 = 6579.64648
 
 SELECT TOP (@take)
 	Convert(Real, @value_1)
@@ -87,7 +87,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.6465
+SET     @value_1 = 6579.64648
 
 SELECT TOP (@take)
 	Convert(Float, @value_1)

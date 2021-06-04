@@ -4,20 +4,26 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1."ParentID",
-	t1."ChildID"
+	t2."ParentID",
+	t2."ChildID"
 FROM
 	"Parent" p
 		OUTER APPLY (
-			SELECT DISTINCT
-				c_1."ParentID",
-				c_1."ChildID"
+			SELECT
+				t1."ParentID",
+				t1."ChildID"
 			FROM
-				"Child" c_1
-			WHERE
-				p."ParentID" = c_1."ParentID" AND c_1."ParentID" > 0
+				(
+					SELECT DISTINCT
+						c_1."ParentID",
+						c_1."ChildID"
+					FROM
+						"Child" c_1
+					WHERE
+						p."ParentID" = c_1."ParentID" AND c_1."ParentID" > 0
+				) t1
 			ORDER BY
-				c_1."ChildID"
+				t1."ChildID"
 			FETCH NEXT :take ROWS ONLY
-		) t1
+		) t2
 

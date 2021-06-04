@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT FIRST 1
+SELECT
 	'--'
-FROM SYSTABLES
+FROM table(set{1})
 

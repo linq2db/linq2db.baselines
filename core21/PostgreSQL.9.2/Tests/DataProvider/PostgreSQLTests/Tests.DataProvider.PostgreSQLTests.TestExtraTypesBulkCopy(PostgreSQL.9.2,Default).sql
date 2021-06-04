@@ -3,15 +3,15 @@
 
 CREATE TABLE "ExtraBulkCopyTypesTable"
 (
-	"Id"     Int      NOT NULL,
-	"Byte"   SmallInt     NULL,
-	"SByte"  SmallInt     NULL,
-	"Int16"  SmallInt     NULL,
-	"UInt16" Int          NULL,
-	"Int32"  Int          NULL,
-	"UInt32" BigInt       NULL,
-	"Int64"  BigInt       NULL,
-	"UInt64" Decimal      NULL
+	"Id"     Int         NOT NULL,
+	"Byte"   SmallInt        NULL,
+	"SByte"  SmallInt        NULL,
+	"Int16"  SmallInt        NULL,
+	"UInt16" Int             NULL,
+	"Int32"  Int             NULL,
+	"UInt32" BigInt          NULL,
+	"Int64"  BigInt          NULL,
+	"UInt64" decimal(20)     NULL
 )
 
 BeforeExecute

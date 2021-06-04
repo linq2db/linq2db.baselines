@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
+			Cast(CASE
 				WHEN (
 					SELECT
 						Count(*)
@@ -24,7 +24,7 @@ FROM
 				) > 3
 					THEN 't'
 				ELSE 'f'
-			END as Key_1
+			END as BOOLEAN) as Key_1
 		FROM
 			Parent selectParam
 	) t2

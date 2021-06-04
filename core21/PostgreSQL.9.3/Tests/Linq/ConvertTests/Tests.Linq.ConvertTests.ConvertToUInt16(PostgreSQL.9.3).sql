@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 0
 
 SELECT
 	p.c1
@@ -15,5 +17,5 @@ FROM
 			"LinqDataTypes" t
 	) p
 WHERE
-	p.c1 > 0
+	p.c1 > :p_1
 
