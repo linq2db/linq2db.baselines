@@ -5,7 +5,7 @@ CREATE TABLE [test_insert_or_replace]
 (
 	[id]         Int            NOT NULL,
 	[name]       NVarChar(4000)     NULL,
-	[created_by] NVarChar(4000) NOT NULL,
+	[created_by] NVarChar(4000)     NULL,
 	[updated_by] NVarChar(4000)     NULL,
 
 	CONSTRAINT [PK_test_insert_or_replace] PRIMARY KEY CLUSTERED ([id])
@@ -21,8 +21,6 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @CreatedBy NVarChar(4000) -- String
 SET     @CreatedBy = N'TEST_USER1'
-
-BEGIN TRAN
 
 UPDATE
 	[t1]
@@ -49,8 +47,6 @@ BEGIN
 		@CreatedBy
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -76,8 +72,6 @@ SET     @Id = 1
 DECLARE @CreatedBy NVarChar(4000) -- String
 SET     @CreatedBy = N'TEST_USER1'
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -103,8 +97,6 @@ BEGIN
 		@CreatedBy
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005

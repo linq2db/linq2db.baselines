@@ -22,8 +22,6 @@ SET     @Diagnosis = N'ABC1'
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -46,8 +44,6 @@ BEGIN
 		@Diagnosis
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -56,8 +52,6 @@ SET     @Diagnosis = N'ABC2'
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -80,8 +74,6 @@ BEGIN
 		@Diagnosis
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -98,8 +90,6 @@ SET     @Diagnosis = N'ABC1'
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -122,8 +112,6 @@ BEGIN
 		@Diagnosis
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -132,8 +120,6 @@ SET     @Diagnosis = N'ABC2'
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -156,8 +142,6 @@ BEGIN
 		@Diagnosis
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005

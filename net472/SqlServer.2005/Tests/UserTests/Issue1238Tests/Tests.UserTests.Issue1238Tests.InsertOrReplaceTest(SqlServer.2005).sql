@@ -14,8 +14,6 @@ SET     @Key1 = 143
 DECLARE @Key2 NVarChar(4000) -- String
 SET     @Key2 = NULL
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -41,8 +39,6 @@ BEGIN
 		@Data_1
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
@@ -61,8 +57,6 @@ SET     @Key1 = 143
 DECLARE @Key2 NVarChar(4000) -- String
 SET     @Key2 = NULL
 
-BEGIN TRAN
-
 UPDATE
 	[t1]
 SET
@@ -88,8 +82,6 @@ BEGIN
 		@Data_1
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- SqlServer.2005
