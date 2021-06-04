@@ -22,4 +22,6 @@ FROM
 WHERE
 	[p_1].[p] = [g_1].[ParentID] AND [g_1].[ParentID] = [c_2].[ParentID] AND
 	[a_Child].[ChildID] = 1
+ORDER BY
+	[p_1].[p]
 

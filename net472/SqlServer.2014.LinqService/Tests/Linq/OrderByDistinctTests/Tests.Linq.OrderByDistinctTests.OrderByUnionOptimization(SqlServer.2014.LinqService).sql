@@ -536,7 +536,7 @@ GROUP BY
 	[x_3].[Id],
 	[x_3].[Id]
 ORDER BY
-	Max([x_3].[DuplicateData])
+	Min([x_3].[DuplicateData])
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
