@@ -17,7 +17,7 @@ SET     @DateTimeValue = NULL
 DECLARE @BoolValue Char(1) -- String
 SET     @BoolValue = '1'
 DECLARE @GuidValue Guid
-SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
+SET     @GuidValue = X'00000000000000000000000000000000'
 DECLARE @BinaryValue Binary(4)
 SET     @BinaryValue = X'01020304'
 DECLARE @SmallIntValue SmallInt -- Int16
