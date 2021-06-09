@@ -3,7 +3,7 @@
 DECLARE @take Integer -- Int32
 SET     @take = 2
 DECLARE @GuidValue Guid
-SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
+SET     @GuidValue = X'D2F970C035AC49879CD55BADB1757436'
 
 SELECT FIRST @take
 	"p".ID,
@@ -24,7 +24,7 @@ BeforeExecute
 DECLARE @take Integer -- Int32
 SET     @take = 2
 DECLARE @GuidValue Guid
-SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
+SET     @GuidValue = X'40932FDB15434E4AAC2CCA371604FB4B'
 
 SELECT FIRST @take
 	"p".ID,
