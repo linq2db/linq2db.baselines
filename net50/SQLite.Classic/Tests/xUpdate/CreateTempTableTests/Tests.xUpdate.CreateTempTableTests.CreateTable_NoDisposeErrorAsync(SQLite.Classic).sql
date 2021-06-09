@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS [TempTable]
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
 
-CREATE TEMPORARY TABLE [TempTable]
+CREATE TEMPORARY TABLE temp.[TempTable]
 (
 	[ID] INTEGER NOT NULL
 )
@@ -14,10 +14,10 @@ CREATE TEMPORARY TABLE [TempTable]
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
 
-DROP TABLE [TempTable]
+DROP TABLE temp.[TempTable]
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
 
-DROP TABLE IF EXISTS [TempTable]
+DROP TABLE IF EXISTS temp.[TempTable]
 

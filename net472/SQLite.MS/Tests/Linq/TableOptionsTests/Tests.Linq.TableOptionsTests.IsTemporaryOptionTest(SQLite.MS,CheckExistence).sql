@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TEMPORARY TABLE IF NOT EXISTS [temp_table1]
+CREATE TEMPORARY TABLE IF NOT EXISTS temp.[temp_table1]
 (
 	[ID]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL
@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS [temp_table1]
 BeforeExecute
 -- SQLite.MS SQLite
 
-INSERT INTO [temp_table1]
+INSERT INTO temp.[temp_table1]
 (
 	[ID],
 	[Value]
@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TEMPORARY TABLE IF NOT EXISTS [temp_table2]
+CREATE TEMPORARY TABLE IF NOT EXISTS temp.[temp_table2]
 (
 	[ID]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL
@@ -30,7 +30,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS [temp_table2]
 BeforeExecute
 -- SQLite.MS SQLite
 
-INSERT INTO [temp_table2]
+INSERT INTO temp.[temp_table2]
 (
 	[ID],
 	[Value]
@@ -39,7 +39,7 @@ SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
-	[temp_table1] [t1]
+	temp.[temp_table1] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -48,7 +48,7 @@ SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
-	[temp_table1] [t1]
+	temp.[temp_table1] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -57,12 +57,12 @@ SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
-	[temp_table2] [t1]
+	temp.[temp_table2] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-INSERT INTO [temp_table1]
+INSERT INTO temp.[temp_table1]
 (
 	[ID],
 	[Value]
@@ -77,7 +77,7 @@ SET     @ID = 3
 DECLARE @Value_1  -- Int32
 SET     @Value_1 = 3
 
-INSERT INTO [temp_table1]
+INSERT INTO temp.[temp_table1]
 (
 	[ID],
 	[Value]
@@ -91,7 +91,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-INSERT INTO [temp_table1]
+INSERT INTO temp.[temp_table1]
 (
 	[ID],
 	[Value]
@@ -102,20 +102,20 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-DELETE FROM [temp_table1]
+DELETE FROM temp.[temp_table1]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DELETE FROM [temp_table2]
+DELETE FROM temp.[temp_table2]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [temp_table2]
+DROP TABLE IF EXISTS temp.[temp_table2]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [temp_table1]
+DROP TABLE IF EXISTS temp.[temp_table1]
 
