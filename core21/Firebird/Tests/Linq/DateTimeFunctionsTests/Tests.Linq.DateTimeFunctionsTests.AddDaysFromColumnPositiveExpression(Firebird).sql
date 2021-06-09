@@ -9,7 +9,7 @@ SET     @DateTimeValue = CAST('2018-01-03' AS timestamp)
 DECLARE @BoolValue Char(1) -- String
 SET     @BoolValue = '0'
 DECLARE @GuidValue Guid
-SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
+SET     @GuidValue = X'00000000000000000000000000000000'
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue SmallInt -- Int16

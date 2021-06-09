@@ -8,5 +8,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	Cast("t"."GuidValue" as NVarChar(36)) = ?
+	Lower(Cast("t"."GuidValue" as NVarChar(36))) = ?
 
