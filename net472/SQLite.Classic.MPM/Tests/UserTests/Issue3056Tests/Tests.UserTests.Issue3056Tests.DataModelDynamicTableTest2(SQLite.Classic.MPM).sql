@@ -5,7 +5,7 @@ CREATE TABLE [Table_3056]
 (
 	[Id]          INTEGER       NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[Name]        VarChar(100)      NULL,
-	[Description] VarChar(500)      NULL
+	[Description] VarChar(200)      NULL
 )
 
 BeforeExecute
