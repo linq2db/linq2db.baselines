@@ -8,6 +8,7 @@ SELECT
 	[i].[MiddleName],
 	[i].[Gender],
 	[i].[LastName] + ', ' + [i].[FirstName],
+	[i].[LastName] + ', ' + [i].[FirstName],
 	[t1].[cnt]
 FROM
 	[Person] [i]
