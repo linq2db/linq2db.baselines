@@ -8,7 +8,6 @@ SELECT
 	[c_1].[MiddleName],
 	[c_1].[Gender],
 	[c_1].[LastName] + ', ' + [c_1].[FirstName],
-	[c_1].[LastName] + ', ' + [c_1].[FirstName],
 	[t1].[cnt]
 FROM
 	[Doctor] [cp]
