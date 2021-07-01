@@ -38,12 +38,14 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1`
+	Min(`x`.`OrderData1`)
 LIMIT @skip, @take
 
 BeforeExecute
@@ -68,12 +70,14 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1` DESC
+	Max(`x`.`OrderData1`) DESC
 LIMIT @skip, @take
 
 BeforeExecute
@@ -98,13 +102,15 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1`,
-	`x`.`OrderData2`
+	Min(`x`.`OrderData1`),
+	Min(`x`.`OrderData2`)
 LIMIT @skip, @take
 
 BeforeExecute
@@ -130,13 +136,15 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1`,
-	`x`.`OrderData2` DESC
+	Min(`x`.`OrderData1`),
+	Max(`x`.`OrderData2`) DESC
 LIMIT @skip, @take
 
 BeforeExecute
@@ -162,13 +170,15 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1` DESC,
-	`x`.`OrderData2` DESC
+	Max(`x`.`OrderData1`) DESC,
+	Max(`x`.`OrderData2`) DESC
 LIMIT @skip, @take
 
 BeforeExecute
@@ -194,13 +204,15 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1`,
-	`x`.`OrderData2` DESC
+	Min(`x`.`OrderData1`),
+	Max(`x`.`OrderData2`) DESC
 LIMIT @skip, @take
 
 BeforeExecute

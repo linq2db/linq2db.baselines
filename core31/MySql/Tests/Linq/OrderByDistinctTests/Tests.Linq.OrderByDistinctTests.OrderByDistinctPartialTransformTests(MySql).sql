@@ -53,13 +53,16 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`,
 	`x`.`OrderData2`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`,
+	`x`.`OrderData2`
 ORDER BY
-	`x`.`OrderData1`,
+	Min(`x`.`OrderData1`),
 	`x`.`OrderData2` DESC
 LIMIT @skip, @take
 
