@@ -254,11 +254,6 @@ SET     @nameFilter = N''
 
 BeforeExecute
 -- SqlServer.2005
-
-SELECT * FROM [TestData2005].[dbo].[PersonTableFunction](NULL,NULL)
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @input Int -- Int32
 SET     @input = 0
 DECLARE @output1 Int -- Int32

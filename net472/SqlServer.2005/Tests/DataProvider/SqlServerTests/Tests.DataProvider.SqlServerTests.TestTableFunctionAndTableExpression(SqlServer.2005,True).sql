@@ -119,3 +119,11 @@ FROM
 		INNER JOIN PersonTableFunction(@ID_2, @FirstName_2) [te] ON [te].[PersonID] = [p].[PersonID]
 		INNER JOIN PersonTableFunction(@ID_3, @FirstName_3) [tet] ON [tet].[PersonID] = [p].[PersonID]
 
+BeforeExecute
+-- SqlServer.2005
+
+
+IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFunction')
+	BEGIN DROP FUNCTION PersonTableFunction
+END
+
