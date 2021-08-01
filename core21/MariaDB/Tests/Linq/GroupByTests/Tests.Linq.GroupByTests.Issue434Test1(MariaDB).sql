@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @p_2 VarChar(6) -- String
 SET     @p_2 = '%test%'
 
@@ -14,7 +14,7 @@ WHERE
 	Lower(`p`.`FirstName`) LIKE @p_2 ESCAPE '~'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @input_2 VarChar(6) -- String
 SET     @input_2 = '%test%'
 

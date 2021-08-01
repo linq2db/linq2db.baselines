@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -7,7 +7,7 @@ FROM
 	`Child` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 WITH `CTE1_` (`ParentID`, `ChildID`)
 AS
@@ -24,7 +24,7 @@ FROM
 	`CTE1_` `t2`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 WITH `CTE1_` (`ChildID`)
 AS
@@ -40,7 +40,7 @@ FROM
 	`CTE1_` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 WITH `CTE1_` (`ChildID`)
 AS

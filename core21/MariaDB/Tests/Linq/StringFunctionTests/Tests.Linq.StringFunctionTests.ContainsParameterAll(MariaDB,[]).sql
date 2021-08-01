@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @s VarChar(8) -- String
 SET     @s = '123[]456'
 DECLARE @toTest_1 VarChar(6) -- String

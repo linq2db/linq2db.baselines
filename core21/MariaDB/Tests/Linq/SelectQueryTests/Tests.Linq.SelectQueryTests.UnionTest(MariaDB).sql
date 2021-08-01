@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE `SampleClass`
 (
@@ -8,7 +8,7 @@ CREATE TABLE `SampleClass`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day),
@@ -29,7 +29,7 @@ FROM
 	) `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`v`.`Value2`
@@ -55,7 +55,7 @@ FROM
 	) `v`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 

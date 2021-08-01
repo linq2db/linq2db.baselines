@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE `CreateTableTypes`
 (
@@ -8,10 +8,10 @@ CREATE TABLE `CreateTableTypes`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @DateTimeNullable DateTime
+DECLARE @DateTimeNullable Datetime -- DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO `CreateTableTypes`
@@ -26,10 +26,10 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @DateTimeNullable DateTime
+DECLARE @DateTimeNullable Datetime -- DateTime
 SET     @DateTimeNullable = '2018-11-25 01:02:03'
 
 INSERT INTO `CreateTableTypes`
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -55,7 +55,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `CreateTableTypes`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Key_1`
@@ -25,8 +25,8 @@ GROUP BY
 	`t1`.`Key_1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @p_1 UByte -- Boolean
+-- MariaDB MySqlConnector MySql
+DECLARE @p_1 Bool -- Boolean
 SET     @p_1 = 0
 
 SELECT

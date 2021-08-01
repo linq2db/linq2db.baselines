@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @param Int16
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	@param = `_`.`SmallIntValue`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`ID`,

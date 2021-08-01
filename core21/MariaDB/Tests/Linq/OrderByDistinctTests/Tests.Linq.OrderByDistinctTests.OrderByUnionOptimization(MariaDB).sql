@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `OrderByDistinctData`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `OrderByDistinctData`
 (
@@ -47,7 +47,7 @@ VALUES
 (600,'Three',5,5)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x_3`.`Id`,
@@ -99,7 +99,7 @@ ORDER BY
 	Min(`x_3`.`DuplicateData`)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `OrderByDistinctData`
 

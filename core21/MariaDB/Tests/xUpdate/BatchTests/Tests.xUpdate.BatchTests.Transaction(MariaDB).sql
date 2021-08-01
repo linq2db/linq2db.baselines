@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
 
@@ -10,7 +10,7 @@ WHERE
 	`t1`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
 
@@ -21,7 +21,7 @@ WHERE
 	`t1`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
 
@@ -32,7 +32,7 @@ WHERE
 	`t1`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 4111
 
@@ -43,7 +43,7 @@ WHERE
 	`t1`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `Parent`
 (
@@ -57,7 +57,7 @@ VALUES
 (4111,4111)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
 
@@ -68,7 +68,7 @@ WHERE
 	`t1`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
 
@@ -79,7 +79,7 @@ WHERE
 	`t1`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
 
@@ -90,7 +90,7 @@ WHERE
 	`t1`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 4111
 

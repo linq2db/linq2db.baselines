@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`ParentID`,
@@ -8,7 +8,7 @@ FROM
 	`Parent` `t`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @param_1 Int32
 SET     @param_1 = 1
 

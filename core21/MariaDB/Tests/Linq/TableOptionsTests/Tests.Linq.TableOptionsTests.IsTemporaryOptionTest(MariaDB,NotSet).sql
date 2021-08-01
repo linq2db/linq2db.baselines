@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TEMPORARY TABLE `temp_table1`
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `temp_table1`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `temp_table1`
 (
@@ -19,7 +19,7 @@ VALUES
 (1,2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TEMPORARY TABLE `temp_table2`
 (
@@ -28,7 +28,7 @@ CREATE TEMPORARY TABLE `temp_table2`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `temp_table2`
 (
@@ -42,7 +42,7 @@ FROM
 	`temp_table1` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ID`,
@@ -51,7 +51,7 @@ FROM
 	`temp_table1` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ID`,
@@ -60,7 +60,7 @@ FROM
 	`temp_table2` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `temp_table1`
 (
@@ -71,7 +71,7 @@ VALUES
 (2,3)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @Value_1 Int32
@@ -89,33 +89,25 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-
-INSERT INTO `temp_table1`
-(
-	`ID`,
-	`Value`
-)
-VALUES
-(4,5)
+INSERT BULK `temp_table1`(ID, Value
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 TRUNCATE TABLE `temp_table1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 TRUNCATE TABLE `temp_table2`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `temp_table2`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `temp_table1`
 

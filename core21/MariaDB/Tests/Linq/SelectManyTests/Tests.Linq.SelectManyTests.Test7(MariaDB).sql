@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`a_Child`.`ParentID`,
@@ -13,7 +13,7 @@ WHERE
 	`p`.`ParentID` = `g_1`.`ParentID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`a_Child`.`ParentID`,
