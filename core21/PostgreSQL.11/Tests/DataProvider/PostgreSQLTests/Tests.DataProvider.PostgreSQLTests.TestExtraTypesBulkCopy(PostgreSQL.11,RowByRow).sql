@@ -3,15 +3,23 @@
 
 CREATE TABLE "ExtraBulkCopyTypesTable"
 (
-	"Id"     Int         NOT NULL,
-	"Byte"   SmallInt        NULL,
-	"SByte"  SmallInt        NULL,
-	"Int16"  SmallInt        NULL,
-	"UInt16" Int             NULL,
-	"Int32"  Int             NULL,
-	"UInt32" BigInt          NULL,
-	"Int64"  BigInt          NULL,
-	"UInt64" decimal(20)     NULL
+	"Id"      Int         NOT NULL,
+	"Byte"    SmallInt        NULL,
+	"SByte"   SmallInt        NULL,
+	"Int16"   SmallInt        NULL,
+	"UInt16"  Int             NULL,
+	"Int32"   Int             NULL,
+	"UInt32"  BigInt          NULL,
+	"Int64"   BigInt          NULL,
+	"UInt64"  decimal(20)     NULL,
+	"ByteT"   SmallInt        NULL,
+	"SByteT"  SmallInt        NULL,
+	"Int16T"  SmallInt        NULL,
+	"UInt16T" Int             NULL,
+	"Int32T"  Int             NULL,
+	"UInt32T" BigInt          NULL,
+	"Int64T"  BigInt          NULL,
+	"UInt64T" Decimal         NULL
 )
 
 BeforeExecute
@@ -34,6 +42,22 @@ DECLARE @Int64 Bigint -- Int64
 SET     @Int64 = NULL
 DECLARE @UInt64 Numeric -- Decimal
 SET     @UInt64 = NULL
+DECLARE @ByteT Smallint -- Byte
+SET     @ByteT = NULL
+DECLARE @SByteT Smallint -- Int16
+SET     @SByteT = NULL
+DECLARE @Int16T Smallint -- Int16
+SET     @Int16T = NULL
+DECLARE @UInt16T Integer -- Int32
+SET     @UInt16T = NULL
+DECLARE @Int32T Integer -- Int32
+SET     @Int32T = NULL
+DECLARE @UInt32T Bigint -- Int64
+SET     @UInt32T = NULL
+DECLARE @Int64T Bigint -- Int64
+SET     @Int64T = NULL
+DECLARE @UInt64T Numeric -- Decimal
+SET     @UInt64T = NULL
 
 INSERT INTO "ExtraBulkCopyTypesTable"
 (
@@ -45,7 +69,15 @@ INSERT INTO "ExtraBulkCopyTypesTable"
 	"Int32",
 	"UInt32",
 	"Int64",
-	"UInt64"
+	"UInt64",
+	"ByteT",
+	"SByteT",
+	"Int16T",
+	"UInt16T",
+	"Int32T",
+	"UInt32T",
+	"Int64T",
+	"UInt64T"
 )
 VALUES
 (
@@ -57,7 +89,15 @@ VALUES
 	:Int32,
 	:UInt32,
 	:Int64,
-	:UInt64
+	:UInt64,
+	:ByteT,
+	:SByteT,
+	:Int16T,
+	:UInt16T,
+	:Int32T,
+	:UInt32T,
+	:Int64T,
+	:UInt64T
 )
 
 BeforeExecute
@@ -80,6 +120,22 @@ DECLARE @Int64 Bigint -- Int64
 SET     @Int64 = 9223372036854775807
 DECLARE @UInt64 Numeric(20, 0) -- Decimal
 SET     @UInt64 = 18446744073709551615
+DECLARE @ByteT Smallint -- Byte
+SET     @ByteT = 255
+DECLARE @SByteT Smallint -- Int16
+SET     @SByteT = 127
+DECLARE @Int16T Smallint -- Int16
+SET     @Int16T = 32767
+DECLARE @UInt16T Integer -- Int32
+SET     @UInt16T = 65535
+DECLARE @Int32T Integer -- Int32
+SET     @Int32T = 2147483647
+DECLARE @UInt32T Bigint -- Int64
+SET     @UInt32T = 4294967295
+DECLARE @Int64T Bigint -- Int64
+SET     @Int64T = 9223372036854775807
+DECLARE @UInt64T Numeric(20, 0) -- Decimal
+SET     @UInt64T = 18446744073709551615
 
 INSERT INTO "ExtraBulkCopyTypesTable"
 (
@@ -91,7 +147,15 @@ INSERT INTO "ExtraBulkCopyTypesTable"
 	"Int32",
 	"UInt32",
 	"Int64",
-	"UInt64"
+	"UInt64",
+	"ByteT",
+	"SByteT",
+	"Int16T",
+	"UInt16T",
+	"Int32T",
+	"UInt32T",
+	"Int64T",
+	"UInt64T"
 )
 VALUES
 (
@@ -103,7 +167,15 @@ VALUES
 	:Int32,
 	:UInt32,
 	:Int64,
-	:UInt64
+	:UInt64,
+	:ByteT,
+	:SByteT,
+	:Int16T,
+	:UInt16T,
+	:Int32T,
+	:UInt32T,
+	:Int64T,
+	:UInt64T
 )
 
 BeforeExecute
@@ -118,7 +190,15 @@ SELECT
 	t1."Int32",
 	t1."UInt32",
 	t1."Int64",
-	t1."UInt64"
+	t1."UInt64",
+	t1."ByteT",
+	t1."SByteT",
+	t1."Int16T",
+	t1."UInt16T",
+	t1."Int32T",
+	t1."UInt32T",
+	t1."Int64T",
+	t1."UInt64T"
 FROM
 	"ExtraBulkCopyTypesTable" t1
 ORDER BY
