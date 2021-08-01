@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @fm String(1) -- AnsiStringFixedLength
 SET     @fm = 'F'
 

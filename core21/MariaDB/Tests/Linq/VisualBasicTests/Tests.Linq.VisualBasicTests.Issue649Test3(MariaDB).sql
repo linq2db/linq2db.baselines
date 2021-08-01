@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE `activity649`
 (
@@ -11,7 +11,7 @@ CREATE TABLE `activity649`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE `person649`
 (
@@ -22,8 +22,8 @@ CREATE TABLE `person649`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @added DateTime
+-- MariaDB MySqlConnector MySql
+DECLARE @added Datetime -- DateTime
 SET     @added = '2017-01-01'
 
 SELECT
@@ -40,12 +40,12 @@ GROUP BY
 	`a_Person`.`personname`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `person649`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `activity649`
 

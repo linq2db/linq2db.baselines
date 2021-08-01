@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take_1 Int32
 SET     @take_1 = 10
 DECLARE @take Int32

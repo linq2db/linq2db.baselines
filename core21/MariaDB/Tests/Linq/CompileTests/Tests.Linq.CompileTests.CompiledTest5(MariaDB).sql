@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 DECLARE @Value1 Int32
@@ -14,7 +14,7 @@ WHERE
 	`p`.`ParentID` = @ParentID AND `p`.`Value1` = @Value1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2
 

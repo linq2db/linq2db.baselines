@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE `Parent564`
 (
@@ -12,7 +12,7 @@ CREATE TABLE `Parent564`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Type_1 VarChar(9) -- String
 SET     @Type_1 = 'Child564A'
 DECLARE @StringValue VarChar(9) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Type_1 VarChar(9) -- String
 SET     @Type_1 = 'Child564B'
 DECLARE @IntValue Int32
@@ -48,7 +48,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -56,7 +56,7 @@ FROM
 	`Parent564` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Parent564`
 

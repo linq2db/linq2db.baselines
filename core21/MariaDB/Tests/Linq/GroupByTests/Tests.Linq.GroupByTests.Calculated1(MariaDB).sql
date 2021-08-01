@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Key_1`
@@ -22,7 +22,7 @@ GROUP BY
 	`t1`.`Key_1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @p_1 VarChar(1) -- String
 SET     @p_1 = '1'
 

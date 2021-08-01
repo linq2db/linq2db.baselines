@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	WeekDay(Date_Add(`t`.`DateTimeValue`, interval 1 day))

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @aInParam VarChar(4) -- AnsiString
 SET     @aInParam = 'test'
 DECLARE @aOutParam Byte -- SByte

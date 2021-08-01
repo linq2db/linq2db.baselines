@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`ChildID`
@@ -11,7 +11,7 @@ GROUP BY
 	`x`.`ChildID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ChildID Int32
 SET     @ChildID = 21
 
@@ -23,7 +23,7 @@ WHERE
 	`x`.`ParentID` IN (2) AND `x`.`ChildID` = @ChildID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ChildID Int32
 SET     @ChildID = 22
 
@@ -35,7 +35,7 @@ WHERE
 	`x`.`ParentID` IN (2) AND `x`.`ChildID` = @ChildID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`ChildID`
@@ -47,7 +47,7 @@ GROUP BY
 	`x`.`ChildID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ChildID Int32
 SET     @ChildID = 31
 
@@ -59,7 +59,7 @@ WHERE
 	`x`.`ParentID` IN (3) AND `x`.`ChildID` = @ChildID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ChildID Int32
 SET     @ChildID = 32
 
@@ -71,7 +71,7 @@ WHERE
 	`x`.`ParentID` IN (3) AND `x`.`ChildID` = @ChildID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ChildID Int32
 SET     @ChildID = 33
 
