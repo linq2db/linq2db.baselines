@@ -8,7 +8,7 @@ FROM
 	[Doctor] [t1]
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 

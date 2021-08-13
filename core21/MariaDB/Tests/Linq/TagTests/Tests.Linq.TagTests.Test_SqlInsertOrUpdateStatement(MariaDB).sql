@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE `TestTable`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `TestTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 /* My Test */
 INSERT INTO `TestTable`
@@ -27,7 +27,7 @@ ON DUPLICATE KEY UPDATE
 	`Fd` = 2
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TestTable`
 

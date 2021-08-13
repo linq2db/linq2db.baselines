@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @param_1 VarChar(4) -- String
 SET     @param_1 = 'JOHN'
 

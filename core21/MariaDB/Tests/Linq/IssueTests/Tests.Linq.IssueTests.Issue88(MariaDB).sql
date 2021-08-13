@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`FirstName`,
@@ -13,7 +13,7 @@ WHERE
 	`_`.`PersonID` = 1 AND `_`.`Gender` = 'M'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`FirstName`,
@@ -27,7 +27,7 @@ WHERE
 	`_`.`PersonID` = 1 AND 'M' = `_`.`Gender`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @gender String -- StringFixedLength
 SET     @gender = 'M'
 
@@ -43,7 +43,7 @@ WHERE
 	`_`.`PersonID` = 1 AND `_`.`Gender` = @gender
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @gender String -- StringFixedLength
 SET     @gender = 'M'
 

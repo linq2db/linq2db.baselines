@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ps_1 VarChar(4) -- String
 SET     @ps_1 = '%~[%'
 

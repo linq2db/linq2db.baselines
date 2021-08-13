@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TEMPORARY TABLE `IsTemporaryTable`
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `IsTemporaryTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -17,7 +17,7 @@ FROM
 	`IsTemporaryTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `IsTemporaryTable`
 

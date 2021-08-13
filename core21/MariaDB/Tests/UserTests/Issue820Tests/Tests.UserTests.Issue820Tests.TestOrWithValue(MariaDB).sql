@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -7,7 +7,7 @@ FROM
 	`LinqDataTypes` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 Int16
 SET     @Value_1 = 1
 
@@ -28,7 +28,7 @@ WHERE
 	@Value_1 = `_`.`SmallIntValue`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`ID`,

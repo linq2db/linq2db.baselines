@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -21,8 +21,8 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @dt DateTime
+-- MariaDB MySqlConnector MySql
+DECLARE @dt Datetime -- DateTime
 SET     @dt = '2010-12-14 05:00:07.425'
 
 UPDATE
@@ -33,7 +33,7 @@ WHERE
 	`t1`.`ID` = 1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -55,8 +55,8 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @pdt DateTime
+-- MariaDB MySqlConnector MySql
+DECLARE @pdt Datetime -- DateTime
 SET     @pdt = '2001-01-11 01:11:21.100'
 
 UPDATE

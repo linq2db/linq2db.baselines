@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 1
 
@@ -12,7 +12,7 @@ WHERE
 	`c_1`.`ParentID` = @id AND `c_1`.`Value1` IS NOT NULL
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ParentID`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  MySql.Official MySql
+--  MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -24,7 +24,7 @@ FROM
 		INNER JOIN `Child` `detail` ON `lw_Parent`.`ParentID` = `detail`.`ParentID`
 
 BeforeExecute
---  MySql.Official MySql
+--  MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 

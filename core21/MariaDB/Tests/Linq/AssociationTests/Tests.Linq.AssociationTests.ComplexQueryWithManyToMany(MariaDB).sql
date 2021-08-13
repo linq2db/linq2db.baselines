@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id2 Int32
 SET     @id2 = 3
 DECLARE @Value_1 Int32

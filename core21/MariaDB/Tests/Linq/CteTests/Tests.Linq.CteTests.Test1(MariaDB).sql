@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 WITH `CTE_1` (`ParentID`)
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN `CTE_1` `c2` ON `p`.`ParentID` = `c2`.`ParentID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`p`.`ParentID`,
