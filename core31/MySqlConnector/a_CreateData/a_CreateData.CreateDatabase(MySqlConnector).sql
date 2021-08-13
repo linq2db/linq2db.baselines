@@ -732,7 +732,6 @@ CREATE PROCEDURE `Issue2313Results`(
 
 -- SKIP MySql55 BEGIN
 -- SKIP MySql BEGIN
--- SKIP MariaDB BEGIN
 	IN `Json` JSON,
 	IN `Geometry` GEOMETRY,
 	IN `Point` POINT,
@@ -742,7 +741,6 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `MultiLineString` MULTILINESTRING,
 	IN `MultiPolygon` MULTIPOLYGON,
 	IN `GeometryCollection` GEOMETRYCOLLECTION,
--- SKIP MariaDB END
 -- SKIP MySql END
 -- SKIP MySql55 END
 
@@ -794,7 +792,6 @@ BEGIN
 
 -- SKIP MySql55 BEGIN
 -- SKIP MySql BEGIN
--- SKIP MariaDB BEGIN
 	,`Json`,
 	`Geometry`,
 	`Point`,
@@ -804,7 +801,6 @@ BEGIN
 	`MultiLineString`,
 	`MultiPolygon`,
 	`GeometryCollection`
--- SKIP MariaDB END
 -- SKIP MySql END
 -- SKIP MySql55 END
 
