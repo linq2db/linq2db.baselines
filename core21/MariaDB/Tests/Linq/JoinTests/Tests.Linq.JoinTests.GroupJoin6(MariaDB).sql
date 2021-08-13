@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN `Child` `_gjd_c` ON `_gjd_c`.`ParentID` = `key_data_result`.`ParentID` + @ParentID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`p`.`ParentID`,

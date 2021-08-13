@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ID`,
@@ -16,8 +16,8 @@ FROM
 	`LinqDataTypes` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @DateTimeValue2 DateTime
+-- MariaDB MySqlConnector MySql
+DECLARE @DateTimeValue2 Datetime -- DateTime
 SET     @DateTimeValue2 = '2009-09-24 09:19:29.090'
 
 SELECT

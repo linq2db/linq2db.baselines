@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 WITH RECURSIVE `MY_CTE` (`ChildID`, `ParentID`, `GrandChildID`)
 AS

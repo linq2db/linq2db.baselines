@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @параметр Int32
 SET     @параметр = 1
 
@@ -12,7 +12,7 @@ WHERE
 	`p`.`ParentID` = @параметр
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @参数 Int32
 SET     @参数 = 1
 
@@ -25,7 +25,7 @@ WHERE
 	`p`.`ParentID` = @参数
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @パラメータ Int32
 SET     @パラメータ = 1
 
