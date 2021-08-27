@@ -24,8 +24,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] LIKE @nameToCheck ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], @nameToCheck_2)) = Convert(VarBinary(8000), @nameToCheck_1)) AND
-	[p].[PersonID] = 1
+	[p].[PersonID] = 1 AND [p].[FirstName] LIKE @nameToCheck ESCAPE N'~' AND
+	Convert(VarBinary(8000), LEFT([p].[FirstName], @nameToCheck_2)) = Convert(VarBinary(8000), @nameToCheck_1)
 
 BeforeExecute
 -- SqlServer.2012
@@ -58,8 +58,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] LIKE @nameToCheck ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], @nameToCheck_2)) = Convert(VarBinary(8000), @nameToCheck_1)) AND
-	[p].[PersonID] = 1
+	[p].[PersonID] = 1 AND [p].[FirstName] LIKE @nameToCheck ESCAPE N'~' AND
+	Convert(VarBinary(8000), LEFT([p].[FirstName], @nameToCheck_2)) = Convert(VarBinary(8000), @nameToCheck_1)
 
 BeforeExecute
 -- SqlServer.2012
