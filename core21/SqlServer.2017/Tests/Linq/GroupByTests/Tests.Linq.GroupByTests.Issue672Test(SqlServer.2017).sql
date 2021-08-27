@@ -85,8 +85,10 @@ SELECT
 FROM
 	[Stone] [s]
 WHERE
-	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
-	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND Len([s].[ImageFullUrl]) > 0
+	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
+	Len([s].[ImageFullUrl]) > 0 AND
+	[s].[Enabled] = 1 AND
+	[s].[Enabled] IS NOT NULL
 GROUP BY
 	[s].[Name]
 
@@ -103,10 +105,11 @@ SELECT
 FROM
 	[Stone] [s]
 WHERE
-	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
 	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
 	Len([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = @Name
+	[s].[Name] = @Name AND
+	[s].[Enabled] = 1 AND
+	[s].[Enabled] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2017
@@ -121,10 +124,11 @@ SELECT
 FROM
 	[Stone] [s]
 WHERE
-	([s].[Enabled] = 1 AND [s].[Enabled] IS NOT NULL) AND
 	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
 	Len([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = @Name
+	[s].[Name] = @Name AND
+	[s].[Enabled] = 1 AND
+	[s].[Enabled] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2017
