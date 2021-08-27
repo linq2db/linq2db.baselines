@@ -226,8 +226,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND
-	[t].[Id] > 0
+	[t].[Id] > 0 AND [t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -239,7 +238,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT (([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
+	NOT ([t].[Id] > 0 AND [t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -397,7 +396,34 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND
+	[t].[BoolValue] = 0 AND
+	[t].[Id] > 0 AND
+	[t].[NullableBoolValue] = 0 AND
+	[t].[NullableBoolValue] IS NOT NULL
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -410,32 +436,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
-	[t].[NullableBoolValue]
-FROM
-	[WhereCases] [t]
-WHERE
-	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL)) AND
-	[t].[Id] > 0
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
-	[t].[NullableBoolValue]
-FROM
-	[WhereCases] [t]
-WHERE
-	NOT (NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL)) AND [t].[Id] > 0)
+	NOT (NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
