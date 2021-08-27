@@ -78,7 +78,7 @@ SELECT
 	"joinedTable"."StatusBitmask"
 FROM
 	"i1084_person" "k_1"
-		LEFT JOIN "i1084_student" "joinedTable" ON ("k_1"."Id" = "joinedTable"."Id" AND Cast("k_1"."Number" as VarChar(11) CHARACTER SET UNICODE_FSS) = "joinedTable"."Number")
+		LEFT JOIN "i1084_student" "joinedTable" ON "k_1"."Id" = "joinedTable"."Id" AND Cast("k_1"."Number" as VarChar(11) CHARACTER SET UNICODE_FSS) = "joinedTable"."Number"
 
 BeforeExecute
 -- Firebird
