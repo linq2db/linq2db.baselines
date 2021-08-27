@@ -24,5 +24,5 @@ SELECT
 FROM
 	"GrandChild" "keyParam"
 WHERE
-	("keyParam"."ParentID" = :ParentID AND "keyParam"."ChildID" = :ChildID)
+	"keyParam"."ParentID" = :ParentID AND "keyParam"."ChildID" = :ChildID
 
