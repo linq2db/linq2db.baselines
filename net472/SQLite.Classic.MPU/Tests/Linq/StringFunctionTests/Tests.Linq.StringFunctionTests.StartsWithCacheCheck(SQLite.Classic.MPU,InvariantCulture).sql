@@ -25,8 +25,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND Substr([p].[FirstName], 1, @nameToCheck_2) = @nameToCheck) AND
-	[p].[PersonID] = 1
+	[p].[PersonID] = 1 AND [p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND
+	Substr([p].[FirstName], 1, @nameToCheck_2) = @nameToCheck
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -59,8 +59,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND Substr([p].[FirstName], 1, @nameToCheck_2) = @nameToCheck) AND
-	[p].[PersonID] = 1
+	[p].[PersonID] = 1 AND [p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND
+	Substr([p].[FirstName], 1, @nameToCheck_2) = @nameToCheck
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
