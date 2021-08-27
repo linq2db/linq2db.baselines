@@ -226,8 +226,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	(t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL) AND
-	t."Id" > 0
+	t."Id" > 0 AND t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -239,7 +238,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT ((t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
+	NOT (t."Id" > 0 AND t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL)
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
@@ -397,7 +396,34 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	t."BoolValue" = False AND (t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND
+	t."BoolValue" = False AND
+	t."Id" > 0 AND
+	t."NullableBoolValue" = False AND
+	t."NullableBoolValue" IS NOT NULL
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	t."Id",
+	t."BoolValue",
+	t."NullableBoolValue"
+FROM
+	"WhereCases" t
+WHERE
+	NOT (t."BoolValue" = False AND t."Id" > 0 AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL)
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	t."Id",
+	t."BoolValue",
+	t."NullableBoolValue"
+FROM
+	"WhereCases" t
+WHERE
+	NOT (t."BoolValue" = False AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND
 	t."Id" > 0
 
 BeforeExecute
@@ -410,32 +436,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
-SELECT
-	t."Id",
-	t."BoolValue",
-	t."NullableBoolValue"
-FROM
-	"WhereCases" t
-WHERE
-	NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL)) AND
-	t."Id" > 0
-
-BeforeExecute
--- PostgreSQL.9.3 PostgreSQL
-
-SELECT
-	t."Id",
-	t."BoolValue",
-	t."NullableBoolValue"
-FROM
-	"WhereCases" t
-WHERE
-	NOT (NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL)) AND t."Id" > 0)
+	NOT (NOT (t."BoolValue" = False AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

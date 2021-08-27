@@ -8,8 +8,8 @@ UPDATE
 SET
 	"ChildID" = :ChildID
 FROM
-	"Parent" x
-		INNER JOIN "Child" c_1 ON x."ParentID" = c_1."ParentID"
+	"Parent" x,
+	"Child" c_1
 WHERE
-	1 = 0 AND c_1."ParentID" = "Child"."ChildID"
+	1 = 0 AND x."ParentID" = c_1."ParentID" AND c_1."ParentID" = "Child"."ChildID"
 
