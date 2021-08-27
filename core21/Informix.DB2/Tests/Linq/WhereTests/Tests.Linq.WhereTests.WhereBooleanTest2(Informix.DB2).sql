@@ -425,7 +425,8 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.Id > 0 AND t.NullableBoolValue = 't' AND t.NullableBoolValue IS NOT NULL
+	t.NullableBoolValue = 't' AND t.NullableBoolValue IS NOT NULL AND
+	t.Id > 0
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -437,7 +438,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.Id > 0 AND t.NullableBoolValue = 't' AND t.NullableBoolValue IS NOT NULL)
+	NOT (t.NullableBoolValue = 't' AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -596,9 +597,9 @@ FROM
 	WhereCases t
 WHERE
 	t.BoolValue = 'f' AND
-	t.Id > 0 AND
 	t.NullableBoolValue = 'f' AND
-	t.NullableBoolValue IS NOT NULL
+	t.NullableBoolValue IS NOT NULL AND
+	t.Id > 0
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -610,7 +611,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = 'f' AND t.Id > 0 AND t.NullableBoolValue = 'f' AND t.NullableBoolValue IS NOT NULL)
+	NOT (t.BoolValue = 'f' AND t.NullableBoolValue = 'f' AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
