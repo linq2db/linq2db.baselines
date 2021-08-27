@@ -20,7 +20,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND [p].[FirstName] LIKE ? AND InStr(1, [p].[FirstName], ?, 0) = 1
+	[p].[FirstName] LIKE ? AND InStr(1, [p].[FirstName], ?, 0) = 1 AND
+	[p].[PersonID] = 1
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -49,7 +50,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND [p].[FirstName] LIKE ? AND InStr(1, [p].[FirstName], ?, 0) = 1
+	[p].[FirstName] LIKE ? AND InStr(1, [p].[FirstName], ?, 0) = 1 AND
+	[p].[PersonID] = 1
 
 BeforeExecute
 -- Access.Odbc AccessODBC
