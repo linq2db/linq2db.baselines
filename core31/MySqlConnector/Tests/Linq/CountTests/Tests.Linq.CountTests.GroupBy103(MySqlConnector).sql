@@ -8,8 +8,8 @@ SELECT
 		FROM
 			`Child` `ch`
 		WHERE
-			(`t1`.`ParentID` = `ch`.`ParentID` AND `t1`.`ChildID` = `ch`.`ChildID`) AND
-			`ch`.`ChildID` > 20
+			`ch`.`ChildID` > 20 AND `t1`.`ParentID` = `ch`.`ParentID` AND
+			`t1`.`ChildID` = `ch`.`ChildID`
 	)
 FROM
 	`Child` `t1`
