@@ -12,8 +12,10 @@ SELECT
 		FROM
 			"Child" "ch"
 		WHERE
-			"ch"."ParentID" < 2 AND ("t1"."ParentID" = "ch"."ParentID" + 1 AND "t1"."ChildID" = "ch"."ChildID") AND
-			"ch"."ParentID" + 2 > ?
+			"ch"."ParentID" < 2 AND
+			"ch"."ParentID" + 2 > ? AND
+			"t1"."ParentID" = "ch"."ParentID" + 1 AND
+			"t1"."ChildID" = "ch"."ChildID"
 	)
 FROM
 	(
