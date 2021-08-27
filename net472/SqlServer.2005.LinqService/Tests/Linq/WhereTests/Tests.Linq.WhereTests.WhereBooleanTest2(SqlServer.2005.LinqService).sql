@@ -402,7 +402,8 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[Id] > 0 AND [t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL
+	[t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND
+	[t].[Id] > 0
 
 BeforeExecute
 -- SqlServer.2005
@@ -414,7 +415,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[Id] > 0 AND [t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL)
+	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
 -- SqlServer.2005
@@ -426,7 +427,8 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[Id] > 0 AND [t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL
+	[t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND
+	[t].[Id] > 0
 
 BeforeExecute
 -- SqlServer.2005
@@ -438,7 +440,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[Id] > 0 AND [t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL)
+	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
 -- SqlServer.2005
@@ -597,9 +599,9 @@ FROM
 	[WhereCases] [t]
 WHERE
 	[t].[BoolValue] = 0 AND
-	[t].[Id] > 0 AND
 	[t].[NullableBoolValue] = 0 AND
-	[t].[NullableBoolValue] IS NOT NULL
+	[t].[NullableBoolValue] IS NOT NULL AND
+	[t].[Id] > 0
 
 BeforeExecute
 -- SqlServer.2005
@@ -611,7 +613,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL)
+	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
 -- SqlServer.2005
