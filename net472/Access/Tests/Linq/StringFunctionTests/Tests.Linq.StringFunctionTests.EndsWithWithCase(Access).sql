@@ -6,8 +6,8 @@ SELECT
 FROM
 	[Patient] [p]
 WHERE
-	[p].[PersonID] = 2 AND [p].[Diagnosis] LIKE '%Persecution' AND
-	InStr(LEN([p].[Diagnosis]) - 10, [p].[Diagnosis], 'Persecution', 0) = (LEN([p].[Diagnosis]) - 10)
+	[p].[Diagnosis] LIKE '%Persecution' AND InStr(LEN([p].[Diagnosis]) - 10, [p].[Diagnosis], 'Persecution', 0) = (LEN([p].[Diagnosis]) - 10) AND
+	[p].[PersonID] = 2
 
 BeforeExecute
 -- Access AccessOleDb
@@ -28,8 +28,8 @@ SELECT
 FROM
 	[Patient] [p]
 WHERE
-	[p].[PersonID] = 2 AND [p].[Diagnosis] LIKE '%persecution' AND
-	InStr(LEN([p].[Diagnosis]) - 10, [p].[Diagnosis], 'persecution', 0) = (LEN([p].[Diagnosis]) - 10)
+	[p].[Diagnosis] LIKE '%persecution' AND InStr(LEN([p].[Diagnosis]) - 10, [p].[Diagnosis], 'persecution', 0) = (LEN([p].[Diagnosis]) - 10) AND
+	[p].[PersonID] = 2
 
 BeforeExecute
 -- Access AccessOleDb

@@ -20,8 +20,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND [p].[FirstName] LIKE @nameToCheck AND
-	InStr(1, [p].[FirstName], @nameToCheck_1, 0) = 1
+	[p].[FirstName] LIKE @nameToCheck AND InStr(1, [p].[FirstName], @nameToCheck_1, 0) = 1 AND
+	[p].[PersonID] = 1
 
 BeforeExecute
 -- Access AccessOleDb
@@ -50,8 +50,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND [p].[FirstName] LIKE @nameToCheck AND
-	InStr(1, [p].[FirstName], @nameToCheck_1, 0) = 1
+	[p].[FirstName] LIKE @nameToCheck AND InStr(1, [p].[FirstName], @nameToCheck_1, 0) = 1 AND
+	[p].[PersonID] = 1
 
 BeforeExecute
 -- Access AccessOleDb

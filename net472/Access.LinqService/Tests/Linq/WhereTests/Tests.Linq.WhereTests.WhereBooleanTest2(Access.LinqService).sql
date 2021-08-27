@@ -400,8 +400,8 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[Id] > 0 AND [t].[NullableBoolValue] = True AND
-	[t].[NullableBoolValue] IS NOT NULL
+	[t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL AND
+	[t].[Id] > 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -413,7 +413,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[Id] > 0 AND [t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL)
+	NOT ([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -425,8 +425,8 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[Id] > 0 AND [t].[NullableBoolValue] = True AND
-	[t].[NullableBoolValue] IS NOT NULL
+	[t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL AND
+	[t].[Id] > 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -438,7 +438,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[Id] > 0 AND [t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL)
+	NOT ([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -501,9 +501,9 @@ FROM
 	[WhereCases] [t]
 WHERE
 	[t].[BoolValue] = False AND
-	[t].[Id] > 0 AND
 	[t].[NullableBoolValue] = False AND
-	[t].[NullableBoolValue] IS NOT NULL
+	[t].[NullableBoolValue] IS NOT NULL AND
+	[t].[Id] > 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -515,7 +515,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = False AND [t].[Id] > 0 AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL)
+	NOT ([t].[BoolValue] = False AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access AccessOleDb
