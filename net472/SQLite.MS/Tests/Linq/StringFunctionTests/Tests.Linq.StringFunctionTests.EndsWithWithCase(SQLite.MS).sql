@@ -6,8 +6,8 @@ SELECT
 FROM
 	[Patient] [p]
 WHERE
-	[p].[PersonID] = 2 AND [p].[Diagnosis] LIKE '%Persecution' ESCAPE '~' AND
-	Substr([p].[Diagnosis], -11) = 'Persecution'
+	[p].[Diagnosis] LIKE '%Persecution' ESCAPE '~' AND
+	Substr([p].[Diagnosis], -11) = 'Persecution' AND [p].[PersonID] = 2
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -28,8 +28,8 @@ SELECT
 FROM
 	[Patient] [p]
 WHERE
-	[p].[PersonID] = 2 AND [p].[Diagnosis] LIKE '%persecution' ESCAPE '~' AND
-	Substr([p].[Diagnosis], -11) = 'persecution'
+	[p].[Diagnosis] LIKE '%persecution' ESCAPE '~' AND
+	Substr([p].[Diagnosis], -11) = 'persecution' AND [p].[PersonID] = 2
 
 BeforeExecute
 -- SQLite.MS SQLite
