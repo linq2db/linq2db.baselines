@@ -85,8 +85,10 @@ SELECT
 FROM
 	Stone s
 WHERE
-	(s.Enabled = 't' AND s.Enabled IS NOT NULL) AND NOT s.Name LIKE 'level - %' ESCAPE '~' AND
-	Length(s.ImageFullUrl) > 0
+	NOT s.Name LIKE 'level - %' ESCAPE '~' AND
+	Length(s.ImageFullUrl) > 0 AND
+	s.Enabled = 't' AND
+	s.Enabled IS NOT NULL
 GROUP BY
 	s.Name
 
@@ -103,10 +105,11 @@ SELECT
 FROM
 	Stone s
 WHERE
-	(s.Enabled = 't' AND s.Enabled IS NOT NULL) AND
 	NOT s.Name LIKE 'level - %' ESCAPE '~' AND
 	Length(s.ImageFullUrl) > 0 AND
-	s.Name = @Name
+	s.Name = @Name AND
+	s.Enabled = 't' AND
+	s.Enabled IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -121,10 +124,11 @@ SELECT
 FROM
 	Stone s
 WHERE
-	(s.Enabled = 't' AND s.Enabled IS NOT NULL) AND
 	NOT s.Name LIKE 'level - %' ESCAPE '~' AND
 	Length(s.ImageFullUrl) > 0 AND
-	s.Name = @Name
+	s.Name = @Name AND
+	s.Enabled = 't' AND
+	s.Enabled IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
