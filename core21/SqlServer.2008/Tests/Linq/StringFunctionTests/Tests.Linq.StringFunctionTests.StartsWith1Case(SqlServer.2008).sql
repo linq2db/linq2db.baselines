@@ -6,8 +6,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND [p].[FirstName] LIKE N'Jo%' ESCAPE N'~' AND
-	Convert(VarBinary(8000), LEFT([p].[FirstName], 2)) = Convert(VarBinary(8000), N'Jo')
+	[p].[FirstName] LIKE N'Jo%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], 2)) = Convert(VarBinary(8000), N'Jo') AND
+	[p].[PersonID] = 1
 
 BeforeExecute
 -- SqlServer.2008
@@ -17,8 +17,8 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND [p].[FirstName] LIKE N'jo%' ESCAPE N'~' AND
-	Convert(VarBinary(8000), LEFT([p].[FirstName], 2)) = Convert(VarBinary(8000), N'jo')
+	[p].[FirstName] LIKE N'jo%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], 2)) = Convert(VarBinary(8000), N'jo') AND
+	[p].[PersonID] = 1
 
 BeforeExecute
 -- SqlServer.2008
