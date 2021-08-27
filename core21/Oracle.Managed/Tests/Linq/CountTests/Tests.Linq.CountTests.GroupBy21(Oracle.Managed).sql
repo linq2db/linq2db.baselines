@@ -11,9 +11,9 @@ SELECT
 			"Child" ch
 		WHERE
 			ch."ParentID" < 2 AND
-			ch."ParentID" + 2 > :n AND
 			t1."ParentID" = ch."ParentID" + 1 AND
-			t1."ChildID" = ch."ChildID"
+			t1."ChildID" = ch."ChildID" AND
+			ch."ParentID" + 2 > :n
 	)
 FROM
 	(
