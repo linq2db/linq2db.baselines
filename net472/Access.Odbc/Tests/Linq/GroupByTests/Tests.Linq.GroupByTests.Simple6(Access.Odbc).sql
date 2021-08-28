@@ -22,5 +22,5 @@ SELECT
 FROM
 	[GrandChild] [ch]
 WHERE
-	([ch].[ParentID] = ? AND [ch].[ChildID] = ?)
+	[ch].[ParentID] = ? AND [ch].[ChildID] = ?
 
