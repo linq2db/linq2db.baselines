@@ -85,7 +85,9 @@ SELECT
 FROM
 	Stone s
 WHERE
-	(s.Enabled = 't' AND s.Enabled IS NOT NULL) AND NOT s.Name LIKE 'level - %' ESCAPE '~' AND
+	s.Enabled = 't' AND
+	s.Enabled IS NOT NULL AND
+	NOT s.Name LIKE 'level - %' ESCAPE '~' AND
 	Length(s.ImageFullUrl) > 0
 GROUP BY
 	s.Name
@@ -103,7 +105,8 @@ SELECT
 FROM
 	Stone s
 WHERE
-	(s.Enabled = 't' AND s.Enabled IS NOT NULL) AND
+	s.Enabled = 't' AND
+	s.Enabled IS NOT NULL AND
 	NOT s.Name LIKE 'level - %' ESCAPE '~' AND
 	Length(s.ImageFullUrl) > 0 AND
 	s.Name = @Name
@@ -121,7 +124,8 @@ SELECT
 FROM
 	Stone s
 WHERE
-	(s.Enabled = 't' AND s.Enabled IS NOT NULL) AND
+	s.Enabled = 't' AND
+	s.Enabled IS NOT NULL AND
 	NOT s.Name LIKE 'level - %' ESCAPE '~' AND
 	Length(s.ImageFullUrl) > 0 AND
 	s.Name = @Name
