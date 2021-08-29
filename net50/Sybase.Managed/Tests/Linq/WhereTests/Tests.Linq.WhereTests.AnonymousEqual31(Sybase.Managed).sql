@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Child] [ch]
 WHERE
-	[ch].[ParentID] = 2 AND [ch].[ChildID] = 21
+	([ch].[ParentID] = 2 AND [ch].[ChildID] = 21)
 
