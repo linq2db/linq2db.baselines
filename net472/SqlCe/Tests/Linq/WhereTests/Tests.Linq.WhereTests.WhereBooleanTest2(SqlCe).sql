@@ -225,7 +225,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND
+	([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -238,7 +238,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
+	NOT (([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- SqlCe
@@ -396,9 +396,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[BoolValue] = 0 AND
-	[t].[NullableBoolValue] = 0 AND
-	[t].[NullableBoolValue] IS NOT NULL AND
+	[t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -411,7 +409,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
+	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- SqlCe
@@ -423,7 +421,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND
+	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL)) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -436,7 +434,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT (NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
+	NOT (NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL)) AND [t].[Id] > 0)
 
 BeforeExecute
 -- SqlCe
