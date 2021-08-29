@@ -116,6 +116,30 @@ WHERE
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
+SELECT
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
+FROM
+	[component_categories] [x]
+WHERE
+	[x].[is_deleted] = 1 AND [x].[service_id] = N'TestProcessService'
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+SELECT
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
+FROM
+	[component_categories] [x]
+WHERE
+	[x].[is_deleted] = 0 AND [x].[service_id] <> N'TestProcessService'
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
 DROP TABLE IF EXISTS [components]
 
 BeforeExecute
