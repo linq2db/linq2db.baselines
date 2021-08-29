@@ -119,7 +119,7 @@ FROM
 	"InventoryResourceDTO" inventory
 		INNER JOIN "WmsLoadCarrierDTO" lc ON inventory."ResourceID" = lc."Id"
 WHERE
-	inventory."Status" = :Status AND lc."ResourceLabel" = :ResourceLabel
+	(inventory."Status" = :Status AND lc."ResourceLabel" = :ResourceLabel)
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
