@@ -25,8 +25,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND
-	Substr([p].[FirstName], 1, @nameToCheck_2) = @nameToCheck AND
+	([p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND Substr([p].[FirstName], 1, @nameToCheck_2) = @nameToCheck) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
@@ -60,8 +59,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND
-	Substr([p].[FirstName], 1, @nameToCheck_2) = @nameToCheck AND
+	([p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND Substr([p].[FirstName], 1, @nameToCheck_2) = @nameToCheck) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
