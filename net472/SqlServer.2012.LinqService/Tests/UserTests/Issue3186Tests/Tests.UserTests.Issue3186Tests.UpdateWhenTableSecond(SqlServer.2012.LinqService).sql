@@ -311,6 +311,30 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
+SELECT
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
+FROM
+	[component_categories] [x]
+WHERE
+	[x].[is_deleted] = 1 AND [x].[service_id] = N'TestProcessService'
+
+BeforeExecute
+-- SqlServer.2012
+
+SELECT
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
+FROM
+	[component_categories] [x]
+WHERE
+	[x].[is_deleted] = 0 AND [x].[service_id] <> N'TestProcessService'
+
+BeforeExecute
+-- SqlServer.2012
+
 IF (OBJECT_ID(N'[components]', N'U') IS NOT NULL)
 	DROP TABLE [components]
 

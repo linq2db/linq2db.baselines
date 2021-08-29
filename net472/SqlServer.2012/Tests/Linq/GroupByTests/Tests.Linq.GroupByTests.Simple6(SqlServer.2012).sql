@@ -22,5 +22,5 @@ SELECT
 FROM
 	[GrandChild] [ch]
 WHERE
-	[ch].[ParentID] = @ParentID AND [ch].[ChildID] = @ChildID
+	([ch].[ParentID] = @ParentID AND [ch].[ChildID] = @ChildID)
 
