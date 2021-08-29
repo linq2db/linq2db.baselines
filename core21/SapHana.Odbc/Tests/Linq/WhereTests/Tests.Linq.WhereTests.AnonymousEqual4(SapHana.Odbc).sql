@@ -9,5 +9,5 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = ? AND "p"."Value1" IS NULL
+	("p"."ParentID" = ? AND "p"."Value1" IS NULL)
 
