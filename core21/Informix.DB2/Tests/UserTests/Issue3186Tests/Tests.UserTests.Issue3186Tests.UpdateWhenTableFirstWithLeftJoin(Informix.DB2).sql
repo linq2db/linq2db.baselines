@@ -310,6 +310,30 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	x.id,
+	x.service_id,
+	x.is_deleted
+FROM
+	component_categories x
+WHERE
+	x.is_deleted = 't' AND x.service_id = 'TestProcessService'
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	x.id,
+	x.service_id,
+	x.is_deleted
+FROM
+	component_categories x
+WHERE
+	x.is_deleted = 'f' AND x.service_id <> 'TestProcessService'
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS components
 
 BeforeExecute
