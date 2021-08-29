@@ -11,5 +11,5 @@ SELECT
 FROM
 	"Child" ch
 WHERE
-	ch."ParentID" = :ParentID AND ch."ChildID" = :ChildID
+	(ch."ParentID" = :ParentID AND ch."ChildID" = :ChildID)
 
