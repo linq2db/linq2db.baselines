@@ -34,7 +34,7 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseSensitive] LIKE 'TestSt%' AND InStr(1, [r].[CaseSensitive], 'TestSt', 0) = 1
+	([r].[CaseSensitive] LIKE 'TestSt%' AND InStr(1, [r].[CaseSensitive], 'TestSt', 0) = 1)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -44,7 +44,7 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseInsensitive] LIKE 'TestSt%' AND InStr(1, [r].[CaseInsensitive], 'TestSt', 0) = 1
+	([r].[CaseInsensitive] LIKE 'TestSt%' AND InStr(1, [r].[CaseInsensitive], 'TestSt', 0) = 1)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -54,7 +54,7 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseSensitive] LIKE 'testst%' AND InStr(1, [r].[CaseSensitive], 'testst', 0) = 1
+	([r].[CaseSensitive] LIKE 'testst%' AND InStr(1, [r].[CaseSensitive], 'testst', 0) = 1)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -64,5 +64,5 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseInsensitive] LIKE 'testst%' AND InStr(1, [r].[CaseInsensitive], 'testst', 0) = 1
+	([r].[CaseInsensitive] LIKE 'testst%' AND InStr(1, [r].[CaseInsensitive], 'testst', 0) = 1)
 

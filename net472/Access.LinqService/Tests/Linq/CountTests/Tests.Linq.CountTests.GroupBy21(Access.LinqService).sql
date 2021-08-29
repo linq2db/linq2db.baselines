@@ -28,7 +28,7 @@ FROM
 			GROUP BY
 				[ch_1].[ParentID],
 				[ch_1].[ChildID]
-		) [t1] ON ([t2].[ParentID] = [t1].[ParentID] + 1 AND [t2].[ChildID] = [t1].[ChildID])
+		) [t1] ON (([t2].[ParentID] = [t1].[ParentID] + 1 AND [t2].[ChildID] = [t1].[ChildID]))
 GROUP BY
 	[t2].[ParentID],
 	[t2].[ChildID]

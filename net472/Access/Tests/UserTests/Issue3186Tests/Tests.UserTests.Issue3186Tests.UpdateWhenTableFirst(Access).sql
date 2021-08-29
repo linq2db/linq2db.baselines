@@ -303,6 +303,30 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 
+SELECT
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
+FROM
+	[component_categories] [x]
+WHERE
+	[x].[is_deleted] = True AND [x].[service_id] = 'TestProcessService'
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
+FROM
+	[component_categories] [x]
+WHERE
+	[x].[is_deleted] = False AND [x].[service_id] <> 'TestProcessService'
+
+BeforeExecute
+-- Access AccessOleDb
+
 DROP TABLE [components]
 
 BeforeExecute
