@@ -24,8 +24,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND
-	Convert(VarBinary(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck_2)) = Convert(VarBinary(8000), @nameToCheck) AND
+	([p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND Convert(VarBinary(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck_2)) = Convert(VarBinary(8000), @nameToCheck)) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
@@ -59,8 +58,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND
-	Convert(VarBinary(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck_2)) = Convert(VarBinary(8000), @nameToCheck) AND
+	([p].[FirstName] LIKE @nameToCheck_1 ESCAPE '~' AND Convert(VarBinary(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck_2)) = Convert(VarBinary(8000), @nameToCheck)) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
