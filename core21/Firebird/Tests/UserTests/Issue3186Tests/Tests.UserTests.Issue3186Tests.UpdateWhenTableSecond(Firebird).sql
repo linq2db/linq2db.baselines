@@ -139,6 +139,30 @@ WHERE
 BeforeExecute
 -- Firebird
 
+SELECT
+	"x"."id",
+	"x"."service_id",
+	"x"."is_deleted"
+FROM
+	"component_categories" "x"
+WHERE
+	"x"."is_deleted" = 1 AND "x"."service_id" = 'TestProcessService'
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	"x"."id",
+	"x"."service_id",
+	"x"."is_deleted"
+FROM
+	"component_categories" "x"
+WHERE
+	"x"."is_deleted" = 0 AND "x"."service_id" <> 'TestProcessService'
+
+BeforeExecute
+-- Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'components')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "components"';
