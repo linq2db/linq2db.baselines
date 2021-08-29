@@ -6,8 +6,7 @@ SELECT
 FROM
 	[Patient] [r]
 WHERE
-	[r].[Diagnosis] LIKE N'%Persecution' ESCAPE N'~' AND
-	Convert(VarBinary(8000), RIGHT([r].[Diagnosis], 11)) = Convert(VarBinary(8000), N'Persecution')
+	([r].[Diagnosis] LIKE N'%Persecution' ESCAPE N'~' AND Convert(VarBinary(8000), RIGHT([r].[Diagnosis], 11)) = Convert(VarBinary(8000), N'Persecution'))
 
 BeforeExecute
 -- SqlServer.2017
@@ -17,8 +16,7 @@ SELECT
 FROM
 	[Patient] [r]
 WHERE
-	[r].[Diagnosis] LIKE N'%persecution' ESCAPE N'~' AND
-	Convert(VarBinary(8000), RIGHT([r].[Diagnosis], 11)) = Convert(VarBinary(8000), N'persecution')
+	([r].[Diagnosis] LIKE N'%persecution' ESCAPE N'~' AND Convert(VarBinary(8000), RIGHT([r].[Diagnosis], 11)) = Convert(VarBinary(8000), N'persecution'))
 
 BeforeExecute
 -- SqlServer.2017
