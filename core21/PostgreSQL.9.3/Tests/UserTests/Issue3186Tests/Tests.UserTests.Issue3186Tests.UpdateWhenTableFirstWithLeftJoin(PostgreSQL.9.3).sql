@@ -113,6 +113,30 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
+SELECT
+	x.id,
+	x.service_id,
+	x.is_deleted
+FROM
+	component_categories x
+WHERE
+	x.is_deleted = True AND x.service_id = 'TestProcessService'
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	x.id,
+	x.service_id,
+	x.is_deleted
+FROM
+	component_categories x
+WHERE
+	x.is_deleted = False AND x.service_id <> 'TestProcessService'
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
 DROP TABLE IF EXISTS components
 
 BeforeExecute
