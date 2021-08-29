@@ -28,5 +28,5 @@ SELECT
 FROM
 	[GrandChild] [elemParam]
 WHERE
-	[elemParam].[ParentID] + 1 = ? AND [elemParam].[ChildID] = ?
+	([elemParam].[ParentID] + 1 = ? AND [elemParam].[ChildID] = ?)
 

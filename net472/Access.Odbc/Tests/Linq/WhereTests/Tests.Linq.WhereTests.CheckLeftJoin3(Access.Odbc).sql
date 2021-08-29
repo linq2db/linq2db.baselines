@@ -16,8 +16,6 @@ FROM
 				[c_1].[ParentID] > 0
 		) [t1] ON ([p].[ParentID] = [t1].[ch])
 WHERE
-	[t1].[ch] IS NULL AND
-	[t1].[ChildID] IS NULL AND
-	[t1].[ch] IS NULL AND
-	[t1].[ChildID] IS NULL
+	([t1].[ch] IS NULL AND [t1].[ChildID] IS NULL) AND
+	([t1].[ch] IS NULL AND [t1].[ChildID] IS NULL)
 
