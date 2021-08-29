@@ -111,6 +111,30 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
+SELECT
+	`x`.`id`,
+	`x`.`service_id`,
+	`x`.`is_deleted`
+FROM
+	`component_categories` `x`
+WHERE
+	`x`.`is_deleted` = 1 AND `x`.`service_id` = 'TestProcessService'
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`x`.`id`,
+	`x`.`service_id`,
+	`x`.`is_deleted`
+FROM
+	`component_categories` `x`
+WHERE
+	`x`.`is_deleted` = 0 AND `x`.`service_id` <> 'TestProcessService'
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
 DROP TABLE IF EXISTS `components`
 
 BeforeExecute
