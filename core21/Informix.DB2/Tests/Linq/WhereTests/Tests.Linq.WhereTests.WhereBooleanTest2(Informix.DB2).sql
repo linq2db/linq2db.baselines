@@ -425,7 +425,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	(t.NullableBoolValue = 't' AND t.NullableBoolValue IS NOT NULL) AND
+	t.NullableBoolValue = 't' AND t.NullableBoolValue IS NOT NULL AND
 	t.Id > 0
 
 BeforeExecute
@@ -438,7 +438,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT ((t.NullableBoolValue = 't' AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
+	NOT (t.NullableBoolValue = 't' AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -596,7 +596,9 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = 'f' AND (t.NullableBoolValue = 'f' AND t.NullableBoolValue IS NOT NULL) AND
+	t.BoolValue = 'f' AND
+	t.NullableBoolValue = 'f' AND
+	t.NullableBoolValue IS NOT NULL AND
 	t.Id > 0
 
 BeforeExecute
@@ -609,7 +611,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = 'f' AND (t.NullableBoolValue = 'f' AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
+	NOT (t.BoolValue = 'f' AND t.NullableBoolValue = 'f' AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -621,7 +623,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = 'f' AND (t.NullableBoolValue = 'f' AND t.NullableBoolValue IS NOT NULL)) AND
+	NOT (t.BoolValue = 'f' AND t.NullableBoolValue = 'f' AND t.NullableBoolValue IS NOT NULL) AND
 	t.Id > 0
 
 BeforeExecute
@@ -634,7 +636,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (NOT (t.BoolValue = 'f' AND (t.NullableBoolValue = 'f' AND t.NullableBoolValue IS NOT NULL)) AND t.Id > 0)
+	NOT (NOT (t.BoolValue = 'f' AND t.NullableBoolValue = 'f' AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix

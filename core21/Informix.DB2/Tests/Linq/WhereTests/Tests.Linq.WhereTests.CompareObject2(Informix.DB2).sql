@@ -9,5 +9,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(p.ParentID = @ParentID AND p.Value1 IS NULL)
+	p.ParentID = @ParentID AND p.Value1 IS NULL
 
