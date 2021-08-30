@@ -28,5 +28,5 @@ SELECT
 FROM
 	`GrandChild` `elemParam`
 WHERE
-	(`elemParam`.`ParentID` + 1 = @ParentID AND `elemParam`.`ChildID` = @ChildID)
+	`elemParam`.`ParentID` + 1 = @ParentID AND `elemParam`.`ChildID` = @ChildID
 
