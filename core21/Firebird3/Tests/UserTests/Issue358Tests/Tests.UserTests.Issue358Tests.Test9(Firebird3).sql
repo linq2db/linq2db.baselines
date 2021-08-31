@@ -15,5 +15,9 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	("t1"."BoolValue" NOT IN (1) OR "t1"."BoolValue" IS NULL)
+	CASE
+		WHEN "t1"."BoolValue" IN (1)
+			THEN 1
+		ELSE 0
+	END = 0
 
