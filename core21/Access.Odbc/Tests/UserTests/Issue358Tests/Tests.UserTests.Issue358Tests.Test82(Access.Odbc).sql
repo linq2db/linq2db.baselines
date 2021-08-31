@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	Iif([_].[BigIntValue] IN (2), True, False) = True
+	[_].[BigIntValue] IN (2)
 
