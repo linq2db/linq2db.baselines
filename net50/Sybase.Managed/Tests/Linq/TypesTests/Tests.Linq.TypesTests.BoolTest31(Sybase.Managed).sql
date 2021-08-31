@@ -32,5 +32,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[BoolValue] = 1 AND [t].[BoolValue] IS NOT NULL
+	([t].[BoolValue] = 1 AND [t].[BoolValue] IS NOT NULL)
 
