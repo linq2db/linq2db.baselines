@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	([_].[BoolValue] = False OR [_].[BoolValue] IS NULL)
+	[_].[BoolValue] = False OR [_].[BoolValue] IS NULL
 

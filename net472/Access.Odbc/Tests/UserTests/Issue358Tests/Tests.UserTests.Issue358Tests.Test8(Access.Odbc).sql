@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	([_].[BigIntValue] NOT IN (2) OR [_].[BigIntValue] IS NULL)
+	Iif([_].[BigIntValue] IN (2), True, False) = False
 
