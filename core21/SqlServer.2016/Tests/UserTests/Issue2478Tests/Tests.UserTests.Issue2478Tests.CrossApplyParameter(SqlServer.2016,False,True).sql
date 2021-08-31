@@ -34,11 +34,12 @@ FROM
 	[Parent] [q]
 		CROSS APPLY (
 			SELECT
-				Count(*) as [Count_1]
+				Count(*) as [c1]
 			FROM
 				(
 					SELECT
-						1 as [Key_1]
+						1 as [Key_1],
+						[t].[ChildID]
 					FROM
 						[Child] [t]
 					WHERE
