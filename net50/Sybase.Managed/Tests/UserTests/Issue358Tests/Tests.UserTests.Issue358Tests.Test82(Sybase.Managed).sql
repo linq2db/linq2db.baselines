@@ -15,5 +15,9 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	[_].[BigIntValue] IN (2)
+	CASE
+		WHEN [_].[BigIntValue] IN (2)
+			THEN 1
+		ELSE 0
+	END = 1
 

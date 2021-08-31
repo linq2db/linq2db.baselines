@@ -15,5 +15,9 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	[_].[BoolValue] IN (1)
+	CASE
+		WHEN [_].[BoolValue] IN (1)
+			THEN 1
+		ELSE 0
+	END = 1
 
