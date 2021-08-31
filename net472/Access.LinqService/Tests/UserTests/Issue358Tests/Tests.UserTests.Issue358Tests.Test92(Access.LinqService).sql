@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	Iif([_].[BoolValue] IN (True), True, False) = True
+	[_].[BoolValue] IN (True)
 
