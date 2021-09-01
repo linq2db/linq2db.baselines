@@ -34,7 +34,7 @@ FROM
 	[Parent] [p]
 		CROSS APPLY (
 			SELECT
-				Count(*) as [c1]
+				Count(*) as [Count_1]
 			FROM
 				(
 					SELECT
