@@ -265,8 +265,8 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_MainItem_1].[Key_1],
 	[lw_MainItem_1].[Id_1],
+	[lw_MainItem_1].[Id_2],
 	[lw_MainItem_1].[Value_1],
 	[lw_MainItem_1].[ParentId],
 	[e].[Id],
@@ -276,8 +276,8 @@ FROM
 	(
 		SELECT DISTINCT
 			[a_Parent].[Id],
-			[lw_MainItem].[Id] as [Key_1],
-			[detail].[Id] as [Id_1],
+			[lw_MainItem].[Id] as [Id_1],
+			[detail].[Id] as [Id_2],
 			[detail].[Value] as [Value_1],
 			[detail].[ParentId]
 		FROM
@@ -331,8 +331,8 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_MainItem_1].[Key_1],
 	[lw_MainItem_1].[Id_1],
+	[lw_MainItem_1].[Id_2],
 	[lw_MainItem_1].[Value_1],
 	[lw_MainItem_1].[ParentId],
 	[e].[Id],
@@ -342,8 +342,8 @@ FROM
 	(
 		SELECT DISTINCT
 			[a_Parent].[Id],
-			[lw_MainItem].[Id] as [Key_1],
-			[detail].[Id] as [Id_1],
+			[lw_MainItem].[Id] as [Id_1],
+			[detail].[Id] as [Id_2],
 			[detail].[Value] as [Value_1],
 			[detail].[ParentId]
 		FROM

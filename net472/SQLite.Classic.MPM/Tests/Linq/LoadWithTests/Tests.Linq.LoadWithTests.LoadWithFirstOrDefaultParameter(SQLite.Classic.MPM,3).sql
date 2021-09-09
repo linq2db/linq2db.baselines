@@ -6,8 +6,8 @@ DECLARE @p_1  -- Int32
 SET     @p_1 = 1
 
 SELECT
-	[lw_Parent_1].[Key_1],
 	[lw_Parent_1].[ParentID_1],
+	[lw_Parent_1].[ParentID_2],
 	[lw_Parent_1].[ChildID],
 	[detail_1].[ParentID],
 	[detail_1].[ChildID]
@@ -15,8 +15,8 @@ FROM
 	(
 		SELECT DISTINCT
 			[a_Parent].[ParentID],
-			[lw_Parent].[ParentID] as [Key_1],
-			[detail].[ParentID] as [ParentID_1],
+			[lw_Parent].[ParentID] as [ParentID_1],
+			[detail].[ParentID] as [ParentID_2],
 			[detail].[ChildID]
 		FROM
 			(
