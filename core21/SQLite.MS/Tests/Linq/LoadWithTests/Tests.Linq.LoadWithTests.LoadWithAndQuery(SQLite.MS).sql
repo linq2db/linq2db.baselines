@@ -234,7 +234,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_SubItem1].[Key_1],
+	[lw_SubItem1].[Id_1],
 	[lw_SubItem1].[Id],
 	[lw_SubItem1].[Value_1],
 	[lw_SubItem1].[ParentId],
@@ -245,7 +245,7 @@ FROM
 	(
 		SELECT DISTINCT
 			[detail].[Id],
-			[lw_MainItem].[Id] as [Key_1],
+			[lw_MainItem].[Id] as [Id_1],
 			[detail].[Value] as [Value_1],
 			[detail].[ParentId]
 		FROM
