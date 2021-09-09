@@ -99,30 +99,34 @@ SET     @p_1 = 20
 SELECT
 	[key_data_result].[Master],
 	[key_data_result].[Master_1],
-	[key_data_result].[Master_2],
-	[key_data_result].[Master_3],
 	[detail].[DetailId],
 	[detail].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[e].[Master],
-			[e].[Master_1],
-			[e].[Master_2],
-			[e].[Master_3]
+			[t1].[Master],
+			[t1].[Master_1]
 		FROM
 			(
-				SELECT
-					[m_1].[Id1] as [Master],
-					[m_1].[Id2] as [Master_1],
-					[m_1].[Value] as [Master_2],
-					[m_1].[ByteValues] as [Master_3]
+				SELECT DISTINCT
+					[e].[Master],
+					[e].[Master_1],
+					[e].[Master_2],
+					[e].[Master_3]
 				FROM
-					[MasterClass] [m_1]
-				ORDER BY
-					[m_1].[Id2] DESC
-				LIMIT @p_1
-			) [e]
+					(
+						SELECT
+							[m_1].[Id1] as [Master],
+							[m_1].[Id2] as [Master_1],
+							[m_1].[Value] as [Master_2],
+							[m_1].[ByteValues] as [Master_3]
+						FROM
+							[MasterClass] [m_1]
+						ORDER BY
+							[m_1].[Id2] DESC
+						LIMIT @p_1
+					) [e]
+			) [t1]
 	) [key_data_result]
 		INNER JOIN [DetailClass] [detail] ON [key_data_result].[Master] = [detail].[MasterId]
 
