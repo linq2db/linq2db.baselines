@@ -18,7 +18,7 @@ FROM
 			FROM
 				"Child" y1
 			WHERE
-				(y1."ParentID" = x5."ParentID" AND y1."ParentID" = x5."Value1")
+				y1."ParentID" = x5."ParentID" AND y1."ParentID" = x5."Value1"
 			FETCH NEXT :take ROWS ONLY
 		) t1
 WHERE

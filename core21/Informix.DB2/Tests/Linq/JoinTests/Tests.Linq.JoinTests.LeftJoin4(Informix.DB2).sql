@@ -16,7 +16,7 @@ FROM
 		WHERE
 			x5.ParentID = 1 AND x5.Value1 IS NOT NULL
 	) key_data_result
-		INNER JOIN Child y1 ON (y1.ParentID = key_data_result.ParentID AND y1.ParentID = key_data_result.Value1)
+		INNER JOIN Child y1 ON y1.ParentID = key_data_result.ParentID AND y1.ParentID = key_data_result.Value1
 
 BeforeExecute
 -- Informix.DB2 Informix

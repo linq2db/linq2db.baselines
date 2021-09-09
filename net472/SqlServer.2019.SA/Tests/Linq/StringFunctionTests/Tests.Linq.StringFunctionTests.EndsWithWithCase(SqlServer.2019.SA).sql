@@ -6,7 +6,8 @@ SELECT
 FROM
 	[Patient] [p]
 WHERE
-	([p].[Diagnosis] LIKE N'%Persecution' ESCAPE N'~' AND Convert(VarBinary(8000), RIGHT([p].[Diagnosis], 11)) = Convert(VarBinary(8000), N'Persecution')) AND
+	[p].[Diagnosis] LIKE N'%Persecution' ESCAPE N'~' AND
+	Convert(VarBinary(8000), RIGHT([p].[Diagnosis], 11)) = Convert(VarBinary(8000), N'Persecution') AND
 	[p].[PersonID] = 2
 
 BeforeExecute
@@ -28,7 +29,8 @@ SELECT
 FROM
 	[Patient] [p]
 WHERE
-	([p].[Diagnosis] LIKE N'%persecution' ESCAPE N'~' AND Convert(VarBinary(8000), RIGHT([p].[Diagnosis], 11)) = Convert(VarBinary(8000), N'persecution')) AND
+	[p].[Diagnosis] LIKE N'%persecution' ESCAPE N'~' AND
+	Convert(VarBinary(8000), RIGHT([p].[Diagnosis], 11)) = Convert(VarBinary(8000), N'persecution') AND
 	[p].[PersonID] = 2
 
 BeforeExecute

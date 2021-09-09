@@ -34,7 +34,8 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	([r].[CaseSensitive] LIKE '%stString' ESCAPE '~' AND Substr([r].[CaseSensitive], -8) = 'stString')
+	[r].[CaseSensitive] LIKE '%stString' ESCAPE '~' AND
+	Substr([r].[CaseSensitive], -8) = 'stString'
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -44,7 +45,8 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	([r].[CaseInsensitive] LIKE '%stString' ESCAPE '~' AND Substr([r].[CaseInsensitive], -8) = 'stString')
+	[r].[CaseInsensitive] LIKE '%stString' ESCAPE '~' AND
+	Substr([r].[CaseInsensitive], -8) = 'stString'
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -54,7 +56,8 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	([r].[CaseSensitive] LIKE '%ststring' ESCAPE '~' AND Substr([r].[CaseSensitive], -8) = 'ststring')
+	[r].[CaseSensitive] LIKE '%ststring' ESCAPE '~' AND
+	Substr([r].[CaseSensitive], -8) = 'ststring'
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -64,5 +67,6 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	([r].[CaseInsensitive] LIKE '%ststring' ESCAPE '~' AND Substr([r].[CaseInsensitive], -8) = 'ststring')
+	[r].[CaseInsensitive] LIKE '%ststring' ESCAPE '~' AND
+	Substr([r].[CaseInsensitive], -8) = 'ststring'
 
