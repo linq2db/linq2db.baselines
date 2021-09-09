@@ -107,8 +107,10 @@ FROM
 	element_services ie,
 	components cm
 WHERE
-	ie.id = 'TestProcessService' AND ie.id = component_categories.service_id AND
-	(component_categories.id = cm.category_id AND cm.is_deleted = False)
+	ie.id = 'TestProcessService' AND
+	ie.id = component_categories.service_id AND
+	component_categories.id = cm.category_id AND
+	cm.is_deleted = False
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
