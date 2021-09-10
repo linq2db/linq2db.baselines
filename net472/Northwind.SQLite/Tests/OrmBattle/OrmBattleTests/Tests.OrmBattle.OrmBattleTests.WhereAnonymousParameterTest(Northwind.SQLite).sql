@@ -104,5 +104,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	([o].[ShipCity] = @City AND [o].[ShipRegion] = @Region)
+	[o].[ShipCity] = @City AND [o].[ShipRegion] = @Region
 
