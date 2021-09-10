@@ -26,7 +26,7 @@ FROM
 	[Parent] [p]
 		CROSS APPLY (
 			SELECT
-				COUNT(*) as [c1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [c_1]
 			WHERE

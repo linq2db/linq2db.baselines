@@ -10,7 +10,9 @@ SELECT
 		FROM
 			"Child" ch
 		WHERE
-			ch."ParentID" < 2 AND (t1."ParentID" = ch."ParentID" + 1 AND t1."ChildID" = ch."ChildID") AND
+			ch."ParentID" < 2 AND
+			t1."ParentID" = ch."ParentID" + 1 AND
+			t1."ChildID" = ch."ChildID" AND
 			ch."ParentID" + 2 > :n
 	)
 FROM

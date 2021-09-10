@@ -1786,7 +1786,7 @@ DECLARE @Id1  -- Int32
 SET     @Id1 = 1
 
 SELECT
-	[lw_DetailClass].[Key_1],
+	[lw_DetailClass].[Id1],
 	[lw_DetailClass].[DetailId],
 	[detail_1].[SubDetailId],
 	[detail_1].[DetailId],
@@ -1795,7 +1795,7 @@ FROM
 	(
 		SELECT DISTINCT
 			[detail].[DetailId],
-			[lw_MasterClass].[Id1] as [Key_1]
+			[lw_MasterClass].[Id1]
 		FROM
 			(
 				SELECT DISTINCT

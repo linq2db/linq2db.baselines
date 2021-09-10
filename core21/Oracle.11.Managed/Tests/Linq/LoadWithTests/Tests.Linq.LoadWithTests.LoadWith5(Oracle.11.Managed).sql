@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	lw_Child."Key_1",
+	lw_Child."ParentID_1",
 	lw_Child."ParentID",
 	lw_Child."ChildID",
 	detail_1."ParentID",
@@ -17,7 +17,7 @@ FROM
 		SELECT DISTINCT
 			detail."ParentID",
 			detail."ChildID",
-			lw_Parent."ParentID" as "Key_1"
+			lw_Parent."ParentID" as "ParentID_1"
 		FROM
 			(
 				SELECT DISTINCT

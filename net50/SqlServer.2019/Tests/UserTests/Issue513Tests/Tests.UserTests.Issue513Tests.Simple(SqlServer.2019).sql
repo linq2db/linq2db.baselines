@@ -2,8 +2,8 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[InheritanceParentId],
 	[t1].[TypeDiscriminator],
+	[t1].[InheritanceParentId],
 	[t1].[Name]
 FROM
 	[InheritanceParent] [t1]
@@ -12,8 +12,8 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[t1].[InheritanceParentId],
 	[t1].[TypeDiscriminator],
+	[t1].[InheritanceParentId],
 	[t1].[Name]
 FROM
 	[InheritanceParent] [t1]
@@ -22,12 +22,12 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[InheritanceChildId],
-	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
+	[t1].[TypeDiscriminator],
+	[t1].[InheritanceChildId],
 	[t1].[Name],
-	[a_Parent].[InheritanceParentId],
 	[a_Parent].[TypeDiscriminator],
+	[a_Parent].[InheritanceParentId],
 	[a_Parent].[Name]
 FROM
 	[InheritanceChild] [t1]
@@ -37,9 +37,9 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[t1].[InheritanceChildId],
-	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
+	[t1].[TypeDiscriminator],
+	[t1].[InheritanceChildId],
 	[t1].[Name]
 FROM
 	[InheritanceChild] [t1]
