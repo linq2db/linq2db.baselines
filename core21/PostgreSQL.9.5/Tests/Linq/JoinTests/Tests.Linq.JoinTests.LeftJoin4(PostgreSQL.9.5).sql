@@ -18,7 +18,7 @@ FROM
 			FROM
 				"Child" y1
 			WHERE
-				(y1."ParentID" = x5."ParentID" AND y1."ParentID" = x5."Value1")
+				y1."ParentID" = x5."ParentID" AND y1."ParentID" = x5."Value1"
 			LIMIT :take
 		) t1 ON 1=1
 WHERE
