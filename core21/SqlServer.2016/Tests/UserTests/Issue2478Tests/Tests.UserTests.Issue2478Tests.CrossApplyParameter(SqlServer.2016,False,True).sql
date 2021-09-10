@@ -38,7 +38,8 @@ FROM
 			FROM
 				(
 					SELECT
-						1 as [Key_1]
+						1 as [Key_1],
+						[t].[ChildID]
 					FROM
 						[Child] [t]
 					WHERE
