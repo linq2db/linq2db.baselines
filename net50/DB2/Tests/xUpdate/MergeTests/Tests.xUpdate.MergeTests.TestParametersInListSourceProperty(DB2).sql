@@ -237,11 +237,9 @@ DECLARE @Field Time(6)
 SET     @Field = 00:12:00
 
 MERGE INTO "TestMerge1" "Target"
-USING (	VALUES
-		(3, @Field),
-		(4, @Field),
-		(5, @Field),
-		(6, @Field)) "Source"
+USING (VALUES
+	(3,@Field), (4,@Field), (5,@Field), (6,@Field)
+) "Source"
 (
 	"Id",
 	"Field"

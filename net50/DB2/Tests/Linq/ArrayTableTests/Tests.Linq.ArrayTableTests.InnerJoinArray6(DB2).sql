@@ -9,11 +9,9 @@ SELECT
 	"p"."Gender"
 FROM
 	"Person" "p"
-		INNER JOIN (
-			SELECT
-				'Doe' as "c1"
-			FROM SYSIBM.SYSDUMMY1
-		) "n" ON "p"."LastName" = "n"."c1"
+		INNER JOIN (VALUES
+			('Doe')
+		) "n"("item") ON "p"."LastName" = "n"."item"
 
 BeforeExecute
 -- SQLite.MS SQLite
