@@ -10,8 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT
-				'Doe' as "c1"
-			FROM rdb$database
-		) "n" ON "p"."LastName" = "n"."c1"
+			SELECT CAST('Doe' AS VarChar(255) CHARACTER SET UNICODE_FSS) AS "item" FROM rdb$database) "n" ON "p"."LastName" = "n"."item"
 

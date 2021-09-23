@@ -13,7 +13,8 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "ReviewIndexes" "Target"
-USING (	SELECT 1 FROM rdb$database) "Source"
+USING (
+	SELECT 1 AS "Id" FROM rdb$database) "Source"
 (
 	"Id"
 )
