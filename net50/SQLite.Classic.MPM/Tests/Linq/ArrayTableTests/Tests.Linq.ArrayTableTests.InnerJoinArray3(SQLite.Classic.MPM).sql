@@ -10,18 +10,11 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT
-				'Janet' as [c1]
+			SELECT NULL AS [item] WHERE 0
 			UNION ALL
-			SELECT
-				'Doe' as [c1]
-			UNION ALL
-			SELECT
-				'John' as [c1]
-			UNION ALL
-			SELECT
-				'Doe' as [c1]
-		) [t1] ON [p].[LastName] = [t1].[c1]
+			VALUES
+				('Janet'), ('Doe'), ('John'), ('Doe')
+			) [n] ON [p].[LastName] = [n].[item]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -35,16 +28,9 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT
-				'Janet' as [c1]
+			SELECT NULL AS [item] WHERE 0
 			UNION ALL
-			SELECT
-				'Doe' as [c1]
-			UNION ALL
-			SELECT
-				'John' as [c1]
-			UNION ALL
-			SELECT
-				'Doe1' as [c1]
-		) [t1] ON [p].[LastName] = [t1].[c1]
+			VALUES
+				('Janet'), ('Doe'), ('John'), ('Doe1')
+			) [n] ON [p].[LastName] = [n].[item]
 
