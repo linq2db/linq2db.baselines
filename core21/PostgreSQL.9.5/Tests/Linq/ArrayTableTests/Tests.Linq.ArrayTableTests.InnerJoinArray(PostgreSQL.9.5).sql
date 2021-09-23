@@ -9,17 +9,7 @@ SELECT
 	p."Gender"
 FROM
 	"Person" p
-		INNER JOIN (
-			SELECT
-				'Janet' as c1
-			UNION ALL
-			SELECT
-				'Doe' as c1
-			UNION ALL
-			SELECT
-				'John' as c1
-			UNION ALL
-			SELECT
-				'Doe' as c1
-		) t1 ON p."LastName" = t1.c1
+		INNER JOIN (VALUES
+			('Janet'), ('Doe'), ('John'), ('Doe')
+		) n(item) ON p."LastName" = n.item
 
