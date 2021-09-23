@@ -9,17 +9,7 @@ SELECT
 	[p].[Gender]
 FROM
 	[Person] [p]
-		INNER JOIN (
-			SELECT
-				N'Janet' as [c1]
-			UNION ALL
-			SELECT
-				N'Doe' as [c1]
-			UNION ALL
-			SELECT
-				N'John' as [c1]
-			UNION ALL
-			SELECT
-				N'Doe' as [c1]
-		) [t1] ON [p].[LastName] = [t1].[c1]
+		INNER JOIN (VALUES
+			(N'Janet'), (N'Doe'), (N'John'), (N'Doe')
+		) [n]([item]) ON [p].[LastName] = [n].[item]
 
