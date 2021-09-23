@@ -10,7 +10,9 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT
-				'Doe' as [c1]
-		) [n] ON [p].[LastName] = [n].[c1]
+			SELECT NULL AS [item] WHERE 0
+			UNION ALL
+			VALUES
+				('Doe')
+			) [n] ON [p].[LastName] = [n].[item]
 
