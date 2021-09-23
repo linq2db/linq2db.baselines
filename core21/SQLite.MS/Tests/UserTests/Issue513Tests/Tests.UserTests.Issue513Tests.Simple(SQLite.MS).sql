@@ -2,8 +2,8 @@
 -- SQLite.Default SQLite.MS SQLite
 
 SELECT
-	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
+	[t1].[TypeDiscriminator],
 	[t1].[Name]
 FROM
 	[InheritanceParent] [t1]
@@ -12,8 +12,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
+	[t1].[TypeDiscriminator],
 	[t1].[Name]
 FROM
 	[InheritanceParent] [t1]
@@ -26,8 +26,8 @@ SELECT
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceChildId],
 	[t1].[Name],
-	[a_Parent].[TypeDiscriminator],
 	[a_Parent].[InheritanceParentId],
+	[a_Parent].[TypeDiscriminator],
 	[a_Parent].[Name]
 FROM
 	[InheritanceChild] [t1]
