@@ -10,18 +10,13 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT
-				'Janet' as [c1]
+			SELECT 'Janet' AS [item]
 			UNION ALL
-			SELECT
-				'Doe' as [c1]
+			SELECT 'Doe' AS [item]
 			UNION ALL
-			SELECT
-				'John' as [c1]
+			SELECT 'John' AS [item]
 			UNION ALL
-			SELECT
-				'Doe' as [c1]
-		) [t1] ON [p].[LastName] = [t1].[c1]
+			SELECT 'Doe' AS [item]) [n] ON [p].[LastName] = [n].[item]
 
 BeforeExecute
 -- SQLite.Default SQLite.MS SQLite
