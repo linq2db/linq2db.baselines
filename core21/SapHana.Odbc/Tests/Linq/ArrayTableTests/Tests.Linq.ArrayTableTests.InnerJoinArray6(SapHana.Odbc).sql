@@ -10,8 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT
-				'Doe' as "c1"
-FROM DUMMY
-		) "n" ON "p"."LastName" = "n"."c1"
+			SELECT 'Doe' AS "item" FROM DUMMY) "n" ON "p"."LastName" = "n"."item"
 

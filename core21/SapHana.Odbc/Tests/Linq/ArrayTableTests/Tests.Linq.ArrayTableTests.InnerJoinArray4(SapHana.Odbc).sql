@@ -10,22 +10,13 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT
-				'Janet' as "c1"
-FROM DUMMY
+			SELECT 'Janet' AS "item" FROM DUMMY
 			UNION ALL
-			SELECT
-				'Doe' as "c1"
-FROM DUMMY
+			SELECT 'Doe' FROM DUMMY
 			UNION ALL
-			SELECT
-				'John' as "c1"
-FROM DUMMY
+			SELECT 'John' FROM DUMMY
 			UNION ALL
-			SELECT
-				'Doe' as "c1"
-FROM DUMMY
-		) "t1" ON "p"."LastName" = "t1"."c1"
+			SELECT 'Doe' FROM DUMMY) "n" ON "p"."LastName" = "n"."item"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -39,20 +30,11 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT
-				'Janet' as "c1"
-FROM DUMMY
+			SELECT 'Janet' AS "item" FROM DUMMY
 			UNION ALL
-			SELECT
-				'Doe1' as "c1"
-FROM DUMMY
+			SELECT 'Doe1' FROM DUMMY
 			UNION ALL
-			SELECT
-				'John' as "c1"
-FROM DUMMY
+			SELECT 'John' FROM DUMMY
 			UNION ALL
-			SELECT
-				'Doe' as "c1"
-FROM DUMMY
-		) "t1" ON "p"."LastName" = "t1"."c1"
+			SELECT 'Doe' FROM DUMMY) "n" ON "p"."LastName" = "n"."item"
 
