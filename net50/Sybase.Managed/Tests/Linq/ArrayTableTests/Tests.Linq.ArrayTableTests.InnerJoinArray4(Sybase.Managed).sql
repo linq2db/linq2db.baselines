@@ -10,18 +10,13 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT
-				'Janet' as [c1]
+			SELECT 'Janet' AS [item]
 			UNION ALL
-			SELECT
-				'Doe' as [c1]
+			SELECT 'Doe'
 			UNION ALL
-			SELECT
-				'John' as [c1]
+			SELECT 'John'
 			UNION ALL
-			SELECT
-				'Doe' as [c1]
-		) [t1] ON [p].[LastName] = [t1].[c1]
+			SELECT 'Doe') [n] ON [p].[LastName] = [n].[item]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -35,16 +30,11 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT
-				'Janet' as [c1]
+			SELECT 'Janet' AS [item]
 			UNION ALL
-			SELECT
-				'Doe1' as [c1]
+			SELECT 'Doe1'
 			UNION ALL
-			SELECT
-				'John' as [c1]
+			SELECT 'John'
 			UNION ALL
-			SELECT
-				'Doe' as [c1]
-		) [t1] ON [p].[LastName] = [t1].[c1]
+			SELECT 'Doe') [n] ON [p].[LastName] = [n].[item]
 
