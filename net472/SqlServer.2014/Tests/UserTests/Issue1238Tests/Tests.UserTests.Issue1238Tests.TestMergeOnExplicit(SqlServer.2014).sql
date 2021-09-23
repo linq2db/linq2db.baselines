@@ -9,8 +9,9 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 MERGE INTO [InheritanceParent] [Target]
-USING (	VALUES
-		(143, NULL, 1)) [Source]
+USING (VALUES
+	(143,NULL,1)
+) [Source]
 (
 	[Key1],
 	[Key2],
@@ -51,8 +52,9 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 MERGE INTO [InheritanceParent] [Target]
-USING (	VALUES
-		(143, NULL, 1)) [Source]
+USING (VALUES
+	(143,NULL,1)
+) [Source]
 (
 	[Key1],
 	[Key2],
