@@ -10,22 +10,13 @@ SELECT
 FROM
 	"Person" p
 		INNER JOIN (
-			SELECT
-				'Janet' as "c1"
-			FROM SYS.DUAL
+			SELECT 'Janet' AS "item" FROM sys.dual
 			UNION ALL
-			SELECT
-				'Doe' as "c1"
-			FROM SYS.DUAL
+			SELECT 'Doe' FROM sys.dual
 			UNION ALL
-			SELECT
-				'John' as "c1"
-			FROM SYS.DUAL
+			SELECT 'John' FROM sys.dual
 			UNION ALL
-			SELECT
-				'Doe' as "c1"
-			FROM SYS.DUAL
-		) t1 ON p."LastName" = t1."c1"
+			SELECT 'Doe' FROM sys.dual) n ON p."LastName" = n."item"
 
 BeforeExecute
 -- SQLite.Default SQLite.MS SQLite

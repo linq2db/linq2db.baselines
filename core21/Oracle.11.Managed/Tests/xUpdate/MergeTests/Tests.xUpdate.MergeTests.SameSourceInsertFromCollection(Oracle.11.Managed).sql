@@ -222,7 +222,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO "TestMerge1" Target
-USING (	SELECT 3 "Id", NULL "Field1", 3 "Field2", NULL "Field4" FROM sys.dual
+USING (
+	SELECT 3 AS "Id", NULL AS "Field1", 3 AS "Field2", NULL AS "Field4" FROM sys.dual
 	UNION ALL
 	SELECT 4, 5, 7, 214 FROM sys.dual
 	UNION ALL
