@@ -9,8 +9,7 @@ SELECT
 	[p].[Gender]
 FROM
 	[Person] [p]
-		INNER JOIN (
-			SELECT
-				N'Doe' as [c1]
-		) [n] ON [p].[LastName] = [n].[c1]
+		INNER JOIN (VALUES
+			(N'Doe')
+		) [n]([item]) ON [p].[LastName] = [n].[item]
 
