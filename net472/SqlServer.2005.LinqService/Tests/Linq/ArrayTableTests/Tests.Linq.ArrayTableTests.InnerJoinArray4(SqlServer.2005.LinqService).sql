@@ -10,18 +10,13 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT
-				N'Janet' as [c1]
+			SELECT N'Janet' AS [item]
 			UNION ALL
-			SELECT
-				N'Doe' as [c1]
+			SELECT N'Doe'
 			UNION ALL
-			SELECT
-				N'John' as [c1]
+			SELECT N'John'
 			UNION ALL
-			SELECT
-				N'Doe' as [c1]
-		) [t1] ON [p].[LastName] = [t1].[c1]
+			SELECT N'Doe') [n] ON [p].[LastName] = [n].[item]
 
 BeforeExecute
 -- SqlServer.2005
@@ -35,16 +30,11 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT
-				N'Janet' as [c1]
+			SELECT N'Janet' AS [item]
 			UNION ALL
-			SELECT
-				N'Doe1' as [c1]
+			SELECT N'Doe1'
 			UNION ALL
-			SELECT
-				N'John' as [c1]
+			SELECT N'John'
 			UNION ALL
-			SELECT
-				N'Doe' as [c1]
-		) [t1] ON [p].[LastName] = [t1].[c1]
+			SELECT N'Doe') [n] ON [p].[LastName] = [n].[item]
 
