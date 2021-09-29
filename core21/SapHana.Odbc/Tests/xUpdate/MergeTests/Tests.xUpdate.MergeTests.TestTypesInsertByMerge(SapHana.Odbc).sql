@@ -12,12 +12,12 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FieldTime  -- Time
-SET     @FieldTime = 09:44:34.6534321
-DECLARE @FieldTime_1  -- Time
-SET     @FieldTime_1 = 00:44:34.6414321
-DECLARE @FieldTime_2  -- Time
-SET     @FieldTime_2 = 00:00:00
+DECLARE @value  -- Time
+SET     @value = 09:44:34.6534321
+DECLARE @value_1  -- Time
+SET     @value_1 = 00:44:34.6414321
+DECLARE @value_2  -- Time
+SET     @value_2 = 00:00:00
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -79,14 +79,14 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FieldTime  -- Time
-SET     @FieldTime = 23:59:59.9999999
-DECLARE @FieldTime_1  -- Time
-SET     @FieldTime_1 = 14:44:33.2340000
-DECLARE @FieldTime_2  -- Time
-SET     @FieldTime_2 = 23:59:59.9999999
-DECLARE @FieldTime_3  -- Time
-SET     @FieldTime_3 = 22:44:33
+DECLARE @value  -- Time
+SET     @value = 23:59:59.9999999
+DECLARE @value_1  -- Time
+SET     @value_1 = 14:44:33.2340000
+DECLARE @value_2  -- Time
+SET     @value_2 = 23:59:59.9999999
+DECLARE @value_3  -- Time
+SET     @value_3 = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
 USING (
