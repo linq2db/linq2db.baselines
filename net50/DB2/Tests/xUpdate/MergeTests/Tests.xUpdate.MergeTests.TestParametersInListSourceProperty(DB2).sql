@@ -233,13 +233,15 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value Time(6)
-SET     @value = 00:12:00
+DECLARE @Field Time(6)
+SET     @Field = 00:12:00
 
 MERGE INTO "TestMerge1" "Target"
-USING (VALUES
-	(3,@value), (4,@value), (5,@value), (6,@value)
-) "Source"
+USING (	VALUES
+		(3, @Field),
+		(4, @Field),
+		(5, @Field),
+		(6, @Field)) "Source"
 (
 	"Id",
 	"Field"

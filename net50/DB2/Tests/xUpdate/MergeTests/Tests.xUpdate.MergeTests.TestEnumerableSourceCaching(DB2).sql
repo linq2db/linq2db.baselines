@@ -13,9 +13,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "CacheTestTable" "Target"
-USING (VALUES
-	(1,1), (2,2)
-) "Source"
+USING (	VALUES
+		(1, 1),
+		(2, 2)) "Source"
 (
 	"Id",
 	"Value_1"
@@ -54,9 +54,10 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "CacheTestTable" "Target"
-USING (VALUES
-	(1,1), (2,4), (3,3)
-) "Source"
+USING (	VALUES
+		(1, 1),
+		(2, 4),
+		(3, 3)) "Source"
 (
 	"Id",
 	"Value_1"
