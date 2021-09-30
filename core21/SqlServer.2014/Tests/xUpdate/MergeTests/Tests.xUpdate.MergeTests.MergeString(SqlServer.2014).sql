@@ -15,9 +15,8 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 MERGE INTO [AllTypes] [Target]
-USING (VALUES
-	(3,char(0),char(0),N'test' + char(0) + N'it')
-) [Source]
+USING (	VALUES
+		(3, char(0), char(0), N'test' + char(0) + N'it')) [Source]
 (
 	[ID],
 	[charDataType],
