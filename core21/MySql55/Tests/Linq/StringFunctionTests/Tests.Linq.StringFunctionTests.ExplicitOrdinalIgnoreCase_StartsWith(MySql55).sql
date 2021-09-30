@@ -35,7 +35,7 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	Lower(`r`.`CaseSensitive`) LIKE 'testst%' ESCAPE '~'
+	LOCATE('testst', Lower(`r`.`CaseSensitive`)) = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -45,7 +45,7 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	Lower(`r`.`CaseInsensitive`) LIKE 'testst%' ESCAPE '~'
+	LOCATE('testst', Lower(`r`.`CaseInsensitive`)) = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -55,7 +55,7 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	Lower(`r`.`CaseSensitive`) LIKE 'testst%' ESCAPE '~'
+	LOCATE('testst', Lower(`r`.`CaseSensitive`)) = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -65,5 +65,5 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	Lower(`r`.`CaseInsensitive`) LIKE 'testst%' ESCAPE '~'
+	LOCATE('testst', Lower(`r`.`CaseInsensitive`)) = 1
 
