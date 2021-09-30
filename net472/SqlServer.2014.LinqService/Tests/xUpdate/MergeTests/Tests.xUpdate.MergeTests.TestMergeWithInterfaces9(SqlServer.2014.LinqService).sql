@@ -13,9 +13,8 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 MERGE INTO [ReviewIndexes] [Target]
-USING (VALUES
-	(1,N'2')
-) [Source]
+USING (	VALUES
+		(1, N'2')) [Source]
 (
 	[Id],
 	[Value_1]
