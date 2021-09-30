@@ -57,12 +57,12 @@ CREATE TABLE `Flat`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @cpty_3 VarChar(3) -- String
-SET     @cpty_3 = '%C%'
-DECLARE @cpty_4 VarChar(3) -- String
-SET     @cpty_4 = '%C%'
-DECLARE @cpty_5 VarChar(3) -- String
-SET     @cpty_5 = '%C%'
+DECLARE @cpty VarChar(1) -- String
+SET     @cpty = 'C'
+DECLARE @cpty_1 VarChar(1) -- String
+SET     @cpty_1 = 'C'
+DECLARE @cpty_2 VarChar(1) -- String
+SET     @cpty_2 = 'C'
 
 SELECT
 	`al_1`.`alert`,
@@ -85,7 +85,7 @@ FROM
 		LEFT JOIN `Trade` `trade1` ON `al_1`.`alert` = Cast(`trade1`.`DealId` as CHAR(11))
 		LEFT JOIN `Nomin` `nomin1` ON `al_1`.`alert` = Cast(`nomin1`.`CargoId` as CHAR(11))
 WHERE
-	((`nomin1`.`DeliveryCounterParty` LIKE @cpty_3 ESCAPE '~' OR `trade1`.`CounterParty` LIKE @cpty_4 ESCAPE '~') OR `al_1`.`alert_1` LIKE @cpty_5 ESCAPE '~')
+	((LOCATE(@cpty, `nomin1`.`DeliveryCounterParty`) > 0 OR LOCATE(@cpty_1, `trade1`.`CounterParty`) > 0) OR LOCATE(@cpty_2, `al_1`.`alert_1`) > 0)
 GROUP BY
 	`al_1`.`alert`,
 	`al_1`.`alert_1`,
