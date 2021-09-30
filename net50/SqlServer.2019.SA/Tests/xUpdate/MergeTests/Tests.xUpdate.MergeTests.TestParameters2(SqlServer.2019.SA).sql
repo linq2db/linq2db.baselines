@@ -245,9 +245,11 @@ DECLARE @Val2 Int -- Int32
 SET     @Val2 = 2
 
 MERGE INTO [TestMerge1] [Target]
-USING (VALUES
-	(3), (4), (5), (6)
-) [Source]
+USING (	VALUES
+		(3),
+		(4),
+		(5),
+		(6)) [Source]
 (
 	[Id]
 )
