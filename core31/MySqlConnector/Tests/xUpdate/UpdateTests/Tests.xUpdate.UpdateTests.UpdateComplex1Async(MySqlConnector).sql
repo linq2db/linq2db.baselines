@@ -10,7 +10,7 @@ DELETE `t1`
 FROM
 	`Person` `t1`
 WHERE
-	`t1`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
+	LOCATE('UpdateComplex', `t1`.`FirstName`) = 1
 
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
@@ -111,5 +111,5 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
+	LOCATE('UpdateComplex', `_`.`FirstName`) = 1
 

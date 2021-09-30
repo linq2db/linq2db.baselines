@@ -11,7 +11,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN `p`.`FirstName` LIKE '%Jo%' ESCAPE '~'
+				WHEN LOCATE('Jo', `p`.`FirstName`) > 0
 					THEN 1
 				ELSE 0
 			END as `Field1`,
