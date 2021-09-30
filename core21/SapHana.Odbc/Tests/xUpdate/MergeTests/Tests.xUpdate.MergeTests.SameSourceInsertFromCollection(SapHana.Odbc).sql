@@ -222,8 +222,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "TestMerge1" "Target"
-USING (
-	SELECT 3 AS "Id", NULL AS "Field1", 3 AS "Field2", NULL AS "Field4" FROM DUMMY
+USING (	SELECT 3 "Id", NULL "Field1", 3 "Field2", NULL "Field4" FROM DUMMY
 	UNION ALL
 	SELECT 4, 5, 7, 214 FROM DUMMY
 	UNION ALL
