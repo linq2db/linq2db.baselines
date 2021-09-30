@@ -8,7 +8,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND @s LIKE '%n%' ESCAPE '~'
+	`p`.`PersonID` = 1 AND LOCATE('n', @s) > 0
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -20,5 +20,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND @s NOT LIKE '%n%' ESCAPE '~'
+	`p`.`PersonID` = 1 AND (LOCATE('n', @s) <= 0)
 

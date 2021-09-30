@@ -87,7 +87,7 @@ FROM
 WHERE
 	`s`.`Enabled` = 1 AND
 	`s`.`Enabled` IS NOT NULL AND
-	`s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
+	(LOCATE('level - ', `s`.`Name`) <> 1) AND
 	Char_Length(`s`.`ImageFullUrl`) > 0
 GROUP BY
 	`s`.`Name`
@@ -107,7 +107,7 @@ FROM
 WHERE
 	`s`.`Enabled` = 1 AND
 	`s`.`Enabled` IS NOT NULL AND
-	`s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
+	(LOCATE('level - ', `s`.`Name`) <> 1) AND
 	Char_Length(`s`.`ImageFullUrl`) > 0 AND
 	`s`.`Name` = @Name
 
@@ -126,7 +126,7 @@ FROM
 WHERE
 	`s`.`Enabled` = 1 AND
 	`s`.`Enabled` IS NOT NULL AND
-	`s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
+	(LOCATE('level - ', `s`.`Name`) <> 1) AND
 	Char_Length(`s`.`ImageFullUrl`) > 0 AND
 	`s`.`Name` = @Name
 

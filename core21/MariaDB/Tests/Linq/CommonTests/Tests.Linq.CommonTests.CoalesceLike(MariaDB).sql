@@ -35,11 +35,11 @@ WHERE
 		WHEN CASE
 			WHEN `p`.`FirstName` IS NULL
 				THEN NULL
-			ELSE `p`.`FirstName` LIKE 'Jo%' ESCAPE '~'
+			ELSE LOCATE('Jo', `p`.`FirstName`) = 1
 		END IS NULL
 			THEN 0
 		WHEN `p`.`FirstName` IS NULL
 			THEN NULL
-		ELSE `p`.`FirstName` LIKE 'Jo%' ESCAPE '~'
+		ELSE LOCATE('Jo', `p`.`FirstName`) = 1
 	END = 1
 
