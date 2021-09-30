@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "PKOnlyTable"';
+	EXECUTE IMMEDIATE 'DROP TABLE "TableToInsert"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -15,11 +15,12 @@ BeforeExecute
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "PKOnlyTable"
+		CREATE TABLE "TableToInsert"
 		(
-			ID Int NOT NULL,
+			"Id"    Int          NOT NULL,
+			"Value" VarChar(255)     NULL,
 
-			CONSTRAINT "PK_PKOnlyTable" PRIMARY KEY (ID)
+			CONSTRAINT "PK_TableToInsert" PRIMARY KEY ("Id")
 		)
 	';
 EXCEPTION
@@ -33,46 +34,34 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO "PKOnlyTable" (ID) VALUES (2)
+	INTO "TableToInsert" ("Id", "Value") VALUES (3,'Janet')
+	INTO "TableToInsert" ("Id", "Value") VALUES (4,'Doe')
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-MERGE INTO "PKOnlyTable" Target
-USING (
-	SELECT 1 AS ID FROM sys.dual
-	UNION ALL
-	SELECT 2 FROM sys.dual
-	UNION ALL
-	SELECT 3 FROM sys.dual) "Source"
-ON (Target.ID = "Source".ID)
-
-WHEN NOT MATCHED THEN
-INSERT
-(
-	ID
-)
-VALUES
-(
-	"Source".ID
-)
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SELECT
-	t1.ID
-FROM
-	"PKOnlyTable" t1
-ORDER BY
-	t1.ID
+DELETE FROM
+	"TableToInsert" t1
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"TableToInsert" t
+				INNER JOIN (
+					SELECT 3 AS "Id" FROM sys.dual
+					UNION ALL
+					SELECT 4 FROM sys.dual) r ON t."Id" = r."Id"
+		WHERE
+			t1."Id" = t."Id"
+	)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "PKOnlyTable"';
+	EXECUTE IMMEDIATE 'DROP TABLE "TableToInsert"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
