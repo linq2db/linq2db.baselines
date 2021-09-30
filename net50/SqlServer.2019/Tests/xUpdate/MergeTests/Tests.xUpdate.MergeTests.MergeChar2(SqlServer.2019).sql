@@ -2,8 +2,9 @@
 -- SqlServer.2019 SqlServer.2017
 
 MERGE INTO [AllTypes] [Target]
-USING (	VALUES
-		(10, char(0), char(0), NULL)) [Source]
+USING (VALUES
+	(10,char(0),char(0),NULL)
+) [Source]
 (
 	[ID],
 	[charDataType],

@@ -22,9 +22,9 @@ BeforeExecute
 -- SQLite.Default SQLite.MS SQLite
 
 SELECT
+	[t1].[InheritanceParentId],
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceChildId],
-	[t1].[InheritanceParentId],
 	[t1].[Name],
 	[a_Parent].[TypeDiscriminator],
 	[a_Parent].[InheritanceParentId],
@@ -37,9 +37,9 @@ BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
+	"t1"."InheritanceParentId",
 	"t1"."TypeDiscriminator",
 	"t1"."InheritanceChildId",
-	"t1"."InheritanceParentId",
 	"t1"."Name"
 FROM
 	"InheritanceChild" "t1"

@@ -222,11 +222,10 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestMerge1" "Target"
-USING (	VALUES
-		(3, NULL, NULL, 3, NULL, 113),
-		(4, 5, NULL, 7, 214, NULL),
-		(5, 10, 315, 4, NULL, NULL),
-		(6, NULL, 316, NULL, 216, 116)) "Source"
+USING (VALUES
+	(3,NULL,NULL,3,NULL,113), (4,5,NULL,7,214,NULL),
+	(5,10,315,4,NULL,NULL), (6,NULL,316,NULL,216,116)
+) "Source"
 (
 	"OtherId",
 	"OtherField1",

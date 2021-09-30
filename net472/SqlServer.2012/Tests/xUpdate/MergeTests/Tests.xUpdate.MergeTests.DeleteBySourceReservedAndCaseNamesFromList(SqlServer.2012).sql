@@ -237,11 +237,9 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [TestMerge1] [Target]
-USING (	VALUES
-		(3),
-		(4),
-		(5),
-		(6)) [Source]
+USING (VALUES
+	(3), (4), (5), (6)
+) [Source]
 (
 	[INSERT_1]
 )
