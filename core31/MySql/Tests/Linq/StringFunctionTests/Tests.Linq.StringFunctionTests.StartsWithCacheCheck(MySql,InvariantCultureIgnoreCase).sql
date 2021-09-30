@@ -13,22 +13,27 @@ LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @nameToCheck_1 VarChar(3) -- String
+SET     @nameToCheck_1 = 'joh'
 
 SELECT
 	Count(*)
 FROM
 	`Person` `p`
 WHERE
-	Lower(`p`.`FirstName`) LIKE 'joh%' ESCAPE '~' AND `p`.`PersonID` = 1
+	LOCATE(@nameToCheck_1, Lower(`p`.`FirstName`)) = 1 AND
+	`p`.`PersonID` = 1
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @nameToCheck_1 VarChar(3) -- String
+SET     @nameToCheck_1 = 'joh'
 
 SELECT
 	Count(*)
 FROM
 	`Person` `p`
 WHERE
-	Lower(`p`.`FirstName`) NOT LIKE 'joh%' ESCAPE '~' AND
+	(LOCATE(@nameToCheck_1, Lower(`p`.`FirstName`)) <> 1) AND
 	`p`.`PersonID` = 1
 

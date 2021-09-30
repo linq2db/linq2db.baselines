@@ -6,7 +6,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` LIKE '%Joh%' ESCAPE '~' AND `p`.`PersonID` = 1
+	LOCATE('Joh', `p`.`FirstName`) > 0 AND `p`.`PersonID` = 1
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -16,5 +16,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` NOT LIKE '%Joh%' ESCAPE '~' AND `p`.`PersonID` = 1
+	(LOCATE('Joh', `p`.`FirstName`) <= 0) AND `p`.`PersonID` = 1
 
