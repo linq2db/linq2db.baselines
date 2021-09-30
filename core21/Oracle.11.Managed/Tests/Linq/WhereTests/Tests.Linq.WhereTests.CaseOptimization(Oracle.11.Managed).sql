@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "PKOnlyTable"';
+	EXECUTE IMMEDIATE 'DROP TABLE "WhereWithString"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -15,11 +15,12 @@ BeforeExecute
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "PKOnlyTable"
+		CREATE TABLE "WhereWithString"
 		(
-			ID Int NOT NULL,
+			"Id"          Int          NOT NULL,
+			"StringValue" VarChar(255)     NULL,
 
-			CONSTRAINT "PK_PKOnlyTable" PRIMARY KEY (ID)
+			CONSTRAINT "PK_WhereWithString" PRIMARY KEY ("Id")
 		)
 	';
 EXCEPTION
@@ -33,45 +34,25 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO "PKOnlyTable" (ID) VALUES (2)
+	INTO "WhereWithString" ("Id", "StringValue") VALUES (1,'Str1')
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-MERGE INTO "PKOnlyTable" Target
-USING (	SELECT 1 ID FROM sys.dual
-	UNION ALL
-	SELECT 2 FROM sys.dual
-	UNION ALL
-	SELECT 3 FROM sys.dual) "Source"
-ON (Target.ID = "Source".ID)
-
-WHEN NOT MATCHED THEN
-INSERT
-(
-	ID
-)
-VALUES
-(
-	"Source".ID
-)
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
 SELECT
-	t1.ID
+	x."Id",
+	x."StringValue"
 FROM
-	"PKOnlyTable" t1
-ORDER BY
-	t1.ID
+	"WhereWithString" x
+WHERE
+	x."StringValue" LIKE '%Str%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "PKOnlyTable"';
+	EXECUTE IMMEDIATE 'DROP TABLE "WhereWithString"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
