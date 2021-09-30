@@ -2,9 +2,8 @@
 -- SqlServer.2012
 
 MERGE INTO [AllTypes] [Target]
-USING (VALUES
-	(10,char(0),char(0))
-) [Source]
+USING (	VALUES
+		(10, char(0), char(0))) [Source]
 (
 	[ID],
 	[charDataType],
