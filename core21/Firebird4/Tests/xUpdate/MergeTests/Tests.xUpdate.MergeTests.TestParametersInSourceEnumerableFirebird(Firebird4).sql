@@ -233,18 +233,17 @@ FROM
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @value Time
-SET     @value = 00:05:00
+DECLARE @Val Time
+SET     @Val = 00:05:00
 
 MERGE INTO "TestMerge1" "Target"
-USING (
-	SELECT 3 AS "Id", CAST(@value AS Time) AS "Val" FROM rdb$database
+USING (	SELECT 3, CAST(@Val AS Time) FROM rdb$database
 	UNION ALL
-	SELECT 4, CAST(@value AS Time) FROM rdb$database
+	SELECT 4, CAST(@Val AS Time) FROM rdb$database
 	UNION ALL
-	SELECT 5, CAST(@value AS Time) FROM rdb$database
+	SELECT 5, CAST(@Val AS Time) FROM rdb$database
 	UNION ALL
-	SELECT 6, CAST(@value AS Time) FROM rdb$database) "Source"
+	SELECT 6, CAST(@Val AS Time) FROM rdb$database) "Source"
 (
 	"Id",
 	"Val"

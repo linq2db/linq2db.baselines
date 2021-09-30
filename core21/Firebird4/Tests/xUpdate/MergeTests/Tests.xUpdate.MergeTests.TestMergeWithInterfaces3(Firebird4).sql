@@ -13,8 +13,7 @@ BeforeExecute
 -- Firebird4 Firebird
 
 MERGE INTO "ReviewIndexes" "Target"
-USING (
-	SELECT 1 AS "Id", CAST('2' AS VARCHAR(1)) AS "Value_1" FROM rdb$database) "Source"
+USING (	SELECT 1, CAST('2' AS VARCHAR(1)) FROM rdb$database) "Source"
 (
 	"Id",
 	"Value_1"
