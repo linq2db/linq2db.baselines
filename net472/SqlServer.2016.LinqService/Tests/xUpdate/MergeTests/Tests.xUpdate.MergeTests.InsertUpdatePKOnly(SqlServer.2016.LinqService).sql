@@ -32,10 +32,9 @@ BeforeExecute
 -- SqlServer.2016
 
 MERGE INTO [PKOnlyTable] [Target]
-USING (	VALUES
-		(1),
-		(2),
-		(3)) [Source]
+USING (VALUES
+	(1), (2), (3)
+) [Source]
 (
 	[ID]
 )
