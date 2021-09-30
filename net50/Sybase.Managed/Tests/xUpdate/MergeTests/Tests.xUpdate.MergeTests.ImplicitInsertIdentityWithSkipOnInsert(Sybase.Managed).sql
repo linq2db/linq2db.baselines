@@ -31,8 +31,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMergeIdentity] [Target]
-USING (
-	SELECT 22 AS [Field]
+USING (	SELECT 22
 	UNION ALL
 	SELECT 23) [Source]
 (

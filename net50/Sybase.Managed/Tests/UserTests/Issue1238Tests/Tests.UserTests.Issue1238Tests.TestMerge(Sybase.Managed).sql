@@ -9,8 +9,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [InheritanceParent] [Target]
-USING (
-	SELECT 143 AS [Key1], NULL AS [Key2], 1 AS [Data_1]) [Source]
+USING (	SELECT 143, NULL, 1) [Source]
 (
 	[Key1],
 	[Key2],
@@ -50,8 +49,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [InheritanceParent] [Target]
-USING (
-	SELECT 143 AS [Key1], NULL AS [Key2], 1 AS [Data_1]) [Source]
+USING (	SELECT 143, NULL, 1) [Source]
 (
 	[Key1],
 	[Key2],

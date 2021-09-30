@@ -224,8 +224,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
-USING (
-	SELECT 3 AS [OtherId], NULL AS [OtherField1], NULL AS [OtherField5], 3 AS [OtherField2], NULL AS [OtherField4], 113 AS [OtherField3]
+USING (	SELECT 3, NULL, NULL, 3, NULL, 113
 	UNION ALL
 	SELECT 4, 5, NULL, 7, 214, NULL
 	UNION ALL
