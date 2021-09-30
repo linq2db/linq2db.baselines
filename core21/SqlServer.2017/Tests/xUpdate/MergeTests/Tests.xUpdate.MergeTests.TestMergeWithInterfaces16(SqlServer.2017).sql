@@ -13,9 +13,8 @@ BeforeExecute
 -- SqlServer.2017
 
 MERGE INTO [ReviewIndexes] [Target]
-USING (VALUES
-	(1)
-) [Source]
+USING (	VALUES
+		(1)) [Source]
 (
 	[Id]
 )
