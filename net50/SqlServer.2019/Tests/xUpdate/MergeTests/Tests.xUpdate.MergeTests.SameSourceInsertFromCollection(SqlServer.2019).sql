@@ -224,9 +224,11 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 MERGE INTO [TestMerge1] [Target]
-USING (VALUES
-	(3,NULL,3,NULL), (4,5,7,214), (5,10,4,NULL), (6,NULL,NULL,216)
-) [Source]
+USING (	VALUES
+		(3, NULL, 3, NULL),
+		(4, 5, 7, 214),
+		(5, 10, 4, NULL),
+		(6, NULL, NULL, 216)) [Source]
 (
 	[Id],
 	[Field1],
