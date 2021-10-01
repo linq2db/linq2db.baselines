@@ -10,9 +10,9 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 3 AS `PersonID`
+			SELECT 3 AS `PersonID` FROM DUAL
 			UNION ALL
-			SELECT 4) `n` ON `p`.`PersonID` = `n`.`PersonID`
+			SELECT 4 FROM DUAL) `n` ON `p`.`PersonID` = `n`.`PersonID`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -26,7 +26,7 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 5 AS `PersonID`
+			SELECT 5 AS `PersonID` FROM DUAL
 			UNION ALL
-			SELECT 6) `n` ON `p`.`PersonID` = `n`.`PersonID`
+			SELECT 6 FROM DUAL) `n` ON `p`.`PersonID` = `n`.`PersonID`
 

@@ -10,7 +10,7 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 'Janet' AS `Name`
+			SELECT 'Janet' AS `Name` FROM DUAL
 			UNION ALL
-			SELECT 'Doe') `n` ON `p`.`LastName` = `n`.`Name`
+			SELECT 'Doe' FROM DUAL) `n` ON `p`.`LastName` = `n`.`Name`
 

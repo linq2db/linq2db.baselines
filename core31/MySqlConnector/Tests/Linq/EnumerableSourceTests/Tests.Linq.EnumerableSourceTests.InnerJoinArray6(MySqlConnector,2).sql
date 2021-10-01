@@ -10,5 +10,5 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 'Doe' AS `item`) `n` ON `p`.`LastName` = `n`.`item`
+			SELECT 'Doe' AS `item` FROM DUAL) `n` ON `p`.`LastName` = `n`.`item`
 

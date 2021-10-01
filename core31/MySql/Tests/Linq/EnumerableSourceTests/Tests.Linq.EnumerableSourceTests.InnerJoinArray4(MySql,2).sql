@@ -10,13 +10,13 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 'Janet' AS `item`
+			SELECT 'Janet' AS `item` FROM DUAL
 			UNION ALL
-			SELECT 'Doe'
+			SELECT 'Doe' FROM DUAL
 			UNION ALL
-			SELECT 'John'
+			SELECT 'John' FROM DUAL
 			UNION ALL
-			SELECT 'Doe') `n` ON `p`.`LastName` = `n`.`item`
+			SELECT 'Doe' FROM DUAL) `n` ON `p`.`LastName` = `n`.`item`
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -30,11 +30,11 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 'Janet' AS `item`
+			SELECT 'Janet' AS `item` FROM DUAL
 			UNION ALL
-			SELECT 'Doe1'
+			SELECT 'Doe1' FROM DUAL
 			UNION ALL
-			SELECT 'John'
+			SELECT 'John' FROM DUAL
 			UNION ALL
-			SELECT 'Doe') `n` ON `p`.`LastName` = `n`.`item`
+			SELECT 'Doe' FROM DUAL) `n` ON `p`.`LastName` = `n`.`item`
 

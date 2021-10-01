@@ -40,9 +40,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 3 AS `Id`, 'Janet' AS `Value`
+				SELECT 3 AS `Id`, 'Janet' AS `Value` FROM DUAL
 				UNION ALL
-				SELECT 4, 'Doe') `t1`
+				SELECT 4, 'Doe' FROM DUAL) `t1`
 		WHERE
 			`t`.`Id` = `t1`.`Id` AND (`t`.`Value` = `t1`.`Value` OR `t`.`Value` IS NULL AND `t1`.`Value` IS NULL)
 	)

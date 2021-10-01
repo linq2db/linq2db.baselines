@@ -33,9 +33,9 @@ DELETE `t`
 FROM
 	`TableToInsert` `t`
 		INNER JOIN (
-			SELECT 3 AS `Id`
+			SELECT 3 AS `Id` FROM DUAL
 			UNION ALL
-			SELECT 4) `r` ON `t`.`Id` = `r`.`Id`
+			SELECT 4 FROM DUAL) `r` ON `t`.`Id` = `r`.`Id`
 
 BeforeExecute
 -- MySqlConnector MySql

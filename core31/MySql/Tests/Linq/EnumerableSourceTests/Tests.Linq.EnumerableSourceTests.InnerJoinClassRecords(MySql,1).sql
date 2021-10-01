@@ -10,7 +10,7 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 1 AS `PersonID`
+			SELECT 1 AS `PersonID` FROM DUAL
 			UNION ALL
-			SELECT 2) `n` ON `p`.`PersonID` = `n`.`PersonID`
+			SELECT 2 FROM DUAL) `n` ON `p`.`PersonID` = `n`.`PersonID`
 

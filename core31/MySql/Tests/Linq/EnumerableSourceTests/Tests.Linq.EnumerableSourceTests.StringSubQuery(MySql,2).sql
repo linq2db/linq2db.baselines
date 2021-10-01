@@ -15,13 +15,13 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 'j' AS `item`
+				SELECT 'j' AS `item` FROM DUAL
 				UNION ALL
-				SELECT 'o'
+				SELECT 'o' FROM DUAL
 				UNION ALL
-				SELECT 'h'
+				SELECT 'h' FROM DUAL
 				UNION ALL
-				SELECT 'n') `t1`
+				SELECT 'n' FROM DUAL) `t1`
 		WHERE
 			Locate(`t1`.`item`, `t`.`FirstName`) - 1 > 0
 	)
