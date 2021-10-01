@@ -10,5 +10,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	LOCATE('Jo', `p`.`FirstName`) = 1 AND `p`.`PersonID` = 1
+	`p`.`FirstName` LIKE 'Jo%' ESCAPE '~' AND `p`.`PersonID` = 1
 

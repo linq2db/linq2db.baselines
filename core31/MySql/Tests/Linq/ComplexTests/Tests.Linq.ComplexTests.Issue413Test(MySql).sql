@@ -173,8 +173,8 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @cond VarChar(3) -- String
-SET     @cond = 'aaa'
+DECLARE @cond_1 VarChar(4) -- String
+SET     @cond_1 = 'aaa%'
 DECLARE @uptoDate DateTime
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
@@ -190,7 +190,7 @@ FROM
 				INNER JOIN `T3` `w` ON `idx`.`IndexId` = `w`.`IndexId`
 				INNER JOIN `T1` `ins` ON `w`.`InstrumentId` = `ins`.`InstrumentId`
 		WHERE
-			`ins`.`SourceInstrumentCode` IS NOT NULL AND LOCATE(@cond, `_`.`InstrumentCode`) = 1 AND
+			`ins`.`SourceInstrumentCode` IS NOT NULL AND `_`.`InstrumentCode` LIKE @cond_1 ESCAPE '~' AND
 			`_`.`CreateDate` <= @uptoDate
 	) `t4`
 ORDER BY

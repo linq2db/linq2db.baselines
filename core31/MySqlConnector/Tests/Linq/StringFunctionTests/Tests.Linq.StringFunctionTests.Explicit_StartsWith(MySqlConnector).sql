@@ -26,7 +26,7 @@ SELECT
 FROM
 	`Patient` `r`
 WHERE
-	LOCATE('hall', Lower(`r`.`Diagnosis`)) = 1
+	Lower(Lower(`r`.`Diagnosis`)) LIKE 'hall%' ESCAPE '~'
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -36,5 +36,5 @@ SELECT
 FROM
 	`Patient` `r`
 WHERE
-	LOCATE('hall', Lower(`r`.`Diagnosis`)) = 1
+	Lower(Lower(`r`.`Diagnosis`)) LIKE 'hall%' ESCAPE '~'
 

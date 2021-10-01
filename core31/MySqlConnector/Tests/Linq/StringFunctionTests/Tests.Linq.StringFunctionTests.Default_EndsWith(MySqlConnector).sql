@@ -35,7 +35,7 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	LOCATE('stString', `r`.`CaseSensitive`, Length(`r`.`CaseSensitive`) - 7) = (Length(`r`.`CaseSensitive`) - 7)
+	`r`.`CaseSensitive` LIKE '%stString' ESCAPE '~'
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -45,7 +45,7 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	LOCATE('stString', `r`.`CaseInsensitive`, Length(`r`.`CaseInsensitive`) - 7) = (Length(`r`.`CaseInsensitive`) - 7)
+	`r`.`CaseInsensitive` LIKE '%stString' ESCAPE '~'
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -55,7 +55,7 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	LOCATE('ststring', `r`.`CaseSensitive`, Length(`r`.`CaseSensitive`) - 7) = (Length(`r`.`CaseSensitive`) - 7)
+	`r`.`CaseSensitive` LIKE '%ststring' ESCAPE '~'
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -65,5 +65,5 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	LOCATE('ststring', `r`.`CaseInsensitive`, Length(`r`.`CaseInsensitive`) - 7) = (Length(`r`.`CaseInsensitive`) - 7)
+	`r`.`CaseInsensitive` LIKE '%ststring' ESCAPE '~'
 

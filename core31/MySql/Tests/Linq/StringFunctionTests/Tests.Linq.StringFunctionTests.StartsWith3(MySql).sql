@@ -12,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	LOCATE(`p`.`FirstName`, @str) = 1
+	@str LIKE Concat(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(`p`.`FirstName`, '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]'), '%') ESCAPE '~'
 

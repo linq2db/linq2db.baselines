@@ -13,27 +13,23 @@ LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @nameToCheck_1 VarChar(3) -- String
-SET     @nameToCheck_1 = 'joh'
 
 SELECT
 	Count(*)
 FROM
 	`Person` `p`
 WHERE
-	LOCATE(@nameToCheck_1, Lower(`p`.`FirstName`)) = 1 AND
+	Lower(Lower(`p`.`FirstName`)) LIKE 'joh%' ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @nameToCheck_1 VarChar(3) -- String
-SET     @nameToCheck_1 = 'joh'
 
 SELECT
 	Count(*)
 FROM
 	`Person` `p`
 WHERE
-	(LOCATE(@nameToCheck_1, Lower(`p`.`FirstName`)) <> 1) AND
+	Lower(Lower(`p`.`FirstName`)) NOT LIKE 'joh%' ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
