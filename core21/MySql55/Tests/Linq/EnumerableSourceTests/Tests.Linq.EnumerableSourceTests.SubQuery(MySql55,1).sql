@@ -23,19 +23,38 @@ INSERT INTO `TableToInsert`
 	`Value`
 )
 VALUES
-(3,'Janet'),
-(4,'Doe')
+(2,'Janet'),
+(3,'Doe')
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DELETE `t`
+SELECT
+	`t`.`Id`,
+	`t`.`Value`
 FROM
 	`TableToInsert` `t`
-		INNER JOIN (
-			SELECT 3 AS `Id` FROM DUAL
-			UNION ALL
-			SELECT 4 FROM DUAL) `r` ON `t`.`Id` = `r`.`Id`
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			(
+				SELECT 2 AS `Id`, 'Janet' AS `Value` FROM DUAL
+				UNION ALL
+				SELECT 3, 'Doe' FROM DUAL) `t1`
+		WHERE
+			`t`.`Id` = `t1`.`Id` AND (`t`.`Value` = `t1`.`Value` OR `t`.`Value` IS NULL AND `t1`.`Value` IS NULL)
+	)
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`TableToInsert` `t1`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
