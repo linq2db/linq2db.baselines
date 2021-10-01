@@ -3,17 +3,7 @@
 
 SELECT
 	[_].[PersonID],
-	[_].[LastName],
-	IIF(EXISTS(
-		SELECT
-			*
-		FROM
-			(VALUES
-				(1), (3)
-			) [t1]([item])
-		WHERE
-			[t1].[item] = [_].[PersonID]
-	), 1, 0)
+	[_].[LastName]
 FROM
 	[Person] [_]
 ORDER BY
