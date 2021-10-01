@@ -26,7 +26,7 @@ SELECT
 FROM
 	`Patient` `r`
 WHERE
-	Lower(Lower(`r`.`Diagnosis`)) LIKE 'hall%' ESCAPE '~'
+	Lower(`r`.`Diagnosis`) LIKE 'hall%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -36,5 +36,5 @@ SELECT
 FROM
 	`Patient` `r`
 WHERE
-	Lower(Lower(`r`.`Diagnosis`)) LIKE 'hall%' ESCAPE '~'
+	Lower(`r`.`Diagnosis`) LIKE 'hall%' ESCAPE '~'
 

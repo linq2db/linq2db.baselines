@@ -19,8 +19,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Lower(Lower(`p`.`FirstName`)) LIKE 'joh%' ESCAPE '~' AND
-	`p`.`PersonID` = 1
+	Lower(`p`.`FirstName`) LIKE 'joh%' ESCAPE '~' AND `p`.`PersonID` = 1
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -30,6 +29,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Lower(Lower(`p`.`FirstName`)) NOT LIKE 'joh%' ESCAPE '~' AND
+	Lower(`p`.`FirstName`) NOT LIKE 'joh%' ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
