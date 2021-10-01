@@ -29,14 +29,23 @@ VALUES
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-UPDATE
+SELECT
+	`t`.`Id`,
+	`t`.`Value`
+FROM
 	`TableToInsert` `t`
-		INNER JOIN (
-			SELECT 2 AS `Id`, 'Janet Updated' AS `Value` FROM DUAL
-			UNION ALL
-			SELECT 3, 'Doe Updated' FROM DUAL) `r` ON `t`.`Id` = `r`.`Id`
-SET
-	`t`.`Value` = `r`.`Value`
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			(
+				SELECT 2 AS `Id`, 'Janet' AS `Value` FROM DUAL
+				UNION ALL
+				SELECT 3, 'Doe' FROM DUAL) `t1`
+		WHERE
+			`t`.`Id` = `t1`.`Id` AND (`t`.`Value` = `t1`.`Value` OR `t`.`Value` IS NULL AND `t1`.`Value` IS NULL)
+	)
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

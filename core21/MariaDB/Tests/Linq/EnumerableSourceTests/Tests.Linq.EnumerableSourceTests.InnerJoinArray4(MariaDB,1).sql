@@ -10,9 +10,13 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 3 AS `PersonID` FROM DUAL
+			SELECT 'Janet' AS `item` FROM DUAL
 			UNION ALL
-			SELECT 4 FROM DUAL) `n` ON `p`.`PersonID` = `n`.`PersonID`
+			SELECT 'Doe' FROM DUAL
+			UNION ALL
+			SELECT 'John' FROM DUAL
+			UNION ALL
+			SELECT 'Doe' FROM DUAL) `n` ON `p`.`LastName` = `n`.`item`
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -26,7 +30,11 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 5 AS `PersonID` FROM DUAL
+			SELECT 'Janet' AS `item` FROM DUAL
 			UNION ALL
-			SELECT 6 FROM DUAL) `n` ON `p`.`PersonID` = `n`.`PersonID`
+			SELECT 'Doe1' FROM DUAL
+			UNION ALL
+			SELECT 'John' FROM DUAL
+			UNION ALL
+			SELECT 'Doe' FROM DUAL) `n` ON `p`.`LastName` = `n`.`item`
 
