@@ -5,7 +5,7 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	LOCATE('Insert15', `_`.`FirstName`) = 1
+	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -41,7 +41,7 @@ SELECT
 FROM
 	`Person` `_`
 WHERE
-	LOCATE('Insert15', `_`.`FirstName`) = 1
+	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -50,5 +50,5 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	LOCATE('Insert15', `_`.`FirstName`) = 1
+	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 

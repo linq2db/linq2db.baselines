@@ -6,8 +6,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	LOCATE('JOHN', `p`.`FirstName`, Length(`p`.`FirstName`) - 3) = (Length(`p`.`FirstName`) - 3) AND
-	`p`.`PersonID` = 1
+	`p`.`FirstName` LIKE '%JOHN' ESCAPE '~' AND `p`.`PersonID` = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -17,6 +16,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	(LOCATE('JOHN', `p`.`FirstName`, Length(`p`.`FirstName`) - 3) <> (Length(`p`.`FirstName`) - 3)) AND
-	`p`.`PersonID` = 1
+	`p`.`FirstName` NOT LIKE '%JOHN' ESCAPE '~' AND `p`.`PersonID` = 1
 

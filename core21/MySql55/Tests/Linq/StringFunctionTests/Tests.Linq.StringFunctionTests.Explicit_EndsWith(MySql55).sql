@@ -26,7 +26,7 @@ SELECT
 FROM
 	`Patient` `r`
 WHERE
-	LOCATE('persecution', Lower(`r`.`Diagnosis`), Length(`r`.`Diagnosis`) - 10) = (Length(`r`.`Diagnosis`) - 10)
+	Lower(Lower(`r`.`Diagnosis`)) LIKE '%persecution' ESCAPE '~'
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -36,5 +36,5 @@ SELECT
 FROM
 	`Patient` `r`
 WHERE
-	LOCATE('persecution', Lower(`r`.`Diagnosis`), Length(`r`.`Diagnosis`) - 10) = (Length(`r`.`Diagnosis`) - 10)
+	Lower(Lower(`r`.`Diagnosis`)) LIKE '%persecution' ESCAPE '~'
 

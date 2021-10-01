@@ -10,7 +10,7 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	LOCATE('UpdateComplex', `_`.`FirstName`) = 1
+	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -111,5 +111,5 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	LOCATE('UpdateComplex', `_`.`FirstName`) = 1
+	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
