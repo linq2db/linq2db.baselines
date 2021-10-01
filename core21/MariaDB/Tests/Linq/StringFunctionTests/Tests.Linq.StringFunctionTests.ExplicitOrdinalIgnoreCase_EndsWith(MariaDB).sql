@@ -35,7 +35,7 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	LOCATE('ststring', Lower(`r`.`CaseSensitive`), Length(`r`.`CaseSensitive`) - 7) = (Length(`r`.`CaseSensitive`) - 7)
+	Lower(Lower(`r`.`CaseSensitive`)) LIKE '%ststring' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -45,7 +45,7 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	LOCATE('ststring', Lower(`r`.`CaseInsensitive`), Length(`r`.`CaseInsensitive`) - 7) = (Length(`r`.`CaseInsensitive`) - 7)
+	Lower(Lower(`r`.`CaseInsensitive`)) LIKE '%ststring' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -55,7 +55,7 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	LOCATE('ststring', Lower(`r`.`CaseSensitive`), Length(`r`.`CaseSensitive`) - 7) = (Length(`r`.`CaseSensitive`) - 7)
+	Lower(Lower(`r`.`CaseSensitive`)) LIKE '%ststring' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -65,5 +65,5 @@ SELECT
 FROM
 	`CollatedTable` `r`
 WHERE
-	LOCATE('ststring', Lower(`r`.`CaseInsensitive`), Length(`r`.`CaseInsensitive`) - 7) = (Length(`r`.`CaseInsensitive`) - 7)
+	Lower(Lower(`r`.`CaseInsensitive`)) LIKE '%ststring' ESCAPE '~'
 

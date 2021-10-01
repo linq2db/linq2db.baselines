@@ -10,6 +10,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	LOCATE('J', `p`.`FirstName`) = 1 AND (`p`.`PersonID` = 1 OR `p`.`LastName` = 'fail')
+	`p`.`FirstName` LIKE 'J%' ESCAPE '~' AND (`p`.`PersonID` = 1 OR `p`.`LastName` = 'fail')
 LIMIT @take
 

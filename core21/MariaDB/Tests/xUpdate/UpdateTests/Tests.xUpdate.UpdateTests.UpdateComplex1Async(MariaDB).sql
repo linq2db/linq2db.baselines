@@ -10,7 +10,7 @@ DELETE `t1`
 FROM
 	`Person` `t1`
 WHERE
-	LOCATE('UpdateComplex', `t1`.`FirstName`) = 1
+	`t1`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql (asynchronously)
@@ -111,5 +111,5 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	LOCATE('UpdateComplex', `_`.`FirstName`) = 1
+	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
