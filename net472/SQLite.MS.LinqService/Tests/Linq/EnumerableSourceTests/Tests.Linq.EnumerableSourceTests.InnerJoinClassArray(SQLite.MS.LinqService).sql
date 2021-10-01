@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT NULL AS [Name] WHERE 0
+			SELECT NULL[Name] WHERE 1 = 0
 			UNION ALL
 			VALUES
 				('Janet'), ('Doe')

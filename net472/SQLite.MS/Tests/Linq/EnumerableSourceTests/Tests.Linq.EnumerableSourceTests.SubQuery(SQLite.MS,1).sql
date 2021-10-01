@@ -23,32 +23,31 @@ INSERT INTO [TableToInsert]
 	[Value]
 )
 VALUES
-(3,'Janet'),
-(4,'Doe')
+(2,'Janet'),
+(3,'Doe')
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-WITH [CTE_1] ([Id], [Value])
-AS
-(
-	SELECT
-		[t1].[Id],
-		[t1].[Value]
-	FROM
-		(
-			SELECT NULL[Id], NULL[Value] WHERE 1 = 0
-			UNION ALL
-			VALUES
-				(3,'Janet'), (4,'Doe')
-			) [t1]
-)
 SELECT
 	[t].[Id],
 	[t].[Value]
 FROM
-	[CTE_1] [r]
-		INNER JOIN [TableToInsert] [t] ON [t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
+	[TableToInsert] [t]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			(
+				SELECT NULL[Id], NULL[Value] WHERE 1 = 0
+				UNION ALL
+				VALUES
+					(2,'Janet'), (3,'Doe')
+				) [t1]
+		WHERE
+			[t].[Id] = [t1].[Id] AND ([t].[Value] = [t1].[Value] OR [t].[Value] IS NULL AND [t1].[Value] IS NULL)
+	)
 
 BeforeExecute
 -- SQLite.MS SQLite

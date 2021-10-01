@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS [TableToInsert]
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
-SET     @Id = 2
+SET     @Id = 3
 DECLARE @Value_1 NVarChar(5) -- String
 SET     @Value_1 = 'Janet'
 
@@ -35,7 +35,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
-SET     @Id = 3
+SET     @Id = 4
 DECLARE @Value_1 NVarChar(3) -- String
 SET     @Value_1 = 'Doe'
 
@@ -53,23 +53,34 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-DELETE FROM
-	[TableToInsert]
+SELECT
+	[t].[Id],
+	[t].[Value]
+FROM
+	[TableToInsert] [t]
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[TableToInsert] [t]
-				INNER JOIN (
-					SELECT NULL[Id] WHERE 1 = 0
-					UNION ALL
-					VALUES
-						(2), (3)
-					) [r] ON [t].[Id] = [r].[Id]
+			(
+				SELECT NULL[Id], NULL[Value] WHERE 1 = 0
+				UNION ALL
+				VALUES
+					(3,'Janet'), (4,'Doe')
+				) [t1]
 		WHERE
-			[TableToInsert].[Id] = [t].[Id]
+			[t].[Id] = [t1].[Id] AND ([t].[Value] = [t1].[Value] OR [t].[Value] IS NULL AND [t1].[Value] IS NULL)
 	)
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[TableToInsert] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
