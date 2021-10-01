@@ -3,22 +3,7 @@
 
 SELECT
 	[_].[PersonID],
-	[_].[LastName],
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				(
-					SELECT 1 AS [item]
-					UNION ALL
-					SELECT 3) [t1]
-			WHERE
-				[t1].[item] = [_].[PersonID]
-		)
-			THEN 1
-		ELSE 0
-	END
+	[_].[LastName]
 FROM
 	[Person] [_]
 ORDER BY
