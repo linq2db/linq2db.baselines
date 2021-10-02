@@ -9,7 +9,7 @@ FROM
 	`Person` `p`
 		INNER JOIN `Patient` `_gjd_ri` ON `_gjd_ri`.`PersonID` = `p`.`PersonID`
 WHERE
-	Lower(`p`.`FirstName`) LIKE '%test%' ESCAPE '~'
+	LOCATE('test', Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -20,5 +20,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Lower(`p`.`FirstName`) LIKE '%test%' ESCAPE '~'
+	LOCATE('test', Lower(`p`.`FirstName`)) > 0
 

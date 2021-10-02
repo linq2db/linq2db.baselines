@@ -13,9 +13,10 @@ DECLARE @datetimeoffsetDataType DateTimeOffset
 SET     @datetimeoffsetDataType = '2020-02-29 17:54:55.1231234 +00:40'
 
 MERGE INTO [AllTypes2] [Target]
-USING (	VALUES
-		('2020-02-29T17:54:55.1231234', '2020-02-29 17:54:55.1231234 +00:40'),
-		('2020-02-29T17:54:55.1231235', '2020-02-29 17:54:55.1231235 +00:40')) [Source]
+USING (VALUES
+	('2020-02-29T17:54:55.1231234','2020-02-29 17:54:55.1231234 +00:40'),
+	('2020-02-29T17:54:55.1231235','2020-02-29 17:54:55.1231235 +00:40')
+) [Source]
 (
 	[datetime2DataType],
 	[datetimeoffsetDataType]

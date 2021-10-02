@@ -9,8 +9,9 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 MERGE INTO [InheritanceParent] [Target]
-USING (	VALUES
-		(143, NULL, 1)) [Source]
+USING (VALUES
+	(143,NULL,1)
+) [Source]
 (
 	[Key1],
 	[Key2],
@@ -51,8 +52,9 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 MERGE INTO [InheritanceParent] [Target]
-USING (	VALUES
-		(143, NULL, 1)) [Source]
+USING (VALUES
+	(143,NULL,1)
+) [Source]
 (
 	[Key1],
 	[Key2],

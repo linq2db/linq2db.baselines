@@ -8,7 +8,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO "TestMerge1" Target
-USING (	SELECT 0 "Id", 1 "Field1", 2 "Field2", 4 "Field4" FROM sys.dual) "Source"
+USING (
+	SELECT 0 AS "Id", 1 AS "Field1", 2 AS "Field2", 4 AS "Field4" FROM sys.dual) "Source"
 ON (Target."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
@@ -52,7 +53,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO "TestMerge1" Target
-USING (	SELECT 10 "Id", 11 "Field1", 12 "Field2", 14 "Field4" FROM sys.dual) "Source"
+USING (
+	SELECT 10 AS "Id", 11 AS "Field1", 12 AS "Field2", 14 AS "Field4" FROM sys.dual) "Source"
 ON (Target."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
@@ -96,7 +98,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 MERGE INTO "TestMerge1" Target
-USING (	SELECT 20 "Id", 21 "Field1", 22 "Field2", 24 "Field4" FROM sys.dual
+USING (
+	SELECT 20 AS "Id", 21 AS "Field1", 22 AS "Field2", 24 AS "Field4" FROM sys.dual
 	UNION ALL
 	SELECT 30, 31, 32, 34 FROM sys.dual) "Source"
 ON (Target."Id" = "Source"."Id")

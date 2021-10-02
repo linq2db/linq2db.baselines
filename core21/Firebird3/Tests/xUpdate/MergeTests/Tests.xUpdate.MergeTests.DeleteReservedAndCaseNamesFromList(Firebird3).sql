@@ -235,7 +235,8 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "TestMerge1" "Target"
-USING (	SELECT 3 FROM rdb$database
+USING (
+	SELECT 3 AS "update_1" FROM rdb$database
 	UNION ALL
 	SELECT 4 FROM rdb$database
 	UNION ALL
