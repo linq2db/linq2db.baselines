@@ -62,7 +62,7 @@ WHERE
 		FROM
 			[TableToInsert] [t]
 				INNER JOIN (
-					SELECT NULL AS [Id] WHERE 0
+					SELECT NULL[Id] WHERE 1 = 0
 					UNION ALL
 					VALUES
 						(2), (3)

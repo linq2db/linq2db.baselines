@@ -38,7 +38,7 @@ SET
 		FROM
 			[TableToInsert] [t]
 				INNER JOIN (
-					SELECT NULL AS [Id], NULL AS [Value] WHERE 0
+					SELECT NULL[Id], NULL[Value] WHERE 1 = 0
 					UNION ALL
 					VALUES
 						(3,'Janet Updated'), (4,'Doe Updated')
@@ -53,7 +53,7 @@ WHERE
 		FROM
 			[TableToInsert] [t_1]
 				INNER JOIN (
-					SELECT NULL AS [Id], NULL AS [Value] WHERE 0
+					SELECT NULL[Id], NULL[Value] WHERE 1 = 0
 					UNION ALL
 					VALUES
 						(3,'Janet Updated'), (4,'Doe Updated')

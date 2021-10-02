@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT NULL AS [PersonID] WHERE 0
+			SELECT NULL[PersonID] WHERE 1 = 0
 			UNION ALL
 			VALUES
 				(2), (3)
@@ -28,7 +28,7 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT NULL AS [PersonID] WHERE 0
+			SELECT NULL[PersonID] WHERE 1 = 0
 			UNION ALL
 			VALUES
 				(4), (5)

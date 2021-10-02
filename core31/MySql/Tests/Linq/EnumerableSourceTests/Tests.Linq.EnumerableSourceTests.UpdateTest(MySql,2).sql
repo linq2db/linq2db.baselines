@@ -32,9 +32,9 @@ BeforeExecute
 UPDATE
 	`TableToInsert` `t`
 		INNER JOIN (
-			SELECT 3 AS `Id`, 'Janet Updated' AS `Value`
+			SELECT 3 AS `Id`, 'Janet Updated' AS `Value` FROM DUAL
 			UNION ALL
-			SELECT 4, 'Doe Updated') `r` ON `t`.`Id` = `r`.`Id`
+			SELECT 4, 'Doe Updated' FROM DUAL) `r` ON `t`.`Id` = `r`.`Id`
 SET
 	`t`.`Value` = `r`.`Value`
 

@@ -1,0 +1,18 @@
+﻿BeforeExecute
+-- Oracle.Managed Oracle12
+
+SELECT
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
+FROM
+	"Person" p
+		CROSS APPLY (
+			SELECT p."FirstName" AS "FirstName", 1 AS "PersonID", 'Janet' AS "LastName" FROM sys.dual
+			UNION ALL
+			SELECT NULL, 2, 'Doe' FROM sys.dual) t1
+WHERE
+	p."LastName" = t1."LastName"
+

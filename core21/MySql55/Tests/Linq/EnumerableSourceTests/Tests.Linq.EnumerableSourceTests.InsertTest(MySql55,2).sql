@@ -22,9 +22,9 @@ SELECT
 	`r`.`Value`
 FROM
 	(
-		SELECT 3 AS `Id`, 'Janet' AS `Value`
+		SELECT 3 AS `Id`, 'Janet' AS `Value` FROM DUAL
 		UNION ALL
-		SELECT 4, 'Doe') `r`
+		SELECT 4, 'Doe' FROM DUAL) `r`
 		LEFT JOIN `TableToInsert` `t` ON `t`.`Id` = `r`.`Id`
 WHERE
 	`t`.`Id` IS NULL
@@ -42,9 +42,9 @@ SELECT
 	`r`.`Value`
 FROM
 	(
-		SELECT 3 AS `Id`, 'Janet' AS `Value`
+		SELECT 3 AS `Id`, 'Janet' AS `Value` FROM DUAL
 		UNION ALL
-		SELECT 4, 'Doe') `r`
+		SELECT 4, 'Doe' FROM DUAL) `r`
 		LEFT JOIN `TableToInsert` `t` ON `t`.`Id` = `r`.`Id`
 WHERE
 	`t`.`Id` IS NULL
