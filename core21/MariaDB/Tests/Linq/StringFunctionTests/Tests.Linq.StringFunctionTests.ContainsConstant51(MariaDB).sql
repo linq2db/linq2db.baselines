@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @ps_1 VarChar(4) -- String
-SET     @ps_1 = '%~[%'
+DECLARE @ps VarChar(1) -- String
+SET     @ps = '['
 
 SELECT
 	Count(*)
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND '123[456' LIKE @ps_1 ESCAPE '~'
+	`p`.`PersonID` = 1 AND LOCATE(@ps, '123[456') > 0
 
