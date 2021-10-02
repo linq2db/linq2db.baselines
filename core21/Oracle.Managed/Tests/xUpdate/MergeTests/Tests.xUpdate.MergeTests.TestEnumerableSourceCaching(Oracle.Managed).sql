@@ -13,7 +13,8 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 MERGE INTO "CacheTestTable" Target
-USING (	SELECT 1 "Id", 1 "Value_1" FROM sys.dual
+USING (
+	SELECT 1 AS "Id", 1 AS "Value_1" FROM sys.dual
 	UNION ALL
 	SELECT 2, 2 FROM sys.dual) "Source"
 ON (Target."Id" = "Source"."Id")
@@ -50,7 +51,8 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 MERGE INTO "CacheTestTable" Target
-USING (	SELECT 1 "Id", 1 "Value_1" FROM sys.dual
+USING (
+	SELECT 1 AS "Id", 1 AS "Value_1" FROM sys.dual
 	UNION ALL
 	SELECT 2, 4 FROM sys.dual
 	UNION ALL
