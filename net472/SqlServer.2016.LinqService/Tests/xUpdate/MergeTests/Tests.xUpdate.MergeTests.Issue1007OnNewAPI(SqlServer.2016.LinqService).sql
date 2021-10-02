@@ -31,8 +31,9 @@ BeforeExecute
 -- SqlServer.2016
 
 MERGE INTO [TestMergeIdentity] [Target]
-USING (	VALUES
-		(10)) [Source]
+USING (VALUES
+	(10)
+) [Source]
 (
 	[Field]
 )
