@@ -13,7 +13,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "CacheTestTable" "Target"
-USING (	SELECT 1 "Id", 1 "Value_1" FROM DUMMY
+USING (
+	SELECT 1 AS "Id", 1 AS "Value_1" FROM DUMMY
 	UNION ALL
 	SELECT 2, 2 FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."Id")
@@ -50,7 +51,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "CacheTestTable" "Target"
-USING (	SELECT 1 "Id", 1 "Value_1" FROM DUMMY
+USING (
+	SELECT 1 AS "Id", 1 AS "Value_1" FROM DUMMY
 	UNION ALL
 	SELECT 2, 4 FROM DUMMY
 	UNION ALL
