@@ -8,7 +8,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND @s LIKE '%~]%' ESCAPE '~'
+	`p`.`PersonID` = 1 AND LOCATE(']', @s) > 0
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -20,5 +20,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND @s NOT LIKE '%~]%' ESCAPE '~'
+	`p`.`PersonID` = 1 AND (LOCATE(']', @s) <= 0)
 
