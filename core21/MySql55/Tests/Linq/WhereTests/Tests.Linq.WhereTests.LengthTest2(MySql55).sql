@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`nm`.`FirstName`
@@ -9,7 +9,7 @@ WHERE
 	Char_Length(`nm`.`FirstName`) <> 0
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`t1`.`FirstName`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`ch`.`ParentID`,
@@ -9,7 +9,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`ch`.`ParentID`,
@@ -19,7 +19,7 @@ FROM
 LIMIT 3
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`ch`.`ParentID`,
@@ -29,7 +29,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`ch`.`ParentID`,

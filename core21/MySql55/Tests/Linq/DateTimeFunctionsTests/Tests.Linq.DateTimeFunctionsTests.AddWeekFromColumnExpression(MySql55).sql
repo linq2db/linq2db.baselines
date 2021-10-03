@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @part1 Int32
 SET     @part1 = 4
 DECLARE @part2 Int32

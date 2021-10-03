@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @id Int32
 SET     @id = 3
 
@@ -27,7 +27,7 @@ WHERE
 	)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @id Int32
 SET     @id = 4
 

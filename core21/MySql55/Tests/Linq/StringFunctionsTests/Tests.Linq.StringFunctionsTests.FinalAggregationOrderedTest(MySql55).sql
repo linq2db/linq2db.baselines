@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE IF NOT EXISTS `SampleClass`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `SampleClass`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `SampleClass`
 (
@@ -32,7 +32,7 @@ VALUES
 (3,'Z1',NULL,NULL,'Z4')
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` SEPARATOR ' -> ')
@@ -40,7 +40,7 @@ FROM
 	`SampleClass` `t`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` SEPARATOR ' -> ')
@@ -48,7 +48,7 @@ FROM
 	`SampleClass` `t`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` DESC SEPARATOR ' -> ')
@@ -56,7 +56,7 @@ FROM
 	`SampleClass` `t`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	GROUP_CONCAT(`t`.`Value1` ORDER BY `t`.`Value1` DESC SEPARATOR ' -> ')
@@ -64,7 +64,7 @@ FROM
 	`SampleClass` `t`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 

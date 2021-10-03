@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Week)

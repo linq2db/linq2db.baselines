@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`t1`.`Key_1`
@@ -25,8 +25,8 @@ GROUP BY
 	`t1`.`Key_1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @p_1 UByte -- Boolean
+-- MySql55 MySql
+DECLARE @p_1 Bool -- Boolean
 SET     @p_1 = 0
 
 SELECT

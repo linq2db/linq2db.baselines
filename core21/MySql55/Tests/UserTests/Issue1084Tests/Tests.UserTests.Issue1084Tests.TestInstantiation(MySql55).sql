@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `i1084_person`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE IF NOT EXISTS `i1084_person`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `i1084_person`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `i1084_person`
 (
@@ -27,12 +27,12 @@ VALUES
 (2,2,0)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `i1084_student`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE IF NOT EXISTS `i1084_student`
 (
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `i1084_student`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `i1084_student`
 (
@@ -55,7 +55,7 @@ VALUES
 (2,'2',0)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`k_1`.`Id`,
@@ -67,12 +67,12 @@ FROM
 		LEFT JOIN `i1084_student` `joinedTable` ON `k_1`.`Id` = `joinedTable`.`Id` AND Cast(`k_1`.`Number` as CHAR(11)) = `joinedTable`.`Number`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `i1084_student`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `i1084_person`
 

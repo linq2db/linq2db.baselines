@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ID Int32
 SET     @ID = 5000
-DECLARE @MoneyValue Decimal(1, 0)
+DECLARE @MoneyValue NewDecimal(1, 0) -- Decimal
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue DateTime
+DECLARE @DateTimeValue Datetime -- DateTime2
 SET     @DateTimeValue = '2018-01-03'
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 0
 DECLARE @GuidValue Guid
 SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
@@ -41,8 +41,8 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @p_1 DateTime
+-- MySql55 MySql
+DECLARE @p_1 Datetime -- DateTime2
 SET     @p_1 = '2018-01-02'
 
 SELECT
@@ -53,7 +53,7 @@ WHERE
 	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) > @p_1
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DELETE `t1`
 FROM

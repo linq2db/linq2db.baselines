@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `Task`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Task`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `TaskStage`
 (
@@ -22,7 +22,7 @@ CREATE TABLE `TaskStage`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @TargetName VarChar(4) -- String
@@ -58,12 +58,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @TaskId Int32
 SET     @TaskId = 1
-DECLARE @Actual UByte -- Boolean
+DECLARE @Actual Bool -- Boolean
 SET     @Actual = 1
 
 INSERT INTO `TaskStage`
@@ -80,7 +80,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`p`.`Id`,
@@ -93,7 +93,7 @@ WHERE
 	`p`.`TargetName` = 'bda.Requests'
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`p`.`Id`,
@@ -104,12 +104,12 @@ FROM
 		LEFT JOIN `TaskStage` `a_ActualStage` ON `p`.`Id` = `a_ActualStage`.`TaskId` AND `a_ActualStage`.`Actual` = 1
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `TaskStage`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `Task`
 

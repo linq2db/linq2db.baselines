@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `Entity1711`
 (
@@ -9,7 +9,7 @@ CREATE TABLE `Entity1711`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `Relationship1711`
 (
@@ -18,7 +18,7 @@ CREATE TABLE `Relationship1711`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`t`.`Id`
@@ -35,12 +35,12 @@ WHERE
 	)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `Relationship1711`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `Entity1711`
 

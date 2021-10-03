@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @Length_2 Int32
 SET     @Length_2 = 9
 

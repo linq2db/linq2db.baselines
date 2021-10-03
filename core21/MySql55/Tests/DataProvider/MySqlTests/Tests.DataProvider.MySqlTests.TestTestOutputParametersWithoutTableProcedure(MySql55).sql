@@ -1,6 +1,6 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @aInParam VarChar(4) -- AnsiString
+-- MySql55 MySql
+DECLARE @aInParam VarChar(256) -- AnsiString
 SET     @aInParam = 'test'
 DECLARE @aOutParam Byte -- SByte
 SET     @aOutParam = NULL

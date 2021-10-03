@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `sample_class`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE IF NOT EXISTS `sample_class`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `sample_class`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `sample_class`
 (
@@ -43,7 +43,7 @@ VALUES
 (20,'Str_20')
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @startId Int64
 SET     @startId = 5
 DECLARE @p_1 Int32
@@ -62,7 +62,7 @@ WHERE
 	`c_1`.`id` > 10
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @startId Int32
 SET     @startId = 5
 DECLARE @endId Int32
@@ -77,7 +77,7 @@ WHERE
 	`t`.`id` >= @startId AND `t`.`id` < @endId AND `t`.`id` > 10
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `sample_class`
 

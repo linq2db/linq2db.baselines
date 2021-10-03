@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @gender String(1) -- AnsiStringFixedLength
 SET     @gender = 'M'
 

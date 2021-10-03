@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`a_Child`.`ParentID`,
@@ -13,7 +13,7 @@ WHERE
 	`p`.`ParentID` = `g_1`.`ParentID`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`a_Child`.`ParentID`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`t1`.`ID`,
@@ -16,8 +16,8 @@ FROM
 	`LinqDataTypes` `t1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @DateTimeValue2 DateTime
+-- MySql55 MySql
+DECLARE @DateTimeValue2 Datetime -- DateTime2
 SET     @DateTimeValue2 = '2009-09-24 09:19:29.090'
 
 SELECT

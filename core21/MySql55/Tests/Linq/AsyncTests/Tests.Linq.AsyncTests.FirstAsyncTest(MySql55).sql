@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql (asynchronously)
+-- MySql55 MySql (asynchronously)
 DECLARE @take Int32
 SET     @take = 1
 

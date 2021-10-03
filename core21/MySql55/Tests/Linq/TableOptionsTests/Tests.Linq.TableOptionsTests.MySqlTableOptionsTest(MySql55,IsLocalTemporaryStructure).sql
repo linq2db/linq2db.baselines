@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TEMPORARY TABLE `TestTable`
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `TestTable`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `TestTable`
 

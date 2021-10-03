@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 
@@ -18,7 +18,7 @@ SELECT
 	END as `c1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2
 

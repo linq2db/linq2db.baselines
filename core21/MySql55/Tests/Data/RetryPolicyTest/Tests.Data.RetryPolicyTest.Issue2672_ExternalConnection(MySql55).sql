@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  MySql.Official MySql
+--  MySql
 
 CREATE TABLE `MyEntity`
 (
@@ -8,12 +8,12 @@ CREATE TABLE `MyEntity`
 )
 
 BeforeExecute
---  MySql.Official MySql
+--  MySql
 
 DROP TABLE IF EXISTS `MyEntity`
 
 BeforeExecute
---  MySql.Official MySql
+--  MySql
 
 CREATE TABLE `MyEntity`
 (

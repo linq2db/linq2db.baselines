@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)
@@ -10,7 +10,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)
@@ -21,7 +21,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)

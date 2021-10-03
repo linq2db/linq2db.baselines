@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`key_data_result`.`ParentID`,
@@ -29,7 +29,7 @@ ORDER BY
 	`detail`.`ChildID`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`a_Parent`.`ParentID`,

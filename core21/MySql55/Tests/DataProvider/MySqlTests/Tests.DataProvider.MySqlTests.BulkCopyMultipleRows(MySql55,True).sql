@@ -1,5 +1,10 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
+
+SET GLOBAL local_infile=ON
+
+BeforeExecute
+-- MySql55 MySql
 DECLARE @p1 Time
 SET     @p1 = 17:54:55
 DECLARE @p2 Time
@@ -1533,7 +1538,7 @@ VALUES
 (5499,'one','Green',7,0x010203,0x7B16,0x060F04,'test','_btest','A',@p500,'2020-02-29 17:54:55','2020-02-29 17:54:55','2020-02-29',8199,9299,9499,8499,7499,6499,123,4499,3499,99,99,99)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @p1 Time
 SET     @p1 = 17:54:55
 DECLARE @p2 Time
@@ -3067,7 +3072,7 @@ VALUES
 (5999,'one','Green',7,0x010203,0x7B16,0x060F04,'test','_btest','A',@p500,'2020-02-29 17:54:55','2020-02-29 17:54:55','2020-02-29',8699,9799,9999,8999,7999,6999,111,4999,3999,99,99,99)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)
@@ -3077,7 +3082,7 @@ WHERE
 	`_`.`varcharDataType` = '_btest'
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 10
 

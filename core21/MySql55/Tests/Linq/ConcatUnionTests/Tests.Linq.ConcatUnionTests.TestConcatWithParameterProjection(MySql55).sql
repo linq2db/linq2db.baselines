@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @someValue Int32
 SET     @someValue = 3
 DECLARE @someValue_1 Int32

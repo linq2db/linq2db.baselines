@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `TPHTable`
 (
@@ -14,24 +14,10 @@ CREATE TABLE `TPHTable`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-
-INSERT INTO `TPHTable`
-(
-	`Id`,
-	`Discriminator`,
-	`Value1`,
-	`Value2`,
-	`NullableBool`,
-	`Value3`
-)
-VALUES
-(1,1,'Str1',NULL,NULL,NULL),
-(2,2,NULL,'Str2',NULL,NULL),
-(3,3,NULL,NULL,'Y','Str3')
+INSERT BULK `TPHTable`(Id, Discriminator, Value1, Value2, NullableBool, Value3
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`t1`.`Id`,
@@ -44,7 +30,7 @@ FROM
 	`TPHTable` `t1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -62,7 +48,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -80,7 +66,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -98,7 +84,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -116,7 +102,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -134,7 +120,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -152,7 +138,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `TPHTable`
 

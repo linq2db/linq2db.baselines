@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @skip Int32
 SET     @skip = 3
 
@@ -11,7 +11,7 @@ FROM
 LIMIT @skip, 9223372036854775807
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @skip Int32
 SET     @skip = 4
 

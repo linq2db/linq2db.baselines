@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `ValueItem`
 (
@@ -7,7 +7,7 @@ CREATE TABLE `ValueItem`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `ValueItem`
 (
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`row_1`.`Value`
@@ -27,7 +27,7 @@ FROM
 	`ValueItem` `row_1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `ValueItem`
 

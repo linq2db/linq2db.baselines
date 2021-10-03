@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DELETE `t1`
 FROM
 	`InheritanceParent` `t1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `InheritanceParent`
 (
@@ -24,7 +24,7 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)
@@ -32,7 +32,7 @@ FROM
 	`InheritanceParent` `t1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `InheritanceParent`
 (
@@ -50,7 +50,7 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)

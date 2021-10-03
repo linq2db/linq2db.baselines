@@ -1,14 +1,14 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ID Int32
 SET     @ID = 100500
-DECLARE @MoneyValue Decimal(4, 0)
+DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
 SET     @MoneyValue = 3000
-DECLARE @DateTimeValue DateTime
+DECLARE @DateTimeValue Datetime -- DateTime2
 SET     @DateTimeValue = NULL
-DECLARE @DateTimeValue2 DateTime
+DECLARE @DateTimeValue2 Datetime -- DateTime2
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = NULL
 DECLARE @GuidValue Guid
 SET     @GuidValue = NULL
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @value2 Int32
 SET     @value2 = 13621
 DECLARE @id Int32
@@ -63,7 +63,7 @@ WHERE
 	`t1`.`ID` = @id
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @id Int32
 SET     @id = 100500
 DECLARE @take Int32
@@ -78,7 +78,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @id Int32
 SET     @id = 100500
 

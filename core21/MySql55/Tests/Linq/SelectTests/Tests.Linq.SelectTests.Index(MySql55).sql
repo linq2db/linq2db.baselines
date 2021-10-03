@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`a_Parent`.`ParentID`,
@@ -14,7 +14,7 @@ ORDER BY
 	`m_1`.`ChildID` DESC
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`a_Parent`.`ParentID`,

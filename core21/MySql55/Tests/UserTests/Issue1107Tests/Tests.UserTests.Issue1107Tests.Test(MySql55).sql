@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `Issue1107TB`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Issue1107TB`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `Issue1107TB`
 (
@@ -21,7 +21,7 @@ VALUES
 (0,'2018-01-01')
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `Issue1107TB`
 

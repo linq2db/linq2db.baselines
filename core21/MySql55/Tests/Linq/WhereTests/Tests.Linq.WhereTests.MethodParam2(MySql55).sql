@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -11,7 +11,7 @@ WHERE
 	`p`.`PersonID` = @ID
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ID Int32
 SET     @ID = 2
 

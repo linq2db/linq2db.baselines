@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `Issue1373Tests`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Issue1373Tests`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Field1 VarChar -- String
@@ -28,10 +28,10 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Field1 Decimal -- AnsiString
+DECLARE @Field1 VarChar -- String
 SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`
@@ -46,7 +46,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @Id Int32
 SET     @Id = 3
 DECLARE @Field1 VarChar(4) -- String
@@ -64,7 +64,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`t1`.`Id`,
@@ -75,7 +75,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `Issue1373Tests`
 

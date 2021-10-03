@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @p_2 VarChar(4) -- String
 SET     @p_2 = 'test'
 
@@ -14,7 +14,7 @@ WHERE
 	LOCATE(@p_2, Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @input_2 VarChar(4) -- String
 SET     @input_2 = 'test'
 

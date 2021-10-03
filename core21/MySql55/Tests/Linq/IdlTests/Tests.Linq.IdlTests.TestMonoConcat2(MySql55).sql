@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @t VarChar(1) -- String
 SET     @t = 'A'
 
@@ -16,7 +16,7 @@ WHERE
 	`x`.`FirstName` = @t
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @t VarChar(1) -- String
 SET     @t = 'A'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take_1 Int32
 SET     @take_1 = 10
 DECLARE @take Int32

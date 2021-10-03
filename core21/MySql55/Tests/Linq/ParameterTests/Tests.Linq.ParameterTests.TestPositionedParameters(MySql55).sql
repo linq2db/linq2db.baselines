@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @z2 Int32
 SET     @z2 = 2
 DECLARE @y10 Int32

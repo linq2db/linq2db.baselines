@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DELETE `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`ParentID` >= 1000
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int32
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int32
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1002
 DECLARE @Value1 Int32
@@ -62,7 +62,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1003
 DECLARE @Value1 Int32
@@ -80,7 +80,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1004
 DECLARE @Value1 Int32
@@ -98,7 +98,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1005
 DECLARE @Value1 Int32
@@ -116,7 +116,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1006
 DECLARE @Value1 Int32
@@ -134,7 +134,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1007
 DECLARE @Value1 Int32
@@ -152,7 +152,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1008
 DECLARE @Value1 Int32
@@ -170,7 +170,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1009
 DECLARE @Value1 Int32
@@ -188,7 +188,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @Value1 Int32
 SET     @Value1 = 1
 DECLARE @take Int32
@@ -203,7 +203,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DELETE `t1`
 FROM

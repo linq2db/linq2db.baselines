@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -17,7 +17,7 @@ GROUP BY
 	`t1`.`Key_1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2
 DECLARE @ChildID Int32

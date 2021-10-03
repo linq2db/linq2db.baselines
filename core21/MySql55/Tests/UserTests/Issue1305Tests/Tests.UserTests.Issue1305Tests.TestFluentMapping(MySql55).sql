@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `FluentMapping`
 (
@@ -14,7 +14,7 @@ CREATE TABLE `FluentMapping`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 
 SELECT
@@ -26,7 +26,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 
 			SELECT
@@ -48,7 +48,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 
 SELECT
@@ -68,7 +68,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 
 SELECT
@@ -90,22 +90,22 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_SCHEMA = database()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 `testdata`.`AddIssue792Record`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @VarChar255 VarChar(255) -- AnsiString
 SET     @VarChar255 = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -116,7 +116,7 @@ DECLARE @Char1 String(1) -- AnsiStringFixedLength
 SET     @Char1 = NULL
 DECLARE @VarBinary255 Blob(255) -- Binary
 SET     @VarBinary255 = NULL
-DECLARE @Binary255 Decimal(255) -- AnsiString
+DECLARE @Binary255 VarChar(255) -- String
 SET     @Binary255 = NULL
 DECLARE @TinyBlob Blob(255) -- Binary
 SET     @TinyBlob = NULL
@@ -126,19 +126,19 @@ DECLARE @MediumBlob Blob(16777215) -- Binary
 SET     @MediumBlob = NULL
 DECLARE @LongBlob Blob(2147483647) -- Binary
 SET     @LongBlob = NULL
-DECLARE @TinyText Decimal(255) -- AnsiString
+DECLARE @TinyText VarChar(255) -- String
 SET     @TinyText = NULL
-DECLARE @Text Decimal(65535) -- AnsiString
+DECLARE @Text VarChar(65535) -- String
 SET     @Text = NULL
-DECLARE @MediumText Decimal(16777215) -- AnsiString
+DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
-DECLARE @LongText Decimal(2147483647) -- AnsiString
+DECLARE @LongText VarChar(2147483647) -- String
 SET     @LongText = NULL
-DECLARE @Date DateTime
+DECLARE @Date Date
 SET     @Date = NULL
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
-DECLARE @TimeStamp DateTime
+DECLARE @TimeStamp Datetime -- DateTime
 SET     @TimeStamp = NULL
 DECLARE @Time Time
 SET     @Time = NULL
@@ -162,7 +162,7 @@ DECLARE @BigInt Int64
 SET     @BigInt = NULL
 DECLARE @BigIntUnsigned UInt64
 SET     @BigIntUnsigned = NULL
-DECLARE @Decimal Decimal
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = NULL
 DECLARE @Float Float -- Single
 SET     @Float = NULL
@@ -188,27 +188,27 @@ DECLARE @Set VarChar(3) -- AnsiString
 SET     @Set = NULL
 DECLARE @Year Int32
 SET     @Year = NULL
-DECLARE @Geometry Decimal -- AnsiString
+DECLARE @Geometry VarChar -- String
 SET     @Geometry = NULL
-DECLARE @Point Decimal -- AnsiString
+DECLARE @Point VarChar -- String
 SET     @Point = NULL
-DECLARE @LineString Decimal -- AnsiString
+DECLARE @LineString VarChar -- String
 SET     @LineString = NULL
-DECLARE @Polygon Decimal -- AnsiString
+DECLARE @Polygon VarChar -- String
 SET     @Polygon = NULL
-DECLARE @MultiPoint Decimal -- AnsiString
+DECLARE @MultiPoint VarChar -- String
 SET     @MultiPoint = NULL
-DECLARE @MultiLineString Decimal -- AnsiString
+DECLARE @MultiLineString VarChar -- String
 SET     @MultiLineString = NULL
-DECLARE @MultiPolygon Decimal -- AnsiString
+DECLARE @MultiPolygon VarChar -- String
 SET     @MultiPolygon = NULL
-DECLARE @GeometryCollection Decimal -- AnsiString
+DECLARE @GeometryCollection VarChar -- String
 SET     @GeometryCollection = NULL
 
 `testdata`.`Issue2313Parameters`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @VarChar255 VarChar(255) -- AnsiString
 SET     @VarChar255 = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -219,7 +219,7 @@ DECLARE @Char1 String(1) -- AnsiStringFixedLength
 SET     @Char1 = NULL
 DECLARE @VarBinary255 Blob(255) -- Binary
 SET     @VarBinary255 = NULL
-DECLARE @Binary255 Decimal(255) -- AnsiString
+DECLARE @Binary255 VarChar(255) -- String
 SET     @Binary255 = NULL
 DECLARE @TinyBlob Blob(255) -- Binary
 SET     @TinyBlob = NULL
@@ -229,19 +229,19 @@ DECLARE @MediumBlob Blob(16777215) -- Binary
 SET     @MediumBlob = NULL
 DECLARE @LongBlob Blob(2147483647) -- Binary
 SET     @LongBlob = NULL
-DECLARE @TinyText Decimal(255) -- AnsiString
+DECLARE @TinyText VarChar(255) -- String
 SET     @TinyText = NULL
-DECLARE @Text Decimal(65535) -- AnsiString
+DECLARE @Text VarChar(65535) -- String
 SET     @Text = NULL
-DECLARE @MediumText Decimal(16777215) -- AnsiString
+DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
-DECLARE @LongText Decimal(2147483647) -- AnsiString
+DECLARE @LongText VarChar(2147483647) -- String
 SET     @LongText = NULL
-DECLARE @Date DateTime
+DECLARE @Date Date
 SET     @Date = NULL
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
-DECLARE @TimeStamp DateTime
+DECLARE @TimeStamp Datetime -- DateTime
 SET     @TimeStamp = NULL
 DECLARE @Time Time
 SET     @Time = NULL
@@ -265,7 +265,7 @@ DECLARE @BigInt Int64
 SET     @BigInt = NULL
 DECLARE @BigIntUnsigned UInt64
 SET     @BigIntUnsigned = NULL
-DECLARE @Decimal Decimal
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = NULL
 DECLARE @Float Float -- Single
 SET     @Float = NULL
@@ -289,13 +289,29 @@ DECLARE @Enum VarChar(3) -- AnsiString
 SET     @Enum = NULL
 DECLARE @Set VarChar(3) -- AnsiString
 SET     @Set = NULL
+DECLARE @Geometry VarChar -- String
+SET     @Geometry = NULL
+DECLARE @Point VarChar -- String
+SET     @Point = NULL
+DECLARE @LineString VarChar -- String
+SET     @LineString = NULL
+DECLARE @Polygon VarChar -- String
+SET     @Polygon = NULL
+DECLARE @MultiPoint VarChar -- String
+SET     @MultiPoint = NULL
+DECLARE @MultiLineString VarChar -- String
+SET     @MultiLineString = NULL
+DECLARE @MultiPolygon VarChar -- String
+SET     @MultiPolygon = NULL
+DECLARE @GeometryCollection VarChar -- String
+SET     @GeometryCollection = NULL
 DECLARE @Year Int32
 SET     @Year = NULL
 
 `testdata`.`Issue2313Results`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @aInParam VarChar(256) -- AnsiString
 SET     @aInParam = NULL
 DECLARE @aOutParam Byte -- SByte
@@ -304,7 +320,7 @@ SET     @aOutParam = NULL
 `testdata`.`TestOutputParametersWithoutTableProcedure`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @param3 Int32
 SET     @param3 = NULL
 DECLARE @param2 Int32
@@ -315,7 +331,7 @@ SET     @param1 = NULL
 `testdata`.`TestProcedure`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `FluentMapping`
 

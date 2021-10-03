@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @toTest VarChar(1) -- String
 SET     @toTest = '?'
 DECLARE @s VarChar(7) -- String

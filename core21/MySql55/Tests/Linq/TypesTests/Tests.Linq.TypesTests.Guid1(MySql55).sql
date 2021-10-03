@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @GuidValue Guid
 SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
 

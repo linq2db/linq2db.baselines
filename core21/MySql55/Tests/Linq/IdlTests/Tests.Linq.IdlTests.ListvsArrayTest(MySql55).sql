@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`x`.`PersonID`
@@ -9,7 +9,7 @@ WHERE
 	`x`.`FirstName` IN ('John')
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @st VarChar(4) -- String
 SET     @st = 'John'
 

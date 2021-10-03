@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `CreateTable`
 (
@@ -28,6 +28,7 @@ CREATE TABLE `CreateTable`
 	`TextDefault`      TEXT                  NULL,
 	`Date`             DATE              NOT NULL,
 	`DateTime`         DATETIME          NOT NULL,
+	`TimeStamp`        TIMESTAMP         NOT NULL,
 	`Time`             TIME              NOT NULL,
 	`TinyInt`          TINYINT           NOT NULL,
 	`UnsignedTinyInt`  TINYINT UNSIGNED  NOT NULL,
@@ -56,7 +57,7 @@ CREATE TABLE `CreateTable`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @VarChar255 VarChar(4) -- String
 SET     @VarChar255 = 'ыsdf'
 DECLARE @VarChar1 VarChar(1) -- String
@@ -77,11 +78,11 @@ DECLARE @VarBinary255 Blob(3) -- Binary
 SET     @VarBinary255 = 0x010416
 DECLARE @VarBinary3 Blob(3) -- Binary
 SET     @VarBinary3 = 0x010204
-DECLARE @Binary1 Blob(1) -- Object
+DECLARE @Binary1 Blob(1) -- Binary
 SET     @Binary1 = 0x16
-DECLARE @Binary255 Blob(3) -- Object
+DECLARE @Binary255 Blob(3) -- Binary
 SET     @Binary255 = 0x162C15
-DECLARE @Binary3 Blob(2) -- Object
+DECLARE @Binary3 Blob(2) -- Binary
 SET     @Binary3 = 0x0121
 DECLARE @TinyBlob Blob(3) -- Binary
 SET     @TinyBlob = 0x030201
@@ -103,10 +104,12 @@ DECLARE @LongText VarChar(4) -- String
 SET     @LongText = '1v23'
 DECLARE @TextDefault VarChar(5) -- String
 SET     @TextDefault = '12 #3'
-DECLARE @Date_1 DateTime
+DECLARE @Date_1 Date
 SET     @Date_1 = '2123-02-03'
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime2
 SET     @DateTime = '2123-02-03 11:22:33'
+DECLARE @TimeStamp_1 Datetime -- DateTimeOffset
+SET     @TimeStamp_1 = '2023-02-03T11:22:33.0000000+01:00'
 DECLARE @Time_1 Time
 SET     @Time_1 = -04:03:53
 DECLARE @TinyInt Byte -- SByte
@@ -125,13 +128,13 @@ DECLARE @BigInt_1 Int64
 SET     @BigInt_1 = -9223372036854775808
 DECLARE @UnsignedBigInt UInt64
 SET     @UnsignedBigInt = 18446744073709551615
-DECLARE @Decimal_1 Decimal(4, 0)
+DECLARE @Decimal_1 NewDecimal(4, 0) -- Decimal
 SET     @Decimal_1 = 1234
-DECLARE @Decimal15_0 Decimal(15, 0)
+DECLARE @Decimal15_0 NewDecimal(15, 0) -- Decimal
 SET     @Decimal15_0 = 123456789012345
-DECLARE @Decimal10_5 Decimal(9, 4)
+DECLARE @Decimal10_5 NewDecimal(9, 4) -- Decimal
 SET     @Decimal10_5 = -12345.2345
-DECLARE @Decimal20_2 Decimal(9, 2)
+DECLARE @Decimal20_2 NewDecimal(9, 2) -- Decimal
 SET     @Decimal20_2 = -3412345.23
 DECLARE @Float_1 Float -- Single
 SET     @Float_1 = 3244.23999
@@ -141,7 +144,7 @@ DECLARE @Double_1 Double
 SET     @Double_1 = 452.23523
 DECLARE @Float30 Double
 SET     @Float30 = 332.23500000000001
-DECLARE @Bool UByte -- Boolean
+DECLARE @Bool Bool -- Boolean
 SET     @Bool = 1
 DECLARE @Bit1 UInt64
 SET     @Bit1 = 1
@@ -185,6 +188,7 @@ INSERT INTO `CreateTable`
 	`TextDefault`,
 	`Date`,
 	`DateTime`,
+	`TimeStamp`,
 	`Time`,
 	`TinyInt`,
 	`UnsignedTinyInt`,
@@ -238,6 +242,7 @@ VALUES
 	@TextDefault,
 	@Date_1,
 	@DateTime,
+	@TimeStamp_1,
 	@Time_1,
 	@TinyInt,
 	@UnsignedTinyInt,
@@ -266,7 +271,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -296,6 +301,7 @@ SELECT
 	`t1`.`TextDefault`,
 	`t1`.`Date`,
 	`t1`.`DateTime`,
+	`t1`.`TimeStamp`,
 	`t1`.`Time`,
 	`t1`.`TinyInt`,
 	`t1`.`UnsignedTinyInt`,
@@ -326,7 +332,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `CreateTable`
 

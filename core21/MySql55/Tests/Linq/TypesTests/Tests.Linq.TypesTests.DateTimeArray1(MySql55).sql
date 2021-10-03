@@ -1,6 +1,6 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @DateTimeValue DateTime
+-- MySql55 MySql
+DECLARE @DateTimeValue Datetime -- DateTime2
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
 
 SELECT

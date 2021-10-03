@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`x`.`ParentID`,
@@ -11,7 +11,7 @@ WHERE
 	`x`.`ParentID` IN (2)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`x`.`ParentID`,

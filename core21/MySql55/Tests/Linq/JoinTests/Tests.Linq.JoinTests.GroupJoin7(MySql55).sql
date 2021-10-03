@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN `Child` `_gjd_c` ON `_gjd_c`.`ParentID` - @ParentID = `key_data_result`.`ParentID`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`p`.`ParentID`,

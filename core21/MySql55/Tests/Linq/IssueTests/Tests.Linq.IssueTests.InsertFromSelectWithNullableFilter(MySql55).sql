@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `AllTypes`
 (
@@ -21,7 +21,7 @@ FROM
 	) `t1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @p_1 Int32
 SET     @p_1 = 1234
 

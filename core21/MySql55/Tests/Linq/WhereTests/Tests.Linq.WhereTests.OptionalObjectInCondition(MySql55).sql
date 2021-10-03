@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @FirstName VarChar(1) -- String
 SET     @FirstName = '1'
 
@@ -15,7 +15,7 @@ WHERE
 	`r`.`FirstName` = @FirstName
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`r`.`FirstName`,
@@ -29,7 +29,7 @@ WHERE
 	`r`.`FirstName` IS NULL
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @FirstName VarChar(1) -- String
 SET     @FirstName = '1'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql (asynchronously)
+-- MySql55 MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 DECLARE @take Int32
@@ -15,7 +15,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql (asynchronously)
+-- MySql55 MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 2
 DECLARE @take Int32

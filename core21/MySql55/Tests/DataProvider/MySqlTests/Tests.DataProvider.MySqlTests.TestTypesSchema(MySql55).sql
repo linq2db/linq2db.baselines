@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `TestSchemaTypesTable`
 (
@@ -70,7 +70,7 @@ CREATE TABLE `TestSchemaTypesTable`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 
 SELECT
@@ -82,7 +82,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 
 			SELECT
@@ -104,7 +104,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 
 SELECT
@@ -124,7 +124,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 
 SELECT
@@ -146,7 +146,7 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `TestSchemaTypesTable`
 

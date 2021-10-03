@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -21,8 +21,8 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @dt DateTime
+-- MySql55 MySql
+DECLARE @dt Datetime -- DateTime2
 SET     @dt = '2010-12-14 05:00:07.425'
 
 UPDATE
@@ -33,7 +33,7 @@ WHERE
 	`t1`.`ID` = 1
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -55,8 +55,8 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @pdt DateTime
+-- MySql55 MySql
+DECLARE @pdt Datetime -- DateTime2
 SET     @pdt = '2001-01-11 01:11:21'
 
 UPDATE

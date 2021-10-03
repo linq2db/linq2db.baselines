@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT DISTINCT
 	Coalesce(`p`.`Value1`, `p`.`ParentID` % 2),

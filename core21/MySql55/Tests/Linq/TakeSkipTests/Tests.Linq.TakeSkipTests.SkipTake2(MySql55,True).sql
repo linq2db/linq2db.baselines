@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @skip Int32
 SET     @skip = 2
 DECLARE @skip_1 Int32
@@ -15,7 +15,7 @@ ORDER BY
 LIMIT @skip, @skip_1
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @skip Int32
 SET     @skip = 2
 DECLARE @skip_1 Int32

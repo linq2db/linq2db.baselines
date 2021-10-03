@@ -1,6 +1,6 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @param4 UByte -- Boolean
+-- MySql55 MySql
+DECLARE @param4 Bool -- Boolean
 SET     @param4 = 0
 
 SELECT

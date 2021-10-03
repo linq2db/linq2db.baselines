@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DELETE `t1`
 FROM
 	`CollatedTable` `t1`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @CaseSensitive VarChar(10) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)
@@ -38,7 +38,7 @@ WHERE
 	`r`.`CaseSensitive` COLLATE utf8_bin LIKE '%stString' ESCAPE '~'
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)
@@ -48,7 +48,7 @@ WHERE
 	`r`.`CaseInsensitive` COLLATE utf8_bin LIKE '%stString' ESCAPE '~'
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)
@@ -58,7 +58,7 @@ WHERE
 	`r`.`CaseSensitive` COLLATE utf8_bin LIKE '%ststring' ESCAPE '~'
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	Count(*)

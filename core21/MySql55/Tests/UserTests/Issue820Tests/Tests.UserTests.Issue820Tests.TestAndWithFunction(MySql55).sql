@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @param_1 Int16
 SET     @param_1 = 1
 
@@ -20,7 +20,7 @@ WHERE
 	@param_1 = `_`.`SmallIntValue`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`_`.`ID`,

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `UpdatedEntities`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 (
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `UpdatedEntities`
 (
@@ -35,12 +35,12 @@ VALUES
 (3,31,32,33,3)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `NewEntities`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE IF NOT EXISTS `NewEntities`
 (
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `NewEntities`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT INTO `NewEntities`
 (
@@ -69,7 +69,7 @@ VALUES
 (3,3,3,3)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @int1 Int32
 SET     @int1 = 11
 DECLARE @int2 Int32
@@ -90,7 +90,7 @@ WHERE
 	`t`.`id` <> @someId
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT
 	`v`.`id`,
@@ -101,12 +101,12 @@ FROM
 	`UpdatedEntities` `v`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `NewEntities`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `UpdatedEntities`
 

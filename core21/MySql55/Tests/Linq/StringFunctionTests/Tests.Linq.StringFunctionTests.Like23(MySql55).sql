@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @pattern VarChar(6) -- String
 SET     @pattern = '%h~%n%'
 

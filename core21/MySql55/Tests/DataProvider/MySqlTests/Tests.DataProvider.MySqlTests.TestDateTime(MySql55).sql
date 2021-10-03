@@ -1,30 +1,30 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT Cast('2012-12-12 12:12:12' as datetime)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 SELECT Cast('2012-12-12 12:12:12' as datetime)
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @p DateTime
+-- MySql55 MySql
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT @p
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @p DateTime
+-- MySql55 MySql
+DECLARE @p Datetime -- DateTime2
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT @p
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @p DateTime
+-- MySql55 MySql
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT @p

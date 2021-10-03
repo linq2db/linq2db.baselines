@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 DECLARE @param_1 VarChar(4) -- String
 SET     @param_1 = 'john'
 

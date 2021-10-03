@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `test_insert_or_replace`
 (
@@ -12,7 +12,7 @@ CREATE TABLE `test_insert_or_replace`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT IGNORE INTO `test_insert_or_replace`
 (
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 INSERT IGNORE INTO `test_insert_or_replace`
 (
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `test_insert_or_replace`
 

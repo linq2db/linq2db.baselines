@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `activity649`
 (
@@ -11,7 +11,7 @@ CREATE TABLE `activity649`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 CREATE TABLE `person649`
 (
@@ -22,8 +22,8 @@ CREATE TABLE `person649`
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @added DateTime
+-- MySql55 MySql
+DECLARE @added Datetime -- DateTime2
 SET     @added = '2017-01-01'
 
 SELECT
@@ -40,12 +40,12 @@ GROUP BY
 	`a_Person`.`personname`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `person649`
 
 BeforeExecute
--- MySql55 MySql.Official MySql
+-- MySql55 MySql
 
 DROP TABLE IF EXISTS `activity649`
 
