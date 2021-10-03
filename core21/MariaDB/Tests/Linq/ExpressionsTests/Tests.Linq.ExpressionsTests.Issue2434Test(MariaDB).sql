@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `Issue2434Table`
 (
@@ -9,7 +9,7 @@ CREATE TABLE `Issue2434Table`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`t1`.`Id`,
@@ -22,7 +22,7 @@ ORDER BY
 	Concat(`t1`.`FirstName`, Concat(' ', `t1`.`LastName`))
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Issue2434Table`
 

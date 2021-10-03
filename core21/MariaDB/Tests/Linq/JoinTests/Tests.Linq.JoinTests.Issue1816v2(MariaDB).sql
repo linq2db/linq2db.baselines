@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `stVersions`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `stVersions`
 (
@@ -15,12 +15,12 @@ CREATE TABLE IF NOT EXISTS `stVersions`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `rlStatesTypesAndUserGroups`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `rlStatesTypesAndUserGroups`
 (
@@ -31,12 +31,12 @@ CREATE TABLE IF NOT EXISTS `rlStatesTypesAndUserGroups`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `stMain`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `stMain`
 (
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `stMain`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`v`.`inId`,
@@ -59,17 +59,17 @@ FROM
 		LEFT JOIN `rlStatesTypesAndUserGroups` `r` ON `r`.`inIdType` = `a_Main`.`inIdType`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `stMain`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `rlStatesTypesAndUserGroups`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `stVersions`
 

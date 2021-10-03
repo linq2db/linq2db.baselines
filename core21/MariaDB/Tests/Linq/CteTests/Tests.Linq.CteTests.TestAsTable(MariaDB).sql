@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 WITH `CTE1_` (`ParentID`, `ChildID`)
 AS
@@ -17,7 +17,7 @@ FROM
 	`CTE1_` `t2`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`t1`.`ParentID`,

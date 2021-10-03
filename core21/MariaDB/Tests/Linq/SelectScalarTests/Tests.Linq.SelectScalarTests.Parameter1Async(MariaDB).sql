@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql (asynchronously)
 DECLARE @p Int32
 SET     @p = 1
 

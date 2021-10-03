@@ -20,7 +20,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`t1`.`FirstName`
@@ -30,7 +30,7 @@ GROUP BY
 	`t1`.`FirstName`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'Jane'
 
@@ -46,7 +46,7 @@ WHERE
 	`keyParam`.`FirstName` = @FirstName
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 
@@ -62,7 +62,7 @@ WHERE
 	`keyParam`.`FirstName` = @FirstName
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Jürgen'
 
@@ -78,7 +78,7 @@ WHERE
 	`keyParam`.`FirstName` = @FirstName
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Tester'
 

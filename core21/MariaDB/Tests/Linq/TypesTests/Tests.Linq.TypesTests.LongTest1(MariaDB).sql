@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @value_1 Int64
 SET     @value_1 = 0
 

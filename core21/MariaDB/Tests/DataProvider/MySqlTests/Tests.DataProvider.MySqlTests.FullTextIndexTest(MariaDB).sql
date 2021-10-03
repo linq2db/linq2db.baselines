@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 
 SELECT
@@ -11,7 +11,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 
 			SELECT
@@ -33,7 +33,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 
 SELECT
@@ -53,7 +53,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 
 SELECT
@@ -75,22 +75,22 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_SCHEMA = database()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 `testdata`.`AddIssue792Record`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @VarChar255 VarChar(255) -- AnsiString
 SET     @VarChar255 = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -119,7 +119,7 @@ DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
 DECLARE @LongText VarChar(2147483647) -- String
 SET     @LongText = NULL
-DECLARE @Date Datetime -- DateTime
+DECLARE @Date Date
 SET     @Date = NULL
 DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
@@ -195,7 +195,7 @@ SET     @GeometryCollection = NULL
 `testdata`.`Issue2313Parameters`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @VarChar255 VarChar(255) -- AnsiString
 SET     @VarChar255 = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -224,7 +224,7 @@ DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
 DECLARE @LongText VarChar(2147483647) -- String
 SET     @LongText = NULL
-DECLARE @Date Datetime -- DateTime
+DECLARE @Date Date
 SET     @Date = NULL
 DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
@@ -300,7 +300,7 @@ SET     @Year = NULL
 `testdata`.`Issue2313Results`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @aInParam VarChar(256) -- AnsiString
 SET     @aInParam = NULL
 DECLARE @aOutParam Byte -- SByte
@@ -309,7 +309,7 @@ SET     @aOutParam = NULL
 `testdata`.`TestOutputParametersWithoutTableProcedure`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @param3 Int32
 SET     @param3 = NULL
 DECLARE @param2 Int32

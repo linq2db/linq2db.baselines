@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `AllTypes`
 (
@@ -21,7 +21,7 @@ FROM
 	) `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @p_1 Int32
 SET     @p_1 = 1234
 

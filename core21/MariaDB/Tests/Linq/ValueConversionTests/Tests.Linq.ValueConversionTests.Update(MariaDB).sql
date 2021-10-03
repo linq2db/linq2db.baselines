@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `ValueConversion`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `ValueConversion`
 (
@@ -49,7 +49,7 @@ VALUES
 (10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Value2 VarChar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar -- AnsiString
@@ -66,7 +66,7 @@ WHERE
 	`e`.`Id` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -87,7 +87,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Value1 VarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 VarChar(22) -- String
@@ -102,7 +102,7 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value2'
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = 'N'
-DECLARE @DateTimeNullable Datetime -- DateTime
+DECLARE @DateTimeNullable Datetime -- DateTime2
 SET     @DateTimeNullable = NULL
 DECLARE @Id Int32
 SET     @Id = 2
@@ -122,7 +122,7 @@ WHERE
 	`t1`.`Id` = @Id
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -143,7 +143,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Value1 VarChar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 VarChar -- String
@@ -158,7 +158,7 @@ DECLARE @EnumWithNullDeclarative VarChar -- AnsiString
 SET     @EnumWithNullDeclarative = NULL
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = 'N'
-DECLARE @DateTimeNullable Datetime -- DateTime
+DECLARE @DateTimeNullable Datetime -- DateTime2
 SET     @DateTimeNullable = NULL
 DECLARE @Id Int32
 SET     @Id = 3
@@ -178,7 +178,7 @@ WHERE
 	`t1`.`Id` = @Id
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -199,7 +199,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

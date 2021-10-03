@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `Issue1189Customer`
 (
@@ -10,8 +10,8 @@ CREATE TABLE `Issue1189Customer`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
-DECLARE @DateTime Datetime -- DateTime
+-- MariaDB MySql
+DECLARE @DateTime Datetime -- DateTime2
 SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
@@ -22,7 +22,7 @@ FROM
 	`Issue1189Customer` `k_1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Issue1189Customer`
 

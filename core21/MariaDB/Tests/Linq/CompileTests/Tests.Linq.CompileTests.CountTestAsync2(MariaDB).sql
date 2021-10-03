@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 
@@ -11,7 +11,7 @@ WHERE
 	`c_1`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = -1
 

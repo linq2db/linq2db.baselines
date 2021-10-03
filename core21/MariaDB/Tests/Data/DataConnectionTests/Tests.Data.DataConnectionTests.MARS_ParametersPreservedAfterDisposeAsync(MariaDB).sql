@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql (asynchronously)
 DECLARE @param VarChar(4) -- String
 SET     @param = 'test'
 

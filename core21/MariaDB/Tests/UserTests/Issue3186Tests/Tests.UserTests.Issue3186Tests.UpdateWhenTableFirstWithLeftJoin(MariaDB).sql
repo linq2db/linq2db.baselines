@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `element_services`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `element_services`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `element_services`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `element_services`
 (
@@ -29,12 +29,12 @@ VALUES
 ('TestElementService',0,0)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `component_categories`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `component_categories`
 (
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `component_categories`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `component_categories`
 (
@@ -61,12 +61,12 @@ VALUES
 ('TestElementCategory2','TestElementService',0)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `components`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `components`
 (
@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `components`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `components`
 (
@@ -95,7 +95,7 @@ VALUES
 ('TestElementComponent2','TestElementCategory2','TestElementService',0)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 1
 
@@ -109,7 +109,7 @@ WHERE
 	`ie`.`id` = 'TestProcessService'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`x`.`id`,
@@ -121,7 +121,7 @@ WHERE
 	`x`.`is_deleted` = 1 AND `x`.`service_id` = 'TestProcessService'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`x`.`id`,
@@ -133,17 +133,17 @@ WHERE
 	`x`.`is_deleted` = 0 AND `x`.`service_id` <> 'TestProcessService'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `components`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `component_categories`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `element_services`
 

@@ -1,35 +1,35 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP SCHEMA IF EXISTS `testdata`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE SCHEMA `testdata`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 ALTER DATABASE `testdata` CHARACTER SET utf8 COLLATE utf8_general_ci
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 USE `testdata`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SET GLOBAL local_infile=ON;
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SET @@global.sql_mode=(SELECT REPLACE(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', ''))
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE InheritanceParent
 (
@@ -41,7 +41,7 @@ CREATE TABLE InheritanceParent
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE InheritanceChild
 (
@@ -54,7 +54,7 @@ CREATE TABLE InheritanceChild
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 -- Person Table
 
@@ -69,32 +69,32 @@ CREATE TABLE Person
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE OR REPLACE VIEW PersonView AS SELECT * FROM Person
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 -- Doctor Table Extension
 
@@ -108,12 +108,12 @@ CREATE TABLE Doctor
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 -- Patient Table Extension
 
@@ -127,12 +127,12 @@ CREATE TABLE Patient
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 -- Data Types test
 
@@ -164,22 +164,22 @@ CREATE TABLE DataTypeTest
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE Parent     (ParentID int, Value1 int)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE Child      (ParentID int, ChildID int)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE LinqDataTypes
 (
@@ -201,7 +201,7 @@ CREATE TABLE LinqDataTypes
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE TestIdentity (
 	ID int AUTO_INCREMENT NOT NULL,
@@ -209,7 +209,7 @@ CREATE TABLE TestIdentity (
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `AllTypes`
 (
@@ -231,7 +231,6 @@ CREATE TABLE `AllTypes`
 	timeDataType        time                         NULL,
 	yearDataType        year                         NULL,
 -- SKIP MySql BEGIN
--- SKIP MySqlConnector BEGIN
 -- SKIP MariaDB END
 -- SKIP MySql55 BEGIN
 	year2DataType       year(4)                      NULL,
@@ -257,7 +256,7 @@ CREATE TABLE `AllTypes`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `AllTypes`
 (
@@ -357,7 +356,7 @@ SELECT
 	1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `AllTypesNoYear`
 (
@@ -397,17 +396,17 @@ CREATE TABLE `AllTypesNoYear`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP SCHEMA IF EXISTS test_schema
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE SCHEMA test_schema
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE test_schema.TestSameName
 (
@@ -415,7 +414,7 @@ CREATE TABLE test_schema.TestSameName
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE TestSameName
 (
@@ -423,7 +422,7 @@ CREATE TABLE TestSameName
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE OR REPLACE
 VIEW PersonView
@@ -433,7 +432,7 @@ AS
 	WHERE (`Person`.`Gender` = 'M')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 -- merge test tables
 CREATE TABLE TestMerge1
@@ -466,7 +465,7 @@ CREATE TABLE TestMerge1
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE TestMerge2
 (
@@ -498,7 +497,7 @@ CREATE TABLE TestMerge2
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE PROCEDURE TestProcedure(IN param3 INT, INOUT param2 INT, OUT param1 INT)
 BEGIN
@@ -508,12 +507,12 @@ BEGIN
 END
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SET GLOBAL log_bin_trust_function_creators = 1;
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE FUNCTION TestFunction(param INT)
 RETURNS VARCHAR(10)
@@ -522,7 +521,7 @@ BEGIN
 END
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE PROCEDURE AddIssue792Record()
 BEGIN
@@ -530,7 +529,7 @@ BEGIN
 END
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE PROCEDURE `TestOutputParametersWithoutTableProcedure`(
 	IN `aInParam` VARCHAR(256),
@@ -541,7 +540,7 @@ BEGIN
 END
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE FullTextIndexTest (
 	id int UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -553,18 +552,17 @@ CREATE TABLE FullTextIndexTest (
 )
 -- SKIP MySql BEGIN
 -- SKIP MariaDB END
--- SKIP MySqlConnector END
 ;
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('this is text1', 'this is text2');
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('looking for something?', 'found it!');
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('record not found', 'empty');
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE Issue1993 (
 	id			INTEGER UNSIGNED	NOT NULL   AUTO_INCREMENT,
@@ -572,7 +570,7 @@ CREATE TABLE Issue1993 (
 PRIMARY KEY(id));
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE PROCEDURE `Issue2313Parameters`(
 	IN `VarChar255` VARCHAR(255),
@@ -686,7 +684,7 @@ BEGIN
 END
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE PROCEDURE `Issue2313Results`(
 	IN `VarChar255` VARCHAR(255),
@@ -729,10 +727,9 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `Bit64` BIT(64),
 	IN `Enum` ENUM('one', 'two'),
 	IN `Set` ENUM('one', 'two'),
-
 -- SKIP MySql55 BEGIN
--- SKIP MySql BEGIN
 	IN `Json` JSON,
+-- SKIP MySql55 END
 	IN `Geometry` GEOMETRY,
 	IN `Point` POINT,
 	IN `LineString` LINESTRING,
@@ -741,9 +738,6 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `MultiLineString` MULTILINESTRING,
 	IN `MultiPolygon` MULTIPOLYGON,
 	IN `GeometryCollection` GEOMETRYCOLLECTION,
--- SKIP MySql END
--- SKIP MySql55 END
-
 	IN `Year` YEAR
 )
 BEGIN
@@ -788,11 +782,7 @@ BEGIN
 	`Bit64`,
 	`Enum`,
 	`Set`,
-	`Year`
-
--- SKIP MySql55 BEGIN
--- SKIP MySql BEGIN
-	,`Json`,
+	`Year`,
 	`Geometry`,
 	`Point`,
 	`LineString`,
@@ -801,20 +791,20 @@ BEGIN
 	`MultiLineString`,
 	`MultiPolygon`,
 	`GeometryCollection`
--- SKIP MySql END
+-- SKIP MySql55 BEGIN
+	,`Json`
 -- SKIP MySql55 END
-
 
 	FROM Person;
 END
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE `CollatedTable`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `CollatedTable`
 (
@@ -824,7 +814,7 @@ CREATE TABLE `CollatedTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `LinqDataTypes`
 (
@@ -854,7 +844,7 @@ VALUES
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `Parent`
 (
@@ -871,7 +861,7 @@ VALUES
 (7,1)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `Child`
 (
@@ -898,7 +888,7 @@ VALUES
 (7,77)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `GrandChild`
 (
@@ -931,7 +921,7 @@ VALUES
 (4,42,424)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `InheritanceParent`
 (
@@ -945,7 +935,7 @@ VALUES
 (2,3,'InheritanceParent2')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `InheritanceChild`
 (

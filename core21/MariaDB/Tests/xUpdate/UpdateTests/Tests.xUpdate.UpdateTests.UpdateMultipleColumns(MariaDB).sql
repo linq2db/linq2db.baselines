@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @ID Int32
 SET     @ID = 1001
 
@@ -10,7 +10,7 @@ WHERE
 	`t1`.`ID` = @ID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @ID Int32
 SET     @ID = 1001
 
@@ -45,7 +45,7 @@ WHERE
 	`t`.`ID` = @ID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @take Int32
@@ -67,7 +67,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @ID Int32
 SET     @ID = 1001
 

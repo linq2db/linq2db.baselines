@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`p`.`FirstName`,
@@ -19,7 +19,7 @@ FROM
 			SELECT 'Doe' FROM DUAL) `n` ON `p`.`LastName` = `n`.`item`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`p`.`FirstName`,

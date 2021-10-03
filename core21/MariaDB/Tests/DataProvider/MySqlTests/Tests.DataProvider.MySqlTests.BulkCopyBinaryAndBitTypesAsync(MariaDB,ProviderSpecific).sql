@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `NeedS.esca Pin``g`
 (
@@ -29,10 +29,15 @@ CREATE TABLE `NeedS.esca Pin``g`
 )
 
 BeforeExecute
+-- MariaDB MySql
+
+SET GLOBAL local_infile=ON
+
+BeforeExecute
 INSERT ASYNC BULK `NeedS.esca Pin``g`(ne.eds `escaPing, Bit_1, Bit_2, Bit_3, Bit_4, Bit_5, needs escaping2, Binary_1, Binary_2, Binary_3, Binary_4, VarBinary_1, VarBinary_2, Blob_1, Blob_2, TinyBlob_1, TinyBlob_2, MediumBlob_1, MediumBlob_2, LongBlob_1, LongBlob_2
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql (asynchronously)
 
 SELECT
 	`t1`.`ne.eds ``escaPing`,
@@ -62,7 +67,7 @@ ORDER BY
 	`t1`.`ne.eds ``escaPing`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @FirstName VarChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName VarChar(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @name VarChar(8) -- String
 SET     @name = 'Update14'
 DECLARE @idx Int32
@@ -39,7 +39,7 @@ WHERE
 	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	Count(*)
@@ -49,7 +49,7 @@ WHERE
 	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DELETE `_`
 FROM

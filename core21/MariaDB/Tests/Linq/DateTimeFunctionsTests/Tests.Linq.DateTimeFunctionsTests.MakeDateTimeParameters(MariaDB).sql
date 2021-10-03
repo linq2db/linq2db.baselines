@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @ID VarChar(5) -- String
 SET     @ID = '2010-'
 

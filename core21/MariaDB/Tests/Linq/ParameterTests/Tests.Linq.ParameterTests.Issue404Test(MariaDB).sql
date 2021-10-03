@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Table404One`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `Table404One`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `Table404One`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `Table404One`
 (
@@ -23,12 +23,12 @@ VALUES
 (2)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `Table404Two`
 (
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `Table404Two`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `Table404Two`
 (
@@ -55,7 +55,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`key_data_result`.`Id`,
@@ -72,7 +72,7 @@ FROM
 		INNER JOIN `Table404Two` `_v` ON `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`c_1`.`Id`
@@ -80,7 +80,7 @@ FROM
 	`Table404One` `c_1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Usage_1 Int32
 SET     @Usage_1 = 0
 
@@ -99,7 +99,7 @@ FROM
 		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`c_1`.`Id`
@@ -107,7 +107,7 @@ FROM
 	`Table404One` `c_1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Usage_1 Int32
 SET     @Usage_1 = 1
 
@@ -126,7 +126,7 @@ FROM
 		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`c_1`.`Id`
@@ -134,22 +134,22 @@ FROM
 	`Table404One` `c_1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Table404One`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Table404One`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `Table404One`
 (
@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `Table404One`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `Table404One`
 (
@@ -168,12 +168,12 @@ VALUES
 (2)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `Table404Two`
 (
@@ -183,7 +183,7 @@ CREATE TABLE IF NOT EXISTS `Table404Two`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `Table404Two`
 (
@@ -200,7 +200,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`key_data_result`.`Id`,
@@ -217,7 +217,7 @@ FROM
 		INNER JOIN `Table404Two` `_v` ON `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`c_1`.`Id`
@@ -225,7 +225,7 @@ FROM
 	`Table404One` `c_1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Usage_1 Int32
 SET     @Usage_1 = 0
 
@@ -244,7 +244,7 @@ FROM
 		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`c_1`.`Id`
@@ -252,7 +252,7 @@ FROM
 	`Table404One` `c_1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Usage_1 Int32
 SET     @Usage_1 = 1
 
@@ -271,7 +271,7 @@ FROM
 		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`c_1`.`Id`
@@ -279,12 +279,12 @@ FROM
 	`Table404One` `c_1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Table404One`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @ps VarChar(1) -- String
 SET     @ps = '['
 DECLARE @s VarChar(7) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT DISTINCT
 	Coalesce(`p`.`Value1`, `p`.`ParentID` % 2)

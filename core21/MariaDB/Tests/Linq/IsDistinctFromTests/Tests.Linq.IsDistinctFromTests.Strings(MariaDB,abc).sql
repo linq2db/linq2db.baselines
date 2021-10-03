@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Src`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Src`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `Src`
 (
@@ -29,7 +29,7 @@ VALUES
 (3,NULL,'def',NULL)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @value_1 VarChar(3) -- String
 SET     @value_1 = 'abc'
 
@@ -41,7 +41,7 @@ WHERE
 	NOT `s`.`String` <=> @value_1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @value_1 VarChar(3) -- String
 SET     @value_1 = 'abc'
 
@@ -53,7 +53,7 @@ WHERE
 	NOT `s`.`NullableString` <=> @value_1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @value_1 VarChar(3) -- String
 SET     @value_1 = 'abc'
 
@@ -65,7 +65,7 @@ WHERE
 	`s`.`String` <=> @value_1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @value_1 VarChar(3) -- String
 SET     @value_1 = 'abc'
 
@@ -77,7 +77,7 @@ WHERE
 	`s`.`NullableString` <=> @value_1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Src`
 

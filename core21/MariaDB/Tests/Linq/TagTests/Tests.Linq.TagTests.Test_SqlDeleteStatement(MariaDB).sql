@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `TestTable`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `TestTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 /* My Test */
 DELETE `t1`
@@ -18,7 +18,7 @@ FROM
 	`TestTable` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `TestTable`
 

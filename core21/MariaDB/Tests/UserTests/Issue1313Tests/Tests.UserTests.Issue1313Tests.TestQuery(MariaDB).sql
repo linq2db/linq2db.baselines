@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `ValueItem`
 (
@@ -7,7 +7,7 @@ CREATE TABLE `ValueItem`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `ValueItem`
 (
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`row_1`.`Value`
@@ -27,7 +27,7 @@ FROM
 	`ValueItem` `row_1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `ValueItem`
 

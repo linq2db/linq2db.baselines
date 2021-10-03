@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @childId Int32
 SET     @childId = 32
 DECLARE @userId Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `NeedS.esca Pin``g`
 (
@@ -29,7 +29,12 @@ CREATE TABLE `NeedS.esca Pin``g`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
+
+SET GLOBAL local_infile=ON
+
+BeforeExecute
+-- MariaDB MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Bit_1 UInt64
@@ -123,7 +128,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Bit_1 UInt64
@@ -217,7 +222,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`t1`.`ne.eds ``escaPing`,
@@ -247,7 +252,7 @@ ORDER BY
 	`t1`.`ne.eds ``escaPing`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 

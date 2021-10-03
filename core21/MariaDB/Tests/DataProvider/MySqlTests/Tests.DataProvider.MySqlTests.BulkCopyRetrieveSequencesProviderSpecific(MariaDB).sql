@@ -1,5 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
+
+SET GLOBAL local_infile=ON
+
+BeforeExecute
+-- MariaDB MySql
 
 SELECT Max(`PersonID`) FROM `Person`
 

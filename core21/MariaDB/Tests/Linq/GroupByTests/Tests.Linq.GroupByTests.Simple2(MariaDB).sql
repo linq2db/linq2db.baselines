@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -11,7 +11,7 @@ GROUP BY
 	`t1`.`ChildID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 DECLARE @ChildID Int32

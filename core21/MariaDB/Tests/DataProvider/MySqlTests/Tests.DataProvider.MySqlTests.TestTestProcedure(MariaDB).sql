@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @param3 Int32
 SET     @param3 = 123
 DECLARE @param2 Int32
@@ -10,7 +10,7 @@ SET     @param1 = NULL
 `TestProcedure`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`t1`.`FirstName`,

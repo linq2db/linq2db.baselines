@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `ValueConversion`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `ValueConversion`
 (
@@ -49,7 +49,7 @@ VALUES
 (10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @testedList VarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
@@ -63,7 +63,7 @@ GROUP BY
 	`t`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Value2 VarChar(20) -- String
 SET     @Value2 = '[{"Value":"Value1"}]'
 DECLARE @Id Int32
@@ -85,7 +85,7 @@ WHERE
 	@Value2 = `t`.`Value2` AND `t`.`Id` = @Id
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

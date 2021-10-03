@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	Count(*)
@@ -25,7 +25,7 @@ FROM
 		) `c2` ON `p`.`ParentID` = `c2`.`ParentID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 WITH `CTE_1` (`ParentID`, `ChildID`)
 AS

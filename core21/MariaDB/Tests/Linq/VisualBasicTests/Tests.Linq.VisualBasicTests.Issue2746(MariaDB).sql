@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Local_SelectedValue Int32
 SET     @Local_SelectedValue = 1
 

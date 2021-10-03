@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `SimpleBulkCopyTable`
 (
@@ -13,7 +13,7 @@ BeforeExecute
 INSERT ASYNC BULK `SimpleBulkCopyTable`(Id
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `SimpleBulkCopyTable`
 

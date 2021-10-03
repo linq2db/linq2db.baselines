@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @skip Int32
 SET     @skip = 1
 DECLARE @take Int32

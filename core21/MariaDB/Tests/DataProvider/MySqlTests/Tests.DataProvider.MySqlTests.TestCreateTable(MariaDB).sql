@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `CreateTable`
 (
@@ -61,7 +61,7 @@ CREATE TABLE `CreateTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @VarChar255 VarChar(4) -- String
 SET     @VarChar255 = 'ыsdf'
 DECLARE @VarChar1 VarChar(1) -- String
@@ -108,11 +108,11 @@ DECLARE @LongText VarChar(4) -- String
 SET     @LongText = '1v23'
 DECLARE @TextDefault VarChar(5) -- String
 SET     @TextDefault = '12 #3'
-DECLARE @Date_1 Datetime -- DateTime
+DECLARE @Date_1 Date
 SET     @Date_1 = '2123-02-03'
-DECLARE @DateTime Datetime -- DateTime
+DECLARE @DateTime Datetime -- DateTime2
 SET     @DateTime = '2123-02-03 11:22:33'
-DECLARE @DateTime3 Datetime -- DateTime
+DECLARE @DateTime3 Datetime -- DateTime2
 SET     @DateTime3 = '2123-02-03 11:22:33.123'
 DECLARE @TimeStamp_1 Datetime -- DateTimeOffset
 SET     @TimeStamp_1 = '2023-02-03T11:22:33.0000000+01:00'
@@ -291,7 +291,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -356,7 +356,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `CreateTable`
 

@@ -9,7 +9,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`a_Parent`.`Value1`

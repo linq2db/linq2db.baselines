@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `Issue1303`
 (
@@ -11,7 +11,7 @@ CREATE TABLE `Issue1303`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Array_1 Blob(3) -- Binary
 SET     @Array_1 = 0x010203
 DECLARE @Binary_1 Blob(2) -- Binary
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`_`.`ID`,
@@ -44,7 +44,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`_`.`ID`,
@@ -57,7 +57,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`_`.`ID`,
@@ -70,7 +70,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Issue1303`
 

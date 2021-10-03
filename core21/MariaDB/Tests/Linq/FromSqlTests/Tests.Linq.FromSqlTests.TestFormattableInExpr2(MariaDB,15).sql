@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `sample_class`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `sample_class`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `sample_class`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `sample_class`
 (
@@ -43,7 +43,7 @@ VALUES
 (20,'Str_20')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @startId Int64
 SET     @startId = 5
 DECLARE @endId Int32
@@ -61,7 +61,7 @@ WHERE
 	`s`.`id` > 10
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @startId Int32
 SET     @startId = 5
 DECLARE @endId Int32
@@ -76,7 +76,7 @@ WHERE
 	`t`.`id` >= @startId AND `t`.`id` < @endId AND `t`.`id` > 10
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `sample_class`
 

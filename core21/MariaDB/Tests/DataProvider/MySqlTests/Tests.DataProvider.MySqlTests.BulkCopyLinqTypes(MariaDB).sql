@@ -1,5 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
+
+SET GLOBAL local_infile=ON
+
+BeforeExecute
+-- MariaDB MySql
 
 INSERT INTO `LinqDataTypes`
 (
@@ -25,7 +30,7 @@ VALUES
 (4009,1009,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9,NULL)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DELETE `t1`
 FROM
@@ -34,10 +39,15 @@ WHERE
 	`t1`.`ID` >= 4000
 
 BeforeExecute
+-- MariaDB MySql
+
+SET GLOBAL local_infile=ON
+
+BeforeExecute
 INSERT BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DELETE `t1`
 FROM

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @ID Int32
 SET     @ID = 1000
 DECLARE @MoneyValue NewDecimal(1, 0) -- Decimal
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue Datetime -- DateTime
+DECLARE @DateTimeValue Datetime -- DateTime2
 SET     @DateTimeValue = NULL
-DECLARE @DateTimeValue2 Datetime -- DateTime
+DECLARE @DateTimeValue2 Datetime -- DateTime2
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 0
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -71,7 +71,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DELETE `_`
 FROM

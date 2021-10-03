@@ -1,6 +1,6 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
-DECLARE @DateTimeValue Datetime -- DateTime
+-- MariaDB MySql
+DECLARE @DateTimeValue Datetime -- DateTime2
 SET     @DateTimeValue = '2009-01-01'
 
 SELECT

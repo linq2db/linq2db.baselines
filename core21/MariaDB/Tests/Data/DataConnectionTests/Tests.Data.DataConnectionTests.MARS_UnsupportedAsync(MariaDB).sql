@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql (asynchronously)
 
 SELECT
 	`t1`.`FirstName`,
@@ -11,7 +11,7 @@ FROM
 	`Person` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 

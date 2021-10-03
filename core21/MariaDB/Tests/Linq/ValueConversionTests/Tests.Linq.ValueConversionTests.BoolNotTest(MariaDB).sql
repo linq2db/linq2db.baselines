@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `ValueConversion`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `ValueConversion`
 (
@@ -49,7 +49,7 @@ VALUES
 (10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @BoolValue_1 VarChar -- AnsiString
 SET     @BoolValue_1 = 'N'
 
@@ -64,7 +64,7 @@ WHERE
 	`t`.`BoolValue` = @BoolValue_1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

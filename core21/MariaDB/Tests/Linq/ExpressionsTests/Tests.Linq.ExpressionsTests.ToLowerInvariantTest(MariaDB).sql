@@ -8,7 +8,7 @@ FROM
 	[Doctor] [t1]
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	Lower(`p`.`Taxonomy`)

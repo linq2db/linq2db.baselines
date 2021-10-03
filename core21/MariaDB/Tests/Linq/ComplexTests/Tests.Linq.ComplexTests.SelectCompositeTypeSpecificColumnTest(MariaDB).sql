@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `User`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `User`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`u`.`city`
@@ -18,7 +18,7 @@ FROM
 	`User` `u`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`u`.`street`
@@ -26,7 +26,7 @@ FROM
 	`User` `u`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `User`
 

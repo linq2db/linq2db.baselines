@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE `Issue1110TB`
 (
@@ -10,10 +10,10 @@ CREATE TABLE `Issue1110TB`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @Id Int32
 SET     @Id = 10
-DECLARE @TimeStamp_1 Datetime -- DateTime
+DECLARE @TimeStamp_1 Datetime -- DateTime2
 SET     @TimeStamp_1 = '2020-02-29 17:54:55.123'
 
 INSERT INTO `Issue1110TB`
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `Issue1110TB`
 

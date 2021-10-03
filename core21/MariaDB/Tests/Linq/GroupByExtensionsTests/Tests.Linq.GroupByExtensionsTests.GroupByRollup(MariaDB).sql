@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `GroupSampleClass`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 CREATE TABLE IF NOT EXISTS `GroupSampleClass`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `GroupSampleClass`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 INSERT INTO `GroupSampleClass`
 (
@@ -35,7 +35,7 @@ VALUES
 (10,1,0)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`t1`.`Id1`,
@@ -55,7 +55,7 @@ GROUP BY
 WITH ROLLUP
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 DROP TABLE IF EXISTS `GroupSampleClass`
 

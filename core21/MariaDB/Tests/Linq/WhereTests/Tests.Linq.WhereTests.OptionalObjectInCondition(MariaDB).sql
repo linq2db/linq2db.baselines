@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @FirstName VarChar(1) -- String
 SET     @FirstName = '1'
 
@@ -15,7 +15,7 @@ WHERE
 	`r`.`FirstName` = @FirstName
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 
 SELECT
 	`r`.`FirstName`,
@@ -29,7 +29,7 @@ WHERE
 	`r`.`FirstName` IS NULL
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql
 DECLARE @FirstName VarChar(1) -- String
 SET     @FirstName = '1'
 
