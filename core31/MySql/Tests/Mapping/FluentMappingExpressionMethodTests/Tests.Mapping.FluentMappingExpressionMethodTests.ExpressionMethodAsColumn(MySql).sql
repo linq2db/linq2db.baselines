@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `InstanceClass`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `InstanceClass`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `InstanceClass`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `InstanceClass`
 (
@@ -43,7 +43,7 @@ VALUES
 (20,120)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -53,7 +53,7 @@ FROM
 	`InstanceClass` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `InstanceClass`
 

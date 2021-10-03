@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`ID` > 1000
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @arr Blob(4) -- Binary
 SET     @arr = 0x01020304
 
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -45,7 +45,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM

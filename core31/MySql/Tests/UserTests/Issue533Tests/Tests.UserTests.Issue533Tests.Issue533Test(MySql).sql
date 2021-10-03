@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM
@@ -13,7 +13,7 @@ WHERE
 	`t1`.`PersonID` > 4
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(12) -- String
@@ -39,12 +39,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id1 Int32
 SET     @id1 = 5
 DECLARE @take Int32
@@ -63,7 +63,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM

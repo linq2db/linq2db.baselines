@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -9,7 +9,7 @@ FROM
 LIMIT 3, 9223372036854775807
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ParentID`,

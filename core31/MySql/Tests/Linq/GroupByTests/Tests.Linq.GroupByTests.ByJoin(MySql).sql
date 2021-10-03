@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Sum(`c2`.`ChildID`)

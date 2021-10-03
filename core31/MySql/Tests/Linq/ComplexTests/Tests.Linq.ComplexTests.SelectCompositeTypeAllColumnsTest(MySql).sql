@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `User`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `User`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `User`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `User`
 (
@@ -28,7 +28,7 @@ VALUES
 ('Springwood','Freddy','Elm Street',13)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`city`,
@@ -39,7 +39,7 @@ FROM
 	`User` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `User`
 

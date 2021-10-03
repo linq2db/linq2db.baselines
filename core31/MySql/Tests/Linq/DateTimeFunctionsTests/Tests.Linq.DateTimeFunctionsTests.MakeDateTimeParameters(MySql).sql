@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ID VarChar(5) -- String
 SET     @ID = '2010-'
 

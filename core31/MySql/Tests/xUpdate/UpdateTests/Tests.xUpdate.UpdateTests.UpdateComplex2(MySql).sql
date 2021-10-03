@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `_`
 FROM
@@ -13,7 +13,7 @@ WHERE
 	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -39,12 +39,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 UPDATE
 	`Person` `_`
@@ -54,7 +54,7 @@ WHERE
 	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @take Int32
@@ -73,7 +73,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `_`
 FROM

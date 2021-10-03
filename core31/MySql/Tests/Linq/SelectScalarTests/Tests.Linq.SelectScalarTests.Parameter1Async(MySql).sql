@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @p Int32
 SET     @p = 1
 

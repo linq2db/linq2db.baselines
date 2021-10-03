@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`ChildID` > 1000
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -36,7 +36,7 @@ WHERE
 	`c_1`.`ChildID` = @id
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `SampleClass`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `SampleClass`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `SampleClass`
 (
@@ -32,7 +32,7 @@ VALUES
 (3,'Z1',NULL,NULL,'Z4')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @separator VarChar(4) -- String
 SET     @separator = ' -> '
 
@@ -45,7 +45,7 @@ GROUP BY
 	`t1`.`Value4`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `CreateIfNotExistsTable`
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -36,7 +36,7 @@ FROM
 	`CreateIfNotExistsTable` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 

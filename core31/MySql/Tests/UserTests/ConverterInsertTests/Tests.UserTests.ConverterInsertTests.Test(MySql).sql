@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName VarChar(3) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @take Int32
@@ -54,7 +54,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @take Int32
@@ -73,7 +73,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @FirstName VarChar(3) -- String

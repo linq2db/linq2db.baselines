@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Max(`t`.`PersonID`)
@@ -7,7 +7,7 @@ FROM
 	`Person` `t`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender String(1) -- StringFixedLength
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 4
 

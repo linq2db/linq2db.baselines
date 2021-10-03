@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Src`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Src`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Src`
 (
@@ -29,7 +29,7 @@ VALUES
 (3,NULL,'def',NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -39,7 +39,7 @@ WHERE
 	`s`.`String` IS NOT NULL
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -49,7 +49,7 @@ WHERE
 	`s`.`NullableString` IS NOT NULL
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -59,7 +59,7 @@ WHERE
 	`s`.`String` IS NULL
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -69,7 +69,7 @@ WHERE
 	`s`.`NullableString` IS NULL
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Src`
 

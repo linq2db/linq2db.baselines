@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `SimpleBulkCopyTable`
 (
@@ -7,7 +7,7 @@ CREATE TABLE `SimpleBulkCopyTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 1
 
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SimpleBulkCopyTable`
 

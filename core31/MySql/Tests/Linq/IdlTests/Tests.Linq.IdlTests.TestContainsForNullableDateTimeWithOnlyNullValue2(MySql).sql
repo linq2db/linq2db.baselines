@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ID`,
@@ -16,7 +16,7 @@ FROM
 	`LinqDataTypes` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `User`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `User`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`u`.`city`
@@ -18,7 +18,7 @@ FROM
 	`User` `u`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`u`.`street`
@@ -26,7 +26,7 @@ FROM
 	`User` `u`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `User`
 

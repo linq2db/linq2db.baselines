@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Authors`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Authors`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Books`
 (
@@ -22,7 +22,7 @@ CREATE TABLE `Books`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`author`.`Id`,
@@ -32,12 +32,12 @@ FROM
 		INNER JOIN `Books` `book` ON `book`.`AuthorId` = `author`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Books`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Authors`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `NestingA`
 (
@@ -7,7 +7,7 @@ CREATE TABLE `NestingA`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `NestingB`
 (
@@ -16,7 +16,7 @@ CREATE TABLE `NestingB`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `NestingC`
 (
@@ -26,7 +26,7 @@ CREATE TABLE `NestingC`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH `CTE_1` (`Property2`)
 AS
@@ -51,17 +51,17 @@ FROM
 	`NestingC` `t_1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `NestingC`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `NestingB`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `NestingA`
 

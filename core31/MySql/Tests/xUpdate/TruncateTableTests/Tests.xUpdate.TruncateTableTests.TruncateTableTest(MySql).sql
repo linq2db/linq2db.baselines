@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TestTrun`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `TestTrun`
 (
@@ -15,12 +15,12 @@ CREATE TABLE `TestTrun`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 TRUNCATE TABLE `TestTrun`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE `TestTrun`
 

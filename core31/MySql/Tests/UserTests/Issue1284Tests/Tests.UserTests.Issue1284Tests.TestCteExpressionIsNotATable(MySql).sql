@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH `CTE_1`
 (
@@ -32,7 +32,7 @@ WHERE
 	`x`.`entry_ID` = 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x`.`FirstName`,

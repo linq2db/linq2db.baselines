@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `TakeSkipClass`
 (
@@ -25,7 +25,7 @@ VALUES
 ('BOLTO')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 3
 
@@ -36,7 +36,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 

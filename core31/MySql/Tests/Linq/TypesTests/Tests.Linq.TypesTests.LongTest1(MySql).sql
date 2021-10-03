@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @value_1 Int64
 SET     @value_1 = 0
 

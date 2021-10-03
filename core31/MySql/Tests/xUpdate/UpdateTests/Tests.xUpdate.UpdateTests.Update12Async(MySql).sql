@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 UPDATE
 	`Parent` `p1`

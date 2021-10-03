@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `UserIssue3128`
 (
@@ -9,7 +9,7 @@ CREATE TABLE `UserIssue3128`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `UserDetailsIssue3128`
 (
@@ -20,7 +20,7 @@ CREATE TABLE `UserDetailsIssue3128`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 10
 
@@ -34,12 +34,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @UserId Int32
 SET     @UserId = 10
 DECLARE @Age Int32
@@ -57,12 +57,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p_1`.`FirstName`,
@@ -91,12 +91,12 @@ WHERE
 	`p_1`.`ex` > 0
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `UserDetailsIssue3128`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `UserIssue3128`
 

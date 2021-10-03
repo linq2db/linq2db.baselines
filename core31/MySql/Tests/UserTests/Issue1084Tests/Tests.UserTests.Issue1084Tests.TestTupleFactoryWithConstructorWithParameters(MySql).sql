@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `i1084_person`
 (
@@ -9,7 +9,7 @@ CREATE TABLE `i1084_person`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `i1084_student`
 (
@@ -19,12 +19,12 @@ CREATE TABLE `i1084_student`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `i1084_student`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `i1084_person`
 

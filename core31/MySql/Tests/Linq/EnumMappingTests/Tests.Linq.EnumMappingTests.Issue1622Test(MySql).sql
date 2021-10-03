@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Issue1622Table`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Issue1622Table`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeText VarChar(13) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -42,7 +42,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -56,7 +56,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Issue1622Table`
 

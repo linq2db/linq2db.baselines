@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TEMPORARY TABLE `TempTable`
 (
@@ -12,12 +12,12 @@ CREATE TEMPORARY TABLE `TempTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE `TempTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TempTable`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Parent`
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Child`
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Child`
 (
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `c_1`
 FROM
@@ -49,7 +49,7 @@ WHERE
 	`p`.`ParentID` >= 1000
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM
@@ -58,7 +58,7 @@ WHERE
 	`t1`.`ParentID` >= 1000
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `stLinks`
 (
@@ -21,7 +21,7 @@ CREATE TABLE `stLinks`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `stVersions`
 (
@@ -32,7 +32,7 @@ CREATE TABLE `stVersions`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @parentId Int32
 SET     @parentId = 111
 DECLARE @parentId_1 Int32
@@ -85,12 +85,12 @@ FROM
 		INNER JOIN `stVersions` `version_1` ON `u`.`InIdChild` = `version_1`.`inId`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `stVersions`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `stLinks`
 

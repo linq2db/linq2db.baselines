@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Parent`
 (
@@ -10,7 +10,7 @@ VALUES
 (111001,NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Child`
 (

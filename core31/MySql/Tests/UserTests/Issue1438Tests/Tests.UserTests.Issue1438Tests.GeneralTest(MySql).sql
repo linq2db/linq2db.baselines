@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Issue1438`
 (
@@ -10,8 +10,8 @@ CREATE TABLE `Issue1438`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @Has UByte -- Boolean
+-- MySql
+DECLARE @Has Bool -- Boolean
 SET     @Has = 1
 
 INSERT INTO `Issue1438`
@@ -24,12 +24,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @take Int32
@@ -45,7 +45,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Issue1438`
 

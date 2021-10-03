@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 3
 DECLARE @Value1 Int32

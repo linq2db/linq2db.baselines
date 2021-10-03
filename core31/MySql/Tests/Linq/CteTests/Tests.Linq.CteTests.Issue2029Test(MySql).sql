@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `NC_CODE`
 (
@@ -16,7 +16,7 @@ CREATE TABLE `NC_CODE`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `NC_GROUP_MEMBER`
 (
@@ -27,12 +27,12 @@ CREATE TABLE `NC_GROUP_MEMBER`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `NC_GROUP_MEMBER`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `NC_CODE`
 

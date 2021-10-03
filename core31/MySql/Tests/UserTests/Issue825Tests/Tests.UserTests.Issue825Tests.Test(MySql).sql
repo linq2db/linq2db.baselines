@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @childId Int32
 SET     @childId = 32
 DECLARE @userId Int32

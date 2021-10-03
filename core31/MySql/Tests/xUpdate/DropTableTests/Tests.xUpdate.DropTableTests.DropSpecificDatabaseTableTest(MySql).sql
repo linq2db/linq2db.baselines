@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `DropTableTest`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -15,7 +15,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `DropTableTest`
 (
@@ -23,7 +23,7 @@ CREATE TABLE `DropTableTest`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `testdata`.`DropTableTest`
 (
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ID`
@@ -43,12 +43,12 @@ FROM
 	`testdata`.`DropTableTest` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE `testdata`.`DropTableTest`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ID`

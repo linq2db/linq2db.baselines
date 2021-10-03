@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Sum(Coalesce(`a_Parent`.`Value1`, 0))

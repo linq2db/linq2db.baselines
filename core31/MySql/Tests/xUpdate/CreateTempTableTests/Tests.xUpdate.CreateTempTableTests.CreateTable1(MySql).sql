@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `TempTable`
 (
@@ -24,7 +24,7 @@ FROM
 	`Parent` `p`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ID`
@@ -32,7 +32,7 @@ FROM
 	`TempTable` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t`.`ID`
@@ -41,7 +41,7 @@ FROM
 		INNER JOIN `TempTable` `t` ON `p`.`ParentID` = `t`.`ID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TempTable`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH `CTE1_` (`ParentID`)
 AS
@@ -67,7 +67,7 @@ FROM
 		INNER JOIN `LATEST` `c4_1` ON `c4_1`.`ParentID` = `c3`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p_1`.`ParentID`,

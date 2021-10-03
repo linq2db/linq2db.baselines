@@ -50,7 +50,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Local_id Int32
 SET     @Local_id = 1
 

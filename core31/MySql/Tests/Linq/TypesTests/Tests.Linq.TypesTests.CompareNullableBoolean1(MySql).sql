@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t`.`ID`,
@@ -14,8 +14,8 @@ FROM
 	`LinqDataTypes` `t`
 
 BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @param_1 UByte -- Boolean
+-- MySql
+DECLARE @param_1 Bool -- Boolean
 SET     @param_1 = 1
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `TableToInsert`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `TableToInsert`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t`.`Id`,
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN (SELECT NULL`Id`, NULL`Value` FROM DUAL WHERE 1 = 0) `r` ON `t`.`Id` = `r`.`Id` AND (`t`.`Value` = `r`.`Value` OR `t`.`Value` IS NULL AND `r`.`Value` IS NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TableToInsert`
 

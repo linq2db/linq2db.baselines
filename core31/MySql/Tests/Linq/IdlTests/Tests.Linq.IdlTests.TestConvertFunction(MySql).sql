@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x`.`PersonID`
@@ -7,7 +7,7 @@ FROM
 	`Patient` `x`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x`.`PersonID`,
@@ -16,7 +16,7 @@ FROM
 	`Person` `x`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x_1`.`PersonID`,

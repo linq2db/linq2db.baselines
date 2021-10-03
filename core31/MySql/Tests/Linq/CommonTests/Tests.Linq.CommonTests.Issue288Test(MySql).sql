@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -12,7 +12,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ID VarChar(4) -- String
 SET     @ID = 'John'
 DECLARE @take Int32

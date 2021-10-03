@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -9,7 +9,7 @@ WHERE
 	`p`.`FirstName` LIKE '%JOHN' ESCAPE '~' AND `p`.`PersonID` = 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)

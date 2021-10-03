@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 

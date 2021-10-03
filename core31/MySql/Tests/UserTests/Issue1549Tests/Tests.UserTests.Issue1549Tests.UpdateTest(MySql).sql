@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `billing_devtypes`
 (
@@ -11,7 +11,7 @@ CREATE TABLE `billing_devtypes`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `billing_devices`
 (
@@ -23,7 +23,7 @@ CREATE TABLE `billing_devices`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `billing_DevReadingType`
 (
@@ -36,7 +36,7 @@ CREATE TABLE `billing_DevReadingType`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `billing_TempReading`
 (
@@ -55,7 +55,7 @@ CREATE TABLE `billing_TempReading`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 UPDATE
 	`billing_TempReading` `tr`
@@ -65,7 +65,7 @@ SET
 	`tr`.`Responsibility` = `drt`.`Responsibility`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 DECLARE @take_1 Int32
@@ -94,22 +94,22 @@ SET
 	)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `billing_TempReading`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `billing_DevReadingType`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `billing_devices`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `billing_devtypes`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH `CTE_1` (`Child_ParentID`, `ChildID`)
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN `CTE_1` `c_1` ON `p`.`ParentID` = `c_1`.`Child_ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`ParentID`,

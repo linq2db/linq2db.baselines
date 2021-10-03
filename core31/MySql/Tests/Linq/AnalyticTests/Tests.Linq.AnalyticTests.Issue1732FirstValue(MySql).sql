@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Position`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Position`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `Position`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Position`
 (
@@ -29,7 +29,7 @@ VALUES
 (7,40,NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @group_1 Int32
 SET     @group_1 = 7
 
@@ -42,7 +42,7 @@ WHERE
 	`p`.`Group` = @group_1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Position`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Condos`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Condos`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `CategoryCondos`
 (
@@ -21,7 +21,7 @@ CREATE TABLE `CategoryCondos`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `CondoTags`
 (
@@ -32,7 +32,7 @@ CREATE TABLE `CondoTags`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Locations`
 (
@@ -43,7 +43,7 @@ CREATE TABLE `Locations`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`c_1`.`Id`,
@@ -75,22 +75,22 @@ FROM
 		) `ccleft` ON `c_1`.`Id` = `ccleft`.`CondoId`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Locations`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CondoTags`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CategoryCondos`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Condos`
 

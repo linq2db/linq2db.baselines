@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Issue2816Table`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Issue2816Table`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Issue2816Table`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Issue2816Table`
 (
@@ -28,7 +28,7 @@ VALUES
 (3,' 	x ')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`Id`,
@@ -40,7 +40,7 @@ WHERE
                  　]')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Issue2816Table`
 

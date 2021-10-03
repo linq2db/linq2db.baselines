@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @str VarChar(2) -- String
 SET     @str = 'oh'
 

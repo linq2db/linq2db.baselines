@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`nm`.`MiddleName`
@@ -9,7 +9,7 @@ WHERE
 	`nm`.`MiddleName` IS NOT NULL
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`FirstName`,

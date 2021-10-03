@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `HierarchyTree`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `HierarchyTree`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `HierarchyTree`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `HierarchyTree`
 (
@@ -41,7 +41,7 @@ VALUES
 (212,21)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH RECURSIVE `CTE_1` (`Id`)
 AS
@@ -85,7 +85,7 @@ FROM
 		INNER JOIN `hierarchyDown` `h2` ON `h2`.`Id` = `h1`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `HierarchyTree`
 

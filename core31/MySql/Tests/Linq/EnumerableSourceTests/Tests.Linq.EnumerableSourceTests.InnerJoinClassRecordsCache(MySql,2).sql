@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`FirstName`,
@@ -15,7 +15,7 @@ FROM
 			SELECT 4 FROM DUAL) `n` ON `p`.`PersonID` = `n`.`PersonID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`FirstName`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @param VarChar(4) -- String
 SET     @param = 'test'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 
@@ -18,7 +18,7 @@ SELECT
 	END as `c1`
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = -1
 

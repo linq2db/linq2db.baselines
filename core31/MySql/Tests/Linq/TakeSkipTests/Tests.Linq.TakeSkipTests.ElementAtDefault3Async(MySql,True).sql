@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @n Int32
 SET     @n = 3
 DECLARE @take Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`key_data_result`.`ParentID`,
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN `Child` `_ch` ON `_ch`.`ParentID` = `key_data_result`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	(

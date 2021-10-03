@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @fm String(1) -- AnsiStringFixedLength
 SET     @fm = 'F'
 

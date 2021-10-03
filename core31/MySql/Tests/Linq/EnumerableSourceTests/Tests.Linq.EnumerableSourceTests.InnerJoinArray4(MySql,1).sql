@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`FirstName`,
@@ -19,7 +19,7 @@ FROM
 			SELECT 'Doe' FROM DUAL) `n` ON `p`.`LastName` = `n`.`item`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`FirstName`,

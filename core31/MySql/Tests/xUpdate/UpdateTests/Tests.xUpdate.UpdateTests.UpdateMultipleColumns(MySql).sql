@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ID Int32
 SET     @ID = 1001
 
@@ -10,10 +10,10 @@ WHERE
 	`t1`.`ID` = @ID
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ID Int32
 SET     @ID = 1001
-DECLARE @MoneyValue Decimal(4, 0)
+DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue Int16
 SET     @SmallIntValue = 100
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ID Int32
 SET     @ID = 1001
 
@@ -45,7 +45,7 @@ WHERE
 	`t`.`ID` = @ID
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @take Int32
@@ -67,7 +67,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ID Int32
 SET     @ID = 1001
 

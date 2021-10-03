@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Issue913Test`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Issue913Test`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Issue913Test`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Issue913Test`
 (
@@ -28,7 +28,7 @@ VALUES
 (3,'D')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`c1`,
@@ -54,7 +54,7 @@ GROUP BY
 	`t1`.`c1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Issue913Test`
 

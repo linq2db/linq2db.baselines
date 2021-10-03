@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Issue1403Tests_3`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Issue1403Tests_3`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Issue1403Tests_3`
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -36,7 +36,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Issue1403Tests_3`
 

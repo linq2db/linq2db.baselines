@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 ALTER TABLE `AllTypes` AUTO_INCREMENT = 3
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Value_1 Int32
 SET     @Value_1 = 0
 
@@ -18,24 +18,15 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
-
-INSERT INTO `AllTypes`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(13,200),
-(23,300)
+INSERT ASYNC BULK `AllTypes`(ID, intDataType
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @lastId Int32
 SET     @lastId = 3
 
@@ -50,7 +41,7 @@ ORDER BY
 	`_`.`ID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @lastId Int32
 SET     @lastId = 3
 

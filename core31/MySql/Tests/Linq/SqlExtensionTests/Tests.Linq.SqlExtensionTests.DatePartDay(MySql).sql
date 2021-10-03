@@ -14,7 +14,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Extract(day from `t`.`DateTimeValue`)

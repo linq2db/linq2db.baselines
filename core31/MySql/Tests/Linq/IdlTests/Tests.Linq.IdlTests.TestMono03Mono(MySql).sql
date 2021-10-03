@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @p1 VarChar(1) -- String
 SET     @p1 = 'A'
 DECLARE @p2 Int32

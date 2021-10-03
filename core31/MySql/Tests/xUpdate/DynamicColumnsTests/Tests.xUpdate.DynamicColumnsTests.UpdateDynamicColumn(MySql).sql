@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Person`
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -25,7 +25,7 @@ WHERE
 	`c_1`.`LastName` = 'Limonadovy'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 UPDATE
 	`Person` `c_1`
@@ -35,7 +35,7 @@ WHERE
 	`c_1`.`LastName` = 'Limonadovy'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -45,7 +45,7 @@ WHERE
 	`c_1`.`FirstName` = 'Johnny' AND `c_1`.`LastName` = 'Limonadovy'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM

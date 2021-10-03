@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `MRECEIPT`
 (
@@ -8,7 +8,7 @@ CREATE TABLE `MRECEIPT`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `CUST_DTL`
 (
@@ -17,12 +17,12 @@ CREATE TABLE `CUST_DTL`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CUST_DTL`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `MRECEIPT`
 

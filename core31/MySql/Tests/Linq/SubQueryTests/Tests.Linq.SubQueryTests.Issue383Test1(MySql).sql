@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Contract_Distributor_Agent`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Contract_Distributor_Agent`
 (
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `Contract_Distributor_Agent`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Contract_Distributor_Agent`
 (
@@ -32,12 +32,12 @@ VALUES
 (1,1,198827882,'CC','OFFICE','REPRESENTS')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Agent`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Agent`
 (
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `Agent`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Agent`
 (
@@ -59,12 +59,12 @@ VALUES
 (1,'x','x')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Distributor`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Distributor`
 (
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `Distributor`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Distributor`
 (
@@ -86,12 +86,12 @@ VALUES
 (1,'RE','x')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Distributor_Commercial_Propert`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Distributor_Commercial_Propert`
 (
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `Distributor_Commercial_Propert`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Distributor_Commercial_Propert`
 (
@@ -113,12 +113,12 @@ VALUES
 (1,1,'RE')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Commercial_Property`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Commercial_Property`
 (
@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `Commercial_Property`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Commercial_Property`
 (
@@ -148,12 +148,12 @@ VALUES
 (1,'x','x','x','x','x','x')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Contract_Dates`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Contract_Dates`
 (
@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `Contract_Dates`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Contract_Dates`
 (
@@ -175,12 +175,12 @@ VALUES
 (198827882,'ESTCOE','x')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Cities`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Cities`
 (
@@ -189,7 +189,7 @@ CREATE TABLE IF NOT EXISTS `Cities`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Cities`
 (
@@ -200,7 +200,7 @@ VALUES
 ('x','Urupinsk')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`key_data_result`.`City_Code`,
@@ -272,7 +272,7 @@ FROM
 		INNER JOIN `Cities` `detail` ON (`detail`.`City_Code` = `key_data_result`.`City_Code` OR `detail`.`City_Code` IS NULL AND `key_data_result`.`City_Code` IS NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`a`.`First_Name`,
@@ -317,37 +317,37 @@ WHERE
 	`dcp`.`Distributor_Type_Code` = 'RE'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Cities`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Contract_Dates`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Commercial_Property`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Distributor_Commercial_Propert`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Distributor`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Agent`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Contract_Distributor_Agent`
 

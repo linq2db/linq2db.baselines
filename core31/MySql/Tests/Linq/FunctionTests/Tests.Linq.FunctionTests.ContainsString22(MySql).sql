@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @nm VarChar(4) -- String
 SET     @nm = 'John'
 

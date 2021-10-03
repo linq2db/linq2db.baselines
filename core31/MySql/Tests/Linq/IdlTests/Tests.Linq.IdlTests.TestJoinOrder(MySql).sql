@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x_2`.`ChildID`,
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN `Person` `x_1` ON `x_2`.`ChildID` = `x_1`.`PersonID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x_2`.`ChildID`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Issue1554Table`
 (
@@ -11,7 +11,7 @@ CREATE TABLE `Issue1554Table`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType VarChar(3) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ClaimedKeyType VarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
 
@@ -46,7 +46,7 @@ WHERE
 	`p`.`Id` = 0
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -59,7 +59,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Issue1554Table`
 

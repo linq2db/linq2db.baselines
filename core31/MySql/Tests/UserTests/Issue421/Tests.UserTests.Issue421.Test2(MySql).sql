@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `BlobClass`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `BlobClass`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `BlobClass`
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`_`.`Id`,
@@ -36,7 +36,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 UPDATE
 	`BlobClass` `_`
@@ -46,7 +46,7 @@ WHERE
 	`_`.`Id` = 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`_`.`Id`,
@@ -58,7 +58,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `BlobClass`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`FirstName`,
@@ -13,7 +13,7 @@ WHERE
 	`p`.`MiddleName` IS NULL
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @str VarChar(3) -- String
 SET     @str = '123'
 

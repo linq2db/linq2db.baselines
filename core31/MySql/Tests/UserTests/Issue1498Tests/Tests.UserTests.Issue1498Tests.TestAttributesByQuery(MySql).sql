@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Topic`
 (
@@ -9,7 +9,7 @@ CREATE TABLE `Topic`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Message`
 (
@@ -19,7 +19,7 @@ CREATE TABLE `Message`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -72,7 +72,7 @@ FROM
 		INNER JOIN `Message` `detail` ON `detail`.`TopicId` = `key_data_result`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -87,12 +87,12 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Message`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Topic`
 

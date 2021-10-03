@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Issue2434Table`
 (
@@ -9,7 +9,7 @@ CREATE TABLE `Issue2434Table`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -22,7 +22,7 @@ ORDER BY
 	Concat(`t1`.`FirstName`, Concat(' ', `t1`.`LastName`))
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Issue2434Table`
 

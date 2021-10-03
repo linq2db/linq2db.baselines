@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`PersonID`,
@@ -12,7 +12,7 @@ WHERE
 	LOCATE('test', Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`FirstName`,

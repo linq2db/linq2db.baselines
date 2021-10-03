@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `TakeSkipClass`
 (
@@ -29,7 +29,7 @@ VALUES
 ('Value8')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @skip_2 Int32
 SET     @skip_2 = 3
 DECLARE @skip_3 Int32
@@ -44,7 +44,7 @@ ORDER BY
 LIMIT @skip_2, @skip_3
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 

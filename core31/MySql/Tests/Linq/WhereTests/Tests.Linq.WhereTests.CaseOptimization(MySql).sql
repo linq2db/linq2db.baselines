@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `WhereWithString`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `WhereWithString`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `WhereWithString`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `WhereWithString`
 (
@@ -26,7 +26,7 @@ VALUES
 (1,'Str1')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x`.`Id`,
@@ -37,7 +37,7 @@ WHERE
 	LOCATE('Str', `x`.`StringValue`) > 0
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `WhereWithString`
 

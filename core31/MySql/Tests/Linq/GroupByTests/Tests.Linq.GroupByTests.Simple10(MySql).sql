@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ParentID`
@@ -9,7 +9,7 @@ GROUP BY
 	`t1`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 

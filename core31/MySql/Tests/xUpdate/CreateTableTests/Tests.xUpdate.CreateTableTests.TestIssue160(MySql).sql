@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `aa`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `aa`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @cc VarChar(5) -- String
 SET     @cc = 'hallo'
 DECLARE @bb Int32
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`cc`,
@@ -37,7 +37,7 @@ FROM
 	`aa` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE `aa`
 

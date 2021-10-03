@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 3
 
@@ -19,7 +19,7 @@ WHERE
 	`c_1`.`ParentID` = `t1`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @skip Int32
 SET     @skip = 12
 DECLARE @take Int32

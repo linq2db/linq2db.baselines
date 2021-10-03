@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `CustomerBase`
 (
@@ -13,7 +13,7 @@ CREATE TABLE `CustomerBase`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`cb`.`Id`,
@@ -26,7 +26,7 @@ WHERE
 	`cb`.`ClientType` = 'Client'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CustomerBase`
 

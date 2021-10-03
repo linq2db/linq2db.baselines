@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH `CTE_1`
 (
@@ -45,7 +45,7 @@ FROM
 	) `t2`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH `CTE_1`
 (

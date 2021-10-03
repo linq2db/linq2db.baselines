@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`c_1`.`ParentID`,
@@ -17,7 +17,7 @@ WHERE
 	)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`c_1`.`ParentID`,

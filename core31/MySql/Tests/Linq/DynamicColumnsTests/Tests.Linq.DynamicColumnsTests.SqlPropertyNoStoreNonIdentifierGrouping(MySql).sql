@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `DynamicTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `DynamicTable`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `DynamicTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `DynamicTable`
 (
@@ -28,7 +28,7 @@ VALUES
 (77,5)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Not Identifier`,
@@ -40,7 +40,7 @@ GROUP BY
 	`t1`.`Not Identifier`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `DynamicTable`
 

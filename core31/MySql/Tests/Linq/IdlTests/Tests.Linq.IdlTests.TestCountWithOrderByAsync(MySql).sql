@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 SELECT
 	Max(`x`.`PersonID`)
@@ -7,7 +7,7 @@ FROM
 	`Person` `x`
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 SELECT
 	Count(*)

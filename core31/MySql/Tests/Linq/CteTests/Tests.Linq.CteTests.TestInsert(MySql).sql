@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `CteChild`
 (
@@ -8,7 +8,7 @@ CREATE TABLE `CteChild`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `CteChild`
 (
@@ -44,7 +44,7 @@ FROM
 		INNER JOIN `LAST0` `c4_1` ON `c4_1`.`ParentID` = `p`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ChildID`,
@@ -56,7 +56,7 @@ ORDER BY
 	`t1`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`c4`.`ChildID`,
@@ -71,7 +71,7 @@ ORDER BY
 	`c4`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CteChild`
 

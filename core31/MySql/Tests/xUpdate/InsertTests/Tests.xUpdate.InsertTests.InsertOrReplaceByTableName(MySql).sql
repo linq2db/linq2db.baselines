@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `xxPatient`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `xxPatient`
 (
@@ -15,7 +15,7 @@ CREATE TABLE `xxPatient`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
@@ -35,7 +35,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
@@ -55,7 +55,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -63,7 +63,7 @@ FROM
 	`xxPatient` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
@@ -83,7 +83,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
@@ -103,7 +103,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -111,7 +111,7 @@ FROM
 	`xxPatient` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `xxPatient`
 

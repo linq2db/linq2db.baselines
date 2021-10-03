@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Fact`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Fact`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `Fact`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Fact`
 (
@@ -26,12 +26,12 @@ VALUES
 (5)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Tag`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Tag`
 (
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `Tag`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Tag`
 (
@@ -57,7 +57,7 @@ VALUES
 (3,4,'Tag4')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`fact_1`.`Id`,
@@ -71,12 +71,12 @@ WHERE
 	`fact_1`.`Id` > 3
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Tag`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Fact`
 

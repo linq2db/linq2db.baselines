@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Cast(Floor(`t`.`MoneyValue`) as SIGNED)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Parent`
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Child`
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Value1 Int32
 SET     @Value1 = 5
 
@@ -38,7 +38,7 @@ WHERE
 	`a_Parent`.`ChildID` = 10000
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM
@@ -47,7 +47,7 @@ WHERE
 	`t1`.`ChildID` = 10000
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM

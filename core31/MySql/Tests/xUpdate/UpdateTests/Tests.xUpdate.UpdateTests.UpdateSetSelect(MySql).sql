@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`ParentID` > 1000
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 UPDATE
 	`Parent` `p`
@@ -26,7 +26,7 @@ WHERE
 	`p`.`ParentID` = 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 

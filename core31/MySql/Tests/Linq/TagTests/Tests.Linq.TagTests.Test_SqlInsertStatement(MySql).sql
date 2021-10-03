@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `TestTable`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `TestTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 /* My Test */
 INSERT INTO `TestTable`
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TestTable`
 

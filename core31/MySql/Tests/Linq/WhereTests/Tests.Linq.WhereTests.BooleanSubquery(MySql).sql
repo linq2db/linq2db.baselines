@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `WhereWithBool`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `WhereWithBool`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `WhereWithBool`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `WhereWithBool`
 (
@@ -26,7 +26,7 @@ VALUES
 (1,1)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t`.`Id`,
@@ -44,7 +44,7 @@ WHERE
 	) = 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `WhereWithBool`
 

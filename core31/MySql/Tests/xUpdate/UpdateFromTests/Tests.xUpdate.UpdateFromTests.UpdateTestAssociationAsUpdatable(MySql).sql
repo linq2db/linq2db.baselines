@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `UpdatedEntities`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 (
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `UpdatedEntities`
 (
@@ -35,12 +35,12 @@ VALUES
 (3,31,32,33,3)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `UpdateRelation`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `UpdateRelation`
 (
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `UpdateRelation`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `UpdateRelation`
 (
@@ -69,7 +69,7 @@ VALUES
 (3,31,32,33)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 UPDATE
 	`UpdatedEntities` `v`
@@ -80,7 +80,7 @@ WHERE
 	`a_Relation`.`RelatedValue1` = 11
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -94,12 +94,12 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `UpdateRelation`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `UpdatedEntities`
 

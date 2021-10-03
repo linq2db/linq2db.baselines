@@ -1,10 +1,15 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
+
+SET GLOBAL local_infile=ON
+
+BeforeExecute
+-- MySql
 
 SELECT Max(`PersonID`) FROM `Person`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Person`
 (

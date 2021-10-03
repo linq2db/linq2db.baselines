@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`key_data_result`.`ParentID`,
@@ -19,7 +19,7 @@ ORDER BY
 	`detail`.`ChildID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`ParentID`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -13,7 +13,7 @@ WHERE
 	(Concat('{}', `p`.`LastName`) = Concat('{}', `p`.`LastName`) OR Concat('{}', `p`.`LastName`) IS NULL AND Concat('{}', `p`.`LastName`) IS NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)

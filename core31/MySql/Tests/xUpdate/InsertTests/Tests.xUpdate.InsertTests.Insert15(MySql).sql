@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `_`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(8) -- String
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -44,7 +44,7 @@ WHERE
 	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `_`
 FROM

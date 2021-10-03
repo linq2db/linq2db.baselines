@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM
 	`InheritanceParent` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -30,7 +30,7 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data_1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -38,7 +38,7 @@ FROM
 	`InheritanceParent` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -62,7 +62,7 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data_1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `ProductTable`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `ProductTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `ProductAttributeTable`
 (
@@ -21,7 +21,7 @@ CREATE TABLE `ProductAttributeTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `ProductAttributeMapping`
 (
@@ -32,7 +32,7 @@ CREATE TABLE `ProductAttributeMapping`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`pa`.`Id`
@@ -55,17 +55,17 @@ WHERE
 	)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `ProductAttributeMapping`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `ProductAttributeTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `ProductTable`
 

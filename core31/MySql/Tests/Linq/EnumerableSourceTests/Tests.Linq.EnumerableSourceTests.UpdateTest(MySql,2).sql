@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TableToInsert`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `TableToInsert`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `TableToInsert`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `TableToInsert`
 (
@@ -27,7 +27,7 @@ VALUES
 (4,'Doe')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 UPDATE
 	`TableToInsert` `t`
@@ -39,7 +39,7 @@ SET
 	`t`.`Value` = `r`.`Value`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -48,7 +48,7 @@ FROM
 	`TableToInsert` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TableToInsert`
 

@@ -9,7 +9,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`ParentID`,

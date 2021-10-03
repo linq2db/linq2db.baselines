@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @take Int32
@@ -44,7 +44,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @newName VarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

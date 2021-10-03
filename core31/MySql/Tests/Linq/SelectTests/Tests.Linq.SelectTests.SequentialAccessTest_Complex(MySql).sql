@@ -9,7 +9,7 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`TypeDiscriminator`,
@@ -34,7 +34,7 @@ FROM
 		LEFT JOIN [InheritanceParent] [a_Parent] ON [t1].[InheritanceParentId] = [a_Parent].[InheritanceParentId]
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`InheritanceParentId`,

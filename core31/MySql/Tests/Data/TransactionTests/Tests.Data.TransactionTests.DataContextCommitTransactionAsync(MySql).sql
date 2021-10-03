@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `_`
 FROM

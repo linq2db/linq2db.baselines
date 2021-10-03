@@ -50,7 +50,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @skip Int32
 SET     @skip = 2
 DECLARE @take Int32

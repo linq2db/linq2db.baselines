@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `TableToInsert`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `TableToInsert`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `TableToInsert`
 (
@@ -30,7 +30,7 @@ WHERE
 	`t`.`Id` IS NULL
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `TableToInsert`
 (
@@ -50,7 +50,7 @@ WHERE
 	`t`.`Id` IS NULL
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TableToInsert`
 

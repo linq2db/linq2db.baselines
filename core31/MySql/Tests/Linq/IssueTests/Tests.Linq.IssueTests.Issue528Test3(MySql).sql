@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`FirstName`
@@ -9,7 +9,7 @@ GROUP BY
 	`t1`.`FirstName`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 
@@ -25,7 +25,7 @@ WHERE
 	`keyParam`.`FirstName` = @FirstName
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Tester'
 
@@ -41,7 +41,7 @@ WHERE
 	`keyParam`.`FirstName` = @FirstName
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'Jane'
 
@@ -57,7 +57,7 @@ WHERE
 	`keyParam`.`FirstName` = @FirstName
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Jürgen'
 

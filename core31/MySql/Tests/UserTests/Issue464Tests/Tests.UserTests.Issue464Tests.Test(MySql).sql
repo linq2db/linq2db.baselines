@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Issue464`
 (
@@ -8,7 +8,7 @@ CREATE TABLE `Issue464`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Issue464`
 (
@@ -21,7 +21,7 @@ VALUES
 (3,3)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -30,7 +30,7 @@ FROM
 	`Issue464` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE `Issue464`
 

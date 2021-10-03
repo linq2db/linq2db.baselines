@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `CreateTableTypes`
 (
@@ -8,7 +8,7 @@ CREATE TABLE `CreateTableTypes`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @String VarChar -- String
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @String VarChar(7) -- String
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -55,7 +55,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CreateTableTypes`
 

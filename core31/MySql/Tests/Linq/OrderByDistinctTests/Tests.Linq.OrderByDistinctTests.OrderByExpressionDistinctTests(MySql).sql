@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `OrderByDistinctData`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `OrderByDistinctData`
 (
@@ -47,7 +47,7 @@ VALUES
 (600,'Three',5,5)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -64,7 +64,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -81,7 +81,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `OrderByDistinctData`
 

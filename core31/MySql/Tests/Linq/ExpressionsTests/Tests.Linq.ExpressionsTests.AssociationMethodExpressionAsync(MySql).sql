@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 SELECT
 	`t1`.`ParentID`,
@@ -8,7 +8,7 @@ FROM
 	`Parent` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 SELECT
 	(

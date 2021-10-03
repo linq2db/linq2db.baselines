@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 DECLARE @Value1 Int32
@@ -14,7 +14,7 @@ WHERE
 	`p`.`ParentID` = @ParentID AND `p`.`Value1` = @Value1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2
 

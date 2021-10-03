@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Person`
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -45,7 +45,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -65,7 +65,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -85,7 +85,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @take Int32
@@ -101,7 +101,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 5
 
@@ -112,7 +112,7 @@ WHERE
 	`t1`.`PersonID` = @id
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id Int32
 SET     @id = 5
 

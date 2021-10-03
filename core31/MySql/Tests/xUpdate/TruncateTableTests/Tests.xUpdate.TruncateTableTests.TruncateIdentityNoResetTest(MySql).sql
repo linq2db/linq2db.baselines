@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `test_temp`
 (
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `test_temp`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `test_temp`
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `test_temp`
 (
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @skip Int32
 SET     @skip = 1
 DECLARE @take Int32
@@ -50,12 +50,12 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE FROM `test_temp`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `test_temp`
 (
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `test_temp`
 (
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @skip Int32
 SET     @skip = 1
 DECLARE @take Int32
@@ -95,7 +95,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `test_temp`
 

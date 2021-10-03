@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `ValueConversion`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `ValueConversion`
 (
@@ -49,7 +49,7 @@ VALUES
 (10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = 'Y'
 
@@ -65,7 +65,7 @@ FROM
 		) `t2_1` ON `t2_1`.`BoolValue` = @BoolValue AND `t1`.`BoolValue` = @BoolValue
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

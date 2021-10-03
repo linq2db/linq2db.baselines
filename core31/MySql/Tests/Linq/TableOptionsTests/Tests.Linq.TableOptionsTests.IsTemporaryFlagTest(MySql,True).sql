@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TEMPORARY TABLE `IsTemporaryTable`
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `IsTemporaryTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -17,7 +17,7 @@ FROM
 	`IsTemporaryTable` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `IsTemporaryTable`
 

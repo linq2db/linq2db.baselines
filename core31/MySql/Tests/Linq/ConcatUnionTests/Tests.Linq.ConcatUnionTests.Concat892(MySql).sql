@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t2`.`Value1`,
@@ -32,7 +32,7 @@ FROM
 	) `t2`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -41,7 +41,7 @@ FROM
 	`Child` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ParentID`,

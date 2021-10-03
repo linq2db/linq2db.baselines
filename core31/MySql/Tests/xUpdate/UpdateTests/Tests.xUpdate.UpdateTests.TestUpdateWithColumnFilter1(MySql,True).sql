@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName VarChar(8) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take Int32
@@ -49,7 +49,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName VarChar(8) -- String
@@ -72,7 +72,7 @@ WHERE
 	`t1`.`PersonID` = @ID
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take Int32
@@ -91,7 +91,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @newName VarChar(25) -- String
 SET     @newName = 'UpdateColumnFilterUpdated'
 

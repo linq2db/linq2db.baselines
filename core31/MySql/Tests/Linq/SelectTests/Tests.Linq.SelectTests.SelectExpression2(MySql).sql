@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SelectExpressionTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `SelectExpressionTable`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `SelectExpressionTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `SelectExpressionTable`
 (
@@ -24,7 +24,7 @@ VALUES
 (1)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @p_1 Guid
 SET     @p_1 = 'b3d9b51c-89f9-442a-893b-cd8a6f667d37'
 DECLARE @p_2 Guid
@@ -40,7 +40,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SelectExpressionTable`
 

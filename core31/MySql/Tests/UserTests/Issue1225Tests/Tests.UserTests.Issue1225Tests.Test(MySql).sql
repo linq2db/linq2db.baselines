@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Task`
 (
@@ -9,7 +9,7 @@ CREATE TABLE `Task`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `TaskStage`
 (
@@ -21,7 +21,7 @@ CREATE TABLE `TaskStage`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 1
 
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 2
 
@@ -49,12 +49,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @TaskId Int32
 SET     @TaskId = 1
-DECLARE @Actual UByte -- Boolean
+DECLARE @Actual Bool -- Boolean
 SET     @Actual = 1
 
 INSERT INTO `TaskStage`
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	'Id',
@@ -88,12 +88,12 @@ GROUP BY
 	`selectParam`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TaskStage`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Task`
 

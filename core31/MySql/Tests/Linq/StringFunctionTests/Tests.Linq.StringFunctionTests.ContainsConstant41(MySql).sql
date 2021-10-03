@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @ps VarChar(1) -- String
 SET     @ps = '['
 DECLARE @s VarChar(7) -- String

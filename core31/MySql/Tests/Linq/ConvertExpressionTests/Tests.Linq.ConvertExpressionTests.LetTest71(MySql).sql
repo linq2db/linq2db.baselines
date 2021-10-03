@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @p_1 Int32
 SET     @p_1 = 5000
 
@@ -27,7 +27,7 @@ ORDER BY
 	`_c`.`ChildID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take_1 Int32
 SET     @take_1 = 1
 DECLARE @take Int32

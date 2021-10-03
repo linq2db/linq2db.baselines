@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `TestEqualsTable1`
 (
@@ -7,7 +7,7 @@ CREATE TABLE `TestEqualsTable1`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `TestEqualsTable2`
 (
@@ -16,7 +16,7 @@ CREATE TABLE `TestEqualsTable2`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`_`.`Id`
@@ -33,12 +33,12 @@ WHERE
 	)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TestEqualsTable2`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TestEqualsTable1`
 

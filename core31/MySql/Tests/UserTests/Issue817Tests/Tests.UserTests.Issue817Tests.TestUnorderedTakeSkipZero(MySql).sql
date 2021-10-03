@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32

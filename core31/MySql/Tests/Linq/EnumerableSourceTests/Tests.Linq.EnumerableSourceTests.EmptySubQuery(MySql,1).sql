@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `TableToInsert`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `TableToInsert`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t`.`Id`,
@@ -28,7 +28,7 @@ WHERE
 	)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TableToInsert`
 

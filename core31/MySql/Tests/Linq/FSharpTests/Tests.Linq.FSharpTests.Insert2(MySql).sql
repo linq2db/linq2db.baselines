@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Max(`p`.`PersonID`)
@@ -7,7 +7,7 @@ FROM
 	`Person` `p`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Gender VarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(2) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -50,7 +50,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DELETE `t1`
 FROM

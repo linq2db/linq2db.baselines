@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Max(`x`.`PersonID`)
@@ -9,7 +9,7 @@ WHERE
 	`x`.`PersonID` < 0
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Max(`x`.`PersonID`)
@@ -19,7 +19,7 @@ WHERE
 	`x`.`PersonID` < 0
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Max(`x`.`PersonID`)
@@ -29,7 +29,7 @@ WHERE
 	`x`.`PersonID` < 0
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Max(`x`.`PersonID`)

@@ -20,7 +20,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @pattern VarChar(1) -- String
 SET     @pattern = '1'
 DECLARE @take Int32

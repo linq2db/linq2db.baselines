@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`_`.`FirstName`,
@@ -13,7 +13,7 @@ WHERE
 	`_`.`PersonID` = 1 AND `_`.`Gender` = 'M'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`_`.`FirstName`,
@@ -27,7 +27,7 @@ WHERE
 	`_`.`PersonID` = 1 AND 'M' = `_`.`Gender`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @gender String -- StringFixedLength
 SET     @gender = 'M'
 
@@ -43,7 +43,7 @@ WHERE
 	`_`.`PersonID` = 1 AND `_`.`Gender` = @gender
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @gender String -- StringFixedLength
 SET     @gender = 'M'
 

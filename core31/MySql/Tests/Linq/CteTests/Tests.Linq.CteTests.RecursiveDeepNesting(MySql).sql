@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `HierarchyTree`
 (
@@ -8,7 +8,7 @@ CREATE TABLE `HierarchyTree`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `HierarchyTree`
 

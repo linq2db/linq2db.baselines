@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `ValueConversion`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `ValueConversion`
 (
@@ -49,7 +49,7 @@ VALUES
 (10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -65,7 +65,7 @@ FROM
 	`ValueConversion` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t`.`Id`,
@@ -75,7 +75,7 @@ FROM
 	`ValueConversion` `t`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -92,7 +92,7 @@ FROM
 	) `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t`.`Id`,
@@ -116,7 +116,7 @@ FROM
 	) `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @skip Int32
 SET     @skip = 1
 DECLARE @take Int32
@@ -137,7 +137,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

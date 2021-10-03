@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Stone`
 (
@@ -12,10 +12,10 @@ CREATE TABLE `Stone`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled UByte -- Boolean
+DECLARE @Enabled Bool -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -34,10 +34,10 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled UByte -- Boolean
+DECLARE @Enabled Bool -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -56,10 +56,10 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
-DECLARE @Enabled UByte -- Boolean
+DECLARE @Enabled Bool -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`s`.`Name`
@@ -93,7 +93,7 @@ GROUP BY
 	`s`.`Name`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 
@@ -112,7 +112,7 @@ WHERE
 	`s`.`Name` = @Name
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
 
@@ -131,7 +131,7 @@ WHERE
 	`s`.`Name` = @Name
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Stone`
 

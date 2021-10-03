@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `SimpleBulkCopyTable`
 (
@@ -7,7 +7,7 @@ CREATE TABLE `SimpleBulkCopyTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -17,7 +17,7 @@ VALUES
 (1)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -27,17 +27,10 @@ VALUES
 (2)
 
 BeforeExecute
--- MySql MySql.Official MySql
-
-INSERT INTO `SimpleBulkCopyTable`
-(
-	`Id`
-)
-VALUES
-(3)
+INSERT BULK `SimpleBulkCopyTable`(Id
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SimpleBulkCopyTable`
 

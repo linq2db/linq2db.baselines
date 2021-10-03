@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SampleData`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `SampleData`
 (
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `SampleData`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `SampleData`
 (
@@ -39,7 +39,7 @@ VALUES
 (10,100,1000,10000)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT DISTINCT
 	`t1`.`Id`,
@@ -83,7 +83,7 @@ WHERE
 	)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SampleData`
 

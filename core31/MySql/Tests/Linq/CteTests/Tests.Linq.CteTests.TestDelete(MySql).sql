@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CteChild`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `CteChild`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `CteChild`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `CteChild`
 (
@@ -33,7 +33,7 @@ VALUES
 (1009,9)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH `CTE_1` (`ParentID`)
 AS
@@ -51,7 +51,7 @@ FROM
 		INNER JOIN `CTE_1` `ct` ON `ct`.`ParentID` = `c_2`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CteChild`
 

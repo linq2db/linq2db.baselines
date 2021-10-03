@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -12,7 +12,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @nameToCheck_1 VarChar(4) -- String
 SET     @nameToCheck_1 = 'Joh%'
 
@@ -25,7 +25,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @nameToCheck_1 VarChar(4) -- String
 SET     @nameToCheck_1 = 'Joh%'
 
@@ -38,7 +38,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @nameToCheck_1 VarChar(4) -- String
 SET     @nameToCheck_1 = 'JOH%'
 
@@ -51,7 +51,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @nameToCheck_1 VarChar(4) -- String
 SET     @nameToCheck_1 = 'JOH%'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @toTest VarChar(2) -- String
 SET     @toTest = ']]'
 DECLARE @s VarChar(8) -- String

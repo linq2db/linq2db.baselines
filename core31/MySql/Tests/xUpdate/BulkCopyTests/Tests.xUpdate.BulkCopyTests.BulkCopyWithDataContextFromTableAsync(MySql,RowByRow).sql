@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `SimpleBulkCopyTable`
 (
@@ -7,7 +7,7 @@ CREATE TABLE `SimpleBulkCopyTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -17,7 +17,7 @@ VALUES
 (1)
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -27,7 +27,7 @@ VALUES
 (2)
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 3
 
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -51,7 +51,7 @@ VALUES
 (10)
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -61,7 +61,7 @@ VALUES
 (20)
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 30
 
@@ -75,7 +75,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SimpleBulkCopyTable`
 

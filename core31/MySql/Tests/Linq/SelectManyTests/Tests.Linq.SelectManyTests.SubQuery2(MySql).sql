@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`PersonID`,
@@ -12,7 +12,7 @@ WHERE
 	`p_1`.`PersonID` <> 2
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`PersonID`,

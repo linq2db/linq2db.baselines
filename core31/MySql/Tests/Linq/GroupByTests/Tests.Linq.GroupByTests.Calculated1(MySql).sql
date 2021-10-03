@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Key_1`
@@ -22,7 +22,7 @@ GROUP BY
 	`t1`.`Key_1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @p_1 VarChar(1) -- String
 SET     @p_1 = '1'
 

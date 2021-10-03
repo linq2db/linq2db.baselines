@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @p_1 VarChar(1) -- String
 SET     @p_1 = '1'
 

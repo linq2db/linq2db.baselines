@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t`.`ParentID`,
@@ -8,7 +8,7 @@ FROM
 	`Parent` `t`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @param_1 Int32
 SET     @param_1 = 1
 

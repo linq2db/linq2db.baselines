@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`FirstName`,
@@ -13,7 +13,7 @@ WHERE
 	`p`.`FirstName` = 'John'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`FirstName`,

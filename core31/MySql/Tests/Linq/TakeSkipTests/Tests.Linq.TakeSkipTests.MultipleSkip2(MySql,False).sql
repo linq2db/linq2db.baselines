@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `TakeSkipClass`
 (
@@ -25,7 +25,7 @@ VALUES
 ('BOLTO')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Value`
@@ -36,7 +36,7 @@ ORDER BY
 LIMIT 3, 9223372036854775807
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Value`
@@ -47,7 +47,7 @@ ORDER BY
 LIMIT 4, 9223372036854775807
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 

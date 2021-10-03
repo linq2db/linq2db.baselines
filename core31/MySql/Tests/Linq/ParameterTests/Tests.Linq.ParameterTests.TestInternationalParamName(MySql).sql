@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @параметр Int32
 SET     @параметр = 1
 
@@ -12,7 +12,7 @@ WHERE
 	`p`.`ParentID` = @параметр
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @参数 Int32
 SET     @参数 = 1
 
@@ -25,7 +25,7 @@ WHERE
 	`p`.`ParentID` = @参数
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @パラメータ Int32
 SET     @パラメータ = 1
 

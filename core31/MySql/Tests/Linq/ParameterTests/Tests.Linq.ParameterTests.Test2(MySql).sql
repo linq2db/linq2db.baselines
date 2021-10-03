@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id1 Int32
 SET     @id1 = 1
 DECLARE @id2 Int32
@@ -21,7 +21,7 @@ ORDER BY
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @id1 Int32
 SET     @id1 = 2
 DECLARE @id2 Int32

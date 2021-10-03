@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`m_1`.`ParentID`,
@@ -23,7 +23,7 @@ FROM
 		) `t1` ON `m_1`.`ParentID` = `t1`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`m_1`.`ParentID`,

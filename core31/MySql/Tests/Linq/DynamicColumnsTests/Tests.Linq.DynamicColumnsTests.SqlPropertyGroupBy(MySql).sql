@@ -20,7 +20,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`FirstName`,

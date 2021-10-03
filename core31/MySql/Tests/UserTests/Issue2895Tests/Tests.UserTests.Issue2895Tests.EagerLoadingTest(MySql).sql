@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `InternalEmail`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `InternalEmail`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `InternalEmail`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `InternalEmail`
 (
@@ -28,12 +28,12 @@ VALUES
 (10,1,1)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Request`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Request`
 (
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `Request`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Request`
 (
@@ -55,12 +55,12 @@ VALUES
 (1,1)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `User`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `User`
 (
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `User`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `User`
 (
@@ -80,12 +80,12 @@ VALUES
 (1)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Admin`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Admin`
 (
@@ -95,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `Admin`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Admin`
 (
@@ -105,12 +105,12 @@ VALUES
 (1)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `EmailAdminAssociation`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `EmailAdminAssociation`
 (
@@ -121,7 +121,7 @@ CREATE TABLE IF NOT EXISTS `EmailAdminAssociation`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `EmailAdminAssociation`
 (
@@ -132,12 +132,12 @@ VALUES
 (10,1)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Email`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Email`
 (
@@ -147,7 +147,7 @@ CREATE TABLE IF NOT EXISTS `Email`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Email`
 (
@@ -157,12 +157,12 @@ VALUES
 (10)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `EmailAttachmentAssociation`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `EmailAttachmentAssociation`
 (
@@ -173,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `EmailAttachmentAssociation`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `EmailAttachmentAssociation`
 (
@@ -184,12 +184,12 @@ VALUES
 (10,100)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Attachment`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Attachment`
 (
@@ -199,7 +199,7 @@ CREATE TABLE IF NOT EXISTS `Attachment`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Attachment`
 (
@@ -209,12 +209,12 @@ VALUES
 (100)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Document`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Document`
 (
@@ -226,7 +226,7 @@ CREATE TABLE IF NOT EXISTS `Document`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Document`
 (
@@ -240,7 +240,7 @@ VALUES
 (101,1,'Some Doc x')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`key_data_result_1`.`Id`,
@@ -280,7 +280,7 @@ FROM
 		INNER JOIN `Document` `__c` ON `a_Attachment`.`Id` = `__c`.`AttachmentId`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`key_data_result`.`Id`,
@@ -306,7 +306,7 @@ FROM
 		LEFT JOIN `Email` `a_Email_1` ON `a_InternalEmail`.`Id` = `a_Email_1`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`a_Admin`.`Id`,
@@ -317,47 +317,47 @@ FROM
 		INNER JOIN `Admin` `a_Admin` ON `a_User`.`Id` = `a_Admin`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Document`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Attachment`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `EmailAttachmentAssociation`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Email`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `EmailAdminAssociation`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Admin`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `User`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Request`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `InternalEmail`
 

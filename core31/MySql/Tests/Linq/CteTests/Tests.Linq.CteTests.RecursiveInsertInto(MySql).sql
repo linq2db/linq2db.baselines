@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `HierarchyTree`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `HierarchyTree`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `HierarchyTree`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `HierarchyTree`
 (
@@ -41,7 +41,7 @@ VALUES
 (212,21)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `HierarchyData`
 (
@@ -50,7 +50,7 @@ CREATE TABLE `HierarchyData`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `HierarchyData`
 (
@@ -99,7 +99,7 @@ FROM
 	`hierarchyDown` `t2`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -110,12 +110,12 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `HierarchyData`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `HierarchyTree`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	Count(*)
@@ -25,7 +25,7 @@ FROM
 		) `c2` ON `p`.`ParentID` = `c2`.`ParentID`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH `CTE_1` (`ParentID`, `ChildID`)
 AS

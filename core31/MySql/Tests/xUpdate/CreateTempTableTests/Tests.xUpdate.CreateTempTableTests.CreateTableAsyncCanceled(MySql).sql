@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`ParentID`
@@ -12,7 +12,7 @@ FROM
 	`Parent` `p`
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 CREATE TEMPORARY TABLE `TempTable`
 (
@@ -20,7 +20,7 @@ CREATE TEMPORARY TABLE `TempTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE `TempTable`
 

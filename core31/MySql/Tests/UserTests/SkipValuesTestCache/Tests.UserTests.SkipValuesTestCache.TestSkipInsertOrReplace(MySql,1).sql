@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `PR_1598_Insert_Table_Cache`
 (
@@ -11,7 +11,7 @@ CREATE TABLE `PR_1598_Insert_Table_Cache`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
@@ -31,7 +31,7 @@ ON DUPLICATE KEY UPDATE
 	`Name` = @Name
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -46,7 +46,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
@@ -66,7 +66,7 @@ ON DUPLICATE KEY UPDATE
 	`Name` = @Name
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -81,7 +81,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `PR_1598_Insert_Table_Cache`
 

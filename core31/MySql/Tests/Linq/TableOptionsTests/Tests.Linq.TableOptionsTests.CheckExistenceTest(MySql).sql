@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `DisposableTable`
 (
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS `DisposableTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `DisposableTable`
 

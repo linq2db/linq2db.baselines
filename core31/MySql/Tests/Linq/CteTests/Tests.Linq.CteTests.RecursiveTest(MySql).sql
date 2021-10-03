@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 WITH RECURSIVE `MY_CTE` (`ChildID`, `ParentID`, `GrandChildID`)
 AS

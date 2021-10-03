@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Src`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Src`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Src`
 (
@@ -29,7 +29,7 @@ VALUES
 (3,NULL,'def',NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @value_1 Int32
 SET     @value_1 = 4
 
@@ -41,7 +41,7 @@ WHERE
 	NOT `s`.`Int` <=> @value_1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @value_1 Int32
 SET     @value_1 = 4
 
@@ -53,7 +53,7 @@ WHERE
 	NOT `s`.`NullableInt` <=> @value_1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @value_1 Int32
 SET     @value_1 = 4
 
@@ -65,7 +65,7 @@ WHERE
 	`s`.`Int` <=> @value_1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @value_1 Int32
 SET     @value_1 = 4
 
@@ -77,7 +77,7 @@ WHERE
 	`s`.`NullableInt` <=> @value_1
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Src`
 

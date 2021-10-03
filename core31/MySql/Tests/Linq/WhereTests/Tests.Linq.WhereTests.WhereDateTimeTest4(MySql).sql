@@ -16,8 +16,8 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @DateTimeValue DateTime
+-- MySql
+DECLARE @DateTimeValue Datetime -- DateTime2
 SET     @DateTimeValue = '2009-09-27'
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `CreateTableTypes`
 (
@@ -8,10 +8,10 @@ CREATE TABLE `CreateTableTypes`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @BooleanNullable UByte -- Boolean
+DECLARE @BooleanNullable Bool -- Boolean
 SET     @BooleanNullable = NULL
 
 INSERT INTO `CreateTableTypes`
@@ -26,10 +26,10 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @BooleanNullable UByte -- Boolean
+DECLARE @BooleanNullable Bool -- Boolean
 SET     @BooleanNullable = 1
 
 INSERT INTO `CreateTableTypes`
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -55,7 +55,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CreateTableTypes`
 

@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`p`.`PersonID`

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ID`,
@@ -15,8 +15,8 @@ FROM
 		INNER JOIN `LinqDataTypes` `t2` ON `t1`.`ID` = `t2`.`ID`
 
 BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @param4 UByte -- Boolean
+-- MySql
+DECLARE @param4 Bool -- Boolean
 SET     @param4 = 0
 
 SELECT

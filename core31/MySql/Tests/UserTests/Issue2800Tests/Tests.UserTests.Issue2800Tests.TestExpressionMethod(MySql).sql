@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Car`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `Car`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Car`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `Car`
 (
@@ -27,7 +27,7 @@ VALUES
 (2,'NoSpecial')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x`.`Id`,
@@ -36,7 +36,7 @@ FROM
 	`Car` `x`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -45,65 +45,7 @@ FROM
 	`Car` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-WHERE
-	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Name`
-FROM
-	`Car` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-WHERE
-	`x`.`Name` = 'Special'
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Name`
-FROM
-	`Car` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Name`
-FROM
-	`Car` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x`.`Id`,
@@ -114,7 +56,7 @@ WHERE
 	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -123,7 +65,7 @@ FROM
 	`Car` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`x`.`Id`,
@@ -134,7 +76,7 @@ WHERE
 	`x`.`Name` = 'Special'
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -143,7 +85,65 @@ FROM
 	`Car` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+
+BeforeExecute
+-- MySql
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Name`
+FROM
+	`Car` `t1`
+
+BeforeExecute
+-- MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+WHERE
+	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
+
+BeforeExecute
+-- MySql
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Name`
+FROM
+	`Car` `t1`
+
+BeforeExecute
+-- MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+WHERE
+	`x`.`Name` = 'Special'
+
+BeforeExecute
+-- MySql
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Name`
+FROM
+	`Car` `t1`
+
+BeforeExecute
+-- MySql
 
 DROP TABLE IF EXISTS `Car`
 

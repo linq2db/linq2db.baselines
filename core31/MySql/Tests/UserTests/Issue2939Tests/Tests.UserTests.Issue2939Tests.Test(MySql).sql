@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Adsl`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Adsl`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Client`
 (
@@ -20,7 +20,7 @@ CREATE TABLE `Client`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`adsl_1`.`Id`
@@ -29,12 +29,12 @@ FROM
 		INNER JOIN `Client` `client_1` ON `adsl_1`.`IdClient` = `client_1`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Client`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Adsl`
 

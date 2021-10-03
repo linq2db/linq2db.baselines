@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `SampleClass`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `SampleClass`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `SampleClass`
 (
@@ -32,7 +32,7 @@ VALUES
 (3,'Z1',NULL,NULL,'Z4')
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	GROUP_CONCAT(`t`.`Value1` SEPARATOR ' -> ')
@@ -40,7 +40,7 @@ FROM
 	`SampleClass` `t`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 

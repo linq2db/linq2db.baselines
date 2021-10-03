@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TableWithPrimaryKey`
 

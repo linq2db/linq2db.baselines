@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `T1351Model`
 (
@@ -9,7 +9,7 @@ CREATE TABLE `T1351Model`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`_`.`ID`,
@@ -21,7 +21,7 @@ WHERE
 	`_`.`TestField` = 0
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`_`.`ID`,
@@ -33,7 +33,7 @@ WHERE
 	(`_`.`TestNullable` <> 1 OR `_`.`TestNullable` IS NULL)
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `T1351Model`
 

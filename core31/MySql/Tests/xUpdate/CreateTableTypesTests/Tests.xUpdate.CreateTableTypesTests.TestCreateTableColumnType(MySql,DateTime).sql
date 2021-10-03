@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `CreateTableTypes`
 (
@@ -8,10 +8,10 @@ CREATE TABLE `CreateTableTypes`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime2
 SET     @DateTime = '2000-01-01'
 
 INSERT INTO `CreateTableTypes`
@@ -26,10 +26,10 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime2
 SET     @DateTime = '2018-11-24 01:02:03'
 
 INSERT INTO `CreateTableTypes`
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`Id`,
@@ -55,7 +55,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `CreateTableTypes`
 

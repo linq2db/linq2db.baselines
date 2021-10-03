@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 102
 
@@ -10,7 +10,7 @@ WHERE
 	`r`.`ID` >= 101 AND `r`.`ID` < @Id
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `LinqDataTypes`
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @TestField Int64
 SET     @TestField = 12
 
@@ -36,7 +36,7 @@ WHERE
 	`r`.`ID` = 101 AND `r`.`BigIntValue` = 11
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -49,7 +49,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @Id Int32
 SET     @Id = 102
 

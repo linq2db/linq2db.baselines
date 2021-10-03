@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `TestTable`
 (
@@ -10,13 +10,13 @@ CREATE TABLE `TestTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 /* My Test */
 TRUNCATE TABLE `TestTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `TestTable`
 

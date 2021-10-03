@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Alert`
 (
@@ -9,7 +9,7 @@ CREATE TABLE `Alert`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `AuditAlert`
 (
@@ -20,7 +20,7 @@ CREATE TABLE `AuditAlert`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Trade`
 (
@@ -30,7 +30,7 @@ CREATE TABLE `Trade`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Nomin`
 (
@@ -40,7 +40,7 @@ CREATE TABLE `Nomin`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE `Flat`
 (
@@ -56,7 +56,7 @@ CREATE TABLE `Flat`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 DECLARE @p_1 VarChar(3) -- String
 SET     @p_1 = '%C%'
 DECLARE @p_2 VarChar(3) -- String
@@ -92,27 +92,27 @@ GROUP BY
 	`al_1`.`alert_2`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Flat`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Nomin`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Trade`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `AuditAlert`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `Alert`
 

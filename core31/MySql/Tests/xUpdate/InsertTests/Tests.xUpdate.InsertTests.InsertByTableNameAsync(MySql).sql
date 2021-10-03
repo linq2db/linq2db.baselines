@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 CREATE TABLE `xxPerson`
 (
@@ -13,7 +13,7 @@ CREATE TABLE `xxPerson`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -65,12 +65,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -96,12 +96,12 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 SELECT
 	Count(*)
@@ -109,7 +109,7 @@ FROM
 	`xxPerson` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 SELECT
 	Count(*)
@@ -120,12 +120,12 @@ WHERE
 	`p`.`Gender` = 'M'
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 DROP TABLE `xxPerson`
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 DROP TABLE IF EXISTS `xxPerson`
 

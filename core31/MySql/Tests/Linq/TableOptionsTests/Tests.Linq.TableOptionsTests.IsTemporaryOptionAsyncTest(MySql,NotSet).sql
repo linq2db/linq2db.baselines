@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 CREATE TEMPORARY TABLE `temp_table1`
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `temp_table1`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 INSERT INTO `temp_table1`
 (
@@ -19,7 +19,7 @@ VALUES
 (1,2)
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 CREATE TEMPORARY TABLE `temp_table2`
 (
@@ -28,7 +28,7 @@ CREATE TEMPORARY TABLE `temp_table2`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 INSERT INTO `temp_table2`
 (
@@ -42,7 +42,7 @@ FROM
 	`temp_table1` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ID`,
@@ -51,7 +51,7 @@ FROM
 	`temp_table1` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT
 	`t1`.`ID`,
@@ -60,7 +60,7 @@ FROM
 	`temp_table2` `t1`
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 INSERT INTO `temp_table1`
 (
@@ -71,7 +71,7 @@ VALUES
 (2,3)
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @Value_1 Int32
@@ -89,33 +89,25 @@ VALUES
 )
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
-
-INSERT INTO `temp_table1`
-(
-	`ID`,
-	`Value`
-)
-VALUES
-(4,5)
+INSERT ASYNC BULK `temp_table1`(ID, Value
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 TRUNCATE TABLE `temp_table1`
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 
 TRUNCATE TABLE `temp_table2`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `temp_table2`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `temp_table1`
 

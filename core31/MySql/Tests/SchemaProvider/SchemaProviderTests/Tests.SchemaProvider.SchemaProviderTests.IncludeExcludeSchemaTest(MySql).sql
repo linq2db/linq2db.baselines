@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 SELECT
@@ -11,7 +11,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 			SELECT
@@ -33,7 +33,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 SELECT
@@ -53,7 +53,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 SELECT
@@ -75,17 +75,17 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_SCHEMA = database()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 SELECT
@@ -97,7 +97,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 			SELECT
@@ -119,7 +119,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 SELECT
@@ -139,7 +139,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 SELECT
@@ -161,17 +161,17 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_SCHEMA = database()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 SELECT
@@ -183,7 +183,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 			SELECT
@@ -205,7 +205,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 SELECT
@@ -225,7 +225,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 
 SELECT
@@ -247,12 +247,12 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_SCHEMA = database()
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 

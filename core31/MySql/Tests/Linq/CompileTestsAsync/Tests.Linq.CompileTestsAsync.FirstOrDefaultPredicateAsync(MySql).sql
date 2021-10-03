@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `AsyncDataTable`
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 )
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 INSERT INTO `AsyncDataTable`
 (
@@ -33,7 +33,7 @@ VALUES
 (10)
 
 BeforeExecute
--- MySql MySql.Official MySql (asynchronously)
+-- MySql (asynchronously)
 DECLARE @Id_1 Int32
 SET     @Id_1 = 2
 DECLARE @take Int32
@@ -48,7 +48,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MySql MySql.Official MySql
+-- MySql
 
 DROP TABLE IF EXISTS `AsyncDataTable`
 
