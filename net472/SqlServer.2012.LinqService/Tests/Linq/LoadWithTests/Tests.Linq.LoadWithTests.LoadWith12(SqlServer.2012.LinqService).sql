@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 1
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[lw_Parent].[ParentID_1],
@@ -25,7 +25,7 @@ FROM
 					[t1].[Value1]
 				FROM
 					(
-						SELECT TOP (@p_1)
+						SELECT TOP (@take)
 							[p].[ParentID],
 							[p].[Value1]
 						FROM
