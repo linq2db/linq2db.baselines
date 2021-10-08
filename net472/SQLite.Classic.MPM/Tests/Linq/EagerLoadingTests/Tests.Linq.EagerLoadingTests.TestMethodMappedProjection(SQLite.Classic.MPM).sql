@@ -1782,8 +1782,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id1  -- Int32
-SET     @Id1 = 1
+DECLARE @intParam  -- Int32
+SET     @intParam = 1
 
 SELECT
 	[key_data_result].[DetailId],
@@ -1800,14 +1800,14 @@ FROM
 			[MasterClass] [m_1]
 				INNER JOIN [DetailClass] [detail] ON [m_1].[Id1] = [detail].[MasterId]
 		WHERE
-			[m_1].[Id1] >= @Id1
+			[m_1].[Id1] >= @intParam
 	) [key_data_result]
 		INNER JOIN [SubDetailClass] [detail_1] ON [key_data_result].[DetailId] = [detail_1].[DetailId]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id1  -- Int32
-SET     @Id1 = 1
+DECLARE @intParam  -- Int32
+SET     @intParam = 1
 
 SELECT
 	[m_1].[Id1],
@@ -1819,7 +1819,7 @@ FROM
 	[MasterClass] [m_1]
 		INNER JOIN [DetailClass] [detail] ON [m_1].[Id1] = [detail].[MasterId]
 WHERE
-	[m_1].[Id1] >= @Id1
+	[m_1].[Id1] >= @intParam
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
