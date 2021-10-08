@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1
+DECLARE @n Int -- Int32
+SET     @n = 1
 
 SELECT
 	[key_data_result].[ParentID],
