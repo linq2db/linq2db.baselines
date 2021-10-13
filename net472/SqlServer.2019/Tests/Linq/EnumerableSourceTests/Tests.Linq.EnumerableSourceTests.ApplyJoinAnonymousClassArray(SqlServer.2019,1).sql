@@ -11,9 +11,9 @@ FROM
 	[Person] [p]
 		CROSS APPLY (VALUES
 			(1,N'Janet',[p].[LastName]), (1,N'Doe',[p].[LastName])
-		) [t1]([ID], [Name], [Sub])
+		) [n]([ID], [Name], [Sub])
 WHERE
-	[p].[LastName] = [t1].[Name]
+	[p].[LastName] = [n].[Name]
 
 BeforeExecute
 -- SQLite.Default SQLite.MS SQLite
