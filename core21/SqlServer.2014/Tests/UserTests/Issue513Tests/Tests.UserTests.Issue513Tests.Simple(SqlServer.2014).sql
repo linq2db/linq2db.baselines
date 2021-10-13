@@ -22,9 +22,9 @@ BeforeExecute
 -- SQLite.Default SQLite.MS SQLite
 
 SELECT
-	[t1].[InheritanceChildId],
-	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
+	[t1].[TypeDiscriminator],
+	[t1].[InheritanceChildId],
 	[t1].[Name],
 	[a_Parent].[InheritanceParentId],
 	[a_Parent].[TypeDiscriminator],
@@ -37,9 +37,9 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-	[t1].[InheritanceChildId],
-	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
+	[t1].[TypeDiscriminator],
+	[t1].[InheritanceChildId],
 	[t1].[Name]
 FROM
 	[InheritanceChild] [t1]
