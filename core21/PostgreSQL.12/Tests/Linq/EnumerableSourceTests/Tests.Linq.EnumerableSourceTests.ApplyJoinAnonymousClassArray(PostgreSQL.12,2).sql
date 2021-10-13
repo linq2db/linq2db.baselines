@@ -11,7 +11,7 @@ FROM
 	"Person" p
 		INNER JOIN LATERAL (VALUES
 			(1,'Janet',p."LastName"), (1,'Doe',p."LastName")
-		) t1("ID", "Name", "Sub") ON 1=1
+		) n("ID", "Name", "Sub") ON 1=1
 WHERE
-	p."LastName" = t1."Name"
+	p."LastName" = n."Name"
 
