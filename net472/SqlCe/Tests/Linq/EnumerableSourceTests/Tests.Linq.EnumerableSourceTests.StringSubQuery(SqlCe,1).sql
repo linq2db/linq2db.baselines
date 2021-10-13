@@ -21,8 +21,8 @@ WHERE
 				UNION ALL
 				SELECT 'h' AS [item]
 				UNION ALL
-				SELECT 'n' AS [item]) [t1]
+				SELECT 'n' AS [item]) [x]
 		WHERE
-			CharIndex([t1].[item], [t].[FirstName]) - 1 > 0
+			CharIndex([x].[item], [t].[FirstName]) - 1 > 0
 	)
 
