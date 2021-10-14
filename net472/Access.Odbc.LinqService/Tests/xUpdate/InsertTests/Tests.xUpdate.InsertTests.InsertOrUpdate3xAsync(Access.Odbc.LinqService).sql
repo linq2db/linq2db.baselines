@@ -32,7 +32,7 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 
 INSERT INTO [Person]
 (
@@ -48,26 +48,24 @@ VALUES
 )
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
-DECLARE @i Int -- Int32
-SET     @i = 0
-DECLARE @id Int -- Int32
-SET     @id = 5
+-- Access.Odbc AccessODBC
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]) + ?)
+	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]))
 WHERE
 	[t1].[PersonID] = ?
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -83,11 +81,11 @@ VALUES
 )
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 DECLARE @i Int -- Int32
 SET     @i = 1
-DECLARE @id Int -- Int32
-SET     @id = 5
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient] [t1]
@@ -97,11 +95,11 @@ WHERE
 	[t1].[PersonID] = ?
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 DECLARE @i Int -- Int32
 SET     @i = 2
-DECLARE @id Int -- Int32
-SET     @id = 5
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient] [t1]
@@ -111,7 +109,7 @@ WHERE
 	[t1].[PersonID] = ?
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -124,7 +122,7 @@ WHERE
 	[p].[PersonID] = ?
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -134,7 +132,7 @@ WHERE
 	[t1].[PersonID] = ?
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
 

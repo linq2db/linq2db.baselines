@@ -15,7 +15,7 @@ SELECT
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ChildID] <= ?
+	[c_1].[ChildID] <= CVar(?)
 UNION ALL
 SELECT
 	CVar(?),
@@ -23,5 +23,5 @@ SELECT
 FROM
 	[Child] [c_2]
 WHERE
-	[c_2].[ChildID] > ?
+	[c_2].[ChildID] > CVar(?)
 

@@ -155,8 +155,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 2
+DECLARE @Id Int -- Int32
+SET     @Id = 2
 
 SELECT TOP 2
 	[c_1].[Id]
