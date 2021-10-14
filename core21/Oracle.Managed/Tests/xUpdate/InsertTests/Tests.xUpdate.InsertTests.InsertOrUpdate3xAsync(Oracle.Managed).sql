@@ -38,13 +38,15 @@ RETURNING
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
-DECLARE @id Int32
-SET     @id = 5
+DECLARE @id2 Int32
+SET     @id2 = 5
 DECLARE @i Int32
 SET     @i = 0
+DECLARE @id Int32
+SET     @id = 5
 
 MERGE INTO "Patient" t1
-USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
+USING (SELECT :id2 AS "PersonID" FROM SYS.DUAL) s ON
 (
 	t1."PersonID" = s."PersonID"
 )
@@ -66,13 +68,15 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
-DECLARE @id Int32
-SET     @id = 5
+DECLARE @id2 Int32
+SET     @id2 = 5
 DECLARE @i Int32
 SET     @i = 1
+DECLARE @id Int32
+SET     @id = 5
 
 MERGE INTO "Patient" t1
-USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
+USING (SELECT :id2 AS "PersonID" FROM SYS.DUAL) s ON
 (
 	t1."PersonID" = s."PersonID"
 )
@@ -94,13 +98,15 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
-DECLARE @id Int32
-SET     @id = 5
+DECLARE @id2 Int32
+SET     @id2 = 5
 DECLARE @i Int32
 SET     @i = 2
+DECLARE @id Int32
+SET     @id = 5
 
 MERGE INTO "Patient" t1
-USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
+USING (SELECT :id2 AS "PersonID" FROM SYS.DUAL) s ON
 (
 	t1."PersonID" = s."PersonID"
 )
