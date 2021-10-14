@@ -4,21 +4,11 @@ DECLARE @z2 Integer -- Int32
 SET     @z2 = 2
 DECLARE @y10 Integer -- Int32
 SET     @y10 = 10
-DECLARE @z3 Integer -- Int32
-SET     @z3 = 2
-DECLARE @y11 Integer -- Int32
-SET     @y11 = 10
 DECLARE @x3 Integer -- Int32
 SET     @x3 = 3
-DECLARE @z4 Integer -- Int32
-SET     @z4 = 2
-DECLARE @y12 Integer -- Int32
-SET     @y12 = 10
-DECLARE @x4 Integer -- Int32
-SET     @x4 = 3
 
 SELECT
-	((((Cast(@x4 as Int) * (Cast(@y12 as Int) - Cast(@z4 as Int)) / Cast(@x4 as Int)) * Cast(@z4 as Int)) * (((((Cast(@x3 as Int) * (Cast(@y11 as Int) - Cast(@z3 as Int)) / Cast(@x3 as Int)) * Cast(@z3 as Int)) * (Cast(@y10 as Int) - Cast(@z2 as Int)) / ((Cast(@x3 as Int) * (Cast(@y11 as Int) - Cast(@z3 as Int)) / Cast(@x3 as Int)) * Cast(@z3 as Int))) * Cast(@z2 as Int)) - "child_1"."ChildID") / ((Cast(@x4 as Int) * (Cast(@y12 as Int) - Cast(@z4 as Int)) / Cast(@x4 as Int)) * Cast(@z4 as Int))) * "child_1"."ChildID")
+	((((Cast(@x3 as Int) * (Cast(@y10 as Int) - Cast(@z2 as Int)) / Cast(@x3 as Int)) * Cast(@z2 as Int)) * (((((Cast(@x3 as Int) * (Cast(@y10 as Int) - Cast(@z2 as Int)) / Cast(@x3 as Int)) * Cast(@z2 as Int)) * (Cast(@y10 as Int) - Cast(@z2 as Int)) / ((Cast(@x3 as Int) * (Cast(@y10 as Int) - Cast(@z2 as Int)) / Cast(@x3 as Int)) * Cast(@z2 as Int))) * Cast(@z2 as Int)) - "child_1"."ChildID") / ((Cast(@x3 as Int) * (Cast(@y10 as Int) - Cast(@z2 as Int)) / Cast(@x3 as Int)) * Cast(@z2 as Int))) * "child_1"."ChildID")
 FROM
 	"Child" "child_1"
 
