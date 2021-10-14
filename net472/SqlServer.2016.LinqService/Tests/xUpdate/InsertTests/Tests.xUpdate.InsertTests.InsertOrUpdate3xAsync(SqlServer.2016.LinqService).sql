@@ -6,6 +6,15 @@ DBCC CHECKIDENT ('Person', RESEED, 4)
 BeforeExecute
 -- SqlServer.2016
 
+DELETE [p]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
+
+BeforeExecute
+-- SqlServer.2016
+
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -23,13 +32,13 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2016
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
-USING (SELECT @id AS [PersonID]) [s] ON
+USING (SELECT @id2 AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
 )
@@ -46,20 +55,20 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis))
+		N'abc'
 	);
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @id Int -- Int32
-SET     @id = 5
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 DECLARE @i Int -- Int32
 SET     @i = 1
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
+DECLARE @id Int -- Int32
+SET     @id = 5
 
 MERGE INTO [Patient] [t1]
-USING (SELECT @id AS [PersonID]) [s] ON
+USING (SELECT @id2 AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
 )
@@ -76,20 +85,20 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		N'abc'
 	);
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @id Int -- Int32
-SET     @id = 5
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 DECLARE @i Int -- Int32
 SET     @i = 2
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
+DECLARE @id Int -- Int32
+SET     @id = 5
 
 MERGE INTO [Patient] [t1]
-USING (SELECT @id AS [PersonID]) [s] ON
+USING (SELECT @id2 AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
 )
@@ -106,7 +115,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		N'abc'
 	);
 
 BeforeExecute
