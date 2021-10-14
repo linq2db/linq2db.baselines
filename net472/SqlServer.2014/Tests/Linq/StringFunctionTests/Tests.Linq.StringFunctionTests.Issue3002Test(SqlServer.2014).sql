@@ -44,8 +44,8 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @test NVarChar -- String
 SET     @test = Test
-DECLARE @test_1 NVarChar(4000) -- String
-SET     @test_1 = N'%Test%'
+DECLARE @test_2 NVarChar(4000) -- String
+SET     @test_2 = N'%Test%'
 
 SELECT
 	IIF(EXISTS(
@@ -54,29 +54,29 @@ SELECT
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
-			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2 ESCAPE N'~')
 	), 1, 0)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @test NVarChar -- String
 SET     @test = Test
-DECLARE @test_1 NVarChar(4000) -- String
-SET     @test_1 = N'%Test%'
+DECLARE @test_2 NVarChar(4000) -- String
+SET     @test_2 = N'%Test%'
 
 SELECT
 	Count(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2 ESCAPE N'~')
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @test NVarChar -- String
 SET     @test = Value
-DECLARE @test_1 NVarChar(4000) -- String
-SET     @test_1 = N'%Value%'
+DECLARE @test_2 NVarChar(4000) -- String
+SET     @test_2 = N'%Value%'
 
 SELECT
 	IIF(EXISTS(
@@ -85,29 +85,29 @@ SELECT
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
-			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2 ESCAPE N'~')
 	), 1, 0)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @test NVarChar -- String
 SET     @test = Value
-DECLARE @test_1 NVarChar(4000) -- String
-SET     @test_1 = N'%Value%'
+DECLARE @test_2 NVarChar(4000) -- String
+SET     @test_2 = N'%Value%'
 
 SELECT
 	Count(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2 ESCAPE N'~')
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @test NVarChar -- String
 SET     @test = Class
-DECLARE @test_1 NVarChar(4000) -- String
-SET     @test_1 = N'%Class%'
+DECLARE @test_2 NVarChar(4000) -- String
+SET     @test_2 = N'%Class%'
 
 SELECT
 	IIF(EXISTS(
@@ -116,22 +116,22 @@ SELECT
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
-			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2 ESCAPE N'~')
 	), 1, 0)
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @test NVarChar -- String
 SET     @test = Class
-DECLARE @test_1 NVarChar(4000) -- String
-SET     @test_1 = N'%Class%'
+DECLARE @test_2 NVarChar(4000) -- String
+SET     @test_2 = N'%Class%'
 
 SELECT
 	Count(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2 ESCAPE N'~')
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
