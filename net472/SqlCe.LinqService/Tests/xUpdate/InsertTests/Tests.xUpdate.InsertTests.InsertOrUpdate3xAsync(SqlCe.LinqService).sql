@@ -12,7 +12,7 @@ WHERE
 	[Person].[FirstName] = 'John' AND [Person].[LastName] = 'Shepard'
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 INSERT INTO [Person]
 (
@@ -28,26 +28,24 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe (asynchronously)
-DECLARE @i Int -- Int32
-SET     @i = 0
-DECLARE @id Int -- Int32
-SET     @id = 5
+-- SqlCe
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient]
 SET
-	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
+	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]))
 WHERE
-	[Patient].[PersonID] = @id
+	[Patient].[PersonID] = @id2
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -63,35 +61,35 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @i Int -- Int32
 SET     @i = 1
-DECLARE @id Int -- Int32
-SET     @id = 5
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient]
 SET
 	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
 WHERE
-	[Patient].[PersonID] = @id
+	[Patient].[PersonID] = @id2
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @i Int -- Int32
 SET     @i = 2
-DECLARE @id Int -- Int32
-SET     @id = 5
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient]
 SET
 	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
 WHERE
-	[Patient].[PersonID] = @id
+	[Patient].[PersonID] = @id2
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -106,7 +104,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -116,7 +114,7 @@ WHERE
 	[Patient].[PersonID] = @id
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5
 
