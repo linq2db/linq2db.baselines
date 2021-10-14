@@ -250,8 +250,6 @@ DECLARE @param Int -- Int32
 SET     @param = 200
 DECLARE @param_1 Int -- Int32
 SET     @param_1 = 200
-DECLARE @param_2 Int -- Int32
-SET     @param_2 = 200
 
 INSERT INTO [DestinationTable]
 (
@@ -265,8 +263,8 @@ OUTPUT
 	[INSERTED].[ValueStr]
 SELECT
 	[s].[Id] + @param,
-	[s].[Value] + @param_1,
-	[s].[ValueStr] + Convert(VarChar(100), @param_2)
+	[s].[Value] + @param,
+	[s].[ValueStr] + Convert(VarChar(100), @param_1)
 FROM
 	[TableWithData] [s]
 WHERE
