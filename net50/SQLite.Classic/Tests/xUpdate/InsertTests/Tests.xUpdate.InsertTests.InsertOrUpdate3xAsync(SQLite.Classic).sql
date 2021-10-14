@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 
 UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 
 DELETE FROM
 	[Person]
@@ -12,7 +12,7 @@ WHERE
 	[Person].[FirstName] = 'John' AND [Person].[LastName] = 'Shepard'
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [Person]
 (
@@ -28,26 +28,26 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @i  -- Int32
 SET     @i = 0
-DECLARE @id  -- Int32
-SET     @id = 5
+DECLARE @id2  -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient]
 SET
 	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
 WHERE
-	[Patient].[PersonID] = @id
+	[Patient].[PersonID] = @id2
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 
@@ -63,35 +63,35 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @i  -- Int32
 SET     @i = 1
-DECLARE @id  -- Int32
-SET     @id = 5
+DECLARE @id2  -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient]
 SET
 	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
 WHERE
-	[Patient].[PersonID] = @id
+	[Patient].[PersonID] = @id2
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @i  -- Int32
 SET     @i = 2
-DECLARE @id  -- Int32
-SET     @id = 5
+DECLARE @id2  -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient]
 SET
 	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
 WHERE
-	[Patient].[PersonID] = @id
+	[Patient].[PersonID] = @id2
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 DECLARE @take  -- Int32
@@ -107,7 +107,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 
@@ -117,7 +117,7 @@ WHERE
 	[Patient].[PersonID] = @id
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 

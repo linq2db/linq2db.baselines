@@ -31,8 +31,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @parentId  -- Int32
 SET     @parentId = 111
-DECLARE @parentId_1  -- Int32
-SET     @parentId_1 = 111
 
 SELECT
 	[version_1].[inIdMain]
@@ -76,7 +74,7 @@ FROM
 		FROM
 			[stLinks] [link_2]
 		WHERE
-			[link_2].[inIdChild] = @parentId_1
+			[link_2].[inIdChild] = @parentId
 	) [u]
 		INNER JOIN [stVersions] [version_1] ON [u].[InIdChild] = [version_1].[inId]
 
