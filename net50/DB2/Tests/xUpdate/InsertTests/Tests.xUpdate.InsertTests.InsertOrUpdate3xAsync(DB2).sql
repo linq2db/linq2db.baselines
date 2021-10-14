@@ -35,13 +35,15 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
+DECLARE @id2 Integer(4) -- Int32
+SET     @id2 = 5
 DECLARE @i Integer(4) -- Int32
 SET     @i = 0
+DECLARE @id Integer(4) -- Int32
+SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT @id2 AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -63,13 +65,15 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
+DECLARE @id2 Integer(4) -- Int32
+SET     @id2 = 5
 DECLARE @i Integer(4) -- Int32
 SET     @i = 1
+DECLARE @id Integer(4) -- Int32
+SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT @id2 AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -91,13 +95,15 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
+DECLARE @id2 Integer(4) -- Int32
+SET     @id2 = 5
 DECLARE @i Integer(4) -- Int32
 SET     @i = 2
+DECLARE @id Integer(4) -- Int32
+SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT @id2 AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
