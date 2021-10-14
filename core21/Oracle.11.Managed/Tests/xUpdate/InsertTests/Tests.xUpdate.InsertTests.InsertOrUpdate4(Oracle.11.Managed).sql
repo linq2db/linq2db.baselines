@@ -32,12 +32,10 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @i_1 Int32
-SET     @i_1 = 0
-DECLARE @diagnosis Varchar2(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Int32
 SET     @i = 0
+DECLARE @diagnosis Varchar2(3) -- String
+SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -47,7 +45,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar2(11))
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar2(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -64,12 +62,10 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @i_1 Int32
-SET     @i_1 = 1
-DECLARE @diagnosis Varchar2(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Int32
 SET     @i = 1
+DECLARE @diagnosis Varchar2(3) -- String
+SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -79,7 +75,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar2(11))
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar2(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -96,12 +92,10 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @i_1 Int32
-SET     @i_1 = 2
-DECLARE @diagnosis Varchar2(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Int32
 SET     @i = 2
+DECLARE @diagnosis Varchar2(3) -- String
+SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -111,7 +105,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar2(11))
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar2(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(

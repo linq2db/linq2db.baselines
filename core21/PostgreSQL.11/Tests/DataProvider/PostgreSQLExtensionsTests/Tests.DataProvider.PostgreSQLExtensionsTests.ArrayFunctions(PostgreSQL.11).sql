@@ -154,16 +154,6 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @arr -2147483639 -- Object
 SET     @arr = System.Int32[]
-DECLARE @arr_1 -2147483639 -- Object
-SET     @arr_1 = System.Int32[]
-DECLARE @arr_2 -2147483639 -- Object
-SET     @arr_2 = System.Int32[]
-DECLARE @arr_3 -2147483639 -- Object
-SET     @arr_3 = System.Int32[]
-DECLARE @arr_4 -2147483639 -- Object
-SET     @arr_4 = System.Int32[]
-DECLARE @arr_5 -2147483639 -- Object
-SET     @arr_5 = System.Int32[]
 
 SELECT
 	t1."StrArray" || t2."StrArray",
@@ -207,7 +197,7 @@ FROM
 	"SampleClass" t1
 		INNER JOIN "SampleClass" t2 ON t2."Id" <> t1."Id"
 WHERE
-	(((((t1."StrArray" > t2."StrArray" OR t1."StrArray" > t2."StrArray") OR (t1."StrArray" @> t2."StrArray" OR t1."StrArray" <@ t2."StrArray")) OR ((t1."StrArray" && t2."StrArray" OR t1."IntValue" = ANY(t2."IntArray")) OR (t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray")))) OR (((t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray")) OR (t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(t2."IntArray"))) OR ((t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray")) OR (t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray"))))) OR (((t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(:arr)) OR (t1."IntValue" < ANY(:arr_1) OR t1."IntValue" <= ANY(:arr_2))) OR ((t1."IntValue" > ANY(:arr_3) OR t1."IntValue" >= ANY(:arr_4)) OR t1."IntValue" <> ANY(:arr_5))))
+	(((((t1."StrArray" > t2."StrArray" OR t1."StrArray" > t2."StrArray") OR (t1."StrArray" @> t2."StrArray" OR t1."StrArray" <@ t2."StrArray")) OR ((t1."StrArray" && t2."StrArray" OR t1."IntValue" = ANY(t2."IntArray")) OR (t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray")))) OR (((t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray")) OR (t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(t2."IntArray"))) OR ((t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray")) OR (t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray"))))) OR (((t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(:arr)) OR (t1."IntValue" < ANY(:arr) OR t1."IntValue" <= ANY(:arr))) OR ((t1."IntValue" > ANY(:arr) OR t1."IntValue" >= ANY(:arr)) OR t1."IntValue" <> ANY(:arr))))
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

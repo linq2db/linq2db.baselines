@@ -10,6 +10,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NString NVarChar(6) -- String
 SET     @NString = 'test01'
+DECLARE @String NVarChar(6) -- String
+SET     @String = 'test01'
 
 INSERT INTO [AllTypes]
 (
@@ -19,13 +21,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@NString
+	@String
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test02  '
+DECLARE @String NVarChar(8) -- String
+SET     @String = 'test02  '
 
 INSERT INTO [AllTypes]
 (
@@ -35,13 +39,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@NString
+	@String
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test03	 '
+DECLARE @String NVarChar(8) -- String
+SET     @String = 'test03	 '
 
 INSERT INTO [AllTypes]
 (
@@ -51,13 +57,16 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@NString
+	@String
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test04
+ '
+DECLARE @String NVarChar(8) -- String
+SET     @String = 'test04
  '
 
 INSERT INTO [AllTypes]
@@ -68,13 +77,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@NString
+	@String
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test05 '
+DECLARE @String NVarChar(8) -- String
+SET     @String = 'test05 '
 
 INSERT INTO [AllTypes]
 (
@@ -84,13 +95,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@NString
+	@String
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test06 '
+DECLARE @String NVarChar(8) -- String
+SET     @String = 'test06 '
 
 INSERT INTO [AllTypes]
 (
@@ -100,13 +113,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@NString
+	@String
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test07 '
+DECLARE @String NVarChar(8) -- String
+SET     @String = 'test07 '
 
 INSERT INTO [AllTypes]
 (
@@ -116,13 +131,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@NString
+	@String
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NString NVarChar(8) -- String
 SET     @NString = 'test08  '
+DECLARE @String NVarChar(8) -- String
+SET     @String = 'test08  '
 
 INSERT INTO [AllTypes]
 (
@@ -132,7 +149,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@NString
+	@String
 )
 
 BeforeExecute
@@ -355,6 +372,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NString NVarChar -- String
 SET     @NString = NULL
+DECLARE @String NVarChar -- String
+SET     @String = NULL
 
 INSERT INTO [AllTypes]
 (
@@ -364,7 +383,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NString,
-	@NString
+	@String
 )
 
 BeforeExecute

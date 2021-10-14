@@ -3,9 +3,7 @@
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer(4) -- Int32
-SET     @id2 = 1
-DECLARE @id3 Integer(4) -- Int32
-SET     @id3 = 10000
+SET     @id2 = 10000
 
 SELECT
 	"p"."ParentID",
@@ -13,7 +11,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	(("p"."ParentID" = @id1 OR "p"."ParentID" >= @id2) OR "p"."ParentID" >= @id3)
+	(("p"."ParentID" = @id1 OR "p"."ParentID" >= @id1) OR "p"."ParentID" >= @id2)
 ORDER BY
 	"p"."ParentID"
 FETCH FIRST 1 ROWS ONLY
@@ -23,9 +21,7 @@ BeforeExecute
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 2
 DECLARE @id2 Integer(4) -- Int32
-SET     @id2 = 2
-DECLARE @id3 Integer(4) -- Int32
-SET     @id3 = 10000
+SET     @id2 = 10000
 
 SELECT
 	"p"."ParentID",
@@ -33,7 +29,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	(("p"."ParentID" = @id1 OR "p"."ParentID" >= @id2) OR "p"."ParentID" >= @id3)
+	(("p"."ParentID" = @id1 OR "p"."ParentID" >= @id1) OR "p"."ParentID" >= @id2)
 ORDER BY
 	"p"."ParentID"
 FETCH FIRST 1 ROWS ONLY

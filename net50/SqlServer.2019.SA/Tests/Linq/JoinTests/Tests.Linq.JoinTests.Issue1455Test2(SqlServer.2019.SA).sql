@@ -59,10 +59,6 @@ BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 DECLARE @p_1 NVarChar(4000) -- String
 SET     @p_1 = N'%C%'
-DECLARE @p_2 NVarChar(4000) -- String
-SET     @p_2 = N'%C%'
-DECLARE @p_3 NVarChar(4000) -- String
-SET     @p_3 = N'%C%'
 
 SELECT
 	[al_1].[alert],
@@ -85,7 +81,7 @@ FROM
 		LEFT JOIN [Trade] [trade1] ON ([al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [trade1].[DealId]) IS NULL)
 		LEFT JOIN [Nomin] [nomin1] ON ([al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [nomin1].[CargoId]) IS NULL)
 WHERE
-	(([nomin1].[DeliveryCounterParty] LIKE @p_1 OR [trade1].[CounterParty] LIKE @p_2) OR [al_1].[alert_1] LIKE @p_3)
+	(([nomin1].[DeliveryCounterParty] LIKE @p_1 OR [trade1].[CounterParty] LIKE @p_1) OR [al_1].[alert_1] LIKE @p_1)
 GROUP BY
 	[al_1].[alert],
 	[al_1].[alert_1],

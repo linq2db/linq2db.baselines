@@ -9,6 +9,14 @@ BeforeExecute
 CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+DELETE FROM
+	"Person" p
+WHERE
+	p."FirstName" = 'John' AND p."LastName" = 'Shepard'
+
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL

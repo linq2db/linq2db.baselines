@@ -27,12 +27,10 @@ BeforeExecute
 -- Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @i_1 Integer -- Int32
-SET     @i_1 = 0
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer -- Int32
 SET     @i = 0
+DECLARE @diagnosis VarChar(3) -- String
+SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -42,7 +40,7 @@ USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i_1 as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -59,12 +57,10 @@ BeforeExecute
 -- Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @i_1 Integer -- Int32
-SET     @i_1 = 1
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer -- Int32
 SET     @i = 1
+DECLARE @diagnosis VarChar(3) -- String
+SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -74,7 +70,7 @@ USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i_1 as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -91,12 +87,10 @@ BeforeExecute
 -- Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @i_1 Integer -- Int32
-SET     @i_1 = 2
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer -- Int32
 SET     @i = 2
+DECLARE @diagnosis VarChar(3) -- String
+SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -106,7 +100,7 @@ USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i_1 as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
