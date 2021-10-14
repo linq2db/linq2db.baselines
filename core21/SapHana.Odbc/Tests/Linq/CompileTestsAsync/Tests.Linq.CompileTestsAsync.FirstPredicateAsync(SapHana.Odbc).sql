@@ -155,8 +155,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @Id_1  -- Int32
-SET     @Id_1 = 2
+DECLARE @Id  -- Int32
+SET     @Id = 2
 DECLARE @take  -- Int32
 SET     @take = 1
 
