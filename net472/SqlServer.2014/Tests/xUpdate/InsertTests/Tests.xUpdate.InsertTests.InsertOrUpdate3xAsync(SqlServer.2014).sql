@@ -6,6 +6,15 @@ DBCC CHECKIDENT ('Person', RESEED, 4)
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
+DELETE [p]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012 (asynchronously)
+
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -22,21 +31,23 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014 SqlServer.2012 (asynchronously)
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
+DECLARE @i Int -- Int32
+SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
-USING (SELECT @id AS [PersonID]) [s] ON
+USING (SELECT @id2 AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
+		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -46,50 +57,20 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis))
+		N'abc'
 	);
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
-DECLARE @id Int -- Int32
-SET     @id = 5
+-- SqlServer.2014 SqlServer.2012 (asynchronously)
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
 DECLARE @i Int -- Int32
 SET     @i = 1
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
-
-MERGE INTO [Patient] [t1]
-USING (SELECT @id AS [PersonID]) [s] ON
-(
-	[t1].[PersonID] = [s].[PersonID]
-)
-WHEN MATCHED THEN
-	UPDATE 
-	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
-WHEN NOT MATCHED THEN
-	INSERT
-	(
-		[PersonID],
-		[Diagnosis]
-	)
-	VALUES
-	(
-		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
-	);
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @i Int -- Int32
-SET     @i = 2
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
-USING (SELECT @id AS [PersonID]) [s] ON
+USING (SELECT @id2 AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
 )
@@ -106,11 +87,41 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		N'abc'
 	);
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014 SqlServer.2012 (asynchronously)
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
+DECLARE @i Int -- Int32
+SET     @i = 2
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+MERGE INTO [Patient] [t1]
+USING (SELECT @id2 AS [PersonID]) [s] ON
+(
+	[t1].[PersonID] = [s].[PersonID]
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@id,
+		N'abc'
+	);
+
+BeforeExecute
+-- SqlServer.2014 SqlServer.2012 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -125,7 +136,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014 SqlServer.2012 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -136,7 +147,7 @@ WHERE
 	[t1].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014 SqlServer.2012 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 
