@@ -12,6 +12,8 @@ DECLARE @timeDataType Interval -- Object
 SET     @timeDataType = 00:01:00
 DECLARE @intervalDataType Interval -- Object
 SET     @intervalDataType = 00:01:00
+DECLARE @intervalDataType2 Interval -- Object
+SET     @intervalDataType2 = 00:01:00
 
 INSERT INTO "AllTypes"
 (
@@ -23,7 +25,7 @@ VALUES
 (
 	:timeDataType,
 	:intervalDataType,
-	:timeDataType
+	:intervalDataType2
 )
 
 BeforeExecute
