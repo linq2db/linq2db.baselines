@@ -61,15 +61,15 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 DECLARE @i Integer(4) -- Int32
 SET     @i = 0
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
+DECLARE @id2 Integer(4) -- Int32
+SET     @id2 = 5
 
 UPDATE
 	Patient
 SET
 	Patient.Diagnosis = To_Char(Length(Patient.Diagnosis) + @i)
 WHERE
-	Patient.PersonID = @id
+	Patient.PersonID = @id2
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
@@ -91,29 +91,29 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 DECLARE @i Integer(4) -- Int32
 SET     @i = 1
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
+DECLARE @id2 Integer(4) -- Int32
+SET     @id2 = 5
 
 UPDATE
 	Patient
 SET
 	Patient.Diagnosis = To_Char(Length(Patient.Diagnosis) + @i)
 WHERE
-	Patient.PersonID = @id
+	Patient.PersonID = @id2
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 DECLARE @i Integer(4) -- Int32
 SET     @i = 2
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
+DECLARE @id2 Integer(4) -- Int32
+SET     @id2 = 5
 
 UPDATE
 	Patient
 SET
 	Patient.Diagnosis = To_Char(Length(Patient.Diagnosis) + @i)
 WHERE
-	Patient.PersonID = @id
+	Patient.PersonID = @id2
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
