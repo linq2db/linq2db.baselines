@@ -79,8 +79,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @i  -- Int32
 SET     @i = 0
-DECLARE @id  -- Int32
-SET     @id = 5
+DECLARE @id2  -- Int32
+SET     @id2 = 5
 
 UPDATE
 	"Patient"
@@ -109,8 +109,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @i  -- Int32
 SET     @i = 1
-DECLARE @id  -- Int32
-SET     @id = 5
+DECLARE @id2  -- Int32
+SET     @id2 = 5
 
 UPDATE
 	"Patient"
@@ -123,8 +123,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @i  -- Int32
 SET     @i = 2
-DECLARE @id  -- Int32
-SET     @id = 5
+DECLARE @id2  -- Int32
+SET     @id2 = 5
 
 UPDATE
 	"Patient"

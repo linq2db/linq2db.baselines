@@ -354,8 +354,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NChar_1 NChar -- StringFixedLength
 SET     @NChar_1 = NULL
-DECLARE @NChar_2 NChar -- StringFixedLength
-SET     @NChar_2 = NULL
+DECLARE @Char_1 NChar -- StringFixedLength
+SET     @Char_1 = NULL
 
 INSERT INTO "AllTypes"
 (
