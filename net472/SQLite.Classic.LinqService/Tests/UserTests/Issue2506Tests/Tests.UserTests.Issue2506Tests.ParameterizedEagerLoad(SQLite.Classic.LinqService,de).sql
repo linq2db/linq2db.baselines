@@ -157,8 +157,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Lang NVarChar(2) -- String
-SET     @Lang = 'de'
+DECLARE @lang NVarChar(2) -- String
+SET     @lang = 'de'
 
 SELECT
 	[item_1].[Id],
@@ -166,7 +166,7 @@ SELECT
 	[detail].[Text]
 FROM
 	[Item] [item_1]
-		INNER JOIN [ItemText] [detail] ON [item_1].[Id] = [detail].[ItemId] AND [detail].[Lang] = @Lang
+		INNER JOIN [ItemText] [detail] ON [item_1].[Id] = [detail].[ItemId] AND [detail].[Lang] = @lang
 
 BeforeExecute
 -- SQLite.Classic SQLite

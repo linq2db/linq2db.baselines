@@ -89,8 +89,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
-DECLARE @EventId Int -- Int32
-SET     @EventId = 1
+DECLARE @eventId Int -- Int32
+SET     @eventId = 1
 
 SELECT
 	[p].[Id],
@@ -102,7 +102,7 @@ FROM
 		INNER JOIN [EventScheduleItemPerson] [detail] ON [p].[Id] = [detail].[EventScheduleItemId]
 		LEFT JOIN [EventSchedulePerson] [a_Person] ON [detail].[EventSchedulePersonId] = [a_Person].[Id]
 WHERE
-	[p].[EventId] = @EventId AND [p].[IsActive] = 1
+	[p].[EventId] = @eventId AND [p].[IsActive] = 1
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017

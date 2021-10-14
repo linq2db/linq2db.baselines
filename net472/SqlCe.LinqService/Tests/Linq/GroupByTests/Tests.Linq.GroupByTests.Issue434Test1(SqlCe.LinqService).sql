@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p_1 NVarChar(6) -- String
-SET     @p_1 = '%test%'
+DECLARE @input_1 NVarChar(6) -- String
+SET     @input_1 = '%test%'
 
 SELECT
 	[p].[PersonID],
@@ -11,7 +11,7 @@ FROM
 	[Person] [p]
 		INNER JOIN [Patient] [_gjd_ri] ON [_gjd_ri].[PersonID] = [p].[PersonID]
 WHERE
-	Lower([p].[FirstName]) LIKE @p_1 ESCAPE '~'
+	Lower([p].[FirstName]) LIKE @input_1 ESCAPE '~'
 
 BeforeExecute
 -- SqlCe

@@ -16,8 +16,8 @@ WHERE
 		FROM
 			(VALUES
 				(N'j'), (N'o'), (N'h'), (N'n')
-			) [t1]([item])
+			) [x]([item])
 		WHERE
-			CharIndex([t1].[item], [t].[FirstName]) - 1 > 0
+			CharIndex([x].[item], [t].[FirstName]) - 1 > 0
 	)
 

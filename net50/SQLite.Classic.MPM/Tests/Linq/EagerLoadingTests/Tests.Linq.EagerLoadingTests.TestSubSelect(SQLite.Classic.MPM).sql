@@ -93,8 +93,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p_1  -- Int32
-SET     @p_1 = 20
+DECLARE @take  -- Int32
+SET     @take = 20
 
 SELECT
 	[key_data_result].[Master],
@@ -124,7 +124,7 @@ FROM
 							[MasterClass] [m_1]
 						ORDER BY
 							[m_1].[Id2] DESC
-						LIMIT @p_1
+						LIMIT @take
 					) [e]
 			) [t1]
 	) [key_data_result]

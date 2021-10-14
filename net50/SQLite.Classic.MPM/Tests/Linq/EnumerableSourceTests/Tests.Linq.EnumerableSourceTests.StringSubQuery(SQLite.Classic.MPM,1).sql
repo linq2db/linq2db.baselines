@@ -19,8 +19,8 @@ WHERE
 				UNION ALL
 				VALUES
 					('j'), ('o'), ('h'), ('n')
-				) [t1]
+				) [x]
 		WHERE
-			CharIndex([t1].[item], [t].[FirstName]) - 1 > 0
+			CharIndex([x].[item], [t].[FirstName]) - 1 > 0
 	)
 

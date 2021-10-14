@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 3
-DECLARE @p_1  -- Int32
-SET     @p_1 = 1
+DECLARE @id  -- Int32
+SET     @id = 3
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[lw_Parent_1].[ParentID_1],
@@ -29,8 +29,8 @@ FROM
 						FROM
 							[Parent] [p]
 						WHERE
-							[p].[ParentID] = @ParentID
-						LIMIT @p_1
+							[p].[ParentID] = @id
+						LIMIT @take
 					) [t1]
 			) [lw_Parent]
 				INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
@@ -40,8 +40,8 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 3
+DECLARE @id  -- Int32
+SET     @id = 3
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -62,7 +62,7 @@ FROM
 				FROM
 					[Parent] [p]
 				WHERE
-					[p].[ParentID] = @ParentID
+					[p].[ParentID] = @id
 				LIMIT @take
 			) [t1]
 	) [lw_Parent]

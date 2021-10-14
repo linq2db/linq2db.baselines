@@ -134,8 +134,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 1
+DECLARE @blogId Int -- Int32
+SET     @blogId = 1
 
 SELECT
 	[key_data_result_1].[Id],
@@ -171,7 +171,7 @@ FROM
 				FROM
 					[Blog] [b]
 				WHERE
-					[b].[Id] = @Id
+					[b].[Id] = @blogId
 			) [key_data_result]
 				INNER JOIN [Post] [detail] ON [key_data_result].[Id] = [detail].[BlogId]
 	) [key_data_result_1]
@@ -182,8 +182,8 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 1
+DECLARE @blogId Int -- Int32
+SET     @blogId = 1
 
 SELECT
 	[key_data_result].[Id],
@@ -205,7 +205,7 @@ FROM
 		FROM
 			[Blog] [b]
 		WHERE
-			[b].[Id] = @Id
+			[b].[Id] = @blogId
 	) [key_data_result]
 		INNER JOIN [Post] [detail] ON [key_data_result].[Id] = [detail].[BlogId]
 ORDER BY

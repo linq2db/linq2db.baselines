@@ -68,9 +68,9 @@ WHERE
 			(
 				SELECT 2 AS [Id], N'Janet' AS [Value]
 				UNION ALL
-				SELECT 3, N'Doe') [t1]
+				SELECT 3, N'Doe') [r]
 		WHERE
-			[t].[Id] = [t1].[Id] AND ([t].[Value] = [t1].[Value] OR [t].[Value] IS NULL AND [t1].[Value] IS NULL)
+			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
 	)
 
 BeforeExecute

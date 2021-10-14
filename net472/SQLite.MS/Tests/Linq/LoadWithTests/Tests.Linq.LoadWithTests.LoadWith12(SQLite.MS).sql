@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p_1  -- Int32
-SET     @p_1 = 1
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[lw_Parent].[ParentID_1],
@@ -32,7 +32,7 @@ FROM
 							[Parent] [p]
 						WHERE
 							[p].[ParentID] < 2
-						LIMIT @p_1
+						LIMIT @take
 					) [t1]
 			) [key_data_result]
 				INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]

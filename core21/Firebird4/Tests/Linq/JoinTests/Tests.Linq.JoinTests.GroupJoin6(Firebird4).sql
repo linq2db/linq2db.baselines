@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
+DECLARE @n Integer -- Int32
+SET     @n = 1
 
 SELECT
 	"key_data_result"."ParentID",
@@ -16,7 +16,7 @@ FROM
 		WHERE
 			"p"."ParentID" = 1
 	) "key_data_result"
-		INNER JOIN "Child" "gjd_c" ON "gjd_c"."ParentID" = "key_data_result"."ParentID" + @ParentID
+		INNER JOIN "Child" "gjd_c" ON "gjd_c"."ParentID" = "key_data_result"."ParentID" + @n
 
 BeforeExecute
 -- Firebird4 Firebird

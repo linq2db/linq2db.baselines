@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @p_1 Int32
-SET     @p_1 = 10
+DECLARE @take Int32
+SET     @take = 10
 
 SELECT
 	`key_data_result`.`ParentID`,
@@ -20,7 +20,7 @@ FROM
 					`p`.`Value1`
 				FROM
 					`Parent` `p`
-				LIMIT @p_1
+				LIMIT @take
 			) `t1`
 	) `key_data_result`
 		INNER JOIN `Child` `_c` ON `_c`.`ParentID` = `key_data_result`.`ParentID`
