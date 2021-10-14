@@ -12,6 +12,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @val Blob -- Object
 SET     @val = HEXTORAW('010203')
+DECLARE @val_1 Blob -- Object
+SET     @val_1 = HEXTORAW('010203')
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -25,7 +27,7 @@ VALUES
 (
 	1000,
 	:val,
-	:val
+	:val_1
 )
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER

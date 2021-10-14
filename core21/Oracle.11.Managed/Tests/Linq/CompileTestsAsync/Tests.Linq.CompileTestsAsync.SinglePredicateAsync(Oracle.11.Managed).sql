@@ -47,8 +47,8 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
-DECLARE @Id_1 Int32
-SET     @Id_1 = 2
+DECLARE @Id Int32
+SET     @Id = 2
 DECLARE @take Int32
 SET     @take = 2
 
@@ -57,7 +57,7 @@ SELECT
 FROM
 	"AsyncDataTable" c_1
 WHERE
-	c_1."Id" = :Id_1 AND ROWNUM <= :take
+	c_1."Id" = :Id AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
