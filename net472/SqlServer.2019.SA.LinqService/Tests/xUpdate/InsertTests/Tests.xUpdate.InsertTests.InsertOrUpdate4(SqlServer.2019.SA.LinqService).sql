@@ -53,12 +53,10 @@ BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @i_1 Int -- Int32
-SET     @i_1 = 1
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
 DECLARE @i Int -- Int32
 SET     @i = 1
+DECLARE @diagnosis NVarChar(4000) -- String
+SET     @diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -68,7 +66,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i_1)
+		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -85,12 +83,10 @@ BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @i_1 Int -- Int32
-SET     @i_1 = 2
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
 DECLARE @i Int -- Int32
 SET     @i = 2
+DECLARE @diagnosis NVarChar(4000) -- String
+SET     @diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -100,7 +96,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i_1)
+		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
