@@ -23,11 +23,13 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @id_1 Int -- Int32
+SET     @id_1 = 5
 DECLARE @id Int -- Int32
 SET     @id = 5
 
 MERGE INTO [Patient] [t1]
-USING (SELECT @id AS [PersonID]) [s] ON
+USING (SELECT @id_1 AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
 )
@@ -49,13 +51,15 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @id Int -- Int32
-SET     @id = 5
+DECLARE @id_1 Int -- Int32
+SET     @id_1 = 5
 DECLARE @i Int -- Int32
 SET     @i = 1
+DECLARE @id Int -- Int32
+SET     @id = 5
 
 MERGE INTO [Patient] [t1]
-USING (SELECT @id AS [PersonID]) [s] ON
+USING (SELECT @id_1 AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
 )
@@ -77,13 +81,15 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @id Int -- Int32
-SET     @id = 5
+DECLARE @id_1 Int -- Int32
+SET     @id_1 = 5
 DECLARE @i Int -- Int32
 SET     @i = 2
+DECLARE @id Int -- Int32
+SET     @id = 5
 
 MERGE INTO [Patient] [t1]
-USING (SELECT @id AS [PersonID]) [s] ON
+USING (SELECT @id_1 AS [PersonID]) [s] ON
 (
 	[t1].[PersonID] = [s].[PersonID]
 )
