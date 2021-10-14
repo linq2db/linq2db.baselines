@@ -1782,8 +1782,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id1  -- Int32
-SET     @Id1 = 1
+DECLARE @intParam  -- Int32
+SET     @intParam = 1
 
 SELECT
 	[lw_DetailClass].[Id1],
@@ -1803,7 +1803,7 @@ FROM
 				FROM
 					[MasterClass] [m_1]
 				WHERE
-					[m_1].[Id1] >= @Id1
+					[m_1].[Id1] >= @intParam
 			) [lw_MasterClass]
 				INNER JOIN [DetailClass] [detail] ON [lw_MasterClass].[Id1] = [detail].[MasterId]
 	) [lw_DetailClass]
@@ -1811,8 +1811,8 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id1  -- Int32
-SET     @Id1 = 1
+DECLARE @intParam  -- Int32
+SET     @intParam = 1
 
 SELECT
 	[lw_MasterClass].[Id1],
@@ -1826,7 +1826,7 @@ FROM
 		FROM
 			[MasterClass] [m_1]
 		WHERE
-			[m_1].[Id1] >= @Id1
+			[m_1].[Id1] >= @intParam
 	) [lw_MasterClass]
 		INNER JOIN [DetailClass] [detail] ON [lw_MasterClass].[Id1] = [detail].[MasterId]
 
