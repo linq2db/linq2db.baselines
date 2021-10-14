@@ -32,8 +32,6 @@ BeforeExecute
 -- SqlServer.2012
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'zz'
-DECLARE @str_1 NVarChar(4000) -- String
-SET     @str_1 = N'zz'
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -41,7 +39,7 @@ UPDATE
 	[_]
 SET
 	[_].[Items1] = [_].[Items1] + @str,
-	[_].[Items2] = [_].[Items2] + @str_1
+	[_].[Items2] = [_].[Items2] + @str
 FROM
 	[TextData] [_]
 WHERE
