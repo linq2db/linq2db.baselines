@@ -27,8 +27,8 @@ CREATE TABLE [IIRs]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @AddTime  -- DateTime
-SET     @AddTime = '2020-02-29 17:54:55.123'
+DECLARE @DateTime  -- DateTime
+SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
 	[key_data_result].[Id],
@@ -45,7 +45,7 @@ FROM
 			[mails] [p]
 				INNER JOIN [IIRs] [i] ON [p].[Id] = [i].[Id]
 		WHERE
-			DateTime([p].[AddTime]) > DateTime(@AddTime)
+			DateTime([p].[AddTime]) > DateTime(@DateTime)
 	) [key_data_result]
 		INNER JOIN [EmailAttachments] [detail] ON [key_data_result].[Id] = [detail].[EmailId]
 
