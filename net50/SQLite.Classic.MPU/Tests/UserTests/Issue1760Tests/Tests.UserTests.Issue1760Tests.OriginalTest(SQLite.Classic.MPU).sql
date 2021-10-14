@@ -54,8 +54,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 0
-DECLARE @id_1  -- Int32
-SET     @id_1 = 0
 
 SELECT
 	[t1].[textCol],
@@ -89,7 +87,7 @@ FROM
 				LEFT JOIN [b_table2] [btbl] ON [tbl3_1].[col] = [btbl].[id]
 				LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
 		WHERE
-			[w_1].[commonTableId] = @id_1
+			[w_1].[commonTableId] = @id
 	) [t1]
 GROUP BY
 	[t1].[b1],
