@@ -226,14 +226,12 @@ DECLARE @Val5 Integer -- Int32
 SET     @Val5 = 5
 DECLARE @Val1 Integer -- Int32
 SET     @Val1 = 1
-DECLARE @Val6 Integer -- Int32
-SET     @Val6 = 5
 DECLARE @Val3 Integer -- Int32
 SET     @Val3 = 3
+DECLARE @Val6 Integer -- Int32
+SET     @Val6 = 5
 DECLARE @Val7 Integer -- Int32
-SET     @Val7 = 5
-DECLARE @Val8 Integer -- Int32
-SET     @Val8 = 2
+SET     @Val7 = 2
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -261,13 +259,13 @@ INSERT
 )
 VALUES
 (
-	"Source"."OtherId" + Cast(@Val6 as Int),
+	"Source"."OtherId" + @Val5,
 	"Source"."Field1"
 )
 
 WHEN MATCHED AND "Source"."OtherId" = @Val3 THEN
 UPDATE
 SET
-	"Target"."Field4" = @Val7
-WHEN MATCHED AND ("Target"."Field3" <> @Val8 OR "Target"."Field3" IS NULL) THEN DELETE
+	"Target"."Field4" = @Val6
+WHEN MATCHED AND ("Target"."Field3" <> @Val7 OR "Target"."Field3" IS NULL) THEN DELETE
 
