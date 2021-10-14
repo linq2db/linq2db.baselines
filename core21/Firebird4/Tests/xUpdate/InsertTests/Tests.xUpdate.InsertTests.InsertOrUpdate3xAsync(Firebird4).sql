@@ -5,6 +5,14 @@ SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
 -- Firebird4 Firebird
+
+DELETE FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" = 'John' AND "p"."LastName" = 'Shepard'
+
+BeforeExecute
+-- Firebird4 Firebird (asynchronously)
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -24,16 +32,16 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird4 Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 5
+-- Firebird4 Firebird (asynchronously)
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 5
 DECLARE @i Integer -- Int32
 SET     @i = 0
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @id Integer -- Int32
+SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT Cast(@id2 as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -49,51 +57,21 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@id as Int),
-		Cast((Char_Length(Cast(@diagnosis as VarChar(255) CHARACTER SET UNICODE_FSS)) + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+		@id,
+		'abc'
 	)
 
 BeforeExecute
--- Firebird4 Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 5
+-- Firebird4 Firebird (asynchronously)
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 5
 DECLARE @i Integer -- Int32
 SET     @i = 1
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
-
-MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
-(
-	"t1"."PersonID" = "s"."PersonID"
-)
-WHEN MATCHED THEN
-	UPDATE 
-	SET
-		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
-WHEN NOT MATCHED THEN
-	INSERT
-	(
-		"PersonID",
-		"Diagnosis"
-	)
-	VALUES
-	(
-		Cast(@id as Int),
-		Cast((Char_Length(Cast(@diagnosis as VarChar(255) CHARACTER SET UNICODE_FSS)) + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
-	)
-
-BeforeExecute
--- Firebird4 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @i Integer -- Int32
-SET     @i = 2
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT Cast(@id2 as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -109,12 +87,42 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@id as Int),
-		Cast((Char_Length(Cast(@diagnosis as VarChar(255) CHARACTER SET UNICODE_FSS)) + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+		@id,
+		'abc'
 	)
 
 BeforeExecute
--- Firebird4 Firebird
+-- Firebird4 Firebird (asynchronously)
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 5
+DECLARE @i Integer -- Int32
+SET     @i = 2
+DECLARE @id Integer -- Int32
+SET     @id = 5
+
+MERGE INTO "Patient" "t1"
+USING (SELECT Cast(@id2 as Int) AS "PersonID" FROM rdb$database) "s" ON
+(
+	"t1"."PersonID" = "s"."PersonID"
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		"PersonID",
+		"Diagnosis"
+	)
+	VALUES
+	(
+		@id,
+		'abc'
+	)
+
+BeforeExecute
+-- Firebird4 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 2
 DECLARE @id Integer -- Int32
@@ -129,7 +137,7 @@ WHERE
 	"p"."PersonID" = @id
 
 BeforeExecute
--- Firebird4 Firebird
+-- Firebird4 Firebird (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -139,7 +147,7 @@ WHERE
 	"t1"."PersonID" = @id
 
 BeforeExecute
--- Firebird4 Firebird
+-- Firebird4 Firebird (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
