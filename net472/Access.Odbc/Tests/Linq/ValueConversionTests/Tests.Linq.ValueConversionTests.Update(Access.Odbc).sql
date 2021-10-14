@@ -487,8 +487,8 @@ DECLARE @Value2 NVarChar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar -- AnsiString
 SET     @EnumWithNull = NULL
-DECLARE @EnumWithNull_1 VarChar -- AnsiString
-SET     @EnumWithNull_1 = NULL
+DECLARE @EnumWithNullDeclarative VarChar -- AnsiString
+SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
 	[ValueConversion] [e]
