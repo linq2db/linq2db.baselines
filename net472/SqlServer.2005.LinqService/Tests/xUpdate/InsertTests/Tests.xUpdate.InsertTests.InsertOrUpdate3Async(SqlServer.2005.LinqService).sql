@@ -23,6 +23,8 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @id_1 Int -- Int32
+SET     @id_1 = 5
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -33,7 +35,7 @@ SET
 FROM
 	[Patient] [t1]
 WHERE
-	[t1].[PersonID] = @id
+	[t1].[PersonID] = @id_1
 
 IF @@ROWCOUNT = 0
 BEGIN
@@ -53,6 +55,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @i Int -- Int32
 SET     @i = 1
+DECLARE @id_1 Int -- Int32
+SET     @id_1 = 5
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -63,7 +67,7 @@ SET
 FROM
 	[Patient] [t1]
 WHERE
-	[t1].[PersonID] = @id
+	[t1].[PersonID] = @id_1
 
 IF @@ROWCOUNT = 0
 BEGIN
@@ -83,6 +87,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @i Int -- Int32
 SET     @i = 2
+DECLARE @id_1 Int -- Int32
+SET     @id_1 = 5
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -93,7 +99,7 @@ SET
 FROM
 	[Patient] [t1]
 WHERE
-	[t1].[PersonID] = @id
+	[t1].[PersonID] = @id_1
 
 IF @@ROWCOUNT = 0
 BEGIN
