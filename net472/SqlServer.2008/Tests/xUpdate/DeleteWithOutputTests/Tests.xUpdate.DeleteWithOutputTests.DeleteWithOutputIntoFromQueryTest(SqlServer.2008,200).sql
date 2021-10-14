@@ -64,14 +64,12 @@ DECLARE @param Int -- Int32
 SET     @param = 200
 DECLARE @param_1 Int -- Int32
 SET     @param_1 = 200
-DECLARE @param_2 Int -- Int32
-SET     @param_2 = 200
 
 DELETE [s]
 OUTPUT
 	[DELETED].[Id] + @param,
-	[DELETED].[Value] + @param_1,
-	[DELETED].[ValueStr] + Convert(VarChar(100), @param_2)
+	[DELETED].[Value] + @param,
+	[DELETED].[ValueStr] + Convert(VarChar(100), @param_1)
 INTO [DestinationTable]
 (
 	[Id],

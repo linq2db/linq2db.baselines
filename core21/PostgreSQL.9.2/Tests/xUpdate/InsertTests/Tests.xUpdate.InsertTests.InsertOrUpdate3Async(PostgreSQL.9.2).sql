@@ -4,6 +4,14 @@
 ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+DELETE FROM
+	"Person" p
+WHERE
+	p."FirstName" = 'John' AND p."LastName" = 'Shepard'
+
+BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL (asynchronously)
 
 INSERT INTO "Person"

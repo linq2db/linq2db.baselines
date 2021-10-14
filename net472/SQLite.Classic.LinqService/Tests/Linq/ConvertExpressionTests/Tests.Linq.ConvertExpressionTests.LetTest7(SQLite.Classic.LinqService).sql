@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p_1  -- Int32
-SET     @p_1 = 5000
+DECLARE @take  -- Int32
+SET     @take = 5000
 
 SELECT
 	[key_data_result].[ParentID],
@@ -19,7 +19,7 @@ FROM
 					[Parent] [t]
 				WHERE
 					[t].[ParentID] > 0
-				LIMIT @p_1
+				LIMIT @take
 			) [t1]
 	) [key_data_result]
 		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100

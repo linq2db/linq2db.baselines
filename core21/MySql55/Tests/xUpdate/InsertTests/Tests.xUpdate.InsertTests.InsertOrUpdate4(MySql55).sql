@@ -32,8 +32,6 @@ DECLARE @diagnosis VarChar(3) -- String
 SET     @diagnosis = 'abc'
 DECLARE @i Int32
 SET     @i = 0
-DECLARE @i_1 Int32
-SET     @i_1 = 0
 
 INSERT INTO `Patient`
 (
@@ -46,7 +44,7 @@ VALUES
 	Cast((Char_Length(@diagnosis) + @i) as CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i_1) as CHAR(11))
+	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -56,8 +54,6 @@ DECLARE @diagnosis VarChar(3) -- String
 SET     @diagnosis = 'abc'
 DECLARE @i Int32
 SET     @i = 1
-DECLARE @i_1 Int32
-SET     @i_1 = 1
 
 INSERT INTO `Patient`
 (
@@ -70,7 +66,7 @@ VALUES
 	Cast((Char_Length(@diagnosis) + @i) as CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i_1) as CHAR(11))
+	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -80,8 +76,6 @@ DECLARE @diagnosis VarChar(3) -- String
 SET     @diagnosis = 'abc'
 DECLARE @i Int32
 SET     @i = 2
-DECLARE @i_1 Int32
-SET     @i_1 = 2
 
 INSERT INTO `Patient`
 (
@@ -94,7 +88,7 @@ VALUES
 	Cast((Char_Length(@diagnosis) + @i) as CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i_1) as CHAR(11))
+	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

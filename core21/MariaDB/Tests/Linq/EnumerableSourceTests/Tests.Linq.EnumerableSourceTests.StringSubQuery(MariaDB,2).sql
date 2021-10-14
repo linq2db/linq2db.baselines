@@ -21,8 +21,8 @@ WHERE
 				UNION ALL
 				SELECT 'h' FROM DUAL
 				UNION ALL
-				SELECT 'n' FROM DUAL) `t1`
+				SELECT 'n' FROM DUAL) `x`
 		WHERE
-			Locate(`t1`.`item`, `t`.`FirstName`) - 1 > 0
+			Locate(`x`.`item`, `t`.`FirstName`) - 1 > 0
 	)
 

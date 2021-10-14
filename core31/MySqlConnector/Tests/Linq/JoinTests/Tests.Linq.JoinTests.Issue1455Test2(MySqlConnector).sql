@@ -59,10 +59,6 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @p_1 VarChar(3) -- String
 SET     @p_1 = '%C%'
-DECLARE @p_2 VarChar(3) -- String
-SET     @p_2 = '%C%'
-DECLARE @p_3 VarChar(3) -- String
-SET     @p_3 = '%C%'
 
 SELECT
 	`al_1`.`alert`,
@@ -85,7 +81,7 @@ FROM
 		LEFT JOIN `Trade` `trade1` ON `al_1`.`alert` = Cast(`trade1`.`DealId` as CHAR(11))
 		LEFT JOIN `Nomin` `nomin1` ON `al_1`.`alert` = Cast(`nomin1`.`CargoId` as CHAR(11))
 WHERE
-	((`nomin1`.`DeliveryCounterParty` LIKE @p_1 OR `trade1`.`CounterParty` LIKE @p_2) OR `al_1`.`alert_1` LIKE @p_3)
+	((`nomin1`.`DeliveryCounterParty` LIKE @p_1 OR `trade1`.`CounterParty` LIKE @p_1) OR `al_1`.`alert_1` LIKE @p_1)
 GROUP BY
 	`al_1`.`alert`,
 	`al_1`.`alert_1`,

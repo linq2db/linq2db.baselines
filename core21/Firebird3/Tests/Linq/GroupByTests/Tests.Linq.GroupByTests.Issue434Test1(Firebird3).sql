@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @p_2 VarChar(6) -- String
-SET     @p_2 = '%test%'
+DECLARE @input_2 VarChar(6) -- String
+SET     @input_2 = '%test%'
 
 SELECT
 	"p"."PersonID",
@@ -11,7 +11,7 @@ FROM
 	"Person" "p"
 		INNER JOIN "Patient" "gjd_ri" ON "gjd_ri"."PersonID" = "p"."PersonID"
 WHERE
-	Lower("p"."FirstName") LIKE @p_2 ESCAPE '~'
+	Lower("p"."FirstName") LIKE @input_2 ESCAPE '~'
 
 BeforeExecute
 -- Firebird3 Firebird

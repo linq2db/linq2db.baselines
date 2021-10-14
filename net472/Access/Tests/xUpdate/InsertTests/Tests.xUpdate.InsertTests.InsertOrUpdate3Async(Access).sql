@@ -24,6 +24,14 @@ BeforeExecute
 ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE
 
 BeforeExecute
+-- Access AccessOleDb
+
+DELETE FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
+
+BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
 INSERT INTO [Person]

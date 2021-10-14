@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 5000
+DECLARE @take Integer -- Int32
+SET     @take = 5000
 
 SELECT
 	"key_data_result"."ParentID",
@@ -13,7 +13,7 @@ FROM
 			"t1"."ParentID"
 		FROM
 			(
-				SELECT FIRST @p_1
+				SELECT FIRST @take
 					"t"."ParentID"
 				FROM
 					"Parent" "t"

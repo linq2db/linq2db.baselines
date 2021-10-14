@@ -16,8 +16,8 @@ WHERE
 		FROM
 			(VALUES
 				('j'), ('o'), ('h'), ('n')
-			) t1(item)
+			) x(item)
 		WHERE
-			Position(t1.item in t."FirstName") - 1 > 0
+			Position(x.item in t."FirstName") - 1 > 0
 	)
 

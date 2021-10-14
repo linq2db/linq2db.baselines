@@ -57,12 +57,12 @@ CREATE TABLE "Flat"
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @cpty_1 VarChar(3) -- String
+SET     @cpty_1 = '%C%'
+DECLARE @cpty_2 VarChar(3) -- String
+SET     @cpty_2 = '%C%'
 DECLARE @cpty_3 VarChar(3) -- String
 SET     @cpty_3 = '%C%'
-DECLARE @cpty_4 VarChar(3) -- String
-SET     @cpty_4 = '%C%'
-DECLARE @cpty_5 VarChar(3) -- String
-SET     @cpty_5 = '%C%'
 
 SELECT
 	"al_1"."alert",
@@ -85,7 +85,7 @@ FROM
 		LEFT JOIN "Trade" "trade1" ON "al_1"."alert" = Cast("trade1"."DealId" as VarChar(11) CHARACTER SET UNICODE_FSS)
 		LEFT JOIN "Nomin" "nomin1" ON "al_1"."alert" = Cast("nomin1"."CargoId" as VarChar(11) CHARACTER SET UNICODE_FSS)
 WHERE
-	(("nomin1"."DeliveryCounterParty" LIKE @cpty_3 ESCAPE '~' OR "trade1"."CounterParty" LIKE @cpty_4 ESCAPE '~') OR "al_1"."alert_1" LIKE @cpty_5 ESCAPE '~')
+	(("nomin1"."DeliveryCounterParty" LIKE @cpty_1 ESCAPE '~' OR "trade1"."CounterParty" LIKE @cpty_2 ESCAPE '~') OR "al_1"."alert_1" LIKE @cpty_3 ESCAPE '~')
 GROUP BY
 	"al_1"."alert",
 	"al_1"."alert_1",

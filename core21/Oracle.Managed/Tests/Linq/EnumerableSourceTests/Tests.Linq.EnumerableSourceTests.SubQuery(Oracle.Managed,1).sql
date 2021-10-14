@@ -54,9 +54,9 @@ WHERE
 			(
 				SELECT 2 AS "Id", 'Janet' AS "Value" FROM sys.dual
 				UNION ALL
-				SELECT 3, 'Doe' FROM sys.dual) t1
+				SELECT 3, 'Doe' FROM sys.dual) r
 		WHERE
-			t."Id" = t1."Id" AND (t."Value" = t1."Value" OR t."Value" IS NULL AND t1."Value" IS NULL)
+			t."Id" = r."Id" AND (t."Value" = r."Value" OR t."Value" IS NULL AND r."Value" IS NULL)
 	)
 
 BeforeExecute

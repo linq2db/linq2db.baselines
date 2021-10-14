@@ -31,8 +31,6 @@ BeforeExecute
 -- SqlServer.2017
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'yy'
-DECLARE @str_1 NVarChar(4000) -- String
-SET     @str_1 = N'yy'
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -40,7 +38,7 @@ UPDATE
 	[_]
 SET
 	[_].[Items1] = [_].[Items1] + @str,
-	[_].[Items2] = [_].[Items2] + @str_1
+	[_].[Items2] = [_].[Items2] + @str
 FROM
 	[TextData] [_]
 WHERE

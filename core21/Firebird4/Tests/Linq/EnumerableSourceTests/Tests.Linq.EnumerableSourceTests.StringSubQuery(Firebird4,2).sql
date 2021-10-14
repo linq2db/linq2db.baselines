@@ -21,8 +21,8 @@ WHERE
 				UNION ALL
 				SELECT 'h' FROM rdb$database
 				UNION ALL
-				SELECT 'n' FROM rdb$database) "t1"
+				SELECT 'n' FROM rdb$database) "x"
 		WHERE
-			Position("t1"."item", "t"."FirstName") - 1 > 0
+			Position("x"."item", "t"."FirstName") - 1 > 0
 	)
 

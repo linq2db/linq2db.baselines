@@ -372,8 +372,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @NChar_1 WChar -- StringFixedLength
 SET     @NChar_1 = NULL
-DECLARE @NChar_2 WChar -- StringFixedLength
-SET     @NChar_2 = NULL
+DECLARE @Char_1 WChar -- StringFixedLength
+SET     @Char_1 = NULL
 
 INSERT INTO [AllTypes]
 (
@@ -383,7 +383,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_2
+	@Char_1
 )
 
 BeforeExecute

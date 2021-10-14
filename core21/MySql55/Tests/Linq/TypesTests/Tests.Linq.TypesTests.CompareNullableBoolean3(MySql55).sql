@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @param4 UByte -- Boolean
-SET     @param4 = 0
+DECLARE @param3 UByte -- Boolean
+SET     @param3 = 0
 
 SELECT
 	`t`.`ID`,
@@ -15,5 +15,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`BoolValue` = @param4
+	`t`.`BoolValue` = @param3
 

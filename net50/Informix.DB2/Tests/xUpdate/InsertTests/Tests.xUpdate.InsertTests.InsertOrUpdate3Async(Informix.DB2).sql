@@ -29,6 +29,14 @@ BeforeExecute
 ALTER TABLE Doctor ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
 
 BeforeExecute
+-- Informix.DB2 Informix
+
+DELETE FROM
+	Person
+WHERE
+	Person.FirstName = 'John' AND Person.LastName = 'Shepard'
+
+BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO Person

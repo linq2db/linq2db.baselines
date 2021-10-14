@@ -26,6 +26,14 @@ ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENC
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DELETE FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 INSERT INTO [Person]
 (
 	[FirstName],

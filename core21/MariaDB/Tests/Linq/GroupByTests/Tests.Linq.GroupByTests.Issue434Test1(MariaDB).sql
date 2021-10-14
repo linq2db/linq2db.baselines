@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @p_2 VarChar(4) -- String
-SET     @p_2 = 'test'
+DECLARE @input_2 VarChar(4) -- String
+SET     @input_2 = 'test'
 
 SELECT
 	`p`.`PersonID`,
@@ -11,7 +11,7 @@ FROM
 	`Person` `p`
 		INNER JOIN `Patient` `_gjd_ri` ON `_gjd_ri`.`PersonID` = `p`.`PersonID`
 WHERE
-	LOCATE(@p_2, Lower(`p`.`FirstName`)) > 0
+	LOCATE(@input_2, Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
