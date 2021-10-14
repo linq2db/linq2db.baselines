@@ -355,6 +355,8 @@ BeforeExecute
 -- SqlServer.2016
 DECLARE @NChar_1 NChar -- StringFixedLength
 SET     @NChar_1 = NULL
+DECLARE @Char_1 NChar -- StringFixedLength
+SET     @Char_1 = NULL
 
 INSERT INTO [AllTypes]
 (
@@ -364,7 +366,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_1
+	@Char_1
 )
 
 BeforeExecute
