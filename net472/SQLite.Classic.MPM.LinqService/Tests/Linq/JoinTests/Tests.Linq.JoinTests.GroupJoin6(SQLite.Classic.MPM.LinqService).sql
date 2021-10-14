@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
+DECLARE @n  -- Int32
+SET     @n = 1
 
 SELECT
 	[key_data_result].[ParentID],
@@ -16,7 +16,7 @@ FROM
 		WHERE
 			[p].[ParentID] = 1
 	) [key_data_result]
-		INNER JOIN [Child] [_gjd_c] ON [_gjd_c].[ParentID] = [key_data_result].[ParentID] + @ParentID
+		INNER JOIN [Child] [_gjd_c] ON [_gjd_c].[ParentID] = [key_data_result].[ParentID] + @n
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
