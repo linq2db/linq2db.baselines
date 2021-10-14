@@ -13,6 +13,10 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @decValue Decimal(9, 4)
 SET     @decValue = 12345.6789
+DECLARE @decValue_1 Decimal(9, 4)
+SET     @decValue_1 = 12345.6789
+DECLARE @decValue_2 Decimal(9, 4)
+SET     @decValue_2 = 12345.6789
 DECLARE @dtValue  -- Int64
 SET     @dtValue = 123456789
 
@@ -26,8 +30,8 @@ INSERT INTO [Issue1960Table]
 VALUES
 (
 	@decValue,
-	@decValue,
-	@decValue,
+	@decValue_1,
+	@decValue_2,
 	@dtValue
 )
 
