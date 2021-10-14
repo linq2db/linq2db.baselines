@@ -98,10 +98,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @tableName NVarChar(4000) -- String
 SET     @tableName = N'Person'
-DECLARE @tableName_1 NVarChar(4000) -- String
-SET     @tableName_1 = N'Person'
 
 SELECT
 	IDENT_CURRENT(@tableName),
-	IDENT_INCR(@tableName_1)
+	IDENT_INCR(@tableName)
 
