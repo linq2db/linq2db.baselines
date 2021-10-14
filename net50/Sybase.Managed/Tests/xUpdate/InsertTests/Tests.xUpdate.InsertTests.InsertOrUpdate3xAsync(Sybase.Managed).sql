@@ -6,6 +6,15 @@ sp_chgattribute Person, 'identity_burn_max', 0, '4'
 BeforeExecute
 -- Sybase.Managed Sybase
 
+DELETE FROM [Person]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
+
+BeforeExecute
+-- Sybase.Managed Sybase (asynchronously)
+
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -22,13 +31,13 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @i Integer -- Int32
 SET     @i = 0
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 5
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis UniVarChar(3) -- String
-SET     @diagnosis = 'abc'
 
 UPDATE
 	[Patient]
@@ -37,7 +46,7 @@ SET
 FROM
 	[Patient] [t1]
 WHERE
-	[t1].[PersonID] = @id
+	[t1].[PersonID] = @id2
 
 IF @@ROWCOUNT = 0
 BEGIN
@@ -49,18 +58,18 @@ BEGIN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		'abc'
 	)
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @i Integer -- Int32
 SET     @i = 1
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 5
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis UniVarChar(3) -- String
-SET     @diagnosis = 'abc'
 
 UPDATE
 	[Patient]
@@ -69,7 +78,7 @@ SET
 FROM
 	[Patient] [t1]
 WHERE
-	[t1].[PersonID] = @id
+	[t1].[PersonID] = @id2
 
 IF @@ROWCOUNT = 0
 BEGIN
@@ -81,18 +90,18 @@ BEGIN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		'abc'
 	)
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @i Integer -- Int32
 SET     @i = 2
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 5
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis UniVarChar(3) -- String
-SET     @diagnosis = 'abc'
 
 UPDATE
 	[Patient]
@@ -101,7 +110,7 @@ SET
 FROM
 	[Patient] [t1]
 WHERE
-	[t1].[PersonID] = @id
+	[t1].[PersonID] = @id2
 
 IF @@ROWCOUNT = 0
 BEGIN
@@ -113,12 +122,12 @@ BEGIN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		'abc'
 	)
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -131,7 +140,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -142,7 +151,7 @@ WHERE
 	[t1].[PersonID] = @id
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
