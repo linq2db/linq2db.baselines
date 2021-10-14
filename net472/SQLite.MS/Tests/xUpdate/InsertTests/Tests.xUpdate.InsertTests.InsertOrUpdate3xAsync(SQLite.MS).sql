@@ -12,7 +12,7 @@ WHERE
 	[Person].[FirstName] = 'John' AND [Person].[LastName] = 'Shepard'
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [Person]
 (
@@ -28,24 +28,26 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.MS SQLite
-DECLARE @id  -- Int32
-SET     @id = 5
+-- SQLite.MS SQLite (asynchronously)
+DECLARE @i  -- Int32
+SET     @i = 0
+DECLARE @id2  -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = Cast(Length([Patient].[Diagnosis]) as NVarChar(11))
+	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
 WHERE
-	[Patient].[PersonID] = @id
+	[Patient].[PersonID] = @id2
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 
@@ -61,35 +63,35 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @i  -- Int32
 SET     @i = 1
-DECLARE @id  -- Int32
-SET     @id = 5
+DECLARE @id2  -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient]
 SET
 	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
 WHERE
-	[Patient].[PersonID] = @id
+	[Patient].[PersonID] = @id2
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @i  -- Int32
 SET     @i = 2
-DECLARE @id  -- Int32
-SET     @id = 5
+DECLARE @id2  -- Int32
+SET     @id2 = 5
 
 UPDATE
 	[Patient]
 SET
 	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
 WHERE
-	[Patient].[PersonID] = @id
+	[Patient].[PersonID] = @id2
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 DECLARE @take  -- Int32
@@ -105,7 +107,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 
@@ -115,7 +117,7 @@ WHERE
 	[Patient].[PersonID] = @id
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 
