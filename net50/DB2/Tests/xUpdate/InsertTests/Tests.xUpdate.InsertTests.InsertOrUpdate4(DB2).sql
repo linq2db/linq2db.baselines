@@ -29,12 +29,10 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
-DECLARE @i_1 Integer(4) -- Int32
-SET     @i_1 = 0
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer(4) -- Int32
 SET     @i = 0
+DECLARE @diagnosis VarChar(3) -- String
+SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -44,7 +42,7 @@ USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i_1))
+		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -61,12 +59,10 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
-DECLARE @i_1 Integer(4) -- Int32
-SET     @i_1 = 1
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer(4) -- Int32
 SET     @i = 1
+DECLARE @diagnosis VarChar(3) -- String
+SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -76,7 +72,7 @@ USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i_1))
+		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -93,12 +89,10 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
-DECLARE @i_1 Integer(4) -- Int32
-SET     @i_1 = 2
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer(4) -- Int32
 SET     @i = 2
+DECLARE @diagnosis VarChar(3) -- String
+SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -108,7 +102,7 @@ USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i_1))
+		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
