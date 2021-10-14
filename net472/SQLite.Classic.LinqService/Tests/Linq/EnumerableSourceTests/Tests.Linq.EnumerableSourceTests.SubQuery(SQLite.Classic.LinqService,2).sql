@@ -68,9 +68,9 @@ WHERE
 				UNION ALL
 				VALUES
 					(3,'Janet'), (4,'Doe')
-				) [t1]
+				) [r]
 		WHERE
-			[t].[Id] = [t1].[Id] AND ([t].[Value] = [t1].[Value] OR [t].[Value] IS NULL AND [t1].[Value] IS NULL)
+			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
 	)
 
 BeforeExecute
