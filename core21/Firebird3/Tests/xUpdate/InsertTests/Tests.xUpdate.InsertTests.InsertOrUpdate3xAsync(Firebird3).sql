@@ -33,13 +33,15 @@ RETURNING
 
 BeforeExecute
 -- Firebird3 Firebird (asynchronously)
-DECLARE @id Integer -- Int32
-SET     @id = 5
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 5
 DECLARE @i Integer -- Int32
 SET     @i = 0
+DECLARE @id Integer -- Int32
+SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT Cast(@id2 as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -55,19 +57,21 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@id as Int),
+		@id,
 		'abc'
 	)
 
 BeforeExecute
 -- Firebird3 Firebird (asynchronously)
-DECLARE @id Integer -- Int32
-SET     @id = 5
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 5
 DECLARE @i Integer -- Int32
 SET     @i = 1
+DECLARE @id Integer -- Int32
+SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT Cast(@id2 as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -83,19 +87,21 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@id as Int),
+		@id,
 		'abc'
 	)
 
 BeforeExecute
 -- Firebird3 Firebird (asynchronously)
-DECLARE @id Integer -- Int32
-SET     @id = 5
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 5
 DECLARE @i Integer -- Int32
 SET     @i = 2
+DECLARE @id Integer -- Int32
+SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT Cast(@id2 as Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -111,7 +117,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@id as Int),
+		@id,
 		'abc'
 	)
 

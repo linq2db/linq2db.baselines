@@ -22,9 +22,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			(SELECT NULL"Id", NULL"Value" FROM rdb$database WHERE 1 = 0) "t1"
+			(SELECT NULL"Id", NULL"Value" FROM rdb$database WHERE 1 = 0) "r"
 		WHERE
-			"t"."Id" = "t1"."Id" AND ("t"."Value" = "t1"."Value" OR "t"."Value" IS NULL AND "t1"."Value" IS NULL)
+			"t"."Id" = "r"."Id" AND ("t"."Value" = "r"."Value" OR "t"."Value" IS NULL AND "r"."Value" IS NULL)
 	)
 
 BeforeExecute
