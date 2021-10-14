@@ -57,12 +57,12 @@ CREATE TABLE [Flat]
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @cpty_1 VarWChar(3) -- String
+SET     @cpty_1 = '%C%'
+DECLARE @cpty_2 VarWChar(3) -- String
+SET     @cpty_2 = '%C%'
 DECLARE @cpty_3 VarWChar(3) -- String
 SET     @cpty_3 = '%C%'
-DECLARE @cpty_4 VarWChar(3) -- String
-SET     @cpty_4 = '%C%'
-DECLARE @cpty_5 VarWChar(3) -- String
-SET     @cpty_5 = '%C%'
 
 SELECT
 	[al_1].[alert],
@@ -85,7 +85,7 @@ FROM
 		LEFT JOIN [Trade] [trade1] ON (([al_1].[alert] = CStr([trade1].[DealId]) OR [al_1].[alert] IS NULL AND CStr([trade1].[DealId]) IS NULL)))
 		LEFT JOIN [Nomin] [nomin1] ON (([al_1].[alert] = CStr([nomin1].[CargoId]) OR [al_1].[alert] IS NULL AND CStr([nomin1].[CargoId]) IS NULL))
 WHERE
-	(([nomin1].[DeliveryCounterParty] LIKE @cpty_3 OR [trade1].[CounterParty] LIKE @cpty_4) OR [al_1].[alert_1] LIKE @cpty_5)
+	(([nomin1].[DeliveryCounterParty] LIKE @cpty_1 OR [trade1].[CounterParty] LIKE @cpty_2) OR [al_1].[alert_1] LIKE @cpty_3)
 GROUP BY
 	[al_1].[alert],
 	[al_1].[alert_1],

@@ -26,6 +26,14 @@ ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENC
 BeforeExecute
 -- Access AccessOleDb
 
+DELETE FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
+
+BeforeExecute
+-- Access AccessOleDb
+
 INSERT INTO [Person]
 (
 	[FirstName],
