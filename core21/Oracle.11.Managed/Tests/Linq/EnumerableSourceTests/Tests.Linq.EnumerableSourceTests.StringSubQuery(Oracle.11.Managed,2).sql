@@ -21,8 +21,8 @@ WHERE
 				UNION ALL
 				SELECT 'h' FROM sys.dual
 				UNION ALL
-				SELECT 'n' FROM sys.dual) t1
+				SELECT 'n' FROM sys.dual) x
 		WHERE
-			InStr(t."FirstName", t1."item") - 1 > 0
+			InStr(t."FirstName", x."item") - 1 > 0
 	)
 
