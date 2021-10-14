@@ -12,7 +12,7 @@ FROM
 		CROSS APPLY (
 			SELECT 1 AS ID, 'Janet' AS "Name", p."LastName" AS "Sub" FROM sys.dual
 			UNION ALL
-			SELECT 1, 'Doe', p."LastName" FROM sys.dual) t1
+			SELECT 1, 'Doe', p."LastName" FROM sys.dual) n
 WHERE
-	p."LastName" = t1."Name"
+	p."LastName" = n."Name"
 

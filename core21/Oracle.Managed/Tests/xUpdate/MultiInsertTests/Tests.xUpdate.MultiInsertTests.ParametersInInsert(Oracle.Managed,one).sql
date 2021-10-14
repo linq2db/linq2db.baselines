@@ -12,12 +12,10 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @id1 Int32
 SET     @id1 = 3000
-DECLARE @value_2 Varchar2(3) -- String
-SET     @value_2 = 'one'
-DECLARE @id2 Int32
-SET     @id2 = 4000
 DECLARE @value_1 Varchar2(3) -- String
 SET     @value_1 = 'one'
+DECLARE @id2 Int32
+SET     @id2 = 4000
 
 INSERT ALL
 WHEN "Value_1" IS NULL THEN
@@ -29,7 +27,7 @@ WHEN "Value_1" IS NULL THEN
 	VALUES
 	(
 		:id1,
-		:value_2
+		:value_1
 	)
 WHEN "Value_1" IS NOT NULL THEN
 	INTO "Dest1"
@@ -40,7 +38,7 @@ WHEN "Value_1" IS NOT NULL THEN
 	VALUES
 	(
 		:id2,
-		:value_2
+		:value_1
 	)
 SELECT
 	:value_1 as "Value_1"
