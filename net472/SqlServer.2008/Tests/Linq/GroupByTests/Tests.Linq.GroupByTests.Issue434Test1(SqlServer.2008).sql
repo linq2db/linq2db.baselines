@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @p_2 NVarChar(4000) -- String
-SET     @p_2 = N'%test%'
+DECLARE @input_2 NVarChar(4000) -- String
+SET     @input_2 = N'%test%'
 
 SELECT
 	[p].[PersonID],
@@ -11,7 +11,7 @@ FROM
 	[Person] [p]
 		INNER JOIN [Patient] [_gjd_ri] ON [_gjd_ri].[PersonID] = [p].[PersonID]
 WHERE
-	Lower([p].[FirstName]) LIKE @p_2 ESCAPE N'~'
+	Lower([p].[FirstName]) LIKE @input_2 ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2008
