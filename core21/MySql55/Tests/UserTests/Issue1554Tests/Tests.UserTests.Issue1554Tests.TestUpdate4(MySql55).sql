@@ -36,14 +36,12 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @ClaimedKeyType VarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN VarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	`Issue1554Table` `p`
 SET
 	`p`.`ClaimedKeyType` = @ClaimedKeyType,
-	`p`.`ClaimedKeyTypeN` = @ClaimedKeyTypeN
+	`p`.`ClaimedKeyTypeN` = @ClaimedKeyType
 WHERE
 	`p`.`Id` = 0
 
