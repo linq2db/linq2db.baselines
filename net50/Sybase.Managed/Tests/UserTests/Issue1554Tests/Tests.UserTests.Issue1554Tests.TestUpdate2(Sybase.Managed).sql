@@ -36,12 +36,14 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ClaimedKeyType UniVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyTypeN UniVarChar(2) -- String
+SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	[Issue1554Table]
 SET
 	[p].[ClaimedKeyType] = @ClaimedKeyType,
-	[p].[ClaimedKeyTypeN] = @ClaimedKeyType
+	[p].[ClaimedKeyTypeN] = @ClaimedKeyTypeN
 FROM
 	[Issue1554Table] [p]
 WHERE
