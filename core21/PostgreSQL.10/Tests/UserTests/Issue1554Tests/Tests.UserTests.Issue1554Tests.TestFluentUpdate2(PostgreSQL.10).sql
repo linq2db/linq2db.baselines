@@ -36,12 +36,14 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @ClaimedKeyType Text(2) -- String
 SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyTypeN Text(2) -- String
+SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	"Issue1554FluentTable"
 SET
 	"ClaimedKeyType" = :ClaimedKeyType,
-	"ClaimedKeyTypeN" = :ClaimedKeyType
+	"ClaimedKeyTypeN" = :ClaimedKeyTypeN
 WHERE
 	"Issue1554FluentTable"."Id" = 0
 
