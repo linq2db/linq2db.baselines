@@ -17,6 +17,8 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 15
+DECLARE @take_1 Int32
+SET     @take_1 = 15
 
 SELECT
 	e.ID,
@@ -83,6 +85,6 @@ FROM
 					FROM
 						"LinqDataTypes" t5
 				) t6
-			FETCH NEXT :take ROWS ONLY
+			FETCH NEXT :take_1 ROWS ONLY
 		) t7 ON t7.ID = e.ID
 
