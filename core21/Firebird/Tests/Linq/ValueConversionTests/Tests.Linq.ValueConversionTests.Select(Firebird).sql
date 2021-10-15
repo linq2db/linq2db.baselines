@@ -22,6 +22,7 @@ EXECUTE BLOCK AS BEGIN
 				"EnumWithNull"            VarChar(50),
 				"EnumWithNullDeclarative" VarChar(50),
 				"BoolValue"               VarChar(1)                             NOT NULL,
+				"AnotherBoolValue"        VarChar(1)                             NOT NULL,
 				"DateTimeNullable"        TimeStamp,
 
 				CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
@@ -42,18 +43,19 @@ INSERT INTO "ValueConversion"
 	"EnumWithNull",
 	"EnumWithNullDeclarative",
 	"BoolValue",
+	"AnotherBoolValue",
 	"DateTimeNullable"
 )
-SELECT 1,'{"some":"str1"}','[{"Value":"Value1"}]','Value1','Value1','Value1','Value1','Y',NULL FROM rdb$database UNION ALL
-SELECT 2,'{"some":"str2"}','[{"Value":"Value2"}]','Value2','Value2','Value2','Value2','N',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
-SELECT 3,'{"some":"str3"}','[{"Value":"Value3"}]','Value3','Value3','Value3','Value3','N',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
-SELECT 4,'{"some":"str4"}','[{"Value":"Value4"}]','Value1',NULL,NULL,NULL,'N',NULL FROM rdb$database UNION ALL
-SELECT 5,'{"some":"str5"}','[{"Value":"Value5"}]','Value2','Value1','Value1','Value1','Y',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
-SELECT 6,'{"some":"str6"}','[{"Value":"Value6"}]','Value3','Value2','Value2','Value2','N',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
-SELECT 7,'{"some":"str7"}','[{"Value":"Value7"}]','Value1','Value3','Value3','Value3','N',NULL FROM rdb$database UNION ALL
-SELECT 8,'{"some":"str8"}','[{"Value":"Value8"}]','Value2',NULL,NULL,NULL,'N',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
-SELECT 9,'{"some":"str9"}','[{"Value":"Value9"}]','Value3','Value1','Value1','Value1','Y',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
-SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N',NULL FROM rdb$database
+SELECT 1,'{"some":"str1"}','[{"Value":"Value1"}]','Value1','Value1','Value1','Value1','Y','F',NULL FROM rdb$database UNION ALL
+SELECT 2,'{"some":"str2"}','[{"Value":"Value2"}]','Value2','Value2','Value2','Value2','N','F',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
+SELECT 3,'{"some":"str3"}','[{"Value":"Value3"}]','Value3','Value3','Value3','Value3','N','F',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
+SELECT 4,'{"some":"str4"}','[{"Value":"Value4"}]','Value1',NULL,NULL,NULL,'N','F',NULL FROM rdb$database UNION ALL
+SELECT 5,'{"some":"str5"}','[{"Value":"Value5"}]','Value2','Value1','Value1','Value1','Y','F',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
+SELECT 6,'{"some":"str6"}','[{"Value":"Value6"}]','Value3','Value2','Value2','Value2','N','F',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
+SELECT 7,'{"some":"str7"}','[{"Value":"Value7"}]','Value1','Value3','Value3','Value3','N','F',NULL FROM rdb$database UNION ALL
+SELECT 8,'{"some":"str8"}','[{"Value":"Value8"}]','Value2',NULL,NULL,NULL,'N','F',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
+SELECT 9,'{"some":"str9"}','[{"Value":"Value9"}]','Value3','Value1','Value1','Value1','Y','F',CAST('2020-02-29' AS timestamp) FROM rdb$database UNION ALL
+SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -67,6 +69,7 @@ SELECT
 	"t1"."EnumWithNull",
 	"t1"."EnumWithNullDeclarative",
 	"t1"."BoolValue",
+	"t1"."AnotherBoolValue",
 	"t1"."DateTimeNullable"
 FROM
 	"ValueConversion" "t1"
