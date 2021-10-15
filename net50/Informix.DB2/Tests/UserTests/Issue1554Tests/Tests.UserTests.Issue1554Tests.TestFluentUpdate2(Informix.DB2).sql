@@ -36,12 +36,14 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ClaimedKeyType VarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyTypeN VarChar(2) -- String
+SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	Issue1554FluentTable
 SET
 	Issue1554FluentTable.ClaimedKeyType = @ClaimedKeyType,
-	Issue1554FluentTable.ClaimedKeyTypeN = @ClaimedKeyType
+	Issue1554FluentTable.ClaimedKeyTypeN = @ClaimedKeyTypeN
 WHERE
 	Issue1554FluentTable.Id = 0
 
