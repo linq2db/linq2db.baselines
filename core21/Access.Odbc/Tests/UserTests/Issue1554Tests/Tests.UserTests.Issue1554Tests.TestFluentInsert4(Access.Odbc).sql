@@ -16,8 +16,8 @@ DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
+DECLARE @ClaimedKeyType_1 NVarChar(2) -- String
+SET     @ClaimedKeyType_1 = 'EC'
 
 INSERT INTO [Issue1554FluentTable]
 (
