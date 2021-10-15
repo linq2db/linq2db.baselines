@@ -16,8 +16,6 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType UniVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN UniVarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 INSERT INTO [Issue1554FluentTable]
 (
@@ -29,7 +27,7 @@ VALUES
 (
 	@Id,
 	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	@ClaimedKeyType
 )
 
 BeforeExecute

@@ -17,8 +17,6 @@ CREATE TABLE [TestEqualsTable2]
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @param Integer -- Int32
-SET     @param = NULL
 
 SELECT
 	[_].[Id]
@@ -31,7 +29,7 @@ WHERE
 		FROM
 			[TestEqualsTable2] [__]
 		WHERE
-			[_].[Id] = [__].[FK] AND [__].[Id] = @param
+			[_].[Id] = [__].[FK] AND [__].[Id] IS NULL
 	)
 
 BeforeExecute
