@@ -16,8 +16,6 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType Text(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN Text(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 INSERT INTO "Issue1554Table"
 (
@@ -29,7 +27,7 @@ VALUES
 (
 	:Id,
 	:ClaimedKeyType,
-	:ClaimedKeyTypeN
+	:ClaimedKeyType
 )
 
 BeforeExecute
