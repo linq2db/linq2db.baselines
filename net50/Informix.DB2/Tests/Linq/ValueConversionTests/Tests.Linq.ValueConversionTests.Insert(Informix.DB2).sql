@@ -11,6 +11,7 @@ CREATE TABLE ValueConversion
 	EnumWithNull            VarChar(50)                   NULL,
 	EnumWithNullDeclarative VarChar(50)                   NULL,
 	BoolValue               VarChar(1)                NOT NULL,
+	AnotherBoolValue        VarChar(1)                NOT NULL,
 	DateTimeNullable        datetime year to fraction     NULL,
 
 	PRIMARY KEY (Id)
@@ -28,6 +29,8 @@ DECLARE @Value2 VarChar(22) -- String
 SET     @Value2 = '[{"Value":"inserted"}]'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'Y'
+DECLARE @AnotherBoolValue VarChar(1) -- String
+SET     @AnotherBoolValue = 'T'
 
 INSERT INTO ValueConversion
 (
@@ -35,7 +38,8 @@ INSERT INTO ValueConversion
 	Value1,
 	Enum,
 	Value2,
-	BoolValue
+	BoolValue,
+	AnotherBoolValue
 )
 VALUES
 (
@@ -43,7 +47,8 @@ VALUES
 	@Value1,
 	@Enum,
 	@Value2,
-	@BoolValue
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -58,6 +63,7 @@ SELECT FIRST 1
 	e.EnumWithNull,
 	e.EnumWithNullDeclarative,
 	e.BoolValue,
+	e.AnotherBoolValue,
 	e.DateTimeNullable
 FROM
 	ValueConversion e
@@ -76,6 +82,8 @@ DECLARE @Enum VarChar(6) -- String
 SET     @Enum = 'Value2'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'N'
+DECLARE @AnotherBoolValue VarChar(1) -- String
+SET     @AnotherBoolValue = 'F'
 
 INSERT INTO ValueConversion
 (
@@ -83,7 +91,8 @@ INSERT INTO ValueConversion
 	Value1,
 	Value2,
 	Enum,
-	BoolValue
+	BoolValue,
+	AnotherBoolValue
 )
 VALUES
 (
@@ -91,7 +100,8 @@ VALUES
 	@Value1,
 	@Value2,
 	@Enum,
-	@BoolValue
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -106,6 +116,7 @@ SELECT FIRST 1
 	e.EnumWithNull,
 	e.EnumWithNullDeclarative,
 	e.BoolValue,
+	e.AnotherBoolValue,
 	e.DateTimeNullable
 FROM
 	ValueConversion e
@@ -130,6 +141,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'Y'
+DECLARE @AnotherBoolValue VarChar(1) -- String
+SET     @AnotherBoolValue = 'T'
 DECLARE @DateTimeNullable Timestamp -- DateTime
 SET     @DateTimeNullable = NULL
 
@@ -143,6 +156,7 @@ INSERT INTO ValueConversion
 	EnumWithNull,
 	EnumWithNullDeclarative,
 	BoolValue,
+	AnotherBoolValue,
 	DateTimeNullable
 )
 VALUES
@@ -155,6 +169,7 @@ VALUES
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
 	@BoolValue,
+	@AnotherBoolValue,
 	@DateTimeNullable
 )
 
@@ -170,6 +185,7 @@ SELECT FIRST 1
 	e.EnumWithNull,
 	e.EnumWithNullDeclarative,
 	e.BoolValue,
+	e.AnotherBoolValue,
 	e.DateTimeNullable
 FROM
 	ValueConversion e

@@ -26,8 +26,8 @@ INSERT INTO "Issue1554Table"
 VALUES
 (
 	Cast(@Id as Int),
-	Cast(@ClaimedKeyType as VarChar(255) CHARACTER SET UNICODE_FSS),
-	Cast(@ClaimedKeyType as VarChar(255) CHARACTER SET UNICODE_FSS)
+	Cast(@ClaimedKeyType as VarChar(3) CHARACTER SET UNICODE_FSS),
+	Cast(@ClaimedKeyType as VarChar(3) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute

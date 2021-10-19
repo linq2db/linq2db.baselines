@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- Firebird (asynchronously)
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 1
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
-SELECT FIRST @ParentID
+SELECT FIRST @p_1
 	"c_1"."ParentID",
 	"c_1"."ChildID"
 FROM
@@ -13,10 +15,12 @@ WHERE
 
 BeforeExecute
 -- Firebird (asynchronously)
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 2
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
 
-SELECT FIRST @ParentID
+SELECT FIRST @p_1
 	"c_1"."ParentID",
 	"c_1"."ChildID"
 FROM

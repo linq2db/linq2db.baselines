@@ -18,6 +18,7 @@ IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 		[EnumWithNull]            VarChar(50)       NULL,
 		[EnumWithNullDeclarative] VarChar(50)       NULL,
 		[BoolValue]               VarChar(1)    NOT NULL,
+		[AnotherBoolValue]        VarChar(1)    NOT NULL,
 		[DateTimeNullable]        DateTime          NULL,
 
 		CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
@@ -36,23 +37,26 @@ INSERT INTO [ValueConversion]
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
 	[BoolValue],
+	[AnotherBoolValue],
 	[DateTimeNullable]
 )
-SELECT 1,N'{"some":"str1"}',N'[{"Value":"Value1"}]',N'Value1','Value1','Value1','Value1','Y',NULL UNION ALL
-SELECT 2,N'{"some":"str2"}',N'[{"Value":"Value2"}]',N'Value2','Value2','Value2','Value2','N','2020-02-29T00:00:00' UNION ALL
-SELECT 3,N'{"some":"str3"}',N'[{"Value":"Value3"}]',N'Value3','Value3','Value3','Value3','N','2020-02-29T00:00:00' UNION ALL
-SELECT 4,N'{"some":"str4"}',N'[{"Value":"Value4"}]',N'Value1',NULL,NULL,NULL,'N',NULL UNION ALL
-SELECT 5,N'{"some":"str5"}',N'[{"Value":"Value5"}]',N'Value2','Value1','Value1','Value1','Y','2020-02-29T00:00:00' UNION ALL
-SELECT 6,N'{"some":"str6"}',N'[{"Value":"Value6"}]',N'Value3','Value2','Value2','Value2','N','2020-02-29T00:00:00' UNION ALL
-SELECT 7,N'{"some":"str7"}',N'[{"Value":"Value7"}]',N'Value1','Value3','Value3','Value3','N',NULL UNION ALL
-SELECT 8,N'{"some":"str8"}',N'[{"Value":"Value8"}]',N'Value2',NULL,NULL,NULL,'N','2020-02-29T00:00:00' UNION ALL
-SELECT 9,N'{"some":"str9"}',N'[{"Value":"Value9"}]',N'Value3','Value1','Value1','Value1','Y','2020-02-29T00:00:00' UNION ALL
-SELECT 10,NULL,NULL,N'Value1','Value2','Value2','Value2','N',NULL
+SELECT 1,N'{"some":"str1"}',N'[{"Value":"Value1"}]',N'Value1','Value1','Value1','Value1','Y','F',NULL UNION ALL
+SELECT 2,N'{"some":"str2"}',N'[{"Value":"Value2"}]',N'Value2','Value2','Value2','Value2','N','F','2020-02-29T00:00:00' UNION ALL
+SELECT 3,N'{"some":"str3"}',N'[{"Value":"Value3"}]',N'Value3','Value3','Value3','Value3','N','F','2020-02-29T00:00:00' UNION ALL
+SELECT 4,N'{"some":"str4"}',N'[{"Value":"Value4"}]',N'Value1',NULL,NULL,NULL,'N','F',NULL UNION ALL
+SELECT 5,N'{"some":"str5"}',N'[{"Value":"Value5"}]',N'Value2','Value1','Value1','Value1','Y','F','2020-02-29T00:00:00' UNION ALL
+SELECT 6,N'{"some":"str6"}',N'[{"Value":"Value6"}]',N'Value3','Value2','Value2','Value2','N','F','2020-02-29T00:00:00' UNION ALL
+SELECT 7,N'{"some":"str7"}',N'[{"Value":"Value7"}]',N'Value1','Value3','Value3','Value3','N','F',NULL UNION ALL
+SELECT 8,N'{"some":"str8"}',N'[{"Value":"Value8"}]',N'Value2',NULL,NULL,NULL,'N','F','2020-02-29T00:00:00' UNION ALL
+SELECT 9,N'{"some":"str9"}',N'[{"Value":"Value9"}]',N'Value3','Value1','Value1','Value1','Y','F','2020-02-29T00:00:00' UNION ALL
+SELECT 10,NULL,NULL,N'Value1','Value2','Value2','Value2','N','F',NULL
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = N'Y'
+DECLARE @BoolValue_2 VarChar -- AnsiString
+SET     @BoolValue_2 = N'Y'
 
 SELECT
 	[t1].[Enum]
@@ -63,7 +67,7 @@ FROM
 				[t2].[BoolValue]
 			FROM
 				[ValueConversion] [t2]
-		) [t2_1] ON [t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue
+		) [t2_1] ON [t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue_2
 
 BeforeExecute
 -- SqlServer.2005
