@@ -57,8 +57,8 @@ CREATE TABLE "Flat"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p_1 VarChar(3) -- String
-SET     @p_1 = '%C%'
+DECLARE @DeliveryCounterParty VarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
 
 SELECT
 	"al_1"."alert",
@@ -81,7 +81,7 @@ FROM
 		LEFT JOIN "Trade" "trade1" ON ("al_1"."alert" = RTrim(Char("trade1"."DealId")) OR "al_1"."alert" IS NULL AND RTrim(Char("trade1"."DealId")) IS NULL)
 		LEFT JOIN "Nomin" "nomin1" ON ("al_1"."alert" = RTrim(Char("nomin1"."CargoId")) OR "al_1"."alert" IS NULL AND RTrim(Char("nomin1"."CargoId")) IS NULL)
 WHERE
-	(("nomin1"."DeliveryCounterParty" LIKE @p_1 OR "trade1"."CounterParty" LIKE @p_1) OR "al_1"."alert_1" LIKE @p_1)
+	(("nomin1"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade1"."CounterParty" LIKE @DeliveryCounterParty) OR "al_1"."alert_1" LIKE @DeliveryCounterParty)
 GROUP BY
 	"al_1"."alert",
 	"al_1"."alert_1",
