@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @param_1 Smallint -- Int16
+DECLARE @param_1 Integer -- Int32
 SET     @param_1 = 1
 
 SELECT
