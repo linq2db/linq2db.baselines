@@ -28,7 +28,7 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @gender NChar -- StringFixedLength
+DECLARE @gender NVarChar -- String
 SET     @gender = 'M'
 
 SELECT
@@ -44,7 +44,7 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @gender NChar -- StringFixedLength
+DECLARE @gender NVarChar -- String
 SET     @gender = 'M'
 
 SELECT

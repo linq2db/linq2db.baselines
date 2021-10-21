@@ -18,7 +18,7 @@ BeforeExecute
 -- SqlCe
 DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 1
-DECLARE @TradingStatus NChar -- StringFixedLength
+DECLARE @TradingStatus NVarChar -- String
 SET     @TradingStatus = NULL
 
 INSERT INTO [Issue913Test]
@@ -36,7 +36,7 @@ BeforeExecute
 -- SqlCe
 DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 2
-DECLARE @TradingStatus NChar(1) -- StringFixedLength
+DECLARE @TradingStatus NVarChar(1) -- String
 SET     @TradingStatus = 'A'
 
 INSERT INTO [Issue913Test]
@@ -54,7 +54,7 @@ BeforeExecute
 -- SqlCe
 DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 3
-DECLARE @TradingStatus NChar(1) -- StringFixedLength
+DECLARE @TradingStatus NVarChar(1) -- String
 SET     @TradingStatus = 'D'
 
 INSERT INTO [Issue913Test]

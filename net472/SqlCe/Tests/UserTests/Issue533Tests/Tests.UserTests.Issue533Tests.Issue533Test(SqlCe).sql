@@ -13,7 +13,7 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName NVarChar(12) -- String
 SET     @FirstName = 'FirstName533'

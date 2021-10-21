@@ -13,7 +13,7 @@ WHERE
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
 SET     @Name_FirstName = 'UpdateComplex'
@@ -62,7 +62,7 @@ WHERE
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
 SET     @Name_FirstName = 'UpdateComplex'
