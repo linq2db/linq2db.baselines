@@ -57,12 +57,12 @@ CREATE TABLE [Flat]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p_1 NVarChar(3) -- String
-SET     @p_1 = '%C%'
-DECLARE @p_2 NVarChar(3) -- String
-SET     @p_2 = '%C%'
-DECLARE @p_3 NVarChar(3) -- String
-SET     @p_3 = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty_1 NVarChar(3) -- String
+SET     @DeliveryCounterParty_1 = '%C%'
+DECLARE @DeliveryCounterParty_2 NVarChar(3) -- String
+SET     @DeliveryCounterParty_2 = '%C%'
 
 SELECT
 	[al_1].[alert],
