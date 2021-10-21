@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @Value_1 Int16
+DECLARE @Value_1 Int32
 SET     @Value_1 = 1
 
 SELECT
