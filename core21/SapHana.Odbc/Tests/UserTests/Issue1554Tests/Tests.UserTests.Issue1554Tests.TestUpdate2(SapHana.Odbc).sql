@@ -36,8 +36,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ClaimedKeyType NVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyType_1 NVarChar(2) -- String
-SET     @ClaimedKeyType_1 = 'EC'
+DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
+SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	"Issue1554Table"
