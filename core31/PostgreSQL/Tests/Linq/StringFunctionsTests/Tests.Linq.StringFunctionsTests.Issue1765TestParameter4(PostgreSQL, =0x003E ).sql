@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS "SampleClass"
 	"Id"     Int         NOT NULL,
 	"Value1" text            NULL,
 	"Value2" text            NULL,
-	"Value3" text            NULL,
+	"Value3" VarChar(50)     NULL,
 	"Value4" VarChar(50)     NULL
 )
 
