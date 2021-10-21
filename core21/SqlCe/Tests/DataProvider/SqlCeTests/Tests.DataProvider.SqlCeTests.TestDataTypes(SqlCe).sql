@@ -500,7 +500,7 @@ SELECT ncharDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @p NChar -- StringFixedLength
+DECLARE @p NVarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND ncharDataType IS NULL OR @p IS NOT NULL AND ncharDataType = @p
@@ -519,7 +519,7 @@ SELECT ncharDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- SqlCe
-DECLARE @p NChar(5) -- StringFixedLength
+DECLARE @p NVarChar(5) -- String
 SET     @p = '23233'
 
 SELECT ID FROM [AllTypes] WHERE ncharDataType = @p
