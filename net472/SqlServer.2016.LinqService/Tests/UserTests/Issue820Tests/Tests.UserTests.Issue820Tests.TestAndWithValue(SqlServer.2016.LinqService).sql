@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2016
-DECLARE @Value_1 SmallInt -- Int16
+DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 1
 
 SELECT
