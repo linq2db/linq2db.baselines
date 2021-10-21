@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Value_1 SmallInt -- Int16
+DECLARE @Value_1 Integer -- Int32
 SET     @Value_1 = 1
 
 SELECT
