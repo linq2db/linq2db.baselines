@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @param_1 Int16
+DECLARE @param_1 Int32
 SET     @param_1 = 1
 
 SELECT
