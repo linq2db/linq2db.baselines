@@ -16,8 +16,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @param3 Bit -- Boolean
-SET     @param3 = 0
+DECLARE @param4 Bit -- Boolean
+SET     @param4 = 0
 
 SELECT
 	[t1].[ID],
@@ -32,5 +32,5 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 WHERE
-	[t1].[BoolValue] = @param3
+	[t1].[BoolValue] = @param4
 

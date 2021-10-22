@@ -11,6 +11,7 @@ CREATE TABLE [ValueConversion]
 	[EnumWithNull]            VarChar(50)       NULL,
 	[EnumWithNullDeclarative] VarChar(50)       NULL,
 	[BoolValue]               VarChar(1)    NOT NULL,
+	[AnotherBoolValue]        VarChar(1)    NOT NULL,
 	[DateTimeNullable]        DateTime          NULL,
 
 	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
@@ -28,6 +29,8 @@ DECLARE @Value2 NVarChar(200) -- String
 SET     @Value2 = N'[{"Value":"inserted"}]'
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = N'Y'
+DECLARE @AnotherBoolValue VarChar -- AnsiString
+SET     @AnotherBoolValue = N'T'
 
 INSERT INTO [ValueConversion]
 (
@@ -35,7 +38,8 @@ INSERT INTO [ValueConversion]
 	[Value1],
 	[Enum],
 	[Value2],
-	[BoolValue]
+	[BoolValue],
+	[AnotherBoolValue]
 )
 VALUES
 (
@@ -43,7 +47,8 @@ VALUES
 	@Value1,
 	@Enum,
 	@Value2,
-	@BoolValue
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -60,6 +65,7 @@ SELECT TOP (@take)
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
 	[e].[BoolValue],
+	[e].[AnotherBoolValue],
 	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
@@ -78,6 +84,8 @@ DECLARE @Enum NVarChar(50) -- String
 SET     @Enum = N'Value2'
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = N'N'
+DECLARE @AnotherBoolValue VarChar -- AnsiString
+SET     @AnotherBoolValue = N'F'
 
 INSERT INTO [ValueConversion]
 (
@@ -85,7 +93,8 @@ INSERT INTO [ValueConversion]
 	[Value1],
 	[Value2],
 	[Enum],
-	[BoolValue]
+	[BoolValue],
+	[AnotherBoolValue]
 )
 VALUES
 (
@@ -93,7 +102,8 @@ VALUES
 	@Value1,
 	@Value2,
 	@Enum,
-	@BoolValue
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -110,6 +120,7 @@ SELECT TOP (@take)
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
 	[e].[BoolValue],
+	[e].[AnotherBoolValue],
 	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
@@ -134,6 +145,8 @@ DECLARE @EnumWithNullDeclarative VarChar(50) -- AnsiString
 SET     @EnumWithNullDeclarative = N'Value1'
 DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = N'Y'
+DECLARE @AnotherBoolValue VarChar -- AnsiString
+SET     @AnotherBoolValue = N'T'
 DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
@@ -147,6 +160,7 @@ INSERT INTO [ValueConversion]
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
 	[BoolValue],
+	[AnotherBoolValue],
 	[DateTimeNullable]
 )
 VALUES
@@ -159,6 +173,7 @@ VALUES
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
 	@BoolValue,
+	@AnotherBoolValue,
 	@DateTimeNullable
 )
 
@@ -176,6 +191,7 @@ SELECT TOP (@take)
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
 	[e].[BoolValue],
+	[e].[AnotherBoolValue],
 	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]

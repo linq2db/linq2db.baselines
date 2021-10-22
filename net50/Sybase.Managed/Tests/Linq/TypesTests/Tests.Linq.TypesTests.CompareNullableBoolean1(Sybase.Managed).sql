@@ -15,8 +15,8 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @param Bit -- Boolean
-SET     @param = 1
+DECLARE @param_1 Bit -- Boolean
+SET     @param_1 = 1
 
 SELECT
 	[t].[ID],
@@ -30,5 +30,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[BoolValue] = @param
+	[t].[BoolValue] = @param_1
 

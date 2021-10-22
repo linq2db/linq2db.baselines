@@ -57,8 +57,8 @@ CREATE TABLE "Flat"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @p_1 Text(3) -- String
-SET     @p_1 = '%C%'
+DECLARE @DeliveryCounterParty Text(3) -- String
+SET     @DeliveryCounterParty = '%C%'
 
 SELECT
 	al_1.alert,
@@ -81,7 +81,7 @@ FROM
 		LEFT JOIN "Trade" trade1 ON al_1.alert = Cast(trade1."DealId" as VarChar(11))
 		LEFT JOIN "Nomin" nomin1 ON al_1.alert = Cast(nomin1."CargoId" as VarChar(11))
 WHERE
-	((nomin1."DeliveryCounterParty" LIKE :p_1 OR trade1."CounterParty" LIKE :p_1) OR al_1.alert_1 LIKE :p_1)
+	((nomin1."DeliveryCounterParty" LIKE :DeliveryCounterParty OR trade1."CounterParty" LIKE :DeliveryCounterParty) OR al_1.alert_1 LIKE :DeliveryCounterParty)
 GROUP BY
 	al_1.alert,
 	al_1.alert_1,

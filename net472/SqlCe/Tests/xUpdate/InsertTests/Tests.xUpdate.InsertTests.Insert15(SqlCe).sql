@@ -8,7 +8,7 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(8) -- String
 SET     @Name_FirstName = 'Insert15'

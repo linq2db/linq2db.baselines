@@ -17,6 +17,8 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 15
+DECLARE @take_1 Integer -- Int32
+SET     @take_1 = 15
 
 SELECT
 	"e".ID,
@@ -53,7 +55,7 @@ FROM
 			) "t3"
 	) "e"
 		LEFT JOIN (
-			SELECT FIRST @take
+			SELECT FIRST @take_1
 				"t6".ID,
 				"t6"."SmallIntValue"
 			FROM

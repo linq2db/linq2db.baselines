@@ -25,7 +25,7 @@ DECLARE @LastName NVarChar(4) -- String
 SET     @LastName = 'King'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO [xxPerson]

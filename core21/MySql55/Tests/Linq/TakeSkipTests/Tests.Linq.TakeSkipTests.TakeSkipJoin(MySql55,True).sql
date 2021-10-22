@@ -17,6 +17,8 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 15
+DECLARE @take_1 Int32
+SET     @take_1 = 15
 
 SELECT
 	`e`.`ID`,
@@ -83,6 +85,6 @@ FROM
 					FROM
 						`LinqDataTypes` `t5`
 				) `t6`
-			LIMIT @take
+			LIMIT @take_1
 		) `_` ON `_`.`ID` = `e`.`ID`
 

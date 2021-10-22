@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p NChar(1) -- StringFixedLength
+DECLARE @p NVarChar(1) -- String
 SET     @p = 'A'
 
 SELECT Cast(@p as nvarchar)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p NChar(1) -- StringFixedLength
+DECLARE @p NVarChar(1) -- String
 SET     @p = 'B'
 
 SELECT Cast(@p as nvarchar)

@@ -17,6 +17,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 15
+DECLARE @take_1 Integer -- Int32
+SET     @take_1 = 15
 
 SELECT
 	e."ID",
@@ -83,6 +85,6 @@ FROM
 					FROM
 						"LinqDataTypes" t5
 				) t6
-			LIMIT :take
+			LIMIT :take_1
 		) t7 ON t7."ID" = e."ID"
 

@@ -11,6 +11,7 @@ CREATE TABLE [ValueConversion]
 	[EnumWithNull]            VarChar(50)       NULL,
 	[EnumWithNullDeclarative] VarChar(50)       NULL,
 	[BoolValue]               VarChar(1)    NOT NULL,
+	[AnotherBoolValue]        VarChar(1)    NOT NULL,
 	[DateTimeNullable]        DateTime          NULL,
 
 	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
@@ -28,6 +29,8 @@ DECLARE @Value2 NVarChar(22) -- String
 SET     @Value2 = '[{"Value":"inserted"}]'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
+DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
+SET     @AnotherBoolValue = 'T'
 
 INSERT INTO [ValueConversion]
 (
@@ -35,10 +38,12 @@ INSERT INTO [ValueConversion]
 	[Value1],
 	[Enum],
 	[Value2],
-	[BoolValue]
+	[BoolValue],
+	[AnotherBoolValue]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -58,6 +63,7 @@ SELECT TOP 1
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
 	[e].[BoolValue],
+	[e].[AnotherBoolValue],
 	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
@@ -76,6 +82,8 @@ DECLARE @Enum NVarChar(6) -- String
 SET     @Enum = 'Value2'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
+DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
+SET     @AnotherBoolValue = 'F'
 
 INSERT INTO [ValueConversion]
 (
@@ -83,10 +91,12 @@ INSERT INTO [ValueConversion]
 	[Value1],
 	[Value2],
 	[Enum],
-	[BoolValue]
+	[BoolValue],
+	[AnotherBoolValue]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -106,6 +116,7 @@ SELECT TOP 1
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
 	[e].[BoolValue],
+	[e].[AnotherBoolValue],
 	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
@@ -130,6 +141,8 @@ DECLARE @EnumWithNullDeclarative VarChar(6) -- AnsiString
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
+DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
+SET     @AnotherBoolValue = 'T'
 DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
@@ -143,10 +156,12 @@ INSERT INTO [ValueConversion]
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
 	[BoolValue],
+	[AnotherBoolValue],
 	[DateTimeNullable]
 )
 VALUES
 (
+	?,
 	?,
 	?,
 	?,
@@ -170,6 +185,7 @@ SELECT TOP 1
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
 	[e].[BoolValue],
+	[e].[AnotherBoolValue],
 	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]

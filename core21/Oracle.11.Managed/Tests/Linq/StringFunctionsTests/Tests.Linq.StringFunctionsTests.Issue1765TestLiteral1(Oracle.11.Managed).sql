@@ -17,11 +17,11 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "SampleClass"
 		(
-			"Id"     Int         NOT NULL,
-			"Value1" VarChar(50)     NULL,
-			"Value2" VarChar(50)     NULL,
-			"Value3" VarChar(50)     NULL,
-			"Value4" VarChar(50)     NULL
+			"Id"     Int          NOT NULL,
+			"Value1" VarChar(50)      NULL,
+			"Value2" VarChar(50)      NULL,
+			"Value3" VarChar(50)      NULL,
+			"Value4" VarChar2(50)     NULL
 		)
 	';
 EXCEPTION
