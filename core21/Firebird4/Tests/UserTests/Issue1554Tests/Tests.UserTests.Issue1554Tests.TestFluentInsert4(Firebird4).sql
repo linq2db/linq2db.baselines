@@ -16,6 +16,8 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType VarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyTypeN VarChar(2) -- String
+SET     @ClaimedKeyTypeN = 'EC'
 
 INSERT INTO "Issue1554FluentTable"
 (
@@ -27,7 +29,7 @@ VALUES
 (
 	Cast(@Id as Int),
 	Cast(@ClaimedKeyType as VarChar(3) CHARACTER SET UNICODE_FSS),
-	Cast(@ClaimedKeyType as VarChar(3) CHARACTER SET UNICODE_FSS)
+	Cast(@ClaimedKeyTypeN as VarChar(3) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute

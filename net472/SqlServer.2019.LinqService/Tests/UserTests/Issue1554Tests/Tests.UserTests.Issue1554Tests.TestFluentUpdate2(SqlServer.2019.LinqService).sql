@@ -36,12 +36,14 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @ClaimedKeyType NVarChar(3) -- String
 SET     @ClaimedKeyType = N'EC'
+DECLARE @ClaimedKeyTypeN NVarChar(3) -- String
+SET     @ClaimedKeyTypeN = N'EC'
 
 UPDATE
 	[p]
 SET
 	[p].[ClaimedKeyType] = @ClaimedKeyType,
-	[p].[ClaimedKeyTypeN] = @ClaimedKeyType
+	[p].[ClaimedKeyTypeN] = @ClaimedKeyTypeN
 FROM
 	[Issue1554FluentTable] [p]
 WHERE
