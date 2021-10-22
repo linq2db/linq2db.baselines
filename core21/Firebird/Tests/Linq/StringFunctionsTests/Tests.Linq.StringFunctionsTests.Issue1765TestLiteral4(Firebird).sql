@@ -17,8 +17,8 @@ EXECUTE BLOCK AS BEGIN
 				"Id"     Int                                   NOT NULL,
 				"Value1" VarChar(50) CHARACTER SET UNICODE_FSS,
 				"Value2" VarChar(50) CHARACTER SET UNICODE_FSS,
-				"Value3" VarChar(50) CHARACTER SET UNICODE_FSS,
-				"Value4" VarChar(50)
+				"Value3" VarChar(50),
+				"Value4" VarChar(50) CHARACTER SET UNICODE_FSS
 			)
 		';
 END

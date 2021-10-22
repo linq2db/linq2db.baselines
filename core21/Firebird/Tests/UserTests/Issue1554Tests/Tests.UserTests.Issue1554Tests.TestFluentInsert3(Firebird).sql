@@ -28,8 +28,8 @@ INSERT INTO "Issue1554FluentTable"
 VALUES
 (
 	Cast(@Id as Int),
-	Cast(@ClaimedKeyType as VarChar(255) CHARACTER SET UNICODE_FSS),
-	Cast(@ClaimedKeyTypeN as VarChar(255) CHARACTER SET UNICODE_FSS)
+	Cast(@ClaimedKeyType as VarChar(3) CHARACTER SET UNICODE_FSS),
+	Cast(@ClaimedKeyTypeN as VarChar(3) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
