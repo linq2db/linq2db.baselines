@@ -10,6 +10,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -19,13 +21,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_1
+	@Char_1
 )
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N'	'
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = N'	'
 
 INSERT INTO [AllTypes]
 (
@@ -35,13 +39,16 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_1
+	@Char_1
 )
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N'
+'
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = N'
 '
 
 INSERT INTO [AllTypes]
@@ -52,13 +59,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_1
+	@Char_1
 )
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N''
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = N''
 
 INSERT INTO [AllTypes]
 (
@@ -68,13 +77,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_1
+	@Char_1
 )
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N''
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = N''
 
 INSERT INTO [AllTypes]
 (
@@ -84,13 +95,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_1
+	@Char_1
 )
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N''
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = N''
 
 INSERT INTO [AllTypes]
 (
@@ -100,13 +113,15 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_1
+	@Char_1
 )
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = N' '
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -116,7 +131,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_1
+	@Char_1
 )
 
 BeforeExecute
@@ -339,6 +354,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = char(0)
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = char(0)
 
 INSERT INTO [AllTypes]
 (
@@ -348,7 +365,7 @@ INSERT INTO [AllTypes]
 VALUES
 (
 	@NChar_1,
-	@NChar_1
+	@Char_1
 )
 
 BeforeExecute

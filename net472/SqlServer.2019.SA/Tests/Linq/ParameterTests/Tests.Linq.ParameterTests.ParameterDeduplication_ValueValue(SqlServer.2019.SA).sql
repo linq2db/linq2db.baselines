@@ -6,9 +6,13 @@ CREATE TABLE [ParameterDeduplication]
 	[Id]      Int            NOT NULL,
 	[Int1]    Int            NOT NULL,
 	[Int2]    Int            NOT NULL,
+	[IntN1]   Int                NULL,
+	[IntN2]   Int                NULL,
 	[String1] VarChar(Max)       NULL,
 	[String2] NVarChar(4000)     NULL,
-	[String3] NVarChar(4000)     NULL
+	[String3] NVarChar(4000)     NULL,
+
+	CONSTRAINT [PK_ParameterDeduplication] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
@@ -19,6 +23,10 @@ DECLARE @Int1 Int -- Int32
 SET     @Int1 = 2
 DECLARE @Int2 Int -- Int32
 SET     @Int2 = 2
+DECLARE @IntN1 Int -- Int32
+SET     @IntN1 = 2
+DECLARE @IntN2 Int -- Int32
+SET     @IntN2 = 2
 DECLARE @String1 VarChar(8000) -- AnsiString
 SET     @String1 = N'str'
 DECLARE @String2 NVarChar(4000) -- String
@@ -31,6 +39,8 @@ INSERT INTO [ParameterDeduplication]
 	[Id],
 	[Int1],
 	[Int2],
+	[IntN1],
+	[IntN2],
 	[String1],
 	[String2],
 	[String3]
@@ -40,6 +50,8 @@ VALUES
 	@Id,
 	@Int1,
 	@Int2,
+	@IntN1,
+	@IntN2,
 	@String1,
 	@String2,
 	@String3
@@ -53,6 +65,10 @@ DECLARE @Int1 Int -- Int32
 SET     @Int1 = 3
 DECLARE @Int2 Int -- Int32
 SET     @Int2 = 4
+DECLARE @IntN1 Int -- Int32
+SET     @IntN1 = 5
+DECLARE @IntN2 Int -- Int32
+SET     @IntN2 = 6
 DECLARE @String1 VarChar(8000) -- AnsiString
 SET     @String1 = N'str1'
 DECLARE @String2 NVarChar(4000) -- String
@@ -65,6 +81,8 @@ INSERT INTO [ParameterDeduplication]
 	[Id],
 	[Int1],
 	[Int2],
+	[IntN1],
+	[IntN2],
 	[String1],
 	[String2],
 	[String3]
@@ -74,6 +92,8 @@ VALUES
 	@Id,
 	@Int1,
 	@Int2,
+	@IntN1,
+	@IntN2,
 	@String1,
 	@String2,
 	@String3
@@ -86,6 +106,8 @@ SELECT
 	[t1].[Id],
 	[t1].[Int1],
 	[t1].[Int2],
+	[t1].[IntN1],
+	[t1].[IntN2],
 	[t1].[String1],
 	[t1].[String2],
 	[t1].[String3]
