@@ -11,7 +11,7 @@ CREATE TABLE [Issue1279Table]
 
 BeforeExecute
 -- SqlCe
-DECLARE @CharFld NChar -- StringFixedLength
+DECLARE @CharFld NVarChar -- String
 SET     @CharFld = 'P'
 
 INSERT INTO [Issue1279Table]

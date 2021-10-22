@@ -12,7 +12,7 @@ BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 101
-DECLARE @Value_1 NChar(2) -- StringFixedLength
+DECLARE @Value_1 NVarChar(2) -- String
 SET     @Value_1 = '11'
 
 INSERT INTO [LinqDataTypes]
@@ -30,7 +30,7 @@ BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 102
-DECLARE @Value_1 NChar(2) -- StringFixedLength
+DECLARE @Value_1 NVarChar(2) -- String
 SET     @Value_1 = '22'
 
 INSERT INTO [LinqDataTypes]
@@ -48,7 +48,7 @@ BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 103
-DECLARE @Value_1 NChar -- StringFixedLength
+DECLARE @Value_1 NVarChar -- String
 SET     @Value_1 = NULL
 
 INSERT INTO [LinqDataTypes]
