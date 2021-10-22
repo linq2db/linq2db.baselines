@@ -11,6 +11,7 @@ CREATE TABLE [ValueConversion]
 	[EnumWithNull]            NVarChar(50)      NULL,
 	[EnumWithNullDeclarative] NVarChar(50)      NULL,
 	[BoolValue]               NVarChar(1)   NOT NULL,
+	[AnotherBoolValue]        NVarChar(1)   NOT NULL,
 	[DateTimeNullable]        DateTime          NULL,
 
 	CONSTRAINT [PK_ValueConversion] PRIMARY KEY ([Id])
@@ -25,7 +26,8 @@ INSERT INTO [ValueConversion]
 	[Value1],
 	[Enum],
 	[Value2],
-	[BoolValue]
+	[BoolValue],
+	[AnotherBoolValue]
 )
 VALUES
 (
@@ -33,7 +35,8 @@ VALUES
 	'[]',
 	'Value1',
 	'[{"Value":"inserted"}]',
-	'Y'
+	'Y',
+	'T'
 )
 
 BeforeExecute
@@ -50,6 +53,7 @@ SELECT TOP (@take)
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
 	[e].[BoolValue],
+	[e].[AnotherBoolValue],
 	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
@@ -65,7 +69,8 @@ INSERT INTO [ValueConversion]
 	[Value1],
 	[Value2],
 	[Enum],
-	[BoolValue]
+	[BoolValue],
+	[AnotherBoolValue]
 )
 VALUES
 (
@@ -73,7 +78,8 @@ VALUES
 	NULL,
 	NULL,
 	'Value2',
-	'N'
+	'N',
+	'F'
 )
 
 BeforeExecute
@@ -90,6 +96,7 @@ SELECT TOP (@take)
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
 	[e].[BoolValue],
+	[e].[AnotherBoolValue],
 	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]
@@ -114,6 +121,8 @@ DECLARE @EnumWithNullDeclarative NVarChar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
 DECLARE @BoolValue NVarChar -- String
 SET     @BoolValue = 'Y'
+DECLARE @AnotherBoolValue NVarChar -- String
+SET     @AnotherBoolValue = 'T'
 DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
@@ -127,6 +136,7 @@ INSERT INTO [ValueConversion]
 	[EnumWithNull],
 	[EnumWithNullDeclarative],
 	[BoolValue],
+	[AnotherBoolValue],
 	[DateTimeNullable]
 )
 VALUES
@@ -139,6 +149,7 @@ VALUES
 	@EnumWithNull,
 	@EnumWithNullDeclarative,
 	@BoolValue,
+	@AnotherBoolValue,
 	@DateTimeNullable
 )
 
@@ -156,6 +167,7 @@ SELECT TOP (@take)
 	[e].[EnumWithNull],
 	[e].[EnumWithNullDeclarative],
 	[e].[BoolValue],
+	[e].[AnotherBoolValue],
 	[e].[DateTimeNullable]
 FROM
 	[ValueConversion] [e]

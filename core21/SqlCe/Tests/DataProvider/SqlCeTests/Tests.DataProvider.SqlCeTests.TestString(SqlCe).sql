@@ -40,7 +40,7 @@ SELECT Cast(NULL    as ntext)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p NChar(3) -- StringFixedLength
+DECLARE @p NVarChar(3) -- String
 SET     @p = '123'
 
 SELECT RTRIM(@p)
@@ -61,7 +61,7 @@ SELECT Cast(@p as ntext)
 
 BeforeExecute
 -- SqlCe
-DECLARE @p NChar(3) -- StringFixedLength
+DECLARE @p NVarChar(3) -- String
 SET     @p = '123'
 
 SELECT Cast(@p as nchar)
