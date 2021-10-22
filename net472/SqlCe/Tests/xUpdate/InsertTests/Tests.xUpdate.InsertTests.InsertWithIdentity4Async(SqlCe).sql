@@ -14,7 +14,7 @@ DECLARE @LastName NVarChar(7) -- String
 SET     @LastName = 'Shepard'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO [Person]
@@ -63,7 +63,7 @@ DECLARE @LastName NVarChar(7) -- String
 SET     @LastName = 'Shepard'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO [Person]

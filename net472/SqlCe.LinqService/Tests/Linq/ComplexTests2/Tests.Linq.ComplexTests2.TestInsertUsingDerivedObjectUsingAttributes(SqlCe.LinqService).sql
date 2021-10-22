@@ -11,7 +11,7 @@ DECLARE @LastName NVarChar(4) -- String
 SET     @LastName = 'test'
 DECLARE @MiddleName NVarChar(4) -- String
 SET     @MiddleName = 'test'
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'U'
 
 INSERT INTO [Person]
@@ -58,7 +58,7 @@ DECLARE @LastName NVarChar(4) -- String
 SET     @LastName = 'test'
 DECLARE @MiddleName NVarChar(4) -- String
 SET     @MiddleName = 'test'
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'U'
 DECLARE @ID Int -- Int32
 SET     @ID = 5
