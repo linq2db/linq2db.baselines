@@ -9,8 +9,8 @@ FROM
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @param Int32
-SET     @param = 1
+DECLARE @param_1 Int32
+SET     @param_1 = 1
 
 SELECT
 	`t`.`ParentID`,
@@ -18,5 +18,5 @@ SELECT
 FROM
 	`Parent` `t`
 WHERE
-	`t`.`Value1` = @param
+	`t`.`Value1` = @param_1
 
