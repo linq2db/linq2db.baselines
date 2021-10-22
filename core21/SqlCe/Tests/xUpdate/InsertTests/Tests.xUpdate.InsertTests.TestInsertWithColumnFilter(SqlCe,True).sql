@@ -6,7 +6,7 @@ DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName NVarChar(15) -- String
 SET     @MiddleName = 'som middle name'
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO [Person]
