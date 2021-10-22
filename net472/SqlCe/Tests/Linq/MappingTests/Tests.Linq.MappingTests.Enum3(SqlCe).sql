@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @fm NChar(1) -- StringFixedLength
+DECLARE @fm NVarChar(1) -- String
 SET     @fm = 'F'
 
 SELECT

@@ -11,7 +11,7 @@ DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName NVarChar(15) -- String
 SET     @MiddleName = 'som middle name'
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO [Person]
@@ -53,7 +53,7 @@ DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @ID Int -- Int32
 SET     @ID = 5

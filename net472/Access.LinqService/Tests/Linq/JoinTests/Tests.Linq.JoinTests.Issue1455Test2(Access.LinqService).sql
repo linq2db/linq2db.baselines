@@ -57,12 +57,12 @@ CREATE TABLE [Flat]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p_1 VarWChar(3) -- String
-SET     @p_1 = '%C%'
-DECLARE @p_2 VarWChar(3) -- String
-SET     @p_2 = '%C%'
-DECLARE @p_3 VarWChar(3) -- String
-SET     @p_3 = '%C%'
+DECLARE @DeliveryCounterParty VarWChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty_1 VarWChar(3) -- String
+SET     @DeliveryCounterParty_1 = '%C%'
+DECLARE @DeliveryCounterParty_2 VarWChar(3) -- String
+SET     @DeliveryCounterParty_2 = '%C%'
 
 SELECT
 	[al_1].[alert],
@@ -85,7 +85,7 @@ FROM
 		LEFT JOIN [Trade] [trade1] ON (([al_1].[alert] = CStr([trade1].[DealId]) OR [al_1].[alert] IS NULL AND CStr([trade1].[DealId]) IS NULL)))
 		LEFT JOIN [Nomin] [nomin1] ON (([al_1].[alert] = CStr([nomin1].[CargoId]) OR [al_1].[alert] IS NULL AND CStr([nomin1].[CargoId]) IS NULL))
 WHERE
-	(([nomin1].[DeliveryCounterParty] LIKE @p_1 OR [trade1].[CounterParty] LIKE @p_2) OR [al_1].[alert_1] LIKE @p_3)
+	(([nomin1].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade1].[CounterParty] LIKE @DeliveryCounterParty_1) OR [al_1].[alert_1] LIKE @DeliveryCounterParty_2)
 GROUP BY
 	[al_1].[alert],
 	[al_1].[alert_1],

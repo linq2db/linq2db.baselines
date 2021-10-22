@@ -24,9 +24,9 @@ DECLARE @FieldString NVarChar -- String
 SET     @FieldString = NULL
 DECLARE @FieldNString NVarChar -- String
 SET     @FieldNString = NULL
-DECLARE @FieldChar NChar -- StringFixedLength
+DECLARE @FieldChar NVarChar -- String
 SET     @FieldChar = NULL
-DECLARE @FieldNChar NChar -- StringFixedLength
+DECLARE @FieldNChar NVarChar -- String
 SET     @FieldNChar = NULL
 DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = NULL
@@ -98,9 +98,9 @@ DECLARE @FieldString NVarChar(13) -- String
 SET     @FieldString = 'normal strinG'
 DECLARE @FieldNString NVarChar(13) -- String
 SET     @FieldNString = 'всЁ нормально'
-DECLARE @FieldChar NChar -- StringFixedLength
+DECLARE @FieldChar NVarChar -- String
 SET     @FieldChar = '*'
-DECLARE @FieldNChar NChar -- StringFixedLength
+DECLARE @FieldNChar NVarChar -- String
 SET     @FieldNChar = 'ё'
 DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = -3.40282002E+38
@@ -174,9 +174,9 @@ SET     @FieldString = 'test
 DECLARE @FieldNString NVarChar(14) -- String
 SET     @FieldNString = 'ЙЦУКЩывапрм
 q'
-DECLARE @FieldChar NChar -- StringFixedLength
+DECLARE @FieldChar NVarChar -- String
 SET     @FieldChar = '&'
-DECLARE @FieldNChar NChar -- StringFixedLength
+DECLARE @FieldNChar NVarChar -- String
 SET     @FieldNChar = '>'
 DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = 3.40282002E+38
@@ -248,9 +248,9 @@ DECLARE @FieldString NVarChar(20) -- String
 SET     @FieldString = '`~!@#$%^&*()_+{}|[]\'
 DECLARE @FieldNString NVarChar(12) -- String
 SET     @FieldNString = '<>?/.,;''щЩ":'
-DECLARE @FieldChar NChar -- StringFixedLength
+DECLARE @FieldChar NVarChar -- String
 SET     @FieldChar = ''
-DECLARE @FieldNChar NChar -- StringFixedLength
+DECLARE @FieldNChar NVarChar -- String
 SET     @FieldNChar = '
 '
 DECLARE @FieldFloat Real -- Single
@@ -323,9 +323,9 @@ DECLARE @FieldString NVarChar(12) -- String
 SET     @FieldString = '<>?/.,;''zZ":'
 DECLARE @FieldNString NVarChar(20) -- String
 SET     @FieldNString = '`~!@#$%^&*()_+{}|[]\'
-DECLARE @FieldChar NChar -- StringFixedLength
+DECLARE @FieldChar NVarChar -- String
 SET     @FieldChar = ''
-DECLARE @FieldNChar NChar -- StringFixedLength
+DECLARE @FieldNChar NVarChar -- String
 SET     @FieldNChar = ''
 DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = -1.17549996E-38
@@ -399,9 +399,9 @@ SET     @FieldString = 'test
 DECLARE @FieldNString NVarChar(14) -- String
 SET     @FieldNString = 'ЙЦУКЩывапрм
 q'
-DECLARE @FieldChar NChar -- StringFixedLength
+DECLARE @FieldChar NVarChar -- String
 SET     @FieldChar = '1'
-DECLARE @FieldNChar NChar -- StringFixedLength
+DECLARE @FieldNChar NVarChar -- String
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = 3.40282002E+38
@@ -473,9 +473,9 @@ DECLARE @FieldString NVarChar(12) -- String
 SET     @FieldString = '<>?/.,;''zZ":'
 DECLARE @FieldNString NVarChar(20) -- String
 SET     @FieldNString = '`~!@#$%^&*()_+{}|[]\'
-DECLARE @FieldChar NChar -- StringFixedLength
+DECLARE @FieldChar NVarChar -- String
 SET     @FieldChar = ' '
-DECLARE @FieldNChar NChar -- StringFixedLength
+DECLARE @FieldNChar NVarChar -- String
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = -1.17549996E-38
@@ -549,9 +549,9 @@ SET     @FieldString = 'test
 DECLARE @FieldNString NVarChar(17) -- String
 SET     @FieldNString = 'ЙЦУКЩывапрм
 q  '
-DECLARE @FieldChar NChar -- StringFixedLength
+DECLARE @FieldChar NVarChar -- String
 SET     @FieldChar = '-'
-DECLARE @FieldNChar NChar -- StringFixedLength
+DECLARE @FieldNChar NVarChar -- String
 SET     @FieldNChar = '~'
 DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = 3.40282002E+38

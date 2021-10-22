@@ -13,7 +13,7 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
 SET     @Name_FirstName = 'UpdateComplex'
@@ -44,7 +44,7 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NChar(1) -- StringFixedLength
+DECLARE @Value_1 NVarChar(1) -- String
 SET     @Value_1 = 'O'
 
 UPDATE

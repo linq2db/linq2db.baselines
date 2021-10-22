@@ -29,7 +29,7 @@ DECLARE @LastName NVarChar(6) -- String
 SET     @LastName = 'last 1'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'F'
 
 INSERT INTO [Person]
@@ -60,7 +60,7 @@ DECLARE @LastName NVarChar(6) -- String
 SET     @LastName = 'last 2'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO [Person]
@@ -91,7 +91,7 @@ DECLARE @LastName NVarChar(6) -- String
 SET     @LastName = 'last 3'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'O'
 
 INSERT INTO [Person]
@@ -122,7 +122,7 @@ DECLARE @LastName NVarChar(6) -- String
 SET     @LastName = 'last 4'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'U'
 
 INSERT INTO [Person]
@@ -153,7 +153,7 @@ DECLARE @LastName NVarChar(6) -- String
 SET     @LastName = 'last 5'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'F'
 
 INSERT INTO [Person]
@@ -184,7 +184,7 @@ DECLARE @LastName NVarChar(6) -- String
 SET     @LastName = 'last 6'
 DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
-DECLARE @Gender NChar(1) -- StringFixedLength
+DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO [Person]

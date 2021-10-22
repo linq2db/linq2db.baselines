@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @gender NChar(1) -- StringFixedLength
+DECLARE @gender NVarChar(1) -- String
 SET     @gender = 'M'
 
 SELECT

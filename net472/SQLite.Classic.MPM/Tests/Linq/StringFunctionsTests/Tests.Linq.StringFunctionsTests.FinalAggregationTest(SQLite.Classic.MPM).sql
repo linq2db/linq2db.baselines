@@ -11,8 +11,8 @@ CREATE TABLE IF NOT EXISTS [SampleClass]
 	[Id]     INTEGER      NOT NULL,
 	[Value1] NVarChar(50)     NULL,
 	[Value2] NVarChar(50)     NULL,
-	[Value3] NVarChar(50)     NULL,
-	[Value4] VarChar(50)      NULL
+	[Value3] VarChar(50)      NULL,
+	[Value4] NVarChar(50)     NULL
 )
 
 BeforeExecute

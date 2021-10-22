@@ -15,8 +15,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @param Boolean
-SET     @param = True
+DECLARE @param_1 Boolean
+SET     @param_1 = True
 
 SELECT
 	t."ID",
@@ -30,5 +30,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."BoolValue" = :param
+	t."BoolValue" = :param_1
 

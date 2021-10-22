@@ -16,8 +16,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @param3 Boolean
-SET     @param3 = False
+DECLARE @param4 Boolean
+SET     @param4 = False
 
 SELECT
 	t1."ID",
@@ -32,5 +32,5 @@ FROM
 	"LinqDataTypes" t1
 		INNER JOIN "LinqDataTypes" t2 ON t1."ID" = t2."ID"
 WHERE
-	t1."BoolValue" = :param3
+	t1."BoolValue" = :param4
 

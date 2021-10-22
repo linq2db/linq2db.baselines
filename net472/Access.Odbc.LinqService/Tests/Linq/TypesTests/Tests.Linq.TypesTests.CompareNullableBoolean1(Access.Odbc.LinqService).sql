@@ -15,8 +15,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @param Bit -- Boolean
-SET     @param = True
+DECLARE @param_1 Bit -- Boolean
+SET     @param_1 = True
 
 SELECT
 	[t].[ID],
