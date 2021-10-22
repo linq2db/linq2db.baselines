@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
-DECLARE @param_1 SmallInt -- Int16
+DECLARE @param_1 Int -- Int32
 SET     @param_1 = 1
 
 SELECT
