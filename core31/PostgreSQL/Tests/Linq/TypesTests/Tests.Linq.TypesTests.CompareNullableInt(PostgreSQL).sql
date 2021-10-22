@@ -9,8 +9,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @param Integer -- Int32
-SET     @param = 1
+DECLARE @param_1 Integer -- Int32
+SET     @param_1 = 1
 
 SELECT
 	t."ParentID",
@@ -18,5 +18,5 @@ SELECT
 FROM
 	"Parent" t
 WHERE
-	t."Value1" = :param
+	t."Value1" = :param_1
 
