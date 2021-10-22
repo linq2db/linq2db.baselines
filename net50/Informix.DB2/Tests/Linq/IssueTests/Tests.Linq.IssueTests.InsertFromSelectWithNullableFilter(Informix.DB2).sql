@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p_1 Integer(4) -- Int32
-SET     @p_1 = 1234
+DECLARE @ID SmallInt(2) -- Int16
+SET     @ID = 1234
 
 INSERT INTO AllTypes
 (
@@ -41,6 +41,6 @@ FROM
 			AllTypes t1
 				INNER JOIN AllTypes c_1 ON t1.smallintDataType = c_1.intDataType
 		WHERE
-			t1.smallintDataType = @p_1
+			t1.smallintDataType = @ID
 	) t2
 
