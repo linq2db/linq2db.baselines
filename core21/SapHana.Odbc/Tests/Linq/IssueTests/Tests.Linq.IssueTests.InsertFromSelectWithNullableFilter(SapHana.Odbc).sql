@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p_1  -- Int32
-SET     @p_1 = 1234
+DECLARE @ID  -- Int16
+SET     @ID = 1234
 
 INSERT INTO "AllTypes"
 (

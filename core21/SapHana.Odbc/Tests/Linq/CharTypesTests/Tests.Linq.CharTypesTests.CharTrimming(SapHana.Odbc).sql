@@ -10,8 +10,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = ' '
-DECLARE @NChar_2 NChar(1) -- StringFixedLength
-SET     @NChar_2 = ' '
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -28,8 +28,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = '	'
-DECLARE @NChar_2 NChar(1) -- StringFixedLength
-SET     @NChar_2 = '	'
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = '	'
 
 INSERT INTO "AllTypes"
 (
@@ -47,8 +47,8 @@ BeforeExecute
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = '
 '
-DECLARE @NChar_2 NChar(1) -- StringFixedLength
-SET     @NChar_2 = '
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = '
 '
 
 INSERT INTO "AllTypes"
@@ -66,8 +66,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = ''
-DECLARE @NChar_2 NChar(1) -- StringFixedLength
-SET     @NChar_2 = ''
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = ''
 
 INSERT INTO "AllTypes"
 (
@@ -84,8 +84,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = ''
-DECLARE @NChar_2 NChar(1) -- StringFixedLength
-SET     @NChar_2 = ''
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = ''
 
 INSERT INTO "AllTypes"
 (
@@ -102,8 +102,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = ''
-DECLARE @NChar_2 NChar(1) -- StringFixedLength
-SET     @NChar_2 = ''
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = ''
 
 INSERT INTO "AllTypes"
 (
@@ -120,8 +120,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NChar_1 NChar(1) -- StringFixedLength
 SET     @NChar_1 = ' '
-DECLARE @NChar_2 NChar(1) -- StringFixedLength
-SET     @NChar_2 = ' '
+DECLARE @Char_1 NChar(1) -- StringFixedLength
+SET     @Char_1 = ' '
 
 INSERT INTO "AllTypes"
 (
