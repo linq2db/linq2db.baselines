@@ -36,14 +36,9 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	STRING_AGG([t2].[Value1], N' -> ')
+	STRING_AGG([t1].[Value1], N' -> ')
 FROM
-	(
-		SELECT
-			[t1].[Value1]
-		FROM
-			[SampleClass] [t1]
-	) [t2]
+	[SampleClass] [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
