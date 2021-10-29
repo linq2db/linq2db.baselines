@@ -36,33 +36,53 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	STRING_AGG([t].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t].[Value1])
+	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1])
 FROM
-	[SampleClass] [t]
+	(
+		SELECT
+			[t].[Value1]
+		FROM
+			[SampleClass] [t]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	STRING_AGG([t].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t].[Value1])
+	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1])
 FROM
-	[SampleClass] [t]
+	(
+		SELECT
+			[t].[Value1]
+		FROM
+			[SampleClass] [t]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	STRING_AGG([t].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t].[Value1] DESC)
+	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1] DESC)
 FROM
-	[SampleClass] [t]
+	(
+		SELECT
+			[t].[Value1]
+		FROM
+			[SampleClass] [t]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	STRING_AGG([t].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t].[Value1] DESC)
+	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1] DESC)
 FROM
-	[SampleClass] [t]
+	(
+		SELECT
+			[t].[Value1]
+		FROM
+			[SampleClass] [t]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017

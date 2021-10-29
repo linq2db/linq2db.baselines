@@ -110,9 +110,14 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	STRING_AGG([t].[Value4], N' -> ')
+	STRING_AGG([t1].[Value4], N' -> ')
 FROM
-	[SampleClass] [t]
+	(
+		SELECT
+			[t].[Value4]
+		FROM
+			[SampleClass] [t]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
