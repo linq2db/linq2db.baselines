@@ -44,9 +44,14 @@ SELECT
 	),
 	(
 		SELECT
-			STRING_AGG([t2].[Value1], N' -> ')
+			STRING_AGG([t3].[Value1], N' -> ')
 		FROM
-			[SampleClass] [t2]
+			(
+				SELECT
+					[t2].[Value1]
+				FROM
+					[SampleClass] [t2]
+			) [t3]
 	)
 FROM
 	[SampleClass] [t]
