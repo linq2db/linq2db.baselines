@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE EmployeeTimeOffBalance
+DROP TABLE IF EXISTS EmployeeTimeOffBalance
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS EmployeeTimeOffBalance
 (
 	Id               Int NOT NULL,
 	TrackingTimeType Int NOT NULL,
@@ -12,8 +17,57 @@ CREATE TABLE EmployeeTimeOffBalance
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @TrackingTimeType Integer(4) -- Int32
+SET     @TrackingTimeType = 0
+DECLARE @EmployeeId Integer(4) -- Int32
+SET     @EmployeeId = 1
 
-CREATE TABLE Employee
+INSERT INTO EmployeeTimeOffBalance
+(
+	Id,
+	TrackingTimeType,
+	EmployeeId
+)
+VALUES
+(
+	@Id,
+	@TrackingTimeType,
+	@EmployeeId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @TrackingTimeType Integer(4) -- Int32
+SET     @TrackingTimeType = 1
+DECLARE @EmployeeId Integer(4) -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO EmployeeTimeOffBalance
+(
+	Id,
+	TrackingTimeType,
+	EmployeeId
+)
+VALUES
+(
+	@Id,
+	@TrackingTimeType,
+	@EmployeeId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Employee
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Employee
 (
 	EmployeeId Int NOT NULL,
 
@@ -22,8 +76,41 @@ CREATE TABLE Employee
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
 
-CREATE TABLE LeaveRequest
+INSERT INTO Employee
+(
+	EmployeeId
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+
+INSERT INTO Employee
+(
+	EmployeeId
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS LeaveRequest
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS LeaveRequest
 (
 	Id         Int NOT NULL,
 	EmployeeId Int NOT NULL,
@@ -33,8 +120,85 @@ CREATE TABLE LeaveRequest
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @EmployeeId Integer(4) -- Int32
+SET     @EmployeeId = 1
 
-CREATE TABLE LeaveRequestDateEntry
+INSERT INTO LeaveRequest
+(
+	Id,
+	EmployeeId
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @EmployeeId Integer(4) -- Int32
+SET     @EmployeeId = 1
+
+INSERT INTO LeaveRequest
+(
+	Id,
+	EmployeeId
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 3
+DECLARE @EmployeeId Integer(4) -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO LeaveRequest
+(
+	Id,
+	EmployeeId
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 4
+DECLARE @EmployeeId Integer(4) -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO LeaveRequest
+(
+	Id,
+	EmployeeId
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS LeaveRequestDateEntry
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS LeaveRequestDateEntry
 (
 	Id             Int     NOT NULL,
 	EndHour        Decimal     NULL,
@@ -42,6 +206,110 @@ CREATE TABLE LeaveRequestDateEntry
 	LeaveRequestId Int     NOT NULL,
 
 	PRIMARY KEY (Id)
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @EndHour Decimal(16)
+SET     @EndHour = 12
+DECLARE @StartHour Decimal(16)
+SET     @StartHour = 1
+DECLARE @LeaveRequestId Integer(4) -- Int32
+SET     @LeaveRequestId = 1
+
+INSERT INTO LeaveRequestDateEntry
+(
+	Id,
+	EndHour,
+	StartHour,
+	LeaveRequestId
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @EndHour Decimal(16)
+SET     @EndHour = 13
+DECLARE @StartHour Decimal(16)
+SET     @StartHour = 2
+DECLARE @LeaveRequestId Integer(4) -- Int32
+SET     @LeaveRequestId = 1
+
+INSERT INTO LeaveRequestDateEntry
+(
+	Id,
+	EndHour,
+	StartHour,
+	LeaveRequestId
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 3
+DECLARE @EndHour Decimal(16)
+SET     @EndHour = 14
+DECLARE @StartHour Decimal(16)
+SET     @StartHour = 3
+DECLARE @LeaveRequestId Integer(4) -- Int32
+SET     @LeaveRequestId = 2
+
+INSERT INTO LeaveRequestDateEntry
+(
+	Id,
+	EndHour,
+	StartHour,
+	LeaveRequestId
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 4
+DECLARE @EndHour Decimal(16)
+SET     @EndHour = 15
+DECLARE @StartHour Decimal(16)
+SET     @StartHour = 4
+DECLARE @LeaveRequestId Integer(4) -- Int32
+SET     @LeaveRequestId = 2
+
+INSERT INTO LeaveRequestDateEntry
+(
+	Id,
+	EndHour,
+	StartHour,
+	LeaveRequestId
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
 )
 
 BeforeExecute
