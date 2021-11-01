@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE "EmployeeTimeOffBalance"
+DROP TABLE IF EXISTS "EmployeeTimeOffBalance"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "EmployeeTimeOffBalance"
 (
 	"Id"               Int NOT NULL,
 	"TrackingTimeType" Int NOT NULL,
@@ -13,7 +18,25 @@ CREATE TABLE "EmployeeTimeOffBalance"
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE "Employee"
+INSERT INTO "EmployeeTimeOffBalance"
+(
+	"Id",
+	"TrackingTimeType",
+	"EmployeeId"
+)
+VALUES
+(1,0,1),
+(2,1,2)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+DROP TABLE IF EXISTS "Employee"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Employee"
 (
 	"EmployeeId" Int NOT NULL,
 
@@ -23,7 +46,23 @@ CREATE TABLE "Employee"
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE "LeaveRequest"
+INSERT INTO "Employee"
+(
+	"EmployeeId"
+)
+VALUES
+(1),
+(2)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+DROP TABLE IF EXISTS "LeaveRequest"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "LeaveRequest"
 (
 	"Id"         Int NOT NULL,
 	"EmployeeId" Int NOT NULL,
@@ -34,7 +73,26 @@ CREATE TABLE "LeaveRequest"
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE "LeaveRequestDateEntry"
+INSERT INTO "LeaveRequest"
+(
+	"Id",
+	"EmployeeId"
+)
+VALUES
+(1,1),
+(2,1),
+(3,2),
+(4,2)
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+DROP TABLE IF EXISTS "LeaveRequestDateEntry"
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "LeaveRequestDateEntry"
 (
 	"Id"             Int     NOT NULL,
 	"EndHour"        decimal     NULL,
@@ -43,6 +101,22 @@ CREATE TABLE "LeaveRequestDateEntry"
 
 	CONSTRAINT "PK_LeaveRequestDateEntry" PRIMARY KEY ("Id")
 )
+
+BeforeExecute
+-- PostgreSQL.9.2 PostgreSQL
+
+INSERT INTO "LeaveRequestDateEntry"
+(
+	"Id",
+	"EndHour",
+	"StartHour",
+	"LeaveRequestId"
+)
+VALUES
+(1,12,1,1),
+(2,13,2,1),
+(3,14,3,2),
+(4,15,4,2)
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
