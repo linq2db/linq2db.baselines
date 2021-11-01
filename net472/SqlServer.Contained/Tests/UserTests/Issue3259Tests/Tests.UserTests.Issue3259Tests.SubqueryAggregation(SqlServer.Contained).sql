@@ -1,48 +1,126 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
-CREATE TABLE [EmployeeTimeOffBalance]
-(
-	[Id]               Int NOT NULL,
-	[TrackingTimeType] Int NOT NULL,
-	[EmployeeId]       Int NOT NULL,
-
-	CONSTRAINT [PK_EmployeeTimeOffBalance] PRIMARY KEY CLUSTERED ([Id])
-)
+DROP TABLE IF EXISTS [EmployeeTimeOffBalance]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
-CREATE TABLE [Employee]
-(
-	[EmployeeId] Int NOT NULL,
+IF (OBJECT_ID(N'[EmployeeTimeOffBalance]', N'U') IS NULL)
+	CREATE TABLE [EmployeeTimeOffBalance]
+	(
+		[Id]               Int NOT NULL,
+		[TrackingTimeType] Int NOT NULL,
+		[EmployeeId]       Int NOT NULL,
 
-	CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED ([EmployeeId])
-)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2017
-
-CREATE TABLE [LeaveRequest]
-(
-	[Id]         Int NOT NULL,
-	[EmployeeId] Int NOT NULL,
-
-	CONSTRAINT [PK_LeaveRequest] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_EmployeeTimeOffBalance] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
-CREATE TABLE [LeaveRequestDateEntry]
+INSERT INTO [EmployeeTimeOffBalance]
 (
-	[Id]             Int     NOT NULL,
-	[EndHour]        Decimal     NULL,
-	[StartHour]      Decimal     NULL,
-	[LeaveRequestId] Int     NOT NULL,
-
-	CONSTRAINT [PK_LeaveRequestDateEntry] PRIMARY KEY CLUSTERED ([Id])
+	[Id],
+	[TrackingTimeType],
+	[EmployeeId]
 )
+VALUES
+(1,0,1),
+(2,1,2)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2017
+
+DROP TABLE IF EXISTS [Employee]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2017
+
+IF (OBJECT_ID(N'[Employee]', N'U') IS NULL)
+	CREATE TABLE [Employee]
+	(
+		[EmployeeId] Int NOT NULL,
+
+		CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED ([EmployeeId])
+	)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2017
+
+INSERT INTO [Employee]
+(
+	[EmployeeId]
+)
+VALUES
+(1),
+(2)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2017
+
+DROP TABLE IF EXISTS [LeaveRequest]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2017
+
+IF (OBJECT_ID(N'[LeaveRequest]', N'U') IS NULL)
+	CREATE TABLE [LeaveRequest]
+	(
+		[Id]         Int NOT NULL,
+		[EmployeeId] Int NOT NULL,
+
+		CONSTRAINT [PK_LeaveRequest] PRIMARY KEY CLUSTERED ([Id])
+	)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2017
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(1,1),
+(2,1),
+(3,2),
+(4,2)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2017
+
+DROP TABLE IF EXISTS [LeaveRequestDateEntry]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2017
+
+IF (OBJECT_ID(N'[LeaveRequestDateEntry]', N'U') IS NULL)
+	CREATE TABLE [LeaveRequestDateEntry]
+	(
+		[Id]             Int     NOT NULL,
+		[EndHour]        Decimal     NULL,
+		[StartHour]      Decimal     NULL,
+		[LeaveRequestId] Int     NOT NULL,
+
+		CONSTRAINT [PK_LeaveRequestDateEntry] PRIMARY KEY CLUSTERED ([Id])
+	)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2017
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(1,12,1,1),
+(2,13,2,1),
+(3,14,3,2),
+(4,15,4,2)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
