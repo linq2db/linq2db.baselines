@@ -1,48 +1,150 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "EmployeeTimeOffBalance"
-(
-	"Id"               Int NOT NULL,
-	"TrackingTimeType" Int NOT NULL,
-	"EmployeeId"       Int NOT NULL,
-
-	CONSTRAINT "PK_EmployeeTimeOffBalance" PRIMARY KEY ("Id")
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'EmployeeTimeOffBalance')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "EmployeeTimeOffBalance"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Employee"
-(
-	"EmployeeId" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'EmployeeTimeOffBalance')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "EmployeeTimeOffBalance"
+			(
+				"Id"               Int NOT NULL,
+				"TrackingTimeType" Int NOT NULL,
+				"EmployeeId"       Int NOT NULL,
 
-	CONSTRAINT "PK_Employee" PRIMARY KEY ("EmployeeId")
-)
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE TABLE "LeaveRequest"
-(
-	"Id"         Int NOT NULL,
-	"EmployeeId" Int NOT NULL,
-
-	CONSTRAINT "PK_LeaveRequest" PRIMARY KEY ("Id")
-)
+				CONSTRAINT "PK_EmployeeTimeOffBalance" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "LeaveRequestDateEntry"
+INSERT INTO "EmployeeTimeOffBalance"
 (
-	"Id"             Int     NOT NULL,
-	"EndHour"        Decimal,
-	"StartHour"      Decimal,
-	"LeaveRequestId" Int     NOT NULL,
-
-	CONSTRAINT "PK_LeaveRequestDateEntry" PRIMARY KEY ("Id")
+	"Id",
+	"TrackingTimeType",
+	"EmployeeId"
 )
+SELECT 1,0,1 FROM rdb$database UNION ALL
+SELECT 2,1,2 FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Employee')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Employee"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Employee')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Employee"
+			(
+				"EmployeeId" Int NOT NULL,
+
+				CONSTRAINT "PK_Employee" PRIMARY KEY ("EmployeeId")
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+INSERT INTO "Employee"
+(
+	"EmployeeId"
+)
+SELECT 1 FROM rdb$database UNION ALL
+SELECT 2 FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'LeaveRequest')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "LeaveRequest"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'LeaveRequest')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "LeaveRequest"
+			(
+				"Id"         Int NOT NULL,
+				"EmployeeId" Int NOT NULL,
+
+				CONSTRAINT "PK_LeaveRequest" PRIMARY KEY ("Id")
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+INSERT INTO "LeaveRequest"
+(
+	"Id",
+	"EmployeeId"
+)
+SELECT 1,1 FROM rdb$database UNION ALL
+SELECT 2,1 FROM rdb$database UNION ALL
+SELECT 3,2 FROM rdb$database UNION ALL
+SELECT 4,2 FROM rdb$database
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'LeaveRequestDateEntry')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "LeaveRequestDateEntry"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'LeaveRequestDateEntry')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "LeaveRequestDateEntry"
+			(
+				"Id"             Int     NOT NULL,
+				"EndHour"        Decimal,
+				"StartHour"      Decimal,
+				"LeaveRequestId" Int     NOT NULL,
+
+				CONSTRAINT "PK_LeaveRequestDateEntry" PRIMARY KEY ("Id")
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+INSERT INTO "LeaveRequestDateEntry"
+(
+	"Id",
+	"EndHour",
+	"StartHour",
+	"LeaveRequestId"
+)
+SELECT 1,12,1,1 FROM rdb$database UNION ALL
+SELECT 2,13,2,1 FROM rdb$database UNION ALL
+SELECT 3,14,3,2 FROM rdb$database UNION ALL
+SELECT 4,15,4,2 FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
