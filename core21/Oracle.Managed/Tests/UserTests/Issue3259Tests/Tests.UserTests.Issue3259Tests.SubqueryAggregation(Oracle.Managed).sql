@@ -1,48 +1,168 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "EmployeeTimeOffBalance"
-(
-	"Id"               Int NOT NULL,
-	"TrackingTimeType" Int NOT NULL,
-	"EmployeeId"       Int NOT NULL,
-
-	CONSTRAINT "PK_EmployeeTimeOffBalance" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-CREATE TABLE "Employee"
-(
-	"EmployeeId" Int NOT NULL,
-
-	CONSTRAINT "PK_Employee" PRIMARY KEY ("EmployeeId")
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "EmployeeTimeOffBalance"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "LeaveRequest"
-(
-	"Id"         Int NOT NULL,
-	"EmployeeId" Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "EmployeeTimeOffBalance"
+		(
+			"Id"               Int NOT NULL,
+			"TrackingTimeType" Int NOT NULL,
+			"EmployeeId"       Int NOT NULL,
 
-	CONSTRAINT "PK_LeaveRequest" PRIMARY KEY ("Id")
-)
+			CONSTRAINT "PK_EmployeeTimeOffBalance" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-CREATE TABLE "LeaveRequestDateEntry"
-(
-	"Id"             Int     NOT NULL,
-	"EndHour"        Decimal     NULL,
-	"StartHour"      Decimal     NULL,
-	"LeaveRequestId" Int     NOT NULL,
+INSERT ALL
+	INTO "EmployeeTimeOffBalance" ("Id", "TrackingTimeType", "EmployeeId") VALUES (1,0,1)
+	INTO "EmployeeTimeOffBalance" ("Id", "TrackingTimeType", "EmployeeId") VALUES (2,1,2)
+SELECT * FROM dual
 
-	CONSTRAINT "PK_LeaveRequestDateEntry" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Employee"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Employee"
+		(
+			"EmployeeId" Int NOT NULL,
+
+			CONSTRAINT "PK_Employee" PRIMARY KEY ("EmployeeId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+INSERT ALL
+	INTO "Employee" ("EmployeeId") VALUES (1)
+	INTO "Employee" ("EmployeeId") VALUES (2)
+SELECT * FROM dual
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "LeaveRequest"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "LeaveRequest"
+		(
+			"Id"         Int NOT NULL,
+			"EmployeeId" Int NOT NULL,
+
+			CONSTRAINT "PK_LeaveRequest" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+INSERT ALL
+	INTO "LeaveRequest" ("Id", "EmployeeId") VALUES (1,1)
+	INTO "LeaveRequest" ("Id", "EmployeeId") VALUES (2,1)
+	INTO "LeaveRequest" ("Id", "EmployeeId") VALUES (3,2)
+	INTO "LeaveRequest" ("Id", "EmployeeId") VALUES (4,2)
+SELECT * FROM dual
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "LeaveRequestDateEntry"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "LeaveRequestDateEntry"
+		(
+			"Id"             Int     NOT NULL,
+			"EndHour"        Decimal     NULL,
+			"StartHour"      Decimal     NULL,
+			"LeaveRequestId" Int     NOT NULL,
+
+			CONSTRAINT "PK_LeaveRequestDateEntry" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+INSERT ALL
+	INTO "LeaveRequestDateEntry" ("Id", "EndHour", "StartHour", "LeaveRequestId") VALUES (1,12,1,1)
+	INTO "LeaveRequestDateEntry" ("Id", "EndHour", "StartHour", "LeaveRequestId") VALUES (2,13,2,1)
+	INTO "LeaveRequestDateEntry" ("Id", "EndHour", "StartHour", "LeaveRequestId") VALUES (3,14,3,2)
+	INTO "LeaveRequestDateEntry" ("Id", "EndHour", "StartHour", "LeaveRequestId") VALUES (4,15,4,2)
+SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
