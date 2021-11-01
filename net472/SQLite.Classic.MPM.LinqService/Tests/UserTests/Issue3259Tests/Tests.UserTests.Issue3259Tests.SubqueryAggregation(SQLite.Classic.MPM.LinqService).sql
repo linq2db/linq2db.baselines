@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [EmployeeTimeOffBalance]
+DROP TABLE IF EXISTS [EmployeeTimeOffBalance]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [EmployeeTimeOffBalance]
 (
 	[Id]               INTEGER NOT NULL,
 	[TrackingTimeType] INTEGER NOT NULL,
@@ -12,8 +17,57 @@ CREATE TABLE [EmployeeTimeOffBalance]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @TrackingTimeType  -- Int32
+SET     @TrackingTimeType = 0
+DECLARE @EmployeeId  -- Int32
+SET     @EmployeeId = 1
 
-CREATE TABLE [Employee]
+INSERT INTO [EmployeeTimeOffBalance]
+(
+	[Id],
+	[TrackingTimeType],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@TrackingTimeType,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @TrackingTimeType  -- Int32
+SET     @TrackingTimeType = 1
+DECLARE @EmployeeId  -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO [EmployeeTimeOffBalance]
+(
+	[Id],
+	[TrackingTimeType],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@TrackingTimeType,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [Employee]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Employee]
 (
 	[EmployeeId] INTEGER NOT NULL,
 
@@ -22,8 +76,41 @@ CREATE TABLE [Employee]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
 
-CREATE TABLE [LeaveRequest]
+INSERT INTO [Employee]
+(
+	[EmployeeId]
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 2
+
+INSERT INTO [Employee]
+(
+	[EmployeeId]
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [LeaveRequest]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [LeaveRequest]
 (
 	[Id]         INTEGER NOT NULL,
 	[EmployeeId] INTEGER NOT NULL,
@@ -33,8 +120,85 @@ CREATE TABLE [LeaveRequest]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @EmployeeId  -- Int32
+SET     @EmployeeId = 1
 
-CREATE TABLE [LeaveRequestDateEntry]
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @EmployeeId  -- Int32
+SET     @EmployeeId = 1
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 3
+DECLARE @EmployeeId  -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 4
+DECLARE @EmployeeId  -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [LeaveRequestDateEntry]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [LeaveRequestDateEntry]
 (
 	[Id]             INTEGER NOT NULL,
 	[EndHour]        Decimal     NULL,
@@ -42,6 +206,110 @@ CREATE TABLE [LeaveRequestDateEntry]
 	[LeaveRequestId] INTEGER NOT NULL,
 
 	CONSTRAINT [PK_LeaveRequestDateEntry] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @EndHour Decimal(2, 0)
+SET     @EndHour = 12
+DECLARE @StartHour Decimal(1, 0)
+SET     @StartHour = 1
+DECLARE @LeaveRequestId  -- Int32
+SET     @LeaveRequestId = 1
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @EndHour Decimal(2, 0)
+SET     @EndHour = 13
+DECLARE @StartHour Decimal(1, 0)
+SET     @StartHour = 2
+DECLARE @LeaveRequestId  -- Int32
+SET     @LeaveRequestId = 1
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 3
+DECLARE @EndHour Decimal(2, 0)
+SET     @EndHour = 14
+DECLARE @StartHour Decimal(1, 0)
+SET     @StartHour = 3
+DECLARE @LeaveRequestId  -- Int32
+SET     @LeaveRequestId = 2
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
+)
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 4
+DECLARE @EndHour Decimal(2, 0)
+SET     @EndHour = 15
+DECLARE @StartHour Decimal(1, 0)
+SET     @StartHour = 4
+DECLARE @LeaveRequestId  -- Int32
+SET     @LeaveRequestId = 2
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
 )
 
 BeforeExecute
