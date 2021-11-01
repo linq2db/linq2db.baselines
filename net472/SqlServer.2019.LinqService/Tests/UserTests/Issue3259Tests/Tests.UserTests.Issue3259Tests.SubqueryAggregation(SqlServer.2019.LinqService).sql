@@ -1,47 +1,319 @@
 ﻿BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [EmployeeTimeOffBalance]
-(
-	[Id]               Int NOT NULL,
-	[TrackingTimeType] Int NOT NULL,
-	[EmployeeId]       Int NOT NULL,
+DROP TABLE IF EXISTS [EmployeeTimeOffBalance]
 
-	CONSTRAINT [PK_EmployeeTimeOffBalance] PRIMARY KEY CLUSTERED ([Id])
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+IF (OBJECT_ID(N'[EmployeeTimeOffBalance]', N'U') IS NULL)
+	CREATE TABLE [EmployeeTimeOffBalance]
+	(
+		[Id]               Int NOT NULL,
+		[TrackingTimeType] Int NOT NULL,
+		[EmployeeId]       Int NOT NULL,
+
+		CONSTRAINT [PK_EmployeeTimeOffBalance] PRIMARY KEY CLUSTERED ([Id])
+	)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @TrackingTimeType Int -- Int32
+SET     @TrackingTimeType = 0
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 1
+
+INSERT INTO [EmployeeTimeOffBalance]
+(
+	[Id],
+	[TrackingTimeType],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@TrackingTimeType,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @TrackingTimeType Int -- Int32
+SET     @TrackingTimeType = 1
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO [EmployeeTimeOffBalance]
+(
+	[Id],
+	[TrackingTimeType],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@TrackingTimeType,
+	@EmployeeId
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [Employee]
-(
-	[EmployeeId] Int NOT NULL,
+DROP TABLE IF EXISTS [Employee]
 
-	CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED ([EmployeeId])
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+IF (OBJECT_ID(N'[Employee]', N'U') IS NULL)
+	CREATE TABLE [Employee]
+	(
+		[EmployeeId] Int NOT NULL,
+
+		CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED ([EmployeeId])
+	)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+INSERT INTO [Employee]
+(
+	[EmployeeId]
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+
+INSERT INTO [Employee]
+(
+	[EmployeeId]
+)
+VALUES
+(
+	@Id
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [LeaveRequest]
-(
-	[Id]         Int NOT NULL,
-	[EmployeeId] Int NOT NULL,
+DROP TABLE IF EXISTS [LeaveRequest]
 
-	CONSTRAINT [PK_LeaveRequest] PRIMARY KEY CLUSTERED ([Id])
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+IF (OBJECT_ID(N'[LeaveRequest]', N'U') IS NULL)
+	CREATE TABLE [LeaveRequest]
+	(
+		[Id]         Int NOT NULL,
+		[EmployeeId] Int NOT NULL,
+
+		CONSTRAINT [PK_LeaveRequest] PRIMARY KEY CLUSTERED ([Id])
+	)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 1
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 1
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
+)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 4
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	@Id,
+	@EmployeeId
 )
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
-CREATE TABLE [LeaveRequestDateEntry]
-(
-	[Id]             Int     NOT NULL,
-	[EndHour]        Decimal     NULL,
-	[StartHour]      Decimal     NULL,
-	[LeaveRequestId] Int     NOT NULL,
+DROP TABLE IF EXISTS [LeaveRequestDateEntry]
 
-	CONSTRAINT [PK_LeaveRequestDateEntry] PRIMARY KEY CLUSTERED ([Id])
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+
+IF (OBJECT_ID(N'[LeaveRequestDateEntry]', N'U') IS NULL)
+	CREATE TABLE [LeaveRequestDateEntry]
+	(
+		[Id]             Int     NOT NULL,
+		[EndHour]        Decimal     NULL,
+		[StartHour]      Decimal     NULL,
+		[LeaveRequestId] Int     NOT NULL,
+
+		CONSTRAINT [PK_LeaveRequestDateEntry] PRIMARY KEY CLUSTERED ([Id])
+	)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @EndHour Decimal(2, 0)
+SET     @EndHour = 12
+DECLARE @StartHour Decimal(1, 0)
+SET     @StartHour = 1
+DECLARE @LeaveRequestId Int -- Int32
+SET     @LeaveRequestId = 1
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
+)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @EndHour Decimal(2, 0)
+SET     @EndHour = 13
+DECLARE @StartHour Decimal(1, 0)
+SET     @StartHour = 2
+DECLARE @LeaveRequestId Int -- Int32
+SET     @LeaveRequestId = 1
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
+)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+DECLARE @EndHour Decimal(2, 0)
+SET     @EndHour = 14
+DECLARE @StartHour Decimal(1, 0)
+SET     @StartHour = 3
+DECLARE @LeaveRequestId Int -- Int32
+SET     @LeaveRequestId = 2
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
+)
+
+BeforeExecute
+-- SqlServer.2019 SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 4
+DECLARE @EndHour Decimal(2, 0)
+SET     @EndHour = 15
+DECLARE @StartHour Decimal(1, 0)
+SET     @StartHour = 4
+DECLARE @LeaveRequestId Int -- Int32
+SET     @LeaveRequestId = 2
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	@Id,
+	@EndHour,
+	@StartHour,
+	@LeaveRequestId
 )
 
 BeforeExecute
