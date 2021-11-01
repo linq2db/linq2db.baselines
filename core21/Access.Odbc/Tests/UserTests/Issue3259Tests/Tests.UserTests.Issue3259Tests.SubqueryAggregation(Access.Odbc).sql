@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [EmployeeTimeOffBalance]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [EmployeeTimeOffBalance]
 (
 	[Id]               Int NOT NULL,
@@ -12,6 +17,55 @@ CREATE TABLE [EmployeeTimeOffBalance]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @TrackingTimeType Int -- Int32
+SET     @TrackingTimeType = 0
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 1
+
+INSERT INTO [EmployeeTimeOffBalance]
+(
+	[Id],
+	[TrackingTimeType],
+	[EmployeeId]
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @TrackingTimeType Int -- Int32
+SET     @TrackingTimeType = 1
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO [EmployeeTimeOffBalance]
+(
+	[Id],
+	[TrackingTimeType],
+	[EmployeeId]
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Employee]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
 
 CREATE TABLE [Employee]
 (
@@ -19,6 +73,39 @@ CREATE TABLE [Employee]
 
 	CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED ([EmployeeId])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+INSERT INTO [Employee]
+(
+	[EmployeeId]
+)
+VALUES
+(
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+
+INSERT INTO [Employee]
+(
+	[EmployeeId]
+)
+VALUES
+(
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [LeaveRequest]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -33,6 +120,83 @@ CREATE TABLE [LeaveRequest]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 1
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 1
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 4
+DECLARE @EmployeeId Int -- Int32
+SET     @EmployeeId = 2
+
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [LeaveRequestDateEntry]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
 
 CREATE TABLE [LeaveRequestDateEntry]
 (
@@ -42,6 +206,110 @@ CREATE TABLE [LeaveRequestDateEntry]
 	[LeaveRequestId] Int     NOT NULL,
 
 	CONSTRAINT [PK_LeaveRequestDateEntry] PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @EndHour VarChar(2, 0) -- AnsiString
+SET     @EndHour = 12
+DECLARE @StartHour VarChar(1, 0) -- AnsiString
+SET     @StartHour = 1
+DECLARE @LeaveRequestId Int -- Int32
+SET     @LeaveRequestId = 1
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @EndHour VarChar(2, 0) -- AnsiString
+SET     @EndHour = 13
+DECLARE @StartHour VarChar(1, 0) -- AnsiString
+SET     @StartHour = 2
+DECLARE @LeaveRequestId Int -- Int32
+SET     @LeaveRequestId = 1
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+DECLARE @EndHour VarChar(2, 0) -- AnsiString
+SET     @EndHour = 14
+DECLARE @StartHour VarChar(1, 0) -- AnsiString
+SET     @StartHour = 3
+DECLARE @LeaveRequestId Int -- Int32
+SET     @LeaveRequestId = 2
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 4
+DECLARE @EndHour VarChar(2, 0) -- AnsiString
+SET     @EndHour = 15
+DECLARE @StartHour VarChar(1, 0) -- AnsiString
+SET     @StartHour = 4
+DECLARE @LeaveRequestId Int -- Int32
+SET     @LeaveRequestId = 2
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(
+	?,
+	?,
+	?,
+	?
 )
 
 BeforeExecute
