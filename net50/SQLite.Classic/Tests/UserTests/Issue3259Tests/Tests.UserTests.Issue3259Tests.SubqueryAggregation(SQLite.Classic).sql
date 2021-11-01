@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [EmployeeTimeOffBalance]
+DROP TABLE IF EXISTS [EmployeeTimeOffBalance]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [EmployeeTimeOffBalance]
 (
 	[Id]               INTEGER NOT NULL,
 	[TrackingTimeType] INTEGER NOT NULL,
@@ -13,7 +18,25 @@ CREATE TABLE [EmployeeTimeOffBalance]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [Employee]
+INSERT INTO [EmployeeTimeOffBalance]
+(
+	[Id],
+	[TrackingTimeType],
+	[EmployeeId]
+)
+VALUES
+(1,0,1),
+(2,1,2)
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [Employee]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Employee]
 (
 	[EmployeeId] INTEGER NOT NULL,
 
@@ -23,7 +46,23 @@ CREATE TABLE [Employee]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [LeaveRequest]
+INSERT INTO [Employee]
+(
+	[EmployeeId]
+)
+VALUES
+(1),
+(2)
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [LeaveRequest]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [LeaveRequest]
 (
 	[Id]         INTEGER NOT NULL,
 	[EmployeeId] INTEGER NOT NULL,
@@ -34,7 +73,26 @@ CREATE TABLE [LeaveRequest]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [LeaveRequestDateEntry]
+INSERT INTO [LeaveRequest]
+(
+	[Id],
+	[EmployeeId]
+)
+VALUES
+(1,1),
+(2,1),
+(3,2),
+(4,2)
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [LeaveRequestDateEntry]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [LeaveRequestDateEntry]
 (
 	[Id]             INTEGER NOT NULL,
 	[EndHour]        Decimal     NULL,
@@ -43,6 +101,22 @@ CREATE TABLE [LeaveRequestDateEntry]
 
 	CONSTRAINT [PK_LeaveRequestDateEntry] PRIMARY KEY ([Id])
 )
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+INSERT INTO [LeaveRequestDateEntry]
+(
+	[Id],
+	[EndHour],
+	[StartHour],
+	[LeaveRequestId]
+)
+VALUES
+(1,12,1,1),
+(2,13,2,1),
+(3,14,3,2),
+(4,15,4,2)
 
 BeforeExecute
 -- SQLite.Classic SQLite
