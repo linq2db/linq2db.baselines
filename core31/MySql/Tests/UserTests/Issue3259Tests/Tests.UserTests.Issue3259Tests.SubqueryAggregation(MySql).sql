@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `EmployeeTimeOffBalance`
+DROP TABLE IF EXISTS `EmployeeTimeOffBalance`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `EmployeeTimeOffBalance`
 (
 	`Id`               INT NOT NULL,
 	`TrackingTimeType` INT NOT NULL,
@@ -13,7 +18,25 @@ CREATE TABLE `EmployeeTimeOffBalance`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Employee`
+INSERT INTO `EmployeeTimeOffBalance`
+(
+	`Id`,
+	`TrackingTimeType`,
+	`EmployeeId`
+)
+VALUES
+(1,0,1),
+(2,1,2)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `Employee`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Employee`
 (
 	`EmployeeId` INT NOT NULL,
 
@@ -23,7 +46,23 @@ CREATE TABLE `Employee`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `LeaveRequest`
+INSERT INTO `Employee`
+(
+	`EmployeeId`
+)
+VALUES
+(1),
+(2)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `LeaveRequest`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `LeaveRequest`
 (
 	`Id`         INT NOT NULL,
 	`EmployeeId` INT NOT NULL,
@@ -34,7 +73,26 @@ CREATE TABLE `LeaveRequest`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `LeaveRequestDateEntry`
+INSERT INTO `LeaveRequest`
+(
+	`Id`,
+	`EmployeeId`
+)
+VALUES
+(1,1),
+(2,1),
+(3,2),
+(4,2)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DROP TABLE IF EXISTS `LeaveRequestDateEntry`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `LeaveRequestDateEntry`
 (
 	`Id`             INT     NOT NULL,
 	`EndHour`        DECIMAL     NULL,
@@ -43,6 +101,22 @@ CREATE TABLE `LeaveRequestDateEntry`
 
 	CONSTRAINT `PK_LeaveRequestDateEntry` PRIMARY KEY CLUSTERED (`Id`)
 )
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+INSERT INTO `LeaveRequestDateEntry`
+(
+	`Id`,
+	`EndHour`,
+	`StartHour`,
+	`LeaveRequestId`
+)
+VALUES
+(1,12,1,1),
+(2,13,2,1),
+(3,14,3,2),
+(4,15,4,2)
 
 BeforeExecute
 -- MySql MySql.Official MySql
