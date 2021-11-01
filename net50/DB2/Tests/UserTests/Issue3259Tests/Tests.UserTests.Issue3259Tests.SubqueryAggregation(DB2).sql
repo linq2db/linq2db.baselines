@@ -1,48 +1,154 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "EmployeeTimeOffBalance"
-(
-	"Id"               Int NOT NULL,
-	"TrackingTimeType" Int NOT NULL,
-	"EmployeeId"       Int NOT NULL,
-
-	CONSTRAINT "PK_EmployeeTimeOffBalance" PRIMARY KEY ("Id")
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "EmployeeTimeOffBalance"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Employee"
-(
-	"EmployeeId" Int NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "EmployeeTimeOffBalance"
+		(
+			"Id"               Int NOT NULL,
+			"TrackingTimeType" Int NOT NULL,
+			"EmployeeId"       Int NOT NULL,
 
-	CONSTRAINT "PK_Employee" PRIMARY KEY ("EmployeeId")
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-CREATE TABLE "LeaveRequest"
-(
-	"Id"         Int NOT NULL,
-	"EmployeeId" Int NOT NULL,
-
-	CONSTRAINT "PK_LeaveRequest" PRIMARY KEY ("Id")
-)
+			CONSTRAINT "PK_EmployeeTimeOffBalance" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "LeaveRequestDateEntry"
+INSERT INTO "EmployeeTimeOffBalance"
 (
-	"Id"             Int     NOT NULL,
-	"EndHour"        Decimal     NULL,
-	"StartHour"      Decimal     NULL,
-	"LeaveRequestId" Int     NOT NULL,
-
-	CONSTRAINT "PK_LeaveRequestDateEntry" PRIMARY KEY ("Id")
+	"Id",
+	"TrackingTimeType",
+	"EmployeeId"
 )
+VALUES
+(1,0,1),
+(2,1,2)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Employee"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Employee"
+		(
+			"EmployeeId" Int NOT NULL,
+
+			CONSTRAINT "PK_Employee" PRIMARY KEY ("EmployeeId")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "Employee"
+(
+	"EmployeeId"
+)
+VALUES
+(1),
+(2)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "LeaveRequest"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "LeaveRequest"
+		(
+			"Id"         Int NOT NULL,
+			"EmployeeId" Int NOT NULL,
+
+			CONSTRAINT "PK_LeaveRequest" PRIMARY KEY ("Id")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "LeaveRequest"
+(
+	"Id",
+	"EmployeeId"
+)
+VALUES
+(1,1),
+(2,1),
+(3,2),
+(4,2)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "LeaveRequestDateEntry"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "LeaveRequestDateEntry"
+		(
+			"Id"             Int     NOT NULL,
+			"EndHour"        Decimal     NULL,
+			"StartHour"      Decimal     NULL,
+			"LeaveRequestId" Int     NOT NULL,
+
+			CONSTRAINT "PK_LeaveRequestDateEntry" PRIMARY KEY ("Id")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "LeaveRequestDateEntry"
+(
+	"Id",
+	"EndHour",
+	"StartHour",
+	"LeaveRequestId"
+)
+VALUES
+(1,12,1,1),
+(2,13,2,1),
+(3,14,3,2),
+(4,15,4,2)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
