@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-CREATE TABLE `EmployeeTimeOffBalance`
+DROP TABLE IF EXISTS `EmployeeTimeOffBalance`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `EmployeeTimeOffBalance`
 (
 	`Id`               INT NOT NULL,
 	`TrackingTimeType` INT NOT NULL,
@@ -13,7 +18,25 @@ CREATE TABLE `EmployeeTimeOffBalance`
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-CREATE TABLE `Employee`
+INSERT INTO `EmployeeTimeOffBalance`
+(
+	`Id`,
+	`TrackingTimeType`,
+	`EmployeeId`
+)
+VALUES
+(1,0,1),
+(2,1,2)
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Employee`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Employee`
 (
 	`EmployeeId` INT NOT NULL,
 
@@ -23,7 +46,23 @@ CREATE TABLE `Employee`
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-CREATE TABLE `LeaveRequest`
+INSERT INTO `Employee`
+(
+	`EmployeeId`
+)
+VALUES
+(1),
+(2)
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+DROP TABLE IF EXISTS `LeaveRequest`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `LeaveRequest`
 (
 	`Id`         INT NOT NULL,
 	`EmployeeId` INT NOT NULL,
@@ -34,7 +73,26 @@ CREATE TABLE `LeaveRequest`
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-CREATE TABLE `LeaveRequestDateEntry`
+INSERT INTO `LeaveRequest`
+(
+	`Id`,
+	`EmployeeId`
+)
+VALUES
+(1,1),
+(2,1),
+(3,2),
+(4,2)
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+DROP TABLE IF EXISTS `LeaveRequestDateEntry`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `LeaveRequestDateEntry`
 (
 	`Id`             INT     NOT NULL,
 	`EndHour`        DECIMAL     NULL,
@@ -43,6 +101,22 @@ CREATE TABLE `LeaveRequestDateEntry`
 
 	CONSTRAINT `PK_LeaveRequestDateEntry` PRIMARY KEY CLUSTERED (`Id`)
 )
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+INSERT INTO `LeaveRequestDateEntry`
+(
+	`Id`,
+	`EndHour`,
+	`StartHour`,
+	`LeaveRequestId`
+)
+VALUES
+(1,12,1,1),
+(2,13,2,1),
+(3,14,3,2),
+(4,15,4,2)
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
