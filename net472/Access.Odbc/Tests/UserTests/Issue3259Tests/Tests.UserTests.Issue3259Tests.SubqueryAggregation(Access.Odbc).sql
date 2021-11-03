@@ -316,22 +316,13 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[Sum_1],
+	[t1].[WithParentReference],
 	[t1].[WithParentReferenceCustom1],
 	[t1].[WithParentReferenceCustom2],
-	[t1].[Sum_1_1]
+	[t1].[WithoutParentReference]
 FROM
 	(
 		SELECT
-			(
-				SELECT
-					Sum(Iif([tracking].[TrackingTimeType] = 0, [c_5].[StartHour], [c_5].[EndHour]))
-				FROM
-					[LeaveRequest] [e_4]
-						INNER JOIN [LeaveRequestDateEntry] [c_5] ON ([e_4].[Id] = [c_5].[LeaveRequestId])
-				WHERE
-					[a_Employee].[EmployeeId] = [e_4].[EmployeeId]
-			) as [WithParentReference],
 			(
 				SELECT
 					Sum(Iif([tracking].[TrackingTimeType] = 0, [c_1].[StartHour], [c_1].[EndHour]))
@@ -340,7 +331,7 @@ FROM
 						INNER JOIN [LeaveRequestDateEntry] [c_1] ON ([e].[Id] = [c_1].[LeaveRequestId])
 				WHERE
 					[a_Employee].[EmployeeId] = [e].[EmployeeId]
-			) as [Sum_1],
+			) as [WithParentReference],
 			(
 				SELECT
 					Sum(Iif([tracking].[TrackingTimeType] = 0, [c_2].[StartHour], [c_2].[EndHour]))
@@ -367,13 +358,16 @@ FROM
 						INNER JOIN [LeaveRequestDateEntry] [c_4] ON ([e_3].[Id] = [c_4].[LeaveRequestId])
 				WHERE
 					[a_Employee].[EmployeeId] = [e_3].[EmployeeId]
-			) as [Sum_1_1]
+			) as [WithoutParentReference]
 		FROM
 			[EmployeeTimeOffBalance] [tracking]
 				INNER JOIN [Employee] [a_Employee] ON ([tracking].[EmployeeId] = [a_Employee].[EmployeeId])
 	) [t1]
 ORDER BY
-	[t1].[WithParentReference]
+	Iif([t1].[WithParentReference] IS NULL, 0, [t1].[WithParentReference]),
+	Iif([t1].[WithParentReferenceCustom1] IS NULL, 0, [t1].[WithParentReferenceCustom1]),
+	Iif([t1].[WithParentReferenceCustom2] IS NULL, 0, [t1].[WithParentReferenceCustom2]),
+	Iif([t1].[WithoutParentReference] IS NULL, 0, [t1].[WithoutParentReference]) DESC
 
 BeforeExecute
 -- Access.Odbc AccessODBC
