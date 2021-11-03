@@ -2,7 +2,7 @@
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	Sum(IIF([a_Parent].[Value1] IS NULL, 0, [a_Parent].[Value1]))
+	Sum(Coalesce([a_Parent].[Value1], 0))
 FROM
 	[Child] [t1]
 		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]

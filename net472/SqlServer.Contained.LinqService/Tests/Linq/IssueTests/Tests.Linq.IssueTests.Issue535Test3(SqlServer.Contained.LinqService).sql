@@ -19,7 +19,7 @@ SELECT
 	[cb].[Id],
 	[cb].[Name],
 	[cb].[ContactEmail],
-	IIF([cb].[Enabled] IS NULL, 0, [cb].[Enabled])
+	Coalesce([cb].[Enabled], 0)
 FROM
 	[CustomerBase] [cb]
 WHERE
