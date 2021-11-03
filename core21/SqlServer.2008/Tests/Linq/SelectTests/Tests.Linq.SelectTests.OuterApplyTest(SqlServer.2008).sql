@@ -18,7 +18,7 @@ SELECT
 	[t7].[Parent_1],
 	[t7].[Child],
 	[t7].[Child_1],
-	[t7].[Any_2],
+	[t7].[Any_1],
 	[t7].[Child1],
 	[t7].[Child1_1],
 	[t7].[Child2],
@@ -41,9 +41,9 @@ FROM
 					SELECT
 						*
 					FROM
-						[Child] [c_2]
+						[Child] [c_1]
 					WHERE
-						[c_2].[ChildID] > 2
+						[c_1].[ChildID] > 2
 				)
 					THEN 1
 				ELSE 0
@@ -52,18 +52,6 @@ FROM
 			[t2].[ParentID] as [Child1_1],
 			[t3].[ChildID] as [Child2],
 			[t3].[ParentID] as [Child2_1],
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						[Child] [c_1]
-					WHERE
-						[c_1].[ChildID] > 2
-				)
-					THEN 1
-				ELSE 0
-			END as [Any_2],
 			[t4].[ChildID],
 			[t4].[ParentID],
 			[t5].[ChildID] as [ChildID_1],
@@ -74,57 +62,57 @@ FROM
 			[Parent] [p]
 				OUTER APPLY (
 					SELECT TOP (@take)
-						[c_3].[ParentID],
-						[c_3].[ChildID]
+						[c_2].[ParentID],
+						[c_2].[ChildID]
 					FROM
-						[Child] [c_3]
+						[Child] [c_2]
 					WHERE
-						[c_3].[ParentID] = [p].[ParentID]
+						[c_2].[ParentID] = [p].[ParentID]
 				) [t1]
 				OUTER APPLY (
 					SELECT TOP (@take_1)
+						[c_3].[ChildID],
+						[c_3].[ParentID]
+					FROM
+						[Child] [c_3]
+					WHERE
+						[c_3].[ChildID] > 2 AND [c_3].[ParentID] >= [p].[ParentID]
+				) [t2]
+				OUTER APPLY (
+					SELECT TOP (@take_2)
 						[c_4].[ChildID],
 						[c_4].[ParentID]
 					FROM
 						[Child] [c_4]
 					WHERE
-						[c_4].[ChildID] > 2 AND [c_4].[ParentID] >= [p].[ParentID]
-				) [t2]
+						[c_4].[ChildID] > 2 AND [c_4].[ParentID] >= 2
+				) [t3]
 				OUTER APPLY (
-					SELECT TOP (@take_2)
+					SELECT TOP (@take_3)
 						[c_5].[ChildID],
 						[c_5].[ParentID]
 					FROM
 						[Child] [c_5]
 					WHERE
-						[c_5].[ChildID] > 2 AND [c_5].[ParentID] >= 2
-				) [t3]
+						[c_5].[ChildID] > 2 AND [c_5].[ParentID] >= [p].[ParentID]
+				) [t4]
 				OUTER APPLY (
-					SELECT TOP (@take_3)
+					SELECT TOP (@take_4)
 						[c_6].[ChildID],
 						[c_6].[ParentID]
 					FROM
 						[Child] [c_6]
 					WHERE
 						[c_6].[ChildID] > 2 AND [c_6].[ParentID] >= [p].[ParentID]
-				) [t4]
+				) [t5]
 				OUTER APPLY (
-					SELECT TOP (@take_4)
+					SELECT TOP (@take_5)
 						[c_7].[ChildID],
 						[c_7].[ParentID]
 					FROM
 						[Child] [c_7]
 					WHERE
 						[c_7].[ChildID] > 2 AND [c_7].[ParentID] >= [p].[ParentID]
-				) [t5]
-				OUTER APPLY (
-					SELECT TOP (@take_5)
-						[c_8].[ChildID],
-						[c_8].[ParentID]
-					FROM
-						[Child] [c_8]
-					WHERE
-						[c_8].[ChildID] > 2 AND [c_8].[ParentID] >= [p].[ParentID]
 				) [t6]
 	) [t7]
 ORDER BY

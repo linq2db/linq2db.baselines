@@ -26,7 +26,7 @@ BeforeExecute
 
 SELECT
 	[cu].[Id],
-	[cu].[CountOfCards_1]
+	[cu].[CountOfCards]
 FROM
 	(
 		SELECT
@@ -34,19 +34,11 @@ FROM
 				SELECT
 					Count(*)
 				FROM
-					[Issue1983Card] [card_1]
-				WHERE
-					[card_1].[PersonId] = [p].[Id] AND [card_1].[CardType] = 2
-			) as [CountOfCards],
-			[p].[Id],
-			(
-				SELECT
-					Count(*)
-				FROM
 					[Issue1983Card] [card]
 				WHERE
 					[card].[PersonId] = [p].[Id] AND [card].[CardType] = 2
-			) as [CountOfCards_1]
+			) as [CountOfCards],
+			[p].[Id]
 		FROM
 			[Issue1983Person] [p]
 	) [cu]
@@ -124,14 +116,6 @@ FROM
 					[Issue1983Card] [card_2]
 				WHERE
 					[card_2].[PersonId] = [cu].[Id] AND [card_2].[CardType] = 2
-			) as [cnt],
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Issue1983Card] [card_3]
-				WHERE
-					[card_3].[PersonId] = [cu].[Id] AND [card_3].[CardType] = 2
 			) as [ex],
 			[cu].[Name],
 			[cu].[CountOfCards],
@@ -157,7 +141,7 @@ FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
 WHERE
-	([cu_1].[cnt] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
+	([cu_1].[ex] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
 
 BeforeExecute
 -- SQLite.MS SQLite
