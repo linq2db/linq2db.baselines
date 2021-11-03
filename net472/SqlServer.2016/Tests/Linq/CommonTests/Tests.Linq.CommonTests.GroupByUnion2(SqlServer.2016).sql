@@ -24,8 +24,8 @@ FROM
 								[c_1].[ParentID] < 4
 							UNION ALL
 							SELECT
-								IIF([g_1].[ParentID] IS NULL, 0, [g_1].[ParentID]) as [ParentID],
-								IIF([g_1].[GrandChildID] IS NULL, 0, [g_1].[GrandChildID]) as [ID]
+								Coalesce([g_1].[ParentID], 0) as [ParentID],
+								Coalesce([g_1].[GrandChildID], 0) as [ID]
 							FROM
 								[GrandChild] [g_1]
 							WHERE
