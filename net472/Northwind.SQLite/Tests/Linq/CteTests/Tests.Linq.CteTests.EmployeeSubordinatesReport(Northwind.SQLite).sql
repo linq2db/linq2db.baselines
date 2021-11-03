@@ -7,8 +7,7 @@ WITH [EmployeeSubordinatesReport]
 	[EmployeeID],
 	[LastName],
 	[FirstName],
-	[cnt],
-	[NumberOfSubordinates]
+	[cnt]
 )
 AS
 (
@@ -24,14 +23,6 @@ AS
 				[Employees] [e2]
 			WHERE
 				([e2].[ReportsTo] = [e].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL)
-		),
-		(
-			SELECT
-				Count(*)
-			FROM
-				[Employees] [e2_1]
-			WHERE
-				([e2_1].[ReportsTo] = [e].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL)
 		)
 	FROM
 		[Employees] [e]
@@ -42,7 +33,7 @@ SELECT
 	[employee].[cnt],
 	[manager].[LastName],
 	[manager].[FirstName],
-	[manager].[NumberOfSubordinates]
+	[manager].[cnt]
 FROM
 	[EmployeeSubordinatesReport] [employee]
 		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
