@@ -3,9 +3,9 @@
 
 SELECT
 	[p].[PersonID],
-	IIF([p].[MiddleName] IS NULL, IIF([p].[FirstName] IS NULL, N'None', [p].[FirstName]), [p].[MiddleName]),
-	IIF([p].[LastName] IS NULL, IIF([p].[FirstName] IS NULL, N'None', [p].[FirstName]), [p].[LastName]),
-	IIF([p].[MiddleName] IS NULL, IIF([p].[MiddleName] IS NULL, N'None', [p].[MiddleName]), [p].[MiddleName])
+	Coalesce([p].[MiddleName], [p].[FirstName], N'None'),
+	Coalesce([p].[LastName], [p].[FirstName], N'None'),
+	Coalesce([p].[MiddleName], [p].[MiddleName], N'None')
 FROM
 	[Person] [p]
 WHERE

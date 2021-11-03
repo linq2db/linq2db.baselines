@@ -100,5 +100,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	IIF([o].[ShipRegion] IS NULL, N'N/A', [o].[ShipRegion]) = N'N/A'
+	Coalesce([o].[ShipRegion], N'N/A') = N'N/A'
 
