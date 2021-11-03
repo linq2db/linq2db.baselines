@@ -12,16 +12,6 @@ FROM
 			N' ' + Convert(NVarChar(11), IIF([e].[Value1] IS NULL, 0, [e].[Value1])) as [c1],
 			(
 				SELECT
-					Sum([c_3].[ChildID])
-				FROM
-					[Child] [c_3]
-						LEFT JOIN [Parent] [a_Parent_3] ON [c_3].[ParentID] = [a_Parent_3].[ParentID]
-				WHERE
-					[a_Parent_3].[ParentID] = [e].[ParentID] AND ([a_Parent_3].[Value1] = [e].[Value1] OR [a_Parent_3].[Value1] IS NULL AND [e].[Value1] IS NULL)
-			) as [Sum_1],
-			IIF([e].[Value1] IS NULL, 0, [e].[Value1]) as [Label],
-			(
-				SELECT
 					Sum([c_1].[ChildID])
 				FROM
 					[Child] [c_1]
@@ -29,6 +19,7 @@ FROM
 				WHERE
 					[a_Parent].[ParentID] = [e].[ParentID] AND ([a_Parent].[Value1] = [e].[Value1] OR [a_Parent].[Value1] IS NULL AND [e].[Value1] IS NULL)
 			) as [SubSum],
+			IIF([e].[Value1] IS NULL, 0, [e].[Value1]) as [Label],
 			IIF(EXISTS(
 				SELECT
 					*
@@ -51,5 +42,5 @@ FROM
 			[Parent] [e]
 	) [f]
 WHERE
-	[f].[c1] LIKE N'%1%' ESCAPE N'~' AND [f].[Sum_1] > 0
+	[f].[c1] LIKE N'%1%' ESCAPE N'~' AND [f].[SubSum] > 0
 
