@@ -6,5 +6,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	IIF([p].[Value1] IS NULL, 0, [p].[Value1]) > 0
+	Coalesce([p].[Value1], 0) > 0
 
