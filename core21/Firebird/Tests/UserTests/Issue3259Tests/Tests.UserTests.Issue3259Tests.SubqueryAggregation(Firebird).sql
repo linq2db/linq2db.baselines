@@ -150,26 +150,13 @@ BeforeExecute
 -- Firebird
 
 SELECT
-	"t1"."Sum_1",
+	"t1"."WithParentReference",
 	"t1"."WithParentReferenceCustom1",
 	"t1"."WithParentReferenceCustom2",
-	"t1"."Sum_2"
+	"t1"."WithoutParentReference"
 FROM
 	(
 		SELECT
-			(
-				SELECT
-					Sum(CASE
-						WHEN "tracking"."TrackingTimeType" = 0
-							THEN "c_5"."StartHour"
-						ELSE "c_5"."EndHour"
-					END)
-				FROM
-					"LeaveRequest" "e_4"
-						INNER JOIN "LeaveRequestDateEntry" "c_5" ON "e_4"."Id" = "c_5"."LeaveRequestId"
-				WHERE
-					"a_Employee"."EmployeeId" = "e_4"."EmployeeId"
-			) as "WithParentReference",
 			(
 				SELECT
 					Sum(CASE
@@ -182,7 +169,7 @@ FROM
 						INNER JOIN "LeaveRequestDateEntry" "c_1" ON "e"."Id" = "c_1"."LeaveRequestId"
 				WHERE
 					"a_Employee"."EmployeeId" = "e"."EmployeeId"
-			) as "Sum_1",
+			) as "WithParentReference",
 			(
 				SELECT
 					Sum(CASE
@@ -221,13 +208,16 @@ FROM
 						INNER JOIN "LeaveRequestDateEntry" "c_4" ON "e_3"."Id" = "c_4"."LeaveRequestId"
 				WHERE
 					"a_Employee"."EmployeeId" = "e_3"."EmployeeId"
-			) as "Sum_2"
+			) as "WithoutParentReference"
 		FROM
 			"EmployeeTimeOffBalance" "tracking"
 				INNER JOIN "Employee" "a_Employee" ON "tracking"."EmployeeId" = "a_Employee"."EmployeeId"
 	) "t1"
 ORDER BY
-	"t1"."WithParentReference"
+	Coalesce("t1"."WithParentReference", 0),
+	Coalesce("t1"."WithParentReferenceCustom1", 0),
+	Coalesce("t1"."WithParentReferenceCustom2", 0),
+	Coalesce("t1"."WithoutParentReference", 0) DESC
 
 BeforeExecute
 -- Firebird
