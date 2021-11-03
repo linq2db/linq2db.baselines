@@ -387,10 +387,10 @@ FROM
 				INNER JOIN [Employee] [a_Employee] ON [tracking].[EmployeeId] = [a_Employee].[EmployeeId]
 	) [t4]
 ORDER BY
-	IIF([t4].[WithParentReference] IS NULL, 0, [t4].[WithParentReference]),
-	IIF([t4].[WithParentReferenceCustom1] IS NULL, 0, [t4].[WithParentReferenceCustom1]),
-	IIF([t4].[WithParentReferenceCustom2] IS NULL, 0, [t4].[WithParentReferenceCustom2]),
-	IIF([t4].[WithoutParentReference] IS NULL, 0, [t4].[WithoutParentReference]) DESC
+	Coalesce([t4].[WithParentReference], 0),
+	Coalesce([t4].[WithParentReferenceCustom1], 0),
+	Coalesce([t4].[WithParentReferenceCustom2], 0),
+	Coalesce([t4].[WithoutParentReference], 0) DESC
 
 BeforeExecute
 -- SqlServer.2012
