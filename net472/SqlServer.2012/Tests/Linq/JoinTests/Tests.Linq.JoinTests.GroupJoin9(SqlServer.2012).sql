@@ -19,6 +19,6 @@ FROM
 		LEFT JOIN [Parent] [yid] ON [y_4].[ParentID] = [yid].[ParentID]
 		LEFT JOIN [Parent] [y] ON [y_4].[ParentID] = [y].[ParentID]
 		LEFT JOIN [Parent] [y_1] ON [y_4].[ParentID] = [y_1].[ParentID]
-		LEFT JOIN [Parent] [y_2] ON [y_4].[ParentID] = IIF([y_2].[Value1] IS NULL, 1, [y_2].[Value1])
+		LEFT JOIN [Parent] [y_2] ON [y_4].[ParentID] = Coalesce([y_2].[Value1], 1)
 		LEFT JOIN [Parent] [y_3] ON [y_4].[ParentID] = [y_3].[ParentID]
 

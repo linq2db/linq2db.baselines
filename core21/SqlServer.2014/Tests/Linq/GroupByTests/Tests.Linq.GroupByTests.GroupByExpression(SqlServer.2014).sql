@@ -4,7 +4,7 @@ DECLARE @defValue Int -- Int32
 SET     @defValue = 10
 
 SELECT
-	IIF(Min([t1].[ParentID]) IS NULL, @defValue, Min([t1].[ParentID]))
+	Coalesce(Min([t1].[ParentID]), @defValue)
 FROM
 	[Parent] [t1]
 

@@ -3,7 +3,7 @@
 
 SELECT
 	[c_1].[ParentID],
-	IIF([c_1].[Value1] IS NULL, 0, [c_1].[Value1]),
+	Coalesce([c_1].[Value1], 0),
 	[c_1].[ParentID]
 FROM
 	[Parent] [c_1]
