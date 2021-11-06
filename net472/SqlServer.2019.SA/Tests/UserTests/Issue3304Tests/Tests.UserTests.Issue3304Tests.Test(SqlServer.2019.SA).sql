@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2017
 
 CREATE TABLE [Table]
 (
@@ -12,13 +12,13 @@ CREATE TABLE [Table]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2017
 DECLARE @Version Int -- Int32
 SET     @Version = 0
 
 MERGE INTO [Table] [Target]
 USING (VALUES
-	('65816065-03aa-452a-b7e5-0834229a8df4',@Version,NULL,NULL)
+	('c4f900ee-86f8-46f3-b94e-f60916cbcfbe',@Version,NULL,NULL)
 ) [Source]
 (
 	[UserId],
@@ -46,7 +46,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2017
 
 DROP TABLE IF EXISTS [Table]
 
