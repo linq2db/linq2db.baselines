@@ -109,7 +109,7 @@ SET     @Byte = 255
 DECLARE @SByte Smallint -- Int16
 SET     @SByte = 127
 DECLARE @Int16 Smallint -- Int16
-SET     @Int16 = 32767
+SET     @Int16 = 32767::smallint
 DECLARE @UInt16 Integer -- Int32
 SET     @UInt16 = 65535
 DECLARE @Int32 Integer -- Int32
@@ -125,7 +125,7 @@ SET     @ByteT = 255
 DECLARE @SByteT Smallint -- Int16
 SET     @SByteT = 127
 DECLARE @Int16T Smallint -- Int16
-SET     @Int16T = 32767
+SET     @Int16T = 32767::smallint
 DECLARE @UInt16T Integer -- Int32
 SET     @UInt16T = 65535
 DECLARE @Int32T Integer -- Int32
