@@ -21,7 +21,7 @@ SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
 DECLARE @BinaryValue Bytea(4) -- Binary
 SET     @BinaryValue = E'\\x01020304'
 DECLARE @SmallIntValue Smallint -- Int16
-SET     @SmallIntValue = 0
+SET     @SmallIntValue = 0::smallint
 
 INSERT INTO "LinqDataTypes"
 (

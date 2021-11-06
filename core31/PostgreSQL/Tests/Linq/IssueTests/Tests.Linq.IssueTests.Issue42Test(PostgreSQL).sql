@@ -31,7 +31,7 @@ SET     @BoolValue = False
 DECLARE @GuidValue Uuid -- Guid
 SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
 DECLARE @SmallIntValue Smallint -- Int16
-SET     @SmallIntValue = 1
+SET     @SmallIntValue = 1::smallint
 DECLARE @IntValue Integer -- Int32
 SET     @IntValue = NULL
 DECLARE @BigIntValue Bigint -- Int64
@@ -89,7 +89,7 @@ SET     @BoolValue = True
 DECLARE @GuidValue Uuid -- Guid
 SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
 DECLARE @SmallIntValue Smallint -- Int16
-SET     @SmallIntValue = 1
+SET     @SmallIntValue = 1::smallint
 DECLARE @IntValue Integer -- Int32
 SET     @IntValue = NULL
 DECLARE @BigIntValue Bigint -- Int64

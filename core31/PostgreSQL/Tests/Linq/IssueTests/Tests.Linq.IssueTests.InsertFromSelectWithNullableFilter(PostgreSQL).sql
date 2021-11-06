@@ -7,7 +7,7 @@ INSERT INTO "AllTypes"
 	"intDataType"
 )
 SELECT
-	123,
+	123::smallint,
 	t2."smallintDataType"
 FROM
 	(
@@ -23,7 +23,7 @@ FROM
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @ID Smallint -- Int16
-SET     @ID = 1234
+SET     @ID = 1234::smallint
 
 INSERT INTO "AllTypes"
 (
@@ -31,7 +31,7 @@ INSERT INTO "AllTypes"
 	"intDataType"
 )
 SELECT
-	123,
+	123::smallint,
 	t2."smallintDataType"
 FROM
 	(
