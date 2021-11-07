@@ -12,5 +12,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	Length(p.FirstName) = @Length_1 AND p.PersonID = 1
+	CHAR_LENGTH(p.FirstName) = @Length_1 AND p.PersonID = 1
 

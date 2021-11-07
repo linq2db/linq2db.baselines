@@ -19,6 +19,6 @@ WHERE
 	CASE
 		WHEN CharIndex('123', p_1.FirstName, 6) = 0
 			THEN -1
-		ELSE Length(p_1.FirstName) - CharIndex('321', Reverse(Substr(p_1.FirstName, 6, Length(p_1.FirstName) - 5))) - 2
+		ELSE CHAR_LENGTH(p_1.FirstName) - CharIndex('321', Reverse(Substr(p_1.FirstName, 6, CHAR_LENGTH(p_1.FirstName) - 5))) - 2
 	END = 8
 

@@ -88,7 +88,7 @@ WHERE
 	s.Enabled = 't' AND
 	s.Enabled IS NOT NULL AND
 	NOT s.Name LIKE 'level - %' ESCAPE '~' AND
-	Length(s.ImageFullUrl) > 0
+	CHAR_LENGTH(s.ImageFullUrl) > 0
 GROUP BY
 	s.Name
 
@@ -108,7 +108,7 @@ WHERE
 	s.Enabled = 't' AND
 	s.Enabled IS NOT NULL AND
 	NOT s.Name LIKE 'level - %' ESCAPE '~' AND
-	Length(s.ImageFullUrl) > 0 AND
+	CHAR_LENGTH(s.ImageFullUrl) > 0 AND
 	s.Name = @Name
 
 BeforeExecute
@@ -127,7 +127,7 @@ WHERE
 	s.Enabled = 't' AND
 	s.Enabled IS NOT NULL AND
 	NOT s.Name LIKE 'level - %' ESCAPE '~' AND
-	Length(s.ImageFullUrl) > 0 AND
+	CHAR_LENGTH(s.ImageFullUrl) > 0 AND
 	s.Name = @Name
 
 BeforeExecute
