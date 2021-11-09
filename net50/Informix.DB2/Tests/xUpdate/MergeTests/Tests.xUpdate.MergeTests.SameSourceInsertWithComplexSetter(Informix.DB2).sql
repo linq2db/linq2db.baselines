@@ -253,7 +253,7 @@ VALUES
 (
 	10 + Source.Id,
 	123,
-	Length(@name) + @idx,
+	CHAR_LENGTH(@name) + @idx,
 	Source.Field2,
 	999,
 	888

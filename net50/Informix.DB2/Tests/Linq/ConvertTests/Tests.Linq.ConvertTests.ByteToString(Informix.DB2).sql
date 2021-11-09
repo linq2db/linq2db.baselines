@@ -26,5 +26,5 @@ FROM
 			LinqDataTypes t
 	) p
 WHERE
-	Length(p.c1) > 0
+	CHAR_LENGTH(p.c1) > 0
 

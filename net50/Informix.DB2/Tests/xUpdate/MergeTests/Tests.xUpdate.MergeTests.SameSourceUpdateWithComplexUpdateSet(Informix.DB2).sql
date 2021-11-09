@@ -249,7 +249,7 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	Target.Field1 = Target.Field1 + Source.Field1,
-	Target.Field2 = Length(@name) + @idx,
+	Target.Field2 = CHAR_LENGTH(@name) + @idx,
 	Target.Field3 = Target.Field3 + Source.Field3,
 	Target.Field4 = Target.Field4 + Source.Field4,
 	Target.Field5 = Target.Field5 + Source.Field5
