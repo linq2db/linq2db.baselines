@@ -18,7 +18,7 @@ SET     @Version = 0
 
 MERGE INTO [Table] [Target]
 USING (VALUES
-	('7c577fa8-8d02-47a4-b4fb-b0b4f54c5615',@Version,NULL,NULL)
+	('8d95db5c-8751-4650-9bb4-4c1b0f9eae56',@Version,NULL,NULL)
 ) [Source]
 (
 	[UserId],
