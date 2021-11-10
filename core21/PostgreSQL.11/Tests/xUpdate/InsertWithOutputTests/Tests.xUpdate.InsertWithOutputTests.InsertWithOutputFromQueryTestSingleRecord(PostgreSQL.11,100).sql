@@ -37,6 +37,42 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
+CREATE TABLE "DestinationTable"
+(
+	"Id"       Int  NOT NULL,
+	"Value"    Int  NOT NULL,
+	"ValueStr" text     NULL
+)
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @param Integer -- Int32
+SET     @param = 100
+DECLARE @param_1 Integer -- Int32
+SET     @param_1 = 100
+
+INSERT INTO "DestinationTable"
+(
+	"Id",
+	"Value",
+	"ValueStr"
+)
+SELECT
+	s."Id" + :param,
+	s."Value" + :param,
+	s."ValueStr" || Cast(:param_1 as VarChar(100))
+FROM
+	"TableWithData" s
+WHERE
+	s."Id" = 3
+RETURNING
+	"DestinationTable"."Id",
+	"DestinationTable"."Value",
+	"DestinationTable"."ValueStr"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
 SELECT
 	s."Id",
 	s."Value",
@@ -44,19 +80,12 @@ SELECT
 FROM
 	"TableWithData" s
 WHERE
-	s."Id" > 3
+	s."Id" = 3
 
 BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DELETE FROM
-	"TableWithData" s
-WHERE
-	s."Id" > 3
-RETURNING
-	s."Id",
-	s."Value",
-	s."ValueStr"
+DROP TABLE IF EXISTS "DestinationTable"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
