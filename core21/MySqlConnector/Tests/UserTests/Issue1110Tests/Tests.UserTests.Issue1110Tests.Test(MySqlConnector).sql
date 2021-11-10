@@ -30,5 +30,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Issue1110TB`
+DROP TABLE IF EXISTS `Issue1110TB`
 

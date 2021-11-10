@@ -30,9 +30,9 @@ WITH `CTE1_` (`ChildID`)
 AS
 (
 	SELECT
-		`c_2`.`ChildID`
+		`c_1`.`ChildID`
 	FROM
-		`Child` `c_2`
+		`Child` `c_1`
 )
 SELECT
 	Count(*)
@@ -46,15 +46,19 @@ WITH `CTE1_` (`ChildID`)
 AS
 (
 	SELECT
-		`c_2`.`ChildID` as `C_1`
+		`c_1`.`ChildID` as `C_1`
 	FROM
-		`Child` `c_2`
+		`Child` `c_1`
 )
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			`CTE1_` `t1`
-	) as `c1`
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				`CTE1_` `t1`
+		)
+			THEN 1
+		ELSE 0
+	END as `c1`
 

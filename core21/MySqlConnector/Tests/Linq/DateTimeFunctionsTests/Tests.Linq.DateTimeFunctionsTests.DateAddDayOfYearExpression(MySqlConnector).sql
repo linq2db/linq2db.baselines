@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p1 Int32
-SET     @p1 = 3
+DECLARE @p_1 Int32
+SET     @p_1 = 3
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval @p1 Day)
+	Date_Add(`t`.`DateTimeValue`, Interval @p_1 Day)
 FROM
 	`LinqDataTypes` `t`
 

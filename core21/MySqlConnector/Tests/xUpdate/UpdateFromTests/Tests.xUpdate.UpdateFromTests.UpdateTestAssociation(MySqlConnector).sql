@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `UpdatedEntities`
+DROP TABLE IF EXISTS `UpdatedEntities`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 (
 	`id`         INT NOT NULL,
 	`Value1`     INT NOT NULL,
@@ -32,7 +37,12 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `UpdateRelation`
+DROP TABLE IF EXISTS `UpdateRelation`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `UpdateRelation`
 (
 	`id`            INT NOT NULL,
 	`RelatedValue1` INT NOT NULL,
@@ -86,10 +96,10 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `UpdateRelation`
+DROP TABLE IF EXISTS `UpdateRelation`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `UpdatedEntities`
+DROP TABLE IF EXISTS `UpdatedEntities`
 

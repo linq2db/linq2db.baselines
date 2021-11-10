@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `AttributeBase`
+DROP TABLE IF EXISTS `AttributeBase`
 

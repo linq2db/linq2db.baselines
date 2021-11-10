@@ -28,5 +28,5 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `User`
+DROP TABLE IF EXISTS `User`
 

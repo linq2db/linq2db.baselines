@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-DROP TABLE `TempTable`
+DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
 -- MySqlConnector MySql

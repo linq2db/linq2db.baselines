@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `AsyncDataTable`
+DROP TABLE IF EXISTS `AsyncDataTable`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 (
 	`Id` INT NOT NULL,
 
@@ -29,8 +34,8 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
-DECLARE @Id_1 Int32
-SET     @Id_1 = 2
+DECLARE @Id Int32
+SET     @Id = 2
 DECLARE @take Int32
 SET     @take = 1
 
@@ -39,11 +44,11 @@ SELECT
 FROM
 	`AsyncDataTable` `c_1`
 WHERE
-	`c_1`.`Id` = @Id_1
+	`c_1`.`Id` = @Id
 LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `AsyncDataTable`
+DROP TABLE IF EXISTS `AsyncDataTable`
 

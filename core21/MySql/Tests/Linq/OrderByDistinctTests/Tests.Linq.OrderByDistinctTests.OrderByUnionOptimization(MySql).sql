@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `OrderByDistinctData`
+DROP TABLE IF EXISTS `OrderByDistinctData`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
 	`Id`            INT          NOT NULL,
 	`DuplicateData` VARCHAR(255)     NULL,
@@ -44,7 +49,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT DISTINCT
+SELECT
 	`x_3`.`Id`,
 	`x_3`.`Id`
 FROM
@@ -87,11 +92,14 @@ FROM
 		WHERE
 			`x_2`.`Id` BETWEEN 100 AND 900
 	) `x_3`
+GROUP BY
+	`x_3`.`Id`,
+	`x_3`.`Id`
 ORDER BY
-	`x_3`.`DuplicateData`
+	Min(`x_3`.`DuplicateData`)
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `OrderByDistinctData`
+DROP TABLE IF EXISTS `OrderByDistinctData`
 

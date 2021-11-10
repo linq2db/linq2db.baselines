@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p1 Bool -- Boolean
-SET     @p1 = 1
 
 SELECT
 	`p`.`FirstName`,
@@ -12,9 +10,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	CASE
-		WHEN @p1 = 1 THEN 0
-		ELSE Locate('', `p`.`FirstName`) - 1
-	END = 0 AND
 	`p`.`PersonID` = 1
 

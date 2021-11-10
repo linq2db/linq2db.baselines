@@ -31,7 +31,7 @@ BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Field1 VarChar -- String
+DECLARE @Field1 Decimal -- AnsiString
 SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`
@@ -77,5 +77,5 @@ ORDER BY
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Issue1373Tests`
+DROP TABLE IF EXISTS `Issue1373Tests`
 

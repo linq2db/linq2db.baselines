@@ -74,8 +74,8 @@ BeforeExecute
 
 
 SELECT
-		c.TABLE_NAME,
 		c.TABLE_SCHEMA,
+		c.TABLE_NAME,
 		c.CONSTRAINT_NAME,
 		c.COLUMN_NAME,
 		c.REFERENCED_TABLE_SCHEMA,
@@ -321,5 +321,5 @@ SET     @param1 = NULL
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `ColumnOrderTest`
+DROP TABLE IF EXISTS `ColumnOrderTest`
 

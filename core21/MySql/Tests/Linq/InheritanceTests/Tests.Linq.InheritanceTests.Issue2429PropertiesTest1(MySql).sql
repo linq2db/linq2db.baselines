@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `BaseTable`
+DROP TABLE IF EXISTS `BaseTable`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `BaseTable`
 (
 	`Value` INT NOT NULL,
 	`Id`    INT NOT NULL,
@@ -51,5 +56,5 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `BaseTable`
+DROP TABLE IF EXISTS `BaseTable`
 

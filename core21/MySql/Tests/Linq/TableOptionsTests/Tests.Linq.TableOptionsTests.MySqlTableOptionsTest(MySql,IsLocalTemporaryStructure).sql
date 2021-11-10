@@ -10,5 +10,5 @@ CREATE TEMPORARY TABLE `TestTable`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `TestTable`
+DROP TABLE IF EXISTS `TestTable`
 

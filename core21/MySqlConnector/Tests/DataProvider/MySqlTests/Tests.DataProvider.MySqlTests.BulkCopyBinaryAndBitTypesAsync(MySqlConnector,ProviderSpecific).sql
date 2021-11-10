@@ -69,5 +69,5 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `NeedS.esca Pin``g`
+DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 

@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @value2 Decimal(5, 0)
+DECLARE @value2 Int32
 SET     @value2 = 13621
 DECLARE @id Int32
 SET     @id = 100500
@@ -58,7 +58,7 @@ SET     @id = 100500
 UPDATE
 	`LinqDataTypes` `t1`
 SET
-	`t1`.`SmallIntValue` = Cast(Floor(`t1`.`MoneyValue` / (@value2 / Cast(`t1`.`IntValue` as DECIMAL(29, 10)))) as SIGNED)
+	`t1`.`SmallIntValue` = Cast(Floor(`t1`.`MoneyValue` / (@value2 / `t1`.`IntValue`)) as SIGNED)
 WHERE
 	`t1`.`ID` = @id
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @p1 VarChar(4) -- String
-SET     @p1 = 'test'
+DECLARE @input_2 VarChar(4) -- String
+SET     @input_2 = 'test'
 
 SELECT
 	`p`.`PersonID`,
@@ -11,12 +11,12 @@ FROM
 	`Person` `p`
 		INNER JOIN `Patient` `_gjd_ri` ON `_gjd_ri`.`PersonID` = `p`.`PersonID`
 WHERE
-	Lower(`p`.`FirstName`) LIKE Concat('%', Replace(Replace(Replace(Lower(@p1), '~', '~~'), '%', '~%'), '_', '~_'), '%') ESCAPE '~'
+	LOCATE(@input_2, Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @input_1 VarChar(4) -- String
-SET     @input_1 = 'test'
+DECLARE @input_2 VarChar(4) -- String
+SET     @input_2 = 'test'
 
 SELECT
 	`p`.`FirstName`,
@@ -24,5 +24,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Lower(`p`.`FirstName`) LIKE Concat('%', Replace(Replace(Replace(Lower(@input_1), '~', '~~'), '%', '~%'), '_', '~_'), '%') ESCAPE '~'
+	LOCATE(@input_2, Lower(`p`.`FirstName`)) > 0
 

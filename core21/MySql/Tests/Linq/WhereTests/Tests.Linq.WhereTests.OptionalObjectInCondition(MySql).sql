@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @FirstName_1 VarChar(1) -- String
-SET     @FirstName_1 = '1'
+DECLARE @FirstName VarChar(1) -- String
+SET     @FirstName = '1'
 
 SELECT
 	`r`.`FirstName`,
@@ -12,7 +12,7 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` = @FirstName_1
+	`r`.`FirstName` = @FirstName
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -30,8 +30,8 @@ WHERE
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @FirstName_1 VarChar(1) -- String
-SET     @FirstName_1 = '1'
+DECLARE @FirstName VarChar(1) -- String
+SET     @FirstName = '1'
 
 SELECT
 	`r`.`FirstName`,
@@ -42,5 +42,5 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` = @FirstName_1
+	`r`.`FirstName` = @FirstName
 

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `TakeSkipClass`
+DROP TABLE IF EXISTS `TakeSkipClass`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
 	`Value` VARCHAR(10)     NULL
 )
@@ -21,8 +26,8 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
+DECLARE @take_2 Int32
+SET     @take_2 = 2
 
 SELECT
 	`t1`.`Value`
@@ -30,10 +35,10 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT @take
+LIMIT @take_2
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `TakeSkipClass`
+DROP TABLE IF EXISTS `TakeSkipClass`
 

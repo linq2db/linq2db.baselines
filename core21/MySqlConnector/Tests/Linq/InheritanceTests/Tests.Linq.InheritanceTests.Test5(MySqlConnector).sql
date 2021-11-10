@@ -7,5 +7,5 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	(`p`.`Value1` <> 0 AND `p`.`Value1` <> 1)
+	`p`.`Value1` <> 0 AND `p`.`Value1` <> 1
 

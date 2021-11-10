@@ -34,10 +34,10 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Books`
+DROP TABLE IF EXISTS `Books`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Authors`
+DROP TABLE IF EXISTS `Authors`
 

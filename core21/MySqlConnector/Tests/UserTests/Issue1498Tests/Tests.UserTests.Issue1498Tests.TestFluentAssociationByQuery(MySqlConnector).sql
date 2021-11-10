@@ -133,10 +133,10 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Message`
+DROP TABLE IF EXISTS `Message`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Topic`
+DROP TABLE IF EXISTS `Topic`
 

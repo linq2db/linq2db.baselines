@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `gt_s_one`
+DROP TABLE IF EXISTS `gt_s_one`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `gt_s_one`
 (
 	`id`   INT          NOT NULL,
 	`col1` VARCHAR(255)     NULL,
@@ -17,7 +22,12 @@ CREATE TABLE `gt_s_one`
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `access_mode`
+DROP TABLE IF EXISTS `access_mode`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `access_mode`
 (
 	`id`   INT          NOT NULL,
 	`code` VARCHAR(255)     NULL,
@@ -30,7 +40,7 @@ BeforeExecute
 
 UPDATE
 	`gt_s_one` `x`
-		LEFT JOIN `access_mode` `am` ON Upper(Replace(`x`.`col3`, 'auth.', '')) = Upper(`am`.`code`)
+		LEFT JOIN `access_mode` `am` ON (Upper(Replace(`x`.`col3`, 'auth.', '')) = Upper(`am`.`code`) OR Upper(Replace(`x`.`col3`, 'auth.', '')) IS NULL AND Upper(`am`.`code`) IS NULL)
 SET
 	`x`.`col1` = `x`.`col1`,
 	`x`.`col2` = `x`.`col2`,
@@ -48,10 +58,10 @@ SET
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `access_mode`
+DROP TABLE IF EXISTS `access_mode`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `gt_s_one`
+DROP TABLE IF EXISTS `gt_s_one`
 

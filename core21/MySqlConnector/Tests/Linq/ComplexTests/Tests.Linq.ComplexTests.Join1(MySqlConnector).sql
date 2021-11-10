@@ -14,5 +14,5 @@ FROM
 		INNER JOIN `Child` `c_1` ON `p`.`ParentID` = `c_1`.`ParentID`
 		INNER JOIN `GrandChild` `g_1` ON `p`.`ParentID` = `g_1`.`ParentID`
 WHERE
-	(((`c_1`.`ParentID` = 2 OR `c_1`.`ParentID` = 3) AND (`g_1`.`ChildID` IS NULL OR `g_1`.`ChildID` <> 21) AND (`g_1`.`ChildID` IS NULL OR `g_1`.`ChildID` <> 33) OR `g_1`.`ParentID` = 3 AND `g_1`.`ChildID` = 32) OR `g_1`.`ChildID` = 11)
+	(((`c_1`.`ParentID` = 2 OR `c_1`.`ParentID` = 3) AND (`g_1`.`ChildID` <> 21 OR `g_1`.`ChildID` IS NULL) AND (`g_1`.`ChildID` <> 33 OR `g_1`.`ChildID` IS NULL) OR `g_1`.`ParentID` = 3 AND `g_1`.`ChildID` = 32) OR `g_1`.`ChildID` = 11)
 

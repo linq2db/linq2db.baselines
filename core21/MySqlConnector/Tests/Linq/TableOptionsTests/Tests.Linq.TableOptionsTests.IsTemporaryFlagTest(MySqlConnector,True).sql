@@ -19,5 +19,5 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `IsTemporaryTable`
+DROP TABLE IF EXISTS `IsTemporaryTable`
 
