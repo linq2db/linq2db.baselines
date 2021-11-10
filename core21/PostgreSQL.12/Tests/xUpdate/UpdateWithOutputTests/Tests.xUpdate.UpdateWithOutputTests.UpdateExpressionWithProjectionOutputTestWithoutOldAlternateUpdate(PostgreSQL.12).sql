@@ -31,31 +31,63 @@ VALUES
 (6,-6,'Str6'),
 (7,-7,'Str7'),
 (8,-8,'Str8'),
-(9,-9,'Str9'),
-(10,-10,'Str10')
+(9,-9,'Str9')
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	s."Id",
-	s."Value",
-	s."ValueStr"
+DROP TABLE IF EXISTS "DestinationTable"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "DestinationTable"
+(
+	"Id"       Int  NOT NULL,
+	"Value"    Int  NOT NULL,
+	"ValueStr" text     NULL
+)
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+INSERT INTO "DestinationTable"
+(
+	"Id",
+	"Value",
+	"ValueStr"
+)
+VALUES
+(1,0,'0Dst'),
+(2,-1,'-1Dst'),
+(3,-2,'-2Dst'),
+(4,-3,'-3Dst'),
+(5,-4,'-4Dst'),
+(6,-5,'-5Dst'),
+(7,-6,'-6Dst'),
+(8,-7,'-7Dst'),
+(9,-8,'-8Dst')
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+UPDATE
+	"DestinationTable"
+SET
+	"Id" = s."Id",
+	"Value" = s."Value",
+	"ValueStr" = s."ValueStr"
 FROM
 	"TableWithData" s
 WHERE
-	s."Id" = 3
+	"DestinationTable"."Id" = s."Id"
+RETURNING
+	"DestinationTable"."Value"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DELETE FROM
-	"TableWithData" s
-WHERE
-	s."Id" = 3
-RETURNING
-	s."Id" + 1,
-	s."ValueStr" || Cast(1 as VarChar(11))
+DROP TABLE IF EXISTS "DestinationTable"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

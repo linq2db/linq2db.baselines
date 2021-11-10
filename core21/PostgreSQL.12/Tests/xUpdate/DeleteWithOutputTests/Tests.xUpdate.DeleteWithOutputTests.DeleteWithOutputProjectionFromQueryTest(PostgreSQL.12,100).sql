@@ -50,12 +50,12 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
-	"TableWithData" s_1
+	"TableWithData" s
 WHERE
-	s_1."Id" > 3
+	s."Id" > 3
 RETURNING
-	s_1."Id" + 1,
-	s_1."ValueStr" || Cast(1 as VarChar(11))
+	s."Id" + 1,
+	s."ValueStr" || Cast(1 as VarChar(11))
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
