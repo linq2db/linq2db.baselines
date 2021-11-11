@@ -59,7 +59,7 @@ SET     @id = 5
 UPDATE
 	Patient
 SET
-	Patient.Diagnosis = To_Char(Length(Patient.Diagnosis) + @i)
+	Patient.Diagnosis = To_Char(CHAR_LENGTH(Patient.Diagnosis) + @i)
 WHERE
 	Patient.PersonID = @id
 
@@ -80,7 +80,7 @@ INSERT INTO Patient
 VALUES
 (
 	@id,
-	To_Char(Length(@diagnosis) + @i)
+	To_Char(CHAR_LENGTH(@diagnosis) + @i)
 )
 
 BeforeExecute
@@ -93,7 +93,7 @@ SET     @id = 5
 UPDATE
 	Patient
 SET
-	Patient.Diagnosis = To_Char(Length(Patient.Diagnosis) + @i)
+	Patient.Diagnosis = To_Char(CHAR_LENGTH(Patient.Diagnosis) + @i)
 WHERE
 	Patient.PersonID = @id
 
@@ -107,7 +107,7 @@ SET     @id = 5
 UPDATE
 	Patient
 SET
-	Patient.Diagnosis = To_Char(Length(Patient.Diagnosis) + @i)
+	Patient.Diagnosis = To_Char(CHAR_LENGTH(Patient.Diagnosis) + @i)
 WHERE
 	Patient.PersonID = @id
 

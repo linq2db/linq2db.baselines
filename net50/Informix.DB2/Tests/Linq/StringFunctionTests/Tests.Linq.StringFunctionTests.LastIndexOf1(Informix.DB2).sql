@@ -13,7 +13,7 @@ WHERE
 	CASE
 		WHEN CharIndex('p', p.LastName) = 0
 			THEN -1
-		ELSE Length(p.LastName) - CharIndex('p', Reverse(p.LastName))
+		ELSE CHAR_LENGTH(p.LastName) - CharIndex('p', Reverse(p.LastName))
 	END = 2 AND
 	p.PersonID = 1
 

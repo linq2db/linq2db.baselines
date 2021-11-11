@@ -3,8 +3,8 @@
 
 SELECT
 	[p].[PersonID],
-	IIF([p].[FirstName] IS NULL, N'None', [p].[FirstName]),
-	IIF([p].[MiddleName] IS NULL, N'None', [p].[MiddleName])
+	Coalesce([p].[FirstName], N'None'),
+	Coalesce([p].[MiddleName], N'None')
 FROM
 	[Person] [p]
 WHERE

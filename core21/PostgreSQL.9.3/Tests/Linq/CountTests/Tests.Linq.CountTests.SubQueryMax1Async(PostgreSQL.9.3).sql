@@ -4,14 +4,18 @@
 SELECT
 	Max(t1.cnt)
 FROM
-	"Parent" p
-		LEFT JOIN LATERAL (
-			SELECT
-				Count(*) as cnt
-			FROM
-				"Child" c_1
-					LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
-			WHERE
-				"a_Parent"."ParentID" = p."ParentID"
-		) t1 ON 1=1
+	(
+		SELECT
+			(
+				SELECT
+					Count(*)
+				FROM
+					"Child" c_1
+						LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
+				WHERE
+					"a_Parent"."ParentID" = p."ParentID"
+			) as cnt
+		FROM
+			"Parent" p
+	) t1
 
