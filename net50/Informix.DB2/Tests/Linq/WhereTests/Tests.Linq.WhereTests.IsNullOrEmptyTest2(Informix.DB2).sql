@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	NOT (nm.FirstName IS NULL OR Length(nm.FirstName) = 0)
+	NOT (nm.FirstName IS NULL OR CHAR_LENGTH(nm.FirstName) = 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
