@@ -83,20 +83,28 @@ BeforeExecute
 -- Northwind SqlServer.2017
 
 SELECT
-	Max([t1].[cnt])
+	[c_1].[Fax],
+	[c_1].[Phone],
+	[c_1].[Country],
+	[c_1].[PostalCode],
+	[c_1].[Region],
+	[c_1].[City],
+	[c_1].[Address],
+	[c_1].[ContactTitle],
+	[c_1].[ContactName],
+	[c_1].[CompanyName],
+	[c_1].[CustomerID]
 FROM
-	(
+	[Customers] [c_1]
+WHERE
+	EXISTS(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Orders] [o]
-						INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
-				WHERE
-					([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
-			) as [cnt]
+			*
 		FROM
-			[Customers] [c_1]
-	) [t1]
+			(VALUES
+				(N'ABCDE'), (N'ALFKI')
+			) [id]([item])
+		WHERE
+			([c_1].[CustomerID] = [id].[item] OR [c_1].[CustomerID] IS NULL AND [id].[item] IS NULL)
+	)
 
