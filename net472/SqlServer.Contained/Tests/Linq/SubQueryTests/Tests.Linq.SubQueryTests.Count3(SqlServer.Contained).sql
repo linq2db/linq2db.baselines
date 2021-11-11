@@ -9,11 +9,11 @@ FROM
 		SELECT
 			(
 				SELECT
-					Sum([t_1].[ParentID])
+					Sum([t].[ParentID])
 				FROM
-					[Child] [t_1]
+					[Child] [t]
 				WHERE
-					[p].[ParentID] = [t_1].[ParentID]
+					[p].[ParentID] = [t].[ParentID]
 			) / 2 as [Sum_1],
 			[p].[ParentID],
 			(
