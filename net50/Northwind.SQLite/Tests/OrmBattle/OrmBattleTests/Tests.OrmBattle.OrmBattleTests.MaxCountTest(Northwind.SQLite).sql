@@ -85,15 +85,18 @@ BeforeExecute
 SELECT
 	Max([t1].[cnt])
 FROM
-	[Customers] [c_1]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[a_Customer].[CustomerID]
-			FROM
-				[Orders] [o]
-					INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
-			GROUP BY
-				[a_Customer].[CustomerID]
-		) [t1] ON ([t1].[CustomerID] = [c_1].[CustomerID] OR [t1].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
+	(
+		SELECT
+			(
+				SELECT
+					Count(*)
+				FROM
+					[Orders] [o]
+						INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+				WHERE
+					([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
+			) as [cnt]
+		FROM
+			[Customers] [c_1]
+	) [t1]
 
