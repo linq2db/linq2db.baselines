@@ -2,7 +2,7 @@
 -- SqlServer.2012
 
 SELECT
-	IIF([p].[Value1] IS NULL, 100, [p].[Value1])
+	Coalesce([p].[Value1], 100)
 FROM
 	[Parent] [p]
 
