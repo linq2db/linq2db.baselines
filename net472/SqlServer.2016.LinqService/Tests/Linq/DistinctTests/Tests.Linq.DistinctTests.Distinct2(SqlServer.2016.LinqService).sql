@@ -2,7 +2,7 @@
 -- SqlServer.2016
 
 SELECT DISTINCT
-	IIF([p].[Value1] IS NULL, [p].[ParentID] % 2, [p].[Value1])
+	Coalesce([p].[Value1], [p].[ParentID] % 2)
 FROM
 	[Parent] [p]
 
