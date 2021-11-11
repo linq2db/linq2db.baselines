@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @GuidValue_1 Guid
-SET     @GuidValue_1 = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
+DECLARE @GuidValue Guid
+SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
 DECLARE @take Int32
 SET     @take = 2
 
@@ -17,13 +17,13 @@ SELECT
 FROM
 	`LinqDataTypes` `p`
 WHERE
-	`p`.`GuidValue` = @GuidValue_1
+	`p`.`GuidValue` = @GuidValue
 LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @GuidValue_1 Guid
-SET     @GuidValue_1 = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
+DECLARE @GuidValue Guid
+SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 DECLARE @take Int32
 SET     @take = 2
 
@@ -39,6 +39,6 @@ SELECT
 FROM
 	`LinqDataTypes` `p`
 WHERE
-	`p`.`GuidValue` = @GuidValue_1
+	`p`.`GuidValue` = @GuidValue
 LIMIT @take
 

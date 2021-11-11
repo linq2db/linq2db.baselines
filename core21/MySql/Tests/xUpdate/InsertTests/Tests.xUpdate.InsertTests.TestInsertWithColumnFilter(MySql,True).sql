@@ -26,8 +26,8 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @FirstName_1 VarChar(18) -- String
-SET     @FirstName_1 = 'InsertColumnFilter'
+DECLARE @FirstName VarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	`Person` `x`
 WHERE
-	`x`.`FirstName` = @FirstName_1
+	`x`.`FirstName` = @FirstName
 LIMIT @take
 
 BeforeExecute

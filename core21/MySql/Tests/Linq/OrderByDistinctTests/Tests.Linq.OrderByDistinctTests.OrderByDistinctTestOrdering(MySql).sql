@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `OrderByDistinctData`
+DROP TABLE IF EXISTS `OrderByDistinctData`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
 	`Id`            INT          NOT NULL,
 	`DuplicateData` VARCHAR(255)     NULL,
@@ -33,12 +38,14 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1`
+	Min(`x`.`OrderData1`)
 LIMIT @skip, @take
 
 BeforeExecute
@@ -63,12 +70,14 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1` DESC
+	Max(`x`.`OrderData1`) DESC
 LIMIT @skip, @take
 
 BeforeExecute
@@ -93,13 +102,15 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1`,
-	`x`.`OrderData2`
+	Min(`x`.`OrderData1`),
+	Min(`x`.`OrderData2`)
 LIMIT @skip, @take
 
 BeforeExecute
@@ -125,13 +136,15 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
 ORDER BY
-	`x`.`OrderData1`,
-	`x`.`OrderData2` DESC
+	Min(`x`.`OrderData1`),
+	Max(`x`.`OrderData2`) DESC
 LIMIT @skip, @take
 
 BeforeExecute
@@ -157,7 +170,25 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT DISTINCT
+SELECT
+	`x`.`DuplicateData`
+FROM
+	`OrderByDistinctData` `x`
+GROUP BY
+	`x`.`DuplicateData`
+ORDER BY
+	Max(`x`.`OrderData1`) DESC,
+	Max(`x`.`OrderData2`) DESC
+LIMIT @skip, @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @skip Int32
+SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
+
+SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
@@ -177,25 +208,11 @@ SELECT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
-ORDER BY
-	`x`.`OrderData1` DESC,
-	`x`.`OrderData2` DESC
-LIMIT @skip, @take
-
-BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @skip Int32
-SET     @skip = 0
-DECLARE @take Int32
-SET     @take = 3
-
-SELECT DISTINCT
+GROUP BY
 	`x`.`DuplicateData`
-FROM
-	`OrderByDistinctData` `x`
 ORDER BY
-	`x`.`OrderData1`,
-	`x`.`OrderData2` DESC
+	Min(`x`.`OrderData1`),
+	Max(`x`.`OrderData2`) DESC
 LIMIT @skip, @take
 
 BeforeExecute
@@ -217,5 +234,5 @@ LIMIT @skip, @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `OrderByDistinctData`
+DROP TABLE IF EXISTS `OrderByDistinctData`
 

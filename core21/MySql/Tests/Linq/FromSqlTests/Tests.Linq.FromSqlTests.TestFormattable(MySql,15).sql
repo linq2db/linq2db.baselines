@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `sample_class`
+DROP TABLE IF EXISTS `sample_class`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `sample_class`
 (
 	`id`    INT         NOT NULL,
 	`value` VARCHAR(50)     NULL
@@ -39,17 +44,17 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @p1 Int32
-SET     @p1 = 5
-DECLARE @p2 Int32
-SET     @p2 = 15
+DECLARE @p_1 Int32
+SET     @p_1 = 5
+DECLARE @p_2 Int32
+SET     @p_2 = 15
 
 SELECT
 	`c_1`.`value`,
 	`c_1`.`id`
 FROM
 	(
-		SELECT * FROM `sample_class` where `id` >= @p1 and `id` < @p2
+		SELECT * FROM `sample_class` where `id` >= @p_1 and `id` < @p_2
 	) `c_1`
 WHERE
 	`c_1`.`id` > 10
@@ -72,5 +77,5 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `sample_class`
+DROP TABLE IF EXISTS `sample_class`
 

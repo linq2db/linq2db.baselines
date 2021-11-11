@@ -83,5 +83,5 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `xxPerson`
+DROP TABLE IF EXISTS `xxPerson`
 

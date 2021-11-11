@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `InstanceClass`
+DROP TABLE IF EXISTS `InstanceClass`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `InstanceClass`
 (
 	`Id`    INT NOT NULL,
 	`Value` INT NOT NULL
@@ -45,10 +50,10 @@ SELECT
 FROM
 	`InstanceClass` `t`
 WHERE
-	Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) = Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11)))
+	(Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) = Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) OR Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) IS NULL AND Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) IS NULL)
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `InstanceClass`
+DROP TABLE IF EXISTS `InstanceClass`
 

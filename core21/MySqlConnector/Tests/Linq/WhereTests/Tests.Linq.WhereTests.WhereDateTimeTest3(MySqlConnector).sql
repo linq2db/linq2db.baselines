@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @DateTimeValue_1 Datetime -- DateTime
-SET     @DateTimeValue_1 = '2009-09-27'
+DECLARE @DateTimeValue Datetime -- DateTime
+SET     @DateTimeValue = '2009-09-27'
 
 SELECT
 	`_`.`ID`,
@@ -15,5 +15,5 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	`_`.`DateTimeValue` = @DateTimeValue_1
+	`_`.`DateTimeValue` = @DateTimeValue
 

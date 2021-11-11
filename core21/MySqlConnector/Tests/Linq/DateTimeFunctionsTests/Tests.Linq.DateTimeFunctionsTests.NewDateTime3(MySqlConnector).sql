@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Concat(Cast(Extract(year from `p`.`DateTimeValue`) as CHAR(11)), '-', '10', '-', '1', ' ', '20', ':', '35', ':', '44') as DateTime) as `c1`
+			Cast(Concat(Cast(Extract(year from `p`.`DateTimeValue`) as CHAR(11)), '-10-1 20:35:44') as DateTime) as `c1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`

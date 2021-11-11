@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `SampleData`
+DROP TABLE IF EXISTS `SampleData`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `SampleData`
 (
 	`Id`     INT NOT NULL,
 	`Value1` INT NOT NULL,
@@ -37,16 +42,16 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`Value1`
+	`t1`.`Value_1`
 FROM
 	(
 		SELECT DISTINCT
-			`r`.`Value1`
+			`r`.`Value_1`
 		FROM
 			(
 				SELECT DISTINCT
 					`t`.`Id`,
-					`t`.`Value1`
+					`t`.`Value1` as `Value_1`
 				FROM
 					`SampleData` `t`
 				WHERE
@@ -67,12 +72,12 @@ FROM
 				FROM
 					`SampleData` `t_2`
 				WHERE
-					`t_2`.`Id` % 6 = 0 AND `r`.`Id` = `t_2`.`Id` AND `r`.`Value1` = `t_2`.`Value1`
+					`t_2`.`Id` % 6 = 0 AND `r`.`Id` = `t_2`.`Id` AND `r`.`Value_1` = `t_2`.`Value1`
 			)
 	) `t1`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `SampleData`
+DROP TABLE IF EXISTS `SampleData`
 

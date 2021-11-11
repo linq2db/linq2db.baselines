@@ -95,10 +95,10 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `TaskStage`
+DROP TABLE IF EXISTS `TaskStage`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Task`
+DROP TABLE IF EXISTS `Task`
 

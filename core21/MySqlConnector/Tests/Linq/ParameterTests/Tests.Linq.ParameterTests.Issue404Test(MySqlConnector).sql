@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `Table404One`
+DROP TABLE IF EXISTS `Table404One`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Table404One`
 (
 	`Id` INT NOT NULL
 )
@@ -20,7 +25,12 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `Table404Two`
+DROP TABLE IF EXISTS `Table404Two`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Table404Two`
 (
 	`Id`           INT NOT NULL,
 	`Usage`        INT NOT NULL,
@@ -71,8 +81,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Usage_2 Int32
-SET     @Usage_2 = 0
+DECLARE @Usage_1 Int32
+SET     @Usage_1 = 0
 
 SELECT
 	`key_data_result`.`Id`,
@@ -86,7 +96,7 @@ FROM
 		FROM
 			`Table404One` `c_1`
 	) `key_data_result`
-		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_2 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -98,8 +108,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Usage_2 Int32
-SET     @Usage_2 = 1
+DECLARE @Usage_1 Int32
+SET     @Usage_1 = 1
 
 SELECT
 	`key_data_result`.`Id`,
@@ -113,7 +123,7 @@ FROM
 		FROM
 			`Table404One` `c_1`
 	) `key_data_result`
-		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_2 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -126,17 +136,22 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Table404Two`
+DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Table404One`
+DROP TABLE IF EXISTS `Table404One`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `Table404One`
+DROP TABLE IF EXISTS `Table404One`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Table404One`
 (
 	`Id` INT NOT NULL
 )
@@ -155,7 +170,12 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `Table404Two`
+DROP TABLE IF EXISTS `Table404Two`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Table404Two`
 (
 	`Id`           INT NOT NULL,
 	`Usage`        INT NOT NULL,
@@ -206,8 +226,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Usage_2 Int32
-SET     @Usage_2 = 0
+DECLARE @Usage_1 Int32
+SET     @Usage_1 = 0
 
 SELECT
 	`key_data_result`.`Id`,
@@ -221,7 +241,7 @@ FROM
 		FROM
 			`Table404One` `c_1`
 	) `key_data_result`
-		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_2 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -233,8 +253,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Usage_2 Int32
-SET     @Usage_2 = 1
+DECLARE @Usage_1 Int32
+SET     @Usage_1 = 1
 
 SELECT
 	`key_data_result`.`Id`,
@@ -248,7 +268,7 @@ FROM
 		FROM
 			`Table404One` `c_1`
 	) `key_data_result`
-		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_2 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
+		INNER JOIN `Table404Two` `_v` ON `_v`.`Usage` = @Usage_1 AND `_v`.`FirstTableId` = `key_data_result`.`Id`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -261,10 +281,10 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Table404Two`
+DROP TABLE IF EXISTS `Table404Two`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Table404One`
+DROP TABLE IF EXISTS `Table404One`
 

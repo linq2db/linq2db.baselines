@@ -47,5 +47,5 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `CreateIfNotExistsTable`
+DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 

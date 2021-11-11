@@ -10,7 +10,7 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%'
+	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -111,5 +111,5 @@ DELETE `_`
 FROM
 	`Person` `_`
 WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%'
+	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 

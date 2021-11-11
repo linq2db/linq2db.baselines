@@ -26,8 +26,8 @@ GROUP BY
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p1 Bool -- Boolean
-SET     @p1 = 0
+DECLARE @p_1 Bool -- Boolean
+SET     @p_1 = 0
 
 SELECT
 	`underscore`.`ParentID`,
@@ -53,5 +53,5 @@ FROM
 			`Parent` `selectParam`
 	) `underscore`
 WHERE
-	`underscore`.`Key_1` = @p1
+	`underscore`.`Key_1` = @p_1
 

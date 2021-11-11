@@ -125,5 +125,5 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `PR_1598_Update_Enum_Table`
+DROP TABLE IF EXISTS `PR_1598_Update_Enum_Table`
 

@@ -2,7 +2,7 @@
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`c1`
+	`t1`.`Key_1`
 FROM
 	(
 		SELECT
@@ -14,17 +14,17 @@ FROM
 					ELSE '2'
 				END
 				ELSE '3'
-			END as `c1`
+			END as `Key_1`
 		FROM
 			`Child` `selectParam`
 	) `t1`
 GROUP BY
-	`t1`.`c1`
+	`t1`.`Key_1`
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p1 VarChar(1) -- String
-SET     @p1 = '1'
+DECLARE @p_1 VarChar(1) -- String
+SET     @p_1 = '1'
 
 SELECT
 	`selectParam`.`ParentID`,
@@ -40,5 +40,5 @@ WHERE
 			ELSE '2'
 		END
 		ELSE '3'
-	END = @p1
+	END = @p_1
 

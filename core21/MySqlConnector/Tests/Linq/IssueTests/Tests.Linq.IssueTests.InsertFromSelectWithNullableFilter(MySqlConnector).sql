@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p1 Int16
-SET     @p1 = 1234
+DECLARE @ID Int16
+SET     @ID = 1234
 
 INSERT INTO `AllTypes`
 (
@@ -41,6 +41,6 @@ FROM
 			`AllTypes` `_`
 				INNER JOIN `AllTypes` `c_1` ON `_`.`smallintDataType` = `c_1`.`intDataType`
 		WHERE
-			`_`.`smallintDataType` = @p1
+			`_`.`smallintDataType` = @ID
 	) `t1`
 

@@ -1,13 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-
-BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -16,7 +8,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 DELETE FROM
 	[Child]
@@ -24,7 +16,7 @@ WHERE
 	[Child].[ParentID] >= 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -33,7 +25,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -43,7 +35,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],
@@ -68,11 +60,11 @@ FROM
 		SELECT
 			(
 				SELECT
-					Sum(`t_1`.`ParentID`)
+					Sum(`t`.`ParentID`)
 				FROM
-					`Child` `t_1`
+					`Child` `t`
 				WHERE
-					`p`.`ParentID` = `t_1`.`ParentID` AND `t_1`.`ParentID` > 0
+					`p`.`ParentID` = `t`.`ParentID` AND `t`.`ParentID` > 0
 			) / 2 as `Sum_1`,
 			`p`.`ParentID`,
 			(

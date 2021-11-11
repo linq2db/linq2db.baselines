@@ -132,8 +132,8 @@ BeforeExecute
 
 
 SELECT
-		c.TABLE_NAME,
 		c.TABLE_SCHEMA,
+		c.TABLE_NAME,
 		c.CONSTRAINT_NAME,
 		c.COLUMN_NAME,
 		c.REFERENCED_TABLE_SCHEMA,
@@ -152,5 +152,5 @@ SELECT
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `TestSchemaTypesTable`
+DROP TABLE IF EXISTS `TestSchemaTypesTable`
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE IF NOT EXISTS `T1`
+CREATE TABLE `T1`
 (
 	`InstrumentId`         INT          NOT NULL,
 	`InstrumentCode`       VARCHAR(255)     NULL,
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `T1`
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE IF NOT EXISTS `T2`
+CREATE TABLE `T2`
 (
 	`InstrumentId` INT NOT NULL,
 	`IndexId`      INT NOT NULL
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `T2`
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE IF NOT EXISTS `T3`
+CREATE TABLE `T3`
 (
 	`InstrumentId` INT NOT NULL,
 	`IndexId`      INT NOT NULL
@@ -173,23 +173,28 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @cond VarChar(4) -- String
-SET     @cond = 'aaa%'
+DECLARE @cond_1 VarChar(4) -- String
+SET     @cond_1 = 'aaa%'
 DECLARE @uptoDate Datetime -- DateTime
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
-SELECT DISTINCT
-	`ins`.`SourceInstrumentCode`
+SELECT
+	`t4`.`SourceInstrumentCode`
 FROM
-	`T1` `_`
-		INNER JOIN `T2` `idx` ON `_`.`InstrumentId` = `idx`.`InstrumentId`
-		INNER JOIN `T3` `w` ON `idx`.`IndexId` = `w`.`IndexId`
-		INNER JOIN `T1` `ins` ON `w`.`InstrumentId` = `ins`.`InstrumentId`
-WHERE
-	`ins`.`SourceInstrumentCode` IS NOT NULL AND `_`.`InstrumentCode` LIKE @cond ESCAPE '~' AND
-	`_`.`CreateDate` <= @uptoDate
+	(
+		SELECT DISTINCT
+			`ins`.`SourceInstrumentCode`
+		FROM
+			`T1` `_`
+				INNER JOIN `T2` `idx` ON `_`.`InstrumentId` = `idx`.`InstrumentId`
+				INNER JOIN `T3` `w` ON `idx`.`IndexId` = `w`.`IndexId`
+				INNER JOIN `T1` `ins` ON `w`.`InstrumentId` = `ins`.`InstrumentId`
+		WHERE
+			`ins`.`SourceInstrumentCode` IS NOT NULL AND `_`.`InstrumentCode` LIKE @cond_1 ESCAPE '~' AND
+			`_`.`CreateDate` <= @uptoDate
+	) `t4`
 ORDER BY
-	`ins`.`SourceInstrumentCode`
+	`t4`.`SourceInstrumentCode`
 
 BeforeExecute
 -- MySqlConnector MySql

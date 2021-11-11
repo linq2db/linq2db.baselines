@@ -2,13 +2,19 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`p`.`FirstName`,
-	`p`.`PersonID`,
-	`p`.`LastName`,
-	`p`.`MiddleName`,
-	`p`.`Gender`
+	Count(*)
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` NOT LIKE '%o~%h%' ESCAPE '~' AND `p`.`PersonID` = 1
+	LOCATE('o%h', `p`.`FirstName`) > 0 AND `p`.`PersonID` = 1
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`Person` `p`
+WHERE
+	(LOCATE('o%h', `p`.`FirstName`) <= 0) AND `p`.`PersonID` = 1
 
