@@ -14,16 +14,20 @@ CREATE TABLE [CustomerBase]
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
+DECLARE @filter_2 NVarChar(4000) -- String
+SET     @filter_2 = N'%test%'
+DECLARE @filter_3 NVarChar(4000) -- String
+SET     @filter_3 = N'%test%'
 
 SELECT
-	[cb].[Id],
-	[cb].[Name],
-	[cb].[ContactEmail],
-	Coalesce([cb].[Enabled], 0)
+	[q].[Id],
+	[q].[Name],
+	[q].[ContactEmail],
+	Coalesce([q].[Enabled], 0)
 FROM
-	[CustomerBase] [cb]
+	[CustomerBase] [q]
 WHERE
-	[cb].[ClientType] = N'Client'
+	[q].[ClientType] = N'Client' AND ([q].[Name] LIKE @filter_2 ESCAPE N'~' OR [q].[ContactEmail] LIKE @filter_3 ESCAPE N'~')
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
