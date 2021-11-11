@@ -71,5 +71,5 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `Issue1373Tests`
+DROP TABLE IF EXISTS `Issue1373Tests`
 

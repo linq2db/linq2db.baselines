@@ -29,5 +29,5 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `ValueItem`
+DROP TABLE IF EXISTS `ValueItem`
 

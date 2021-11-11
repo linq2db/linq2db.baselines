@@ -23,5 +23,5 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Issue1107TB`
+DROP TABLE IF EXISTS `Issue1107TB`
 

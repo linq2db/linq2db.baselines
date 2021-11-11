@@ -30,10 +30,10 @@ SELECT
 FROM
 	`T1351Model` `_`
 WHERE
-	(`_`.`TestNullable` IS NULL OR `_`.`TestNullable` <> 1)
+	(`_`.`TestNullable` <> 1 OR `_`.`TestNullable` IS NULL)
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `T1351Model`
+DROP TABLE IF EXISTS `T1351Model`
 

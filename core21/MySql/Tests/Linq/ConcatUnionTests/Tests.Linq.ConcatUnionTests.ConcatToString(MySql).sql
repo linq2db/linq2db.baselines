@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
@@ -21,8 +21,8 @@ FROM
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @pattern VarChar(3) -- String
-SET     @pattern = '%1%'
+DECLARE @pattern VarChar(1) -- String
+SET     @pattern = '1'
 DECLARE @take Int32
 SET     @take = 10
 
@@ -42,7 +42,7 @@ FROM
 		FROM
 			`Person` `p_1`
 		WHERE
-			Cast(`p_1`.`PersonID` as CHAR(11)) LIKE @pattern ESCAPE '~'
+			LOCATE(@pattern, Cast(`p_1`.`PersonID` as CHAR(11))) > 0
 	) `t1`
 LIMIT @take
 

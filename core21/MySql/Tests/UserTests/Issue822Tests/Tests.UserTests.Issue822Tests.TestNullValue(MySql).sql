@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @id_1 Int32
-SET     @id_1 = 3
+DECLARE @id Int32
+SET     @id = 3
 
 SELECT
 	`_`.`ID`,
@@ -23,13 +23,13 @@ WHERE
 		FROM
 			`LinqDataTypes` `_1`
 		WHERE
-			`_1`.`ID` = @id_1 AND `_1`.`ID` = `_`.`ID`
+			`_1`.`ID` = @id AND `_1`.`ID` = `_`.`ID`
 	)
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @id_1 Int32
-SET     @id_1 = 4
+DECLARE @id Int32
+SET     @id = 4
 
 SELECT
 	`_`.`ID`,
@@ -51,6 +51,6 @@ WHERE
 		FROM
 			`LinqDataTypes` `_1`
 		WHERE
-			`_1`.`ID` = @id_1 AND `_1`.`ID` = `_`.`ID`
+			`_1`.`ID` = @id AND `_1`.`ID` = `_`.`ID`
 	)
 

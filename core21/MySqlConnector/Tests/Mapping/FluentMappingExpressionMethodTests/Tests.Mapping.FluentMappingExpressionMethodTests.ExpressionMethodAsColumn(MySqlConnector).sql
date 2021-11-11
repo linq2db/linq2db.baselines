@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `InstanceClass`
+DROP TABLE IF EXISTS `InstanceClass`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `InstanceClass`
 (
 	`Id`    INT NOT NULL,
 	`Value` INT NOT NULL
@@ -42,12 +47,13 @@ BeforeExecute
 
 SELECT
 	`t1`.`Id`,
-	`t1`.`Value`
+	`t1`.`Value`,
+	Concat('M', Cast(`t1`.`Id` as CHAR(11)))
 FROM
 	`InstanceClass` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `InstanceClass`
+DROP TABLE IF EXISTS `InstanceClass`
 

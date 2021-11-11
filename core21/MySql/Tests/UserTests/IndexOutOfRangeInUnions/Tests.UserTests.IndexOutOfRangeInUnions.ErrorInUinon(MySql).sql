@@ -77,15 +77,15 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `O3`
+DROP TABLE IF EXISTS `O3`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `O2`
+DROP TABLE IF EXISTS `O2`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `O1`
+DROP TABLE IF EXISTS `O1`
 

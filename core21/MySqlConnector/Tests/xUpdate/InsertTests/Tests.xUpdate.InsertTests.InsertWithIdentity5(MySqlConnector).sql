@@ -40,8 +40,8 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @FirstName_1 VarChar(5) -- String
-SET     @FirstName_1 = 'John0'
+DECLARE @FirstName VarChar(5) -- String
+SET     @FirstName = 'John0'
 DECLARE @take Int32
 SET     @take = 2
 
@@ -54,7 +54,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` = @FirstName_1 AND `p`.`LastName` = 'Shepard'
+	`p`.`FirstName` = @FirstName AND `p`.`LastName` = 'Shepard'
 LIMIT @take
 
 BeforeExecute
@@ -90,8 +90,8 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @FirstName_1 VarChar(5) -- String
-SET     @FirstName_1 = 'John1'
+DECLARE @FirstName VarChar(5) -- String
+SET     @FirstName = 'John1'
 DECLARE @take Int32
 SET     @take = 2
 
@@ -104,7 +104,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` = @FirstName_1 AND `p`.`LastName` = 'Shepard'
+	`p`.`FirstName` = @FirstName AND `p`.`LastName` = 'Shepard'
 LIMIT @take
 
 BeforeExecute

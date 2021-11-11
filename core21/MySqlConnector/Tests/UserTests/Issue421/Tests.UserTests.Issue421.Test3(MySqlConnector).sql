@@ -58,5 +58,5 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `BlobClass`
+DROP TABLE IF EXISTS `BlobClass`
 

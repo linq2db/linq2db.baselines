@@ -53,15 +53,15 @@ FROM
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `NestingC`
+DROP TABLE IF EXISTS `NestingC`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `NestingB`
+DROP TABLE IF EXISTS `NestingB`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `NestingA`
+DROP TABLE IF EXISTS `NestingA`
 

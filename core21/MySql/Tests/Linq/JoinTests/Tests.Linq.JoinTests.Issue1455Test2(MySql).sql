@@ -57,12 +57,8 @@ CREATE TABLE `Flat`
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @p1 VarChar(3) -- String
-SET     @p1 = '%C%'
-DECLARE @p2 VarChar(3) -- String
-SET     @p2 = '%C%'
-DECLARE @p3 VarChar(3) -- String
-SET     @p3 = '%C%'
+DECLARE @DeliveryCounterParty VarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
 
 SELECT
 	`al_1`.`alert`,
@@ -76,7 +72,7 @@ FROM
 			`al`.`CreationDate` as `alert_2`
 		FROM
 			`Alert` `al`
-				LEFT JOIN `AuditAlert` `au1` ON (`au1`.`AlertKey` IS NULL AND `al`.`AlertKey` IS NULL OR `au1`.`AlertKey` = `al`.`AlertKey`) AND (`au1`.`AlertCode` IS NULL AND `au1`.`AlertCode` IS NULL OR `au1`.`AlertCode` = `au1`.`AlertCode`)
+				LEFT JOIN `AuditAlert` `au1` ON (`au1`.`AlertKey` = `al`.`AlertKey` OR `au1`.`AlertKey` IS NULL AND `al`.`AlertKey` IS NULL) AND (`au1`.`AlertCode` = `au1`.`AlertCode` OR `au1`.`AlertCode` IS NULL AND `au1`.`AlertCode` IS NULL)
 		GROUP BY
 			`al`.`AlertKey`,
 			`al`.`AlertCode`,
@@ -85,7 +81,7 @@ FROM
 		LEFT JOIN `Trade` `trade1` ON `al_1`.`alert` = Cast(`trade1`.`DealId` as CHAR(11))
 		LEFT JOIN `Nomin` `nomin1` ON `al_1`.`alert` = Cast(`nomin1`.`CargoId` as CHAR(11))
 WHERE
-	((`nomin1`.`DeliveryCounterParty` LIKE @p1 OR `trade1`.`CounterParty` LIKE @p2) OR `al_1`.`alert_1` LIKE @p3)
+	((`nomin1`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR `trade1`.`CounterParty` LIKE @DeliveryCounterParty) OR `al_1`.`alert_1` LIKE @DeliveryCounterParty)
 GROUP BY
 	`al_1`.`alert`,
 	`al_1`.`alert_1`,
@@ -94,25 +90,25 @@ GROUP BY
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Flat`
+DROP TABLE IF EXISTS `Flat`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Nomin`
+DROP TABLE IF EXISTS `Nomin`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Trade`
+DROP TABLE IF EXISTS `Trade`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `AuditAlert`
+DROP TABLE IF EXISTS `AuditAlert`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Alert`
+DROP TABLE IF EXISTS `Alert`
 

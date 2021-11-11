@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `AsyncDataTable`
+DROP TABLE IF EXISTS `AsyncDataTable`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 (
 	`Id` INT NOT NULL,
 
@@ -33,17 +38,21 @@ DECLARE @Id Int32
 SET     @Id = 2
 
 SELECT
-	EXISTS(
-		SELECT
-			*
-		FROM
-			`AsyncDataTable` `c_1`
-		WHERE
-			`c_1`.`Id` = @Id
-	) as `c1`
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				`AsyncDataTable` `c_1`
+			WHERE
+				`c_1`.`Id` = @Id
+		)
+			THEN 1
+		ELSE 0
+	END as `c1`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `AsyncDataTable`
+DROP TABLE IF EXISTS `AsyncDataTable`
 

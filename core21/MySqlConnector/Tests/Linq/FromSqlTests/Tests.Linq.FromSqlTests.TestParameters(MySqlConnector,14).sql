@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `sample_class`
+DROP TABLE IF EXISTS `sample_class`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `sample_class`
 (
 	`id`    INT         NOT NULL,
 	`value` VARCHAR(50)     NULL
@@ -41,8 +46,8 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @startId Int64
 SET     @startId = 5
-DECLARE @p1 Int32
-SET     @p1 = 14
+DECLARE @p_1 Int32
+SET     @p_1 = 14
 
 SELECT
 	`c_1`.`value`,
@@ -51,7 +56,7 @@ FROM
 	(
 		SELECT * FROM
 		`sample_class`
-		where `id` >= @startId and `id` < @p1
+		where `id` >= @startId and `id` < @p_1
 	) `c_1`
 WHERE
 	`c_1`.`id` > 10
@@ -74,5 +79,5 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `sample_class`
+DROP TABLE IF EXISTS `sample_class`
 

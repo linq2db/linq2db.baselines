@@ -73,5 +73,5 @@ ORDER BY
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `CteChild`
+DROP TABLE IF EXISTS `CteChild`
 

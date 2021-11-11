@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `OrderByDistinctData`
+DROP TABLE IF EXISTS `OrderByDistinctData`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
 	`Id`            INT          NOT NULL,
 	`DuplicateData` VARCHAR(255)     NULL,
@@ -54,7 +59,7 @@ SELECT
 		FROM
 			`OrderByDistinctData` `s`
 		WHERE
-			(`s`.`DuplicateData` IS NULL AND `t`.`DuplicateData` IS NULL OR `s`.`DuplicateData` = `t`.`DuplicateData`)
+			(`s`.`DuplicateData` = `t`.`DuplicateData` OR `s`.`DuplicateData` IS NULL AND `t`.`DuplicateData` IS NULL)
 	)
 FROM
 	(
@@ -71,5 +76,5 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `OrderByDistinctData`
+DROP TABLE IF EXISTS `OrderByDistinctData`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],
@@ -20,18 +20,18 @@ BeforeExecute
 
 SELECT
 	Sum(`t1`.`MoneyValue`),
-	`t1`.`c2`,
-	`t1`.`c1`
+	`t1`.`Key_2`,
+	`t1`.`Key_1`
 FROM
 	(
 		SELECT
-			Extract(month from `selectParam`.`DateTimeValue`) as `c1`,
-			Extract(year from `selectParam`.`DateTimeValue`) as `c2`,
+			Extract(month from `selectParam`.`DateTimeValue`) as `Key_1`,
+			Extract(year from `selectParam`.`DateTimeValue`) as `Key_2`,
 			`selectParam`.`MoneyValue`
 		FROM
 			`LinqDataTypes` `selectParam`
 	) `t1`
 GROUP BY
-	`t1`.`c1`,
-	`t1`.`c2`
+	`t1`.`Key_1`,
+	`t1`.`Key_2`
 

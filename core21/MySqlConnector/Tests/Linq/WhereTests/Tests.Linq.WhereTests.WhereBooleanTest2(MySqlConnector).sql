@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `WhereCases`
+DROP TABLE IF EXISTS `WhereCases`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `WhereCases`
 (
 	`Id`                INT     NOT NULL,
 	`BoolValue`         BOOLEAN NOT NULL,
@@ -221,7 +226,7 @@ SELECT
 FROM
 	`WhereCases` `t`
 WHERE
-	(`t`.`NullableBoolValue` = 1 AND `t`.`NullableBoolValue` IS NOT NULL) AND
+	`t`.`NullableBoolValue` = 1 AND `t`.`NullableBoolValue` IS NOT NULL AND
 	`t`.`Id` > 0
 
 BeforeExecute
@@ -234,7 +239,7 @@ SELECT
 FROM
 	`WhereCases` `t`
 WHERE
-	NOT ((`t`.`NullableBoolValue` = 1 AND `t`.`NullableBoolValue` IS NOT NULL) AND `t`.`Id` > 0)
+	NOT (`t`.`NullableBoolValue` = 1 AND `t`.`NullableBoolValue` IS NOT NULL AND `t`.`Id` > 0)
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -392,7 +397,9 @@ SELECT
 FROM
 	`WhereCases` `t`
 WHERE
-	`t`.`BoolValue` = 0 AND (`t`.`NullableBoolValue` = 0 AND `t`.`NullableBoolValue` IS NOT NULL) AND
+	`t`.`BoolValue` = 0 AND
+	`t`.`NullableBoolValue` = 0 AND
+	`t`.`NullableBoolValue` IS NOT NULL AND
 	`t`.`Id` > 0
 
 BeforeExecute
@@ -405,7 +412,7 @@ SELECT
 FROM
 	`WhereCases` `t`
 WHERE
-	NOT (`t`.`BoolValue` = 0 AND (`t`.`NullableBoolValue` = 0 AND `t`.`NullableBoolValue` IS NOT NULL) AND `t`.`Id` > 0)
+	NOT (`t`.`BoolValue` = 0 AND `t`.`NullableBoolValue` = 0 AND `t`.`NullableBoolValue` IS NOT NULL AND `t`.`Id` > 0)
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -417,7 +424,7 @@ SELECT
 FROM
 	`WhereCases` `t`
 WHERE
-	NOT (`t`.`BoolValue` = 0 AND (`t`.`NullableBoolValue` = 0 AND `t`.`NullableBoolValue` IS NOT NULL)) AND
+	NOT (`t`.`BoolValue` = 0 AND `t`.`NullableBoolValue` = 0 AND `t`.`NullableBoolValue` IS NOT NULL) AND
 	`t`.`Id` > 0
 
 BeforeExecute
@@ -430,10 +437,10 @@ SELECT
 FROM
 	`WhereCases` `t`
 WHERE
-	NOT (NOT (`t`.`BoolValue` = 0 AND (`t`.`NullableBoolValue` = 0 AND `t`.`NullableBoolValue` IS NOT NULL)) AND `t`.`Id` > 0)
+	NOT (NOT (`t`.`BoolValue` = 0 AND `t`.`NullableBoolValue` = 0 AND `t`.`NullableBoolValue` IS NOT NULL) AND `t`.`Id` > 0)
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `WhereCases`
+DROP TABLE IF EXISTS `WhereCases`
 

@@ -2,31 +2,31 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`c1`,
-	`t1`.`ChildID`
+	`t1`.`ParentID`,
+	`t1`.`Key_1`
 FROM
 	(
 		SELECT
-			`selectParam`.`ParentID` + 1 as `c1`,
-			`selectParam`.`ChildID`
+			`selectParam`.`ParentID` + 1 as `ParentID`,
+			`selectParam`.`ChildID` as `Key_1`
 		FROM
 			`GrandChild` `selectParam`
 	) `t1`
 GROUP BY
-	`t1`.`c1`,
-	`t1`.`ChildID`
+	`t1`.`ParentID`,
+	`t1`.`Key_1`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2
-DECLARE @ChildID_1 Int32
-SET     @ChildID_1 = 11
+DECLARE @ChildID Int32
+SET     @ChildID = 11
 
 SELECT
 	`elemParam`.`ChildID`
 FROM
 	`GrandChild` `elemParam`
 WHERE
-	(`elemParam`.`ParentID` + 1 = @ParentID AND `elemParam`.`ChildID` = @ChildID_1)
+	`elemParam`.`ParentID` + 1 = @ParentID AND `elemParam`.`ChildID` = @ChildID
 
