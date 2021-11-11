@@ -5,13 +5,14 @@ SELECT
 	Max([t1].[cnt])
 FROM
 	[Parent] [p]
-		OUTER APPLY (
+		LEFT JOIN (
 			SELECT
-				Count(*) as [cnt]
+				Count(*) as [cnt],
+				[a_Parent].[ParentID]
 			FROM
 				[Child] [c_1]
 					LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
-			WHERE
-				[a_Parent].[ParentID] = [p].[ParentID]
-		) [t1]
+			GROUP BY
+				[a_Parent].[ParentID]
+		) [t1] ON [t1].[ParentID] = [p].[ParentID]
 
