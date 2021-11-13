@@ -17,35 +17,35 @@ CREATE TABLE IF NOT EXISTS "Transactions"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @p1 TimestampTZ -- DateTimeOffset
-SET     @p1 = '2020-02-29T17:54:55.1231234+00:40'
+SET     @p1 = '2020-02-29T17:14:55.1231234+00:00'
 DECLARE @p2 TimestampTZ -- DateTimeOffset
-SET     @p2 = '2021-02-28T17:54:55.1231234+00:40'
+SET     @p2 = '2021-02-28T17:14:55.1231234+00:00'
 DECLARE @p3 TimestampTZ -- DateTimeOffset
-SET     @p3 = '2019-02-28T17:54:55.1231234+00:40'
+SET     @p3 = '2019-02-28T17:14:55.1231234+00:00'
 DECLARE @p4 TimestampTZ -- DateTimeOffset
-SET     @p4 = '2020-03-29T17:54:55.1231234+00:40'
+SET     @p4 = '2020-03-29T17:14:55.1231234+00:00'
 DECLARE @p5 TimestampTZ -- DateTimeOffset
-SET     @p5 = '2020-01-29T17:54:55.1231234+00:40'
+SET     @p5 = '2020-01-29T17:14:55.1231234+00:00'
 DECLARE @p6 TimestampTZ -- DateTimeOffset
-SET     @p6 = '2020-03-01T17:54:55.1231234+00:40'
+SET     @p6 = '2020-03-01T17:14:55.1231234+00:00'
 DECLARE @p7 TimestampTZ -- DateTimeOffset
-SET     @p7 = '2020-02-28T17:54:55.1231234+00:40'
+SET     @p7 = '2020-02-28T17:14:55.1231234+00:00'
 DECLARE @p8 TimestampTZ -- DateTimeOffset
-SET     @p8 = '2020-02-29T18:54:55.1231234+00:40'
+SET     @p8 = '2020-02-29T18:14:55.1231234+00:00'
 DECLARE @p9 TimestampTZ -- DateTimeOffset
-SET     @p9 = '2020-02-29T16:54:55.1231234+00:40'
+SET     @p9 = '2020-02-29T16:14:55.1231234+00:00'
 DECLARE @p10 TimestampTZ -- DateTimeOffset
-SET     @p10 = '2020-02-29T17:55:55.1231234+00:40'
+SET     @p10 = '2020-02-29T17:15:55.1231234+00:00'
 DECLARE @p11 TimestampTZ -- DateTimeOffset
-SET     @p11 = '2020-02-29T17:53:55.1231234+00:40'
+SET     @p11 = '2020-02-29T17:13:55.1231234+00:00'
 DECLARE @p12 TimestampTZ -- DateTimeOffset
-SET     @p12 = '2020-02-29T17:54:56.1231234+00:40'
+SET     @p12 = '2020-02-29T17:14:56.1231234+00:00'
 DECLARE @p13 TimestampTZ -- DateTimeOffset
-SET     @p13 = '2020-02-29T17:54:54.1231234+00:40'
+SET     @p13 = '2020-02-29T17:14:54.1231234+00:00'
 DECLARE @p14 TimestampTZ -- DateTimeOffset
-SET     @p14 = '2020-02-29T17:54:55.1241234+00:40'
+SET     @p14 = '2020-02-29T17:14:55.1241234+00:00'
 DECLARE @p15 TimestampTZ -- DateTimeOffset
-SET     @p15 = '2020-02-29T17:54:55.1221234+00:40'
+SET     @p15 = '2020-02-29T17:14:55.1221234+00:00'
 
 INSERT INTO "Transactions"
 (
@@ -75,7 +75,7 @@ DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 1
 
 SELECT
-	t."TransactionDate" + :p_1 * Interval '1 Hour'
+	Cast(Floor(Extract(hour from (t."TransactionDate" + :p_1 * Interval '1 Hour'))) as int)
 FROM
 	"Transactions" t
 
