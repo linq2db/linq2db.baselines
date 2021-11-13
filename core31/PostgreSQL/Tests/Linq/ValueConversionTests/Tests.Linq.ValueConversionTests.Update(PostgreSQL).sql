@@ -54,9 +54,9 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @Value2 Text(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
-DECLARE @EnumWithNull Text -- AnsiString
+DECLARE @EnumWithNull Text -- String
 SET     @EnumWithNull = NULL
-DECLARE @EnumWithNullDeclarative Text -- AnsiString
+DECLARE @EnumWithNullDeclarative Text -- String
 SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
@@ -99,15 +99,15 @@ DECLARE @Value2 Text(22) -- String
 SET     @Value2 = '[{"Value":"updated2"}]'
 DECLARE @Enum Text(6) -- String
 SET     @Enum = 'Value1'
-DECLARE @EnumNullable Text -- AnsiString
+DECLARE @EnumNullable Text -- String
 SET     @EnumNullable = NULL
-DECLARE @EnumWithNull Text(6) -- AnsiString
+DECLARE @EnumWithNull Text(6) -- String
 SET     @EnumWithNull = 'Value2'
-DECLARE @EnumWithNullDeclarative Text(6) -- AnsiString
+DECLARE @EnumWithNullDeclarative Text(6) -- String
 SET     @EnumWithNullDeclarative = 'Value2'
-DECLARE @BoolValue Text -- AnsiString
+DECLARE @BoolValue Text -- String
 SET     @BoolValue = 'N'
-DECLARE @AnotherBoolValue Text -- AnsiString
+DECLARE @AnotherBoolValue Text -- String
 SET     @AnotherBoolValue = 'F'
 DECLARE @DateTimeNullable Timestamp -- DateTime
 SET     @DateTimeNullable = NULL
@@ -159,15 +159,15 @@ DECLARE @Value2 Text -- String
 SET     @Value2 = NULL
 DECLARE @Enum Text(6) -- String
 SET     @Enum = 'Value1'
-DECLARE @EnumNullable Text -- AnsiString
+DECLARE @EnumNullable Text -- String
 SET     @EnumNullable = NULL
-DECLARE @EnumWithNull Text -- AnsiString
+DECLARE @EnumWithNull Text -- String
 SET     @EnumWithNull = NULL
-DECLARE @EnumWithNullDeclarative Text -- AnsiString
+DECLARE @EnumWithNullDeclarative Text -- String
 SET     @EnumWithNullDeclarative = NULL
-DECLARE @BoolValue Text -- AnsiString
+DECLARE @BoolValue Text -- String
 SET     @BoolValue = 'N'
-DECLARE @AnotherBoolValue Text -- AnsiString
+DECLARE @AnotherBoolValue Text -- String
 SET     @AnotherBoolValue = 'F'
 DECLARE @DateTimeNullable Timestamp -- DateTime
 SET     @DateTimeNullable = NULL

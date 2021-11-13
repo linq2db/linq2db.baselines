@@ -27,9 +27,9 @@ DECLARE @Enum Text(6) -- String
 SET     @Enum = 'Value1'
 DECLARE @Value2 Text(22) -- String
 SET     @Value2 = '[{"Value":"inserted"}]'
-DECLARE @BoolValue Text -- AnsiString
+DECLARE @BoolValue Text -- String
 SET     @BoolValue = 'Y'
-DECLARE @AnotherBoolValue Text -- AnsiString
+DECLARE @AnotherBoolValue Text -- String
 SET     @AnotherBoolValue = 'T'
 
 INSERT INTO "ValueConversion"
@@ -83,9 +83,9 @@ DECLARE @Value2 Text -- String
 SET     @Value2 = NULL
 DECLARE @Enum Text(6) -- String
 SET     @Enum = 'Value2'
-DECLARE @BoolValue Text -- AnsiString
+DECLARE @BoolValue Text -- String
 SET     @BoolValue = 'N'
-DECLARE @AnotherBoolValue Text -- AnsiString
+DECLARE @AnotherBoolValue Text -- String
 SET     @AnotherBoolValue = 'F'
 
 INSERT INTO "ValueConversion"
@@ -139,15 +139,15 @@ DECLARE @Value2 Text(23) -- String
 SET     @Value2 = '[{"Value":"inserted3"}]'
 DECLARE @Enum Text(6) -- String
 SET     @Enum = 'Value3'
-DECLARE @EnumNullable Text -- AnsiString
+DECLARE @EnumNullable Text -- String
 SET     @EnumNullable = NULL
-DECLARE @EnumWithNull Text(6) -- AnsiString
+DECLARE @EnumWithNull Text(6) -- String
 SET     @EnumWithNull = 'Value1'
-DECLARE @EnumWithNullDeclarative Text(6) -- AnsiString
+DECLARE @EnumWithNullDeclarative Text(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
-DECLARE @BoolValue Text -- AnsiString
+DECLARE @BoolValue Text -- String
 SET     @BoolValue = 'Y'
-DECLARE @AnotherBoolValue Text -- AnsiString
+DECLARE @AnotherBoolValue Text -- String
 SET     @AnotherBoolValue = 'T'
 DECLARE @DateTimeNullable Timestamp -- DateTime
 SET     @DateTimeNullable = NULL

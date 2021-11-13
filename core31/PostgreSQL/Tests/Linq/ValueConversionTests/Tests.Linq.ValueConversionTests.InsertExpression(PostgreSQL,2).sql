@@ -27,9 +27,9 @@ DECLARE @Enum Text(6) -- String
 SET     @Enum = 'Value1'
 DECLARE @inserted Text(22) -- String
 SET     @inserted = '[{"Value":"inserted"}]'
-DECLARE @boolValue Text -- AnsiString
+DECLARE @boolValue Text -- String
 SET     @boolValue = 'Y'
-DECLARE @boolValue_1 Text -- AnsiString
+DECLARE @boolValue_1 Text -- String
 SET     @boolValue_1 = 'T'
 
 INSERT INTO "ValueConversion"

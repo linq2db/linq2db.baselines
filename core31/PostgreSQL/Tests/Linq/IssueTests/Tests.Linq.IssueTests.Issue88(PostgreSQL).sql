@@ -28,7 +28,7 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @gender Text -- StringFixedLength
+DECLARE @gender Text -- String
 SET     @gender = 'M'
 
 SELECT
@@ -44,7 +44,7 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @gender Text -- StringFixedLength
+DECLARE @gender Text -- String
 SET     @gender = 'M'
 
 SELECT
