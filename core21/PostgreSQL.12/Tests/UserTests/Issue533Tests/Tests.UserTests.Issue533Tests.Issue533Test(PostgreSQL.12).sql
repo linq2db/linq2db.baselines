@@ -15,11 +15,11 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
-DECLARE @FirstName Text(12) -- String
+DECLARE @FirstName Varchar(12) -- String
 SET     @FirstName = 'FirstName533'
-DECLARE @MiddleName Text -- String
+DECLARE @MiddleName Varchar -- String
 SET     @MiddleName = NULL
-DECLARE @LastName Text(11) -- String
+DECLARE @LastName Varchar(11) -- String
 SET     @LastName = 'LastName533'
 
 INSERT INTO "Person"
