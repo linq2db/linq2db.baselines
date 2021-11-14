@@ -21,15 +21,15 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value1 Text(2) -- String
+DECLARE @Value1 Varchar(2) -- String
 SET     @Value1 = '[]'
-DECLARE @Enum Text(6) -- String
+DECLARE @Enum Varchar(6) -- String
 SET     @Enum = 'Value1'
-DECLARE @Value2 Text(22) -- String
+DECLARE @Value2 Varchar(22) -- String
 SET     @Value2 = '[{"Value":"inserted"}]'
-DECLARE @BoolValue Text -- String
+DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'Y'
-DECLARE @AnotherBoolValue Text -- String
+DECLARE @AnotherBoolValue Varchar -- String
 SET     @AnotherBoolValue = 'T'
 
 INSERT INTO "ValueConversion"
@@ -77,15 +77,15 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value1 Text -- String
+DECLARE @Value1 Varchar -- String
 SET     @Value1 = NULL
-DECLARE @Value2 Text -- String
+DECLARE @Value2 Varchar -- String
 SET     @Value2 = NULL
-DECLARE @Enum Text(6) -- String
+DECLARE @Enum Varchar(6) -- String
 SET     @Enum = 'Value2'
-DECLARE @BoolValue Text -- String
+DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'N'
-DECLARE @AnotherBoolValue Text -- String
+DECLARE @AnotherBoolValue Varchar -- String
 SET     @AnotherBoolValue = 'F'
 
 INSERT INTO "ValueConversion"
@@ -133,21 +133,21 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Value1 Text(21) -- String
+DECLARE @Value1 Varchar(21) -- String
 SET     @Value1 = '{"some":"inserted3}"}'
-DECLARE @Value2 Text(23) -- String
+DECLARE @Value2 Varchar(23) -- String
 SET     @Value2 = '[{"Value":"inserted3"}]'
-DECLARE @Enum Text(6) -- String
+DECLARE @Enum Varchar(6) -- String
 SET     @Enum = 'Value3'
-DECLARE @EnumNullable Text -- String
+DECLARE @EnumNullable Varchar -- String
 SET     @EnumNullable = NULL
-DECLARE @EnumWithNull Text(6) -- String
+DECLARE @EnumWithNull Varchar(6) -- String
 SET     @EnumWithNull = 'Value1'
-DECLARE @EnumWithNullDeclarative Text(6) -- String
+DECLARE @EnumWithNullDeclarative Varchar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value1'
-DECLARE @BoolValue Text -- String
+DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'Y'
-DECLARE @AnotherBoolValue Text -- String
+DECLARE @AnotherBoolValue Varchar -- String
 SET     @AnotherBoolValue = 'T'
 DECLARE @DateTimeNullable Timestamp -- DateTime
 SET     @DateTimeNullable = NULL

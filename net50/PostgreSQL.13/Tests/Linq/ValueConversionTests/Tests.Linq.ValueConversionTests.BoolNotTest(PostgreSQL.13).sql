@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Text -- String
+DECLARE @BoolValue_1 Varchar -- String
 SET     @BoolValue_1 = 'N'
 
 SELECT
