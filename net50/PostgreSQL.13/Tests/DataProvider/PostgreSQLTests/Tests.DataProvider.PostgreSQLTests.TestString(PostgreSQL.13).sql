@@ -30,14 +30,7 @@ SELECT Cast(NULL    as text)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text(3) -- AnsiStringFixedLength
-SET     @p = '123'
-
-SELECT :p
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text(3) -- AnsiString
+DECLARE @p Text(3) -- String
 SET     @p = '123'
 
 SELECT :p
@@ -51,7 +44,14 @@ SELECT :p
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text(3) -- StringFixedLength
+DECLARE @p Text(3) -- String
+SET     @p = '123'
+
+SELECT :p
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @p Text(3) -- String
 SET     @p = '123'
 
 SELECT :p
