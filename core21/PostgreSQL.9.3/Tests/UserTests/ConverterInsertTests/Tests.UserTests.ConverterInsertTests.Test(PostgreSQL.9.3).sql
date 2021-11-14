@@ -5,7 +5,7 @@ ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @FirstName Text(3) -- String
+DECLARE @FirstName Varchar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Text(3) -- String
 SET     @LastName = '456'
@@ -73,7 +73,7 @@ BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
-DECLARE @FirstName Text(3) -- String
+DECLARE @FirstName Varchar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Text(3) -- String
 SET     @LastName = '456'

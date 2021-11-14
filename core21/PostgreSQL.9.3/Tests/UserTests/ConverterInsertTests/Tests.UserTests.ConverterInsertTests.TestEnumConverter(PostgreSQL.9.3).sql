@@ -5,13 +5,13 @@ ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @FirstName Text(3) -- String
+DECLARE @FirstName Varchar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Text(3) -- String
 SET     @LastName = '456'
 DECLARE @MiddleName Text(3) -- String
 SET     @MiddleName = '789'
-DECLARE @Gender Text(1) -- String
+DECLARE @Gender Varchar(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO "Person"
