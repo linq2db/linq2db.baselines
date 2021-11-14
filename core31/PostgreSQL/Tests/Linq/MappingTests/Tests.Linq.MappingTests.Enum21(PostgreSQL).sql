@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @gender Text(1) -- String
+DECLARE @gender Char(1) -- String
 SET     @gender = 'M'
 
 SELECT

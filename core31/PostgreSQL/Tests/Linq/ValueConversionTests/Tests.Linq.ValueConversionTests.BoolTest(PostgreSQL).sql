@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Text -- String
+DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'Y'
 
 SELECT

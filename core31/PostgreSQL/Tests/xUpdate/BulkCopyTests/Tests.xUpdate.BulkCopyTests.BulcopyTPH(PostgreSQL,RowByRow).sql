@@ -61,7 +61,7 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @NullableBool Text(1) -- String
+DECLARE @NullableBool Varchar(1) -- String
 SET     @NullableBool = 'Y'
 DECLARE @Value3 Text(4) -- String
 SET     @Value3 = 'Str3'

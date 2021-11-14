@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @fm Text(1) -- String
+DECLARE @fm Char(1) -- String
 SET     @fm = 'F'
 
 SELECT

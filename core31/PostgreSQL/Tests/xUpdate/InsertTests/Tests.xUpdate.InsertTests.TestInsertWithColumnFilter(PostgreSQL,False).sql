@@ -4,7 +4,7 @@ DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
-DECLARE @Gender Text(1) -- String
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO "Person"

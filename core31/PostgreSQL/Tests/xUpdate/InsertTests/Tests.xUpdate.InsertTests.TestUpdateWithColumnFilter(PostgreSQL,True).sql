@@ -11,7 +11,7 @@ DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName Text(15) -- String
 SET     @MiddleName = 'som middle name'
-DECLARE @Gender Text(1) -- String
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO "Person"
@@ -56,7 +56,7 @@ DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName Text(12) -- String
 SET     @MiddleName = 'updated name'
-DECLARE @Gender Text(1) -- String
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @ID Integer -- Int32
 SET     @ID = 5

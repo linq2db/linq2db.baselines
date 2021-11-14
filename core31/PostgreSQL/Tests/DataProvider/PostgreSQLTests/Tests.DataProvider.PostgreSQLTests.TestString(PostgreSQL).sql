@@ -30,7 +30,14 @@ SELECT Cast(NULL    as text)
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text(3) -- String
+DECLARE @p Char(3) -- String
+SET     @p = '123'
+
+SELECT :p
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @p Varchar(3) -- String
 SET     @p = '123'
 
 SELECT :p
@@ -44,7 +51,14 @@ SELECT :p
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text(3) -- String
+DECLARE @p Char(3) -- String
+SET     @p = '123'
+
+SELECT :p
+
+BeforeExecute
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @p Varchar(3) -- String
 SET     @p = '123'
 
 SELECT :p
@@ -58,28 +72,14 @@ SELECT :p
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text(3) -- String
+DECLARE @p Varchar(3) -- String
 SET     @p = '123'
 
 SELECT :p
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text(3) -- String
-SET     @p = '123'
-
-SELECT :p
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text(3) -- String
-SET     @p = '123'
-
-SELECT :p
-
-BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text -- String
+DECLARE @p Varchar -- String
 SET     @p = NULL
 
 SELECT :p

@@ -31,13 +31,13 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @str_4 Text(5) -- String
+DECLARE @str_4 Char(5) -- String
 SET     @str_4 = 'some%'
-DECLARE @str_5 Text(5) -- String
+DECLARE @str_5 Char(5) -- String
 SET     @str_5 = 'some%'
-DECLARE @str_6 Text(5) -- String
+DECLARE @str_6 Varchar(5) -- String
 SET     @str_6 = 'some%'
-DECLARE @str_7 Text(5) -- String
+DECLARE @str_7 Varchar(5) -- String
 SET     @str_7 = 'some%'
 
 SELECT
