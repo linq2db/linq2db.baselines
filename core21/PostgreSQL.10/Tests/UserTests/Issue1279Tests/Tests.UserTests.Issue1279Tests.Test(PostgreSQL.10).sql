@@ -11,7 +11,7 @@ CREATE TABLE "Issue1279Table"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @CharFld Text -- StringFixedLength
+DECLARE @CharFld Char -- String
 SET     @CharFld = 'P'
 
 INSERT INTO "Issue1279Table"
