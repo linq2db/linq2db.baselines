@@ -12,7 +12,7 @@ DECLARE @FirstName Text(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Text(7) -- String
 SET     @LastName = 'Shepard'
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO "Person"
