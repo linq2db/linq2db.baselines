@@ -52,9 +52,9 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Text -- AnsiString
+DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'Y'
-DECLARE @BoolValue_2 Text -- AnsiString
+DECLARE @BoolValue_2 Varchar -- String
 SET     @BoolValue_2 = 'Y'
 
 SELECT
