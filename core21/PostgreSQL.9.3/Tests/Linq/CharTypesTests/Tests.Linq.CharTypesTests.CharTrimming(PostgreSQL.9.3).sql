@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -22,7 +22,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = '	'
 
 INSERT INTO "AllTypes"
@@ -36,7 +36,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = '
 '
 
@@ -51,7 +51,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ''
 
 INSERT INTO "AllTypes"
@@ -65,7 +65,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ''
 
 INSERT INTO "AllTypes"
@@ -79,7 +79,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ''
 
 INSERT INTO "AllTypes"
@@ -93,7 +93,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -107,7 +107,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -121,7 +121,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -135,7 +135,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -149,7 +149,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -163,7 +163,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -177,7 +177,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -191,7 +191,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -205,7 +205,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -219,7 +219,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -233,7 +233,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -247,7 +247,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = ' '
 
 INSERT INTO "AllTypes"
@@ -261,7 +261,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = '　'
 
 INSERT INTO "AllTypes"
@@ -275,7 +275,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @NChar_1 Text -- StringFixedLength
+DECLARE @NChar_1 Char -- String
 SET     @NChar_1 = NULL
 
 INSERT INTO "AllTypes"

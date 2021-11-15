@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
-DECLARE @fm Text(1) -- AnsiStringFixedLength
+DECLARE @fm Char(1) -- String
 SET     @fm = 'F'
 
 SELECT
