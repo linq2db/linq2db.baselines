@@ -12,9 +12,9 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Name Text(11) -- String
 SET     @Name = 'NotVerified'
-DECLARE @BoolValue Text -- AnsiStringFixedLength
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @GuidValue Text(36) -- AnsiString
+DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 INSERT INTO "TypeConvertTable"
@@ -34,9 +34,9 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Name Text(8) -- String
 SET     @Name = 'Verified'
-DECLARE @BoolValue Text -- AnsiStringFixedLength
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
-DECLARE @GuidValue Text(36) -- AnsiString
+DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 INSERT INTO "TypeConvertTable"
@@ -74,7 +74,7 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @GuidValue Text(36) -- AnsiString
+DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
@@ -86,7 +86,7 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Text -- AnsiStringFixedLength
+DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -103,7 +103,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Text -- AnsiStringFixedLength
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -120,7 +120,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Text -- AnsiStringFixedLength
+DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -137,7 +137,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Text -- AnsiStringFixedLength
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -154,7 +154,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Text -- AnsiStringFixedLength
+DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -171,7 +171,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Text -- AnsiStringFixedLength
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -188,7 +188,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Text -- AnsiStringFixedLength
+DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -205,7 +205,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Text -- AnsiStringFixedLength
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -222,7 +222,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Text -- AnsiStringFixedLength
+DECLARE @BoolValue_1 Char -- String
 SET     @BoolValue_1 = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -239,7 +239,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Text -- AnsiStringFixedLength
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -256,7 +256,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @GuidValue Text(36) -- AnsiString
+DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -273,7 +273,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @GuidValue Text(36) -- AnsiString
+DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @take Integer -- Int32
 SET     @take = 1

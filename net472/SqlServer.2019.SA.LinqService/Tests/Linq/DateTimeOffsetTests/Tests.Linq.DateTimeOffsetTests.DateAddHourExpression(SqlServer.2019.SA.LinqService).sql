@@ -489,7 +489,7 @@ DECLARE @p_1 Int -- Int32
 SET     @p_1 = 1
 
 SELECT
-	DateAdd(hour, @p_1, [t].[TransactionDate])
+	DatePart(hour, DateAdd(hour, @p_1, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

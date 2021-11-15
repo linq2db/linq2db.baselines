@@ -2,7 +2,7 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t."DateTimeValue" + 22D * INTERVAL '1' HOUR
+	To_Number(To_Char((t."DateTimeValue" + 22D * INTERVAL '1' HOUR), 'HH24'))
 FROM
 	"LinqDataTypes" t
 

@@ -4,7 +4,7 @@ DECLARE @p_1 Integer(4) -- Int32
 SET     @p_1 = 22
 
 SELECT
-	"t"."DateTimeValue" + @p_1 Hour
+	To_Number(To_Char(("t"."DateTimeValue" + @p_1 Hour), 'HH24'))
 FROM
 	"LinqDataTypes" "t"
 

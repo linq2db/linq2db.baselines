@@ -29,7 +29,7 @@ DECLARE @LastName Text(6) -- String
 SET     @LastName = 'last 1'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'F'
 
 INSERT INTO "Person"
@@ -57,7 +57,7 @@ DECLARE @LastName Text(6) -- String
 SET     @LastName = 'last 2'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO "Person"
@@ -85,7 +85,7 @@ DECLARE @LastName Text(6) -- String
 SET     @LastName = 'last 3'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'O'
 
 INSERT INTO "Person"
@@ -113,7 +113,7 @@ DECLARE @LastName Text(6) -- String
 SET     @LastName = 'last 4'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'U'
 
 INSERT INTO "Person"
@@ -141,7 +141,7 @@ DECLARE @LastName Text(6) -- String
 SET     @LastName = 'last 5'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'F'
 
 INSERT INTO "Person"
@@ -169,7 +169,7 @@ DECLARE @LastName Text(6) -- String
 SET     @LastName = 'last 6'
 DECLARE @MiddleName Text -- String
 SET     @MiddleName = NULL
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO "Person"

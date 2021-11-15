@@ -11,7 +11,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @StringConverted Text(4) -- String
+DECLARE @StringConverted Varchar(4) -- String
 SET     @StringConverted = 'null'
 
 INSERT INTO "CreateTableTypes"
@@ -29,7 +29,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @StringConverted Text(53) -- String
+DECLARE @StringConverted Varchar(53) -- String
 SET     @StringConverted = '[{"Item1":1,"Item2":"one"},{"Item1":2,"Item2":"two"}]'
 
 INSERT INTO "CreateTableTypes"
