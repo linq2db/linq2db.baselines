@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
-DECLARE @testedList Text(20) -- String
+DECLARE @testedList Varchar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
