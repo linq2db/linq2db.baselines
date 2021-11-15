@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @gender Text(1) -- AnsiStringFixedLength
+DECLARE @gender Char(1) -- String
 SET     @gender = 'M'
 
 SELECT
