@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @testedList Text(20) -- String
+DECLARE @testedList Varchar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
@@ -66,7 +66,7 @@ GROUP BY
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
-DECLARE @Value2 Text(20) -- String
+DECLARE @Value2 Varchar(20) -- String
 SET     @Value2 = '[{"Value":"Value1"}]'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
