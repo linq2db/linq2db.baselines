@@ -35,25 +35,18 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	[t1].[NumeroInterno],
-	[t1].[StatusValor],
-	[t1].[DescricaoStatus]
+	[doSap].[DocEntry],
+	IIF([doSap].[DocStatus] = N'O', N'Aberto', N'Fechado'),
+	N'Manual/Externo'
 FROM
-	(
-		SELECT
-			[doSap].[DocEntry] as [NumeroInterno],
-			IIF([doSap].[DocStatus] = N'O', N'Aberto', N'Fechado') as [StatusValor],
-			N'Manual/Externo' as [DescricaoStatus]
-		FROM
-			[O1] [doSap]
-		UNION
-		SELECT
-			[doSap_1].[DocEntry] as [NumeroInterno],
-			IIF([doSap_1].[DocStatus] = N'O', N'Aberto', N'Fechado') as [StatusValor],
-			N'Manual/Externo' as [DescricaoStatus]
-		FROM
-			[O2] [doSap_1]
-	) [t1]
+	[O1] [doSap]
+UNION
+SELECT
+	[doSap_1].[DocEntry],
+	IIF([doSap_1].[DocStatus] = N'O', N'Aberto', N'Fechado'),
+	N'Manual/Externo'
+FROM
+	[O2] [doSap_1]
 UNION
 SELECT
 	[doSap_2].[DocEntry],
