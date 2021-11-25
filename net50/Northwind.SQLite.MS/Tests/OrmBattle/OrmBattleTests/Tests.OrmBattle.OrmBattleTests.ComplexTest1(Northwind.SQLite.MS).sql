@@ -101,8 +101,8 @@ FROM
 			[detail].[ProductID],
 			[supplier].[SupplierID]
 		FROM
-			[Suppliers] [supplier],
-			[Products] [detail]
+			[Suppliers] [supplier]
+				CROSS JOIN [Products] [detail]
 	) [key_data_result]
 		INNER JOIN [Products] [__p] ON [__p].[ProductID] = [key_data_result].[ProductID] AND [a_Supplier].[SupplierID] = [key_data_result].[SupplierID]
 			LEFT JOIN [Suppliers] [a_Supplier] ON [__p].[SupplierID] = [a_Supplier].[SupplierID]
@@ -114,8 +114,8 @@ SELECT
 	[supplier].[SupplierID],
 	[detail].[ProductID]
 FROM
-	[Suppliers] [supplier],
-	[Products] [detail]
+	[Suppliers] [supplier]
+		CROSS JOIN [Products] [detail]
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
