@@ -2,19 +2,12 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Sum("t1"."MoneyValue"),
-	"t1"."Key_2",
-	"t1"."Key_1"
+	Sum("selectParam"."MoneyValue"),
+	To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')),
+	To_Number(To_Char("selectParam"."DateTimeValue", 'MM'))
 FROM
-	(
-		SELECT
-			To_Number(To_Char("selectParam"."DateTimeValue", 'MM')) as "Key_1",
-			To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')) as "Key_2",
-			"selectParam"."MoneyValue"
-		FROM
-			"LinqDataTypes" "selectParam"
-	) "t1"
+	"LinqDataTypes" "selectParam"
 GROUP BY
-	"t1"."Key_1",
-	"t1"."Key_2"
+	To_Number(To_Char("selectParam"."DateTimeValue", 'MM')),
+	To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY'))
 

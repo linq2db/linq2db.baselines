@@ -17,14 +17,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."c1"
+	RTrim(Char(SmallInt("t".ID)))
 FROM
-	(
-		SELECT
-			RTrim(Char(SmallInt("t".ID))) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	CHARACTER_LENGTH("p"."c1",CODEUNITS32) > 0
+	CHARACTER_LENGTH(RTrim(Char(SmallInt("t".ID))),CODEUNITS32) > 0
 

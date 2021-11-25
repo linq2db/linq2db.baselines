@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."c1"
+	Floor(Power(Float("p"."MoneyValue"), 3))
 FROM
-	(
-		SELECT
-			Floor(Power(Float("p"."MoneyValue"), 3)) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "p"
 WHERE
-	("t"."c1" <> 0 OR "t"."c1" IS NULL)
+	(Floor(Power(Float("p"."MoneyValue"), 3)) <> 0 OR Floor(Power(Float("p"."MoneyValue"), 3)) IS NULL)
 

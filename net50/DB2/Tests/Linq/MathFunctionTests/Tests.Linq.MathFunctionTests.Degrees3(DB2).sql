@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."c1"
+	Degrees(Int("p"."MoneyValue"))
 FROM
-	(
-		SELECT
-			Degrees(Int("p"."MoneyValue")) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "p"
 WHERE
-	(Float("t"."c1") <> 0.10000000000000001 OR Float("t"."c1") IS NULL)
+	(Float(Degrees(Int("p"."MoneyValue"))) <> 0.10000000000000001 OR Float(Degrees(Int("p"."MoneyValue"))) IS NULL)
 

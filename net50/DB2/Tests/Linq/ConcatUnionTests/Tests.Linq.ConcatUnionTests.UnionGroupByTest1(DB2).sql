@@ -2,27 +2,21 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t2"."month_1",
-	"t2"."year_1",
-	"t2"."int_1"
+	"t1"."c1",
+	"t1"."c2",
+	"t1"."int_1"
 FROM
 	(
 		SELECT
-			"t1"."month_1",
-			"t1"."year_1",
+			To_Number(To_Char("selectParam"."DateTimeValue", 'MM')) as "c1",
+			To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')) as "c2",
 			1 as "int_1"
 		FROM
-			(
-				SELECT
-					To_Number(To_Char("selectParam"."DateTimeValue", 'MM')) as "month_1",
-					To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')) as "year_1"
-				FROM
-					"LinqDataTypes" "selectParam"
-			) "t1"
+			"LinqDataTypes" "selectParam"
 		GROUP BY
-			"t1"."month_1",
-			"t1"."year_1"
-	) "t2"
+			To_Number(To_Char("selectParam"."DateTimeValue", 'MM')),
+			To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY'))
+	) "t1"
 UNION
 SELECT
 	"_"."SmallIntValue",

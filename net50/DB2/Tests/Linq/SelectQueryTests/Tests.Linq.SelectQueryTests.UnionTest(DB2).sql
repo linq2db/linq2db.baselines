@@ -19,15 +19,9 @@ WHERE
 	"t"."Value" = 1
 UNION
 SELECT
-	"t1"."Value1",
-	"t1"."Value2"
-FROM
-	(
-		SELECT
-			CURRENT_TIMESTAMP + 3 Day as "Value1",
-			CURRENT_TIMESTAMP + 4 Day as "Value2"
-		FROM SYSIBM.SYSDUMMY1
-	) "t1"
+	CURRENT_TIMESTAMP + 3 Day,
+	CURRENT_TIMESTAMP + 4 Day
+FROM SYSIBM.SYSDUMMY1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -45,15 +39,9 @@ FROM
 			"t"."Value" = 1
 		UNION
 		SELECT
-			"t1"."Value1",
-			"t1"."Value2"
-		FROM
-			(
-				SELECT
-					CURRENT_TIMESTAMP + 3 Day as "Value1",
-					CURRENT_TIMESTAMP + 4 Day as "Value2"
-				FROM SYSIBM.SYSDUMMY1
-			) "t1"
+			CURRENT_TIMESTAMP + 3 Day as "Value1",
+			CURRENT_TIMESTAMP + 4 Day as "Value2"
+		FROM SYSIBM.SYSDUMMY1
 	) "v"
 
 BeforeExecute

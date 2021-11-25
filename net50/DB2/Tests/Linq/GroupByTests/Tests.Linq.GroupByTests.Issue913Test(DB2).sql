@@ -39,27 +39,25 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."c1",
+	CASE
+		WHEN "selectParam"."TradingStatus" = 'D'
+			THEN 1
+		ELSE 0
+	END,
 	Count(*)
 FROM
-	(
-		SELECT
-			CASE
-				WHEN "selectParam"."TradingStatus" = 'D'
-					THEN 1
-				ELSE 0
-			END as "Key_1",
-			CASE
-				WHEN "selectParam"."TradingStatus" = 'D'
-					THEN 1
-				ELSE 0
-			END as "c1"
-		FROM
-			"Issue913Test" "selectParam"
-	) "t1"
+	"Issue913Test" "selectParam"
 GROUP BY
-	"t1"."Key_1",
-	"t1"."c1"
+	CASE
+		WHEN "selectParam"."TradingStatus" = 'D'
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "selectParam"."TradingStatus" = 'D'
+			THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
