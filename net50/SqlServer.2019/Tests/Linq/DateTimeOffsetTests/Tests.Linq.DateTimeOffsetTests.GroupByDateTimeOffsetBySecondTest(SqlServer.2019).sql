@@ -55,19 +55,14 @@ BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[t1].[Key_1],
+	DatePart(second, [selectParam].[TransactionDate]),
 	Count(*)
 FROM
-	(
-		SELECT
-			DatePart(second, [selectParam].[TransactionDate]) as [Key_1]
-		FROM
-			[Transactions] [selectParam]
-	) [t1]
+	[Transactions] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	DatePart(second, [selectParam].[TransactionDate])
 ORDER BY
-	[t1].[Key_1]
+	DatePart(second, [selectParam].[TransactionDate])
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017

@@ -2,15 +2,10 @@
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
-	[t1].[Key_1]
+	DatePart(year, [a_Types].[DateTimeValue])
 FROM
-	(
-		SELECT
-			DatePart(year, [a_Types].[DateTimeValue]) as [Key_1]
-		FROM
-			[Parent] [selectParam]
-				LEFT JOIN [LinqDataTypes] [a_Types] ON [selectParam].[ParentID] = [a_Types].[ID]
-	) [t1]
+	[Parent] [selectParam]
+		LEFT JOIN [LinqDataTypes] [a_Types] ON [selectParam].[ParentID] = [a_Types].[ID]
 GROUP BY
-	[t1].[Key_1]
+	DatePart(year, [a_Types].[DateTimeValue])
 
