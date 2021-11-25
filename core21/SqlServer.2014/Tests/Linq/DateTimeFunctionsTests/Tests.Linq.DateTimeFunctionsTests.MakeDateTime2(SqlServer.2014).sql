@@ -2,14 +2,9 @@
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-	[t].[c1]
+	Convert(DateTime2, N'2010-' + Convert(VarChar(11), [p].[ID]) + N'-1 20:35:44')
 FROM
-	(
-		SELECT
-			Convert(DateTime2, N'2010-' + Convert(VarChar(11), [p].[ID]) + N'-1 20:35:44') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	DatePart(year, Convert(DateTime2, N'2010-' + Convert(VarChar(11), [p].[ID]) + N'-1 20:35:44')) = 2010
 

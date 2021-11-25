@@ -7,6 +7,6 @@ SELECT
 	[p].[ParentID],
 	[p].[Value1]
 FROM
-	[Child] [c_1],
-	[GetParentByID](@p_1) [p]
+	[Child] [c_1]
+		CROSS JOIN [GetParentByID](@p_1) [p]
 

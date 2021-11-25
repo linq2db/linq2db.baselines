@@ -2,19 +2,13 @@
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-	[t1].[ParentID],
-	[t1].[Key_1]
+	[selectParam].[ParentID] + 1,
+	[selectParam].[ChildID]
 FROM
-	(
-		SELECT
-			[selectParam].[ParentID] + 1 as [ParentID],
-			[selectParam].[ChildID] as [Key_1]
-		FROM
-			[GrandChild] [selectParam]
-	) [t1]
+	[GrandChild] [selectParam]
 GROUP BY
-	[t1].[ParentID],
-	[t1].[Key_1]
+	[selectParam].[ParentID] + 1,
+	[selectParam].[ChildID]
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
