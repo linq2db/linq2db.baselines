@@ -19,15 +19,9 @@ WHERE
 	"t"."Value" = 1
 UNION
 SELECT
-	"t1"."Value1",
-	"t1"."Value2"
-FROM
-	(
-		SELECT
-			DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
-			DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
-		FROM rdb$database
-	) "t1"
+	DateAdd(Day, 3, LOCALTIMESTAMP),
+	DateAdd(Day, 4, LOCALTIMESTAMP)
+FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -45,15 +39,9 @@ FROM
 			"t"."Value" = 1
 		UNION
 		SELECT
-			"t1"."Value1",
-			"t1"."Value2"
-		FROM
-			(
-				SELECT
-					DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
-					DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
-				FROM rdb$database
-			) "t1"
+			DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
+			DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
+		FROM rdb$database
 	) "v"
 
 BeforeExecute
