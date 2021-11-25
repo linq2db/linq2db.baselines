@@ -17,12 +17,12 @@ FROM
 		WHERE
 			[p].[ParentID] > 0
 		LIMIT @take
-	) [p_1],
-	(
-		SELECT
-			[t1].[ChildID]
-		FROM
-			[Child] [t1]
-		LIMIT @take_1
-	) [c_1]
+	) [p_1]
+		CROSS JOIN (
+			SELECT
+				[t1].[ChildID]
+			FROM
+				[Child] [t1]
+			LIMIT @take_1
+		) [c_1]
 

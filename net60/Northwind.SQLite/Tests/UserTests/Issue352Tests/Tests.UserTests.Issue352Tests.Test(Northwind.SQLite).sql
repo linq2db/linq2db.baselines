@@ -4,26 +4,21 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	[t1].[EmployeeID],
+	[e].[EmployeeID],
 	(
 		SELECT
 			[em].[FirstName]
 		FROM
 			[Employees] [em]
 		WHERE
-			[em].[EmployeeID] = [t1].[EmployeeID]
+			[em].[EmployeeID] = [e].[EmployeeID]
 		LIMIT @take
 	)
 FROM
-	(
-		SELECT
-			[e].[EmployeeID]
-		FROM
-			[Employees] [e],
-			[EmployeeTerritories] [et]
-		WHERE
-			[et].[EmployeeID] = [e].[EmployeeID]
-	) [t1]
+	[Employees] [e]
+		CROSS JOIN [EmployeeTerritories] [et]
+WHERE
+	[et].[EmployeeID] = [e].[EmployeeID]
 GROUP BY
-	[t1].[EmployeeID]
+	[e].[EmployeeID]
 

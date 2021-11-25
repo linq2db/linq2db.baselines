@@ -2,25 +2,25 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p].[PersonID],
-	[p_1].[FirstName]
+	[p_1].[PersonID],
+	[p].[FirstName]
 FROM
-	[Person] [p],
 	[Person] [p_1]
+		CROSS JOIN [Person] [p]
 WHERE
-	[p].[PersonID] = [p_1].[PersonID] AND ([p].[PersonID] = 1 OR [p].[PersonID] = 2) AND
-	[p_1].[PersonID] <> 2
+	[p_1].[PersonID] = [p].[PersonID] AND [p].[PersonID] <> 2 AND
+	([p_1].[PersonID] = 1 OR [p_1].[PersonID] = 2)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p].[PersonID],
-	[p_1].[FirstName]
+	[p_1].[PersonID],
+	[p].[FirstName]
 FROM
-	[Person] [p],
 	[Person] [p_1]
+		CROSS JOIN [Person] [p]
 WHERE
-	[p].[PersonID] = [p_1].[PersonID] AND ([p].[PersonID] = 1 OR [p].[PersonID] = 2) AND
-	[p_1].[PersonID] <> 2
+	[p_1].[PersonID] = [p].[PersonID] AND [p].[PersonID] <> 2 AND
+	([p_1].[PersonID] = 1 OR [p_1].[PersonID] = 2)
 

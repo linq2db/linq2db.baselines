@@ -6,9 +6,9 @@ SELECT
 	[p2].[FirstName],
 	[p3].[LastName]
 FROM
-	[Person] [p],
-	[Person] [p2],
-	[Person] [p3]
+	[Person] [p]
+		CROSS JOIN [Person] [p2]
+		CROSS JOIN [Person] [p3]
 WHERE
 	[p].[PersonID] = [p2].[PersonID] AND [p].[LastName] = [p3].[LastName] AND
 	[p].[PersonID] = 1
