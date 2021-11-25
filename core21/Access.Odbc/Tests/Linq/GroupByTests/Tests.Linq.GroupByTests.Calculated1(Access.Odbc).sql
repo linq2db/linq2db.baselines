@@ -2,16 +2,11 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[Key_1]
+	Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3')
 FROM
-	(
-		SELECT
-			Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [Key_1]
-		FROM
-			[Child] [selectParam]
-	) [t1]
+	[Child] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3')
 
 BeforeExecute
 -- Access.Odbc AccessODBC

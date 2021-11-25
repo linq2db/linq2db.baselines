@@ -72,19 +72,13 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[c1],
+	Iif([selectParam].[TradingStatus] = 'D', True, False),
 	Count(*)
 FROM
-	(
-		SELECT
-			Iif([selectParam].[TradingStatus] = 'D', True, False) as [Key_1],
-			Iif([selectParam].[TradingStatus] = 'D', True, False) as [c1]
-		FROM
-			[Issue913Test] [selectParam]
-	) [t1]
+	[Issue913Test] [selectParam]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[c1]
+	Iif([selectParam].[TradingStatus] = 'D', True, False),
+	Iif([selectParam].[TradingStatus] = 'D', True, False)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
