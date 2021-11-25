@@ -90,8 +90,8 @@ SET
 	[UpdatedEntities].[Value2] = ([c_1].[Value2] * [t].[Value2]) * @int2,
 	[UpdatedEntities].[Value3] = ([c_1].[Value3] * [t].[Value3]) * @int3
 FROM
-	[UpdatedEntities] [c_1],
-	[NewEntities] [t]
+	[UpdatedEntities] [c_1]
+		CROSS JOIN [NewEntities] [t]
 WHERE
 	[t].[id] = [c_1].[id] AND [t].[id] <> @someId
 
