@@ -2,24 +2,27 @@
 -- SqlServer.2005
 
 SELECT
-	[t1].[Key_1]
+	CASE
+		WHEN [selectParam].[ParentID] > 2
+			THEN CASE
+			WHEN [selectParam].[ParentID] > 3
+				THEN N'1'
+			ELSE N'2'
+		END
+		ELSE N'3'
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [selectParam].[ParentID] > 2
-					THEN CASE
-					WHEN [selectParam].[ParentID] > 3
-						THEN N'1'
-					ELSE N'2'
-				END
-				ELSE N'3'
-			END as [Key_1]
-		FROM
-			[Child] [selectParam]
-	) [t1]
+	[Child] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	CASE
+		WHEN [selectParam].[ParentID] > 2
+			THEN CASE
+			WHEN [selectParam].[ParentID] > 3
+				THEN N'1'
+			ELSE N'2'
+		END
+		ELSE N'3'
+	END
 
 BeforeExecute
 -- SqlServer.2005

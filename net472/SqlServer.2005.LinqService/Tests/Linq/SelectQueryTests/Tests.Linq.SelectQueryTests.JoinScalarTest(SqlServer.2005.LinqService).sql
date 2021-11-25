@@ -38,13 +38,13 @@ BeforeExecute
 SELECT
 	[t].[Id],
 	[t].[Value],
-	[s].[c1]
+	[t1].[c1]
 FROM
 	[SampleClass] [t]
 		INNER JOIN (
 			SELECT
 				1 as [c1]
-		) [s] ON [s].[c1] = [t].[Id]
+		) [t1] ON [t1].[c1] = [t].[Id]
 
 BeforeExecute
 -- SqlServer.2005
