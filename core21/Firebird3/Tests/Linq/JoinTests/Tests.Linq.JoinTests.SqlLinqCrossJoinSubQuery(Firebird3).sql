@@ -16,11 +16,11 @@ FROM
 			"Parent" "p"
 		WHERE
 			"p"."ParentID" > 0
-	) "p_1",
-	(
-		SELECT FIRST @take_1
-			"t1"."ChildID"
-		FROM
-			"Child" "t1"
-	) "c_1"
+	) "p_1"
+		CROSS JOIN (
+			SELECT FIRST @take_1
+				"t1"."ChildID"
+			FROM
+				"Child" "t1"
+		) "c_1"
 

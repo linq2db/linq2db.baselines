@@ -229,8 +229,8 @@ USING (
 		"t2"."Field2",
 		"t2"."Field4"
 	FROM
-		"TestMerge1" "t1",
-		"TestMerge2" "t2"
+		"TestMerge1" "t1"
+			CROSS JOIN "TestMerge2" "t2"
 ) "Source"
 (
 	"Id",
