@@ -487,19 +487,14 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[t1].[Key_1],
+	DatePart(weekday, [selectParam].[TransactionDate]) - 1,
 	Count(*)
 FROM
-	(
-		SELECT
-			DatePart(weekday, [selectParam].[TransactionDate]) - 1 as [Key_1]
-		FROM
-			[Transactions] [selectParam]
-	) [t1]
+	[Transactions] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	DatePart(weekday, [selectParam].[TransactionDate]) - 1
 ORDER BY
-	[t1].[Key_1]
+	DatePart(weekday, [selectParam].[TransactionDate]) - 1
 
 BeforeExecute
 -- SqlServer.2016

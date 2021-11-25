@@ -9,8 +9,8 @@ FROM
 		SELECT
 			IIF([child].[FirstName] = N'John', [child].[FirstName], N'a') as [c1]
 		FROM
-			[Parent] [parent_1],
-			[Person] [child]
+			[Parent] [parent_1]
+				CROSS JOIN [Person] [child]
 		WHERE
 			[child].[PersonID] = [parent_1].[ParentID]
 	) [t1]
