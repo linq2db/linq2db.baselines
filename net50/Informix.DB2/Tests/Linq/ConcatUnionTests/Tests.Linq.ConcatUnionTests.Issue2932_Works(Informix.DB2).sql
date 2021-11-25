@@ -2,35 +2,36 @@
 -- Informix.DB2 Informix
 
 SELECT
+	p.ChildID,
 	Cast(CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
-				Child t1
+				GrandChild t1
+			WHERE
+				p.ParentID = t1.ParentID AND p.ChildID = t1.ChildID
 		)
 			THEN 't'
-		ELSE 'f'
-	END as BOOLEAN),
-	Cast(CASE
-		WHEN x.ParentID <> 0 THEN 't'
 		ELSE 'f'
 	END as BOOLEAN)
 FROM
-	Parent x
+	Child p
 UNION ALL
 SELECT
+	p_1.ChildID,
 	Cast(CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
-				Child t2
+				GrandChild t2
+			WHERE
+				p_1.ParentID = t2.ParentID AND p_1.ChildID = t2.ChildID
 		)
 			THEN 't'
 		ELSE 'f'
-	END as BOOLEAN),
-	Cast(NULL as BOOLEAN)
+	END as BOOLEAN)
 FROM
-	Parent x_1
+	Child p_1
 
