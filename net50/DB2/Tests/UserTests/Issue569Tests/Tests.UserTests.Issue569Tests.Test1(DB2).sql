@@ -27,8 +27,8 @@ SELECT
 	"person_1"."FirstName",
 	"x"."Taxonomy"
 FROM
-	"Patient" "patient_1",
-	"Person" "person_1"
+	"Patient" "patient_1"
+		CROSS JOIN "Person" "person_1"
 		LEFT JOIN "Doctor" "x" ON "x"."PersonID" = "person_1"."PersonID" AND "x"."PersonID" = "patient_1"."PersonID"
 WHERE
 	"person_1"."FirstName" LIKE 'J%' ESCAPE '~'

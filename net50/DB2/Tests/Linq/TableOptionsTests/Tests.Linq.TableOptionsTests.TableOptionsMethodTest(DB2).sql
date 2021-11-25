@@ -26,8 +26,8 @@ SELECT
 	"t3"."Id",
 	"t3"."Value"
 FROM
-	SESSION."TestTable" "t1",
-	SESSION."TestTable" "t2"
+	SESSION."TestTable" "t1"
+		CROSS JOIN SESSION."TestTable" "t2"
 		INNER JOIN SESSION."TestTable" "t3" ON "t2"."Id" = "t3"."Id"
 WHERE
 	"t1"."Id" = "t2"."Id"
