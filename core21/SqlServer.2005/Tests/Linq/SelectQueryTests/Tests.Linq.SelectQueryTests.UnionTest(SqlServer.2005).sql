@@ -19,14 +19,8 @@ WHERE
 	[t].[Value] = 1
 UNION
 SELECT
-	[t1].[Value1],
-	[t1].[Value2]
-FROM
-	(
-		SELECT
-			DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1],
-			DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
-	) [t1]
+	DateAdd(day, 3, CURRENT_TIMESTAMP),
+	DateAdd(day, 4, CURRENT_TIMESTAMP)
 
 BeforeExecute
 -- SqlServer.2005
@@ -44,14 +38,8 @@ FROM
 			[t].[Value] = 1
 		UNION
 		SELECT
-			[t1].[Value1],
-			[t1].[Value2]
-		FROM
-			(
-				SELECT
-					DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1],
-					DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
-			) [t1]
+			DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1],
+			DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
 	) [v]
 
 BeforeExecute
