@@ -2,14 +2,9 @@
 -- Firebird
 
 SELECT
-	"t1"."Key_1"
+	Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int)
 FROM
-	(
-		SELECT
-			Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as "Key_1"
-		FROM
-			"LinqDataTypes" "selectParam"
-	) "t1"
+	"LinqDataTypes" "selectParam"
 GROUP BY
-	"t1"."Key_1"
+	Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int)
 
