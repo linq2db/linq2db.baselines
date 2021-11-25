@@ -2,14 +2,9 @@
 -- Oracle.Managed Oracle12
 
 SELECT
-	t."c1"
+	Floor((Cos(Cast(p."MoneyValue" as Float) / 15D) / Sin(Cast(p."MoneyValue" as Float) / 15D)) * 15D)
 FROM
-	(
-		SELECT
-			Floor((Cos(Cast(p."MoneyValue" as Float) / 15D) / Sin(Cast(p."MoneyValue" as Float) / 15D)) * 15D) as "c1"
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" p
 WHERE
-	(t."c1" <> 0.10000000000000001D OR t."c1" IS NULL)
+	(Floor((Cos(Cast(p."MoneyValue" as Float) / 15D) / Sin(Cast(p."MoneyValue" as Float) / 15D)) * 15D) <> 0.10000000000000001D OR Floor((Cos(Cast(p."MoneyValue" as Float) / 15D) / Sin(Cast(p."MoneyValue" as Float) / 15D)) * 15D) IS NULL)
 
