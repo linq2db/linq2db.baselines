@@ -23,25 +23,18 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."PersonID_1",
-	t1."FirstName",
+	patient_1."PersonID",
+	person_1."FirstName",
 	x."Taxonomy"
 FROM
-	(
-		SELECT
-			person_1."PersonID",
-			patient_1."PersonID" as "PersonID_1",
-			person_1."FirstName"
-		FROM
-			"Patient" patient_1,
-			"Person" person_1
-	) t1
-		LEFT JOIN "Doctor" x ON x."PersonID" = t1."PersonID" AND x."PersonID" = t1."PersonID_1"
+	"Patient" patient_1
+		CROSS JOIN "Person" person_1
+		LEFT JOIN "Doctor" x ON x."PersonID" = person_1."PersonID" AND x."PersonID" = patient_1."PersonID"
 WHERE
-	t1."FirstName" LIKE 'J%' ESCAPE '~'
+	person_1."FirstName" LIKE 'J%' ESCAPE '~'
 ORDER BY
-	t1."PersonID_1",
-	t1."FirstName",
+	patient_1."PersonID",
+	person_1."FirstName",
 	x."Taxonomy"
 
 BeforeExecute
