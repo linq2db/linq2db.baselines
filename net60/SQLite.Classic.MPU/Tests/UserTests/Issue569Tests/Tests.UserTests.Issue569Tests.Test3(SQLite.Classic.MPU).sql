@@ -2,21 +2,15 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[PersonID],
-	[t1].[PersonID_1],
+	[p].[PersonID],
+	[pt].[PersonID],
 	[d].[Taxonomy]
 FROM
-	(
-		SELECT
-			[p].[PersonID],
-			[pt].[PersonID] as [PersonID_1]
-		FROM
-			[Person] [p],
-			[Patient] [pt]
-	) [t1],
+	[Person] [p],
+	[Patient] [pt],
 	[Doctor] [d]
 ORDER BY
-	[t1].[PersonID],
-	[t1].[PersonID_1],
+	[p].[PersonID],
+	[pt].[PersonID],
 	[d].[Taxonomy]
 

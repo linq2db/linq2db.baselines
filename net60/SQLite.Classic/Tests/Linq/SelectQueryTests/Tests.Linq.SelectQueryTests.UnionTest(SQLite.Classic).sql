@@ -19,14 +19,8 @@ WHERE
 	[t].[Value] = 1
 UNION
 SELECT
-	[t1].[Value1],
-	[t1].[Value2]
-FROM
-	(
-		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,3 || ' Day') as [Value1],
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,4 || ' Day') as [Value2]
-	) [t1]
+	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,3 || ' Day'),
+	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,4 || ' Day')
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -44,14 +38,8 @@ FROM
 			[t].[Value] = 1
 		UNION
 		SELECT
-			[t1].[Value1],
-			[t1].[Value2]
-		FROM
-			(
-				SELECT
-					strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,3 || ' Day') as [Value1],
-					strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,4 || ' Day') as [Value2]
-			) [t1]
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,3 || ' Day') as [Value1],
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,4 || ' Day') as [Value2]
 	) [v]
 
 BeforeExecute
