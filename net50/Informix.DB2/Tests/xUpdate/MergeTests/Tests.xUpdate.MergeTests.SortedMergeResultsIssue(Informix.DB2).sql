@@ -102,8 +102,8 @@ USING (
 	SELECT
 		t2.ChildID as Id
 	FROM
-		Parent t1,
-		Child t2
+		Parent t1
+			INNER JOIN Child t2 ON 1=1
 ) Source
 (
 	Id

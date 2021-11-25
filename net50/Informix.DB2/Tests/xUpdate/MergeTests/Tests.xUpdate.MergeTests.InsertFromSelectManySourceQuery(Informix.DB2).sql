@@ -104,8 +104,8 @@ USING (
 		r.ParentID as LeftId,
 		t2.ChildID as RightId
 	FROM
-		Parent r,
-		Child t2
+		Parent r
+			INNER JOIN Child t2 ON 1=1
 ) Source
 (
 	source_field0,

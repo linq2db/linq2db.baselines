@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	Floor(LogN(Cast(p.MoneyValue as Float)) / 0.69314718055994529)
 FROM
-	(
-		SELECT
-			Floor(LogN(Cast(p.MoneyValue as Float)) / 0.69314718055994529) as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes p
 WHERE
-	(t.c1 <> 0.10000000000000001 OR t.c1 IS NULL)
+	(Floor(LogN(Cast(p.MoneyValue as Float)) / 0.69314718055994529) <> 0.10000000000000001 OR Floor(LogN(Cast(p.MoneyValue as Float)) / 0.69314718055994529) IS NULL)
 

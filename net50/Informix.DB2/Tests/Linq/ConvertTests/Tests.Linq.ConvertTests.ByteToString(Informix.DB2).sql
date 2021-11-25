@@ -17,14 +17,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	p.c1
+	To_Char(Cast(t.ID as SmallInt))
 FROM
-	(
-		SELECT
-			To_Char(Cast(t.ID as SmallInt)) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes t
 WHERE
-	CHAR_LENGTH(p.c1) > 0
+	CHAR_LENGTH(To_Char(Cast(t.ID as SmallInt))) > 0
 

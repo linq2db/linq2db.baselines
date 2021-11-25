@@ -2,25 +2,23 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.PersonID,
-	p_1.FirstName
+	p_1.PersonID,
+	p.FirstName
 FROM
-	Person p,
 	Person p_1
+		INNER JOIN Person p ON 1=1
 WHERE
-	p.PersonID = p_1.PersonID AND (p.PersonID = 1 OR p.PersonID = 2) AND
-	p_1.PersonID <> 2
+	p_1.PersonID = p.PersonID AND p.PersonID <> 2 AND (p_1.PersonID = 1 OR p_1.PersonID = 2)
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	p.PersonID,
-	p_1.FirstName
+	p_1.PersonID,
+	p.FirstName
 FROM
-	Person p,
 	Person p_1
+		INNER JOIN Person p ON 1=1
 WHERE
-	p.PersonID = p_1.PersonID AND (p.PersonID = 1 OR p.PersonID = 2) AND
-	p_1.PersonID <> 2
+	p_1.PersonID = p.PersonID AND p.PersonID <> 2 AND (p_1.PersonID = 1 OR p_1.PersonID = 2)
 

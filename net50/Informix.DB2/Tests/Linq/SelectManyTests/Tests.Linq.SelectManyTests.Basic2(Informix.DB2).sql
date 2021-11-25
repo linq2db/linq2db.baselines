@@ -4,6 +4,6 @@
 SELECT
 	c_1.ParentID
 FROM
-	Parent cp,
-	Child c_1
+	Parent cp
+		INNER JOIN Child c_1 ON 1=1
 

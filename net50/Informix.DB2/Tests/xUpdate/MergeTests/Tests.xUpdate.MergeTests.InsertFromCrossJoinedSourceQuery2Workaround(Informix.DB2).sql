@@ -229,6 +229,6 @@ SELECT
 	t2.Field4,
 	t1.Field5
 FROM
-	TestMerge1 t1,
-	TestMerge2 t2
+	TestMerge1 t1
+		INNER JOIN TestMerge2 t2 ON 1=1
 

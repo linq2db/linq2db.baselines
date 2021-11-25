@@ -2,18 +2,11 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ParentID,
-	t1.ChildID,
-	t1.GrandChildID
+	c_1.ParentID,
+	c_1.ChildID,
+	c_1.GrandChildID
 FROM
-	Parent cp,
-	(
-		SELECT
-			c_1.ParentID,
-			c_1.ChildID,
-			c_1.GrandChildID
-		FROM
-			Child cp_1,
-			GrandChild c_1
-	) t1
+	Parent cp_1
+		INNER JOIN Child cp ON 1=1
+		INNER JOIN GrandChild c_1 ON 1=1
 

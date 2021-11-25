@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	Ceil(-(p.MoneyValue + 1))
 FROM
-	(
-		SELECT
-			Ceil(-(p.MoneyValue + 1)) as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes p
 WHERE
-	t.c1 <> 0
+	Ceil(-(p.MoneyValue + 1)) <> 0
 
