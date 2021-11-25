@@ -488,19 +488,14 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[t1].[Key_1],
+	CAST([selectParam].[TransactionDate] AS TIME),
 	Count(*)
 FROM
-	(
-		SELECT
-			CAST([selectParam].[TransactionDate] AS TIME) as [Key_1]
-		FROM
-			[Transactions] [selectParam]
-	) [t1]
+	[Transactions] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	CAST([selectParam].[TransactionDate] AS TIME)
 ORDER BY
-	[t1].[Key_1]
+	CAST([selectParam].[TransactionDate] AS TIME)
 
 BeforeExecute
 -- SqlServer.2008

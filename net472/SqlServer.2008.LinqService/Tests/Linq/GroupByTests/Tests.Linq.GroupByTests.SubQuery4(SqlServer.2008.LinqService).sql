@@ -2,16 +2,10 @@
 -- SqlServer.2008
 
 SELECT
-	[t1].[n],
-	Sum([t1].[ParentID])
+	[selectParam].[ChildID] + 1,
+	Sum([selectParam].[ParentID])
 FROM
-	(
-		SELECT
-			[selectParam].[ChildID] + 1 as [n],
-			[selectParam].[ParentID]
-		FROM
-			[Child] [selectParam]
-	) [t1]
+	[Child] [selectParam]
 GROUP BY
-	[t1].[n]
+	[selectParam].[ChildID] + 1
 
