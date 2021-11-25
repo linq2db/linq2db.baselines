@@ -6,16 +6,11 @@ SELECT
 FROM
 	(
 		SELECT
-			[ch].[Key_1] + N'2' as [c1]
+			IIF([selectParam].[ParentID] > 2, IIF([selectParam].[ParentID] > 3, N'1', N'2'), N'3') + N'2' as [c1]
 		FROM
-			(
-				SELECT
-					IIF([selectParam].[ParentID] > 2, IIF([selectParam].[ParentID] > 3, N'1', N'2'), N'3') as [Key_1]
-				FROM
-					[Child] [selectParam]
-			) [ch]
+			[Child] [selectParam]
 		GROUP BY
-			[ch].[Key_1]
+			IIF([selectParam].[ParentID] > 2, IIF([selectParam].[ParentID] > 3, N'1', N'2'), N'3')
 	) [p]
 WHERE
 	[p].[c1] = N'22'

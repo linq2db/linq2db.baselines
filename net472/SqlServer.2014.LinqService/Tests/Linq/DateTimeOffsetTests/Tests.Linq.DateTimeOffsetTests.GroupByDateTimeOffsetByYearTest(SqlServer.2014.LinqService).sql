@@ -488,19 +488,14 @@ BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
-	[t1].[Key_1],
+	DatePart(year, [selectParam].[TransactionDate]),
 	Count(*)
 FROM
-	(
-		SELECT
-			DatePart(year, [selectParam].[TransactionDate]) as [Key_1]
-		FROM
-			[Transactions] [selectParam]
-	) [t1]
+	[Transactions] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	DatePart(year, [selectParam].[TransactionDate])
 ORDER BY
-	[t1].[Key_1]
+	DatePart(year, [selectParam].[TransactionDate])
 
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
