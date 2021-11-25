@@ -2,40 +2,28 @@
 -- SqlServer.2012
 
 SELECT
-	[t2].[ChildID],
-	[t2].[Sub]
-FROM
-	(
+	[p].[ChildID],
+	IIF(EXISTS(
 		SELECT
-			[p].[ChildID],
-			IIF(EXISTS(
-				SELECT
-					*
-				FROM
-					[GrandChild] [t1]
-				WHERE
-					[p].[ParentID] = [t1].[ParentID] AND [p].[ChildID] = [t1].[ChildID]
-			), 1, 0) as [Sub]
+			*
 		FROM
-			[Child] [p]
-	) [t2]
+			[GrandChild] [t1]
+		WHERE
+			[p].[ParentID] = [t1].[ParentID] AND [p].[ChildID] = [t1].[ChildID]
+	), 1, 0)
+FROM
+	[Child] [p]
 UNION ALL
 SELECT
-	[t4].[ChildID],
-	[t4].[Sub]
-FROM
-	(
+	[p_1].[ChildID],
+	IIF(EXISTS(
 		SELECT
-			[p_1].[ChildID],
-			IIF(EXISTS(
-				SELECT
-					*
-				FROM
-					[GrandChild] [t3]
-				WHERE
-					[p_1].[ParentID] = [t3].[ParentID] AND [p_1].[ChildID] = [t3].[ChildID]
-			), 1, 0) as [Sub]
+			*
 		FROM
-			[Child] [p_1]
-	) [t4]
+			[GrandChild] [t2]
+		WHERE
+			[p_1].[ParentID] = [t2].[ParentID] AND [p_1].[ChildID] = [t2].[ChildID]
+	), 1, 0)
+FROM
+	[Child] [p_1]
 

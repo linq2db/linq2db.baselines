@@ -2,16 +2,11 @@
 -- SqlServer.2012
 
 SELECT
-	[t1].[Key_1]
+	IIF([selectParam].[ParentID] > 2, IIF([selectParam].[ParentID] > 3, N'1', N'2'), N'3')
 FROM
-	(
-		SELECT
-			IIF([selectParam].[ParentID] > 2, IIF([selectParam].[ParentID] > 3, N'1', N'2'), N'3') as [Key_1]
-		FROM
-			[Child] [selectParam]
-	) [t1]
+	[Child] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	IIF([selectParam].[ParentID] > 2, IIF([selectParam].[ParentID] > 3, N'1', N'2'), N'3')
 
 BeforeExecute
 -- SqlServer.2012
