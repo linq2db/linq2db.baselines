@@ -2,35 +2,36 @@
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	p."ChildID",
 	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
-				"Child" t1
+				"GrandChild" t1
+			WHERE
+				p."ParentID" = t1."ParentID" AND p."ChildID" = t1."ChildID"
 		)
 			THEN True
-		ELSE False
-	END,
-	CASE
-		WHEN x."ParentID" <> 0 THEN True
 		ELSE False
 	END
 FROM
-	"Parent" x
+	"Child" p
 UNION ALL
 SELECT
+	p_1."ChildID",
 	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
-				"Child" t2
+				"GrandChild" t2
+			WHERE
+				p_1."ParentID" = t2."ParentID" AND p_1."ChildID" = t2."ChildID"
 		)
 			THEN True
 		ELSE False
-	END,
-	Cast(NULL as Boolean)
+	END
 FROM
-	"Parent" x_1
+	"Child" p_1
 
