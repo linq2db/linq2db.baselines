@@ -36,14 +36,14 @@ BeforeExecute
 SELECT
 	"t"."Id",
 	"t"."Value",
-	"s"."c1"
+	"t1"."c1"
 FROM
 	"SampleClass" "t"
 		INNER JOIN (
 			SELECT
 				1 as "c1"
 			FROM rdb$database
-		) "s" ON "s"."c1" = "t"."Id"
+		) "t1" ON "t1"."c1" = "t"."Id"
 
 BeforeExecute
 -- Firebird4 Firebird

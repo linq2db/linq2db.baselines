@@ -2,14 +2,9 @@
 -- Firebird4 Firebird
 
 SELECT
-	"t"."c1"
+	Floor(Log(2, Cast("p"."MoneyValue" as Float)))
 FROM
-	(
-		SELECT
-			Floor(Log(2, Cast("p"."MoneyValue" as Float))) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "p"
 WHERE
-	("t"."c1" <> 0.10000000000000001 OR "t"."c1" IS NULL)
+	(Floor(Log(2, Cast("p"."MoneyValue" as Float))) <> 0.10000000000000001 OR Floor(Log(2, Cast("p"."MoneyValue" as Float))) IS NULL)
 

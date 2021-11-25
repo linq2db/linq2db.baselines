@@ -2,17 +2,11 @@
 -- Firebird4 Firebird
 
 SELECT
-	Sum("t1"."MoneyValue"),
-	Cast(Floor(Extract(year from "t1"."Key_1")) as int),
-	Cast(Floor(Extract(month from "t1"."Key_1")) as int)
+	Sum("selectParam"."MoneyValue"),
+	Cast(Floor(Extract(year from Cast((Cast(Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-' || Cast(Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-1') as Date))) as int),
+	Cast(Floor(Extract(month from Cast((Cast(Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-' || Cast(Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-1') as Date))) as int)
 FROM
-	(
-		SELECT
-			Cast((Cast(Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-' || Cast(Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-1') as Date) as "Key_1",
-			"selectParam"."MoneyValue"
-		FROM
-			"LinqDataTypes" "selectParam"
-	) "t1"
+	"LinqDataTypes" "selectParam"
 GROUP BY
-	"t1"."Key_1"
+	Cast((Cast(Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-' || Cast(Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-1') as Date)
 

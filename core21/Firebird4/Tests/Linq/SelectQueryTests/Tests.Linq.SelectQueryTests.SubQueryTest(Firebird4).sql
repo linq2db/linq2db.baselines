@@ -36,8 +36,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"t2"."Value1",
-	"t2"."Value2"
+	"t1"."Value1",
+	"t1"."Value2"
 FROM
 	(
 		SELECT
@@ -49,16 +49,10 @@ FROM
 			"t"."Value" = 1
 		UNION
 		SELECT
-			"t1"."Value1",
-			"t1"."Value2"
-		FROM
-			(
-				SELECT
-					DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
-					DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
-				FROM rdb$database
-			) "t1"
-	) "t2"
+			DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
+			DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
+		FROM rdb$database
+	) "t1"
 
 BeforeExecute
 -- Firebird4 Firebird
