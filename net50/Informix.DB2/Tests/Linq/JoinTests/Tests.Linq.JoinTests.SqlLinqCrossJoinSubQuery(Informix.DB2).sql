@@ -12,11 +12,11 @@ FROM
 			Parent p
 		WHERE
 			p.ParentID > 0
-	) p_1,
-	(
-		SELECT FIRST 10
-			t1.ChildID
-		FROM
-			Child t1
-	) c_1
+	) p_1
+		INNER JOIN (
+			SELECT FIRST 10
+				t1.ChildID
+			FROM
+				Child t1
+		) c_1 ON 1=1
 
