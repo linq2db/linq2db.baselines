@@ -53,18 +53,11 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	[t2].[ParentID_1],
-	[t2].[ChildID],
+	[parent_1].[ParentID],
+	[child_1].[ChildID],
 	[t1].[GrandChildID]
 FROM
-	(
-		SELECT
-			[child_1].[ParentID],
-			[child_1].[ChildID],
-			[parent_1].[ParentID] as [ParentID_1]
-		FROM
-			[Parent] [parent_1],
-			[Child] [child_1]
-	) [t2]
-		LEFT JOIN [GrandChild] [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t2].[ChildID] = [t1].[ChildID]
+	[Parent] [parent_1]
+		CROSS JOIN [Child] [child_1]
+		LEFT JOIN [GrandChild] [t1] ON [child_1].[ParentID] = [t1].[ParentID] AND [child_1].[ChildID] = [t1].[ChildID]
 
