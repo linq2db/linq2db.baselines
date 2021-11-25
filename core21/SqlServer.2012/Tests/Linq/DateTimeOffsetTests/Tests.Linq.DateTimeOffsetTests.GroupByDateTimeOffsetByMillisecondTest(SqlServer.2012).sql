@@ -56,19 +56,14 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[t1].[Key_1],
+	DatePart(millisecond, [selectParam].[TransactionDate]),
 	Count(*)
 FROM
-	(
-		SELECT
-			DatePart(millisecond, [selectParam].[TransactionDate]) as [Key_1]
-		FROM
-			[Transactions] [selectParam]
-	) [t1]
+	[Transactions] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	DatePart(millisecond, [selectParam].[TransactionDate])
 ORDER BY
-	[t1].[Key_1]
+	DatePart(millisecond, [selectParam].[TransactionDate])
 
 BeforeExecute
 -- SqlServer.2012
