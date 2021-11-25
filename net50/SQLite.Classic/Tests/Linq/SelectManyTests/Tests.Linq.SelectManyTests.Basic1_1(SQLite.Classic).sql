@@ -6,7 +6,7 @@ SELECT
 	[c_1].[ChildID],
 	[c_1].[GrandChildID]
 FROM
-	[Parent] [cp],
-	[Child] [cp_1],
-	[GrandChild] [c_1]
+	[Parent] [cp_1]
+		CROSS JOIN [Child] [cp]
+		CROSS JOIN [GrandChild] [c_1]
 
