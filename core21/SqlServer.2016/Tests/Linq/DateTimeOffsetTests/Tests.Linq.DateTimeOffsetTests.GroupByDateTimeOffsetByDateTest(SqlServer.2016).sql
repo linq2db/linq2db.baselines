@@ -55,19 +55,14 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[t1].[Key_1],
+	Convert(Date, [selectParam].[TransactionDate]),
 	Count(*)
 FROM
-	(
-		SELECT
-			Convert(Date, [selectParam].[TransactionDate]) as [Key_1]
-		FROM
-			[Transactions] [selectParam]
-	) [t1]
+	[Transactions] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	Convert(Date, [selectParam].[TransactionDate])
 ORDER BY
-	[t1].[Key_1]
+	Convert(Date, [selectParam].[TransactionDate])
 
 BeforeExecute
 -- SqlServer.2016

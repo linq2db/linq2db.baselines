@@ -2,19 +2,12 @@
 -- SqlServer.2016
 
 SELECT
-	Sum([t1].[MoneyValue]),
-	[t1].[Key_2],
-	[t1].[Key_1]
+	Sum([selectParam].[MoneyValue]),
+	DatePart(year, [selectParam].[DateTimeValue]),
+	DatePart(month, [selectParam].[DateTimeValue])
 FROM
-	(
-		SELECT
-			DatePart(month, [selectParam].[DateTimeValue]) as [Key_1],
-			DatePart(year, [selectParam].[DateTimeValue]) as [Key_2],
-			[selectParam].[MoneyValue]
-		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+	[LinqDataTypes] [selectParam]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[Key_2]
+	DatePart(month, [selectParam].[DateTimeValue]),
+	DatePart(year, [selectParam].[DateTimeValue])
 
