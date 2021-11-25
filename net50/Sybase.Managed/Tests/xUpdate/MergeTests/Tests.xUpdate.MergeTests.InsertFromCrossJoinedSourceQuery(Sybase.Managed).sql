@@ -107,8 +107,8 @@ USING (
 		[t1].[ParentID] as [LeftId],
 		[t2].[ChildID] as [RightId]
 	FROM
-		[Parent] [t1],
-		[Child] [t2]
+		[Parent] [t1]
+			INNER JOIN [Child] [t2] ON 1=1
 ) [Source]
 (
 	[source_field0],

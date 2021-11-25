@@ -231,8 +231,8 @@ USING (
 		[t2].[Field2],
 		[t2].[Field4]
 	FROM
-		[TestMerge1] [t1],
-		[TestMerge2] [t2]
+		[TestMerge1] [t1]
+			INNER JOIN [TestMerge2] [t2] ON 1=1
 ) [Source]
 (
 	[Id],
