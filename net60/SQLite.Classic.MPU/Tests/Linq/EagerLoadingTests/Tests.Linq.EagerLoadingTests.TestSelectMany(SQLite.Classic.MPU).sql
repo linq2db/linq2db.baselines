@@ -1801,8 +1801,8 @@ FROM
 				FROM
 					[MasterClass] [t1]
 				LIMIT @take
-			) [m_1],
-			[DetailClass] [d]
+			) [m_1]
+				CROSS JOIN [DetailClass] [d]
 	) [key_data_result]
 		INNER JOIN [SubDetailClass] [_sd] ON [_sd].[DetailId] = [key_data_result].[DetailId]
 
@@ -1827,8 +1827,8 @@ FROM
 				FROM
 					[MasterClass] [t1]
 				LIMIT @take
-			) [m_1],
-			[DetailClass] [d]
+			) [m_1]
+				CROSS JOIN [DetailClass] [d]
 	) [key_data_result]
 		INNER JOIN [SubDetailClass] [detail] ON [key_data_result].[DetailId] = [detail].[DetailId]
 
@@ -1848,8 +1848,8 @@ FROM
 		FROM
 			[MasterClass] [t1]
 		LIMIT @take
-	) [m_1],
-	[DetailClass] [d]
+	) [m_1]
+		CROSS JOIN [DetailClass] [d]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

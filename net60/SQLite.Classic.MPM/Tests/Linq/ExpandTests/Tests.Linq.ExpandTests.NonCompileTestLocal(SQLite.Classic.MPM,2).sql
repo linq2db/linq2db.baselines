@@ -34,8 +34,8 @@ SELECT
 	[t].[Id],
 	[t].[Value]
 FROM
-	[SampleClass] [t],
-	[SampleClass] [c_1]
+	[SampleClass] [t]
+		CROSS JOIN [SampleClass] [c_1]
 WHERE
 	[c_1].[Value] > @param
 
