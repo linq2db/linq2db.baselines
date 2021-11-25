@@ -83,18 +83,11 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[t1].[Id],
-	[t1].[Value1],
-	[t1].[Value2]
+	[t].[Id],
+	[t].[Value1],
+	[t].[Value2]
 FROM
-	(
-		SELECT
-			[t].[Id],
-			[t].[Value1],
-			[t].[Value2]
-		FROM
-			[ValueConversion] [t]
-	) [t1]
+	[ValueConversion] [t]
 
 BeforeExecute
 -- SqlServer.2008
@@ -107,18 +100,11 @@ FROM
 	[ValueConversion] [t]
 UNION ALL
 SELECT
-	[t1].[Id],
-	[t1].[Value1],
-	[t1].[Value2]
+	[t_1].[Id],
+	[t_1].[Value1],
+	[t_1].[Value2]
 FROM
-	(
-		SELECT
-			[t_1].[Id],
-			[t_1].[Value1],
-			[t_1].[Value2]
-		FROM
-			[ValueConversion] [t_1]
-	) [t1]
+	[ValueConversion] [t_1]
 
 BeforeExecute
 -- SqlServer.2008
@@ -132,16 +118,10 @@ SELECT
 FROM
 	(
 		SELECT
-			[q].[Value2],
-			ROW_NUMBER() OVER (ORDER BY [q].[Id]) as [RN]
+			[t].[Value2],
+			ROW_NUMBER() OVER (ORDER BY [t].[Id]) as [RN]
 		FROM
-			(
-				SELECT
-					[t].[Id],
-					[t].[Value2]
-				FROM
-					[ValueConversion] [t]
-			) [q]
+			[ValueConversion] [t]
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= @take_1
