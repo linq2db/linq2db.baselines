@@ -19,14 +19,8 @@ WHERE
 	`t`.`Value` = 1
 UNION
 SELECT
-	`t1`.`Value1`,
-	`t1`.`Value2`
-FROM
-	(
-		SELECT
-			Date_Add(CURRENT_TIMESTAMP, Interval 3 Day) as `Value1`,
-			Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
-	) `t1`
+	Date_Add(CURRENT_TIMESTAMP, Interval 3 Day),
+	Date_Add(CURRENT_TIMESTAMP, Interval 4 Day)
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -44,14 +38,8 @@ FROM
 			`t`.`Value` = 1
 		UNION
 		SELECT
-			`t1`.`Value1`,
-			`t1`.`Value2`
-		FROM
-			(
-				SELECT
-					Date_Add(CURRENT_TIMESTAMP, Interval 3 Day) as `Value1`,
-					Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
-			) `t1`
+			Date_Add(CURRENT_TIMESTAMP, Interval 3 Day) as `Value1`,
+			Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
 	) `v`
 
 BeforeExecute
