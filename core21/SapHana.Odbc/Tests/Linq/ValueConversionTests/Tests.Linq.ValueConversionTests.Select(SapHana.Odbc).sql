@@ -553,18 +553,11 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."Id",
-	"t1"."Value1",
-	"t1"."Value2"
+	"t"."Id",
+	"t"."Value1",
+	"t"."Value2"
 FROM
-	(
-		SELECT
-			"t"."Id",
-			"t"."Value1",
-			"t"."Value2"
-		FROM
-			"ValueConversion" "t"
-	) "t1"
+	"ValueConversion" "t"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -577,18 +570,11 @@ FROM
 	"ValueConversion" "t"
 UNION ALL
 SELECT
-	"t1"."Id",
-	"t1"."Value1",
-	"t1"."Value2"
+	"t_1"."Id",
+	"t_1"."Value1",
+	"t_1"."Value2"
 FROM
-	(
-		SELECT
-			"t_1"."Id",
-			"t_1"."Value1",
-			"t_1"."Value2"
-		FROM
-			"ValueConversion" "t_1"
-	) "t1"
+	"ValueConversion" "t_1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -598,17 +584,11 @@ DECLARE @skip  -- Int32
 SET     @skip = 1
 
 SELECT
-	"q"."Value2"
+	"t"."Value2"
 FROM
-	(
-		SELECT
-			"t"."Id",
-			"t"."Value2"
-		FROM
-			"ValueConversion" "t"
-	) "q"
+	"ValueConversion" "t"
 ORDER BY
-	"q"."Id"
+	"t"."Id"
 LIMIT ? OFFSET ?
 
 BeforeExecute

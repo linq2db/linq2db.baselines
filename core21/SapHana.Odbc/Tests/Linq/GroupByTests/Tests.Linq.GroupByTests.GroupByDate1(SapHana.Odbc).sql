@@ -2,19 +2,12 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Sum("t1"."MoneyValue"),
-	"t1"."Key_2",
-	"t1"."Key_1"
+	Sum("selectParam"."MoneyValue"),
+	Year("selectParam"."DateTimeValue"),
+	Month("selectParam"."DateTimeValue")
 FROM
-	(
-		SELECT
-			Month("selectParam"."DateTimeValue") as "Key_1",
-			Year("selectParam"."DateTimeValue") as "Key_2",
-			"selectParam"."MoneyValue"
-		FROM
-			"LinqDataTypes" "selectParam"
-	) "t1"
+	"LinqDataTypes" "selectParam"
 GROUP BY
-	"t1"."Key_1",
-	"t1"."Key_2"
+	Month("selectParam"."DateTimeValue"),
+	Year("selectParam"."DateTimeValue")
 

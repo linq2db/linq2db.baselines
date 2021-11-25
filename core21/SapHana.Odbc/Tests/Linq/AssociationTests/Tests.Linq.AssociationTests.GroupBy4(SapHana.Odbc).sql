@@ -2,14 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."Key_1"
+	Year("selectParam"."DateTimeValue")
 FROM
-	(
-		SELECT
-			Year("selectParam"."DateTimeValue") as "Key_1"
-		FROM
-			"LinqDataTypes" "selectParam"
-	) "t1"
+	"LinqDataTypes" "selectParam"
 GROUP BY
-	"t1"."Key_1"
+	Year("selectParam"."DateTimeValue")
 

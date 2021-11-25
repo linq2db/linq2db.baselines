@@ -19,15 +19,9 @@ WHERE
 	"t"."Value" = 1
 UNION
 SELECT
-	"t1"."Value1",
-	"t1"."Value2"
-FROM
-	(
-		SELECT
-			Add_Days(CURRENT_TIMESTAMP, 3) as "Value1",
-			Add_Days(CURRENT_TIMESTAMP, 4) as "Value2"
+	Add_Days(CURRENT_TIMESTAMP, 3),
+	Add_Days(CURRENT_TIMESTAMP, 4)
 FROM DUMMY
-	) "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -45,15 +39,9 @@ FROM
 			"t"."Value" = 1
 		UNION
 		SELECT
-			"t1"."Value1",
-			"t1"."Value2"
-		FROM
-			(
-				SELECT
-					Add_Days(CURRENT_TIMESTAMP, 3) as "Value1",
-					Add_Days(CURRENT_TIMESTAMP, 4) as "Value2"
+			Add_Days(CURRENT_TIMESTAMP, 3) as "Value1",
+			Add_Days(CURRENT_TIMESTAMP, 4) as "Value2"
 FROM DUMMY
-			) "t1"
 	) "v"
 
 BeforeExecute
