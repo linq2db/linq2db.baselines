@@ -30,16 +30,11 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	[t1].[Key_1]
+	Convert(Date, [selectParam].[dt])
 FROM
-	(
-		SELECT
-			Convert(Date, [selectParam].[dt]) as [Key_1]
-		FROM
-			[Issue1613] [selectParam]
-	) [t1]
+	[Issue1613] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	Convert(Date, [selectParam].[dt])
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017

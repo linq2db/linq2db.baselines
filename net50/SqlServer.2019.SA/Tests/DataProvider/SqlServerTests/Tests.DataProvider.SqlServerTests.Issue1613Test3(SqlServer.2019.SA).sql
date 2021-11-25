@@ -30,16 +30,11 @@ BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
-	[t1].[Key_1]
+	CAST([selectParam].[dt] AS TIME)
 FROM
-	(
-		SELECT
-			CAST([selectParam].[dt] AS TIME) as [Key_1]
-		FROM
-			[Issue1613] [selectParam]
-	) [t1]
+	[Issue1613] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	CAST([selectParam].[dt] AS TIME)
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017

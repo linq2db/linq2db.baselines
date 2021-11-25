@@ -8,33 +8,21 @@ FROM
 		SELECT
 			0 as [c1]
 		FROM
-			(
-				SELECT
-					MONTH([selectParam].[DateTimeValue]) as [Key_1],
-					YEAR([selectParam].[DateTimeValue]) as [Key_2]
-				FROM
-					[LinqDataTypes] [selectParam]
-			) [t1]
+			[LinqDataTypes] [selectParam]
 		GROUP BY
-			[t1].[Key_1],
-			[t1].[Key_2]
-	) [t2]
+			MONTH([selectParam].[DateTimeValue]),
+			YEAR([selectParam].[DateTimeValue])
+	) [t1]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
-	[t1].[Key_1],
-	[t1].[Key_2]
+	MONTH([selectParam].[DateTimeValue]),
+	YEAR([selectParam].[DateTimeValue])
 FROM
-	(
-		SELECT
-			MONTH([selectParam].[DateTimeValue]) as [Key_1],
-			YEAR([selectParam].[DateTimeValue]) as [Key_2]
-		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+	[LinqDataTypes] [selectParam]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[Key_2]
+	MONTH([selectParam].[DateTimeValue]),
+	YEAR([selectParam].[DateTimeValue])
 

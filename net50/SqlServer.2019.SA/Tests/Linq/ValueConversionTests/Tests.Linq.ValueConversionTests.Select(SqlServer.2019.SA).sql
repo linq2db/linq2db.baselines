@@ -82,18 +82,11 @@ BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
-	[t1].[Id],
-	[t1].[Value1],
-	[t1].[Value2]
+	[t].[Id],
+	[t].[Value1],
+	[t].[Value2]
 FROM
-	(
-		SELECT
-			[t].[Id],
-			[t].[Value1],
-			[t].[Value2]
-		FROM
-			[ValueConversion] [t]
-	) [t1]
+	[ValueConversion] [t]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -106,18 +99,11 @@ FROM
 	[ValueConversion] [t]
 UNION ALL
 SELECT
-	[t1].[Id],
-	[t1].[Value1],
-	[t1].[Value2]
+	[t_1].[Id],
+	[t_1].[Value1],
+	[t_1].[Value2]
 FROM
-	(
-		SELECT
-			[t_1].[Id],
-			[t_1].[Value1],
-			[t_1].[Value2]
-		FROM
-			[ValueConversion] [t_1]
-	) [t1]
+	[ValueConversion] [t_1]
 
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
@@ -127,17 +113,11 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT
-	[q].[Value2]
+	[t].[Value2]
 FROM
-	(
-		SELECT
-			[t].[Id],
-			[t].[Value2]
-		FROM
-			[ValueConversion] [t]
-	) [q]
+	[ValueConversion] [t]
 ORDER BY
-	[q].[Id]
+	[t].[Id]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute

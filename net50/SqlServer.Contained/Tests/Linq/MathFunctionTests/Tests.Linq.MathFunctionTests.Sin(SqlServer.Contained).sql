@@ -2,14 +2,9 @@
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	[t].[c1]
+	Floor(Sin(Convert(Float, [p].[MoneyValue]) / 15) * 15)
 FROM
-	(
-		SELECT
-			Floor(Sin(Convert(Float, [p].[MoneyValue]) / 15) * 15) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[c1] <> 0.10000000000000001 OR [t].[c1] IS NULL)
+	(Floor(Sin(Convert(Float, [p].[MoneyValue]) / 15) * 15) <> 0.10000000000000001 OR Floor(Sin(Convert(Float, [p].[MoneyValue]) / 15) * 15) IS NULL)
 

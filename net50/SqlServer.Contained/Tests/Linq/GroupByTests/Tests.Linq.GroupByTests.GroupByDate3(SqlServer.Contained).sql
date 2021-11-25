@@ -2,17 +2,11 @@
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	Sum([t1].[MoneyValue]),
-	DatePart(year, [t1].[Key_1]),
-	DatePart(month, [t1].[Key_1])
+	Sum([selectParam].[MoneyValue]),
+	DatePart(year, DateAdd(month, ((DatePart(year, [selectParam].[DateTimeValue]) - 1900) * 12 + DatePart(month, [selectParam].[DateTimeValue])) - 1, 0)),
+	DatePart(month, DateAdd(month, ((DatePart(year, [selectParam].[DateTimeValue]) - 1900) * 12 + DatePart(month, [selectParam].[DateTimeValue])) - 1, 0))
 FROM
-	(
-		SELECT
-			DateAdd(month, ((DatePart(year, [selectParam].[DateTimeValue]) - 1900) * 12 + DatePart(month, [selectParam].[DateTimeValue])) - 1, 0) as [Key_1],
-			[selectParam].[MoneyValue]
-		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+	[LinqDataTypes] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	DateAdd(month, ((DatePart(year, [selectParam].[DateTimeValue]) - 1900) * 12 + DatePart(month, [selectParam].[DateTimeValue])) - 1, 0)
 

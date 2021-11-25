@@ -2,14 +2,9 @@
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
-	[t1].[Key_1]
+	DatePart(year, [selectParam].[DateTimeValue])
 FROM
-	(
-		SELECT
-			DatePart(year, [selectParam].[DateTimeValue]) as [Key_1]
-		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+	[LinqDataTypes] [selectParam]
 GROUP BY
-	[t1].[Key_1]
+	DatePart(year, [selectParam].[DateTimeValue])
 
