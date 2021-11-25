@@ -105,8 +105,8 @@ SET
 		SELECT
 			(c_1."Value1" * t."Value1") * :int1
 		FROM
-			"UpdatedEntities" c_1,
-			"NewEntities" t
+			"UpdatedEntities" c_1
+				CROSS JOIN "NewEntities" t
 		WHERE
 			t."id" = c_1."id" AND t."id" <> :someId AND "UpdatedEntities"."id" = c_1."id"
 	),
@@ -114,8 +114,8 @@ SET
 		SELECT
 			(c_2."Value2" * t_1."Value2") * :int2
 		FROM
-			"UpdatedEntities" c_2,
-			"NewEntities" t_1
+			"UpdatedEntities" c_2
+				CROSS JOIN "NewEntities" t_1
 		WHERE
 			t_1."id" = c_2."id" AND t_1."id" <> :someId AND "UpdatedEntities"."id" = c_2."id"
 	),
@@ -123,8 +123,8 @@ SET
 		SELECT
 			(c_3."Value3" * t_2."Value3") * :int3
 		FROM
-			"UpdatedEntities" c_3,
-			"NewEntities" t_2
+			"UpdatedEntities" c_3
+				CROSS JOIN "NewEntities" t_2
 		WHERE
 			t_2."id" = c_3."id" AND t_2."id" <> :someId AND "UpdatedEntities"."id" = c_3."id"
 	)
@@ -133,8 +133,8 @@ WHERE
 		SELECT
 			*
 		FROM
-			"UpdatedEntities" c_4,
-			"NewEntities" t_3
+			"UpdatedEntities" c_4
+				CROSS JOIN "NewEntities" t_3
 		WHERE
 			t_3."id" = c_4."id" AND t_3."id" <> :someId AND "UpdatedEntities"."id" = c_4."id"
 	)

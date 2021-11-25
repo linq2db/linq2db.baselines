@@ -17,12 +17,12 @@ FROM
 		WHERE
 			p."ParentID" > 0
 		FETCH NEXT :take ROWS ONLY
-	) p_1,
-	(
-		SELECT
-			t1."ChildID"
-		FROM
-			"Child" t1
-		FETCH NEXT :take_1 ROWS ONLY
-	) c_1
+	) p_1
+		CROSS JOIN (
+			SELECT
+				t1."ChildID"
+			FROM
+				"Child" t1
+			FETCH NEXT :take_1 ROWS ONLY
+		) c_1
 
