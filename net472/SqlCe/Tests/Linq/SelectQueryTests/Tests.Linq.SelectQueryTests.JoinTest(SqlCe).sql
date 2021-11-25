@@ -28,15 +28,15 @@ BeforeExecute
 SELECT
 	[t].[Id],
 	[t].[Value],
-	[s].[Key_1],
-	[s].[SecondValue]
+	[t1].[c1],
+	[t1].[c2]
 FROM
 	[SampleClass] [t]
 		INNER JOIN (
 			SELECT
-				1 as [Key_1],
-				3 as [SecondValue]
-		) [s] ON [s].[Key_1] = [t].[Id]
+				1 as [c1],
+				3 as [c2]
+		) [t1] ON [t1].[c1] = [t].[Id]
 
 BeforeExecute
 -- SqlCe
