@@ -2,24 +2,27 @@
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
-	t1."Key_1"
+	CASE
+		WHEN selectParam."ParentID" > 2
+			THEN CASE
+			WHEN selectParam."ParentID" > 3
+				THEN '1'
+			ELSE '2'
+		END
+		ELSE '3'
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN selectParam."ParentID" > 2
-					THEN CASE
-					WHEN selectParam."ParentID" > 3
-						THEN '1'
-					ELSE '2'
-				END
-				ELSE '3'
-			END as "Key_1"
-		FROM
-			"Child" selectParam
-	) t1
+	"Child" selectParam
 GROUP BY
-	t1."Key_1"
+	CASE
+		WHEN selectParam."ParentID" > 2
+			THEN CASE
+			WHEN selectParam."ParentID" > 3
+				THEN '1'
+			ELSE '2'
+		END
+		ELSE '3'
+	END
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

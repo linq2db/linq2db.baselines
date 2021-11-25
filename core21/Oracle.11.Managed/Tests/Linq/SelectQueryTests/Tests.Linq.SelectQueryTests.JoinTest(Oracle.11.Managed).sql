@@ -41,8 +41,8 @@ BeforeExecute
 SELECT
 	t."Id",
 	t."Value",
-	s."Key_1",
-	s."SecondValue"
+	t1."Key_1",
+	t1."SecondValue"
 FROM
 	"SampleClass" t
 		INNER JOIN (
@@ -50,7 +50,7 @@ FROM
 				1 as "Key_1",
 				3 as "SecondValue"
 			FROM SYS.DUAL
-		) s ON s."Key_1" = t."Id"
+		) t1 ON t1."Key_1" = t."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
