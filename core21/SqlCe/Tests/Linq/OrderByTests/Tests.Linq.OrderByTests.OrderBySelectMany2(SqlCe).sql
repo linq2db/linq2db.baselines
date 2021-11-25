@@ -11,6 +11,6 @@ FROM
 WHERE
 	[p].[ParentID] = [a_Parent1].[ParentID]
 ORDER BY
-	[p].[ParentID],
-	[c_1].[ChildID]
+	[c_1].[ChildID],
+	[p].[ParentID]
 
