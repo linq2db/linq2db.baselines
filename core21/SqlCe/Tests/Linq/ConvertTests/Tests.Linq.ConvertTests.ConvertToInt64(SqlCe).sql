@@ -2,18 +2,17 @@
 -- SqlCe
 
 SELECT
-	[p].[c1]
+	Convert(BigInt, CASE
+		WHEN [t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Convert(Int, Floor([t].[MoneyValue])) % 2 = 0
+			THEN Floor([t].[MoneyValue])
+		ELSE Round([t].[MoneyValue], 0)
+	END)
 FROM
-	(
-		SELECT
-			Convert(BigInt, CASE
-				WHEN [t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Convert(Int, Floor([t].[MoneyValue])) % 2 = 0
-					THEN Floor([t].[MoneyValue])
-				ELSE Round([t].[MoneyValue], 0)
-			END) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [t]
 WHERE
-	[p].[c1] > 0
+	Convert(BigInt, CASE
+		WHEN [t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Convert(Int, Floor([t].[MoneyValue])) % 2 = 0
+			THEN Floor([t].[MoneyValue])
+		ELSE Round([t].[MoneyValue], 0)
+	END) > 0
 
