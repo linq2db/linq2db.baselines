@@ -7,13 +7,13 @@ SELECT
 	"c_1"."ParentID",
 	"c_1"."ChildID"
 FROM
-	"Child" "c_1",
-	(
-		SELECT FIRST @take
-			"p"."ParentID"
-		FROM
-			"GrandChild" "p"
-	) "t1"
+	"Child" "c_1"
+		CROSS JOIN (
+			SELECT FIRST @take
+				"p"."ParentID"
+			FROM
+				"GrandChild" "p"
+		) "t1"
 WHERE
 	"c_1"."ParentID" = "t1"."ParentID"
 
@@ -28,13 +28,13 @@ SELECT
 	"c_1"."ParentID",
 	"c_1"."ChildID"
 FROM
-	"Child" "c_1",
-	(
-		SELECT FIRST @take SKIP @skip
-			"p"."ParentID"
-		FROM
-			"GrandChild" "p"
-	) "t1"
+	"Child" "c_1"
+		CROSS JOIN (
+			SELECT FIRST @take SKIP @skip
+				"p"."ParentID"
+			FROM
+				"GrandChild" "p"
+		) "t1"
 WHERE
 	"c_1"."ParentID" = "t1"."ParentID"
 
