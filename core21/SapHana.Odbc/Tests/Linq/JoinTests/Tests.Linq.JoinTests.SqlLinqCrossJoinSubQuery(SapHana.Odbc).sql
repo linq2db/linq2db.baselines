@@ -17,12 +17,12 @@ FROM
 		WHERE
 			"p"."ParentID" > 0
 		LIMIT ?
-	) "p_1",
-	(
-		SELECT
-			"t1"."ChildID"
-		FROM
-			"Child" "t1"
-		LIMIT ?
-	) "c_1"
+	) "p_1"
+		CROSS JOIN (
+			SELECT
+				"t1"."ChildID"
+			FROM
+				"Child" "t1"
+			LIMIT ?
+		) "c_1"
 

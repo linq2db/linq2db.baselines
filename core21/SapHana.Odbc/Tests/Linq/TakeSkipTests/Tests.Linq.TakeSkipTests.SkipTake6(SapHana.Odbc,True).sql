@@ -7,14 +7,14 @@ SELECT
 	"c_1"."ParentID",
 	"c_1"."ChildID"
 FROM
-	"Child" "c_1",
-	(
-		SELECT
-			"p"."ParentID"
-		FROM
-			"GrandChild" "p"
-		LIMIT ?
-	) "t1"
+	"Child" "c_1"
+		CROSS JOIN (
+			SELECT
+				"p"."ParentID"
+			FROM
+				"GrandChild" "p"
+			LIMIT ?
+		) "t1"
 WHERE
 	"c_1"."ParentID" = "t1"."ParentID"
 
@@ -29,14 +29,14 @@ SELECT
 	"c_1"."ParentID",
 	"c_1"."ChildID"
 FROM
-	"Child" "c_1",
-	(
-		SELECT
-			"p"."ParentID"
-		FROM
-			"GrandChild" "p"
-		LIMIT ? OFFSET ?
-	) "t1"
+	"Child" "c_1"
+		CROSS JOIN (
+			SELECT
+				"p"."ParentID"
+			FROM
+				"GrandChild" "p"
+			LIMIT ? OFFSET ?
+		) "t1"
 WHERE
 	"c_1"."ParentID" = "t1"."ParentID"
 
