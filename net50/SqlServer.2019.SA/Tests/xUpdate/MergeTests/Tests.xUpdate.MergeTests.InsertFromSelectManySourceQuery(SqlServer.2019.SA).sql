@@ -107,8 +107,8 @@ USING (
 		[r].[ParentID] as [LeftId],
 		[t2].[ChildID] as [RightId]
 	FROM
-		[Parent] [r],
-		[Child] [t2]
+		[Parent] [r]
+			CROSS JOIN [Child] [t2]
 ) [Source]
 (
 	[source_field0],
