@@ -16,13 +16,13 @@ FROM
 			"Parent" p
 		WHERE
 			p."ParentID" > 0 AND ROWNUM <= :take
-	) p_1,
-	(
-		SELECT
-			t1."ChildID"
-		FROM
-			"Child" t1
-		WHERE
-			ROWNUM <= :take_1
-	) c_1
+	) p_1
+		CROSS JOIN (
+			SELECT
+				t1."ChildID"
+			FROM
+				"Child" t1
+			WHERE
+				ROWNUM <= :take_1
+		) c_1
 

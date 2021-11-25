@@ -4,6 +4,6 @@
 SELECT
 	c_1."ParentID"
 FROM
-	"Parent" cp,
-	"Child" c_1
+	"Parent" cp
+		CROSS JOIN "Child" c_1
 

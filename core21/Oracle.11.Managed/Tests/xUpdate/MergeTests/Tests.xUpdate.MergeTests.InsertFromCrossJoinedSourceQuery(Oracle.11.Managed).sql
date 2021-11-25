@@ -104,8 +104,8 @@ USING (
 		t1."ParentID" as "LeftId",
 		t2."ChildID" as "RightId"
 	FROM
-		"Parent" t1,
-		"Child" t2
+		"Parent" t1
+			CROSS JOIN "Child" t2
 ) "Source"
 ON (Target."GrandChildID" = "Source"."source_field0")
 
