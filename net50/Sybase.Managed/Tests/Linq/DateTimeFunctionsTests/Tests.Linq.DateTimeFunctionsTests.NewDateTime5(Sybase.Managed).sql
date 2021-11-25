@@ -2,14 +2,9 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t].[c1]
+	Convert(Date, Convert(VarChar(11), DatePart(year, [p].[DateTimeValue]) + 1) + '-10-1')
 FROM
-	(
-		SELECT
-			Convert(Date, Convert(VarChar(11), DatePart(year, [p].[DateTimeValue]) + 1) + '-10-1') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	DatePart(month, [t].[c1]) = 10
+	DatePart(month, Convert(Date, Convert(VarChar(11), DatePart(year, [p].[DateTimeValue]) + 1) + '-10-1')) = 10
 

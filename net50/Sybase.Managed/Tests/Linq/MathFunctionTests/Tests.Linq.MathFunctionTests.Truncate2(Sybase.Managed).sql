@@ -2,18 +2,17 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t].[c1]
+	CASE
+		WHEN Convert(Float, -[p].[MoneyValue]) >= 0
+			THEN Floor(Convert(Float, -[p].[MoneyValue]))
+		ELSE Ceiling(Convert(Float, -[p].[MoneyValue]))
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN Convert(Float, -[p].[MoneyValue]) >= 0
-					THEN Floor(Convert(Float, -[p].[MoneyValue]))
-				ELSE Ceiling(Convert(Float, -[p].[MoneyValue]))
-			END as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	[t].[c1] <> 0.10000000000000001
+	CASE
+		WHEN Convert(Float, -[p].[MoneyValue]) >= 0
+			THEN Floor(Convert(Float, -[p].[MoneyValue]))
+		ELSE Ceiling(Convert(Float, -[p].[MoneyValue]))
+	END <> 0.10000000000000001
 

@@ -13,8 +13,8 @@ FROM
 				ELSE 'a'
 			END as [c1]
 		FROM
-			[Parent] [parent_1],
-			[Person] [child]
+			[Parent] [parent_1]
+				INNER JOIN [Person] [child] ON 1=1
 		WHERE
 			[child].[PersonID] = [parent_1].[ParentID]
 	) [t1]

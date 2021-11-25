@@ -2,21 +2,15 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[PersonID],
-	[t1].[PersonID_1],
+	[p].[PersonID],
+	[pt].[PersonID],
 	[d].[Taxonomy]
 FROM
-	(
-		SELECT
-			[p].[PersonID],
-			[pt].[PersonID] as [PersonID_1]
-		FROM
-			[Person] [p],
-			[Patient] [pt]
-	) [t1],
-	[Doctor] [d]
+	[Person] [p]
+		INNER JOIN [Patient] [pt] ON 1=1
+		INNER JOIN [Doctor] [d] ON 1=1
 ORDER BY
-	[t1].[PersonID],
-	[t1].[PersonID_1],
+	[p].[PersonID],
+	[pt].[PersonID],
 	[d].[Taxonomy]
 

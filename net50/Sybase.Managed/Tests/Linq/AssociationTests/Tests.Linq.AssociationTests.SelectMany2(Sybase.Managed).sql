@@ -5,6 +5,6 @@ SELECT
 	[cp].[ParentID],
 	[cp].[Value1]
 FROM
-	[Parent] [cp],
-	[Child] [c_1]
+	[Parent] [cp]
+		INNER JOIN [Child] [c_1] ON 1=1
 

@@ -4,14 +4,9 @@ DECLARE @ID UniVarChar(5) -- String
 SET     @ID = '2010-'
 
 SELECT
-	[t].[c1]
+	Convert(Date, @ID + Convert(VarChar(11), [p].[ID]) + '-1')
 FROM
-	(
-		SELECT
-			Convert(Date, @ID + Convert(VarChar(11), [p].[ID]) + '-1') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [p]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	DatePart(year, Convert(Date, @ID + Convert(VarChar(11), [p].[ID]) + '-1')) = 2010
 

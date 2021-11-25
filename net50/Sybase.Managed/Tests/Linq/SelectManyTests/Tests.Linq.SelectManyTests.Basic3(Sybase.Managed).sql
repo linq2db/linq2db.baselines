@@ -4,8 +4,8 @@
 SELECT
 	[_].[ParentID] + 1
 FROM
-	[Parent] [cp],
-	[Child] [_]
+	[Parent] [cp]
+		INNER JOIN [Child] [_] ON 1=1
 WHERE
 	[_].[ParentID] > 0
 
