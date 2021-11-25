@@ -1,18 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @param  -- Int32
-SET     @param = 2
 
 SELECT
-	[t1].[ChildID],
-	[t1].[ParentID]
+	[ch].[ChildID],
+	[ch].[ParentID]
 FROM
-	(
-		SELECT
-			@param as [OrderElement],
-			[ch].[ChildID],
-			[ch].[ParentID]
-		FROM
-			[Child] [ch]
-	) [t1]
+	[Child] [ch]
 
