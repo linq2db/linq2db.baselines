@@ -40,16 +40,16 @@ BeforeExecute
 
 CREATE TABLE "billing_TempReading"
 (
-	id                 SERIAL     NOT NULL,
-	"DevSerNum"        text       NOT NULL,
-	devid              text           NULL,
-	tsdevice           TimeStamp  NOT NULL,
-	value              decimal    NOT NULL,
-	"Devtypeid"        Int            NULL,
-	"DevReadingTypeId" Int            NULL,
-	"ReadingTypeName"  text           NULL,
-	"DevGlobalType"    Int        NOT NULL,
-	"Responsibility"   Int        NOT NULL,
+	id                 SERIAL           NOT NULL,
+	"DevSerNum"        text             NOT NULL,
+	devid              text                 NULL,
+	tsdevice           TimeStamp        NOT NULL,
+	value              decimal(29, 10)  NOT NULL,
+	"Devtypeid"        Int                  NULL,
+	"DevReadingTypeId" Int                  NULL,
+	"ReadingTypeName"  text                 NULL,
+	"DevGlobalType"    Int              NOT NULL,
+	"Responsibility"   Int              NOT NULL,
 
 	CONSTRAINT "PK_billing_TempReading" PRIMARY KEY (id)
 )
