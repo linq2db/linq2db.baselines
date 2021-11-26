@@ -16,7 +16,7 @@ SELECT
 FROM
 	(
 		SELECT
-			DateTime(Cast(Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) as VarChar(11)) || '-' || @p_1 || '-' || @p_2 || ' ' || @p_3 || ':' || @p_4 || ':' || @p_5) as [c1]
+			DateTime(Cast(Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) as NVarChar(100)) || '-' || @p_1 || '-' || @p_2 || ' ' || @p_3 || ':' || @p_4 || ':' || @p_5) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
