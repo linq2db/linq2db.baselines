@@ -104,6 +104,6 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	DateTime([o].[OrderDate]) >= DateTime(Date(Cast(Cast(StrFTime('%Y', [o].[OrderDate]) as int) as VarChar(11)) || '-' || @p_1 || '-' || @p_1))
+	DateTime([o].[OrderDate]) >= DateTime(Date(Cast(Cast(StrFTime('%Y', [o].[OrderDate]) as int) as NVarChar(100)) || '-' || @p_1 || '-' || @p_1))
 LIMIT @take
 
