@@ -6,5 +6,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" || ' ' || 1 = 'John 1'
+	"p"."FirstName" || ' ' || Cast(1 as VarChar(4000) CHARACTER SET UNICODE_FSS) = 'John 1'
 
