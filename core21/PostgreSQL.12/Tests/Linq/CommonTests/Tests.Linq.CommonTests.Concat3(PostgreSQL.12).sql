@@ -6,5 +6,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	(((p."FirstName" || ' ') || Cast(1 as VarChar(11))) || Cast(2 as VarChar(11))) = 'John 12'
+	(((p."FirstName" || ' ') || Cast(1 as text)) || Cast(2 as text)) = 'John 12'
 

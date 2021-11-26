@@ -60,7 +60,7 @@ SELECT
 FROM
 	(
 		SELECT
-			' ' || Cast(Coalesce(e."Value1", 0) as VarChar(11)) as c1,
+			' ' || Cast(Coalesce(e."Value1", 0) as text) as c1,
 			(
 				SELECT
 					Sum(c_1."ChildID")
