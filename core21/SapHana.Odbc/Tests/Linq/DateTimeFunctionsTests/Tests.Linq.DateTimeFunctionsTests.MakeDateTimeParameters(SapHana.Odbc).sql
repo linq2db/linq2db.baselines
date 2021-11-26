@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast((? || Cast("p"."ID" as VarChar(11)) || '-1') as Date) as "c1"
+			Cast((? || Cast("p"."ID" as NVarChar(100)) || '-1') as Date) as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

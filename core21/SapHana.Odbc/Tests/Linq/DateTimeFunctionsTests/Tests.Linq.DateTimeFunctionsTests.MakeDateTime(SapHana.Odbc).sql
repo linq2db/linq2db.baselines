@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(('2010-' || Cast("p"."ID" as Integer) || '-1') as Date) as "c1"
+			Cast(('2010-' || Cast("p"."ID" as NVarChar(100)) || '-1') as Date) as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

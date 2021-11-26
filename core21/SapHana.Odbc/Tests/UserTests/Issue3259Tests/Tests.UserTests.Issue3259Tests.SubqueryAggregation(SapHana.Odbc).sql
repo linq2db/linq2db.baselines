@@ -200,10 +200,10 @@ BeforeExecute
 
 CREATE COLUMN TABLE "LeaveRequestDateEntry"
 (
-	"Id"             Integer NOT NULL,
-	"EndHour"        Decimal     NULL,
-	"StartHour"      Decimal     NULL,
-	"LeaveRequestId" Integer NOT NULL,
+	"Id"             Integer         NOT NULL,
+	"EndHour"        Decimal(29, 10)     NULL,
+	"StartHour"      Decimal(29, 10)     NULL,
+	"LeaveRequestId" Integer         NOT NULL,
 
 	PRIMARY KEY ("Id")
 )
