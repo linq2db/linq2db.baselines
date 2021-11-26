@@ -78,8 +78,8 @@ FROM
 			al."AlertCode",
 			al."CreationDate"
 	) al_1
-		LEFT JOIN "Trade" trade1 ON al_1."alert" = Cast(trade1."DealId" as VarChar2(11))
-		LEFT JOIN "Nomin" nomin1 ON al_1."alert" = Cast(nomin1."CargoId" as VarChar2(11))
+		LEFT JOIN "Trade" trade1 ON al_1."alert" = Cast(trade1."DealId" as VarChar(11))
+		LEFT JOIN "Nomin" nomin1 ON al_1."alert" = Cast(nomin1."CargoId" as VarChar(11))
 WHERE
 	((nomin1."DeliveryCounterParty" LIKE :DeliveryCounterParty OR trade1."CounterParty" LIKE :DeliveryCounterParty) OR al_1."alert_1" LIKE :DeliveryCounterParty)
 GROUP BY

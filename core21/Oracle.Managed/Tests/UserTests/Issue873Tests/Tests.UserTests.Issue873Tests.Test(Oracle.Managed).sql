@@ -60,7 +60,7 @@ SELECT
 FROM
 	(
 		SELECT
-			' ' || Cast(Nvl(e."Value1", 0) as VarChar2(11)) as "c1",
+			' ' || Cast(Nvl(e."Value1", 0) as VarChar(11)) as "c1",
 			(
 				SELECT
 					Sum(c_1."ChildID")
