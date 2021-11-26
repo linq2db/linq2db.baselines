@@ -9,7 +9,7 @@ FROM
 	(
 		SELECT
 			Date('2010-' || CASE
-				WHEN Length([p].[ID]) = 1 THEN '0' || Cast([p].[ID] as INTEGER)
+				WHEN Length([p].[ID]) = 1 THEN '0' || Cast([p].[ID] as NVarChar(100))
 				ELSE [p].[ID]
 			END || '-' || @p_1) as [c1]
 		FROM
