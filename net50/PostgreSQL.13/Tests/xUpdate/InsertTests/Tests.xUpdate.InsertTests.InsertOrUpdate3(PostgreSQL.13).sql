@@ -39,7 +39,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -59,7 +59,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -79,7 +79,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
