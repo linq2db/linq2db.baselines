@@ -21,7 +21,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Cast(t."ID" as SmallInt) as VarChar(3)) as c1
+			Cast(Cast(t."ID" as SmallInt) as text) as c1
 		FROM
 			"LinqDataTypes" t
 	) p
