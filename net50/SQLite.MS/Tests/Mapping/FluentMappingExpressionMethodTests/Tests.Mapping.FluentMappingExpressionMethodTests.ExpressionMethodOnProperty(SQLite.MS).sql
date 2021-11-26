@@ -50,7 +50,7 @@ SELECT
 FROM
 	[InstanceClass] [t]
 WHERE
-	Cast([t].[Id] as NVarChar(11)) || Cast([t].[Value] as NVarChar(11)) = Cast([t].[Id] as NVarChar(11)) || Cast([t].[Value] as VarChar(11))
+	Cast([t].[Id] as NVarChar(11)) || Cast([t].[Value] as NVarChar(11)) = Cast([t].[Id] as NVarChar(11)) || Cast([t].[Value] as NVarChar(100))
 
 BeforeExecute
 -- SQLite.MS SQLite
