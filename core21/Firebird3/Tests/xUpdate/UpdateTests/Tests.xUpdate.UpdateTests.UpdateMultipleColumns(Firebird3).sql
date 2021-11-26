@@ -26,7 +26,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	Cast(@ID as Int),
-	Cast(@MoneyValue as Decimal),
+	Cast(@MoneyValue as Decimal(18, 10)),
 	Cast(@SmallIntValue as SmallInt)
 )
 
