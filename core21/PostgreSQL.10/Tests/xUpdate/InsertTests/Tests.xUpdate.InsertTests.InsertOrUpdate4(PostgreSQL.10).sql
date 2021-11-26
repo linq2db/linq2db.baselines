@@ -38,10 +38,10 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as VarChar(11))
+	Cast((Length(:diagnosis) + :i) as text)
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -60,10 +60,10 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as VarChar(11))
+	Cast((Length(:diagnosis) + :i) as text)
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -82,10 +82,10 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as VarChar(11))
+	Cast((Length(:diagnosis) + :i) as text)
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

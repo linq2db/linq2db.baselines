@@ -165,7 +165,7 @@ FROM
 	"SampleClass" t
 		LEFT JOIN LATERAL (
 			SELECT
-				Cast(e.idx as VarChar(20)) || ' - ' || e.value as c1,
+				Cast(e.idx as text) || ' - ' || e.value as c1,
 				e.idx,
 				e.value as value_1
 			FROM
