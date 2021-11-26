@@ -6,5 +6,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] || ' ' || Cast(1 as VarChar(11)) = 'John 1'
+	[p].[FirstName] || ' ' || 1 = 'John 1'
 
