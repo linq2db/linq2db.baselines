@@ -50,7 +50,7 @@ SELECT
 FROM
 	"InstanceClass" t
 WHERE
-	Cast(t."Id" as VarChar(11)) || Cast(t."Value" as VarChar(11)) = Cast(t."Id" as VarChar(11)) || Cast(t."Value" as VarChar(11))
+	Cast(t."Id" as text) || Cast(t."Value" as text) = Cast(t."Id" as text) || Cast(t."Value" as text)
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
