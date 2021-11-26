@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE "TestIdTrun"
 (
-	"ID"     SERIAL   NOT NULL,
-	"Field1" decimal  NOT NULL,
+	"ID"     SERIAL           NOT NULL,
+	"Field1" decimal(29, 10)  NOT NULL,
 
 	CONSTRAINT "PK_TestIdTrun" PRIMARY KEY ("ID")
 )
