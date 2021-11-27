@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast((Cast(@ID as VarChar(255) CHARACTER SET UNICODE_FSS) || Cast("p".ID as VarChar(100) CHARACTER SET UNICODE_FSS) || '-1') as Date) as "c1"
+			Cast((Cast(@ID as VarChar(255) CHARACTER SET UNICODE_FSS) || Cast("p".ID as VarChar(11) CHARACTER SET UNICODE_FSS) || '-1') as Date) as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(('2010-' || Cast("p".ID as VarChar(100) CHARACTER SET UNICODE_FSS) || '-1 20:35:44') as TimeStamp) as "c1"
+			Cast(('2010-' || Cast("p".ID as VarChar(11) CHARACTER SET UNICODE_FSS) || '-1 20:35:44') as TimeStamp) as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

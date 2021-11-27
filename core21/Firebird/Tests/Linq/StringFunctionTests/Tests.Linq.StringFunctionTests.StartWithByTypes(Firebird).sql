@@ -17,7 +17,7 @@ EXECUTE BLOCK AS BEGIN
 				"Id"             Int                                   NOT NULL,
 				"CharColumn"     Char(50),
 				"NCharColumn"    NChar(50),
-				"VarCharColumn"  VarChar(50),
+				"VarCharColumn"  VarChar(50) CHARACTER SET UNICODE_FSS,
 				"NVarCharColumn" VarChar(50) CHARACTER SET UNICODE_FSS
 			)
 		';
