@@ -3,8 +3,8 @@
 
 CREATE TABLE IF NOT EXISTS test_temp
 (
-	ID     SERIAL           NOT NULL,
-	Field1 Decimal(29, 10)  NOT NULL,
+	ID     SERIAL   NOT NULL,
+	Field1 Decimal  NOT NULL,
 
 	PRIMARY KEY (ID)
 )
