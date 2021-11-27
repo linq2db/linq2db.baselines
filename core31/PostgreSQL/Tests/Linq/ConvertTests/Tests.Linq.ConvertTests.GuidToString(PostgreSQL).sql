@@ -8,5 +8,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Cast(t."GuidValue" as text) = :guid
+	Cast(t."GuidValue" as VarChar(36)) = :guid
 
