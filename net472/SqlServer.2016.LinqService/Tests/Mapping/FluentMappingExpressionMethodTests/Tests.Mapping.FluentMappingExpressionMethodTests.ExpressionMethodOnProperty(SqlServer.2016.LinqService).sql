@@ -381,7 +381,7 @@ SELECT
 FROM
 	[InstanceClass] [t]
 WHERE
-	Convert(NVarChar(11), [t].[Id]) + Convert(NVarChar(11), [t].[Value]) = Convert(NVarChar(11), [t].[Id]) + Convert(VarChar(11), [t].[Value])
+	Convert(NVarChar(11), [t].[Id]) + Convert(NVarChar(11), [t].[Value]) = Convert(NVarChar(11), [t].[Id]) + Convert(NVarChar(11), [t].[Value])
 
 BeforeExecute
 -- SqlServer.2016
