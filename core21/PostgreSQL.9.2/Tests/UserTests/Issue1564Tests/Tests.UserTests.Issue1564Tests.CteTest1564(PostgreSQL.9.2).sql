@@ -28,7 +28,7 @@ AS
 	SELECT
 		"innerC"."Id",
 		"innerC"."ParentId",
-		"innerC"."Name",
+		Cast("innerC"."Name" as text),
 		"innerC"."Id",
 		0
 	FROM
@@ -37,7 +37,7 @@ AS
 	SELECT
 		c_1."Id",
 		c_1."ParentId",
-		c_1."Name",
+		Cast(c_1."Name" as text),
 		ch."RootCategoryId",
 		ch."Level" + 1
 	FROM
@@ -69,7 +69,7 @@ AS
 	SELECT
 		"innerC"."Id",
 		"innerC"."ParentId",
-		"innerC"."Name",
+		Cast("innerC"."Name" as text),
 		"innerC"."Id",
 		0
 	FROM
@@ -78,7 +78,7 @@ AS
 	SELECT
 		c_1."Id",
 		c_1."ParentId",
-		c_1."Name",
+		Cast(c_1."Name" as text),
 		ch."RootCategoryId",
 		ch."Level" + 1
 	FROM
