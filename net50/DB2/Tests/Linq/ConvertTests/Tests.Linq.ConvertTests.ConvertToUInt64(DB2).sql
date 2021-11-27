@@ -10,7 +10,7 @@ FROM
 				WHEN "t"."MoneyValue" - Floor("t"."MoneyValue") = 0.5 AND Mod(Int(Floor("t"."MoneyValue")), 2) = 0
 					THEN Floor("t"."MoneyValue")
 				ELSE Round("t"."MoneyValue", 0)
-			END) as "c1"
+			END, 20, 0) as "c1"
 		FROM
 			"LinqDataTypes" "t"
 	) "p"
