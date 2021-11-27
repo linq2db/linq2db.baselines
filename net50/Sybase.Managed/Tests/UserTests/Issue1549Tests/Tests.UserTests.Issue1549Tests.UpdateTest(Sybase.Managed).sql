@@ -40,16 +40,16 @@ BeforeExecute
 
 CREATE TABLE [billing_TempReading]
 (
-	[id]               Int             IDENTITY NOT NULL,
-	[DevSerNum]        NVarChar(50)             NOT NULL,
-	[devid]            NVarChar(50)                 NULL,
-	[tsdevice]         DateTime                 NOT NULL,
-	[value]            Decimal(29, 10)          NOT NULL,
-	[Devtypeid]        Int                          NULL,
-	[DevReadingTypeId] Int                          NULL,
-	[ReadingTypeName]  NVarChar(50)                 NULL,
-	[DevGlobalType]    Int                      NOT NULL,
-	[Responsibility]   Int                      NOT NULL,
+	[id]               Int          IDENTITY NOT NULL,
+	[DevSerNum]        NVarChar(50)          NOT NULL,
+	[devid]            NVarChar(50)              NULL,
+	[tsdevice]         DateTime              NOT NULL,
+	[value]            Decimal               NOT NULL,
+	[Devtypeid]        Int                       NULL,
+	[DevReadingTypeId] Int                       NULL,
+	[ReadingTypeName]  NVarChar(50)              NULL,
+	[DevGlobalType]    Int                   NOT NULL,
+	[Responsibility]   Int                   NOT NULL,
 
 	CONSTRAINT [PK_billing_TempReading] PRIMARY KEY CLUSTERED ([id])
 )

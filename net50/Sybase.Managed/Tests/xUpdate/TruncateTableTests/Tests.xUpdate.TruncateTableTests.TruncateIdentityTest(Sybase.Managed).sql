@@ -9,8 +9,8 @@ BeforeExecute
 
 CREATE TABLE [TestIdTrun]
 (
-	[ID]     Int             IDENTITY NOT NULL,
-	[Field1] Decimal(29, 10)          NOT NULL,
+	[ID]     Int     IDENTITY NOT NULL,
+	[Field1] Decimal          NOT NULL,
 
 	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY CLUSTERED ([ID])
 )

@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(Date, '2010-' + Convert(NVarChar(100), [p].[ID]) + '-1') as [c1]
+			Convert(Date, '2010-' + Convert(NVarChar(11), [p].[ID]) + '-1') as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
