@@ -125,7 +125,7 @@ SET
 		SELECT
 			CASE
 				WHEN x_5."col3" = 'empty' THEN ''
-				ELSE Cast(am_5."id" as VarChar(11))
+				ELSE Cast(am_5."id" as VarChar2(11))
 			END
 		FROM
 			"gt_s_one" x_5
