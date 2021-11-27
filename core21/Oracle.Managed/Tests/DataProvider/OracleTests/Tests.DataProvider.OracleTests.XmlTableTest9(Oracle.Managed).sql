@@ -13,7 +13,7 @@ FROM
 				SELECT
 					Count(*)
 				FROM
-					XmlTable('/t/r' PASSING XmlType(:p_1) COLUMNS "Field1" Int path 'c0', "Field2" VarChar(2) path 'c1') t
+					XmlTable('/t/r' PASSING XmlType(:p_1) COLUMNS "Field1" Int path 'c0', "Field2" VarChar2(2) path 'c1') t
 				WHERE
 					t."Field1" = p."ParentID"
 			) as "ex",
@@ -40,7 +40,7 @@ FROM
 				SELECT
 					Count(*)
 				FROM
-					XmlTable('/t/r' PASSING XmlType(:p_1) COLUMNS "Field1" Int path 'c0', "Field2" VarChar(2) path 'c1') t
+					XmlTable('/t/r' PASSING XmlType(:p_1) COLUMNS "Field1" Int path 'c0', "Field2" VarChar2(2) path 'c1') t
 				WHERE
 					t."Field1" = p."ParentID"
 			) as "ex",

@@ -11,7 +11,7 @@ SELECT
 	t."Field1",
 	t."Field2"
 FROM
-	XmlTable('/t/r' PASSING XmlType(:p_1) COLUMNS "Field1" Int path 'c0', "Field2" VarChar(2) path 'c1') t
+	XmlTable('/t/r' PASSING XmlType(:p_1) COLUMNS "Field1" Int path 'c0', "Field2" VarChar2(2) path 'c1') t
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -22,5 +22,5 @@ SELECT
 	t."Field1",
 	t."Field2"
 FROM
-	XmlTable('/t/r' PASSING XmlType(:p_1) COLUMNS "Field1" Int path 'c0', "Field2" VarChar(2) path 'c1') t
+	XmlTable('/t/r' PASSING XmlType(:p_1) COLUMNS "Field1" Int path 'c0', "Field2" VarChar2(2) path 'c1') t
 
