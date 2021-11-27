@@ -3,8 +3,8 @@
 
 CREATE TABLE IF NOT EXISTS test_temp
 (
-	"ID"     SERIAL           NOT NULL,
-	"Field1" decimal(29, 10)  NOT NULL,
+	"ID"     SERIAL   NOT NULL,
+	"Field1" decimal  NOT NULL,
 
 	CONSTRAINT "PK_test_temp" PRIMARY KEY ("ID")
 )
