@@ -31,7 +31,7 @@ SET     @id = 5
 UPDATE
 	"Patient"
 SET
-	"Diagnosis" = Cast((Length("Patient"."Diagnosis") + :i) as text)
+	"Diagnosis" = Cast((Length("Patient"."Diagnosis") + :i) as VarChar(11))
 WHERE
 	"Patient"."PersonID" = :id
 
@@ -52,7 +52,7 @@ INSERT INTO "Patient"
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as text)
+	Cast((Length(:diagnosis) + :i) as VarChar(11))
 )
 
 BeforeExecute
@@ -65,7 +65,7 @@ SET     @id = 5
 UPDATE
 	"Patient"
 SET
-	"Diagnosis" = Cast((Length("Patient"."Diagnosis") + :i) as text)
+	"Diagnosis" = Cast((Length("Patient"."Diagnosis") + :i) as VarChar(11))
 WHERE
 	"Patient"."PersonID" = :id
 
@@ -79,7 +79,7 @@ SET     @id = 5
 UPDATE
 	"Patient"
 SET
-	"Diagnosis" = Cast((Length("Patient"."Diagnosis") + :i) as text)
+	"Diagnosis" = Cast((Length("Patient"."Diagnosis") + :i) as VarChar(11))
 WHERE
 	"Patient"."PersonID" = :id
 

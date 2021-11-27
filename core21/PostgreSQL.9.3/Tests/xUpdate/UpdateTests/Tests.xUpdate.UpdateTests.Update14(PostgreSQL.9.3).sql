@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	"Person"
 SET
-	"LastName" = Cast((Length(:name) + :idx) as text)
+	"LastName" = Cast((Length(:name) + :idx) as VarChar(11))
 WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
