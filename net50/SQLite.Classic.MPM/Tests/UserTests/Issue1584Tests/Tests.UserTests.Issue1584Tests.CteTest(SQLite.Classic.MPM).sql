@@ -72,11 +72,11 @@ BeforeExecute
 
 CREATE TABLE [RateLineItem]
 (
-	[TM_PK]        Guid            NOT NULL,
-	[TM_LineOrder] TinyInt         NOT NULL,
-	[TM_Type]      NVarChar(255)       NULL,
-	[TM_Value]     Decimal(29, 10) NOT NULL,
-	[TM_TL]        Guid            NOT NULL
+	[TM_PK]        Guid          NOT NULL,
+	[TM_LineOrder] TinyInt       NOT NULL,
+	[TM_Type]      NVarChar(255)     NULL,
+	[TM_Value]     Decimal       NOT NULL,
+	[TM_TL]        Guid          NOT NULL
 )
 
 BeforeExecute

@@ -46,7 +46,7 @@ SELECT
 FROM
 	[MappingTestClass] [t]
 WHERE
-	(Cast([t].[Flags] as INTEGER) & @p_1) <> 0
+	([t].[Flags] & @p_1) <> 0
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

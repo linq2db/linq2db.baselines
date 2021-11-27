@@ -36,16 +36,16 @@ BeforeExecute
 
 CREATE TABLE [billing_TempReading]
 (
-	[id]               INTEGER          NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[DevSerNum]        NVarChar(50)     NOT NULL,
-	[devid]            NVarChar(50)         NULL,
-	[tsdevice]         DateTime2        NOT NULL,
-	[value]            Decimal(29, 10)  NOT NULL,
-	[Devtypeid]        INTEGER              NULL,
-	[DevReadingTypeId] INTEGER              NULL,
-	[ReadingTypeName]  NVarChar(50)         NULL,
-	[DevGlobalType]    INTEGER          NOT NULL,
-	[Responsibility]   INTEGER          NOT NULL
+	[id]               INTEGER       NOT NULL PRIMARY KEY AUTOINCREMENT,
+	[DevSerNum]        NVarChar(50)  NOT NULL,
+	[devid]            NVarChar(50)      NULL,
+	[tsdevice]         DateTime2     NOT NULL,
+	[value]            Decimal       NOT NULL,
+	[Devtypeid]        INTEGER           NULL,
+	[DevReadingTypeId] INTEGER           NULL,
+	[ReadingTypeName]  NVarChar(50)      NULL,
+	[DevGlobalType]    INTEGER       NOT NULL,
+	[Responsibility]   INTEGER       NOT NULL
 )
 
 BeforeExecute

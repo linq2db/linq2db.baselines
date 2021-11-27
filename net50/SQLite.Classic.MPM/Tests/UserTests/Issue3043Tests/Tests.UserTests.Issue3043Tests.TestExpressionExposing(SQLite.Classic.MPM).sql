@@ -144,7 +144,7 @@ SET     @take = 1
 
 SELECT
 	[x].[Id],
-	[a_City].[Name] || ' ' || Cast([a_City].[Population] as NVarChar(4000))
+	[a_City].[Name] || ' ' || Cast([a_City].[Population] as NVarChar(11))
 FROM
 	[Pet3043] [x]
 		INNER JOIN [Person3043] [a_Person] ON [x].[PersonId] = [a_Person].[Id]
