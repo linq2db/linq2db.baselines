@@ -51,7 +51,7 @@ SET
 	END,
 	col6 = CASE
 		WHEN x.col3 = 'empty' THEN ''
-		ELSE Cast(am.id as text)
+		ELSE Cast(am.id as VarChar(11))
 	END
 FROM
 	gt_s_one x

@@ -64,7 +64,7 @@ SELECT
 	"joinedTable"."StatusBitmask"
 FROM
 	i1084_person k_1
-		LEFT JOIN i1084_student "joinedTable" ON k_1."Id" = "joinedTable"."Id" AND Cast(k_1."Number" as text) = "joinedTable"."Number"
+		LEFT JOIN i1084_student "joinedTable" ON k_1."Id" = "joinedTable"."Id" AND Cast(k_1."Number" as VarChar(11)) = "joinedTable"."Number"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
