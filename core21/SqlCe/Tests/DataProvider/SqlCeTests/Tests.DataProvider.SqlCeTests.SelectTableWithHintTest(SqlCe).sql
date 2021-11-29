@@ -29,5 +29,5 @@ SELECT
 	[t1].[MiddleName],
 	[t1].[Gender]
 FROM
-	[Person] [t1] WITH (TABLOCK)
+	[Person] [t1]
 
