@@ -27,15 +27,15 @@ AS
 (
 	SELECT
 		[p].[PersonID],
-		Cast([p].[FirstName] as NVarChar(Max)),
-		Cast([p].[LastName] as NVarChar(Max))
+		[p].[FirstName],
+		[p].[LastName]
 	FROM
 		[Person] [p]
 	UNION ALL
 	SELECT
 		[r].[PersonID],
-		Cast([r].[FirstName] as NVarChar(Max)),
-		Cast([r].[LastName] as NVarChar(Max))
+		[r].[FirstName],
+		[r].[LastName]
 	FROM
 		[cte] [p_1]
 			INNER JOIN [Person] [r] ON [p_1].[FirstName] = [r].[LastName]
