@@ -32,8 +32,8 @@ AS
 (
 	SELECT
 		[e_1].[EmployeeID],
-		Cast([e_1].[LastName] as NVarChar(Max)),
-		Cast([e_1].[FirstName] as NVarChar(Max)),
+		[e_1].[LastName],
+		[e_1].[FirstName],
 		[e_1].[ReportsTo],
 		1
 	FROM
@@ -43,8 +43,8 @@ AS
 	UNION ALL
 	SELECT
 		[e_2].[EmployeeID],
-		Cast([e_2].[LastName] as NVarChar(Max)),
-		Cast([e_2].[FirstName] as NVarChar(Max)),
+		[e_2].[LastName],
+		[e_2].[FirstName],
 		[e_2].[ReportsTo],
 		[eh].[HierarchyLevel] + 1
 	FROM
