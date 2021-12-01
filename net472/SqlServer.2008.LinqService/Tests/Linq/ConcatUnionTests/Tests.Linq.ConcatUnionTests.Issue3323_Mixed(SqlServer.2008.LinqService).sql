@@ -33,18 +33,31 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[t1].[Id],
-	[t1].[Text],
-	[t1].[FistName] + N' ' + [t1].[LastName]
+	[r].[Id],
+	[r].[FistName] + N' ' + [r].[LastName]
 FROM
-	[Issue3323Table] [t1]
+	[Issue3323Table] [r]
 UNION ALL
 SELECT
-	[t2].[Id],
-	[t2].[Text],
-	[t2].[FistName] + N' ' + [t2].[LastName]
+	[r_1].[Id] + 1,
+	[r_1].[Text]
 FROM
-	[Issue3323Table] [t2]
+	[Issue3323Table] [r_1]
+
+BeforeExecute
+-- SqlServer.2008
+
+SELECT
+	[r].[Id] + 1,
+	[r].[Text]
+FROM
+	[Issue3323Table] [r]
+UNION ALL
+SELECT
+	[r_1].[Id],
+	[r_1].[FistName] + N' ' + [r_1].[LastName]
+FROM
+	[Issue3323Table] [r_1]
 
 BeforeExecute
 -- SqlServer.2008

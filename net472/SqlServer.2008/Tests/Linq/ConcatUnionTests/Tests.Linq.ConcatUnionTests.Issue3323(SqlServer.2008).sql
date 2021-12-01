@@ -6,6 +6,7 @@ CREATE TABLE [Issue3323Table]
 	[Id]       Int            NOT NULL,
 	[FistName] NVarChar(4000)     NULL,
 	[LastName] NVarChar(4000)     NULL,
+	[Text]     NVarChar(4000) NOT NULL,
 
 	CONSTRAINT [PK_Issue3323Table] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -17,13 +18,15 @@ INSERT INTO [Issue3323Table]
 (
 	[Id],
 	[FistName],
-	[LastName]
+	[LastName],
+	[Text]
 )
 VALUES
 (
 	1,
 	N'one',
-	N'two'
+	N'two',
+	N'text'
 )
 
 BeforeExecute
@@ -31,12 +34,14 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
+	[t1].[Text],
 	[t1].[FistName] + N' ' + [t1].[LastName]
 FROM
 	[Issue3323Table] [t1]
 UNION ALL
 SELECT
 	[t2].[Id],
+	[t2].[Text],
 	[t2].[FistName] + N' ' + [t2].[LastName]
 FROM
 	[Issue3323Table] [t2]
