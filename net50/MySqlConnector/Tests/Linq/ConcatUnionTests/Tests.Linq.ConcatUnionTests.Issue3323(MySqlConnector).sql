@@ -6,6 +6,7 @@ CREATE TABLE `Issue3323Table`
 	`Id`       INT          NOT NULL,
 	`FistName` VARCHAR(255)     NULL,
 	`LastName` VARCHAR(255)     NULL,
+	`Text`     VARCHAR(255) NOT NULL,
 
 	CONSTRAINT `PK_Issue3323Table` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -17,13 +18,15 @@ INSERT INTO `Issue3323Table`
 (
 	`Id`,
 	`FistName`,
-	`LastName`
+	`LastName`,
+	`Text`
 )
 VALUES
 (
 	1,
 	'one',
-	'two'
+	'two',
+	'text'
 )
 
 BeforeExecute
@@ -31,12 +34,14 @@ BeforeExecute
 
 SELECT
 	`t1`.`Id`,
+	`t1`.`Text`,
 	Concat(`t1`.`FistName`, ' ', `t1`.`LastName`)
 FROM
 	`Issue3323Table` `t1`
 UNION ALL
 SELECT
 	`t2`.`Id`,
+	`t2`.`Text`,
 	Concat(`t2`.`FistName`, ' ', `t2`.`LastName`)
 FROM
 	`Issue3323Table` `t2`
