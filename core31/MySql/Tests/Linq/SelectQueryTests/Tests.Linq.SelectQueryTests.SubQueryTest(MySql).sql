@@ -25,24 +25,33 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
-	Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day),
-	Date_Add(CURRENT_TIMESTAMP, Interval 2 Day)
-FROM
-	`SampleClass` `t`
-WHERE
-	`t`.`Value` = 1
-UNION
-SELECT
-	`t1`.`Value1`,
-	`t1`.`Value2`
+	`t2`.`Value1`,
+	`t2`.`Value2`
 FROM
 	(
 		SELECT
-			Date_Add(CURRENT_TIMESTAMP, Interval 3 Day) as `Value1`,
-			Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
-	) `t1`
+			Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day) as `Value1`,
+			Date_Add(CURRENT_TIMESTAMP, Interval 2 Day) as `Value2`
+		FROM
+			`SampleClass` `t`
+		WHERE
+			`t`.`Value` = 1
+		UNION
+		SELECT
+			`t1`.`Value1`,
+			`t1`.`Value2`
+		FROM
+			(
+				SELECT
+					Date_Add(CURRENT_TIMESTAMP, Interval 3 Day) as `Value1`,
+					Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
+			) `t1`
+	) `t2`
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
