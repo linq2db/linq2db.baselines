@@ -135,32 +135,24 @@ BeforeExecute
 DECLARE @take  -- Int32
 SET     @take = 20
 
-SELECT
-	[t1].[Master],
-	[t1].[Master_1],
-	[t1].[Master_2],
-	[t1].[Master_3]
+SELECT DISTINCT
+	[e].[Master],
+	[e].[Master_1],
+	[e].[Master_2],
+	[e].[Master_3]
 FROM
 	(
-		SELECT DISTINCT
-			[e].[Master],
-			[e].[Master_1],
-			[e].[Master_2],
-			[e].[Master_3]
+		SELECT
+			[m_1].[Id1] as [Master],
+			[m_1].[Id2] as [Master_1],
+			[m_1].[Value] as [Master_2],
+			[m_1].[ByteValues] as [Master_3]
 		FROM
-			(
-				SELECT
-					[m_1].[Id1] as [Master],
-					[m_1].[Id2] as [Master_1],
-					[m_1].[Value] as [Master_2],
-					[m_1].[ByteValues] as [Master_3]
-				FROM
-					[MasterClass] [m_1]
-				ORDER BY
-					[m_1].[Id2] DESC
-				LIMIT @take
-			) [e]
-	) [t1]
+			[MasterClass] [m_1]
+		ORDER BY
+			[m_1].[Id2] DESC
+		LIMIT @take
+	) [e]
 
 BeforeExecute
 -- SQLite.MS SQLite
