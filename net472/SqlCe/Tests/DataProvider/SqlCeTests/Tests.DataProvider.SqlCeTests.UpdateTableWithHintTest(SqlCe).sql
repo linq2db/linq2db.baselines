@@ -10,7 +10,7 @@ BeforeExecute
 -- SqlCe
 
 UPDATE
-	[Person]
+	[Person] WITH (TABLOCK)
 SET
 	[Person].[FirstName] = [Person].[FirstName]
 
