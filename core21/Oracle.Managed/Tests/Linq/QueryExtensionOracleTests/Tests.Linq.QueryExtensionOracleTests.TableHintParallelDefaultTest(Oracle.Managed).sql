@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT /*+ PARALLEL(p, DEFAULT) */
+SELECT /*+ PARALLEL(p DEFAULT) */
 	p."ParentID",
 	p."Value1"
 FROM
