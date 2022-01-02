@@ -176,6 +176,16 @@ CREATE TABLE Child      (ParentID int, ChildID int)
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
+CREATE INDEX IX_ChildIndex ON Child (ParentID)
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE INDEX IX_ChildIndex2 ON Child (ParentID DESC)
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
 BeforeExecute
