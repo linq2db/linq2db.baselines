@@ -2,6 +2,10 @@
 -- Firebird3 Firebird (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_xxPerson_f3_33')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_xxPerson_f3_33"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_xxPerson_f3_33')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_xxPerson_f3_33"';
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPerson_f3_33')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "xxPerson_f3_33"';
 END
