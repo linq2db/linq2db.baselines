@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NOT NULL)
 	DROP TABLE [DateTime2Table]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NULL)
 	CREATE TABLE [DateTime2Table]
@@ -23,7 +23,7 @@ IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [DateTime2Table]
 (
@@ -43,7 +43,7 @@ VALUES
 (2,'2012-12-12T12:12:12.0001234','2012-12-12T12:12:12','2012-12-12T12:12:12.0','2012-12-12T12:12:12.00','2012-12-12T12:12:12.000','2012-12-12T12:12:12.0001','2012-12-12T12:12:12.00012','2012-12-12T12:12:12.000123','2012-12-12T12:12:12.0001234')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -57,7 +57,7 @@ WHERE
 	[_].[DTD] = @dt2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.0000000'
 
@@ -69,7 +69,7 @@ WHERE
 	[_].[DT0] = @dt2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -83,7 +83,7 @@ WHERE
 	[_].[DT1] = @dt2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -97,7 +97,7 @@ WHERE
 	[_].[DT2] = @dt2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -111,7 +111,7 @@ WHERE
 	[_].[DT3] = @dt2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -125,7 +125,7 @@ WHERE
 	[_].[DT4] = @dt2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -139,7 +139,7 @@ WHERE
 	[_].[DT5] = @dt2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -153,7 +153,7 @@ WHERE
 	[_].[DT6] = @dt2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -167,7 +167,7 @@ WHERE
 	[_].[DT7] = @dt2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -181,7 +181,7 @@ WHERE
 	[_].[DTD] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0000000'
 
@@ -193,7 +193,7 @@ WHERE
 	[_].[DT0] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -207,7 +207,7 @@ WHERE
 	[_].[DT1] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -221,7 +221,7 @@ WHERE
 	[_].[DT2] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -235,7 +235,7 @@ WHERE
 	[_].[DT3] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -249,7 +249,7 @@ WHERE
 	[_].[DT4] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -263,7 +263,7 @@ WHERE
 	[_].[DT5] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -277,7 +277,7 @@ WHERE
 	[_].[DT6] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -291,7 +291,7 @@ WHERE
 	[_].[DT7] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NOT NULL)
 	DROP TABLE [DateTime2Table]

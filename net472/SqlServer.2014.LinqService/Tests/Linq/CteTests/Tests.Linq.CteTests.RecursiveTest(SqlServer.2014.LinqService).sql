@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 WITH [MY_CTE] ([ParentID], [ChildID], [GrandChildID])
 AS

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [SimpleBulkCopyTable]
 (
@@ -10,7 +10,7 @@ BeforeExecute
 INSERT BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SimpleBulkCopyTable]', N'U') IS NOT NULL)
 	DROP TABLE [SimpleBulkCopyTable]

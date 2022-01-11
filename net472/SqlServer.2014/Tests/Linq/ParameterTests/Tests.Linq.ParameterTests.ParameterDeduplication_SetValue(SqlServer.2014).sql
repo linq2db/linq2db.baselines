@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ParameterDeduplication]', N'U') IS NOT NULL)
 	DROP TABLE [ParameterDeduplication]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ParameterDeduplication]', N'U') IS NULL)
 	CREATE TABLE [ParameterDeduplication]
@@ -23,7 +23,7 @@ IF (OBJECT_ID(N'[ParameterDeduplication]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [ParameterDeduplication]
 (
@@ -41,7 +41,7 @@ VALUES
 (2,0,0,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Int1 Int -- Int32
 SET     @Int1 = 2
 DECLARE @Int2 Int -- Int32
@@ -75,7 +75,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Int1 Int -- Int32
 SET     @Int1 = 3
 DECLARE @Int2 Int -- Int32
@@ -109,7 +109,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -126,7 +126,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ParameterDeduplication]', N'U') IS NOT NULL)
 	DROP TABLE [ParameterDeduplication]

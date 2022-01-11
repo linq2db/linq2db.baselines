@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[element_services]', N'U') IS NOT NULL)
 	DROP TABLE [element_services]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[element_services]', N'U') IS NULL)
 	CREATE TABLE [element_services]
@@ -18,7 +18,7 @@ IF (OBJECT_ID(N'[element_services]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestProcessService'
 DECLARE @is_process_service Bit -- Boolean
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestElementService'
 DECLARE @is_process_service Bit -- Boolean
@@ -62,13 +62,13 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[component_categories]', N'U') IS NOT NULL)
 	DROP TABLE [component_categories]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[component_categories]', N'U') IS NULL)
 	CREATE TABLE [component_categories]
@@ -81,7 +81,7 @@ IF (OBJECT_ID(N'[component_categories]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestProcessCategory1'
 DECLARE @service_id NVarChar(100) -- String
@@ -103,7 +103,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestProcessCategory2'
 DECLARE @service_id NVarChar(100) -- String
@@ -125,7 +125,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestElementCategory1'
 DECLARE @service_id NVarChar(100) -- String
@@ -147,7 +147,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestElementCategory2'
 DECLARE @service_id NVarChar(100) -- String
@@ -169,13 +169,13 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[components]', N'U') IS NOT NULL)
 	DROP TABLE [components]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[components]', N'U') IS NULL)
 	CREATE TABLE [components]
@@ -189,7 +189,7 @@ IF (OBJECT_ID(N'[components]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestProcessComponent1'
 DECLARE @category_id NVarChar(100) -- String
@@ -215,7 +215,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestProcessComponent2'
 DECLARE @category_id NVarChar(100) -- String
@@ -241,7 +241,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestElementComponent1'
 DECLARE @category_id NVarChar(100) -- String
@@ -267,7 +267,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id NVarChar(100) -- String
 SET     @id = N'TestElementComponent2'
 DECLARE @category_id NVarChar(100) -- String
@@ -293,7 +293,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
@@ -309,7 +309,7 @@ WHERE
 	[ie].[id] = N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[id],
@@ -321,7 +321,7 @@ WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[id],
@@ -333,19 +333,19 @@ WHERE
 	[x].[is_deleted] = 0 AND [x].[service_id] <> N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[components]', N'U') IS NOT NULL)
 	DROP TABLE [components]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[component_categories]', N'U') IS NOT NULL)
 	DROP TABLE [component_categories]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[element_services]', N'U') IS NOT NULL)
 	DROP TABLE [element_services]

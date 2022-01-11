@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue1192Table]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Issue1192Table]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -28,7 +28,7 @@ WHERE
 	[t_1].[MyOtherId] = 12
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1192Table]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1192Table]

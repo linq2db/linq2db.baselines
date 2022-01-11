@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [User]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [User]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Resource]
 (
@@ -17,7 +17,7 @@ CREATE TABLE [Resource]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Lookup]
 (
@@ -26,7 +26,7 @@ CREATE TABLE [Lookup]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -39,19 +39,19 @@ FROM
 		LEFT JOIN [User] [c_1] ON [a_AssociationTypeCode].[Type] = N'us' AND [c_1].[Id] = [t1].[AssociatedObjectId]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Lookup]', N'U') IS NOT NULL)
 	DROP TABLE [Lookup]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Resource]', N'U') IS NOT NULL)
 	DROP TABLE [Resource]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
 	DROP TABLE [User]

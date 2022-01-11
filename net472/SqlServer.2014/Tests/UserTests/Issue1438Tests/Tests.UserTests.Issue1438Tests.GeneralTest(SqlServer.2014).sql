@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue1438]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [Issue1438]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Has Bit -- Boolean
 SET     @Has = 1
 
@@ -26,7 +26,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -41,7 +41,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1438]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1438]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue1799Table1]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Issue1799Table1]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue1799Table2]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [Issue1799Table2]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue1799Table3]
 (
@@ -27,7 +27,7 @@ CREATE TABLE [Issue1799Table3]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 10
 
@@ -55,19 +55,19 @@ GROUP BY
 	[p].[ProcessName]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1799Table3]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1799Table3]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1799Table2]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1799Table2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1799Table1]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1799Table1]

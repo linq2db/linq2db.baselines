@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [AllTypes]
 (
@@ -20,7 +20,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -34,7 +34,7 @@ WHERE
 	[t].[ID] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 3
 

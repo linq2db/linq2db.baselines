@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @skip Int -- Int32
 SET     @skip = 300000
 DECLARE @take Int -- Int32

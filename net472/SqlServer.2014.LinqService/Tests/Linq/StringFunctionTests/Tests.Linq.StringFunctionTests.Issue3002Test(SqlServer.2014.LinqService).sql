@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [SampleClass]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [SampleClass]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [SampleClass]
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [SampleClass]
 (
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @test NVarChar -- String
 SET     @test = Test
 DECLARE @test_1 NVarChar(4000) -- String
@@ -58,7 +58,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @test NVarChar -- String
 SET     @test = Test
 DECLARE @test_1 NVarChar(4000) -- String
@@ -72,7 +72,7 @@ WHERE
 	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @test NVarChar -- String
 SET     @test = Value
 DECLARE @test_1 NVarChar(4000) -- String
@@ -89,7 +89,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @test NVarChar -- String
 SET     @test = Value
 DECLARE @test_1 NVarChar(4000) -- String
@@ -103,7 +103,7 @@ WHERE
 	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @test NVarChar -- String
 SET     @test = Class
 DECLARE @test_1 NVarChar(4000) -- String
@@ -120,7 +120,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @test NVarChar -- String
 SET     @test = Class
 DECLARE @test_1 NVarChar(4000) -- String
@@ -134,7 +134,7 @@ WHERE
 	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
 	DROP TABLE [SampleClass]

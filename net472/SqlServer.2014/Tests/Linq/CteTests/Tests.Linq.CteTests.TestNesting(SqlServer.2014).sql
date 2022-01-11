@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [NestingA]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [NestingA]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [NestingB]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [NestingB]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [NestingC]
 (
@@ -26,7 +26,7 @@ CREATE TABLE [NestingC]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 WITH [CTE_1] ([Property2])
 AS
@@ -51,19 +51,19 @@ FROM
 	[NestingC] [t_1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[NestingC]', N'U') IS NOT NULL)
 	DROP TABLE [NestingC]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[NestingB]', N'U') IS NOT NULL)
 	DROP TABLE [NestingB]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[NestingA]', N'U') IS NOT NULL)
 	DROP TABLE [NestingA]

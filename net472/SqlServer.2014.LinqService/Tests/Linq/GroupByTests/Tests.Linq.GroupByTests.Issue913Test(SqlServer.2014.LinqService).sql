@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NOT NULL)
 	DROP TABLE [Issue913Test]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
 	CREATE TABLE [Issue913Test]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 1
 DECLARE @TradingStatus NChar -- StringFixedLength
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 2
 DECLARE @TradingStatus NChar(1) -- StringFixedLength
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 3
 DECLARE @TradingStatus NChar(1) -- StringFixedLength
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[c1],
@@ -89,7 +89,7 @@ GROUP BY
 	[t1].[c1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NOT NULL)
 	DROP TABLE [Issue913Test]

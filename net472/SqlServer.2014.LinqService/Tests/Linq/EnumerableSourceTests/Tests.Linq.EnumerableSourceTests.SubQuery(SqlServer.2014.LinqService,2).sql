@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NOT NULL)
 	DROP TABLE [TableToInsert]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
 	CREATE TABLE [TableToInsert]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value_1 NVarChar(4000) -- String
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Value_1 NVarChar(4000) -- String
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t].[Id],
@@ -73,7 +73,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -82,7 +82,7 @@ FROM
 	[TableToInsert] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NOT NULL)
 	DROP TABLE [TableToInsert]

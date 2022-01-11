@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue1554FluentTable]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [Issue1554FluentTable]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @ClaimedKeyType NVarChar(3) -- String
 SET     @ClaimedKeyType = N'EC'
 DECLARE @ClaimedKeyTypeN NVarChar(3) -- String
@@ -50,7 +50,7 @@ WHERE
 	[p].[Id] = 0
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -62,7 +62,7 @@ FROM
 	[Issue1554FluentTable] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1554FluentTable]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1554FluentTable]

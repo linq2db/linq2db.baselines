@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
 	DROP TABLE [TakeSkipClass]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	CREATE TABLE [TakeSkipClass]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TakeSkipClass]
 (
@@ -27,7 +27,7 @@ VALUES
 ('BOLTO')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT TOP (2)
 	[t1].[Value]
@@ -37,7 +37,7 @@ ORDER BY
 	[t1].[Value]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
 	DROP TABLE [TakeSkipClass]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SampleData]', N'U') IS NOT NULL)
 	DROP TABLE [SampleData]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SampleData]', N'U') IS NULL)
 	CREATE TABLE [SampleData]
@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'[SampleData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 Int -- Int32
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value1 Int -- Int32
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value1 Int -- Int32
@@ -97,7 +97,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Value1 Int -- Int32
@@ -123,7 +123,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Value1 Int -- Int32
@@ -149,7 +149,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Value1 Int -- Int32
@@ -175,7 +175,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 7
 DECLARE @Value1 Int -- Int32
@@ -201,7 +201,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 8
 DECLARE @Value1 Int -- Int32
@@ -227,7 +227,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 9
 DECLARE @Value1 Int -- Int32
@@ -253,7 +253,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @Value1 Int -- Int32
@@ -279,7 +279,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -320,7 +320,7 @@ WHERE
 	[t_2].[Id] % 4 = 0
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SampleData]', N'U') IS NOT NULL)
 	DROP TABLE [SampleData]
