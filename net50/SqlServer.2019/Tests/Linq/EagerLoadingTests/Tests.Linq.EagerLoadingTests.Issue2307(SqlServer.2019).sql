@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [AttendanceSheet]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[AttendanceSheet]', N'U') IS NULL)
 	CREATE TABLE [AttendanceSheet]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[AttendanceSheet]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [AttendanceSheet]
 (
@@ -26,12 +26,12 @@ VALUES
 (2)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [AttendanceSheetRow]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[AttendanceSheetRow]', N'U') IS NULL)
 	CREATE TABLE [AttendanceSheetRow]
@@ -41,7 +41,7 @@ IF (OBJECT_ID(N'[AttendanceSheetRow]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [AttendanceSheetRow]
 (
@@ -55,7 +55,7 @@ VALUES
 (4,2)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[sheet].[Id],
@@ -66,7 +66,7 @@ FROM
 		INNER JOIN [AttendanceSheetRow] [detail] ON [detail].[AttendanceSheetId] = [sheet].[Id]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[sheet].[Id]
@@ -74,12 +74,12 @@ FROM
 	[AttendanceSheet] [sheet]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [AttendanceSheetRow]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [AttendanceSheet]
 

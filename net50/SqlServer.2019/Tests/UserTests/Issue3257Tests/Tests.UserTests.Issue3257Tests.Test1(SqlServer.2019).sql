@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [Checklist]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [Checklist]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [ChecklistTrigger]
 (
@@ -17,7 +17,7 @@ CREATE TABLE [ChecklistTrigger]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[x].[Id],
@@ -49,12 +49,12 @@ FROM
 	[Checklist] [x]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [ChecklistTrigger]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Checklist]
 

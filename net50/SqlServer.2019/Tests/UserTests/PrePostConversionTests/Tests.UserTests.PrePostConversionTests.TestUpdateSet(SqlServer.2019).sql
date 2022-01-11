@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [ValuesTable]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [ValuesTable]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id BigInt -- Int64
 SET     @Id = 1
 DECLARE @SomeValue1 Int -- Int32
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @SomeValue1 Int -- Int32
 SET     @SomeValue1 = 8
 
@@ -46,7 +46,7 @@ FROM
 	[ValuesTable] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -58,7 +58,7 @@ FROM
 	[ValuesTable] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 8
 
@@ -70,7 +70,7 @@ FROM
 	[ValuesTable] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -82,7 +82,7 @@ FROM
 	[ValuesTable] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [ValuesTable]
 

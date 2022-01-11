@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[c_1].[CategoryID],

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [TableToInsert]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
 	CREATE TABLE [TableToInsert]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [TableToInsert]
 (
@@ -28,7 +28,7 @@ VALUES
 (4,N'Doe')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 UPDATE
 	[t]
@@ -41,7 +41,7 @@ FROM
 		) [r]([Id], [Value]) ON [t].[Id] = [r].[Id]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -50,7 +50,7 @@ FROM
 	[TableToInsert] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [TableToInsert]
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SelectExpressionTable]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NULL)
 	CREATE TABLE [SelectExpressionTable]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [SelectExpressionTable]
 (
@@ -25,7 +25,7 @@ VALUES
 (1)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -35,7 +35,7 @@ FROM
 	[SelectExpressionTable] [_]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SelectExpressionTable]
 

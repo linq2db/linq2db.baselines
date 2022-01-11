@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -16,7 +16,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @DateTimeValue2 DateTime2
 SET     @DateTimeValue2 = '2009-09-24T09:19:29.0900000'
 

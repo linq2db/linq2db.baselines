@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[Fax],
@@ -17,7 +17,7 @@ FROM
 	[Customers] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[PhotoPath],
@@ -42,7 +42,7 @@ FROM
 	[Employees] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[ShipCountry],
@@ -63,7 +63,7 @@ FROM
 	[Orders] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[ProductID],
@@ -80,7 +80,7 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @city NVarChar(4000) -- String
 SET     @city = N'Seattle'
 
@@ -105,7 +105,7 @@ WHERE
 	[o].[ShipCity] = @city
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @city NVarChar(4000) -- String
 SET     @city = N'Rio de Janeiro'
 

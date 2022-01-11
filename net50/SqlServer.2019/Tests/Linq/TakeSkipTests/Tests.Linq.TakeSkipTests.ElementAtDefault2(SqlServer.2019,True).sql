@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 300000
 DECLARE @take Int -- Int32

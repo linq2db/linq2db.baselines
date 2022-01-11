@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	MAX([c1].[CategoryName]) OVER(PARTITION BY IIF([c1].[CategoryID] IS NOT NULL, 1, 0))

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @p_1 NVarChar(4000) -- String
 SET     @p_1 = N'seafood | bread'
 DECLARE @p_2 NVarChar(4000) -- String
