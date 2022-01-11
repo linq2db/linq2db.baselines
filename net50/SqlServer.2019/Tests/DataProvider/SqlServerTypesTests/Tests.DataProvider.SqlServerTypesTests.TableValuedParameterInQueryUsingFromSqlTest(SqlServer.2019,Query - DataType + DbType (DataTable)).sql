@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
