@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [TableWithData]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 	CREATE TABLE [TableWithData]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [TableWithData]
 (
@@ -36,7 +36,7 @@ VALUES
 (10,-10,N'Str10')
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 
 UPDATE
 	[s]
@@ -56,7 +56,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [TableWithData]
 

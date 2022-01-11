@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DELETE [_]
 FROM
@@ -13,7 +13,7 @@ WHERE
 	[_].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -41,7 +41,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Value_1 NChar(1) -- StringFixedLength
 SET     @Value_1 = N'O'
 
@@ -55,7 +55,7 @@ WHERE
 	[_].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @id Int -- Int32
@@ -73,7 +73,7 @@ WHERE
 	[_].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DELETE [_]
 FROM

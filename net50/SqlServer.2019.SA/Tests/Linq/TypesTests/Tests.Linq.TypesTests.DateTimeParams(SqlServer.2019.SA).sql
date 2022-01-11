@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @dateTime DateTime2
@@ -13,7 +13,7 @@ WHERE
 	[t].[DateTimeValue] > @dateTime
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @dateTime DateTime2

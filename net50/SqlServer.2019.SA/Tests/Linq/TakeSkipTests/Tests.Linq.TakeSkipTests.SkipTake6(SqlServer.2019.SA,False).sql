@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[c_1].[ParentID],
@@ -16,7 +16,7 @@ WHERE
 	[c_1].[ParentID] = [t1].[ParentID]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[c_1].[ParentID],

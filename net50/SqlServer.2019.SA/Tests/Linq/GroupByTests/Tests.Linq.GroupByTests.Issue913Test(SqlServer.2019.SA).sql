@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue913Test]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
 	CREATE TABLE [Issue913Test]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [Issue913Test]
 (
@@ -29,7 +29,7 @@ VALUES
 (3,N'D')
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[t1].[c1],
@@ -47,7 +47,7 @@ GROUP BY
 	[t1].[c1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue913Test]
 

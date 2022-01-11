@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @value1 Int -- Int32
 SET     @value1 = NULL
 DECLARE @value2 Int -- Int32
@@ -14,7 +14,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @value1 Int -- Int32
 SET     @value1 = 1
 DECLARE @value2 Int -- Int32
@@ -29,7 +29,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @value1 Int -- Int32
 SET     @value1 = NULL
 DECLARE @value2 Int -- Int32
@@ -44,7 +44,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @value1 Int -- Int32
 SET     @value1 = 2
 DECLARE @value2 Int -- Int32
@@ -59,7 +59,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @value1 Int -- Int32
 SET     @value1 = 3
 DECLARE @value2 Int -- Int32

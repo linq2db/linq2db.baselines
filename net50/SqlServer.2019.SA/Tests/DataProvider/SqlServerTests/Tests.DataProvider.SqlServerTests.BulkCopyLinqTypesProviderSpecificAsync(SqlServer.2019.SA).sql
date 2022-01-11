@@ -2,7 +2,7 @@
 INSERT ASYNC BULK [dbo].[LinqDataTypes](ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DELETE [t1]
 FROM

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DELETE [p]
 FROM
@@ -13,7 +13,7 @@ WHERE
 	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 
 INSERT INTO [Person]
 (
@@ -31,7 +31,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
@@ -59,7 +59,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
@@ -87,7 +87,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
@@ -115,7 +115,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -130,7 +130,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -141,7 +141,7 @@ WHERE
 	[t1].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 

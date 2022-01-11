@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [test_insert_or_replace]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [test_insert_or_replace]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 MERGE INTO [test_insert_or_replace] [t1]
 USING (SELECT 1 AS [id]) [s] ON
@@ -32,7 +32,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 MERGE INTO [test_insert_or_replace] [t1]
 USING (SELECT 1 AS [id]) [s] ON
@@ -52,7 +52,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [test_insert_or_replace]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [Issue1096Task]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [Issue1096Task]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [Issue1096TaskStage]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [Issue1096TaskStage]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(4000) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(4000) -- String
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TaskId Int -- Int32
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT DISTINCT
 	[t].[Id],
@@ -91,12 +91,12 @@ FROM
 		LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON [t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1096TaskStage]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1096Task]
 

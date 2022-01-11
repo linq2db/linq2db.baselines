@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 
 CREATE TABLE [#TempTable]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [#TempTable]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 
 INSERT INTO [#TempTable]
 (
@@ -24,12 +24,12 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [#TempTable]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE [TempTable]
 
