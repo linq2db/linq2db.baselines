@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [ValueItem]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [ValueItem]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [ValueItem]
 (
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[row_1].[Value]
@@ -27,7 +27,7 @@ FROM
 	[ValueItem] [row_1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueItem]', N'U') IS NOT NULL)
 	DROP TABLE [ValueItem]

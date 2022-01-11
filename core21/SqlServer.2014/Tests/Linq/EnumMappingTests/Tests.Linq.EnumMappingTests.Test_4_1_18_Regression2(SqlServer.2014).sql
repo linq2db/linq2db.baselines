@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 
@@ -10,7 +10,7 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @Id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [LinqDataTypes]
 (
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[r].[BigIntValue],
@@ -37,7 +37,7 @@ WHERE
 	[r].[ID] = 101
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 

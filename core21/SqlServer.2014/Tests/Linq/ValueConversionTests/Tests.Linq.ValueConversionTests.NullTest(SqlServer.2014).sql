@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
 	DROP TABLE [ValueConversion]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	CREATE TABLE [ValueConversion]
@@ -25,7 +25,7 @@ IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [ValueConversion]
 (
@@ -53,7 +53,7 @@ VALUES
 (10,NULL,NULL,N'Value1','Value2','Value2','Value2','N','F',NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t].[Id],
@@ -65,7 +65,7 @@ WHERE
 	[t].[Value2] IS NULL
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
 	DROP TABLE [ValueConversion]

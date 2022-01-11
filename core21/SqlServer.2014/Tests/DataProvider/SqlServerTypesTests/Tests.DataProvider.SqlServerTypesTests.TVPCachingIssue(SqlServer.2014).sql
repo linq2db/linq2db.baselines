@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
@@ -44,7 +44,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
@@ -70,7 +70,7 @@ FROM
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
@@ -89,7 +89,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
@@ -115,7 +115,7 @@ FROM
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
@@ -134,7 +134,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
@@ -160,7 +160,7 @@ FROM
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 

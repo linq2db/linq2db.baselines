@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @str_1 NVarChar(4000) -- String
 SET     @str_1 = N'%o~%h%'
 

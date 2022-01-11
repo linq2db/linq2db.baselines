@@ -50,7 +50,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[ParentID]
@@ -59,7 +59,7 @@ FROM
 		INNER JOIN [Child] [y] ON [x].[ParentID] = [y].[ParentID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[ParentID]

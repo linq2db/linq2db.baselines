@@ -35,7 +35,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t1]
 FROM
@@ -44,7 +44,7 @@ WHERE
 	[t1].[ParentID] > 1000
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Parent]
 (
@@ -70,7 +70,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	Count(*)
@@ -80,7 +80,7 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t1]
 FROM

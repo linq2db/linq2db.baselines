@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ParentID]
@@ -9,7 +9,7 @@ GROUP BY
 	[t1].[ParentID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Users]', N'U') IS NOT NULL)
 	DROP TABLE [Users]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Users]', N'U') IS NULL)
 	CREATE TABLE [Users]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Users]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Users]
 (
@@ -28,7 +28,7 @@ VALUES
 (1,0)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @maxVersion Int -- Int32
 SET     @maxVersion = 1
 
@@ -40,7 +40,7 @@ WHERE
 	[u].[Version] < @maxVersion
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Users]', N'U') IS NOT NULL)
 	DROP TABLE [Users]

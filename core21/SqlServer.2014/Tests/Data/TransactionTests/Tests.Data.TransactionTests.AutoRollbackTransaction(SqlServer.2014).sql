@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 UPDATE
 	[t1]
@@ -29,7 +29,7 @@ WHERE
 	[t1].[ParentID] = 1010
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -42,7 +42,7 @@ WHERE
 	[t].[ParentID] = 1010
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t1]
 FROM

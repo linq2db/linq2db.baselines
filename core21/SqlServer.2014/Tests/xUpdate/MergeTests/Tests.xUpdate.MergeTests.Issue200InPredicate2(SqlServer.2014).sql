@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @DateTime DateTime2
 SET     @DateTime = '2020-02-29T17:54:55.1231234'
 DECLARE @DateTimeOffset DateTimeOffset
@@ -38,7 +38,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ID],

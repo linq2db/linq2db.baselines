@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Entity1711]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Entity1711]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Relationship1711]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [Relationship1711]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t].[Id]
@@ -35,13 +35,13 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Relationship1711]', N'U') IS NOT NULL)
 	DROP TABLE [Relationship1711]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Entity1711]', N'U') IS NOT NULL)
 	DROP TABLE [Entity1711]

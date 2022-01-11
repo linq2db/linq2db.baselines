@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 MERGE INTO [AllTypes2] [Target]
 USING (VALUES
@@ -34,7 +34,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [User]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [User]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [User]
 (
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [User]
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[a_Data].[Value_1],
@@ -49,7 +49,7 @@ FROM
 		) [a_Data] ON [t].[Id] = [t].[Id]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
 	DROP TABLE [User]

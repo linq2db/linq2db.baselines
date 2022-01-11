@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DROP TABLE [AllTypeCreateTest]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [AllTypeCreateTest]
 (
@@ -53,7 +53,7 @@ CREATE TABLE [AllTypeCreateTest]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ID],
@@ -102,7 +102,7 @@ FROM
 	[AllTypeCreateTest] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DROP TABLE [AllTypeCreateTest]
 

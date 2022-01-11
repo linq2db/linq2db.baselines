@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Table1]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Table1]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Table2]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [Table2]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Table3]
 (
@@ -26,7 +26,7 @@ CREATE TABLE [Table3]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Table4]
 (
@@ -35,7 +35,7 @@ CREATE TABLE [Table4]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Table5]
 (
@@ -44,7 +44,7 @@ CREATE TABLE [Table5]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t11].[Field1]
@@ -73,31 +73,31 @@ WHERE
 	[t6].[Field1] = [t11].[Field1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Table5]', N'U') IS NOT NULL)
 	DROP TABLE [Table5]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Table4]', N'U') IS NOT NULL)
 	DROP TABLE [Table4]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Table3]', N'U') IS NOT NULL)
 	DROP TABLE [Table3]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Table2]', N'U') IS NOT NULL)
 	DROP TABLE [Table2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Table1]', N'U') IS NOT NULL)
 	DROP TABLE [Table1]

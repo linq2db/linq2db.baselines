@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 CREATE TABLE [#TempTable]
 (
@@ -13,12 +13,12 @@ CREATE TABLE [#TempTable]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 DROP TABLE [#TempTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [#TempTable]
