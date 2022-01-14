@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT /*+ MODEL_MIN_ANALYSIS */
+SELECT /*+ ENABLE_PARALLEL_DML */
 	p."ParentID",
 	p."Value1"
 FROM

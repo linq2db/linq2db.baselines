@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT /*+ MODEL_MIN_ANALYSIS */
+SELECT /*+ NATIVE_FULL_OUTER_JOIN */
 	p."ParentID",
 	p."Value1"
 FROM

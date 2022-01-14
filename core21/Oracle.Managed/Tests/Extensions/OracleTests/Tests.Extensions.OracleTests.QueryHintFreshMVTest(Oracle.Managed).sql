@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT /*+ MODEL_MIN_ANALYSIS */
+SELECT /*+ FRESH_MV */
 	p."ParentID",
 	p."Value1"
 FROM

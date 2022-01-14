@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT /*+ FULL(p) HASH(p) PARALLEL(2) */
-	p."ParentID",
-	p."Value1"
+SELECT /*+ FULL(t) HASH(t) PARALLEL(2) */
+	t."ParentID",
+	t."ChildID"
 FROM
-	"Parent" p
+	"Child" t
 

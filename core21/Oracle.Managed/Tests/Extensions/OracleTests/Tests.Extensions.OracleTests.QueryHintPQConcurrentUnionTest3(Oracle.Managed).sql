@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT /*+ MODEL_MIN_ANALYSIS */
+SELECT /*+ QB_NAME(qb) PQ_CONCURRENT_UNION(@qb) */
 	p."ParentID",
 	p."Value1"
 FROM

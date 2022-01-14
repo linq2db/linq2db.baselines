@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
 
-SELECT /*+ MODEL_MIN_ANALYSIS */
+SELECT /*+ NO_USE_CUBE(c_1 p) */
 	p."ParentID",
 	p."Value1"
 FROM
