@@ -2,8 +2,8 @@
 -- SqlCe
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[t].[ParentID],
+	[t].[ChildID]
 FROM
-	[Parent] [p] WITH (NoLock)
+	[Child] [t] WITH (NoLock)
 
