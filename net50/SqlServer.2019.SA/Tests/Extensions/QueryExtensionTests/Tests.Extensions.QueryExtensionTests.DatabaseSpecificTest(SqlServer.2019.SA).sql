@@ -2,9 +2,9 @@
 -- SqlServer.2019.SA SqlServer.2019
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[t].[ParentID],
+	[t].[ChildID]
 FROM
-	[Parent] [p] WITH (NoLock, NoWait, ReadUncommitted)
+	[Child] [t] WITH (NoLock, NoWait, ReadUncommitted)
 OPTION (RECOMPILE)
 

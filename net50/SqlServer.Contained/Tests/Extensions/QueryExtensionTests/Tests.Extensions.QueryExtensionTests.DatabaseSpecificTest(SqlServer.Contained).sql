@@ -2,9 +2,9 @@
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[t].[ParentID],
+	[t].[ChildID]
 FROM
-	[Parent] [p] WITH (NoLock, NoWait, ReadUncommitted)
+	[Child] [t] WITH (NoLock, NoWait, ReadUncommitted)
 OPTION (RECOMPILE)
 
