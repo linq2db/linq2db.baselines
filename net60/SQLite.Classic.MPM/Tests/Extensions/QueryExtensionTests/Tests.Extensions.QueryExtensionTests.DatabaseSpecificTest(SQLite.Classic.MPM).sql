@@ -2,8 +2,8 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[t].[ParentID],
+	[t].[ChildID]
 FROM
-	[Parent] [p]
+	[Child] [t]
 
