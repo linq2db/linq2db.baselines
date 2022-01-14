@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT /*+ MODEL_MIN_ANALYSIS */
+SELECT /*+ OPT_PARAM('star_transformation_enabled' 'true') */
 	p."ParentID",
 	p."Value1"
 FROM
