@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`p`.`ParentID`,
-	`p`.`Value1`
+SELECT /*+ MAX_EXECUTION_TIME(1000) */
+	`t`.`ParentID`,
+	`t`.`ChildID`
 FROM
-	`Parent` `p`
+	`Child` `t` USE INDEX(IX_ChildIndex)
 
