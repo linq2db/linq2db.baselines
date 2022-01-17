@@ -123,12 +123,150 @@ BeforeExecute
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @NAME Varchar2 -- String
+SET     @NAME = ''
+DECLARE @NAME Varchar2 -- String
+SET     @NAME = ''
+DECLARE @SUBNAME Varchar2 -- String
+SET     @SUBNAME = ''
+DECLARE @SUBNAME Varchar2 -- String
+SET     @SUBNAME = ''
+DECLARE @USR Varchar2 -- String
+SET     @USR = ''
+DECLARE @USR Varchar2 -- String
+SET     @USR = ''
+DECLARE @DBNAME Varchar2 -- String
+SET     @DBNAME = ''
+DECLARE @TXT Varchar2 -- String
+SET     @TXT = ''
+DECLARE @DBOWNER Varchar2 -- String
+SET     @DBOWNER = ''
+DECLARE @TXT Varchar2 -- String
+SET     @TXT = ''
+DECLARE @STATUS Varchar2 -- String
+SET     @STATUS = NULL
+
+SYS.SUBPTXT
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @OP Decimal(22)
+SET     @OP = 0
+
+SYS.ODCIINDEXINFOFLAGSDUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @IA 0 -- Object
+SET     @IA = NULL
+
+SYS.ODCIINDEXINFODUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @OP 0 -- Object
+SET     @OP = NULL
+
+SYS.ODCIPREDINFODUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @CI 0 -- Object
+SET     @CI = NULL
+
+SYS.ODCICOLINFODUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @AD Varchar2 -- String
+SET     @AD = NULL
+
+SYS.ODCIANYDATADUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @QI 0 -- Object
+SET     @QI = NULL
+
+SYS.ODCIQUERYINFODUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @SO 0 -- Object
+SET     @SO = NULL
+
+SYS.ODCISTATSOPTIONSDUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @ENV 0 -- Object
+SET     @ENV = NULL
+
+SYS.ODCIENVDUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @OP Decimal(22)
+SET     @OP = 0
+
+SYS.ODCIINDEXALTEROPTIONDUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @OP Decimal(22)
+SET     @OP = 0
+
+SYS.ODCIINDEXCALLPROPERTYDUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @PINFO 0 -- Object
+SET     @PINFO = NULL
+
+SYS.ODCIPARTINFODUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @PLIST Varchar2 -- String
+SET     @PLIST = NULL
+
+SYS.ODCIPARTINFOLISTDUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @TI 0 -- Object
+SET     @TI = NULL
+
+SYS.ODCITABFUNCINFODUMP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
 DECLARE @QLEN Decimal(22)
 SET     @QLEN = 0
 DECLARE @UBKS Decimal(22)
 SET     @UBKS = 0
 
 SYS.LOAD_UNDO_STAT
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+SYS.RESET_UNDO_STAT
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @CONTEXT Blob -- Object
+SET     @CONTEXT = NULL
+DECLARE @REGINFO 0 -- Object
+SET     @REGINFO = NULL
+DECLARE @DESCR 0 -- Object
+SET     @DESCR = NULL
+DECLARE @PAYLOAD Blob -- Object
+SET     @PAYLOAD = NULL
+DECLARE @PAYLOADL Decimal(22)
+SET     @PAYLOADL = 0
+
+SYS.SCHEDULER$_JOB_EVENT_HANDLER
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -217,111 +355,6 @@ SYS.LOGMNR_GTLO3
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @AD Varchar2 -- String
-SET     @AD = NULL
-
-SYS.ODCIANYDATADUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @CI 0 -- Object
-SET     @CI = NULL
-
-SYS.ODCICOLINFODUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @ENV 0 -- Object
-SET     @ENV = NULL
-
-SYS.ODCIENVDUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @OP Decimal(22)
-SET     @OP = 0
-
-SYS.ODCIINDEXALTEROPTIONDUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @OP Decimal(22)
-SET     @OP = 0
-
-SYS.ODCIINDEXCALLPROPERTYDUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @IA 0 -- Object
-SET     @IA = NULL
-
-SYS.ODCIINDEXINFODUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @OP Decimal(22)
-SET     @OP = 0
-
-SYS.ODCIINDEXINFOFLAGSDUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @PINFO 0 -- Object
-SET     @PINFO = NULL
-
-SYS.ODCIPARTINFODUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @PLIST Varchar2 -- String
-SET     @PLIST = NULL
-
-SYS.ODCIPARTINFOLISTDUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @OP 0 -- Object
-SET     @OP = NULL
-
-SYS.ODCIPREDINFODUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @QI 0 -- Object
-SET     @QI = NULL
-
-SYS.ODCIQUERYINFODUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @SO 0 -- Object
-SET     @SO = NULL
-
-SYS.ODCISTATSOPTIONSDUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @TI 0 -- Object
-SET     @TI = NULL
-
-SYS.ODCITABFUNCINFODUMP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @DRIVERVERSION Varchar2 -- String
-SET     @DRIVERVERSION = ''
-DECLARE @SERVERVERSION Varchar2 -- String
-SET     @SERVERVERSION = ''
-
-SYS.OLAPIHANDSHAKE2
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-SYS.RESET_UNDO_STAT
-
-BeforeExecute
--- Oracle.Managed Oracle12
 DECLARE @CONTEXT Blob -- Object
 SET     @CONTEXT = NULL
 DECLARE @REGINFO 0 -- Object
@@ -337,21 +370,6 @@ SYS.SCHEDULER$NTFY_SVC_METRICS
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @CONTEXT Blob -- Object
-SET     @CONTEXT = NULL
-DECLARE @REGINFO 0 -- Object
-SET     @REGINFO = NULL
-DECLARE @DESCR 0 -- Object
-SET     @DESCR = NULL
-DECLARE @PAYLOAD Blob -- Object
-SET     @PAYLOAD = NULL
-DECLARE @PAYLOADL Decimal(22)
-SET     @PAYLOADL = 0
-
-SYS.SCHEDULER$_JOB_EVENT_HANDLER
-
-BeforeExecute
--- Oracle.Managed Oracle12
 DECLARE @OBJECT_SCHEMA Varchar2 -- String
 SET     @OBJECT_SCHEMA = ''
 DECLARE @OBJECT_NAME Varchar2 -- String
@@ -363,30 +381,119 @@ SYS.SETMODFLG
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @NAME Varchar2 -- String
-SET     @NAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @SUBNAME Varchar2 -- String
-SET     @SUBNAME = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @USR Varchar2 -- String
-SET     @USR = ''
-DECLARE @DBNAME Varchar2 -- String
-SET     @DBNAME = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @DBOWNER Varchar2 -- String
-SET     @DBOWNER = ''
-DECLARE @TXT Varchar2 -- String
-SET     @TXT = ''
-DECLARE @STATUS Varchar2 -- String
-SET     @STATUS = NULL
+DECLARE @DRIVERVERSION Varchar2 -- String
+SET     @DRIVERVERSION = ''
+DECLARE @SERVERVERSION Varchar2 -- String
+SET     @SERVERVERSION = ''
 
-SYS.SUBPTXT
+SYS.OLAPIHANDSHAKE2
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @PPERSONID Decimal(22)
+SET     @PPERSONID = 0
+
+SYSTEM.PERSON_DELETE
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @PFIRSTNAME NVarchar2 -- String
+SET     @PFIRSTNAME = ''
+DECLARE @PLASTNAME NVarchar2 -- String
+SET     @PLASTNAME = ''
+DECLARE @PMIDDLENAME NVarchar2 -- String
+SET     @PMIDDLENAME = ''
+DECLARE @PGENDER Char -- AnsiStringFixedLength
+SET     @PGENDER = ''
+DECLARE @PPERSONID Decimal(22)
+SET     @PPERSONID = 0
+
+SYSTEM.PERSON_INSERT_OUTPUTPARAMETER
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @PPERSONID Decimal(22)
+SET     @PPERSONID = 0
+DECLARE @PFIRSTNAME NVarchar2 -- String
+SET     @PFIRSTNAME = ''
+DECLARE @PLASTNAME NVarchar2 -- String
+SET     @PLASTNAME = ''
+DECLARE @PMIDDLENAME NVarchar2 -- String
+SET     @PMIDDLENAME = ''
+DECLARE @PGENDER Char -- AnsiStringFixedLength
+SET     @PGENDER = ''
+
+SYSTEM.PERSON_UPDATE
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @PID Decimal(22)
+SET     @PID = 0
+DECLARE @POUTPUTID Decimal(22)
+SET     @POUTPUTID = 0
+DECLARE @PINPUTOUTPUTID Decimal(22)
+SET     @PINPUTOUTPUTID = 0
+DECLARE @PSTR NVarchar2 -- String
+SET     @PSTR = ''
+DECLARE @POUTPUTSTR NVarchar2 -- String
+SET     @POUTPUTSTR = ''
+DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
+SET     @PINPUTOUTPUTSTR = ''
+
+SYSTEM.OUTREFTEST
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @PSTR NVarchar2 -- String
+SET     @PSTR = ''
+DECLARE @POUTPUTSTR NVarchar2 -- String
+SET     @POUTPUTSTR = ''
+DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
+SET     @PINPUTOUTPUTSTR = ''
+
+SYSTEM.OUTREFENUMTEST
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @PINTARRAY Varchar2 -- String
+SET     @PINTARRAY = NULL
+DECLARE @POUTPUTINTARRAY Varchar2 -- String
+SET     @POUTPUTINTARRAY = NULL
+DECLARE @PINPUTOUTPUTINTARRAY Varchar2 -- String
+SET     @PINPUTOUTPUTINTARRAY = NULL
+DECLARE @PSTRARRAY Varchar2 -- String
+SET     @PSTRARRAY = NULL
+DECLARE @POUTPUTSTRARRAY Varchar2 -- String
+SET     @POUTPUTSTRARRAY = NULL
+DECLARE @PINPUTOUTPUTSTRARRAY Varchar2 -- String
+SET     @PINPUTOUTPUTSTRARRAY = NULL
+
+SYSTEM.ARRAYTEST
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @POUTPUTINTARRAY Varchar2 -- String
+SET     @POUTPUTINTARRAY = NULL
+
+SYSTEM.SCALARARRAY
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @MR Varchar2 -- String
+SET     @MR = NULL
+DECLARE @SR Varchar2 -- String
+SET     @SR = NULL
+
+SYSTEM.RESULTSETTEST
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @POUTPUTINT Varchar2 -- String
+SET     @POUTPUTINT = NULL
+DECLARE @POUTPUTSTRING NVarchar2 -- String
+SET     @POUTPUTSTRING = ''
+
+SYSTEM.SCALAR_OUTPUTPARAMETER
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -454,113 +561,6 @@ SYSTEM.ALLOUTPUTPARAMETERS
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @PINTARRAY Varchar2 -- String
-SET     @PINTARRAY = NULL
-DECLARE @POUTPUTINTARRAY Varchar2 -- String
-SET     @POUTPUTINTARRAY = NULL
-DECLARE @PINPUTOUTPUTINTARRAY Varchar2 -- String
-SET     @PINPUTOUTPUTINTARRAY = NULL
-DECLARE @PSTRARRAY Varchar2 -- String
-SET     @PSTRARRAY = NULL
-DECLARE @POUTPUTSTRARRAY Varchar2 -- String
-SET     @POUTPUTSTRARRAY = NULL
-DECLARE @PINPUTOUTPUTSTRARRAY Varchar2 -- String
-SET     @PINPUTOUTPUTSTRARRAY = NULL
-
-SYSTEM.ARRAYTEST
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @PSTR NVarchar2 -- String
-SET     @PSTR = ''
-DECLARE @POUTPUTSTR NVarchar2 -- String
-SET     @POUTPUTSTR = ''
-DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
-SET     @PINPUTOUTPUTSTR = ''
-
-SYSTEM.OUTREFENUMTEST
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @PID Decimal(22)
-SET     @PID = 0
-DECLARE @POUTPUTID Decimal(22)
-SET     @POUTPUTID = 0
-DECLARE @PINPUTOUTPUTID Decimal(22)
-SET     @PINPUTOUTPUTID = 0
-DECLARE @PSTR NVarchar2 -- String
-SET     @PSTR = ''
-DECLARE @POUTPUTSTR NVarchar2 -- String
-SET     @POUTPUTSTR = ''
-DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
-SET     @PINPUTOUTPUTSTR = ''
-
-SYSTEM.OUTREFTEST
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @PPERSONID Decimal(22)
-SET     @PPERSONID = 0
-
-SYSTEM.PERSON_DELETE
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @PFIRSTNAME NVarchar2 -- String
-SET     @PFIRSTNAME = ''
-DECLARE @PLASTNAME NVarchar2 -- String
-SET     @PLASTNAME = ''
-DECLARE @PMIDDLENAME NVarchar2 -- String
-SET     @PMIDDLENAME = ''
-DECLARE @PGENDER Char -- AnsiStringFixedLength
-SET     @PGENDER = ''
-DECLARE @PPERSONID Decimal(22)
-SET     @PPERSONID = 0
-
-SYSTEM.PERSON_INSERT_OUTPUTPARAMETER
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @PPERSONID Decimal(22)
-SET     @PPERSONID = 0
-DECLARE @PFIRSTNAME NVarchar2 -- String
-SET     @PFIRSTNAME = ''
-DECLARE @PLASTNAME NVarchar2 -- String
-SET     @PLASTNAME = ''
-DECLARE @PMIDDLENAME NVarchar2 -- String
-SET     @PMIDDLENAME = ''
-DECLARE @PGENDER Char -- AnsiStringFixedLength
-SET     @PGENDER = ''
-
-SYSTEM.PERSON_UPDATE
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @MR Varchar2 -- String
-SET     @MR = NULL
-DECLARE @SR Varchar2 -- String
-SET     @SR = NULL
-
-SYSTEM.RESULTSETTEST
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @POUTPUTINTARRAY Varchar2 -- String
-SET     @POUTPUTINTARRAY = NULL
-
-SYSTEM.SCALARARRAY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @POUTPUTINT Varchar2 -- String
-SET     @POUTPUTINT = NULL
-DECLARE @POUTPUTSTRING NVarchar2 -- String
-SET     @POUTPUTSTRING = ''
-
-SYSTEM.SCALAR_OUTPUTPARAMETER
-
-BeforeExecute
--- Oracle.Managed Oracle12
 
 SYSTEM.TEST2132
 
@@ -620,6 +620,83 @@ REMOTE_SCHEDULER_AGENT.ADD_AGENT_CERTIFICATE
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @JOB_OWNER Varchar2 -- String
+SET     @JOB_OWNER = ''
+DECLARE @JOB_NAME Varchar2 -- String
+SET     @JOB_NAME = ''
+DECLARE @JOB_SUBNAME Varchar2 -- String
+SET     @JOB_SUBNAME = ''
+DECLARE @START_DATE Varchar2 -- String
+SET     @START_DATE = ''
+DECLARE @RUN_DURATION Varchar2 -- String
+SET     @RUN_DURATION = ''
+DECLARE @CPU_USED Varchar2 -- String
+SET     @CPU_USED = ''
+DECLARE @ERROR_NUMBER Varchar2 -- String
+SET     @ERROR_NUMBER = ''
+DECLARE @ERROR_TEXT Varchar2 -- String
+SET     @ERROR_TEXT = ''
+DECLARE @OUTPUT_TEXT Varchar2 -- String
+SET     @OUTPUT_TEXT = ''
+DECLARE @REQUEST_ID Varchar2 -- String
+SET     @REQUEST_ID = ''
+DECLARE @ADD_INFO Varchar2 -- String
+SET     @ADD_INFO = ''
+DECLARE @SUBMIT Varchar2 -- String
+SET     @SUBMIT = ''
+
+REMOTE_SCHEDULER_AGENT.SUBMIT_JOB_RESULTS
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @AGENT_HOST Varchar2 -- String
+SET     @AGENT_HOST = ''
+DECLARE @JOB_RESULTS Varchar2 -- String
+SET     @JOB_RESULTS = ''
+DECLARE @NONCE Varchar2 -- String
+SET     @NONCE = ''
+DECLARE @CURRENT_DATE Varchar2 -- String
+SET     @CURRENT_DATE = ''
+DECLARE @AGENT_NAME Varchar2 -- String
+SET     @AGENT_NAME = ''
+DECLARE @SUBMIT Varchar2 -- String
+SET     @SUBMIT = ''
+
+REMOTE_SCHEDULER_AGENT.SUBMIT_JOB_RESULTS2
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @NAME_ARRAY Varchar2 -- String
+SET     @NAME_ARRAY = NULL
+DECLARE @VALUE_ARRAY Varchar2 -- String
+SET     @VALUE_ARRAY = NULL
+
+REMOTE_SCHEDULER_AGENT.SUBMIT_FILEWATCH_RESULTS
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @HOSTNAME Varchar2 -- String
+SET     @HOSTNAME = ''
+
+REMOTE_SCHEDULER_AGENT.FILEWATCH_REQUEST_RESEND
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @AGENT_HOST Varchar2 -- String
+SET     @AGENT_HOST = ''
+DECLARE @AGENT_NAME Varchar2 -- String
+SET     @AGENT_NAME = ''
+DECLARE @CURRENT_DATE Varchar2 -- String
+SET     @CURRENT_DATE = ''
+DECLARE @NONCE Varchar2 -- String
+SET     @NONCE = ''
+DECLARE @HASH Varchar2 -- String
+SET     @HASH = ''
+
+REMOTE_SCHEDULER_AGENT.UNREGISTER_AGENT
+
+BeforeExecute
+-- Oracle.Managed Oracle12
 DECLARE @AGENT_VERSION Varchar2 -- String
 SET     @AGENT_VERSION = ''
 DECLARE @DB_VERSION Varchar2 -- String
@@ -628,13 +705,6 @@ DECLARE @VALID Varchar2 -- String
 SET     @VALID = NULL
 
 REMOTE_SCHEDULER_AGENT.CHECK_AGENT_VERSION
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @HOSTNAME Varchar2 -- String
-SET     @HOSTNAME = ''
-
-REMOTE_SCHEDULER_AGENT.FILEWATCH_REQUEST_RESEND
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -706,76 +776,6 @@ REMOTE_SCHEDULER_AGENT.REG_START
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @NAME_ARRAY Varchar2 -- String
-SET     @NAME_ARRAY = NULL
-DECLARE @VALUE_ARRAY Varchar2 -- String
-SET     @VALUE_ARRAY = NULL
-
-REMOTE_SCHEDULER_AGENT.SUBMIT_FILEWATCH_RESULTS
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @JOB_OWNER Varchar2 -- String
-SET     @JOB_OWNER = ''
-DECLARE @JOB_NAME Varchar2 -- String
-SET     @JOB_NAME = ''
-DECLARE @JOB_SUBNAME Varchar2 -- String
-SET     @JOB_SUBNAME = ''
-DECLARE @START_DATE Varchar2 -- String
-SET     @START_DATE = ''
-DECLARE @RUN_DURATION Varchar2 -- String
-SET     @RUN_DURATION = ''
-DECLARE @CPU_USED Varchar2 -- String
-SET     @CPU_USED = ''
-DECLARE @ERROR_NUMBER Varchar2 -- String
-SET     @ERROR_NUMBER = ''
-DECLARE @ERROR_TEXT Varchar2 -- String
-SET     @ERROR_TEXT = ''
-DECLARE @OUTPUT_TEXT Varchar2 -- String
-SET     @OUTPUT_TEXT = ''
-DECLARE @REQUEST_ID Varchar2 -- String
-SET     @REQUEST_ID = ''
-DECLARE @ADD_INFO Varchar2 -- String
-SET     @ADD_INFO = ''
-DECLARE @SUBMIT Varchar2 -- String
-SET     @SUBMIT = ''
-
-REMOTE_SCHEDULER_AGENT.SUBMIT_JOB_RESULTS
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @AGENT_HOST Varchar2 -- String
-SET     @AGENT_HOST = ''
-DECLARE @JOB_RESULTS Varchar2 -- String
-SET     @JOB_RESULTS = ''
-DECLARE @NONCE Varchar2 -- String
-SET     @NONCE = ''
-DECLARE @CURRENT_DATE Varchar2 -- String
-SET     @CURRENT_DATE = ''
-DECLARE @AGENT_NAME Varchar2 -- String
-SET     @AGENT_NAME = ''
-DECLARE @SUBMIT Varchar2 -- String
-SET     @SUBMIT = ''
-
-REMOTE_SCHEDULER_AGENT.SUBMIT_JOB_RESULTS2
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @AGENT_HOST Varchar2 -- String
-SET     @AGENT_HOST = ''
-DECLARE @AGENT_NAME Varchar2 -- String
-SET     @AGENT_NAME = ''
-DECLARE @CURRENT_DATE Varchar2 -- String
-SET     @CURRENT_DATE = ''
-DECLARE @NONCE Varchar2 -- String
-SET     @NONCE = ''
-DECLARE @HASH Varchar2 -- String
-SET     @HASH = ''
-
-REMOTE_SCHEDULER_AGENT.UNREGISTER_AGENT
-
-BeforeExecute
--- Oracle.Managed Oracle12
 DECLARE @SRC Varchar2 -- String
 SET     @SRC = ''
 
@@ -788,21 +788,21 @@ XDB.XDB$INITXDBSCHEMA
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @SCHOID Blob -- Object
-SET     @SCHOID = NULL
-DECLARE @HIDE Varchar2 -- String
-SET     @HIDE = NULL
-
-XDB.XDB$PATCHUPDELETESCHEMA
-
-BeforeExecute
--- Oracle.Managed Oracle12
 DECLARE @SCHREF Varchar2 -- String
 SET     @SCHREF = NULL
 DECLARE @NAMESP Varchar2 -- String
 SET     @NAMESP = ''
 
 XDB.XDB$PATCHUPSCHEMA
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @SCHOID Blob -- Object
+SET     @SCHOID = NULL
+DECLARE @HIDE Varchar2 -- String
+SET     @HIDE = NULL
+
+XDB.XDB$PATCHUPDELETESCHEMA
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -854,17 +854,6 @@ CTXSYS.SYNCRN
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @FEATURE 0 -- Object
-SET     @FEATURE = NULL
-DECLARE @COLOR 0 -- Object
-SET     @COLOR = NULL
-DECLARE @FREQUENCY Decimal(22)
-SET     @FREQUENCY = 0
-
-ORDSYS.SI_APPENDCLRHSTGR
-
-BeforeExecute
--- Oracle.Managed Oracle12
 DECLARE @IMAGE 0 -- Object
 SET     @IMAGE = NULL
 DECLARE @CONTENT Blob -- Object
@@ -880,6 +869,17 @@ DECLARE @TARGETFORMAT Varchar2 -- String
 SET     @TARGETFORMAT = ''
 
 ORDSYS.SI_CONVERTFORMAT
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @FEATURE 0 -- Object
+SET     @FEATURE = NULL
+DECLARE @COLOR 0 -- Object
+SET     @COLOR = NULL
+DECLARE @FREQUENCY Decimal(22)
+SET     @FREQUENCY = 0
+
+ORDSYS.SI_APPENDCLRHSTGR
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -927,12 +927,26 @@ ORDSYS.SI_SETTEXTUREFTR
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @OWNER Varchar2 -- String
+SET     @OWNER = ''
+DECLARE @INDEX_NAME Varchar2 -- String
+SET     @INDEX_NAME = ''
+
+MDSYS.RESET_INPROG_INDEX
+
+BeforeExecute
+-- Oracle.Managed Oracle12
 DECLARE @DEST Decimal(22)
 SET     @DEST = 0
 DECLARE @MASK Decimal(22)
 SET     @MASK = 0
 
 MDSYS.BITOR
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+MDSYS.ENABLEGEORASTER
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -946,11 +960,6 @@ MDSYS.ELOCATIONSETJVMHEAPSIZE
 BeforeExecute
 -- Oracle.Managed Oracle12
 
-MDSYS.ENABLEGEORASTER
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
 MDSYS.LOAD_PREDEFINED_RULEBASES
 
 BeforeExecute
@@ -960,12 +969,68 @@ MDSYS.RDF$GRANT_OLS_PRIVS
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @OWNER Varchar2 -- String
-SET     @OWNER = ''
-DECLARE @INDEX_NAME Varchar2 -- String
-SET     @INDEX_NAME = ''
 
-MDSYS.RESET_INPROG_INDEX
+LBACSYS.SESSINFO_CLEANUP
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @SCHEMA_NAME Varchar2 -- String
+SET     @SCHEMA_NAME = ''
+DECLARE @TABLE_NAME Varchar2 -- String
+SET     @TABLE_NAME = ''
+DECLARE @OPTIONS Varchar2 -- String
+SET     @OPTIONS = NULL
+
+LBACSYS.DP_ADD_RLS_POLICY
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @SCHEMA_NAME Varchar2 -- String
+SET     @SCHEMA_NAME = ''
+DECLARE @TABLE_NAME Varchar2 -- String
+SET     @TABLE_NAME = ''
+DECLARE @OPTIONS Varchar2 -- String
+SET     @OPTIONS = NULL
+
+LBACSYS.DP_DROP_RLS_POLICY
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+LBACSYS.CODE_COVERAGE
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+LBACSYS.CONFIGURE_OLS
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @UNAME Varchar2 -- String
+SET     @UNAME = ''
+
+LBACSYS.OLS_INIT_SESSION
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @FEATURE_BOOLEAN Decimal(22)
+SET     @FEATURE_BOOLEAN = 0
+DECLARE @AUX_COUNT Decimal(22)
+SET     @AUX_COUNT = 0
+DECLARE @FEATURE_INFO Clob -- Object
+SET     @FEATURE_INFO = ''
+
+LBACSYS.FEATURE_USAGE
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+LBACSYS.LBAC_FRAME_GRANT
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+LBACSYS.SA_POLICY_GRANT
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -1003,69 +1068,4 @@ DECLARE @P_VALUE Varchar2 -- String
 SET     @P_VALUE = ''
 
 DVSYS.SET_FACTOR
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-LBACSYS.CODE_COVERAGE
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-LBACSYS.CONFIGURE_OLS
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @SCHEMA_NAME Varchar2 -- String
-SET     @SCHEMA_NAME = ''
-DECLARE @TABLE_NAME Varchar2 -- String
-SET     @TABLE_NAME = ''
-DECLARE @OPTIONS Varchar2 -- String
-SET     @OPTIONS = NULL
-
-LBACSYS.DP_ADD_RLS_POLICY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @SCHEMA_NAME Varchar2 -- String
-SET     @SCHEMA_NAME = ''
-DECLARE @TABLE_NAME Varchar2 -- String
-SET     @TABLE_NAME = ''
-DECLARE @OPTIONS Varchar2 -- String
-SET     @OPTIONS = NULL
-
-LBACSYS.DP_DROP_RLS_POLICY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @FEATURE_BOOLEAN Decimal(22)
-SET     @FEATURE_BOOLEAN = 0
-DECLARE @AUX_COUNT Decimal(22)
-SET     @AUX_COUNT = 0
-DECLARE @FEATURE_INFO Clob -- Object
-SET     @FEATURE_INFO = ''
-
-LBACSYS.FEATURE_USAGE
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-LBACSYS.LBAC_FRAME_GRANT
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @UNAME Varchar2 -- String
-SET     @UNAME = ''
-
-LBACSYS.OLS_INIT_SESSION
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-LBACSYS.SA_POLICY_GRANT
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-LBACSYS.SESSINFO_CLEANUP
 
