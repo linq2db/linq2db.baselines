@@ -5,5 +5,5 @@ SELECT
 	[t].[ParentID],
 	[t].[ChildID]
 FROM
-	[Child] [t]
+	[Child] [t] NOT INDEXED
 
