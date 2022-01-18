@@ -7,5 +7,5 @@ SELECT
 FROM
 	"Parent" p
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
-FOR KEY SHARE NOWAIT
+FOR UPDATE OF p, c_1 NOWAIT
 
