@@ -7,5 +7,5 @@ SELECT
 FROM
 	"Parent" p
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
-FOR SHARE SKIP LOCKED
+FOR UPDATE OF p, c_1 SKIP LOCKED
 
