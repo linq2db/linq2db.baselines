@@ -6,4 +6,5 @@ SELECT
 	t."ChildID"
 FROM
 	"Child" t
+FOR SHARE OF t
 
