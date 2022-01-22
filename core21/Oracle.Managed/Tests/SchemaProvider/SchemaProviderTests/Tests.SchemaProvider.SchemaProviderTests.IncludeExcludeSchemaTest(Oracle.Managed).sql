@@ -969,6 +969,43 @@ MDSYS.RESET_INPROG_INDEX
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @P_RULE_SET Varchar2 -- String
+SET     @P_RULE_SET = ''
+DECLARE @X_RESULT Decimal(22)
+SET     @X_RESULT = 0
+DECLARE @X_RULE Varchar2 -- String
+SET     @X_RULE = ''
+DECLARE @X_RULE_ERROR Decimal(22)
+SET     @X_RULE_ERROR = 0
+DECLARE @X_HANDLER_ERROR Decimal(22)
+SET     @X_HANDLER_ERROR = 0
+DECLARE @X_ERROR_CODE Decimal(22)
+SET     @X_ERROR_CODE = 0
+DECLARE @X_ERROR_TEXT Varchar2 -- String
+SET     @X_ERROR_TEXT = ''
+
+DVSYS.EVALUATE_RULE_SET
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+DVSYS.MACOLS_INIT_SESSION
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @P_FACTOR Varchar2 -- String
+SET     @P_FACTOR = ''
+DECLARE @P_FACTOR Varchar2 -- String
+SET     @P_FACTOR = ''
+DECLARE @P_VALUE Varchar2 -- String
+SET     @P_VALUE = ''
+DECLARE @P_VALUE Varchar2 -- String
+SET     @P_VALUE = ''
+
+DVSYS.SET_FACTOR
+
+BeforeExecute
+-- Oracle.Managed Oracle12
 
 LBACSYS.CODE_COVERAGE
 
@@ -1031,43 +1068,6 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 LBACSYS.SESSINFO_CLEANUP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @P_RULE_SET Varchar2 -- String
-SET     @P_RULE_SET = ''
-DECLARE @X_RESULT Decimal(22)
-SET     @X_RESULT = 0
-DECLARE @X_RULE Varchar2 -- String
-SET     @X_RULE = ''
-DECLARE @X_RULE_ERROR Decimal(22)
-SET     @X_RULE_ERROR = 0
-DECLARE @X_HANDLER_ERROR Decimal(22)
-SET     @X_HANDLER_ERROR = 0
-DECLARE @X_ERROR_CODE Decimal(22)
-SET     @X_ERROR_CODE = 0
-DECLARE @X_ERROR_TEXT Varchar2 -- String
-SET     @X_ERROR_TEXT = ''
-
-DVSYS.EVALUATE_RULE_SET
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-DVSYS.MACOLS_INIT_SESSION
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @P_FACTOR Varchar2 -- String
-SET     @P_FACTOR = ''
-DECLARE @P_FACTOR Varchar2 -- String
-SET     @P_FACTOR = ''
-DECLARE @P_VALUE Varchar2 -- String
-SET     @P_VALUE = ''
-DECLARE @P_VALUE Varchar2 -- String
-SET     @P_VALUE = ''
-
-DVSYS.SET_FACTOR
 
 BeforeExecute
 -- Oracle.Managed Oracle12
@@ -1751,6 +1751,43 @@ MDSYS.RESET_INPROG_INDEX
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @P_RULE_SET Varchar2 -- String
+SET     @P_RULE_SET = ''
+DECLARE @X_RESULT Decimal(22)
+SET     @X_RESULT = 0
+DECLARE @X_RULE Varchar2 -- String
+SET     @X_RULE = ''
+DECLARE @X_RULE_ERROR Decimal(22)
+SET     @X_RULE_ERROR = 0
+DECLARE @X_HANDLER_ERROR Decimal(22)
+SET     @X_HANDLER_ERROR = 0
+DECLARE @X_ERROR_CODE Decimal(22)
+SET     @X_ERROR_CODE = 0
+DECLARE @X_ERROR_TEXT Varchar2 -- String
+SET     @X_ERROR_TEXT = ''
+
+DVSYS.EVALUATE_RULE_SET
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+DVSYS.MACOLS_INIT_SESSION
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @P_FACTOR Varchar2 -- String
+SET     @P_FACTOR = ''
+DECLARE @P_FACTOR Varchar2 -- String
+SET     @P_FACTOR = ''
+DECLARE @P_VALUE Varchar2 -- String
+SET     @P_VALUE = ''
+DECLARE @P_VALUE Varchar2 -- String
+SET     @P_VALUE = ''
+
+DVSYS.SET_FACTOR
+
+BeforeExecute
+-- Oracle.Managed Oracle12
 
 LBACSYS.CODE_COVERAGE
 
@@ -1813,43 +1850,6 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 LBACSYS.SESSINFO_CLEANUP
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @P_RULE_SET Varchar2 -- String
-SET     @P_RULE_SET = ''
-DECLARE @X_RESULT Decimal(22)
-SET     @X_RESULT = 0
-DECLARE @X_RULE Varchar2 -- String
-SET     @X_RULE = ''
-DECLARE @X_RULE_ERROR Decimal(22)
-SET     @X_RULE_ERROR = 0
-DECLARE @X_HANDLER_ERROR Decimal(22)
-SET     @X_HANDLER_ERROR = 0
-DECLARE @X_ERROR_CODE Decimal(22)
-SET     @X_ERROR_CODE = 0
-DECLARE @X_ERROR_TEXT Varchar2 -- String
-SET     @X_ERROR_TEXT = ''
-
-DVSYS.EVALUATE_RULE_SET
-
-BeforeExecute
--- Oracle.Managed Oracle12
-
-DVSYS.MACOLS_INIT_SESSION
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @P_FACTOR Varchar2 -- String
-SET     @P_FACTOR = ''
-DECLARE @P_FACTOR Varchar2 -- String
-SET     @P_FACTOR = ''
-DECLARE @P_VALUE Varchar2 -- String
-SET     @P_VALUE = ''
-DECLARE @P_VALUE Varchar2 -- String
-SET     @P_VALUE = ''
-
-DVSYS.SET_FACTOR
 
 BeforeExecute
 -- Oracle.Managed Oracle12
