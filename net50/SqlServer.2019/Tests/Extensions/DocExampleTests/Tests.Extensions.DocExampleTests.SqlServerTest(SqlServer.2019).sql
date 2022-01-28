@@ -29,5 +29,5 @@ FROM
 						[t].[ParentID] = [t2].[ParentID]
 				)
 		) [p] ON [c_1].[ParentID] = [p].[ParentID]
-OPTION (RECOMPILE, FAST 10, MAX_GRANT_PERCENT=25)
+OPTION (RECOMPILE, FAST 10, HASH JOIN)
 
