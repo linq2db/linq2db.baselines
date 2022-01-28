@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SELECT
+SELECT /* aa */
 	p."ParentID",
 	p."Value1"
 FROM
