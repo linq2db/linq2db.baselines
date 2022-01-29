@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[Fax],
@@ -17,7 +17,7 @@ FROM
 	[Customers] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[PhotoPath],
@@ -42,7 +42,7 @@ FROM
 	[Employees] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[ShipCountry],
@@ -63,7 +63,7 @@ FROM
 	[Orders] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[ProductID],
@@ -80,7 +80,7 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[key_data_result].[ProductID],
@@ -109,7 +109,7 @@ FROM
 		ON [__p].[ProductID] = [key_data_result].[ProductID] AND [a_Supplier].[SupplierID] = [key_data_result].[SupplierID]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[supplier].[SupplierID],
@@ -119,7 +119,7 @@ FROM
 	[Products] [detail]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[supplier].[SupplierID]

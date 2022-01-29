@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [DateTime2Table]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NULL)
 	CREATE TABLE [DateTime2Table]
@@ -22,7 +22,7 @@ IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [DateTime2Table]
 (
@@ -42,7 +42,7 @@ VALUES
 (2,'2012-12-12T12:12:12.0001234','2012-12-12T12:12:12','2012-12-12T12:12:12.0','2012-12-12T12:12:12.00','2012-12-12T12:12:12.000','2012-12-12T12:12:12.0001','2012-12-12T12:12:12.00012','2012-12-12T12:12:12.000123','2012-12-12T12:12:12.0001234')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -52,7 +52,7 @@ WHERE
 	[_].[DTD] = '2012-12-12T12:12:12.1231234'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Count(*)
@@ -62,7 +62,7 @@ WHERE
 	[_].[DT0] = '2012-12-12T12:12:12'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -72,7 +72,7 @@ WHERE
 	[_].[DT1] = '2012-12-12T12:12:12.1'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -82,7 +82,7 @@ WHERE
 	[_].[DT2] = '2012-12-12T12:12:12.12'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -92,7 +92,7 @@ WHERE
 	[_].[DT3] = '2012-12-12T12:12:12.123'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -102,7 +102,7 @@ WHERE
 	[_].[DT4] = '2012-12-12T12:12:12.1231'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -112,7 +112,7 @@ WHERE
 	[_].[DT5] = '2012-12-12T12:12:12.12312'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -122,7 +122,7 @@ WHERE
 	[_].[DT6] = '2012-12-12T12:12:12.123123'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -132,7 +132,7 @@ WHERE
 	[_].[DT7] = '2012-12-12T12:12:12.1231234'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -142,7 +142,7 @@ WHERE
 	[_].[DTD] = '2012-12-12T12:12:12.0001234'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Count(*)
@@ -152,7 +152,7 @@ WHERE
 	[_].[DT0] = '2012-12-12T12:12:12'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -162,7 +162,7 @@ WHERE
 	[_].[DT1] = '2012-12-12T12:12:12.0'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -172,7 +172,7 @@ WHERE
 	[_].[DT2] = '2012-12-12T12:12:12.00'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -182,7 +182,7 @@ WHERE
 	[_].[DT3] = '2012-12-12T12:12:12.000'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -192,7 +192,7 @@ WHERE
 	[_].[DT4] = '2012-12-12T12:12:12.0001'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -202,7 +202,7 @@ WHERE
 	[_].[DT5] = '2012-12-12T12:12:12.00012'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -212,7 +212,7 @@ WHERE
 	[_].[DT6] = '2012-12-12T12:12:12.000123'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (2)
 	[_].[Id]
@@ -222,7 +222,7 @@ WHERE
 	[_].[DT7] = '2012-12-12T12:12:12.0001234'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [DateTime2Table]
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [DynamicTable]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NULL)
 	CREATE TABLE [DynamicTable]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[DynamicTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [DynamicTable]
 (
@@ -29,7 +29,7 @@ VALUES
 (77,5)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[Not Identifier],
@@ -41,7 +41,7 @@ GROUP BY
 	[t1].[Not Identifier]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [DynamicTable]
 

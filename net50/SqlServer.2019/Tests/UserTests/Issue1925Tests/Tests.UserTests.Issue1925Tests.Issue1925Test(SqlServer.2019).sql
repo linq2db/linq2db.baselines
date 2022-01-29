@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	CREATE TABLE [SampleClass]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [SampleClass]
 (
@@ -30,7 +30,7 @@ VALUES
 (6,N']x')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -42,7 +42,7 @@ WHERE
 	[r].[Value] LIKE N'%~]' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -54,7 +54,7 @@ WHERE
 	[r].[Value] LIKE N'~]%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -66,7 +66,7 @@ WHERE
 	[r].[Value] LIKE N'%-%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -77,7 +77,7 @@ WHERE
 	[r].[Value] LIKE N'%~[~]%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -88,7 +88,7 @@ WHERE
 	[r].[Value] LIKE N'%~[0%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @asParamUnterm_1 NVarChar(4000) -- String
 SET     @asParamUnterm_1 = N'%~[0%'
 
@@ -101,7 +101,7 @@ WHERE
 	[r].[Value] LIKE @asParamUnterm_1 ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -112,7 +112,7 @@ WHERE
 	[r].[Value] LIKE N'%~[0-9~]%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -123,7 +123,7 @@ WHERE
 	[r].[Value] LIKE N'%6%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -134,7 +134,7 @@ WHERE
 	[r].[Value] LIKE N'[0'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @asParamUnterm NVarChar(4000) -- String
 SET     @asParamUnterm = N'[0'
 
@@ -147,7 +147,7 @@ WHERE
 	[r].[Value] LIKE @asParamUnterm
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -158,7 +158,7 @@ WHERE
 	[r].[Value] LIKE N'[0-9]'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @asParam NVarChar(4000) -- String
 SET     @asParam = N'[0-9]'
 
@@ -171,7 +171,7 @@ WHERE
 	[r].[Value] LIKE @asParam
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 

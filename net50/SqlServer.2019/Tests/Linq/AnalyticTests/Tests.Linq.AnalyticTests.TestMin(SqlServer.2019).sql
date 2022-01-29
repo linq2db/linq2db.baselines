@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Min([c_1].[ChildID]),
@@ -13,7 +13,7 @@ GROUP BY
 	[p].[ParentID]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Min([c_1].[ParentID])
@@ -21,7 +21,7 @@ FROM
 	[Child] [c_1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	MIN(ALL [t1].[ParentID])
@@ -29,7 +29,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	MIN(DISTINCT [t1].[ParentID])

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -9,14 +9,14 @@ FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 
 [TestData2019]..[Person_SelectByKey]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'
 
@@ -16,7 +16,7 @@ WHERE
 	[x].[FirstName] = @t
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'
 
