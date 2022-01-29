@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TABLE1]', N'U') IS NOT NULL)
 	DROP TABLE [TABLE1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TABLE1]', N'U') IS NULL)
 	CREATE TABLE [TABLE1]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[TABLE1]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TABLE1]
 (
@@ -29,13 +29,13 @@ VALUES
 (2,N'Some2')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TABLE2]', N'U') IS NOT NULL)
 	DROP TABLE [TABLE2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TABLE2]', N'U') IS NULL)
 	CREATE TABLE [TABLE2]
@@ -48,7 +48,7 @@ IF (OBJECT_ID(N'[TABLE2]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TABLE2]
 (
@@ -62,13 +62,13 @@ VALUES
 (13,2,N'Child13')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TABLE3]', N'U') IS NOT NULL)
 	DROP TABLE [TABLE3]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TABLE3]', N'U') IS NULL)
 	CREATE TABLE [TABLE3]
@@ -81,7 +81,7 @@ IF (OBJECT_ID(N'[TABLE3]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TABLE3]
 (
@@ -95,7 +95,7 @@ VALUES
 (23,12,N'Child23')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @take_1 Int -- Int32
@@ -131,19 +131,19 @@ FROM
 		) [t2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TABLE3]', N'U') IS NOT NULL)
 	DROP TABLE [TABLE3]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TABLE2]', N'U') IS NOT NULL)
 	DROP TABLE [TABLE2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TABLE1]', N'U') IS NOT NULL)
 	DROP TABLE [TABLE1]

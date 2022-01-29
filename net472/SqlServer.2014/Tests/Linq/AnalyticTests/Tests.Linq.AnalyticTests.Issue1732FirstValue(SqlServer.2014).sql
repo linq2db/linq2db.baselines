@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Position]', N'U') IS NOT NULL)
 	DROP TABLE [Position]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Position]', N'U') IS NULL)
 	CREATE TABLE [Position]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Position]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Position]
 (
@@ -31,7 +31,7 @@ VALUES
 (7,40,NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @group_1 Int -- Int32
 SET     @group_1 = 7
 
@@ -44,7 +44,7 @@ WHERE
 	[p].[Group] = @group_1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Position]', N'U') IS NOT NULL)
 	DROP TABLE [Position]

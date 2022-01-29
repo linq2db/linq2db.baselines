@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @DateTimeValue DateTime2
 SET     @DateTimeValue = '2001-01-11T01:11:21.1000000'
 

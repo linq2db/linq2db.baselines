@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
 	DROP TABLE [ValueConversion]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	CREATE TABLE [ValueConversion]
@@ -25,7 +25,7 @@ IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [ValueConversion]
 (
@@ -53,7 +53,7 @@ VALUES
 (10,NULL,NULL,N'Value1','Value2','Value2','Value2','N','F',NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @testedList NVarChar(200) -- String
 SET     @testedList = N'[{"Value":"Value1"}]'
 
@@ -67,7 +67,7 @@ GROUP BY
 	[t].[Id]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Value2 NVarChar(200) -- String
 SET     @Value2 = N'[{"Value":"Value1"}]'
 DECLARE @Id Int -- Int32
@@ -90,7 +90,7 @@ WHERE
 	@Value2 = [t].[Value2] AND [t].[Id] = @Id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
 	DROP TABLE [ValueConversion]

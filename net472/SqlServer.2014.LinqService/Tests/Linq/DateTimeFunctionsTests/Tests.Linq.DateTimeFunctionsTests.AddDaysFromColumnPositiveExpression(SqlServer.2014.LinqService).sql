@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @p_1 DateTime2
 SET     @p_1 = '2018-01-02T00:00:00.0000000'
 
@@ -53,7 +53,7 @@ WHERE
 	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p_1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t1]
 FROM

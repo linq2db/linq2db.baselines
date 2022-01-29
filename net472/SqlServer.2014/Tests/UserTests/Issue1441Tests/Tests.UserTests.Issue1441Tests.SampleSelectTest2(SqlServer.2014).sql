@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Authors]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [Authors]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Books]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [Books]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[author].[Id],
@@ -32,13 +32,13 @@ FROM
 		INNER JOIN [Books] [book] ON [book].[AuthorId] = [author].[Id]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Books]', N'U') IS NOT NULL)
 	DROP TABLE [Books]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Authors]', N'U') IS NOT NULL)
 	DROP TABLE [Authors]

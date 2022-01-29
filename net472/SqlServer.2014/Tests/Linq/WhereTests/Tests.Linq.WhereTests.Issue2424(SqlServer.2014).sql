@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Isue2424Table]', N'U') IS NOT NULL)
 	DROP TABLE [Isue2424Table]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Isue2424Table]', N'U') IS NULL)
 	CREATE TABLE [Isue2424Table]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[Isue2424Table]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Isue2424Table]
 (
@@ -28,7 +28,7 @@ VALUES
 (5,N'5')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -41,7 +41,7 @@ WHERE
 	[i].[StrValue] >= N'4'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -54,7 +54,7 @@ WHERE
 	[i].[StrValue] >= N'4'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -67,7 +67,7 @@ WHERE
 	[i].[StrValue] <= N'2'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -80,7 +80,7 @@ WHERE
 	[i].[StrValue] <= N'2'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -93,7 +93,7 @@ WHERE
 	[i].[StrValue] > N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -106,7 +106,7 @@ WHERE
 	[i].[StrValue] > N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -119,7 +119,7 @@ WHERE
 	[i].[StrValue] < N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -132,7 +132,7 @@ WHERE
 	[i].[StrValue] < N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -145,7 +145,7 @@ WHERE
 	[i].[StrValue] = N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -158,7 +158,7 @@ WHERE
 	[i].[StrValue] = N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -171,7 +171,7 @@ WHERE
 	[i].[StrValue] <= N'2'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -184,7 +184,7 @@ WHERE
 	[i].[StrValue] <= N'2'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -197,7 +197,7 @@ WHERE
 	[i].[StrValue] >= N'4'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -210,7 +210,7 @@ WHERE
 	[i].[StrValue] >= N'4'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -223,7 +223,7 @@ WHERE
 	[i].[StrValue] < N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -236,7 +236,7 @@ WHERE
 	[i].[StrValue] < N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -249,7 +249,7 @@ WHERE
 	[i].[StrValue] > N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -262,7 +262,7 @@ WHERE
 	[i].[StrValue] > N'3'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -275,7 +275,7 @@ WHERE
 	[i].[StrValue] >= N'5'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -288,7 +288,7 @@ WHERE
 	[i].[StrValue] >= N'5'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -301,7 +301,7 @@ WHERE
 	[i].[StrValue] <= N'1'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -314,7 +314,7 @@ WHERE
 	[i].[StrValue] <= N'1'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Isue2424Table]', N'U') IS NOT NULL)
 	DROP TABLE [Isue2424Table]

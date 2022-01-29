@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue1110TB]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [Issue1110TB]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @TimeStamp_1 DateTime2
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1110TB]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1110TB]

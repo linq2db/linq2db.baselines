@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [dbo].[Attachment]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[Attachment]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [dbo].[BranchInfo]
 (
@@ -44,7 +44,7 @@ CREATE TABLE [dbo].[BranchInfo]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[m_1].[BranchAddress],
@@ -78,13 +78,13 @@ WHERE
 	[m_1].[BranchIsShow] = 0 AND [m_1].[Status] = 0
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[dbo].[BranchInfo]', N'U') IS NOT NULL)
 	DROP TABLE [dbo].[BranchInfo]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[dbo].[Attachment]', N'U') IS NOT NULL)
 	DROP TABLE [dbo].[Attachment]

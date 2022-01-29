@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[xxPerson]', N'U') IS NOT NULL)
 	DROP TABLE [xxPerson]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 CREATE TABLE [xxPerson]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	Count(*)
@@ -53,7 +53,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -67,7 +67,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -92,7 +92,7 @@ WHERE
 	[t1].[PersonID] = @ID
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -106,7 +106,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 DROP TABLE [xxPerson]
 

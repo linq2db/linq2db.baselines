@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TestIdTrun]', N'U') IS NOT NULL)
 	DROP TABLE [TestIdTrun]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [TestIdTrun]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [TestIdTrun]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TestIdTrun]
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TestIdTrun]
 (
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -56,12 +56,12 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 TRUNCATE TABLE [TestIdTrun]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TestIdTrun]
 (
@@ -73,7 +73,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TestIdTrun]
 (
@@ -85,7 +85,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -101,7 +101,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DROP TABLE [TestIdTrun]
 

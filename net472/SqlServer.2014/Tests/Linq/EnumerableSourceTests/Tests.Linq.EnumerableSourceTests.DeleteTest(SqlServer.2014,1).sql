@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NOT NULL)
 	DROP TABLE [TableToInsert]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
 	CREATE TABLE [TableToInsert]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TableToInsert]
 (
@@ -29,7 +29,7 @@ VALUES
 (3,N'Doe')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t]
 FROM
@@ -39,7 +39,7 @@ FROM
 		) [r]([Id]) ON [t].[Id] = [r].[Id]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NOT NULL)
 	DROP TABLE [TableToInsert]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t1]
 FROM
@@ -23,7 +23,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [LinqDataTypes]
 (
@@ -44,7 +44,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t1]
 FROM

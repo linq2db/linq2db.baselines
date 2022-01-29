@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t].[ParentID],
@@ -8,7 +8,7 @@ FROM
 	[Parent] [t]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @param_1 Int -- Int32
 SET     @param_1 = 1
 

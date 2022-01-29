@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [CustomerBase]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [CustomerBase]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @filter_1 NVarChar(4000) -- String
 SET     @filter_1 = N'%test%'
 DECLARE @filter_2 NVarChar(4000) -- String
@@ -30,7 +30,7 @@ WHERE
 	[q].[ClientType] = N'Client' AND ([q].[Name] LIKE @filter_1 ESCAPE N'~' OR [q].[ContactEmail] LIKE @filter_2 ESCAPE N'~')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[CustomerBase]', N'U') IS NOT NULL)
 	DROP TABLE [CustomerBase]

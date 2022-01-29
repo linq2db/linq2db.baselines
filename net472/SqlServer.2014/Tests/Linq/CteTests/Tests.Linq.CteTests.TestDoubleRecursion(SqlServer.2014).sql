@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NOT NULL)
 	DROP TABLE [HierarchyTree]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NULL)
 	CREATE TABLE [HierarchyTree]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [HierarchyTree]
 (
@@ -43,7 +43,7 @@ VALUES
 (212,21)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 WITH [CTE_1] ([Id])
 AS
@@ -87,7 +87,7 @@ FROM
 		INNER JOIN [hierarchyDown] [h2] ON [h2].[Id] = [h1].[Id]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NOT NULL)
 	DROP TABLE [HierarchyTree]

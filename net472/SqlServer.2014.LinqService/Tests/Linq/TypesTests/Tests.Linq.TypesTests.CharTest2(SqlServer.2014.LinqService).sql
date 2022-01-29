@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[p].[PersonID]

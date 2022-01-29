@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[DropTableTest]', N'U') IS NOT NULL)
 	DROP TABLE [DropTableTest]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -15,7 +15,7 @@ FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -25,7 +25,7 @@ FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [DropTableTest]
 (
@@ -33,7 +33,7 @@ CREATE TABLE [DropTableTest]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TestData2014].[dbo].[DropTableTest]
 (
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ID]
@@ -53,12 +53,12 @@ FROM
 	[TestData2014].[dbo].[DropTableTest] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DROP TABLE [TestData2014].[dbo].[DropTableTest]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ID]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [UserIssue3128]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [UserIssue3128]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [UserDetailsIssue3128]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [UserDetailsIssue3128]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -36,7 +36,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserId Int -- Int32
 SET     @UserId = 10
 DECLARE @Age Int -- Int32
@@ -56,7 +56,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[p_1].[FirstName],
@@ -85,13 +85,13 @@ WHERE
 	[p_1].[ex] > 0
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UserDetailsIssue3128]', N'U') IS NOT NULL)
 	DROP TABLE [UserDetailsIssue3128]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UserIssue3128]', N'U') IS NOT NULL)
 	DROP TABLE [UserIssue3128]

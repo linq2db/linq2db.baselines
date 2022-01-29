@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[key_data_result].[ParentID],
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[p].[ParentID],

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
 	DROP TABLE [TableWithData]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 	CREATE TABLE [TableWithData]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value_1 Int -- Int32
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value_1 Int -- Int32
@@ -60,7 +60,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value_1 Int -- Int32
@@ -82,7 +82,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Value_1 Int -- Int32
@@ -104,7 +104,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Value_1 Int -- Int32
@@ -126,7 +126,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Value_1 Int -- Int32
@@ -148,7 +148,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 7
 DECLARE @Value_1 Int -- Int32
@@ -170,7 +170,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 8
 DECLARE @Value_1 Int -- Int32
@@ -192,7 +192,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 9
 DECLARE @Value_1 Int -- Int32
@@ -214,7 +214,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @Value_1 Int -- Int32
@@ -236,7 +236,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [DestinationTable]
 (
@@ -246,7 +246,7 @@ CREATE TABLE [DestinationTable]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @param Int -- Int32
 SET     @param = 200
 
@@ -269,7 +269,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -279,7 +279,7 @@ FROM
 	[DestinationTable] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t].[Id],
@@ -288,13 +288,13 @@ FROM
 	[DestinationTable] [t]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NOT NULL)
 	DROP TABLE [DestinationTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
 	DROP TABLE [TableWithData]

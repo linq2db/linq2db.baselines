@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [ConversionsTestTable]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [ConversionsTestTable]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[SByte],
@@ -47,7 +47,7 @@ WHERE
 	((((([x].[Byte] = 4 OR [x].[SByte] = 4) OR ([x].[Int16] = 4 OR [x].[UInt16] = 4)) OR (([x].[Int32] = 4 OR [x].[UInt32] = 4) OR ([x].[Int64] = 4 OR [x].[UInt64] = 4))) OR ((([x].[ByteN] = 4 OR [x].[SByteN] = 4) OR ([x].[Int16N] = 4 OR [x].[UInt16N] = 4)) OR (([x].[Int32N] = 4 OR [x].[UInt32N] = 4) OR ([x].[Int64N] = 4 OR [x].[UInt64N] = 4)))) OR ((((4 = [x].[Byte] OR 4 = [x].[SByte]) OR (4 = [x].[Int16] OR 4 = [x].[UInt16])) OR ((4 = [x].[Int32] OR 4 = [x].[UInt32]) OR (4 = [x].[Int64] OR 4 = [x].[UInt64]))) OR (((4 = [x].[ByteN] OR 4 = [x].[SByteN]) OR (4 = [x].[Int16N] OR 4 = [x].[UInt16N])) OR ((4 = [x].[Int32N] OR 4 = [x].[UInt32N]) OR (4 = [x].[Int64N] OR 4 = [x].[UInt64N])))))
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ConversionsTestTable]', N'U') IS NOT NULL)
 	DROP TABLE [ConversionsTestTable]

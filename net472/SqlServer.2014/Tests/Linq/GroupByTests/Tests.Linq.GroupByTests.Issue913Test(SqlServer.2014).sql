@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NOT NULL)
 	DROP TABLE [Issue913Test]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
 	CREATE TABLE [Issue913Test]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Issue913Test]
 (
@@ -30,7 +30,7 @@ VALUES
 (3,N'D')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[c1],
@@ -48,7 +48,7 @@ GROUP BY
 	[t1].[c1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NOT NULL)
 	DROP TABLE [Issue913Test]

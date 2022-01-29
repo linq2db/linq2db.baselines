@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SomeTable]', N'U') IS NOT NULL)
 	DROP TABLE [SomeTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SomeTable]', N'U') IS NULL)
 	CREATE TABLE [SomeTable]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[SomeTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [SomeTable]
 (
@@ -35,13 +35,13 @@ VALUES
 (10,N'Own_10')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
 	DROP TABLE [SomeOtherEntity]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NULL)
 	CREATE TABLE [SomeOtherEntity]
@@ -51,7 +51,7 @@ IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [SomeOtherEntity]
 (
@@ -71,14 +71,14 @@ VALUES
 (10,N'Str_10')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
 RETURNS TABLE
@@ -88,7 +88,7 @@ AS RETURN
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[Id],
@@ -104,7 +104,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[lw_SomeEntity].[Id],
@@ -120,7 +120,7 @@ FROM
 		CROSS APPLY dbo.fn_SomeFunction([lw_SomeEntity].[Id]) [detail]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -129,20 +129,20 @@ FROM
 	[SomeTable] [t1] WITH (NOLOCK)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NOT NULL)
 	DROP TABLE [SomeOtherEntity]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SomeTable]', N'U') IS NOT NULL)
 	DROP TABLE [SomeTable]
