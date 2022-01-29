@@ -244,6 +244,7 @@ USING (VALUES
 	[INSERT_1]
 )
 ON ([Source].[INSERT_1] = [Target].[Id])
+
 WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = 2 THEN DELETE
 ;
 

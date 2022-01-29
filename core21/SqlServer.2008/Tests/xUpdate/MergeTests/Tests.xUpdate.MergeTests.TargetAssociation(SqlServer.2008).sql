@@ -273,6 +273,7 @@ USING (
 	[ID]
 )
 ON ([Target].[PersonID] = [Source].[ID] + 10)
+
 WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	SELECT
 		*
