@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
 	DROP TABLE [OrderByDistinctData]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NULL)
 	CREATE TABLE [OrderByDistinctData]
@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [OrderByDistinctData]
 (
@@ -49,7 +49,7 @@ VALUES
 (600,N'Three',5,5)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x_3].[Id],
@@ -101,7 +101,7 @@ ORDER BY
 	Min([x_3].[DuplicateData])
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NOT NULL)
 	DROP TABLE [OrderByDistinctData]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [ReviewIndexes]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [ReviewIndexes]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 MERGE INTO [ReviewIndexes] [Target]
 USING (VALUES
@@ -24,7 +24,7 @@ WHEN NOT MATCHED BY SOURCE THEN DELETE
 ;
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ReviewIndexes]', N'U') IS NOT NULL)
 	DROP TABLE [ReviewIndexes]

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NOT NULL)
 	DROP TABLE [GroupSampleClass]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NULL)
 	CREATE TABLE [GroupSampleClass]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [GroupSampleClass]
 (
@@ -37,7 +37,7 @@ VALUES
 (10,1,0)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	GROUPING([t1].[Id1]),
@@ -58,7 +58,7 @@ GROUP BY ROLLUP (
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NOT NULL)
 	DROP TABLE [GroupSampleClass]

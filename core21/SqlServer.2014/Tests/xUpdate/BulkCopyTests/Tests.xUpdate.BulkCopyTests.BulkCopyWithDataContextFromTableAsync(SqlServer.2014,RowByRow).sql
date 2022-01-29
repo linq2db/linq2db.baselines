@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [SimpleBulkCopyTable]
 (
@@ -13,7 +13,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 
@@ -33,7 +33,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 30
 
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[SimpleBulkCopyTable]', N'U') IS NOT NULL)
 	DROP TABLE [SimpleBulkCopyTable]

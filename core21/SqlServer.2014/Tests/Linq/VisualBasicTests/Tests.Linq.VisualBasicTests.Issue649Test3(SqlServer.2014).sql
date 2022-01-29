@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [activity649]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [activity649]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [person649]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [person649]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @added DateTime2
 SET     @added = '2017-01-01T00:00:00.0000000'
 
@@ -40,13 +40,13 @@ GROUP BY
 	[a_Person].[personname]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[person649]', N'U') IS NOT NULL)
 	DROP TABLE [person649]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[activity649]', N'U') IS NOT NULL)
 	DROP TABLE [activity649]

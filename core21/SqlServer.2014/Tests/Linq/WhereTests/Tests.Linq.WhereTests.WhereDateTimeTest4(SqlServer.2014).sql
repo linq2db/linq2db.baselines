@@ -16,7 +16,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @DateTimeValue DateTime2
 SET     @DateTimeValue = '2009-09-27T00:00:00.0000000'
 

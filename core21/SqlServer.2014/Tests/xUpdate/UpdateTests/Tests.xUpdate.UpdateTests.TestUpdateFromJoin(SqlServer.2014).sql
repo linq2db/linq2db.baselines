@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NOT NULL)
 	DROP TABLE [gt_s_one]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NULL)
 	CREATE TABLE [gt_s_one]
@@ -22,13 +22,13 @@ IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[access_mode]', N'U') IS NOT NULL)
 	DROP TABLE [access_mode]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[access_mode]', N'U') IS NULL)
 	CREATE TABLE [access_mode]
@@ -40,7 +40,7 @@ IF (OBJECT_ID(N'[access_mode]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 UPDATE
 	[gt_s_one]
@@ -56,13 +56,13 @@ FROM
 		LEFT JOIN [access_mode] [am] ON (Upper(Replace([x].[col3], N'auth.', N'')) = Upper([am].[code]) OR Upper(Replace([x].[col3], N'auth.', N'')) IS NULL AND Upper([am].[code]) IS NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[access_mode]', N'U') IS NOT NULL)
 	DROP TABLE [access_mode]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NOT NULL)
 	DROP TABLE [gt_s_one]

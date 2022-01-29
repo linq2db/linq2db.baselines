@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NOT NULL)
 	DROP TABLE [PKOnlyTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NULL)
 	CREATE TABLE [PKOnlyTable]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [PKOnlyTable]
 (
@@ -26,7 +26,7 @@ VALUES
 (2)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 MERGE INTO [PKOnlyTable] [Target]
 USING (VALUES
@@ -49,7 +49,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ID]
@@ -59,7 +59,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NOT NULL)
 	DROP TABLE [PKOnlyTable]
