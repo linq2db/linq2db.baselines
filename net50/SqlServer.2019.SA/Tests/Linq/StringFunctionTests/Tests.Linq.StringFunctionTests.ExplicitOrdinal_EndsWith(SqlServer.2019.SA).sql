@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive NVarChar(4000) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	Count(*)
@@ -39,7 +39,7 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], 8)) = Convert(VarBinary(8000), N'stString')
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	Count(*)
@@ -50,7 +50,7 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([r].[CaseInsensitive], 8)) = Convert(VarBinary(8000), N'stString')
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	Count(*)
@@ -61,7 +61,7 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], 8)) = Convert(VarBinary(8000), N'ststring')
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	Count(*)

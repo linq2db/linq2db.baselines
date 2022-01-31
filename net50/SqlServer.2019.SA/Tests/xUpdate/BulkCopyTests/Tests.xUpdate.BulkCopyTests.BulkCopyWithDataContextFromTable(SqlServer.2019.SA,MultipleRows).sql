@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [SimpleBulkCopyTable]
 (
@@ -13,7 +13,7 @@ BeforeExecute
 INSERT BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -23,7 +23,7 @@ VALUES
 (3)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [SimpleBulkCopyTable]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -9,7 +9,7 @@ FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'233bf399-9710-4e79-873d-2ec7bf1e0001'
 DECLARE @LastName NVarChar(4000) -- String
@@ -22,7 +22,7 @@ SET     @Gender = N'M'
 [TestData2019SA]..[Person_Insert]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'233bf399-9710-4e79-873d-2ec7bf1e0001'
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	CREATE TABLE [SampleClass]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [SampleClass]
 (
@@ -33,7 +33,7 @@ VALUES
 (3,N'Z1',NULL,NULL,N'Z4')
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	STRING_AGG([t1].[Value4], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value3] DESC, [t1].[Value4])
@@ -44,7 +44,7 @@ GROUP BY
 	[t1].[Value4]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 
