@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [dbo].[Attachment]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[Attachment]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [dbo].[BranchInfo]
 (
@@ -44,7 +44,7 @@ CREATE TABLE [dbo].[BranchInfo]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[m_1].[BranchAddress],
@@ -78,12 +78,12 @@ WHERE
 	[m_1].[BranchIsShow] = 0 AND [m_1].[Status] = 0
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [dbo].[BranchInfo]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [dbo].[Attachment]
 

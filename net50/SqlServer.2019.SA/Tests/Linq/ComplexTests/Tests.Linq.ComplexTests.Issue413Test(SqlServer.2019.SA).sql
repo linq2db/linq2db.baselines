@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [T1]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [T1]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [T2]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [T2]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [T3]
 (
@@ -30,7 +30,7 @@ CREATE TABLE [T3]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -48,7 +48,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int -- Int32
@@ -66,7 +66,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 3
 DECLARE @IndexId Int -- Int32
@@ -84,7 +84,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -102,7 +102,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int -- Int32
@@ -120,7 +120,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4000) -- String
@@ -146,7 +146,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4000) -- String
@@ -172,7 +172,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @cond_1 NVarChar(4000) -- String
 SET     @cond_1 = N'aaa%'
 DECLARE @uptoDate DateTime2
@@ -197,17 +197,17 @@ ORDER BY
 	[t4].[SourceInstrumentCode]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [T3]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [T2]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [T1]
 

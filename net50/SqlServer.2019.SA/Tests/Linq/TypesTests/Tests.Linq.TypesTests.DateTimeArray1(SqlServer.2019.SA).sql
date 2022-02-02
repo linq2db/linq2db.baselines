@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @DateTimeValue DateTime2
 SET     @DateTimeValue = '2001-01-11T01:11:21.1000000'
 

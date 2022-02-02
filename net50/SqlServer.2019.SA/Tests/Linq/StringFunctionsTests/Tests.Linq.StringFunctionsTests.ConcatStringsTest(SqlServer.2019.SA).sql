@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	CREATE TABLE [SampleClass]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [SampleClass]
 (
@@ -33,7 +33,7 @@ VALUES
 (3,N'Z1',NULL,NULL,N'Z4')
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	ISNULL([t].[Value2], '')
@@ -41,7 +41,7 @@ FROM
 	[SampleClass] [t]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	ISNULL([t].[Value3], '')
@@ -49,7 +49,7 @@ FROM
 	[SampleClass] [t]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	CONCAT_WS(N' -> ', [t].[Value3], [t].[Value1], [t].[Value2])
@@ -57,7 +57,7 @@ FROM
 	[SampleClass] [t]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	CONCAT_WS(N' -> ', [t].[Value3], [t].[Value3])
@@ -65,7 +65,7 @@ FROM
 	[SampleClass] [t]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 

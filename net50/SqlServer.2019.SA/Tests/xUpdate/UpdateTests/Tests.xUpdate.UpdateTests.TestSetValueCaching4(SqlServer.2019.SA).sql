@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdateSetTest]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NULL)
 	CREATE TABLE [UpdateSetTest]
@@ -21,7 +21,7 @@ IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [UpdateSetTest]
 (
@@ -37,7 +37,7 @@ VALUES
 (1,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627',10,6,NULL,NULL,NULL)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Value4 UniqueIdentifier -- Guid
 SET     @Value4 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @id Int -- Int32
@@ -53,7 +53,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -67,7 +67,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Value4 UniqueIdentifier -- Guid
 SET     @Value4 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @id Int -- Int32
@@ -83,7 +83,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -97,7 +97,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdateSetTest]
 

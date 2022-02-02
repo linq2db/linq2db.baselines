@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @str_1 NVarChar(4000) -- String
 SET     @str_1 = N'%oh%'
 
