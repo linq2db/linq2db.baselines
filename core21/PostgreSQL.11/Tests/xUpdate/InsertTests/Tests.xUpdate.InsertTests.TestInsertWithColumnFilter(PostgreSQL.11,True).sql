@@ -6,7 +6,7 @@ DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName Text(15) -- String
 SET     @MiddleName = 'som middle name'
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO "Person"
