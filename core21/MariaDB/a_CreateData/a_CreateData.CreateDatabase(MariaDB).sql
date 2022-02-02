@@ -176,6 +176,16 @@ CREATE TABLE Child      (ParentID int, ChildID int)
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
+CREATE INDEX IX_ChildIndex ON Child (ParentID)
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+CREATE INDEX IX_ChildIndex2 ON Child (ParentID DESC)
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
 BeforeExecute
