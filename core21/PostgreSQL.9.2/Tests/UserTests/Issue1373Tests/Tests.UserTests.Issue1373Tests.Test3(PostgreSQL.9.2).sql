@@ -13,7 +13,7 @@ BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Field1 Text -- String
+DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
@@ -31,7 +31,7 @@ BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Field1 Text -- String
+DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
@@ -49,7 +49,7 @@ BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Field1 Text(4) -- String
+DECLARE @Field1 Varchar(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"
