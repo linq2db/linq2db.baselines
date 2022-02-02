@@ -92,6 +92,7 @@ VALUES
 	[Source].[BigIntValue],
 	[Source].[StringValue]
 )
+
 WHEN NOT MATCHED BY SOURCE AND [Target].[ID] > 5 THEN DELETE
 ;
 
