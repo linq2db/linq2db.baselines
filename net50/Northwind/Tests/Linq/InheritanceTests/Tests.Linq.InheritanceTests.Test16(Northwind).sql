@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[Discontinued],
@@ -18,7 +18,7 @@ WHERE
 	[t1].[Discontinued] = 1
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[ProductID],

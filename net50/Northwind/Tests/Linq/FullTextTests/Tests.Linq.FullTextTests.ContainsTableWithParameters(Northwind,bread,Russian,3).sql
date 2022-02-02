@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @search_1 NVarChar(4000) -- String
 SET     @search_1 = N'bread'
 DECLARE @lang NVarChar(4000) -- String

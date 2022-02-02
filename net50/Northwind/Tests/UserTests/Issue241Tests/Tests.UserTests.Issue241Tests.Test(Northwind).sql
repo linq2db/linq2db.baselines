@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[x].[Fax],
@@ -31,7 +31,7 @@ GROUP BY
 	[x].[CompanyName]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'ALFKI'
 
@@ -53,7 +53,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'ANATR'
 
@@ -75,7 +75,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'ANTON'
 
@@ -97,7 +97,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'AROUT'
 
@@ -119,7 +119,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'BLAUS'
 
@@ -141,7 +141,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'BLONP'
 
@@ -163,7 +163,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'BOTTM'
 
@@ -185,7 +185,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'CACTU'
 
@@ -207,7 +207,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'CENTC'
 
@@ -229,7 +229,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'CONSH'
 
@@ -251,7 +251,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'DRACD'
 
@@ -273,7 +273,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'DUMON'
 
@@ -295,7 +295,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'EASTC'
 
@@ -317,7 +317,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'ERNSH'
 
@@ -339,7 +339,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'FISSA'
 
@@ -361,7 +361,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'FRANR'
 
@@ -383,7 +383,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'FURIB'
 
@@ -405,7 +405,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'GALED'
 
@@ -427,7 +427,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'GODOS'
 
@@ -449,7 +449,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'GOURL'
 
@@ -471,7 +471,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'GREAL'
 
@@ -493,7 +493,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'GROSR'
 
@@ -515,7 +515,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'HILAA'
 
@@ -537,7 +537,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'HUNGC'
 
@@ -559,7 +559,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'HUNGO'
 
@@ -581,7 +581,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'ISLAT'
 
@@ -603,7 +603,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'LAZYK'
 
@@ -625,7 +625,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'LEHMS'
 
@@ -647,7 +647,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'LETSS'
 
@@ -669,7 +669,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'LINOD'
 
@@ -691,7 +691,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'LONEP'
 
@@ -713,7 +713,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'MAGAA'
 
@@ -735,7 +735,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'MORGK'
 
@@ -757,7 +757,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'NORTS'
 
@@ -779,7 +779,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'OCEAN'
 
@@ -801,7 +801,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'OLDWO'
 
@@ -823,7 +823,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'OTTIK'
 
@@ -845,7 +845,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'PARIS'
 
@@ -867,7 +867,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'QUICK'
 
@@ -889,7 +889,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'RATTC'
 
@@ -911,7 +911,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'RICSU'
 
@@ -933,7 +933,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'ROMEY'
 
@@ -955,7 +955,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'SANTG'
 
@@ -977,7 +977,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'SAVEA'
 
@@ -999,7 +999,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'SEVES'
 
@@ -1021,7 +1021,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'SIMOB'
 
@@ -1043,7 +1043,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'SPECD'
 
@@ -1065,7 +1065,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'SPLIR'
 
@@ -1087,7 +1087,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'THEBI'
 
@@ -1109,7 +1109,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'THECR'
 
@@ -1131,7 +1131,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'TOMSP'
 
@@ -1153,7 +1153,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'TORTU'
 
@@ -1175,7 +1175,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'TRADH'
 
@@ -1197,7 +1197,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'TRAIH'
 
@@ -1219,7 +1219,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'VAFFE'
 
@@ -1241,7 +1241,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'VICTE'
 
@@ -1263,7 +1263,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'VINET'
 
@@ -1285,7 +1285,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'WARTH'
 
@@ -1307,7 +1307,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'WELLI'
 
@@ -1329,7 +1329,7 @@ WHERE
 	[_].[CompanyName] LIKE N'%t%' ESCAPE N'~' AND [_].[CustomerID] = @CustomerID
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @CustomerID NVarChar(4000) -- String
 SET     @CustomerID = N'WHITC'
 
