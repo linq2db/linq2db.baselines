@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Tag]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [Tag]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Tagging]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [Tagging]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue]
 (
@@ -31,7 +31,7 @@ CREATE TABLE [Issue]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[i].[Id]
@@ -50,19 +50,19 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue]', N'U') IS NOT NULL)
 	DROP TABLE [Issue]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Tagging]', N'U') IS NOT NULL)
 	DROP TABLE [Tagging]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
 	DROP TABLE [Tag]

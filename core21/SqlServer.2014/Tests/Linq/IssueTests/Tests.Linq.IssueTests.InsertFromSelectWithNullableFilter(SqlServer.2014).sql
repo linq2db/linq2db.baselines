@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [AllTypes]
 (
@@ -21,7 +21,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @ID SmallInt -- Int16
 SET     @ID = 1234
 

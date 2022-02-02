@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Local_SelectedValue Int -- Int32
 SET     @Local_SelectedValue = 1
 

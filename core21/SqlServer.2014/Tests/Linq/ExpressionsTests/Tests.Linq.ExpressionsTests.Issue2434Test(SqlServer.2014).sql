@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue2434Table]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Issue2434Table]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -22,7 +22,7 @@ ORDER BY
 	[t1].[FirstName] + N' ' + [t1].[LastName]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue2434Table]', N'U') IS NOT NULL)
 	DROP TABLE [Issue2434Table]

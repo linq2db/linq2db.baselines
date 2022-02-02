@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NOT NULL)
 	DROP TABLE [Issue2816Table]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NULL)
 	CREATE TABLE [Issue2816Table]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Issue2816Table]
 (
@@ -33,7 +33,7 @@ VALUES
 x ')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[p].[Id],
@@ -45,7 +45,7 @@ WHERE
                  　]%')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NOT NULL)
 	DROP TABLE [Issue2816Table]

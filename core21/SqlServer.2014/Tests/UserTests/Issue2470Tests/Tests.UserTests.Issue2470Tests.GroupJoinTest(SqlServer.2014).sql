@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [dbo].[Orders]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [dbo].[Orders]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [dbo].[OrderItems]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [dbo].[OrderItems]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -56,13 +56,13 @@ FROM
 		) [t2] ON [t].[Id] = [t2].[collection]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[dbo].[OrderItems]', N'U') IS NOT NULL)
 	DROP TABLE [dbo].[OrderItems]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[dbo].[Orders]', N'U') IS NOT NULL)
 	DROP TABLE [dbo].[Orders]

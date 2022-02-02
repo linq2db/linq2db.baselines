@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [TestInsertOrReplaceTable]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [TestInsertOrReplaceTable]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(4000) -- String
@@ -50,7 +50,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
@@ -67,7 +67,7 @@ WHERE
 	[x].[FirstName] = @FirstName
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(4000) -- String
@@ -105,7 +105,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
@@ -122,7 +122,7 @@ WHERE
 	[x].[FirstName] = @FirstName
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TestInsertOrReplaceTable]', N'U') IS NOT NULL)
 	DROP TABLE [TestInsertOrReplaceTable]

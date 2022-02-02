@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
 	DROP TABLE [TableWithData]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 	CREATE TABLE [TableWithData]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TableWithData]
 (
@@ -37,7 +37,7 @@ VALUES
 (10,-10,N'Str10')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [DestinationTable]
 (
@@ -47,7 +47,7 @@ CREATE TABLE [DestinationTable]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[s].[Id],
@@ -59,7 +59,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100
 DECLARE @param_1 Int -- Int32
@@ -82,7 +82,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -92,13 +92,13 @@ FROM
 	[DestinationTable] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NOT NULL)
 	DROP TABLE [DestinationTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
 	DROP TABLE [TableWithData]
