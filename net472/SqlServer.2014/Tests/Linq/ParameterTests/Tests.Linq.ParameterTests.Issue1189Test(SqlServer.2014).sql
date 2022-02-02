@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Issue1189Customer]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [Issue1189Customer]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @DateTime DateTime2
 SET     @DateTime = '2020-02-29T17:54:55.1231234'
 
@@ -22,7 +22,7 @@ FROM
 	[Issue1189Customer] [k_1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1189Customer]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1189Customer]

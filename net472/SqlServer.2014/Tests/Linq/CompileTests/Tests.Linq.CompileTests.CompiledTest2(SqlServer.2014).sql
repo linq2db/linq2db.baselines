@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 1
 DECLARE @ParentID Int -- Int32
@@ -14,7 +14,7 @@ WHERE
 	[c_1].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 2
 DECLARE @ParentID Int -- Int32

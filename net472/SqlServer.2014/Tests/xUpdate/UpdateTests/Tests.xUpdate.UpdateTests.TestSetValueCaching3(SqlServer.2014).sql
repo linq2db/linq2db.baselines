@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NOT NULL)
 	DROP TABLE [UpdateSetTest]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NULL)
 	CREATE TABLE [UpdateSetTest]
@@ -22,7 +22,7 @@ IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [UpdateSetTest]
 (
@@ -38,7 +38,7 @@ VALUES
 (1,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627',10,6,NULL,NULL,NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Value3 Int -- Int32
 SET     @Value3 = 7
 DECLARE @id Int -- Int32
@@ -54,7 +54,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -68,7 +68,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Value3 Int -- Int32
 SET     @Value3 = 8
 DECLARE @id Int -- Int32
@@ -84,7 +84,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -98,7 +98,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NOT NULL)
 	DROP TABLE [UpdateSetTest]

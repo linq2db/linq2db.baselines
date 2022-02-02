@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[BaseTable]', N'U') IS NOT NULL)
 	DROP TABLE [BaseTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[BaseTable]', N'U') IS NULL)
 	CREATE TABLE [BaseTable]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[BaseTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @BaseValue Int -- Int32
 SET     @BaseValue = 100
 DECLARE @Id Int -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -48,7 +48,7 @@ WHERE
 	[x].[Id] = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -61,7 +61,7 @@ WHERE
 	[x].[Id] = 1 AND [x].[Value] = 100
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[BaseTable]', N'U') IS NOT NULL)
 	DROP TABLE [BaseTable]

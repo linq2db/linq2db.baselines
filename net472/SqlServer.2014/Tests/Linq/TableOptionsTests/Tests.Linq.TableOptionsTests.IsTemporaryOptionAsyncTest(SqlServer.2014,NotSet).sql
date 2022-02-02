@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 CREATE TABLE [#temp_table1]
 (
@@ -11,7 +11,7 @@ BeforeExecute
 INSERT ASYNC BULK [#temp_table1](ID, Value)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 CREATE TABLE [#temp_table2]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [#temp_table2]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 INSERT INTO [#temp_table2]
 (
@@ -34,7 +34,7 @@ FROM
 	[#temp_table1] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ID],
@@ -43,7 +43,7 @@ FROM
 	[#temp_table1] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ID],
@@ -52,7 +52,7 @@ FROM
 	[#temp_table2] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 INSERT INTO [#temp_table1]
 (
@@ -63,7 +63,7 @@ VALUES
 (2,3)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @Value_1 Int -- Int32
@@ -84,23 +84,23 @@ BeforeExecute
 INSERT ASYNC BULK [#temp_table1](ID, Value)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 TRUNCATE TABLE [#temp_table1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 
 TRUNCATE TABLE [#temp_table2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NOT NULL)
 	DROP TABLE [#temp_table2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NOT NULL)
 	DROP TABLE [#temp_table1]

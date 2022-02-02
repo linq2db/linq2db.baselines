@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
 	DROP TABLE [stVersions]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[stVersions]', N'U') IS NULL)
 	CREATE TABLE [stVersions]
@@ -17,13 +17,13 @@ IF (OBJECT_ID(N'[stVersions]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NOT NULL)
 	DROP TABLE [rlStatesTypesAndUserGroups]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NULL)
 	CREATE TABLE [rlStatesTypesAndUserGroups]
@@ -35,13 +35,13 @@ IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[stMain]', N'U') IS NOT NULL)
 	DROP TABLE [stMain]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[stMain]', N'U') IS NULL)
 	CREATE TABLE [stMain]
@@ -53,7 +53,7 @@ IF (OBJECT_ID(N'[stMain]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[v].[inId],
@@ -64,19 +64,19 @@ FROM
 		LEFT JOIN [rlStatesTypesAndUserGroups] [r] ON [r].[inIdType] = [a_Main].[inIdType]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[stMain]', N'U') IS NOT NULL)
 	DROP TABLE [stMain]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[rlStatesTypesAndUserGroups]', N'U') IS NOT NULL)
 	DROP TABLE [rlStatesTypesAndUserGroups]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
 	DROP TABLE [stVersions]

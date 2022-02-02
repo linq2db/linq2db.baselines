@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1078Table]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1078Table]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1078Table]', N'U') IS NULL)
 	CREATE TABLE [Issue1078Table]
@@ -18,7 +18,7 @@ IF (OBJECT_ID(N'[Issue1078Table]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserID Int -- Int32
 SET     @UserID = 1
 DECLARE @SiteID Int -- Int32
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserID Int -- Int32
 SET     @UserID = 2
 DECLARE @SiteID Int -- Int32
@@ -62,7 +62,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserID Int -- Int32
 SET     @UserID = 3
 DECLARE @SiteID Int -- Int32
@@ -84,7 +84,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserID Int -- Int32
 SET     @UserID = 4
 DECLARE @SiteID Int -- Int32
@@ -106,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserID Int -- Int32
 SET     @UserID = 5
 DECLARE @SiteID Int -- Int32
@@ -128,7 +128,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserID Int -- Int32
 SET     @UserID = 6
 DECLARE @SiteID Int -- Int32
@@ -150,7 +150,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserID Int -- Int32
 SET     @UserID = 7
 DECLARE @SiteID Int -- Int32
@@ -172,7 +172,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserID Int -- Int32
 SET     @UserID = 8
 DECLARE @SiteID Int -- Int32
@@ -194,7 +194,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @UserID Int -- Int32
 SET     @UserID = 9
 DECLARE @SiteID Int -- Int32
@@ -216,7 +216,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[SiteID],
@@ -235,7 +235,7 @@ GROUP BY
 	[t1].[SiteID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Issue1078Table]', N'U') IS NOT NULL)
 	DROP TABLE [Issue1078Table]

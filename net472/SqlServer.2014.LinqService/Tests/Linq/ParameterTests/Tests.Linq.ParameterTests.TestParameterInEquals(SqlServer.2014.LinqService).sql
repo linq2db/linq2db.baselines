@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [TestEqualsTable1]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [TestEqualsTable1]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [TestEqualsTable2]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [TestEqualsTable2]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[_].[Id]
@@ -33,13 +33,13 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TestEqualsTable2]', N'U') IS NOT NULL)
 	DROP TABLE [TestEqualsTable2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TestEqualsTable1]', N'U') IS NOT NULL)
 	DROP TABLE [TestEqualsTable1]

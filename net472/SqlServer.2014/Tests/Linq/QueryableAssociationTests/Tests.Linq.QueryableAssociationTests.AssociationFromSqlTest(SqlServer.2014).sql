@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [FewNumberEntity]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [FewNumberEntity]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [LargeNumberEntity]
 (
@@ -16,13 +16,13 @@ CREATE TABLE [LargeNumberEntity]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[LargeNumberEntity]', N'U') IS NOT NULL)
 	DROP TABLE [LargeNumberEntity]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[FewNumberEntity]', N'U') IS NOT NULL)
 	DROP TABLE [FewNumberEntity]

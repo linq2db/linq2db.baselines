@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Condos]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [Condos]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [CategoryCondos]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [CategoryCondos]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [CondoTags]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [CondoTags]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Locations]
 (
@@ -43,7 +43,7 @@ CREATE TABLE [Locations]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[c_1].[Id],
@@ -75,25 +75,25 @@ FROM
 		) [ccleft] ON [c_1].[Id] = [ccleft].[CondoId]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Locations]', N'U') IS NOT NULL)
 	DROP TABLE [Locations]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[CondoTags]', N'U') IS NOT NULL)
 	DROP TABLE [CondoTags]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[CategoryCondos]', N'U') IS NOT NULL)
 	DROP TABLE [CategoryCondos]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Condos]', N'U') IS NOT NULL)
 	DROP TABLE [Condos]

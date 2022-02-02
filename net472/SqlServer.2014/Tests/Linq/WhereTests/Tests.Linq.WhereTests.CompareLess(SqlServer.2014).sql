@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[WhereCompareData]', N'U') IS NOT NULL)
 	DROP TABLE [WhereCompareData]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[WhereCompareData]', N'U') IS NULL)
 	CREATE TABLE [WhereCompareData]
@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'[WhereCompareData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [WhereCompareData]
 (
@@ -43,7 +43,7 @@ VALUES
 (12,1,NULL,NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[p].[Id],
@@ -56,7 +56,7 @@ WHERE
 	[p].[Nullable] < [p].[OtherNullable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -67,7 +67,7 @@ FROM
 	[WhereCompareData] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[p].[Id],
@@ -80,7 +80,7 @@ WHERE
 	([p].[Nullable] >= [p].[OtherNullable] OR [p].[Nullable] IS NULL OR [p].[OtherNullable] IS NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -91,7 +91,7 @@ FROM
 	[WhereCompareData] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[p].[Id],
@@ -104,7 +104,7 @@ WHERE
 	[p].[OtherNullable] > [p].[Nullable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -115,7 +115,7 @@ FROM
 	[WhereCompareData] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[p].[Id],
@@ -128,7 +128,7 @@ WHERE
 	([p].[OtherNullable] <= [p].[Nullable] OR [p].[OtherNullable] IS NULL OR [p].[Nullable] IS NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -139,7 +139,7 @@ FROM
 	[WhereCompareData] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[WhereCompareData]', N'U') IS NOT NULL)
 	DROP TABLE [WhereCompareData]

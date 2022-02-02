@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
 	DROP TABLE [User]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	CREATE TABLE [User]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [User]
 (
@@ -29,7 +29,7 @@ VALUES
 ('a948600d-de21-4f74-8ac2-9516b287076e',N'User2')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -40,7 +40,7 @@ FROM
 	[User] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -51,7 +51,7 @@ FROM
 	[User] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
 	DROP TABLE [User]

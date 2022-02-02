@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[WhereWithString]', N'U') IS NOT NULL)
 	DROP TABLE [WhereWithString]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[WhereWithString]', N'U') IS NULL)
 	CREATE TABLE [WhereWithString]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[WhereWithString]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [WhereWithString]
 (
@@ -28,7 +28,7 @@ VALUES
 (1,N'Str1')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[Id],
@@ -39,7 +39,7 @@ WHERE
 	[x].[StringValue] LIKE N'%Str%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[WhereWithString]', N'U') IS NOT NULL)
 	DROP TABLE [WhereWithString]
