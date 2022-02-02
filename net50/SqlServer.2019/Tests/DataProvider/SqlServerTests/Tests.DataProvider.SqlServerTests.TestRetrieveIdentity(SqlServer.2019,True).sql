@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(4000) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(4000) -- String
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(4000) -- String
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Max([_].[PersonID])
@@ -85,17 +85,17 @@ FROM
 	[Person] [_]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT IDENT_CURRENT('Person')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT IDENT_INCR('Person')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @tableName NVarChar(4000) -- String
 SET     @tableName = N'Person'
 

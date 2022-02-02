@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [ProductTable]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [ProductTable]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [ProductAttributeTable]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [ProductAttributeTable]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [ProductAttributeMapping]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [ProductAttributeMapping]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[pa].[Id]
@@ -55,17 +55,17 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [ProductAttributeMapping]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [ProductAttributeTable]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [ProductTable]
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SomeEntity]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[SomeEntity]', N'U') IS NULL)
 	CREATE TABLE [SomeEntity]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[SomeEntity]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [SomeEntity]
 (
@@ -34,12 +34,12 @@ VALUES
 (10,N'Own_10')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SomeOtherEntity]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NULL)
 	CREATE TABLE [SomeOtherEntity]
@@ -49,7 +49,7 @@ IF (OBJECT_ID(N'[SomeOtherEntity]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [SomeOtherEntity]
 (
@@ -69,7 +69,7 @@ VALUES
 (10,N'Str_10')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -87,12 +87,12 @@ FROM
 		) [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SomeOtherEntity]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SomeEntity]
 

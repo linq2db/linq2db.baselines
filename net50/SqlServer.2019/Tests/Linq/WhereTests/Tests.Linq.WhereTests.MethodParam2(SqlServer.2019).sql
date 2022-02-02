@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -11,7 +11,7 @@ WHERE
 	[p].[PersonID] = @ID
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 2
 
