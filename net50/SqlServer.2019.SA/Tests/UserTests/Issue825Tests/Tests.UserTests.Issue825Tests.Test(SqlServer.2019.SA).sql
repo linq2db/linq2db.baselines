@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @childId Int -- Int32
 SET     @childId = 32
 DECLARE @userId Int -- Int32

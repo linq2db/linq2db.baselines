@@ -11,7 +11,7 @@ DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName Text(15) -- String
 SET     @MiddleName = 'som middle name'
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO "Person"
@@ -54,7 +54,7 @@ DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName Text(8) -- String
 SET     @LastName = 'whatever'
-DECLARE @Gender Text(1) -- AnsiStringFixedLength
+DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @ID Integer -- Int32
 SET     @ID = 5

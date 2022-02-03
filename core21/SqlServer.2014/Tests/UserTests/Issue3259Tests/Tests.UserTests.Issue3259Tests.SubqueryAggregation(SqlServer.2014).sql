@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EmployeeTimeOffBalance]', N'U') IS NOT NULL)
 	DROP TABLE [EmployeeTimeOffBalance]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EmployeeTimeOffBalance]', N'U') IS NULL)
 	CREATE TABLE [EmployeeTimeOffBalance]
@@ -18,7 +18,7 @@ IF (OBJECT_ID(N'[EmployeeTimeOffBalance]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [EmployeeTimeOffBalance]
 (
@@ -31,13 +31,13 @@ VALUES
 (2,1,2)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Employee]', N'U') IS NOT NULL)
 	DROP TABLE [Employee]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Employee]', N'U') IS NULL)
 	CREATE TABLE [Employee]
@@ -48,7 +48,7 @@ IF (OBJECT_ID(N'[Employee]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Employee]
 (
@@ -59,13 +59,13 @@ VALUES
 (2)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[LeaveRequest]', N'U') IS NOT NULL)
 	DROP TABLE [LeaveRequest]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[LeaveRequest]', N'U') IS NULL)
 	CREATE TABLE [LeaveRequest]
@@ -77,7 +77,7 @@ IF (OBJECT_ID(N'[LeaveRequest]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [LeaveRequest]
 (
@@ -91,13 +91,13 @@ VALUES
 (4,2)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[LeaveRequestDateEntry]', N'U') IS NOT NULL)
 	DROP TABLE [LeaveRequestDateEntry]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[LeaveRequestDateEntry]', N'U') IS NULL)
 	CREATE TABLE [LeaveRequestDateEntry]
@@ -111,7 +111,7 @@ IF (OBJECT_ID(N'[LeaveRequestDateEntry]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [LeaveRequestDateEntry]
 (
@@ -127,7 +127,7 @@ VALUES
 (4,15,4,2)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t4].[WithParentReference],
@@ -199,25 +199,25 @@ ORDER BY
 	Coalesce([t4].[WithoutParentReference], 0) DESC
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[LeaveRequestDateEntry]', N'U') IS NOT NULL)
 	DROP TABLE [LeaveRequestDateEntry]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[LeaveRequest]', N'U') IS NOT NULL)
 	DROP TABLE [LeaveRequest]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Employee]', N'U') IS NOT NULL)
 	DROP TABLE [Employee]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EmployeeTimeOffBalance]', N'U') IS NOT NULL)
 	DROP TABLE [EmployeeTimeOffBalance]

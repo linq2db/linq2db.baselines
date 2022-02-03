@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012 (asynchronously)
+-- SqlServer.2014 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @ParentID Int -- Int32

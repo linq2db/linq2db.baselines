@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [ValueConversion]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [ValueConversion]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @iteration Int -- Int32
 SET     @iteration = 2
 DECLARE @Value1 NVarChar(200) -- String
@@ -52,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @iteration Int -- Int32
@@ -75,7 +75,7 @@ WHERE
 	[e].[Id] = @iteration
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
 	DROP TABLE [ValueConversion]

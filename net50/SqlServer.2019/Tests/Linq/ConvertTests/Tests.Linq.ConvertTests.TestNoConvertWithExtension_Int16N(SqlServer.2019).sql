@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [IntegerConverts]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NULL)
 	CREATE TABLE [IntegerConverts]
@@ -29,7 +29,7 @@ IF (OBJECT_ID(N'[IntegerConverts]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [IntegerConverts]
 (
@@ -55,7 +55,7 @@ VALUES
 (1,0,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -82,7 +82,7 @@ FROM
 		INNER JOIN [IntegerConverts] [y] ON ([y].[Int16N] = [x].[Int16N] OR [y].[Int16N] IS NULL AND [x].[Int16N] IS NULL)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [IntegerConverts]
 

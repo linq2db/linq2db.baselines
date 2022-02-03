@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	DateAdd(hour, 1, [t].[TransactionDate])
+	DatePart(hour, DateAdd(hour, 1, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

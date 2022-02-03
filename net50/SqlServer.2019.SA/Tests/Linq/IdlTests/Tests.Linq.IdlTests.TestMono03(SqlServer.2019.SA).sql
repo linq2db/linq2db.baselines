@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @p1 NVarChar(4000) -- String
 SET     @p1 = N'A'
 DECLARE @p2 Int -- Int32

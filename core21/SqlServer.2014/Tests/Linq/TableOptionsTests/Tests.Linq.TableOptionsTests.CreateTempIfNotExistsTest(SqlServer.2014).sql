@@ -1,40 +1,40 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
-IF (OBJECT_ID(N'[tempdb]..[##temp_table]', N'U') IS NOT NULL)
-	DROP TABLE [##temp_table]
+IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NOT NULL)
+	DROP TABLE [CreateIfNotExistsTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
-CREATE TABLE [##temp_table]
+CREATE TABLE [#CreateIfNotExistsTable]
 (
 	[Id]    Int NOT NULL,
 	[Value] Int NOT NULL
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
-	[##temp_table] [t1]
+	[#CreateIfNotExistsTable] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
-IF (OBJECT_ID(N'[tempdb]..[##temp_table]', N'U') IS NULL)
-	CREATE TABLE [##temp_table]
+IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
+	CREATE TABLE [CreateIfNotExistsTable]
 	(
 		[Id]    Int NOT NULL,
 		[Value] Int NOT NULL
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
-IF (OBJECT_ID(N'[tempdb]..[##temp_table]', N'U') IS NOT NULL)
-	DROP TABLE [##temp_table]
+IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NOT NULL)
+	DROP TABLE [#CreateIfNotExistsTable]
 

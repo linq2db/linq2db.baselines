@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
 	DROP TABLE [Transactions]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	CREATE TABLE [Transactions]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Transactions]
 (
@@ -53,17 +53,17 @@ VALUES
 (26,'2000-01-01 01:16:01.0000000 -00:15')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 22
 
 SELECT
-	DateAdd(hour, @p_1, [t].[TransactionDate])
+	DatePart(hour, DateAdd(hour, @p_1, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
 	DROP TABLE [Transactions]

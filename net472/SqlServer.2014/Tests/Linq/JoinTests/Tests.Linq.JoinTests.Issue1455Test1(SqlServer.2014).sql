@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Alert]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Alert]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [AuditAlert]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [AuditAlert]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Trade]
 (
@@ -30,7 +30,7 @@ CREATE TABLE [Trade]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Nomin]
 (
@@ -40,7 +40,7 @@ CREATE TABLE [Nomin]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Flat]
 (
@@ -56,7 +56,7 @@ CREATE TABLE [Flat]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @cpty_1 NVarChar(4000) -- String
 SET     @cpty_1 = N'%C%'
 DECLARE @cpty_2 NVarChar(4000) -- String
@@ -92,31 +92,31 @@ GROUP BY
 	[al_1].[alert_2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Flat]', N'U') IS NOT NULL)
 	DROP TABLE [Flat]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Nomin]', N'U') IS NOT NULL)
 	DROP TABLE [Nomin]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Trade]', N'U') IS NOT NULL)
 	DROP TABLE [Trade]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[AuditAlert]', N'U') IS NOT NULL)
 	DROP TABLE [AuditAlert]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Alert]', N'U') IS NOT NULL)
 	DROP TABLE [Alert]

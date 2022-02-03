@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NOT NULL)
 	DROP TABLE [Src]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Int_1 Int -- Int32
 SET     @Int_1 = 2
 DECLARE @NullableInt Int -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Int_1 Int -- Int32
 SET     @Int_1 = 3
 DECLARE @NullableInt Int -- Int32
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @value_1 Int -- Int32
 SET     @value_1 = 2
 
@@ -81,7 +81,7 @@ WHERE
 	CASE WHEN [s].[Int] = @value_1 OR [s].[Int] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @value_1 Int -- Int32
 SET     @value_1 = 2
 
@@ -93,7 +93,7 @@ WHERE
 	CASE WHEN [s].[NullableInt] = @value_1 OR [s].[NullableInt] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @value_1 Int -- Int32
 SET     @value_1 = 2
 
@@ -105,7 +105,7 @@ WHERE
 	CASE WHEN [s].[Int] = @value_1 OR [s].[Int] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @value_1 Int -- Int32
 SET     @value_1 = 2
 
@@ -117,7 +117,7 @@ WHERE
 	CASE WHEN [s].[NullableInt] = @value_1 OR [s].[NullableInt] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NOT NULL)
 	DROP TABLE [Src]

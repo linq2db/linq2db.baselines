@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Tasks]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [Tasks]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [TaskStages]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [TaskStages]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Assignments]
 (
@@ -48,7 +48,7 @@ CREATE TABLE [Assignments]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @directionId UniqueIdentifier -- Guid
 SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -72,7 +72,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @directionId UniqueIdentifier -- Guid
 SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -94,7 +94,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @taskId Int -- Int32
 SET     @taskId = 1
 
@@ -114,7 +114,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @employeeId Int -- Int32
 SET     @employeeId = 10
 
@@ -155,19 +155,19 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Assignments]', N'U') IS NOT NULL)
 	DROP TABLE [Assignments]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TaskStages]', N'U') IS NOT NULL)
 	DROP TABLE [TaskStages]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Tasks]', N'U') IS NOT NULL)
 	DROP TABLE [Tasks]

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [odata_person]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[odata_person]', N'U') IS NULL)
 	CREATE TABLE [odata_person]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[odata_person]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [odata_person]
 (
@@ -30,7 +30,7 @@ VALUES
 (N'N2',4,N'Engineer')
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @TypedProperty NVarChar(4000) -- String
 SET     @TypedProperty = N'Engineer'
 DECLARE @TypedProperty_1 NVarChar(4000) -- String
@@ -48,7 +48,7 @@ GROUP BY
 	[$it].[Title]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [odata_person]
 

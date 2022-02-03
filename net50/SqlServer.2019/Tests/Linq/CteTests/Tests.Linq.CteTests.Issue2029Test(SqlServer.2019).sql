@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [NC_CODE]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [NC_CODE]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [NC_GROUP_MEMBER]
 (
@@ -27,12 +27,12 @@ CREATE TABLE [NC_GROUP_MEMBER]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [NC_GROUP_MEMBER]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [NC_CODE]
 

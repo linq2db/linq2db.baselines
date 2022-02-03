@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	DateAdd('h', 1, [t].[DateTimeValue])
+	DatePart('h', DateAdd('h', 1, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

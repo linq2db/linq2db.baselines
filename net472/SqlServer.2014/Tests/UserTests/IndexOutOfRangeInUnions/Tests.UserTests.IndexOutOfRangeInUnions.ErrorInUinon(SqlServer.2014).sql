@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [O1]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [O1]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [O2]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [O2]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [O3]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [O3]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[NumeroInterno],
@@ -63,19 +63,19 @@ FROM
 	[O3] [doSap_2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[O3]', N'U') IS NOT NULL)
 	DROP TABLE [O3]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[O2]', N'U') IS NOT NULL)
 	DROP TABLE [O2]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[O1]', N'U') IS NOT NULL)
 	DROP TABLE [O1]

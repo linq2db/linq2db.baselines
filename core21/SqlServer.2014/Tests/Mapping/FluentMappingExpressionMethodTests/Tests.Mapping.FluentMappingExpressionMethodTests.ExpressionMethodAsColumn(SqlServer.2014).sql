@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[InstanceClass]', N'U') IS NOT NULL)
 	DROP TABLE [InstanceClass]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[InstanceClass]', N'U') IS NULL)
 	CREATE TABLE [InstanceClass]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[InstanceClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [InstanceClass]
 (
@@ -45,7 +45,7 @@ VALUES
 (20,120)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -55,7 +55,7 @@ FROM
 	[InstanceClass] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[InstanceClass]', N'U') IS NOT NULL)
 	DROP TABLE [InstanceClass]

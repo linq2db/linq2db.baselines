@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[WhereWithBool]', N'U') IS NOT NULL)
 	DROP TABLE [WhereWithBool]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[WhereWithBool]', N'U') IS NULL)
 	CREATE TABLE [WhereWithBool]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[WhereWithBool]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @BoolValue Bit -- Boolean
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t].[Id],
@@ -53,7 +53,7 @@ WHERE
 	) = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[WhereWithBool]', N'U') IS NOT NULL)
 	DROP TABLE [WhereWithBool]

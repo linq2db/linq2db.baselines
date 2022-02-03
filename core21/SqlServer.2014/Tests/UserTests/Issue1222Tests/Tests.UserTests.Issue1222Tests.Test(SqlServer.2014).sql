@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [stLinks]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [stLinks]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [stVersions]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [stVersions]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @parentId Int -- Int32
 SET     @parentId = 111
 
@@ -83,13 +83,13 @@ FROM
 		INNER JOIN [stVersions] [version_1] ON [u].[InIdChild] = [version_1].[inId]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
 	DROP TABLE [stVersions]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[stLinks]', N'U') IS NOT NULL)
 	DROP TABLE [stLinks]

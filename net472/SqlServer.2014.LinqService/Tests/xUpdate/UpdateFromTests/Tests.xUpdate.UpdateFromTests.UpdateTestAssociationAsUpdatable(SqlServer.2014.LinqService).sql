@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
 	DROP TABLE [UpdatedEntities]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	CREATE TABLE [UpdatedEntities]
@@ -20,7 +20,7 @@ IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 0
 DECLARE @Value1 Int -- Int32
@@ -50,7 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @Value1 Int -- Int32
@@ -80,7 +80,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 2
 DECLARE @Value1 Int -- Int32
@@ -110,7 +110,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 3
 DECLARE @Value1 Int -- Int32
@@ -140,13 +140,13 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NOT NULL)
 	DROP TABLE [UpdateRelation]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NULL)
 	CREATE TABLE [UpdateRelation]
@@ -160,7 +160,7 @@ IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 0
 DECLARE @RelatedValue1 Int -- Int32
@@ -186,7 +186,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @RelatedValue1 Int -- Int32
@@ -212,7 +212,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 2
 DECLARE @RelatedValue1 Int -- Int32
@@ -238,7 +238,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 3
 DECLARE @RelatedValue1 Int -- Int32
@@ -264,7 +264,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 UPDATE
 	[v]
@@ -277,7 +277,7 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -290,13 +290,13 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NOT NULL)
 	DROP TABLE [UpdateRelation]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
 	DROP TABLE [UpdatedEntities]

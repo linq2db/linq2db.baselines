@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [TakeSkipClass]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	CREATE TABLE [TakeSkipClass]
@@ -13,7 +13,7 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [TakeSkipClass]
 (
@@ -26,7 +26,7 @@ VALUES
 ('BOLTO')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @skip_2 Int -- Int32
 SET     @skip_2 = 3
 
@@ -39,7 +39,7 @@ ORDER BY
 OFFSET @skip_2 ROWS
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @skip_2 Int -- Int32
 SET     @skip_2 = 4
 
@@ -52,7 +52,7 @@ ORDER BY
 OFFSET @skip_2 ROWS
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [TakeSkipClass]
 

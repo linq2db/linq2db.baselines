@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [ProductTable]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [ProductTable]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [ProductAttributeTable]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [ProductAttributeTable]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [ProductAttributeMapping]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [ProductAttributeMapping]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[pa].[Id]
@@ -55,19 +55,19 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ProductAttributeMapping]', N'U') IS NOT NULL)
 	DROP TABLE [ProductAttributeMapping]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ProductAttributeTable]', N'U') IS NOT NULL)
 	DROP TABLE [ProductAttributeTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ProductTable]', N'U') IS NOT NULL)
 	DROP TABLE [ProductTable]

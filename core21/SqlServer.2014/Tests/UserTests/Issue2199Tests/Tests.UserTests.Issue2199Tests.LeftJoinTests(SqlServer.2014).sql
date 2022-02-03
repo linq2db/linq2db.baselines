@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Manufacturer]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [Manufacturer]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Country]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [Country]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[e_1].[ManufacturerId],
@@ -55,13 +55,13 @@ WHERE
 	[e_1].[ManufacturerId] = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Country]', N'U') IS NOT NULL)
 	DROP TABLE [Country]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Manufacturer]', N'U') IS NOT NULL)
 	DROP TABLE [Manufacturer]

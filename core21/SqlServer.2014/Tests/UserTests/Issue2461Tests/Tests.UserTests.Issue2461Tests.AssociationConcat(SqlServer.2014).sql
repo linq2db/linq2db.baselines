@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [MRECEIPT]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [MRECEIPT]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [CUST_DTL]
 (
@@ -17,13 +17,13 @@ CREATE TABLE [CUST_DTL]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[CUST_DTL]', N'U') IS NOT NULL)
 	DROP TABLE [CUST_DTL]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[MRECEIPT]', N'U') IS NOT NULL)
 	DROP TABLE [MRECEIPT]

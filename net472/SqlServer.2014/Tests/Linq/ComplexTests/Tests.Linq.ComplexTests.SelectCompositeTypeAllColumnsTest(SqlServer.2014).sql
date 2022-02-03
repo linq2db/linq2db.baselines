@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
 	DROP TABLE [User]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	CREATE TABLE [User]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [User]
 (
@@ -30,7 +30,7 @@ VALUES
 (N'Springwood',N'Freddy',N'Elm Street',13)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[city],
@@ -41,7 +41,7 @@ FROM
 	[User] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
 	DROP TABLE [User]

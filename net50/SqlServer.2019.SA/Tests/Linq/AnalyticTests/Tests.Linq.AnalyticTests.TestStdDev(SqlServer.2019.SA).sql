@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	STDEV([c_1].[ChildID]),
@@ -12,7 +12,7 @@ GROUP BY
 	[p].[ParentID]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	STDEV([t1].[ParentID])
@@ -20,7 +20,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	STDEV(ALL [t1].[ParentID])
@@ -28,7 +28,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	STDEV(DISTINCT [t1].[ParentID])

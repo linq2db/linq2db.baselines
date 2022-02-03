@@ -234,6 +234,7 @@ USING (
 	[OtherId]
 )
 ON ([Source].[OtherId] = [Target].[Id])
+
 WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = 2 THEN DELETE
 ;
 

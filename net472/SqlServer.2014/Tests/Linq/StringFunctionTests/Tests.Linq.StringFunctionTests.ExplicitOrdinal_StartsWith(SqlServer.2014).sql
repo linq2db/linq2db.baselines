@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive NVarChar(4000) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	Count(*)
@@ -39,7 +39,7 @@ WHERE
 	Convert(VarBinary(8000), LEFT([r].[CaseSensitive], 6)) = Convert(VarBinary(8000), N'TestSt')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	Count(*)
@@ -50,7 +50,7 @@ WHERE
 	Convert(VarBinary(8000), LEFT([r].[CaseInsensitive], 6)) = Convert(VarBinary(8000), N'TestSt')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	Count(*)
@@ -61,7 +61,7 @@ WHERE
 	Convert(VarBinary(8000), LEFT([r].[CaseSensitive], 6)) = Convert(VarBinary(8000), N'testst')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	Count(*)

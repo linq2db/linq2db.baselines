@@ -117,6 +117,7 @@ VALUES
 	[Source].[MiddleName],
 	[Source].[Gender]
 )
+
 WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	SELECT
 		*
@@ -178,6 +179,7 @@ VALUES
 	[Source].[MiddleName],
 	[Source].[Gender]
 )
+
 WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	SELECT
 		*

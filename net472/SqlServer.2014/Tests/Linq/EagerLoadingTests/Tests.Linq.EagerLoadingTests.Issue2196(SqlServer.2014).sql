@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NOT NULL)
 	DROP TABLE [EventScheduleItem]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NULL)
 	CREATE TABLE [EventScheduleItem]
@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [EventScheduleItem]
 (
@@ -33,13 +33,13 @@ VALUES
 (2,1,2,2)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NOT NULL)
 	DROP TABLE [EventScheduleItemPerson]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NULL)
 	CREATE TABLE [EventScheduleItemPerson]
@@ -50,7 +50,7 @@ IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [EventScheduleItemPerson]
 (
@@ -63,13 +63,13 @@ VALUES
 (2,2,2)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NOT NULL)
 	DROP TABLE [EventSchedulePerson]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NULL)
 	CREATE TABLE [EventSchedulePerson]
@@ -79,7 +79,7 @@ IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [EventSchedulePerson]
 (
@@ -91,7 +91,7 @@ VALUES
 (2,2)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
@@ -108,7 +108,7 @@ WHERE
 	[p].[EventId] = @eventId AND [p].[IsActive] = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
@@ -120,19 +120,19 @@ WHERE
 	[p].[EventId] = @eventId AND [p].[IsActive] = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EventSchedulePerson]', N'U') IS NOT NULL)
 	DROP TABLE [EventSchedulePerson]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EventScheduleItemPerson]', N'U') IS NOT NULL)
 	DROP TABLE [EventScheduleItemPerson]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NOT NULL)
 	DROP TABLE [EventScheduleItem]

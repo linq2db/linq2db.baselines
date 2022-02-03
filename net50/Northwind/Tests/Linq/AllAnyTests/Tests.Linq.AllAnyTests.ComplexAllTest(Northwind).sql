@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[ShipCountry],
@@ -20,7 +20,7 @@ FROM
 	[Orders] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[Fax],
@@ -38,7 +38,7 @@ FROM
 	[Customers] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[PhotoPath],
@@ -63,7 +63,7 @@ FROM
 	[Employees] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[o].[ShipCountry],

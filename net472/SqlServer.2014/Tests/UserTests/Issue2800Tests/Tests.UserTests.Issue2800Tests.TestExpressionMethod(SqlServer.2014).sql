@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Car]', N'U') IS NOT NULL)
 	DROP TABLE [Car]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Car]', N'U') IS NULL)
 	CREATE TABLE [Car]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Car]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Car]
 (
@@ -29,7 +29,7 @@ VALUES
 (2,N'NoSpecial')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[Id],
@@ -38,7 +38,7 @@ FROM
 	[Car] [x]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -47,65 +47,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
-
-SELECT
-	[x].[Id],
-	[x].[Name]
-FROM
-	[Car] [x]
-WHERE
-	([x].[Name] <> N'Special' OR [x].[Name] IS NULL)
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-
-SELECT
-	[x].[Id],
-	[x].[Name]
-FROM
-	[Car] [x]
-WHERE
-	[x].[Name] = N'Special'
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-
-SELECT
-	[x].[Id],
-	[x].[Name]
-FROM
-	[Car] [x]
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[Id],
@@ -116,7 +58,7 @@ WHERE
 	([x].[Name] <> N'Special' OR [x].[Name] IS NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -125,7 +67,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[Id],
@@ -136,7 +78,7 @@ WHERE
 	[x].[Name] = N'Special'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -145,7 +87,65 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
+
+SELECT
+	[x].[Id],
+	[x].[Name]
+FROM
+	[Car] [x]
+
+BeforeExecute
+-- SqlServer.2014
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SqlServer.2014
+
+SELECT
+	[x].[Id],
+	[x].[Name]
+FROM
+	[Car] [x]
+WHERE
+	([x].[Name] <> N'Special' OR [x].[Name] IS NULL)
+
+BeforeExecute
+-- SqlServer.2014
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SqlServer.2014
+
+SELECT
+	[x].[Id],
+	[x].[Name]
+FROM
+	[Car] [x]
+WHERE
+	[x].[Name] = N'Special'
+
+BeforeExecute
+-- SqlServer.2014
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Car]', N'U') IS NOT NULL)
 	DROP TABLE [Car]

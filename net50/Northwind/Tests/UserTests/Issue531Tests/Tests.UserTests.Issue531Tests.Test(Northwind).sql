@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @ext NVarChar(4000) -- String
 SET     @ext = N'5467'
 
@@ -28,7 +28,7 @@ WHERE
 	[e].[Extension] = @ext
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[e].[PhotoPath],

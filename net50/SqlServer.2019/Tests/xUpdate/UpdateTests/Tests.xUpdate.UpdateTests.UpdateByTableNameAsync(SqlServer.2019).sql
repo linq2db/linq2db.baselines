@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [xxPerson]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 
 CREATE TABLE [xxPerson]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	Count(*)
@@ -52,7 +52,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -66,7 +66,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -91,7 +91,7 @@ WHERE
 	[t1].[PersonID] = @ID
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -105,7 +105,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 
 DROP TABLE [xxPerson]
 

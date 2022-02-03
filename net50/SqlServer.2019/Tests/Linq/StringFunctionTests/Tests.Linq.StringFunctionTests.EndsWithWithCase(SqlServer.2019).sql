@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Count(*)
@@ -11,7 +11,7 @@ WHERE
 	[p].[PersonID] = 2
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Count(*)
@@ -22,7 +22,7 @@ WHERE
 	[p].[PersonID] = 2
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Count(*)
@@ -34,7 +34,7 @@ WHERE
 	[p].[PersonID] = 2
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Count(*)

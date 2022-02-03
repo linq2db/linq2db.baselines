@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[odata_person]', N'U') IS NOT NULL)
 	DROP TABLE [odata_person]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[odata_person]', N'U') IS NULL)
 	CREATE TABLE [odata_person]
@@ -18,7 +18,7 @@ IF (OBJECT_ID(N'[odata_person]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [odata_person]
 (
@@ -31,7 +31,7 @@ VALUES
 (N'N2',4,N'Engineer')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	N'Title',
@@ -45,7 +45,7 @@ ORDER BY
 	Sum([selectParam].[YearsExperience])
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[odata_person]', N'U') IS NOT NULL)
 	DROP TABLE [odata_person]

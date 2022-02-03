@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 DECLARE @n Int -- Int32
 SET     @n = 3
 DECLARE @take Int -- Int32

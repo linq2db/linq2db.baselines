@@ -38,6 +38,7 @@ VALUES
 	[Source].[ParentID],
 	[Source].[ChildID]
 )
+
 WHEN NOT MATCHED BY SOURCE AND EXISTS(
 	SELECT
 		*

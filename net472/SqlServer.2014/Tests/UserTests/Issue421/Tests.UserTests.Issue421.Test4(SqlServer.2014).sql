@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [BlobClass]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [BlobClass]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [BlobClass]
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT TOP (1)
 	[_].[Id],
@@ -35,7 +35,7 @@ WHERE
 	[_].[Id] = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT TOP (1)
 	[_].[Id],
@@ -46,7 +46,7 @@ WHERE
 	[_].[Id] = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[BlobClass]', N'U') IS NOT NULL)
 	DROP TABLE [BlobClass]

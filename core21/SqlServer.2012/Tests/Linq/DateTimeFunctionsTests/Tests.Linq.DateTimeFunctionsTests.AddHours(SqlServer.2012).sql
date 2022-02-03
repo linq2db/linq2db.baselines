@@ -2,7 +2,7 @@
 -- SqlServer.2012
 
 SELECT
-	DateAdd(hour, 22, [t].[DateTimeValue])
+	DatePart(hour, DateAdd(hour, 22, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

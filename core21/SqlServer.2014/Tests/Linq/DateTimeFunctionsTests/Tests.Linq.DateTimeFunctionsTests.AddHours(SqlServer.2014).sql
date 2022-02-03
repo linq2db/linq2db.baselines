@@ -1,8 +1,8 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
-	DateAdd(hour, 22, [t].[DateTimeValue])
+	DatePart(hour, DateAdd(hour, 22, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

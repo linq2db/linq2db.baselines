@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @hid hierarchyid -- Udt -- Object
 SET     @hid = /1/
 
@@ -12,7 +12,7 @@ WHERE
 	@hid.IsDescendantOf([t].[HID]) = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ID],

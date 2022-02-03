@@ -21,15 +21,15 @@ BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
-DECLARE @Value1 Text(2) -- String
+DECLARE @Value1 Varchar(2) -- String
 SET     @Value1 = '[]'
-DECLARE @Enum Text(6) -- String
+DECLARE @Enum Varchar(6) -- String
 SET     @Enum = 'Value1'
-DECLARE @inserted Text(22) -- String
+DECLARE @inserted Varchar(22) -- String
 SET     @inserted = '[{"Value":"inserted"}]'
-DECLARE @boolValue Text -- AnsiString
+DECLARE @boolValue Varchar -- String
 SET     @boolValue = 'N'
-DECLARE @boolValue_1 Text -- AnsiString
+DECLARE @boolValue_1 Varchar -- String
 SET     @boolValue_1 = 'F'
 
 INSERT INTO "ValueConversion"

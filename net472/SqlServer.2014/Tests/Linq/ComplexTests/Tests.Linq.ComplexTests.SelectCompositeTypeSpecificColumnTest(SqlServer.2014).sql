@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [User]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [User]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[u].[city]
@@ -18,7 +18,7 @@ FROM
 	[User] [u]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[u].[street]
@@ -26,7 +26,7 @@ FROM
 	[User] [u]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
 	DROP TABLE [User]

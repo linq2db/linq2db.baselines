@@ -52,11 +52,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Value2 Text(21) -- String
+DECLARE @Value2 Varchar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
-DECLARE @EnumWithNull Text -- AnsiString
+DECLARE @EnumWithNull Varchar -- String
 SET     @EnumWithNull = NULL
-DECLARE @EnumWithNullDeclarative Text -- AnsiString
+DECLARE @EnumWithNullDeclarative Varchar -- String
 SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
@@ -93,21 +93,21 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Value1 Text(20) -- String
+DECLARE @Value1 Varchar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
-DECLARE @Value2 Text(22) -- String
+DECLARE @Value2 Varchar(22) -- String
 SET     @Value2 = '[{"Value":"updated2"}]'
-DECLARE @Enum Text(6) -- String
+DECLARE @Enum Varchar(6) -- String
 SET     @Enum = 'Value1'
-DECLARE @EnumNullable Text -- AnsiString
+DECLARE @EnumNullable Varchar -- String
 SET     @EnumNullable = NULL
-DECLARE @EnumWithNull Text(6) -- AnsiString
+DECLARE @EnumWithNull Varchar(6) -- String
 SET     @EnumWithNull = 'Value2'
-DECLARE @EnumWithNullDeclarative Text(6) -- AnsiString
+DECLARE @EnumWithNullDeclarative Varchar(6) -- String
 SET     @EnumWithNullDeclarative = 'Value2'
-DECLARE @BoolValue Text -- AnsiString
+DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'N'
-DECLARE @AnotherBoolValue Text -- AnsiString
+DECLARE @AnotherBoolValue Varchar -- String
 SET     @AnotherBoolValue = 'F'
 DECLARE @DateTimeNullable Timestamp -- DateTime
 SET     @DateTimeNullable = NULL
@@ -153,21 +153,21 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @Value1 Text -- String
+DECLARE @Value1 Varchar -- String
 SET     @Value1 = NULL
-DECLARE @Value2 Text -- String
+DECLARE @Value2 Varchar -- String
 SET     @Value2 = NULL
-DECLARE @Enum Text(6) -- String
+DECLARE @Enum Varchar(6) -- String
 SET     @Enum = 'Value1'
-DECLARE @EnumNullable Text -- AnsiString
+DECLARE @EnumNullable Varchar -- String
 SET     @EnumNullable = NULL
-DECLARE @EnumWithNull Text -- AnsiString
+DECLARE @EnumWithNull Varchar -- String
 SET     @EnumWithNull = NULL
-DECLARE @EnumWithNullDeclarative Text -- AnsiString
+DECLARE @EnumWithNullDeclarative Varchar -- String
 SET     @EnumWithNullDeclarative = NULL
-DECLARE @BoolValue Text -- AnsiString
+DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'N'
-DECLARE @AnotherBoolValue Text -- AnsiString
+DECLARE @AnotherBoolValue Varchar -- String
 SET     @AnotherBoolValue = 'F'
 DECLARE @DateTimeNullable Timestamp -- DateTime
 SET     @DateTimeNullable = NULL

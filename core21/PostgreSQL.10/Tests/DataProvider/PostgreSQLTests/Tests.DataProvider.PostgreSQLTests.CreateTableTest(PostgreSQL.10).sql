@@ -9,8 +9,8 @@ CREATE TABLE "CreateTableTestClass"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @TimeOffset TimestampTZ -- DateTimeOffset
-SET     @TimeOffset = '2017-06-17T16:40:33.0000000-03:00'
+DECLARE @TimeOffset TimestampTz -- DateTimeOffset
+SET     @TimeOffset = '2017-06-17T19:40:33.0000000+00:00'
 DECLARE @Guid Uuid -- Guid
 SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 

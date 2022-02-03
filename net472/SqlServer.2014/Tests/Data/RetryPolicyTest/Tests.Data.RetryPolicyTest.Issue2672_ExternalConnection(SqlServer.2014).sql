@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  SqlServer.2012
+--  SqlServer.2014
 
 CREATE TABLE [MyEntity]
 (
@@ -8,13 +8,13 @@ CREATE TABLE [MyEntity]
 )
 
 BeforeExecute
---  SqlServer.2012
+--  SqlServer.2014
 
 IF (OBJECT_ID(N'[MyEntity]', N'U') IS NOT NULL)
 	DROP TABLE [MyEntity]
 
 BeforeExecute
---  SqlServer.2012
+--  SqlServer.2014
 
 CREATE TABLE [MyEntity]
 (
