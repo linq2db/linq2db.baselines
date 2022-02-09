@@ -69,6 +69,16 @@ SELECT
 FROM
 	"Ints" i
 WHERE
+	(1, i."Nil", 4) <> (i."One", i."Nil", i."Three")
+
+BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+
+SELECT
+	Count(*)
+FROM
+	"Ints" i
+WHERE
 	(1, NULL, 4) <> (i."One", i."Nil", i."Three")
 
 BeforeExecute
