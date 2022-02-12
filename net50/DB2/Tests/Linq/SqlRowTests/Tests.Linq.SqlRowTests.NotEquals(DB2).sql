@@ -77,6 +77,16 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
+	(1, "i"."Nil", 4) <> ("i"."One", "i"."Nil", "i"."Three")
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	"Ints" "i"
+WHERE
 	(1, NULL, 4) <> ("i"."One", "i"."Nil", "i"."Three")
 
 BeforeExecute
