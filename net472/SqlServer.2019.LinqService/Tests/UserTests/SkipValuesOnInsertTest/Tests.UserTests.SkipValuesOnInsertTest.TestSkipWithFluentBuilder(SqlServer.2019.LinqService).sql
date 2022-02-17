@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [PR_1598_Insert_Fluent_Table]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [PR_1598_Insert_Fluent_Table]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -29,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -43,7 +43,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [PR_1598_Insert_Fluent_Table]
 

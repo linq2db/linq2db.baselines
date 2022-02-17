@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @GuidValue UniqueIdentifier -- Guid
@@ -20,7 +20,7 @@ WHERE
 	[p].[GuidValue] = @GuidValue
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @GuidValue UniqueIdentifier -- Guid

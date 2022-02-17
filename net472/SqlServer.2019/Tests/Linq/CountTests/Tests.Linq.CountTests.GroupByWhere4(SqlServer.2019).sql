@@ -9,7 +9,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[a_Parent].[ParentID]

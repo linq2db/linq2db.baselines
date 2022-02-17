@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -11,7 +11,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'Joh%'
 DECLARE @nameToCheck_2 Int -- Int32
@@ -28,7 +28,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'Joh%'
 DECLARE @nameToCheck_2 Int -- Int32
@@ -45,7 +45,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'JOH%'
 DECLARE @nameToCheck_2 Int -- Int32
@@ -62,7 +62,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'JOH%'
 DECLARE @nameToCheck_2 Int -- Int32

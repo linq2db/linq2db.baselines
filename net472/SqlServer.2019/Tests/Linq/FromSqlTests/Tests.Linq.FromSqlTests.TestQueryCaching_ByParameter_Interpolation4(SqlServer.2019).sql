@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @p_1 Variant -- Object
 SET     @p_1 = NULL
 
@@ -11,7 +11,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @p_1 Variant -- Object
 SET     @p_1 = NULL
 
@@ -23,7 +23,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @p_1 Variant -- Object
 SET     @p_1 = NULL
 
@@ -35,7 +35,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @p_1 Variant -- Object
 SET     @p_1 = NULL
 
@@ -47,7 +47,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @p_1 Variant -- Object
 SET     @p_1 = NULL
 

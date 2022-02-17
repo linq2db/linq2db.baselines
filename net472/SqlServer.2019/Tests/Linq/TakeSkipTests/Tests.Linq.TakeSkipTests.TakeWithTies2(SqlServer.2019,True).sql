@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT TOP (50) PERCENT WITH TIES
 	[_].[FirstName],

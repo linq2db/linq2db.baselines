@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	CREATE TABLE [SampleClass]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value_1 Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -46,7 +46,7 @@ FROM
 		) [s] ON [s].[c1] = [t].[Id]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 

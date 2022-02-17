@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [billing_devtypes]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [billing_devtypes]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [billing_devices]
 (
@@ -23,7 +23,7 @@ CREATE TABLE [billing_devices]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [billing_DevReadingType]
 (
@@ -36,7 +36,7 @@ CREATE TABLE [billing_DevReadingType]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [billing_TempReading]
 (
@@ -55,7 +55,7 @@ CREATE TABLE [billing_TempReading]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 UPDATE
 	[tr]
@@ -67,7 +67,7 @@ FROM
 		INNER JOIN [billing_DevReadingType] [drt] ON [drt].[Name] = [tr].[ReadingTypeName] AND [drt].[DevTypeId] = [tr].[Devtypeid]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @take_1 Int -- Int32
@@ -96,22 +96,22 @@ FROM
 	[billing_TempReading] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [billing_TempReading]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [billing_DevReadingType]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [billing_devices]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [billing_devtypes]
 

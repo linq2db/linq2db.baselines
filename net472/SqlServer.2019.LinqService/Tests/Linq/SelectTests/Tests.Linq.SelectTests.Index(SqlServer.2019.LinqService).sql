@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[a_Parent].[ParentID],
@@ -14,7 +14,7 @@ ORDER BY
 	[m_1].[ChildID] DESC
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[a_Parent].[ParentID],

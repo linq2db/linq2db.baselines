@@ -20,7 +20,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 2
 DECLARE @take Int -- Int32

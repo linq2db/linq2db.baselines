@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @n Int -- Int32
 SET     @n = 300000
 DECLARE @take Int -- Int32

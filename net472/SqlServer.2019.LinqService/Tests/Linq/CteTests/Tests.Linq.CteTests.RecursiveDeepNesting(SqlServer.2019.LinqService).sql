@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [HierarchyTree]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [HierarchyTree]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [HierarchyTree]
 
