@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	CREATE TABLE [DisposableTable]
@@ -8,7 +8,7 @@ IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [DisposableTable]
 

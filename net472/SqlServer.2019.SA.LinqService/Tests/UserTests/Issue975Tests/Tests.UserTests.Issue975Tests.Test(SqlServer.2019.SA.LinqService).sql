@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [Tasks]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [Tasks]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [TaskStages]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [TaskStages]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [Assignments]
 (
@@ -48,7 +48,7 @@ CREATE TABLE [Assignments]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @directionId UniqueIdentifier -- Guid
 SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -72,7 +72,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @directionId UniqueIdentifier -- Guid
 SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -94,7 +94,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @taskId Int -- Int32
 SET     @taskId = 1
 
@@ -114,7 +114,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @employeeId Int -- Int32
 SET     @employeeId = 10
 
@@ -155,17 +155,17 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Assignments]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [TaskStages]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Tasks]
 

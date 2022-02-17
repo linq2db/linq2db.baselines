@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @ParentID Int -- Int32
@@ -14,7 +14,7 @@ WHERE
 	[c_1].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017 (asynchronously)
+-- SqlServer.2019.SA SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @ParentID Int -- Int32

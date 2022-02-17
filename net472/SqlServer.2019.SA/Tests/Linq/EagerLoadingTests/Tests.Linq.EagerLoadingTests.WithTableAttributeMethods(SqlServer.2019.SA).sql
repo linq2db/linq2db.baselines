@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [UserIssue3128]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [UserIssue3128]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [UserDetailsIssue3128]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [UserDetailsIssue3128]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -36,7 +36,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @UserId Int -- Int32
 SET     @UserId = 10
 DECLARE @Age Int -- Int32
@@ -56,7 +56,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[p_1].[FirstName],
@@ -85,12 +85,12 @@ WHERE
 	[p_1].[ex] > 0
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [UserDetailsIssue3128]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [UserIssue3128]
 

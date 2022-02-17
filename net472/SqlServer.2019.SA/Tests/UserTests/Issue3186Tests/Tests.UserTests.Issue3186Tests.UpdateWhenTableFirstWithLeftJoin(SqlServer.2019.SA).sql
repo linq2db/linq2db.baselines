@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [element_services]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[element_services]', N'U') IS NULL)
 	CREATE TABLE [element_services]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[element_services]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [element_services]
 (
@@ -30,12 +30,12 @@ VALUES
 (N'TestElementService',0,0)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [component_categories]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[component_categories]', N'U') IS NULL)
 	CREATE TABLE [component_categories]
@@ -48,7 +48,7 @@ IF (OBJECT_ID(N'[component_categories]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [component_categories]
 (
@@ -63,12 +63,12 @@ VALUES
 (N'TestElementCategory2',N'TestElementService',0)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [components]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[components]', N'U') IS NULL)
 	CREATE TABLE [components]
@@ -82,7 +82,7 @@ IF (OBJECT_ID(N'[components]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [components]
 (
@@ -98,7 +98,7 @@ VALUES
 (N'TestElementComponent2',N'TestElementCategory2',N'TestElementService',0)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
@@ -114,7 +114,7 @@ WHERE
 	[ie].[id] = N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[x].[id],
@@ -126,7 +126,7 @@ WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[x].[id],
@@ -138,17 +138,17 @@ WHERE
 	[x].[is_deleted] = 0 AND [x].[service_id] <> N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [components]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [component_categories]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [element_services]
 

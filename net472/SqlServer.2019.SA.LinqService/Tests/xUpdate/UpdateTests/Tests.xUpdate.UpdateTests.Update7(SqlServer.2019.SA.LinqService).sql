@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[ParentID] > 1000
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
 DECLARE @ParentID Int -- Int32
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -38,7 +38,7 @@ WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 1
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 DECLARE @id Int -- Int32
@@ -54,7 +54,7 @@ WHERE
 	[p].[ParentID] = @id
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -66,7 +66,7 @@ WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 2
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 DECLARE @id Int -- Int32
@@ -82,7 +82,7 @@ WHERE
 	[p].[ParentID] = @id
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -94,7 +94,7 @@ WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 3
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DELETE [t1]
 FROM

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111001
 DECLARE @p2 Int -- Int32
@@ -259,7 +259,7 @@ VALUES
 (@p99,@p100)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111051
 DECLARE @p2 Int -- Int32
@@ -519,7 +519,7 @@ VALUES
 (@p99,@p100)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111101
 DECLARE @p2 Int -- Int32
@@ -774,7 +774,7 @@ VALUES
 (@p97,@p98)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 111001
 DECLARE @ParentID_1 Int -- Int32

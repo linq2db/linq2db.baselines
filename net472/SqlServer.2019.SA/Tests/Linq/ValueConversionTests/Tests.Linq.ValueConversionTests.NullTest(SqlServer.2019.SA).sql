@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [ValueConversion]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	CREATE TABLE [ValueConversion]
@@ -24,7 +24,7 @@ IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [ValueConversion]
 (
@@ -52,7 +52,7 @@ VALUES
 (10,NULL,NULL,N'Value1','Value2','Value2','Value2','N','F',NULL)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -64,7 +64,7 @@ WHERE
 	[t].[Value2] IS NULL
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [ValueConversion]
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [EmployeeTimeOffBalance]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[EmployeeTimeOffBalance]', N'U') IS NULL)
 	CREATE TABLE [EmployeeTimeOffBalance]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[EmployeeTimeOffBalance]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TrackingTimeType Int -- Int32
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @TrackingTimeType Int -- Int32
@@ -61,12 +61,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Employee]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[Employee]', N'U') IS NULL)
 	CREATE TABLE [Employee]
@@ -77,7 +77,7 @@ IF (OBJECT_ID(N'[Employee]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -91,7 +91,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
@@ -105,12 +105,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [LeaveRequest]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[LeaveRequest]', N'U') IS NULL)
 	CREATE TABLE [LeaveRequest]
@@ -122,7 +122,7 @@ IF (OBJECT_ID(N'[LeaveRequest]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @EmployeeId Int -- Int32
@@ -140,7 +140,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @EmployeeId Int -- Int32
@@ -158,7 +158,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @EmployeeId Int -- Int32
@@ -176,7 +176,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @EmployeeId Int -- Int32
@@ -194,12 +194,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [LeaveRequestDateEntry]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[LeaveRequestDateEntry]', N'U') IS NULL)
 	CREATE TABLE [LeaveRequestDateEntry]
@@ -213,7 +213,7 @@ IF (OBJECT_ID(N'[LeaveRequestDateEntry]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @EndHour Decimal(2, 0)
@@ -239,7 +239,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @EndHour Decimal(2, 0)
@@ -265,7 +265,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @EndHour Decimal(2, 0)
@@ -291,7 +291,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @EndHour Decimal(2, 0)
@@ -317,7 +317,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[t4].[WithParentReference],
@@ -389,22 +389,22 @@ ORDER BY
 	Coalesce([t4].[WithoutParentReference], 0) DESC
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [LeaveRequestDateEntry]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [LeaveRequest]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Employee]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [EmployeeTimeOffBalance]
 

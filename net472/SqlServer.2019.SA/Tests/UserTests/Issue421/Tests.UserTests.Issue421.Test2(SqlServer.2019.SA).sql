@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [BlobClass]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [BlobClass]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [BlobClass]
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT TOP (1)
 	[_].[Id],
@@ -35,7 +35,7 @@ WHERE
 	[_].[Id] = 1
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 UPDATE
 	[_]
@@ -47,7 +47,7 @@ WHERE
 	[_].[Id] = 1
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT TOP (1)
 	[_].[Id],
@@ -58,7 +58,7 @@ WHERE
 	[_].[Id] = 1
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [BlobClass]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [##IsGlobalTemporaryTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [##IsGlobalTemporaryTable]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -17,7 +17,7 @@ FROM
 	[##IsGlobalTemporaryTable] [t1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [##IsGlobalTemporaryTable]
 
