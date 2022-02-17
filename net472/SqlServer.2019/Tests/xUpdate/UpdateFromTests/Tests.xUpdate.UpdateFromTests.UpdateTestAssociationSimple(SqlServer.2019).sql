@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdatedEntities]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	CREATE TABLE [UpdatedEntities]
@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [UpdatedEntities]
 (
@@ -36,12 +36,12 @@ VALUES
 (3,31,32,33,3)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdateRelation]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NULL)
 	CREATE TABLE [UpdateRelation]
@@ -55,7 +55,7 @@ IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [UpdateRelation]
 (
@@ -71,7 +71,7 @@ VALUES
 (3,31,32,33)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 UPDATE
 	[v]
@@ -86,7 +86,7 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -101,12 +101,12 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdateRelation]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdatedEntities]
 

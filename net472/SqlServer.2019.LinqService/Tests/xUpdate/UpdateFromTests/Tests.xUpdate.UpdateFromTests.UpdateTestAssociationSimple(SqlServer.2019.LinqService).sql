@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdatedEntities]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	CREATE TABLE [UpdatedEntities]
@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 0
 DECLARE @Value1 Int -- Int32
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @Value1 Int -- Int32
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 DECLARE @Value1 Int -- Int32
@@ -109,7 +109,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 3
 DECLARE @Value1 Int -- Int32
@@ -139,12 +139,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdateRelation]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NULL)
 	CREATE TABLE [UpdateRelation]
@@ -158,7 +158,7 @@ IF (OBJECT_ID(N'[UpdateRelation]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 0
 DECLARE @RelatedValue1 Int -- Int32
@@ -184,7 +184,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @RelatedValue1 Int -- Int32
@@ -210,7 +210,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 DECLARE @RelatedValue1 Int -- Int32
@@ -236,7 +236,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 3
 DECLARE @RelatedValue1 Int -- Int32
@@ -262,7 +262,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 UPDATE
 	[v]
@@ -277,7 +277,7 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -292,12 +292,12 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdateRelation]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdatedEntities]
 

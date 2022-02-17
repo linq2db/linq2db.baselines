@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 
 INSERT INTO [dbo].[LinqDataTypes]
 (
@@ -24,7 +24,7 @@ VALUES
 (4009,1009,'2001-01-11T01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DELETE [t1]
 FROM

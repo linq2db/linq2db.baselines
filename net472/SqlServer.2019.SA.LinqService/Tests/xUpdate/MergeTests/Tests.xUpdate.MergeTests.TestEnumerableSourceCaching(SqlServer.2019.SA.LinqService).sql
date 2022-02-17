@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [CacheTestTable]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [CacheTestTable]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
@@ -41,7 +41,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -52,7 +52,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
@@ -83,7 +83,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -94,7 +94,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [CacheTestTable]
 

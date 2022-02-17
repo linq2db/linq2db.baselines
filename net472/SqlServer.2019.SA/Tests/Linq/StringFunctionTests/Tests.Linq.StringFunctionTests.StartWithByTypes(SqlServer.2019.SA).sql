@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [StringTypesTable]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[StringTypesTable]', N'U') IS NULL)
 	CREATE TABLE [StringTypesTable]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[StringTypesTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [StringTypesTable]
 (
@@ -31,7 +31,7 @@ VALUES
 (1,'someString',N'someString','someString',N'someString')
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @str_4 Char(5) -- AnsiStringFixedLength
 SET     @str_4 = N'some%'
 DECLARE @str_5 NChar(5) -- StringFixedLength
@@ -56,7 +56,7 @@ WHERE
 	[t].[NVarCharColumn] LIKE @str_7 ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [StringTypesTable]
 

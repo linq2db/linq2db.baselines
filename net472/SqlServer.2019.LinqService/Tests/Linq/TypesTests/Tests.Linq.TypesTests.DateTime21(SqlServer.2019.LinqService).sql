@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -20,7 +20,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @dt DateTime2
 SET     @dt = '2010-12-14T05:00:07.4250141'
 
@@ -34,7 +34,7 @@ WHERE
 	[t1].[ID] = 1
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -55,7 +55,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @pdt DateTime2
 SET     @pdt = '2001-01-11T01:11:21.1000000'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [dbo].[Orders]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [dbo].[Orders]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [dbo].[OrderItems]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [dbo].[OrderItems]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -56,12 +56,12 @@ FROM
 		) [t2] ON [t].[Id] = [t2].[collection]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [dbo].[OrderItems]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [dbo].[Orders]
 

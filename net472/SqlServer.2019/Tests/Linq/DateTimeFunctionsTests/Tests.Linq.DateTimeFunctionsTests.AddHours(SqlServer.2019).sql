@@ -1,8 +1,8 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
-	DateAdd(hour, 22, [t].[DateTimeValue])
+	DatePart(hour, DateAdd(hour, 22, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

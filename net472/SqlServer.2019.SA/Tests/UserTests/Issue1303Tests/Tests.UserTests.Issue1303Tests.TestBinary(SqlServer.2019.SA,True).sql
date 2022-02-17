@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 CREATE TABLE [Issue1303]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [Issue1303]
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Array_1 VarBinary(10) -- Binary
 SET     @Array_1 = 0x010203
 DECLARE @Binary_1 VarBinary(2) -- Binary
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT TOP (2)
 	[_].[ID],
@@ -43,7 +43,7 @@ WHERE
 	[_].[ID] = 1
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT TOP (2)
 	[_].[ID],
@@ -55,7 +55,7 @@ WHERE
 	[_].[Array] = 0x010203
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT TOP (2)
 	[_].[ID],
@@ -67,7 +67,7 @@ WHERE
 	[_].[Binary] = 0x0405
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1303]
 

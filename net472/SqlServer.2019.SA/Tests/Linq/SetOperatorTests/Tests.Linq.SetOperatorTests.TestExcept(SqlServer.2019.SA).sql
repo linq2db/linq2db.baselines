@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleData]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[SampleData]', N'U') IS NULL)
 	CREATE TABLE [SampleData]
@@ -18,7 +18,7 @@ IF (OBJECT_ID(N'[SampleData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [SampleData]
 (
@@ -40,56 +40,48 @@ VALUES
 (10,100,1000,10000)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
-	[t2].[Id],
-	[t2].[Value1],
-	[t2].[Value2],
-	[t2].[Value3]
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value3]
 FROM
 	(
 		SELECT
-			[t1].[Id],
-			[t1].[Value1],
-			[t1].[Value2],
-			[t1].[Value3]
+			[t].[Id],
+			[t].[Value1],
+			[t].[Value2],
+			[t].[Value3]
 		FROM
-			(
-				SELECT
-					[t].[Id],
-					[t].[Value1],
-					[t].[Value2],
-					[t].[Value3]
-				FROM
-					[SampleData] [t]
-				WHERE
-					[t].[Id] % 2 = 0
-				UNION ALL
-				SELECT
-					[t_1].[Id],
-					[t_1].[Value1],
-					[t_1].[Value2],
-					[t_1].[Value3]
-				FROM
-					[SampleData] [t_1]
-				WHERE
-					[t_1].[Id] % 2 = 0
-			) [t1]
-		EXCEPT
-		SELECT
-			[t_2].[Id],
-			[t_2].[Value1],
-			[t_2].[Value2],
-			[t_2].[Value3]
-		FROM
-			[SampleData] [t_2]
+			[SampleData] [t]
 		WHERE
-			[t_2].[Id] % 4 = 0
-	) [t2]
+			[t].[Id] % 2 = 0
+		UNION ALL
+		SELECT
+			[t_1].[Id],
+			[t_1].[Value1],
+			[t_1].[Value2],
+			[t_1].[Value3]
+		FROM
+			[SampleData] [t_1]
+		WHERE
+			[t_1].[Id] % 2 = 0
+	) [t1]
+EXCEPT
+SELECT
+	[t_2].[Id],
+	[t_2].[Value1],
+	[t_2].[Value2],
+	[t_2].[Value3]
+FROM
+	[SampleData] [t_2]
+WHERE
+	[t_2].[Id] % 4 = 0
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleData]
 
