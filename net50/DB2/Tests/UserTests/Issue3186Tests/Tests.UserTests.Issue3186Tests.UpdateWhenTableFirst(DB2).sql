@@ -81,7 +81,7 @@ BeforeExecute
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "components"';
+	EXECUTE IMMEDIATE 'DROP TABLE "Components"';
 END
 
 BeforeExecute
@@ -90,14 +90,14 @@ BeforeExecute
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "components"
+		CREATE TABLE "Components"
 		(
 			"id"          NVarChar(100) NOT NULL,
 			"category_id" NVarChar(100) NOT NULL,
 			"service_id"  NVarChar(100) NOT NULL,
 			"is_deleted"  smallint      NOT NULL,
 
-			CONSTRAINT "PK_components" PRIMARY KEY ("id")
+			CONSTRAINT "PK_Components" PRIMARY KEY ("id")
 		)
 	';
 END
@@ -105,7 +105,7 @@ END
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-INSERT INTO "components"
+INSERT INTO "Components"
 (
 	"id",
 	"category_id",
@@ -134,7 +134,7 @@ WHERE
 		FROM
 			"component_categories" "ctg"
 				INNER JOIN "element_services" "ie" ON "ie"."id" = "ctg"."service_id"
-				INNER JOIN "components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = 0
+				INNER JOIN "Components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = 0
 		WHERE
 			"ie"."id" = 'TestProcessService' AND "component_categories"."id" = "ctg"."id"
 	)
@@ -168,7 +168,7 @@ BeforeExecute
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "components"';
+	EXECUTE IMMEDIATE 'DROP TABLE "Components"';
 END
 
 BeforeExecute
