@@ -167,19 +167,19 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-DROP TABLE [components]
+DROP TABLE [Components]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-CREATE TABLE [components]
+CREATE TABLE [Components]
 (
 	[id]          NVarChar(100) NOT NULL,
 	[category_id] NVarChar(100) NOT NULL,
 	[service_id]  NVarChar(100) NOT NULL,
 	[is_deleted]  Bit           NOT NULL,
 
-	CONSTRAINT [PK_components] PRIMARY KEY CLUSTERED ([id])
+	CONSTRAINT [PK_Components] PRIMARY KEY CLUSTERED ([id])
 )
 
 BeforeExecute
@@ -193,7 +193,7 @@ SET     @service_id = 'TestProcessService'
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -219,7 +219,7 @@ SET     @service_id = 'TestProcessService'
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -245,7 +245,7 @@ SET     @service_id = 'TestElementService'
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -271,7 +271,7 @@ SET     @service_id = 'TestElementService'
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -294,7 +294,7 @@ SET     @is_deleted = True
 UPDATE
 	([component_categories] [ctg]
 		INNER JOIN [element_services] [ie] ON ([ie].[id] = [ctg].[service_id]))
-		INNER JOIN [components] [cm] ON ([ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = False)
+		INNER JOIN [Components] [cm] ON ([ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = False)
 SET
 	[ctg].[is_deleted] = ?
 WHERE
@@ -327,7 +327,7 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-DROP TABLE [components]
+DROP TABLE [Components]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
