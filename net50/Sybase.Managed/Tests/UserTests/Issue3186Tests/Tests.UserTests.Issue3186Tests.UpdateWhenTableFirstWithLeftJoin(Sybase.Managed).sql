@@ -69,29 +69,29 @@ SELECT 'TestElementCategory2','TestElementService',0
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'components') IS NOT NULL)
-	DROP TABLE [components]
+IF (OBJECT_ID(N'Components') IS NOT NULL)
+	DROP TABLE [Components]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'components') IS NULL)
+IF (OBJECT_ID(N'Components') IS NULL)
 	EXECUTE('
-		CREATE TABLE [components]
+		CREATE TABLE [Components]
 		(
 			[id]          NVarChar(100) NOT NULL,
 			[category_id] NVarChar(100) NOT NULL,
 			[service_id]  NVarChar(100) NOT NULL,
 			[is_deleted]  Bit           NOT NULL,
 
-			CONSTRAINT [PK_components] PRIMARY KEY CLUSTERED ([id])
+			CONSTRAINT [PK_Components] PRIMARY KEY CLUSTERED ([id])
 		)
 	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -115,7 +115,7 @@ SET
 FROM
 	[component_categories] [ctg]
 		INNER JOIN [element_services] [ie] ON [ie].[id] = [ctg].[service_id]
-		LEFT JOIN [components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
+		LEFT JOIN [Components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
 WHERE
 	[ie].[id] = 'TestProcessService'
 
@@ -146,8 +146,8 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'components') IS NOT NULL)
-	DROP TABLE [components]
+IF (OBJECT_ID(N'Components') IS NOT NULL)
+	DROP TABLE [Components]
 
 BeforeExecute
 -- Sybase.Managed Sybase
