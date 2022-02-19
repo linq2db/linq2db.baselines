@@ -11,7 +11,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @DateTime Timestamp -- DateTime
+DECLARE @DateTime Timestamp -- DateTime2
 SET     @DateTime = '2000-01-01'::date
 
 INSERT INTO "CreateTableTypes"
@@ -29,7 +29,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @DateTime Timestamp -- DateTime
+DECLARE @DateTime Timestamp -- DateTime2
 SET     @DateTime = '2018-11-24 01:02:03'::timestamp
 
 INSERT INTO "CreateTableTypes"

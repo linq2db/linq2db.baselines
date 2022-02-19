@@ -11,7 +11,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @DateTimeNullable Timestamp -- DateTime
+DECLARE @DateTimeNullable Timestamp -- DateTime2
 SET     @DateTimeNullable = NULL
 
 INSERT INTO "CreateTableTypes"
@@ -29,7 +29,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @DateTimeNullable Timestamp -- DateTime
+DECLARE @DateTimeNullable Timestamp -- DateTime2
 SET     @DateTimeNullable = '2018-11-25 01:02:03'::timestamp
 
 INSERT INTO "CreateTableTypes"
