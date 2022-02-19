@@ -44,7 +44,7 @@ DECLARE @Status Integer -- Int32
 SET     @Status = 40
 DECLARE @ResourceID Uuid -- Guid
 SET     @ResourceID = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @ModifiedTimeStamp Timestamp -- DateTime
+DECLARE @ModifiedTimeStamp Timestamp -- DateTime2
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'::timestamp
 
 INSERT INTO "InventoryResourceDTO"
@@ -70,7 +70,7 @@ DECLARE @Status Integer -- Int32
 SET     @Status = 40
 DECLARE @ResourceID Uuid -- Guid
 SET     @ResourceID = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @ModifiedTimeStamp Timestamp -- DateTime
+DECLARE @ModifiedTimeStamp Timestamp -- DateTime2
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'::timestamp
 
 INSERT INTO "InventoryResourceDTO"
