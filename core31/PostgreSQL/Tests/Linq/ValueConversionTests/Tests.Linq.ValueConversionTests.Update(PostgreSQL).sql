@@ -109,7 +109,7 @@ DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue Varchar -- String
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable Timestamp -- DateTime
+DECLARE @DateTimeNullable Timestamp -- DateTime2
 SET     @DateTimeNullable = NULL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -169,7 +169,7 @@ DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue Varchar -- String
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable Timestamp -- DateTime
+DECLARE @DateTimeNullable Timestamp -- DateTime2
 SET     @DateTimeNullable = NULL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
