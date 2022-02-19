@@ -63,25 +63,25 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE IF EXISTS components
+DROP TABLE IF EXISTS "Components"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS components
+CREATE TABLE IF NOT EXISTS "Components"
 (
 	id          text    NOT NULL,
 	category_id text    NOT NULL,
 	service_id  text    NOT NULL,
 	is_deleted  Boolean NOT NULL,
 
-	CONSTRAINT "PK_components" PRIMARY KEY (id)
+	CONSTRAINT "PK_Components" PRIMARY KEY (id)
 )
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-INSERT INTO components
+INSERT INTO "Components"
 (
 	id,
 	category_id,
@@ -105,7 +105,7 @@ SET
 	is_deleted = :is_deleted
 FROM
 	element_services ie,
-	components cm
+	"Components" cm
 WHERE
 	ie.id = 'TestProcessService' AND
 	ie.id = component_categories.service_id AND
@@ -139,7 +139,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
-DROP TABLE IF EXISTS components
+DROP TABLE IF EXISTS "Components"
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
