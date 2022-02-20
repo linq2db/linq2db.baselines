@@ -12,7 +12,7 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Numeric(1, 0) -- Decimal
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue Timestamp -- DateTime
+DECLARE @DateTimeValue Timestamp -- DateTime2
 SET     @DateTimeValue = NULL
 DECLARE @BoolValue Boolean
 SET     @BoolValue = True
