@@ -22,9 +22,9 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @MoneyValue Numeric(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue Timestamp -- DateTime
+DECLARE @DateTimeValue Timestamp -- DateTime2
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'::timestamp
-DECLARE @DateTimeValue2 Timestamp -- DateTime
+DECLARE @DateTimeValue2 Timestamp -- DateTime2
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean
 SET     @BoolValue = False
@@ -80,9 +80,9 @@ BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @MoneyValue Numeric(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue Timestamp -- DateTime
+DECLARE @DateTimeValue Timestamp -- DateTime2
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'::timestamp
-DECLARE @DateTimeValue2 Timestamp -- DateTime
+DECLARE @DateTimeValue2 Timestamp -- DateTime2
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean
 SET     @BoolValue = True

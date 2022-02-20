@@ -11,7 +11,7 @@ CREATE TABLE "Issue1189Customer"
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @DateTime Timestamp -- DateTime
+DECLARE @DateTime Timestamp -- DateTime2
 SET     @DateTime = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT

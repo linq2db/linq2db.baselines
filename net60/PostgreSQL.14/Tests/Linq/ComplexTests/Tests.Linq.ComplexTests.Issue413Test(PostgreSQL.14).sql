@@ -125,7 +125,7 @@ DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode Text(4) -- String
 SET     @InstrumentCode = 'aaa1'
-DECLARE @CreateDate Timestamp -- DateTime
+DECLARE @CreateDate Timestamp -- DateTime2
 SET     @CreateDate = '2020-02-28 17:54:55.123'::timestamp
 DECLARE @SourceInstrumentCode Text(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
@@ -151,7 +151,7 @@ DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode Text(4) -- String
 SET     @InstrumentCode = 'aaa2'
-DECLARE @CreateDate Timestamp -- DateTime
+DECLARE @CreateDate Timestamp -- DateTime2
 SET     @CreateDate = '2020-02-28 17:54:55.123'::timestamp
 DECLARE @SourceInstrumentCode Text -- String
 SET     @SourceInstrumentCode = NULL
@@ -175,7 +175,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @cond_1 Text(4) -- String
 SET     @cond_1 = 'aaa%'
-DECLARE @uptoDate Timestamp -- DateTime
+DECLARE @uptoDate Timestamp -- DateTime2
 SET     @uptoDate = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT

@@ -167,12 +167,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS components
+DROP TABLE IF EXISTS Components
 
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE IF NOT EXISTS components
+CREATE TABLE IF NOT EXISTS Components
 (
 	id          NVarChar(100) NOT NULL,
 	category_id NVarChar(100) NOT NULL,
@@ -193,7 +193,7 @@ SET     @service_id = 'TestProcessService'
 DECLARE @is_deleted Char(1) -- StringFixedLength
 SET     @is_deleted = 'f'
 
-INSERT INTO components
+INSERT INTO Components
 (
 	id,
 	category_id,
@@ -219,7 +219,7 @@ SET     @service_id = 'TestProcessService'
 DECLARE @is_deleted Char(1) -- StringFixedLength
 SET     @is_deleted = 'f'
 
-INSERT INTO components
+INSERT INTO Components
 (
 	id,
 	category_id,
@@ -245,7 +245,7 @@ SET     @service_id = 'TestElementService'
 DECLARE @is_deleted Char(1) -- StringFixedLength
 SET     @is_deleted = 'f'
 
-INSERT INTO components
+INSERT INTO Components
 (
 	id,
 	category_id,
@@ -271,7 +271,7 @@ SET     @service_id = 'TestElementService'
 DECLARE @is_deleted Char(1) -- StringFixedLength
 SET     @is_deleted = 'f'
 
-INSERT INTO components
+INSERT INTO Components
 (
 	id,
 	category_id,
@@ -302,7 +302,7 @@ WHERE
 		FROM
 			element_services ie
 				INNER JOIN component_categories ctg ON ie.id = ctg.service_id
-				INNER JOIN components cm ON ctg.id = cm.category_id AND cm.is_deleted = 'f'
+				INNER JOIN Components cm ON ctg.id = cm.category_id AND cm.is_deleted = 'f'
 		WHERE
 			ie.id = 'TestProcessService' AND component_categories.id = ctg.id
 	)
@@ -334,7 +334,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS components
+DROP TABLE IF EXISTS Components
 
 BeforeExecute
 -- Informix.DB2 Informix

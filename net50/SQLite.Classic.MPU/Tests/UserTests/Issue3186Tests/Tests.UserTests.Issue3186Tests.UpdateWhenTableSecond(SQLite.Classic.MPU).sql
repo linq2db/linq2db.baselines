@@ -63,25 +63,25 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [components]
+DROP TABLE IF EXISTS [Components]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE IF NOT EXISTS [components]
+CREATE TABLE IF NOT EXISTS [Components]
 (
 	[id]          NVarChar(100) NOT NULL,
 	[category_id] NVarChar(100) NOT NULL,
 	[service_id]  NVarChar(100) NOT NULL,
 	[is_deleted]  Bit           NOT NULL,
 
-	CONSTRAINT [PK_components] PRIMARY KEY ([id])
+	CONSTRAINT [PK_Components] PRIMARY KEY ([id])
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -110,7 +110,7 @@ WHERE
 		FROM
 			[element_services] [ie]
 				INNER JOIN [component_categories] [ctg] ON [ie].[id] = [ctg].[service_id]
-				INNER JOIN [components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
+				INNER JOIN [Components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
 		WHERE
 			[ie].[id] = 'TestProcessService' AND [component_categories].[id] = [ctg].[id]
 	)
@@ -142,7 +142,7 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [components]
+DROP TABLE IF EXISTS [Components]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

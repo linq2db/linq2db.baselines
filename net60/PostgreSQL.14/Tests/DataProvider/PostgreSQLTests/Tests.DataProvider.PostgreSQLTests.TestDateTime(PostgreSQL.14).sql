@@ -10,21 +10,21 @@ SELECT Cast('2012-12-12 12:12:12' as timestamp)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Timestamp -- DateTime
+DECLARE @p Timestamp -- DateTime2
 SET     @p = '2012-12-12 12:12:12'::timestamp
 
 SELECT :p
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Timestamp -- DateTime
+DECLARE @p Timestamp -- DateTime2
 SET     @p = '2012-12-12 12:12:12'::timestamp
 
 SELECT :p
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Timestamp -- DateTime
+DECLARE @p Timestamp -- DateTime2
 SET     @p = '2012-12-12 12:12:12'::timestamp
 
 SELECT :p

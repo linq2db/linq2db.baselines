@@ -149,7 +149,7 @@ DECLARE @BoolValue Varchar -- String
 SET     @BoolValue = 'Y'
 DECLARE @AnotherBoolValue Varchar -- String
 SET     @AnotherBoolValue = 'T'
-DECLARE @DateTimeNullable Timestamp -- DateTime
+DECLARE @DateTimeNullable Timestamp -- DateTime2
 SET     @DateTimeNullable = NULL
 
 INSERT INTO "ValueConversion"

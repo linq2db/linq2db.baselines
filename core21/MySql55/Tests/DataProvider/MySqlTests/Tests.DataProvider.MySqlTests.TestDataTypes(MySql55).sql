@@ -19,7 +19,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bigintDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bigintDataType IS NULL OR @p IS NOT NULL AND bigintDataType = @p
@@ -71,7 +71,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS NOT NULL AND smallintDataType = @p
@@ -123,7 +123,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS NOT NULL AND tinyintDataType = @p
@@ -175,7 +175,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND mediumintDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND mediumintDataType IS NULL OR @p IS NOT NULL AND mediumintDataType = @p
@@ -227,7 +227,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT 
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT NULL AND intDataType = @p
@@ -279,7 +279,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS NOT NULL AND numericDataType = @p
@@ -331,7 +331,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
@@ -383,7 +383,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND doubleDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND doubleDataType IS NULL OR @p IS NOT NULL AND doubleDataType = @p
@@ -435,7 +435,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NOT NULL AND floatDataType = @p
@@ -487,7 +487,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
@@ -539,7 +539,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
@@ -591,7 +591,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
@@ -629,7 +629,7 @@ SELECT timestampDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timestampDataType IS NULL OR @p IS NOT NULL AND timestampDataType = @p
@@ -643,7 +643,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timestampDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timestampDataType IS NULL OR @p IS NOT NULL AND timestampDataType = @p
@@ -695,7 +695,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p
@@ -747,7 +747,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND yearDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND yearDataType IS NULL OR @p IS NOT NULL AND yearDataType = @p
@@ -799,7 +799,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year2DataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year2DataType IS NULL OR @p IS NOT NULL AND year2DataType = @p
@@ -851,7 +851,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year4DataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND year4DataType IS NULL OR @p IS NOT NULL AND year4DataType = @p
@@ -903,7 +903,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
@@ -955,7 +955,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
@@ -1007,7 +1007,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
@@ -1059,7 +1059,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
@@ -1111,7 +1111,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
@@ -1149,7 +1149,7 @@ SELECT textDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
@@ -1163,7 +1163,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
@@ -1201,7 +1201,7 @@ SELECT binaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
@@ -1215,7 +1215,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
@@ -1267,7 +1267,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
@@ -1305,7 +1305,7 @@ SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
@@ -1319,7 +1319,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
@@ -1371,7 +1371,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
@@ -1423,7 +1423,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
@@ -1461,7 +1461,7 @@ SELECT blobDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
@@ -1475,7 +1475,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
@@ -1527,7 +1527,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
@@ -1579,7 +1579,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
@@ -1624,7 +1624,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bitDataType IS NULL OR @p IS NOT 
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bitDataType IS NULL OR @p IS NOT NULL AND bitDataType = @p
@@ -1662,7 +1662,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND enumDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND enumDataType IS NULL OR @p IS NOT NULL AND enumDataType = @p
@@ -1700,7 +1700,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND setDataType IS NULL OR @p IS NOT 
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p Decimal -- AnsiString
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND setDataType IS NULL OR @p IS NOT NULL AND setDataType = @p

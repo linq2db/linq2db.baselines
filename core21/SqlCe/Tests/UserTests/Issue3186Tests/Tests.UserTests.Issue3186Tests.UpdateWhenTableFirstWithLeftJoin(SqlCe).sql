@@ -61,25 +61,25 @@ SELECT 'TestElementCategory2','TestElementService',0
 BeforeExecute
 -- SqlCe
 
-DROP TABLE [components]
+DROP TABLE [Components]
 
 BeforeExecute
 -- SqlCe
 
-CREATE TABLE [components]
+CREATE TABLE [Components]
 (
 	[id]          NVarChar(100) NOT NULL,
 	[category_id] NVarChar(100) NOT NULL,
 	[service_id]  NVarChar(100) NOT NULL,
 	[is_deleted]  Bit           NOT NULL,
 
-	CONSTRAINT [PK_components] PRIMARY KEY ([id])
+	CONSTRAINT [PK_Components] PRIMARY KEY ([id])
 )
 
 BeforeExecute
 -- SqlCe
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -107,7 +107,7 @@ WHERE
 		FROM
 			[component_categories] [ctg]
 				INNER JOIN [element_services] [ie] ON [ie].[id] = [ctg].[service_id]
-				LEFT JOIN [components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
+				LEFT JOIN [Components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
 		WHERE
 			[ie].[id] = 'TestProcessService' AND [component_categories].[id] = [ctg].[id]
 	)
@@ -139,7 +139,7 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-DROP TABLE [components]
+DROP TABLE [Components]
 
 BeforeExecute
 -- SqlCe

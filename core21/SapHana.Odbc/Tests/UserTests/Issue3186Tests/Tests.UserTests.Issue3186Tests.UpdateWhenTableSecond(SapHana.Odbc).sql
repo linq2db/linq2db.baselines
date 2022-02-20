@@ -167,12 +167,12 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "components"
+DROP TABLE "Components"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "components"
+CREATE COLUMN TABLE "Components"
 (
 	"id"          NVarChar(100) NOT NULL,
 	"category_id" NVarChar(100) NOT NULL,
@@ -193,7 +193,7 @@ SET     @service_id = 'TestProcessService'
 DECLARE @is_deleted  -- Byte
 SET     @is_deleted = 0
 
-INSERT INTO "components"
+INSERT INTO "Components"
 (
 	"id",
 	"category_id",
@@ -219,7 +219,7 @@ SET     @service_id = 'TestProcessService'
 DECLARE @is_deleted  -- Byte
 SET     @is_deleted = 0
 
-INSERT INTO "components"
+INSERT INTO "Components"
 (
 	"id",
 	"category_id",
@@ -245,7 +245,7 @@ SET     @service_id = 'TestElementService'
 DECLARE @is_deleted  -- Byte
 SET     @is_deleted = 0
 
-INSERT INTO "components"
+INSERT INTO "Components"
 (
 	"id",
 	"category_id",
@@ -271,7 +271,7 @@ SET     @service_id = 'TestElementService'
 DECLARE @is_deleted  -- Byte
 SET     @is_deleted = 0
 
-INSERT INTO "components"
+INSERT INTO "Components"
 (
 	"id",
 	"category_id",
@@ -302,7 +302,7 @@ WHERE
 		FROM
 			"element_services" "ie"
 				INNER JOIN "component_categories" "ctg" ON "ie"."id" = "ctg"."service_id"
-				INNER JOIN "components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = 0
+				INNER JOIN "Components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = 0
 		WHERE
 			"ie"."id" = 'TestProcessService' AND "component_categories"."id" = "ctg"."id"
 	)
@@ -334,7 +334,7 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "components"
+DROP TABLE "Components"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

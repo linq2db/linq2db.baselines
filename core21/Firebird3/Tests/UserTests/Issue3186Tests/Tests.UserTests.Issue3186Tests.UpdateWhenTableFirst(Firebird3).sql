@@ -78,24 +78,24 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'components')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "components"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Components')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Components"';
 END
 
 BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'components')) THEN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Components')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "components"
+			CREATE TABLE "Components"
 			(
 				"id"          VarChar(100) CHARACTER SET UNICODE_FSS NOT NULL,
 				"category_id" VarChar(100) CHARACTER SET UNICODE_FSS NOT NULL,
 				"service_id"  VarChar(100) CHARACTER SET UNICODE_FSS NOT NULL,
 				"is_deleted"  CHAR                                   NOT NULL,
 
-				CONSTRAINT "PK_components" PRIMARY KEY ("id")
+				CONSTRAINT "PK_Components" PRIMARY KEY ("id")
 			)
 		';
 END
@@ -103,7 +103,7 @@ END
 BeforeExecute
 -- Firebird3 Firebird
 
-INSERT INTO "components"
+INSERT INTO "Components"
 (
 	"id",
 	"category_id",
@@ -131,7 +131,7 @@ WHERE
 		FROM
 			"component_categories" "ctg"
 				INNER JOIN "element_services" "ie" ON "ie"."id" = "ctg"."service_id"
-				INNER JOIN "components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = 0
+				INNER JOIN "Components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = 0
 		WHERE
 			"ie"."id" = 'TestProcessService' AND "component_categories"."id" = "ctg"."id"
 	)
@@ -164,8 +164,8 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'components')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "components"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Components')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Components"';
 END
 
 BeforeExecute
