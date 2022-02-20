@@ -72,6 +72,64 @@ FROM
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @value1 VarChar(66) -- AnsiString
+SET     @value1 = '12345678901234567890123456789012345.123456789012345678901234567891'
+DECLARE @value2 VarChar(67) -- AnsiString
+SET     @value2 = '-12345678901234567890123456789012345.123456789012345678901234567891'
+
+INSERT INTO `BigDecimalMySqlDataTable`
+(
+	`Id`,
+	`Decimal`,
+	`DecimalN`
+)
+VALUES
+(
+	1,
+	@value1,
+	@value2
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @value2 VarChar(67) -- AnsiString
+SET     @value2 = '-12345678901234567890123456789012345.123456789012345678901234567891'
+
+INSERT INTO `BigDecimalMySqlDataTable`
+(
+	`Id`,
+	`Decimal`,
+	`DecimalN`
+)
+VALUES
+(
+	2,
+	@value2,
+	NULL
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Decimal`,
+	`t1`.`DecimalN`
+FROM
+	`BigDecimalMySqlDataTable` `t1`
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+DELETE `t1`
+FROM
+	`BigDecimalMySqlDataTable` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
 
 INSERT INTO `BigDecimalMySqlDataTable`
 (
