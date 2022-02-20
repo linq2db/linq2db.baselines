@@ -167,19 +167,19 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [components]
+DROP TABLE IF EXISTS [Components]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [components]
+CREATE TABLE IF NOT EXISTS [Components]
 (
 	[id]          NVarChar(100) NOT NULL,
 	[category_id] NVarChar(100) NOT NULL,
 	[service_id]  NVarChar(100) NOT NULL,
 	[is_deleted]  Bit           NOT NULL,
 
-	CONSTRAINT [PK_components] PRIMARY KEY ([id])
+	CONSTRAINT [PK_Components] PRIMARY KEY ([id])
 )
 
 BeforeExecute
@@ -193,7 +193,7 @@ SET     @service_id = 'TestProcessService'
 DECLARE @is_deleted  -- Boolean
 SET     @is_deleted = 0
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -219,7 +219,7 @@ SET     @service_id = 'TestProcessService'
 DECLARE @is_deleted  -- Boolean
 SET     @is_deleted = 0
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -245,7 +245,7 @@ SET     @service_id = 'TestElementService'
 DECLARE @is_deleted  -- Boolean
 SET     @is_deleted = 0
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -271,7 +271,7 @@ SET     @service_id = 'TestElementService'
 DECLARE @is_deleted  -- Boolean
 SET     @is_deleted = 0
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -302,7 +302,7 @@ WHERE
 		FROM
 			[component_categories] [ctg]
 				INNER JOIN [element_services] [ie] ON [ie].[id] = [ctg].[service_id]
-				LEFT JOIN [components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
+				LEFT JOIN [Components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
 		WHERE
 			[ie].[id] = 'TestProcessService' AND [component_categories].[id] = [ctg].[id]
 	)
@@ -334,7 +334,7 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [components]
+DROP TABLE IF EXISTS [Components]
 
 BeforeExecute
 -- SQLite.MS SQLite
