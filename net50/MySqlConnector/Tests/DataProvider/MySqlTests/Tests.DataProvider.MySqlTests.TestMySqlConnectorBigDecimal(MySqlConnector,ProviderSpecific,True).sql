@@ -75,5 +75,17 @@ INSERT BULK `BigDecimalMySqlConnectorTable`(Id, Decimal, DecimalN
 BeforeExecute
 -- MySqlConnector MySql
 
+SELECT
+	`t1`.`Id`,
+	`t1`.`Decimal`,
+	`t1`.`DecimalN`
+FROM
+	`BigDecimalMySqlConnectorTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MySqlConnector MySql
+
 DROP TABLE IF EXISTS `BigDecimalMySqlConnectorTable`
 
