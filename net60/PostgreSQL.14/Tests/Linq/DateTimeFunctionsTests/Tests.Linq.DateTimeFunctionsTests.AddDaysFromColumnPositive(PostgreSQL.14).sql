@@ -4,7 +4,7 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Numeric(1, 0) -- Decimal
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue Timestamp -- DateTime
+DECLARE @DateTimeValue Timestamp -- DateTime2
 SET     @DateTimeValue = '2018-01-03'::date
 DECLARE @BoolValue Boolean
 SET     @BoolValue = False
@@ -42,7 +42,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Timestamp -- DateTime
+DECLARE @p_1 Timestamp -- DateTime2
 SET     @p_1 = '2018-01-02'::date
 
 SELECT

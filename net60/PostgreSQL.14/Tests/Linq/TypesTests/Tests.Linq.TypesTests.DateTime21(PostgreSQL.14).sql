@@ -22,7 +22,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @dt Timestamp -- DateTime
+DECLARE @dt Timestamp -- DateTime2
 SET     @dt = '2010-12-14 05:00:07.425'::timestamp
 
 UPDATE
@@ -56,7 +56,7 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @pdt Timestamp -- DateTime
+DECLARE @pdt Timestamp -- DateTime2
 SET     @pdt = '2001-01-11 01:11:21.100'::timestamp
 
 UPDATE

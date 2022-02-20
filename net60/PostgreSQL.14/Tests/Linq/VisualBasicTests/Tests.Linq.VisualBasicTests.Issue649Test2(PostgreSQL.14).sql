@@ -23,7 +23,7 @@ CREATE TABLE person649
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @added Timestamp -- DateTime
+DECLARE @added Timestamp -- DateTime2
 SET     @added = '2017-01-01'::date
 
 SELECT

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Date_1 Timestamp -- DateTime
+DECLARE @Date_1 Timestamp -- DateTime2
 SET     @Date_1 = '2009-09-20'::date
 
 SELECT

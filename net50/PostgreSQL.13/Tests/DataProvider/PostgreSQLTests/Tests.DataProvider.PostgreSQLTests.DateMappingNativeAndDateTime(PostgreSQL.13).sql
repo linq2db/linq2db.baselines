@@ -22,7 +22,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @date2 Timestamp -- DateTime
+DECLARE @date2 Timestamp -- DateTime2
 SET     @date2 = '2020-03-05'::date
 
 INSERT INTO "AllTypes"
