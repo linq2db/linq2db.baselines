@@ -32,7 +32,7 @@ DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = NULL
 DECLARE @FieldDouble Double
 SET     @FieldDouble = NULL
-DECLARE @FieldDateTime Timestamp -- DateTime
+DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = NULL
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = NULL
@@ -42,7 +42,7 @@ DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = NULL
 DECLARE @FieldDecimal Numeric -- Decimal
 SET     @FieldDecimal = NULL
-DECLARE @FieldDate Timestamp -- DateTime
+DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = NULL
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = NULL
@@ -118,7 +118,7 @@ DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = -1.7976931348623157E+308
-DECLARE @FieldDateTime Timestamp -- DateTime
+DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2000-11-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2000-11-22T12:59:15.1244567+00:00'
@@ -128,7 +128,7 @@ DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = 12345678.9012345678
-DECLARE @FieldDate Timestamp -- DateTime
+DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2000-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 09:44:34.6534321
@@ -206,7 +206,7 @@ DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
-DECLARE @FieldDateTime Timestamp -- DateTime
+DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T13:29:15.1234567+00:00'
@@ -216,7 +216,7 @@ DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
-DECLARE @FieldDate Timestamp -- DateTime
+DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2123-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 00:44:34.6414321
@@ -293,7 +293,7 @@ DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = -2.2250738585072014E-308
-DECLARE @FieldDateTime Timestamp -- DateTime
+DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2098-10-12 21:14:15.997'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T11:35:16.1224567+00:00'
@@ -303,7 +303,7 @@ DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = 99999999.9999999999
-DECLARE @FieldDate Timestamp -- DateTime
+DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '3210-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 00:00:00
@@ -379,7 +379,7 @@ DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
-DECLARE @FieldDateTime Timestamp -- DateTime
+DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2098-10-12 21:14:15.907'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T14:53:14.1233457+00:00'
@@ -389,7 +389,7 @@ DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
-DECLARE @FieldDate Timestamp -- DateTime
+DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '3210-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 23:59:59.9999999
@@ -467,7 +467,7 @@ DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
-DECLARE @FieldDateTime Timestamp -- DateTime
+DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T13:29:15.3210000+00:00'
@@ -477,7 +477,7 @@ DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
-DECLARE @FieldDate Timestamp -- DateTime
+DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2123-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 14:44:33.2340000
@@ -553,7 +553,7 @@ DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
-DECLARE @FieldDateTime Timestamp -- DateTime
+DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2098-10-12 21:14:15.913'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T14:53:15.0000000+00:00'
@@ -563,7 +563,7 @@ DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
-DECLARE @FieldDate Timestamp -- DateTime
+DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '3210-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 23:59:59.9999999
@@ -641,7 +641,7 @@ DECLARE @FieldFloat Real -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
-DECLARE @FieldDateTime Timestamp -- DateTime
+DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T13:29:15.9990000+00:00'
@@ -651,7 +651,7 @@ DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
-DECLARE @FieldDate Timestamp -- DateTime
+DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2123-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 22:44:33

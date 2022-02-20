@@ -26,9 +26,9 @@ FROM
 
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Timestamp -- DateTime
+DECLARE @p_1 Timestamp -- DateTime2
 SET     @p_1 = '2020-02-19 17:54:55.123'::timestamp
-DECLARE @p_2 Timestamp -- DateTime
+DECLARE @p_2 Timestamp -- DateTime2
 SET     @p_2 = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @p_3 Interval -- Object
 SET     @p_3 = 05:00:00
@@ -44,9 +44,9 @@ DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 1
 DECLARE @p_2 Integer -- Int32
 SET     @p_2 = 10
-DECLARE @p_3 Timestamp -- DateTime
+DECLARE @p_3 Timestamp -- DateTime2
 SET     @p_3 = '2020-02-19 17:54:55.123'::timestamp
-DECLARE @DateTime Timestamp -- DateTime
+DECLARE @DateTime Timestamp -- DateTime2
 SET     @DateTime = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @p_4 Interval -- Object
 SET     @p_4 = 01:00:00
