@@ -11,7 +11,7 @@ SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMET
 BeforeExecute
 -- MySqlConnector MySql
 
-`testdata2`.`AddIssue792Record`
+`testdataconnector`.`AddIssue792Record`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -116,7 +116,7 @@ SET     @MultiPolygon = NULL
 DECLARE @GeometryCollection VarChar -- String
 SET     @GeometryCollection = NULL
 
-`testdata2`.`Issue2313Parameters`
+`testdataconnector`.`Issue2313Parameters`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -221,7 +221,7 @@ SET     @GeometryCollection = NULL
 DECLARE @Year Int32
 SET     @Year = NULL
 
-`testdata2`.`Issue2313Results`
+`testdataconnector`.`Issue2313Results`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -230,7 +230,7 @@ SET     @aInParam = NULL
 DECLARE @aOutParam Byte -- SByte
 SET     @aOutParam = NULL
 
-`testdata2`.`TestOutputParametersWithoutTableProcedure`
+`testdataconnector`.`TestOutputParametersWithoutTableProcedure`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -241,5 +241,5 @@ SET     @param2 = NULL
 DECLARE @param1 Int32
 SET     @param1 = NULL
 
-`testdata2`.`TestProcedure`
+`testdataconnector`.`TestProcedure`
 

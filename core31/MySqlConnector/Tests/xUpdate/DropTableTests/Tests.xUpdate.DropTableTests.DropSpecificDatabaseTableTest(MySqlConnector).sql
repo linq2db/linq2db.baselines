@@ -25,7 +25,7 @@ CREATE TABLE `DropTableTest`
 BeforeExecute
 -- MySqlConnector MySql
 
-INSERT INTO `testdata2`.`DropTableTest`
+INSERT INTO `testdataconnector`.`DropTableTest`
 (
 	`ID`
 )
@@ -40,12 +40,12 @@ BeforeExecute
 SELECT
 	`t1`.`ID`
 FROM
-	`testdata2`.`DropTableTest` `t1`
+	`testdataconnector`.`DropTableTest` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `testdata2`.`DropTableTest`
+DROP TABLE `testdataconnector`.`DropTableTest`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -53,5 +53,5 @@ BeforeExecute
 SELECT
 	`t1`.`ID`
 FROM
-	`testdata2`.`DropTableTest` `t1`
+	`testdataconnector`.`DropTableTest` `t1`
 
