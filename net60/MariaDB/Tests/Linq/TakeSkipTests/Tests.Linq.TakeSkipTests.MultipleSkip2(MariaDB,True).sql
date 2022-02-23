@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `TakeSkipClass`
 (
@@ -25,7 +25,7 @@ VALUES
 ('BOLTO')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip_2 Int32
 SET     @skip_2 = 3
 
@@ -38,7 +38,7 @@ ORDER BY
 LIMIT @skip_2, 9223372036854775807
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip_2 Int32
 SET     @skip_2 = 4
 
@@ -51,7 +51,7 @@ ORDER BY
 LIMIT @skip_2, 9223372036854775807
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 

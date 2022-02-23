@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `TakeSkipClass`
 (
@@ -29,7 +29,7 @@ VALUES
 ('Value8')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`Value`
@@ -40,7 +40,7 @@ ORDER BY
 LIMIT 6, 9223372036854775807
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 

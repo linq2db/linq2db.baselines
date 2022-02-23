@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 DELETE `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`ChildID` = 10000
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 DELETE `t1`
 FROM
@@ -17,7 +17,7 @@ WHERE
 	`t1`.`ParentID` = 20000
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 INSERT INTO `Parent`
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 INSERT INTO `Child`
 (
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 UPDATE
 	`Parent` `t1`
@@ -56,7 +56,7 @@ WHERE
 	`a_Parent`.`ChildID` = 10000
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 DELETE `t1`
 FROM
@@ -65,7 +65,7 @@ WHERE
 	`t1`.`ChildID` = 10000
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 DELETE `t1`
 FROM

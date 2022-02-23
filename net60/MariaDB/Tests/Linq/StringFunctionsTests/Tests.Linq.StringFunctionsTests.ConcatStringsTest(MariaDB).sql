@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `SampleClass`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `SampleClass`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `SampleClass`
 (
@@ -32,7 +32,7 @@ VALUES
 (3,'Z1',NULL,NULL,'Z4')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	CONCAT_WS(' -> ', `t`.`Value2`)
@@ -40,7 +40,7 @@ FROM
 	`SampleClass` `t`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	CONCAT_WS(' -> ', `t`.`Value3`)
@@ -48,7 +48,7 @@ FROM
 	`SampleClass` `t`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	CONCAT_WS(' -> ', `t`.`Value3`, `t`.`Value1`, `t`.`Value2`)
@@ -56,7 +56,7 @@ FROM
 	`SampleClass` `t`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	CONCAT_WS(' -> ', `t`.`Value3`, `t`.`Value3`)
@@ -64,7 +64,7 @@ FROM
 	`SampleClass` `t`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 

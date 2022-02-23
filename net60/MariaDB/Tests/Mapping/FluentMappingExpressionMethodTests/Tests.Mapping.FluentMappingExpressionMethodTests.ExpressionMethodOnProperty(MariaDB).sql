@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `InstanceClass`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `InstanceClass`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `InstanceClass`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `InstanceClass`
 (
@@ -43,7 +43,7 @@ VALUES
 (20,120)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)
@@ -53,7 +53,7 @@ WHERE
 	(Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) = Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) OR Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) IS NULL AND Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) IS NULL)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `InstanceClass`
 

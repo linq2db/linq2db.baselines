@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `SimpleBulkCopyTable`
 (
@@ -7,7 +7,7 @@ CREATE TABLE `SimpleBulkCopyTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -17,7 +17,7 @@ VALUES
 (1)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -27,7 +27,7 @@ VALUES
 (2)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `SimpleBulkCopyTable`
 

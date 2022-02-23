@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @p_1 VarChar(1) -- String
 SET     @p_1 = '1'
 

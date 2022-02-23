@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM
 	`InheritanceParent` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `InheritanceParent`
 (
@@ -24,7 +24,7 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)
@@ -32,7 +32,7 @@ FROM
 	`InheritanceParent` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `InheritanceParent`
 (
@@ -50,7 +50,7 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `_`
 FROM
@@ -13,7 +13,7 @@ WHERE
 	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -39,12 +39,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Value_1 String(1) -- StringFixedLength
 SET     @Value_1 = 'O'
 
@@ -56,7 +56,7 @@ WHERE
 	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @take Int32
@@ -75,7 +75,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `_`
 FROM

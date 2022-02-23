@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `DynamicTable`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `DynamicTable`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `DynamicTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `DynamicTable`
 (
@@ -27,7 +27,7 @@ VALUES
 (77,0)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`d`.`Not Identifier`
@@ -35,7 +35,7 @@ FROM
 	`DynamicTable` `d`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `DynamicTable`
 

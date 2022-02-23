@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TEMPORARY TABLE `TestTable`
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `TestTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `TestTable`
 

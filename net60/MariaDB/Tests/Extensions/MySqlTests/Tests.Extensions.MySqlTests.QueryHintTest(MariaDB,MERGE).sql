@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT /*+ NO_BKA(p) MERGE(p, c_1) */
 	`p`.`ParentID`,

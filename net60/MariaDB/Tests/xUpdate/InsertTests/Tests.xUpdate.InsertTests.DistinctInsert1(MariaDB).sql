@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM
@@ -23,7 +23,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `LinqDataTypes`
 (
@@ -44,7 +44,7 @@ FROM
 	) `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM

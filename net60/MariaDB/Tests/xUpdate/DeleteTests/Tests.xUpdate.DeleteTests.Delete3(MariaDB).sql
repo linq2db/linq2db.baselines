@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`ChildID` IN (1001, 1002)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `Child`
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `Child`
 (
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)
@@ -46,7 +46,7 @@ WHERE
 	`c_1`.`ParentID` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `c_1`
 FROM
@@ -56,7 +56,7 @@ WHERE
 	`a_Parent`.`ParentID` = 1 AND `c_1`.`ChildID` IN (1001, 1002)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)
@@ -66,7 +66,7 @@ WHERE
 	`c_1`.`ParentID` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM

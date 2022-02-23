@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `DynamicTable`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `DynamicTable`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `DynamicTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `DynamicTable`
 (
@@ -28,7 +28,7 @@ VALUES
 (77,5)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`Not Identifier`,
@@ -40,7 +40,7 @@ GROUP BY
 	`t1`.`Not Identifier`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `DynamicTable`
 

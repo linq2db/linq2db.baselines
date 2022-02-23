@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`nm`.`FirstName`
@@ -9,7 +9,7 @@ WHERE
 	Char_Length(`nm`.`FirstName`) <> 0
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`FirstName`,

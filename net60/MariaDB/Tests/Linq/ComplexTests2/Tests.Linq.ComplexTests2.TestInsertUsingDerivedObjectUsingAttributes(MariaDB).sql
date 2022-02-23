@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -52,7 +52,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -75,7 +75,7 @@ WHERE
 	`t1`.`PersonID` = @ID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -92,7 +92,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 5
 
@@ -103,7 +103,7 @@ WHERE
 	`t1`.`PersonID` = @ID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `_`
 FROM

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `Issue1403Tests_2`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Issue1403Tests_2`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `Issue1403Tests_2`
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -36,7 +36,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `Issue1403Tests_2`
 

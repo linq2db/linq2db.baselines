@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
 (
@@ -13,7 +13,7 @@ CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`Id`,
@@ -22,7 +22,7 @@ FROM
 	`CreateIfNotExistsTable` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 

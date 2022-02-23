@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `StringTypesTable`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `StringTypesTable`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `StringTypesTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `StringTypesTable`
 (
@@ -30,7 +30,7 @@ VALUES
 (1,'someString','someString','someString','someString')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @str_4 String(5) -- AnsiStringFixedLength
 SET     @str_4 = 'some%'
 DECLARE @str_5 String(5) -- StringFixedLength
@@ -55,7 +55,7 @@ WHERE
 	`t`.`NVarCharColumn` LIKE @str_7 ESCAPE '~'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `StringTypesTable`
 

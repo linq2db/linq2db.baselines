@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `CustomerBase`
 (
@@ -13,7 +13,7 @@ CREATE TABLE `CustomerBase`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`cb`.`Id`,
@@ -26,7 +26,7 @@ WHERE
 	`cb`.`ClientType` = 'Client'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `CustomerBase`
 

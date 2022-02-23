@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `Issue1373Tests`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `Issue1373Tests`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Field1 VarChar -- String
 SET     @Field1 = NULL
 
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Field1 VarChar -- String
 SET     @Field1 = NULL
 
@@ -42,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Field1 VarChar(4) -- String
 SET     @Field1 = 'test'
 
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`Id`,
@@ -69,7 +69,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `Issue1373Tests`
 

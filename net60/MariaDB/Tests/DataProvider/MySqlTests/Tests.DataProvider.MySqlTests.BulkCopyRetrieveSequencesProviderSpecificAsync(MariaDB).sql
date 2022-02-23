@@ -1,11 +1,23 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT Max(`PersonID`) FROM `Person`
 
 BeforeExecute
-INSERT ASYNC BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
+-- MariaDB MySql.Official MySql (asynchronously)
 
-BeforeExecute
-INSERT ASYNC BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
+INSERT INTO `Person`
+(
+	`FirstName`,
+	`PersonID`,
+	`LastName`,
+	`MiddleName`,
+	`Gender`
+)
+VALUES
+('Neurologist',5,'test',NULL,'M'),
+('Sports Medicine',6,'test',NULL,'M'),
+('Optometrist',7,'test',NULL,'M'),
+('Pediatrics',8,'test',NULL,'M'),
+('Psychiatry',9,'test',NULL,'M')
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -8,7 +8,7 @@ FROM
 	`Child` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -17,7 +17,7 @@ FROM
 	`Child` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -26,7 +26,7 @@ FROM
 	`Child` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -35,7 +35,7 @@ FROM
 	`Child` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`p`.`ParentID`,

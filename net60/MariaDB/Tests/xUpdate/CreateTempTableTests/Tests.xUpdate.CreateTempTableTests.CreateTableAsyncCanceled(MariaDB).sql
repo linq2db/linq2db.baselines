@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`p`.`ParentID`
@@ -12,7 +12,7 @@ FROM
 	`Parent` `p`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 CREATE TEMPORARY TABLE `TempTable`
 (
@@ -20,7 +20,7 @@ CREATE TEMPORARY TABLE `TempTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE `TempTable`
 

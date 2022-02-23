@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 UPDATE
 	`Parent` `t1`
@@ -9,7 +9,7 @@ WHERE
 	`t1`.`ParentID` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 UPDATE
 	`Parent` `t1`
@@ -19,7 +19,7 @@ WHERE
 	`t1`.`ParentID` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -33,7 +33,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
 

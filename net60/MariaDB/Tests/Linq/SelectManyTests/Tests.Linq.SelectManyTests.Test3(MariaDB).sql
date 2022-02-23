@@ -20,7 +20,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 SELECT
 	CASE

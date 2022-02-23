@@ -14,7 +14,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Date_Add(`t`.`DateTimeValue`, Interval 5 Day)

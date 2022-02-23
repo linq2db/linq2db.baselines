@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT /*+ RESOURCE_GROUP(USR_default) */
 	`p`.`ParentID`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT /*+ SET_VAR(sort_buffer_size=16M) */
 	`p`.`ParentID`,

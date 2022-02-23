@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `Issue1078Table`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `Issue1078Table`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `Issue1078Table`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `Issue1078Table`
 (
@@ -36,7 +36,7 @@ VALUES
 (9,4,1)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`SiteID`,
@@ -59,7 +59,7 @@ GROUP BY
 	`t1`.`SiteID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `Issue1078Table`
 

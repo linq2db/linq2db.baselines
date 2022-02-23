@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `BlobClass`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `BlobClass`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `BlobClass`
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`_`.`Id`,
@@ -36,7 +36,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 UPDATE
 	`BlobClass` `_`
@@ -46,7 +46,7 @@ WHERE
 	`_`.`Id` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`_`.`Id`,
@@ -58,7 +58,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `BlobClass`
 

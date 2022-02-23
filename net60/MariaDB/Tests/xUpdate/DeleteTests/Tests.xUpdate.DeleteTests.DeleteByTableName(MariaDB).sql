@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `xxPerson`
 (
@@ -13,7 +13,7 @@ CREATE TABLE `xxPerson`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)
@@ -47,7 +47,7 @@ FROM
 	`xxPerson` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -62,7 +62,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -73,7 +73,7 @@ WHERE
 	`t1`.`PersonID` = @ID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)
@@ -81,7 +81,7 @@ FROM
 	`xxPerson` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `xxPerson`
 

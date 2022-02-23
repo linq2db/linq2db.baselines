@@ -1,6 +1,6 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
-DECLARE @param4 Bool -- Boolean
+-- MariaDB MySql.Official MySql
+DECLARE @param4 UByte -- Boolean
 SET     @param4 = 0
 
 SELECT

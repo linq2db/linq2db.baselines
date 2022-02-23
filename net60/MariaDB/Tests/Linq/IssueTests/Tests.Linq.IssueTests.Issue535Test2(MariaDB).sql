@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `CustomerBase`
 (
@@ -13,7 +13,7 @@ CREATE TABLE `CustomerBase`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @filter_1 VarChar(4) -- String
 SET     @filter_1 = 'test'
 
@@ -28,7 +28,7 @@ WHERE
 	`q`.`ClientType` = 'Client' AND (LOCATE(@filter_1, `q`.`Name`) > 0 OR LOCATE(@filter_1, `q`.`ContactEmail`) > 0)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `CustomerBase`
 

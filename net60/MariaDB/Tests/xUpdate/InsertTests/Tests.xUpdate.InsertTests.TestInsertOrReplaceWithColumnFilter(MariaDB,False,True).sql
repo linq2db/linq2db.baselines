@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `TestInsertOrReplaceTable`
 (
@@ -12,7 +12,7 @@ CREATE TABLE `TestInsertOrReplaceTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -37,7 +37,7 @@ ON DUPLICATE KEY UPDATE
 	`LastName` = @LastName
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
@@ -55,7 +55,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -85,7 +85,7 @@ ON DUPLICATE KEY UPDATE
 	`MiddleName` = @MiddleName
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
@@ -103,7 +103,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `TestInsertOrReplaceTable`
 

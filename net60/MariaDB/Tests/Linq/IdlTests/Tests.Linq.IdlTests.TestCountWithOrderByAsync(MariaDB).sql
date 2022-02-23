@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 SELECT
 	Max(`x`.`PersonID`)
@@ -7,7 +7,7 @@ FROM
 	`Person` `x`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 SELECT
 	Count(*)

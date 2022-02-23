@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `Issue1554FluentTable`
 (
@@ -11,7 +11,7 @@ CREATE TABLE `Issue1554FluentTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType VarChar(3) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ClaimedKeyType VarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
 DECLARE @ClaimedKeyTypeN VarChar(2) -- String
@@ -48,7 +48,7 @@ WHERE
 	`p`.`Id` = 0
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -61,7 +61,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `Issue1554FluentTable`
 

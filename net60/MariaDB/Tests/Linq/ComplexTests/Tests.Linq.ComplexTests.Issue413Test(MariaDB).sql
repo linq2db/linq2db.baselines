@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `T1`
 (
@@ -12,7 +12,7 @@ CREATE TABLE `T1`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `T2`
 (
@@ -21,7 +21,7 @@ CREATE TABLE `T2`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `T3`
 (
@@ -30,7 +30,7 @@ CREATE TABLE `T3`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int32
@@ -48,7 +48,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int32
@@ -66,7 +66,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 3
 DECLARE @IndexId Int32
@@ -84,7 +84,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int32
@@ -102,7 +102,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int32
@@ -120,12 +120,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode VarChar(4) -- String
 SET     @InstrumentCode = 'aaa1'
-DECLARE @CreateDate Datetime -- DateTime
+DECLARE @CreateDate DateTime
 SET     @CreateDate = '2020-02-28 17:54:55.123'
 DECLARE @SourceInstrumentCode VarChar(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
@@ -146,12 +146,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode VarChar(4) -- String
 SET     @InstrumentCode = 'aaa2'
-DECLARE @CreateDate Datetime -- DateTime
+DECLARE @CreateDate DateTime
 SET     @CreateDate = '2020-02-28 17:54:55.123'
 DECLARE @SourceInstrumentCode VarChar -- String
 SET     @SourceInstrumentCode = NULL
@@ -172,10 +172,10 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @cond_1 VarChar(4) -- String
 SET     @cond_1 = 'aaa%'
-DECLARE @uptoDate Datetime -- DateTime
+DECLARE @uptoDate DateTime
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
 SELECT
@@ -197,17 +197,17 @@ ORDER BY
 	`t4`.`SourceInstrumentCode`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `T3`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `T2`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `T1`
 

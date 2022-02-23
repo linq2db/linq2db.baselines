@@ -1,14 +1,14 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 100500
-DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
+DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 3000
-DECLARE @DateTimeValue Datetime -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = NULL
-DECLARE @DateTimeValue2 Datetime -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue Bool -- Boolean
+DECLARE @BoolValue UByte -- Boolean
 SET     @BoolValue = NULL
 DECLARE @GuidValue Guid
 SET     @GuidValue = NULL
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @value2 Int32
 SET     @value2 = 13621
 DECLARE @id Int32
@@ -63,7 +63,7 @@ WHERE
 	`t1`.`ID` = @id
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @id Int32
 SET     @id = 100500
 DECLARE @take Int32
@@ -78,7 +78,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @id Int32
 SET     @id = 100500
 

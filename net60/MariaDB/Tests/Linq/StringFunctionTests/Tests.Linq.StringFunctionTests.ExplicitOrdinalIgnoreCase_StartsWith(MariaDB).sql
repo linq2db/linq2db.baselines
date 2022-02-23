@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM
 	`CollatedTable` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @CaseSensitive VarChar(10) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)
@@ -38,7 +38,7 @@ WHERE
 	Lower(`r`.`CaseSensitive`) LIKE 'testst%' ESCAPE '~'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)
@@ -48,7 +48,7 @@ WHERE
 	Lower(`r`.`CaseInsensitive`) LIKE 'testst%' ESCAPE '~'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)
@@ -58,7 +58,7 @@ WHERE
 	Lower(`r`.`CaseSensitive`) LIKE 'testst%' ESCAPE '~'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	Count(*)

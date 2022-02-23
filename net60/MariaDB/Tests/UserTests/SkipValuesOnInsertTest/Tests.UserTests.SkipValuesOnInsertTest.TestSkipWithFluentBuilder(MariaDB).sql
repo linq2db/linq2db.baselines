@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `PR_1598_Insert_Fluent_Table`
 (
@@ -11,7 +11,7 @@ CREATE TABLE `PR_1598_Insert_Fluent_Table`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar -- String
@@ -29,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -44,7 +44,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `PR_1598_Insert_Fluent_Table`
 

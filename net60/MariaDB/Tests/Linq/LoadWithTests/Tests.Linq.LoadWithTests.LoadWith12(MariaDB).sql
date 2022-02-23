@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -41,7 +41,7 @@ FROM
 		INNER JOIN `Child` `detail_1` ON `lw_Parent`.`ParentID` = `detail_1`.`ParentID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -73,7 +73,7 @@ FROM
 		LEFT JOIN `Parent` `a_Parent` ON `detail`.`ParentID` = `a_Parent`.`ParentID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
 

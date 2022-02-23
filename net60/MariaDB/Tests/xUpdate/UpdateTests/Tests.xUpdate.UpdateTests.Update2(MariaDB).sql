@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`ParentID` > 1000
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int32
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
@@ -38,7 +38,7 @@ WHERE
 	`p`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
@@ -50,7 +50,7 @@ WHERE
 	`p`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1002
 
@@ -62,7 +62,7 @@ WHERE
 	`p`.`ParentID` = @ParentID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `t1`
 FROM

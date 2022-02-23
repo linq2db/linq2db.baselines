@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `OrderByDistinctData`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `OrderByDistinctData`
 (
@@ -32,7 +32,7 @@ VALUES
 (100,'Three',1,1)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -49,7 +49,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -64,7 +64,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -81,7 +81,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -96,7 +96,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -114,7 +114,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -130,7 +130,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -148,7 +148,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -164,7 +164,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -182,7 +182,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -198,7 +198,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -216,7 +216,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -232,7 +232,7 @@ ORDER BY
 LIMIT @skip, @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `OrderByDistinctData`
 

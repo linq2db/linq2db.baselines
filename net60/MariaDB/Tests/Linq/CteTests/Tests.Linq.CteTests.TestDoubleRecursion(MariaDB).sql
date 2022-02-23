@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `HierarchyTree`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `HierarchyTree`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `HierarchyTree`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `HierarchyTree`
 (
@@ -41,7 +41,7 @@ VALUES
 (212,21)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 WITH RECURSIVE `CTE_1` (`Id`)
 AS
@@ -85,7 +85,7 @@ FROM
 		INNER JOIN `hierarchyDown` `h2` ON `h2`.`Id` = `h1`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `HierarchyTree`
 

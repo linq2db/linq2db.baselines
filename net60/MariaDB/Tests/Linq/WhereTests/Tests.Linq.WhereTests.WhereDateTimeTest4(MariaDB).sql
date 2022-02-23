@@ -16,8 +16,8 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
-DECLARE @DateTimeValue Datetime -- DateTime
+-- MariaDB MySql.Official MySql
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = '2009-09-27'
 
 SELECT

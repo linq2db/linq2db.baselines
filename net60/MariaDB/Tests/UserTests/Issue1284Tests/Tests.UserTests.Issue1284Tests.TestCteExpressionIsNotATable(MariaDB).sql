@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 WITH `CTE_1`
 (
@@ -32,7 +32,7 @@ WHERE
 	`x`.`entry_ID` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`x`.`FirstName`,

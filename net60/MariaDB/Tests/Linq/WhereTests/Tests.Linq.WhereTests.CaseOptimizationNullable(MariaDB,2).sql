@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `WhereWithString`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `WhereWithString`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `WhereWithString`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `WhereWithString`
 (
@@ -26,7 +26,7 @@ VALUES
 (1,'Str1')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @filterValue Int32
 SET     @filterValue = 2
 
@@ -39,7 +39,7 @@ WHERE
 	`x`.`Id` = @filterValue
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `WhereWithString`
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `Issue1799Table3`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `Issue1799Table3`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `Issue1799Table3`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `Issue1799Table3`
 (
@@ -27,7 +27,7 @@ VALUES
 (4,'Four')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	LEAD(`p`.`ProcessName`, 2) OVER(ORDER BY `p`.`ProcessID`)
@@ -35,7 +35,7 @@ FROM
 	`Issue1799Table3` `p`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	LEAD(`p`.`ProcessName`) OVER(ORDER BY `p`.`ProcessID`)
@@ -43,7 +43,7 @@ FROM
 	`Issue1799Table3` `p`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	LAG(`p`.`ProcessName`, 2) OVER(ORDER BY `p`.`ProcessID`)
@@ -51,7 +51,7 @@ FROM
 	`Issue1799Table3` `p`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	LAG(`p`.`ProcessName`) OVER(ORDER BY `p`.`ProcessID`)
@@ -59,7 +59,7 @@ FROM
 	`Issue1799Table3` `p`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `Issue1799Table3`
 

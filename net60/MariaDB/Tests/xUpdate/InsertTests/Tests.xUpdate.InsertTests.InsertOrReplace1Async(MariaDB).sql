@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `Person`
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -45,7 +45,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -65,7 +65,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -85,7 +85,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @take Int32
@@ -101,7 +101,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 
@@ -112,7 +112,7 @@ WHERE
 	`p`.`PersonID` = @id
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 

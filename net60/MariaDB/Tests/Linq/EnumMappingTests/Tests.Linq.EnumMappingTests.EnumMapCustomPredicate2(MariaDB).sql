@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 102
 
@@ -10,7 +10,7 @@ WHERE
 	`r`.`ID` >= 101 AND `r`.`ID` < @Id
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `LinqDataTypes`
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`entity`.`ID`,
@@ -36,7 +36,7 @@ WHERE
 	`entity`.`BigIntValue` = 12
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 102
 

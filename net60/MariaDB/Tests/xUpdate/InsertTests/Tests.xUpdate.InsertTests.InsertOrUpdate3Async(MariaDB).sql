@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DELETE `p`
 FROM
@@ -13,7 +13,7 @@ WHERE
 	`p`.`FirstName` = 'John' AND `p`.`LastName` = 'Shepard'
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 INSERT INTO `Person`
 (
@@ -29,12 +29,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
@@ -54,7 +54,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
@@ -74,7 +74,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
@@ -94,7 +94,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @take Int32
@@ -110,7 +110,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 
@@ -121,7 +121,7 @@ WHERE
 	`t1`.`PersonID` = @id
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 

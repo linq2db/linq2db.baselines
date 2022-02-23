@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `Issue1096Task`
 (
@@ -8,7 +8,7 @@ CREATE TABLE `Issue1096Task`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `Issue1096TaskStage`
 (
@@ -20,7 +20,7 @@ CREATE TABLE `Issue1096TaskStage`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -56,12 +56,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TaskId Int32
 SET     @TaskId = 1
-DECLARE @Actual Bool -- Boolean
+DECLARE @Actual UByte -- Boolean
 SET     @Actual = 1
 
 INSERT INTO `Issue1096TaskStage`
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT DISTINCT
 	`t`.`Id`,
@@ -91,12 +91,12 @@ FROM
 		LEFT JOIN `Issue1096TaskStage` `a_ActualStage` ON `t`.`Id` = `a_ActualStage`.`TaskId` AND `a_ActualStage`.`Actual` = 1
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `Issue1096TaskStage`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `Issue1096Task`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `CreateTableTypes`
 (
@@ -8,10 +8,10 @@ CREATE TABLE `CreateTableTypes`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @BooleanNullable Bool -- Boolean
+DECLARE @BooleanNullable UByte -- Boolean
 SET     @BooleanNullable = NULL
 
 INSERT INTO `CreateTableTypes`
@@ -26,10 +26,10 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @BooleanNullable Bool -- Boolean
+DECLARE @BooleanNullable UByte -- Boolean
 SET     @BooleanNullable = 1
 
 INSERT INTO `CreateTableTypes`
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`Id`,
@@ -55,7 +55,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `CreateTableTypes`
 

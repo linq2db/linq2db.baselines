@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @gender String(1) -- AnsiStringFixedLength
 SET     @gender = 'M'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`p`.`FirstName`,
@@ -13,7 +13,7 @@ WHERE
 	`p`.`MiddleName` IS NULL
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @str VarChar(3) -- String
 SET     @str = '123'
 

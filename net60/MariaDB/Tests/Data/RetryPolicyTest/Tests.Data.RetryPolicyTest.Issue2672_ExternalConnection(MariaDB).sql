@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  MySqlConnector MySql
+--  MySql.Official MySql
 
 CREATE TABLE `MyEntity`
 (
@@ -8,12 +8,12 @@ CREATE TABLE `MyEntity`
 )
 
 BeforeExecute
---  MySqlConnector MySql
+--  MySql.Official MySql
 
 DROP TABLE IF EXISTS `MyEntity`
 
 BeforeExecute
---  MySqlConnector MySql
+--  MySql.Official MySql
 
 CREATE TABLE `MyEntity`
 (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `stLinks`
 (
@@ -21,7 +21,7 @@ CREATE TABLE `stLinks`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `stVersions`
 (
@@ -32,7 +32,7 @@ CREATE TABLE `stVersions`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @parentId Int32
 SET     @parentId = 111
 
@@ -83,12 +83,12 @@ FROM
 		INNER JOIN `stVersions` `version_1` ON `u`.`InIdChild` = `version_1`.`inId`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `stVersions`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `stLinks`
 

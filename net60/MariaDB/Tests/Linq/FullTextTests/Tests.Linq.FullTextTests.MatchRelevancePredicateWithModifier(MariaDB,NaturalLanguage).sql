@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	MATCH(`r`.`TestField1`, `r`.`TestField2`) AGAINST ('found')

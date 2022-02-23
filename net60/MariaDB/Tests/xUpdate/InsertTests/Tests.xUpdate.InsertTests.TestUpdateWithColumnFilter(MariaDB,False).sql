@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @take Int32
@@ -49,7 +49,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -69,7 +69,7 @@ WHERE
 	`t1`.`PersonID` = @ID
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @take Int32
@@ -88,7 +88,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @newName VarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

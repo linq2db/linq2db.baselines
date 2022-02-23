@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT /*+ NO_MERGE(p) NO_MERGE(c_1) */
 	`p`.`ParentID`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @pattern VarChar(6) -- String
 SET     @pattern = '%h~%n%'
 

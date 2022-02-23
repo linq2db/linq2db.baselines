@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `CteChild`
 (
@@ -8,7 +8,7 @@ CREATE TABLE `CteChild`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `CteChild`
 (
@@ -44,7 +44,7 @@ FROM
 		INNER JOIN `LAST0` `c4_1` ON `c4_1`.`ParentID` = `p`.`ParentID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`ChildID`,
@@ -56,7 +56,7 @@ ORDER BY
 	`t1`.`ParentID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`c4`.`ChildID`,
@@ -71,7 +71,7 @@ ORDER BY
 	`c4`.`ParentID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `CteChild`
 

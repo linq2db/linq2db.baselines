@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `TPHTable`
 (
@@ -14,10 +14,24 @@ CREATE TABLE `TPHTable`
 )
 
 BeforeExecute
-INSERT BULK `TPHTable`(Id, Discriminator, Value1, Value2, NullableBool, Value3
+-- MariaDB MySql.Official MySql
+
+INSERT INTO `TPHTable`
+(
+	`Id`,
+	`Discriminator`,
+	`Value1`,
+	`Value2`,
+	`NullableBool`,
+	`Value3`
+)
+VALUES
+(1,1,'Str1',NULL,NULL,NULL),
+(2,2,NULL,'Str2',NULL,NULL),
+(3,3,NULL,NULL,'Y','Str3')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`Id`,
@@ -30,7 +44,7 @@ FROM
 	`TPHTable` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -48,7 +62,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -66,7 +80,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -84,7 +98,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -102,7 +116,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -120,7 +134,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -138,7 +152,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `TPHTable`
 

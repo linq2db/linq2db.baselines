@@ -20,7 +20,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @pattern VarChar(1) -- String
 SET     @pattern = '1'
 DECLARE @take Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT /*+ NO_HASH_JOIN(p) NO_HASH_JOIN(c_1) */
 	`p`.`ParentID`,

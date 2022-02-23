@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `AsyncDataTable`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `AsyncDataTable`
 (
@@ -33,7 +33,7 @@ VALUES
 (10)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
 
@@ -45,7 +45,7 @@ WHERE
 	`c_1`.`Id` = @Id
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `AsyncDataTable`
 

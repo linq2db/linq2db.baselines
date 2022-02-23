@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`nm`.`MiddleName`
@@ -9,7 +9,7 @@ WHERE
 	`nm`.`MiddleName` IS NOT NULL
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`FirstName`,

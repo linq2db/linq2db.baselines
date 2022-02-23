@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT /*+ MAX_EXECUTION_TIME(10) */
 	`p`.`ParentID`,

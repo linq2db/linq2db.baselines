@@ -50,7 +50,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`x`.`ParentID`
@@ -59,7 +59,7 @@ FROM
 		INNER JOIN `Child` `y` ON `x`.`ParentID` = `y`.`ParentID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`x`.`ParentID`

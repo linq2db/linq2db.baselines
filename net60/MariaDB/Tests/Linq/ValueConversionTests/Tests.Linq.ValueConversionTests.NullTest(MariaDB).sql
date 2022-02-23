@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `ValueConversion`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 INSERT INTO `ValueConversion`
 (
@@ -51,7 +51,7 @@ VALUES
 (10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL)
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t`.`Id`,
@@ -63,7 +63,7 @@ WHERE
 	`t`.`Value2` IS NULL
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

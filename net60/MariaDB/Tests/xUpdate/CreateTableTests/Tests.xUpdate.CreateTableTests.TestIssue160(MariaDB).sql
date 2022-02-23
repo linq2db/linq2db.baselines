@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `aa`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `aa`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @cc VarChar(5) -- String
 SET     @cc = 'hallo'
 DECLARE @bb Int32
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`cc`,
@@ -37,7 +37,7 @@ FROM
 	`aa` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE `aa`
 

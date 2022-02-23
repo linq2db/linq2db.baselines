@@ -1,6 +1,6 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
-DECLARE @Date_1 Datetime -- DateTime
+-- MariaDB MySql.Official MySql
+DECLARE @Date_1 DateTime
 SET     @Date_1 = '2020-02-29'
 
 SELECT

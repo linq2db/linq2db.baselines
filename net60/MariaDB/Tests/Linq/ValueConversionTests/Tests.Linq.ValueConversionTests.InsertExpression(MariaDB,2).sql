@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 CREATE TABLE `ValueConversion`
 (
@@ -18,7 +18,7 @@ CREATE TABLE `ValueConversion`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @iteration Int32
 SET     @iteration = 2
 DECLARE @Value1 VarChar(2) -- String
@@ -52,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @iteration Int32
 SET     @iteration = 2
 DECLARE @take Int32
@@ -76,7 +76,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

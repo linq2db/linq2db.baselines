@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`key_data_result`.`ParentID`,
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN `Parent` `detail` ON `detail`.`ParentID` = `key_data_result`.`ParentID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`a_Parent`.`ParentID`,

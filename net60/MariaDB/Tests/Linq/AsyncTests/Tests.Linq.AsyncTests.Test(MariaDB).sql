@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 SELECT
 	`t1`.`ParentID`,
@@ -8,7 +8,7 @@ FROM
 	`Parent` `t1`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 SELECT
 	`t1`.`ParentID`,

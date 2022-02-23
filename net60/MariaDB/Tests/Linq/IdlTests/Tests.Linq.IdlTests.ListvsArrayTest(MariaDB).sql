@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`x`.`PersonID`
@@ -9,7 +9,7 @@ WHERE
 	`x`.`FirstName` IN ('John')
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 DECLARE @st VarChar(4) -- String
 SET     @st = 'John'
 

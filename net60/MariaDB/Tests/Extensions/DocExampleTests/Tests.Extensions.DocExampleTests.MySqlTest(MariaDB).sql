@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT /*+ NO_BKA(p@qq) INDEX(p@qq PK_Parent) NO_BKA(p@qq, c_1@qq) SET_VAR(sort_buffer_size=16M) */
 	`p_1`.`ParentID`,

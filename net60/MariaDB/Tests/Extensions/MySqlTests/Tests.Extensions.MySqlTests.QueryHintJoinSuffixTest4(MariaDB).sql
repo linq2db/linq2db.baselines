@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT /*+ JOIN_SUFFIX(c_1, p) */
 	`p`.`ParentID`,

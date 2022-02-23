@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 CREATE TEMPORARY TABLE `TempTable`
 (
@@ -12,12 +12,12 @@ CREATE TEMPORARY TABLE `TempTable`
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 DROP TABLE `TempTable`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySql.Official MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 

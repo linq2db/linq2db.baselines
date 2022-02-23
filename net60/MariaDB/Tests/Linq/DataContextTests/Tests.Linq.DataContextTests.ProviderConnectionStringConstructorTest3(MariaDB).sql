@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -10,7 +10,7 @@ ORDER BY
 	`t1`.`ChildID`
 
 BeforeExecute
---  MySqlConnector MySql
+--  MySql.Official MySql
 
 SELECT
 	`t1`.`ParentID`,

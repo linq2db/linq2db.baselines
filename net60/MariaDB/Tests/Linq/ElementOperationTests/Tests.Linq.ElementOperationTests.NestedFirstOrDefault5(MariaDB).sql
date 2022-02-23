@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`key_data_result`.`ParentID`,
@@ -29,7 +29,7 @@ ORDER BY
 	`detail`.`ChildID`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySql.Official MySql
 
 SELECT
 	`a_Parent`.`ParentID`,
