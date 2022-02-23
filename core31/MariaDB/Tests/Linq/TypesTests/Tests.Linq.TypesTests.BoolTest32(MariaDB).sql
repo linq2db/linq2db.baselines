@@ -1,0 +1,30 @@
+﻿BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	VERSION()
+FROM
+	`LinqDataTypes` `_`
+LIMIT @take
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`t`.`ID`,
+	`t`.`MoneyValue`,
+	`t`.`DateTimeValue`,
+	`t`.`DateTimeValue2`,
+	`t`.`BoolValue`,
+	`t`.`GuidValue`,
+	`t`.`SmallIntValue`,
+	`t`.`IntValue`,
+	`t`.`BigIntValue`,
+	`t`.`StringValue`
+FROM
+	`LinqDataTypes` `t`
+WHERE
+	`t`.`BoolValue` = 1 AND `t`.`BoolValue` IS NOT NULL
+
