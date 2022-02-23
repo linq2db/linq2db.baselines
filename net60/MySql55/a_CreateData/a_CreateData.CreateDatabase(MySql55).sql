@@ -241,10 +241,12 @@ CREATE TABLE `AllTypes`
 -- SKIP MySql BEGIN
 -- SKIP MySqlConnector BEGIN
 -- SKIP MariaDB BEGIN
+-- SKIP MariaDBConnector BEGIN
 	year2DataType       year(2)                      NULL,
--- SKIP MySql END
--- SKIP MySqlConnector END
+-- SKIP MariaDBConnector END
 -- SKIP MariaDB END
+-- SKIP MySqlConnector END
+-- SKIP MySql END
 -- SKIP MySql55 END
 	year4DataType       year(4)                      NULL,
 
@@ -562,12 +564,14 @@ CREATE TABLE FullTextIndexTest (
 	FULLTEXT idx_field2 (TestField2)
 )
 -- SKIP MySql BEGIN
--- SKIP MariaDB BEGIN
 -- SKIP MySqlConnector BEGIN
+-- SKIP MariaDB BEGIN
+-- SKIP MariaDBConnector BEGIN
 	ENGINE=MyISAM
--- SKIP MySql END
+-- SKIP MariaDBConnector END
 -- SKIP MariaDB END
 -- SKIP MySqlConnector END
+-- SKIP MySql END
 ;
 
 BeforeExecute
@@ -741,6 +745,7 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `Set` ENUM('one', 'two'),
 
 -- SKIP MySql55 END
+-- SKIP MySql55 END
 
 	IN `Year` YEAR
 )
@@ -789,7 +794,7 @@ BEGIN
 	`Year`
 
 -- SKIP MySql55 END
-
+-- SKIP MySql55 END
 
 	FROM Person;
 END
