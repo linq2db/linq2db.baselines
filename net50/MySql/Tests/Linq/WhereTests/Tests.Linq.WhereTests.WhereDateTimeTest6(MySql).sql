@@ -1,5 +1,16 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	VERSION()
+FROM
+	`LinqDataTypes` `_`
+LIMIT @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
 DECLARE @Date_1 DateTime
 SET     @Date_1 = '2009-09-20'
 

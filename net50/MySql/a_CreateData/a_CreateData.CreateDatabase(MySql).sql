@@ -197,7 +197,9 @@ CREATE TABLE LinqDataTypes
 	MoneyValue     decimal(10,4),
 	DateTimeValue  datetime
 -- SKIP MySql55 BEGIN
+-- SKIP MySql55Connector BEGIN
 	(3)
+-- SKIP MySql55Connector END
 -- SKIP MySql55 END
 	,
 	DateTimeValue2 datetime NULL,
@@ -241,10 +243,10 @@ CREATE TABLE `AllTypes`
 	timeDataType        time                         NULL,
 	yearDataType        year                         NULL,
 -- SKIP MySql END
--- SKIP MySqlConnector END
--- SKIP MariaDB END
 -- SKIP MySql55 BEGIN
+-- SKIP MySql55Connector BEGIN
 	year2DataType       year(4)                      NULL,
+-- SKIP MySql55Connector END
 -- SKIP MySql55 END
 	year4DataType       year(4)                      NULL,
 
@@ -562,8 +564,6 @@ CREATE TABLE FullTextIndexTest (
 	FULLTEXT idx_field2 (TestField2)
 )
 -- SKIP MySql END
--- SKIP MariaDB END
--- SKIP MySqlConnector END
 ;
 
 BeforeExecute
@@ -604,7 +604,9 @@ CREATE PROCEDURE `Issue2313Parameters`(
 	IN `TimeStamp` TIMESTAMP,
 	IN `Time` TIME,
 -- SKIP MySql55 BEGIN
+-- SKIP MySql55Connector BEGIN
 	IN `Json` JSON,
+-- SKIP MySql55Connector END
 -- SKIP MySql55 END
 	IN `TinyInt` TINYINT,
 	IN `TinyIntUnsigned` TINYINT UNSIGNED,
@@ -659,7 +661,9 @@ BEGIN
 	`TimeStamp`,
 	`Time`,
 -- SKIP MySql55 BEGIN
+-- SKIP MySql55Connector BEGIN
 	`Json`,
+-- SKIP MySql55Connector END
 -- SKIP MySql55 END
 	`TinyInt`,
 	`TinyIntUnsigned`,
@@ -741,6 +745,11 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `Set` ENUM('one', 'two'),
 
 -- SKIP MySql55 BEGIN
+-- SKIP MySql55Connector BEGIN
+-- SKIP MySql END
+-- SKIP MySql55Connector END
+-- SKIP MySql55 END
+-- SKIP MySql55 BEGIN
 -- SKIP MySql END
 -- SKIP MySql55 END
 
@@ -791,9 +800,13 @@ BEGIN
 	`Year`
 
 -- SKIP MySql55 BEGIN
+-- SKIP MySql55Connector BEGIN
+-- SKIP MySql END
+-- SKIP MySql55Connector END
+-- SKIP MySql55 END
+-- SKIP MySql55 BEGIN
 -- SKIP MySql END
 -- SKIP MySql55 END
-
 
 	FROM Person;
 END
