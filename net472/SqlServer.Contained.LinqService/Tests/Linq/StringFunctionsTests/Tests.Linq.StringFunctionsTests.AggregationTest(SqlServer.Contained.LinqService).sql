@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	CREATE TABLE [SampleClass]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(50) -- String
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value1 NVarChar(50) -- String
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value1 NVarChar(50) -- String
@@ -107,7 +107,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	Max([t1].[Value1]),
@@ -119,7 +119,7 @@ GROUP BY
 	[t1].[Value1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 

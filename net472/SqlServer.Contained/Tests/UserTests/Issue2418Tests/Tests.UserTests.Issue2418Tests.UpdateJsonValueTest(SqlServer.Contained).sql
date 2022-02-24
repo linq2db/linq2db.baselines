@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [TestTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [TestTable]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @Json NVarChar(4000) -- String
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @Id UniqueIdentifier -- Guid
@@ -41,21 +41,21 @@ WHERE
 	[x].[Id] = @Id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 UPDATE
 	[o]
 SET
-	[o].[Json] = JSON_MODIFY(JSON_MODIFY([o].[Json], N'$.Number', N'10'), N'$.String', N'Test1')
+	[o].[Json] = JSON_MODIFY(JSON_MODIFY([o].[Json], N'$.Number', 10), N'$.String', N'Test1')
 FROM
 	[TestTable] [o]
 WHERE
 	[o].[Id] = @Id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @Id UniqueIdentifier -- Guid
@@ -70,7 +70,7 @@ WHERE
 	[x].[Id] = @Id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TestTable]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT /* qb */
 	[t].[PersonID],
@@ -13,5 +13,5 @@ FROM
 			[Child] [c_1] WITH (NoLock, NoWait, ReadUncommitted)
 	) [t1]
 		INNER LOOP JOIN [Patient] [t] WITH (ReadUncommitted) ON [t1].[ParentID] = [t].[PersonID]
-OPTION (RECOMPILE, TABLE HINT(p, ReadUncommitted))
+OPTION (RECOMPILE, TABLE HINT(p, ReadUncommitted), NO_PERFORMANCE_SPOOL)
 

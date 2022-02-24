@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [sample_class]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[sample_class]', N'U') IS NULL)
 	CREATE TABLE [sample_class]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[sample_class]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [sample_class]
 (
@@ -44,7 +44,7 @@ VALUES
 (20,N'Str_20')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 5
 DECLARE @p_2 Int -- Int32
@@ -61,7 +61,7 @@ WHERE
 	[c_1].[id] > 10
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @startId Int -- Int32
 SET     @startId = 5
 DECLARE @endId Int -- Int32
@@ -76,7 +76,7 @@ WHERE
 	[t].[id] >= @startId AND [t].[id] < @endId AND [t].[id] > 10
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [sample_class]
 

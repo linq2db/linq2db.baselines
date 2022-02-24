@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [FirstOptimizerData]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NULL)
 	CREATE TABLE [FirstOptimizerData]
@@ -23,7 +23,7 @@ IF (OBJECT_ID(N'[FirstOptimizerData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [FirstOptimizerData]
 (
@@ -46,12 +46,12 @@ VALUES
 (3,4,60,300,400,1000,4000,5000,N'Str_5')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [SecondOptimizerData]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NULL)
 	CREATE TABLE [SecondOptimizerData]
@@ -70,7 +70,7 @@ IF (OBJECT_ID(N'[SecondOptimizerData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [SecondOptimizerData]
 (
@@ -93,7 +93,7 @@ VALUES
 (3,4,60,300,400,1000,4000,5000,N'Str_5')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	COUNT([x].[Key2]),
@@ -111,12 +111,12 @@ FROM
 	) [x]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [SecondOptimizerData]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [FirstOptimizerData]
 

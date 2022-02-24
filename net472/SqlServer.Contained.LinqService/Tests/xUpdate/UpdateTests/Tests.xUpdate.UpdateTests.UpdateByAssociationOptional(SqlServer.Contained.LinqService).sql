@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [MainTable]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[MainTable]', N'U') IS NULL)
 	CREATE TABLE [MainTable]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[MainTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Field NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Field NVarChar(4000) -- String
@@ -50,7 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Field NVarChar(4000) -- String
@@ -68,12 +68,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [AssociatedTable]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NULL)
 	CREATE TABLE [AssociatedTable]
@@ -82,7 +82,7 @@ IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -96,7 +96,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 
@@ -110,7 +110,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -126,7 +126,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -137,12 +137,12 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [AssociatedTable]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [MainTable]
 

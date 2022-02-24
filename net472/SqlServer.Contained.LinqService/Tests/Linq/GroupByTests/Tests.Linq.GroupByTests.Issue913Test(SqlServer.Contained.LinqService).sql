@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue913Test]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
 	CREATE TABLE [Issue913Test]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 1
 DECLARE @TradingStatus NChar -- StringFixedLength
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 2
 DECLARE @TradingStatus NChar(1) -- StringFixedLength
@@ -52,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 3
 DECLARE @TradingStatus NChar(1) -- StringFixedLength
@@ -70,7 +70,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[c1],
@@ -88,7 +88,7 @@ GROUP BY
 	[t1].[c1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue913Test]
 

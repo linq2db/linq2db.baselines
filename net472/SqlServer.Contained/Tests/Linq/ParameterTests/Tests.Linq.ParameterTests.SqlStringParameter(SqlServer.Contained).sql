@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @p NVarChar(4000) -- String
@@ -17,7 +17,7 @@ WHERE
 	[t].[FirstName] = @p
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @p NVarChar(4000) -- String

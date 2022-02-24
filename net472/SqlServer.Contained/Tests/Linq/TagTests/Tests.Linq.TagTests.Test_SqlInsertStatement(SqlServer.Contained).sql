@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [TestTable]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [TestTable]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 /* My Test */
 INSERT INTO [TestTable]
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TestTable]
 

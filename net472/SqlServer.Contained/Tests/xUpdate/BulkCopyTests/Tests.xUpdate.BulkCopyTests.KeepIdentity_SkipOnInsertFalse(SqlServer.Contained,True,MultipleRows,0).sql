@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 0
 
@@ -20,12 +20,12 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SET IDENTITY_INSERT [AllTypes] ON
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [AllTypes]
 (
@@ -37,12 +37,12 @@ VALUES
 (23,300)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SET IDENTITY_INSERT [AllTypes] OFF
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -57,7 +57,7 @@ ORDER BY
 	[_].[ID]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

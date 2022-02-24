@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[nm].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	NOT ([nm].[FirstName] IS NULL OR Len([nm].[FirstName]) = 0)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[FirstName],

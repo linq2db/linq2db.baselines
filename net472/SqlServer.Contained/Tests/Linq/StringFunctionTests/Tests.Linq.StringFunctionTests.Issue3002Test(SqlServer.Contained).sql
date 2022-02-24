@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [SampleClass]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [SampleClass]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [SampleClass]
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [SampleClass]
 (
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar -- String
 SET     @test = Test
 DECLARE @test_2 NVarChar(4000) -- String
@@ -58,7 +58,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar -- String
 SET     @test = Test
 DECLARE @test_2 NVarChar(4000) -- String
@@ -72,7 +72,7 @@ WHERE
 	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2 ESCAPE N'~')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar -- String
 SET     @test = Value
 DECLARE @test_2 NVarChar(4000) -- String
@@ -89,7 +89,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar -- String
 SET     @test = Value
 DECLARE @test_2 NVarChar(4000) -- String
@@ -103,7 +103,7 @@ WHERE
 	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2 ESCAPE N'~')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar -- String
 SET     @test = Class
 DECLARE @test_2 NVarChar(4000) -- String
@@ -120,7 +120,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar -- String
 SET     @test = Class
 DECLARE @test_2 NVarChar(4000) -- String
@@ -134,7 +134,7 @@ WHERE
 	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2 ESCAPE N'~')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 

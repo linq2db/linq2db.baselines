@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [SimpleBulkCopyTable]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [SimpleBulkCopyTable]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [SimpleBulkCopyTable]
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	CREATE TABLE [SampleClass]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [SampleClass]
 (
@@ -25,7 +25,7 @@ VALUES
 (1,100)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -65,7 +65,7 @@ FROM
 		) [t3]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [SampleClass]
 

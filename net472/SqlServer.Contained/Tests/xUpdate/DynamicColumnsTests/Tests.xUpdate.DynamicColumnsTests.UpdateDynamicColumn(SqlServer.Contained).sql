@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [Person]
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	Count(*)
@@ -25,7 +25,7 @@ WHERE
 	[c_1].[LastName] = N'Limonadovy'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 UPDATE
 	[c_1]
@@ -37,7 +37,7 @@ WHERE
 	[c_1].[LastName] = N'Limonadovy'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	Count(*)
@@ -47,7 +47,7 @@ WHERE
 	[c_1].[FirstName] = N'Johnny' AND [c_1].[LastName] = N'Limonadovy'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DELETE [t1]
 FROM

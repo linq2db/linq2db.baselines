@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[ParentID],
@@ -17,7 +17,7 @@ GROUP BY
 	[t1].[Key_1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 DECLARE @ChildID Int -- Int32

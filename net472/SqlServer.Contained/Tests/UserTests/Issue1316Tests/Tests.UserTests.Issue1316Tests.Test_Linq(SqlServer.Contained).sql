@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [Issue1316Tests]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Issue1316Tests]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -35,7 +35,7 @@ WHERE
 	[_].[ID] IN (4, 5, 6)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1316Tests]
 

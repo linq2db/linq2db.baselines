@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @ParentID Int -- Int32

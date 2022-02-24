@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue2816Table]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NULL)
 	CREATE TABLE [Issue2816Table]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [Issue2816Table]
 (
@@ -29,7 +29,7 @@ VALUES
 (3,N' x ')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[p].[Id],
@@ -41,7 +41,7 @@ WHERE
                  　' FROM [p].[Text])) = N'')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue2816Table]
 

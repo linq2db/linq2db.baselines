@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t].[ParentID],
@@ -11,7 +11,7 @@ FROM
 		CROSS APPLY GetParentByID([t].[ParentID]) [p]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t].[ParentID],

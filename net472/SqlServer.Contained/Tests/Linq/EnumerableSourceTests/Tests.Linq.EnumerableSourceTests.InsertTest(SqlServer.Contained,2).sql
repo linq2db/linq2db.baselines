@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [TableToInsert]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [TableToInsert]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [TableToInsert]
 (
@@ -29,7 +29,7 @@ WHERE
 	[t].[Id] IS NULL
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [TableToInsert]
 (
@@ -48,7 +48,7 @@ WHERE
 	[t].[Id] IS NULL
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TableToInsert]
 

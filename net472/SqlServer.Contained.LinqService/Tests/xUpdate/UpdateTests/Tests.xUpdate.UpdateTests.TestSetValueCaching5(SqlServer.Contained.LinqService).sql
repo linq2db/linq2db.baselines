@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdateSetTest]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NULL)
 	CREATE TABLE [UpdateSetTest]
@@ -21,7 +21,7 @@ IF (OBJECT_ID(N'[UpdateSetTest]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 UniqueIdentifier -- Guid
@@ -59,7 +59,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value5 Int -- Int32
 SET     @Value5 = 11
 DECLARE @id Int -- Int32
@@ -75,7 +75,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -89,7 +89,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value5 Int -- Int32
 SET     @Value5 = 12
 DECLARE @id Int -- Int32
@@ -105,7 +105,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @id Int -- Int32
@@ -119,7 +119,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdateSetTest]
 

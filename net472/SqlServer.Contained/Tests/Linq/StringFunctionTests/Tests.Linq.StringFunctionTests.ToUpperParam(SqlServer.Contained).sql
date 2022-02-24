@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @param_1 NVarChar(4000) -- String
 SET     @param_1 = N'JOHN'
 

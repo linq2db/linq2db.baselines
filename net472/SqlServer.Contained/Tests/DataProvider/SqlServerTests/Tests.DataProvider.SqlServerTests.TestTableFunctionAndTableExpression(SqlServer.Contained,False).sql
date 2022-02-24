@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -13,7 +13,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFunction')
@@ -21,7 +21,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFu
 END
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 
 CREATE FUNCTION dbo.PersonTableFunction( @ID int, @FirstName varchar(50))
@@ -30,7 +30,7 @@ AS
 	RETURN ( SELECT * FROM dbo.Person WHERE PersonID = @ID AND FirstName = @FirstName )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -44,7 +44,7 @@ FROM
 	[PersonTableFunction](1, N'John') [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -58,7 +58,7 @@ FROM
 	[PersonTableFunction](1, N'John') [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -72,7 +72,7 @@ FROM
 	[PersonTableFunction](1, N'John') [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -86,7 +86,7 @@ FROM
 	[PersonTableFunction](1, N'John') [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @ID Int -- Int32
@@ -108,7 +108,7 @@ FROM
 		INNER JOIN PersonTableFunction(@ID, @FirstName) [tet] ON [tet].[PersonID] = [p].[PersonID]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFunction')

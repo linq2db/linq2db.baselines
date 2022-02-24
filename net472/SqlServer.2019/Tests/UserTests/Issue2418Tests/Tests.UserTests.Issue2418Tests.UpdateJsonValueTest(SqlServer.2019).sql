@@ -48,7 +48,7 @@ SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 UPDATE
 	[o]
 SET
-	[o].[Json] = JSON_MODIFY(JSON_MODIFY([o].[Json], N'$.Number', N'10'), N'$.String', N'Test1')
+	[o].[Json] = JSON_MODIFY(JSON_MODIFY([o].[Json], N'$.Number', 10), N'$.String', N'Test1')
 FROM
 	[TestTable] [o]
 WHERE

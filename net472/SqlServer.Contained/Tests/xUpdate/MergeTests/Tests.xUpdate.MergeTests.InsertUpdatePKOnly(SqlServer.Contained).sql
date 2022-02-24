@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [PKOnlyTable]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NULL)
 	CREATE TABLE [PKOnlyTable]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[PKOnlyTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [PKOnlyTable]
 (
@@ -25,7 +25,7 @@ VALUES
 (2)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 MERGE INTO [PKOnlyTable] [Target]
 USING (VALUES
@@ -48,7 +48,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[ID]
@@ -58,7 +58,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [PKOnlyTable]
 

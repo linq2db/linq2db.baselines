@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [Issue2434Table]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [Issue2434Table]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -22,7 +22,7 @@ ORDER BY
 	[t1].[FirstName] + N' ' + [t1].[LastName]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue2434Table]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [Issue1189Customer]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [Issue1189Customer]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @DateTime DateTime2
 SET     @DateTime = '2020-02-29T17:54:55.1231234'
 
@@ -22,7 +22,7 @@ FROM
 	[Issue1189Customer] [k_1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1189Customer]
 

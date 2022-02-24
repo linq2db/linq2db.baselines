@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TableToInsert]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
 	CREATE TABLE [TableToInsert]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value_1 NVarChar(4000) -- String
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Value_1 NVarChar(4000) -- String
@@ -52,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DELETE [t]
 FROM
@@ -62,7 +62,7 @@ FROM
 		) [r]([Id]) ON [t].[Id] = [r].[Id]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TableToInsert]
 

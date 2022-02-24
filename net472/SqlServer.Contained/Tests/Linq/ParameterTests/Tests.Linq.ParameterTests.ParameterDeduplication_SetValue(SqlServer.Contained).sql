@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [ParameterDeduplication]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[ParameterDeduplication]', N'U') IS NULL)
 	CREATE TABLE [ParameterDeduplication]
@@ -22,7 +22,7 @@ IF (OBJECT_ID(N'[ParameterDeduplication]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [ParameterDeduplication]
 (
@@ -40,7 +40,7 @@ VALUES
 (2,0,0,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Int1 Int -- Int32
 SET     @Int1 = 2
 DECLARE @Int2 Int -- Int32
@@ -74,7 +74,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Int1 Int -- Int32
 SET     @Int1 = 3
 DECLARE @Int2 Int -- Int32
@@ -108,7 +108,7 @@ WHERE
 	[_].[Id] = @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -125,7 +125,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [ParameterDeduplication]
 
