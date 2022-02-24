@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 1
 DECLARE @ParentID Int -- Int32
@@ -14,7 +14,7 @@ WHERE
 	[c_1].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 2
 DECLARE @ParentID Int -- Int32

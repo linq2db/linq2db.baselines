@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	IIF(([p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0), 1, 0),

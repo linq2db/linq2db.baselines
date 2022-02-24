@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @str_1 NVarChar(4000) -- String
 SET     @str_1 = N'%o~%h%'
 

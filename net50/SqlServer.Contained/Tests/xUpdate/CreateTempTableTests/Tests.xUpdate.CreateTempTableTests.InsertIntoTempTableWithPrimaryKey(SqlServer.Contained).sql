@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [#TableWithPrimaryKey]
 (
@@ -12,7 +12,7 @@ BeforeExecute
 INSERT BULK [#TableWithPrimaryKey](Key)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [#TableWithPrimaryKey]
 

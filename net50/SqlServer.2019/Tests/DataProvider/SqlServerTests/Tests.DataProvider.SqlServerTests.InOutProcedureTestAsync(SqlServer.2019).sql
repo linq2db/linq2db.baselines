@@ -23,5 +23,5 @@ SET     @outputStr = N'OuputStr'
 DECLARE @inputOutputStr VarChar(50) -- AnsiString
 SET     @inputOutputStr = N'InputOutputStr'
 
-[TestData2019]..[OutRefTest]
+[TestData]..[OutRefTest]
 

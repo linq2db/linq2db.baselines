@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -8,12 +8,12 @@ WHERE
 	[t1].[ID] >= 3
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SET IDENTITY_INSERT [AllTypes2] ON
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @p1 hierarchyid -- Udt -- Object
 SET     @p1 = /1/3/
 DECLARE @p2 geography -- Udt -- Object
@@ -99,12 +99,12 @@ VALUES
 (12,'2020-03-09T00:00:00','2020-02-29 18:03:55.1231234 +00:00','2020-03-09T00:00:00','00:00:09',@p28,@p29,@p30)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SET IDENTITY_INSERT [AllTypes2] OFF
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[p].[ID],

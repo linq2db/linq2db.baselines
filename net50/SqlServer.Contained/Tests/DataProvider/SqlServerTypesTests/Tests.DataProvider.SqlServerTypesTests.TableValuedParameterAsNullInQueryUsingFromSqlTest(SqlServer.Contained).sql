@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = NULL
 
