@@ -19,7 +19,7 @@ SET     @MiddleName = N'X'
 DECLARE @Gender NVarChar(4000) -- String
 SET     @Gender = N'M'
 
-[TestData2012]..[Person_Insert]
+[TestData]..[Person_Insert]
 
 BeforeExecute
 -- SqlServer.2012

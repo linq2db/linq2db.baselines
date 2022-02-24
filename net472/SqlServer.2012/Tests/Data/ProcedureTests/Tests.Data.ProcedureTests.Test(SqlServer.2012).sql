@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-[TestData2012]..[Person_SelectByKey]
+[TestData]..[Person_SelectByKey]
 
 BeforeExecute
 -- SqlServer.2012
