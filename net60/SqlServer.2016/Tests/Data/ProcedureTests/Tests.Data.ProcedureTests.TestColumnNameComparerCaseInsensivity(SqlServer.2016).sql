@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-[TestData2016]..[Person_SelectByKeyLowercase]
+[TestData]..[Person_SelectByKeyLowercase]
 
 BeforeExecute
 -- SqlServer.2016
@@ -37,5 +37,5 @@ BeforeExecute
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-[TestData2016]..[Person_SelectByKey]
+[TestData]..[Person_SelectByKey]
 
