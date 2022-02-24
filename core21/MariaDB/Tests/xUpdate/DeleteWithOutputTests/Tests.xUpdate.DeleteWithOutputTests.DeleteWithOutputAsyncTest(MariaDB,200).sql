@@ -60,7 +60,7 @@ RETURNING
 	`TableWithData`.`ValueStr`
 
 BeforeExecute
--- MariaDB MySqlConnector MySql
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TableWithData`
 
