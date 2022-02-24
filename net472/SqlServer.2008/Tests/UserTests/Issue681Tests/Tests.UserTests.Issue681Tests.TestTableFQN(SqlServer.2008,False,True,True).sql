@@ -24,5 +24,5 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[TestData2008].[dbo].[LinqDataTypes] [t1]
+	[TestData].[dbo].[LinqDataTypes] [t1]
 

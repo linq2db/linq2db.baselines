@@ -15,5 +15,5 @@ SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
-	[TestData2008]..[Parent] [t1]
+	[TestData]..[Parent] [t1]
 
