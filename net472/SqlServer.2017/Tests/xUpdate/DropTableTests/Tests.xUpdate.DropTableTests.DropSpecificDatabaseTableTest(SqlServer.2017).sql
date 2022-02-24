@@ -34,7 +34,7 @@ CREATE TABLE [DropTableTest]
 BeforeExecute
 -- SqlServer.2017
 
-INSERT INTO [TestData2017].[dbo].[DropTableTest]
+INSERT INTO [TestData].[dbo].[DropTableTest]
 (
 	[ID]
 )
@@ -49,12 +49,12 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[TestData2017].[dbo].[DropTableTest] [t1]
+	[TestData].[dbo].[DropTableTest] [t1]
 
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [TestData2017].[dbo].[DropTableTest]
+DROP TABLE [TestData].[dbo].[DropTableTest]
 
 BeforeExecute
 -- SqlServer.2017
@@ -62,5 +62,5 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[TestData2017].[dbo].[DropTableTest] [t1]
+	[TestData].[dbo].[DropTableTest] [t1]
 

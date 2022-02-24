@@ -6,6 +6,15 @@ DBCC CHECKIDENT ('Person', RESEED, 4)
 BeforeExecute
 -- SqlServer.2017
 
+DELETE [p]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
+
+BeforeExecute
+-- SqlServer.2017
+
 INSERT INTO [Person]
 (
 	[FirstName],

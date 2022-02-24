@@ -15,5 +15,5 @@ SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
-	[TestData2017].[dbo].[Parent] [t1]
+	[TestData].[dbo].[Parent] [t1]
 

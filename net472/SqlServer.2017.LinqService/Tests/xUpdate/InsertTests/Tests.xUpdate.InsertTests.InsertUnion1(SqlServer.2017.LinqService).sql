@@ -27,8 +27,8 @@ FROM
 			[Child] [c_1]
 		UNION
 		SELECT
-			IIF([c_2].[ParentID] IS NULL, 0, [c_2].[ParentID]) as [ParentID],
-			Floor(Convert(Float, IIF([c_2].[GrandChildID] IS NULL, 0, [c_2].[GrandChildID])) / 100) as [Value1]
+			Coalesce([c_2].[ParentID], 0) as [ParentID],
+			Floor(Convert(Float, Coalesce([c_2].[GrandChildID], 0)) / 100) as [Value1]
 		FROM
 			[GrandChild] [c_2]
 	) [t1]
