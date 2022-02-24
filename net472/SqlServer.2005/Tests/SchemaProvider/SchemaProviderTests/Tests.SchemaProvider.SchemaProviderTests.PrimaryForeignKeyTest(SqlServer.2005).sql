@@ -179,21 +179,12 @@ SELECT
 BeforeExecute
 -- SqlServer.2005
 
-[TestData2005].[dbo].[AddIssue792Record]
+[TestData].[dbo].[AddIssue792Record]
 
 BeforeExecute
 -- SqlServer.2005
 
-[TestData2005].[dbo].[DuplicateColumnNames]
-
-BeforeExecute
--- SqlServer.2005
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output Int -- Int32
-SET     @output = 0
-
-[TestData2005].[dbo].[ExecuteProcIntParameters]
+[TestData].[dbo].[DuplicateColumnNames]
 
 BeforeExecute
 -- SqlServer.2005
@@ -202,22 +193,31 @@ SET     @input = 0
 DECLARE @output Int -- Int32
 SET     @output = 0
 
-[TestData2005].[dbo].[ExecuteProcStringParameters]
+[TestData].[dbo].[ExecuteProcIntParameters]
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+[TestData].[dbo].[ExecuteProcStringParameters]
 
 BeforeExecute
 -- SqlServer.2005
 
-SELECT * FROM [TestData2005].[dbo].[GetParentByID](NULL)
+SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)
 
 BeforeExecute
 -- SqlServer.2005
 
-[TestData2005].[dbo].[Issue1897]
+[TestData].[dbo].[Issue1897]
 
 BeforeExecute
 -- SqlServer.2005
 
-SELECT * FROM [TestData2005].[dbo].[Issue1921]()
+SELECT * FROM [TestData].[dbo].[Issue1921]()
 
 BeforeExecute
 -- SqlServer.2005
@@ -228,7 +228,7 @@ SET     @outputStr = N''
 DECLARE @inputOutputStr VarChar(50) -- AnsiString
 SET     @inputOutputStr = N''
 
-[TestData2005].[dbo].[OutRefEnumTest]
+[TestData].[dbo].[OutRefEnumTest]
 
 BeforeExecute
 -- SqlServer.2005
@@ -245,12 +245,12 @@ SET     @outputStr = N''
 DECLARE @inputOutputStr VarChar(50) -- AnsiString
 SET     @inputOutputStr = N''
 
-[TestData2005].[dbo].[OutRefTest]
+[TestData].[dbo].[OutRefTest]
 
 BeforeExecute
 -- SqlServer.2005
 
-[TestData2005].[dbo].[Patient_SelectAll]
+[TestData].[dbo].[Patient_SelectAll]
 
 BeforeExecute
 -- SqlServer.2005
@@ -259,14 +259,14 @@ SET     @firstName = N''
 DECLARE @lastName NVarChar(50) -- String
 SET     @lastName = N''
 
-[TestData2005].[dbo].[Patient_SelectByName]
+[TestData].[dbo].[Patient_SelectByName]
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
 
-[TestData2005].[dbo].[Person_Delete]
+[TestData].[dbo].[Person_Delete]
 
 BeforeExecute
 -- SqlServer.2005
@@ -279,7 +279,7 @@ SET     @MiddleName = N''
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = char(0)
 
-[TestData2005].[dbo].[Person_Insert]
+[TestData].[dbo].[Person_Insert]
 
 BeforeExecute
 -- SqlServer.2005
@@ -294,26 +294,26 @@ SET     @Gender = char(0)
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
 
-[TestData2005].[dbo].[Person_Insert_OutputParameter]
+[TestData].[dbo].[Person_Insert_OutputParameter]
 
 BeforeExecute
 -- SqlServer.2005
 
-[TestData2005].[dbo].[Person_SelectAll]
+[TestData].[dbo].[Person_SelectAll]
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 0
 
-[TestData2005].[dbo].[Person_SelectByKey]
+[TestData].[dbo].[Person_SelectByKey]
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 0
 
-[TestData2005].[dbo].[Person_SelectByKeyLowercase]
+[TestData].[dbo].[Person_SelectByKeyLowercase]
 
 BeforeExecute
 -- SqlServer.2005
@@ -322,7 +322,7 @@ SET     @firstName = N''
 DECLARE @lastName NVarChar(50) -- String
 SET     @lastName = N''
 
-[TestData2005].[dbo].[Person_SelectByName]
+[TestData].[dbo].[Person_SelectByName]
 
 BeforeExecute
 -- SqlServer.2005
@@ -331,7 +331,7 @@ SET     @firstName = N''
 DECLARE @lastName NVarChar(50) -- String
 SET     @lastName = N''
 
-[TestData2005].[dbo].[Person_SelectListByName]
+[TestData].[dbo].[Person_SelectListByName]
 
 BeforeExecute
 -- SqlServer.2005
@@ -346,14 +346,14 @@ SET     @MiddleName = N''
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = char(0)
 
-[TestData2005].[dbo].[Person_Update]
+[TestData].[dbo].[Person_Update]
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
-[TestData2005].[dbo].[PersonSearch]
+[TestData].[dbo].[PersonSearch]
 
 BeforeExecute
 -- SqlServer.2005
@@ -366,7 +366,7 @@ SET     @output2 = 0
 DECLARE @output3 Int -- Int32
 SET     @output3 = 0
 
-[TestData2005].[dbo].[QueryProcMultipleParameters]
+[TestData].[dbo].[QueryProcMultipleParameters]
 
 BeforeExecute
 -- SqlServer.2005
@@ -377,17 +377,17 @@ SET     @output1 = 0
 DECLARE @output2 Int -- Int32
 SET     @output2 = 0
 
-[TestData2005].[dbo].[QueryProcParameters]
+[TestData].[dbo].[QueryProcParameters]
 
 BeforeExecute
 -- SqlServer.2005
 
-[TestData2005].[dbo].[SelectImplicitColumn]
+[TestData].[dbo].[SelectImplicitColumn]
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
-[TestData2005].[dbo].[VariableResults]
+[TestData].[dbo].[VariableResults]
 

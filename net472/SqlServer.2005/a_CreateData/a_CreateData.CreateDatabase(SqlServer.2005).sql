@@ -570,15 +570,23 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2005 END
 
 -- SKIP SqlServer.2008 BEGIN
+-- SKIP SqlServer.2008.MS BEGIN
 -- SKIP SqlServer.2012 BEGIN
+-- SKIP SqlServer.2012.MS BEGIN
 -- SKIP SqlServer.2014 BEGIN
+-- SKIP SqlServer.2014.MS BEGIN
 -- SKIP SqlServer.2016 BEGIN
+-- SKIP SqlServer.2016.MS BEGIN
 -- SKIP SqlServer.2017 BEGIN
+-- SKIP SqlServer.2017.MS BEGIN
 -- SKIP SqlServer.2019 BEGIN
--- SKIP SqlServer.2019.SA BEGIN
--- SKIP SqlServer.2019.FEC BEGIN
+-- SKIP SqlServer.2019.MS BEGIN
+-- SKIP SqlServer.SA BEGIN
+-- SKIP SqlServer.SA.MS BEGIN
 -- SKIP SqlServer.Contained BEGIN
--- SKIP SqlAzure BEGIN
+-- SKIP SqlServer.Contained.MS BEGIN
+-- SKIP SqlServer.Azure BEGIN
+-- SKIP SqlServer.Azure.MS BEGIN
 	datetime2DataType        varchar(50)       NULL,
 	datetimeoffsetDataType   varchar(50)       NULL,
 	datetimeoffset0DataType  varchar(50)       NULL,
@@ -592,15 +600,23 @@ CREATE TABLE AllTypes
 	dateDataType             varchar(50)       NULL,
 	timeDataType             varchar(50)       NULL
 -- SKIP SqlServer.2008 END
+-- SKIP SqlServer.2008.MS END
 -- SKIP SqlServer.2012 END
+-- SKIP SqlServer.2012.MS END
 -- SKIP SqlServer.2014 END
+-- SKIP SqlServer.2014.MS END
 -- SKIP SqlServer.2016 END
+-- SKIP SqlServer.2016.MS END
 -- SKIP SqlServer.2017 END
+-- SKIP SqlServer.2017.MS END
 -- SKIP SqlServer.2019 END
--- SKIP SqlServer.2019.SA END
--- SKIP SqlServer.2019.FEC END
+-- SKIP SqlServer.2019.MS END
+-- SKIP SqlServer.SA END
+-- SKIP SqlServer.SA.MS END
 -- SKIP SqlServer.Contained END
--- SKIP SqlAzure END
+-- SKIP SqlServer.Contained.MS END
+-- SKIP SqlServer.Azure END
+-- SKIP SqlServer.Azure.MS END
 
 ) ON [PRIMARY]
 
@@ -708,7 +724,8 @@ CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int, _ID INT ID
 BeforeExecute
 -- SqlServer.2005
 
--- SKIP SqlAzure BEGIN
+-- SKIP SqlServer.Azure BEGIN
+-- SKIP SqlServer.Azure.MS BEGIN
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is Parent table' , @level0type=N'SCHEMA', @level0name=N'dbo', @level1type=N'TABLE', @level1name=N'Parent'
 
@@ -720,7 +737,8 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This ChildID c
 BeforeExecute
 -- SqlServer.2005
 
--- SKIP SqlAzure END
+-- SKIP SqlServer.Azure END
+-- SKIP SqlServer.Azure.MS END
 
 
 CREATE FUNCTION GetParentByID(@id int)
@@ -768,15 +786,23 @@ BeforeExecute
 -- SKIP SqlServer.2005 END
 
 -- SKIP SqlServer.2008 BEGIN
+-- SKIP SqlServer.2008.MS BEGIN
 -- SKIP SqlServer.2012 BEGIN
+-- SKIP SqlServer.2012.MS BEGIN
 -- SKIP SqlServer.2014 BEGIN
+-- SKIP SqlServer.2014.MS BEGIN
 -- SKIP SqlServer.2016 BEGIN
+-- SKIP SqlServer.2016.MS BEGIN
 -- SKIP SqlServer.2017 BEGIN
+-- SKIP SqlServer.2017.MS BEGIN
 -- SKIP SqlServer.2019 BEGIN
--- SKIP SqlServer.2019.SA BEGIN
--- SKIP SqlServer.2019.FEC BEGIN
+-- SKIP SqlServer.2019.MS BEGIN
+-- SKIP SqlServer.SA BEGIN
+-- SKIP SqlServer.SA.MS BEGIN
 -- SKIP SqlServer.Contained BEGIN
--- SKIP SqlAzure BEGIN
+-- SKIP SqlServer.Contained.MS BEGIN
+-- SKIP SqlServer.Azure BEGIN
+-- SKIP SqlServer.Azure.MS BEGIN
 CREATE TABLE LinqDataTypes
 (
 	ID             int,
@@ -795,16 +821,24 @@ CREATE TABLE LinqDataTypes
 BeforeExecute
 -- SqlServer.2005
 
--- SKIP SqlAzure END
--- SKIP SqlServer.2012 END
--- SKIP SqlServer.2014 END
--- SKIP SqlServer.2016 END
--- SKIP SqlServer.2017 END
--- SKIP SqlServer.2019 END
--- SKIP SqlServer.2019.SA END
--- SKIP SqlServer.2019.FEC END
--- SKIP SqlServer.Contained END
 -- SKIP SqlServer.2008 END
+-- SKIP SqlServer.2008.MS END
+-- SKIP SqlServer.2012 END
+-- SKIP SqlServer.2012.MS END
+-- SKIP SqlServer.2014 END
+-- SKIP SqlServer.2014.MS END
+-- SKIP SqlServer.2016 END
+-- SKIP SqlServer.2016.MS END
+-- SKIP SqlServer.2017 END
+-- SKIP SqlServer.2017.MS END
+-- SKIP SqlServer.2019 END
+-- SKIP SqlServer.2019.MS END
+-- SKIP SqlServer.SA END
+-- SKIP SqlServer.SA.MS END
+-- SKIP SqlServer.Contained END
+-- SKIP SqlServer.Contained.MS END
+-- SKIP SqlServer.Azure END
+-- SKIP SqlServer.Azure.MS END
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
 BEGIN DROP TABLE TestIdentity END
