@@ -59,7 +59,7 @@ RETURNING
 	[TableWithData].[ValueStr]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [TableWithData]
 
