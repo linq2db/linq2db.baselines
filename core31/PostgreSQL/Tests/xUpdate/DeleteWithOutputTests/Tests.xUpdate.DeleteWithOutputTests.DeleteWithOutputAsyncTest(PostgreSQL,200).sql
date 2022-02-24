@@ -59,7 +59,7 @@ RETURNING
 	s."ValueStr"
 
 BeforeExecute
--- PostgreSQL PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TableWithData"
 
