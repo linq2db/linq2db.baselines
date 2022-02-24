@@ -6,8 +6,8 @@ DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John'
 
 SELECT TOP (@take)
-	[t].[FirstName],
 	[t].[PersonID],
+	[t].[FirstName],
 	[t].[LastName],
 	[t].[MiddleName],
 	[t].[Gender]
@@ -24,8 +24,8 @@ DECLARE @p NVarChar(4000) -- String
 SET     @p = N'Tester'
 
 SELECT TOP (@take)
-	[t].[FirstName],
 	[t].[PersonID],
+	[t].[FirstName],
 	[t].[LastName],
 	[t].[MiddleName],
 	[t].[Gender]
