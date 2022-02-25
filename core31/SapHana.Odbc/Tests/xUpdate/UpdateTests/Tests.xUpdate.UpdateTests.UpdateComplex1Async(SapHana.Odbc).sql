@@ -52,7 +52,7 @@ BeforeExecute
 DELETE FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" LIKE 'UpdateComplex%'
+	"t1"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -83,7 +83,7 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
-SELECT MAX("PersonID") FROM "Person"
+SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -152,5 +152,5 @@ BeforeExecute
 DELETE FROM
 	"Person" "_"
 WHERE
-	"_"."FirstName" LIKE 'UpdateComplex%'
+	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 

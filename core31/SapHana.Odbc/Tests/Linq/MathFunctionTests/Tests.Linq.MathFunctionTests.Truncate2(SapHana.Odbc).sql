@@ -2,14 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t"."c1"
+	Round(Cast((-"p"."MoneyValue") as Double), 0, ROUND_DOWN)
 FROM
-	(
-		SELECT
-			Round(Cast((-"p"."MoneyValue") as Double), 0, ROUND_DOWN) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "p"
 WHERE
-	("t"."c1" IS NULL OR "t"."c1" <> 0.10000000000000001)
+	Round(Cast((-"p"."MoneyValue") as Double), 0, ROUND_DOWN) <> 0.10000000000000001
 

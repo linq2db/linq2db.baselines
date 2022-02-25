@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "OrderByDistinctData"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "OrderByDistinctData"
 (
 	"Id"            Integer       NOT NULL,
@@ -495,7 +500,7 @@ GROUP BY
 	"x"."DuplicateData",
 	"x"."OrderData2"
 ORDER BY
-	Max("x"."OrderData1"),
+	Min("x"."OrderData1"),
 	"x"."OrderData2" DESC
 LIMIT ? OFFSET ?
 

@@ -74,8 +74,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName_1 NVarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName NVarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -113,8 +113,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName_1 NVarChar(25) -- String
-SET     @FirstName_1 = 'UpdateColumnFilterUpdated'
+DECLARE @FirstName NVarChar(25) -- String
+SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @take  -- Int32
 SET     @take = 1
 

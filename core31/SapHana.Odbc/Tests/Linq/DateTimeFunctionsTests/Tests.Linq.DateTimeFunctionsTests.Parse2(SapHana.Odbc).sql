@@ -2,14 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"d"."c1"
+	Cast((Cast(Year("t"."DateTimeValue") as VarChar(11)) || '-02-24 00:00:00') as Timestamp)
 FROM
-	(
-		SELECT
-			Cast((Cast(Year("t"."DateTimeValue") as VarChar(11)) || '-02-24 00:00:00') as Timestamp) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "d"
+	"LinqDataTypes" "t"
 WHERE
-	DayOfMonth("d"."c1") > 0
+	DayOfMonth(Cast((Cast(Year("t"."DateTimeValue") as VarChar(11)) || '-02-24 00:00:00') as Timestamp)) > 0
 

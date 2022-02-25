@@ -2,12 +2,12 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @someValue  -- Int32
 SET     @someValue = 3
-DECLARE @someValue  -- Int32
-SET     @someValue = 3
-DECLARE @someValue  -- Int32
-SET     @someValue = 3
-DECLARE @someValue  -- Int32
-SET     @someValue = 3
+DECLARE @someValue_1  -- Int32
+SET     @someValue_1 = 3
+DECLARE @someValue_2  -- Int32
+SET     @someValue_2 = 3
+DECLARE @someValue_3  -- Int32
+SET     @someValue_3 = 3
 
 SELECT
 	?,

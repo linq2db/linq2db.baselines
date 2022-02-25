@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @ParentID_1  -- Int32
-SET     @ParentID_1 = 1
-DECLARE @p1  -- Int32
-SET     @p1 = 1
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1
+DECLARE @p_1  -- Int32
+SET     @p_1 = 1
 
 SELECT
 	"c_1"."ParentID",
@@ -16,10 +16,10 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @ParentID_1  -- Int32
-SET     @ParentID_1 = 2
-DECLARE @p1  -- Int32
-SET     @p1 = 2
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2
+DECLARE @p_1  -- Int32
+SET     @p_1 = 2
 
 SELECT
 	"c_1"."ParentID",

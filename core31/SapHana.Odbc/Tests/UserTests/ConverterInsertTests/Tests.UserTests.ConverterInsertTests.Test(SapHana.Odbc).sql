@@ -75,7 +75,7 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT MAX("PersonID") FROM "Person"
+SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

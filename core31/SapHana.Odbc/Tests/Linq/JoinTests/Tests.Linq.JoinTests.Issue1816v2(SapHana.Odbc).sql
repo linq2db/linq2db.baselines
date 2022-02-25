@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "stVersions"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "stVersions"
 (
 	"inId"     Integer NOT NULL,
@@ -12,6 +17,11 @@ CREATE COLUMN TABLE "stVersions"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "rlStatesTypesAndUserGroups"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "rlStatesTypesAndUserGroups"
 (
 	"inIdState" Integer NOT NULL,
@@ -19,6 +29,11 @@ CREATE COLUMN TABLE "rlStatesTypesAndUserGroups"
 
 	PRIMARY KEY ("inIdState", "inIdType")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "stMain"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

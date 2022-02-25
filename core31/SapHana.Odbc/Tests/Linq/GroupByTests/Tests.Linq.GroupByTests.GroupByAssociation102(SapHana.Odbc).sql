@@ -10,11 +10,11 @@ FROM
 				SELECT
 					Count(*)
 				FROM
-					"GrandChild" "keyParam"
-						INNER JOIN "Parent" "a_Parent" ON "keyParam"."ParentID" = "a_Parent"."ParentID"
+					"GrandChild" "_"
+						INNER JOIN "Parent" "a_Parent" ON "_"."ParentID" = "a_Parent"."ParentID"
 				WHERE
 					"a_Parent_1"."ParentID" = "a_Parent"."ParentID" AND
-					"keyParam"."ChildID" >= 20
+					"_"."ChildID" >= 20
 			) as "ex",
 			"a_Parent_1"."Value1"
 		FROM

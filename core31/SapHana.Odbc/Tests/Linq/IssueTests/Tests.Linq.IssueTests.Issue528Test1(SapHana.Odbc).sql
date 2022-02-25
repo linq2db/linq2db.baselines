@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
@@ -31,8 +31,8 @@ GROUP BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName_1 NVarChar(6) -- String
-SET     @FirstName_1 = 'Tester'
+DECLARE @FirstName NVarChar(6) -- String
+SET     @FirstName = 'Tester'
 
 SELECT
 	"keyParam"."FirstName",
@@ -47,8 +47,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName_1 NVarChar(4) -- String
-SET     @FirstName_1 = 'Jane'
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'Jane'
 
 SELECT
 	"keyParam"."FirstName",
@@ -63,8 +63,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName_1 NVarChar(6) -- String
-SET     @FirstName_1 = 'Jürgen'
+DECLARE @FirstName NVarChar(6) -- String
+SET     @FirstName = 'Jürgen'
 
 SELECT
 	"keyParam"."FirstName",
@@ -79,8 +79,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName_1 NVarChar(4) -- String
-SET     @FirstName_1 = 'John'
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
 
 SELECT
 	"keyParam"."FirstName",

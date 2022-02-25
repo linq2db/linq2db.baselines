@@ -2,16 +2,16 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."c1",
+	"t1"."n",
 	Sum("t1"."ParentID")
 FROM
 	(
 		SELECT
-			"selectParam"."ChildID" + 1 as "c1",
+			"selectParam"."ChildID" + 1 as "n",
 			"selectParam"."ParentID"
 		FROM
 			"Child" "selectParam"
 	) "t1"
 GROUP BY
-	"t1"."c1"
+	"t1"."n"
 

@@ -45,8 +45,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID_1  -- Int32
-SET     @ID_1 = 1001
+DECLARE @ID  -- Int32
+SET     @ID = 1001
 DECLARE @take  -- Int32
 SET     @take = 2
 

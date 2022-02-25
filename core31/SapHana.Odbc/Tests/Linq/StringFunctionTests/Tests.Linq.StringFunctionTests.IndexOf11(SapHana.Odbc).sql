@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p1  -- Byte
-SET     @p1 = 0
 
 SELECT
 	"p"."FirstName",
@@ -12,9 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CASE
-		WHEN ? = 1 THEN 0
-		ELSE Locate("p"."FirstName", 'oh') - 1
-	END = 1 AND
-	"p"."PersonID" = 1
+	Locate("p"."FirstName", 'oh') = 2 AND "p"."PersonID" = 1
 

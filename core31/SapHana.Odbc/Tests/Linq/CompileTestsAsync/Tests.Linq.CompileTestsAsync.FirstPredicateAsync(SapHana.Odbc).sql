@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "AsyncDataTable"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "AsyncDataTable"
 (
 	"Id" Integer NOT NULL,
@@ -150,8 +155,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @Id_1  -- Int32
-SET     @Id_1 = 2
+DECLARE @Id  -- Int32
+SET     @Id = 2
 DECLARE @take  -- Int32
 SET     @take = 1
 

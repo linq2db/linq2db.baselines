@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "TakeSkipClass"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "TakeSkipClass"
 (
 	"Value" VarChar(10)     NULL
@@ -120,10 +125,10 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take_1  -- Int32
-SET     @take_1 = 1
-DECLARE @skip  -- Int32
-SET     @skip = 3
+DECLARE @skip_2  -- Int32
+SET     @skip_2 = 1
+DECLARE @skip_3  -- Int32
+SET     @skip_3 = 3
 
 SELECT
 	"t1"."Value"

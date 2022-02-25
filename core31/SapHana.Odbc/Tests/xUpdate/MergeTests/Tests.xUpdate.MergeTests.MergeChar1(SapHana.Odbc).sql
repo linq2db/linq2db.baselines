@@ -70,12 +70,12 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT MAX("ID") FROM "AllTypes"
+SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id_1  -- Int32
-SET     @id_1 = 3
+DECLARE @id  -- Int32
+SET     @id = 3
 
 MERGE INTO "AllTypes" "Target"
 USING (

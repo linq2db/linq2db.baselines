@@ -5,7 +5,7 @@ CREATE COLUMN TABLE "test_insert_or_replace"
 (
 	"id"         Integer       NOT NULL,
 	"name"       NVarChar(255)     NULL,
-	"created_by" NVarChar(255) NOT NULL,
+	"created_by" NVarChar(255)     NULL,
 	"updated_by" NVarChar(255)     NULL,
 
 	PRIMARY KEY ("id")

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 5
-DECLARE @skip_1  -- Int32
-SET     @skip_1 = 3
+DECLARE @skip_2  -- Int32
+SET     @skip_2 = 5
+DECLARE @skip_3  -- Int32
+SET     @skip_3 = 3
 
 SELECT
 	"t1"."ParentID",
@@ -16,10 +16,10 @@ LIMIT ? OFFSET ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 5
-DECLARE @skip_1  -- Int32
-SET     @skip_1 = 3
+DECLARE @skip_2  -- Int32
+SET     @skip_2 = 5
+DECLARE @skip_3  -- Int32
+SET     @skip_3 = 3
 
 SELECT
 	"t1"."ParentID",

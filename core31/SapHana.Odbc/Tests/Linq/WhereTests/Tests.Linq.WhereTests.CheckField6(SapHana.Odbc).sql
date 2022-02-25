@@ -2,18 +2,11 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"p_2"."Value1",
-	"p_2"."Value_1",
-	"p_2"."ParentID"
+	"p"."Value1",
+	"p"."Value1" * 100,
+	"p"."ParentID"
 FROM
-	(
-		SELECT
-			"p_1"."ParentID",
-			"p_1"."Value1" * 100 as "Value_1",
-			"p_1"."Value1"
-		FROM
-			"Parent" "p_1"
-	) "p_2"
+	"Parent" "p"
 WHERE
-	"p_2"."ParentID" = 1 AND "p_2"."Value_1" > 0
+	"p"."ParentID" = 1 AND "p"."Value1" * 100 > 0
 

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Contract_Distributor_Agent"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Contract_Distributor_Agent"
 (
 	"Agent_Id"                      Integer       NOT NULL,
@@ -48,6 +53,11 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Agent"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Agent"
 (
 	"Agent_Id"   Integer       NOT NULL,
@@ -76,6 +86,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Distributor"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -112,6 +127,11 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Distributor_Commercial_Propert"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Distributor_Commercial_Propert"
 (
 	"Distributor_Id"         Integer       NOT NULL,
@@ -140,6 +160,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Commercial_Property"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -196,6 +221,11 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Contract_Dates"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Contract_Dates"
 (
 	"Contract_Id"    Integer       NOT NULL,
@@ -224,6 +254,11 @@ VALUES
 	?,
 	?
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Cities"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -267,7 +302,7 @@ SELECT
 		FROM
 			"Cities" "c_1"
 		WHERE
-			("c_1"."City_Code" IS NULL AND "cp"."City_Code" IS NULL OR "c_1"."City_Code" = "cp"."City_Code")
+			("c_1"."City_Code" = "cp"."City_Code" OR "c_1"."City_Code" IS NULL AND "cp"."City_Code" IS NULL)
 	),
 	"cp"."State",
 	"cp"."Zip_Code",

@@ -951,6 +951,21 @@ END
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+
+CALL DROPEXISTINGTABLE('CollatedTable', CURRENT_SCHEMA)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+CREATE COLUMN TABLE "CollatedTable"
+(
+	"Id"				INTEGER NOT NULL,
+	"CaseSensitive"		NVARCHAR(20) NOT NULL,
+	"CaseInsensitive"	NVARCHAR(20) NOT NULL
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 1
 DECLARE @MoneyValue Decimal(3, 2)

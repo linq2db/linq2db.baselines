@@ -40,8 +40,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID_1  -- Int32
-SET     @ParentID_1 = 1001
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
 DECLARE @take  -- Int32
 SET     @take = 2
 

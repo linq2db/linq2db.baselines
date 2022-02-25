@@ -47,8 +47,8 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Array_2 Binary(3)
-SET     @Array_2 = x'010203'
+DECLARE @Array_1 Binary(3)
+SET     @Array_1 = x'010203'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -64,8 +64,8 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Binary_2 Binary(2)
-SET     @Binary_2 = x'0405'
+DECLARE @Binary_1 Binary(2)
+SET     @Binary_1 = x'0405'
 DECLARE @take  -- Int32
 SET     @take = 2
 
