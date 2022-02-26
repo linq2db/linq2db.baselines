@@ -1224,3 +1224,28 @@ SET     @LASTNAME = _utf8 x'4BC3B66E6967'
 					"LastName"  = @LASTNAME
 				WHERE "PersonID" = 4
 
+BeforeExecute
+--  Firebird
+
+DROP TABLE "Animals2"
+
+BeforeExecute
+--  Firebird
+
+DROP TABLE "Animals9"
+
+BeforeExecute
+--  Firebird
+
+DROP TABLE "Eyes4"
+
+BeforeExecute
+--  Firebird
+
+DROP TABLE "xxPatient11"
+
+BeforeExecute
+--  Firebird
+
+DROP TABLE "xxPatient12"
+
