@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [HierarchyTree]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NULL)
 	CREATE TABLE [HierarchyTree]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [HierarchyTree]
 (
@@ -42,7 +42,7 @@ VALUES
 (212,21)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 WITH [CTE_1] ([Id])
 AS
@@ -88,7 +88,7 @@ ORDER BY
 	[t2].[Id]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [HierarchyTree]
 

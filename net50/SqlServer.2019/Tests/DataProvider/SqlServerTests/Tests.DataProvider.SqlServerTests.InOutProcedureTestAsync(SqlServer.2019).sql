@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -9,7 +9,7 @@ FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1234
 DECLARE @outputID Int -- Int32
@@ -23,5 +23,5 @@ SET     @outputStr = N'OuputStr'
 DECLARE @inputOutputStr VarChar(50) -- AnsiString
 SET     @inputOutputStr = N'InputOutputStr'
 
-[TestData2019]..[OutRefTest]
+[TestData]..[OutRefTest]
 

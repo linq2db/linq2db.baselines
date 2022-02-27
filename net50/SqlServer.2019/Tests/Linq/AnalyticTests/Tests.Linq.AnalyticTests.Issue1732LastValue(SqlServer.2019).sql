@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Position]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[Position]', N'U') IS NULL)
 	CREATE TABLE [Position]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[Position]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [Position]
 (
@@ -30,7 +30,7 @@ VALUES
 (7,40,NULL)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @group_1 Int -- Int32
 SET     @group_1 = 7
 
@@ -43,7 +43,7 @@ WHERE
 	[p].[Group] = @group_1
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Position]
 

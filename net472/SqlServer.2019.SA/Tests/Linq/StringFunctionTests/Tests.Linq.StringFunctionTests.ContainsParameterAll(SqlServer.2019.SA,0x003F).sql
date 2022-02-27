@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @s NVarChar(4000) -- String
 SET     @s = N'123?456'
 DECLARE @toTest_1 NVarChar(4000) -- String

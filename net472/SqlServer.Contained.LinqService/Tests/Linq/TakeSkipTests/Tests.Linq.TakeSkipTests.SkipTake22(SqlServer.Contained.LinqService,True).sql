@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @skip_1 Int -- Int32
 SET     @skip_1 = 2
 DECLARE @skip Int -- Int32
@@ -15,7 +15,7 @@ ORDER BY
 OFFSET @skip_1 ROWS FETCH NEXT @skip ROWS ONLY 
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @skip_1 Int -- Int32
 SET     @skip_1 = 2
 DECLARE @skip Int -- Int32

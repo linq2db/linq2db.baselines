@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [WhereWithString]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[WhereWithString]', N'U') IS NULL)
 	CREATE TABLE [WhereWithString]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[WhereWithString]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [WhereWithString]
 (
@@ -27,7 +27,7 @@ VALUES
 (1,N'Str1')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[x].[Id],
@@ -36,7 +36,7 @@ FROM
 	[WhereWithString] [x]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [WhereWithString]
 

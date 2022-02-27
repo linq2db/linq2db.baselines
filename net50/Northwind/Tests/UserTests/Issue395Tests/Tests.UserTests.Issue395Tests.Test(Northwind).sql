@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -52,7 +52,7 @@ GROUP BY
 	[t2].[ShipCountry]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @ShipCountry NVarChar(4000) -- String
 SET     @ShipCountry = N'Argentina'
 
@@ -64,7 +64,7 @@ WHERE
 	[x].[ShipVia] = 1 AND [x].[ShipCountry] = @ShipCountry
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @ShipCountry NVarChar(4000) -- String
 SET     @ShipCountry = N'Argentina'
 
@@ -76,7 +76,7 @@ WHERE
 	[x].[ShipVia] = 2 AND [x].[ShipCountry] = @ShipCountry
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @ShipCountry NVarChar(4000) -- String
 SET     @ShipCountry = N'Argentina'
 

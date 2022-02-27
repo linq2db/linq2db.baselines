@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "xxPatient21"
+DROP TABLE "xxPatient"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "xxPatient21"
+CREATE COLUMN TABLE "xxPatient"
 (
 	"PersonID"  Integer       NOT NULL,
 	"Diagnosis" NVarChar(255)     NULL,
@@ -22,11 +22,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient21"
+	"xxPatient"
 SET
-	"xxPatient21"."Diagnosis" = ?
+	"xxPatient"."Diagnosis" = ?
 WHERE
-	"xxPatient21"."PersonID" = ?
+	"xxPatient"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -35,7 +35,7 @@ SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO "xxPatient21"
+INSERT INTO "xxPatient"
 (
 	"PersonID",
 	"Diagnosis"
@@ -54,11 +54,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient21"
+	"xxPatient"
 SET
-	"xxPatient21"."Diagnosis" = ?
+	"xxPatient"."Diagnosis" = ?
 WHERE
-	"xxPatient21"."PersonID" = ?
+	"xxPatient"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -67,7 +67,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO "xxPatient21"
+INSERT INTO "xxPatient"
 (
 	"PersonID",
 	"Diagnosis"
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient21" "t1"
+	"xxPatient" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -94,11 +94,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient21"
+	"xxPatient"
 SET
-	"xxPatient21"."Diagnosis" = ?
+	"xxPatient"."Diagnosis" = ?
 WHERE
-	"xxPatient21"."PersonID" = ?
+	"xxPatient"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -108,11 +108,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient21"
+	"xxPatient"
 SET
-	"xxPatient21"."Diagnosis" = ?
+	"xxPatient"."Diagnosis" = ?
 WHERE
-	"xxPatient21"."PersonID" = ?
+	"xxPatient"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -120,10 +120,10 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient21" "t1"
+	"xxPatient" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "xxPatient21"
+DROP TABLE "xxPatient"
 

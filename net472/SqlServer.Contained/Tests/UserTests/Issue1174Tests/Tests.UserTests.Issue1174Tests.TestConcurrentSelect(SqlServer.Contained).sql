@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [User]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	CREATE TABLE [User]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[User]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [User]
 (
@@ -28,7 +28,7 @@ VALUES
 ('a948600d-de21-4f74-8ac2-9516b287076e',N'User2')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -39,7 +39,7 @@ FROM
 	[User] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -50,7 +50,7 @@ FROM
 	[User] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [User]
 

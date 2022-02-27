@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ParentID],
@@ -17,7 +17,7 @@ GROUP BY
 	[t1].[Key_1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 DECLARE @ChildID Int -- Int32

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
 	DROP TABLE [ValueConversion]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	CREATE TABLE [ValueConversion]
@@ -25,7 +25,7 @@ IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [ValueConversion]
 (
@@ -53,7 +53,7 @@ VALUES
 (10,NULL,NULL,N'Value1','Value2','Value2','Value2','N','F',NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -70,7 +70,7 @@ FROM
 	[ValueConversion] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t].[Id],
@@ -80,7 +80,7 @@ FROM
 	[ValueConversion] [t]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -97,7 +97,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t].[Id],
@@ -121,7 +121,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -142,7 +142,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
 	DROP TABLE [ValueConversion]

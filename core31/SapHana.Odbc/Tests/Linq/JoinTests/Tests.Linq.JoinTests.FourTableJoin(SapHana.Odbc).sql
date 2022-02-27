@@ -1,13 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-
-BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -16,7 +8,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 DELETE FROM
 	[Child]
@@ -24,7 +16,7 @@ WHERE
 	[Child].[ParentID] >= 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -33,7 +25,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -43,7 +35,7 @@ FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Default SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],
@@ -70,5 +62,5 @@ FROM
 	"Parent" "p"
 		INNER JOIN "Child" "c1" ON "p"."ParentID" = "c1"."ParentID"
 		INNER JOIN "GrandChild" "c2" ON "c1"."ParentID" = "c2"."ParentID"
-		INNER JOIN "GrandChild" "c3" ON ("c2"."ParentID" IS NULL AND "c3"."ParentID" IS NULL OR "c2"."ParentID" = "c3"."ParentID")
+		INNER JOIN "GrandChild" "c3" ON ("c2"."ParentID" = "c3"."ParentID" OR "c2"."ParentID" IS NULL AND "c3"."ParentID" IS NULL)
 

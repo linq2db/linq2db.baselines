@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
@@ -11,7 +11,7 @@ WHERE
 	[c_1].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = -1
 

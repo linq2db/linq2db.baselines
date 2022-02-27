@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[a_Parent1].[ParentID],

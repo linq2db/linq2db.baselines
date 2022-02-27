@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TextData]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[TextData]', N'U') IS NULL)
 	CREATE TABLE [TextData]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[TextData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [TextData]
 (
@@ -28,7 +28,7 @@ VALUES
 (2,N'T2',N'Z2')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'yy'
 DECLARE @id Int -- Int32
@@ -45,7 +45,7 @@ WHERE
 	[_].[Id] >= @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -55,7 +55,7 @@ FROM
 	[TextData] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TextData]
 

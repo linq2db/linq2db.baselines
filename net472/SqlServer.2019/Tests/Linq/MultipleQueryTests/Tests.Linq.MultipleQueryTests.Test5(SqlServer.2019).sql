@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[key_data_result].[ParentID],
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN [Parent] [detail] ON [detail].[ParentID] = [key_data_result].[ParentID]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[a_Parent].[ParentID],

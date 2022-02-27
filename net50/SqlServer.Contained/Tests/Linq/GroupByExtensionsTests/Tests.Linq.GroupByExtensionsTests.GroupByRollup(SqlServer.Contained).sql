@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [GroupSampleClass]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NULL)
 	CREATE TABLE [GroupSampleClass]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [GroupSampleClass]
 (
@@ -36,7 +36,7 @@ VALUES
 (10,1,0)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id1],
@@ -56,7 +56,7 @@ GROUP BY ROLLUP (
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [GroupSampleClass]
 

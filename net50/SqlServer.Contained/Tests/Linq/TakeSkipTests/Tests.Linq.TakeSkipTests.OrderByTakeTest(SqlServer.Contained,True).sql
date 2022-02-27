@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TakeSkipClass]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	CREATE TABLE [TakeSkipClass]
@@ -13,7 +13,7 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [TakeSkipClass]
 (
@@ -26,7 +26,7 @@ VALUES
 ('BOLTO')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -38,7 +38,7 @@ ORDER BY
 	[t1].[Value]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TakeSkipClass]
 

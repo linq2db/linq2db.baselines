@@ -1,13 +1,18 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "SampleClass"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "SampleClass"
 (
 	"Id"     Integer      NOT NULL,
 	"Value1" NVarChar(50)     NULL,
 	"Value2" NVarChar(50)     NULL,
-	"Value3" NVarChar(50)     NULL,
-	"Value4" VarChar(50)      NULL
+	"Value3" VarChar(50)      NULL,
+	"Value4" NVarChar(50)     NULL
 )
 
 BeforeExecute
@@ -18,9 +23,9 @@ DECLARE @Value1 NVarChar(2) -- String
 SET     @Value1 = 'V1'
 DECLARE @Value2 NVarChar(2) -- String
 SET     @Value2 = 'V2'
-DECLARE @Value3 NVarChar -- String
+DECLARE @Value3 VarChar -- AnsiString
 SET     @Value3 = NULL
-DECLARE @Value4 VarChar(2) -- AnsiString
+DECLARE @Value4 NVarChar(2) -- String
 SET     @Value4 = 'V4'
 
 INSERT INTO "SampleClass"
@@ -48,9 +53,9 @@ DECLARE @Value1 NVarChar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarChar(2) -- String
 SET     @Value2 = 'Z2'
-DECLARE @Value3 NVarChar -- String
+DECLARE @Value3 VarChar -- AnsiString
 SET     @Value3 = NULL
-DECLARE @Value4 VarChar -- AnsiString
+DECLARE @Value4 NVarChar -- String
 SET     @Value4 = NULL
 
 INSERT INTO "SampleClass"
@@ -78,9 +83,9 @@ DECLARE @Value1 NVarChar(2) -- String
 SET     @Value1 = 'Z1'
 DECLARE @Value2 NVarChar -- String
 SET     @Value2 = NULL
-DECLARE @Value3 NVarChar -- String
+DECLARE @Value3 VarChar -- AnsiString
 SET     @Value3 = NULL
-DECLARE @Value4 VarChar(2) -- AnsiString
+DECLARE @Value4 NVarChar(2) -- String
 SET     @Value4 = 'Z4'
 
 INSERT INTO "SampleClass"
@@ -104,7 +109,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	STRING_AGG("t1"."Value1", ' -> ' ORDER BY "t1"."Value1", "t1"."Value3" DESC)
+	STRING_AGG("t1"."Value1", ' -> ' ORDER BY "t1"."Value3" DESC, "t1"."Value1")
 FROM
 	"SampleClass" "t1"
 GROUP BY

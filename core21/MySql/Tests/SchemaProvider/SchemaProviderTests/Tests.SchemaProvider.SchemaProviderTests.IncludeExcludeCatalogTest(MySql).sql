@@ -101,7 +101,7 @@ DECLARE @Char1 String(1) -- AnsiStringFixedLength
 SET     @Char1 = NULL
 DECLARE @VarBinary255 Blob(255) -- Binary
 SET     @VarBinary255 = NULL
-DECLARE @Binary255 VarChar(255) -- String
+DECLARE @Binary255 Decimal(255) -- AnsiString
 SET     @Binary255 = NULL
 DECLARE @TinyBlob Blob(255) -- Binary
 SET     @TinyBlob = NULL
@@ -111,13 +111,13 @@ DECLARE @MediumBlob Blob(16777215) -- Binary
 SET     @MediumBlob = NULL
 DECLARE @LongBlob Blob -- Binary
 SET     @LongBlob = NULL
-DECLARE @TinyText VarChar(255) -- String
+DECLARE @TinyText Decimal(255) -- AnsiString
 SET     @TinyText = NULL
-DECLARE @Text VarChar(65535) -- String
+DECLARE @Text Decimal(65535) -- AnsiString
 SET     @Text = NULL
-DECLARE @MediumText VarChar(16777215) -- String
+DECLARE @MediumText Decimal(16777215) -- AnsiString
 SET     @MediumText = NULL
-DECLARE @LongText VarChar -- String
+DECLARE @LongText Decimal -- AnsiString
 SET     @LongText = NULL
 DECLARE @Date DateTime
 SET     @Date = NULL
@@ -127,7 +127,7 @@ DECLARE @TimeStamp DateTime
 SET     @TimeStamp = NULL
 DECLARE @Time Time
 SET     @Time = NULL
-DECLARE @Json VarChar -- String
+DECLARE @Json Decimal -- AnsiString
 SET     @Json = NULL
 DECLARE @TinyInt Byte -- SByte
 SET     @TinyInt = NULL
@@ -175,21 +175,21 @@ DECLARE @Set VarChar(3) -- AnsiString
 SET     @Set = NULL
 DECLARE @Year Int32
 SET     @Year = NULL
-DECLARE @Geometry VarChar -- String
+DECLARE @Geometry Decimal -- AnsiString
 SET     @Geometry = NULL
-DECLARE @Point VarChar -- String
+DECLARE @Point Decimal -- AnsiString
 SET     @Point = NULL
-DECLARE @LineString VarChar -- String
+DECLARE @LineString Decimal -- AnsiString
 SET     @LineString = NULL
-DECLARE @Polygon VarChar -- String
+DECLARE @Polygon Decimal -- AnsiString
 SET     @Polygon = NULL
-DECLARE @MultiPoint VarChar -- String
+DECLARE @MultiPoint Decimal -- AnsiString
 SET     @MultiPoint = NULL
-DECLARE @MultiLineString VarChar -- String
+DECLARE @MultiLineString Decimal -- AnsiString
 SET     @MultiLineString = NULL
-DECLARE @MultiPolygon VarChar -- String
+DECLARE @MultiPolygon Decimal -- AnsiString
 SET     @MultiPolygon = NULL
-DECLARE @GeometryCollection VarChar -- String
+DECLARE @GeometryCollection Decimal -- AnsiString
 SET     @GeometryCollection = NULL
 
 `testdata`.`Issue2313Parameters`
@@ -206,7 +206,7 @@ DECLARE @Char1 String(1) -- AnsiStringFixedLength
 SET     @Char1 = NULL
 DECLARE @VarBinary255 Blob(255) -- Binary
 SET     @VarBinary255 = NULL
-DECLARE @Binary255 VarChar(255) -- String
+DECLARE @Binary255 Decimal(255) -- AnsiString
 SET     @Binary255 = NULL
 DECLARE @TinyBlob Blob(255) -- Binary
 SET     @TinyBlob = NULL
@@ -216,13 +216,13 @@ DECLARE @MediumBlob Blob(16777215) -- Binary
 SET     @MediumBlob = NULL
 DECLARE @LongBlob Blob -- Binary
 SET     @LongBlob = NULL
-DECLARE @TinyText VarChar(255) -- String
+DECLARE @TinyText Decimal(255) -- AnsiString
 SET     @TinyText = NULL
-DECLARE @Text VarChar(65535) -- String
+DECLARE @Text Decimal(65535) -- AnsiString
 SET     @Text = NULL
-DECLARE @MediumText VarChar(16777215) -- String
+DECLARE @MediumText Decimal(16777215) -- AnsiString
 SET     @MediumText = NULL
-DECLARE @LongText VarChar -- String
+DECLARE @LongText Decimal -- AnsiString
 SET     @LongText = NULL
 DECLARE @Date DateTime
 SET     @Date = NULL

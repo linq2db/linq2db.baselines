@@ -15,5 +15,5 @@ BeforeExecute
 SELECT
 	`t1`.`ID`
 FROM
-	`testdata2`.`LinqDataTypes` `t1`
+	`testdataconnector`.`LinqDataTypes` `t1`
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdatedEntities]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	CREATE TABLE [UpdatedEntities]
@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 0
 DECLARE @Value1 Int -- Int32
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @Value1 Int -- Int32
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 DECLARE @Value1 Int -- Int32
@@ -109,7 +109,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 3
 DECLARE @Value1 Int -- Int32
@@ -139,12 +139,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [NewEntities]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[NewEntities]', N'U') IS NULL)
 	CREATE TABLE [NewEntities]
@@ -158,7 +158,7 @@ IF (OBJECT_ID(N'[NewEntities]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 0
 DECLARE @Value1 Int -- Int32
@@ -184,7 +184,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @Value1 Int -- Int32
@@ -210,7 +210,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 DECLARE @Value1 Int -- Int32
@@ -236,7 +236,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 3
 DECLARE @Value1 Int -- Int32
@@ -262,7 +262,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @int2 Int -- Int32
@@ -285,7 +285,7 @@ WHERE
 	[t].[id] <> @someId
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[v].[id],
@@ -296,12 +296,12 @@ FROM
 	[UpdatedEntities] [v]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [NewEntities]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [UpdatedEntities]
 

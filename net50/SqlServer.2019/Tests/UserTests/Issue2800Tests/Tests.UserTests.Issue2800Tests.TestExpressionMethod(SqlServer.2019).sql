@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Car]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[Car]', N'U') IS NULL)
 	CREATE TABLE [Car]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Car]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [Car]
 (
@@ -28,7 +28,7 @@ VALUES
 (2,N'NoSpecial')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[x].[Id],
@@ -37,7 +37,7 @@ FROM
 	[Car] [x]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -46,65 +46,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
-
-SELECT
-	[x].[Id],
-	[x].[Name]
-FROM
-	[Car] [x]
-WHERE
-	([x].[Name] <> N'Special' OR [x].[Name] IS NULL)
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-
-SELECT
-	[x].[Id],
-	[x].[Name]
-FROM
-	[Car] [x]
-WHERE
-	[x].[Name] = N'Special'
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-
-SELECT
-	[x].[Id],
-	[x].[Name]
-FROM
-	[Car] [x]
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[x].[Id],
@@ -115,7 +57,7 @@ WHERE
 	([x].[Name] <> N'Special' OR [x].[Name] IS NULL)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -124,7 +66,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[x].[Id],
@@ -135,7 +77,7 @@ WHERE
 	[x].[Name] = N'Special'
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -144,7 +86,65 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
+
+SELECT
+	[x].[Id],
+	[x].[Name]
+FROM
+	[Car] [x]
+
+BeforeExecute
+-- SqlServer.2019
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SqlServer.2019
+
+SELECT
+	[x].[Id],
+	[x].[Name]
+FROM
+	[Car] [x]
+WHERE
+	([x].[Name] <> N'Special' OR [x].[Name] IS NULL)
+
+BeforeExecute
+-- SqlServer.2019
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SqlServer.2019
+
+SELECT
+	[x].[Id],
+	[x].[Name]
+FROM
+	[Car] [x]
+WHERE
+	[x].[Name] = N'Special'
+
+BeforeExecute
+-- SqlServer.2019
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Car]
 

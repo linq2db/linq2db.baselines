@@ -4,8 +4,8 @@ DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 
 SELECT
-	"t"."FirstName",
 	"t"."PersonID",
+	"t"."FirstName",
 	"t"."LastName",
 	"t"."MiddleName",
 	"t"."Gender"
@@ -21,8 +21,8 @@ DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'
 
 SELECT
-	"t"."FirstName",
 	"t"."PersonID",
+	"t"."FirstName",
 	"t"."LastName",
 	"t"."MiddleName",
 	"t"."Gender"

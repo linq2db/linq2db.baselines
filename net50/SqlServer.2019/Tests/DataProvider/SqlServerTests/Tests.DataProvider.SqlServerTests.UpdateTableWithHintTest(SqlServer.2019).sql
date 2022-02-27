@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 UPDATE
 	[t1]
@@ -9,7 +9,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 UPDATE
 	[t1]

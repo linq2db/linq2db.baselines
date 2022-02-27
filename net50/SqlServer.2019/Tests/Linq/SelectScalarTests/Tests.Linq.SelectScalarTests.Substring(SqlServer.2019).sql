@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @p_1 NVarChar(4000) -- String
 SET     @p_1 = N'23'
 

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[sample_class]', N'U') IS NOT NULL)
 	DROP TABLE [sample_class]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[sample_class]', N'U') IS NULL)
 	CREATE TABLE [sample_class]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[sample_class]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [sample_class]
 (
@@ -45,7 +45,7 @@ VALUES
 (20,N'Str_20')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @startId BigInt -- Int64
 SET     @startId = 1
 DECLARE @endId Int -- Int32
@@ -63,7 +63,7 @@ WHERE
 	[s].[id] > 10
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @startId Int -- Int32
 SET     @startId = 1
 DECLARE @endId Int -- Int32
@@ -78,7 +78,7 @@ WHERE
 	[t].[id] >= @startId AND [t].[id] < @endId AND [t].[id] > 10
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[sample_class]', N'U') IS NOT NULL)
 	DROP TABLE [sample_class]

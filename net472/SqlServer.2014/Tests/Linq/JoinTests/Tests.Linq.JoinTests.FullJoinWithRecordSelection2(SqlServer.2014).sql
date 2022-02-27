@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Fact]', N'U') IS NOT NULL)
 	DROP TABLE [Fact]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Fact]', N'U') IS NULL)
 	CREATE TABLE [Fact]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Fact]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Fact]
 (
@@ -28,13 +28,13 @@ VALUES
 (5)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
 	DROP TABLE [Tag]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Tag]', N'U') IS NULL)
 	CREATE TABLE [Tag]
@@ -47,7 +47,7 @@ IF (OBJECT_ID(N'[Tag]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Tag]
 (
@@ -62,7 +62,7 @@ VALUES
 (4,6,N'Tag6')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[fact_1].[Id],
@@ -76,13 +76,13 @@ WHERE
 	([fact_1].[Id] > 3 OR [leftTag].[FactId] > 3)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Tag]', N'U') IS NOT NULL)
 	DROP TABLE [Tag]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Fact]', N'U') IS NOT NULL)
 	DROP TABLE [Fact]

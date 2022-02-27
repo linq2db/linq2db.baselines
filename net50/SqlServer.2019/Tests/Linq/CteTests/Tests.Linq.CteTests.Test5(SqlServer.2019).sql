@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	Count(*)
@@ -25,7 +25,7 @@ FROM
 		) [c2] ON [p].[ParentID] = [c2].[ParentID]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 WITH [CTE_1] ([ParentID], [ChildID])
 AS

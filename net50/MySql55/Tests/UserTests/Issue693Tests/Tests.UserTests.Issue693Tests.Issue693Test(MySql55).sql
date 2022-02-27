@@ -49,7 +49,7 @@ DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(1) -- String
 SET     @FirstName = 'c'
-DECLARE @MiddleName Decimal -- AnsiString
+DECLARE @MiddleName VarChar -- String
 SET     @MiddleName = NULL
 DECLARE @LastName VarChar(1) -- String
 SET     @LastName = 'd'

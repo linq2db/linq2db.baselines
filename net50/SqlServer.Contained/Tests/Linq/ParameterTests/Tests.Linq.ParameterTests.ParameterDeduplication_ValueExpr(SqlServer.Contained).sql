@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [ParameterDeduplication]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [ParameterDeduplication]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @int1 Int -- Int32
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 DECLARE @int1 Int -- Int32
@@ -100,7 +100,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -117,7 +117,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [ParameterDeduplication]
 

@@ -36,7 +36,7 @@ UPDATE
 SET
 	"Person"."LastName" = Cast((Length(?) + ?) as NVarChar(11))
 WHERE
-	"Person"."FirstName" LIKE 'Update14%'
+	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -46,7 +46,7 @@ SELECT
 FROM
 	"Person" "_"
 WHERE
-	"_"."FirstName" LIKE 'Update14%'
+	"_"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -54,5 +54,5 @@ BeforeExecute
 DELETE FROM
 	"Person" "_"
 WHERE
-	"_"."FirstName" LIKE 'Update14%'
+	"_"."FirstName" LIKE 'Update14%' ESCAPE '~'
 

@@ -5,7 +5,7 @@ CREATE TABLE [test_insert_or_replace]
 (
 	[id]         Int           NOT NULL,
 	[name]       NVarChar(255)     NULL,
-	[created_by] NVarChar(255) NOT NULL,
+	[created_by] NVarChar(255)     NULL,
 	[updated_by] NVarChar(255)     NULL,
 
 	CONSTRAINT [PK_test_insert_or_replace] PRIMARY KEY CLUSTERED ([id])
@@ -23,8 +23,6 @@ DECLARE @Name UniVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @CreatedBy UniVarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER2'
-
-BEGIN TRAN
 
 UPDATE
 	[test_insert_or_replace]
@@ -51,8 +49,6 @@ BEGIN
 		@CreatedBy
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -78,8 +74,6 @@ SET     @Name = 'Test2'
 DECLARE @CreatedBy UniVarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER2'
 
-BEGIN TRAN
-
 UPDATE
 	[test_insert_or_replace]
 SET
@@ -105,8 +99,6 @@ BEGIN
 		@CreatedBy
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

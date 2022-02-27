@@ -47,6 +47,14 @@ BeforeExecute
 ALTER TABLE "Patient" ADD CONSTRAINT "FK_Patient_Person" FOREIGN KEY ("PersonID") REFERENCES "Person" ("PersonID") ON UPDATE CASCADE ON DELETE CASCADE
 
 BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DELETE FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" = 'John' AND "p"."LastName" = 'Shepard'
+
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 INSERT INTO "Person"
@@ -65,7 +73,7 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
-SELECT MAX("PersonID") FROM "Person"
+SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)

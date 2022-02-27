@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 select @@version
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 
 				SELECT
@@ -48,7 +48,7 @@ BeforeExecute
 					) IS NULL
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 
 				SELECT
@@ -68,7 +68,7 @@ BeforeExecute
 					c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 
 				SELECT
@@ -99,7 +99,7 @@ BeforeExecute
 						x.name = 'MS_Description' AND x.class = 1
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 
 				SELECT
@@ -120,7 +120,7 @@ BeforeExecute
 					Ordinal
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -140,7 +140,7 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 1
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -167,7 +167,7 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 2
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [Northwind].[dbo].[CustOrderHist] @CustomerID'
 DECLARE @params NVarChar(4000) -- String
@@ -176,7 +176,7 @@ SET     @params = N'@CustomerID nchar(5)'
 sp_describe_first_result_set
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [Northwind].[dbo].[CustOrdersDetail] @OrderID'
 DECLARE @params NVarChar(4000) -- String
@@ -185,7 +185,7 @@ SET     @params = N'@OrderID int'
 sp_describe_first_result_set
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [Northwind].[dbo].[CustOrdersOrders] @CustomerID'
 DECLARE @params NVarChar(4000) -- String
@@ -194,7 +194,7 @@ SET     @params = N'@CustomerID nchar(5)'
 sp_describe_first_result_set
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [Northwind].[dbo].[Employee Sales by Country] @Beginning_Date, @Ending_Date'
 DECLARE @params NVarChar(4000) -- String
@@ -203,7 +203,7 @@ SET     @params = N'@Beginning_Date datetime, @Ending_Date datetime'
 sp_describe_first_result_set
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [Northwind].[dbo].[Sales by Year] @Beginning_Date, @Ending_Date'
 DECLARE @params NVarChar(4000) -- String
@@ -212,7 +212,7 @@ SET     @params = N'@Beginning_Date datetime, @Ending_Date datetime'
 sp_describe_first_result_set
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [Northwind].[dbo].[SalesByCategory] @CategoryName, @OrdYear'
 DECLARE @params NVarChar(4000) -- String
@@ -221,7 +221,7 @@ SET     @params = N'@CategoryName nvarchar(15), @OrdYear nvarchar(4)'
 sp_describe_first_result_set
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [Northwind].[dbo].[Ten Most Expensive Products] '
 DECLARE @params NVarChar(4000) -- String

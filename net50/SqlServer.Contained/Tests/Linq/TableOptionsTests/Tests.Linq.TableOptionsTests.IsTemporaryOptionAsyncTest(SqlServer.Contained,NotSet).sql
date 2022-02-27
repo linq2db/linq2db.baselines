@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 CREATE TABLE [#temp_table1]
 (
@@ -11,7 +11,7 @@ BeforeExecute
 INSERT ASYNC BULK [#temp_table1](ID, Value)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 CREATE TABLE [#temp_table2]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [#temp_table2]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 INSERT INTO [#temp_table2]
 (
@@ -34,7 +34,7 @@ FROM
 	[#temp_table1] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -43,7 +43,7 @@ FROM
 	[#temp_table1] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -52,7 +52,7 @@ FROM
 	[#temp_table2] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 INSERT INTO [#temp_table1]
 (
@@ -63,7 +63,7 @@ VALUES
 (2,3)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @Value_1 Int -- Int32
@@ -84,22 +84,22 @@ BeforeExecute
 INSERT ASYNC BULK [#temp_table1](ID, Value)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 TRUNCATE TABLE [#temp_table1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017 (asynchronously)
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 TRUNCATE TABLE [#temp_table2]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [#temp_table2]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [#temp_table1]
 

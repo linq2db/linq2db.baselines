@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [Checklist]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [Checklist]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [ChecklistTrigger]
 (
@@ -17,7 +17,7 @@ CREATE TABLE [ChecklistTrigger]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[x_1].[Id],
@@ -81,12 +81,12 @@ WHERE
 	[x_1].[Triggers_1] LIKE N'%H%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [ChecklistTrigger]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Checklist]
 

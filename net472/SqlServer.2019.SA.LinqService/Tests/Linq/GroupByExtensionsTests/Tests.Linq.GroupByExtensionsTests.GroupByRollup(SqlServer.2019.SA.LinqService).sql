@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [GroupSampleClass]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NULL)
 	CREATE TABLE [GroupSampleClass]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[GroupSampleClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 1
 DECLARE @Id2 Int -- Int32
@@ -37,7 +37,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 2
 DECLARE @Id2 Int -- Int32
@@ -59,7 +59,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 3
 DECLARE @Id2 Int -- Int32
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 4
 DECLARE @Id2 Int -- Int32
@@ -103,7 +103,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 5
 DECLARE @Id2 Int -- Int32
@@ -125,7 +125,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 6
 DECLARE @Id2 Int -- Int32
@@ -147,7 +147,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 7
 DECLARE @Id2 Int -- Int32
@@ -169,7 +169,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 8
 DECLARE @Id2 Int -- Int32
@@ -191,7 +191,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 9
 DECLARE @Id2 Int -- Int32
@@ -213,7 +213,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @Id1 Int -- Int32
 SET     @Id1 = 10
 DECLARE @Id2 Int -- Int32
@@ -235,7 +235,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 SELECT
 	[t1].[Id1],
@@ -255,7 +255,7 @@ GROUP BY ROLLUP (
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [GroupSampleClass]
 

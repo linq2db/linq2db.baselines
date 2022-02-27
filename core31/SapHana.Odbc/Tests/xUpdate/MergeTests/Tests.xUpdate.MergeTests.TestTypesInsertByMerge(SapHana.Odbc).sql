@@ -12,24 +12,25 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FieldTime  -- Time
-SET     @FieldTime = 09:44:34.6534321
-DECLARE @FieldTime_1  -- Time
-SET     @FieldTime_1 = 00:44:34.6414321
-DECLARE @FieldTime_2  -- Time
-SET     @FieldTime_2 = 00:00:00
+DECLARE @value  -- Time
+SET     @value = 09:44:34.6534321
+DECLARE @value_1  -- Time
+SET     @value_1 = 00:44:34.6414321
+DECLARE @value_2  -- Time
+SET     @value_2 = 00:00:00
 
 MERGE INTO "TestMerge1" "Target"
-USING (	SELECT 1 "Id", NULL "FieldInt32", NULL "FieldInt64", NULL "FieldBoolean", NULL "FieldString", NULL "FieldNString", NULL "FieldChar", NULL "FieldNChar", NULL "FieldFloat", NULL "FieldDouble", NULL "FieldDateTime", NULL "FieldBinary", NULL "FieldGuid", NULL "FieldDecimal", NULL "FieldDate", NULL "FieldTime", NULL "FieldEnumString", NULL "FieldEnumNumber" FROM DUMMY
+USING (
+	SELECT 1 AS "Id", NULL AS "FieldInt32", NULL AS "FieldInt64", NULL AS "FieldBoolean", NULL AS "FieldString", NULL AS "FieldNString", NULL AS "FieldChar", NULL AS "FieldNChar", NULL AS "FieldFloat", NULL AS "FieldDouble", NULL AS "FieldDateTime", NULL AS "FieldBinary", NULL AS "FieldGuid", NULL AS "FieldDecimal", NULL AS "FieldDate", NULL AS "FieldTime", NULL AS "FieldEnumString", NULL AS "FieldEnumNumber" FROM DUMMY
 	UNION ALL
-	SELECT 2, -2147483647, -9223372036854775807, 1, 'normal strinG', 'всЁ нормально', '*', 'ё', -3.40282E+38, -1.7976931348623157E+308, '2000-11-12 21:14:15.167', x'', '00000000-0000-0000-0000-000000000000', 12345678.9012345678, '2000-11-23', ?, 'FIRST', NULL FROM DUMMY
+	SELECT 2, -2147483647, -9223372036854775807, 1, 'normal strinG', 'всЁ нормально', '*', 'ё', -3.40282002E+38, -1.7976931348623157E+308, '2000-11-12 21:14:15.167', x'', '00000000-0000-0000-0000-000000000000', 12345678.9012345678, '2000-11-23', ?, 'FIRST', NULL FROM DUMMY
 	UNION ALL
 	SELECT 3, 2147483647, 9223372036854775807, 0, 'test
 	', 'ЙЦУКЩывапрм
-q', '&', '>', 3.40282E+38, 1.7976931348623157E+308, '2001-10-12 21:14:15.167', x'000102030004', 'ffffffff-ffff-ffff-ffff-ffffffffffff', -99999999.9999999999, '2123-11-23', ?, '', 0 FROM DUMMY
+q', '&', '>', 3.40282002E+38, 1.7976931348623157E+308, '2001-10-12 21:14:15.167', x'000102030004', 'ffffffff-ffff-ffff-ffff-ffffffffffff', -99999999.9999999999, '2123-11-23', ?, '', 0 FROM DUMMY
 	UNION ALL
 	SELECT 4, -123, 987, NULL, '`~!@#$%^&*()_+{}|[]\', '<>?/.,;''щЩ":', '', '
-', 1.1755E-38, -2.2250738585072014E-308, '2098-10-12 21:14:15.997', x'FFC864321400', 'ffffffff-ffff-ffff-ffff-ffffffffffff', 99999999.9999999999, '3210-11-23', ?, '', 2147483647 FROM DUMMY) "Source"
+', 1.17549996E-38, -2.2250738585072014E-308, '2098-10-12 21:14:15.997', x'FFC864321400', 'ffffffff-ffff-ffff-ffff-ffffffffffff', 99999999.9999999999, '3210-11-23', ?, '', 2147483647 FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
@@ -78,27 +79,28 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FieldTime  -- Time
-SET     @FieldTime = 23:59:59.9999999
-DECLARE @FieldTime_1  -- Time
-SET     @FieldTime_1 = 14:44:33.2340000
-DECLARE @FieldTime  -- Time
-SET     @FieldTime = 23:59:59.9999999
-DECLARE @FieldTime_2  -- Time
-SET     @FieldTime_2 = 22:44:33
+DECLARE @value  -- Time
+SET     @value = 23:59:59.9999999
+DECLARE @value_1  -- Time
+SET     @value_1 = 14:44:33.2340000
+DECLARE @value_2  -- Time
+SET     @value_2 = 23:59:59.9999999
+DECLARE @value_3  -- Time
+SET     @value_3 = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
-USING (	SELECT 3 "Id", -123 "FieldInt32", 987 "FieldInt64", NULL "FieldBoolean", '<>?/.,;''zZ":' "FieldString", '`~!@#$%^&*()_+{}|[]\' "FieldNString", '' "FieldChar", '' "FieldNChar", -1.1755E-38 "FieldFloat", 2.2250738585072014E-308 "FieldDouble", '2098-10-12 21:14:15.907' "FieldDateTime", x'FFC864321400' "FieldBinary", 'ffffffff-ffff-ffff-ffff-ffffffffffff' "FieldGuid", -0.123 "FieldDecimal", '3210-11-23' "FieldDate", ? "FieldTime", NULL "FieldEnumString", -2147483647 "FieldEnumNumber" FROM DUMMY
+USING (
+	SELECT 3 AS "Id", -123 AS "FieldInt32", 987 AS "FieldInt64", NULL AS "FieldBoolean", '<>?/.,;''zZ":' AS "FieldString", '`~!@#$%^&*()_+{}|[]\' AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", -1.17549996E-38 AS "FieldFloat", 2.2250738585072014E-308 AS "FieldDouble", '2098-10-12 21:14:15.907' AS "FieldDateTime", x'FFC864321400' AS "FieldBinary", 'ffffffff-ffff-ffff-ffff-ffffffffffff' AS "FieldGuid", -0.123 AS "FieldDecimal", '3210-11-23' AS "FieldDate", ? AS "FieldTime", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM DUMMY
 	UNION ALL
 	SELECT 4, 2147483647, 9223372036854775807, 0, 'test
 	', 'ЙЦУКЩывапрм
-q', '1', ' ', 3.40282E+38, 1.7976931348623157E+308, '2001-10-12 21:14:15.167', x'000102030004', 'ffffffff-ffff-ffff-ffff-ffffffffffff', -99999999.9999999999, '2123-11-23', ?, '', 0 FROM DUMMY
+q', '1', ' ', 3.40282002E+38, 1.7976931348623157E+308, '2001-10-12 21:14:15.167', x'000102030004', 'ffffffff-ffff-ffff-ffff-ffffffffffff', -99999999.9999999999, '2123-11-23', ?, '', 0 FROM DUMMY
 	UNION ALL
-	SELECT 5, -123, 987, NULL, '<>?/.,;''zZ":', '`~!@#$%^&*()_+{}|[]\', ' ', ' ', -1.1755E-38, 2.2250738585072014E-308, '2098-10-12 21:14:15.913', x'FFC864321400', 'ffffffff-ffff-ffff-ffff-ffffffffffff', -0.123, '3210-11-23', ?, NULL, -2147483647 FROM DUMMY
+	SELECT 5, -123, 987, NULL, '<>?/.,;''zZ":', '`~!@#$%^&*()_+{}|[]\', ' ', ' ', -1.17549996E-38, 2.2250738585072014E-308, '2098-10-12 21:14:15.913', x'FFC864321400', 'ffffffff-ffff-ffff-ffff-ffffffffffff', -0.123, '3210-11-23', ?, NULL, -2147483647 FROM DUMMY
 	UNION ALL
 	SELECT 6, 2147483647, 9223372036854775807, 0, 'test
 	  ', 'ЙЦУКЩывапрм
-q  ', '-', '~', 3.40282E+38, 1.7976931348623157E+308, '2001-10-12 21:14:15.167', x'000102030004', 'ffffffff-ffff-ffff-ffff-ffffffffffff', -99999999.9999999999, '2123-11-23', ?, '', 0 FROM DUMMY) "Source"
+q  ', '-', '~', 3.40282002E+38, 1.7976931348623157E+308, '2001-10-12 21:14:15.167', x'000102030004', 'ffffffff-ffff-ffff-ffff-ffffffffffff', -99999999.9999999999, '2123-11-23', ?, '', 0 FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN

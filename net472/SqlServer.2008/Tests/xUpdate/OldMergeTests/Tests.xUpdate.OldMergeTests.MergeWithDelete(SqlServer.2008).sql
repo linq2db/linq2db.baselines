@@ -88,6 +88,7 @@ VALUES
 	[Source].[BigIntValue],
 	[Source].[StringValue]
 )
+
 WHEN NOT MATCHED BY SOURCE THEN DELETE
 ;
 

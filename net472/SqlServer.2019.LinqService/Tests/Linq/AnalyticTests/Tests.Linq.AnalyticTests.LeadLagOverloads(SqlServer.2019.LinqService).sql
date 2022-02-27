@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1799Table3]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[Issue1799Table3]', N'U') IS NULL)
 	CREATE TABLE [Issue1799Table3]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[Issue1799Table3]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @ProcessID Int -- Int32
 SET     @ProcessID = 1
 DECLARE @ProcessName NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @ProcessID Int -- Int32
 SET     @ProcessID = 2
 DECLARE @ProcessName NVarChar(4000) -- String
@@ -50,7 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @ProcessID Int -- Int32
 SET     @ProcessID = 3
 DECLARE @ProcessName NVarChar(4000) -- String
@@ -68,7 +68,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @ProcessID Int -- Int32
 SET     @ProcessID = 4
 DECLARE @ProcessName NVarChar(4000) -- String
@@ -86,7 +86,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	LEAD([p].[ProcessName], 2) OVER(ORDER BY [p].[ProcessID])
@@ -94,7 +94,7 @@ FROM
 	[Issue1799Table3] [p]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	LEAD([p].[ProcessName]) OVER(ORDER BY [p].[ProcessID])
@@ -102,7 +102,7 @@ FROM
 	[Issue1799Table3] [p]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	LAG([p].[ProcessName], 2) OVER(ORDER BY [p].[ProcessID])
@@ -110,7 +110,7 @@ FROM
 	[Issue1799Table3] [p]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	LAG([p].[ProcessName]) OVER(ORDER BY [p].[ProcessID])
@@ -118,7 +118,7 @@ FROM
 	[Issue1799Table3] [p]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1799Table3]
 

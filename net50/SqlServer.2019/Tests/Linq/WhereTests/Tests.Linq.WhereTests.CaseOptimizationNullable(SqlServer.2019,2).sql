@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [WhereWithString]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[WhereWithString]', N'U') IS NULL)
 	CREATE TABLE [WhereWithString]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[WhereWithString]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [WhereWithString]
 (
@@ -27,7 +27,7 @@ VALUES
 (1,N'Str1')
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @filterValue Int -- Int32
 SET     @filterValue = 2
 
@@ -40,7 +40,7 @@ WHERE
 	[x].[Id] = @filterValue
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [WhereWithString]
 

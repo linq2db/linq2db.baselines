@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName_1 NVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName NVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -94,8 +94,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName_1 NVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @FirstName NVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take  -- Int32
 SET     @take = 1
 

@@ -63,25 +63,25 @@ VALUES
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Components"
+DROP TABLE IF EXISTS components
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "Components"
+CREATE TABLE IF NOT EXISTS components
 (
 	id          text    NOT NULL,
 	category_id text    NOT NULL,
 	service_id  text    NOT NULL,
 	is_deleted  Boolean NOT NULL,
 
-	CONSTRAINT "PK_Components" PRIMARY KEY (id)
+	CONSTRAINT "PK_components" PRIMARY KEY (id)
 )
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-INSERT INTO "Components"
+INSERT INTO components
 (
 	id,
 	category_id,
@@ -106,7 +106,7 @@ SET
 FROM
 	component_categories ctg
 		INNER JOIN element_services ie ON ie.id = ctg.service_id
-		LEFT JOIN "Components" cm ON ctg.id = cm.category_id AND cm.is_deleted = False
+		LEFT JOIN components cm ON ctg.id = cm.category_id AND cm.is_deleted = False
 WHERE
 	ie.id = 'TestProcessService' AND component_categories.id = ctg.id
 
@@ -137,7 +137,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Components"
+DROP TABLE IF EXISTS components
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL

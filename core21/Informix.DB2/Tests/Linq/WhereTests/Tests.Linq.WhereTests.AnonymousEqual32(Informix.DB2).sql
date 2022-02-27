@@ -7,5 +7,5 @@ SELECT
 FROM
 	Child ch
 WHERE
-	2 = ch.ParentID AND 21 = ch.ChildID
+	(2 = ch.ParentID AND 21 = ch.ChildID)
 

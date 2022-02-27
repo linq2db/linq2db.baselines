@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [ReviewIndexes]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [ReviewIndexes]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 MERGE INTO [ReviewIndexes] [Target]
 USING (VALUES
@@ -24,7 +24,7 @@ WHEN NOT MATCHED BY SOURCE THEN DELETE
 ;
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [ReviewIndexes]
 

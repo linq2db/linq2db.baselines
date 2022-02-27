@@ -60,11 +60,11 @@ FROM
 		SELECT
 			(
 				SELECT
-					Sum(`t_1`.`ParentID`)
+					Sum(`t`.`ParentID`)
 				FROM
-					`Child` `t_1`
+					`Child` `t`
 				WHERE
-					`p`.`ParentID` = `t_1`.`ParentID` AND `t_1`.`ParentID` > 0
+					`p`.`ParentID` = `t`.`ParentID` AND `t`.`ParentID` > 0
 			) / 2 as `Sum_1`,
 			`p`.`ParentID`,
 			(

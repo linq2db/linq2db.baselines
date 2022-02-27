@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Local_SelectedValue Int -- Int32
 SET     @Local_SelectedValue = 1
 

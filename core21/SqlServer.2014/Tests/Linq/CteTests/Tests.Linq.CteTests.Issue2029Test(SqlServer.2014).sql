@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [NC_CODE]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [NC_CODE]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [NC_GROUP_MEMBER]
 (
@@ -27,13 +27,13 @@ CREATE TABLE [NC_GROUP_MEMBER]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[NC_GROUP_MEMBER]', N'U') IS NOT NULL)
 	DROP TABLE [NC_GROUP_MEMBER]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[NC_CODE]', N'U') IS NOT NULL)
 	DROP TABLE [NC_CODE]

@@ -63,25 +63,25 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Components`
+DROP TABLE IF EXISTS `components`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE IF NOT EXISTS `Components`
+CREATE TABLE IF NOT EXISTS `components`
 (
 	`id`          VARCHAR(100) NOT NULL,
 	`category_id` VARCHAR(100) NOT NULL,
 	`service_id`  VARCHAR(100) NOT NULL,
 	`is_deleted`  BOOLEAN      NOT NULL,
 
-	CONSTRAINT `PK_Components` PRIMARY KEY CLUSTERED (`id`)
+	CONSTRAINT `PK_components` PRIMARY KEY CLUSTERED (`id`)
 )
 
 BeforeExecute
 -- MySqlConnector MySql
 
-INSERT INTO `Components`
+INSERT INTO `components`
 (
 	`id`,
 	`category_id`,
@@ -102,7 +102,7 @@ SET     @is_deleted = 1
 UPDATE
 	`component_categories` `t1`
 		INNER JOIN `element_services` `ctg` ON `ctg`.`id` = `t1`.`service_id`
-		INNER JOIN `Components` `cm` ON `t1`.`id` = `cm`.`category_id` AND `cm`.`is_deleted` = 0
+		INNER JOIN `components` `cm` ON `t1`.`id` = `cm`.`category_id` AND `cm`.`is_deleted` = 0
 SET
 	`t1`.`is_deleted` = @is_deleted
 WHERE
@@ -135,7 +135,7 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Components`
+DROP TABLE IF EXISTS `components`
 
 BeforeExecute
 -- MySqlConnector MySql

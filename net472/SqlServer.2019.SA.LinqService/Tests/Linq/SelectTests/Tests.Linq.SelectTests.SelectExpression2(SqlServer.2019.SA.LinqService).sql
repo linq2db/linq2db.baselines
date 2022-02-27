@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [SelectExpressionTable]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NULL)
 	CREATE TABLE [SelectExpressionTable]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[SelectExpressionTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -29,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @p_1 UniqueIdentifier -- Guid
@@ -44,7 +44,7 @@ FROM
 	[SelectExpressionTable] [_]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [SelectExpressionTable]
 

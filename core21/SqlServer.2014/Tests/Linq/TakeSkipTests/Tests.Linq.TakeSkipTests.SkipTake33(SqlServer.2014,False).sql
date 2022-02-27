@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @skip_2 Int -- Int32
 SET     @skip_2 = 3
 DECLARE @skip_3 Int -- Int32
@@ -15,7 +15,7 @@ ORDER BY
 OFFSET @skip_2 ROWS FETCH NEXT @skip_3 ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @skip_2 Int -- Int32
 SET     @skip_2 = 3
 DECLARE @skip_3 Int -- Int32

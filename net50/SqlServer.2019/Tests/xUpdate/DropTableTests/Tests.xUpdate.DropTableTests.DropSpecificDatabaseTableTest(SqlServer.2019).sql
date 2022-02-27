@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [DropTableTest]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -14,7 +14,7 @@ FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -24,7 +24,7 @@ FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [DropTableTest]
 (
@@ -32,9 +32,9 @@ CREATE TABLE [DropTableTest]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
-INSERT INTO [TestData2019].[dbo].[DropTableTest]
+INSERT INTO [TestData].[dbo].[DropTableTest]
 (
 	[ID]
 )
@@ -44,23 +44,23 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[ID]
 FROM
-	[TestData2019].[dbo].[DropTableTest] [t1]
+	[TestData].[dbo].[DropTableTest] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
-DROP TABLE [TestData2019].[dbo].[DropTableTest]
+DROP TABLE [TestData].[dbo].[DropTableTest]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[ID]
 FROM
-	[TestData2019].[dbo].[DropTableTest] [t1]
+	[TestData].[dbo].[DropTableTest] [t1]
 

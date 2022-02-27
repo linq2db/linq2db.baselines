@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Update14'
 DECLARE @LastName NVarChar(4000) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @name NVarChar(4000) -- String
 SET     @name = N'Update14'
 DECLARE @idx Int -- Int32
@@ -41,7 +41,7 @@ WHERE
 	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	Count(*)
@@ -51,7 +51,7 @@ WHERE
 	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DELETE [_]
 FROM

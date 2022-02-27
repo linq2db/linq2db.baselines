@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 100500
 DECLARE @MoneyValue Decimal(4, 0)
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @value2 Int -- Int32
 SET     @value2 = 13621
 DECLARE @id Int -- Int32
@@ -65,7 +65,7 @@ WHERE
 	[t1].[ID] = @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @id Int -- Int32
@@ -79,7 +79,7 @@ WHERE
 	[_].[ID] = @id
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 100500
 

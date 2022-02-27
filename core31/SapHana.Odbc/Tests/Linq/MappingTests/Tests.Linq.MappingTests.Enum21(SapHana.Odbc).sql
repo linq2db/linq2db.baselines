@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @gender_1 Char(1) -- AnsiStringFixedLength
-SET     @gender_1 = 'M'
+DECLARE @gender Char(1) -- AnsiStringFixedLength
+SET     @gender = 'M'
 
 SELECT
 	"p"."FirstName",

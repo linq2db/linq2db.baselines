@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TextData]', N'U') IS NOT NULL)
 	DROP TABLE [TextData]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TextData]', N'U') IS NULL)
 	CREATE TABLE [TextData]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[TextData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [TextData]
 (
@@ -29,7 +29,7 @@ VALUES
 (2,N'T2',N'Z2')
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'yy'
 DECLARE @id Int -- Int32
@@ -46,7 +46,7 @@ WHERE
 	[_].[Id] >= @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -56,7 +56,7 @@ FROM
 	[TextData] [t1]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[TextData]', N'U') IS NOT NULL)
 	DROP TABLE [TextData]

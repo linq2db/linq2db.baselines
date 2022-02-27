@@ -31,7 +31,7 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Field1 Decimal -- AnsiString
+DECLARE @Field1 VarChar -- String
 SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`

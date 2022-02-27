@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[element_services]', N'U') IS NOT NULL)
 	DROP TABLE [element_services]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[element_services]', N'U') IS NULL)
 	CREATE TABLE [element_services]
@@ -18,7 +18,7 @@ IF (OBJECT_ID(N'[element_services]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [element_services]
 (
@@ -31,13 +31,13 @@ VALUES
 (N'TestElementService',0,0)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[component_categories]', N'U') IS NOT NULL)
 	DROP TABLE [component_categories]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[component_categories]', N'U') IS NULL)
 	CREATE TABLE [component_categories]
@@ -50,7 +50,7 @@ IF (OBJECT_ID(N'[component_categories]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [component_categories]
 (
@@ -65,13 +65,13 @@ VALUES
 (N'TestElementCategory2',N'TestElementService',0)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Components]', N'U') IS NOT NULL)
 	DROP TABLE [Components]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Components]', N'U') IS NULL)
 	CREATE TABLE [Components]
@@ -85,7 +85,7 @@ IF (OBJECT_ID(N'[Components]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [Components]
 (
@@ -101,7 +101,7 @@ VALUES
 (N'TestElementComponent2',N'TestElementCategory2',N'TestElementService',0)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
@@ -117,7 +117,7 @@ WHERE
 	[ie].[id] = N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[id],
@@ -129,7 +129,7 @@ WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[x].[id],
@@ -141,19 +141,19 @@ WHERE
 	[x].[is_deleted] = 0 AND [x].[service_id] <> N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Components]', N'U') IS NOT NULL)
 	DROP TABLE [Components]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[component_categories]', N'U') IS NOT NULL)
 	DROP TABLE [component_categories]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[element_services]', N'U') IS NOT NULL)
 	DROP TABLE [element_services]

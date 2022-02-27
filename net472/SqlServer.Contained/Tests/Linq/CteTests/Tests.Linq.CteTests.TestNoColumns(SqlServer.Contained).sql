@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	Count(*)
@@ -7,7 +7,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 WITH [CTE1_] ([ParentID], [ChildID])
 AS
@@ -24,7 +24,7 @@ FROM
 	[CTE1_] [t2]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 WITH [CTE1_] ([ChildID])
 AS
@@ -40,7 +40,7 @@ FROM
 	[CTE1_] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 WITH [CTE1_] ([ChildID])
 AS

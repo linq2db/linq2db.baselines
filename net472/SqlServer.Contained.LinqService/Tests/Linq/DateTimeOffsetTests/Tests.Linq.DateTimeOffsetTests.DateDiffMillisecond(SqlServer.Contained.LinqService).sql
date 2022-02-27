@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Transactions]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	CREATE TABLE [Transactions]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 1
 DECLARE @TransactionDate DateTimeOffset
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 2
 DECLARE @TransactionDate DateTimeOffset
@@ -52,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 3
 DECLARE @TransactionDate DateTimeOffset
@@ -70,7 +70,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 4
 DECLARE @TransactionDate DateTimeOffset
@@ -88,7 +88,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 5
 DECLARE @TransactionDate DateTimeOffset
@@ -106,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 6
 DECLARE @TransactionDate DateTimeOffset
@@ -124,7 +124,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 7
 DECLARE @TransactionDate DateTimeOffset
@@ -142,7 +142,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 8
 DECLARE @TransactionDate DateTimeOffset
@@ -160,7 +160,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 9
 DECLARE @TransactionDate DateTimeOffset
@@ -178,7 +178,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 10
 DECLARE @TransactionDate DateTimeOffset
@@ -196,7 +196,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 11
 DECLARE @TransactionDate DateTimeOffset
@@ -214,7 +214,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 12
 DECLARE @TransactionDate DateTimeOffset
@@ -232,7 +232,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 13
 DECLARE @TransactionDate DateTimeOffset
@@ -250,7 +250,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 14
 DECLARE @TransactionDate DateTimeOffset
@@ -268,7 +268,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 15
 DECLARE @TransactionDate DateTimeOffset
@@ -286,7 +286,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 16
 DECLARE @TransactionDate DateTimeOffset
@@ -304,7 +304,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 17
 DECLARE @TransactionDate DateTimeOffset
@@ -322,7 +322,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 18
 DECLARE @TransactionDate DateTimeOffset
@@ -340,7 +340,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 19
 DECLARE @TransactionDate DateTimeOffset
@@ -358,7 +358,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 20
 DECLARE @TransactionDate DateTimeOffset
@@ -376,7 +376,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 21
 DECLARE @TransactionDate DateTimeOffset
@@ -394,7 +394,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 22
 DECLARE @TransactionDate DateTimeOffset
@@ -412,7 +412,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 23
 DECLARE @TransactionDate DateTimeOffset
@@ -430,7 +430,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 24
 DECLARE @TransactionDate DateTimeOffset
@@ -448,7 +448,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 25
 DECLARE @TransactionDate DateTimeOffset
@@ -466,7 +466,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 26
 DECLARE @TransactionDate DateTimeOffset
@@ -484,7 +484,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	DateDiff(millisecond, [t].[TransactionDate], DateAdd(second, 1, [t].[TransactionDate]))
@@ -492,7 +492,7 @@ FROM
 	[Transactions] [t]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Transactions]
 

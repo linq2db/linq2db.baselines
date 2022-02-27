@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [CteChild]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [CteChild]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 WITH [CTE1_] ([ParentID])
 AS
@@ -44,7 +44,7 @@ FROM
 		INNER JOIN [LAST0] [c4_1] ON [c4_1].[ParentID] = [p].[ParentID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[ChildID],
@@ -56,7 +56,7 @@ ORDER BY
 	[t1].[ParentID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[c4].[ChildID],
@@ -71,7 +71,7 @@ ORDER BY
 	[c4].[ParentID]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[CteChild]', N'U') IS NOT NULL)
 	DROP TABLE [CteChild]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @offset_1 Int -- Int32
 SET     @offset_1 = 1
 
@@ -13,7 +13,7 @@ FROM
 		CROSS APPLY GetParentByID(([t].[ParentID] + @offset_1)) [p]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @offset_1 Int -- Int32
 SET     @offset_1 = 1
 

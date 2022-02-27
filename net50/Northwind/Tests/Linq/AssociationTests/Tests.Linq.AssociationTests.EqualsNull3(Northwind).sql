@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[t1].[PhotoPath],
@@ -24,7 +24,7 @@ FROM
 	[Employees] [t1]
 
 BeforeExecute
--- Northwind SqlServer.2017
+-- Northwind SqlServer.2019
 
 SELECT
 	[a_ReportsToEmployee].[PhotoPath],

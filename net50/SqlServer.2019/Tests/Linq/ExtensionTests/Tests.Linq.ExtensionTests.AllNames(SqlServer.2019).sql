@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -9,11 +9,11 @@ FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
-	[TestData2019].[dbo].[Parent] [t1]
+	[TestData].[dbo].[Parent] [t1]
 

@@ -25,7 +25,7 @@ SELECT Cast(NULL as image)
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p NVarChar -- String
+DECLARE @p NVarChar(1) -- String
 SET     @p = X'01'
 
 SELECT @p

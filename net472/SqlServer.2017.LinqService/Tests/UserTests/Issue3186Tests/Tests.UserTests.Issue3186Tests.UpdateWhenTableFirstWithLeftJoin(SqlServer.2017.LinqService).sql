@@ -169,20 +169,20 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE IF EXISTS [components]
+DROP TABLE IF EXISTS [Components]
 
 BeforeExecute
 -- SqlServer.2017
 
-IF (OBJECT_ID(N'[components]', N'U') IS NULL)
-	CREATE TABLE [components]
+IF (OBJECT_ID(N'[Components]', N'U') IS NULL)
+	CREATE TABLE [Components]
 	(
 		[id]          NVarChar(100) NOT NULL,
 		[category_id] NVarChar(100) NOT NULL,
 		[service_id]  NVarChar(100) NOT NULL,
 		[is_deleted]  Bit           NOT NULL,
 
-		CONSTRAINT [PK_components] PRIMARY KEY CLUSTERED ([id])
+		CONSTRAINT [PK_Components] PRIMARY KEY CLUSTERED ([id])
 	)
 
 BeforeExecute
@@ -196,7 +196,7 @@ SET     @service_id = N'TestProcessService'
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 0
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -222,7 +222,7 @@ SET     @service_id = N'TestProcessService'
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 0
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -248,7 +248,7 @@ SET     @service_id = N'TestElementService'
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 0
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -274,7 +274,7 @@ SET     @service_id = N'TestElementService'
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 0
 
-INSERT INTO [components]
+INSERT INTO [Components]
 (
 	[id],
 	[category_id],
@@ -301,7 +301,7 @@ SET
 FROM
 	[component_categories] [ctg]
 		INNER JOIN [element_services] [ie] ON [ie].[id] = [ctg].[service_id]
-		LEFT JOIN [components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
+		LEFT JOIN [Components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
 WHERE
 	[ie].[id] = N'TestProcessService'
 
@@ -332,7 +332,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE IF EXISTS [components]
+DROP TABLE IF EXISTS [Components]
 
 BeforeExecute
 -- SqlServer.2017

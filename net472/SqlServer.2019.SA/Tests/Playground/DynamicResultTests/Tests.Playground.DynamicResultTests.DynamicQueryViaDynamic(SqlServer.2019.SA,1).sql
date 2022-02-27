@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [RawDynamicData]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[RawDynamicData]', N'U') IS NULL)
 	CREATE TABLE [RawDynamicData]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[RawDynamicData]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 INSERT INTO [RawDynamicData]
 (
@@ -48,14 +48,14 @@ VALUES
 (20,40,2000,4000)
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 1
 
 select * from RawDynamicData where AId >= @param
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [RawDynamicData]
 

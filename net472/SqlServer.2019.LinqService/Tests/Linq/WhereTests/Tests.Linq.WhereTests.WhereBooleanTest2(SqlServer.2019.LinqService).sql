@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [WhereCases]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[WhereCases]', N'U') IS NULL)
 	CREATE TABLE [WhereCases]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[WhereCases]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @BoolValue Bit -- Boolean
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @BoolValue Bit -- Boolean
@@ -61,7 +61,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @BoolValue Bit -- Boolean
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @BoolValue Bit -- Boolean
@@ -105,7 +105,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @BoolValue Bit -- Boolean
@@ -127,7 +127,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 11
 DECLARE @BoolValue Bit -- Boolean
@@ -149,7 +149,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 12
 DECLARE @BoolValue Bit -- Boolean
@@ -171,7 +171,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 13
 DECLARE @BoolValue Bit -- Boolean
@@ -193,7 +193,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 14
 DECLARE @BoolValue Bit -- Boolean
@@ -215,7 +215,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 15
 DECLARE @BoolValue Bit -- Boolean
@@ -237,7 +237,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -247,7 +247,7 @@ FROM
 	[WhereCases] [t1]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -259,7 +259,7 @@ WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -271,7 +271,7 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -283,7 +283,7 @@ WHERE
 	[t].[BoolValue] = 1 AND [t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -295,7 +295,7 @@ WHERE
 	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -307,7 +307,7 @@ WHERE
 	[t].[BoolValue] = 1 AND [t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -319,7 +319,7 @@ WHERE
 	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -331,7 +331,7 @@ WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -343,7 +343,7 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -355,7 +355,7 @@ WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -367,7 +367,7 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -380,7 +380,7 @@ WHERE
 	[t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -392,7 +392,7 @@ WHERE
 	NOT (([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -405,7 +405,7 @@ WHERE
 	[t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -417,7 +417,7 @@ WHERE
 	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -430,7 +430,7 @@ WHERE
 	[t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -442,7 +442,7 @@ WHERE
 	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -454,7 +454,7 @@ WHERE
 	[t].[NullableBoolValue] IS NULL AND [t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -466,7 +466,7 @@ WHERE
 	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -478,7 +478,7 @@ WHERE
 	[t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -490,7 +490,7 @@ WHERE
 	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -502,7 +502,7 @@ WHERE
 	[t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -514,7 +514,7 @@ WHERE
 	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -526,7 +526,7 @@ WHERE
 	[t].[NullableBoolValue] IS NULL AND [t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -538,7 +538,7 @@ WHERE
 	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -551,7 +551,7 @@ WHERE
 	[t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -563,7 +563,7 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -576,7 +576,7 @@ WHERE
 	[t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -588,7 +588,7 @@ WHERE
 	NOT (NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -603,7 +603,7 @@ WHERE
 	[t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -615,7 +615,7 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -628,7 +628,7 @@ WHERE
 	[t].[Id] > 0
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -640,7 +640,7 @@ WHERE
 	NOT (NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [WhereCases]
 

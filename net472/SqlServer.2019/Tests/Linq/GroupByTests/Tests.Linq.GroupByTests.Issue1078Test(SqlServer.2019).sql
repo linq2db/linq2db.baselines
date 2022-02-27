@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1078Table]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[Issue1078Table]', N'U') IS NULL)
 	CREATE TABLE [Issue1078Table]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Issue1078Table]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 INSERT INTO [Issue1078Table]
 (
@@ -37,7 +37,7 @@ VALUES
 (9,4,1)
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 SELECT
 	[t1].[SiteID],
@@ -56,7 +56,7 @@ GROUP BY
 	[t1].[SiteID]
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1078Table]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Adsl]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [Adsl]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Client]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [Client]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[adsl_1].[Id]
@@ -29,13 +29,13 @@ FROM
 		INNER JOIN [Client] [client_1] ON [adsl_1].[IdClient] = [client_1].[Id]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Client]', N'U') IS NOT NULL)
 	DROP TABLE [Client]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Adsl]', N'U') IS NOT NULL)
 	DROP TABLE [Adsl]

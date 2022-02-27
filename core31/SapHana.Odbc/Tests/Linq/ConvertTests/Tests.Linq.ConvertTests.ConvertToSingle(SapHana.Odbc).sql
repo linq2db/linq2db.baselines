@@ -2,14 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"p"."c1"
+	Cast("t"."MoneyValue" as Real)
 FROM
-	(
-		SELECT
-			Cast("t"."MoneyValue" as Real) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "t"
 WHERE
-	"p"."c1" > 0
+	Cast("t"."MoneyValue" as Real) > 0
 

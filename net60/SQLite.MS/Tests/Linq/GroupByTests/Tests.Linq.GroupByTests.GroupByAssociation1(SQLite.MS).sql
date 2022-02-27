@@ -2,16 +2,6 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
-	[t1].[GrandChildID]
-FROM
-	[GrandChild] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
 	[a_Parent].[Value1]
 FROM
 	[GrandChild] [t1]

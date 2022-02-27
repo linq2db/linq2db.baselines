@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @str_1 VarChar(4) -- String
-SET     @str_1 = '%oh%'
+DECLARE @str VarChar(2) -- String
+SET     @str = 'oh'
 
 SELECT
 	`p`.`FirstName`,
@@ -12,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` LIKE @str_1 ESCAPE '~' AND `p`.`PersonID` = 1
+	LOCATE(@str, `p`.`FirstName`) > 0 AND `p`.`PersonID` = 1
 

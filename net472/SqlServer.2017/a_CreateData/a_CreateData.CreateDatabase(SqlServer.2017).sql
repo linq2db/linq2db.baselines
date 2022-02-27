@@ -568,6 +568,7 @@ CREATE TABLE AllTypes
 	xmlDataType              xml               NULL,
 
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 	datetime2DataType        datetime2         NULL,
 	datetimeoffsetDataType   datetimeoffset    NULL,
 	datetimeoffset0DataType  datetimeoffset(0) NULL,
@@ -580,18 +581,27 @@ CREATE TABLE AllTypes
 	datetimeoffset7DataType  datetimeoffset(7) NULL,
 	dateDataType             date              NULL,
 	timeDataType             time              NULL
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 
 -- SKIP SqlServer.2008 BEGIN
+-- SKIP SqlServer.2008.MS BEGIN
 -- SKIP SqlServer.2012 BEGIN
+-- SKIP SqlServer.2012.MS BEGIN
 -- SKIP SqlServer.2014 BEGIN
+-- SKIP SqlServer.2014.MS BEGIN
 -- SKIP SqlServer.2016 BEGIN
+-- SKIP SqlServer.2016.MS BEGIN
 -- SKIP SqlServer.2017 END
+-- SKIP SqlServer.2017.MS END
 -- SKIP SqlServer.2019 END
--- SKIP SqlServer.2019.SA END
--- SKIP SqlServer.2019.FEC END
+-- SKIP SqlServer.2019.MS END
+-- SKIP SqlServer.SA END
+-- SKIP SqlServer.SA.MS END
 -- SKIP SqlServer.Contained END
--- SKIP SqlAzure END
+-- SKIP SqlServer.Contained.MS END
+-- SKIP SqlServer.Azure END
+-- SKIP SqlServer.Azure.MS END
 
 ) ON [PRIMARY]
 
@@ -639,6 +649,7 @@ BeforeExecute
 -- SqlServer.2017
 
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('AllTypes2') AND type in (N'U'))
 BEGIN DROP TABLE AllTypes2 END
 
@@ -678,6 +689,7 @@ SELECT
 BeforeExecute
 -- SqlServer.2017
 
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 
 
@@ -739,7 +751,8 @@ CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int, _ID INT ID
 BeforeExecute
 -- SqlServer.2017
 
--- SKIP SqlAzure BEGIN
+-- SKIP SqlServer.Azure BEGIN
+-- SKIP SqlServer.Azure.MS BEGIN
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is Parent table' , @level0type=N'SCHEMA', @level0name=N'dbo', @level1type=N'TABLE', @level1name=N'Parent'
 
@@ -751,7 +764,8 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This ChildID c
 BeforeExecute
 -- SqlServer.2017
 
--- SKIP SqlAzure END
+-- SKIP SqlServer.Azure END
+-- SKIP SqlServer.Azure.MS END
 
 
 CREATE FUNCTION GetParentByID(@id int)
@@ -797,6 +811,7 @@ BeforeExecute
 -- SqlServer.2017
 
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 CREATE TABLE LinqDataTypes
 (
 	_ID            int IDENTITY PRIMARY KEY,
@@ -816,18 +831,27 @@ CREATE TABLE LinqDataTypes
 BeforeExecute
 -- SqlServer.2017
 
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 
 -- SKIP SqlServer.2008 BEGIN
+-- SKIP SqlServer.2008.MS BEGIN
 -- SKIP SqlServer.2012 BEGIN
+-- SKIP SqlServer.2012.MS BEGIN
 -- SKIP SqlServer.2014 BEGIN
+-- SKIP SqlServer.2014.MS BEGIN
 -- SKIP SqlServer.2016 BEGIN
+-- SKIP SqlServer.2016.MS BEGIN
 -- SKIP SqlServer.2017 END
+-- SKIP SqlServer.2017.MS END
 -- SKIP SqlServer.2019 END
--- SKIP SqlServer.2019.SA END
--- SKIP SqlServer.2019.FEC END
+-- SKIP SqlServer.2019.MS END
+-- SKIP SqlServer.SA END
+-- SKIP SqlServer.SA.MS END
 -- SKIP SqlServer.Contained END
--- SKIP SqlServer.2008 END
+-- SKIP SqlServer.Contained.MS END
+-- SKIP SqlServer.Azure END
+-- SKIP SqlServer.Azure.MS END
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
 BEGIN DROP TABLE TestIdentity END
@@ -990,6 +1014,7 @@ BeforeExecute
 -- SqlServer.2017
 
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'SqlTypes')
 BEGIN DROP TABLE [SqlTypes] END
@@ -1019,6 +1044,7 @@ SELECT 8, hierarchyid::Parse('/2/1/1/')
 BeforeExecute
 -- SqlServer.2017
 
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 
 
@@ -1060,14 +1086,18 @@ CREATE TABLE TestMerge1
 	FieldDouble     FLOAT(53)         NULL,
 	FieldDateTime   DATETIME          NULL,
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 	FieldDateTime2  DATETIMEOFFSET(7) NULL,
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 	FieldBinary     VARBINARY(20)     NULL,
 	FieldGuid       UNIQUEIDENTIFIER  NULL,
 	FieldDecimal    DECIMAL(24, 10)   NULL,
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 	FieldDate       DATE              NULL,
 	FieldTime       TIME(7)           NULL,
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 	FieldEnumString VARCHAR(20)       NULL,
 	FieldEnumNumber INT               NULL
@@ -1095,14 +1125,18 @@ CREATE TABLE TestMerge2
 	FieldDouble     FLOAT(53)         NULL,
 	FieldDateTime   DATETIME          NULL,
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 	FieldDateTime2  DATETIMEOFFSET(7) NULL,
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 	FieldBinary     VARBINARY(20)     NULL,
 	FieldGuid       UNIQUEIDENTIFIER  NULL,
 	FieldDecimal    DECIMAL(24, 10)   NULL,
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 	FieldDate       DATE              NULL,
 	FieldTime       TIME(7)           NULL,
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 	FieldEnumString VARCHAR(20)       NULL,
 	FieldEnumNumber INT               NULL
@@ -1269,6 +1303,7 @@ BeforeExecute
 -- SqlServer.2017
 
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.Issue1115') AND type in (N'U'))
 BEGIN DROP TABLE dbo.Issue1115 END
 
@@ -1316,6 +1351,7 @@ END
 BeforeExecute
 -- SqlServer.2017
 
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 CREATE PROCEDURE TestSchema.TestProcedure
 AS

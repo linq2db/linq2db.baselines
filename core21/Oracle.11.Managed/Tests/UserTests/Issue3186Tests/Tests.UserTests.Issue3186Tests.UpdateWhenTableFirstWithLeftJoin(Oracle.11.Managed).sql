@@ -86,7 +86,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Components"';
+	EXECUTE IMMEDIATE 'DROP TABLE "components"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -99,14 +99,14 @@ BeforeExecute
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "Components"
+		CREATE TABLE "components"
 		(
 			"id"          VarChar(100) NOT NULL,
 			"category_id" VarChar(100) NOT NULL,
 			"service_id"  VarChar(100) NOT NULL,
 			"is_deleted"  Char(1)      NOT NULL,
 
-			CONSTRAINT "PK_Components" PRIMARY KEY ("id")
+			CONSTRAINT "PK_components" PRIMARY KEY ("id")
 		)
 	';
 EXCEPTION
@@ -120,10 +120,10 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO "Components" ("id", "category_id", "service_id", "is_deleted") VALUES ('TestProcessComponent1','TestProcessCategory1','TestProcessService',0)
-	INTO "Components" ("id", "category_id", "service_id", "is_deleted") VALUES ('TestProcessComponent2','TestProcessCategory2','TestProcessService',0)
-	INTO "Components" ("id", "category_id", "service_id", "is_deleted") VALUES ('TestElementComponent1','TestElementCategory1','TestElementService',0)
-	INTO "Components" ("id", "category_id", "service_id", "is_deleted") VALUES ('TestElementComponent2','TestElementCategory2','TestElementService',0)
+	INTO "components" ("id", "category_id", "service_id", "is_deleted") VALUES ('TestProcessComponent1','TestProcessCategory1','TestProcessService',0)
+	INTO "components" ("id", "category_id", "service_id", "is_deleted") VALUES ('TestProcessComponent2','TestProcessCategory2','TestProcessService',0)
+	INTO "components" ("id", "category_id", "service_id", "is_deleted") VALUES ('TestElementComponent1','TestElementCategory1','TestElementService',0)
+	INTO "components" ("id", "category_id", "service_id", "is_deleted") VALUES ('TestElementComponent2','TestElementCategory2','TestElementService',0)
 SELECT * FROM dual
 
 BeforeExecute
@@ -142,7 +142,7 @@ WHERE
 		FROM
 			"component_categories" ctg
 				INNER JOIN "element_services" ie ON ie."id" = ctg."service_id"
-				LEFT JOIN "Components" cm ON ctg."id" = cm."category_id" AND cm."is_deleted" = 0
+				LEFT JOIN "components" cm ON ctg."id" = cm."category_id" AND cm."is_deleted" = 0
 		WHERE
 			ie."id" = 'TestProcessService' AND "component_categories"."id" = ctg."id"
 	)
@@ -175,7 +175,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Components"';
+	EXECUTE IMMEDIATE 'DROP TABLE "components"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

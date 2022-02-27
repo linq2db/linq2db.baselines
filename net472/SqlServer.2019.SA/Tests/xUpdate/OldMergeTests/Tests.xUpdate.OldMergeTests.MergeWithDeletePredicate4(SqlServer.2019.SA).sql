@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -10,7 +10,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @patient Int -- Int32
 SET     @patient = 2
 
@@ -71,7 +71,7 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 ;
 
 BeforeExecute
--- SqlServer.2019.SA SqlServer.2017
+-- SqlServer.2019.SA SqlServer.2019
 DECLARE @patient Int -- Int32
 SET     @patient = 3
 

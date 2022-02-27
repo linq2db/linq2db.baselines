@@ -15,5 +15,5 @@ BeforeExecute
 SELECT
 	"t1"."ID"
 FROM
-	"LINKED_DB"."TESTHANAODBC"."LinqDataTypes" "t1"
+	"LINKED_DB"."TESTDB"."LinqDataTypes" "t1"
 

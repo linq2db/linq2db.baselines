@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[MainTable]', N'U') IS NOT NULL)
 	DROP TABLE [MainTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[MainTable]', N'U') IS NULL)
 	CREATE TABLE [MainTable]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[MainTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Field NVarChar(4000) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Field NVarChar(4000) -- String
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Field NVarChar(4000) -- String
@@ -69,13 +69,13 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NOT NULL)
 	DROP TABLE [AssociatedTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NULL)
 	CREATE TABLE [AssociatedTable]
@@ -84,7 +84,7 @@ IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -98,7 +98,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 
@@ -112,7 +112,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -127,7 +127,7 @@ WHERE
 	[pat].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -138,13 +138,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NOT NULL)
 	DROP TABLE [AssociatedTable]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[MainTable]', N'U') IS NOT NULL)
 	DROP TABLE [MainTable]

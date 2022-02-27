@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[StLink]', N'U') IS NOT NULL)
 	DROP TABLE [StLink]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[StLink]', N'U') IS NULL)
 	CREATE TABLE [StLink]
@@ -18,7 +18,7 @@ IF (OBJECT_ID(N'[StLink]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [StLink]
 (
@@ -31,13 +31,13 @@ VALUES
 (2,NULL,NULL)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EdtLink]', N'U') IS NOT NULL)
 	DROP TABLE [EdtLink]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EdtLink]', N'U') IS NULL)
 	CREATE TABLE [EdtLink]
@@ -50,7 +50,7 @@ IF (OBJECT_ID(N'[EdtLink]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 INSERT INTO [EdtLink]
 (
@@ -62,7 +62,7 @@ VALUES
 (2,4,3)
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -77,7 +77,7 @@ WHERE
 	[x].[InId] = 1
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -92,13 +92,13 @@ WHERE
 	[x].[InId] = 2
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[EdtLink]', N'U') IS NOT NULL)
 	DROP TABLE [EdtLink]
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[StLink]', N'U') IS NOT NULL)
 	DROP TABLE [StLink]

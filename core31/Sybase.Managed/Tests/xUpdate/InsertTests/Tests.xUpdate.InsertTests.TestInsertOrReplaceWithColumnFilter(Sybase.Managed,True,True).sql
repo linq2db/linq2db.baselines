@@ -28,8 +28,6 @@ SET     @LastName = 'whatever'
 DECLARE @MiddleName UniVarChar(15) -- String
 SET     @MiddleName = 'som middle name'
 
-BEGIN TRAN
-
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
@@ -58,8 +56,6 @@ BEGIN
 		@MiddleName
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -93,8 +89,6 @@ SET     @LastName = 'whatever'
 DECLARE @MiddleName UniVarChar(12) -- String
 SET     @MiddleName = 'updated name'
 
-BEGIN TRAN
-
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
@@ -123,8 +117,6 @@ BEGIN
 		@MiddleName
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase

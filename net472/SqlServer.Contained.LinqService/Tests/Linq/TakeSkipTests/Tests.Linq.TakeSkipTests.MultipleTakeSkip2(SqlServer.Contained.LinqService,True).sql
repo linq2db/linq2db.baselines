@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TakeSkipClass]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	CREATE TABLE [TakeSkipClass]
@@ -13,7 +13,7 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value1'
 
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value2'
 
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value3'
 
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value4'
 
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value5'
 
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value6'
 
@@ -97,7 +97,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value7'
 
@@ -111,7 +111,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Value_1 VarChar(10) -- AnsiString
 SET     @Value_1 = N'Value8'
 
@@ -125,7 +125,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 3
 DECLARE @take_1 Int -- Int32
@@ -140,7 +140,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take_1 ROWS ONLY 
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TakeSkipClass]
 

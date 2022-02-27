@@ -67,27 +67,27 @@ VALUES
 BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[Components]', N'U') IS NOT NULL)
-	DROP TABLE [Components]
+IF (OBJECT_ID(N'[components]', N'U') IS NOT NULL)
+	DROP TABLE [components]
 
 BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[Components]', N'U') IS NULL)
-	CREATE TABLE [Components]
+IF (OBJECT_ID(N'[components]', N'U') IS NULL)
+	CREATE TABLE [components]
 	(
 		[id]          NVarChar(100) NOT NULL,
 		[category_id] NVarChar(100) NOT NULL,
 		[service_id]  NVarChar(100) NOT NULL,
 		[is_deleted]  Bit           NOT NULL,
 
-		CONSTRAINT [PK_Components] PRIMARY KEY CLUSTERED ([id])
+		CONSTRAINT [PK_components] PRIMARY KEY CLUSTERED ([id])
 	)
 
 BeforeExecute
 -- SqlServer.2012
 
-INSERT INTO [Components]
+INSERT INTO [components]
 (
 	[id],
 	[category_id],
@@ -112,7 +112,7 @@ SET
 FROM
 	[component_categories] [ctg]
 		INNER JOIN [element_services] [ie] ON [ie].[id] = [ctg].[service_id]
-		LEFT JOIN [Components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
+		LEFT JOIN [components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
 WHERE
 	[ie].[id] = N'TestProcessService'
 
@@ -143,8 +143,8 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[Components]', N'U') IS NOT NULL)
-	DROP TABLE [Components]
+IF (OBJECT_ID(N'[components]', N'U') IS NOT NULL)
+	DROP TABLE [components]
 
 BeforeExecute
 -- SqlServer.2012

@@ -8,7 +8,7 @@ SELECT
 	"t1"."MiddleName",
 	"t1"."Gender",
 	"t1"."AsSqlFullName",
-	"t1"."cnt"
+	"t1"."DoctorCount"
 FROM
 	"Doctor" "cp"
 		INNER JOIN (
@@ -26,7 +26,7 @@ FROM
 						"Doctor" "d"
 					WHERE
 						"d"."PersonID" = "c_1"."PersonID"
-				) as "cnt"
+				) as "DoctorCount"
 			FROM
 				"Person" "c_1"
 		) "t1" ON "cp"."PersonID" = "t1"."PersonID"

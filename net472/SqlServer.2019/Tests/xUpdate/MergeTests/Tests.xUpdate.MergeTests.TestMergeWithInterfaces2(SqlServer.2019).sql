@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 CREATE TABLE [ReviewIndexes]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [ReviewIndexes]
 )
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 MERGE INTO [ReviewIndexes] [Target]
 USING (
@@ -45,7 +45,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2019 SqlServer.2017
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [ReviewIndexes]
 

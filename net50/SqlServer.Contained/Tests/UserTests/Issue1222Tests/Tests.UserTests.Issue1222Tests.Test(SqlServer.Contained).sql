@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [stLinks]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [stLinks]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [stVersions]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [stVersions]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @parentId Int -- Int32
 SET     @parentId = 111
 
@@ -83,12 +83,12 @@ FROM
 		INNER JOIN [stVersions] [version_1] ON [u].[InIdChild] = [version_1].[inId]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [stVersions]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [stLinks]
 

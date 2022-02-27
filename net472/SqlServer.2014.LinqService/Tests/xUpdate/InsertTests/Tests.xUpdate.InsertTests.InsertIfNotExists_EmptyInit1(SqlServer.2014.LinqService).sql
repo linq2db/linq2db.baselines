@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [test_insert_or_replace]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [test_insert_or_replace]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 MERGE INTO [test_insert_or_replace] [t1]
 USING (SELECT 1 AS [id]) [s] ON
@@ -32,7 +32,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 MERGE INTO [test_insert_or_replace] [t1]
 USING (SELECT 1 AS [id]) [s] ON
@@ -52,7 +52,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[test_insert_or_replace]', N'U') IS NOT NULL)
 	DROP TABLE [test_insert_or_replace]

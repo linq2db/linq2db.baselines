@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 CREATE TABLE [Table]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [Table]
 )
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 DECLARE @Version Int -- Int32
 SET     @Version = 0
 
@@ -46,7 +46,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2014 SqlServer.2012
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Table]', N'U') IS NOT NULL)
 	DROP TABLE [Table]

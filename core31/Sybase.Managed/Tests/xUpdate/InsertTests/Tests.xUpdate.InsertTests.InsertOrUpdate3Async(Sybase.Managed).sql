@@ -4,6 +4,15 @@
 sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
+-- Sybase.Managed Sybase
+
+DELETE FROM [Person]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
+
+BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [Person]
@@ -28,8 +37,6 @@ SET     @i = 0
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 UPDATE
 	[Patient]
 SET
@@ -52,8 +59,6 @@ BEGIN
 		'abc'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
@@ -62,8 +67,6 @@ SET     @i = 1
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 UPDATE
 	[Patient]
 SET
@@ -86,8 +89,6 @@ BEGIN
 		'abc'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
@@ -96,8 +97,6 @@ SET     @i = 2
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-BEGIN TRAN
-
 UPDATE
 	[Patient]
 SET
@@ -120,8 +119,6 @@ BEGIN
 		'abc'
 	)
 END
-
-COMMIT
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)

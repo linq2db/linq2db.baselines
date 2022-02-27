@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [CustomerBase]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [CustomerBase]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[cb].[Id],
@@ -26,7 +26,7 @@ WHERE
 	[cb].[ClientType] = N'Client'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [CustomerBase]
 

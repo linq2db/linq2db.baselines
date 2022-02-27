@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [DateTime2Table]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NULL)
 	CREATE TABLE [DateTime2Table]
@@ -22,7 +22,7 @@ IF (OBJECT_ID(N'[DateTime2Table]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [DateTime2Table]
 (
@@ -42,7 +42,7 @@ VALUES
 (2,'2012-12-12T12:12:12.0001234','2012-12-12T12:12:12','2012-12-12T12:12:12.0','2012-12-12T12:12:12.00','2012-12-12T12:12:12.000','2012-12-12T12:12:12.0001','2012-12-12T12:12:12.00012','2012-12-12T12:12:12.000123','2012-12-12T12:12:12.0001234')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -56,7 +56,7 @@ WHERE
 	[_].[DTD] = @dt2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.0000000'
 
@@ -68,7 +68,7 @@ WHERE
 	[_].[DT0] = @dt2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -82,7 +82,7 @@ WHERE
 	[_].[DT1] = @dt2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -96,7 +96,7 @@ WHERE
 	[_].[DT2] = @dt2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -110,7 +110,7 @@ WHERE
 	[_].[DT3] = @dt2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -124,7 +124,7 @@ WHERE
 	[_].[DT4] = @dt2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -138,7 +138,7 @@ WHERE
 	[_].[DT5] = @dt2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -152,7 +152,7 @@ WHERE
 	[_].[DT6] = @dt2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2 DateTime2
@@ -166,7 +166,7 @@ WHERE
 	[_].[DT7] = @dt2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -180,7 +180,7 @@ WHERE
 	[_].[DTD] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0000000'
 
@@ -192,7 +192,7 @@ WHERE
 	[_].[DT0] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -206,7 +206,7 @@ WHERE
 	[_].[DT1] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -220,7 +220,7 @@ WHERE
 	[_].[DT2] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -234,7 +234,7 @@ WHERE
 	[_].[DT3] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -248,7 +248,7 @@ WHERE
 	[_].[DT4] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -262,7 +262,7 @@ WHERE
 	[_].[DT5] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -276,7 +276,7 @@ WHERE
 	[_].[DT6] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @dt2NoMs DateTime2
@@ -290,7 +290,7 @@ WHERE
 	[_].[DT7] = @dt2NoMs
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [DateTime2Table]
 

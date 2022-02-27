@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [Issue1096Task]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [Issue1096Task]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [Issue1096TaskStage]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [Issue1096TaskStage]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(4000) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(4000) -- String
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TaskId Int -- Int32
@@ -78,34 +78,25 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[TargetName],
-	[t1].[Id_1],
-	[t1].[TaskId],
-	[t1].[Actual]
+SELECT DISTINCT
+	[t].[Id],
+	[t].[TargetName],
+	[a_ActualStage].[Id],
+	[a_ActualStage].[TaskId],
+	[a_ActualStage].[Actual]
 FROM
-	(
-		SELECT DISTINCT
-			[t].[Id],
-			[t].[TargetName],
-			[a_ActualStage].[Id] as [Id_1],
-			[a_ActualStage].[TaskId],
-			[a_ActualStage].[Actual]
-		FROM
-			[Issue1096Task] [t]
-				LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON [t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
-	) [t1]
+	[Issue1096Task] [t]
+		LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON [t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1096TaskStage]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue1096Task]
 

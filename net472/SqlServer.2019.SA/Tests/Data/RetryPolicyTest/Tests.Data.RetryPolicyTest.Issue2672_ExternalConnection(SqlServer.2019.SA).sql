@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  SqlServer.2017
+--  SqlServer.2019
 
 CREATE TABLE [MyEntity]
 (
@@ -8,12 +8,12 @@ CREATE TABLE [MyEntity]
 )
 
 BeforeExecute
---  SqlServer.2017
+--  SqlServer.2019
 
 DROP TABLE IF EXISTS [MyEntity]
 
 BeforeExecute
---  SqlServer.2017
+--  SqlServer.2019
 
 CREATE TABLE [MyEntity]
 (

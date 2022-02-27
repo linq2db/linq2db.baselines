@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [TPHTable]
 (
@@ -17,7 +17,7 @@ BeforeExecute
 INSERT BULK [TPHTable](Id, Discriminator, Value1, Value2, NullableBool, Value3)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -30,7 +30,7 @@ FROM
 	[TPHTable] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -47,7 +47,7 @@ WHERE
 	[x].[Discriminator] = 1
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -64,7 +64,7 @@ WHERE
 	[x].[Discriminator] = 2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -81,7 +81,7 @@ WHERE
 	[x].[Discriminator] = 3
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -98,7 +98,7 @@ WHERE
 	[x].[Value1] = N'Str1'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -115,7 +115,7 @@ WHERE
 	[x].[Value2] = N'Str2'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -132,7 +132,7 @@ WHERE
 	[x].[Value3] = N'Str3'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [TPHTable]
 
