@@ -203,9 +203,9 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @CONTEXT Blob -- Object
 SET     @CONTEXT = NULL
-DECLARE @REGINFO Object
+DECLARE @REGINFO 0 -- Object
 SET     @REGINFO = NULL
-DECLARE @DESCR Object
+DECLARE @DESCR 0 -- Object
 SET     @DESCR = NULL
 DECLARE @PAYLOAD Blob -- Object
 SET     @PAYLOAD = NULL
@@ -221,28 +221,28 @@ SYS.RESET_UNDO_STAT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @TI Object
+DECLARE @TI 0 -- Object
 SET     @TI = NULL
 
 SYS.ODCITABFUNCINFODUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @SO Object
+DECLARE @SO 0 -- Object
 SET     @SO = NULL
 
 SYS.ODCISTATSOPTIONSDUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @QI Object
+DECLARE @QI 0 -- Object
 SET     @QI = NULL
 
 SYS.ODCIQUERYINFODUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OP Object
+DECLARE @OP 0 -- Object
 SET     @OP = NULL
 
 SYS.ODCIPREDINFODUMP
@@ -256,7 +256,7 @@ SYS.ODCIPARTINFOLISTDUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PINFO Object
+DECLARE @PINFO 0 -- Object
 SET     @PINFO = NULL
 
 SYS.ODCIPARTINFODUMP
@@ -270,7 +270,7 @@ SYS.ODCIINDEXINFOFLAGSDUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @IA Object
+DECLARE @IA 0 -- Object
 SET     @IA = NULL
 
 SYS.ODCIINDEXINFODUMP
@@ -291,7 +291,7 @@ SYS.ODCIINDEXALTEROPTIONDUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @ENV Object
+DECLARE @ENV 0 -- Object
 SET     @ENV = NULL
 
 SYS.ODCIENVDUMP
@@ -305,7 +305,7 @@ SYS.ODCICOLINFOFLAGSDUMP
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @CI Object
+DECLARE @CI 0 -- Object
 SET     @CI = NULL
 
 SYS.ODCICOLINFODUMP
