@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Concat(Cast(Extract(year from `selectParam`.`DateTimeValue`) as CHAR(11)), '-', Cast(Extract(month from `selectParam`.`DateTimeValue`) as CHAR(11)), '-1') as Date) as `Key_1`,
+			Cast(Concat(Cast(Extract(year from `selectParam`.`DateTimeValue`) as CHAR(100)), '-', Cast(Extract(month from `selectParam`.`DateTimeValue`) as CHAR(100)), '-1') as Date) as `Key_1`,
 			`selectParam`.`MoneyValue`
 		FROM
 			`LinqDataTypes` `selectParam`

@@ -18,11 +18,11 @@ EXECUTE BLOCK AS BEGIN
 				"Value1"                  VarChar(200) CHARACTER SET UNICODE_FSS,
 				"Value2"                  VarChar(200) CHARACTER SET UNICODE_FSS,
 				"Enum"                    VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
-				"EnumNullable"            VarChar(50),
-				"EnumWithNull"            VarChar(50),
-				"EnumWithNullDeclarative" VarChar(50),
-				"BoolValue"               VarChar(1)                             NOT NULL,
-				"AnotherBoolValue"        VarChar(1)                             NOT NULL,
+				"EnumNullable"            VarChar(50) CHARACTER SET UNICODE_FSS,
+				"EnumWithNull"            VarChar(50) CHARACTER SET UNICODE_FSS,
+				"EnumWithNullDeclarative" VarChar(50) CHARACTER SET UNICODE_FSS,
+				"BoolValue"               VarChar(1) CHARACTER SET UNICODE_FSS   NOT NULL,
+				"AnotherBoolValue"        VarChar(1) CHARACTER SET UNICODE_FSS   NOT NULL,
 				"DateTimeNullable"        TimeStamp,
 
 				CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")

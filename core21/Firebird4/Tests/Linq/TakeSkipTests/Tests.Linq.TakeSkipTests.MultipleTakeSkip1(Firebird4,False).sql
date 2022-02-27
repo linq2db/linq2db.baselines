@@ -14,7 +14,7 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "TakeSkipClass"
 			(
-				"Value" VarChar(10)
+				"Value" VarChar(10) CHARACTER SET UNICODE_FSS
 			)
 		';
 END
