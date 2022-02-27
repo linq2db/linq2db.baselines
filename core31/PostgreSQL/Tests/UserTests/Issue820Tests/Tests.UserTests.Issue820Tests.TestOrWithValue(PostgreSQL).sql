@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @Value_1 Smallint -- Int16
-SET     @Value_1 = 1
+SET     @Value_1 = 1::smallint
 
 SELECT
 	t1."ID",

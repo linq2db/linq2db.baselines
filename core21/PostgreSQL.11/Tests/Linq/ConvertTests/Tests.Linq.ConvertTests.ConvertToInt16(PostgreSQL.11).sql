@@ -15,5 +15,5 @@ FROM
 			"LinqDataTypes" t
 	) p
 WHERE
-	p.c1 > 0
+	p.c1 > 0::smallint
 

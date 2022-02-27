@@ -13,7 +13,7 @@ SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
 DECLARE @BinaryValue Bytea -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue Smallint -- Int16
-SET     @SmallIntValue = 2
+SET     @SmallIntValue = 2::smallint
 DECLARE @StringValue Text -- String
 SET     @StringValue = NULL
 

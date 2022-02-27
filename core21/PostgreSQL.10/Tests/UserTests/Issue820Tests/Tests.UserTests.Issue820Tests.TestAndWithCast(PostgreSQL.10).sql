@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @param_1 Smallint -- Int16
-SET     @param_1 = 1
+SET     @param_1 = 1::smallint
 
 SELECT
 	t1."ID",

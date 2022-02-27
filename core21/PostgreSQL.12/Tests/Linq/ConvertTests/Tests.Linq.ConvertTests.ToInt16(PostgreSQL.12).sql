@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Cast(Floor(t."MoneyValue") as SmallInt) > 0
+	Cast(Floor(t."MoneyValue") as SmallInt) > 0::smallint
 

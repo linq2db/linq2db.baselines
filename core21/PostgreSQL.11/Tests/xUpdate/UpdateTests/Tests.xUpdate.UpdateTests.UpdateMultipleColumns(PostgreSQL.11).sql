@@ -15,7 +15,7 @@ SET     @ID = 1001
 DECLARE @MoneyValue Numeric(4, 0) -- Decimal
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue Smallint -- Int16
-SET     @SmallIntValue = 100
+SET     @SmallIntValue = 100::smallint
 
 INSERT INTO "LinqDataTypes"
 (
