@@ -1,0 +1,96 @@
+﻿BeforeExecute
+-- Firebird3 Firebird
+
+CREATE TABLE "Topic"
+(
+	"Id"    Int                                    NOT NULL,
+	"Title" VarChar(255) CHARACTER SET UNICODE_FSS,
+	"Text"  VarChar(255) CHARACTER SET UNICODE_FSS
+)
+
+BeforeExecute
+-- Firebird3 Firebird
+
+CREATE TABLE "Message"
+(
+	"Id"      Int                                    NOT NULL,
+	"TopicId" Int                                    NOT NULL,
+	"Text"    VarChar(255) CHARACTER SET UNICODE_FSS
+)
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @Id Integer -- Int32
+SET     @Id = 6
+DECLARE @Title VarChar(5) -- String
+SET     @Title = 'title'
+DECLARE @Text VarChar(4) -- String
+SET     @Text = 'text'
+
+INSERT INTO "Topic"
+(
+	"Id",
+	"Title",
+	"Text"
+)
+VALUES
+(
+	@Id,
+	@Title,
+	@Text
+)
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	"key_data_result"."Id",
+	"key_data_result"."Title",
+	"key_data_result"."Text",
+	"detail"."Id"
+FROM
+	(
+		SELECT DISTINCT
+			"t1"."Id",
+			"t1"."Title",
+			"t1"."Text"
+		FROM
+			(
+				SELECT FIRST @take
+					"x"."Id",
+					"x"."Title",
+					"x"."Text"
+				FROM
+					"Topic" "x"
+				WHERE
+					"x"."Id" = 6
+			) "t1"
+	) "key_data_result"
+		INNER JOIN "Message" "detail" ON "key_data_result"."Id" = "detail"."TopicId"
+
+BeforeExecute
+-- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"x"."Id",
+	"x"."Title",
+	"x"."Text"
+FROM
+	"Topic" "x"
+WHERE
+	"x"."Id" = 6
+
+BeforeExecute
+-- Firebird3 Firebird
+
+DROP TABLE "Message"
+
+BeforeExecute
+-- Firebird3 Firebird
+
+DROP TABLE "Topic"
+

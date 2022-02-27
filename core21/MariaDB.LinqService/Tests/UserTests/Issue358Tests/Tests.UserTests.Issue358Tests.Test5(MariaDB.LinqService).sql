@@ -1,0 +1,19 @@
+﻿BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	`_`.`ID`,
+	`_`.`MoneyValue`,
+	`_`.`DateTimeValue`,
+	`_`.`DateTimeValue2`,
+	`_`.`BoolValue`,
+	`_`.`GuidValue`,
+	`_`.`SmallIntValue`,
+	`_`.`IntValue`,
+	`_`.`BigIntValue`,
+	`_`.`StringValue`
+FROM
+	`LinqDataTypes` `_`
+WHERE
+	(`_`.`BoolValue` IS NULL OR `_`.`BoolValue` NOT IN (1))
+

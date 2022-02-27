@@ -1,0 +1,66 @@
+﻿BeforeExecute
+-- Firebird (asynchronously)
+
+INSERT INTO "LinqDataTypes"
+(
+	ID,
+	"MoneyValue",
+	"DateTimeValue",
+	"BoolValue",
+	"GuidValue",
+	"BinaryValue",
+	"SmallIntValue",
+	"StringValue"
+)
+SELECT 4000,1000,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0000',NULL,0,NULL FROM rdb$database UNION ALL
+SELECT 4001,1001,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0001',NULL,1,NULL FROM rdb$database UNION ALL
+SELECT 4002,1002,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0002',NULL,2,NULL FROM rdb$database UNION ALL
+SELECT 4003,1003,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0003',NULL,3,NULL FROM rdb$database UNION ALL
+SELECT 4004,1004,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0004',NULL,4,NULL FROM rdb$database UNION ALL
+SELECT 4005,1005,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0005',NULL,5,NULL FROM rdb$database UNION ALL
+SELECT 4006,1006,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0006',NULL,6,NULL FROM rdb$database UNION ALL
+SELECT 4007,1007,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0007',NULL,7,NULL FROM rdb$database UNION ALL
+SELECT 4008,1008,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0008',NULL,8,NULL FROM rdb$database UNION ALL
+SELECT 4009,1009,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9,NULL FROM rdb$database
+
+BeforeExecute
+-- Firebird (asynchronously)
+
+DELETE FROM
+	"LinqDataTypes" "t1"
+WHERE
+	"t1".ID >= 4000
+
+BeforeExecute
+-- Firebird (asynchronously)
+
+INSERT INTO "LinqDataTypes"
+(
+	ID,
+	"MoneyValue",
+	"DateTimeValue",
+	"BoolValue",
+	"GuidValue",
+	"BinaryValue",
+	"SmallIntValue",
+	"StringValue"
+)
+SELECT 4000,1000,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0000',NULL,0,NULL FROM rdb$database UNION ALL
+SELECT 4001,1001,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0001',NULL,1,NULL FROM rdb$database UNION ALL
+SELECT 4002,1002,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0002',NULL,2,NULL FROM rdb$database UNION ALL
+SELECT 4003,1003,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0003',NULL,3,NULL FROM rdb$database UNION ALL
+SELECT 4004,1004,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0004',NULL,4,NULL FROM rdb$database UNION ALL
+SELECT 4005,1005,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0005',NULL,5,NULL FROM rdb$database UNION ALL
+SELECT 4006,1006,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0006',NULL,6,NULL FROM rdb$database UNION ALL
+SELECT 4007,1007,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0007',NULL,7,NULL FROM rdb$database UNION ALL
+SELECT 4008,1008,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0008',NULL,8,NULL FROM rdb$database UNION ALL
+SELECT 4009,1009,CAST('2001-01-11 01:11:21.100' AS timestamp),1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9,NULL FROM rdb$database
+
+BeforeExecute
+-- Firebird (asynchronously)
+
+DELETE FROM
+	"LinqDataTypes" "t1"
+WHERE
+	"t1".ID >= 4000
+

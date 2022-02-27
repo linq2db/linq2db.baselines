@@ -1,0 +1,14 @@
+﻿BeforeExecute
+-- SapHana.Native SapHana
+DECLARE @skip  -- Int32
+SET     @skip = 3
+
+SELECT
+	"ch"."ParentID",
+	"ch"."ChildID"
+FROM
+	"Child" "ch"
+WHERE
+	("ch"."ChildID" > 3 OR "ch"."ChildID" < 4)
+LIMIT 4200000000 OFFSET :"skip"
+

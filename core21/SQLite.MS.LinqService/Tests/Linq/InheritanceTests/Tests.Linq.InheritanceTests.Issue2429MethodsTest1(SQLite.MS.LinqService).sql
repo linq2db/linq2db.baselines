@@ -1,0 +1,55 @@
+﻿BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE [BaseTable]
+(
+	[Value] INTEGER NOT NULL,
+	[Id]    INTEGER NOT NULL,
+
+	CONSTRAINT [PK_BaseTable] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+INSERT INTO [BaseTable]
+(
+	[Value],
+	[Id]
+)
+VALUES
+(100,1)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[x].[Value],
+	[x].[Id]
+FROM
+	[BaseTable] [x]
+WHERE
+	[x].[Id] = 1
+LIMIT @take
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[x].[Value],
+	[x].[Id]
+FROM
+	[BaseTable] [x]
+WHERE
+	[x].[Id] = 1 AND [x].[Value] = 100
+LIMIT @take
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+DROP TABLE [BaseTable]
+

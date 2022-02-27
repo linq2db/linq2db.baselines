@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- PostgreSQL.9.3 PostgreSQL
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 0
+
+SELECT
+	Cast(Floor(t."MoneyValue") as Int)
+FROM
+	"LinqDataTypes" t
+WHERE
+	Cast(Floor(t."MoneyValue") as Int) > :p_1
+

@@ -1,0 +1,28 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE MRECEIPT
+(
+	RECEIPT_NO NVarChar(255)     NULL,
+	CUSTKEY    NVarChar(255)     NULL
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE CUST_DTL
+(
+	CUSTKEY   NVarChar(255)     NULL,
+	BILLGROUP NVarChar(255)     NULL
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DROP TABLE CUST_DTL
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DROP TABLE MRECEIPT
+

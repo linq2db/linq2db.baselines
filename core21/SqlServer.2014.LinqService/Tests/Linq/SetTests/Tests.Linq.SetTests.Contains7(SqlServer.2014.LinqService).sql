@@ -1,0 +1,13 @@
+﻿BeforeExecute
+-- SqlServer.2014 SqlServer.2012
+
+SELECT
+	CASE WHEN EXISTS(
+		SELECT
+			*
+		FROM
+			[Child] [c_1]
+		WHERE
+			[c_1].[ParentID] = 11
+	) THEN 1 ELSE 0 END
+

@@ -1,0 +1,28 @@
+﻿BeforeExecute
+-- Firebird
+
+CREATE TABLE MRECEIPT
+(
+	RECEIPT_NO VarChar(255) CHARACTER SET UNICODE_FSS,
+	CUSTKEY    VarChar(255) CHARACTER SET UNICODE_FSS
+)
+
+BeforeExecute
+-- Firebird
+
+CREATE TABLE CUST_DTL
+(
+	CUSTKEY   VarChar(255) CHARACTER SET UNICODE_FSS,
+	BILLGROUP VarChar(255) CHARACTER SET UNICODE_FSS
+)
+
+BeforeExecute
+-- Firebird
+
+DROP TABLE CUST_DTL
+
+BeforeExecute
+-- Firebird
+
+DROP TABLE MRECEIPT
+
