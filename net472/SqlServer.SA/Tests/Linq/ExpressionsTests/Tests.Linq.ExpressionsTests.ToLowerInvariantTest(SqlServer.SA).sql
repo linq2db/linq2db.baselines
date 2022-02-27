@@ -1,4 +1,13 @@
 ﻿BeforeExecute
+-- SQLite.Default SQLite.MS SQLite
+
+SELECT
+	[t1].[PersonID],
+	[t1].[Taxonomy]
+FROM
+	[Doctor] [t1]
+
+BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
