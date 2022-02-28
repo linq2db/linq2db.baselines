@@ -71,5 +71,5 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as `c1`
+	END
 
