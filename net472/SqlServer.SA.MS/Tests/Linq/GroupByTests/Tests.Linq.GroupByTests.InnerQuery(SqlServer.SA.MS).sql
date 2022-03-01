@@ -1,4 +1,13 @@
 ﻿BeforeExecute
+-- SQLite.Default SQLite.MS SQLite
+
+SELECT
+	[t1].[PersonID],
+	[t1].[Taxonomy]
+FROM
+	[Doctor] [t1]
+
+BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
