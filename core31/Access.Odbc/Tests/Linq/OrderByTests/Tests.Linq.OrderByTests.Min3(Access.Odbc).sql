@@ -1,0 +1,15 @@
+﻿BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	Min([t1].[ParentID])
+FROM
+	(
+		SELECT TOP 3
+			[p].[ParentID]
+		FROM
+			[Parent] [p]
+		ORDER BY
+			[p].[Value1]
+	) [t1]
+
