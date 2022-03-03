@@ -92,10 +92,10 @@ WHERE
 	)
 RETURNING
 	OLD."Id",
-	OLD."Value",
+	NULL /* Value */,
 	OLD."ValueStr",
 	NEW."Id",
-	NEW."Value",
+	NULL /* Value */,
 	NEW."ValueStr"
 
 BeforeExecute
