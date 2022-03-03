@@ -214,28 +214,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
-DECLARE @Id Int -- Int32
-SET     @Id = 10
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = -10
-DECLARE @ValueStr NVarChar(50) -- String
-SET     @ValueStr = N'Str10'
-
-INSERT INTO [TableWithData]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-VALUES
-(
-	@Id,
-	@Value_1,
-	@ValueStr
-)
-
-BeforeExecute
--- SqlServer.2019 SqlServer.2017
 
 UPDATE
 	[s]
