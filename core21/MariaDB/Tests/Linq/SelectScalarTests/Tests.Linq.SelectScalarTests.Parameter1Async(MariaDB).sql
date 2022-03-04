@@ -4,5 +4,5 @@ DECLARE @p Int32
 SET     @p = 1
 
 SELECT
-	@p
+	@p as `c1`
 

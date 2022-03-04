@@ -2,5 +2,5 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	NULL
+	NULL as `c1`
 
