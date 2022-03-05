@@ -1151,6 +1151,8 @@ WHERE
 	PROCSCHEMA = 'DB2INST1'
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 --  DB2.LUW DB2LUW
 
 TESTDB.DB2INST1.ADDISSUE792RECORD
@@ -1162,3 +1164,5 @@ SET     @ID = 0
 
 TESTDB.DB2INST1.PERSON_SELECTBYKEY
 
+BeforeExecute
+RollbackTransaction

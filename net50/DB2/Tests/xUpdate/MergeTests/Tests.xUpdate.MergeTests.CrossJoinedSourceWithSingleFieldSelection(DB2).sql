@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -130,3 +132,5 @@ SELECT
 FROM
 	"GrandChild" "t1"
 
+BeforeExecute
+RollbackTransaction

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @n Integer(4) -- Int32
 SET     @n = 1
@@ -18,6 +20,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Child" "_gjd_c" ON "_gjd_c"."ParentID" = "key_data_result"."ParentID" + @n
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

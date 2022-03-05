@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(1) -- String
 SET     @FirstName = '1'
@@ -44,3 +46,5 @@ FROM
 WHERE
 	"r"."FirstName" = @FirstName
 
+BeforeExecute
+RollbackTransaction

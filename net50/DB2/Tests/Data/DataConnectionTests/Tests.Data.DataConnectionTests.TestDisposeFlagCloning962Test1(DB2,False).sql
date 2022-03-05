@@ -79,6 +79,8 @@ VALUES
 ('Prod 6',1,'q 6')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -91,6 +93,8 @@ FROM
 	"Categories" "lw_Category"
 		INNER JOIN "Products" "detail" ON "lw_Category"."CategoryID" = "detail"."CategoryID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

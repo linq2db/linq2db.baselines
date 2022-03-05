@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -33,3 +35,5 @@ FROM
 	"Parent" "t"
 FETCH FIRST 1 ROWS ONLY
 
+BeforeExecute
+RollbackTransaction
