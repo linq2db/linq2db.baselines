@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
 SELECT

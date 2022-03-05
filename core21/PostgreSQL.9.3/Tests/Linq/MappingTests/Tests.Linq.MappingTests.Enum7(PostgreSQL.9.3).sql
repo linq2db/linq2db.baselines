@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @v1 Integer -- Int32
 SET     @v1 = 1

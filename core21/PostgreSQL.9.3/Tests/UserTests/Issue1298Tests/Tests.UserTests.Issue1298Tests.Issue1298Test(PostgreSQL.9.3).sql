@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
 CREATE TABLE mega_composites
@@ -118,3 +120,5 @@ FROM
 		) t1 ON 1=1
 LIMIT :take
 
+BeforeExecute
+RollbackTransaction
