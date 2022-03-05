@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
@@ -104,6 +106,8 @@ FROM
 ORDER BY
 	[detail].[OrderDate] DESC
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 

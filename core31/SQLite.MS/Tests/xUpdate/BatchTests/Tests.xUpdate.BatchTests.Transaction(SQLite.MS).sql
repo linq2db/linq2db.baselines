@@ -39,6 +39,8 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Parent]
@@ -52,6 +54,8 @@ VALUES
 (3111,3111),
 (4111,4111)
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
