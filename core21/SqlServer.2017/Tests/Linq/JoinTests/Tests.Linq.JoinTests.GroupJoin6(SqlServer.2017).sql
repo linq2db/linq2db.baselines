@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2017
 DECLARE @n Int -- Int32
 SET     @n = 1
@@ -18,6 +20,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Child] [_gjd_c] ON [_gjd_c].[ParentID] = [key_data_result].[ParentID] + @n
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2017
 

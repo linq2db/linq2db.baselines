@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Northwind SqlServer.2017
 
 SELECT
@@ -102,6 +104,8 @@ FROM
 	[Customers] [i]
 		INNER JOIN [Orders] [detail] ON ([i].[CustomerID] = [detail].[CustomerID] OR [i].[CustomerID] IS NULL AND [detail].[CustomerID] IS NULL)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Northwind SqlServer.2017
 
