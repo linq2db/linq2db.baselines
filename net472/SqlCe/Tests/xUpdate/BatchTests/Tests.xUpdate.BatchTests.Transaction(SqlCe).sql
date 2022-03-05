@@ -39,6 +39,8 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlCe
 
 INSERT INTO [Parent]
@@ -51,6 +53,8 @@ SELECT 2111,2111 UNION ALL
 SELECT 3111,3111 UNION ALL
 SELECT 4111,4111
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- SqlCe
 DECLARE @ParentID Int -- Int32
