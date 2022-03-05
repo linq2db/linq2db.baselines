@@ -167,6 +167,8 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 2
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2008
 
 [TestData2008].[dbo].[AddIssue792Record]
@@ -393,3 +395,5 @@ SET     @ReturnFullRow = 0
 
 [TestData2008].[dbo].[VariableResults]
 
+BeforeExecute
+RollbackTransaction
