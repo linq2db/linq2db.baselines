@@ -177,6 +177,8 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 2
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2016
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData2016].[dbo].[AddIssue792Record] '
@@ -423,3 +425,5 @@ SET     @ReturnFullRow = 0
 
 [TestData2016].[dbo].[VariableResults]
 
+BeforeExecute
+RollbackTransaction
