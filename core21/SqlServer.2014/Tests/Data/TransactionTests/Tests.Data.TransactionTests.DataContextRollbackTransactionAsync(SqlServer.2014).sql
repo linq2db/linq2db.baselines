@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2014 SqlServer.2012 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
@@ -16,3 +18,5 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+RollbackTransaction
