@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 DELETE [t1]
@@ -77,3 +79,5 @@ FROM
 ORDER BY
 	[t1].[ID]
 
+BeforeExecute
+RollbackTransaction

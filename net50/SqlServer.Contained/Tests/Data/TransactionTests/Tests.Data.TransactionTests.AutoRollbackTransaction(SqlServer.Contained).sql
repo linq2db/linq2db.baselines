@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 UPDATE
@@ -28,6 +30,8 @@ FROM
 WHERE
 	[t1].[ParentID] = 1010
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @take Int -- Int32
