@@ -92,6 +92,8 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
@@ -172,6 +174,8 @@ WHERE
 ORDER BY
 	[m_1].[Id2] DESC
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 
