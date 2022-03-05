@@ -187,6 +187,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -204,6 +206,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON ([_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -211,6 +215,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Usage_1 Int -- Int32
@@ -231,6 +237,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON ([_v].[Usage] = ? AND [_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -238,6 +246,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Usage_1 Int -- Int32
@@ -257,6 +267,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON ([_v].[Usage] = ? AND [_v].[FirstTableId] = [key_data_result].[Id])
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 
@@ -464,6 +476,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -481,6 +495,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON ([_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -488,6 +504,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Usage_1 Int -- Int32
@@ -508,6 +526,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON ([_v].[Usage] = ? AND [_v].[FirstTableId] = [key_data_result].[Id])
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -515,6 +535,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Usage_1 Int -- Int32
@@ -534,6 +556,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON ([_v].[Usage] = ? AND [_v].[FirstTableId] = [key_data_result].[Id])
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 
