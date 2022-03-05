@@ -8,6 +8,8 @@ WHERE
 	`t1`.`PersonID` > 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql55 MySql.Official MySql
 
 INSERT INTO `Person`
