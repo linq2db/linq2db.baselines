@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	`t1`.`ParentID` = 1010
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @take Int32

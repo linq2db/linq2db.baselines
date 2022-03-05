@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 SELECT
@@ -40,6 +42,8 @@ FROM
 ORDER BY
 	`_ch`.`ChildID` DESC
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 

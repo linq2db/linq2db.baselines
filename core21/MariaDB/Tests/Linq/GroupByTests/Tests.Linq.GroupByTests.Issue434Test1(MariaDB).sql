@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @input_2 VarChar(4) -- String
 SET     @input_2 = 'test'
@@ -13,6 +15,8 @@ FROM
 WHERE
 	LOCATE(@input_2, Lower(`p`.`FirstName`)) > 0
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @input_2 VarChar(4) -- String

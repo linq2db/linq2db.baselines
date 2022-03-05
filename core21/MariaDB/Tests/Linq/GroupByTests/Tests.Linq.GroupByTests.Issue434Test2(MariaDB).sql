@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 SELECT
@@ -11,6 +13,8 @@ FROM
 WHERE
 	LOCATE('test', Lower(`p`.`FirstName`)) > 0
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
