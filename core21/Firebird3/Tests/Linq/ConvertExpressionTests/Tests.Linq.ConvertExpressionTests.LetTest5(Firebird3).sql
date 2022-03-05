@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -16,6 +18,8 @@ FROM
 ORDER BY
 	"c_1"."ChildID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32

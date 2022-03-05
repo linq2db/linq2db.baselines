@@ -249,6 +249,8 @@ INSERT INTO "Cities"
 SELECT 'x','Urupinsk' FROM rdb$database
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -320,6 +322,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Cities" "detail" ON ("detail"."City_Code" = "key_data_result"."City_Code" OR "detail"."City_Code" IS NULL AND "key_data_result"."City_Code" IS NULL)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 
