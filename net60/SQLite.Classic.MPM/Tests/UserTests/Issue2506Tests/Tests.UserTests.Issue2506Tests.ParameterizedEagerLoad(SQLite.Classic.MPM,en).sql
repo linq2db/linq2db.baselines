@@ -59,6 +59,8 @@ VALUES
 (2,'en','Item 2 english text')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @lang NVarChar(2) -- String
 SET     @lang = 'en'
@@ -71,6 +73,8 @@ FROM
 	[Item] [item_1]
 		INNER JOIN [ItemText] [detail] ON [item_1].[Id] = [detail].[ItemId] AND [detail].[Lang] = @lang
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

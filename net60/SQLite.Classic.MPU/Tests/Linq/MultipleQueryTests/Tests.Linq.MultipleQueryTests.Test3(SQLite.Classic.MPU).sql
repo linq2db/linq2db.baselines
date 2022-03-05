@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -7,6 +9,8 @@ SELECT
 FROM
 	[Child] [t1]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

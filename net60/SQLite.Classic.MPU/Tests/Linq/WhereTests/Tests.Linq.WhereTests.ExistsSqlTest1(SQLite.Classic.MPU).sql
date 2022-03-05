@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
@@ -13,3 +15,5 @@ WHERE
 			[c_1].[ParentID] = [Parent].[ParentID]
 	)
 
+BeforeExecute
+RollbackTransaction

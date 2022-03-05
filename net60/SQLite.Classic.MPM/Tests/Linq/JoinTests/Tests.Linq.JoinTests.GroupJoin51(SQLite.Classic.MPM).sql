@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -40,6 +42,8 @@ FROM
 ORDER BY
 	[_ch].[ChildID] DESC
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

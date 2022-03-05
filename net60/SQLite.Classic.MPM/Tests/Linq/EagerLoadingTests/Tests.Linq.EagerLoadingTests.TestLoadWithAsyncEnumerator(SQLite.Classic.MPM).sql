@@ -92,6 +92,8 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
@@ -144,6 +146,8 @@ FROM
 WHERE
 	[m_1].[Id1] >= @intParam
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
