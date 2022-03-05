@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
@@ -16,6 +18,8 @@ VALUES
 	:Value1
 )
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
