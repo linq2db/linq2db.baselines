@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 	) key_data_result
 		INNER JOIN Child gjd_ch ON gjd_ch.ParentID = key_data_result.ParentID
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

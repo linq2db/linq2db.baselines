@@ -202,6 +202,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -214,6 +216,8 @@ FROM
 	Categories lw_Category
 		INNER JOIN Products detail ON lw_Category.CategoryID = detail.CategoryID
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

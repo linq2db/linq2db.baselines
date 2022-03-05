@@ -39,6 +39,8 @@ WHERE
 	Parent.ParentID = @ParentID
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1111
@@ -110,6 +112,8 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
