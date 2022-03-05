@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
@@ -22,6 +24,8 @@ FROM
 WHERE
 	[c_1].[ChildID] > -100
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access AccessOleDb
 

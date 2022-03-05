@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 111001
@@ -34,3 +36,5 @@ VALUES
 	@ChildID
 )
 
+BeforeExecute
+RollbackTransaction
