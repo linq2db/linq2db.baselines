@@ -9,6 +9,8 @@ WHERE
 	`t1`.`ParentID` = 1
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql MySql.Official MySql
 
 UPDATE
@@ -32,6 +34,8 @@ WHERE
 	`p`.`ParentID` = 1
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @take Int32
