@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Northwind SqlServer.2017
 
 SELECT
@@ -104,6 +106,8 @@ FROM
 ORDER BY
 	[detail].[OrderDate] DESC
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Northwind SqlServer.2017
 

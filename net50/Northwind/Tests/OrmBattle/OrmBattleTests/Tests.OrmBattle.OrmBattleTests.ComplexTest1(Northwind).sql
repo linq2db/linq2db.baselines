@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Northwind SqlServer.2017
 
 SELECT
@@ -118,6 +120,8 @@ FROM
 	[Suppliers] [supplier],
 	[Products] [detail]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Northwind SqlServer.2017
 
