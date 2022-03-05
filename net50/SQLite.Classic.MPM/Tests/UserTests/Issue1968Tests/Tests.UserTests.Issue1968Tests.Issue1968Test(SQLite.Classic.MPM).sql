@@ -125,6 +125,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -175,6 +177,8 @@ FROM
 				[lw_University].[Id] = [m_1].[UniversityId] AND [m_1].[Id] = [x].[FacultyId]
 		)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

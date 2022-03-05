@@ -51,6 +51,8 @@ VALUES
 (13,1,1)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -84,6 +86,8 @@ FROM
 	) [lw_ParentRecord]
 		INNER JOIN [ChildRecord] [detail] ON [lw_ParentRecord].[Id] = [detail].[ParentId] AND [detail].[IsActive] = 1
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
