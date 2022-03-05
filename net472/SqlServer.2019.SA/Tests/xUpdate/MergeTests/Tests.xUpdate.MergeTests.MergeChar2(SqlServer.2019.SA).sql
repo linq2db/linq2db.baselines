@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
 MERGE INTO [AllTypes] [Target]
@@ -35,3 +37,5 @@ VALUES
 )
 ;
 
+BeforeExecute
+RollbackTransaction

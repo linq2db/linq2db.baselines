@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
 DELETE [t1]
@@ -91,3 +93,5 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
+BeforeExecute
+RollbackTransaction

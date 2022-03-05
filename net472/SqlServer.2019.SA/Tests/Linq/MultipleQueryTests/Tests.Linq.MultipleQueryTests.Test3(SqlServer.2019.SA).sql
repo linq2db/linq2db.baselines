@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
 SELECT
@@ -7,6 +9,8 @@ SELECT
 FROM
 	[Child] [t1]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 

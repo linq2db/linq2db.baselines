@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 DELETE [t1]
@@ -87,3 +89,5 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
+BeforeExecute
+RollbackTransaction
