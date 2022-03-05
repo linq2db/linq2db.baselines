@@ -50,6 +50,8 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
@@ -58,6 +60,8 @@ SELECT
 FROM
 	"Child" "t1"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird4 Firebird
 

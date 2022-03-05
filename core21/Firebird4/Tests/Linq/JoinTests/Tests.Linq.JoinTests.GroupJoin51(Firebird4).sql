@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
@@ -40,6 +42,8 @@ FROM
 ORDER BY
 	"ch"."ChildID" DESC
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird4 Firebird
 

@@ -109,6 +109,8 @@ SELECT 'Prod 5',1,'q 5' FROM rdb$database UNION ALL
 SELECT 'Prod 6',1,'q 6' FROM rdb$database
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
@@ -121,6 +123,8 @@ FROM
 	"Categories" "lw_Category"
 		INNER JOIN "Products" "detail" ON "lw_Category"."CategoryID" = "detail"."CategoryID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird4 Firebird
 
