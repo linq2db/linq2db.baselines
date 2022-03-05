@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -86,3 +88,5 @@ WHERE
 	`p`.`ParentID` < 2
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction

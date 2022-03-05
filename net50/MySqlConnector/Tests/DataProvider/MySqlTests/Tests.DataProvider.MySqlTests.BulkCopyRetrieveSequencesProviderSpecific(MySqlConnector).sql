@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySqlConnector MySql
 
 SET GLOBAL local_infile=ON
@@ -14,3 +16,5 @@ INSERT BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
 BeforeExecute
 INSERT BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
 
+BeforeExecute
+RollbackTransaction
