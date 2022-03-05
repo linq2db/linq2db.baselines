@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 --  Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -36,3 +38,5 @@ FROM
 	"Child" "t1"
 		LEFT JOIN "Parent" "a_Parent" ON "t1"."ParentID" = "a_Parent"."ParentID"
 
+BeforeExecute
+RollbackTransaction

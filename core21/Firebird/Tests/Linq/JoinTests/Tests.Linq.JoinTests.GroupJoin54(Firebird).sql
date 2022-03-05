@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Child" "ch" ON "ch"."ParentID" = "key_data_result"."ParentID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird
 
