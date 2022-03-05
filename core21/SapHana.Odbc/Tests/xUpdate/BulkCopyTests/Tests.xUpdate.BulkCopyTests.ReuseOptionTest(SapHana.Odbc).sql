@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 111001
@@ -34,3 +36,5 @@ VALUES
 	?
 )
 
+BeforeExecute
+RollbackTransaction

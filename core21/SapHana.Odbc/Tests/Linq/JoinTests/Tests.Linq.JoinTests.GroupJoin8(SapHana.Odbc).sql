@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 ORDER BY
 	"_c"."ChildID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 

@@ -278,10 +278,18 @@ BeforeExecute
 				ORDER BY SCHEMA_NAME, PROCEDURE_NAME, POSITION
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."AddIssue792Record" () }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @TABLENAME VarChar(50) -- AnsiString
@@ -294,6 +302,10 @@ SET     @SCHEMANAME = ''
 { CALL "TESTDB"."DROPCONSTRAINTFROMTABLE" (?,?,?) }
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FUNCTIONNAME VarChar(50) -- AnsiString
 SET     @FUNCTIONNAME = ''
@@ -302,6 +314,10 @@ SET     @SCHEMANAME = ''
 
 { CALL "TESTDB"."DROPEXISTINGFUNCTION" (?,?) }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @PROCEDURENAME VarChar(50) -- AnsiString
@@ -312,6 +328,10 @@ SET     @SCHEMANAME = ''
 { CALL "TESTDB"."DROPEXISTINGPROCEDURE" (?,?) }
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @TABLENAME VarChar(50) -- AnsiString
 SET     @TABLENAME = ''
@@ -320,6 +340,10 @@ SET     @SCHEMANAME = ''
 
 { CALL "TESTDB"."DROPEXISTINGTABLE" (?,?) }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @VIEWNAME VarChar(50) -- AnsiString
@@ -330,10 +354,18 @@ SET     @SCHEMANAME = ''
 { CALL "TESTDB"."DROPEXISTINGVIEW" (?,?) }
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."DuplicateColumnNames" () }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @STR VarChar(50) -- AnsiString
@@ -345,6 +377,10 @@ SET     @INPUTOUTPUTSTR = ''
 
 { CALL "TESTDB"."OutRefEnumTest" (?,?,?) }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
@@ -363,10 +399,18 @@ SET     @INPUTOUTPUTSTR = ''
 { CALL "TESTDB"."OutRefTest" (?,?,?,?,?,?) }
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."Patient_SelectAll" () }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
@@ -377,12 +421,20 @@ SET     @LASTNAME = ''
 { CALL "TESTDB"."Patient_SelectByName" (?,?) }
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @PERSONID  -- Int32
 SET     @PERSONID = 0
 
 { CALL "TESTDB"."Person_Delete" (?) }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
@@ -396,6 +448,10 @@ SET     @GENDER = char(0)
 
 { CALL "TESTDB"."Person_Insert" (?,?,?,?) }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
@@ -412,10 +468,18 @@ SET     @PERSONID = 0
 { CALL "TESTDB"."Person_Insert_OutputParameter" (?,?,?,?,?) }
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."Person_SelectAll" () }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
@@ -423,6 +487,10 @@ SET     @ID = 0
 
 { CALL "TESTDB"."Person_SelectByKey" (?) }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
@@ -433,6 +501,10 @@ SET     @LASTNAME = ''
 { CALL "TESTDB"."Person_SelectByName" (?,?) }
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
@@ -441,6 +513,10 @@ SET     @LASTNAME = ''
 
 { CALL "TESTDB"."Person_SelectListByName" (?,?) }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @PERSONID  -- Int32
@@ -457,17 +533,31 @@ SET     @GENDER = char(0)
 { CALL "TESTDB"."Person_Update" (?,?,?,?,?) }
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."SelectImplicitColumn" () }
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."prd.global.ecc/CV_MARAproc" () }
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT * FROM "TESTDB"."GetParentByID"(0)
 
+BeforeExecute
+RollbackTransaction

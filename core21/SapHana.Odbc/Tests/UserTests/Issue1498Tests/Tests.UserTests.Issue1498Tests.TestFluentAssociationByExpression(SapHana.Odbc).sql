@@ -41,6 +41,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -86,6 +88,8 @@ WHERE
 	"x"."Id" = 6
 LIMIT ?
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 

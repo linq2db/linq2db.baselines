@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1010
@@ -16,6 +18,8 @@ VALUES
 	?
 )
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 

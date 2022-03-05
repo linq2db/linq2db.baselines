@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -10,6 +12,8 @@ FROM
 	"Child" "t1"
 LIMIT ?
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
