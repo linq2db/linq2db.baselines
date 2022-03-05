@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -20,6 +22,8 @@ FROM
 ORDER BY
 	[_ch].[ChildID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 
