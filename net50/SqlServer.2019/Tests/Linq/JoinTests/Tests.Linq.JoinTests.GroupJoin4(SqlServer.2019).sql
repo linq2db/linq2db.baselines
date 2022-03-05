@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Child] [detail] ON [detail].[ParentID] = [key_data_result].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
