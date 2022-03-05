@@ -9,6 +9,8 @@ BeforeExecute
 CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @value_1 NVarchar2(8) -- String
 SET     @value_1 = '致我们最爱的母亲'
@@ -41,3 +43,5 @@ WHERE
 	p.ID = :id
 FETCH NEXT :take ROWS ONLY
 
+BeforeExecute
+RollbackTransaction

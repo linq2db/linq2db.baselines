@@ -28,6 +28,8 @@ BeforeExecute
 select user from dual
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SYSTEM.ADDISSUE792RECORD
@@ -203,6 +205,8 @@ BeforeExecute
 
 SYSTEM.TEST2132
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 

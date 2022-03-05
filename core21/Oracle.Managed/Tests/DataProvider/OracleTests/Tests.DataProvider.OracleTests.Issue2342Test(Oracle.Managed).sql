@@ -8,6 +8,8 @@ CREATE TABLE "Issue2342Entity"
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @:p1 Int64
 SET     @:p1 = System.Object[]
@@ -16,6 +18,8 @@ SET     @:p2 = System.Object[]
 
 INSERT INTO "Issue2342Entity" ("Id", "Name") VALUES (:p1, :p2)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 
