@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
@@ -13,3 +15,5 @@ WHERE
 			c_1."ParentID" = p."ParentID"
 	)
 
+BeforeExecute
+RollbackTransaction

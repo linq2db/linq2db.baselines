@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "Parent"
@@ -20,3 +22,5 @@ INSERT INTO "Child"
 VALUES
 (111001,0)
 
+BeforeExecute
+RollbackTransaction
