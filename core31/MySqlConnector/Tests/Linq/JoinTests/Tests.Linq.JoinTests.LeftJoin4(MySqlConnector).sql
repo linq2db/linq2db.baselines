@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 	) `key_data_result`
 		INNER JOIN `Child` `_y1` ON `_y1`.`ParentID` = `key_data_result`.`ParentID` AND `_y1`.`ParentID` = `key_data_result`.`Value1`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySqlConnector MySql
 

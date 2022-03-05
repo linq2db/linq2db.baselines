@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -28,6 +30,8 @@ WHERE
 	`c_1`.`ChildID` > -100
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 
