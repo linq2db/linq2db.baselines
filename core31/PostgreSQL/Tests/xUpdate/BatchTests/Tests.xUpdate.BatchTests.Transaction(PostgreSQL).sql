@@ -39,6 +39,8 @@ WHERE
 	t1."ParentID" = :ParentID
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "Parent"
@@ -52,6 +54,8 @@ VALUES
 (3111,3111),
 (4111,4111)
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 DECLARE @ParentID Integer -- Int32
