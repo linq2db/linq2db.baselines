@@ -11,33 +11,6 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
-FROM
-	`Child` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
-FROM
-	`Child` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
-FROM
-	`Child` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`
 FROM
