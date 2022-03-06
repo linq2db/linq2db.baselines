@@ -11,33 +11,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
-FROM
-	"Child" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
-FROM
-	"Child" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
-FROM
-	"Child" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
 	"p"."ParentID",
 	"p"."Value1"
 FROM
