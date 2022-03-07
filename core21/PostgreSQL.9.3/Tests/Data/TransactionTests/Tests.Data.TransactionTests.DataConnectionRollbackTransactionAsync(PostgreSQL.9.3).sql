@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @ParentID Integer -- Int32
@@ -19,4 +19,4 @@ VALUES
 )
 
 BeforeExecute
-RollbackTransaction
+RollbackTransactionAsync

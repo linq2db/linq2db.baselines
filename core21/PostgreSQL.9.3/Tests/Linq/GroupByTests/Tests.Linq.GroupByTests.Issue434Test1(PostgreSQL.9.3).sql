@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @input_2 Text(6) -- String
