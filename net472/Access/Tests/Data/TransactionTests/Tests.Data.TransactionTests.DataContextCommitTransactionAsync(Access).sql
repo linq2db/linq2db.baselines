@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
 DECLARE @ParentID Integer -- Int32
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
-CommitTransaction
+CommitTransactionAsync
 BeforeExecute
 -- Access AccessOleDb
 

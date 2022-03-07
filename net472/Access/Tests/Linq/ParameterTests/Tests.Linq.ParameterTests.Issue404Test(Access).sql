@@ -187,7 +187,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access AccessOleDb
 
@@ -216,7 +216,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Usage_1 Integer -- Int32
@@ -247,7 +247,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Usage_1 Integer -- Int32
@@ -476,7 +476,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access AccessOleDb
 
@@ -505,7 +505,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Usage_1 Integer -- Int32
@@ -536,7 +536,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Usage_1 Integer -- Int32
