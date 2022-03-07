@@ -55,7 +55,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
@@ -84,7 +84,7 @@ FROM
 	"Table404One" c_1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 DECLARE @Usage_1 Integer -- Int32
@@ -115,7 +115,7 @@ FROM
 	"Table404One" c_1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 DECLARE @Usage_1 Integer -- Int32
@@ -212,7 +212,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
@@ -241,7 +241,7 @@ FROM
 	"Table404One" c_1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 DECLARE @Usage_1 Integer -- Int32
@@ -272,7 +272,7 @@ FROM
 	"Table404One" c_1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 DECLARE @Usage_1 Integer -- Int32

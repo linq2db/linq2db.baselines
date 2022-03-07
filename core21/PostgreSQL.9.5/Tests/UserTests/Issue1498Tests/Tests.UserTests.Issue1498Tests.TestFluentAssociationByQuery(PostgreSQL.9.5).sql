@@ -85,7 +85,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
