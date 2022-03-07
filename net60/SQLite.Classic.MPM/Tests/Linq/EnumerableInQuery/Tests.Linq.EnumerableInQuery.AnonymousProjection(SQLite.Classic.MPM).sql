@@ -7,7 +7,7 @@ FROM
 	[Parent] [_]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

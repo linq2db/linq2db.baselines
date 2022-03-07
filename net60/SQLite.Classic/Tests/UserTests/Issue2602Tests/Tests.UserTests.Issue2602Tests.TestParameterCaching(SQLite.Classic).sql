@@ -17,7 +17,7 @@ CREATE TABLE [EmailAttachment]
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
@@ -65,7 +65,7 @@ LIMIT @take
 BeforeExecute
 RollbackTransaction
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- Int32

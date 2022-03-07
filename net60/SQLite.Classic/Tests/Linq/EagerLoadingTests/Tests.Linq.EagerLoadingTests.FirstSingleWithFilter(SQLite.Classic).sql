@@ -92,7 +92,7 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
@@ -138,7 +138,7 @@ LIMIT @take
 BeforeExecute
 RollbackTransaction
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
@@ -184,7 +184,7 @@ LIMIT @take
 BeforeExecute
 RollbackTransaction
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
