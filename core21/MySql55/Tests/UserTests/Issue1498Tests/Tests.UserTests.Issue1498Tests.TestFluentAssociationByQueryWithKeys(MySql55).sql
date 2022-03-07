@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @take Int32

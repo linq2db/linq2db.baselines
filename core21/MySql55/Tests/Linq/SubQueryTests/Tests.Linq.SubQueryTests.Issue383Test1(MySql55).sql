@@ -200,7 +200,7 @@ VALUES
 ('x','Urupinsk')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MySql55 MySql.Official MySql
 

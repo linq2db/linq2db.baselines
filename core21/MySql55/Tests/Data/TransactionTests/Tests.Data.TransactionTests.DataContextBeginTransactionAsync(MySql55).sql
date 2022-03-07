@@ -8,7 +8,7 @@ FROM
 	`Parent` `t1`
 
 BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @ParentID Int32
