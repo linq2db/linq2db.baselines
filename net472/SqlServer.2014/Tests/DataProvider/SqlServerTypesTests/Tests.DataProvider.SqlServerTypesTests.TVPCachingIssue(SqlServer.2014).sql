@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
@@ -48,7 +48,7 @@ WHERE
 	)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
@@ -97,7 +97,7 @@ WHERE
 	)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
@@ -146,7 +146,7 @@ WHERE
 	)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
