@@ -57,7 +57,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
@@ -86,7 +86,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @Usage_1 Int -- Int32
@@ -117,7 +117,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @Usage_1 Int -- Int32
@@ -216,7 +216,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
@@ -245,7 +245,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @Usage_1 Int -- Int32
@@ -276,7 +276,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @Usage_1 Int -- Int32

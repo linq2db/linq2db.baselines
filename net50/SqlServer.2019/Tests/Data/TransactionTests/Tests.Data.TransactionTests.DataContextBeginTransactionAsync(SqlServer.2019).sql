@@ -8,7 +8,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @ParentID Int -- Int32
