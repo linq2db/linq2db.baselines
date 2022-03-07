@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32

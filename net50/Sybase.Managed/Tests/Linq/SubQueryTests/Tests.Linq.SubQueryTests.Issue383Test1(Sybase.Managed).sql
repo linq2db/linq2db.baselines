@@ -221,7 +221,7 @@ INSERT INTO [Cities]
 SELECT 'x','Urupinsk'
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 

@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 

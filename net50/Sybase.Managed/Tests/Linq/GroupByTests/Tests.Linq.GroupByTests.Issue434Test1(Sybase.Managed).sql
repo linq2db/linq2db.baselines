@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @input_2 UniVarChar(6) -- String

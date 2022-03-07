@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -32,7 +32,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -65,7 +65,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -98,7 +98,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -131,7 +131,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -164,7 +164,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -197,7 +197,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -230,7 +230,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -263,7 +263,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -296,7 +296,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -329,7 +329,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -362,7 +362,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -395,7 +395,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -428,7 +428,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -461,7 +461,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -494,7 +494,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -527,7 +527,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -560,7 +560,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -593,7 +593,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -626,7 +626,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -659,7 +659,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -692,7 +692,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -725,7 +725,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -758,7 +758,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -791,7 +791,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -824,7 +824,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -857,7 +857,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -890,7 +890,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -923,7 +923,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -956,7 +956,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -989,7 +989,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1022,7 +1022,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1055,7 +1055,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1088,7 +1088,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1121,7 +1121,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1154,7 +1154,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1187,7 +1187,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1220,7 +1220,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1253,7 +1253,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1286,7 +1286,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1319,7 +1319,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1352,7 +1352,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1385,7 +1385,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1418,7 +1418,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1451,7 +1451,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1484,7 +1484,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1517,7 +1517,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1550,7 +1550,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1583,7 +1583,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1616,7 +1616,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1649,7 +1649,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1682,7 +1682,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1715,7 +1715,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1748,7 +1748,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1781,7 +1781,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1814,7 +1814,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1847,7 +1847,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1880,7 +1880,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1913,7 +1913,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1946,7 +1946,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -1979,7 +1979,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2012,7 +2012,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2045,7 +2045,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2078,7 +2078,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2111,7 +2111,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2144,7 +2144,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2177,7 +2177,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2210,7 +2210,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2243,7 +2243,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2276,7 +2276,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2309,7 +2309,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2342,7 +2342,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2375,7 +2375,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2408,7 +2408,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2441,7 +2441,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2474,7 +2474,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2507,7 +2507,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2540,7 +2540,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2573,7 +2573,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2606,7 +2606,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2639,7 +2639,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2672,7 +2672,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2705,7 +2705,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2738,7 +2738,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2771,7 +2771,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2804,7 +2804,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2837,7 +2837,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2870,7 +2870,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2903,7 +2903,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2936,7 +2936,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -2969,7 +2969,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -3002,7 +3002,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -3035,7 +3035,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -3068,7 +3068,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -3101,7 +3101,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -3134,7 +3134,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -3167,7 +3167,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -3200,7 +3200,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -3233,7 +3233,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -3266,7 +3266,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
