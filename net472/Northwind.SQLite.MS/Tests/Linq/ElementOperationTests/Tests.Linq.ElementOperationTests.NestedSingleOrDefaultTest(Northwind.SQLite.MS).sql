@@ -63,7 +63,7 @@ FROM
 	[Employees] [t1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
