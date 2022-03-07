@@ -55,7 +55,7 @@ VALUES
 (4,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 

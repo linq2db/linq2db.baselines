@@ -65,7 +65,7 @@ VALUES
 (N'Prod 6',1,N'q 6')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 

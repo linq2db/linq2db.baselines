@@ -26,7 +26,7 @@ WHERE
 	)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 
