@@ -92,7 +92,7 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -124,7 +124,7 @@ FROM
 	[MasterClass] [x]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 

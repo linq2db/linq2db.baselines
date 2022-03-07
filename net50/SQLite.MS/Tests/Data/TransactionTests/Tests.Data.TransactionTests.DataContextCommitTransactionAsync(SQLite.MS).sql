@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
-CommitTransaction
+CommitTransactionAsync
 BeforeExecute
 -- SQLite.MS SQLite
 

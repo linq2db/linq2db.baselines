@@ -85,7 +85,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32
