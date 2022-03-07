@@ -133,7 +133,7 @@ VALUES
 (4,4,5,0)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 DECLARE @blogId Int -- Int32
