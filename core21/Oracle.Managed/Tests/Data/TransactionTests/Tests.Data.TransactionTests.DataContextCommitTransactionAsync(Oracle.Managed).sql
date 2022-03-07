@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ParentID Int32
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
-CommitTransaction
+CommitTransactionAsync
 BeforeExecute
 -- Oracle.Managed Oracle12
 

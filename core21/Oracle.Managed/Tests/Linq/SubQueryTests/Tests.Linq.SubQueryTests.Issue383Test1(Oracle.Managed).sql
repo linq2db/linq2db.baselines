@@ -271,7 +271,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.Managed Oracle12
 

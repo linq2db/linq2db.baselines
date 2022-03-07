@@ -79,7 +79,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.Managed Oracle12
 
@@ -108,7 +108,7 @@ FROM
 	"Table404One" c_1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Usage_1 Int32
@@ -139,7 +139,7 @@ FROM
 	"Table404One" c_1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Usage_1 Int32
@@ -274,7 +274,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.Managed Oracle12
 
@@ -303,7 +303,7 @@ FROM
 	"Table404One" c_1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Usage_1 Int32
@@ -334,7 +334,7 @@ FROM
 	"Table404One" c_1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Usage_1 Int32

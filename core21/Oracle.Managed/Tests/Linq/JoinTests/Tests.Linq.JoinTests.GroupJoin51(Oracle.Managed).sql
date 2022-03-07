@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.Managed Oracle12
 

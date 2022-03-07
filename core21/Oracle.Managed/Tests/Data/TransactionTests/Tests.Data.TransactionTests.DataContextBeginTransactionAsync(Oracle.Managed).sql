@@ -8,7 +8,7 @@ FROM
 	"Parent" t1
 
 BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @ParentID Int32
