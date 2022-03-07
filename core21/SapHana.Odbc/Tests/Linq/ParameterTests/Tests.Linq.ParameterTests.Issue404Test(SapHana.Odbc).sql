@@ -187,7 +187,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
@@ -216,7 +216,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Usage_1  -- Int32
@@ -247,7 +247,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Usage_1  -- Int32
@@ -476,7 +476,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
@@ -505,7 +505,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Usage_1  -- Int32
@@ -536,7 +536,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Usage_1  -- Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32

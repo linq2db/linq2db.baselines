@@ -8,7 +8,7 @@ FROM
 	"Parent" "t1"
 
 BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
