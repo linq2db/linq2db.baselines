@@ -249,7 +249,7 @@ INSERT INTO "Cities"
 SELECT 'x','Urupinsk' FROM rdb$database
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird3 Firebird
 
