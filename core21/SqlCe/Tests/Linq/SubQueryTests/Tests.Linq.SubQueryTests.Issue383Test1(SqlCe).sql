@@ -193,7 +193,7 @@ INSERT INTO [Cities]
 SELECT 'x','Urupinsk'
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlCe
 
