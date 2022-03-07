@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
@@ -19,4 +19,4 @@ VALUES
 )
 
 BeforeExecute
-RollbackTransaction
+RollbackTransactionAsync

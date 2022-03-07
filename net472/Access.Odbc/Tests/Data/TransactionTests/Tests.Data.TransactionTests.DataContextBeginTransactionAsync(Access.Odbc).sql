@@ -8,7 +8,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
