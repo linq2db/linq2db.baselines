@@ -53,7 +53,7 @@ VALUES
 (1,'Sample')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -73,7 +73,7 @@ FROM
 	[Table2_3014] [t]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -95,7 +95,7 @@ WHERE
 	[cp].[Id] = 0
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -117,7 +117,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 

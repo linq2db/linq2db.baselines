@@ -132,7 +132,7 @@ VALUES
 (10010,10,'DetailValue1000010')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 
