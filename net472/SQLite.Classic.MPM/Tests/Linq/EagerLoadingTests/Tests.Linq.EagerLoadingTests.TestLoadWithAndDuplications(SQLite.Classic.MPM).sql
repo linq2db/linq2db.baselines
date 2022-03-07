@@ -92,7 +92,7 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

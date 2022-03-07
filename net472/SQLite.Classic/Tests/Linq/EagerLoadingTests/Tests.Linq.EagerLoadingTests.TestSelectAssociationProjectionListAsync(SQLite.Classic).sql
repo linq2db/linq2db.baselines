@@ -92,7 +92,7 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
-BeginTransaction
+BeginTransactionAsync(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
 DECLARE @intParam  -- Int32
