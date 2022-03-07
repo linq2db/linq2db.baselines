@@ -24,7 +24,7 @@ VALUES
 (1,100)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @take Int32
