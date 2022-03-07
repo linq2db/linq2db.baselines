@@ -80,7 +80,7 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 

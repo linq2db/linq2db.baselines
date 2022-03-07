@@ -51,7 +51,7 @@ VALUES
 (13,1,1)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

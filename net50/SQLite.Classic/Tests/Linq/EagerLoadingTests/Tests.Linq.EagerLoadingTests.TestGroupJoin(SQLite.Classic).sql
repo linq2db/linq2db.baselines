@@ -1781,7 +1781,7 @@ VALUES
 (9009090,9009,'SubDetailValue900900090')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32

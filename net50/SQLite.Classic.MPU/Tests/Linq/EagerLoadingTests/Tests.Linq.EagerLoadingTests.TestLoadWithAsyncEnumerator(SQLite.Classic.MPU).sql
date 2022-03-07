@@ -92,7 +92,7 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
-BeginTransaction
+BeginTransactionAsync(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @intParam  -- Int32
@@ -147,7 +147,7 @@ WHERE
 	[m_1].[Id1] >= @intParam
 
 BeforeExecute
-RollbackTransaction
+RollbackTransactionAsync
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
