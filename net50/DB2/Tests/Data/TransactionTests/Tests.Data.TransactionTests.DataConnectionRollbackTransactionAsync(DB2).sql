@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
@@ -19,4 +19,4 @@ VALUES
 )
 
 BeforeExecute
-RollbackTransaction
+RollbackTransactionAsync
