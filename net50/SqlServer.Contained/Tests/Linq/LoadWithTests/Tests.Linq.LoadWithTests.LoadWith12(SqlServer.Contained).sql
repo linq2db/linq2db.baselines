@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @take Int -- Int32
