@@ -31,7 +31,7 @@ INSERT INTO "SampleClass"
 SELECT 1,100 FROM rdb$database
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32
