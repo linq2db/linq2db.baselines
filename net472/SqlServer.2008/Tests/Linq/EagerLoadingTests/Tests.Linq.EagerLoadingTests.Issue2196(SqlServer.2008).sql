@@ -91,7 +91,7 @@ VALUES
 (2,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2008
 DECLARE @eventId Int -- Int32
