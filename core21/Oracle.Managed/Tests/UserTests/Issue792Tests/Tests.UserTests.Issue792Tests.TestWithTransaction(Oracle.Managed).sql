@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -211,3 +213,5 @@ SELECT
 FROM
 	"AllTypes" t1
 
+BeforeExecute
+RollbackTransaction

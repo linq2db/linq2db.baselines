@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
@@ -11,6 +13,8 @@ FROM
 WHERE
 	Lower([p].[FirstName]) LIKE N'%test%' ESCAPE N'~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 

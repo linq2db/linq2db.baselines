@@ -29,6 +29,8 @@ BeforeExecute
 ALTER TABLE Doctor ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -340,3 +342,5 @@ FROM
 ORDER BY
 	t1.PersonID
 
+BeforeExecute
+RollbackTransaction

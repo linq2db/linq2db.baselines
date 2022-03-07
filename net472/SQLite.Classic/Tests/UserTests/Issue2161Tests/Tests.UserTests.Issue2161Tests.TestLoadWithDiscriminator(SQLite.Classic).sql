@@ -57,6 +57,8 @@ VALUES
 (100,'Detail1',1)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -98,6 +100,8 @@ WHERE
 	[o].[OrderId] = 1
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 

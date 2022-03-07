@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -77,3 +79,5 @@ FROM
 WHERE
 	p.ParentID < 2
 
+BeforeExecute
+RollbackTransaction

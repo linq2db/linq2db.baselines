@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql MySql.Official MySql
 
 DELETE `p`
@@ -14,3 +16,5 @@ WHERE
 			`c_1`.`ParentID` = `p`.`ParentID`
 	)
 
+BeforeExecute
+RollbackTransaction

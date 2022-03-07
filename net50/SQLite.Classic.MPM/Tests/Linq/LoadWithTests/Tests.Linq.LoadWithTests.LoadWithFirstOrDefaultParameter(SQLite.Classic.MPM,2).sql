@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 2
@@ -85,3 +87,5 @@ WHERE
 	[p].[ParentID] = @id
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction

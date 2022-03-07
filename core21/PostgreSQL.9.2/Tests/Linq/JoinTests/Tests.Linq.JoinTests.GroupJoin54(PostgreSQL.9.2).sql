@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 	) key_data_result
 		INNER JOIN "Child" ch ON ch."ParentID" = key_data_result."ParentID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 

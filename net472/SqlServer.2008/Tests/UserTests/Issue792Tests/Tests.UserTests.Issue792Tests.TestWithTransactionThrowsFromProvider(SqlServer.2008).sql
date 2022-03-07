@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -16,3 +18,5 @@ BeforeExecute
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
+BeforeExecute
+RollbackTransaction

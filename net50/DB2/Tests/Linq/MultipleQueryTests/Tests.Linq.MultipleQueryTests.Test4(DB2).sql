@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -15,6 +17,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Child" "detail" ON "key_data_result"."ParentID" = "detail"."ParentID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -35,6 +37,8 @@ FROM
 	) "lw_Parent"
 		INNER JOIN "GrandChild" "detail" ON "lw_Parent"."ParentID" = "detail"."ParentID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

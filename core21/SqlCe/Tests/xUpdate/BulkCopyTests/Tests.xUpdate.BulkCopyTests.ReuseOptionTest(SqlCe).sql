@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlCe
 
 INSERT INTO [Parent]
@@ -18,3 +20,5 @@ INSERT INTO [Child]
 )
 SELECT 111001,0
 
+BeforeExecute
+RollbackTransaction

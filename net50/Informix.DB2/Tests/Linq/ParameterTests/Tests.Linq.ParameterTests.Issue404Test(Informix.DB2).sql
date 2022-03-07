@@ -187,6 +187,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -204,6 +206,8 @@ FROM
 		INNER JOIN Table404Two v ON v.FirstTableId = key_data_result.Id
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -211,6 +215,8 @@ SELECT
 FROM
 	Table404One c_1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -231,6 +237,8 @@ FROM
 		INNER JOIN Table404Two v ON v."Usage" = @Usage_1 AND v.FirstTableId = key_data_result.Id
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -238,6 +246,8 @@ SELECT
 FROM
 	Table404One c_1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -257,6 +267,8 @@ FROM
 	) key_data_result
 		INNER JOIN Table404Two v ON v."Usage" = @Usage_1 AND v.FirstTableId = key_data_result.Id
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 
@@ -464,6 +476,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -481,6 +495,8 @@ FROM
 		INNER JOIN Table404Two v ON v.FirstTableId = key_data_result.Id
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -488,6 +504,8 @@ SELECT
 FROM
 	Table404One c_1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -508,6 +526,8 @@ FROM
 		INNER JOIN Table404Two v ON v."Usage" = @Usage_1 AND v.FirstTableId = key_data_result.Id
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -515,6 +535,8 @@ SELECT
 FROM
 	Table404One c_1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -534,6 +556,8 @@ FROM
 	) key_data_result
 		INNER JOIN Table404Two v ON v."Usage" = @Usage_1 AND v.FirstTableId = key_data_result.Id
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

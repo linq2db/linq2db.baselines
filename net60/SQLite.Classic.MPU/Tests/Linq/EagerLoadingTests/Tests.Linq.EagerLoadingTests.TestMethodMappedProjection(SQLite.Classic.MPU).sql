@@ -1781,6 +1781,8 @@ VALUES
 (9009090,9009,'SubDetailValue900900090')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 1
@@ -1821,6 +1823,8 @@ FROM
 WHERE
 	[m_1].[Id1] >= @intParam
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @intParam  -- Int32

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -37,3 +39,5 @@ FROM
 	"Parent" t
 LIMIT :take
 
+BeforeExecute
+RollbackTransaction

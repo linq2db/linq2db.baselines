@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -88,3 +90,5 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
+BeforeExecute
+RollbackTransaction

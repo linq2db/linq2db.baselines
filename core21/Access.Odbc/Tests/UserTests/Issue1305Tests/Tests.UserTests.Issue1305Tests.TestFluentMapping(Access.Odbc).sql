@@ -14,6 +14,10 @@ CREATE TABLE [FluentMapping]
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 DROP TABLE [FluentMapping]

@@ -202,6 +202,8 @@ VALUES
 (190,'Sub2_19',NULL)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -220,6 +222,8 @@ FROM
 		INNER JOIN [MainItem2] [mm] ON [i].[Id] / 10 = [mm].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -230,6 +234,8 @@ FROM
 WHERE
 	[m_1].[Id] > 1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -280,6 +286,8 @@ FROM
 	) [lw_MainItem]
 		INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

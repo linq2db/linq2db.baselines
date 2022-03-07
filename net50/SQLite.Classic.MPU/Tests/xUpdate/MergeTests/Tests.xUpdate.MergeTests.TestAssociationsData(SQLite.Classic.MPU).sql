@@ -4,6 +4,8 @@
 UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
@@ -315,3 +317,5 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
+BeforeExecute
+RollbackTransaction

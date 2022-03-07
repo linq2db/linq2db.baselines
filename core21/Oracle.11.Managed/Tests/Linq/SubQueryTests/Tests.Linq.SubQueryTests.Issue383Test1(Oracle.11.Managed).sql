@@ -271,6 +271,8 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
@@ -342,6 +344,8 @@ FROM
 	) key_data_result
 		INNER JOIN "Cities" detail ON (detail."City_Code" = key_data_result."City_Code" OR detail."City_Code" IS NULL AND key_data_result."City_Code" IS NULL)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 

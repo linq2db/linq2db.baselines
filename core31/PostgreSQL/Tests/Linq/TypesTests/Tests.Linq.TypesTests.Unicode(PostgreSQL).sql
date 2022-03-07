@@ -7,6 +7,8 @@ WHERE
 	t1."PersonID" > 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "Person"

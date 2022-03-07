@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [InheritanceParent]
@@ -95,3 +97,5 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
+BeforeExecute
+RollbackTransaction

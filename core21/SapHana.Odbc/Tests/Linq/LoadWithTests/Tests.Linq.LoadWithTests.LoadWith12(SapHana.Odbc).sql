@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -86,3 +88,5 @@ WHERE
 	"p"."ParentID" < 2
 LIMIT ?
 
+BeforeExecute
+RollbackTransaction

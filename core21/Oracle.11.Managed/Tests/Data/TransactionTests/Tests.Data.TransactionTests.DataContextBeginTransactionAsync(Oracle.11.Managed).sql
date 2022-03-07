@@ -8,6 +8,8 @@ FROM
 	"Parent" t1
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -25,3 +27,5 @@ VALUES
 	:Value1
 )
 
+BeforeExecute
+RollbackTransaction

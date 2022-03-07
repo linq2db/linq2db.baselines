@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2008 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
@@ -16,6 +18,8 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- SqlServer.2008
 

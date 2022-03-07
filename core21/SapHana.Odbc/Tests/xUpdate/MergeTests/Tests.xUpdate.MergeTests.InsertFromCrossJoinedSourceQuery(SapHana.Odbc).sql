@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
@@ -135,3 +137,5 @@ FROM
 ORDER BY
 	"t1"."GrandChildID"
 
+BeforeExecute
+RollbackTransaction

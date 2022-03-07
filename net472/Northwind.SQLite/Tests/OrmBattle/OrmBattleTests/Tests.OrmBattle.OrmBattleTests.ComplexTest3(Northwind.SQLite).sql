@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
@@ -97,6 +99,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Suppliers] [detail] ON [detail].[SupplierID] = [key_data_result].[SupplierID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 

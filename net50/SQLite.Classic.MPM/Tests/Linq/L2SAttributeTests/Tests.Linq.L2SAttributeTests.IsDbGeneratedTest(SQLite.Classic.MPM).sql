@@ -4,6 +4,8 @@
 UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 0

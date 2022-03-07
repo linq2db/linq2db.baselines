@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 ORDER BY
 	`detail`.`ChildID`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySqlConnector MySql
 

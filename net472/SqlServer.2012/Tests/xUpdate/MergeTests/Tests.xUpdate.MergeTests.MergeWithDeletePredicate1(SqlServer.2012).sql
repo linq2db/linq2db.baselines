@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [LinqDataTypes] [Target]
@@ -76,3 +78,5 @@ VALUES
 WHEN NOT MATCHED BY SOURCE AND [Target].[ID] > 5 THEN DELETE
 ;
 
+BeforeExecute
+RollbackTransaction

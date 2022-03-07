@@ -7,6 +7,8 @@ WHERE
 	[Person].[PersonID] > 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlCe
 
 INSERT INTO [Person]

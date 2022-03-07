@@ -26,6 +26,8 @@ WHERE
 	)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
@@ -46,6 +48,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [TreeItem] [detail] ON [key_data_result].[Id] = [detail].[ParentId]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 

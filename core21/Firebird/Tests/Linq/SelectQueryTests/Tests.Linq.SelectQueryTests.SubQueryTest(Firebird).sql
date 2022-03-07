@@ -31,6 +31,8 @@ INSERT INTO "SampleClass"
 SELECT 1,100 FROM rdb$database
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -60,6 +62,8 @@ FROM
 			) "t1"
 	) "t2"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird
 

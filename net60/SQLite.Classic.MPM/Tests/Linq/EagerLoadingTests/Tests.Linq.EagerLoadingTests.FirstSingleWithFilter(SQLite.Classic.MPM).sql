@@ -92,47 +92,7 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[key_data_result].[Id1],
-	[key_data_result].[Id2],
-	[detail].[DetailValue]
-FROM
-	(
-		SELECT DISTINCT
-			[t1].[Id1],
-			[t1].[Id2]
-		FROM
-			(
-				SELECT
-					[x].[Id1],
-					[x].[Id2]
-				FROM
-					[MasterClass] [x]
-				WHERE
-					[x].[Id1] = 1
-				LIMIT @take
-			) [t1]
-	) [key_data_result]
-		INNER JOIN [DetailClass] [detail] ON [key_data_result].[Id1] = [detail].[MasterId]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[x].[Id1],
-	[x].[Id2]
-FROM
-	[MasterClass] [x]
-WHERE
-	[x].[Id1] = 1
-LIMIT @take
-
+BeginTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
@@ -175,6 +135,56 @@ WHERE
 	[x].[Id1] = 1
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[key_data_result].[Id1],
+	[key_data_result].[Id2],
+	[detail].[DetailValue]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[Id1],
+			[t1].[Id2]
+		FROM
+			(
+				SELECT
+					[x].[Id1],
+					[x].[Id2]
+				FROM
+					[MasterClass] [x]
+				WHERE
+					[x].[Id1] = 1
+				LIMIT @take
+			) [t1]
+	) [key_data_result]
+		INNER JOIN [DetailClass] [detail] ON [key_data_result].[Id1] = [detail].[MasterId]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[x].[Id1],
+	[x].[Id2]
+FROM
+	[MasterClass] [x]
+WHERE
+	[x].[Id1] = 1
+LIMIT @take
+
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
@@ -217,6 +227,8 @@ WHERE
 	[x].[Id1] = 1
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

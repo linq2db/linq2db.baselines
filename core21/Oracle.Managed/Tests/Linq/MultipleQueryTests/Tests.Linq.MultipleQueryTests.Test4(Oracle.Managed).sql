@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -15,6 +17,8 @@ FROM
 	) key_data_result
 		INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 

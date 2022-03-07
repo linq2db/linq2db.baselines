@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM
@@ -72,3 +74,5 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
+BeforeExecute
+RollbackTransaction

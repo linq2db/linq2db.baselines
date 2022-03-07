@@ -369,6 +369,8 @@ BeforeExecute
 sp_oledb_getprocedurecolumns
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 --  Sybase.Managed Sybase
 
 SET FMTONLY ON
@@ -402,3 +404,5 @@ BeforeExecute
 
 SET FMTONLY OFF
 
+BeforeExecute
+RollbackTransaction

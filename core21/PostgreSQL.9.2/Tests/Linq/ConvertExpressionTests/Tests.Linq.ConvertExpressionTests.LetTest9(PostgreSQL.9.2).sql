@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 10
@@ -27,6 +29,8 @@ FROM
 ORDER BY
 	c_1."ChildID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @take Integer -- Int32

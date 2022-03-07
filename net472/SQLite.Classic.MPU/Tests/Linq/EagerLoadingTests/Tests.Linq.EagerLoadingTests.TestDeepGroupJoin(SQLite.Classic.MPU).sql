@@ -1781,6 +1781,8 @@ VALUES
 (9009090,9009,'SubDetailValue900900090')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
@@ -1838,6 +1840,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [MasterClass] [_gjd_mm] ON [_gjd_mm].[Id1] = [key_data_result].[Id1]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32

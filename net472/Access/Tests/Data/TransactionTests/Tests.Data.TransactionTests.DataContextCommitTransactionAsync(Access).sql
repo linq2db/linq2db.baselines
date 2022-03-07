@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
@@ -16,6 +18,8 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- Access AccessOleDb
 

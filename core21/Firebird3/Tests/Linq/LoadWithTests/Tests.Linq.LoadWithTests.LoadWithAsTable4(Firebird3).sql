@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -35,3 +37,5 @@ SELECT FIRST @take
 FROM
 	"Parent" "t"
 
+BeforeExecute
+RollbackTransaction

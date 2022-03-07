@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 ORDER BY
 	detail."ChildID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 

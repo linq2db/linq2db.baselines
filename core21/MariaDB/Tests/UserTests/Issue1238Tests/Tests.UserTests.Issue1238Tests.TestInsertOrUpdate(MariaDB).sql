@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 DELETE `t1`
@@ -57,3 +59,5 @@ SELECT
 FROM
 	`InheritanceParent` `t1`
 
+BeforeExecute
+RollbackTransaction

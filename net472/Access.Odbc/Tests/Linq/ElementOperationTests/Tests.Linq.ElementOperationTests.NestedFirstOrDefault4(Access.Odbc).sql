@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -16,6 +18,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Child] [_c] ON ([key_data_result].[ParentID] = [_c].[ParentID] AND [_c].[ParentID] > 0)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 

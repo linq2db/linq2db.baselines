@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 
 MERGE INTO "AllTypes" "Target"
@@ -29,3 +31,5 @@ VALUES
 	"Source"."ncharDataType"
 )
 
+BeforeExecute
+RollbackTransaction

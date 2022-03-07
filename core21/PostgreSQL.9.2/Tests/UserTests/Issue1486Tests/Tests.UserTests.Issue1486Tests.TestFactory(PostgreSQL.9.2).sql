@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 --  PostgreSQL.9.2 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -38,3 +40,5 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON t1."ParentID" = "a_Parent"."ParentID"
 LIMIT :take
 
+BeforeExecute
+RollbackTransaction

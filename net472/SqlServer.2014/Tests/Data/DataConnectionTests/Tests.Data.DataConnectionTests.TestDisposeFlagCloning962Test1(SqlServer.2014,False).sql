@@ -67,6 +67,8 @@ VALUES
 (N'Prod 6',1,N'q 6')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 
 SELECT
@@ -79,6 +81,8 @@ FROM
 	[Categories] [lw_Category]
 		INNER JOIN [Products] [detail] ON [lw_Category].[CategoryID] = [detail].[CategoryID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2014 SqlServer.2012
 

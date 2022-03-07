@@ -202,35 +202,7 @@ VALUES
 (190,'Sub2_19',NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
-	[lw_MainItem].[Id],
-	[e].[Id],
-	[e].[Value],
-	[e].[ParentId]
-FROM
-	(
-		SELECT DISTINCT
-			[m_1].[Id]
-		FROM
-			[MainItem] [m_1]
-		WHERE
-			[m_1].[Id] > 1
-	) [lw_MainItem]
-		INNER JOIN [SubItem1] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
-	[m_1].[Id],
-	[m_1].[Value]
-FROM
-	[MainItem] [m_1]
-WHERE
-	[m_1].[Id] > 1
-
+BeginTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -251,6 +223,8 @@ FROM
 		INNER JOIN [SubItem1] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -261,6 +235,42 @@ FROM
 WHERE
 	[m_1].[Id] > 1
 
+BeforeExecute
+BeginTransaction
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[lw_MainItem].[Id],
+	[e].[Id],
+	[e].[Value],
+	[e].[ParentId]
+FROM
+	(
+		SELECT DISTINCT
+			[m_1].[Id]
+		FROM
+			[MainItem] [m_1]
+		WHERE
+			[m_1].[Id] > 1
+	) [lw_MainItem]
+		INNER JOIN [SubItem1] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
+
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[m_1].[Id],
+	[m_1].[Value]
+FROM
+	[MainItem] [m_1]
+WHERE
+	[m_1].[Id] > 1
+
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -317,6 +327,8 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [detail].[ParentId] = [a_Parent].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -327,6 +339,8 @@ FROM
 WHERE
 	[m_1].[Id] > 1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -383,6 +397,8 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [detail].[ParentId] = [a_Parent].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -393,6 +409,8 @@ FROM
 WHERE
 	[m_1].[Id] > 1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -412,6 +430,8 @@ FROM
 	) [lw_MainItem]
 		INNER JOIN [SubItem1] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0 AND [e].[Value] LIKE 'Sub1~_%' ESCAPE '~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

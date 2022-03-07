@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
@@ -16,6 +18,8 @@ VALUES
 	?
 )
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 

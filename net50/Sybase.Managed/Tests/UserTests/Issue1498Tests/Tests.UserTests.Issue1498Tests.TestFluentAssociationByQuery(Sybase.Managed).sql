@@ -85,6 +85,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -124,6 +126,8 @@ FROM
 WHERE
 	[x].[Id] = 6
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 

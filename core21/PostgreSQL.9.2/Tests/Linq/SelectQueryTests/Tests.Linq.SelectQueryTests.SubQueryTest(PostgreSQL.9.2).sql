@@ -24,6 +24,8 @@ VALUES
 (1,100)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -53,6 +55,8 @@ FROM
 	) t2
 LIMIT :take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -7,6 +9,8 @@ SELECT TOP 1
 FROM
 	[Child] [t1]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 

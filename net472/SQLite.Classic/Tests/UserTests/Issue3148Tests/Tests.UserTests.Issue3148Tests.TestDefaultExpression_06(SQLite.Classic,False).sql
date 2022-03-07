@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -16,6 +18,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Child] [_c] ON [key_data_result].[ParentID] = [_c].[ParentID] AND [_c].[ParentID] <> 0
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 
@@ -26,6 +30,8 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -43,6 +49,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Child] [_c] ON [key_data_result].[ParentID] = [_c].[ParentID] AND [_c].[ParentID] <> 0
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 

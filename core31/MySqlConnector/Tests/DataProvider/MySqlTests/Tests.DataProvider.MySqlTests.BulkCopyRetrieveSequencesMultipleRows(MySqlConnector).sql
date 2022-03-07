@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySqlConnector MySql
 
 SET GLOBAL local_infile=ON
@@ -26,3 +28,5 @@ VALUES
 ('Pediatrics',8,'test',NULL,'M'),
 ('Psychiatry',9,'test',NULL,'M')
 
+BeforeExecute
+RollbackTransaction

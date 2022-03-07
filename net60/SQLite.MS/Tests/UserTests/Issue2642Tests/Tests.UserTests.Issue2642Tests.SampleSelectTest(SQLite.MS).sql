@@ -26,6 +26,8 @@ CREATE TABLE [IIRs]
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @DateTime  -- DateTime
 SET     @DateTime = '2020-02-29 17:54:55.123'
@@ -49,6 +51,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [EmailAttachments] [detail] ON [key_data_result].[Id] = [detail].[EmailId]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @DateTime  -- DateTime

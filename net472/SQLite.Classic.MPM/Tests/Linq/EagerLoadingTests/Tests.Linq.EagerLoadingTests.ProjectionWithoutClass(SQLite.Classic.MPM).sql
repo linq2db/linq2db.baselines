@@ -92,6 +92,8 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -102,6 +104,8 @@ FROM
 	[MasterClass] [m_1]
 		INNER JOIN [DetailClass] [detail] ON [m_1].[Id1] = [detail].[MasterId]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

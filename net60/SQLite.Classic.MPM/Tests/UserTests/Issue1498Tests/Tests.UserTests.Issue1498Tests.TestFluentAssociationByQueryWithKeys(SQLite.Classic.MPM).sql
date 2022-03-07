@@ -89,6 +89,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -134,6 +136,8 @@ WHERE
 	[x].[Id] = 6
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

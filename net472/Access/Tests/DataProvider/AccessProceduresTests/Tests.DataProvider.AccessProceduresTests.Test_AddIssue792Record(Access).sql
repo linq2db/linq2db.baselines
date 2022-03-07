@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 
 SELECT
@@ -25,3 +27,5 @@ FROM
 WHERE
 	[_].[char20DataType] = 'issue792'
 
+BeforeExecute
+RollbackTransaction

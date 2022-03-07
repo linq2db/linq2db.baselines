@@ -1781,6 +1781,8 @@ VALUES
 (9009090,9009,'SubDetailValue900900090')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @masterFilter  -- Int32
 SET     @masterFilter = 5
@@ -1857,6 +1859,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [DetailClass] [detail] ON [detail].[MasterId] = [key_data_result].[Id1]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @masterFilter  -- Int32

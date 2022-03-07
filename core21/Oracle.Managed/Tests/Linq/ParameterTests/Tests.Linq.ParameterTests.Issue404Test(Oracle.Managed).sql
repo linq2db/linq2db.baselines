@@ -79,6 +79,8 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -96,6 +98,8 @@ FROM
 		INNER JOIN "Table404Two" v ON v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -103,6 +107,8 @@ SELECT
 FROM
 	"Table404One" c_1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Usage_1 Int32
@@ -123,6 +129,8 @@ FROM
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -130,6 +138,8 @@ SELECT
 FROM
 	"Table404One" c_1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Usage_1 Int32
@@ -149,6 +159,8 @@ FROM
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 
@@ -262,6 +274,8 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -279,6 +293,8 @@ FROM
 		INNER JOIN "Table404Two" v ON v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -286,6 +302,8 @@ SELECT
 FROM
 	"Table404One" c_1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Usage_1 Int32
@@ -306,6 +324,8 @@ FROM
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -313,6 +333,8 @@ SELECT
 FROM
 	"Table404One" c_1
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Usage_1 Int32
@@ -332,6 +354,8 @@ FROM
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 

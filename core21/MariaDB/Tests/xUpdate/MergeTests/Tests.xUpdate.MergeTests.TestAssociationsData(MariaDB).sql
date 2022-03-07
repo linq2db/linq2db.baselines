@@ -4,6 +4,8 @@
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 DELETE `t1`
@@ -318,3 +320,5 @@ FROM
 ORDER BY
 	`t1`.`PersonID`
 
+BeforeExecute
+RollbackTransaction

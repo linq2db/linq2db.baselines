@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
 DELETE [t1]
@@ -58,3 +60,5 @@ FROM
 ORDER BY
 	[t1].[ID]
 
+BeforeExecute
+RollbackTransaction

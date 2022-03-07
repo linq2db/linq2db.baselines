@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2005
 DECLARE @input_2 NVarChar(4000) -- String
 SET     @input_2 = N'%test%'
@@ -13,6 +15,8 @@ FROM
 WHERE
 	Lower([p].[FirstName]) LIKE @input_2 ESCAPE N'~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2005
 DECLARE @input_2 NVarChar(4000) -- String

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird3 Firebird
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 111001
@@ -784,3 +786,5 @@ FROM
 WHERE
 	"r"."ParentID" >= @ParentID AND "r"."ParentID" <= @ParentID_1
 
+BeforeExecute
+RollbackTransaction

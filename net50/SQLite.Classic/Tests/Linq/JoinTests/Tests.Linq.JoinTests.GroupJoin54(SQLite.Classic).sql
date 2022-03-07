@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Child] [_ch] ON [_ch].[ParentID] = [key_data_result].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 

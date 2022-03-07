@@ -43,6 +43,8 @@ WHERE
 	`t1`.`ParentID` = @ParentID
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql MySql.Official MySql
 
 INSERT INTO `Parent`
@@ -56,6 +58,8 @@ VALUES
 (3111,3111),
 (4111,4111)
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @ParentID Int32

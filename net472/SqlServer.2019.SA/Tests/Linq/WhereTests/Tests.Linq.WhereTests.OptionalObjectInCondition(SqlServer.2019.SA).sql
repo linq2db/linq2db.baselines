@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2019.SA SqlServer.2017
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'1'
@@ -44,3 +46,5 @@ FROM
 WHERE
 	[r].[FirstName] = @FirstName
 
+BeforeExecute
+RollbackTransaction

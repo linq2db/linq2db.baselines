@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 
 SELECT
@@ -24,6 +26,8 @@ FROM
 ORDER BY
 	[_c].[ChildID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access AccessOleDb
 

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 5000
@@ -26,6 +28,8 @@ FROM
 ORDER BY
 	[_c].[ChildID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take_1  -- Int32

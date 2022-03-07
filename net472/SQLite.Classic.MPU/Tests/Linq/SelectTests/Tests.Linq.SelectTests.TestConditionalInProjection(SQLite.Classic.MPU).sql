@@ -52,6 +52,8 @@ VALUES
 (1,'Value 1')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -63,6 +65,8 @@ FROM
 	[ChildEntityObject] [sc]
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

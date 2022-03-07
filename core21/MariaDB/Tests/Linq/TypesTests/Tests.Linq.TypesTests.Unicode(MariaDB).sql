@@ -8,6 +8,8 @@ WHERE
 	`t1`.`PersonID` > 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 INSERT INTO `Person`

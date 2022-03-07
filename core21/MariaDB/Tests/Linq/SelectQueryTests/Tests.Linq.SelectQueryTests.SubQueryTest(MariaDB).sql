@@ -24,6 +24,8 @@ VALUES
 (1,100)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -53,6 +55,8 @@ FROM
 	) `t2`
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 

@@ -122,6 +122,8 @@ BeforeExecute
 							PKCON.OWNER IN ('SYSTEM')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @QLEN Decimal(22)
 SET     @QLEN = 0
@@ -1069,3 +1071,5 @@ BeforeExecute
 
 LBACSYS.SESSINFO_CLEANUP
 
+BeforeExecute
+RollbackTransaction

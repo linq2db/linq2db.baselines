@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 10
@@ -27,6 +29,8 @@ FROM
 ORDER BY
 	`_c`.`ChildID`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @take Int32

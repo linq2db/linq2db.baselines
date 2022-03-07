@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 INSERT INTO "t_test_user"

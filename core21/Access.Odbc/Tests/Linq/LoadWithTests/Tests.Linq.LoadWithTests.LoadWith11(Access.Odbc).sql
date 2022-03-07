@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -35,6 +37,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [GrandChild] [detail] ON ([lw_Parent].[ParentID] = [detail].[ParentID])
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 

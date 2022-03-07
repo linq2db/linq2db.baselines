@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -14,3 +16,5 @@ SELECT
 FROM
 	[AllTypes] [t1]
 
+BeforeExecute
+RollbackTransaction

@@ -98,6 +98,8 @@ FROM
 LIMIT @take
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -134,6 +136,10 @@ FROM
 LIMIT @take
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -169,6 +175,8 @@ FROM
 	[Right] [t1]
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

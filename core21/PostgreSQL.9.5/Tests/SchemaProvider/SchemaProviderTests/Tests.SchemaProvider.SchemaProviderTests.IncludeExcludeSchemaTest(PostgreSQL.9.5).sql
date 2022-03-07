@@ -247,6 +247,8 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
 SELECT * FROM testdata."public"."GetParentByID"(NULL::integer)
@@ -266,6 +268,8 @@ BeforeExecute
 
 SELECT * FROM testdata."public"."TestTableFunctionSchema"()
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
@@ -515,6 +519,10 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
 
 SHOW  server_version_num
@@ -762,3 +770,7 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
+BeforeExecute
+BeginTransaction
+BeforeExecute
+RollbackTransaction

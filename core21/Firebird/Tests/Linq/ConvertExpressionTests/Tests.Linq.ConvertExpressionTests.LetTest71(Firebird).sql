@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 5000
@@ -25,6 +27,8 @@ FROM
 ORDER BY
 	"c_1"."ChildID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32

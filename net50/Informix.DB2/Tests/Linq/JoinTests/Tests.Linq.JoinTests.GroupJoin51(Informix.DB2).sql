@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -40,6 +42,8 @@ FROM
 ORDER BY
 	ch.ChildID DESC
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

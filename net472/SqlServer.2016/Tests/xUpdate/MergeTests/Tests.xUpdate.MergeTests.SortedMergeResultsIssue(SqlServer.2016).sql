@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2016
 
 DELETE [t1]
@@ -137,3 +139,5 @@ ORDER BY
 	[t1].[GrandChildID],
 	[t1].[ChildID]
 
+BeforeExecute
+RollbackTransaction

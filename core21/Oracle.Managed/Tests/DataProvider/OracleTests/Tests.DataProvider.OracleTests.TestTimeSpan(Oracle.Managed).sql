@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Id Int64
 SET     @Id = 2

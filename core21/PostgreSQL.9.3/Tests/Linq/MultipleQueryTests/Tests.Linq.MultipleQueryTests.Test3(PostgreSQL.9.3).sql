@@ -50,6 +50,8 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 
 SELECT
@@ -58,6 +60,8 @@ SELECT
 FROM
 	"Child" t1
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 

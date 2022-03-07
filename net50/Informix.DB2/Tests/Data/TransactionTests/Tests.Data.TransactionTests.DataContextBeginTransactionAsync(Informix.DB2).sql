@@ -8,6 +8,8 @@ FROM
 	Parent t1
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1010
@@ -25,3 +27,5 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+RollbackTransaction

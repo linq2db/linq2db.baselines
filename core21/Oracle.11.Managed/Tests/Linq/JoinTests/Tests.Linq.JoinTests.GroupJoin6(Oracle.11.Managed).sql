@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @n Int32
 SET     @n = 1
@@ -18,6 +20,8 @@ FROM
 	) key_data_result
 		INNER JOIN "Child" gjd_c ON gjd_c."ParentID" = key_data_result."ParentID" + :n
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 

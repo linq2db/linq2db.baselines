@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -14,6 +16,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2005
 

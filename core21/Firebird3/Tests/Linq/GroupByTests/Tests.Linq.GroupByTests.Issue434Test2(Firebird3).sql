@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -11,6 +13,8 @@ FROM
 WHERE
 	Lower("p"."FirstName") LIKE '%test%' ESCAPE '~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

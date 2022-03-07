@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -16,6 +18,8 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 

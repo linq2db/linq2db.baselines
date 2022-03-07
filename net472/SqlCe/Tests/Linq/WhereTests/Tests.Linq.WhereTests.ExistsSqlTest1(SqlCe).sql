@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlCe
 
 DELETE FROM
@@ -13,3 +15,5 @@ WHERE
 			[c_1].[ParentID] = [Parent].[ParentID]
 	)
 
+BeforeExecute
+RollbackTransaction

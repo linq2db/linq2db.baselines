@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -31,3 +33,5 @@ SELECT FIRST 1
 FROM
 	Parent t
 
+BeforeExecute
+RollbackTransaction

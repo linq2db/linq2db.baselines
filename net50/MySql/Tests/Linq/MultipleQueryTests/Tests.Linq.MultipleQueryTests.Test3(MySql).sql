@@ -50,6 +50,8 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
@@ -58,6 +60,8 @@ SELECT
 FROM
 	`Child` `t1`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 
