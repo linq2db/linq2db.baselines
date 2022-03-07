@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017 (asynchronously)
 DECLARE @ParentID Int -- Int32
@@ -19,4 +19,4 @@ VALUES
 )
 
 BeforeExecute
-RollbackTransaction
+RollbackTransactionAsync
