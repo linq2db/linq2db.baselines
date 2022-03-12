@@ -51,7 +51,7 @@ SELECT
 	t1.ID,
 	t1."LastName",
 	t1."MiddleName",
-	t1."entry" as "entry_1",
+	t1."entry",
 	t1."rn"
 FROM
 	CTE_1 t1

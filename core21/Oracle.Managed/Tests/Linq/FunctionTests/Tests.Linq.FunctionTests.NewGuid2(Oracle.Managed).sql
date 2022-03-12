@@ -4,7 +4,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Sys_Guid() as "c1"
+	Sys_Guid()
 FROM
 	"LinqDataTypes" p
 FETCH NEXT :take ROWS ONLY

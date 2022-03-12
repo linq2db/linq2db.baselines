@@ -43,7 +43,7 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT DISTINCT
-	t1."Value" as "Value_1"
+	t1."Value"
 FROM
 	"TakeSkipClass" t1
 FETCH NEXT :take ROWS ONLY
