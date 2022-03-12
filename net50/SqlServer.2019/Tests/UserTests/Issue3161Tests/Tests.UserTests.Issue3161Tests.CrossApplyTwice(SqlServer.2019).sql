@@ -92,6 +92,8 @@ VALUES
 (23,12,N'Child23')
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 1
@@ -114,6 +116,8 @@ FROM
 				[_x].[PARENTID3] = [detail].[ID2]
 		) [t1]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2019 SqlServer.2017
 
