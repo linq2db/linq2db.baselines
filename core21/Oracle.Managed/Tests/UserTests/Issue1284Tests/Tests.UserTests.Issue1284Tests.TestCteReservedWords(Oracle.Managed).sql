@@ -12,7 +12,7 @@ AS
 		"Person" x
 )
 SELECT
-	t1."Operator" as "Operator_1"
+	t1."Operator"
 FROM
 	CTE_1 t1
 FETCH NEXT :take ROWS ONLY
@@ -23,7 +23,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x."LastName" as "Operator_1"
+	x."LastName" as "Operator"
 FROM
 	"Person" x
 FETCH NEXT :take ROWS ONLY

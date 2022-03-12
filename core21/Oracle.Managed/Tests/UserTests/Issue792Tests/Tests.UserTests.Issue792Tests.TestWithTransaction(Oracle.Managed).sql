@@ -14,7 +14,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	user as "c1"
+	user
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
