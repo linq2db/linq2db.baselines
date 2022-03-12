@@ -312,6 +312,8 @@ VALUES
 (101,1,'Some Doc x')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -377,6 +379,8 @@ FROM
 		ON "key_data_result"."Id" = "detail"."AdminId"
 		LEFT JOIN "Email" "a_Email_1" ON "a_InternalEmail"."Id" = "a_Email_1"."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
