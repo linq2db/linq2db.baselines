@@ -20,7 +20,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as "c1",
+	END,
 	(
 		SELECT
 			Count(*)
@@ -28,9 +28,9 @@ SELECT
 			"Child" c_2
 		WHERE
 			c_2."ParentID" = t."ParentID" AND c_2."ChildID" > -100
-	) as "Count_1",
+	) as "Count",
 	t1."First1",
-	t2."ParentID" as "ParentID_1",
+	t2."ParentID",
 	t2."ChildID"
 FROM
 	"Parent" t
