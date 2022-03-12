@@ -50,7 +50,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 

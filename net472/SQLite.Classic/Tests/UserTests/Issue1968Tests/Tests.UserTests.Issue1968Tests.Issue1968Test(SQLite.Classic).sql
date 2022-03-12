@@ -125,7 +125,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @ParentID Int32

@@ -200,7 +200,7 @@ VALUES
 ('x','Urupinsk')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 

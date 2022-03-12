@@ -65,7 +65,7 @@ SELECT N'Prod 5',1,N'q 5' UNION ALL
 SELECT N'Prod 6',1,N'q 6'
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @input_2 Varchar2(6) -- String

@@ -88,7 +88,7 @@ SELECT 1,1 UNION ALL
 SELECT 2,2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @eventId Int -- Int32

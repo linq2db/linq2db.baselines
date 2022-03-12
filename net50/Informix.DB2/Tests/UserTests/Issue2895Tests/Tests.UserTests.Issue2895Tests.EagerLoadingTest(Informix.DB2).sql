@@ -339,6 +339,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -404,6 +406,8 @@ FROM
 		ON key_data_result.Id = detail.AdminId
 		LEFT JOIN Email a_Email_1 ON a_InternalEmail.Id = a_Email_1.Id
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

@@ -350,6 +350,8 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
@@ -415,6 +417,8 @@ FROM
 		ON key_data_result."Id" = detail."AdminId"
 		LEFT JOIN "Email" a_Email_1 ON a_InternalEmail."Id" = a_Email_1."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 

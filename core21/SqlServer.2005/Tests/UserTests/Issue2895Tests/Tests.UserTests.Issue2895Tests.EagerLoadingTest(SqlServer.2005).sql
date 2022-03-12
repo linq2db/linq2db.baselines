@@ -249,6 +249,8 @@ SELECT 100,2,N'Some Doc 2' UNION ALL
 SELECT 101,1,N'Some Doc x'
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -314,6 +316,8 @@ FROM
 		ON [key_data_result].[Id] = [detail].[AdminId]
 		LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2005
 

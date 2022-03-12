@@ -8,7 +8,7 @@ FROM
 	"Parent" "t1"
 
 BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @ParentID Integer -- Int32

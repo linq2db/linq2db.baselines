@@ -8,7 +8,7 @@ FROM
 	"Parent" t1
 
 BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @ParentID Integer -- Int32

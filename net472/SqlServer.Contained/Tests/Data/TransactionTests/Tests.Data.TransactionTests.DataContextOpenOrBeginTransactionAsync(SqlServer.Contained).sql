@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 DECLARE @ParentID Int -- Int32

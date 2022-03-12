@@ -187,7 +187,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
 
@@ -216,7 +216,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Usage_1 Int -- Int32
@@ -247,7 +247,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Usage_1 Int -- Int32
@@ -476,7 +476,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
 
@@ -505,7 +505,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Usage_1 Int -- Int32
@@ -536,7 +536,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Usage_1 Int -- Int32

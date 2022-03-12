@@ -69,7 +69,7 @@ SELECT 5,1,2 FROM rdb$database UNION ALL
 SELECT 6,1,2 FROM rdb$database
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird4 Firebird
 
@@ -98,7 +98,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @Usage_1 Integer -- Int32
@@ -129,7 +129,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @Usage_1 Integer -- Int32
@@ -246,7 +246,7 @@ SELECT 5,1,2 FROM rdb$database UNION ALL
 SELECT 6,1,2 FROM rdb$database
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird4 Firebird
 
@@ -275,7 +275,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @Usage_1 Integer -- Int32
@@ -306,7 +306,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @Usage_1 Integer -- Int32

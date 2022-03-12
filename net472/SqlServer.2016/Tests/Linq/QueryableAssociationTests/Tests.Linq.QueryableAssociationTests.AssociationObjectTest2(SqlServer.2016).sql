@@ -102,7 +102,7 @@ WHERE
 	)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2016
 

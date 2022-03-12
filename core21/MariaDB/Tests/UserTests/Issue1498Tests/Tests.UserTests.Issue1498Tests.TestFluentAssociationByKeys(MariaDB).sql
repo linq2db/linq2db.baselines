@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @take Int32

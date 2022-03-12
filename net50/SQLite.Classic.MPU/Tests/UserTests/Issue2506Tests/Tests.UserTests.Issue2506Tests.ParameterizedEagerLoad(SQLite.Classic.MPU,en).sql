@@ -59,7 +59,7 @@ VALUES
 (2,'en','Item 2 english text')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @lang NVarChar(2) -- String

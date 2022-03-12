@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @input_2 NVarChar(6) -- String

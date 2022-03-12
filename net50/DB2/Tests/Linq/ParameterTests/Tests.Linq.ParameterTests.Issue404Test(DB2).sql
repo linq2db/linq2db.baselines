@@ -71,7 +71,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
@@ -100,7 +100,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -131,7 +131,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -250,7 +250,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
@@ -279,7 +279,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -310,7 +310,7 @@ FROM
 	"Table404One" "c_1"
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Usage_1 Integer(4) -- Int32

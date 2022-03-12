@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @input_2 VarChar(4) -- String

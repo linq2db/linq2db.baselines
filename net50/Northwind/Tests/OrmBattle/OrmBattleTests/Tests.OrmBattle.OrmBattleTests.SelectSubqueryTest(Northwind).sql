@@ -80,7 +80,7 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Northwind SqlServer.2017
 

@@ -267,6 +267,8 @@ SELECT 100,2,'Some Doc 2' UNION ALL
 SELECT 101,1,'Some Doc x'
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -332,6 +334,8 @@ FROM
 		ON [key_data_result].[Id] = [detail].[AdminId]
 		LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 

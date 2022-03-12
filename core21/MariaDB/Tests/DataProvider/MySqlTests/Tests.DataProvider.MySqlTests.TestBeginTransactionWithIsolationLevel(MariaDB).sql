@@ -9,7 +9,7 @@ WHERE
 	`t1`.`ParentID` = 1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Unspecified)
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 

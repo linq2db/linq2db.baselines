@@ -57,7 +57,7 @@ SELECT 5,1,2 UNION ALL
 SELECT 6,1,2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -86,7 +86,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Usage_1 Int -- Int32
@@ -117,7 +117,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Usage_1 Int -- Int32
@@ -218,7 +218,7 @@ SELECT 5,1,2 UNION ALL
 SELECT 6,1,2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -247,7 +247,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Usage_1 Int -- Int32
@@ -278,7 +278,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Usage_1 Int -- Int32

@@ -55,7 +55,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 
@@ -84,7 +84,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Usage_1  -- Int32
@@ -115,7 +115,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Usage_1  -- Int32
@@ -212,7 +212,7 @@ VALUES
 (6,1,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 
@@ -241,7 +241,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Usage_1  -- Int32
@@ -272,7 +272,7 @@ FROM
 	[Table404One] [c_1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Usage_1  -- Int32

@@ -55,7 +55,7 @@ SELECT 3,1 UNION ALL
 SELECT 4,2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 

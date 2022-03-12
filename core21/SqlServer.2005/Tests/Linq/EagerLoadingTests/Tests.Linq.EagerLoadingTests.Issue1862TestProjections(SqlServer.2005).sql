@@ -129,7 +129,7 @@ SELECT 3,2,3,0 UNION ALL
 SELECT 4,4,5,0
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @blogId Int -- Int32

@@ -27,7 +27,7 @@ INSERT INTO [SampleClass]
 SELECT 1,100
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 

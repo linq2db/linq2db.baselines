@@ -202,7 +202,7 @@ VALUES
 (190,'Sub2_19',NULL)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -235,7 +235,7 @@ WHERE
 	[m_1].[Id] > 1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 

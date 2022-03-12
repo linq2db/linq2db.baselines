@@ -69,7 +69,7 @@ SELECT 'Prod 5',1,'q 5' UNION ALL
 SELECT 'Prod 6',1,'q 6'
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 

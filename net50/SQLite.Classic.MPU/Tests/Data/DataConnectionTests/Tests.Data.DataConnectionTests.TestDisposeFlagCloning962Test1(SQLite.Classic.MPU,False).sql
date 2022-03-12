@@ -59,7 +59,7 @@ VALUES
 ('Prod 6',1,'q 6')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

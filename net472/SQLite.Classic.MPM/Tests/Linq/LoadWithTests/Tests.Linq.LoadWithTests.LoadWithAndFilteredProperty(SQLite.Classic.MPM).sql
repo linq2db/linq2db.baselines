@@ -202,7 +202,7 @@ VALUES
 (190,'Sub2_19',NULL)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -236,7 +236,7 @@ WHERE
 	[m_1].[Id] > 1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -270,7 +270,7 @@ WHERE
 	[m_1].[Id] > 1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -340,7 +340,7 @@ WHERE
 	[m_1].[Id] > 1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -410,7 +410,7 @@ WHERE
 	[m_1].[Id] > 1
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

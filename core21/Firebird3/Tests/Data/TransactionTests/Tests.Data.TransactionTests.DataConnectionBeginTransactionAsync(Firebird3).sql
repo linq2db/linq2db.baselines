@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @ParentID Integer -- Int32

@@ -109,7 +109,7 @@ SELECT 'Prod 5',1,'q 5' FROM rdb$database UNION ALL
 SELECT 'Prod 6',1,'q 6' FROM rdb$database
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird
 

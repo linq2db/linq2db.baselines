@@ -57,7 +57,7 @@ VALUES
 (100,'Detail1',1)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32

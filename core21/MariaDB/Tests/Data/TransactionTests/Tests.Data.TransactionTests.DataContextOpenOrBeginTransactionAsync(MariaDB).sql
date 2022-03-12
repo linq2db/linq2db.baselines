@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransactionAsync
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32

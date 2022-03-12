@@ -339,6 +339,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
 -- Access AccessOleDb
 
 SELECT
@@ -399,6 +401,8 @@ FROM
 				LEFT JOIN [InternalEmail] [a_InternalEmail] ON ([a_Email].[Id] = [a_InternalEmail].[Id]))
 		LEFT JOIN [Email] [a_Email_1] ON ([a_InternalEmail].[Id] = [a_Email_1].[Id])
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access AccessOleDb
 

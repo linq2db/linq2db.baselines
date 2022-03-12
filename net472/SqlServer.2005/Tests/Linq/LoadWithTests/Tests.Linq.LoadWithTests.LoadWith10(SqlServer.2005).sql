@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -32,7 +32,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -65,7 +65,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -98,7 +98,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -131,7 +131,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -164,7 +164,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -197,7 +197,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -230,7 +230,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -263,7 +263,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -296,7 +296,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -329,7 +329,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -362,7 +362,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -395,7 +395,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -428,7 +428,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -461,7 +461,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -494,7 +494,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -527,7 +527,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -560,7 +560,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -593,7 +593,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -626,7 +626,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -659,7 +659,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -692,7 +692,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -725,7 +725,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -758,7 +758,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -791,7 +791,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -824,7 +824,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -857,7 +857,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -890,7 +890,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -923,7 +923,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -956,7 +956,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -989,7 +989,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1022,7 +1022,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1055,7 +1055,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1088,7 +1088,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1121,7 +1121,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1154,7 +1154,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1187,7 +1187,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1220,7 +1220,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1253,7 +1253,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1286,7 +1286,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1319,7 +1319,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1352,7 +1352,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1385,7 +1385,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1418,7 +1418,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1451,7 +1451,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1484,7 +1484,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1517,7 +1517,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1550,7 +1550,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1583,7 +1583,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1616,7 +1616,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1649,7 +1649,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1682,7 +1682,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1715,7 +1715,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1748,7 +1748,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1781,7 +1781,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1814,7 +1814,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1847,7 +1847,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1880,7 +1880,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1913,7 +1913,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1946,7 +1946,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -1979,7 +1979,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2012,7 +2012,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2045,7 +2045,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2078,7 +2078,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2111,7 +2111,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2144,7 +2144,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2177,7 +2177,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2210,7 +2210,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2243,7 +2243,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2276,7 +2276,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2309,7 +2309,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2342,7 +2342,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2375,7 +2375,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2408,7 +2408,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2441,7 +2441,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2474,7 +2474,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2507,7 +2507,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2540,7 +2540,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2573,7 +2573,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2606,7 +2606,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2639,7 +2639,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2672,7 +2672,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2705,7 +2705,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2738,7 +2738,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2771,7 +2771,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2804,7 +2804,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2837,7 +2837,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2870,7 +2870,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2903,7 +2903,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2936,7 +2936,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -2969,7 +2969,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -3002,7 +3002,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -3035,7 +3035,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -3068,7 +3068,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -3101,7 +3101,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -3134,7 +3134,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -3167,7 +3167,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -3200,7 +3200,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -3233,7 +3233,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 
@@ -3266,7 +3266,7 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 

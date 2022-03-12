@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32

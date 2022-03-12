@@ -57,7 +57,7 @@ VALUES
 (4,2)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 

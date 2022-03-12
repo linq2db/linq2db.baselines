@@ -207,7 +207,7 @@ INSERT INTO [Cities]
 SELECT N'x',N'Urupinsk'
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 

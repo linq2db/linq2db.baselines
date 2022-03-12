@@ -63,7 +63,7 @@ VALUES
 ('Prod 6',1,'q 6')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 

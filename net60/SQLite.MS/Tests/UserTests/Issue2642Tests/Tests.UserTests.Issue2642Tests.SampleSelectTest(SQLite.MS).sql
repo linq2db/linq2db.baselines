@@ -26,7 +26,7 @@ CREATE TABLE [IIRs]
 )
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @DateTime  -- DateTime

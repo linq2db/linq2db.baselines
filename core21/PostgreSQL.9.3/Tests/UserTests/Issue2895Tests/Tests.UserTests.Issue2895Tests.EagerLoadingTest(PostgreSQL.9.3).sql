@@ -240,7 +240,7 @@ VALUES
 (101,1,'Some Doc x')
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
 

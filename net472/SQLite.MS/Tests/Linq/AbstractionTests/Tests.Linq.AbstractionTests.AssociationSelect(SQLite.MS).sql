@@ -317,7 +317,7 @@ VALUES
 (100,2000)
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -352,7 +352,7 @@ FROM
 	[SampleClass1] [t1]
 
 BeforeExecute
-BeginTransaction
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
 
