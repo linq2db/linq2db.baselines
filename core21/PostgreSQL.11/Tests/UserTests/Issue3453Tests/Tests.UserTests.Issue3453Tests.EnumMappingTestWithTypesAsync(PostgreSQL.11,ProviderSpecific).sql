@@ -9,37 +9,18 @@ CREATE TYPE time_unit AS ENUM ('hour', 'day');
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-
-CREATE TABLE IF NOT EXISTS schedule
+CREATE TABLE "public".schedule
 (
-  id SERIAL CONSTRAINT schedule_pk PRIMARY KEY,
-  unit                 time_unit   NOT NULL,
-  unit_nullable        time_unit       NULL,
-  amount               int         NOT NULL
-);
-INSERT INTO schedule(unit, unit_nullable,amount) VALUES ('day','day',1),('day','day',2),('day','day',3);
+	id            SERIAL     NOT NULL,
+	unit          time_unit  NOT NULL,
+	unit_nullable time_unit      NULL,
+	amount        Int        NOT NULL,
+
+	CONSTRAINT "PK_schedule" PRIMARY KEY (id)
+)
 
 BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Unit Enum -- Object
-SET     @Unit = 'hour'
-DECLARE @UnitNullable Unknown -- Object
-SET     @UnitNullable = NULL
-DECLARE @Amount Integer -- Int32
-SET     @Amount = 1
-
-INSERT INTO "public".schedule
-(
-	unit,
-	unit_nullable,
-	amount
-)
-VALUES
-(
-	:Unit,
-	:UnitNullable,
-	:Amount
-)
+INSERT ASYNC BULK "public".schedule(unit, unit_nullable, amount
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -133,4 +114,9 @@ SELECT
 	t1.amount
 FROM
 	"public".schedule t1
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "public".schedule
 
