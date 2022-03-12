@@ -61,7 +61,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2017
+-- SqlServer.Contained SqlServer.2017 (asynchronously)
 
 DROP TABLE IF EXISTS [TableWithData]
 
