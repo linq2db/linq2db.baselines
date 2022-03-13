@@ -27,7 +27,7 @@ VALUES
 (2)
 
 BeforeExecute
-INSERT ASYNC BULK "SimpleBulkCopyTable"(Id
+INSERT ASYNC BULK "SimpleBulkCopyTable"(Id)
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL (asynchronously)
@@ -50,7 +50,7 @@ VALUES
 (20)
 
 BeforeExecute
-INSERT ASYNC BULK "SimpleBulkCopyTable"(Id
+INSERT ASYNC BULK "SimpleBulkCopyTable"(Id)
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL
