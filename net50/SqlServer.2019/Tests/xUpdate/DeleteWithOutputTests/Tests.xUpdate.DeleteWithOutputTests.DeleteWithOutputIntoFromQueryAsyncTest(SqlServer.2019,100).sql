@@ -68,7 +68,7 @@ DELETE [s]
 OUTPUT
 	[DELETED].[Id] + @param,
 	[DELETED].[Value] + @param,
-	[DELETED].[ValueStr] + Convert(VarChar(100), @param_1)
+	[DELETED].[ValueStr] + Convert(NVarChar(100), @param_1)
 INTO [DestinationTable]
 (
 	[Id],
