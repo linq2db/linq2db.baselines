@@ -252,7 +252,7 @@ BeforeExecute
 DELETE [s]
 OUTPUT
 	[DELETED].[Id] + 1,
-	[DELETED].[ValueStr] + Convert(VarChar(11), 1)
+	[DELETED].[ValueStr] + Convert(NVarChar(100), 1)
 FROM
 	[TableWithData] [s]
 WHERE
