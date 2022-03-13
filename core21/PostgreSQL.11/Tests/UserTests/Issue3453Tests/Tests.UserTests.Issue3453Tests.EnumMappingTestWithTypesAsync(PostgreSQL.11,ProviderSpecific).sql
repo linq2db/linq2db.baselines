@@ -20,7 +20,7 @@ CREATE TABLE "public".schedule
 )
 
 BeforeExecute
-INSERT ASYNC BULK "public".schedule(unit, unit_nullable, amount
+INSERT ASYNC BULK "public".schedule(unit, unit_nullable, amount)
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
