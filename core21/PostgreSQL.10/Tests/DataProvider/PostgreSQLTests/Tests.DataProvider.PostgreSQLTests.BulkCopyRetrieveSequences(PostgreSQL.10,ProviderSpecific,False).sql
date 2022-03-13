@@ -12,7 +12,7 @@ BeforeExecute
 SELECT Max("ID") FROM "SequenceTest1"
 
 BeforeExecute
-INSERT BULK "SequenceTest1"(ID, Value
+INSERT BULK "SequenceTest1"(ID, Value)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
