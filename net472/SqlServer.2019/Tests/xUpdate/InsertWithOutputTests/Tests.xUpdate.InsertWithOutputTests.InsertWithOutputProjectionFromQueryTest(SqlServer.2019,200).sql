@@ -58,11 +58,11 @@ INSERT INTO [DestinationTable]
 )
 OUTPUT
 	[INSERTED].[Id] + 1,
-	[INSERTED].[ValueStr] + Convert(VarChar(11), 1)
+	[INSERTED].[ValueStr] + Convert(NVarChar(100), 1)
 SELECT
 	[s].[Id] + 100 + @param,
 	[s].[Value] + 100,
-	[s].[ValueStr] + Convert(VarChar(11), 100)
+	[s].[ValueStr] + Convert(NVarChar(100), 100)
 FROM
 	[TableWithData] [s]
 WHERE
