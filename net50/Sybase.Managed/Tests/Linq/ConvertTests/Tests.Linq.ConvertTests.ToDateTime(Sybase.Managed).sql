@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(DateTime, Convert(VarChar(11), DatePart(year, [t].[DateTimeValue])) + '-01-01 00:00:00') as [c1]
+			Convert(DateTime, Convert(NVarChar(100), DatePart(year, [t].[DateTimeValue])) + '-01-01 00:00:00') as [c1]
 		FROM
 			[LinqDataTypes] [t]
 	) [p]
