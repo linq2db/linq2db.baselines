@@ -7,7 +7,7 @@ CREATE TABLE "TPHTable"
 	"Discriminator" Int                                   NOT NULL,
 	"Value1"        VarChar(50) CHARACTER SET UNICODE_FSS,
 	"Value2"        VarChar(50) CHARACTER SET UNICODE_FSS,
-	"NullableBool"  VarChar(1),
+	"NullableBool"  VarChar(1) CHARACTER SET UNICODE_FSS,
 	"Value3"        VarChar(50) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
