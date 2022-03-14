@@ -91,7 +91,7 @@ VALUES
 )
 
 BeforeExecute
-INSERT ASYNC BULK temp_table1(ID, Value
+INSERT ASYNC BULK temp_table1(ID, Value)
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL (asynchronously)

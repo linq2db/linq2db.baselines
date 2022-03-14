@@ -10,7 +10,7 @@ CREATE TABLE "InventoryResourceDTO"
 )
 
 BeforeExecute
-INSERT BULK "InventoryResourceDTO"(Id, Status, ResourceID, ModifiedTimeStamp
+INSERT BULK "InventoryResourceDTO"(Id, Status, ResourceID, ModifiedTimeStamp)
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

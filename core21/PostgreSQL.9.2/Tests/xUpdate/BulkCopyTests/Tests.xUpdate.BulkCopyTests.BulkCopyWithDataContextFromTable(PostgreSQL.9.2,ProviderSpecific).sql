@@ -27,7 +27,7 @@ VALUES
 (2)
 
 BeforeExecute
-INSERT BULK "SimpleBulkCopyTable"(Id
+INSERT BULK "SimpleBulkCopyTable"(Id)
 
 BeforeExecute
 -- PostgreSQL.9.2 PostgreSQL

@@ -20,7 +20,7 @@ RETURNING
 	"ID"
 
 BeforeExecute
-INSERT BULK "AllTypes"(ID, intDataType
+INSERT BULK "AllTypes"(ID, intDataType)
 
 BeforeExecute
 -- PostgreSQL.9.3 PostgreSQL

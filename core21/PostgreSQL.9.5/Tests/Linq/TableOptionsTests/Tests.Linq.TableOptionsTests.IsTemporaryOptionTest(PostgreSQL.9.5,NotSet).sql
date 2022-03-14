@@ -91,7 +91,7 @@ VALUES
 )
 
 BeforeExecute
-INSERT BULK temp_table1(ID, Value
+INSERT BULK temp_table1(ID, Value)
 
 BeforeExecute
 -- PostgreSQL.9.5 PostgreSQL
