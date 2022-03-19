@@ -24,7 +24,7 @@ BeforeExecute
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Value1  -- Guid
-SET     @Value1 = Cast(x'a57339bd2343d84d9f4fdf9f93e2a627' as blob)
+SET     @Value1 = X'A57339BD2343D84D9F4FDF9F93E2A627'
 DECLARE @Value2  -- Int32
 SET     @Value2 = 10
 DECLARE @Value3  -- Int32

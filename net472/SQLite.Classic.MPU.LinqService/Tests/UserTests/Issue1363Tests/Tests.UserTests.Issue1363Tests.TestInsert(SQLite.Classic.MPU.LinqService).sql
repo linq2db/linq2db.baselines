@@ -10,7 +10,7 @@ CREATE TABLE [Issue1363]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Guid
-SET     @id = Cast(x'3d667bbcde0f27438f925d8cc3a11d11' as blob)
+SET     @id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [Issue1363]
 (
@@ -33,9 +33,9 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Guid
-SET     @id = Cast(x'0d6048a921de744f8ac29516b287076e' as blob)
+SET     @id = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @testId  -- Guid
-SET     @testId = Cast(x'3d667bbcde0f27438f925d8cc3a11d11' as blob)
+SET     @testId = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [Issue1363]
 (
@@ -58,7 +58,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id2  -- Guid
-SET     @id2 = Cast(x'0d6048a921de744f8ac29516b287076e' as blob)
+SET     @id2 = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @take  -- Int32
 SET     @take = 2
 
