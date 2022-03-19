@@ -10,8 +10,8 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1003,0,NULL,NULL,1,Cast('659112effe6ff94dbb6bbb16e413c883' as raw(16)),NULL,NULL,NULL,NULL)
-	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1004,0,NULL,NULL,1,Cast('659112effe6ff94dbb6bbb16e413c883' as raw(16)),NULL,NULL,NULL,NULL)
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1003,0,NULL,NULL,1,HEXTORAW('659112EFFE6FF94DBB6BBB16E413C883'),NULL,NULL,NULL,NULL)
+	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1004,0,NULL,NULL,1,HEXTORAW('659112EFFE6FF94DBB6BBB16E413C883'),NULL,NULL,NULL,NULL)
 SELECT * FROM dual
 
 BeforeExecute
