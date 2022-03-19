@@ -12,7 +12,7 @@ CREATE TABLE [InventoryResourceDTO]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Guid
-SET     @Id = Cast(x'3d667bbcde0f27438f925d8cc3a11d11' as blob)
+SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @Status  -- Int32
 SET     @Status = 1
 DECLARE @Color  -- Int32
