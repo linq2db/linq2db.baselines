@@ -6,5 +6,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	[p].[GuidValue] IN (Cast(x'c070f9d2ac3587499cd55badb1757436' as blob))
+	[p].[GuidValue] IN (X'C070F9D2AC3587499CD55BADB1757436')
 
