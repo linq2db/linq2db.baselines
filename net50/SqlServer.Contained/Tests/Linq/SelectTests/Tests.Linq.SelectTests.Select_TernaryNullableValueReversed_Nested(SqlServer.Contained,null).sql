@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2017
+DECLARE @Value_3 Int -- Int32
+SET     @Value_3 = NULL
 
 SELECT
-	NULL
+	@Value_3
 
