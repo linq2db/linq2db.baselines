@@ -83,19 +83,14 @@ BeforeExecute
 -- Northwind SqlServer.2017
 
 SELECT
-	[t1].[Phone]
+	[c_1].[Phone]
 FROM
-	(
-		SELECT
-			[c_1].[Phone]
-		FROM
-			[Customers] [c_1]
-		UNION
-		SELECT
-			[c_2].[Fax] as [Phone]
-		FROM
-			[Customers] [c_2]
-	) [t1]
+	[Customers] [c_1]
+UNION
+SELECT
+	[c_2].[Fax]
+FROM
+	[Customers] [c_2]
 UNION
 SELECT
 	[e].[HomePhone]
