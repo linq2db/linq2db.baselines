@@ -311,7 +311,7 @@ CREATE TABLE "DataTypeTest"
 	"DateTime_"       TIMESTAMP,
 	"Decimal_"        DECIMAL(10, 2),
 	"Double_"         DOUBLE PRECISION,
-	"Guid_"           CHAR(38),
+	"Guid_"           CHAR(16) CHARACTER SET OCTETS,
 	"Int16_"          SMALLINT,
 	"Int32_"          INTEGER,
 	"Int64_"          NUMERIC(11),
@@ -362,7 +362,7 @@ INSERT INTO "DataTypeTest"
 	 "Xml_")
 VALUES
 	('dddddddddddddddd', 1,  255,'dddddddddddddddd', 'B', 'NOW', 12345.67,
-	1234.567, 'dddddddddddddddddddddddddddddddd', 32767, 32768, 1000000, 12.3456, 127,
+	1234.567, X'dddddddddddddddddddddddddddddddd', 32767, 32768, 1000000, 12.3456, 127,
 	1234.123, 'dddddddddddddddd', 'string', 32767, 32768, 200000000,
 	'<root><element strattr="strvalue" intattr="12345"/></root>');
 
@@ -411,7 +411,7 @@ CREATE TABLE "LinqDataTypes"
 	"DateTimeValue"  timestamp,
 	"DateTimeValue2" timestamp,
 	"BoolValue"      char(1),
-	"GuidValue"      char(38),
+	"GuidValue"      CHAR(16) CHARACTER SET OCTETS,
 	"BinaryValue"    blob,
 	"SmallIntValue"  smallint,
 	"IntValue"       int,
@@ -1001,7 +1001,7 @@ CREATE TABLE "TestMerge1"
 	"FieldDouble"     DOUBLE PRECISION,
 	"FieldDateTime"   TIMESTAMP,
 	"FieldBinary"     BLOB(20),
-	"FieldGuid"       CHAR(38),
+	"FieldGuid"       CHAR(16) CHARACTER SET OCTETS,
 	"FieldDecimal"    DECIMAL(18, 10),
 	"FieldDate"       DATE,
 	"FieldTime"       TIMESTAMP,
@@ -1031,7 +1031,7 @@ CREATE TABLE "TestMerge2"
 	"FieldDouble"     DOUBLE PRECISION,
 	"FieldDateTime"   TIMESTAMP,
 	"FieldBinary"     BLOB(20),
-	"FieldGuid"       CHAR(38),
+	"FieldGuid"       CHAR(16) CHARACTER SET OCTETS,
 	"FieldDecimal"    DECIMAL(18, 10),
 	"FieldDate"       DATE,
 	"FieldTime"       TIMESTAMP,
@@ -1088,18 +1088,18 @@ INSERT INTO "LinqDataTypes"
 	"BigIntValue",
 	"StringValue"
 )
-SELECT 1,1.11,CAST('2001-01-11 01:11:21.100' AS timestamp),NULL,1,'ef129165-6ffe-4df9-bb6b-bb16e413c883',1,NULL,1,NULL FROM rdb$database UNION ALL
-SELECT 2,2.49,CAST('2005-05-15 05:15:25.500' AS timestamp),NULL,0,'bc663a61-7b40-4681-ac38-f9aaf55b706b',2,NULL,2,'' FROM rdb$database UNION ALL
-SELECT 3,3.99,CAST('2009-09-19 09:19:29.090' AS timestamp),NULL,1,'d2f970c0-35ac-4987-9cd5-5badb1757436',3,NULL,NULL,'1' FROM rdb$database UNION ALL
-SELECT 4,4.50,CAST('2009-09-20 09:19:29.090' AS timestamp),NULL,0,'40932fdb-1543-4e4a-ac2c-ca371604fb4b',4,NULL,NULL,'2' FROM rdb$database UNION ALL
-SELECT 5,5.50,CAST('2009-09-20 09:19:29.090' AS timestamp),NULL,1,'febe3eca-cb5f-40b2-ad39-2979d312afca',5,NULL,NULL,'3' FROM rdb$database UNION ALL
-SELECT 6,6.55,CAST('2009-09-22 09:19:29.090' AS timestamp),NULL,0,'8d3c5d1d-47db-4730-9fe7-968f6228a4c0',6,NULL,NULL,'4' FROM rdb$database UNION ALL
-SELECT 7,7.00,CAST('2009-09-23 09:19:29.090' AS timestamp),NULL,1,'48094115-83af-46dd-a906-bff26ee21ee2',7,NULL,NULL,'5' FROM rdb$database UNION ALL
-SELECT 8,8.99,CAST('2009-09-24 09:19:29.090' AS timestamp),NULL,0,'c1139f1f-1335-4cd4-937e-92602f732dd3',8,NULL,NULL,'6' FROM rdb$database UNION ALL
-SELECT 9,9.63,CAST('2009-09-25 09:19:29.090' AS timestamp),NULL,1,'46c5c512-3d4b-4cf7-b4e7-1de080789e5d',9,NULL,NULL,'7' FROM rdb$database UNION ALL
-SELECT 10,10.77,CAST('2009-09-26 09:19:29.090' AS timestamp),NULL,0,'61b2bc55-147f-4b40-93ed-a4aa83602fee',10,NULL,NULL,'8' FROM rdb$database UNION ALL
-SELECT 11,11.45,CAST('2009-09-27' AS timestamp),NULL,1,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230',11,NULL,NULL,'9' FROM rdb$database UNION ALL
-SELECT 12,11.45,CAST('2012-11-07 19:19:29.090' AS timestamp),NULL,1,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0' FROM rdb$database
+SELECT 1,1.11,CAST('2001-01-11 01:11:21.100' AS timestamp),NULL,1,X'EF1291656FFE4DF9BB6BBB16E413C883',1,NULL,1,CAST(NULL AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 2,2.49,CAST('2005-05-15 05:15:25.500' AS timestamp),NULL,0,X'BC663A617B404681AC38F9AAF55B706B',2,NULL,2,'' FROM rdb$database UNION ALL
+SELECT 3,3.99,CAST('2009-09-19 09:19:29.090' AS timestamp),NULL,1,X'D2F970C035AC49879CD55BADB1757436',3,NULL,NULL,'1' FROM rdb$database UNION ALL
+SELECT 4,4.50,CAST('2009-09-20 09:19:29.090' AS timestamp),NULL,0,X'40932FDB15434E4AAC2CCA371604FB4B',4,NULL,NULL,'2' FROM rdb$database UNION ALL
+SELECT 5,5.50,CAST('2009-09-20 09:19:29.090' AS timestamp),NULL,1,X'FEBE3ECACB5F40B2AD392979D312AFCA',5,NULL,NULL,'3' FROM rdb$database UNION ALL
+SELECT 6,6.55,CAST('2009-09-22 09:19:29.090' AS timestamp),NULL,0,X'8D3C5D1D47DB47309FE7968F6228A4C0',6,NULL,NULL,'4' FROM rdb$database UNION ALL
+SELECT 7,7.00,CAST('2009-09-23 09:19:29.090' AS timestamp),NULL,1,X'4809411583AF46DDA906BFF26EE21EE2',7,NULL,NULL,'5' FROM rdb$database UNION ALL
+SELECT 8,8.99,CAST('2009-09-24 09:19:29.090' AS timestamp),NULL,0,X'C1139F1F13354CD4937E92602F732DD3',8,NULL,NULL,'6' FROM rdb$database UNION ALL
+SELECT 9,9.63,CAST('2009-09-25 09:19:29.090' AS timestamp),NULL,1,X'46C5C5123D4B4CF7B4E71DE080789E5D',9,NULL,NULL,'7' FROM rdb$database UNION ALL
+SELECT 10,10.77,CAST('2009-09-26 09:19:29.090' AS timestamp),NULL,0,X'61B2BC55147F4B4093EDA4AA83602FEE',10,NULL,NULL,'8' FROM rdb$database UNION ALL
+SELECT 11,11.45,CAST('2009-09-27' AS timestamp),NULL,1,X'D3021D1897F04DC098D0F0C7DF4A1230',11,NULL,NULL,'9' FROM rdb$database UNION ALL
+SELECT 12,11.45,CAST('2012-11-07 19:19:29.090' AS timestamp),NULL,1,X'03021D1897F04DC098D0F0C7DF4A1230',12,NULL,NULL,'0' FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -1184,7 +1184,7 @@ INSERT INTO "InheritanceParent"
 	"InheritanceParentId",
 	"Name"
 )
-SELECT NULL,1,NULL FROM rdb$database UNION ALL
+SELECT NULL,1,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 1,2,NULL FROM rdb$database UNION ALL
 SELECT 2,3,'InheritanceParent2' FROM rdb$database
 
@@ -1198,7 +1198,7 @@ INSERT INTO "InheritanceChild"
 	"InheritanceChildId",
 	"Name"
 )
-SELECT 1,NULL,1,NULL FROM rdb$database UNION ALL
+SELECT 1,NULL,1,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,1,2,NULL FROM rdb$database UNION ALL
 SELECT 3,2,3,'InheritanceParent2' FROM rdb$database
 

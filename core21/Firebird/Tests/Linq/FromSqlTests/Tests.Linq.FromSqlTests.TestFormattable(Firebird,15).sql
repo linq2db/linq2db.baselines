@@ -28,7 +28,7 @@ INSERT INTO "sample_class"
 	"id",
 	"value"
 )
-SELECT 1,'Str_1' FROM rdb$database UNION ALL
+SELECT 1,CAST('Str_1' AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,'Str_2' FROM rdb$database UNION ALL
 SELECT 3,'Str_3' FROM rdb$database UNION ALL
 SELECT 4,'Str_4' FROM rdb$database UNION ALL
