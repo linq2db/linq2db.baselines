@@ -28,7 +28,7 @@ INSERT INTO "MainTable"
 	"Id",
 	"Field"
 )
-SELECT 1,'value 1' FROM rdb$database UNION ALL
+SELECT 1,CAST('value 1' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,'value 2' FROM rdb$database UNION ALL
 SELECT 3,'value 3' FROM rdb$database
 

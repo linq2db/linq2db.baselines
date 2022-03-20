@@ -30,7 +30,7 @@ INSERT INTO "TableWithData"
 	"Value",
 	"ValueStr"
 )
-SELECT 1,-1,'Str1' FROM rdb$database UNION ALL
+SELECT 1,-1,CAST('Str1' AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,-2,'Str2' FROM rdb$database UNION ALL
 SELECT 3,-3,'Str3' FROM rdb$database UNION ALL
 SELECT 4,-4,'Str4' FROM rdb$database UNION ALL
@@ -72,7 +72,7 @@ INSERT INTO "DestinationTable"
 	"Value",
 	"ValueStr"
 )
-SELECT 1,0,'0Dst' FROM rdb$database UNION ALL
+SELECT 1,0,CAST('0Dst' AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,-1,'-1Dst' FROM rdb$database UNION ALL
 SELECT 3,-2,'-2Dst' FROM rdb$database UNION ALL
 SELECT 4,-3,'-3Dst' FROM rdb$database UNION ALL

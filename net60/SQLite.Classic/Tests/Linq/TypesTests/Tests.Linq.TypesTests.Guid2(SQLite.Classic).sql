@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = Cast(x'c070f9d2ac3587499cd55badb1757436' as blob)
+SET     @GuidValue = X'C070F9D2AC3587499CD55BADB1757436'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -23,7 +23,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = Cast(x'db2f934043154a4eac2cca371604fb4b' as blob)
+SET     @GuidValue = X'DB2F934043154A4EAC2CCA371604FB4B'
 DECLARE @take  -- Int32
 SET     @take = 2
 

@@ -8,5 +8,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	Cast("t"."GuidValue" as VarChar(36) CHARACTER SET UNICODE_FSS) = @guid
+	Lower(UUID_TO_CHAR("t"."GuidValue")) = @guid
 

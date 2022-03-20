@@ -111,7 +111,7 @@ SET     @FieldDateTime = '2000-11-12 21:14:15.167'
 DECLARE @FieldBinary Binary(0)
 SET     @FieldBinary = X''
 DECLARE @FieldGuid  -- Guid
-SET     @FieldGuid = Cast(x'00000000000000000000000000000000' as blob)
+SET     @FieldGuid = X'00000000000000000000000000000000'
 DECLARE @FieldDate  -- DateTime
 SET     @FieldDate = '2000-11-23'
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -187,7 +187,7 @@ SET     @FieldDateTime = '2001-10-12 21:14:15.167'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'000102030004'
 DECLARE @FieldGuid  -- Guid
-SET     @FieldGuid = Cast(x'ffffffffffffffffffffffffffffffff' as blob)
+SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
 SET     @FieldDate = '2123-11-23'
 DECLARE @FieldEnumString NVarChar(1) -- String
@@ -262,7 +262,7 @@ SET     @FieldDateTime = '2098-10-12 21:14:15.997'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
-SET     @FieldGuid = Cast(x'ffffffffffffffffffffffffffffffff' as blob)
+SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
 SET     @FieldDate = '3210-11-23'
 DECLARE @FieldEnumString NVarChar -- String
@@ -336,7 +336,7 @@ SET     @FieldDateTime = '2098-10-12 21:14:15.907'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
-SET     @FieldGuid = Cast(x'ffffffffffffffffffffffffffffffff' as blob)
+SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
 SET     @FieldDate = '3210-11-23'
 DECLARE @FieldEnumString NVarChar -- String
@@ -412,7 +412,7 @@ SET     @FieldDateTime = '2001-10-12 21:14:15.167'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'000102030004'
 DECLARE @FieldGuid  -- Guid
-SET     @FieldGuid = Cast(x'ffffffffffffffffffffffffffffffff' as blob)
+SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
 SET     @FieldDate = '2123-11-23'
 DECLARE @FieldEnumString NVarChar(1) -- String
@@ -486,7 +486,7 @@ SET     @FieldDateTime = '2098-10-12 21:14:15.913'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
-SET     @FieldGuid = Cast(x'ffffffffffffffffffffffffffffffff' as blob)
+SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
 SET     @FieldDate = '3210-11-23'
 DECLARE @FieldEnumString NVarChar -- String
@@ -562,7 +562,7 @@ SET     @FieldDateTime = '2001-10-12 21:14:15.167'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'000102030004'
 DECLARE @FieldGuid  -- Guid
-SET     @FieldGuid = Cast(x'ffffffffffffffffffffffffffffffff' as blob)
+SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
 SET     @FieldDate = '2123-11-23'
 DECLARE @FieldEnumString NVarChar(1) -- String

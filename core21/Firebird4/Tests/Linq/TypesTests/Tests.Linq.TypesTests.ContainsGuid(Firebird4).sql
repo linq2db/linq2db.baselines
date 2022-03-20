@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	"p"."GuidValue" IN ('d2f970c0-35ac-4987-9cd5-5badb1757436')
+	"p"."GuidValue" IN (X'D2F970C035AC49879CD55BADB1757436')
 

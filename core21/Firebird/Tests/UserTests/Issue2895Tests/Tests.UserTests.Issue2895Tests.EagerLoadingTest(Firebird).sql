@@ -298,7 +298,7 @@ INSERT INTO "Document"
 	"Position",
 	"Name"
 )
-SELECT 100,1,'Some Doc 1' FROM rdb$database UNION ALL
+SELECT 100,1,CAST('Some Doc 1' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 100,2,'Some Doc 2' FROM rdb$database UNION ALL
 SELECT 101,1,'Some Doc x' FROM rdb$database
 

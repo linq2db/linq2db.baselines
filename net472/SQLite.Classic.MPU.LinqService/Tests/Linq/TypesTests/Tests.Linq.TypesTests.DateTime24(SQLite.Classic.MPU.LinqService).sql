@@ -53,7 +53,7 @@ SET     @DateTimeValue2 = '2010-12-14 05:00:07.425'
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = 1
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = Cast(x'659112effe6ff94dbb6bbb16e413c883' as blob)
+SET     @GuidValue = X'659112EFFE6FF94DBB6BBB16E413C883'
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 1
 DECLARE @IntValue  -- Int32

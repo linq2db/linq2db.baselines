@@ -17,7 +17,7 @@ SET     @DateTimeValue = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = 1
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = Cast(x'00000000000000000000000000000000' as blob)
+SET     @GuidValue = X'00000000000000000000000000000000'
 DECLARE @BinaryValue Binary(4)
 SET     @BinaryValue = X'01020304'
 DECLARE @SmallIntValue  -- Int16

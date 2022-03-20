@@ -21,7 +21,7 @@ CREATE TABLE [WmsLoadCarrierDTO]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Guid
-SET     @Id = Cast(x'3d667bbcde0f27438f925d8cc3a11d11' as blob)
+SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ResourceLabel NVarChar(1) -- String
 SET     @ResourceLabel = 'b'
 
@@ -39,11 +39,11 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Guid
-SET     @Id = Cast(x'0d6048a921de744f8ac29516b287076e' as blob)
+SET     @Id = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @Status  -- Int32
 SET     @Status = 40
 DECLARE @ResourceID  -- Guid
-SET     @ResourceID = Cast(x'3d667bbcde0f27438f925d8cc3a11d11' as blob)
+SET     @ResourceID = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ModifiedTimeStamp  -- DateTime
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'
 
@@ -65,11 +65,11 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Guid
-SET     @Id = Cast(x'a57339bd2343d84d9f4fdf9f93e2a627' as blob)
+SET     @Id = X'A57339BD2343D84D9F4FDF9F93E2A627'
 DECLARE @Status  -- Int32
 SET     @Status = 40
 DECLARE @ResourceID  -- Guid
-SET     @ResourceID = Cast(x'3d667bbcde0f27438f925d8cc3a11d11' as blob)
+SET     @ResourceID = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ModifiedTimeStamp  -- DateTime
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'
 
