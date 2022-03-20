@@ -2,36 +2,24 @@
 -- SqlServer.2016
 
 SELECT
-	[t2].[a],
-	[t2].[b]
-FROM
-	(
+	IIF(EXISTS(
 		SELECT
-			IIF(EXISTS(
-				SELECT
-					*
-				FROM
-					[Child] [t1]
-			), 1, 0) as [a],
-			IIF([x].[ParentID] <> 0, 1, 0) as [b]
+			*
 		FROM
-			[Parent] [x]
-	) [t2]
+			[Child] [t1]
+	), 1, 0),
+	IIF([x].[ParentID] <> 0, 1, 0)
+FROM
+	[Parent] [x]
 UNION ALL
 SELECT
-	[t4].[a],
-	[t4].[b]
-FROM
-	(
+	IIF(EXISTS(
 		SELECT
-			IIF(EXISTS(
-				SELECT
-					*
-				FROM
-					[Child] [t3]
-			), 1, 0) as [a],
-			NULL as [b]
+			*
 		FROM
-			[Parent] [x_1]
-	) [t4]
+			[Child] [t2]
+	), 1, 0),
+	NULL
+FROM
+	[Parent] [x_1]
 
