@@ -25,44 +25,26 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ID
+	ess.ID
 FROM
-	(
-		SELECT
-			Cast(CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						VEMPLOYEE_SCHDL_PERM y
-					WHERE
-						ess.ID = y.ID AND y.IS_ACTIVE = 't'
-				)
-					THEN 't'
-				ELSE 'f'
-			END as BOOLEAN) as allowEdit,
-			ess.ID
-		FROM
-			VEMPLOYEE_SCH_SEC ess
-	) t1
+	VEMPLOYEE_SCH_SEC ess
 WHERE
-	t1.allowEdit = 't' AND t1.allowEdit IS NOT NULL
+	(EXISTS(
+		SELECT
+			*
+		FROM
+			VEMPLOYEE_SCHDL_PERM y
+		WHERE
+			ess.ID = y.ID AND y.IS_ACTIVE = 't'
+	))
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ID
+	ess.ID
 FROM
-	(
-		SELECT
-			Cast('t' as BOOLEAN) as allowEdit,
-			ess.ID
-		FROM
-			VEMPLOYEE_SCH_SEC ess
-	) t1
-WHERE
-	t1.allowEdit = 't' AND t1.allowEdit IS NOT NULL
+	VEMPLOYEE_SCH_SEC ess
 
 BeforeExecute
 -- Informix.DB2 Informix
