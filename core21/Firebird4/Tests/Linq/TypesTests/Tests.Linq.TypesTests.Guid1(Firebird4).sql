@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
 DECLARE @GuidValue Guid
-SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
+SET     @GuidValue = X'D2F970C035AC49879CD55BADB1757436'
 
 SELECT
 	"p"."GuidValue"

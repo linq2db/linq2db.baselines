@@ -30,7 +30,7 @@ INSERT INTO "TableWithData"
 	"Value",
 	"ValueStr"
 )
-SELECT 1,-1,'Str1' FROM rdb$database UNION ALL
+SELECT 1,-1,CAST('Str1' AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,-2,'Str2' FROM rdb$database UNION ALL
 SELECT 3,-3,'Str3' FROM rdb$database UNION ALL
 SELECT 4,-4,'Str4' FROM rdb$database UNION ALL
@@ -67,7 +67,7 @@ INSERT INTO "DestinationTable"
 SELECT
 	"s"."Id" + Cast(@param as Int),
 	"s"."Value" + Cast(@param as Int),
-	"s"."ValueStr" || Cast(@param_1 as VarChar(100))
+	"s"."ValueStr" || Cast(@param_1 as VarChar(100) CHARACTER SET UNICODE_FSS)
 FROM
 	"TableWithData" "s"
 WHERE
