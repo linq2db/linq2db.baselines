@@ -30,7 +30,7 @@ INSERT INTO "TableWithData"
 	"Value",
 	"ValueStr"
 )
-SELECT 1,-1,'Str1' FROM rdb$database UNION ALL
+SELECT 1,-1,CAST('Str1' AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,-2,'Str2' FROM rdb$database UNION ALL
 SELECT 3,-3,'Str3' FROM rdb$database UNION ALL
 SELECT 4,-4,'Str4' FROM rdb$database UNION ALL
@@ -62,7 +62,7 @@ WHERE
 	"s"."Id" = 3
 RETURNING
 	"s"."Id" + 1,
-	"s"."ValueStr" || Cast(1 as VarChar(11))
+	"s"."ValueStr" || Cast(1 as VarChar(11) CHARACTER SET UNICODE_FSS)
 
 BeforeExecute
 -- Firebird3 Firebird

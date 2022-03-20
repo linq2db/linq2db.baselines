@@ -53,7 +53,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Char(1) -- String
 SET     @BoolValue = '1'
 DECLARE @GuidValue Guid
-SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
+SET     @GuidValue = X'EF1291656FFE4DF9BB6BBB16E413C883'
 DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 1
 DECLARE @IntValue Integer -- Int32
@@ -83,7 +83,7 @@ WHERE
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @GuidValue Guid
-SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
+SET     @GuidValue = X'EF1291656FFE4DF9BB6BBB16E413C883'
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 

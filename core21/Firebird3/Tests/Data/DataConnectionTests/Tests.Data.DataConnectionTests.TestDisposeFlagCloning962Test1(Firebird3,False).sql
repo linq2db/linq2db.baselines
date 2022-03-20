@@ -47,7 +47,7 @@ INSERT INTO "Categories"
 	"CategoryName",
 	"Description"
 )
-SELECT 'Name 1','Desc 1' FROM rdb$database UNION ALL
+SELECT CAST('Name 1' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('Desc 1' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 'Name 2','Desc 2' FROM rdb$database
 
 BeforeExecute
@@ -101,7 +101,7 @@ INSERT INTO "Products"
 	"CategoryID",
 	"QuantityPerUnit"
 )
-SELECT 'Prod 1',1,'q 1' FROM rdb$database UNION ALL
+SELECT CAST('Prod 1' AS VarChar(255) CHARACTER SET UNICODE_FSS),1,CAST('q 1' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 'Prod 2',1,'q 2' FROM rdb$database UNION ALL
 SELECT 'Prod 3',3,'q 3' FROM rdb$database UNION ALL
 SELECT 'Prod 4',3,'q 4' FROM rdb$database UNION ALL
