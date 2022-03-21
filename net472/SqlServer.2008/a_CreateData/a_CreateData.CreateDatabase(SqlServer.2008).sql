@@ -817,7 +817,6 @@ BeforeExecute
 -- SqlServer.2008
 
 -- SKIP SqlServer.2005 END
-
 -- SKIP SqlServer.2008 END
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
@@ -1439,10 +1438,10 @@ BeforeExecute
 -- SqlServer.2008
 
 CREATE Procedure QueryProcMultipleParameters
-	@input          int,
-	@output1        int output,
-	@output2        int output,
-	@output3        int output
+	@input   int,
+	@output1 int output,
+	@output2 int output,
+	@output3 int output
 AS
 
 SET @output1 = @input + 1
@@ -1526,7 +1525,6 @@ BeforeExecute
 CREATE TABLE DataType
 (
 	id INT NOT NULL
-
 )
 
 BeforeExecute
@@ -1539,10 +1537,17 @@ BeforeExecute
 
 CREATE TABLE CollatedTable
 (
-	Id				INT NOT NULL,
-	CaseSensitive	NVARCHAR(20) COLLATE Latin1_General_CS_AI NOT NULL,
-	CaseInsensitive	NVARCHAR(20) COLLATE Latin1_General_CI_AI NOT NULL
+	Id              INT NOT NULL,
+	CaseSensitive   NVARCHAR(20) COLLATE Latin1_General_CS_AI NOT NULL,
+	CaseInsensitive NVARCHAR(20) COLLATE Latin1_General_CI_AI NOT NULL
 )
+
+BeforeExecute
+-- SqlServer.2008
+
+-- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2008 END
+-- SKIP SqlServer.2005 END
 
 BeforeExecute
 INSERT BULK [LinqDataTypes](ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue)
