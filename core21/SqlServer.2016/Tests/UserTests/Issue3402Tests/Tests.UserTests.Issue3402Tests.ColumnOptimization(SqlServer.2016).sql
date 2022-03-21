@@ -25,40 +25,26 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[t1].[ID]
+	[ess].[ID]
 FROM
-	(
-		SELECT
-			IIF(EXISTS(
-				SELECT
-					*
-				FROM
-					[VEMPLOYEE_SCHDL_PERM] [y]
-				WHERE
-					[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
-			), 1, 0) as [allowEdit],
-			[ess].[ID]
-		FROM
-			[VEMPLOYEE_SCH_SEC] [ess]
-	) [t1]
+	[VEMPLOYEE_SCH_SEC] [ess]
 WHERE
-	[t1].[allowEdit] = 1 AND [t1].[allowEdit] IS NOT NULL
+	(EXISTS(
+		SELECT
+			*
+		FROM
+			[VEMPLOYEE_SCHDL_PERM] [y]
+		WHERE
+			[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
+	))
 
 BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[t1].[ID]
+	[ess].[ID]
 FROM
-	(
-		SELECT
-			1 as [allowEdit],
-			[ess].[ID]
-		FROM
-			[VEMPLOYEE_SCH_SEC] [ess]
-	) [t1]
-WHERE
-	[t1].[allowEdit] = 1 AND [t1].[allowEdit] IS NOT NULL
+	[VEMPLOYEE_SCH_SEC] [ess]
 
 BeforeExecute
 -- SqlServer.2016

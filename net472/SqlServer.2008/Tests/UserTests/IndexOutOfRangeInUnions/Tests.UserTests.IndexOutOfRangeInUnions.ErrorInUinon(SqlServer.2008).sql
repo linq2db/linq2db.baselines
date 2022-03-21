@@ -35,33 +35,26 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[t1].[NumeroInterno],
-	[t1].[StatusValor],
-	[t1].[DescricaoStatus]
+	[doSap].[DocEntry],
+	CASE
+		WHEN [doSap].[DocStatus] = N'O'
+			THEN N'Aberto'
+		ELSE N'Fechado'
+	END,
+	N'Manual/Externo'
 FROM
-	(
-		SELECT
-			[doSap].[DocEntry] as [NumeroInterno],
-			CASE
-				WHEN [doSap].[DocStatus] = N'O'
-					THEN N'Aberto'
-				ELSE N'Fechado'
-			END as [StatusValor],
-			N'Manual/Externo' as [DescricaoStatus]
-		FROM
-			[O1] [doSap]
-		UNION
-		SELECT
-			[doSap_1].[DocEntry] as [NumeroInterno],
-			CASE
-				WHEN [doSap_1].[DocStatus] = N'O'
-					THEN N'Aberto'
-				ELSE N'Fechado'
-			END as [StatusValor],
-			N'Manual/Externo' as [DescricaoStatus]
-		FROM
-			[O2] [doSap_1]
-	) [t1]
+	[O1] [doSap]
+UNION
+SELECT
+	[doSap_1].[DocEntry],
+	CASE
+		WHEN [doSap_1].[DocStatus] = N'O'
+			THEN N'Aberto'
+		ELSE N'Fechado'
+	END,
+	N'Manual/Externo'
+FROM
+	[O2] [doSap_1]
 UNION
 SELECT
 	[doSap_2].[DocEntry],

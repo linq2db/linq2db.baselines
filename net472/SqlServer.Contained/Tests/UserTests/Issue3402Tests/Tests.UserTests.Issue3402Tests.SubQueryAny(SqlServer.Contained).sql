@@ -25,24 +25,18 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2017
 
 SELECT
-	[t1].[ID]
+	[ess].[ID]
 FROM
-	(
-		SELECT
-			IIF(EXISTS(
-				SELECT
-					*
-				FROM
-					[VEMPLOYEE_SCHDL_PERM] [y]
-				WHERE
-					[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
-			), 1, 0) as [hasAdditionalPermissions],
-			[ess].[ID]
-		FROM
-			[VEMPLOYEE_SCH_SEC] [ess]
-	) [t1]
+	[VEMPLOYEE_SCH_SEC] [ess]
 WHERE
-	[t1].[hasAdditionalPermissions] = 1 AND [t1].[hasAdditionalPermissions] IS NOT NULL
+	(EXISTS(
+		SELECT
+			*
+		FROM
+			[VEMPLOYEE_SCHDL_PERM] [y]
+		WHERE
+			[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
+	))
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2017

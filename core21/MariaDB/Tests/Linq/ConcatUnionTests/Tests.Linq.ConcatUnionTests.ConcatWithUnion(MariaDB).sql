@@ -2,37 +2,32 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	`t3`.`ParentID`
+	`t1`.`ParentID`
 FROM
 	(
 		SELECT
-			`t1`.`ParentID`
+			`c_1`.`ParentID`
 		FROM
-			(
-				SELECT
-					`c_1`.`ParentID`
-				FROM
-					`Parent` `c_1`
-				UNION
-				SELECT
-					`c_2`.`ParentID`
-				FROM
-					`Parent` `c_2`
-			) `t1`
-		UNION ALL
+			`Parent` `c_1`
+		UNION
 		SELECT
-			`t2`.`ParentID`
+			`c_2`.`ParentID`
 		FROM
-			(
-				SELECT
-					`c_3`.`ParentID`
-				FROM
-					`Parent` `c_3`
-				UNION
-				SELECT
-					`c_4`.`ParentID`
-				FROM
-					`Parent` `c_4`
-			) `t2`
-	) `t3`
+			`Parent` `c_2`
+	) `t1`
+UNION ALL
+SELECT
+	`t2`.`ParentID`
+FROM
+	(
+		SELECT
+			`c_3`.`ParentID`
+		FROM
+			`Parent` `c_3`
+		UNION
+		SELECT
+			`c_4`.`ParentID`
+		FROM
+			`Parent` `c_4`
+	) `t2`
 

@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
+DECLARE @Value_3 Integer -- Int32
+SET     @Value_3 = NULL
 
 SELECT
-	Cast(NULL as Int)
+	:Value_3
 
