@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- PostgreSQL PostgreSQL.9.5 PostgreSQL
-DECLARE @ID Text(5) -- String
-SET     @ID = '2010-'
+DECLARE @p_1 Text(5) -- String
+SET     @p_1 = '2010-'
 
 SELECT
 	t.c1
 FROM
 	(
 		SELECT
-			Cast((:ID || Cast(p."ID" as VarChar(11)) || '-1') as Date) as c1
+			Cast((:p_1 || Cast(p."ID" as VarChar(11)) || '-1') as Date) as c1
 		FROM
 			"LinqDataTypes" p
 	) t
