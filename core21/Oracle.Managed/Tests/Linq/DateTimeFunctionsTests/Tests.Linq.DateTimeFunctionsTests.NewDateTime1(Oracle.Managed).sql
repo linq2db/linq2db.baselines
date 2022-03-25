@@ -6,7 +6,11 @@ SELECT
 FROM
 	(
 		SELECT
-			TO_DATE(Cast(To_Number(To_Char(p."DateTimeValue", 'YYYY')) as VarChar2(11)) || '-10-1', 'YYYY-MM-DD') as "c1"
+			TO_DATE(CASE
+				WHEN To_Number(To_Char(p."DateTimeValue", 'YYYY')) IS NULL
+					THEN ''
+				ELSE Cast(To_Number(To_Char(p."DateTimeValue", 'YYYY')) as VarChar2(11))
+			END || '-10-1', 'YYYY-MM-DD') as "c1"
 		FROM
 			"LinqDataTypes" p
 	) t
