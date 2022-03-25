@@ -6,7 +6,11 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Concat(Cast((Extract(year from `p`.`DateTimeValue`) + 1) as CHAR(11)), '-10-1') as Date) as `c1`
+			Cast(Concat(CASE
+				WHEN Extract(year from `p`.`DateTimeValue`) + 1 IS NULL
+					THEN ''
+				ELSE Cast((Extract(year from `p`.`DateTimeValue`) + 1) as CHAR(11))
+			END, '-10-1') as Date) as `c1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
