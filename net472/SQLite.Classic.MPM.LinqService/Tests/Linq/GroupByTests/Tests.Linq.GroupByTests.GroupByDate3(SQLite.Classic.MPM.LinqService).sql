@@ -8,15 +8,43 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as NVarChar(11)) || '-' || CASE
-				WHEN Length(Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))) = 1
-					THEN '0' || Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+			Date(CASE
+				WHEN Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) IS NULL
+					THEN ''
+				ELSE Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+			END || '-' || CASE
+				WHEN Length(CASE
+					WHEN Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) IS NULL
+						THEN ''
+					ELSE Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+				END) = 1
+					THEN '0' || CASE
+					WHEN Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) IS NULL
+						THEN ''
+					ELSE Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+				END
+				WHEN Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) IS NULL
+					THEN ''
 				ELSE Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
 			END || '-01') as [Key_1],
 			[selectParam].[MoneyValue],
-			Date(Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as NVarChar(11)) || '-' || CASE
-				WHEN Length(Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))) = 1
-					THEN '0' || Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+			Date(CASE
+				WHEN Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) IS NULL
+					THEN ''
+				ELSE Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+			END || '-' || CASE
+				WHEN Length(CASE
+					WHEN Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) IS NULL
+						THEN ''
+					ELSE Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+				END) = 1
+					THEN '0' || CASE
+					WHEN Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) IS NULL
+						THEN ''
+					ELSE Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+				END
+				WHEN Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) IS NULL
+					THEN ''
 				ELSE Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
 			END || '-01') as [c1]
 		FROM

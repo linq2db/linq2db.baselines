@@ -15,8 +15,15 @@ FROM
 	(
 		SELECT
 			DateTime('2010-' || CASE
-				WHEN Length(Cast([p].[ID] as NVarChar(11))) = 1
-					THEN '0' || Cast([p].[ID] as NVarChar(11))
+				WHEN Length(CASE
+					WHEN [p].[ID] IS NULL THEN ''
+					ELSE Cast([p].[ID] as NVarChar(11))
+				END) = 1
+					THEN '0' || CASE
+					WHEN [p].[ID] IS NULL THEN ''
+					ELSE Cast([p].[ID] as NVarChar(11))
+				END
+				WHEN [p].[ID] IS NULL THEN ''
 				ELSE Cast([p].[ID] as NVarChar(11))
 			END || '-' || @p_1 || ' ' || @p_2 || ':' || @p_3 || ':' || @p_4) as [c1]
 		FROM

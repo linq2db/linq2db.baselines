@@ -6,7 +6,11 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(Cast(Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) as NVarChar(11)) || '-10-01') as [c1]
+			Date(CASE
+				WHEN Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) IS NULL
+					THEN ''
+				ELSE Cast(Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) as NVarChar(11))
+			END || '-10-01') as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
