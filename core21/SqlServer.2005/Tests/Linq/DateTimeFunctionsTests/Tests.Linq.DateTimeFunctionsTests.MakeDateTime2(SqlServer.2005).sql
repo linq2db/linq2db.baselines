@@ -6,7 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(DateTime, N'2010-' + Convert(NVarChar(11), [p].[ID]) + N'-1 20:35:44', 120) as [c1]
+			Convert(DateTime, N'2010-' + CASE
+				WHEN [p].[ID] IS NULL THEN N''
+				ELSE Convert(NVarChar(11), [p].[ID])
+			END + N'-1 20:35:44', 120) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

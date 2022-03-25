@@ -6,7 +6,11 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(DateTime, Convert(NVarChar(11), DatePart(year, [p].[DateTimeValue])) + N'-10-1 20:35:44', 120) as [c1]
+			Convert(DateTime, CASE
+				WHEN DatePart(year, [p].[DateTimeValue]) IS NULL
+					THEN N''
+				ELSE Convert(NVarChar(11), DatePart(year, [p].[DateTimeValue]))
+			END + N'-10-1 20:35:44', 120) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
