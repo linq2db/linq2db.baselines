@@ -9,8 +9,15 @@ FROM
 	(
 		SELECT
 			Date('2010-' || CASE
-				WHEN Length(Cast([p].[ID] as NVarChar(11))) = 1
-					THEN '0' || Cast([p].[ID] as NVarChar(11))
+				WHEN Length(CASE
+					WHEN [p].[ID] IS NULL THEN ''
+					ELSE Cast([p].[ID] as NVarChar(11))
+				END) = 1
+					THEN '0' || CASE
+					WHEN [p].[ID] IS NULL THEN ''
+					ELSE Cast([p].[ID] as NVarChar(11))
+				END
+				WHEN [p].[ID] IS NULL THEN ''
 				ELSE Cast([p].[ID] as NVarChar(11))
 			END || '-' || @p_1) as [c1]
 		FROM

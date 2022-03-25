@@ -6,7 +6,11 @@ DECLARE @p_2 NVarChar(2) -- String
 SET     @p_2 = '01'
 
 SELECT
-	Date(Cast((2010 + [t].[ID]) as NVarChar(11)) || '-' || @p_1 || '-' || @p_2)
+	Date(CASE
+		WHEN 2010 + [t].[ID] IS NULL
+			THEN ''
+		ELSE Cast((2010 + [t].[ID]) as NVarChar(11))
+	END || '-' || @p_1 || '-' || @p_2)
 FROM
 	[LinqDataTypes] [t]
 
