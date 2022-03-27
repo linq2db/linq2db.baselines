@@ -11,33 +11,6 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
-FROM
-	`Child` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
-FROM
-	`Child` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
-FROM
-	`Child` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`
 FROM

@@ -11,33 +11,6 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
-FROM
-	[Child] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
-FROM
-	[Child] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
-FROM
-	[Child] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
 	[p].[ParentID],
 	[p].[Value1]
 FROM
