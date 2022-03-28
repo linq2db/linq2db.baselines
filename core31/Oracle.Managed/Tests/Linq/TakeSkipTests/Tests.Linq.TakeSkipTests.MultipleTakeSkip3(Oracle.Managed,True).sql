@@ -50,7 +50,7 @@ DECLARE @skip_4 Int32
 SET     @skip_4 = 1
 
 SELECT
-	t1."Value" as "Value_1"
+	t1."Value"
 FROM
 	"TakeSkipClass" t1
 ORDER BY

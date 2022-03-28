@@ -39,6 +39,8 @@ WHERE
 	t1."ParentID" = :ParentID
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 INSERT ALL
@@ -48,6 +50,8 @@ INSERT ALL
 	INTO "Parent" ("ParentID", "Value1") VALUES (4111,4111)
 SELECT * FROM dual
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @ParentID Int32

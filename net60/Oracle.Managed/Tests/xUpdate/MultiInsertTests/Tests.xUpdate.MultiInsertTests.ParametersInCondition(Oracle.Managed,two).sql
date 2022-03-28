@@ -51,7 +51,7 @@ SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1."Value" as "Value_1",
+	t1."Value",
 	t1."StringValue"
 FROM
 	"Dest1" t1

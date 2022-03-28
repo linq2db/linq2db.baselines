@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	p."GuidValue" IN (Cast('c070f9d2ac3587499cd55badb1757436' as raw(16)))
+	p."GuidValue" IN (HEXTORAW('C070F9D2AC3587499CD55BADB1757436'))
 

@@ -122,6 +122,8 @@ BeforeExecute
 							PKCON.OWNER IN ('SYSTEM')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @QLEN Decimal(22)
 SET     @QLEN = 0
@@ -1070,6 +1072,8 @@ BeforeExecute
 LBACSYS.SESSINFO_CLEANUP
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT USER FROM DUAL
@@ -1079,6 +1083,8 @@ BeforeExecute
 
 select user from dual
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @QLEN Decimal(22)
@@ -1852,6 +1858,8 @@ BeforeExecute
 LBACSYS.SESSINFO_CLEANUP
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT USER FROM DUAL
@@ -1974,3 +1982,7 @@ BeforeExecute
 							FKCON.OWNER IN ('IncludeExcludeSchemaTest') AND
 							PKCON.OWNER IN ('IncludeExcludeSchemaTest')
 
+BeforeExecute
+BeginTransaction
+BeforeExecute
+RollbackTransaction

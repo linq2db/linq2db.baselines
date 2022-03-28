@@ -89,6 +89,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 1
@@ -134,6 +136,8 @@ WHERE
 	x."Id" = 6
 FETCH NEXT :take ROWS ONLY
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 

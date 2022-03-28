@@ -56,26 +56,20 @@ SELECT
 FROM
 	(
 		SELECT
-			t1."Id",
-			t1."Value_1"
+			t."Id",
+			t."Value1" as "Value_1"
 		FROM
-			(
-				SELECT
-					t."Id",
-					t."Value1" as "Value_1"
-				FROM
-					"SampleData" t
-				WHERE
-					MOD(t."Id", 2) = 0
-				MINUS
-				SELECT
-					t_1."Id",
-					t_1."Value2" / 10 as "Value_1"
-				FROM
-					"SampleData" t_1
-				WHERE
-					MOD(t_1."Id", 4) = 0
-			) t1
+			"SampleData" t
+		WHERE
+			MOD(t."Id", 2) = 0
+		MINUS
+		SELECT
+			t_1."Id",
+			t_1."Value2" / 10 as "Value_1"
+		FROM
+			"SampleData" t_1
+		WHERE
+			MOD(t_1."Id", 4) = 0
 		MINUS
 		SELECT
 			t_2."Id",

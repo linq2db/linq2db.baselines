@@ -16,7 +16,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Length(t."BinaryValue") as "c1"
+	Length(t."BinaryValue")
 FROM
 	"LinqDataTypes" t
 WHERE
