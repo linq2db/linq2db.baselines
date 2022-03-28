@@ -89,6 +89,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -134,6 +136,8 @@ WHERE
 	`x`.`Id` = 6
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MariaDB MySql.Official MySql
 

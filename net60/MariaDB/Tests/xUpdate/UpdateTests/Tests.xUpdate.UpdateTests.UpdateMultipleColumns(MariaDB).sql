@@ -3,7 +3,7 @@
 DECLARE @ID Int32
 SET     @ID = 1001
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE
@@ -71,7 +71,7 @@ BeforeExecute
 DECLARE @ID Int32
 SET     @ID = 1001
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE

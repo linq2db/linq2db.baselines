@@ -96,7 +96,7 @@ BeforeExecute
 DECLARE @ID Int32
 SET     @ID = 5
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE
@@ -105,7 +105,7 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE

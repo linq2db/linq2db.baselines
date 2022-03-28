@@ -73,7 +73,7 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`LinqDataTypes` `_`
 WHERE

@@ -3120,7 +3120,7 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`AllTypes` `t1`
 WHERE
@@ -3129,7 +3129,7 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`AllTypesNoYear` `t1`
 WHERE

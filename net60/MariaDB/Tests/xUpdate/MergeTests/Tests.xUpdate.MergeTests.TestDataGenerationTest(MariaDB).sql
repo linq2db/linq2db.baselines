@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`TestMerge1` `t1`
 
@@ -112,7 +112,7 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`TestMerge2` `t1`
 

@@ -66,7 +66,7 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`BigDecimalMySqlDataTable` `t1`
 
@@ -124,7 +124,7 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`BigDecimalMySqlDataTable` `t1`
 

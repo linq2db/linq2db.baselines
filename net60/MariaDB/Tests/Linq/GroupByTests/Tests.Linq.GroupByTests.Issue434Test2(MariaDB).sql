@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MariaDB MySql.Official MySql
 
 SELECT
@@ -11,6 +13,8 @@ FROM
 WHERE
 	LOCATE('test', Lower(`p`.`FirstName`)) > 0
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MariaDB MySql.Official MySql
 

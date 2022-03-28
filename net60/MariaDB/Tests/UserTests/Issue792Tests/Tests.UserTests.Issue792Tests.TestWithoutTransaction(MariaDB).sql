@@ -17,6 +17,8 @@ BeforeExecute
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySql.Official MySql
 
 `testdata`.`AddIssue792Record`
@@ -234,6 +236,8 @@ SET     @Year = NULL
 `testdata`.`Issue2313Results`
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- MariaDB MySql.Official MySql
 
 SELECT
@@ -244,7 +248,7 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`AllTypes` `t1`
 WHERE

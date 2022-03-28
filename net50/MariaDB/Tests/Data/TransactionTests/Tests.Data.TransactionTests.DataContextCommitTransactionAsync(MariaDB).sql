@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransactionAsync
+BeforeExecute
 -- MariaDB MySql.Official MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -17,9 +19,11 @@ VALUES
 )
 
 BeforeExecute
+CommitTransactionAsync
+BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Parent` `_`
 WHERE

@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MariaDB MySql.Official MySql
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	`t1`.`ParentID` = 1010
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @take Int32
@@ -43,7 +47,7 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Parent` `t1`
 WHERE
