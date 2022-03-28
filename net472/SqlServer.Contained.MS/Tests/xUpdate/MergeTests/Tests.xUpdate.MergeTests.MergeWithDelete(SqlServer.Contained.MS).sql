@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 MERGE INTO [LinqDataTypes] [Target]
@@ -74,3 +76,5 @@ VALUES
 WHEN NOT MATCHED BY SOURCE THEN DELETE
 ;
 
+BeforeExecute
+RollbackTransaction
