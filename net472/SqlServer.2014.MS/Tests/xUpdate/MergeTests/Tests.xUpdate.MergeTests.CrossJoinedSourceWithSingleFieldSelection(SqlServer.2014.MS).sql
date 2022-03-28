@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
@@ -134,3 +136,5 @@ SELECT
 FROM
 	[GrandChild] [t1]
 
+BeforeExecute
+RollbackTransaction
