@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -28,6 +30,8 @@ FROM
 WHERE
 	[t1].[ParentID] = 1010
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 

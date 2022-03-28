@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Parent]
@@ -143,3 +145,5 @@ FROM
 ORDER BY
 	[t1].[GrandChildID]
 
+BeforeExecute
+RollbackTransaction

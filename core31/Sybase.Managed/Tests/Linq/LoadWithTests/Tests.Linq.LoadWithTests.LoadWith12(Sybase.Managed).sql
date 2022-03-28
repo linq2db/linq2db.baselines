@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -77,3 +79,5 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+RollbackTransaction

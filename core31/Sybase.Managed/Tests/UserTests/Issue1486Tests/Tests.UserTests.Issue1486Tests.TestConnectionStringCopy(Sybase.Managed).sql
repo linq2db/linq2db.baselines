@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 --  Sybase.Managed Sybase
 
 SELECT
@@ -32,3 +34,5 @@ FROM
 	[Child] [t1]
 		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 
+BeforeExecute
+RollbackTransaction

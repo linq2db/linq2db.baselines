@@ -43,6 +43,8 @@ WHERE
 	[t1].[ParentID] = @ParentID
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [Parent]
@@ -55,6 +57,8 @@ SELECT 2111,2111 UNION ALL
 SELECT 3111,3111 UNION ALL
 SELECT 4111,4111
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32

@@ -9,6 +9,8 @@ BeforeExecute
 sp_chgattribute KeepIdentityTest, 'identity_burn_max', 0, '0'
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -57,3 +59,5 @@ FROM
 ORDER BY
 	[t1].[ID] DESC
 
+BeforeExecute
+RollbackTransaction
