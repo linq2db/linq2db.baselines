@@ -54,6 +54,8 @@ BeforeExecute
 DROP TABLE "AllTypes_OLD"
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypes"
@@ -112,3 +114,5 @@ VALUES
 	"Source"."nvarcharDataType"
 )
 
+BeforeExecute
+RollbackTransaction

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransactionAsync
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1010
@@ -16,3 +18,5 @@ VALUES
 	?
 )
 
+BeforeExecute
+RollbackTransactionAsync

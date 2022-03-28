@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "AllTypes" "Target"
@@ -27,3 +29,5 @@ VALUES
 	"Source"."nvarcharDataType"
 )
 
+BeforeExecute
+RollbackTransaction

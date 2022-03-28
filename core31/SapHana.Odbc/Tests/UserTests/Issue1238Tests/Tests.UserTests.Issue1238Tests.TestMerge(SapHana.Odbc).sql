@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
@@ -76,3 +78,5 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
+BeforeExecute
+RollbackTransaction

@@ -39,6 +39,8 @@ WHERE
 	"t1"."ParentID" = ?
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1111
@@ -110,6 +112,8 @@ VALUES
 	?
 )
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32

@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	"Parent"."ParentID" = 1010
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @input_2 NVarChar(6) -- String
 SET     @input_2 = '%test%'
@@ -13,6 +15,8 @@ FROM
 WHERE
 	Lower("p"."FirstName") LIKE ? ESCAPE '~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @input_2 NVarChar(6) -- String
