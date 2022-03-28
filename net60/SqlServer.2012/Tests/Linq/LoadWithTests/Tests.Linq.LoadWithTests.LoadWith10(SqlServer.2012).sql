@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -17,6 +19,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -27,6 +31,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -46,6 +52,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -57,6 +65,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -74,6 +84,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -86,6 +98,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -104,6 +118,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -114,6 +130,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -133,6 +151,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -144,6 +164,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -161,6 +183,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -173,6 +197,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -191,6 +217,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -201,6 +229,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -220,6 +250,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -231,6 +263,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -248,6 +282,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -260,6 +296,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -278,6 +316,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -288,6 +328,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -307,6 +349,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -317,6 +361,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -336,6 +382,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -346,6 +394,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -365,6 +415,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -376,6 +428,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -393,6 +447,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -405,6 +461,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -423,6 +481,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -433,6 +493,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -452,6 +514,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -463,6 +527,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -480,6 +546,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -492,6 +560,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -510,6 +580,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -520,6 +592,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -539,6 +613,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -550,6 +626,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -567,6 +645,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -579,6 +659,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -597,6 +679,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -607,6 +691,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -626,6 +712,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -637,6 +725,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -654,6 +744,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -666,6 +758,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -683,6 +777,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -695,6 +791,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -712,6 +810,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -724,6 +824,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -742,6 +844,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -752,6 +856,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -771,6 +877,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -782,6 +890,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -799,6 +909,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -811,6 +923,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -829,6 +943,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -839,6 +955,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -858,6 +976,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -869,6 +989,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -886,6 +1008,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -898,6 +1022,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -916,6 +1042,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -926,6 +1054,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -945,6 +1075,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -956,6 +1088,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -973,6 +1107,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -985,6 +1121,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1003,6 +1141,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1013,6 +1153,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1032,6 +1174,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1042,6 +1186,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1061,6 +1207,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1071,6 +1219,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1090,6 +1240,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1101,6 +1253,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1118,6 +1272,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1130,6 +1286,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1148,6 +1306,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1158,6 +1318,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1177,6 +1339,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1188,6 +1352,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1205,6 +1371,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1217,6 +1385,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1235,6 +1405,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1245,6 +1417,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1264,6 +1438,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1275,6 +1451,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1292,6 +1470,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1304,6 +1484,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1322,6 +1504,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1332,6 +1516,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1351,6 +1537,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1362,6 +1550,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1379,6 +1569,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1391,6 +1583,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1408,6 +1602,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1420,6 +1616,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1437,6 +1635,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1449,6 +1649,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1467,6 +1669,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1477,6 +1681,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1496,6 +1702,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1507,6 +1715,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1524,6 +1734,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1536,6 +1748,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1554,6 +1768,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1564,6 +1780,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1583,6 +1801,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1594,6 +1814,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1611,6 +1833,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1623,6 +1847,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1641,6 +1867,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1651,6 +1879,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1670,6 +1900,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1681,6 +1913,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1698,6 +1932,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1710,6 +1946,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1728,6 +1966,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1738,6 +1978,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1757,6 +1999,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1767,6 +2011,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1786,6 +2032,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1796,6 +2044,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1815,6 +2065,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1826,6 +2078,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1843,6 +2097,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1855,6 +2111,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1873,6 +2131,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1883,6 +2143,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1902,6 +2164,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1913,6 +2177,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1930,6 +2196,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -1942,6 +2210,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1960,6 +2230,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -1970,6 +2242,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -1989,6 +2263,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2000,6 +2276,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2017,6 +2295,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2029,6 +2309,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2047,6 +2329,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2057,6 +2341,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2076,6 +2362,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2087,6 +2375,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2104,6 +2394,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2116,6 +2408,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2133,6 +2427,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2145,6 +2441,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2162,6 +2460,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2174,6 +2474,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2192,6 +2494,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2202,6 +2506,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2221,6 +2527,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2232,6 +2540,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2249,6 +2559,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2261,6 +2573,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2279,6 +2593,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2289,6 +2605,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2308,6 +2626,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2319,6 +2639,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2336,6 +2658,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2348,6 +2672,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2366,6 +2692,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2376,6 +2704,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2395,6 +2725,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2406,6 +2738,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2423,6 +2757,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2435,6 +2771,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2453,6 +2791,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2463,6 +2803,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2482,6 +2824,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2492,6 +2836,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2511,6 +2857,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2521,6 +2869,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2540,6 +2890,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2551,6 +2903,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2568,6 +2922,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2580,6 +2936,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2598,6 +2956,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2608,6 +2968,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2627,6 +2989,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2638,6 +3002,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2655,6 +3021,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2667,6 +3035,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2685,6 +3055,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2695,6 +3067,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2714,6 +3088,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2725,6 +3101,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2742,6 +3120,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2754,6 +3134,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2772,6 +3154,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2782,6 +3166,8 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
 
@@ -2801,6 +3187,8 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2812,6 +3200,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2829,6 +3219,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2841,6 +3233,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2858,6 +3252,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 
@@ -2870,6 +3266,8 @@ WHERE
 	[p].[ParentID] < 2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -2887,6 +3285,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 

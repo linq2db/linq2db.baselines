@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -11,6 +13,8 @@ FROM
 WHERE
 	Lower([p].[FirstName]) LIKE N'%test%' ESCAPE N'~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 

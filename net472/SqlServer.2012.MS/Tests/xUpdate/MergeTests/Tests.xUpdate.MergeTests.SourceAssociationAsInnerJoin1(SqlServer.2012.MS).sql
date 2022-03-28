@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 DELETE [t1]
@@ -300,3 +302,5 @@ ON ([Target].[PersonID] = [Source].[ID])
 WHEN MATCHED AND ([Source].[Diagnosis] <> N'sick' OR [Source].[Diagnosis] IS NULL) THEN DELETE
 ;
 
+BeforeExecute
+RollbackTransaction
