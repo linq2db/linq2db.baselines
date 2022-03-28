@@ -11,12 +11,3 @@ FROM
 WHERE
 	@hid.IsDescendantOf([t].[HID]) = 1
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-SELECT
-	[t1].[ID],
-	[t1].[HID]
-FROM
-	[SqlTypes] [t1]
-
