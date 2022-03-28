@@ -6,6 +6,8 @@ SET     @p = '3323'
 SELECT ID FROM "AllTypes" WHERE "nvarcharDataType" = @p
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 --  Firebird
 
 "AddIssue792Record"
@@ -206,3 +208,5 @@ SET     @RETURN_VALUE = 0
 
 "Scalar_ReturnParameter"
 
+BeforeExecute
+RollbackTransaction

@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	"Parent"."ParentID" = 1010
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32

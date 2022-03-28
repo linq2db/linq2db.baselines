@@ -16,6 +16,8 @@ CREATE TABLE "ColumnOrderTest"
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 
 "AddIssue792Record"
@@ -216,6 +218,8 @@ SET     @RETURN_VALUE = 0
 
 "Scalar_ReturnParameter"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird
 

@@ -4,6 +4,8 @@
 SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 
 DELETE FROM
@@ -319,3 +321,5 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
+BeforeExecute
+RollbackTransaction

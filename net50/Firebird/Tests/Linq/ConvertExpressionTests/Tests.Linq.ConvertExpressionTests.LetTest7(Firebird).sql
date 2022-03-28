@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 5000
@@ -23,6 +25,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "key_data_result"."ParentID" AND "c_1"."ChildID" > -100
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32

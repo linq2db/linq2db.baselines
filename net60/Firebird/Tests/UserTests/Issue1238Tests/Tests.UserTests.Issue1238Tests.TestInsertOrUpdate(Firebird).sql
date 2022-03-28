@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 
 DELETE FROM
@@ -74,3 +76,5 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
+BeforeExecute
+RollbackTransaction

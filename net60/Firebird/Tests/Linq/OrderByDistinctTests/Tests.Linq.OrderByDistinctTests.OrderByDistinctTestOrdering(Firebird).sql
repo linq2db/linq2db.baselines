@@ -34,7 +34,7 @@ INSERT INTO "OrderByDistinctData"
 	"OrderData1",
 	"OrderData2"
 )
-SELECT 1,'One',1,1 FROM rdb$database UNION ALL
+SELECT 1,CAST('One' AS VarChar(255) CHARACTER SET UNICODE_FSS),1,1 FROM rdb$database UNION ALL
 SELECT 10,'Two',1,1 FROM rdb$database UNION ALL
 SELECT 100,'Three',1,1 FROM rdb$database
 
