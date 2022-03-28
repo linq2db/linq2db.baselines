@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -11,6 +13,8 @@ FROM
 WHERE
 	Lower(p."FirstName") LIKE '%test%' ESCAPE '~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 

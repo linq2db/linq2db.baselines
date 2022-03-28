@@ -17,7 +17,7 @@ BeforeExecute
 SELECT nextval('sequencetestseq') FROM generate_series(1, 40)
 
 BeforeExecute
-INSERT BULK "SequenceTest1"(ID, Value
+INSERT BULK "SequenceTest1"(ID, Value)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
