@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 MERGE INTO [AllTypes] [Target]
@@ -35,3 +37,5 @@ VALUES
 )
 ;
 
+BeforeExecute
+RollbackTransaction

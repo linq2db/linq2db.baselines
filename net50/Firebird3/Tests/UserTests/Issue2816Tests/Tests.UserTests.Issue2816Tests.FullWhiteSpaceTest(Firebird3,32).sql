@@ -30,7 +30,7 @@ INSERT INTO "Issue2816Table"
 	"Id",
 	"Text"
 )
-SELECT 1,' ' FROM rdb$database UNION ALL
+SELECT 1,CAST(' ' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,'   ' FROM rdb$database UNION ALL
 SELECT 3,'  x ' FROM rdb$database
 

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -26,6 +28,8 @@ FROM
 WHERE
 	"c_1"."ChildID" > -100
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird
 

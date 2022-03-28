@@ -1,7 +1,9 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DELETE `p`
+DELETE   `p`
 FROM
 	`Parent` `p`
 WHERE
@@ -14,3 +16,5 @@ WHERE
 			`p`.`ParentID` = `t1`.`ParentID`
 	)
 
+BeforeExecute
+RollbackTransaction

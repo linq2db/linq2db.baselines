@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 { CALL Person_SelectAll() }
@@ -17,3 +19,5 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
+BeforeExecute
+RollbackTransaction

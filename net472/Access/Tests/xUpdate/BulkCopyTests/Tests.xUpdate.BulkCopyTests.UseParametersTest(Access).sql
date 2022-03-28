@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 111001
@@ -2694,3 +2696,5 @@ FROM
 WHERE
 	[r].[ParentID] >= @ParentID AND [r].[ParentID] <= @ParentID_1
 
+BeforeExecute
+RollbackTransaction

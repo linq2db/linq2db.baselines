@@ -47,6 +47,8 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -70,3 +72,5 @@ SELECT
 FROM
 	[Person] [t1]
 
+BeforeExecute
+CommitTransaction

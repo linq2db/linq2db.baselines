@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE
@@ -40,7 +40,7 @@ WHERE
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE

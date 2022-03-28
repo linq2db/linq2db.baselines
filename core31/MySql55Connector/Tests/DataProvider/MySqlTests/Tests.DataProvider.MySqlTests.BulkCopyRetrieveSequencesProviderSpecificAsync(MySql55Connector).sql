@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
 SET GLOBAL local_infile=ON
@@ -14,3 +16,5 @@ INSERT ASYNC BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
 BeforeExecute
 INSERT ASYNC BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
 
+BeforeExecute
+RollbackTransaction

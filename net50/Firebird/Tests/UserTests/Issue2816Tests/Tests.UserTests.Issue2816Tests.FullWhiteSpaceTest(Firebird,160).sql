@@ -30,7 +30,7 @@ INSERT INTO "Issue2816Table"
 	"Id",
 	"Text"
 )
-SELECT 1,_utf8 x'C2A0' FROM rdb$database UNION ALL
+SELECT 1,CAST(_utf8 x'C2A0' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,_utf8 x'20C2A020' FROM rdb$database UNION ALL
 SELECT 3,_utf8 x'20C2A07820' FROM rdb$database
 

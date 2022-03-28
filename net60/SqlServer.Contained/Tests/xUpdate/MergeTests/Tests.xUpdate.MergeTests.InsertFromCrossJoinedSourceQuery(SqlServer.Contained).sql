@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DELETE [t1]
@@ -144,3 +146,5 @@ FROM
 ORDER BY
 	[t1].[GrandChildID]
 
+BeforeExecute
+RollbackTransaction

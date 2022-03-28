@@ -1,7 +1,9 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE
@@ -31,7 +33,7 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE

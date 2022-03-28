@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	"Parent"."ParentID" = 1010
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @take Int32

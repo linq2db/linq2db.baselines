@@ -32,7 +32,7 @@ INSERT INTO "element_services"
 	"is_process_service",
 	"is_deleted"
 )
-SELECT 'TestProcessService',1,0 FROM rdb$database UNION ALL
+SELECT CAST('TestProcessService' AS VarChar(100) CHARACTER SET UNICODE_FSS),1,0 FROM rdb$database UNION ALL
 SELECT 'TestElementService',0,0 FROM rdb$database
 
 BeforeExecute
@@ -69,7 +69,7 @@ INSERT INTO "component_categories"
 	"service_id",
 	"is_deleted"
 )
-SELECT 'TestProcessCategory1','TestProcessService',0 FROM rdb$database UNION ALL
+SELECT CAST('TestProcessCategory1' AS VarChar(100) CHARACTER SET UNICODE_FSS),CAST('TestProcessService' AS VarChar(100) CHARACTER SET UNICODE_FSS),0 FROM rdb$database UNION ALL
 SELECT 'TestProcessCategory2','TestProcessService',0 FROM rdb$database UNION ALL
 SELECT 'TestElementCategory1','TestElementService',0 FROM rdb$database UNION ALL
 SELECT 'TestElementCategory2','TestElementService',0 FROM rdb$database
@@ -110,7 +110,7 @@ INSERT INTO "Components"
 	"service_id",
 	"is_deleted"
 )
-SELECT 'TestProcessComponent1','TestProcessCategory1','TestProcessService',0 FROM rdb$database UNION ALL
+SELECT CAST('TestProcessComponent1' AS VarChar(100) CHARACTER SET UNICODE_FSS),CAST('TestProcessCategory1' AS VarChar(100) CHARACTER SET UNICODE_FSS),CAST('TestProcessService' AS VarChar(100) CHARACTER SET UNICODE_FSS),0 FROM rdb$database UNION ALL
 SELECT 'TestProcessComponent2','TestProcessCategory2','TestProcessService',0 FROM rdb$database UNION ALL
 SELECT 'TestElementComponent1','TestElementCategory1','TestElementService',0 FROM rdb$database UNION ALL
 SELECT 'TestElementComponent2','TestElementCategory2','TestElementService',0 FROM rdb$database

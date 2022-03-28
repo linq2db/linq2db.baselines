@@ -41,6 +41,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -86,6 +88,8 @@ WHERE
 	[x].[Id] = 6
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

@@ -7,7 +7,7 @@ CREATE TABLE "DataTypeBinaryMapping"
 )
 
 BeforeExecute
-INSERT BULK "DataTypeBinaryMapping"(Binary
+INSERT BULK "DataTypeBinaryMapping"(Binary)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

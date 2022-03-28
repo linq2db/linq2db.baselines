@@ -55,6 +55,8 @@ VALUES
 (6,1,2)
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -72,6 +74,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -79,6 +83,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Usage_1  -- Int32
@@ -99,6 +105,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -106,6 +114,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Usage_1  -- Int32
@@ -125,6 +135,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -200,6 +212,8 @@ VALUES
 (6,1,2)
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -217,6 +231,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -224,6 +240,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Usage_1  -- Int32
@@ -244,6 +262,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -251,6 +271,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Usage_1  -- Int32
@@ -270,6 +292,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

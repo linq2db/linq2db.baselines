@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -48,6 +50,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 

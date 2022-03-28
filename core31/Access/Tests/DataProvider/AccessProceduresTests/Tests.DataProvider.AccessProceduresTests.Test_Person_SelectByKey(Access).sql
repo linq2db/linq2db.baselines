@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 
 SELECT
@@ -29,3 +31,5 @@ FROM
 WHERE
 	[_].[PersonID] = @id
 
+BeforeExecute
+RollbackTransaction

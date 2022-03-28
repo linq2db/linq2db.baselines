@@ -21,60 +21,48 @@ WITH [CTE_1] ([Id], [Value])
 AS
 (
 	SELECT
-		[t5].[Id],
-		[t5].[Value_1]
+		[t1].[Id],
+		[t1].[Value_1]
 	FROM
 		(
 			SELECT
-				[t3].[Id],
-				[t3].[Value_1]
-			FROM
-				(
-					SELECT
-						[t1].[Id],
-						[t1].[Value_1]
-					FROM
-						(
-							SELECT
-								@Id as [Id],
-								@Value_1 as [Value_1]
-						) [t1]
-					UNION ALL
-					SELECT
-						[t2].[Id],
-						[t2].[Value_1]
-					FROM
-						(
-							SELECT
-								@Id_1 as [Id],
-								@Value_2 as [Value_1]
-						) [t2]
-				) [t3]
-			UNION ALL
-			SELECT
-				[t4].[Id],
-				[t4].[Value_1]
-			FROM
-				(
-					SELECT
-						@Id_2 as [Id],
-						@Value_3 as [Value_1]
-				) [t4]
-		) [t5]
+				@Id as [Id],
+				@Value_1 as [Value_1]
+		) [t1]
 	UNION ALL
 	SELECT
-		[t6].[Id],
-		[t6].[Value_1]
+		[t2].[Id],
+		[t2].[Value_1]
+	FROM
+		(
+			SELECT
+				@Id_1 as [Id],
+				@Value_2 as [Value_1]
+		) [t2]
+	UNION ALL
+	SELECT
+		[t3].[Id],
+		[t3].[Value_1]
+	FROM
+		(
+			SELECT
+				@Id_2 as [Id],
+				@Value_3 as [Value_1]
+		) [t3]
+	UNION ALL
+	SELECT
+		[t4].[Id],
+		[t4].[Value_1]
 	FROM
 		(
 			SELECT
 				@Id_3 as [Id],
 				@Value_4 as [Value_1]
-		) [t6]
+		) [t4]
 )
 SELECT
-	[t7].[Id],
-	[t7].[Value]
+	[t5].[Id],
+	[t5].[Value]
 FROM
-	[CTE_1] [t7]
+	[CTE_1] [t5]
 

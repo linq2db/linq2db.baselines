@@ -39,7 +39,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO "UpdateSetTest" ("Id", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6") VALUES (1,Cast('a57339bd2343d84d9f4fdf9f93e2a627' as raw(16)),10,6,NULL,NULL,NULL)
+	INTO "UpdateSetTest" ("Id", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6") VALUES (1,HEXTORAW('A57339BD2343D84D9F4FDF9F93E2A627'),10,6,NULL,NULL,NULL)
 SELECT * FROM dual
 
 BeforeExecute

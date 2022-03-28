@@ -27,6 +27,8 @@ SET     @p = '111'
 SELECT ID FROM AllTypes WHERE ntextDataType = @p
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 --  Access AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 0
@@ -107,3 +109,5 @@ BeforeExecute
 
 [ThisProcedureNotVisibleFromODBC]
 
+BeforeExecute
+RollbackTransaction

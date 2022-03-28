@@ -2,36 +2,24 @@
 -- Access AccessOleDb
 
 SELECT
-	[t2].[a],
-	[t2].[b]
-FROM
-	(
+	Iif(EXISTS(
 		SELECT
-			Iif(EXISTS(
-				SELECT
-					*
-				FROM
-					[Child] [t1]
-			), True, False) as [a],
-			Iif([x].[ParentID] <> 0, True, False) as [b]
+			*
 		FROM
-			[Parent] [x]
-	) [t2]
+			[Child] [t1]
+	), True, False),
+	Iif([x].[ParentID] <> 0, True, False)
+FROM
+	[Parent] [x]
 UNION ALL
 SELECT
-	[t4].[a],
-	[t4].[b]
-FROM
-	(
+	Iif(EXISTS(
 		SELECT
-			Iif(EXISTS(
-				SELECT
-					*
-				FROM
-					[Child] [t3]
-			), True, False) as [a],
-			NULL as [b]
+			*
 		FROM
-			[Parent] [x_1]
-	) [t4]
+			[Child] [t2]
+	), True, False),
+	NULL
+FROM
+	[Parent] [x_1]
 

@@ -9,6 +9,8 @@ BeforeExecute
 CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
@@ -48,3 +50,5 @@ FROM
 WHERE
 	p.ID = :id AND ROWNUM <= :take
 
+BeforeExecute
+RollbackTransaction

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Child` `t1`
 WHERE
@@ -63,7 +63,7 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Child` `t1`
 WHERE

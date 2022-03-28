@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -35,6 +37,8 @@ FROM
 	) [lw_Parent]
 		INNER JOIN [GrandChild] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 

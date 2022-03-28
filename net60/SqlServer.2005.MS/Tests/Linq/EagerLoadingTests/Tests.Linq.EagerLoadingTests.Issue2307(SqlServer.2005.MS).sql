@@ -55,6 +55,8 @@ SELECT 3,1 UNION ALL
 SELECT 4,2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -65,6 +67,8 @@ FROM
 	[AttendanceSheet] [sheet]
 		INNER JOIN [AttendanceSheetRow] [detail] ON [detail].[AttendanceSheetId] = [sheet].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 

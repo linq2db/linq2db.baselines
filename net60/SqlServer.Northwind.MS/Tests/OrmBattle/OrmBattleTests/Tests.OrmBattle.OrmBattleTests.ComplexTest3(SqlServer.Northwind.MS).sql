@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
@@ -97,6 +99,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Suppliers] [detail] ON [detail].[SupplierID] = [key_data_result].[SupplierID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 

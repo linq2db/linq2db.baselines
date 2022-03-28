@@ -47,7 +47,7 @@ DECLARE @take_3 Int32
 SET     @take_3 = 1
 
 SELECT
-	t1."Value" as "Value_1"
+	t1."Value"
 FROM
 	"TakeSkipClass" t1
 ORDER BY

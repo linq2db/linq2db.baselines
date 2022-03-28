@@ -73,7 +73,7 @@ LIMIT @take
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`LinqDataTypes` `_`
 WHERE

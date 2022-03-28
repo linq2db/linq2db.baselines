@@ -12,7 +12,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	user as "c1"
+	user
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -27,6 +27,8 @@ BeforeExecute
 
 select user from dual
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 
@@ -203,6 +205,8 @@ BeforeExecute
 
 SYSTEM.TEST2132
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 

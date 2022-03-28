@@ -28,7 +28,7 @@ INSERT INTO "Issue1799Table3"
 	"ProcessID",
 	"ProcessName"
 )
-SELECT 1,'One' FROM rdb$database UNION ALL
+SELECT 1,CAST('One' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,'Two' FROM rdb$database
 
 BeforeExecute

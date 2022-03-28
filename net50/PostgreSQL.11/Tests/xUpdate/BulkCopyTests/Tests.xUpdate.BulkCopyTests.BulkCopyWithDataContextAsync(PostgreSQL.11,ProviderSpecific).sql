@@ -7,10 +7,10 @@ CREATE TABLE "SimpleBulkCopyTable"
 )
 
 BeforeExecute
-INSERT ASYNC BULK "SimpleBulkCopyTable"(Id
+INSERT ASYNC BULK "SimpleBulkCopyTable"(Id)
 
 BeforeExecute
-INSERT ASYNC BULK "SimpleBulkCopyTable"(Id
+INSERT ASYNC BULK "SimpleBulkCopyTable"(Id)
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

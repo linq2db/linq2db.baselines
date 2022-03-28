@@ -7,8 +7,12 @@ CREATE TABLE BULKCOPYTABLE
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 INSERT BULK BULKCOPYTABLE(ID)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 

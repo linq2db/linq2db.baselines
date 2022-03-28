@@ -317,6 +317,8 @@ VALUES
 (100,2000)
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -339,6 +341,8 @@ ORDER BY
 	[_].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -347,6 +351,8 @@ SELECT
 FROM
 	[SampleClass1] [t1]
 
+BeforeExecute
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -369,6 +375,8 @@ FROM
 ORDER BY
 	[_].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

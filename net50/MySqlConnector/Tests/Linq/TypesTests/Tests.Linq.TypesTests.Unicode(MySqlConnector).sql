@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE
 	`t1`.`PersonID` > 4
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- MySqlConnector MySql
 
@@ -48,7 +50,7 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE

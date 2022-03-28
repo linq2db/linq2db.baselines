@@ -47,6 +47,8 @@ FROM
 	"Person" "t1"
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -70,3 +72,5 @@ SELECT
 FROM
 	"Person" "t1"
 
+BeforeExecute
+CommitTransaction

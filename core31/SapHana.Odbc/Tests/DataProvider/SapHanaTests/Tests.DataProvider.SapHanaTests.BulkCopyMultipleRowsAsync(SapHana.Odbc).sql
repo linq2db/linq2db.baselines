@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @bigintDataType  -- Int64
 SET     @bigintDataType = 3000

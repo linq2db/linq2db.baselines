@@ -24,7 +24,7 @@ BeforeExecute
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Value1  -- Guid
-SET     @Value1 = Cast(x'a57339bd2343d84d9f4fdf9f93e2a627' as blob)
+SET     @Value1 = X'A57339BD2343D84D9F4FDF9F93E2A627'
 DECLARE @Value2  -- Int32
 SET     @Value2 = 10
 DECLARE @Value3  -- Int32
@@ -60,7 +60,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Value1  -- Guid
-SET     @Value1 = Cast(x'3d667bbcde0f27438f925d8cc3a11d11' as blob)
+SET     @Value1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @id  -- Int32
 SET     @id = 1
 
@@ -89,7 +89,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Value1  -- Guid
-SET     @Value1 = Cast(x'0d6048a921de744f8ac29516b287076e' as blob)
+SET     @Value1 = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @id  -- Int32
 SET     @id = 1
 

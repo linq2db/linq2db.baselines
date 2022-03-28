@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
@@ -314,3 +316,5 @@ FROM
 ORDER BY
 	t1."PersonID"
 
+BeforeExecute
+RollbackTransaction

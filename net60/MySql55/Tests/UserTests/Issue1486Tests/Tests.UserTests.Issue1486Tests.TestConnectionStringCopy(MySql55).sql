@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 --  MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -38,3 +40,5 @@ FROM
 		LEFT JOIN `Parent` `a_Parent` ON `t1`.`ParentID` = `a_Parent`.`ParentID`
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction

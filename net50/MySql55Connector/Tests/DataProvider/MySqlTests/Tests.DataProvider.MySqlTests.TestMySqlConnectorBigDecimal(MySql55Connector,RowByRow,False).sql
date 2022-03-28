@@ -65,7 +65,7 @@ ORDER BY
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`BigDecimalMySqlConnectorTable` `t1`
 
@@ -122,7 +122,7 @@ ORDER BY
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`BigDecimalMySqlConnectorTable` `t1`
 

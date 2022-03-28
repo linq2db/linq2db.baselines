@@ -47,6 +47,8 @@ BeforeExecute
 ALTER TABLE "Patient" ADD CONSTRAINT "FK_Patient_Person" FOREIGN KEY ("PersonID") REFERENCES "Person" ("PersonID") ON UPDATE CASCADE ON DELETE CASCADE
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
@@ -365,3 +367,5 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
+BeforeExecute
+RollbackTransaction

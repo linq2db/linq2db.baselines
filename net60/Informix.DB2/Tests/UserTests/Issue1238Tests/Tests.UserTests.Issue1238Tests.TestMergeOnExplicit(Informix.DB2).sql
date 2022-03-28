@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -84,3 +86,5 @@ SELECT
 FROM
 	InheritanceParent t1
 
+BeforeExecute
+RollbackTransaction

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Child` `t1`
 WHERE
@@ -10,7 +10,7 @@ WHERE
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Parent` `t1`
 WHERE
@@ -93,7 +93,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 1000
 
-DELETE `p`
+DELETE   `p`
 FROM
 	`Parent` `p`
 		INNER JOIN `Child` `c_1` ON `p`.`ParentID` = `c_1`.`ParentID`
@@ -105,7 +105,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 1000
 
-DELETE `p`
+DELETE   `p`
 FROM
 	`Parent` `p`
 		INNER JOIN `Child` `c_1` ON `p`.`ParentID` = `c_1`.`ParentID`
@@ -115,7 +115,7 @@ WHERE
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Child` `t1`
 WHERE
@@ -124,7 +124,7 @@ WHERE
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Parent` `t1`
 WHERE

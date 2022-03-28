@@ -45,7 +45,7 @@ AS
 	WHERE
 		`c_1`.`ParentID` % 2 = 0
 )
-DELETE `c_2`
+DELETE   `c_2`
 FROM
 	`CteChild` `c_2`
 		INNER JOIN `CTE_1` `ct` ON `ct`.`ParentID` = `c_2`.`ParentID`

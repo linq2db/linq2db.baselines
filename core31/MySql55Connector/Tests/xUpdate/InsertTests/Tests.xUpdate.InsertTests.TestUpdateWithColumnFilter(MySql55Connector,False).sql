@@ -92,7 +92,7 @@ BeforeExecute
 DECLARE @newName VarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'
 
-DELETE `x`
+DELETE   `x`
 FROM
 	`Person` `x`
 WHERE

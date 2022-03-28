@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -12,7 +14,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	user as "c1"
+	user
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -211,3 +213,5 @@ SELECT
 FROM
 	"AllTypes" t1
 
+BeforeExecute
+RollbackTransaction

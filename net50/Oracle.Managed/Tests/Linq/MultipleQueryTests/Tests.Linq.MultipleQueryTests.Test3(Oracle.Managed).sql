@@ -50,6 +50,8 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 SELECT
@@ -58,6 +60,8 @@ SELECT
 FROM
 	"Child" t1
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 

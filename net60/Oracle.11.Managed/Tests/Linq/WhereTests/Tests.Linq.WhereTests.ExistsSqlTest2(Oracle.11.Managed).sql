@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
@@ -13,3 +15,5 @@ WHERE
 			p."ParentID" = t1."ParentID"
 	)
 
+BeforeExecute
+RollbackTransaction

@@ -102,6 +102,8 @@ BeforeExecute
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql55 MySql.Official MySql
 
 `testdata`.`AddIssue792Record`
@@ -316,6 +318,8 @@ SET     @param1 = NULL
 
 `testdata`.`TestProcedure`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql55 MySql.Official MySql
 

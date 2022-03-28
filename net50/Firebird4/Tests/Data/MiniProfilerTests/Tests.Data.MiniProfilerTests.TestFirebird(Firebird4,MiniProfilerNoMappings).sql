@@ -6,6 +6,8 @@ SET     @p = '3323'
 SELECT ID FROM "AllTypes" WHERE "nvarcharDataType" = @p
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 --  Firebird
 
 "AddIssue792Record"
@@ -252,6 +254,8 @@ SET     @RDB_EFFECTIVE_OFFSET = 0
 
 TRANSITIONS
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 --  Firebird
 DECLARE @p Dec34 -- Object

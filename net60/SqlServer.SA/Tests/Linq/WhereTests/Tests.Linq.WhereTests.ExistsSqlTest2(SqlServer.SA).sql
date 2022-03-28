@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DELETE [p]
@@ -14,3 +16,5 @@ WHERE
 			[p].[ParentID] = [t1].[ParentID]
 	)
 
+BeforeExecute
+RollbackTransaction

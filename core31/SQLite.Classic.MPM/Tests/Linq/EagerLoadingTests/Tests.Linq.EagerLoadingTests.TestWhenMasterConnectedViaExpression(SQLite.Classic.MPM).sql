@@ -132,6 +132,8 @@ VALUES
 (10010,10,'DetailValue1000010')
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -169,6 +171,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [DetailClass] [_d] ON [_d].[MasterId] > [key_data_result].[Id1]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

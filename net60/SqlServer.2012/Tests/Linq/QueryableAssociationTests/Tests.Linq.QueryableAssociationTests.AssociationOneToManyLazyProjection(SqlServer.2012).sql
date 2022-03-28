@@ -88,6 +88,8 @@ AS RETURN
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 2
@@ -149,6 +151,8 @@ FROM
 	) [key_data_result]
 		CROSS APPLY dbo.fn_SomeFunction([key_data_result].[Id]) [detail]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012
 DECLARE @take Int -- Int32

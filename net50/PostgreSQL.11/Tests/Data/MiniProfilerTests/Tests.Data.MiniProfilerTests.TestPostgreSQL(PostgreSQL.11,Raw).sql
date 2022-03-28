@@ -20,7 +20,7 @@ SET     @p = '1234-11-22'::date
 SELECT @p
 
 BeforeExecute
-INSERT BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType
+INSERT BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType)
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
@@ -31,7 +31,9 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-INSERT BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType
+BeginTransaction
+BeforeExecute
+INSERT BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType)
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
@@ -42,7 +44,9 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-INSERT ASYNC BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType
+RollbackTransaction
+BeforeExecute
+INSERT ASYNC BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType)
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -53,7 +57,9 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-INSERT ASYNC BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType
+BeginTransaction
+BeforeExecute
+INSERT ASYNC BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType)
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -63,6 +69,8 @@ DELETE FROM
 WHERE
 	t1."ID" >= 2000
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
@@ -311,6 +319,8 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
 SELECT * FROM testdata."public"."GetParentByID"(NULL::integer)
@@ -330,6 +340,8 @@ BeforeExecute
 
 SELECT * FROM testdata."public"."TestTableFunctionSchema"()
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 

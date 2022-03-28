@@ -43,8 +43,12 @@ WHERE
 	[t1].[ParentID] = @ParentID
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 INSERT BULK [Parent](ParentID, Value1)
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @ParentID Int -- Int32

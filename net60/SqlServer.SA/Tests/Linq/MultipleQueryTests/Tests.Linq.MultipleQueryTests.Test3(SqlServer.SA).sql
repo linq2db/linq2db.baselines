@@ -50,6 +50,8 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -58,6 +60,8 @@ SELECT
 FROM
 	[Child] [t1]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 

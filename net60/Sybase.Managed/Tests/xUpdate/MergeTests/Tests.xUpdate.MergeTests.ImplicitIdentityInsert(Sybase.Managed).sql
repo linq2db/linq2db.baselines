@@ -4,6 +4,8 @@
 sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Patient]
@@ -326,3 +328,5 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
+BeforeExecute
+RollbackTransaction

@@ -55,6 +55,8 @@ VALUES
 (6,1,2)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -72,6 +74,8 @@ FROM
 		INNER JOIN "Table404Two" v ON v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -79,6 +83,8 @@ SELECT
 FROM
 	"Table404One" c_1
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Usage_1 Integer -- Int32
@@ -99,6 +105,8 @@ FROM
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -106,6 +114,8 @@ SELECT
 FROM
 	"Table404One" c_1
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Usage_1 Integer -- Int32
@@ -125,6 +135,8 @@ FROM
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -200,6 +212,8 @@ VALUES
 (6,1,2)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -217,6 +231,8 @@ FROM
 		INNER JOIN "Table404Two" v ON v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -224,6 +240,8 @@ SELECT
 FROM
 	"Table404One" c_1
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Usage_1 Integer -- Int32
@@ -244,6 +262,8 @@ FROM
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -251,6 +271,8 @@ SELECT
 FROM
 	"Table404One" c_1
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Usage_1 Integer -- Int32
@@ -270,6 +292,8 @@ FROM
 	) key_data_result
 		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 

@@ -6,7 +6,7 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE `p`
+DELETE   `p`
 FROM
 	`Person` `p`
 WHERE
@@ -114,7 +114,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 5
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Patient` `t1`
 WHERE
@@ -125,7 +125,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 5
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE

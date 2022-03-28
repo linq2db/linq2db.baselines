@@ -57,6 +57,8 @@ SELECT 5,1,2 UNION ALL
 SELECT 6,1,2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -74,6 +76,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -81,6 +85,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Usage_1 Int -- Int32
@@ -101,6 +107,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -108,6 +116,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Usage_1 Int -- Int32
@@ -127,6 +137,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2005
 
@@ -206,6 +218,8 @@ SELECT 5,1,2 UNION ALL
 SELECT 6,1,2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -223,6 +237,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -230,6 +246,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Usage_1 Int -- Int32
@@ -250,6 +268,8 @@ FROM
 		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -257,6 +277,8 @@ SELECT
 FROM
 	[Table404One] [c_1]
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Usage_1 Int -- Int32
@@ -276,6 +298,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2005
 

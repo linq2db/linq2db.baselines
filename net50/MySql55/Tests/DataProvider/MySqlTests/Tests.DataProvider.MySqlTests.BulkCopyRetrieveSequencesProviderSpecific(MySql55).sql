@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT Max(`PersonID`) FROM `Person`
@@ -21,3 +23,5 @@ VALUES
 ('Pediatrics',8,'test',NULL,'M'),
 ('Psychiatry',9,'test',NULL,'M')
 
+BeforeExecute
+RollbackTransaction

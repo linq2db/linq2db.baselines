@@ -11,33 +11,6 @@ BeforeExecute
 -- Firebird
 
 SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
-FROM
-	"Child" "t1"
-
-BeforeExecute
--- Firebird
-
-SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
-FROM
-	"Child" "t1"
-
-BeforeExecute
--- Firebird
-
-SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
-FROM
-	"Child" "t1"
-
-BeforeExecute
--- Firebird
-
-SELECT
 	"p"."ParentID",
 	"p"."Value1"
 FROM

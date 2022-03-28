@@ -62,7 +62,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
 	DROP TABLE [TableWithData]

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -37,3 +39,5 @@ FROM
 	[Parent] [t]
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction

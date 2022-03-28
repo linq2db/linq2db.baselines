@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 5000
@@ -24,6 +26,8 @@ FROM
 	) `key_data_result`
 		INNER JOIN `Child` `_c` ON `_c`.`ParentID` = `key_data_result`.`ParentID` AND `_c`.`ChildID` > -100
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @take_1 Int32

@@ -5,7 +5,7 @@ CREATE TABLE "TypeConvertTable"
 (
 	"Name"      VarChar(50) CHARACTER SET UNICODE_FSS NOT NULL,
 	"BoolValue" Char                                  NOT NULL,
-	"GuidValue" VarChar(50)
+	"GuidValue" VarChar(50) CHARACTER SET UNICODE_FSS
 )
 
 BeforeExecute

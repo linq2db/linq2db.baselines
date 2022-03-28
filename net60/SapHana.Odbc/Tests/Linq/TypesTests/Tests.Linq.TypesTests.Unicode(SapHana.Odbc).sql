@@ -7,6 +7,8 @@ WHERE
 	"t1"."PersonID" > 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Person"

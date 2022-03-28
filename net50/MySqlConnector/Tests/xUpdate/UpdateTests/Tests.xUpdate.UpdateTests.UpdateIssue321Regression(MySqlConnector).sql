@@ -82,7 +82,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 100500
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE

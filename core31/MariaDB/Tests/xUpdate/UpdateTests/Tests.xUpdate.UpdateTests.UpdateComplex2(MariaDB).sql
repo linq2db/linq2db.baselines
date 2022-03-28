@@ -6,7 +6,7 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE
@@ -75,7 +75,7 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE

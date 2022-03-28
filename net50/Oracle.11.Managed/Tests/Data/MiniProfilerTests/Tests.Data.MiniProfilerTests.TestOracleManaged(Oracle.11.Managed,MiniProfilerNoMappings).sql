@@ -1157,6 +1157,8 @@ BeforeExecute
 						
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 --  Oracle.Managed Oracle12
 
 SYSTEM.TEST2132
@@ -1337,6 +1339,8 @@ BeforeExecute
 
 SYSTEM.ADDISSUE792RECORD
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 --  Oracle.Managed Oracle12
 DECLARE @p TimeStampTZ -- DateTimeOffset

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Child` `t1`
 WHERE
@@ -65,7 +65,7 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Child` `t1`
 WHERE

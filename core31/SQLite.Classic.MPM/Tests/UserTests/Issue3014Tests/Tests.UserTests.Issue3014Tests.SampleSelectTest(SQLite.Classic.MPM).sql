@@ -53,6 +53,8 @@ VALUES
 (1,'Sample')
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -60,6 +62,8 @@ SELECT
 FROM
 	[TableStatus_3014] [x]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -69,6 +73,8 @@ FROM
 	[Table2_3014] [t]
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -76,6 +82,8 @@ SELECT
 FROM
 	[TableStatus_3014] [x]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -87,6 +95,8 @@ WHERE
 	[cp].[Id] = 0
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -94,6 +104,8 @@ SELECT
 FROM
 	[TableStatus_3014] [x]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -105,6 +117,8 @@ WHERE
 	1 = 0
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -112,6 +126,8 @@ SELECT
 FROM
 	[TableStatus_3014] [x]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

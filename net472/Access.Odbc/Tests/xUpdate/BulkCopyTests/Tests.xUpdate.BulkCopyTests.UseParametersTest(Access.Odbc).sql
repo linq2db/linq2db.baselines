@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 111001
@@ -2694,3 +2696,5 @@ FROM
 WHERE
 	[r].[ParentID] >= ? AND [r].[ParentID] <= ?
 
+BeforeExecute
+RollbackTransaction

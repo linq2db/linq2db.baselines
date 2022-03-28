@@ -7,6 +7,8 @@ WHERE
 	"t1"."PersonID" > 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

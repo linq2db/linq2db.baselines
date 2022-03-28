@@ -27,6 +27,8 @@ INSERT INTO [SampleClass]
 SELECT 1,100
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -53,6 +55,8 @@ FROM
 			) [t1]
 	) [t2]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 

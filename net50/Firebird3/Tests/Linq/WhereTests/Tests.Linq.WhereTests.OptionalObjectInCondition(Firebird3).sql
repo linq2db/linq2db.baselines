@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird3 Firebird
 DECLARE @FirstName VarChar(1) -- String
 SET     @FirstName = '1'
@@ -44,3 +46,5 @@ FROM
 WHERE
 	"r"."FirstName" = @FirstName
 
+BeforeExecute
+RollbackTransaction

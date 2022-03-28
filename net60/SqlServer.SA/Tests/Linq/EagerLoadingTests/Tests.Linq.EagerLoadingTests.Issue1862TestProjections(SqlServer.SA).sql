@@ -129,6 +129,8 @@ VALUES
 (4,4,5,0)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
@@ -207,6 +209,8 @@ FROM
 ORDER BY
 	[detail].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @blogId Int -- Int32

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -11,6 +13,8 @@ FROM
 WHERE
 	Lower([p].[FirstName]) LIKE '%test%' ESCAPE '~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

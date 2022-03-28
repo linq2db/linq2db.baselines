@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`CollatedTable` `t1`
 

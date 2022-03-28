@@ -14,7 +14,7 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "TakeSkipClass"
 			(
-				"Value" VarChar(10)
+				"Value" VarChar(10) CHARACTER SET UNICODE_FSS
 			)
 		';
 END
@@ -26,7 +26,7 @@ INSERT INTO "TakeSkipClass"
 (
 	"Value"
 )
-SELECT 'Value1' FROM rdb$database UNION ALL
+SELECT CAST('Value1' AS VarChar(10) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 'Value2' FROM rdb$database UNION ALL
 SELECT 'Value3' FROM rdb$database UNION ALL
 SELECT 'Value4' FROM rdb$database UNION ALL

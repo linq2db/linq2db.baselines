@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 
 DELETE FROM
@@ -127,3 +129,5 @@ SELECT
 FROM
 	"GrandChild" t1
 
+BeforeExecute
+RollbackTransaction

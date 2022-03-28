@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE
@@ -46,7 +46,7 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE

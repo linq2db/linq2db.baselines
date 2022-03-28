@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -66,3 +68,5 @@ SELECT
 FROM
 	[AllTypes] [t1]
 
+BeforeExecute
+RollbackTransaction

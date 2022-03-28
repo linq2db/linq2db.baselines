@@ -14,6 +14,8 @@ CREATE TABLE [FluentMapping]
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 0
@@ -94,6 +96,8 @@ BeforeExecute
 
 [ThisProcedureNotVisibleFromODBC]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access AccessOleDb
 

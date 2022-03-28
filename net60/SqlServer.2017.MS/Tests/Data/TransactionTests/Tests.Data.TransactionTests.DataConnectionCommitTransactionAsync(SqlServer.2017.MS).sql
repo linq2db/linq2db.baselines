@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransactionAsync
+BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
@@ -16,6 +18,8 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+CommitTransactionAsync
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 

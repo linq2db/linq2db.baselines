@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 
 DELETE FROM
@@ -130,3 +132,5 @@ SELECT
 FROM
 	"GrandChild" "t1"
 
+BeforeExecute
+RollbackTransaction

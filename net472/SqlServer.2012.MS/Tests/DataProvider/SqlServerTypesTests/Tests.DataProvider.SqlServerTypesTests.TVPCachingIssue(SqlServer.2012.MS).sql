@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
@@ -24,6 +26,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
@@ -44,6 +48,8 @@ WHERE
 	)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
@@ -69,6 +75,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
@@ -89,6 +97,8 @@ WHERE
 	)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
@@ -114,6 +124,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
@@ -134,6 +146,8 @@ WHERE
 	)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
@@ -159,6 +173,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object

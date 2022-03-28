@@ -59,7 +59,7 @@ WHERE
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE

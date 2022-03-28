@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Не ASCII'
@@ -134,3 +136,5 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 ) THEN DELETE
 ;
 
+BeforeExecute
+RollbackTransaction

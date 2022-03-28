@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
@@ -20,6 +22,8 @@ FROM
 ORDER BY
 	`_ch`.`ChildID`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql55 MySql.Official MySql
 

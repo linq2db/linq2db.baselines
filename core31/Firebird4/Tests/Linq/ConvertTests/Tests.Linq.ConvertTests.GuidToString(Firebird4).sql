@@ -8,5 +8,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	Lower(UUID_TO_CHAR("t"."GuidValue")) = @guid
+	Lower(Lower(UUID_TO_CHAR("t"."GuidValue"))) = @guid
 

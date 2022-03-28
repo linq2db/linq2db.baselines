@@ -111,7 +111,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 5
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Patient` `t1`
 WHERE
@@ -122,7 +122,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 5
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE

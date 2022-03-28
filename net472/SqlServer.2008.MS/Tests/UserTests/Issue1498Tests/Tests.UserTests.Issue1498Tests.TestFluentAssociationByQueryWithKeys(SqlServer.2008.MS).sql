@@ -89,6 +89,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 1
@@ -132,6 +134,8 @@ FROM
 WHERE
 	[x].[Id] = 6
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 

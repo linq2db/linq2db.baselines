@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE `p`
+DELETE   `p`
 FROM
 	`Parent` `p`
 		LEFT JOIN `Child` `lj1` ON `p`.`ParentID` = `lj1`.`ParentID`

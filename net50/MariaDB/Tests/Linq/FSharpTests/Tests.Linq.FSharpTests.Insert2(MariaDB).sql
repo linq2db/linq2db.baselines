@@ -52,7 +52,7 @@ LIMIT @take
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE

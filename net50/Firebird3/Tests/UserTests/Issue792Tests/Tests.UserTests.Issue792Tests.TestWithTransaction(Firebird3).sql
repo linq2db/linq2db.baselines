@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -215,3 +217,5 @@ SELECT
 FROM
 	"AllTypes" "t1"
 
+BeforeExecute
+RollbackTransaction

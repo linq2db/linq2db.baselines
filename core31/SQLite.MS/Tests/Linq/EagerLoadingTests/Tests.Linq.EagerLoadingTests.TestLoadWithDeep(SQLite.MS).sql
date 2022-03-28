@@ -1781,6 +1781,8 @@ VALUES
 (9009090,9009,'SubDetailValue900900090')
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 1
@@ -1830,6 +1832,8 @@ FROM
 	) [lw_MasterClass]
 		INNER JOIN [DetailClass] [detail] ON [lw_MasterClass].[Id1] = [detail].[MasterId]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @intParam  -- Int32

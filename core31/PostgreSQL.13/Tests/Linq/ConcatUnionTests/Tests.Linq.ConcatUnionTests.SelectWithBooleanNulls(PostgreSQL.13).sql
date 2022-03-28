@@ -2,47 +2,35 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t2.a,
-	t2.b
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" t1
+		)
+			THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN x."ParentID" <> 0 THEN True
+		ELSE False
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						"Child" t1
-				)
-					THEN True
-				ELSE False
-			END as a,
-			CASE
-				WHEN x."ParentID" <> 0 THEN True
-				ELSE False
-			END as b
-		FROM
-			"Parent" x
-	) t2
+	"Parent" x
 UNION ALL
 SELECT
-	t4.a,
-	t4.b
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" t2
+		)
+			THEN True
+		ELSE False
+	END,
+	Cast(NULL as Boolean)
 FROM
-	(
-		SELECT
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						"Child" t3
-				)
-					THEN True
-				ELSE False
-			END as a,
-			Cast(NULL as Boolean) as b
-		FROM
-			"Parent" x_1
-	) t4
+	"Parent" x_1
 

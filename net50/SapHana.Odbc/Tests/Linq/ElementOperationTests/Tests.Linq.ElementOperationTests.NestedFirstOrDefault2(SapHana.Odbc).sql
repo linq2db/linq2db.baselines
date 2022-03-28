@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 ORDER BY
 	"detail"."ChildID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 

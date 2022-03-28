@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -13,3 +15,5 @@ WHERE
 			Parent.ParentID = t1.ParentID
 	)
 
+BeforeExecute
+RollbackTransaction

@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.Classic SQLite
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	[Parent].[ParentID] = 1010
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32

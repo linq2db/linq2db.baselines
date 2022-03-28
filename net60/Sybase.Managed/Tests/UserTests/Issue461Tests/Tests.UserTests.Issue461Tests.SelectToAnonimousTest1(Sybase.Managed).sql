@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -6,6 +8,8 @@ SELECT TOP 1
 FROM
 	[Child] [l]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 

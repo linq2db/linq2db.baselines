@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -8,6 +10,8 @@ SELECT FIRST @take
 FROM
 	"Child" "l"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
@@ -102,6 +104,8 @@ FROM
 	[Customers] [c_1]
 		INNER JOIN [Orders] [detail] ON ([c_1].[CustomerID] = [detail].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [detail].[CustomerID] IS NULL)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 

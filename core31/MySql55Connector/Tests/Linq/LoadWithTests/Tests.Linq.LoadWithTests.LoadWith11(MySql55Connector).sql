@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
 SELECT
@@ -35,6 +37,8 @@ FROM
 	) `lw_Parent`
 		INNER JOIN `GrandChild` `detail` ON `lw_Parent`.`ParentID` = `detail`.`ParentID`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 

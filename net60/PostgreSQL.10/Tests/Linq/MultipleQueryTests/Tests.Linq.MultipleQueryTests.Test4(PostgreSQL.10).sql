@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -15,6 +17,8 @@ FROM
 	) key_data_result
 		INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 

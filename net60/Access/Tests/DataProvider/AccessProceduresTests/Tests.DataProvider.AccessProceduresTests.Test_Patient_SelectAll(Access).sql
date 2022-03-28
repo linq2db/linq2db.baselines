@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 
 Patient_SelectAll
@@ -19,3 +21,5 @@ FROM
 ORDER BY
 	[a_Person].[PersonID]
 
+BeforeExecute
+RollbackTransaction

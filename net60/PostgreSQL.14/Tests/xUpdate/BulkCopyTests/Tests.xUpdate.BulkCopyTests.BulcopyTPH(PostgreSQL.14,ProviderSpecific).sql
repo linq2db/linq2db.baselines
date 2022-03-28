@@ -14,7 +14,7 @@ CREATE TABLE "TPHTable"
 )
 
 BeforeExecute
-INSERT BULK "TPHTable"(Id, Discriminator, Value1, Value2, NullableBool, Value3
+INSERT BULK "TPHTable"(Id, Discriminator, Value1, Value2, NullableBool, Value3)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

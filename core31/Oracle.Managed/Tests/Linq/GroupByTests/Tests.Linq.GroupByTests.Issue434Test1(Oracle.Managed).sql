@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @input_2 Varchar2(6) -- String
 SET     @input_2 = '%test%'
@@ -13,6 +15,8 @@ FROM
 WHERE
 	Lower(p."FirstName") LIKE :input_2 ESCAPE '~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @input_2 Varchar2(6) -- String

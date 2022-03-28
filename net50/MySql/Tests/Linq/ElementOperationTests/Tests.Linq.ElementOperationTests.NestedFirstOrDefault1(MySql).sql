@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -10,6 +12,8 @@ FROM
 	`Child` `t1`
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 

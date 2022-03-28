@@ -33,7 +33,7 @@ WHERE
 	t1."ID" >= 4000
 
 BeforeExecute
-INSERT ASYNC BULK "LinqDataTypes"(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue
+INSERT ASYNC BULK "LinqDataTypes"(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL (asynchronously)

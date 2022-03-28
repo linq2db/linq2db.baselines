@@ -85,6 +85,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -130,6 +132,8 @@ WHERE
 	`x`.`Id` = 6
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 

@@ -128,7 +128,7 @@ BeforeExecute
 DECLARE @ID Int32
 SET     @ID = 5
 
-DELETE `x`
+DELETE   `x`
 FROM
 	`Person` `x`
 WHERE

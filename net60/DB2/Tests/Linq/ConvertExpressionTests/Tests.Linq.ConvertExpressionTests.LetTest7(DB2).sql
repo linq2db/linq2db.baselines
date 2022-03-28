@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -22,6 +24,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Child" "_c" ON "_c"."ParentID" = "key_data_result"."ParentID" AND "_c"."ChildID" > -100
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

@@ -32,7 +32,7 @@ INSERT INTO "Src"
 	"String",
 	"NullableString"
 )
-SELECT 2,2,'abc','abc' FROM rdb$database UNION ALL
+SELECT 2,2,CAST('abc' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('abc' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 3,NULL,'def',NULL FROM rdb$database
 
 BeforeExecute

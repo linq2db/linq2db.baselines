@@ -48,7 +48,7 @@ SELECT
 			"AllTypes" t1
 		WHERE
 			t1.ID = 1000 AND t1."guidDataType" = :val
-	) as "Count_1"
+	) as "Count"
 FROM
 	"AllTypes" t2
 WHERE

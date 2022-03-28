@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @v1 Int -- Int32
 SET     @v1 = 1

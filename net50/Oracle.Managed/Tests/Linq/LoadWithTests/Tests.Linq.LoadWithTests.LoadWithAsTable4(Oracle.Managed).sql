@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 1
@@ -37,3 +39,5 @@ FROM
 	"Parent" t
 FETCH NEXT :take ROWS ONLY
 
+BeforeExecute
+RollbackTransaction

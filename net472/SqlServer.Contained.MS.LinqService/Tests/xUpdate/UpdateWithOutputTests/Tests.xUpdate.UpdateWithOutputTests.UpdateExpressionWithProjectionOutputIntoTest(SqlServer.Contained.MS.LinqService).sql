@@ -214,28 +214,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 10
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = -10
-DECLARE @ValueStr NVarChar(50) -- String
-SET     @ValueStr = N'Str10'
-
-INSERT INTO [TableWithData]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-VALUES
-(
-	@Id,
-	@Value_1,
-	@ValueStr
-)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [DestinationTable]
 
@@ -434,28 +412,6 @@ DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = -8
 DECLARE @ValueStr NVarChar(50) -- String
 SET     @ValueStr = N'-8Dst'
-
-INSERT INTO [DestinationTable]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-VALUES
-(
-	@Id,
-	@Value_1,
-	@ValueStr
-)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 10
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = -9
-DECLARE @ValueStr NVarChar(50) -- String
-SET     @ValueStr = N'-9Dst'
 
 INSERT INTO [DestinationTable]
 (

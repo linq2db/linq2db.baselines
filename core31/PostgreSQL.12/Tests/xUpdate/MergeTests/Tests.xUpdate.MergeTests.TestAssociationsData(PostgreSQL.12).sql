@@ -4,6 +4,8 @@
 ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
@@ -297,3 +299,5 @@ FROM
 ORDER BY
 	t1."PersonID"
 
+BeforeExecute
+RollbackTransaction

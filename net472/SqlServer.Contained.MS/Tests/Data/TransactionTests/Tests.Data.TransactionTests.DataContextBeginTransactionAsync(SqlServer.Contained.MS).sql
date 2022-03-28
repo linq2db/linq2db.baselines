@@ -8,6 +8,8 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
+BeginTransactionAsync
+BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
@@ -25,3 +27,5 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+RollbackTransaction

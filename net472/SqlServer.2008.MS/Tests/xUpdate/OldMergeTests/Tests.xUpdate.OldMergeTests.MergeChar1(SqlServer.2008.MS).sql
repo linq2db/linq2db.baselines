@@ -4,6 +4,8 @@
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [AllTypes]
@@ -75,3 +77,5 @@ VALUES
 )
 ;
 
+BeforeExecute
+RollbackTransaction

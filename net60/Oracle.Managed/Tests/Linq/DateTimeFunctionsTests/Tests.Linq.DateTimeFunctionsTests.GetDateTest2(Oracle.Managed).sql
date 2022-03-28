@@ -4,8 +4,8 @@ DECLARE @take Int32
 SET     @take = 5
 
 SELECT
-	t1."c1" as "Key_1",
-	Count(*) as "Count_1"
+	t1."c1" as "Key",
+	Count(*) as "Count"
 FROM
 	(
 		SELECT

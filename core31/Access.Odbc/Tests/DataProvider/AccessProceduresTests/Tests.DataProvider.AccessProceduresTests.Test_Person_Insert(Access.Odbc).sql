@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT TOP 1
@@ -37,3 +39,5 @@ FROM
 WHERE
 	[_].[PersonID] > ?
 
+BeforeExecute
+RollbackTransaction

@@ -3,7 +3,7 @@
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Parent` `t1`
 WHERE
@@ -44,7 +44,7 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Parent` `t1`
 WHERE
@@ -67,7 +67,7 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Parent` `t1`
 WHERE

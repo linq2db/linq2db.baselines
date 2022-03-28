@@ -35,25 +35,18 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[NumeroInterno],
-	[t1].[StatusValor],
-	[t1].[DescricaoStatus]
+	[doSap].[DocEntry],
+	Iif([doSap].[DocStatus] = 'O', 'Aberto', 'Fechado'),
+	'Manual/Externo'
 FROM
-	(
-		SELECT
-			[doSap].[DocEntry] as [NumeroInterno],
-			Iif([doSap].[DocStatus] = 'O', 'Aberto', 'Fechado') as [StatusValor],
-			'Manual/Externo' as [DescricaoStatus]
-		FROM
-			[O1] [doSap]
-		UNION
-		SELECT
-			[doSap_1].[DocEntry] as [NumeroInterno],
-			Iif([doSap_1].[DocStatus] = 'O', 'Aberto', 'Fechado') as [StatusValor],
-			'Manual/Externo' as [DescricaoStatus]
-		FROM
-			[O2] [doSap_1]
-	) [t1]
+	[O1] [doSap]
+UNION
+SELECT
+	[doSap_1].[DocEntry],
+	Iif([doSap_1].[DocStatus] = 'O', 'Aberto', 'Fechado'),
+	'Manual/Externo'
+FROM
+	[O2] [doSap_1]
 UNION
 SELECT
 	[doSap_2].[DocEntry],

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
 SELECT
@@ -7,6 +9,8 @@ SELECT
 FROM
 	`Child` `t1`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 

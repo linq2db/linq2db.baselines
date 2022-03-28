@@ -9,6 +9,8 @@ BeforeExecute
 CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
@@ -66,3 +68,5 @@ VALUES
 	"Source"."nvarcharDataType"
 )
 
+BeforeExecute
+RollbackTransaction

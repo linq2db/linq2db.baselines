@@ -32,8 +32,7 @@ VALUES
 (6,-6,N'Str6'),
 (7,-7,N'Str7'),
 (8,-8,N'Str8'),
-(9,-9,N'Str9'),
-(10,-10,N'Str10')
+(9,-9,N'Str9')
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -69,8 +68,7 @@ VALUES
 (6,-5,N'-5Dst'),
 (7,-6,N'-6Dst'),
 (8,-7,N'-7Dst'),
-(9,-8,N'-8Dst'),
-(10,-9,N'-9Dst')
+(9,-8,N'-8Dst')
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)

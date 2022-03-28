@@ -16,6 +16,10 @@ CREATE TABLE [ColumnOrderTest]
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 DROP TABLE [ColumnOrderTest]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`GrandChild` `t1`
 WHERE
@@ -52,7 +52,7 @@ WHERE
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `gc`
+DELETE   `gc`
 FROM
 	`GrandChild` `gc`
 		INNER JOIN `Parent` `a_Parent` ON `gc`.`ParentID` = `a_Parent`.`ParentID`
@@ -72,7 +72,7 @@ WHERE
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`GrandChild` `t1`
 WHERE

@@ -36,7 +36,7 @@ INSERT INTO "Contract_Distributor_Agent"
 	"Distributor_Agent_Type_Prefix",
 	"Represents_Type_Prefix"
 )
-SELECT 1,1,198827882,'CC','OFFICE','REPRESENTS' FROM rdb$database
+SELECT 1,1,198827882,CAST('CC' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('OFFICE' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('REPRESENTS' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -70,7 +70,7 @@ INSERT INTO "Agent"
 	"First_Name",
 	"Last_Name"
 )
-SELECT 1,'x','x' FROM rdb$database
+SELECT 1,CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -104,7 +104,7 @@ INSERT INTO "Distributor"
 	"Type_Code",
 	"Distributor_Name"
 )
-SELECT 1,'RE','x' FROM rdb$database
+SELECT 1,CAST('RE' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -138,7 +138,7 @@ INSERT INTO "Distributor_Commercial_Propert"
 	"Commercial_Property_Id",
 	"Distributor_Type_Code"
 )
-SELECT 1,1,'RE' FROM rdb$database
+SELECT 1,1,CAST('RE' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -180,7 +180,7 @@ INSERT INTO "Commercial_Property"
 	"Zip_Plus_4",
 	"City_Code"
 )
-SELECT 1,'x','x','x','x','x','x' FROM rdb$database
+SELECT 1,CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -214,7 +214,7 @@ INSERT INTO "Contract_Dates"
 	"Type_Code",
 	"Effective_Date"
 )
-SELECT 198827882,'ESTCOE','x' FROM rdb$database
+SELECT 198827882,CAST('ESTCOE' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -246,7 +246,7 @@ INSERT INTO "Cities"
 	"City_Code",
 	"City_Name"
 )
-SELECT 'x','Urupinsk' FROM rdb$database
+SELECT CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('Urupinsk' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird

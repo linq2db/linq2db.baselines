@@ -71,7 +71,7 @@ BeforeExecute
 DECLARE @ID Int32
 SET     @ID = 1
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`xxPerson` `t1`
 WHERE

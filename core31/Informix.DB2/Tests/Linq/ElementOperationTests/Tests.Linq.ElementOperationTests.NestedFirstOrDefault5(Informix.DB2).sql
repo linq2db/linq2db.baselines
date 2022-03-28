@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -28,6 +30,8 @@ FROM
 ORDER BY
 	detail.ChildID
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

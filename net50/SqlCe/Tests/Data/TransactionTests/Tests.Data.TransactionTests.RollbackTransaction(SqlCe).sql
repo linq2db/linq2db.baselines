@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlCe
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	[Parent].[ParentID] = 1010
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32

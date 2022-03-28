@@ -66,6 +66,14 @@ FROM
 					[Issue1983Card] [card_2]
 				WHERE
 					[cu].[Id] = [card_2].[PersonId] AND [card_2].[CardType] = 2
+			) as [cnt],
+			(
+				SELECT
+					Count(*)
+				FROM
+					[Issue1983Card] [card_3]
+				WHERE
+					[cu].[Id] = [card_3].[PersonId] AND [card_3].[CardType] = 2
 			) as [ex],
 			[cu].[Id],
 			[cu].[Name],
@@ -92,7 +100,7 @@ FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
 WHERE
-	([cu_1].[ex] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
+	([cu_1].[cnt] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -116,6 +124,14 @@ FROM
 					[Issue1983Card] [card_2]
 				WHERE
 					[card_2].[PersonId] = [cu].[Id] AND [card_2].[CardType] = 2
+			) as [cnt],
+			(
+				SELECT
+					Count(*)
+				FROM
+					[Issue1983Card] [card_3]
+				WHERE
+					[card_3].[PersonId] = [cu].[Id] AND [card_3].[CardType] = 2
 			) as [ex],
 			[cu].[Name],
 			[cu].[CountOfCards],
@@ -141,7 +157,7 @@ FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
 WHERE
-	([cu_1].[ex] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
+	([cu_1].[cnt] = 0 OR ([cu_1].[ex] <> 0 OR [cu_1].[ex] IS NULL))
 
 BeforeExecute
 -- SQLite.Classic SQLite

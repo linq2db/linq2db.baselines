@@ -39,6 +39,8 @@ WHERE
 	[t1].[ParentID] = @ParentID
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
@@ -110,6 +112,8 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @ParentID Integer -- Int32

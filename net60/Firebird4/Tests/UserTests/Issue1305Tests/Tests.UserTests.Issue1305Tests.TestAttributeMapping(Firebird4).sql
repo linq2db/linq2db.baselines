@@ -16,6 +16,8 @@ CREATE TABLE "ColumnOrderTest"
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird4 Firebird
 
 "AddIssue792Record"
@@ -262,6 +264,8 @@ SET     @RDB_EFFECTIVE_OFFSET = 0
 
 TRANSITIONS
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird4 Firebird
 

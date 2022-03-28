@@ -8,6 +8,8 @@ FROM
 	`Parent` `t1`
 
 BeforeExecute
+BeginTransactionAsync
+BeforeExecute
 -- MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -25,3 +27,5 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+RollbackTransaction

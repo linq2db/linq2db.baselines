@@ -57,6 +57,8 @@ VALUES
 (4,2)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -67,6 +69,8 @@ FROM
 	[AttendanceSheet] [sheet]
 		INNER JOIN [AttendanceSheetRow] [detail] ON [detail].[AttendanceSheetId] = [sheet].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 

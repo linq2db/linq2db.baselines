@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 MERGE INTO [Child] [Target]
@@ -59,3 +61,5 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 ) THEN DELETE
 ;
 
+BeforeExecute
+RollbackTransaction

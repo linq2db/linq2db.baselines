@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
@@ -28,6 +30,8 @@ FROM
 ORDER BY
 	"detail"."ChildID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird4 Firebird
 

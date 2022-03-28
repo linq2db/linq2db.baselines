@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
@@ -83,3 +85,5 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
+BeforeExecute
+RollbackTransaction

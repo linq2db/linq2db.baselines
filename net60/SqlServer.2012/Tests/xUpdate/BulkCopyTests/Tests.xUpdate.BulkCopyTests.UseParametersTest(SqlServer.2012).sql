@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2012
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111001
@@ -787,3 +789,5 @@ FROM
 WHERE
 	[r].[ParentID] >= @ParentID AND [r].[ParentID] <= @ParentID_1
 
+BeforeExecute
+RollbackTransaction

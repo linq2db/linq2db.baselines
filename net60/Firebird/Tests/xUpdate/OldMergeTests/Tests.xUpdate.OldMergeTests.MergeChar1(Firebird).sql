@@ -4,6 +4,8 @@
 SET GENERATOR "AllTypesID" TO 2
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
@@ -76,3 +78,5 @@ VALUES
 	"Source"."ncharDataType"
 )
 
+BeforeExecute
+RollbackTransaction

@@ -1065,7 +1065,7 @@ VALUES
 BeforeExecute
 --  MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`AllTypesNoYear` `t1`
 WHERE
@@ -2105,7 +2105,7 @@ VALUES
 BeforeExecute
 --  MySqlConnector MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`AllTypesNoYear` `t1`
 WHERE
@@ -2197,6 +2197,8 @@ BeforeExecute
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 --  MySqlConnector MySql
 
@@ -2432,3 +2434,5 @@ SET     @param1 = NULL
 
 `testdataconnector`.`TestProcedure`
 
+BeforeExecute
+RollbackTransaction

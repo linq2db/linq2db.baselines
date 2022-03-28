@@ -202,6 +202,8 @@ VALUES
 (190,'Sub2_19',NULL)
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -281,6 +283,8 @@ FROM
 		INNER JOIN [SubItem2] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -293,6 +297,8 @@ FROM
 WHERE
 	[m_1].[Id] > 1
 
+BeforeExecute
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -376,6 +382,8 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [e].[ParentId] = [a_Parent].[Id]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -388,6 +396,8 @@ FROM
 WHERE
 	[m_1].[Id] > 1
 
+BeforeExecute
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -470,6 +480,8 @@ FROM
 		INNER JOIN [SubItem2] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 		LEFT JOIN [MainItem] [a_Parent] ON [detail].[ParentId] = [a_Parent].[Id]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

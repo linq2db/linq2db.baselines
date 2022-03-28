@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird4 Firebird
 DECLARE @v1 Integer -- Int32
 SET     @v1 = 1

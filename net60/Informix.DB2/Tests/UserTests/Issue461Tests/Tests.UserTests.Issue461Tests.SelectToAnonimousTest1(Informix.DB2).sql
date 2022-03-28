@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -6,6 +8,8 @@ SELECT FIRST 1
 FROM
 	Child l
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DELETE `c_2`
+DELETE   `c_2`
 FROM
 	`Parent` `x`
 		INNER JOIN `Child` `c_1` ON `x`.`ParentID` = `c_1`.`ParentID`

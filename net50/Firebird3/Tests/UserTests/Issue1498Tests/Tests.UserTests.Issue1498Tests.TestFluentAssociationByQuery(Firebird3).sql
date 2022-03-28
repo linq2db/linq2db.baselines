@@ -85,6 +85,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -128,6 +130,8 @@ FROM
 WHERE
 	"x"."Id" = 6
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

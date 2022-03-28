@@ -4,6 +4,8 @@
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2019
 
 DELETE [t1]
@@ -313,3 +315,5 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
+BeforeExecute
+RollbackTransaction

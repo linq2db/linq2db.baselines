@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransactionAsync
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -16,6 +18,8 @@ VALUES
 	:Value1
 )
 
+BeforeExecute
+CommitTransactionAsync
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 

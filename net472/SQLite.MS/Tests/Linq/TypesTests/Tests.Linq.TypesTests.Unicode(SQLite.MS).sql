@@ -7,6 +7,8 @@ WHERE
 	[Person].[PersonID] > 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Person]

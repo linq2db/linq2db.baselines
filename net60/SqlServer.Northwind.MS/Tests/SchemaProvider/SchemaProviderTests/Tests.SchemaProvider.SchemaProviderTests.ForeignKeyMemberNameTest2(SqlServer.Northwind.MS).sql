@@ -167,6 +167,8 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 2
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [NorthwindMS].[dbo].[CustOrderHist] @CustomerID'
@@ -229,3 +231,5 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
+BeforeExecute
+RollbackTransaction

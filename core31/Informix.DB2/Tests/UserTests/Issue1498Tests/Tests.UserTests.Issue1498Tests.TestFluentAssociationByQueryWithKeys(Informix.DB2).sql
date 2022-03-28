@@ -89,6 +89,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -128,6 +130,8 @@ FROM
 WHERE
 	x.Id = 6
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

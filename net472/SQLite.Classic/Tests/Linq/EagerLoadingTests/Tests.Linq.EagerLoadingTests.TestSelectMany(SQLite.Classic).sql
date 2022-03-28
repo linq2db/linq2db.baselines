@@ -1781,6 +1781,8 @@ VALUES
 (9009090,9009,'SubDetailValue900900090')
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
@@ -1832,6 +1834,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [SubDetailClass] [detail] ON [key_data_result].[DetailId] = [detail].[DetailId]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32

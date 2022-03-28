@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Child` `t1`
 WHERE
@@ -10,7 +10,7 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Parent` `t1`
 WHERE
@@ -58,7 +58,7 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Child` `t1`
 WHERE
@@ -67,7 +67,7 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Parent` `t1`
 WHERE

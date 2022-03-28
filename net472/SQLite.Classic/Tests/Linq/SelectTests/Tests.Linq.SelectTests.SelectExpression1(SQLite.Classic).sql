@@ -26,9 +26,9 @@ VALUES
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @p_1  -- Guid
-SET     @p_1 = Cast(x'1cb5d9b3f9892a44893bcd8a6f667d37' as blob)
+SET     @p_1 = X'1CB5D9B3F9892A44893BCD8A6F667D37'
 DECLARE @p_2  -- Guid
-SET     @p_2 = Cast(x'd4dcef619d65e841910c506a9c2f31c5' as blob)
+SET     @p_2 = X'D4DCEF619D65E841910C506A9C2F31C5'
 DECLARE @take  -- Int32
 SET     @take = 1
 

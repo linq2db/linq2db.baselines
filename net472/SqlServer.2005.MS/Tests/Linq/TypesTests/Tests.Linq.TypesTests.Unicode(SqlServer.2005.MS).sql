@@ -8,6 +8,8 @@ WHERE
 	[t1].[PersonID] > 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO [Person]

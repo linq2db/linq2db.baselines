@@ -102,6 +102,8 @@ WHERE
 	)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
@@ -117,6 +119,8 @@ FROM
 	) [lw_SomeEntity]
 		CROSS APPLY dbo.fn_SomeFunction([lw_SomeEntity].[Id]) [detail]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
