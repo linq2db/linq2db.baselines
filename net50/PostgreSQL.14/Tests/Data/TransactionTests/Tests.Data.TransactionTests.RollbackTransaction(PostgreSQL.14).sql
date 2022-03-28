@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	"Parent"."ParentID" = 1010
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32

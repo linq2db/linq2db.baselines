@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(1) -- String
 SET     @FirstName = '1'
@@ -44,3 +46,5 @@ FROM
 WHERE
 	r."FirstName" = :FirstName
 
+BeforeExecute
+RollbackTransaction
