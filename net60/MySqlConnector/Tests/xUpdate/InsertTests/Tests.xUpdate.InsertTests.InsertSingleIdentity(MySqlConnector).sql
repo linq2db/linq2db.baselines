@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`TestIdentity` `t1`
 
@@ -18,7 +18,7 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`TestIdentity` `t1`
 

@@ -4,6 +4,8 @@
 SET GLOBAL local_infile=ON
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 DECLARE @p1 Time
 SET     @p1 = 17:54:55
@@ -3122,3 +3124,5 @@ ORDER BY
 	`_`.`ID`
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction

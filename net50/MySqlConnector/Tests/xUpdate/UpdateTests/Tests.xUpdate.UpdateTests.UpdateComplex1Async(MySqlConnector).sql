@@ -6,7 +6,7 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE
@@ -107,7 +107,7 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE

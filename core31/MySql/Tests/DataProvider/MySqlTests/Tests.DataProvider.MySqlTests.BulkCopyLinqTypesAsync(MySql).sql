@@ -27,7 +27,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE
@@ -62,7 +62,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE

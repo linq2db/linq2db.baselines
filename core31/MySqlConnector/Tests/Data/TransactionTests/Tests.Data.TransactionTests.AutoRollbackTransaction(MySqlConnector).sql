@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySqlConnector MySql
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	`t1`.`ParentID` = 1010
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySqlConnector MySql
 DECLARE @take Int32
@@ -43,7 +47,7 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Parent` `t1`
 WHERE

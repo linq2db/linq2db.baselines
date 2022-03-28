@@ -32,7 +32,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE
@@ -49,7 +49,7 @@ INSERT BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue,
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE

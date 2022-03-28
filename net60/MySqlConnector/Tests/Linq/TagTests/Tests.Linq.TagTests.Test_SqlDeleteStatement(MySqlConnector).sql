@@ -13,7 +13,7 @@ BeforeExecute
 -- MySqlConnector MySql
 
 /* My Test */
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`TestTable` `t1`
 

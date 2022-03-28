@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -28,6 +30,8 @@ WHERE
 	`c_1`.`ChildID` > -100
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySqlConnector MySql
 

@@ -31,7 +31,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 4
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE

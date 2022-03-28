@@ -45,7 +45,7 @@ BeforeExecute
 DECLARE @lastId Int32
 SET     @lastId = 3
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`AllTypes` `t1`
 WHERE

@@ -71,7 +71,7 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`LinqDataTypes` `_`
 WHERE

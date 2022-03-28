@@ -3,7 +3,7 @@
 DECLARE @Id Int32
 SET     @Id = 102
 
-DELETE `r`
+DELETE   `r`
 FROM
 	`LinqDataTypes` `r`
 WHERE
@@ -42,7 +42,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 102
 
-DELETE `r`
+DELETE   `r`
 FROM
 	`LinqDataTypes` `r`
 WHERE

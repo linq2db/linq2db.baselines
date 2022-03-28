@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @p1 Time
 SET     @p1 = 17:54:55
@@ -3117,3 +3119,5 @@ ORDER BY
 	`_`.`ID`
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction

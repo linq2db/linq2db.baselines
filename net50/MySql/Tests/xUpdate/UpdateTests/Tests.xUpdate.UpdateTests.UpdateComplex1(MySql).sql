@@ -6,7 +6,7 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE
@@ -107,7 +107,7 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Person` `_`
 WHERE

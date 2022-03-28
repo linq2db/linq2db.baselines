@@ -3,7 +3,7 @@
 DECLARE @Id Int32
 SET     @Id = 102
 
-DELETE `r`
+DELETE   `r`
 FROM
 	`LinqDataTypes` `r`
 WHERE
@@ -26,7 +26,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE
@@ -37,7 +37,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 102
 
-DELETE `r`
+DELETE   `r`
 FROM
 	`LinqDataTypes` `r`
 WHERE

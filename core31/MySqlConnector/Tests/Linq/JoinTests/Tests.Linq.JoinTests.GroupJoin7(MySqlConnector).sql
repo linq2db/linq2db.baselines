@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySqlConnector MySql
 DECLARE @n Int32
 SET     @n = 1
@@ -18,6 +20,8 @@ FROM
 	) `key_data_result`
 		INNER JOIN `Child` `_gjd_c` ON `_gjd_c`.`ParentID` - @n = `key_data_result`.`ParentID`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySqlConnector MySql
 
