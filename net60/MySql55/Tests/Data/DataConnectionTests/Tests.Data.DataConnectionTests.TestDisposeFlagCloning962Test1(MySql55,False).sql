@@ -63,6 +63,8 @@ VALUES
 ('Prod 6',1,'q 6')
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
@@ -75,6 +77,8 @@ FROM
 	`Categories` `lw_Category`
 		INNER JOIN `Products` `detail` ON `lw_Category`.`CategoryID` = `detail`.`CategoryID`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql55 MySql.Official MySql
 

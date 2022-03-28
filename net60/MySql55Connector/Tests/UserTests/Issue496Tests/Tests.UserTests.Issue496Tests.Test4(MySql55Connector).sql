@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
 SELECT
@@ -14,6 +16,8 @@ FROM
 	) `key_data_result`
 		INNER JOIN `Child` `detail` ON `key_data_result`.`ParentID` = `detail`.`ParentID`
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 

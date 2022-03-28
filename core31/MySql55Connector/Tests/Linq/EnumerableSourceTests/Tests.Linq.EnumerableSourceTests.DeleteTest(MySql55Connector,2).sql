@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t`
+DELETE   `t`
 FROM
 	`TableToInsert` `t`
 		INNER JOIN (

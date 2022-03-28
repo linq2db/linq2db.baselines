@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -37,3 +39,5 @@ FROM
 	`Parent` `t`
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction

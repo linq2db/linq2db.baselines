@@ -32,7 +32,7 @@ VALUES
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE
@@ -49,7 +49,7 @@ INSERT ASYNC BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, Guid
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql (asynchronously)
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`LinqDataTypes` `t1`
 WHERE

@@ -24,6 +24,8 @@ VALUES
 (1,100)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @take Int32
 SET     @take = 1
@@ -53,6 +55,8 @@ FROM
 	) `t2`
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- MySql55 MySql.Official MySql
 

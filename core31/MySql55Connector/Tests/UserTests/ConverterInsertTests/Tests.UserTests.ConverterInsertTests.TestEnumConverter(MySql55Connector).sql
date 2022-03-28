@@ -66,7 +66,7 @@ SET     @MiddleName = '789'
 DECLARE @Gender VarChar(1) -- String
 SET     @Gender = 'M'
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE

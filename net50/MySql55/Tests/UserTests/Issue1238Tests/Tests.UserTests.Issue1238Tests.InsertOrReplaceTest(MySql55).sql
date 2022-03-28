@@ -1,7 +1,9 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`InheritanceParent` `t1`
 
@@ -69,3 +71,5 @@ SELECT
 FROM
 	`InheritanceParent` `t1`
 
+BeforeExecute
+RollbackTransaction

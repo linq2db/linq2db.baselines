@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransactionAsync
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -17,9 +19,11 @@ VALUES
 )
 
 BeforeExecute
+CommitTransactionAsync
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `_`
+DELETE   `_`
 FROM
 	`Parent` `_`
 WHERE

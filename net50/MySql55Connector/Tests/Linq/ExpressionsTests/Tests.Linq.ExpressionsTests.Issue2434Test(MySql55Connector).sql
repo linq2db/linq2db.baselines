@@ -15,11 +15,11 @@ SELECT
 	`t1`.`Id`,
 	`t1`.`FirstName`,
 	`t1`.`LastName`,
-	Concat(`t1`.`FirstName`, Concat(' ', `t1`.`LastName`))
+	Concat(`t1`.`FirstName`, ' ', `t1`.`LastName`)
 FROM
 	`Issue2434Table` `t1`
 ORDER BY
-	Concat(`t1`.`FirstName`, Concat(' ', `t1`.`LastName`))
+	Concat(`t1`.`FirstName`, ' ', `t1`.`LastName`)
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

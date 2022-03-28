@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 DECLARE @v1 Int32
 SET     @v1 = 1

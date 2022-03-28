@@ -4,23 +4,25 @@
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Patient` `t1`
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Doctor` `t1`
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 
@@ -318,3 +320,5 @@ FROM
 ORDER BY
 	`t1`.`PersonID`
 
+BeforeExecute
+RollbackTransaction
