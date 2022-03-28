@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Parent]
@@ -20,3 +22,5 @@ INSERT INTO [Child]
 VALUES
 (111001,0)
 
+BeforeExecute
+RollbackTransaction

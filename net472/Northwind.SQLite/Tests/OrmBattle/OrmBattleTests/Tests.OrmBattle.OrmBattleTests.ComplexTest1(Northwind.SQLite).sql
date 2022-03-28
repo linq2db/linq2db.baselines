@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
@@ -117,6 +119,8 @@ FROM
 	[Suppliers] [supplier],
 	[Products] [detail]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 

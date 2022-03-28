@@ -132,6 +132,8 @@ VALUES
 (10010,10,'DetailValue1000010')
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -141,6 +143,8 @@ SELECT
 FROM
 	[DetailClass] [t1]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32
