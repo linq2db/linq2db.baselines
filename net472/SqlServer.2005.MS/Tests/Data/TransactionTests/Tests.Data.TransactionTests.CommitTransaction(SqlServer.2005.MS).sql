@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
@@ -28,6 +30,8 @@ FROM
 WHERE
 	[t1].[ParentID] = 1010
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @take Int -- Int32

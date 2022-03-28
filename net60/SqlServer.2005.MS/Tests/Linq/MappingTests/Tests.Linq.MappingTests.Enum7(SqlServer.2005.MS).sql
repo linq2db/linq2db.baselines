@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @v1 Int -- Int32
 SET     @v1 = 1

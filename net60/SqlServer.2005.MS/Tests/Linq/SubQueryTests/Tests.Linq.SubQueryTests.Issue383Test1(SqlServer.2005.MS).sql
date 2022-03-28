@@ -207,6 +207,8 @@ INSERT INTO [Cities]
 SELECT N'x',N'Urupinsk'
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -278,6 +280,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Cities] [detail] ON ([detail].[City_Code] = [key_data_result].[City_Code] OR [detail].[City_Code] IS NULL AND [key_data_result].[City_Code] IS NULL)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 

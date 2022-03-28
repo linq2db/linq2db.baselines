@@ -88,6 +88,8 @@ SELECT 1,1 UNION ALL
 SELECT 2,2
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2005
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
@@ -104,6 +106,8 @@ FROM
 WHERE
 	[p].[EventId] = @eventId AND [p].[IsActive] = 1
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.2005
 DECLARE @eventId Int -- Int32
