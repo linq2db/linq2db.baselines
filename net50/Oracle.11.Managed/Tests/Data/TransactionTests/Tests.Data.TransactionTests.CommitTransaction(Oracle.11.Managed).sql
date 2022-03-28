@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	"Parent"."ParentID" = 1010
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @take Int32

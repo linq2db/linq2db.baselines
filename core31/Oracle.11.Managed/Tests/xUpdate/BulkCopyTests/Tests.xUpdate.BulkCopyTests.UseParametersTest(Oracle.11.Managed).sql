@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @p1 Int32
 SET     @p1 = 111001
@@ -775,3 +777,5 @@ FROM
 WHERE
 	r."ParentID" >= :ParentID AND r."ParentID" <= :ParentID_1
 
+BeforeExecute
+RollbackTransaction

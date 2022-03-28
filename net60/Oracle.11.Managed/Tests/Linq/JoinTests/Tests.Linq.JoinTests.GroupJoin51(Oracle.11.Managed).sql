@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
@@ -40,6 +42,8 @@ FROM
 ORDER BY
 	ch."ChildID" DESC
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 

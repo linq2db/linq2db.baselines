@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @blob_1 Blob -- Object
 SET     @blob_1 = Oracle.ManagedDataAccess.Types.OracleBlob
@@ -40,3 +42,5 @@ FROM
 WHERE
 	x.ID IN (-10, -20)
 
+BeforeExecute
+RollbackTransaction

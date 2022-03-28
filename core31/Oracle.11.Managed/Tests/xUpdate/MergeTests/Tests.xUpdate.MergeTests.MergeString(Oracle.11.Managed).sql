@@ -9,6 +9,8 @@ BeforeExecute
 CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT
@@ -63,3 +65,5 @@ FROM
 WHERE
 	ROWNUM <= :take
 
+BeforeExecute
+RollbackTransaction

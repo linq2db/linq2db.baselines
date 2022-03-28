@@ -122,6 +122,8 @@ BeforeExecute
 							PKCON.OWNER IN ('SYSTEM')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SYS.VALIDATE_CONTEXT
@@ -1623,6 +1625,8 @@ SET     @P_SESSION = 0
 APEX_040000.APEX
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT USER FROM DUAL
@@ -1632,6 +1636,8 @@ BeforeExecute
 
 select user from dual
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
@@ -2953,6 +2959,8 @@ SET     @P_SESSION = 0
 APEX_040000.APEX
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SELECT USER FROM DUAL
@@ -3075,3 +3083,7 @@ BeforeExecute
 							FKCON.OWNER IN ('IncludeExcludeSchemaTest') AND
 							PKCON.OWNER IN ('IncludeExcludeSchemaTest')
 
+BeforeExecute
+BeginTransaction
+BeforeExecute
+RollbackTransaction

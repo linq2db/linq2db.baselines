@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
@@ -12,3 +14,5 @@ INSERT ALL
 	INTO "Child" ("ParentID", "ChildID") VALUES (111001,0)
 SELECT * FROM dual
 
+BeforeExecute
+RollbackTransaction

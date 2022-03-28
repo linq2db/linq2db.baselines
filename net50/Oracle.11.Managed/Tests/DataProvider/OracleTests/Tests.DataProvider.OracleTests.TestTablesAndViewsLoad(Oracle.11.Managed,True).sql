@@ -122,6 +122,8 @@ BeforeExecute
 							PKCON.OWNER IN ('SYSTEM')
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SYS.VALIDATE_CONTEXT
@@ -1622,3 +1624,5 @@ SET     @P_SESSION = 0
 
 APEX_040000.APEX
 
+BeforeExecute
+RollbackTransaction

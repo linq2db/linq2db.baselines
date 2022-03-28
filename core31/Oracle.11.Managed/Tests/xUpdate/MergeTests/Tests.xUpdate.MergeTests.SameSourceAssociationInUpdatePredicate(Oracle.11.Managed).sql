@@ -9,6 +9,8 @@ BeforeExecute
 CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 DELETE FROM
@@ -322,3 +324,5 @@ FROM
 ORDER BY
 	t1."PersonID"
 
+BeforeExecute
+RollbackTransaction

@@ -110,6 +110,8 @@ BeforeExecute
 						
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 SYSTEM.TEST2132
@@ -290,3 +292,5 @@ BeforeExecute
 
 SYSTEM.ADDISSUE792RECORD
 
+BeforeExecute
+RollbackTransaction
