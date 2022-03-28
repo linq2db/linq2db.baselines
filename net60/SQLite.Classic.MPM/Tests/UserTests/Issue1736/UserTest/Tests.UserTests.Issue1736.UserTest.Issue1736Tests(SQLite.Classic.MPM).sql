@@ -88,7 +88,7 @@ CREATE TABLE [InventoryResourceDTO]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value_1  -- Guid
-SET     @Value_1 = Cast(x'00000000000000000000000000000000' as blob)
+SET     @Value_1 = X'00000000000000000000000000000000'
 
 SELECT
 	[cr].[R_r_Id],

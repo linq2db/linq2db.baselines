@@ -33,8 +33,8 @@ GROUP BY
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p_1  -- Int32
-SET     @p_1 = 1
+DECLARE @Gender  -- Int32
+SET     @Gender = 'F'
 
 SELECT
 	[keyParam].[FirstName],
@@ -45,12 +45,12 @@ SELECT
 FROM
 	[Person] [keyParam]
 WHERE
-	[keyParam].[Gender] = @p_1
+	[keyParam].[Gender] = @Gender
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p_1  -- Int32
-SET     @p_1 = 0
+DECLARE @Gender  -- Int32
+SET     @Gender = 'M'
 
 SELECT
 	[keyParam].[FirstName],
@@ -61,7 +61,7 @@ SELECT
 FROM
 	[Person] [keyParam]
 WHERE
-	[keyParam].[Gender] = @p_1
+	[keyParam].[Gender] = @Gender
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
