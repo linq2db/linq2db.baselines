@@ -4,6 +4,8 @@
 SET GENERATOR "AllTypesID" TO 2
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
@@ -54,3 +56,5 @@ FROM
 ORDER BY
 	"t1".ID DESC
 
+BeforeExecute
+RollbackTransaction

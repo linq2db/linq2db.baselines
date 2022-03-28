@@ -30,7 +30,7 @@ INSERT INTO "WhereWithString"
 	"Id",
 	"StringValue"
 )
-SELECT 1,'Str1' FROM rdb$database
+SELECT 1,CAST('Str1' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird

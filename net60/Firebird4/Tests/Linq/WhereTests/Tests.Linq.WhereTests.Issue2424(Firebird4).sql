@@ -28,7 +28,7 @@ INSERT INTO "Isue2424Table"
 	"Id",
 	"StrValue"
 )
-SELECT 1,'1' FROM rdb$database UNION ALL
+SELECT 1,CAST('1' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 3,'3' FROM rdb$database UNION ALL
 SELECT 5,'5' FROM rdb$database
 

@@ -65,7 +65,7 @@ INSERT INTO "i1084_student"
 	"Number",
 	"StatusBitmask"
 )
-SELECT 1,'1',0 FROM rdb$database UNION ALL
+SELECT 1,CAST('1' AS VarChar(255) CHARACTER SET UNICODE_FSS),0 FROM rdb$database UNION ALL
 SELECT 2,'2',0 FROM rdb$database
 
 BeforeExecute

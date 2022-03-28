@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird4 Firebird
 
 INSERT INTO "Parent"
@@ -18,3 +20,5 @@ INSERT INTO "Child"
 )
 SELECT 111001,0 FROM rdb$database
 
+BeforeExecute
+RollbackTransaction

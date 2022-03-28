@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird4 Firebird
 
 "AddIssue792Record"
@@ -245,3 +247,13 @@ SET     @RDB_EFFECTIVE_OFFSET = 0
 
 TRANSITIONS
 
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
+RollbackTransaction

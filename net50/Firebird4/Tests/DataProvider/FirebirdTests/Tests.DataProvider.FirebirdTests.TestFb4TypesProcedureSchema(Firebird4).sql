@@ -57,6 +57,8 @@ INSERT INTO "TestFbTypesTable"
 SELECT 1,CAST(@p1 AS DECFLOAT(16)),CAST(@p2 AS DECFLOAT),CAST(@p3 AS DECFLOAT),CAST(@p4 AS DECFLOAT),CAST(@p5 AS TIMESTAMP WITH TIME ZONE),CAST(@p6 AS TIME WITH TIME ZONE),-170141183460469231731687303715884105728 FROM rdb$database
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Firebird4 Firebird
 DECLARE @TSTZ TimeStampTZ(12) -- Object
 SET     @TSTZ = 01/01/0001 00:00:00 
@@ -81,6 +83,8 @@ SET     @COL_INT_128 = 0
 
 TEST_V4_TYPES
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird4 Firebird
 

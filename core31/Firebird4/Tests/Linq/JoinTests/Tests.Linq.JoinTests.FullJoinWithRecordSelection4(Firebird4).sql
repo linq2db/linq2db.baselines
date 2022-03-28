@@ -66,7 +66,7 @@ INSERT INTO "Tag"
 	"FactId",
 	"Name"
 )
-SELECT 1,3,'Tag3' FROM rdb$database UNION ALL
+SELECT 1,3,CAST('Tag3' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,3,'Tag3' FROM rdb$database UNION ALL
 SELECT 3,4,'Tag4' FROM rdb$database UNION ALL
 SELECT 4,6,'Tag6' FROM rdb$database
