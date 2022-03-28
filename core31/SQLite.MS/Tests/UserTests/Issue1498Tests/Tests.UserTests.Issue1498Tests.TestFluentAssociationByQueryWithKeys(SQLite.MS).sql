@@ -89,6 +89,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
@@ -134,6 +136,8 @@ WHERE
 	[x].[Id] = 6
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 

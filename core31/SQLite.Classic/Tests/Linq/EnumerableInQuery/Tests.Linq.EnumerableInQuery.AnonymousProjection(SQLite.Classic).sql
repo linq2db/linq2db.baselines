@@ -7,6 +7,8 @@ FROM
 	[Parent] [_]
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -26,6 +28,8 @@ FROM
 				(1), (2), (3), (4), (5), (6), (7)
 			) [_c1] ON [_c1].[ParentID] = [key_data_result].[ParentID]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 

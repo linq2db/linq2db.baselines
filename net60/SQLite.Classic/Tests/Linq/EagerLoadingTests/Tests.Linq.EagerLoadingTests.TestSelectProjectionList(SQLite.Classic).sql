@@ -92,6 +92,8 @@ VALUES
 (9009,9,'DetailValue90009')
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
@@ -128,6 +130,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [DetailClass] [_d] ON [_d].[MasterId] = [key_data_result].[Id1] AND [_d].[MasterId] % 2 = 0
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @intParam  -- Int32

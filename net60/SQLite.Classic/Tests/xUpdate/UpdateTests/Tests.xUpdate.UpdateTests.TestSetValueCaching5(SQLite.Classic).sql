@@ -33,7 +33,7 @@ INSERT INTO [UpdateSetTest]
 	[Value6]
 )
 VALUES
-(1,Cast(x'a57339bd2343d84d9f4fdf9f93e2a627' as blob),10,6,NULL,NULL,NULL)
+(1,X'A57339BD2343D84D9F4FDF9F93E2A627',10,6,NULL,NULL,NULL)
 
 BeforeExecute
 -- SQLite.Classic SQLite

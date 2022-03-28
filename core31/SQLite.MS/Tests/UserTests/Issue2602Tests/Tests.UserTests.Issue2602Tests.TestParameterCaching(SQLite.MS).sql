@@ -17,6 +17,8 @@ CREATE TABLE [EmailAttachment]
 )
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 35
@@ -61,6 +63,10 @@ WHERE
 LIMIT @take
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 36
@@ -104,6 +110,8 @@ WHERE
 	[c_1].[Id] = @Id
 LIMIT @take
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 
