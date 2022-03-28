@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -40,6 +42,8 @@ FROM
 ORDER BY
 	"_ch"."ChildID" DESC
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

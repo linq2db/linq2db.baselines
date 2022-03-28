@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransactionAsync
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1010
@@ -16,6 +18,8 @@ VALUES
 	@Value1
 )
 
+BeforeExecute
+CommitTransactionAsync
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

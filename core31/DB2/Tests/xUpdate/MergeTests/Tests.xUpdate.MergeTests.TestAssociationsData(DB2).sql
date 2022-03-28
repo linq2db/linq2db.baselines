@@ -4,6 +4,8 @@
 ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -321,3 +323,5 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
+BeforeExecute
+RollbackTransaction

@@ -89,6 +89,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -130,6 +132,8 @@ WHERE
 	"x"."Id" = 6
 FETCH FIRST 1 ROWS ONLY
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

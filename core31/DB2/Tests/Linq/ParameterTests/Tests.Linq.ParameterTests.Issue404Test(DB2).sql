@@ -71,6 +71,8 @@ VALUES
 (6,1,2)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -88,6 +90,8 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -95,6 +99,8 @@ SELECT
 FROM
 	"Table404One" "c_1"
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -115,6 +121,8 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_1 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -122,6 +130,8 @@ SELECT
 FROM
 	"Table404One" "c_1"
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -141,6 +151,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_1 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
@@ -238,6 +250,8 @@ VALUES
 (6,1,2)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -255,6 +269,8 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -262,6 +278,8 @@ SELECT
 FROM
 	"Table404One" "c_1"
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -282,6 +300,8 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_1 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -289,6 +309,8 @@ SELECT
 FROM
 	"Table404One" "c_1"
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Usage_1 Integer(4) -- Int32
@@ -308,6 +330,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_1 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

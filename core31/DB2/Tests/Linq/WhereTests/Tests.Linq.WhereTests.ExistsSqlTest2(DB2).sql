@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -13,3 +15,5 @@ WHERE
 			"p"."ParentID" = "t1"."ParentID"
 	)
 
+BeforeExecute
+RollbackTransaction
