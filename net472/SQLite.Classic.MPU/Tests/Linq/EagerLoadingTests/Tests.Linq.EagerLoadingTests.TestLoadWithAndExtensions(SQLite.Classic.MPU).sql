@@ -1781,6 +1781,8 @@ VALUES
 (9009090,9009,'SubDetailValue900900090')
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -1804,6 +1806,8 @@ FROM
 		INNER JOIN [SubDetailClass] [detail] ON [lw_DetailClass].[DetailId] = [detail].[DetailId]
 		LEFT JOIN [SubDetailClass] [a_Detail] ON ([detail].[DetailId] = [a_Detail].[DetailId] OR [detail].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
