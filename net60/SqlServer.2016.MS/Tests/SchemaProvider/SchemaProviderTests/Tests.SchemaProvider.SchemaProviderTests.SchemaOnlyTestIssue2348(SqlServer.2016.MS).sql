@@ -56,6 +56,8 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 2
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 [TestDataMS].[dbo].[AddIssue792Record]
@@ -283,6 +285,8 @@ SET     @ReturnFullRow = 0
 [TestDataMS].[dbo].[VariableResults]
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 select @@version
@@ -339,6 +343,8 @@ SELECT
 							ORDINAL_POSITION = x.minor_id AND
 							x.name = 'MS_Description' AND x.class = 2
 
+BeforeExecute
+BeginTransaction
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @tsql NVarChar(4000) -- String
@@ -595,3 +601,5 @@ SET     @ReturnFullRow = 0
 
 [TestDataMS].[dbo].[VariableResults]
 
+BeforeExecute
+RollbackTransaction
