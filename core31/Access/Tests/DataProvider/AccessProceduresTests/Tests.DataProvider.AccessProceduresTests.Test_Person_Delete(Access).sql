@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 
 INSERT INTO [Person]
@@ -47,3 +49,5 @@ FROM
 WHERE
 	[_].[PersonID] = @id
 
+BeforeExecute
+RollbackTransaction

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
 -- Access AccessOleDb
 DECLARE @input_2 VarWChar(6) -- String
 SET     @input_2 = '%test%'
@@ -13,6 +15,8 @@ FROM
 WHERE
 	LCase([p].[FirstName]) LIKE @input_2
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @input_2 VarWChar(6) -- String

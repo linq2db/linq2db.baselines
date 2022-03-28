@@ -17,6 +17,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 UPDATE
@@ -26,6 +28,8 @@ SET
 WHERE
 	[t1].[ParentID] = 1010
 
+BeforeExecute
+CommitTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 

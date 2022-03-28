@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 
 DELETE FROM
@@ -56,3 +58,5 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
+BeforeExecute
+RollbackTransaction

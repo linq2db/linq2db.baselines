@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
@@ -37,3 +39,5 @@ FROM
 WHERE
 	[_].[PersonID] > @maxId
 
+BeforeExecute
+RollbackTransaction

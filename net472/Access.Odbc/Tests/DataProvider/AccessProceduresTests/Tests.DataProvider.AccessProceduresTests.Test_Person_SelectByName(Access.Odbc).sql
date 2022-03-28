@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @firstName VarChar(6) -- AnsiString
 SET     @firstName = 'Jürgen'
@@ -39,3 +41,5 @@ FROM
 WHERE
 	[_].[FirstName] = ? AND [_].[LastName] = ?
 
+BeforeExecute
+RollbackTransaction

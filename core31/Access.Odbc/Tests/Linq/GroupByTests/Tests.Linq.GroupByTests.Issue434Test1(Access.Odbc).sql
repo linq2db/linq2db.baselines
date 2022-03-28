@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @input_2 NVarChar(6) -- String
 SET     @input_2 = '%test%'
@@ -13,6 +15,8 @@ FROM
 WHERE
 	LCase([p].[FirstName]) LIKE ?
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @input_2 NVarChar(6) -- String

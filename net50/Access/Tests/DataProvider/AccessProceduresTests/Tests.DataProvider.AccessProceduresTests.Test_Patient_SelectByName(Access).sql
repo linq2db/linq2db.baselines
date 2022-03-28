@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 DECLARE @firstName VarChar(6) -- AnsiString
 SET     @firstName = 'Tester'
@@ -44,3 +46,5 @@ WHERE
 ORDER BY
 	[a_Person].[PersonID]
 
+BeforeExecute
+RollbackTransaction

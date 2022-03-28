@@ -41,6 +41,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -80,6 +82,8 @@ FROM
 WHERE
 	[x].[Id] = 6
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 

@@ -7,6 +7,8 @@ WHERE
 	[t1].[PersonID] > 4
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access AccessOleDb
 
 INSERT INTO [Person]

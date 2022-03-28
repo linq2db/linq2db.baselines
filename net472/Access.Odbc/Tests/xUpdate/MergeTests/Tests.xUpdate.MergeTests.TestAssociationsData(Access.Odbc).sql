@@ -24,6 +24,8 @@ BeforeExecute
 ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
@@ -335,3 +337,5 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
+BeforeExecute
+RollbackTransaction

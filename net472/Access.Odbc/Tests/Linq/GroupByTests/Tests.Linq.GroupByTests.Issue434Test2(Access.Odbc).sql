@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -11,6 +13,8 @@ FROM
 WHERE
 	LCase([p].[FirstName]) LIKE '%test%'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 
