@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -18,6 +20,8 @@ FROM
 		ON "lw_Child"."ParentID" = "detail"."ParentID" AND "lw_Child"."ChildID" = "detail"."ChildID"
 		LEFT JOIN "Parent" "a_Parent" ON "a_Child"."ParentID" = "a_Parent"."ParentID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

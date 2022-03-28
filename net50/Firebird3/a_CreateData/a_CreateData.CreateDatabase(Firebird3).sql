@@ -362,7 +362,7 @@ INSERT INTO "DataTypeTest"
 	 "Xml_")
 VALUES
 	('dddddddddddddddd', 1,  255,'dddddddddddddddd', 'B', 'NOW', 12345.67,
-	1234.567, 'dddddddddddddddd', 32767, 32768, 1000000, 12.3456, 127,
+	1234.567, X'dddddddddddddddddddddddddddddddd', 32767, 32768, 1000000, 12.3456, 127,
 	1234.123, 'dddddddddddddddd', 'string', 32767, 32768, 200000000,
 	'<root><element strattr="strvalue" intattr="12345"/></root>');
 
@@ -411,7 +411,7 @@ CREATE TABLE "LinqDataTypes"
 	"DateTimeValue"  timestamp,
 	"DateTimeValue2" timestamp,
 	"BoolValue"      char(1),
-	"GuidValue"      char(16) CHARACTER SET OCTETS,
+	"GuidValue"      CHAR(16) CHARACTER SET OCTETS,
 	"BinaryValue"    blob,
 	"SmallIntValue"  smallint,
 	"IntValue"       int,
@@ -1096,7 +1096,7 @@ INSERT INTO "LinqDataTypes"
 	"BigIntValue",
 	"StringValue"
 )
-SELECT 1,1.11,CAST('2001-01-11 01:11:21.100' AS timestamp),NULL,1,X'EF1291656FFE4DF9BB6BBB16E413C883',1,NULL,1,NULL FROM rdb$database UNION ALL
+SELECT 1,1.11,CAST('2001-01-11 01:11:21.100' AS timestamp),NULL,1,X'EF1291656FFE4DF9BB6BBB16E413C883',1,NULL,1,CAST(NULL AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,2.49,CAST('2005-05-15 05:15:25.500' AS timestamp),NULL,0,X'BC663A617B404681AC38F9AAF55B706B',2,NULL,2,'' FROM rdb$database UNION ALL
 SELECT 3,3.99,CAST('2009-09-19 09:19:29.090' AS timestamp),NULL,1,X'D2F970C035AC49879CD55BADB1757436',3,NULL,NULL,'1' FROM rdb$database UNION ALL
 SELECT 4,4.50,CAST('2009-09-20 09:19:29.090' AS timestamp),NULL,0,X'40932FDB15434E4AAC2CCA371604FB4B',4,NULL,NULL,'2' FROM rdb$database UNION ALL
@@ -1192,7 +1192,7 @@ INSERT INTO "InheritanceParent"
 	"InheritanceParentId",
 	"Name"
 )
-SELECT NULL,1,NULL FROM rdb$database UNION ALL
+SELECT NULL,1,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 1,2,NULL FROM rdb$database UNION ALL
 SELECT 2,3,'InheritanceParent2' FROM rdb$database
 
@@ -1206,7 +1206,7 @@ INSERT INTO "InheritanceChild"
 	"InheritanceChildId",
 	"Name"
 )
-SELECT 1,NULL,1,NULL FROM rdb$database UNION ALL
+SELECT 1,NULL,1,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,1,2,NULL FROM rdb$database UNION ALL
 SELECT 3,2,3,'InheritanceParent2' FROM rdb$database
 

@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -14,6 +16,8 @@ FROM
 	) "lw_Parent"
 		INNER JOIN "Child" "detail" ON "lw_Parent"."ParentID" = "detail"."ParentID"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

@@ -30,7 +30,7 @@ INSERT INTO "TableToInsert"
 	"Id",
 	"Value"
 )
-SELECT 2,'Janet' FROM rdb$database UNION ALL
+SELECT 2,CAST('Janet' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 3,'Doe' FROM rdb$database
 
 BeforeExecute

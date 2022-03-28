@@ -32,7 +32,7 @@ INSERT INTO "User"
 	"street",
 	"building_number"
 )
-SELECT 'Springwood','Freddy','Elm Street',13 FROM rdb$database
+SELECT CAST('Springwood' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('Freddy' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('Elm Street' AS VarChar(255) CHARACTER SET UNICODE_FSS),13 FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird

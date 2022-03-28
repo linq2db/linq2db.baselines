@@ -7,7 +7,7 @@ CREATE TABLE "TPHTable"
 	"Discriminator" Int                                   NOT NULL,
 	"Value1"        VarChar(50) CHARACTER SET UNICODE_FSS,
 	"Value2"        VarChar(50) CHARACTER SET UNICODE_FSS,
-	"NullableBool"  VarChar(1),
+	"NullableBool"  VarChar(1) CHARACTER SET UNICODE_FSS,
 	"Value3"        VarChar(50) CHARACTER SET UNICODE_FSS,
 
 	CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
@@ -25,7 +25,7 @@ INSERT INTO "TPHTable"
 	"NullableBool",
 	"Value3"
 )
-SELECT 1,1,'Str1',NULL,NULL,NULL FROM rdb$database UNION ALL
+SELECT 1,1,CAST('Str1' AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(1) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,2,NULL,'Str2',NULL,NULL FROM rdb$database UNION ALL
 SELECT 3,3,NULL,NULL,'Y','Str3' FROM rdb$database
 

@@ -17,7 +17,7 @@ EXECUTE BLOCK AS BEGIN
 				"Id"     Int                                   NOT NULL,
 				"Value1" VarChar(50) CHARACTER SET UNICODE_FSS,
 				"Value2" VarChar(50) CHARACTER SET UNICODE_FSS,
-				"Value3" VarChar(50),
+				"Value3" VarChar(50) CHARACTER SET UNICODE_FSS,
 				"Value4" VarChar(50) CHARACTER SET UNICODE_FSS
 			)
 		';
@@ -34,7 +34,7 @@ INSERT INTO "SampleClass"
 	"Value3",
 	"Value4"
 )
-SELECT 1,'V1','V2',NULL,'V4' FROM rdb$database UNION ALL
+SELECT 1,CAST('V1' AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST('V2' AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST('V4' AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,NULL,'Z2',NULL,NULL FROM rdb$database UNION ALL
 SELECT 3,'Z1',NULL,NULL,'Z4' FROM rdb$database
 

@@ -17,7 +17,7 @@ EXECUTE BLOCK AS BEGIN
 				"Id"             Int                                   NOT NULL,
 				"CharColumn"     Char(50),
 				"NCharColumn"    NChar(50),
-				"VarCharColumn"  VarChar(50),
+				"VarCharColumn"  VarChar(50) CHARACTER SET UNICODE_FSS,
 				"NVarCharColumn" VarChar(50) CHARACTER SET UNICODE_FSS
 			)
 		';
@@ -34,7 +34,7 @@ INSERT INTO "StringTypesTable"
 	"VarCharColumn",
 	"NVarCharColumn"
 )
-SELECT 1,'someString','someString','someString','someString' FROM rdb$database
+SELECT 1,'someString','someString',CAST('someString' AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST('someString' AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird

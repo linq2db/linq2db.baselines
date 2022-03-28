@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird3 Firebird
 DECLARE @input_2 VarChar(6) -- String
 SET     @input_2 = '%test%'
@@ -13,6 +15,8 @@ FROM
 WHERE
 	Lower("p"."FirstName") LIKE @input_2 ESCAPE '~'
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @input_2 VarChar(6) -- String

@@ -69,6 +69,8 @@ SELECT 5,1,2 FROM rdb$database UNION ALL
 SELECT 6,1,2 FROM rdb$database
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -86,6 +88,8 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -93,6 +97,8 @@ SELECT
 FROM
 	"Table404One" "c_1"
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @Usage_1 Integer -- Int32
@@ -113,6 +119,8 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_1 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -120,6 +128,8 @@ SELECT
 FROM
 	"Table404One" "c_1"
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @Usage_1 Integer -- Int32
@@ -139,6 +149,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_1 AND "v"."FirstTableId" = "key_data_result"."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 
@@ -234,6 +246,8 @@ SELECT 5,1,2 FROM rdb$database UNION ALL
 SELECT 6,1,2 FROM rdb$database
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -251,6 +265,8 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -258,6 +274,8 @@ SELECT
 FROM
 	"Table404One" "c_1"
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @Usage_1 Integer -- Int32
@@ -278,6 +296,8 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_1 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
+RollbackTransaction
+BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
@@ -285,6 +305,8 @@ SELECT
 FROM
 	"Table404One" "c_1"
 
+BeforeExecute
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @Usage_1 Integer -- Int32
@@ -304,6 +326,8 @@ FROM
 	) "key_data_result"
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_1 AND "v"."FirstTableId" = "key_data_result"."Id"
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- Firebird3 Firebird
 
