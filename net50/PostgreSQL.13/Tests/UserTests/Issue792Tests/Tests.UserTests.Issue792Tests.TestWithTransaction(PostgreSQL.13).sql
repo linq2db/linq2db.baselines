@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -86,3 +88,5 @@ SELECT
 FROM
 	"AllTypes" t1
 
+BeforeExecute
+RollbackTransaction
