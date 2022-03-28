@@ -4,6 +4,8 @@
 ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlCe
 
 DELETE FROM
@@ -315,3 +317,5 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
+BeforeExecute
+RollbackTransaction
