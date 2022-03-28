@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
@@ -118,6 +120,8 @@ FROM
 	[Suppliers] [supplier],
 	[Products] [detail]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 

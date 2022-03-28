@@ -80,6 +80,8 @@ FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
@@ -107,6 +109,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [Customers] [_c] ON ([_c].[CustomerID] = [key_data_result].[CustomerID] OR [_c].[CustomerID] IS NULL AND [key_data_result].[CustomerID] IS NULL)
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 

@@ -182,6 +182,8 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 2
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[AddIssue792Record] '
@@ -437,6 +439,8 @@ SET     @ReturnFullRow = 0
 
 [TestDataMSSA].[dbo].[VariableResults]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 

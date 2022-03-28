@@ -1,4 +1,6 @@
 ﻿BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @n Int -- Int32
 SET     @n = 555

@@ -4,6 +4,8 @@
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
+BeginTransaction
+BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -56,3 +58,5 @@ FROM
 ORDER BY
 	[t1].[ID] DESC
 
+BeforeExecute
+RollbackTransaction

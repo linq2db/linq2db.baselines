@@ -26,6 +26,8 @@ WHERE
 	)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -46,6 +48,8 @@ FROM
 	) [key_data_result]
 		INNER JOIN [TreeItem] [detail] ON [key_data_result].[Id] = [detail].[ParentId]
 
+BeforeExecute
+RollbackTransaction
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
