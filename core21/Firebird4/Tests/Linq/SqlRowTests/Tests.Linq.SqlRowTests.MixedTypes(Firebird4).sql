@@ -34,7 +34,7 @@ INSERT INTO "Mixed"
 	"Double",
 	"Bool"
 )
-SELECT 1,'One',CAST('2001-01-01' AS timestamp),1,1 FROM rdb$database UNION ALL
+SELECT 1,CAST('One' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('2001-01-01' AS timestamp),1,1 FROM rdb$database UNION ALL
 SELECT 2,'Two',CAST('2002-02-02' AS timestamp),2,0 FROM rdb$database
 
 BeforeExecute
