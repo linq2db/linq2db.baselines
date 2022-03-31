@@ -49,16 +49,10 @@ UPDATE
 	[CteChild]
 SET
 	[ParentID] = [CteChild].[ChildID]
+FROM
+	[CTE_1] [ct]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[CteChild] [c_2]
-				INNER JOIN [CTE_1] [ct] ON [ct].[ParentID] = [c_2].[ParentID]
-		WHERE
-			[CteChild].[ChildID] = [c_2].[ChildID] AND [CteChild].[ParentID] = [c_2].[ParentID]
-	)
+	[ct].[ParentID] = [CteChild].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
