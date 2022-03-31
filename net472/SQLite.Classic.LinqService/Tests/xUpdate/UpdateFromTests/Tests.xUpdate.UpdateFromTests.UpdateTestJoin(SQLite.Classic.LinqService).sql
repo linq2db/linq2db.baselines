@@ -273,27 +273,14 @@ SET     @someId = 100
 UPDATE
 	[UpdatedEntities]
 SET
-	([Value1], [Value2], [Value3]) = (
-		SELECT
-			([c_1].[Value1] * [t].[Value1]) * @int1,
-			([c_1].[Value2] * [t].[Value2]) * @int2,
-			([c_1].[Value3] * [t].[Value3]) * @int3
-		FROM
-			[UpdatedEntities] [c_1]
-				INNER JOIN [NewEntities] [t] ON [t].[id] = [c_1].[id]
-		WHERE
-			[t].[id] <> @someId AND [UpdatedEntities].[id] = [c_1].[id]
-	)
+	[Value1] = ([UpdatedEntities].[Value1] * [t].[Value1]) * @int1,
+	[Value2] = ([UpdatedEntities].[Value2] * [t].[Value2]) * @int2,
+	[Value3] = ([UpdatedEntities].[Value3] * [t].[Value3]) * @int3
+FROM
+	[UpdatedEntities] [c_1]
+		INNER JOIN [NewEntities] [t] ON [t].[id] = [c_1].[id]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[UpdatedEntities] [c_2]
-				INNER JOIN [NewEntities] [t_1] ON [t_1].[id] = [c_2].[id]
-		WHERE
-			[t_1].[id] <> @someId AND [UpdatedEntities].[id] = [c_2].[id]
-	)
+	[t].[id] <> @someId AND [UpdatedEntities].[id] = [c_1].[id]
 
 BeforeExecute
 -- SQLite.Classic SQLite

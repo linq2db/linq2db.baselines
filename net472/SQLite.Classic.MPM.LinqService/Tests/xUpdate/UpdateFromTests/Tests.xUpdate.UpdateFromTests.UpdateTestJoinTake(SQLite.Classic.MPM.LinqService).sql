@@ -275,49 +275,28 @@ SET     @take = 2
 UPDATE
 	[UpdatedEntities]
 SET
-	([Value1], [Value2], [Value3]) = (
+	[Value1] = ([t1].[Value1] * [t1].[Value1_1]) * @int1,
+	[Value2] = ([t1].[Value2] * [t1].[Value2_1]) * @int2,
+	[Value3] = ([t1].[Value3] * [t1].[Value3_1]) * @int3
+FROM
+	(
 		SELECT
-			([t1].[Value1] * [t1].[Value1_1]) * @int1,
-			([t1].[Value2] * [t1].[Value2_1]) * @int2,
-			([t1].[Value3] * [t1].[Value3_1]) * @int3
+			[c_1].[Value1],
+			[t].[Value1] as [Value1_1],
+			[c_1].[Value2],
+			[t].[Value2] as [Value2_1],
+			[c_1].[Value3],
+			[t].[Value3] as [Value3_1],
+			[c_1].[id]
 		FROM
-			(
-				SELECT
-					[c_1].[Value1],
-					[t].[Value1] as [Value1_1],
-					[c_1].[Value2],
-					[t].[Value2] as [Value2_1],
-					[c_1].[Value3],
-					[t].[Value3] as [Value3_1],
-					[c_1].[id]
-				FROM
-					[UpdatedEntities] [c_1]
-						INNER JOIN [NewEntities] [t] ON [t].[id] = [c_1].[id]
-				WHERE
-					[t].[id] <> @someId
-				LIMIT @take
-			) [t1]
+			[UpdatedEntities] [c_1]
+				INNER JOIN [NewEntities] [t] ON [t].[id] = [c_1].[id]
 		WHERE
-			[UpdatedEntities].[id] = [t1].[id]
-	)
+			[t].[id] <> @someId
+		LIMIT @take
+	) [t1]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			(
-				SELECT
-					[c_2].[id]
-				FROM
-					[UpdatedEntities] [c_2]
-						INNER JOIN [NewEntities] [t_1] ON [t_1].[id] = [c_2].[id]
-				WHERE
-					[t_1].[id] <> @someId
-				LIMIT @take
-			) [t2]
-		WHERE
-			[UpdatedEntities].[id] = [t2].[id]
-	)
+	[UpdatedEntities].[id] = [t1].[id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
