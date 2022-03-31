@@ -41,36 +41,23 @@ BeforeExecute
 UPDATE
 	[gt_s_one]
 SET
-	([col1], [col2], [col3], [col4], [col5], [col6]) = (
-		SELECT
-			[x].[col1],
-			[x].[col2],
-			Replace([x].[col3], 'auth.', ''),
-			[x].[col4],
-			CASE
-				WHEN [x].[col3] = 'empty' THEN '1'
-				ELSE '0'
-			END,
-			CASE
-				WHEN [x].[col3] = 'empty' THEN ''
-				ELSE Cast([am].[id] as NVarChar(11))
-			END
-		FROM
-			[gt_s_one] [x]
-				LEFT JOIN [access_mode] [am] ON (Upper(Replace([x].[col3], 'auth.', '')) = Upper([am].[code]) OR Upper(Replace([x].[col3], 'auth.', '')) IS NULL AND Upper([am].[code]) IS NULL)
-		WHERE
-			[gt_s_one].[id] = [x].[id]
-	)
+	[col1] = [x].[col1],
+	[col2] = [x].[col2],
+	[col3] = Replace([x].[col3], 'auth.', ''),
+	[col4] = [x].[col4],
+	[col5] = CASE
+		WHEN [x].[col3] = 'empty' THEN '1'
+		ELSE '0'
+	END,
+	[col6] = CASE
+		WHEN [x].[col3] = 'empty' THEN ''
+		ELSE Cast([am].[id] as NVarChar(11))
+	END
+FROM
+	[gt_s_one] [x]
+		LEFT JOIN [access_mode] [am] ON (Upper(Replace([x].[col3], 'auth.', '')) = Upper([am].[code]) OR Upper(Replace([x].[col3], 'auth.', '')) IS NULL AND Upper([am].[code]) IS NULL)
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[gt_s_one] [x_1]
-				LEFT JOIN [access_mode] [am_1] ON (Upper(Replace([x_1].[col3], 'auth.', '')) = Upper([am_1].[code]) OR Upper(Replace([x_1].[col3], 'auth.', '')) IS NULL AND Upper([am_1].[code]) IS NULL)
-		WHERE
-			[gt_s_one].[id] = [x_1].[id]
-	)
+	[gt_s_one].[id] = [x].[id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
