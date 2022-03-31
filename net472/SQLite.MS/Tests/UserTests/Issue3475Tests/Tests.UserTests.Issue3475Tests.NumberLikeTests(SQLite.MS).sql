@@ -16,11 +16,7 @@ SELECT
 FROM
 	[NumberLikeTestTable] [x]
 WHERE
-	CASE
-		WHEN [x].[IntNProp] IS NULL
-			THEN ''
-		ELSE Cast([x].[IntNProp] as NVarChar(11))
-	END LIKE '1%'
+	Cast([x].[IntNProp] as NVarChar(4000)) LIKE '1%'
 LIMIT @take
 
 BeforeExecute
@@ -33,11 +29,7 @@ SELECT
 FROM
 	[NumberLikeTestTable] [x]
 WHERE
-	CASE
-		WHEN [x].[IntNProp] IS NULL
-			THEN ''
-		ELSE Cast([x].[IntNProp] as NVarChar(11))
-	END LIKE '1%'
+	Cast([x].[IntNProp] as NVarChar(4000)) LIKE '1%'
 LIMIT @take
 
 BeforeExecute
