@@ -6,10 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Concat('2010-', CASE
-				WHEN `p`.`ID` IS NULL THEN ''
-				ELSE Cast(`p`.`ID` as CHAR(11))
-			END, '-1 20:35:44') as DateTime) as `c1`
+			Cast(Concat('2010-', Cast(`p`.`ID` as CHAR(255)), '-1 20:35:44') as DateTime) as `c1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
