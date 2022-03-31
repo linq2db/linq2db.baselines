@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `UpdatedEntities`
+DROP TABLE IF EXISTS `UpdatedEntities`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 (
 	`id`         INT NOT NULL,
 	`Value1`     INT NOT NULL,
@@ -14,6 +19,16 @@ CREATE TABLE `UpdatedEntities`
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 0
+DECLARE @Value1 Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int32
+SET     @Value2 = 1
+DECLARE @Value3 Int32
+SET     @Value3 = 3
+DECLARE @RelationId Int32
+SET     @RelationId = 0
 
 INSERT INTO `UpdatedEntities`
 (
@@ -24,15 +39,113 @@ INSERT INTO `UpdatedEntities`
 	`RelationId`
 )
 VALUES
-(0,1,1,3,0),
-(1,11,12,13,1),
-(2,21,22,23,2),
-(3,31,32,33,3)
+(
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 1
+DECLARE @Value1 Int32
+SET     @Value1 = 11
+DECLARE @Value2 Int32
+SET     @Value2 = 12
+DECLARE @Value3 Int32
+SET     @Value3 = 13
+DECLARE @RelationId Int32
+SET     @RelationId = 1
+
+INSERT INTO `UpdatedEntities`
+(
+	`id`,
+	`Value1`,
+	`Value2`,
+	`Value3`,
+	`RelationId`
+)
+VALUES
+(
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 2
+DECLARE @Value1 Int32
+SET     @Value1 = 21
+DECLARE @Value2 Int32
+SET     @Value2 = 22
+DECLARE @Value3 Int32
+SET     @Value3 = 23
+DECLARE @RelationId Int32
+SET     @RelationId = 2
+
+INSERT INTO `UpdatedEntities`
+(
+	`id`,
+	`Value1`,
+	`Value2`,
+	`Value3`,
+	`RelationId`
+)
+VALUES
+(
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 3
+DECLARE @Value1 Int32
+SET     @Value1 = 31
+DECLARE @Value2 Int32
+SET     @Value2 = 32
+DECLARE @Value3 Int32
+SET     @Value3 = 33
+DECLARE @RelationId Int32
+SET     @RelationId = 3
+
+INSERT INTO `UpdatedEntities`
+(
+	`id`,
+	`Value1`,
+	`Value2`,
+	`Value3`,
+	`RelationId`
+)
+VALUES
+(
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
+)
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `UpdateRelation`
+DROP TABLE IF EXISTS `UpdateRelation`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `UpdateRelation`
 (
 	`id`            INT NOT NULL,
 	`RelatedValue1` INT NOT NULL,
@@ -44,6 +157,14 @@ CREATE TABLE `UpdateRelation`
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 0
+DECLARE @RelatedValue1 Int32
+SET     @RelatedValue1 = 1
+DECLARE @RelatedValue2 Int32
+SET     @RelatedValue2 = 2
+DECLARE @RelatedValue3 Int32
+SET     @RelatedValue3 = 3
 
 INSERT INTO `UpdateRelation`
 (
@@ -53,10 +174,90 @@ INSERT INTO `UpdateRelation`
 	`RelatedValue3`
 )
 VALUES
-(0,1,2,3),
-(1,11,12,13),
-(2,21,22,23),
-(3,31,32,33)
+(
+	@id,
+	@RelatedValue1,
+	@RelatedValue2,
+	@RelatedValue3
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 1
+DECLARE @RelatedValue1 Int32
+SET     @RelatedValue1 = 11
+DECLARE @RelatedValue2 Int32
+SET     @RelatedValue2 = 12
+DECLARE @RelatedValue3 Int32
+SET     @RelatedValue3 = 13
+
+INSERT INTO `UpdateRelation`
+(
+	`id`,
+	`RelatedValue1`,
+	`RelatedValue2`,
+	`RelatedValue3`
+)
+VALUES
+(
+	@id,
+	@RelatedValue1,
+	@RelatedValue2,
+	@RelatedValue3
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 2
+DECLARE @RelatedValue1 Int32
+SET     @RelatedValue1 = 21
+DECLARE @RelatedValue2 Int32
+SET     @RelatedValue2 = 22
+DECLARE @RelatedValue3 Int32
+SET     @RelatedValue3 = 23
+
+INSERT INTO `UpdateRelation`
+(
+	`id`,
+	`RelatedValue1`,
+	`RelatedValue2`,
+	`RelatedValue3`
+)
+VALUES
+(
+	@id,
+	@RelatedValue1,
+	@RelatedValue2,
+	@RelatedValue3
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @id Int32
+SET     @id = 3
+DECLARE @RelatedValue1 Int32
+SET     @RelatedValue1 = 31
+DECLARE @RelatedValue2 Int32
+SET     @RelatedValue2 = 32
+DECLARE @RelatedValue3 Int32
+SET     @RelatedValue3 = 33
+
+INSERT INTO `UpdateRelation`
+(
+	`id`,
+	`RelatedValue1`,
+	`RelatedValue2`,
+	`RelatedValue3`
+)
+VALUES
+(
+	@id,
+	@RelatedValue1,
+	@RelatedValue2,
+	@RelatedValue3
+)
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -90,10 +291,10 @@ LIMIT @take
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `UpdateRelation`
+DROP TABLE IF EXISTS `UpdateRelation`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `UpdatedEntities`
+DROP TABLE IF EXISTS `UpdatedEntities`
 

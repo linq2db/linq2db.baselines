@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Fact`
+DROP TABLE IF EXISTS `Fact`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Fact`
 (
 	`Id` INT NOT NULL,
 
@@ -10,20 +15,55 @@ CREATE TABLE `Fact`
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 3
 
 INSERT INTO `Fact`
 (
 	`Id`
 )
 VALUES
-(3),
-(4),
-(5)
+(
+	@Id
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 4
+
+INSERT INTO `Fact`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 5
+
+INSERT INTO `Fact`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Tag`
+DROP TABLE IF EXISTS `Tag`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Tag`
 (
 	`Id`     INT          NOT NULL,
 	`FactId` INT          NOT NULL,
@@ -34,6 +74,12 @@ CREATE TABLE `Tag`
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @FactId Int32
+SET     @FactId = 3
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Tag3'
 
 INSERT INTO `Tag`
 (
@@ -42,9 +88,55 @@ INSERT INTO `Tag`
 	`Name`
 )
 VALUES
-(1,3,'Tag3'),
-(2,3,'Tag3'),
-(3,4,'Tag4')
+(
+	@Id,
+	@FactId,
+	@Name
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @FactId Int32
+SET     @FactId = 3
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Tag3'
+
+INSERT INTO `Tag`
+(
+	`Id`,
+	`FactId`,
+	`Name`
+)
+VALUES
+(
+	@Id,
+	@FactId,
+	@Name
+)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 3
+DECLARE @FactId Int32
+SET     @FactId = 4
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Tag4'
+
+INSERT INTO `Tag`
+(
+	`Id`,
+	`FactId`,
+	`Name`
+)
+VALUES
+(
+	@Id,
+	@FactId,
+	@Name
+)
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -63,10 +155,10 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Tag`
+DROP TABLE IF EXISTS `Tag`
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DROP TABLE `Fact`
+DROP TABLE IF EXISTS `Fact`
 
