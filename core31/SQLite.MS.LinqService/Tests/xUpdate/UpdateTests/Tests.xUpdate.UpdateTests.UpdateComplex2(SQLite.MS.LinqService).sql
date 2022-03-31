@@ -1,0 +1,81 @@
+﻿BeforeExecute
+-- SQLite.MS SQLite
+
+UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+DELETE FROM
+	[Person]
+WHERE
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = 'M'
+DECLARE @Name_FirstName NVarChar(13) -- String
+SET     @Name_FirstName = 'UpdateComplex'
+DECLARE @Name_MiddleName NVarChar -- String
+SET     @Name_MiddleName = NULL
+DECLARE @Name_LastName NVarChar(5) -- String
+SET     @Name_LastName = 'Empty'
+
+INSERT INTO [Person]
+(
+	[Gender],
+	[FirstName],
+	[MiddleName],
+	[LastName]
+)
+VALUES
+(
+	@Gender,
+	@Name_FirstName,
+	@Name_MiddleName,
+	@Name_LastName
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT last_insert_rowid()
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+UPDATE
+	[Person]
+SET
+	[LastName] = [Person].[FirstName]
+WHERE
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[_].[PersonID],
+	[_].[Gender],
+	[_].[FirstName],
+	[_].[MiddleName],
+	[_].[LastName]
+FROM
+	[Person] [_]
+WHERE
+	[_].[PersonID] = @id
+LIMIT @take
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+DELETE FROM
+	[Person]
+WHERE
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
+
