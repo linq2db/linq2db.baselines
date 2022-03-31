@@ -192,71 +192,19 @@ SELECT TOP (@take)
 	Convert(NVarChar(4000), [x].[Prop_uint]),
 	Convert(NVarChar(4000), [x].[Prop_ulong]),
 	Convert(NVarChar(4000), [x].[Prop_Guid]),
-	CASE
-		WHEN [x].[NullableProp_bool] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(1), [x].[NullableProp_bool])
-	END,
-	CASE
-		WHEN [x].[NullableProp_byte] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(3), [x].[NullableProp_byte])
-	END,
-	CASE
-		WHEN [x].[NullableProp_char] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(4000), [x].[NullableProp_char])
-	END,
-	CASE
-		WHEN [x].[NullableProp_decimal] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(31), [x].[NullableProp_decimal])
-	END,
-	CASE
-		WHEN [x].[NullableProp_double] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(22), [x].[NullableProp_double])
-	END,
-	CASE
-		WHEN [x].[NullableProp_short] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(6), [x].[NullableProp_short])
-	END,
-	CASE
-		WHEN [x].[NullableProp_int] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(11), [x].[NullableProp_int])
-	END,
-	CASE
-		WHEN [x].[NullableProp_long] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(20), [x].[NullableProp_long])
-	END,
-	CASE
-		WHEN [x].[NullableProp_sbyte] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(4000), [x].[NullableProp_sbyte])
-	END,
-	CASE
-		WHEN [x].[NullableProp_float] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(13), [x].[NullableProp_float])
-	END,
-	CASE
-		WHEN [x].[NullableProp_ushort] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(4000), [x].[NullableProp_ushort])
-	END,
-	CASE
-		WHEN [x].[NullableProp_uint] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(4000), [x].[NullableProp_uint])
-	END,
-	CASE
-		WHEN [x].[NullableProp_ulong] IS NULL
-			THEN N''
-		ELSE Convert(NVarChar(4000), [x].[NullableProp_ulong])
-	END,
+	Convert(NVarChar(4000), [x].[NullableProp_bool]),
+	Convert(NVarChar(4000), [x].[NullableProp_byte]),
+	Convert(NVarChar(4000), [x].[NullableProp_char]),
+	Convert(NVarChar(4000), [x].[NullableProp_decimal]),
+	Convert(NVarChar(4000), [x].[NullableProp_double]),
+	Convert(NVarChar(4000), [x].[NullableProp_short]),
+	Convert(NVarChar(4000), [x].[NullableProp_int]),
+	Convert(NVarChar(4000), [x].[NullableProp_long]),
+	Convert(NVarChar(4000), [x].[NullableProp_sbyte]),
+	Convert(NVarChar(4000), [x].[NullableProp_float]),
+	Convert(NVarChar(4000), [x].[NullableProp_ushort]),
+	Convert(NVarChar(4000), [x].[NullableProp_uint]),
+	Convert(NVarChar(4000), [x].[NullableProp_ulong]),
 	Convert(NVarChar(4000), [x].[NullableProp_Guid]),
 	Convert(NVarChar(4000), [x].[Prop_DateTime]),
 	Convert(NVarChar(4000), [x].[NullableProp_DateTime])
