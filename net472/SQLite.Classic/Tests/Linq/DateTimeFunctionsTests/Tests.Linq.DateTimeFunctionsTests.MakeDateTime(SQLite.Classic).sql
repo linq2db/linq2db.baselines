@@ -9,9 +9,9 @@ FROM
 	(
 		SELECT
 			Date('2010-' || CASE
-				WHEN Length(Cast([p].[ID] as NVarChar(4000))) = 1
-					THEN '0' || Cast([p].[ID] as NVarChar(4000))
-				ELSE Cast([p].[ID] as NVarChar(4000))
+				WHEN Length(Cast([p].[ID] as NVarChar(11))) = 1
+					THEN '0' || Cast([p].[ID] as NVarChar(11))
+				ELSE Cast([p].[ID] as NVarChar(11))
 			END || '-' || @p_1) as [c1]
 		FROM
 			[LinqDataTypes] [p]

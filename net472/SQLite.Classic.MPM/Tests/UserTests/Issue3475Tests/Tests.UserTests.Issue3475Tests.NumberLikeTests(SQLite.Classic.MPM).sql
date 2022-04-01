@@ -16,7 +16,7 @@ SELECT
 FROM
 	[NumberLikeTestTable] [x]
 WHERE
-	Cast([x].[IntNProp] as NVarChar(4000)) LIKE '1%'
+	Cast([x].[IntNProp] as NVarChar(11)) LIKE '1%'
 LIMIT @take
 
 BeforeExecute
@@ -29,7 +29,7 @@ SELECT
 FROM
 	[NumberLikeTestTable] [x]
 WHERE
-	Cast([x].[IntNProp] as NVarChar(4000)) LIKE '1%'
+	Cast([x].[IntNProp] as NVarChar(11)) LIKE '1%'
 LIMIT @take
 
 BeforeExecute
