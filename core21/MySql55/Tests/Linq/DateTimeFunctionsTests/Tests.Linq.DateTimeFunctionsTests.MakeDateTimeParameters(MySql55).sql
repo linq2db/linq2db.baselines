@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Concat(@p_1, Cast(`p`.`ID` as CHAR(255)), '-1') as Date) as `c1`
+			Cast(Concat(@p_1, Cast(`p`.`ID` as CHAR(11)), '-1') as Date) as `c1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
