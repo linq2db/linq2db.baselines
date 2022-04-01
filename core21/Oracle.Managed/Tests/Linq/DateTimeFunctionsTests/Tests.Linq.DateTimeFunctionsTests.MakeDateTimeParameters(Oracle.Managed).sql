@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			TO_DATE(:p_1 || Cast(p.ID as VarChar2(4000)) || '-1', 'YYYY-MM-DD') as "c1"
+			TO_DATE(:p_1 || Cast(p.ID as VarChar2(11)) || '-1', 'YYYY-MM-DD') as "c1"
 		FROM
 			"LinqDataTypes" p
 	) t
