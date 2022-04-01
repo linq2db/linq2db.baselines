@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(Datetime, @p_1 + Convert(NVarChar(4000), [p].[ID]) + '-1') as [c1]
+			Convert(Datetime, @p_1 + Convert(NVarChar(11), [p].[ID]) + '-1') as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
