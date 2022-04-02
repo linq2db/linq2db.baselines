@@ -116,17 +116,10 @@ UPDATE
 	[MainTable]
 SET
 	[Field] = 'test'
+FROM
+	[AssociatedTable] [pat]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[AssociatedTable] [pat]
-				INNER JOIN [MainTable] [a_MainRequired] ON [pat].[Id] = [a_MainRequired].[Id]
-		WHERE
-			[pat].[Id] = @id AND [MainTable].[Id] = [a_MainRequired].[Id] AND
-			([MainTable].[Field] = [a_MainRequired].[Field] OR [MainTable].[Field] IS NULL AND [a_MainRequired].[Field] IS NULL)
-	)
+	[pat].[Id] = @id AND [pat].[Id] = [MainTable].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
