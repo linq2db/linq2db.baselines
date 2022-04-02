@@ -59,8 +59,7 @@ WHERE
 									"Parent" "_"
 								WHERE
 									"_"."ParentID" = @id
-							) as "ex",
-							"_1"."Value1"
+							) as "ex"
 						FROM
 							"Parent" "_1"
 					) "_2"
