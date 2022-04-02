@@ -430,55 +430,13 @@ BeforeExecute
 UPDATE
 	[DestinationTable]
 SET
-	[Id] = (
-		SELECT
-			[_].[Id]
-		FROM
-			[TableWithData] [_]
-				INNER JOIN [DestinationTable] [t] ON [t].[Id] = [_].[Id]
-		WHERE
-			[_].[Id] = 3 AND
-			[DestinationTable].[Id] = [t].[Id] AND
-			[DestinationTable].[Value] = [t].[Value] AND
-			([DestinationTable].[ValueStr] = [t].[ValueStr] OR [DestinationTable].[ValueStr] IS NULL AND [t].[ValueStr] IS NULL)
-	),
-	[Value] = (
-		SELECT
-			[_1].[Value]
-		FROM
-			[TableWithData] [_1]
-				INNER JOIN [DestinationTable] [t_1] ON [t_1].[Id] = [_1].[Id]
-		WHERE
-			[_1].[Id] = 3 AND
-			[DestinationTable].[Id] = [t_1].[Id] AND
-			[DestinationTable].[Value] = [t_1].[Value] AND
-			([DestinationTable].[ValueStr] = [t_1].[ValueStr] OR [DestinationTable].[ValueStr] IS NULL AND [t_1].[ValueStr] IS NULL)
-	),
-	[ValueStr] = (
-		SELECT
-			[_2].[ValueStr]
-		FROM
-			[TableWithData] [_2]
-				INNER JOIN [DestinationTable] [t_2] ON [t_2].[Id] = [_2].[Id]
-		WHERE
-			[_2].[Id] = 3 AND
-			[DestinationTable].[Id] = [t_2].[Id] AND
-			[DestinationTable].[Value] = [t_2].[Value] AND
-			([DestinationTable].[ValueStr] = [t_2].[ValueStr] OR [DestinationTable].[ValueStr] IS NULL AND [t_2].[ValueStr] IS NULL)
-	)
+	[Id] = [_].[Id],
+	[Value] = [_].[Value],
+	[ValueStr] = [_].[ValueStr]
+FROM
+	[TableWithData] [_]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[TableWithData] [_3]
-				INNER JOIN [DestinationTable] [t_3] ON [t_3].[Id] = [_3].[Id]
-		WHERE
-			[_3].[Id] = 3 AND
-			[DestinationTable].[Id] = [t_3].[Id] AND
-			[DestinationTable].[Value] = [t_3].[Value] AND
-			([DestinationTable].[ValueStr] = [t_3].[ValueStr] OR [DestinationTable].[ValueStr] IS NULL AND [t_3].[ValueStr] IS NULL)
-	)
+	[_].[Id] = 3 AND [DestinationTable].[Id] = [_].[Id]
 RETURNING
 	[DestinationTable].[Value]
 

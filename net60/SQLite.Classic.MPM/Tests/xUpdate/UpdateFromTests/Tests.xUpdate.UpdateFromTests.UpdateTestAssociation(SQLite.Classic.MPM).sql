@@ -74,25 +74,12 @@ BeforeExecute
 UPDATE
 	[UpdatedEntities]
 SET
-	[Value1] = (
-		SELECT
-			[a_Relation].[RelatedValue3]
-		FROM
-			[UpdatedEntities] [v]
-				LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
-		WHERE
-			[a_Relation].[RelatedValue1] = 11 AND [UpdatedEntities].[id] = [v].[id]
-	)
+	[Value1] = [a_Relation].[RelatedValue3]
+FROM
+	[UpdatedEntities] [v]
+		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[UpdatedEntities] [v_1]
-				LEFT JOIN [UpdateRelation] [a_Relation_1] ON [v_1].[RelationId] = [a_Relation_1].[id]
-		WHERE
-			[a_Relation_1].[RelatedValue1] = 11 AND [UpdatedEntities].[id] = [v_1].[id]
-	)
+	[a_Relation].[RelatedValue1] = 11 AND [UpdatedEntities].[id] = [v].[id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
