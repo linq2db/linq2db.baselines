@@ -295,35 +295,37 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @int1 Int32
 SET     @int1 = 11
+DECLARE @int2 Int32
+SET     @int2 = 22
+DECLARE @int3 Int32
+SET     @int3 = 33
 DECLARE @someId Int32
 SET     @someId = 100
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @int2 Int32
-SET     @int2 = 22
 DECLARE @take_1 Int32
 SET     @take_1 = 3
-DECLARE @int3 Int32
-SET     @int3 = 33
-DECLARE @take_2 Int32
-SET     @take_2 = 3
-DECLARE @take_3 Int32
-SET     @take_3 = 3
 
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = (
+	("UpdatedEntities"."Value1", "UpdatedEntities"."Value2", "UpdatedEntities"."Value3") = (
 		SELECT
-			(t3."Value1" * t3."Value1_1") * :int1
+			(t3."Value1" * t3."Value1_1") * :int1,
+			(t3."Value2" * t3."Value2_1") * :int2,
+			(t3."Value3" * t3."Value3_1") * :int3
 		FROM
 			(
 				SELECT
 					t2."id",
 					t2."Value1",
-					t2."Value1_1"
+					t2."Value1_1",
+					t2."Value2",
+					t2."Value2_1",
+					t2."Value3",
+					t2."Value3_1"
 				FROM
 					(
 						SELECT
@@ -361,36 +363,23 @@ SET
 			) t3
 		WHERE
 			"UpdatedEntities"."id" = t3."id"
-	),
-	"UpdatedEntities"."Value2" = (
+	)
+WHERE
+	EXISTS(
 		SELECT
-			(t6."Value2" * t6."Value2_1") * :int2
+			*
 		FROM
 			(
 				SELECT
-					t5."id",
-					t5."Value2",
-					t5."Value2_1"
+					t5."id"
 				FROM
 					(
 						SELECT
 							ROWNUM as RN,
-							t4."Value1",
-							t4."Value1_1",
-							t4."Value2",
-							t4."Value2_1",
-							t4."Value3",
-							t4."Value3_1",
 							t4."id"
 						FROM
 							(
 								SELECT
-									c_2."Value1",
-									t_1."Value1" as "Value1_1",
-									c_2."Value2",
-									t_1."Value2" as "Value2_1",
-									c_2."Value3",
-									t_1."Value3" as "Value3_1",
 									c_2."id"
 								FROM
 									"UpdatedEntities" c_2
@@ -408,99 +397,6 @@ SET
 			) t6
 		WHERE
 			"UpdatedEntities"."id" = t6."id"
-	),
-	"UpdatedEntities"."Value3" = (
-		SELECT
-			(t9."Value3" * t9."Value3_1") * :int3
-		FROM
-			(
-				SELECT
-					t8."id",
-					t8."Value3",
-					t8."Value3_1"
-				FROM
-					(
-						SELECT
-							ROWNUM as RN,
-							t7."Value1",
-							t7."Value1_1",
-							t7."Value2",
-							t7."Value2_1",
-							t7."Value3",
-							t7."Value3_1",
-							t7."id"
-						FROM
-							(
-								SELECT
-									c_3."Value1",
-									t_2."Value1" as "Value1_1",
-									c_3."Value2",
-									t_2."Value2" as "Value2_1",
-									c_3."Value3",
-									t_2."Value3" as "Value3_1",
-									c_3."id"
-								FROM
-									"UpdatedEntities" c_3
-										INNER JOIN "NewEntities" t_2 ON t_2."id" = c_3."id"
-								WHERE
-									t_2."id" <> :someId
-								ORDER BY
-									c_3."id"
-							) t7
-						WHERE
-							ROWNUM <= :take_2
-					) t8
-				WHERE
-					t8.RN > :skip
-			) t9
-		WHERE
-			"UpdatedEntities"."id" = t9."id"
-	)
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			(
-				SELECT
-					t11."id"
-				FROM
-					(
-						SELECT
-							ROWNUM as RN,
-							t10."Value1",
-							t10."Value1_1",
-							t10."Value2",
-							t10."Value2_1",
-							t10."Value3",
-							t10."Value3_1",
-							t10."id"
-						FROM
-							(
-								SELECT
-									c_4."Value1",
-									t_3."Value1" as "Value1_1",
-									c_4."Value2",
-									t_3."Value2" as "Value2_1",
-									c_4."Value3",
-									t_3."Value3" as "Value3_1",
-									c_4."id"
-								FROM
-									"UpdatedEntities" c_4
-										INNER JOIN "NewEntities" t_3 ON t_3."id" = c_4."id"
-								WHERE
-									t_3."id" <> :someId
-								ORDER BY
-									c_4."id"
-							) t10
-						WHERE
-							ROWNUM <= :take_3
-					) t11
-				WHERE
-					t11.RN > :skip
-			) t12
-		WHERE
-			"UpdatedEntities"."id" = t12."id"
 	)
 
 BeforeExecute
