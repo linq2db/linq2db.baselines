@@ -279,29 +279,27 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @int1 Integer(4) -- Int32
 SET     @int1 = 11
+DECLARE @int2 Integer(4) -- Int32
+SET     @int2 = 22
+DECLARE @int3 Integer(4) -- Int32
+SET     @int3 = 33
 DECLARE @someId Integer(4) -- Int32
 SET     @someId = 100
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
 DECLARE @take Integer(4) -- Int32
 SET     @take = 3
-DECLARE @int2 Integer(4) -- Int32
-SET     @int2 = 22
 DECLARE @take_1 Integer(4) -- Int32
 SET     @take_1 = 3
-DECLARE @int3 Integer(4) -- Int32
-SET     @int3 = 33
-DECLARE @take_2 Integer(4) -- Int32
-SET     @take_2 = 3
-DECLARE @take_3 Integer(4) -- Int32
-SET     @take_3 = 3
 
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = (
+	("UpdatedEntities"."Value1", "UpdatedEntities"."Value2", "UpdatedEntities"."Value3") = (
 		SELECT
-			("t1"."Value1" * "t1"."Value1_1") * @int1
+			("t1"."Value1" * "t1"."Value1_1") * @int1,
+			("t1"."Value2" * "t1"."Value2_1") * @int2,
+			("t1"."Value3" * "t1"."Value3_1") * @int3
 		FROM
 			(
 				SELECT
@@ -321,20 +319,15 @@ SET
 			) "t1"
 		WHERE
 			"t1".RN > @skip AND "t1".RN <= @take AND "UpdatedEntities"."id" = "t1"."id"
-	),
-	"UpdatedEntities"."Value2" = (
+	)
+WHERE
+	EXISTS(
 		SELECT
-			("t2"."Value2" * "t2"."Value2_1") * @int2
+			*
 		FROM
 			(
 				SELECT
 					ROW_NUMBER() OVER (ORDER BY "c_2"."id") as RN,
-					"c_2"."Value1",
-					"t_1"."Value1" as "Value1_1",
-					"c_2"."Value2",
-					"t_1"."Value2" as "Value2_1",
-					"c_2"."Value3",
-					"t_1"."Value3" as "Value3_1",
 					"c_2"."id"
 				FROM
 					"UpdatedEntities" "c_2"
@@ -344,53 +337,6 @@ SET
 			) "t2"
 		WHERE
 			"t2".RN > @skip AND "t2".RN <= @take_1 AND "UpdatedEntities"."id" = "t2"."id"
-	),
-	"UpdatedEntities"."Value3" = (
-		SELECT
-			("t3"."Value3" * "t3"."Value3_1") * @int3
-		FROM
-			(
-				SELECT
-					ROW_NUMBER() OVER (ORDER BY "c_3"."id") as RN,
-					"c_3"."Value1",
-					"t_2"."Value1" as "Value1_1",
-					"c_3"."Value2",
-					"t_2"."Value2" as "Value2_1",
-					"c_3"."Value3",
-					"t_2"."Value3" as "Value3_1",
-					"c_3"."id"
-				FROM
-					"UpdatedEntities" "c_3"
-						INNER JOIN "NewEntities" "t_2" ON "t_2"."id" = "c_3"."id"
-				WHERE
-					"t_2"."id" <> @someId
-			) "t3"
-		WHERE
-			"t3".RN > @skip AND "t3".RN <= @take_2 AND "UpdatedEntities"."id" = "t3"."id"
-	)
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			(
-				SELECT
-					ROW_NUMBER() OVER (ORDER BY "c_4"."id") as RN,
-					"c_4"."Value1",
-					"t_3"."Value1" as "Value1_1",
-					"c_4"."Value2",
-					"t_3"."Value2" as "Value2_1",
-					"c_4"."Value3",
-					"t_3"."Value3" as "Value3_1",
-					"c_4"."id"
-				FROM
-					"UpdatedEntities" "c_4"
-						INNER JOIN "NewEntities" "t_3" ON "t_3"."id" = "c_4"."id"
-				WHERE
-					"t_3"."id" <> @someId
-			) "t4"
-		WHERE
-			"t4".RN > @skip AND "t4".RN <= @take_3 AND "UpdatedEntities"."id" = "t4"."id"
 	)
 
 BeforeExecute

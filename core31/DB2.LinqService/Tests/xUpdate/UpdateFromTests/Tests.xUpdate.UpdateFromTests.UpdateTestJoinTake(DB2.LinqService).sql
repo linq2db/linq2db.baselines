@@ -279,19 +279,21 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @int1 Integer(4) -- Int32
 SET     @int1 = 11
-DECLARE @someId Integer(4) -- Int32
-SET     @someId = 100
 DECLARE @int2 Integer(4) -- Int32
 SET     @int2 = 22
 DECLARE @int3 Integer(4) -- Int32
 SET     @int3 = 33
+DECLARE @someId Integer(4) -- Int32
+SET     @someId = 100
 
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = (
+	("UpdatedEntities"."Value1", "UpdatedEntities"."Value2", "UpdatedEntities"."Value3") = (
 		SELECT
-			("t1"."Value1" * "t1"."Value1_1") * @int1
+			("t1"."Value1" * "t1"."Value1_1") * @int1,
+			("t1"."Value2" * "t1"."Value2_1") * @int2,
+			("t1"."Value3" * "t1"."Value3_1") * @int3
 		FROM
 			(
 				SELECT
@@ -311,19 +313,14 @@ SET
 			) "t1"
 		WHERE
 			"UpdatedEntities"."id" = "t1"."id"
-	),
-	"UpdatedEntities"."Value2" = (
+	)
+WHERE
+	EXISTS(
 		SELECT
-			("t2"."Value2" * "t2"."Value2_1") * @int2
+			*
 		FROM
 			(
 				SELECT
-					"c_2"."Value1",
-					"t_1"."Value1" as "Value1_1",
-					"c_2"."Value2",
-					"t_1"."Value2" as "Value2_1",
-					"c_2"."Value3",
-					"t_1"."Value3" as "Value3_1",
 					"c_2"."id"
 				FROM
 					"UpdatedEntities" "c_2"
@@ -334,53 +331,6 @@ SET
 			) "t2"
 		WHERE
 			"UpdatedEntities"."id" = "t2"."id"
-	),
-	"UpdatedEntities"."Value3" = (
-		SELECT
-			("t3"."Value3" * "t3"."Value3_1") * @int3
-		FROM
-			(
-				SELECT
-					"c_3"."Value1",
-					"t_2"."Value1" as "Value1_1",
-					"c_3"."Value2",
-					"t_2"."Value2" as "Value2_1",
-					"c_3"."Value3",
-					"t_2"."Value3" as "Value3_1",
-					"c_3"."id"
-				FROM
-					"UpdatedEntities" "c_3"
-						INNER JOIN "NewEntities" "t_2" ON "t_2"."id" = "c_3"."id"
-				WHERE
-					"t_2"."id" <> @someId
-				FETCH FIRST 2 ROWS ONLY
-			) "t3"
-		WHERE
-			"UpdatedEntities"."id" = "t3"."id"
-	)
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			(
-				SELECT
-					"c_4"."Value1",
-					"t_3"."Value1" as "Value1_1",
-					"c_4"."Value2",
-					"t_3"."Value2" as "Value2_1",
-					"c_4"."Value3",
-					"t_3"."Value3" as "Value3_1",
-					"c_4"."id"
-				FROM
-					"UpdatedEntities" "c_4"
-						INNER JOIN "NewEntities" "t_3" ON "t_3"."id" = "c_4"."id"
-				WHERE
-					"t_3"."id" <> @someId
-				FETCH FIRST 2 ROWS ONLY
-			) "t4"
-		WHERE
-			"UpdatedEntities"."id" = "t4"."id"
 	)
 
 BeforeExecute
