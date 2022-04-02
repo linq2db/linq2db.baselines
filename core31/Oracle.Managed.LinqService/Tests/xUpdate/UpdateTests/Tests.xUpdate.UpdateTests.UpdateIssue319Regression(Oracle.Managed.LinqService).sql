@@ -61,8 +61,7 @@ WHERE
 									"Parent" t1
 								WHERE
 									t1."ParentID" = :id
-							) as "ex",
-							t2."Value1"
+							) as "ex"
 						FROM
 							"Parent" t2
 					) t3
