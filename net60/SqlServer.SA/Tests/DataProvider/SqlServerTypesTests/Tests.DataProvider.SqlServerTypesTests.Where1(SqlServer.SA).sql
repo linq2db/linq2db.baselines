@@ -2,6 +2,8 @@
 -- SqlServer.SA SqlServer.2019
 DECLARE @hid hierarchyid -- Udt -- Object
 SET     @hid = /1/
+DECLARE @True_1 Bit -- Boolean
+SET     @True_1 = 1
 
 SELECT
 	[t].[ID],
@@ -9,7 +11,7 @@ SELECT
 FROM
 	[SqlTypes] [t]
 WHERE
-	@hid.IsDescendantOf([t].[HID]) = 1
+	@hid.IsDescendantOf([t].[HID]) = @True_1
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
