@@ -15,8 +15,9 @@ FROM
 	(
 		SELECT
 			DateTime('2010-' || CASE
-				WHEN Length([p].[ID]) = 1 THEN '0' || Cast([p].[ID] as VarChar(11))
-				ELSE [p].[ID]
+				WHEN Length(Cast([p].[ID] as NVarChar(11))) = 1
+					THEN '0' || Cast([p].[ID] as NVarChar(11))
+				ELSE Cast([p].[ID] as NVarChar(11))
 			END || '-' || @p_1 || ' ' || @p_2 || ':' || @p_3 || ':' || @p_4) as [c1]
 		FROM
 			[LinqDataTypes] [p]

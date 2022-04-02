@@ -6,7 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			To_Date('2010-' || To_Char(p.ID) || '-1 20:35:44') as c1
+			To_Date('2010-' || CASE
+				WHEN p.ID IS NULL THEN ''
+				ELSE To_Char(p.ID)
+			END || '-1 20:35:44') as c1
 		FROM
 			LinqDataTypes p
 	) t
