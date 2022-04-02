@@ -106,10 +106,6 @@ SET
 				SELECT FIRST @take
 					"c_1"."Value1",
 					"t"."Value1" as "Value1_1",
-					"c_1"."Value2",
-					"t"."Value2" as "Value2_1",
-					"c_1"."Value3",
-					"t"."Value3" as "Value3_1",
 					"c_1"."id"
 				FROM
 					"UpdatedEntities" "c_1"
@@ -126,12 +122,8 @@ SET
 		FROM
 			(
 				SELECT FIRST @take
-					"c_2"."Value1",
-					"t_1"."Value1" as "Value1_1",
 					"c_2"."Value2",
 					"t_1"."Value2" as "Value2_1",
-					"c_2"."Value3",
-					"t_1"."Value3" as "Value3_1",
 					"c_2"."id"
 				FROM
 					"UpdatedEntities" "c_2"
@@ -148,10 +140,6 @@ SET
 		FROM
 			(
 				SELECT FIRST @take
-					"c_3"."Value1",
-					"t_2"."Value1" as "Value1_1",
-					"c_3"."Value2",
-					"t_2"."Value2" as "Value2_1",
 					"c_3"."Value3",
 					"t_2"."Value3" as "Value3_1",
 					"c_3"."id"
@@ -171,12 +159,6 @@ WHERE
 		FROM
 			(
 				SELECT FIRST @take
-					"c_4"."Value1",
-					"t_3"."Value1" as "Value1_1",
-					"c_4"."Value2",
-					"t_3"."Value2" as "Value2_1",
-					"c_4"."Value3",
-					"t_3"."Value3" as "Value3_1",
 					"c_4"."id"
 				FROM
 					"UpdatedEntities" "c_4"
