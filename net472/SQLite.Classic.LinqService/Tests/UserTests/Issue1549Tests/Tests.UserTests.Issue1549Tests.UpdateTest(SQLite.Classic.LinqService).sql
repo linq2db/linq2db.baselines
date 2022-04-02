@@ -54,34 +54,13 @@ BeforeExecute
 UPDATE
 	[billing_TempReading]
 SET
-	[DevReadingTypeId] = (
-		SELECT
-			[drt].[Id]
-		FROM
-			[billing_TempReading] [tr]
-				INNER JOIN [billing_DevReadingType] [drt] ON [drt].[Name] = [tr].[ReadingTypeName] AND [drt].[DevTypeId] = [tr].[Devtypeid]
-		WHERE
-			[billing_TempReading].[id] = [tr].[id]
-	),
-	[Responsibility] = (
-		SELECT
-			[drt_1].[Responsibility]
-		FROM
-			[billing_TempReading] [tr_1]
-				INNER JOIN [billing_DevReadingType] [drt_1] ON [drt_1].[Name] = [tr_1].[ReadingTypeName] AND [drt_1].[DevTypeId] = [tr_1].[Devtypeid]
-		WHERE
-			[billing_TempReading].[id] = [tr_1].[id]
-	)
+	[DevReadingTypeId] = [drt].[Id],
+	[Responsibility] = [drt].[Responsibility]
+FROM
+	[billing_TempReading] [tr]
+		INNER JOIN [billing_DevReadingType] [drt] ON [drt].[Name] = [tr].[ReadingTypeName] AND [drt].[DevTypeId] = [tr].[Devtypeid]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[billing_TempReading] [tr_2]
-				INNER JOIN [billing_DevReadingType] [drt_2] ON [drt_2].[Name] = [tr_2].[ReadingTypeName] AND [drt_2].[DevTypeId] = [tr_2].[Devtypeid]
-		WHERE
-			[billing_TempReading].[id] = [tr_2].[id]
-	)
+	[billing_TempReading].[id] = [tr].[id]
 
 BeforeExecute
 -- SQLite.Classic SQLite
