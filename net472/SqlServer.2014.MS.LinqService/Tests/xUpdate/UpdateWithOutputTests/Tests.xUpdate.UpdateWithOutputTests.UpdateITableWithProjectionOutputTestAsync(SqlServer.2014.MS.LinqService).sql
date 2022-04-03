@@ -431,23 +431,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-UPDATE
-	[DestinationTable]
-SET
-	[DestinationTable].[Id] = [s].[Id],
-	[DestinationTable].[Value] = [s].[Value],
-	[DestinationTable].[ValueStr] = [s].[ValueStr]
-OUTPUT
-	[s].[ValueStr],
-	[DELETED].[Value],
-	[INSERTED].[Value]
-FROM
-	[TableWithData] [s]
-		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NOT NULL)
 	DROP TABLE [DestinationTable]
 

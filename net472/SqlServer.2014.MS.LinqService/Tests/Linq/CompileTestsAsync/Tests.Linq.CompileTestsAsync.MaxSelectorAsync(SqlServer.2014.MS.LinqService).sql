@@ -157,18 +157,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-
-SELECT
-	Max([c_1].[Id])
-FROM
-	[AsyncDataTable] [c_1]
-WHERE
-	[c_1].[Id] > @Id
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[AsyncDataTable]', N'U') IS NOT NULL)
 	DROP TABLE [AsyncDataTable]
