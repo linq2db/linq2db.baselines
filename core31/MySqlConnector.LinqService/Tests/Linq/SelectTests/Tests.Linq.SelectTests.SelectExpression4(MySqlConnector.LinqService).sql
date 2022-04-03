@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `SelectExpressionTable`
+DROP TABLE IF EXISTS `SelectExpressionTable`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `SelectExpressionTable`
 (
 	`ID` INT NOT NULL,
 
@@ -10,13 +15,17 @@ CREATE TABLE `SelectExpressionTable`
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @ID Int32
+SET     @ID = 1
 
 INSERT INTO `SelectExpressionTable`
 (
 	`ID`
 )
 VALUES
-(1)
+(
+	@ID
+)
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -32,5 +41,5 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `SelectExpressionTable`
+DROP TABLE IF EXISTS `SelectExpressionTable`
 

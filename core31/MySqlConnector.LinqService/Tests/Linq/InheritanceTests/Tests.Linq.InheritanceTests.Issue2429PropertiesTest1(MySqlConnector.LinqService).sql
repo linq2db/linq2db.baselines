@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `BaseTable`
+DROP TABLE IF EXISTS `BaseTable`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `BaseTable`
 (
 	`Value` INT NOT NULL,
 	`Id`    INT NOT NULL,
@@ -11,6 +16,10 @@ CREATE TABLE `BaseTable`
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @BaseValue Int32
+SET     @BaseValue = 100
+DECLARE @Id Int32
+SET     @Id = 1
 
 INSERT INTO `BaseTable`
 (
@@ -18,7 +27,10 @@ INSERT INTO `BaseTable`
 	`Id`
 )
 VALUES
-(100,1)
+(
+	@BaseValue,
+	@Id
+)
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -51,5 +63,5 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `BaseTable`
+DROP TABLE IF EXISTS `BaseTable`
 
