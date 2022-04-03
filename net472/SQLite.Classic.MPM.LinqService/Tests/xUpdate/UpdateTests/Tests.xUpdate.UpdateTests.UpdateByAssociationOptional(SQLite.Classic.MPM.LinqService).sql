@@ -116,18 +116,11 @@ UPDATE
 	[MainTable]
 SET
 	[Field] = 'test'
+FROM
+	[MainTable] [_]
+		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [_].[Id] = [a_AssociatedOptional].[Id]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[MainTable] [_]
-				LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [_].[Id] = [a_AssociatedOptional].[Id]
-				LEFT JOIN [MainTable] [a_MainOptional] ON [a_AssociatedOptional].[Id] = [a_MainOptional].[Id]
-		WHERE
-			[_].[Id] = @id AND [MainTable].[Id] = [_].[Id] AND
-			([MainTable].[Field] = [_].[Field] OR [MainTable].[Field] IS NULL AND [_].[Field] IS NULL)
-	)
+	[_].[Id] = @id AND [a_AssociatedOptional].[Id] = [MainTable].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

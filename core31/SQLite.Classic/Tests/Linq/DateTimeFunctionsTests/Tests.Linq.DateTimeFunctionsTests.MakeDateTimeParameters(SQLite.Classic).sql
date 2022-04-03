@@ -11,8 +11,9 @@ FROM
 	(
 		SELECT
 			Date(@p_1 || CASE
-				WHEN Length([p].[ID]) = 1 THEN '0' || Cast([p].[ID] as VarChar(11))
-				ELSE [p].[ID]
+				WHEN Length(Cast([p].[ID] as NVarChar(11))) = 1
+					THEN '0' || Cast([p].[ID] as NVarChar(11))
+				ELSE Cast([p].[ID] as NVarChar(11))
 			END || '-' || @p_2) as [c1]
 		FROM
 			[LinqDataTypes] [p]

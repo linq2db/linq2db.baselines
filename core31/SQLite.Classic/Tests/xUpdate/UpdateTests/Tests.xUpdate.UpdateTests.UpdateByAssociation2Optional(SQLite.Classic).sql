@@ -58,17 +58,10 @@ UPDATE
 	[MainTable]
 SET
 	[Field] = 'test'
+FROM
+	[AssociatedTable] [pat]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[AssociatedTable] [pat]
-				LEFT JOIN [MainTable] [a_MainOptional] ON [pat].[Id] = [a_MainOptional].[Id]
-		WHERE
-			[pat].[Id] = @id AND [MainTable].[Id] = [a_MainOptional].[Id] AND
-			([MainTable].[Field] = [a_MainOptional].[Field] OR [MainTable].[Field] IS NULL AND [a_MainOptional].[Field] IS NULL)
-	)
+	[pat].[Id] = @id AND [pat].[Id] = [MainTable].[Id]
 
 BeforeExecute
 -- SQLite.Classic SQLite

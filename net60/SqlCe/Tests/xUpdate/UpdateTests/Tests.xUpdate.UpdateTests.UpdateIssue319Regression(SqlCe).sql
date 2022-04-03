@@ -48,7 +48,6 @@ WHERE
 		FROM
 			(
 				SELECT
-					[_1].[Value1],
 					[_1].[ParentID]
 				FROM
 					[Parent] [_1]

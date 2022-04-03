@@ -10,16 +10,16 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as VarChar(11)) || '-' || CASE
-				WHEN Length(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)) = 1
-					THEN '0' || Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as VarChar(11))
-				ELSE Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)
+			Date(Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as NVarChar(11)) || '-' || CASE
+				WHEN Length(Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))) = 1
+					THEN '0' || Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+				ELSE Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
 			END || '-' || @p_1) as [Key_1],
 			[selectParam].[MoneyValue],
-			Date(Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as VarChar(11)) || '-' || CASE
-				WHEN Length(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)) = 1
-					THEN '0' || Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as VarChar(11))
-				ELSE Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)
+			Date(Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as NVarChar(11)) || '-' || CASE
+				WHEN Length(Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))) = 1
+					THEN '0' || Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
+				ELSE Cast(Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as NVarChar(11))
 			END || '-' || @p_1) as [c1]
 		FROM
 			[LinqDataTypes] [selectParam]
