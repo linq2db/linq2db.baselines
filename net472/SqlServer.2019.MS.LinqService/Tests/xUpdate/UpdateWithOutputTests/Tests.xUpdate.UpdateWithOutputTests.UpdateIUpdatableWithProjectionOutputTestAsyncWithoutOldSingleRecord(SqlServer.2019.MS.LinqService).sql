@@ -215,20 +215,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-UPDATE
-	[s]
-SET
-	[s].[Value] = [s].[Value] + 1,
-	[s].[ValueStr] = [s].[ValueStr] + N'Upd'
-OUTPUT
-	[INSERTED].[Value]
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] = 3
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [TableWithData]
 
