@@ -429,21 +429,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-UPDATE
-	[DestinationTable]
-SET
-	[DestinationTable].[Id] = [s].[Id],
-	[DestinationTable].[Value] = [s].[Value],
-	[DestinationTable].[ValueStr] = [s].[ValueStr]
-OUTPUT
-	[INSERTED].[Value]
-FROM
-	[TableWithData] [s]
-		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
 DROP TABLE IF EXISTS [DestinationTable]
 
 BeforeExecute
