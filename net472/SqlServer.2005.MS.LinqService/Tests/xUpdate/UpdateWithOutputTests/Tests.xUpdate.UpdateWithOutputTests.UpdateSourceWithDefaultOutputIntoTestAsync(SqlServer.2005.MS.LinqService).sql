@@ -226,30 +226,6 @@ CREATE TABLE [destination]
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-UPDATE
-	[s]
-SET
-	[s].[Id] = [s].[Id],
-	[s].[Value] = [s].[Value] + 1,
-	[s].[ValueStr] = [s].[ValueStr] + N'Upd'
-OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
-INTO [destination]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] > 3
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
