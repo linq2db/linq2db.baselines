@@ -24,15 +24,7 @@ BeforeExecute
 ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE
 
 BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[FirstName] LIKE 'UpdateComplex%'
-
-BeforeExecute
--- Access AccessOleDb
+-- Access AccessOleDb (asynchronously)
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarWChar(13) -- String
@@ -58,70 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- Access AccessOleDb
+-- Access AccessOleDb (asynchronously)
 
 SELECT @@IDENTITY
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-SELECT TOP 1
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
-FROM
-	[Person] [_]
-WHERE
-	[_].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @Gender WChar(1) -- StringFixedLength
-SET     @Gender = 'M'
-DECLARE @Name_FirstName VarWChar(13) -- String
-SET     @Name_FirstName = 'UpdateComplex'
-DECLARE @Name_MiddleName VarWChar -- String
-SET     @Name_MiddleName = NULL
-DECLARE @Name_LastName VarWChar(13) -- String
-SET     @Name_LastName = 'UpdateComplex'
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-
-UPDATE
-	[Person] [t1]
-SET
-	[t1].[Gender] = @Gender,
-	[t1].[FirstName] = @Name_FirstName,
-	[t1].[MiddleName] = @Name_MiddleName,
-	[t1].[LastName] = @Name_LastName
-WHERE
-	[t1].[PersonID] = @ID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-SELECT TOP 1
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
-FROM
-	[Person] [_]
-WHERE
-	[_].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%'
 

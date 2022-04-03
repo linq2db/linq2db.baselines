@@ -32,7 +32,7 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
--- Access AccessOleDb
+-- Access AccessOleDb (asynchronously)
 
 INSERT INTO [Person]
 (
@@ -48,96 +48,7 @@ VALUES
 )
 
 BeforeExecute
--- Access AccessOleDb
+-- Access AccessOleDb (asynchronously)
 
 SELECT @@IDENTITY
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id2 Integer -- Int32
-SET     @id2 = 5
-
-UPDATE
-	[Patient] [t1]
-SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]))
-WHERE
-	[t1].[PersonID] = @id2
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-INSERT INTO [Patient]
-(
-	[PersonID],
-	[Diagnosis]
-)
-VALUES
-(
-	@id,
-	'abc'
-)
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @i Integer -- Int32
-SET     @i = 1
-DECLARE @id2 Integer -- Int32
-SET     @id2 = 5
-
-UPDATE
-	[Patient] [t1]
-SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]) + @i)
-WHERE
-	[t1].[PersonID] = @id2
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @i Integer -- Int32
-SET     @i = 2
-DECLARE @id2 Integer -- Int32
-SET     @id2 = 5
-
-UPDATE
-	[Patient] [t1]
-SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]) + @i)
-WHERE
-	[t1].[PersonID] = @id2
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-SELECT TOP 2
-	[p].[PersonID],
-	[p].[Diagnosis]
-FROM
-	[Patient] [p]
-WHERE
-	[p].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Patient] [t1]
-WHERE
-	[t1].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = @id
 

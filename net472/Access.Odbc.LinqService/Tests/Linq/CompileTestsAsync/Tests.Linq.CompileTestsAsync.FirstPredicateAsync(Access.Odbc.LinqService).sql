@@ -155,18 +155,6 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-
-SELECT TOP 1
-	[c_1].[Id]
-FROM
-	[AsyncDataTable] [c_1]
-WHERE
-	[c_1].[Id] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
 
 DROP TABLE [AsyncDataTable]
 
