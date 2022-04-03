@@ -27,12 +27,12 @@ INSERT INTO "TempTable"
 	"ID"
 )
 VALUES
-(1),
 (2),
 (3),
 (4),
 (5),
 (6),
+(1),
 (7)
 
 BeforeExecute

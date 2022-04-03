@@ -1,0 +1,77 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "PKOnlyTable"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "PKOnlyTable"
+		(
+			ID Int NOT NULL,
+
+			CONSTRAINT "PK_PKOnlyTable" PRIMARY KEY (ID)
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 2
+
+INSERT INTO "PKOnlyTable"
+(
+	ID
+)
+VALUES
+(
+	@ID
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+MERGE INTO "PKOnlyTable" "Target"
+USING (VALUES
+	(1), (2), (3)
+) "Source"
+(
+	ID
+)
+ON ("Target".ID = "Source".ID)
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	ID
+)
+VALUES
+(
+	"Source".ID
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1".ID
+FROM
+	"PKOnlyTable" "t1"
+ORDER BY
+	"t1".ID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "PKOnlyTable"';
+END
+

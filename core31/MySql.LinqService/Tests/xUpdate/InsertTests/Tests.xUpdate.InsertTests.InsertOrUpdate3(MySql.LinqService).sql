@@ -28,8 +28,6 @@ BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @i Int32
-SET     @i = 0
 
 INSERT INTO `Patient`
 (
@@ -42,7 +40,7 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
+	`Diagnosis` = Cast(Char_Length(`Diagnosis`) as CHAR(11))
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -105,7 +103,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 5
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Patient` `t1`
 WHERE
@@ -116,7 +114,7 @@ BeforeExecute
 DECLARE @id Int32
 SET     @id = 5
 
-DELETE `t1`
+DELETE   `t1`
 FROM
 	`Person` `t1`
 WHERE

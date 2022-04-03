@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `AsyncDataTable`
+DROP TABLE IF EXISTS `AsyncDataTable`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `AsyncDataTable`
 (
 	`Id` INT NOT NULL,
 
@@ -10,37 +15,146 @@ CREATE TABLE `AsyncDataTable`
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 1
 
 INSERT INTO `AsyncDataTable`
 (
 	`Id`
 )
 VALUES
-(1),
-(2),
-(3),
-(4),
-(5),
-(6),
-(7),
-(8),
-(9),
-(10)
+(
+	@Id
+)
 
 BeforeExecute
--- MySqlConnector MySql (asynchronously)
+-- MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 
-SELECT
-	Count(*)
-FROM
-	`AsyncDataTable` `c_1`
-WHERE
-	`c_1`.`Id` = @Id
+INSERT INTO `AsyncDataTable`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 3
+
+INSERT INTO `AsyncDataTable`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 4
+
+INSERT INTO `AsyncDataTable`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 5
+
+INSERT INTO `AsyncDataTable`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 6
+
+INSERT INTO `AsyncDataTable`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 7
+
+INSERT INTO `AsyncDataTable`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 8
+
+INSERT INTO `AsyncDataTable`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 9
+
+INSERT INTO `AsyncDataTable`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 10
+
+INSERT INTO `AsyncDataTable`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE `AsyncDataTable`
+DROP TABLE IF EXISTS `AsyncDataTable`
 
