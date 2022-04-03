@@ -22,20 +22,6 @@ CREATE COLUMN TABLE "TempTable"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
-SET     @ID = 1
-
-INSERT INTO "TempTable"
-(
-	"ID"
-)
-VALUES
-(
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @ID  -- Int32
 SET     @ID = 2
 
 INSERT INTO "TempTable"
@@ -93,6 +79,20 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 6
+
+INSERT INTO "TempTable"
+(
+	"ID"
+)
+VALUES
+(
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
+DECLARE @ID  -- Int32
+SET     @ID = 1
 
 INSERT INTO "TempTable"
 (
