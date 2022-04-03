@@ -429,23 +429,6 @@ VALUES
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-UPDATE
-	[t]
-SET
-	[t].[Id] = [_].[Id],
-	[t].[Value] = [_].[Value],
-	[t].[ValueStr] = [_].[ValueStr]
-OUTPUT
-	[INSERTED].[Value]
-FROM
-	[TableWithData] [_]
-		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [_].[Id]
-WHERE
-	[_].[Id] = 3
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [DestinationTable]
 
 BeforeExecute

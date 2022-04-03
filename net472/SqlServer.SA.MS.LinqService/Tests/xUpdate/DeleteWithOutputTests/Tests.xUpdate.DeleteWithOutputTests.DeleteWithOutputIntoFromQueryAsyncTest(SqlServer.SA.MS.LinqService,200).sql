@@ -258,29 +258,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @param Int -- Int32
-SET     @param = 200
-DECLARE @param_1 Int -- Int32
-SET     @param_1 = 200
-
-DELETE [s]
-OUTPUT
-	[DELETED].[Id] + @param,
-	[DELETED].[Value] + @param,
-	[DELETED].[ValueStr] + Convert(VarChar(100), @param_1)
-INTO [DestinationTable]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] > 3
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],

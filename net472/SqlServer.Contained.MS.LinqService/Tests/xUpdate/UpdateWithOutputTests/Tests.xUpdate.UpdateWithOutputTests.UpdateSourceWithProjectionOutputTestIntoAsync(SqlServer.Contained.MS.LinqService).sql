@@ -225,30 +225,6 @@ CREATE TABLE [destination]
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-UPDATE
-	[s]
-SET
-	[s].[Id] = [s].[Id],
-	[s].[Value] = [s].[Value] + 1,
-	[s].[ValueStr] = [s].[ValueStr] + N'Upd'
-OUTPUT
-	[INSERTED].[Id],
-	[DELETED].[Value],
-	[INSERTED].[ValueStr]
-INTO [destination]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] > 3
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],

@@ -246,32 +246,6 @@ CREATE TABLE [DestinationTable]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @param Int -- Int32
-SET     @param = 200
-DECLARE @param_1 Int -- Int32
-SET     @param_1 = 200
-
-INSERT INTO [DestinationTable]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
-SELECT
-	[s].[Id] + @param,
-	[s].[Value] + @param,
-	[s].[ValueStr] + Convert(VarChar(100), @param_1)
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] > 3
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[s].[Id],
