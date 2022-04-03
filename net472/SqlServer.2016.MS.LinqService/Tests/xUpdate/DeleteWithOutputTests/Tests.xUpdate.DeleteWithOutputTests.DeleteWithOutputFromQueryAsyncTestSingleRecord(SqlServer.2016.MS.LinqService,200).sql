@@ -249,18 +249,5 @@ WHERE
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DELETE [s]
-OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr]
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] = 3
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [TableWithData]
 
