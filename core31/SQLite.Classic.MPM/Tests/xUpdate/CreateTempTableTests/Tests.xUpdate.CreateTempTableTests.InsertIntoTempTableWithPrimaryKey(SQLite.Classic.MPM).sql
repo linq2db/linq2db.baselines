@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE temp.[TableWithPrimaryKey]
+CREATE TEMPORARY TABLE temp.[TableWithPrimaryKey2]
 (
 	[Key] INTEGER NOT NULL,
 
-	CONSTRAINT [PK_TableWithPrimaryKey] PRIMARY KEY ([Key])
+	CONSTRAINT [PK_TableWithPrimaryKey2] PRIMARY KEY ([Key])
 )
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-INSERT INTO temp.[TableWithPrimaryKey]
+INSERT INTO temp.[TableWithPrimaryKey2]
 (
 	[Key]
 )
@@ -21,5 +21,5 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS temp.[TableWithPrimaryKey]
+DROP TABLE IF EXISTS temp.[TableWithPrimaryKey2]
 
