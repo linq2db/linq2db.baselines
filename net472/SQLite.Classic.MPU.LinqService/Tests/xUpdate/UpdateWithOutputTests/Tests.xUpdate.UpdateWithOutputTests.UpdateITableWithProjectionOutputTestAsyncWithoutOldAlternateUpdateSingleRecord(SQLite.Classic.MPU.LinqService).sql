@@ -427,22 +427,6 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-UPDATE
-	[DestinationTable]
-SET
-	[Id] = [_].[Id],
-	[Value] = [_].[Value],
-	[ValueStr] = [_].[ValueStr]
-FROM
-	[TableWithData] [_]
-WHERE
-	[_].[Id] = 3 AND [DestinationTable].[Id] = [_].[Id]
-RETURNING
-	[DestinationTable].[Value]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [DestinationTable]
 
 BeforeExecute

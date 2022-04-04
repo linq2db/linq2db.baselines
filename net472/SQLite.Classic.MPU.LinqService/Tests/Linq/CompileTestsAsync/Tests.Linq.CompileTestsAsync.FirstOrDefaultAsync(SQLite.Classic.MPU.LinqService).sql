@@ -155,21 +155,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 2
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[AsyncDataTable] [c_1]
-WHERE
-	[c_1].[Id] = @Id
-LIMIT @take
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [AsyncDataTable]
 
