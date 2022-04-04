@@ -11,6 +11,6 @@ CREATE TABLE #TableWithPrimaryKey
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'tempdb..#TableWithPrimaryKey') IS NOT NULL)
+IF (OBJECT_ID(N'#TableWithPrimaryKey') IS NOT NULL)
 	DROP TABLE #TableWithPrimaryKey
 
