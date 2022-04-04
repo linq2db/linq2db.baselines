@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [#TableWithPrimaryKey]
+CREATE TABLE [#TableWithPrimaryKey2]
 (
 	[Key] Int NOT NULL,
 
@@ -9,10 +9,10 @@ CREATE TABLE [#TableWithPrimaryKey]
 )
 
 BeforeExecute
-INSERT BULK [#TableWithPrimaryKey](Key)
+INSERT BULK [#TableWithPrimaryKey2](Key)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DROP TABLE IF EXISTS [#TableWithPrimaryKey]
+DROP TABLE IF EXISTS [#TableWithPrimaryKey2]
 
