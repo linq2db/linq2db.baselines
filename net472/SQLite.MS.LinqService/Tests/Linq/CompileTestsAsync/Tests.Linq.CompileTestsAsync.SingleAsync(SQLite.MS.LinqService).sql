@@ -155,21 +155,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 2
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[AsyncDataTable] [c_1]
-WHERE
-	[c_1].[Id] = @Id
-LIMIT @take
-
-BeforeExecute
--- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [AsyncDataTable]
 
