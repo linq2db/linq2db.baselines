@@ -137,14 +137,5 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[Id],
-	[t1].[Text]
-FROM
-	[Issue2816Table] [t1]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [Issue2816Table]
 
