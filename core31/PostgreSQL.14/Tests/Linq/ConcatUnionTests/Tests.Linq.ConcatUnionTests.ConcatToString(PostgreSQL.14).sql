@@ -1,25 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Default SQLite.MS SQLite
-
-SELECT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
-FROM
-	[Person] [t1]
-
-BeforeExecute
--- SQLite.Default SQLite.MS SQLite
-
-SELECT
-	[t1].[PersonID],
-	[t1].[Diagnosis]
-FROM
-	[Patient] [t1]
-
-BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @pattern_1 Text(3) -- String
 SET     @pattern_1 = '%1%'
