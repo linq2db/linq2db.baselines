@@ -39,30 +39,12 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`t1`.`Id`,
-	`t1`.`Name`
-FROM
-	`Car` `t1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
 	`x`.`Id`,
 	`x`.`Name`
 FROM
 	`Car` `x`
 WHERE
 	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Name`
-FROM
-	`Car` `t1`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -79,28 +61,10 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`t1`.`Id`,
-	`t1`.`Name`
-FROM
-	`Car` `t1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
 	`x`.`Id`,
 	`x`.`Name`
 FROM
 	`Car` `x`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Name`
-FROM
-	`Car` `t1`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -117,30 +81,12 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
-	`t1`.`Id`,
-	`t1`.`Name`
-FROM
-	`Car` `t1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
 	`x`.`Id`,
 	`x`.`Name`
 FROM
 	`Car` `x`
 WHERE
 	`x`.`Name` = 'Special'
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Name`
-FROM
-	`Car` `t1`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

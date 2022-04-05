@@ -1,13 +1,4 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[t1].[PersonID],
-	[t1].[Taxonomy]
-FROM
-	[Doctor] [t1]
-
-BeforeExecute
 -- MySql55 MySql.Official MySql
 
 SELECT
