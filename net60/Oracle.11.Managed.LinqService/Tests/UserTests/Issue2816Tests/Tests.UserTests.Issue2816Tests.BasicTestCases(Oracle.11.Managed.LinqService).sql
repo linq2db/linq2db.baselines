@@ -153,15 +153,6 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
-SELECT
-	t1."Id",
-	t1."Text"
-FROM
-	"Issue2816Table" t1
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue2816Table"';
 EXCEPTION
