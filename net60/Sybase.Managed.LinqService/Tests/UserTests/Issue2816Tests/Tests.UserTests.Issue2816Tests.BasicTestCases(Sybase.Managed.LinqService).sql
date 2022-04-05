@@ -141,15 +141,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[Id],
-	[t1].[Text]
-FROM
-	[Issue2816Table] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'Issue2816Table') IS NOT NULL)
 	DROP TABLE [Issue2816Table]
 
