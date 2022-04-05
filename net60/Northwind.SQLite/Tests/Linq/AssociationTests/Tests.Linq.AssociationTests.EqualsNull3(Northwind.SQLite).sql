@@ -2,31 +2,6 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[t1].[PhotoPath],
-	[t1].[ReportsTo],
-	[t1].[Notes],
-	[t1].[Photo],
-	[t1].[Extension],
-	[t1].[HomePhone],
-	[t1].[Country],
-	[t1].[PostalCode],
-	[t1].[Region],
-	[t1].[City],
-	[t1].[Address],
-	[t1].[HireDate],
-	[t1].[BirthDate],
-	[t1].[TitleOfCourtesy],
-	[t1].[Title],
-	[t1].[FirstName],
-	[t1].[LastName],
-	[t1].[EmployeeID]
-FROM
-	[Employees] [t1]
-
-BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
-
-SELECT
 	[a_ReportsToEmployee].[PhotoPath],
 	[a_ReportsToEmployee].[ReportsTo],
 	[a_ReportsToEmployee].[Notes],
