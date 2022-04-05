@@ -1,14 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Default SQLite.MS SQLite
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
-	[t1].[GrandChildID]
-FROM
-	[GrandChild] [t1]
-
-BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
