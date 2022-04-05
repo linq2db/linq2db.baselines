@@ -137,14 +137,5 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`Id`,
-	`t1`.`Text`
-FROM
-	`Issue2816Table` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE IF EXISTS `Issue2816Table`
 
