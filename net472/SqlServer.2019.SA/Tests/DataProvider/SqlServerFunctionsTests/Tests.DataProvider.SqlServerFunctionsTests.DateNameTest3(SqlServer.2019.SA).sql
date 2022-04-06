@@ -1,0 +1,8 @@
+﻿BeforeExecute
+-- SqlServer.2019.SA SqlServer.2017
+DECLARE @p_1 DateTimeOffset
+SET     @p_1 = '2022-03-22 00:00:00.0000000 +00:00'
+
+SELECT
+	DATENAME(Month, @p_1)
+
