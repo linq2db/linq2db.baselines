@@ -297,7 +297,7 @@ BeforeExecute
 					left(t.table_schema, 3) = 'pg_' OR t.table_schema = 'information_schema'   as IsProviderSpecific
 				FROM
 					information_schema.tables t
-				WHERE table_schema NOT IN ('public', 'test_schema', 'pg_catalog', 'information_schema')
+				WHERE table_schema NOT IN ('test_schema', 'public', 'pg_catalog', 'information_schema')
 			UNION ALL
 				SELECT
 					current_database() || '.' || v.schemaname || '.' || v.matviewname          as TableID,
@@ -316,7 +316,7 @@ BeforeExecute
 					)                                                                          as Description,
 					false                                                                      as IsProviderSpecific
 				FROM pg_matviews v
-				WHERE v.schemaname NOT IN ('public', 'test_schema', 'pg_catalog', 'information_schema')
+				WHERE v.schemaname NOT IN ('test_schema', 'public', 'pg_catalog', 'information_schema')
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -334,7 +334,7 @@ BeforeExecute
 							JOIN pg_namespace  ON pg_class.relnamespace = pg_namespace.oid
 					WHERE
 						pg_constraint.contype = 'p'
-						AND pg_namespace.nspname NOT IN ('public', 'test_schema', 'pg_catalog', 'information_schema')
+						AND pg_namespace.nspname NOT IN ('test_schema', 'public', 'pg_catalog', 'information_schema')
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -423,7 +423,7 @@ BeforeExecute
 				         WHERE cls.relkind IN ('r', 'v', 'm')
 				           AND attr.attnum > 0
 				           AND NOT attr.attisdropped
-				           AND ns.nspname NOT IN ('public', 'test_schema', 'pg_catalog', 'information_schema')
+				           AND ns.nspname NOT IN ('test_schema', 'public', 'pg_catalog', 'information_schema')
 				     ) columns;
 
 BeforeExecute
@@ -474,7 +474,7 @@ BeforeExecute
 							JOIN pg_namespace as other_schema ON other_table.relnamespace = other_schema.oid
 				WHERE
 					pg_constraint.contype = 'f'
-					AND this_schema.nspname NOT IN ('public', 'test_schema', 'pg_catalog', 'information_schema')
+					AND this_schema.nspname NOT IN ('test_schema', 'public', 'pg_catalog', 'information_schema')
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -500,7 +500,7 @@ SELECT	r.ROUTINE_CATALOG,
 		LEFT JOIN pg_catalog.pg_proc p ON p.pronamespace = n.oid AND r.SPECIFIC_NAME = p.proname || '_' || p.oid
 		LEFT JOIN (SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, COUNT(*) as cnt FROM INFORMATION_SCHEMA.parameters WHERE parameter_mode IN('OUT', 'INOUT') GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME) as outp
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
-		WHERE n.nspname NOT IN ('public', 'test_schema', 'pg_catalog', 'information_schema')
+		WHERE n.nspname NOT IN ('test_schema', 'public', 'pg_catalog', 'information_schema')
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
