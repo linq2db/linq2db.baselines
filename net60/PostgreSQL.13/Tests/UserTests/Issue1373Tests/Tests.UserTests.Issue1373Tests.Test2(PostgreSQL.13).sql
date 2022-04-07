@@ -13,7 +13,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Field1 Varchar -- String
+DECLARE @Field1 Unknown -- Object
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
