@@ -4,7 +4,7 @@
 CREATE TABLE "Issue2342Entity"
 (
 	"Id"   Number(19)   NOT NULL,
-	"Name" VarChar(256)     NULL
+	"Name" VarChar(256) NOT NULL
 )
 
 BeforeExecute
