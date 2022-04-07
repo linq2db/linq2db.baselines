@@ -13,7 +13,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Field1 UniVarChar -- String
+DECLARE @Field1 Char -- AnsiStringFixedLength
 SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
