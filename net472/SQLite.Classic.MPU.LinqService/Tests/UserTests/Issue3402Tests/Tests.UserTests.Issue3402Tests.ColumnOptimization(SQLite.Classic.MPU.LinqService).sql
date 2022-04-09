@@ -1,0 +1,58 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE [VEMPLOYEE_SCH_SEC]
+(
+	[ACTIVE] Bit           NOT NULL,
+	[ID]     INTEGER       NOT NULL,
+	[NAME]   NVarChar(255) NOT NULL,
+
+	CONSTRAINT [PK_VEMPLOYEE_SCH_SEC] PRIMARY KEY ([ID])
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE [VEMPLOYEE_SCHDL_PERM]
+(
+	[ID]        INTEGER NOT NULL,
+	[IS_ACTIVE] Bit     NOT NULL,
+
+	CONSTRAINT [PK_VEMPLOYEE_SCHDL_PERM] PRIMARY KEY ([ID])
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[ess].[ID]
+FROM
+	[VEMPLOYEE_SCH_SEC] [ess]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[VEMPLOYEE_SCHDL_PERM] [y]
+		WHERE
+			[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
+	)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[ess].[ID]
+FROM
+	[VEMPLOYEE_SCH_SEC] [ess]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [VEMPLOYEE_SCHDL_PERM]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [VEMPLOYEE_SCH_SEC]
+
