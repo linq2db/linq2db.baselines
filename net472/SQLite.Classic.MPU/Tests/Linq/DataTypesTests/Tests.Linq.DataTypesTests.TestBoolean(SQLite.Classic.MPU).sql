@@ -1,0 +1,185 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [BooleanTable]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [BooleanTable]
+(
+	[ColumnNullable] Bit         NULL,
+	[Column]         Bit     NOT NULL,
+	[Id]             INTEGER NOT NULL
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+INSERT INTO [BooleanTable]
+(
+	[ColumnNullable],
+	[Column],
+	[Id]
+)
+VALUES
+(NULL,1,1),
+(1,0,2)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Column_1  -- Boolean
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Boolean
+SET     @ColumnNullable = 1
+
+SELECT
+	[r].[ColumnNullable],
+	[r].[Column],
+	[r].[Id]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[r].[ColumnNullable],
+	[r].[Column],
+	[r].[Id]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DELETE FROM
+	[BooleanTable]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @ColumnNullable  -- Boolean
+SET     @ColumnNullable = NULL
+DECLARE @Column_1  -- Boolean
+SET     @Column_1 = 1
+DECLARE @Id  -- Int32
+SET     @Id = 1
+
+INSERT INTO [BooleanTable]
+(
+	[ColumnNullable],
+	[Column],
+	[Id]
+)
+VALUES
+(
+	@ColumnNullable,
+	@Column_1,
+	@Id
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @ColumnNullable  -- Boolean
+SET     @ColumnNullable = 1
+DECLARE @Column_1  -- Boolean
+SET     @Column_1 = 0
+DECLARE @Id  -- Int32
+SET     @Id = 2
+
+INSERT INTO [BooleanTable]
+(
+	[ColumnNullable],
+	[Column],
+	[Id]
+)
+VALUES
+(
+	@ColumnNullable,
+	@Column_1,
+	@Id
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[t1].[ColumnNullable],
+	[t1].[Column],
+	[t1].[Id]
+FROM
+	[BooleanTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DELETE FROM
+	[BooleanTable]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+INSERT INTO [BooleanTable]
+(
+	[ColumnNullable],
+	[Column],
+	[Id]
+)
+VALUES
+(NULL,1,1),
+(1,0,2)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[t1].[ColumnNullable],
+	[t1].[Column],
+	[t1].[Id]
+FROM
+	[BooleanTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DELETE FROM
+	[BooleanTable]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+INSERT INTO [BooleanTable]
+(
+	[ColumnNullable],
+	[Column],
+	[Id]
+)
+VALUES
+(NULL,1,1),
+(1,0,2)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[t1].[ColumnNullable],
+	[t1].[Column],
+	[t1].[Id]
+FROM
+	[BooleanTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [BooleanTable]
+
