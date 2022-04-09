@@ -1,0 +1,47 @@
+﻿BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 102
+
+DELETE FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] >= 101 AND [r].[ID] < ?
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[BigIntValue],
+	[IntValue]
+)
+VALUES
+(
+	101,
+	4,
+	10
+)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	[r].[BigIntValue],
+	[r].[IntValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 101
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 102
+
+DELETE FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] >= 101 AND [r].[ID] < ?
+
