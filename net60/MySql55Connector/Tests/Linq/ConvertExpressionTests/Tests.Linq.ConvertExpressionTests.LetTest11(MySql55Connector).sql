@@ -1,0 +1,42 @@
+﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`c_1`.`ParentID`,
+	`c_1`.`ChildID`
+FROM
+	`Child` `c_1`
+WHERE
+	`c_1`.`ParentID` > 0
+ORDER BY
+	`c_1`.`ParentID`
+LIMIT @take
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`c_1`.`ParentID`,
+	`c_1`.`ChildID`
+FROM
+	`Child` `c_1`
+WHERE
+	`c_1`.`ChildID` > -100
+LIMIT @take
+
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+SELECT
+	1
+FROM
+	`Parent` `p`
+
