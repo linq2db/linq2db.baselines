@@ -1,0 +1,29 @@
+﻿BeforeExecute
+-- SqlCe
+
+CREATE TABLE [TestTable]
+(
+	[Id] Int NOT NULL,
+	[Fd] Int     NULL,
+
+	CONSTRAINT [PK_TestTable] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SqlCe
+
+/* My Test */
+INSERT INTO [TestTable]
+(
+	[Id]
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [TestTable]
+

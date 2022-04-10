@@ -1,0 +1,26 @@
+﻿BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[PersonID],
+	[t1].[Taxonomy]
+FROM
+	[Doctor] [t1]
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	(
+		SELECT
+			d.Taxonomy
+		FROM
+			Doctor d
+		WHERE
+			t1.PersonID = d.PersonID
+	)
+FROM
+	Doctor t1
+GROUP BY
+	t1.PersonID
+

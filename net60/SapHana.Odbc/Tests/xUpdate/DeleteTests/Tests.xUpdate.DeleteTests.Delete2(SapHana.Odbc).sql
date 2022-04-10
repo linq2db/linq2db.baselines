@@ -1,0 +1,72 @@
+﻿BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
+
+DELETE FROM
+	"Parent" "t1"
+WHERE
+	"t1"."ParentID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
+DECLARE @Value1  -- Int32
+SET     @Value1 = 1001
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
+
+SELECT
+	Count(*)
+FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
+
+DELETE FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
+
+SELECT
+	Count(*)
+FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
+
+DELETE FROM
+	"Parent" "t1"
+WHERE
+	"t1"."ParentID" = ?
+
