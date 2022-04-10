@@ -1,0 +1,6 @@
+﻿BeforeExecute
+-- SqlCe
+
+SELECT
+	'--'
+
