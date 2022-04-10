@@ -1,0 +1,37 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+SELECT
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
+FROM
+	"Person" p
+		INNER JOIN (
+			SELECT 'Janet' AS "Name" FROM sys.dual
+			UNION ALL
+			SELECT 'Doe' FROM sys.dual) n ON p."LastName" = n."Name"
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
+FROM
+	[Person] [t1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[PersonID],
+	[t1].[Diagnosis]
+FROM
+	[Patient] [t1]
+
