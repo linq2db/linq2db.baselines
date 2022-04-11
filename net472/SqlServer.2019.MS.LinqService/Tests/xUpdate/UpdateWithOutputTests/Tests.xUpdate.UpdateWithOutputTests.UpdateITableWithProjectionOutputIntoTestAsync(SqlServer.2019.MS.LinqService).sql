@@ -439,29 +439,6 @@ CREATE TABLE [Destination]
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-UPDATE
-	[DestinationTable]
-SET
-	[DestinationTable].[Id] = [s].[Id],
-	[DestinationTable].[Value] = [s].[Value],
-	[DestinationTable].[ValueStr] = [s].[ValueStr]
-OUTPUT
-	[s].[Id],
-	[DELETED].[Value],
-	[INSERTED].[ValueStr]
-INTO [Destination]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-FROM
-	[TableWithData] [s]
-		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
