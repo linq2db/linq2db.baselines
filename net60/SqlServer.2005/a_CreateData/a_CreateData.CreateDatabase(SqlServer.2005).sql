@@ -784,7 +784,6 @@ BeforeExecute
 -- SqlServer.2005
 
 -- SKIP SqlServer.2005 END
-
 -- SKIP SqlServer.2008 BEGIN
 -- SKIP SqlServer.2008.MS BEGIN
 -- SKIP SqlServer.2012 BEGIN
@@ -1371,10 +1370,10 @@ BeforeExecute
 -- SqlServer.2005
 
 CREATE Procedure QueryProcMultipleParameters
-	@input          int,
-	@output1        int output,
-	@output2        int output,
-	@output3        int output
+	@input   int,
+	@output1 int output,
+	@output2 int output,
+	@output3 int output
 AS
 
 SET @output1 = @input + 1
@@ -1458,7 +1457,6 @@ BeforeExecute
 CREATE TABLE DataType
 (
 	id INT NOT NULL
-
 )
 
 BeforeExecute
@@ -1471,10 +1469,15 @@ BeforeExecute
 
 CREATE TABLE CollatedTable
 (
-	Id				INT NOT NULL,
-	CaseSensitive	NVARCHAR(20) COLLATE Latin1_General_CS_AI NOT NULL,
-	CaseInsensitive	NVARCHAR(20) COLLATE Latin1_General_CI_AI NOT NULL
+	Id              INT NOT NULL,
+	CaseSensitive   NVARCHAR(20) COLLATE Latin1_General_CS_AI NOT NULL,
+	CaseInsensitive NVARCHAR(20) COLLATE Latin1_General_CI_AI NOT NULL
 )
+
+BeforeExecute
+-- SqlServer.2005
+
+-- SKIP SqlServer.2005 END
 
 BeforeExecute
 INSERT BULK [LinqDataTypes](ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue)
