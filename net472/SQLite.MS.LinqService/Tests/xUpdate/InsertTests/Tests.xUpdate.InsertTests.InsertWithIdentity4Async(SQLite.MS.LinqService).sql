@@ -7,7 +7,7 @@ WHERE
 	[Person].[PersonID] > 4
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName NVarChar(7) -- String
@@ -33,31 +33,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.MS SQLite
-DECLARE @FirstName NVarChar(5) -- String
-SET     @FirstName = 'John0'
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
-FROM
-	[Person] [p]
-WHERE
-	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
-LIMIT @take
-
-BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName NVarChar(7) -- String
@@ -83,28 +64,9 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT last_insert_rowid()
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @FirstName NVarChar(5) -- String
-SET     @FirstName = 'John1'
-DECLARE @take  -- Int32
-SET     @take = 2
-
-SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
-FROM
-	[Person] [p]
-WHERE
-	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
-LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite

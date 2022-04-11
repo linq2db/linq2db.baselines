@@ -155,18 +155,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 5
-
-SELECT
-	Sum(Cast([c_1].[Id] as Real))
-FROM
-	[AsyncDataTable] [c_1]
-WHERE
-	[c_1].[Id] < @Id
-
-BeforeExecute
--- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [AsyncDataTable]
 
