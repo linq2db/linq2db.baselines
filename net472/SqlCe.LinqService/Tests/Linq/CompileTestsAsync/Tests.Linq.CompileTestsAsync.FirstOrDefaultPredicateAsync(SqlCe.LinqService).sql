@@ -155,20 +155,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-
-SELECT TOP (@take)
-	[c_1].[Id]
-FROM
-	[AsyncDataTable] [c_1]
-WHERE
-	[c_1].[Id] = @Id
-
-BeforeExecute
--- SqlCe
 
 DROP TABLE [AsyncDataTable]
 
