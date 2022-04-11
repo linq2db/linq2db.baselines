@@ -156,21 +156,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-
-SELECT
-	IIF(EXISTS(
-		SELECT
-			*
-		FROM
-			[AsyncDataTable] [c_1]
-		WHERE
-			[c_1].[Id] = @Id
-	), 1, 0)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [AsyncDataTable]
 

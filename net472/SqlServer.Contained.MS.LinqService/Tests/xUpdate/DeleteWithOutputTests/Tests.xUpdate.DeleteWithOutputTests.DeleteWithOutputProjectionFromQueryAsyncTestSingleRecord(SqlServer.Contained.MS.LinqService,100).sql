@@ -249,17 +249,5 @@ WHERE
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [s]
-OUTPUT
-	[DELETED].[Id] + 1,
-	[DELETED].[ValueStr] + Convert(VarChar(11), 1)
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] = 3
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [TableWithData]
 
