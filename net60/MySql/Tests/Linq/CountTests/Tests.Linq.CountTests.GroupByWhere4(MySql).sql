@@ -1,14 +1,4 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
-	[t1].[GrandChildID]
-FROM
-	[GrandChild] [t1]
-
-BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
