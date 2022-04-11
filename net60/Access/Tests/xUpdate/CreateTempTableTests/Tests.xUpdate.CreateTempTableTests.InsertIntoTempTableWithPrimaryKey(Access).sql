@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-CREATE TABLE [TableWithPrimaryKey]
+CREATE TABLE [TableWithPrimaryKey2]
 (
 	[Key] Int NOT NULL,
 
-	CONSTRAINT [PK_TableWithPrimaryKey] PRIMARY KEY CLUSTERED ([Key])
+	CONSTRAINT [PK_TableWithPrimaryKey2] PRIMARY KEY CLUSTERED ([Key])
 )
 
 BeforeExecute
@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @Key_1 Integer -- Int32
 SET     @Key_1 = 1
 
-INSERT INTO [TableWithPrimaryKey]
+INSERT INTO [TableWithPrimaryKey2]
 (
 	[Key]
 )
@@ -25,5 +25,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-DROP TABLE [TableWithPrimaryKey]
+DROP TABLE [TableWithPrimaryKey2]
 
