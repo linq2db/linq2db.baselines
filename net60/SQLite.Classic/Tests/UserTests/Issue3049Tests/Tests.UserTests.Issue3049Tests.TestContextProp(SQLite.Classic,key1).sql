@@ -61,14 +61,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[Id],
-	[t1].[Value]
-FROM
-	[SampleClass] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [SampleClass]
 
