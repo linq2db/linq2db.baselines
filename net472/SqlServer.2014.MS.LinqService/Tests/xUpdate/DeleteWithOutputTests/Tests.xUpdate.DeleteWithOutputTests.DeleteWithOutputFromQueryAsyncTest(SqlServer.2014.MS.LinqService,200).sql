@@ -250,19 +250,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-DELETE [s]
-OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr]
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] > 3
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
 	DROP TABLE [TableWithData]
 
