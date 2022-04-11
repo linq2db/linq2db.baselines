@@ -223,46 +223,6 @@ VALUES
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-MERGE INTO [TestMerge1] [Target]
-USING (
-	SELECT
-		[_].[Id],
-		[_].[Field1],
-		[_].[Field2],
-		[_].[Field4]
-	FROM
-		[TestMerge2] [_]
-	WHERE
-		[_].[Id] = 5
-) [Source]
-(
-	[Id],
-	[Field1],
-	[Field2],
-	[Field4]
-)
-ON ([Target].[Id] = [Source].[Id])
-
-WHEN NOT MATCHED THEN
-INSERT
-(
-	[Id],
-	[Field1],
-	[Field2],
-	[Field4]
-)
-VALUES
-(
-	[Source].[Id],
-	[Source].[Field1],
-	[Source].[Field2],
-	[Source].[Field4]
-)
-;
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
