@@ -13,7 +13,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Field1 NVarchar2 -- String
+DECLARE @Field1 Varchar2 -- String
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
