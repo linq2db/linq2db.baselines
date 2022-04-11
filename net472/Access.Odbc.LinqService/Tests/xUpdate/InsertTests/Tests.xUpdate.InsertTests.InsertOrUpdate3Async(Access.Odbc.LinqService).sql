@@ -32,7 +32,7 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
--- Access.Odbc AccessODBC
+-- Access.Odbc AccessODBC (asynchronously)
 
 INSERT INTO [Person]
 (
@@ -48,96 +48,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Odbc AccessODBC
+-- Access.Odbc AccessODBC (asynchronously)
 
 SELECT @@IDENTITY
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-UPDATE
-	[Patient] [t1]
-SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]))
-WHERE
-	[t1].[PersonID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-INSERT INTO [Patient]
-(
-	[PersonID],
-	[Diagnosis]
-)
-VALUES
-(
-	?,
-	'abc'
-)
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @i Int -- Int32
-SET     @i = 1
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-UPDATE
-	[Patient] [t1]
-SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]) + ?)
-WHERE
-	[t1].[PersonID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @i Int -- Int32
-SET     @i = 2
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-UPDATE
-	[Patient] [t1]
-SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]) + ?)
-WHERE
-	[t1].[PersonID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-SELECT TOP 2
-	[p].[PersonID],
-	[p].[Diagnosis]
-FROM
-	[Patient] [p]
-WHERE
-	[p].[PersonID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Patient] [t1]
-WHERE
-	[t1].[PersonID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = ?
 
