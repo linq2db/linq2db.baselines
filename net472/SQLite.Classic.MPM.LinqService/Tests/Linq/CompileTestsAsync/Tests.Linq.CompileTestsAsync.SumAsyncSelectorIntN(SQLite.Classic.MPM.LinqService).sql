@@ -155,18 +155,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 5
-
-SELECT
-	Sum([c_1].[Id])
-FROM
-	[AsyncDataTable] [c_1]
-WHERE
-	[c_1].[Id] < @Id
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [AsyncDataTable]
 

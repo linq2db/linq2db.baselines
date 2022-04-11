@@ -245,32 +245,6 @@ CREATE TABLE [DestinationTable]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @param  -- Int32
-SET     @param = 100
-DECLARE @param_1  -- Int32
-SET     @param_1 = 100
-
-INSERT INTO [DestinationTable]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-SELECT
-	[s].[Id] + @param,
-	[s].[Value] + @param,
-	[s].[ValueStr] || Cast(@param_1 as VarChar(100))
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] > 3
-RETURNING
-	[DestinationTable].[Id],
-	[DestinationTable].[Value],
-	[DestinationTable].[ValueStr]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[s].[Id],

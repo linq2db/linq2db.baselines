@@ -10,45 +10,5 @@ CREATE TABLE [TestClass]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-SELECT
-	Max([x].[Value])
-FROM
-	[TestClass] [x]
-WHERE
-	[x].[Id] = 0
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
-	Max([x].[Value])
-FROM
-	[TestClass] [x]
-WHERE
-	[x].[Id] = 0
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
-	Max([x].[Value])
-FROM
-	[TestClass] [x]
-WHERE
-	[x].[Id] = 0
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
-	Max([x].[Value])
-FROM
-	[TestClass] [x]
-WHERE
-	[x].[Id] = 0
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TestClass]
 
