@@ -596,8 +596,6 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2017.MS END
 -- SKIP SqlServer.2019 END
 -- SKIP SqlServer.2019.MS END
--- SKIP SqlServer.SA END
--- SKIP SqlServer.SA.MS END
 -- SKIP SqlServer.Contained END
 -- SKIP SqlServer.Contained.MS END
 -- SKIP SqlServer.Azure END
@@ -846,8 +844,6 @@ BeforeExecute
 -- SKIP SqlServer.2017.MS END
 -- SKIP SqlServer.2019 END
 -- SKIP SqlServer.2019.MS END
--- SKIP SqlServer.SA END
--- SKIP SqlServer.SA.MS END
 -- SKIP SqlServer.Contained END
 -- SKIP SqlServer.Contained.MS END
 -- SKIP SqlServer.Azure END
