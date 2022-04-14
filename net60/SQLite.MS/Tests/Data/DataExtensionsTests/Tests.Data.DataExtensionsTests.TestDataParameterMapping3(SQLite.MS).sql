@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p NVarChar -- String
+DECLARE @p  -- Int64
 SET     @p = NULL
 
 SELECT @p
