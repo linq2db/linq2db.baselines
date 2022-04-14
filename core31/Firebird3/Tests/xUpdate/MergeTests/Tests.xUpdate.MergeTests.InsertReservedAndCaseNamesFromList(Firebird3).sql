@@ -236,13 +236,13 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "as_1", NULL AS "take", 3 AS "skip", NULL AS "Skip_1", NULL AS "insert_1", NULL AS SELECT_1 FROM rdb$database
-	UNION ALL
-	SELECT 4, 5, 7, NULL, 214, NULL FROM rdb$database
+	SELECT 4 AS "as_1", 5 AS "take", 7 AS "skip", NULL AS "Skip_1", 214 AS "insert_1", NULL AS SELECT_1 FROM rdb$database
 	UNION ALL
 	SELECT 5, 10, 4, NULL, NULL, NULL FROM rdb$database
 	UNION ALL
-	SELECT 6, NULL, NULL, NULL, 216, NULL FROM rdb$database) "Source"
+	SELECT 6, NULL, NULL, NULL, 216, NULL FROM rdb$database
+	UNION ALL
+	SELECT 3, NULL, 3, NULL, NULL, NULL FROM rdb$database) "Source"
 (
 	"as_1",
 	"take",
