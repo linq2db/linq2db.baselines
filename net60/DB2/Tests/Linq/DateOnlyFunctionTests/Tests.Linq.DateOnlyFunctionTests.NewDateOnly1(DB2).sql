@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(RTrim(Char(To_Number(To_Char("p"."DateTimeValue", 'YYYY')))) || '-10-1') as "c1"
+			Date(RTrim(Char(To_Number(To_Char("p"."DateTimeValue", 'YYYY')))) || '-10-01') as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
