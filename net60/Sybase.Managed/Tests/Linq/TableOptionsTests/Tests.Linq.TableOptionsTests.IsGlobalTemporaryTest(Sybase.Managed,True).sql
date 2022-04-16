@@ -19,6 +19,6 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'tempdb..##IsGlobalTemporaryTable') IS NOT NULL)
+IF (OBJECT_ID(N'##IsGlobalTemporaryTable') IS NOT NULL)
 	DROP TABLE ##IsGlobalTemporaryTable
 

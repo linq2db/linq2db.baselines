@@ -63,30 +63,12 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
 	[x].[Id],
 	[x].[Name]
 FROM
 	[Car] [x]
 WHERE
 	([x].[Name] <> 'Special' OR [x].[Name] IS NULL)
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -103,28 +85,10 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
 	[x].[Id],
 	[x].[Name]
 FROM
 	[Car] [x]
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -141,30 +105,12 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
 	[x].[Id],
 	[x].[Name]
 FROM
 	[Car] [x]
 WHERE
 	[x].[Name] = 'Special'
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[Name]
-FROM
-	[Car] [t1]
 
 BeforeExecute
 -- Access AccessOleDb

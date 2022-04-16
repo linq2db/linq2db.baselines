@@ -156,18 +156,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-
-SELECT
-	Max([c_1].[Id])
-FROM
-	[AsyncDataTable] [c_1]
-WHERE
-	[c_1].[Id] > @Id
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [AsyncDataTable]
 

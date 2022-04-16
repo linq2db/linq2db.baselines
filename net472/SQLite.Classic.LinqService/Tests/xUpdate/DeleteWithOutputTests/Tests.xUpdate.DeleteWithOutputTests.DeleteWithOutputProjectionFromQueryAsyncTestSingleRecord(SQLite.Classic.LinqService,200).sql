@@ -248,16 +248,5 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DELETE FROM
-	[TableWithData]
-WHERE
-	[TableWithData].[Id] = 3
-RETURNING
-	[TableWithData].[Id] + 1,
-	[TableWithData].[ValueStr] || Cast(1 as VarChar(11))
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TableWithData]
 

@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TEMPORARY TABLE "TableWithPrimaryKey"
+CREATE TEMPORARY TABLE "TableWithPrimaryKey2"
 (
 	"Key" Int NOT NULL,
 
-	CONSTRAINT "PK_TableWithPrimaryKey" PRIMARY KEY ("Key")
+	CONSTRAINT "PK_TableWithPrimaryKey2" PRIMARY KEY ("Key")
 )
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-INSERT INTO "TableWithPrimaryKey"
+INSERT INTO "TableWithPrimaryKey2"
 (
 	"Key"
 )
@@ -22,5 +22,5 @@ VALUES
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "TableWithPrimaryKey"
+DROP TABLE IF EXISTS "TableWithPrimaryKey2"
 

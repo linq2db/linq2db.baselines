@@ -20,6 +20,6 @@ DROP TABLE #TempTable
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'tempdb..#TempTable') IS NOT NULL)
+IF (OBJECT_ID(N'#TempTable') IS NOT NULL)
 	DROP TABLE #TempTable
 

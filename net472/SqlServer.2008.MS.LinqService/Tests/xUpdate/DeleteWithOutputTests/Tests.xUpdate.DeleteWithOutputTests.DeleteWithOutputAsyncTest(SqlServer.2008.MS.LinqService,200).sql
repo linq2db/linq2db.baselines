@@ -247,22 +247,3 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-DELETE [s]
-OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr]
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] > 3
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData]
-

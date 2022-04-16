@@ -45,14 +45,5 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[t1].[Id],
-	[t1].[Text]
-FROM
-	[Issue2816Table] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [Issue2816Table]
 

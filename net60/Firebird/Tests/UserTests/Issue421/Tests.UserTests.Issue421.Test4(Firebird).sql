@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "BlobClass10"
+CREATE TABLE "BlobClass19"
 (
 	"Id"        Int  NOT NULL,
 	"BlobValue" Blob,
 
-	CONSTRAINT "PK_BlobClass10" PRIMARY KEY ("Id")
+	CONSTRAINT "PK_BlobClass19" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- Firebird
 
-INSERT INTO "BlobClass10"
+INSERT INTO "BlobClass19"
 (
 	"Id",
 	"BlobValue"
@@ -30,7 +30,7 @@ SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM
-	"BlobClass10" "t1"
+	"BlobClass19" "t1"
 WHERE
 	"t1"."Id" = 1
 
@@ -41,7 +41,7 @@ SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM
-	"BlobClass10" "t1"
+	"BlobClass19" "t1"
 WHERE
 	"t1"."Id" = 1
 
@@ -49,7 +49,7 @@ BeforeExecute
 -- Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BlobClass10')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "BlobClass10"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BlobClass19')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "BlobClass19"';
 END
 

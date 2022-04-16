@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'tempdb..#TestTable') IS NOT NULL)
+IF (OBJECT_ID(N'#TestTable') IS NOT NULL)
 	DROP TABLE #TestTable
 
 BeforeExecute
@@ -41,6 +41,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'tempdb..#TestTable') IS NOT NULL)
+IF (OBJECT_ID(N'#TestTable') IS NOT NULL)
 	DROP TABLE #TestTable
 

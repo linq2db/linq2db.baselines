@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TEMPORARY TABLE `TableWithPrimaryKey`
+CREATE TEMPORARY TABLE `TableWithPrimaryKey2`
 (
 	`Key` INT NOT NULL,
 
-	CONSTRAINT `PK_TableWithPrimaryKey` PRIMARY KEY CLUSTERED (`Key`)
+	CONSTRAINT `PK_TableWithPrimaryKey2` PRIMARY KEY CLUSTERED (`Key`)
 )
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-INSERT INTO `TableWithPrimaryKey`
+INSERT INTO `TableWithPrimaryKey2`
 (
 	`Key`
 )
@@ -21,5 +21,5 @@ VALUES
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-DROP TABLE IF EXISTS `TableWithPrimaryKey`
+DROP TABLE IF EXISTS `TableWithPrimaryKey2`
 

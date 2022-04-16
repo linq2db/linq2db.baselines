@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-IF (OBJECT_ID(N'tempdb..#temp_table1') IS NULL)
+IF (OBJECT_ID(N'#temp_table1') IS NULL)
 	CREATE TABLE #temp_table1
 	(
 		[ID]    Int NOT NULL,
@@ -21,7 +21,7 @@ SELECT 1,2
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
-IF (OBJECT_ID(N'tempdb..#temp_table2') IS NULL)
+IF (OBJECT_ID(N'#temp_table2') IS NULL)
 	CREATE TABLE #temp_table2
 	(
 		[ID]    Int NOT NULL,
@@ -111,12 +111,12 @@ TRUNCATE TABLE #temp_table2
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'tempdb..#temp_table2') IS NOT NULL)
+IF (OBJECT_ID(N'#temp_table2') IS NOT NULL)
 	DROP TABLE #temp_table2
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'tempdb..#temp_table1') IS NOT NULL)
+IF (OBJECT_ID(N'#temp_table1') IS NOT NULL)
 	DROP TABLE #temp_table1
 

@@ -429,22 +429,6 @@ VALUES
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-UPDATE
-	[DestinationTable]
-SET
-	[DestinationTable].[Id] = [s].[Id],
-	[DestinationTable].[Value] = [s].[Value],
-	[DestinationTable].[ValueStr] = [s].[ValueStr]
-OUTPUT
-	[s].[ValueStr],
-	[INSERTED].[Value]
-FROM
-	[TableWithData] [s]
-		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [DestinationTable]
 
 BeforeExecute

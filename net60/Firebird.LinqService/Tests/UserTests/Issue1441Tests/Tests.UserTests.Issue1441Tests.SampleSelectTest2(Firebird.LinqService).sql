@@ -1,0 +1,49 @@
+﻿BeforeExecute
+-- Firebird
+
+CREATE TABLE "Authors"
+(
+	"Id"   Int                                    NOT NULL,
+	"Name" VarChar(100) CHARACTER SET UNICODE_FSS NOT NULL,
+
+	CONSTRAINT "PK_Authors" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- Firebird
+
+CREATE TABLE "Books"
+(
+	"Id"       Int                                    NOT NULL,
+	"AuthorId" Int                                    NOT NULL,
+	"Title"    VarChar(100) CHARACTER SET UNICODE_FSS NOT NULL,
+
+	CONSTRAINT "PK_Books" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	"author"."Id",
+	"author"."Name"
+FROM
+	"Authors" "author"
+		INNER JOIN "Books" "book" ON "book"."AuthorId" = "author"."Id"
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Books')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Books"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Authors')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Authors"';
+END
+

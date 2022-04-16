@@ -429,28 +429,6 @@ VALUES
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-UPDATE
-	[DestinationTable]
-SET
-	[DestinationTable].[Id] = [_].[Id],
-	[DestinationTable].[Value] = [_].[Value],
-	[DestinationTable].[ValueStr] = [_].[ValueStr]
-OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr],
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
-FROM
-	[TableWithData] [_]
-		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [_].[Id]
-WHERE
-	[_].[Id] = 3
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [DestinationTable]
 
 BeforeExecute

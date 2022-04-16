@@ -215,22 +215,5 @@ VALUES
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-UPDATE
-	[s]
-SET
-	[s].[Id] = [s].[Id],
-	[s].[Value] = [s].[Value] + 1,
-	[s].[ValueStr] = [s].[ValueStr] + N'Upd'
-OUTPUT
-	[DELETED].[Value],
-	[INSERTED].[Value]
-FROM
-	[TableWithData] [s]
-WHERE
-	[s].[Id] > 3
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [TableWithData]
 
