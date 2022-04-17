@@ -97,7 +97,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @id2 Int32
-SET     @id2 = 25
+SET     @id2 = 6
 DECLARE @take Int32
 SET     @take = 1
 
