@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 DECLARE @Now DateTimeOffset
-SET     @Now = '2022-04-16 15:43:13.0913730 +00:00'
+SET     @Now = '2022-04-17 05:59:36.9083977 +00:00'
 
 SELECT
 	DATEADD(Year, 1, @Now)
