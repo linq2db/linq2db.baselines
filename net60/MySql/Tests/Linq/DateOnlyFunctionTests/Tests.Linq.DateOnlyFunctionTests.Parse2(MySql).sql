@@ -42,11 +42,16 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	Cast(Concat('2010-01-', Lpad(`t`.`TransactionId`,2,'0')) as DATE)
+	`d`.`c1`
 FROM
-	`Transactions` `t`
+	(
+		SELECT
+			Cast(Cast(`t`.`TransactionDate` as CHAR(10)) as DATE) as `c1`
+		FROM
+			`Transactions` `t`
+	) `d`
 WHERE
-	Extract(day from Cast(Concat('2010-01-', Lpad(`t`.`TransactionId`,2,'0')) as DATE)) > 0
+	Extract(day from `d`.`c1`) > 0
 
 BeforeExecute
 -- MySql MySql.Official MySql
