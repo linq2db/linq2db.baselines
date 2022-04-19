@@ -50,16 +50,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"d"."c1"
+	'2010-01-' || Lpad("t"."TransactionId",2,'0')
 FROM
-	(
-		SELECT
-			RTrim(Char("t"."TransactionDate")) as "c1"
-		FROM
-			"Transactions" "t"
-	) "d"
+	"Transactions" "t"
 WHERE
-	To_Number(To_Char("d"."c1", 'DD')) > 0
+	To_Number(To_Char(('2010-01-' || Lpad("t"."TransactionId",2,'0')), 'DD')) > 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
