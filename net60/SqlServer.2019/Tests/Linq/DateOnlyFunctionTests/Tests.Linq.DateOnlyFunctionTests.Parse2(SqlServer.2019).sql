@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Transactions]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.2019
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	CREATE TABLE [Transactions]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.2019
 
 INSERT INTO [Transactions]
 (
@@ -40,17 +40,22 @@ VALUES
 (14,'2020-08-08')
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.2019
 
 SELECT
-	Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))
+	[d].[c1]
 FROM
-	[Transactions] [t]
+	(
+		SELECT
+			Convert(Date, Convert(NVarChar(10), [t].[TransactionDate])) as [c1]
+		FROM
+			[Transactions] [t]
+	) [d]
 WHERE
-	DatePart(day, Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))) > 0
+	DatePart(day, [d].[c1]) > 0
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [Transactions]
 
