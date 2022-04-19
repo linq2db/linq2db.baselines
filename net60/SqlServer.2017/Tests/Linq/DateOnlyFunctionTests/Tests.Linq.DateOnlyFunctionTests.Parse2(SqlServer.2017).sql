@@ -43,11 +43,16 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))
+	[d].[c1]
 FROM
-	[Transactions] [t]
+	(
+		SELECT
+			Convert(Date, Convert(NVarChar(10), [t].[TransactionDate])) as [c1]
+		FROM
+			[Transactions] [t]
+	) [d]
 WHERE
-	DatePart(day, Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))) > 0
+	DatePart(day, [d].[c1]) > 0
 
 BeforeExecute
 -- SqlServer.2017
