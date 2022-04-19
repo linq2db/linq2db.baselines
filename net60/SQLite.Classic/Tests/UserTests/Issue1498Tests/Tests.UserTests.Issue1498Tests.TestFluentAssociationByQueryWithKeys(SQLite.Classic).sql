@@ -97,21 +97,15 @@ SET     @take = 1
 
 SELECT
 	[key_data_result].[Id],
-	[key_data_result].[Title],
-	[key_data_result].[Text],
 	[detail].[Id]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id],
-			[t1].[Title],
-			[t1].[Text]
+			[t1].[Id]
 		FROM
 			(
 				SELECT
-					[x].[Id],
-					[x].[Title],
-					[x].[Text]
+					[x].[Id]
 				FROM
 					[Topic] [x]
 				WHERE
