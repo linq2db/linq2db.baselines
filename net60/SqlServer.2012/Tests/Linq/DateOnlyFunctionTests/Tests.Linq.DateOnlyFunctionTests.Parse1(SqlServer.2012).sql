@@ -44,11 +44,11 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	N'2010-01-' + format([t].[TransactionId], 'd2')
+	Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))
 FROM
 	[Transactions] [t]
 WHERE
-	DatePart(day, N'2010-01-' + format([t].[TransactionId], 'd2')) > 0
+	DatePart(day, Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))) > 0
 
 BeforeExecute
 -- SqlServer.2012
