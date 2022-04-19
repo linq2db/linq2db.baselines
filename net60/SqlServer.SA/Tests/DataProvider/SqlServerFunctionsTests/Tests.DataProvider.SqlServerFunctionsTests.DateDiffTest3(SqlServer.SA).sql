@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Now DateTimeOffset
-SET     @Now = '2022-04-19 03:30:18.3027205 +00:00'
+SET     @Now = '2022-04-19 04:39:53.2375090 +00:00'
 DECLARE @p_1 DateTimeOffset
-SET     @p_1 = '2023-04-19 03:30:18.3027274 +00:00'
+SET     @p_1 = '2023-04-19 04:39:53.2375197 +00:00'
 
 SELECT
 	DATEDIFF(Month, @Now, @p_1)
