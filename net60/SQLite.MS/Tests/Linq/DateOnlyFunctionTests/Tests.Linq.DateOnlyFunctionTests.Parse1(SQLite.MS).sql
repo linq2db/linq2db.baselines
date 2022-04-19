@@ -42,11 +42,11 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	'2010-01-' || printf('%02d', [t].[TransactionId])
+	Date('2010-01-' || printf('%02d', [t].[TransactionId]))
 FROM
 	[Transactions] [t]
 WHERE
-	Cast(StrFTime('%d', ('2010-01-' || printf('%02d', [t].[TransactionId]))) as int) > 0
+	Cast(StrFTime('%d', Date('2010-01-' || printf('%02d', [t].[TransactionId]))) as int) > 0
 
 BeforeExecute
 -- SQLite.MS SQLite

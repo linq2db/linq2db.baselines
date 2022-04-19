@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Transactions]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [Transactions]
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS [Transactions]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 INSERT INTO [Transactions]
 (
@@ -39,17 +39,22 @@ VALUES
 (14,'2020-08-08')
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 SELECT
-	Date('2010-01-' || printf('%02d', [t].[TransactionId]))
+	[d].[c1]
 FROM
-	[Transactions] [t]
+	(
+		SELECT
+			Date(Cast([t].[TransactionDate] as NVarChar(10))) as [c1]
+		FROM
+			[Transactions] [t]
+	) [d]
 WHERE
-	Cast(StrFTime('%d', Date('2010-01-' || printf('%02d', [t].[TransactionId]))) as int) > 0
+	Cast(StrFTime('%d', [d].[c1]) as int) > 0
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Transactions]
 

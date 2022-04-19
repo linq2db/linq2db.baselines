@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [Transactions]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 
 CREATE TABLE IF NOT EXISTS [Transactions]
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS [Transactions]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 1
 DECLARE @TransactionDate  -- Date
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 2
 DECLARE @TransactionDate  -- Date
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 3
 DECLARE @TransactionDate  -- Date
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 4
 DECLARE @TransactionDate  -- Date
@@ -87,7 +87,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 5
 DECLARE @TransactionDate  -- Date
@@ -105,7 +105,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 6
 DECLARE @TransactionDate  -- Date
@@ -123,7 +123,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 7
 DECLARE @TransactionDate  -- Date
@@ -141,7 +141,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 8
 DECLARE @TransactionDate  -- Date
@@ -159,7 +159,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 9
 DECLARE @TransactionDate  -- Date
@@ -177,7 +177,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 10
 DECLARE @TransactionDate  -- Date
@@ -195,7 +195,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 11
 DECLARE @TransactionDate  -- Date
@@ -213,7 +213,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 12
 DECLARE @TransactionDate  -- Date
@@ -231,7 +231,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 13
 DECLARE @TransactionDate  -- Date
@@ -249,7 +249,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 DECLARE @TransactionId  -- Int32
 SET     @TransactionId = 14
 DECLARE @TransactionDate  -- Date
@@ -267,17 +267,22 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 
 SELECT
-	Date('2010-01-' || printf('%02d', [t].[TransactionId]))
+	[d].[c1]
 FROM
-	[Transactions] [t]
+	(
+		SELECT
+			Date(Cast([t].[TransactionDate] as NVarChar(10))) as [c1]
+		FROM
+			[Transactions] [t]
+	) [d]
 WHERE
-	Cast(StrFTime('%d', Date('2010-01-' || printf('%02d', [t].[TransactionId]))) as int) > 0
+	Cast(StrFTime('%d', [d].[c1]) as int) > 0
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [Transactions]
 
