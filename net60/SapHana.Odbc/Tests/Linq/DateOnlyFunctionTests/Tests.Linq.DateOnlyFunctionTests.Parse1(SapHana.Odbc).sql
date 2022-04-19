@@ -270,11 +270,11 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	'2010-01-' || Lpad("t"."TransactionId",2,'0')
+	Cast(('2010-01-' || Lpad("t"."TransactionId",2,'0')) as Date)
 FROM
 	"Transactions" "t"
 WHERE
-	DayOfMonth(('2010-01-' || Lpad("t"."TransactionId",2,'0'))) > 0
+	DayOfMonth(Cast(('2010-01-' || Lpad("t"."TransactionId",2,'0')) as Date)) > 0
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
