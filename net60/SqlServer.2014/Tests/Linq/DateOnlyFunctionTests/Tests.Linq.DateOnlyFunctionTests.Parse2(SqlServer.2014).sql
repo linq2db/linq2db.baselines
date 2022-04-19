@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
 	DROP TABLE [Transactions]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	CREATE TABLE [Transactions]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014
 
 INSERT INTO [Transactions]
 (
@@ -41,17 +41,22 @@ VALUES
 (14,'2020-08-08')
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014
 
 SELECT
-	Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))
+	[d].[c1]
 FROM
-	[Transactions] [t]
+	(
+		SELECT
+			Convert(Date, Convert(NVarChar(10), [t].[TransactionDate])) as [c1]
+		FROM
+			[Transactions] [t]
+	) [d]
 WHERE
-	DatePart(day, Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))) > 0
+	DatePart(day, [d].[c1]) > 0
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
 	DROP TABLE [Transactions]
