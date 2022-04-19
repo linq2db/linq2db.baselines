@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
 	DROP TABLE [Transactions]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	CREATE TABLE [Transactions]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Transactions]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 1
 DECLARE @TransactionDate Date
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 2
 DECLARE @TransactionDate Date
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 3
 DECLARE @TransactionDate Date
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 4
 DECLARE @TransactionDate Date
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 5
 DECLARE @TransactionDate Date
@@ -107,7 +107,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 6
 DECLARE @TransactionDate Date
@@ -125,7 +125,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 7
 DECLARE @TransactionDate Date
@@ -143,7 +143,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 8
 DECLARE @TransactionDate Date
@@ -161,7 +161,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 9
 DECLARE @TransactionDate Date
@@ -179,7 +179,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 10
 DECLARE @TransactionDate Date
@@ -197,7 +197,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 11
 DECLARE @TransactionDate Date
@@ -215,7 +215,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 12
 DECLARE @TransactionDate Date
@@ -233,7 +233,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 13
 DECLARE @TransactionDate Date
@@ -251,7 +251,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @TransactionId Int -- Int32
 SET     @TransactionId = 14
 DECLARE @TransactionDate Date
@@ -269,17 +269,22 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))
+	[d].[c1]
 FROM
-	[Transactions] [t]
+	(
+		SELECT
+			[t].[TransactionDate] as [c1]
+		FROM
+			[Transactions] [t]
+	) [d]
 WHERE
-	DatePart(day, Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))) > 0
+	DatePart(day, [d].[c1]) > 0
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[Transactions]', N'U') IS NOT NULL)
 	DROP TABLE [Transactions]
