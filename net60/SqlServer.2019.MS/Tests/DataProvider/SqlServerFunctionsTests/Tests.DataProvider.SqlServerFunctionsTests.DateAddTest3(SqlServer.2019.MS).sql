@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Now DateTimeOffset
-SET     @Now = '2022-04-19 03:30:18.1877691 +00:00'
+SET     @Now = '2022-04-19 04:32:41.3398132 +00:00'
 
 SELECT
 	DATEADD(Year, 1, @Now)
