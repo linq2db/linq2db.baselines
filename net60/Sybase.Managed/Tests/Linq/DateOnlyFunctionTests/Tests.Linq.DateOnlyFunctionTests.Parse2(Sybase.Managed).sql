@@ -45,11 +45,16 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Date, '2010-01-' + right(replicate('0',2) + cast([t].[TransactionId] as varchar(255)),2))
+	[d].[c1]
 FROM
-	[Transactions] [t]
+	(
+		SELECT
+			Convert(Date, convert(NVarChar(4000), [t].[TransactionDate], 23)) as [c1]
+		FROM
+			[Transactions] [t]
+	) [d]
 WHERE
-	DatePart(day, Convert(Date, '2010-01-' + right(replicate('0',2) + cast([t].[TransactionId] as varchar(255)),2))) > 0
+	DatePart(day, [d].[c1]) > 0
 
 BeforeExecute
 -- Sybase.Managed Sybase
