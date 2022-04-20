@@ -270,11 +270,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	'2010-01-' || Lpad(t.TransactionId,2,'0')
+	Cast(('2010-01-' || Lpad(t.TransactionId,2,'0')) as DATETIME YEAR TO DAY)
 FROM
 	Transactions t
 WHERE
-	Day(('2010-01-' || Lpad(t.TransactionId,2,'0'))) > 0
+	Day(Cast(('2010-01-' || Lpad(t.TransactionId,2,'0')) as DATETIME YEAR TO DAY)) > 0
 
 BeforeExecute
 -- Informix.DB2 Informix
