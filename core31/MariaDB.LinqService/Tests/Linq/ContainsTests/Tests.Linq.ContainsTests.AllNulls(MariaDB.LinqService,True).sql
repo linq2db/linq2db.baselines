@@ -1,0 +1,75 @@
+﻿BeforeExecute
+-- MariaDB MySql.Official MySql
+
+DROP TABLE IF EXISTS `Src`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Src`
+(
+	`Id`  INT NOT NULL,
+	`Int` INT     NULL
+)
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Int_1 Int32
+SET     @Int_1 = NULL
+
+INSERT INTO `Src`
+(
+	`Id`,
+	`Int`
+)
+VALUES
+(
+	@Id,
+	@Int_1
+)
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @Int_1 Int32
+SET     @Int_1 = 2
+
+INSERT INTO `Src`
+(
+	`Id`,
+	`Int`
+)
+VALUES
+(
+	@Id,
+	@Int_1
+)
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`Src` `s`
+WHERE
+	`s`.`Int` IS NULL
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`Src` `s`
+WHERE
+	`s`.`Int` IS NOT NULL
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+DROP TABLE IF EXISTS `Src`
+
