@@ -1,0 +1,86 @@
+﻿BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Src')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Src"';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Src')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Src"
+			(
+				"Id"  Int NOT NULL,
+				"Int" Int
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Int_1 Integer -- Int32
+SET     @Int_1 = NULL
+
+INSERT INTO "Src"
+(
+	"Id",
+	"Int"
+)
+VALUES
+(
+	@Id,
+	@Int_1
+)
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Int_1 Integer -- Int32
+SET     @Int_1 = 2
+
+INSERT INTO "Src"
+(
+	"Id",
+	"Int"
+)
+VALUES
+(
+	@Id,
+	@Int_1
+)
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT
+	Count(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."Int" IS NULL
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT
+	Count(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."Int" IS NOT NULL
+
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Src')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Src"';
+END
+
