@@ -369,7 +369,7 @@ SELECT "dateDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p  -- Date
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" IS NULL AND ? IS NULL
@@ -395,7 +395,7 @@ SELECT "dateDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p  -- Date
 SET     @p = '2012-12-12'
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" = ?
