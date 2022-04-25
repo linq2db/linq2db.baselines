@@ -36,9 +36,9 @@ SELECT CAST('2200-01-01' AS date),CAST('2020-02-29' AS date),2 FROM rdb$database
 BeforeExecute
 -- Firebird
 DECLARE @Column_1 Date
-SET     @Column_1 = CAST('2020-02-29' AS timestamp)
+SET     @Column_1 = CAST('2020-02-29' AS date)
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = CAST('2200-01-01' AS timestamp)
+SET     @ColumnNullable = CAST('2200-01-01' AS date)
 
 SELECT
 	"r"."ColumnNullable",
@@ -72,7 +72,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date
-SET     @Column_1 = CAST('1900-01-01' AS timestamp)
+SET     @Column_1 = CAST('1900-01-01' AS date)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -92,9 +92,9 @@ VALUES
 BeforeExecute
 -- Firebird
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = CAST('2200-01-01' AS timestamp)
+SET     @ColumnNullable = CAST('2200-01-01' AS date)
 DECLARE @Column_1 Date
-SET     @Column_1 = CAST('2020-02-29' AS timestamp)
+SET     @Column_1 = CAST('2020-02-29' AS date)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
