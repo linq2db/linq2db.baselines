@@ -17,6 +17,12 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Int_1 Int -- Int32
+SET     @Int_1 = NULL
+DECLARE @Enum NVarChar(5) -- String
+SET     @Enum = NULL
 
 INSERT INTO [Src]
 (
@@ -25,8 +31,33 @@ INSERT INTO [Src]
 	[Enum]
 )
 VALUES
-(1,NULL,NULL),
-(2,2,N'TWO')
+(
+	@Id,
+	@Int_1,
+	@Enum
+)
+
+BeforeExecute
+-- SqlServer.2014
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Int_1 Int -- Int32
+SET     @Int_1 = 2
+DECLARE @Enum NVarChar(5) -- String
+SET     @Enum = N'TWO'
+
+INSERT INTO [Src]
+(
+	[Id],
+	[Int],
+	[Enum]
+)
+VALUES
+(
+	@Id,
+	@Int_1,
+	@Enum
+)
 
 BeforeExecute
 -- SqlServer.2014
@@ -38,7 +69,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[Enum] IN (N'THREE', N'FOUR')
 
 BeforeExecute
 -- SqlServer.2014
@@ -50,7 +81,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1) OR [s].[Int] IS NULL
+	[s].[Enum] IN (N'THREE', NULL)
 
 BeforeExecute
 -- SqlServer.2014
@@ -62,7 +93,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, 2)
+	[s].[Enum] IN (N'THREE', N'TWO')
 
 BeforeExecute
 -- SqlServer.2014
@@ -74,7 +105,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (2) AND [s].[Int] IS NOT NULL
+	[s].[Enum] NOT IN (NULL, N'TWO')
 
 BeforeExecute
 -- SqlServer.2014
@@ -86,7 +117,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	([s].[Int] NOT IN (-1, 2) OR [s].[Int] IS NULL)
+	[s].[Enum] NOT IN (N'THREE', N'TWO')
 
 BeforeExecute
 -- SqlServer.2014

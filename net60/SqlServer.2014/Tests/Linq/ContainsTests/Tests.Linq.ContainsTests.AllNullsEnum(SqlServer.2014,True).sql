@@ -36,7 +36,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NULL
+	[s].[Enum] IS NULL
 
 BeforeExecute
 -- SqlServer.2014
@@ -46,7 +46,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT NULL
+	[s].[Enum] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2014
