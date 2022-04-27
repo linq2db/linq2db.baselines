@@ -65,7 +65,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	1 = 0
+	s."Enum" IS NULL
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -75,17 +75,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	1 = 1
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	Count(*)
-FROM
-	"Src" s
-WHERE
-	1 = 1
+	s."Enum" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

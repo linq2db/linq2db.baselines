@@ -59,33 +59,68 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
-	Count(*)
+	s."Id"
 FROM
 	"Src" s
 WHERE
-	1 = 0
+	s."Enum" IN ('THREE', 'FOUR')
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
-	Count(*)
+	s."Id"
 FROM
 	"Src" s
 WHERE
-	1 = 1
+	s."Enum" IN ('THREE') OR s."Enum" IS NULL
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
-	Count(*)
+	s."Id"
 FROM
 	"Src" s
 WHERE
-	1 = 1
+	s."Enum" IN ('THREE', 'TWO')
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	s."Id"
+FROM
+	"Src" s
+WHERE
+	s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL
+LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	s."Id"
+FROM
+	"Src" s
+WHERE
+	(s."Enum" NOT IN ('THREE', 'TWO') OR s."Enum" IS NULL)
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
