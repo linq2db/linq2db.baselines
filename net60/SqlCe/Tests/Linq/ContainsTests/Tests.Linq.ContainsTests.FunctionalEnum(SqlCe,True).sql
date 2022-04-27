@@ -15,12 +15,6 @@ CREATE TABLE [Src]
 
 BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = NULL
-DECLARE @Enum NVarChar -- String
-SET     @Enum = NULL
 
 INSERT INTO [Src]
 (
@@ -28,34 +22,8 @@ INSERT INTO [Src]
 	[Int],
 	[Enum]
 )
-VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
-
-BeforeExecute
--- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 2
-DECLARE @Enum NVarChar(3) -- String
-SET     @Enum = 'TWO'
-
-INSERT INTO [Src]
-(
-	[Id],
-	[Int],
-	[Enum]
-)
-VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
+SELECT 1,NULL,NULL UNION ALL
+SELECT 2,2,'TWO'
 
 BeforeExecute
 -- SqlCe
@@ -67,7 +35,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[Enum] IN ('THREE', 'FOUR')
 
 BeforeExecute
 -- SqlCe
@@ -79,7 +47,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1) OR [s].[Int] IS NULL
+	[s].[Enum] IN ('THREE') OR [s].[Enum] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -91,7 +59,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, 2)
+	[s].[Enum] IN ('THREE', 'TWO')
 
 BeforeExecute
 -- SqlCe
@@ -103,7 +71,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (2) AND [s].[Int] IS NOT NULL
+	[s].[Enum] NOT IN ('TWO') AND [s].[Enum] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -115,7 +83,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	([s].[Int] NOT IN (-1, 2) OR [s].[Int] IS NULL)
+	([s].[Enum] NOT IN ('THREE', 'TWO') OR [s].[Enum] IS NULL)
 
 BeforeExecute
 -- SqlCe
