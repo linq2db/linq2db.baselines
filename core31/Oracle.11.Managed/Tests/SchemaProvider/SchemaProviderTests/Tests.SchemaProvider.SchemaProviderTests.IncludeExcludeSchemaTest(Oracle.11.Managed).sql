@@ -115,7 +115,7 @@ BeforeExecute
 							ON
 								PKCON.OWNER           = FKCON.R_OWNER AND
 								PKCON.CONSTRAINT_NAME = FKCON.R_CONSTRAINT_NAME
-						WHERE 
+						WHERE
 							FKCON.CONSTRAINT_TYPE = 'R'          AND
 							FKCOLS.POSITION       = PKCOLS.POSITION AND
 							FKCON.OWNER IN ('SYSTEM') AND
@@ -3077,7 +3077,7 @@ BeforeExecute
 							ON
 								PKCON.OWNER           = FKCON.R_OWNER AND
 								PKCON.CONSTRAINT_NAME = FKCON.R_CONSTRAINT_NAME
-						WHERE 
+						WHERE
 							FKCON.CONSTRAINT_TYPE = 'R'          AND
 							FKCOLS.POSITION       = PKCOLS.POSITION AND
 							FKCON.OWNER IN ('IncludeExcludeSchemaTest') AND
