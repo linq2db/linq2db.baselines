@@ -59,23 +59,68 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
-	Count(*)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NULL
+	[s].[Enum] IN ('THREE', 'FOUR')
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
-	Count(*)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT NULL
+	[s].[Enum] IN ('THREE') OR [s].[Enum] IS NULL
+LIMIT @take
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] IN ('THREE', 'TWO')
+LIMIT @take
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN ('TWO') AND [s].[Enum] IS NOT NULL
+LIMIT @take
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	([s].[Enum] NOT IN ('THREE', 'TWO') OR [s].[Enum] IS NULL)
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

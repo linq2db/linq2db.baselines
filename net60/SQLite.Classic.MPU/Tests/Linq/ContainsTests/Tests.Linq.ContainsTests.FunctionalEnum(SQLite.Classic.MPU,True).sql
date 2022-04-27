@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [Src]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TABLE IF NOT EXISTS [Src]
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS [Src]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [Src]
 (
@@ -27,7 +27,7 @@ VALUES
 (2,2,'TWO')
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -36,11 +36,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[Enum] IN ('THREE', 'FOUR')
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -49,11 +49,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, NULL)
+	[s].[Enum] IN ('THREE') OR [s].[Enum] IS NULL
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -62,11 +62,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, 2)
+	[s].[Enum] IN ('THREE', 'TWO')
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -75,11 +75,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, 2)
+	[s].[Enum] NOT IN ('TWO') AND [s].[Enum] IS NOT NULL
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -88,11 +88,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (-1, 2)
+	([s].[Enum] NOT IN ('THREE', 'TWO') OR [s].[Enum] IS NULL)
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [Src]
 
