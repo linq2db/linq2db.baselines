@@ -35,7 +35,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (NULL, NULL)
+	[s].[Enum] IN (NULL, NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -45,7 +45,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, NULL)
+	[s].[Enum] NOT IN (NULL, NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

@@ -16,6 +16,12 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Int_1 Int -- Int32
+SET     @Int_1 = NULL
+DECLARE @Enum NVarChar(5) -- String
+SET     @Enum = NULL
 
 INSERT INTO [Src]
 (
@@ -24,8 +30,33 @@ INSERT INTO [Src]
 	[Enum]
 )
 VALUES
-(1,NULL,NULL),
-(2,2,N'TWO')
+(
+	@Id,
+	@Int_1,
+	@Enum
+)
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Int_1 Int -- Int32
+SET     @Int_1 = 2
+DECLARE @Enum NVarChar(5) -- String
+SET     @Enum = N'TWO'
+
+INSERT INTO [Src]
+(
+	[Id],
+	[Int],
+	[Enum]
+)
+VALUES
+(
+	@Id,
+	@Int_1,
+	@Enum
+)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -35,7 +66,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (NULL, NULL)
+	[s].[Enum] IS NULL
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -45,7 +76,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, NULL)
+	[s].[Enum] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
