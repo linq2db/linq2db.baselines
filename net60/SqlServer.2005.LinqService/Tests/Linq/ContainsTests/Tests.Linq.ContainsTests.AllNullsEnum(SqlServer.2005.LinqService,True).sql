@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NOT NULL)
 	DROP TABLE [Src]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int_1 Int -- Int32
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Int_1 Int -- Int32
@@ -60,27 +60,27 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NULL
+	[s].[Enum] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT NULL
+	[s].[Enum] IS NOT NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NOT NULL)
 	DROP TABLE [Src]
