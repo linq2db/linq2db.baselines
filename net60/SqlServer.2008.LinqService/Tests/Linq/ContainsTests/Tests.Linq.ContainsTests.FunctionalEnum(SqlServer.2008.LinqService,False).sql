@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NOT NULL)
 	DROP TABLE [Src]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int_1 Int -- Int32
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Int_1 Int -- Int32
@@ -60,27 +60,67 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (NULL, NULL)
+	[s].[Enum] IN (N'THREE', N'FOUR')
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, NULL)
+	[s].[Enum] IN (N'THREE', NULL)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] IN (N'THREE', N'TWO')
+
+BeforeExecute
+-- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN (NULL, N'TWO')
+
+BeforeExecute
+-- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN (N'THREE', N'TWO')
+
+BeforeExecute
+-- SqlServer.2008
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NOT NULL)
 	DROP TABLE [Src]

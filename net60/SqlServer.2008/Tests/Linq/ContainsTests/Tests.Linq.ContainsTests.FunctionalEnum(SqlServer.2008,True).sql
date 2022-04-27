@@ -38,7 +38,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[Enum] IN (N'THREE', N'FOUR')
 
 BeforeExecute
 -- SqlServer.2008
@@ -50,7 +50,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1) OR [s].[Int] IS NULL
+	[s].[Enum] IN (N'THREE') OR [s].[Enum] IS NULL
 
 BeforeExecute
 -- SqlServer.2008
@@ -62,7 +62,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, 2)
+	[s].[Enum] IN (N'THREE', N'TWO')
 
 BeforeExecute
 -- SqlServer.2008
@@ -74,7 +74,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (2) AND [s].[Int] IS NOT NULL
+	[s].[Enum] NOT IN (N'TWO') AND [s].[Enum] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2008
@@ -86,7 +86,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	([s].[Int] NOT IN (-1, 2) OR [s].[Int] IS NULL)
+	([s].[Enum] NOT IN (N'THREE', N'TWO') OR [s].[Enum] IS NULL)
 
 BeforeExecute
 -- SqlServer.2008
