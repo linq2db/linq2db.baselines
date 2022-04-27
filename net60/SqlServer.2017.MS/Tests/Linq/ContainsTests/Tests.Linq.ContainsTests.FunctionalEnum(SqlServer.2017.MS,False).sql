@@ -29,33 +29,63 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	1 = 0
+	[s].[Enum] IN (N'THREE', N'FOUR')
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
+	[s].[Enum] IN (N'THREE', NULL)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
+	[s].[Enum] IN (N'THREE', N'TWO')
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN (NULL, N'TWO')
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN (N'THREE', N'TWO')
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

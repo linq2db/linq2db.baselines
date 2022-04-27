@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017
 
 DROP TABLE IF EXISTS [Src]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017
 
 INSERT INTO [Src]
 (
@@ -28,37 +28,27 @@ VALUES
 (2,2,N'TWO')
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	1 = 0
+	[s].[Enum] IN (NULL, NULL)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
+	[s].[Enum] NOT IN (NULL, NULL)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-SELECT
-	Count(*)
-FROM
-	[Src] [s]
-WHERE
-	1 = 1
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017
 
 DROP TABLE IF EXISTS [Src]
 
