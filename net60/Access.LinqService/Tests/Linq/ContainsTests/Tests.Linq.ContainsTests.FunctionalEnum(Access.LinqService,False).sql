@@ -60,32 +60,52 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	Count(*)
+SELECT TOP 1
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	1 = 0
+	[s].[Enum] IN ('THREE', 'FOUR')
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	Count(*)
+SELECT TOP 1
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
+	[s].[Enum] IN ('THREE', NULL)
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	Count(*)
+SELECT TOP 1
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
+	[s].[Enum] IN ('THREE', 'TWO')
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT TOP 1
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN (NULL, 'TWO')
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT TOP 1
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN ('THREE', 'TWO')
 
 BeforeExecute
 -- Access AccessOleDb
