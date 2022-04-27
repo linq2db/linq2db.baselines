@@ -8,8 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "Src"
 (
-	"Id"  Int NOT NULL,
-	"Int" Int     NULL
+	"Id"   Int  NOT NULL,
+	"Int"  Int      NULL,
+	"Enum" text     NULL
 )
 
 BeforeExecute
@@ -18,16 +19,20 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = NULL
+DECLARE @Enum Text -- String
+SET     @Enum = NULL
 
 INSERT INTO "Src"
 (
 	"Id",
-	"Int"
+	"Int",
+	"Enum"
 )
 VALUES
 (
 	:Id,
-	:Int_1
+	:Int_1,
+	:Enum
 )
 
 BeforeExecute
@@ -36,16 +41,20 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = 2
+DECLARE @Enum Text(3) -- String
+SET     @Enum = 'TWO'
 
 INSERT INTO "Src"
 (
 	"Id",
-	"Int"
+	"Int",
+	"Enum"
 )
 VALUES
 (
 	:Id,
-	:Int_1
+	:Int_1,
+	:Enum
 )
 
 BeforeExecute

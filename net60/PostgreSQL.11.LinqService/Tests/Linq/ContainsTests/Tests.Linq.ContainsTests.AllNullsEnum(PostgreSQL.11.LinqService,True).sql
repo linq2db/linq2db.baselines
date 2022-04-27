@@ -65,7 +65,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (NULL, NULL)
+	s."Enum" IS NULL
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -75,7 +75,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" NOT IN (NULL, NULL)
+	s."Enum" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
