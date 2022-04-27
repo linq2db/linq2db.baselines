@@ -31,47 +31,11 @@ END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Int_1 Int32
-SET     @Int_1 = NULL
-DECLARE @Enum Varchar2 -- String
-SET     @Enum = NULL
 
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum"
-)
-VALUES
-(
-	:Id,
-	:Int_1,
-	:Enum
-)
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @Int_1 Int32
-SET     @Int_1 = 2
-DECLARE @Enum Varchar2(3) -- String
-SET     @Enum = 'TWO'
-
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum"
-)
-VALUES
-(
-	:Id,
-	:Int_1,
-	:Enum
-)
+INSERT ALL
+	INTO "Src" ("Id", "Int", "Enum") VALUES (1,NULL,NULL)
+	INTO "Src" ("Id", "Int", "Enum") VALUES (2,2,'TWO')
+SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -83,7 +47,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, -2) AND ROWNUM <= :take
+	s."Enum" IN ('THREE', 'FOUR') AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -95,7 +59,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1) OR s."Int" IS NULL AND ROWNUM <= :take
+	s."Enum" IN ('THREE') OR s."Enum" IS NULL AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -107,7 +71,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, 2) AND ROWNUM <= :take
+	s."Enum" IN ('THREE', 'TWO') AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -119,7 +83,8 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" NOT IN (2) AND s."Int" IS NOT NULL AND ROWNUM <= :take
+	s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL AND
+	ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -131,7 +96,8 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	(s."Int" NOT IN (-1, 2) OR s."Int" IS NULL) AND ROWNUM <= :take
+	(s."Enum" NOT IN ('THREE', 'TWO') OR s."Enum" IS NULL) AND
+	ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

@@ -45,7 +45,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IS NULL
+	s."Enum" IS NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -55,7 +55,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IS NOT NULL
+	s."Enum" IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

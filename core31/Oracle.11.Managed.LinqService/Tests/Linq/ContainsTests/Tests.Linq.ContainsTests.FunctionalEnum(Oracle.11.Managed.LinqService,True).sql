@@ -83,7 +83,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, -2) AND ROWNUM <= :take
+	s."Enum" IN ('THREE', 'FOUR') AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -95,7 +95,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1) OR s."Int" IS NULL AND ROWNUM <= :take
+	s."Enum" IN ('THREE') OR s."Enum" IS NULL AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -107,7 +107,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, 2) AND ROWNUM <= :take
+	s."Enum" IN ('THREE', 'TWO') AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -119,7 +119,8 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" NOT IN (2) AND s."Int" IS NOT NULL AND ROWNUM <= :take
+	s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL AND
+	ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
@@ -131,7 +132,8 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	(s."Int" NOT IN (-1, 2) OR s."Int" IS NULL) AND ROWNUM <= :take
+	(s."Enum" NOT IN ('THREE', 'TWO') OR s."Enum" IS NULL) AND
+	ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

@@ -17,8 +17,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Src"
 		(
-			"Id"  Int NOT NULL,
-			"Int" Int     NULL
+			"Id"   Int        NOT NULL,
+			"Int"  Int            NULL,
+			"Enum" VarChar(5)     NULL
 		)
 	';
 EXCEPTION
@@ -34,16 +35,20 @@ DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Int_1 Int32
 SET     @Int_1 = NULL
+DECLARE @Enum Varchar2 -- String
+SET     @Enum = NULL
 
 INSERT INTO "Src"
 (
 	"Id",
-	"Int"
+	"Int",
+	"Enum"
 )
 VALUES
 (
 	:Id,
-	:Int_1
+	:Int_1,
+	:Enum
 )
 
 BeforeExecute
@@ -52,16 +57,20 @@ DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Int_1 Int32
 SET     @Int_1 = 2
+DECLARE @Enum Varchar2(3) -- String
+SET     @Enum = 'TWO'
 
 INSERT INTO "Src"
 (
 	"Id",
-	"Int"
+	"Int",
+	"Enum"
 )
 VALUES
 (
 	:Id,
-	:Int_1
+	:Int_1,
+	:Enum
 )
 
 BeforeExecute
