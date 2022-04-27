@@ -60,23 +60,63 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (NULL, NULL)
+	[s].[Enum] IN (N'THREE', N'FOUR')
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, NULL)
+	[s].[Enum] IN (N'THREE') OR [s].[Enum] IS NULL
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] IN (N'THREE', N'TWO')
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN (N'TWO') AND [s].[Enum] IS NOT NULL
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	([s].[Enum] NOT IN (N'THREE', N'TWO') OR [s].[Enum] IS NULL)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
