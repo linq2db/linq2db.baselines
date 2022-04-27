@@ -24,7 +24,7 @@ SET     @CurrentUser = 'SYSTEM'
 					FROM
 					(
 						SELECT NAME, ISVIEW, CASE c.MatView WHEN 1 THEN mvc.COMMENTS ELSE tc.COMMENTS END AS COMMENTS
-						FROM 
+						FROM
 						(
 							SELECT t.TABLE_NAME NAME, 0 as IsView, 0 as MatView FROM USER_TABLES t
 								LEFT JOIN USER_MVIEWS tm ON t.TABLE_NAME = tm.CONTAINER_NAME
@@ -68,7 +68,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 
-					SELECT 
+					SELECT
 						(SELECT USER FROM DUAL) || '.' || c.TABLE_NAME as TableID,
 						c.COLUMN_NAME                                  as Name,
 						c.DATA_TYPE                                    as DataType,
@@ -103,7 +103,7 @@ BeforeExecute
 									FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME
 								JOIN USER_CONS_COLUMNS PKCOLS ON
 									PKCOLS.CONSTRAINT_NAME = FKCON.R_CONSTRAINT_NAME
-						WHERE 
+						WHERE
 							FKCON.CONSTRAINT_TYPE = 'R' AND
 							FKCOLS.POSITION       = PKCOLS.POSITION
 						ORDER BY Ordinal, Name
@@ -315,7 +315,7 @@ SET     @CurrentUser = 'SYSTEM'
 					FROM
 					(
 						SELECT NAME, ISVIEW, CASE c.MatView WHEN 1 THEN mvc.COMMENTS ELSE tc.COMMENTS END AS COMMENTS
-						FROM 
+						FROM
 						(
 							SELECT t.TABLE_NAME NAME, 0 as IsView, 0 as MatView FROM USER_TABLES t
 								LEFT JOIN USER_MVIEWS tm ON t.TABLE_NAME = tm.CONTAINER_NAME
@@ -359,7 +359,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 
-					SELECT 
+					SELECT
 						(SELECT USER FROM DUAL) || '.' || c.TABLE_NAME as TableID,
 						c.COLUMN_NAME                                  as Name,
 						c.DATA_TYPE                                    as DataType,
@@ -394,7 +394,7 @@ BeforeExecute
 									FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME
 								JOIN USER_CONS_COLUMNS PKCOLS ON
 									PKCOLS.CONSTRAINT_NAME = FKCON.R_CONSTRAINT_NAME
-						WHERE 
+						WHERE
 							FKCON.CONSTRAINT_TYPE = 'R' AND
 							FKCOLS.POSITION       = PKCOLS.POSITION
 						ORDER BY Ordinal, Name
@@ -430,7 +430,7 @@ SET     @CurrentUser = 'SYSTEM'
 					FROM
 					(
 						SELECT NAME, ISVIEW, CASE c.MatView WHEN 1 THEN mvc.COMMENTS ELSE tc.COMMENTS END AS COMMENTS
-						FROM 
+						FROM
 						(
 							SELECT t.TABLE_NAME NAME, 0 as IsView, 0 as MatView FROM USER_TABLES t
 								LEFT JOIN USER_MVIEWS tm ON t.TABLE_NAME = tm.CONTAINER_NAME
@@ -474,7 +474,7 @@ BeforeExecute
 -- Oracle.Managed Oracle12
 
 
-					SELECT 
+					SELECT
 						(SELECT USER FROM DUAL) || '.' || c.TABLE_NAME as TableID,
 						c.COLUMN_NAME                                  as Name,
 						c.DATA_TYPE                                    as DataType,
@@ -509,7 +509,7 @@ BeforeExecute
 									FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME
 								JOIN USER_CONS_COLUMNS PKCOLS ON
 									PKCOLS.CONSTRAINT_NAME = FKCON.R_CONSTRAINT_NAME
-						WHERE 
+						WHERE
 							FKCON.CONSTRAINT_TYPE = 'R' AND
 							FKCOLS.POSITION       = PKCOLS.POSITION
 						ORDER BY Ordinal, Name
