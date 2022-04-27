@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [Src]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int_1 Int -- Int32
@@ -37,7 +37,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Int_1 Int -- Int32
@@ -59,27 +59,27 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NULL
+	[s].[Enum] IS NULL
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT NULL
+	[s].[Enum] IS NOT NULL
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [Src]
 

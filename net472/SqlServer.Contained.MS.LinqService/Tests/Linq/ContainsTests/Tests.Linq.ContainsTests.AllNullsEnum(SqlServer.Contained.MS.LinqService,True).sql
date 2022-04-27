@@ -66,7 +66,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NULL
+	[s].[Enum] IS NULL
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -76,7 +76,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT NULL
+	[s].[Enum] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
