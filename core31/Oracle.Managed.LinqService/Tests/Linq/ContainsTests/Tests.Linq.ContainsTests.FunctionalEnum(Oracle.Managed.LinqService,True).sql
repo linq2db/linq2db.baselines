@@ -83,7 +83,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, -2)
+	s."Enum" IN ('THREE', 'FOUR')
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -96,7 +96,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, NULL)
+	s."Enum" IN ('THREE') OR s."Enum" IS NULL
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -109,7 +109,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, 2)
+	s."Enum" IN ('THREE', 'TWO')
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -122,7 +122,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" NOT IN (NULL, 2)
+	s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -135,7 +135,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" NOT IN (-1, 2)
+	(s."Enum" NOT IN ('THREE', 'TWO') OR s."Enum" IS NULL)
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute

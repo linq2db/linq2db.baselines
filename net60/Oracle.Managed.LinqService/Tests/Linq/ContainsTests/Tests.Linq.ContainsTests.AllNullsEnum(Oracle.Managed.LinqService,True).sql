@@ -75,68 +75,23 @@ VALUES
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, -2)
-FETCH NEXT :take ROWS ONLY
+	s."Enum" IS NULL
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, NULL)
-FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Int" IN (-1, 2)
-FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Int" NOT IN (NULL, 2)
-FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Int" NOT IN (-1, 2)
-FETCH NEXT :take ROWS ONLY
+	s."Enum" IS NOT NULL
 
 BeforeExecute
 -- Oracle.Managed Oracle12
