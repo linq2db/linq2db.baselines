@@ -8,11 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(@p_1 || CASE
-				WHEN Length(Cast([p].[ID] as NVarChar(11))) = 1
-					THEN '0' || Cast([p].[ID] as NVarChar(11))
-				ELSE Cast([p].[ID] as NVarChar(11))
-			END || '-01') as [c1]
+			Date(@p_1 || printf('%02d', [p].[ID]) || '-01') as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
