@@ -10,8 +10,9 @@ BeforeExecute
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
 	(
-		[Id]  Int NOT NULL,
-		[Int] Int     NULL
+		[Id]   Int         NOT NULL,
+		[Int]  Int             NULL,
+		[Enum] NVarChar(5)     NULL
 	)
 
 BeforeExecute
@@ -20,10 +21,11 @@ BeforeExecute
 INSERT INTO [Src]
 (
 	[Id],
-	[Int]
+	[Int],
+	[Enum]
 )
-SELECT 1,NULL UNION ALL
-SELECT 2,2
+SELECT 1,NULL,NULL UNION ALL
+SELECT 2,2,N'TWO'
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
