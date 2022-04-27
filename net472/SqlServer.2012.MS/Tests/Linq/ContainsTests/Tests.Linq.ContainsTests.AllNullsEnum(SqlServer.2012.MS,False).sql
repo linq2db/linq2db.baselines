@@ -36,7 +36,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	1 = 0
+	[s].[Enum] IN (NULL, NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -46,17 +46,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-SELECT
-	Count(*)
-FROM
-	[Src] [s]
-WHERE
-	1 = 1
+	[s].[Enum] NOT IN (NULL, NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

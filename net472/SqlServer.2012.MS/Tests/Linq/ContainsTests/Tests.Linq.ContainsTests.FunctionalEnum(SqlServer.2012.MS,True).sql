@@ -30,33 +30,63 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	1 = 0
+	[s].[Enum] IN (N'THREE', N'FOUR')
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
+	[s].[Enum] IN (N'THREE') OR [s].[Enum] IS NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT TOP (@take)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
+	[s].[Enum] IN (N'THREE', N'TWO')
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN (N'TWO') AND [s].[Enum] IS NOT NULL
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	([s].[Enum] NOT IN (N'THREE', N'TWO') OR [s].[Enum] IS NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
