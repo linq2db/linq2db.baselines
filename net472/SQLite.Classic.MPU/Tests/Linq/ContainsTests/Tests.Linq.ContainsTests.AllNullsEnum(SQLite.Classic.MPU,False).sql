@@ -15,12 +15,6 @@ CREATE TABLE IF NOT EXISTS [Src]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = NULL
-DECLARE @Enum NVarChar -- String
-SET     @Enum = NULL
 
 INSERT INTO [Src]
 (
@@ -29,33 +23,8 @@ INSERT INTO [Src]
 	[Enum]
 )
 VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 2
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 2
-DECLARE @Enum NVarChar(3) -- String
-SET     @Enum = 'TWO'
-
-INSERT INTO [Src]
-(
-	[Id],
-	[Int],
-	[Enum]
-)
-VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
+(1,NULL,NULL),
+(2,2,'TWO')
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -65,7 +34,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NULL
+	[s].[Enum] IN (NULL, NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -75,7 +44,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT NULL
+	[s].[Enum] NOT IN (NULL, NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

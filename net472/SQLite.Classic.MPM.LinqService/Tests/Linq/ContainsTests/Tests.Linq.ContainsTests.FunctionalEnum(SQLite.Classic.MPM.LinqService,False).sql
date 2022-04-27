@@ -59,23 +59,68 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
-	Count(*)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (NULL, NULL)
+	[s].[Enum] IN ('THREE', 'FOUR')
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
-	Count(*)
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, NULL)
+	[s].[Enum] IN ('THREE', NULL)
+LIMIT @take
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] IN ('THREE', 'TWO')
+LIMIT @take
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN (NULL, 'TWO')
+LIMIT @take
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Enum] NOT IN ('THREE', 'TWO')
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
