@@ -14,8 +14,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Src"
 		(
-			"Id"  Int NOT NULL,
-			"Int" Int     NULL
+			"Id"   Int         NOT NULL,
+			"Int"  Int             NULL,
+			"Enum" NVarChar(5)     NULL
 		)
 	';
 END
@@ -26,11 +27,12 @@ BeforeExecute
 INSERT INTO "Src"
 (
 	"Id",
-	"Int"
+	"Int",
+	"Enum"
 )
 VALUES
-(1,NULL),
-(2,2)
+(1,NULL,NULL),
+(2,2,'TWO')
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

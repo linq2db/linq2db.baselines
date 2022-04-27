@@ -23,6 +23,12 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @Int_1 Integer -- Int32
+SET     @Int_1 = NULL
+DECLARE @Enum VarChar -- String
+SET     @Enum = NULL
 
 INSERT INTO "Src"
 (
@@ -31,8 +37,33 @@ INSERT INTO "Src"
 	"Enum"
 )
 VALUES
-(1,NULL,NULL),
-(2,2,'TWO')
+(
+	@Id,
+	@Int_1,
+	@Enum
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @Int_1 Integer(4) -- Int32
+SET     @Int_1 = 2
+DECLARE @Enum VarChar(3) -- String
+SET     @Enum = 'TWO'
+
+INSERT INTO "Src"
+(
+	"Id",
+	"Int",
+	"Enum"
+)
+VALUES
+(
+	@Id,
+	@Int_1,
+	@Enum
+)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -42,7 +73,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (NULL, NULL)
+	"s"."Enum" IN (NULL, NULL)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -52,7 +83,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" NOT IN (NULL, NULL)
+	"s"."Enum" NOT IN (NULL, NULL)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

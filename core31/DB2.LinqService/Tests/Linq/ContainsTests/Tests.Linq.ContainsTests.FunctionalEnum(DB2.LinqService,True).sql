@@ -73,7 +73,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, -2)
+	"s"."Enum" IN ('THREE', 'FOUR')
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -84,7 +84,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, NULL)
+	"s"."Enum" IN ('THREE') OR "s"."Enum" IS NULL
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -95,7 +95,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, 2)
+	"s"."Enum" IN ('THREE', 'TWO')
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -106,7 +106,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" NOT IN (NULL, 2)
+	"s"."Enum" NOT IN ('TWO') AND "s"."Enum" IS NOT NULL
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -117,7 +117,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" NOT IN (-1, 2)
+	("s"."Enum" NOT IN ('THREE', 'TWO') OR "s"."Enum" IS NULL)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
