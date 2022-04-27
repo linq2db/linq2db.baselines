@@ -1116,13 +1116,13 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[d].[Id],
-	[d].[Value],
-	[d].[IsDeleted],
-	[d].[MasterId]
+	[e].[Id],
+	[e].[Value],
+	[e].[IsDeleted],
+	[e].[MasterId]
 FROM
 	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id] = [d].[MasterId]
+		INNER JOIN [DetailClass] [e] ON [m_1].[Id] = [e].[MasterId]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -1140,13 +1140,13 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[d].[Id],
-	[d].[Value],
-	[d].[IsDeleted],
-	[d].[MasterId]
+	[e].[Id],
+	[e].[Value],
+	[e].[IsDeleted],
+	[e].[MasterId]
 FROM
 	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id] = [d].[MasterId]
+		INNER JOIN [DetailClass] [e] ON [m_1].[Id] = [e].[MasterId]
 
 BeforeExecute
 -- SQLite.MS SQLite
