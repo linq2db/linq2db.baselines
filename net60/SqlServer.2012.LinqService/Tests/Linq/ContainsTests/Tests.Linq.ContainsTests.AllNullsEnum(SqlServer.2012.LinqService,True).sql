@@ -67,7 +67,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	1 = 0
+	[s].[Enum] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -77,17 +77,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
-
-BeforeExecute
--- SqlServer.2012
-
-SELECT
-	Count(*)
-FROM
-	[Src] [s]
-WHERE
-	1 = 1
+	[s].[Enum] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
