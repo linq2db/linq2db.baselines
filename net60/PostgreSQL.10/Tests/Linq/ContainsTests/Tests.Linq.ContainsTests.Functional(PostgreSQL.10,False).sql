@@ -8,8 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "Src"
 (
-	"Id"  Int NOT NULL,
-	"Int" Int     NULL
+	"Id"   Int  NOT NULL,
+	"Int"  Int      NULL,
+	"Enum" text     NULL
 )
 
 BeforeExecute
@@ -18,11 +19,12 @@ BeforeExecute
 INSERT INTO "Src"
 (
 	"Id",
-	"Int"
+	"Int",
+	"Enum"
 )
 VALUES
-(1,NULL),
-(2,2)
+(1,NULL,NULL),
+(2,2,'TWO')
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

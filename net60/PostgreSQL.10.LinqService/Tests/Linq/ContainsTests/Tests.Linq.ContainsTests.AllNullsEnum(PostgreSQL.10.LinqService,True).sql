@@ -15,6 +15,12 @@ CREATE TABLE IF NOT EXISTS "Src"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Int_1 Integer -- Int32
+SET     @Int_1 = NULL
+DECLARE @Enum Text -- String
+SET     @Enum = NULL
 
 INSERT INTO "Src"
 (
@@ -23,8 +29,33 @@ INSERT INTO "Src"
 	"Enum"
 )
 VALUES
-(1,NULL,NULL),
-(2,2,'TWO')
+(
+	:Id,
+	:Int_1,
+	:Enum
+)
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Int_1 Integer -- Int32
+SET     @Int_1 = 2
+DECLARE @Enum Text(3) -- String
+SET     @Enum = 'TWO'
+
+INSERT INTO "Src"
+(
+	"Id",
+	"Int",
+	"Enum"
+)
+VALUES
+(
+	:Id,
+	:Int_1,
+	:Enum
+)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -34,7 +65,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (NULL, NULL)
+	s."Enum" IS NULL
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -44,7 +75,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" NOT IN (NULL, NULL)
+	s."Enum" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
