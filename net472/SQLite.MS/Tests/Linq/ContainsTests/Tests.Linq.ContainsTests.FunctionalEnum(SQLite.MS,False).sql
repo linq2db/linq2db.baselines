@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Src]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [Src]
 (
@@ -14,13 +14,7 @@ CREATE TABLE IF NOT EXISTS [Src]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = NULL
-DECLARE @Enum NVarChar -- String
-SET     @Enum = NULL
+-- SQLite.MS SQLite
 
 INSERT INTO [Src]
 (
@@ -29,36 +23,11 @@ INSERT INTO [Src]
 	[Enum]
 )
 VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
+(1,NULL,NULL),
+(2,2,'TWO')
 
 BeforeExecute
--- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 2
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 2
-DECLARE @Enum NVarChar(3) -- String
-SET     @Enum = 'TWO'
-
-INSERT INTO [Src]
-(
-	[Id],
-	[Int],
-	[Enum]
-)
-VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -67,11 +36,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[Enum] IN ('THREE', 'FOUR')
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -80,11 +49,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, NULL)
+	[s].[Enum] IN ('THREE', NULL)
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -93,11 +62,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, 2)
+	[s].[Enum] IN ('THREE', 'TWO')
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -106,11 +75,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, 2)
+	[s].[Enum] NOT IN (NULL, 'TWO')
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -119,11 +88,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (-1, 2)
+	[s].[Enum] NOT IN ('THREE', 'TWO')
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Src]
 
