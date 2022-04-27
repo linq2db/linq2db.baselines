@@ -15,12 +15,6 @@ CREATE TABLE IF NOT EXISTS `Src`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Int_1 Int32
-SET     @Int_1 = NULL
-DECLARE @Enum VarChar -- String
-SET     @Enum = NULL
 
 INSERT INTO `Src`
 (
@@ -29,33 +23,8 @@ INSERT INTO `Src`
 	`Enum`
 )
 VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @Int_1 Int32
-SET     @Int_1 = 2
-DECLARE @Enum VarChar(3) -- String
-SET     @Enum = 'TWO'
-
-INSERT INTO `Src`
-(
-	`Id`,
-	`Int`,
-	`Enum`
-)
-VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
+(1,NULL,NULL),
+(2,2,'TWO')
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -67,7 +36,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` IN (-1, -2)
+	`s`.`Enum` IN ('THREE', 'FOUR')
 LIMIT @take
 
 BeforeExecute
@@ -80,7 +49,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` IN (-1, NULL)
+	`s`.`Enum` IN ('THREE') OR `s`.`Enum` IS NULL
 LIMIT @take
 
 BeforeExecute
@@ -93,7 +62,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` IN (-1, 2)
+	`s`.`Enum` IN ('THREE', 'TWO')
 LIMIT @take
 
 BeforeExecute
@@ -106,7 +75,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` NOT IN (NULL, 2)
+	`s`.`Enum` NOT IN ('TWO') AND `s`.`Enum` IS NOT NULL
 LIMIT @take
 
 BeforeExecute
@@ -119,7 +88,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` NOT IN (-1, 2)
+	(`s`.`Enum` NOT IN ('THREE', 'TWO') OR `s`.`Enum` IS NULL)
 LIMIT @take
 
 BeforeExecute

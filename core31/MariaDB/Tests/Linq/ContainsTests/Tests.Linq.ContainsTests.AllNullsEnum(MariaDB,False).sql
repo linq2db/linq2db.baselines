@@ -34,7 +34,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	1 = 0
+	`s`.`Enum` IN (NULL, NULL)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -44,17 +44,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	1 = 1
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	Count(*)
-FROM
-	`Src` `s`
-WHERE
-	1 = 1
+	`s`.`Enum` NOT IN (NULL, NULL)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

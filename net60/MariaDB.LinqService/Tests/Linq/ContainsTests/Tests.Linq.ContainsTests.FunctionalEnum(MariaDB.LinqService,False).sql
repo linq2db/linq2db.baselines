@@ -67,7 +67,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` IN (-1, -2)
+	`s`.`Enum` IN ('THREE', 'FOUR')
 LIMIT @take
 
 BeforeExecute
@@ -80,7 +80,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` IN (-1, NULL)
+	`s`.`Enum` IN ('THREE', NULL)
 LIMIT @take
 
 BeforeExecute
@@ -93,7 +93,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` IN (-1, 2)
+	`s`.`Enum` IN ('THREE', 'TWO')
 LIMIT @take
 
 BeforeExecute
@@ -106,7 +106,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` NOT IN (NULL, 2)
+	`s`.`Enum` NOT IN (NULL, 'TWO')
 LIMIT @take
 
 BeforeExecute
@@ -119,7 +119,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` NOT IN (-1, 2)
+	`s`.`Enum` NOT IN ('THREE', 'TWO')
 LIMIT @take
 
 BeforeExecute
