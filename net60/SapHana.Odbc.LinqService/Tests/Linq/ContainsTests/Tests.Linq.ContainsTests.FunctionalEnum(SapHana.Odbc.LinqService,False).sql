@@ -67,7 +67,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, -2)
+	"s"."Enum" IN ('THREE', 'FOUR')
 LIMIT ?
 
 BeforeExecute
@@ -80,7 +80,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1) OR "s"."Int" IS NULL
+	"s"."Enum" IN ('THREE', NULL)
 LIMIT ?
 
 BeforeExecute
@@ -93,7 +93,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, 2)
+	"s"."Enum" IN ('THREE', 'TWO')
 LIMIT ?
 
 BeforeExecute
@@ -106,7 +106,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" NOT IN (2) AND "s"."Int" IS NOT NULL
+	"s"."Enum" NOT IN (NULL, 'TWO')
 LIMIT ?
 
 BeforeExecute
@@ -119,7 +119,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	("s"."Int" NOT IN (-1, 2) OR "s"."Int" IS NULL)
+	"s"."Enum" NOT IN ('THREE', 'TWO')
 LIMIT ?
 
 BeforeExecute
