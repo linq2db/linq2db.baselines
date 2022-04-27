@@ -37,7 +37,7 @@ SELECT TOP 1
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[Enum] IN ('THREE', 'FOUR')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -47,7 +47,7 @@ SELECT TOP 1
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, NULL)
+	[s].[Enum] IN ('THREE', NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -57,7 +57,7 @@ SELECT TOP 1
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, 2)
+	[s].[Enum] IN ('THREE', 'TWO')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -67,7 +67,7 @@ SELECT TOP 1
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, 2)
+	[s].[Enum] NOT IN (NULL, 'TWO')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -77,7 +77,7 @@ SELECT TOP 1
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (-1, 2)
+	[s].[Enum] NOT IN ('THREE', 'TWO')
 
 BeforeExecute
 -- Sybase.Managed Sybase
