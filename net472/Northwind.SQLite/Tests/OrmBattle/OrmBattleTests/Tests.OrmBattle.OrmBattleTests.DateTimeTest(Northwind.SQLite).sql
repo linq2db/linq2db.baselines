@@ -81,8 +81,6 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @p_1 NVarChar(2) -- String
-SET     @p_1 = '01'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -104,6 +102,6 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	DateTime([o].[OrderDate]) >= DateTime(Date(Cast(Cast(StrFTime('%Y', [o].[OrderDate]) as int) as NVarChar(11)) || '-' || @p_1 || '-' || @p_1))
+	DateTime([o].[OrderDate]) >= DateTime(Date(Cast(Cast(StrFTime('%Y', [o].[OrderDate]) as int) as NVarChar(11)) || '-01-01'))
 LIMIT @take
 
