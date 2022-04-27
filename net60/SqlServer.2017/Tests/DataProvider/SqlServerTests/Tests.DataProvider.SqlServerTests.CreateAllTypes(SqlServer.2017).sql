@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE [AllTypeCreateTest]
+DROP TABLE IF EXISTS [AllTypeCreateTest]
 
 BeforeExecute
 -- SqlServer.2017

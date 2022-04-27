@@ -1,7 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-DROP TABLE [AllTypeCreateTest]
+IF (OBJECT_ID(N'[AllTypeCreateTest]', N'U') IS NOT NULL)
+	DROP TABLE [AllTypeCreateTest]
 
 BeforeExecute
 -- SqlServer.2014

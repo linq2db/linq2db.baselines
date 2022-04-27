@@ -121,10 +121,10 @@ BeforeExecute
 CREATE TABLE [SampleClass]
 (
 	[Id]         INTEGER      NOT NULL,
-	[KeyValueF1] NVarChar(50)     NULL,
-	[ValueF1]    NVarChar(50)     NULL,
+	[KeyValueF2] NVarChar(50)     NULL,
+	[ValueF2]    NVarChar(50)     NULL,
 
-	CONSTRAINT [PK_SampleClass] PRIMARY KEY ([Id], [KeyValueF1])
+	CONSTRAINT [PK_SampleClass] PRIMARY KEY ([Id], [KeyValueF2])
 )
 
 BeforeExecute
@@ -139,8 +139,8 @@ SET     @Value_1 = 'V1'
 INSERT INTO [SampleClass]
 (
 	[Id],
-	[KeyValueF1],
-	[ValueF1]
+	[KeyValueF2],
+	[ValueF2]
 )
 VALUES
 (

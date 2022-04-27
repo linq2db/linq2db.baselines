@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE [AllTypeCreateTest]
+DROP TABLE IF EXISTS [AllTypeCreateTest]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
