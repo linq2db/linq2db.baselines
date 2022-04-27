@@ -43,7 +43,7 @@ SELECT FIRST @take
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, -2)
+	"s"."Enum" IN ('THREE', 'FOUR')
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -55,7 +55,7 @@ SELECT FIRST @take
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, NULL)
+	"s"."Enum" IN ('THREE', NULL)
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -67,7 +67,7 @@ SELECT FIRST @take
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, 2)
+	"s"."Enum" IN ('THREE', 'TWO')
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -79,7 +79,7 @@ SELECT FIRST @take
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" NOT IN (NULL, 2)
+	"s"."Enum" NOT IN (NULL, 'TWO')
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -91,7 +91,7 @@ SELECT FIRST @take
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" NOT IN (-1, 2)
+	"s"."Enum" NOT IN ('THREE', 'TWO')
 
 BeforeExecute
 -- Firebird3 Firebird

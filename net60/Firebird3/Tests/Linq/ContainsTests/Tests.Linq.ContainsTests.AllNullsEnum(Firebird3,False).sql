@@ -35,63 +35,23 @@ SELECT 2,2,'TWO' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
-	"s"."Id"
+SELECT
+	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, -2)
+	"s"."Enum" IN (NULL, NULL)
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
-	"s"."Id"
+SELECT
+	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1, NULL)
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Int" IN (-1, 2)
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Int" NOT IN (NULL, 2)
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Int" NOT IN (-1, 2)
+	"s"."Enum" NOT IN (NULL, NULL)
 
 BeforeExecute
 -- Firebird3 Firebird
