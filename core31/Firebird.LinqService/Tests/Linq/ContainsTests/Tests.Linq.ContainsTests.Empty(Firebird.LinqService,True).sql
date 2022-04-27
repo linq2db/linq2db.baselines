@@ -14,8 +14,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Src"
 			(
-				"Id"  Int NOT NULL,
-				"Int" Int
+				"Id"   Int                                  NOT NULL,
+				"Int"  Int,
+				"Enum" VarChar(5) CHARACTER SET UNICODE_FSS
 			)
 		';
 END
@@ -26,16 +27,20 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = NULL
+DECLARE @Enum VarChar -- String
+SET     @Enum = NULL
 
 INSERT INTO "Src"
 (
 	"Id",
-	"Int"
+	"Int",
+	"Enum"
 )
 VALUES
 (
 	@Id,
-	@Int_1
+	@Int_1,
+	@Enum
 )
 
 BeforeExecute
@@ -44,16 +49,20 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = 2
+DECLARE @Enum VarChar(3) -- String
+SET     @Enum = 'TWO'
 
 INSERT INTO "Src"
 (
 	"Id",
-	"Int"
+	"Int",
+	"Enum"
 )
 VALUES
 (
 	@Id,
-	@Int_1
+	@Int_1,
+	@Enum
 )
 
 BeforeExecute

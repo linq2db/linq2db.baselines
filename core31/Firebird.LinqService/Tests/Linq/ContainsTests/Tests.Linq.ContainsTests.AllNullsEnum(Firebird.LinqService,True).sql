@@ -23,6 +23,12 @@ END
 
 BeforeExecute
 -- Firebird
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Int_1 Integer -- Int32
+SET     @Int_1 = NULL
+DECLARE @Enum VarChar -- String
+SET     @Enum = NULL
 
 INSERT INTO "Src"
 (
@@ -30,8 +36,34 @@ INSERT INTO "Src"
 	"Int",
 	"Enum"
 )
-SELECT 1,NULL,CAST(NULL AS VarChar(5) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
-SELECT 2,2,'TWO' FROM rdb$database
+VALUES
+(
+	@Id,
+	@Int_1,
+	@Enum
+)
+
+BeforeExecute
+-- Firebird
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Int_1 Integer -- Int32
+SET     @Int_1 = 2
+DECLARE @Enum VarChar(3) -- String
+SET     @Enum = 'TWO'
+
+INSERT INTO "Src"
+(
+	"Id",
+	"Int",
+	"Enum"
+)
+VALUES
+(
+	@Id,
+	@Int_1,
+	@Enum
+)
 
 BeforeExecute
 -- Firebird
@@ -41,7 +73,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS NULL
+	"s"."Enum" IS NULL
 
 BeforeExecute
 -- Firebird
@@ -51,7 +83,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS NOT NULL
+	"s"."Enum" IS NOT NULL
 
 BeforeExecute
 -- Firebird

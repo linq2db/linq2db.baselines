@@ -41,7 +41,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS NULL
+	"s"."Enum" IS NULL
 
 BeforeExecute
 -- Firebird
@@ -51,7 +51,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS NOT NULL
+	"s"."Enum" IS NOT NULL
 
 BeforeExecute
 -- Firebird
