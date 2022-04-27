@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Src]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [Src]
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS [Src]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 INSERT INTO [Src]
 (
@@ -27,27 +27,27 @@ VALUES
 (2,2,'TWO')
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (NULL, NULL)
+	[s].[Enum] IN (NULL, NULL)
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, NULL)
+	[s].[Enum] NOT IN (NULL, NULL)
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Src]
 

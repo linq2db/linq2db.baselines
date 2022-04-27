@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Src]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [Src]
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS [Src]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Int_1  -- Int32
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Int_1  -- Int32
@@ -58,27 +58,27 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (NULL, NULL)
+	[s].[Enum] IS NULL
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, NULL)
+	[s].[Enum] IS NOT NULL
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Src]
 

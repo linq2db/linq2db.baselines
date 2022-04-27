@@ -8,8 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [Src]
 (
-	[Id]  INTEGER NOT NULL,
-	[Int] INTEGER     NULL
+	[Id]   INTEGER     NOT NULL,
+	[Int]  INTEGER         NULL,
+	[Enum] NVarChar(5)     NULL
 )
 
 BeforeExecute
@@ -18,11 +19,12 @@ BeforeExecute
 INSERT INTO [Src]
 (
 	[Id],
-	[Int]
+	[Int],
+	[Enum]
 )
 VALUES
-(1,NULL),
-(2,2)
+(1,NULL,NULL),
+(2,2,'TWO')
 
 BeforeExecute
 -- SQLite.MS SQLite

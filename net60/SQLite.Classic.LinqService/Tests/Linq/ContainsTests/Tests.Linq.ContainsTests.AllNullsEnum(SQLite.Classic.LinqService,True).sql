@@ -59,68 +59,23 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[s].[Id]
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
-LIMIT @take
+	[s].[Enum] IS NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[s].[Id]
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, NULL)
-LIMIT @take
-
-BeforeExecute
--- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Int] IN (-1, 2)
-LIMIT @take
-
-BeforeExecute
--- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Int] NOT IN (NULL, 2)
-LIMIT @take
-
-BeforeExecute
--- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Int] NOT IN (-1, 2)
-LIMIT @take
+	[s].[Enum] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite
