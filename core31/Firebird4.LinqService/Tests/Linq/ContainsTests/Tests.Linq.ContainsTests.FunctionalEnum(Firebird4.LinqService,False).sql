@@ -67,33 +67,63 @@ VALUES
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT FIRST @take
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	1 = 0
+	"s"."Enum" IN ('THREE', 'FOUR')
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT FIRST @take
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	1 = 1
+	"s"."Enum" IN ('THREE', NULL)
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT FIRST @take
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	1 = 1
+	"s"."Enum" IN ('THREE', 'TWO')
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"s"."Id"
+FROM
+	"Src" "s"
+WHERE
+	"s"."Enum" NOT IN (NULL, 'TWO')
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"s"."Id"
+FROM
+	"Src" "s"
+WHERE
+	"s"."Enum" NOT IN ('THREE', 'TWO')
 
 BeforeExecute
 -- Firebird4 Firebird

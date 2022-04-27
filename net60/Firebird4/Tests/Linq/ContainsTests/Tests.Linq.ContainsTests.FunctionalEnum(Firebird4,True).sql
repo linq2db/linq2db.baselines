@@ -23,12 +23,6 @@ END
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = NULL
-DECLARE @Enum VarChar -- String
-SET     @Enum = NULL
 
 INSERT INTO "Src"
 (
@@ -36,64 +30,68 @@ INSERT INTO "Src"
 	"Int",
 	"Enum"
 )
-VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
+SELECT 1,NULL,CAST(NULL AS VarChar(5) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 2,2,'TWO' FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
-DECLARE @Enum VarChar(3) -- String
-SET     @Enum = 'TWO'
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum"
-)
-VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum
-)
-
-BeforeExecute
--- Firebird4 Firebird
-
-SELECT
-	Count(*)
+SELECT FIRST @take
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	1 = 0
+	"s"."Enum" IN ('THREE', 'FOUR')
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT FIRST @take
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	1 = 1
+	"s"."Enum" IN ('THREE') OR "s"."Enum" IS NULL
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT
-	Count(*)
+SELECT FIRST @take
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	1 = 1
+	"s"."Enum" IN ('THREE', 'TWO')
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"s"."Id"
+FROM
+	"Src" "s"
+WHERE
+	"s"."Enum" NOT IN ('TWO') AND "s"."Enum" IS NOT NULL
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT FIRST @take
+	"s"."Id"
+FROM
+	"Src" "s"
+WHERE
+	("s"."Enum" NOT IN ('THREE', 'TWO') OR "s"."Enum" IS NULL)
 
 BeforeExecute
 -- Firebird4 Firebird

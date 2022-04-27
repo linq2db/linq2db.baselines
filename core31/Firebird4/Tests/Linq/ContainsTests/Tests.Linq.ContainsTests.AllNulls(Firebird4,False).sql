@@ -14,8 +14,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Src"
 			(
-				"Id"  Int NOT NULL,
-				"Int" Int
+				"Id"   Int                                  NOT NULL,
+				"Int"  Int,
+				"Enum" VarChar(5) CHARACTER SET UNICODE_FSS
 			)
 		';
 END
@@ -26,10 +27,11 @@ BeforeExecute
 INSERT INTO "Src"
 (
 	"Id",
-	"Int"
+	"Int",
+	"Enum"
 )
-SELECT 1,NULL FROM rdb$database UNION ALL
-SELECT 2,2 FROM rdb$database
+SELECT 1,NULL,CAST(NULL AS VarChar(5) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 2,2,'TWO' FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird

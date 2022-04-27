@@ -73,7 +73,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	1 = 0
+	"s"."Enum" IS NULL
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -83,17 +83,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	1 = 1
-
-BeforeExecute
--- Firebird4 Firebird
-
-SELECT
-	Count(*)
-FROM
-	"Src" "s"
-WHERE
-	1 = 1
+	"s"."Enum" IS NOT NULL
 
 BeforeExecute
 -- Firebird4 Firebird
