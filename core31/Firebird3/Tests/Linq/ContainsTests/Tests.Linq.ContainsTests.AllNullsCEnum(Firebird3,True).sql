@@ -24,14 +24,6 @@ END
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = NULL
-DECLARE @Enum VarChar -- String
-SET     @Enum = NULL
-DECLARE @CEnum VarChar -- String
-SET     @CEnum = NULL
 
 INSERT INTO "Src"
 (
@@ -40,39 +32,8 @@ INSERT INTO "Src"
 	"Enum",
 	"CEnum"
 )
-VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum,
-	@CEnum
-)
-
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
-DECLARE @Enum VarChar(3) -- String
-SET     @Enum = 'TWO'
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value2___'
-
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum",
-	"CEnum"
-)
-VALUES
-(
-	@Id,
-	@Int_1,
-	@Enum,
-	@CEnum
-)
+SELECT 1,NULL,CAST(NULL AS VarChar(5) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 2,2,'TWO','___Value2___' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -82,7 +43,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	1 = 0
+	"s"."CEnum" IS NULL
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -92,17 +53,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	1 = 1
-
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT
-	Count(*)
-FROM
-	"Src" "s"
-WHERE
-	1 = 1
+	"s"."CEnum" IS NOT NULL
 
 BeforeExecute
 -- Firebird3 Firebird

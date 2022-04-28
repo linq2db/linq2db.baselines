@@ -82,7 +82,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	1 = 0
+	"s"."CEnum" IS NULL
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -92,17 +92,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	1 = 1
-
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT
-	Count(*)
-FROM
-	"Src" "s"
-WHERE
-	1 = 1
+	"s"."CEnum" IS NOT NULL
 
 BeforeExecute
 -- Firebird3 Firebird
