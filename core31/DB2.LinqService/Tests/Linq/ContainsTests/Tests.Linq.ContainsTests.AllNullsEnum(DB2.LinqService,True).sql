@@ -14,9 +14,10 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Src"
 		(
-			"Id"   Int         NOT NULL,
-			"Int"  Int             NULL,
-			"Enum" NVarChar(5)     NULL
+			"Id"    Int         NOT NULL,
+			"Int"   Int             NULL,
+			"Enum"  NVarChar(5)     NULL,
+			"CEnum" VarChar(20)     NULL
 		)
 	';
 END
@@ -29,18 +30,22 @@ DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = NULL
 DECLARE @Enum VarChar -- String
 SET     @Enum = NULL
+DECLARE @CEnum VarChar -- String
+SET     @CEnum = NULL
 
 INSERT INTO "Src"
 (
 	"Id",
 	"Int",
-	"Enum"
+	"Enum",
+	"CEnum"
 )
 VALUES
 (
 	@Id,
 	@Int_1,
-	@Enum
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute
@@ -51,18 +56,22 @@ DECLARE @Int_1 Integer(4) -- Int32
 SET     @Int_1 = 2
 DECLARE @Enum VarChar(3) -- String
 SET     @Enum = 'TWO'
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value2___'
 
 INSERT INTO "Src"
 (
 	"Id",
 	"Int",
-	"Enum"
+	"Enum",
+	"CEnum"
 )
 VALUES
 (
 	@Id,
 	@Int_1,
-	@Enum
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute

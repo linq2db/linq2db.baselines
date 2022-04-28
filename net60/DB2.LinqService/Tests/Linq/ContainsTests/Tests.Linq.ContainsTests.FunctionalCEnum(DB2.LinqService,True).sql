@@ -76,33 +76,74 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- String
+SET     @CEnum_1 = '___Value4___'
 
 SELECT
-	Count(*)
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	1 = 0
+	"s"."CEnum" IN (@CEnum, @CEnum_1)
+FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value3___'
 
 SELECT
-	Count(*)
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	1 = 1
+	"s"."CEnum" IN (@CEnum) OR "s"."CEnum" IS NULL
+FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- String
+SET     @CEnum_1 = '___Value2___'
 
 SELECT
-	Count(*)
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	1 = 1
+	"s"."CEnum" IN (@CEnum, @CEnum_1)
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @CEnum_1 VarChar(12) -- String
+SET     @CEnum_1 = '___Value2___'
+
+SELECT
+	"s"."Id"
+FROM
+	"Src" "s"
+WHERE
+	"s"."CEnum" NOT IN (@CEnum_1) AND "s"."CEnum" IS NOT NULL
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- String
+SET     @CEnum_1 = '___Value2___'
+
+SELECT
+	"s"."Id"
+FROM
+	"Src" "s"
+WHERE
+	("s"."CEnum" NOT IN (@CEnum, @CEnum_1) OR "s"."CEnum" IS NULL)
+FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

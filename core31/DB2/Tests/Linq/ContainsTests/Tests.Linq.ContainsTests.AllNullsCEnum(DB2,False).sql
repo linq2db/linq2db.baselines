@@ -38,23 +38,31 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @CEnum VarChar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- String
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS NULL
+	"s"."CEnum" IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @CEnum VarChar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- String
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS NOT NULL
+	"s"."CEnum" NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
