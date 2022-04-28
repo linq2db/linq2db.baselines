@@ -30,68 +30,31 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
+DECLARE @CEnum Varchar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar -- String
+SET     @CEnum_1 = NULL
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, -2)
-LIMIT :take
+	s."CEnum" IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
+DECLARE @CEnum Varchar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar -- String
+SET     @CEnum_1 = NULL
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, NULL)
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Int" IN (-1, 2)
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Int" NOT IN (NULL, 2)
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Int" NOT IN (-1, 2)
-LIMIT :take
+	s."CEnum" NOT IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

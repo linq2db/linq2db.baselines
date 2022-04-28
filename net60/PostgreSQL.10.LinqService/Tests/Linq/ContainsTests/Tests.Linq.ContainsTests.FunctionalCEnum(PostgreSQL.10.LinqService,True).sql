@@ -68,6 +68,10 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @CEnum Varchar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar(12) -- String
+SET     @CEnum_1 = '___Value4___'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -76,11 +80,13 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, -2)
+	s."CEnum" IN (:CEnum, :CEnum_1)
 LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @CEnum Varchar(12) -- String
+SET     @CEnum = '___Value3___'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -89,11 +95,15 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1) OR s."Int" IS NULL
+	s."CEnum" IN (:CEnum) OR s."CEnum" IS NULL
 LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @CEnum Varchar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar(12) -- String
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -102,11 +112,13 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1, 2)
+	s."CEnum" IN (:CEnum, :CEnum_1)
 LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @CEnum_1 Varchar(12) -- String
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -115,11 +127,15 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" NOT IN (2) AND s."Int" IS NOT NULL
+	s."CEnum" NOT IN (:CEnum_1) AND s."CEnum" IS NOT NULL
 LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @CEnum Varchar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar(12) -- String
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -128,7 +144,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	(s."Int" NOT IN (-1, 2) OR s."Int" IS NULL)
+	(s."CEnum" NOT IN (:CEnum, :CEnum_1) OR s."CEnum" IS NULL)
 LIMIT :take
 
 BeforeExecute
