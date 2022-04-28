@@ -76,23 +76,79 @@ VALUES
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- String
+SET     @CEnum_1 = '___Value4___'
 
-SELECT
-	Count(*)
+SELECT FIRST @take
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" IN (NULL, NULL)
+	"s"."CEnum" IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value3___'
 
-SELECT
-	Count(*)
+SELECT FIRST @take
+	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" NOT IN (NULL, NULL)
+	"s"."CEnum" IN (@CEnum) OR "s"."CEnum" IS NULL
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- String
+SET     @CEnum_1 = '___Value2___'
+
+SELECT FIRST @take
+	"s"."Id"
+FROM
+	"Src" "s"
+WHERE
+	"s"."CEnum" IN (@CEnum, @CEnum_1)
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @CEnum_1 VarChar(12) -- String
+SET     @CEnum_1 = '___Value2___'
+
+SELECT FIRST @take
+	"s"."Id"
+FROM
+	"Src" "s"
+WHERE
+	"s"."CEnum" NOT IN (@CEnum_1) AND "s"."CEnum" IS NOT NULL
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- String
+SET     @CEnum_1 = '___Value2___'
+
+SELECT FIRST @take
+	"s"."Id"
+FROM
+	"Src" "s"
+WHERE
+	("s"."CEnum" NOT IN (@CEnum, @CEnum_1) OR "s"."CEnum" IS NULL)
 
 BeforeExecute
 -- Firebird4 Firebird

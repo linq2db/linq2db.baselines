@@ -82,7 +82,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" IN (NULL, NULL)
+	"s"."CEnum" IS NULL
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -92,7 +92,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" NOT IN (NULL, NULL)
+	"s"."CEnum" IS NOT NULL
 
 BeforeExecute
 -- Firebird4 Firebird
