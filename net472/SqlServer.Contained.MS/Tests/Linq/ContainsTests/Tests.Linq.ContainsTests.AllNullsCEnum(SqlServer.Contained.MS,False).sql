@@ -31,23 +31,31 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IS NULL
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IS NOT NULL
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

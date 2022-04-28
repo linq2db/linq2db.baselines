@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [Src]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int_1 Int -- Int32
@@ -42,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Int_1 Int -- Int32
@@ -68,67 +68,83 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = N'___Value3___'
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = N'___Value4___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = N'___Value3___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1) OR [s].[Int] IS NULL
+	[s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = N'___Value3___'
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = N'___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, 2)
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = N'___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (2) AND [s].[Int] IS NOT NULL
+	[s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = N'___Value3___'
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = N'___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[Int] NOT IN (-1, 2) OR [s].[Int] IS NULL)
+	([s].[CEnum] NOT IN (@CEnum, @CEnum_1) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [Src]
 

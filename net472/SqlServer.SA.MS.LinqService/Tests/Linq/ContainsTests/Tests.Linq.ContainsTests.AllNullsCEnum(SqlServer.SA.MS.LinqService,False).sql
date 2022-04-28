@@ -69,23 +69,31 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN (NULL, NULL)
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN (NULL, NULL)
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

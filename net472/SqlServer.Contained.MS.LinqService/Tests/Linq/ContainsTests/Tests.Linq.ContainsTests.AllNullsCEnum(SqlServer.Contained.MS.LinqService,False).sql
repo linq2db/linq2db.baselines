@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [Src]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int_1 Int -- Int32
@@ -42,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Int_1 Int -- Int32
@@ -68,27 +68,35 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN (NULL, NULL)
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN (NULL, NULL)
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [Src]
 
