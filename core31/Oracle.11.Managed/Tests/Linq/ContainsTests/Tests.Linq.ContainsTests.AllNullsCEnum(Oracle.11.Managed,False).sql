@@ -32,75 +32,39 @@ END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Int_1 Int32
-SET     @Int_1 = NULL
-DECLARE @Enum Varchar2 -- String
-SET     @Enum = NULL
+
+INSERT ALL
+	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (1,NULL,NULL,NULL)
+	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (2,2,'TWO','___Value2___')
+SELECT * FROM dual
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @CEnum Varchar2 -- String
 SET     @CEnum = NULL
-
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum",
-	"CEnum"
-)
-VALUES
-(
-	:Id,
-	:Int_1,
-	:Enum,
-	:CEnum
-)
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @Int_1 Int32
-SET     @Int_1 = 2
-DECLARE @Enum Varchar2(3) -- String
-SET     @Enum = 'TWO'
-DECLARE @CEnum Varchar2(12) -- String
-SET     @CEnum = '___Value2___'
-
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum",
-	"CEnum"
-)
-VALUES
-(
-	:Id,
-	:Int_1,
-	:Enum,
-	:CEnum
-)
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @CEnum_1 Varchar2 -- String
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (NULL, NULL)
+	s."CEnum" IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @CEnum Varchar2 -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar2 -- String
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" NOT IN (NULL, NULL)
+	s."CEnum" NOT IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

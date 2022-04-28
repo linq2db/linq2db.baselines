@@ -32,58 +32,82 @@ END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Int_1 Int32
-SET     @Int_1 = NULL
-DECLARE @Enum Varchar2 -- String
-SET     @Enum = NULL
+
+INSERT ALL
+	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (1,NULL,NULL,NULL)
+	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (2,2,'TWO','___Value2___')
+SELECT * FROM dual
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @CEnum Varchar2(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar2(12) -- String
+SET     @CEnum_1 = '___Value4___'
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	s."Id"
+FROM
+	"Src" s
+WHERE
+	s."CEnum" IN (:CEnum, :CEnum_1) AND ROWNUM <= :take
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @CEnum Varchar2(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar2 -- String
+SET     @CEnum_1 = NULL
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	s."Id"
+FROM
+	"Src" s
+WHERE
+	s."CEnum" IN (:CEnum, :CEnum_1) AND ROWNUM <= :take
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @CEnum Varchar2(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar2(12) -- String
+SET     @CEnum_1 = '___Value2___'
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	s."Id"
+FROM
+	"Src" s
+WHERE
+	s."CEnum" IN (:CEnum, :CEnum_1) AND ROWNUM <= :take
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @CEnum Varchar2 -- String
 SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar2(12) -- String
+SET     @CEnum_1 = '___Value2___'
+DECLARE @take Int32
+SET     @take = 1
 
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum",
-	"CEnum"
-)
-VALUES
-(
-	:Id,
-	:Int_1,
-	:Enum,
-	:CEnum
-)
+SELECT
+	s."Id"
+FROM
+	"Src" s
+WHERE
+	s."CEnum" NOT IN (:CEnum, :CEnum_1) AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @Int_1 Int32
-SET     @Int_1 = 2
-DECLARE @Enum Varchar2(3) -- String
-SET     @Enum = 'TWO'
 DECLARE @CEnum Varchar2(12) -- String
-SET     @CEnum = '___Value2___'
-
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum",
-	"CEnum"
-)
-VALUES
-(
-	:Id,
-	:Int_1,
-	:Enum,
-	:CEnum
-)
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar2(12) -- String
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -92,57 +116,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE', 'FOUR') AND ROWNUM <= :take
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" IN ('THREE') OR s."Enum" IS NULL AND ROWNUM <= :take
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" IN ('THREE', 'TWO') AND ROWNUM <= :take
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL AND
-	ROWNUM <= :take
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	(s."Enum" NOT IN ('THREE', 'TWO') OR s."Enum" IS NULL) AND
-	ROWNUM <= :take
+	s."CEnum" NOT IN (:CEnum, :CEnum_1) AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

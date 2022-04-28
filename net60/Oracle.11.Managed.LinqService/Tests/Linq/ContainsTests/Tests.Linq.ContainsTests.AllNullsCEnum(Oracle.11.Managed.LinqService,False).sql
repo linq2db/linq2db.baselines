@@ -84,65 +84,31 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @CEnum Varchar2 -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar2 -- String
+SET     @CEnum_1 = NULL
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE', 'FOUR') AND ROWNUM <= :take
+	s."CEnum" IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @CEnum Varchar2 -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar2 -- String
+SET     @CEnum_1 = NULL
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE') OR s."Enum" IS NULL AND ROWNUM <= :take
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" IN ('THREE', 'TWO') AND ROWNUM <= :take
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL AND
-	ROWNUM <= :take
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	(s."Enum" NOT IN ('THREE', 'TWO') OR s."Enum" IS NULL) AND
-	ROWNUM <= :take
+	s."CEnum" NOT IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11

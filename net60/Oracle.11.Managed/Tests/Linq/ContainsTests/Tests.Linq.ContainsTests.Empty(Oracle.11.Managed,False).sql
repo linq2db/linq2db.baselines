@@ -17,9 +17,10 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Src"
 		(
-			"Id"   Int        NOT NULL,
-			"Int"  Int            NULL,
-			"Enum" VarChar(5)     NULL
+			"Id"    Int           NOT NULL,
+			"Int"   Int               NULL,
+			"Enum"  VarChar(5)        NULL,
+			"CEnum" VarChar(4000)     NULL
 		)
 	';
 EXCEPTION
@@ -33,8 +34,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 
 INSERT ALL
-	INTO "Src" ("Id", "Int", "Enum") VALUES (1,NULL,NULL)
-	INTO "Src" ("Id", "Int", "Enum") VALUES (2,2,'TWO')
+	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (1,NULL,NULL,NULL)
+	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (2,2,'TWO','___Value2___')
 SELECT * FROM dual
 
 BeforeExecute
