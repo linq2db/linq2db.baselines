@@ -10,10 +10,10 @@ BeforeExecute
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
 	(
-		[Id]    Int          NOT NULL,
-		[Int]   Int              NULL,
-		[Enum]  NVarChar(5)      NULL,
-		[CEnum] VarChar(Max)     NULL
+		[Id]    Int         NOT NULL,
+		[Int]   Int             NULL,
+		[Enum]  NVarChar(5)     NULL,
+		[CEnum] VarChar(20)     NULL
 	)
 
 BeforeExecute
@@ -34,9 +34,9 @@ BeforeExecute
 -- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @CEnum VarChar(8000) -- AnsiString
+DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = N'___Value3___'
-DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = N'___Value4___'
 
 SELECT TOP (@take)
@@ -50,9 +50,9 @@ BeforeExecute
 -- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @CEnum VarChar(8000) -- AnsiString
+DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = N'___Value3___'
-DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = NULL
 
 SELECT TOP (@take)
@@ -66,9 +66,9 @@ BeforeExecute
 -- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @CEnum VarChar(8000) -- AnsiString
+DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = N'___Value3___'
-DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = N'___Value2___'
 
 SELECT TOP (@take)
@@ -82,9 +82,9 @@ BeforeExecute
 -- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @CEnum VarChar(8000) -- AnsiString
+DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = N'___Value2___'
 
 SELECT TOP (@take)
@@ -98,9 +98,9 @@ BeforeExecute
 -- SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @CEnum VarChar(8000) -- AnsiString
+DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = N'___Value3___'
-DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = N'___Value2___'
 
 SELECT TOP (@take)
