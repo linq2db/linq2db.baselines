@@ -68,6 +68,10 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value4___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -76,11 +80,15 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Enum` IN ('THREE', 'FOUR')
+	`s`.`CEnum` IN (@CEnum, @CEnum_1)
 LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar -- AnsiString
+SET     @CEnum_1 = NULL
 DECLARE @take Int32
 SET     @take = 1
 
@@ -89,11 +97,15 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Enum` IN ('THREE') OR `s`.`Enum` IS NULL
+	`s`.`CEnum` IN (@CEnum, @CEnum_1)
 LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -102,11 +114,15 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Enum` IN ('THREE', 'TWO')
+	`s`.`CEnum` IN (@CEnum, @CEnum_1)
 LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @CEnum VarChar -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -115,11 +131,15 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Enum` NOT IN ('TWO') AND `s`.`Enum` IS NOT NULL
+	`s`.`CEnum` NOT IN (@CEnum, @CEnum_1)
 LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -128,7 +148,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	(`s`.`Enum` NOT IN ('THREE', 'TWO') OR `s`.`Enum` IS NULL)
+	`s`.`CEnum` NOT IN (@CEnum, @CEnum_1)
 LIMIT @take
 
 BeforeExecute

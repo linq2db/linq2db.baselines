@@ -8,9 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
-	`Id`   INT        NOT NULL,
-	`Int`  INT            NULL,
-	`Enum` VARCHAR(5)     NULL
+	`Id`    INT          NOT NULL,
+	`Int`   INT              NULL,
+	`Enum`  VARCHAR(5)       NULL,
+	`CEnum` VARCHAR(255)     NULL
 )
 
 BeforeExecute
@@ -20,11 +21,12 @@ INSERT INTO `Src`
 (
 	`Id`,
 	`Int`,
-	`Enum`
+	`Enum`,
+	`CEnum`
 )
 VALUES
-(1,NULL,NULL),
-(2,2,'TWO')
+(1,NULL,NULL,NULL),
+(2,2,'TWO','___Value2___')
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

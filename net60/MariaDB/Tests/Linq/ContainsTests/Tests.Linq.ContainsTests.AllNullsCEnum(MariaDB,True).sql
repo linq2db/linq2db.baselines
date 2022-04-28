@@ -36,7 +36,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Enum` IS NULL
+	`s`.`CEnum` IS NULL
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -46,7 +46,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Enum` IS NOT NULL
+	`s`.`CEnum` IS NOT NULL
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

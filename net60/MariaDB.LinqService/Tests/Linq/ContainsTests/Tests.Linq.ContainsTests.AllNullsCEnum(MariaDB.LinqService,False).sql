@@ -68,68 +68,31 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @CEnum VarChar -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
-	`s`.`Id`
+	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Enum` IN ('THREE', 'FOUR')
-LIMIT @take
+	`s`.`CEnum` IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @CEnum VarChar -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
-	`s`.`Id`
+	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Enum` IN ('THREE') OR `s`.`Enum` IS NULL
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`s`.`Id`
-FROM
-	`Src` `s`
-WHERE
-	`s`.`Enum` IN ('THREE', 'TWO')
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`s`.`Id`
-FROM
-	`Src` `s`
-WHERE
-	`s`.`Enum` NOT IN ('TWO') AND `s`.`Enum` IS NOT NULL
-LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`s`.`Id`
-FROM
-	`Src` `s`
-WHERE
-	(`s`.`Enum` NOT IN ('THREE', 'TWO') OR `s`.`Enum` IS NULL)
-LIMIT @take
+	`s`.`CEnum` NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
