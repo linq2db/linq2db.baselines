@@ -74,7 +74,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IS NULL
+	s."CEnum" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -84,7 +84,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IS NOT NULL
+	s."CEnum" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

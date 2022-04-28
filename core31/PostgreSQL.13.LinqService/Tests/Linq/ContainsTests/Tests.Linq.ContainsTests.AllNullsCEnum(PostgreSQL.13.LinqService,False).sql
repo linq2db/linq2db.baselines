@@ -68,23 +68,31 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @CEnum Varchar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar -- String
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" IS NULL
+	s."CEnum" IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @CEnum Varchar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar -- String
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" IS NOT NULL
+	s."CEnum" NOT IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
