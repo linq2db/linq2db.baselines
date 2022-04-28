@@ -14,10 +14,10 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Src"
 			(
-				"Id"    Int                                    NOT NULL,
+				"Id"    Int                                   NOT NULL,
 				"Int"   Int,
 				"Enum"  VarChar(5) CHARACTER SET UNICODE_FSS,
-				"CEnum" VarChar(255) CHARACTER SET UNICODE_FSS
+				"CEnum" VarChar(20) CHARACTER SET UNICODE_FSS
 			)
 		';
 END
