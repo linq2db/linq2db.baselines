@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE COLUMN TABLE "Src"
 (
-	"Id"    Integer       NOT NULL,
-	"Int"   Integer           NULL,
-	"Enum"  NVarChar(5)       NULL,
-	"CEnum" VarChar(5000)     NULL
+	"Id"    Integer     NOT NULL,
+	"Int"   Integer         NULL,
+	"Enum"  NVarChar(5)     NULL,
+	"CEnum" VarChar(20)     NULL
 )
 
 BeforeExecute
