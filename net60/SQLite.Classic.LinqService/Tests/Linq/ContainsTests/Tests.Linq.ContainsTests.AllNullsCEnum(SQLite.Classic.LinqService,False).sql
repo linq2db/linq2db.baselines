@@ -68,23 +68,31 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @CEnum VarChar -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NULL
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @CEnum VarChar -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT NULL
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SQLite.Classic SQLite
