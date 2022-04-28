@@ -74,7 +74,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NULL
+	[s].[CEnum] IS NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -84,7 +84,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT NULL
+	[s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

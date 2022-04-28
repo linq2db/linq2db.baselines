@@ -36,7 +36,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN (NULL, NULL)
+	[s].[CEnum] IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -46,7 +46,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN (NULL, NULL)
+	[s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite

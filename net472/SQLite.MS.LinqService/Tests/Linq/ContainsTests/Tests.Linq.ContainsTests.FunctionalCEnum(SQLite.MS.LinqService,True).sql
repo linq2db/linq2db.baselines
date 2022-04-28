@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Src]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [Src]
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS [Src]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Int_1  -- Int32
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Int_1  -- Int32
@@ -67,7 +67,11 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value4___'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -76,11 +80,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', 'FOUR')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -89,11 +95,15 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE') OR [s].[Enum] IS NULL
+	[s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -102,11 +112,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', 'TWO')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -115,11 +127,15 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN ('TWO') AND [s].[Enum] IS NOT NULL
+	[s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -128,11 +144,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	([s].[Enum] NOT IN ('THREE', 'TWO') OR [s].[Enum] IS NULL)
+	([s].[CEnum] NOT IN (@CEnum, @CEnum_1) OR [s].[CEnum] IS NULL)
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Src]
 
