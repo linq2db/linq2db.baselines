@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS [Src]
 	[Id]    INTEGER     NOT NULL,
 	[Int]   INTEGER         NULL,
 	[Enum]  NVarChar(5)     NULL,
-	[CEnum] VarChar         NULL
+	[CEnum] VarChar(20)     NULL
 )
 
 BeforeExecute
