@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NOT NULL)
 	DROP TABLE [Src]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [Src]
 (
@@ -31,37 +31,35 @@ VALUES
 (2,2,N'TWO','___Value2___')
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014
+DECLARE @CEnum VarChar(8000) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	1 = 0
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014
+DECLARE @CEnum VarChar(8000) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
--- SqlServer.2014
-
-SELECT
-	Count(*)
-FROM
-	[Src] [s]
-WHERE
-	1 = 1
-
-BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[Src]', N'U') IS NOT NULL)
 	DROP TABLE [Src]

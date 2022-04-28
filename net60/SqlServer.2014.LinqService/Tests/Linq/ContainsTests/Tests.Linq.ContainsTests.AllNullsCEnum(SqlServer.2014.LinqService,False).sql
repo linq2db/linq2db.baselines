@@ -70,63 +70,31 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @CEnum VarChar(8000) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+SET     @CEnum_1 = NULL
 
-SELECT TOP (@take)
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @CEnum VarChar(8000) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+SET     @CEnum_1 = NULL
 
-SELECT TOP (@take)
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1) OR [s].[Int] IS NULL
-
-BeforeExecute
--- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Int] IN (-1, 2)
-
-BeforeExecute
--- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Int] NOT IN (2) AND [s].[Int] IS NOT NULL
-
-BeforeExecute
--- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	([s].[Int] NOT IN (-1, 2) OR [s].[Int] IS NULL)
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.2014

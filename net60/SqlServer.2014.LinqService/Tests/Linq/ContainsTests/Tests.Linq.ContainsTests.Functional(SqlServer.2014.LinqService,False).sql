@@ -10,9 +10,10 @@ BeforeExecute
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
 	(
-		[Id]   Int         NOT NULL,
-		[Int]  Int             NULL,
-		[Enum] NVarChar(5)     NULL
+		[Id]    Int          NOT NULL,
+		[Int]   Int              NULL,
+		[Enum]  NVarChar(5)      NULL,
+		[CEnum] VarChar(Max)     NULL
 	)
 
 BeforeExecute
@@ -23,18 +24,22 @@ DECLARE @Int_1 Int -- Int32
 SET     @Int_1 = NULL
 DECLARE @Enum NVarChar(5) -- String
 SET     @Enum = NULL
+DECLARE @CEnum VarChar(8000) -- AnsiString
+SET     @CEnum = NULL
 
 INSERT INTO [Src]
 (
 	[Id],
 	[Int],
-	[Enum]
+	[Enum],
+	[CEnum]
 )
 VALUES
 (
 	@Id,
 	@Int_1,
-	@Enum
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute
@@ -45,18 +50,22 @@ DECLARE @Int_1 Int -- Int32
 SET     @Int_1 = 2
 DECLARE @Enum NVarChar(5) -- String
 SET     @Enum = N'TWO'
+DECLARE @CEnum VarChar(8000) -- AnsiString
+SET     @CEnum = N'___Value2___'
 
 INSERT INTO [Src]
 (
 	[Id],
 	[Int],
-	[Enum]
+	[Enum],
+	[CEnum]
 )
 VALUES
 (
 	@Id,
 	@Int_1,
-	@Enum
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute

@@ -38,7 +38,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	1 = 0
+	[s].[CEnum] IS NULL
 
 BeforeExecute
 -- SqlServer.2014
@@ -48,17 +48,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
-
-BeforeExecute
--- SqlServer.2014
-
-SELECT
-	Count(*)
-FROM
-	[Src] [s]
-WHERE
-	1 = 1
+	[s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2014

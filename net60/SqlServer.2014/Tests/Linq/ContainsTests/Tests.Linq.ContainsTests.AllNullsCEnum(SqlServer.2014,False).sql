@@ -32,33 +32,31 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @CEnum VarChar(8000) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	1 = 0
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @CEnum VarChar(8000) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(8000) -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	1 = 1
-
-BeforeExecute
--- SqlServer.2014
-
-SELECT
-	Count(*)
-FROM
-	[Src] [s]
-WHERE
-	1 = 1
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.2014
