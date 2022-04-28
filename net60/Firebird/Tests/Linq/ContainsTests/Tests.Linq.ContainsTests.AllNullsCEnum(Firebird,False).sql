@@ -37,63 +37,31 @@ SELECT 2,2,'TWO','___Value2___' FROM rdb$database
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
+DECLARE @CEnum VarChar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- String
+SET     @CEnum_1 = NULL
 
-SELECT FIRST @take
-	"s"."Id"
+SELECT
+	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" IN ('THREE', 'FOUR')
+	"s"."CEnum" IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
+DECLARE @CEnum VarChar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- String
+SET     @CEnum_1 = NULL
 
-SELECT FIRST @take
-	"s"."Id"
+SELECT
+	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" IN ('THREE') OR "s"."Enum" IS NULL
-
-BeforeExecute
--- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Enum" IN ('THREE', 'TWO')
-
-BeforeExecute
--- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Enum" NOT IN ('TWO') AND "s"."Enum" IS NOT NULL
-
-BeforeExecute
--- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	("s"."Enum" NOT IN ('THREE', 'TWO') OR "s"."Enum" IS NULL)
+	"s"."CEnum" NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- Firebird
