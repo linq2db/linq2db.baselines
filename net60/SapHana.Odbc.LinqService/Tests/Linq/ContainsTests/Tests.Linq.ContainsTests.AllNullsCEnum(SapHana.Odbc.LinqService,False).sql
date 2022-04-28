@@ -68,68 +68,31 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
+DECLARE @CEnum VarChar -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
-	"s"."Id"
+	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" IN ('THREE', 'FOUR')
-LIMIT ?
+	"s"."CEnum" IN (?, ?)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
+DECLARE @CEnum VarChar -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar -- AnsiString
+SET     @CEnum_1 = NULL
 
 SELECT
-	"s"."Id"
+	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" IN ('THREE', NULL)
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Enum" IN ('THREE', 'TWO')
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Enum" NOT IN (NULL, 'TWO')
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Enum" NOT IN ('THREE', 'TWO')
-LIMIT ?
+	"s"."CEnum" NOT IN (?, ?)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -68,68 +68,23 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"s"."Id"
+	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" IN ('THREE', 'FOUR')
-LIMIT ?
+	"s"."CEnum" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"s"."Id"
+	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" IN ('THREE', NULL)
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Enum" IN ('THREE', 'TWO')
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Enum" NOT IN (NULL, 'TWO')
-LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"s"."Id"
-FROM
-	"Src" "s"
-WHERE
-	"s"."Enum" NOT IN ('THREE', 'TWO')
-LIMIT ?
+	"s"."CEnum" IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
