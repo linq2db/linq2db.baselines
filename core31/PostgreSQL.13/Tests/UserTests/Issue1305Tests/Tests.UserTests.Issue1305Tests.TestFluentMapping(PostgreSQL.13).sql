@@ -100,7 +100,9 @@ BeforeExecute
 				       columns.IsIdentity OR COALESCE(columns.DefaultValue ~* 'nextval', false) AS IsIdentity,
 				       columns.SkipOnInsert,
 				       columns.SkipOnUpdate,
-				       columns.Description
+				       columns.Description,
+				       columns.IsCustomEnum,
+				       columns.IsCustomRange
 				FROM (
 				         SELECT current_database() || '.' || ns.nspname || '.' || cls.relname                            AS TableID,
 				                attr.attname                                                                             AS Name,
@@ -111,13 +113,15 @@ BeforeExecute
 				                        CASE
 				                            WHEN nbt.nspname = 'pg_catalog'::name THEN format_type(typ.typbasetype, attr.atttypmod)
 				                            ELSE 'USER-DEFINED'::text
-				                            END
+				                        END
 				                    ELSE
 				                        CASE
-				                            WHEN nt.nspname = 'pg_catalog'::name THEN format_type(attr.atttypid, attr.atttypmod)
+				                            WHEN nt.nspname = 'pg_catalog'::name or typ.typtype = 'e'::"char" or typ.typtype = 'r'::"char" THEN format_type(attr.atttypid, attr.atttypmod)
 				                            ELSE 'USER-DEFINED'::text
-				                            END
+				                        END
 				                    END                                                                                  AS DataType,
+				                typ.typtype = 'e'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomEnum,
+				                typ.typtype = 'r'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomRange,
 				                attr.attndims                                                                            AS ArrayDimensions,
 				                information_schema._pg_char_max_length(information_schema._pg_truetypid(attr.*, typ.*),
 				                                                       information_schema._pg_truetypmod(attr.*, typ.*)) AS Length,
