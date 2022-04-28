@@ -68,53 +68,69 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value4___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', 'FOUR')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', NULL)
+	[s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', 'TWO')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN (NULL, 'TWO')
+	[s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN ('THREE', 'TWO')
+	([s].[CEnum] NOT IN (@CEnum, @CEnum_1) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
 -- Access AccessOleDb

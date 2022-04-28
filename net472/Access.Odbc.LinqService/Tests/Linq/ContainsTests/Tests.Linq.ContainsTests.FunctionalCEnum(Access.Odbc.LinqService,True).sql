@@ -68,53 +68,69 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value4___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[CEnum] IN (?, ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1) OR [s].[Int] IS NULL
+	[s].[CEnum] IN (?) OR [s].[CEnum] IS NULL
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, 2)
+	[s].[CEnum] IN (?, ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (2) AND [s].[Int] IS NOT NULL
+	[s].[CEnum] NOT IN (?) AND [s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[Int] NOT IN (-1, 2) OR [s].[Int] IS NULL)
+	([s].[CEnum] NOT IN (?, ?) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
