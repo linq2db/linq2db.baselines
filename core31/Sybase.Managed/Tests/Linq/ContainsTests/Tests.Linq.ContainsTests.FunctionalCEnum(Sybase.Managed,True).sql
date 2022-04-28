@@ -33,53 +33,69 @@ SELECT 2,2,'TWO','___Value2___'
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value4___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', 'FOUR')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE') OR [s].[Enum] IS NULL
+	[s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', 'TWO')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN ('TWO') AND [s].[Enum] IS NOT NULL
+	[s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[Enum] NOT IN ('THREE', 'TWO') OR [s].[Enum] IS NULL)
+	([s].[CEnum] NOT IN (@CEnum, @CEnum_1) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase

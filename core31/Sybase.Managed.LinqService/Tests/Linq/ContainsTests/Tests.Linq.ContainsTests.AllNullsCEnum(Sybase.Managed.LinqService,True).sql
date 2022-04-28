@@ -20,6 +20,14 @@ IF (OBJECT_ID(N'Src') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Int_1 Integer -- Int32
+SET     @Int_1 = NULL
+DECLARE @Enum UniVarChar -- String
+SET     @Enum = NULL
+DECLARE @CEnum VarChar -- AnsiString
+SET     @CEnum = NULL
 
 INSERT INTO [Src]
 (
@@ -28,58 +36,59 @@ INSERT INTO [Src]
 	[Enum],
 	[CEnum]
 )
-SELECT 1,NULL,NULL,NULL UNION ALL
-SELECT 2,2,'TWO','___Value2___'
+VALUES
+(
+	@Id,
+	@Int_1,
+	@Enum,
+	@CEnum
+)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Int_1 Integer -- Int32
+SET     @Int_1 = 2
+DECLARE @Enum UniVarChar(3) -- String
+SET     @Enum = 'TWO'
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value2___'
+
+INSERT INTO [Src]
+(
+	[Id],
+	[Int],
+	[Enum],
+	[CEnum]
+)
+VALUES
+(
+	@Id,
+	@Int_1,
+	@Enum,
+	@CEnum
+)
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', 'FOUR')
+	[s].[CEnum] IS NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE') OR [s].[Enum] IS NULL
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT TOP 1
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] IN ('THREE', 'TWO')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT TOP 1
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] NOT IN ('TWO') AND [s].[Enum] IS NOT NULL
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT TOP 1
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	([s].[Enum] NOT IN ('THREE', 'TWO') OR [s].[Enum] IS NULL)
+	[s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase

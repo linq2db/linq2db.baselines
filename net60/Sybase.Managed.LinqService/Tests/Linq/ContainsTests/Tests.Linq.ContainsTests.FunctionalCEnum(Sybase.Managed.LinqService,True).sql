@@ -72,23 +72,69 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value4___'
 
-SELECT
-	Count(*)
+SELECT TOP 1
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NULL
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
 
-SELECT
-	Count(*)
+SELECT TOP 1
+	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT NULL
+	[s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
+
+SELECT TOP 1
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
+
+SELECT TOP 1
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 VarChar(12) -- AnsiString
+SET     @CEnum_1 = '___Value2___'
+
+SELECT TOP 1
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	([s].[CEnum] NOT IN (@CEnum, @CEnum_1) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
