@@ -72,61 +72,77 @@ BeforeExecute
 -- SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = N'___Value3___'
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = N'___Value4___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN (N'THREE', N'FOUR')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = N'___Value3___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN (N'THREE', NULL)
+	[s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = N'___Value3___'
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = N'___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN (N'THREE', N'TWO')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = N'___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN (NULL, N'TWO')
+	[s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = N'___Value3___'
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = N'___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN (N'THREE', N'TWO')
+	([s].[CEnum] NOT IN (@CEnum, @CEnum_1) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
 -- SqlServer.2008
