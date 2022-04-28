@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "Src"
 (
-	"Id"    Int     NOT NULL,
-	"Int"   Int         NULL,
-	"Enum"  text        NULL,
-	"CEnum" VarChar     NULL
+	"Id"    Int         NOT NULL,
+	"Int"   Int             NULL,
+	"Enum"  text            NULL,
+	"CEnum" VarChar(20)     NULL
 )
 
 BeforeExecute
