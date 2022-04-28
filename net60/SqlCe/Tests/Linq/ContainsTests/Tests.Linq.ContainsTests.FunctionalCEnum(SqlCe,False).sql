@@ -31,61 +31,81 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum NVarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 NVarChar(12) -- String
+SET     @CEnum_1 = '___Value4___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, -2)
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum NVarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 NVarChar -- String
+SET     @CEnum_1 = NULL
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, NULL)
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum NVarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 NVarChar(12) -- String
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1, 2)
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum NVarChar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 NVarChar(12) -- String
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, 2)
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @CEnum NVarChar(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 NVarChar(12) -- String
+SET     @CEnum_1 = '___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (-1, 2)
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlCe

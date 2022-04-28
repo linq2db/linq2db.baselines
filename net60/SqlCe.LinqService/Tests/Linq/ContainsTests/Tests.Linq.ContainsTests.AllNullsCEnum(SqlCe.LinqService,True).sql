@@ -68,63 +68,23 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', 'FOUR')
+	[s].[CEnum] IS NULL
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', NULL)
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] IN ('THREE', 'TWO')
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] NOT IN (NULL, 'TWO')
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] NOT IN ('THREE', 'TWO')
+	[s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- SqlCe

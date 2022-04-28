@@ -8,9 +8,10 @@ BeforeExecute
 
 CREATE TABLE [Src]
 (
-	[Id]   Int         NOT NULL,
-	[Int]  Int             NULL,
-	[Enum] NVarChar(5)     NULL
+	[Id]    Int          NOT NULL,
+	[Int]   Int              NULL,
+	[Enum]  NVarChar(5)      NULL,
+	[CEnum] NVarChar(20)     NULL
 )
 
 BeforeExecute
@@ -20,10 +21,11 @@ INSERT INTO [Src]
 (
 	[Id],
 	[Int],
-	[Enum]
+	[Enum],
+	[CEnum]
 )
-SELECT 1,NULL,NULL UNION ALL
-SELECT 2,2,'TWO'
+SELECT 1,NULL,NULL,NULL UNION ALL
+SELECT 2,2,'TWO','___Value2___'
 
 BeforeExecute
 -- SqlCe

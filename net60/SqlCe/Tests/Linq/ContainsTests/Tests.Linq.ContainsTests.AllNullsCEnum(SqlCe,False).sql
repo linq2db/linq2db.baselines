@@ -29,23 +29,31 @@ SELECT 2,2,'TWO','___Value2___'
 
 BeforeExecute
 -- SqlCe
+DECLARE @CEnum NVarChar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 NVarChar -- String
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (NULL, NULL)
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlCe
+DECLARE @CEnum NVarChar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 NVarChar -- String
+SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, NULL)
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlCe

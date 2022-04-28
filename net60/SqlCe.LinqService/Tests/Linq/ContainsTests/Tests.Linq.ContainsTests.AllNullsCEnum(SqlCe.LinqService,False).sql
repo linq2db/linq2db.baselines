@@ -68,63 +68,31 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @CEnum NVarChar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 NVarChar -- String
+SET     @CEnum_1 = NULL
 
-SELECT TOP (@take)
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', 'FOUR')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @CEnum NVarChar -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 NVarChar -- String
+SET     @CEnum_1 = NULL
 
-SELECT TOP (@take)
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE', NULL)
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] IN ('THREE', 'TWO')
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] NOT IN (NULL, 'TWO')
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] NOT IN ('THREE', 'TWO')
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlCe
