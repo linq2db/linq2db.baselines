@@ -16,6 +16,14 @@ CREATE TABLE IF NOT EXISTS [Src]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Int_1  -- Int32
+SET     @Int_1 = NULL
+DECLARE @Enum NVarChar -- String
+SET     @Enum = NULL
+DECLARE @CEnum VarChar -- AnsiString
+SET     @CEnum = NULL
 
 INSERT INTO [Src]
 (
@@ -25,8 +33,38 @@ INSERT INTO [Src]
 	[CEnum]
 )
 VALUES
-(1,NULL,NULL,NULL),
-(2,2,'TWO','___Value2___')
+(
+	@Id,
+	@Int_1,
+	@Enum,
+	@CEnum
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @Int_1  -- Int32
+SET     @Int_1 = 2
+DECLARE @Enum NVarChar(3) -- String
+SET     @Enum = 'TWO'
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value2___'
+
+INSERT INTO [Src]
+(
+	[Id],
+	[Int],
+	[Enum],
+	[CEnum]
+)
+VALUES
+(
+	@Id,
+	@Int_1,
+	@Enum,
+	@CEnum
+)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -36,7 +74,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (NULL, NULL)
+	[s].[CEnum] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -46,7 +84,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (NULL, NULL)
+	[s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

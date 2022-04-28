@@ -8,9 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [Src]
 (
-	[Id]   INTEGER     NOT NULL,
-	[Int]  INTEGER         NULL,
-	[Enum] NVarChar(5)     NULL
+	[Id]    INTEGER     NOT NULL,
+	[Int]   INTEGER         NULL,
+	[Enum]  NVarChar(5)     NULL,
+	[CEnum] VarChar         NULL
 )
 
 BeforeExecute
@@ -20,11 +21,12 @@ INSERT INTO [Src]
 (
 	[Id],
 	[Int],
-	[Enum]
+	[Enum],
+	[CEnum]
 )
 VALUES
-(1,NULL,NULL),
-(2,2,'TWO')
+(1,NULL,NULL,NULL),
+(2,2,'TWO','___Value2___')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
