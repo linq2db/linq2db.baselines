@@ -40,68 +40,23 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE', 'FOUR')
-FETCH NEXT :take ROWS ONLY
+	s."CEnum" IS NULL
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE', NULL)
-FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" IN ('THREE', 'TWO')
-FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" NOT IN (NULL, 'TWO')
-FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" NOT IN ('THREE', 'TWO')
-FETCH NEXT :take ROWS ONLY
+	s."CEnum" IS NOT NULL
 
 BeforeExecute
 -- Oracle.Managed Oracle12

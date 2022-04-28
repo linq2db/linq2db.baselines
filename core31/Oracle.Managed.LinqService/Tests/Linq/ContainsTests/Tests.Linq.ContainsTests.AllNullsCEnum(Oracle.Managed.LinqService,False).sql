@@ -84,68 +84,31 @@ VALUES
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @CEnum Varchar2 -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar2 -- String
+SET     @CEnum_1 = NULL
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE', 'FOUR')
-FETCH NEXT :take ROWS ONLY
+	s."CEnum" IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @CEnum Varchar2 -- String
+SET     @CEnum = NULL
+DECLARE @CEnum_1 Varchar2 -- String
+SET     @CEnum_1 = NULL
 
 SELECT
-	s."Id"
+	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE', NULL)
-FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" IN ('THREE', 'TWO')
-FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" NOT IN (NULL, 'TWO')
-FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	s."Id"
-FROM
-	"Src" s
-WHERE
-	s."Enum" NOT IN ('THREE', 'TWO')
-FETCH NEXT :take ROWS ONLY
+	s."CEnum" NOT IN (:CEnum, :CEnum_1)
 
 BeforeExecute
 -- Oracle.Managed Oracle12

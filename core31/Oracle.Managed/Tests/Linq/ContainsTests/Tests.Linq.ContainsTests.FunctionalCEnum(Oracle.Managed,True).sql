@@ -32,58 +32,18 @@ END;
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Int_1 Int32
-SET     @Int_1 = NULL
-DECLARE @Enum Varchar2 -- String
-SET     @Enum = NULL
-DECLARE @CEnum Varchar2 -- String
-SET     @CEnum = NULL
 
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum",
-	"CEnum"
-)
-VALUES
-(
-	:Id,
-	:Int_1,
-	:Enum,
-	:CEnum
-)
+INSERT ALL
+	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (1,NULL,NULL,NULL)
+	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (2,2,'TWO','___Value2___')
+SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @Int_1 Int32
-SET     @Int_1 = 2
-DECLARE @Enum Varchar2(3) -- String
-SET     @Enum = 'TWO'
 DECLARE @CEnum Varchar2(12) -- String
-SET     @CEnum = '___Value2___'
-
-INSERT INTO "Src"
-(
-	"Id",
-	"Int",
-	"Enum",
-	"CEnum"
-)
-VALUES
-(
-	:Id,
-	:Int_1,
-	:Enum,
-	:CEnum
-)
-
-BeforeExecute
--- Oracle.Managed Oracle12
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar2(12) -- String
+SET     @CEnum_1 = '___Value4___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -92,11 +52,13 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE', 'FOUR')
+	s."CEnum" IN (:CEnum, :CEnum_1)
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @CEnum Varchar2(12) -- String
+SET     @CEnum = '___Value3___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -105,11 +67,15 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE', NULL)
+	s."CEnum" IN (:CEnum) OR s."CEnum" IS NULL
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @CEnum Varchar2(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar2(12) -- String
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -118,11 +84,13 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE', 'TWO')
+	s."CEnum" IN (:CEnum, :CEnum_1)
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @CEnum_1 Varchar2(12) -- String
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -131,11 +99,15 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" NOT IN (NULL, 'TWO')
+	s."CEnum" NOT IN (:CEnum_1) AND s."CEnum" IS NOT NULL
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @CEnum Varchar2(12) -- String
+SET     @CEnum = '___Value3___'
+DECLARE @CEnum_1 Varchar2(12) -- String
+SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -144,7 +116,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" NOT IN ('THREE', 'TWO')
+	(s."CEnum" NOT IN (:CEnum, :CEnum_1) OR s."CEnum" IS NULL)
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
