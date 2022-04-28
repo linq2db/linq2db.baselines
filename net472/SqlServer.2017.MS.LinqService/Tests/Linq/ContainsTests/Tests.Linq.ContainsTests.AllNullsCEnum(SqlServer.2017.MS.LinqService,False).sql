@@ -69,63 +69,31 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = NULL
 
-SELECT TOP (@take)
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN (N'THREE', N'FOUR')
+	[s].[CEnum] IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @CEnum VarChar(20) -- AnsiString
+SET     @CEnum = NULL
+DECLARE @CEnum_1 VarChar(20) -- AnsiString
+SET     @CEnum_1 = NULL
 
-SELECT TOP (@take)
-	[s].[Id]
+SELECT
+	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN (N'THREE', NULL)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] IN (N'THREE', N'TWO')
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] NOT IN (NULL, N'TWO')
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
-
-SELECT TOP (@take)
-	[s].[Id]
-FROM
-	[Src] [s]
-WHERE
-	[s].[Enum] NOT IN (N'THREE', N'TWO')
+	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
