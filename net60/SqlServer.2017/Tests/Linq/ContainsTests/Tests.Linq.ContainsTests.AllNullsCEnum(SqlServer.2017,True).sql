@@ -37,7 +37,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IS NULL
+	[s].[CEnum] IS NULL
 
 BeforeExecute
 -- SqlServer.2017
@@ -47,7 +47,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IS NOT NULL
+	[s].[CEnum] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2017
