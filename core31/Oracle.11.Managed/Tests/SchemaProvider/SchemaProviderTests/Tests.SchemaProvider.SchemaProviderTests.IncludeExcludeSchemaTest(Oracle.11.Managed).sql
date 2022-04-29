@@ -172,8 +172,8 @@ DECLARE @DBOWNER Varchar2 -- String
 SET     @DBOWNER = ''
 DECLARE @TXT Varchar2 -- String
 SET     @TXT = ''
-DECLARE @STATUS Varchar2 -- String
-SET     @STATUS = NULL
+DECLARE @STATUS Int32
+SET     @STATUS = 0
 
 SYS.SUBPTXT
 
@@ -1125,8 +1125,8 @@ SYSTEM.TEST2132
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @POUTPUTINT Varchar2 -- String
-SET     @POUTPUTINT = NULL
+DECLARE @POUTPUTINT Int32
+SET     @POUTPUTINT = 0
 DECLARE @POUTPUTSTRING NVarchar2 -- String
 SET     @POUTPUTSTRING = ''
 
@@ -1306,18 +1306,18 @@ OUTLN.ORA$GRANT_SYS_SELECT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OWNID Varchar2 -- String
-SET     @OWNID = NULL
+DECLARE @OWNID Int32
+SET     @OWNID = 0
 DECLARE @ONAME Varchar2 -- String
 SET     @ONAME = ''
-DECLARE @IDXID Varchar2 -- String
-SET     @IDXID = NULL
-DECLARE @IXPID Varchar2 -- String
-SET     @IXPID = NULL
+DECLARE @IDXID Int32
+SET     @IDXID = 0
+DECLARE @IXPID Int32
+SET     @IXPID = 0
 DECLARE @RTABNM Varchar2 -- String
 SET     @RTABNM = ''
-DECLARE @SRCFLG Varchar2 -- String
-SET     @SRCFLG = NULL
+DECLARE @SRCFLG Int32
+SET     @SRCFLG = 0
 
 CTXSYS.SYNCRN
 
@@ -1356,8 +1356,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @SCHREF Varchar2 -- String
 SET     @SCHREF = NULL
-DECLARE @HIDE Varchar2 -- String
-SET     @HIDE = NULL
+DECLARE @HIDE Int32
+SET     @HIDE = 0
 
 XDB.XDB$PATCHUPDELETESCHEMA
 
@@ -1687,8 +1687,8 @@ DECLARE @DBOWNER Varchar2 -- String
 SET     @DBOWNER = ''
 DECLARE @TXT Varchar2 -- String
 SET     @TXT = ''
-DECLARE @STATUS Varchar2 -- String
-SET     @STATUS = NULL
+DECLARE @STATUS Int32
+SET     @STATUS = 0
 
 SYS.SUBPTXT
 
@@ -2640,18 +2640,18 @@ OUTLN.ORA$GRANT_SYS_SELECT
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @OWNID Varchar2 -- String
-SET     @OWNID = NULL
+DECLARE @OWNID Int32
+SET     @OWNID = 0
 DECLARE @ONAME Varchar2 -- String
 SET     @ONAME = ''
-DECLARE @IDXID Varchar2 -- String
-SET     @IDXID = NULL
-DECLARE @IXPID Varchar2 -- String
-SET     @IXPID = NULL
+DECLARE @IDXID Int32
+SET     @IDXID = 0
+DECLARE @IXPID Int32
+SET     @IXPID = 0
 DECLARE @RTABNM Varchar2 -- String
 SET     @RTABNM = ''
-DECLARE @SRCFLG Varchar2 -- String
-SET     @SRCFLG = NULL
+DECLARE @SRCFLG Int32
+SET     @SRCFLG = 0
 
 CTXSYS.SYNCRN
 
@@ -2690,8 +2690,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
 DECLARE @SCHREF Varchar2 -- String
 SET     @SCHREF = NULL
-DECLARE @HIDE Varchar2 -- String
-SET     @HIDE = NULL
+DECLARE @HIDE Int32
+SET     @HIDE = 0
 
 XDB.XDB$PATCHUPDELETESCHEMA
 

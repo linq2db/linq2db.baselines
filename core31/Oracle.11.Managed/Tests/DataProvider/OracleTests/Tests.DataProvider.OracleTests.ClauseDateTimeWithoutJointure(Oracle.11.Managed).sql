@@ -32,7 +32,6 @@ SELECT
 	a."bfileDataType",
 	a."guidDataType",
 	a."longDataType",
-	a."uriDataType",
 	a."xmlDataType"
 FROM
 	"AllTypes" a

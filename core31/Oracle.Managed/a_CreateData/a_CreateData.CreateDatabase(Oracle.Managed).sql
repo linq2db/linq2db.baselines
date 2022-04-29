@@ -981,7 +981,6 @@ CREATE TABLE "AllTypes"
 	"guidDataType"             raw(16)                        NULL,
 	"longDataType"             long                           NULL,
 
-	"uriDataType"              UriType                        NULL,
 	"xmlDataType"              XmlType                        NULL
 )
 
@@ -1045,7 +1044,6 @@ INSERT INTO "AllTypes"
 	"guidDataType",
 	"longDataType",
 
-	"uriDataType",
 	"xmlDataType"
 )
 SELECT
@@ -1078,7 +1076,6 @@ SELECT
 	NULL guidDataType,
 	NULL longDataType,
 
-	NULL uriDataType,
 	NULL xmlDataType
 FROM dual
 UNION ALL
@@ -1112,7 +1109,6 @@ SELECT
 	sys_guid(),
 	'LONG',
 
-	SYS.URIFACTORY.GETURI('http://www.linq2db.com'),
 	XMLTYPE('<root><element strattr="strvalue" intattr="12345"/></root>')
 FROM dual
 
@@ -1294,7 +1290,6 @@ PROCEDURE AllOutputParameters
 	bfileDataType            IN OUT bfile                          ,
 	guidDataType             IN OUT raw                            ,
 
-	--uriDataType              IN OUT UriType                      ,
 	xmlDataType              IN OUT XmlType
 
 ) IS
@@ -1331,7 +1326,6 @@ BEGIN
  		at."bfileDataType",
 		at."guidDataType",
 
-		--at."uriDataType",
 		at."xmlDataType"
 
 		INTO
@@ -1367,7 +1361,6 @@ BEGIN
 		bfileDataType,
 		guidDataType,
 
-		--uriDataType,
 		xmlDataType
 
 	FROM "AllTypes" at

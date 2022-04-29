@@ -142,8 +142,8 @@ SYSTEM.TEST2132
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @POUTPUTINT Varchar2 -- String
-SET     @POUTPUTINT = NULL
+DECLARE @POUTPUTINT Int32
+SET     @POUTPUTINT = 0
 DECLARE @POUTPUTSTRING NVarchar2 -- String
 SET     @POUTPUTSTRING = ''
 
