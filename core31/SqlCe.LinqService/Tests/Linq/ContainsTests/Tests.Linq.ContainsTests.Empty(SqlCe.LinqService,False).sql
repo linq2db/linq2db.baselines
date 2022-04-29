@@ -1,0 +1,85 @@
+﻿BeforeExecute
+-- SqlCe
+
+DROP TABLE [Src]
+
+BeforeExecute
+-- SqlCe
+
+CREATE TABLE [Src]
+(
+	[Id]  Int NOT NULL,
+	[Int] Int     NULL
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Int_1 Int -- Int32
+SET     @Int_1 = NULL
+
+INSERT INTO [Src]
+(
+	[Id],
+	[Int]
+)
+VALUES
+(
+	@Id,
+	@Int_1
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Int_1 Int -- Int32
+SET     @Int_1 = 2
+
+INSERT INTO [Src]
+(
+	[Id],
+	[Int]
+)
+VALUES
+(
+	@Id,
+	@Int_1
+)
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	Count(*)
+FROM
+	[Src] [s]
+WHERE
+	1 = 0
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	Count(*)
+FROM
+	[Src] [s]
+WHERE
+	1 = 1
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	Count(*)
+FROM
+	[Src] [s]
+WHERE
+	1 = 1
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Src]
+
