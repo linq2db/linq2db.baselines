@@ -1,0 +1,34 @@
+﻿BeforeExecute
+-- Firebird3 Firebird
+
+CREATE TABLE MRECEIPT
+(
+	RECEIPT_NO VarChar(255) CHARACTER SET UNICODE_FSS,
+	CUSTKEY    VarChar(255) CHARACTER SET UNICODE_FSS
+)
+
+BeforeExecute
+-- Firebird3 Firebird
+
+CREATE TABLE CUST_DTL
+(
+	CUSTKEY   VarChar(255) CHARACTER SET UNICODE_FSS,
+	BILLGROUP VarChar(255) CHARACTER SET UNICODE_FSS
+)
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CUST_DTL')) THEN
+		EXECUTE STATEMENT 'DROP TABLE CUST_DTL';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'MRECEIPT')) THEN
+		EXECUTE STATEMENT 'DROP TABLE MRECEIPT';
+END
+
