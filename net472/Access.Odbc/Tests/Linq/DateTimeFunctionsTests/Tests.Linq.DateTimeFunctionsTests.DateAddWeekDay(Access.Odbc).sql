@@ -1,0 +1,8 @@
+﻿BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	DateAdd('w', 1, [t].[DateTimeValue])
+FROM
+	[LinqDataTypes] [t]
+

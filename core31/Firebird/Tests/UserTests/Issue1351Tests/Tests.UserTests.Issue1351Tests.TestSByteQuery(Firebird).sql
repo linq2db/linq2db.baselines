@@ -1,0 +1,42 @@
+﻿BeforeExecute
+-- Firebird
+
+CREATE TABLE "T1351Model"
+(
+	ID             Int      NOT NULL,
+	"TestField"    SmallInt NOT NULL,
+	"TestNullable" SmallInt
+)
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	"t1".ID,
+	"t1"."TestField",
+	"t1"."TestNullable"
+FROM
+	"T1351Model" "t1"
+WHERE
+	"t1"."TestField" = 0
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	"t1".ID,
+	"t1"."TestField",
+	"t1"."TestNullable"
+FROM
+	"T1351Model" "t1"
+WHERE
+	("t1"."TestNullable" <> 1 OR "t1"."TestNullable" IS NULL)
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T1351Model')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "T1351Model"';
+END
+

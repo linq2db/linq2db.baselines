@@ -1,0 +1,63 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+CREATE TABLE "TableToInsert"
+(
+	"Id"    Int          NOT NULL,
+	"Value" VarChar(255)     NULL,
+
+	CONSTRAINT "PK_TableToInsert" PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+INSERT INTO "TableToInsert"
+(
+	"Id",
+	"Value"
+)
+SELECT
+	r."Id",
+	r."Value"
+FROM
+	(
+		SELECT 3 AS "Id", 'Janet' AS "Value" FROM sys.dual
+		UNION ALL
+		SELECT 4, 'Doe' FROM sys.dual) r
+		LEFT JOIN "TableToInsert" t ON t."Id" = r."Id"
+WHERE
+	t."Id" IS NULL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+INSERT INTO "TableToInsert"
+(
+	"Id",
+	"Value"
+)
+SELECT
+	r."Id",
+	r."Value"
+FROM
+	(
+		SELECT 3 AS "Id", 'Janet' AS "Value" FROM sys.dual
+		UNION ALL
+		SELECT 4, 'Doe' FROM sys.dual) r
+		LEFT JOIN "TableToInsert" t ON t."Id" = r."Id"
+WHERE
+	t."Id" IS NULL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TableToInsert"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+

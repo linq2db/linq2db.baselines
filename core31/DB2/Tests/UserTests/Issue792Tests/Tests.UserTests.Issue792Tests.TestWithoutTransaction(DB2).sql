@@ -1,0 +1,86 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	ALLTYPES "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	current schema
+FROM
+	"LinqDataTypes" "_"
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+select current_schema from sysibm.sysdummy1
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+
+SELECT
+	PROCSCHEMA,
+	PROCNAME
+FROM
+	SYSCAT.PROCEDURES
+WHERE
+	PROCSCHEMA IN ('DB2INST1')
+ORDER BY PROCSCHEMA, PROCNAME
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+
+SELECT
+	PROCSCHEMA,
+	PROCNAME,
+	PARMNAME,
+	TYPENAME,
+	PARM_MODE,
+
+	ORDINAL,
+	LENGTH,
+	SCALE
+FROM
+	SYSCAT.PROCPARMS
+WHERE
+	PROCSCHEMA IN ('DB2INST1')
+
+BeforeExecute
+BeginTransaction
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+TESTDB.DB2INST1.ADDISSUE792RECORD
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 0
+
+TESTDB.DB2INST1.PERSON_SELECTBYKEY
+
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	Count(*)
+FROM
+	ALLTYPES "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DELETE FROM
+	ALLTYPES "t1"
+WHERE
+	"t1".CHAR20DATATYPE = 'issue792'
+

@@ -1,0 +1,111 @@
+﻿BeforeExecute
+-- Sybase.Managed Sybase
+
+sp_chgattribute Person, 'identity_burn_max', 0, '4'
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DELETE FROM [Person]
+FROM
+	[Person] [t1]
+WHERE
+	[t1].[PersonID] > 4
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Gender UniChar(1) -- StringFixedLength
+SET     @Gender = 'M'
+DECLARE @FirstName UniVarChar(1) -- String
+SET     @FirstName = 'a'
+DECLARE @MiddleName UniVarChar(1) -- String
+SET     @MiddleName = 'A'
+DECLARE @LastName UniVarChar(1) -- String
+SET     @LastName = 'b'
+
+INSERT INTO [Person]
+(
+	[Gender],
+	[FirstName],
+	[MiddleName],
+	[LastName]
+)
+VALUES
+(
+	@Gender,
+	@FirstName,
+	@MiddleName,
+	@LastName
+)
+
+SELECT @@IDENTITY
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @Gender UniChar(1) -- StringFixedLength
+SET     @Gender = 'M'
+DECLARE @FirstName UniVarChar(1) -- String
+SET     @FirstName = 'c'
+DECLARE @MiddleName UniVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @LastName UniVarChar(1) -- String
+SET     @LastName = 'd'
+
+INSERT INTO [Person]
+(
+	[Gender],
+	[FirstName],
+	[MiddleName],
+	[LastName]
+)
+VALUES
+(
+	@Gender,
+	@FirstName,
+	@MiddleName,
+	@LastName
+)
+
+SELECT @@IDENTITY
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @id1 Integer -- Int32
+SET     @id1 = 5
+
+SELECT TOP 1
+	[_].[PersonID],
+	[_].[Gender],
+	[_].[FirstName],
+	[_].[MiddleName],
+	[_].[LastName]
+FROM
+	[Person] [_]
+WHERE
+	[_].[PersonID] = @id1
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @id2 Integer -- Int32
+SET     @id2 = 6
+
+SELECT TOP 1
+	[_].[PersonID],
+	[_].[Gender],
+	[_].[FirstName],
+	[_].[MiddleName],
+	[_].[LastName]
+FROM
+	[Person] [_]
+WHERE
+	[_].[PersonID] = @id2
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+DELETE FROM [Person]
+FROM
+	[Person] [t1]
+WHERE
+	[t1].[PersonID] > 4
+

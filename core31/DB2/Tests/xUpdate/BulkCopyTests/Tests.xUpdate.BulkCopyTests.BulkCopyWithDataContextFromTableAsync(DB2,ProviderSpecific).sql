@@ -1,0 +1,62 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "SimpleBulkCopyTable"
+(
+	"Id" Int NOT NULL
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(1)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(2)
+
+BeforeExecute
+INSERT BULK "SimpleBulkCopyTable"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(10)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(20)
+
+BeforeExecute
+INSERT BULK "SimpleBulkCopyTable"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "SimpleBulkCopyTable"';
+END
+

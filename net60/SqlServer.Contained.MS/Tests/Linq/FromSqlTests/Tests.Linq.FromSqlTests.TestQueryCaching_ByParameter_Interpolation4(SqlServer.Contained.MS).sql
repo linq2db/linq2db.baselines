@@ -1,0 +1,60 @@
+﻿BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @p_1 Variant -- Object
+SET     @p_1 = NULL
+
+SELECT
+	[t1].[Value1]
+FROM
+	(
+		SELECT @p_1 as Value1 /*TestQueryCaching_ByParameter_Interpolation4*/
+	) [t1]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @p_1 Variant -- Object
+SET     @p_1 = NULL
+
+SELECT
+	[t1].[Value1]
+FROM
+	(
+		SELECT @p_1 as Value1 /*TestQueryCaching_ByParameter_Interpolation4*/
+	) [t1]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @p_1 Variant -- Object
+SET     @p_1 = NULL
+
+SELECT
+	[t1].[Value1]
+FROM
+	(
+		SELECT @p_1 as Value1 /*TestQueryCaching_ByParameter_Interpolation4*/
+	) [t1]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @p_1 Variant -- Object
+SET     @p_1 = NULL
+
+SELECT
+	[t1].[Value1]
+FROM
+	(
+		SELECT @p_1 as Value1 /*TestQueryCaching_ByParameter_Interpolation4*/
+	) [t1]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @p_1 Variant -- Object
+SET     @p_1 = NULL
+
+SELECT
+	[t1].[Value1]
+FROM
+	(
+		SELECT @p_1 as Value1 /*TestQueryCaching_ByParameter_Interpolation4*/
+	) [t1]
+
