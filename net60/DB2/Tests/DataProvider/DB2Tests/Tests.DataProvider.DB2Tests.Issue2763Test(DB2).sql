@@ -83,7 +83,6 @@ SELECT
 	PARMNAME,
 	TYPENAME,
 	PARM_MODE,
-
 	ORDINAL,
 	LENGTH,
 	SCALE
@@ -3243,19 +3242,19 @@ TESTDB.SYSIBMADM.RELEASE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @JOB (1, 0) -- Decimal
-SET     @JOB = 0
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
+DECLARE @JOB (1, 0) -- Decimal
+SET     @JOB = 0
 
 TESTDB.SYSIBMADM.REMOVE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @JOB (1, 0) -- Decimal
-SET     @JOB = 0
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
+DECLARE @JOB (1, 0) -- Decimal
+SET     @JOB = 0
 
 TESTDB.SYSIBMADM.REMOVE
 
