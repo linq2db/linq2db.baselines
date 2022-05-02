@@ -44,13 +44,13 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Value_1 NChar(1) -- StringFixedLength
-SET     @Value_1 = 'O'
+DECLARE @nullableGender NChar(1) -- StringFixedLength
+SET     @nullableGender = 'O'
 
 UPDATE
 	[Person]
 SET
-	[Gender] = @Value_1
+	[Gender] = @nullableGender
 WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
