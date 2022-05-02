@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Value_1 SmallInt(2) -- Int16
-SET     @Value_1 = 1
+DECLARE @param_1 SmallInt(2) -- Int16
+SET     @param_1 = 1
 
 SELECT
 	t1.ID,
@@ -25,7 +25,7 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	@Value_1 = t1.SmallIntValue
+	@param_1 = t1.SmallIntValue
 
 BeforeExecute
 -- Informix.DB2 Informix

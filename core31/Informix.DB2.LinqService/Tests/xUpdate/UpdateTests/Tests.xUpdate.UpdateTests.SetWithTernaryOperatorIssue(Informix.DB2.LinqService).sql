@@ -69,13 +69,13 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Value_1 Char(1) -- StringFixedLength
-SET     @Value_1 = 'O'
+DECLARE @nullableGender Char(1) -- StringFixedLength
+SET     @nullableGender = 'O'
 
 UPDATE
 	Person
 SET
-	Person.Gender = @Value_1
+	Person.Gender = @nullableGender
 WHERE
 	Person.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
 
