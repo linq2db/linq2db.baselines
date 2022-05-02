@@ -48,13 +48,13 @@ RETURNING
 
 BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @Value_1 Varchar2(1) -- String
-SET     @Value_1 = 'O'
+DECLARE @nullableGender Varchar2(1) -- String
+SET     @nullableGender = 'O'
 
 UPDATE
 	"Person"
 SET
-	"Person"."Gender" = :Value_1
+	"Person"."Gender" = :nullableGender
 WHERE
 	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
