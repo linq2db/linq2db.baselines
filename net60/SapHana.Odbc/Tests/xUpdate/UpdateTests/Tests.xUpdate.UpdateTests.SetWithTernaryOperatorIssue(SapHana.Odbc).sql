@@ -87,8 +87,8 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 NChar(1) -- StringFixedLength
-SET     @Value_1 = 'O'
+DECLARE @nullableGender NChar(1) -- StringFixedLength
+SET     @nullableGender = 'O'
 
 UPDATE
 	"Person"
