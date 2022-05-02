@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_1 SmallInt -- Int16
-SET     @Value_1 = 1
+DECLARE @param_1 SmallInt -- Int16
+SET     @param_1 = 1
 
 SELECT
 	[_].[ID],

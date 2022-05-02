@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @Value_1 SmallInt -- Int16
-SET     @Value_1 = 1
+DECLARE @param_1 SmallInt -- Int16
+SET     @param_1 = 1
 
 SELECT
 	[_].[ID],
@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@Value_1 = [_].[SmallIntValue]
+	@param_1 = [_].[SmallIntValue]
 
 BeforeExecute
 -- Access AccessOleDb
