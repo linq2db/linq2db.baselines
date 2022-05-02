@@ -45,13 +45,13 @@ RETURNING
 
 BeforeExecute
 -- Firebird
-DECLARE @Value_1 Char(1) -- String
-SET     @Value_1 = 'O'
+DECLARE @nullableGender Char(1) -- String
+SET     @nullableGender = 'O'
 
 UPDATE
 	"Person"
 SET
-	"Person"."Gender" = @Value_1
+	"Person"."Gender" = @nullableGender
 WHERE
 	"Person"."FirstName" STARTING WITH 'UpdateComplex'
 
