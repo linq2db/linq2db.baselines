@@ -45,13 +45,13 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value_1 Char(1) -- StringFixedLength
-SET     @Value_1 = 'O'
+DECLARE @nullableGender Char(1) -- StringFixedLength
+SET     @nullableGender = 'O'
 
 UPDATE
 	"Person"
 SET
-	"Person"."Gender" = @Value_1
+	"Person"."Gender" = @nullableGender
 WHERE
 	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
