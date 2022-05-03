@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @value_3 Integer -- Int32
-SET     @value_3 = 1
+DECLARE @Value_3 Integer -- Int32
+SET     @Value_3 = 1
 
 SELECT
-	:value_3
+	:Value_3
 
