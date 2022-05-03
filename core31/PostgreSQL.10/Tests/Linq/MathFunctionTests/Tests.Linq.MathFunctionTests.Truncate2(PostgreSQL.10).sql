@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Trunc((-p."MoneyValue"), 0) as c1
+			Cast(Trunc((-p."MoneyValue"), 0) as Float) as c1
 		FROM
 			"LinqDataTypes" p
 	) t
