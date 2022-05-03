@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.Managed Oracle12
-DECLARE @value_3 Int32
-SET     @value_3 = 0
+DECLARE @Value_3 Int32
+SET     @Value_3 = 0
 
 SELECT
-	:value_3
+	:Value_3
 FROM SYS.DUAL
 
