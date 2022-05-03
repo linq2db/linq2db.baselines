@@ -1,15 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	LinqDataTypes t1
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Value_1 SmallInt(2) -- Int16
-SET     @Value_1 = 1
+DECLARE @id Integer(4) -- Int32
+SET     @id = 3
 
 SELECT
 	t1.ID,
@@ -25,10 +17,19 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	@Value_1 = t1.SmallIntValue
+	EXISTS(
+		SELECT
+			*
+		FROM
+			LinqDataTypes t2
+		WHERE
+			t2.ID = @id AND t2.ID = t1.ID
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @id Integer(4) -- Int32
+SET     @id = 4
 
 SELECT
 	t1.ID,
@@ -43,4 +44,13 @@ SELECT
 	t1.StringValue
 FROM
 	LinqDataTypes t1
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			LinqDataTypes t2
+		WHERE
+			t2.ID = @id AND t2.ID = t1.ID
+	)
 
