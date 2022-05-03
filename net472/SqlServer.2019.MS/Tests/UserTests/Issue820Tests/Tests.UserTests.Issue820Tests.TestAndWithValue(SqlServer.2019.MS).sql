@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @param_1 SmallInt -- Int16
-SET     @param_1 = 1
+DECLARE @Value_1 SmallInt -- Int16
+SET     @Value_1 = 1
 
 SELECT
 	[_].[ID],
@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@param_1 = [_].[SmallIntValue]
+	@Value_1 = [_].[SmallIntValue]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

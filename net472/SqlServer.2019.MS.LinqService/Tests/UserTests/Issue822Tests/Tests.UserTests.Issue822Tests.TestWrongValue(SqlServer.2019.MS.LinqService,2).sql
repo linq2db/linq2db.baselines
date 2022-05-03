@@ -1,15 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-
-SELECT
-	Count(*)
-FROM
-	[LinqDataTypes] [t1]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-DECLARE @Value_1 SmallInt -- Int16
-SET     @Value_1 = 1
+DECLARE @id Int -- Int32
+SET     @id = 3
 
 SELECT
 	[_].[ID],
@@ -25,10 +17,19 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@Value_1 = [_].[SmallIntValue]
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[LinqDataTypes] [_1]
+		WHERE
+			[_1].[ID] = @id AND [_1].[ID] = [_].[ID]
+	)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @id Int -- Int32
+SET     @id = 4
 
 SELECT
 	[_].[ID],
@@ -43,4 +44,13 @@ SELECT
 	[_].[StringValue]
 FROM
 	[LinqDataTypes] [_]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[LinqDataTypes] [_1]
+		WHERE
+			[_1].[ID] = @id AND [_1].[ID] = [_].[ID]
+	)
 
