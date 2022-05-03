@@ -87,8 +87,8 @@ CREATE TABLE [InventoryResourceDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @MaterialID  -- Guid
-SET     @MaterialID = X'00000000000000000000000000000000'
+DECLARE @Value_1  -- Guid
+SET     @Value_1 = X'00000000000000000000000000000000'
 
 SELECT
 	[cr].[R_r_Id],
@@ -173,7 +173,7 @@ FROM
 								[irMix].[ResourceID] = [r].[Id] AND
 								[irMix].[Status] >= 0 AND
 								[irMix].[Status] <= 1 AND
-								([irMix].[MaterialID] <> @MaterialID OR [irMix].[ProductStatus] <> 0)
+								([irMix].[MaterialID] <> @Value_1 OR [irMix].[ProductStatus] <> 0)
 						)
 							THEN 1
 						ELSE 0
@@ -188,7 +188,7 @@ FROM
 						INNER JOIN [WmsLoadCarrierDTO] [r] ON [refS].[ResourceID] = [r].[Id]
 						INNER JOIN [InventoryResourceDTO] [ir] ON [r].[Id] = [ir].[ResourceID]
 				WHERE
-					[ir].[MaterialID] = @MaterialID AND [ir].[ProductStatus] = 0 AND
+					[ir].[MaterialID] = @Value_1 AND [ir].[ProductStatus] = 0 AND
 					[ir].[Quantity] > 0
 			) [t1]
 		UNION
@@ -218,7 +218,7 @@ FROM
 				INNER JOIN [InventoryResourceDTO] [ir_1] ON [r_1].[Id] = [ir_1].[ResourceID]
 		WHERE
 			[rp_1].[IsStoragePlace] = 1 AND
-			[ir_1].[MaterialID] = @MaterialID AND
+			[ir_1].[MaterialID] = @Value_1 AND
 			[ir_1].[ProductStatus] = 0 AND
 			[ir_1].[Quantity] > 0
 	) [cr]
