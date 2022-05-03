@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value_1 SmallInt(2) -- Int16
-SET     @Value_1 = 1
+DECLARE @id Integer(4) -- Int32
+SET     @id = 3
 
 SELECT
 	"_".ID,
@@ -17,10 +17,19 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	@Value_1 = "_"."SmallIntValue"
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"LinqDataTypes" "_1"
+		WHERE
+			"_1".ID = @id AND "_1".ID = "_".ID
+	)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @id Integer(4) -- Int32
+SET     @id = 4
 
 SELECT
 	"_".ID,
@@ -36,5 +45,12 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	1 = 0
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"LinqDataTypes" "_1"
+		WHERE
+			"_1".ID = @id AND "_1".ID = "_".ID
+	)
 
