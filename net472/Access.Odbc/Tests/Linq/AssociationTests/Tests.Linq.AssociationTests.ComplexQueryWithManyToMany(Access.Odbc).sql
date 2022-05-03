@@ -2,8 +2,8 @@
 -- Access.Odbc AccessODBC
 DECLARE @id2 Int -- Int32
 SET     @id2 = 3
-DECLARE @id Int -- Int32
-SET     @id = 3
+DECLARE @Value_1 Int -- Int32
+SET     @Value_1 = 3
 
 SELECT TOP 1
 	[с].[ChildID]
