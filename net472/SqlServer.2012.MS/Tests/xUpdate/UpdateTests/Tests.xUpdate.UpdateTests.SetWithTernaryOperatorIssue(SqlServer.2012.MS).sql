@@ -42,13 +42,13 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @nullableGender NChar(1) -- StringFixedLength
-SET     @nullableGender = N'O'
+DECLARE @Value_1 NChar(1) -- StringFixedLength
+SET     @Value_1 = N'O'
 
 UPDATE
 	[_]
 SET
-	[_].[Gender] = @nullableGender
+	[_].[Gender] = @Value_1
 FROM
 	[Person] [_]
 WHERE
