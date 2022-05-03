@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @value_2 Int32
-SET     @value_2 = NULL
+DECLARE @Value_2 Int32
+SET     @Value_2 = NULL
 
 SELECT
-	@value_2 as `c1`
+	@Value_2 as `c1`
 
