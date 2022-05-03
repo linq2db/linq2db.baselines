@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Log(2, p."MoneyValue")) as c1
+			Floor(Cast(Log(2, p."MoneyValue") as Float)) as c1
 		FROM
 			"LinqDataTypes" p
 	) t
