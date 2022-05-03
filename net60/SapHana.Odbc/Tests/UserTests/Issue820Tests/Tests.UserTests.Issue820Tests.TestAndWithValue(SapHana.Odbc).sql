@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @param_1  -- Int16
-SET     @param_1 = 1
+DECLARE @Value_1  -- Int16
+SET     @Value_1 = 1
 
 SELECT
 	"_"."ID",
