@@ -43,12 +43,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.1231234'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -69,12 +67,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.1000000'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -83,12 +79,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.1200000'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -97,12 +91,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.1230000'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -111,12 +103,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.1231000'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -125,12 +115,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.1231200'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -139,12 +127,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.1231230'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -153,12 +139,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = '2012-12-12T12:12:12.1231234'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -167,12 +151,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0001234'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -193,12 +175,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0000000'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -207,12 +187,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0000000'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -221,12 +199,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0000000'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -235,12 +211,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0001000'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -249,12 +223,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0001200'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -263,12 +235,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0001230'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -277,12 +247,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = '2012-12-12T12:12:12.0001234'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
