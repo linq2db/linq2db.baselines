@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	COUNT("left_1"."ParentID"),
 	COUNT("p"."ParentID"),
 	COUNT(*)

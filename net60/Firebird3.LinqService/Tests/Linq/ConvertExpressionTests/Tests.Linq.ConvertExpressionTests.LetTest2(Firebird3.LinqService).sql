@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"p"."ParentID",
@@ -10,7 +8,7 @@ FROM
 	"Parent" "p"
 WHERE
 	(
-		SELECT FIRST @take
+		SELECT FIRST 1
 			1
 		FROM
 			"Child" "t1"

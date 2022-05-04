@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 10000
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"p"."ParentID",
 	"p"."Value1"
 FROM
@@ -19,14 +17,12 @@ ORDER BY
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 2
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 10000
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"p"."ParentID",
 	"p"."Value1"
 FROM

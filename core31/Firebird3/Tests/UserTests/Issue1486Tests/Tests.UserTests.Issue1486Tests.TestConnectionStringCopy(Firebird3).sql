@@ -26,10 +26,8 @@ FROM
 
 BeforeExecute
 --  Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."ParentID",
 	"t1"."ChildID",
 	"a_Parent"."ParentID",

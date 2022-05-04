@@ -37,10 +37,8 @@ SELECT 2,2,'TWO','___Value2___' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -49,10 +47,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -61,10 +57,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -73,10 +67,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -85,10 +77,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"

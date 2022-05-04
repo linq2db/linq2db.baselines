@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 3
 DECLARE @Value_1 Integer -- Int32
 SET     @Value_1 = 3
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."ChildID"
 FROM
 	"GrandChild" "t1"

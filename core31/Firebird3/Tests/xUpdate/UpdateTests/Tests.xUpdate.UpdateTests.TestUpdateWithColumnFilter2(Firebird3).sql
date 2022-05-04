@@ -31,12 +31,10 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"x"."FirstName",
 	"x"."PersonID",
 	"x"."LastName",
@@ -63,12 +61,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"x"."FirstName",
 	"x"."PersonID",
 	"x"."LastName",
@@ -104,12 +100,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."FirstName",
 	"t1"."PersonID",
 	"t1"."LastName",

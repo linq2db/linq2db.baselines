@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 WITH CTE_1
 (
@@ -46,7 +44,7 @@ AS
 	WHERE
 		"x"."rn" = 1
 )
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."FirstName",
 	"t1".ID,
 	"t1"."LastName",
@@ -58,10 +56,8 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"x"."FirstName",
 	"x".ID,
 	"x"."LastName",
