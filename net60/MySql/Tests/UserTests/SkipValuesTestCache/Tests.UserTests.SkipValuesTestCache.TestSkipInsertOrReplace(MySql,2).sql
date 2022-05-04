@@ -37,8 +37,6 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -48,7 +46,7 @@ FROM
 	`PR_1598_Insert_Table_Cache` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -77,8 +75,6 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -88,7 +84,7 @@ FROM
 	`PR_1598_Insert_Table_Cache` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql MySql.Official MySql

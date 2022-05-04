@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`c_1`.`ParentID`,
@@ -12,12 +10,10 @@ WHERE
 	`c_1`.`ParentID` > 0
 ORDER BY
 	`c_1`.`ParentID`
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`c_1`.`ParentID`,
@@ -26,7 +22,7 @@ FROM
 	`Child` `c_1`
 WHERE
 	`c_1`.`ChildID` > -100
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql MySql.Official MySql
