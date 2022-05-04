@@ -2,16 +2,6 @@
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
-DECLARE @take_2 Integer -- Int32
-SET     @take_2 = 1
-DECLARE @take_3 Integer -- Int32
-SET     @take_3 = 1
-DECLARE @take_4 Integer -- Int32
-SET     @take_4 = 1
-DECLARE @take_5 Integer -- Int32
-SET     @take_5 = 1
 
 SELECT
 	t7."Parent",
@@ -78,7 +68,7 @@ FROM
 						"Child" c_3
 					WHERE
 						c_3."ChildID" > 2 AND c_3."ParentID" >= p."ParentID"
-					LIMIT :take_1
+					LIMIT 1
 				) t2 ON 1=1
 				LEFT JOIN LATERAL (
 					SELECT
@@ -88,7 +78,7 @@ FROM
 						"Child" c_4
 					WHERE
 						c_4."ChildID" > 2 AND c_4."ParentID" >= 2
-					LIMIT :take_2
+					LIMIT 1
 				) t3 ON 1=1
 				LEFT JOIN LATERAL (
 					SELECT
@@ -98,7 +88,7 @@ FROM
 						"Child" c_5
 					WHERE
 						c_5."ChildID" > 2 AND c_5."ParentID" >= p."ParentID"
-					LIMIT :take_3
+					LIMIT 1
 				) t4 ON 1=1
 				LEFT JOIN LATERAL (
 					SELECT
@@ -108,7 +98,7 @@ FROM
 						"Child" c_6
 					WHERE
 						c_6."ChildID" > 2 AND c_6."ParentID" >= p."ParentID"
-					LIMIT :take_4
+					LIMIT 1
 				) t5 ON 1=1
 				LEFT JOIN LATERAL (
 					SELECT
@@ -118,7 +108,7 @@ FROM
 						"Child" c_7
 					WHERE
 						c_7."ChildID" > 2 AND c_7."ParentID" >= p."ParentID"
-					LIMIT :take_5
+					LIMIT 1
 				) t6 ON 1=1
 	) t7
 ORDER BY

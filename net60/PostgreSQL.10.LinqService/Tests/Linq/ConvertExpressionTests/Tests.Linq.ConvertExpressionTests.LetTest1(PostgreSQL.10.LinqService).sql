@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
 
 SELECT
 	t1."ParentID"
@@ -16,7 +12,7 @@ FROM
 				"Child" p
 			WHERE
 				p_1."ParentID" = p."ParentID"
-			LIMIT :take
+			LIMIT 1
 		) t1 ON 1=1
 WHERE
 	(
@@ -26,6 +22,6 @@ WHERE
 			"Child" t2
 		WHERE
 			p_1."ParentID" = t2."ParentID"
-		LIMIT :take_1
+		LIMIT 1
 	) IS NOT NULL
 

@@ -20,8 +20,6 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 100500
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."ParentID"
@@ -29,7 +27,7 @@ FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" = :id
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

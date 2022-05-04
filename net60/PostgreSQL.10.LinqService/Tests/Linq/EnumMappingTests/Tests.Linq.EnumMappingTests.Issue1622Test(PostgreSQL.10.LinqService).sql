@@ -29,8 +29,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	e."Id",
@@ -39,12 +37,10 @@ FROM
 	"Issue1622Table" e
 WHERE
 	e."SomeText" = 'Value1_suffix'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	e."Id",
@@ -53,7 +49,7 @@ FROM
 	"Issue1622Table" e
 WHERE
 	e."Id" = 1
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	(
@@ -11,7 +9,7 @@ SELECT
 			"Doctor" d
 		WHERE
 			t1."PersonID" = d."PersonID"
-		LIMIT :take
+		LIMIT 1
 	)
 FROM
 	"Doctor" t1

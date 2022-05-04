@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 WITH "CTE_1" ("Operator")
 AS
@@ -15,16 +13,14 @@ SELECT
 	t1."Operator"
 FROM
 	"CTE_1" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	x."LastName"
 FROM
 	"Person" x
-LIMIT :take
+LIMIT 1
 
