@@ -12,10 +12,8 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	Octet_Length("t"."BinaryValue")
 FROM
 	"LinqDataTypes" "t"

@@ -32,10 +32,8 @@ BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."ParentID",
 	"t"."Value1"
 FROM
