@@ -173,10 +173,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(NVarChar(1), [x].[Prop_bool]),
 	Convert(NVarChar(3), [x].[Prop_byte]),
 	Convert(NVarChar(4000), [x].[Prop_char]),
@@ -212,10 +210,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Prop_bool],
 	[x].[Prop_byte],
 	[x].[Prop_char],
