@@ -6,20 +6,16 @@ IF (OBJECT_ID(N'[DropTableTest]', N'U') IS NOT NULL)
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [_]
