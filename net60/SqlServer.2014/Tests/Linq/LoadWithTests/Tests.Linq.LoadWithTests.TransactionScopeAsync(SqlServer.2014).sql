@@ -27,10 +27,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2014 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
 FROM

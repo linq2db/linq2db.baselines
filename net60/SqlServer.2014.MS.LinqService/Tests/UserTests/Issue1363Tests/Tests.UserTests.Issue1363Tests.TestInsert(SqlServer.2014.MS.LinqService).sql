@@ -57,12 +57,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id2 UniqueIdentifier -- Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[required_field],
 	[_].[optional_field]
 FROM

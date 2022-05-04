@@ -31,10 +31,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[Id],
 	[x].[Discriminator],
 	[x].[Value1],
@@ -48,10 +46,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[Id],
 	[x].[Discriminator],
 	[x].[Value1],
@@ -65,10 +61,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[Id],
 	[x].[Discriminator],
 	[x].[Value1],
@@ -82,10 +76,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[Id],
 	[x].[Discriminator],
 	[x].[Value1],
@@ -99,10 +91,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[Id],
 	[x].[Discriminator],
 	[x].[Value1],
@@ -116,10 +106,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[Id],
 	[x].[Discriminator],
 	[x].[Value1],

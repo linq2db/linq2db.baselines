@@ -445,12 +445,10 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.2014 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[h].[RowNumber]
 FROM
 	(
@@ -467,12 +465,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 78
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[h].[RowNumber]
 FROM
 	(

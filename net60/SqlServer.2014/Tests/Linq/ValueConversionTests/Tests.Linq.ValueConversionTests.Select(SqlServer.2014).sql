@@ -124,8 +124,6 @@ BeforeExecute
 -- SqlServer.2014
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[q].[Value2]
@@ -139,7 +137,7 @@ FROM
 	) [q]
 ORDER BY
 	[q].[Id]
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 
 BeforeExecute
 -- SqlServer.2014

@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 DECLARE @id2 Int -- Int32
 SET     @id2 = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	COUNT([left_1].[ParentID]),
 	COUNT([t1].[ParentID]),
 	COUNT(*)

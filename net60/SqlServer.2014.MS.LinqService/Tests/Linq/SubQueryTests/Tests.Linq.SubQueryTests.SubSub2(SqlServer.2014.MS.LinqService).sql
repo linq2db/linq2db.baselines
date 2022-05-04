@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[Count_1]
@@ -16,7 +14,7 @@ FROM
 			[p2].[ParentID] > -1
 	) [p1]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[c_1].[ParentID] + 1 as [Count_1]
 			FROM
 				[Child] [c_1]
