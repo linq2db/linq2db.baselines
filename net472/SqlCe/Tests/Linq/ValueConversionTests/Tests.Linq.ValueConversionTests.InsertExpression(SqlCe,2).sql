@@ -53,12 +53,10 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @iteration Int -- Int32
 SET     @iteration = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],
