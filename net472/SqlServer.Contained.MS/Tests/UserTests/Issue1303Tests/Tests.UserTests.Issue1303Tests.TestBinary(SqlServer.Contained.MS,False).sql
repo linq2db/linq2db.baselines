@@ -32,10 +32,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[ID],
 	[_].[Array],
 	[_].[Binary]
@@ -46,12 +44,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @Array_1 VarBinary(10) -- Binary
 SET     @Array_1 = 0x010203
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[ID],
 	[_].[Array],
 	[_].[Binary]
@@ -62,12 +58,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @Binary_1 VarBinary(2) -- Binary
 SET     @Binary_1 = 0x0405
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[ID],
 	[_].[Array],
 	[_].[Binary]
