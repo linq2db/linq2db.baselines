@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	Truncate("p"."MoneyValue", 0) <> 0.1
+	(Truncate("p"."MoneyValue", 0) <> 0.1 OR Truncate("p"."MoneyValue", 0) IS NULL)
 
