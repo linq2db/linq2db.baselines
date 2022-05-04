@@ -26,8 +26,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t."ID",
@@ -41,7 +39,7 @@ FROM
 	"LinqDataTypes" t
 WHERE
 	t."ID" = 1001
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
