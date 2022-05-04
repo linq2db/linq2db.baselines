@@ -34,12 +34,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 4
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p2].[PersonID],
 	[p2].[Gender],
 	[p2].[FirstName],
