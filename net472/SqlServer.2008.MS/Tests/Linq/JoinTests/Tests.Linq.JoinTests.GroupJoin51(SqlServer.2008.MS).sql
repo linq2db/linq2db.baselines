@@ -24,8 +24,6 @@ BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -35,7 +33,7 @@ SELECT
 FROM
 	[Parent] [p]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[ch].[ParentID],
 				[ch].[ChildID]
 			FROM
