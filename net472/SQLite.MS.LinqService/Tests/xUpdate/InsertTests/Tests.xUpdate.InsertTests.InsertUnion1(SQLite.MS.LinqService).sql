@@ -21,21 +21,21 @@ FROM
 	(
 		SELECT
 			[c_1].[ParentID],
-			CASE
+			Cast(CASE
 				WHEN Cast([c_1].[ChildID] as Float) / 10 > 0
 					THEN Cast((Cast([c_1].[ChildID] as Float) / 10) as INTEGER)
 				ELSE Cast((Cast([c_1].[ChildID] as Float) / 10 - 0.99999999999999989) as INTEGER)
-			END as [Value1]
+			END as INTEGER) as [Value1]
 		FROM
 			[Child] [c_1]
 		UNION
 		SELECT
 			Coalesce([c_2].[ParentID], 0) as [ParentID],
-			Cast(CASE
+			CASE
 				WHEN Cast(Coalesce([c_2].[GrandChildID], 0) as Float) / 100 > 0
 					THEN Cast((Cast(Coalesce([c_2].[GrandChildID], 0) as Float) / 100) as INTEGER)
 				ELSE Cast((Cast(Coalesce([c_2].[GrandChildID], 0) as Float) / 100 - 0.99999999999999989) as INTEGER)
-			END as Float) as [Value1]
+			END as [Value1]
 		FROM
 			[GrandChild] [c_2]
 	) [t1]
