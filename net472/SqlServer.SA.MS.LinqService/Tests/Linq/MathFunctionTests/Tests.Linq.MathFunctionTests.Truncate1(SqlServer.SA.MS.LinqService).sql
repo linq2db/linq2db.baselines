@@ -6,5 +6,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	Round([p].[MoneyValue], 0, 1) <> 0.1
+	(Round([p].[MoneyValue], 0, 1) <> 0.1 OR Round([p].[MoneyValue], 0, 1) IS NULL)
 
