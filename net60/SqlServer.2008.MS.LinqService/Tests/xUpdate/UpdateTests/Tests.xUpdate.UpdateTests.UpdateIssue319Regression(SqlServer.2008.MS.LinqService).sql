@@ -18,12 +18,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[ParentID]
 FROM
 	[Parent] [_]

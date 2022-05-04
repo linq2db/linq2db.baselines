@@ -96,10 +96,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT
 	[t2].[ID3],
@@ -109,14 +105,14 @@ SELECT
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[t1].[ID3],
 				[t1].[NAME3],
 				[x_1].[NAME2]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (
-						SELECT TOP (@take_1)
+						SELECT TOP (1)
 							[x].[ID3],
 							[x].[NAME3]
 						FROM
