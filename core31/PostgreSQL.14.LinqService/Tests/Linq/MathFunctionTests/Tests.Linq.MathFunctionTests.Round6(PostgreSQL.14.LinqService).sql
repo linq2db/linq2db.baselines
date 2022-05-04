@@ -6,10 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			Round(p."MoneyValue", 0) as c1
+			Cast(Round(p."MoneyValue", 0) as Float) as c1
 		FROM
 			"LinqDataTypes" p
 	) t
 WHERE
-	(t.c1 <> 0 OR t.c1 IS NULL)
+	t.c1 <> 0
 
