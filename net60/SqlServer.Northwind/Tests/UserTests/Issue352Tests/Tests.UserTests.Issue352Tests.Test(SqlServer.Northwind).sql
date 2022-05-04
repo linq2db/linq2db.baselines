@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[EmployeeID],
 	(
-		SELECT TOP (@take)
+		SELECT TOP (1)
 			[em].[FirstName]
 		FROM
 			[Employees] [em]

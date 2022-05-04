@@ -81,10 +81,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[o].[ShipCountry],
 	[o].[ShipPostalCode],
 	[o].[ShipRegion],
