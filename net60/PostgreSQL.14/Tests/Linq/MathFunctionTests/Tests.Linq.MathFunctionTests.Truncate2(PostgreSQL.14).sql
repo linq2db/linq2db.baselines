@@ -6,10 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Trunc((-p."MoneyValue"), 0) as Float) as c1
+			Trunc((-p."MoneyValue"), 0) as c1
 		FROM
 			"LinqDataTypes" p
 	) t
 WHERE
-	t.c1 <> 0.10000000000000001
+	(t.c1 <> 0.10000000000000001 OR t.c1 IS NULL)
 
