@@ -25,8 +25,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t_1."Id",
@@ -59,7 +57,7 @@ FROM
 								CURRENT_TIMESTAMP + 4 * Interval '1 Day' as "Value2"
 						) t1
 				) t2
-			LIMIT :take
+			LIMIT 1
 		) t3 ON 1=1
 
 BeforeExecute
