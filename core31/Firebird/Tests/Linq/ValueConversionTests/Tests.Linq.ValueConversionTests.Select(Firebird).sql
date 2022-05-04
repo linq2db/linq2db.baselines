@@ -127,12 +127,10 @@ FROM
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT FIRST @take SKIP @skip
+SELECT FIRST 1 SKIP @skip
 	"q"."Value2"
 FROM
 	(

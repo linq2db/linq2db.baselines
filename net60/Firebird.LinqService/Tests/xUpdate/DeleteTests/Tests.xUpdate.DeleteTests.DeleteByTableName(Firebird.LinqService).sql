@@ -62,10 +62,8 @@ FROM
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."FirstName",
 	"t1"."PersonID",
 	"t1"."LastName",

@@ -21,15 +21,13 @@ CREATE TABLE "ExternalId2562"
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."CardTypeId",
 	"t1"."CardNumber",
 	"t1"."Lics",
 	(
-		SELECT FIRST @take
+		SELECT FIRST 1
 			LIST("x"."Id")
 		FROM
 			"ExternalId2562" "x"
@@ -42,14 +40,12 @@ FROM
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"person"."CardNumber",
 	"person"."CardTypeId",
 	(
-		SELECT FIRST @take
+		SELECT FIRST 1
 			LIST("x"."Id")
 		FROM
 			"ExternalId2562" "x"

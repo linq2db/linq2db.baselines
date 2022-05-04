@@ -1,11 +1,9 @@
 ﻿BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	(
-		SELECT FIRST @take
+		SELECT FIRST 1
 			"d"."Taxonomy"
 		FROM
 			"Doctor" "d"

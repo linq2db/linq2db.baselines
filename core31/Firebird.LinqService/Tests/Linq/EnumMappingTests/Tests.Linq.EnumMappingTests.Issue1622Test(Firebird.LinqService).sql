@@ -29,10 +29,8 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"e"."Id",
 	"e"."SomeText"
 FROM
@@ -42,10 +40,8 @@ WHERE
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"e"."Id",
 	"e"."SomeText"
 FROM
