@@ -29,15 +29,13 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."ParentID",
 	"t"."Value1"
 FROM
 	"Parent" "t"
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction

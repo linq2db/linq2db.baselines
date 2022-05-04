@@ -76,8 +76,6 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"p"."ParentID",
@@ -86,7 +84,7 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" < 2
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction

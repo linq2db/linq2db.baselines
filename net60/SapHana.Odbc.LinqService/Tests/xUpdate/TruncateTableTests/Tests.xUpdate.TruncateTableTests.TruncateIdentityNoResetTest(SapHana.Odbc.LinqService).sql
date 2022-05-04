@@ -35,8 +35,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 DECLARE @skip  -- Int32
 SET     @skip = 1
 
@@ -47,7 +45,7 @@ FROM
 	"test_temp" "t1"
 ORDER BY
 	"t1"."ID"
-LIMIT ? OFFSET ?
+LIMIT 2 OFFSET ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -80,8 +78,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 DECLARE @skip  -- Int32
 SET     @skip = 1
 
@@ -92,7 +88,7 @@ FROM
 	"test_temp" "t1"
 ORDER BY
 	"t1"."ID"
-LIMIT ? OFFSET ?
+LIMIT 2 OFFSET ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

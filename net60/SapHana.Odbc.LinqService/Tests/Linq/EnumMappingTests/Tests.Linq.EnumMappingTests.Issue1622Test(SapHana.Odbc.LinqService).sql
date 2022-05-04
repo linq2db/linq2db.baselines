@@ -29,8 +29,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"e"."Id",
@@ -39,12 +37,10 @@ FROM
 	"Issue1622Table" "e"
 WHERE
 	"e"."SomeText" = 'Value1_suffix'
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"e"."Id",
@@ -53,7 +49,7 @@ FROM
 	"Issue1622Table" "e"
 WHERE
 	"e"."Id" = 1
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

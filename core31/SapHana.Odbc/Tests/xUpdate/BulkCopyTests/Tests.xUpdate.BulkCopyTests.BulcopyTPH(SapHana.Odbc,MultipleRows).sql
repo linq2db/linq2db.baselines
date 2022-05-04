@@ -98,8 +98,6 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"x"."Id",
@@ -112,12 +110,10 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 1
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"x"."Id",
@@ -130,12 +126,10 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 2
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"x"."Id",
@@ -148,12 +142,10 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 3
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"x"."Id",
@@ -166,12 +158,10 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value1" = 'Str1'
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"x"."Id",
@@ -184,12 +174,10 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value2" = 'Str2'
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"x"."Id",
@@ -202,7 +190,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value3" = 'Str3'
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

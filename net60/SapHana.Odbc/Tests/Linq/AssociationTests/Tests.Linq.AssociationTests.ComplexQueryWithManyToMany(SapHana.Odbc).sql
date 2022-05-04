@@ -4,8 +4,6 @@ DECLARE @id2  -- Int32
 SET     @id2 = 3
 DECLARE @Value_1  -- Int32
 SET     @Value_1 = 3
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"с"."ChildID"
@@ -27,5 +25,5 @@ WHERE
 	)
 ORDER BY
 	"с"."ChildID"
-LIMIT ?
+LIMIT 1
 

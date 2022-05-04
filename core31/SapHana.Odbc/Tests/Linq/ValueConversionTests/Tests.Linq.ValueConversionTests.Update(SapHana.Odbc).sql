@@ -543,8 +543,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"e"."Id",
@@ -561,7 +559,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -603,8 +601,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"e"."Id",
@@ -621,7 +617,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 2
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -663,8 +659,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"e"."Id",
@@ -681,7 +675,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 3
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

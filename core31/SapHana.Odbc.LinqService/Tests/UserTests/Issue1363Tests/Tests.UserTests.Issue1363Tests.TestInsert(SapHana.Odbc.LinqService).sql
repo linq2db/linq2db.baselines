@@ -59,8 +59,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id2 Char(36) -- AnsiStringFixedLength
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"_"."required_field",
@@ -69,7 +67,7 @@ FROM
 	"Issue1363" "_"
 WHERE
 	"_"."required_field" = ?
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

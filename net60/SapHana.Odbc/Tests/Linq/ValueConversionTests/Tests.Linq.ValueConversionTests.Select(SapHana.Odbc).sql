@@ -592,8 +592,6 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 DECLARE @skip  -- Int32
 SET     @skip = 1
 
@@ -609,7 +607,7 @@ FROM
 	) "q"
 ORDER BY
 	"q"."Id"
-LIMIT ? OFFSET ?
+LIMIT 1 OFFSET ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
