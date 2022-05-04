@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Round(p."MoneyValue", 0) as Float) as c1
+			Round(p."MoneyValue", 0) as c1
 		FROM
 			"LinqDataTypes" p
 	) t
