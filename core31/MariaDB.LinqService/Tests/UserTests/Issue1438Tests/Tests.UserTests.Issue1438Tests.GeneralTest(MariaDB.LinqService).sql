@@ -32,8 +32,6 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @id Int32
 SET     @id = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`_`.`Id`,
@@ -42,7 +40,7 @@ FROM
 	`Issue1438` `_`
 WHERE
 	`_`.`Id` = @id
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

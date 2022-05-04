@@ -25,15 +25,13 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t1`.`event_description`,
 	`t1`.`event_id`
 FROM
 	`Issue1403Tests_3` `t1`
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

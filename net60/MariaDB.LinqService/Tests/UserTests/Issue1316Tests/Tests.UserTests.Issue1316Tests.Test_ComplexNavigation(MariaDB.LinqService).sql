@@ -26,8 +26,6 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`_`.`ID`
@@ -35,14 +33,12 @@ FROM
 	`Issue1316Tests` `_`
 WHERE
 	`_`.`ID` = @ID
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`_`.`ID`
@@ -50,7 +46,7 @@ FROM
 	`Issue1316Tests` `_`
 WHERE
 	`_`.`ID` = @Id
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

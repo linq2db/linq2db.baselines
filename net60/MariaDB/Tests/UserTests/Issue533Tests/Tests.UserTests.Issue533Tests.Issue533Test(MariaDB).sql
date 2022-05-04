@@ -47,8 +47,6 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @id1 Int32
 SET     @id1 = 5
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`PersonID`,
@@ -60,7 +58,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`PersonID` = @id1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

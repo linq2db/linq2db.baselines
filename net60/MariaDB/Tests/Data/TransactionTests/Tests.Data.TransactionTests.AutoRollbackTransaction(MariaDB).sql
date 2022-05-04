@@ -32,8 +32,6 @@ BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`ParentID`,
@@ -42,7 +40,7 @@ FROM
 	`Parent` `t`
 WHERE
 	`t`.`ParentID` = 1010
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

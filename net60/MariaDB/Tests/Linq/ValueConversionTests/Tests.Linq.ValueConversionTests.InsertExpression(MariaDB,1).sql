@@ -55,8 +55,6 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @iteration Int32
 SET     @iteration = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`e`.`Id`,
@@ -73,7 +71,7 @@ FROM
 	`ValueConversion` `e`
 WHERE
 	`e`.`Id` = @iteration
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

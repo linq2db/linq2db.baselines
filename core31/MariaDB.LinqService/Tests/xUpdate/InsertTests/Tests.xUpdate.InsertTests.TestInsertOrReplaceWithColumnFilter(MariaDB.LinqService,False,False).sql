@@ -45,8 +45,6 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`x`.`ID`,
@@ -57,7 +55,7 @@ FROM
 	`TestInsertOrReplaceTable` `x`
 WHERE
 	`x`.`FirstName` = @FirstName
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -88,8 +86,6 @@ BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`x`.`ID`,
@@ -100,7 +96,7 @@ FROM
 	`TestInsertOrReplaceTable` `x`
 WHERE
 	`x`.`FirstName` = @FirstName
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
