@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ParentId],
@@ -9,7 +7,7 @@ SELECT
 FROM
 	[Parent] [sep]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[l].[ParentID] + 1 as [Id],
 				[l].[ParentID] as [ParentId]
 			FROM

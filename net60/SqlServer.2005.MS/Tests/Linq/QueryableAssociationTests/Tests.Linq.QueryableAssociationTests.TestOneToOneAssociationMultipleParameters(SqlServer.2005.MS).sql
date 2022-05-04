@@ -83,16 +83,14 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x_1].[Id],
 	[a_FirstUserWithMultipleParameters].[Id]
 FROM
 	[UserGroup] [x_1]
 		OUTER APPLY (
-			SELECT TOP (@take_1)
+			SELECT TOP (@take)
 				[x].[Id]
 			FROM
 				[User] [x]
