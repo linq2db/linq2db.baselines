@@ -22,8 +22,6 @@ WHERE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -32,14 +30,12 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -48,5 +44,5 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1
-LIMIT @take
+LIMIT 1
 

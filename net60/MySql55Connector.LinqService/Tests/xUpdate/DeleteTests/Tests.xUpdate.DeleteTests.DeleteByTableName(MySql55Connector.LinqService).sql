@@ -48,8 +48,6 @@ FROM
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`FirstName`,
@@ -59,7 +57,7 @@ SELECT
 	`t1`.`Gender`
 FROM
 	`xxPerson` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`ID`,
@@ -18,7 +16,7 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
@@ -34,8 +32,6 @@ WHERE
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`ID`,
@@ -52,7 +48,7 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

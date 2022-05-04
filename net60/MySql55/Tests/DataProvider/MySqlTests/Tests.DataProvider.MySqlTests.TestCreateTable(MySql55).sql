@@ -267,8 +267,6 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`VarChar255`,
@@ -323,7 +321,7 @@ SELECT
 	`t1`.`Guid`
 FROM
 	`CreateTable` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

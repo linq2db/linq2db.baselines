@@ -27,13 +27,11 @@ FROM
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`
 FROM
 	`Parent` `t`
-LIMIT @take
+LIMIT 1
 
