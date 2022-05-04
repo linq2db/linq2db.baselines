@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t2."ParentID",
@@ -14,6 +12,6 @@ FROM
 				t1."ChildID"
 			FROM
 				"Child" t1
-			LIMIT :take
+			LIMIT 1
 		) t2 ON 1=1
 

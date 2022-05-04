@@ -45,8 +45,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	x."Id",
@@ -59,12 +57,10 @@ FROM
 	"TPHTable" x
 WHERE
 	x."Discriminator" = 1
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	x."Id",
@@ -77,12 +73,10 @@ FROM
 	"TPHTable" x
 WHERE
 	x."Discriminator" = 2
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	x."Id",
@@ -95,12 +89,10 @@ FROM
 	"TPHTable" x
 WHERE
 	x."Discriminator" = 3
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	x."Id",
@@ -113,12 +105,10 @@ FROM
 	"TPHTable" x
 WHERE
 	x."Value1" = 'Str1'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	x."Id",
@@ -131,12 +121,10 @@ FROM
 	"TPHTable" x
 WHERE
 	x."Value2" = 'Str2'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	x."Id",
@@ -149,7 +137,7 @@ FROM
 	"TPHTable" x
 WHERE
 	x."Value3" = 'Str3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

@@ -117,8 +117,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	x."Id",
@@ -128,7 +126,7 @@ FROM
 	"Topic" x
 WHERE
 	x."Id" = 6
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction
