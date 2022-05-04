@@ -95,8 +95,6 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1_1].[ID1],
@@ -107,7 +105,7 @@ FROM
 	[TABLE1] [t1_1]
 		INNER JOIN [TABLE2] [detail] ON [detail].[PARENTID2] = [t1_1].[ID1]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[_x].[NAME3] as [Name3],
 				[_x].[ID3] as [Value3]
 			FROM
