@@ -86,6 +86,14 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	NULLIF(s."String", NULL)
+FROM
+	"Src" s
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
 	NULLIF(s."NullableString", 'abc')
 FROM
 	"Src" s
@@ -95,6 +103,14 @@ BeforeExecute
 
 SELECT
 	NULLIF(s."NullableString", 'xyz')
+FROM
+	"Src" s
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	NULLIF(s."NullableString", NULL)
 FROM
 	"Src" s
 
