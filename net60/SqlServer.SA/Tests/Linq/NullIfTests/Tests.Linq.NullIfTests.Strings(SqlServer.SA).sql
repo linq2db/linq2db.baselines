@@ -49,6 +49,14 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
+	NULLIF([s].[String], NULL)
+FROM
+	[Src] [s]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+SELECT
 	NULLIF([s].[NullableString], N'abc')
 FROM
 	[Src] [s]
@@ -58,6 +66,14 @@ BeforeExecute
 
 SELECT
 	NULLIF([s].[NullableString], N'xyz')
+FROM
+	[Src] [s]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+SELECT
+	NULLIF([s].[NullableString], NULL)
 FROM
 	[Src] [s]
 
