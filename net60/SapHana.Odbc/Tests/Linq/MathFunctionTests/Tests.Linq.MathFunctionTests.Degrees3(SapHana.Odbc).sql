@@ -11,5 +11,5 @@ FROM
 			"LinqDataTypes" "p"
 	) "t"
 WHERE
-	(Cast("t"."c1" as Double) <> 0.10000000000000001 OR Cast("t"."c1" as Double) IS NULL)
+	Cast("t"."c1" as Double) <> 0.10000000000000001
 

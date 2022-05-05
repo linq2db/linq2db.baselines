@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Locate(Substring("p"."LastName",3 + 1),'e') + 3 - 1 = 4 AND
+	Locate(Substring("p"."LastName",3 + 1),'e') + 3 = 5 AND
 	"p"."PersonID" = 2
 
