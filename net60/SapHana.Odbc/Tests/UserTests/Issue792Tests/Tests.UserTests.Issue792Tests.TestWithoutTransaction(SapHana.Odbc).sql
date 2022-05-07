@@ -353,6 +353,17 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @I  -- Int32
+SET     @I = 0
+
+{ CALL "TESTDB"."TEST_PROCEDURE" (?) }
+
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."prd.global.ecc/CV_MARAproc" () }
 
