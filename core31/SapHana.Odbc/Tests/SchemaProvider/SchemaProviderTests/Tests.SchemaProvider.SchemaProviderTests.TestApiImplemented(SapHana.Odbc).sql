@@ -561,3 +561,12 @@ SELECT * FROM "TESTDB"."GetParentByID"(0)
 
 BeforeExecute
 RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT * FROM "TESTDB"."TEST_TABLE_FUNCTION"(0)
+
+BeforeExecute
+RollbackTransaction
