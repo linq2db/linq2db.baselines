@@ -1075,6 +1075,16 @@ CREATE TABLE "CollatedTable"
 BeforeExecute
 -- Firebird
 
+-- SKIP Firebird END
+-- SKIP Firebird3 BEGIN
+-- SKIP Firebird4 BEGIN
+SELECT 1 FROM rdb$database
+-- SKIP Firebird4 END
+-- SKIP Firebird3 END
+
+BeforeExecute
+-- Firebird
+
 INSERT INTO "LinqDataTypes"
 (
 	ID,
