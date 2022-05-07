@@ -863,6 +863,13 @@ CREATE TABLE `CollatedTable`
 BeforeExecute
 -- MySqlConnector MySql
 
+-- SKIP MySql BEGIN
+-- SKIP MySqlConnector END
+-- SKIP MySql END
+
+BeforeExecute
+-- MySqlConnector MySql
+
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
