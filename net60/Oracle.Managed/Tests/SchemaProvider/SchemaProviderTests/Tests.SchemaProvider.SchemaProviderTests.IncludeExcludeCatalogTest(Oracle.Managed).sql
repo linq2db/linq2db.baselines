@@ -288,6 +288,17 @@ BeforeExecute
 SYSTEM.TEST2132
 
 BeforeExecute
+-- Oracle.Managed Oracle12
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @I Decimal(22)
+SET     @I = 0
+
+SYSTEM.TEST_PROCEDURE
+
+BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- Oracle.Managed Oracle12

@@ -1469,6 +1469,72 @@ CREATE TABLE "CollatedTable"
 BeforeExecute
 -- Oracle.Managed Oracle12
 
+CREATE OR REPLACE PACKAGE TEST_MODULE1 AS
+	FUNCTION TEST_FUNCTION(i int) RETURN int;
+	PROCEDURE TEST_PROCEDURE(i int);
+END TEST_MODULE1;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE OR REPLACE PACKAGE BODY TEST_MODULE1 AS
+	FUNCTION TEST_FUNCTION(i INT)
+		RETURN INT IS
+		BEGIN 
+			RETURN i + 1;
+		END;
+	PROCEDURE TEST_PROCEDURE(i INT) AS
+		o INT;
+		BEGIN 
+			o := i + 1;
+		END;
+END TEST_MODULE1;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE OR REPLACE PACKAGE TEST_MODULE2 AS 
+	FUNCTION TEST_FUNCTION(i int) RETURN int;
+	PROCEDURE TEST_PROCEDURE(i int);
+END TEST_MODULE2;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE OR REPLACE PACKAGE BODY TEST_MODULE2 AS
+	FUNCTION TEST_FUNCTION(i INT)
+		RETURN INT IS
+		BEGIN 
+			RETURN i + 2;
+		END;
+	PROCEDURE TEST_PROCEDURE(i INT) AS
+		o INT;
+		BEGIN 
+			o := i + 2;
+		END;
+END TEST_MODULE2;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE OR REPLACE FUNCTION TEST_FUNCTION(i INT)
+RETURN INT IS
+BEGIN 
+	RETURN i + 3;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
+CREATE OR REPLACE PROCEDURE TEST_PROCEDURE(i INT) AS
+o INT;
+BEGIN 
+	o := i + 3;
+END;
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
 INSERT ALL
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1,1.11,TIMESTAMP '2001-01-11 01:11:21.100000',NULL,1,HEXTORAW('659112EFFE6FF94DBB6BBB16E413C883'),1,NULL,1,NULL)
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (2,2.49,TIMESTAMP '2005-05-15 05:15:25.500000',NULL,0,HEXTORAW('613A66BC407B8146AC38F9AAF55B706B'),2,NULL,2,'')

@@ -568,6 +568,17 @@ SYSTEM.TEST2132
 
 BeforeExecute
 -- Oracle.Managed Oracle12
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @I Decimal(22)
+SET     @I = 0
+
+SYSTEM.TEST_PROCEDURE
+
+BeforeExecute
+-- Oracle.Managed Oracle12
 
 OUTLN.ORA$GRANT_SYS_SELECT
 
