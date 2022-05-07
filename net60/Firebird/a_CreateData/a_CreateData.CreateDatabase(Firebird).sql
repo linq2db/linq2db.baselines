@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- Firebird
 
+-- SKIP Firebird END
+
 DROP PROCEDURE "AddIssue792Record";
 
 BeforeExecute
