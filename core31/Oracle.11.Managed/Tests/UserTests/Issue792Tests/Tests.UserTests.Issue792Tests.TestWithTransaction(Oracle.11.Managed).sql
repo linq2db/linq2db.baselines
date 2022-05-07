@@ -32,6 +32,17 @@ select user from dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle.Managed Oracle11
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @I Decimal(22)
+SET     @I = 0
+
+SYSTEM.TEST_PROCEDURE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle.Managed Oracle11
 
 SYSTEM.TEST2132
 
