@@ -64,9 +64,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 2 AS "Id", 'Janet' AS "Value" FROM "DUMMY"
+				SELECT 2 AS "Id", 'Janet' AS "Value" FROM DUMMY
 				UNION ALL
-				SELECT 3, 'Doe' FROM "DUMMY") "r"
+				SELECT 3, 'Doe' FROM DUMMY) "r"
 		WHERE
 			"t"."Id" = "r"."Id" AND ("t"."Value" = "r"."Value" OR "t"."Value" IS NULL AND "r"."Value" IS NULL)
 	)

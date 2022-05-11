@@ -9,7 +9,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	(
-		SELECT 'Janet' AS "FirstName", 2 AS "PersonID", NULL AS "LastName", NULL AS "MiddleName", 'M' AS "Gender" FROM "DUMMY"
+		SELECT 'Janet' AS "FirstName", 2 AS "PersonID", NULL AS "LastName", NULL AS "MiddleName", 'M' AS "Gender" FROM DUMMY
 		UNION ALL
-		SELECT 'Doe', 3, NULL, NULL, 'M' FROM "DUMMY") "t1"
+		SELECT 'Doe', 3, NULL, NULL, 'M' FROM DUMMY) "t1"
 

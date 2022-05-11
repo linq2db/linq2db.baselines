@@ -22,9 +22,9 @@ SELECT
 	"r"."Value"
 FROM
 	(
-		SELECT 3 AS "Id", 'Janet' AS "Value" FROM "DUMMY"
+		SELECT 3 AS "Id", 'Janet' AS "Value" FROM DUMMY
 		UNION ALL
-		SELECT 4, 'Doe' FROM "DUMMY") "r"
+		SELECT 4, 'Doe' FROM DUMMY) "r"
 		LEFT JOIN "TableToInsert" "t" ON "t"."Id" = "r"."Id"
 WHERE
 	"t"."Id" IS NULL
@@ -42,9 +42,9 @@ SELECT
 	"r"."Value"
 FROM
 	(
-		SELECT 3 AS "Id", 'Janet' AS "Value" FROM "DUMMY"
+		SELECT 3 AS "Id", 'Janet' AS "Value" FROM DUMMY
 		UNION ALL
-		SELECT 4, 'Doe' FROM "DUMMY") "r"
+		SELECT 4, 'Doe' FROM DUMMY) "r"
 		LEFT JOIN "TableToInsert" "t" ON "t"."Id" = "r"."Id"
 WHERE
 	"t"."Id" IS NULL

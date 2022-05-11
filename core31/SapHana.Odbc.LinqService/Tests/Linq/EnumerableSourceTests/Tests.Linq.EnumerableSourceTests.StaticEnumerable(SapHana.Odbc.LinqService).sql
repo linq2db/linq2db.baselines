@@ -15,11 +15,11 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 1 AS "item" FROM "DUMMY"
+				SELECT 1 AS "item" FROM DUMMY
 				UNION ALL
-				SELECT 2 FROM "DUMMY"
+				SELECT 2 FROM DUMMY
 				UNION ALL
-				SELECT 3 FROM "DUMMY") "v"
+				SELECT 3 FROM DUMMY) "v"
 		WHERE
 			"v"."item" = "p"."PersonID"
 	)

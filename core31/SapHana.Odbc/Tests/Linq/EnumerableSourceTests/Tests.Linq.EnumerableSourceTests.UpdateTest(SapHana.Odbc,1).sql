@@ -62,9 +62,9 @@ SET
 		FROM
 			"TableToInsert" "t"
 				INNER JOIN (
-					SELECT 2 AS "Id", 'Janet Updated' AS "Value" FROM "DUMMY"
+					SELECT 2 AS "Id", 'Janet Updated' AS "Value" FROM DUMMY
 					UNION ALL
-					SELECT 3, 'Doe Updated' FROM "DUMMY") "r" ON "t"."Id" = "r"."Id"
+					SELECT 3, 'Doe Updated' FROM DUMMY) "r" ON "t"."Id" = "r"."Id"
 		WHERE
 			"TableToInsert"."Id" = "t"."Id"
 	)
@@ -75,9 +75,9 @@ WHERE
 		FROM
 			"TableToInsert" "t_1"
 				INNER JOIN (
-					SELECT 2 AS "Id", 'Janet Updated' AS "Value" FROM "DUMMY"
+					SELECT 2 AS "Id", 'Janet Updated' AS "Value" FROM DUMMY
 					UNION ALL
-					SELECT 3, 'Doe Updated' FROM "DUMMY") "r_1" ON "t_1"."Id" = "r_1"."Id"
+					SELECT 3, 'Doe Updated' FROM DUMMY) "r_1" ON "t_1"."Id" = "r_1"."Id"
 		WHERE
 			"TableToInsert"."Id" = "t_1"."Id"
 	)
