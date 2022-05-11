@@ -16,167 +16,98 @@ CREATE TABLE "ColumnOrderTest"
 )
 
 BeforeExecute
+-- Firebird4 Firebird
+
+SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT
+	RDB$PACKAGE_NAME                                        AS PackageName,
+	RDB$PROCEDURE_NAME                                      AS ProcedureName,
+	RDB$DESCRIPTION                                         AS Description,
+	RDB$PROCEDURE_SOURCE                                    AS Source,
+	CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
+FROM RDB$PROCEDURES
+WHERE RDB$SYSTEM_FLAG = 0 AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0) AND RDB$PROCEDURE_TYPE IS NOT NULL
+UNION ALL
+SELECT 
+	RDB$PACKAGE_NAME,
+	RDB$FUNCTION_NAME,
+	RDB$DESCRIPTION,
+	RDB$FUNCTION_SOURCE,
+	'F'
+FROM RDB$FUNCTIONS
+WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0)
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT
+	p.RDB$PACKAGE_NAME                                   AS PackageName,
+	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
+	p.RDB$PARAMETER_NAME                                 AS ParameterName,
+	p.RDB$PARAMETER_NUMBER                               AS Ordinal,
+	p.RDB$PARAMETER_TYPE                                 AS Direction,
+	p.RDB$DESCRIPTION                                    AS Decsription,
+	f.RDB$FIELD_TYPE                                     AS Type,
+	f.RDB$FIELD_SUB_TYPE                                 AS SubType,
+	COALESCE(f.RDB$CHARACTER_LENGTH, f.RDB$FIELD_LENGTH) AS Length,
+	f.RDB$FIELD_PRECISION                                AS "precision",
+	f.RDB$FIELD_SCALE                                    AS Scale,
+	COALESCE(f.RDB$NULL_FLAG, p.RDB$NULL_FLAG)           AS IsNullable
+FROM RDB$PROCEDURE_PARAMETERS p
+	INNER JOIN RDB$PROCEDURES pr ON p.RDB$PROCEDURE_NAME = pr.RDB$PROCEDURE_NAME
+		AND (p.RDB$PACKAGE_NAME = pr.RDB$PACKAGE_NAME OR (p.RDB$PACKAGE_NAME IS NULL AND pr.RDB$PACKAGE_NAME IS NULL))
+	LEFT JOIN RDB$FIELDS f ON p.RDB$FIELD_SOURCE = f.RDB$FIELD_NAME
+WHERE p.RDB$SYSTEM_FLAG = 0 AND (pr.RDB$PROCEDURE_TYPE <> 1 OR p.RDB$PARAMETER_TYPE <> 1)
+UNION ALL
+SELECT
+	p.RDB$PACKAGE_NAME,
+	p.RDB$FUNCTION_NAME,
+	p.RDB$ARGUMENT_NAME,
+	p.RDB$ARGUMENT_POSITION,
+	CASE WHEN fn.RDB$RETURN_ARGUMENT = p.RDB$ARGUMENT_POSITION THEN 2 ELSE 0 END,
+	p.RDB$DESCRIPTION,
+	COALESCE(f.RDB$FIELD_TYPE, p.RDB$FIELD_TYPE),
+	COALESCE(f.RDB$FIELD_SUB_TYPE, p.RDB$FIELD_TYPE),
+	COALESCE(f.RDB$CHARACTER_LENGTH, f.RDB$FIELD_LENGTH, p.RDB$CHARACTER_LENGTH, p.RDB$FIELD_LENGTH),
+	COALESCE(f.RDB$FIELD_PRECISION, p.RDB$FIELD_PRECISION),
+	COALESCE(f.RDB$FIELD_SCALE, p.RDB$FIELD_SCALE),
+	COALESCE(f.RDB$NULL_FLAG, p.RDB$NULL_FLAG)
+	FROM RDB$FUNCTION_ARGUMENTS p
+		INNER JOIN RDB$FUNCTIONS fn ON p.RDB$FUNCTION_NAME = fn.RDB$FUNCTION_NAME
+			AND (p.RDB$PACKAGE_NAME = fn.RDB$PACKAGE_NAME OR (p.RDB$PACKAGE_NAME IS NULL AND fn.RDB$PACKAGE_NAME IS NULL))
+		LEFT JOIN RDB$FIELDS f ON p.RDB$FIELD_SOURCE = f.RDB$FIELD_NAME
+WHERE p.RDB$SYSTEM_FLAG = 0
+
+BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Firebird4 Firebird
 
-"AddIssue792Record"
+SELECT * FROM "Person_SelectByKey"(NULL)
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @STR VarChar(50) -- String
-SET     @STR = ''
-DECLARE @IN_INPUTOUTPUTSTR VarChar(50) -- String
-SET     @IN_INPUTOUTPUTSTR = ''
-DECLARE @INPUTOUTPUTSTR VarChar(50) -- String
-SET     @INPUTOUTPUTSTR = ''
-DECLARE @OUTPUTSTR VarChar(50) -- String
-SET     @OUTPUTSTR = ''
 
-"OutRefEnumTest"
+SELECT * FROM "Person_SelectAll"
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 0
-DECLARE @IN_INPUTOUTPUTID Integer(4) -- Int32
-SET     @IN_INPUTOUTPUTID = 0
-DECLARE @STR VarChar(50) -- String
-SET     @STR = ''
-DECLARE @IN_INPUTOUTPUTSTR VarChar(50) -- String
-SET     @IN_INPUTOUTPUTSTR = ''
-DECLARE @INPUTOUTPUTID Integer(4) -- Int32
-SET     @INPUTOUTPUTID = 0
-DECLARE @INPUTOUTPUTSTR VarChar(50) -- String
-SET     @INPUTOUTPUTSTR = ''
-DECLARE @OUTPUTID Integer(4) -- Int32
-SET     @OUTPUTID = 0
-DECLARE @OUTPUTSTR VarChar(50) -- String
-SET     @OUTPUTSTR = ''
 
-"OutRefTest"
+SELECT * FROM "Person_SelectByName"(NULL,NULL)
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-DECLARE @DIAGNOSIS VarChar(256) -- String
-SET     @DIAGNOSIS = ''
 
-"Patient_SelectAll"
+SELECT * FROM "Person_Insert"(NULL,NULL,NULL,NULL)
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-DECLARE @DIAGNOSIS VarChar(256) -- String
-SET     @DIAGNOSIS = ''
 
-"Patient_SelectByName"
-
-BeforeExecute
--- Firebird4 Firebird
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-
-"Person_Delete"
-
-BeforeExecute
--- Firebird4 Firebird
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-
-"Person_Insert"
-
-BeforeExecute
--- Firebird4 Firebird
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-
-"Person_Insert_OutputParameter"
-
-BeforeExecute
--- Firebird4 Firebird
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-
-"Person_SelectAll"
-
-BeforeExecute
--- Firebird4 Firebird
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 0
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-
-"Person_SelectByKey"
-
-BeforeExecute
--- Firebird4 Firebird
-DECLARE @IN_FIRSTNAME VarChar(50) -- String
-SET     @IN_FIRSTNAME = ''
-DECLARE @IN_LASTNAME VarChar(50) -- String
-SET     @IN_LASTNAME = ''
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-
-"Person_SelectByName"
+SELECT * FROM "Person_Insert_OutputParameter"(NULL,NULL,NULL,NULL)
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -195,74 +126,97 @@ SET     @GENDER = _utf8 x'00'
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @INTFIELD Integer(4) -- Int32
-SET     @INTFIELD = 0
-DECLARE @STRINGFIELD VarChar(50) -- String
-SET     @STRINGFIELD = ''
+DECLARE @PERSONID Integer(4) -- Int32
+SET     @PERSONID = 0
 
-"Scalar_DataReader"
+"Person_Delete"
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @OUTPUTINT Integer(4) -- Int32
-SET     @OUTPUTINT = 0
-DECLARE @OUTPUTSTRING VarChar(50) -- String
-SET     @OUTPUTSTRING = ''
 
-"Scalar_OutputParameter"
+SELECT * FROM "Patient_SelectAll"
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @RETURN_VALUE Integer(4) -- Int32
-SET     @RETURN_VALUE = 0
 
-"Scalar_ReturnParameter"
+SELECT * FROM "Patient_SelectByName"(NULL,NULL)
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @TSTZ TimeStampTZ(12) -- Object
-SET     @TSTZ = 01/01/0001 00:00:00 
-DECLARE @TTZ TimeTZ(8) -- Object
-SET     @TTZ = 00:00:00 
-DECLARE @DECFLOAT16 Dec34(8) -- Object
-SET     @DECFLOAT16 = 0E0
-DECLARE @DECFLOAT34 Dec34(16) -- Object
-SET     @DECFLOAT34 = 0E0
-DECLARE @INT_128 Int128(16) -- Object
-SET     @INT_128 = 0
-DECLARE @COL_TSTZ TimeStampTZ(12) -- Object
-SET     @COL_TSTZ = 01/01/0001 00:00:00 
-DECLARE @COL_TTZ TimeTZ(8) -- Object
-SET     @COL_TTZ = 00:00:00 
-DECLARE @COL_DECFLOAT16 Dec34(8) -- Object
-SET     @COL_DECFLOAT16 = 0E0
-DECLARE @COL_DECFLOAT34 Dec34(16) -- Object
-SET     @COL_DECFLOAT34 = 0E0
-DECLARE @COL_INT_128 Int128(16) -- Object
-SET     @COL_INT_128 = 0
 
-TEST_V4_TYPES
+SELECT * FROM "OutRefTest"(NULL,NULL,NULL,NULL)
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @RDB_TIME_ZONE_NAME Char(63) -- String
-SET     @RDB_TIME_ZONE_NAME = ''
-DECLARE @RDB_FROM_TIMESTAMP TimeStampTZ(12) -- Object
-SET     @RDB_FROM_TIMESTAMP = 01/01/0001 00:00:00 
-DECLARE @RDB_TO_TIMESTAMP TimeStampTZ(12) -- Object
-SET     @RDB_TO_TIMESTAMP = 01/01/0001 00:00:00 
-DECLARE @RDB_START_TIMESTAMP TimeStampTZ(12) -- Object
-SET     @RDB_START_TIMESTAMP = 01/01/0001 00:00:00 
-DECLARE @RDB_END_TIMESTAMP TimeStampTZ(12) -- Object
-SET     @RDB_END_TIMESTAMP = 01/01/0001 00:00:00 
-DECLARE @RDB_ZONE_OFFSET SmallInt(2) -- Int16
-SET     @RDB_ZONE_OFFSET = 0
-DECLARE @RDB_DST_OFFSET SmallInt(2) -- Int16
-SET     @RDB_DST_OFFSET = 0
-DECLARE @RDB_EFFECTIVE_OFFSET SmallInt(2) -- Int16
-SET     @RDB_EFFECTIVE_OFFSET = 0
 
-TRANSITIONS
+SELECT * FROM "OutRefEnumTest"(NULL,NULL)
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT * FROM "Scalar_DataReader"
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT * FROM "Scalar_OutputParameter"
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT * FROM "Scalar_ReturnParameter"
+
+BeforeExecute
+-- Firebird4 Firebird
+
+"AddIssue792Record"
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT * FROM TEST_V4_TYPES(NULL,NULL,NULL,NULL,NULL)
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @I Integer(4) -- Int32
+SET     @I = 0
+DECLARE @O Integer(4) -- Int32
+SET     @O = 0
+
+TEST_PACKAGE1.TEST_PROCEDURE
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT * FROM TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL)
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @I Integer(4) -- Int32
+SET     @I = 0
+DECLARE @O Integer(4) -- Int32
+SET     @O = 0
+
+TEST_PACKAGE2.TEST_PROCEDURE
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT * FROM TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
+
+BeforeExecute
+-- Firebird4 Firebird
+DECLARE @I Integer(4) -- Int32
+SET     @I = 0
+DECLARE @O Integer(4) -- Int32
+SET     @O = 0
+
+TEST_PROCEDURE
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT * FROM TEST_TABLE_FUNCTION(NULL)
 
 BeforeExecute
 RollbackTransaction
