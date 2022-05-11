@@ -44,11 +44,6 @@ WHERE RDB$SYSTEM_FLAG = 0
 BeforeExecute
 -- Firebird
 
-SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
-
-BeforeExecute
--- Firebird
-
 SELECT
 	NULL                                                 AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
