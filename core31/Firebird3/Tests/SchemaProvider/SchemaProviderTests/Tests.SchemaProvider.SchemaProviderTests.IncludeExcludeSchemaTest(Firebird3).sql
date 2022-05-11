@@ -27,11 +27,6 @@ WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
-
-BeforeExecute
--- Firebird3 Firebird
-
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -103,11 +98,6 @@ WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0
 BeforeExecute
 -- Firebird3 Firebird
 
-SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
-
-BeforeExecute
--- Firebird3 Firebird
-
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -175,11 +165,6 @@ SELECT
 	'F'
 FROM RDB$FUNCTIONS
 WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0)
-
-BeforeExecute
--- Firebird3 Firebird
-
-SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
