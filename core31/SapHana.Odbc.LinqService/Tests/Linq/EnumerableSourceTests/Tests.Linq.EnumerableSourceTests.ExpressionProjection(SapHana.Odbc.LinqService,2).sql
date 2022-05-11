@@ -11,7 +11,7 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT 'Janet' AS "FirstName", ? AS "PersonID" FROM DUMMY
+			SELECT 'Janet' AS "FirstName", ? AS "PersonID" FROM "DUMMY"
 			UNION ALL
-			SELECT 'Doe', ? FROM DUMMY) "n" ON "p"."PersonID" = "n"."PersonID"
+			SELECT 'Doe', ? FROM "DUMMY") "n" ON "p"."PersonID" = "n"."PersonID"
 

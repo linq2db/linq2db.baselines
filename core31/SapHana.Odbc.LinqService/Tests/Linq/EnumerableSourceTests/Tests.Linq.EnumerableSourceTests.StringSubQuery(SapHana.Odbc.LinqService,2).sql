@@ -15,13 +15,13 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 'j' AS "item" FROM DUMMY
+				SELECT 'j' AS "item" FROM "DUMMY"
 				UNION ALL
-				SELECT 'o' FROM DUMMY
+				SELECT 'o' FROM "DUMMY"
 				UNION ALL
-				SELECT 'h' FROM DUMMY
+				SELECT 'h' FROM "DUMMY"
 				UNION ALL
-				SELECT 'n' FROM DUMMY) "x"
+				SELECT 'n' FROM "DUMMY") "x"
 		WHERE
 			Locate("t"."FirstName", "x"."item") - 1 > 0
 	)

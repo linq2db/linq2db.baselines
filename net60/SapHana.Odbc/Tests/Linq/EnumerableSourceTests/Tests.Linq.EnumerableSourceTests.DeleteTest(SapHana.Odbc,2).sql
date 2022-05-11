@@ -62,9 +62,9 @@ WHERE
 		FROM
 			"TableToInsert" "t"
 				INNER JOIN (
-					SELECT 3 AS "Id" FROM DUMMY
+					SELECT 3 AS "Id" FROM "DUMMY"
 					UNION ALL
-					SELECT 4 FROM DUMMY) "r" ON "t"."Id" = "r"."Id"
+					SELECT 4 FROM "DUMMY") "r" ON "t"."Id" = "r"."Id"
 		WHERE
 			"t1"."Id" = "t"."Id"
 	)

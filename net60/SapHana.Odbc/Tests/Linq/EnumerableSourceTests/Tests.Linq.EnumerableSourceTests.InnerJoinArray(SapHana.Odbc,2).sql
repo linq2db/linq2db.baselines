@@ -10,11 +10,11 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT 'Janet' AS "item" FROM DUMMY
+			SELECT 'Janet' AS "item" FROM "DUMMY"
 			UNION ALL
-			SELECT 'Doe' FROM DUMMY
+			SELECT 'Doe' FROM "DUMMY"
 			UNION ALL
-			SELECT 'John' FROM DUMMY
+			SELECT 'John' FROM "DUMMY"
 			UNION ALL
-			SELECT 'Doe' FROM DUMMY) "n" ON "p"."LastName" = "n"."item"
+			SELECT 'Doe' FROM "DUMMY") "n" ON "p"."LastName" = "n"."item"
 
