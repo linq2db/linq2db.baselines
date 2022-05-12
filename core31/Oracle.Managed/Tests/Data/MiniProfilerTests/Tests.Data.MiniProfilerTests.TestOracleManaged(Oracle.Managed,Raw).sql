@@ -57,6 +57,11 @@ SELECT USER FROM DUAL
 BeforeExecute
 --  Oracle.Managed Oracle12
 
+select VERSION from PRODUCT_COMPONENT_VERSION where PRODUCT like 'PL/SQL%'
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
 select user from dual
 
 BeforeExecute
@@ -161,7 +166,80 @@ BeforeExecute
 						
 
 BeforeExecute
+--  Oracle.Managed Oracle12
+
+SELECT
+	USER                                                                                                                                 AS Owner,
+	1                                                                                                                                    AS IsDefault,
+	p.OVERLOAD                                                                                                                           AS Overload,
+	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.OBJECT_NAME ELSE NULL END                                                                 AS PackageName,
+	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END                                                     AS ProcedureName,
+	CASE WHEN a.DATA_TYPE IS NULL THEN 'PROCEDURE' WHEN a.DATA_TYPE = 'TABLE' THEN 'TABLE_FUNCTION' ELSE 'FUNCTION' END AS ProcedureType
+FROM USER_PROCEDURES p
+		LEFT OUTER JOIN USER_ARGUMENTS a ON
+			((a.PACKAGE_NAME = p.OBJECT_NAME AND a.OBJECT_NAME = p.PROCEDURE_NAME)
+					OR (a.PACKAGE_NAME IS NULL AND p.PROCEDURE_NAME IS NULL AND a.OBJECT_NAME = p.OBJECT_NAME))
+				AND a.ARGUMENT_NAME IS NULL
+				AND a.DATA_LEVEL = 0
+WHERE ((p.OBJECT_TYPE IN ('PROCEDURE', 'FUNCTION') AND PROCEDURE_NAME IS NULL) OR PROCEDURE_NAME IS NOT NULL)
+ORDER BY
+	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.OBJECT_NAME ELSE NULL END,
+	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+SELECT
+	USER           AS Owner,
+	PACKAGE_NAME   AS PackageName,
+	OBJECT_NAME    AS ProcedureName,
+	OVERLOAD       AS Overload,
+	IN_OUT         AS Direction,
+	DATA_LENGTH    AS DataLength,
+	ARGUMENT_NAME  AS Name,
+	DATA_TYPE      AS Type,
+	POSITION       AS Ordinal,
+	DATA_PRECISION AS Precision,
+	DATA_SCALE     AS Scale
+FROM ALL_ARGUMENTS
+WHERE SEQUENCE > 0 AND DATA_LEVEL = 0 AND OWNER = USER
+	AND (DATA_TYPE <> 'TABLE' OR IN_OUT <> 'OUT' OR POSITION <> 0)
+
+BeforeExecute
 BeginTransaction
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+SYSTEM.ISSUE2132.TEST
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @O Decimal(22)
+SET     @O = 0
+
+SYSTEM.TEST_PACKAGE1.TEST_PROCEDURE
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+SELECT * FROM SYSTEM.TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL)
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @O Decimal(22)
+SET     @O = 0
+
+SYSTEM.TEST_PACKAGE2.TEST_PROCEDURE
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+SELECT * FROM SYSTEM.TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
+
 BeforeExecute
 --  Oracle.Managed Oracle12
 
@@ -242,6 +320,31 @@ DECLARE @PINPUTOUTPUTSTRARRAY Varchar2 -- String
 SET     @PINPUTOUTPUTSTRARRAY = NULL
 
 SYSTEM.ARRAYTEST
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+SELECT * FROM SYSTEM.LOGMNR$COL_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+SELECT * FROM SYSTEM.LOGMNR$GSBA_GG_TABF_PUBLIC(NULL,NULL,NULL)
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+SELECT * FROM SYSTEM.LOGMNR$KEY_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL,NULL)
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+SELECT * FROM SYSTEM.LOGMNR$SEQ_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL)
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+SELECT * FROM SYSTEM.LOGMNR$TAB_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
 --  Oracle.Managed Oracle12
@@ -335,19 +438,17 @@ SYSTEM.SCALAR_OUTPUTPARAMETER
 
 BeforeExecute
 --  Oracle.Managed Oracle12
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @O Decimal(22)
+SET     @O = 0
 
-SYSTEM.TEST2132
+SYSTEM.TEST_PROCEDURE
 
 BeforeExecute
 --  Oracle.Managed Oracle12
-DECLARE @I Decimal(22)
-SET     @I = 0
-DECLARE @I Decimal(22)
-SET     @I = 0
-DECLARE @I Decimal(22)
-SET     @I = 0
 
-SYSTEM.TEST_PROCEDURE
+SELECT * FROM SYSTEM.TEST_TABLE_FUNCTION(NULL)
 
 BeforeExecute
 RollbackTransaction
