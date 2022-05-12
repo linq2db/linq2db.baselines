@@ -19,6 +19,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[tempdb].[TestSchema].[#IsTemporaryTable]', N'U') IS NOT NULL)
+IF (OBJECT_ID(N'[TestSchema].[#IsTemporaryTable]', N'U') IS NOT NULL)
 	DROP TABLE [TestSchema].[#IsTemporaryTable]
 
