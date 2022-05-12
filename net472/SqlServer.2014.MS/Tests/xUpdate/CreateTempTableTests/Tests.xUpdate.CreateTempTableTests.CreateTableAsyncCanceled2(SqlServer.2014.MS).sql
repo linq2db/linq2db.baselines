@@ -27,7 +27,7 @@ FROM
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
-IF (OBJECT_ID(N'[#TempTable]', N'U') IS NOT NULL)
+IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [#TempTable]
 
 BeforeExecute
