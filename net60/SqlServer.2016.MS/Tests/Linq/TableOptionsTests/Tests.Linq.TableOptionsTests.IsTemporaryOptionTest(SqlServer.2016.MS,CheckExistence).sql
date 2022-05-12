@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-IF (OBJECT_ID(N'[#temp_table1]', N'U') IS NULL)
+IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	CREATE TABLE [#temp_table1]
 	(
 		[ID]    Int NOT NULL,
@@ -14,7 +14,7 @@ INSERT BULK [#temp_table1](ID, Value)
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-IF (OBJECT_ID(N'[#temp_table2]', N'U') IS NULL)
+IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 	CREATE TABLE [#temp_table2]
 	(
 		[ID]    Int NOT NULL,
