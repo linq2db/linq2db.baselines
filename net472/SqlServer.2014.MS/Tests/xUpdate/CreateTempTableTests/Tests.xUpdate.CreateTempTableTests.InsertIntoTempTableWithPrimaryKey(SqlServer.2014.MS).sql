@@ -14,6 +14,6 @@ INSERT BULK [#TableWithPrimaryKey2](Key)
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[tempdb]..[#TableWithPrimaryKey2]', N'U') IS NOT NULL)
+IF (OBJECT_ID(N'[#TableWithPrimaryKey2]', N'U') IS NOT NULL)
 	DROP TABLE [#TableWithPrimaryKey2]
 

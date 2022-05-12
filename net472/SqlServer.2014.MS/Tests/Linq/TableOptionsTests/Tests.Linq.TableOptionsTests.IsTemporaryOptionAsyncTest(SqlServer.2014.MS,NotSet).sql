@@ -96,12 +96,12 @@ TRUNCATE TABLE [#temp_table2]
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NOT NULL)
+IF (OBJECT_ID(N'[#temp_table2]', N'U') IS NOT NULL)
 	DROP TABLE [#temp_table2]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NOT NULL)
+IF (OBJECT_ID(N'[#temp_table1]', N'U') IS NOT NULL)
 	DROP TABLE [#temp_table1]
 
