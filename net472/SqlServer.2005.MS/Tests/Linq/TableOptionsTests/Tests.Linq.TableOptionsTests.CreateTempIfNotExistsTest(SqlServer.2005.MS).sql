@@ -35,6 +35,6 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[#CreateIfNotExistsTable]', N'U') IS NOT NULL)
+IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NOT NULL)
 	DROP TABLE [#CreateIfNotExistsTable]
 

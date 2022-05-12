@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[#TestTable]', N'U') IS NOT NULL)
+IF (OBJECT_ID(N'[tempdb]..[#TestTable]', N'U') IS NOT NULL)
 	DROP TABLE [#TestTable]
 
 BeforeExecute
@@ -41,6 +41,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[#TestTable]', N'U') IS NOT NULL)
+IF (OBJECT_ID(N'[tempdb]..[#TestTable]', N'U') IS NOT NULL)
 	DROP TABLE [#TestTable]
 
