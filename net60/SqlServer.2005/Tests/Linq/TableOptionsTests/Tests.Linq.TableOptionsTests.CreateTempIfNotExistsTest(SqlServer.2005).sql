@@ -7,7 +7,7 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [#CreateIfNotExistsTable]
+CREATE TABLE [tempdb]..[#CreateIfNotExistsTable]
 (
 	[Id]    Int NOT NULL,
 	[Value] Int NOT NULL
@@ -20,7 +20,7 @@ SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
-	[#CreateIfNotExistsTable] [t1]
+	[tempdb]..[#CreateIfNotExistsTable] [t1]
 
 BeforeExecute
 -- SqlServer.2005
@@ -36,5 +36,5 @@ BeforeExecute
 -- SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NOT NULL)
-	DROP TABLE [#CreateIfNotExistsTable]
+	DROP TABLE [tempdb]..[#CreateIfNotExistsTable]
 

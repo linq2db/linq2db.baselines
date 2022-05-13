@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [##IsGlobalTemporaryTable]
+CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 (
 	[Id]    Int NOT NULL,
 	[Value] Int NOT NULL
@@ -14,11 +14,11 @@ SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
-	[##IsGlobalTemporaryTable] [t1]
+	[tempdb]..[##IsGlobalTemporaryTable] [t1]
 
 BeforeExecute
 -- SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[##IsGlobalTemporaryTable]', N'U') IS NOT NULL)
-	DROP TABLE [##IsGlobalTemporaryTable]
+	DROP TABLE [tempdb]..[##IsGlobalTemporaryTable]
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
 
@@ -11,7 +11,7 @@ CREATE TABLE [#TempTable]
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
 
