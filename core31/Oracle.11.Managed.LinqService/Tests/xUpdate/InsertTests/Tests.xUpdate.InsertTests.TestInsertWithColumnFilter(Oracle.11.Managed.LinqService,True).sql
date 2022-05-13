@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName Varchar2(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @take Int32
@@ -43,7 +43,7 @@ WHERE
 	x."FirstName" = :FirstName AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @newName Varchar2(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

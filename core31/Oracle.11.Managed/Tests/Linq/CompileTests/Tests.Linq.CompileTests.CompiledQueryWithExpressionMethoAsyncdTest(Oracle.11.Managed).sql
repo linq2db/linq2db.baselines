@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 DECLARE @take Int32

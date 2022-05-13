@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 7
 DECLARE @skip_1 Int32
@@ -31,7 +31,7 @@ WHERE
 	t3.RN > :skip_1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 7
 DECLARE @skip_1 Int32

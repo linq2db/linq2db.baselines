@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -7,7 +7,7 @@ FROM
 	"AllTypes" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -19,147 +19,99 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT USER FROM DUAL
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
-select user from dual
+select VERSION from PRODUCT_COMPONENT_VERSION where PRODUCT like 'PL/SQL%'
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	p.OWNER                                                                                                                              AS Owner,
+	CASE WHEN p.OWNER = USER THEN 1 ELSE 0 END                                                                                           AS IsDefault,
+	p.OVERLOAD                                                                                                                           AS Overload,
+	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.OBJECT_NAME ELSE NULL END                                                                 AS PackageName,
+	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END                                                     AS ProcedureName,
+	CASE WHEN a.DATA_TYPE IS NULL THEN 'PROCEDURE' WHEN a.DATA_TYPE = 'TABLE' THEN 'TABLE_FUNCTION' ELSE 'FUNCTION' END AS ProcedureType
+FROM ALL_PROCEDURES p
+	LEFT OUTER JOIN ALL_ARGUMENTS a ON
+		a.OWNER = p.OWNER
+			AND ((a.PACKAGE_NAME = p.OBJECT_NAME AND a.OBJECT_NAME = p.PROCEDURE_NAME)
+				OR (a.PACKAGE_NAME IS NULL AND p.PROCEDURE_NAME IS NULL AND a.OBJECT_NAME = p.OBJECT_NAME))
+			AND a.ARGUMENT_NAME IS NULL
+			AND a.DATA_LEVEL = 0
+WHERE ((p.OBJECT_TYPE IN ('PROCEDURE', 'FUNCTION') AND PROCEDURE_NAME IS NULL) OR PROCEDURE_NAME IS NOT NULL)
+	AND p.OWNER IN ('TEST')
+ORDER BY
+	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.OBJECT_NAME ELSE NULL END,
+	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	OWNER          AS Owner,
+	PACKAGE_NAME   AS PackageName,
+	OBJECT_NAME    AS ProcedureName,
+	OVERLOAD       AS Overload,
+	IN_OUT         AS Direction,
+	DATA_LENGTH    AS DataLength,
+	ARGUMENT_NAME  AS Name,
+	DATA_TYPE      AS Type,
+	POSITION       AS Ordinal,
+	DATA_PRECISION AS Precision,
+	DATA_SCALE     AS Scale
+FROM ALL_ARGUMENTS
+WHERE OWNER IN ('TEST') AND SEQUENCE > 0 AND DATA_LEVEL = 0
+	AND (DATA_TYPE <> 'TABLE' OR IN_OUT <> 'OUT' OR POSITION <> 0)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
+
+TEST.ISSUE2132.TEST
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
 DECLARE @I Decimal(22)
 SET     @I = 0
+DECLARE @O Decimal(22)
+SET     @O = 0
+
+TEST.TEST_PACKAGE1.TEST_PROCEDURE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT * FROM TABLE(TEST.TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL))
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
 DECLARE @I Decimal(22)
 SET     @I = 0
-DECLARE @I Decimal(22)
-SET     @I = 0
+DECLARE @O Decimal(22)
+SET     @O = 0
 
-SYSTEM.TEST_PROCEDURE
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYSTEM.TEST2132
+TEST.TEST_PACKAGE2.TEST_PROCEDURE
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @POUTPUTINT Int32
-SET     @POUTPUTINT = 0
-DECLARE @POUTPUTSTRING NVarchar2 -- String
-SET     @POUTPUTSTRING = ''
+-- Oracle.11.Managed Oracle11
 
-SYSTEM.SCALAR_OUTPUTPARAMETER
+SELECT * FROM TABLE(TEST.TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL))
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @POUTPUTINTARRAY Varchar2 -- String
-SET     @POUTPUTINTARRAY = NULL
+-- Oracle.11.Managed Oracle11
 
-SYSTEM.SCALARARRAY
+TEST.ADDISSUE792RECORD
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @MR Varchar2 -- String
-SET     @MR = NULL
-DECLARE @SR Varchar2 -- String
-SET     @SR = NULL
-
-SYSTEM.RESULTSETTEST
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PPERSONID Decimal(22)
-SET     @PPERSONID = 0
-DECLARE @PFIRSTNAME NVarchar2 -- String
-SET     @PFIRSTNAME = ''
-DECLARE @PLASTNAME NVarchar2 -- String
-SET     @PLASTNAME = ''
-DECLARE @PMIDDLENAME NVarchar2 -- String
-SET     @PMIDDLENAME = ''
-DECLARE @PGENDER Char -- AnsiStringFixedLength
-SET     @PGENDER = ''
-
-SYSTEM.PERSON_UPDATE
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PFIRSTNAME NVarchar2 -- String
-SET     @PFIRSTNAME = ''
-DECLARE @PLASTNAME NVarchar2 -- String
-SET     @PLASTNAME = ''
-DECLARE @PMIDDLENAME NVarchar2 -- String
-SET     @PMIDDLENAME = ''
-DECLARE @PGENDER Char -- AnsiStringFixedLength
-SET     @PGENDER = ''
-DECLARE @PPERSONID Decimal(22)
-SET     @PPERSONID = 0
-
-SYSTEM.PERSON_INSERT_OUTPUTPARAMETER
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PPERSONID Decimal(22)
-SET     @PPERSONID = 0
-
-SYSTEM.PERSON_DELETE
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PID Decimal(22)
-SET     @PID = 0
-DECLARE @POUTPUTID Decimal(22)
-SET     @POUTPUTID = 0
-DECLARE @PINPUTOUTPUTID Decimal(22)
-SET     @PINPUTOUTPUTID = 0
-DECLARE @PSTR NVarchar2 -- String
-SET     @PSTR = ''
-DECLARE @POUTPUTSTR NVarchar2 -- String
-SET     @POUTPUTSTR = ''
-DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
-SET     @PINPUTOUTPUTSTR = ''
-
-SYSTEM.OUTREFTEST
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PSTR NVarchar2 -- String
-SET     @PSTR = ''
-DECLARE @POUTPUTSTR NVarchar2 -- String
-SET     @POUTPUTSTR = ''
-DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
-SET     @PINPUTOUTPUTSTR = ''
-
-SYSTEM.OUTREFENUMTEST
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SYSTEM.ORA$_SYS_REP_AUTH
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @PINTARRAY Varchar2 -- String
-SET     @PINTARRAY = NULL
-DECLARE @POUTPUTINTARRAY Varchar2 -- String
-SET     @POUTPUTINTARRAY = NULL
-DECLARE @PINPUTOUTPUTINTARRAY Varchar2 -- String
-SET     @PINPUTOUTPUTINTARRAY = NULL
-DECLARE @PSTRARRAY Varchar2 -- String
-SET     @PSTRARRAY = NULL
-DECLARE @POUTPUTSTRARRAY Varchar2 -- String
-SET     @POUTPUTSTRARRAY = NULL
-DECLARE @PINPUTOUTPUTSTRARRAY Varchar2 -- String
-SET     @PINPUTOUTPUTSTRARRAY = NULL
-
-SYSTEM.ARRAYTEST
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Decimal(22)
 SET     @ID = 0
 DECLARE @BIGINTDATATYPE Decimal(22)
@@ -215,17 +167,133 @@ SET     @GUIDDATATYPE = NULL
 DECLARE @XMLDATATYPE Varchar2 -- String
 SET     @XMLDATATYPE = NULL
 
-SYSTEM.ALLOUTPUTPARAMETERS
+TEST.ALLOUTPUTPARAMETERS
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
+DECLARE @PINTARRAY Varchar2 -- String
+SET     @PINTARRAY = NULL
+DECLARE @POUTPUTINTARRAY Varchar2 -- String
+SET     @POUTPUTINTARRAY = NULL
+DECLARE @PINPUTOUTPUTINTARRAY Varchar2 -- String
+SET     @PINPUTOUTPUTINTARRAY = NULL
+DECLARE @PSTRARRAY Varchar2 -- String
+SET     @PSTRARRAY = NULL
+DECLARE @POUTPUTSTRARRAY Varchar2 -- String
+SET     @POUTPUTSTRARRAY = NULL
+DECLARE @PINPUTOUTPUTSTRARRAY Varchar2 -- String
+SET     @PINPUTOUTPUTSTRARRAY = NULL
 
-SYSTEM.ADDISSUE792RECORD
+TEST.ARRAYTEST
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @PSTR NVarchar2 -- String
+SET     @PSTR = ''
+DECLARE @POUTPUTSTR NVarchar2 -- String
+SET     @POUTPUTSTR = ''
+DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
+SET     @PINPUTOUTPUTSTR = ''
+
+TEST.OUTREFENUMTEST
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @PID Decimal(22)
+SET     @PID = 0
+DECLARE @POUTPUTID Decimal(22)
+SET     @POUTPUTID = 0
+DECLARE @PINPUTOUTPUTID Decimal(22)
+SET     @PINPUTOUTPUTID = 0
+DECLARE @PSTR NVarchar2 -- String
+SET     @PSTR = ''
+DECLARE @POUTPUTSTR NVarchar2 -- String
+SET     @POUTPUTSTR = ''
+DECLARE @PINPUTOUTPUTSTR NVarchar2 -- String
+SET     @PINPUTOUTPUTSTR = ''
+
+TEST.OUTREFTEST
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @PPERSONID Decimal(22)
+SET     @PPERSONID = 0
+
+TEST.PERSON_DELETE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @PFIRSTNAME NVarchar2 -- String
+SET     @PFIRSTNAME = ''
+DECLARE @PLASTNAME NVarchar2 -- String
+SET     @PLASTNAME = ''
+DECLARE @PMIDDLENAME NVarchar2 -- String
+SET     @PMIDDLENAME = ''
+DECLARE @PGENDER Char -- AnsiStringFixedLength
+SET     @PGENDER = ''
+DECLARE @PPERSONID Decimal(22)
+SET     @PPERSONID = 0
+
+TEST.PERSON_INSERT_OUTPUTPARAMETER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @PPERSONID Decimal(22)
+SET     @PPERSONID = 0
+DECLARE @PFIRSTNAME NVarchar2 -- String
+SET     @PFIRSTNAME = ''
+DECLARE @PLASTNAME NVarchar2 -- String
+SET     @PLASTNAME = ''
+DECLARE @PMIDDLENAME NVarchar2 -- String
+SET     @PMIDDLENAME = ''
+DECLARE @PGENDER Char -- AnsiStringFixedLength
+SET     @PGENDER = ''
+
+TEST.PERSON_UPDATE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @MR Varchar2 -- String
+SET     @MR = NULL
+DECLARE @SR Varchar2 -- String
+SET     @SR = NULL
+
+TEST.RESULTSETTEST
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @POUTPUTINTARRAY Varchar2 -- String
+SET     @POUTPUTINTARRAY = NULL
+
+TEST.SCALARARRAY
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @POUTPUTINT Int32
+SET     @POUTPUTINT = 0
+DECLARE @POUTPUTSTRING NVarchar2 -- String
+SET     @POUTPUTSTRING = ''
+
+TEST.SCALAR_OUTPUTPARAMETER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @I Decimal(22)
+SET     @I = 0
+DECLARE @O Decimal(22)
+SET     @O = 0
+
+TEST.TEST_PROCEDURE
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT * FROM TABLE(TEST.TEST_TABLE_FUNCTION(NULL))
 
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -233,7 +301,7 @@ FROM
 	"AllTypes" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"AllTypes" t1

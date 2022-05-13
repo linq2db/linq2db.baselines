@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName Varchar2(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @name Varchar2(8) -- String
 SET     @name = 'Update14'
 DECLARE @idx Int32
@@ -39,7 +39,7 @@ WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -49,7 +49,7 @@ WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Person" t1

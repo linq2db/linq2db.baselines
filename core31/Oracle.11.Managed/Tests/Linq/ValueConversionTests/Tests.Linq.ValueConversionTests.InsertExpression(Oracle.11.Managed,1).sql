@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "ValueConversion"
 (
@@ -18,7 +18,7 @@ CREATE TABLE "ValueConversion"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @iteration Int32
 SET     @iteration = 1
 DECLARE @Value1 NVarchar2(2) -- String
@@ -52,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @iteration Int32
 SET     @iteration = 1
 DECLARE @take Int32
@@ -75,7 +75,7 @@ WHERE
 	e."Id" = :iteration AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';

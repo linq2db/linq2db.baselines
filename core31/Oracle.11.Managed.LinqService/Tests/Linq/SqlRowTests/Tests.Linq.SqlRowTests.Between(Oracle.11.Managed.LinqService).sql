@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Ints"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -33,7 +33,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @One Int32
 SET     @One = 1
 DECLARE @Two Int32
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -78,7 +78,7 @@ WHERE
 	(i."One" < i."One" OR i."One" = i."One" AND i."Two" <= i."One" + i."One")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -89,7 +89,7 @@ WHERE
 	(i."One" < i."One" OR i."One" = i."One" AND i."Three" <= i."Four")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -100,7 +100,7 @@ WHERE
 	(i."One" < i."One" OR i."One" = i."One" AND i."Two" <= i."Two")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -111,7 +111,7 @@ WHERE
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Five" <= i."Two")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -122,7 +122,7 @@ WHERE
 	(i."Two" < i."Two" OR i."Two" = i."Two" AND i."Five" <= i."Two")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -133,7 +133,7 @@ WHERE
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Nil" <= i."One")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -144,7 +144,7 @@ WHERE
 	(i."Two" < i."Two" OR i."Two" = i."Two" AND i."Nil" <= i."Three")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -155,7 +155,7 @@ WHERE
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Five" <= i."Nil")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -166,7 +166,7 @@ WHERE
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Nil" <= i."Nil")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -177,7 +177,7 @@ WHERE
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Two" <= i."Five")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Ints"';

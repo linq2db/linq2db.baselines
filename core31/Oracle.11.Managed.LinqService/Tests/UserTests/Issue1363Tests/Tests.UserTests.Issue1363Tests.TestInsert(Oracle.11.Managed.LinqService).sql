@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Issue1363"
 (
@@ -8,7 +8,7 @@ CREATE TABLE "Issue1363"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Raw(16) -- Binary
 SET     @id = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Raw(16) -- Binary
 SET     @id = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
 DECLARE @testId Raw(16) -- Binary
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id2 Raw(16) -- Binary
 SET     @id2 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
 DECLARE @take Int32
@@ -71,7 +71,7 @@ WHERE
 	t1."required_field" = :id2 AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue1363"';

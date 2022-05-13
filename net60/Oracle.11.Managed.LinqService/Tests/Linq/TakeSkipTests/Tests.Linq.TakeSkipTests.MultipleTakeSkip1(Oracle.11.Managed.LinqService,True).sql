@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TakeSkipClass"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -28,7 +28,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value_1 Varchar2(6) -- String
 SET     @Value_1 = 'Value1'
 
@@ -42,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value_1 Varchar2(6) -- String
 SET     @Value_1 = 'Value2'
 
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value_1 Varchar2(6) -- String
 SET     @Value_1 = 'Value3'
 
@@ -70,7 +70,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value_1 Varchar2(6) -- String
 SET     @Value_1 = 'Value4'
 
@@ -84,7 +84,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value_1 Varchar2(6) -- String
 SET     @Value_1 = 'Value5'
 
@@ -98,7 +98,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value_1 Varchar2(6) -- String
 SET     @Value_1 = 'Value6'
 
@@ -112,7 +112,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value_1 Varchar2(6) -- String
 SET     @Value_1 = 'Value7'
 
@@ -126,7 +126,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value_1 Varchar2(6) -- String
 SET     @Value_1 = 'Value8'
 
@@ -140,7 +140,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @skip_1 Int32
 SET     @skip_1 = 4
 DECLARE @skip_2 Int32
@@ -169,7 +169,7 @@ WHERE
 	t3.RN > :skip_2
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TakeSkipClass"';

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Src"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -31,7 +31,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Int_1 Int32
@@ -57,7 +57,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Int_1 Int32
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 Varchar2(12) -- String
@@ -99,7 +99,7 @@ WHERE
 	s."CEnum" IN (:CEnum, :CEnum_1) AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @take Int32
@@ -113,7 +113,7 @@ WHERE
 	s."CEnum" IN (:CEnum) OR s."CEnum" IS NULL AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 Varchar2(12) -- String
@@ -129,7 +129,7 @@ WHERE
 	s."CEnum" IN (:CEnum, :CEnum_1) AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @CEnum_1 Varchar2(12) -- String
 SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
@@ -144,7 +144,7 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 Varchar2(12) -- String
@@ -161,7 +161,7 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Src"';

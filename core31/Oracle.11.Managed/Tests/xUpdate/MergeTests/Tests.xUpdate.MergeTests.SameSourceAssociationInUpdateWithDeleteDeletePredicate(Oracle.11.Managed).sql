@@ -1,25 +1,25 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Patient" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Doctor" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Person" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(7) -- String
 SET     @FirstName = 'first 1'
 DECLARE @LastName Varchar2(6) -- String
@@ -49,7 +49,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(7) -- String
 SET     @FirstName = 'first 2'
 DECLARE @LastName Varchar2(6) -- String
@@ -79,7 +79,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(7) -- String
 SET     @FirstName = 'first 3'
 DECLARE @LastName Varchar2(6) -- String
@@ -109,7 +109,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(7) -- String
 SET     @FirstName = 'first 4'
 DECLARE @LastName Varchar2(6) -- String
@@ -139,7 +139,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(7) -- String
 SET     @FirstName = 'first 5'
 DECLARE @LastName Varchar2(6) -- String
@@ -169,7 +169,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(7) -- String
 SET     @FirstName = 'first 6'
 DECLARE @LastName Varchar2(6) -- String
@@ -199,7 +199,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @PersonID Int32
 SET     @PersonID = 15
 DECLARE @Taxonomy Varchar2(10) -- String
@@ -217,7 +217,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @PersonID Int32
 SET     @PersonID = 16
 DECLARE @Taxonomy Varchar2(10) -- String
@@ -235,7 +235,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @PersonID Int32
 SET     @PersonID = 13
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -253,7 +253,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @PersonID Int32
 SET     @PersonID = 14
 DECLARE @Diagnosis Varchar2(9) -- String
@@ -271,7 +271,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 MERGE INTO "Person" Target
 USING (
@@ -303,7 +303,7 @@ DELETE WHERE
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."FirstName",

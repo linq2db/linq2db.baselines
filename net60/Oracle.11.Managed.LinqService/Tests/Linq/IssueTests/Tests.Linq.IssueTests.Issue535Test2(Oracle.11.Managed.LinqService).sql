@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "CustomerBase"
 (
@@ -13,12 +13,12 @@ CREATE TABLE "CustomerBase"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_CustomerBase"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_CustomerBase"
 BEFORE INSERT ON "CustomerBase" FOR EACH ROW
@@ -27,7 +27,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @filter_1 Varchar2(6) -- String
 SET     @filter_1 = '%test%'
 DECLARE @filter_2 Varchar2(6) -- String
@@ -44,7 +44,7 @@ WHERE
 	q."ClientType" = 'Client' AND (q."Name" LIKE :filter_1 ESCAPE '~' OR q."ContactEmail" LIKE :filter_2 ESCAPE '~')
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN

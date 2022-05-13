@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName NVarchar2(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Varchar2(3) -- String
@@ -39,7 +39,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @take Int32
@@ -57,7 +57,7 @@ WHERE
 	t."PersonID" = :id AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @take Int32
@@ -75,7 +75,7 @@ WHERE
 	t."PersonID" = :id AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @FirstName NVarchar2(3) -- String

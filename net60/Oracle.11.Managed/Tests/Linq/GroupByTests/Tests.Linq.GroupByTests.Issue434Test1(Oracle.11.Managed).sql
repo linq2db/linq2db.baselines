@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @input_2 Varchar2(6) -- String
 SET     @input_2 = '%test%'
 
@@ -18,7 +18,7 @@ WHERE
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @input_2 Varchar2(6) -- String
 SET     @input_2 = '%test%'
 

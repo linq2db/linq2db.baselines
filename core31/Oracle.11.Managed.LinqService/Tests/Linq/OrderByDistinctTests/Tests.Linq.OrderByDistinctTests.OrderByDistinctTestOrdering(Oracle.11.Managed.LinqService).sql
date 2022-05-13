@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "OrderByDistinctData"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -33,7 +33,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @DuplicateData Varchar2(3) -- String
@@ -59,7 +59,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 10
 DECLARE @DuplicateData Varchar2(3) -- String
@@ -85,7 +85,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 100
 DECLARE @DuplicateData Varchar2(5) -- String
@@ -111,7 +111,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -142,7 +142,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -171,7 +171,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -202,7 +202,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -231,7 +231,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -263,7 +263,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -293,7 +293,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -325,7 +325,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -355,7 +355,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -387,7 +387,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -417,7 +417,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -449,7 +449,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 3
 DECLARE @skip Int32
@@ -479,7 +479,7 @@ WHERE
 	t2.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "OrderByDistinctData"';

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "ReviewIndexes"
 (
@@ -10,7 +10,7 @@ CREATE TABLE "ReviewIndexes"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 MERGE INTO "ReviewIndexes" Target
 USING (
@@ -27,7 +27,7 @@ DELETE WHERE
 	(Target."Value" <> "Source"."Value_1" OR Target."Value" IS NULL AND "Source"."Value_1" IS NOT NULL OR Target."Value" IS NOT NULL AND "Source"."Value_1" IS NULL)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "ReviewIndexes"';

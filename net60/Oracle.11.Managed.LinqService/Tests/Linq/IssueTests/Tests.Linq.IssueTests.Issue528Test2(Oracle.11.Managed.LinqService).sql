@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."FirstName"
@@ -9,7 +9,7 @@ GROUP BY
 	t1."FirstName"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'John'
 
@@ -25,7 +25,7 @@ WHERE
 	keyParam."FirstName" = :FirstName
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Tester'
 
@@ -41,7 +41,7 @@ WHERE
 	keyParam."FirstName" = :FirstName
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'Jane'
 
@@ -57,7 +57,7 @@ WHERE
 	keyParam."FirstName" = :FirstName
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Jürgen'
 

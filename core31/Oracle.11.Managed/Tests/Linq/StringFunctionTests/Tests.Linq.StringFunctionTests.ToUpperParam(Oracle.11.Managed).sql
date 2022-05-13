@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @param_1 Varchar2(4) -- String
 SET     @param_1 = 'JOHN'
 

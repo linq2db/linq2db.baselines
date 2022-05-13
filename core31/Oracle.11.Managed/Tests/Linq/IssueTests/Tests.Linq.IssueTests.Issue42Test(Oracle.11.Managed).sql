@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -20,7 +20,7 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue TimeStamp -- DateTime
@@ -58,7 +58,7 @@ WHERE
 	"LinqDataTypes".ID = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -79,7 +79,7 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue TimeStamp -- DateTime

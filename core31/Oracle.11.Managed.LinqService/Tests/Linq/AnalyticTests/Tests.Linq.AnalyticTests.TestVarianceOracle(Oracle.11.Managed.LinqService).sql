@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	VARIANCE(p."Value1") OVER(PARTITION BY p."Value1", c_1."ChildID"),
@@ -14,7 +14,7 @@ FROM
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	VARIANCE(c_1."ChildID"),
@@ -27,7 +27,7 @@ GROUP BY
 	p."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	VARIANCE(t1."ParentID")
@@ -35,7 +35,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	VARIANCE(ALL t1."ParentID")
@@ -43,7 +43,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	VARIANCE(DISTINCT t1."ParentID")

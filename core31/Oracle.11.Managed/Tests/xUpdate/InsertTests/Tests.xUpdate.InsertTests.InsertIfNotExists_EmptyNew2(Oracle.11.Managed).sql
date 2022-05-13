@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "test_insert_or_replace"
 (
@@ -12,7 +12,7 @@ CREATE TABLE "test_insert_or_replace"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 MERGE INTO "test_insert_or_replace" t1
 USING (SELECT 1 AS "id" FROM SYS.DUAL) s ON
@@ -32,7 +32,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 MERGE INTO "test_insert_or_replace" t1
 USING (SELECT 1 AS "id" FROM SYS.DUAL) s ON
@@ -52,7 +52,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "test_insert_or_replace"';

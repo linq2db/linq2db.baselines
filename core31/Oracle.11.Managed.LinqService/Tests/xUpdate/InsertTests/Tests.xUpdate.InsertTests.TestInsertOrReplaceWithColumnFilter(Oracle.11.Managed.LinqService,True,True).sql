@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "TestInsertOrReplaceTable"
 (
@@ -12,7 +12,7 @@ CREATE TABLE "TestInsertOrReplaceTable"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName Varchar2(27) -- String
@@ -50,7 +50,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
@@ -67,7 +67,7 @@ WHERE
 	x."FirstName" = :FirstName AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName Varchar2(27) -- String
@@ -105,7 +105,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @take Int32
@@ -122,7 +122,7 @@ WHERE
 	x."FirstName" = :FirstName AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TestInsertOrReplaceTable"';

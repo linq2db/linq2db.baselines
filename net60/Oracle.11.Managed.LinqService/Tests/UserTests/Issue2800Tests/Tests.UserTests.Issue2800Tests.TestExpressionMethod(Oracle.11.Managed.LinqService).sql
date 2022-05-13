@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Car"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -31,7 +31,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(7) -- String
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Name Varchar2(9) -- String
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."Id",
@@ -76,38 +76,7 @@ FROM
 	"Car" x
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SELECT
-	x."Id",
-	x."Name"
-FROM
-	"Car" x
-WHERE
-	(x."Name" <> 'Special' OR x."Name" IS NULL)
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SELECT
-	x."Id",
-	x."Name"
-FROM
-	"Car" x
-WHERE
-	x."Name" = 'Special'
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-
-SELECT
-	x."Id",
-	x."Name"
-FROM
-	"Car" x
-
-BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."Id",
@@ -118,7 +87,7 @@ WHERE
 	(x."Name" <> 'Special' OR x."Name" IS NULL)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."Id",
@@ -129,7 +98,38 @@ WHERE
 	x."Name" = 'Special'
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	x."Id",
+	x."Name"
+FROM
+	"Car" x
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	x."Id",
+	x."Name"
+FROM
+	"Car" x
+WHERE
+	(x."Name" <> 'Special' OR x."Name" IS NULL)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	x."Id",
+	x."Name"
+FROM
+	"Car" x
+WHERE
+	x."Name" = 'Special'
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Car"';

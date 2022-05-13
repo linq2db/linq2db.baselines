@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "UserIssue3128"
 (
@@ -9,7 +9,7 @@ CREATE TABLE "UserIssue3128"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "UserDetailsIssue3128"
 (
@@ -20,7 +20,7 @@ CREATE TABLE "UserDetailsIssue3128"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 10
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -38,7 +38,7 @@ RETURNING
 	"Id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @UserId Int32
 SET     @UserId = 10
 DECLARE @Age Int32
@@ -60,7 +60,7 @@ RETURNING
 	"UserId" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Id",
@@ -71,7 +71,7 @@ FROM
 		LEFT JOIN "UserDetailsIssue3128" a_Details ON t1."Id" = a_Details."UserId"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "UserDetailsIssue3128"';
@@ -83,7 +83,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "UserIssue3128"';
