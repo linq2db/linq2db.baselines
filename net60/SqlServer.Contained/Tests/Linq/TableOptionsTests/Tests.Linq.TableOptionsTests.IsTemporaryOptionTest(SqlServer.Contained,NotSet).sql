@@ -1,19 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [#temp_table1]
+CREATE TABLE [tempdb]..[#temp_table1]
 (
 	[ID]    Int NOT NULL,
 	[Value] Int NOT NULL
 )
 
 BeforeExecute
-INSERT BULK [#temp_table1](ID, Value)
+INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [#temp_table2]
+CREATE TABLE [tempdb]..[#temp_table2]
 (
 	[ID]    Int NOT NULL,
 	[Value] Int NOT NULL
@@ -22,7 +22,7 @@ CREATE TABLE [#temp_table2]
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-INSERT INTO [#temp_table2]
+INSERT INTO [tempdb]..[#temp_table2]
 (
 	[ID],
 	[Value]
@@ -31,7 +31,7 @@ SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
-	[#temp_table1] [t1]
+	[tempdb]..[#temp_table1] [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -40,7 +40,7 @@ SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
-	[#temp_table1] [t1]
+	[tempdb]..[#temp_table1] [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -49,12 +49,12 @@ SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
-	[#temp_table2] [t1]
+	[tempdb]..[#temp_table2] [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-INSERT INTO [#temp_table1]
+INSERT INTO [tempdb]..[#temp_table1]
 (
 	[ID],
 	[Value]
@@ -69,7 +69,7 @@ SET     @ID = 3
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 3
 
-INSERT INTO [#temp_table1]
+INSERT INTO [tempdb]..[#temp_table1]
 (
 	[ID],
 	[Value]
@@ -81,25 +81,25 @@ VALUES
 )
 
 BeforeExecute
-INSERT BULK [#temp_table1](ID, Value)
+INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-TRUNCATE TABLE [#temp_table1]
+TRUNCATE TABLE [tempdb]..[#temp_table1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-TRUNCATE TABLE [#temp_table2]
+TRUNCATE TABLE [tempdb]..[#temp_table2]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [#temp_table2]
+DROP TABLE IF EXISTS [tempdb]..[#temp_table2]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [#temp_table1]
+DROP TABLE IF EXISTS [tempdb]..[#temp_table1]
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-CREATE TABLE [#tmp]
+CREATE TABLE [tempdb]..[#tmp]
 (
 	[ID] HierarchyId     NULL
 )

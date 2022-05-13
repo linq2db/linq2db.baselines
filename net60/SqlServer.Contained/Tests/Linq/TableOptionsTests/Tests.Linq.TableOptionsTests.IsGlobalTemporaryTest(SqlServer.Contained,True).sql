@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [##IsGlobalTemporaryTable]
+CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 (
 	[Id]    Int NOT NULL,
 	[Value] Int NOT NULL
@@ -14,10 +14,10 @@ SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
-	[##IsGlobalTemporaryTable] [t1]
+	[tempdb]..[##IsGlobalTemporaryTable] [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [##IsGlobalTemporaryTable]
+DROP TABLE IF EXISTS [tempdb]..[##IsGlobalTemporaryTable]
 

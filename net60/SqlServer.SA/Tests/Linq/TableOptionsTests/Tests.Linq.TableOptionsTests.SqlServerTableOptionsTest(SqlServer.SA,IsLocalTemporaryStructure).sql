@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [#TestTable]
+CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
 	[Value] Int NOT NULL
@@ -10,5 +10,5 @@ CREATE TABLE [#TestTable]
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [#TestTable]
+DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 

@@ -14,7 +14,7 @@ FROM
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL
 )
