@@ -6,23 +6,26 @@ SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
-	NULL                                                    AS PackageName,
-	RDB$PROCEDURE_NAME                                      AS ProcedureName,
-	RDB$DESCRIPTION                                         AS Description,
-	RDB$PROCEDURE_SOURCE                                    AS Source,
-	CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
-FROM RDB$PROCEDURES
-WHERE RDB$SYSTEM_FLAG = 0 AND RDB$PROCEDURE_TYPE IS NOT NULL
-UNION ALL
-SELECT 
-	NULL,
-	RDB$FUNCTION_NAME,
-	RDB$DESCRIPTION,
-	NULL,
-	'F'
-FROM RDB$FUNCTIONS
-WHERE RDB$SYSTEM_FLAG = 0
+
+SELECT * FROM (
+	SELECT
+		NULL                                                    AS PackageName,
+		RDB$PROCEDURE_NAME                                      AS ProcedureName,
+		RDB$DESCRIPTION                                         AS Description,
+		RDB$PROCEDURE_SOURCE                                    AS Source,
+		CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
+	FROM RDB$PROCEDURES
+	WHERE RDB$SYSTEM_FLAG = 0 AND RDB$PROCEDURE_TYPE IS NOT NULL
+	UNION ALL
+	SELECT 
+		NULL,
+		RDB$FUNCTION_NAME,
+		RDB$DESCRIPTION,
+		NULL,
+		'F'
+	FROM RDB$FUNCTIONS
+	WHERE RDB$SYSTEM_FLAG = 0
+) ORDER BY ProcedureName
 
 BeforeExecute
 -- Firebird
@@ -73,23 +76,26 @@ SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
-	NULL                                                    AS PackageName,
-	RDB$PROCEDURE_NAME                                      AS ProcedureName,
-	RDB$DESCRIPTION                                         AS Description,
-	RDB$PROCEDURE_SOURCE                                    AS Source,
-	CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
-FROM RDB$PROCEDURES
-WHERE RDB$SYSTEM_FLAG = 0 AND RDB$PROCEDURE_TYPE IS NOT NULL
-UNION ALL
-SELECT 
-	NULL,
-	RDB$FUNCTION_NAME,
-	RDB$DESCRIPTION,
-	NULL,
-	'F'
-FROM RDB$FUNCTIONS
-WHERE RDB$SYSTEM_FLAG = 0
+
+SELECT * FROM (
+	SELECT
+		NULL                                                    AS PackageName,
+		RDB$PROCEDURE_NAME                                      AS ProcedureName,
+		RDB$DESCRIPTION                                         AS Description,
+		RDB$PROCEDURE_SOURCE                                    AS Source,
+		CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
+	FROM RDB$PROCEDURES
+	WHERE RDB$SYSTEM_FLAG = 0 AND RDB$PROCEDURE_TYPE IS NOT NULL
+	UNION ALL
+	SELECT 
+		NULL,
+		RDB$FUNCTION_NAME,
+		RDB$DESCRIPTION,
+		NULL,
+		'F'
+	FROM RDB$FUNCTIONS
+	WHERE RDB$SYSTEM_FLAG = 0
+) ORDER BY ProcedureName
 
 BeforeExecute
 -- Firebird
@@ -140,23 +146,26 @@ SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
 BeforeExecute
 -- Firebird
 
-SELECT
-	NULL                                                    AS PackageName,
-	RDB$PROCEDURE_NAME                                      AS ProcedureName,
-	RDB$DESCRIPTION                                         AS Description,
-	RDB$PROCEDURE_SOURCE                                    AS Source,
-	CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
-FROM RDB$PROCEDURES
-WHERE RDB$SYSTEM_FLAG = 0 AND RDB$PROCEDURE_TYPE IS NOT NULL
-UNION ALL
-SELECT 
-	NULL,
-	RDB$FUNCTION_NAME,
-	RDB$DESCRIPTION,
-	NULL,
-	'F'
-FROM RDB$FUNCTIONS
-WHERE RDB$SYSTEM_FLAG = 0
+
+SELECT * FROM (
+	SELECT
+		NULL                                                    AS PackageName,
+		RDB$PROCEDURE_NAME                                      AS ProcedureName,
+		RDB$DESCRIPTION                                         AS Description,
+		RDB$PROCEDURE_SOURCE                                    AS Source,
+		CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
+	FROM RDB$PROCEDURES
+	WHERE RDB$SYSTEM_FLAG = 0 AND RDB$PROCEDURE_TYPE IS NOT NULL
+	UNION ALL
+	SELECT 
+		NULL,
+		RDB$FUNCTION_NAME,
+		RDB$DESCRIPTION,
+		NULL,
+		'F'
+	FROM RDB$FUNCTIONS
+	WHERE RDB$SYSTEM_FLAG = 0
+) ORDER BY ProcedureName
 
 BeforeExecute
 -- Firebird
