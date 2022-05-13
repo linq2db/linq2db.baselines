@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [#InsertTempTable]
+CREATE TABLE [tempdb]..[#InsertTempTable]
 (
 	[Action]    NVarChar(4000)     NULL,
 	[NewId]     Int            NOT NULL,
@@ -272,7 +272,7 @@ OUTPUT
 	$action,
 	[INSERTED].[Id],
 	[DELETED].[Id]
-INTO [#InsertTempTable]
+INTO [tempdb]..[#InsertTempTable]
 (
 	[Action],
 	[NewId],
@@ -288,5 +288,5 @@ SELECT
 	[t1].[NewId],
 	[t1].[DeletedId]
 FROM
-	[#InsertTempTable] [t1]
+	[tempdb]..[#InsertTempTable] [t1]
 
