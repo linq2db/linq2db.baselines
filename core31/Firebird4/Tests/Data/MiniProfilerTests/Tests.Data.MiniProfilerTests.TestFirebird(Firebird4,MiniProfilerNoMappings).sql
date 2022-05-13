@@ -13,23 +13,26 @@ SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
 BeforeExecute
 --  Firebird
 
-SELECT
-	RDB$PACKAGE_NAME                                        AS PackageName,
-	RDB$PROCEDURE_NAME                                      AS ProcedureName,
-	RDB$DESCRIPTION                                         AS Description,
-	RDB$PROCEDURE_SOURCE                                    AS Source,
-	CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
-FROM RDB$PROCEDURES
-WHERE RDB$SYSTEM_FLAG = 0 AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0) AND RDB$PROCEDURE_TYPE IS NOT NULL
-UNION ALL
-SELECT 
-	RDB$PACKAGE_NAME,
-	RDB$FUNCTION_NAME,
-	RDB$DESCRIPTION,
-	RDB$FUNCTION_SOURCE,
-	'F'
-FROM RDB$FUNCTIONS
-WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0)
+
+SELECT * FROM (
+	SELECT
+		RDB$PACKAGE_NAME                                        AS PackageName,
+		RDB$PROCEDURE_NAME                                      AS ProcedureName,
+		RDB$DESCRIPTION                                         AS Description,
+		RDB$PROCEDURE_SOURCE                                    AS Source,
+		CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
+	FROM RDB$PROCEDURES
+	WHERE RDB$SYSTEM_FLAG = 0 AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0) AND RDB$PROCEDURE_TYPE IS NOT NULL
+	UNION ALL
+	SELECT 
+		RDB$PACKAGE_NAME,
+		RDB$FUNCTION_NAME,
+		RDB$DESCRIPTION,
+		RDB$FUNCTION_SOURCE,
+		'F'
+	FROM RDB$FUNCTIONS
+	WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0)
+) ORDER BY PackageName, ProcedureName
 
 BeforeExecute
 --  Firebird
@@ -77,17 +80,34 @@ BeginTransaction
 BeforeExecute
 --  Firebird
 
-SELECT * FROM "Person_SelectByKey"(NULL)
+"AddIssue792Record"
 
 BeforeExecute
 --  Firebird
 
-SELECT * FROM "Person_SelectAll"
+SELECT * FROM "OutRefEnumTest"(NULL,NULL)
 
 BeforeExecute
 --  Firebird
 
-SELECT * FROM "Person_SelectByName"(NULL,NULL)
+SELECT * FROM "OutRefTest"(NULL,NULL,NULL,NULL)
+
+BeforeExecute
+--  Firebird
+
+SELECT * FROM "Patient_SelectAll"
+
+BeforeExecute
+--  Firebird
+
+SELECT * FROM "Patient_SelectByName"(NULL,NULL)
+
+BeforeExecute
+--  Firebird
+DECLARE @PERSONID Integer(4) -- Int32
+SET     @PERSONID = 0
+
+"Person_Delete"
 
 BeforeExecute
 --  Firebird
@@ -98,6 +118,21 @@ BeforeExecute
 --  Firebird
 
 SELECT * FROM "Person_Insert_OutputParameter"(NULL,NULL,NULL,NULL)
+
+BeforeExecute
+--  Firebird
+
+SELECT * FROM "Person_SelectAll"
+
+BeforeExecute
+--  Firebird
+
+SELECT * FROM "Person_SelectByKey"(NULL)
+
+BeforeExecute
+--  Firebird
+
+SELECT * FROM "Person_SelectByName"(NULL,NULL)
 
 BeforeExecute
 --  Firebird
@@ -116,33 +151,6 @@ SET     @GENDER = _utf8 x'00'
 
 BeforeExecute
 --  Firebird
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-
-"Person_Delete"
-
-BeforeExecute
---  Firebird
-
-SELECT * FROM "Patient_SelectAll"
-
-BeforeExecute
---  Firebird
-
-SELECT * FROM "Patient_SelectByName"(NULL,NULL)
-
-BeforeExecute
---  Firebird
-
-SELECT * FROM "OutRefTest"(NULL,NULL,NULL,NULL)
-
-BeforeExecute
---  Firebird
-
-SELECT * FROM "OutRefEnumTest"(NULL,NULL)
-
-BeforeExecute
---  Firebird
 
 SELECT * FROM "Scalar_DataReader"
 
@@ -158,8 +166,17 @@ SELECT * FROM "Scalar_ReturnParameter"
 
 BeforeExecute
 --  Firebird
+DECLARE @I Integer(4) -- Int32
+SET     @I = 0
+DECLARE @O Integer(4) -- Int32
+SET     @O = 0
 
-"AddIssue792Record"
+TEST_PROCEDURE
+
+BeforeExecute
+--  Firebird
+
+SELECT * FROM TEST_TABLE_FUNCTION(NULL)
 
 BeforeExecute
 --  Firebird
@@ -193,20 +210,6 @@ BeforeExecute
 --  Firebird
 
 SELECT * FROM TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
-
-BeforeExecute
---  Firebird
-
-SELECT * FROM TEST_TABLE_FUNCTION(NULL)
-
-BeforeExecute
---  Firebird
-DECLARE @I Integer(4) -- Int32
-SET     @I = 0
-DECLARE @O Integer(4) -- Int32
-SET     @O = 0
-
-TEST_PROCEDURE
 
 BeforeExecute
 RollbackTransaction
