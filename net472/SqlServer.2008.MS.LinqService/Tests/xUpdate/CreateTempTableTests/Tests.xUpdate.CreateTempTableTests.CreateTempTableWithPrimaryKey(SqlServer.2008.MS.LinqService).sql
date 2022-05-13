@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [#TableWithPrimaryKey]
+CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 (
 	[Key] Int NOT NULL,
 
@@ -12,5 +12,5 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithPrimaryKey]', N'U') IS NOT NULL)
-	DROP TABLE [#TableWithPrimaryKey]
+	DROP TABLE [tempdb]..[#TableWithPrimaryKey]
 

@@ -10,7 +10,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [#TInserted]
+CREATE TABLE [tempdb]..[#TInserted]
 (
 	[ParentID] Int NOT NULL,
 	[ChildID]  Int NOT NULL,
@@ -33,7 +33,7 @@ INSERT INTO [Child]
 OUTPUT
 	[INSERTED].[ChildID],
 	[INSERTED].[ParentID] + @param
-INTO [#TInserted]
+INTO [tempdb]..[#TInserted]
 (
 	[ChildID],
 	[ParentID]
@@ -53,7 +53,7 @@ SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM
-	[#TInserted] [c_1]
+	[tempdb]..[#TInserted] [c_1]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -69,7 +69,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DROP TABLE [#TInserted]
+DROP TABLE [tempdb]..[#TInserted]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
