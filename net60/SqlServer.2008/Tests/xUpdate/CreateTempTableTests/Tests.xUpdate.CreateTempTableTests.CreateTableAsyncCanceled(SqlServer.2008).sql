@@ -15,7 +15,7 @@ FROM
 BeforeExecute
 -- SqlServer.2008 (asynchronously)
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL
 )
