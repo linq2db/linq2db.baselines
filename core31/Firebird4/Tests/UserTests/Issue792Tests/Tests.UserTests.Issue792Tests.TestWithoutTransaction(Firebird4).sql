@@ -197,17 +197,17 @@ SELECT * FROM TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
 
 BeforeExecute
 -- Firebird4 Firebird
+
+SELECT * FROM TEST_TABLE_FUNCTION(NULL)
+
+BeforeExecute
+-- Firebird4 Firebird
 DECLARE @I Integer(4) -- Int32
 SET     @I = 0
 DECLARE @O Integer(4) -- Int32
 SET     @O = 0
 
 TEST_PROCEDURE
-
-BeforeExecute
--- Firebird4 Firebird
-
-SELECT * FROM TEST_TABLE_FUNCTION(NULL)
 
 BeforeExecute
 RollbackTransaction
