@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	p."PersonID",
@@ -16,7 +16,7 @@ WHERE
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	p."FirstName",

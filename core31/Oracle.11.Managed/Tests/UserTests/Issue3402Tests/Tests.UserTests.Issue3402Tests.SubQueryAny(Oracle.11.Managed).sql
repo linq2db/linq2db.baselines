@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE VEMPLOYEE_SCH_SEC
 (
@@ -11,7 +11,7 @@ CREATE TABLE VEMPLOYEE_SCH_SEC
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE VEMPLOYEE_SCHDL_PERM
 (
@@ -22,7 +22,7 @@ CREATE TABLE VEMPLOYEE_SCHDL_PERM
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	ess.ID
@@ -39,7 +39,7 @@ WHERE
 	))
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE VEMPLOYEE_SCHDL_PERM';
@@ -51,7 +51,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE VEMPLOYEE_SCH_SEC';

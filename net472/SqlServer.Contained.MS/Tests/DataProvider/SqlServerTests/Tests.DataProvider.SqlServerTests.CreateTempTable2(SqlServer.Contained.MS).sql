@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
 
@@ -11,7 +11,7 @@ CREATE TABLE [#TempTable]
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
 

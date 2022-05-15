@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [#TableWithPrimaryKey2]
+CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 (
 	[Key] Int NOT NULL,
 
@@ -9,10 +9,10 @@ CREATE TABLE [#TableWithPrimaryKey2]
 )
 
 BeforeExecute
-INSERT BULK [#TableWithPrimaryKey2](Key)
+INSERT BULK [tempdb]..[#TableWithPrimaryKey2](Key)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [#TableWithPrimaryKey2]
+DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey2]
 

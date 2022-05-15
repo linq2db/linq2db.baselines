@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "WhereWithBool"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -31,14 +31,14 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "WhereWithBool" ("Id", "BoolValue") VALUES (1,1)
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -56,7 +56,7 @@ WHERE
 	) = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "WhereWithBool"';

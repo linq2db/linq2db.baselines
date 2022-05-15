@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
-DROP TABLE [#TestTable]
+DROP TABLE [tempdb]..[#TestTable]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
-CREATE TABLE [#TestTable]
+CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Field1]    NVarChar(50)       NULL,
 	[ID]        Int            NOT NULL,
@@ -23,10 +23,10 @@ SELECT
 	[t1].[Field2],
 	[t1].[CreatedOn]
 FROM
-	[#TestTable] [t1]
+	[tempdb]..[#TestTable] [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
-DROP TABLE [#TestTable]
+DROP TABLE [tempdb]..[#TestTable]
 

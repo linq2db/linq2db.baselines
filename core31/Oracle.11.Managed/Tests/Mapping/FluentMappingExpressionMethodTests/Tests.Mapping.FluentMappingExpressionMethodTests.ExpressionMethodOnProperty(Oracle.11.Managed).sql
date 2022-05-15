@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "InstanceClass"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -29,7 +29,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "InstanceClass" ("Id", "Value") VALUES (1,101)
@@ -55,7 +55,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -65,7 +65,7 @@ WHERE
 	Cast(t."Id" as VarChar2(11)) || Cast(t."Value" as VarChar2(11)) = Cast(t."Id" as VarChar2(11)) || Cast(t."Value" as VarChar(11))
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "InstanceClass"';

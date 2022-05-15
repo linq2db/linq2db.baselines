@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Max(t."PersonID")
@@ -7,7 +7,7 @@ FROM
 	"Person" t
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Varchar2(2) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 4
 DECLARE @take Int32
@@ -51,7 +51,7 @@ WHERE
 	p2."PersonID" > :id AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 4
 

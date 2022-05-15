@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Issue3323Table"
 (
@@ -12,7 +12,7 @@ CREATE TABLE "Issue3323Table"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 INSERT INTO "Issue3323Table"
 (
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Id",
@@ -47,7 +47,7 @@ FROM
 	"Issue3323Table" t2
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue3323Table"';

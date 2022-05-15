@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "WhereCases"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -32,7 +32,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (1,1,NULL)
@@ -48,7 +48,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Id",
@@ -58,7 +58,7 @@ FROM
 	"WhereCases" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -70,7 +70,7 @@ WHERE
 	t."BoolValue" = 0 AND t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -82,7 +82,7 @@ WHERE
 	NOT (t."BoolValue" = 0 AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -94,7 +94,7 @@ WHERE
 	t."BoolValue" = 1 AND t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -106,7 +106,7 @@ WHERE
 	NOT (t."BoolValue" = 1 AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -118,7 +118,7 @@ WHERE
 	t."BoolValue" = 1 AND t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -130,7 +130,7 @@ WHERE
 	NOT (t."BoolValue" = 1 AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -142,7 +142,7 @@ WHERE
 	t."BoolValue" = 0 AND t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -154,7 +154,7 @@ WHERE
 	NOT (t."BoolValue" = 0 AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -166,7 +166,7 @@ WHERE
 	t."BoolValue" = 0 AND t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -178,7 +178,7 @@ WHERE
 	NOT (t."BoolValue" = 0 AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -191,7 +191,7 @@ WHERE
 	t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -203,7 +203,7 @@ WHERE
 	NOT ((t."NullableBoolValue" = 0 OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -216,7 +216,7 @@ WHERE
 	t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -228,7 +228,7 @@ WHERE
 	NOT ((t."NullableBoolValue" = 1 AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -241,7 +241,7 @@ WHERE
 	t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -253,7 +253,7 @@ WHERE
 	NOT (t."NullableBoolValue" = 1 AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -265,7 +265,7 @@ WHERE
 	t."NullableBoolValue" IS NULL AND t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -277,7 +277,7 @@ WHERE
 	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -289,7 +289,7 @@ WHERE
 	t."NullableBoolValue" IS NOT NULL AND t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -301,7 +301,7 @@ WHERE
 	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -313,7 +313,7 @@ WHERE
 	t."NullableBoolValue" IS NOT NULL AND t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -325,7 +325,7 @@ WHERE
 	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -337,7 +337,7 @@ WHERE
 	t."NullableBoolValue" IS NULL AND t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -349,7 +349,7 @@ WHERE
 	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -362,7 +362,7 @@ WHERE
 	t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -374,7 +374,7 @@ WHERE
 	NOT (t."BoolValue" = 0 AND (t."NullableBoolValue" = 0 OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -387,7 +387,7 @@ WHERE
 	t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -399,7 +399,7 @@ WHERE
 	NOT (NOT (t."BoolValue" = 0 AND (t."NullableBoolValue" = 0 OR t."NullableBoolValue" IS NULL)) AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -414,7 +414,7 @@ WHERE
 	t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -426,7 +426,7 @@ WHERE
 	NOT (t."BoolValue" = 0 AND t."NullableBoolValue" = 0 AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -439,7 +439,7 @@ WHERE
 	t."Id" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Id",
@@ -451,7 +451,7 @@ WHERE
 	NOT (NOT (t."BoolValue" = 0 AND t."NullableBoolValue" = 0 AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "WhereCases"';

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Person" t1
@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -29,7 +29,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 2
 
@@ -46,7 +46,7 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Person" t1

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "UpdateSetTest"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -36,14 +36,14 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "UpdateSetTest" ("Id", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6") VALUES (1,HEXTORAW('A57339BD2343D84D9F4FDF9F93E2A627'),10,6,NULL,NULL,NULL)
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value2 Int32
 SET     @Value2 = 11
 DECLARE @id Int32
@@ -57,7 +57,7 @@ WHERE
 	"UpdateSetTest"."Id" = :id
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @take Int32
@@ -71,7 +71,7 @@ WHERE
 	t1."Id" = :id AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Value2 Int32
 SET     @Value2 = 12
 DECLARE @id Int32
@@ -85,7 +85,7 @@ WHERE
 	"UpdateSetTest"."Id" = :id
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @take Int32
@@ -99,7 +99,7 @@ WHERE
 	t1."Id" = :id AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "UpdateSetTest"';

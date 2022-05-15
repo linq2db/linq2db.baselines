@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @p_1 IntervalDS -- Object
 SET     @p_1 = 01:00:00
 

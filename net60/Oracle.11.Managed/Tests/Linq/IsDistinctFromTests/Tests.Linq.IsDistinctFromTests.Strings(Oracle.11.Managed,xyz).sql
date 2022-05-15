@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Src"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -31,7 +31,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "Src" ("Int", "NullableInt", "String", "NullableString") VALUES (2,2,'abc','abc')
@@ -39,7 +39,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @value_1 Varchar2(3) -- String
 SET     @value_1 = 'xyz'
 
@@ -51,7 +51,7 @@ WHERE
 	DECODE(s."String", :value_1, 0, 1) = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @value_1 Varchar2(3) -- String
 SET     @value_1 = 'xyz'
 
@@ -63,7 +63,7 @@ WHERE
 	DECODE(s."NullableString", :value_1, 0, 1) = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @value_1 Varchar2(3) -- String
 SET     @value_1 = 'xyz'
 
@@ -75,7 +75,7 @@ WHERE
 	DECODE(s."String", :value_1, 0, 1) = 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @value_1 Varchar2(3) -- String
 SET     @value_1 = 'xyz'
 
@@ -87,7 +87,7 @@ WHERE
 	DECODE(s."NullableString", :value_1, 0, 1) = 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Src"';

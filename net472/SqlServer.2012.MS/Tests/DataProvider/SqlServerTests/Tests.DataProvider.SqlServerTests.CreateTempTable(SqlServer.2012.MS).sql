@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
 
@@ -11,12 +11,12 @@ CREATE TABLE [#TempTable]
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-DROP TABLE [#TempTable]
+DROP TABLE [tempdb]..[#TempTable]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
 

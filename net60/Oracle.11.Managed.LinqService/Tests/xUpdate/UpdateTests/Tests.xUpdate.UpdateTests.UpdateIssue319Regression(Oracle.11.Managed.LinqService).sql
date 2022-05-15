@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 100500
 DECLARE @Value1 Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 100500
 DECLARE @take Int32
@@ -31,7 +31,7 @@ WHERE
 	t1."ParentID" = :id AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 100500
 DECLARE @id Int32
@@ -72,7 +72,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 100500
 

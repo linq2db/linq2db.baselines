@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Issue1189Customer"
 (
@@ -10,7 +10,7 @@ CREATE TABLE "Issue1189Customer"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @DateTime TimeStamp -- DateTime
 SET     @DateTime = TIMESTAMP '2020-02-29 17:54:55.123123'
 
@@ -22,7 +22,7 @@ FROM
 	"Issue1189Customer" k_1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue1189Customer"';

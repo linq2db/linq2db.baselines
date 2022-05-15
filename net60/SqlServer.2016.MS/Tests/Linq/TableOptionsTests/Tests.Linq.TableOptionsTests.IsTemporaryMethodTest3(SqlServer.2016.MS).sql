@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DROP TABLE IF EXISTS [#TestTable]
+DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [#TestTable]
+CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
 	[Value] Int NOT NULL
@@ -30,15 +30,15 @@ FROM
 			[t1].[Value] as [Value_1],
 			[t2].[Value] as [Value_2]
 		FROM
-			[#TestTable] [t1],
-			[#TestTable] [t2]
+			[tempdb]..[#TestTable] [t1],
+			[tempdb]..[#TestTable] [t2]
 	) [t4]
-		INNER JOIN [#TestTable] [t3] ON [t4].[Id] = [t3].[Id]
+		INNER JOIN [tempdb]..[#TestTable] [t3] ON [t4].[Id] = [t3].[Id]
 WHERE
 	[t4].[Id_1] = [t4].[Id]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DROP TABLE IF EXISTS [#TestTable]
+DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 

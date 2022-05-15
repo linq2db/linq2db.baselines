@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "ProductTable"
 (
@@ -10,7 +10,7 @@ CREATE TABLE "ProductTable"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "ProductAttributeTable"
 (
@@ -21,7 +21,7 @@ CREATE TABLE "ProductAttributeTable"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "ProductAttributeMapping"
 (
@@ -32,7 +32,7 @@ CREATE TABLE "ProductAttributeMapping"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	pa."Id"
@@ -55,7 +55,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "ProductAttributeMapping"';
@@ -67,7 +67,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "ProductAttributeTable"';
@@ -79,7 +79,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "ProductTable"';

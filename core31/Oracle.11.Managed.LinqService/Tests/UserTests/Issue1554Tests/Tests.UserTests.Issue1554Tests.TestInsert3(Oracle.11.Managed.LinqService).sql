@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Issue1554Table"
 (
@@ -11,7 +11,7 @@ CREATE TABLE "Issue1554Table"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType Varchar2(2) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 2
 
@@ -47,7 +47,7 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue1554Table"';

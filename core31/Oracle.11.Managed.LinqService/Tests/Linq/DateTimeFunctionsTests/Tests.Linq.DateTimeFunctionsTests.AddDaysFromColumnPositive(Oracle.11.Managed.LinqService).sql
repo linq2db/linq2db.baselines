@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @p_1 TimeStamp -- DateTime
 SET     @p_1 = TIMESTAMP '2018-01-02 00:00:00.000000'
 
@@ -53,7 +53,7 @@ WHERE
 	t.ID = 5000 AND t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' DAY > :p_1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"LinqDataTypes" t1

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0102030405')
 DECLARE @ID Int32
@@ -13,7 +13,7 @@ WHERE
 	"LinqDataTypes".ID = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0504030201')
 DECLARE @ID Int32
@@ -27,7 +27,7 @@ WHERE
 	"LinqDataTypes".ID = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t.ID,

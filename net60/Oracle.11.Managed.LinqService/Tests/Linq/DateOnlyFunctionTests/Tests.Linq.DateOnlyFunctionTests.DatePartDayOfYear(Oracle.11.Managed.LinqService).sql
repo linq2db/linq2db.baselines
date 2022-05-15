@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Transactions"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -31,7 +31,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 1
 DECLARE @TransactionDate Date
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 2
 DECLARE @TransactionDate Date
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 3
 DECLARE @TransactionDate Date
@@ -85,7 +85,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 4
 DECLARE @TransactionDate Date
@@ -103,7 +103,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 5
 DECLARE @TransactionDate Date
@@ -121,7 +121,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 6
 DECLARE @TransactionDate Date
@@ -139,7 +139,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 7
 DECLARE @TransactionDate Date
@@ -157,7 +157,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 8
 DECLARE @TransactionDate Date
@@ -175,7 +175,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 9
 DECLARE @TransactionDate Date
@@ -193,7 +193,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 10
 DECLARE @TransactionDate Date
@@ -211,7 +211,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 11
 DECLARE @TransactionDate Date
@@ -229,7 +229,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 12
 DECLARE @TransactionDate Date
@@ -247,7 +247,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 13
 DECLARE @TransactionDate Date
@@ -265,7 +265,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @TransactionId Int32
 SET     @TransactionId = 14
 DECLARE @TransactionDate Date
@@ -283,7 +283,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	To_Number(To_Char(t."TransactionDate", 'DDD'))
@@ -291,7 +291,7 @@ FROM
 	"Transactions" t
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Transactions"';

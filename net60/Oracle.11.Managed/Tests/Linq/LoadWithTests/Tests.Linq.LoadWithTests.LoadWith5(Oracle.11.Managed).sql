@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	lw_Child."ParentID_1",
@@ -35,7 +35,7 @@ FROM
 		LEFT JOIN "Parent" a_Parent ON a_Child."ParentID" = a_Parent."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	lw_Parent."ParentID",
@@ -53,7 +53,7 @@ FROM
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	(

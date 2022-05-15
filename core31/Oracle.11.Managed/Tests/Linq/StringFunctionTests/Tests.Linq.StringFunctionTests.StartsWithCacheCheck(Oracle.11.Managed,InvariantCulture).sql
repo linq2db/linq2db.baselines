@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 2
 
@@ -11,7 +11,7 @@ WHERE
 	p."PersonID" = 1 AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @nameToCheck_1 Varchar2(4) -- String
 SET     @nameToCheck_1 = 'Joh%'
 
@@ -23,7 +23,7 @@ WHERE
 	p."FirstName" LIKE :nameToCheck_1 ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @nameToCheck_1 Varchar2(4) -- String
 SET     @nameToCheck_1 = 'Joh%'
 
@@ -36,7 +36,7 @@ WHERE
 	p."PersonID" = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @nameToCheck_1 Varchar2(4) -- String
 SET     @nameToCheck_1 = 'JOH%'
 
@@ -48,7 +48,7 @@ WHERE
 	p."FirstName" LIKE :nameToCheck_1 ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @nameToCheck_1 Varchar2(4) -- String
 SET     @nameToCheck_1 = 'JOH%'
 

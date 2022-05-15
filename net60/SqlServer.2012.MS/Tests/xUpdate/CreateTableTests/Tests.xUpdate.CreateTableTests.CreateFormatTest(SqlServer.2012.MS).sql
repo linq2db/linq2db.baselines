@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-CREATE TABLE [#TestTable]
+CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Field1] Int NOT NULL /* test */,
 	[Field2] Int NOT NULL
@@ -10,5 +10,5 @@ CREATE TABLE [#TestTable]
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-DROP TABLE [#TestTable]
+DROP TABLE [tempdb]..[#TestTable]
 

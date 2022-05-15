@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "activity649"
 (
@@ -11,12 +11,12 @@ CREATE TABLE "activity649"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_activity649"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_activity649"
 BEFORE INSERT ON "activity649" FOR EACH ROW
@@ -25,7 +25,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "person649"
 (
@@ -36,12 +36,12 @@ CREATE TABLE "person649"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_person649"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_person649"
 BEFORE INSERT ON "person649" FOR EACH ROW
@@ -50,7 +50,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @added TimeStamp -- DateTime
 SET     @added = TIMESTAMP '2017-01-01 00:00:00.000000'
 
@@ -68,7 +68,7 @@ GROUP BY
 	a_Person."personname"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN
@@ -98,7 +98,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."PersonID"
@@ -9,7 +9,7 @@ GROUP BY
 	t1."PersonID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -25,7 +25,7 @@ WHERE
 	keyParam."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 2
 
@@ -41,7 +41,7 @@ WHERE
 	keyParam."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 3
 
@@ -57,7 +57,7 @@ WHERE
 	keyParam."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 4
 
@@ -73,7 +73,7 @@ WHERE
 	keyParam."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."PersonID"
@@ -83,7 +83,7 @@ GROUP BY
 	t1."PersonID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -99,7 +99,7 @@ WHERE
 	keyParam."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 2
 
@@ -115,7 +115,7 @@ WHERE
 	keyParam."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 3
 
@@ -131,7 +131,7 @@ WHERE
 	keyParam."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 4
 

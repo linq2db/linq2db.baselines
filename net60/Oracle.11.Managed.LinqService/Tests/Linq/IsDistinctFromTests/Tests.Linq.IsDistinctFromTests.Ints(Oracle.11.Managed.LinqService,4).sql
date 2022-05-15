@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Src"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -31,7 +31,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Int_1 Int32
 SET     @Int_1 = 2
 DECLARE @NullableInt Int32
@@ -57,7 +57,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Int_1 Int32
 SET     @Int_1 = 3
 DECLARE @NullableInt Int32
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @value_1 Int32
 SET     @value_1 = 4
 
@@ -95,7 +95,7 @@ WHERE
 	DECODE(s."Int", :value_1, 0, 1) = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @value_1 Int32
 SET     @value_1 = 4
 
@@ -107,7 +107,7 @@ WHERE
 	DECODE(s."NullableInt", :value_1, 0, 1) = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @value_1 Int32
 SET     @value_1 = 4
 
@@ -119,7 +119,7 @@ WHERE
 	DECODE(s."Int", :value_1, 0, 1) = 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @value_1 Int32
 SET     @value_1 = 4
 
@@ -131,7 +131,7 @@ WHERE
 	DECODE(s."NullableInt", :value_1, 0, 1) = 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Src"';

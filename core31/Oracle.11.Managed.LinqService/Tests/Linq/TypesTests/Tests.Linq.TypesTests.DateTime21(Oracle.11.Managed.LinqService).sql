@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -20,7 +20,7 @@ WHERE
 	t.ID = 1 AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @dt TimeStamp -- DateTime
 SET     @dt = TIMESTAMP '2010-12-14 06:00:07.425014'
 
@@ -32,7 +32,7 @@ WHERE
 	"LinqDataTypes".ID = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -53,7 +53,7 @@ WHERE
 	t.ID = 1 AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pdt TimeStamp -- DateTime
 SET     @pdt = TIMESTAMP '2001-01-11 01:11:21.100000'
 

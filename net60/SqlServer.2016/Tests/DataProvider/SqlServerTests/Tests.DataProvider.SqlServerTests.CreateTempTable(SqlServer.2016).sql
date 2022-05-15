@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
 
@@ -11,12 +11,12 @@ CREATE TABLE [#TempTable]
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE [#TempTable]
+DROP TABLE [tempdb]..[#TempTable]
 
 BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [#TempTable]
+CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
 

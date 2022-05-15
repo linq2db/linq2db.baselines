@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "TableToInsert"
 (
@@ -10,7 +10,7 @@ CREATE TABLE "TableToInsert"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 INSERT INTO "TableToInsert"
 (
@@ -30,7 +30,7 @@ WHERE
 	t."Id" IS NULL
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 INSERT INTO "TableToInsert"
 (
@@ -50,7 +50,7 @@ WHERE
 	t."Id" IS NULL
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TableToInsert"';

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "PR_1598_Insert_Table_Cache"
 (
@@ -11,7 +11,7 @@ CREATE TABLE "PR_1598_Insert_Table_Cache"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(4) -- String
@@ -44,7 +44,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -58,7 +58,7 @@ WHERE
 	t."Id" = 1 AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(4) -- String
@@ -91,7 +91,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -105,7 +105,7 @@ WHERE
 	t."Id" = 1 AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "PR_1598_Insert_Table_Cache"';

@@ -18,6 +18,11 @@ SELECT USER FROM DUAL
 BeforeExecute
 -- Oracle.Managed Oracle12
 
+select VERSION from PRODUCT_COMPONENT_VERSION where PRODUCT like 'PL/SQL%'
+
+BeforeExecute
+-- Oracle.Managed Oracle12
+
 select user from dual
 
 BeforeExecute

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @blob_1 Blob -- Object
 SET     @blob_1 = Oracle.ManagedDataAccess.Types.OracleBlob
 
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @blob_1 Blob -- Object
 SET     @blob_1 = Oracle.ManagedDataAccess.Types.OracleBlob
 
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	LENGTH("BinaryValue")

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "aa"
 (
@@ -10,7 +10,7 @@ CREATE TABLE "aa"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @cc Varchar2(5) -- String
 SET     @cc = 'hallo'
 DECLARE @bb Int32
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."cc",
@@ -37,7 +37,7 @@ FROM
 	"aa" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DROP TABLE "aa"
 

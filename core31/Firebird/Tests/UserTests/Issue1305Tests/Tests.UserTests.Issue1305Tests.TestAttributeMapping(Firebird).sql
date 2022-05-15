@@ -16,6 +16,72 @@ CREATE TABLE "ColumnOrderTest"
 )
 
 BeforeExecute
+-- Firebird
+
+SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
+
+BeforeExecute
+-- Firebird
+
+
+SELECT * FROM (
+	SELECT
+		NULL                                                    AS PackageName,
+		RDB$PROCEDURE_NAME                                      AS ProcedureName,
+		RDB$DESCRIPTION                                         AS Description,
+		RDB$PROCEDURE_SOURCE                                    AS Source,
+		CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
+	FROM RDB$PROCEDURES
+	WHERE RDB$SYSTEM_FLAG = 0 AND RDB$PROCEDURE_TYPE IS NOT NULL
+	UNION ALL
+	SELECT 
+		NULL,
+		RDB$FUNCTION_NAME,
+		RDB$DESCRIPTION,
+		NULL,
+		'F'
+	FROM RDB$FUNCTIONS
+	WHERE RDB$SYSTEM_FLAG = 0
+) ORDER BY ProcedureName
+
+BeforeExecute
+-- Firebird
+
+SELECT
+	NULL                                                 AS PackageName,
+	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
+	p.RDB$PARAMETER_NAME                                 AS ParameterName,
+	p.RDB$PARAMETER_NUMBER                               AS Ordinal,
+	p.RDB$PARAMETER_TYPE                                 AS Direction,
+	p.RDB$DESCRIPTION                                    AS Decsription,
+	f.RDB$FIELD_TYPE                                     AS Type,
+	f.RDB$FIELD_SUB_TYPE                                 AS SubType,
+	COALESCE(f.RDB$CHARACTER_LENGTH, f.RDB$FIELD_LENGTH) AS Length,
+	f.RDB$FIELD_PRECISION                                AS "precision",
+	f.RDB$FIELD_SCALE                                    AS Scale,
+	COALESCE(f.RDB$NULL_FLAG, p.RDB$NULL_FLAG)           AS IsNullable
+FROM RDB$PROCEDURE_PARAMETERS p
+	INNER JOIN RDB$PROCEDURES pr ON p.RDB$PROCEDURE_NAME = pr.RDB$PROCEDURE_NAME
+	LEFT JOIN RDB$FIELDS f ON p.RDB$FIELD_SOURCE = f.RDB$FIELD_NAME
+WHERE p.RDB$SYSTEM_FLAG = 0 AND (pr.RDB$PROCEDURE_TYPE <> 1 OR p.RDB$PARAMETER_TYPE <> 1)
+UNION ALL
+SELECT
+	NULL,
+	p.RDB$FUNCTION_NAME,
+	NULL,
+	p.RDB$ARGUMENT_POSITION,
+	CASE WHEN fn.RDB$RETURN_ARGUMENT = p.RDB$ARGUMENT_POSITION THEN 2 ELSE 0 END,
+	NULL,
+	p.RDB$FIELD_TYPE,
+	p.RDB$FIELD_TYPE,
+	COALESCE(p.RDB$CHARACTER_LENGTH, p.RDB$FIELD_LENGTH),
+	p.RDB$FIELD_PRECISION,
+	p.RDB$FIELD_SCALE,
+	NULL
+FROM RDB$FUNCTION_ARGUMENTS p
+		INNER JOIN RDB$FUNCTIONS fn ON p.RDB$FUNCTION_NAME = fn.RDB$FUNCTION_NAME
+
+BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Firebird
@@ -24,71 +90,23 @@ BeforeExecute
 
 BeforeExecute
 -- Firebird
-DECLARE @STR VarChar(50) -- String
-SET     @STR = ''
-DECLARE @IN_INPUTOUTPUTSTR VarChar(50) -- String
-SET     @IN_INPUTOUTPUTSTR = ''
-DECLARE @INPUTOUTPUTSTR VarChar(50) -- String
-SET     @INPUTOUTPUTSTR = ''
-DECLARE @OUTPUTSTR VarChar(50) -- String
-SET     @OUTPUTSTR = ''
 
-"OutRefEnumTest"
+SELECT * FROM "OutRefEnumTest"(NULL,NULL)
 
 BeforeExecute
 -- Firebird
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 0
-DECLARE @IN_INPUTOUTPUTID Integer(4) -- Int32
-SET     @IN_INPUTOUTPUTID = 0
-DECLARE @STR VarChar(50) -- String
-SET     @STR = ''
-DECLARE @IN_INPUTOUTPUTSTR VarChar(50) -- String
-SET     @IN_INPUTOUTPUTSTR = ''
-DECLARE @INPUTOUTPUTID Integer(4) -- Int32
-SET     @INPUTOUTPUTID = 0
-DECLARE @INPUTOUTPUTSTR VarChar(50) -- String
-SET     @INPUTOUTPUTSTR = ''
-DECLARE @OUTPUTID Integer(4) -- Int32
-SET     @OUTPUTID = 0
-DECLARE @OUTPUTSTR VarChar(50) -- String
-SET     @OUTPUTSTR = ''
 
-"OutRefTest"
+SELECT * FROM "OutRefTest"(NULL,NULL,NULL,NULL)
 
 BeforeExecute
 -- Firebird
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-DECLARE @DIAGNOSIS VarChar(256) -- String
-SET     @DIAGNOSIS = ''
 
-"Patient_SelectAll"
+SELECT * FROM "Patient_SelectAll"
 
 BeforeExecute
 -- Firebird
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-DECLARE @DIAGNOSIS VarChar(256) -- String
-SET     @DIAGNOSIS = ''
 
-"Patient_SelectByName"
+SELECT * FROM "Patient_SelectByName"(NULL,NULL)
 
 BeforeExecute
 -- Firebird
@@ -99,84 +117,28 @@ SET     @PERSONID = 0
 
 BeforeExecute
 -- Firebird
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
 
-"Person_Insert"
+SELECT * FROM "Person_Insert"(NULL,NULL,NULL,NULL)
 
 BeforeExecute
 -- Firebird
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
 
-"Person_Insert_OutputParameter"
+SELECT * FROM "Person_Insert_OutputParameter"(NULL,NULL,NULL,NULL)
 
 BeforeExecute
 -- Firebird
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
 
-"Person_SelectAll"
+SELECT * FROM "Person_SelectAll"
 
 BeforeExecute
 -- Firebird
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 0
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
 
-"Person_SelectByKey"
+SELECT * FROM "Person_SelectByKey"(NULL)
 
 BeforeExecute
 -- Firebird
-DECLARE @IN_FIRSTNAME VarChar(50) -- String
-SET     @IN_FIRSTNAME = ''
-DECLARE @IN_LASTNAME VarChar(50) -- String
-SET     @IN_LASTNAME = ''
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
-DECLARE @FIRSTNAME VarChar(50) -- String
-SET     @FIRSTNAME = ''
-DECLARE @LASTNAME VarChar(50) -- String
-SET     @LASTNAME = ''
-DECLARE @MIDDLENAME VarChar(50) -- String
-SET     @MIDDLENAME = ''
-DECLARE @GENDER Char(1) -- String
-SET     @GENDER = _utf8 x'00'
 
-"Person_SelectByName"
+SELECT * FROM "Person_SelectByName"(NULL,NULL)
 
 BeforeExecute
 -- Firebird
@@ -195,28 +157,18 @@ SET     @GENDER = _utf8 x'00'
 
 BeforeExecute
 -- Firebird
-DECLARE @INTFIELD Integer(4) -- Int32
-SET     @INTFIELD = 0
-DECLARE @STRINGFIELD VarChar(50) -- String
-SET     @STRINGFIELD = ''
 
-"Scalar_DataReader"
+SELECT * FROM "Scalar_DataReader"
 
 BeforeExecute
 -- Firebird
-DECLARE @OUTPUTINT Integer(4) -- Int32
-SET     @OUTPUTINT = 0
-DECLARE @OUTPUTSTRING VarChar(50) -- String
-SET     @OUTPUTSTRING = ''
 
-"Scalar_OutputParameter"
+SELECT * FROM "Scalar_OutputParameter"
 
 BeforeExecute
 -- Firebird
-DECLARE @RETURN_VALUE Integer(4) -- Int32
-SET     @RETURN_VALUE = 0
 
-"Scalar_ReturnParameter"
+SELECT * FROM "Scalar_ReturnParameter"
 
 BeforeExecute
 RollbackTransaction

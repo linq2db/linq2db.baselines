@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Test0431"
 (
@@ -17,7 +17,7 @@ CREATE TABLE "Test0431"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Date_1 Date
 SET     @Date_1 = TIMESTAMP '2020-01-03 00:00:00.000000'
 DECLARE @DateTime TimeStamp -- DateTime
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Date",
@@ -89,7 +89,7 @@ FROM
 	"Test0431" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDate Date
 SET     @pDate = TIMESTAMP '2020-01-03 00:00:00.000000'
 
@@ -111,7 +111,7 @@ WHERE
 	r."Date" = :pDate
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
 
@@ -133,7 +133,7 @@ WHERE
 	r."DateTime" = :pDateTime
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.000000'
 
@@ -155,7 +155,7 @@ WHERE
 	r."DateTime_" = :pDateTime
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
 
@@ -177,7 +177,7 @@ WHERE
 	r."DateTime2" = :pDateTime
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.000000'
 
@@ -199,7 +199,7 @@ WHERE
 	r."DateTime2_0" = :pDateTime
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.700000'
 
@@ -221,7 +221,7 @@ WHERE
 	r."DateTime2_1" = :pDateTime
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
 
@@ -243,7 +243,7 @@ WHERE
 	r."DateTime2_9" = :pDateTime
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06.789123 +00:45
 
@@ -265,7 +265,7 @@ WHERE
 	r."DateTimeOffset_" = :pDateTimeOffset
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06 +00:45
 
@@ -287,7 +287,7 @@ WHERE
 	r."DateTimeOffset_0" = :pDateTimeOffset
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06.7 +00:45
 
@@ -309,7 +309,7 @@ WHERE
 	r."DateTimeOffset_1" = :pDateTimeOffset
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06.7891234 +00:45
 
@@ -331,7 +331,7 @@ WHERE
 	r."DateTimeOffset_9" = :pDateTimeOffset
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Test0431"';

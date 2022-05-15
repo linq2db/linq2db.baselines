@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-CREATE TABLE [TestSchema].[#IsTemporaryTable]
+CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 (
 	[Id]    Int NOT NULL,
 	[Value] Int NOT NULL
@@ -14,10 +14,10 @@ SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
-	[TestSchema].[#IsTemporaryTable] [t1]
+	[tempdb].[TestSchema].[#IsTemporaryTable] [t1]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [TestSchema].[#IsTemporaryTable]
+DROP TABLE IF EXISTS [tempdb].[TestSchema].[#IsTemporaryTable]
 

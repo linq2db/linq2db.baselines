@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	key_data_result."ParentID",
@@ -17,7 +17,7 @@ FROM
 		INNER JOIN "Child" c_1 ON key_data_result."ParentID" = c_1."ParentID" AND c_1."ParentID" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	p."ParentID",

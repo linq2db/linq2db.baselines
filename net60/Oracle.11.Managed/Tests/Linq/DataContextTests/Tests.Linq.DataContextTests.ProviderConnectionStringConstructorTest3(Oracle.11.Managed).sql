@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."ParentID",
@@ -10,7 +10,7 @@ ORDER BY
 	t1."ChildID"
 
 BeforeExecute
---  Oracle.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	t1."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @p_1 Varchar2(35) -- String
 SET     @p_1 = '<t><r><c0>1</c0><c1>11</c1></r></t>'
 
@@ -26,7 +26,7 @@ WHERE
 	p_1."ex" > 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @p_1 Varchar2(35) -- String
 SET     @p_1 = '<t><r><c0>2</c0><c1>22</c1></r></t>'
 

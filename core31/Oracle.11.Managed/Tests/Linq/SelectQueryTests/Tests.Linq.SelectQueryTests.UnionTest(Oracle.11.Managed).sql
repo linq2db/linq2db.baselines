@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "SampleClass"
 (
@@ -8,7 +8,7 @@ CREATE TABLE "SampleClass"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	CURRENT_TIMESTAMP + t."Value" * INTERVAL '1' DAY,
@@ -30,7 +30,7 @@ FROM
 	) t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	v."Value2"
@@ -57,7 +57,7 @@ FROM
 	) v
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Stone"
 (
@@ -12,12 +12,12 @@ CREATE TABLE "Stone"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_Stone"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_Stone"
 BEFORE INSERT ON "Stone" FOR EACH ROW
@@ -26,7 +26,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Int16
@@ -48,7 +48,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Int16
@@ -70,7 +70,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled Int16
@@ -92,7 +92,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	s."Name"
@@ -107,7 +107,7 @@ GROUP BY
 	s."Name"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group1'
 
@@ -126,7 +126,7 @@ WHERE
 	s."Name" = :Name
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group2'
 
@@ -145,7 +145,7 @@ WHERE
 	s."Name" = :Name
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN

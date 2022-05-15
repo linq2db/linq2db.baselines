@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Ints"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -33,7 +33,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @One Int32
 SET     @One = 1
 DECLARE @Two Int32
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @p_1 TimeStamp -- DateTime
 SET     @p_1 = TIMESTAMP '2020-10-01 00:00:00.000000'
 DECLARE @p_2 TimeStamp -- DateTime
@@ -85,7 +85,7 @@ WHERE
 	(:p_1, :p_2) OVERLAPS (:p_3, :p_4)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @p_1 TimeStampTZ -- DateTimeOffset
 SET     @p_1 = 10/05/2020 00:00:00 +02:00
 DECLARE @p_2 TimeStampTZ -- DateTimeOffset
@@ -103,7 +103,7 @@ WHERE
 	(:p_1, :p_2) OVERLAPS (:p_3, :p_4)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @p_1 TimeStamp -- DateTime
 SET     @p_1 = TIMESTAMP '2020-10-03 00:00:00.000000'
 DECLARE @p_2 IntervalDS -- Object
@@ -121,7 +121,7 @@ WHERE
 	(:p_1, :p_2) OVERLAPS (:p_3, :p_4)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @p_1 TimeStamp -- DateTime
 SET     @p_1 = TIMESTAMP '2020-10-03 00:00:00.000000'
 DECLARE @p_2 IntervalDS -- Object
@@ -137,7 +137,7 @@ WHERE
 	(:p_1, :p_2) OVERLAPS (:p_3, NULL)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Ints"';

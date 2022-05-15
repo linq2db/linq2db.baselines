@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- Firebird
 
+-- SKIP Firebird END
+
 DROP PROCEDURE "AddIssue792Record";
 
 BeforeExecute
@@ -1071,6 +1073,16 @@ CREATE TABLE "CollatedTable"
 	"CaseSensitive"		VARCHAR(20) CHARACTER SET UTF8 COLLATE UNICODE,
 	"CaseInsensitive"	VARCHAR(20) CHARACTER SET UTF8 COLLATE UNICODE_CI
 )
+
+BeforeExecute
+-- Firebird
+
+-- SKIP Firebird END
+-- SKIP Firebird3 BEGIN
+-- SKIP Firebird4 BEGIN
+SELECT 1 FROM rdb$database
+-- SKIP Firebird4 END
+-- SKIP Firebird3 END
 
 BeforeExecute
 -- Firebird

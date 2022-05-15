@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Issue1438"
 (
@@ -10,12 +10,12 @@ CREATE TABLE "Issue1438"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_Issue1438"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_Issue1438"
 BEFORE INSERT ON "Issue1438" FOR EACH ROW
@@ -24,7 +24,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Has Int16
 SET     @Has = 1
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -42,7 +42,7 @@ RETURNING
 	"Id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @take Int32
@@ -57,7 +57,7 @@ WHERE
 	t1."Id" = :id AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Person" t1
@@ -7,7 +7,7 @@ WHERE
 	t1."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -42,7 +42,7 @@ WHERE
 	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Person" t1

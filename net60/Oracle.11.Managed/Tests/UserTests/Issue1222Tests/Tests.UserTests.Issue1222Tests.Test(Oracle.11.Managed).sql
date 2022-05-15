@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "stLinks"
 (
@@ -21,12 +21,12 @@ CREATE TABLE "stLinks"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_stLinks"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_stLinks"
 BEFORE INSERT ON "stLinks" FOR EACH ROW
@@ -35,7 +35,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "stVersions"
 (
@@ -46,12 +46,12 @@ CREATE TABLE "stVersions"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_stVersions"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_stVersions"
 BEFORE INSERT ON "stVersions" FOR EACH ROW
@@ -60,7 +60,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @parentId Int32
 SET     @parentId = 111
 
@@ -111,7 +111,7 @@ FROM
 		INNER JOIN "stVersions" version_1 ON u."InIdChild" = version_1."inId"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN
@@ -141,7 +141,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN

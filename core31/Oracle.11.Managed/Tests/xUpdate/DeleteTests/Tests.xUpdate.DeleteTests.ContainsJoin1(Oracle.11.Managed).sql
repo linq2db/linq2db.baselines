@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Child" t1
@@ -7,7 +7,7 @@ WHERE
 	t1."ParentID" >= 1000
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Parent" t1
@@ -15,7 +15,7 @@ WHERE
 	t1."ParentID" >= 1000
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int32
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
 DECLARE @ChildID Int32
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
 DECLARE @ChildID Int32
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
 DECLARE @ChildID Int32
@@ -87,7 +87,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1000
 
@@ -108,7 +108,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1000
 
@@ -129,7 +129,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Child" t1
@@ -137,7 +137,7 @@ WHERE
 	t1."ParentID" >= 1000
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Parent" t1

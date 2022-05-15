@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @pattern_1 Varchar2(3) -- String
 SET     @pattern_1 = '%1%'
 DECLARE @take Int32

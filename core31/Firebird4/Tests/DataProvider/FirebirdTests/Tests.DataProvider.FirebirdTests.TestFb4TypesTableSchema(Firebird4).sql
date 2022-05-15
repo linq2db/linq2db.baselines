@@ -59,6 +59,11 @@ SELECT 1,CAST(@p1 AS DECFLOAT(16)),CAST(@p2 AS DECFLOAT),CAST(@p3 AS DECFLOAT),C
 BeforeExecute
 -- Firebird4 Firebird
 
+SELECT rdb$get_context('SYSTEM', 'ENGINE_VERSION') from rdb$database
+
+BeforeExecute
+-- Firebird4 Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestFbTypesTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TestFbTypesTable"';

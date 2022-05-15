@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [#TableWithPrimaryKey]
+CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 (
 	[Key] Int NOT NULL,
 
@@ -11,5 +11,5 @@ CREATE TABLE [#TableWithPrimaryKey]
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DROP TABLE IF EXISTS [#TableWithPrimaryKey]
+DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey]
 

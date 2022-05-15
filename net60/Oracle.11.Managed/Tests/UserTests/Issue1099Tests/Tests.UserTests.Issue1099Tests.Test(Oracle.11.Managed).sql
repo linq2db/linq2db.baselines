@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "BackgroundTask"
 (
@@ -10,7 +10,7 @@ CREATE TABLE "BackgroundTask"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @DurationID Int32
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @personId Int32
 SET     @personId = 1
 
@@ -51,7 +51,7 @@ WHERE
 	task_1."PersonID" = :personId
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "BackgroundTask"';

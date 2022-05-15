@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE TYPESTEST
 (
@@ -11,19 +11,24 @@ CREATE TABLE TYPESTEST
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT USER FROM DUAL
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
+
+select VERSION from PRODUCT_COMPONENT_VERSION where PRODUCT like 'PL/SQL%'
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
 
 select user from dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
-DECLARE @CurrentUser Varchar2(6) -- String
-SET     @CurrentUser = 'SYSTEM'
+-- Oracle.11.Managed Oracle11
+DECLARE @CurrentUser Varchar2(4) -- String
+SET     @CurrentUser = 'TEST'
 
 
 					SELECT
@@ -53,7 +58,7 @@ SET     @CurrentUser = 'SYSTEM'
 					
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 
 					SELECT
@@ -69,15 +74,15 @@ BeforeExecute
 						FKCOLS.TABLE_NAME      = FKCON.TABLE_NAME AND
 						FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME AND
 						FKCON.CONSTRAINT_TYPE  = 'P' AND
-						FKCOLS.OWNER IN ('SYSTEM')
+						FKCOLS.OWNER IN ('TEST')
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT VERSION FROM PRODUCT_COMPONENT_VERSION WHERE PRODUCT LIKE 'PL/SQL%'
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 
 					SELECT
@@ -99,7 +104,7 @@ BeforeExecute
 					
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 
 						SELECT
@@ -122,7 +127,7 @@ BeforeExecute
 						
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE TYPESTEST';

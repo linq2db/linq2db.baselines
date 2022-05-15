@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [#I1721Model]
+CREATE TABLE [tempdb]..[#I1721Model]
 (
 	[TestDateTime2]           DateTime2      NOT NULL,
 	[TestDateTimeOffset]      DateTimeOffset NOT NULL,
@@ -14,5 +14,5 @@ CREATE TABLE [#I1721Model]
 BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE IF EXISTS [#I1721Model]
+DROP TABLE IF EXISTS [tempdb]..[#I1721Model]
 

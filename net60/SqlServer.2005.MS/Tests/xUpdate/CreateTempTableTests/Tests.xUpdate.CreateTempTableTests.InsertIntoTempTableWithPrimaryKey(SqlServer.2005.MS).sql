@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [#TableWithPrimaryKey2]
+CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 (
 	[Key] Int NOT NULL,
 
@@ -9,11 +9,11 @@ CREATE TABLE [#TableWithPrimaryKey2]
 )
 
 BeforeExecute
-INSERT BULK [#TableWithPrimaryKey2](Key)
+INSERT BULK [tempdb]..[#TableWithPrimaryKey2](Key)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithPrimaryKey2]', N'U') IS NOT NULL)
-	DROP TABLE [#TableWithPrimaryKey2]
+	DROP TABLE [tempdb]..[#TableWithPrimaryKey2]
 

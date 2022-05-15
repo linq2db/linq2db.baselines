@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	STDDEV(c_1."ChildID"),
@@ -12,7 +12,7 @@ GROUP BY
 	p."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	STDDEV(t1."ParentID")
@@ -20,7 +20,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	STDDEV(ALL t1."ParentID")
@@ -28,7 +28,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	STDDEV(DISTINCT t1."ParentID")

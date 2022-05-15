@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  Oracle.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE TABLE "MyEntity"
 (
@@ -8,7 +8,7 @@ CREATE TABLE "MyEntity"
 )
 
 BeforeExecute
---  Oracle.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "MyEntity"';
@@ -20,7 +20,7 @@ EXCEPTION
 END;
 
 BeforeExecute
---  Oracle.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE TABLE "MyEntity"
 (

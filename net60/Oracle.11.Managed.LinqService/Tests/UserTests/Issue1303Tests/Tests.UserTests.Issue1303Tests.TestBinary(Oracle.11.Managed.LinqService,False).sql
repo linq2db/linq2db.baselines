@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Issue1303"
 (
@@ -11,7 +11,7 @@ CREATE TABLE "Issue1303"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Array_1 Blob -- Object
 SET     @Array_1 = HEXTORAW('010203')
 DECLARE @Binary_1 Blob -- Object
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 2
 
@@ -45,7 +45,7 @@ WHERE
 	t1.ID = 1 AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Array_1 Blob -- Object
 SET     @Array_1 = HEXTORAW('010203')
 DECLARE @take Int32
@@ -61,7 +61,7 @@ WHERE
 	t1."Array" = :Array_1 AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @Binary_1 Blob -- Object
 SET     @Binary_1 = HEXTORAW('0405')
 DECLARE @take Int32
@@ -77,7 +77,7 @@ WHERE
 	t1."Binary" = :Binary_1 AND ROWNUM <= :take
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue1303"';

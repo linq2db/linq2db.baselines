@@ -101,7 +101,7 @@ SELECT IDENT_INCR('Person')
 BeforeExecute
 -- SqlServer.2008
 DECLARE @tableName NVarChar(4000) -- String
-SET     @tableName = N'Person'
+SET     @tableName = N'[Person]'
 
 SELECT
 	IDENT_CURRENT(@tableName),

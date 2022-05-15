@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Ints"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -33,14 +33,14 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "Ints" ("One", "Two", "Three", "Four", "Five", "Nil") VALUES (1,2,3,4,5,NULL)
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -50,7 +50,7 @@ WHERE
 	(i."One" > i."One" OR i."One" = i."One" AND i."Two" > i."One" * 2 OR i."One" = i."One" AND i."Two" = i."One" * 2 AND i."Three" >= i."Four" - 1)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -60,7 +60,7 @@ WHERE
 	(i."One" > i."One" OR i."One" = i."One" AND i."Two" > i."Two" OR i."One" = i."One" AND i."Two" = i."Two" AND i."Four" >= i."Three")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -70,7 +70,7 @@ WHERE
 	(i."One" > i."One" OR i."One" = i."One" AND i."Two" > i."Five" OR i."One" = i."One" AND i."Two" = i."Five" AND i."Four" >= i."Three")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -80,7 +80,7 @@ WHERE
 	(i."One" > i."One" OR i."One" = i."One" AND i."Nil" > i."Two" OR i."One" = i."One" AND i."Nil" = i."Two" AND i."Four" >= i."Three")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	Count(*)
@@ -90,7 +90,7 @@ WHERE
 	(2 > i."One" OR 2 = i."One" AND NULL > i."Two" OR 2 = i."One" AND i."Two" IS NULL AND 3 >= i."Three")
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Ints"';

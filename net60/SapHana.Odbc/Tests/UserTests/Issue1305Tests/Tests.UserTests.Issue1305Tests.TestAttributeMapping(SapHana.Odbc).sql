@@ -244,11 +244,10 @@ BeforeExecute
 					F.SCHEMA_NAME,
 					F.FUNCTION_NAME AS PROCEDURE_NAME,
 					1 AS IS_FUNCTION,
-					CASE WHEN FP.DATA_TYPE_NAME = 'TABLE_TYPE' THEN 1 ELSE 0 END AS IS_TABLE_FUNCTION,
+					CASE WHEN F.FUNCTION_USAGE_TYPE = 'TABLE' THEN 1 ELSE 0 END AS IS_TABLE_FUNCTION,
 					DEFINITION
 				FROM FUNCTIONS AS F
-				JOIN FUNCTION_PARAMETERS AS FP ON F.FUNCTION_OID = FP.FUNCTION_OID
-				WHERE FP.PARAMETER_TYPE = 'RETURN' AND F.SCHEMA_NAME IN ('TESTDB')
+				WHERE F.SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -553,6 +552,17 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @I  -- Int32
+SET     @I = 0
+
+{ CALL "TESTDB"."TEST_PROCEDURE" (?) }
+
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."prd.global.ecc/CV_MARAproc" () }
 
@@ -564,6 +574,15 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT * FROM "TESTDB"."GetParentByID"(0)
+
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+BeginTransaction
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT * FROM "TESTDB"."TEST_TABLE_FUNCTION"(0)
 
 BeforeExecute
 RollbackTransaction

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-CREATE TABLE [#TestTable]
+CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Field1]  Int         NOT NULL,
 	[Field11] Int             NULL,
@@ -11,10 +11,10 @@ CREATE TABLE [#TestTable]
 )
 
 BeforeExecute
-INSERT BULK [#TestTable](Field1, Field11, Field2, Field21, Field3)
+INSERT BULK [tempdb]..[#TestTable](Field1, Field11, Field2, Field21, Field3)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-DROP TABLE [#TestTable]
+DROP TABLE [tempdb]..[#TestTable]
 

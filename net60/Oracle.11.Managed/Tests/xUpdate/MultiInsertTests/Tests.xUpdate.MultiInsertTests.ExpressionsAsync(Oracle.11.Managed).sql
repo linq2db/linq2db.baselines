@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Dest1"
 (
@@ -9,7 +9,7 @@ CREATE TABLE "Dest1"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT ALL
 WHEN N < 0 THEN
@@ -40,7 +40,7 @@ SELECT
 FROM SYS.DUAL
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	Count(*)
@@ -48,7 +48,7 @@ FROM
 	"Dest1" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	Count(*)
@@ -58,7 +58,7 @@ WHERE
 	x.ID = 3002
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT ALL
 WHEN 1 = 1 THEN
@@ -89,7 +89,7 @@ SELECT
 FROM SYS.DUAL
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	Count(*)
@@ -97,7 +97,7 @@ FROM
 	"Dest1" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	Count(*)
@@ -107,7 +107,7 @@ WHERE
 	(x.ID = 4001 OR x.ID = 4002)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Dest1"';

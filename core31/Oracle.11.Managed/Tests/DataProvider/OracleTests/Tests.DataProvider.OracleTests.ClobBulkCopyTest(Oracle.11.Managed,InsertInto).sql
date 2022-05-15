@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "ClobEntity"
 (
@@ -9,7 +9,7 @@ CREATE TABLE "ClobEntity"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @:p1 Int32
 SET     @:p1 = System.Object[]
 DECLARE @:p2 Clob -- Object
@@ -20,7 +20,7 @@ SET     @:p3 = System.Object[]
 INSERT INTO "ClobEntity" ("Id", "ClobValue", "NClobValue") VALUES (:p1, :p2, :p3)
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Id",
@@ -30,7 +30,7 @@ FROM
 	"ClobEntity" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 DROP TABLE "ClobEntity"
 

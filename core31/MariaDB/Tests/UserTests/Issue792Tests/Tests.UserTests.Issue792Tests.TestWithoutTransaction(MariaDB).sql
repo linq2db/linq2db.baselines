@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_SCHEMA = database()
+SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION, ROUTINE_COMMENT FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_TYPE IN ('PROCEDURE', 'FUNCTION') AND ROUTINE_SCHEMA = database()
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -42,6 +42,13 @@ DECLARE @param1 Int32
 SET     @param1 = NULL
 
 `testdata`.`TestProcedure`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+DECLARE @i Int32
+SET     @i = NULL
+
+`testdata`.`TEST_PROCEDURE`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

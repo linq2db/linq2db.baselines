@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -42,7 +42,7 @@ FROM
 		INNER JOIN "Child" detail_1 ON lw_Parent."ParentID" = detail_1."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -73,7 +73,7 @@ FROM
 		LEFT JOIN "Parent" a_Parent ON detail."ParentID" = a_Parent."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Issue2342Entity"
 (
@@ -10,7 +10,7 @@ CREATE TABLE "Issue2342Entity"
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 DECLARE @:p1 Int64
 SET     @:p1 = System.Object[]
 DECLARE @:p2 Varchar2 -- String
@@ -21,12 +21,12 @@ INSERT INTO "Issue2342Entity" ("Id", "Name") VALUES (:p1, :p2)
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 TRUNCATE TABLE "Issue2342Entity"
 
 BeforeExecute
--- Oracle.11.Managed Oracle.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue2342Entity"';

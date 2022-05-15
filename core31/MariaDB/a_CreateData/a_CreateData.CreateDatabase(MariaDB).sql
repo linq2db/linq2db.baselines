@@ -845,6 +845,84 @@ CREATE TABLE `CollatedTable`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
+-- SKIP MySql BEGIN
+-- SKIP MySqlConnector BEGIN
+-- SKIP MySql55 BEGIN
+-- SKIP MySql55Connector BEGIN
+
+CREATE OR REPLACE FUNCTION TEST_FUNCTION(i INT) RETURNS INT RETURN i + 3
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE OR REPLACE PROCEDURE TEST_PROCEDURE (IN i INT)
+SELECT i + 3;
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+SET SQL_MODE='ORACLE';
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE OR REPLACE PACKAGE TEST_PACKAGE1 AS
+	FUNCTION TEST_FUNCTION (i INT) RETURN INT;
+	PROCEDURE TEST_PROCEDURE (i INT);
+END;
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE1 AS
+	FUNCTION TEST_FUNCTION (i INT) RETURN INT AS
+	BEGIN 
+		RETURN i + 1;
+	END TEST_FUNCTION;
+	PROCEDURE TEST_PROCEDURE (i INT) AS
+	BEGIN 
+		SELECT i + 1;
+	END TEST_PROCEDURE;
+END TEST_PACKAGE1;
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE OR REPLACE PACKAGE TEST_PACKAGE2 AS
+	FUNCTION TEST_FUNCTION (i INT) RETURN INT;
+	PROCEDURE TEST_PROCEDURE (i INT);
+END;
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE2 AS
+	FUNCTION TEST_FUNCTION (i INT) RETURN INT AS
+	BEGIN 
+		RETURN i + 2;
+	END TEST_FUNCTION;
+	PROCEDURE TEST_PROCEDURE (i INT) AS
+	BEGIN 
+		SELECT i + 2;
+	END TEST_PROCEDURE;
+END TEST_PACKAGE2;
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+set session sql_mode=default
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+-- SKIP MySql55Connector END
+-- SKIP MySql55 END
+-- SKIP MySqlConnector END
+-- SKIP MySql END
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
