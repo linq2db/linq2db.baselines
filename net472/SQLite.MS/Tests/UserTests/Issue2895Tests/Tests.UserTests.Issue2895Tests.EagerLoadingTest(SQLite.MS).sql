@@ -266,16 +266,16 @@ FROM
 					[r].[Id] as [Id_1]
 				FROM
 					[Request] [r]
-						INNER JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
-						INNER JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
+						LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
+						LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
 			) [key_data_result]
 				INNER JOIN [EmailAdminAssociation] [detail] ON [key_data_result].[Id] = [detail].[AdminId]
-					INNER JOIN [Email] [a_Email] ON [detail].[EmailId] = [a_Email].[Id]
-						INNER JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
-				INNER JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
+					LEFT JOIN [Email] [a_Email] ON [detail].[EmailId] = [a_Email].[Id]
+						LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
+				LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
 	) [key_data_result_1]
 		INNER JOIN [EmailAttachmentAssociation] [detail_1] ON [key_data_result_1].[Id] = [detail_1].[EmailId]
-			INNER JOIN [Attachment] [a_Attachment] ON [detail_1].[AttachmentId] = [a_Attachment].[Id]
+			LEFT JOIN [Attachment] [a_Attachment] ON [detail_1].[AttachmentId] = [a_Attachment].[Id]
 		INNER JOIN [Document] [__c] ON [a_Attachment].[Id] = [__c].[AttachmentId]
 
 BeforeExecute
@@ -294,8 +294,8 @@ FROM
 			[r].[Id] as [Id_1]
 		FROM
 			[Request] [r]
-				INNER JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
-				INNER JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
+				LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
+				LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
 	) [key_data_result]
 		INNER JOIN [EmailAdminAssociation] [detail] ON [key_data_result].[Id] = [detail].[AdminId]
 			LEFT JOIN [Email] [a_Email] ON [detail].[EmailId] = [a_Email].[Id]
@@ -312,8 +312,8 @@ SELECT
 	[r].[Id]
 FROM
 	[Request] [r]
-		INNER JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
-		INNER JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
+		LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
+		LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
 
 BeforeExecute
 -- SQLite.MS SQLite
