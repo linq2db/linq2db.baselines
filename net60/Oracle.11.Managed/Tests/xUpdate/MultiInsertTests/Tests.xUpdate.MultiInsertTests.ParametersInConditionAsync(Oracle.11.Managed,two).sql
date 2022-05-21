@@ -10,6 +10,8 @@ CREATE TABLE "Dest1"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
+DECLARE @value_2 Varchar2(3) -- String
+SET     @value_2 = 'two'
 DECLARE @id1 Int32
 SET     @id1 = 3000
 DECLARE @id2 Int32
@@ -18,7 +20,7 @@ DECLARE @value_1 Varchar2(3) -- String
 SET     @value_1 = 'two'
 
 INSERT ALL
-WHEN 1 = 0 THEN
+WHEN :value_2 IS NULL THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -29,7 +31,7 @@ WHEN 1 = 0 THEN
 		:id1,
 		"Value_1"
 	)
-WHEN 1 = 1 THEN
+WHEN :value_2 IS NOT NULL THEN
 	INTO "Dest1"
 	(
 		ID,
