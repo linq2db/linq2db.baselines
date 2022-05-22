@@ -5,7 +5,7 @@ SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue DateTime2
-SET     @DateTimeValue = '2018-01-03T00:00:00.0000000'
+SET     @DateTimeValue = DATETIME2FROMPARTS(2018, 1, 3, 0, 0, 0, 0, 7)
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = 0
 DECLARE @GuidValue UniqueIdentifier -- Guid
@@ -43,7 +43,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2016
 DECLARE @p_1 DateTime2
-SET     @p_1 = '2018-01-02T00:00:00.0000000'
+SET     @p_1 = DATETIME2FROMPARTS(2018, 1, 2, 0, 0, 0, 0, 7)
 
 SELECT
 	Count(*)
