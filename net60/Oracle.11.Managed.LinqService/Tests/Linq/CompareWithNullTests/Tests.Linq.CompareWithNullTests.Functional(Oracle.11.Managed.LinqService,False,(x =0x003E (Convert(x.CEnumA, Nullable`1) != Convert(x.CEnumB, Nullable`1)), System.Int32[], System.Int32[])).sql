@@ -17,13 +17,13 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Src"
 		(
-			"Id"     Int           NOT NULL,
-			A        Int               NULL,
-			B        Int               NULL,
-			"EnumA"  VarChar(1)        NULL,
-			"EnumB"  VarChar(1)        NULL,
-			"CEnumA" VarChar(4000)     NULL,
-			"CEnumB" VarChar(4000)     NULL
+			"Id"     Int         NOT NULL,
+			A        Int             NULL,
+			B        Int             NULL,
+			"EnumA"  VarChar(1)      NULL,
+			"EnumB"  VarChar(1)      NULL,
+			"CEnumA" VarChar(20)     NULL,
+			"CEnumB" VarChar(20)     NULL
 		)
 	';
 EXCEPTION
