@@ -25,15 +25,15 @@ INSERT INTO [DateOnlyTable]
 	[Id]
 )
 VALUES
-(NULL,'1900-01-01',1),
-('2200-01-01','2020-02-29',2)
+(NULL,DATEFROMPARTS(1900, 1, 1),1),
+(DATEFROMPARTS(2200, 1, 1),DATEFROMPARTS(2020, 2, 29),2)
 
 BeforeExecute
 -- SqlServer.2014
 DECLARE @Column_1 Date
-SET     @Column_1 = '2020-02-29T00:00:00.0000000'
+SET     @Column_1 = DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2200-01-01T00:00:00.0000000'
+SET     @ColumnNullable = DATETIME2FROMPARTS(2200, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
 	[r].[ColumnNullable],
@@ -54,7 +54,7 @@ SELECT
 FROM
 	[DateOnlyTable] [r]
 WHERE
-	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2200-01-01'
+	[r].[Column] = DATEFROMPARTS(2020, 2, 29) AND [r].[ColumnNullable] = DATEFROMPARTS(2200, 1, 1)
 
 BeforeExecute
 -- SqlServer.2014
@@ -68,7 +68,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date
-SET     @Column_1 = '1900-01-01T00:00:00.0000000'
+SET     @Column_1 = DATETIME2FROMPARTS(1900, 1, 1, 0, 0, 0, 0, 7)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -88,9 +88,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2014
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2200-01-01T00:00:00.0000000'
+SET     @ColumnNullable = DATETIME2FROMPARTS(2200, 1, 1, 0, 0, 0, 0, 7)
 DECLARE @Column_1 Date
-SET     @Column_1 = '2020-02-29T00:00:00.0000000'
+SET     @Column_1 = DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
@@ -136,8 +136,8 @@ INSERT INTO [DateOnlyTable]
 	[Id]
 )
 VALUES
-(NULL,'1900-01-01',1),
-('2200-01-01','2020-02-29',2)
+(NULL,DATEFROMPARTS(1900, 1, 1),1),
+(DATEFROMPARTS(2200, 1, 1),DATEFROMPARTS(2020, 2, 29),2)
 
 BeforeExecute
 -- SqlServer.2014
