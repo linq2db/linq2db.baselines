@@ -41,28 +41,28 @@ SELECT Cast(NULL as datetimeoffset)
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = DATETIMEOFFSETFROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 5, 0, 7)
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = DATETIMEOFFSETFROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 5, 0, 7)
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = DATETIMEOFFSETFROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 5, 0, 7)
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = DATETIMEOFFSETFROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 5, 0, 7)
 
 SELECT @p
 
