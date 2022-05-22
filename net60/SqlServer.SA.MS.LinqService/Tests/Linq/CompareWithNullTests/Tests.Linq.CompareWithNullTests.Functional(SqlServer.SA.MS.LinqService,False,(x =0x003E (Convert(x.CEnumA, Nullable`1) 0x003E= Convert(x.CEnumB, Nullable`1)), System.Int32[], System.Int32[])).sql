@@ -9,13 +9,13 @@ BeforeExecute
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
 	(
-		[Id]     Int          NOT NULL,
-		[A]      Int              NULL,
-		[B]      Int              NULL,
-		[EnumA]  NChar(1)         NULL,
-		[EnumB]  NChar(1)         NULL,
-		[CEnumA] VarChar(Max)     NULL,
-		[CEnumB] VarChar(Max)     NULL
+		[Id]     Int         NOT NULL,
+		[A]      Int             NULL,
+		[B]      Int             NULL,
+		[EnumA]  NChar(1)        NULL,
+		[EnumB]  NChar(1)        NULL,
+		[CEnumA] VarChar(20)     NULL,
+		[CEnumB] VarChar(20)     NULL
 	)
 
 BeforeExecute
@@ -30,9 +30,9 @@ DECLARE @EnumA NChar -- StringFixedLength
 SET     @EnumA = NULL
 DECLARE @EnumB NChar -- StringFixedLength
 SET     @EnumB = NULL
-DECLARE @CEnumA VarChar(8000) -- AnsiString
+DECLARE @CEnumA VarChar(20) -- AnsiString
 SET     @CEnumA = NULL
-DECLARE @CEnumB VarChar(8000) -- AnsiString
+DECLARE @CEnumB VarChar(20) -- AnsiString
 SET     @CEnumB = NULL
 
 INSERT INTO [Src]
@@ -68,9 +68,9 @@ DECLARE @EnumA NChar -- StringFixedLength
 SET     @EnumA = NULL
 DECLARE @EnumB NChar(1) -- StringFixedLength
 SET     @EnumB = N'A'
-DECLARE @CEnumA VarChar(8000) -- AnsiString
+DECLARE @CEnumA VarChar(20) -- AnsiString
 SET     @CEnumA = NULL
-DECLARE @CEnumB VarChar(8000) -- AnsiString
+DECLARE @CEnumB VarChar(20) -- AnsiString
 SET     @CEnumB = N'___One___'
 
 INSERT INTO [Src]
@@ -106,9 +106,9 @@ DECLARE @EnumA NChar(1) -- StringFixedLength
 SET     @EnumA = N'A'
 DECLARE @EnumB NChar -- StringFixedLength
 SET     @EnumB = NULL
-DECLARE @CEnumA VarChar(8000) -- AnsiString
+DECLARE @CEnumA VarChar(20) -- AnsiString
 SET     @CEnumA = N'___One___'
-DECLARE @CEnumB VarChar(8000) -- AnsiString
+DECLARE @CEnumB VarChar(20) -- AnsiString
 SET     @CEnumB = NULL
 
 INSERT INTO [Src]
@@ -144,9 +144,9 @@ DECLARE @EnumA NChar(1) -- StringFixedLength
 SET     @EnumA = N'A'
 DECLARE @EnumB NChar(1) -- StringFixedLength
 SET     @EnumB = N'A'
-DECLARE @CEnumA VarChar(8000) -- AnsiString
+DECLARE @CEnumA VarChar(20) -- AnsiString
 SET     @CEnumA = N'___One___'
-DECLARE @CEnumB VarChar(8000) -- AnsiString
+DECLARE @CEnumB VarChar(20) -- AnsiString
 SET     @CEnumB = N'___One___'
 
 INSERT INTO [Src]
@@ -182,9 +182,9 @@ DECLARE @EnumA NChar(1) -- StringFixedLength
 SET     @EnumA = N'A'
 DECLARE @EnumB NChar(1) -- StringFixedLength
 SET     @EnumB = N'B'
-DECLARE @CEnumA VarChar(8000) -- AnsiString
+DECLARE @CEnumA VarChar(20) -- AnsiString
 SET     @CEnumA = N'___One___'
-DECLARE @CEnumB VarChar(8000) -- AnsiString
+DECLARE @CEnumB VarChar(20) -- AnsiString
 SET     @CEnumB = N'___Two___'
 
 INSERT INTO [Src]
@@ -220,9 +220,9 @@ DECLARE @EnumA NChar(1) -- StringFixedLength
 SET     @EnumA = N'B'
 DECLARE @EnumB NChar(1) -- StringFixedLength
 SET     @EnumB = N'A'
-DECLARE @CEnumA VarChar(8000) -- AnsiString
+DECLARE @CEnumA VarChar(20) -- AnsiString
 SET     @CEnumA = N'___Two___'
-DECLARE @CEnumB VarChar(8000) -- AnsiString
+DECLARE @CEnumB VarChar(20) -- AnsiString
 SET     @CEnumB = N'___One___'
 
 INSERT INTO [Src]

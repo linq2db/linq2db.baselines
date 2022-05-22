@@ -9,13 +9,13 @@ BeforeExecute
 IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 	CREATE TABLE [Src]
 	(
-		[Id]     Int          NOT NULL,
-		[A]      Int              NULL,
-		[B]      Int              NULL,
-		[EnumA]  NChar(1)         NULL,
-		[EnumB]  NChar(1)         NULL,
-		[CEnumA] VarChar(Max)     NULL,
-		[CEnumB] VarChar(Max)     NULL
+		[Id]     Int         NOT NULL,
+		[A]      Int             NULL,
+		[B]      Int             NULL,
+		[EnumA]  NChar(1)        NULL,
+		[EnumB]  NChar(1)        NULL,
+		[CEnumA] VarChar(20)     NULL,
+		[CEnumB] VarChar(20)     NULL
 	)
 
 BeforeExecute
