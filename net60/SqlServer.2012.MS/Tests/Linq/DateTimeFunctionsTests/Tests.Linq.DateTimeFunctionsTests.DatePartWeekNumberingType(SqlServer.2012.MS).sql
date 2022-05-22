@@ -2,71 +2,71 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2018-12-28T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2018, 12, 28, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2018-12-29T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2018, 12, 29, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2018-12-30T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2018, 12, 30, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2018-12-31T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2018, 12, 31, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2019-01-01T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2019, 1, 1, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2019-01-02T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2019, 1, 2, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2019-01-03T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2019, 1, 3, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2019-01-04T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2019, 1, 4, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2019-01-05T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2019, 1, 5, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2019-01-06T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2019, 1, 6, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2019-01-07T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2019, 1, 7, 0, 0, 0, 0))
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DatePart(week, '2019-01-08T00:00:00')
+	DatePart(week, DATETIMEFROMPARTS(2019, 1, 8, 0, 0, 0, 0))
 
