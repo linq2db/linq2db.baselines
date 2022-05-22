@@ -121,9 +121,9 @@ SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = -1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime2
-SET     @FieldDateTime = '2000-11-12T21:14:15.1670000'
+SET     @FieldDateTime = DATETIME2FROMPARTS(2000, 11, 12, 21, 14, 15, 1670000, 7)
 DECLARE @FieldDateTime2 DateTimeOffset
-SET     @FieldDateTime2 = '2000-11-22 13:14:15.1244567 +00:15'
+SET     @FieldDateTime2 = DATETIMEOFFSETFROMPARTS(2000, 11, 22, 13, 14, 15, 1244567, 0, 15, 7)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -131,9 +131,9 @@ SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '2000-11-23T00:00:00.0000000'
+SET     @FieldDate = DATETIME2FROMPARTS(2000, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
-SET     @FieldTime = '09:44:34.6534321'
+SET     @FieldTime = TIMEFROMPARTS(9, 44, 34, 6534321, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = N'FIRST'
 DECLARE @FieldEnumNumber Int -- Int32
@@ -209,9 +209,9 @@ SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime2
-SET     @FieldDateTime = '2001-10-12T21:14:15.1670000'
+SET     @FieldDateTime = DATETIME2FROMPARTS(2001, 10, 12, 21, 14, 15, 1670000, 7)
 DECLARE @FieldDateTime2 DateTimeOffset
-SET     @FieldDateTime2 = '2001-11-22 13:14:15.1234567 -00:15'
+SET     @FieldDateTime2 = DATETIMEOFFSETFROMPARTS(2001, 11, 22, 13, 14, 15, 1234567, 0, -15, 7)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -219,9 +219,9 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '2123-11-23T00:00:00.0000000'
+SET     @FieldDate = DATETIME2FROMPARTS(2123, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
-SET     @FieldTime = '00:44:34.6414321'
+SET     @FieldTime = TIMEFROMPARTS(0, 44, 34, 6414321, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = char(0)
 DECLARE @FieldEnumNumber Int -- Int32
@@ -296,9 +296,9 @@ SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = -2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime2
-SET     @FieldDateTime = '2098-10-12T21:14:15.9970000'
+SET     @FieldDateTime = DATETIME2FROMPARTS(2098, 10, 12, 21, 14, 15, 9970000, 7)
 DECLARE @FieldDateTime2 DateTimeOffset
-SET     @FieldDateTime2 = '2001-11-22 13:14:16.1224567 +01:39'
+SET     @FieldDateTime2 = DATETIMEOFFSETFROMPARTS(2001, 11, 22, 13, 14, 16, 1224567, 1, 39, 7)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -306,9 +306,9 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '3210-11-23T00:00:00.0000000'
+SET     @FieldDate = DATETIME2FROMPARTS(3210, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
-SET     @FieldTime = '00:00:00'
+SET     @FieldTime = TIMEFROMPARTS(0, 0, 0, 0, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = N''
 DECLARE @FieldEnumNumber Int -- Int32
@@ -382,9 +382,9 @@ SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime2
-SET     @FieldDateTime = '2098-10-12T21:14:15.9070000'
+SET     @FieldDateTime = DATETIME2FROMPARTS(2098, 10, 12, 21, 14, 15, 9070000, 7)
 DECLARE @FieldDateTime2 DateTimeOffset
-SET     @FieldDateTime2 = '2001-11-22 13:14:14.1233457 -01:39'
+SET     @FieldDateTime2 = DATETIMEOFFSETFROMPARTS(2001, 11, 22, 13, 14, 14, 1233457, -1, -39, 7)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -392,9 +392,9 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '3210-11-23T00:00:00.0000000'
+SET     @FieldDate = DATETIME2FROMPARTS(3210, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
-SET     @FieldTime = '23:59:59.9999999'
+SET     @FieldTime = TIMEFROMPARTS(23, 59, 59, 9999999, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Int -- Int32
@@ -470,9 +470,9 @@ SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime2
-SET     @FieldDateTime = '2001-10-12T21:14:15.1670000'
+SET     @FieldDateTime = DATETIME2FROMPARTS(2001, 10, 12, 21, 14, 15, 1670000, 7)
 DECLARE @FieldDateTime2 DateTimeOffset
-SET     @FieldDateTime2 = '2001-11-22 13:14:15.3210000 -00:15'
+SET     @FieldDateTime2 = DATETIMEOFFSETFROMPARTS(2001, 11, 22, 13, 14, 15, 3210000, 0, -15, 7)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -480,9 +480,9 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '2123-11-23T00:00:00.0000000'
+SET     @FieldDate = DATETIME2FROMPARTS(2123, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
-SET     @FieldTime = '14:44:33.2340000'
+SET     @FieldTime = TIMEFROMPARTS(14, 44, 33, 2340000, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = char(0)
 DECLARE @FieldEnumNumber Int -- Int32
@@ -556,9 +556,9 @@ SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime2
-SET     @FieldDateTime = '2098-10-12T21:14:15.9130000'
+SET     @FieldDateTime = DATETIME2FROMPARTS(2098, 10, 12, 21, 14, 15, 9130000, 7)
 DECLARE @FieldDateTime2 DateTimeOffset
-SET     @FieldDateTime2 = '2001-11-22 13:14:15.0000000 -01:39'
+SET     @FieldDateTime2 = DATETIMEOFFSETFROMPARTS(2001, 11, 22, 13, 14, 15, 0, -1, -39, 7)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -566,9 +566,9 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '3210-11-23T00:00:00.0000000'
+SET     @FieldDate = DATETIME2FROMPARTS(3210, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
-SET     @FieldTime = '23:59:59.9999999'
+SET     @FieldTime = TIMEFROMPARTS(23, 59, 59, 9999999, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Int -- Int32
@@ -644,9 +644,9 @@ SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime2
-SET     @FieldDateTime = '2001-10-12T21:14:15.1670000'
+SET     @FieldDateTime = DATETIME2FROMPARTS(2001, 10, 12, 21, 14, 15, 1670000, 7)
 DECLARE @FieldDateTime2 DateTimeOffset
-SET     @FieldDateTime2 = '2001-11-22 13:14:15.9990000 -00:15'
+SET     @FieldDateTime2 = DATETIMEOFFSETFROMPARTS(2001, 11, 22, 13, 14, 15, 9990000, 0, -15, 7)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -654,9 +654,9 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = '2123-11-23T00:00:00.0000000'
+SET     @FieldDate = DATETIME2FROMPARTS(2123, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
-SET     @FieldTime = '22:44:33'
+SET     @FieldTime = TIMEFROMPARTS(22, 44, 33, 0, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = char(0)
 DECLARE @FieldEnumNumber Int -- Int32

@@ -22,7 +22,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2019
 DECLARE @dt DateTime2
-SET     @dt = '2010-12-14T05:00:07.4250141'
+SET     @dt = DATETIME2FROMPARTS(2010, 12, 14, 5, 0, 7, 4250141, 7)
 
 UPDATE
 	[t1]
@@ -57,7 +57,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2019
 DECLARE @pdt DateTime2
-SET     @pdt = '2001-01-11T01:11:21.1000000'
+SET     @pdt = DATETIME2FROMPARTS(2001, 1, 11, 1, 11, 21, 1000000, 7)
 
 UPDATE
 	[t1]

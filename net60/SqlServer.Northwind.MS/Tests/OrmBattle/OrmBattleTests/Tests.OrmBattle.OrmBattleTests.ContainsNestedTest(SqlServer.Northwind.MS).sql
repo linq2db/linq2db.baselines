@@ -82,7 +82,7 @@ FROM
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @OrderDate DateTime2
-SET     @OrderDate = '2001-01-01T00:00:00.0000000'
+SET     @OrderDate = DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
 	[c_1].[Fax],

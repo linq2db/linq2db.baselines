@@ -84,7 +84,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @OrderDate DateTime2
-SET     @OrderDate = '1997-01-01T00:00:00.0000000'
+SET     @OrderDate = DATETIME2FROMPARTS(1997, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT TOP (@take)
 	[o].[ShipCountry],
