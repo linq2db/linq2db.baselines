@@ -8,13 +8,13 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
-	`Id`     INT          NOT NULL,
-	`A`      INT              NULL,
-	`B`      INT              NULL,
-	`EnumA`  CHAR             NULL,
-	`EnumB`  CHAR             NULL,
-	`CEnumA` VARCHAR(255)     NULL,
-	`CEnumB` VARCHAR(255)     NULL
+	`Id`     INT         NOT NULL,
+	`A`      INT             NULL,
+	`B`      INT             NULL,
+	`EnumA`  CHAR            NULL,
+	`EnumB`  CHAR            NULL,
+	`CEnumA` VARCHAR(20)     NULL,
+	`CEnumB` VARCHAR(20)     NULL
 )
 
 BeforeExecute
