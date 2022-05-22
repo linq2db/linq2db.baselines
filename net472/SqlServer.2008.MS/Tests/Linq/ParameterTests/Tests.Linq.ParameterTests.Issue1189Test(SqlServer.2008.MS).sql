@@ -12,7 +12,7 @@ CREATE TABLE [Issue1189Customer]
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @DateTime DateTime2
-SET     @DateTime = '2020-02-29T17:54:55.1231234'
+SET     @DateTime = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
 
 SELECT
 	[k_1].[ID],

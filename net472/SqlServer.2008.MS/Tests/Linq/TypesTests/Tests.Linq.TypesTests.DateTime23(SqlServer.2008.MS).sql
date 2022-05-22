@@ -22,7 +22,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @DateTimeValue2 DateTime2
-SET     @DateTimeValue2 = '2010-12-14T05:00:07.4250141'
+SET     @DateTimeValue2 = CAST('2010-12-14T05:00:07.4250141' AS DATETIME2)
 
 UPDATE
 	[t]
