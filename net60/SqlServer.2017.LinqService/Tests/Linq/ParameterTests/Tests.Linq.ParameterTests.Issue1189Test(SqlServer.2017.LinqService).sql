@@ -12,7 +12,7 @@ CREATE TABLE [Issue1189Customer]
 BeforeExecute
 -- SqlServer.2017
 DECLARE @DateTime DateTime2
-SET     @DateTime = '2020-02-29T17:54:55.1231234'
+SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
 	[k_1].[ID],
