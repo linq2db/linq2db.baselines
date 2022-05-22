@@ -14,13 +14,13 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Src"
 			(
-				"Id"     Int                                    NOT NULL,
+				"Id"     Int                                   NOT NULL,
 				A        Int,
 				B        Int,
 				"EnumA"  NChar(1),
 				"EnumB"  NChar(1),
-				"CEnumA" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"CEnumB" VarChar(255) CHARACTER SET UNICODE_FSS
+				"CEnumA" VarChar(20) CHARACTER SET UNICODE_FSS,
+				"CEnumB" VarChar(20) CHARACTER SET UNICODE_FSS
 			)
 		';
 END
@@ -38,7 +38,7 @@ INSERT INTO "Src"
 	"CEnumA",
 	"CEnumB"
 )
-SELECT 100,NULL,NULL,NULL,NULL,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 100,NULL,NULL,NULL,NULL,CAST(NULL AS VarChar(20) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(20) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 101,NULL,1,NULL,'A',NULL,'___One___' FROM rdb$database UNION ALL
 SELECT 110,1,NULL,'A',NULL,'___One___',NULL FROM rdb$database UNION ALL
 SELECT 111,1,1,'A','A','___One___','___One___' FROM rdb$database UNION ALL
