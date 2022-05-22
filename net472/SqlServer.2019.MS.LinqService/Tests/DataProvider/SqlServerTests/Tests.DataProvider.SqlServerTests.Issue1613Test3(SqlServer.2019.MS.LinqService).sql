@@ -15,7 +15,7 @@ IF (OBJECT_ID(N'[Issue1613]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-02-29 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 0, 40, 7)
 
 INSERT INTO [Issue1613]
 (
@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-03-01 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = DATETIMEOFFSETFROMPARTS(2020, 3, 1, 17, 54, 55, 1231234, 0, 40, 7)
 
 INSERT INTO [Issue1613]
 (
@@ -43,7 +43,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-03-02 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = DATETIMEOFFSETFROMPARTS(2020, 3, 2, 17, 54, 55, 1231234, 0, 40, 7)
 
 INSERT INTO [Issue1613]
 (
@@ -57,7 +57,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-03-03 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = DATETIMEOFFSETFROMPARTS(2020, 3, 3, 17, 54, 55, 1231234, 0, 40, 7)
 
 INSERT INTO [Issue1613]
 (
@@ -71,7 +71,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-03-04 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = DATETIMEOFFSETFROMPARTS(2020, 3, 4, 17, 54, 55, 1231234, 0, 40, 7)
 
 INSERT INTO [Issue1613]
 (
