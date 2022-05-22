@@ -29,8 +29,8 @@ INSERT INTO [Mixed]
 	[Bool]
 )
 VALUES
-(1,N'One','2001-01-01T00:00:00',1,1),
-(2,N'Two','2002-02-02T00:00:00',2,0)
+(1,N'One',DATETIMEFROMPARTS(2001, 1, 1, 0, 0, 0, 0),1,1),
+(2,N'Two',DATETIMEFROMPARTS(2002, 2, 2, 0, 0, 0, 0),2,0)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
