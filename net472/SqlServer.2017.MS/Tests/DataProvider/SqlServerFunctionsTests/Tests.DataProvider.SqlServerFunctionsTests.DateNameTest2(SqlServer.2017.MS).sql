@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @p_1 DateTime2
-SET     @p_1 = '2022-03-22T00:00:00.0000000'
+SET     @p_1 = DATETIME2FROMPARTS(2022, 3, 22, 0, 0, 0, 0, 7)
 
 SELECT
 	DATENAME(Month, @p_1)
