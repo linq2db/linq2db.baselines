@@ -12,7 +12,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @Value_1 DateTime2
-SET     @Value_1 = '2020-02-29T17:54:55.1230000'
+SET     @Value_1 = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
 
 INSERT INTO [DataClass]
 (

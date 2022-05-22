@@ -29,8 +29,8 @@ INSERT INTO [Mixed]
 	[Bool]
 )
 VALUES
-(1,N'One','2001-01-01T00:00:00',1,1),
-(2,N'Two','2002-02-02T00:00:00',2,0)
+(1,N'One',CAST('2001-01-01T00:00:00.000' AS DATETIME),1,1),
+(2,N'Two',CAST('2002-02-02T00:00:00.000' AS DATETIME),2,0)
 
 BeforeExecute
 -- SqlServer.2008

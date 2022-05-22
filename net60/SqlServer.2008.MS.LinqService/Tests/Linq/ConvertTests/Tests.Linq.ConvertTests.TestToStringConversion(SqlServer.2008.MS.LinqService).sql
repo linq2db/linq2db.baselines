@@ -101,9 +101,9 @@ SET     @NullableProp_ulong = 4294967295
 DECLARE @NullableProp_Guid UniqueIdentifier -- Guid
 SET     @NullableProp_Guid = '00000000-0000-0000-0000-000000000000'
 DECLARE @Prop_DateTime DateTime2
-SET     @Prop_DateTime = '2022-03-25T13:40:33.0000000'
+SET     @Prop_DateTime = CAST('2022-03-25T13:40:33.0000000' AS DATETIME2)
 DECLARE @NullableProp_DateTime DateTime2
-SET     @NullableProp_DateTime = '2022-03-25T13:40:33.0000000'
+SET     @NullableProp_DateTime = CAST('2022-03-25T13:40:33.0000000' AS DATETIME2)
 
 INSERT INTO [ToStringConvertibleTypes]
 (

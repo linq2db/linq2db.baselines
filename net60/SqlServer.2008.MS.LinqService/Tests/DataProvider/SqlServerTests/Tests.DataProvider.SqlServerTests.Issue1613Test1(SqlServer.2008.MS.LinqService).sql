@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[Issue1613]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-02-29 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = CAST('2020-02-29T17:54:55.1231234+00:40' AS DATETIMEOFFSET)
 
 INSERT INTO [Issue1613]
 (
@@ -30,7 +30,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-03-01 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = CAST('2020-03-01T17:54:55.1231234+00:40' AS DATETIMEOFFSET)
 
 INSERT INTO [Issue1613]
 (
@@ -44,7 +44,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-03-02 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = CAST('2020-03-02T17:54:55.1231234+00:40' AS DATETIMEOFFSET)
 
 INSERT INTO [Issue1613]
 (
@@ -58,7 +58,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-03-03 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = CAST('2020-03-03T17:54:55.1231234+00:40' AS DATETIMEOFFSET)
 
 INSERT INTO [Issue1613]
 (
@@ -72,7 +72,7 @@ VALUES
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = '2020-03-04 17:54:55.1231234 +00:40'
+SET     @DateTimeOffset = CAST('2020-03-04T17:54:55.1231234+00:40' AS DATETIMEOFFSET)
 
 INSERT INTO [Issue1613]
 (
