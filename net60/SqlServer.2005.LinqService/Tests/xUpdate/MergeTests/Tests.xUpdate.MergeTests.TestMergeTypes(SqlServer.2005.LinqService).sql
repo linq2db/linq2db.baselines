@@ -109,7 +109,7 @@ SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = -1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = '2000-11-12T21:14:15.167'
+SET     @FieldDateTime = CAST('2000-11-12T21:14:15.167' AS DATETIME)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -185,7 +185,7 @@ SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = '2001-10-12T21:14:15.167'
+SET     @FieldDateTime = CAST('2001-10-12T21:14:15.167' AS DATETIME)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -260,7 +260,7 @@ SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = -2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = '2098-10-12T21:14:15.997'
+SET     @FieldDateTime = CAST('2098-10-12T21:14:15.997' AS DATETIME)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -334,7 +334,7 @@ SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = '2098-10-12T21:14:15.907'
+SET     @FieldDateTime = CAST('2098-10-12T21:14:15.907' AS DATETIME)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -410,7 +410,7 @@ SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = '2001-10-12T21:14:15.167'
+SET     @FieldDateTime = CAST('2001-10-12T21:14:15.167' AS DATETIME)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -484,7 +484,7 @@ SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = '2098-10-12T21:14:15.913'
+SET     @FieldDateTime = CAST('2098-10-12T21:14:15.913' AS DATETIME)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0xFFC864321400
 DECLARE @FieldGuid UniqueIdentifier -- Guid
@@ -560,7 +560,7 @@ SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Float -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = '2001-10-12T21:14:15.167'
+SET     @FieldDateTime = CAST('2001-10-12T21:14:15.167' AS DATETIME)
 DECLARE @FieldBinary VarBinary(8000) -- Binary
 SET     @FieldBinary = 0x000102030004
 DECLARE @FieldGuid UniqueIdentifier -- Guid

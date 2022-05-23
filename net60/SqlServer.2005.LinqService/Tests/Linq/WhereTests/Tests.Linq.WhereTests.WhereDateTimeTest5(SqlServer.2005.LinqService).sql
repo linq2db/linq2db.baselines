@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 DECLARE @Date_1 DateTime
-SET     @Date_1 = '2009-09-20T00:00:00'
+SET     @Date_1 = CAST('2009-09-20T00:00:00.000' AS DATETIME)
 
 SELECT
 	[_].[ID],

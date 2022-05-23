@@ -22,7 +22,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 DECLARE @dt DateTime
-SET     @dt = '2010-12-14T05:00:07.425'
+SET     @dt = CAST('2010-12-14T05:00:07.425' AS DATETIME)
 
 UPDATE
 	[t1]
@@ -57,7 +57,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2005
 DECLARE @pdt DateTime
-SET     @pdt = '2001-01-11T01:11:21.100'
+SET     @pdt = CAST('2001-01-11T01:11:21.100' AS DATETIME)
 
 UPDATE
 	[t1]

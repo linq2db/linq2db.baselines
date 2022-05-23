@@ -3,7 +3,7 @@
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @dateTime DateTime
-SET     @dateTime = '1992-01-11T01:11:21.100'
+SET     @dateTime = CAST('1992-01-11T01:11:21.100' AS DATETIME)
 
 SELECT TOP (@take)
 	[t].[DateTimeValue]
@@ -17,7 +17,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @dateTime DateTime
-SET     @dateTime = '1993-01-11T01:11:21.100'
+SET     @dateTime = CAST('1993-01-11T01:11:21.100' AS DATETIME)
 
 SELECT TOP (@take)
 	[t].[DateTimeValue]
