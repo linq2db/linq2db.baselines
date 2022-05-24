@@ -12,8 +12,6 @@ WHERE
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	Length(`t`.`BinaryValue`)
@@ -21,7 +19,7 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

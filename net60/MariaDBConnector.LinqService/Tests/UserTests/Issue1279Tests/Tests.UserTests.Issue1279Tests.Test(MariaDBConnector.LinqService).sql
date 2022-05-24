@@ -25,15 +25,13 @@ VALUES
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t1`.`Id`,
 	`t1`.`CharFld`
 FROM
 	`Issue1279Table` `t1`
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

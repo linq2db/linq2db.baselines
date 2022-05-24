@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	(
@@ -11,7 +9,7 @@ SELECT
 			`Doctor` `d`
 		WHERE
 			`t1`.`PersonID` = `d`.`PersonID`
-		LIMIT @take
+		LIMIT 1
 	)
 FROM
 	`Doctor` `t1`
