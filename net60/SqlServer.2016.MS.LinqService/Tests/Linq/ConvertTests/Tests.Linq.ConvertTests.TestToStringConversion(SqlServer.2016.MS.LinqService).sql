@@ -37,8 +37,8 @@ IF (OBJECT_ID(N'[ToStringConvertibleTypes]', N'U') IS NULL)
 		[NullableProp_uint]     BigInt               NULL,
 		[NullableProp_ulong]    Decimal              NULL,
 		[NullableProp_Guid]     UniqueIdentifier     NULL,
-		[Prop_DateTime]         DateTime         NOT NULL,
-		[NullableProp_DateTime] DateTime             NULL
+		[Prop_DateTime]         DateTime2        NOT NULL,
+		[NullableProp_DateTime] DateTime2            NULL
 	)
 
 BeforeExecute

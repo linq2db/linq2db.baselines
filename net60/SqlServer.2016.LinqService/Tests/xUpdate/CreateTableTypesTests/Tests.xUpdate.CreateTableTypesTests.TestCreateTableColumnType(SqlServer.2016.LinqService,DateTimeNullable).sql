@@ -3,8 +3,8 @@
 
 CREATE TABLE [CreateTableTypes]
 (
-	[Id]               Int      NOT NULL,
-	[DateTimeNullable] DateTime     NULL
+	[Id]               Int       NOT NULL,
+	[DateTimeNullable] DateTime2     NULL
 )
 
 BeforeExecute
