@@ -12,7 +12,7 @@ IF (OBJECT_ID(N'[Mixed]', N'U') IS NULL)
 	(
 		[Int]    Int            NOT NULL,
 		[Str]    NVarChar(4000)     NULL,
-		[Date]   DateTime       NOT NULL,
+		[Date]   DateTime2      NOT NULL,
 		[Double] Float          NOT NULL,
 		[Bool]   Bit            NOT NULL
 	)

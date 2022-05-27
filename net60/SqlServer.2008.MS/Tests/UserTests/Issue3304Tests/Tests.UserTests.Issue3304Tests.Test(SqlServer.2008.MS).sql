@@ -4,7 +4,7 @@
 CREATE TABLE [Table]
 (
 	[Version]   Int                  NULL,
-	[UpdatedOn] DateTime             NULL,
+	[UpdatedOn] DateTime2            NULL,
 	[UserId]    UniqueIdentifier NOT NULL,
 	[Value]     UniqueIdentifier     NULL,
 

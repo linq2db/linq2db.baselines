@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @DateTimeValue DateTime2
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = CAST('2001-01-11T01:11:21.1000000' AS DATETIME2)
 
 SELECT

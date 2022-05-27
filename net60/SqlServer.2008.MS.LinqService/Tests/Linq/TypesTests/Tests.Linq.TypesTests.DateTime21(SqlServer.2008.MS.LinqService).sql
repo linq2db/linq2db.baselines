@@ -21,7 +21,7 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @dt DateTime2
+DECLARE @dt DateTime
 SET     @dt = CAST('2010-12-14T05:00:07.4250141' AS DATETIME2)
 
 UPDATE
@@ -56,7 +56,7 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @pdt DateTime2
+DECLARE @pdt DateTime
 SET     @pdt = CAST('2001-01-11T01:11:21.1000000' AS DATETIME2)
 
 UPDATE
