@@ -3,8 +3,8 @@
 
 CREATE TABLE [Issue1982Table]
 (
-	[Time]     Time     NOT NULL,
-	[DateTime] DateTime NOT NULL
+	[Time]     Time      NOT NULL,
+	[DateTime] DateTime2 NOT NULL
 )
 
 BeforeExecute
