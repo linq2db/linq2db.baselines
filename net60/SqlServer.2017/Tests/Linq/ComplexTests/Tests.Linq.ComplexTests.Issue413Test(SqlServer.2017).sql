@@ -5,7 +5,7 @@ CREATE TABLE [T1]
 (
 	[InstrumentId]         Int            NOT NULL,
 	[InstrumentCode]       NVarChar(4000)     NULL,
-	[CreateDate]           DateTime       NOT NULL,
+	[CreateDate]           DateTime2      NOT NULL,
 	[SourceInstrumentCode] NVarChar(4000)     NULL,
 
 	CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
