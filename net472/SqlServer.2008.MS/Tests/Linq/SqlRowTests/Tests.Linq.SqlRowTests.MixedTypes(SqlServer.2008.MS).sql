@@ -12,7 +12,7 @@ IF (OBJECT_ID(N'[Mixed]', N'U') IS NULL)
 	(
 		[Int]    Int            NOT NULL,
 		[Str]    NVarChar(4000)     NULL,
-		[Date]   DateTime       NOT NULL,
+		[Date]   DateTime2      NOT NULL,
 		[Double] Float          NOT NULL,
 		[Bool]   Bit            NOT NULL
 	)
@@ -29,8 +29,8 @@ INSERT INTO [Mixed]
 	[Bool]
 )
 VALUES
-(1,N'One',CAST('2001-01-01T00:00:00.000' AS DATETIME),1,1),
-(2,N'Two',CAST('2002-02-02T00:00:00.000' AS DATETIME),2,0)
+(1,N'One',CAST('2001-01-01T00:00:00.0000000' AS DATETIME2),1,1),
+(2,N'Two',CAST('2002-02-02T00:00:00.0000000' AS DATETIME2),2,0)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
