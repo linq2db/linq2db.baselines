@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
 		[EnumWithNullDeclarative] VarChar(50)       NULL,
 		[BoolValue]               VarChar(1)    NOT NULL,
 		[AnotherBoolValue]        VarChar(1)    NOT NULL,
-		[DateTimeNullable]        DateTime          NULL,
+		[DateTimeNullable]        DateTime2         NULL,
 
 		CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
 	)
@@ -42,14 +42,14 @@ INSERT INTO [ValueConversion]
 )
 VALUES
 (1,N'{"some":"str1"}',N'[{"Value":"Value1"}]',N'Value1','Value1','Value1','Value1','Y','F',NULL),
-(2,N'{"some":"str2"}',N'[{"Value":"Value2"}]',N'Value2','Value2','Value2','Value2','N','F',DATETIMEFROMPARTS(2020, 2, 29, 0, 0, 0, 0)),
-(3,N'{"some":"str3"}',N'[{"Value":"Value3"}]',N'Value3','Value3','Value3','Value3','N','F',DATETIMEFROMPARTS(2020, 2, 29, 0, 0, 0, 0)),
+(2,N'{"some":"str2"}',N'[{"Value":"Value2"}]',N'Value2','Value2','Value2','Value2','N','F',DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)),
+(3,N'{"some":"str3"}',N'[{"Value":"Value3"}]',N'Value3','Value3','Value3','Value3','N','F',DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)),
 (4,N'{"some":"str4"}',N'[{"Value":"Value4"}]',N'Value1',NULL,NULL,NULL,'N','F',NULL),
-(5,N'{"some":"str5"}',N'[{"Value":"Value5"}]',N'Value2','Value1','Value1','Value1','Y','F',DATETIMEFROMPARTS(2020, 2, 29, 0, 0, 0, 0)),
-(6,N'{"some":"str6"}',N'[{"Value":"Value6"}]',N'Value3','Value2','Value2','Value2','N','F',DATETIMEFROMPARTS(2020, 2, 29, 0, 0, 0, 0)),
+(5,N'{"some":"str5"}',N'[{"Value":"Value5"}]',N'Value2','Value1','Value1','Value1','Y','F',DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)),
+(6,N'{"some":"str6"}',N'[{"Value":"Value6"}]',N'Value3','Value2','Value2','Value2','N','F',DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)),
 (7,N'{"some":"str7"}',N'[{"Value":"Value7"}]',N'Value1','Value3','Value3','Value3','N','F',NULL),
-(8,N'{"some":"str8"}',N'[{"Value":"Value8"}]',N'Value2',NULL,NULL,NULL,'N','F',DATETIMEFROMPARTS(2020, 2, 29, 0, 0, 0, 0)),
-(9,N'{"some":"str9"}',N'[{"Value":"Value9"}]',N'Value3','Value1','Value1','Value1','Y','F',DATETIMEFROMPARTS(2020, 2, 29, 0, 0, 0, 0)),
+(8,N'{"some":"str8"}',N'[{"Value":"Value8"}]',N'Value2',NULL,NULL,NULL,'N','F',DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)),
+(9,N'{"some":"str9"}',N'[{"Value":"Value9"}]',N'Value3','Value1','Value1','Value1','Y','F',DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)),
 (10,NULL,NULL,N'Value1','Value2','Value2','Value2','N','F',NULL)
 
 BeforeExecute

@@ -577,7 +577,7 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p DateTime2
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
@@ -603,7 +603,7 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p DateTime2
+DECLARE @p DateTime
 SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 7)
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p

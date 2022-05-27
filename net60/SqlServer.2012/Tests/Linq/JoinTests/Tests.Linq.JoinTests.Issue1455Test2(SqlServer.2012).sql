@@ -5,7 +5,7 @@ CREATE TABLE [Alert]
 (
 	[AlertKey]     NVarChar(4000)     NULL,
 	[AlertCode]    NVarChar(4000)     NULL,
-	[CreationDate] DateTime           NULL
+	[CreationDate] DateTime2          NULL
 )
 
 BeforeExecute
@@ -13,10 +13,10 @@ BeforeExecute
 
 CREATE TABLE [AuditAlert]
 (
-	[CreationDate]    DateTime           NULL,
+	[CreationDate]    DateTime2          NULL,
 	[AlertCode]       NVarChar(4000)     NULL,
 	[AlertKey]        NVarChar(4000)     NULL,
-	[TransactionDate] DateTime           NULL
+	[TransactionDate] DateTime2          NULL
 )
 
 BeforeExecute
@@ -52,7 +52,7 @@ CREATE TABLE [Flat]
 	[DealId]               Int                NULL,
 	[ParcelId]             Int                NULL,
 	[CounterParty]         NVarChar(4000)     NULL,
-	[TransactionDate]      DateTime           NULL
+	[TransactionDate]      DateTime2          NULL
 )
 
 BeforeExecute
