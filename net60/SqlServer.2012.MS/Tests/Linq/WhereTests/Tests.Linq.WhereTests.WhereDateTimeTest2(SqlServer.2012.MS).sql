@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @DateTimeValue DateTime2
-SET     @DateTimeValue = '2009-01-01T00:00:00.0000000'
+SET     @DateTimeValue = DATETIME2FROMPARTS(2009, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
 	[_].[ID],

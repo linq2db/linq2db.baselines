@@ -10,7 +10,7 @@ CREATE TABLE [dbo].[Attachment]
 	[ContentType] NVarChar(4000)  NOT NULL,
 	[Url]         NVarChar(4000)  NOT NULL,
 	[Status]      Int             NOT NULL,
-	[CreateTime]  DateTime        NOT NULL,
+	[CreateTime]  DateTime2       NOT NULL,
 
 	CONSTRAINT [PK_Attachment] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -30,9 +30,9 @@ CREATE TABLE [dbo].[BranchInfo]
 	[BrandContacts]    NVarChar(4000)  NOT NULL,
 	[BrandPhone]       NVarChar(4000)  NOT NULL,
 	[Status]           Int             NOT NULL,
-	[CreateTime]       DateTime        NOT NULL,
+	[CreateTime]       DateTime2       NOT NULL,
 	[CreateUser]       NVarChar(4000)  NOT NULL,
-	[LastUpdateTime]   DateTime        NOT NULL,
+	[LastUpdateTime]   DateTime2       NOT NULL,
 	[LastUpdateUser]   NVarChar(4000)  NOT NULL,
 	[BusinessHours]    NVarChar(4000)  NOT NULL,
 	[PointX]           Decimal         NOT NULL,

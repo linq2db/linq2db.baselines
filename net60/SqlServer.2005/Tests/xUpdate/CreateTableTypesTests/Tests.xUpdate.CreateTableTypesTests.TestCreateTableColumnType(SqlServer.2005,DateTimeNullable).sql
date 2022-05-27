@@ -30,7 +30,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @DateTimeNullable DateTime
-SET     @DateTimeNullable = '2018-11-25T01:02:03'
+SET     @DateTimeNullable = CAST('2018-11-25T01:02:03.000' AS DATETIME)
 
 INSERT INTO [CreateTableTypes]
 (

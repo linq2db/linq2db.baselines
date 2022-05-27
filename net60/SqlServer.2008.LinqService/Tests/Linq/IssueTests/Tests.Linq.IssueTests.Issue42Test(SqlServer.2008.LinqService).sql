@@ -21,8 +21,8 @@ BeforeExecute
 -- SqlServer.2008
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue DateTime2
-SET     @DateTimeValue = '2001-01-11T01:11:21.1000000'
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = CAST('2001-01-11T01:11:21.1000000' AS DATETIME2)
 DECLARE @DateTimeValue2 DateTime2
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Bit -- Boolean
@@ -80,8 +80,8 @@ BeforeExecute
 -- SqlServer.2008
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue DateTime2
-SET     @DateTimeValue = '2001-01-11T01:11:21.1000000'
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = CAST('2001-01-11T01:11:21.1000000' AS DATETIME2)
 DECLARE @DateTimeValue2 DateTime2
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Bit -- Boolean

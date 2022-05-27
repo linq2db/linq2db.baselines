@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN ('2001-01-11T01:11:21.100')
+	[t].[DateTimeValue] IN (DATETIMEFROMPARTS(2001, 1, 11, 1, 11, 21, 100))
 

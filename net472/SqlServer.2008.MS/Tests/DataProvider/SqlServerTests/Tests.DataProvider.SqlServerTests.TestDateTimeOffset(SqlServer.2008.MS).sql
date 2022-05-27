@@ -41,28 +41,28 @@ SELECT Cast(NULL as datetimeoffset)
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = CAST('2012-12-12T12:12:12.0120000+05:00' AS DATETIMEOFFSET)
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = CAST('2012-12-12T12:12:12.0120000+05:00' AS DATETIMEOFFSET)
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = CAST('2012-12-12T12:12:12.0120000+05:00' AS DATETIMEOFFSET)
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = CAST('2012-12-12T12:12:12.0120000+05:00' AS DATETIMEOFFSET)
 
 SELECT @p
 

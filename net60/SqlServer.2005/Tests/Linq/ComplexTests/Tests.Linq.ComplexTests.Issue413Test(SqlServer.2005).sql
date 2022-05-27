@@ -126,7 +126,7 @@ SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4000) -- String
 SET     @InstrumentCode = N'aaa1'
 DECLARE @CreateDate DateTime
-SET     @CreateDate = '2020-02-28T17:54:55.123'
+SET     @CreateDate = CAST('2020-02-28T17:54:55.123' AS DATETIME)
 DECLARE @SourceInstrumentCode NVarChar(4000) -- String
 SET     @SourceInstrumentCode = N'NOTNULL'
 
@@ -152,7 +152,7 @@ SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4000) -- String
 SET     @InstrumentCode = N'aaa2'
 DECLARE @CreateDate DateTime
-SET     @CreateDate = '2020-02-28T17:54:55.123'
+SET     @CreateDate = CAST('2020-02-28T17:54:55.123' AS DATETIME)
 DECLARE @SourceInstrumentCode NVarChar(4000) -- String
 SET     @SourceInstrumentCode = NULL
 
@@ -176,7 +176,7 @@ BeforeExecute
 DECLARE @cond_1 NVarChar(4000) -- String
 SET     @cond_1 = N'aaa%'
 DECLARE @uptoDate DateTime
-SET     @uptoDate = '2020-02-29T17:54:55.123'
+SET     @uptoDate = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 
 SELECT
 	[t4].[SourceInstrumentCode]

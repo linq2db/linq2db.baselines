@@ -43,7 +43,7 @@ CREATE TABLE [billing_TempReading]
 	[id]               Int           NOT NULL IDENTITY,
 	[DevSerNum]        NVarChar(50)  NOT NULL,
 	[devid]            NVarChar(50)      NULL,
-	[tsdevice]         DateTime      NOT NULL,
+	[tsdevice]         DateTime2     NOT NULL,
 	[value]            Decimal       NOT NULL,
 	[Devtypeid]        Int               NULL,
 	[DevReadingTypeId] Int               NULL,

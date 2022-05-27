@@ -604,21 +604,21 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @p DateTime
-SET     @p = '2012-12-12T12:12:12'
+SET     @p = CAST('2012-12-12T12:12:12.000' AS DATETIME)
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @p DateTime
-SET     @p = '2012-12-12T12:12:12'
+SET     @p = CAST('2012-12-12T12:12:12.000' AS DATETIME)
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @p DateTime
-SET     @p = '2012-12-12T12:12:12'
+SET     @p = CAST('2012-12-12T12:12:12.000' AS DATETIME)
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
@@ -656,21 +656,21 @@ SELECT smalldatetimeDataType FROM [AllTypes] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @p SmallDateTime -- DateTime
-SET     @p = '2012-12-12T12:12:00'
+SET     @p = CAST('2012-12-12T12:12:00.000' AS DATETIME)
 
 SELECT ID FROM [AllTypes] WHERE smalldatetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @p DateTime
-SET     @p = '2012-12-12T12:12:00'
+SET     @p = CAST('2012-12-12T12:12:00.000' AS DATETIME)
 
 SELECT ID FROM [AllTypes] WHERE smalldatetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @p DateTime
-SET     @p = '2012-12-12T12:12:00'
+SET     @p = CAST('2012-12-12T12:12:00.000' AS DATETIME)
 
 SELECT ID FROM [AllTypes] WHERE smalldatetimeDataType = @p
 

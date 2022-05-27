@@ -38,8 +38,8 @@ IF (OBJECT_ID(N'[ToStringConvertibleTypes]', N'U') IS NULL)
 		[NullableProp_uint]     BigInt               NULL,
 		[NullableProp_ulong]    Decimal              NULL,
 		[NullableProp_Guid]     UniqueIdentifier     NULL,
-		[Prop_DateTime]         DateTime         NOT NULL,
-		[NullableProp_DateTime] DateTime             NULL
+		[Prop_DateTime]         DateTime2        NOT NULL,
+		[NullableProp_DateTime] DateTime2            NULL
 	)
 
 BeforeExecute
@@ -101,9 +101,9 @@ SET     @NullableProp_ulong = 4294967295
 DECLARE @NullableProp_Guid UniqueIdentifier -- Guid
 SET     @NullableProp_Guid = '00000000-0000-0000-0000-000000000000'
 DECLARE @Prop_DateTime DateTime2
-SET     @Prop_DateTime = '2022-03-25T13:40:33.0000000'
+SET     @Prop_DateTime = DATETIME2FROMPARTS(2022, 3, 25, 13, 40, 33, 0, 7)
 DECLARE @NullableProp_DateTime DateTime2
-SET     @NullableProp_DateTime = '2022-03-25T13:40:33.0000000'
+SET     @NullableProp_DateTime = DATETIME2FROMPARTS(2022, 3, 25, 13, 40, 33, 0, 7)
 
 INSERT INTO [ToStringConvertibleTypes]
 (

@@ -12,7 +12,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @DateTime DateTime
-SET     @DateTime = '2000-01-01T00:00:00'
+SET     @DateTime = CAST('2000-01-01T00:00:00.000' AS DATETIME)
 
 INSERT INTO [CreateTableTypes]
 (
@@ -30,7 +30,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @DateTime DateTime
-SET     @DateTime = '2018-11-24T01:02:03'
+SET     @DateTime = CAST('2018-11-24T01:02:03.000' AS DATETIME)
 
 INSERT INTO [CreateTableTypes]
 (

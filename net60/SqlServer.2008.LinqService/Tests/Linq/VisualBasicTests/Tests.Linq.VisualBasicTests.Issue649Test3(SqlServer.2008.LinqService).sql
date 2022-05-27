@@ -3,9 +3,9 @@
 
 CREATE TABLE [activity649]
 (
-	[activityid] Int       NOT NULL IDENTITY,
-	[personid]   Int       NOT NULL,
-	[added]      DateTime  NOT NULL,
+	[activityid] Int        NOT NULL IDENTITY,
+	[personid]   Int        NOT NULL,
+	[added]      DateTime2  NOT NULL,
 
 	CONSTRAINT [PK_activity649] PRIMARY KEY CLUSTERED ([activityid])
 )
@@ -24,7 +24,7 @@ CREATE TABLE [person649]
 BeforeExecute
 -- SqlServer.2008
 DECLARE @added DateTime2
-SET     @added = '2017-01-01T00:00:00.0000000'
+SET     @added = CAST('2017-01-01T00:00:00.0000000' AS DATETIME2)
 
 SELECT
 	[a_Person].[personid],

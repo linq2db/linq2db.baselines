@@ -12,7 +12,7 @@ CREATE TABLE [ValueConversion]
 	[EnumWithNullDeclarative] VarChar(50)       NULL,
 	[BoolValue]               VarChar(1)    NOT NULL,
 	[AnotherBoolValue]        VarChar(1)    NOT NULL,
-	[DateTimeNullable]        DateTime          NULL,
+	[DateTimeNullable]        DateTime2         NULL,
 
 	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
 )

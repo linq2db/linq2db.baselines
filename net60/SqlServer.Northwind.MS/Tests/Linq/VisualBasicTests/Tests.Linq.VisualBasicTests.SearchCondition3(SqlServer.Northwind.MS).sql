@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @OrderDate DateTime2
-SET     @OrderDate = '1997-11-14T00:00:00.0000000'
+SET     @OrderDate = DATETIME2FROMPARTS(1997, 11, 14, 0, 0, 0, 0, 7)
 
 SELECT
 	[order_1].[OrderID]
@@ -13,7 +13,7 @@ WHERE
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @OrderDate DateTime2
-SET     @OrderDate = '1997-11-14T00:00:00.0000000'
+SET     @OrderDate = DATETIME2FROMPARTS(1997, 11, 14, 0, 0, 0, 0, 7)
 
 SELECT
 	[order_1].[OrderID]

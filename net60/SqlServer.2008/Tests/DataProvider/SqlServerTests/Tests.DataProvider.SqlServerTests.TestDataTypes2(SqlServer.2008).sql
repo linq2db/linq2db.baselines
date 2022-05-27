@@ -32,21 +32,21 @@ SELECT dateDataType FROM [AllTypes2] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p Date
-SET     @p = '2012-12-12T00:00:00.0000000'
+SET     @p = CAST('2012-12-12T00:00:00.0000000' AS DATETIME2)
 
 SELECT ID FROM [AllTypes2] WHERE dateDataType = @p
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T00:00:00.0000000'
+SET     @p = CAST('2012-12-12T00:00:00.0000000' AS DATETIME2)
 
 SELECT ID FROM [AllTypes2] WHERE dateDataType = @p
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T00:00:00.0000000'
+SET     @p = CAST('2012-12-12T00:00:00.0000000' AS DATETIME2)
 
 SELECT ID FROM [AllTypes2] WHERE dateDataType = @p
 
@@ -84,21 +84,21 @@ SELECT datetimeoffsetDataType FROM [AllTypes2] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = CAST('2012-12-12T12:12:12.0120000+05:00' AS DATETIMEOFFSET)
 
 SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = CAST('2012-12-12T12:12:12.0120000+05:00' AS DATETIMEOFFSET)
 
 SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p DateTimeOffset
-SET     @p = '2012-12-12 12:12:12.0120000 +05:00'
+SET     @p = CAST('2012-12-12T12:12:12.0120000+05:00' AS DATETIMEOFFSET)
 
 SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p
 
@@ -136,21 +136,21 @@ SELECT datetime2DataType FROM [AllTypes2] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:12.0120000'
+SET     @p = CAST('2012-12-12T12:12:12.0120000' AS DATETIME2)
 
 SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:12.0120000'
+SET     @p = CAST('2012-12-12T12:12:12.0120000' AS DATETIME2)
 
 SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:12.0120000'
+SET     @p = CAST('2012-12-12T12:12:12.0120000' AS DATETIME2)
 
 SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p
 
@@ -188,21 +188,21 @@ SELECT timeDataType FROM [AllTypes2] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p Time
-SET     @p = '12:12:12.0120000'
+SET     @p = CAST('12:12:12.0120000' AS TIME)
 
 SELECT ID FROM [AllTypes2] WHERE timeDataType = @p
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p Time
-SET     @p = '12:12:12.0120000'
+SET     @p = CAST('12:12:12.0120000' AS TIME)
 
 SELECT ID FROM [AllTypes2] WHERE timeDataType = @p
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @p Time
-SET     @p = '12:12:12.0120000'
+SET     @p = CAST('12:12:12.0120000' AS TIME)
 
 SELECT ID FROM [AllTypes2] WHERE timeDataType = @p
 

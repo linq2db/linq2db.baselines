@@ -11,8 +11,8 @@ BeforeExecute
 -- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 0
-DECLARE @Value_1 DateTime2
-SET     @Value_1 = '2020-02-29T17:54:55.1230000'
+DECLARE @Value_1 DateTime
+SET     @Value_1 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 
 INSERT INTO [DataClass]
 (

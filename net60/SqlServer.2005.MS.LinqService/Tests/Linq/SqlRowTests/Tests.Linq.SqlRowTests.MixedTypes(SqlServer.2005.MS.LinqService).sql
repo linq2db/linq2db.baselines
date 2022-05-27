@@ -24,7 +24,7 @@ SET     @Int_1 = 1
 DECLARE @Str NVarChar(4000) -- String
 SET     @Str = N'One'
 DECLARE @Date_1 DateTime
-SET     @Date_1 = '2001-01-01T00:00:00'
+SET     @Date_1 = CAST('2001-01-01T00:00:00.000' AS DATETIME)
 DECLARE @Double_1 Float -- Double
 SET     @Double_1 = 1
 DECLARE @Bool Bit -- Boolean
@@ -54,7 +54,7 @@ SET     @Int_1 = 2
 DECLARE @Str NVarChar(4000) -- String
 SET     @Str = N'Two'
 DECLARE @Date_1 DateTime
-SET     @Date_1 = '2002-02-02T00:00:00'
+SET     @Date_1 = CAST('2002-02-02T00:00:00.000' AS DATETIME)
 DECLARE @Double_1 Float -- Double
 SET     @Double_1 = 2
 DECLARE @Bool Bit -- Boolean

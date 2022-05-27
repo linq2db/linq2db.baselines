@@ -577,7 +577,7 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @p DateTime2
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
@@ -603,22 +603,22 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:12.0000000'
+DECLARE @p DateTime
+SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 7)
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:12.0000000'
+SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 7)
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:12.0000000'
+SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 7)
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
@@ -656,21 +656,21 @@ SELECT smalldatetimeDataType FROM [AllTypes] WHERE ID = 2
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p SmallDateTime -- DateTime
-SET     @p = '2012-12-12T12:12:00.0000000'
+SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 0, 0, 7)
 
 SELECT ID FROM [AllTypes] WHERE smalldatetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:00.0000000'
+SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 0, 0, 7)
 
 SELECT ID FROM [AllTypes] WHERE smalldatetimeDataType = @p
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p DateTime2
-SET     @p = '2012-12-12T12:12:00.0000000'
+SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 0, 0, 7)
 
 SELECT ID FROM [AllTypes] WHERE smalldatetimeDataType = @p
 

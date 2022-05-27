@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @DateTimeValue2 DateTime
-SET     @DateTimeValue2 = '2009-09-24T09:19:29.090'
+SET     @DateTimeValue2 = CAST('2009-09-24T09:19:29.090' AS DATETIME)
 
 SELECT
 	Count(*)

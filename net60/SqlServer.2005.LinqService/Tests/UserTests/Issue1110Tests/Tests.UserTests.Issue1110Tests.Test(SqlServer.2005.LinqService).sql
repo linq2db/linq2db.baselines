@@ -14,7 +14,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @TimeStamp_1 DateTime
-SET     @TimeStamp_1 = '2020-02-29T17:54:55.123'
+SET     @TimeStamp_1 = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 
 INSERT INTO [Issue1110TB]
 (

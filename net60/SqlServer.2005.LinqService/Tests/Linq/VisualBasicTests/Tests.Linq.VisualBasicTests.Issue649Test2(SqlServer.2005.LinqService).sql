@@ -24,7 +24,7 @@ CREATE TABLE [person649]
 BeforeExecute
 -- SqlServer.2005
 DECLARE @added DateTime
-SET     @added = '2017-01-01T00:00:00'
+SET     @added = CAST('2017-01-01T00:00:00.000' AS DATETIME)
 
 SELECT
 	[a_Person].[personid],

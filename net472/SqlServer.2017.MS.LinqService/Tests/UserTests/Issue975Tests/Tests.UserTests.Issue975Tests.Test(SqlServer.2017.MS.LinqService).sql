@@ -4,8 +4,8 @@
 CREATE TABLE [Tasks]
 (
 	[Id]          Int               NOT NULL IDENTITY,
-	[DateBegin]   DateTime          NOT NULL,
-	[DateEnd]     DateTime              NULL,
+	[DateBegin]   DateTime2         NOT NULL,
+	[DateEnd]     DateTime2             NULL,
 	[DirectionId] UniqueIdentifier  NOT NULL,
 	[Text]        NVarChar(4000)    NOT NULL,
 	[TargetName]  NVarChar(4000)    NOT NULL,
@@ -20,13 +20,13 @@ BeforeExecute
 
 CREATE TABLE [TaskStages]
 (
-	[Id]           Int       NOT NULL IDENTITY,
-	[TaskId]       Int       NOT NULL,
-	[StageId]      Int       NOT NULL,
-	[SwitchDate]   DateTime  NOT NULL,
-	[Actual]       Bit       NOT NULL,
-	[WorkReportId] Int           NULL,
-	[UserId]       Int           NULL,
+	[Id]           Int        NOT NULL IDENTITY,
+	[TaskId]       Int        NOT NULL,
+	[StageId]      Int        NOT NULL,
+	[SwitchDate]   DateTime2  NOT NULL,
+	[Actual]       Bit        NOT NULL,
+	[WorkReportId] Int            NULL,
+	[UserId]       Int            NULL,
 
 	CONSTRAINT [PK_TaskStages] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -38,8 +38,8 @@ CREATE TABLE [Assignments]
 (
 	[Id]          Int               NOT NULL IDENTITY,
 	[EmployeeId]  Int               NOT NULL,
-	[DateAssign]  DateTime          NOT NULL,
-	[DateRevoke]  DateTime              NULL,
+	[DateAssign]  DateTime2         NOT NULL,
+	[DateRevoke]  DateTime2             NULL,
 	[DirectionId] UniqueIdentifier  NOT NULL,
 	[TargetName]  NVarChar(4000)    NOT NULL,
 	[TargetId]    Int               NOT NULL,

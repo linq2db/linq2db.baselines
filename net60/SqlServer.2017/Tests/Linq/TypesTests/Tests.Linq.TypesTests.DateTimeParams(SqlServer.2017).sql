@@ -2,8 +2,8 @@
 -- SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @dateTime DateTime2
-SET     @dateTime = '1992-01-11T01:11:21.1000000'
+DECLARE @dateTime DateTime
+SET     @dateTime = DATETIME2FROMPARTS(1992, 1, 11, 1, 11, 21, 1000000, 7)
 
 SELECT TOP (@take)
 	[t].[DateTimeValue]
@@ -16,8 +16,8 @@ BeforeExecute
 -- SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @dateTime DateTime2
-SET     @dateTime = '1993-01-11T01:11:21.1000000'
+DECLARE @dateTime DateTime
+SET     @dateTime = DATETIME2FROMPARTS(1993, 1, 11, 1, 11, 21, 1000000, 7)
 
 SELECT TOP (@take)
 	[t].[DateTimeValue]

@@ -3,8 +3,8 @@
 
 CREATE TABLE [CreateTableTypes]
 (
-	[Id]       Int      NOT NULL,
-	[DateTime] DateTime NOT NULL
+	[Id]       Int       NOT NULL,
+	[DateTime] DateTime2 NOT NULL
 )
 
 BeforeExecute
@@ -12,7 +12,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @DateTime DateTime2
-SET     @DateTime = '2000-01-01T00:00:00.0000000'
+SET     @DateTime = DATETIME2FROMPARTS(2000, 1, 1, 0, 0, 0, 0, 7)
 
 INSERT INTO [CreateTableTypes]
 (
@@ -30,7 +30,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @DateTime DateTime2
-SET     @DateTime = '2018-11-24T01:02:03.0000000'
+SET     @DateTime = DATETIME2FROMPARTS(2018, 11, 24, 1, 2, 3, 0, 7)
 
 INSERT INTO [CreateTableTypes]
 (

@@ -44,10 +44,10 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue DateTime2
-SET     @DateTimeValue = '2001-01-11T01:11:21.1000000'
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = DATETIME2FROMPARTS(2001, 1, 11, 1, 11, 21, 1000000, 7)
 DECLARE @DateTimeValue2 DateTime2
-SET     @DateTimeValue2 = '2010-12-14T05:00:07.4250141'
+SET     @DateTimeValue2 = DATETIME2FROMPARTS(2010, 12, 14, 5, 0, 7, 4250141, 7)
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = 1
 DECLARE @GuidValue UniqueIdentifier -- Guid

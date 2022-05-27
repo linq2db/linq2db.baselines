@@ -21,8 +21,8 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue DateTime2
-SET     @DateTimeValue = '2001-01-11T01:11:21.1000000'
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = DATETIME2FROMPARTS(2001, 1, 11, 1, 11, 21, 1000000, 7)
 DECLARE @DateTimeValue2 DateTime2
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Bit -- Boolean
@@ -80,8 +80,8 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue DateTime2
-SET     @DateTimeValue = '2001-01-11T01:11:21.1000000'
+DECLARE @DateTimeValue DateTime
+SET     @DateTimeValue = DATETIME2FROMPARTS(2001, 1, 11, 1, 11, 21, 1000000, 7)
 DECLARE @DateTimeValue2 DateTime2
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Bit -- Boolean

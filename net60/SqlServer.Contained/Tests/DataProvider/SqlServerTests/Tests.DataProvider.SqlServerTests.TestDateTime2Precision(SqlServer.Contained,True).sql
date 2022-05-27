@@ -38,8 +38,8 @@ INSERT INTO [DateTime2Table]
 	[DT7]
 )
 VALUES
-(1,'2012-12-12T12:12:12.1231234','2012-12-12T12:12:12','2012-12-12T12:12:12.1','2012-12-12T12:12:12.12','2012-12-12T12:12:12.123','2012-12-12T12:12:12.1231','2012-12-12T12:12:12.12312','2012-12-12T12:12:12.123123','2012-12-12T12:12:12.1231234'),
-(2,'2012-12-12T12:12:12.0001234','2012-12-12T12:12:12','2012-12-12T12:12:12.0','2012-12-12T12:12:12.00','2012-12-12T12:12:12.000','2012-12-12T12:12:12.0001','2012-12-12T12:12:12.00012','2012-12-12T12:12:12.000123','2012-12-12T12:12:12.0001234')
+(1,DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231234, 7),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 0),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1, 1),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 12, 2),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 123, 3),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231, 4),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 12312, 5),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 123123, 6),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231234, 7)),
+(2,DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1234, 7),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 0),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 1),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 2),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 3),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1, 4),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 12, 5),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 123, 6),DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1234, 7))
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -49,7 +49,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DTD] = '2012-12-12T12:12:12.1231234'
+	[_].[DTD] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231234, 7)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -59,7 +59,7 @@ SELECT
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT0] = '2012-12-12T12:12:12'
+	[_].[DT0] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 0)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -69,7 +69,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT1] = '2012-12-12T12:12:12.1'
+	[_].[DT1] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1, 1)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -79,7 +79,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT2] = '2012-12-12T12:12:12.12'
+	[_].[DT2] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 12, 2)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -89,7 +89,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT3] = '2012-12-12T12:12:12.123'
+	[_].[DT3] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 123, 3)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -99,7 +99,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT4] = '2012-12-12T12:12:12.1231'
+	[_].[DT4] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231, 4)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -109,7 +109,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT5] = '2012-12-12T12:12:12.12312'
+	[_].[DT5] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 12312, 5)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -119,7 +119,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT6] = '2012-12-12T12:12:12.123123'
+	[_].[DT6] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 123123, 6)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -129,7 +129,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT7] = '2012-12-12T12:12:12.1231234'
+	[_].[DT7] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231234, 7)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -139,7 +139,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DTD] = '2012-12-12T12:12:12.0001234'
+	[_].[DTD] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1234, 7)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -149,7 +149,7 @@ SELECT
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT0] = '2012-12-12T12:12:12'
+	[_].[DT0] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 0)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -159,7 +159,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT1] = '2012-12-12T12:12:12.0'
+	[_].[DT1] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 1)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -169,7 +169,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT2] = '2012-12-12T12:12:12.00'
+	[_].[DT2] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 2)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -179,7 +179,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT3] = '2012-12-12T12:12:12.000'
+	[_].[DT3] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 3)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -189,7 +189,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT4] = '2012-12-12T12:12:12.0001'
+	[_].[DT4] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1, 4)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -199,7 +199,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT5] = '2012-12-12T12:12:12.00012'
+	[_].[DT5] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 12, 5)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -209,7 +209,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT6] = '2012-12-12T12:12:12.000123'
+	[_].[DT6] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 123, 6)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -219,7 +219,7 @@ SELECT TOP (2)
 FROM
 	[DateTime2Table] [_]
 WHERE
-	[_].[DT7] = '2012-12-12T12:12:12.0001234'
+	[_].[DT7] = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1234, 7)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
