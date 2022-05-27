@@ -3,9 +3,9 @@
 
 CREATE TABLE [Issue1799Table1]
 (
-	[EventUser] Int      NOT NULL,
-	[ProcessID] Int      NOT NULL,
-	[EventTime] DateTime NOT NULL
+	[EventUser] Int       NOT NULL,
+	[ProcessID] Int       NOT NULL,
+	[EventTime] DateTime2 NOT NULL
 )
 
 BeforeExecute

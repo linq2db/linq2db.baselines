@@ -3,8 +3,8 @@
 
 CREATE TABLE [Issue1110TB]
 (
-	[Id]        Int      NOT NULL,
-	[TimeStamp] DateTime NOT NULL,
+	[Id]        Int       NOT NULL,
+	[TimeStamp] DateTime2 NOT NULL,
 
 	CONSTRAINT [PK_Issue1110TB] PRIMARY KEY CLUSTERED ([Id])
 )

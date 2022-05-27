@@ -9,8 +9,8 @@ CREATE TABLE [NC_CODE]
 	[NC_CODE]            NVarChar(4000)     NULL,
 	[DESCRIPTION]        NVarChar(4000)     NULL,
 	[STATUS_BO]          NVarChar(4000)     NULL,
-	[CREATED_DATE_TIME]  DateTime           NULL,
-	[MODIFIED_DATE_TIME] DateTime           NULL,
+	[CREATED_DATE_TIME]  DateTime2          NULL,
+	[MODIFIED_DATE_TIME] DateTime2          NULL,
 	[NC_CATEGORY]        NVarChar(4000)     NULL,
 	[DPMO_CATEGORY_BO]   NVarChar(4000)     NULL
 )
