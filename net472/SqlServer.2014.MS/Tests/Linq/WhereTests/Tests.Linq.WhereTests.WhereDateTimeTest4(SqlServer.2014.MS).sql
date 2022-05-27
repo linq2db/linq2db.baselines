@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @DateTimeValue DateTime2
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = DATETIME2FROMPARTS(2009, 9, 27, 0, 0, 0, 0, 7)
 
 SELECT

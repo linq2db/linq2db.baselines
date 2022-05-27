@@ -3,9 +3,9 @@
 
 CREATE TABLE [activity649]
 (
-	[activityid] Int       NOT NULL IDENTITY,
-	[personid]   Int       NOT NULL,
-	[added]      DateTime  NOT NULL,
+	[activityid] Int        NOT NULL IDENTITY,
+	[personid]   Int        NOT NULL,
+	[added]      DateTime2  NOT NULL,
 
 	CONSTRAINT [PK_activity649] PRIMARY KEY CLUSTERED ([activityid])
 )
