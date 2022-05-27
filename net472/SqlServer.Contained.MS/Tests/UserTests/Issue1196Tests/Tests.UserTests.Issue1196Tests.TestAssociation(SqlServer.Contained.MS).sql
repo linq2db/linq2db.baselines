@@ -23,7 +23,7 @@ CREATE TABLE [Assignments]
 	[Id]          Int               NOT NULL IDENTITY,
 	[DirectionId] UniqueIdentifier  NOT NULL,
 	[TargetId]    Int                   NULL,
-	[DateRevoke]  DateTime              NULL,
+	[DateRevoke]  DateTime2             NULL,
 
 	CONSTRAINT [PK_Assignments] PRIMARY KEY CLUSTERED ([Id])
 )
