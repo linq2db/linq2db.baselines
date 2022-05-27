@@ -12,7 +12,7 @@ IF (OBJECT_ID(N'[Mixed]', N'U') IS NULL)
 	(
 		[Int]    Int            NOT NULL,
 		[Str]    NVarChar(4000)     NULL,
-		[Date]   DateTime       NOT NULL,
+		[Date]   DateTime2      NOT NULL,
 		[Double] Float          NOT NULL,
 		[Bool]   Bit            NOT NULL
 	)
@@ -29,8 +29,8 @@ INSERT INTO [Mixed]
 	[Bool]
 )
 VALUES
-(1,N'One',DATETIMEFROMPARTS(2001, 1, 1, 0, 0, 0, 0),1,1),
-(2,N'Two',DATETIMEFROMPARTS(2002, 2, 2, 0, 0, 0, 0),2,0)
+(1,N'One',DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 7),1,1),
+(2,N'Two',DATETIME2FROMPARTS(2002, 2, 2, 0, 0, 0, 0, 7),2,0)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

@@ -11,7 +11,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 	[Field1]    NVarChar(50)       NULL,
 	[ID]        Int            NOT NULL,
 	[Field2]    NVarChar(4000)     NULL,
-	[CreatedOn] DateTime           NULL
+	[CreatedOn] DateTime2          NULL
 )
 
 BeforeExecute

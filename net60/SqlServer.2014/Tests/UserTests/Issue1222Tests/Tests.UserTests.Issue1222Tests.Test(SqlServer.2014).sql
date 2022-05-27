@@ -12,9 +12,9 @@ CREATE TABLE [stLinks]
 	[inIdMeasure]   Int                 NULL,
 	[inIdUnit]      Int                 NULL,
 	[State]         Int                 NULL,
-	[dtModified]    DateTime        NOT NULL,
+	[dtModified]    DateTime2       NOT NULL,
 	[inIdOrgOwner]  Int                 NULL,
-	[dtSynchDate]   DateTime            NULL,
+	[dtSynchDate]   DateTime2           NULL,
 	[stGUID]        NVarChar(4000)  NOT NULL,
 
 	CONSTRAINT [PK_stLinks] PRIMARY KEY CLUSTERED ([inId])
