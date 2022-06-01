@@ -1,0 +1,74 @@
+﻿BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+CREATE SEQUENCE SEQ_A START WITH 1 MINVALUE 0
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+
+CREATE TABLE "TABLE_A"(
+	"COLUMN_A" NUMBER(20, 0) NOT NULL,
+	"COLUMN_B" NUMBER(6, 0) NOT NULL,
+	"COLUMN_C" NUMBER(6, 0) NOT NULL,
+	CONSTRAINT "PK_TABLE_A" PRIMARY KEY("COLUMN_A", "COLUMN_B", "COLUMN_C")
+)
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @COLUMNA Int64
+SET     @COLUMNA = 1
+DECLARE @COLUMNB Int32
+SET     @COLUMNB = 2
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO TABLE_A
+(
+	COLUMN_A,
+	COLUMN_B,
+	COLUMN_C
+)
+VALUES
+(
+	:COLUMNA,
+	:COLUMNB,
+	SEQ_A.nextval
+)
+RETURNING 
+	COLUMN_C INTO :IDENTITY_PARAMETER
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @COLUMNA Int64
+SET     @COLUMNA = 1
+DECLARE @COLUMNB Int32
+SET     @COLUMNB = 2
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO TABLE_A
+(
+	COLUMN_A,
+	COLUMN_B,
+	COLUMN_C
+)
+VALUES
+(
+	:COLUMNA,
+	:COLUMNB,
+	SEQ_A.nextval
+)
+RETURNING 
+	COLUMN_C INTO :IDENTITY_PARAMETER
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+DROP SEQUENCE SEQ_A
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+DROP TABLE "TABLE_A"
+
