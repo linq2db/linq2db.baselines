@@ -12,9 +12,9 @@ CREATE TABLE "Issue1303"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Array_1 Blob -- Object
+DECLARE @Array_1 Raw(3) -- Binary
 SET     @Array_1 = HEXTORAW('010203')
-DECLARE @Binary_1 Blob -- Object
+DECLARE @Binary_1 Raw(2) -- Binary
 SET     @Binary_1 = HEXTORAW('0405')
 
 INSERT INTO "Issue1303"

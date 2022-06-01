@@ -6,7 +6,7 @@ SELECT USER FROM DUAL
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-select VERSION from PRODUCT_COMPONENT_VERSION where PRODUCT like 'PL/SQL%'
+SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -69,7 +69,7 @@ BeforeExecute
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-SELECT VERSION FROM PRODUCT_COMPONENT_VERSION WHERE PRODUCT LIKE 'PL/SQL%'
+SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

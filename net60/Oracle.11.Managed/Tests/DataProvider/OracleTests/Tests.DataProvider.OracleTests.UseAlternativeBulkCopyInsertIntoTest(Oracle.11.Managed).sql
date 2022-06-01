@@ -55,5 +55,12 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-DROP TABLE "UseAlternativeBulkCopy"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UseAlternativeBulkCopy"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

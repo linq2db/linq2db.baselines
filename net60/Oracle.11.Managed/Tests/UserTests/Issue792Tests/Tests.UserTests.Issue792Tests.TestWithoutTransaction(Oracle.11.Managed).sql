@@ -12,7 +12,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	user
+	sys_context('userenv', 'current_schema')
 FROM
 	"LinqDataTypes" t1
 WHERE
@@ -26,7 +26,7 @@ SELECT USER FROM DUAL
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-select VERSION from PRODUCT_COMPONENT_VERSION where PRODUCT like 'PL/SQL%'
+SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

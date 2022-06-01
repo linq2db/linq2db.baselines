@@ -20,7 +20,7 @@ DECLARE @BinaryGuid Blob -- Object
 SET     @BinaryGuid = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
 DECLARE @BlobValue Blob -- Object
 SET     @BlobValue = HEXTORAW('010203')
-DECLARE @RawValue Blob -- Object
+DECLARE @RawValue Raw(3) -- Binary
 SET     @RawValue = HEXTORAW('040506')
 
 INSERT INTO "Issue731Table"
