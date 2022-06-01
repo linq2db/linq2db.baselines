@@ -64,8 +64,8 @@ WHERE
 			[a_Parent].[ParentID] = 1 AND
 			[gc].[GrandChildID] IN (1001, 1002) AND
 			[GrandChild].[ParentID] = [gc].[ParentID] AND
-			[GrandChild].[ChildID] = [gc].[ChildID] AND
-			[GrandChild].[GrandChildID] = [gc].[GrandChildID]
+			([GrandChild].[ChildID] = [gc].[ChildID] OR [GrandChild].[ChildID] IS NULL AND [gc].[ChildID] IS NULL) AND
+			([GrandChild].[GrandChildID] = [gc].[GrandChildID] OR [GrandChild].[GrandChildID] IS NULL AND [gc].[GrandChildID] IS NULL)
 	)
 
 BeforeExecute

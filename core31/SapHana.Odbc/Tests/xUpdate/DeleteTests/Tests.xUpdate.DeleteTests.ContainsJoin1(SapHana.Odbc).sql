@@ -104,7 +104,7 @@ WHERE
 			"c_1"."ParentID" = ? AND
 			"c_1"."ChildID" NOT IN (1000, 1001) AND
 			"t1"."ParentID" = "p"."ParentID" AND
-			"t1"."Value1" = "p"."Value1"
+			("t1"."Value1" = "p"."Value1" OR "t1"."Value1" IS NULL AND "p"."Value1" IS NULL)
 	)
 
 BeforeExecute
@@ -125,7 +125,7 @@ WHERE
 			"c_1"."ParentID" = ? AND
 			"c_1"."ChildID" NOT IN (1002) AND
 			"t1"."ParentID" = "p"."ParentID" AND
-			"t1"."Value1" = "p"."Value1"
+			("t1"."Value1" = "p"."Value1" OR "t1"."Value1" IS NULL AND "p"."Value1" IS NULL)
 	)
 
 BeforeExecute

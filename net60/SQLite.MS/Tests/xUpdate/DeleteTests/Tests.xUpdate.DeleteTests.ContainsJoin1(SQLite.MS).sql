@@ -104,7 +104,7 @@ WHERE
 			[c_1].[ParentID] = @id AND
 			[c_1].[ChildID] NOT IN (1000, 1001) AND
 			[Parent].[ParentID] = [p].[ParentID] AND
-			[Parent].[Value1] = [p].[Value1]
+			([Parent].[Value1] = [p].[Value1] OR [Parent].[Value1] IS NULL AND [p].[Value1] IS NULL)
 	)
 
 BeforeExecute
@@ -125,7 +125,7 @@ WHERE
 			[c_1].[ParentID] = @id AND
 			[c_1].[ChildID] NOT IN (1002) AND
 			[Parent].[ParentID] = [p].[ParentID] AND
-			[Parent].[Value1] = [p].[Value1]
+			([Parent].[Value1] = [p].[Value1] OR [Parent].[Value1] IS NULL AND [p].[Value1] IS NULL)
 	)
 
 BeforeExecute

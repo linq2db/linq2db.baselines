@@ -34,7 +34,7 @@ WHERE
 			"t2"."FirstName" = "t3"."FirstName" AND
 			"t2"."PersonID" = "t3"."PersonID" AND
 			"t2"."LastName" = "t3"."LastName" AND
-			"t2"."MiddleName" = "t3"."MiddleName" AND
+			("t2"."MiddleName" = "t3"."MiddleName" OR "t2"."MiddleName" IS NULL AND "t3"."MiddleName" IS NULL) AND
 			"t2"."Gender" = "t3"."Gender"
 		ORDER BY
 			"t3"."LastName"
