@@ -1,0 +1,54 @@
+﻿BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+CREATE TABLE "ClobEntity"
+(
+	"Id"         Int   NOT NULL,
+	"ClobValue"  Clob      NULL,
+	"NClobValue" NClob     NULL
+)
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @ClobValue Clob -- Object
+SET     @ClobValue = 'Clob1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'
+-- value above truncated for logging, actual length is 4001
+DECLARE @NClobValue NClob -- Object
+SET     @NClobValue = 'NClob111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'
+-- value above truncated for logging, actual length is 4001
+
+INSERT INTO "ClobEntity"
+(
+	"Id",
+	"ClobValue",
+	"NClobValue"
+)
+VALUES
+(
+	:Id,
+	:ClobValue,
+	:NClobValue
+)
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	t1."Id",
+	t1."ClobValue",
+	t1."NClobValue"
+FROM
+	"ClobEntity" t1
+WHERE
+	t1."Id" = 1
+FETCH NEXT :take ROWS ONLY
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+DROP TABLE "ClobEntity"
+
