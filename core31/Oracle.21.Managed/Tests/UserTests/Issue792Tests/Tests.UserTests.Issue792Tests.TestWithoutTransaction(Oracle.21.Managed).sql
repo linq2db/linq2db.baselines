@@ -282,9 +282,9 @@ SYSTEM.PERSON_UPDATE
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @MR Varchar2 -- String
+DECLARE @MR RefCursor -- Object
 SET     @MR = NULL
-DECLARE @SR Varchar2 -- String
+DECLARE @SR RefCursor -- Object
 SET     @SR = NULL
 
 SYSTEM.RESULTSETTEST
