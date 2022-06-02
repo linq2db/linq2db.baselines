@@ -253,9 +253,9 @@ TEST.PERSON_UPDATE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @MR Varchar2 -- String
+DECLARE @MR RefCursor -- Object
 SET     @MR = NULL
-DECLARE @SR Varchar2 -- String
+DECLARE @SR RefCursor -- Object
 SET     @SR = NULL
 
 TEST.RESULTSETTEST

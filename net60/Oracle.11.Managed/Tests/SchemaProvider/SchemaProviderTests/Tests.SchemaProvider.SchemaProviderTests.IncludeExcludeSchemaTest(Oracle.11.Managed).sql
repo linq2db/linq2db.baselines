@@ -69,11 +69,6 @@ BeforeExecute
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 
 					SELECT
 						c.OWNER || '.' || c.TABLE_NAME             as TableID,
@@ -351,9 +346,9 @@ TEST.PERSON_UPDATE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @MR Varchar2 -- String
+DECLARE @MR RefCursor -- Object
 SET     @MR = NULL
-DECLARE @SR Varchar2 -- String
+DECLARE @SR RefCursor -- Object
 SET     @SR = NULL
 
 TEST.RESULTSETTEST
@@ -467,11 +462,6 @@ BeforeExecute
 						FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME AND
 						FKCON.CONSTRAINT_TYPE  = 'P' AND
 						FKCOLS.OWNER IN ('IncludeExcludeSchemaTest')
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
