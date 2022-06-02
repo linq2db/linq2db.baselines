@@ -79,11 +79,6 @@ BeforeExecute
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
 
 					SELECT
 						(SELECT USER FROM DUAL) || '.' || c.TABLE_NAME as TableID,

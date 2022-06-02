@@ -69,11 +69,6 @@ BeforeExecute
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
 
 					SELECT
 						c.OWNER || '.' || c.TABLE_NAME             as TableID,
@@ -376,9 +371,9 @@ SYSTEM.PERSON_UPDATE
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @MR Varchar2 -- String
+DECLARE @MR RefCursor -- Object
 SET     @MR = NULL
-DECLARE @SR Varchar2 -- String
+DECLARE @SR RefCursor -- Object
 SET     @SR = NULL
 
 SYSTEM.RESULTSETTEST
