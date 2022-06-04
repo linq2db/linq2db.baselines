@@ -221,6 +221,16 @@ SELECT "binaryDataType" FROM "AllTypes" WHERE ID = 2
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
+SELECT "bfileDataType" FROM "AllTypes" WHERE ID = 1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT "bfileDataType" FROM "AllTypes" WHERE ID = 2
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
 SELECT XMLSERIALIZE(DOCUMENT "xmlDataType" AS CLOB NO INDENT) FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute

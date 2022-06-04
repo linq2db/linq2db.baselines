@@ -16,7 +16,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	user
+	sys_context('userenv', 'current_schema')
 FROM
 	"LinqDataTypes" t1
 WHERE

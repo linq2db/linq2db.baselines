@@ -1,0 +1,14 @@
+﻿BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+SELECT
+	n."Name"
+FROM
+	"Person" p
+		CROSS APPLY (
+			SELECT 1 AS ID, 'Janet' AS "Name", p."LastName" AS "Sub" FROM sys.dual
+			UNION ALL
+			SELECT 1, 'Doe', p."LastName" FROM sys.dual) n
+WHERE
+	p."LastName" = n."Name"
+

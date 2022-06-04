@@ -6,7 +6,7 @@ SELECT USER FROM DUAL
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-select VERSION from PRODUCT_COMPONENT_VERSION where PRODUCT like 'PL/SQL%'
+SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -63,11 +63,6 @@ BeforeExecute
 						FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME AND
 						FKCON.CONSTRAINT_TYPE  = 'P' AND
 						FKCOLS.OWNER IN ('TEST')
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT VERSION FROM PRODUCT_COMPONENT_VERSION WHERE PRODUCT LIKE 'PL/SQL%'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -337,9 +332,9 @@ TEST.PERSON_UPDATE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @MR Varchar2 -- String
+DECLARE @MR RefCursor -- Object
 SET     @MR = NULL
-DECLARE @SR Varchar2 -- String
+DECLARE @SR RefCursor -- Object
 SET     @SR = NULL
 
 TEST.RESULTSETTEST
@@ -384,7 +379,7 @@ SELECT USER FROM DUAL
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-select VERSION from PRODUCT_COMPONENT_VERSION where PRODUCT like 'PL/SQL%'
+SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -441,11 +436,6 @@ BeforeExecute
 						FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME AND
 						FKCON.CONSTRAINT_TYPE  = 'P' AND
 						FKCOLS.OWNER IN ('TEST')
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT VERSION FROM PRODUCT_COMPONENT_VERSION WHERE PRODUCT LIKE 'PL/SQL%'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -544,7 +534,7 @@ SELECT USER FROM DUAL
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-select VERSION from PRODUCT_COMPONENT_VERSION where PRODUCT like 'PL/SQL%'
+SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -601,11 +591,6 @@ BeforeExecute
 						FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME AND
 						FKCON.CONSTRAINT_TYPE  = 'P' AND
 						FKCOLS.OWNER IN ('TEST')
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT VERSION FROM PRODUCT_COMPONENT_VERSION WHERE PRODUCT LIKE 'PL/SQL%'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

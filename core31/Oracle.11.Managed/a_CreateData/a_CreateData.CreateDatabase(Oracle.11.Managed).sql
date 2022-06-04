@@ -1674,3 +1674,18 @@ INSERT ALL
 	INTO "InheritanceChild" ("InheritanceParentId", "TypeDiscriminator", "InheritanceChildId", "Name") VALUES (3,2,3,'InheritanceParent2')
 SELECT * FROM dual
 
+BeforeExecute
+--  Oracle.11.Managed Oracle11
+
+select dbms_lob.fileexists(bfilename('DATA_DIR', 'bfile.txt')) from dual
+
+BeforeExecute
+--  Oracle.11.Managed Oracle11
+
+CREATE OR REPLACE DIRECTORY DATA_DIR AS '/home/oracle'
+
+BeforeExecute
+--  Oracle.11.Managed Oracle11
+
+UPDATE "AllTypes" SET "bfileDataType" = bfilename('DATA_DIR', 'bfile.txt') WHERE "ID" = 2
+
