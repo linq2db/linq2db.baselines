@@ -3,9 +3,9 @@
 
 CREATE TABLE `Issue2434Table`
 (
-	`Id`        INT          NOT NULL,
-	`FirstName` VARCHAR(255)     NULL,
-	`LastName`  VARCHAR(255)     NULL
+	`Id`        INT           NOT NULL,
+	`FirstName` VARCHAR(4000)     NULL,
+	`LastName`  VARCHAR(4000)     NULL
 )
 
 BeforeExecute

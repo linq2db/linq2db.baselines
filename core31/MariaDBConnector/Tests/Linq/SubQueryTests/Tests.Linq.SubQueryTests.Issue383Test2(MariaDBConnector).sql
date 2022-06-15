@@ -8,12 +8,12 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Contract_Distributor_Agent`
 (
-	`Agent_Id`                      INT          NOT NULL,
-	`Distributor_Id`                INT          NOT NULL,
-	`Contract_Id`                   INT          NOT NULL,
-	`Distributor_Type_Code`         VARCHAR(255)     NULL,
-	`Distributor_Agent_Type_Prefix` VARCHAR(255)     NULL,
-	`Represents_Type_Prefix`        VARCHAR(255)     NULL
+	`Agent_Id`                      INT           NOT NULL,
+	`Distributor_Id`                INT           NOT NULL,
+	`Contract_Id`                   INT           NOT NULL,
+	`Distributor_Type_Code`         VARCHAR(4000)     NULL,
+	`Distributor_Agent_Type_Prefix` VARCHAR(4000)     NULL,
+	`Represents_Type_Prefix`        VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -41,9 +41,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Agent`
 (
-	`Agent_Id`   INT          NOT NULL,
-	`First_Name` VARCHAR(255)     NULL,
-	`Last_Name`  VARCHAR(255)     NULL
+	`Agent_Id`   INT           NOT NULL,
+	`First_Name` VARCHAR(4000)     NULL,
+	`Last_Name`  VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -68,9 +68,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Distributor`
 (
-	`Distributor_Id`   INT          NOT NULL,
-	`Type_Code`        VARCHAR(255)     NULL,
-	`Distributor_Name` VARCHAR(255)     NULL
+	`Distributor_Id`   INT           NOT NULL,
+	`Type_Code`        VARCHAR(4000)     NULL,
+	`Distributor_Name` VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -95,9 +95,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Distributor_Commercial_Propert`
 (
-	`Distributor_Id`         INT          NOT NULL,
-	`Commercial_Property_Id` INT          NOT NULL,
-	`Distributor_Type_Code`  VARCHAR(255)     NULL
+	`Distributor_Id`         INT           NOT NULL,
+	`Commercial_Property_Id` INT           NOT NULL,
+	`Distributor_Type_Code`  VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -123,12 +123,12 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS `Commercial_Property`
 (
 	`Commercial_Property_Id` INT          NOT NULL,
-	`Street_Number`          VARCHAR(255)     NULL,
-	`Street_Name`            VARCHAR(255)     NULL,
-	`State`                  VARCHAR(255)     NULL,
-	`Zip_Code`               VARCHAR(255)     NULL,
-	`Zip_Plus_4`             VARCHAR(255)     NULL,
-	`City_Code`              VARCHAR(255)     NULL
+	`Street_Number`          VARCHAR(100)     NULL,
+	`Street_Name`            VARCHAR(100)     NULL,
+	`State`                  VARCHAR(100)     NULL,
+	`Zip_Code`               VARCHAR(100)     NULL,
+	`Zip_Plus_4`             VARCHAR(100)     NULL,
+	`City_Code`              VARCHAR(100)     NULL
 )
 
 BeforeExecute
@@ -157,9 +157,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Contract_Dates`
 (
-	`Contract_Id`    INT          NOT NULL,
-	`Type_Code`      VARCHAR(255)     NULL,
-	`Effective_Date` VARCHAR(255)     NULL
+	`Contract_Id`    INT           NOT NULL,
+	`Type_Code`      VARCHAR(4000)     NULL,
+	`Effective_Date` VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -184,8 +184,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Cities`
 (
-	`City_Code` VARCHAR(255)     NULL,
-	`City_Name` VARCHAR(255)     NULL
+	`City_Code` VARCHAR(4000)     NULL,
+	`City_Name` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

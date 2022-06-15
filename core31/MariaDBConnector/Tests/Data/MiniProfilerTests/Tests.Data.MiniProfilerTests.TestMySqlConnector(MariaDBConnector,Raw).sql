@@ -177,8 +177,8 @@ SET     @i = NULL
 
 BeforeExecute
 --  MySqlConnector MySql
-DECLARE @VarChar255 VarChar(255) -- AnsiString
-SET     @VarChar255 = NULL
+DECLARE @VarCharDefault VarChar(255) -- AnsiString
+SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
 SET     @VarChar1 = NULL
 DECLARE @Char255 String(255) -- AnsiStringFixedLength
@@ -282,8 +282,8 @@ SET     @GeometryCollection = NULL
 
 BeforeExecute
 --  MySqlConnector MySql
-DECLARE @VarChar255 VarChar(255) -- AnsiString
-SET     @VarChar255 = NULL
+DECLARE @VarCharDefault VarChar(4000) -- AnsiString
+SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
 SET     @VarChar1 = NULL
 DECLARE @Char255 String(255) -- AnsiStringFixedLength

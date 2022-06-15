@@ -3,7 +3,7 @@
 
 CREATE TABLE `CreateTable`
 (
-	`VarChar255`       VARCHAR(255)          NULL,
+	`VarCharDefault`   VARCHAR(4000)         NULL,
 	`VarChar1`         VARCHAR(1)            NULL,
 	`VarChar112`       VARCHAR(112)          NULL,
 	`Char`             CHAR              NOT NULL,
@@ -62,8 +62,8 @@ CREATE TABLE `CreateTable`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
-DECLARE @VarChar255 VarChar(4) -- String
-SET     @VarChar255 = 'ыsdf'
+DECLARE @VarCharDefault VarChar(4) -- String
+SET     @VarCharDefault = 'ыsdf'
 DECLARE @VarChar1 VarChar(1) -- String
 SET     @VarChar1 = 'ы'
 DECLARE @VarChar112 VarChar(4) -- String
@@ -175,7 +175,7 @@ SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 INSERT INTO `CreateTable`
 (
-	`VarChar255`,
+	`VarCharDefault`,
 	`VarChar1`,
 	`VarChar112`,
 	`Char`,
@@ -233,7 +233,7 @@ INSERT INTO `CreateTable`
 )
 VALUES
 (
-	@VarChar255,
+	@VarCharDefault,
 	@VarChar1,
 	@VarChar112,
 	@Char_1,
@@ -296,7 +296,7 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	`t1`.`VarChar255`,
+	`t1`.`VarCharDefault`,
 	`t1`.`VarChar1`,
 	`t1`.`VarChar112`,
 	`t1`.`Char`,

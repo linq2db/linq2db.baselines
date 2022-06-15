@@ -3,8 +3,8 @@
 
 CREATE TABLE `Task`
 (
-	`Id`         INT          NOT NULL,
-	`TargetName` VARCHAR(255)     NULL,
+	`Id`         INT           NOT NULL,
+	`TargetName` VARCHAR(4000)     NULL,
 
 	CONSTRAINT `PK_Task` PRIMARY KEY CLUSTERED (`Id`)
 )

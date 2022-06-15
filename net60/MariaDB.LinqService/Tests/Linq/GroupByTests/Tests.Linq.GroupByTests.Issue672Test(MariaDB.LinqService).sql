@@ -3,10 +3,10 @@
 
 CREATE TABLE `Stone`
 (
-	`Id`           INT          AUTO_INCREMENT NOT NULL,
-	`Name`         VARCHAR(255)                NOT NULL,
-	`Enabled`      BOOLEAN                         NULL,
-	`ImageFullUrl` VARCHAR(255)                    NULL,
+	`Id`           INT           AUTO_INCREMENT NOT NULL,
+	`Name`         VARCHAR(4000)                NOT NULL,
+	`Enabled`      BOOLEAN                          NULL,
+	`ImageFullUrl` VARCHAR(4000)                    NULL,
 
 	CONSTRAINT `PK_Stone` PRIMARY KEY CLUSTERED (`Id`)
 )

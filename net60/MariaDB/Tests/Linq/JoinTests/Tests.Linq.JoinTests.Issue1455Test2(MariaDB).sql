@@ -3,9 +3,9 @@
 
 CREATE TABLE `Alert`
 (
-	`AlertKey`     VARCHAR(255)     NULL,
-	`AlertCode`    VARCHAR(255)     NULL,
-	`CreationDate` DATETIME         NULL
+	`AlertKey`     VARCHAR(4000)     NULL,
+	`AlertCode`    VARCHAR(4000)     NULL,
+	`CreationDate` DATETIME          NULL
 )
 
 BeforeExecute
@@ -13,10 +13,10 @@ BeforeExecute
 
 CREATE TABLE `AuditAlert`
 (
-	`CreationDate`    DATETIME         NULL,
-	`AlertCode`       VARCHAR(255)     NULL,
-	`AlertKey`        VARCHAR(255)     NULL,
-	`TransactionDate` DATETIME         NULL
+	`CreationDate`    DATETIME          NULL,
+	`AlertCode`       VARCHAR(4000)     NULL,
+	`AlertKey`        VARCHAR(4000)     NULL,
+	`TransactionDate` DATETIME          NULL
 )
 
 BeforeExecute
@@ -24,9 +24,9 @@ BeforeExecute
 
 CREATE TABLE `Trade`
 (
-	`DealId`       INT          NOT NULL,
-	`ParcelId`     INT          NOT NULL,
-	`CounterParty` VARCHAR(255)     NULL
+	`DealId`       INT           NOT NULL,
+	`ParcelId`     INT           NOT NULL,
+	`CounterParty` VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -34,9 +34,9 @@ BeforeExecute
 
 CREATE TABLE `Nomin`
 (
-	`CargoId`              INT          NOT NULL,
-	`DeliveryId`           INT          NOT NULL,
-	`DeliveryCounterParty` VARCHAR(255)     NULL
+	`CargoId`              INT           NOT NULL,
+	`DeliveryId`           INT           NOT NULL,
+	`DeliveryCounterParty` VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -44,15 +44,15 @@ BeforeExecute
 
 CREATE TABLE `Flat`
 (
-	`AlertKey`             VARCHAR(255)     NULL,
-	`AlertCode`            VARCHAR(255)     NULL,
-	`CargoId`              INT              NULL,
-	`DeliveryId`           INT              NULL,
-	`DeliveryCounterParty` VARCHAR(255)     NULL,
-	`DealId`               INT              NULL,
-	`ParcelId`             INT              NULL,
-	`CounterParty`         VARCHAR(255)     NULL,
-	`TransactionDate`      DATETIME         NULL
+	`AlertKey`             VARCHAR(4000)     NULL,
+	`AlertCode`            VARCHAR(4000)     NULL,
+	`CargoId`              INT               NULL,
+	`DeliveryId`           INT               NULL,
+	`DeliveryCounterParty` VARCHAR(4000)     NULL,
+	`DealId`               INT               NULL,
+	`ParcelId`             INT               NULL,
+	`CounterParty`         VARCHAR(4000)     NULL,
+	`TransactionDate`      DATETIME          NULL
 )
 
 BeforeExecute

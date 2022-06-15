@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
 (
-	`Id`            INT          NOT NULL,
-	`DuplicateData` VARCHAR(255)     NULL,
-	`OrderData1`    INT          NOT NULL,
-	`OrderData2`    INT          NOT NULL,
+	`Id`            INT           NOT NULL,
+	`DuplicateData` VARCHAR(4000)     NULL,
+	`OrderData1`    INT           NOT NULL,
+	`OrderData2`    INT           NOT NULL,
 
 	CONSTRAINT `PK_OrderByDistinctData` PRIMARY KEY CLUSTERED (`Id`)
 )
