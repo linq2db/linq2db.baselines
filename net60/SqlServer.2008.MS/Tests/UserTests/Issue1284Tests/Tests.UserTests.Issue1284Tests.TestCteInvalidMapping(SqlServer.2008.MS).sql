@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 WITH [CTE_1]
 (
@@ -24,7 +22,7 @@ AS
 	FROM
 		[Person] [person_1]
 )
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[ID],
 	[t1].[LastName],
@@ -35,10 +33,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[person_1].[FirstName],
 	[person_1].[PersonID],
 	[person_1].[LastName],

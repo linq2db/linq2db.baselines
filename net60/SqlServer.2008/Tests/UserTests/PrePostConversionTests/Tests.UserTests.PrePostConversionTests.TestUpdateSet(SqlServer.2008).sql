@@ -47,10 +47,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[Id],
 	[t1].[SomeValue1],
 	[t1].[SomeValue2]
@@ -71,10 +69,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[Id],
 	[t1].[SomeValue1],
 	[t1].[SomeValue2]
