@@ -18,12 +18,12 @@ BEGIN
 		CREATE TABLE "gt_s_one"
 		(
 			"id"   Int          NOT NULL,
-			"col1" VarChar(255)     NULL,
-			"col2" VarChar(255)     NULL,
-			"col3" VarChar(255)     NULL,
-			"col4" VarChar(255)     NULL,
-			"col5" VarChar(255)     NULL,
-			"col6" VarChar(255)     NULL,
+			"col1" VarChar(100)     NULL,
+			"col2" VarChar(100)     NULL,
+			"col3" VarChar(100)     NULL,
+			"col4" VarChar(100)     NULL,
+			"col5" VarChar(100)     NULL,
+			"col6" VarChar(100)     NULL,
 
 			CONSTRAINT "PK_gt_s_one" PRIMARY KEY ("id")
 		)
