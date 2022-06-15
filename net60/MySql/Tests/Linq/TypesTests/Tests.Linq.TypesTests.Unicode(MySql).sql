@@ -32,8 +32,6 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -45,7 +43,7 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = '擊敗奴隸' AND `p`.`LastName` = 'Юникодкин'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql MySql.Official MySql

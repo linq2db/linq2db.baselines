@@ -22,8 +22,6 @@ BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	CASE
@@ -56,7 +54,7 @@ SELECT
 			`c_3`.`ParentID` > 0
 		ORDER BY
 			`c_3`.`ChildID`
-		LIMIT @take
+		LIMIT 1
 	),
 	`p`.`ParentID`
 FROM
