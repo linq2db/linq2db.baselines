@@ -104,8 +104,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `SubData2`
 (
-	`Id`     INT          NOT NULL,
-	`Reason` VARCHAR(255)     NULL
+	`Id`     INT           NOT NULL,
+	`Reason` VARCHAR(4000)     NULL
 )
 
 BeforeExecute
