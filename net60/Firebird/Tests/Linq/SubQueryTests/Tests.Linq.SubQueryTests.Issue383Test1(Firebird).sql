@@ -157,12 +157,12 @@ EXECUTE BLOCK AS BEGIN
 			CREATE TABLE "Commercial_Property"
 			(
 				"Commercial_Property_Id" Int                                    NOT NULL,
-				"Street_Number"          VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Street_Name"            VarChar(255) CHARACTER SET UNICODE_FSS,
-				"State"                  VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Zip_Code"               VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Zip_Plus_4"             VarChar(255) CHARACTER SET UNICODE_FSS,
-				"City_Code"              VarChar(255) CHARACTER SET UNICODE_FSS
+				"Street_Number"          VarChar(100) CHARACTER SET UNICODE_FSS,
+				"Street_Name"            VarChar(100) CHARACTER SET UNICODE_FSS,
+				"State"                  VarChar(100) CHARACTER SET UNICODE_FSS,
+				"Zip_Code"               VarChar(100) CHARACTER SET UNICODE_FSS,
+				"Zip_Plus_4"             VarChar(100) CHARACTER SET UNICODE_FSS,
+				"City_Code"              VarChar(100) CHARACTER SET UNICODE_FSS
 			)
 		';
 END
@@ -180,7 +180,7 @@ INSERT INTO "Commercial_Property"
 	"Zip_Plus_4",
 	"City_Code"
 )
-SELECT 1,CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
+SELECT 1,CAST('x' AS VarChar(100) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(100) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(100) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(100) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(100) CHARACTER SET UNICODE_FSS),CAST('x' AS VarChar(100) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird
