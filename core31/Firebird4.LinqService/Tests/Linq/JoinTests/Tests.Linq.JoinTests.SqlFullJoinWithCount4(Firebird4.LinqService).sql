@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	COUNT("left_1"."ParentID"),
 	COUNT("t1"."ParentID"),
 	COUNT(*)

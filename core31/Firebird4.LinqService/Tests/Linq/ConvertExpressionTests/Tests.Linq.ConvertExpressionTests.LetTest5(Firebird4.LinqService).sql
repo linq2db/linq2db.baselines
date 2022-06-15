@@ -18,8 +18,6 @@ ORDER BY
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	CASE
@@ -43,7 +41,7 @@ SELECT
 			"c_2"."ParentID" = "p"."ParentID" AND "c_2"."ChildID" > -100
 	),
 	(
-		SELECT FIRST @take
+		SELECT FIRST 1
 			"c_3"."ParentID"
 		FROM
 			"Child" "c_3"

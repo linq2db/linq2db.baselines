@@ -32,10 +32,8 @@ VALUES
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1".ID,
 	"t1"."Array",
 	"t1"."Binary"
@@ -46,12 +44,10 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @Array_1 Binary(3)
 SET     @Array_1 = X'010203'
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1".ID,
 	"t1"."Array",
 	"t1"."Binary"
@@ -62,12 +58,10 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @Binary_1 Binary(2)
 SET     @Binary_1 = X'0405'
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1".ID,
 	"t1"."Array",
 	"t1"."Binary"

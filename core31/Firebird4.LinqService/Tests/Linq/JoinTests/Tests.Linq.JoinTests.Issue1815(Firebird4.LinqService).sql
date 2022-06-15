@@ -116,10 +116,8 @@ VALUES
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"x"."InId",
 	"j"."InId",
 	"j"."InMaxQuantity",
@@ -134,10 +132,8 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"x"."InId",
 	"j"."InId",
 	"j"."InMaxQuantity",
