@@ -27,12 +27,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Id],
 	[x].[Json]
 FROM
@@ -56,12 +54,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Id],
 	[x].[Json]
 FROM

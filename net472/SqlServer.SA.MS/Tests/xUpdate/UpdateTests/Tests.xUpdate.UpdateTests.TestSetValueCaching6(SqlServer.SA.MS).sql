@@ -54,12 +54,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Value6]
 FROM
 	[UpdateSetTest] [_]
@@ -84,12 +82,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Value6]
 FROM
 	[UpdateSetTest] [_]

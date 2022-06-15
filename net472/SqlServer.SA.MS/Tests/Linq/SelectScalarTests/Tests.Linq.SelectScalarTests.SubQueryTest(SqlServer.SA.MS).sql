@@ -1,11 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	(
-		SELECT TOP (@take)
+		SELECT TOP (1)
 			[p].[Value1]
 		FROM
 			[Parent] [p]
