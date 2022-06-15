@@ -15,8 +15,8 @@ BeforeExecute
 
 CREATE TABLE `person649`
 (
-	`personid`   INT          AUTO_INCREMENT NOT NULL,
-	`personname` VARCHAR(255)                NOT NULL,
+	`personid`   INT           AUTO_INCREMENT NOT NULL,
+	`personname` VARCHAR(4000)                NOT NULL,
 
 	CONSTRAINT `PK_person649` PRIMARY KEY CLUSTERED (`personid`)
 )

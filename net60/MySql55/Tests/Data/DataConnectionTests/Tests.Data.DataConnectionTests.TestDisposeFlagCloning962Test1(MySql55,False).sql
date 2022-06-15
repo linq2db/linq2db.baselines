@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Categories`
 (
-	`CategoryID`   INT          AUTO_INCREMENT NOT NULL,
-	`CategoryName` VARCHAR(255)                NOT NULL,
-	`Description`  VARCHAR(255)                    NULL,
+	`CategoryID`   INT           AUTO_INCREMENT NOT NULL,
+	`CategoryName` VARCHAR(4000)                NOT NULL,
+	`Description`  VARCHAR(4000)                    NULL,
 
 	CONSTRAINT `PK_Categories` PRIMARY KEY CLUSTERED (`CategoryID`)
 )
@@ -37,10 +37,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Products`
 (
-	`ProductID`       INT          AUTO_INCREMENT NOT NULL,
-	`ProductName`     VARCHAR(255)                NOT NULL,
-	`CategoryID`      INT                             NULL,
-	`QuantityPerUnit` VARCHAR(255)                    NULL,
+	`ProductID`       INT           AUTO_INCREMENT NOT NULL,
+	`ProductName`     VARCHAR(4000)                NOT NULL,
+	`CategoryID`      INT                              NULL,
+	`QuantityPerUnit` VARCHAR(4000)                    NULL,
 
 	CONSTRAINT `PK_Products` PRIMARY KEY CLUSTERED (`ProductID`)
 )

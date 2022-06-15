@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Isue2424Table`
 (
-	`Id`       INT          NOT NULL,
-	`StrValue` VARCHAR(255)     NULL
+	`Id`       INT           NOT NULL,
+	`StrValue` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

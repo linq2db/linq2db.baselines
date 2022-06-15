@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `MainTable`
 (
-	`Id`    INT          NOT NULL,
-	`Field` VARCHAR(255)     NULL
+	`Id`    INT           NOT NULL,
+	`Field` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

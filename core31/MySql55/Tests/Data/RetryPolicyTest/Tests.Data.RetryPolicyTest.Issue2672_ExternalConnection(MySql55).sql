@@ -4,7 +4,7 @@
 CREATE TABLE `MyEntity`
 (
 	`Id`   BIGINT       NOT NULL,
-	`Name` VARCHAR(255) NOT NULL
+	`Name` VARCHAR(256) NOT NULL
 )
 
 BeforeExecute
@@ -18,6 +18,6 @@ BeforeExecute
 CREATE TABLE `MyEntity`
 (
 	`Id`   BIGINT       NOT NULL,
-	`Name` VARCHAR(255) NOT NULL
+	`Name` VARCHAR(256) NOT NULL
 )
 

@@ -3,10 +3,10 @@
 
 CREATE TABLE `Issue3323Table`
 (
-	`Id`       INT          NOT NULL,
-	`FistName` VARCHAR(255)     NULL,
-	`LastName` VARCHAR(255)     NULL,
-	`Text`     VARCHAR(255) NOT NULL,
+	`Id`       INT           NOT NULL,
+	`FistName` VARCHAR(4000)     NULL,
+	`LastName` VARCHAR(4000)     NULL,
+	`Text`     VARCHAR(4000) NOT NULL,
 
 	CONSTRAINT `PK_Issue3323Table` PRIMARY KEY CLUSTERED (`Id`)
 )

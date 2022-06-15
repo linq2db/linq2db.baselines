@@ -3,10 +3,10 @@
 
 CREATE TABLE `TestInsertOrReplaceTable`
 (
-	`ID`         INT          NOT NULL,
-	`FirstName`  VARCHAR(255)     NULL,
-	`LastName`   VARCHAR(255)     NULL,
-	`MiddleName` VARCHAR(255)     NULL,
+	`ID`         INT           NOT NULL,
+	`FirstName`  VARCHAR(4000)     NULL,
+	`LastName`   VARCHAR(4000)     NULL,
+	`MiddleName` VARCHAR(4000)     NULL,
 
 	CONSTRAINT `PK_TestInsertOrReplaceTable` PRIMARY KEY CLUSTERED (`ID`)
 )

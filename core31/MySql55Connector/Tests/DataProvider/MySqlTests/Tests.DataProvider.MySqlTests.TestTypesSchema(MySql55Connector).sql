@@ -3,7 +3,7 @@
 
 CREATE TABLE `TestSchemaTypesTable`
 (
-	`VarChar255`         VARCHAR(255)           NULL,
+	`VarCharDefault`     VARCHAR(4000)          NULL,
 	`VarChar1`           VARCHAR(1)             NULL,
 	`VarChar112`         VARCHAR(112)           NULL,
 	`Char`               CHAR               NOT NULL,
