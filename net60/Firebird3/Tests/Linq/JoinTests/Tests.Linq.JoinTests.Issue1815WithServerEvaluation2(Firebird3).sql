@@ -73,10 +73,8 @@ SELECT 2,4,3 FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"x"."InId",
 	CASE
 		WHEN "j"."InId" IS NULL THEN "x"."InMinQuantity"
@@ -94,10 +92,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"x"."InId",
 	CASE
 		WHEN "j"."InId" IS NULL THEN "x"."InMinQuantity"

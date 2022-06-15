@@ -40,12 +40,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."ParentID",
 	"p"."Value1"
 FROM

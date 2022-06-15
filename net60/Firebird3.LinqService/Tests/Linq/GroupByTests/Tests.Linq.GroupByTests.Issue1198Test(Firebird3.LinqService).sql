@@ -10,10 +10,8 @@ CREATE TABLE "Issue1192Table"
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	(
 		SELECT
 			Count(*)
