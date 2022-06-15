@@ -45,12 +45,10 @@ RETURNING
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id Integer -- Int32
 SET     @id = 6
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."PersonID",
 	"t1"."Gender",
 	"t1"."FirstName",
@@ -86,12 +84,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id Integer -- Int32
 SET     @id = 6
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."PersonID",
 	"t1"."Gender",
 	"t1"."FirstName",

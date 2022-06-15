@@ -53,12 +53,10 @@ VALUES
 
 BeforeExecute
 -- Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",
