@@ -26,8 +26,6 @@ SELECT 1,100
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t_1].[Id],
@@ -38,7 +36,7 @@ SELECT
 FROM
 	[SampleClass] [t_1]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[t2].[Value1],
 				[t2].[Value2],
 				1 as [is_empty]
