@@ -18,7 +18,7 @@ FROM
 			a_Parent.ParentID
 		FROM
 			Child p2
-				LEFT JOIN Parent a_Parent ON p2.ParentID = a_Parent.ParentID
+				INNER JOIN Parent a_Parent ON p2.ParentID = a_Parent.ParentID
 		WHERE
 			p2.ParentID > -1
 	) p1

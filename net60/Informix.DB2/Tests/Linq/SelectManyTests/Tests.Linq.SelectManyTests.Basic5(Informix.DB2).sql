@@ -7,6 +7,6 @@ SELECT
 	c_1.GrandChildID
 FROM
 	Child cp
-		LEFT JOIN Parent a_Parent ON cp.ParentID = a_Parent.ParentID
+		INNER JOIN Parent a_Parent ON cp.ParentID = a_Parent.ParentID
 		INNER JOIN GrandChild c_1 ON a_Parent.ParentID = c_1.ParentID
 
