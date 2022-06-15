@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`FirstName`
@@ -9,7 +7,7 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`PersonID` = 1
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

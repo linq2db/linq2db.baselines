@@ -122,8 +122,6 @@ BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`q`.`Value2`
@@ -137,7 +135,7 @@ FROM
 	) `q`
 ORDER BY
 	`q`.`Id`
-LIMIT @skip, @take
+LIMIT @skip, 1
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

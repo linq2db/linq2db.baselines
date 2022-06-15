@@ -10,8 +10,6 @@ CREATE TABLE `Issue1192Table`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	(
@@ -26,7 +24,7 @@ FROM
 	`Issue1192Table` `t_1`
 WHERE
 	`t_1`.`MyOtherId` = 12
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

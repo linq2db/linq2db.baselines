@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`l`.`ParentID`
 FROM
 	`Child` `l`
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

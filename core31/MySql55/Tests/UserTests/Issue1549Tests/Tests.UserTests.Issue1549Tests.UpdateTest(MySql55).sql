@@ -66,10 +66,6 @@ SET
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 1
 
 UPDATE
 	`billing_TempReading` `t1`
@@ -81,7 +77,7 @@ SET
 			`billing_DevReadingType` `w`
 		WHERE
 			`w`.`Name` = `t1`.`ReadingTypeName` AND `w`.`DevTypeId` = `t1`.`Devtypeid`
-		LIMIT @take
+		LIMIT 1
 	),
 	`t1`.`Responsibility` = (
 		SELECT
@@ -90,7 +86,7 @@ SET
 			`billing_DevReadingType` `w_1`
 		WHERE
 			`w_1`.`Name` = `t1`.`ReadingTypeName` AND `w_1`.`DevTypeId` = `t1`.`Devtypeid`
-		LIMIT @take_1
+		LIMIT 1
 	)
 
 BeforeExecute
