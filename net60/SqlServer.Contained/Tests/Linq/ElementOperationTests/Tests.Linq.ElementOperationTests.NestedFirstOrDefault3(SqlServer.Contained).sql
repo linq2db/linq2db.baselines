@@ -1,14 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ParentID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
-			SELECT DISTINCT TOP (@take)
+			SELECT DISTINCT TOP (1)
 				[c_1].[ParentID]
 			FROM
 				[Child] [c_1]

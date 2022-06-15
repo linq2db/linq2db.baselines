@@ -9,8 +9,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 INSERT INTO [Person]
 (
@@ -21,7 +19,7 @@ INSERT INTO [Person]
 VALUES
 (
 	N'Insert14' + (
-		SELECT TOP (@take)
+		SELECT TOP (1)
 			[p].[FirstName]
 		FROM
 			[Person] [p]

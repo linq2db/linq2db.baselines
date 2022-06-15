@@ -83,8 +83,6 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 3
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t2].[ShipCountry],
@@ -125,7 +123,7 @@ FROM
 				([c_1].[CustomerID] = [t1].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [t1].[CustomerID] IS NULL)
 			ORDER BY
 				1
-			OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+			OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 		) [t2]
 WHERE
 	(

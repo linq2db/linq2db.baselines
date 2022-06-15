@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +7,7 @@ SELECT
 FROM
 	[Parent] [p]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[c_1].[ChildID] as [MaxChild]
 			FROM
 				[Child] [c_1]

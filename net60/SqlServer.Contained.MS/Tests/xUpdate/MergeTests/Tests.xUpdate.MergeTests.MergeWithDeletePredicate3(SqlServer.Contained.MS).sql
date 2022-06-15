@@ -28,10 +28,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -60,12 +58,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[PersonID],
 	[_].[Diagnosis]
 FROM

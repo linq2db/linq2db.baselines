@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t2].[ShipCountry],
@@ -21,7 +19,7 @@ SELECT
 FROM
 	[Customers] [c_1]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[t1].[ShipCountry],
 				[t1].[ShipPostalCode],
 				[t1].[ShipRegion],
