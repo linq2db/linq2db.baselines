@@ -1,17 +1,15 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM
 	[GrandChild] [p]
-		LEFT JOIN [Child] [a_Child] ON [p].[ParentID] = [a_Child].[ParentID] AND [p].[ChildID] = [a_Child].[ChildID]
-		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
+		INNER JOIN [Child] [a_Child] ON [p].[ParentID] = [a_Child].[ParentID] AND [p].[ChildID] = [a_Child].[ChildID]
+		INNER JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[t1].[ParentID],
 				[t1].[ChildID]
 			FROM
