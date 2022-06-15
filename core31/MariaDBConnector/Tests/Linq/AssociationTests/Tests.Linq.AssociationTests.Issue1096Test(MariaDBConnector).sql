@@ -3,8 +3,8 @@
 
 CREATE TABLE `Issue1096Task`
 (
-	`Id`         INT          NOT NULL,
-	`TargetName` VARCHAR(255)     NULL
+	`Id`         INT           NOT NULL,
+	`TargetName` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

@@ -3,8 +3,8 @@
 
 CREATE TABLE `ProductTable`
 (
-	`Id`   INT          NOT NULL,
-	`Name` VARCHAR(255) NOT NULL,
+	`Id`   INT           NOT NULL,
+	`Name` VARCHAR(4000) NOT NULL,
 
 	CONSTRAINT `PK_ProductTable` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -14,8 +14,8 @@ BeforeExecute
 
 CREATE TABLE `ProductAttributeTable`
 (
-	`Id`   INT          NOT NULL,
-	`Name` VARCHAR(255) NOT NULL,
+	`Id`   INT           NOT NULL,
+	`Name` VARCHAR(4000) NOT NULL,
 
 	CONSTRAINT `PK_ProductAttributeTable` PRIMARY KEY CLUSTERED (`Id`)
 )

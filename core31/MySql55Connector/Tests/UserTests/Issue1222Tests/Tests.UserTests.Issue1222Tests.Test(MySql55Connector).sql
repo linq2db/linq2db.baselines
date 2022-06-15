@@ -3,19 +3,19 @@
 
 CREATE TABLE `stLinks`
 (
-	`inId`          INT          AUTO_INCREMENT NOT NULL,
-	`inIdParent`    INT                         NOT NULL,
-	`inIdChild`     INT                         NOT NULL,
-	`inIdTypeRel`   INT                         NOT NULL,
-	`inMaxQuantity` DOUBLE                          NULL,
-	`inMinQuantity` DOUBLE                          NULL,
-	`inIdMeasure`   INT                             NULL,
-	`inIdUnit`      INT                             NULL,
-	`State`         INT                             NULL,
-	`dtModified`    DATETIME                    NOT NULL,
-	`inIdOrgOwner`  INT                             NULL,
-	`dtSynchDate`   DATETIME                        NULL,
-	`stGUID`        VARCHAR(255)                NOT NULL,
+	`inId`          INT           AUTO_INCREMENT NOT NULL,
+	`inIdParent`    INT                          NOT NULL,
+	`inIdChild`     INT                          NOT NULL,
+	`inIdTypeRel`   INT                          NOT NULL,
+	`inMaxQuantity` DOUBLE                           NULL,
+	`inMinQuantity` DOUBLE                           NULL,
+	`inIdMeasure`   INT                              NULL,
+	`inIdUnit`      INT                              NULL,
+	`State`         INT                              NULL,
+	`dtModified`    DATETIME                     NOT NULL,
+	`inIdOrgOwner`  INT                              NULL,
+	`dtSynchDate`   DATETIME                         NULL,
+	`stGUID`        VARCHAR(4000)                NOT NULL,
 
 	CONSTRAINT `PK_stLinks` PRIMARY KEY CLUSTERED (`inId`)
 )

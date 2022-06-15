@@ -3,9 +3,9 @@
 
 CREATE TABLE `PR_1598_Update_Fluent_Table`
 (
-	`Id`   INT          NOT NULL,
-	`Name` VARCHAR(255)     NULL,
-	`Age`  INT              NULL,
+	`Id`   INT           NOT NULL,
+	`Name` VARCHAR(4000)     NULL,
+	`Age`  INT               NULL,
 
 	CONSTRAINT `PK_PR_1598_Update_Fluent_Table` PRIMARY KEY CLUSTERED (`Id`)
 )

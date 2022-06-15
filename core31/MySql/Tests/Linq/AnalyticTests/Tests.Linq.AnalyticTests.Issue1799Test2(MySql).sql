@@ -13,8 +13,8 @@ BeforeExecute
 
 CREATE TABLE `Issue1799Table2`
 (
-	`UserId`     INT          NOT NULL,
-	`UserGroups` VARCHAR(255)     NULL
+	`UserId`     INT           NOT NULL,
+	`UserGroups` VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -22,8 +22,8 @@ BeforeExecute
 
 CREATE TABLE `Issue1799Table3`
 (
-	`ProcessID`   INT          NOT NULL,
-	`ProcessName` VARCHAR(255)     NULL
+	`ProcessID`   INT           NOT NULL,
+	`ProcessName` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

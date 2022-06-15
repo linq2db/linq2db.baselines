@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `WhereWithString`
 (
-	`Id`          INT          NOT NULL,
-	`StringValue` VARCHAR(255)     NULL,
+	`Id`          INT           NOT NULL,
+	`StringValue` VARCHAR(4000)     NULL,
 
 	CONSTRAINT `PK_WhereWithString` PRIMARY KEY CLUSTERED (`Id`)
 )

@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `User`
 (
-	`city`            VARCHAR(255)     NULL,
-	`user_name`       VARCHAR(255)     NULL,
-	`street`          VARCHAR(255)     NULL,
-	`building_number` INT          NOT NULL
+	`city`            VARCHAR(4000)     NULL,
+	`user_name`       VARCHAR(4000)     NULL,
+	`street`          VARCHAR(4000)     NULL,
+	`building_number` INT           NOT NULL
 )
 
 BeforeExecute

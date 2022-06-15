@@ -15,12 +15,12 @@ EXECUTE BLOCK AS BEGIN
 			CREATE TABLE "gt_s_one"
 			(
 				"id"   Int                                    NOT NULL,
-				"col1" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"col2" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"col3" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"col4" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"col5" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"col6" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"col1" VarChar(100) CHARACTER SET UNICODE_FSS,
+				"col2" VarChar(100) CHARACTER SET UNICODE_FSS,
+				"col3" VarChar(100) CHARACTER SET UNICODE_FSS,
+				"col4" VarChar(100) CHARACTER SET UNICODE_FSS,
+				"col5" VarChar(100) CHARACTER SET UNICODE_FSS,
+				"col6" VarChar(100) CHARACTER SET UNICODE_FSS,
 
 				CONSTRAINT "PK_gt_s_one" PRIMARY KEY ("id")
 			)

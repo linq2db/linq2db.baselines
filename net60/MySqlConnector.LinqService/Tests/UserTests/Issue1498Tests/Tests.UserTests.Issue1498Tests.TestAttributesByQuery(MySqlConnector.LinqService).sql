@@ -3,9 +3,9 @@
 
 CREATE TABLE `Topic`
 (
-	`Id`    INT          NOT NULL,
-	`Title` VARCHAR(255)     NULL,
-	`Text`  VARCHAR(255)     NULL
+	`Id`    INT           NOT NULL,
+	`Title` VARCHAR(4000)     NULL,
+	`Text`  VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -13,9 +13,9 @@ BeforeExecute
 
 CREATE TABLE `Message`
 (
-	`Id`      INT          NOT NULL,
-	`TopicId` INT          NOT NULL,
-	`Text`    VARCHAR(255)     NULL
+	`Id`      INT           NOT NULL,
+	`TopicId` INT           NOT NULL,
+	`Text`    VARCHAR(4000)     NULL
 )
 
 BeforeExecute

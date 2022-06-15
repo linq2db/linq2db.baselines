@@ -173,12 +173,12 @@ BEGIN
 		CREATE TABLE "Commercial_Property"
 		(
 			"Commercial_Property_Id" Int          NOT NULL,
-			"Street_Number"          VarChar(255)     NULL,
-			"Street_Name"            VarChar(255)     NULL,
-			"State"                  VarChar(255)     NULL,
-			"Zip_Code"               VarChar(255)     NULL,
-			"Zip_Plus_4"             VarChar(255)     NULL,
-			"City_Code"              VarChar(255)     NULL
+			"Street_Number"          VarChar(100)     NULL,
+			"Street_Name"            VarChar(100)     NULL,
+			"State"                  VarChar(100)     NULL,
+			"Zip_Code"               VarChar(100)     NULL,
+			"Zip_Plus_4"             VarChar(100)     NULL,
+			"City_Code"              VarChar(100)     NULL
 		)
 	';
 EXCEPTION

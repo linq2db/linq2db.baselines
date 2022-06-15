@@ -3,8 +3,8 @@
 
 CREATE TABLE `Issue1403Tests_2`
 (
-	`event_id`          INT          NOT NULL,
-	`event_description` VARCHAR(255) NOT NULL,
+	`event_id`          INT           NOT NULL,
+	`event_description` VARCHAR(4000) NOT NULL,
 
 	CONSTRAINT `PK_Issue1403Tests_2` PRIMARY KEY CLUSTERED (`event_id`)
 )

@@ -5,9 +5,9 @@ CREATE TABLE NC_CODE
 (
 	HANDLE             VarChar(255) NOT NULL,
 	CHANGE_STAMP       Decimal          NULL,
-	SITE               VarChar(255)     NULL,
-	NC_CODE            VarChar(255)     NULL,
-	DESCRIPTION        VarChar(255)     NULL,
+	SITE               VarChar(18)      NULL,
+	NC_CODE            VarChar(48)      NULL,
+	DESCRIPTION        VarChar(120)     NULL,
 	STATUS_BO          VarChar(255)     NULL,
 	CREATED_DATE_TIME  timestamp        NULL,
 	MODIFIED_DATE_TIME timestamp        NULL,

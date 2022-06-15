@@ -8,11 +8,11 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Mixed`
 (
-	`Int`    INT          NOT NULL,
-	`Str`    VARCHAR(255)     NULL,
-	`Date`   DATETIME     NOT NULL,
-	`Double` DOUBLE       NOT NULL,
-	`Bool`   BOOLEAN      NOT NULL
+	`Int`    INT           NOT NULL,
+	`Str`    VARCHAR(4000)     NULL,
+	`Date`   DATETIME      NOT NULL,
+	`Double` DOUBLE        NOT NULL,
+	`Bool`   BOOLEAN       NOT NULL
 )
 
 BeforeExecute

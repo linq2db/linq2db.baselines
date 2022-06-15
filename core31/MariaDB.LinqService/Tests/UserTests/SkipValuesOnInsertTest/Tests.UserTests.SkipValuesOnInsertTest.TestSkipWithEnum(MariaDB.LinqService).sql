@@ -3,10 +3,10 @@
 
 CREATE TABLE `PR_1598_Insert_Enum_Table`
 (
-	`Id`     INT          NOT NULL,
-	`Name`   VARCHAR(255)     NULL,
-	`Age`    INT              NULL,
-	`Gender` VARCHAR(6)       NULL,
+	`Id`     INT           NOT NULL,
+	`Name`   VARCHAR(4000)     NULL,
+	`Age`    INT               NULL,
+	`Gender` VARCHAR(6)        NULL,
 
 	CONSTRAINT `PK_PR_1598_Insert_Enum_Table` PRIMARY KEY CLUSTERED (`Id`)
 )

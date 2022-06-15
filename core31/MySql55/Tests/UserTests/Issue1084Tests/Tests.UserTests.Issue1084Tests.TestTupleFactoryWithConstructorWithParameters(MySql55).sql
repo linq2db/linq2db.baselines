@@ -13,9 +13,9 @@ BeforeExecute
 
 CREATE TABLE `i1084_student`
 (
-	`Id`            INT          NOT NULL,
-	`Number`        VARCHAR(255)     NULL,
-	`StatusBitmask` INT          NOT NULL
+	`Id`            INT           NOT NULL,
+	`Number`        VARCHAR(4000)     NULL,
+	`StatusBitmask` INT           NOT NULL
 )
 
 BeforeExecute

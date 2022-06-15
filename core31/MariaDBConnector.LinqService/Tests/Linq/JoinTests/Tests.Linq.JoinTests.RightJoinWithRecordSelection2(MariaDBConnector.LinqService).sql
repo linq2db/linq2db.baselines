@@ -65,9 +65,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Tag`
 (
-	`Id`     INT          NOT NULL,
-	`FactId` INT          NOT NULL,
-	`Name`   VARCHAR(255) NOT NULL,
+	`Id`     INT           NOT NULL,
+	`FactId` INT           NOT NULL,
+	`Name`   VARCHAR(4000) NOT NULL,
 
 	CONSTRAINT `PK_Tag` PRIMARY KEY CLUSTERED (`Id`)
 )

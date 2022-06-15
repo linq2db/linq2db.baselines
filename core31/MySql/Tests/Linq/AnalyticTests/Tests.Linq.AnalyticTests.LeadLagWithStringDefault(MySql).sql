@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Issue1799Table3`
 (
-	`ProcessID`   INT          NOT NULL,
-	`ProcessName` VARCHAR(255)     NULL
+	`ProcessID`   INT           NOT NULL,
+	`ProcessName` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

@@ -21,8 +21,8 @@ BeforeExecute
 
 CREATE TABLE `Lookup`
 (
-	`Id`   INT          NOT NULL,
-	`Type` VARCHAR(255)     NULL
+	`Id`   INT           NOT NULL,
+	`Type` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

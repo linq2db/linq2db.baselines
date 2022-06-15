@@ -9,12 +9,12 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS [gt_s_one]
 (
 	[id]   INTEGER       NOT NULL,
-	[col1] NVarChar(255)     NULL,
-	[col2] NVarChar(255)     NULL,
-	[col3] NVarChar(255)     NULL,
-	[col4] NVarChar(255)     NULL,
-	[col5] NVarChar(255)     NULL,
-	[col6] NVarChar(255)     NULL,
+	[col1] NVarChar(100)     NULL,
+	[col2] NVarChar(100)     NULL,
+	[col3] NVarChar(100)     NULL,
+	[col4] NVarChar(100)     NULL,
+	[col5] NVarChar(100)     NULL,
+	[col6] NVarChar(100)     NULL,
 
 	CONSTRAINT [PK_gt_s_one] PRIMARY KEY ([id])
 )

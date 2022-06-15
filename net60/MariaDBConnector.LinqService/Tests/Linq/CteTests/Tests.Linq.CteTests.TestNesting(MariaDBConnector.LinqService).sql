@@ -3,7 +3,7 @@
 
 CREATE TABLE `NestingA`
 (
-	`Property1` VARCHAR(255)     NULL
+	`Property1` VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -11,8 +11,8 @@ BeforeExecute
 
 CREATE TABLE `NestingB`
 (
-	`Property1` VARCHAR(255)     NULL,
-	`Property2` VARCHAR(255)     NULL
+	`Property1` VARCHAR(4000)     NULL,
+	`Property2` VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -20,9 +20,9 @@ BeforeExecute
 
 CREATE TABLE `NestingC`
 (
-	`Property1` VARCHAR(255)     NULL,
-	`Property2` VARCHAR(255)     NULL,
-	`Property3` VARCHAR(255)     NULL
+	`Property1` VARCHAR(4000)     NULL,
+	`Property2` VARCHAR(4000)     NULL,
+	`Property3` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

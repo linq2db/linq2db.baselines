@@ -5,9 +5,9 @@ CREATE TABLE [NC_CODE]
 (
 	[HANDLE]             NVarChar(4000) NOT NULL,
 	[CHANGE_STAMP]       Decimal            NULL,
-	[SITE]               NVarChar(4000)     NULL,
-	[NC_CODE]            NVarChar(4000)     NULL,
-	[DESCRIPTION]        NVarChar(4000)     NULL,
+	[SITE]               NVarChar(18)       NULL,
+	[NC_CODE]            NVarChar(48)       NULL,
+	[DESCRIPTION]        NVarChar(120)      NULL,
 	[STATUS_BO]          NVarChar(4000)     NULL,
 	[CREATED_DATE_TIME]  DateTime2          NULL,
 	[MODIFIED_DATE_TIME] DateTime2          NULL,

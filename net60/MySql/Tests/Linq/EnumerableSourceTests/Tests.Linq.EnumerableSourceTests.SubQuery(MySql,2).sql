@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `TableToInsert`
 (
-	`Id`    INT          NOT NULL,
-	`Value` VARCHAR(255)     NULL,
+	`Id`    INT           NOT NULL,
+	`Value` VARCHAR(4000)     NULL,
 
 	CONSTRAINT `PK_TableToInsert` PRIMARY KEY CLUSTERED (`Id`)
 )

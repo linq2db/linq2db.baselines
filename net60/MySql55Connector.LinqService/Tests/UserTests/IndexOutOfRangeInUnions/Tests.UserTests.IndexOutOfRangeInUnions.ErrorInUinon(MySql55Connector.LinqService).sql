@@ -3,10 +3,10 @@
 
 CREATE TABLE `O1`
 (
-	`DocEntry`    INT          NOT NULL,
-	`BplId`       INT          NOT NULL,
-	`ChaveAcesso` VARCHAR(255)     NULL,
-	`DocStatus`   VARCHAR(255)     NULL
+	`DocEntry`    INT           NOT NULL,
+	`BplId`       INT           NOT NULL,
+	`ChaveAcesso` VARCHAR(4000)     NULL,
+	`DocStatus`   VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -14,10 +14,10 @@ BeforeExecute
 
 CREATE TABLE `O2`
 (
-	`DocEntry`    INT          NOT NULL,
-	`BplId`       INT          NOT NULL,
-	`ChaveAcesso` VARCHAR(255)     NULL,
-	`DocStatus`   VARCHAR(255)     NULL
+	`DocEntry`    INT           NOT NULL,
+	`BplId`       INT           NOT NULL,
+	`ChaveAcesso` VARCHAR(4000)     NULL,
+	`DocStatus`   VARCHAR(4000)     NULL
 )
 
 BeforeExecute
@@ -25,10 +25,10 @@ BeforeExecute
 
 CREATE TABLE `O3`
 (
-	`DocEntry`    INT          NOT NULL,
-	`BplId`       INT          NOT NULL,
-	`ChaveAcesso` VARCHAR(255)     NULL,
-	`DocStatus`   VARCHAR(255)     NULL
+	`DocEntry`    INT           NOT NULL,
+	`BplId`       INT           NOT NULL,
+	`ChaveAcesso` VARCHAR(4000)     NULL,
+	`DocStatus`   VARCHAR(4000)     NULL
 )
 
 BeforeExecute

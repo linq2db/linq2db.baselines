@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
-	`Int`            INT          NOT NULL,
-	`NullableInt`    INT              NULL,
-	`String`         VARCHAR(255)     NULL,
-	`NullableString` VARCHAR(255)     NULL
+	`Int`            INT           NOT NULL,
+	`NullableInt`    INT               NULL,
+	`String`         VARCHAR(4000)     NULL,
+	`NullableString` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

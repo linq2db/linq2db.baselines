@@ -3,9 +3,9 @@
 
 CREATE TABLE `SampleClass`
 (
-	`Id`     INT          NOT NULL,
-	`Value`  VARCHAR(50)      NULL,
-	`Value2` VARCHAR(255)     NULL
+	`Id`     INT           NOT NULL,
+	`Value`  VARCHAR(50)       NULL,
+	`Value2` VARCHAR(4000)     NULL
 )
 
 BeforeExecute

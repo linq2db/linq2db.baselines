@@ -3,10 +3,10 @@
 
 CREATE TABLE `T1`
 (
-	`InstrumentId`         INT          NOT NULL,
-	`InstrumentCode`       VARCHAR(255)     NULL,
-	`CreateDate`           DATETIME     NOT NULL,
-	`SourceInstrumentCode` VARCHAR(255)     NULL,
+	`InstrumentId`         INT           NOT NULL,
+	`InstrumentCode`       VARCHAR(4000)     NULL,
+	`CreateDate`           DATETIME      NOT NULL,
+	`SourceInstrumentCode` VARCHAR(4000)     NULL,
 
 	CONSTRAINT `PK_T1` PRIMARY KEY CLUSTERED (`InstrumentId`)
 )
