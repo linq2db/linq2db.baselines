@@ -123,12 +123,12 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS [Commercial_Property]
 (
 	[Commercial_Property_Id] INTEGER       NOT NULL,
-	[Street_Number]          NVarChar(255)     NULL,
-	[Street_Name]            NVarChar(255)     NULL,
-	[State]                  NVarChar(255)     NULL,
-	[Zip_Code]               NVarChar(255)     NULL,
-	[Zip_Plus_4]             NVarChar(255)     NULL,
-	[City_Code]              NVarChar(255)     NULL
+	[Street_Number]          NVarChar(100)     NULL,
+	[Street_Name]            NVarChar(100)     NULL,
+	[State]                  NVarChar(100)     NULL,
+	[Zip_Code]               NVarChar(100)     NULL,
+	[Zip_Plus_4]             NVarChar(100)     NULL,
+	[City_Code]              NVarChar(100)     NULL
 )
 
 BeforeExecute
