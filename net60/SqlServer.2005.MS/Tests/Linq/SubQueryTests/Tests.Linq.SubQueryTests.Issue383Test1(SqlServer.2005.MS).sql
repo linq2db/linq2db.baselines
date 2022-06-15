@@ -128,13 +128,13 @@ BeforeExecute
 IF (OBJECT_ID(N'[Commercial_Property]', N'U') IS NULL)
 	CREATE TABLE [Commercial_Property]
 	(
-		[Commercial_Property_Id] Int            NOT NULL,
-		[Street_Number]          NVarChar(4000)     NULL,
-		[Street_Name]            NVarChar(4000)     NULL,
-		[State]                  NVarChar(4000)     NULL,
-		[Zip_Code]               NVarChar(4000)     NULL,
-		[Zip_Plus_4]             NVarChar(4000)     NULL,
-		[City_Code]              NVarChar(4000)     NULL
+		[Commercial_Property_Id] Int           NOT NULL,
+		[Street_Number]          NVarChar(100)     NULL,
+		[Street_Name]            NVarChar(100)     NULL,
+		[State]                  NVarChar(100)     NULL,
+		[Zip_Code]               NVarChar(100)     NULL,
+		[Zip_Plus_4]             NVarChar(100)     NULL,
+		[City_Code]              NVarChar(100)     NULL
 	)
 
 BeforeExecute
