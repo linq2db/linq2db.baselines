@@ -9,10 +9,8 @@ CREATE TABLE [SampleClass]
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	DateAdd(day, 1, CURRENT_TIMESTAMP),
 	DateAdd(day, 2, CURRENT_TIMESTAMP)
 

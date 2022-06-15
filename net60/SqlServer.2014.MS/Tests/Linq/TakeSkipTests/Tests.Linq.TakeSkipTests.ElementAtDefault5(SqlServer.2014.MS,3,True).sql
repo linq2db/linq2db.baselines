@@ -2,8 +2,6 @@
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @skip Int -- Int32
 SET     @skip = 3
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[FirstName],
@@ -15,5 +13,5 @@ FROM
 	[Person] [t1]
 ORDER BY
 	[t1].[LastName]
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 
