@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT
 	[cp].[ParentID],
@@ -26,7 +22,7 @@ SELECT
 FROM
 	[Parent] [cp]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[c_2].[ParentID] as [First1]
 			FROM
 				[Child] [c_2]
@@ -37,7 +33,7 @@ FROM
 				[c_2].[ChildID]
 		) [t1]
 		OUTER APPLY (
-			SELECT TOP (@take_1)
+			SELECT TOP (1)
 				[c_3].[ParentID],
 				[c_3].[ChildID]
 			FROM

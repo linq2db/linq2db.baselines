@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[ID],
 	[t1].[MoneyValue],
 	[t1].[DateTimeValue],
@@ -57,10 +55,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[ID],
 	[t1].[MoneyValue],
 	[t1].[DateTimeValue],

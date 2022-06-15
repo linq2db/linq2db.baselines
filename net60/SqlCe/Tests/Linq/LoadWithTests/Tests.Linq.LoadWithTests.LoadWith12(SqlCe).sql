@@ -74,10 +74,8 @@ FROM
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[p].[ParentID],
 	[p].[Value1]
 FROM

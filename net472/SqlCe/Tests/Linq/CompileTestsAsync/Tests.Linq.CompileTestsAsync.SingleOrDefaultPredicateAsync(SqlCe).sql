@@ -33,12 +33,10 @@ SELECT 10
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]

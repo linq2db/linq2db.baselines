@@ -1,11 +1,9 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @p NVarChar(4) -- String
 SET     @p = 'John'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t].[PersonID],
 	[t].[FirstName],
 	[t].[LastName],
@@ -18,12 +16,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @p NVarChar(6) -- String
 SET     @p = 'Tester'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t].[PersonID],
 	[t].[FirstName],
 	[t].[LastName],
