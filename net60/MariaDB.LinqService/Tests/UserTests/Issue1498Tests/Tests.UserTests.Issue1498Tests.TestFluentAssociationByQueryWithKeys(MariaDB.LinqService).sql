@@ -115,8 +115,6 @@ FROM
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`x`.`Id`,
@@ -126,7 +124,7 @@ FROM
 	`Topic` `x`
 WHERE
 	`x`.`Id` = 6
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

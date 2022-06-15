@@ -9,8 +9,6 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 INSERT INTO `Person`
 (
@@ -27,7 +25,7 @@ VALUES
 			`Person` `p`
 		WHERE
 			`p`.`PersonID` = 1
-		LIMIT @take
+		LIMIT 1
 	)),
 	'Shepard',
 	'M'

@@ -37,8 +37,6 @@ BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`ID`,
@@ -47,7 +45,7 @@ FROM
 	`test_temp` `t1`
 ORDER BY
 	`t1`.`ID`
-LIMIT @skip, @take
+LIMIT @skip, 2
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -82,8 +80,6 @@ BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`ID`,
@@ -92,7 +88,7 @@ FROM
 	`test_temp` `t1`
 ORDER BY
 	`t1`.`ID`
-LIMIT @skip, @take
+LIMIT @skip, 2
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

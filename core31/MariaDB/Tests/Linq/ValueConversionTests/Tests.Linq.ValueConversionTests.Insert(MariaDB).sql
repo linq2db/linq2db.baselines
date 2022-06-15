@@ -53,8 +53,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`e`.`Id`,
@@ -71,7 +69,7 @@ FROM
 	`ValueConversion` `e`
 WHERE
 	`e`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -109,8 +107,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`e`.`Id`,
@@ -127,7 +123,7 @@ FROM
 	`ValueConversion` `e`
 WHERE
 	`e`.`Id` = 2
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -181,8 +177,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`e`.`Id`,
@@ -199,7 +193,7 @@ FROM
 	`ValueConversion` `e`
 WHERE
 	`e`.`Id` = 3
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

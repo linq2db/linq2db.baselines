@@ -32,8 +32,6 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -43,7 +41,7 @@ FROM
 	`PR_1598_Insert_Table_Cache` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -67,8 +65,6 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -78,7 +74,7 @@ FROM
 	`PR_1598_Insert_Table_Cache` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

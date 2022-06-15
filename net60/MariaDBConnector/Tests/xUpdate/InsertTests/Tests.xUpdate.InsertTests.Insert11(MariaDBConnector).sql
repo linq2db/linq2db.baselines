@@ -36,8 +36,6 @@ BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 4
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p2`.`PersonID`,
@@ -49,7 +47,7 @@ FROM
 	`Person` `p2`
 WHERE
 	`p2`.`PersonID` > @id
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

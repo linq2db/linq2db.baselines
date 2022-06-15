@@ -282,8 +282,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`VarCharDefault`,
@@ -341,7 +339,7 @@ SELECT
 	`t1`.`Guid`
 FROM
 	`CreateTable` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
