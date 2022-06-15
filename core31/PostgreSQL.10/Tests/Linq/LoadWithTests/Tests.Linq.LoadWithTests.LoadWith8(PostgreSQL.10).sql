@@ -13,7 +13,7 @@ SELECT
 	"a_Parent"."Value1"
 FROM
 	"GrandChild" p
-		INNER JOIN "Child" "a_Child" ON p."ParentID" = "a_Child"."ParentID" AND p."ChildID" = "a_Child"."ChildID"
+		LEFT JOIN "Child" "a_Child" ON p."ParentID" = "a_Child"."ParentID" AND p."ChildID" = "a_Child"."ChildID"
 		INNER JOIN "GrandChild" c_1
 			LEFT JOIN "Child" "a_Child_1" ON c_1."ParentID" = "a_Child_1"."ParentID" AND c_1."ChildID" = "a_Child_1"."ChildID"
 		ON "a_Child"."ParentID" = c_1."ParentID" AND "a_Child"."ChildID" = c_1."ChildID"

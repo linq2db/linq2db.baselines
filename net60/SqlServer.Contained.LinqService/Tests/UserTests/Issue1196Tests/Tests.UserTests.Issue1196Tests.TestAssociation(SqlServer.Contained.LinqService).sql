@@ -94,7 +94,7 @@ SELECT
 	[a_DocPrepareAssignment].[DateRevoke]
 FROM
 	[Requests] [r]
-		INNER JOIN [FirmInfo] [a_FirmInfo] ON [r].[FirmId] = [a_FirmInfo].[Id]
+		LEFT JOIN [FirmInfo] [a_FirmInfo] ON [r].[FirmId] = [a_FirmInfo].[Id]
 		INNER JOIN [Requests] [c_1] ON [a_FirmInfo].[Id] = [c_1].[FirmId]
 		LEFT JOIN [Assignments] [a_DocPrepareAssignment] ON [a_DocPrepareAssignment].[TargetId] = [c_1].[Id]
 WHERE
@@ -112,7 +112,7 @@ SELECT
 	[a_DocPrepareAssignment].[DateRevoke]
 FROM
 	[Requests] [r]
-		INNER JOIN [FirmInfo] [a_FirmInfo] ON [r].[FirmId] = [a_FirmInfo].[Id]
+		LEFT JOIN [FirmInfo] [a_FirmInfo] ON [r].[FirmId] = [a_FirmInfo].[Id]
 		INNER JOIN [Requests] [c_1] ON [a_FirmInfo].[Id] = [c_1].[FirmId]
 		LEFT JOIN [Assignments] [a_DocPrepareAssignment] ON [a_DocPrepareAssignment].[TargetId] = [c_1].[Id]
 WHERE
