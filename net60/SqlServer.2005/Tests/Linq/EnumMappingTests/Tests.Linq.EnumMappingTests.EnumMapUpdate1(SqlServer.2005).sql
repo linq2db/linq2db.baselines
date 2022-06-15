@@ -37,10 +37,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]

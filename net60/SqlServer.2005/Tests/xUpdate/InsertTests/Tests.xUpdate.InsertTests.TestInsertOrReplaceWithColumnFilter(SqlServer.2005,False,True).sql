@@ -48,12 +48,10 @@ END
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],
@@ -105,12 +103,10 @@ END
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],

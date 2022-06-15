@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id2 Int -- Int32
 SET     @id2 = 3
 DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 3
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[с].[ChildID]
 FROM
 	[GrandChild] [с]
