@@ -589,7 +589,7 @@ BeforeExecute
 -- MySqlConnector MySql
 
 CREATE PROCEDURE `Issue2313Parameters`(
-	IN `VarChar255` VARCHAR(255),
+	IN `VarCharDefault` VARCHAR(255),
 	IN `VarChar1` VARCHAR(1),
 	IN `Char255` CHAR(255),
 	IN `Char1` CHAR(1),
@@ -646,7 +646,7 @@ CREATE PROCEDURE `Issue2313Parameters`(
 )
 BEGIN
 	SELECT
-	`VarChar255`,
+	`VarCharDefault`,
 	`VarChar1`,
 	`Char255`,
 	`Char1`,
@@ -707,7 +707,7 @@ BeforeExecute
 -- MySqlConnector MySql
 
 CREATE PROCEDURE `Issue2313Results`(
-	IN `VarChar255` VARCHAR(255),
+	IN `VarCharDefault` VARCHAR(4000),
 	IN `VarChar1` VARCHAR(1),
 	IN `Char255` CHAR(255),
 	IN `Char1` CHAR(1),
@@ -776,7 +776,7 @@ CREATE PROCEDURE `Issue2313Results`(
 )
 BEGIN
 	SELECT
-	`VarChar255`,
+	`VarCharDefault`,
 	`VarChar1`,
 	`Char255`,
 	`Char1`,

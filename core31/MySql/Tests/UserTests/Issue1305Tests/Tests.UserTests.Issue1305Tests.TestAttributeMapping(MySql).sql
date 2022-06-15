@@ -3,14 +3,14 @@
 
 CREATE TABLE `ColumnOrderTest`
 (
-	`RecordID`       INT          NOT NULL,
-	`EffectiveStart` DATETIME     NOT NULL,
-	`EffectiveEnd`   DATETIME         NULL,
-	`Key`            INT          NOT NULL,
-	`Code`           VARCHAR(255)     NULL,
-	`Name`           VARCHAR(255)     NULL,
-	`Audit1ID`       INT          NOT NULL,
-	`Audit2ID`       INT          NOT NULL,
+	`RecordID`       INT           NOT NULL,
+	`EffectiveStart` DATETIME      NOT NULL,
+	`EffectiveEnd`   DATETIME          NULL,
+	`Key`            INT           NOT NULL,
+	`Code`           VARCHAR(4000)     NULL,
+	`Name`           VARCHAR(4000)     NULL,
+	`Audit1ID`       INT           NOT NULL,
+	`Audit2ID`       INT           NOT NULL,
 
 	CONSTRAINT `PK_ColumnOrderTest` PRIMARY KEY CLUSTERED (`RecordID`)
 )
@@ -110,8 +110,8 @@ BeforeExecute
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @VarChar255 VarChar(255) -- AnsiString
-SET     @VarChar255 = NULL
+DECLARE @VarCharDefault VarChar(255) -- AnsiString
+SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
 SET     @VarChar1 = NULL
 DECLARE @Char255 String(255) -- AnsiStringFixedLength
@@ -215,8 +215,8 @@ SET     @GeometryCollection = NULL
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @VarChar255 VarChar(255) -- AnsiString
-SET     @VarChar255 = NULL
+DECLARE @VarCharDefault VarChar(4000) -- AnsiString
+SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
 SET     @VarChar1 = NULL
 DECLARE @Char255 String(255) -- AnsiStringFixedLength

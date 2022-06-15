@@ -3,10 +3,10 @@
 
 CREATE TABLE `Parent564`
 (
-	`Id`          INT          AUTO_INCREMENT NOT NULL,
-	`Type`        VARCHAR(255)                    NULL,
-	`StringValue` VARCHAR(20)                     NULL,
-	`IntValue`    INT                             NULL,
+	`Id`          INT           AUTO_INCREMENT NOT NULL,
+	`Type`        VARCHAR(4000)                    NULL,
+	`StringValue` VARCHAR(20)                      NULL,
+	`IntValue`    INT                              NULL,
 
 	CONSTRAINT `PK_Parent564` PRIMARY KEY CLUSTERED (`Id`)
 )

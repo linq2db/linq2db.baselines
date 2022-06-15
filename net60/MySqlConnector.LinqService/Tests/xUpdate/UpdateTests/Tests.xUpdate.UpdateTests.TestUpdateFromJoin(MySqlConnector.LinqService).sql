@@ -9,12 +9,12 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS `gt_s_one`
 (
 	`id`   INT          NOT NULL,
-	`col1` VARCHAR(255)     NULL,
-	`col2` VARCHAR(255)     NULL,
-	`col3` VARCHAR(255)     NULL,
-	`col4` VARCHAR(255)     NULL,
-	`col5` VARCHAR(255)     NULL,
-	`col6` VARCHAR(255)     NULL,
+	`col1` VARCHAR(100)     NULL,
+	`col2` VARCHAR(100)     NULL,
+	`col3` VARCHAR(100)     NULL,
+	`col4` VARCHAR(100)     NULL,
+	`col5` VARCHAR(100)     NULL,
+	`col6` VARCHAR(100)     NULL,
 
 	CONSTRAINT `PK_gt_s_one` PRIMARY KEY CLUSTERED (`id`)
 )
@@ -29,8 +29,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `access_mode`
 (
-	`id`   INT          NOT NULL,
-	`code` VARCHAR(255)     NULL,
+	`id`   INT           NOT NULL,
+	`code` VARCHAR(4000)     NULL,
 
 	CONSTRAINT `PK_access_mode` PRIMARY KEY CLUSTERED (`id`)
 )

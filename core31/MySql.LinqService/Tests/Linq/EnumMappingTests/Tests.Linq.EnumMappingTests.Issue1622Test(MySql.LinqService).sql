@@ -3,8 +3,8 @@
 
 CREATE TABLE `Issue1622Table`
 (
-	`Id`       INT          NOT NULL,
-	`SomeText` VARCHAR(255)     NULL,
+	`Id`       INT           NOT NULL,
+	`SomeText` VARCHAR(4000)     NULL,
 
 	CONSTRAINT `PK_Issue1622Table` PRIMARY KEY CLUSTERED (`Id`)
 )

@@ -265,9 +265,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Document`
 (
-	`AttachmentId` INT          NOT NULL,
-	`Position`     INT          NOT NULL,
-	`Name`         VARCHAR(255)     NULL,
+	`AttachmentId` INT           NOT NULL,
+	`Position`     INT           NOT NULL,
+	`Name`         VARCHAR(4000)     NULL,
 
 	CONSTRAINT `PK_Document` PRIMARY KEY CLUSTERED (`AttachmentId`, `Position`)
 )

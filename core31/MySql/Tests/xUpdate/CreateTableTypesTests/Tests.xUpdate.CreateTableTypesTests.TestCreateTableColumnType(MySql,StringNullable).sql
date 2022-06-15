@@ -3,8 +3,8 @@
 
 CREATE TABLE `CreateTableTypes`
 (
-	`String` VARCHAR(255)     NULL,
-	`Id`     INT          NOT NULL
+	`String` VARCHAR(4000)     NULL,
+	`Id`     INT           NOT NULL
 )
 
 BeforeExecute
