@@ -1,107 +1,89 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value_1 Decimal(9, 5)
 SET     @value_1 = 6579.64648
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(Decimal(29, 10), @value_1)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value_1 Real -- Single
 SET     @value_1 = 6579.64648
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(Decimal(29, 10), @value_1)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value_1 Float -- Double
 SET     @value_1 = 6579.6464800000003
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(Decimal(29, 10), @value_1)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value_1 Decimal(9, 5)
 SET     @value_1 = 6579.64648
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(Real, @value_1)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value_1 Real -- Single
 SET     @value_1 = 6579.64648
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(Real, @value_1)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value_1 Float -- Double
 SET     @value_1 = 6579.6464800000003
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(Real, @value_1)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value_1 Decimal(9, 5)
 SET     @value_1 = 6579.64648
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(Float, @value_1)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value_1 Real -- Single
 SET     @value_1 = 6579.64648
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(Float, @value_1)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value_1 Float -- Double
 SET     @value_1 = 6579.6464800000003
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	Convert(Float, @value_1)
 FROM
 	[LinqDataTypes] [_]

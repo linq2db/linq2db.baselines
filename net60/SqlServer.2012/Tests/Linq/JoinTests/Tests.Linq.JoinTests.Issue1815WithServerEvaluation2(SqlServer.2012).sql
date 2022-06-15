@@ -63,10 +63,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[InId],
 	IIF([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
 	IIF([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])
@@ -78,10 +76,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[InId],
 	IIF([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
 	IIF([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])
