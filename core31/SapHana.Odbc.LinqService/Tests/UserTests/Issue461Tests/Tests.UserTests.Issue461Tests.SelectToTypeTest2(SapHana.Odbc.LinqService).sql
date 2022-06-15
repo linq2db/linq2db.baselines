@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"l"."ParentID"
 FROM
 	"Child" "l"
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

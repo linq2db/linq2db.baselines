@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."ID",
@@ -16,7 +14,7 @@ SELECT
 	"t1"."StringValue"
 FROM
 	"LinqDataTypes" "t1"
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -58,8 +56,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."ID",
@@ -74,7 +70,7 @@ SELECT
 	"t1"."StringValue"
 FROM
 	"LinqDataTypes" "t1"
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

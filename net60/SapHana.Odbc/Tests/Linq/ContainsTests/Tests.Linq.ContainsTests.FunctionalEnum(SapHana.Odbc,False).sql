@@ -68,8 +68,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -77,12 +75,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', 'FOUR')
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -90,12 +86,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', NULL)
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -103,12 +97,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', 'TWO')
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -116,12 +108,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" NOT IN (NULL, 'TWO')
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -129,7 +119,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" NOT IN ('THREE', 'TWO')
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

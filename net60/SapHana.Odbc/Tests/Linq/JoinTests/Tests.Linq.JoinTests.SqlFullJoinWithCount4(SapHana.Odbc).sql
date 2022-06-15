@@ -4,8 +4,6 @@ DECLARE @id1  -- Int32
 SET     @id1 = 1
 DECLARE @id2  -- Int32
 SET     @id2 = 2
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	COUNT("left_1"."ParentID"),
@@ -28,5 +26,5 @@ FROM
 			WHERE
 				"p_1"."ParentID" <> ?
 		) "t1" ON "t1"."ParentID" = "left_1"."ParentID"
-LIMIT ?
+LIMIT 2
 

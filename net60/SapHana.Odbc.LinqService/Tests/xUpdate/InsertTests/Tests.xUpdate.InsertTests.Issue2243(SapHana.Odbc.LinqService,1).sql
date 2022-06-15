@@ -52,8 +52,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."id",
@@ -62,7 +60,7 @@ SELECT
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -83,8 +81,6 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."id",
@@ -93,7 +89,7 @@ SELECT
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

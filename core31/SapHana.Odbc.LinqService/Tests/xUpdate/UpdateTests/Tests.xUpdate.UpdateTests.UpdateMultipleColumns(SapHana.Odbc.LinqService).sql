@@ -47,8 +47,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 1001
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t"."ID",
@@ -63,7 +61,7 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t"."ID" = ?
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -29,8 +29,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"_"."Id",
@@ -39,12 +37,10 @@ FROM
 	"BlobClass" "_"
 WHERE
 	"_"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"_"."Id",
@@ -53,7 +49,7 @@ FROM
 	"BlobClass" "_"
 WHERE
 	"_"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 DECLARE @n  -- Int32
 SET     @n = 300000
 
@@ -12,5 +10,5 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" > 1
-LIMIT ? OFFSET ?
+LIMIT 1 OFFSET ?
 

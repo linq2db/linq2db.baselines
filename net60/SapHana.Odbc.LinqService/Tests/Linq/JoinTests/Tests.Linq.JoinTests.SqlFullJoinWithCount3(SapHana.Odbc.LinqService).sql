@@ -2,8 +2,6 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 1
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	COUNT("left_1"."ParentID"),
@@ -19,5 +17,5 @@ FROM
 			WHERE
 				"p"."ParentID" <> ?
 		) "t1" ON "t1"."ParentID" = "left_1"."ParentID"
-LIMIT ?
+LIMIT 2
 

@@ -34,8 +34,6 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t2"."Value1",
@@ -61,7 +59,7 @@ FROM
 FROM DUMMY
 			) "t1"
 	) "t2"
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction
