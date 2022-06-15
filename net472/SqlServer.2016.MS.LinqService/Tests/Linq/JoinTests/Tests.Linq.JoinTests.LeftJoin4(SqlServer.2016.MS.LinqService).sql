@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[x5].[ParentID],
@@ -12,7 +10,7 @@ FROM
 	[Parent] [x5]
 		LEFT JOIN [Child] [y2] ON [x5].[ParentID] = [y2].[ParentID] AND [x5].[Value1] = [y2].[ParentID]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[y1].[ParentID],
 				[y1].[ChildID]
 			FROM

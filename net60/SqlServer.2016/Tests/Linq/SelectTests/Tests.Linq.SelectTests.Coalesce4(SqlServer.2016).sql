@@ -1,11 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	Coalesce((
-		SELECT TOP (@take)
+		SELECT TOP (1)
 			[a_Parent].[Value1]
 		FROM
 			[Child] [ch]
