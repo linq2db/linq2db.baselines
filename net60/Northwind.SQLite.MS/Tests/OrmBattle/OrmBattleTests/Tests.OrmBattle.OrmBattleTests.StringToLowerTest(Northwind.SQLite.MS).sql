@@ -81,8 +81,6 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[c_1].[Fax],
@@ -100,5 +98,5 @@ FROM
 	[Customers] [c_1]
 WHERE
 	Lower([c_1].[City]) = 'seattle'
-LIMIT @take
+LIMIT 1
 

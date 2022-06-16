@@ -52,8 +52,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -62,7 +60,7 @@ SELECT
 FROM
 	[SomeEntity] [t]
 		LEFT JOIN [SomeOtherEntity] [t2] ON [t2].[Id] = [t].[OtherId]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -81,8 +81,6 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[c_1].[Fax],
@@ -104,5 +102,5 @@ WHERE
 			THEN [c_1].[City]
 		ELSE Replicate(' ', 8 - Length([c_1].[City])) || [c_1].[City]
 	END = '123 Seattle'
-LIMIT @take
+LIMIT 1
 

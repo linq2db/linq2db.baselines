@@ -123,8 +123,6 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[Id1],
@@ -133,7 +131,7 @@ FROM
 	[MasterClass] [x]
 WHERE
 	[x].[Id1] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction
@@ -169,8 +167,6 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[Id1],
@@ -179,7 +175,7 @@ FROM
 	[MasterClass] [x]
 WHERE
 	[x].[Id1] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction
@@ -215,8 +211,6 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[x].[Id1],
@@ -225,7 +219,7 @@ FROM
 	[MasterClass] [x]
 WHERE
 	[x].[Id1] = 1
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 RollbackTransaction

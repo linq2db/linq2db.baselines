@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 DECLARE @skip  -- Int32
 SET     @skip = 3
 
@@ -15,5 +13,5 @@ FROM
 	[Person] [t1]
 ORDER BY
 	[t1].[LastName]
-LIMIT @take OFFSET @skip
+LIMIT 1 OFFSET @skip
 

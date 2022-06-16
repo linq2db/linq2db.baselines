@@ -81,8 +81,6 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[o].[ShipCountry],
@@ -103,5 +101,5 @@ FROM
 	[Orders] [o]
 WHERE
 	(Abs([o].[OrderID]) = 10 OR [o].[OrderID] > 0)
-LIMIT @take
+LIMIT 1
 

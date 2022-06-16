@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[EmployeeID],
@@ -12,7 +10,7 @@ SELECT
 			[Employees] [em]
 		WHERE
 			[em].[EmployeeID] = [t1].[EmployeeID]
-		LIMIT @take
+		LIMIT 1
 	)
 FROM
 	(

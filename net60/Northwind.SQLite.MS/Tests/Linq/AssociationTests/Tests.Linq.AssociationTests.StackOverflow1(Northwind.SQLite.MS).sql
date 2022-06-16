@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[employee].[PhotoPath],
@@ -33,5 +31,5 @@ WHERE
 		WHERE
 			[employee].[EmployeeID] = [t1].[ReportsTo]
 	) > 0
-LIMIT @take
+LIMIT 1
 

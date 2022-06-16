@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	(
@@ -12,7 +10,7 @@ SELECT
 		WHERE
 			[c_1].[ParentID] + 1 < [p1].[ID] AND [c_1].[ParentID] + 1 < [p1].[ID] AND
 			[p1].[ParentID] = [c_1].[ParentID]
-		LIMIT @take
+		LIMIT 1
 	)
 FROM
 	(

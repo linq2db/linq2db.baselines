@@ -39,8 +39,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -51,7 +49,7 @@ FROM
 	[PR_1598_Update_Enum_Table] [t]
 WHERE
 	[t].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -75,8 +73,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -87,7 +83,7 @@ FROM
 	[PR_1598_Update_Enum_Table] [t]
 WHERE
 	[t].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -108,8 +104,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -120,7 +114,7 @@ FROM
 	[PR_1598_Update_Enum_Table] [t]
 WHERE
 	[t].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -75,8 +75,6 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 2
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -85,7 +83,7 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @id
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction

@@ -87,8 +87,6 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[o].[OrderId],
@@ -98,7 +96,7 @@ FROM
 	[Order] [o]
 WHERE
 	[o].[OrderId] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction

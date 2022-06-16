@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t].[ID],
@@ -39,7 +37,7 @@ FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] = 1001
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
