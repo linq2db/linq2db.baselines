@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @skip Integer -- Int32
 SET     @skip = 2
 
-SELECT FIRST 1 SKIP @skip
+SELECT FIRST @take SKIP @skip
 	"p"."ParentID",
 	"p"."Value1"
 FROM

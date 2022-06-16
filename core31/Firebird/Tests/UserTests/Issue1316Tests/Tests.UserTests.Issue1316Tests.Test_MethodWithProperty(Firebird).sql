@@ -24,10 +24,12 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 DECLARE @Item1 Integer -- Int32
 SET     @Item1 = 5
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t1".ID
 FROM
 	"Issue1316Tests" "t1"

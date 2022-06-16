@@ -170,12 +170,14 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	"i"."Id",
 	"a_SubData"."Id",
 	(
-		SELECT FIRST 1
+		SELECT FIRST @take
 			"s"."Reason"
 		FROM
 			"SubData2" "s"

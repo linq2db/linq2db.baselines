@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	"t1"."ParentID",
@@ -8,7 +10,7 @@ FROM
 	"Parent" "t1"
 WHERE
 	(
-		SELECT FIRST 1
+		SELECT FIRST @take
 			"r"."GuidValue"
 		FROM
 			"LinqDataTypes" "r"

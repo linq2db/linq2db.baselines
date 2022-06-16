@@ -34,8 +34,10 @@ SELECT 5,'5' FROM rdb$database
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -45,8 +47,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -56,8 +60,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -67,8 +73,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -78,8 +86,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -89,8 +99,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -100,8 +112,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -111,8 +125,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -122,8 +138,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -133,8 +151,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -144,8 +164,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -155,8 +177,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -166,8 +190,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -177,8 +203,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -188,8 +216,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -199,8 +229,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -210,8 +242,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -221,8 +255,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -232,8 +268,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -243,8 +281,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -254,8 +294,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM
@@ -265,8 +307,10 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"i"."Id",
 	"i"."StrValue"
 FROM

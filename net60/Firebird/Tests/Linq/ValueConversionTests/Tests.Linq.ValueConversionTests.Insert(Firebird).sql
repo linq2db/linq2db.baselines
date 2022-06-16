@@ -53,8 +53,10 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",
@@ -106,8 +108,10 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",
@@ -175,8 +179,10 @@ VALUES
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",

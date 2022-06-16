@@ -45,10 +45,12 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t".ID,
 	"t"."MoneyValue",
 	"t"."DateTimeValue",

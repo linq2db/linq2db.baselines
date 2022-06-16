@@ -43,10 +43,12 @@ RETURNING
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t1"."Id",
 	"t1"."Has"
 FROM

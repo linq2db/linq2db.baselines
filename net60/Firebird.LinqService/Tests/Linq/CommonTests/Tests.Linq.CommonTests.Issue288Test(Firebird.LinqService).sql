@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"p"."FirstName"
 FROM
 	"Person" "p"
@@ -10,10 +12,12 @@ WHERE
 
 BeforeExecute
 -- Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @ID VarChar(4) -- String
 SET     @ID = 'John'
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"p"."FirstName"
 FROM
 	"Person" "p"
