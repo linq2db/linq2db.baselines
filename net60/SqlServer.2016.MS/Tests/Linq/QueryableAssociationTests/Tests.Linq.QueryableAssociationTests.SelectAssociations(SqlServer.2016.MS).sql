@@ -80,15 +80,17 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x_1].[Id],
 	[a_Entity2Language].[LanguageId],
 	[a_Entity2Language].[Name]
 FROM
 	[Entity] [x_1]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (@take_1)
 				[x].[LanguageId],
 				[a_Language].[Name]
 			FROM

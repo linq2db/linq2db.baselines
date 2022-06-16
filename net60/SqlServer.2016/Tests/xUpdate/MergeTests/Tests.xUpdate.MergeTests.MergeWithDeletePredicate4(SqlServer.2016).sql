@@ -28,8 +28,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],

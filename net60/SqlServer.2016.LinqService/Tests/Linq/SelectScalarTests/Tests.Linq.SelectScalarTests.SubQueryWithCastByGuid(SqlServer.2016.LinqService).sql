@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[_].[ParentID],
@@ -8,7 +10,7 @@ FROM
 	[Parent] [_]
 WHERE
 	(
-		SELECT TOP (1)
+		SELECT TOP (@take)
 			[r].[GuidValue]
 		FROM
 			[LinqDataTypes] [r]

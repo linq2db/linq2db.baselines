@@ -9,6 +9,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 INSERT INTO [Person]
 (
@@ -19,7 +21,7 @@ INSERT INTO [Person]
 VALUES
 (
 	N'Insert14' + (
-		SELECT TOP (1)
+		SELECT TOP (@take)
 			[p].[FirstName]
 		FROM
 			[Person] [p]

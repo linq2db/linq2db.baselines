@@ -53,10 +53,12 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],

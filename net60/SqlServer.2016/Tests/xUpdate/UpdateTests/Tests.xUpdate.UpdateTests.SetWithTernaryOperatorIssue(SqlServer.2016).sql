@@ -56,10 +56,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[PersonID],
 	[_].[Gender],
 	[_].[FirstName],
