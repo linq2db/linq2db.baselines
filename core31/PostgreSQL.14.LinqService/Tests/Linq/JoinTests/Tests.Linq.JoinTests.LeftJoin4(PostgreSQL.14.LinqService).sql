@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	x5."ParentID",
@@ -17,7 +19,7 @@ FROM
 				"Child" y1
 			WHERE
 				y1."ParentID" = x5."ParentID" AND y1."ParentID" = x5."Value1"
-			LIMIT 1
+			LIMIT :take
 		) t1 ON 1=1
 WHERE
 	x5."ParentID" = 1 AND x5."Value1" IS NOT NULL

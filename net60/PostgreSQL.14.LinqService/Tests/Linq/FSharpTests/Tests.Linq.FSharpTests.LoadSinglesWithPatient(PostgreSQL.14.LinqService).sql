@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -14,10 +16,12 @@ FROM
 		LEFT JOIN "Patient" "a_Patient" ON p."PersonID" = "a_Patient"."PersonID"
 WHERE
 	p."PersonID" = 1
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -32,5 +36,5 @@ FROM
 		LEFT JOIN "Patient" "a_Patient" ON p."PersonID" = "a_Patient"."PersonID"
 WHERE
 	p."PersonID" = 2
-LIMIT 2
+LIMIT :take
 

@@ -76,6 +76,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	p."ParentID",
@@ -84,7 +86,7 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" < 2
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 RollbackTransaction

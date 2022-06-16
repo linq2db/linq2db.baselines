@@ -36,6 +36,8 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	c_1."Id"
@@ -43,7 +45,7 @@ FROM
 	"AsyncDataTable" c_1
 WHERE
 	c_1."Id" = :Id
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

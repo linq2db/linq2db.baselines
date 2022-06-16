@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	c_1."ParentID",
@@ -9,5 +11,5 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
 WHERE
 	"a_Parent"."Value1" = 1
-LIMIT 1
+LIMIT :take
 

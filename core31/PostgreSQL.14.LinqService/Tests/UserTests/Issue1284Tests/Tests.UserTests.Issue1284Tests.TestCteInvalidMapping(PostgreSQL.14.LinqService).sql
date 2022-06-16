@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 WITH "CTE_1"
 (
@@ -30,10 +32,12 @@ SELECT
 	t1."Gender"
 FROM
 	"CTE_1" t1
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	person_1."FirstName",
@@ -43,5 +47,5 @@ SELECT
 	person_1."Gender"
 FROM
 	"Person" person_1
-LIMIT 1
+LIMIT :take
 

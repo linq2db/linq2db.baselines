@@ -59,6 +59,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	x."InId",
@@ -72,10 +74,12 @@ FROM
 		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
 WHERE
 	x."InId" = 1
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	x."InId",
@@ -89,7 +93,7 @@ FROM
 		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
 WHERE
 	x."InId" = 2
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t2."ParentID",
@@ -22,6 +24,6 @@ FROM
 				) t1
 			ORDER BY
 				t1."ChildID"
-			LIMIT 1
+			LIMIT :take
 		) t2 ON 1=1
 
