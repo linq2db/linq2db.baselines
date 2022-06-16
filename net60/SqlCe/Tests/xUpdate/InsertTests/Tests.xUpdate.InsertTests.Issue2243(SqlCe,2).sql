@@ -52,8 +52,10 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[t1].[id],
 	[t1].[name],
 	[t1].[created_by],
@@ -80,8 +82,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[t1].[id],
 	[t1].[name],
 	[t1].[created_by],

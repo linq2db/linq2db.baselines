@@ -82,10 +82,12 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

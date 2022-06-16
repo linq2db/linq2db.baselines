@@ -20,6 +20,8 @@ FROM
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -29,7 +31,7 @@ SELECT
 FROM
 	[Parent] [p]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take)
 				[ch].[ParentID],
 				[ch].[ChildID]
 			FROM

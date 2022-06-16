@@ -31,8 +31,10 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],

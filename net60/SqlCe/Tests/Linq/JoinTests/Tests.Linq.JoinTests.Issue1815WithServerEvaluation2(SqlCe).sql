@@ -57,8 +57,10 @@ SELECT 2,4,3
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[InId],
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]
@@ -76,8 +78,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[InId],
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]

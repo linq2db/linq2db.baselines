@@ -29,8 +29,10 @@ SELECT 2,2,'TWO','___Value2___'
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -39,8 +41,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -49,8 +53,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -59,8 +65,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -69,8 +77,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]

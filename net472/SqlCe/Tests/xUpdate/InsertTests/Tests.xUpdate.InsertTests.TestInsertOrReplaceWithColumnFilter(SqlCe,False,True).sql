@@ -52,10 +52,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],
@@ -87,10 +89,12 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],

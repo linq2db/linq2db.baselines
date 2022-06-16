@@ -22,10 +22,12 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 3
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[ID],
 	[_].[imageDataType]
 FROM

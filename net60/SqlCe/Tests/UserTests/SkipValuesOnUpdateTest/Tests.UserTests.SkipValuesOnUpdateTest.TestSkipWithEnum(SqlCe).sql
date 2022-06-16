@@ -39,8 +39,10 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age],
@@ -72,8 +74,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age],
@@ -102,8 +106,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age],

@@ -36,10 +36,12 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t].[PersonID],
 	[t].[FirstName],
 	[t].[LastName],
@@ -52,10 +54,12 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t].[PersonID],
 	[t].[FirstName],
 	[t].[LastName],

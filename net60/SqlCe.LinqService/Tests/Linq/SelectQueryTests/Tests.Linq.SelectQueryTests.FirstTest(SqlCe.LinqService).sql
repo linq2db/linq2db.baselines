@@ -9,8 +9,10 @@ CREATE TABLE [SampleClass]
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	DateAdd(day, 1, GetDate()),
 	DateAdd(day, 2, GetDate())
 

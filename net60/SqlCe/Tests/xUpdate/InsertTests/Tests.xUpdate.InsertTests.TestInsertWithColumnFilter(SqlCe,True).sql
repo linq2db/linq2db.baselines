@@ -26,10 +26,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],

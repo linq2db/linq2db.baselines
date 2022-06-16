@@ -10,8 +10,10 @@ CREATE TABLE [Issue1192Table]
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[MyGroupedCount]
 FROM
 	[Issue1192Table] [t_1]

@@ -34,8 +34,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]

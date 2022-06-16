@@ -31,10 +31,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -61,10 +63,12 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -100,10 +104,12 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[_].[FirstName],
 	[_].[PersonID],
 	[_].[LastName],

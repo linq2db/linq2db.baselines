@@ -49,8 +49,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[t1].[Id],
 	[t1].[ClaimedKeyType],
 	[t1].[ClaimedKeyTypeN]
