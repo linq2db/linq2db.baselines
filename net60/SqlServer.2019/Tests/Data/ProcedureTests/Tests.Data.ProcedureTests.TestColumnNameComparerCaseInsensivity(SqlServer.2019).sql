@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -22,8 +24,10 @@ SELECT PersonID, FirstName FROM Person WHERE PersonID = @id
 
 BeforeExecute
 -- SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [_]

@@ -93,15 +93,19 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 1
 
 SELECT
 	[t2].[ID3_1]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take)
 				(
-					SELECT TOP (1)
+					SELECT TOP (@take_1)
 						[x].[ID3]
 					FROM
 						[TABLE3] [x]
@@ -112,7 +116,7 @@ FROM
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (
-						SELECT TOP (1)
+						SELECT TOP (@take_1)
 							[x].[ID3]
 						FROM
 							[TABLE3] [x]

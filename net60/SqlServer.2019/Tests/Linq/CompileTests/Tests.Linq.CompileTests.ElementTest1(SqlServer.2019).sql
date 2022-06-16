@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM
@@ -13,10 +15,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM

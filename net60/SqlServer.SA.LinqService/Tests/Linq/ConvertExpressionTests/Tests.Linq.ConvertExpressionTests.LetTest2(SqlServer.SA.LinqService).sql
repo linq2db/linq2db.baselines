@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -8,7 +10,7 @@ FROM
 	[Parent] [p]
 WHERE
 	(
-		SELECT TOP (1)
+		SELECT TOP (@take)
 			1
 		FROM
 			[Child] [t1]

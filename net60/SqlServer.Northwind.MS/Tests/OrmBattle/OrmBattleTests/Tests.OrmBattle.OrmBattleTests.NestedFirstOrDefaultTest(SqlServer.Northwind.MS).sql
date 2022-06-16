@@ -81,6 +81,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[p].[ProductID],
@@ -101,7 +103,7 @@ SELECT
 FROM
 	[Products] [p]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take)
 				[a_Order].[ShipCountry],
 				[a_Order].[ShipPostalCode],
 				[a_Order].[ShipRegion],

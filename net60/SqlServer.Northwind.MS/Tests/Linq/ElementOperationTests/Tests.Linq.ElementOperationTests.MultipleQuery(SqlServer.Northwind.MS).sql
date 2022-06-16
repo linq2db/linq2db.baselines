@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[t1].[CategoryName]
 FROM
 	[Products] [p]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take)
 				[zrp].[CategoryName]
 			FROM
 				[Categories] [zrp]

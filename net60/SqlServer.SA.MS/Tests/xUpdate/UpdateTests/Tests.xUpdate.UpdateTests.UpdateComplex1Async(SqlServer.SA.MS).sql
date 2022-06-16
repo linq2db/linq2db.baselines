@@ -42,10 +42,12 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[PersonID],
 	[_].[Gender],
 	[_].[FirstName],
@@ -83,10 +85,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[PersonID],
 	[_].[Gender],
 	[_].[FirstName],

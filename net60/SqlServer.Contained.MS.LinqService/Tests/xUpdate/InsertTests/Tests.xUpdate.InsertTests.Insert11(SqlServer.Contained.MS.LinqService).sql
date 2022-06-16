@@ -34,10 +34,12 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 4
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[p2].[PersonID],
 	[p2].[Gender],
 	[p2].[FirstName],

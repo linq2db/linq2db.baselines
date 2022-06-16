@@ -25,8 +25,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[event_id],
 	[t1].[event_description]
 FROM

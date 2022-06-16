@@ -102,8 +102,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[InId],
 	IIF([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
 	IIF([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])
@@ -115,8 +117,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[InId],
 	IIF([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
 	IIF([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])

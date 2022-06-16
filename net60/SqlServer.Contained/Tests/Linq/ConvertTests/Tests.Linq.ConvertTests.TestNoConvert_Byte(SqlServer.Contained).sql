@@ -56,8 +56,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[Id],
 	[x].[Byte],
 	[x].[SByte],

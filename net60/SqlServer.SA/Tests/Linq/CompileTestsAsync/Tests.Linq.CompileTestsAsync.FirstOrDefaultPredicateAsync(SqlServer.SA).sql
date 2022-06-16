@@ -35,10 +35,12 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]

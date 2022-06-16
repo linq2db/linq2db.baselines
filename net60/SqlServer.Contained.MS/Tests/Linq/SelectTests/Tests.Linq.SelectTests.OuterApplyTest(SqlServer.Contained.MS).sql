@@ -2,6 +2,16 @@
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 1
+DECLARE @take_2 Int -- Int32
+SET     @take_2 = 1
+DECLARE @take_3 Int -- Int32
+SET     @take_3 = 1
+DECLARE @take_4 Int -- Int32
+SET     @take_4 = 1
+DECLARE @take_5 Int -- Int32
+SET     @take_5 = 1
 
 SELECT
 	[t7].[Parent],
@@ -56,7 +66,7 @@ FROM
 						[c_2].[ParentID] = [p].[ParentID]
 				) [t1]
 				OUTER APPLY (
-					SELECT TOP (1)
+					SELECT TOP (@take_1)
 						[c_3].[ChildID],
 						[c_3].[ParentID]
 					FROM
@@ -65,7 +75,7 @@ FROM
 						[c_3].[ChildID] > 2 AND [c_3].[ParentID] >= [p].[ParentID]
 				) [t2]
 				OUTER APPLY (
-					SELECT TOP (1)
+					SELECT TOP (@take_2)
 						[c_4].[ChildID],
 						[c_4].[ParentID]
 					FROM
@@ -74,7 +84,7 @@ FROM
 						[c_4].[ChildID] > 2 AND [c_4].[ParentID] >= 2
 				) [t3]
 				OUTER APPLY (
-					SELECT TOP (1)
+					SELECT TOP (@take_3)
 						[c_5].[ChildID],
 						[c_5].[ParentID]
 					FROM
@@ -83,7 +93,7 @@ FROM
 						[c_5].[ChildID] > 2 AND [c_5].[ParentID] >= [p].[ParentID]
 				) [t4]
 				OUTER APPLY (
-					SELECT TOP (1)
+					SELECT TOP (@take_4)
 						[c_6].[ChildID],
 						[c_6].[ParentID]
 					FROM
@@ -92,7 +102,7 @@ FROM
 						[c_6].[ChildID] > 2 AND [c_6].[ParentID] >= [p].[ParentID]
 				) [t5]
 				OUTER APPLY (
-					SELECT TOP (1)
+					SELECT TOP (@take_5)
 						[c_7].[ChildID],
 						[c_7].[ParentID]
 					FROM

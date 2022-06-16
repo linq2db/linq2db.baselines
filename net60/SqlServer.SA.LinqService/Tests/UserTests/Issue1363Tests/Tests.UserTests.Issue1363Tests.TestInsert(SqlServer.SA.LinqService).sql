@@ -57,10 +57,12 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @id2 UniqueIdentifier -- Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[_].[required_field],
 	[_].[optional_field]
 FROM

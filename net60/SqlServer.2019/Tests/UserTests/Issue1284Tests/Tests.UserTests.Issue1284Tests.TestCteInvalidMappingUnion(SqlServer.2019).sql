@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 WITH [CTE_1]
 (
@@ -44,7 +46,7 @@ AS
 	WHERE
 		[x].[rn] = 1
 )
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[FirstName],
 	[t1].[ID],
 	[t1].[LastName],
@@ -56,8 +58,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[FirstName],
 	[x].[ID],
 	[x].[LastName],

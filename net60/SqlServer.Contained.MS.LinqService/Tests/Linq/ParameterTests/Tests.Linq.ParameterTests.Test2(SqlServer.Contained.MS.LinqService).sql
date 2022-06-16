@@ -1,11 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 DECLARE @id2 Int -- Int32
 SET     @id2 = 10000
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[p].[ParentID],
 	[p].[Value1]
 FROM
@@ -17,12 +19,14 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @id1 Int -- Int32
 SET     @id1 = 2
 DECLARE @id2 Int -- Int32
 SET     @id2 = 10000
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[p].[ParentID],
 	[p].[Value1]
 FROM

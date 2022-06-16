@@ -48,10 +48,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],

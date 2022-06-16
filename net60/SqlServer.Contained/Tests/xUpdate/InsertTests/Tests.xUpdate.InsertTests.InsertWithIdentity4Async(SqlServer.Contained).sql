@@ -37,10 +37,12 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John0'
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],
@@ -81,10 +83,12 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],

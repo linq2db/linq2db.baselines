@@ -53,8 +53,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],

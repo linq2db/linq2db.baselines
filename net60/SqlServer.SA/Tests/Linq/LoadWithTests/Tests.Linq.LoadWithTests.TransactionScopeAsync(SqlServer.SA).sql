@@ -27,8 +27,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[ParentID],
 	[x].[Value1]
 FROM

@@ -81,8 +81,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[Fax],
 	[t1].[Phone],
 	[t1].[Country],
