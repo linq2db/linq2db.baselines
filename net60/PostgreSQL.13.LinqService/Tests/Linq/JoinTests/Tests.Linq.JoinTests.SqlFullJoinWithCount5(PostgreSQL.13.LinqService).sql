@@ -2,8 +2,6 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	COUNT(left_1."ParentID"),
@@ -26,5 +24,5 @@ FROM
 			WHERE
 				p_1."ParentID" <> :id
 		) t1 ON t1."ParentID" = left_1."ParentID"
-LIMIT :take
+LIMIT 2
 

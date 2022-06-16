@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t2."ParentID",
@@ -20,7 +18,7 @@ FROM
 				"a_Parent"."ParentID" = t1."ParentID"
 			ORDER BY
 				t1."ChildID"
-			LIMIT :take
+			LIMIT 1
 		) t2 ON 1=1
 WHERE
 	p."ChildID" > 0

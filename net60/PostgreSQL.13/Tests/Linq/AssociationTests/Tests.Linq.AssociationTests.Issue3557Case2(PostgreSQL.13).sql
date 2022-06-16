@@ -75,8 +75,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	i."Id",
@@ -93,7 +91,7 @@ FROM
 				"SubData2" s
 			WHERE
 				"a_SubData"."Id" = s."Id"
-			LIMIT :take
+			LIMIT 1
 		) t1 ON 1=1
 ORDER BY
 	i."Id"
