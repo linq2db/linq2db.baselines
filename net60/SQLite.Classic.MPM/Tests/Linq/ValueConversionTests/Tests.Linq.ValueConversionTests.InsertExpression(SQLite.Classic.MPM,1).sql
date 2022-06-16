@@ -55,8 +55,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @iteration  -- Int32
 SET     @iteration = 1
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[e].[Id],
@@ -73,7 +71,7 @@ FROM
 	[ValueConversion] [e]
 WHERE
 	[e].[Id] = @iteration
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -34,8 +34,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -45,7 +43,7 @@ FROM
 	[PR_1598_SkipCustom_Table] [t]
 WHERE
 	[t].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -67,8 +65,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -78,7 +74,7 @@ FROM
 	[PR_1598_SkipCustom_Table] [t]
 WHERE
 	[t].[Id] = 2
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

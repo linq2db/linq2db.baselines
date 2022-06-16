@@ -28,8 +28,6 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[ParentID],
@@ -38,5 +36,5 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 1
-LIMIT @take
+LIMIT 1
 

@@ -81,8 +81,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[LeftId],
@@ -95,7 +93,7 @@ FROM
 	[LeftRight] [t1]
 		LEFT JOIN [Left] [a_Left] ON [t1].[LeftId] = [a_Left].[LeftId]
 		LEFT JOIN [Right] [a_Right] ON [t1].[RightId] = [a_Right].[RightId]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 BeginTransaction(Serializable)
@@ -125,15 +123,13 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[LeftId],
 	[t1].[LeftData]
 FROM
 	[Left] [t1]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction
@@ -165,15 +161,13 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[RightId],
 	[t1].[RightData]
 FROM
 	[Right] [t1]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction

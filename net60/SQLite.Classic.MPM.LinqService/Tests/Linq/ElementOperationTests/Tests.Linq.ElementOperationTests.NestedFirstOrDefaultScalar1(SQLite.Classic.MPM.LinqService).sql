@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	(
@@ -9,7 +7,7 @@ SELECT
 			[p].[ChildID]
 		FROM
 			[Child] [p]
-		LIMIT @take
+		LIMIT 1
 	)
 FROM
 	[Parent] [p_1]

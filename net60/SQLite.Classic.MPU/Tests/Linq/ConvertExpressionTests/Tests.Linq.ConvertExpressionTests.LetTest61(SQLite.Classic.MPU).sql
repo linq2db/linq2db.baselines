@@ -24,8 +24,6 @@ BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[cp].[ParentID],
@@ -59,7 +57,7 @@ SELECT
 			[c_3].[ParentID] > 0
 		ORDER BY
 			[c_3].[ChildID]
-		LIMIT @take
+		LIMIT 1
 	)
 FROM
 	[Parent] [cp]

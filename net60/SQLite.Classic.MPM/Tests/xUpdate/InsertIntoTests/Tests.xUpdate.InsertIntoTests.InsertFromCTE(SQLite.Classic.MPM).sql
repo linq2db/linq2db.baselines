@@ -60,8 +60,6 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[Id],
@@ -69,12 +67,10 @@ SELECT
 	[t1].[OtherValue]
 FROM
 	[InsertTestClass] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[Id],
@@ -82,7 +78,7 @@ SELECT
 	[t1].[OtherValue]
 FROM
 	[InsertTestClassDest] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

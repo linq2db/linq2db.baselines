@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[c_1].[ParentID],
@@ -16,5 +14,5 @@ FROM
 		INNER JOIN [GrandChild] [c_1] ON [t].[ParentID] = [c_1].[ParentID] AND [t].[ChildID] = [c_1].[ChildID]
 			LEFT JOIN [Child] [a_Child] ON [c_1].[ParentID] = [a_Child].[ParentID] AND [c_1].[ChildID] = [a_Child].[ChildID]
 		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
-LIMIT @take
+LIMIT 1
 

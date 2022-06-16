@@ -69,8 +69,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -79,7 +77,7 @@ SELECT
 FROM
 	[SomeEntity] [t]
 		LEFT JOIN [SomeOtherEntity] [a_Other] ON [t].[OtherId] = [a_Other].[Id]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

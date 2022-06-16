@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 WITH [CTE_1]
 (
@@ -32,12 +30,10 @@ SELECT
 	[t1].[Gender]
 FROM
 	[CTE_1] [t1]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[person_1].[FirstName],
@@ -47,5 +43,5 @@ SELECT
 	[person_1].[Gender]
 FROM
 	[Person] [person_1]
-LIMIT @take
+LIMIT 1
 

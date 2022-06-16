@@ -51,8 +51,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 35
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[c_1].[Id]
@@ -60,7 +58,7 @@ FROM
 	[Emails] [c_1]
 WHERE
 	[c_1].[Id] = @Id
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction
@@ -99,8 +97,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 36
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[c_1].[Id]
@@ -108,7 +104,7 @@ FROM
 	[Emails] [c_1]
 WHERE
 	[c_1].[Id] = @Id
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction

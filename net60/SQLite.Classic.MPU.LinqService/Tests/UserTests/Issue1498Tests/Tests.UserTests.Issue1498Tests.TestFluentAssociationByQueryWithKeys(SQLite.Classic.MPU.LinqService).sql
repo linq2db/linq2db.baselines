@@ -115,8 +115,6 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[Id],
@@ -126,7 +124,7 @@ FROM
 	[Topic] [x]
 WHERE
 	[x].[Id] = 6
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

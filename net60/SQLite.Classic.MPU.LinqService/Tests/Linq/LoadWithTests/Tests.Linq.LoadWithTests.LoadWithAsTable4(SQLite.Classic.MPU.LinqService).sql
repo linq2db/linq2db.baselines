@@ -27,13 +27,11 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[ParentID],
 	[t].[Value1]
 FROM
 	[Parent] [t]
-LIMIT @take
+LIMIT 1
 

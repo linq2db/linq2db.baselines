@@ -139,8 +139,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[Id],
@@ -151,7 +149,7 @@ FROM
 			LEFT JOIN [House3043] [a_House] ON [a_Person].[HouseId] = [a_House].[Id]
 				LEFT JOIN [Street3043] [a_Street] ON [a_House].[StreetId] = [a_Street].[Id]
 		LEFT JOIN [City3043] [a_City] ON [a_Street].[CityId] = [a_City].[Id]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

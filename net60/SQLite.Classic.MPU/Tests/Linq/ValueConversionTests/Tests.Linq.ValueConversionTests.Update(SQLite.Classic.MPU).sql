@@ -71,8 +71,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[e].[Id],
@@ -89,7 +87,7 @@ FROM
 	[ValueConversion] [e]
 WHERE
 	[e].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -131,8 +129,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[e].[Id],
@@ -149,7 +145,7 @@ FROM
 	[ValueConversion] [e]
 WHERE
 	[e].[Id] = 2
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -191,8 +187,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[e].[Id],
@@ -209,7 +203,7 @@ FROM
 	[ValueConversion] [e]
 WHERE
 	[e].[Id] = 3
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

@@ -30,8 +30,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -41,7 +39,7 @@ FROM
 	[PR_1598_Insert_Table_Cache] [t]
 WHERE
 	[t].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -59,8 +57,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -70,7 +66,7 @@ FROM
 	[PR_1598_Insert_Table_Cache] [t]
 WHERE
 	[t].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

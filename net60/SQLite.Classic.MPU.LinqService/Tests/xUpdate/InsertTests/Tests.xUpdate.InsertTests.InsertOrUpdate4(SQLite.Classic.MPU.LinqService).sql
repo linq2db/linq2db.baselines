@@ -86,8 +86,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -96,7 +94,7 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

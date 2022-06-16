@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[ParentID],
@@ -11,5 +9,5 @@ SELECT
 FROM
 	[Child] [t]
 		LEFT JOIN [Parent] [a_Parent] ON [t].[ParentID] = [a_Parent].[ParentID]
-LIMIT @take
+LIMIT 1
 
