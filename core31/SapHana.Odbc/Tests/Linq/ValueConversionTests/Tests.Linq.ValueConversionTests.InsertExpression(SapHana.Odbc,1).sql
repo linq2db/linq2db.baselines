@@ -55,6 +55,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @iteration  -- Int32
 SET     @iteration = 1
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	"e"."Id",
@@ -71,7 +73,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = ?
-LIMIT 2
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

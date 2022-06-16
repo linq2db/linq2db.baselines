@@ -2,13 +2,15 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"
 FROM
 	"Child" "t1"
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 RollbackTransaction

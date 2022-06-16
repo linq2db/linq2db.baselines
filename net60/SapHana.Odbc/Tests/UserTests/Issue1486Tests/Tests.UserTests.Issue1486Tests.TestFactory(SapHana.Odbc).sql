@@ -27,6 +27,8 @@ FROM
 
 BeforeExecute
 --  SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"t1"."ParentID",
@@ -36,7 +38,7 @@ SELECT
 FROM
 	"Child" "t1"
 		LEFT JOIN "Parent" "a_Parent" ON "t1"."ParentID" = "a_Parent"."ParentID"
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 RollbackTransaction

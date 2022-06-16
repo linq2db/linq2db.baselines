@@ -81,6 +81,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 5
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"t"."PersonID",
@@ -92,7 +94,7 @@ FROM
 	"Person" "t"
 WHERE
 	"t"."PersonID" = ?
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

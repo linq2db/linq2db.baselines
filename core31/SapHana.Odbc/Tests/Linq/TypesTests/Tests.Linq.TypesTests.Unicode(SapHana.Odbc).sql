@@ -31,6 +31,8 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	"p"."FirstName",
@@ -42,7 +44,7 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = '擊敗奴隸' AND "p"."LastName" = 'Юникодкин'
-LIMIT 2
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -26,6 +26,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 5
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	"_"."ID"
@@ -33,7 +35,7 @@ FROM
 	"Issue1316Tests" "_"
 WHERE
 	"_"."ID" = ?
-LIMIT 2
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

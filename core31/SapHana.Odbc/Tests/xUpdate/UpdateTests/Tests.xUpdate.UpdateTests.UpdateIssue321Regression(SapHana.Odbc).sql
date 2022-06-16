@@ -66,6 +66,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 100500
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"_"."SmallIntValue"
@@ -73,7 +75,7 @@ FROM
 	"LinqDataTypes" "_"
 WHERE
 	"_"."ID" = ?
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

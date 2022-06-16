@@ -79,6 +79,8 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"_"."FirstName",
@@ -90,7 +92,7 @@ FROM
 	"Person" "_"
 WHERE
 	"_"."FirstName" = 'test_inherited_insert'
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -117,6 +119,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"_"."FirstName",
@@ -128,7 +132,7 @@ FROM
 	"Person" "_"
 WHERE
 	"_"."FirstName" = 'test_inherited_insert'
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

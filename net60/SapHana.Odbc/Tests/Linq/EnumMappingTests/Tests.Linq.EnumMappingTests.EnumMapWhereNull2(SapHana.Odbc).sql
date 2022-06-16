@@ -22,6 +22,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"r"."BigIntValue"
@@ -29,7 +31,7 @@ FROM
 	"LinqDataTypes" "r"
 WHERE
 	"r"."ID" = 101 AND "r"."BigIntValue" IS NULL
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

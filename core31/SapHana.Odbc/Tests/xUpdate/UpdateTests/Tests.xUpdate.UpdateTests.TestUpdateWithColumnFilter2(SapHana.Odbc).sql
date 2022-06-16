@@ -76,6 +76,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	"x"."FirstName",
@@ -87,7 +89,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = ?
-LIMIT 2
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -107,6 +109,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 5
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	"x"."FirstName",
@@ -118,7 +122,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."PersonID" = ?
-LIMIT 2
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -147,6 +151,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 5
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	"_"."FirstName",
@@ -158,7 +164,7 @@ FROM
 	"Person" "_"
 WHERE
 	"_"."PersonID" = ?
-LIMIT 2
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

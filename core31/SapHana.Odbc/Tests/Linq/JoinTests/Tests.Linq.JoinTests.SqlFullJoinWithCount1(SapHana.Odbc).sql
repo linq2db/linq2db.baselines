@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	COUNT("left_1"."ParentID"),
@@ -8,5 +10,5 @@ SELECT
 FROM
 	"Parent" "left_1"
 		FULL JOIN "Parent" "p" ON "p"."ParentID" = "left_1"."ParentID"
-LIMIT 2
+LIMIT ?
 

@@ -28,6 +28,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"x"."FirstName",
@@ -39,7 +41,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = ?
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

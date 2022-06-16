@@ -6,6 +6,8 @@ DECLARE @id3  -- Int32
 SET     @id3 = 1
 DECLARE @id2  -- Int32
 SET     @id2 = 10000
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"p"."ParentID",
@@ -16,7 +18,7 @@ WHERE
 	(("p"."ParentID" = ? OR "p"."ParentID" >= ?) OR "p"."ParentID" >= ?)
 ORDER BY
 	"p"."ParentID"
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -26,6 +28,8 @@ DECLARE @id3  -- Int32
 SET     @id3 = 2
 DECLARE @id2  -- Int32
 SET     @id2 = 10000
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"p"."ParentID",
@@ -36,5 +40,5 @@ WHERE
 	(("p"."ParentID" = ? OR "p"."ParentID" >= ?) OR "p"."ParentID" >= ?)
 ORDER BY
 	"p"."ParentID"
-LIMIT 1
+LIMIT ?
 

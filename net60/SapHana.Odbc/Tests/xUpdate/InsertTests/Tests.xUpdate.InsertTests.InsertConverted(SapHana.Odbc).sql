@@ -24,6 +24,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"t"."ID",
@@ -32,7 +34,7 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t"."ID" = 1001
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

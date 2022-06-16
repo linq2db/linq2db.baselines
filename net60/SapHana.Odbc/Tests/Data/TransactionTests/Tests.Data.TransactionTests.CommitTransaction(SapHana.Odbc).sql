@@ -32,6 +32,8 @@ BeforeExecute
 CommitTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"t"."ParentID",
@@ -40,7 +42,7 @@ FROM
 	"Parent" "t"
 WHERE
 	"t"."ParentID" = 1010
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

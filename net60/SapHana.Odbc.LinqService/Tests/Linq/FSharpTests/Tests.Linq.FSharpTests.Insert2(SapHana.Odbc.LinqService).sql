@@ -34,6 +34,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	"p"."PersonID",
@@ -45,7 +47,7 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."PersonID" > 4
-LIMIT 2
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

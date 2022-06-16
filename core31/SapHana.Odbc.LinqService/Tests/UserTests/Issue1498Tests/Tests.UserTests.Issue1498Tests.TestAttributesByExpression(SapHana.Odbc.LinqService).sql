@@ -73,6 +73,8 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"x"."Id",
@@ -82,7 +84,7 @@ FROM
 	"Topic" "x"
 WHERE
 	"x"."Id" = 6
-LIMIT 1
+LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
