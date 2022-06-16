@@ -152,6 +152,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t."Id",
@@ -163,7 +165,7 @@ FROM
 				t1 as "First_1"
 			FROM
 				UNNEST(t."StrArray") t1
-			LIMIT 1
+			LIMIT :take
 		) t2 ON 1=1
 
 BeforeExecute

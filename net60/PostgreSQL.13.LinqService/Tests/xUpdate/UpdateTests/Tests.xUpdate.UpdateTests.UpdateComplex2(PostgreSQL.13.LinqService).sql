@@ -53,6 +53,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t1."PersonID",
@@ -64,7 +66,7 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :id
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

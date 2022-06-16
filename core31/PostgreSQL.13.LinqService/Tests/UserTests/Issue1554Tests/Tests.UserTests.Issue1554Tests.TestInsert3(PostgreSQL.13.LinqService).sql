@@ -34,6 +34,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	t1."Id",
@@ -41,7 +43,7 @@ SELECT
 	t1."ClaimedKeyTypeN"
 FROM
 	"Issue1554Table" t1
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

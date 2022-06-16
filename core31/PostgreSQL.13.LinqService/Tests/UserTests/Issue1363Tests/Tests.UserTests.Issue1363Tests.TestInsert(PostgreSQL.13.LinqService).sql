@@ -59,6 +59,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @id2 Uuid -- Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	t1.required_field,
@@ -67,7 +69,7 @@ FROM
 	"Issue1363" t1
 WHERE
 	t1.required_field = :id2
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

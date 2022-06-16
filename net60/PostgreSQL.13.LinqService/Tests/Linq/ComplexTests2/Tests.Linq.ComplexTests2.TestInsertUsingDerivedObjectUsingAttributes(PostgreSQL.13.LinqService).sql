@@ -33,6 +33,8 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t1."FirstName",
@@ -44,7 +46,7 @@ FROM
 	"Person" t1
 WHERE
 	t1."FirstName" = 'test_inherited_insert'
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -71,6 +73,8 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t1."FirstName",
@@ -82,7 +86,7 @@ FROM
 	"Person" t1
 WHERE
 	t1."FirstName" = 'test_inherited_insert'
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

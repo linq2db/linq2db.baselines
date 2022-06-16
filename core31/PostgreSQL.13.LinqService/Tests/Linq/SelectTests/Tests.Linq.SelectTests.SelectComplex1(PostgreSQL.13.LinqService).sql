@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t1."PersonID",
@@ -11,5 +13,5 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = 1
-LIMIT 1
+LIMIT :take
 

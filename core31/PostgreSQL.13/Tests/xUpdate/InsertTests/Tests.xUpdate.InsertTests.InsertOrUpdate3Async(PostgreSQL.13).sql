@@ -93,6 +93,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -101,7 +103,7 @@ FROM
 	"Patient" p
 WHERE
 	p."PersonID" = :id
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)

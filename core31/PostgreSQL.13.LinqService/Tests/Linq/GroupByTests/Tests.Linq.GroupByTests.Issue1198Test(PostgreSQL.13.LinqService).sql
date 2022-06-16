@@ -10,6 +10,8 @@ CREATE TABLE "Issue1192Table"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	(
@@ -24,7 +26,7 @@ FROM
 	"Issue1192Table" t_1
 WHERE
 	t_1."MyOtherId" = 12
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

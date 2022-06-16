@@ -53,6 +53,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	t1."FirstName",
@@ -62,7 +64,7 @@ SELECT
 	t1."Gender"
 FROM
 	"xxPerson" t1
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -89,6 +91,8 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	t1."FirstName",
@@ -98,7 +102,7 @@ SELECT
 	t1."Gender"
 FROM
 	"xxPerson" t1
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
