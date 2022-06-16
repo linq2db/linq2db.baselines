@@ -215,8 +215,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	p."ParentID",
@@ -225,7 +223,7 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = 1009
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

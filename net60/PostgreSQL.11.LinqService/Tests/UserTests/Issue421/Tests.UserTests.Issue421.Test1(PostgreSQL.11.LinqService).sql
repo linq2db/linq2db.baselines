@@ -29,8 +29,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Id",
@@ -39,7 +37,7 @@ FROM
 	"BlobClass" t1
 WHERE
 	t1."Id" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -55,8 +53,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Id",
@@ -65,7 +61,7 @@ FROM
 	"BlobClass" t1
 WHERE
 	t1."Id" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
