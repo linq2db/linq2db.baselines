@@ -24,8 +24,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]

@@ -27,6 +27,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[t_1].[Id],
@@ -37,7 +39,7 @@ SELECT
 FROM
 	[SampleClass] [t_1]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take)
 				[t2].[Value1],
 				[t2].[Value2],
 				1 as [is_empty]

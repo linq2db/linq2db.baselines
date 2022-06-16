@@ -31,10 +31,12 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -72,10 +74,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],

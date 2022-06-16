@@ -63,6 +63,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[t1_1].[NAME1],
@@ -71,7 +73,7 @@ SELECT
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take)
 				[x].[NAME2] as [Name2],
 				[x].[ID2] as [Value2]
 			FROM

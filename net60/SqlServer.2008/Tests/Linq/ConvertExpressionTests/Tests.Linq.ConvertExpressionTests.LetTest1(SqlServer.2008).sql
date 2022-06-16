@@ -1,12 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 1
 
 SELECT
 	[t1].[ParentID]
 FROM
 	[Parent] [p_1]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take)
 				[p].[ParentID]
 			FROM
 				[Child] [p]
@@ -15,7 +19,7 @@ FROM
 		) [t1]
 WHERE
 	(
-		SELECT TOP (1)
+		SELECT TOP (@take_1)
 			1
 		FROM
 			[Child] [t2]

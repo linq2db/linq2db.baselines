@@ -32,8 +32,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -42,8 +44,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -52,8 +56,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -62,8 +68,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -72,8 +80,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
