@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
+DECLARE @take_1 Integer -- Int32
+SET     @take_1 = 1
 
 SELECT
 	cp."ParentID",
@@ -38,7 +42,7 @@ FROM
 				c_3."ParentID" > 0
 			ORDER BY
 				c_3."ChildID"
-			LIMIT 1
+			LIMIT :take
 		) t1 ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
@@ -50,7 +54,7 @@ FROM
 				c_4."ParentID" = cp."ParentID" AND c_4."ChildID" > -100
 			ORDER BY
 				c_4."ChildID"
-			LIMIT 1
+			LIMIT :take_1
 		) t2 ON 1=1
 WHERE
 	cp."ParentID" > 0

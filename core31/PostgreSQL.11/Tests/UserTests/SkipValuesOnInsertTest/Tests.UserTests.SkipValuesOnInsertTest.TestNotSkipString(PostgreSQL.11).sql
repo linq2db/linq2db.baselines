@@ -34,6 +34,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t."Id",
@@ -43,7 +45,7 @@ FROM
 	"PR_1598_Insert_Table" t
 WHERE
 	t."Id" = 1
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -69,6 +71,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t."Id",
@@ -78,7 +82,7 @@ FROM
 	"PR_1598_Insert_Table" t
 WHERE
 	t."Id" = 2
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

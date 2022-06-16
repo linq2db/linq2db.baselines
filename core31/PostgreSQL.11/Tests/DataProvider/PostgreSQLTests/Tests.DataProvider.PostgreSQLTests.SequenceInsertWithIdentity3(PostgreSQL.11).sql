@@ -31,6 +31,8 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	t1."ID",
@@ -39,7 +41,7 @@ FROM
 	"SequenceTest3" t1
 WHERE
 	t1."Value" = 'SeqValue'
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

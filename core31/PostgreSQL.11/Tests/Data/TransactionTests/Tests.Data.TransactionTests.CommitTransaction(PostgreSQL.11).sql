@@ -32,6 +32,8 @@ BeforeExecute
 CommitTransaction
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t."ParentID",
@@ -40,7 +42,7 @@ FROM
 	"Parent" t
 WHERE
 	t."ParentID" = 1010
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

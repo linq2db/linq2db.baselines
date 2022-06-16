@@ -24,6 +24,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	x."FirstName",
@@ -35,7 +37,7 @@ FROM
 	"Person" x
 WHERE
 	x."FirstName" = :FirstName
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

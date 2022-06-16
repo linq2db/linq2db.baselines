@@ -27,6 +27,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	x."Value",
@@ -35,10 +37,12 @@ FROM
 	"BaseTable" x
 WHERE
 	x."Id" = 1
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	x."Value",
@@ -47,7 +51,7 @@ FROM
 	"BaseTable" x
 WHERE
 	x."Id" = 1 AND x."Value" = 100
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
