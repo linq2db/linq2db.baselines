@@ -34,6 +34,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -45,7 +47,7 @@ FROM
 	"Person" p
 WHERE
 	p."PersonID" > 4
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

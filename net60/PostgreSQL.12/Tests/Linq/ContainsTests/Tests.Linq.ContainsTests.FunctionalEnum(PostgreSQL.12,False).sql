@@ -30,6 +30,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	s."Id"
@@ -37,10 +39,12 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" IN ('THREE', 'FOUR')
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	s."Id"
@@ -48,10 +52,12 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" IN ('THREE', NULL)
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	s."Id"
@@ -59,10 +65,12 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" IN ('THREE', 'TWO')
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	s."Id"
@@ -70,10 +78,12 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" NOT IN (NULL, 'TWO')
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	s."Id"
@@ -81,7 +91,7 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" NOT IN ('THREE', 'TWO')
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

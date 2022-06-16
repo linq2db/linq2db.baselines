@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t1."ParentID",
@@ -12,6 +14,6 @@ WHERE
 			r."GuidValue"
 		FROM
 			"LinqDataTypes" r
-		LIMIT 1
+		LIMIT :take
 	) IS NOT NULL
 

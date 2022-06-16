@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t1."Count_1"
@@ -21,7 +23,7 @@ FROM
 			WHERE
 				c_1."ParentID" + 1 < p1."ID" AND c_1."ParentID" + 1 < p1."ID" AND
 				p1."ParentID" = c_1."ParentID"
-			LIMIT 1
+			LIMIT :take
 		) t1 ON 1=1
 WHERE
 	p1."ID" > 0
