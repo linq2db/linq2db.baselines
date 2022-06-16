@@ -26,8 +26,10 @@ FROM
 
 BeforeExecute
 --  SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[ParentID],
 	[t1].[ChildID],
 	[a_Parent].[ParentID],

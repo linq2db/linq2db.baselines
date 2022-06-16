@@ -86,10 +86,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'N'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -100,10 +102,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
 SET     @BoolValue = N'Y'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -114,10 +118,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'N'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -128,10 +134,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
 SET     @BoolValue = N'Y'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -142,10 +150,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'N'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -156,10 +166,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
 SET     @BoolValue = N'Y'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -170,10 +182,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'N'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -184,10 +198,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
 SET     @BoolValue = N'Y'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -198,10 +214,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
 SET     @BoolValue_1 = N'N'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -212,10 +230,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
 SET     @BoolValue = N'Y'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -226,10 +246,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -240,10 +262,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]

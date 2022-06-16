@@ -36,8 +36,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[Value],
 	[x].[Id]
 FROM
@@ -47,8 +49,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[Value],
 	[x].[Id]
 FROM
