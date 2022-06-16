@@ -33,6 +33,8 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`x`.`FirstName`,
@@ -44,7 +46,7 @@ FROM
 	`Person` `x`
 WHERE
 	`x`.`FirstName` = @FirstName
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -70,6 +72,8 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`x`.`FirstName`,
@@ -81,7 +85,7 @@ FROM
 	`Person` `x`
 WHERE
 	`x`.`FirstName` = @FirstName
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

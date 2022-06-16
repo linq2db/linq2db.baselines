@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`ParentID`,
@@ -12,6 +14,6 @@ WHERE
 			`r`.`GuidValue`
 		FROM
 			`LinqDataTypes` `r`
-		LIMIT 1
+		LIMIT @take
 	) IS NOT NULL
 

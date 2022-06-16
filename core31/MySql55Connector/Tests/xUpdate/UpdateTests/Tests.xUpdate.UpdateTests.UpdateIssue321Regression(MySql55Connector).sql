@@ -66,6 +66,8 @@ BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 100500
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`SmallIntValue`
@@ -73,7 +75,7 @@ FROM
 	`LinqDataTypes` `_`
 WHERE
 	`_`.`ID` = @id
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

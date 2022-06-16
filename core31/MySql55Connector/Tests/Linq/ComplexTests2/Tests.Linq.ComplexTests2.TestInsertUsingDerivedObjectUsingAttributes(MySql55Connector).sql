@@ -36,6 +36,8 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`FirstName`,
@@ -47,7 +49,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
@@ -74,6 +76,8 @@ WHERE
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`FirstName`,
@@ -85,7 +89,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

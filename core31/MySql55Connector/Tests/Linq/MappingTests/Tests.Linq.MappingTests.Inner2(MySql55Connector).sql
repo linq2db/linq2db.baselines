@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -8,5 +10,5 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1 AND `p`.`Value1` = 1
-LIMIT 1
+LIMIT @take
 

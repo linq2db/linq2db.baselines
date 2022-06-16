@@ -78,6 +78,8 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @id1 Int32
 SET     @id1 = 5
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`PersonID`,
@@ -89,12 +91,14 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`PersonID` = @id1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @id2 Int32
 SET     @id2 = 6
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`PersonID`,
@@ -106,7 +110,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`PersonID` = @id2
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

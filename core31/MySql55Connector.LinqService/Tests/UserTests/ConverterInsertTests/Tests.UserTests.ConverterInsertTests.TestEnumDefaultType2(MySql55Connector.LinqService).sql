@@ -38,6 +38,8 @@ BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`PersonID`,
@@ -49,7 +51,7 @@ FROM
 	`Person` `t`
 WHERE
 	`t`.`PersonID` = @id
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

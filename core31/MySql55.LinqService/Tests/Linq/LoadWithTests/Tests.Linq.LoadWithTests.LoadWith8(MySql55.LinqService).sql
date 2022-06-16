@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`c_1`.`ParentID`,
@@ -16,5 +18,5 @@ FROM
 			LEFT JOIN `Child` `a_Child_1` ON `c_1`.`ParentID` = `a_Child_1`.`ParentID` AND `c_1`.`ChildID` = `a_Child_1`.`ChildID`)
 		ON `a_Child`.`ParentID` = `c_1`.`ParentID` AND `a_Child`.`ChildID` = `c_1`.`ChildID`
 		LEFT JOIN `Parent` `a_Parent` ON `a_Child_1`.`ParentID` = `a_Parent`.`ParentID`
-LIMIT 1
+LIMIT @take
 

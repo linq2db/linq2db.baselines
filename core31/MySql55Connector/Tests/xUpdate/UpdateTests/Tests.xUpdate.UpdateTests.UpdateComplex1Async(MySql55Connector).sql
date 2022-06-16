@@ -47,6 +47,8 @@ BeforeExecute
 -- MySql55Connector MySqlConnector MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`PersonID`,
@@ -58,7 +60,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`PersonID` = @id
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql (asynchronously)
@@ -87,6 +89,8 @@ BeforeExecute
 -- MySql55Connector MySqlConnector MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`PersonID`,
@@ -98,7 +102,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`PersonID` = @id
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql (asynchronously)

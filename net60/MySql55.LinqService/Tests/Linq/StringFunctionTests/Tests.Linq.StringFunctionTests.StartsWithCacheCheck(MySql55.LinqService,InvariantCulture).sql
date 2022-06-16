@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`p`.`FirstName`
@@ -7,7 +9,7 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`PersonID` = 1
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

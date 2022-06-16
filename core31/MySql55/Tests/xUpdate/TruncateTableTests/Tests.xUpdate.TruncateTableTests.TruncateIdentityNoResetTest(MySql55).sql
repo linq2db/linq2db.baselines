@@ -37,6 +37,8 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 1
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`t1`.`ID`,
@@ -45,7 +47,7 @@ FROM
 	`test_temp` `t1`
 ORDER BY
 	`t1`.`ID`
-LIMIT @skip, 2
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
@@ -80,6 +82,8 @@ BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 1
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`t1`.`ID`,
@@ -88,7 +92,7 @@ FROM
 	`test_temp` `t1`
 ORDER BY
 	`t1`.`ID`
-LIMIT @skip, 2
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

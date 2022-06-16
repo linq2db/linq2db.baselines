@@ -50,6 +50,8 @@ VALUES
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`ID`,
@@ -66,7 +68,7 @@ FROM
 	`LinqDataTypes` `_`
 WHERE
 	`_`.`ID` = 1000
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

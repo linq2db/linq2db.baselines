@@ -37,6 +37,8 @@ WHERE
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`r`.`BigIntValue`
@@ -44,7 +46,7 @@ FROM
 	`LinqDataTypes` `r`
 WHERE
 	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

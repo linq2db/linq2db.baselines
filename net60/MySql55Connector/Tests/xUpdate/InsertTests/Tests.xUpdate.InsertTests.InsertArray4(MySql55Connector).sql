@@ -47,6 +47,8 @@ VALUES
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`t`.`ID`,
@@ -60,7 +62,7 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1001
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

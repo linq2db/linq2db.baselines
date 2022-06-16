@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t1`.`ParentID`,
@@ -8,5 +10,5 @@ FROM
 	`Parent` `t1`
 ORDER BY
 	`t1`.`ParentID` DESC
-LIMIT 1
+LIMIT @take
 

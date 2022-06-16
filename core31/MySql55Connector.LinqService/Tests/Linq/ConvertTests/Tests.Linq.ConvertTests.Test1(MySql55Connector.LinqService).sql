@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`t`.`ID`,
@@ -14,5 +16,5 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`MoneyValue` * `t`.`ID` = 1.11
-LIMIT 2
+LIMIT @take
 

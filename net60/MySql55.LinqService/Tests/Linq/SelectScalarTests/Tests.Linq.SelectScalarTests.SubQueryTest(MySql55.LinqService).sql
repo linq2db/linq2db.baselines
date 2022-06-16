@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	(
@@ -7,6 +9,6 @@ SELECT
 			`p`.`Value1`
 		FROM
 			`Parent` `p`
-		LIMIT 1
+		LIMIT @take
 	) as `f1`
 

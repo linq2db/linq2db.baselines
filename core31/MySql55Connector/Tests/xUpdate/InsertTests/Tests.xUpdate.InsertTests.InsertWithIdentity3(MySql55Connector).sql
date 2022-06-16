@@ -36,6 +36,8 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -47,7 +49,7 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = 'John' AND `p`.`LastName` = 'Shepard'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql

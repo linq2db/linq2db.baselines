@@ -49,6 +49,8 @@ WHERE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`t1`.`Id`,
@@ -56,7 +58,7 @@ SELECT
 	`t1`.`ClaimedKeyTypeN`
 FROM
 	`Issue1554FluentTable` `t1`
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
