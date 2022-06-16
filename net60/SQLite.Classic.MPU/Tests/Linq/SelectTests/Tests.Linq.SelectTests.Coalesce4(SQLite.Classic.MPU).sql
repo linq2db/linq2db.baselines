@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	Coalesce((
@@ -10,7 +12,7 @@ SELECT
 				LEFT JOIN [Parent] [a_Parent] ON [ch].[ParentID] = [a_Parent].[ParentID]
 		WHERE
 			[ch].[ChildID] = [c_1].[ChildID]
-		LIMIT 1
+		LIMIT @take
 	), [c_1].[ChildID])
 FROM
 	[Child] [c_1]

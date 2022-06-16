@@ -58,7 +58,9 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
-SET     @take = 2
+SET     @take = 1
+DECLARE @take_1  -- Int32
+SET     @take_1 = 2
 
 SELECT
 	[t1].[BatchId],
@@ -75,14 +77,14 @@ FROM
 					[Confirmation] [p]
 				WHERE
 					[x].[Id] = [p].[BatchId]
-				LIMIT 1
+				LIMIT @take
 			) as [CreationDate],
 			[x].[Value] as [Value_1]
 		FROM
 			[Batch] [x]
 		ORDER BY
 			[x].[Id] DESC
-		LIMIT @take
+		LIMIT @take_1
 	) [t1]
 ORDER BY
 	[t1].[BatchId]

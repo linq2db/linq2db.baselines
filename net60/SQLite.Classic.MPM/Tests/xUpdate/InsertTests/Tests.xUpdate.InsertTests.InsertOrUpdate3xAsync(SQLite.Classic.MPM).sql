@@ -94,6 +94,8 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -102,7 +104,7 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)

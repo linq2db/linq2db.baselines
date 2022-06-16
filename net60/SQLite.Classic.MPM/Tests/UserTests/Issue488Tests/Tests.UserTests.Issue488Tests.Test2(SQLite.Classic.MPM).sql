@@ -2,6 +2,8 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @date_1  -- Date
 SET     @date_1 = '2020-02-29'
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[t1].[ID],
@@ -15,5 +17,5 @@ FROM
 	[LinqDataTypes] [t1]
 WHERE
 	DateTime([t1].[DateTimeValue]) = DateTime(@date_1)
-LIMIT 1
+LIMIT @take
 

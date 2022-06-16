@@ -51,6 +51,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[t1].[FirstName],
@@ -60,7 +62,7 @@ SELECT
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -87,6 +89,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[t1].[FirstName],
@@ -96,7 +100,7 @@ SELECT
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

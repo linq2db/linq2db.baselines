@@ -2,6 +2,8 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[obj].[PersonID],
@@ -13,5 +15,5 @@ FROM
 	[Person] [obj]
 WHERE
 	[obj].[PersonID] = @id
-LIMIT 2
+LIMIT @take
 

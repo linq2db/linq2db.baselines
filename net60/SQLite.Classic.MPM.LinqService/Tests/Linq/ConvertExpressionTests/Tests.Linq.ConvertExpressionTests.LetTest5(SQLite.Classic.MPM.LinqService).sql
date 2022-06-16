@@ -18,6 +18,8 @@ ORDER BY
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	CASE
@@ -50,7 +52,7 @@ SELECT
 			[c_3].[ParentID] > 0
 		ORDER BY
 			[c_3].[ChildID]
-		LIMIT 1
+		LIMIT @take
 	),
 	[p].[ParentID]
 FROM

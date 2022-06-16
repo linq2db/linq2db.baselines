@@ -54,6 +54,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[t1].[my_col1],
@@ -63,7 +65,7 @@ FROM
 	[my_table] [t1]
 WHERE
 	[t1].[itemType] <> 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

@@ -61,6 +61,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[x].[ID],
@@ -71,7 +73,7 @@ FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
 	[x].[FirstName] = @FirstName
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -94,6 +96,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[x].[ID],
@@ -104,7 +108,7 @@ FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
 	[x].[FirstName] = @FirstName
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

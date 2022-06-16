@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[p].[ParentID],
@@ -8,5 +10,5 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = 100
-LIMIT 2
+LIMIT @take
 

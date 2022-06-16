@@ -2,6 +2,8 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[p].[LastName]
@@ -9,5 +11,5 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[PersonID] = @ID
-LIMIT 2
+LIMIT @take
 

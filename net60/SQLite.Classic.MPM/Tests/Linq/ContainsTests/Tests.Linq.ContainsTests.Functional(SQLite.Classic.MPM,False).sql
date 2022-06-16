@@ -30,6 +30,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[s].[Id]
@@ -37,10 +39,12 @@ FROM
 	[Src] [s]
 WHERE
 	[s].[Int] IN (-1, -2)
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[s].[Id]
@@ -48,10 +52,12 @@ FROM
 	[Src] [s]
 WHERE
 	[s].[Int] IN (-1, NULL)
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[s].[Id]
@@ -59,10 +65,12 @@ FROM
 	[Src] [s]
 WHERE
 	[s].[Int] IN (-1, 2)
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[s].[Id]
@@ -70,10 +78,12 @@ FROM
 	[Src] [s]
 WHERE
 	[s].[Int] NOT IN (NULL, 2)
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[s].[Id]
@@ -81,7 +91,7 @@ FROM
 	[Src] [s]
 WHERE
 	[s].[Int] NOT IN (-1, 2)
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

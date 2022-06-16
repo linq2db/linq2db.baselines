@@ -66,6 +66,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 100500
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[_].[SmallIntValue]
@@ -73,7 +75,7 @@ FROM
 	[LinqDataTypes] [_]
 WHERE
 	[_].[ID] = @id
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

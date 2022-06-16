@@ -29,6 +29,8 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[p].[FirstName],
@@ -40,7 +42,7 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] = '擊敗奴隸' AND [p].[LastName] = 'Юникодкин'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -50,6 +50,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[_].[ID],
@@ -64,7 +66,7 @@ FROM
 	[LinqDataTypes] [_]
 WHERE
 	[_].[ID] = 1000
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

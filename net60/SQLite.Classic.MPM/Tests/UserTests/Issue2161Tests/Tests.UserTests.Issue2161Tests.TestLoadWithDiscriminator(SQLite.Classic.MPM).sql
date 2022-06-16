@@ -87,6 +87,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[o].[OrderId],
@@ -96,7 +98,7 @@ FROM
 	[Order] [o]
 WHERE
 	[o].[OrderId] = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 RollbackTransaction

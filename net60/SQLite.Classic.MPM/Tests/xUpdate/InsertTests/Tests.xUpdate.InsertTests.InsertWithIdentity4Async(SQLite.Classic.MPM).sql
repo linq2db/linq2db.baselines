@@ -41,6 +41,8 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John0'
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[p].[FirstName],
@@ -52,7 +54,7 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
@@ -89,6 +91,8 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[p].[FirstName],
@@ -100,7 +104,7 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

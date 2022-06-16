@@ -84,13 +84,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[sc].[Id],
 	[sc].[Value]
 FROM
 	[ChildEntityObject] [sc]
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

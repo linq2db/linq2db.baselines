@@ -123,6 +123,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[x].[Id1],
@@ -131,7 +133,7 @@ FROM
 	[MasterClass] [x]
 WHERE
 	[x].[Id1] = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 RollbackTransaction
@@ -167,6 +169,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[x].[Id1],
@@ -175,7 +179,7 @@ FROM
 	[MasterClass] [x]
 WHERE
 	[x].[Id1] = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 RollbackTransaction
@@ -211,6 +215,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[x].[Id1],
@@ -219,7 +225,7 @@ FROM
 	[MasterClass] [x]
 WHERE
 	[x].[Id1] = 1
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 RollbackTransaction

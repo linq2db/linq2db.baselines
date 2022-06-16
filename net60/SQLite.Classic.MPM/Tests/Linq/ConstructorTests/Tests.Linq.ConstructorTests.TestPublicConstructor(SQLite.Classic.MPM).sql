@@ -27,13 +27,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[t1].[Value],
 	[t1].[Id]
 FROM
 	[ConstructorTestTable] [t1]
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

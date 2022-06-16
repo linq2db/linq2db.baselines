@@ -4,6 +4,8 @@ DECLARE @id1  -- Int32
 SET     @id1 = 1
 DECLARE @id2  -- Int32
 SET     @id2 = 10000
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -14,7 +16,7 @@ WHERE
 	(([p].[ParentID] = @id1 OR [p].[ParentID] >= @id1) OR [p].[ParentID] >= @id2)
 ORDER BY
 	[p].[ParentID]
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -22,6 +24,8 @@ DECLARE @id1  -- Int32
 SET     @id1 = 2
 DECLARE @id2  -- Int32
 SET     @id2 = 10000
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -32,5 +36,5 @@ WHERE
 	(([p].[ParentID] = @id1 OR [p].[ParentID] >= @id1) OR [p].[ParentID] >= @id2)
 ORDER BY
 	[p].[ParentID]
-LIMIT 1
+LIMIT @take
 

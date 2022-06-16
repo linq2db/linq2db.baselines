@@ -33,6 +33,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 DECLARE @skip  -- Int32
 SET     @skip = 1
 
@@ -43,7 +45,7 @@ FROM
 	[test_temp] [t1]
 ORDER BY
 	[t1].[ID]
-LIMIT 2 OFFSET @skip
+LIMIT @take OFFSET @skip
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -76,6 +78,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 DECLARE @skip  -- Int32
 SET     @skip = 1
 
@@ -86,7 +90,7 @@ FROM
 	[test_temp] [t1]
 ORDER BY
 	[t1].[ID]
-LIMIT 2 OFFSET @skip
+LIMIT @take OFFSET @skip
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

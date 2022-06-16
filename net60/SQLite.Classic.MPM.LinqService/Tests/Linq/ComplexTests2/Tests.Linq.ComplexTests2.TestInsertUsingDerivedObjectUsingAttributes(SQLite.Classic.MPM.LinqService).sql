@@ -36,6 +36,8 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[_].[FirstName],
@@ -47,7 +49,7 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[FirstName] = 'test_inherited_insert'
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -74,6 +76,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[_].[FirstName],
@@ -85,7 +89,7 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[FirstName] = 'test_inherited_insert'
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -47,6 +47,8 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1001
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[t].[ID],
@@ -61,7 +63,7 @@ FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] = @ID
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

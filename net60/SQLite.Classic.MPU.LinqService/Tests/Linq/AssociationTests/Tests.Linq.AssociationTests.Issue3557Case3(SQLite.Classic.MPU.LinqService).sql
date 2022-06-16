@@ -146,6 +146,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[i].[Id],
@@ -156,7 +158,7 @@ SELECT
 			[SubData2] [s]
 		WHERE
 			[a_SubData].[Id] = [s].[Id]
-		LIMIT 1
+		LIMIT @take
 	)
 FROM
 	[Data] [i]

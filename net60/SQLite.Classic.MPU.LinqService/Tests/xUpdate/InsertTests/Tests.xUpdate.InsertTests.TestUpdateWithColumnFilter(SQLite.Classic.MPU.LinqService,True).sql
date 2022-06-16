@@ -33,6 +33,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[x].[FirstName],
@@ -44,7 +46,7 @@ FROM
 	[Person] [x]
 WHERE
 	[x].[FirstName] = @FirstName
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -73,6 +75,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[x].[FirstName],
@@ -84,7 +88,7 @@ FROM
 	[Person] [x]
 WHERE
 	[x].[FirstName] = @FirstName
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

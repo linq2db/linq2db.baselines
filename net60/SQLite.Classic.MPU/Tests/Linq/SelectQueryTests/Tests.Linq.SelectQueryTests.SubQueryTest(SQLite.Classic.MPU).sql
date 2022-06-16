@@ -27,6 +27,8 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[t2].[Value1],
@@ -51,7 +53,7 @@ FROM
 					strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,4 || ' Day') as [Value2]
 			) [t1]
 	) [t2]
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 RollbackTransaction

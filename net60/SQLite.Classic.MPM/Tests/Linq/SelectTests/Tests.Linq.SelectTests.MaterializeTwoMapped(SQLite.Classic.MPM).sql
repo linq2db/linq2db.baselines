@@ -27,6 +27,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[t1].[test_number],
@@ -35,7 +37,7 @@ SELECT
 	[t1].[id]
 FROM
 	[test_mapping_column_2_prop] [t1]
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
