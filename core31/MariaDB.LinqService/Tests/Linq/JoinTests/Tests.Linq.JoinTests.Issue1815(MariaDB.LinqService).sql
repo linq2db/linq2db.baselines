@@ -100,6 +100,8 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`x`.`InId`,
@@ -113,10 +115,12 @@ FROM
 		LEFT JOIN `EdtLink` `j` ON `x`.`InId` = `j`.`InId`
 WHERE
 	`x`.`InId` = 1
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`x`.`InId`,
@@ -130,7 +134,7 @@ FROM
 		LEFT JOIN `EdtLink` `j` ON `x`.`InId` = `j`.`InId`
 WHERE
 	`x`.`InId` = 2
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

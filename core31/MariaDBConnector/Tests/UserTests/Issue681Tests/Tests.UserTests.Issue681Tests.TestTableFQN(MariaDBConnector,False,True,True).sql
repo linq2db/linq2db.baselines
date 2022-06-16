@@ -1,11 +1,13 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	DATABASE()
 FROM
 	`LinqDataTypes` `_`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

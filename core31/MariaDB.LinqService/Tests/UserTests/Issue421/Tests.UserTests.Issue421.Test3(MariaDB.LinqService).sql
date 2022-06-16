@@ -29,6 +29,8 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`Id`,
@@ -37,10 +39,12 @@ FROM
 	`BlobClass` `_`
 WHERE
 	`_`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`Id`,
@@ -49,7 +53,7 @@ FROM
 	`BlobClass` `_`
 WHERE
 	`_`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

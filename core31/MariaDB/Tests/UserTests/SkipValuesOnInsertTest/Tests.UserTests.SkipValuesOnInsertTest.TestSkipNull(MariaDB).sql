@@ -30,6 +30,8 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -39,7 +41,7 @@ FROM
 	`PR_1598_Insert_Null_Table` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

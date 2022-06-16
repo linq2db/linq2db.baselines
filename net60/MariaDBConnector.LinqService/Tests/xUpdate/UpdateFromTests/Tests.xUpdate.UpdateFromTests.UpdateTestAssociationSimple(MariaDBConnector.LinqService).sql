@@ -274,6 +274,8 @@ WHERE
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`v`.`Value1`,
@@ -284,7 +286,7 @@ FROM
 		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
 WHERE
 	`a_Relation`.`RelatedValue1` = 11
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

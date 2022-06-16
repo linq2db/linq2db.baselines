@@ -26,30 +26,36 @@ CALL TEST_PACKAGE2.TEST_PROCEDURE(@i)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	TEST_FUNCTION(1)
 FROM
 	`Person` `p`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	TEST_PACKAGE1.TEST_FUNCTION(1)
 FROM
 	`Person` `p`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	TEST_PACKAGE2.TEST_FUNCTION(1)
 FROM
 	`Person` `p`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

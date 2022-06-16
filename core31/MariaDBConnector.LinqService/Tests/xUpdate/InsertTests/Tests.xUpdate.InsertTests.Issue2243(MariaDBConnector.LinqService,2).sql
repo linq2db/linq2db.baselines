@@ -40,6 +40,8 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`t1`.`id`,
@@ -48,7 +50,7 @@ SELECT
 	`t1`.`updated_by`
 FROM
 	`test_insert_or_replace` `t1`
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -79,6 +81,8 @@ ON DUPLICATE KEY UPDATE
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`t1`.`id`,
@@ -87,7 +91,7 @@ SELECT
 	`t1`.`updated_by`
 FROM
 	`test_insert_or_replace` `t1`
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

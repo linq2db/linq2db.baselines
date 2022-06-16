@@ -29,6 +29,8 @@ VALUES
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`Id`,
@@ -37,7 +39,7 @@ FROM
 	`BlobClass` `_`
 WHERE
 	`_`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -53,6 +55,8 @@ WHERE
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`_`.`Id`,
@@ -61,7 +65,7 @@ FROM
 	`BlobClass` `_`
 WHERE
 	`_`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

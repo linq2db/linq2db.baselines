@@ -88,6 +88,8 @@ BeforeExecute
 -- MariaDBConnector MySqlConnector MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`p`.`PersonID`,
@@ -96,7 +98,7 @@ FROM
 	`Patient` `p`
 WHERE
 	`p`.`PersonID` = @id
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql (asynchronously)

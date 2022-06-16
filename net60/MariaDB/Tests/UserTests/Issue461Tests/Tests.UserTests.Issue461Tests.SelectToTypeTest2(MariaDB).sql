@@ -2,12 +2,14 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`l`.`ParentID`
 FROM
 	`Child` `l`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 RollbackTransaction

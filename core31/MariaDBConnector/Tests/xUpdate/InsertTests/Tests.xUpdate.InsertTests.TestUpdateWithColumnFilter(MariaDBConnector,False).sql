@@ -33,6 +33,8 @@ BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`x`.`FirstName`,
@@ -44,7 +46,7 @@ FROM
 	`Person` `x`
 WHERE
 	`x`.`FirstName` = @FirstName
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -70,6 +72,8 @@ BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`x`.`FirstName`,
@@ -81,7 +85,7 @@ FROM
 	`Person` `x`
 WHERE
 	`x`.`FirstName` = @FirstName
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

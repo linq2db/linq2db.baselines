@@ -2,6 +2,8 @@
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @skip Int32
 SET     @skip = 2
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -10,5 +12,5 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` > 1
-LIMIT @skip, 1
+LIMIT @skip, @take
 

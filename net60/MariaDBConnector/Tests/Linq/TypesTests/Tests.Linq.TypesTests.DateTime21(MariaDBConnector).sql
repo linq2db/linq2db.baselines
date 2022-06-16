@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`ID`,
@@ -16,7 +18,7 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -32,6 +34,8 @@ WHERE
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`ID`,
@@ -48,7 +52,7 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

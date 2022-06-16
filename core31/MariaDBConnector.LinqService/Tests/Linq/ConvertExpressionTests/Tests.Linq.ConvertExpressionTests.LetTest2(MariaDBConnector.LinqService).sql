@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -14,6 +16,6 @@ WHERE
 			`Child` `t1`
 		WHERE
 			`p`.`ParentID` = `t1`.`ParentID`
-		LIMIT 1
+		LIMIT @take
 	) IS NOT NULL
 

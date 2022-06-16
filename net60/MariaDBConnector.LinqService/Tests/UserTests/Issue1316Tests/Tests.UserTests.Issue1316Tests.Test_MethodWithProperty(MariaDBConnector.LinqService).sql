@@ -26,6 +26,8 @@ BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @Item1 Int32
 SET     @Item1 = 5
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`_`.`ID`
@@ -33,7 +35,7 @@ FROM
 	`Issue1316Tests` `_`
 WHERE
 	`_`.`ID` = @Item1
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

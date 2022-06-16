@@ -122,6 +122,8 @@ BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @skip Int32
 SET     @skip = 1
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`q`.`Value2`
@@ -135,7 +137,7 @@ FROM
 	) `q`
 ORDER BY
 	`q`.`Id`
-LIMIT @skip, 1
+LIMIT @skip, @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

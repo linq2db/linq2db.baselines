@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 WITH `CTE_1`
 (
@@ -53,10 +55,12 @@ SELECT
 	`t1`.`rn`
 FROM
 	`CTE_1` `t1`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`x`.`FirstName`,
@@ -89,5 +93,5 @@ FROM
 	) `x`
 WHERE
 	`x`.`rn` = 1
-LIMIT 1
+LIMIT @take
 

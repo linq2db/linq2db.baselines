@@ -32,6 +32,8 @@ BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @take_1 Int32
+SET     @take_1 = 1
 DECLARE @take Int32
 SET     @take = 5000
 
@@ -67,7 +69,7 @@ SELECT
 			`c_3`.`ParentID` > 0
 		ORDER BY
 			`c_3`.`ChildID`
-		LIMIT 1
+		LIMIT @take_1
 	)
 FROM
 	`Parent` `t`
