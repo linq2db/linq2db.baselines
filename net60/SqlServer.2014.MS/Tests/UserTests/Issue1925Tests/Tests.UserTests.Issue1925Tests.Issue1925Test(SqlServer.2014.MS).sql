@@ -32,8 +32,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[r].[Id]
 FROM
 	[SampleClass] [r]
@@ -42,8 +44,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[r].[Id]
 FROM
 	[SampleClass] [r]
@@ -52,8 +56,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[r].[Id]
 FROM
 	[SampleClass] [r]

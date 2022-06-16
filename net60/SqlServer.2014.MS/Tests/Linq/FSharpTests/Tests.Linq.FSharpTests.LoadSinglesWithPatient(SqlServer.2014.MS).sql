@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName],
@@ -17,8 +19,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName],

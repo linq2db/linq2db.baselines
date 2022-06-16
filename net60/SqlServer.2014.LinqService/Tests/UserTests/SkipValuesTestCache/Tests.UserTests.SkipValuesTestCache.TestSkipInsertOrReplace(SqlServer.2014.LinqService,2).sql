@@ -45,8 +45,10 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]
@@ -90,8 +92,10 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]

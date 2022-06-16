@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2014 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],

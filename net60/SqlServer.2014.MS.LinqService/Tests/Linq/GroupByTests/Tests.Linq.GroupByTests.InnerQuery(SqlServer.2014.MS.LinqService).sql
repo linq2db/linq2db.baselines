@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	(
-		SELECT TOP (1)
+		SELECT TOP (@take)
 			[d].[Taxonomy]
 		FROM
 			[Doctor] [d]

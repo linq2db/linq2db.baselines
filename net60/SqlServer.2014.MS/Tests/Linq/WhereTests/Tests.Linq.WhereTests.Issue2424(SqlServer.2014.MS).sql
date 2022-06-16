@@ -29,8 +29,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -40,8 +42,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -51,8 +55,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -62,8 +68,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -73,8 +81,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -84,8 +94,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -95,8 +107,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -106,8 +120,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -117,8 +133,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -128,8 +146,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -139,8 +159,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -150,8 +172,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -161,8 +185,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -172,8 +198,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -183,8 +211,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -194,8 +224,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -205,8 +237,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -216,8 +250,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -227,8 +263,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -238,8 +276,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -249,8 +289,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -260,8 +302,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[i].[Id],
 	[i].[StrValue]
 FROM
