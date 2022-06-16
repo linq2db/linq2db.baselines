@@ -30,8 +30,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[Id],
 	[t1].[Name]
 FROM
@@ -39,8 +41,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2012 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[Id],
 	[t1].[Name]
 FROM

@@ -445,10 +445,12 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[h].[RowNumber]
 FROM
 	(
@@ -465,10 +467,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 78
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[h].[RowNumber]
 FROM
 	(

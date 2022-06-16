@@ -122,10 +122,12 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2012 (asynchronously)
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

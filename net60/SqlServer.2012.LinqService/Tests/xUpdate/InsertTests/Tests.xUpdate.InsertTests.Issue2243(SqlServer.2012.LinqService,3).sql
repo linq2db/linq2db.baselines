@@ -48,8 +48,10 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[t1].[id],
 	[t1].[name],
 	[t1].[created_by],
@@ -94,8 +96,10 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[t1].[id],
 	[t1].[name],
 	[t1].[created_by],

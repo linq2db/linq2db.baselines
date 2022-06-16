@@ -29,8 +29,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Id],
 	[_].[BlobValue]
 FROM
@@ -54,8 +56,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[Id],
 	[_].[BlobValue]
 FROM

@@ -24,10 +24,12 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]
@@ -36,10 +38,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]

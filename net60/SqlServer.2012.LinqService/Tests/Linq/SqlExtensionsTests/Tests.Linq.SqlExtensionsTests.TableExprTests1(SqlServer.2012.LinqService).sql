@@ -34,8 +34,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	'[database].[schema].[table_name]',
 	'[database].[schema].[table_name]',
 	'[table_name]',

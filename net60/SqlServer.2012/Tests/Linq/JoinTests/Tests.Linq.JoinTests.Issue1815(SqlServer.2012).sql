@@ -63,8 +63,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[InId],
 	[j].[InId],
 	[j].[InMaxQuantity],
@@ -79,8 +81,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[InId],
 	[j].[InId],
 	[j].[InMaxQuantity],
