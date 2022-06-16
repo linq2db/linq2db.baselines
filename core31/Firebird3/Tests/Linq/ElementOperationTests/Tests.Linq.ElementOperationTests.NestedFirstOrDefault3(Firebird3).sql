@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	(
-		SELECT FIRST 1 DISTINCT
+		SELECT FIRST @take DISTINCT
 			"c_1"."ParentID"
 		FROM
 			"Child" "c_1"

@@ -28,8 +28,10 @@ RETURNING
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t1".ID,
 	"t1"."Value_"
 FROM

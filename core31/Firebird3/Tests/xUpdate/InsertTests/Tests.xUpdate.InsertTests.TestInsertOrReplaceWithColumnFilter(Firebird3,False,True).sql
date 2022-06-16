@@ -46,10 +46,12 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"x".ID,
 	"x"."FirstName",
 	"x"."LastName",
@@ -99,10 +101,12 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"x".ID,
 	"x"."FirstName",
 	"x"."LastName",

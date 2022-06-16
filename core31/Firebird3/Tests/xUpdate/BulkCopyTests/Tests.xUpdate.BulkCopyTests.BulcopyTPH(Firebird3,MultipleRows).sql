@@ -44,8 +44,10 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"x"."Id",
 	"x"."Discriminator",
 	"x"."Value1",
@@ -59,8 +61,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"x"."Id",
 	"x"."Discriminator",
 	"x"."Value1",
@@ -74,8 +78,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"x"."Id",
 	"x"."Discriminator",
 	"x"."Value1",
@@ -89,8 +95,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"x"."Id",
 	"x"."Discriminator",
 	"x"."Value1",
@@ -104,8 +112,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"x"."Id",
 	"x"."Discriminator",
 	"x"."Value1",
@@ -119,8 +129,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"x"."Id",
 	"x"."Discriminator",
 	"x"."Value1",

@@ -36,10 +36,12 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 DECLARE @id Integer -- Int32
 SET     @id = 4
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"p2"."PersonID",
 	"p2"."Gender",
 	"p2"."FirstName",

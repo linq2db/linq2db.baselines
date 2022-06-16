@@ -33,6 +33,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 5000
+DECLARE @take_1 Integer -- Int32
+SET     @take_1 = 1
 
 SELECT FIRST @take
 	"t"."ParentID",
@@ -57,7 +59,7 @@ SELECT FIRST @take
 			"c_2"."ParentID" = "t"."ParentID" AND "c_2"."ChildID" > -100
 	),
 	(
-		SELECT FIRST 1
+		SELECT FIRST @take_1
 			"c_3"."ParentID"
 		FROM
 			"Child" "c_3"

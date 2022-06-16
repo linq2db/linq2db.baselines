@@ -52,10 +52,12 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT FIRST 2 SKIP @skip
+SELECT FIRST @take SKIP @skip
 	"t1".ID,
 	"t1"."Field1"
 FROM
@@ -94,10 +96,12 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT FIRST 2 SKIP @skip
+SELECT FIRST @take SKIP @skip
 	"t1".ID,
 	"t1"."Field1"
 FROM

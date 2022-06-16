@@ -116,8 +116,10 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"x"."InId",
 	CASE
 		WHEN "j"."InId" IS NULL THEN "x"."InMinQuantity"
@@ -135,8 +137,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"x"."InId",
 	CASE
 		WHEN "j"."InId" IS NULL THEN "x"."InMinQuantity"

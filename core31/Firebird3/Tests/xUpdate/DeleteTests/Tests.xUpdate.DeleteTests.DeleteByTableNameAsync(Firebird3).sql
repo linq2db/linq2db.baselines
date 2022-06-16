@@ -74,8 +74,10 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird (asynchronously)
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t1"."FirstName",
 	"t1"."PersonID",
 	"t1"."LastName",
