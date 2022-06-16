@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."ParentID",
@@ -14,6 +12,6 @@ WHERE
 			r."Value1"
 		FROM
 			"Parent" r
-		LIMIT :take
+		LIMIT 1
 	) IS NOT NULL
 
