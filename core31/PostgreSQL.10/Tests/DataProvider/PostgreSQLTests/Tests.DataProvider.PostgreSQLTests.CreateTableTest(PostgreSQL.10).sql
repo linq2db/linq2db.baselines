@@ -29,8 +29,6 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Guid Uuid -- Guid
 SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."TimeOffset",
@@ -39,7 +37,7 @@ FROM
 	"CreateTableTestClass" t1
 WHERE
 	t1."Guid" = :Guid
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
