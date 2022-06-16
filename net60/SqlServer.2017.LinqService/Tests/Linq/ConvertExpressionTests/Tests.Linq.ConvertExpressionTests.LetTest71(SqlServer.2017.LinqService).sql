@@ -2,6 +2,10 @@
 -- SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 5000
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 1
+DECLARE @take_2 Int -- Int32
+SET     @take_2 = 1
 
 SELECT TOP (@take)
 	[t].[ParentID],
@@ -27,7 +31,7 @@ SELECT TOP (@take)
 FROM
 	[Parent] [t]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take_1)
 				[c_3].[ParentID] as [First1]
 			FROM
 				[Child] [c_3]
@@ -38,7 +42,7 @@ FROM
 				[c_3].[ChildID]
 		) [t1]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take_2)
 				[c_4].[ParentID],
 				[c_4].[ChildID]
 			FROM

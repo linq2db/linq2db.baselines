@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John'
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[t].[PersonID],
 	[t].[FirstName],
 	[t].[LastName],
@@ -16,10 +18,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'Tester'
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[t].[PersonID],
 	[t].[FirstName],
 	[t].[LastName],

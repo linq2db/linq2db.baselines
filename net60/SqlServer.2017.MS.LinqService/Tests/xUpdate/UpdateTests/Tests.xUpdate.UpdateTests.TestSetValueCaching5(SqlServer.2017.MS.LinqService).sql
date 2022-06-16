@@ -76,10 +76,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[_].[Value5]
 FROM
 	[UpdateSetTest] [_]
@@ -104,10 +106,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[_].[Value5]
 FROM
 	[UpdateSetTest] [_]

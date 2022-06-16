@@ -31,12 +31,14 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = N'___Value3___'
 DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = N'___Value4___'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -45,12 +47,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = N'___Value3___'
 DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = NULL
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -59,12 +63,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = N'___Value3___'
 DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = N'___Value2___'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -73,12 +79,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = NULL
 DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = N'___Value2___'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -87,12 +95,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = N'___Value3___'
 DECLARE @CEnum_1 VarChar(20) -- AnsiString
 SET     @CEnum_1 = N'___Value2___'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]

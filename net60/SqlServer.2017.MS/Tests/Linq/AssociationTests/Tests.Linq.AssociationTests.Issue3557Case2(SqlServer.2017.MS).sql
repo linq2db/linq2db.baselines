@@ -78,6 +78,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[i].[Id],
@@ -87,7 +89,7 @@ FROM
 	[Data] [i]
 		LEFT JOIN [SubData1] [a_SubData] ON [i].[Id] = [a_SubData].[Id]
 		OUTER APPLY (
-			SELECT TOP (1)
+			SELECT TOP (@take)
 				[s].[Reason],
 				1 as [is_empty]
 			FROM

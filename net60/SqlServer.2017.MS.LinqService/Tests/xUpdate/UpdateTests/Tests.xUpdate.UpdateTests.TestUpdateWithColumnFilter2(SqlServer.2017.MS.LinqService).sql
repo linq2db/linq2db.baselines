@@ -31,10 +31,12 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilter'
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -63,10 +65,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -104,10 +108,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[_].[FirstName],
 	[_].[PersonID],
 	[_].[LastName],
