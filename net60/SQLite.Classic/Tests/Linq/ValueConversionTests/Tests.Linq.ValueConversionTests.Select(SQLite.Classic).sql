@@ -120,6 +120,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 DECLARE @skip  -- Int32
 SET     @skip = 1
 
@@ -135,7 +137,7 @@ FROM
 	) [q]
 ORDER BY
 	[q].[Id]
-LIMIT 1 OFFSET @skip
+LIMIT @take OFFSET @skip
 
 BeforeExecute
 -- SQLite.Classic SQLite

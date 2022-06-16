@@ -10,6 +10,8 @@ CREATE TABLE [Issue1192Table]
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	(
@@ -24,7 +26,7 @@ FROM
 	[Issue1192Table] [t_1]
 WHERE
 	[t_1].[MyOtherId] = 12
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite

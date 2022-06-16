@@ -81,6 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[o].[ShipCountry],
@@ -101,5 +103,5 @@ FROM
 	[Orders] [o]
 WHERE
 	(Asin(Cos(Cast([o].[OrderID] as Float))) = 0 OR [o].[OrderID] > 0)
-LIMIT 1
+LIMIT @take
 

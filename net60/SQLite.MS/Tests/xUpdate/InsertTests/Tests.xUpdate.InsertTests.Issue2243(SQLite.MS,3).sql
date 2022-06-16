@@ -52,6 +52,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[t1].[id],
@@ -60,7 +62,7 @@ SELECT
 	[t1].[updated_by]
 FROM
 	[test_insert_or_replace] [t1]
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -81,6 +83,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[t1].[id],
@@ -89,7 +93,7 @@ SELECT
 	[t1].[updated_by]
 FROM
 	[test_insert_or_replace] [t1]
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite

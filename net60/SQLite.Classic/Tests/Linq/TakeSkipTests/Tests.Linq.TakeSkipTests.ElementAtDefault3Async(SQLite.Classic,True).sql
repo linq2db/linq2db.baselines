@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
+DECLARE @take  -- Int32
+SET     @take = 1
 DECLARE @n  -- Int32
 SET     @n = 3
 
@@ -10,5 +12,5 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] > 1
-LIMIT 1 OFFSET @n
+LIMIT @take OFFSET @n
 

@@ -64,6 +64,10 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
+DECLARE @take_1  -- Int32
+SET     @take_1 = 1
 
 UPDATE
 	[billing_TempReading]
@@ -76,7 +80,7 @@ SET
 		WHERE
 			[w].[Name] = [billing_TempReading].[ReadingTypeName] AND
 			[w].[DevTypeId] = [billing_TempReading].[Devtypeid]
-		LIMIT 1
+		LIMIT @take
 	),
 	[Responsibility] = (
 		SELECT
@@ -86,7 +90,7 @@ SET
 		WHERE
 			[w_1].[Name] = [billing_TempReading].[ReadingTypeName] AND
 			[w_1].[DevTypeId] = [billing_TempReading].[Devtypeid]
-		LIMIT 1
+		LIMIT @take_1
 	)
 
 BeforeExecute

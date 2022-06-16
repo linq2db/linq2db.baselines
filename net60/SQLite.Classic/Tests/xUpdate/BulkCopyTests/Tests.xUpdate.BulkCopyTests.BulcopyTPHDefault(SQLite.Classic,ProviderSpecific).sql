@@ -42,6 +42,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[x].[Id],
@@ -53,10 +55,12 @@ FROM
 	[TPHTableDefault] [x]
 WHERE
 	[x].[Discriminator] = 1
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[x].[Id],
@@ -68,10 +72,12 @@ FROM
 	[TPHTableDefault] [x]
 WHERE
 	[x].[Discriminator] = 2
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[x].[Id],
@@ -83,10 +89,12 @@ FROM
 	[TPHTableDefault] [x]
 WHERE
 	[x].[Discriminator] = 3
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[x].[Id],
@@ -98,10 +106,12 @@ FROM
 	[TPHTableDefault] [x]
 WHERE
 	[x].[Value1] = 'Str1'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[x].[Id],
@@ -113,10 +123,12 @@ FROM
 	[TPHTableDefault] [x]
 WHERE
 	[x].[Value2] = 'Str2'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[x].[Id],
@@ -128,7 +140,7 @@ FROM
 	[TPHTableDefault] [x]
 WHERE
 	[x].[Value3] = 'Str3'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite

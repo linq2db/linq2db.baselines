@@ -32,6 +32,8 @@ BeforeExecute
 CommitTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[t].[ParentID],
@@ -40,7 +42,7 @@ FROM
 	[Parent] [t]
 WHERE
 	[t].[ParentID] = 1010
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite

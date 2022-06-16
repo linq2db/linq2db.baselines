@@ -25,13 +25,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	'[id]',
 	'id'
 FROM
 	[sample_table_temp] [t]
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite

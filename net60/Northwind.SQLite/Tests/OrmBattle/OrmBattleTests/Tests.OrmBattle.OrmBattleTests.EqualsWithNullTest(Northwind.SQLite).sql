@@ -81,6 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[c_1].[Fax],
@@ -98,5 +100,5 @@ FROM
 	[Customers] [c_1]
 WHERE
 	[c_1].[Address] IS NOT NULL
-LIMIT 1
+LIMIT @take
 

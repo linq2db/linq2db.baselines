@@ -56,6 +56,8 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[e].[Id],
@@ -65,10 +67,12 @@ FROM
 	[DynamicColumnTable] [e]
 WHERE
 	[e].[Name] = 'Some1'
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[e].[Id],
@@ -78,7 +82,7 @@ FROM
 	[DynamicColumnTable] [e]
 WHERE
 	[e].[Name] = 'Some2'
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite

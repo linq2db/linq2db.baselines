@@ -81,6 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[o].[ShipCountry],
@@ -101,5 +103,5 @@ FROM
 	[Orders] [o]
 WHERE
 	Cast(StrFTime('%j', [o].[OrderDate]) as int) = 360
-LIMIT 1
+LIMIT @take
 

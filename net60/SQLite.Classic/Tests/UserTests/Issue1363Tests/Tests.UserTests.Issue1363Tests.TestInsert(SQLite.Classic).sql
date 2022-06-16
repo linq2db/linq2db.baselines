@@ -59,6 +59,8 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id2  -- Guid
 SET     @id2 = X'0D6048A921DE744F8AC29516B287076E'
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[_].[required_field],
@@ -67,7 +69,7 @@ FROM
 	[Issue1363] [_]
 WHERE
 	[_].[required_field] = @id2
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite

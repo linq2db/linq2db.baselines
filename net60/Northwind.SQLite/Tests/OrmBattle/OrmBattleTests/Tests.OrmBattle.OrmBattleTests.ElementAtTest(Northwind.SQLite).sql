@@ -81,6 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 DECLARE @skip  -- Int32
 SET     @skip = 15
 
@@ -100,5 +102,5 @@ FROM
 	[Customers] [t1]
 ORDER BY
 	[t1].[CustomerID]
-LIMIT 1 OFFSET @skip
+LIMIT @take OFFSET @skip
 

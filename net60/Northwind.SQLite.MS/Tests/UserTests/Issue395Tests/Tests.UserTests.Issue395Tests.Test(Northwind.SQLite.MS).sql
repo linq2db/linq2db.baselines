@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[t1].[ShipCountry],
@@ -40,7 +42,7 @@ FROM
 	) [t1]
 GROUP BY
 	[t1].[ShipCountry]
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite

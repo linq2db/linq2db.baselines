@@ -33,6 +33,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[x].[FirstName],
@@ -44,7 +46,7 @@ FROM
 	[Person] [x]
 WHERE
 	[x].[FirstName] = @FirstName
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -64,6 +66,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[x].[FirstName],
@@ -75,7 +79,7 @@ FROM
 	[Person] [x]
 WHERE
 	[x].[PersonID] = @ID
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -104,6 +108,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[_].[FirstName],
@@ -115,7 +121,7 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = @ID
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite

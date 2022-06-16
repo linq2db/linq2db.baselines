@@ -81,6 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[c_1].[Fax],
@@ -98,5 +100,5 @@ FROM
 	[Customers] [c_1]
 WHERE
 	LeftStr([c_1].[City], 3) = 'Sea'
-LIMIT 1
+LIMIT @take
 

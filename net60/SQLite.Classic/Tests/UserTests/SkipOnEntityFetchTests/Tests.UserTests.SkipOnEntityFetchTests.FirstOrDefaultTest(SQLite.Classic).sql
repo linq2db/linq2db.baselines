@@ -37,6 +37,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[x].[Id],
@@ -49,7 +51,7 @@ FROM
 	[Attachment] [x]
 WHERE
 	[x].[Id] = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite

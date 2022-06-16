@@ -26,6 +26,8 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[_].[ID]
@@ -33,12 +35,14 @@ FROM
 	[Issue1316Tests] [_]
 WHERE
 	[_].[ID] = @ID
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 5
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[_].[ID]
@@ -46,7 +50,7 @@ FROM
 	[Issue1316Tests] [_]
 WHERE
 	[_].[ID] = @Id
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite

@@ -2,6 +2,8 @@
 -- SQLite.MS SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[x].[ParentID],
@@ -12,5 +14,5 @@ WHERE
 	[x].[ParentID] = @ParentID
 ORDER BY
 	[x].[ParentID] DESC
-LIMIT 1
+LIMIT @take
 

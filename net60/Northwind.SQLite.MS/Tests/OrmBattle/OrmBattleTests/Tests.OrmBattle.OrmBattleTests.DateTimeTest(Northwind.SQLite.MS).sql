@@ -81,6 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[o].[ShipCountry],
@@ -101,5 +103,5 @@ FROM
 	[Orders] [o]
 WHERE
 	DateTime([o].[OrderDate]) >= DateTime(Date(Cast(Cast(StrFTime('%Y', [o].[OrderDate]) as int) as NVarChar(11)) || '-01-01'))
-LIMIT 1
+LIMIT @take
 

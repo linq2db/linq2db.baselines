@@ -12,6 +12,8 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	(
@@ -26,7 +28,7 @@ SELECT
 				) [r]
 		WHERE
 			[r].[PersonID] = [x].[PersonID]
-		LIMIT 1
+		LIMIT @take
 	)
 FROM
 	[Person] [x]

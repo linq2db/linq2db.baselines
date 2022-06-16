@@ -37,6 +37,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[_].[Id],
@@ -50,7 +52,7 @@ FROM
 	[EnumCardinality] [_]
 WHERE
 	[_].[Property5] > 'B'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite

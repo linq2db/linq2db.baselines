@@ -81,6 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	[t1].[Fax],
@@ -96,5 +98,5 @@ SELECT
 	[t1].[CustomerID]
 FROM
 	[Customers] [t1]
-LIMIT 1
+LIMIT @take
 

@@ -33,6 +33,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	[t1].[Decimal1],
@@ -41,7 +43,7 @@ SELECT
 	[t1].[DateTime]
 FROM
 	[Issue1960Table] [t1]
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic SQLite
