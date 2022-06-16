@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"p"."ParentID"
 FROM
 	"Parent" "p"
@@ -10,8 +12,10 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"p"."ParentID"
 FROM
 	"Parent" "p"
@@ -20,8 +24,10 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"p"."ParentID"
 FROM
 	"Parent" "p"

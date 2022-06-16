@@ -34,8 +34,10 @@ VALUES
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t1"."Id",
 	"t1"."ClaimedKeyType",
 	"t1"."ClaimedKeyTypeN"

@@ -8,6 +8,8 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 INSERT INTO "Person"
 (
@@ -18,7 +20,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert14' || (
-		SELECT FIRST 1
+		SELECT FIRST @take
 			"p"."FirstName"
 		FROM
 			"Person" "p"

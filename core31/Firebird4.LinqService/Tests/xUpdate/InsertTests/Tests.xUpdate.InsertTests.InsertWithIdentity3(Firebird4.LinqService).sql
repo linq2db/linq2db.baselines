@@ -34,8 +34,10 @@ RETURNING
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"p"."FirstName",
 	"p"."PersonID",
 	"p"."LastName",

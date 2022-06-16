@@ -37,12 +37,14 @@ SELECT 2,2,'TWO','___Value2___' FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value4___'
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -51,12 +53,14 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar -- String
 SET     @CEnum_1 = NULL
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -65,12 +69,14 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -79,12 +85,14 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar -- String
 SET     @CEnum = NULL
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -93,12 +101,14 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"

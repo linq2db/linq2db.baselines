@@ -34,8 +34,10 @@ SELECT 100,1 FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"x"."Value",
 	"x"."Id"
 FROM
@@ -45,8 +47,10 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"x"."Value",
 	"x"."Id"
 FROM

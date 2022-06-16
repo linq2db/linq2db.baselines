@@ -24,10 +24,12 @@ VALUES
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t1".ID
 FROM
 	"Issue1316Tests" "t1"
@@ -36,10 +38,12 @@ WHERE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t1".ID
 FROM
 	"Issue1316Tests" "t1"

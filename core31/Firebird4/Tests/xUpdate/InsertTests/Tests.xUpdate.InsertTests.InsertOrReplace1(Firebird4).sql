@@ -109,10 +109,12 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"p"."PersonID",
 	"p"."Diagnosis"
 FROM

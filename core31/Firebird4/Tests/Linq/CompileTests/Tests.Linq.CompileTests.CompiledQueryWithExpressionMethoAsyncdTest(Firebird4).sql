@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird (asynchronously)
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"x"."ParentID",
 	"x"."Value1"
 FROM

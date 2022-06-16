@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	(
-		SELECT FIRST 1
+		SELECT FIRST @take
 			"p"."Value1"
 		FROM
 			"Parent" "p"

@@ -27,48 +27,60 @@ TEST_PACKAGE2.TEST_PROCEDURE
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	TEST_FUNCTION(1)
 FROM
 	"Person" "p"
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	TEST_PACKAGE1.TEST_FUNCTION(1)
 FROM
 	"Person" "p"
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	TEST_PACKAGE2.TEST_FUNCTION(1)
 FROM
 	"Person" "p"
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"r".O
 FROM
 	TEST_TABLE_FUNCTION(1) "r"
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"r".O
 FROM
 	TEST_PACKAGE1.TEST_TABLE_FUNCTION(1) "r"
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"r".O
 FROM
 	TEST_PACKAGE2.TEST_TABLE_FUNCTION(1) "r"

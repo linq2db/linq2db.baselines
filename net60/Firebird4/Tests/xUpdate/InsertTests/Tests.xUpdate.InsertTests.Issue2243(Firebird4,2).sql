@@ -48,8 +48,10 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t1"."id",
 	"t1"."name",
 	"t1"."created_by",
@@ -94,8 +96,10 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	"t1"."id",
 	"t1"."name",
 	"t1"."created_by",

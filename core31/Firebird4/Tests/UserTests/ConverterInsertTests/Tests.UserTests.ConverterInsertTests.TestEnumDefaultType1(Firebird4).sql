@@ -35,10 +35,12 @@ RETURNING
 
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-SELECT FIRST 1
+SELECT FIRST @take
 	"t"."PersonID",
 	"t"."FirstName",
 	"t"."LastName",

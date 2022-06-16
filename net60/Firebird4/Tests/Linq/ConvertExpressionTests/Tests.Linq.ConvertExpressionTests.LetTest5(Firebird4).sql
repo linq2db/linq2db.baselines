@@ -22,6 +22,8 @@ BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- Firebird4 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	CASE
@@ -45,7 +47,7 @@ SELECT
 			"c_2"."ParentID" = "p"."ParentID" AND "c_2"."ChildID" > -100
 	),
 	(
-		SELECT FIRST 1
+		SELECT FIRST @take
 			"c_3"."ParentID"
 		FROM
 			"Child" "c_3"
