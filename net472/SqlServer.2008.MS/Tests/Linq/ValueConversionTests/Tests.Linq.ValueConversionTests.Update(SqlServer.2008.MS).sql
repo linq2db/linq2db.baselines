@@ -75,8 +75,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],
@@ -134,8 +136,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],
@@ -193,8 +197,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],

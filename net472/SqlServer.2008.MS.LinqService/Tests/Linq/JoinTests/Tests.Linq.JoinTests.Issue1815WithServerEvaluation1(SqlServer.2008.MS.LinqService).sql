@@ -104,8 +104,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[InId],
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]
@@ -123,8 +125,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[x].[InId],
 	CASE
 		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]
