@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 WITH `CTE_1` (`Operator`)
 AS
@@ -13,14 +15,16 @@ SELECT
 	`t1`.`Operator`
 FROM
 	`CTE_1` `t1`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`x`.`LastName`
 FROM
 	`Person` `x`
-LIMIT 1
+LIMIT @take
 

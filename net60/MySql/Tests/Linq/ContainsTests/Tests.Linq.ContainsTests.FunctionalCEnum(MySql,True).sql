@@ -34,6 +34,8 @@ DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- AnsiString
 SET     @CEnum_1 = '___Value4___'
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`s`.`Id`
@@ -41,12 +43,14 @@ FROM
 	`Src` `s`
 WHERE
 	`s`.`CEnum` IN (@CEnum, @CEnum_1)
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`s`.`Id`
@@ -54,7 +58,7 @@ FROM
 	`Src` `s`
 WHERE
 	`s`.`CEnum` IN (@CEnum) OR `s`.`CEnum` IS NULL
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -62,6 +66,8 @@ DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- AnsiString
 SET     @CEnum_1 = '___Value2___'
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`s`.`Id`
@@ -69,12 +75,14 @@ FROM
 	`Src` `s`
 WHERE
 	`s`.`CEnum` IN (@CEnum, @CEnum_1)
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @CEnum_1 VarChar(12) -- AnsiString
 SET     @CEnum_1 = '___Value2___'
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`s`.`Id`
@@ -82,7 +90,7 @@ FROM
 	`Src` `s`
 WHERE
 	`s`.`CEnum` NOT IN (@CEnum_1) AND `s`.`CEnum` IS NOT NULL
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -90,6 +98,8 @@ DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- AnsiString
 SET     @CEnum_1 = '___Value2___'
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`s`.`Id`
@@ -97,7 +107,7 @@ FROM
 	`Src` `s`
 WHERE
 	(`s`.`CEnum` NOT IN (@CEnum, @CEnum_1) OR `s`.`CEnum` IS NULL)
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql

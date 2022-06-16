@@ -39,6 +39,8 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -49,7 +51,7 @@ FROM
 	`PR_1598_Update_Enum_Table` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -73,6 +75,8 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -83,7 +87,7 @@ FROM
 	`PR_1598_Update_Enum_Table` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -104,6 +108,8 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -114,7 +120,7 @@ FROM
 	`PR_1598_Update_Enum_Table` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

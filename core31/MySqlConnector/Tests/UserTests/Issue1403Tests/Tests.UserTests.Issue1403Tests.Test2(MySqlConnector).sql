@@ -25,13 +25,15 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t1`.`event_id`,
 	`t1`.`event_description`
 FROM
 	`Issue1403Tests_2` `t1`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

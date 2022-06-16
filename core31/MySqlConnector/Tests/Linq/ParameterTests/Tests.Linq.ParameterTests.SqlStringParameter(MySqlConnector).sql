@@ -2,6 +2,8 @@
 -- MySqlConnector MySql
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`t`.`PersonID`,
@@ -13,12 +15,14 @@ FROM
 	`Person` `t`
 WHERE
 	`t`.`FirstName` = @p
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
 DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`t`.`PersonID`,
@@ -30,5 +34,5 @@ FROM
 	`Person` `t`
 WHERE
 	`t`.`FirstName` = @p
-LIMIT 2
+LIMIT @take
 

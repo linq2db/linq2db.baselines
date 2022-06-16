@@ -29,13 +29,15 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`
 FROM
 	`Parent` `t`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 RollbackTransaction

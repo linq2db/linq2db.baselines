@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`_`.`FirstName`,
@@ -11,5 +13,5 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`PersonID` = 1
-LIMIT 2
+LIMIT @take
 

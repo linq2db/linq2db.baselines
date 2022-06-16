@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`ID`,
@@ -16,7 +18,7 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -32,6 +34,8 @@ WHERE
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`ID`,
@@ -48,7 +52,7 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql

@@ -34,6 +34,8 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -43,7 +45,7 @@ FROM
 	`PR_1598_Update_Table` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -64,6 +66,8 @@ WHERE
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -73,7 +77,7 @@ FROM
 	`PR_1598_Update_Table` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -91,6 +95,8 @@ WHERE
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -100,7 +106,7 @@ FROM
 	`PR_1598_Update_Table` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql

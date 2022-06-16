@@ -42,6 +42,8 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -53,7 +55,7 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = @FirstName AND `p`.`LastName` = 'Shepard'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -90,6 +92,8 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -101,7 +105,7 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = @FirstName AND `p`.`LastName` = 'Shepard'
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

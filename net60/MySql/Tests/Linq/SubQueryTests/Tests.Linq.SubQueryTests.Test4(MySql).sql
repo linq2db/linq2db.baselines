@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	(
@@ -9,7 +11,7 @@ SELECT
 			`Child` `ch`
 		WHERE
 			`ch`.`ParentID` = `p`.`ParentID` AND `ch`.`ChildID` = `ch`.`ParentID` * 10 + 1
-		LIMIT 1
+		LIMIT @take
 	)
 FROM
 	`Parent` `p`

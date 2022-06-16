@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t1`.`ParentID`,
@@ -9,5 +11,5 @@ SELECT
 FROM
 	`Child` `t1`
 		INNER JOIN `Parent` `a_Parent` ON `t1`.`ParentID` = `a_Parent`.`ParentID`
-LIMIT 1
+LIMIT @take
 

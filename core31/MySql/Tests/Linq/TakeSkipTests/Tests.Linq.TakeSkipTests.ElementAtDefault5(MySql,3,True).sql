@@ -2,6 +2,8 @@
 -- MySql MySql.Official MySql
 DECLARE @skip Int32
 SET     @skip = 3
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t1`.`FirstName`,
@@ -13,5 +15,5 @@ FROM
 	`Person` `t1`
 ORDER BY
 	`t1`.`LastName`
-LIMIT @skip, 1
+LIMIT @skip, @take
 

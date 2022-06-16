@@ -32,6 +32,8 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t2`.`Value1`,
@@ -56,7 +58,7 @@ FROM
 					Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
 			) `t1`
 	) `t2`
-LIMIT 1
+LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql

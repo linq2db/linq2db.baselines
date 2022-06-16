@@ -43,6 +43,8 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	`p`.`ParentID`,
@@ -51,7 +53,7 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = @ParentID
-LIMIT 2
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector MySql

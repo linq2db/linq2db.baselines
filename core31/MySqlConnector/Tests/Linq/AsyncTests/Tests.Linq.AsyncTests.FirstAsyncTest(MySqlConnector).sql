@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql (asynchronously)
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`p`.`FirstName`,
@@ -11,5 +13,5 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`PersonID` = 1
-LIMIT 1
+LIMIT @take
 

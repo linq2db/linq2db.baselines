@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`p`.`PersonID`,
@@ -9,5 +11,5 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` LIKE 'J%' ESCAPE '~' AND (`p`.`PersonID` = 1 OR `p`.`LastName` = 'fail')
-LIMIT 1
+LIMIT @take
 

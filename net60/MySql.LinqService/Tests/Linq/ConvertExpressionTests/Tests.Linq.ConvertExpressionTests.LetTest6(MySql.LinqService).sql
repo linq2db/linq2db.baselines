@@ -20,6 +20,8 @@ ORDER BY
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`cp`.`ParentID`,
@@ -53,7 +55,7 @@ SELECT
 			`c_3`.`ParentID` > 0
 		ORDER BY
 			`c_3`.`ChildID`
-		LIMIT 1
+		LIMIT @take
 	)
 FROM
 	`Parent` `cp`
