@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName],
