@@ -46,10 +46,12 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],
@@ -99,10 +101,12 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],

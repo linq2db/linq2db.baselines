@@ -24,10 +24,12 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @Item1 Int -- Int32
 SET     @Item1 = 5
 
-SELECT TOP (2)
+SELECT TOP (@take)
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]

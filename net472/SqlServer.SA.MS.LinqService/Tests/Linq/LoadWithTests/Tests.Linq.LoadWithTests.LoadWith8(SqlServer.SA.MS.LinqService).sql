@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[c_1].[ParentID],
 	[c_1].[ChildID],
 	[c_1].[GrandChildID],
