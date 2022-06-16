@@ -24,6 +24,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t."ID",
@@ -32,7 +34,7 @@ FROM
 	"LinqDataTypes" t
 WHERE
 	t."ID" = 1001
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

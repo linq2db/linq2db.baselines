@@ -120,6 +120,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
@@ -135,7 +137,7 @@ FROM
 	) q
 ORDER BY
 	q."Id"
-LIMIT 1 OFFSET :skip 
+LIMIT :take OFFSET :skip 
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

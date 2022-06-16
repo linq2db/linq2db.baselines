@@ -35,6 +35,8 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t."PersonID",
@@ -46,12 +48,14 @@ FROM
 	"Person" t
 WHERE
 	t."PersonID" = :id
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	t."PersonID",
@@ -63,7 +67,7 @@ FROM
 	"Person" t
 WHERE
 	t."PersonID" = :id
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

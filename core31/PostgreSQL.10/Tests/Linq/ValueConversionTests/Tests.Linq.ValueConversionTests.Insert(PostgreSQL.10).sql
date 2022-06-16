@@ -53,6 +53,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	e."Id",
@@ -69,7 +71,7 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = 1
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -107,6 +109,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	e."Id",
@@ -123,7 +127,7 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = 2
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -177,6 +181,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	e."Id",
@@ -193,7 +199,7 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = 3
-LIMIT 1
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

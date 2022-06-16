@@ -47,6 +47,8 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	t."ID",
@@ -61,7 +63,7 @@ FROM
 	"LinqDataTypes" t
 WHERE
 	t."ID" = :ID
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

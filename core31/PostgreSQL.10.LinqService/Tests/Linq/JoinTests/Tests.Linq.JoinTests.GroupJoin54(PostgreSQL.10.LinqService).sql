@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	(
@@ -22,7 +24,7 @@ FROM
 				"Child" ch
 			WHERE
 				ch."ParentID" = p."ParentID"
-			LIMIT 1
+			LIMIT :take
 		) t2 ON 1=1
 WHERE
 	p."ParentID" = 1

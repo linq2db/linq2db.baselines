@@ -24,6 +24,8 @@ BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
 	p."ParentID",
@@ -42,7 +44,7 @@ FROM
 				ch."ParentID" = p."ParentID"
 			ORDER BY
 				ch."ChildID" DESC
-			LIMIT 1
+			LIMIT :take
 		) t1 ON 1=1
 WHERE
 	p."ParentID" = 1

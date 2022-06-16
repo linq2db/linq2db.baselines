@@ -42,6 +42,8 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	p."ParentID",
@@ -50,7 +52,7 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = :ParentID
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

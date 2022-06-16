@@ -32,6 +32,8 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
 SELECT
 	p."FirstName",
@@ -43,7 +45,7 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = 'John' AND p."LastName" = 'Shepard'
-LIMIT 2
+LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
