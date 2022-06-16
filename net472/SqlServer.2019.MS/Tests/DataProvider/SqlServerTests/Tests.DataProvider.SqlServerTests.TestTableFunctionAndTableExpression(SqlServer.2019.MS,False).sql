@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -29,8 +31,10 @@ AS
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -41,8 +45,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -53,8 +59,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -65,8 +73,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -77,12 +87,14 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],
