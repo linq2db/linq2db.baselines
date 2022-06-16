@@ -97,8 +97,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -116,7 +114,7 @@ FROM
 				qwerty q
 			WHERE
 				q."Id" = x.ref1
-			LIMIT :take_1
+			LIMIT 1
 		) t1 ON 1=1
 LIMIT :take
 

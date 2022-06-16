@@ -100,8 +100,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	x."InId",
@@ -118,12 +116,10 @@ FROM
 		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
 WHERE
 	x."InId" = 1
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	x."InId",
@@ -140,7 +136,7 @@ FROM
 		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
 WHERE
 	x."InId" = 2
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

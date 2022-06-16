@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @skip Integer -- Int32
 SET     @skip = 2
 
@@ -15,5 +13,5 @@ FROM
 	"Person" t1
 ORDER BY
 	t1."LastName"
-LIMIT :take OFFSET :skip 
+LIMIT 1 OFFSET :skip 
 
