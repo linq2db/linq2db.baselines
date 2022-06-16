@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[p].[FirstName]
 FROM
 	[Person] [p]
@@ -10,10 +12,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 DECLARE @ID NVarChar(4000) -- String
 SET     @ID = N'John'
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[p].[FirstName]
 FROM
 	[Person] [p]

@@ -30,8 +30,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]
@@ -60,8 +62,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]

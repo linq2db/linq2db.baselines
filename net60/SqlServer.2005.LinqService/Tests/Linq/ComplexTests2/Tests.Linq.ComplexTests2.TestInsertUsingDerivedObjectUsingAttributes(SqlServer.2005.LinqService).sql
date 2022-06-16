@@ -33,8 +33,10 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[FirstName],
 	[_].[PersonID],
 	[_].[LastName],
@@ -72,8 +74,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (1)
+SELECT TOP (@take)
 	[_].[FirstName],
 	[_].[PersonID],
 	[_].[LastName],
