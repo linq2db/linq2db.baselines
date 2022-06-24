@@ -28,5 +28,14 @@ VALUES
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[DataClass] [t1]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
 DROP TABLE IF EXISTS [DataClass]
 
