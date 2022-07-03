@@ -14,7 +14,7 @@ BeforeExecute
 
 MERGE INTO [tempdb]..[#Issue3644Table] [Target]
 USING (VALUES
-	('fe8a4bed-6976-4e21-9673-d592e742c4ef',DATETIME2FROMPARTS(2022, 7, 3, 11, 6, 25, 0, 0))
+	('a9919455-b863-433f-a4f1-f1e45e3ca599',DATETIME2FROMPARTS(2022, 7, 3, 11, 31, 46, 0, 0))
 ) [Source]
 (
 	[Id],
