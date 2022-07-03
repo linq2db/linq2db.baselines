@@ -1,0 +1,48 @@
+﻿BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+CREATE TABLE [tempdb]..[#Issue3644Table]
+(
+	[Id]   UniqueIdentifier NOT NULL,
+	[Date] DateTime2(0)         NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
+)
+
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+MERGE INTO [tempdb]..[#Issue3644Table] [Target]
+USING (VALUES
+	('7bc34ade-2b76-46b4-920d-e6d03d8ff7e0',DATETIME2FROMPARTS(2022, 7, 3, 11, 4, 57, 0, 0))
+) [Source]
+(
+	[Id],
+	[Date_1]
+)
+ON ([Target].[Id] = [Source].[Id])
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Id],
+	[Date]
+)
+VALUES
+(
+	[Source].[Id],
+	[Source].[Date_1]
+)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Target].[Date] = [Source].[Date_1]
+;
+
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+IF (OBJECT_ID(N'[tempdb]..[#Issue3644Table]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#Issue3644Table]
+
