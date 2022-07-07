@@ -21,11 +21,9 @@ SET
 			c_1."ChildID" = 11
 	) + 1000
 FROM
-	"Parent" p
-		INNER JOIN "Child" c_2 ON p."ParentID" = c_2."ParentID"
+	"Child" c_2
 WHERE
-	p."ParentID" = 1 AND "Parent"."ParentID" = p."ParentID" AND
-	("Parent"."Value1" = p."Value1" OR "Parent"."Value1" IS NULL AND p."Value1" IS NULL)
+	"Parent"."ParentID" = 1 AND "Parent"."ParentID" = c_2."ParentID"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
