@@ -104,13 +104,11 @@ UPDATE
 SET
 	is_deleted = :is_deleted
 FROM
-	element_services ie,
-	"Components" cm
+	element_services ie
+		INNER JOIN component_categories ctg ON ie.id = ctg.service_id
+		INNER JOIN "Components" cm ON ctg.id = cm.category_id AND cm.is_deleted = False
 WHERE
-	ie.id = 'TestProcessService' AND
-	ie.id = component_categories.service_id AND
-	component_categories.id = cm.category_id AND
-	cm.is_deleted = False
+	ie.id = 'TestProcessService' AND component_categories.id = ctg.id
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

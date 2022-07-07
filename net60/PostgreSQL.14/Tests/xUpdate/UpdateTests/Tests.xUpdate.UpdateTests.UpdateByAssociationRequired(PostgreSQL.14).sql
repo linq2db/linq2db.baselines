@@ -59,11 +59,12 @@ UPDATE
 SET
 	"Field" = 'test'
 FROM
-	"MainTable" t1,
-	"AssociatedTable" "a_AssociatedRequired"
+	"MainTable" t1
+		INNER JOIN "AssociatedTable" "a_AssociatedRequired" ON t1."Id" = "a_AssociatedRequired"."Id"
+		INNER JOIN "MainTable" "a_MainRequired" ON "a_AssociatedRequired"."Id" = "a_MainRequired"."Id"
 WHERE
-	t1."Id" = :id AND t1."Id" = "a_AssociatedRequired"."Id" AND
-	"a_AssociatedRequired"."Id" = "MainTable"."Id"
+	t1."Id" = :id AND "MainTable"."Id" = "a_MainRequired"."Id" AND
+	("MainTable"."Field" = "a_MainRequired"."Field" OR "MainTable"."Field" IS NULL AND "a_MainRequired"."Field" IS NULL)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
