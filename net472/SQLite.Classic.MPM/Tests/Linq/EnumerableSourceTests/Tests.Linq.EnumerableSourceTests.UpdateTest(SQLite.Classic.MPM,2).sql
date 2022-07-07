@@ -34,15 +34,14 @@ UPDATE
 SET
 	[Value] = [r].[Value]
 FROM
-	[TableToInsert] [t]
-		INNER JOIN (
-			SELECT NULL[Id], NULL[Value] WHERE 1 = 0
-			UNION ALL
-			VALUES
-				(3,'Janet Updated'), (4,'Doe Updated')
-			) [r] ON [t].[Id] = [r].[Id]
+	(
+		SELECT NULL[Id], NULL[Value] WHERE 1 = 0
+		UNION ALL
+		VALUES
+			(3,'Janet Updated'), (4,'Doe Updated')
+		) [r]
 WHERE
-	[TableToInsert].[Id] = [t].[Id]
+	[TableToInsert].[Id] = [r].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
