@@ -277,10 +277,9 @@ SET
 	"Value2" = ("UpdatedEntities"."Value2" * t."Value2") * :int2,
 	"Value3" = ("UpdatedEntities"."Value3" * t."Value3") * :int3
 FROM
-	"UpdatedEntities" c_1
-		INNER JOIN "NewEntities" t ON t.id = c_1.id
+	"NewEntities" t
 WHERE
-	t.id <> :someId AND "UpdatedEntities".id = c_1.id
+	t.id <> :someId AND t.id = "UpdatedEntities".id
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

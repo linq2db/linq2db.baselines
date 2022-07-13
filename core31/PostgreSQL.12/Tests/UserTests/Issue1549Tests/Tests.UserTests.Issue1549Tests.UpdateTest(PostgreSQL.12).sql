@@ -63,10 +63,10 @@ SET
 	"DevReadingTypeId" = drt."Id",
 	"Responsibility" = drt."Responsibility"
 FROM
-	"billing_TempReading" tr
-		INNER JOIN "billing_DevReadingType" drt ON drt."Name" = tr."ReadingTypeName" AND drt."DevTypeId" = tr."Devtypeid"
+	"billing_DevReadingType" drt
 WHERE
-	"billing_TempReading".id = tr.id
+	drt."Name" = "billing_TempReading"."ReadingTypeName" AND
+	drt."DevTypeId" = "billing_TempReading"."Devtypeid"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

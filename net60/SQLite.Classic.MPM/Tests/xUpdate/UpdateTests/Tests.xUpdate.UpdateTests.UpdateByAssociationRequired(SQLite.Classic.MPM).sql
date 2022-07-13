@@ -59,11 +59,12 @@ UPDATE
 SET
 	[Field] = 'test'
 FROM
-	[MainTable] [_],
-	[AssociatedTable] [a_AssociatedRequired]
+	[MainTable] [_]
+		INNER JOIN [AssociatedTable] [a_AssociatedRequired] ON [_].[Id] = [a_AssociatedRequired].[Id]
+		INNER JOIN [MainTable] [a_MainRequired] ON [a_AssociatedRequired].[Id] = [a_MainRequired].[Id]
 WHERE
-	[_].[Id] = @id AND [_].[Id] = [a_AssociatedRequired].[Id] AND
-	[a_AssociatedRequired].[Id] = [MainTable].[Id]
+	[_].[Id] = @id AND [MainTable].[Id] = [a_MainRequired].[Id] AND
+	([MainTable].[Field] = [a_MainRequired].[Field] OR [MainTable].[Field] IS NULL AND [a_MainRequired].[Field] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

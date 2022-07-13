@@ -58,12 +58,11 @@ UPDATE
 SET
 	"Value" = r."Value"
 FROM
-	"TableToInsert" t
-		INNER JOIN (VALUES
-			(2,'Janet Updated'), (3,'Doe Updated')
-		) r("Id", "Value") ON t."Id" = r."Id"
+	(VALUES
+		(2,'Janet Updated'), (3,'Doe Updated')
+	) r("Id", "Value")
 WHERE
-	"TableToInsert"."Id" = t."Id"
+	"TableToInsert"."Id" = r."Id"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

@@ -41,23 +41,24 @@ BeforeExecute
 UPDATE
 	[gt_s_one]
 SET
-	[col1] = [x].[col1],
-	[col2] = [x].[col2],
-	[col3] = Replace([x].[col3], 'auth.', ''),
-	[col4] = [x].[col4],
+	[col1] = [gt_s_one].[col1],
+	[col2] = [gt_s_one].[col2],
+	[col3] = Replace([gt_s_one].[col3], 'auth.', ''),
+	[col4] = [gt_s_one].[col4],
 	[col5] = CASE
-		WHEN [x].[col3] = 'empty' THEN '1'
+		WHEN [gt_s_one].[col3] = 'empty'
+			THEN '1'
 		ELSE '0'
 	END,
 	[col6] = CASE
-		WHEN [x].[col3] = 'empty' THEN ''
+		WHEN [gt_s_one].[col3] = 'empty'
+			THEN ''
 		ELSE Cast([am].[id] as NVarChar(11))
 	END
 FROM
-	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [am] ON (Upper(Replace([x].[col3], 'auth.', '')) = Upper([am].[code]) OR Upper(Replace([x].[col3], 'auth.', '')) IS NULL AND Upper([am].[code]) IS NULL)
+	[access_mode] [am]
 WHERE
-	[gt_s_one].[id] = [x].[id]
+	(Upper(Replace([gt_s_one].[col3], 'auth.', '')) = Upper([am].[code]) OR Upper(Replace([gt_s_one].[col3], 'auth.', '')) IS NULL AND Upper([am].[code]) IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
