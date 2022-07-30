@@ -1,11 +1,24 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "CreateTableTypes"
-(
-	"Id"    Int NOT NULL,
-	"Int32" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CreateTableTypes')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "CreateTableTypes"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CreateTableTypes')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "CreateTableTypes"
+			(
+				"Id"    Int NOT NULL,
+				"Int32" Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird

@@ -120,13 +120,3 @@ FROM
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
--- Firebird
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-
-DELETE FROM
-	"Person" "x"
-WHERE
-	"x"."PersonID" = @ID
-

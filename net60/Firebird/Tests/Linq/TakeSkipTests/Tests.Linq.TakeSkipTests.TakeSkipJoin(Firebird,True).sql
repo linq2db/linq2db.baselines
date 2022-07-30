@@ -53,6 +53,8 @@ FROM
 				FROM
 					"LinqDataTypes" "t2"
 			) "t3"
+		ORDER BY
+			"t3".ID
 	) "e"
 		LEFT JOIN (
 			SELECT FIRST @take_1
@@ -84,5 +86,7 @@ FROM
 					FROM
 						"LinqDataTypes" "t5"
 				) "t6"
+			ORDER BY
+				"t6".ID
 		) "t7" ON "t7".ID = "e".ID
 
