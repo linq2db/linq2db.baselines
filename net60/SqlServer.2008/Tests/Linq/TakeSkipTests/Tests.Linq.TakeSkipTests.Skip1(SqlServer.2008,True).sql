@@ -11,7 +11,7 @@ FROM
 		SELECT
 			[t1].[ParentID],
 			[t1].[ChildID],
-			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+			ROW_NUMBER() OVER (ORDER BY [t1].[ChildID]) as [RN]
 		FROM
 			[Child] [t1]
 	) [t2]
@@ -31,7 +31,7 @@ FROM
 		SELECT
 			[t1].[ParentID],
 			[t1].[ChildID],
-			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+			ROW_NUMBER() OVER (ORDER BY [t1].[ChildID]) as [RN]
 		FROM
 			[Child] [t1]
 	) [t2]

@@ -1,17 +1,24 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [FluentMapping]
-(
-	[RecordID]       Int       NOT NULL,
-	[EffectiveStart] DateTime2 NOT NULL,
-	[EffectiveEnd]   DateTime2     NULL,
-	[Key]            Int       NOT NULL,
-	[Unordered1]     Int       NOT NULL,
-	[Unordered2]     Int       NOT NULL,
-	[Audit1ID]       Int       NOT NULL,
-	[Audit2ID]       Int       NOT NULL
-)
+IF (OBJECT_ID(N'[FluentMapping]', N'U') IS NOT NULL)
+	DROP TABLE [FluentMapping]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[FluentMapping]', N'U') IS NULL)
+	CREATE TABLE [FluentMapping]
+	(
+		[RecordID]       Int       NOT NULL,
+		[EffectiveStart] DateTime2 NOT NULL,
+		[EffectiveEnd]   DateTime2     NULL,
+		[Key]            Int       NOT NULL,
+		[Unordered1]     Int       NOT NULL,
+		[Unordered2]     Int       NOT NULL,
+		[Audit1ID]       Int       NOT NULL,
+		[Audit2ID]       Int       NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

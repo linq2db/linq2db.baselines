@@ -1,13 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [BackgroundTask]
-(
-	[ID]               Int     NULL,
-	[DurationID]       Int NOT NULL,
-	[DurationInterval] Int NOT NULL,
-	[PersonID]         Int     NULL
-)
+IF (OBJECT_ID(N'[BackgroundTask]', N'U') IS NOT NULL)
+	DROP TABLE [BackgroundTask]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[BackgroundTask]', N'U') IS NULL)
+	CREATE TABLE [BackgroundTask]
+	(
+		[ID]               Int     NULL,
+		[DurationID]       Int NOT NULL,
+		[DurationInterval] Int NOT NULL,
+		[PersonID]         Int     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
