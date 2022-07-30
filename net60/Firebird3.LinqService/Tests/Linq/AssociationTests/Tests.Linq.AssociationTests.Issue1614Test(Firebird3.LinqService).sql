@@ -1,29 +1,68 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "User"
-(
-	"Id" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'User')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "User"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Resource"
-(
-	"Id"                 Int NOT NULL,
-	"AssociatedObjectId" Int NOT NULL,
-	"AssociationTypeId"  Int
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'User')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "User"
+			(
+				"Id" Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Lookup"
-(
-	"Id"   Int                                    NOT NULL,
-	"Type" VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Resource')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Resource"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Resource')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Resource"
+			(
+				"Id"                 Int NOT NULL,
+				"AssociatedObjectId" Int NOT NULL,
+				"AssociationTypeId"  Int
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Lookup')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Lookup"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Lookup')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Lookup"
+			(
+				"Id"   Int                                    NOT NULL,
+				"Type" VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

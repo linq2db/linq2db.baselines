@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" = 1001
-
-BeforeExecute
--- Firebird3 Firebird
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -33,12 +25,4 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = 1001
-
-BeforeExecute
--- Firebird3 Firebird
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."Value1" = 1001
 

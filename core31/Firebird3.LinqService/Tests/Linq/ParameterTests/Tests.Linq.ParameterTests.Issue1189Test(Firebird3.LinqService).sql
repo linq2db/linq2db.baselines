@@ -1,13 +1,26 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Issue1189Customer"
-(
-	ID   Int                                    NOT NULL,
-	NAME VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1189Customer')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1189Customer"';
+END
 
-	CONSTRAINT "PK_Issue1189Customer" PRIMARY KEY (ID)
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1189Customer')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Issue1189Customer"
+			(
+				ID   Int                                    NOT NULL,
+				NAME VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+
+				CONSTRAINT "PK_Issue1189Customer" PRIMARY KEY (ID)
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

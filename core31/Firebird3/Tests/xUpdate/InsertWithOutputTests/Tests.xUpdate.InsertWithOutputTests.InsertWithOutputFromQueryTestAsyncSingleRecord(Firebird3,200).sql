@@ -44,12 +44,25 @@ SELECT 10,-10,'Str10' FROM rdb$database
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "DestinationTable"
-(
-	"Id"       Int                                   NOT NULL,
-	"Value"    Int                                   NOT NULL,
-	"ValueStr" VarChar(50) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DestinationTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "DestinationTable"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DestinationTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "DestinationTable"
+			(
+				"Id"       Int                                   NOT NULL,
+				"Value"    Int                                   NOT NULL,
+				"ValueStr" VarChar(50) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird (asynchronously)

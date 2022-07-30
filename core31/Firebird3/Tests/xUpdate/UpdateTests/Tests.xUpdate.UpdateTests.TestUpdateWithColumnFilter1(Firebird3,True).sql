@@ -88,13 +88,3 @@ FROM
 WHERE
 	"x"."FirstName" = @FirstName
 
-BeforeExecute
--- Firebird3 Firebird
-DECLARE @newName VarChar(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM
-	"Person" "x"
-WHERE
-	"x"."FirstName" = @newName
-
