@@ -65,12 +65,3 @@ FROM
 WHERE
 	[c_1].[ParentID] = 1
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DELETE [t1]
-FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] IN (1001, 1002)
-

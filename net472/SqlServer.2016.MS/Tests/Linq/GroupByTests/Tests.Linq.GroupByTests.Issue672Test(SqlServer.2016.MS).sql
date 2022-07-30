@@ -1,15 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [Stone]
-(
-	[Id]           Int             NOT NULL IDENTITY,
-	[Name]         NVarChar(4000)  NOT NULL,
-	[Enabled]      Bit                 NULL,
-	[ImageFullUrl] NVarChar(4000)      NULL,
+DROP TABLE IF EXISTS [Stone]
 
-	CONSTRAINT [PK_Stone] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+IF (OBJECT_ID(N'[Stone]', N'U') IS NULL)
+	CREATE TABLE [Stone]
+	(
+		[Id]           Int             NOT NULL IDENTITY,
+		[Name]         NVarChar(4000)  NOT NULL,
+		[Enabled]      Bit                 NULL,
+		[ImageFullUrl] NVarChar(4000)      NULL,
+
+		CONSTRAINT [PK_Stone] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

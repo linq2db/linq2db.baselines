@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [SampleClass]
-(
-	[Id]   Int           NOT NULL,
-	[Data] VarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SqlServer.2016
+
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
+	CREATE TABLE [SampleClass]
+	(
+		[Id]   Int           NOT NULL,
+		[Data] VarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016
@@ -34,7 +40,7 @@ SELECT
 FROM
 	[SampleClass] [t]
 WHERE
-	JSON_VALUE([t].[Data], N'$.Property1') = 'Pr1'
+	JSON_VALUE([t].[Data], N'$.Property1') = N'Pr1'
 
 BeforeExecute
 -- SqlServer.2016
