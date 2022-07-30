@@ -69,11 +69,3 @@ FROM
 WHERE
 	"c_1"."ChildID" = ?
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Child" "t1"
-WHERE
-	"t1"."ChildID" > 1000
-

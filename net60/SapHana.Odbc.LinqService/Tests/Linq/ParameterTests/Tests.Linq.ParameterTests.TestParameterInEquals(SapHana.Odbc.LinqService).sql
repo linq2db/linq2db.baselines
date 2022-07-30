@@ -1,10 +1,20 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "TestEqualsTable1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "TestEqualsTable1"
 (
 	"Id" Integer NOT NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "TestEqualsTable2"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

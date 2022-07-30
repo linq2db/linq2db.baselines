@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast((Cast(Year("p"."DateTimeValue") as NVarChar(11)) || '-10-01') as Date) as "c1"
+			Cast((Lpad(Year("p"."DateTimeValue"),4,'0') || '-10-01') as Date) as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

@@ -49,6 +49,8 @@ FROM
 				FROM
 					"LinqDataTypes" "t2"
 			) "t3"
+		ORDER BY
+			"t3"."ID"
 		LIMIT 15
 	) "e"
 		LEFT JOIN (
@@ -81,6 +83,8 @@ FROM
 					FROM
 						"LinqDataTypes" "t5"
 				) "t6"
+			ORDER BY
+				"t6"."ID"
 			LIMIT 15
 		) "_" ON "_"."ID" = "e"."ID"
 

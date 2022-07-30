@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Topic"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Topic"
 (
 	"Id"    Integer       NOT NULL,
 	"Title" NVarChar(255)     NULL,
 	"Text"  NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Message"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

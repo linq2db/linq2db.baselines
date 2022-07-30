@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Topic"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Topic"
 (
 	"Id"    Integer       NOT NULL,
@@ -9,6 +14,11 @@ CREATE COLUMN TABLE "Topic"
 
 	PRIMARY KEY ("Id")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Message"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

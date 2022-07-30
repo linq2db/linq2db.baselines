@@ -18,8 +18,6 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"c_1"."ParentID",
@@ -28,7 +26,8 @@ FROM
 	"Child" "c_1"
 WHERE
 	"c_1"."ChildID" > -100
-LIMIT ?
+ORDER BY
+	"c_1"."ParentID"
 
 BeforeExecute
 RollbackTransaction
@@ -39,4 +38,6 @@ SELECT
 	1
 FROM
 	"Parent" "p"
+ORDER BY
+	"p"."ParentID"
 

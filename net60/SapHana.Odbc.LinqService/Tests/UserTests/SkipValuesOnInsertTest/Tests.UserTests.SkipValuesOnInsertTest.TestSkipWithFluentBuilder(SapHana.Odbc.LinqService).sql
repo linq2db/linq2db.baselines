@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "PR_1598_Insert_Fluent_Table"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "PR_1598_Insert_Fluent_Table"
 (
 	"Id"   Integer       NOT NULL,
