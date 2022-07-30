@@ -1,19 +1,25 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [ColumnOrderTest]
-(
-	[RecordID]       Int            NOT NULL,
-	[EffectiveStart] DateTime2      NOT NULL,
-	[EffectiveEnd]   DateTime2          NULL,
-	[Key]            Int            NOT NULL,
-	[Code]           NVarChar(4000)     NULL,
-	[Name]           NVarChar(4000)     NULL,
-	[Audit1ID]       Int            NOT NULL,
-	[Audit2ID]       Int            NOT NULL,
+DROP TABLE IF EXISTS [ColumnOrderTest]
 
-	CONSTRAINT [PK_ColumnOrderTest] PRIMARY KEY CLUSTERED ([RecordID])
-)
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[ColumnOrderTest]', N'U') IS NULL)
+	CREATE TABLE [ColumnOrderTest]
+	(
+		[RecordID]       Int            NOT NULL,
+		[EffectiveStart] DateTime2      NOT NULL,
+		[EffectiveEnd]   DateTime2          NULL,
+		[Key]            Int            NOT NULL,
+		[Code]           NVarChar(4000)     NULL,
+		[Name]           NVarChar(4000)     NULL,
+		[Audit1ID]       Int            NOT NULL,
+		[Audit2ID]       Int            NOT NULL,
+
+		CONSTRAINT [PK_ColumnOrderTest] PRIMARY KEY CLUSTERED ([RecordID])
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

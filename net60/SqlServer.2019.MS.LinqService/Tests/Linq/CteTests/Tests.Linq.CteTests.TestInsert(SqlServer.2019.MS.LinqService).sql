@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-CREATE TABLE [CteChild]
-(
-	[ChildID]  Int NOT NULL,
-	[ParentID] Int NOT NULL
-)
+DROP TABLE IF EXISTS [CteChild]
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[CteChild]', N'U') IS NULL)
+	CREATE TABLE [CteChild]
+	(
+		[ChildID]  Int NOT NULL,
+		[ParentID] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

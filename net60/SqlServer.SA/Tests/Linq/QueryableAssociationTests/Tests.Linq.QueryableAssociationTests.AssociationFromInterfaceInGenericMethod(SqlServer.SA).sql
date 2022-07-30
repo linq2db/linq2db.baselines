@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [TreeItem]
-(
-	[Id]       Int NOT NULL,
-	[ParentId] Int     NULL
-)
+DROP TABLE IF EXISTS [TreeItem]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+IF (OBJECT_ID(N'[TreeItem]', N'U') IS NULL)
+	CREATE TABLE [TreeItem]
+	(
+		[Id]       Int NOT NULL,
+		[ParentId] Int     NULL
+	)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

@@ -1,14 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-CREATE TABLE [ValuesTable]
-(
-	[Id]         BigInt NOT NULL,
-	[SomeValue1] Int    NOT NULL,
-	[SomeValue2] Int    NOT NULL,
+DROP TABLE IF EXISTS [ValuesTable]
 
-	CONSTRAINT [PK_ValuesTable] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2019
+
+IF (OBJECT_ID(N'[ValuesTable]', N'U') IS NULL)
+	CREATE TABLE [ValuesTable]
+	(
+		[Id]         BigInt NOT NULL,
+		[SomeValue1] Int    NOT NULL,
+		[SomeValue2] Int    NOT NULL,
+
+		CONSTRAINT [PK_ValuesTable] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2019

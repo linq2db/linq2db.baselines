@@ -46,12 +46,18 @@ VALUES
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [sample_other_class]
-(
-	[id]        Int          NOT NULL,
-	[parent_id] Int          NOT NULL,
-	[value]     NVarChar(50)     NULL
-)
+DROP TABLE IF EXISTS [sample_other_class]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[sample_other_class]', N'U') IS NULL)
+	CREATE TABLE [sample_other_class]
+	(
+		[id]        Int          NOT NULL,
+		[parent_id] Int          NOT NULL,
+		[value]     NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

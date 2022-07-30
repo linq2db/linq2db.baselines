@@ -12,7 +12,7 @@ IF (OBJECT_ID(N'[ToStringConvertibleTypes]', N'U') IS NULL)
 		[Prop_bool]             Bit              NOT NULL,
 		[Prop_byte]             TinyInt          NOT NULL,
 		[Prop_char]             NChar(1)         NOT NULL,
-		[Prop_decimal]          Decimal          NOT NULL,
+		[Prop_decimal]          Decimal(29, 10)  NOT NULL,
 		[Prop_double]           Float            NOT NULL,
 		[Prop_short]            SmallInt         NOT NULL,
 		[Prop_int]              Int              NOT NULL,
@@ -26,7 +26,7 @@ IF (OBJECT_ID(N'[ToStringConvertibleTypes]', N'U') IS NULL)
 		[NullableProp_bool]     Bit                  NULL,
 		[NullableProp_byte]     TinyInt              NULL,
 		[NullableProp_char]     NChar(1)             NULL,
-		[NullableProp_decimal]  Decimal              NULL,
+		[NullableProp_decimal]  Decimal(29, 10)      NULL,
 		[NullableProp_double]   Float                NULL,
 		[NullableProp_short]    SmallInt             NULL,
 		[NullableProp_int]      Int                  NULL,
@@ -100,6 +100,7 @@ SELECT TOP (@take)
 	Convert(NVarChar(4000), [x].[Prop_uint]),
 	Convert(NVarChar(4000), [x].[Prop_ulong]),
 	Convert(NVarChar(4000), [x].[Prop_Guid]),
+	Convert(NVarChar(4000), [x].[Prop_DateTime]),
 	Convert(NVarChar(1), [x].[NullableProp_bool]),
 	Convert(NVarChar(3), [x].[NullableProp_byte]),
 	Convert(NVarChar(4000), [x].[NullableProp_char]),
@@ -114,7 +115,6 @@ SELECT TOP (@take)
 	Convert(NVarChar(4000), [x].[NullableProp_uint]),
 	Convert(NVarChar(4000), [x].[NullableProp_ulong]),
 	Convert(NVarChar(4000), [x].[NullableProp_Guid]),
-	Convert(NVarChar(4000), [x].[Prop_DateTime]),
 	Convert(NVarChar(4000), [x].[NullableProp_DateTime])
 FROM
 	[ToStringConvertibleTypes] [x]
@@ -139,6 +139,7 @@ SELECT TOP (@take)
 	[x].[Prop_uint],
 	[x].[Prop_ulong],
 	[x].[Prop_Guid],
+	[x].[Prop_DateTime],
 	[x].[NullableProp_bool],
 	[x].[NullableProp_byte],
 	[x].[NullableProp_char],
@@ -153,8 +154,7 @@ SELECT TOP (@take)
 	[x].[NullableProp_uint],
 	[x].[NullableProp_ulong],
 	[x].[NullableProp_Guid],
-	Convert(NVarChar(4000), [x].[Prop_DateTime]),
-	Convert(NVarChar(4000), [x].[NullableProp_DateTime])
+	[x].[NullableProp_DateTime]
 FROM
 	[ToStringConvertibleTypes] [x]
 

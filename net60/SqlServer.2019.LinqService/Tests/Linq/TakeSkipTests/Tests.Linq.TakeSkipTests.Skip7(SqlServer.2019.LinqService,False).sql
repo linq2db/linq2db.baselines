@@ -9,6 +9,6 @@ SELECT
 FROM
 	[Child] [t1]
 ORDER BY
-	1
+	[t1].[ChildID]
 OFFSET @n ROWS
 

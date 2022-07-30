@@ -1,18 +1,24 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-CREATE TABLE [TestTable]
-(
-	[ID]      Int            NOT NULL,
-	[Field1]  Int            NOT NULL,
-	[Field2]  Int            NOT NULL,
-	[Field3]  Int            NOT NULL,
-	[Field4]  Int            NOT NULL,
-	[field11] NVarChar(4000)     NULL,
-	[Field5]  Int            NOT NULL,
+DROP TABLE IF EXISTS [TestTable]
 
-	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
-)
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[TestTable]', N'U') IS NULL)
+	CREATE TABLE [TestTable]
+	(
+		[ID]      Int            NOT NULL,
+		[Field1]  Int            NOT NULL,
+		[Field2]  Int            NOT NULL,
+		[Field3]  Int            NOT NULL,
+		[Field4]  Int            NOT NULL,
+		[field11] NVarChar(4000)     NULL,
+		[Field5]  Int            NOT NULL,
+
+		CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
+	)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

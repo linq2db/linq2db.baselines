@@ -1,12 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-CREATE TABLE [SampleClass]
-(
-	[Id]     Int            NOT NULL,
-	[Value]  NVarChar(50)       NULL,
-	[Value2] NVarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SqlServer.2019
+
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
+	CREATE TABLE [SampleClass]
+	(
+		[Id]     Int            NOT NULL,
+		[Value]  NVarChar(50)       NULL,
+		[Value2] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019

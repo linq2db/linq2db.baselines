@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [DataClass]
-(
-	[Id]    Int      NOT NULL,
-	[Value] DateTime NOT NULL
-)
+DROP TABLE IF EXISTS [DataClass]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+IF (OBJECT_ID(N'[DataClass]', N'U') IS NULL)
+	CREATE TABLE [DataClass]
+	(
+		[Id]    Int      NOT NULL,
+		[Value] DateTime NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

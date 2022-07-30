@@ -62,14 +62,3 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1001
-
-DELETE [t1]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] = @ParentID
-

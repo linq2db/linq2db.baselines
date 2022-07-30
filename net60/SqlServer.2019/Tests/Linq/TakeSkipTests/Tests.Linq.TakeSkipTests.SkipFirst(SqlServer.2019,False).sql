@@ -9,6 +9,6 @@ FROM
 WHERE
 	[p].[ParentID] > 1
 ORDER BY
-	1
+	[p].[ParentID]
 OFFSET 1 ROWS FETCH NEXT 1 ROWS ONLY 
 

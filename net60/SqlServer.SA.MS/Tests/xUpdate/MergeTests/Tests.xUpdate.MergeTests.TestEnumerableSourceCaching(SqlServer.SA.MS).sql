@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-CREATE TABLE [CacheTestTable]
-(
-	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL,
+DROP TABLE IF EXISTS [CacheTestTable]
 
-	CONSTRAINT [PK_CacheTestTable] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[CacheTestTable]', N'U') IS NULL)
+	CREATE TABLE [CacheTestTable]
+	(
+		[Id]    Int NOT NULL,
+		[Value] Int NOT NULL,
+
+		CONSTRAINT [PK_CacheTestTable] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
