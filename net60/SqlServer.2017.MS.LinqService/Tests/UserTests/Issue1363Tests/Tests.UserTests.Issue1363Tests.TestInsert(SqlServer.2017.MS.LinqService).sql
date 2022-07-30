@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-CREATE TABLE [Issue1363]
-(
-	[required_field] UniqueIdentifier NOT NULL,
-	[optional_field] UniqueIdentifier     NULL
-)
+DROP TABLE IF EXISTS [Issue1363]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+IF (OBJECT_ID(N'[Issue1363]', N'U') IS NULL)
+	CREATE TABLE [Issue1363]
+	(
+		[required_field] UniqueIdentifier NOT NULL,
+		[optional_field] UniqueIdentifier     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

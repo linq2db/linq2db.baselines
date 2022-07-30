@@ -1,12 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-CREATE TABLE [AttributeBase]
-(
-	[Id] Int NOT NULL,
+DROP TABLE IF EXISTS [AttributeBase]
 
-	CONSTRAINT [PK_AttributeBase] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+IF (OBJECT_ID(N'[AttributeBase]', N'U') IS NULL)
+	CREATE TABLE [AttributeBase]
+	(
+		[Id] Int NOT NULL,
+
+		CONSTRAINT [PK_AttributeBase] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

@@ -1,19 +1,31 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [TestEqualsTable1]
-(
-	[Id] Int NOT NULL
-)
+DROP TABLE IF EXISTS [TestEqualsTable1]
 
 BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [TestEqualsTable2]
-(
-	[Id] Int NOT NULL,
-	[FK] Int     NULL
-)
+IF (OBJECT_ID(N'[TestEqualsTable1]', N'U') IS NULL)
+	CREATE TABLE [TestEqualsTable1]
+	(
+		[Id] Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2017
+
+DROP TABLE IF EXISTS [TestEqualsTable2]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[TestEqualsTable2]', N'U') IS NULL)
+	CREATE TABLE [TestEqualsTable2]
+	(
+		[Id] Int NOT NULL,
+		[FK] Int     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2017
