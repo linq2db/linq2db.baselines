@@ -1,29 +1,50 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-CREATE TABLE [User]
-(
-	[Id] Int NOT NULL
-)
+IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
+	DROP TABLE [User]
 
 BeforeExecute
 -- SqlServer.2014
 
-CREATE TABLE [Resource]
-(
-	[Id]                 Int NOT NULL,
-	[AssociatedObjectId] Int NOT NULL,
-	[AssociationTypeId]  Int     NULL
-)
+IF (OBJECT_ID(N'[User]', N'U') IS NULL)
+	CREATE TABLE [User]
+	(
+		[Id] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014
 
-CREATE TABLE [Lookup]
-(
-	[Id]   Int            NOT NULL,
-	[Type] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Resource]', N'U') IS NOT NULL)
+	DROP TABLE [Resource]
+
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[Resource]', N'U') IS NULL)
+	CREATE TABLE [Resource]
+	(
+		[Id]                 Int NOT NULL,
+		[AssociatedObjectId] Int NOT NULL,
+		[AssociationTypeId]  Int     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[Lookup]', N'U') IS NOT NULL)
+	DROP TABLE [Lookup]
+
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[Lookup]', N'U') IS NULL)
+	CREATE TABLE [Lookup]
+	(
+		[Id]   Int            NOT NULL,
+		[Type] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014

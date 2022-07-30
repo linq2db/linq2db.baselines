@@ -1,13 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-CREATE TABLE [TableToInsert]
-(
-	[Id]    Int            NOT NULL,
-	[Value] NVarChar(4000)     NULL,
+IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NOT NULL)
+	DROP TABLE [TableToInsert]
 
-	CONSTRAINT [PK_TableToInsert] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
+	CREATE TABLE [TableToInsert]
+	(
+		[Id]    Int            NOT NULL,
+		[Value] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_TableToInsert] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2014
@@ -22,7 +29,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			(SELECT NULL[Id], NULL[Value] WHERE 1 = 0) [r]([Id], [Value])
+			(SELECT NULL [Id], NULL [Value] WHERE 1 = 0) [r]([Id], [Value])
 		WHERE
 			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
 	)
