@@ -1,12 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [SampleClass]
-(
-	[Id]     Int            NOT NULL,
-	[Value]  NVarChar(50)       NULL,
-	[Value2] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
+	DROP TABLE [SampleClass]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
+	CREATE TABLE [SampleClass]
+	(
+		[Id]     Int            NOT NULL,
+		[Value]  NVarChar(50)       NULL,
+		[Value2] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
