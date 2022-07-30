@@ -1,12 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [InsertTempTable]
-(
-	[Action]    NVarChar(4000)     NULL,
-	[NewId]     Int            NOT NULL,
-	[DeletedId] Int                NULL
-)
+IF (OBJECT_ID(N'[InsertTempTable]', N'U') IS NOT NULL)
+	DROP TABLE [InsertTempTable]
+
+BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[InsertTempTable]', N'U') IS NULL)
+	CREATE TABLE [InsertTempTable]
+	(
+		[Action]    NVarChar(4000)     NULL,
+		[NewId]     Int            NOT NULL,
+		[DeletedId] Int                NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012

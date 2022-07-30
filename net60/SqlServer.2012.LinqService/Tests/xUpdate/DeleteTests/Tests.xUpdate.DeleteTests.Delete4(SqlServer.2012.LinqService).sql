@@ -69,12 +69,3 @@ FROM
 WHERE
 	[gc].[ParentID] = 1
 
-BeforeExecute
--- SqlServer.2012
-
-DELETE [t1]
-FROM
-	[GrandChild] [t1]
-WHERE
-	[t1].[GrandChildID] IN (1001, 1002)
-

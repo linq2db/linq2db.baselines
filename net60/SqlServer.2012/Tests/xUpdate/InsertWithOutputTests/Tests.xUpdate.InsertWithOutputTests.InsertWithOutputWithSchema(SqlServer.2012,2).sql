@@ -1,12 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [TestSchema].[TableWithDataAndSchema]
-(
-	[Id]       Int          NOT NULL,
-	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
+IF (OBJECT_ID(N'[TestSchema].[TableWithDataAndSchema]', N'U') IS NOT NULL)
+	DROP TABLE [TestSchema].[TableWithDataAndSchema]
+
+BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[TestSchema].[TableWithDataAndSchema]', N'U') IS NULL)
+	CREATE TABLE [TestSchema].[TableWithDataAndSchema]
+	(
+		[Id]       Int          NOT NULL,
+		[Value]    Int          NOT NULL,
+		[ValueStr] NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012
