@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [DataClass]
-(
-	[Id]    Int      NOT NULL,
-	[Value] DateTime NOT NULL
-)
+IF (OBJECT_ID(N'[DataClass]', N'U') IS NOT NULL)
+	DROP TABLE [DataClass]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[DataClass]', N'U') IS NULL)
+	CREATE TABLE [DataClass]
+	(
+		[Id]    Int      NOT NULL,
+		[Value] DateTime NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005

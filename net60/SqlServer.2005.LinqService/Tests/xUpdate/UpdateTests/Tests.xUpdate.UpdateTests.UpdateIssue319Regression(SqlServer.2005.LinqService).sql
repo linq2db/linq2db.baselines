@@ -60,14 +60,3 @@ FROM
 WHERE
 	[_2].[ParentID] = @id AND [_2].[ex] > 0
 
-BeforeExecute
--- SqlServer.2005
-DECLARE @id Int -- Int32
-SET     @id = 100500
-
-DELETE [t1]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] = @id
-

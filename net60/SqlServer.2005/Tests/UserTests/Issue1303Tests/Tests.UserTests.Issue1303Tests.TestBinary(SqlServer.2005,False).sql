@@ -1,14 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Issue1303]
-(
-	[ID]     Int           NOT NULL,
-	[Array]  VarBinary(10)     NULL,
-	[Binary] VarBinary(10)     NULL,
+IF (OBJECT_ID(N'[Issue1303]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1303]
 
-	CONSTRAINT [PK_Issue1303] PRIMARY KEY CLUSTERED ([ID])
-)
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue1303]', N'U') IS NULL)
+	CREATE TABLE [Issue1303]
+	(
+		[ID]     Int           NOT NULL,
+		[Array]  VarBinary(10)     NULL,
+		[Binary] VarBinary(10)     NULL,
+
+		CONSTRAINT [PK_Issue1303] PRIMARY KEY CLUSTERED ([ID])
+	)
 
 BeforeExecute
 -- SqlServer.2005
