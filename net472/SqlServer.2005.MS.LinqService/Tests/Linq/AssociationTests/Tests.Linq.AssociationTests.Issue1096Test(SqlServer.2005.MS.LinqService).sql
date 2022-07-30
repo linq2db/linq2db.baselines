@@ -1,23 +1,37 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [Issue1096Task]
-(
-	[Id]         Int            NOT NULL,
-	[TargetName] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Issue1096Task]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1096Task]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [Issue1096TaskStage]
-(
-	[Id]     Int NOT NULL,
-	[TaskId] Int NOT NULL,
-	[Actual] Bit NOT NULL,
+IF (OBJECT_ID(N'[Issue1096Task]', N'U') IS NULL)
+	CREATE TABLE [Issue1096Task]
+	(
+		[Id]         Int            NOT NULL,
+		[TargetName] NVarChar(4000)     NULL
+	)
 
-	CONSTRAINT [PK_Issue1096TaskStage] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue1096TaskStage]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1096TaskStage]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue1096TaskStage]', N'U') IS NULL)
+	CREATE TABLE [Issue1096TaskStage]
+	(
+		[Id]     Int NOT NULL,
+		[TaskId] Int NOT NULL,
+		[Actual] Bit NOT NULL,
+
+		CONSTRAINT [PK_Issue1096TaskStage] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

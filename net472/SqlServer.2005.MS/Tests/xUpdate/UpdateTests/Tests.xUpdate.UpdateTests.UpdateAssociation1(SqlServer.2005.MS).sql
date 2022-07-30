@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
-FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] = 10000
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-DELETE [t1]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] = 20000
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -56,22 +38,4 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[child_1].[ChildID] = 10000
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-DELETE [t1]
-FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] = 10000
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-DELETE [t1]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] = 20000
 
