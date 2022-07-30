@@ -1,20 +1,32 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-CREATE TABLE [Checklist]
-(
-	[Id] Int NOT NULL
-)
+DROP TABLE IF EXISTS [Checklist]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-CREATE TABLE [ChecklistTrigger]
-(
-	[Id]          Int NOT NULL,
-	[ChecklistId] Int NOT NULL,
-	[TriggerType] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Checklist]', N'U') IS NULL)
+	CREATE TABLE [Checklist]
+	(
+		[Id] Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+DROP TABLE IF EXISTS [ChecklistTrigger]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+IF (OBJECT_ID(N'[ChecklistTrigger]', N'U') IS NULL)
+	CREATE TABLE [ChecklistTrigger]
+	(
+		[Id]          Int NOT NULL,
+		[ChecklistId] Int NOT NULL,
+		[TriggerType] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
