@@ -71,6 +71,8 @@ FROM
 		LEFT JOIN [Tag] [tagGroup] ON [fact_1].[Id] = [tagGroup].[FactId]
 WHERE
 	[fact_1].[Id] > 3
+ORDER BY
+	[fact_1].[Id]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

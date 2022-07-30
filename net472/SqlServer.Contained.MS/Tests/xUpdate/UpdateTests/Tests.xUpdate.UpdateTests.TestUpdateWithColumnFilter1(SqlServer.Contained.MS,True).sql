@@ -90,14 +90,3 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @newName NVarChar(4000) -- String
-SET     @newName = N'UpdateColumnFilterUpdated'
-
-DELETE [x]
-FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @newName
-
