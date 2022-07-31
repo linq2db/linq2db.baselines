@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Issue1983Person]
+DROP TABLE IF EXISTS [Issue1983Person]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1983Person]
 (
 	[Id]            INTEGER       NOT NULL,
 	[Name]          NVarChar(255)     NULL,
@@ -13,7 +18,12 @@ CREATE TABLE [Issue1983Person]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Issue1983Card]
+DROP TABLE IF EXISTS [Issue1983Card]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1983Card]
 (
 	[Id]         INTEGER       NOT NULL,
 	[CardType]   INTEGER       NOT NULL,

@@ -48,16 +48,6 @@ SELECT
 FROM
 	[Person] [p2]
 WHERE
-	[p2].[PersonID] > @id
+	([p2].[PersonID] > @id OR [p2].[PersonID] = 0)
 LIMIT @take
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
-SET     @id = 4
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > @id
 
