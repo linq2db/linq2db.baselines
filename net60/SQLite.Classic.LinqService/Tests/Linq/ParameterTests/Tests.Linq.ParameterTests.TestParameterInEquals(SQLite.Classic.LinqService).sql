@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [TestEqualsTable1]
+DROP TABLE IF EXISTS [TestEqualsTable1]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [TestEqualsTable1]
 (
 	[Id] INTEGER NOT NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE [TestEqualsTable1]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [TestEqualsTable2]
+DROP TABLE IF EXISTS [TestEqualsTable2]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [TestEqualsTable2]
 (
 	[Id] INTEGER NOT NULL,
 	[FK] INTEGER     NULL

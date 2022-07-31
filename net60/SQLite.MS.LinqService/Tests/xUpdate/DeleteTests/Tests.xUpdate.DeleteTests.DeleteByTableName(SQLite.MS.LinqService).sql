@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [xxPerson]
+DROP TABLE IF EXISTS [xxPerson]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [xxPerson]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,
 	[PersonID]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,

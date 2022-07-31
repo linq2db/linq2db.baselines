@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Task]
+DROP TABLE IF EXISTS [Task]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Task]
 (
 	[Id]         INTEGER       NOT NULL,
 	[TargetName] NVarChar(255)     NULL,
@@ -12,7 +17,12 @@ CREATE TABLE [Task]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [TaskStage]
+DROP TABLE IF EXISTS [TaskStage]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [TaskStage]
 (
 	[Id]     INTEGER NOT NULL,
 	[TaskId] INTEGER NOT NULL,
@@ -102,6 +112,8 @@ SELECT
 FROM
 	[Task] [p]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+ORDER BY
+	[p].[Id]
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -123,13 +123,3 @@ WHERE
 	[_].[PersonID] = @ID
 LIMIT @take
 
-BeforeExecute
--- SQLite.Classic SQLite
-DECLARE @ID  -- Int32
-SET     @ID = 5
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] = @ID
-

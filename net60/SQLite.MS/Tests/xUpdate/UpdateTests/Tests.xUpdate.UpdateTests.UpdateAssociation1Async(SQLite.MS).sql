@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] = 10000
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] = 20000
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -53,20 +37,4 @@ FROM
 	[Child] [child_1]
 WHERE
 	[child_1].[ChildID] = 10000 AND [child_1].[ParentID] = [Parent].[ParentID]
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] = 10000
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] = 20000
 

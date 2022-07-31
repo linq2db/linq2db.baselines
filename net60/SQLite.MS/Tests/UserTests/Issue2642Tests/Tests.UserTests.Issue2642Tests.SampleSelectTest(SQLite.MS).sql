@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [mails]
+DROP TABLE IF EXISTS [mails]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [mails]
 (
 	[Id]      INTEGER   NOT NULL,
 	[AddTime] DateTime2 NOT NULL
@@ -10,7 +15,12 @@ CREATE TABLE [mails]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [EmailAttachments]
+DROP TABLE IF EXISTS [EmailAttachments]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [EmailAttachments]
 (
 	[Id]      INTEGER       NOT NULL,
 	[EmailId] INTEGER       NOT NULL,
@@ -20,7 +30,12 @@ CREATE TABLE [EmailAttachments]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [IIRs]
+DROP TABLE IF EXISTS [IIRs]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [IIRs]
 (
 	[Id] INTEGER NOT NULL
 )

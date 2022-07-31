@@ -20,7 +20,7 @@ FROM
 			[Parent] [_]
 	) [key_data_result]
 		INNER JOIN (
-			SELECT NULL[ParentID] WHERE 1 = 0
+			SELECT NULL [ParentID] WHERE 1 = 0
 			UNION ALL
 			VALUES
 				(1), (2), (3), (4), (5), (6), (7)

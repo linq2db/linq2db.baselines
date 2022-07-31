@@ -1,10 +1,15 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [SampleClass]
 (
 	[Id]        INTEGER      NOT NULL,
-	[KeyValue1] NVarChar(50)     NULL,
+	[KeyValue1] NVarChar(50) NOT NULL,
 	[Value1]    NVarChar(50)     NULL,
 
 	CONSTRAINT [PK_SampleClass] PRIMARY KEY ([Id], [KeyValue1])
@@ -13,7 +18,12 @@ CREATE TABLE [SampleClass]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SampleClassWithIdentity]
+DROP TABLE IF EXISTS [SampleClassWithIdentity]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [SampleClassWithIdentity]
 (
 	[Id]     INTEGER       NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[Value1] NVarChar(50)      NULL

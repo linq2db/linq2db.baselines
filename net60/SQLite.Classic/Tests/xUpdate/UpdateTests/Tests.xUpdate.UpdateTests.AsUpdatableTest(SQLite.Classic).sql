@@ -61,11 +61,3 @@ FROM
 WHERE
 	[c_1].[ChildID] = @ChildID
 
-BeforeExecute
--- SQLite.Classic SQLite
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] > 1000
-

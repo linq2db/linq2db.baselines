@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [Employee]
+DROP TABLE IF EXISTS [Employee]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Employee]
 (
 	[Id]           INTEGER NOT NULL,
 	[DepartmentId] INTEGER     NULL
@@ -10,7 +15,12 @@ CREATE TABLE [Employee]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [Department]
+DROP TABLE IF EXISTS [Department]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Department]
 (
 	[DepartmentId] INTEGER       NOT NULL,
 	[Name]         NVarChar(255)     NULL,

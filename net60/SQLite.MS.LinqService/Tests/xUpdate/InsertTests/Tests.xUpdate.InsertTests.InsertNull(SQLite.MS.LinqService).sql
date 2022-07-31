@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] = 1001
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1  -- Int32
@@ -33,12 +25,4 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = 1001
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[Value1] = 1001
 
