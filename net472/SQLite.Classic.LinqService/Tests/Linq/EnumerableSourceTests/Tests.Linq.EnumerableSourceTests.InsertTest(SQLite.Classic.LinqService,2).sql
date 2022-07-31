@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [TableToInsert]
+DROP TABLE IF EXISTS [TableToInsert]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [TableToInsert]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,
@@ -22,7 +27,7 @@ SELECT
 	[r].[Value]
 FROM
 	(
-		SELECT NULL[Id], NULL[Value] WHERE 1 = 0
+		SELECT NULL [Id], NULL [Value] WHERE 1 = 0
 		UNION ALL
 		VALUES
 			(3,'Janet'), (4,'Doe')
@@ -44,7 +49,7 @@ SELECT
 	[r].[Value]
 FROM
 	(
-		SELECT NULL[Id], NULL[Value] WHERE 1 = 0
+		SELECT NULL [Id], NULL [Value] WHERE 1 = 0
 		UNION ALL
 		VALUES
 			(3,'Janet'), (4,'Doe')

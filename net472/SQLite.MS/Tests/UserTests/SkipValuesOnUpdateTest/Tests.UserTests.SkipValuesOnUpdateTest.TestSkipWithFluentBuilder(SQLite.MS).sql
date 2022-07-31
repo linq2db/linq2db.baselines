@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [PR_1598_Update_Fluent_Table]
+DROP TABLE IF EXISTS [PR_1598_Update_Fluent_Table]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [PR_1598_Update_Fluent_Table]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Name] NVarChar(255)     NULL,

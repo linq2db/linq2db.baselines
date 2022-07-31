@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [RateEntry]
+DROP TABLE IF EXISTS [RateEntry]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [RateEntry]
 (
 	[TI_PK]                                Guid          NOT NULL,
 	[TI_LineOrder]                         SmallInt      NOT NULL,
@@ -61,7 +66,12 @@ CREATE TABLE [RateEntry]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [RateLines]
+DROP TABLE IF EXISTS [RateLines]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [RateLines]
 (
 	[TL_PK] Guid NOT NULL,
 	[TL_TI] Guid NOT NULL
@@ -70,7 +80,12 @@ CREATE TABLE [RateLines]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [RateLineItem]
+DROP TABLE IF EXISTS [RateLineItem]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [RateLineItem]
 (
 	[TM_PK]        Guid          NOT NULL,
 	[TM_LineOrder] TinyInt       NOT NULL,

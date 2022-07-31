@@ -101,11 +101,3 @@ DELETE FROM
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] = 'test_inherited_insert'
-

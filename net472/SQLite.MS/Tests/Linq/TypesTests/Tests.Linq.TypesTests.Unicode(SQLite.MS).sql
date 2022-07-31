@@ -1,33 +1,30 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > 4
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = '擊敗奴隸'
+DECLARE @LastName NVarChar(9) -- String
+SET     @LastName = 'Юникодкин'
+DECLARE @MiddleName NVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	'擊敗奴隸',
-	'Юникодкин',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
-
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -45,12 +42,4 @@ FROM
 WHERE
 	[p].[FirstName] = '擊敗奴隸' AND [p].[LastName] = 'Юникодкин'
 LIMIT @take
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > 4
 

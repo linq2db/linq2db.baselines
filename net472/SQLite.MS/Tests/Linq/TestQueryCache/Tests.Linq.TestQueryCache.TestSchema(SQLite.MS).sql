@@ -1,10 +1,15 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [SampleClass]
 (
 	[Id]        INTEGER      NOT NULL,
-	[KeyValue1] NVarChar(50)     NULL,
+	[KeyValue1] NVarChar(50) NOT NULL,
 	[Value1]    NVarChar(50)     NULL,
 
 	CONSTRAINT [PK_SampleClass] PRIMARY KEY ([Id], [KeyValue1])
@@ -40,10 +45,15 @@ DROP TABLE IF EXISTS [SampleClass]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [SampleClass]
 (
 	[Id]        INTEGER      NOT NULL,
-	[KeyValue2] NVarChar(50)     NULL,
+	[KeyValue2] NVarChar(50) NOT NULL,
 	[Value2]    NVarChar(50)     NULL,
 
 	CONSTRAINT [PK_SampleClass] PRIMARY KEY ([Id], [KeyValue2])
@@ -79,10 +89,15 @@ DROP TABLE IF EXISTS [SampleClass]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [SampleClass]
 (
 	[Id]         INTEGER      NOT NULL,
-	[KeyValueF1] NVarChar(50)     NULL,
+	[KeyValueF1] NVarChar(50) NOT NULL,
 	[ValueF1]    NVarChar(50)     NULL,
 
 	CONSTRAINT [PK_SampleClass] PRIMARY KEY ([Id], [KeyValueF1])
@@ -118,10 +133,15 @@ DROP TABLE IF EXISTS [SampleClass]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SampleClass]
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [SampleClass]
 (
 	[Id]         INTEGER      NOT NULL,
-	[KeyValueF2] NVarChar(50)     NULL,
+	[KeyValueF2] NVarChar(50) NOT NULL,
 	[ValueF2]    NVarChar(50)     NULL,
 
 	CONSTRAINT [PK_SampleClass] PRIMARY KEY ([Id], [KeyValueF2])

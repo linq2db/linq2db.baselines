@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE [Test1585]
+DROP TABLE IF EXISTS [Test1585]
 
 BeforeExecute
 -- SQLite.Classic SQLite

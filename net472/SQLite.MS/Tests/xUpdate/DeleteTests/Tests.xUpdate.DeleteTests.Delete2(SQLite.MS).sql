@@ -60,13 +60,3 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1001
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] = @ParentID
-

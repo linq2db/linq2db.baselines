@@ -339,7 +339,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [HierarchyData]
+DROP TABLE IF EXISTS [HierarchyData]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [HierarchyData]
 (
 	[Id]    INTEGER NOT NULL,
 	[Level] INTEGER NOT NULL

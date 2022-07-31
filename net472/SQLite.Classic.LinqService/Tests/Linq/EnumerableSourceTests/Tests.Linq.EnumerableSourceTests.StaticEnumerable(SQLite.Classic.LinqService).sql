@@ -15,7 +15,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT NULL[item] WHERE 1 = 0
+				SELECT NULL [item] WHERE 1 = 0
 				UNION ALL
 				VALUES
 					(1), (2), (3)

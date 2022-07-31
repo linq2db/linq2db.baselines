@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Alert]
+DROP TABLE IF EXISTS [Alert]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Alert]
 (
 	[AlertKey]     NVarChar(255)     NULL,
 	[AlertCode]    NVarChar(255)     NULL,
@@ -11,7 +16,12 @@ CREATE TABLE [Alert]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [AuditAlert]
+DROP TABLE IF EXISTS [AuditAlert]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [AuditAlert]
 (
 	[CreationDate]    DateTime2         NULL,
 	[AlertCode]       NVarChar(255)     NULL,
@@ -22,7 +32,12 @@ CREATE TABLE [AuditAlert]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Trade]
+DROP TABLE IF EXISTS [Trade]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Trade]
 (
 	[DealId]       INTEGER       NOT NULL,
 	[ParcelId]     INTEGER       NOT NULL,
@@ -32,7 +47,12 @@ CREATE TABLE [Trade]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Nomin]
+DROP TABLE IF EXISTS [Nomin]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Nomin]
 (
 	[CargoId]              INTEGER       NOT NULL,
 	[DeliveryId]           INTEGER       NOT NULL,
@@ -42,7 +62,12 @@ CREATE TABLE [Nomin]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Flat]
+DROP TABLE IF EXISTS [Flat]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Flat]
 (
 	[AlertKey]             NVarChar(255)     NULL,
 	[AlertCode]            NVarChar(255)     NULL,
