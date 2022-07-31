@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [T1]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [T1]
 (
 	[InstrumentId]         Int           NOT NULL,
@@ -14,11 +19,21 @@ CREATE TABLE [T1]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [T2]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [T2]
 (
 	[InstrumentId] Int NOT NULL,
 	[IndexId]      Int NOT NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [T3]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

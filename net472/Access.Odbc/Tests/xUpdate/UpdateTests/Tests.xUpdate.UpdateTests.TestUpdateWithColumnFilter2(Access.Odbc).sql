@@ -134,13 +134,3 @@ FROM
 WHERE
 	[_].[PersonID] = ?
 
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @ID Int -- Int32
-SET     @ID = 5
-
-DELETE FROM
-	[Person] [x]
-WHERE
-	[x].[PersonID] = ?
-

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Issue1279Table]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Issue1279Table]
 (
 	[Id]      Int       NOT NULL IDENTITY,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Issue1554FluentTable]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Issue1554FluentTable]
 (
 	[Id]              Int         NOT NULL,

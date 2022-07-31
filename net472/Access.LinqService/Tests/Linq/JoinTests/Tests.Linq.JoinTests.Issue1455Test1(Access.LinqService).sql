@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Alert]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Alert]
 (
 	[AlertKey]     NVarChar(255)     NULL,
 	[AlertCode]    NVarChar(255)     NULL,
 	[CreationDate] DateTime          NULL
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [AuditAlert]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -22,6 +32,11 @@ CREATE TABLE [AuditAlert]
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Trade]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Trade]
 (
 	[DealId]       Int           NOT NULL,
@@ -32,12 +47,22 @@ CREATE TABLE [Trade]
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Nomin]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Nomin]
 (
 	[CargoId]              Int           NOT NULL,
 	[DeliveryId]           Int           NOT NULL,
 	[DeliveryCounterParty] NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Flat]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -82,8 +107,8 @@ FROM
 			[al].[AlertCode],
 			[al].[CreationDate]
 	) [al_1]
-		LEFT JOIN [Trade] [trade1] ON (([al_1].[alert] = CStr([trade1].[DealId]) OR [al_1].[alert] IS NULL AND CStr([trade1].[DealId]) IS NULL)))
-		LEFT JOIN [Nomin] [nomin1] ON (([al_1].[alert] = CStr([nomin1].[CargoId]) OR [al_1].[alert] IS NULL AND CStr([nomin1].[CargoId]) IS NULL))
+		LEFT JOIN [Trade] [trade1] ON ([al_1].[alert] = CStr([trade1].[DealId])))
+		LEFT JOIN [Nomin] [nomin1] ON ([al_1].[alert] = CStr([nomin1].[CargoId]))
 WHERE
 	(([nomin1].[DeliveryCounterParty] LIKE @cpty OR [trade1].[CounterParty] LIKE @cpty_1) OR [al_1].[alert_1] LIKE @cpty_2)
 GROUP BY

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [BackgroundTask]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [BackgroundTask]
 (
 	[ID]               Int     NULL,

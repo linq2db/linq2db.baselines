@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [activity649]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [activity649]
 (
 	[activityid] Int       NOT NULL IDENTITY,
@@ -9,6 +14,11 @@ CREATE TABLE [activity649]
 
 	CONSTRAINT [PK_activity649] PRIMARY KEY CLUSTERED ([activityid])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [person649]
 
 BeforeExecute
 -- Access AccessOleDb

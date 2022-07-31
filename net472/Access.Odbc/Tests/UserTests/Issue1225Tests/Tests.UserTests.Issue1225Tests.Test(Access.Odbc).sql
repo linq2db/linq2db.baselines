@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Task]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Task]
 (
 	[Id] Int NOT NULL,
 
 	CONSTRAINT [PK_Task] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [TaskStage]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

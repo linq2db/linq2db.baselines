@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [BackgroundTask]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [BackgroundTask]
 (
 	[ID]               Int     NULL,

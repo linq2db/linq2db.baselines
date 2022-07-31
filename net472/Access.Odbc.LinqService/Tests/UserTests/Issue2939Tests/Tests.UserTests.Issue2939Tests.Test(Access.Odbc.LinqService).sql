@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Adsl]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Adsl]
 (
 	[Id]       Int NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE [Adsl]
 
 	CONSTRAINT [PK_Adsl] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Client]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

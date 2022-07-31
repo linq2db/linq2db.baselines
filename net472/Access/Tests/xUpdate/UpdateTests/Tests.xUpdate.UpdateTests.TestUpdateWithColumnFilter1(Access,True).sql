@@ -104,13 +104,3 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
--- Access AccessOleDb
-DECLARE @newName VarWChar(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @newName
-

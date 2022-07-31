@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [ValueConversion]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [ValueConversion]
 (
 	[Id]                      Int           NOT NULL,

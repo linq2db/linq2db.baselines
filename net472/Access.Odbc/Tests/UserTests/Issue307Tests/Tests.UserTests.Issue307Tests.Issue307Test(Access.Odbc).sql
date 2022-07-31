@@ -25,14 +25,6 @@ ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENC
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
-
-BeforeExecute
--- Access.Odbc AccessODBC
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName NVarChar(12) -- String
@@ -64,8 +56,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @id1 Int -- Int32
-SET     @id1 = 5
+DECLARE @id Int -- Int32
+SET     @id = 5
 
 SELECT TOP 1
 	[_].[PersonID],
@@ -77,12 +69,4 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
 
