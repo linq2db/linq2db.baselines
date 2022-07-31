@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE CreateTableTypes
+DROP TABLE IF EXISTS CreateTableTypes
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS CreateTableTypes
 (
 	String NVarChar(255)     NULL,
 	Id     Int           NOT NULL

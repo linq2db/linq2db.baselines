@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE activity649
+DROP TABLE IF EXISTS activity649
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS activity649
 (
 	activityid SERIAL                     NOT NULL,
 	personid   Int                        NOT NULL,
@@ -13,7 +18,12 @@ CREATE TABLE activity649
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE person649
+DROP TABLE IF EXISTS person649
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS person649
 (
 	personid   SERIAL         NOT NULL,
 	personname NVarChar(255)  NOT NULL,

@@ -46,15 +46,5 @@ SELECT FIRST 2
 FROM
 	Person p2
 WHERE
-	p2.PersonID > @id
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @id Integer(4) -- Int32
-SET     @id = 4
-
-DELETE FROM
-	Person
-WHERE
-	Person.PersonID > @id
+	(p2.PersonID > @id OR p2.PersonID = 0)
 

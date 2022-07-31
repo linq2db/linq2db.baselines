@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE TestEqualsTable1
+DROP TABLE IF EXISTS TestEqualsTable1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS TestEqualsTable1
 (
 	Id Int NOT NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE TestEqualsTable1
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE TestEqualsTable2
+DROP TABLE IF EXISTS TestEqualsTable2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS TestEqualsTable2
 (
 	Id Int NOT NULL,
 	FK Int     NULL

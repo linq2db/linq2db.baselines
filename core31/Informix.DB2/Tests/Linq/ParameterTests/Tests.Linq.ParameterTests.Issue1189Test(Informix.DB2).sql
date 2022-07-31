@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Issue1189Customer
+DROP TABLE IF EXISTS Issue1189Customer
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Issue1189Customer
 (
 	ID   Int           NOT NULL,
 	NAME NVarChar(255) NOT NULL,

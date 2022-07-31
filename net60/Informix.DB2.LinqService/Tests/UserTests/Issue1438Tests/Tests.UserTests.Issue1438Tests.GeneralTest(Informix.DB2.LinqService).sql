@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Issue1438
+DROP TABLE IF EXISTS Issue1438
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Issue1438
 (
 	Id  SERIAL   NOT NULL,
 	Has BOOLEAN  NOT NULL,

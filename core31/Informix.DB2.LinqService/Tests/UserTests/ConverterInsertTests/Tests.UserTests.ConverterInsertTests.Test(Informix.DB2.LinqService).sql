@@ -91,25 +91,3 @@ FROM
 WHERE
 	t.PersonID = @id
 
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @PersonID Integer(4) -- Int32
-SET     @PersonID = 5
-DECLARE @FirstName VarChar(3) -- String
-SET     @FirstName = '123'
-DECLARE @LastName VarChar(3) -- String
-SET     @LastName = '456'
-DECLARE @MiddleName VarChar(3) -- String
-SET     @MiddleName = '789'
-DECLARE @Gender VarChar(1) -- String
-SET     @Gender = 'M'
-
-DELETE FROM
-	Person
-WHERE
-	Person.PersonID = @PersonID AND
-	Person.FirstName = @FirstName AND
-	Person.LastName = @LastName AND
-	Person.MiddleName = @MiddleName AND
-	Person.Gender = @Gender
-

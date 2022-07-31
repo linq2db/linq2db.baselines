@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE AttributeBase
+DROP TABLE IF EXISTS AttributeBase
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS AttributeBase
 (
 	Id Int NOT NULL,
 

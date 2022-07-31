@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE BackgroundTask
+DROP TABLE IF EXISTS BackgroundTask
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS BackgroundTask
 (
 	ID               Int     NULL,
 	DurationID       Int NOT NULL,

@@ -30,30 +30,32 @@ ALTER TABLE Doctor ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (Pers
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-DELETE FROM
-	Person
-WHERE
-	Person.FirstName = 'John' AND Person.LastName = 'Shepard'
-
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO Person
 (
 	FirstName,
 	LastName,
+	MiddleName,
 	Gender
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 

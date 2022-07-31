@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE BlobClass
+DROP TABLE IF EXISTS BlobClass
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS BlobClass
 (
 	Id        Int  NOT NULL,
 	BlobValue byte     NULL,

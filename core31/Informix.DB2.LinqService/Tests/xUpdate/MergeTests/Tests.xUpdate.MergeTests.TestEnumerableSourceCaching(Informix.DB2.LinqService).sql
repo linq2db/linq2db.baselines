@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE CacheTestTable
+DROP TABLE IF EXISTS CacheTestTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS CacheTestTable
 (
 	Id      Int NOT NULL,
 	"Value" Int NOT NULL,
