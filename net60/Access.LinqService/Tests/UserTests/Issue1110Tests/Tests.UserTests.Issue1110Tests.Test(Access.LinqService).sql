@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Issue1110TB]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Issue1110TB]
 (
 	[Id]        Int      NOT NULL,

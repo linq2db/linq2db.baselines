@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [PR_1598_Mixed_Table]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [PR_1598_Mixed_Table]
 (
 	[Id]   Int           NOT NULL,

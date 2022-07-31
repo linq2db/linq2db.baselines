@@ -41,11 +41,3 @@ FROM
 WHERE
 	[t].[ParentID] = 1010
 
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] >= 1000
-

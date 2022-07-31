@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [ValueConversion]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [ValueConversion]
 (
 	[Id]                      Int           NOT NULL,

@@ -1,10 +1,20 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [tblMonth]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [tblMonth]
 (
 	[MonthNumber] Int NOT NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [tblDefect]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -19,6 +29,11 @@ CREATE TABLE [tblDefect]
 
 	CONSTRAINT [PK_tblDefect] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [tblFtq]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -39,6 +54,11 @@ CREATE TABLE [tblFtq]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [tblWorkstation]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [tblWorkstation]
 (
 	[Del]                 Bit            NOT NULL,
@@ -48,6 +68,11 @@ CREATE TABLE [tblWorkstation]
 
 	CONSTRAINT [PK_tblWorkstation] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [tblWorkstationGroup]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

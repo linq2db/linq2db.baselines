@@ -48,11 +48,3 @@ FROM
 WHERE
 	[_].[FirstName] LIKE 'Update14%'
 
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE 'Update14%'
-

@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Alert]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Alert]
 (
 	[AlertKey]     NVarChar(255)     NULL,
 	[AlertCode]    NVarChar(255)     NULL,
 	[CreationDate] DateTime          NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [AuditAlert]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -22,6 +32,11 @@ CREATE TABLE [AuditAlert]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Trade]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Trade]
 (
 	[DealId]       Int           NOT NULL,
@@ -32,12 +47,22 @@ CREATE TABLE [Trade]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Nomin]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Nomin]
 (
 	[CargoId]              Int           NOT NULL,
 	[DeliveryId]           Int           NOT NULL,
 	[DeliveryCounterParty] NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Flat]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -82,8 +107,8 @@ FROM
 			[al].[AlertCode],
 			[al].[CreationDate]
 	) [al_1]
-		LEFT JOIN [Trade] [trade1] ON (([al_1].[alert] = CStr([trade1].[DealId]) OR [al_1].[alert] IS NULL AND CStr([trade1].[DealId]) IS NULL)))
-		LEFT JOIN [Nomin] [nomin1] ON (([al_1].[alert] = CStr([nomin1].[CargoId]) OR [al_1].[alert] IS NULL AND CStr([nomin1].[CargoId]) IS NULL))
+		LEFT JOIN [Trade] [trade1] ON ([al_1].[alert] = CStr([trade1].[DealId])))
+		LEFT JOIN [Nomin] [nomin1] ON ([al_1].[alert] = CStr([nomin1].[CargoId]))
 WHERE
 	(([nomin1].[DeliveryCounterParty] LIKE ? OR [trade1].[CounterParty] LIKE ?) OR [al_1].[alert_1] LIKE ?)
 GROUP BY

@@ -1,11 +1,21 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Issue1096Task]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Issue1096Task]
 (
 	[Id]         Int           NOT NULL,
 	[TargetName] NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Issue1096TaskStage]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

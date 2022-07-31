@@ -1,10 +1,20 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [tblMonth]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [tblMonth]
 (
 	[MonthNumber] Int NOT NULL
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [tblDefect]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -19,6 +29,11 @@ CREATE TABLE [tblDefect]
 
 	CONSTRAINT [PK_tblDefect] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [tblFtq]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -39,6 +54,11 @@ CREATE TABLE [tblFtq]
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [tblWorkstation]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [tblWorkstation]
 (
 	[Del]                 Bit            NOT NULL,
@@ -48,6 +68,11 @@ CREATE TABLE [tblWorkstation]
 
 	CONSTRAINT [PK_tblWorkstation] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [tblWorkstationGroup]
 
 BeforeExecute
 -- Access AccessOleDb

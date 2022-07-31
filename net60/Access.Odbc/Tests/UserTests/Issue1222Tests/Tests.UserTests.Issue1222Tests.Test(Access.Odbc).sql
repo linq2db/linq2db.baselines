@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [stLinks]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [stLinks]
 (
 	[inId]          Int            NOT NULL IDENTITY,
@@ -19,6 +24,11 @@ CREATE TABLE [stLinks]
 
 	CONSTRAINT [PK_stLinks] PRIMARY KEY CLUSTERED ([inId])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [stVersions]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

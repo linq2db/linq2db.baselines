@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Adsl]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Adsl]
 (
 	[Id]       Int NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE [Adsl]
 
 	CONSTRAINT [PK_Adsl] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Client]
 
 BeforeExecute
 -- Access AccessOleDb

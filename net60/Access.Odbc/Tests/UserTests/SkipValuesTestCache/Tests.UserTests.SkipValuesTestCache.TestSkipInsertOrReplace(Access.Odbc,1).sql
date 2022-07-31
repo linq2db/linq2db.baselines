@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [PR_1598_Insert_Table_Cache]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [PR_1598_Insert_Table_Cache]
 (
 	[Id]   Int           NOT NULL,

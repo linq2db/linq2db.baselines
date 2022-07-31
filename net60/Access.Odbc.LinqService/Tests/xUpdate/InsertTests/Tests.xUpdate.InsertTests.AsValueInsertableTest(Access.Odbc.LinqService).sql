@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [TestInsertOrReplaceTable]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [TestInsertOrReplaceTable]
 (
 	[ID]         Int           NOT NULL,

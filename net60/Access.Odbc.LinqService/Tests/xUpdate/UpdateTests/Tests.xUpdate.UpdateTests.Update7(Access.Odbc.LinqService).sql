@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-
-DELETE FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] > 1000
-
-BeforeExecute
--- Access.Odbc AccessODBC
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
 DECLARE @ParentID Int -- Int32
@@ -87,12 +79,4 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = ? AND [p].[Value1] = 3
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-DELETE FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] > 1000
 

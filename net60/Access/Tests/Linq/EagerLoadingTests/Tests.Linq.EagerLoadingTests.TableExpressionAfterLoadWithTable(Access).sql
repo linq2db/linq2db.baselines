@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [UserIssue3128]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [UserIssue3128]
 (
 	[Id] Int NOT NULL,
 
 	CONSTRAINT [PK_UserIssue3128] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [UserDetailsIssue3128]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -35,11 +45,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-
-SELECT @@IDENTITY
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @UserId Integer -- Int32
 SET     @UserId = 10
 DECLARE @Age Integer -- Int32
@@ -55,11 +60,6 @@ VALUES
 	@UserId,
 	@Age
 )
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT @@IDENTITY
 
 BeforeExecute
 -- Access AccessOleDb

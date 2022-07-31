@@ -18,7 +18,7 @@ BeforeExecute
 DECLARE @ColumnNullable DBDate -- Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 DBDate -- Date
-SET     @Column_1 = #1900-01-01#
+SET     @Column_1 = #1950-01-01#
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -96,7 +96,7 @@ BeforeExecute
 DECLARE @ColumnNullable DBDate -- Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 DBDate -- Date
-SET     @Column_1 = #1900-01-01#
+SET     @Column_1 = #1950-01-01#
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -158,7 +158,7 @@ BeforeExecute
 DECLARE @ColumnNullable DBDate -- Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 DBDate -- Date
-SET     @Column_1 = #1900-01-01#
+SET     @Column_1 = #1950-01-01#
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -220,7 +220,7 @@ BeforeExecute
 DECLARE @ColumnNullable DBDate -- Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 DBDate -- Date
-SET     @Column_1 = #1900-01-01#
+SET     @Column_1 = #1950-01-01#
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
