@@ -40,7 +40,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT NULL[Id], NULL[Value] WHERE 1 = 0
+				SELECT NULL [Id], NULL [Value] WHERE 1 = 0
 				UNION ALL
 				VALUES
 					(3,'Janet'), (4,'Doe')

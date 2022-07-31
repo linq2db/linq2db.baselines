@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Issue1110TB]
+DROP TABLE IF EXISTS [Issue1110TB]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1110TB]
 (
 	[Id]        INTEGER   NOT NULL,
 	[TimeStamp] DateTime2 NOT NULL,

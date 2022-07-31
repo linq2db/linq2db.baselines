@@ -78,11 +78,3 @@ FROM
 WHERE
 	[gc].[ParentID] = 1
 
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DELETE FROM
-	[GrandChild]
-WHERE
-	[GrandChild].[GrandChildID] IN (1001, 1002)
-

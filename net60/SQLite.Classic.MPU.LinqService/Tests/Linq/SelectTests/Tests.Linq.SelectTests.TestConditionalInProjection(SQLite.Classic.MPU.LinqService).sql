@@ -98,11 +98,14 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	[m_1].[Id],
 	[c_1].[Id],
 	[c_1].[Value]
 FROM
 	[MainEntityObject] [m_1]
 		LEFT JOIN [ChildEntityObject] [c_1] ON [c_1].[Id] = [m_1].[Id]
+ORDER BY
+	[m_1].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

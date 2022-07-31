@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [FluentMapping]
+DROP TABLE IF EXISTS [FluentMapping]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [FluentMapping]
 (
 	[RecordID]       INTEGER   NOT NULL,
 	[EffectiveStart] DateTime2 NOT NULL,

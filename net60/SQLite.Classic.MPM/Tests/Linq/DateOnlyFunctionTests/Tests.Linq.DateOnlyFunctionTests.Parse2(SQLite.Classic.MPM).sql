@@ -46,7 +46,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(Cast([t].[TransactionDate] as NVarChar(10))) as [c1]
+			[t].[TransactionDate] as [c1]
 		FROM
 			[Transactions] [t]
 	) [d]

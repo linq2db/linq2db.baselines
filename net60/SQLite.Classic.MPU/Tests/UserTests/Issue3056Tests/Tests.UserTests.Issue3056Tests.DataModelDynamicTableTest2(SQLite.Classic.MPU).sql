@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Table_3056]
+DROP TABLE IF EXISTS [Table_3056]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Table_3056]
 (
 	[Id]          INTEGER       NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[Name]        VarChar(100)      NULL,

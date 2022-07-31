@@ -9,7 +9,7 @@ SELECT
 	[t1].[Gender]
 FROM
 	(
-		SELECT NULL[FirstName], NULL[PersonID], NULL[LastName], NULL[MiddleName], NULL[Gender] WHERE 1 = 0
+		SELECT NULL [FirstName], NULL [PersonID], NULL [LastName], NULL [MiddleName], NULL [Gender] WHERE 1 = 0
 		UNION ALL
 		VALUES
 			('Janet',3,NULL,NULL,'M'), ('Doe',4,NULL,NULL,'M')

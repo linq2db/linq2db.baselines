@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [GuidMapping]
+DROP TABLE IF EXISTS [GuidMapping]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [GuidMapping]
 (
 	[BlobGuid1] Guid                 NULL,
 	[BlobGuid2] Binary               NULL,

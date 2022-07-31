@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [ExpressionTestClass]
+DROP TABLE IF EXISTS [ExpressionTestClass]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ExpressionTestClass]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL
