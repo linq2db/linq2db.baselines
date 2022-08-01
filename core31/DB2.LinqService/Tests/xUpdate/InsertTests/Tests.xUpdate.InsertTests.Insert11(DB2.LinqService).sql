@@ -46,16 +46,6 @@ SELECT
 FROM
 	"Person" "p2"
 WHERE
-	"p2"."PersonID" > @id
+	("p2"."PersonID" > @id OR "p2"."PersonID" = 0)
 FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @id Integer(4) -- Int32
-SET     @id = 4
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > @id
 

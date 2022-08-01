@@ -98,11 +98,3 @@ DELETE FROM
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-DELETE FROM
-	"Person" "_"
-WHERE
-	"_"."FirstName" = 'test_inherited_insert'
-

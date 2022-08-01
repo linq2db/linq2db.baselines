@@ -83,13 +83,3 @@ WHERE
 	"x"."FirstName" = @FirstName
 FETCH FIRST 1 ROWS ONLY
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @newName VarChar(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM
-	"Person" "x"
-WHERE
-	"x"."FirstName" = @newName
-

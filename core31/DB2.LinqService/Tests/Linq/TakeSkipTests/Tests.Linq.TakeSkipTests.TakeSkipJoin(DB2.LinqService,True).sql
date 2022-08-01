@@ -83,4 +83,7 @@ FROM
 				) "t6"
 			FETCH FIRST 15 ROWS ONLY
 		) "_" ON "_".ID = "e".ID
+ORDER BY
+	"_".ID,
+	"e".ID
 

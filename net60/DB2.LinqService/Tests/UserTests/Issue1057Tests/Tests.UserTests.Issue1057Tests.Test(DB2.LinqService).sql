@@ -1,25 +1,51 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Task"
-(
-	"Id"         Int           NOT NULL,
-	"TargetName" NVarChar(255)     NULL,
-
-	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Task"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "TaskStage"
-(
-	"Id"     Int  NOT NULL,
-	"TaskId" Int  NOT NULL,
-	"Actual" char NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Task"
+		(
+			"Id"         Int           NOT NULL,
+			"TargetName" NVarChar(255)     NULL,
 
-	CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
-)
+			CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "TaskStage"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TaskStage"
+		(
+			"Id"     Int  NOT NULL,
+			"TaskId" Int  NOT NULL,
+			"Actual" char NOT NULL,
+
+			CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

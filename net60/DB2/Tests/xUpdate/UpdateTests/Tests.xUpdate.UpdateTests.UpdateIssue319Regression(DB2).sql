@@ -70,13 +70,3 @@ WHERE
 			"Parent"."ParentID" = "t1"."ParentID"
 	)
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @id Integer(4) -- Int32
-SET     @id = 100500
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" = @id
-

@@ -2,16 +2,6 @@
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" "t1"
-WHERE
-	"t1".ID = @ID
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 1001
 DECLARE @MoneyValue (4, 0) -- Decimal
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -62,14 +52,4 @@ FROM
 WHERE
 	"t".ID = @ID
 FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" "t1"
-WHERE
-	"t1".ID = @ID
 

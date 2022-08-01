@@ -282,7 +282,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(RTrim(Char("t"."TransactionDate"))) as "c1"
+			"t"."TransactionDate" as "c1"
 		FROM
 			"Transactions" "t"
 	) "d"

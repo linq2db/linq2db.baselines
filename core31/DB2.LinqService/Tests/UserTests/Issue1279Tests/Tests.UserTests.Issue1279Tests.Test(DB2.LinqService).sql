@@ -1,13 +1,26 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Issue1279Table"
-(
-	"Id"      Int      GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"CharFld" NChar(1)                              NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1279Table"';
+END
 
-	CONSTRAINT "PK_Issue1279Table" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1279Table"
+		(
+			"Id"      Int      GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"CharFld" NChar(1)                              NOT NULL,
+
+			CONSTRAINT "PK_Issue1279Table" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

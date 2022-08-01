@@ -1,15 +1,28 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Stone"
-(
-	"Id"           Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"Name"         NVarChar(255)                              NOT NULL,
-	"Enabled"      smallint                                       NULL,
-	"ImageFullUrl" NVarChar(255)                                  NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Stone"';
+END
 
-	CONSTRAINT "PK_Stone" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Stone"
+		(
+			"Id"           Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"Name"         NVarChar(255)                              NOT NULL,
+			"Enabled"      smallint                                       NULL,
+			"ImageFullUrl" NVarChar(255)                                  NULL,
+
+			CONSTRAINT "PK_Stone" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

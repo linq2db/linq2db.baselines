@@ -1,46 +1,98 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Condos"
-(
-	"Id"         Int NOT NULL,
-	"LocationId" Int NOT NULL,
-
-	CONSTRAINT "PK_Condos" PRIMARY KEY ("Id")
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Condos"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "CategoryCondos"
-(
-	"CategoryId" Int NOT NULL,
-	"CondoId"    Int NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Condos"
+		(
+			"Id"         Int NOT NULL,
+			"LocationId" Int NOT NULL,
 
-	CONSTRAINT "PK_CategoryCondos" PRIMARY KEY ("CategoryId", "CondoId")
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-CREATE TABLE "CondoTags"
-(
-	"CondoId" Int NOT NULL,
-	"TagId"   Int NOT NULL,
-
-	CONSTRAINT "PK_CondoTags" PRIMARY KEY ("CondoId", "TagId")
-)
+			CONSTRAINT "PK_Condos" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Locations"
-(
-	"Id"           Int           NOT NULL,
-	"LocationName" NVarChar(100) NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "CategoryCondos"';
+END
 
-	CONSTRAINT "PK_Locations" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CategoryCondos"
+		(
+			"CategoryId" Int NOT NULL,
+			"CondoId"    Int NOT NULL,
+
+			CONSTRAINT "PK_CategoryCondos" PRIMARY KEY ("CategoryId", "CondoId")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "CondoTags"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CondoTags"
+		(
+			"CondoId" Int NOT NULL,
+			"TagId"   Int NOT NULL,
+
+			CONSTRAINT "PK_CondoTags" PRIMARY KEY ("CondoId", "TagId")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Locations"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Locations"
+		(
+			"Id"           Int           NOT NULL,
+			"LocationName" NVarChar(100) NOT NULL,
+
+			CONSTRAINT "PK_Locations" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
