@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "PR_1598_Insert_Table_Cache"
+DROP TABLE IF EXISTS "PR_1598_Insert_Table_Cache"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "PR_1598_Insert_Table_Cache"
 (
 	"Id"   Int  NOT NULL,
 	"Name" text     NULL,

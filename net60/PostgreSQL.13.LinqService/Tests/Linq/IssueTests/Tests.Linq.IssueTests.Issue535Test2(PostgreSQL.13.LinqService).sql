@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "CustomerBase"
+DROP TABLE IF EXISTS "CustomerBase"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "CustomerBase"
 (
 	"Id"           SERIAL   NOT NULL,
 	"ClientType"   text     NOT NULL,

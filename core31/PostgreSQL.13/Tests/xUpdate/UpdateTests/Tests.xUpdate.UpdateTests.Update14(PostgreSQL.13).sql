@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	"Person"
 SET
-	"LastName" = Cast((Length(:name) + :idx) as VarChar(11))
+	"LastName" = Cast((Length(:name) + :idx) as text)
 WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
@@ -44,14 +44,6 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"Person" t1
-WHERE
-	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
 	"Person" t1
 WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
