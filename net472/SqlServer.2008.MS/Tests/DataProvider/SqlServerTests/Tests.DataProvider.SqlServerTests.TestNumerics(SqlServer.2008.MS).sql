@@ -4751,14 +4751,14 @@ SELECT Cast(-79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
@@ -4775,14 +4775,14 @@ SELECT Cast(79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p
@@ -4799,14 +4799,14 @@ SELECT Cast(-79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
@@ -4823,14 +4823,14 @@ SELECT Cast(79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p
