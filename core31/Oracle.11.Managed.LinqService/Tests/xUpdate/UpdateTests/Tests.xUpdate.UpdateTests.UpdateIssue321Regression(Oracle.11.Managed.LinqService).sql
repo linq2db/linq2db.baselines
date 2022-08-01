@@ -76,13 +76,3 @@ FROM
 WHERE
 	t1.ID = :id AND ROWNUM <= :take
 
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @id Int32
-SET     @id = 100500
-
-DELETE FROM
-	"LinqDataTypes" t1
-WHERE
-	t1.ID = :id
-

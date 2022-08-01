@@ -17,6 +17,8 @@ FROM
 					t1."ChildID"
 				FROM
 					"Child" t1
+				ORDER BY
+					t1."ChildID"
 			) t2
 	) t3
 WHERE
@@ -41,6 +43,8 @@ FROM
 					t1."ChildID"
 				FROM
 					"Child" t1
+				ORDER BY
+					t1."ChildID"
 			) t2
 	) t3
 WHERE

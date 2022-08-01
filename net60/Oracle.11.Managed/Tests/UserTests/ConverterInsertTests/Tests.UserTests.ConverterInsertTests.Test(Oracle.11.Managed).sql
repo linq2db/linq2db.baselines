@@ -74,25 +74,3 @@ FROM
 WHERE
 	t."PersonID" = :id AND ROWNUM <= :take
 
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @PersonID Int32
-SET     @PersonID = 5
-DECLARE @FirstName NVarchar2(3) -- String
-SET     @FirstName = '123'
-DECLARE @LastName Varchar2(3) -- String
-SET     @LastName = '456'
-DECLARE @MiddleName Varchar2(3) -- String
-SET     @MiddleName = '789'
-DECLARE @Gender Varchar2(1) -- String
-SET     @Gender = 'M'
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" = :PersonID AND
-	t1."FirstName" = :FirstName AND
-	t1."LastName" = :LastName AND
-	t1."MiddleName" = :MiddleName AND
-	t1."Gender" = :Gender
-

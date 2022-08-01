@@ -10,6 +10,14 @@ CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
+DECLARE @FirstName Varchar2(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Varchar2(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName Varchar2 -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -17,13 +25,15 @@ INSERT INTO "Person"
 (
 	"FirstName",
 	"LastName",
+	"MiddleName",
 	"Gender"
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	:FirstName,
+	:LastName,
+	:MiddleName,
+	:Gender
 )
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
@@ -41,7 +51,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar2(11))
+		t1."Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -69,7 +79,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar2(11))
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -97,7 +107,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar2(11))
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -124,24 +134,4 @@ FROM
 	"Patient" p
 WHERE
 	p."PersonID" = :id AND ROWNUM <= :take
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE FROM
-	"Patient" t1
-WHERE
-	t1."PersonID" = :id
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" = :id
 
