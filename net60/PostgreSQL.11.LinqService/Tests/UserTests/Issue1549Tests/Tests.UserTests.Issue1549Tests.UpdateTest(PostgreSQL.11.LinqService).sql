@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE billing_devtypes
+DROP TABLE IF EXISTS billing_devtypes
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS billing_devtypes
 (
 	devtypeid    SERIAL  NOT NULL,
 	typename     text    NOT NULL,
@@ -13,7 +18,12 @@ CREATE TABLE billing_devtypes
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE billing_devices
+DROP TABLE IF EXISTS billing_devices
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS billing_devices
 (
 	devid     text NOT NULL,
 	sernum    text     NULL,
@@ -25,7 +35,12 @@ CREATE TABLE billing_devices
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "billing_DevReadingType"
+DROP TABLE IF EXISTS "billing_DevReadingType"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "billing_DevReadingType"
 (
 	"Id"             SERIAL  NOT NULL,
 	"DevTypeId"      Int     NOT NULL,
@@ -38,18 +53,23 @@ CREATE TABLE "billing_DevReadingType"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "billing_TempReading"
+DROP TABLE IF EXISTS "billing_TempReading"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "billing_TempReading"
 (
-	id                 SERIAL     NOT NULL,
-	"DevSerNum"        text       NOT NULL,
-	devid              text           NULL,
-	tsdevice           TimeStamp  NOT NULL,
-	value              decimal    NOT NULL,
-	"Devtypeid"        Int            NULL,
-	"DevReadingTypeId" Int            NULL,
-	"ReadingTypeName"  text           NULL,
-	"DevGlobalType"    Int        NOT NULL,
-	"Responsibility"   Int        NOT NULL,
+	id                 SERIAL           NOT NULL,
+	"DevSerNum"        text             NOT NULL,
+	devid              text                 NULL,
+	tsdevice           TimeStamp        NOT NULL,
+	value              decimal(29, 10)  NOT NULL,
+	"Devtypeid"        Int                  NULL,
+	"DevReadingTypeId" Int                  NULL,
+	"ReadingTypeName"  text                 NULL,
+	"DevGlobalType"    Int              NOT NULL,
+	"Responsibility"   Int              NOT NULL,
 
 	CONSTRAINT "PK_billing_TempReading" PRIMARY KEY (id)
 )

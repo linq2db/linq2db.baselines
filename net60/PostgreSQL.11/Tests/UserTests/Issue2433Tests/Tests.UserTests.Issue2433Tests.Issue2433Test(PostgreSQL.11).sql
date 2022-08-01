@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "InventoryResourceDTO"
+DROP TABLE IF EXISTS "InventoryResourceDTO"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "InventoryResourceDTO"
 (
 	"Id"                uuid      NOT NULL,
 	"Status"            Int       NOT NULL,

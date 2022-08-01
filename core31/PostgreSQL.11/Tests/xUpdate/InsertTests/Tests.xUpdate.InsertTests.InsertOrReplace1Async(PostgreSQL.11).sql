@@ -5,18 +5,28 @@ ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @FirstName Text(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Text(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName Text -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
 	"LastName",
+	"MiddleName",
 	"Gender"
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	:FirstName,
+	:LastName,
+	:MiddleName,
+	:Gender
 )
 RETURNING 
 	"PersonID"
@@ -96,24 +106,4 @@ FROM
 WHERE
 	p."PersonID" = :id
 LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	"Patient" p
-WHERE
-	p."PersonID" = :id
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" = :id
 

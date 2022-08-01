@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Stone"
+DROP TABLE IF EXISTS "Stone"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Stone"
 (
 	"Id"           SERIAL   NOT NULL,
 	"Name"         text     NOT NULL,

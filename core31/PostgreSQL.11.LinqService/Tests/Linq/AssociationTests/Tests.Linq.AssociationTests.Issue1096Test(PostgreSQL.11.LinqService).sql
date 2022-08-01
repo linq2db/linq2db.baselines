@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Issue1096Task"
+DROP TABLE IF EXISTS "Issue1096Task"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Issue1096Task"
 (
 	"Id"         Int  NOT NULL,
 	"TargetName" text     NULL
@@ -10,7 +15,12 @@ CREATE TABLE "Issue1096Task"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Issue1096TaskStage"
+DROP TABLE IF EXISTS "Issue1096TaskStage"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Issue1096TaskStage"
 (
 	"Id"     Int     NOT NULL,
 	"TaskId" Int     NOT NULL,

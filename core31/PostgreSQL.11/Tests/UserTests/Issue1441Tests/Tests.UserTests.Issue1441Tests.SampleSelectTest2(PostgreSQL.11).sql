@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Authors"
+DROP TABLE IF EXISTS "Authors"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Authors"
 (
 	"Id"   Int          NOT NULL,
 	"Name" VarChar(100) NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE "Authors"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Books"
+DROP TABLE IF EXISTS "Books"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Books"
 (
 	"Id"       Int          NOT NULL,
 	"AuthorId" Int          NOT NULL,

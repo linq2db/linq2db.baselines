@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "NestingA"
+DROP TABLE IF EXISTS "NestingA"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "NestingA"
 (
 	"Property1" text     NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE "NestingA"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "NestingB"
+DROP TABLE IF EXISTS "NestingB"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "NestingB"
 (
 	"Property1" text     NULL,
 	"Property2" text     NULL
@@ -18,7 +28,12 @@ CREATE TABLE "NestingB"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "NestingC"
+DROP TABLE IF EXISTS "NestingC"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "NestingC"
 (
 	"Property1" text     NULL,
 	"Property2" text     NULL,
