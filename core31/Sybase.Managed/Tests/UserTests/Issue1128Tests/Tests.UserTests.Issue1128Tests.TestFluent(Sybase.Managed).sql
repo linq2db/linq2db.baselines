@@ -1,12 +1,21 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [AttributeBase]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'AttributeBase') IS NOT NULL)
+	DROP TABLE [AttributeBase]
 
-	CONSTRAINT [PK_AttributeBase] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'AttributeBase') IS NULL)
+	EXECUTE('
+		CREATE TABLE [AttributeBase]
+		(
+			[Id] Int NOT NULL,
+
+			CONSTRAINT [PK_AttributeBase] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

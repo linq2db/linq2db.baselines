@@ -1,13 +1,22 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [CacheTestTable]
-(
-	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL,
+IF (OBJECT_ID(N'CacheTestTable') IS NOT NULL)
+	DROP TABLE [CacheTestTable]
 
-	CONSTRAINT [PK_CacheTestTable] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'CacheTestTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [CacheTestTable]
+		(
+			[Id]    Int NOT NULL,
+			[Value] Int NOT NULL,
+
+			CONSTRAINT [PK_CacheTestTable] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

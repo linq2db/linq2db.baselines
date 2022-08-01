@@ -86,14 +86,3 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @newName UniVarChar(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM [Person]
-FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = @newName
-

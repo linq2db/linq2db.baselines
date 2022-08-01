@@ -65,12 +65,3 @@ FROM
 WHERE
 	[c_1].[ParentID] = 1
 
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Child]
-FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] IN (1001, 1002)
-

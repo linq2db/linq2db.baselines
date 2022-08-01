@@ -1,29 +1,56 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [User]
-(
-	[Id] Int NOT NULL
-)
+IF (OBJECT_ID(N'User') IS NOT NULL)
+	DROP TABLE [User]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Resource]
-(
-	[Id]                 Int NOT NULL,
-	[AssociatedObjectId] Int NOT NULL,
-	[AssociationTypeId]  Int     NULL
-)
+IF (OBJECT_ID(N'User') IS NULL)
+	EXECUTE('
+		CREATE TABLE [User]
+		(
+			[Id] Int NOT NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Lookup]
-(
-	[Id]   Int           NOT NULL,
-	[Type] NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Resource') IS NOT NULL)
+	DROP TABLE [Resource]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Resource') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Resource]
+		(
+			[Id]                 Int NOT NULL,
+			[AssociatedObjectId] Int NOT NULL,
+			[AssociationTypeId]  Int     NULL
+		)
+	')
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Lookup') IS NOT NULL)
+	DROP TABLE [Lookup]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Lookup') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Lookup]
+		(
+			[Id]   Int           NOT NULL,
+			[Type] NVarChar(255)     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

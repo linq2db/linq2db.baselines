@@ -5,15 +5,6 @@ sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-
-DELETE FROM [Person]
-FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Gender UniChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName UniVarChar(13) -- String
@@ -67,13 +58,4 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = @id
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Person]
-FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 

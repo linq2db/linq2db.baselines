@@ -1,12 +1,21 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [T1351Model]
-(
-	[ID]           Int     NOT NULL,
-	[TestField]    TinyInt NOT NULL,
-	[TestNullable] TinyInt     NULL
-)
+IF (OBJECT_ID(N'T1351Model') IS NOT NULL)
+	DROP TABLE [T1351Model]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'T1351Model') IS NULL)
+	EXECUTE('
+		CREATE TABLE [T1351Model]
+		(
+			[ID]           Int     NOT NULL,
+			[TestField]    TinyInt NOT NULL,
+			[TestNullable] TinyInt     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

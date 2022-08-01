@@ -1,59 +1,104 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Alert]
-(
-	[AlertKey]     NVarChar(255)     NULL,
-	[AlertCode]    NVarChar(255)     NULL,
-	[CreationDate] DateTime          NULL
-)
+IF (OBJECT_ID(N'Alert') IS NOT NULL)
+	DROP TABLE [Alert]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [AuditAlert]
-(
-	[CreationDate]    DateTime          NULL,
-	[AlertCode]       NVarChar(255)     NULL,
-	[AlertKey]        NVarChar(255)     NULL,
-	[TransactionDate] DateTime          NULL
-)
+IF (OBJECT_ID(N'Alert') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Alert]
+		(
+			[AlertKey]     NVarChar(255)     NULL,
+			[AlertCode]    NVarChar(255)     NULL,
+			[CreationDate] DateTime          NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Trade]
-(
-	[DealId]       Int           NOT NULL,
-	[ParcelId]     Int           NOT NULL,
-	[CounterParty] NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'AuditAlert') IS NOT NULL)
+	DROP TABLE [AuditAlert]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Nomin]
-(
-	[CargoId]              Int           NOT NULL,
-	[DeliveryId]           Int           NOT NULL,
-	[DeliveryCounterParty] NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'AuditAlert') IS NULL)
+	EXECUTE('
+		CREATE TABLE [AuditAlert]
+		(
+			[CreationDate]    DateTime          NULL,
+			[AlertCode]       NVarChar(255)     NULL,
+			[AlertKey]        NVarChar(255)     NULL,
+			[TransactionDate] DateTime          NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Flat]
-(
-	[AlertKey]             NVarChar(255)     NULL,
-	[AlertCode]            NVarChar(255)     NULL,
-	[CargoId]              Int               NULL,
-	[DeliveryId]           Int               NULL,
-	[DeliveryCounterParty] NVarChar(255)     NULL,
-	[DealId]               Int               NULL,
-	[ParcelId]             Int               NULL,
-	[CounterParty]         NVarChar(255)     NULL,
-	[TransactionDate]      DateTime          NULL
-)
+IF (OBJECT_ID(N'Trade') IS NOT NULL)
+	DROP TABLE [Trade]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Trade') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Trade]
+		(
+			[DealId]       Int           NOT NULL,
+			[ParcelId]     Int           NOT NULL,
+			[CounterParty] NVarChar(255)     NULL
+		)
+	')
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Nomin') IS NOT NULL)
+	DROP TABLE [Nomin]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Nomin') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Nomin]
+		(
+			[CargoId]              Int           NOT NULL,
+			[DeliveryId]           Int           NOT NULL,
+			[DeliveryCounterParty] NVarChar(255)     NULL
+		)
+	')
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Flat') IS NOT NULL)
+	DROP TABLE [Flat]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Flat') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Flat]
+		(
+			[AlertKey]             NVarChar(255)     NULL,
+			[AlertCode]            NVarChar(255)     NULL,
+			[CargoId]              Int               NULL,
+			[DeliveryId]           Int               NULL,
+			[DeliveryCounterParty] NVarChar(255)     NULL,
+			[DealId]               Int               NULL,
+			[ParcelId]             Int               NULL,
+			[CounterParty]         NVarChar(255)     NULL,
+			[TransactionDate]      DateTime          NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -82,8 +127,8 @@ FROM
 			[al].[AlertCode],
 			[al].[CreationDate]
 	) [al_1]
-		LEFT JOIN [Trade] [trade1] ON ([al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [trade1].[DealId]) IS NULL)
-		LEFT JOIN [Nomin] [nomin1] ON ([al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [nomin1].[CargoId]) IS NULL)
+		LEFT JOIN [Trade] [trade1] ON [al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId])
+		LEFT JOIN [Nomin] [nomin1] ON [al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId])
 WHERE
 	(([nomin1].[DeliveryCounterParty] LIKE @cpty ESCAPE '~' OR [trade1].[CounterParty] LIKE @cpty_1 ESCAPE '~') OR [al_1].[alert_1] LIKE @cpty_2 ESCAPE '~')
 GROUP BY
