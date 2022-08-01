@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Alert"
+DROP TABLE IF EXISTS "Alert"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Alert"
 (
 	"AlertKey"     text          NULL,
 	"AlertCode"    text          NULL,
@@ -11,7 +16,12 @@ CREATE TABLE "Alert"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "AuditAlert"
+DROP TABLE IF EXISTS "AuditAlert"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "AuditAlert"
 (
 	"CreationDate"    TimeStamp     NULL,
 	"AlertCode"       text          NULL,
@@ -22,7 +32,12 @@ CREATE TABLE "AuditAlert"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Trade"
+DROP TABLE IF EXISTS "Trade"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Trade"
 (
 	"DealId"       Int  NOT NULL,
 	"ParcelId"     Int  NOT NULL,
@@ -32,7 +47,12 @@ CREATE TABLE "Trade"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Nomin"
+DROP TABLE IF EXISTS "Nomin"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Nomin"
 (
 	"CargoId"              Int  NOT NULL,
 	"DeliveryId"           Int  NOT NULL,
@@ -42,7 +62,12 @@ CREATE TABLE "Nomin"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Flat"
+DROP TABLE IF EXISTS "Flat"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Flat"
 (
 	"AlertKey"             text          NULL,
 	"AlertCode"            text          NULL,
@@ -78,8 +103,8 @@ FROM
 			al."AlertCode",
 			al."CreationDate"
 	) al_1
-		LEFT JOIN "Trade" trade1 ON al_1.alert = Cast(trade1."DealId" as VarChar(11))
-		LEFT JOIN "Nomin" nomin1 ON al_1.alert = Cast(nomin1."CargoId" as VarChar(11))
+		LEFT JOIN "Trade" trade1 ON al_1.alert = Cast(trade1."DealId" as text)
+		LEFT JOIN "Nomin" nomin1 ON al_1.alert = Cast(nomin1."CargoId" as text)
 WHERE
 	((nomin1."DeliveryCounterParty" LIKE :DeliveryCounterParty OR trade1."CounterParty" LIKE :DeliveryCounterParty) OR al_1.alert_1 LIKE :DeliveryCounterParty)
 GROUP BY

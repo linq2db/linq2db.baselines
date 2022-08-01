@@ -98,11 +98,3 @@ DELETE FROM
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."FirstName" = 'test_inherited_insert'
-

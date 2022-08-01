@@ -32,7 +32,7 @@ SET     @idx = 12
 UPDATE
 	"Person"
 SET
-	"LastName" = Cast(:idx as VarChar(11))
+	"LastName" = Cast(:idx as text)
 WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
@@ -42,14 +42,6 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"Person" t1
-WHERE
-	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
 	"Person" t1
 WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'

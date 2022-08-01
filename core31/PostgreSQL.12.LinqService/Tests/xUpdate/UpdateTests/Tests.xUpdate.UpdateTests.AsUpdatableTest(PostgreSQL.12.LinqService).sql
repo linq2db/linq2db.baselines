@@ -61,11 +61,3 @@ FROM
 WHERE
 	c_1."ChildID" = :ChildID
 
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Child" t1
-WHERE
-	t1."ChildID" > 1000
-

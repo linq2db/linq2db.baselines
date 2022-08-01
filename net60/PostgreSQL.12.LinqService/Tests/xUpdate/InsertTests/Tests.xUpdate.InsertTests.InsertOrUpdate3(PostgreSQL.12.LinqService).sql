@@ -5,18 +5,28 @@ ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @FirstName Text(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Text(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName Text -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
 	"LastName",
+	"MiddleName",
 	"Gender"
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	:FirstName,
+	:LastName,
+	:MiddleName,
+	:Gender
 )
 RETURNING 
 	"PersonID"
@@ -37,7 +47,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar(11))
+	"Diagnosis" = Cast(Length(t1."Diagnosis") as text)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -57,7 +67,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -77,7 +87,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -94,24 +104,4 @@ FROM
 WHERE
 	p."PersonID" = :id
 LIMIT :take
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	"Patient" t1
-WHERE
-	t1."PersonID" = :id
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" = :id
 
