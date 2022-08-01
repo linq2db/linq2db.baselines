@@ -60,13 +60,3 @@ FROM
 WHERE
 	"p"."ParentID" = @ParentID
 
-BeforeExecute
--- Firebird4 Firebird
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1001
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" = @ParentID
-

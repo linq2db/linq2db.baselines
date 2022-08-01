@@ -81,13 +81,3 @@ WHERE
 ORDER BY
 	"t1".ID
 
-BeforeExecute
--- Firebird4 Firebird
-DECLARE @maxID Integer -- Int32
-SET     @maxID = 2
-
-DELETE FROM
-	"AllTypes" "t1"
-WHERE
-	"t1".ID > @maxID
-
