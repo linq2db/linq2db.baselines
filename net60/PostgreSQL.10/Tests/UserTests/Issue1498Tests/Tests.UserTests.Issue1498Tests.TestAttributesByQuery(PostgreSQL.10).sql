@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Topic"
+DROP TABLE IF EXISTS "Topic"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Topic"
 (
 	"Id"    Int  NOT NULL,
 	"Title" text     NULL,
@@ -11,7 +16,12 @@ CREATE TABLE "Topic"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Message"
+DROP TABLE IF EXISTS "Message"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Message"
 (
 	"Id"      Int  NOT NULL,
 	"TopicId" Int  NOT NULL,

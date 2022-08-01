@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TestTable"
+DROP TABLE IF EXISTS "TestTable"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TestTable"
 (
 	"Id" Int NOT NULL,
 	"Fd" Int     NULL,
@@ -16,7 +21,7 @@ BeforeExecute
 UPDATE
 	"TestTable"
 SET
-	"Id" = 1
+	"Fd" = 1
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
