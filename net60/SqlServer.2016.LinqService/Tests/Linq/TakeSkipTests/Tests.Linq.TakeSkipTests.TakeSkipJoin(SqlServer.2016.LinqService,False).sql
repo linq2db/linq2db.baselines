@@ -49,8 +49,6 @@ FROM
 				FROM
 					[LinqDataTypes] [t2]
 			) [t3]
-		ORDER BY
-			[t3].[ID]
 	) [e]
 		LEFT JOIN (
 			SELECT TOP (15)
@@ -82,7 +80,8 @@ FROM
 					FROM
 						[LinqDataTypes] [t5]
 				) [t6]
-			ORDER BY
-				[t6].[ID]
 		) [_] ON [_].[ID] = [e].[ID]
+ORDER BY
+	[_].[ID],
+	[e].[ID]
 
