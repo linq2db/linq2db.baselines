@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "UIntTable"
+DROP TABLE IF EXISTS "UIntTable"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "UIntTable"
 (
 	"Field16"  Int         NOT NULL,
 	"Field32"  BigInt      NOT NULL,
