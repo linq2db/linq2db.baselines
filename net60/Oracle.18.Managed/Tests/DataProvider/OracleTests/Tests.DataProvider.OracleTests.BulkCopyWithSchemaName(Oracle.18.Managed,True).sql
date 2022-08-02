@@ -1,10 +1,31 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE BULKCOPYTABLE
-(
-	ID Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE BULKCOPYTABLE';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE BULKCOPYTABLE
+		(
+			ID Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

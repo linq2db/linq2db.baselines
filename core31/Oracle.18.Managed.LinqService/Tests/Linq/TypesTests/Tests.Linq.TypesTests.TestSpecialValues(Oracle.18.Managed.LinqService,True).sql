@@ -67,11 +67,3 @@ WHERE
 ORDER BY
 	t1.ID
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"AllTypes" t1
-WHERE
-	t1.ID > 2
-

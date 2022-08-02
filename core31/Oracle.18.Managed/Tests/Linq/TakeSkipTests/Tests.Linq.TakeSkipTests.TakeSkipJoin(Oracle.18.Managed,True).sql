@@ -87,4 +87,7 @@ FROM
 				) t6
 			FETCH NEXT :take_1 ROWS ONLY
 		) t7 ON t7.ID = e.ID
+ORDER BY
+	t7.ID,
+	e.ID
 

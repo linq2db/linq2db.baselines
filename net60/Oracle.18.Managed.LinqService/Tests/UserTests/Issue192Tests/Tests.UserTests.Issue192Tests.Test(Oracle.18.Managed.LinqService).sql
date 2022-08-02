@@ -1,12 +1,33 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "TypeConvertTable"
-(
-	"Name"      VarChar(50) NOT NULL,
-	"BoolValue" Char        NOT NULL,
-	"GuidValue" VarChar(50)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TypeConvertTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TypeConvertTable"
+		(
+			"Name"      VarChar(50) NOT NULL,
+			"BoolValue" Char        NOT NULL,
+			"GuidValue" VarChar(50)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
