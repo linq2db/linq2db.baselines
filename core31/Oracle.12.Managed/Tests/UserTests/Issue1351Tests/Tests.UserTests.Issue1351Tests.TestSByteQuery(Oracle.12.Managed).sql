@@ -1,12 +1,33 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "T1351Model"
-(
-	ID             Int       NOT NULL,
-	"TestField"    Number(3) NOT NULL,
-	"TestNullable" Number(3)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "T1351Model"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "T1351Model"
+		(
+			ID             Int       NOT NULL,
+			"TestField"    Number(3) NOT NULL,
+			"TestNullable" Number(3)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

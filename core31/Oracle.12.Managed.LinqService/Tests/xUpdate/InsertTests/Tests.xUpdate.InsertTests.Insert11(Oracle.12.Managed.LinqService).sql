@@ -48,16 +48,6 @@ SELECT
 FROM
 	"Person" p2
 WHERE
-	p2."PersonID" > :id
+	(p2."PersonID" > :id OR p2."PersonID" = 0)
 FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @id Int32
-SET     @id = 4
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" > :id
 

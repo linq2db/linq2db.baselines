@@ -1,14 +1,35 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Issue1303"
-(
-	ID       Int     NOT NULL,
-	"Array"  Raw(10)     NULL,
-	"Binary" Raw(10)     NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1303"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_Issue1303" PRIMARY KEY (ID)
-)
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1303"
+		(
+			ID       Int     NOT NULL,
+			"Array"  Raw(10)     NULL,
+			"Binary" Raw(10)     NULL,
+
+			CONSTRAINT "PK_Issue1303" PRIMARY KEY (ID)
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

@@ -1,14 +1,53 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "activity649"
-(
-	"activityid" Int        NOT NULL,
-	"personid"   Int        NOT NULL,
-	"added"      timestamp  NOT NULL,
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_activity649"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_activity649"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "activity649"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
 
-	CONSTRAINT "PK_activity649" PRIMARY KEY ("activityid")
-)
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "activity649"
+		(
+			"activityid" Int        NOT NULL,
+			"personid"   Int        NOT NULL,
+			"added"      timestamp  NOT NULL,
+
+			CONSTRAINT "PK_activity649" PRIMARY KEY ("activityid")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -27,13 +66,52 @@ END;
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "person649"
-(
-	"personid"   Int           NOT NULL,
-	"personname" VarChar(255)  NOT NULL,
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_person649"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_person649"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "person649"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
 
-	CONSTRAINT "PK_person649" PRIMARY KEY ("personid")
-)
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "person649"
+		(
+			"personid"   Int           NOT NULL,
+			"personname" VarChar(255)  NOT NULL,
+
+			CONSTRAINT "PK_person649" PRIMARY KEY ("personid")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

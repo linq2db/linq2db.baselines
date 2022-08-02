@@ -78,11 +78,3 @@ FROM
 WHERE
 	gc."ParentID" = 1
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"GrandChild" t1
-WHERE
-	t1."GrandChildID" IN (1001, 1002)
-

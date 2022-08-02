@@ -1,30 +1,28 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" > 4
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @IDENTITY_PARAMETER Decimal
-SET     @IDENTITY_PARAMETER = NULL
+DECLARE @FirstName Varchar2(4) -- String
+SET     @FirstName = '擊敗奴隸'
+DECLARE @LastName Varchar2(9) -- String
+SET     @LastName = 'Юникодкин'
+DECLARE @MiddleName Varchar2 -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
 	"LastName",
+	"MiddleName",
 	"Gender"
 )
 VALUES
 (
-	'擊敗奴隸',
-	'Юникодкин',
-	'M'
+	:FirstName,
+	:LastName,
+	:MiddleName,
+	:Gender
 )
-RETURNING 
-	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -42,12 +40,4 @@ FROM
 WHERE
 	p."FirstName" = '擊敗奴隸' AND p."LastName" = 'Юникодкин'
 FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" > 4
 

@@ -22,10 +22,31 @@ SELECT :p FROM SYS.DUAL
 BeforeExecute
 --  Oracle.Managed Oracle12
 
-CREATE TABLE "OracleBulkCopyTable"
-(
-	ID Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "OracleBulkCopyTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+--  Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "OracleBulkCopyTable"
+		(
+			ID Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 --  Oracle.Managed Oracle12
