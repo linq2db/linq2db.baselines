@@ -183,6 +183,8 @@ FROM
 		LEFT JOIN "Tag" tagGroup ON fact_1."Id" = tagGroup."FactId"
 WHERE
 	fact_1."Id" > 3
+ORDER BY
+	fact_1."Id"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

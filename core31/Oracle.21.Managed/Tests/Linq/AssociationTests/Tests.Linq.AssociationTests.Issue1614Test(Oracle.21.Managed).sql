@@ -1,29 +1,92 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "User"
-(
-	"Id" Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "User"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Resource"
-(
-	"Id"                 Int NOT NULL,
-	"AssociatedObjectId" Int NOT NULL,
-	"AssociationTypeId"  Int     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "User"
+		(
+			"Id" Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Lookup"
-(
-	"Id"   Int          NOT NULL,
-	"Type" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Resource"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Resource"
+		(
+			"Id"                 Int NOT NULL,
+			"AssociatedObjectId" Int NOT NULL,
+			"AssociationTypeId"  Int     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Lookup"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Lookup"
+		(
+			"Id"   Int          NOT NULL,
+			"Type" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

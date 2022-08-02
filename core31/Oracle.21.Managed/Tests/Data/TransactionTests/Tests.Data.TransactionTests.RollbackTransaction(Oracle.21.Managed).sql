@@ -44,11 +44,3 @@ WHERE
 	t."ParentID" = 1010
 FETCH NEXT :take ROWS ONLY
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" >= 1000
-

@@ -81,13 +81,3 @@ WHERE
 ORDER BY
 	t1.ID
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @maxID Int32
-SET     @maxID = 2
-
-DELETE FROM
-	"AllTypes" t1
-WHERE
-	t1.ID > :maxID
-

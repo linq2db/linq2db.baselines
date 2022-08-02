@@ -1,23 +1,65 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Issue1096Task"
-(
-	"Id"         Int          NOT NULL,
-	"TargetName" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1096Task"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Issue1096TaskStage"
-(
-	"Id"     Int     NOT NULL,
-	"TaskId" Int     NOT NULL,
-	"Actual" Char(1) NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1096Task"
+		(
+			"Id"         Int          NOT NULL,
+			"TargetName" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_Issue1096TaskStage" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1096TaskStage"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1096TaskStage"
+		(
+			"Id"     Int     NOT NULL,
+			"TaskId" Int     NOT NULL,
+			"Actual" Char(1) NOT NULL,
+
+			CONSTRAINT "PK_Issue1096TaskStage" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

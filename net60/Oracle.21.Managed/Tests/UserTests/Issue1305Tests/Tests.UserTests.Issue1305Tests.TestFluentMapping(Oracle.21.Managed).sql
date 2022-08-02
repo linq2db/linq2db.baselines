@@ -1,17 +1,38 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "FluentMapping"
-(
-	"RecordID"       Int       NOT NULL,
-	"EffectiveStart" timestamp NOT NULL,
-	"EffectiveEnd"   timestamp     NULL,
-	"Key"            Int       NOT NULL,
-	"Unordered1"     Int       NOT NULL,
-	"Unordered2"     Int       NOT NULL,
-	"Audit1ID"       Int       NOT NULL,
-	"Audit2ID"       Int       NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentMapping"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "FluentMapping"
+		(
+			"RecordID"       Int       NOT NULL,
+			"EffectiveStart" timestamp NOT NULL,
+			"EffectiveEnd"   timestamp     NULL,
+			"Key"            Int       NOT NULL,
+			"Unordered1"     Int       NOT NULL,
+			"Unordered2"     Int       NOT NULL,
+			"Audit1ID"       Int       NOT NULL,
+			"Audit2ID"       Int       NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
