@@ -99,11 +99,3 @@ DELETE FROM
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] = 'test_inherited_insert'
-

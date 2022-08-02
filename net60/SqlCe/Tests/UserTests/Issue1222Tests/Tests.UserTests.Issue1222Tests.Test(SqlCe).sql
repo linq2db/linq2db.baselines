@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [stLinks]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [stLinks]
 (
 	[inId]          Int            NOT NULL IDENTITY,
@@ -19,6 +24,11 @@ CREATE TABLE [stLinks]
 
 	CONSTRAINT [PK_stLinks] PRIMARY KEY ([inId])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [stVersions]
 
 BeforeExecute
 -- SqlCe

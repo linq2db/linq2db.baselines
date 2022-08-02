@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [xxPerson]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [xxPerson]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,

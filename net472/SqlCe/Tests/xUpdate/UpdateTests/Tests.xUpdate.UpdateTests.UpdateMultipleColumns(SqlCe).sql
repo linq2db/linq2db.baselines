@@ -1,15 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 1001
-
-DELETE FROM
-	[LinqDataTypes]
-WHERE
-	[LinqDataTypes].[ID] = @ID
-
-BeforeExecute
--- SqlCe
 
 INSERT INTO [LinqDataTypes]
 (
@@ -57,14 +47,4 @@ FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] = @ID
-
-BeforeExecute
--- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 1001
-
-DELETE FROM
-	[LinqDataTypes]
-WHERE
-	[LinqDataTypes].[ID] = @ID
 

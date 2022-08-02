@@ -1,11 +1,21 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Issue1096Task]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Issue1096Task]
 (
 	[Id]         Int           NOT NULL,
 	[TargetName] NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Issue1096TaskStage]
 
 BeforeExecute
 -- SqlCe

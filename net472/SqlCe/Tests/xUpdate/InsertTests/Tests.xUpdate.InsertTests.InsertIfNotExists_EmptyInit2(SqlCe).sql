@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [test_insert_or_replace]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [test_insert_or_replace]
 (
 	[id]         Int           NOT NULL,

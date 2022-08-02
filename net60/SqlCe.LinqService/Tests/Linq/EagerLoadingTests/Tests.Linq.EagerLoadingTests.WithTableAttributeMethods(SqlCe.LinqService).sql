@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [UserIssue3128]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [UserIssue3128]
 (
 	[Id] Int NOT NULL,
 
 	CONSTRAINT [PK_UserIssue3128] PRIMARY KEY ([Id])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [UserDetailsIssue3128]
 
 BeforeExecute
 -- SqlCe
@@ -35,11 +45,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-
-SELECT @@IDENTITY
-
-BeforeExecute
--- SqlCe
 DECLARE @UserId Int -- Int32
 SET     @UserId = 10
 DECLARE @Age Int -- Int32
@@ -55,11 +60,6 @@ VALUES
 	@UserId,
 	@Age
 )
-
-BeforeExecute
--- SqlCe
-
-SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe

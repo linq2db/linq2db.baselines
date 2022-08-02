@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Entity1711]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Entity1711]
 (
 	[Id] BigInt NOT NULL,
 
 	CONSTRAINT [PK_Entity1711] PRIMARY KEY ([Id])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Relationship1711]
 
 BeforeExecute
 -- SqlCe

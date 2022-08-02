@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Adsl]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Adsl]
 (
 	[Id]       Int NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE [Adsl]
 
 	CONSTRAINT [PK_Adsl] PRIMARY KEY ([Id])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Client]
 
 BeforeExecute
 -- SqlCe

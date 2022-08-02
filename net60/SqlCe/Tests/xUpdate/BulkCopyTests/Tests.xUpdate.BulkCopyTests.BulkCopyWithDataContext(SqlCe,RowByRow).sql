@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [SimpleBulkCopyTable]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [SimpleBulkCopyTable]
 (
 	[Id] Int NOT NULL

@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] > 1000
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -31,12 +23,4 @@ FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ChildID] = @id
-
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] > 1000
 

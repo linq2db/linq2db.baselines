@@ -1,10 +1,20 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [TestEqualsTable1]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [TestEqualsTable1]
 (
 	[Id] Int NOT NULL
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [TestEqualsTable2]
 
 BeforeExecute
 -- SqlCe

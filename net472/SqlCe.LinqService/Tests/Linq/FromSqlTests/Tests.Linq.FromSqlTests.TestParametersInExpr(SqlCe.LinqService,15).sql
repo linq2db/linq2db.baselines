@@ -389,6 +389,8 @@ FROM
 		) [s] ON [s].[id] = [c_1].[id]
 WHERE
 	[s].[id] > 10
+ORDER BY
+	[s].[id]
 
 BeforeExecute
 -- SqlCe
@@ -404,6 +406,8 @@ FROM
 	[sample_class] [t]
 WHERE
 	[t].[id] >= @startId AND [t].[id] < @endId AND [t].[id] > 10
+ORDER BY
+	[t].[id]
 
 BeforeExecute
 -- SqlCe

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [PR_1598_Insert_Table_Cache]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [PR_1598_Insert_Table_Cache]
 (
 	[Id]   Int           NOT NULL,

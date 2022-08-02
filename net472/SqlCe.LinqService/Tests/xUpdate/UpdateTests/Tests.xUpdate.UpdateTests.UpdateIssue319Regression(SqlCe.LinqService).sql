@@ -66,13 +66,3 @@ WHERE
 			[Parent].[ParentID] = [t2].[ParentID]
 	)
 
-BeforeExecute
--- SqlCe
-DECLARE @id Int -- Int32
-SET     @id = 100500
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] = @id
-

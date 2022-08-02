@@ -69,11 +69,3 @@ FROM
 WHERE
 	[c_1].[ChildID] = @ChildID
 
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] > 1000
-

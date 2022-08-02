@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [activity649]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [activity649]
 (
 	[activityid] Int       NOT NULL IDENTITY,
@@ -9,6 +14,11 @@ CREATE TABLE [activity649]
 
 	CONSTRAINT [PK_activity649] PRIMARY KEY ([activityid])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [person649]
 
 BeforeExecute
 -- SqlCe

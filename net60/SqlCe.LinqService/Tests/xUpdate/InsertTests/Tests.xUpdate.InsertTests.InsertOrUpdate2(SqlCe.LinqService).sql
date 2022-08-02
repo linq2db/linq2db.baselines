@@ -5,18 +5,28 @@ ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
 -- SqlCe
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'test'
+DECLARE @LastName NVarChar(7) -- String
+SET     @LastName = 'subject'
+DECLARE @MiddleName NVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender NVarChar(1) -- String
+SET     @Gender = 'U'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	'test',
-	'subject',
-	'U'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
@@ -89,24 +99,4 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-
-BeforeExecute
--- SqlCe
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Patient]
-WHERE
-	[Patient].[PersonID] = @id
-
-BeforeExecute
--- SqlCe
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] = @id
 
