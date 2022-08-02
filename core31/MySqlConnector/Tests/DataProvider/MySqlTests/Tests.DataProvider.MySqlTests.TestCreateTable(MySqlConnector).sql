@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `CreateTable`
+DROP TABLE IF EXISTS `CreateTable`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `CreateTable`
 (
 	`VarCharDefault`   VARCHAR(4000)         NULL,
 	`VarChar1`         VARCHAR(1)            NULL,
@@ -41,9 +46,9 @@ CREATE TABLE `CreateTable`
 	`UnsignedInt`      INT UNSIGNED      NOT NULL,
 	`BigInt`           BIGINT            NOT NULL,
 	`UnsignedBigInt`   BIGINT UNSIGNED   NOT NULL,
-	`Decimal`          DECIMAL           NOT NULL,
+	`Decimal`          DECIMAL(29, 10)   NOT NULL,
 	`Decimal15_0`      DECIMAL(15)       NOT NULL,
-	`Decimal10_5`      DECIMAL(10, 5)    NOT NULL,
+	`Decimal10_5`      DECIMAL(29, 5)    NOT NULL,
 	`Decimal20_2`      DECIMAL(20, 2)    NOT NULL,
 	`Float`            FLOAT             NOT NULL,
 	`Float10`          FLOAT(10)         NOT NULL,

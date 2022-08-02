@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 --  MySql.Official MySql
 
-CREATE TABLE `MyEntity`
+DROP TABLE IF EXISTS `MyEntity`
+
+BeforeExecute
+--  MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `MyEntity`
 (
 	`Id`   BIGINT       NOT NULL,
 	`Name` VARCHAR(256) NOT NULL
@@ -15,7 +20,7 @@ DROP TABLE IF EXISTS `MyEntity`
 BeforeExecute
 --  MySql.Official MySql
 
-CREATE TABLE `MyEntity`
+CREATE TABLE IF NOT EXISTS `MyEntity`
 (
 	`Id`   BIGINT       NOT NULL,
 	`Name` VARCHAR(256) NOT NULL

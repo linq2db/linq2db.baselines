@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `BigDecimalMySqlConnectorTable`
+DROP TABLE IF EXISTS `BigDecimalMySqlConnectorTable`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `BigDecimalMySqlConnectorTable`
 (
 	`Id`       INT             NOT NULL,
 	`Decimal`  decimal(65, 30) NOT NULL,

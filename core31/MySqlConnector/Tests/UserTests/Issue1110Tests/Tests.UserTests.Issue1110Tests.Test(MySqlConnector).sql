@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `Issue1110TB`
+DROP TABLE IF EXISTS `Issue1110TB`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1110TB`
 (
 	`Id`        INT      NOT NULL,
 	`TimeStamp` DATETIME NOT NULL,

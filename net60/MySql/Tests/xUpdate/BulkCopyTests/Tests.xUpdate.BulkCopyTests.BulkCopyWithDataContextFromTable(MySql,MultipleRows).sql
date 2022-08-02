@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `SimpleBulkCopyTable`
+DROP TABLE IF EXISTS `SimpleBulkCopyTable`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `SimpleBulkCopyTable`
 (
 	`Id` INT NOT NULL
 )

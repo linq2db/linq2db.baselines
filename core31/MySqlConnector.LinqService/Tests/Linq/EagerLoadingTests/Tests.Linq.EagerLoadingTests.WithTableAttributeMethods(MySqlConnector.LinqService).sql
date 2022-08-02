@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `UserIssue3128`
+DROP TABLE IF EXISTS `UserIssue3128`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `UserIssue3128`
 (
 	`Id` INT NOT NULL,
 
@@ -11,7 +16,12 @@ CREATE TABLE `UserIssue3128`
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `UserDetailsIssue3128`
+DROP TABLE IF EXISTS `UserDetailsIssue3128`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `UserDetailsIssue3128`
 (
 	`UserId` INT NOT NULL,
 	`Age`    INT NOT NULL,
@@ -35,11 +45,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-
-SELECT LAST_INSERT_ID()
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @UserId Int32
 SET     @UserId = 10
 DECLARE @Age Int32
@@ -55,11 +60,6 @@ VALUES
 	@UserId,
 	@Age
 )
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySqlConnector MySql

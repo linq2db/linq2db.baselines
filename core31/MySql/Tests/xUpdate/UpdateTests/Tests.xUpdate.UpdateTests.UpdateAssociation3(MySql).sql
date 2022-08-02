@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
-FROM
-	`Child` `t1`
-WHERE
-	`t1`.`ChildID` = 10000
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` = 20000
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -54,22 +36,4 @@ SET
 	`t1`.`Value1` = 5
 WHERE
 	`a_Parent`.`ChildID` = 10000 AND `t1`.`ParentID` > 0
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-DELETE   `t1`
-FROM
-	`Child` `t1`
-WHERE
-	`t1`.`ChildID` = 10000
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` = 20000
 
