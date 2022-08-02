@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `FluentMapping`
+DROP TABLE IF EXISTS `FluentMapping`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `FluentMapping`
 (
 	`RecordID`       INT      NOT NULL,
 	`EffectiveStart` DATETIME NOT NULL,

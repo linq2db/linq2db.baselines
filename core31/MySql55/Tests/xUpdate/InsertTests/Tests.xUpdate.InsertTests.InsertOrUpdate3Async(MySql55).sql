@@ -5,31 +5,32 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-
-DELETE   `p`
-FROM
-	`Person` `p`
-WHERE
-	`p`.`FirstName` = 'John' AND `p`.`LastName` = 'Shepard'
-
-BeforeExecute
--- MySql55 MySql.Official MySql (asynchronously)
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender String(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
 	`FirstName`,
 	`LastName`,
+	`MiddleName`,
 	`Gender`
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql (asynchronously)
+-- MySql55 MySql.Official MySql
 
 SELECT LAST_INSERT_ID()
 
@@ -108,26 +109,4 @@ FROM
 WHERE
 	`p`.`PersonID` = @id
 LIMIT @take
-
-BeforeExecute
--- MySql55 MySql.Official MySql (asynchronously)
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE   `t1`
-FROM
-	`Patient` `t1`
-WHERE
-	`t1`.`PersonID` = @id
-
-BeforeExecute
--- MySql55 MySql.Official MySql (asynchronously)
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`PersonID` = @id
 

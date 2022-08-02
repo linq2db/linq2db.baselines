@@ -77,14 +77,3 @@ WHERE
 	`_`.`ID` = @id
 LIMIT @take
 
-BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @id Int32
-SET     @id = 100500
-
-DELETE   `t1`
-FROM
-	`LinqDataTypes` `t1`
-WHERE
-	`t1`.`ID` = @id
-

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `activity649`
+DROP TABLE IF EXISTS `activity649`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `activity649`
 (
 	`activityid` INT      AUTO_INCREMENT NOT NULL,
 	`personid`   INT                     NOT NULL,
@@ -13,7 +18,12 @@ CREATE TABLE `activity649`
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `person649`
+DROP TABLE IF EXISTS `person649`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `person649`
 (
 	`personid`   INT           AUTO_INCREMENT NOT NULL,
 	`personname` VARCHAR(4000)                NOT NULL,

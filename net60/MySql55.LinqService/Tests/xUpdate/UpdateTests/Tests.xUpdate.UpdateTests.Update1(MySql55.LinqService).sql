@@ -1,14 +1,5 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` > 1000
-
-BeforeExecute
--- MySql55 MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int32
@@ -60,13 +51,4 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = @ParentID
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-DELETE   `t1`
-FROM
-	`Child` `t1`
-WHERE
-	`t1`.`ChildID` > 1000
 
