@@ -60,12 +60,3 @@ FROM
 WHERE
 	`c_1`.`ChildID` = @ChildID
 
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DELETE   `t1`
-FROM
-	`Child` `t1`
-WHERE
-	`t1`.`ChildID` > 1000
-

@@ -5,15 +5,6 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-
-DELETE   `_`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- MariaDB MySql.Official MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -71,13 +62,4 @@ FROM
 WHERE
 	`_`.`PersonID` = @id
 LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DELETE   `_`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 

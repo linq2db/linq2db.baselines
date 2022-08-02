@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `Alert`
+DROP TABLE IF EXISTS `Alert`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Alert`
 (
 	`AlertKey`     VARCHAR(4000)     NULL,
 	`AlertCode`    VARCHAR(4000)     NULL,
@@ -11,7 +16,12 @@ CREATE TABLE `Alert`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `AuditAlert`
+DROP TABLE IF EXISTS `AuditAlert`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `AuditAlert`
 (
 	`CreationDate`    DATETIME          NULL,
 	`AlertCode`       VARCHAR(4000)     NULL,
@@ -22,7 +32,12 @@ CREATE TABLE `AuditAlert`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `Trade`
+DROP TABLE IF EXISTS `Trade`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Trade`
 (
 	`DealId`       INT           NOT NULL,
 	`ParcelId`     INT           NOT NULL,
@@ -32,7 +47,12 @@ CREATE TABLE `Trade`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `Nomin`
+DROP TABLE IF EXISTS `Nomin`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Nomin`
 (
 	`CargoId`              INT           NOT NULL,
 	`DeliveryId`           INT           NOT NULL,
@@ -42,7 +62,12 @@ CREATE TABLE `Nomin`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `Flat`
+DROP TABLE IF EXISTS `Flat`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Flat`
 (
 	`AlertKey`             VARCHAR(4000)     NULL,
 	`AlertCode`            VARCHAR(4000)     NULL,

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `Issue1096Task`
+DROP TABLE IF EXISTS `Issue1096Task`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1096Task`
 (
 	`Id`         INT           NOT NULL,
 	`TargetName` VARCHAR(4000)     NULL
@@ -10,7 +15,12 @@ CREATE TABLE `Issue1096Task`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `Issue1096TaskStage`
+DROP TABLE IF EXISTS `Issue1096TaskStage`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1096TaskStage`
 (
 	`Id`     INT     NOT NULL,
 	`TaskId` INT     NOT NULL,

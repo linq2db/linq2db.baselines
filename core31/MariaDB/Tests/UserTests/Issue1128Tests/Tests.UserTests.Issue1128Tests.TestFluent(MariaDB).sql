@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `AttributeBase`
+DROP TABLE IF EXISTS `AttributeBase`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `AttributeBase`
 (
 	`Id` INT NOT NULL,
 

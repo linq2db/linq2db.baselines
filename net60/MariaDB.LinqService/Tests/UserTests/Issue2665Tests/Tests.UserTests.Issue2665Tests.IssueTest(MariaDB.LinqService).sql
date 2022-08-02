@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `ProductTable`
+DROP TABLE IF EXISTS `ProductTable`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `ProductTable`
 (
 	`Id`   INT           NOT NULL,
 	`Name` VARCHAR(4000) NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE `ProductTable`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `ProductAttributeTable`
+DROP TABLE IF EXISTS `ProductAttributeTable`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `ProductAttributeTable`
 (
 	`Id`   INT           NOT NULL,
 	`Name` VARCHAR(4000) NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE `ProductAttributeTable`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `ProductAttributeMapping`
+DROP TABLE IF EXISTS `ProductAttributeMapping`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `ProductAttributeMapping`
 (
 	`ProductId`          INT NOT NULL,
 	`ProductAttributeId` INT NOT NULL,

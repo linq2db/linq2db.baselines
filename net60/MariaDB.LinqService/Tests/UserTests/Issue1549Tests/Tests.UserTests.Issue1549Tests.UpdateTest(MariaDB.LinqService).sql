@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `billing_devtypes`
+DROP TABLE IF EXISTS `billing_devtypes`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `billing_devtypes`
 (
 	`devtypeid`  INT         AUTO_INCREMENT NOT NULL,
 	`typename`   VARCHAR(50)                NOT NULL,
@@ -13,7 +18,12 @@ CREATE TABLE `billing_devtypes`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `billing_devices`
+DROP TABLE IF EXISTS `billing_devices`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `billing_devices`
 (
 	`devid`     VARCHAR(50) NOT NULL,
 	`sernum`    VARCHAR(50)     NULL,
@@ -25,7 +35,12 @@ CREATE TABLE `billing_devices`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `billing_DevReadingType`
+DROP TABLE IF EXISTS `billing_DevReadingType`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `billing_DevReadingType`
 (
 	`Id`             INT         AUTO_INCREMENT NOT NULL,
 	`DevTypeId`      INT                        NOT NULL,
@@ -38,18 +53,23 @@ CREATE TABLE `billing_DevReadingType`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `billing_TempReading`
+DROP TABLE IF EXISTS `billing_TempReading`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `billing_TempReading`
 (
-	`id`               INT         AUTO_INCREMENT NOT NULL,
-	`DevSerNum`        VARCHAR(50)                NOT NULL,
-	`devid`            VARCHAR(50)                    NULL,
-	`tsdevice`         DATETIME                   NOT NULL,
-	`value`            DECIMAL                    NOT NULL,
-	`Devtypeid`        INT                            NULL,
-	`DevReadingTypeId` INT                            NULL,
-	`ReadingTypeName`  VARCHAR(50)                    NULL,
-	`DevGlobalType`    INT                        NOT NULL,
-	`Responsibility`   INT                        NOT NULL,
+	`id`               INT             AUTO_INCREMENT NOT NULL,
+	`DevSerNum`        VARCHAR(50)                    NOT NULL,
+	`devid`            VARCHAR(50)                        NULL,
+	`tsdevice`         DATETIME                       NOT NULL,
+	`value`            DECIMAL(29, 10)                NOT NULL,
+	`Devtypeid`        INT                                NULL,
+	`DevReadingTypeId` INT                                NULL,
+	`ReadingTypeName`  VARCHAR(50)                        NULL,
+	`DevGlobalType`    INT                            NOT NULL,
+	`Responsibility`   INT                            NOT NULL,
 
 	CONSTRAINT `PK_billing_TempReading` PRIMARY KEY CLUSTERED (`id`)
 )

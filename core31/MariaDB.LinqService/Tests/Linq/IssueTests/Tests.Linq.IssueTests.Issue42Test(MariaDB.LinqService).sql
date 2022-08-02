@@ -58,22 +58,26 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @ID Int32
+SET     @ID = 1
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`t1`.`ID`,
-	`t1`.`MoneyValue`,
-	`t1`.`DateTimeValue`,
-	`t1`.`DateTimeValue2`,
-	`t1`.`BoolValue`,
-	`t1`.`GuidValue`,
-	`t1`.`SmallIntValue`,
-	`t1`.`IntValue`,
-	`t1`.`BigIntValue`,
-	`t1`.`StringValue`
+	`r`.`ID`,
+	`r`.`MoneyValue`,
+	`r`.`DateTimeValue`,
+	`r`.`DateTimeValue2`,
+	`r`.`BoolValue`,
+	`r`.`GuidValue`,
+	`r`.`SmallIntValue`,
+	`r`.`IntValue`,
+	`r`.`BigIntValue`,
+	`r`.`StringValue`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` = @ID
 LIMIT @take
 
 BeforeExecute

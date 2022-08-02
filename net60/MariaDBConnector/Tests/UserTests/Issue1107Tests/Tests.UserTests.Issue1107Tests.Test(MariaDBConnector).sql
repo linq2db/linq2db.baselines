@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `Issue1107TB`
+DROP TABLE IF EXISTS `Issue1107TB`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1107TB`
 (
 	`Id`       INT      NOT NULL,
 	`TestDate` DATETIME NOT NULL,

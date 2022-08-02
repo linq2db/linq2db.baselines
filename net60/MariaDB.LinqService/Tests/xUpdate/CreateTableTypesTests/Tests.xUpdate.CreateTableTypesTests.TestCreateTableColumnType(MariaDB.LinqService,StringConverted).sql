@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `CreateTableTypes`
+DROP TABLE IF EXISTS `CreateTableTypes`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `CreateTableTypes`
 (
 	`StringConverted` VARCHAR(255) NOT NULL,
 	`Id`              INT          NOT NULL

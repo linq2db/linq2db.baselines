@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `O1`
+DROP TABLE IF EXISTS `O1`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `O1`
 (
 	`DocEntry`    INT           NOT NULL,
 	`BplId`       INT           NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE `O1`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `O2`
+DROP TABLE IF EXISTS `O2`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `O2`
 (
 	`DocEntry`    INT           NOT NULL,
 	`BplId`       INT           NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE `O2`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `O3`
+DROP TABLE IF EXISTS `O3`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `O3`
 (
 	`DocEntry`    INT           NOT NULL,
 	`BplId`       INT           NOT NULL,

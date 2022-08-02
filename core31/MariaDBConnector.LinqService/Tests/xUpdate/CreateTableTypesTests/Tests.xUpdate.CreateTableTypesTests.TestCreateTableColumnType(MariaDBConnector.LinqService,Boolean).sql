@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `CreateTableTypes`
+DROP TABLE IF EXISTS `CreateTableTypes`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `CreateTableTypes`
 (
 	`Id`      INT     NOT NULL,
 	`Boolean` BOOLEAN NOT NULL
