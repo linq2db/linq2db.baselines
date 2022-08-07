@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Total"
+DROP TABLE IF EXISTS "Total"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Total"
 (
 	"Id"    Int  NOT NULL,
 	"Sum"   Int  NOT NULL,
@@ -11,7 +16,12 @@ CREATE TABLE "Total"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Entry"
+DROP TABLE IF EXISTS "Entry"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Entry"
 (
 	"Id"      Int NOT NULL,
 	"TotalId" Int NOT NULL,

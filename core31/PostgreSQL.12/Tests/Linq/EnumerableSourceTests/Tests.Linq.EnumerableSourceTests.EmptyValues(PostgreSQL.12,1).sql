@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TableToInsert"
+DROP TABLE IF EXISTS "TableToInsert"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TableToInsert"
 (
 	"Id"    Int  NOT NULL,
 	"Value" text     NULL,

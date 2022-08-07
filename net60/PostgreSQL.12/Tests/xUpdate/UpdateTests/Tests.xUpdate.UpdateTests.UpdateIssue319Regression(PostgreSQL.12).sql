@@ -61,13 +61,3 @@ FROM
 WHERE
 	t3."ParentID" = :id AND t3.ex > 0 AND "Parent"."ParentID" = t3."ParentID"
 
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 100500
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" = :id
-

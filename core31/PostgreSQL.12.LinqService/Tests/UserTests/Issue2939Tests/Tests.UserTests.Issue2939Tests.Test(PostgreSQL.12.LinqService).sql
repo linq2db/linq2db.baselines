@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Adsl"
+DROP TABLE IF EXISTS "Adsl"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Adsl"
 (
 	"Id"       Int NOT NULL,
 	"IdClient" Int     NULL,
@@ -12,7 +17,12 @@ CREATE TABLE "Adsl"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Client"
+DROP TABLE IF EXISTS "Client"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Client"
 (
 	"Id" Int NOT NULL,
 
