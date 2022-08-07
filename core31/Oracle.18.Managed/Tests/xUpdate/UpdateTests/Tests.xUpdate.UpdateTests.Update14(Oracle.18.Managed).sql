@@ -48,11 +48,3 @@ FROM
 WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
-

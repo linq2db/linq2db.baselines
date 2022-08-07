@@ -1,11 +1,32 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Issue1363"
-(
-	"required_field" Raw(16) NOT NULL,
-	"optional_field" Raw(16)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1363"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1363"
+		(
+			"required_field" Raw(16) NOT NULL,
+			"optional_field" Raw(16)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

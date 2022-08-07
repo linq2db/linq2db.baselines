@@ -1,16 +1,55 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "xxPerson_ol"
-(
-	"FirstName"  VarChar(255)  NOT NULL,
-	"PersonID"   Int           NOT NULL,
-	"LastName"   VarChar(255)  NOT NULL,
-	"MiddleName" VarChar(255)      NULL,
-	"Gender"     Char(1)       NOT NULL,
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_ol"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_xxPerson_ol"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "xxPerson_ol"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
 
-	CONSTRAINT "PK_xxPerson_ol" PRIMARY KEY ("PersonID")
-)
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "xxPerson_ol"
+		(
+			"FirstName"  VarChar(255)  NOT NULL,
+			"PersonID"   Int           NOT NULL,
+			"LastName"   VarChar(255)  NOT NULL,
+			"MiddleName" VarChar(255)      NULL,
+			"Gender"     Char(1)       NOT NULL,
+
+			CONSTRAINT "PK_xxPerson_ol" PRIMARY KEY ("PersonID")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

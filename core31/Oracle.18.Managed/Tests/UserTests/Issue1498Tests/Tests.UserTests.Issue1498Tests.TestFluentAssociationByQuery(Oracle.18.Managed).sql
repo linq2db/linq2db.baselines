@@ -1,22 +1,64 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Topic"
-(
-	"Id"    Int          NOT NULL,
-	"Title" VarChar(255)     NULL,
-	"Text"  VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Topic"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Message"
-(
-	"Id"      Int          NOT NULL,
-	"TopicId" Int          NOT NULL,
-	"Text"    VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Topic"
+		(
+			"Id"    Int          NOT NULL,
+			"Title" VarChar(255)     NULL,
+			"Text"  VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Message"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Message"
+		(
+			"Id"      Int          NOT NULL,
+			"TopicId" Int          NOT NULL,
+			"Text"    VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
