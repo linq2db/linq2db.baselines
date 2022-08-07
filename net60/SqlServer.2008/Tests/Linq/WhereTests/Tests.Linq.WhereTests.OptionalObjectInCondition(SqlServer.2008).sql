@@ -1,6 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'1'
@@ -46,5 +44,3 @@ FROM
 WHERE
 	[r].[FirstName] = @FirstName
 
-BeforeExecute
-RollbackTransaction

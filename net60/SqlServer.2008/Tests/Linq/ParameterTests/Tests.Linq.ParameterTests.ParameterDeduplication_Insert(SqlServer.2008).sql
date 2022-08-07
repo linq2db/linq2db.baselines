@@ -1,19 +1,26 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [ParameterDeduplication]
-(
-	[Id]      Int            NOT NULL,
-	[Int1]    Int            NOT NULL,
-	[Int2]    Int            NOT NULL,
-	[IntN1]   Int                NULL,
-	[IntN2]   Int                NULL,
-	[String1] VarChar(Max)       NULL,
-	[String2] NVarChar(4000)     NULL,
-	[String3] NVarChar(4000)     NULL,
+IF (OBJECT_ID(N'[ParameterDeduplication]', N'U') IS NOT NULL)
+	DROP TABLE [ParameterDeduplication]
 
-	CONSTRAINT [PK_ParameterDeduplication] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[ParameterDeduplication]', N'U') IS NULL)
+	CREATE TABLE [ParameterDeduplication]
+	(
+		[Id]      Int            NOT NULL,
+		[Int1]    Int            NOT NULL,
+		[Int2]    Int            NOT NULL,
+		[IntN1]   Int                NULL,
+		[IntN2]   Int                NULL,
+		[String1] VarChar(Max)       NULL,
+		[String2] NVarChar(4000)     NULL,
+		[String3] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_ParameterDeduplication] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2008

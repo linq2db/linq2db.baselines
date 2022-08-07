@@ -1,20 +1,34 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [PropertyHistory]
-(
-	[DocumentNo] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[PropertyHistory]', N'U') IS NOT NULL)
+	DROP TABLE [PropertyHistory]
 
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [CustomerApplication]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'[PropertyHistory]', N'U') IS NULL)
+	CREATE TABLE [PropertyHistory]
+	(
+		[DocumentNo] NVarChar(4000)     NULL
+	)
 
-	CONSTRAINT [PK_CustomerApplication] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[CustomerApplication]', N'U') IS NOT NULL)
+	DROP TABLE [CustomerApplication]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[CustomerApplication]', N'U') IS NULL)
+	CREATE TABLE [CustomerApplication]
+	(
+		[Id] Int NOT NULL,
+
+		CONSTRAINT [PK_CustomerApplication] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2008

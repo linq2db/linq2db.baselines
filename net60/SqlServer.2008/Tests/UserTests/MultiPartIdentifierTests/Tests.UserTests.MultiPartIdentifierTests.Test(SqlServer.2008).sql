@@ -1,47 +1,82 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Table1]
-(
-	[Field1] BigInt NOT NULL,
-	[Field2] BigInt NOT NULL,
-	[Field3] Int        NULL
-)
+IF (OBJECT_ID(N'[Table1]', N'U') IS NOT NULL)
+	DROP TABLE [Table1]
 
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Table2]
-(
-	[Field2] BigInt NOT NULL,
-	[Field4] Int    NOT NULL
-)
+IF (OBJECT_ID(N'[Table1]', N'U') IS NULL)
+	CREATE TABLE [Table1]
+	(
+		[Field1] BigInt NOT NULL,
+		[Field2] BigInt NOT NULL,
+		[Field3] Int        NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Table3]
-(
-	[Field4] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Table2]', N'U') IS NOT NULL)
+	DROP TABLE [Table2]
 
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Table4]
-(
-	[Field3] Int NOT NULL,
-	[Field4] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Table2]', N'U') IS NULL)
+	CREATE TABLE [Table2]
+	(
+		[Field2] BigInt NOT NULL,
+		[Field4] Int    NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Table5]
-(
-	[Field5]             Int     NULL,
-	[ProblematicalField] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Table3]', N'U') IS NOT NULL)
+	DROP TABLE [Table3]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Table3]', N'U') IS NULL)
+	CREATE TABLE [Table3]
+	(
+		[Field4] Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Table4]', N'U') IS NOT NULL)
+	DROP TABLE [Table4]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Table4]', N'U') IS NULL)
+	CREATE TABLE [Table4]
+	(
+		[Field3] Int NOT NULL,
+		[Field4] Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Table5]', N'U') IS NOT NULL)
+	DROP TABLE [Table5]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Table5]', N'U') IS NULL)
+	CREATE TABLE [Table5]
+	(
+		[Field5]             Int     NULL,
+		[ProblematicalField] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008

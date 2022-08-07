@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [CreateTableTypes]
-(
-	[Id]            Int    NOT NULL,
-	[Int64Nullable] BigInt     NULL
-)
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NOT NULL)
+	DROP TABLE [CreateTableTypes]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
+	CREATE TABLE [CreateTableTypes]
+	(
+		[Id]            Int    NOT NULL,
+		[Int64Nullable] BigInt     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
