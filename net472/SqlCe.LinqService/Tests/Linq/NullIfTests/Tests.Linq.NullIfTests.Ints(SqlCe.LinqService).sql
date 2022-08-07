@@ -73,6 +73,8 @@ SELECT
 	[s].[Int]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- SqlCe
@@ -81,6 +83,8 @@ SELECT
 	[s].[Int]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- SqlCe
@@ -89,6 +93,8 @@ SELECT
 	[s].[Int]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- SqlCe
@@ -97,6 +103,8 @@ SELECT
 	[s].[NullableInt]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- SqlCe
@@ -105,6 +113,8 @@ SELECT
 	[s].[NullableInt]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- SqlCe
@@ -113,6 +123,8 @@ SELECT
 	[s].[NullableInt]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- SqlCe

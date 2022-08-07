@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] > 1000
-
-BeforeExecute
--- SqlCe
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
 DECLARE @ParentID Int -- Int32
@@ -59,12 +51,4 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 2
-
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] > 1000
 

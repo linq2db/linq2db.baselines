@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Issue1403Tests_1]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Issue1403Tests_1]
 (
 	[event_id]          Int           NOT NULL,

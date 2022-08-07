@@ -43,11 +43,3 @@ FROM
 WHERE
 	[t].[ParentID] = 1010
 
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-

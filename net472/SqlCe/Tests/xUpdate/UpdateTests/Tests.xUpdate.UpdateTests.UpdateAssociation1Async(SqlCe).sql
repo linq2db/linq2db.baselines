@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe (asynchronously)
 
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] = 10000
-
-BeforeExecute
--- SqlCe (asynchronously)
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] = 20000
-
-BeforeExecute
--- SqlCe (asynchronously)
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -60,20 +44,4 @@ WHERE
 			[child_1].[ChildID] = 10000 AND [Parent].[ParentID] = [a_Parent].[ParentID] AND
 			([Parent].[Value1] = [a_Parent].[Value1] OR [Parent].[Value1] IS NULL AND [a_Parent].[Value1] IS NULL)
 	)
-
-BeforeExecute
--- SqlCe (asynchronously)
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] = 10000
-
-BeforeExecute
--- SqlCe (asynchronously)
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] = 20000
 

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Topic]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Topic]
 (
 	[Id]    Int           NOT NULL,
@@ -9,6 +14,11 @@ CREATE TABLE [Topic]
 
 	CONSTRAINT [PK_Topic] PRIMARY KEY ([Id])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Message]
 
 BeforeExecute
 -- SqlCe

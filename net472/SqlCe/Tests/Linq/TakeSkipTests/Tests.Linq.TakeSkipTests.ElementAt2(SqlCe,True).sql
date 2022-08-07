@@ -13,7 +13,6 @@ FROM
 WHERE
 	[p].[ParentID] > 1
 ORDER BY
-	[p].[ParentID],
-	[p].[Value1]
+	[p].[ParentID]
 OFFSET @n ROWS FETCH NEXT @take ROWS ONLY 
 

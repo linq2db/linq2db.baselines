@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [BackgroundTask]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [BackgroundTask]
 (
 	[ID]               Int     NULL,

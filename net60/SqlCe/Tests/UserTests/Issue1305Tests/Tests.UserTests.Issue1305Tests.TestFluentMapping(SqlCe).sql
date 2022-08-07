@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [FluentMapping]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [FluentMapping]
 (
 	[RecordID]       Int      NOT NULL,

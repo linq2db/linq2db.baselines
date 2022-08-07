@@ -48,11 +48,3 @@ FROM
 WHERE
 	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
-

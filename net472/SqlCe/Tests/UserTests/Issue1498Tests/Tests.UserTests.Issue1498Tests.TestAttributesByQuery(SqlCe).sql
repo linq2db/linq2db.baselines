@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Topic]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Topic]
 (
 	[Id]    Int           NOT NULL,
 	[Title] NVarChar(255)     NULL,
 	[Text]  NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Message]
 
 BeforeExecute
 -- SqlCe

@@ -1,31 +1,28 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > 4
-
-BeforeExecute
--- SqlCe
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = '擊敗奴隸'
+DECLARE @LastName NVarChar(9) -- String
+SET     @LastName = 'Юникодкин'
+DECLARE @MiddleName NVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender NVarChar(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	'擊敗奴隸',
-	'Юникодкин',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
-
-BeforeExecute
--- SqlCe
-
-SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
@@ -42,12 +39,4 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] = '擊敗奴隸' AND [p].[LastName] = 'Юникодкин'
-
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > 4
 

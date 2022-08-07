@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Issue1303]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Issue1303]
 (
 	[ID]     Int           NOT NULL,

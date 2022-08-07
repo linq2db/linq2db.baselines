@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [AttributeBase]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [AttributeBase]
 (
 	[Id] Int NOT NULL,

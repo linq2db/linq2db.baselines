@@ -70,25 +70,3 @@ FROM
 WHERE
 	[t].[PersonID] = @id
 
-BeforeExecute
--- SqlCe
-DECLARE @PersonID Int -- Int32
-SET     @PersonID = 5
-DECLARE @FirstName NVarChar(3) -- String
-SET     @FirstName = '123'
-DECLARE @LastName NVarChar(3) -- String
-SET     @LastName = '456'
-DECLARE @MiddleName NVarChar(3) -- String
-SET     @MiddleName = '789'
-DECLARE @Gender NVarChar(1) -- String
-SET     @Gender = 'M'
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] = @PersonID AND
-	[Person].[FirstName] = @FirstName AND
-	[Person].[LastName] = @LastName AND
-	[Person].[MiddleName] = @MiddleName AND
-	[Person].[Gender] = @Gender
-
