@@ -40,7 +40,7 @@ SELECT
 FROM
 	[SampleClass] [t]
 WHERE
-	JSON_VALUE([t].[Data], N'$.Property1') = 'Pr1'
+	JSON_VALUE([t].[Data], N'$.Property1') = N'Pr1'
 
 BeforeExecute
 -- SqlServer.2016
