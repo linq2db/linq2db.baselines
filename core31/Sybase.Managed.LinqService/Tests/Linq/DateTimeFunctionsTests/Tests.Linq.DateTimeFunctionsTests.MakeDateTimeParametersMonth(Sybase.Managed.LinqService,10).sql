@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Date, Convert(NVarChar(11), 2010 + [t].[ID]) + '-10-1')
+	Convert(Date, right(replicate('0',4) + cast((2010 + [t].[ID]) as varchar(255)),4) + '-10-01')
 FROM
 	[LinqDataTypes] [t]
 

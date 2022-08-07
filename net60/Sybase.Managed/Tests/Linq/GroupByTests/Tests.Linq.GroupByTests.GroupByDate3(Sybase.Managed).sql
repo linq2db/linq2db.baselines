@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(Date, Convert(NVarChar(11), DatePart(year, [selectParam].[DateTimeValue])) + '-' + Convert(NVarChar(11), DatePart(month, [selectParam].[DateTimeValue])) + '-1') as [Key_1],
+			Convert(Date, right(replicate('0',4) + cast(DatePart(year, [selectParam].[DateTimeValue]) as varchar(255)),4) + '-' + right(replicate('0',2) + cast(DatePart(month, [selectParam].[DateTimeValue]) as varchar(255)),2) + '-01') as [Key_1],
 			[selectParam].[MoneyValue]
 		FROM
 			[LinqDataTypes] [selectParam]
