@@ -94,10 +94,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `LeaveRequestDateEntry`
 (
-	`Id`             INT     NOT NULL,
-	`EndHour`        DECIMAL     NULL,
-	`StartHour`      DECIMAL     NULL,
-	`LeaveRequestId` INT     NOT NULL,
+	`Id`             INT             NOT NULL,
+	`EndHour`        DECIMAL(29, 10)     NULL,
+	`StartHour`      DECIMAL(29, 10)     NULL,
+	`LeaveRequestId` INT             NOT NULL,
 
 	CONSTRAINT `PK_LeaveRequestDateEntry` PRIMARY KEY CLUSTERED (`Id`)
 )
