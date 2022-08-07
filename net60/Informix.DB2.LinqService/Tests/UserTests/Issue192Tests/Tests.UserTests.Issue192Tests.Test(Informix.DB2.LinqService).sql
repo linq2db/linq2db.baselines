@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE TypeConvertTable
+DROP TABLE IF EXISTS TypeConvertTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS TypeConvertTable
 (
 	Name      NVarChar(50) NOT NULL,
 	BoolValue Char         NOT NULL,

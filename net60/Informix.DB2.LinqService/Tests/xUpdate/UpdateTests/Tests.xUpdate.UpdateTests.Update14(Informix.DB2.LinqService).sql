@@ -48,11 +48,3 @@ FROM
 WHERE
 	t1.FirstName LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
--- Informix.DB2 Informix
-
-DELETE FROM
-	Person
-WHERE
-	Person.FirstName LIKE 'Update14%' ESCAPE '~'
-

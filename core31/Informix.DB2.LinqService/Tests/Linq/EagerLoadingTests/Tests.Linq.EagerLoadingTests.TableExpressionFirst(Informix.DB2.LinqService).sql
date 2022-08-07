@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE UserIssue3128
+DROP TABLE IF EXISTS UserIssue3128
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS UserIssue3128
 (
 	Id Int NOT NULL,
 
@@ -11,7 +16,12 @@ CREATE TABLE UserIssue3128
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE UserDetailsIssue3128
+DROP TABLE IF EXISTS UserDetailsIssue3128
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS UserDetailsIssue3128
 (
 	UserId Int NOT NULL,
 	Age    Int NOT NULL,
@@ -35,11 +45,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @UserId Integer(4) -- Int32
 SET     @UserId = 10
 DECLARE @Age Integer(4) -- Int32
@@ -55,11 +60,6 @@ VALUES
 	@UserId,
 	@Age
 )
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

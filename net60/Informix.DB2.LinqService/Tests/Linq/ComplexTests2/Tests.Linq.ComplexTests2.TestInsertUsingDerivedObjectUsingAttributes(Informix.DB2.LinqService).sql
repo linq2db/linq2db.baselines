@@ -120,11 +120,3 @@ DELETE FROM
 WHERE
 	Person.PersonID = @ID
 
-BeforeExecute
--- Informix.DB2 Informix
-
-DELETE FROM
-	Person
-WHERE
-	Person.FirstName = 'test_inherited_insert'
-

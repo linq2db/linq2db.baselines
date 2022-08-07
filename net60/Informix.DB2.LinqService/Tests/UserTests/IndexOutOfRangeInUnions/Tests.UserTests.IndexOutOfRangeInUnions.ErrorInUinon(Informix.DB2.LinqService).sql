@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE O1
+DROP TABLE IF EXISTS O1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS O1
 (
 	DocEntry    Int           NOT NULL,
 	BplId       Int           NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE O1
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE O2
+DROP TABLE IF EXISTS O2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS O2
 (
 	DocEntry    Int           NOT NULL,
 	BplId       Int           NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE O2
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE O3
+DROP TABLE IF EXISTS O3
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS O3
 (
 	DocEntry    Int           NOT NULL,
 	BplId       Int           NOT NULL,

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE xxPerson
+DROP TABLE IF EXISTS xxPerson
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS xxPerson
 (
 	FirstName  NVarChar(255)  NOT NULL,
 	PersonID   SERIAL         NOT NULL,

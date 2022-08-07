@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Condos
+DROP TABLE IF EXISTS Condos
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Condos
 (
 	Id         Int NOT NULL,
 	LocationId Int NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE Condos
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE CategoryCondos
+DROP TABLE IF EXISTS CategoryCondos
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS CategoryCondos
 (
 	CategoryId Int NOT NULL,
 	CondoId    Int NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE CategoryCondos
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE CondoTags
+DROP TABLE IF EXISTS CondoTags
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS CondoTags
 (
 	CondoId Int NOT NULL,
 	TagId   Int NOT NULL,
@@ -34,7 +49,12 @@ CREATE TABLE CondoTags
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Locations
+DROP TABLE IF EXISTS Locations
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Locations
 (
 	Id           Int           NOT NULL,
 	LocationName NVarChar(100) NOT NULL,

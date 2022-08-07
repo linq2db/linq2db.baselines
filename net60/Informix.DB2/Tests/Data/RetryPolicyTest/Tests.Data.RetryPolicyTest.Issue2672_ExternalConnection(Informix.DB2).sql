@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 --  Informix.DB2 Informix
 
-CREATE TABLE MyEntity
+DROP TABLE IF EXISTS MyEntity
+
+BeforeExecute
+--  Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS MyEntity
 (
 	Id   BigInt        NOT NULL,
 	Name NVarChar(255) NOT NULL
@@ -15,7 +20,7 @@ DROP TABLE IF EXISTS MyEntity
 BeforeExecute
 --  Informix.DB2 Informix
 
-CREATE TABLE MyEntity
+CREATE TABLE IF NOT EXISTS MyEntity
 (
 	Id   BigInt        NOT NULL,
 	Name NVarChar(255) NOT NULL

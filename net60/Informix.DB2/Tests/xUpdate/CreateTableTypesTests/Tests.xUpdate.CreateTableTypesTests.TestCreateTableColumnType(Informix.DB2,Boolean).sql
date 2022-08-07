@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE CreateTableTypes
+DROP TABLE IF EXISTS CreateTableTypes
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS CreateTableTypes
 (
 	Id        Int     NOT NULL,
 	"Boolean" BOOLEAN NOT NULL

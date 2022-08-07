@@ -41,11 +41,3 @@ FROM
 WHERE
 	t.ParentID = 1010
 
-BeforeExecute
--- Informix.DB2 Informix
-
-DELETE FROM
-	Parent
-WHERE
-	Parent.ParentID >= 1000
-

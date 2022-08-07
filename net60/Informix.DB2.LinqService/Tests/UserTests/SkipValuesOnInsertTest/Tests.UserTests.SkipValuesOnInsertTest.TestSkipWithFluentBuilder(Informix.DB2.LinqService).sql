@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE PR_1598_Insert_Fluent_Table
+DROP TABLE IF EXISTS PR_1598_Insert_Fluent_Table
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS PR_1598_Insert_Fluent_Table
 (
 	Id   Int           NOT NULL,
 	Name NVarChar(255)     NULL,

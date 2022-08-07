@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE "User"
+DROP TABLE IF EXISTS "User"
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS "User"
 (
 	Id Int NOT NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE "User"
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE "Resource"
+DROP TABLE IF EXISTS "Resource"
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS "Resource"
 (
 	Id                 Int NOT NULL,
 	AssociatedObjectId Int NOT NULL,
@@ -19,7 +29,12 @@ CREATE TABLE "Resource"
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Lookup
+DROP TABLE IF EXISTS Lookup
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Lookup
 (
 	Id     Int           NOT NULL,
 	"Type" NVarChar(255)     NULL

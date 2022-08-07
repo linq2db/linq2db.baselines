@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Stone
+DROP TABLE IF EXISTS Stone
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Stone
 (
 	Id           SERIAL         NOT NULL,
 	Name         NVarChar(255)  NOT NULL,
