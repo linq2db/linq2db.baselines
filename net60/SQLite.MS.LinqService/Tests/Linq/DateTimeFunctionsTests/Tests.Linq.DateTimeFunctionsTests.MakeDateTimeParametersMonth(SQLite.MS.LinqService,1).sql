@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Date(Cast((2010 + [t].[ID]) as NVarChar(11)) || '-01-01')
+	Date(printf('%04d', (2010 + [t].[ID])) || '-01-01')
 FROM
 	[LinqDataTypes] [t]
 
