@@ -1,14 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [PR_1598_Insert_Table_Cache]
-(
-	[Id]   Int            NOT NULL,
-	[Name] NVarChar(4000)     NULL,
-	[Age]  Int                NULL,
+DROP TABLE IF EXISTS [PR_1598_Insert_Table_Cache]
 
-	CONSTRAINT [PK_PR_1598_Insert_Table_Cache] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+IF (OBJECT_ID(N'[PR_1598_Insert_Table_Cache]', N'U') IS NULL)
+	CREATE TABLE [PR_1598_Insert_Table_Cache]
+	(
+		[Id]   Int            NOT NULL,
+		[Name] NVarChar(4000)     NULL,
+		[Age]  Int                NULL,
+
+		CONSTRAINT [PK_PR_1598_Insert_Table_Cache] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

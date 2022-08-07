@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-CREATE TABLE [BackgroundTask]
-(
-	[ID]               Int     NULL,
-	[DurationID]       Int NOT NULL,
-	[DurationInterval] Int NOT NULL,
-	[PersonID]         Int     NULL
-)
+DROP TABLE IF EXISTS [BackgroundTask]
+
+BeforeExecute
+-- SqlServer.2019
+
+IF (OBJECT_ID(N'[BackgroundTask]', N'U') IS NULL)
+	CREATE TABLE [BackgroundTask]
+	(
+		[ID]               Int     NULL,
+		[DurationID]       Int NOT NULL,
+		[DurationInterval] Int NOT NULL,
+		[PersonID]         Int     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019

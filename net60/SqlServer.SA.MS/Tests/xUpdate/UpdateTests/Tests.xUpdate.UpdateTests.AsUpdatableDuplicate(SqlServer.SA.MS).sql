@@ -62,12 +62,3 @@ FROM
 WHERE
 	[c_1].[ChildID] = @ChildID
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DELETE [t1]
-FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] > 1000
-

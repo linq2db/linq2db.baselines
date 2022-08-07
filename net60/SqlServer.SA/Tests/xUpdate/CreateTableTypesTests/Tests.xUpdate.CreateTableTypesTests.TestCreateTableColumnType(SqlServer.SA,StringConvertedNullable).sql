@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [CreateTableTypes]
-(
-	[Id]              Int           NOT NULL,
-	[StringConverted] NVarChar(Max)     NULL
-)
+DROP TABLE IF EXISTS [CreateTableTypes]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
+	CREATE TABLE [CreateTableTypes]
+	(
+		[Id]              Int           NOT NULL,
+		[StringConverted] NVarChar(Max)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

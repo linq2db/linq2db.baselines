@@ -1,25 +1,37 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [Manufacturer]
-(
-	[ManufacturerId] Int            NOT NULL,
-	[Name]           NVarChar(4000)     NULL,
-	[CountryCode]    NVarChar(4000)     NULL,
-
-	CONSTRAINT [PK_Manufacturer] PRIMARY KEY CLUSTERED ([ManufacturerId])
-)
+DROP TABLE IF EXISTS [Manufacturer]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [Country]
-(
-	[Code] NVarChar(4000) NOT NULL,
-	[Name] NVarChar(4000)     NULL,
+IF (OBJECT_ID(N'[Manufacturer]', N'U') IS NULL)
+	CREATE TABLE [Manufacturer]
+	(
+		[ManufacturerId] Int            NOT NULL,
+		[Name]           NVarChar(4000)     NULL,
+		[CountryCode]    NVarChar(4000)     NULL,
 
-	CONSTRAINT [PK_Country] PRIMARY KEY CLUSTERED ([Code])
-)
+		CONSTRAINT [PK_Manufacturer] PRIMARY KEY CLUSTERED ([ManufacturerId])
+	)
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+DROP TABLE IF EXISTS [Country]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+IF (OBJECT_ID(N'[Country]', N'U') IS NULL)
+	CREATE TABLE [Country]
+	(
+		[Code] NVarChar(4000) NOT NULL,
+		[Name] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_Country] PRIMARY KEY CLUSTERED ([Code])
+	)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

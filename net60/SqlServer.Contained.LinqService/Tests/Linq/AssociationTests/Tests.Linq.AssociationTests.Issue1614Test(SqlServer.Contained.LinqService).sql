@@ -1,29 +1,47 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [User]
-(
-	[Id] Int NOT NULL
-)
+DROP TABLE IF EXISTS [User]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [Resource]
-(
-	[Id]                 Int NOT NULL,
-	[AssociatedObjectId] Int NOT NULL,
-	[AssociationTypeId]  Int     NULL
-)
+IF (OBJECT_ID(N'[User]', N'U') IS NULL)
+	CREATE TABLE [User]
+	(
+		[Id] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [Lookup]
-(
-	[Id]   Int            NOT NULL,
-	[Type] NVarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [Resource]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[Resource]', N'U') IS NULL)
+	CREATE TABLE [Resource]
+	(
+		[Id]                 Int NOT NULL,
+		[AssociatedObjectId] Int NOT NULL,
+		[AssociationTypeId]  Int     NULL
+	)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE IF EXISTS [Lookup]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[Lookup]', N'U') IS NULL)
+	CREATE TABLE [Lookup]
+	(
+		[Id]   Int            NOT NULL,
+		[Type] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

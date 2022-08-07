@@ -1,17 +1,23 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-CREATE TABLE [FluentMapping]
-(
-	[RecordID]       Int       NOT NULL,
-	[EffectiveStart] DateTime2 NOT NULL,
-	[EffectiveEnd]   DateTime2     NULL,
-	[Key]            Int       NOT NULL,
-	[Unordered1]     Int       NOT NULL,
-	[Unordered2]     Int       NOT NULL,
-	[Audit1ID]       Int       NOT NULL,
-	[Audit2ID]       Int       NOT NULL
-)
+DROP TABLE IF EXISTS [FluentMapping]
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[FluentMapping]', N'U') IS NULL)
+	CREATE TABLE [FluentMapping]
+	(
+		[RecordID]       Int       NOT NULL,
+		[EffectiveStart] DateTime2 NOT NULL,
+		[EffectiveEnd]   DateTime2     NULL,
+		[Key]            Int       NOT NULL,
+		[Unordered1]     Int       NOT NULL,
+		[Unordered2]     Int       NOT NULL,
+		[Audit1ID]       Int       NOT NULL,
+		[Audit2ID]       Int       NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

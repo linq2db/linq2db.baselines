@@ -1,12 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [TestSchema].[TableWithDataAndSchema]
-(
-	[Id]       Int          NOT NULL,
-	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
+DROP TABLE IF EXISTS [TestSchema].[TableWithDataAndSchema]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[TestSchema].[TableWithDataAndSchema]', N'U') IS NULL)
+	CREATE TABLE [TestSchema].[TableWithDataAndSchema]
+	(
+		[Id]       Int          NOT NULL,
+		[Value]    Int          NOT NULL,
+		[ValueStr] NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

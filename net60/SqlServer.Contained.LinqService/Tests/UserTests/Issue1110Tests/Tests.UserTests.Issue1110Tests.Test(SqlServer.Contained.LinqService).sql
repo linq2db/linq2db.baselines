@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [Issue1110TB]
-(
-	[Id]        Int       NOT NULL,
-	[TimeStamp] DateTime2 NOT NULL,
+DROP TABLE IF EXISTS [Issue1110TB]
 
-	CONSTRAINT [PK_Issue1110TB] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue1110TB]', N'U') IS NULL)
+	CREATE TABLE [Issue1110TB]
+	(
+		[Id]        Int       NOT NULL,
+		[TimeStamp] DateTime2 NOT NULL,
+
+		CONSTRAINT [PK_Issue1110TB] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
