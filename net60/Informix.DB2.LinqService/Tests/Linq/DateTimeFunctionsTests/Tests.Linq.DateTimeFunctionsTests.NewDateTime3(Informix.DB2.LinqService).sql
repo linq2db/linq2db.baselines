@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			To_Date(To_Char(Year(p.DateTimeValue)) || '-10-1 20:35:44') as c1
+			To_Date(Lpad(Year(p.DateTimeValue),4,'0') || '-10-01 20:35:44', '%Y-%m-%d %H:%M:%S') as c1
 		FROM
 			LinqDataTypes p
 	) t
