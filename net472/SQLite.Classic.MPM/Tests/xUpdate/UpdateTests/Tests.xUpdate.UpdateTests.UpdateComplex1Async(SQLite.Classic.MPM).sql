@@ -4,15 +4,7 @@
 UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -38,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
@@ -102,12 +94,4 @@ FROM
 WHERE
 	[_].[PersonID] = @id
 LIMIT @take
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 

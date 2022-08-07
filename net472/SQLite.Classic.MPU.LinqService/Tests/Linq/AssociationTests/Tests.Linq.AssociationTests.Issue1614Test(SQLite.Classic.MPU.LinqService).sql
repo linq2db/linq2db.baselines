@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [User]
+DROP TABLE IF EXISTS [User]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [User]
 (
 	[Id] INTEGER NOT NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE [User]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Resource]
+DROP TABLE IF EXISTS [Resource]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Resource]
 (
 	[Id]                 INTEGER NOT NULL,
 	[AssociatedObjectId] INTEGER NOT NULL,
@@ -19,7 +29,12 @@ CREATE TABLE [Resource]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Lookup]
+DROP TABLE IF EXISTS [Lookup]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Lookup]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Type] NVarChar(255)     NULL

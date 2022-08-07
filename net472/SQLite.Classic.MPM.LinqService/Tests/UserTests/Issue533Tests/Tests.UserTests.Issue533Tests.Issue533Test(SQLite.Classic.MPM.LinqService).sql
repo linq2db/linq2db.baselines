@@ -5,14 +5,6 @@ UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > 4
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName NVarChar(12) -- String
@@ -44,8 +36,8 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id1  -- Int32
-SET     @id1 = 5
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -58,14 +50,6 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = @id1
+	[_].[PersonID] = @id
 LIMIT @take
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > 4
 
