@@ -1,15 +1,28 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "TestInsertOrReplaceTable"
-(
-	ID           Int           NOT NULL,
-	"FirstName"  NVarChar(255)     NULL,
-	"LastName"   NVarChar(255)     NULL,
-	"MiddleName" NVarChar(255)     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "TestInsertOrReplaceTable"';
+END
 
-	CONSTRAINT "PK_TestInsertOrReplaceTable" PRIMARY KEY (ID)
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TestInsertOrReplaceTable"
+		(
+			ID           Int           NOT NULL,
+			"FirstName"  NVarChar(255)     NULL,
+			"LastName"   NVarChar(255)     NULL,
+			"MiddleName" NVarChar(255)     NULL,
+
+			CONSTRAINT "PK_TestInsertOrReplaceTable" PRIMARY KEY (ID)
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

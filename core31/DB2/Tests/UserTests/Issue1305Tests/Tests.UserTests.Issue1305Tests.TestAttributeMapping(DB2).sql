@@ -1,19 +1,32 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "ColumnOrderTest"
-(
-	"RecordID"       Int           NOT NULL,
-	"EffectiveStart" timestamp     NOT NULL,
-	"EffectiveEnd"   timestamp         NULL,
-	"Key"            Int           NOT NULL,
-	"Code"           NVarChar(255)     NULL,
-	"Name"           NVarChar(255)     NULL,
-	"Audit1ID"       Int           NOT NULL,
-	"Audit2ID"       Int           NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "ColumnOrderTest"';
+END
 
-	CONSTRAINT "PK_ColumnOrderTest" PRIMARY KEY ("RecordID")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "ColumnOrderTest"
+		(
+			"RecordID"       Int           NOT NULL,
+			"EffectiveStart" timestamp     NOT NULL,
+			"EffectiveEnd"   timestamp         NULL,
+			"Key"            Int           NOT NULL,
+			"Code"           NVarChar(255)     NULL,
+			"Name"           NVarChar(255)     NULL,
+			"Audit1ID"       Int           NOT NULL,
+			"Audit2ID"       Int           NOT NULL,
+
+			CONSTRAINT "PK_ColumnOrderTest" PRIMARY KEY ("RecordID")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

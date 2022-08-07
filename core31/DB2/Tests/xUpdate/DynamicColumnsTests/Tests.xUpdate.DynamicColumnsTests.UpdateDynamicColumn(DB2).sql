@@ -44,11 +44,3 @@ FROM
 WHERE
 	"c_1"."FirstName" = 'Johnny' AND "c_1"."LastName" = 'Limonadovy'
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."LastName" = 'Limonadovy'
-

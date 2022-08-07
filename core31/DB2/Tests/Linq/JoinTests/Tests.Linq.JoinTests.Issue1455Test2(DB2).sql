@@ -1,59 +1,124 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Alert"
-(
-	"AlertKey"     NVarChar(255)     NULL,
-	"AlertCode"    NVarChar(255)     NULL,
-	"CreationDate" timestamp         NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Alert"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "AuditAlert"
-(
-	"CreationDate"    timestamp         NULL,
-	"AlertCode"       NVarChar(255)     NULL,
-	"AlertKey"        NVarChar(255)     NULL,
-	"TransactionDate" timestamp         NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Alert"
+		(
+			"AlertKey"     NVarChar(255)     NULL,
+			"AlertCode"    NVarChar(255)     NULL,
+			"CreationDate" timestamp         NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Trade"
-(
-	"DealId"       Int           NOT NULL,
-	"ParcelId"     Int           NOT NULL,
-	"CounterParty" NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "AuditAlert"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Nomin"
-(
-	"CargoId"              Int           NOT NULL,
-	"DeliveryId"           Int           NOT NULL,
-	"DeliveryCounterParty" NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "AuditAlert"
+		(
+			"CreationDate"    timestamp         NULL,
+			"AlertCode"       NVarChar(255)     NULL,
+			"AlertKey"        NVarChar(255)     NULL,
+			"TransactionDate" timestamp         NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Flat"
-(
-	"AlertKey"             NVarChar(255)     NULL,
-	"AlertCode"            NVarChar(255)     NULL,
-	"CargoId"              Int               NULL,
-	"DeliveryId"           Int               NULL,
-	"DeliveryCounterParty" NVarChar(255)     NULL,
-	"DealId"               Int               NULL,
-	"ParcelId"             Int               NULL,
-	"CounterParty"         NVarChar(255)     NULL,
-	"TransactionDate"      timestamp         NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Trade"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Trade"
+		(
+			"DealId"       Int           NOT NULL,
+			"ParcelId"     Int           NOT NULL,
+			"CounterParty" NVarChar(255)     NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Nomin"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Nomin"
+		(
+			"CargoId"              Int           NOT NULL,
+			"DeliveryId"           Int           NOT NULL,
+			"DeliveryCounterParty" NVarChar(255)     NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Flat"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Flat"
+		(
+			"AlertKey"             NVarChar(255)     NULL,
+			"AlertCode"            NVarChar(255)     NULL,
+			"CargoId"              Int               NULL,
+			"DeliveryId"           Int               NULL,
+			"DeliveryCounterParty" NVarChar(255)     NULL,
+			"DealId"               Int               NULL,
+			"ParcelId"             Int               NULL,
+			"CounterParty"         NVarChar(255)     NULL,
+			"TransactionDate"      timestamp         NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

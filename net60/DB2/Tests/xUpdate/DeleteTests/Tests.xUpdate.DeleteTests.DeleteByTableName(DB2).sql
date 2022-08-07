@@ -1,16 +1,29 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "xxPerson"
-(
-	"FirstName"  NVarChar(255)                              NOT NULL,
-	"PersonID"   Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"LastName"   NVarChar(255)                              NOT NULL,
-	"MiddleName" NVarChar(255)                                  NULL,
-	"Gender"     Char(1)                                    NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "xxPerson"';
+END
 
-	CONSTRAINT "PK_xxPerson" PRIMARY KEY ("PersonID")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "xxPerson"
+		(
+			"FirstName"  NVarChar(255)                              NOT NULL,
+			"PersonID"   Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"LastName"   NVarChar(255)                              NOT NULL,
+			"MiddleName" NVarChar(255)                                  NULL,
+			"Gender"     Char(1)                                    NOT NULL,
+
+			CONSTRAINT "PK_xxPerson" PRIMARY KEY ("PersonID")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

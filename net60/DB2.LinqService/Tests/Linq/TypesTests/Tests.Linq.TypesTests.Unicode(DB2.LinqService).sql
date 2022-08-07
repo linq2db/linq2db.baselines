@@ -1,32 +1,28 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = '擊敗奴隸'
+DECLARE @LastName VarChar(9) -- String
+SET     @LastName = 'Юникодкин'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > 4
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"PersonID"
-FROM
-	NEW TABLE
-	(
-		INSERT INTO "Person"
-		(
-			"FirstName",
-			"LastName",
-			"Gender"
-		)
-		VALUES
-		(
-			'擊敗奴隸',
-			'Юникодкин',
-			'M'
-		)
-	)
+INSERT INTO "Person"
+(
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
+)
+VALUES
+(
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
+)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -42,12 +38,4 @@ FROM
 WHERE
 	"p"."FirstName" = '擊敗奴隸' AND "p"."LastName" = 'Юникодкин'
 FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > 4
 

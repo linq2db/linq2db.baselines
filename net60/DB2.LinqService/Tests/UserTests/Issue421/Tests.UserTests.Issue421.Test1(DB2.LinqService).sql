@@ -1,13 +1,26 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "BlobClass"
-(
-	"Id"        Int  NOT NULL,
-	"BlobValue" Blob     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "BlobClass"';
+END
 
-	CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "BlobClass"
+		(
+			"Id"        Int  NOT NULL,
+			"BlobValue" Blob     NULL,
+
+			CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

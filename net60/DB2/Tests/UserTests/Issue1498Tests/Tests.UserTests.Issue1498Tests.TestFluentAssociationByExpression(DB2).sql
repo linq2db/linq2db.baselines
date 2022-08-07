@@ -1,22 +1,48 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Topic"
-(
-	"Id"    Int           NOT NULL,
-	"Title" NVarChar(255)     NULL,
-	"Text"  NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Topic"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Message"
-(
-	"Id"      Int           NOT NULL,
-	"TopicId" Int           NOT NULL,
-	"Text"    NVarChar(255)     NULL
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Topic"
+		(
+			"Id"    Int           NOT NULL,
+			"Title" NVarChar(255)     NULL,
+			"Text"  NVarChar(255)     NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Message"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Message"
+		(
+			"Id"      Int           NOT NULL,
+			"TopicId" Int           NOT NULL,
+			"Text"    NVarChar(255)     NULL
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
