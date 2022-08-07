@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TestEqualsTable1"
+DROP TABLE IF EXISTS "TestEqualsTable1"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TestEqualsTable1"
 (
 	"Id" Int NOT NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE "TestEqualsTable1"
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TestEqualsTable2"
+DROP TABLE IF EXISTS "TestEqualsTable2"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TestEqualsTable2"
 (
 	"Id" Int NOT NULL,
 	"FK" Int     NULL

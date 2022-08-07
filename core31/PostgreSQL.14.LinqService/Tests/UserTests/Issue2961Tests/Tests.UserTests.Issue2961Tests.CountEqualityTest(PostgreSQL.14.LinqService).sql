@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Condos"
+DROP TABLE IF EXISTS "Condos"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Condos"
 (
 	"Id"         Int NOT NULL,
 	"LocationId" Int NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE "Condos"
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "CategoryCondos"
+DROP TABLE IF EXISTS "CategoryCondos"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "CategoryCondos"
 (
 	"CategoryId" Int NOT NULL,
 	"CondoId"    Int NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE "CategoryCondos"
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "CondoTags"
+DROP TABLE IF EXISTS "CondoTags"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "CondoTags"
 (
 	"CondoId" Int NOT NULL,
 	"TagId"   Int NOT NULL,
@@ -34,7 +49,12 @@ CREATE TABLE "CondoTags"
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Locations"
+DROP TABLE IF EXISTS "Locations"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Locations"
 (
 	"Id"           Int          NOT NULL,
 	"LocationName" VarChar(100) NOT NULL,

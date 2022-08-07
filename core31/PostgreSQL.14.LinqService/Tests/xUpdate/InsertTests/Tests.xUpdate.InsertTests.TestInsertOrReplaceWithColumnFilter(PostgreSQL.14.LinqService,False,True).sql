@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TestInsertOrReplaceTable"
+DROP TABLE IF EXISTS "TestInsertOrReplaceTable"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TestInsertOrReplaceTable"
 (
 	"ID"         Int  NOT NULL,
 	"FirstName"  text     NULL,

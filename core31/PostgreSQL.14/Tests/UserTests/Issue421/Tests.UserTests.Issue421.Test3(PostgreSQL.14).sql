@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "BlobClass"
+DROP TABLE IF EXISTS "BlobClass"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "BlobClass"
 (
 	"Id"        Int   NOT NULL,
 	"BlobValue" bytea     NULL,
