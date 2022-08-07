@@ -349,7 +349,12 @@ RollbackTransaction
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TestPostgreSQLTypeName"
+DROP TABLE IF EXISTS "TestPostgreSQLTypeName"
+
+BeforeExecute
+--  PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TestPostgreSQLTypeName"
 (
 	"Column" circle     NULL
 )

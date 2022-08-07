@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Child" t1
-WHERE
-	t1."ParentID" >= 1000
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" >= 1000
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Integer -- Int32
@@ -127,20 +111,4 @@ WHERE
 			t1."ParentID" = p."ParentID" AND
 			t1."Value1" = p."Value1"
 	)
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Child" t1
-WHERE
-	t1."ParentID" >= 1000
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" >= 1000
 

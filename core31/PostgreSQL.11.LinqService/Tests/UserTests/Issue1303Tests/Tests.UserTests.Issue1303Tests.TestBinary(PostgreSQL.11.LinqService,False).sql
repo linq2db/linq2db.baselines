@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Issue1303"
+DROP TABLE IF EXISTS "Issue1303"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Issue1303"
 (
 	"ID"     Int   NOT NULL,
 	"Array"  bytea     NULL,

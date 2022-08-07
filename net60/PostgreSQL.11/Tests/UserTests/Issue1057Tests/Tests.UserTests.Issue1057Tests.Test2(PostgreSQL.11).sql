@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Task"
+DROP TABLE IF EXISTS "Task"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Task"
 (
 	"Id"         Int  NOT NULL,
 	"TargetName" text     NULL,
@@ -12,7 +17,12 @@ CREATE TABLE "Task"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TaskStage"
+DROP TABLE IF EXISTS "TaskStage"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TaskStage"
 (
 	"Id"     Int     NOT NULL,
 	"TaskId" Int     NOT NULL,
@@ -102,6 +112,8 @@ SELECT
 FROM
 	"Task" p
 		LEFT JOIN "TaskStage" "a_ActualStage" ON p."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True
+ORDER BY
+	p."Id"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
