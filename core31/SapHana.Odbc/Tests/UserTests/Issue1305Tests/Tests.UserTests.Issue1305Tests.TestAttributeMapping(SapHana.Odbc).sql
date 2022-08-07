@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "ColumnOrderTest"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "ColumnOrderTest"
 (
 	"RecordID"       Integer       NOT NULL,

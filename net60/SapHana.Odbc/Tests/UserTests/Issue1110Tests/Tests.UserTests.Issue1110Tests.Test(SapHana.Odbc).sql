@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Issue1110TB"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Issue1110TB"
 (
 	"Id"        Integer   NOT NULL,

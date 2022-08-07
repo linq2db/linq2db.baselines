@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "test_insert_or_replace"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "test_insert_or_replace"
 (
 	"id"         Integer       NOT NULL,

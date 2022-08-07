@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "ValueConversion"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "ValueConversion"
 (
 	"Id"                      Integer       NOT NULL,

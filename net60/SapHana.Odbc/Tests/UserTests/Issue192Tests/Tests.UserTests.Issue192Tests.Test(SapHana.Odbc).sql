@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "TypeConvertTable"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "TypeConvertTable"
 (
 	"Name"      NVarChar(50) NOT NULL,

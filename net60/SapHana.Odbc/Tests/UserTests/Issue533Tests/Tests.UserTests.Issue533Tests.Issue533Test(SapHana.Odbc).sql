@@ -48,14 +48,6 @@ ALTER TABLE "Patient" ADD CONSTRAINT "FK_Patient_Person" FOREIGN KEY ("PersonID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > 4
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName NVarChar(12) -- String
@@ -87,8 +79,8 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id1  -- Int32
-SET     @id1 = 5
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -103,12 +95,4 @@ FROM
 WHERE
 	"_"."PersonID" = ?
 LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > 4
 

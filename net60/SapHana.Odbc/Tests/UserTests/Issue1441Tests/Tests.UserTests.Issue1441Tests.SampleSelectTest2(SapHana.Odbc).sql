@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Authors"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Authors"
 (
 	"Id"   Integer       NOT NULL,
@@ -8,6 +13,11 @@ CREATE COLUMN TABLE "Authors"
 
 	PRIMARY KEY ("Id")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Books"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

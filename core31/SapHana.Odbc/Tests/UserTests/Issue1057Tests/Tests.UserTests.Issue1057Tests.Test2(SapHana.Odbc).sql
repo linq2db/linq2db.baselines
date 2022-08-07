@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Task"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Task"
 (
 	"Id"         Integer       NOT NULL,
@@ -8,6 +13,11 @@ CREATE COLUMN TABLE "Task"
 
 	PRIMARY KEY ("Id")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "TaskStage"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -102,6 +112,8 @@ SELECT
 FROM
 	"Task" "p"
 		LEFT JOIN "TaskStage" "a_ActualStage" ON "p"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = 1
+ORDER BY
+	"p"."Id"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -1,31 +1,28 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > 4
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = '擊敗奴隸'
+DECLARE @LastName NVarChar(9) -- String
+SET     @LastName = 'Юникодкин'
+DECLARE @MiddleName NVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
 	"LastName",
+	"MiddleName",
 	"Gender"
 )
 VALUES
 (
-	'擊敗奴隸',
-	'Юникодкин',
-	'M'
+	?,
+	?,
+	?,
+	?
 )
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -43,12 +40,4 @@ FROM
 WHERE
 	"p"."FirstName" = '擊敗奴隸' AND "p"."LastName" = 'Юникодкин'
 LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > 4
 

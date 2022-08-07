@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "PR_1598_Insert_Table_Cache"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "PR_1598_Insert_Table_Cache"
 (
 	"Id"   Integer       NOT NULL,

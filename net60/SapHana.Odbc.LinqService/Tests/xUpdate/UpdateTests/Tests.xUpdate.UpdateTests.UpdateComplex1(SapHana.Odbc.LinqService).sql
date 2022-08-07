@@ -48,14 +48,6 @@ ALTER TABLE "Patient" ADD CONSTRAINT "FK_Patient_Person" FOREIGN KEY ("PersonID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Person" "_"
-WHERE
-	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -145,12 +137,4 @@ FROM
 WHERE
 	"_"."PersonID" = ?
 LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Person" "_"
-WHERE
-	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
