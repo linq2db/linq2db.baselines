@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Adsl`
+DROP TABLE IF EXISTS `Adsl`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Adsl`
 (
 	`Id`       INT NOT NULL,
 	`IdClient` INT     NULL,
@@ -12,7 +17,12 @@ CREATE TABLE `Adsl`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Client`
+DROP TABLE IF EXISTS `Client`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Client`
 (
 	`Id` INT NOT NULL,
 

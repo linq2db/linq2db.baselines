@@ -87,14 +87,3 @@ WHERE
 	`x`.`FirstName` = @FirstName
 LIMIT @take
 
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @newName VarChar(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE   `x`
-FROM
-	`Person` `x`
-WHERE
-	`x`.`FirstName` = @newName
-

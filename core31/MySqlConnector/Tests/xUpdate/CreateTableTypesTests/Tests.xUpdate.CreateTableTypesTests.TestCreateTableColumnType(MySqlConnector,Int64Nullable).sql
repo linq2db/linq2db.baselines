@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `CreateTableTypes`
+DROP TABLE IF EXISTS `CreateTableTypes`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `CreateTableTypes`
 (
 	`Id`            INT    NOT NULL,
 	`Int64Nullable` BIGINT     NULL

@@ -5,15 +5,6 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
 -- MySqlConnector MySql
-
-DELETE   `_`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- MySqlConnector MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -73,13 +64,4 @@ FROM
 WHERE
 	`_`.`PersonID` = @id
 LIMIT @take
-
-BeforeExecute
--- MySqlConnector MySql
-
-DELETE   `_`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
