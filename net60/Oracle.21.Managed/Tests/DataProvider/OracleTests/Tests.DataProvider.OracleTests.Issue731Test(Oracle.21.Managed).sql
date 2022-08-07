@@ -1,14 +1,35 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Issue731Table"
-(
-	"Id"         Int     NOT NULL,
-	"Guid"       Raw(16) NOT NULL,
-	"BinaryGuid" BLOB    NOT NULL,
-	"BlobValue"  BLOB        NULL,
-	"RawValue"   Raw(5)      NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue731Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue731Table"
+		(
+			"Id"         Int     NOT NULL,
+			"Guid"       Raw(16) NOT NULL,
+			"BinaryGuid" BLOB    NOT NULL,
+			"BlobValue"  BLOB        NULL,
+			"RawValue"   Raw(5)      NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

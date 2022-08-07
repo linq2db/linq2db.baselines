@@ -1,59 +1,164 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Alert"
-(
-	"AlertKey"     VarChar(255)     NULL,
-	"AlertCode"    VarChar(255)     NULL,
-	"CreationDate" timestamp        NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Alert"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "AuditAlert"
-(
-	"CreationDate"    timestamp        NULL,
-	"AlertCode"       VarChar(255)     NULL,
-	"AlertKey"        VarChar(255)     NULL,
-	"TransactionDate" timestamp        NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Alert"
+		(
+			"AlertKey"     VarChar(255)     NULL,
+			"AlertCode"    VarChar(255)     NULL,
+			"CreationDate" timestamp        NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Trade"
-(
-	"DealId"       Int          NOT NULL,
-	"ParcelId"     Int          NOT NULL,
-	"CounterParty" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "AuditAlert"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Nomin"
-(
-	"CargoId"              Int          NOT NULL,
-	"DeliveryId"           Int          NOT NULL,
-	"DeliveryCounterParty" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "AuditAlert"
+		(
+			"CreationDate"    timestamp        NULL,
+			"AlertCode"       VarChar(255)     NULL,
+			"AlertKey"        VarChar(255)     NULL,
+			"TransactionDate" timestamp        NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Flat"
-(
-	"AlertKey"             VarChar(255)     NULL,
-	"AlertCode"            VarChar(255)     NULL,
-	"CargoId"              Int              NULL,
-	"DeliveryId"           Int              NULL,
-	"DeliveryCounterParty" VarChar(255)     NULL,
-	"DealId"               Int              NULL,
-	"ParcelId"             Int              NULL,
-	"CounterParty"         VarChar(255)     NULL,
-	"TransactionDate"      timestamp        NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Trade"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Trade"
+		(
+			"DealId"       Int          NOT NULL,
+			"ParcelId"     Int          NOT NULL,
+			"CounterParty" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Nomin"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Nomin"
+		(
+			"CargoId"              Int          NOT NULL,
+			"DeliveryId"           Int          NOT NULL,
+			"DeliveryCounterParty" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Flat"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Flat"
+		(
+			"AlertKey"             VarChar(255)     NULL,
+			"AlertCode"            VarChar(255)     NULL,
+			"CargoId"              Int              NULL,
+			"DeliveryId"           Int              NULL,
+			"DeliveryCounterParty" VarChar(255)     NULL,
+			"DealId"               Int              NULL,
+			"ParcelId"             Int              NULL,
+			"CounterParty"         VarChar(255)     NULL,
+			"TransactionDate"      timestamp        NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

@@ -1,13 +1,34 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Issue1622Table"
-(
-	"Id"       Int          NOT NULL,
-	"SomeText" VarChar(255)     NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1622Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_Issue1622Table" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1622Table"
+		(
+			"Id"       Int          NOT NULL,
+			"SomeText" VarChar(255)     NULL,
+
+			CONSTRAINT "PK_Issue1622Table" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

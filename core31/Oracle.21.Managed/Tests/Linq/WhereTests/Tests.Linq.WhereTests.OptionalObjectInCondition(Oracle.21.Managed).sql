@@ -1,6 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(1) -- String
 SET     @FirstName = '1'
@@ -46,5 +44,3 @@ FROM
 WHERE
 	r."FirstName" = :FirstName
 
-BeforeExecute
-RollbackTransaction

@@ -69,11 +69,3 @@ FROM
 WHERE
 	c_1."ChildID" = :ChildID
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"Child" t1
-WHERE
-	t1."ChildID" > 1000
-
