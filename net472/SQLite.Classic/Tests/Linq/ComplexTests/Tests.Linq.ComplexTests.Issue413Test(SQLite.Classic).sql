@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [T1]
+DROP TABLE IF EXISTS [T1]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [T1]
 (
 	[InstrumentId]         INTEGER       NOT NULL,
 	[InstrumentCode]       NVarChar(255)     NULL,
@@ -14,7 +19,12 @@ CREATE TABLE [T1]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [T2]
+DROP TABLE IF EXISTS [T2]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [T2]
 (
 	[InstrumentId] INTEGER NOT NULL,
 	[IndexId]      INTEGER NOT NULL
@@ -23,7 +33,12 @@ CREATE TABLE [T2]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [T3]
+DROP TABLE IF EXISTS [T3]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [T3]
 (
 	[InstrumentId] INTEGER NOT NULL,
 	[IndexId]      INTEGER NOT NULL

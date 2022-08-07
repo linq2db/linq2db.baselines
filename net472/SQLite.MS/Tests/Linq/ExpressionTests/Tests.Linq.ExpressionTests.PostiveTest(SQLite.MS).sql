@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [ExpressionTestClass]
+DROP TABLE IF EXISTS [ExpressionTestClass]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [ExpressionTestClass]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL

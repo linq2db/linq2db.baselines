@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [DETAIL]
+DROP TABLE IF EXISTS [DETAIL]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [DETAIL]
 (
 	[ID]         INTEGER       NOT NULL,
 	[TYP_STATUS] INTEGER       NOT NULL,
@@ -14,7 +19,12 @@ CREATE TABLE [DETAIL]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [STATUS_DATA]
+DROP TABLE IF EXISTS [STATUS_DATA]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [STATUS_DATA]
 (
 	[STATUS_TYPE_ID] INTEGER       NOT NULL,
 	[NR]             NVarChar(255) NOT NULL,
@@ -25,7 +35,12 @@ CREATE TABLE [STATUS_DATA]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [CASH]
+DROP TABLE IF EXISTS [CASH]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [CASH]
 (
 	[ID_DETAIL] INTEGER NOT NULL,
 	[ID_TEXT]   INTEGER NOT NULL,

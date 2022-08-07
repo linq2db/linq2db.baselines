@@ -45,7 +45,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [sample_other_class]
+DROP TABLE IF EXISTS [sample_other_class]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [sample_other_class]
 (
 	[id]        INTEGER      NOT NULL,
 	[parent_id] INTEGER      NOT NULL,

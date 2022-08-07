@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] > 1000
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
 
@@ -33,12 +25,4 @@ FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ChildID] = @id
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] > 1000
 

@@ -28,7 +28,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [InvoiceLineItem]
+DROP TABLE IF EXISTS [InvoiceLineItem]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [InvoiceLineItem]
 (
 	[InvoiceLineItemID]     BigInt  NOT NULL,
 	[BillingAmountOverride] Decimal NOT NULL,
@@ -39,7 +44,12 @@ CREATE TABLE [InvoiceLineItem]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [InvoiceReferenceNumber]
+DROP TABLE IF EXISTS [InvoiceReferenceNumber]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [InvoiceReferenceNumber]
 (
 	[InvoiceReferenceNumberID] BigInt        NOT NULL,
 	[ReferenceNumber]          NVarChar(255)     NULL

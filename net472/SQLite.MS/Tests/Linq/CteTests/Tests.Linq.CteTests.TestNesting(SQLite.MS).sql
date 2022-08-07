@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [NestingA]
+DROP TABLE IF EXISTS [NestingA]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [NestingA]
 (
 	[Property1] NVarChar(255)     NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE [NestingA]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [NestingB]
+DROP TABLE IF EXISTS [NestingB]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [NestingB]
 (
 	[Property1] NVarChar(255)     NULL,
 	[Property2] NVarChar(255)     NULL
@@ -18,7 +28,12 @@ CREATE TABLE [NestingB]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [NestingC]
+DROP TABLE IF EXISTS [NestingC]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [NestingC]
 (
 	[Property1] NVarChar(255)     NULL,
 	[Property2] NVarChar(255)     NULL,

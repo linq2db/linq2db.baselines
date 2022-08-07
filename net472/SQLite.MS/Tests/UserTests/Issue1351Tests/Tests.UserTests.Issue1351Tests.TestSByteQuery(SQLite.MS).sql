@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [T1351Model]
+DROP TABLE IF EXISTS [T1351Model]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [T1351Model]
 (
 	[ID]           INTEGER NOT NULL,
 	[TestField]    TinyInt NOT NULL,

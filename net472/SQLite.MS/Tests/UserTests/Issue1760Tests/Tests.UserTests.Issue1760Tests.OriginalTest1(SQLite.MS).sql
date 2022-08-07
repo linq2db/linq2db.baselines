@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [table1]
+DROP TABLE IF EXISTS [table1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [table1]
 (
 	[id]            INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[id_tbl2]       INTEGER      NULL,
@@ -13,7 +18,12 @@ CREATE TABLE [table1]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [table2]
+DROP TABLE IF EXISTS [table2]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [table2]
 (
 	[id]      INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[textCol] NVarChar(255)      NULL,
@@ -23,7 +33,12 @@ CREATE TABLE [table2]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [table3]
+DROP TABLE IF EXISTS [table3]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [table3]
 (
 	[id]  INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[col] INTEGER      NULL

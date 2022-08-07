@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [my_table]
+DROP TABLE IF EXISTS [my_table]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [my_table]
 (
 	[my_col1]      NVarChar(255)     NULL,
 	[my_other_col] NVarChar(255)     NULL,
