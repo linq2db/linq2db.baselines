@@ -38,12 +38,19 @@ SELECT 10,-10,N'Str10'
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [DestinationTable]
-(
-	[Id]       Int          NOT NULL,
-	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
+IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NOT NULL)
+	DROP TABLE [DestinationTable]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NULL)
+	CREATE TABLE [DestinationTable]
+	(
+		[Id]       Int          NOT NULL,
+		[Value]    Int          NOT NULL,
+		[ValueStr] NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
