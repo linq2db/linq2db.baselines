@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			TimeStamp(RTrim(Char(To_Number(To_Char("p"."DateTimeValue", 'YYYY')))) || '-10-1 20:35:44') as "c1"
+			TimeStamp(Lpad(To_Number(To_Char("p"."DateTimeValue", 'YYYY')),4,'0') || '-10-01 20:35:44') as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
