@@ -112,8 +112,8 @@ FROM
 			[al].[AlertCode],
 			[al].[CreationDate]
 	) [al_1]
-		LEFT JOIN [Trade] [trade1] ON ([al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [trade1].[DealId]) IS NULL)
-		LEFT JOIN [Nomin] [nomin1] ON ([al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [nomin1].[CargoId]) IS NULL)
+		LEFT JOIN [Trade] [trade1] ON [al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId])
+		LEFT JOIN [Nomin] [nomin1] ON [al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId])
 WHERE
 	(([nomin1].[DeliveryCounterParty] LIKE @cpty ESCAPE N'~' OR [trade1].[CounterParty] LIKE @cpty_1 ESCAPE N'~') OR [al_1].[alert_1] LIKE @cpty_2 ESCAPE N'~')
 GROUP BY
