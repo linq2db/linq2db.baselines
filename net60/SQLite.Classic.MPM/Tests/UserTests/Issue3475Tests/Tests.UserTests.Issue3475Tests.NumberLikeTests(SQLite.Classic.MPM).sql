@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [NumberLikeTestTable]
+DROP TABLE IF EXISTS [NumberLikeTestTable]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [NumberLikeTestTable]
 (
 	[IntNProp] INTEGER     NULL
 )

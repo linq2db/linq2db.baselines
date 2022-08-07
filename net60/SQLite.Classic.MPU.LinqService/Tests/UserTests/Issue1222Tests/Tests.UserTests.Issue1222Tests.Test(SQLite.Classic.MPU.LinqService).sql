@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [stLinks]
+DROP TABLE IF EXISTS [stLinks]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [stLinks]
 (
 	[inId]          INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[inIdParent]    INTEGER        NOT NULL,
@@ -21,7 +26,12 @@ CREATE TABLE [stLinks]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [stVersions]
+DROP TABLE IF EXISTS [stVersions]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [stVersions]
 (
 	[inId]     INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[inIdMain] INTEGER  NOT NULL

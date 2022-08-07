@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [billing_devtypes]
+DROP TABLE IF EXISTS [billing_devtypes]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [billing_devtypes]
 (
 	[devtypeid]  INTEGER       NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[typename]   NVarChar(50)  NOT NULL,
@@ -11,7 +16,12 @@ CREATE TABLE [billing_devtypes]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [billing_devices]
+DROP TABLE IF EXISTS [billing_devices]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [billing_devices]
 (
 	[devid]     NVarChar(50) NOT NULL,
 	[sernum]    NVarChar(50)     NULL,
@@ -23,7 +33,12 @@ CREATE TABLE [billing_devices]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [billing_DevReadingType]
+DROP TABLE IF EXISTS [billing_DevReadingType]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [billing_DevReadingType]
 (
 	[Id]             INTEGER       NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[DevTypeId]      INTEGER       NOT NULL,
@@ -34,7 +49,12 @@ CREATE TABLE [billing_DevReadingType]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [billing_TempReading]
+DROP TABLE IF EXISTS [billing_TempReading]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [billing_TempReading]
 (
 	[id]               INTEGER       NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[DevSerNum]        NVarChar(50)  NOT NULL,

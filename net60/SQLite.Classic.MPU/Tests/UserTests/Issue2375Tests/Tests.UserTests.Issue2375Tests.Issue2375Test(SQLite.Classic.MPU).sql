@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [InventoryResourceDTO]
+DROP TABLE IF EXISTS [InventoryResourceDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
 (
 	[Id]                Guid      NOT NULL,
 	[Status]            INTEGER   NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE [InventoryResourceDTO]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [WmsLoadCarrierDTO]
+DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [WmsLoadCarrierDTO]
 (
 	[Id]            Guid          NOT NULL,
 	[ResourceLabel] NVarChar(255)     NULL
