@@ -4,7 +4,7 @@ DECLARE @p_1 NVarChar(2) -- String
 SET     @p_1 = '01'
 
 SELECT
-	Cast((Cast((2010 + "t"."ID") as NVarChar(11)) || '-' || ? || '-01') as Date)
+	Cast((Lpad((2010 + "t"."ID"),4,'0') || '-' || ? || '-01') as Date)
 FROM
 	"LinqDataTypes" "t"
 
