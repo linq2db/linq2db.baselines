@@ -73,12 +73,19 @@ SELECT 9,-8,N'-8Dst'
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [Destination]
-(
-	[Id]       Int          NOT NULL,
-	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
+IF (OBJECT_ID(N'[Destination]', N'U') IS NOT NULL)
+	DROP TABLE [Destination]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[Destination]', N'U') IS NULL)
+	CREATE TABLE [Destination]
+	(
+		[Id]       Int          NOT NULL,
+		[Value]    Int          NOT NULL,
+		[ValueStr] NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

@@ -1,16 +1,23 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [CustomerBase]
-(
-	[Id]           Int             NOT NULL IDENTITY,
-	[ClientType]   NChar(6)        NOT NULL,
-	[Name]         NVarChar(4000)      NULL,
-	[ContactEmail] NVarChar(4000)      NULL,
-	[Enabled]      Bit                 NULL,
+IF (OBJECT_ID(N'[CustomerBase]', N'U') IS NOT NULL)
+	DROP TABLE [CustomerBase]
 
-	CONSTRAINT [PK_CustomerBase] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[CustomerBase]', N'U') IS NULL)
+	CREATE TABLE [CustomerBase]
+	(
+		[Id]           Int             NOT NULL IDENTITY,
+		[ClientType]   NChar(6)        NOT NULL,
+		[Name]         NVarChar(4000)      NULL,
+		[ContactEmail] NVarChar(4000)      NULL,
+		[Enabled]      Bit                 NULL,
+
+		CONSTRAINT [PK_CustomerBase] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2005
