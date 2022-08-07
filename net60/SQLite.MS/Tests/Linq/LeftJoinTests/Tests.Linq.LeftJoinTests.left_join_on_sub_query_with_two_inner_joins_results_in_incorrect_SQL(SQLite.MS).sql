@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [A]
+DROP TABLE IF EXISTS [A]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [A]
 (
 	[Id] INTEGER NOT NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE [A]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [B]
+DROP TABLE IF EXISTS [B]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [B]
 (
 	[Id]  INTEGER NOT NULL,
 	[AId] INTEGER NOT NULL
@@ -18,7 +28,12 @@ CREATE TABLE [B]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [C]
+DROP TABLE IF EXISTS [C]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [C]
 (
 	[Id]  INTEGER NOT NULL,
 	[BId] INTEGER NOT NULL

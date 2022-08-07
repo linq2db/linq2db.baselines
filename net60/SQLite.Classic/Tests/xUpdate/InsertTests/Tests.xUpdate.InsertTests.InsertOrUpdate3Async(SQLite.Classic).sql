@@ -5,30 +5,32 @@ UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
 -- SQLite.Classic SQLite
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] = 'John' AND [Person].[LastName] = 'Shepard'
-
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName NVarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName NVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
@@ -105,24 +107,4 @@ FROM
 WHERE
 	[p].[PersonID] = @id
 LIMIT @take
-
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
-DECLARE @id  -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Patient]
-WHERE
-	[Patient].[PersonID] = @id
-
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
-DECLARE @id  -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] = @id
 

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [activity649]
+DROP TABLE IF EXISTS [activity649]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [activity649]
 (
 	[activityid] INTEGER    NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[personid]   INTEGER    NOT NULL,
@@ -11,7 +16,12 @@ CREATE TABLE [activity649]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [person649]
+DROP TABLE IF EXISTS [person649]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [person649]
 (
 	[personid]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[personname] NVarChar(255)  NOT NULL

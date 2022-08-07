@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [ManyFields]
+DROP TABLE IF EXISTS [ManyFields]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [ManyFields]
 (
 	[Id]     INTEGER NOT NULL,
 	[Field1] INTEGER     NULL,

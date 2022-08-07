@@ -2,16 +2,6 @@
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1001
-
-DELETE FROM
-	[LinqDataTypes]
-WHERE
-	[LinqDataTypes].[ID] = @ID
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @ID  -- Int32
-SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue  -- Int16
@@ -64,14 +54,4 @@ FROM
 WHERE
 	[t].[ID] = @ID
 LIMIT @take
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @ID  -- Int32
-SET     @ID = 1001
-
-DELETE FROM
-	[LinqDataTypes]
-WHERE
-	[LinqDataTypes].[ID] = @ID
 

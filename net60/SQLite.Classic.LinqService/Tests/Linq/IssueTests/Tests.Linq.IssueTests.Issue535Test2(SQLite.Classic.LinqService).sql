@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [CustomerBase]
+DROP TABLE IF EXISTS [CustomerBase]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [CustomerBase]
 (
 	[Id]           INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[ClientType]   NChar(6)       NOT NULL,

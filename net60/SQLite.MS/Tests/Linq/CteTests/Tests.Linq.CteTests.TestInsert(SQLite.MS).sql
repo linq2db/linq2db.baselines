@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [CteChild]
+DROP TABLE IF EXISTS [CteChild]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [CteChild]
 (
 	[ChildID]  INTEGER NOT NULL,
 	[ParentID] INTEGER NOT NULL

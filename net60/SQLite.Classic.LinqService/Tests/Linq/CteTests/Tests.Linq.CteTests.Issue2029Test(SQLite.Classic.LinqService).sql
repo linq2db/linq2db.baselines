@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [NC_CODE]
+DROP TABLE IF EXISTS [NC_CODE]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [NC_CODE]
 (
 	[HANDLE]             NVarChar(255) NOT NULL,
 	[CHANGE_STAMP]       Decimal           NULL,
@@ -18,7 +23,12 @@ CREATE TABLE [NC_CODE]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [NC_GROUP_MEMBER]
+DROP TABLE IF EXISTS [NC_GROUP_MEMBER]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [NC_GROUP_MEMBER]
 (
 	[HANDLE]               NVarChar(255) NOT NULL,
 	[NC_GROUP_BO]          NVarChar(255)     NULL,

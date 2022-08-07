@@ -6,7 +6,12 @@ DROP TABLE IF EXISTS [InventoryResource]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [InventoryResource]
+DROP TABLE IF EXISTS [InventoryResource]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [InventoryResource]
 (
 	[Id]     Guid     NOT NULL,
 	[Status] NVarChar NOT NULL,

@@ -1,6 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM
@@ -13,7 +11,6 @@ WHERE
 			[Child] [t1]
 		WHERE
 			[Parent].[ParentID] = [t1].[ParentID]
-	)
+	) AND
+	[Parent].[ParentID] > 100
 
-BeforeExecute
-RollbackTransaction
