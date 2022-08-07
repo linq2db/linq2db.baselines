@@ -1,33 +1,96 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE T1
-(
-	"InstrumentId"         Int          NOT NULL,
-	"InstrumentCode"       VarChar(255)     NULL,
-	"CreateDate"           timestamp    NOT NULL,
-	"SourceInstrumentCode" VarChar(255)     NULL,
-
-	CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
-)
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-CREATE TABLE T2
-(
-	"InstrumentId" Int NOT NULL,
-	"IndexId"      Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE T1';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE T3
-(
-	"InstrumentId" Int NOT NULL,
-	"IndexId"      Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE T1
+		(
+			"InstrumentId"         Int          NOT NULL,
+			"InstrumentCode"       VarChar(255)     NULL,
+			"CreateDate"           timestamp    NOT NULL,
+			"SourceInstrumentCode" VarChar(255)     NULL,
+
+			CONSTRAINT PK_T1 PRIMARY KEY ("InstrumentId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE T2';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE T2
+		(
+			"InstrumentId" Int NOT NULL,
+			"IndexId"      Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE T3';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE T3
+		(
+			"InstrumentId" Int NOT NULL,
+			"IndexId"      Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

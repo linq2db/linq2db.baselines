@@ -10,14 +10,6 @@ CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" > 4
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Varchar2(1) -- String
@@ -111,12 +103,4 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :id2 AND ROWNUM <= :take
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" > 4
 

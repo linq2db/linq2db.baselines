@@ -1,25 +1,67 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "Task"
-(
-	"Id"         Int          NOT NULL,
-	"TargetName" VarChar(255)     NULL,
-
-	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Task"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "TaskStage"
-(
-	"Id"     Int     NOT NULL,
-	"TaskId" Int     NOT NULL,
-	"Actual" Char(1) NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Task"
+		(
+			"Id"         Int          NOT NULL,
+			"TargetName" VarChar(255)     NULL,
 
-	CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
-)
+			CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TaskStage"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TaskStage"
+		(
+			"Id"     Int     NOT NULL,
+			"TaskId" Int     NOT NULL,
+			"Actual" Char(1) NOT NULL,
+
+			CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -102,6 +144,8 @@ SELECT
 FROM
 	"Task" p
 		LEFT JOIN "TaskStage" a_ActualStage ON p."Id" = a_ActualStage."TaskId" AND a_ActualStage."Actual" = 1
+ORDER BY
+	p."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

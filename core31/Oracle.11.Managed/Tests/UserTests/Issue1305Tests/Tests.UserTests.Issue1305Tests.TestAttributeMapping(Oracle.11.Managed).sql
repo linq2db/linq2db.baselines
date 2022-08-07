@@ -1,19 +1,40 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "ColumnOrderTest"
-(
-	"RecordID"       Int          NOT NULL,
-	"EffectiveStart" timestamp    NOT NULL,
-	"EffectiveEnd"   timestamp        NULL,
-	"Key"            Int          NOT NULL,
-	"Code"           VarChar(255)     NULL,
-	"Name"           VarChar(255)     NULL,
-	"Audit1ID"       Int          NOT NULL,
-	"Audit2ID"       Int          NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ColumnOrderTest"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_ColumnOrderTest" PRIMARY KEY ("RecordID")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "ColumnOrderTest"
+		(
+			"RecordID"       Int          NOT NULL,
+			"EffectiveStart" timestamp    NOT NULL,
+			"EffectiveEnd"   timestamp        NULL,
+			"Key"            Int          NOT NULL,
+			"Code"           VarChar(255)     NULL,
+			"Name"           VarChar(255)     NULL,
+			"Audit1ID"       Int          NOT NULL,
+			"Audit2ID"       Int          NOT NULL,
+
+			CONSTRAINT "PK_ColumnOrderTest" PRIMARY KEY ("RecordID")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

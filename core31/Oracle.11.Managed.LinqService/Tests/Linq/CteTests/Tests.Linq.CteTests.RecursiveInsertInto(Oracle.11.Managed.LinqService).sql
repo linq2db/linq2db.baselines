@@ -355,11 +355,32 @@ VALUES
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "HierarchyData"
-(
-	"Id"    Int NOT NULL,
-	"Level" Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "HierarchyData"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "HierarchyData"
+		(
+			"Id"    Int NOT NULL,
+			"Level" Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

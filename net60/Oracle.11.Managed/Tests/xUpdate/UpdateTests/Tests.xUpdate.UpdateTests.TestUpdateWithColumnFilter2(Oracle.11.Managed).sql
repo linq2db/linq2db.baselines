@@ -125,13 +125,3 @@ FROM
 WHERE
 	t1."PersonID" = :ID AND ROWNUM <= :take
 
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @ID Int32
-SET     @ID = 5
-
-DELETE FROM
-	"Person" x
-WHERE
-	x."PersonID" = :ID
-
