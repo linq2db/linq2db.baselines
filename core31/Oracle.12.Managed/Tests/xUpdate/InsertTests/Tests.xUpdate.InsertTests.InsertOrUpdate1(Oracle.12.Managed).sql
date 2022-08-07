@@ -10,6 +10,14 @@ CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @FirstName Varchar2(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Varchar2(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName Varchar2 -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -17,13 +25,15 @@ INSERT INTO "Person"
 (
 	"FirstName",
 	"LastName",
+	"MiddleName",
 	"Gender"
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	:FirstName,
+	:LastName,
+	:MiddleName,
+	:Gender
 )
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
@@ -127,24 +137,4 @@ FROM
 WHERE
 	p."PersonID" = :id
 FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE FROM
-	"Patient" t1
-WHERE
-	t1."PersonID" = :id
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" = :id
 

@@ -77,13 +77,3 @@ WHERE
 	t1.ID = :id
 FETCH NEXT :take ROWS ONLY
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @id Int32
-SET     @id = 100500
-
-DELETE FROM
-	"LinqDataTypes" t1
-WHERE
-	t1.ID = :id
-

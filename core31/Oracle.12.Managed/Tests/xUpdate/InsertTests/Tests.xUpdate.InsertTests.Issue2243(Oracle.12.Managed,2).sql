@@ -1,15 +1,36 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "test_insert_or_replace"
-(
-	"id"         Int          NOT NULL,
-	"name"       VarChar(255)     NULL,
-	"created_by" VarChar(255)     NULL,
-	"updated_by" VarChar(255)     NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "test_insert_or_replace"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_test_insert_or_replace" PRIMARY KEY ("id")
-)
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "test_insert_or_replace"
+		(
+			"id"         Int          NOT NULL,
+			"name"       VarChar(255)     NULL,
+			"created_by" VarChar(255)     NULL,
+			"updated_by" VarChar(255)     NULL,
+
+			CONSTRAINT "PK_test_insert_or_replace" PRIMARY KEY ("id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

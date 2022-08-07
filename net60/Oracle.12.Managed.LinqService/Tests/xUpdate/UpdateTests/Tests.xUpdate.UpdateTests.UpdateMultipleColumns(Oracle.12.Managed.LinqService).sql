@@ -2,16 +2,6 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" t1
-WHERE
-	t1.ID = :ID
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @ID Int32
-SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue Int16
@@ -64,14 +54,4 @@ FROM
 WHERE
 	t.ID = :ID
 FETCH NEXT :take ROWS ONLY
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @ID Int32
-SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" t1
-WHERE
-	t1.ID = :ID
 
