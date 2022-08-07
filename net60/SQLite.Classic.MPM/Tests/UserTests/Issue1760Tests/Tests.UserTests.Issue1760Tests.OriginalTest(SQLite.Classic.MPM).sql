@@ -107,7 +107,7 @@ FROM
 						[tbl2].[col3] IS NOT NULL AND [w].[commonTableId] = @id
 					GROUP BY
 						[tbl2].[col3]
-				) [allG] ON ([bt1].[col3] = Coalesce([allG].[Col3], 0) OR [bt1].[col3] IS NULL AND Coalesce([allG].[Col3], 0) IS NULL)
+				) [allG] ON [bt1].[col3] = Coalesce([allG].[Col3], 0)
 					LEFT JOIN [table3] [tbl3_1] ON [allG].[maxCol] = [tbl3_1].[id]
 				LEFT JOIN [b_table2] [btbl] ON [tbl3_1].[col] = [btbl].[id]
 				LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)

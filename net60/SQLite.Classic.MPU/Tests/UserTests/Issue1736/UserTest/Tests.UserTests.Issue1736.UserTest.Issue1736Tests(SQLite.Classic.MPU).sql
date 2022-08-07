@@ -50,10 +50,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [RefOutfeedTransportOrderResourceDTO]
 (
-	[Id]                  Guid    NOT NULL,
-	[Quantity]            Decimal NOT NULL,
-	[InventoryResourceID] Guid        NULL,
-	[ResourceID]          Guid    NOT NULL
+	[Id]                  Guid            NOT NULL,
+	[Quantity]            Decimal(29, 10) NOT NULL,
+	[InventoryResourceID] Guid                NULL,
+	[ResourceID]          Guid            NOT NULL
 )
 
 BeforeExecute
@@ -122,12 +122,12 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
 (
-	[Id]            Guid    NOT NULL,
-	[ProductStatus] INTEGER NOT NULL,
-	[Quantity]      Decimal NOT NULL,
-	[ResourceID]    Guid    NOT NULL,
-	[MaterialID]    Guid    NOT NULL,
-	[Status]        INTEGER NOT NULL
+	[Id]            Guid            NOT NULL,
+	[ProductStatus] INTEGER         NOT NULL,
+	[Quantity]      Decimal(29, 10) NOT NULL,
+	[ResourceID]    Guid            NOT NULL,
+	[MaterialID]    Guid            NOT NULL,
+	[Status]        INTEGER         NOT NULL
 )
 
 BeforeExecute
