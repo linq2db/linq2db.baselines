@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Topic]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Topic]
 (
 	[Id]    Int           NOT NULL,
@@ -9,6 +14,11 @@ CREATE TABLE [Topic]
 
 	CONSTRAINT [PK_Topic] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Message]
 
 BeforeExecute
 -- Access AccessOleDb

@@ -1,11 +1,21 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [MRECEIPT]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [MRECEIPT]
 (
 	[RECEIPT_NO] NVarChar(255)     NULL,
 	[CUSTKEY]    NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [CUST_DTL]
 
 BeforeExecute
 -- Access AccessOleDb

@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-DELETE FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] = 10000
-
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] = 20000
-
-BeforeExecute
--- Access AccessOleDb
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -52,20 +36,4 @@ SET
 	[t1].[Value1] = 5
 WHERE
 	[a_Parent].[ChildID] = 10000 AND [t1].[ParentID] > 0
-
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] = 10000
-
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] = 20000
 

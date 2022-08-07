@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Stone]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Stone]
 (
 	[Id]           Int            NOT NULL IDENTITY,

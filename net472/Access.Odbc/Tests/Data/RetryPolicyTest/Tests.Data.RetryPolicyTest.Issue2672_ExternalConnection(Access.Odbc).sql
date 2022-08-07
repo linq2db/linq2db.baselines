@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 --  Access.Odbc AccessODBC
 
+DROP TABLE [MyEntity]
+
+BeforeExecute
+--  Access.Odbc AccessODBC
+
 CREATE TABLE [MyEntity]
 (
 	[Id]   BigInt        NOT NULL,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [T1351Model]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [T1351Model]
 (
 	[ID]           Int     NOT NULL,

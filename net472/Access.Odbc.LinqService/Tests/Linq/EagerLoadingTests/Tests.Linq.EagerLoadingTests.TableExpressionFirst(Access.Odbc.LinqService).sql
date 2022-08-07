@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [UserIssue3128]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [UserIssue3128]
 (
 	[Id] Int NOT NULL,
 
 	CONSTRAINT [PK_UserIssue3128] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [UserDetailsIssue3128]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -35,11 +45,6 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-
-SELECT @@IDENTITY
-
-BeforeExecute
--- Access.Odbc AccessODBC
 DECLARE @UserId Int -- Int32
 SET     @UserId = 10
 DECLARE @Age Int -- Int32
@@ -55,11 +60,6 @@ VALUES
 	?,
 	?
 )
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Odbc AccessODBC

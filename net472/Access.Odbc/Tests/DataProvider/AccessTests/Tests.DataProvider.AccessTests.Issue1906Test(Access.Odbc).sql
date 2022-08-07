@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [CtqResultModel]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [CtqResultModel]
 (
 	[ResultId]     Int  NOT NULL IDENTITY,
@@ -8,6 +13,11 @@ CREATE TABLE [CtqResultModel]
 
 	CONSTRAINT [PK_CtqResultModel] PRIMARY KEY CLUSTERED ([ResultId])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [CtqDefinitionModel]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -23,6 +33,11 @@ CREATE TABLE [CtqDefinitionModel]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [CtqSetModel]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [CtqSetModel]
 (
 	[SetId]    Int  NOT NULL IDENTITY,
@@ -30,6 +45,11 @@ CREATE TABLE [CtqSetModel]
 
 	CONSTRAINT [PK_CtqSetModel] PRIMARY KEY CLUSTERED ([SetId])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [FtqSectorModel]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

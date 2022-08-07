@@ -276,7 +276,7 @@ SET     @FieldGuid = '{ffffffff-ffff-ffff-ffff-ffffffffffff}'
 DECLARE @FieldDecimal VarChar(18, 10) -- AnsiString
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate Date -- DateTime
-SET     @FieldDate = #3210-11-23#
+SET     @FieldDate = #2110-11-23#
 DECLARE @FieldTime DBTime -- Time
 SET     @FieldTime = 00:00:00
 DECLARE @FieldEnumString VarWChar -- String
@@ -354,7 +354,7 @@ SET     @FieldGuid = '{ffffffff-ffff-ffff-ffff-ffffffffffff}'
 DECLARE @FieldDecimal VarChar(3, 3) -- AnsiString
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Date -- DateTime
-SET     @FieldDate = #3210-11-23#
+SET     @FieldDate = #2111-11-23#
 DECLARE @FieldTime DBTime -- Time
 SET     @FieldTime = 23:59:59.9999999
 DECLARE @FieldEnumString VarWChar -- String
@@ -512,7 +512,7 @@ SET     @FieldGuid = '{ffffffff-ffff-ffff-ffff-ffffffffffff}'
 DECLARE @FieldDecimal VarChar(3, 3) -- AnsiString
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Date -- DateTime
-SET     @FieldDate = #3210-11-23#
+SET     @FieldDate = #2010-11-23#
 DECLARE @FieldTime DBTime -- Time
 SET     @FieldTime = 23:59:59.9999999
 DECLARE @FieldEnumString VarWChar -- String

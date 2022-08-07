@@ -25,14 +25,6 @@ ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENC
 
 BeforeExecute
 -- Access AccessOleDb
-
-DELETE FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%'
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarWChar(13) -- String
@@ -87,12 +79,4 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%'
 

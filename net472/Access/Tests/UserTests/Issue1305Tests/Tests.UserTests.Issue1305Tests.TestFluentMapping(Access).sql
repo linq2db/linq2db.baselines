@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [FluentMapping]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [FluentMapping]
 (
 	[RecordID]       Int      NOT NULL,

@@ -2,16 +2,6 @@
 -- Access.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
-
-DELETE FROM
-	[LinqDataTypes] [t1]
-WHERE
-	[t1].[ID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @ID Int -- Int32
-SET     @ID = 1001
 DECLARE @MoneyValue VarChar(4, 0) -- AnsiString
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -61,14 +51,4 @@ FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @ID Int -- Int32
-SET     @ID = 1001
-
-DELETE FROM
-	[LinqDataTypes] [t1]
-WHERE
-	[t1].[ID] = ?
 
