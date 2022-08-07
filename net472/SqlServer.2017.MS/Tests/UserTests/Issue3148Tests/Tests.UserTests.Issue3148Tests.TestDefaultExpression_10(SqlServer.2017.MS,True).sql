@@ -1,15 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-CREATE TABLE [TestTable]
-(
-	[Id]     Int             NOT NULL IDENTITY,
-	[Field1] Int                 NULL,
-	[Field2] NVarChar(4000)      NULL,
-	[Field3] Int                 NULL,
+DROP TABLE IF EXISTS [TestTable]
 
-	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+IF (OBJECT_ID(N'[TestTable]', N'U') IS NULL)
+	CREATE TABLE [TestTable]
+	(
+		[Id]     Int             NOT NULL IDENTITY,
+		[Field1] Int                 NULL,
+		[Field2] NVarChar(4000)      NULL,
+		[Field3] Int                 NULL,
+
+		CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
