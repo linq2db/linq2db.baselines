@@ -1,23 +1,37 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [TestNullableParameterTarget]
-(
-	[Id1] Int NOT NULL,
-	[Id2] Int NOT NULL,
-
-	CONSTRAINT [PK_TestNullableParameterTarget] PRIMARY KEY CLUSTERED ([Id1], [Id2])
-)
+IF (OBJECT_ID(N'[TestNullableParameterTarget]', N'U') IS NOT NULL)
+	DROP TABLE [TestNullableParameterTarget]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [TestNullableParameterSource]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'[TestNullableParameterTarget]', N'U') IS NULL)
+	CREATE TABLE [TestNullableParameterTarget]
+	(
+		[Id1] Int NOT NULL,
+		[Id2] Int NOT NULL,
 
-	CONSTRAINT [PK_TestNullableParameterSource] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_TestNullableParameterTarget] PRIMARY KEY CLUSTERED ([Id1], [Id2])
+	)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[TestNullableParameterSource]', N'U') IS NOT NULL)
+	DROP TABLE [TestNullableParameterSource]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[TestNullableParameterSource]', N'U') IS NULL)
+	CREATE TABLE [TestNullableParameterSource]
+	(
+		[Id] Int NOT NULL,
+
+		CONSTRAINT [PK_TestNullableParameterSource] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
