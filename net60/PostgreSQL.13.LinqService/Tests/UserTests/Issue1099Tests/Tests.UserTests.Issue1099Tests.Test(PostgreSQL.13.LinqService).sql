@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "BackgroundTask"
+DROP TABLE IF EXISTS "BackgroundTask"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "BackgroundTask"
 (
 	"ID"               Int     NULL,
 	"DurationID"       Int NOT NULL,

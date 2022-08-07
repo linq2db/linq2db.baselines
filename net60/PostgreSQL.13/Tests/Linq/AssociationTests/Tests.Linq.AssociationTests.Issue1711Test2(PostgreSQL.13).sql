@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Entity1711"
+DROP TABLE IF EXISTS "Entity1711"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Entity1711"
 (
 	"Id" BigInt NOT NULL,
 
@@ -11,7 +16,12 @@ CREATE TABLE "Entity1711"
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Relationship1711"
+DROP TABLE IF EXISTS "Relationship1711"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Relationship1711"
 (
 	"EntityId" BigInt  NOT NULL,
 	"Deleted"  Boolean NOT NULL

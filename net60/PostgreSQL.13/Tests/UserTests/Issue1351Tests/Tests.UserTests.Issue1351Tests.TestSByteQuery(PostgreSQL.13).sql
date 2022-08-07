@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "T1351Model"
+DROP TABLE IF EXISTS "T1351Model"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "T1351Model"
 (
 	"ID"           Int      NOT NULL,
 	"TestField"    SmallInt NOT NULL,

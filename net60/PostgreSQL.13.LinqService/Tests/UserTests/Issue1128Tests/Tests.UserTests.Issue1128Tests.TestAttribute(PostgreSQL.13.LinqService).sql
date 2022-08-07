@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "AttributeBase"
+DROP TABLE IF EXISTS "AttributeBase"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "AttributeBase"
 (
 	"Id" Int NOT NULL,
 
