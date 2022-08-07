@@ -59,11 +59,3 @@ FROM
 WHERE
 	[c_1].[ChildID] = ?
 
-BeforeExecute
--- Access.Odbc AccessODBC
-
-DELETE FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] > 1000
-

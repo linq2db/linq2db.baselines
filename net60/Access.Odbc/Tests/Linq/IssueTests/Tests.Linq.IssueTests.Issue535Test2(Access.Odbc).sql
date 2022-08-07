@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [CustomerBase]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [CustomerBase]
 (
 	[Id]           Int            NOT NULL IDENTITY,

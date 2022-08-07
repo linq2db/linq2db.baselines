@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [CtqResultModel]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [CtqResultModel]
 (
 	[ResultId]     Int  NOT NULL IDENTITY,
@@ -8,6 +13,11 @@ CREATE TABLE [CtqResultModel]
 
 	CONSTRAINT [PK_CtqResultModel] PRIMARY KEY CLUSTERED ([ResultId])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [CtqDefinitionModel]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -23,6 +33,11 @@ CREATE TABLE [CtqDefinitionModel]
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [CtqSetModel]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [CtqSetModel]
 (
 	[SetId]    Int  NOT NULL IDENTITY,
@@ -30,6 +45,11 @@ CREATE TABLE [CtqSetModel]
 
 	CONSTRAINT [PK_CtqSetModel] PRIMARY KEY CLUSTERED ([SetId])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [FtqSectorModel]
 
 BeforeExecute
 -- Access AccessOleDb

@@ -104,13 +104,3 @@ FROM
 WHERE
 	[x].[FirstName] = ?
 
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @newName NVarChar(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM
-	[Person] [x]
-WHERE
-	[x].[FirstName] = ?
-

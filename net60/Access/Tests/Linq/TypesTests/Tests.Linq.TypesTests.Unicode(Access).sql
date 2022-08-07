@@ -1,33 +1,30 @@
 ﻿BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @FirstName VarWChar(4) -- String
+SET     @FirstName = '擊敗奴隸'
+DECLARE @LastName VarWChar(9) -- String
+SET     @LastName = 'Юникодкин'
+DECLARE @MiddleName VarWChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	'擊敗奴隸',
-	'Юникодкин',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT @@IDENTITY
 
 BeforeExecute
 -- Access AccessOleDb
@@ -42,12 +39,4 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] = '擊敗奴隸' AND [p].[LastName] = 'Юникодкин'
-
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
 

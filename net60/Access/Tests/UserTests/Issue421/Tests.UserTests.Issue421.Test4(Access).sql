@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [BlobClass]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [BlobClass]
 (
 	[Id]        Int            NOT NULL,

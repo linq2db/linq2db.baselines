@@ -1,11 +1,21 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Issue1096Task]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Issue1096Task]
 (
 	[Id]         Int           NOT NULL,
 	[TargetName] NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Issue1096TaskStage]
 
 BeforeExecute
 -- Access AccessOleDb

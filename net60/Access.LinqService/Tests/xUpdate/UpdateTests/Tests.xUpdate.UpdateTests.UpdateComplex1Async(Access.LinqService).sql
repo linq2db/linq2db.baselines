@@ -24,7 +24,7 @@ BeforeExecute
 ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE
 
 BeforeExecute
--- Access AccessOleDb (asynchronously)
+-- Access AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarWChar(13) -- String
@@ -50,7 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- Access AccessOleDb (asynchronously)
+-- Access AccessOleDb
 
 SELECT @@IDENTITY
 

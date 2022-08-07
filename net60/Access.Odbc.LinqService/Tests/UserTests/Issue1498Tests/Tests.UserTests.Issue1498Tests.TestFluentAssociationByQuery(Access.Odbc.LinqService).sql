@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Topic]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Topic]
 (
 	[Id]    Int           NOT NULL,
 	[Title] NVarChar(255)     NULL,
 	[Text]  NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Message]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

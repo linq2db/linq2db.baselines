@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [PR_1598_Insert_Fluent_Table]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [PR_1598_Insert_Fluent_Table]
 (
 	[Id]   Int           NOT NULL,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [xxPerson]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [xxPerson]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,

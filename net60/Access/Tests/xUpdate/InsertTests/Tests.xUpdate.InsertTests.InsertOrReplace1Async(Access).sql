@@ -25,18 +25,28 @@ ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENC
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @FirstName VarWChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarWChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName VarWChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
@@ -116,24 +126,4 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb (asynchronously)
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Patient] [p]
-WHERE
-	[p].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb (asynchronously)
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = @id
 

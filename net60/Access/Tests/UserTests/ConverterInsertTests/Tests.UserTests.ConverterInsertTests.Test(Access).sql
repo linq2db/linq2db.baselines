@@ -86,25 +86,3 @@ FROM
 WHERE
 	[t].[PersonID] = @id
 
-BeforeExecute
--- Access AccessOleDb
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 5
-DECLARE @FirstName VarWChar(3) -- String
-SET     @FirstName = '123'
-DECLARE @LastName VarWChar(3) -- String
-SET     @LastName = '456'
-DECLARE @MiddleName VarWChar(3) -- String
-SET     @MiddleName = '789'
-DECLARE @Gender VarWChar(1) -- String
-SET     @Gender = 'M'
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = @PersonID AND
-	[t1].[FirstName] = @FirstName AND
-	[t1].[LastName] = @LastName AND
-	[t1].[MiddleName] = @MiddleName AND
-	[t1].[Gender] = @Gender
-

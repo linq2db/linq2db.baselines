@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [ProductTable]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [ProductTable]
 (
 	[Id]   Int           NOT NULL,
@@ -12,6 +17,11 @@ CREATE TABLE [ProductTable]
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [ProductAttributeTable]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [ProductAttributeTable]
 (
 	[Id]   Int           NOT NULL,
@@ -19,6 +29,11 @@ CREATE TABLE [ProductAttributeTable]
 
 	CONSTRAINT [PK_ProductAttributeTable] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [ProductAttributeMapping]
 
 BeforeExecute
 -- Access AccessOleDb
