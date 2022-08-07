@@ -107,8 +107,8 @@ FROM
 			al."AlertCode",
 			al."CreationDate"
 	) al_1
-		LEFT JOIN "Trade" trade1 ON al_1.alert = Cast(trade1."DealId" as VarChar(11))
-		LEFT JOIN "Nomin" nomin1 ON al_1.alert = Cast(nomin1."CargoId" as VarChar(11))
+		LEFT JOIN "Trade" trade1 ON al_1.alert = Cast(trade1."DealId" as text)
+		LEFT JOIN "Nomin" nomin1 ON al_1.alert = Cast(nomin1."CargoId" as text)
 WHERE
 	((nomin1."DeliveryCounterParty" LIKE :cpty ESCAPE '~' OR trade1."CounterParty" LIKE :cpty_1 ESCAPE '~') OR al_1.alert_1 LIKE :cpty_2 ESCAPE '~')
 GROUP BY
