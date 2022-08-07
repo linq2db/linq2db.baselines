@@ -1,19 +1,45 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "TestEqualsTable1"
-(
-	"Id" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestEqualsTable1')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TestEqualsTable1"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "TestEqualsTable2"
-(
-	"Id" Int NOT NULL,
-	FK   Int
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestEqualsTable1')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "TestEqualsTable1"
+			(
+				"Id" Int NOT NULL
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestEqualsTable2')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TestEqualsTable2"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestEqualsTable2')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "TestEqualsTable2"
+			(
+				"Id" Int NOT NULL,
+				FK   Int
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

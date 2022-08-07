@@ -78,11 +78,3 @@ FROM
 WHERE
 	"gc"."ParentID" = 1
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-DELETE FROM
-	"GrandChild" "t1"
-WHERE
-	"t1"."GrandChildID" IN (1001, 1002)
-

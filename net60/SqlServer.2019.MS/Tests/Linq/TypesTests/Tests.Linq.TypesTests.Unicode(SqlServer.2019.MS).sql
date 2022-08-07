@@ -1,31 +1,30 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'擊敗奴隸'
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N'Юникодкин'
+DECLARE @MiddleName NVarChar(4000) -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = N'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	N'擊敗奴隸',
-	N'Юникодкин',
-	N'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
-
-SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -42,13 +41,4 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] = N'擊敗奴隸' AND [p].[LastName] = N'Юникодкин'
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
 

@@ -50,25 +50,3 @@ WHERE
 	t."PersonID" = :id
 LIMIT :take
 
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 5
-DECLARE @FirstName Text(3) -- String
-SET     @FirstName = '123'
-DECLARE @LastName Text(3) -- String
-SET     @LastName = '456'
-DECLARE @MiddleName Text(3) -- String
-SET     @MiddleName = '789'
-DECLARE @Gender Text(1) -- String
-SET     @Gender = 'M'
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" = :PersonID AND
-	t1."FirstName" = :FirstName AND
-	t1."LastName" = :LastName AND
-	t1."MiddleName" = :MiddleName AND
-	t1."Gender" = :Gender
-

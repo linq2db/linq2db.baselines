@@ -1,13 +1,34 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Issue1403Tests_1"
-(
-	"event_id"          Int          NOT NULL,
-	"event_description" VarChar(255) NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1403Tests_1"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_Issue1403Tests_1" PRIMARY KEY ("event_id")
-)
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1403Tests_1"
+		(
+			"event_id"          Int          NOT NULL,
+			"event_description" VarChar(255) NOT NULL,
+
+			CONSTRAINT "PK_Issue1403Tests_1" PRIMARY KEY ("event_id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

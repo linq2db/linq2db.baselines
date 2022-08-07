@@ -192,6 +192,7 @@ SELECT TOP (@take)
 	Convert(NVarChar(4000), [x].[Prop_uint]),
 	Convert(NVarChar(4000), [x].[Prop_ulong]),
 	Convert(NVarChar(4000), [x].[Prop_Guid]),
+	Convert(NVarChar(4000), [x].[Prop_DateTime]),
 	Convert(NVarChar(1), [x].[NullableProp_bool]),
 	Convert(NVarChar(3), [x].[NullableProp_byte]),
 	Convert(NVarChar(4000), [x].[NullableProp_char]),
@@ -206,7 +207,6 @@ SELECT TOP (@take)
 	Convert(NVarChar(4000), [x].[NullableProp_uint]),
 	Convert(NVarChar(4000), [x].[NullableProp_ulong]),
 	Convert(NVarChar(4000), [x].[NullableProp_Guid]),
-	Convert(NVarChar(4000), [x].[Prop_DateTime]),
 	Convert(NVarChar(4000), [x].[NullableProp_DateTime])
 FROM
 	[ToStringConvertibleTypes] [x]
@@ -231,6 +231,7 @@ SELECT TOP (@take)
 	[x].[Prop_uint],
 	[x].[Prop_ulong],
 	[x].[Prop_Guid],
+	[x].[Prop_DateTime],
 	[x].[NullableProp_bool],
 	[x].[NullableProp_byte],
 	[x].[NullableProp_char],
@@ -245,8 +246,7 @@ SELECT TOP (@take)
 	[x].[NullableProp_uint],
 	[x].[NullableProp_ulong],
 	[x].[NullableProp_Guid],
-	Convert(NVarChar(4000), [x].[Prop_DateTime]),
-	Convert(NVarChar(4000), [x].[NullableProp_DateTime])
+	[x].[NullableProp_DateTime]
 FROM
 	[ToStringConvertibleTypes] [x]
 

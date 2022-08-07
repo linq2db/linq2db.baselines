@@ -37,7 +37,12 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "DestinationTable"
+DROP TABLE IF EXISTS "DestinationTable"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "DestinationTable"
 (
 	"Id"       Int  NOT NULL,
 	"Value"    Int  NOT NULL,

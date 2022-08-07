@@ -5,6 +5,14 @@ SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
 -- Firebird
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -12,13 +20,15 @@ INSERT INTO "Person"
 (
 	"FirstName",
 	"LastName",
+	"MiddleName",
 	"Gender"
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 RETURNING
 	"PersonID"
@@ -121,24 +131,4 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = @id
-
-BeforeExecute
--- Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	"Patient" "t1"
-WHERE
-	"t1"."PersonID" = @id
-
-BeforeExecute
--- Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" = @id
 

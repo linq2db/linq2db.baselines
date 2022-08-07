@@ -1,23 +1,35 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [Issue1096Task]
-(
-	[Id]         Int            NOT NULL,
-	[TargetName] NVarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [Issue1096Task]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [Issue1096TaskStage]
-(
-	[Id]     Int NOT NULL,
-	[TaskId] Int NOT NULL,
-	[Actual] Bit NOT NULL,
+IF (OBJECT_ID(N'[Issue1096Task]', N'U') IS NULL)
+	CREATE TABLE [Issue1096Task]
+	(
+		[Id]         Int            NOT NULL,
+		[TargetName] NVarChar(4000)     NULL
+	)
 
-	CONSTRAINT [PK_Issue1096TaskStage] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [Issue1096TaskStage]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue1096TaskStage]', N'U') IS NULL)
+	CREATE TABLE [Issue1096TaskStage]
+	(
+		[Id]     Int NOT NULL,
+		[TaskId] Int NOT NULL,
+		[Actual] Bit NOT NULL,
+
+		CONSTRAINT [PK_Issue1096TaskStage] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

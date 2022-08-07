@@ -44,11 +44,3 @@ FROM
 WHERE
 	[c_1].[FirstName] = 'Johnny' AND [c_1].[LastName] = 'Limonadovy'
 
-BeforeExecute
--- SQLite.Classic SQLite
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[LastName] = 'Limonadovy'
-

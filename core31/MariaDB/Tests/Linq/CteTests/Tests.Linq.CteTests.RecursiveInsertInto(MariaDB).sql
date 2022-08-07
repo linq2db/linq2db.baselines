@@ -43,7 +43,12 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `HierarchyData`
+DROP TABLE IF EXISTS `HierarchyData`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `HierarchyData`
 (
 	`Id`    INT NOT NULL,
 	`Level` INT NOT NULL

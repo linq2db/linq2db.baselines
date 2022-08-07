@@ -4,18 +4,20 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[DateTimeValue2],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[SmallIntValue],
-	[t1].[IntValue],
-	[t1].[BigIntValue],
-	[t1].[StringValue]
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 1
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -61,20 +63,24 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @ID Int -- Int32
+SET     @ID = 1
 
 SELECT TOP (@take)
-	[t1].[ID],
-	[t1].[MoneyValue],
-	[t1].[DateTimeValue],
-	[t1].[DateTimeValue2],
-	[t1].[BoolValue],
-	[t1].[GuidValue],
-	[t1].[SmallIntValue],
-	[t1].[IntValue],
-	[t1].[BigIntValue],
-	[t1].[StringValue]
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

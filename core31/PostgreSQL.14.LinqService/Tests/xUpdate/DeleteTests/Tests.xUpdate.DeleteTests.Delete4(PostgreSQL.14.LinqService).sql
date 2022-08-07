@@ -78,11 +78,3 @@ FROM
 WHERE
 	gc."ParentID" = 1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"GrandChild" t1
-WHERE
-	t1."GrandChildID" IN (1001, 1002)
-

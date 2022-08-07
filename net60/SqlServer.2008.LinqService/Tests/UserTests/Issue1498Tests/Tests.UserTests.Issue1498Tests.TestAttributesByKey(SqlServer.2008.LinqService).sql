@@ -1,22 +1,36 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Topic]
-(
-	[Id]    Int            NOT NULL,
-	[Title] NVarChar(4000)     NULL,
-	[Text]  NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Topic]', N'U') IS NOT NULL)
+	DROP TABLE [Topic]
 
 BeforeExecute
 -- SqlServer.2008
 
-CREATE TABLE [Message]
-(
-	[Id]      Int            NOT NULL,
-	[TopicId] Int            NOT NULL,
-	[Text]    NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Topic]', N'U') IS NULL)
+	CREATE TABLE [Topic]
+	(
+		[Id]    Int            NOT NULL,
+		[Title] NVarChar(4000)     NULL,
+		[Text]  NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Message]', N'U') IS NOT NULL)
+	DROP TABLE [Message]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[Message]', N'U') IS NULL)
+	CREATE TABLE [Message]
+	(
+		[Id]      Int            NOT NULL,
+		[TopicId] Int            NOT NULL,
+		[Text]    NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008

@@ -3,7 +3,12 @@ BeginTransaction
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE mega_composites
+DROP TABLE IF EXISTS mega_composites
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS mega_composites
 (
 	ref1 BigInt     NULL
 )
@@ -11,7 +16,12 @@ CREATE TABLE mega_composites
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE qwerty
+DROP TABLE IF EXISTS qwerty
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS qwerty
 (
 	"Id"   BigInt NOT NULL,
 	asdfgh text       NULL
@@ -119,6 +129,16 @@ FROM
 			LIMIT :take_1
 		) t1 ON 1=1
 LIMIT :take
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS qwerty
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS mega_composites
 
 BeforeExecute
 RollbackTransaction

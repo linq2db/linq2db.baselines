@@ -264,7 +264,7 @@ SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '3210-11-23'
+SET     @FieldDate = '2110-11-23'
 DECLARE @FieldEnumString NVarChar -- String
 SET     @FieldEnumString = ''
 DECLARE @FieldEnumNumber  -- Int32
@@ -338,7 +338,7 @@ SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '3210-11-23'
+SET     @FieldDate = '2111-11-23'
 DECLARE @FieldEnumString NVarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber  -- Int32
@@ -488,7 +488,7 @@ SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '3210-11-23'
+SET     @FieldDate = '2010-11-23'
 DECLARE @FieldEnumString NVarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber  -- Int32

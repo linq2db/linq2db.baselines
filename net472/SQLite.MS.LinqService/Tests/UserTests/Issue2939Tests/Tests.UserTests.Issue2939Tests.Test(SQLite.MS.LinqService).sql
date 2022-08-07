@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Adsl]
+DROP TABLE IF EXISTS [Adsl]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Adsl]
 (
 	[Id]       INTEGER NOT NULL,
 	[IdClient] INTEGER     NULL,
@@ -12,7 +17,12 @@ CREATE TABLE [Adsl]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Client]
+DROP TABLE IF EXISTS [Client]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Client]
 (
 	[Id] INTEGER NOT NULL,
 

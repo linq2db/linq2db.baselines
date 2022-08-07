@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Issue1438`
+DROP TABLE IF EXISTS `Issue1438`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1438`
 (
 	`Id`  INT     AUTO_INCREMENT NOT NULL,
 	`Has` BOOLEAN                NOT NULL,

@@ -8,6 +8,8 @@ SELECT
 	t1."ChildID"
 FROM
 	"Child" t1
+ORDER BY
+	t1."ChildID"
 OFFSET :skip 
 
 BeforeExecute
@@ -20,5 +22,7 @@ SELECT
 	t1."ChildID"
 FROM
 	"Child" t1
+ORDER BY
+	t1."ChildID"
 OFFSET :skip 
 

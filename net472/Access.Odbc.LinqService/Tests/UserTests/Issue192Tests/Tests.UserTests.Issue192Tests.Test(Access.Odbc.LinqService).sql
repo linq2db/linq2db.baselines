@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [TypeConvertTable]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [TypeConvertTable]
 (
 	[Name]      NVarChar(50) NOT NULL,

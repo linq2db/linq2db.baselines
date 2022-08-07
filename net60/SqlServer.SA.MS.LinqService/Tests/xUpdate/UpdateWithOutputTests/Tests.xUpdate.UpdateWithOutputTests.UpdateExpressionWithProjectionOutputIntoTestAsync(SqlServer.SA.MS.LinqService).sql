@@ -429,12 +429,18 @@ VALUES
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-CREATE TABLE [Destination]
-(
-	[Id]       Int          NOT NULL,
-	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
+DROP TABLE IF EXISTS [Destination]
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Destination]', N'U') IS NULL)
+	CREATE TABLE [Destination]
+	(
+		[Id]       Int          NOT NULL,
+		[Value]    Int          NOT NULL,
+		[ValueStr] NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

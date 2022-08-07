@@ -30,18 +30,28 @@ ALTER TABLE Doctor ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (Pers
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO Person
 (
 	FirstName,
 	LastName,
+	MiddleName,
 	Gender
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute

@@ -123,14 +123,3 @@ WHERE
 	`_`.`PersonID` = @ID
 LIMIT @take
 
-BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @ID Int32
-SET     @ID = 5
-
-DELETE   `x`
-FROM
-	`Person` `x`
-WHERE
-	`x`.`PersonID` = @ID
-

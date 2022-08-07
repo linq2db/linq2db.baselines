@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE "Task"
+DROP TABLE IF EXISTS "Task"
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS "Task"
 (
 	Id         Int           NOT NULL,
 	TargetName NVarChar(255)     NULL,
@@ -12,7 +17,12 @@ CREATE TABLE "Task"
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE TaskStage
+DROP TABLE IF EXISTS TaskStage
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS TaskStage
 (
 	Id     Int     NOT NULL,
 	TaskId Int     NOT NULL,

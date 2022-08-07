@@ -1,34 +1,52 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [Tag]
-(
-	[Id]   BigInt         NOT NULL,
-	[Name] NVarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [Tag]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [Tagging]
-(
-	[Id]           BigInt         NOT NULL,
-	[TagId]        Int            NOT NULL,
-	[TaggableId]   Int            NOT NULL,
-	[TaggableType] NVarChar(4000)     NULL,
-
-	CONSTRAINT [PK_Tagging] PRIMARY KEY CLUSTERED ([Id])
-)
+IF (OBJECT_ID(N'[Tag]', N'U') IS NULL)
+	CREATE TABLE [Tag]
+	(
+		[Id]   BigInt         NOT NULL,
+		[Name] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [Issue]
-(
-	[Id] Int NOT NULL,
+DROP TABLE IF EXISTS [Tagging]
 
-	CONSTRAINT [PK_Issue] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+IF (OBJECT_ID(N'[Tagging]', N'U') IS NULL)
+	CREATE TABLE [Tagging]
+	(
+		[Id]           BigInt         NOT NULL,
+		[TagId]        Int            NOT NULL,
+		[TaggableId]   Int            NOT NULL,
+		[TaggableType] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_Tagging] PRIMARY KEY CLUSTERED ([Id])
+	)
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+DROP TABLE IF EXISTS [Issue]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+IF (OBJECT_ID(N'[Issue]', N'U') IS NULL)
+	CREATE TABLE [Issue]
+	(
+		[Id] Int NOT NULL,
+
+		CONSTRAINT [PK_Issue] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

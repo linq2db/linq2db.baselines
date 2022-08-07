@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Account]
+DROP TABLE IF EXISTS [Account]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Account]
 (
 	[Id]     BigInt        NOT NULL,
 	[Number] NVarChar(255)     NULL,
@@ -13,7 +18,12 @@ CREATE TABLE [Account]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Transaction]
+DROP TABLE IF EXISTS [Transaction]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Transaction]
 (
 	[Id]              BigInt    NOT NULL,
 	[RequestId]       BigInt    NOT NULL,

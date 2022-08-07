@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "CreateTableTestClass"
+DROP TABLE IF EXISTS "CreateTableTestClass"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "CreateTableTestClass"
 (
 	"TimeOffset" TimeStampTZ NOT NULL,
 	"Guid"       uuid        NOT NULL

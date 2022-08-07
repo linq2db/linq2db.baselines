@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Issue1554FluentTable]
+DROP TABLE IF EXISTS [Issue1554FluentTable]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1554FluentTable]
 (
 	[Id]              INTEGER     NOT NULL,
 	[ClaimedKeyType]  NVarChar(3) NOT NULL,

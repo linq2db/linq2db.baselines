@@ -1,12 +1,25 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "AttributeBase"
-(
-	"Id" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AttributeBase')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "AttributeBase"';
+END
 
-	CONSTRAINT "PK_AttributeBase" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AttributeBase')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "AttributeBase"
+			(
+				"Id" Int NOT NULL,
+
+				CONSTRAINT "PK_AttributeBase" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

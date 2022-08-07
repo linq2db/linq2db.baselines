@@ -33,7 +33,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "DateOnlyTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,DATE '1900-01-01',1)
+	INTO "DateOnlyTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,DATE '1950-01-01',1)
 	INTO "DateOnlyTable" ("ColumnNullable", "Column", "Id") VALUES (DATE '2200-01-01',DATE '2020-02-29',2)
 SELECT * FROM dual
 
@@ -76,7 +76,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date
-SET     @Column_1 = TIMESTAMP '1900-01-01 00:00:00.000000'
+SET     @Column_1 = TIMESTAMP '1950-01-01 00:00:00.000000'
 DECLARE @Id Int32
 SET     @Id = 1
 
@@ -137,7 +137,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "DateOnlyTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,DATE '1900-01-01',1)
+	INTO "DateOnlyTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,DATE '1950-01-01',1)
 	INTO "DateOnlyTable" ("ColumnNullable", "Column", "Id") VALUES (DATE '2200-01-01',DATE '2020-02-29',2)
 SELECT * FROM dual
 
@@ -163,7 +163,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "DateOnlyTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,DATE '1900-01-01',1)
+	INTO "DateOnlyTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,DATE '1950-01-01',1)
 	INTO "DateOnlyTable" ("ColumnNullable", "Column", "Id") VALUES (DATE '2200-01-01',DATE '2020-02-29',2)
 SELECT * FROM dual
 

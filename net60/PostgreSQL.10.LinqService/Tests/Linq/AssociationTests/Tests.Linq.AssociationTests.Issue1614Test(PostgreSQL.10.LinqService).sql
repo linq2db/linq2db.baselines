@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "User"
+DROP TABLE IF EXISTS "User"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "User"
 (
 	"Id" Int NOT NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE "User"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Resource"
+DROP TABLE IF EXISTS "Resource"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Resource"
 (
 	"Id"                 Int NOT NULL,
 	"AssociatedObjectId" Int NOT NULL,
@@ -19,7 +29,12 @@ CREATE TABLE "Resource"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Lookup"
+DROP TABLE IF EXISTS "Lookup"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Lookup"
 (
 	"Id"   Int  NOT NULL,
 	"Type" text     NULL

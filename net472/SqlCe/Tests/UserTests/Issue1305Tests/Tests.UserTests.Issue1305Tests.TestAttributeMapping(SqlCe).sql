@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [ColumnOrderTest]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [ColumnOrderTest]
 (
 	[RecordID]       Int           NOT NULL,

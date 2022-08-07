@@ -73,11 +73,3 @@ FROM
 WHERE
 	[c_1].[ParentID] = 1
 
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] IN (1001, 1002)
-

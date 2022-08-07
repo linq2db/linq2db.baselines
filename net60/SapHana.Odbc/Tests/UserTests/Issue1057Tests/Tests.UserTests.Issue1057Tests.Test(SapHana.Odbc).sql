@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Task"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Task"
 (
 	"Id"         Integer       NOT NULL,
@@ -8,6 +13,11 @@ CREATE COLUMN TABLE "Task"
 
 	PRIMARY KEY ("Id")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "TaskStage"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

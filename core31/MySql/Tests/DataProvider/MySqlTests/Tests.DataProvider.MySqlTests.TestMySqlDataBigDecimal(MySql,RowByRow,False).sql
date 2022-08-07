@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `BigDecimalMySqlDataTable`
+DROP TABLE IF EXISTS `BigDecimalMySqlDataTable`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `BigDecimalMySqlDataTable`
 (
 	`Id`       INT             NOT NULL,
 	`Decimal`  decimal(65, 30) NOT NULL,

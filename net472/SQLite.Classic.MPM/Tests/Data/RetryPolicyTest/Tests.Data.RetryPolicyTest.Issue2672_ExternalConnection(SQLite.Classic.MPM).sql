@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 --  SQLite.Classic SQLite
 
-CREATE TABLE [MyEntity]
+DROP TABLE IF EXISTS [MyEntity]
+
+BeforeExecute
+--  SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [MyEntity]
 (
 	[Id]   BigInt        NOT NULL,
 	[Name] NVarChar(256) NOT NULL
@@ -15,7 +20,7 @@ DROP TABLE IF EXISTS [MyEntity]
 BeforeExecute
 --  SQLite.Classic SQLite
 
-CREATE TABLE [MyEntity]
+CREATE TABLE IF NOT EXISTS [MyEntity]
 (
 	[Id]   BigInt        NOT NULL,
 	[Name] NVarChar(256) NOT NULL

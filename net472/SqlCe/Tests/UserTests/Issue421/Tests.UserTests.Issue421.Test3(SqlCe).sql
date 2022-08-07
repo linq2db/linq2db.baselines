@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [BlobClass]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [BlobClass]
 (
 	[Id]        Int            NOT NULL,

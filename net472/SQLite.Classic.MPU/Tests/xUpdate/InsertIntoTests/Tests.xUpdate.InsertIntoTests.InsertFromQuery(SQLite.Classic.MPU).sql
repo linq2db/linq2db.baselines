@@ -27,7 +27,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [InsertTestClassDest]
+DROP TABLE IF EXISTS [InsertTestClassDest]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [InsertTestClassDest]
 (
 	[Id]         INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[Value]      INTEGER  NOT NULL,

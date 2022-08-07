@@ -42,11 +42,3 @@ WHERE
 	"t"."ParentID" = 1010
 FETCH FIRST 1 ROWS ONLY
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" >= 1000
-

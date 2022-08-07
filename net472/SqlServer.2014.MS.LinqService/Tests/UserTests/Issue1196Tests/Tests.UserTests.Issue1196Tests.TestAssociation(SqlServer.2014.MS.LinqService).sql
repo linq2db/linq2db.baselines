@@ -1,32 +1,53 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-CREATE TABLE [Requests]
-(
-	[Id]     Int NOT NULL,
-	[FirmId] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Requests]', N'U') IS NOT NULL)
+	DROP TABLE [Requests]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-CREATE TABLE [FirmInfo]
-(
-	[Id] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Requests]', N'U') IS NULL)
+	CREATE TABLE [Requests]
+	(
+		[Id]     Int NOT NULL,
+		[FirmId] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-CREATE TABLE [Assignments]
-(
-	[Id]          Int               NOT NULL IDENTITY,
-	[DirectionId] UniqueIdentifier  NOT NULL,
-	[TargetId]    Int                   NULL,
-	[DateRevoke]  DateTime2             NULL,
+IF (OBJECT_ID(N'[FirmInfo]', N'U') IS NOT NULL)
+	DROP TABLE [FirmInfo]
 
-	CONSTRAINT [PK_Assignments] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+IF (OBJECT_ID(N'[FirmInfo]', N'U') IS NULL)
+	CREATE TABLE [FirmInfo]
+	(
+		[Id] Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+IF (OBJECT_ID(N'[Assignments]', N'U') IS NOT NULL)
+	DROP TABLE [Assignments]
+
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+IF (OBJECT_ID(N'[Assignments]', N'U') IS NULL)
+	CREATE TABLE [Assignments]
+	(
+		[Id]          Int               NOT NULL IDENTITY,
+		[DirectionId] UniqueIdentifier  NOT NULL,
+		[TargetId]    Int                   NULL,
+		[DateRevoke]  DateTime2             NULL,
+
+		CONSTRAINT [PK_Assignments] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

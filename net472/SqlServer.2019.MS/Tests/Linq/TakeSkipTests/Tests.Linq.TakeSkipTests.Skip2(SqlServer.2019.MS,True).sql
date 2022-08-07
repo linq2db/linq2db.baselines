@@ -11,6 +11,7 @@ FROM
 WHERE
 	([ch].[ChildID] > 3 OR [ch].[ChildID] < 4)
 ORDER BY
-	1
+	[ch].[ParentID],
+	[ch].[ChildID]
 OFFSET @skip ROWS
 

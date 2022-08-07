@@ -48,16 +48,5 @@ SELECT TOP (@take)
 FROM
 	[Person] [p2]
 WHERE
-	[p2].[PersonID] > @id
-
-BeforeExecute
--- SqlServer.2016
-DECLARE @id Int -- Int32
-SET     @id = 4
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > @id
+	([p2].[PersonID] > @id OR [p2].[PersonID] = 0)
 

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE ProductTable
+DROP TABLE IF EXISTS ProductTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS ProductTable
 (
 	Id   Int           NOT NULL,
 	Name NVarChar(255) NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE ProductTable
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE ProductAttributeTable
+DROP TABLE IF EXISTS ProductAttributeTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS ProductAttributeTable
 (
 	Id   Int           NOT NULL,
 	Name NVarChar(255) NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE ProductAttributeTable
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE ProductAttributeMapping
+DROP TABLE IF EXISTS ProductAttributeMapping
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS ProductAttributeMapping
 (
 	ProductId          Int NOT NULL,
 	ProductAttributeId Int NOT NULL,

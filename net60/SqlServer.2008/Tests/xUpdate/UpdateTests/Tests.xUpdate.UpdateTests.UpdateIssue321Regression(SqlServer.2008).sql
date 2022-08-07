@@ -78,14 +78,3 @@ FROM
 WHERE
 	[_].[ID] = @id
 
-BeforeExecute
--- SqlServer.2008
-DECLARE @id Int -- Int32
-SET     @id = 100500
-
-DELETE [t1]
-FROM
-	[LinqDataTypes] [t1]
-WHERE
-	[t1].[ID] = @id
-

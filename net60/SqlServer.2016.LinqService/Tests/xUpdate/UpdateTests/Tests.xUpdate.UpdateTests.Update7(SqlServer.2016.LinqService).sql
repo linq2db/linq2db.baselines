@@ -1,14 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2016
-
-DELETE [t1]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] > 1000
-
-BeforeExecute
--- SqlServer.2016
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
 DECLARE @ParentID Int -- Int32
@@ -92,13 +83,4 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 3
-
-BeforeExecute
--- SqlServer.2016
-
-DELETE [t1]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] > 1000
 

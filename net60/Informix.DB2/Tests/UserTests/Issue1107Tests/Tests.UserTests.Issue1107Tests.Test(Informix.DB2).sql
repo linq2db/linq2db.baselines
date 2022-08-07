@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Issue1107TB
+DROP TABLE IF EXISTS Issue1107TB
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Issue1107TB
 (
 	Id       Int                       NOT NULL,
 	TestDate datetime year to fraction NOT NULL,

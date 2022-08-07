@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `TypeConvertTable`
+DROP TABLE IF EXISTS `TypeConvertTable`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TypeConvertTable`
 (
 	`Name`      VARCHAR(50) NOT NULL,
 	`BoolValue` CHAR(255)   NOT NULL,

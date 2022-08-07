@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [PR_1598_Update_Fluent_Table]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [PR_1598_Update_Fluent_Table]
 (
 	[Id]   Int           NOT NULL,

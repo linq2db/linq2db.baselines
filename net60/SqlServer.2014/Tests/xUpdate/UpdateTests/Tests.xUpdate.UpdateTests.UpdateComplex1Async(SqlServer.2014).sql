@@ -4,16 +4,7 @@
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2014 (asynchronously)
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
-
-BeforeExecute
--- SqlServer.2014 (asynchronously)
+-- SqlServer.2014
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -100,13 +91,4 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = @id
-
-BeforeExecute
--- SqlServer.2014 (asynchronously)
-
-DELETE [_]
-FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 

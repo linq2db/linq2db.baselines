@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Alert]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Alert]
 (
 	[AlertKey]     NVarChar(255)     NULL,
 	[AlertCode]    NVarChar(255)     NULL,
 	[CreationDate] DateTime          NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [AuditAlert]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -22,6 +32,11 @@ CREATE TABLE [AuditAlert]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Trade]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Trade]
 (
 	[DealId]       Int           NOT NULL,
@@ -32,12 +47,22 @@ CREATE TABLE [Trade]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Nomin]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Nomin]
 (
 	[CargoId]              Int           NOT NULL,
 	[DeliveryId]           Int           NOT NULL,
 	[DeliveryCounterParty] NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Flat]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

@@ -4,15 +4,7 @@
 ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -99,12 +91,4 @@ FROM
 WHERE
 	"_"."PersonID" = @id
 FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
-
-DELETE FROM
-	"Person" "_"
-WHERE
-	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "FluentMapping"
+DROP TABLE IF EXISTS "FluentMapping"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "FluentMapping"
 (
 	"RecordID"       Int       NOT NULL,
 	"EffectiveStart" TimeStamp NOT NULL,

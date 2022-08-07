@@ -1,11 +1,21 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Issue1096Task"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Issue1096Task"
 (
 	"Id"         Integer       NOT NULL,
 	"TargetName" NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Issue1096TaskStage"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

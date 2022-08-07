@@ -1,12 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [TypeConvertTable]
-(
-	[Name]      NVarChar(50) NOT NULL,
-	[BoolValue] Char         NOT NULL,
-	[GuidValue] VarChar(50)      NULL
-)
+DROP TABLE IF EXISTS [TypeConvertTable]
+
+BeforeExecute
+-- SqlServer.2016
+
+IF (OBJECT_ID(N'[TypeConvertTable]', N'U') IS NULL)
+	CREATE TABLE [TypeConvertTable]
+	(
+		[Name]      NVarChar(50) NOT NULL,
+		[BoolValue] Char         NOT NULL,
+		[GuidValue] VarChar(50)      NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016

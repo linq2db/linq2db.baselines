@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Condos]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Condos]
 (
 	[Id]         Int NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE [Condos]
 
 	CONSTRAINT [PK_Condos] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [CategoryCondos]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -23,6 +33,11 @@ CREATE TABLE [CategoryCondos]
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [CondoTags]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [CondoTags]
 (
 	[CondoId] Int NOT NULL,
@@ -30,6 +45,11 @@ CREATE TABLE [CondoTags]
 
 	CONSTRAINT [PK_CondoTags] PRIMARY KEY CLUSTERED ([CondoId], [TagId])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Locations]
 
 BeforeExecute
 -- Access AccessOleDb

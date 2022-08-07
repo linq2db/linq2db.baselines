@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [ColumnOrderTest]
+DROP TABLE IF EXISTS [ColumnOrderTest]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ColumnOrderTest]
 (
 	[RecordID]       INTEGER       NOT NULL,
 	[EffectiveStart] DateTime2     NOT NULL,

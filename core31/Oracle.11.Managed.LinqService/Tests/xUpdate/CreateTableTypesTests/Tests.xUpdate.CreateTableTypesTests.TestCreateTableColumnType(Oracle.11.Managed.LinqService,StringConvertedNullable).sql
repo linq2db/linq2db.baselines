@@ -1,11 +1,32 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "CreateTableTypes"
-(
-	"Id"              Int            NOT NULL,
-	"StringConverted" VarChar2(4000)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "CreateTableTypes"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CreateTableTypes"
+		(
+			"Id"              Int            NOT NULL,
+			"StringConverted" VarChar2(4000)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

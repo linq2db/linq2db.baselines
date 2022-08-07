@@ -62,12 +62,3 @@ FROM
 WHERE
 	[c_1].[ChildID] = @ChildID
 
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Child]
-FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] > 1000
-

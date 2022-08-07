@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "ProductTable"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "ProductTable"
 (
 	"Id"   Integer       NOT NULL,
@@ -12,6 +17,11 @@ CREATE COLUMN TABLE "ProductTable"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "ProductAttributeTable"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "ProductAttributeTable"
 (
 	"Id"   Integer       NOT NULL,
@@ -19,6 +29,11 @@ CREATE COLUMN TABLE "ProductAttributeTable"
 
 	PRIMARY KEY ("Id")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "ProductAttributeMapping"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

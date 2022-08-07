@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "CreateTableTypes"
+DROP TABLE IF EXISTS "CreateTableTypes"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "CreateTableTypes"
 (
 	"StringConverted" VarChar     NULL,
 	"Id"              Int     NOT NULL

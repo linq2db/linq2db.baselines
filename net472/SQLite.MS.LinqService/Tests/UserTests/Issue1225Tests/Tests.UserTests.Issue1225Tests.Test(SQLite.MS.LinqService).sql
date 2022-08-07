@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Task]
+DROP TABLE IF EXISTS [Task]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Task]
 (
 	[Id] INTEGER NOT NULL,
 
@@ -11,7 +16,12 @@ CREATE TABLE [Task]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [TaskStage]
+DROP TABLE IF EXISTS [TaskStage]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [TaskStage]
 (
 	[Id]     INTEGER NOT NULL,
 	[TaskId] INTEGER NOT NULL,

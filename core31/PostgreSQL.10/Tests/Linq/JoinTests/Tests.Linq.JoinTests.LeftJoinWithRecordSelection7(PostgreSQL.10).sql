@@ -69,6 +69,8 @@ FROM
 		LEFT JOIN "Tag" tag_1 ON tag_1."FactId" = fact_1."Id"
 WHERE
 	fact_1."Id" > 3
+ORDER BY
+	fact_1."Id"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

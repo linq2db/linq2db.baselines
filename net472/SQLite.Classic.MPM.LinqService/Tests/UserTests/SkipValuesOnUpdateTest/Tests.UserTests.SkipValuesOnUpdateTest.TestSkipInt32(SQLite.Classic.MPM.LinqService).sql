@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [PR_1598_Update_Table]
+DROP TABLE IF EXISTS [PR_1598_Update_Table]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [PR_1598_Update_Table]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Name] NVarChar(255)     NULL,

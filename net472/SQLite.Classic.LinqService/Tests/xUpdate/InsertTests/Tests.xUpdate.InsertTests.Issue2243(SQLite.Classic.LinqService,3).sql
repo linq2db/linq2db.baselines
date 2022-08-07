@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [test_insert_or_replace]
+DROP TABLE IF EXISTS [test_insert_or_replace]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [test_insert_or_replace]
 (
 	[id]         INTEGER       NOT NULL,
 	[name]       NVarChar(255)     NULL,

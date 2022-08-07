@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Condos"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Condos"
 (
 	"Id"         Integer NOT NULL,
@@ -8,6 +13,11 @@ CREATE COLUMN TABLE "Condos"
 
 	PRIMARY KEY ("Id")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "CategoryCondos"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -23,6 +33,11 @@ CREATE COLUMN TABLE "CategoryCondos"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "CondoTags"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "CondoTags"
 (
 	"CondoId" Integer NOT NULL,
@@ -30,6 +45,11 @@ CREATE COLUMN TABLE "CondoTags"
 
 	PRIMARY KEY ("CondoId", "TagId")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Locations"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

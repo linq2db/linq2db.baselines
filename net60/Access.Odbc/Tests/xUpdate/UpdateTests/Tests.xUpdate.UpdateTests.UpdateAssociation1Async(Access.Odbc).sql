@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
-DELETE FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] = 10000
-
-BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
-
-DELETE FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] = 20000
-
-BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -52,20 +36,4 @@ SET
 	[t1].[Value1] = 5
 WHERE
 	[a_Parent].[ChildID] = 10000
-
-BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
-
-DELETE FROM
-	[Child] [t1]
-WHERE
-	[t1].[ChildID] = 10000
-
-BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
-
-DELETE FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] = 20000
 

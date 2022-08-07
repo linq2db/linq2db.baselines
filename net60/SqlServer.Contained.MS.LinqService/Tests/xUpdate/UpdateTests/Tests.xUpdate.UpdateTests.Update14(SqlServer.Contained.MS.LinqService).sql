@@ -50,12 +50,3 @@ FROM
 WHERE
 	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DELETE [_]
-FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
-

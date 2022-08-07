@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Emails]
+DROP TABLE IF EXISTS [Emails]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Emails]
 (
 	[Id] INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT
 )
@@ -9,7 +14,12 @@ CREATE TABLE [Emails]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [EmailAttachment]
+DROP TABLE IF EXISTS [EmailAttachment]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [EmailAttachment]
 (
 	[Id]       INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[EmailId]  INTEGER        NOT NULL,

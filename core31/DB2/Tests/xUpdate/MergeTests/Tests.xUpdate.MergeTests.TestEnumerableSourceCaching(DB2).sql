@@ -1,13 +1,26 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "CacheTestTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "CacheTestTable"';
+END
 
-	CONSTRAINT "PK_CacheTestTable" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CacheTestTable"
+		(
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL,
+
+			CONSTRAINT "PK_CacheTestTable" PRIMARY KEY ("Id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -10,5 +10,7 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" > 1
+ORDER BY
+	p."ParentID"
 OFFSET :n ROWS FETCH NEXT 1 ROWS ONLY 
 

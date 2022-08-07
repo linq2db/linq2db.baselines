@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [TypeConvertTable]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [TypeConvertTable]
 (
 	[Name]      NVarChar(50) NOT NULL,

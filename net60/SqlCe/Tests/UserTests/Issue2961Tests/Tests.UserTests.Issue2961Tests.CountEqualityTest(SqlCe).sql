@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Condos]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Condos]
 (
 	[Id]         Int NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE [Condos]
 
 	CONSTRAINT [PK_Condos] PRIMARY KEY ([Id])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [CategoryCondos]
 
 BeforeExecute
 -- SqlCe
@@ -23,6 +33,11 @@ CREATE TABLE [CategoryCondos]
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [CondoTags]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [CondoTags]
 (
 	[CondoId] Int NOT NULL,
@@ -30,6 +45,11 @@ CREATE TABLE [CondoTags]
 
 	CONSTRAINT [PK_CondoTags] PRIMARY KEY ([CondoId], [TagId])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Locations]
 
 BeforeExecute
 -- SqlCe

@@ -9,7 +9,6 @@ SELECT
 FROM
 	[Child] [t1]
 ORDER BY
-	[t1].[ParentID],
 	[t1].[ChildID]
 OFFSET @n ROWS
 

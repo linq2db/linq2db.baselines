@@ -1,16 +1,55 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "CustomerBase"
-(
-	"Id"           Int           NOT NULL,
-	"ClientType"   VarChar(6)    NOT NULL,
-	"Name"         VarChar(255)      NULL,
-	"ContactEmail" VarChar(255)      NULL,
-	"Enabled"      Char(1)           NULL,
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_CustomerBase"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_CustomerBase"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "CustomerBase"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
 
-	CONSTRAINT "PK_CustomerBase" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CustomerBase"
+		(
+			"Id"           Int           NOT NULL,
+			"ClientType"   VarChar(6)    NOT NULL,
+			"Name"         VarChar(255)      NULL,
+			"ContactEmail" VarChar(255)      NULL,
+			"Enabled"      Char(1)           NULL,
+
+			CONSTRAINT "PK_CustomerBase" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

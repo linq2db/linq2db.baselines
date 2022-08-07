@@ -4,7 +4,7 @@
 ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(13) -- String

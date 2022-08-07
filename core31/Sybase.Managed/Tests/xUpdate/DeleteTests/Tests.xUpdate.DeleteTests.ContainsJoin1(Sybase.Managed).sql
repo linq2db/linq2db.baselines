@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-DELETE FROM [Child]
-FROM
-	[Child] [t1]
-WHERE
-	[t1].[ParentID] >= 1000
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Parent]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] >= 1000
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Integer -- Int32
@@ -111,22 +93,4 @@ FROM
 		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
 WHERE
 	[c_1].[ParentID] = @id AND [c_1].[ChildID] NOT IN (1002)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Child]
-FROM
-	[Child] [t1]
-WHERE
-	[t1].[ParentID] >= 1000
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Parent]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] >= 1000
 

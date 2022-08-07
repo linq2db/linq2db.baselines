@@ -139,13 +139,3 @@ FROM
 WHERE
 	t1.PersonID = @ID
 
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 5
-
-DELETE FROM
-	Person
-WHERE
-	Person.PersonID = @ID
-

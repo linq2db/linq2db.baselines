@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [User]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [User]
 (
 	[city]            NVarChar(255)     NULL,

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Issue1554FluentTable`
+DROP TABLE IF EXISTS `Issue1554FluentTable`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1554FluentTable`
 (
 	`Id`              INT        NOT NULL,
 	`ClaimedKeyType`  VARCHAR(3) NOT NULL,

@@ -1,10 +1,20 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [TestEqualsTable1]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [TestEqualsTable1]
 (
 	[Id] Int NOT NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [TestEqualsTable2]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

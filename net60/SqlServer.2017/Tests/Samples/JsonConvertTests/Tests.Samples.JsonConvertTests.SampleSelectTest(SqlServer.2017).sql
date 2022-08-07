@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [SampleClass]
-(
-	[Id]   Int           NOT NULL,
-	[Data] VarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
+	CREATE TABLE [SampleClass]
+	(
+		[Id]   Int           NOT NULL,
+		[Data] VarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2017

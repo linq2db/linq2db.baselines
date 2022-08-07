@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [TableToInsert]
+DROP TABLE IF EXISTS [TableToInsert]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [TableToInsert]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,

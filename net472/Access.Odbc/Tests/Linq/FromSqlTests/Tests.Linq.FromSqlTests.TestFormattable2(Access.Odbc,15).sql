@@ -388,6 +388,8 @@ FROM
 	) [c_1]
 WHERE
 	[c_1].[id] > 10
+ORDER BY
+	[c_1].[id]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -403,6 +405,8 @@ FROM
 	[sample_class] [t]
 WHERE
 	[t].[id] >= ? AND [t].[id] < ? AND [t].[id] > 10
+ORDER BY
+	[t].[id]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

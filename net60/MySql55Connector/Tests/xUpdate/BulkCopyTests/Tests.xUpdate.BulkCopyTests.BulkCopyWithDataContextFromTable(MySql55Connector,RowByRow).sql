@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `SimpleBulkCopyTable`
+DROP TABLE IF EXISTS `SimpleBulkCopyTable`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `SimpleBulkCopyTable`
 (
 	`Id` INT NOT NULL
 )

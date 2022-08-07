@@ -5,18 +5,28 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender String(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
 	`FirstName`,
 	`LastName`,
+	`MiddleName`,
 	`Gender`
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
@@ -97,26 +107,4 @@ FROM
 WHERE
 	`p`.`PersonID` = @id
 LIMIT @take
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE   `t1`
-FROM
-	`Patient` `t1`
-WHERE
-	`t1`.`PersonID` = @id
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`PersonID` = @id
 

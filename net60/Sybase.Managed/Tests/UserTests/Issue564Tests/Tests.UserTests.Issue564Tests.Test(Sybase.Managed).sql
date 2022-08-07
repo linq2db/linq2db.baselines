@@ -1,15 +1,24 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Parent564]
-(
-	[Id]          Int           IDENTITY NOT NULL,
-	[Type]        NVarChar(255)              NULL,
-	[StringValue] NVarChar(20)               NULL,
-	[IntValue]    Int                        NULL,
+IF (OBJECT_ID(N'Parent564') IS NOT NULL)
+	DROP TABLE [Parent564]
 
-	CONSTRAINT [PK_Parent564] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Parent564') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Parent564]
+		(
+			[Id]          Int           IDENTITY NOT NULL,
+			[Type]        NVarChar(255)              NULL,
+			[StringValue] NVarChar(20)               NULL,
+			[IntValue]    Int                        NULL,
+
+			CONSTRAINT [PK_Parent564] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

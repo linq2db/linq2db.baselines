@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] > 1000
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Value1  -- Int32
 SET     @Value1 = 1
 DECLARE @ParentID  -- Int32
@@ -87,12 +79,4 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 3
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] > 1000
 

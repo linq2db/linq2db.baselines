@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE ReviewIndexes
+DROP TABLE IF EXISTS ReviewIndexes
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS ReviewIndexes
 (
 	Id      Int           NOT NULL,
 	"Value" NVarChar(255)     NULL,

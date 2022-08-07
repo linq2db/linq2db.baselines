@@ -377,12 +377,19 @@ VALUES
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [sample_other_class]
-(
-	[id]        Int          NOT NULL,
-	[parent_id] Int          NOT NULL,
-	[value]     NVarChar(50)     NULL
-)
+IF (OBJECT_ID(N'[sample_other_class]', N'U') IS NOT NULL)
+	DROP TABLE [sample_other_class]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[sample_other_class]', N'U') IS NULL)
+	CREATE TABLE [sample_other_class]
+	(
+		[id]        Int          NOT NULL,
+		[parent_id] Int          NOT NULL,
+		[value]     NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -791,12 +798,19 @@ VALUES
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [sample_other_class]
-(
-	[id]        Int          NOT NULL,
-	[parent_id] Int          NOT NULL,
-	[value]     NVarChar(50)     NULL
-)
+IF (OBJECT_ID(N'[sample_other_class]', N'U') IS NOT NULL)
+	DROP TABLE [sample_other_class]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[sample_other_class]', N'U') IS NULL)
+	CREATE TABLE [sample_other_class]
+	(
+		[id]        Int          NOT NULL,
+		[parent_id] Int          NOT NULL,
+		[value]     NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

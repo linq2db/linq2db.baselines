@@ -1,12 +1,25 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "TableWithDataAndSchema"
-(
-	"Id"       Int                                   NOT NULL,
-	"Value"    Int                                   NOT NULL,
-	"ValueStr" VarChar(50) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithDataAndSchema')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TableWithDataAndSchema"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithDataAndSchema')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "TableWithDataAndSchema"
+			(
+				"Id"       Int                                   NOT NULL,
+				"Value"    Int                                   NOT NULL,
+				"ValueStr" VarChar(50) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird

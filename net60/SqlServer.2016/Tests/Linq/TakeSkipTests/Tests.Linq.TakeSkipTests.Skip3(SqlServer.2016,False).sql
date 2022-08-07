@@ -9,6 +9,7 @@ FROM
 WHERE
 	[ch].[ChildID] >= 0 AND [ch].[ChildID] <= 100
 ORDER BY
-	1
+	[ch].[ParentID],
+	[ch].[ChildID]
 OFFSET 3 ROWS
 

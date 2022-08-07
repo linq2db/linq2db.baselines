@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [PR_1598_Insert_Enum_Table]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [PR_1598_Insert_Enum_Table]
 (
 	[Id]     Int           NOT NULL,

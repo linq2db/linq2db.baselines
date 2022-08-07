@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Topic]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Topic]
 (
 	[Id]    Int           NOT NULL,
 	[Title] NVarChar(255)     NULL,
 	[Text]  NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Message]
 
 BeforeExecute
 -- Access AccessOleDb

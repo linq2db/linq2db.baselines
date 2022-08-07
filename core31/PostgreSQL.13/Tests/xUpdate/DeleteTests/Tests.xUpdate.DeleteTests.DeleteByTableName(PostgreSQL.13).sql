@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "xxPerson"
+DROP TABLE IF EXISTS "xxPerson"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "xxPerson"
 (
 	"FirstName"  text     NOT NULL,
 	"PersonID"   SERIAL   NOT NULL,

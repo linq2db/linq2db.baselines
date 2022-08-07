@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [TestInsertOrReplaceTable]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [TestInsertOrReplaceTable]
 (
 	[ID]         Int           NOT NULL,

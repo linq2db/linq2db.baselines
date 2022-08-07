@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `CustomerBase`
+DROP TABLE IF EXISTS `CustomerBase`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `CustomerBase`
 (
 	`Id`           INT           AUTO_INCREMENT NOT NULL,
 	`ClientType`   CHAR(6)                      NOT NULL,

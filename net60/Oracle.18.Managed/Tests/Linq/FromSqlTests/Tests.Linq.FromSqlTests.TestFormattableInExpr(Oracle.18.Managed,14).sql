@@ -71,6 +71,8 @@ FROM
 		) s ON s."id" = c_1."id"
 WHERE
 	s."id" > 10
+ORDER BY
+	s."id"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -86,6 +88,8 @@ FROM
 	"sample_class" t
 WHERE
 	t."id" >= :startId AND t."id" < :endId AND t."id" > 10
+ORDER BY
+	t."id"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

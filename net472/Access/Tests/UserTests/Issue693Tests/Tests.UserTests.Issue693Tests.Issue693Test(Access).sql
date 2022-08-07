@@ -25,14 +25,6 @@ ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENC
 
 BeforeExecute
 -- Access AccessOleDb
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
-
-BeforeExecute
--- Access AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarWChar(1) -- String
@@ -124,12 +116,4 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = @id2
-
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
 

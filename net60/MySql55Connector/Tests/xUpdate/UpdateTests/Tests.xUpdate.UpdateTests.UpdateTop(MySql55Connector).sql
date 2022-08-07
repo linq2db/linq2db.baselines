@@ -1,14 +1,5 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` >= 1000
-
-BeforeExecute
--- MySql55Connector MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int32
@@ -201,13 +192,4 @@ SET
 WHERE
 	`p`.`ParentID` >= 1000
 LIMIT @take
-
-BeforeExecute
--- MySql55Connector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` >= 1000
 

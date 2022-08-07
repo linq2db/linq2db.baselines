@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Topic
+DROP TABLE IF EXISTS Topic
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Topic
 (
 	Id    Int           NOT NULL,
 	Title NVarChar(255)     NULL,
@@ -11,7 +16,12 @@ CREATE TABLE Topic
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Message
+DROP TABLE IF EXISTS Message
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Message
 (
 	Id      Int           NOT NULL,
 	TopicId Int           NOT NULL,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [VEMPLOYEE_SCH_SEC]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [VEMPLOYEE_SCH_SEC]
 (
 	[ACTIVE] Bit           NOT NULL,
@@ -9,6 +14,11 @@ CREATE TABLE [VEMPLOYEE_SCH_SEC]
 
 	CONSTRAINT [PK_VEMPLOYEE_SCH_SEC] PRIMARY KEY CLUSTERED ([ID])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [VEMPLOYEE_SCHDL_PERM]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

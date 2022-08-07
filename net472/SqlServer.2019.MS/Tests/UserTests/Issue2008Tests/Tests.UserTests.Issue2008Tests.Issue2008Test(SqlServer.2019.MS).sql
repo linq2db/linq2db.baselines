@@ -1,29 +1,47 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-CREATE TABLE [Table1]
-(
-	[Id_1]        Int NOT NULL,
-	[Description] Int NOT NULL
-)
+DROP TABLE IF EXISTS [Table1]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-CREATE TABLE [Table2]
-(
-	[Id_2]        Int NOT NULL,
-	[Description] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Table1]', N'U') IS NULL)
+	CREATE TABLE [Table1]
+	(
+		[Id_1]        Int NOT NULL,
+		[Description] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-CREATE TABLE [Table3]
-(
-	[Id_3]        Int NOT NULL,
-	[Description] Int NOT NULL
-)
+DROP TABLE IF EXISTS [Table2]
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Table2]', N'U') IS NULL)
+	CREATE TABLE [Table2]
+	(
+		[Id_2]        Int NOT NULL,
+		[Description] Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [Table3]
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Table3]', N'U') IS NULL)
+	CREATE TABLE [Table3]
+	(
+		[Id_3]        Int NOT NULL,
+		[Description] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

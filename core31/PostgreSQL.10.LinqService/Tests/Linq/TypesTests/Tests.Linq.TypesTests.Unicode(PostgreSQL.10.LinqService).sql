@@ -1,28 +1,28 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" > 4
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @FirstName Text(4) -- String
+SET     @FirstName = '擊敗奴隸'
+DECLARE @LastName Text(9) -- String
+SET     @LastName = 'Юникодкин'
+DECLARE @MiddleName Text -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
 	"LastName",
+	"MiddleName",
 	"Gender"
 )
 VALUES
 (
-	'擊敗奴隸',
-	'Юникодкин',
-	'M'
+	:FirstName,
+	:LastName,
+	:MiddleName,
+	:Gender
 )
-RETURNING 
-	"PersonID"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -40,12 +40,4 @@ FROM
 WHERE
 	p."FirstName" = '擊敗奴隸' AND p."LastName" = 'Юникодкин'
 LIMIT :take
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" > 4
 

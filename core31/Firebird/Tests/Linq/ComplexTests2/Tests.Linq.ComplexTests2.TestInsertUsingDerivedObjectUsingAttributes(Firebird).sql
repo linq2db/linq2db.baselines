@@ -98,11 +98,3 @@ DELETE FROM
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
--- Firebird
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."FirstName" = 'test_inherited_insert'
-

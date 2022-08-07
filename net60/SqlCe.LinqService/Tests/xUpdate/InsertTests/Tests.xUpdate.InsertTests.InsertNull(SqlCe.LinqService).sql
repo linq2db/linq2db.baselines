@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] = 1001
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -29,12 +21,4 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = 1001
-
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[Value1] = 1001
 

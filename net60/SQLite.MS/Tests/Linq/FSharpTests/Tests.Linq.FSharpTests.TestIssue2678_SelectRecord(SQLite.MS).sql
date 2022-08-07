@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [R]
+DROP TABLE IF EXISTS [R]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [R]
 (
 	[MetadataVersion] INTEGER NOT NULL,
 	[DictionaryKey]   INTEGER NOT NULL,

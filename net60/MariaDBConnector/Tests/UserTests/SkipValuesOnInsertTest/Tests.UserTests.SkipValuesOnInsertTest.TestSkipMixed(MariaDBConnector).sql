@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `PR_1598_Mixed_Table`
+DROP TABLE IF EXISTS `PR_1598_Mixed_Table`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `PR_1598_Mixed_Table`
 (
 	`Id`   INT           NOT NULL,
 	`Name` VARCHAR(4000)     NULL,

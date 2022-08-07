@@ -60,13 +60,3 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1001
-
-DELETE FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] = @ParentID
-

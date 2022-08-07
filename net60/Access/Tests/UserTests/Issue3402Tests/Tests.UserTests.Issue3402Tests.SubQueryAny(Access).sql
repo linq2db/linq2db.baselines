@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [VEMPLOYEE_SCH_SEC]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [VEMPLOYEE_SCH_SEC]
 (
 	[ACTIVE] Bit           NOT NULL,
@@ -9,6 +14,11 @@ CREATE TABLE [VEMPLOYEE_SCH_SEC]
 
 	CONSTRAINT [PK_VEMPLOYEE_SCH_SEC] PRIMARY KEY CLUSTERED ([ID])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [VEMPLOYEE_SCHDL_PERM]
 
 BeforeExecute
 -- Access AccessOleDb

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Parent564]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Parent564]
 (
 	[Id]          Int            NOT NULL IDENTITY,

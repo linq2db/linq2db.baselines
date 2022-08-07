@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE FluentMapping
+DROP TABLE IF EXISTS FluentMapping
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS FluentMapping
 (
 	RecordID       Int                       NOT NULL,
 	EffectiveStart datetime year to fraction NOT NULL,

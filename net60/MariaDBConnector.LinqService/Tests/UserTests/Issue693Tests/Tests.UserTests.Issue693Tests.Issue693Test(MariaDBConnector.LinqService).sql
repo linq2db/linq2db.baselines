@@ -5,15 +5,6 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`PersonID` > 4
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(1) -- String
@@ -111,13 +102,4 @@ FROM
 WHERE
 	`_`.`PersonID` = @id2
 LIMIT @take
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`PersonID` > 4
 

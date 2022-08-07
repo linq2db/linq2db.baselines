@@ -1,10 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [ValueItem]
-(
-	[Value] Int NOT NULL
-)
+IF (OBJECT_ID(N'[ValueItem]', N'U') IS NOT NULL)
+	DROP TABLE [ValueItem]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[ValueItem]', N'U') IS NULL)
+	CREATE TABLE [ValueItem]
+	(
+		[Value] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

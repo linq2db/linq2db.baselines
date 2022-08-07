@@ -46,16 +46,5 @@ SELECT TOP 2
 FROM
 	[Person] [p2]
 WHERE
-	[p2].[PersonID] > @id
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @id Integer -- Int32
-SET     @id = 4
-
-DELETE FROM [Person]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > @id
+	([p2].[PersonID] > @id OR [p2].[PersonID] = 0)
 

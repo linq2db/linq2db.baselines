@@ -304,7 +304,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate Timestamp -- DateTime2
-SET     @FieldDate = '3210-11-23'::date
+SET     @FieldDate = '2110-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 00:00:00
 DECLARE @FieldEnumString Text -- String
@@ -390,7 +390,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Timestamp -- DateTime2
-SET     @FieldDate = '3210-11-23'::date
+SET     @FieldDate = '2111-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 23:59:59.9999999
 DECLARE @FieldEnumString Text -- String
@@ -564,7 +564,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Timestamp -- DateTime2
-SET     @FieldDate = '3210-11-23'::date
+SET     @FieldDate = '2010-11-23'::date
 DECLARE @FieldTime Interval -- Object
 SET     @FieldTime = 23:59:59.9999999
 DECLARE @FieldEnumString Text -- String

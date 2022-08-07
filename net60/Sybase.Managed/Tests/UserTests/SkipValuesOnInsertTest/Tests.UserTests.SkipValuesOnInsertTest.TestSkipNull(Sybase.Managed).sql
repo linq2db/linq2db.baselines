@@ -1,14 +1,23 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [PR_1598_Insert_Null_Table]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL,
-	[Age]  Int               NULL,
+IF (OBJECT_ID(N'PR_1598_Insert_Null_Table') IS NOT NULL)
+	DROP TABLE [PR_1598_Insert_Null_Table]
 
-	CONSTRAINT [PK_PR_1598_Insert_Null_Table] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'PR_1598_Insert_Null_Table') IS NULL)
+	EXECUTE('
+		CREATE TABLE [PR_1598_Insert_Null_Table]
+		(
+			[Id]   Int           NOT NULL,
+			[Name] NVarChar(255)     NULL,
+			[Age]  Int               NULL,
+
+			CONSTRAINT [PK_PR_1598_Insert_Null_Table] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

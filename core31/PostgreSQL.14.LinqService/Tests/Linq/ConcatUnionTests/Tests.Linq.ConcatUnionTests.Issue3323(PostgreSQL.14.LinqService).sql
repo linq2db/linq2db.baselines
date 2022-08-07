@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Issue3323Table"
+DROP TABLE IF EXISTS "Issue3323Table"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Issue3323Table"
 (
 	"Id"       Int  NOT NULL,
 	"FistName" text     NULL,

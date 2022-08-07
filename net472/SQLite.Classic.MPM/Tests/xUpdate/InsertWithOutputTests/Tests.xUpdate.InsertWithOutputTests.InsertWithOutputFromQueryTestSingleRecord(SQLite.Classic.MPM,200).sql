@@ -37,7 +37,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [DestinationTable]
+DROP TABLE IF EXISTS [DestinationTable]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [DestinationTable]
 (
 	[Id]       INTEGER      NOT NULL,
 	[Value]    INTEGER      NOT NULL,

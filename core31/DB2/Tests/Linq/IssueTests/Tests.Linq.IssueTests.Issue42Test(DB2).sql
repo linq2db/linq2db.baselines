@@ -2,18 +2,20 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1".ID,
-	"t1"."MoneyValue",
-	"t1"."DateTimeValue",
-	"t1"."DateTimeValue2",
-	"t1"."BoolValue",
-	"t1"."GuidValue",
-	"t1"."SmallIntValue",
-	"t1"."IntValue",
-	"t1"."BigIntValue",
-	"t1"."StringValue"
+	"r".ID,
+	"r"."MoneyValue",
+	"r"."DateTimeValue",
+	"r"."DateTimeValue2",
+	"r"."BoolValue",
+	"r"."GuidValue",
+	"r"."SmallIntValue",
+	"r"."IntValue",
+	"r"."BigIntValue",
+	"r"."StringValue"
 FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID = 1
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -56,20 +58,24 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 1
 
 SELECT
-	"t1".ID,
-	"t1"."MoneyValue",
-	"t1"."DateTimeValue",
-	"t1"."DateTimeValue2",
-	"t1"."BoolValue",
-	"t1"."GuidValue",
-	"t1"."SmallIntValue",
-	"t1"."IntValue",
-	"t1"."BigIntValue",
-	"t1"."StringValue"
+	"r".ID,
+	"r"."MoneyValue",
+	"r"."DateTimeValue",
+	"r"."DateTimeValue2",
+	"r"."BoolValue",
+	"r"."GuidValue",
+	"r"."SmallIntValue",
+	"r"."IntValue",
+	"r"."BigIntValue",
+	"r"."StringValue"
 FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID = @ID
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute

@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [TestTable]
-(
-	[Id]   UniqueIdentifier NOT NULL,
-	[Json] NVarChar(Max)        NULL
-)
+DROP TABLE IF EXISTS [TestTable]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+IF (OBJECT_ID(N'[TestTable]', N'U') IS NULL)
+	CREATE TABLE [TestTable]
+	(
+		[Id]   UniqueIdentifier NOT NULL,
+		[Json] NVarChar(Max)        NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

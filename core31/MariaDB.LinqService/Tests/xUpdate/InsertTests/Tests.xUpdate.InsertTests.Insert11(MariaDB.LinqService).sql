@@ -48,17 +48,6 @@ SELECT
 FROM
 	`Person` `p2`
 WHERE
-	`p2`.`PersonID` > @id
+	(`p2`.`PersonID` > @id OR `p2`.`PersonID` = 0)
 LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @id Int32
-SET     @id = 4
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`PersonID` > @id
 

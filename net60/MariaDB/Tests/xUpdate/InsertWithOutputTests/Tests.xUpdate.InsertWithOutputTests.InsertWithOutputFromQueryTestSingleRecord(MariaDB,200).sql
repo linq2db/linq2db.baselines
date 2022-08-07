@@ -37,7 +37,12 @@ VALUES
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `DestinationTable`
+DROP TABLE IF EXISTS `DestinationTable`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `DestinationTable`
 (
 	`Id`       INT         NOT NULL,
 	`Value`    INT         NOT NULL,

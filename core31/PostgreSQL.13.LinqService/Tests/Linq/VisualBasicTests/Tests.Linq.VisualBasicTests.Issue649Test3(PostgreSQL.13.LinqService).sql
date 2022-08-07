@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE activity649
+DROP TABLE IF EXISTS activity649
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS activity649
 (
 	activityid SERIAL     NOT NULL,
 	personid   Int        NOT NULL,
@@ -13,7 +18,12 @@ CREATE TABLE activity649
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE person649
+DROP TABLE IF EXISTS person649
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS person649
 (
 	personid   SERIAL  NOT NULL,
 	personname text    NOT NULL,

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Issue1096Task]
+DROP TABLE IF EXISTS [Issue1096Task]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1096Task]
 (
 	[Id]         INTEGER       NOT NULL,
 	[TargetName] NVarChar(255)     NULL
@@ -10,7 +15,12 @@ CREATE TABLE [Issue1096Task]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Issue1096TaskStage]
+DROP TABLE IF EXISTS [Issue1096TaskStage]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1096TaskStage]
 (
 	[Id]     INTEGER NOT NULL,
 	[TaskId] INTEGER NOT NULL,

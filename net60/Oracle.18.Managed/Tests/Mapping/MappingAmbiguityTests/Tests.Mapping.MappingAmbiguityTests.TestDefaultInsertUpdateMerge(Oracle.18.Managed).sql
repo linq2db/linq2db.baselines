@@ -1,18 +1,39 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "TestTable"
-(
-	ID        Int          NOT NULL,
-	"Field1"  Int          NOT NULL,
-	"Field2"  Int          NOT NULL,
-	"Field3"  Int          NOT NULL,
-	"Field4"  Int          NOT NULL,
-	"field11" VarChar(255)     NULL,
-	"Field5"  Int          NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TestTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
-)
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TestTable"
+		(
+			ID        Int          NOT NULL,
+			"Field1"  Int          NOT NULL,
+			"Field2"  Int          NOT NULL,
+			"Field3"  Int          NOT NULL,
+			"Field4"  Int          NOT NULL,
+			"field11" VarChar(255)     NULL,
+			"Field5"  Int          NOT NULL,
+
+			CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

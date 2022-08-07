@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Authors
+DROP TABLE IF EXISTS Authors
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Authors
 (
 	Id   Int           NOT NULL,
 	Name NVarChar(100) NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE Authors
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Books
+DROP TABLE IF EXISTS Books
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Books
 (
 	Id       Int           NOT NULL,
 	AuthorId Int           NOT NULL,

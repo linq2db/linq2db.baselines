@@ -5,14 +5,6 @@ ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
 -- SqlCe
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > 4
-
-BeforeExecute
--- SqlCe
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName NVarChar(12) -- String
@@ -46,8 +38,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @id1 Int -- Int32
-SET     @id1 = 5
+DECLARE @id Int -- Int32
+SET     @id = 5
 
 SELECT TOP (@take)
 	[_].[PersonID],
@@ -58,13 +50,5 @@ SELECT TOP (@take)
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = @id1
-
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > 4
+	[_].[PersonID] = @id
 

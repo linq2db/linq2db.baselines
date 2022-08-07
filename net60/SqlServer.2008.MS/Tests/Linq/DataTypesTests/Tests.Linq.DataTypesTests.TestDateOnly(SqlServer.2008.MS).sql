@@ -25,7 +25,7 @@ INSERT INTO [DateOnlyTable]
 	[Id]
 )
 VALUES
-(NULL,CAST('1900-01-01' AS DATE),1),
+(NULL,CAST('1950-01-01' AS DATE),1),
 (CAST('2200-01-01' AS DATE),CAST('2020-02-29' AS DATE),2)
 
 BeforeExecute
@@ -68,7 +68,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date
-SET     @Column_1 = CAST('1900-01-01T00:00:00.0000000' AS DATETIME2)
+SET     @Column_1 = CAST('1950-01-01T00:00:00.0000000' AS DATETIME2)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -136,7 +136,7 @@ INSERT INTO [DateOnlyTable]
 	[Id]
 )
 VALUES
-(NULL,CAST('1900-01-01' AS DATE),1),
+(NULL,CAST('1950-01-01' AS DATE),1),
 (CAST('2200-01-01' AS DATE),CAST('2020-02-29' AS DATE),2)
 
 BeforeExecute

@@ -77,13 +77,3 @@ WHERE
 	t1."ID" = :id
 LIMIT :take
 
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 100500
-
-DELETE FROM
-	"LinqDataTypes" t1
-WHERE
-	t1."ID" = :id
-

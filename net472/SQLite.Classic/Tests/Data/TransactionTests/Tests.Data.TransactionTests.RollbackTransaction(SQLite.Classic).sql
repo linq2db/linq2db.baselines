@@ -44,11 +44,3 @@ WHERE
 	[t].[ParentID] = 1010
 LIMIT @take
 
-BeforeExecute
--- SQLite.Classic SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] >= 1000
-

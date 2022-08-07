@@ -5,14 +5,6 @@ ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" > 4
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Varchar(12) -- String
@@ -41,8 +33,8 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @id1 Integer -- Int32
-SET     @id1 = 5
+DECLARE @id Integer -- Int32
+SET     @id = 5
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -55,14 +47,6 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."PersonID" = :id1
+	t1."PersonID" = :id
 LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."PersonID" > 4
 

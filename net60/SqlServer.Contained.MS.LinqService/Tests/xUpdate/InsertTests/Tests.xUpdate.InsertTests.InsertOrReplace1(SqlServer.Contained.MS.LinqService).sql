@@ -5,18 +5,28 @@ DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'John'
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N'Shepard'
+DECLARE @MiddleName NVarChar(4000) -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = N'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	N'John',
-	N'Shepard',
-	N'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 SELECT SCOPE_IDENTITY()
@@ -119,26 +129,4 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-DELETE [t1]
-FROM
-	[Patient] [t1]
-WHERE
-	[t1].[PersonID] = @id
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = @id
 

@@ -340,11 +340,17 @@ VALUES
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [HierarchyData]
-(
-	[Id]    Int NOT NULL,
-	[Level] Int NOT NULL
-)
+DROP TABLE IF EXISTS [HierarchyData]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[HierarchyData]', N'U') IS NULL)
+	CREATE TABLE [HierarchyData]
+	(
+		[Id]    Int NOT NULL,
+		[Level] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

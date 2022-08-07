@@ -90,13 +90,3 @@ WHERE
 	x."FirstName" = :FirstName
 LIMIT :take
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @newName Text(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM
-	"Person" x
-WHERE
-	x."FirstName" = :newName
-

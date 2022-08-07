@@ -78,11 +78,3 @@ FROM
 WHERE
 	[gc].[ParentID] = 1
 
-BeforeExecute
--- SqlCe
-
-DELETE FROM
-	[GrandChild]
-WHERE
-	[GrandChild].[GrandChildID] IN (1001, 1002)
-

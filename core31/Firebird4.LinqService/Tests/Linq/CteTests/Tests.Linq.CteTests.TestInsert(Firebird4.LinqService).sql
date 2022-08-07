@@ -1,11 +1,24 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
 
-CREATE TABLE "CteChild"
-(
-	"ChildID"  Int NOT NULL,
-	"ParentID" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChild')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "CteChild"';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChild')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "CteChild"
+			(
+				"ChildID"  Int NOT NULL,
+				"ParentID" Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird4 Firebird

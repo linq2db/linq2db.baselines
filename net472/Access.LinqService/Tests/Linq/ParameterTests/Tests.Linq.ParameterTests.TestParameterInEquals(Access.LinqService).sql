@@ -1,10 +1,20 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [TestEqualsTable1]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [TestEqualsTable1]
 (
 	[Id] Int NOT NULL
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [TestEqualsTable2]
 
 BeforeExecute
 -- Access AccessOleDb

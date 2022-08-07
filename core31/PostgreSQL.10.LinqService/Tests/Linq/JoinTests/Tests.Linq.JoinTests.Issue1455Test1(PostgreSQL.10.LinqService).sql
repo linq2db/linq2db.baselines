@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Alert"
+DROP TABLE IF EXISTS "Alert"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Alert"
 (
 	"AlertKey"     text          NULL,
 	"AlertCode"    text          NULL,
@@ -11,7 +16,12 @@ CREATE TABLE "Alert"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "AuditAlert"
+DROP TABLE IF EXISTS "AuditAlert"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "AuditAlert"
 (
 	"CreationDate"    TimeStamp     NULL,
 	"AlertCode"       text          NULL,
@@ -22,7 +32,12 @@ CREATE TABLE "AuditAlert"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Trade"
+DROP TABLE IF EXISTS "Trade"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Trade"
 (
 	"DealId"       Int  NOT NULL,
 	"ParcelId"     Int  NOT NULL,
@@ -32,7 +47,12 @@ CREATE TABLE "Trade"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Nomin"
+DROP TABLE IF EXISTS "Nomin"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Nomin"
 (
 	"CargoId"              Int  NOT NULL,
 	"DeliveryId"           Int  NOT NULL,
@@ -42,7 +62,12 @@ CREATE TABLE "Nomin"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Flat"
+DROP TABLE IF EXISTS "Flat"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Flat"
 (
 	"AlertKey"             text          NULL,
 	"AlertCode"            text          NULL,

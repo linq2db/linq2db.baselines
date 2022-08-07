@@ -4,42 +4,44 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."ID",
-	t1."MoneyValue",
-	t1."DateTimeValue",
-	t1."DateTimeValue2",
-	t1."BoolValue",
-	t1."GuidValue",
-	t1."SmallIntValue",
-	t1."IntValue",
-	t1."BigIntValue",
-	t1."StringValue"
+	r."ID",
+	r."MoneyValue",
+	r."DateTimeValue",
+	r."DateTimeValue2",
+	r."BoolValue",
+	r."GuidValue",
+	r."SmallIntValue",
+	r."IntValue",
+	r."BigIntValue",
+	r."StringValue"
 FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" r
+WHERE
+	r."ID" = 1
 LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @MoneyValue Numeric(5, 4) -- Decimal
-SET     @MoneyValue = 2.4900
+SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp -- DateTime2
-SET     @DateTimeValue = '2005-05-15 05:15:25.500'::timestamp
+SET     @DateTimeValue = '2001-01-11 01:11:21.100'::timestamp
 DECLARE @DateTimeValue2 Timestamp -- DateTime2
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean
-SET     @BoolValue = True
+SET     @BoolValue = False
 DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = 'bc663a61-7b40-4681-ac38-f9aaf55b706b'
+SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
 DECLARE @SmallIntValue Smallint -- Int16
-SET     @SmallIntValue = 2
+SET     @SmallIntValue = 1
 DECLARE @IntValue Integer -- Int32
 SET     @IntValue = NULL
 DECLARE @BigIntValue Bigint -- Int64
-SET     @BigIntValue = 2
+SET     @BigIntValue = 1
 DECLARE @StringValue Text -- String
-SET     @StringValue = ''
+SET     @StringValue = NULL
 DECLARE @ID Integer -- Int32
-SET     @ID = 2
+SET     @ID = 1
 
 UPDATE
 	"LinqDataTypes"
@@ -58,46 +60,50 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @ID Integer -- Int32
+SET     @ID = 1
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."ID",
-	t1."MoneyValue",
-	t1."DateTimeValue",
-	t1."DateTimeValue2",
-	t1."BoolValue",
-	t1."GuidValue",
-	t1."SmallIntValue",
-	t1."IntValue",
-	t1."BigIntValue",
-	t1."StringValue"
+	r."ID",
+	r."MoneyValue",
+	r."DateTimeValue",
+	r."DateTimeValue2",
+	r."BoolValue",
+	r."GuidValue",
+	r."SmallIntValue",
+	r."IntValue",
+	r."BigIntValue",
+	r."StringValue"
 FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" r
+WHERE
+	r."ID" = :ID
 LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @MoneyValue Numeric(5, 4) -- Decimal
-SET     @MoneyValue = 2.4900
+SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp -- DateTime2
-SET     @DateTimeValue = '2005-05-15 05:15:25.500'::timestamp
+SET     @DateTimeValue = '2001-01-11 01:11:21.100'::timestamp
 DECLARE @DateTimeValue2 Timestamp -- DateTime2
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean
-SET     @BoolValue = False
+SET     @BoolValue = True
 DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = 'bc663a61-7b40-4681-ac38-f9aaf55b706b'
+SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
 DECLARE @SmallIntValue Smallint -- Int16
-SET     @SmallIntValue = 2
+SET     @SmallIntValue = 1
 DECLARE @IntValue Integer -- Int32
 SET     @IntValue = NULL
 DECLARE @BigIntValue Bigint -- Int64
-SET     @BigIntValue = 2
+SET     @BigIntValue = 1
 DECLARE @StringValue Text -- String
-SET     @StringValue = ''
+SET     @StringValue = NULL
 DECLARE @ID Integer -- Int32
-SET     @ID = 2
+SET     @ID = 1
 
 UPDATE
 	"LinqDataTypes"

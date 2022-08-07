@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-CREATE TABLE [Issue1438]
-(
-	[Id]  Int  NOT NULL IDENTITY,
-	[Has] Bit  NOT NULL,
+DROP TABLE IF EXISTS [Issue1438]
 
-	CONSTRAINT [PK_Issue1438] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue1438]', N'U') IS NULL)
+	CREATE TABLE [Issue1438]
+	(
+		[Id]  Int  NOT NULL IDENTITY,
+		[Has] Bit  NOT NULL,
+
+		CONSTRAINT [PK_Issue1438] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2019

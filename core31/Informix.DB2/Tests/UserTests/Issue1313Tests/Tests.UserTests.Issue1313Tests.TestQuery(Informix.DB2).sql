@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE ValueItem
+DROP TABLE IF EXISTS ValueItem
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS ValueItem
 (
 	"Value" Int NOT NULL
 )

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Issue1799Table1`
+DROP TABLE IF EXISTS `Issue1799Table1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1799Table1`
 (
 	`EventUser` INT      NOT NULL,
 	`ProcessID` INT      NOT NULL,
@@ -11,7 +16,12 @@ CREATE TABLE `Issue1799Table1`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Issue1799Table2`
+DROP TABLE IF EXISTS `Issue1799Table2`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1799Table2`
 (
 	`UserId`     INT           NOT NULL,
 	`UserGroups` VARCHAR(4000)     NULL
@@ -20,7 +30,12 @@ CREATE TABLE `Issue1799Table2`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Issue1799Table3`
+DROP TABLE IF EXISTS `Issue1799Table3`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1799Table3`
 (
 	`ProcessID`   INT           NOT NULL,
 	`ProcessName` VARCHAR(4000)     NULL

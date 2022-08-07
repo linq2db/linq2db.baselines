@@ -1,13 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [TableToInsert]
-(
-	[Id]    Int            NOT NULL,
-	[Value] NVarChar(4000)     NULL,
+IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NOT NULL)
+	DROP TABLE [TableToInsert]
 
-	CONSTRAINT [PK_TableToInsert] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[TableToInsert]', N'U') IS NULL)
+	CREATE TABLE [TableToInsert]
+	(
+		[Id]    Int            NOT NULL,
+		[Value] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_TableToInsert] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

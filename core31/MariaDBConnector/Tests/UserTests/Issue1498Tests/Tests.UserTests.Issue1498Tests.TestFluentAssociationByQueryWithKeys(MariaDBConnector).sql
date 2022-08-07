@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `Topic`
+DROP TABLE IF EXISTS `Topic`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Topic`
 (
 	`Id`    INT           NOT NULL,
 	`Title` VARCHAR(4000)     NULL,
@@ -13,7 +18,12 @@ CREATE TABLE `Topic`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `Message`
+DROP TABLE IF EXISTS `Message`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Message`
 (
 	`Id`      INT           NOT NULL,
 	`TopicId` INT           NOT NULL,

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `ColumnOrderTest`
+DROP TABLE IF EXISTS `ColumnOrderTest`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `ColumnOrderTest`
 (
 	`RecordID`       INT           NOT NULL,
 	`EffectiveStart` DATETIME      NOT NULL,

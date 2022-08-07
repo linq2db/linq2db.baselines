@@ -25,7 +25,7 @@ INSERT INTO [DateOnlyTable]
 	[Id]
 )
 VALUES
-(NULL,DATEFROMPARTS(1900, 1, 1),1),
+(NULL,DATEFROMPARTS(1950, 1, 1),1),
 (DATEFROMPARTS(2200, 1, 1),DATEFROMPARTS(2020, 2, 29),2)
 
 BeforeExecute
@@ -68,7 +68,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date
-SET     @Column_1 = DATETIME2FROMPARTS(1900, 1, 1, 0, 0, 0, 0, 7)
+SET     @Column_1 = DATETIME2FROMPARTS(1950, 1, 1, 0, 0, 0, 0, 7)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -136,7 +136,7 @@ INSERT INTO [DateOnlyTable]
 	[Id]
 )
 VALUES
-(NULL,DATEFROMPARTS(1900, 1, 1),1),
+(NULL,DATEFROMPARTS(1950, 1, 1),1),
 (DATEFROMPARTS(2200, 1, 1),DATEFROMPARTS(2020, 2, 29),2)
 
 BeforeExecute

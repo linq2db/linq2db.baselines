@@ -54,6 +54,8 @@ SELECT
 	[t1].[Items2]
 FROM
 	[TextData] [t1]
+ORDER BY
+	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

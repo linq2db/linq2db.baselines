@@ -48,16 +48,6 @@ SELECT
 FROM
 	"Person" "p2"
 WHERE
-	"p2"."PersonID" > ?
+	("p2"."PersonID" > ? OR "p2"."PersonID" = 0)
 LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 4
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > ?
 

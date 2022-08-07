@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE TestTable
+DROP TABLE IF EXISTS TestTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS TestTable
 (
 	Id Int NOT NULL,
 	Fd Int     NULL,

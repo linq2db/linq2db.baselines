@@ -134,6 +134,8 @@ FROM
 GROUP BY
 	t1."Id",
 	t1."Value4"
+ORDER BY
+	t1."Id"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

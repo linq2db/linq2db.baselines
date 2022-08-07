@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [Issue1107TB]
-(
-	[Id]       Int       NOT NULL,
-	[TestDate] DateTime2 NOT NULL,
+DROP TABLE IF EXISTS [Issue1107TB]
 
-	CONSTRAINT [PK_Issue1107TB] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+IF (OBJECT_ID(N'[Issue1107TB]', N'U') IS NULL)
+	CREATE TABLE [Issue1107TB]
+	(
+		[Id]       Int       NOT NULL,
+		[TestDate] DateTime2 NOT NULL,
+
+		CONSTRAINT [PK_Issue1107TB] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 INSERT BULK [Issue1107TB](Id, TestDate)

@@ -76,13 +76,3 @@ FROM
 WHERE
 	[_].[ID] = @id
 
-BeforeExecute
--- SqlCe
-DECLARE @id Int -- Int32
-SET     @id = 100500
-
-DELETE FROM
-	[LinqDataTypes]
-WHERE
-	[LinqDataTypes].[ID] = @id
-

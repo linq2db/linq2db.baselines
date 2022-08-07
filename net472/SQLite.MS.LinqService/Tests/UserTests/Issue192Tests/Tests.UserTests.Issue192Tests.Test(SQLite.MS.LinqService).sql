@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [TypeConvertTable]
+DROP TABLE IF EXISTS [TypeConvertTable]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [TypeConvertTable]
 (
 	[Name]      NVarChar(50) NOT NULL,
 	[BoolValue] Char         NOT NULL,

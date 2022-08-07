@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Child` `t1`
-WHERE
-	`t1`.`ParentID` >= 1000
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` >= 1000
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int32
@@ -111,22 +93,4 @@ FROM
 		INNER JOIN `Child` `c_1` ON `p`.`ParentID` = `c_1`.`ParentID`
 WHERE
 	`c_1`.`ParentID` = @id AND `c_1`.`ChildID` NOT IN (1002)
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Child` `t1`
-WHERE
-	`t1`.`ParentID` >= 1000
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` >= 1000
 

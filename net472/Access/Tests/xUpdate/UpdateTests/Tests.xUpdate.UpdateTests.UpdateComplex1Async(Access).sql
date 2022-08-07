@@ -24,15 +24,7 @@ BeforeExecute
 ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE
 
 BeforeExecute
--- Access AccessOleDb (asynchronously)
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[FirstName] LIKE 'UpdateComplex%'
-
-BeforeExecute
--- Access AccessOleDb (asynchronously)
+-- Access AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarWChar(13) -- String
@@ -58,7 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- Access AccessOleDb (asynchronously)
+-- Access AccessOleDb
 
 SELECT @@IDENTITY
 
@@ -116,12 +108,4 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = @id
-
-BeforeExecute
--- Access AccessOleDb (asynchronously)
-
-DELETE FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%'
 

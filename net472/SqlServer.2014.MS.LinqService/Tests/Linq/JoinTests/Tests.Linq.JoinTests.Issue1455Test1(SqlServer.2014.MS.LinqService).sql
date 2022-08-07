@@ -1,59 +1,94 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-CREATE TABLE [Alert]
-(
-	[AlertKey]     NVarChar(4000)     NULL,
-	[AlertCode]    NVarChar(4000)     NULL,
-	[CreationDate] DateTime2          NULL
-)
+IF (OBJECT_ID(N'[Alert]', N'U') IS NOT NULL)
+	DROP TABLE [Alert]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-CREATE TABLE [AuditAlert]
-(
-	[CreationDate]    DateTime2          NULL,
-	[AlertCode]       NVarChar(4000)     NULL,
-	[AlertKey]        NVarChar(4000)     NULL,
-	[TransactionDate] DateTime2          NULL
-)
+IF (OBJECT_ID(N'[Alert]', N'U') IS NULL)
+	CREATE TABLE [Alert]
+	(
+		[AlertKey]     NVarChar(4000)     NULL,
+		[AlertCode]    NVarChar(4000)     NULL,
+		[CreationDate] DateTime2          NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-CREATE TABLE [Trade]
-(
-	[DealId]       Int            NOT NULL,
-	[ParcelId]     Int            NOT NULL,
-	[CounterParty] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[AuditAlert]', N'U') IS NOT NULL)
+	DROP TABLE [AuditAlert]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-CREATE TABLE [Nomin]
-(
-	[CargoId]              Int            NOT NULL,
-	[DeliveryId]           Int            NOT NULL,
-	[DeliveryCounterParty] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[AuditAlert]', N'U') IS NULL)
+	CREATE TABLE [AuditAlert]
+	(
+		[CreationDate]    DateTime2          NULL,
+		[AlertCode]       NVarChar(4000)     NULL,
+		[AlertKey]        NVarChar(4000)     NULL,
+		[TransactionDate] DateTime2          NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-CREATE TABLE [Flat]
-(
-	[AlertKey]             NVarChar(4000)     NULL,
-	[AlertCode]            NVarChar(4000)     NULL,
-	[CargoId]              Int                NULL,
-	[DeliveryId]           Int                NULL,
-	[DeliveryCounterParty] NVarChar(4000)     NULL,
-	[DealId]               Int                NULL,
-	[ParcelId]             Int                NULL,
-	[CounterParty]         NVarChar(4000)     NULL,
-	[TransactionDate]      DateTime2          NULL
-)
+IF (OBJECT_ID(N'[Trade]', N'U') IS NOT NULL)
+	DROP TABLE [Trade]
+
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+IF (OBJECT_ID(N'[Trade]', N'U') IS NULL)
+	CREATE TABLE [Trade]
+	(
+		[DealId]       Int            NOT NULL,
+		[ParcelId]     Int            NOT NULL,
+		[CounterParty] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+IF (OBJECT_ID(N'[Nomin]', N'U') IS NOT NULL)
+	DROP TABLE [Nomin]
+
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+IF (OBJECT_ID(N'[Nomin]', N'U') IS NULL)
+	CREATE TABLE [Nomin]
+	(
+		[CargoId]              Int            NOT NULL,
+		[DeliveryId]           Int            NOT NULL,
+		[DeliveryCounterParty] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+IF (OBJECT_ID(N'[Flat]', N'U') IS NOT NULL)
+	DROP TABLE [Flat]
+
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+IF (OBJECT_ID(N'[Flat]', N'U') IS NULL)
+	CREATE TABLE [Flat]
+	(
+		[AlertKey]             NVarChar(4000)     NULL,
+		[AlertCode]            NVarChar(4000)     NULL,
+		[CargoId]              Int                NULL,
+		[DeliveryId]           Int                NULL,
+		[DeliveryCounterParty] NVarChar(4000)     NULL,
+		[DealId]               Int                NULL,
+		[ParcelId]             Int                NULL,
+		[CounterParty]         NVarChar(4000)     NULL,
+		[TransactionDate]      DateTime2          NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

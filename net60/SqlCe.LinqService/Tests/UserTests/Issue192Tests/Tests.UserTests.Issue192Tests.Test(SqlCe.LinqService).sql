@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [TypeConvertTable]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [TypeConvertTable]
 (
 	[Name]      NVarChar(50) NOT NULL,

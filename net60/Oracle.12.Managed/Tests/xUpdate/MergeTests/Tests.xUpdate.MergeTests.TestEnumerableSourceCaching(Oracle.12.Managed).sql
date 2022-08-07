@@ -1,13 +1,34 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "CacheTestTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "CacheTestTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_CacheTestTable" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CacheTestTable"
+		(
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL,
+
+			CONSTRAINT "PK_CacheTestTable" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

@@ -123,13 +123,3 @@ WHERE
 	t1."PersonID" = :ID
 LIMIT :take
 
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-
-DELETE FROM
-	"Person" x
-WHERE
-	x."PersonID" = :ID
-

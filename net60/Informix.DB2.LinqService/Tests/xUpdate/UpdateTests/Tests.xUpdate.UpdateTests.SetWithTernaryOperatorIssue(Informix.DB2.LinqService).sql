@@ -30,14 +30,6 @@ ALTER TABLE Doctor ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (Pers
 
 BeforeExecute
 -- Informix.DB2 Informix
-
-DELETE FROM
-	Person
-WHERE
-	Person.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -94,12 +86,4 @@ FROM
 	Person t1
 WHERE
 	t1.PersonID = @id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DELETE FROM
-	Person
-WHERE
-	Person.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
 

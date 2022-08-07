@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Issue1303
+DROP TABLE IF EXISTS Issue1303
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Issue1303
 (
 	ID       Int  NOT NULL,
 	"Array"  BYTE     NULL,

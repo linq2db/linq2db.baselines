@@ -375,7 +375,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [sample_other_class]
+DROP TABLE IF EXISTS [sample_other_class]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [sample_other_class]
 (
 	[id]        INTEGER      NOT NULL,
 	[parent_id] INTEGER      NOT NULL,

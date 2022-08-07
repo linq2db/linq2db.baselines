@@ -1,59 +1,124 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "Alert"
-(
-	"AlertKey"     VarChar(255) CHARACTER SET UNICODE_FSS,
-	"AlertCode"    VarChar(255) CHARACTER SET UNICODE_FSS,
-	"CreationDate" TimeStamp
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Alert')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Alert"';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "AuditAlert"
-(
-	"CreationDate"    TimeStamp,
-	"AlertCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
-	"AlertKey"        VarChar(255) CHARACTER SET UNICODE_FSS,
-	"TransactionDate" TimeStamp
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Alert')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Alert"
+			(
+				"AlertKey"     VarChar(255) CHARACTER SET UNICODE_FSS,
+				"AlertCode"    VarChar(255) CHARACTER SET UNICODE_FSS,
+				"CreationDate" TimeStamp
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "Trade"
-(
-	"DealId"       Int                                    NOT NULL,
-	"ParcelId"     Int                                    NOT NULL,
-	"CounterParty" VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AuditAlert')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "AuditAlert"';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "Nomin"
-(
-	"CargoId"              Int                                    NOT NULL,
-	"DeliveryId"           Int                                    NOT NULL,
-	"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AuditAlert')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "AuditAlert"
+			(
+				"CreationDate"    TimeStamp,
+				"AlertCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
+				"AlertKey"        VarChar(255) CHARACTER SET UNICODE_FSS,
+				"TransactionDate" TimeStamp
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "Flat"
-(
-	"AlertKey"             VarChar(255) CHARACTER SET UNICODE_FSS,
-	"AlertCode"            VarChar(255) CHARACTER SET UNICODE_FSS,
-	"CargoId"              Int,
-	"DeliveryId"           Int,
-	"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"DealId"               Int,
-	"ParcelId"             Int,
-	"CounterParty"         VarChar(255) CHARACTER SET UNICODE_FSS,
-	"TransactionDate"      TimeStamp
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Trade')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Trade"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Trade')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Trade"
+			(
+				"DealId"       Int                                    NOT NULL,
+				"ParcelId"     Int                                    NOT NULL,
+				"CounterParty" VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Nomin')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Nomin"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Nomin')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Nomin"
+			(
+				"CargoId"              Int                                    NOT NULL,
+				"DeliveryId"           Int                                    NOT NULL,
+				"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Flat')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Flat"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Flat')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Flat"
+			(
+				"AlertKey"             VarChar(255) CHARACTER SET UNICODE_FSS,
+				"AlertCode"            VarChar(255) CHARACTER SET UNICODE_FSS,
+				"CargoId"              Int,
+				"DeliveryId"           Int,
+				"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"DealId"               Int,
+				"ParcelId"             Int,
+				"CounterParty"         VarChar(255) CHARACTER SET UNICODE_FSS,
+				"TransactionDate"      TimeStamp
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird

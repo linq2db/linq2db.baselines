@@ -1,23 +1,49 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "Person2562"
-(
-	"CardTypeId" Int                                    NOT NULL,
-	"CardNumber" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Lics"       VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Person2562')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Person2562"';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "ExternalId2562"
-(
-	"CardTypeId" Int                                    NOT NULL,
-	"CardNumber" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"TypeId"     Int                                    NOT NULL,
-	"Id"         VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Person2562')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Person2562"
+			(
+				"CardTypeId" Int                                    NOT NULL,
+				"CardNumber" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"Lics"       VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ExternalId2562')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ExternalId2562"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ExternalId2562')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "ExternalId2562"
+			(
+				"CardTypeId" Int                                    NOT NULL,
+				"CardNumber" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"TypeId"     Int                                    NOT NULL,
+				"Id"         VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird

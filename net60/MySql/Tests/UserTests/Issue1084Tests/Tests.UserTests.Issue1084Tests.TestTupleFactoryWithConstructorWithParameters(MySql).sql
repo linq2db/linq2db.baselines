@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `i1084_person`
+DROP TABLE IF EXISTS `i1084_person`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `i1084_person`
 (
 	`Id`            INT NOT NULL,
 	`Number`        INT NOT NULL,
@@ -11,7 +16,12 @@ CREATE TABLE `i1084_person`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `i1084_student`
+DROP TABLE IF EXISTS `i1084_student`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `i1084_student`
 (
 	`Id`            INT           NOT NULL,
 	`Number`        VARCHAR(4000)     NULL,

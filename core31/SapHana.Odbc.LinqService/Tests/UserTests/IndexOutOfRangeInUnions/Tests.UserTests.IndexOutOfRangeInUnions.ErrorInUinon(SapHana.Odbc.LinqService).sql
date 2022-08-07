@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "O1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "O1"
 (
 	"DocEntry"    Integer       NOT NULL,
@@ -12,6 +17,11 @@ CREATE COLUMN TABLE "O1"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "O2"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "O2"
 (
 	"DocEntry"    Integer       NOT NULL,
@@ -19,6 +29,11 @@ CREATE COLUMN TABLE "O2"
 	"ChaveAcesso" NVarChar(255)     NULL,
 	"DocStatus"   NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "O3"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

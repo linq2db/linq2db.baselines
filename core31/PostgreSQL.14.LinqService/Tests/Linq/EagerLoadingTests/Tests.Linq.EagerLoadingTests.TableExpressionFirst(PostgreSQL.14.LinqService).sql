@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "UserIssue3128"
+DROP TABLE IF EXISTS "UserIssue3128"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "UserIssue3128"
 (
 	"Id" Int NOT NULL,
 
@@ -11,7 +16,12 @@ CREATE TABLE "UserIssue3128"
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "UserDetailsIssue3128"
+DROP TABLE IF EXISTS "UserDetailsIssue3128"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "UserDetailsIssue3128"
 (
 	"UserId" Int NOT NULL,
 	"Age"    Int NOT NULL,
@@ -32,8 +42,6 @@ VALUES
 (
 	:Id
 )
-RETURNING 
-	"Id"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -52,8 +60,6 @@ VALUES
 	:UserId,
 	:Age
 )
-RETURNING 
-	"UserId"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

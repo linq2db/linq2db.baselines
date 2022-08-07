@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [CreateTableTypes]
-(
-	[String] NVarChar(10)     NULL,
-	[Id]     Int          NOT NULL
-)
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NOT NULL)
+	DROP TABLE [CreateTableTypes]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
+	CREATE TABLE [CreateTableTypes]
+	(
+		[String] NVarChar(10)     NULL,
+		[Id]     Int          NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005

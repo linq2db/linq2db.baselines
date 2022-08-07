@@ -1,14 +1,27 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "Issue1303"
-(
-	ID       Int           NOT NULL,
-	"Array"  VarBinary(10)     NULL,
-	"Binary" VarBinary(10)     NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1303"';
+END
 
-	CONSTRAINT "PK_Issue1303" PRIMARY KEY (ID)
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1303"
+		(
+			ID       Int           NOT NULL,
+			"Array"  VarBinary(10)     NULL,
+			"Binary" VarBinary(10)     NULL,
+
+			CONSTRAINT "PK_Issue1303" PRIMARY KEY (ID)
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -12,5 +12,7 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` > 1
+ORDER BY
+	`p`.`ParentID`
 LIMIT @skip, @take
 

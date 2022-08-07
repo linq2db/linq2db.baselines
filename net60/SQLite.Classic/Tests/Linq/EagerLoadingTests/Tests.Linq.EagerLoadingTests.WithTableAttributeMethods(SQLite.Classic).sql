@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [UserIssue3128]
+DROP TABLE IF EXISTS [UserIssue3128]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [UserIssue3128]
 (
 	[Id] INTEGER NOT NULL,
 
@@ -11,7 +16,12 @@ CREATE TABLE [UserIssue3128]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [UserDetailsIssue3128]
+DROP TABLE IF EXISTS [UserDetailsIssue3128]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [UserDetailsIssue3128]
 (
 	[UserId] INTEGER NOT NULL,
 	[Age]    INTEGER NOT NULL,
@@ -35,11 +45,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-
-SELECT last_insert_rowid()
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @UserId  -- Int32
 SET     @UserId = 10
 DECLARE @Age  -- Int32
@@ -55,11 +60,6 @@ VALUES
 	@UserId,
 	@Age
 )
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic SQLite

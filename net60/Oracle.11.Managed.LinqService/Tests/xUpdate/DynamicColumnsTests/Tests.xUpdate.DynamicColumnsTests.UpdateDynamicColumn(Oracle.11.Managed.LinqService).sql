@@ -44,11 +44,3 @@ FROM
 WHERE
 	c_1."FirstName" = 'Johnny' AND c_1."LastName" = 'Limonadovy'
 
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."LastName" = 'Limonadovy'
-

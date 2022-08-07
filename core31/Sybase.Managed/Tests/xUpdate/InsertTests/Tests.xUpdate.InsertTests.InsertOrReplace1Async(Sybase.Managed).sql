@@ -5,18 +5,28 @@ sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @FirstName UniVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName UniVarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName UniVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 SELECT @@IDENTITY
@@ -129,26 +139,4 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM [Patient]
-FROM
-	[Patient] [p]
-WHERE
-	[p].[PersonID] = @id
-
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
-DECLARE @id Integer -- Int32
-SET     @id = 5
-
-DELETE FROM [Person]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = @id
 

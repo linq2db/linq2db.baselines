@@ -166,13 +166,3 @@ WHERE
 	"_"."PersonID" = ?
 LIMIT ?
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 5
-
-DELETE FROM
-	"Person" "x"
-WHERE
-	"x"."PersonID" = ?
-

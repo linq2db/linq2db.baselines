@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "MyEntity"
+DROP TABLE IF EXISTS "MyEntity"
+
+BeforeExecute
+--  PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "MyEntity"
 (
 	"Id"   BigInt NOT NULL,
 	"Name" text   NOT NULL
@@ -15,7 +20,7 @@ DROP TABLE IF EXISTS "MyEntity"
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "MyEntity"
+CREATE TABLE IF NOT EXISTS "MyEntity"
 (
 	"Id"   BigInt NOT NULL,
 	"Name" text   NOT NULL

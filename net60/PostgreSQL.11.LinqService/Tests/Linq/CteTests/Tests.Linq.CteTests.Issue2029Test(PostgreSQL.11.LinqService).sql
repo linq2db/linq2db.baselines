@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "NC_CODE"
+DROP TABLE IF EXISTS "NC_CODE"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "NC_CODE"
 (
 	"HANDLE"             text      NOT NULL,
 	"CHANGE_STAMP"       decimal       NULL,
@@ -18,7 +23,12 @@ CREATE TABLE "NC_CODE"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "NC_GROUP_MEMBER"
+DROP TABLE IF EXISTS "NC_GROUP_MEMBER"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "NC_GROUP_MEMBER"
 (
 	"HANDLE"               text    NOT NULL,
 	"NC_GROUP_BO"          text        NULL,

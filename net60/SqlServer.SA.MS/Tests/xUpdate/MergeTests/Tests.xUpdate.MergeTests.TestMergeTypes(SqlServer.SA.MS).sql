@@ -306,7 +306,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = DATETIME2FROMPARTS(3210, 11, 23, 0, 0, 0, 0, 7)
+SET     @FieldDate = DATETIME2FROMPARTS(2110, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
 SET     @FieldTime = TIMEFROMPARTS(0, 0, 0, 0, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -392,7 +392,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = DATETIME2FROMPARTS(3210, 11, 23, 0, 0, 0, 0, 7)
+SET     @FieldDate = DATETIME2FROMPARTS(2111, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
 SET     @FieldTime = TIMEFROMPARTS(23, 59, 59, 9999999, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -566,7 +566,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime2
-SET     @FieldDate = DATETIME2FROMPARTS(3210, 11, 23, 0, 0, 0, 0, 7)
+SET     @FieldDate = DATETIME2FROMPARTS(2010, 11, 23, 0, 0, 0, 0, 7)
 DECLARE @FieldTime Time
 SET     @FieldTime = TIMEFROMPARTS(23, 59, 59, 9999999, 7)
 DECLARE @FieldEnumString NVarChar(5) -- String

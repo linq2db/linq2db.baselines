@@ -48,15 +48,5 @@ SELECT TOP (@take)
 FROM
 	[Person] [p2]
 WHERE
-	[p2].[PersonID] > @id
-
-BeforeExecute
--- SqlCe
-DECLARE @id Int -- Int32
-SET     @id = 4
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[PersonID] > @id
+	([p2].[PersonID] > @id OR [p2].[PersonID] = 0)
 

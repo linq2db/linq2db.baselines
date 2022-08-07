@@ -1,24 +1,63 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "stLinks"
-(
-	"inId"          Int           NOT NULL,
-	"inIdParent"    Int           NOT NULL,
-	"inIdChild"     Int           NOT NULL,
-	"inIdTypeRel"   Int           NOT NULL,
-	"inMaxQuantity" Float             NULL,
-	"inMinQuantity" Float             NULL,
-	"inIdMeasure"   Int               NULL,
-	"inIdUnit"      Int               NULL,
-	"State"         Int               NULL,
-	"dtModified"    timestamp     NOT NULL,
-	"inIdOrgOwner"  Int               NULL,
-	"dtSynchDate"   timestamp         NULL,
-	"stGUID"        VarChar(255)  NOT NULL,
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_stLinks"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_stLinks"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "stLinks"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
 
-	CONSTRAINT "PK_stLinks" PRIMARY KEY ("inId")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "stLinks"
+		(
+			"inId"          Int           NOT NULL,
+			"inIdParent"    Int           NOT NULL,
+			"inIdChild"     Int           NOT NULL,
+			"inIdTypeRel"   Int           NOT NULL,
+			"inMaxQuantity" Float             NULL,
+			"inMinQuantity" Float             NULL,
+			"inIdMeasure"   Int               NULL,
+			"inIdUnit"      Int               NULL,
+			"State"         Int               NULL,
+			"dtModified"    timestamp     NOT NULL,
+			"inIdOrgOwner"  Int               NULL,
+			"dtSynchDate"   timestamp         NULL,
+			"stGUID"        VarChar(255)  NOT NULL,
+
+			CONSTRAINT "PK_stLinks" PRIMARY KEY ("inId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -37,13 +76,52 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "stVersions"
-(
-	"inId"     Int  NOT NULL,
-	"inIdMain" Int  NOT NULL,
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_stVersions"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_stVersions"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "stVersions"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
 
-	CONSTRAINT "PK_stVersions" PRIMARY KEY ("inId")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "stVersions"
+		(
+			"inId"     Int  NOT NULL,
+			"inIdMain" Int  NOT NULL,
+
+			CONSTRAINT "PK_stVersions" PRIMARY KEY ("inId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -1,13 +1,22 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [BackgroundTask]
-(
-	[ID]               Int     NULL,
-	[DurationID]       Int NOT NULL,
-	[DurationInterval] Int NOT NULL,
-	[PersonID]         Int     NULL
-)
+IF (OBJECT_ID(N'BackgroundTask') IS NOT NULL)
+	DROP TABLE [BackgroundTask]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'BackgroundTask') IS NULL)
+	EXECUTE('
+		CREATE TABLE [BackgroundTask]
+		(
+			[ID]               Int     NULL,
+			[DurationID]       Int NOT NULL,
+			[DurationInterval] Int NOT NULL,
+			[PersonID]         Int     NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

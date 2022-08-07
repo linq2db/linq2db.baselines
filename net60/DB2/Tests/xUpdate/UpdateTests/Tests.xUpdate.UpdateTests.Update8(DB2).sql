@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" > 1000
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer(4) -- Int32
@@ -51,12 +43,4 @@ FROM
 WHERE
 	"p"."ParentID" = @ParentID
 FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-DELETE FROM
-	"Child" "t1"
-WHERE
-	"t1"."ChildID" > 1000
 

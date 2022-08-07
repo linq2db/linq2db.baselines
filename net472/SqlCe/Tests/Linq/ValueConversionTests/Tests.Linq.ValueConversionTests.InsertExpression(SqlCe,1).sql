@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [ValueConversion]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [ValueConversion]
 (
 	[Id]                      Int           NOT NULL,

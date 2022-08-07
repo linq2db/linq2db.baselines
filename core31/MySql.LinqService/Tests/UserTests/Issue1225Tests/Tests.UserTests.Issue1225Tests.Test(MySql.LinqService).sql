@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Task`
+DROP TABLE IF EXISTS `Task`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Task`
 (
 	`Id` INT NOT NULL,
 
@@ -11,7 +16,12 @@ CREATE TABLE `Task`
 BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `TaskStage`
+DROP TABLE IF EXISTS `TaskStage`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TaskStage`
 (
 	`Id`     INT     NOT NULL,
 	`TaskId` INT     NOT NULL,

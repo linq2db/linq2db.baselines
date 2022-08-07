@@ -83,4 +83,7 @@ FROM
 				) [t6]
 			LIMIT 15
 		) [_] ON [_].[ID] = [e].[ID]
+ORDER BY
+	[_].[ID],
+	[e].[ID]
 

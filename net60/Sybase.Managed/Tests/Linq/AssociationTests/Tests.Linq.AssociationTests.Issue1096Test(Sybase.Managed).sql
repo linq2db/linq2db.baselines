@@ -1,23 +1,41 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Issue1096Task]
-(
-	[Id]         Int           NOT NULL,
-	[TargetName] NVarChar(255)     NULL
-)
+IF (OBJECT_ID(N'Issue1096Task') IS NOT NULL)
+	DROP TABLE [Issue1096Task]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Issue1096TaskStage]
-(
-	[Id]     Int NOT NULL,
-	[TaskId] Int NOT NULL,
-	[Actual] Bit NOT NULL,
+IF (OBJECT_ID(N'Issue1096Task') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Issue1096Task]
+		(
+			[Id]         Int           NOT NULL,
+			[TargetName] NVarChar(255)     NULL
+		)
+	')
 
-	CONSTRAINT [PK_Issue1096TaskStage] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Issue1096TaskStage') IS NOT NULL)
+	DROP TABLE [Issue1096TaskStage]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Issue1096TaskStage') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Issue1096TaskStage]
+		(
+			[Id]     Int NOT NULL,
+			[TaskId] Int NOT NULL,
+			[Actual] Bit NOT NULL,
+
+			CONSTRAINT [PK_Issue1096TaskStage] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

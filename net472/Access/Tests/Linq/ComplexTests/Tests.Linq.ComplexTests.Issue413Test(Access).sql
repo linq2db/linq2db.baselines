@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [T1]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [T1]
 (
 	[InstrumentId]         Int           NOT NULL,
@@ -14,11 +19,21 @@ CREATE TABLE [T1]
 BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [T2]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [T2]
 (
 	[InstrumentId] Int NOT NULL,
 	[IndexId]      Int NOT NULL
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [T3]
 
 BeforeExecute
 -- Access AccessOleDb

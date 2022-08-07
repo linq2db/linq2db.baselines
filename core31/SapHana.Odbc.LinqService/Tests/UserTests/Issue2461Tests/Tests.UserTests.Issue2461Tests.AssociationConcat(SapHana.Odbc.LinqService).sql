@@ -1,11 +1,21 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "MRECEIPT"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "MRECEIPT"
 (
 	"RECEIPT_NO" NVarChar(255)     NULL,
 	"CUSTKEY"    NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "CUST_DTL"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `AttributeBase`
+DROP TABLE IF EXISTS `AttributeBase`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `AttributeBase`
 (
 	`Id` INT NOT NULL,
 

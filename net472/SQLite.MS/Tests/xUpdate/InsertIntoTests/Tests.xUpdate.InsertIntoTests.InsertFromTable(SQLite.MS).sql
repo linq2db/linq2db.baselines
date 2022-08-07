@@ -27,7 +27,12 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [InsertTestClassDest]
+DROP TABLE IF EXISTS [InsertTestClassDest]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [InsertTestClassDest]
 (
 	[Id]         INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[Value]      INTEGER  NOT NULL,

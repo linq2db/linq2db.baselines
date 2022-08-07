@@ -1,6 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(1) -- String
 SET     @FirstName = '1'
@@ -46,5 +44,3 @@ FROM
 WHERE
 	[r].[FirstName] = @FirstName
 
-BeforeExecute
-RollbackTransaction

@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-CREATE TABLE [User]
-(
-	[city]            NVarChar(4000)     NULL,
-	[user_name]       NVarChar(4000)     NULL,
-	[street]          NVarChar(4000)     NULL,
-	[building_number] Int            NOT NULL
-)
+DROP TABLE IF EXISTS [User]
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[User]', N'U') IS NULL)
+	CREATE TABLE [User]
+	(
+		[city]            NVarChar(4000)     NULL,
+		[user_name]       NVarChar(4000)     NULL,
+		[street]          NVarChar(4000)     NULL,
+		[building_number] Int            NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

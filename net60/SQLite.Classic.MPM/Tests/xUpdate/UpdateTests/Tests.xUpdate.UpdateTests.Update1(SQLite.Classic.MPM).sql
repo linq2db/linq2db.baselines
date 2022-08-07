@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] > 1000
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1  -- Int32
@@ -59,12 +51,4 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @ParentID
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] > 1000
 

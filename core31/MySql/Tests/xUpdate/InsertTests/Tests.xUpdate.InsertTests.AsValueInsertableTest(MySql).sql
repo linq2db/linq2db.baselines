@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `TestInsertOrReplaceTable`
+DROP TABLE IF EXISTS `TestInsertOrReplaceTable`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TestInsertOrReplaceTable`
 (
 	`ID`         INT           NOT NULL,
 	`FirstName`  VARCHAR(4000)     NULL,

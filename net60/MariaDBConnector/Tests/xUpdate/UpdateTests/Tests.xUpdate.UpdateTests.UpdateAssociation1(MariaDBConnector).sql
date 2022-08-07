@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-DELETE   `t1`
-FROM
-	`Child` `t1`
-WHERE
-	`t1`.`ChildID` = 10000
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` = 20000
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -54,22 +36,4 @@ SET
 	`t1`.`Value1` = 5
 WHERE
 	`a_Parent`.`ChildID` = 10000
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Child` `t1`
-WHERE
-	`t1`.`ChildID` = 10000
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` = 20000
 

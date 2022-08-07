@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [ProductTable]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [ProductTable]
 (
 	[Id]   Int           NOT NULL,
@@ -12,6 +17,11 @@ CREATE TABLE [ProductTable]
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [ProductAttributeTable]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [ProductAttributeTable]
 (
 	[Id]   Int           NOT NULL,
@@ -19,6 +29,11 @@ CREATE TABLE [ProductAttributeTable]
 
 	CONSTRAINT [PK_ProductAttributeTable] PRIMARY KEY ([Id])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [ProductAttributeMapping]
 
 BeforeExecute
 -- SqlCe

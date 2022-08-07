@@ -76,14 +76,3 @@ FROM
 WHERE
 	[_].[ID] = @id
 
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @id Integer -- Int32
-SET     @id = 100500
-
-DELETE FROM [LinqDataTypes]
-FROM
-	[LinqDataTypes] [t1]
-WHERE
-	[t1].[ID] = @id
-

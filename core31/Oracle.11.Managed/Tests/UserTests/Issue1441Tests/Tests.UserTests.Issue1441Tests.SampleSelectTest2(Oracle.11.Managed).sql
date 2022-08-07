@@ -1,25 +1,67 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "Authors"
-(
-	"Id"   Int           NOT NULL,
-	"Name" VarChar2(100) NOT NULL,
-
-	CONSTRAINT "PK_Authors" PRIMARY KEY ("Id")
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Authors"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "Books"
-(
-	"Id"       Int           NOT NULL,
-	"AuthorId" Int           NOT NULL,
-	"Title"    VarChar2(100) NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Authors"
+		(
+			"Id"   Int           NOT NULL,
+			"Name" VarChar2(100) NOT NULL,
 
-	CONSTRAINT "PK_Books" PRIMARY KEY ("Id")
-)
+			CONSTRAINT "PK_Authors" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Books"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Books"
+		(
+			"Id"       Int           NOT NULL,
+			"AuthorId" Int           NOT NULL,
+			"Title"    VarChar2(100) NOT NULL,
+
+			CONSTRAINT "PK_Books" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

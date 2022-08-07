@@ -1,16 +1,22 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-CREATE TABLE [xxPerson]
-(
-	[FirstName]  NVarChar(4000)  NOT NULL,
-	[PersonID]   Int             NOT NULL IDENTITY,
-	[LastName]   NVarChar(4000)  NOT NULL,
-	[MiddleName] NVarChar(4000)      NULL,
-	[Gender]     Char(1)         NOT NULL,
+DROP TABLE IF EXISTS [xxPerson]
 
-	CONSTRAINT [PK_xxPerson] PRIMARY KEY CLUSTERED ([PersonID])
-)
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+IF (OBJECT_ID(N'[xxPerson]', N'U') IS NULL)
+	CREATE TABLE [xxPerson]
+	(
+		[FirstName]  NVarChar(4000)  NOT NULL,
+		[PersonID]   Int             NOT NULL IDENTITY,
+		[LastName]   NVarChar(4000)  NOT NULL,
+		[MiddleName] NVarChar(4000)      NULL,
+		[Gender]     Char(1)         NOT NULL,
+
+		CONSTRAINT [PK_xxPerson] PRIMARY KEY CLUSTERED ([PersonID])
+	)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

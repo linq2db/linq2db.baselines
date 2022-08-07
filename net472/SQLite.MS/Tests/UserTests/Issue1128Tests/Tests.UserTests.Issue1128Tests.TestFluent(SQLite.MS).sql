@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [AttributeBase]
+DROP TABLE IF EXISTS [AttributeBase]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [AttributeBase]
 (
 	[Id] INTEGER NOT NULL,
 

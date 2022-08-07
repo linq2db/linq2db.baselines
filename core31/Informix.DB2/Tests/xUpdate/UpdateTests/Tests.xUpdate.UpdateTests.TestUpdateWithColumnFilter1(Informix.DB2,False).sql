@@ -106,13 +106,3 @@ FROM
 WHERE
 	x.FirstName = @FirstName
 
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @newName VarChar(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM
-	Person
-WHERE
-	Person.FirstName = @newName
-

@@ -60,13 +60,3 @@ FROM
 WHERE
 	p.ParentID = @ParentID
 
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1001
-
-DELETE FROM
-	Parent
-WHERE
-	Parent.ParentID = @ParentID
-

@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-CREATE TABLE [CreateTableTypes]
-(
-	[StringConverted] NVarChar(Max)     NULL,
-	[Id]              Int           NOT NULL
-)
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NOT NULL)
+	DROP TABLE [CreateTableTypes]
+
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
+	CREATE TABLE [CreateTableTypes]
+	(
+		[StringConverted] NVarChar(Max)     NULL,
+		[Id]              Int           NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014

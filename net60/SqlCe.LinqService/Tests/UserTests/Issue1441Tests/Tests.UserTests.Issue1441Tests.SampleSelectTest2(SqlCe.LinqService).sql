@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Authors]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Authors]
 (
 	[Id]   Int           NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE [Authors]
 
 	CONSTRAINT [PK_Authors] PRIMARY KEY ([Id])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Books]
 
 BeforeExecute
 -- SqlCe

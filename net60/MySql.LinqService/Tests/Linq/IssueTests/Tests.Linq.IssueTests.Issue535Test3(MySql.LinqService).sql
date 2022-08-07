@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `CustomerBase`
+DROP TABLE IF EXISTS `CustomerBase`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `CustomerBase`
 (
 	`Id`           INT           AUTO_INCREMENT NOT NULL,
 	`ClientType`   CHAR(6)                      NOT NULL,

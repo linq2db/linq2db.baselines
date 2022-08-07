@@ -92,13 +92,3 @@ WHERE
 	x."FirstName" = :FirstName
 FETCH NEXT :take ROWS ONLY
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @newName Varchar2(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM
-	"Person" x
-WHERE
-	x."FirstName" = :newName
-

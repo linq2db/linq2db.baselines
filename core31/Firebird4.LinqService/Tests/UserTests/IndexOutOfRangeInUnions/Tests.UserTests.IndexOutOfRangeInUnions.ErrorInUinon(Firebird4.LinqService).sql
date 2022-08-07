@@ -1,35 +1,74 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
 
-CREATE TABLE O1
-(
-	"DocEntry"    Int                                    NOT NULL,
-	"BplId"       Int                                    NOT NULL,
-	"ChaveAcesso" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"DocStatus"   VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'O1')) THEN
+		EXECUTE STATEMENT 'DROP TABLE O1';
+END
 
 BeforeExecute
 -- Firebird4 Firebird
 
-CREATE TABLE O2
-(
-	"DocEntry"    Int                                    NOT NULL,
-	"BplId"       Int                                    NOT NULL,
-	"ChaveAcesso" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"DocStatus"   VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'O1')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE O1
+			(
+				"DocEntry"    Int                                    NOT NULL,
+				"BplId"       Int                                    NOT NULL,
+				"ChaveAcesso" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"DocStatus"   VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird4 Firebird
 
-CREATE TABLE O3
-(
-	"DocEntry"    Int                                    NOT NULL,
-	"BplId"       Int                                    NOT NULL,
-	"ChaveAcesso" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"DocStatus"   VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'O2')) THEN
+		EXECUTE STATEMENT 'DROP TABLE O2';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'O2')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE O2
+			(
+				"DocEntry"    Int                                    NOT NULL,
+				"BplId"       Int                                    NOT NULL,
+				"ChaveAcesso" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"DocStatus"   VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'O3')) THEN
+		EXECUTE STATEMENT 'DROP TABLE O3';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'O3')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE O3
+			(
+				"DocEntry"    Int                                    NOT NULL,
+				"BplId"       Int                                    NOT NULL,
+				"ChaveAcesso" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"DocStatus"   VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird4 Firebird

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Issue1363"
+DROP TABLE IF EXISTS "Issue1363"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Issue1363"
 (
 	required_field uuid NOT NULL,
 	optional_field uuid     NULL

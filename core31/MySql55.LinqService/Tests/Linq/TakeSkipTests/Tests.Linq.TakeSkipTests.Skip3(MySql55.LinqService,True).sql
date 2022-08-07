@@ -10,5 +10,8 @@ FROM
 	`Child` `ch`
 WHERE
 	`ch`.`ChildID` >= 0 AND `ch`.`ChildID` <= 100
+ORDER BY
+	`ch`.`ParentID`,
+	`ch`.`ChildID`
 LIMIT @skip, 9223372036854775807
 
