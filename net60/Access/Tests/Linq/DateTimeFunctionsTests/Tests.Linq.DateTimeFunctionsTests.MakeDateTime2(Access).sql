@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CDate('2010-' + CStr([p].[ID]) + '-1 20:35:44') as [c1]
+			CDate('2010-' + Format([p].[ID], String('0', 2)) + '-01 20:35:44') as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
