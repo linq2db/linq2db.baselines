@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `Issue1373Tests`
+DROP TABLE IF EXISTS `Issue1373Tests`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1373Tests`
 (
 	`Id`     INT           NOT NULL,
 	`Field1` VARCHAR(4000)     NULL,

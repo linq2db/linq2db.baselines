@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `NeedS.esca Pin``g`
+DROP TABLE IF EXISTS `NeedS.esca Pin``g`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `NeedS.esca Pin``g`
 (
 	`ne.eds ``escaPing` INT          NOT NULL,
 	`Bit_1`             bit(64)          NULL,

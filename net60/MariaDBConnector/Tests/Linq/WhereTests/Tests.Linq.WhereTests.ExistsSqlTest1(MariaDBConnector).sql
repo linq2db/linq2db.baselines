@@ -1,6 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction
-BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
 DELETE   `p`
@@ -13,8 +11,6 @@ WHERE
 		FROM
 			`Child` `c_1`
 		WHERE
-			`c_1`.`ParentID` = `p`.`ParentID`
+			`c_1`.`ParentID` = `p`.`ParentID` + 100
 	)
 
-BeforeExecute
-RollbackTransaction

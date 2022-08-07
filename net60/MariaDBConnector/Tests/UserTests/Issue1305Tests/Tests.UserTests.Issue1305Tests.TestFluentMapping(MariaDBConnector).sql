@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `FluentMapping`
+DROP TABLE IF EXISTS `FluentMapping`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `FluentMapping`
 (
 	`RecordID`       INT      NOT NULL,
 	`EffectiveStart` DATETIME NOT NULL,

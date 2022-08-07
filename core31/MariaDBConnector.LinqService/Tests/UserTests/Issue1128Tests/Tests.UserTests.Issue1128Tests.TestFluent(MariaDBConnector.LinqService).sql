@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `AttributeBase`
+DROP TABLE IF EXISTS `AttributeBase`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `AttributeBase`
 (
 	`Id` INT NOT NULL,
 

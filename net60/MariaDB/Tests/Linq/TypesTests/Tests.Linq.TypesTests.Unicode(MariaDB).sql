@@ -1,34 +1,30 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`PersonID` > 4
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- MariaDB MySql.Official MySql
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = '擊敗奴隸'
+DECLARE @LastName VarChar(9) -- String
+SET     @LastName = 'Юникодкин'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender String(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
 	`FirstName`,
 	`LastName`,
+	`MiddleName`,
 	`Gender`
 )
 VALUES
 (
-	'擊敗奴隸',
-	'Юникодкин',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
@@ -46,13 +42,4 @@ FROM
 WHERE
 	`p`.`FirstName` = '擊敗奴隸' AND `p`.`LastName` = 'Юникодкин'
 LIMIT @take
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`PersonID` > 4
 

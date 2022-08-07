@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `TestSchemaTypesTable`
+DROP TABLE IF EXISTS `TestSchemaTypesTable`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `TestSchemaTypesTable`
 (
 	`VarCharDefault`     VARCHAR(4000)          NULL,
 	`VarChar1`           VARCHAR(1)             NULL,

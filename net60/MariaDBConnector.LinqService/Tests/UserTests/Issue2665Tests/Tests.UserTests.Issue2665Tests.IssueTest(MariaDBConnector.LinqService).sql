@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `ProductTable`
+DROP TABLE IF EXISTS `ProductTable`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `ProductTable`
 (
 	`Id`   INT           NOT NULL,
 	`Name` VARCHAR(4000) NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE `ProductTable`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `ProductAttributeTable`
+DROP TABLE IF EXISTS `ProductAttributeTable`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `ProductAttributeTable`
 (
 	`Id`   INT           NOT NULL,
 	`Name` VARCHAR(4000) NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE `ProductAttributeTable`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `ProductAttributeMapping`
+DROP TABLE IF EXISTS `ProductAttributeMapping`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `ProductAttributeMapping`
 (
 	`ProductId`          INT NOT NULL,
 	`ProductAttributeId` INT NOT NULL,

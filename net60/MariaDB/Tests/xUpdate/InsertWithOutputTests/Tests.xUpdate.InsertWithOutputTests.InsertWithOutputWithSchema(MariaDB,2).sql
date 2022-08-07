@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `TableWithDataAndSchema`
+DROP TABLE IF EXISTS `TableWithDataAndSchema`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TableWithDataAndSchema`
 (
 	`Id`       INT         NOT NULL,
 	`Value`    INT         NOT NULL,

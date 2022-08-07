@@ -102,12 +102,3 @@ FROM
 WHERE
 	`t1`.`PersonID` = @ID
 
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-DELETE   `_`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` = 'test_inherited_insert'
-
