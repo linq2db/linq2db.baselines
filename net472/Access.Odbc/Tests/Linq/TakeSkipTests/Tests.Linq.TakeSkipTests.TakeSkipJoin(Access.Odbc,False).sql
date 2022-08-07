@@ -81,7 +81,4 @@ FROM
 						[LinqDataTypes] [t5]
 				) [t6]
 		) [_] ON ([_].[ID] = [e].[ID])
-ORDER BY
-	[_].[ID],
-	[e].[ID]
 
