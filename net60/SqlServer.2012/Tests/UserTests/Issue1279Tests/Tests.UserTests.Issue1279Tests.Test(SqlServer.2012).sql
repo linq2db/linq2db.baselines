@@ -1,13 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [Issue1279Table]
-(
-	[Id]      Int       NOT NULL IDENTITY,
-	[CharFld] NChar(1)  NOT NULL,
+IF (OBJECT_ID(N'[Issue1279Table]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1279Table]
 
-	CONSTRAINT [PK_Issue1279Table] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[Issue1279Table]', N'U') IS NULL)
+	CREATE TABLE [Issue1279Table]
+	(
+		[Id]      Int       NOT NULL IDENTITY,
+		[CharFld] NChar(1)  NOT NULL,
+
+		CONSTRAINT [PK_Issue1279Table] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2012

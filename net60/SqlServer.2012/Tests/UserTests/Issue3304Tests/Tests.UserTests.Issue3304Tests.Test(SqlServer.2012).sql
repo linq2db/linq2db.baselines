@@ -1,15 +1,22 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-CREATE TABLE [Table]
-(
-	[Version]   Int                  NULL,
-	[UpdatedOn] DateTime2            NULL,
-	[UserId]    UniqueIdentifier NOT NULL,
-	[Value]     UniqueIdentifier     NULL,
+IF (OBJECT_ID(N'[Table]', N'U') IS NOT NULL)
+	DROP TABLE [Table]
 
-	CONSTRAINT [PK_Table] PRIMARY KEY CLUSTERED ([UserId])
-)
+BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[Table]', N'U') IS NULL)
+	CREATE TABLE [Table]
+	(
+		[Version]   Int                  NULL,
+		[UpdatedOn] DateTime2            NULL,
+		[UserId]    UniqueIdentifier NOT NULL,
+		[Value]     UniqueIdentifier     NULL,
+
+		CONSTRAINT [PK_Table] PRIMARY KEY CLUSTERED ([UserId])
+	)
 
 BeforeExecute
 -- SqlServer.2012
