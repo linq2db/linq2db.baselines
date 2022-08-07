@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "stLinks"
+DROP TABLE IF EXISTS "stLinks"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "stLinks"
 (
 	"inId"          SERIAL     NOT NULL,
 	"inIdParent"    Int        NOT NULL,
@@ -23,7 +28,12 @@ CREATE TABLE "stLinks"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "stVersions"
+DROP TABLE IF EXISTS "stVersions"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "stVersions"
 (
 	"inId"     SERIAL  NOT NULL,
 	"inIdMain" Int     NOT NULL,

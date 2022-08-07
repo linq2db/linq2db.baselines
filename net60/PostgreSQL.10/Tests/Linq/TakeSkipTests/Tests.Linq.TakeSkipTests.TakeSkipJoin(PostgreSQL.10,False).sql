@@ -83,4 +83,7 @@ FROM
 				) t6
 			LIMIT 15
 		) t7 ON t7."ID" = e."ID"
+ORDER BY
+	t7."ID",
+	e."ID"
 

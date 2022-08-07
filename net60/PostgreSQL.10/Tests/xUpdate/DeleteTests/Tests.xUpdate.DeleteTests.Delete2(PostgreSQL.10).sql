@@ -60,13 +60,3 @@ FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1001
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" = :ParentID
-

@@ -48,11 +48,3 @@ FROM
 WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
-

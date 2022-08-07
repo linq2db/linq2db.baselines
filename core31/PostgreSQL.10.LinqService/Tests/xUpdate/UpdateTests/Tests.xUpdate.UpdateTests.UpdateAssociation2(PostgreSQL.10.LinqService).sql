@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-DELETE FROM
-	"Child" t1
-WHERE
-	t1."ChildID" = 10000
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" = 20000
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -53,20 +37,4 @@ FROM
 	"Child" child_1
 WHERE
 	child_1."ChildID" = 10000 AND child_1."ParentID" = "Parent"."ParentID"
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Child" t1
-WHERE
-	t1."ChildID" = 10000
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" = 20000
 

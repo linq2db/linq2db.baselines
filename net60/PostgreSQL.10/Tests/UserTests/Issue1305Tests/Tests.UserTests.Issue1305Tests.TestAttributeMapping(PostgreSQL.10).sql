@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "ColumnOrderTest"
+DROP TABLE IF EXISTS "ColumnOrderTest"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "ColumnOrderTest"
 (
 	"RecordID"       Int       NOT NULL,
 	"EffectiveStart" TimeStamp NOT NULL,

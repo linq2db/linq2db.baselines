@@ -339,7 +339,12 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "HierarchyData"
+DROP TABLE IF EXISTS "HierarchyData"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "HierarchyData"
 (
 	"Id"    Int NOT NULL,
 	"Level" Int NOT NULL

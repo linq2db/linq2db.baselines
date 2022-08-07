@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TypeConvertTable"
+DROP TABLE IF EXISTS "TypeConvertTable"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TypeConvertTable"
 (
 	"Name"      text        NOT NULL,
 	"BoolValue" Char        NOT NULL,

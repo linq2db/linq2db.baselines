@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "CreateTableTypes"
+DROP TABLE IF EXISTS "CreateTableTypes"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "CreateTableTypes"
 (
 	"Id"         Int  NOT NULL,
 	"StringEnum" text NOT NULL

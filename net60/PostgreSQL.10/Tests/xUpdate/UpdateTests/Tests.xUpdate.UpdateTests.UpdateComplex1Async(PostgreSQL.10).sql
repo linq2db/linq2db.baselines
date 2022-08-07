@@ -4,15 +4,7 @@
 ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL (asynchronously)
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(13) -- String
@@ -99,12 +91,4 @@ FROM
 WHERE
 	t1."PersonID" = :id
 LIMIT :take
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL (asynchronously)
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
