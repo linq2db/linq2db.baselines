@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(DateTime, Convert(NVarChar(11), DatePart(year, [p].[DateTimeValue])) + '-10-1 20:35:44') as [c1]
+			Convert(DateTime, REPLICATE('0', 4 - LEN(CAST(DatePart(year, [p].[DateTimeValue]) as NVARCHAR(4)))) + CAST(DatePart(year, [p].[DateTimeValue]) as NVARCHAR(4)) + '-10-01 20:35:44') as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
