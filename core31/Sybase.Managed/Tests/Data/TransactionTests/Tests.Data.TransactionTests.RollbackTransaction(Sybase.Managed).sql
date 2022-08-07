@@ -43,12 +43,3 @@ FROM
 WHERE
 	[t].[ParentID] = 1010
 
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Parent]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] >= 1000
-

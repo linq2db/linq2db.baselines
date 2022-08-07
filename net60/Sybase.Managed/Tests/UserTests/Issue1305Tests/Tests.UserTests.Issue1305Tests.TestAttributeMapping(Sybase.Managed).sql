@@ -1,19 +1,28 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [ColumnOrderTest]
-(
-	[RecordID]       Int           NOT NULL,
-	[EffectiveStart] DateTime      NOT NULL,
-	[EffectiveEnd]   DateTime          NULL,
-	[Key]            Int           NOT NULL,
-	[Code]           NVarChar(255)     NULL,
-	[Name]           NVarChar(255)     NULL,
-	[Audit1ID]       Int           NOT NULL,
-	[Audit2ID]       Int           NOT NULL,
+IF (OBJECT_ID(N'ColumnOrderTest') IS NOT NULL)
+	DROP TABLE [ColumnOrderTest]
 
-	CONSTRAINT [PK_ColumnOrderTest] PRIMARY KEY CLUSTERED ([RecordID])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'ColumnOrderTest') IS NULL)
+	EXECUTE('
+		CREATE TABLE [ColumnOrderTest]
+		(
+			[RecordID]       Int           NOT NULL,
+			[EffectiveStart] DateTime      NOT NULL,
+			[EffectiveEnd]   DateTime          NULL,
+			[Key]            Int           NOT NULL,
+			[Code]           NVarChar(255)     NULL,
+			[Name]           NVarChar(255)     NULL,
+			[Audit1ID]       Int           NOT NULL,
+			[Audit2ID]       Int           NOT NULL,
+
+			CONSTRAINT [PK_ColumnOrderTest] PRIMARY KEY CLUSTERED ([RecordID])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

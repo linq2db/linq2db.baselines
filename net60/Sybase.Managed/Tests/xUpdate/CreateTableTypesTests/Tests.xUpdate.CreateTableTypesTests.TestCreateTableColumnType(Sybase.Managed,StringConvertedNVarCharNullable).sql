@@ -1,11 +1,20 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [CreateTableTypes]
-(
-	[StringConverted] NVarChar(5461)     NULL,
-	[Id]              Int            NOT NULL
-)
+IF (OBJECT_ID(N'CreateTableTypes') IS NOT NULL)
+	DROP TABLE [CreateTableTypes]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'CreateTableTypes') IS NULL)
+	EXECUTE('
+		CREATE TABLE [CreateTableTypes]
+		(
+			[StringConverted] NVarChar(5461)     NULL,
+			[Id]              Int            NOT NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

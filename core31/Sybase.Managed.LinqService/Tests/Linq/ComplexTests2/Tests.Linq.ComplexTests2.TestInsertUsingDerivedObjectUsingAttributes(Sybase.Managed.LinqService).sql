@@ -95,12 +95,3 @@ FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Person]
-FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] = 'test_inherited_insert'
-

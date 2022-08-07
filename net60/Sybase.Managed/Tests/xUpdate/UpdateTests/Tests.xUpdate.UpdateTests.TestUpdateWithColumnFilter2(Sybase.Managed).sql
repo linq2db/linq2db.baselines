@@ -118,14 +118,3 @@ FROM
 WHERE
 	[_].[PersonID] = @ID
 
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
-
-DELETE FROM [Person]
-FROM
-	[Person] [x]
-WHERE
-	[x].[PersonID] = @ID
-

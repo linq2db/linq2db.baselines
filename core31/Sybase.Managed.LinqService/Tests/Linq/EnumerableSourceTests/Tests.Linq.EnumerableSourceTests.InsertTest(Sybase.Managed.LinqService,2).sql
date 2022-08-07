@@ -1,13 +1,22 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [TableToInsert]
-(
-	[Id]    Int           NOT NULL,
-	[Value] NVarChar(255)     NULL,
+IF (OBJECT_ID(N'TableToInsert') IS NOT NULL)
+	DROP TABLE [TableToInsert]
 
-	CONSTRAINT [PK_TableToInsert] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'TableToInsert') IS NULL)
+	EXECUTE('
+		CREATE TABLE [TableToInsert]
+		(
+			[Id]    Int           NOT NULL,
+			[Value] NVarChar(255)     NULL,
+
+			CONSTRAINT [PK_TableToInsert] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

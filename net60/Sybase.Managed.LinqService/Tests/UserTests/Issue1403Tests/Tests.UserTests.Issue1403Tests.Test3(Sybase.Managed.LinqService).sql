@@ -1,13 +1,22 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Issue1403Tests_3]
-(
-	[event_description] NVarChar(255) NOT NULL,
-	[event_id]          Int           NOT NULL,
+IF (OBJECT_ID(N'Issue1403Tests_3') IS NOT NULL)
+	DROP TABLE [Issue1403Tests_3]
 
-	CONSTRAINT [PK_Issue1403Tests_3] PRIMARY KEY CLUSTERED ([event_id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Issue1403Tests_3') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Issue1403Tests_3]
+		(
+			[event_description] NVarChar(255) NOT NULL,
+			[event_id]          Int           NOT NULL,
+
+			CONSTRAINT [PK_Issue1403Tests_3] PRIMARY KEY CLUSTERED ([event_id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

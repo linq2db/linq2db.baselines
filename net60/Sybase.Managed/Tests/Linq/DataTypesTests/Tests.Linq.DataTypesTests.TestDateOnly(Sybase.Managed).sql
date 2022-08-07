@@ -26,7 +26,7 @@ INSERT INTO [DateOnlyTable]
 	[Column],
 	[Id]
 )
-SELECT NULL,'1900-01-01',1 UNION ALL
+SELECT NULL,'1950-01-01',1 UNION ALL
 SELECT '2200-01-01','2020-02-29',2
 
 BeforeExecute
@@ -69,7 +69,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date
-SET     @Column_1 = '1900-01-01'
+SET     @Column_1 = '1950-01-01'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -136,7 +136,7 @@ INSERT INTO [DateOnlyTable]
 	[Column],
 	[Id]
 )
-SELECT NULL,'1900-01-01',1 UNION ALL
+SELECT NULL,'1950-01-01',1 UNION ALL
 SELECT '2200-01-01','2020-02-29',2
 
 BeforeExecute
@@ -167,7 +167,7 @@ INSERT INTO [DateOnlyTable]
 	[Column],
 	[Id]
 )
-SELECT NULL,'1900-01-01',1 UNION ALL
+SELECT NULL,'1950-01-01',1 UNION ALL
 SELECT '2200-01-01','2020-02-29',2
 
 BeforeExecute

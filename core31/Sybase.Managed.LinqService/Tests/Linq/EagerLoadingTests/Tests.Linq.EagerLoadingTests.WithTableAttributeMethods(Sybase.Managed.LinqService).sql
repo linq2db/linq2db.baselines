@@ -1,23 +1,41 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [UserIssue3128]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_UserIssue3128] PRIMARY KEY CLUSTERED ([Id])
-)
+IF (OBJECT_ID(N'UserIssue3128') IS NOT NULL)
+	DROP TABLE [UserIssue3128]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [UserDetailsIssue3128]
-(
-	[UserId] Int NOT NULL,
-	[Age]    Int NOT NULL,
+IF (OBJECT_ID(N'UserIssue3128') IS NULL)
+	EXECUTE('
+		CREATE TABLE [UserIssue3128]
+		(
+			[Id] Int NOT NULL,
 
-	CONSTRAINT [PK_UserDetailsIssue3128] PRIMARY KEY CLUSTERED ([UserId])
-)
+			CONSTRAINT [PK_UserIssue3128] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'UserDetailsIssue3128') IS NOT NULL)
+	DROP TABLE [UserDetailsIssue3128]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'UserDetailsIssue3128') IS NULL)
+	EXECUTE('
+		CREATE TABLE [UserDetailsIssue3128]
+		(
+			[UserId] Int NOT NULL,
+			[Age]    Int NOT NULL,
+
+			CONSTRAINT [PK_UserDetailsIssue3128] PRIMARY KEY CLUSTERED ([UserId])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -32,8 +50,6 @@ VALUES
 (
 	@Id
 )
-
-SELECT @@IDENTITY
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -52,8 +68,6 @@ VALUES
 	@UserId,
 	@Age
 )
-
-SELECT @@IDENTITY
 
 BeforeExecute
 -- Sybase.Managed Sybase
