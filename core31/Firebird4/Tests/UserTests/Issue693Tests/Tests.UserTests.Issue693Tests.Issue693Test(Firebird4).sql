@@ -5,14 +5,6 @@ SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
 -- Firebird4 Firebird
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > 4
-
-BeforeExecute
--- Firebird4 Firebird
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(1) -- String
@@ -110,12 +102,4 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" = @id2
-
-BeforeExecute
--- Firebird4 Firebird
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" > 4
 

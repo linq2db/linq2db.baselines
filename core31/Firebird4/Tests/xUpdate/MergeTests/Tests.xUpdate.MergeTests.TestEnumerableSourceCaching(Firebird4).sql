@@ -1,13 +1,26 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
 
-CREATE TABLE "CacheTestTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CacheTestTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "CacheTestTable"';
+END
 
-	CONSTRAINT "PK_CacheTestTable" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CacheTestTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "CacheTestTable"
+			(
+				"Id"    Int NOT NULL,
+				"Value" Int NOT NULL,
+
+				CONSTRAINT "PK_CacheTestTable" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird4 Firebird

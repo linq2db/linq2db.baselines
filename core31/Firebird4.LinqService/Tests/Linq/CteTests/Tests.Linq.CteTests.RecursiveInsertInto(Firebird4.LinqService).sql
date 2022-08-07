@@ -347,11 +347,24 @@ VALUES
 BeforeExecute
 -- Firebird4 Firebird
 
-CREATE TABLE "HierarchyData"
-(
-	"Id"    Int NOT NULL,
-	"Level" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'HierarchyData')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "HierarchyData"';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'HierarchyData')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "HierarchyData"
+			(
+				"Id"    Int NOT NULL,
+				"Level" Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird4 Firebird

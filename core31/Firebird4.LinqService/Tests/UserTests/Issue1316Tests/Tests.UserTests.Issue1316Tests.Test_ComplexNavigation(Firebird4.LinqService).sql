@@ -1,12 +1,25 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
 
-CREATE TABLE "Issue1316Tests"
-(
-	ID Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1316Tests')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1316Tests"';
+END
 
-	CONSTRAINT "PK_Issue1316Tests" PRIMARY KEY (ID)
-)
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1316Tests')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Issue1316Tests"
+			(
+				ID Int NOT NULL,
+
+				CONSTRAINT "PK_Issue1316Tests" PRIMARY KEY (ID)
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird4 Firebird

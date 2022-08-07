@@ -1,26 +1,52 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
 
-CREATE TABLE "Topic"
-(
-	"Id"    Int                                    NOT NULL,
-	"Title" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Text"  VarChar(255) CHARACTER SET UNICODE_FSS,
-
-	CONSTRAINT "PK_Topic" PRIMARY KEY ("Id")
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Topic')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Topic"';
+END
 
 BeforeExecute
 -- Firebird4 Firebird
 
-CREATE TABLE "Message"
-(
-	"Id"      Int                                    NOT NULL,
-	"TopicId" Int                                    NOT NULL,
-	"Text"    VarChar(255) CHARACTER SET UNICODE_FSS,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Topic')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Topic"
+			(
+				"Id"    Int                                    NOT NULL,
+				"Title" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"Text"  VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_Message" PRIMARY KEY ("Id")
-)
+				CONSTRAINT "PK_Topic" PRIMARY KEY ("Id")
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Message')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Message"';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Message')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Message"
+			(
+				"Id"      Int                                    NOT NULL,
+				"TopicId" Int                                    NOT NULL,
+				"Text"    VarChar(255) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_Message" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird4 Firebird
