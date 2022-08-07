@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [Issue1363]
-(
-	[required_field] UniqueIdentifier NOT NULL,
-	[optional_field] UniqueIdentifier     NULL
-)
+DROP TABLE IF EXISTS [Issue1363]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue1363]', N'U') IS NULL)
+	CREATE TABLE [Issue1363]
+	(
+		[required_field] UniqueIdentifier NOT NULL,
+		[optional_field] UniqueIdentifier     NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

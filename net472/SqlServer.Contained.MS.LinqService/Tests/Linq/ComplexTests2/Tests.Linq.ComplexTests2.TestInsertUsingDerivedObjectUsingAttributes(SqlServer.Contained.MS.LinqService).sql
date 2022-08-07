@@ -99,12 +99,3 @@ FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DELETE [_]
-FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] = N'test_inherited_insert'
-

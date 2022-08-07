@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [Issue1189Customer]
-(
-	[ID]   Int            NOT NULL,
-	[NAME] NVarChar(4000) NOT NULL,
+DROP TABLE IF EXISTS [Issue1189Customer]
 
-	CONSTRAINT [PK_Issue1189Customer] PRIMARY KEY CLUSTERED ([ID])
-)
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue1189Customer]', N'U') IS NULL)
+	CREATE TABLE [Issue1189Customer]
+	(
+		[ID]   Int            NOT NULL,
+		[NAME] NVarChar(4000) NOT NULL,
+
+		CONSTRAINT [PK_Issue1189Customer] PRIMARY KEY CLUSTERED ([ID])
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
