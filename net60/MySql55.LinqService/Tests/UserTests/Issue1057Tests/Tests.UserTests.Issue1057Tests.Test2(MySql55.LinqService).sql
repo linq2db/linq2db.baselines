@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Task`
+DROP TABLE IF EXISTS `Task`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Task`
 (
 	`Id`         INT           NOT NULL,
 	`TargetName` VARCHAR(4000)     NULL,
@@ -12,7 +17,12 @@ CREATE TABLE `Task`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `TaskStage`
+DROP TABLE IF EXISTS `TaskStage`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TaskStage`
 (
 	`Id`     INT     NOT NULL,
 	`TaskId` INT     NOT NULL,
@@ -102,6 +112,8 @@ SELECT
 FROM
 	`Task` `p`
 		LEFT JOIN `TaskStage` `a_ActualStage` ON `p`.`Id` = `a_ActualStage`.`TaskId` AND `a_ActualStage`.`Actual` = 1
+ORDER BY
+	`p`.`Id`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

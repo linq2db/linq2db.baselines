@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `stLinks`
+DROP TABLE IF EXISTS `stLinks`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `stLinks`
 (
 	`inId`          INT           AUTO_INCREMENT NOT NULL,
 	`inIdParent`    INT                          NOT NULL,
@@ -23,7 +28,12 @@ CREATE TABLE `stLinks`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `stVersions`
+DROP TABLE IF EXISTS `stVersions`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `stVersions`
 (
 	`inId`     INT AUTO_INCREMENT NOT NULL,
 	`inIdMain` INT                NOT NULL,

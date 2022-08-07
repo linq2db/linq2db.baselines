@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Condos`
+DROP TABLE IF EXISTS `Condos`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Condos`
 (
 	`Id`         INT NOT NULL,
 	`LocationId` INT NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE `Condos`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `CategoryCondos`
+DROP TABLE IF EXISTS `CategoryCondos`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `CategoryCondos`
 (
 	`CategoryId` INT NOT NULL,
 	`CondoId`    INT NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE `CategoryCondos`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `CondoTags`
+DROP TABLE IF EXISTS `CondoTags`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `CondoTags`
 (
 	`CondoId` INT NOT NULL,
 	`TagId`   INT NOT NULL,
@@ -34,7 +49,12 @@ CREATE TABLE `CondoTags`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `Locations`
+DROP TABLE IF EXISTS `Locations`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Locations`
 (
 	`Id`           INT          NOT NULL,
 	`LocationName` VARCHAR(100) NOT NULL,

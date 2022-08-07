@@ -65,12 +65,3 @@ FROM
 WHERE
 	`c_1`.`ParentID` = 1
 
-BeforeExecute
--- MySql55Connector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Child` `t1`
-WHERE
-	`t1`.`ChildID` IN (1001, 1002)
-

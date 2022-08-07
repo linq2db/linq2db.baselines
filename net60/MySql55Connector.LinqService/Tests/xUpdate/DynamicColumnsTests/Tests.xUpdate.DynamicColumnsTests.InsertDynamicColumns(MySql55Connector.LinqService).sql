@@ -24,12 +24,3 @@ FROM
 WHERE
 	`c_1`.`FirstName` = 'John' AND `c_1`.`LastName` = 'The Dynamic'
 
-BeforeExecute
--- MySql55Connector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`LastName` = 'The Dynamic'
-

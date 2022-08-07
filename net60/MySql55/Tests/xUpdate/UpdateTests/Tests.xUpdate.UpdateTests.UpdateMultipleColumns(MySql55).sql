@@ -2,17 +2,6 @@
 -- MySql55 MySql.Official MySql
 DECLARE @ID Int32
 SET     @ID = 1001
-
-DELETE   `t1`
-FROM
-	`LinqDataTypes` `t1`
-WHERE
-	`t1`.`ID` = @ID
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @ID Int32
-SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue Int16
@@ -65,15 +54,4 @@ FROM
 WHERE
 	`t`.`ID` = @ID
 LIMIT @take
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-DECLARE @ID Int32
-SET     @ID = 1001
-
-DELETE   `t1`
-FROM
-	`LinqDataTypes` `t1`
-WHERE
-	`t1`.`ID` = @ID
 

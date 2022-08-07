@@ -1,14 +1,5 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`ParentID` = 1001
-
-BeforeExecute
--- MySql55Connector MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int32
@@ -34,13 +25,4 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1001
-
-BeforeExecute
--- MySql55Connector MySqlConnector MySql
-
-DELETE   `t1`
-FROM
-	`Parent` `t1`
-WHERE
-	`t1`.`Value1` = 1001
 

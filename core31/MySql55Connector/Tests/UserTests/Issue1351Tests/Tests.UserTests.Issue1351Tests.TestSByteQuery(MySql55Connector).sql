@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `T1351Model`
+DROP TABLE IF EXISTS `T1351Model`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `T1351Model`
 (
 	`ID`           INT     NOT NULL,
 	`TestField`    TINYINT NOT NULL,
