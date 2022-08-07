@@ -1,12 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [InsertTempTable]
-(
-	[Action]    NVarChar(4000)     NULL,
-	[NewId]     Int            NOT NULL,
-	[DeletedId] Int                NULL
-)
+DROP TABLE IF EXISTS [InsertTempTable]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[InsertTempTable]', N'U') IS NULL)
+	CREATE TABLE [InsertTempTable]
+	(
+		[Action]    NVarChar(4000)     NULL,
+		[NewId]     Int            NOT NULL,
+		[DeletedId] Int                NULL
+	)
 
 BeforeExecute
 -- SqlServer.2017

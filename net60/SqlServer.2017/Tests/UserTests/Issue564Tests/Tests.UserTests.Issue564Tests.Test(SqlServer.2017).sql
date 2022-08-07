@@ -1,15 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [Parent564]
-(
-	[Id]          Int             NOT NULL IDENTITY,
-	[Type]        NVarChar(4000)      NULL,
-	[StringValue] NVarChar(20)        NULL,
-	[IntValue]    Int                 NULL,
+DROP TABLE IF EXISTS [Parent564]
 
-	CONSTRAINT [PK_Parent564] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[Parent564]', N'U') IS NULL)
+	CREATE TABLE [Parent564]
+	(
+		[Id]          Int             NOT NULL IDENTITY,
+		[Type]        NVarChar(4000)      NULL,
+		[StringValue] NVarChar(20)        NULL,
+		[IntValue]    Int                 NULL,
+
+		CONSTRAINT [PK_Parent564] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2017

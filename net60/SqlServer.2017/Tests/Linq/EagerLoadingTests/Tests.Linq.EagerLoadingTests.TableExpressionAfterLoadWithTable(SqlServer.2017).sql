@@ -1,23 +1,35 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [UserIssue3128]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_UserIssue3128] PRIMARY KEY CLUSTERED ([Id])
-)
+DROP TABLE IF EXISTS [UserIssue3128]
 
 BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [UserDetailsIssue3128]
-(
-	[UserId] Int NOT NULL,
-	[Age]    Int NOT NULL,
+IF (OBJECT_ID(N'[UserIssue3128]', N'U') IS NULL)
+	CREATE TABLE [UserIssue3128]
+	(
+		[Id] Int NOT NULL,
 
-	CONSTRAINT [PK_UserDetailsIssue3128] PRIMARY KEY CLUSTERED ([UserId])
-)
+		CONSTRAINT [PK_UserIssue3128] PRIMARY KEY CLUSTERED ([Id])
+	)
+
+BeforeExecute
+-- SqlServer.2017
+
+DROP TABLE IF EXISTS [UserDetailsIssue3128]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[UserDetailsIssue3128]', N'U') IS NULL)
+	CREATE TABLE [UserDetailsIssue3128]
+	(
+		[UserId] Int NOT NULL,
+		[Age]    Int NOT NULL,
+
+		CONSTRAINT [PK_UserDetailsIssue3128] PRIMARY KEY CLUSTERED ([UserId])
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -32,8 +44,6 @@ VALUES
 (
 	@Id
 )
-
-SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2017
@@ -52,8 +62,6 @@ VALUES
 	@UserId,
 	@Age
 )
-
-SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2017
