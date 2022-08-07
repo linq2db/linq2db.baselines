@@ -2,61 +2,91 @@
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT '
-		CREATE TABLE "stLinks"
-		(
-			"inId"          Int                                     NOT NULL,
-			"inIdParent"    Int                                     NOT NULL,
-			"inIdChild"     Int                                     NOT NULL,
-			"inIdTypeRel"   Int                                     NOT NULL,
-			"inMaxQuantity" Float,
-			"inMinQuantity" Float,
-			"inIdMeasure"   Int,
-			"inIdUnit"      Int,
-			"State"         Int,
-			"dtModified"    TimeStamp                               NOT NULL,
-			"inIdOrgOwner"  Int,
-			"dtSynchDate"   TimeStamp,
-			"stGUID"        VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
-
-			CONSTRAINT "PK_stLinks" PRIMARY KEY ("inId")
-		)
-	';
-	EXECUTE STATEMENT '
-		CREATE GENERATOR "GIDENTITY_stLinks"
-	';
-	EXECUTE STATEMENT '
-		CREATE TRIGGER "TIDENTITY_stLinks" FOR "stLinks"
-		BEFORE INSERT POSITION 0
-		AS BEGIN
-			NEW."inId" = GEN_ID("GIDENTITY_stLinks", 1);
-		END
-	';
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_stLinks')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_stLinks"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_stLinks')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_stLinks"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stLinks')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "stLinks"';
 END
 
 BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT '
-		CREATE TABLE "stVersions"
-		(
-			"inId"     Int  NOT NULL,
-			"inIdMain" Int  NOT NULL,
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stLinks')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "stLinks"
+			(
+				"inId"          Int                                     NOT NULL,
+				"inIdParent"    Int                                     NOT NULL,
+				"inIdChild"     Int                                     NOT NULL,
+				"inIdTypeRel"   Int                                     NOT NULL,
+				"inMaxQuantity" Float,
+				"inMinQuantity" Float,
+				"inIdMeasure"   Int,
+				"inIdUnit"      Int,
+				"State"         Int,
+				"dtModified"    TimeStamp                               NOT NULL,
+				"inIdOrgOwner"  Int,
+				"dtSynchDate"   TimeStamp,
+				"stGUID"        VarChar(255) CHARACTER SET UNICODE_FSS  NOT NULL,
 
-			CONSTRAINT "PK_stVersions" PRIMARY KEY ("inId")
-		)
-	';
-	EXECUTE STATEMENT '
-		CREATE GENERATOR "GIDENTITY_stVersions"
-	';
-	EXECUTE STATEMENT '
-		CREATE TRIGGER "TIDENTITY_stVersions" FOR "stVersions"
-		BEFORE INSERT POSITION 0
-		AS BEGIN
-			NEW."inId" = GEN_ID("GIDENTITY_stVersions", 1);
-		END
-	';
+				CONSTRAINT "PK_stLinks" PRIMARY KEY ("inId")
+			)
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_stLinks')) THEN
+		EXECUTE STATEMENT '
+			CREATE GENERATOR "GIDENTITY_stLinks"
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_stLinks')) THEN
+		EXECUTE STATEMENT '
+			CREATE TRIGGER "TIDENTITY_stLinks" FOR "stLinks"
+			BEFORE INSERT POSITION 0
+			AS BEGIN
+				NEW."inId" = GEN_ID("GIDENTITY_stLinks", 1);
+			END
+		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_stVersions')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_stVersions"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_stVersions')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_stVersions"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stVersions')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "stVersions"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'stVersions')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "stVersions"
+			(
+				"inId"     Int  NOT NULL,
+				"inIdMain" Int  NOT NULL,
+
+				CONSTRAINT "PK_stVersions" PRIMARY KEY ("inId")
+			)
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_stVersions')) THEN
+		EXECUTE STATEMENT '
+			CREATE GENERATOR "GIDENTITY_stVersions"
+		';
+	IF (NOT EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_stVersions')) THEN
+		EXECUTE STATEMENT '
+			CREATE TRIGGER "TIDENTITY_stVersions" FOR "stVersions"
+			BEFORE INSERT POSITION 0
+			AS BEGIN
+				NEW."inId" = GEN_ID("GIDENTITY_stVersions", 1);
+			END
+		';
 END
 
 BeforeExecute

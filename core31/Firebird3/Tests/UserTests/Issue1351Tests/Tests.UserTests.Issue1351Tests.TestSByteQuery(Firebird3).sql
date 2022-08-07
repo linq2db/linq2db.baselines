@@ -1,12 +1,25 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "T1351Model"
-(
-	ID             Int      NOT NULL,
-	"TestField"    SmallInt NOT NULL,
-	"TestNullable" SmallInt
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T1351Model')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "T1351Model"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'T1351Model')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "T1351Model"
+			(
+				ID             Int      NOT NULL,
+				"TestField"    SmallInt NOT NULL,
+				"TestNullable" SmallInt
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

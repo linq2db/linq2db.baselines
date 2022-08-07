@@ -1,12 +1,25 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Issue1192Table"
-(
-	"IdId"      Int NOT NULL,
-	"MyOtherId" Int NOT NULL,
-	"Status"    Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1192Table')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1192Table"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1192Table')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Issue1192Table"
+			(
+				"IdId"      Int NOT NULL,
+				"MyOtherId" Int NOT NULL,
+				"Status"    Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

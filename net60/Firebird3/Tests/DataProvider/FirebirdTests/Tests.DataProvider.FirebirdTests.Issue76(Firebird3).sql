@@ -1,12 +1,25 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Issue76Entity"
-(
-	"Id"       BigInt                                 NOT NULL,
-	"Caption"  VarChar(255) CHARACTER SET UNICODE_FSS,
-	"ParentId" BigInt
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue76Entity')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue76Entity"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue76Entity')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Issue76Entity"
+			(
+				"Id"       BigInt                                 NOT NULL,
+				"Caption"  VarChar(255) CHARACTER SET UNICODE_FSS,
+				"ParentId" BigInt
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

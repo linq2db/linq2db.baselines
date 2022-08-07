@@ -1,23 +1,49 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Issue1096Task"
-(
-	"Id"         Int                                    NOT NULL,
-	"TargetName" VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096Task')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1096Task"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Issue1096TaskStage"
-(
-	"Id"     Int  NOT NULL,
-	"TaskId" Int  NOT NULL,
-	"Actual" CHAR NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096Task')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Issue1096Task"
+			(
+				"Id"         Int                                    NOT NULL,
+				"TargetName" VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
-	CONSTRAINT "PK_Issue1096TaskStage" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096TaskStage')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Issue1096TaskStage"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096TaskStage')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Issue1096TaskStage"
+			(
+				"Id"     Int  NOT NULL,
+				"TaskId" Int  NOT NULL,
+				"Actual" CHAR NOT NULL,
+
+				CONSTRAINT "PK_Issue1096TaskStage" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

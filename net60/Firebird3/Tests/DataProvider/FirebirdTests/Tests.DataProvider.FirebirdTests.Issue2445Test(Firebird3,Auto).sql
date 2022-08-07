@@ -1,21 +1,47 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Card"
-(
-	"Id"       Int                                    NOT NULL,
-	"CardName" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"OwnerId"  Int                                    NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Card')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Card"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Client"
-(
-	"Id"   Int                                    NOT NULL,
-	"Name" VarChar(255) CHARACTER SET UNICODE_FSS
-)
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Card')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Card"
+			(
+				"Id"       Int                                    NOT NULL,
+				"CardName" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"OwnerId"  Int                                    NOT NULL
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Client')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Client"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Client')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Client"
+			(
+				"Id"   Int                                    NOT NULL,
+				"Name" VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

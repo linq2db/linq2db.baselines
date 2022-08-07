@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird (asynchronously)
 
-DELETE FROM
-	"Child" "t1"
-WHERE
-	"t1"."ChildID" = 10000
-
-BeforeExecute
--- Firebird3 Firebird (asynchronously)
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" = 20000
-
-BeforeExecute
--- Firebird3 Firebird (asynchronously)
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -60,20 +44,4 @@ WHERE
 			"child_1"."ChildID" = 10000 AND "Parent"."ParentID" = "a_Parent"."ParentID" AND
 			("Parent"."Value1" = "a_Parent"."Value1" OR "Parent"."Value1" IS NULL AND "a_Parent"."Value1" IS NULL)
 	)
-
-BeforeExecute
--- Firebird3 Firebird (asynchronously)
-
-DELETE FROM
-	"Child" "t1"
-WHERE
-	"t1"."ChildID" = 10000
-
-BeforeExecute
--- Firebird3 Firebird (asynchronously)
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" = 20000
 
