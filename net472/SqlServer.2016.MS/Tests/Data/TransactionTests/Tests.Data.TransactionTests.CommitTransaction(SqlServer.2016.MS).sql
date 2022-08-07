@@ -45,12 +45,3 @@ FROM
 WHERE
 	[t].[ParentID] = 1010
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DELETE [t1]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] >= 1000
-
