@@ -2,16 +2,6 @@
 -- Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" "t1"
-WHERE
-	"t1".ID = @ID
-
-BeforeExecute
--- Firebird
-DECLARE @ID Integer -- Int32
-SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue SmallInt -- Int16
@@ -63,14 +53,4 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID = @ID
-
-BeforeExecute
--- Firebird
-DECLARE @ID Integer -- Int32
-SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" "t1"
-WHERE
-	"t1".ID = @ID
 

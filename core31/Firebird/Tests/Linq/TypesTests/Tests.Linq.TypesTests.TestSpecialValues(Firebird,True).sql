@@ -67,11 +67,3 @@ WHERE
 ORDER BY
 	"t1".ID
 
-BeforeExecute
--- Firebird
-
-DELETE FROM
-	"AllTypes" "t1"
-WHERE
-	"t1".ID > 2
-

@@ -1,17 +1,30 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "FluentMapping"
-(
-	"RecordID"       Int       NOT NULL,
-	"EffectiveStart" TimeStamp NOT NULL,
-	"EffectiveEnd"   TimeStamp,
-	"Key"            Int       NOT NULL,
-	"Unordered1"     Int       NOT NULL,
-	"Unordered2"     Int       NOT NULL,
-	"Audit1ID"       Int       NOT NULL,
-	"Audit2ID"       Int       NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentMapping')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "FluentMapping"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentMapping')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "FluentMapping"
+			(
+				"RecordID"       Int       NOT NULL,
+				"EffectiveStart" TimeStamp NOT NULL,
+				"EffectiveEnd"   TimeStamp,
+				"Key"            Int       NOT NULL,
+				"Unordered1"     Int       NOT NULL,
+				"Unordered2"     Int       NOT NULL,
+				"Audit1ID"       Int       NOT NULL,
+				"Audit2ID"       Int       NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
