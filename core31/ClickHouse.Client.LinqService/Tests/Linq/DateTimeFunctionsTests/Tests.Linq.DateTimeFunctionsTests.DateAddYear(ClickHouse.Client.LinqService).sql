@@ -1,8 +1,0 @@
-﻿BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	addYears(t.DateTimeValue, toInt32(11))
-FROM
-	LinqDataTypes t
-
