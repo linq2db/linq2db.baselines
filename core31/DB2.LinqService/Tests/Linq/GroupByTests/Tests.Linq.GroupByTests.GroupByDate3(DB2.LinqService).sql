@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(RTrim(Char(To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')))) || '-' || RTrim(Char(To_Number(To_Char("selectParam"."DateTimeValue", 'MM')))) || '-1') as "Key_1",
+			Date(Lpad(To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')),4,'0') || '-' || Lpad(To_Number(To_Char("selectParam"."DateTimeValue", 'MM')),2,'0') || '-01') as "Key_1",
 			"selectParam"."MoneyValue"
 		FROM
 			"LinqDataTypes" "selectParam"

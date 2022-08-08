@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			TimeStamp('2010-' || RTrim(Char("p".ID)) || '-1 20:35:44') as "c1"
+			TimeStamp('2010-' || Lpad("p".ID,2,'0') || '-01 20:35:44') as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

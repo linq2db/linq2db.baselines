@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(@p_1 || RTrim(Char("p".ID)) || '-1') as "c1"
+			Date(@p_1 || Lpad("p".ID,2,'0') || '-01') as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
