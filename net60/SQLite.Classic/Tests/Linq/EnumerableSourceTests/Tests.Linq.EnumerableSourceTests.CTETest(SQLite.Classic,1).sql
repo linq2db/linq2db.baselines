@@ -37,7 +37,7 @@ AS
 		[t1].[Value]
 	FROM
 		(
-			SELECT NULL[Id], NULL[Value] WHERE 1 = 0
+			SELECT NULL [Id], NULL [Value] WHERE 1 = 0
 			UNION ALL
 			VALUES
 				(2,'Janet'), (3,'Doe')
