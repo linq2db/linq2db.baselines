@@ -290,7 +290,7 @@ SELECT
 FROM
 	(
 		SELECT
-			TO_DATE(To_Char(t."TransactionDate", 'YYYY-MM-DD'), 'YYYY-MM-DD') as "c1"
+			t."TransactionDate" as "c1"
 		FROM
 			"Transactions" t
 	) d
