@@ -4,7 +4,7 @@ DECLARE @p_1 VarChar(2) -- String
 SET     @p_1 = '10'
 
 SELECT
-	Date(RTrim(Char(2010 + "t".ID)) || '-' || @p_1 || '-1')
+	Date(Lpad((2010 + "t".ID),4,'0') || '-' || @p_1 || '-01')
 FROM
 	"LinqDataTypes" "t"
 

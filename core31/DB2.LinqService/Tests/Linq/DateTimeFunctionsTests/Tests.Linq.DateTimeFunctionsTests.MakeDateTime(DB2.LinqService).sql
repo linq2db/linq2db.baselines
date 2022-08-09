@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date('2010-' || RTrim(Char("p".ID)) || '-1') as "c1"
+			Date('2010-' || Lpad("p".ID,2,'0') || '-01') as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

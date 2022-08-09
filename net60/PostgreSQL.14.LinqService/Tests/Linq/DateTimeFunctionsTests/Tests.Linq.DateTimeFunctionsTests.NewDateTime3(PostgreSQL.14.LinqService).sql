@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast((Cast(Cast(Floor(Extract(year from p."DateTimeValue")) as int) as VarChar(11)) || '-10-1 20:35:44') as TimeStamp) as c1
+			Cast((Lpad(Cast(Floor(Extract(year from p."DateTimeValue")) as int)::text,4,'0') || '-10-01 20:35:44') as TimeStamp) as c1
 		FROM
 			"LinqDataTypes" p
 	) t

@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(('2010-' || Cast("p".ID as VarChar(11) CHARACTER SET UNICODE_FSS) || '-1') as Date) as "c1"
+			Cast(('2010-' || Lpad("p".ID,2,'0') || '-01') as Date) as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
