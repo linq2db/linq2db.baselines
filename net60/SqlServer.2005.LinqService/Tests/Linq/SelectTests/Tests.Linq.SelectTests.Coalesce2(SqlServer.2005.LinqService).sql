@@ -3,9 +3,9 @@
 
 SELECT
 	[p].[PersonID],
-	Coalesce([p].[MiddleName], [p].[FirstName], N'None'),
-	Coalesce([p].[LastName], [p].[FirstName], N'None'),
-	Coalesce([p].[MiddleName], [p].[MiddleName], N'None')
+	Coalesce([p].[MiddleName], Coalesce([p].[FirstName], N'None')),
+	Coalesce([p].[LastName], Coalesce([p].[FirstName], N'None')),
+	Coalesce([p].[MiddleName], Coalesce([p].[MiddleName], N'None'))
 FROM
 	[Person] [p]
 WHERE
