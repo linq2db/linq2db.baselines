@@ -53,7 +53,7 @@ SET
 	col6 = CASE
 		WHEN gt_s_one.col3 = 'empty'
 			THEN ''
-		ELSE Cast(am.id as VarChar(11))
+		ELSE Cast(am.id as text)
 	END
 FROM
 	access_mode am
