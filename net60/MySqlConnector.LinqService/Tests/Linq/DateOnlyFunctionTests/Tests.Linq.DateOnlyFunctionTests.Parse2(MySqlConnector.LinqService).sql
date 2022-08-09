@@ -274,7 +274,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Cast(`t`.`TransactionDate` as CHAR(10)) as DATE) as `c1`
+			`t`.`TransactionDate` as `c1`
 		FROM
 			`Transactions` `t`
 	) `d`
