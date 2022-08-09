@@ -121,10 +121,10 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "LeaveRequestDateEntry"
 			(
-				"Id"             Int     NOT NULL,
-				"EndHour"        Decimal,
-				"StartHour"      Decimal,
-				"LeaveRequestId" Int     NOT NULL,
+				"Id"             Int             NOT NULL,
+				"EndHour"        Decimal(18, 10),
+				"StartHour"      Decimal(18, 10),
+				"LeaveRequestId" Int             NOT NULL,
 
 				CONSTRAINT "PK_LeaveRequestDateEntry" PRIMARY KEY ("Id")
 			)
