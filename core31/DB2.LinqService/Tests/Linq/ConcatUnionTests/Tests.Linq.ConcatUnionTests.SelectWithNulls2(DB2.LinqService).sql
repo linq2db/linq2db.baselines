@@ -17,7 +17,7 @@ FROM
 UNION ALL
 SELECT
 	Cast(NULL as Int),
-	Cast(NULL as Decimal),
+	Cast(NULL as Decimal(29, 10)),
 	Cast(NULL as timestamp),
 	Cast(NULL as timestamp),
 	Cast(NULL as smallint),
