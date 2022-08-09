@@ -2,7 +2,7 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Convert(Date, Convert(NVarChar(11), 2010 + [t].[ID]) + N'-10-01')
+	Convert(Date, format((2010 + [t].[ID]), 'd4') + N'-10-01')
 FROM
 	[LinqDataTypes] [t]
 

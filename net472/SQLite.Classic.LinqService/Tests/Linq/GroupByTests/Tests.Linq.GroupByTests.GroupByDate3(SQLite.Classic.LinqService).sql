@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(Cast(Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as NVarChar(11)) || '-' || printf('%02d', Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)) || '-01') as [Key_1],
+			Date(printf('%04d', Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int)) || '-' || printf('%02d', Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)) || '-01') as [Key_1],
 			[selectParam].[MoneyValue]
 		FROM
 			[LinqDataTypes] [selectParam]

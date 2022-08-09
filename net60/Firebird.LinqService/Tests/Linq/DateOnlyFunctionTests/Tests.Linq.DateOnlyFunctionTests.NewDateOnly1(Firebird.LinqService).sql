@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast((Cast(Cast(Floor(Extract(year from "p"."DateTimeValue")) as int) as VarChar(11) CHARACTER SET UNICODE_FSS) || '-10-01') as Date) as "c1"
+			Cast((Lpad(Cast(Floor(Extract(year from "p"."DateTimeValue")) as int),4,'0') || '-10-01') as Date) as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

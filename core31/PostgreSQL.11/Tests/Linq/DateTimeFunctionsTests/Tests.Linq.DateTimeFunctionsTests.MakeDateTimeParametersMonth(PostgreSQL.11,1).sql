@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Text(1) -- String
-SET     @p_1 = '1'
+DECLARE @p_1 Text(2) -- String
+SET     @p_1 = '01'
 
 SELECT
-	Cast((Cast((2010 + t."ID") as VarChar(11)) || '-' || :p_1 || '-1') as Date)
+	Cast((Lpad((2010 + t."ID")::text,4,'0') || '-' || :p_1 || '-01') as Date)
 FROM
 	"LinqDataTypes" t
 
