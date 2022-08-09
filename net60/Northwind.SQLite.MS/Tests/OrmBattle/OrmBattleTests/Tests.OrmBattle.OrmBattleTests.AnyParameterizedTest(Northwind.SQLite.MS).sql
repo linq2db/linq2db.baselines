@@ -102,7 +102,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT NULL[item] WHERE 1 = 0
+				SELECT NULL [item] WHERE 1 = 0
 				UNION ALL
 				VALUES
 					('ABCDE'), ('ALFKI')

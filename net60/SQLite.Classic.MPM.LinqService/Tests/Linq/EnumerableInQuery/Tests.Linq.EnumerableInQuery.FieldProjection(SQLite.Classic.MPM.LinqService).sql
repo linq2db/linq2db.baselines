@@ -21,7 +21,7 @@ SELECT
 			[r].[PersonID]
 		FROM
 			(
-				SELECT NULL[PersonID] WHERE 1 = 0
+				SELECT NULL [PersonID] WHERE 1 = 0
 				UNION ALL
 				VALUES
 					(1), (2), (3), (4)

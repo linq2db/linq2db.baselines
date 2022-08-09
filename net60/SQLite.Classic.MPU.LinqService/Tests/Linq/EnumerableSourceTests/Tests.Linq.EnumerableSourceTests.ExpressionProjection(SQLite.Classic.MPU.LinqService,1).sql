@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT NULL[FirstName], NULL[PersonID] WHERE 1 = 0
+			SELECT NULL [FirstName], NULL [PersonID] WHERE 1 = 0
 			UNION ALL
 			VALUES
 				('Janet',@ID), ('Doe',@ID_1)
