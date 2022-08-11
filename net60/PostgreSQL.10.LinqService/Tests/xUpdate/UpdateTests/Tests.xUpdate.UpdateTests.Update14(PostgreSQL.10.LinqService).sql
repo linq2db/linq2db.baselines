@@ -32,7 +32,7 @@ SET     @idx = 12
 UPDATE
 	"Person"
 SET
-	"LastName" = Cast(:idx as VarChar(11))
+	"LastName" = Cast(:idx as text)
 WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
