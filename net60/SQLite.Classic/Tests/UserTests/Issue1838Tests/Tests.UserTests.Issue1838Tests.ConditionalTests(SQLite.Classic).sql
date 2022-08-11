@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [Invoice]
 (
-	[InvoiceID]                BigInt  NOT NULL,
-	[InvoiceReferenceNumberID] BigInt      NULL,
-	[SettlementTotalOnIssue]   Decimal     NULL
+	[InvoiceID]                BigInt          NOT NULL,
+	[InvoiceReferenceNumberID] BigInt              NULL,
+	[SettlementTotalOnIssue]   Decimal(29, 10)     NULL
 )
 
 BeforeExecute
@@ -35,10 +35,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [InvoiceLineItem]
 (
-	[InvoiceLineItemID]     BigInt  NOT NULL,
-	[BillingAmountOverride] Decimal NOT NULL,
-	[Suppressed]            Bit     NOT NULL,
-	[OwningInvoiceID]       BigInt  NOT NULL
+	[InvoiceLineItemID]     BigInt          NOT NULL,
+	[BillingAmountOverride] Decimal(29, 10) NOT NULL,
+	[Suppressed]            Bit             NOT NULL,
+	[OwningInvoiceID]       BigInt          NOT NULL
 )
 
 BeforeExecute
