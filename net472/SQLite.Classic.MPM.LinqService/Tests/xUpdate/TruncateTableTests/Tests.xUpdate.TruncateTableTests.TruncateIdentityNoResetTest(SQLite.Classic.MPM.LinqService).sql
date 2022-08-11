@@ -3,8 +3,8 @@
 
 CREATE TABLE IF NOT EXISTS [test_temp]
 (
-	[ID]     INTEGER          NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Field1] Decimal(29, 10)  NOT NULL
+	[ID]     INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
+	[Field1] Decimal  NOT NULL
 )
 
 BeforeExecute
