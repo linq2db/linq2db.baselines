@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE [TestTrun]
 (
-	[ID]     INTEGER         NOT NULL,
-	[Field1] Decimal(29, 10) NOT NULL,
+	[ID]     INTEGER NOT NULL,
+	[Field1] Decimal NOT NULL,
 
 	CONSTRAINT [PK_TestTrun] PRIMARY KEY ([ID])
 )
