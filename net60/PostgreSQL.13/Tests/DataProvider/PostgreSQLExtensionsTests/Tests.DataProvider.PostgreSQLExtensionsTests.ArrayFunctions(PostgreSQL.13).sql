@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS "SampleClass"
 	"IntValue"     Int                NOT NULL,
 	"LongValue"    BigInt             NOT NULL,
 	"DoubleValue"  Float              NOT NULL,
-	"DecimalValue" decimal(29, 10)    NOT NULL,
+	"DecimalValue" decimal            NOT NULL,
 	"StrArray"     text[]                 NULL,
 	"IntArray"     int[]                  NULL,
 	"LongArray"    bigint[]               NULL,
