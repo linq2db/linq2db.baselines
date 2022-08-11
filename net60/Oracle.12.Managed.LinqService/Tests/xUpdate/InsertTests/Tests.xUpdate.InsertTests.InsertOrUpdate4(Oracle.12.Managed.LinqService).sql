@@ -53,7 +53,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar2(11))
+		t1."Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -63,7 +63,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast(:diagnosis as VarChar2(11))
+		Cast(:diagnosis as VarChar(11))
 	)
 
 BeforeExecute
@@ -83,7 +83,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar2(11))
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -93,7 +93,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast(:i as VarChar2(11))
+		Cast(:i as VarChar(11))
 	)
 
 BeforeExecute
@@ -113,7 +113,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar2(11))
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -123,7 +123,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast(:i as VarChar2(11))
+		Cast(:i as VarChar(11))
 	)
 
 BeforeExecute
