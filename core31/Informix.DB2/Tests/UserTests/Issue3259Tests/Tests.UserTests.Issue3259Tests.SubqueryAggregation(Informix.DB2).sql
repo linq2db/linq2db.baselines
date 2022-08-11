@@ -200,10 +200,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS LeaveRequestDateEntry
 (
-	Id             Int             NOT NULL,
-	EndHour        Decimal(29, 10)     NULL,
-	StartHour      Decimal(29, 10)     NULL,
-	LeaveRequestId Int             NOT NULL,
+	Id             Int     NOT NULL,
+	EndHour        Decimal     NULL,
+	StartHour      Decimal     NULL,
+	LeaveRequestId Int     NOT NULL,
 
 	PRIMARY KEY (Id)
 )
