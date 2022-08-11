@@ -42,9 +42,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [CASH]
 (
-	[ID_DETAIL] INTEGER         NOT NULL,
-	[ID_TEXT]   INTEGER         NOT NULL,
-	[Fee]       Decimal(29, 10) NOT NULL
+	[ID_DETAIL] INTEGER NOT NULL,
+	[ID_TEXT]   INTEGER NOT NULL,
+	[Fee]       Decimal NOT NULL
 )
 
 BeforeExecute
