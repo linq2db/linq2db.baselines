@@ -200,10 +200,10 @@ BeforeExecute
 
 CREATE TABLE [LeaveRequestDateEntry]
 (
-	[Id]             Int     NOT NULL,
-	[EndHour]        Decimal     NULL,
-	[StartHour]      Decimal     NULL,
-	[LeaveRequestId] Int     NOT NULL,
+	[Id]             Int             NOT NULL,
+	[EndHour]        Decimal(28, 10)     NULL,
+	[StartHour]      Decimal(28, 10)     NULL,
+	[LeaveRequestId] Int             NOT NULL,
 
 	CONSTRAINT [PK_LeaveRequestDateEntry] PRIMARY KEY CLUSTERED ([Id])
 )
