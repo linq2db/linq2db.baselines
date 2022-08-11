@@ -60,16 +60,16 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `billing_TempReading`
 (
-	`id`               INT         AUTO_INCREMENT NOT NULL,
-	`DevSerNum`        VARCHAR(50)                NOT NULL,
-	`devid`            VARCHAR(50)                    NULL,
-	`tsdevice`         DATETIME                   NOT NULL,
-	`value`            DECIMAL                    NOT NULL,
-	`Devtypeid`        INT                            NULL,
-	`DevReadingTypeId` INT                            NULL,
-	`ReadingTypeName`  VARCHAR(50)                    NULL,
-	`DevGlobalType`    INT                        NOT NULL,
-	`Responsibility`   INT                        NOT NULL,
+	`id`               INT             AUTO_INCREMENT NOT NULL,
+	`DevSerNum`        VARCHAR(50)                    NOT NULL,
+	`devid`            VARCHAR(50)                        NULL,
+	`tsdevice`         DATETIME                       NOT NULL,
+	`value`            DECIMAL(29, 10)                NOT NULL,
+	`Devtypeid`        INT                                NULL,
+	`DevReadingTypeId` INT                                NULL,
+	`ReadingTypeName`  VARCHAR(50)                        NULL,
+	`DevGlobalType`    INT                            NOT NULL,
+	`Responsibility`   INT                            NOT NULL,
 
 	CONSTRAINT `PK_billing_TempReading` PRIMARY KEY CLUSTERED (`id`)
 )
