@@ -64,7 +64,7 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND numericDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND numericDataType IS NULL OR @p IS NOT NULL AND numericDataType = @p
@@ -90,7 +90,7 @@ SELECT ID FROM [AllTypes] WHERE numericDataType = @p
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal(8, 1)
 SET     @p = 9999999.0
 
 SELECT ID FROM [AllTypes] WHERE numericDataType = @p
@@ -220,7 +220,7 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
@@ -246,7 +246,7 @@ SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal(8, 1)
 SET     @p = 2222222.0
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
@@ -272,7 +272,7 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND smallmoneyDataType IS NULL OR @p 
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND smallmoneyDataType IS NULL OR @p IS NOT NULL AND smallmoneyDataType = @p
@@ -298,7 +298,7 @@ SELECT ID FROM [AllTypes] WHERE smallmoneyDataType = @p
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal(10, 4)
 SET     @p = 100000.0000
 
 SELECT ID FROM [AllTypes] WHERE smallmoneyDataType = @p
@@ -428,7 +428,7 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND moneyDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND moneyDataType IS NULL OR @p IS NOT NULL AND moneyDataType = @p
@@ -454,7 +454,7 @@ SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal(10, 4)
 SET     @p = 100000.0000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p

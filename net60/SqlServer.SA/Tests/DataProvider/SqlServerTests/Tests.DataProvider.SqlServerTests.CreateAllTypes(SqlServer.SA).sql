@@ -10,10 +10,10 @@ CREATE TABLE [AllTypeCreateTest]
 (
 	[ID]                       Int               NOT NULL IDENTITY,
 	[bigintDataType]           BigInt                NULL,
-	[numericDataType]          Decimal(29, 10)       NULL,
+	[numericDataType]          Decimal               NULL,
 	[bitDataType]              Bit                   NULL,
 	[smallintDataType]         SmallInt              NULL,
-	[decimalDataType]          Decimal(29, 10)       NULL,
+	[decimalDataType]          Decimal               NULL,
 	[smallmoneyDataType]       SmallMoney            NULL,
 	[intDataType]              Int                   NULL,
 	[tinyintDataType]          TinyInt               NULL,
