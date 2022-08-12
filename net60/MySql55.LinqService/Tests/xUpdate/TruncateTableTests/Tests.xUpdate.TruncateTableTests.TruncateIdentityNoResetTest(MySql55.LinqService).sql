@@ -3,8 +3,8 @@
 
 CREATE TABLE IF NOT EXISTS `test_temp`
 (
-	`ID`     INT             AUTO_INCREMENT NOT NULL,
-	`Field1` DECIMAL(29, 10)                NOT NULL,
+	`ID`     INT     AUTO_INCREMENT NOT NULL,
+	`Field1` DECIMAL                NOT NULL,
 
 	CONSTRAINT `PK_test_temp` PRIMARY KEY CLUSTERED (`ID`)
 )
