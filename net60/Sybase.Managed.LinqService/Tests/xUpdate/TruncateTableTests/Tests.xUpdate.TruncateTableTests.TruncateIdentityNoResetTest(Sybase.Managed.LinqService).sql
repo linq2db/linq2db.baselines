@@ -5,8 +5,8 @@ IF (OBJECT_ID(N'test_temp') IS NULL)
 	EXECUTE('
 		CREATE TABLE [test_temp]
 		(
-			[ID]     Int             IDENTITY NOT NULL,
-			[Field1] Decimal(29, 10)          NOT NULL,
+			[ID]     Int     IDENTITY NOT NULL,
+			[Field1] Decimal          NOT NULL,
 
 			CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
 		)
