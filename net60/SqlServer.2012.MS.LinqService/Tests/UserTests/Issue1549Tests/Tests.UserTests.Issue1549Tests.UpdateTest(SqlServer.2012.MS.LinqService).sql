@@ -68,16 +68,16 @@ BeforeExecute
 IF (OBJECT_ID(N'[billing_TempReading]', N'U') IS NULL)
 	CREATE TABLE [billing_TempReading]
 	(
-		[id]               Int              NOT NULL IDENTITY,
-		[DevSerNum]        NVarChar(50)     NOT NULL,
-		[devid]            NVarChar(50)         NULL,
-		[tsdevice]         DateTime2        NOT NULL,
-		[value]            Decimal(29, 10)  NOT NULL,
-		[Devtypeid]        Int                  NULL,
-		[DevReadingTypeId] Int                  NULL,
-		[ReadingTypeName]  NVarChar(50)         NULL,
-		[DevGlobalType]    Int              NOT NULL,
-		[Responsibility]   Int              NOT NULL,
+		[id]               Int           NOT NULL IDENTITY,
+		[DevSerNum]        NVarChar(50)  NOT NULL,
+		[devid]            NVarChar(50)      NULL,
+		[tsdevice]         DateTime2     NOT NULL,
+		[value]            Decimal       NOT NULL,
+		[Devtypeid]        Int               NULL,
+		[DevReadingTypeId] Int               NULL,
+		[ReadingTypeName]  NVarChar(50)      NULL,
+		[DevGlobalType]    Int           NOT NULL,
+		[Responsibility]   Int           NOT NULL,
 
 		CONSTRAINT [PK_billing_TempReading] PRIMARY KEY CLUSTERED ([id])
 	)
