@@ -116,7 +116,7 @@ SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "decimalDataType" IS NULL OR @p I
 
 BeforeExecute
 -- Firebird
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "decimalDataType" IS NULL OR @p IS NOT NULL AND "decimalDataType" = @p
@@ -142,7 +142,7 @@ SELECT ID FROM "AllTypes" WHERE "decimalDataType" = @p
 
 BeforeExecute
 -- Firebird
-DECLARE @p Decimal(29, 10)
+DECLARE @p Decimal(7, 0)
 SET     @p = 2222222
 
 SELECT ID FROM "AllTypes" WHERE "decimalDataType" = @p
