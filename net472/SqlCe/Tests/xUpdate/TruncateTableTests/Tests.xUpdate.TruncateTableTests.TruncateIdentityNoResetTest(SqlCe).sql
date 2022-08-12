@@ -3,8 +3,8 @@
 
 CREATE TABLE [test_temp]
 (
-	[ID]     Int              NOT NULL IDENTITY,
-	[Field1] Decimal(29, 10)  NOT NULL,
+	[ID]     Int      NOT NULL IDENTITY,
+	[Field1] Decimal  NOT NULL,
 
 	CONSTRAINT [PK_test_temp] PRIMARY KEY ([ID])
 )
