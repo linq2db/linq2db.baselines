@@ -14,16 +14,16 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE NC_CODE
 		(
-			HANDLE             NVarChar(255)   NOT NULL,
-			CHANGE_STAMP       Decimal(29, 10)     NULL,
-			SITE               NVarChar(18)        NULL,
-			NC_CODE            NVarChar(48)        NULL,
-			DESCRIPTION        NVarChar(120)       NULL,
-			STATUS_BO          NVarChar(255)       NULL,
-			CREATED_DATE_TIME  timestamp           NULL,
-			MODIFIED_DATE_TIME timestamp           NULL,
-			NC_CATEGORY        NVarChar(255)       NULL,
-			DPMO_CATEGORY_BO   NVarChar(255)       NULL
+			HANDLE             NVarChar(255) NOT NULL,
+			CHANGE_STAMP       Decimal           NULL,
+			SITE               NVarChar(18)      NULL,
+			NC_CODE            NVarChar(48)      NULL,
+			DESCRIPTION        NVarChar(120)     NULL,
+			STATUS_BO          NVarChar(255)     NULL,
+			CREATED_DATE_TIME  timestamp         NULL,
+			MODIFIED_DATE_TIME timestamp         NULL,
+			NC_CATEGORY        NVarChar(255)     NULL,
+			DPMO_CATEGORY_BO   NVarChar(255)     NULL
 		)
 	';
 END
@@ -44,10 +44,10 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE NC_GROUP_MEMBER
 		(
-			HANDLE               NVarChar(255)   NOT NULL,
-			NC_GROUP_BO          NVarChar(255)       NULL,
-			NC_CODE_OR_GROUP_GBO NVarChar(255)       NULL,
-			SEQUENCE             Decimal(29, 10)     NULL
+			HANDLE               NVarChar(255) NOT NULL,
+			NC_GROUP_BO          NVarChar(255)     NULL,
+			NC_CODE_OR_GROUP_GBO NVarChar(255)     NULL,
+			SEQUENCE             Decimal           NULL
 		)
 	';
 END
