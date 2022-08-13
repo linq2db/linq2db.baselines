@@ -18,7 +18,7 @@ DECLARE @value_1 Real -- Single
 SET     @value_1 = 6579.64648
 
 SELECT TOP (@take)
-	Convert(Real, @value_1)
+	@value_1
 FROM
 	[LinqDataTypes] [_]
 
@@ -66,7 +66,7 @@ DECLARE @value_1 Float -- Double
 SET     @value_1 = 6579.6464800000003
 
 SELECT TOP (@take)
-	Convert(Float, @value_1)
+	@value_1
 FROM
 	[LinqDataTypes] [_]
 
