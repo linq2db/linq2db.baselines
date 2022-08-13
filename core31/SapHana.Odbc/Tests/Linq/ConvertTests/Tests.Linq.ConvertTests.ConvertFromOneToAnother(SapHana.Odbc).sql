@@ -6,7 +6,7 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(? as Decimal)
+	?
 FROM
 	"LinqDataTypes" "_"
 LIMIT ?
@@ -58,7 +58,7 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(? as Real)
+	?
 FROM
 	"LinqDataTypes" "_"
 LIMIT ?
@@ -110,7 +110,7 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	Cast(? as Double)
+	?
 FROM
 	"LinqDataTypes" "_"
 LIMIT ?
