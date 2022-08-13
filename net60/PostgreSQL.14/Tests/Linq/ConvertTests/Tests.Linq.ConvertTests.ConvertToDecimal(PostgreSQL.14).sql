@@ -2,9 +2,9 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(t."MoneyValue" as decimal)
+	t."MoneyValue"
 FROM
 	"LinqDataTypes" t
 WHERE
-	Cast(t."MoneyValue" as decimal) > 0
+	t."MoneyValue" > 0
 
