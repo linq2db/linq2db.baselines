@@ -4751,21 +4751,14 @@ SELECT Cast(-79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p Decimal(29, 0)
-SET     @p = -79228162514264337593543950335
-
-SELECT @p
-
-BeforeExecute
--- SqlServer.2017
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
@@ -4782,21 +4775,14 @@ SELECT Cast(79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p Decimal(29, 0)
-SET     @p = 79228162514264337593543950335
-
-SELECT @p
-
-BeforeExecute
--- SqlServer.2017
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p
@@ -4813,21 +4799,14 @@ SELECT Cast(-79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p Decimal(29, 0)
-SET     @p = -79228162514264337593543950335
-
-SELECT @p
-
-BeforeExecute
--- SqlServer.2017
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
@@ -4844,21 +4823,14 @@ SELECT Cast(79228162514264337593543950335 as numeric(38))
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p Decimal(29, 0)
-SET     @p = 79228162514264337593543950335
-
-SELECT @p
-
-BeforeExecute
--- SqlServer.2017
-DECLARE @p Decimal(29, 0)
+DECLARE @p Decimal(38, 0)
 SET     @p = 79228162514264337593543950335
 
 SELECT @p
