@@ -282,7 +282,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Cast("t"."TransactionDate" as VarChar(10) CHARACTER SET UNICODE_FSS) as Date) as "c1"
+			"t"."TransactionDate" as "c1"
 		FROM
 			"Transactions" "t"
 	) "d"

@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Cast("t"."MoneyValue" as Decimal(29, 10))
+	"t"."MoneyValue"
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	Cast("t"."MoneyValue" as Decimal(29, 10)) > 0
+	"t"."MoneyValue" > 0
 

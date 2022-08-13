@@ -274,7 +274,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(To_Char(t.TransactionDate, '%Y-%m-%d') as DATETIME YEAR TO DAY) as c1
+			t.TransactionDate as c1
 		FROM
 			Transactions t
 	) d

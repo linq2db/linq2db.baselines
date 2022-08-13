@@ -47,7 +47,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(Date, Convert(NVarChar(10), [t].[TransactionDate])) as [c1]
+			[t].[TransactionDate] as [c1]
 		FROM
 			[Transactions] [t]
 	) [d]

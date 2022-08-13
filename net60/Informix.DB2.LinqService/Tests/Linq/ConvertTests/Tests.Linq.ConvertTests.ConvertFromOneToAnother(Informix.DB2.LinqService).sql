@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	Cast(6579.64648 as Decimal(29, 10))
+	6579.64648
 FROM
 	LinqDataTypes t1
 
@@ -10,7 +10,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	Cast(6579.64648 as Decimal(29, 10))
+	Cast(6579.64648 as Decimal)
 FROM
 	LinqDataTypes t1
 
@@ -18,15 +18,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	Cast(6579.6464800000003 as Decimal(29, 10))
-FROM
-	LinqDataTypes t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT FIRST 1
-	Cast(6579.64648 as Real)
+	Cast(6579.6464800000003 as Decimal)
 FROM
 	LinqDataTypes t1
 
@@ -35,6 +27,14 @@ BeforeExecute
 
 SELECT FIRST 1
 	Cast(6579.64648 as Real)
+FROM
+	LinqDataTypes t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	6579.64648
 FROM
 	LinqDataTypes t1
 
@@ -66,7 +66,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	Cast(6579.6464800000003 as Float)
+	6579.6464800000003
 FROM
 	LinqDataTypes t1
 
