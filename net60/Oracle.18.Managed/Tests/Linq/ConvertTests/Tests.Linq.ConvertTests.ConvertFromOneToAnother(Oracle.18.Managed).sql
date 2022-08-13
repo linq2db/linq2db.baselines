@@ -19,7 +19,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Real)
+	:value_1
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
@@ -71,7 +71,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Float)
+	:value_1
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT :take ROWS ONLY
