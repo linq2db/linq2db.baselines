@@ -19,7 +19,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(@value_1 as Decimal(29, 10))
+	@value_1
 FROM
 	`LinqDataTypes` `_`
 LIMIT @take
@@ -71,7 +71,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(@value_1 as Decimal(29, 10))
+	@value_1
 FROM
 	`LinqDataTypes` `_`
 LIMIT @take
