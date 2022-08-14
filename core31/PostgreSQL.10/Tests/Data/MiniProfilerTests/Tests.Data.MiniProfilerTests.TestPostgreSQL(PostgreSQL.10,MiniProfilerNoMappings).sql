@@ -7,15 +7,15 @@ SELECT @p
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
-DECLARE @p Date
-SET     @p = '1234-11-22'::date
+DECLARE @p Interval -- Object
+SET     @p = -00:20:34
 
 SELECT @p
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
-DECLARE @p Date
-SET     @p = '1234-11-22'::date
+DECLARE @p Interval -- Object
+SET     @p = -00:20:34
 
 SELECT @p
 
