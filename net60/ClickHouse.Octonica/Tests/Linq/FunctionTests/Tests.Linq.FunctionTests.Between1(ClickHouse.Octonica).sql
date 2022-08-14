@@ -1,0 +1,11 @@
+﻿BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	p.ParentID,
+	p.Value1
+FROM
+	Parent p
+WHERE
+	p.Value1 BETWEEN toInt32(1) AND toInt32(10)
+
