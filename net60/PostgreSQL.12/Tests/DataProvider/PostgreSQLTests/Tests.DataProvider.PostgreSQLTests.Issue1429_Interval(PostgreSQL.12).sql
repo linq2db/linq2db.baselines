@@ -11,7 +11,7 @@ BeforeExecute
 DECLARE @timeDataType Interval -- Object
 SET     @timeDataType = 00:01:00
 DECLARE @intervalDataType Interval -- Object
-SET     @intervalDataType = 00:01:00
+SET     @intervalDataType = NpgsqlTypes.NpgsqlInterval
 
 INSERT INTO "AllTypes"
 (
@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @intervalDataType Interval -- Object
-SET     @intervalDataType = 3 days
+SET     @intervalDataType = NpgsqlTypes.NpgsqlInterval
 DECLARE @intervalDataType2 Interval -- Object
 SET     @intervalDataType2 = 3.00:00:00
 
