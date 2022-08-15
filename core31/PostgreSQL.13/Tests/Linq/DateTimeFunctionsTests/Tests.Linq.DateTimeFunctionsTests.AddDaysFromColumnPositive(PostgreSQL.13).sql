@@ -9,7 +9,7 @@ SET     @DateTimeValue = '2018-01-03'::date
 DECLARE @BoolValue Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
+SET     @GuidValue = '00000000-0000-0000-0000-000000000000'::uuid
 DECLARE @BinaryValue Bytea -- Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue Smallint -- Int16
