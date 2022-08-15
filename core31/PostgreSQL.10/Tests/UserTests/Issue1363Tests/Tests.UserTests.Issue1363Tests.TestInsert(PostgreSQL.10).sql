@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS "Issue1363"
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Uuid -- Guid
-SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
 INSERT INTO "Issue1363"
 (
@@ -38,9 +38,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Uuid -- Guid
-SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'
+SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @testId Uuid -- Guid
-SET     @testId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @testId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
 INSERT INTO "Issue1363"
 (
@@ -63,7 +63,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @id2 Uuid -- Guid
-SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
