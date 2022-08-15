@@ -23,15 +23,15 @@ INSERT INTO "GuidTable"
 	"Id"
 )
 VALUES
-(NULL,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',1),
-('bd3973a5-4323-4dd8-9f4f-df9f93e2a627','a948600d-de21-4f74-8ac2-9516b287076e',2)
+(NULL,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,1),
+('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid,'a948600d-de21-4f74-8ac2-9516b287076e'::uuid,2)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Column_1 Uuid -- Guid
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @ColumnNullable Uuid -- Guid
-SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
+SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 
 SELECT
 	r."ColumnNullable",
@@ -52,8 +52,8 @@ SELECT
 FROM
 	"GuidTable" r
 WHERE
-	r."Column" = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
-	r."ColumnNullable" = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
+	r."Column" = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid AND
+	r."ColumnNullable" = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -66,7 +66,7 @@ BeforeExecute
 DECLARE @ColumnNullable Uuid -- Guid
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Uuid -- Guid
-SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -86,9 +86,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @ColumnNullable Uuid -- Guid
-SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
+SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 DECLARE @Column_1 Uuid -- Guid
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
@@ -133,8 +133,8 @@ INSERT INTO "GuidTable"
 	"Id"
 )
 VALUES
-(NULL,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',1),
-('bd3973a5-4323-4dd8-9f4f-df9f93e2a627','a948600d-de21-4f74-8ac2-9516b287076e',2)
+(NULL,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,1),
+('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid,'a948600d-de21-4f74-8ac2-9516b287076e'::uuid,2)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
