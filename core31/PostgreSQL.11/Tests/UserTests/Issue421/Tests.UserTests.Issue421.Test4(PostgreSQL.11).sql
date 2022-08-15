@@ -25,7 +25,7 @@ INSERT INTO "BlobClass"
 VALUES
 (
 	1,
-	E'\\x010203'
+	E'\\x010203'::bytea
 )
 
 BeforeExecute

@@ -900,6 +900,20 @@ CREATE TABLE "CollatedTable"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
+DROP TABLE "TestMergeIdentity"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE "TestMergeIdentity"
+(
+	"Id"     SERIAL NOT NULL PRIMARY KEY,
+	"Field"  INT NULL
+)
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -914,18 +928,18 @@ INSERT INTO "LinqDataTypes"
 	"StringValue"
 )
 VALUES
-(1,1.11,'2001-01-11 01:11:21.100'::timestamp,NULL,True,'ef129165-6ffe-4df9-bb6b-bb16e413c883',1,NULL,1,NULL),
-(2,2.49,'2005-05-15 05:15:25.500'::timestamp,NULL,False,'bc663a61-7b40-4681-ac38-f9aaf55b706b',2,NULL,2,''),
-(3,3.99,'2009-09-19 09:19:29.090'::timestamp,NULL,True,'d2f970c0-35ac-4987-9cd5-5badb1757436',3,NULL,NULL,'1'),
-(4,4.50,'2009-09-20 09:19:29.090'::timestamp,NULL,False,'40932fdb-1543-4e4a-ac2c-ca371604fb4b',4,NULL,NULL,'2'),
-(5,5.50,'2009-09-20 09:19:29.090'::timestamp,NULL,True,'febe3eca-cb5f-40b2-ad39-2979d312afca',5,NULL,NULL,'3'),
-(6,6.55,'2009-09-22 09:19:29.090'::timestamp,NULL,False,'8d3c5d1d-47db-4730-9fe7-968f6228a4c0',6,NULL,NULL,'4'),
-(7,7.00,'2009-09-23 09:19:29.090'::timestamp,NULL,True,'48094115-83af-46dd-a906-bff26ee21ee2',7,NULL,NULL,'5'),
-(8,8.99,'2009-09-24 09:19:29.090'::timestamp,NULL,False,'c1139f1f-1335-4cd4-937e-92602f732dd3',8,NULL,NULL,'6'),
-(9,9.63,'2009-09-25 09:19:29.090'::timestamp,NULL,True,'46c5c512-3d4b-4cf7-b4e7-1de080789e5d',9,NULL,NULL,'7'),
-(10,10.77,'2009-09-26 09:19:29.090'::timestamp,NULL,False,'61b2bc55-147f-4b40-93ed-a4aa83602fee',10,NULL,NULL,'8'),
-(11,11.45,'2009-09-27'::date,NULL,True,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230',11,NULL,NULL,'9'),
-(12,11.45,'2012-11-07 19:19:29.090'::timestamp,NULL,True,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0')
+(1,1.11,'2001-01-11 01:11:21.100'::timestamp,NULL,True,'ef129165-6ffe-4df9-bb6b-bb16e413c883'::uuid,1,NULL,1,NULL),
+(2,2.49,'2005-05-15 05:15:25.500'::timestamp,NULL,False,'bc663a61-7b40-4681-ac38-f9aaf55b706b'::uuid,2,NULL,2,''),
+(3,3.99,'2009-09-19 09:19:29.090'::timestamp,NULL,True,'d2f970c0-35ac-4987-9cd5-5badb1757436'::uuid,3,NULL,NULL,'1'),
+(4,4.50,'2009-09-20 09:19:29.090'::timestamp,NULL,False,'40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid,4,NULL,NULL,'2'),
+(5,5.50,'2009-09-20 09:19:29.090'::timestamp,NULL,True,'febe3eca-cb5f-40b2-ad39-2979d312afca'::uuid,5,NULL,NULL,'3'),
+(6,6.55,'2009-09-22 09:19:29.090'::timestamp,NULL,False,'8d3c5d1d-47db-4730-9fe7-968f6228a4c0'::uuid,6,NULL,NULL,'4'),
+(7,7.00,'2009-09-23 09:19:29.090'::timestamp,NULL,True,'48094115-83af-46dd-a906-bff26ee21ee2'::uuid,7,NULL,NULL,'5'),
+(8,8.99,'2009-09-24 09:19:29.090'::timestamp,NULL,False,'c1139f1f-1335-4cd4-937e-92602f732dd3'::uuid,8,NULL,NULL,'6'),
+(9,9.63,'2009-09-25 09:19:29.090'::timestamp,NULL,True,'46c5c512-3d4b-4cf7-b4e7-1de080789e5d'::uuid,9,NULL,NULL,'7'),
+(10,10.77,'2009-09-26 09:19:29.090'::timestamp,NULL,False,'61b2bc55-147f-4b40-93ed-a4aa83602fee'::uuid,10,NULL,NULL,'8'),
+(11,11.45,'2009-09-27'::date,NULL,True,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,11,NULL,NULL,'9'),
+(12,11.45,'2012-11-07 19:19:29.090'::timestamp,NULL,True,'03021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,12,NULL,NULL,'0')
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

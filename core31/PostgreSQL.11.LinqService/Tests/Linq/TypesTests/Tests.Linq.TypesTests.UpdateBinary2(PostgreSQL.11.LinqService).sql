@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BinaryValue Bytea(5) -- Binary
-SET     @BinaryValue = E'\\x0102030405'
+SET     @BinaryValue = E'\\x0102030405'::bytea
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -15,7 +15,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BinaryValue Bytea(5) -- Binary
-SET     @BinaryValue = E'\\x0504030201'
+SET     @BinaryValue = E'\\x0504030201'::bytea
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
 
