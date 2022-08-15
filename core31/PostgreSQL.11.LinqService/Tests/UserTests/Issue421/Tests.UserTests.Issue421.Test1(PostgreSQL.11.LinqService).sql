@@ -19,7 +19,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @BlobValue Bytea(3) -- Binary
-SET     @BlobValue = E'\\x010203'
+SET     @BlobValue = E'\\x010203'::bytea
 
 INSERT INTO "BlobClass"
 (
@@ -49,7 +49,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BlobValue Bytea(3) -- Binary
-SET     @BlobValue = E'\\x030201'
+SET     @BlobValue = E'\\x030201'::bytea
 
 UPDATE
 	"BlobClass"

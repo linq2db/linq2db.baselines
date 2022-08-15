@@ -123,9 +123,9 @@ SET     @FieldDateTime = '2000-11-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2000-11-22T12:59:15.1244567+00:00'
 DECLARE @FieldBinary Bytea(0) -- Binary
-SET     @FieldBinary = E'\\x'
+SET     @FieldBinary = E'\\x'::bytea
 DECLARE @FieldGuid Uuid -- Guid
-SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'
+SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldDate Timestamp -- DateTime2
@@ -211,9 +211,9 @@ SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T13:29:15.1234567+00:00'
 DECLARE @FieldBinary Bytea(6) -- Binary
-SET     @FieldBinary = E'\\x000102030004'
+SET     @FieldBinary = E'\\x000102030004'::bytea
 DECLARE @FieldGuid Uuid -- Guid
-SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
+SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate Timestamp -- DateTime2
@@ -298,9 +298,9 @@ SET     @FieldDateTime = '2098-10-12 21:14:15.997'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T11:35:16.1224567+00:00'
 DECLARE @FieldBinary Bytea(6) -- Binary
-SET     @FieldBinary = E'\\xFFC864321400'
+SET     @FieldBinary = E'\\xFFC864321400'::bytea
 DECLARE @FieldGuid Uuid -- Guid
-SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
+SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate Timestamp -- DateTime2
@@ -384,9 +384,9 @@ SET     @FieldDateTime = '2098-10-12 21:14:15.907'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T14:53:14.1233457+00:00'
 DECLARE @FieldBinary Bytea(6) -- Binary
-SET     @FieldBinary = E'\\xFFC864321400'
+SET     @FieldBinary = E'\\xFFC864321400'::bytea
 DECLARE @FieldGuid Uuid -- Guid
-SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
+SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Timestamp -- DateTime2
@@ -472,9 +472,9 @@ SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T13:29:15.3210000+00:00'
 DECLARE @FieldBinary Bytea(6) -- Binary
-SET     @FieldBinary = E'\\x000102030004'
+SET     @FieldBinary = E'\\x000102030004'::bytea
 DECLARE @FieldGuid Uuid -- Guid
-SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
+SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate Timestamp -- DateTime2
@@ -558,9 +558,9 @@ SET     @FieldDateTime = '2098-10-12 21:14:15.913'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T14:53:15.0000000+00:00'
 DECLARE @FieldBinary Bytea(6) -- Binary
-SET     @FieldBinary = E'\\xFFC864321400'
+SET     @FieldBinary = E'\\xFFC864321400'::bytea
 DECLARE @FieldGuid Uuid -- Guid
-SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
+SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Timestamp -- DateTime2
@@ -646,9 +646,9 @@ SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
 SET     @FieldDateTime2 = '2001-11-22T13:29:15.9990000+00:00'
 DECLARE @FieldBinary Bytea(6) -- Binary
-SET     @FieldBinary = E'\\x000102030004'
+SET     @FieldBinary = E'\\x000102030004'::bytea
 DECLARE @FieldGuid Uuid -- Guid
-SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
+SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate Timestamp -- DateTime2

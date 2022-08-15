@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS "WmsLoadCarrierDTO"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Uuid -- Guid
-SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @ResourceLabel Text(1) -- String
 SET     @ResourceLabel = 'b'
 
@@ -49,11 +49,11 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Uuid -- Guid
-SET     @Id = 'a948600d-de21-4f74-8ac2-9516b287076e'
+SET     @Id = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @Status Integer -- Int32
 SET     @Status = 40
 DECLARE @ResourceID Uuid -- Guid
-SET     @ResourceID = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @ResourceID = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @ModifiedTimeStamp Timestamp -- DateTime2
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'::timestamp
 
@@ -75,11 +75,11 @@ VALUES
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Uuid -- Guid
-SET     @Id = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
+SET     @Id = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 DECLARE @Status Integer -- Int32
 SET     @Status = 40
 DECLARE @ResourceID Uuid -- Guid
-SET     @ResourceID = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @ResourceID = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @ModifiedTimeStamp Timestamp -- DateTime2
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'::timestamp
 

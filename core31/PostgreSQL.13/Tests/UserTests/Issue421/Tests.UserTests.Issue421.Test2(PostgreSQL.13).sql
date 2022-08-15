@@ -25,7 +25,7 @@ INSERT INTO "BlobClass"
 VALUES
 (
 	1,
-	E'\\x010203'
+	E'\\x010203'::bytea
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ BeforeExecute
 UPDATE
 	"BlobClass"
 SET
-	"BlobValue" = E'\\x030201'
+	"BlobValue" = E'\\x030201'::bytea
 WHERE
 	"BlobClass"."Id" = 1
 

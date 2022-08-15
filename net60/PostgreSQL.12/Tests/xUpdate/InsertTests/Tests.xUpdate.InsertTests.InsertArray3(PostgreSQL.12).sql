@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @arr Bytea(4) -- Binary
-SET     @arr = E'\\x01020304'
+SET     @arr = E'\\x01020304'::bytea
 
 INSERT INTO "LinqDataTypes"
 (

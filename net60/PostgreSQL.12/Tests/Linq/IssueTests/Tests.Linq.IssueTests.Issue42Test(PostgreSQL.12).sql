@@ -31,7 +31,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
+SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'::uuid
 DECLARE @SmallIntValue Smallint -- Int16
 SET     @SmallIntValue = 1
 DECLARE @IntValue Integer -- Int32
@@ -93,7 +93,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
+SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'::uuid
 DECLARE @SmallIntValue Smallint -- Int16
 SET     @SmallIntValue = 1
 DECLARE @IntValue Integer -- Int32
