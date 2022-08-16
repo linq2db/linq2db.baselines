@@ -581,6 +581,8 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2017.MS BEGIN
 -- SKIP SqlServer.2019 BEGIN
 -- SKIP SqlServer.2019.MS BEGIN
+-- SKIP SqlServer.2022 BEGIN
+-- SKIP SqlServer.2022.MS BEGIN
 -- SKIP SqlServer.SA BEGIN
 -- SKIP SqlServer.SA.MS BEGIN
 -- SKIP SqlServer.Contained BEGIN
@@ -611,6 +613,8 @@ CREATE TABLE AllTypes
 -- SKIP SqlServer.2017.MS END
 -- SKIP SqlServer.2019 END
 -- SKIP SqlServer.2019.MS END
+-- SKIP SqlServer.2022 END
+-- SKIP SqlServer.2022.MS END
 -- SKIP SqlServer.SA END
 -- SKIP SqlServer.SA.MS END
 -- SKIP SqlServer.Contained END
@@ -796,6 +800,8 @@ BeforeExecute
 -- SKIP SqlServer.2017.MS BEGIN
 -- SKIP SqlServer.2019 BEGIN
 -- SKIP SqlServer.2019.MS BEGIN
+-- SKIP SqlServer.2022 BEGIN
+-- SKIP SqlServer.2022.MS BEGIN
 -- SKIP SqlServer.SA BEGIN
 -- SKIP SqlServer.SA.MS BEGIN
 -- SKIP SqlServer.Contained BEGIN
@@ -832,6 +838,8 @@ BeforeExecute
 -- SKIP SqlServer.2017.MS END
 -- SKIP SqlServer.2019 END
 -- SKIP SqlServer.2019.MS END
+-- SKIP SqlServer.2022 END
+-- SKIP SqlServer.2022.MS END
 -- SKIP SqlServer.SA END
 -- SKIP SqlServer.SA.MS END
 -- SKIP SqlServer.Contained END
