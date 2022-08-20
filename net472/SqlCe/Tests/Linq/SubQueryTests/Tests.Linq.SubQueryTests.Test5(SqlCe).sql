@@ -4,7 +4,7 @@ DECLARE @_testValue Int -- Int32
 SET     @_testValue = 3
 
 SELECT
-	[t3].[c2],
+	[t3].[c1],
 	[t1].[Count1],
 	[t2].[Count2]
 FROM
@@ -14,17 +14,7 @@ FROM
 				WHEN [id].[Value1] IS NULL
 					THEN [id].[ParentID]
 				ELSE [id].[ParentID] + 1
-			END as [c1],
-			CASE
-				WHEN [id].[Value1] IS NULL
-					THEN [id].[ParentID]
-				ELSE [id].[ParentID] + 1
-			END as [c2],
-			CASE
-				WHEN [id].[Value1] IS NULL
-					THEN [id].[ParentID]
-				ELSE [id].[ParentID] + 1
-			END as [c3]
+			END as [c1]
 		FROM
 			[Parent] [id]
 		WHERE
@@ -38,7 +28,7 @@ FROM
 				[Child] [p]
 			GROUP BY
 				[p].[ParentID]
-		) [t1] ON [t1].[ParentID] = [t3].[c3]
+		) [t1] ON [t1].[ParentID] = [t3].[c1]
 		LEFT JOIN (
 			SELECT
 				Count(*) as [Count2],
@@ -49,5 +39,5 @@ FROM
 				[p_1].[ParentID] = @_testValue
 			GROUP BY
 				[p_1].[ParentID]
-		) [t2] ON [t2].[ParentID] = [t3].[c3]
+		) [t2] ON [t2].[ParentID] = [t3].[c1]
 
