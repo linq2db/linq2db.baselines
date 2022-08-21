@@ -80,10 +80,12 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @ID2 Integer -- Int32
-SET     @ID2 = 2
+DECLARE @myId Integer -- Int32
+SET     @myId = 2
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
+DECLARE @ID2 Integer -- Int32
+SET     @ID2 = 2
 
 SELECT
 	x_1.id,
@@ -97,7 +99,7 @@ FROM
 			FROM
 				"T2" x
 			WHERE
-				x.id2 = :ID2
+				x.id2 = :myId
 		) t3 ON x_1.id = t3.order_1
 WHERE
 	x_1.id = :ID AND x_1.id2 = :ID2
