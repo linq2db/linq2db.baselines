@@ -51,7 +51,8 @@ INSERT INTO "T2"
 )
 VALUES
 (1,2),
-(1,2)
+(2,2),
+(2,85)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -80,26 +81,27 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @myId Integer -- Int32
-SET     @myId = 2
-DECLARE @ID Integer -- Int32
-SET     @ID = 1
 DECLARE @ID2 Integer -- Int32
 SET     @ID2 = 2
+DECLARE @ID Integer -- Int32
+SET     @ID = 1
 
 SELECT
 	x_1.id,
 	x_1.id2,
-	x_1.id3
+	x_1.id3,
+	t3.order_1,
+	t3.id2
 FROM
 	"T1" x_1
 		LEFT JOIN (
 			SELECT
-				x.id as order_1
+				x.id as order_1,
+				x.id2
 			FROM
 				"T2" x
 			WHERE
-				x.id2 = :myId
+				x.id2 = :ID2
 		) t3 ON x_1.id = t3.order_1
 WHERE
 	x_1.id = :ID AND x_1.id2 = :ID2
