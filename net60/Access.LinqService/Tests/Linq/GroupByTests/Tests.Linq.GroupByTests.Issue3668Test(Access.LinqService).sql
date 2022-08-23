@@ -24,8 +24,8 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @LastName VarWChar(4) -- String
 SET     @LastName = 'test'
-DECLARE @name VarWChar(4) -- String
-SET     @name = 'test'
+DECLARE @LastName_1 VarWChar(4) -- String
+SET     @LastName_1 = 'test'
 DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 2
 DECLARE @ID_1 Integer -- Int32
@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @name AND [x].[PersonID] = @p_1) AND
+	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @LastName_1 AND [x].[PersonID] = @p_1) AND
 	[x].[PersonID] = @ID_1
 
 BeforeExecute
@@ -49,8 +49,8 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @LastName VarWChar(4) -- String
 SET     @LastName = 'test'
-DECLARE @name VarWChar(4) -- String
-SET     @name = 'test'
+DECLARE @LastName_1 VarWChar(4) -- String
+SET     @LastName_1 = 'test'
 DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 2
 DECLARE @ID_1 Integer -- Int32
@@ -65,6 +65,6 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @name AND [x].[PersonID] = @p_1) AND
+	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @LastName_1 AND [x].[PersonID] = @p_1) AND
 	[x].[PersonID] = @ID_1
 
