@@ -24,8 +24,8 @@ DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @LastName NVarChar(4) -- String
 SET     @LastName = 'test'
-DECLARE @name NVarChar(4) -- String
-SET     @name = 'test'
+DECLARE @LastName_1 NVarChar(4) -- String
+SET     @LastName_1 = 'test'
 DECLARE @p_2 Int -- Int32
 SET     @p_2 = 2
 DECLARE @ID_1 Int -- Int32
@@ -49,8 +49,8 @@ DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @LastName NVarChar(4) -- String
 SET     @LastName = 'test'
-DECLARE @name NVarChar(4) -- String
-SET     @name = 'test'
+DECLARE @LastName_1 NVarChar(4) -- String
+SET     @LastName_1 = 'test'
 DECLARE @p_2 Int -- Int32
 SET     @p_2 = 2
 DECLARE @ID_1 Int -- Int32
