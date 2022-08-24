@@ -77,6 +77,8 @@ WHERE
 	x_1.id2 = :myId
 GROUP BY
 	x_1.id
+ORDER BY
+	x_1.id
 LIMIT :take
 
 BeforeExecute
