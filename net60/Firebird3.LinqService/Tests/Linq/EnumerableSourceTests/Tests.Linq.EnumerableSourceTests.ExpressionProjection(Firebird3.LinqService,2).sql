@@ -14,4 +14,6 @@ FROM
 			SELECT CAST('Janet' AS VARCHAR(5)) AS "FirstName", Cast(@ID as Int) AS "PersonID" FROM rdb$database
 			UNION ALL
 			SELECT CAST('Doe' AS VARCHAR(3)), Cast(@ID_1 as Int) FROM rdb$database) "n" ON "p"."PersonID" = "n"."PersonID"
+ORDER BY
+	"n"."PersonID"
 
