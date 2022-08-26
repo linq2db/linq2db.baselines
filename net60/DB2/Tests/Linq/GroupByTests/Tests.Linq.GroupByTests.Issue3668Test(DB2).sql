@@ -22,8 +22,6 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'test'
-DECLARE @name VarChar(4) -- String
-SET     @name = 'test'
 DECLARE @p_2 Integer(4) -- Int32
 SET     @p_2 = 2
 DECLARE @ID_1 Integer(4) -- Int32
@@ -38,7 +36,7 @@ SELECT
 FROM
 	"Person" "x"
 WHERE
-	("x"."PersonID" = @ID AND "x"."LastName" <> @LastName OR "x"."FirstName" <> @name AND "x"."PersonID" = @p_2) AND
+	("x"."PersonID" = @ID AND "x"."LastName" <> @LastName OR "x"."FirstName" <> @LastName AND "x"."PersonID" = @p_2) AND
 	"x"."PersonID" = @ID_1
 
 BeforeExecute
@@ -47,8 +45,6 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'test'
-DECLARE @name VarChar(4) -- String
-SET     @name = 'test'
 DECLARE @p_2 Integer(4) -- Int32
 SET     @p_2 = 2
 DECLARE @ID_1 Integer(4) -- Int32
@@ -63,6 +59,6 @@ SELECT
 FROM
 	"Person" "x"
 WHERE
-	("x"."PersonID" = @ID AND "x"."LastName" <> @LastName OR "x"."FirstName" <> @name AND "x"."PersonID" = @p_2) AND
+	("x"."PersonID" = @ID AND "x"."LastName" <> @LastName OR "x"."FirstName" <> @LastName AND "x"."PersonID" = @p_2) AND
 	"x"."PersonID" = @ID_1
 

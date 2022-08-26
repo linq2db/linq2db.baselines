@@ -10,6 +10,22 @@ GROUP BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+
+SELECT
+	"keyParam"."FirstName",
+	"keyParam"."PersonID",
+	"keyParam"."LastName",
+	"keyParam"."MiddleName",
+	"keyParam"."Gender"
+FROM
+	"Person" "keyParam"
+WHERE
+	"keyParam"."FirstName" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Tester'
 
@@ -44,22 +60,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Jürgen'
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."FirstName" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @FirstName NVarChar(4) -- String
-SET     @FirstName = 'John'
 
 SELECT
 	"keyParam"."FirstName",

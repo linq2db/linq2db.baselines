@@ -14,4 +14,6 @@ FROM
 			SELECT 'Janet' AS "FirstName", ? AS "PersonID" FROM DUMMY
 			UNION ALL
 			SELECT 'Doe', ? FROM DUMMY) "n" ON "p"."PersonID" = "n"."PersonID"
+ORDER BY
+	"n"."PersonID"
 

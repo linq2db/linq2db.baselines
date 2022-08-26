@@ -14,4 +14,6 @@ FROM
 			SELECT 'Janet' AS `FirstName`, @ID AS `PersonID` FROM DUAL
 			UNION ALL
 			SELECT 'Doe', @ID_1 FROM DUAL) `n` ON `p`.`PersonID` = `n`.`PersonID`
+ORDER BY
+	`n`.`PersonID`
 

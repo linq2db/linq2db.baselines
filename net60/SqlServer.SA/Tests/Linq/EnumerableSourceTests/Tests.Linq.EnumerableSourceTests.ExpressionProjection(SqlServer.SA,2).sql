@@ -13,4 +13,6 @@ FROM
 		INNER JOIN (VALUES
 			(N'Janet',@ID), (N'Doe',@ID_1)
 		) [n]([FirstName], [PersonID]) ON [p].[PersonID] = [n].[PersonID]
+ORDER BY
+	[n].[PersonID]
 

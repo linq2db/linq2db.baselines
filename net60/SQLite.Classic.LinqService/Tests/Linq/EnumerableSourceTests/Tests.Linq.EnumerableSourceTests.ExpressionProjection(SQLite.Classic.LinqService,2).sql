@@ -16,4 +16,6 @@ FROM
 			VALUES
 				('Janet',@ID), ('Doe',@ID_1)
 			) [n] ON [p].[PersonID] = [n].[PersonID]
+ORDER BY
+	[n].[PersonID]
 
