@@ -1612,6 +1612,41 @@ BeforeExecute
 -- SKIP SqlServer.2008 END
 -- SKIP SqlServer.2005 END
 
+-- one-to-one (by primary key) relation for scaffold testing
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE Provider
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE Member
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+CREATE TABLE Member(
+	MemberId INT IDENTITY(1,1) NOT NULL,
+	Alias    NVARCHAR(50)      NOT NULL,
+ CONSTRAINT PK_Member PRIMARY KEY (MemberId)
+)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+CREATE TABLE Provider(
+	ProviderId INT           NOT NULL,
+	Test       NVARCHAR(MAX) NOT NULL,
+ CONSTRAINT PK_Provider PRIMARY KEY (ProviderId)
+)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+ALTER TABLE Provider WITH CHECK ADD CONSTRAINT FK_Provider_Member FOREIGN KEY(ProviderId) REFERENCES Member (MemberId)
+
 BeforeExecute
 INSERT BULK [LinqDataTypes](ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue)
 
