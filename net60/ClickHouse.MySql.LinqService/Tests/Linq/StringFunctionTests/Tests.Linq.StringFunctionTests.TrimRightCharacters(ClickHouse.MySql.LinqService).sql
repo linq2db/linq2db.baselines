@@ -7,6 +7,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	trim(TRAILING ' ' FROM concat('  ', p.FirstName, ' ')) = '  John' AND
+	trim(TRAILING ' n' FROM concat('  ', p.FirstName, ' ')) = '  Joh' AND
 	p.PersonID = toInt32(1)
 

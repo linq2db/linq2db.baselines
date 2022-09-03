@@ -7,6 +7,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	trim(LEADING ' ' FROM concat('  ', p.FirstName, ' ')) = 'John ' AND
+	trim(LEADING ' J' FROM concat('  ', p.FirstName, ' ')) = 'ohn ' AND
 	p.PersonID = toInt32(1)
 

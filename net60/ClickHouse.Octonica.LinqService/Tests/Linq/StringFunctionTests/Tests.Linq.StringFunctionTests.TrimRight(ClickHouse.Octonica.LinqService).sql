@@ -7,6 +7,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	RTrim(concat('  ', p.FirstName, ' ')) = '  John' AND
+	trim(TRAILING ' ' FROM concat('  ', p.FirstName, ' ')) = '  John' AND
 	p.PersonID = toInt32(1)
 
