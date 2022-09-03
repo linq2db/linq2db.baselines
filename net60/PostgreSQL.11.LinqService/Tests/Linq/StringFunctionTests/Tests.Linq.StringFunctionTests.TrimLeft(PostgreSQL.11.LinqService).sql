@@ -7,5 +7,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	LTrim('  ' || p."FirstName" || ' ') = 'John ' AND p."PersonID" = 1
+	LTRIM(('  ' || p."FirstName" || ' '), ' ') = 'John ' AND
+	p."PersonID" = 1
 
