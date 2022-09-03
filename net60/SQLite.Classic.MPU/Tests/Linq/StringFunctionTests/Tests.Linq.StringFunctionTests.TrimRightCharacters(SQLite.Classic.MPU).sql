@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[p].[PersonID],
@@ -7,6 +7,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	RTRIM(('  ' || [p].[FirstName] || ' '), ' ') = '  John' AND
+	RTRIM(('  ' || [p].[FirstName] || ' '), ' n') = '  Joh' AND
 	[p].[PersonID] = 1
 
