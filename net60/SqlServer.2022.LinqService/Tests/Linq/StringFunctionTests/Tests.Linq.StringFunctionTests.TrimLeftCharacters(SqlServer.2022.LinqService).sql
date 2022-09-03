@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 
 SELECT
 	[p].[PersonID],
@@ -7,6 +7,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LTRIM((N'  ' + [p].[FirstName] + N' '), N' ') = N'John ' AND
+	LTRIM((N'  ' + [p].[FirstName] + N' '), N' J') = N'ohn ' AND
 	[p].[PersonID] = 1
 
