@@ -7,6 +7,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	RTrim('  ' || "p"."FirstName" || ' ') = '  John' AND
+	TRIM(TRAILING FROM ('  ' || "p"."FirstName" || ' ')) = '  John' AND
 	"p"."PersonID" = 1
 
