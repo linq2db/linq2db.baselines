@@ -7,6 +7,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	LTrim('  ' || "p"."FirstName" || ' ') = 'John ' AND
+	TRIM(LEADING FROM ('  ' || "p"."FirstName" || ' ')) = 'John ' AND
 	"p"."PersonID" = 1
 
