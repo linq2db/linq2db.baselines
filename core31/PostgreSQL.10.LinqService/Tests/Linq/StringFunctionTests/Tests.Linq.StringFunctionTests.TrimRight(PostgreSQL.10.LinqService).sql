@@ -7,6 +7,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	RTRIM(('  ' || p."FirstName" || ' '), ' ') = '  John' AND
+	RTRIM('  ' || p."FirstName" || ' ') = '  John' AND
 	p."PersonID" = 1
 
