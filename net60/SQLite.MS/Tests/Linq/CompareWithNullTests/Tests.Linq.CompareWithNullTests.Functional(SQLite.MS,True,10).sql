@@ -8,13 +8,14 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [Src]
 (
-	[Id]     INTEGER     NOT NULL,
-	[A]      INTEGER         NULL,
-	[B]      INTEGER         NULL,
-	[EnumA]  NChar(1)        NULL,
-	[EnumB]  NChar(1)        NULL,
-	[CEnumA] VarChar(20)     NULL,
-	[CEnumB] VarChar(20)     NULL
+	[Id]     INTEGER       NOT NULL,
+	[A]      INTEGER           NULL,
+	[B]      INTEGER           NULL,
+	[EnumA]  NChar(1)          NULL,
+	[EnumB]  NChar(1)          NULL,
+	[CEnumA] VarChar(20)       NULL,
+	[CEnumB] VarChar(20)       NULL,
+	[Text]   NVarChar(255)     NULL
 )
 
 BeforeExecute
@@ -28,15 +29,16 @@ INSERT INTO [Src]
 	[EnumA],
 	[EnumB],
 	[CEnumA],
-	[CEnumB]
+	[CEnumB],
+	[Text]
 )
 VALUES
-(100,NULL,NULL,NULL,NULL,NULL,NULL),
-(101,NULL,1,NULL,'A',NULL,'___One___'),
-(110,1,NULL,'A',NULL,'___One___',NULL),
-(111,1,1,'A','A','___One___','___One___'),
-(112,1,2,'A','B','___One___','___Two___'),
-(121,2,1,'B','A','___Two___','___One___')
+(100,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(101,NULL,1,NULL,'A',NULL,'___One___',NULL),
+(110,1,NULL,'A',NULL,'___One___',NULL,NULL),
+(111,1,1,'A','A','___One___','___One___',NULL),
+(112,1,2,'A','B','___One___','___Two___',NULL),
+(121,2,1,'B','A','___Two___','___One___',NULL)
 
 BeforeExecute
 -- SQLite.MS SQLite

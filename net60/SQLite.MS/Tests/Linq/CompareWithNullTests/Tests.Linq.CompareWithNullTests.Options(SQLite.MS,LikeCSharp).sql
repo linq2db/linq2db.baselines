@@ -44,13 +44,31 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[x].[Id]
+	Count(*)
 FROM
 	[Src] [x]
 WHERE
-	[x].[CEnumA] <= [x].[CEnumB]
-ORDER BY
-	[x].[Id]
+	[x].[A] IS NULL
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	Count(*)
+FROM
+	[Src] [x]
+WHERE
+	[x].[A] IS NULL
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	Count(*)
+FROM
+	[Src] [x]
+WHERE
+	[x].[A] IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
