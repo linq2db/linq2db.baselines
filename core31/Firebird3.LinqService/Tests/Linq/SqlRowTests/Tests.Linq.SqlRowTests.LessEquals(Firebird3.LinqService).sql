@@ -106,7 +106,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(0 < "i"."One" OR 0 = "i"."One" AND NULL < "i"."Two" OR 0 = "i"."One" AND NULL = "i"."Two" AND 3 <= "i"."Three")
+	(0 < "i"."One" OR 0 = "i"."One" AND NULL < "i"."Two" OR 0 = "i"."One" AND "i"."Two" IS NULL AND 3 <= "i"."Three")
 
 BeforeExecute
 -- Firebird3 Firebird
