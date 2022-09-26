@@ -92,40 +92,38 @@ VALUES
 (23,12,N'Child23')
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @take_1 Int -- Int32
+SET     @take_1 = 1
 
 SELECT
-	[t1_1].[ID1],
-	[detail].[NAME2],
-	[t1].[Name3],
-	[t1].[Value3]
+	[t1_1].[NAME1],
+	[t2].[Name2],
+	[t2].[Name3],
+	[t2].[Value3]
 FROM
 	[TABLE1] [t1_1]
-		INNER JOIN [TABLE2] [detail] ON [detail].[PARENTID2] = [t1_1].[ID1]
 		OUTER APPLY (
 			SELECT TOP (@take)
-				[_x].[NAME3] as [Name3],
-				[_x].[ID3] as [Value3]
+				[x_1].[NAME2] as [Name2],
+				[t1].[Name3],
+				[t1].[Value3]
 			FROM
-				[TABLE3] [_x]
+				[TABLE2] [x_1]
+					OUTER APPLY (
+						SELECT TOP (@take_1)
+							[x].[NAME3] as [Name3],
+							[x].[ID3] as [Value3]
+						FROM
+							[TABLE3] [x]
+						WHERE
+							[x].[PARENTID3] = [x_1].[ID2]
+					) [t1]
 			WHERE
-				[_x].[PARENTID3] = [detail].[ID2]
-		) [t1]
-
-BeforeExecute
-RollbackTransaction
-BeforeExecute
--- SqlServer.2017
-
-SELECT
-	[t1].[NAME1],
-	[t1].[ID1]
-FROM
-	[TABLE1] [t1]
+				[x_1].[PARENTID2] = [t1_1].[ID1]
+		) [t2]
 
 BeforeExecute
 -- SqlServer.2017
