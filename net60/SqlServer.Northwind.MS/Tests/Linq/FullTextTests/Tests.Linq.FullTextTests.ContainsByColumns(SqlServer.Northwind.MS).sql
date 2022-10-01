@@ -9,7 +9,7 @@ SELECT
 FROM
 	[Categories] [c_1]
 WHERE
-	CONTAINS(([c_1].[Description], [c_1].[Description]), N'aнанас')
+	CONTAINS(([c_1].[Description], [c_1].[Description]), N'ананас')
 ORDER BY
 	[c_1].[CategoryID] DESC
 
