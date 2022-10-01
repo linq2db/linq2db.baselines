@@ -4,14 +4,12 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1."Id_1",
-	t1."Id"
+	t1."Child"
 FROM
 	"Parent" sep
 		OUTER APPLY (
 			SELECT
-				l."ParentID" + 1 as "Id",
-				l."ParentID" as "Id_1"
+				l."ParentID" as "Child"
 			FROM
 				"Child" l
 			FETCH NEXT :take ROWS ONLY
