@@ -21,7 +21,7 @@ FROM
 			t1.LastName
 		LIMIT toInt32(1)
 	) t2
-EXCEPT
+EXCEPT DISTINCT
 SELECT
 	t4.FirstName,
 	t4.ID,

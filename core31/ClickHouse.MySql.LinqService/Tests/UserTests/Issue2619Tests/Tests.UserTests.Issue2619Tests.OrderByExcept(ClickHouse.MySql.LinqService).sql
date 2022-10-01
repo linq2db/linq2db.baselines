@@ -20,7 +20,7 @@ FROM
 		ORDER BY
 			t1.LastName
 	) t2
-EXCEPT
+EXCEPT DISTINCT
 SELECT
 	t4.FirstName,
 	t4.ID,
