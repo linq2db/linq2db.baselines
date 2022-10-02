@@ -6,7 +6,7 @@ SELECT
 	t1.ChildID
 FROM
 	Child t1
-EXCEPT
+EXCEPT DISTINCT
 SELECT
 	p.ParentID,
 	p.ChildID

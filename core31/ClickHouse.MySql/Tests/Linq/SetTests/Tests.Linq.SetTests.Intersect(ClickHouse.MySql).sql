@@ -6,7 +6,7 @@ SELECT
 	t1.ChildID
 FROM
 	Child t1
-INTERSECT
+INTERSECT DISTINCT
 SELECT
 	p.ParentID,
 	p.ChildID
