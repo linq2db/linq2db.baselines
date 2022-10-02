@@ -7,6 +7,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	RTRIM(N'  ' + [p].[FirstName] + N' ') = N'  John' AND
+	RTRIM((N'  ' + [p].[FirstName] + N' '), N' n') = N'  Joh' AND
 	[p].[PersonID] = 1
 
