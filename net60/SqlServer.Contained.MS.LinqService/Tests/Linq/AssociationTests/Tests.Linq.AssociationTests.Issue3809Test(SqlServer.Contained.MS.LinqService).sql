@@ -25,6 +25,8 @@ FROM
 			))
 	) [key_data_result]
 		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
+ORDER BY
+	[detail].[ChildID]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
