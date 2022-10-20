@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "DataTypeBinaryMapping"
+DROP TABLE IF EXISTS "DataTypeBinaryMapping"
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "DataTypeBinaryMapping"
 (
 	"Binary" bytea NOT NULL
 )

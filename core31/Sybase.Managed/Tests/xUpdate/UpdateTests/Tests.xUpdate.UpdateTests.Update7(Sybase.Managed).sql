@@ -1,14 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-DELETE FROM [Parent]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] > 1000
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 1
 DECLARE @ParentID Integer -- Int32
@@ -92,13 +83,4 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 3
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Parent]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] > 1000
 

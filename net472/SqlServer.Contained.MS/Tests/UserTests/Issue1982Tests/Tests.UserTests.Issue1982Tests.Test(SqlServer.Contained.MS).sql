@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [Issue1982Table]
-(
-	[Time]     Time      NOT NULL,
-	[DateTime] DateTime2 NOT NULL
-)
+DROP TABLE IF EXISTS [Issue1982Table]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue1982Table]', N'U') IS NULL)
+	CREATE TABLE [Issue1982Table]
+	(
+		[Time]     Time      NOT NULL,
+		[DateTime] DateTime2 NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

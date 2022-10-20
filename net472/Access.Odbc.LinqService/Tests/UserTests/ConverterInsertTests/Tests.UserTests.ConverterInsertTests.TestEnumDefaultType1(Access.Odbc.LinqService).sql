@@ -70,25 +70,3 @@ FROM
 WHERE
 	[t].[PersonID] = ?
 
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @PersonID Int -- Int32
-SET     @PersonID = 5
-DECLARE @FirstName NVarChar(3) -- String
-SET     @FirstName = '123'
-DECLARE @LastName NVarChar(3) -- String
-SET     @LastName = '456'
-DECLARE @MiddleName NVarChar(3) -- String
-SET     @MiddleName = '789'
-DECLARE @Gender NVarChar(1) -- String
-SET     @Gender = 'M'
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = ? AND
-	[t1].[FirstName] = ? AND
-	[t1].[LastName] = ? AND
-	[t1].[MiddleName] = ? AND
-	[t1].[Gender] = ?
-

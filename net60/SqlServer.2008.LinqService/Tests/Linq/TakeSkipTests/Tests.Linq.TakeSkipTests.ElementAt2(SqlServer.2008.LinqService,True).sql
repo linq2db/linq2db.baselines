@@ -13,7 +13,7 @@ FROM
 		SELECT
 			[p].[ParentID],
 			[p].[Value1],
-			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+			ROW_NUMBER() OVER (ORDER BY [p].[ParentID]) as [RN]
 		FROM
 			[Parent] [p]
 		WHERE

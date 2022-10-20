@@ -5,30 +5,32 @@ ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
 -- SqlCe
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] = 'John' AND [Person].[LastName] = 'Shepard'
-
-BeforeExecute
--- SqlCe (asynchronously)
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName NVarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName NVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender NVarChar(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT @@IDENTITY
 

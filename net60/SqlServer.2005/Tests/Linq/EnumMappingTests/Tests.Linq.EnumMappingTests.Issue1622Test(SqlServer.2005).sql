@@ -1,13 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Issue1622Table]
-(
-	[Id]       Int            NOT NULL,
-	[SomeText] NVarChar(4000)     NULL,
+IF (OBJECT_ID(N'[Issue1622Table]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1622Table]
 
-	CONSTRAINT [PK_Issue1622Table] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue1622Table]', N'U') IS NULL)
+	CREATE TABLE [Issue1622Table]
+	(
+		[Id]       Int            NOT NULL,
+		[SomeText] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_Issue1622Table] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2005

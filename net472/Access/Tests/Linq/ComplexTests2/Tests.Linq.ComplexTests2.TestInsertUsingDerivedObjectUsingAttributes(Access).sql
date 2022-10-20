@@ -115,11 +115,3 @@ DELETE FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
--- Access AccessOleDb
-
-DELETE FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] = 'test_inherited_insert'
-

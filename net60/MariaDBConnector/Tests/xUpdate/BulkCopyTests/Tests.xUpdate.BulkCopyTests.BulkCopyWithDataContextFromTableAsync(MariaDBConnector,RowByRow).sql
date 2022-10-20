@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `SimpleBulkCopyTable`
+DROP TABLE IF EXISTS `SimpleBulkCopyTable`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `SimpleBulkCopyTable`
 (
 	`Id` INT NOT NULL
 )

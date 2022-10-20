@@ -1,14 +1,27 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "PR_1598_Update_Table"
-(
-	"Id"   Int                                    NOT NULL,
-	"Name" VarChar(255) CHARACTER SET UNICODE_FSS,
-	"Age"  Int,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'PR_1598_Update_Table')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "PR_1598_Update_Table"';
+END
 
-	CONSTRAINT "PK_PR_1598_Update_Table" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'PR_1598_Update_Table')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "PR_1598_Update_Table"
+			(
+				"Id"   Int                                    NOT NULL,
+				"Name" VarChar(255) CHARACTER SET UNICODE_FSS,
+				"Age"  Int,
+
+				CONSTRAINT "PK_PR_1598_Update_Table" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird

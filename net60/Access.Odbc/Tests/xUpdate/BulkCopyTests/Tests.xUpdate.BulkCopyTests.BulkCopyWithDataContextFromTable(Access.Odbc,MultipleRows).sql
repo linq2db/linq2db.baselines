@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [SimpleBulkCopyTable]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [SimpleBulkCopyTable]
 (
 	[Id] Int NOT NULL

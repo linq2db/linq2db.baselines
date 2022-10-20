@@ -50,12 +50,3 @@ FROM
 WHERE
 	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Person]
-FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
-

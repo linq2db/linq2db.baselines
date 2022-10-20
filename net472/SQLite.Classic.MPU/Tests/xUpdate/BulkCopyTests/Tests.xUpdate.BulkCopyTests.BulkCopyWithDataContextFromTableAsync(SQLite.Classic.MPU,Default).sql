@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [SimpleBulkCopyTable]
+DROP TABLE IF EXISTS [SimpleBulkCopyTable]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [SimpleBulkCopyTable]
 (
 	[Id] INTEGER NOT NULL
 )

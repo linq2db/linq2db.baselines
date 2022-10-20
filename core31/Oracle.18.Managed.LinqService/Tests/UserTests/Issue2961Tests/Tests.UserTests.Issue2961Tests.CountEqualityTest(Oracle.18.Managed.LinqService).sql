@@ -1,46 +1,130 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Condos"
-(
-	"Id"         Int NOT NULL,
-	"LocationId" Int NOT NULL,
-
-	CONSTRAINT "PK_Condos" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-CREATE TABLE "CategoryCondos"
-(
-	"CategoryId" Int NOT NULL,
-	"CondoId"    Int NOT NULL,
-
-	CONSTRAINT "PK_CategoryCondos" PRIMARY KEY ("CategoryId", "CondoId")
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Condos"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "CondoTags"
-(
-	"CondoId" Int NOT NULL,
-	"TagId"   Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Condos"
+		(
+			"Id"         Int NOT NULL,
+			"LocationId" Int NOT NULL,
 
-	CONSTRAINT "PK_CondoTags" PRIMARY KEY ("CondoId", "TagId")
-)
+			CONSTRAINT "PK_Condos" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Locations"
-(
-	"Id"           Int           NOT NULL,
-	"LocationName" VarChar2(100) NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "CategoryCondos"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_Locations" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CategoryCondos"
+		(
+			"CategoryId" Int NOT NULL,
+			"CondoId"    Int NOT NULL,
+
+			CONSTRAINT "PK_CategoryCondos" PRIMARY KEY ("CategoryId", "CondoId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "CondoTags"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CondoTags"
+		(
+			"CondoId" Int NOT NULL,
+			"TagId"   Int NOT NULL,
+
+			CONSTRAINT "PK_CondoTags" PRIMARY KEY ("CondoId", "TagId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Locations"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Locations"
+		(
+			"Id"           Int           NOT NULL,
+			"LocationName" VarChar2(100) NOT NULL,
+
+			CONSTRAINT "PK_Locations" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

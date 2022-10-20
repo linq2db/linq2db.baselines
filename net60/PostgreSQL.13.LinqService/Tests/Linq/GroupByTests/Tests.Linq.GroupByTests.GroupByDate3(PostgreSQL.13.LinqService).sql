@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast((Cast(Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-' || Cast(Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as VarChar(11)) || '-1') as Date) as "Key_1",
+			Cast((Lpad(Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int)::text,4,'0') || '-' || Lpad(Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int)::text,2,'0') || '-01') as Date) as "Key_1",
 			"selectParam"."MoneyValue"
 		FROM
 			"LinqDataTypes" "selectParam"

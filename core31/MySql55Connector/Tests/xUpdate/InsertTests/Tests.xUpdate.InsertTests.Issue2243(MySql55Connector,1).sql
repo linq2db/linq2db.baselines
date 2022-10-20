@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `test_insert_or_replace`
+DROP TABLE IF EXISTS `test_insert_or_replace`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `test_insert_or_replace`
 (
 	`id`         INT           NOT NULL,
 	`name`       VARCHAR(4000)     NULL,

@@ -33,12 +33,12 @@ INSERT INTO "UpdateSetTest"
 	"Value6"
 )
 VALUES
-(1,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627',10,6,NULL,NULL,NULL)
+(1,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid,10,6,NULL,NULL,NULL)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value1 Uuid -- Guid
-SET     @Value1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @Value1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -67,7 +67,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value1 Uuid -- Guid
-SET     @Value1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+SET     @Value1 = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

@@ -340,11 +340,17 @@ VALUES
 BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [HierarchyData]
-(
-	[Id]    Int NOT NULL,
-	[Level] Int NOT NULL
-)
+DROP TABLE IF EXISTS [HierarchyData]
+
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[HierarchyData]', N'U') IS NULL)
+	CREATE TABLE [HierarchyData]
+	(
+		[Id]    Int NOT NULL,
+		[Level] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2017

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `User`
+DROP TABLE IF EXISTS `User`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `User`
 (
 	`city`            VARCHAR(4000)     NULL,
 	`user_name`       VARCHAR(4000)     NULL,

@@ -2,9 +2,9 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as Decimal(29, 10))
+	Cast([t].[MoneyValue] as Decimal)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Cast([t].[MoneyValue] as Decimal(29, 10)) > 0
+	Cast([t].[MoneyValue] as Decimal) > 0
 

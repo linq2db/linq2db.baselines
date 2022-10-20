@@ -1,32 +1,50 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [Requests]
-(
-	[Id]     Int NOT NULL,
-	[FirmId] Int NOT NULL
-)
+DROP TABLE IF EXISTS [Requests]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [FirmInfo]
-(
-	[Id] Int NOT NULL
-)
+IF (OBJECT_ID(N'[Requests]', N'U') IS NULL)
+	CREATE TABLE [Requests]
+	(
+		[Id]     Int NOT NULL,
+		[FirmId] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [Assignments]
-(
-	[Id]          Int               NOT NULL IDENTITY,
-	[DirectionId] UniqueIdentifier  NOT NULL,
-	[TargetId]    Int                   NULL,
-	[DateRevoke]  DateTime2             NULL,
+DROP TABLE IF EXISTS [FirmInfo]
 
-	CONSTRAINT [PK_Assignments] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[FirmInfo]', N'U') IS NULL)
+	CREATE TABLE [FirmInfo]
+	(
+		[Id] Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE IF EXISTS [Assignments]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[Assignments]', N'U') IS NULL)
+	CREATE TABLE [Assignments]
+	(
+		[Id]          Int               NOT NULL IDENTITY,
+		[DirectionId] UniqueIdentifier  NOT NULL,
+		[TargetId]    Int                   NULL,
+		[DateRevoke]  DateTime2             NULL,
+
+		CONSTRAINT [PK_Assignments] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

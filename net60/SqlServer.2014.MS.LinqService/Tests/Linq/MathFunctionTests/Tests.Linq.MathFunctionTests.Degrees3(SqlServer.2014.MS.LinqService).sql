@@ -11,5 +11,5 @@ FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	(Convert(Float, [t].[c1]) <> 0.10000000000000001 OR Convert(Float, [t].[c1]) IS NULL)
+	Convert(Float, [t].[c1]) <> 0.10000000000000001
 

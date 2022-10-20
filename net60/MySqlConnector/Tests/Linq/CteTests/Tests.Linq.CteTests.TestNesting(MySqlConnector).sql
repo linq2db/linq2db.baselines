@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `NestingA`
+DROP TABLE IF EXISTS `NestingA`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `NestingA`
 (
 	`Property1` VARCHAR(4000)     NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE `NestingA`
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `NestingB`
+DROP TABLE IF EXISTS `NestingB`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `NestingB`
 (
 	`Property1` VARCHAR(4000)     NULL,
 	`Property2` VARCHAR(4000)     NULL
@@ -18,7 +28,12 @@ CREATE TABLE `NestingB`
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE `NestingC`
+DROP TABLE IF EXISTS `NestingC`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `NestingC`
 (
 	`Property1` VARCHAR(4000)     NULL,
 	`Property2` VARCHAR(4000)     NULL,

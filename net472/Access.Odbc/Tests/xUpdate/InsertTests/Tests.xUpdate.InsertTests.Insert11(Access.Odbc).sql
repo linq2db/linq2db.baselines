@@ -46,15 +46,5 @@ SELECT TOP 2
 FROM
 	[Person] [p2]
 WHERE
-	[p2].[PersonID] > ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @id Int -- Int32
-SET     @id = 4
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > ?
+	([p2].[PersonID] > ? OR [p2].[PersonID] = 0)
 

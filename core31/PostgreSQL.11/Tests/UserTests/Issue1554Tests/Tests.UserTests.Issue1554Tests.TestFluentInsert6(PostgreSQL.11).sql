@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Issue1554FluentTable"
+DROP TABLE IF EXISTS "Issue1554FluentTable"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Issue1554FluentTable"
 (
 	"Id"              Int  NOT NULL,
 	"ClaimedKeyType"  text NOT NULL,

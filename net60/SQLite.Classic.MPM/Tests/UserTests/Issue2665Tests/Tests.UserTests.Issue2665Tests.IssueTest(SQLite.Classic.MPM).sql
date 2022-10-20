@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [ProductTable]
+DROP TABLE IF EXISTS [ProductTable]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ProductTable]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Name] NVarChar(255) NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE [ProductTable]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [ProductAttributeTable]
+DROP TABLE IF EXISTS [ProductAttributeTable]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ProductAttributeTable]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Name] NVarChar(255) NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE [ProductAttributeTable]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [ProductAttributeMapping]
+DROP TABLE IF EXISTS [ProductAttributeMapping]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ProductAttributeMapping]
 (
 	[ProductId]          INTEGER NOT NULL,
 	[ProductAttributeId] INTEGER NOT NULL,

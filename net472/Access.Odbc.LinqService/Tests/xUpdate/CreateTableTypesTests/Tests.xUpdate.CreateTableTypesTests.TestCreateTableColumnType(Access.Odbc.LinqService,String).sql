@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [CreateTableTypes]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [CreateTableTypes]
 (
 	[String] NVarChar(255) NOT NULL,

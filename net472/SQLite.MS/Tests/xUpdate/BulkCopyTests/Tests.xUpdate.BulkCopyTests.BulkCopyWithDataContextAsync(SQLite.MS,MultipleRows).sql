@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [SimpleBulkCopyTable]
+DROP TABLE IF EXISTS [SimpleBulkCopyTable]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [SimpleBulkCopyTable]
 (
 	[Id] INTEGER NOT NULL
 )

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [PR_1598_Insert_Fluent_Table]
+DROP TABLE IF EXISTS [PR_1598_Insert_Fluent_Table]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [PR_1598_Insert_Fluent_Table]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Name] NVarChar(255)     NULL,

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `BlobClass`
+DROP TABLE IF EXISTS `BlobClass`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `BlobClass`
 (
 	`Id`        INT            NOT NULL,
 	`BlobValue` VARBINARY(100)     NULL,

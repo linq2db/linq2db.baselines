@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TableTime"
+DROP TABLE IF EXISTS "TableTime"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TableTime"
 (
 	"Id"   Int       NOT NULL,
 	"Time" TimeStamp     NULL

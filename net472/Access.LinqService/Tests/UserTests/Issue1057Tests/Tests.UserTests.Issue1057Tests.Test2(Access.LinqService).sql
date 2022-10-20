@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Task]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Task]
 (
 	[Id]         Int           NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE [Task]
 
 	CONSTRAINT [PK_Task] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [TaskStage]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -102,6 +112,8 @@ SELECT
 FROM
 	[Task] [p]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON ([p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
+ORDER BY
+	[p].[Id]
 
 BeforeExecute
 -- Access AccessOleDb

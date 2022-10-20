@@ -16,6 +16,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	DateTime([t1].[DateTimeValue]) = DateTime(@date_1)
+	DateTime(Date([t1].[DateTimeValue])) = DateTime(@date_1)
 LIMIT @take
 

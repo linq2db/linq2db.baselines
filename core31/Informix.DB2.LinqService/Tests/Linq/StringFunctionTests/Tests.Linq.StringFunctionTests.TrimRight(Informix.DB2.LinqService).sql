@@ -7,5 +7,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	RTrim('  ' || p.FirstName || ' ') = '  John' AND p.PersonID = 1
+	RTRIM('  ' || p.FirstName || ' ') = '  John' AND p.PersonID = 1
 

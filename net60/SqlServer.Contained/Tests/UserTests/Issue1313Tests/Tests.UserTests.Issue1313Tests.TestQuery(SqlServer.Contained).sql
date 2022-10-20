@@ -1,10 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [ValueItem]
-(
-	[Value] Int NOT NULL
-)
+DROP TABLE IF EXISTS [ValueItem]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[ValueItem]', N'U') IS NULL)
+	CREATE TABLE [ValueItem]
+	(
+		[Value] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

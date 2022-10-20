@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [Issue1403Tests_2]
-(
-	[event_id]          Int            NOT NULL,
-	[event_description] NVarChar(4000) NOT NULL,
+DROP TABLE IF EXISTS [Issue1403Tests_2]
 
-	CONSTRAINT [PK_Issue1403Tests_2] PRIMARY KEY CLUSTERED ([event_id])
-)
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue1403Tests_2]', N'U') IS NULL)
+	CREATE TABLE [Issue1403Tests_2]
+	(
+		[event_id]          Int            NOT NULL,
+		[event_description] NVarChar(4000) NOT NULL,
+
+		CONSTRAINT [PK_Issue1403Tests_2] PRIMARY KEY CLUSTERED ([event_id])
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

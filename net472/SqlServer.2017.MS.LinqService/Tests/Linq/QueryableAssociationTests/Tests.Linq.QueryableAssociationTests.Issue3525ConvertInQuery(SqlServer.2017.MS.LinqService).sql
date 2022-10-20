@@ -1,20 +1,32 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-CREATE TABLE [PropertyHistory]
-(
-	[DocumentNo] NVarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [PropertyHistory]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-CREATE TABLE [CustomerApplication]
-(
-	[Id] Int NOT NULL,
+IF (OBJECT_ID(N'[PropertyHistory]', N'U') IS NULL)
+	CREATE TABLE [PropertyHistory]
+	(
+		[DocumentNo] NVarChar(4000)     NULL
+	)
 
-	CONSTRAINT [PK_CustomerApplication] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+DROP TABLE IF EXISTS [CustomerApplication]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+IF (OBJECT_ID(N'[CustomerApplication]', N'U') IS NULL)
+	CREATE TABLE [CustomerApplication]
+	(
+		[Id] Int NOT NULL,
+
+		CONSTRAINT [PK_CustomerApplication] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

@@ -10,13 +10,19 @@ WHERE
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [TInserted]
-(
-	[ParentID] Int NOT NULL,
-	[ChildID]  Int NOT NULL,
+DROP TABLE IF EXISTS [TInserted]
 
-	CONSTRAINT [PK_TInserted] PRIMARY KEY CLUSTERED ([ParentID], [ChildID])
-)
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[TInserted]', N'U') IS NULL)
+	CREATE TABLE [TInserted]
+	(
+		[ParentID] Int NOT NULL,
+		[ChildID]  Int NOT NULL,
+
+		CONSTRAINT [PK_TInserted] PRIMARY KEY CLUSTERED ([ParentID], [ChildID])
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

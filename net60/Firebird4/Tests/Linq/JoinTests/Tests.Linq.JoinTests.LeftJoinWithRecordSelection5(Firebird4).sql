@@ -83,6 +83,8 @@ FROM
 		LEFT JOIN "Tag" "t" ON "t"."FactId" = "ft"."Id"
 WHERE
 	"ft"."Id" > 3
+ORDER BY
+	"ft"."Id"
 
 BeforeExecute
 -- Firebird4 Firebird

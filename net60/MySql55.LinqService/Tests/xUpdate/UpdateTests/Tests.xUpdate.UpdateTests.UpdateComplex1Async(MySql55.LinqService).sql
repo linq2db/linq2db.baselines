@@ -4,7 +4,7 @@
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MySql55 MySql.Official MySql (asynchronously)
+-- MySql55 MySql.Official MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55 MySql.Official MySql (asynchronously)
+-- MySql55 MySql.Official MySql
 
 SELECT LAST_INSERT_ID()
 

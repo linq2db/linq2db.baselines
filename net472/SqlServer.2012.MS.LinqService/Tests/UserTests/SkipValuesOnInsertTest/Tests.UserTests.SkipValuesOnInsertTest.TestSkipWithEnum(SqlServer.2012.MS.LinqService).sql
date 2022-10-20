@@ -1,15 +1,22 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-CREATE TABLE [PR_1598_Insert_Enum_Table]
-(
-	[Id]     Int            NOT NULL,
-	[Name]   NVarChar(4000)     NULL,
-	[Age]    Int                NULL,
-	[Gender] NVarChar(6)        NULL,
+IF (OBJECT_ID(N'[PR_1598_Insert_Enum_Table]', N'U') IS NOT NULL)
+	DROP TABLE [PR_1598_Insert_Enum_Table]
 
-	CONSTRAINT [PK_PR_1598_Insert_Enum_Table] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+
+IF (OBJECT_ID(N'[PR_1598_Insert_Enum_Table]', N'U') IS NULL)
+	CREATE TABLE [PR_1598_Insert_Enum_Table]
+	(
+		[Id]     Int            NOT NULL,
+		[Name]   NVarChar(4000)     NULL,
+		[Age]    Int                NULL,
+		[Gender] NVarChar(6)        NULL,
+
+		CONSTRAINT [PK_PR_1598_Insert_Enum_Table] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

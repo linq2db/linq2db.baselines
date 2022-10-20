@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [LeaveRequest]
+DROP TABLE IF EXISTS [LeaveRequest]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [LeaveRequest]
 (
 	[Id]         INTEGER NOT NULL,
 	[EmployeeId] INTEGER NOT NULL
@@ -10,7 +15,12 @@ CREATE TABLE [LeaveRequest]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [LeaveRequestDateEntry]
+DROP TABLE IF EXISTS [LeaveRequestDateEntry]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [LeaveRequestDateEntry]
 (
 	[Id]             INTEGER NOT NULL,
 	[EndHour]        Decimal     NULL,

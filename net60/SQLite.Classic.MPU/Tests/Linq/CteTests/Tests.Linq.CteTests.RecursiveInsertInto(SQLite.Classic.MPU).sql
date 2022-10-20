@@ -43,7 +43,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [HierarchyData]
+DROP TABLE IF EXISTS [HierarchyData]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [HierarchyData]
 (
 	[Id]    INTEGER NOT NULL,
 	[Level] INTEGER NOT NULL

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @BinaryValue Bytea(5) -- Binary
-SET     @BinaryValue = E'\\x0102030405'
+SET     @BinaryValue = E'\\x0102030405'::bytea
 
 UPDATE
 	"LinqDataTypes"

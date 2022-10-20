@@ -124,14 +124,3 @@ FROM
 WHERE
 	[_].[PersonID] = @ID
 
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @ID Int -- Int32
-SET     @ID = 5
-
-DELETE [x]
-FROM
-	[Person] [x]
-WHERE
-	[x].[PersonID] = @ID
-

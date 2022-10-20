@@ -51,7 +51,8 @@ INSERT INTO "T2"
 )
 VALUES
 (1,2),
-(1,2)
+(2,2),
+(2,85)
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -76,6 +77,8 @@ WHERE
 	x_1.id2 = :myId
 GROUP BY
 	x_1.id
+ORDER BY
+	x_1.id
 LIMIT :take
 
 BeforeExecute
@@ -88,12 +91,15 @@ SET     @ID = 2
 SELECT
 	x_1.id,
 	x_1.id2,
-	x_1.id3
+	x_1.id3,
+	t3.order_1,
+	t3.id2
 FROM
 	"T1" x_1
 		LEFT JOIN (
 			SELECT
-				x.id as order_1
+				x.id as order_1,
+				x.id2
 			FROM
 				"T2" x
 			WHERE

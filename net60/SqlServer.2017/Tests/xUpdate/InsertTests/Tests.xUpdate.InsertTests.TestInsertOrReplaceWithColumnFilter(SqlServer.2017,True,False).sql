@@ -1,15 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-CREATE TABLE [TestInsertOrReplaceTable]
-(
-	[ID]         Int            NOT NULL,
-	[FirstName]  NVarChar(4000)     NULL,
-	[LastName]   NVarChar(4000)     NULL,
-	[MiddleName] NVarChar(4000)     NULL,
+DROP TABLE IF EXISTS [TestInsertOrReplaceTable]
 
-	CONSTRAINT [PK_TestInsertOrReplaceTable] PRIMARY KEY CLUSTERED ([ID])
-)
+BeforeExecute
+-- SqlServer.2017
+
+IF (OBJECT_ID(N'[TestInsertOrReplaceTable]', N'U') IS NULL)
+	CREATE TABLE [TestInsertOrReplaceTable]
+	(
+		[ID]         Int            NOT NULL,
+		[FirstName]  NVarChar(4000)     NULL,
+		[LastName]   NVarChar(4000)     NULL,
+		[MiddleName] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_TestInsertOrReplaceTable] PRIMARY KEY CLUSTERED ([ID])
+	)
 
 BeforeExecute
 -- SqlServer.2017

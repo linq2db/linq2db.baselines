@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [CreateTableTypes]
-(
-	[String] NVarChar(10)     NULL,
-	[Id]     Int          NOT NULL
-)
+DROP TABLE IF EXISTS [CreateTableTypes]
+
+BeforeExecute
+-- SqlServer.2016
+
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
+	CREATE TABLE [CreateTableTypes]
+	(
+		[String] NVarChar(10)     NULL,
+		[Id]     Int          NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016

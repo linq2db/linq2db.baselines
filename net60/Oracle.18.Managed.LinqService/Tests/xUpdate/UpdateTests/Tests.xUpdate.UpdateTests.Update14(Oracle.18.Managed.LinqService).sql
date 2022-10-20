@@ -32,7 +32,7 @@ SET     @idx = 12
 UPDATE
 	"Person"
 SET
-	"Person"."LastName" = Cast(:idx as VarChar2(11))
+	"Person"."LastName" = Cast(:idx as VarChar(11))
 WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
@@ -42,14 +42,6 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"Person" t1
-WHERE
-	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-DELETE FROM
 	"Person" t1
 WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'

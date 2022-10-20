@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `User`
+DROP TABLE IF EXISTS `User`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `User`
 (
 	`Id` INT NOT NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE `User`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `Resource`
+DROP TABLE IF EXISTS `Resource`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Resource`
 (
 	`Id`                 INT NOT NULL,
 	`AssociatedObjectId` INT NOT NULL,
@@ -19,7 +29,12 @@ CREATE TABLE `Resource`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `Lookup`
+DROP TABLE IF EXISTS `Lookup`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Lookup`
 (
 	`Id`   INT           NOT NULL,
 	`Type` VARCHAR(4000)     NULL

@@ -1,10 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [ValueItem]
-(
-	[Value] Int NOT NULL
-)
+DROP TABLE IF EXISTS [ValueItem]
+
+BeforeExecute
+-- SqlServer.2016
+
+IF (OBJECT_ID(N'[ValueItem]', N'U') IS NULL)
+	CREATE TABLE [ValueItem]
+	(
+		[Value] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016

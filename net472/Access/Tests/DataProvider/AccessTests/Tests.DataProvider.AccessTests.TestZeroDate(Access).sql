@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [DateTable]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [DateTable]
 (
 	[ID]   Int      NOT NULL,

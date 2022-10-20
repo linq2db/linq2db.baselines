@@ -23,8 +23,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	c_1."ParentID",
@@ -32,7 +30,9 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ChildID" > -100 AND ROWNUM <= :take
+	c_1."ChildID" > -100
+ORDER BY
+	c_1."ParentID"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -41,4 +41,6 @@ SELECT
 	1
 FROM
 	"Parent" p
+ORDER BY
+	p."ParentID"
 

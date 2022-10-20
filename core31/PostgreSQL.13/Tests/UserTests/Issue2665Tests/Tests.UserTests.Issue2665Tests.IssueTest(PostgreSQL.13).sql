@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "ProductTable"
+DROP TABLE IF EXISTS "ProductTable"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "ProductTable"
 (
 	"Id"   Int  NOT NULL,
 	"Name" text NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE "ProductTable"
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "ProductAttributeTable"
+DROP TABLE IF EXISTS "ProductAttributeTable"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "ProductAttributeTable"
 (
 	"Id"   Int  NOT NULL,
 	"Name" text NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE "ProductAttributeTable"
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "ProductAttributeMapping"
+DROP TABLE IF EXISTS "ProductAttributeMapping"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "ProductAttributeMapping"
 (
 	"ProductId"          Int NOT NULL,
 	"ProductAttributeId" Int NOT NULL,

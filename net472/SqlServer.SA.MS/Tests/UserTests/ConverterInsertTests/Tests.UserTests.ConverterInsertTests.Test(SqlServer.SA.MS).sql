@@ -67,26 +67,3 @@ FROM
 WHERE
 	[t].[PersonID] = @id
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-DECLARE @PersonID Int -- Int32
-SET     @PersonID = 5
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'123'
-DECLARE @LastName NVarChar(4000) -- String
-SET     @LastName = N'456'
-DECLARE @MiddleName NVarChar(4000) -- String
-SET     @MiddleName = N'789'
-DECLARE @Gender NVarChar(4000) -- String
-SET     @Gender = N'M'
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = @PersonID AND
-	[t1].[FirstName] = @FirstName AND
-	[t1].[LastName] = @LastName AND
-	[t1].[MiddleName] = @MiddleName AND
-	[t1].[Gender] = @Gender
-

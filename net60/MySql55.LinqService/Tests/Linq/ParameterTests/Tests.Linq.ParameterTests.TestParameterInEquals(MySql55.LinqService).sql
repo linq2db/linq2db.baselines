@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `TestEqualsTable1`
+DROP TABLE IF EXISTS `TestEqualsTable1`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TestEqualsTable1`
 (
 	`Id` INT NOT NULL
 )
@@ -9,7 +14,12 @@ CREATE TABLE `TestEqualsTable1`
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `TestEqualsTable2`
+DROP TABLE IF EXISTS `TestEqualsTable2`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TestEqualsTable2`
 (
 	`Id` INT NOT NULL,
 	`FK` INT     NULL

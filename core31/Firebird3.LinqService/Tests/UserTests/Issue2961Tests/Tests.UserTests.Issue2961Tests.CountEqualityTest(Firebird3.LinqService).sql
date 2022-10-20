@@ -1,46 +1,98 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Condos"
-(
-	"Id"         Int NOT NULL,
-	"LocationId" Int NOT NULL,
-
-	CONSTRAINT "PK_Condos" PRIMARY KEY ("Id")
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Condos')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Condos"';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "CategoryCondos"
-(
-	"CategoryId" Int NOT NULL,
-	"CondoId"    Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Condos')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Condos"
+			(
+				"Id"         Int NOT NULL,
+				"LocationId" Int NOT NULL,
 
-	CONSTRAINT "PK_CategoryCondos" PRIMARY KEY ("CategoryId", "CondoId")
-)
-
-BeforeExecute
--- Firebird3 Firebird
-
-CREATE TABLE "CondoTags"
-(
-	"CondoId" Int NOT NULL,
-	"TagId"   Int NOT NULL,
-
-	CONSTRAINT "PK_CondoTags" PRIMARY KEY ("CondoId", "TagId")
-)
+				CONSTRAINT "PK_Condos" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "Locations"
-(
-	"Id"           Int                                    NOT NULL,
-	"LocationName" VarChar(100) CHARACTER SET UNICODE_FSS NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CategoryCondos')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "CategoryCondos"';
+END
 
-	CONSTRAINT "PK_Locations" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CategoryCondos')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "CategoryCondos"
+			(
+				"CategoryId" Int NOT NULL,
+				"CondoId"    Int NOT NULL,
+
+				CONSTRAINT "PK_CategoryCondos" PRIMARY KEY ("CategoryId", "CondoId")
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CondoTags')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "CondoTags"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CondoTags')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "CondoTags"
+			(
+				"CondoId" Int NOT NULL,
+				"TagId"   Int NOT NULL,
+
+				CONSTRAINT "PK_CondoTags" PRIMARY KEY ("CondoId", "TagId")
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Locations')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Locations"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Locations')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "Locations"
+			(
+				"Id"           Int                                    NOT NULL,
+				"LocationName" VarChar(100) CHARACTER SET UNICODE_FSS NOT NULL,
+
+				CONSTRAINT "PK_Locations" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

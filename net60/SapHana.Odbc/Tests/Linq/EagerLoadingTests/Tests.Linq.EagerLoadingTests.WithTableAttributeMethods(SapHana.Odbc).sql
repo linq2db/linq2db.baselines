@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "UserIssue3128"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "UserIssue3128"
 (
 	"Id" Integer NOT NULL,
 
 	PRIMARY KEY ("Id")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "UserDetailsIssue3128"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -35,11 +45,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @UserId  -- Int32
 SET     @UserId = 10
 DECLARE @Age  -- Int32
@@ -55,11 +60,6 @@ VALUES
 	?,
 	?
 )
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

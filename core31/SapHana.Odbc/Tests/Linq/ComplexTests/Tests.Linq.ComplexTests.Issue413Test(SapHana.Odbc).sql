@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "T1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "T1"
 (
 	"InstrumentId"         Integer       NOT NULL,
@@ -14,11 +19,21 @@ CREATE COLUMN TABLE "T1"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "T2"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "T2"
 (
 	"InstrumentId" Integer NOT NULL,
 	"IndexId"      Integer NOT NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "T3"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

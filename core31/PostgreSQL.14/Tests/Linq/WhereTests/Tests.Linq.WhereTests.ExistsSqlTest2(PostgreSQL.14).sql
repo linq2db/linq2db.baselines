@@ -1,6 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction
-BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
@@ -13,7 +11,6 @@ WHERE
 			"Child" t1
 		WHERE
 			p."ParentID" = t1."ParentID"
-	)
+	) AND
+	p."ParentID" > 100
 
-BeforeExecute
-RollbackTransaction

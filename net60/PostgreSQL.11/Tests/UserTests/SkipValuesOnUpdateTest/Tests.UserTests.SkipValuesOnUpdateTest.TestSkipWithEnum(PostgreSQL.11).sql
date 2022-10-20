@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "PR_1598_Update_Enum_Table"
+DROP TABLE IF EXISTS "PR_1598_Update_Enum_Table"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "PR_1598_Update_Enum_Table"
 (
 	"Id"     Int  NOT NULL,
 	"Name"   text     NULL,

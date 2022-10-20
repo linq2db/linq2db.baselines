@@ -1,35 +1,62 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [ProductTable]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255) NOT NULL,
-
-	CONSTRAINT [PK_ProductTable] PRIMARY KEY CLUSTERED ([Id])
-)
+IF (OBJECT_ID(N'ProductTable') IS NOT NULL)
+	DROP TABLE [ProductTable]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [ProductAttributeTable]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255) NOT NULL,
+IF (OBJECT_ID(N'ProductTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [ProductTable]
+		(
+			[Id]   Int           NOT NULL,
+			[Name] NVarChar(255) NOT NULL,
 
-	CONSTRAINT [PK_ProductAttributeTable] PRIMARY KEY CLUSTERED ([Id])
-)
+			CONSTRAINT [PK_ProductTable] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [ProductAttributeMapping]
-(
-	[ProductId]          Int NOT NULL,
-	[ProductAttributeId] Int NOT NULL,
+IF (OBJECT_ID(N'ProductAttributeTable') IS NOT NULL)
+	DROP TABLE [ProductAttributeTable]
 
-	CONSTRAINT [PK_ProductAttributeMapping] PRIMARY KEY CLUSTERED ([ProductId], [ProductAttributeId])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'ProductAttributeTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [ProductAttributeTable]
+		(
+			[Id]   Int           NOT NULL,
+			[Name] NVarChar(255) NOT NULL,
+
+			CONSTRAINT [PK_ProductAttributeTable] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'ProductAttributeMapping') IS NOT NULL)
+	DROP TABLE [ProductAttributeMapping]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'ProductAttributeMapping') IS NULL)
+	EXECUTE('
+		CREATE TABLE [ProductAttributeMapping]
+		(
+			[ProductId]          Int NOT NULL,
+			[ProductAttributeId] Int NOT NULL,
+
+			CONSTRAINT [PK_ProductAttributeMapping] PRIMARY KEY CLUSTERED ([ProductId], [ProductAttributeId])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

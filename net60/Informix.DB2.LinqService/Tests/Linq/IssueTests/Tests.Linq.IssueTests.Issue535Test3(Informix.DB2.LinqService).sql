@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE CustomerBase
+DROP TABLE IF EXISTS CustomerBase
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS CustomerBase
 (
 	Id           SERIAL         NOT NULL,
 	ClientType   NChar(6)       NOT NULL,

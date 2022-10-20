@@ -1,58 +1,110 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "billing_devtypes"
-(
-	"devtypeid"  Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"typename"   NVarChar(50)                              NOT NULL,
-	"GlobalType" Int                                       NOT NULL,
-
-	CONSTRAINT "PK_billing_devtypes" PRIMARY KEY ("devtypeid")
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "billing_devtypes"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "billing_devices"
-(
-	"devid"     NVarChar(50) NOT NULL,
-	"sernum"    NVarChar(50)     NULL,
-	"devtypeid" Int          NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "billing_devtypes"
+		(
+			"devtypeid"  Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"typename"   NVarChar(50)                              NOT NULL,
+			"GlobalType" Int                                       NOT NULL,
 
-	CONSTRAINT "PK_billing_devices" PRIMARY KEY ("devid")
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-CREATE TABLE "billing_DevReadingType"
-(
-	"Id"             Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"DevTypeId"      Int                                       NOT NULL,
-	"Name"           NVarChar(50)                              NOT NULL,
-	"Responsibility" Int                                       NOT NULL,
-
-	CONSTRAINT "PK_billing_DevReadingType" PRIMARY KEY ("Id")
-)
+			CONSTRAINT "PK_billing_devtypes" PRIMARY KEY ("devtypeid")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "billing_TempReading"
-(
-	"id"               Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"DevSerNum"        NVarChar(50)                              NOT NULL,
-	"devid"            NVarChar(50)                                  NULL,
-	"tsdevice"         timestamp                                 NOT NULL,
-	"value"            Decimal                                   NOT NULL,
-	"Devtypeid"        Int                                           NULL,
-	"DevReadingTypeId" Int                                           NULL,
-	"ReadingTypeName"  NVarChar(50)                                  NULL,
-	"DevGlobalType"    Int                                       NOT NULL,
-	"Responsibility"   Int                                       NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "billing_devices"';
+END
 
-	CONSTRAINT "PK_billing_TempReading" PRIMARY KEY ("id")
-)
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "billing_devices"
+		(
+			"devid"     NVarChar(50) NOT NULL,
+			"sernum"    NVarChar(50)     NULL,
+			"devtypeid" Int          NOT NULL,
+
+			CONSTRAINT "PK_billing_devices" PRIMARY KEY ("devid")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "billing_DevReadingType"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "billing_DevReadingType"
+		(
+			"Id"             Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"DevTypeId"      Int                                       NOT NULL,
+			"Name"           NVarChar(50)                              NOT NULL,
+			"Responsibility" Int                                       NOT NULL,
+
+			CONSTRAINT "PK_billing_DevReadingType" PRIMARY KEY ("Id")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "billing_TempReading"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "billing_TempReading"
+		(
+			"id"               Int          GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"DevSerNum"        NVarChar(50)                              NOT NULL,
+			"devid"            NVarChar(50)                                  NULL,
+			"tsdevice"         timestamp                                 NOT NULL,
+			"value"            Decimal                                   NOT NULL,
+			"Devtypeid"        Int                                           NULL,
+			"DevReadingTypeId" Int                                           NULL,
+			"ReadingTypeName"  NVarChar(50)                                  NULL,
+			"DevGlobalType"    Int                                       NOT NULL,
+			"Responsibility"   Int                                       NOT NULL,
+
+			CONSTRAINT "PK_billing_TempReading" PRIMARY KEY ("id")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

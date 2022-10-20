@@ -1,13 +1,26 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "TableToInsert"
-(
-	"Id"    Int                                    NOT NULL,
-	"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableToInsert')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TableToInsert"';
+END
 
-	CONSTRAINT "PK_TableToInsert" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableToInsert')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "TableToInsert"
+			(
+				"Id"    Int                                    NOT NULL,
+				"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_TableToInsert" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

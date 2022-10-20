@@ -1,13 +1,34 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "BackgroundTask"
-(
-	ID                 Int     NULL,
-	"DurationID"       Int NOT NULL,
-	"DurationInterval" Int NOT NULL,
-	"PersonID"         Int     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "BackgroundTask"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "BackgroundTask"
+		(
+			ID                 Int     NULL,
+			"DurationID"       Int NOT NULL,
+			"DurationInterval" Int NOT NULL,
+			"PersonID"         Int     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

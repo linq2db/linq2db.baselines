@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [VEMPLOYEE_SCH_SEC]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [VEMPLOYEE_SCH_SEC]
 (
 	[ACTIVE] Bit           NOT NULL,
@@ -9,6 +14,11 @@ CREATE TABLE [VEMPLOYEE_SCH_SEC]
 
 	CONSTRAINT [PK_VEMPLOYEE_SCH_SEC] PRIMARY KEY ([ID])
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [VEMPLOYEE_SCHDL_PERM]
 
 BeforeExecute
 -- SqlCe

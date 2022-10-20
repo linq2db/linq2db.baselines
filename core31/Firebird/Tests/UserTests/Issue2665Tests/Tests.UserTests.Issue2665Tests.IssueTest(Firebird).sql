@@ -1,35 +1,74 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "ProductTable"
-(
-	"Id"   Int                                    NOT NULL,
-	"Name" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
-
-	CONSTRAINT "PK_ProductTable" PRIMARY KEY ("Id")
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ProductTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ProductTable"';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "ProductAttributeTable"
-(
-	"Id"   Int                                    NOT NULL,
-	"Name" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ProductTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "ProductTable"
+			(
+				"Id"   Int                                    NOT NULL,
+				"Name" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
 
-	CONSTRAINT "PK_ProductAttributeTable" PRIMARY KEY ("Id")
-)
+				CONSTRAINT "PK_ProductTable" PRIMARY KEY ("Id")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird
 
-CREATE TABLE "ProductAttributeMapping"
-(
-	"ProductId"          Int NOT NULL,
-	"ProductAttributeId" Int NOT NULL,
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ProductAttributeTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ProductAttributeTable"';
+END
 
-	CONSTRAINT "PK_ProductAttributeMapping" PRIMARY KEY ("ProductId", "ProductAttributeId")
-)
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ProductAttributeTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "ProductAttributeTable"
+			(
+				"Id"   Int                                    NOT NULL,
+				"Name" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+
+				CONSTRAINT "PK_ProductAttributeTable" PRIMARY KEY ("Id")
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ProductAttributeMapping')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ProductAttributeMapping"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ProductAttributeMapping')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "ProductAttributeMapping"
+			(
+				"ProductId"          Int NOT NULL,
+				"ProductAttributeId" Int NOT NULL,
+
+				CONSTRAINT "PK_ProductAttributeMapping" PRIMARY KEY ("ProductId", "ProductAttributeId")
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird

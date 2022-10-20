@@ -1,12 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-CREATE TABLE [Issue2434Table]
-(
-	[Id]        Int            NOT NULL,
-	[FirstName] NVarChar(4000)     NULL,
-	[LastName]  NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[Issue2434Table]', N'U') IS NOT NULL)
+	DROP TABLE [Issue2434Table]
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+
+IF (OBJECT_ID(N'[Issue2434Table]', N'U') IS NULL)
+	CREATE TABLE [Issue2434Table]
+	(
+		[Id]        Int            NOT NULL,
+		[FirstName] NVarChar(4000)     NULL,
+		[LastName]  NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

@@ -1,10 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-CREATE TABLE [User]
-(
-	[Id] Int NOT NULL
-)
+IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
+	DROP TABLE [User]
+
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[User]', N'U') IS NULL)
+	CREATE TABLE [User]
+	(
+		[Id] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2014

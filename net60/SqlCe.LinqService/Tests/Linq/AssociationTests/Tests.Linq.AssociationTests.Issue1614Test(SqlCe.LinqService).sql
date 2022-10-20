@@ -1,10 +1,20 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [User]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [User]
 (
 	[Id] Int NOT NULL
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Resource]
 
 BeforeExecute
 -- SqlCe
@@ -15,6 +25,11 @@ CREATE TABLE [Resource]
 	[AssociatedObjectId] Int NOT NULL,
 	[AssociationTypeId]  Int     NULL
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Lookup]
 
 BeforeExecute
 -- SqlCe

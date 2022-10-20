@@ -5,14 +5,14 @@ ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-DELETE FROM
-	"Person" "p"
-WHERE
-	"p"."FirstName" = 'John' AND "p"."LastName" = 'Shepard'
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 SELECT
 	"PersonID"
@@ -23,13 +23,15 @@ FROM
 		(
 			"FirstName",
 			"LastName",
+			"MiddleName",
 			"Gender"
 		)
 		VALUES
 		(
-			'John',
-			'Shepard',
-			'M'
+			@FirstName,
+			@LastName,
+			@MiddleName,
+			@Gender
 		)
 	)
 
@@ -130,24 +132,4 @@ FROM
 WHERE
 	"p"."PersonID" = @id
 FETCH FIRST 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
-
-DELETE FROM
-	"Patient" "t1"
-WHERE
-	"t1"."PersonID" = @id
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @id Integer(4) -- Int32
-SET     @id = 5
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."PersonID" = @id
 

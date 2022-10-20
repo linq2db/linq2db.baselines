@@ -128,13 +128,3 @@ WHERE
 	t1."PersonID" = :ID
 FETCH NEXT :take ROWS ONLY
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @ID Int32
-SET     @ID = 5
-
-DELETE FROM
-	"Person" x
-WHERE
-	x."PersonID" = :ID
-

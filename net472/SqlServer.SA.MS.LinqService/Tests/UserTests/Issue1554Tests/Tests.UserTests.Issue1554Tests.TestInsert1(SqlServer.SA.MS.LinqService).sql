@@ -1,14 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-CREATE TABLE [Issue1554Table]
-(
-	[Id]              Int         NOT NULL,
-	[ClaimedKeyType]  NVarChar(3) NOT NULL,
-	[ClaimedKeyTypeN] NVarChar(3)     NULL,
+DROP TABLE IF EXISTS [Issue1554Table]
 
-	CONSTRAINT [PK_Issue1554Table] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue1554Table]', N'U') IS NULL)
+	CREATE TABLE [Issue1554Table]
+	(
+		[Id]              Int         NOT NULL,
+		[ClaimedKeyType]  NVarChar(3) NOT NULL,
+		[ClaimedKeyTypeN] NVarChar(3)     NULL,
+
+		CONSTRAINT [PK_Issue1554Table] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

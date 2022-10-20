@@ -9,7 +9,12 @@ CREATE TYPE time_unit AS ENUM ('hour', 'day');
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "public".schedule
+DROP TABLE IF EXISTS "public".schedule
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "public".schedule
 (
 	id            SERIAL     NOT NULL,
 	unit          time_unit  NOT NULL,

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [BackgroundTask]
+DROP TABLE IF EXISTS [BackgroundTask]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [BackgroundTask]
 (
 	[ID]               INTEGER     NULL,
 	[DurationID]       INTEGER NOT NULL,

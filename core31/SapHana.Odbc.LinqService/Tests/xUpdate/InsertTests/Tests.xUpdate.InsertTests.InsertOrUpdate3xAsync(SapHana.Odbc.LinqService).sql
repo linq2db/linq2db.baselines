@@ -48,30 +48,32 @@ ALTER TABLE "Patient" ADD CONSTRAINT "FK_Patient_Person" FOREIGN KEY ("PersonID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Person" "p"
-WHERE
-	"p"."FirstName" = 'John' AND "p"."LastName" = 'Shepard'
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName NVarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName NVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
 	"FirstName",
 	"LastName",
+	"MiddleName",
 	"Gender"
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	?,
+	?,
+	?,
+	?
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 

@@ -2,16 +2,6 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" "t1"
-WHERE
-	"t1"."ID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue  -- Int16
@@ -64,14 +54,4 @@ FROM
 WHERE
 	"t"."ID" = ?
 LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" "t1"
-WHERE
-	"t1"."ID" = ?
 

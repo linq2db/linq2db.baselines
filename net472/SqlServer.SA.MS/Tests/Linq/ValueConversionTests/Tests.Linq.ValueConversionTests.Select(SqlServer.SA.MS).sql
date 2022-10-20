@@ -67,6 +67,8 @@ SELECT
 	[t1].[DateTimeNullable]
 FROM
 	[ValueConversion] [t1]
+ORDER BY
+	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -77,6 +79,8 @@ SELECT
 	[t].[Value2]
 FROM
 	[ValueConversion] [t]
+ORDER BY
+	[t].[Id]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -94,30 +98,41 @@ FROM
 		FROM
 			[ValueConversion] [t]
 	) [t1]
+ORDER BY
+	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2]
-FROM
-	[ValueConversion] [t]
-UNION ALL
-SELECT
-	[t1].[Id],
-	[t1].[Value1],
-	[t1].[Value2]
+	[t2].[Id],
+	[t2].[Value1],
+	[t2].[Value2]
 FROM
 	(
 		SELECT
-			[t_1].[Id],
-			[t_1].[Value1],
-			[t_1].[Value2]
+			[t].[Id],
+			[t].[Value1],
+			[t].[Value2]
 		FROM
-			[ValueConversion] [t_1]
-	) [t1]
+			[ValueConversion] [t]
+		UNION ALL
+		SELECT
+			[t1].[Id],
+			[t1].[Value1],
+			[t1].[Value2]
+		FROM
+			(
+				SELECT
+					[t_1].[Id],
+					[t_1].[Value1],
+					[t_1].[Value2]
+				FROM
+					[ValueConversion] [t_1]
+			) [t1]
+	) [t2]
+ORDER BY
+	[t2].[Id]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

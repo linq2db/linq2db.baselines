@@ -87,13 +87,3 @@ WHERE
 	[x].[FirstName] = @FirstName
 LIMIT @take
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @newName NVarChar(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] = @newName
-

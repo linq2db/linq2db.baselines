@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "TestTable"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "TestTable"
 (
 	"Id" Integer NOT NULL,
@@ -16,7 +21,7 @@ BeforeExecute
 UPDATE
 	"TestTable"
 SET
-	"TestTable"."Id" = 1
+	"TestTable"."Fd" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

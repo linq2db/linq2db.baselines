@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Authors]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Authors]
 (
 	[Id]   Int           NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE [Authors]
 
 	CONSTRAINT [PK_Authors] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [Books]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

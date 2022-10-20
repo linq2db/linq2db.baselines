@@ -46,12 +46,3 @@ FROM
 WHERE
 	[c_1].[FirstName] = N'Johnny' AND [c_1].[LastName] = N'Limonadovy'
 
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[LastName] = N'Limonadovy'
-

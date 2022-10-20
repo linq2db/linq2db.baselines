@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 --  Access AccessOleDb
 
+DROP TABLE [MyEntity]
+
+BeforeExecute
+--  Access AccessOleDb
+
 CREATE TABLE [MyEntity]
 (
 	[Id]   BigInt        NOT NULL,

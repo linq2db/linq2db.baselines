@@ -85,13 +85,3 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
--- SqlCe
-DECLARE @newName NVarChar(25) -- String
-SET     @newName = 'UpdateColumnFilterUpdated'
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] = @newName
-

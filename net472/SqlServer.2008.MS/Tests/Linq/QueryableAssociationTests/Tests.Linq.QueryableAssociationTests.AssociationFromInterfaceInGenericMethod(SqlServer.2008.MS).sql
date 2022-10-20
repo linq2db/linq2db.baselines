@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [TreeItem]
-(
-	[Id]       Int NOT NULL,
-	[ParentId] Int     NULL
-)
+IF (OBJECT_ID(N'[TreeItem]', N'U') IS NOT NULL)
+	DROP TABLE [TreeItem]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[TreeItem]', N'U') IS NULL)
+	CREATE TABLE [TreeItem]
+	(
+		[Id]       Int NOT NULL,
+		[ParentId] Int     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

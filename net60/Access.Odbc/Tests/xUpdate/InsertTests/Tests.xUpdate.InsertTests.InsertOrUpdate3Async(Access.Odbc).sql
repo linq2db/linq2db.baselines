@@ -25,30 +25,32 @@ ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENC
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-
-DELETE FROM
-	[Person] [p]
-WHERE
-	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
-
-BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName NVarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName NVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
 	[FirstName],
 	[LastName],
+	[MiddleName],
 	[Gender]
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	?,
+	?,
+	?,
+	?
 )
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 
 SELECT @@IDENTITY
 
@@ -122,24 +124,4 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Patient] [t1]
-WHERE
-	[t1].[PersonID] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
-DECLARE @id Int -- Int32
-SET     @id = 5
-
-DELETE FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = ?
 

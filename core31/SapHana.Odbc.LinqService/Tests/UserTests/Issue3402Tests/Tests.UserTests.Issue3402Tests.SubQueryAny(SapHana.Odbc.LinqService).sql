@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "VEMPLOYEE_SCH_SEC"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "VEMPLOYEE_SCH_SEC"
 (
 	"ACTIVE" TinyInt       NOT NULL,
@@ -9,6 +14,11 @@ CREATE COLUMN TABLE "VEMPLOYEE_SCH_SEC"
 
 	PRIMARY KEY ("ID")
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "VEMPLOYEE_SCHDL_PERM"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

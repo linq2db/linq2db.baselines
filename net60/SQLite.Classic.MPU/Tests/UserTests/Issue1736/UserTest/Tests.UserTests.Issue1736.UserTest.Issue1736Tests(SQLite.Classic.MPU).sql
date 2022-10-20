@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [StorageShelfDTO]
+DROP TABLE IF EXISTS [StorageShelfDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [StorageShelfDTO]
 (
 	[Id]        Guid NOT NULL,
 	[ChannelID] Guid NOT NULL,
@@ -11,7 +16,12 @@ CREATE TABLE [StorageShelfDTO]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [ChannelDTO]
+DROP TABLE IF EXISTS [ChannelDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [ChannelDTO]
 (
 	[Id] Guid NOT NULL
 )
@@ -19,7 +29,12 @@ CREATE TABLE [ChannelDTO]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [RefResourceStorageShelfDTO]
+DROP TABLE IF EXISTS [RefResourceStorageShelfDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [RefResourceStorageShelfDTO]
 (
 	[StorageShelfID] Guid NOT NULL,
 	[ResourceID]     Guid NOT NULL
@@ -28,7 +43,12 @@ CREATE TABLE [RefResourceStorageShelfDTO]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [RefOutfeedTransportOrderResourceDTO]
+DROP TABLE IF EXISTS [RefOutfeedTransportOrderResourceDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [RefOutfeedTransportOrderResourceDTO]
 (
 	[Id]                  Guid    NOT NULL,
 	[Quantity]            Decimal NOT NULL,
@@ -39,7 +59,12 @@ CREATE TABLE [RefOutfeedTransportOrderResourceDTO]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [AisleDTO]
+DROP TABLE IF EXISTS [AisleDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [AisleDTO]
 (
 	[Id]     Guid    NOT NULL,
 	[Status] INTEGER NOT NULL
@@ -48,7 +73,12 @@ CREATE TABLE [AisleDTO]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [RefResPointAisleDTO]
+DROP TABLE IF EXISTS [RefResPointAisleDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [RefResPointAisleDTO]
 (
 	[AisleId]         Guid NOT NULL,
 	[ResourcePointId] Guid NOT NULL
@@ -57,7 +87,12 @@ CREATE TABLE [RefResPointAisleDTO]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [WmsResourcePointDTO]
+DROP TABLE IF EXISTS [WmsResourcePointDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [WmsResourcePointDTO]
 (
 	[Id]             Guid NOT NULL,
 	[IsStoragePlace] Bit  NOT NULL
@@ -66,7 +101,12 @@ CREATE TABLE [WmsResourcePointDTO]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [WmsLoadCarrierDTO]
+DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [WmsLoadCarrierDTO]
 (
 	[Id]              Guid NOT NULL,
 	[ResourcePointID] Guid     NULL
@@ -75,7 +115,12 @@ CREATE TABLE [WmsLoadCarrierDTO]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [InventoryResourceDTO]
+DROP TABLE IF EXISTS [InventoryResourceDTO]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
 (
 	[Id]            Guid    NOT NULL,
 	[ProductStatus] INTEGER NOT NULL,
@@ -162,7 +207,7 @@ FROM
 							[RefOutfeedTransportOrderResourceDTO] [x_1]
 						WHERE
 							[x_1].[ResourceID] = [r].[Id] AND [x_1].[InventoryResourceID] IS NULL
-					) as Decimal(29, 10)) * [ir].[Quantity] as [RefQty],
+					) as Decimal) * [ir].[Quantity] as [RefQty],
 					CASE
 						WHEN EXISTS(
 							SELECT

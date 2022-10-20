@@ -1,21 +1,33 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [Employee]
-(
-	[Id]           Int NOT NULL,
-	[DepartmentId] Int     NULL
-)
+DROP TABLE IF EXISTS [Employee]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [Department]
-(
-	[DepartmentId] Int            NOT NULL,
-	[Name]         NVarChar(4000)     NULL,
-	[Deleted]      Bit            NOT NULL
-)
+IF (OBJECT_ID(N'[Employee]', N'U') IS NULL)
+	CREATE TABLE [Employee]
+	(
+		[Id]           Int NOT NULL,
+		[DepartmentId] Int     NULL
+	)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE IF EXISTS [Department]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[Department]', N'U') IS NULL)
+	CREATE TABLE [Department]
+	(
+		[DepartmentId] Int            NOT NULL,
+		[Name]         NVarChar(4000)     NULL,
+		[Deleted]      Bit            NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

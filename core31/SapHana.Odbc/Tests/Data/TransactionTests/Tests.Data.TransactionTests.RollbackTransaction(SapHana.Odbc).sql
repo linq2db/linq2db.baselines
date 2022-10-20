@@ -44,11 +44,3 @@ WHERE
 	"t"."ParentID" = 1010
 LIMIT ?
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" >= 1000
-

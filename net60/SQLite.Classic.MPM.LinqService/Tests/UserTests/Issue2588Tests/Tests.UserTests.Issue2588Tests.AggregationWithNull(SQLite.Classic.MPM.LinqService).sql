@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [TestClass]
+DROP TABLE IF EXISTS [TestClass]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [TestClass]
 (
 	[Id]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL

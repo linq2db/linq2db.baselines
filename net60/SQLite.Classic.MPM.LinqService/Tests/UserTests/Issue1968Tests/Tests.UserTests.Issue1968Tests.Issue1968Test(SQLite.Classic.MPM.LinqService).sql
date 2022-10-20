@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [University]
+DROP TABLE IF EXISTS [University]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [University]
 (
 	[Id]       INTEGER       NOT NULL,
 	[Name]     NVarChar(255)     NULL,
@@ -11,7 +16,12 @@ CREATE TABLE [University]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Faculty]
+DROP TABLE IF EXISTS [Faculty]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Faculty]
 (
 	[Id]           INTEGER       NOT NULL,
 	[Code]         NVarChar(255)     NULL,
@@ -25,7 +35,12 @@ CREATE TABLE [Faculty]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Subject]
+DROP TABLE IF EXISTS [Subject]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Subject]
 (
 	[SubjectId]     INTEGER       NOT NULL,
 	[FirstSubject]  NVarChar(255)     NULL,

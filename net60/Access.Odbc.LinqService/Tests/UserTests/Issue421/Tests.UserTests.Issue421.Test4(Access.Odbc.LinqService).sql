@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [BlobClass]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [BlobClass]
 (
 	[Id]        Int            NOT NULL,

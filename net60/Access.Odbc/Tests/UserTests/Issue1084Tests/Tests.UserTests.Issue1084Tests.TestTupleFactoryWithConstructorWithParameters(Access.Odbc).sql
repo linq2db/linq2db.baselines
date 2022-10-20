@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [i1084_person]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [i1084_person]
 (
 	[Id]            Int NOT NULL,
 	[Number]        Int NOT NULL,
 	[StatusBitmask] Int NOT NULL
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [i1084_student]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

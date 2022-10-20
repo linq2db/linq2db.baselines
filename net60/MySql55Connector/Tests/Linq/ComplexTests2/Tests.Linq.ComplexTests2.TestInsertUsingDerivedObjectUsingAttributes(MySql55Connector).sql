@@ -102,12 +102,3 @@ FROM
 WHERE
 	`t1`.`PersonID` = @ID
 
-BeforeExecute
--- MySql55Connector MySqlConnector MySql
-
-DELETE   `_`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` = 'test_inherited_insert'
-

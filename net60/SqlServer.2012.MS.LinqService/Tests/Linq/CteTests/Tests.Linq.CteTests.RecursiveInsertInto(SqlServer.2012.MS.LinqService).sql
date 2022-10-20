@@ -341,11 +341,18 @@ VALUES
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-CREATE TABLE [HierarchyData]
-(
-	[Id]    Int NOT NULL,
-	[Level] Int NOT NULL
-)
+IF (OBJECT_ID(N'[HierarchyData]', N'U') IS NOT NULL)
+	DROP TABLE [HierarchyData]
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+
+IF (OBJECT_ID(N'[HierarchyData]', N'U') IS NULL)
+	CREATE TABLE [HierarchyData]
+	(
+		[Id]    Int NOT NULL,
+		[Level] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

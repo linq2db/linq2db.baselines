@@ -115,11 +115,3 @@ DELETE FROM
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
--- Access.Odbc AccessODBC
-
-DELETE FROM
-	[Person] [_]
-WHERE
-	[_].[FirstName] = 'test_inherited_insert'
-

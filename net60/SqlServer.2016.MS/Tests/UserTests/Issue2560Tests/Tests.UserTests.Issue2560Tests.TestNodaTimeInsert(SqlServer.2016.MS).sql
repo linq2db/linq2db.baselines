@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [DataClass]
-(
-	[Id]    Int      NOT NULL,
-	[Value] DateTime NOT NULL
-)
+DROP TABLE IF EXISTS [DataClass]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+IF (OBJECT_ID(N'[DataClass]', N'U') IS NULL)
+	CREATE TABLE [DataClass]
+	(
+		[Id]    Int      NOT NULL,
+		[Value] DateTime NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

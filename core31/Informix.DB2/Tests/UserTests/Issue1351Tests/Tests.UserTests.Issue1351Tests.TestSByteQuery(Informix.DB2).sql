@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE T1351Model
+DROP TABLE IF EXISTS T1351Model
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS T1351Model
 (
 	ID           Int      NOT NULL,
 	TestField    SmallInt NOT NULL,

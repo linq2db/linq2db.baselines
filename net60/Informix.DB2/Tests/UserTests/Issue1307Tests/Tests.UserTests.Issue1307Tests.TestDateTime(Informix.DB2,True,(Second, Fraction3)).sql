@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE DateTimeTestTable
+DROP TABLE IF EXISTS DateTimeTestTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS DateTimeTestTable
 (
 	DateTimeField datetime Second to fraction(3) NOT NULL
 )

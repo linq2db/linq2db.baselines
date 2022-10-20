@@ -1,25 +1,37 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [dbo].[Orders]
-(
-	[Id]   Int             NOT NULL IDENTITY,
-	[Name] NVarChar(4000)  NOT NULL,
-
-	CONSTRAINT [PK_Orders] PRIMARY KEY CLUSTERED ([Id])
-)
+DROP TABLE IF EXISTS [dbo].[Orders]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [dbo].[OrderItems]
-(
-	[Id]      Int             NOT NULL IDENTITY,
-	[OrderId] Int             NOT NULL,
-	[Product] NVarChar(4000)  NOT NULL,
+IF (OBJECT_ID(N'[dbo].[Orders]', N'U') IS NULL)
+	CREATE TABLE [dbo].[Orders]
+	(
+		[Id]   Int             NOT NULL IDENTITY,
+		[Name] NVarChar(4000)  NOT NULL,
 
-	CONSTRAINT [PK_OrderItems] PRIMARY KEY CLUSTERED ([Id])
-)
+		CONSTRAINT [PK_Orders] PRIMARY KEY CLUSTERED ([Id])
+	)
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+DROP TABLE IF EXISTS [dbo].[OrderItems]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+IF (OBJECT_ID(N'[dbo].[OrderItems]', N'U') IS NULL)
+	CREATE TABLE [dbo].[OrderItems]
+	(
+		[Id]      Int             NOT NULL IDENTITY,
+		[OrderId] Int             NOT NULL,
+		[Product] NVarChar(4000)  NOT NULL,
+
+		CONSTRAINT [PK_OrderItems] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

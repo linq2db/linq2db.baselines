@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Authors]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Authors]
 (
 	[Id]   Int           NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE [Authors]
 
 	CONSTRAINT [PK_Authors] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [Books]
 
 BeforeExecute
 -- Access AccessOleDb

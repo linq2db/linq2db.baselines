@@ -1,12 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [T1351Model]
-(
-	[ID]           Int     NOT NULL,
-	[TestField]    TinyInt NOT NULL,
-	[TestNullable] TinyInt     NULL
-)
+DROP TABLE IF EXISTS [T1351Model]
+
+BeforeExecute
+-- SqlServer.2016
+
+IF (OBJECT_ID(N'[T1351Model]', N'U') IS NULL)
+	CREATE TABLE [T1351Model]
+	(
+		[ID]           Int     NOT NULL,
+		[TestField]    TinyInt NOT NULL,
+		[TestNullable] TinyInt     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016

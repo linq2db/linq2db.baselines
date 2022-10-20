@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Issue1303"
+DROP TABLE IF EXISTS "Issue1303"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Issue1303"
 (
 	"ID"     Int   NOT NULL,
 	"Array"  bytea     NULL,
@@ -13,9 +18,9 @@ CREATE TABLE "Issue1303"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Array_1 Bytea(3) -- Binary
-SET     @Array_1 = E'\\x010203'
+SET     @Array_1 = E'\\x010203'::bytea
 DECLARE @Binary_1 Bytea(2) -- Binary
-SET     @Binary_1 = E'\\x0405'
+SET     @Binary_1 = E'\\x0405'::bytea
 
 INSERT INTO "Issue1303"
 (
@@ -48,7 +53,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Array_1 Bytea(3) -- Binary
-SET     @Array_1 = E'\\x010203'
+SET     @Array_1 = E'\\x010203'::bytea
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -65,7 +70,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Binary_1 Bytea(2) -- Binary
-SET     @Binary_1 = E'\\x0405'
+SET     @Binary_1 = E'\\x0405'::bytea
 DECLARE @take Integer -- Int32
 SET     @take = 2
 

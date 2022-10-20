@@ -7,15 +7,15 @@ SELECT @p
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
-DECLARE @p Date
-SET     @p = '1234-11-22'::date
+DECLARE @p Interval -- Object
+SET     @p = -00:20:34
 
 SELECT @p
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
-DECLARE @p Date
-SET     @p = '1234-11-22'::date
+DECLARE @p Interval -- Object
+SET     @p = -00:20:34
 
 SELECT @p
 
@@ -4526,7 +4526,12 @@ RollbackTransaction
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "TestPostgreSQLTypeName"
+DROP TABLE IF EXISTS "TestPostgreSQLTypeName"
+
+BeforeExecute
+--  PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TestPostgreSQLTypeName"
 (
 	"Column" circle     NULL
 )

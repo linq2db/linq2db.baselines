@@ -12,5 +12,7 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" > 1
+ORDER BY
+	p."ParentID"
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 

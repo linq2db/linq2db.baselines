@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [CreateTableTypes]
+DROP TABLE IF EXISTS [CreateTableTypes]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [CreateTableTypes]
 (
 	[Id]      INTEGER NOT NULL,
 	[IntEnum] INTEGER NOT NULL

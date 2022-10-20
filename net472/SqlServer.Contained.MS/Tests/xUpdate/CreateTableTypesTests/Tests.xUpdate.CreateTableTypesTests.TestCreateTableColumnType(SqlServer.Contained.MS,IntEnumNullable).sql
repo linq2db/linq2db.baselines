@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [CreateTableTypes]
-(
-	[Id]              Int NOT NULL,
-	[IntEnumNullable] Int     NULL
-)
+DROP TABLE IF EXISTS [CreateTableTypes]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
+	CREATE TABLE [CreateTableTypes]
+	(
+		[Id]              Int NOT NULL,
+		[IntEnumNullable] Int     NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

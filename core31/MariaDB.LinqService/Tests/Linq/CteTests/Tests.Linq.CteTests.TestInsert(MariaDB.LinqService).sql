@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `CteChild`
+DROP TABLE IF EXISTS `CteChild`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `CteChild`
 (
 	`ChildID`  INT NOT NULL,
 	`ParentID` INT NOT NULL

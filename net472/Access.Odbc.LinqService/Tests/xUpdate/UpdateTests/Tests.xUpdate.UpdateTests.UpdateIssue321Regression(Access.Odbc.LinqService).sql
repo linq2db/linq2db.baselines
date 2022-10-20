@@ -74,13 +74,3 @@ FROM
 WHERE
 	[_].[ID] = ?
 
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @id Int -- Int32
-SET     @id = 100500
-
-DELETE FROM
-	[LinqDataTypes] [t1]
-WHERE
-	[t1].[ID] = ?
-

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `Authors`
+DROP TABLE IF EXISTS `Authors`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Authors`
 (
 	`Id`   INT          NOT NULL,
 	`Name` VARCHAR(100) NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE `Authors`
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `Books`
+DROP TABLE IF EXISTS `Books`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Books`
 (
 	`Id`       INT          NOT NULL,
 	`AuthorId` INT          NOT NULL,

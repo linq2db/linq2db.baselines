@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `Issue1279Table`
+DROP TABLE IF EXISTS `Issue1279Table`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Issue1279Table`
 (
 	`Id`      INT  AUTO_INCREMENT NOT NULL,
 	`CharFld` CHAR                NOT NULL,

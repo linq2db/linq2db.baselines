@@ -390,6 +390,8 @@ FROM
 		) [s] ON [s].[id] = [c_1].[id]
 WHERE
 	[s].[id] > 10
+ORDER BY
+	[s].[id]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -405,6 +407,8 @@ FROM
 	[sample_class] [t]
 WHERE
 	[t].[id] >= @startId AND [t].[id] < @endId AND [t].[id] > 10
+ORDER BY
+	[t].[id]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

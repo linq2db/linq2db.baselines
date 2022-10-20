@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Task]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Task]
 (
 	[Id] Int NOT NULL,
 
 	CONSTRAINT [PK_Task] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DROP TABLE [TaskStage]
 
 BeforeExecute
 -- Access AccessOleDb

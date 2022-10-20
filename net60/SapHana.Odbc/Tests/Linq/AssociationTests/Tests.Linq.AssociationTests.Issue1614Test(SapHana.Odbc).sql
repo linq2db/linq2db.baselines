@@ -1,10 +1,20 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "User"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "User"
 (
 	"Id" Integer NOT NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Resource"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -15,6 +25,11 @@ CREATE COLUMN TABLE "Resource"
 	"AssociatedObjectId" Integer NOT NULL,
 	"AssociationTypeId"  Integer     NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Lookup"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

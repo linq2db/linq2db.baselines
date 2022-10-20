@@ -1,10 +1,23 @@
 ﻿BeforeExecute
 -- Firebird
 
-CREATE TABLE "ValueItem"
-(
-	"Value" Int NOT NULL
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueItem')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ValueItem"';
+END
+
+BeforeExecute
+-- Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueItem')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "ValueItem"
+			(
+				"Value" Int NOT NULL
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird

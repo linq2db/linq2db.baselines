@@ -23,6 +23,8 @@ FROM
 					"Parent" p
 				WHERE
 					p."ParentID" > 1
+				ORDER BY
+					p."ParentID"
 			) t1
 		WHERE
 			ROWNUM <= :take

@@ -1,21 +1,27 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-CREATE TABLE [ValueConversion]
-(
-	[Id]                      Int           NOT NULL,
-	[Value1]                  NVarChar(200)     NULL,
-	[Value2]                  NVarChar(200)     NULL,
-	[Enum]                    NVarChar(50)  NOT NULL,
-	[EnumNullable]            VarChar(50)       NULL,
-	[EnumWithNull]            VarChar(50)       NULL,
-	[EnumWithNullDeclarative] VarChar(50)       NULL,
-	[BoolValue]               VarChar(1)    NOT NULL,
-	[AnotherBoolValue]        VarChar(1)    NOT NULL,
-	[DateTimeNullable]        DateTime2         NULL,
+DROP TABLE IF EXISTS [ValueConversion]
 
-	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
+	CREATE TABLE [ValueConversion]
+	(
+		[Id]                      Int           NOT NULL,
+		[Value1]                  NVarChar(200)     NULL,
+		[Value2]                  NVarChar(200)     NULL,
+		[Enum]                    NVarChar(50)  NOT NULL,
+		[EnumNullable]            VarChar(50)       NULL,
+		[EnumWithNull]            VarChar(50)       NULL,
+		[EnumWithNullDeclarative] VarChar(50)       NULL,
+		[BoolValue]               VarChar(1)    NOT NULL,
+		[AnotherBoolValue]        VarChar(1)    NOT NULL,
+		[DateTimeNullable]        DateTime2         NULL,
+
+		CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

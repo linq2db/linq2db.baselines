@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
-
-DELETE FROM
-	[Parent]
-WHERE
-	[Parent].[ParentID] > 1000
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1  -- Int32
@@ -59,12 +51,4 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @ParentID
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] > 1000
 

@@ -5,18 +5,28 @@ ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'test'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'subject'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender String(1) -- AnsiStringFixedLength
+SET     @Gender = 'U'
 
 INSERT INTO `Person`
 (
 	`FirstName`,
 	`LastName`,
+	`MiddleName`,
 	`Gender`
 )
 VALUES
 (
-	'test',
-	'subject',
-	'U'
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
@@ -81,26 +91,4 @@ FROM
 	`Patient` `p`
 WHERE
 	`p`.`PersonID` = @id
-
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE   `t1`
-FROM
-	`Patient` `t1`
-WHERE
-	`t1`.`PersonID` = @id
-
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @id Int32
-SET     @id = 5
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`PersonID` = @id
 

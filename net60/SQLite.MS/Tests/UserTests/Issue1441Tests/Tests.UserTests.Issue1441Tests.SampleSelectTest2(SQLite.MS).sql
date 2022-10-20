@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Authors]
+DROP TABLE IF EXISTS [Authors]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Authors]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Name] NVarChar(100) NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE [Authors]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Books]
+DROP TABLE IF EXISTS [Books]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Books]
 (
 	[Id]       INTEGER       NOT NULL,
 	[AuthorId] INTEGER       NOT NULL,

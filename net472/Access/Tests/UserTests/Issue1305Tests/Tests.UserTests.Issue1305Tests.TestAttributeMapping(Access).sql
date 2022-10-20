@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [ColumnOrderTest]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [ColumnOrderTest]
 (
 	[RecordID]       Int           NOT NULL,

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "BlobClass"
+DROP TABLE IF EXISTS "BlobClass"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "BlobClass"
 (
 	"Id"        Int   NOT NULL,
 	"BlobValue" bytea     NULL,
@@ -20,7 +25,7 @@ INSERT INTO "BlobClass"
 VALUES
 (
 	1,
-	E'\\x010203'
+	E'\\x010203'::bytea
 )
 
 BeforeExecute
@@ -41,7 +46,7 @@ BeforeExecute
 UPDATE
 	"BlobClass"
 SET
-	"BlobValue" = E'\\x030201'
+	"BlobValue" = E'\\x030201'::bytea
 WHERE
 	"BlobClass"."Id" = 1
 

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `TableToInsert`
+DROP TABLE IF EXISTS `TableToInsert`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `TableToInsert`
 (
 	`Id`    INT           NOT NULL,
 	`Value` VARCHAR(4000)     NULL,
@@ -22,7 +27,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			(SELECT NULL`Id`, NULL`Value` FROM DUAL WHERE 1 = 0) `r`
+			(SELECT NULL `Id`, NULL `Value` FROM DUAL WHERE 1 = 0) `r`
 		WHERE
 			`t`.`Id` = `r`.`Id` AND (`t`.`Value` = `r`.`Value` OR `t`.`Value` IS NULL AND `r`.`Value` IS NULL)
 	)

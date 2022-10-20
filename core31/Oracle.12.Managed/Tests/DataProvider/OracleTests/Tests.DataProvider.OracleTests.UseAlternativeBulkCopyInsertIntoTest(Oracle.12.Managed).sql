@@ -1,11 +1,32 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "UseAlternativeBulkCopy"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UseAlternativeBulkCopy"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UseAlternativeBulkCopy"
+		(
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

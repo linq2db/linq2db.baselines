@@ -1,14 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [PR_1598_Update_Table]
-(
-	[Id]   Int            NOT NULL,
-	[Name] NVarChar(4000)     NULL,
-	[Age]  Int                NULL,
+IF (OBJECT_ID(N'[PR_1598_Update_Table]', N'U') IS NOT NULL)
+	DROP TABLE [PR_1598_Update_Table]
 
-	CONSTRAINT [PK_PR_1598_Update_Table] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[PR_1598_Update_Table]', N'U') IS NULL)
+	CREATE TABLE [PR_1598_Update_Table]
+	(
+		[Id]   Int            NOT NULL,
+		[Name] NVarChar(4000)     NULL,
+		[Age]  Int                NULL,
+
+		CONSTRAINT [PK_PR_1598_Update_Table] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2005

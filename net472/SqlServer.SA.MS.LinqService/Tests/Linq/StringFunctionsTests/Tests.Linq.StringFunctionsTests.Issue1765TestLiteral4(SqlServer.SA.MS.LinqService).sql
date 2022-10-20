@@ -117,6 +117,8 @@ FROM
 GROUP BY
 	[t1].[Id],
 	[t1].[Value4]
+ORDER BY
+	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

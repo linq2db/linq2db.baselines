@@ -1,6 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 DELETE [p]
@@ -14,7 +12,6 @@ WHERE
 			[Child] [t1]
 		WHERE
 			[p].[ParentID] = [t1].[ParentID]
-	)
+	) AND
+	[p].[ParentID] > 100
 
-BeforeExecute
-RollbackTransaction

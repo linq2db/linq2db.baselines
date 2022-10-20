@@ -225,7 +225,7 @@ SET     @FieldDateTime = TO_DATE('2098-10-12 21:14:15.99700', '%Y-%m-%d %H:%M:%S
 DECLARE @FieldDecimal Decimal(16)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate Date(16)
-SET     @FieldDate = TO_DATE('3210-11-23', '%Y-%m-%d')
+SET     @FieldDate = TO_DATE('2110-11-23', '%Y-%m-%d')
 DECLARE @FieldEnumString VarChar -- String
 SET     @FieldEnumString = ''
 DECLARE @FieldEnumNumber Integer(4) -- Int32
@@ -289,7 +289,7 @@ SET     @FieldDateTime = TO_DATE('2098-10-12 21:14:15.90700', '%Y-%m-%d %H:%M:%S
 DECLARE @FieldDecimal Decimal(16)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Date(16)
-SET     @FieldDate = TO_DATE('3210-11-23', '%Y-%m-%d')
+SET     @FieldDate = TO_DATE('2111-11-23', '%Y-%m-%d')
 DECLARE @FieldEnumString VarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Integer(4) -- Int32
@@ -417,7 +417,7 @@ SET     @FieldDateTime = TO_DATE('2098-10-12 21:14:15.91300', '%Y-%m-%d %H:%M:%S
 DECLARE @FieldDecimal Decimal(16)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Date(16)
-SET     @FieldDate = TO_DATE('3210-11-23', '%Y-%m-%d')
+SET     @FieldDate = TO_DATE('2010-11-23', '%Y-%m-%d')
 DECLARE @FieldEnumString VarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Integer(4) -- Int32

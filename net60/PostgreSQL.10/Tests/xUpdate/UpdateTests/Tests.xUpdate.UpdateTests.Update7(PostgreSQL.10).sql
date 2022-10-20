@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" > 1000
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 1
 DECLARE @ParentID Integer -- Int32
@@ -87,12 +79,4 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = :id AND p."Value1" = 3
-
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" > 1000
 

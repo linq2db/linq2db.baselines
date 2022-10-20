@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [ColumnOrderTest]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [ColumnOrderTest]
 (
 	[RecordID]       Int           NOT NULL,

@@ -31,7 +31,7 @@ INSERT INTO "DateOnlyTable"
 	"Id"
 )
 VALUES
-(NULL,'1900-01-01',1),
+(NULL,'1950-01-01',1),
 ('2200-01-01','2020-02-29',2)
 
 BeforeExecute
@@ -73,7 +73,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date(20)
-SET     @Column_1 = '1900-01-01-00.00.00.000000'
+SET     @Column_1 = '1950-01-01-00.00.00.000000'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
@@ -140,7 +140,7 @@ INSERT INTO "DateOnlyTable"
 	"Id"
 )
 VALUES
-(NULL,'1900-01-01',1),
+(NULL,'1950-01-01',1),
 ('2200-01-01','2020-02-29',2)
 
 BeforeExecute

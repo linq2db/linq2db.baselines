@@ -49,6 +49,8 @@ FROM
 GROUP BY
 	"t1"."Id",
 	"t1"."Value1"
+ORDER BY
+	"t1"."Id"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

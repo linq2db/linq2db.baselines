@@ -1,15 +1,28 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
 
-CREATE TABLE "TableWithGuid"
-(
-	"Default"  CHAR(16) CHARACTER SET OCTETS NOT NULL,
-	"Binary"   CHAR(16) CHARACTER SET OCTETS NOT NULL,
-	"String"   CHAR(38)                      NOT NULL,
-	"DefaultN" CHAR(16) CHARACTER SET OCTETS,
-	"BinaryN"  CHAR(16) CHARACTER SET OCTETS,
-	"StringN"  CHAR(38)
-)
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithGuid')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TableWithGuid"';
+END
+
+BeforeExecute
+-- Firebird3 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithGuid')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "TableWithGuid"
+			(
+				"Default"  CHAR(16) CHARACTER SET OCTETS NOT NULL,
+				"Binary"   CHAR(16) CHARACTER SET OCTETS NOT NULL,
+				"String"   CHAR(38)                      NOT NULL,
+				"DefaultN" CHAR(16) CHARACTER SET OCTETS,
+				"BinaryN"  CHAR(16) CHARACTER SET OCTETS,
+				"StringN"  CHAR(38)
+			)
+		';
+END
 
 BeforeExecute
 -- Firebird3 Firebird

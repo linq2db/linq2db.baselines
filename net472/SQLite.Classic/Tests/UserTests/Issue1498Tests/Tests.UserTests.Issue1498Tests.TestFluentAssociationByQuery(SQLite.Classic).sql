@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [Topic]
+DROP TABLE IF EXISTS [Topic]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Topic]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Title] NVarChar(255)     NULL,
@@ -11,7 +16,12 @@ CREATE TABLE [Topic]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TABLE [Message]
+DROP TABLE IF EXISTS [Message]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Message]
 (
 	[Id]      INTEGER       NOT NULL,
 	[TopicId] INTEGER       NOT NULL,

@@ -1,20 +1,41 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "Test0431"
-(
-	"Date"             date                        NOT NULL,
-	"DateTime"         timestamp                   NOT NULL,
-	"DateTime_"        date                        NOT NULL,
-	"DateTime2"        timestamp                   NOT NULL,
-	"DateTime2_0"      timestamp(0)                NOT NULL,
-	"DateTime2_1"      timestamp(1)                NOT NULL,
-	"DateTime2_9"      timestamp(9)                NOT NULL,
-	"DateTimeOffset_"  timestamp with time zone    NOT NULL,
-	"DateTimeOffset_0" timestamp(0) with time zone NOT NULL,
-	"DateTimeOffset_1" timestamp(1) with time zone NOT NULL,
-	"DateTimeOffset_9" timestamp(9) with time zone NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Test0431"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Test0431"
+		(
+			"Date"             date                        NOT NULL,
+			"DateTime"         timestamp                   NOT NULL,
+			"DateTime_"        date                        NOT NULL,
+			"DateTime2"        timestamp                   NOT NULL,
+			"DateTime2_0"      timestamp(0)                NOT NULL,
+			"DateTime2_1"      timestamp(1)                NOT NULL,
+			"DateTime2_9"      timestamp(9)                NOT NULL,
+			"DateTimeOffset_"  timestamp with time zone    NOT NULL,
+			"DateTimeOffset_0" timestamp(0) with time zone NOT NULL,
+			"DateTimeOffset_1" timestamp(1) with time zone NOT NULL,
+			"DateTimeOffset_9" timestamp(9) with time zone NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

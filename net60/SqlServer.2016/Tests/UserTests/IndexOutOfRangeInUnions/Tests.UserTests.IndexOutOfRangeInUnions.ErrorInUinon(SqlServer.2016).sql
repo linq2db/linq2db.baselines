@@ -1,35 +1,53 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [O1]
-(
-	[DocEntry]    Int            NOT NULL,
-	[BplId]       Int            NOT NULL,
-	[ChaveAcesso] NVarChar(4000)     NULL,
-	[DocStatus]   NVarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [O1]
 
 BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [O2]
-(
-	[DocEntry]    Int            NOT NULL,
-	[BplId]       Int            NOT NULL,
-	[ChaveAcesso] NVarChar(4000)     NULL,
-	[DocStatus]   NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[O1]', N'U') IS NULL)
+	CREATE TABLE [O1]
+	(
+		[DocEntry]    Int            NOT NULL,
+		[BplId]       Int            NOT NULL,
+		[ChaveAcesso] NVarChar(4000)     NULL,
+		[DocStatus]   NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [O3]
-(
-	[DocEntry]    Int            NOT NULL,
-	[BplId]       Int            NOT NULL,
-	[ChaveAcesso] NVarChar(4000)     NULL,
-	[DocStatus]   NVarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [O2]
+
+BeforeExecute
+-- SqlServer.2016
+
+IF (OBJECT_ID(N'[O2]', N'U') IS NULL)
+	CREATE TABLE [O2]
+	(
+		[DocEntry]    Int            NOT NULL,
+		[BplId]       Int            NOT NULL,
+		[ChaveAcesso] NVarChar(4000)     NULL,
+		[DocStatus]   NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [O3]
+
+BeforeExecute
+-- SqlServer.2016
+
+IF (OBJECT_ID(N'[O3]', N'U') IS NULL)
+	CREATE TABLE [O3]
+	(
+		[DocEntry]    Int            NOT NULL,
+		[BplId]       Int            NOT NULL,
+		[ChaveAcesso] NVarChar(4000)     NULL,
+		[DocStatus]   NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016

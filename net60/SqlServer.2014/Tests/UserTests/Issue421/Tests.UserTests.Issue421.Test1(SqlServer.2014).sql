@@ -1,13 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-CREATE TABLE [BlobClass]
-(
-	[Id]        Int            NOT NULL,
-	[BlobValue] VarBinary(100)     NULL,
+IF (OBJECT_ID(N'[BlobClass]', N'U') IS NOT NULL)
+	DROP TABLE [BlobClass]
 
-	CONSTRAINT [PK_BlobClass] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[BlobClass]', N'U') IS NULL)
+	CREATE TABLE [BlobClass]
+	(
+		[Id]        Int            NOT NULL,
+		[BlobValue] VarBinary(100)     NULL,
+
+		CONSTRAINT [PK_BlobClass] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2014

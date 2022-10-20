@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "PR_1598_Update_Enum_Table"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "PR_1598_Update_Enum_Table"
 (
 	"Id"     Integer       NOT NULL,

@@ -1,12 +1,33 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Issue2434Table"
-(
-	"Id"        Int          NOT NULL,
-	"FirstName" VarChar(255)     NULL,
-	"LastName"  VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue2434Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue2434Table"
+		(
+			"Id"        Int          NOT NULL,
+			"FirstName" VarChar(255)     NULL,
+			"LastName"  VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

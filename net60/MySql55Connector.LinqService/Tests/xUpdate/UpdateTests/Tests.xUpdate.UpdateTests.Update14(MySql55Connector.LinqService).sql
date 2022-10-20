@@ -48,12 +48,3 @@ FROM
 WHERE
 	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
--- MySql55Connector MySqlConnector MySql
-
-DELETE   `_`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
-

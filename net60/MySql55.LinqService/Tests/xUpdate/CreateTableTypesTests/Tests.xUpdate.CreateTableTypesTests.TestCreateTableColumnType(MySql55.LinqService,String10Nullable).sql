@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
 
-CREATE TABLE `CreateTableTypes`
+DROP TABLE IF EXISTS `CreateTableTypes`
+
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `CreateTableTypes`
 (
 	`String` VARCHAR(10)     NULL,
 	`Id`     INT         NOT NULL

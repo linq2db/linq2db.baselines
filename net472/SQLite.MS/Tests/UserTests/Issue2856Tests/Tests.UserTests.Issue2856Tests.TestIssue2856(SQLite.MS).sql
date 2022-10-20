@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [GlobalTaskDTO]
+DROP TABLE IF EXISTS [GlobalTaskDTO]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [GlobalTaskDTO]
 (
 	[Id]              Guid NOT NULL,
 	[RPSourceID]      Guid     NULL,

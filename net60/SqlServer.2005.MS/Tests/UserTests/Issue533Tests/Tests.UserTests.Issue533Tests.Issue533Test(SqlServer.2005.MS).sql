@@ -5,15 +5,6 @@ DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @FirstName NVarChar(4000) -- String
@@ -44,8 +35,8 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @id1 Int -- Int32
-SET     @id1 = 5
+DECLARE @id Int -- Int32
+SET     @id = 5
 
 SELECT TOP (@take)
 	[_].[PersonID],
@@ -56,14 +47,5 @@ SELECT TOP (@take)
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = @id1
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] = @id
 

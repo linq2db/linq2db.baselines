@@ -4,14 +4,12 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."ParentId",
-	t1."Id"
+	t1."Child"
 FROM
 	"Parent" sep
 		LEFT JOIN LATERAL (
 			SELECT
-				l."ParentID" + 1 as "Id",
-				l."ParentID" as "ParentId"
+				l."ParentID" as "Child"
 			FROM
 				"Child" l
 			LIMIT :take

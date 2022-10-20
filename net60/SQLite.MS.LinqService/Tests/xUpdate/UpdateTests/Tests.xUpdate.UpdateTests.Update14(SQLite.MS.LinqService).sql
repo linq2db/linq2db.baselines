@@ -46,11 +46,3 @@ FROM
 WHERE
 	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
-

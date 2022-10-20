@@ -2,16 +2,6 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" t1
-WHERE
-	t1."ID" = :ID
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @ID Integer -- Int32
-SET     @ID = 1001
 DECLARE @MoneyValue Numeric(4, 0) -- Decimal
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue Smallint -- Int16
@@ -64,14 +54,4 @@ FROM
 WHERE
 	t."ID" = :ID
 LIMIT :take
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @ID Integer -- Int32
-SET     @ID = 1001
-
-DELETE FROM
-	"LinqDataTypes" t1
-WHERE
-	t1."ID" = :ID
 

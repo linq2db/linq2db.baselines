@@ -5,15 +5,6 @@ DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @FirstName NVarChar(4000) -- String
@@ -103,13 +94,4 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = @id2
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
 

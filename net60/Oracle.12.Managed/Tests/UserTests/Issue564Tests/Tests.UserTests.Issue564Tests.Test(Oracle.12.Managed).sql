@@ -1,15 +1,54 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Parent564"
-(
-	"Id"          Int           NOT NULL,
-	"Type"        VarChar(255)      NULL,
-	"StringValue" VarChar(20)       NULL,
-	"IntValue"    Int               NULL,
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Parent564"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Parent564"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "Parent564"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
 
-	CONSTRAINT "PK_Parent564" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Parent564"
+		(
+			"Id"          Int           NOT NULL,
+			"Type"        VarChar(255)      NULL,
+			"StringValue" VarChar(20)       NULL,
+			"IntValue"    Int               NULL,
+
+			CONSTRAINT "PK_Parent564" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

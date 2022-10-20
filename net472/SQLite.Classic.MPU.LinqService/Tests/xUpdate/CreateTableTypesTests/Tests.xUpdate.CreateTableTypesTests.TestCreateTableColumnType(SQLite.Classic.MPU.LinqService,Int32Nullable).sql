@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [CreateTableTypes]
+DROP TABLE IF EXISTS [CreateTableTypes]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [CreateTableTypes]
 (
 	[Id]            INTEGER NOT NULL,
 	[Int32Nullable] INTEGER     NULL

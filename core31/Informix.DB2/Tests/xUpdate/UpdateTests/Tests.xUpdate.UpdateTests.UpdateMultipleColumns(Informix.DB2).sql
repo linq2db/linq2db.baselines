@@ -2,16 +2,6 @@
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
-
-DELETE FROM
-	LinqDataTypes
-WHERE
-	LinqDataTypes.ID = @ID
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 1001
 DECLARE @MoneyValue Decimal(16)
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue SmallInt(2) -- Int16
@@ -61,14 +51,4 @@ FROM
 	LinqDataTypes t
 WHERE
 	t.ID = @ID
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 1001
-
-DELETE FROM
-	LinqDataTypes
-WHERE
-	LinqDataTypes.ID = @ID
 

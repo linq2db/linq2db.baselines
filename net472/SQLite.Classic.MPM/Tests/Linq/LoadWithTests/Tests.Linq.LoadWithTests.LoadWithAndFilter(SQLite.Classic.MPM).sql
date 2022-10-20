@@ -296,6 +296,8 @@ FROM
 		INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m2].[Id]
 WHERE
 	[m_1].[Id] > 1
+ORDER BY
+	[m_1].[Id]
 
 BeforeExecute
 BeginTransaction(Serializable)
@@ -395,6 +397,8 @@ FROM
 		INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m2].[Id]
 WHERE
 	[m_1].[Id] > 1
+ORDER BY
+	[m_1].[Id]
 
 BeforeExecute
 BeginTransaction(Serializable)
@@ -494,6 +498,8 @@ FROM
 		INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m2].[Id]
 WHERE
 	[m_1].[Id] > 1
+ORDER BY
+	[m_1].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -1,30 +1,70 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "UserIssue3128"
-(
-	"Id" Int NOT NULL,
-
-	CONSTRAINT "PK_UserIssue3128" PRIMARY KEY ("Id")
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UserIssue3128"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "UserDetailsIssue3128"
-(
-	"UserId" Int NOT NULL,
-	"Age"    Int NOT NULL,
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UserIssue3128"
+		(
+			"Id" Int NOT NULL,
 
-	CONSTRAINT "PK_UserDetailsIssue3128" PRIMARY KEY ("UserId")
-)
+			CONSTRAINT "PK_UserIssue3128" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "UserDetailsIssue3128"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UserDetailsIssue3128"
+		(
+			"UserId" Int NOT NULL,
+			"Age"    Int NOT NULL,
+
+			CONSTRAINT "PK_UserDetailsIssue3128" PRIMARY KEY ("UserId")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 10
-DECLARE @IDENTITY_PARAMETER Decimal
-SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "UserIssue3128"
 (
@@ -34,8 +74,6 @@ VALUES
 (
 	:Id
 )
-RETURNING 
-	"Id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -43,8 +81,6 @@ DECLARE @UserId Int32
 SET     @UserId = 10
 DECLARE @Age Int32
 SET     @Age = 18
-DECLARE @IDENTITY_PARAMETER Decimal
-SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "UserDetailsIssue3128"
 (
@@ -56,8 +92,6 @@ VALUES
 	:UserId,
 	:Age
 )
-RETURNING 
-	"UserId" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

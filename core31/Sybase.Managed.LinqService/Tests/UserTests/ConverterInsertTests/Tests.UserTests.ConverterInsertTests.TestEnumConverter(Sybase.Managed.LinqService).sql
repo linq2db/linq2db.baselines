@@ -47,26 +47,3 @@ FROM
 WHERE
 	[t].[PersonID] = @id
 
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 5
-DECLARE @FirstName UniVarChar(3) -- String
-SET     @FirstName = '123'
-DECLARE @LastName UniVarChar(3) -- String
-SET     @LastName = '456'
-DECLARE @MiddleName UniVarChar(3) -- String
-SET     @MiddleName = '789'
-DECLARE @Gender UniVarChar(1) -- String
-SET     @Gender = 'M'
-
-DELETE FROM [Person]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = @PersonID AND
-	[t1].[FirstName] = @FirstName AND
-	[t1].[LastName] = @LastName AND
-	[t1].[MiddleName] = @MiddleName AND
-	[t1].[Gender] = @Gender
-

@@ -47,15 +47,7 @@ BeforeExecute
 ALTER TABLE "Patient" ADD CONSTRAINT "FK_Patient_Person" FOREIGN KEY ("PersonID") REFERENCES "Person" ("PersonID") ON UPDATE CASCADE ON DELETE CASCADE
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
-
-DELETE FROM
-	"Person" "t1"
-WHERE
-	"t1"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -81,7 +73,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
@@ -145,12 +137,4 @@ FROM
 WHERE
 	"_"."PersonID" = ?
 LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
-
-DELETE FROM
-	"Person" "_"
-WHERE
-	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 

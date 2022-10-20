@@ -1,43 +1,63 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "UserIssue3128"
-(
-	"Id" Int NOT NULL,
-
-	CONSTRAINT "PK_UserIssue3128" PRIMARY KEY ("Id")
-)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "UserIssue3128"';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-CREATE TABLE "UserDetailsIssue3128"
-(
-	"UserId" Int NOT NULL,
-	"Age"    Int NOT NULL,
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UserIssue3128"
+		(
+			"Id" Int NOT NULL,
 
-	CONSTRAINT "PK_UserDetailsIssue3128" PRIMARY KEY ("UserId")
-)
+			CONSTRAINT "PK_UserIssue3128" PRIMARY KEY ("Id")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "UserDetailsIssue3128"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "UserDetailsIssue3128"
+		(
+			"UserId" Int NOT NULL,
+			"Age"    Int NOT NULL,
+
+			CONSTRAINT "PK_UserDetailsIssue3128" PRIMARY KEY ("UserId")
+		)
+	';
+END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 10
 
-SELECT
+INSERT INTO "UserIssue3128"
+(
 	"Id"
-FROM
-	NEW TABLE
-	(
-		INSERT INTO "UserIssue3128"
-		(
-			"Id"
-		)
-		VALUES
-		(
-			@Id
-		)
-	)
+)
+VALUES
+(
+	@Id
+)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -46,22 +66,16 @@ SET     @UserId = 10
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 18
 
-SELECT
-	"UserId"
-FROM
-	NEW TABLE
-	(
-		INSERT INTO "UserDetailsIssue3128"
-		(
-			"UserId",
-			"Age"
-		)
-		VALUES
-		(
-			@UserId,
-			@Age
-		)
-	)
+INSERT INTO "UserDetailsIssue3128"
+(
+	"UserId",
+	"Age"
+)
+VALUES
+(
+	@UserId,
+	@Age
+)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

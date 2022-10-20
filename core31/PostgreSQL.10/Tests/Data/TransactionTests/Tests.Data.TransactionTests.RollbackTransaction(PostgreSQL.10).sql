@@ -44,11 +44,3 @@ WHERE
 	t."ParentID" = 1010
 LIMIT :take
 
-BeforeExecute
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" >= 1000
-

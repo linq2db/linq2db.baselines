@@ -5,15 +5,6 @@ sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-
-DELETE FROM [Person]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Gender UniChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName UniVarChar(1) -- String
@@ -99,13 +90,4 @@ FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = @id2
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Person]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > 4
 

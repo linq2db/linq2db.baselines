@@ -1,11 +1,32 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "Issue2342Entity"
-(
-	"Id"   Number(19)   NOT NULL,
-	"Name" VarChar(256) NOT NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue2342Entity"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue2342Entity"
+		(
+			"Id"   Number(19)   NOT NULL,
+			"Name" VarChar(256) NOT NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 BeginTransaction

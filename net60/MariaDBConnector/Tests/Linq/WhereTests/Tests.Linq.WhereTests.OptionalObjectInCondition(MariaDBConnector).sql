@@ -1,6 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction
-BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @FirstName VarChar(1) -- String
 SET     @FirstName = '1'
@@ -46,5 +44,3 @@ FROM
 WHERE
 	`r`.`FirstName` = @FirstName
 
-BeforeExecute
-RollbackTransaction

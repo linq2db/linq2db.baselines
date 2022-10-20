@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Issue1799Table1]
+DROP TABLE IF EXISTS [Issue1799Table1]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1799Table1]
 (
 	[EventUser] INTEGER   NOT NULL,
 	[ProcessID] INTEGER   NOT NULL,
@@ -11,7 +16,12 @@ CREATE TABLE [Issue1799Table1]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Issue1799Table2]
+DROP TABLE IF EXISTS [Issue1799Table2]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1799Table2]
 (
 	[UserId]     INTEGER       NOT NULL,
 	[UserGroups] NVarChar(255)     NULL
@@ -20,7 +30,12 @@ CREATE TABLE [Issue1799Table2]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Issue1799Table3]
+DROP TABLE IF EXISTS [Issue1799Table3]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1799Table3]
 (
 	[ProcessID]   INTEGER       NOT NULL,
 	[ProcessName] NVarChar(255)     NULL

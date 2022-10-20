@@ -1,11 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [Issue1363]
-(
-	[required_field] UniqueIdentifier NOT NULL,
-	[optional_field] UniqueIdentifier     NULL
-)
+IF (OBJECT_ID(N'[Issue1363]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1363]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[Issue1363]', N'U') IS NULL)
+	CREATE TABLE [Issue1363]
+	(
+		[required_field] UniqueIdentifier NOT NULL,
+		[optional_field] UniqueIdentifier     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [Parent564]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [Parent564]
 (
 	[Id]          Int            NOT NULL IDENTITY,

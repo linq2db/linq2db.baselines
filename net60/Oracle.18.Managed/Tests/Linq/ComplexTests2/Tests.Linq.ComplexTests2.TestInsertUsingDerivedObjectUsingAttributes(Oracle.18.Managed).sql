@@ -105,11 +105,3 @@ DELETE FROM
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"Person" t1
-WHERE
-	t1."FirstName" = 'test_inherited_insert'
-

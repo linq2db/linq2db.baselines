@@ -24,7 +24,7 @@ BeforeExecute
 ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -50,7 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
 
 SELECT @@IDENTITY
 

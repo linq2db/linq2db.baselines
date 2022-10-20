@@ -81,13 +81,3 @@ WHERE
 ORDER BY
 	t1."ID"
 
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @maxID Integer -- Int32
-SET     @maxID = 2
-
-DELETE FROM
-	"AllTypes" t1
-WHERE
-	t1."ID" > :maxID
-

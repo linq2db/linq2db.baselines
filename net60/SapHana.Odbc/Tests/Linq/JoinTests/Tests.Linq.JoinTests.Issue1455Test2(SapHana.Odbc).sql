@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Alert"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Alert"
 (
 	"AlertKey"     NVarChar(255)     NULL,
 	"AlertCode"    NVarChar(255)     NULL,
 	"CreationDate" Timestamp         NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "AuditAlert"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -22,6 +32,11 @@ CREATE COLUMN TABLE "AuditAlert"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Trade"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Trade"
 (
 	"DealId"       Integer       NOT NULL,
@@ -32,12 +47,22 @@ CREATE COLUMN TABLE "Trade"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+DROP TABLE "Nomin"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "Nomin"
 (
 	"CargoId"              Integer       NOT NULL,
 	"DeliveryId"           Integer       NOT NULL,
 	"DeliveryCounterParty" NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "Flat"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

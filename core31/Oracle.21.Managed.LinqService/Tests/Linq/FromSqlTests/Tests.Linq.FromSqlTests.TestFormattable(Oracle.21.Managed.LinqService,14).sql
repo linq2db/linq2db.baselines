@@ -404,6 +404,8 @@ FROM
 	) c_1
 WHERE
 	c_1."id" > 10
+ORDER BY
+	c_1."id"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -419,6 +421,8 @@ FROM
 	"sample_class" t
 WHERE
 	t."id" >= :startId AND t."id" < :endId AND t."id" > 10
+ORDER BY
+	t."id"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

@@ -1,13 +1,22 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Issue1279Table]
-(
-	[Id]      Int      IDENTITY NOT NULL,
-	[CharFld] NChar(1)          NOT NULL,
+IF (OBJECT_ID(N'Issue1279Table') IS NOT NULL)
+	DROP TABLE [Issue1279Table]
 
-	CONSTRAINT [PK_Issue1279Table] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Issue1279Table') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Issue1279Table]
+		(
+			[Id]      Int      IDENTITY NOT NULL,
+			[CharFld] NChar(1)          NOT NULL,
+
+			CONSTRAINT [PK_Issue1279Table] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

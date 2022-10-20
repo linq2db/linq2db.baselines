@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `BackgroundTask`
+DROP TABLE IF EXISTS `BackgroundTask`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `BackgroundTask`
 (
 	`ID`               INT     NULL,
 	`DurationID`       INT NOT NULL,

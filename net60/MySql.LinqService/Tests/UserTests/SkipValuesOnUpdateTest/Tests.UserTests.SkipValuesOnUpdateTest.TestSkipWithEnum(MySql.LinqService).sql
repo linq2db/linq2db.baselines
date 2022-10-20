@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `PR_1598_Update_Enum_Table`
+DROP TABLE IF EXISTS `PR_1598_Update_Enum_Table`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `PR_1598_Update_Enum_Table`
 (
 	`Id`     INT           NOT NULL,
 	`Name`   VARCHAR(4000)     NULL,

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [O1]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [O1]
 (
 	[DocEntry]    Int           NOT NULL,
@@ -12,6 +17,11 @@ CREATE TABLE [O1]
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [O2]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [O2]
 (
 	[DocEntry]    Int           NOT NULL,
@@ -19,6 +29,11 @@ CREATE TABLE [O2]
 	[ChaveAcesso] NVarChar(255)     NULL,
 	[DocStatus]   NVarChar(255)     NULL
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [O3]
 
 BeforeExecute
 -- SqlCe

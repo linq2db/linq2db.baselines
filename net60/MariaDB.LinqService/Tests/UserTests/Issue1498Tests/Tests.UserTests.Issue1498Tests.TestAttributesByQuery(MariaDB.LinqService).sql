@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `Topic`
+DROP TABLE IF EXISTS `Topic`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Topic`
 (
 	`Id`    INT           NOT NULL,
 	`Title` VARCHAR(4000)     NULL,
@@ -11,7 +16,12 @@ CREATE TABLE `Topic`
 BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `Message`
+DROP TABLE IF EXISTS `Message`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Message`
 (
 	`Id`      INT           NOT NULL,
 	`TopicId` INT           NOT NULL,

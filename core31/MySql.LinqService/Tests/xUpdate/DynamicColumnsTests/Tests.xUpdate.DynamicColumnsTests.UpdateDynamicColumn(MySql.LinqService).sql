@@ -44,12 +44,3 @@ FROM
 WHERE
 	`c_1`.`FirstName` = 'Johnny' AND `c_1`.`LastName` = 'Limonadovy'
 
-BeforeExecute
--- MySql MySql.Official MySql
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`LastName` = 'Limonadovy'
-

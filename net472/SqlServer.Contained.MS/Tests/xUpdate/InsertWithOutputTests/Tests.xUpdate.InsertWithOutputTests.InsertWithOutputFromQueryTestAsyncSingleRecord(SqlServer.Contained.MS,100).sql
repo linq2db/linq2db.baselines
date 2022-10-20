@@ -38,12 +38,18 @@ VALUES
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [DestinationTable]
-(
-	[Id]       Int          NOT NULL,
-	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
+DROP TABLE IF EXISTS [DestinationTable]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NULL)
+	CREATE TABLE [DestinationTable]
+	(
+		[Id]       Int          NOT NULL,
+		[Value]    Int          NOT NULL,
+		[ValueStr] NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019 (asynchronously)

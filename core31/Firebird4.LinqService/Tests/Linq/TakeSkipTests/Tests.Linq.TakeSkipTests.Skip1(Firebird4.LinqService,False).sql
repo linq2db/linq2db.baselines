@@ -6,6 +6,8 @@ SELECT SKIP 3
 	"t1"."ChildID"
 FROM
 	"Child" "t1"
+ORDER BY
+	"t1"."ChildID"
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -15,4 +17,6 @@ SELECT SKIP 4
 	"t1"."ChildID"
 FROM
 	"Child" "t1"
+ORDER BY
+	"t1"."ChildID"
 

@@ -77,13 +77,3 @@ WHERE
 	"_"."ID" = ?
 LIMIT ?
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 100500
-
-DELETE FROM
-	"LinqDataTypes" "t1"
-WHERE
-	"t1"."ID" = ?
-

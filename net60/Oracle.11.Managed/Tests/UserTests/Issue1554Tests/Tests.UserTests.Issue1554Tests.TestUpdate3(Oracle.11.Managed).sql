@@ -1,14 +1,35 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-CREATE TABLE "Issue1554Table"
-(
-	"Id"              Int        NOT NULL,
-	"ClaimedKeyType"  VarChar(3) NOT NULL,
-	"ClaimedKeyTypeN" VarChar(3)     NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1554Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_Issue1554Table" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1554Table"
+		(
+			"Id"              Int        NOT NULL,
+			"ClaimedKeyType"  VarChar(3) NOT NULL,
+			"ClaimedKeyTypeN" VarChar(3)     NULL,
+
+			CONSTRAINT "PK_Issue1554Table" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Stone]
+DROP TABLE IF EXISTS [Stone]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Stone]
 (
 	[Id]           INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
 	[Name]         NVarChar(255)  NOT NULL,

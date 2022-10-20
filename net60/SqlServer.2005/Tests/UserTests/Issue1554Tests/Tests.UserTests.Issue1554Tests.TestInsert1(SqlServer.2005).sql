@@ -1,14 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [Issue1554Table]
-(
-	[Id]              Int         NOT NULL,
-	[ClaimedKeyType]  NVarChar(3) NOT NULL,
-	[ClaimedKeyTypeN] NVarChar(3)     NULL,
+IF (OBJECT_ID(N'[Issue1554Table]', N'U') IS NOT NULL)
+	DROP TABLE [Issue1554Table]
 
-	CONSTRAINT [PK_Issue1554Table] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue1554Table]', N'U') IS NULL)
+	CREATE TABLE [Issue1554Table]
+	(
+		[Id]              Int         NOT NULL,
+		[ClaimedKeyType]  NVarChar(3) NOT NULL,
+		[ClaimedKeyTypeN] NVarChar(3)     NULL,
+
+		CONSTRAINT [PK_Issue1554Table] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2005

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [FluentMapping]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [FluentMapping]
 (
 	[RecordID]       Int      NOT NULL,

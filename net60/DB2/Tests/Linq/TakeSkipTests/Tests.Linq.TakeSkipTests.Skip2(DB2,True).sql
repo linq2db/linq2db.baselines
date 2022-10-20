@@ -11,7 +11,7 @@ FROM
 		SELECT
 			"ch"."ParentID",
 			"ch"."ChildID",
-			ROW_NUMBER() OVER () as RN
+			ROW_NUMBER() OVER (ORDER BY "ch"."ParentID", "ch"."ChildID") as RN
 		FROM
 			"Child" "ch"
 		WHERE

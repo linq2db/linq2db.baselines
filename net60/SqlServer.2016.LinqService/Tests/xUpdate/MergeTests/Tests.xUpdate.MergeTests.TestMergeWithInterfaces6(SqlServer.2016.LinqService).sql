@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-CREATE TABLE [ReviewIndexes]
-(
-	[Id]    Int            NOT NULL,
-	[Value] NVarChar(4000)     NULL,
+DROP TABLE IF EXISTS [ReviewIndexes]
 
-	CONSTRAINT [PK_ReviewIndexes] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- SqlServer.2016
+
+IF (OBJECT_ID(N'[ReviewIndexes]', N'U') IS NULL)
+	CREATE TABLE [ReviewIndexes]
+	(
+		[Id]    Int            NOT NULL,
+		[Value] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_ReviewIndexes] PRIMARY KEY CLUSTERED ([Id])
+	)
 
 BeforeExecute
 -- SqlServer.2016

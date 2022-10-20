@@ -9,6 +9,7 @@ SELECT
 	t1."Gender"
 FROM
 	(VALUES
-		('Janet',2,NULL,NULL,'M'), ('Doe',3,NULL,NULL,'M')
+		('Janet',2,CAST(NULL AS text),CAST(NULL AS text),'M'),
+		('Doe',3,NULL,NULL,'M')
 	) t1("FirstName", "PersonID", "LastName", "MiddleName", "Gender")
 

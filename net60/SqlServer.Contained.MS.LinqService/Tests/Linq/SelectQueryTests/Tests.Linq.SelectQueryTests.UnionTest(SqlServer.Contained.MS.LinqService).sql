@@ -1,11 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-CREATE TABLE [SampleClass]
-(
-	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
-)
+DROP TABLE IF EXISTS [SampleClass]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
+	CREATE TABLE [SampleClass]
+	(
+		[Id]    Int NOT NULL,
+		[Value] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

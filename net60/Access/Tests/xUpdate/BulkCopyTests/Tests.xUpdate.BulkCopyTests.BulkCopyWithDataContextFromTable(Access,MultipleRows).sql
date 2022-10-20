@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [SimpleBulkCopyTable]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [SimpleBulkCopyTable]
 (
 	[Id] Int NOT NULL

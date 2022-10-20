@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "SimpleBulkCopyTable"
+DROP TABLE IF EXISTS "SimpleBulkCopyTable"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "SimpleBulkCopyTable"
 (
 	"Id" Int NOT NULL
 )

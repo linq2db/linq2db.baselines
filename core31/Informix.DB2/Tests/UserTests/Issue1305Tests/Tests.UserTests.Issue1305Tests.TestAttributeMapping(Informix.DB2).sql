@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE ColumnOrderTest
+DROP TABLE IF EXISTS ColumnOrderTest
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS ColumnOrderTest
 (
 	RecordID       Int                       NOT NULL,
 	EffectiveStart datetime year to fraction NOT NULL,

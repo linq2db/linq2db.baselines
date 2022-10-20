@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Issue1554FluentTable
+DROP TABLE IF EXISTS Issue1554FluentTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Issue1554FluentTable
 (
 	Id              Int         NOT NULL,
 	ClaimedKeyType  NVarChar(3) NOT NULL,

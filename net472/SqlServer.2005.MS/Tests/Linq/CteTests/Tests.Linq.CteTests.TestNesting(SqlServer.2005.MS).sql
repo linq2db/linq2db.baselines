@@ -1,29 +1,50 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [NestingA]
-(
-	[Property1] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[NestingA]', N'U') IS NOT NULL)
+	DROP TABLE [NestingA]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [NestingB]
-(
-	[Property1] NVarChar(4000)     NULL,
-	[Property2] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[NestingA]', N'U') IS NULL)
+	CREATE TABLE [NestingA]
+	(
+		[Property1] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [NestingC]
-(
-	[Property1] NVarChar(4000)     NULL,
-	[Property2] NVarChar(4000)     NULL,
-	[Property3] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[NestingB]', N'U') IS NOT NULL)
+	DROP TABLE [NestingB]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[NestingB]', N'U') IS NULL)
+	CREATE TABLE [NestingB]
+	(
+		[Property1] NVarChar(4000)     NULL,
+		[Property2] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[NestingC]', N'U') IS NOT NULL)
+	DROP TABLE [NestingC]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[NestingC]', N'U') IS NULL)
+	CREATE TABLE [NestingC]
+	(
+		[Property1] NVarChar(4000)     NULL,
+		[Property2] NVarChar(4000)     NULL,
+		[Property3] NVarChar(4000)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

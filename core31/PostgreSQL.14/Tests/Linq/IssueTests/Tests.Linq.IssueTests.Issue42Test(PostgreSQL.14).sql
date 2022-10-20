@@ -4,18 +4,20 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."ID",
-	t1."MoneyValue",
-	t1."DateTimeValue",
-	t1."DateTimeValue2",
-	t1."BoolValue",
-	t1."GuidValue",
-	t1."SmallIntValue",
-	t1."IntValue",
-	t1."BigIntValue",
-	t1."StringValue"
+	r."ID",
+	r."MoneyValue",
+	r."DateTimeValue",
+	r."DateTimeValue2",
+	r."BoolValue",
+	r."GuidValue",
+	r."SmallIntValue",
+	r."IntValue",
+	r."BigIntValue",
+	r."StringValue"
 FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" r
+WHERE
+	r."ID" = 1
 LIMIT :take
 
 BeforeExecute
@@ -29,7 +31,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
+SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'::uuid
 DECLARE @SmallIntValue Smallint -- Int16
 SET     @SmallIntValue = 1
 DECLARE @IntValue Integer -- Int32
@@ -58,22 +60,26 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @ID Integer -- Int32
+SET     @ID = 1
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	t1."ID",
-	t1."MoneyValue",
-	t1."DateTimeValue",
-	t1."DateTimeValue2",
-	t1."BoolValue",
-	t1."GuidValue",
-	t1."SmallIntValue",
-	t1."IntValue",
-	t1."BigIntValue",
-	t1."StringValue"
+	r."ID",
+	r."MoneyValue",
+	r."DateTimeValue",
+	r."DateTimeValue2",
+	r."BoolValue",
+	r."GuidValue",
+	r."SmallIntValue",
+	r."IntValue",
+	r."BigIntValue",
+	r."StringValue"
 FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" r
+WHERE
+	r."ID" = :ID
 LIMIT :take
 
 BeforeExecute
@@ -87,7 +93,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
+SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'::uuid
 DECLARE @SmallIntValue Smallint -- Int16
 SET     @SmallIntValue = 1
 DECLARE @IntValue Integer -- Int32

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Parent564"
+DROP TABLE IF EXISTS "Parent564"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Parent564"
 (
 	"Id"          SERIAL  NOT NULL,
 	"Type"        text        NULL,

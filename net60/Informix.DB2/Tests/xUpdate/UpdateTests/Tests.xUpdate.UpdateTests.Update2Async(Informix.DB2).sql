@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-
-DELETE FROM
-	Parent
-WHERE
-	Parent.ParentID > 1000
-
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer(4) -- Int32
@@ -59,12 +51,4 @@ FROM
 	Parent p
 WHERE
 	p.ParentID = @ParentID
-
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
-
-DELETE FROM
-	Child
-WHERE
-	Child.ChildID > 1000
 

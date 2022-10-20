@@ -4,7 +4,7 @@
 ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT @@IDENTITY
 

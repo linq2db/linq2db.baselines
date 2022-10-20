@@ -73,11 +73,3 @@ FROM
 WHERE
 	[c_1].[ParentID] = 1
 
-BeforeExecute
--- SQLite.MS SQLite
-
-DELETE FROM
-	[Child]
-WHERE
-	[Child].[ChildID] IN (1001, 1002)
-

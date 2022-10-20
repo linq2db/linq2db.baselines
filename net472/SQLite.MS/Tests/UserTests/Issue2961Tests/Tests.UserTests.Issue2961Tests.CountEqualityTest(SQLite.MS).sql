@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Condos]
+DROP TABLE IF EXISTS [Condos]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Condos]
 (
 	[Id]         INTEGER NOT NULL,
 	[LocationId] INTEGER NOT NULL,
@@ -12,7 +17,12 @@ CREATE TABLE [Condos]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [CategoryCondos]
+DROP TABLE IF EXISTS [CategoryCondos]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [CategoryCondos]
 (
 	[CategoryId] INTEGER NOT NULL,
 	[CondoId]    INTEGER NOT NULL,
@@ -23,7 +33,12 @@ CREATE TABLE [CategoryCondos]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [CondoTags]
+DROP TABLE IF EXISTS [CondoTags]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [CondoTags]
 (
 	[CondoId] INTEGER NOT NULL,
 	[TagId]   INTEGER NOT NULL,
@@ -34,7 +49,12 @@ CREATE TABLE [CondoTags]
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Locations]
+DROP TABLE IF EXISTS [Locations]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Locations]
 (
 	[Id]           INTEGER       NOT NULL,
 	[LocationName] NVarChar(100) NOT NULL,

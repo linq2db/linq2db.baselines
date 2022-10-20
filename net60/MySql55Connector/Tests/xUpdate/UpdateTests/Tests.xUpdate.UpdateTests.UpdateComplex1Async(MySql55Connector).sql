@@ -4,16 +4,7 @@
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MySql55Connector MySqlConnector MySql (asynchronously)
-
-DELETE   `t1`
-FROM
-	`Person` `t1`
-WHERE
-	`t1`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
-
-BeforeExecute
--- MySql55Connector MySqlConnector MySql (asynchronously)
+-- MySql55Connector MySqlConnector MySql
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -39,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql55Connector MySqlConnector MySql (asynchronously)
+-- MySql55Connector MySqlConnector MySql
 
 SELECT LAST_INSERT_ID()
 
@@ -103,13 +94,4 @@ FROM
 WHERE
 	`_`.`PersonID` = @id
 LIMIT @take
-
-BeforeExecute
--- MySql55Connector MySqlConnector MySql (asynchronously)
-
-DELETE   `_`
-FROM
-	`Person` `_`
-WHERE
-	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 

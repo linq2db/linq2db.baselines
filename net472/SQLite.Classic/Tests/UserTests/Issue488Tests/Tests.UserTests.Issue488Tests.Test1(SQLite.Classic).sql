@@ -17,6 +17,6 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 WHERE
-	DateTime([t2].[DateTimeValue]) = DateTime(@date_1)
+	DateTime(Date([t2].[DateTimeValue])) = DateTime(@date_1)
 LIMIT @take
 

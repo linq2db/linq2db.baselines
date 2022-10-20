@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-CREATE TABLE `Issue2434Table`
+DROP TABLE IF EXISTS `Issue2434Table`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `Issue2434Table`
 (
 	`Id`        INT           NOT NULL,
 	`FirstName` VARCHAR(4000)     NULL,

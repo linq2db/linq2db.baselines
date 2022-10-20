@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [ProductTable]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [ProductTable]
 (
 	[Id]   Int           NOT NULL,
@@ -12,6 +17,11 @@ CREATE TABLE [ProductTable]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [ProductAttributeTable]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [ProductAttributeTable]
 (
 	[Id]   Int           NOT NULL,
@@ -19,6 +29,11 @@ CREATE TABLE [ProductAttributeTable]
 
 	CONSTRAINT [PK_ProductAttributeTable] PRIMARY KEY CLUSTERED ([Id])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DROP TABLE [ProductAttributeMapping]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

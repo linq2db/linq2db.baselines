@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE SimpleBulkCopyTable
+DROP TABLE IF EXISTS SimpleBulkCopyTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS SimpleBulkCopyTable
 (
 	Id Int NOT NULL
 )

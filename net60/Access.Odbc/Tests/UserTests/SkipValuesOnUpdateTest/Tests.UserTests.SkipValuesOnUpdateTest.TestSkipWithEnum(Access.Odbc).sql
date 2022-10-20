@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [PR_1598_Update_Enum_Table]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [PR_1598_Update_Enum_Table]
 (
 	[Id]     Int           NOT NULL,

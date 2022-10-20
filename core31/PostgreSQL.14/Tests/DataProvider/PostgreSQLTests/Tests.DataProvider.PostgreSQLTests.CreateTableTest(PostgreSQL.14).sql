@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "CreateTableTestClass"
+DROP TABLE IF EXISTS "CreateTableTestClass"
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "CreateTableTestClass"
 (
 	"TimeOffset" TimeStampTZ NOT NULL,
 	"Guid"       uuid        NOT NULL
@@ -12,7 +17,7 @@ BeforeExecute
 DECLARE @TimeOffset TimestampTz -- DateTime
 SET     @TimeOffset = '2017-06-17T19:40:33.0000000+00:00'
 DECLARE @Guid Uuid -- Guid
-SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
 INSERT INTO "CreateTableTestClass"
 (
@@ -28,7 +33,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Guid Uuid -- Guid
-SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @take Integer -- Int32
 SET     @take = 1
 

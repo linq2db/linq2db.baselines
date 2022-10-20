@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "BlobClass"
+DROP TABLE IF EXISTS "BlobClass"
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "BlobClass"
 (
 	"Id"        Int   NOT NULL,
 	"BlobValue" bytea     NULL,
@@ -14,7 +19,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @BlobValue Bytea(3) -- Binary
-SET     @BlobValue = E'\\x010203'
+SET     @BlobValue = E'\\x010203'::bytea
 
 INSERT INTO "BlobClass"
 (

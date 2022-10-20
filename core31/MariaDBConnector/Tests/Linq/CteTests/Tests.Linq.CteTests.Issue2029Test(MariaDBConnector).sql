@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `NC_CODE`
+DROP TABLE IF EXISTS `NC_CODE`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `NC_CODE`
 (
 	`HANDLE`             VARCHAR(4000) NOT NULL,
 	`CHANGE_STAMP`       DECIMAL           NULL,
@@ -18,7 +23,12 @@ CREATE TABLE `NC_CODE`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `NC_GROUP_MEMBER`
+DROP TABLE IF EXISTS `NC_GROUP_MEMBER`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `NC_GROUP_MEMBER`
 (
 	`HANDLE`               VARCHAR(4000) NOT NULL,
 	`NC_GROUP_BO`          VARCHAR(4000)     NULL,

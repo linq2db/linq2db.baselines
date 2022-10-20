@@ -37,12 +37,19 @@ SELECT 9,-9,N'Str9'
 BeforeExecute
 -- SqlServer.2005
 
-CREATE TABLE [destination]
-(
-	[Id]       Int          NOT NULL,
-	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
+IF (OBJECT_ID(N'[destination]', N'U') IS NOT NULL)
+	DROP TABLE [destination]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[destination]', N'U') IS NULL)
+	CREATE TABLE [destination]
+	(
+		[Id]       Int          NOT NULL,
+		[Value]    Int          NOT NULL,
+		[ValueStr] NVarChar(50)     NULL
+	)
 
 BeforeExecute
 -- SqlServer.2005 (asynchronously)

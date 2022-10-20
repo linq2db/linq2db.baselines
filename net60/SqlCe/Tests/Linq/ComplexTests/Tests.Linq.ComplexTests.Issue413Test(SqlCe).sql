@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [T1]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [T1]
 (
 	[InstrumentId]         Int           NOT NULL,
@@ -14,11 +19,21 @@ CREATE TABLE [T1]
 BeforeExecute
 -- SqlCe
 
+DROP TABLE [T2]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [T2]
 (
 	[InstrumentId] Int NOT NULL,
 	[IndexId]      Int NOT NULL
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [T3]
 
 BeforeExecute
 -- SqlCe

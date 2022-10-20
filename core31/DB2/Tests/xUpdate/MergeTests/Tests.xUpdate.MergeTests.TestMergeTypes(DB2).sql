@@ -290,7 +290,7 @@ SET     @FieldGuid = BX'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal (18, 10) -- Decimal
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate Timestamp(20) -- DateTime
-SET     @FieldDate = '3210-11-23-00.00.00.000000'
+SET     @FieldDate = '2110-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '00:00:00'
 DECLARE @FieldEnumString VarChar -- String
@@ -372,7 +372,7 @@ SET     @FieldGuid = BX'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal (3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Timestamp(20) -- DateTime
-SET     @FieldDate = '3210-11-23-00.00.00.000000'
+SET     @FieldDate = '2111-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '23:59:59'
 DECLARE @FieldEnumString VarChar -- String
@@ -538,7 +538,7 @@ SET     @FieldGuid = BX'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal (3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate Timestamp(20) -- DateTime
-SET     @FieldDate = '3210-11-23-00.00.00.000000'
+SET     @FieldDate = '2010-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '23:59:59'
 DECLARE @FieldEnumString VarChar -- String

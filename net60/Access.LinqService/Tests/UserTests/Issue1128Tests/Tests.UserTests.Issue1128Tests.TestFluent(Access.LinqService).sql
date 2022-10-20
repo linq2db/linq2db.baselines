@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [AttributeBase]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [AttributeBase]
 (
 	[Id] Int NOT NULL,

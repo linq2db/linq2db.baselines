@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE TestInsertOrReplaceTable
+DROP TABLE IF EXISTS TestInsertOrReplaceTable
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS TestInsertOrReplaceTable
 (
 	ID         Int           NOT NULL,
 	FirstName  NVarChar(255)     NULL,

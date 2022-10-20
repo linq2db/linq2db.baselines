@@ -24,11 +24,3 @@ FROM
 WHERE
 	[c_1].[FirstName] = 'John' AND [c_1].[LastName] = 'The Dynamic'
 
-BeforeExecute
--- SQLite.Classic SQLite
-
-DELETE FROM
-	[Person]
-WHERE
-	[Person].[LastName] = 'The Dynamic'
-

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TABLE [Issue3323Table]
+DROP TABLE IF EXISTS [Issue3323Table]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue3323Table]
 (
 	[Id]       INTEGER       NOT NULL,
 	[FistName] NVarChar(255)     NULL,

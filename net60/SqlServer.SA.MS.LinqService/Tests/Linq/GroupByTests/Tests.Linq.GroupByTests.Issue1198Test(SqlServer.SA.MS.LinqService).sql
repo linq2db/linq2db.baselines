@@ -1,12 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-CREATE TABLE [Issue1192Table]
-(
-	[IdId]      Int NOT NULL,
-	[MyOtherId] Int NOT NULL,
-	[Status]    Int NOT NULL
-)
+DROP TABLE IF EXISTS [Issue1192Table]
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue1192Table]', N'U') IS NULL)
+	CREATE TABLE [Issue1192Table]
+	(
+		[IdId]      Int NOT NULL,
+		[MyOtherId] Int NOT NULL,
+		[Status]    Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

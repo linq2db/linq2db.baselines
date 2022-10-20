@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "ExtraBulkCopyTypesTable"
+DROP TABLE IF EXISTS "ExtraBulkCopyTypesTable"
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "ExtraBulkCopyTypesTable"
 (
 	"Id"      Int         NOT NULL,
 	"Byte"    SmallInt        NULL,

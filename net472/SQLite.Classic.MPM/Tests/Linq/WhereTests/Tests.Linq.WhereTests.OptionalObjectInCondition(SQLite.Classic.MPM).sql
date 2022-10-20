@@ -1,6 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(1) -- String
 SET     @FirstName = '1'
@@ -46,5 +44,3 @@ FROM
 WHERE
 	[r].[FirstName] = @FirstName
 
-BeforeExecute
-RollbackTransaction

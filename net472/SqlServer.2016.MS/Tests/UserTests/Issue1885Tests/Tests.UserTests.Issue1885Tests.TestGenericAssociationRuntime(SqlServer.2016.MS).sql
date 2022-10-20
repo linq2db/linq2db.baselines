@@ -1,10 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [User]
-(
-	[Id] Int NOT NULL
-)
+DROP TABLE IF EXISTS [User]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+IF (OBJECT_ID(N'[User]', N'U') IS NULL)
+	CREATE TABLE [User]
+	(
+		[Id] Int NOT NULL
+	)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [CreateTableTypes]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [CreateTableTypes]
 (
 	[String] NVarChar(255) NOT NULL,

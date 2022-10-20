@@ -18,7 +18,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date(16)
-SET     @Column_1 = TO_DATE('1900-01-01', '%Y-%m-%d')
+SET     @Column_1 = TO_DATE('1950-01-01', '%Y-%m-%d')
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
@@ -97,7 +97,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date(16)
-SET     @Column_1 = TO_DATE('1900-01-01', '%Y-%m-%d')
+SET     @Column_1 = TO_DATE('1950-01-01', '%Y-%m-%d')
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
@@ -159,7 +159,7 @@ BeforeExecute
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Date(16)
-SET     @Column_1 = TO_DATE('1900-01-01', '%Y-%m-%d')
+SET     @Column_1 = TO_DATE('1950-01-01', '%Y-%m-%d')
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 

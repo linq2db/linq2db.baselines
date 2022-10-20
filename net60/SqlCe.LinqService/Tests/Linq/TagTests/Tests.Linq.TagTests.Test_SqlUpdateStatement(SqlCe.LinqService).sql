@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [TestTable]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [TestTable]
 (
 	[Id] Int NOT NULL,
@@ -16,7 +21,7 @@ BeforeExecute
 UPDATE
 	[TestTable]
 SET
-	[TestTable].[Id] = 1
+	[TestTable].[Fd] = 1
 
 BeforeExecute
 -- SqlCe

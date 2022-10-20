@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" > 1000
-
-BeforeExecute
--- Firebird4 Firebird
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 1
 DECLARE @ParentID Integer -- Int32
@@ -59,12 +51,4 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = @id AND "p"."Value1" = 2
-
-BeforeExecute
--- Firebird4 Firebird
-
-DELETE FROM
-	"Parent" "t1"
-WHERE
-	"t1"."ParentID" > 1000
 

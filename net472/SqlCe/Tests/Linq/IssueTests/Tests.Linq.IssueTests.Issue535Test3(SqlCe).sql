@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [CustomerBase]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [CustomerBase]
 (
 	[Id]           Int            NOT NULL IDENTITY,

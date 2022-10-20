@@ -1,14 +1,35 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "PR_1598_Update_Null_Table"
-(
-	"Id"   Int          NOT NULL,
-	"Name" VarChar(255)     NULL,
-	"Age"  Int              NULL,
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "PR_1598_Update_Null_Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
-	CONSTRAINT "PK_PR_1598_Update_Null_Table" PRIMARY KEY ("Id")
-)
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "PR_1598_Update_Null_Table"
+		(
+			"Id"   Int          NOT NULL,
+			"Name" VarChar(255)     NULL,
+			"Age"  Int              NULL,
+
+			CONSTRAINT "PK_PR_1598_Update_Null_Table" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

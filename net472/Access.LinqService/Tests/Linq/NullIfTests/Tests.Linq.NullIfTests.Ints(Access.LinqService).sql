@@ -73,6 +73,8 @@ SELECT
 	[s].[Int]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -81,6 +83,8 @@ SELECT
 	[s].[Int]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -89,6 +93,8 @@ SELECT
 	[s].[Int]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -97,6 +103,8 @@ SELECT
 	[s].[NullableInt]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -105,6 +113,8 @@ SELECT
 	[s].[NullableInt]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -113,6 +123,8 @@ SELECT
 	[s].[NullableInt]
 FROM
 	[Src] [s]
+ORDER BY
+	[s].[Int]
 
 BeforeExecute
 -- Access AccessOleDb

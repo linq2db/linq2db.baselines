@@ -14,4 +14,6 @@ FROM
 			SELECT N'Janet' AS [FirstName], @ID AS [PersonID]
 			UNION ALL
 			SELECT N'Doe', @ID_1) [n] ON [p].[PersonID] = [n].[PersonID]
+ORDER BY
+	[n].[PersonID]
 

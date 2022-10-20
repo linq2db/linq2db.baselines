@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TABLE Parent564
+DROP TABLE IF EXISTS Parent564
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Parent564
 (
 	Id          SERIAL         NOT NULL,
 	"Type"      NVarChar(255)      NULL,

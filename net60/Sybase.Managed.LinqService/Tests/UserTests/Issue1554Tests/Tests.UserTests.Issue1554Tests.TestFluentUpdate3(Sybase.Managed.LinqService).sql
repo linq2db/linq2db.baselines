@@ -1,14 +1,23 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [Issue1554FluentTable]
-(
-	[Id]              Int         NOT NULL,
-	[ClaimedKeyType]  NVarChar(3) NOT NULL,
-	[ClaimedKeyTypeN] NVarChar(3)     NULL,
+IF (OBJECT_ID(N'Issue1554FluentTable') IS NOT NULL)
+	DROP TABLE [Issue1554FluentTable]
 
-	CONSTRAINT [PK_Issue1554FluentTable] PRIMARY KEY CLUSTERED ([Id])
-)
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'Issue1554FluentTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [Issue1554FluentTable]
+		(
+			[Id]              Int         NOT NULL,
+			[ClaimedKeyType]  NVarChar(3) NOT NULL,
+			[ClaimedKeyTypeN] NVarChar(3)     NULL,
+
+			CONSTRAINT [PK_Issue1554FluentTable] PRIMARY KEY CLUSTERED ([Id])
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

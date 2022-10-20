@@ -1,14 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-SELECT
-	Max([t].[PersonID])
-FROM
-	[Person] [t]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -21,15 +13,4 @@ VALUES
 	N'LastName',
 	N'M'
 )
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-DECLARE @id Int -- Int32
-SET     @id = 4
-
-DELETE [t1]
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] > @id
 

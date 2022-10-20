@@ -1,12 +1,22 @@
 ﻿BeforeExecute
 -- SqlCe
 
+DROP TABLE [i1084_person]
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [i1084_person]
 (
 	[Id]            Int NOT NULL,
 	[Number]        Int NOT NULL,
 	[StatusBitmask] Int NOT NULL
 )
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [i1084_student]
 
 BeforeExecute
 -- SqlCe

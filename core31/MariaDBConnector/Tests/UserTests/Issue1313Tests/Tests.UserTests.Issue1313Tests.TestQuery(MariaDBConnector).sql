@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `ValueItem`
+DROP TABLE IF EXISTS `ValueItem`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `ValueItem`
 (
 	`Value` INT NOT NULL
 )

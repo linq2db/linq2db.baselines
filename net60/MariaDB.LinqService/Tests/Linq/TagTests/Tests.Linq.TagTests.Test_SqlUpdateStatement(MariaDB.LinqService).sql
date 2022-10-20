@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySql.Official MySql
 
-CREATE TABLE `TestTable`
+DROP TABLE IF EXISTS `TestTable`
+
+BeforeExecute
+-- MariaDB MySql.Official MySql
+
+CREATE TABLE IF NOT EXISTS `TestTable`
 (
 	`Id` INT NOT NULL,
 	`Fd` INT     NULL,
@@ -16,7 +21,7 @@ BeforeExecute
 UPDATE
 	`TestTable` `t1`
 SET
-	`t1`.`Id` = 1
+	`t1`.`Fd` = 1
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

@@ -71,13 +71,3 @@ WHERE
 			"Parent"."ParentID" = t4."ParentID"
 	)
 
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @id Int32
-SET     @id = 100500
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" = :id
-

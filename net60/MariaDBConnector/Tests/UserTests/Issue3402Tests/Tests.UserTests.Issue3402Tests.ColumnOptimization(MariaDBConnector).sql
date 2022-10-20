@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `VEMPLOYEE_SCH_SEC`
+DROP TABLE IF EXISTS `VEMPLOYEE_SCH_SEC`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `VEMPLOYEE_SCH_SEC`
 (
 	`ACTIVE` BOOLEAN       NOT NULL,
 	`ID`     INT           NOT NULL,
@@ -13,7 +18,12 @@ CREATE TABLE `VEMPLOYEE_SCH_SEC`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE `VEMPLOYEE_SCHDL_PERM`
+DROP TABLE IF EXISTS `VEMPLOYEE_SCHDL_PERM`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `VEMPLOYEE_SCHDL_PERM`
 (
 	`ID`        INT     NOT NULL,
 	`IS_ACTIVE` BOOLEAN NOT NULL,

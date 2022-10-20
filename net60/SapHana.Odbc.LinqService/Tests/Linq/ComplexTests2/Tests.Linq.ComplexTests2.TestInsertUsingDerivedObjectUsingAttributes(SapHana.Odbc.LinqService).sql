@@ -144,11 +144,3 @@ DELETE FROM
 WHERE
 	"t1"."PersonID" = ?
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DELETE FROM
-	"Person" "_"
-WHERE
-	"_"."FirstName" = 'test_inherited_insert'
-

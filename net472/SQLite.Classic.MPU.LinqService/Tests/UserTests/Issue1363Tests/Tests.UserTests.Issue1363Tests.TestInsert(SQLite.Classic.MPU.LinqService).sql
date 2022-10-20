@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE [Issue1363]
+DROP TABLE IF EXISTS [Issue1363]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1363]
 (
 	[required_field] Guid NOT NULL,
 	[optional_field] Guid     NULL

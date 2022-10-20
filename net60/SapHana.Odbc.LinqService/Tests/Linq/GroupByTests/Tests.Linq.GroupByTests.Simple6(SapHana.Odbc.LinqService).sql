@@ -13,9 +13,9 @@ GROUP BY
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
-SET     @ParentID = 3
+SET     @ParentID = 1
 DECLARE @ChildID  -- Int32
-SET     @ChildID = 32
+SET     @ChildID = 11
 
 SELECT
 	"ch"."GrandChildID"

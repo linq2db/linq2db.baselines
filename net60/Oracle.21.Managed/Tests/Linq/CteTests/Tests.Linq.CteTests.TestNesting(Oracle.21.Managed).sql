@@ -1,29 +1,92 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "NestingA"
-(
-	"Property1" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "NestingA"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "NestingB"
-(
-	"Property1" VarChar(255)     NULL,
-	"Property2" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "NestingA"
+		(
+			"Property1" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-CREATE TABLE "NestingC"
-(
-	"Property1" VarChar(255)     NULL,
-	"Property2" VarChar(255)     NULL,
-	"Property3" VarChar(255)     NULL
-)
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "NestingB"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "NestingB"
+		(
+			"Property1" VarChar(255)     NULL,
+			"Property2" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "NestingC"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "NestingC"
+		(
+			"Property1" VarChar(255)     NULL,
+			"Property2" VarChar(255)     NULL,
+			"Property3" VarChar(255)     NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

@@ -7,7 +7,7 @@ SELECT
 FROM
 	[Child] [t1]
 ORDER BY
-	1
+	[t1].[ChildID]
 OFFSET 3 ROWS
 
 BeforeExecute
@@ -19,6 +19,6 @@ SELECT
 FROM
 	[Child] [t1]
 ORDER BY
-	1
+	[t1].[ChildID]
 OFFSET 4 ROWS
 

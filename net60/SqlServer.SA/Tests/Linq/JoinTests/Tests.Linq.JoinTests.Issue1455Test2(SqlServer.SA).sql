@@ -1,59 +1,89 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [Alert]
-(
-	[AlertKey]     NVarChar(4000)     NULL,
-	[AlertCode]    NVarChar(4000)     NULL,
-	[CreationDate] DateTime2          NULL
-)
+DROP TABLE IF EXISTS [Alert]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [AuditAlert]
-(
-	[CreationDate]    DateTime2          NULL,
-	[AlertCode]       NVarChar(4000)     NULL,
-	[AlertKey]        NVarChar(4000)     NULL,
-	[TransactionDate] DateTime2          NULL
-)
+IF (OBJECT_ID(N'[Alert]', N'U') IS NULL)
+	CREATE TABLE [Alert]
+	(
+		[AlertKey]     NVarChar(4000)     NULL,
+		[AlertCode]    NVarChar(4000)     NULL,
+		[CreationDate] DateTime2          NULL
+	)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [Trade]
-(
-	[DealId]       Int            NOT NULL,
-	[ParcelId]     Int            NOT NULL,
-	[CounterParty] NVarChar(4000)     NULL
-)
+DROP TABLE IF EXISTS [AuditAlert]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [Nomin]
-(
-	[CargoId]              Int            NOT NULL,
-	[DeliveryId]           Int            NOT NULL,
-	[DeliveryCounterParty] NVarChar(4000)     NULL
-)
+IF (OBJECT_ID(N'[AuditAlert]', N'U') IS NULL)
+	CREATE TABLE [AuditAlert]
+	(
+		[CreationDate]    DateTime2          NULL,
+		[AlertCode]       NVarChar(4000)     NULL,
+		[AlertKey]        NVarChar(4000)     NULL,
+		[TransactionDate] DateTime2          NULL
+	)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [Flat]
-(
-	[AlertKey]             NVarChar(4000)     NULL,
-	[AlertCode]            NVarChar(4000)     NULL,
-	[CargoId]              Int                NULL,
-	[DeliveryId]           Int                NULL,
-	[DeliveryCounterParty] NVarChar(4000)     NULL,
-	[DealId]               Int                NULL,
-	[ParcelId]             Int                NULL,
-	[CounterParty]         NVarChar(4000)     NULL,
-	[TransactionDate]      DateTime2          NULL
-)
+DROP TABLE IF EXISTS [Trade]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+IF (OBJECT_ID(N'[Trade]', N'U') IS NULL)
+	CREATE TABLE [Trade]
+	(
+		[DealId]       Int            NOT NULL,
+		[ParcelId]     Int            NOT NULL,
+		[CounterParty] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+DROP TABLE IF EXISTS [Nomin]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+IF (OBJECT_ID(N'[Nomin]', N'U') IS NULL)
+	CREATE TABLE [Nomin]
+	(
+		[CargoId]              Int            NOT NULL,
+		[DeliveryId]           Int            NOT NULL,
+		[DeliveryCounterParty] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+DROP TABLE IF EXISTS [Flat]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+IF (OBJECT_ID(N'[Flat]', N'U') IS NULL)
+	CREATE TABLE [Flat]
+	(
+		[AlertKey]             NVarChar(4000)     NULL,
+		[AlertCode]            NVarChar(4000)     NULL,
+		[CargoId]              Int                NULL,
+		[DeliveryId]           Int                NULL,
+		[DeliveryCounterParty] NVarChar(4000)     NULL,
+		[DealId]               Int                NULL,
+		[ParcelId]             Int                NULL,
+		[CounterParty]         NVarChar(4000)     NULL,
+		[TransactionDate]      DateTime2          NULL
+	)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -78,8 +108,8 @@ FROM
 			[al].[AlertCode],
 			[al].[CreationDate]
 	) [al_1]
-		LEFT JOIN [Trade] [trade1] ON ([al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [trade1].[DealId]) IS NULL)
-		LEFT JOIN [Nomin] [nomin1] ON ([al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId]) OR [al_1].[alert] IS NULL AND Convert(NVarChar(11), [nomin1].[CargoId]) IS NULL)
+		LEFT JOIN [Trade] [trade1] ON [al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId])
+		LEFT JOIN [Nomin] [nomin1] ON [al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId])
 WHERE
 	(([nomin1].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade1].[CounterParty] LIKE @DeliveryCounterParty) OR [al_1].[alert_1] LIKE @DeliveryCounterParty)
 GROUP BY

@@ -1,12 +1,21 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-CREATE TABLE [TypeConvertTable]
-(
-	[Name]      NVarChar(50) NOT NULL,
-	[BoolValue] Char         NOT NULL,
-	[GuidValue] VarChar(50)      NULL
-)
+IF (OBJECT_ID(N'TypeConvertTable') IS NOT NULL)
+	DROP TABLE [TypeConvertTable]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+IF (OBJECT_ID(N'TypeConvertTable') IS NULL)
+	EXECUTE('
+		CREATE TABLE [TypeConvertTable]
+		(
+			[Name]      NVarChar(50) NOT NULL,
+			[BoolValue] Char         NOT NULL,
+			[GuidValue] VarChar(50)      NULL
+		)
+	')
 
 BeforeExecute
 -- Sybase.Managed Sybase

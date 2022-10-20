@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE i1084_person
+DROP TABLE IF EXISTS i1084_person
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS i1084_person
 (
 	"Id"            Int NOT NULL,
 	"Number"        Int NOT NULL,
@@ -11,7 +16,12 @@ CREATE TABLE i1084_person
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE i1084_student
+DROP TABLE IF EXISTS i1084_student
+
+BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS i1084_student
 (
 	"Id"            Int  NOT NULL,
 	"Number"        text     NULL,
@@ -26,7 +36,7 @@ SELECT
 	"joinedTable"."StatusBitmask"
 FROM
 	i1084_person k_1
-		LEFT JOIN i1084_student "joinedTable" ON k_1."Id" = "joinedTable"."Id" AND Cast(k_1."Number" as VarChar(11)) = "joinedTable"."Number"
+		LEFT JOIN i1084_student "joinedTable" ON k_1."Id" = "joinedTable"."Id" AND Cast(k_1."Number" as text) = "joinedTable"."Number"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

@@ -1,13 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [Issue1403Tests_3]
-(
-	[event_description] NVarChar(4000) NOT NULL,
-	[event_id]          Int            NOT NULL,
+DROP TABLE IF EXISTS [Issue1403Tests_3]
 
-	CONSTRAINT [PK_Issue1403Tests_3] PRIMARY KEY CLUSTERED ([event_id])
-)
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+IF (OBJECT_ID(N'[Issue1403Tests_3]', N'U') IS NULL)
+	CREATE TABLE [Issue1403Tests_3]
+	(
+		[event_description] NVarChar(4000) NOT NULL,
+		[event_id]          Int            NOT NULL,
+
+		CONSTRAINT [PK_Issue1403Tests_3] PRIMARY KEY CLUSTERED ([event_id])
+	)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

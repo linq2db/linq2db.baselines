@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."ParentID" = 1001
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int32
@@ -33,12 +25,4 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = 1001
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"Parent" t1
-WHERE
-	t1."Value1" = 1001
 

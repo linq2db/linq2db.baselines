@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `T1`
+DROP TABLE IF EXISTS `T1`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `T1`
 (
 	`InstrumentId`         INT           NOT NULL,
 	`InstrumentCode`       VARCHAR(4000)     NULL,
@@ -14,7 +19,12 @@ CREATE TABLE `T1`
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `T2`
+DROP TABLE IF EXISTS `T2`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `T2`
 (
 	`InstrumentId` INT NOT NULL,
 	`IndexId`      INT NOT NULL
@@ -23,7 +33,12 @@ CREATE TABLE `T2`
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE `T3`
+DROP TABLE IF EXISTS `T3`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `T3`
 (
 	`InstrumentId` INT NOT NULL,
 	`IndexId`      INT NOT NULL

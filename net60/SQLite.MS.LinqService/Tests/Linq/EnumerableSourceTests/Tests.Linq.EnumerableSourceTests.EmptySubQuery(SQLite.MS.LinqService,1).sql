@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [TableToInsert]
+DROP TABLE IF EXISTS [TableToInsert]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [TableToInsert]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,
@@ -22,7 +27,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			(SELECT NULL[Id], NULL[Value] WHERE 1 = 0) [r]
+			(SELECT NULL [Id], NULL [Value] WHERE 1 = 0) [r]
 		WHERE
 			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
 	)

@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE [Issue1403Tests_1]
+DROP TABLE IF EXISTS [Issue1403Tests_1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [Issue1403Tests_1]
 (
 	[event_id]          INTEGER       NOT NULL,
 	[event_description] NVarChar(255) NOT NULL,

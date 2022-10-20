@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [PR_1598_Insert_Table_Cache]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [PR_1598_Insert_Table_Cache]
 (
 	[Id]   Int           NOT NULL,

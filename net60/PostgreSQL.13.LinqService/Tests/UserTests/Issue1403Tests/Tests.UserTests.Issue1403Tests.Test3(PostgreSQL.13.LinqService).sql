@@ -1,7 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "Issue1403Tests_3"
+DROP TABLE IF EXISTS "Issue1403Tests_3"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Issue1403Tests_3"
 (
 	event_description text NOT NULL,
 	event_id          Int  NOT NULL,
