@@ -1,0 +1,40 @@
+﻿BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+DROP TABLE IF EXISTS `TakeSkipClass`
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `TakeSkipClass`
+(
+	`Value` VARCHAR(10)     NULL
+)
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+INSERT INTO `TakeSkipClass`
+(
+	`Value`
+)
+VALUES
+('PLUTO'),
+('PIPPO'),
+('PLUTO'),
+('BOLTO')
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+SELECT DISTINCT
+	`t1`.`Value`
+FROM
+	`TakeSkipClass` `t1`
+LIMIT 3
+
+BeforeExecute
+-- MariaDBConnector MySqlConnector MySql
+
+DROP TABLE IF EXISTS `TakeSkipClass`
+
