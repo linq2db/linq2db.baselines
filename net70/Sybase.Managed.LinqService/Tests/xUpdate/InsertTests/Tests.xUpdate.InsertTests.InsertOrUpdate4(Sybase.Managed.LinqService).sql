@@ -1,0 +1,140 @@
+﻿BeforeExecute
+-- Sybase.Managed Sybase
+
+sp_chgattribute Person, 'identity_burn_max', 0, '4'
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @FirstName UniVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName UniVarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName UniVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
+
+INSERT INTO [Person]
+(
+	[FirstName],
+	[LastName],
+	[MiddleName],
+	[Gender]
+)
+VALUES
+(
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
+)
+
+SELECT @@IDENTITY
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @id Integer -- Int32
+SET     @id = 5
+DECLARE @diagnosis UniVarChar(3) -- String
+SET     @diagnosis = 'abc'
+
+UPDATE
+	[Patient]
+SET
+	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
+FROM
+	[Patient] [t1]
+WHERE
+	[t1].[PersonID] = @id
+
+IF @@ROWCOUNT = 0
+BEGIN
+	INSERT INTO [Patient]
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@id,
+		Convert(NVarChar(11), Len(@diagnosis))
+	)
+END
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @i Integer -- Int32
+SET     @i = 1
+DECLARE @id Integer -- Int32
+SET     @id = 5
+DECLARE @diagnosis UniVarChar(3) -- String
+SET     @diagnosis = 'abc'
+
+UPDATE
+	[Patient]
+SET
+	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+FROM
+	[Patient] [t1]
+WHERE
+	[t1].[PersonID] = @id
+
+IF @@ROWCOUNT = 0
+BEGIN
+	INSERT INTO [Patient]
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@id,
+		Convert(NVarChar(11), Len(@diagnosis) + @i)
+	)
+END
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @i Integer -- Int32
+SET     @i = 2
+DECLARE @id Integer -- Int32
+SET     @id = 5
+DECLARE @diagnosis UniVarChar(3) -- String
+SET     @diagnosis = 'abc'
+
+UPDATE
+	[Patient]
+SET
+	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+FROM
+	[Patient] [t1]
+WHERE
+	[t1].[PersonID] = @id
+
+IF @@ROWCOUNT = 0
+BEGIN
+	INSERT INTO [Patient]
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@id,
+		Convert(NVarChar(11), Len(@diagnosis) + @i)
+	)
+END
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @id Integer -- Int32
+SET     @id = 5
+
+SELECT TOP 2
+	[p].[PersonID],
+	[p].[Diagnosis]
+FROM
+	[Patient] [p]
+WHERE
+	[p].[PersonID] = @id
+
