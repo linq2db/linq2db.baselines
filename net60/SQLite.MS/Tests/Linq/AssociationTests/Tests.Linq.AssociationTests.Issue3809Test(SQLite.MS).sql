@@ -14,16 +14,16 @@ FROM
 			[a_ParentTest].[ParentID],
 			[a_ParentTest].[Value1]
 		FROM
-			[Parent] [a]
-				LEFT JOIN [Parent] [a_ParentTest] ON [a].[ParentID] = [a_ParentTest].[ParentID] AND ([a].[Value1] = [a_ParentTest].[Value1] OR [a].[Value1] IS NULL AND [a_ParentTest].[Value1] IS NULL)
+			[Parent] [cp]
+				LEFT JOIN [Parent] [a_ParentTest] ON [cp].[ParentID] = [a_ParentTest].[ParentID] AND ([cp].[Value1] = [a_ParentTest].[Value1] OR [cp].[Value1] IS NULL AND [a_ParentTest].[Value1] IS NULL)
 		WHERE
 			([a_ParentTest].[ParentID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
-					[Child] [t1]
+					[Child] [a]
 				WHERE
-					[a_ParentTest].[ParentID] = [t1].[ParentID]
+					[a_ParentTest].[ParentID] = [a].[ParentID] AND [a].[ChildID] = 11
 			))
 	) [key_data_result]
 		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
@@ -36,19 +36,19 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[a].[ParentID],
+	[cp].[ParentID],
 	[a_ParentTest].[ParentID],
 	[a_ParentTest].[Value1]
 FROM
-	[Parent] [a]
-		LEFT JOIN [Parent] [a_ParentTest] ON [a].[ParentID] = [a_ParentTest].[ParentID] AND ([a].[Value1] = [a_ParentTest].[Value1] OR [a].[Value1] IS NULL AND [a_ParentTest].[Value1] IS NULL)
+	[Parent] [cp]
+		LEFT JOIN [Parent] [a_ParentTest] ON [cp].[ParentID] = [a_ParentTest].[ParentID] AND ([cp].[Value1] = [a_ParentTest].[Value1] OR [cp].[Value1] IS NULL AND [a_ParentTest].[Value1] IS NULL)
 WHERE
 	([a_ParentTest].[ParentID] IS NULL OR EXISTS(
 		SELECT
 			*
 		FROM
-			[Child] [t1]
+			[Child] [a]
 		WHERE
-			[a_ParentTest].[ParentID] = [t1].[ParentID]
+			[a_ParentTest].[ParentID] = [a].[ParentID] AND [a].[ChildID] = 11
 	))
 
