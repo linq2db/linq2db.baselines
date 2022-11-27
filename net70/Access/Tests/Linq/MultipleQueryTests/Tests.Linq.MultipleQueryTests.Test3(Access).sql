@@ -1,0 +1,21 @@
+﻿BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	1
+FROM
+	[Parent] [p]
+
