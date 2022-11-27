@@ -1,0 +1,181 @@
+﻿BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[DateOnlyTable]', N'U') IS NOT NULL)
+	DROP TABLE [DateOnlyTable]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[DateOnlyTable]', N'U') IS NULL)
+	CREATE TABLE [DateOnlyTable]
+	(
+		[ColumnNullable] Date     NULL,
+		[Column]         Date NOT NULL,
+		[Id]             Int  NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+INSERT INTO [DateOnlyTable]
+(
+	[ColumnNullable],
+	[Column],
+	[Id]
+)
+VALUES
+(NULL,CAST('1950-01-01' AS DATE),1),
+(CAST('2200-01-01' AS DATE),CAST('2020-02-29' AS DATE),2)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @Column_1 Date
+SET     @Column_1 = CAST('2020-02-29T00:00:00.0000000' AS DATETIME2)
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = CAST('2200-01-01T00:00:00.0000000' AS DATETIME2)
+
+SELECT
+	[r].[ColumnNullable],
+	[r].[Column],
+	[r].[Id]
+FROM
+	[DateOnlyTable] [r]
+WHERE
+	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[r].[ColumnNullable],
+	[r].[Column],
+	[r].[Id]
+FROM
+	[DateOnlyTable] [r]
+WHERE
+	[r].[Column] = CAST('2020-02-29' AS DATE) AND [r].[ColumnNullable] = CAST('2200-01-01' AS DATE)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+DELETE [t1]
+FROM
+	[DateOnlyTable] [t1]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = NULL
+DECLARE @Column_1 Date
+SET     @Column_1 = CAST('1950-01-01T00:00:00.0000000' AS DATETIME2)
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+INSERT INTO [DateOnlyTable]
+(
+	[ColumnNullable],
+	[Column],
+	[Id]
+)
+VALUES
+(
+	@ColumnNullable,
+	@Column_1,
+	@Id
+)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = CAST('2200-01-01T00:00:00.0000000' AS DATETIME2)
+DECLARE @Column_1 Date
+SET     @Column_1 = CAST('2020-02-29T00:00:00.0000000' AS DATETIME2)
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+
+INSERT INTO [DateOnlyTable]
+(
+	[ColumnNullable],
+	[Column],
+	[Id]
+)
+VALUES
+(
+	@ColumnNullable,
+	@Column_1,
+	@Id
+)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[t1].[ColumnNullable],
+	[t1].[Column],
+	[t1].[Id]
+FROM
+	[DateOnlyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+DELETE [t1]
+FROM
+	[DateOnlyTable] [t1]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+INSERT INTO [DateOnlyTable]
+(
+	[ColumnNullable],
+	[Column],
+	[Id]
+)
+VALUES
+(NULL,CAST('1950-01-01' AS DATE),1),
+(CAST('2200-01-01' AS DATE),CAST('2020-02-29' AS DATE),2)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[t1].[ColumnNullable],
+	[t1].[Column],
+	[t1].[Id]
+FROM
+	[DateOnlyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+DELETE [t1]
+FROM
+	[DateOnlyTable] [t1]
+
+BeforeExecute
+INSERT BULK [DateOnlyTable](ColumnNullable, Column, Id)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[t1].[ColumnNullable],
+	[t1].[Column],
+	[t1].[Id]
+FROM
+	[DateOnlyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[DateOnlyTable]', N'U') IS NOT NULL)
+	DROP TABLE [DateOnlyTable]
+
