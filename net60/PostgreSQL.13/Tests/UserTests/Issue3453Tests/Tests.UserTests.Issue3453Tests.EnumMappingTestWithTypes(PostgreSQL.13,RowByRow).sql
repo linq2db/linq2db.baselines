@@ -7,12 +7,12 @@ DROP TYPE IF EXISTS time_unit;
 CREATE TYPE time_unit AS ENUM ('hour', 'day');
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "public".schedule
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "public".schedule
 (
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS "public".schedule
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 DECLARE @Unit Enum -- Object
 SET     @Unit = 'day'
 DECLARE @UnitNullable Enum -- Object
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 DECLARE @Unit Enum -- Object
 SET     @Unit = 'day'
 DECLARE @UnitNullable Enum -- Object
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 DECLARE @Unit Enum -- Object
 SET     @Unit = 'day'
 DECLARE @UnitNullable Enum -- Object
@@ -91,7 +91,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 DECLARE @Unit Enum -- Object
 SET     @Unit = 'hour'
 DECLARE @UnitNullable Unknown -- Object
@@ -113,7 +113,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1.id,
@@ -124,7 +124,7 @@ FROM
 	"public".schedule t1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
@@ -139,7 +139,7 @@ WHERE
 	x.unit = :unit
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
@@ -154,7 +154,7 @@ WHERE
 	x.unit_nullable = :unit
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 DECLARE @unitNullable Enum -- Object
 SET     @unitNullable = 'day'
 
@@ -169,7 +169,7 @@ WHERE
 	x.unit_nullable = :unitNullable
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	x.id,
@@ -182,7 +182,7 @@ WHERE
 	x.unit_nullable = 'day'
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	x.id,
@@ -195,7 +195,7 @@ WHERE
 	x.unit_nullable IS NULL
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1.id,
@@ -206,7 +206,7 @@ FROM
 	"public".schedule t1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "public".schedule
 
