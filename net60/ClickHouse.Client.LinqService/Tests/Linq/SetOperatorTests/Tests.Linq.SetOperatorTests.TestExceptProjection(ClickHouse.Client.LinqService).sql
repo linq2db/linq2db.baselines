@@ -212,7 +212,7 @@ FROM
 			SampleData t
 		WHERE
 			t.Id % toInt32(2) = toInt32(0)
-		EXCEPT
+		EXCEPT DISTINCT
 		SELECT
 			t_1.Id as Id,
 			t_1.Value2 / toInt32(10) as Value_1
@@ -220,7 +220,7 @@ FROM
 			SampleData t_1
 		WHERE
 			t_1.Id % toInt32(4) = toInt32(0)
-		EXCEPT
+		EXCEPT DISTINCT
 		SELECT
 			t_2.Id as Id,
 			t_2.Value1 as Value_1

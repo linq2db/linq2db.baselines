@@ -24,7 +24,7 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 UPDATE
-	MoneyValue = toDecimal128('1.11', 10),
+	MoneyValue = toDecimal128('1.1100', 10),
 	DateTimeValue = toDateTime64('2001-01-11 01:11:21.100', 3),
 	DateTimeValue2 = NULL,
 	BoolValue = false,
@@ -62,7 +62,7 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 UPDATE
-	MoneyValue = toDecimal128('1.11', 10),
+	MoneyValue = toDecimal128('1.1100', 10),
 	DateTimeValue = toDateTime64('2001-01-11 01:11:21.100', 3),
 	DateTimeValue2 = NULL,
 	BoolValue = true,
