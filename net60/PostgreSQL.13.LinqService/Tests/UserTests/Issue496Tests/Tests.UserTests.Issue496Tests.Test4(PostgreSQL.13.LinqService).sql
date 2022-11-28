@@ -12,7 +12,7 @@ FROM
 		FROM
 			"Parent" t1
 	) key_data_result
-		INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
+		INNER JOIN "Child" detail ON Cast(key_data_result."ParentID" as BigInt) = detail."ParentID"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
