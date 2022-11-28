@@ -7,6 +7,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	LTrim(concat('  ', p.FirstName, ' ')) = 'John ' AND
+	LTRIM(concat('  ', p.FirstName, ' ')) = 'John ' AND
 	p.PersonID = toInt32(1)
 

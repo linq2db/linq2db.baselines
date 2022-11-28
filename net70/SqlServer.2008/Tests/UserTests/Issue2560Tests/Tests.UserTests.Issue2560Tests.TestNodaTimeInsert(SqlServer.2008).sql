@@ -1,0 +1,40 @@
+﻿BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[DataClass]', N'U') IS NOT NULL)
+	DROP TABLE [DataClass]
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[DataClass]', N'U') IS NULL)
+	CREATE TABLE [DataClass]
+	(
+		[Id]    Int      NOT NULL,
+		[Value] DateTime NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2008
+DECLARE @Id Int -- Int32
+SET     @Id = 0
+DECLARE @Value_1 DateTime
+SET     @Value_1 = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
+
+INSERT INTO [DataClass]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(
+	@Id,
+	@Value_1
+)
+
+BeforeExecute
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[DataClass]', N'U') IS NOT NULL)
+	DROP TABLE [DataClass]
+

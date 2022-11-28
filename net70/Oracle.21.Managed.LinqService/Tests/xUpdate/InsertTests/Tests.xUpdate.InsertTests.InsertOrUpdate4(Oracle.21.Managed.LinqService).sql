@@ -1,0 +1,144 @@
+﻿BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+DROP SEQUENCE "PersonSeq"
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @FirstName Varchar2(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Varchar2(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @MiddleName Varchar2 -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO "Person"
+(
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
+)
+VALUES
+(
+	:FirstName,
+	:LastName,
+	:MiddleName,
+	:Gender
+)
+RETURNING 
+	"PersonID" INTO :IDENTITY_PARAMETER
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @diagnosis Int32
+SET     @diagnosis = 3
+
+MERGE INTO "Patient" t1
+USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
+(
+	t1."PersonID" = s."PersonID"
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		t1."Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar(11))
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		"PersonID",
+		"Diagnosis"
+	)
+	VALUES
+	(
+		:id,
+		Cast(:diagnosis as VarChar(11))
+	)
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @i_1 Int32
+SET     @i_1 = 1
+DECLARE @i Int32
+SET     @i = 4
+
+MERGE INTO "Patient" t1
+USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
+(
+	t1."PersonID" = s."PersonID"
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar(11))
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		"PersonID",
+		"Diagnosis"
+	)
+	VALUES
+	(
+		:id,
+		Cast(:i as VarChar(11))
+	)
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @i_1 Int32
+SET     @i_1 = 2
+DECLARE @i Int32
+SET     @i = 5
+
+MERGE INTO "Patient" t1
+USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
+(
+	t1."PersonID" = s."PersonID"
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar(11))
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		"PersonID",
+		"Diagnosis"
+	)
+	VALUES
+	(
+		:id,
+		Cast(:i as VarChar(11))
+	)
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	p."PersonID",
+	p."Diagnosis"
+FROM
+	"Patient" p
+WHERE
+	p."PersonID" = :id
+FETCH NEXT :take ROWS ONLY
+

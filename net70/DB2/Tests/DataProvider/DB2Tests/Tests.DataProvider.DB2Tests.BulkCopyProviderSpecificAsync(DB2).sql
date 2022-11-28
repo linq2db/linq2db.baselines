@@ -1,0 +1,11 @@
+﻿BeforeExecute
+INSERT BULK ALLTYPES
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+DELETE FROM
+	ALLTYPES "t1"
+WHERE
+	"t1".SMALLINTDATATYPE >= 5000
+
