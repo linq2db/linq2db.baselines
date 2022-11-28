@@ -12,7 +12,7 @@ FROM
 		FROM
 			`Parent` `_`
 	) `key_data_result`
-		INNER JOIN `Child` `detail` ON `key_data_result`.`ParentID` = `detail`.`ParentID`
+		INNER JOIN `Child` `detail` ON Cast(`key_data_result`.`ParentID` as SIGNED) = `detail`.`ParentID`
 
 BeforeExecute
 -- MySql MySql.Official MySql
