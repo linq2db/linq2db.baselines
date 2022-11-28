@@ -6,7 +6,7 @@ SELECT
 	"c_1"."ParentID"
 FROM
 	"Parent" "cp"
-		INNER JOIN "Child" "c_1" ON "cp"."ParentID" = "c_1"."ParentID"
+		INNER JOIN "Child" "c_1" ON Cast("cp"."ParentID" as BigInt) = "c_1"."ParentID"
 WHERE
 	"cp"."ParentID" = 1
 
