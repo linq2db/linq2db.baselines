@@ -112,11 +112,6 @@ CREATE TABLE TestIdentity (
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP VIEW IF EXISTS AllTypesView
-
-BeforeExecute
--- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS AllTypes
 
 BeforeExecute
@@ -154,16 +149,6 @@ CREATE TABLE AllTypes
 	uniqueidentifierDataType uniqueidentifier NULL,
 	objectDataType           Object           NULL
 )
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE VIEW AllTypesView
-AS
-SELECT
-	*,
-	ROW_NUMBER () OVER () AS Number
-FROM AllTypes
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -611,11 +596,6 @@ CREATE TABLE TestIdentity (
 BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
-DROP VIEW IF EXISTS AllTypesView
-
-BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
-
 DROP TABLE IF EXISTS AllTypes
 
 BeforeExecute
@@ -653,16 +633,6 @@ CREATE TABLE AllTypes
 	uniqueidentifierDataType uniqueidentifier NULL,
 	objectDataType           Object           NULL
 )
-
-BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
-
-CREATE VIEW AllTypesView
-AS
-SELECT
-	*,
-	ROW_NUMBER () OVER () AS Number
-FROM AllTypes
 
 BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
