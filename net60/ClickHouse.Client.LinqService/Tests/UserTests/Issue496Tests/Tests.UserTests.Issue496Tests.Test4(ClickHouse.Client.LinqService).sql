@@ -12,7 +12,7 @@ FROM
 		FROM
 			Parent _
 	) key_data_result
-		INNER JOIN Child detail ON key_data_result.ParentID = detail.ParentID
+		INNER JOIN Child detail ON toInt64(key_data_result.ParentID) = detail.ParentID
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

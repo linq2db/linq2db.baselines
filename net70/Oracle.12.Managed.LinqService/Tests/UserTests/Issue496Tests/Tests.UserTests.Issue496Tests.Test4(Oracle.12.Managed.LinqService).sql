@@ -12,7 +12,7 @@ FROM
 		FROM
 			"Parent" t1
 	) key_data_result
-		INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
+		INNER JOIN "Child" detail ON Cast(key_data_result."ParentID" as Number(19)) = detail."ParentID"
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

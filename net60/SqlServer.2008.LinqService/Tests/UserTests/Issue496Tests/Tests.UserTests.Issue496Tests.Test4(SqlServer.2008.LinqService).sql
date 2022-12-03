@@ -12,7 +12,7 @@ FROM
 		FROM
 			[Parent] [_]
 	) [key_data_result]
-		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
+		INNER JOIN [Child] [detail] ON Convert(BigInt, [key_data_result].[ParentID]) = [detail].[ParentID]
 
 BeforeExecute
 -- SqlServer.2008
