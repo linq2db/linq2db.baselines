@@ -1,6 +1,75 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
+
+IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable3', 'U') IS NOT NULL ALTER TABLE TemporalTable3 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable4', 'U') IS NOT NULL ALTER TABLE TemporalTable4 SET ( SYSTEM_VERSIONING = OFF)
+
+DROP TABLE IF EXISTS TemporalTable1
+DROP TABLE IF EXISTS TemporalTable2
+DROP TABLE IF EXISTS TemporalTable3
+DROP TABLE IF EXISTS TemporalTable4
+DROP TABLE IF EXISTS TemporalTable2History
+DROP TABLE IF EXISTS TemporalTable3History
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+
+-- simple temporal table
+CREATE TABLE TemporalTable1
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON)
+
+-- with explicit history table name
+CREATE TABLE TemporalTable2
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.TemporalTable2History))
+
+
+-- with user-defined history table
+CREATE TABLE TemporalTable3History
+(
+	Id INT NOT NULL,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 NOT NULL,
+	ValidTo DATETIME2 NOT NULL
+)
+
+CREATE TABLE TemporalTable3
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.TemporalTable3History))
+
+-- with hidden period columns
+CREATE TABLE TemporalTable4
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START HIDDEN NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END HIDDEN NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON)
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
 select @@version
 
 BeforeExecute
@@ -433,3 +502,19 @@ SET     @ReturnFullRow = 0
 
 BeforeExecute
 RollbackTransaction
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+
+IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable3', 'U') IS NOT NULL ALTER TABLE TemporalTable3 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable4', 'U') IS NOT NULL ALTER TABLE TemporalTable4 SET ( SYSTEM_VERSIONING = OFF)
+
+DROP TABLE IF EXISTS TemporalTable1
+DROP TABLE IF EXISTS TemporalTable2
+DROP TABLE IF EXISTS TemporalTable3
+DROP TABLE IF EXISTS TemporalTable4
+DROP TABLE IF EXISTS TemporalTable2History
+DROP TABLE IF EXISTS TemporalTable3History
+

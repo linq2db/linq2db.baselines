@@ -1,15 +1,84 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
+
+
+IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable3', 'U') IS NOT NULL ALTER TABLE TemporalTable3 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable4', 'U') IS NOT NULL ALTER TABLE TemporalTable4 SET ( SYSTEM_VERSIONING = OFF)
+
+DROP TABLE IF EXISTS TemporalTable1
+DROP TABLE IF EXISTS TemporalTable2
+DROP TABLE IF EXISTS TemporalTable3
+DROP TABLE IF EXISTS TemporalTable4
+DROP TABLE IF EXISTS TemporalTable2History
+DROP TABLE IF EXISTS TemporalTable3History
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+
+-- simple temporal table
+CREATE TABLE TemporalTable1
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON)
+
+-- with explicit history table name
+CREATE TABLE TemporalTable2
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.TemporalTable2History))
+
+
+-- with user-defined history table
+CREATE TABLE TemporalTable3History
+(
+	Id INT NOT NULL,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 NOT NULL,
+	ValidTo DATETIME2 NOT NULL
+)
+
+CREATE TABLE TemporalTable3
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.TemporalTable3History))
+
+-- with hidden period columns
+CREATE TABLE TemporalTable4
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START HIDDEN NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END HIDDEN NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON)
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
 
 select @@version
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 
 				SELECT
@@ -33,7 +102,7 @@ BeforeExecute
 						x.minor_id = 0 AND
 						x.name = 'MS_Description'
 				WHERE
-					t.object_id IS NULL OR
+					(t.object_id IS NULL OR
 					t.is_ms_shipped <> 1 AND
 					(
 						SELECT
@@ -46,9 +115,10 @@ BeforeExecute
 							class    = 1           AND
 							name     = N'microsoft_database_tools_support'
 					) IS NULL
+					) AND t.temporal_type <> 1
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 
 				SELECT
@@ -68,7 +138,7 @@ BeforeExecute
 					c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 
 				SELECT
@@ -106,7 +176,7 @@ BeforeExecute
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 
 				SELECT
@@ -127,7 +197,7 @@ BeforeExecute
 					Ordinal
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -147,7 +217,7 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 1
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -176,260 +246,276 @@ SELECT
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[AddIssue792Record] '
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[AddIssue792Record] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[DuplicateColumnNames] '
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[DuplicateColumnNames] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[ExecuteProcIntParameters] @input, @output'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[ExecuteProcIntParameters] @input, @output'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[ExecuteProcStringParameters] @input, @output'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[ExecuteProcStringParameters] @input, @output'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
-EXEC('SELECT * FROM [TestDataMSContained].[dbo].[GetParentByID](NULL)')
+EXEC('SELECT * FROM [TestDataMSSA].[dbo].[GetParentByID](NULL)')
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Issue1897] '
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Issue1897] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 
-EXEC('SELECT * FROM [TestDataMSContained].[dbo].[Issue1921]()')
+EXEC('SELECT * FROM [TestDataMSSA].[dbo].[Issue1921]()')
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[OutRefEnumTest] @str, @outputStr, @inputOutputStr'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[OutRefEnumTest] @str, @outputStr, @inputOutputStr'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@str varchar(50), @outputStr varchar(50), @inputOutputStr varchar(50)'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[OutRefTest] @ID, @outputID, @inputOutputID, @str, @outputStr, @inputOutputStr'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[OutRefTest] @ID, @outputID, @inputOutputID, @str, @outputStr, @inputOutputStr'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@ID int, @outputID int, @inputOutputID int, @str varchar(50), @outputStr varchar(50), @inputOutputStr varchar(50)'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Patient_SelectAll] '
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Patient_SelectAll] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Patient_SelectByName] @firstName, @lastName'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Patient_SelectByName] @firstName, @lastName'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_Delete] @PersonID'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_Delete] @PersonID'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@PersonID int'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_Insert] @FirstName, @LastName, @MiddleName, @Gender'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_Insert] @FirstName, @LastName, @MiddleName, @Gender'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName nvarchar(50), @Gender char(1)'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_Insert_OutputParameter] @FirstName, @LastName, @MiddleName, @Gender, @PersonID'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_Insert_OutputParameter] @FirstName, @LastName, @MiddleName, @Gender, @PersonID'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName nvarchar(50), @Gender char(1), @PersonID int'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectAll] '
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectAll] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectByKey] @id'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectByKey] @id'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectByKeyLowercase] @id'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectByKeyLowercase] @id'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectByName] @firstName, @lastName'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectByName] @firstName, @lastName'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectListByName] @firstName, @lastName'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectListByName] @firstName, @lastName'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_Update] @PersonID, @FirstName, @LastName, @MiddleName, @Gender'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_Update] @PersonID, @FirstName, @LastName, @MiddleName, @Gender'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@PersonID int, @FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName nvarchar(50), @Gender char(1)'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[PersonSearch] @nameFilter'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[PersonSearch] @nameFilter'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@nameFilter nvarchar(512)'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
-[TestDataMSContained].[dbo].[PersonSearch]
+[TestDataMSSA].[dbo].[PersonSearch]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[QueryProcParameters] @input, @output1, @output2'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[QueryProcParameters] @input, @output1, @output2'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@input int, @output1 int, @output2 int'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[SelectImplicitColumn] '
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[SelectImplicitColumn] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[TableTypeTestProc] @table'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[TableTypeTestProc] @table'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@table [dbo].[TestTableType]'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
-[TestDataMSContained].[dbo].[TableTypeTestProc]
+[TestDataMSSA].[dbo].[TableTypeTestProc]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[TestSchema].[TestProcedure] '
+SET     @tsql = N'exec [TestDataMSSA].[TestSchema].[TestProcedure] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[dbo].[VariableResults] @ReturnFullRow'
+SET     @tsql = N'exec [TestDataMSSA].[dbo].[VariableResults] @ReturnFullRow'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@ReturnFullRow bit'
 
 sp_describe_first_result_set
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
-[TestDataMSContained].[dbo].[VariableResults]
+[TestDataMSSA].[dbo].[VariableResults]
 
 BeforeExecute
 RollbackTransaction
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+
+IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable3', 'U') IS NOT NULL ALTER TABLE TemporalTable3 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable4', 'U') IS NOT NULL ALTER TABLE TemporalTable4 SET ( SYSTEM_VERSIONING = OFF)
+
+DROP TABLE IF EXISTS TemporalTable1
+DROP TABLE IF EXISTS TemporalTable2
+DROP TABLE IF EXISTS TemporalTable3
+DROP TABLE IF EXISTS TemporalTable4
+DROP TABLE IF EXISTS TemporalTable2History
+DROP TABLE IF EXISTS TemporalTable3History
+
