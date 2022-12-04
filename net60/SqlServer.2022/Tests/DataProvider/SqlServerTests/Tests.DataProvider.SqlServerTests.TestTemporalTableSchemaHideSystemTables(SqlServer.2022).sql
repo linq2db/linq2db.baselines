@@ -1,23 +1,71 @@
 ﻿BeforeExecute
 -- SqlServer.2022
 
-DROP TABLE IF EXISTS [FluentMapping]
+
+IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable3', 'U') IS NOT NULL ALTER TABLE TemporalTable3 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable4', 'U') IS NOT NULL ALTER TABLE TemporalTable4 SET ( SYSTEM_VERSIONING = OFF)
+
+DROP TABLE IF EXISTS TemporalTable1
+DROP TABLE IF EXISTS TemporalTable2
+DROP TABLE IF EXISTS TemporalTable3
+DROP TABLE IF EXISTS TemporalTable4
+DROP TABLE IF EXISTS TemporalTable2History
+DROP TABLE IF EXISTS TemporalTable3History
 
 BeforeExecute
 -- SqlServer.2022
 
-IF (OBJECT_ID(N'[FluentMapping]', N'U') IS NULL)
-	CREATE TABLE [FluentMapping]
-	(
-		[RecordID]       Int       NOT NULL,
-		[EffectiveStart] DateTime2 NOT NULL,
-		[EffectiveEnd]   DateTime2     NULL,
-		[Key]            Int       NOT NULL,
-		[Unordered1]     Int       NOT NULL,
-		[Unordered2]     Int       NOT NULL,
-		[Audit1ID]       Int       NOT NULL,
-		[Audit2ID]       Int       NOT NULL
-	)
+
+-- simple temporal table
+CREATE TABLE TemporalTable1
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON)
+
+-- with explicit history table name
+CREATE TABLE TemporalTable2
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.TemporalTable2History))
+
+
+-- with user-defined history table
+CREATE TABLE TemporalTable3History
+(
+	Id INT NOT NULL,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 NOT NULL,
+	ValidTo DATETIME2 NOT NULL
+)
+
+CREATE TABLE TemporalTable3
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.TemporalTable3History))
+
+-- with hidden period columns
+CREATE TABLE TemporalTable4
+(
+	Id INT NOT NULL PRIMARY KEY CLUSTERED,
+	Name NVARCHAR(10) NULL,
+	ValidFrom DATETIME2 GENERATED ALWAYS AS ROW START HIDDEN NOT NULL,
+	ValidTo DATETIME2 GENERATED ALWAYS AS ROW END HIDDEN NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+) WITH (SYSTEM_VERSIONING = ON)
 
 BeforeExecute
 -- SqlServer.2022
@@ -54,7 +102,7 @@ BeforeExecute
 						x.minor_id = 0 AND
 						x.name = 'MS_Description'
 				WHERE
-					t.object_id IS NULL OR
+					(t.object_id IS NULL OR
 					t.is_ms_shipped <> 1 AND
 					(
 						SELECT
@@ -67,6 +115,7 @@ BeforeExecute
 							class    = 1           AND
 							name     = N'microsoft_database_tools_support'
 					) IS NULL
+					) AND t.temporal_type <> 1
 
 BeforeExecute
 -- SqlServer.2022
@@ -457,5 +506,16 @@ RollbackTransaction
 BeforeExecute
 -- SqlServer.2022
 
-DROP TABLE IF EXISTS [FluentMapping]
+
+IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable3', 'U') IS NOT NULL ALTER TABLE TemporalTable3 SET ( SYSTEM_VERSIONING = OFF)
+IF OBJECT_ID('dbo.TemporalTable4', 'U') IS NOT NULL ALTER TABLE TemporalTable4 SET ( SYSTEM_VERSIONING = OFF)
+
+DROP TABLE IF EXISTS TemporalTable1
+DROP TABLE IF EXISTS TemporalTable2
+DROP TABLE IF EXISTS TemporalTable3
+DROP TABLE IF EXISTS TemporalTable4
+DROP TABLE IF EXISTS TemporalTable2History
+DROP TABLE IF EXISTS TemporalTable3History
 
