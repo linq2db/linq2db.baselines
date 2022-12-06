@@ -21,7 +21,7 @@ ORDER BY
 	[_c].[ChildID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

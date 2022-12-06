@@ -136,7 +136,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
@@ -176,7 +176,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

@@ -222,7 +222,7 @@ FROM
 		INNER JOIN [MainItem2] [mm] ON [i].[Id] / 10 = [mm].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -287,7 +287,7 @@ FROM
 		INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
