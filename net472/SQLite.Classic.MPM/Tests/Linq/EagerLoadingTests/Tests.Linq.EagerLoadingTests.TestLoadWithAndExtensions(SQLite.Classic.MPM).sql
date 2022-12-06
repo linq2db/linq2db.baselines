@@ -1807,7 +1807,7 @@ FROM
 		LEFT JOIN [SubDetailClass] [a_Detail] ON ([detail].[DetailId] = [a_Detail].[DetailId] OR [detail].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

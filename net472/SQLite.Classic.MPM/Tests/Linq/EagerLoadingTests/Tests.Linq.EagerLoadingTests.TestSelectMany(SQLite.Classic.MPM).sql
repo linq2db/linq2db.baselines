@@ -1835,7 +1835,7 @@ FROM
 		INNER JOIN [SubDetailClass] [detail] ON [key_data_result].[DetailId] = [detail].[DetailId]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32

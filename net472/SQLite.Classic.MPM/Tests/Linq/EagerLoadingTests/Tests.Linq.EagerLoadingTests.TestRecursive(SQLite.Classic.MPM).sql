@@ -1860,7 +1860,7 @@ FROM
 		INNER JOIN [DetailClass] [detail] ON [detail].[MasterId] = [key_data_result].[Id1]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @masterFilter  -- Int32
