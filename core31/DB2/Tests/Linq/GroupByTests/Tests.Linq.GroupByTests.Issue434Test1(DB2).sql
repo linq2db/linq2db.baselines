@@ -16,7 +16,7 @@ WHERE
 	Lower("p"."FirstName") LIKE @input_2 ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @input_2 VarChar(6) -- String

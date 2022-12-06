@@ -14,7 +14,7 @@ ORDER BY
 	[c_1].[ParentID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @take Int -- Int32

@@ -1841,7 +1841,7 @@ FROM
 		INNER JOIN [MasterClass] [_gjd_mm] ON [_gjd_mm].[Id1] = [key_data_result].[Id1]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32

@@ -193,7 +193,7 @@ FROM
 		)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 

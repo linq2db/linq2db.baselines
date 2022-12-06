@@ -19,7 +19,7 @@ ORDER BY
 	`_c`.`ChildID`
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 DECLARE @take Int32

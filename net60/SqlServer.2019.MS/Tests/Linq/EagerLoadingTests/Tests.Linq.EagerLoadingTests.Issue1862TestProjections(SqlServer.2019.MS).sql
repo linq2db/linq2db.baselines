@@ -210,7 +210,7 @@ ORDER BY
 	[detail].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @blogId Int -- Int32

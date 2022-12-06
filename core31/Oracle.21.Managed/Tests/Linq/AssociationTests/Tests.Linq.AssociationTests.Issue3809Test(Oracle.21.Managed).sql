@@ -31,7 +31,7 @@ ORDER BY
 	detail."ChildID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 

@@ -42,4 +42,4 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

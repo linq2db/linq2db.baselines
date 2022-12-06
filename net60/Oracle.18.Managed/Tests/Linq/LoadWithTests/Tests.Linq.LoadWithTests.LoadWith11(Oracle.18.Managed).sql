@@ -38,7 +38,7 @@ FROM
 		INNER JOIN "GrandChild" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 

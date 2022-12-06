@@ -26,7 +26,7 @@ ORDER BY
 	[_c].[ChildID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 

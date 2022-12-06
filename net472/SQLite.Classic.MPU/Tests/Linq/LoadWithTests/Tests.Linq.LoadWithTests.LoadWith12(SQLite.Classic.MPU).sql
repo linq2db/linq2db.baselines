@@ -89,4 +89,4 @@ WHERE
 LIMIT @take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

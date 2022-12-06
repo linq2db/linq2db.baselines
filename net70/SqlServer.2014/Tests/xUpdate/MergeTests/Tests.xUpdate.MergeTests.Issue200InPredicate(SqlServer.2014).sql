@@ -52,4 +52,4 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

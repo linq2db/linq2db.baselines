@@ -40,7 +40,7 @@ SET     @:p2 = System.Object[]
 INSERT INTO "Issue2342Entity" ("Id", "Name") VALUES (:p1, :p2)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 

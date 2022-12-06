@@ -10,7 +10,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 

@@ -30,7 +30,7 @@ ORDER BY
 	"_c"."ChildID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32

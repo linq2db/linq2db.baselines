@@ -21,7 +21,7 @@ FROM
 		INNER JOIN "Child" ch ON ch."ParentID" = key_data_result."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 

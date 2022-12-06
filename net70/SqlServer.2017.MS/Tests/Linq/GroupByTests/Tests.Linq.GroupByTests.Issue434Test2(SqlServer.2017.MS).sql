@@ -14,7 +14,7 @@ WHERE
 	Lower([p].[FirstName]) LIKE N'%test%' ESCAPE N'~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 

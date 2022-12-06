@@ -27,7 +27,7 @@ ORDER BY
 	c_1.ParentID
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

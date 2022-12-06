@@ -99,7 +99,7 @@ WHERE
 LIMIT :take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 

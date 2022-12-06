@@ -63,7 +63,7 @@ FROM
 	[TableStatus_3014] [x]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -83,7 +83,7 @@ FROM
 	[TableStatus_3014] [x]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -105,7 +105,7 @@ FROM
 	[TableStatus_3014] [x]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
@@ -127,7 +127,7 @@ FROM
 	[TableStatus_3014] [x]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

@@ -51,4 +51,4 @@ WHERE
 	p.ID = :id AND ROWNUM <= :take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

@@ -30,7 +30,7 @@ ORDER BY
 	[c_1].[ParentID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

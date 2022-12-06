@@ -16,7 +16,7 @@ WHERE
 	Lower(p."FirstName") LIKE :input_2 ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @input_2 Varchar2(6) -- String

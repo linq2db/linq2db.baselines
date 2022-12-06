@@ -29,7 +29,7 @@ FROM
 			) [_c1] ON [_c1].[ParentID] = [key_data_result].[ParentID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

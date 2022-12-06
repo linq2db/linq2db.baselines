@@ -37,7 +37,7 @@ ORDER BY
 	`_c`.`ChildID`
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MariaDB MySql.Official MySql
 

@@ -224,7 +224,7 @@ FROM
 		INNER JOIN [SubItem2] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 

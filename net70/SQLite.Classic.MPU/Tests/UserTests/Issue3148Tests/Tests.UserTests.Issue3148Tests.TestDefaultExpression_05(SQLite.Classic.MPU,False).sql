@@ -19,7 +19,7 @@ FROM
 		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -50,7 +50,7 @@ FROM
 		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

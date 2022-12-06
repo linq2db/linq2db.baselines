@@ -67,7 +67,7 @@ FROM
 		INNER JOIN [EmailAttachments] [detail] ON [key_data_result].[Id] = [detail].[EmailId]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @DateTime  -- DateTime

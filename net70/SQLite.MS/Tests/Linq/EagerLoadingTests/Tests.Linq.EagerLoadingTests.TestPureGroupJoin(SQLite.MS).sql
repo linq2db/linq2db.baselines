@@ -119,7 +119,7 @@ FROM
 		INNER JOIN [DetailClass] [_gjd_d] ON [_gjd_d].[MasterId] = [key_data_result].[Id1]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32

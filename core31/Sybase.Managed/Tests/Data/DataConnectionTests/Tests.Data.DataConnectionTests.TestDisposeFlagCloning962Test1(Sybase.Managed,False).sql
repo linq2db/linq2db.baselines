@@ -84,7 +84,7 @@ FROM
 		INNER JOIN [Products] [detail] ON [lw_Category].[CategoryID] = [detail].[CategoryID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 

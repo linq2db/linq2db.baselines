@@ -29,7 +29,7 @@ WHERE
 	"Parent"."ParentID" = 1010
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32

@@ -123,7 +123,7 @@ FROM
 		INNER JOIN [MasterClass] [_mm] ON [key_data_result].[Id1] = [key_data_result].[MasterId]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32

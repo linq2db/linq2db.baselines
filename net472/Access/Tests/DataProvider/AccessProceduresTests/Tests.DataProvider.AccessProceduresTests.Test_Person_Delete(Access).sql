@@ -50,4 +50,4 @@ WHERE
 	[_].[PersonID] = @id
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

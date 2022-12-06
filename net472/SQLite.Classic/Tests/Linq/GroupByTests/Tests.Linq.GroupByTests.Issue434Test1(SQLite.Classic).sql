@@ -16,7 +16,7 @@ WHERE
 	Lower([p].[FirstName]) LIKE @input_2 ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @input_2 NVarChar(6) -- String

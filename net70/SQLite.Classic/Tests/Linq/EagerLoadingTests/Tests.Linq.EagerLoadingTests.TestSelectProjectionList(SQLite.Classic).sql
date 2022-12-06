@@ -131,7 +131,7 @@ FROM
 		INNER JOIN [DetailClass] [_d] ON [_d].[MasterId] = [key_data_result].[Id1] AND [_d].[MasterId] % 2 = 0
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @intParam  -- Int32

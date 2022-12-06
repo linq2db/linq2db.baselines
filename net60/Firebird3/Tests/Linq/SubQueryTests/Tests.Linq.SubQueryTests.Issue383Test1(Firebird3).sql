@@ -323,7 +323,7 @@ FROM
 		INNER JOIN "Cities" "detail" ON ("detail"."City_Code" = "key_data_result"."City_Code" OR "detail"."City_Code" IS NULL AND "key_data_result"."City_Code" IS NULL)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

@@ -16,7 +16,7 @@ WHERE
 	Lower("p"."FirstName") LIKE ? ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @input_2 NVarChar(6) -- String

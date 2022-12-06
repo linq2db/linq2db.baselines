@@ -71,7 +71,7 @@ FROM
 		INNER JOIN "Test3664Item" a ON "lw_Test3664"."Id" = a."TestId" AND a."Id" = :id
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
@@ -96,7 +96,7 @@ FROM
 		INNER JOIN "Test3664Item" a ON "lw_Test3664"."Id" = a."TestId" AND a."Id" = :id
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 

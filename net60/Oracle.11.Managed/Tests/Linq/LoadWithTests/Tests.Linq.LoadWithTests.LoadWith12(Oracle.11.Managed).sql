@@ -86,4 +86,4 @@ WHERE
 	p."ParentID" < 2 AND ROWNUM <= :take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

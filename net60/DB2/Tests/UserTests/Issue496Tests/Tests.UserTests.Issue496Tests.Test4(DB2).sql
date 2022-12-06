@@ -17,7 +17,7 @@ FROM
 		INNER JOIN "Child" "detail" ON BigInt("key_data_result"."ParentID") = "detail"."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

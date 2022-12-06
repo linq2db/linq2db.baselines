@@ -16,7 +16,7 @@ WHERE
 	Lower(p."FirstName") LIKE :input_2 ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @input_2 Text(6) -- String

@@ -28,7 +28,7 @@ ORDER BY
 	"c_1"."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

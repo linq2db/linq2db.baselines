@@ -99,7 +99,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MariaDB MySql.Official MySql
 

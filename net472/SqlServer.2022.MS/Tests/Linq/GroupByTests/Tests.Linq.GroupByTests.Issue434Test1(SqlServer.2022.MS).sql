@@ -16,7 +16,7 @@ WHERE
 	Lower([p].[FirstName]) LIKE @input_2 ESCAPE N'~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @input_2 NVarChar(4000) -- String

@@ -29,7 +29,7 @@ ORDER BY
 	"c_1"."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

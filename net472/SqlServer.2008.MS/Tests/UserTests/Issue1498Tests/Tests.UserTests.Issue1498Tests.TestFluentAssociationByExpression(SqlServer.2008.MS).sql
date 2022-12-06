@@ -101,7 +101,7 @@ WHERE
 	[x].[Id] = 6
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 

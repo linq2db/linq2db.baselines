@@ -25,7 +25,7 @@ FROM
 		INNER JOIN "Child" "_c" ON "_c"."ParentID" = "key_data_result"."ParentID" AND "_c"."ChildID" > -100
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

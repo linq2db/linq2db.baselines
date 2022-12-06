@@ -31,7 +31,7 @@ WHERE
 	[t1].[ParentID] = 1010
 
 BeforeExecute
-RollbackTransactionAsync
+DisposeTransactionAsync
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 

@@ -21,7 +21,7 @@ ORDER BY
 	`detail`.`ChildID`
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySqlConnector MySql
 

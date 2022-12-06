@@ -165,7 +165,7 @@ FROM
 		INNER JOIN "Products" detail ON lw_Category."CategoryID" = detail."CategoryID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 

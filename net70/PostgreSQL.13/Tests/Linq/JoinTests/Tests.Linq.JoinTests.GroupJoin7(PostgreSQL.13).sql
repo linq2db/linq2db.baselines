@@ -21,7 +21,7 @@ FROM
 		INNER JOIN "Child" gjd_c ON gjd_c."ParentID" - :n = key_data_result."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 

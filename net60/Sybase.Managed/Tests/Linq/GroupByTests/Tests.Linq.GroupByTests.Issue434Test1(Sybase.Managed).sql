@@ -16,7 +16,7 @@ WHERE
 	Lower([p].[FirstName]) LIKE @input_2 ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @input_2 UniVarChar(6) -- String

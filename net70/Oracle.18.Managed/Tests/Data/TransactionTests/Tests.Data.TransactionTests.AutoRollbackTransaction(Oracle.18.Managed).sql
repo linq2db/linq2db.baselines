@@ -29,7 +29,7 @@ WHERE
 	"Parent"."ParentID" = 1010
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @take Int32

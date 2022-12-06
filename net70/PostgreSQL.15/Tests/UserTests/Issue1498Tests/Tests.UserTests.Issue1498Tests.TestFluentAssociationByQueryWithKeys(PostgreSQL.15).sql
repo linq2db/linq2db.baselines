@@ -141,7 +141,7 @@ WHERE
 LIMIT :take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 

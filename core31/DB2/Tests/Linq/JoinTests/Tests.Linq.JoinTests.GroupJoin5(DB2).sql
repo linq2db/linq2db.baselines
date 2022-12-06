@@ -23,7 +23,7 @@ ORDER BY
 	"_ch"."ChildID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

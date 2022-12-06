@@ -29,7 +29,7 @@ WHERE
 	`t1`.`ParentID` = 1010
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MariaDB MySql.Official MySql
 DECLARE @take Int32

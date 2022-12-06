@@ -90,4 +90,4 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

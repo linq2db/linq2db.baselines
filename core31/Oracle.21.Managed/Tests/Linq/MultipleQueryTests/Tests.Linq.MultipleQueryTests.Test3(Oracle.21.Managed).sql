@@ -10,7 +10,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 

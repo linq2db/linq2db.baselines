@@ -26,7 +26,7 @@ FROM
 		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "key_data_result"."ParentID" AND "c_1"."ChildID" > -100
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32

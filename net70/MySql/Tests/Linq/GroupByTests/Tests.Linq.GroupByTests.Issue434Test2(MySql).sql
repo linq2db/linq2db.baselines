@@ -14,7 +14,7 @@ WHERE
 	LOCATE('test', Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 

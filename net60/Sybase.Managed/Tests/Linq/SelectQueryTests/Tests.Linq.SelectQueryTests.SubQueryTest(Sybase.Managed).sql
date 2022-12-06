@@ -56,7 +56,7 @@ FROM
 	) [t2]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 

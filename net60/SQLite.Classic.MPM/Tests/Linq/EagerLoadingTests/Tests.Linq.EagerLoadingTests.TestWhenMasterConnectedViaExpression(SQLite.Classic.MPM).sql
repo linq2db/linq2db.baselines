@@ -172,7 +172,7 @@ FROM
 		INNER JOIN [DetailClass] [_d] ON [_d].[MasterId] > [key_data_result].[Id1]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 

@@ -10,7 +10,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 

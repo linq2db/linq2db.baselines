@@ -41,4 +41,4 @@ FROM
 LIMIT ?
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

@@ -44,4 +44,4 @@ WHERE
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

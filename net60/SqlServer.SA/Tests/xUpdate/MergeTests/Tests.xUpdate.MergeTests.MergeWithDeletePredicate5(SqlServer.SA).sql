@@ -61,4 +61,4 @@ WHEN NOT MATCHED BY SOURCE AND EXISTS(
 ;
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

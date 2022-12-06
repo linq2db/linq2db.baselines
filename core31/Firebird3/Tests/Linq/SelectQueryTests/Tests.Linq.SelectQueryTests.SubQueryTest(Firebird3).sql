@@ -63,7 +63,7 @@ FROM
 	) "t2"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

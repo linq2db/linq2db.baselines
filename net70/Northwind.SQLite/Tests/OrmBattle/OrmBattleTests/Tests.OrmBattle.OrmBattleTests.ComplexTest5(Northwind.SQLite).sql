@@ -105,7 +105,7 @@ FROM
 		INNER JOIN [Orders] [detail] ON ([i].[CustomerID] = [detail].[CustomerID] OR [i].[CustomerID] IS NULL AND [detail].[CustomerID] IS NULL)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 

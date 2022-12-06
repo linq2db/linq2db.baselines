@@ -1877,7 +1877,7 @@ ORDER BY
 	[_mm].[Value]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32

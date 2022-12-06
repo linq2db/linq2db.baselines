@@ -19,7 +19,7 @@ FROM
 		INNER JOIN `Child` `_c` ON `key_data_result`.`ParentID` = `_c`.`ParentID` AND `_c`.`ParentID` > 0
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 

@@ -31,7 +31,7 @@ WHERE
 	[t1].[ParentID] = 1010
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32

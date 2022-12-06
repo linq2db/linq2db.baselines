@@ -37,7 +37,7 @@ ORDER BY
 	c_1."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 

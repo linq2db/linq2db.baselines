@@ -19,7 +19,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -52,7 +52,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -85,7 +85,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -118,7 +118,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -151,7 +151,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -184,7 +184,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -217,7 +217,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -250,7 +250,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -283,7 +283,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -316,7 +316,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -349,7 +349,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -382,7 +382,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -415,7 +415,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -448,7 +448,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -481,7 +481,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -514,7 +514,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -547,7 +547,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -580,7 +580,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -613,7 +613,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -646,7 +646,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -679,7 +679,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -712,7 +712,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -745,7 +745,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -778,7 +778,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -811,7 +811,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -844,7 +844,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -877,7 +877,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -910,7 +910,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -943,7 +943,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -976,7 +976,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1009,7 +1009,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1042,7 +1042,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1075,7 +1075,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1108,7 +1108,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1141,7 +1141,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1174,7 +1174,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1207,7 +1207,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1240,7 +1240,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1273,7 +1273,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1306,7 +1306,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1339,7 +1339,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1372,7 +1372,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1405,7 +1405,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1438,7 +1438,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1471,7 +1471,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1504,7 +1504,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1537,7 +1537,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1570,7 +1570,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1603,7 +1603,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1636,7 +1636,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1669,7 +1669,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1702,7 +1702,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1735,7 +1735,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1768,7 +1768,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1801,7 +1801,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1834,7 +1834,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1867,7 +1867,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1900,7 +1900,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1933,7 +1933,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1966,7 +1966,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -1999,7 +1999,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2032,7 +2032,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2065,7 +2065,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2098,7 +2098,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2131,7 +2131,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2164,7 +2164,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2197,7 +2197,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2230,7 +2230,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2263,7 +2263,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2296,7 +2296,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2329,7 +2329,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2362,7 +2362,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2395,7 +2395,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2428,7 +2428,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2461,7 +2461,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2494,7 +2494,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2527,7 +2527,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2560,7 +2560,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2593,7 +2593,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2626,7 +2626,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2659,7 +2659,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2692,7 +2692,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2725,7 +2725,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2758,7 +2758,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2791,7 +2791,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2824,7 +2824,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2857,7 +2857,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2890,7 +2890,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2923,7 +2923,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2956,7 +2956,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -2989,7 +2989,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -3022,7 +3022,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -3055,7 +3055,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -3088,7 +3088,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -3121,7 +3121,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -3154,7 +3154,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -3187,7 +3187,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -3220,7 +3220,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -3253,7 +3253,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
@@ -3286,7 +3286,7 @@ FROM
 		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 

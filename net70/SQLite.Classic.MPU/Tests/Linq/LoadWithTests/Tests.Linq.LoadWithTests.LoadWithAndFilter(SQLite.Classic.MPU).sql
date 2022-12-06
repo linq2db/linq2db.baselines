@@ -283,7 +283,7 @@ FROM
 		INNER JOIN [SubItem2] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -384,7 +384,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [e].[ParentId] = [a_Parent].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -485,7 +485,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [detail].[ParentId] = [a_Parent].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

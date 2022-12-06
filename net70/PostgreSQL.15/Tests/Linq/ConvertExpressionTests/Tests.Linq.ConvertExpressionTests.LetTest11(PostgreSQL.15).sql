@@ -14,7 +14,7 @@ ORDER BY
 	c_1."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32

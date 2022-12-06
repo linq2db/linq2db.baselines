@@ -30,7 +30,7 @@ ORDER BY
 	[_c].[ChildID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32

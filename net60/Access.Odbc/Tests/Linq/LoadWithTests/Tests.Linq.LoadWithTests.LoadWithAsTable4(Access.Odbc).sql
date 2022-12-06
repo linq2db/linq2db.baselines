@@ -34,4 +34,4 @@ FROM
 	[Parent] [t]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

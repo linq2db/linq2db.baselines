@@ -29,7 +29,7 @@ WHERE
 	"Parent"."ParentID" = 1010
 
 BeforeExecute
-RollbackTransactionAsync
+DisposeTransactionAsync
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 

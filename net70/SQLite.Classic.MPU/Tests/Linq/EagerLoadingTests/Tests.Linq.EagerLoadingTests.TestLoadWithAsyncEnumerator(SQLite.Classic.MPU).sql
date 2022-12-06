@@ -147,7 +147,7 @@ WHERE
 	[m_1].[Id1] >= @intParam
 
 BeforeExecute
-RollbackTransactionAsync
+DisposeTransactionAsync
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

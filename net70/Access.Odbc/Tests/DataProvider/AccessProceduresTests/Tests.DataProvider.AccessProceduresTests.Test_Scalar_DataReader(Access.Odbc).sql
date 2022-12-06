@@ -6,4 +6,4 @@ BeforeExecute
 { CALL Scalar_DataReader() }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

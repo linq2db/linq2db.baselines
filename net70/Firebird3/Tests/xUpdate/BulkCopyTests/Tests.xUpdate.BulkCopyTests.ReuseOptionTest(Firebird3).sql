@@ -21,4 +21,4 @@ INSERT INTO "Child"
 SELECT 111001,0 FROM rdb$database
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

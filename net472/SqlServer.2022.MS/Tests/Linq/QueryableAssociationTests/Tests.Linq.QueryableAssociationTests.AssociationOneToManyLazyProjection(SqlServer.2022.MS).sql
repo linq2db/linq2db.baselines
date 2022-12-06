@@ -150,7 +150,7 @@ FROM
 		CROSS APPLY dbo.fn_SomeFunction([key_data_result].[Id]) [detail]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @take Int -- Int32

@@ -110,7 +110,7 @@ WHERE
 	[p].[EventId] = @eventId AND [p].[IsActive] = 1
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @eventId Int -- Int32

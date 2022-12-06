@@ -90,7 +90,7 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
@@ -121,7 +121,7 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_1 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
@@ -152,7 +152,7 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_1 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
@@ -269,7 +269,7 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
@@ -300,7 +300,7 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_1 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
@@ -331,7 +331,7 @@ FROM
 		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = @Usage_1 AND "_v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

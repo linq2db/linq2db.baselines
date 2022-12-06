@@ -14,7 +14,7 @@ WHERE
 	Lower(p."FirstName") LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 

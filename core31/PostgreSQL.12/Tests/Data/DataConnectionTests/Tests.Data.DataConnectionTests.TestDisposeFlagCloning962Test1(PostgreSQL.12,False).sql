@@ -78,7 +78,7 @@ FROM
 		INNER JOIN "Products" detail ON "lw_Category"."CategoryID" = detail."CategoryID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 

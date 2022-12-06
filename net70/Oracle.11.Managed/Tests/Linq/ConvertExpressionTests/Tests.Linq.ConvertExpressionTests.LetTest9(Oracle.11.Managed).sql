@@ -31,7 +31,7 @@ ORDER BY
 	c_1."ChildID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @take Int32

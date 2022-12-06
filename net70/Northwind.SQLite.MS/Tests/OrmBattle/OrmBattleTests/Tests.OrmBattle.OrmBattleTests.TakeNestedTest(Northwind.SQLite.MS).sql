@@ -107,7 +107,7 @@ ORDER BY
 	[detail].[OrderDate] DESC
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 

@@ -21,7 +21,7 @@ ORDER BY
 	`_c`.`ChildID`
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @take Int32

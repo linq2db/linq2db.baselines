@@ -295,7 +295,7 @@ BeforeExecute
 { CALL "TESTDB"."AddIssue792Record" () }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -310,7 +310,7 @@ SET     @SCHEMANAME = ''
 { CALL "TESTDB"."DROPCONSTRAINTFROMTABLE" (?,?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -323,7 +323,7 @@ SET     @SCHEMANAME = ''
 { CALL "TESTDB"."DROPEXISTINGFUNCTION" (?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -336,7 +336,7 @@ SET     @SCHEMANAME = ''
 { CALL "TESTDB"."DROPEXISTINGPROCEDURE" (?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -349,7 +349,7 @@ SET     @SCHEMANAME = ''
 { CALL "TESTDB"."DROPEXISTINGTABLE" (?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -362,7 +362,7 @@ SET     @SCHEMANAME = ''
 { CALL "TESTDB"."DROPEXISTINGVIEW" (?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -371,7 +371,7 @@ BeforeExecute
 { CALL "TESTDB"."DuplicateColumnNames" () }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -386,7 +386,7 @@ SET     @INPUTOUTPUTSTR = ''
 { CALL "TESTDB"."OutRefEnumTest" (?,?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -407,7 +407,7 @@ SET     @INPUTOUTPUTSTR = ''
 { CALL "TESTDB"."OutRefTest" (?,?,?,?,?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -416,7 +416,7 @@ BeforeExecute
 { CALL "TESTDB"."Patient_SelectAll" () }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -429,7 +429,7 @@ SET     @LASTNAME = ''
 { CALL "TESTDB"."Patient_SelectByName" (?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -440,7 +440,7 @@ SET     @PERSONID = 0
 { CALL "TESTDB"."Person_Delete" (?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -457,7 +457,7 @@ SET     @GENDER = char(0)
 { CALL "TESTDB"."Person_Insert" (?,?,?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -476,7 +476,7 @@ SET     @PERSONID = 0
 { CALL "TESTDB"."Person_Insert_OutputParameter" (?,?,?,?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -485,7 +485,7 @@ BeforeExecute
 { CALL "TESTDB"."Person_SelectAll" () }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -496,7 +496,7 @@ SET     @ID = 0
 { CALL "TESTDB"."Person_SelectByKey" (?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -509,7 +509,7 @@ SET     @LASTNAME = ''
 { CALL "TESTDB"."Person_SelectByName" (?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -522,7 +522,7 @@ SET     @LASTNAME = ''
 { CALL "TESTDB"."Person_SelectListByName" (?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -541,7 +541,7 @@ SET     @GENDER = char(0)
 { CALL "TESTDB"."Person_Update" (?,?,?,?,?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -550,7 +550,7 @@ BeforeExecute
 { CALL "TESTDB"."SelectImplicitColumn" () }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -561,7 +561,7 @@ SET     @I = 0
 { CALL "TESTDB"."TEST_PROCEDURE" (?) }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -570,7 +570,7 @@ BeforeExecute
 { CALL "TESTDB"."prd.global.ecc/CV_MARAproc" () }
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -579,7 +579,7 @@ BeforeExecute
 SELECT * FROM "TESTDB"."GetParentByID"(0)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
@@ -588,7 +588,7 @@ BeforeExecute
 SELECT * FROM "TESTDB"."TEST_TABLE_FUNCTION"(0)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 

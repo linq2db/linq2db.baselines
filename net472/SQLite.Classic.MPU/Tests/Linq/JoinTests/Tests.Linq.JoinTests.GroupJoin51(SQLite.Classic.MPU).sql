@@ -43,7 +43,7 @@ ORDER BY
 	[_ch].[ChildID] DESC
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

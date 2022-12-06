@@ -23,7 +23,7 @@ ORDER BY
 	ch.ChildID
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

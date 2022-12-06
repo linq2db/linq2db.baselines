@@ -52,4 +52,4 @@ ORDER BY
 	"t1"."PersonID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

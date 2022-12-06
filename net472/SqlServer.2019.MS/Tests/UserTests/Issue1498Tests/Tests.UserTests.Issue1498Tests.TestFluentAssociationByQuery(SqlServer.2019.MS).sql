@@ -143,7 +143,7 @@ WHERE
 	[x].[Id] = 6
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 

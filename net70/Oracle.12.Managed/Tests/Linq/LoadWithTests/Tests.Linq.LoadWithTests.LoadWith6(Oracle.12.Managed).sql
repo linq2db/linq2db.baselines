@@ -21,7 +21,7 @@ FROM
 		LEFT JOIN "Parent" a_Parent ON a_Child."ParentID" = a_Parent."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 

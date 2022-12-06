@@ -47,4 +47,4 @@ WHEN MATCHED AND ([Source].[Diagnosis] <> N'sick' OR [Source].[Diagnosis] IS NUL
 ;
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

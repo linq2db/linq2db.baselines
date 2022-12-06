@@ -24,4 +24,4 @@ VALUES
 ('Psychiatry',9,'test',NULL,'M')
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
