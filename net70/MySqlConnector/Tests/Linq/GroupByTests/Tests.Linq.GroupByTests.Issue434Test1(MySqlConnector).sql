@@ -16,7 +16,7 @@ WHERE
 	LOCATE(@input_2, Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySqlConnector MySql
 DECLARE @input_2 VarChar(4) -- String

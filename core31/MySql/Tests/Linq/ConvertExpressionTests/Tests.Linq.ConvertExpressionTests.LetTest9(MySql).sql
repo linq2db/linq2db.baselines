@@ -30,7 +30,7 @@ ORDER BY
 	`_c`.`ChildID`
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @take Int32

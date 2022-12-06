@@ -143,7 +143,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySqlConnector MySql
 

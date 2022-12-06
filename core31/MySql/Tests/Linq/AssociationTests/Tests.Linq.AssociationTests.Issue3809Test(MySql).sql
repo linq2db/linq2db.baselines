@@ -31,7 +31,7 @@ ORDER BY
 	`detail`.`ChildID`
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 

@@ -99,7 +99,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql MySql.Official MySql
 

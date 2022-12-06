@@ -17,4 +17,4 @@ BeforeExecute
 INSERT ASYNC BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
