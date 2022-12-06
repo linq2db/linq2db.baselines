@@ -95,7 +95,7 @@ FROM
 		INNER JOIN Test3664Item a ON lw_Test3664.Id = a.TestId AND a.Id = @id
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 
@@ -120,7 +120,7 @@ FROM
 		INNER JOIN Test3664Item a ON lw_Test3664.Id = a.TestId AND a.Id = @id
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 

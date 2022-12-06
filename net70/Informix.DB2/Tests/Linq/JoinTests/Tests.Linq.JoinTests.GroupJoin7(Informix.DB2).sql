@@ -21,7 +21,7 @@ FROM
 		INNER JOIN Child gjd_c ON gjd_c.ParentID - @n = key_data_result.ParentID
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Informix.DB2 Informix
 
