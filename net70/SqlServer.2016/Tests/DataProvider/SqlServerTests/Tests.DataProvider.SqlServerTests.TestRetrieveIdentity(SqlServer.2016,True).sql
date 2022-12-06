@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2016
 
