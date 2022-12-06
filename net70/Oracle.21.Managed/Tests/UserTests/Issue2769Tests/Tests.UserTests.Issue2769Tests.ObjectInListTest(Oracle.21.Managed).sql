@@ -30,6 +30,8 @@ END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @default_1 Int32
+SET     @default_1 = 0
 
 SELECT
 	a."Id",
@@ -37,7 +39,7 @@ SELECT
 FROM
 	"SampleClass" a
 WHERE
-	(a."Id" = 0 AND Nvl(a."NullValue", 0) = 0 OR a."Id" = 1 AND Nvl(a."NullValue", 0) = 1 OR a."Id" = 2 AND Nvl(a."NullValue", 0) = 2)
+	(a."Id" = 0 AND Nvl(a."NullValue", :default_1) = 0 OR a."Id" = 1 AND Nvl(a."NullValue", :default_1) = 1 OR a."Id" = 2 AND Nvl(a."NullValue", :default_1) = 2)
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
