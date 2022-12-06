@@ -141,4 +141,4 @@ BeforeExecute
 DROP TABLE IF EXISTS mega_composites
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

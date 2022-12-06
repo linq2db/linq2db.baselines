@@ -40,4 +40,4 @@ FROM
 LIMIT :take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

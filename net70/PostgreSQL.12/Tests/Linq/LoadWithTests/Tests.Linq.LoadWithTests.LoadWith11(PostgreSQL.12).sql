@@ -38,7 +38,7 @@ FROM
 		INNER JOIN "GrandChild" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
