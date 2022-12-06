@@ -214,7 +214,7 @@ ORDER BY
 	[detail].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @blogId Int -- Int32

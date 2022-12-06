@@ -7,4 +7,4 @@ BeforeExecute
 INSERT BULK [Child](ParentID, ChildID)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

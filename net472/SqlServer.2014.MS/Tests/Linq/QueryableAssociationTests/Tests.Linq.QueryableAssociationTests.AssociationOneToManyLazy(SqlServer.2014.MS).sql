@@ -136,7 +136,7 @@ FROM
 		CROSS APPLY dbo.fn_SomeFunction([lw_SomeEntity].[Id]) [detail]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @take Int -- Int32
