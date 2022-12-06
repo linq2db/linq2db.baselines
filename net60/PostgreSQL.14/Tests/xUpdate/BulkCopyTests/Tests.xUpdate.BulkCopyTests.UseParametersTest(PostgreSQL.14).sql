@@ -790,4 +790,4 @@ WHERE
 	r."ParentID" >= :ParentID AND r."ParentID" <= :ParentID_1
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

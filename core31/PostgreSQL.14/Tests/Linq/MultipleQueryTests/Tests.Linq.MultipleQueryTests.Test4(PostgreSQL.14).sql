@@ -18,7 +18,7 @@ FROM
 		INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
