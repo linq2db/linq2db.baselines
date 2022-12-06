@@ -19,4 +19,4 @@ BeforeExecute
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
