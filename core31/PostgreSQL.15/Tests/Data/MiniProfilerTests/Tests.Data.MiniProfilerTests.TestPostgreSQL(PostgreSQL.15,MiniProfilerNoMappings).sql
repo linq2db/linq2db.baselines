@@ -2132,7 +2132,7 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 --  PostgreSQL.15 PostgreSQL (asynchronously)
 
@@ -4246,7 +4246,7 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 

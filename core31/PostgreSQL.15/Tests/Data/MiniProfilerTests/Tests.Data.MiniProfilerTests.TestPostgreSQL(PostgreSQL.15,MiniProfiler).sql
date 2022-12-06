@@ -44,7 +44,7 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 INSERT ASYNC BULK "AllTypes"(ID, bigintDataType, numericDataType, smallintDataType, intDataType, moneyDataType, doubleDataType, realDataType, timestampDataType, timestampTZDataType, dateDataType, timeDataType, timeTZDataType, intervalDataType, intervalDataType2, charDataType, char20DataType, varcharDataType, textDataType, binaryDataType, uuidDataType, bitDataType, booleanDataType, colorDataType, xmlDataType, varBitDataType, pointDataType, lsegDataType, boxDataType, pathDataType, polygonDataType, circleDataType, lineDataType, inetDataType, cidrDataType, macaddrDataType, macaddr8DataType, jsonDataType, jsonbDataType)
 
@@ -70,7 +70,7 @@ WHERE
 	t1."ID" >= 2000
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 
