@@ -29,7 +29,7 @@ WHERE
 	"Parent"."ParentID" = 1010
 
 BeforeExecute
-RollbackTransactionAsync
+DisposeTransactionAsync
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @take Integer -- Int32

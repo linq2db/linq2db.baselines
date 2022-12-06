@@ -19,7 +19,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -52,7 +52,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -85,7 +85,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -118,7 +118,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -151,7 +151,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -184,7 +184,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -217,7 +217,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -250,7 +250,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -283,7 +283,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -316,7 +316,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -349,7 +349,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -382,7 +382,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -415,7 +415,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -448,7 +448,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -481,7 +481,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -514,7 +514,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -547,7 +547,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -580,7 +580,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -613,7 +613,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -646,7 +646,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -679,7 +679,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -712,7 +712,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -745,7 +745,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -778,7 +778,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -811,7 +811,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -844,7 +844,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -877,7 +877,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -910,7 +910,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -943,7 +943,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -976,7 +976,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1009,7 +1009,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1042,7 +1042,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1075,7 +1075,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1108,7 +1108,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1141,7 +1141,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1174,7 +1174,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1207,7 +1207,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1240,7 +1240,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1273,7 +1273,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1306,7 +1306,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1339,7 +1339,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1372,7 +1372,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1405,7 +1405,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1438,7 +1438,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1471,7 +1471,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1504,7 +1504,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1537,7 +1537,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1570,7 +1570,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1603,7 +1603,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1636,7 +1636,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1669,7 +1669,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1702,7 +1702,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1735,7 +1735,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1768,7 +1768,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1801,7 +1801,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1834,7 +1834,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1867,7 +1867,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1900,7 +1900,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1933,7 +1933,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1966,7 +1966,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -1999,7 +1999,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2032,7 +2032,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2065,7 +2065,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2098,7 +2098,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2131,7 +2131,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2164,7 +2164,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2197,7 +2197,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2230,7 +2230,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2263,7 +2263,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2296,7 +2296,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2329,7 +2329,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2362,7 +2362,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2395,7 +2395,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2428,7 +2428,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2461,7 +2461,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2494,7 +2494,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2527,7 +2527,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2560,7 +2560,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2593,7 +2593,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2626,7 +2626,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2659,7 +2659,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2692,7 +2692,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2725,7 +2725,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2758,7 +2758,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2791,7 +2791,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2824,7 +2824,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2857,7 +2857,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2890,7 +2890,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2923,7 +2923,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2956,7 +2956,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -2989,7 +2989,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -3022,7 +3022,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -3055,7 +3055,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -3088,7 +3088,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -3121,7 +3121,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -3154,7 +3154,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -3187,7 +3187,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -3220,7 +3220,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -3253,7 +3253,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
@@ -3286,7 +3286,7 @@ FROM
 		INNER JOIN "Child" detail ON "lw_Parent"."ParentID" = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 

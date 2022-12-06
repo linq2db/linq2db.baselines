@@ -22,7 +22,7 @@ FROM
 		INNER JOIN "Parent" detail ON detail."ParentID" = key_data_result."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
