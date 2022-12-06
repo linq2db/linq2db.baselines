@@ -147,4 +147,4 @@ ORDER BY
 	[t1].[GrandChildID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
