@@ -9,4 +9,4 @@ FROM
 	ALLTYPES "t1"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

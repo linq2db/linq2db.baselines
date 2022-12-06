@@ -14,7 +14,7 @@ WHERE
 	Lower("p"."FirstName") LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

@@ -21,7 +21,7 @@ FROM
 		INNER JOIN "Child" "_gjd_c" ON "_gjd_c"."ParentID" - @n = "key_data_result"."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 

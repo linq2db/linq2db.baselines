@@ -36,4 +36,4 @@ FROM
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
