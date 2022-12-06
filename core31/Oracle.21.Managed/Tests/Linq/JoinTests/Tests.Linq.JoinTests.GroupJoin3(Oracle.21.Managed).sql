@@ -21,7 +21,7 @@ FROM
 		INNER JOIN "Child" gjd_ch ON gjd_ch."ParentID" = key_data_result."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 

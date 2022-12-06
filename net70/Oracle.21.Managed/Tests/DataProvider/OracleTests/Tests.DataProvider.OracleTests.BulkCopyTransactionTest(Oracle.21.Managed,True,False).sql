@@ -33,7 +33,7 @@ BeforeExecute
 INSERT BULK BULKCOPYTABLE(ID)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
