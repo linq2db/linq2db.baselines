@@ -19,7 +19,7 @@ FROM
 		INNER JOIN "Child" "c_1" ON "key_data_result"."ParentID" = "c_1"."ParentID" AND "c_1"."ParentID" > 0
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

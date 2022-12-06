@@ -88,7 +88,7 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 
@@ -119,7 +119,7 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_1 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 
@@ -150,7 +150,7 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_1 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 
@@ -265,7 +265,7 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 
@@ -296,7 +296,7 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_1 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 
@@ -327,7 +327,7 @@ FROM
 		INNER JOIN "Table404Two" "v" ON "v"."Usage" = @Usage_1 AND "v"."FirstTableId" = "key_data_result"."Id"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 

@@ -11,7 +11,7 @@ FROM
 	"Child" "l"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird3 Firebird
 
