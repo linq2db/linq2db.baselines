@@ -13,7 +13,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql55 MySql.Official MySql
 

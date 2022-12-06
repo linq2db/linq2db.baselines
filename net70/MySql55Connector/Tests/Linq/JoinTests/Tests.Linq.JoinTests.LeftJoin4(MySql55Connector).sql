@@ -21,7 +21,7 @@ FROM
 		INNER JOIN `Child` `_y1` ON `_y1`.`ParentID` = `key_data_result`.`ParentID` AND `_y1`.`ParentID` = `key_data_result`.`Value1`
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 

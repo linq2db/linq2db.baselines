@@ -78,7 +78,7 @@ FROM
 		INNER JOIN `Products` `detail` ON `lw_Category`.`CategoryID` = `detail`.`CategoryID`
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql55 MySql.Official MySql
 

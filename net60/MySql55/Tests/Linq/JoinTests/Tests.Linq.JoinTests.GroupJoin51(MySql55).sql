@@ -43,7 +43,7 @@ ORDER BY
 	`_ch`.`ChildID` DESC
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
