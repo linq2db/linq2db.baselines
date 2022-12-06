@@ -14,7 +14,7 @@ ORDER BY
 	c_1."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @take Int32

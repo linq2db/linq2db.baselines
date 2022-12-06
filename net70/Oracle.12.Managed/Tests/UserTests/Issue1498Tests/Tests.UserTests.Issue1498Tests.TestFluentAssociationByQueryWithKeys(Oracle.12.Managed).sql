@@ -173,7 +173,7 @@ WHERE
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
