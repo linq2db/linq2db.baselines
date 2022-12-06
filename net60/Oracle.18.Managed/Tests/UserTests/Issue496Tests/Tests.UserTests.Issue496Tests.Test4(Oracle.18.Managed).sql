@@ -17,7 +17,7 @@ FROM
 		INNER JOIN "Child" detail ON Cast(key_data_result."ParentID" as Number(19)) = detail."ParentID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
