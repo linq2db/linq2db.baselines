@@ -27,7 +27,7 @@ FROM
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
@@ -76,7 +76,7 @@ FROM
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
@@ -125,7 +125,7 @@ FROM
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
@@ -174,7 +174,7 @@ FROM
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019
 DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object

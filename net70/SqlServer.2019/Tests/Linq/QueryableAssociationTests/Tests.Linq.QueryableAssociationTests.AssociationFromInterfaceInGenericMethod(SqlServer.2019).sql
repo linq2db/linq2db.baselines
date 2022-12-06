@@ -55,7 +55,7 @@ FROM
 		INNER JOIN [TreeItem] [detail] ON [key_data_result].[Id] = [detail].[ParentId]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019
 

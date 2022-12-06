@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 

@@ -38,4 +38,4 @@ VALUES
 ;
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

@@ -121,7 +121,7 @@ FROM
 	[Products] [detail]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
