@@ -86,4 +86,4 @@ WHERE
 	"p"."ParentID" < 2
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
