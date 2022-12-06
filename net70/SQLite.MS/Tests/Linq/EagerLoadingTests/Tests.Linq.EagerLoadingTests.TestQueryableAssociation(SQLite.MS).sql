@@ -137,7 +137,7 @@ WHERE
 	[m_1].[Id1] > 5
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 

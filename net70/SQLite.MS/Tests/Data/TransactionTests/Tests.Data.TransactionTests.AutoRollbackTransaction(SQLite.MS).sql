@@ -29,7 +29,7 @@ WHERE
 	[Parent].[ParentID] = 1010
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32

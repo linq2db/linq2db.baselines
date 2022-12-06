@@ -175,7 +175,7 @@ ORDER BY
 	[m_1].[Id2] DESC
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 

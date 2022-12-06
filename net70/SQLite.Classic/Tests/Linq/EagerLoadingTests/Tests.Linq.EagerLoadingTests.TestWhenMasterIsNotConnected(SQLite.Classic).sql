@@ -144,7 +144,7 @@ FROM
 	[DetailClass] [t1]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32

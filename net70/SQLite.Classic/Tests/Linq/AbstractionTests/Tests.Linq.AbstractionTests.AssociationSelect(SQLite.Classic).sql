@@ -341,7 +341,7 @@ ORDER BY
 	[_].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 
@@ -376,7 +376,7 @@ ORDER BY
 	[_].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 

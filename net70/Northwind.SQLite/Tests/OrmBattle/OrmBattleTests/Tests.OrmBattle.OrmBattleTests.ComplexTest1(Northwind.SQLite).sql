@@ -120,7 +120,7 @@ FROM
 	[Products] [detail]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 

@@ -110,7 +110,7 @@ FROM
 		INNER JOIN [Customers] [_c] ON ([_c].[CustomerID] = [key_data_result].[CustomerID] OR [_c].[CustomerID] IS NULL AND [key_data_result].[CustomerID] IS NULL)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
