@@ -136,4 +136,4 @@ ORDER BY
 	"t1"."ChildID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

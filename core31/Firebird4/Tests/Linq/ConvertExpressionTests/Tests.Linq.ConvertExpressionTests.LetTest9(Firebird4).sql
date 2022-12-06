@@ -29,7 +29,7 @@ ORDER BY
 	"c_1"."ChildID"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32

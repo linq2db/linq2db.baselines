@@ -16,7 +16,7 @@ WHERE
 	Lower("p"."FirstName") LIKE @input_2 ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @input_2 VarChar(6) -- String
