@@ -15,4 +15,4 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

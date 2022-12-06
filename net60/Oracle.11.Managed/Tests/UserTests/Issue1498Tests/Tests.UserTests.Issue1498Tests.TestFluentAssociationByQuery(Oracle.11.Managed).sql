@@ -173,7 +173,7 @@ WHERE
 	x."Id" = 6 AND ROWNUM <= :take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 

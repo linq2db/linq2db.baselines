@@ -14,7 +14,7 @@ WHERE
 	ROWNUM <= :take
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
