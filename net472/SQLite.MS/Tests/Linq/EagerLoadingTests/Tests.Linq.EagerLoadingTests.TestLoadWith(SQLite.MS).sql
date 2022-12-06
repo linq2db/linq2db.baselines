@@ -132,7 +132,7 @@ WHERE
 	[m_1].[Id1] >= @intParam
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @intParam  -- Int32

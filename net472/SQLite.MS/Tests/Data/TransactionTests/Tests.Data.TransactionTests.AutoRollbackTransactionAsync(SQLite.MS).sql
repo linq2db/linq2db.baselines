@@ -29,7 +29,7 @@ WHERE
 	[Parent].[ParentID] = 1010
 
 BeforeExecute
-RollbackTransactionAsync
+DisposeTransactionAsync
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 DECLARE @take  -- Int32

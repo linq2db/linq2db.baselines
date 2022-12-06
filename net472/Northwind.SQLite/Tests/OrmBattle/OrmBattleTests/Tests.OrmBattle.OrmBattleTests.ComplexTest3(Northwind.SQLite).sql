@@ -100,7 +100,7 @@ FROM
 		INNER JOIN [Suppliers] [detail] ON [detail].[SupplierID] = [key_data_result].[SupplierID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 

@@ -225,7 +225,7 @@ ORDER BY
 	[e].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -263,7 +263,7 @@ ORDER BY
 	[e].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -337,7 +337,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [detail].[ParentId] = [a_Parent].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -411,7 +411,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [detail].[ParentId] = [a_Parent].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 
@@ -447,7 +447,7 @@ FROM
 		INNER JOIN [SubItem1] [e] ON [lw_MainItem].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0 AND [e].[Value] LIKE 'Sub1~_%' ESCAPE '~'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 
