@@ -40,4 +40,4 @@ WHERE
 	[_].[PersonID] > @maxId
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

@@ -14,7 +14,7 @@ WHERE
 	LCase([p].[FirstName]) LIKE '%test%'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Access AccessOleDb
 

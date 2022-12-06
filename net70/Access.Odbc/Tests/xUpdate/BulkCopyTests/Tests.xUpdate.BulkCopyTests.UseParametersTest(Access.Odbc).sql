@@ -2697,4 +2697,4 @@ WHERE
 	[r].[ParentID] >= ? AND [r].[ParentID] <= ?
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
