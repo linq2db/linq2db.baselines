@@ -36,4 +36,4 @@ WHERE
 	[_].[ID] = @id
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

@@ -29,7 +29,7 @@ WHERE
 	[Parent].[ParentID] = 1010
 
 BeforeExecute
-RollbackTransactionAsync
+DisposeTransactionAsync
 BeforeExecute
 -- SqlCe (asynchronously)
 DECLARE @take Int -- Int32
