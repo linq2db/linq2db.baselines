@@ -89,4 +89,4 @@ WHERE
 LIMIT ?
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

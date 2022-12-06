@@ -143,7 +143,7 @@ WHERE
 LIMIT ?
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 

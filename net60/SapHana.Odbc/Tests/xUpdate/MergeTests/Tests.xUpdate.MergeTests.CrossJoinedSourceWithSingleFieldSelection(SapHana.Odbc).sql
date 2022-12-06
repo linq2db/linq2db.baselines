@@ -130,4 +130,4 @@ FROM
 	"GrandChild" "t1"
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
