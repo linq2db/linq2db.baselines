@@ -120,7 +120,7 @@ FROM
 		CROSS APPLY dbo.fn_SomeFunction([lw_SomeEntity].[Id]) [detail]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
