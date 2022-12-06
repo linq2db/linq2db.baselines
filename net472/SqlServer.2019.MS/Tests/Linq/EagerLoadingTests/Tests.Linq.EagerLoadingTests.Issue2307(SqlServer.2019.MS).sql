@@ -68,7 +68,7 @@ FROM
 		INNER JOIN [AttendanceSheetRow] [detail] ON [detail].[AttendanceSheetId] = [sheet].[Id]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
