@@ -32,4 +32,4 @@ WHERE
 	[_].[PersonID] = ?
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

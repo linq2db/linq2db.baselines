@@ -26,4 +26,4 @@ WHERE
 	[_].[char20DataType] = 'issue792'
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

@@ -47,4 +47,4 @@ ORDER BY
 	[a_Person].[PersonID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

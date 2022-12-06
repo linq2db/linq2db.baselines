@@ -16,7 +16,7 @@ WHERE
 	LCase([p].[FirstName]) LIKE @input_2
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @input_2 VarWChar(6) -- String

@@ -42,4 +42,4 @@ WHERE
 	[_].[FirstName] = @firstName AND [_].[LastName] = @lastName
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
