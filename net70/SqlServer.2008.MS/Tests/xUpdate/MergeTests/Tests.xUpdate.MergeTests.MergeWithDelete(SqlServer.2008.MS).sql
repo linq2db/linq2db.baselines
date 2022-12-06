@@ -78,4 +78,4 @@ WHEN NOT MATCHED BY SOURCE THEN DELETE
 ;
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
