@@ -31,7 +31,7 @@ ORDER BY
 	[detail].[ChildID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
