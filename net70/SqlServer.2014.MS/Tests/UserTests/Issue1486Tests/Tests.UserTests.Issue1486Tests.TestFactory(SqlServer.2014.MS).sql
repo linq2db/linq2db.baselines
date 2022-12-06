@@ -39,4 +39,4 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction

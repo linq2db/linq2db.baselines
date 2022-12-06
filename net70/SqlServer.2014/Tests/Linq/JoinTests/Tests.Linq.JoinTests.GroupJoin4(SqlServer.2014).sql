@@ -21,7 +21,7 @@ FROM
 		INNER JOIN [Child] [detail] ON [detail].[ParentID] = [key_data_result].[ParentID]
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2014
 
