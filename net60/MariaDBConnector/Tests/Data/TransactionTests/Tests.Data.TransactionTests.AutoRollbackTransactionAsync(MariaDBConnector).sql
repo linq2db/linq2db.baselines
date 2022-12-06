@@ -29,7 +29,7 @@ WHERE
 	`t1`.`ParentID` = 1010
 
 BeforeExecute
-RollbackTransactionAsync
+DisposeTransactionAsync
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql (asynchronously)
 DECLARE @take Int32
