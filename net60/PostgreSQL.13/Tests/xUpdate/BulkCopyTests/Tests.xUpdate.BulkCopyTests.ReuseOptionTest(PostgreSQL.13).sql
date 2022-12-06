@@ -23,4 +23,4 @@ VALUES
 (111001,0)
 
 BeforeExecute
-RollbackTransaction
+DisposeTransaction
