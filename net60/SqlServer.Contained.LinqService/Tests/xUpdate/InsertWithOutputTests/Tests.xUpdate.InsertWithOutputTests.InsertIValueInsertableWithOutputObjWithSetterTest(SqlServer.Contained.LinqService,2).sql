@@ -20,7 +20,7 @@ DECLARE @Value_1 Int -- Int32
 SET     @Value_1 = 200
 DECLARE @value_2 Int -- Int32
 SET     @value_2 = 2
-DECLARE @ValueStr NVarChar(4000) -- String
+DECLARE @ValueStr NVarChar(50) -- String
 SET     @ValueStr = N'SomeStr2'
 
 INSERT INTO [TableWithData]
