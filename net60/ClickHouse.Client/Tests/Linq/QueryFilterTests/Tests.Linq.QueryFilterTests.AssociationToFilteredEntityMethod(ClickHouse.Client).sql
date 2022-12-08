@@ -1119,13 +1119,13 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	e.Id,
-	e.Value,
-	e.IsDeleted,
-	e.MasterId
+	d.Id,
+	d.Value,
+	d.IsDeleted,
+	d.MasterId
 FROM
 	MasterClass m_1
-		INNER JOIN DetailClass e ON m_1.Id = e.MasterId
+		INNER JOIN DetailClass d ON m_1.Id = d.MasterId
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1143,13 +1143,13 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	e.Id,
-	e.Value,
-	e.IsDeleted,
-	e.MasterId
+	d.Id,
+	d.Value,
+	d.IsDeleted,
+	d.MasterId
 FROM
 	MasterClass m_1
-		INNER JOIN DetailClass e ON m_1.Id = e.MasterId
+		INNER JOIN DetailClass d ON m_1.Id = d.MasterId
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
