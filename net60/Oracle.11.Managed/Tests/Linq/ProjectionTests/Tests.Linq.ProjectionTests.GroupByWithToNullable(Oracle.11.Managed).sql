@@ -4,27 +4,34 @@ DECLARE @take Int32
 SET     @take = 1000
 
 SELECT
-	t1."value_1",
-	t1."id",
-	t1."y"
+	t2."value_1",
+	t2."id",
+	t2."y"
 FROM
 	(
 		SELECT
-			a_Patient."Diagnosis" as "value_1",
-			a_Patient."PersonID" as "id",
-			Round(AVG(selectParam."PersonID"), 27) as "y"
+			t1."Key_3" as "value_1",
+			t1."Key_2" as "id",
+			Round(AVG(t1."Key_1"), 27) as "y"
 		FROM
-			"Person" selectParam
-				LEFT JOIN "Patient" a_Patient ON selectParam."PersonID" = a_Patient."PersonID"
+			(
+				SELECT
+					selectParam."PersonID" as "Key_1",
+					a_Patient."PersonID" as "Key_2",
+					a_Patient."Diagnosis" as "Key_3"
+				FROM
+					"Person" selectParam
+						LEFT JOIN "Patient" a_Patient ON selectParam."PersonID" = a_Patient."PersonID"
+			) t1
 		GROUP BY
-			selectParam."PersonID",
-			a_Patient."PersonID",
-			a_Patient."Diagnosis"
+			t1."Key_1",
+			t1."Key_2",
+			t1."Key_3"
 		HAVING
-			selectParam."PersonID" = 1
+			t1."Key_1" = 1
 		ORDER BY
-			a_Patient."Diagnosis" DESC
-	) t1
+			t1."Key_3" DESC
+	) t2
 WHERE
 	ROWNUM <= :take
 

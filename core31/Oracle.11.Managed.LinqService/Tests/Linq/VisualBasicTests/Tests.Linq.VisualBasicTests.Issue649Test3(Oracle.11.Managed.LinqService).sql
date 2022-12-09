@@ -133,17 +133,24 @@ DECLARE @added TimeStamp -- DateTime
 SET     @added = TIMESTAMP '2017-01-01 00:00:00.000000'
 
 SELECT
-	a_Person."personid",
-	a_Person."personname",
-	Max(f."added")
+	t1."c1",
+	t1."c2",
+	Max(t1."added")
 FROM
-	"activity649" f
-		INNER JOIN "person649" a_Person ON f."personid" = a_Person."personid"
-WHERE
-	f."added" >= :added
+	(
+		SELECT
+			a_Person."personid" as "c1",
+			a_Person."personname" as "c2",
+			f."added"
+		FROM
+			"activity649" f
+				INNER JOIN "person649" a_Person ON f."personid" = a_Person."personid"
+		WHERE
+			f."added" >= :added
+	) t1
 GROUP BY
-	a_Person."personid",
-	a_Person."personname"
+	t1."c1",
+	t1."c2"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
