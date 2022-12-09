@@ -112,6 +112,11 @@ CREATE TABLE TestIdentity (
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
+DROP VIEW IF EXISTS AllTypesView
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
 DROP TABLE IF EXISTS AllTypes
 
 BeforeExecute
@@ -149,6 +154,16 @@ CREATE TABLE AllTypes
 	uniqueidentifierDataType uniqueidentifier NULL,
 	objectDataType           Object           NULL
 )
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE VIEW AllTypesView
+AS
+SELECT
+	*,
+	ROW_NUMBER () OVER () AS Number
+FROM AllTypes
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
