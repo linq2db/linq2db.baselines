@@ -4,14 +4,14 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[key_data_result].[ParentID],
+	[key_data_result].[c1],
 	[key_data_result].[Value1],
 	[detail].[ParentID],
 	[detail].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[a_ParentTest].[ParentID],
+			[a_ParentTest].[ParentID] as [c1],
 			[a_ParentTest].[Value1]
 		FROM
 			[Parent] [cp]
@@ -26,7 +26,7 @@ FROM
 					[a_ParentTest].[ParentID] = [a].[ParentID] AND [a].[ChildID] = 11
 			))
 	) [key_data_result]
-		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
+		INNER JOIN [Child] [detail] ON [key_data_result].[c1] = [detail].[ParentID]
 ORDER BY
 	[detail].[ChildID]
 
