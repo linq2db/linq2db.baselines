@@ -39,17 +39,24 @@ DECLARE @added DateTime2
 SET     @added = DATETIME2FROMPARTS(2017, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
-	[a_Person].[personid],
-	[a_Person].[personname],
-	Max([p].[added])
+	[$VB$It].[c1],
+	[$VB$It].[c2],
+	Max([$VB$It].[added])
 FROM
-	[activity649] [p]
-		INNER JOIN [person649] [a_Person] ON [p].[personid] = [a_Person].[personid]
-WHERE
-	[p].[added] >= @added
+	(
+		SELECT
+			[a_Person].[personid] as [c1],
+			[a_Person].[personname] as [c2],
+			[p].[added]
+		FROM
+			[activity649] [p]
+				INNER JOIN [person649] [a_Person] ON [p].[personid] = [a_Person].[personid]
+		WHERE
+			[p].[added] >= @added
+	) [$VB$It]
 GROUP BY
-	[a_Person].[personid],
-	[a_Person].[personname]
+	[$VB$It].[c1],
+	[$VB$It].[c2]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
