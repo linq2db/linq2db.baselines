@@ -85,17 +85,24 @@ DECLARE @added TimeStamp -- DateTime
 SET     @added = CAST('2017-01-01' AS timestamp)
 
 SELECT
-	"a_Person"."personid",
-	"a_Person"."personname",
-	Max("p"."added")
+	"VBIt"."c1",
+	"VBIt"."c2",
+	Max("VBIt"."added")
 FROM
-	"activity649" "p"
-		INNER JOIN "person649" "a_Person" ON "p"."personid" = "a_Person"."personid"
-WHERE
-	"p"."added" >= @added
+	(
+		SELECT
+			"a_Person"."personid" as "c1",
+			"a_Person"."personname" as "c2",
+			"p"."added"
+		FROM
+			"activity649" "p"
+				INNER JOIN "person649" "a_Person" ON "p"."personid" = "a_Person"."personid"
+		WHERE
+			"p"."added" >= @added
+	) "VBIt"
 GROUP BY
-	"a_Person"."personid",
-	"a_Person"."personname"
+	"VBIt"."c1",
+	"VBIt"."c2"
 
 BeforeExecute
 -- Firebird
