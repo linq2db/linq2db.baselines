@@ -9,13 +9,13 @@ SELECT
 			[GrandChild] [c_1]
 		WHERE
 			[c_1].[ParentID] + 1 < [p1].[ID] AND [c_1].[ParentID] + 1 < [p1].[ID] AND
-			[p1].[ParentID] = [c_1].[ParentID]
+			([p1].[c1] = [c_1].[ParentID] OR [p1].[c1] IS NULL AND [c_1].[ParentID] IS NULL)
 	)
 FROM
 	(
 		SELECT
 			[p2].[ParentID] + 2 as [ID],
-			[a_Parent].[ParentID]
+			[a_Parent].[ParentID] as [c1]
 		FROM
 			[Child] [p2]
 				LEFT JOIN [Parent] [a_Parent] ON [p2].[ParentID] = [a_Parent].[ParentID]
