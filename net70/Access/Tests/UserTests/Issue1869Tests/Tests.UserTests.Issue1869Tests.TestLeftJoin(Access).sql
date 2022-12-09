@@ -111,13 +111,13 @@ FROM
 				(
 					SELECT
 						[t1].[MonthNumber],
-						Sum([t1].[Qty]) / Sum(Iif([t1].[Ok], 0, [t1].[Qty])) as [Ftq]
+						Sum([t1].[Qty]) / Sum(Iif([t1].[c2], 0, [t1].[Qty])) as [Ftq]
 					FROM
 						(
 							SELECT
 								DatePart('m', [q].[EntryDate]) as [MonthNumber],
-								[a_Workstation].[Id_WorkstationGroup],
-								[a_Defect].[Ok],
+								[a_Workstation].[Id_WorkstationGroup] as [c1],
+								[a_Defect].[Ok] as [c2],
 								[q].[Qty]
 							FROM
 								(([tblFtq] [q]
@@ -130,7 +130,7 @@ FROM
 						) [t1]
 					GROUP BY
 						[t1].[MonthNumber],
-						[t1].[Id_WorkstationGroup]
+						[t1].[c1]
 				) [q_1]
 			GROUP BY
 				[q_1].[MonthNumber]
