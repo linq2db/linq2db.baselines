@@ -6,11 +6,17 @@ SELECT
 FROM
 	(
 		SELECT
-			Count([t1].[ParentID]) as [ex],
-			[a_Parent].[Value1]
+			Count([t2].[ParentID]) as [ex],
+			[t3].[Value1]
 		FROM
-			[GrandChild] [t2]
-				INNER JOIN [Parent] [a_Parent] ON [t2].[ParentID] = [a_Parent].[ParentID]
+			(
+				SELECT
+					[a_Parent].[ParentID] as [c1],
+					[a_Parent].[Value1]
+				FROM
+					[GrandChild] [t1]
+						INNER JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
+			) [t3]
 				LEFT JOIN (
 					SELECT
 						[a_Parent_1].[ParentID]
@@ -21,10 +27,10 @@ FROM
 						[_].[ChildID] >= 20
 					GROUP BY
 						[a_Parent_1].[ParentID]
-				) [t1] ON [a_Parent].[ParentID] = [t1].[ParentID]
+				) [t2] ON [t3].[c1] = [t2].[ParentID]
 		GROUP BY
-			[a_Parent].[ParentID],
-			[a_Parent].[Value1]
+			[t3].[c1],
+			[t3].[Value1]
 	) [g_1]
 WHERE
 	[g_1].[ex] > 2
