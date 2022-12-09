@@ -2,12 +2,17 @@
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[a_Category].[CategoryID]
+	[t2].[c1]
 FROM
-	[Products] [t1]
-		LEFT JOIN [Categories] [a_Category] ON [t1].[CategoryID] = [a_Category].[CategoryID]
+	(
+		SELECT
+			[a_Category].[CategoryID] as [c1]
+		FROM
+			[Products] [t1]
+				LEFT JOIN [Categories] [a_Category] ON [t1].[CategoryID] = [a_Category].[CategoryID]
+	) [t2]
 GROUP BY
-	[a_Category].[CategoryID]
+	[t2].[c1]
 HAVING
 	Count(*) = 12
 

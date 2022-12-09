@@ -8,17 +8,17 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
+	[lw_Parent_1].[ParentID],
 	[lw_Parent_1].[ParentID_1],
-	[lw_Parent_1].[ParentID_2],
 	[lw_Parent_1].[ChildID],
 	[detail_1].[ParentID],
 	[detail_1].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Parent].[ParentID],
-			[lw_Parent].[ParentID] as [ParentID_1],
-			[detail].[ParentID] as [ParentID_2],
+			[a_Parent].[ParentID] as [c1],
+			[lw_Parent].[ParentID],
+			[detail].[ParentID] as [ParentID_1],
 			[detail].[ChildID]
 		FROM
 			(
@@ -38,7 +38,7 @@ FROM
 				INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 				LEFT JOIN [Parent] [a_Parent] ON [detail].[ParentID] = [a_Parent].[ParentID]
 	) [lw_Parent_1]
-		INNER JOIN [Child] [detail_1] ON [lw_Parent_1].[ParentID] = [detail_1].[ParentID]
+		INNER JOIN [Child] [detail_1] ON [lw_Parent_1].[c1] = [detail_1].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic SQLite
