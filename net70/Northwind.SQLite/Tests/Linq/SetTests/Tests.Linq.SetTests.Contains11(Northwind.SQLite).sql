@@ -2,7 +2,7 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[a_Employee_1].[LastName],
+	[t2].[LastName],
 	(
 		SELECT
 			Count(*)
@@ -10,22 +10,28 @@ SELECT
 			[EmployeeTerritories] [t]
 				LEFT JOIN [Employees] [a_Employee] ON [t].[EmployeeID] = [a_Employee].[EmployeeID]
 		WHERE
-			[a_Employee_1].[EmployeeID] = [a_Employee].[EmployeeID] AND
+			([t2].[c1] = [a_Employee].[EmployeeID] OR [t2].[c1] IS NULL AND [a_Employee].[EmployeeID] IS NULL) AND
 			[a_Employee].[FirstName] LIKE '%an%' ESCAPE '~'
 	)
 FROM
-	[EmployeeTerritories] [t1]
-		LEFT JOIN [Employees] [a_Employee_1] ON [t1].[EmployeeID] = [a_Employee_1].[EmployeeID]
+	(
+		SELECT
+			[a_Employee_1].[EmployeeID] as [c1],
+			[a_Employee_1].[LastName]
+		FROM
+			[EmployeeTerritories] [t1]
+				LEFT JOIN [Employees] [a_Employee_1] ON [t1].[EmployeeID] = [a_Employee_1].[EmployeeID]
+	) [t2]
 WHERE
 	(
 		SELECT
 			Count(*)
 		FROM
-			[EmployeeTerritories] [t2]
+			[EmployeeTerritories] [t3]
 		WHERE
-			[a_Employee_1].[EmployeeID] = [t2].[EmployeeID]
+			[t2].[c1] = [t3].[EmployeeID]
 	) > 1
 GROUP BY
-	[a_Employee_1].[EmployeeID],
-	[a_Employee_1].[LastName]
+	[t2].[c1],
+	[t2].[LastName]
 
