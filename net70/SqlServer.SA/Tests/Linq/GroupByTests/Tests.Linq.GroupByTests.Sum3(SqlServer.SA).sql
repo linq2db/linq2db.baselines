@@ -8,12 +8,18 @@ SELECT
 		FROM
 			[Child] [p]
 		WHERE
-			[a_Parent].[ParentID] = [p].[ParentID]
+			[t2].[c1] = [p].[ParentID]
 	)
 FROM
-	[Child] [t1]
-		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
+	(
+		SELECT
+			[a_Parent].[ParentID] as [c1],
+			[a_Parent].[Value1]
+		FROM
+			[Child] [t1]
+				LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
+	) [t2]
 GROUP BY
-	[a_Parent].[ParentID],
-	[a_Parent].[Value1]
+	[t2].[c1],
+	[t2].[Value1]
 
