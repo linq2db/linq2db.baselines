@@ -41,17 +41,24 @@ DECLARE @added DateTime2
 SET     @added = CAST('2017-01-01T00:00:00.0000000' AS DATETIME2)
 
 SELECT
-	[a_Person].[personid],
-	[a_Person].[personname],
-	Max([p].[added])
+	[$VB$It].[c1],
+	[$VB$It].[c2],
+	Max([$VB$It].[added])
 FROM
-	[activity649] [p]
-		INNER JOIN [person649] [a_Person] ON [p].[personid] = [a_Person].[personid]
-WHERE
-	[p].[added] >= @added
+	(
+		SELECT
+			[a_Person].[personid] as [c1],
+			[a_Person].[personname] as [c2],
+			[p].[added]
+		FROM
+			[activity649] [p]
+				INNER JOIN [person649] [a_Person] ON [p].[personid] = [a_Person].[personid]
+		WHERE
+			[p].[added] >= @added
+	) [$VB$It]
 GROUP BY
-	[a_Person].[personid],
-	[a_Person].[personname]
+	[$VB$It].[c1],
+	[$VB$It].[c2]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
