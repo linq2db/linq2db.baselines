@@ -13,15 +13,22 @@ FROM
 					GrandChild keyParam
 						INNER JOIN Parent a_Parent ON keyParam.ParentID = a_Parent.ParentID
 				WHERE
-					a_Parent_1.ParentID = a_Parent.ParentID AND keyParam.ChildID >= 20
+					(t2.c1 = a_Parent.ParentID OR t2.c1 IS NULL AND a_Parent.ParentID IS NULL) AND
+					keyParam.ChildID >= 20
 			) as ex,
-			a_Parent_1.Value1
+			t2.Value1
 		FROM
-			GrandChild t1
-				INNER JOIN Parent a_Parent_1 ON t1.ParentID = a_Parent_1.ParentID
+			(
+				SELECT
+					a_Parent_1.ParentID as c1,
+					a_Parent_1.Value1
+				FROM
+					GrandChild t1
+						INNER JOIN Parent a_Parent_1 ON t1.ParentID = a_Parent_1.ParentID
+			) t2
 		GROUP BY
-			a_Parent_1.ParentID,
-			a_Parent_1.Value1
+			t2.c1,
+			t2.Value1
 	) g_1
 WHERE
 	g_1.ex > 2

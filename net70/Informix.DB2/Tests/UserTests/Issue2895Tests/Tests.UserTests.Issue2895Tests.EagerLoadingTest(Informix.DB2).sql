@@ -344,25 +344,25 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	key_data_result_1.Id,
+	key_data_result_1.c1,
 	key_data_result_1.EmailId,
 	key_data_result_1.AdminId,
-	key_data_result_1.Id_1,
-	key_data_result_1.Id_2,
+	key_data_result_1.c1_1,
+	key_data_result_1.Id,
 	c_1.Name
 FROM
 	(
 		SELECT DISTINCT
-			a_Email_1.Id,
+			a_Email_1.Id as c1,
 			detail.EmailId,
 			detail.AdminId,
-			key_data_result.Id as Id_1,
-			key_data_result.Id_1 as Id_2
+			key_data_result.c1 as c1_1,
+			key_data_result.Id
 		FROM
 			(
 				SELECT DISTINCT
-					a_Admin.Id,
-					r.Id as Id_1
+					a_Admin.Id as c1,
+					r.Id
 				FROM
 					Request r
 						LEFT JOIN "User" a_User ON r.UserId = a_User.Id
@@ -372,28 +372,28 @@ FROM
 					LEFT JOIN Email a_Email
 						LEFT JOIN InternalEmail a_InternalEmail ON a_Email.Id = a_InternalEmail.Id
 					ON detail.EmailId = a_Email.Id
-				ON key_data_result.Id = detail.AdminId
+				ON key_data_result.c1 = detail.AdminId
 				LEFT JOIN Email a_Email_1 ON a_InternalEmail.Id = a_Email_1.Id
 	) key_data_result_1
 		INNER JOIN EmailAttachmentAssociation detail_1
 			LEFT JOIN Attachment a_Attachment ON detail_1.AttachmentId = a_Attachment.Id
-		ON key_data_result_1.Id = detail_1.EmailId
+		ON key_data_result_1.c1 = detail_1.EmailId
 		INNER JOIN Document c_1 ON a_Attachment.Id = c_1.AttachmentId
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	key_data_result.c1,
 	key_data_result.Id,
-	key_data_result.Id_1,
 	a_Email_1.Id,
 	detail.EmailId,
 	detail.AdminId
 FROM
 	(
 		SELECT DISTINCT
-			a_Admin.Id,
-			r.Id as Id_1
+			a_Admin.Id as c1,
+			r.Id
 		FROM
 			Request r
 				LEFT JOIN "User" a_User ON r.UserId = a_User.Id
@@ -403,7 +403,7 @@ FROM
 			LEFT JOIN Email a_Email
 				LEFT JOIN InternalEmail a_InternalEmail ON a_Email.Id = a_InternalEmail.Id
 			ON detail.EmailId = a_Email.Id
-		ON key_data_result.Id = detail.AdminId
+		ON key_data_result.c1 = detail.AdminId
 		LEFT JOIN Email a_Email_1 ON a_InternalEmail.Id = a_Email_1.Id
 
 BeforeExecute
