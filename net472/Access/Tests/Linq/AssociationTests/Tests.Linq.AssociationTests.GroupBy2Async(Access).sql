@@ -2,12 +2,18 @@
 -- Access AccessOleDb (asynchronously)
 
 SELECT
-	[a_Parent1].[ParentID],
-	[a_Parent1].[Value1]
+	[t2].[c1],
+	[t2].[Value1]
 FROM
-	[Child] [t1]
-		INNER JOIN [Parent] [a_Parent1] ON ([t1].[ParentID] = [a_Parent1].[ParentID])
+	(
+		SELECT
+			[a_Parent1].[ParentID] as [c1],
+			[a_Parent1].[Value1]
+		FROM
+			[Child] [t1]
+				INNER JOIN [Parent] [a_Parent1] ON ([t1].[ParentID] = [a_Parent1].[ParentID])
+	) [t2]
 GROUP BY
-	[a_Parent1].[ParentID],
-	[a_Parent1].[Value1]
+	[t2].[c1],
+	[t2].[Value1]
 
