@@ -342,36 +342,36 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[key_data_result_1].[c1],
+	[key_data_result_1].[Id],
 	[key_data_result_1].[EmailId],
 	[key_data_result_1].[AdminId],
-	[key_data_result_1].[c1_1],
-	[key_data_result_1].[Id],
+	[key_data_result_1].[Id_1],
+	[key_data_result_1].[Id_1_1],
 	[__c].[Name]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Email_1].[Id] as [c1],
+			[a_Email_1].[Id],
 			[detail].[EmailId],
 			[detail].[AdminId],
-			[key_data_result].[c1] as [c1_1],
-			[key_data_result].[Id]
+			[key_data_result].[Id] as [Id_1],
+			[key_data_result].[Id_1] as [Id_1_1]
 		FROM
 			(
 				SELECT DISTINCT
-					[a_Admin].[Id] as [c1],
-					[r].[Id]
+					[a_Admin].[Id],
+					[r].[Id] as [Id_1]
 				FROM
 					[Request] [r]
 						LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
 						LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
 			) [key_data_result]
-				INNER JOIN [EmailAdminAssociation] [detail] ON [key_data_result].[c1] = [detail].[AdminId]
+				INNER JOIN [EmailAdminAssociation] [detail] ON [key_data_result].[Id] = [detail].[AdminId]
 					LEFT JOIN [Email] [a_Email] ON [detail].[EmailId] = [a_Email].[Id]
 						LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 				LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
 	) [key_data_result_1]
-		INNER JOIN [EmailAttachmentAssociation] [detail_1] ON [key_data_result_1].[c1] = [detail_1].[EmailId]
+		INNER JOIN [EmailAttachmentAssociation] [detail_1] ON [key_data_result_1].[Id] = [detail_1].[EmailId]
 			LEFT JOIN [Attachment] [a_Attachment] ON [detail_1].[AttachmentId] = [a_Attachment].[Id]
 		INNER JOIN [Document] [__c] ON [a_Attachment].[Id] = [__c].[AttachmentId]
 
@@ -379,22 +379,22 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[key_data_result].[c1],
 	[key_data_result].[Id],
+	[key_data_result].[Id_1],
 	[a_Email_1].[Id],
 	[detail].[EmailId],
 	[detail].[AdminId]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Admin].[Id] as [c1],
-			[r].[Id]
+			[a_Admin].[Id],
+			[r].[Id] as [Id_1]
 		FROM
 			[Request] [r]
 				LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
 				LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
 	) [key_data_result]
-		INNER JOIN [EmailAdminAssociation] [detail] ON [key_data_result].[c1] = [detail].[AdminId]
+		INNER JOIN [EmailAdminAssociation] [detail] ON [key_data_result].[Id] = [detail].[AdminId]
 			LEFT JOIN [Email] [a_Email] ON [detail].[EmailId] = [a_Email].[Id]
 				LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 		LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]

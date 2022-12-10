@@ -207,21 +207,21 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[lw_MainItem].[c1],
+	[lw_MainItem].[Id],
 	[detail].[Id],
 	[detail].[Value],
 	[detail].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[a_MainItem].[Id] as [c1]
+			[a_MainItem].[Id]
 		FROM
 			[MainItem2] [m_1]
 				LEFT JOIN [MainItem] [a_MainItem] ON [m_1].[MainItemId] = [a_MainItem].[Id]
 		WHERE
 			[m_1].[Id] > 1
 	) [lw_MainItem]
-		INNER JOIN [SubItem2] [detail] ON ([lw_MainItem].[c1] = [detail].[ParentId] OR [lw_MainItem].[c1] IS NULL AND [detail].[ParentId] IS NULL)
+		INNER JOIN [SubItem2] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 
 BeforeExecute
 DisposeTransaction
