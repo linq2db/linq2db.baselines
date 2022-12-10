@@ -6,23 +6,23 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT
-	[lw_Parent].[c1],
+	[lw_Parent].[ParentID],
 	[detail].[ParentID],
 	[detail].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[c1]
+			[t2].[ParentID]
 		FROM
 			(
 				SELECT TOP (@take)
-					[a_Parent].[ParentID] as [c1]
+					[a_Parent].[ParentID]
 				FROM
 					[Child] [t1]
 						LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 			) [t2]
 	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[c1] = [detail].[ParentID]
+		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
 --  SqlCe
