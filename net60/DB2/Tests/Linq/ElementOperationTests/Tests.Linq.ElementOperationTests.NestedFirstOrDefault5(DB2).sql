@@ -4,9 +4,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"key_data_result"."c1",
-	"key_data_result"."Value1",
 	"key_data_result"."ParentID",
+	"key_data_result"."Value1",
+	"key_data_result"."ParentID_1",
 	"key_data_result"."ChildID",
 	"key_data_result"."GrandChildID",
 	"detail"."ParentID",
@@ -14,9 +14,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"a_Parent"."ParentID" as "c1",
+			"a_Parent"."ParentID",
 			"a_Parent"."Value1",
-			"p"."ParentID",
+			"p"."ParentID" as "ParentID_1",
 			"p"."ChildID",
 			"p"."GrandChildID"
 		FROM
@@ -26,7 +26,7 @@ FROM
 		WHERE
 			"p"."ChildID" > 0
 	) "key_data_result"
-		INNER JOIN "Child" "detail" ON "key_data_result"."c1" = "detail"."ParentID"
+		INNER JOIN "Child" "detail" ON "key_data_result"."ParentID" = "detail"."ParentID"
 ORDER BY
 	"detail"."ChildID"
 

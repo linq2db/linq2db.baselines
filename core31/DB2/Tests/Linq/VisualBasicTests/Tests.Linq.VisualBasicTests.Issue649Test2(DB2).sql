@@ -53,24 +53,17 @@ DECLARE @added Timestamp(20) -- DateTime
 SET     @added = '2017-01-01-00.00.00.000000'
 
 SELECT
-	"$VB$It"."c1",
-	"$VB$It"."c2",
-	Max("$VB$It"."added")
+	"a_Person"."personid",
+	"a_Person"."personname",
+	Max("p"."added")
 FROM
-	(
-		SELECT
-			"a_Person"."personid" as "c1",
-			"a_Person"."personname" as "c2",
-			"p"."added"
-		FROM
-			"activity649" "p"
-				INNER JOIN "person649" "a_Person" ON "p"."personid" = "a_Person"."personid"
-		WHERE
-			"p"."added" >= @added
-	) "$VB$It"
+	"activity649" "p"
+		INNER JOIN "person649" "a_Person" ON "p"."personid" = "a_Person"."personid"
+WHERE
+	"p"."added" >= @added
 GROUP BY
-	"$VB$It"."c1",
-	"$VB$It"."c2"
+	"a_Person"."personid",
+	"a_Person"."personname"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
