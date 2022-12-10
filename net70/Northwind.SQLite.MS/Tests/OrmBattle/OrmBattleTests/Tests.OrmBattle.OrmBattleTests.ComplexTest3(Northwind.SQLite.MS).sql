@@ -85,19 +85,19 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[key_data_result].[c1],
+	[key_data_result].[SupplierID],
 	[key_data_result].[ProductID],
 	[detail].[CompanyName]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Supplier].[SupplierID] as [c1],
+			[a_Supplier].[SupplierID],
 			[p].[ProductID]
 		FROM
 			[Products] [p]
 				LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID]
 	) [key_data_result]
-		INNER JOIN [Suppliers] [detail] ON [detail].[SupplierID] = [key_data_result].[c1]
+		INNER JOIN [Suppliers] [detail] ON [detail].[SupplierID] = [key_data_result].[SupplierID]
 
 BeforeExecute
 DisposeTransaction
