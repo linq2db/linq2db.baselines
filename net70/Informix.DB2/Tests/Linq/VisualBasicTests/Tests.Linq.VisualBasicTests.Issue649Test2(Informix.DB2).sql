@@ -37,24 +37,17 @@ DECLARE @added Timestamp(16) -- DateTime
 SET     @added = TO_DATE('2017-01-01', '%Y-%m-%d')
 
 SELECT
-	VBIt.c1,
-	VBIt.c2,
-	Max(VBIt.added)
+	a_Person.personid,
+	a_Person.personname,
+	Max(p.added)
 FROM
-	(
-		SELECT
-			a_Person.personid as c1,
-			a_Person.personname as c2,
-			p.added
-		FROM
-			activity649 p
-				INNER JOIN person649 a_Person ON p.personid = a_Person.personid
-		WHERE
-			p.added >= @added
-	) VBIt
+	activity649 p
+		INNER JOIN person649 a_Person ON p.personid = a_Person.personid
+WHERE
+	p.added >= @added
 GROUP BY
-	VBIt.c1,
-	VBIt.c2
+	a_Person.personid,
+	a_Person.personname
 
 BeforeExecute
 -- Informix.DB2 Informix
