@@ -283,8 +283,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_MainItem_1].[Id],
 	[lw_MainItem_1].[Id_1],
+	[lw_MainItem_1].[Id_2],
 	[lw_MainItem_1].[Value_1],
 	[lw_MainItem_1].[ParentId],
 	[e].[Id],
@@ -293,9 +293,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[a_Parent].[Id] as [c1],
-			[lw_MainItem].[Id],
-			[detail].[Id] as [Id_1],
+			[a_Parent].[Id],
+			[lw_MainItem].[Id] as [Id_1],
+			[detail].[Id] as [Id_2],
 			[detail].[Value] as [Value_1],
 			[detail].[ParentId]
 		FROM
@@ -310,7 +310,7 @@ FROM
 				INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 				LEFT JOIN [MainItem] [a_Parent] ON [detail].[ParentId] = [a_Parent].[Id]
 	) [lw_MainItem_1]
-		INNER JOIN [SubItem2] [e] ON ([lw_MainItem_1].[c1] = [e].[ParentId] OR [lw_MainItem_1].[c1] IS NULL AND [e].[ParentId] IS NULL) AND [e].[ParentId] % 2 = 0
+		INNER JOIN [SubItem2] [e] ON [lw_MainItem_1].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
 ORDER BY
 	[e].[Id]
 
@@ -357,8 +357,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_MainItem_1].[Id],
 	[lw_MainItem_1].[Id_1],
+	[lw_MainItem_1].[Id_2],
 	[lw_MainItem_1].[Value_1],
 	[lw_MainItem_1].[ParentId],
 	[e].[Id],
@@ -367,9 +367,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[a_Parent].[Id] as [c1],
-			[lw_MainItem].[Id],
-			[detail].[Id] as [Id_1],
+			[a_Parent].[Id],
+			[lw_MainItem].[Id] as [Id_1],
+			[detail].[Id] as [Id_2],
 			[detail].[Value] as [Value_1],
 			[detail].[ParentId]
 		FROM
@@ -384,7 +384,7 @@ FROM
 				INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 				LEFT JOIN [MainItem] [a_Parent] ON [detail].[ParentId] = [a_Parent].[Id]
 	) [lw_MainItem_1]
-		INNER JOIN [SubItem2] [e] ON ([lw_MainItem_1].[c1] = [e].[ParentId] OR [lw_MainItem_1].[c1] IS NULL AND [e].[ParentId] IS NULL) AND [e].[ParentId] % 2 = 0
+		INNER JOIN [SubItem2] [e] ON [lw_MainItem_1].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
 ORDER BY
 	[e].[Id]
 
