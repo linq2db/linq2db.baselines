@@ -2,17 +2,12 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[t2].[c1]
+	[a_Parent].[ParentID]
 FROM
-	(
-		SELECT
-			[a_Parent].[ParentID] as [c1]
-		FROM
-			[GrandChild] [t1]
-				INNER JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
-	) [t2]
+	[GrandChild] [t1]
+		INNER JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 GROUP BY
-	[t2].[c1]
+	[a_Parent].[ParentID]
 HAVING
 	Count(*) > 2
 
