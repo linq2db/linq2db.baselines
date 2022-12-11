@@ -5,7 +5,7 @@ SET     @take = 1000
 
 SELECT
 	a_Patient."Diagnosis" as "value",
-	a_Patient."PersonID" as "PersonID",
+	a_Patient."PersonID",
 	Round(AVG(t1."PersonID"), 27) as "y"
 FROM
 	"Person" t1
