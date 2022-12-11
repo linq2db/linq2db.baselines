@@ -2,12 +2,12 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."c2"
+	t1."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			a_Child."ParentID" as "c1",
-			a_Child."ChildID" as "c2"
+			a_Child."ParentID",
+			a_Child."ChildID"
 		FROM
 			"GrandChild" c_1
 				LEFT JOIN "Child" a_Child ON c_1."ParentID" = a_Child."ParentID" AND c_1."ChildID" = a_Child."ChildID"
