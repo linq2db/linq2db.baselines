@@ -13,7 +13,7 @@ USING (
 	SELECT
 		[t1].[PersonID],
 		[t1].[Diagnosis],
-		[a_Person].[FirstName] as [FirstName]
+		[a_Person].[FirstName]
 	FROM
 		[Patient] [t1]
 			LEFT JOIN [Person] [a_Person] ON [t1].[PersonID] = [a_Person].[PersonID]
