@@ -2,17 +2,12 @@
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[t2].[c1]
+	[a_Category].[CategoryID]
 FROM
-	(
-		SELECT
-			[a_Category].[CategoryID] as [c1]
-		FROM
-			[Products] [t1]
-				LEFT JOIN [Categories] [a_Category] ON [t1].[CategoryID] = [a_Category].[CategoryID]
-	) [t2]
+	[Products] [t1]
+		LEFT JOIN [Categories] [a_Category] ON [t1].[CategoryID] = [a_Category].[CategoryID]
 GROUP BY
-	[t2].[c1]
+	[a_Category].[CategoryID]
 HAVING
 	Count(*) = 12
 
