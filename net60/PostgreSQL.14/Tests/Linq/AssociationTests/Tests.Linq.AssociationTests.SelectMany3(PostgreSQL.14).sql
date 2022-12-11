@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			"a_Parent"."ParentID" as "ParentID",
+			"a_Parent"."ParentID",
 			"a_Parent"."Value1"
 		FROM
 			"Child" t1
