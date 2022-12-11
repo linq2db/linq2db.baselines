@@ -6,8 +6,8 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"a_Child"."ParentID" as "ParentID",
-			"a_Child"."ChildID" as "ChildID"
+			"a_Child"."ParentID",
+			"a_Child"."ChildID"
 		FROM
 			"GrandChild" "c_1"
 				LEFT JOIN "Child" "a_Child" ON "c_1"."ParentID" = "a_Child"."ParentID" AND "c_1"."ChildID" = "a_Child"."ChildID"
