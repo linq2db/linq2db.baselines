@@ -4,7 +4,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	a_Parent."Value1" as "Value1"
+	a_Parent."Value1"
 FROM
 	"Parent" x
 		INNER JOIN "Child" c_1 ON x."ParentID" = c_1."ParentID"
