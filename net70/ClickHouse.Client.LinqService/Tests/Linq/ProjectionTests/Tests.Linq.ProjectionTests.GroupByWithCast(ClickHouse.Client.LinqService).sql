@@ -2,26 +2,19 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t2.Diagnosis,
-	t2.c1,
-	Avg(t2.PersonID)
+	a_Patient.Diagnosis,
+	a_Patient.PersonID,
+	Avg(t1.PersonID)
 FROM
-	(
-		SELECT
-			t1.PersonID as PersonID,
-			a_Patient.PersonID as c1,
-			a_Patient.Diagnosis as Diagnosis
-		FROM
-			Person t1
-				LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
-	) t2
+	Person t1
+		LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
 GROUP BY
-	t2.PersonID,
-	t2.c1,
-	t2.Diagnosis
+	t1.PersonID,
+	a_Patient.PersonID,
+	a_Patient.Diagnosis
 HAVING
-	t2.PersonID = toInt32(1)
+	t1.PersonID = toInt32(1)
 ORDER BY
-	t2.Diagnosis DESC
+	a_Patient.Diagnosis DESC
 LIMIT toInt32(1000)
 
