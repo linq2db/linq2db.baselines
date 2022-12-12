@@ -33,8 +33,8 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
+	[t2].[Name],
+	[t2].[Key_1],
 	(
 		SELECT
 			Count(*)
@@ -45,13 +45,20 @@ SELECT
 				FROM
 					[odata_person] [$it]
 				WHERE
-					[selectParam].[Title] = [$it].[Title]
+					[t2].[Key_1] = [$it].[Title] AND [t2].[Name] = N'Title'
 			) [t1]
 	)
 FROM
-	[odata_person] [selectParam]
+	(
+		SELECT
+			[selectParam].[Title] as [Key_1],
+			N'Title' as [Name]
+		FROM
+			[odata_person] [selectParam]
+	) [t2]
 GROUP BY
-	[selectParam].[Title]
+	[t2].[Key_1],
+	[t2].[Name]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
