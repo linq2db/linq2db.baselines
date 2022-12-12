@@ -33,9 +33,9 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	[t2].[Name],
-	[t2].[Key_1],
-	[t2].[Value_1]
+	[t3].[Name],
+	[t3].[Key_1],
+	[t3].[Value_1]
 FROM
 	(
 		SELECT
@@ -49,18 +49,25 @@ FROM
 						FROM
 							[odata_person] [$it]
 						WHERE
-							[selectParam].[Title] = [$it].[Title]
+							[t2].[Key_1] = [$it].[Title] AND [t2].[Name] = N'Title'
 					) [t1]
 			) as [Value_1],
-			N'Title' as [Name],
-			[selectParam].[Title] as [Key_1]
+			[t2].[Name],
+			[t2].[Key_1]
 		FROM
-			[odata_person] [selectParam]
+			(
+				SELECT
+					[selectParam].[Title] as [Key_1],
+					N'Title' as [Name]
+				FROM
+					[odata_person] [selectParam]
+			) [t2]
 		GROUP BY
-			[selectParam].[Title]
-	) [t2]
+			[t2].[Key_1],
+			[t2].[Name]
+	) [t3]
 ORDER BY
-	[t2].[Value_1]
+	[t3].[Value_1]
 
 BeforeExecute
 -- SqlServer.2017
