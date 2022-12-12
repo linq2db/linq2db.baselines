@@ -34,15 +34,23 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
-	Max([selectParam].[YearsExperience])
+	[t1].[Name],
+	[t1].[Key_1],
+	Max([t1].[YearsExperience])
 FROM
-	[odata_person] [selectParam]
+	(
+		SELECT
+			[selectParam].[Title] as [Key_1],
+			N'Title' as [Name],
+			[selectParam].[YearsExperience]
+		FROM
+			[odata_person] [selectParam]
+	) [t1]
 GROUP BY
-	[selectParam].[Title]
+	[t1].[Key_1],
+	[t1].[Name]
 ORDER BY
-	Max([selectParam].[YearsExperience])
+	Max([t1].[YearsExperience])
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
