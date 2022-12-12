@@ -4,26 +4,32 @@
 SELECT
 	[p1].[ParentID],
 	[p1].[Value1],
-	[o].[ParentID],
-	[o].[Sum1]
+	[t1].[ParentID],
+	[t1].[Sum1]
 FROM
 	[Parent] [p1]
 		LEFT JOIN (
 			SELECT
-				[p].[ParentID],
-				Sum([p].[ParentID]) as [Sum1]
+				[o].[ParentID],
+				[o].[Sum1]
 			FROM
-				[Parent] [p]
-			WHERE
-				EXISTS(
+				(
 					SELECT
-						*
+						[p].[ParentID],
+						Sum([p].[ParentID]) as [Sum1]
 					FROM
-						[Child] [ch]
+						[Parent] [p]
 					WHERE
-						[ch].[ParentID] = [p].[ParentID]
-				)
-			GROUP BY
-				[p].[ParentID]
-		) [o] ON [o].[ParentID] = [p1].[ParentID]
+						EXISTS(
+							SELECT
+								*
+							FROM
+								[Child] [ch]
+							WHERE
+								[ch].[ParentID] = [p].[ParentID]
+						)
+					GROUP BY
+						[p].[ParentID]
+				) [o]
+		) [t1] ON [t1].[ParentID] = [p1].[ParentID]
 
