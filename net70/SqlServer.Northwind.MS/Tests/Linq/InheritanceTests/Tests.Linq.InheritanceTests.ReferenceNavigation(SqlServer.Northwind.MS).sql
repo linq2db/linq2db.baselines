@@ -25,8 +25,7 @@ SELECT
 	[a_Product].[UnitsInStock],
 	[a_Product].[UnitsOnOrder],
 	[a_Product].[ReorderLevel],
-	[a_Product].[Discontinued],
-	[a_Category].[CategoryName]
+	[a_Product].[Discontinued]
 FROM
 	[Order Details] [od]
 		LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]

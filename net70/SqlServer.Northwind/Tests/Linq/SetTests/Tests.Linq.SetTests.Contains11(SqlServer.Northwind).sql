@@ -10,7 +10,7 @@ SELECT
 			[EmployeeTerritories] [t]
 				LEFT JOIN [Employees] [a_Employee] ON [t].[EmployeeID] = [a_Employee].[EmployeeID]
 		WHERE
-			[a_Employee_1].[EmployeeID] = [a_Employee].[EmployeeID] AND
+			([a_Employee_1].[EmployeeID] = [a_Employee].[EmployeeID] OR [a_Employee_1].[EmployeeID] IS NULL AND [a_Employee].[EmployeeID] IS NULL) AND
 			[a_Employee].[FirstName] LIKE N'%an%' ESCAPE N'~'
 	)
 FROM
