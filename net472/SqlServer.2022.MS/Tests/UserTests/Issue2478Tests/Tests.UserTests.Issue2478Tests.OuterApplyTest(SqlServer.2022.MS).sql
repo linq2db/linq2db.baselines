@@ -3,24 +3,17 @@
 
 SELECT
 	[p].[ParentID],
-	[t2].[Count_1]
+	[t1].[Count_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
 				Count(*) as [Count_1]
 			FROM
-				(
-					SELECT
-						1 as [Key_1]
-					FROM
-						[Child] [t]
-					WHERE
-						[t].[ParentID] = [p].[ParentID]
-				) [t1]
-			GROUP BY
-				[t1].[Key_1]
-		) [t2]
+				[Child] [t]
+			WHERE
+				[t].[ParentID] = [p].[ParentID]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -33,15 +26,8 @@ FROM
 			SELECT
 				Count(*) as [Count_1]
 			FROM
-				(
-					SELECT
-						1 as [Key_1]
-					FROM
-						[Child] [t]
-					WHERE
-						[t].[ParentID] = [p].[ParentID]
-				) [t1]
-			GROUP BY
-				[t1].[Key_1]
-		) [t2]
+				[Child] [t]
+			WHERE
+				[t].[ParentID] = [p].[ParentID]
+		) [t1]
 

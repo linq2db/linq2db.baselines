@@ -33,15 +33,23 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
-	Avg([selectParam].[YearsExperience])
+	[t1].[Name],
+	[t1].[Key_1],
+	Avg([t1].[YearsExperience])
 FROM
-	[odata_person] [selectParam]
+	(
+		SELECT
+			[selectParam].[Title] as [Key_1],
+			N'Title' as [Name],
+			[selectParam].[YearsExperience]
+		FROM
+			[odata_person] [selectParam]
+	) [t1]
 GROUP BY
-	[selectParam].[Title]
+	[t1].[Key_1],
+	[t1].[Name]
 ORDER BY
-	Avg([selectParam].[YearsExperience])
+	Avg([t1].[YearsExperience])
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
