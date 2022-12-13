@@ -84,18 +84,25 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	'Id',
-	"selectParam"."Id",
+	t1."Name",
+	t1."Key_1",
 	Sum(CASE
-		WHEN "a_ActualStage"."Id" IS NULL
-			THEN NULL
-		ELSE "a_ActualStage"."Id"
+		WHEN t1."Id" IS NULL THEN NULL
+		ELSE t1."Id"
 	END)
 FROM
-	"Task" "selectParam"
-		LEFT JOIN "TaskStage" "a_ActualStage" ON "selectParam"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True
+	(
+		SELECT
+			'Id' as "Name",
+			"selectParam"."Id" as "Key_1",
+			"a_ActualStage"."Id"
+		FROM
+			"Task" "selectParam"
+				LEFT JOIN "TaskStage" "a_ActualStage" ON "selectParam"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True
+	) t1
 GROUP BY
-	"selectParam"."Id"
+	t1."Name",
+	t1."Key_1"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
