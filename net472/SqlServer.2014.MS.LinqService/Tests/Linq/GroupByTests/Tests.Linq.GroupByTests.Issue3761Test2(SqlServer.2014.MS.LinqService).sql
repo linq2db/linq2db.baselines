@@ -26,56 +26,42 @@ DECLARE @DATUM DateTime2
 SET     @DATUM = DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
-	[t2].[Year_1],
-	[t2].[Month_1],
-	[t2].[Sum_1]
+	[t1].[Year_1],
+	[t1].[Month_1],
+	Sum([t1].[SKUPAJ])
 FROM
 	(
 		SELECT
-			[t1].[Year_1],
-			[t1].[Month_1],
-			Sum([t1].[SKUPAJ]) as [Sum_1]
+			DatePart(year, Coalesce([n].[DATUM], @_default)) as [Year_1],
+			DatePart(month, Coalesce([n].[DATUM], @_default)) as [Month_1],
+			[n].[SKUPAJ]
 		FROM
-			(
-				SELECT
-					DatePart(year, Coalesce([n].[DATUM], @_default)) as [Year_1],
-					DatePart(month, Coalesce([n].[DATUM], @_default)) as [Month_1],
-					[n].[SKUPAJ]
-				FROM
-					[Issue3761Table] [n]
-				WHERE
-					[n].[DATUM] < @DATUM
-			) [t1]
-		GROUP BY
-			[t1].[Year_1],
-			[t1].[Month_1]
-	) [t2]
+			[Issue3761Table] [n]
+		WHERE
+			[n].[DATUM] < @DATUM
+	) [t1]
+GROUP BY
+	[t1].[Year_1],
+	[t1].[Month_1]
 UNION ALL
 SELECT
-	[t4].[Year_1],
-	[t4].[Month_1],
-	[t4].[Sum_1]
+	[t2].[Year_1],
+	[t2].[Month_1],
+	Sum([t2].[SKUPAJ])
 FROM
 	(
 		SELECT
-			[t3].[Year_1],
-			[t3].[Month_1],
-			Sum([t3].[SKUPAJ]) as [Sum_1]
+			DatePart(year, Coalesce([n_1].[DATUM], @_default)) as [Year_1],
+			DatePart(month, Coalesce([n_1].[DATUM], @_default)) as [Month_1],
+			[n_1].[SKUPAJ]
 		FROM
-			(
-				SELECT
-					DatePart(year, Coalesce([n_1].[DATUM], @_default)) as [Year_1],
-					DatePart(month, Coalesce([n_1].[DATUM], @_default)) as [Month_1],
-					[n_1].[SKUPAJ]
-				FROM
-					[Issue3761Table] [n_1]
-				WHERE
-					[n_1].[DATUM] >= @DATUM
-			) [t3]
-		GROUP BY
-			[t3].[Year_1],
-			[t3].[Month_1]
-	) [t4]
+			[Issue3761Table] [n_1]
+		WHERE
+			[n_1].[DATUM] >= @DATUM
+	) [t2]
+GROUP BY
+	[t2].[Year_1],
+	[t2].[Month_1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
