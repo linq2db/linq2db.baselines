@@ -8,10 +8,10 @@ FROM
 	[Child] [ch]
 		INNER JOIN (
 			SELECT
-				Max([t1].[ChildID]) as [c1]
+				Max([max_1].[ChildID]) as [c1]
 			FROM
-				[Child] [t1]
+				[Child] [max_1]
 			GROUP BY
-				[t1].[ParentID]
-		) [max_1] ON [ch].[ChildID] = [max_1].[c1]
+				[max_1].[ParentID]
+		) [t1] ON [ch].[ChildID] = [t1].[c1]
 
