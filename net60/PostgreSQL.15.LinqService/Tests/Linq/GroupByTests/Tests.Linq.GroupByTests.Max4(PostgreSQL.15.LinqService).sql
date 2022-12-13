@@ -4,18 +4,24 @@ DECLARE @Date_1 Timestamp -- DateTime2
 SET     @Date_1 = '2020-02-29'::date
 
 SELECT
-	t1."MoneyValue"
+	t1_1."MoneyValue"
 FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" t1_1
 		INNER JOIN (
 			SELECT
-				sub."ID",
-				Max(sub."DateTimeValue") as "DateTimeValue"
+				t2."ID",
+				t2."DateTimeValue"
 			FROM
-				"LinqDataTypes" sub
-			WHERE
-				sub."ID" = 1 AND sub."DateTimeValue" <= :Date_1
-			GROUP BY
-				sub."ID"
-		) t2 ON t1."ID" = t2."ID" AND t1."DateTimeValue" = t2."DateTimeValue"
+				(
+					SELECT
+						sub."ID",
+						Max(sub."DateTimeValue") as "DateTimeValue"
+					FROM
+						"LinqDataTypes" sub
+					WHERE
+						sub."ID" = 1 AND sub."DateTimeValue" <= :Date_1
+					GROUP BY
+						sub."ID"
+				) t2
+		) t1 ON t1_1."ID" = t1."ID" AND t1_1."DateTimeValue" = t1."DateTimeValue"
 
