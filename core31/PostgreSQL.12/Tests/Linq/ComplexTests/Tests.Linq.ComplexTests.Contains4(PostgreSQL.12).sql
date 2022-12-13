@@ -4,9 +4,9 @@
 SELECT
 	"a_Parent"."ParentID",
 	"a_Parent"."Value1",
-	t2.gc,
-	t2."ChildID",
-	t2."GrandChildID"
+	t3.gc,
+	t3."ChildID",
+	t3."GrandChildID"
 FROM
 	"Child" ch
 		LEFT JOIN "Parent" "a_Parent" ON ch."ParentID" = "a_Parent"."ParentID"
@@ -19,13 +19,18 @@ FROM
 				"GrandChild" gc
 					INNER JOIN (
 						SELECT
-							Max(t1."GrandChildID") as c1
+							max_1.c1
 						FROM
-							"GrandChild" t1
-						GROUP BY
-							t1."ChildID"
-					) max_1 ON (gc."GrandChildID" = max_1.c1 OR gc."GrandChildID" IS NULL AND max_1.c1 IS NULL)
-		) t2 ON "a_Parent"."ParentID" = t2.gc
+							(
+								SELECT
+									Max(t1."GrandChildID") as c1
+								FROM
+									"GrandChild" t1
+								GROUP BY
+									t1."ChildID"
+							) max_1
+					) t2 ON (gc."GrandChildID" = t2.c1 OR gc."GrandChildID" IS NULL AND t2.c1 IS NULL)
+		) t3 ON "a_Parent"."ParentID" = t3.gc
 WHERE
-	(t2.gc IS NULL AND t2."ChildID" IS NULL AND t2."GrandChildID" IS NULL OR (t2."GrandChildID" NOT IN (111, 222) OR t2."GrandChildID" IS NULL))
+	(t3.gc IS NULL AND t3."ChildID" IS NULL AND t3."GrandChildID" IS NULL OR (t3."GrandChildID" NOT IN (111, 222) OR t3."GrandChildID" IS NULL))
 
