@@ -48,19 +48,25 @@ WHERE
 		FROM
 			(
 				SELECT
-					[_1].[ParentID]
+					[_2].[ParentID]
 				FROM
-					[Parent] [_1]
-						LEFT JOIN (
-							SELECT
-								Count(*) as [cnt]
-							FROM
-								[Parent] [_]
-							WHERE
-								[_].[ParentID] = @id
-						) [t1] ON 1=1
+					(
+						SELECT
+							[_1].[ParentID],
+							[t1].[cnt] as [ex]
+						FROM
+							[Parent] [_1]
+								LEFT JOIN (
+									SELECT
+										Count(*) as [cnt]
+									FROM
+										[Parent] [_]
+									WHERE
+										[_].[ParentID] = @id
+								) [t1] ON 1=1
+					) [_2]
 				WHERE
-					[_1].[ParentID] = @id AND [t1].[cnt] > 0
+					[_2].[ParentID] = @id AND [_2].[ex] > 0
 			) [t2]
 		WHERE
 			[Parent].[ParentID] = [t2].[ParentID]

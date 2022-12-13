@@ -65,21 +65,31 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	[p_1].[FirstName],
+	[p_1].[PersonID],
+	[p_1].[LastName],
+	[p_1].[MiddleName],
+	[p_1].[Gender]
 FROM
-	[Person] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt]
-			FROM
-				[UserIssue3128] [t1]
-		) [t2] ON 1=1
+	(
+		SELECT
+			[t2].[cnt] as [ex],
+			[p].[FirstName],
+			[p].[PersonID],
+			[p].[LastName],
+			[p].[MiddleName],
+			[p].[Gender]
+		FROM
+			[Person] [p]
+				LEFT JOIN (
+					SELECT
+						Count(*) as [cnt]
+					FROM
+						[UserIssue3128] [t1]
+				) [t2] ON 1=1
+	) [p_1]
 WHERE
-	[t2].[cnt] > 0
+	[p_1].[ex] > 0
 
 BeforeExecute
 -- SqlCe
