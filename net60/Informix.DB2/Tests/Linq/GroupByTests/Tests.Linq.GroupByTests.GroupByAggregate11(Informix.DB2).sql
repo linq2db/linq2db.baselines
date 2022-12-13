@@ -2,39 +2,34 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t3.Key_1
+	t2.Key_1
 FROM
 	(
 		SELECT
-			t2.Key_1
+			Cast(CASE
+				WHEN (
+					SELECT
+						Avg(c_1.ParentID)
+					FROM
+						Child c_1
+					WHERE
+						p.ParentID = c_1.ParentID
+				) > 3
+					THEN 't'
+				ELSE 'f'
+			END as BOOLEAN) as Key_1
 		FROM
+			Parent p
+		WHERE
 			(
 				SELECT
-					Cast(CASE
-						WHEN (
-							SELECT
-								Avg(c_1.ParentID)
-							FROM
-								Child c_1
-							WHERE
-								p.ParentID = c_1.ParentID
-						) > 3
-							THEN 't'
-						ELSE 'f'
-					END as BOOLEAN) as Key_1
+					Count(*)
 				FROM
-					Parent p
+					Child t1
 				WHERE
-					(
-						SELECT
-							Count(*)
-						FROM
-							Child t1
-						WHERE
-							p.ParentID = t1.ParentID
-					) > 0
-			) t2
-	) t3
+					p.ParentID = t1.ParentID
+			) > 0
+	) t2
 GROUP BY
-	t3.Key_1
+	t2.Key_1
 

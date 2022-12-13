@@ -84,25 +84,18 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.Name,
-	t1.Key_1,
+	'Id',
+	selectParam.Id,
 	Sum(CASE
-		WHEN t1.Id IS NULL THEN NULL
-		ELSE t1.Id
+		WHEN a_ActualStage.Id IS NULL
+			THEN NULL
+		ELSE a_ActualStage.Id
 	END)
 FROM
-	(
-		SELECT
-			'Id' as Name,
-			selectParam.Id as Key_1,
-			a_ActualStage.Id
-		FROM
-			"Task" selectParam
-				LEFT JOIN TaskStage a_ActualStage ON selectParam.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = 't'
-	) t1
+	"Task" selectParam
+		LEFT JOIN TaskStage a_ActualStage ON selectParam.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = 't'
 GROUP BY
-	t1.Name,
-	t1.Key_1
+	selectParam.Id
 
 BeforeExecute
 -- Informix.DB2 Informix

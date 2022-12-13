@@ -27,26 +27,20 @@ FROM
 	) p1
 		LEFT JOIN (
 			SELECT
-				gp2.ParentID as p2,
-				gp2.Sum_1
+				p_1.ParentID as p2,
+				Sum(p_1.ParentID) as Sum_1
 			FROM
-				(
+				Parent p_1
+			WHERE
+				EXISTS(
 					SELECT
-						p_1.ParentID,
-						Sum(p_1.ParentID) as Sum_1
+						*
 					FROM
-						Parent p_1
+						Child ch_1
 					WHERE
-						EXISTS(
-							SELECT
-								*
-							FROM
-								Child ch_1
-							WHERE
-								ch_1.ParentID = p_1.ParentID
-						)
-					GROUP BY
-						p_1.ParentID
-				) gp2
+						ch_1.ParentID = p_1.ParentID
+				)
+			GROUP BY
+				p_1.ParentID
 		) t1 ON p1.ParentID = t1.p2
 
