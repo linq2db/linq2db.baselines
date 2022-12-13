@@ -10,26 +10,20 @@ FROM
 	`Parent` `p1`
 		LEFT JOIN (
 			SELECT
-				`o`.`ParentID`,
-				`o`.`Sum1`
+				`p`.`ParentID`,
+				Sum(`p`.`ParentID`) as `Sum1`
 			FROM
-				(
+				`Parent` `p`
+			WHERE
+				EXISTS(
 					SELECT
-						`p`.`ParentID`,
-						Sum(`p`.`ParentID`) as `Sum1`
+						*
 					FROM
-						`Parent` `p`
+						`Child` `ch`
 					WHERE
-						EXISTS(
-							SELECT
-								*
-							FROM
-								`Child` `ch`
-							WHERE
-								`ch`.`ParentID` = `p`.`ParentID`
-						)
-					GROUP BY
-						`p`.`ParentID`
-				) `o`
+						`ch`.`ParentID` = `p`.`ParentID`
+				)
+			GROUP BY
+				`p`.`ParentID`
 		) `t1` ON `t1`.`ParentID` = `p1`.`ParentID`
 
