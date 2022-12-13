@@ -32,56 +32,42 @@ DECLARE @DATUM TimeStamp -- DateTime
 SET     @DATUM = CAST('2019-01-01' AS timestamp)
 
 SELECT
-	"t2"."Year_1",
-	"t2"."Month_1",
-	"t2"."Sum_1"
+	"t1"."Year_1",
+	"t1"."Month_1",
+	Sum("t1".SKUPAJ)
 FROM
 	(
 		SELECT
-			"t1"."Year_1",
-			"t1"."Month_1",
-			Sum("t1".SKUPAJ) as "Sum_1"
+			Cast(Floor(Extract(year from Coalesce("n".DATUM, Cast(@default_1 as TimeStamp)))) as int) as "Year_1",
+			Cast(Floor(Extract(month from Coalesce("n".DATUM, Cast(@default_1 as TimeStamp)))) as int) as "Month_1",
+			"n".SKUPAJ
 		FROM
-			(
-				SELECT
-					Cast(Floor(Extract(year from Coalesce("n".DATUM, Cast(@default_1 as TimeStamp)))) as int) as "Year_1",
-					Cast(Floor(Extract(month from Coalesce("n".DATUM, Cast(@default_1 as TimeStamp)))) as int) as "Month_1",
-					"n".SKUPAJ
-				FROM
-					"Issue3761Table" "n"
-				WHERE
-					"n".DATUM < @DATUM
-			) "t1"
-		GROUP BY
-			"t1"."Year_1",
-			"t1"."Month_1"
-	) "t2"
+			"Issue3761Table" "n"
+		WHERE
+			"n".DATUM < @DATUM
+	) "t1"
+GROUP BY
+	"t1"."Year_1",
+	"t1"."Month_1"
 UNION ALL
 SELECT
-	"t4"."Year_1",
-	"t4"."Month_1",
-	"t4"."Sum_1"
+	"t2"."Year_1",
+	"t2"."Month_1",
+	Sum("t2".SKUPAJ)
 FROM
 	(
 		SELECT
-			"t3"."Year_1",
-			"t3"."Month_1",
-			Sum("t3".SKUPAJ) as "Sum_1"
+			Cast(Floor(Extract(year from Coalesce("n_1".DATUM, Cast(@default_1 as TimeStamp)))) as int) as "Year_1",
+			Cast(Floor(Extract(month from Coalesce("n_1".DATUM, Cast(@default_1 as TimeStamp)))) as int) as "Month_1",
+			"n_1".SKUPAJ
 		FROM
-			(
-				SELECT
-					Cast(Floor(Extract(year from Coalesce("n_1".DATUM, Cast(@default_1 as TimeStamp)))) as int) as "Year_1",
-					Cast(Floor(Extract(month from Coalesce("n_1".DATUM, Cast(@default_1 as TimeStamp)))) as int) as "Month_1",
-					"n_1".SKUPAJ
-				FROM
-					"Issue3761Table" "n_1"
-				WHERE
-					"n_1".DATUM >= @DATUM
-			) "t3"
-		GROUP BY
-			"t3"."Year_1",
-			"t3"."Month_1"
-	) "t4"
+			"Issue3761Table" "n_1"
+		WHERE
+			"n_1".DATUM >= @DATUM
+	) "t2"
+GROUP BY
+	"t2"."Year_1",
+	"t2"."Month_1"
 
 BeforeExecute
 -- Firebird
