@@ -47,27 +47,35 @@ DECLARE @take  -- Int32
 SET     @take = 10
 
 SELECT
-	[q].[User_1],
-	[p].[ProcessName],
-	[u].[UserGroups],
-	Sum([q].[Diff])
+	[t1].[User_1],
+	[t1].[ProcessName],
+	[t1].[UserGroups],
+	Sum([t1].[Diff])
 FROM
 	(
 		SELECT
-			round((julianday([x].[EventTime]) - julianday(LAG([x].[EventTime]) OVER(PARTITION BY [x].[EventUser], [x].[ProcessID] ORDER BY [x].[EventTime]))) * 1440) as [Diff],
-			[x].[EventUser] as [User_1],
-			[x].[ProcessID] as [Proc]
+			[q].[User_1],
+			[u].[UserGroups],
+			[p].[ProcessName],
+			[q].[Diff]
 		FROM
-			[Issue1799Table1] [x]
-	) [q]
-		INNER JOIN [Issue1799Table2] [u] ON [u].[UserId] = [q].[User_1]
-		INNER JOIN [Issue1799Table3] [p] ON [p].[ProcessID] = [q].[Proc]
-WHERE
-	[q].[Diff] > 0 AND [q].[Diff] <= 5
+			(
+				SELECT
+					round((julianday([x].[EventTime]) - julianday(LAG([x].[EventTime]) OVER(PARTITION BY [x].[EventUser], [x].[ProcessID] ORDER BY [x].[EventTime]))) * 1440) as [Diff],
+					[x].[EventUser] as [User_1],
+					[x].[ProcessID] as [Proc]
+				FROM
+					[Issue1799Table1] [x]
+			) [q]
+				INNER JOIN [Issue1799Table2] [u] ON [u].[UserId] = [q].[User_1]
+				INNER JOIN [Issue1799Table3] [p] ON [p].[ProcessID] = [q].[Proc]
+		WHERE
+			[q].[Diff] > 0 AND [q].[Diff] <= 5
+	) [t1]
 GROUP BY
-	[q].[User_1],
-	[u].[UserGroups],
-	[p].[ProcessName]
+	[t1].[User_1],
+	[t1].[UserGroups],
+	[t1].[ProcessName]
 LIMIT @take
 
 BeforeExecute
