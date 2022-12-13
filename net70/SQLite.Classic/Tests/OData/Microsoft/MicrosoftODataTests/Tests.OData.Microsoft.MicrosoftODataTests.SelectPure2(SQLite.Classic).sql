@@ -32,8 +32,8 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	'Title',
-	[selectParam].[Title],
+	[t2].[Name],
+	[t2].[Key_1],
 	(
 		SELECT
 			Count(*)
@@ -44,13 +44,20 @@ SELECT
 				FROM
 					[odata_person] [it2]
 				WHERE
-					[selectParam].[Title] = [it2].[Title]
+					[t2].[Key_1] = [it2].[Title] AND [t2].[Name] = 'Title'
 			) [t1]
 	)
 FROM
-	[odata_person] [selectParam]
+	(
+		SELECT
+			[selectParam].[Title] as [Key_1],
+			'Title' as [Name]
+		FROM
+			[odata_person] [selectParam]
+	) [t2]
 GROUP BY
-	[selectParam].[Title]
+	[t2].[Key_1],
+	[t2].[Name]
 
 BeforeExecute
 -- SQLite.Classic SQLite
