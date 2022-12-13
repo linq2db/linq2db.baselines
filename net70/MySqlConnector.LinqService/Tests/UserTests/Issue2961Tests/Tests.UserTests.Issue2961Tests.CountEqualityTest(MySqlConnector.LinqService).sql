@@ -68,8 +68,8 @@ BeforeExecute
 SELECT
 	`c_1`.`Id`,
 	`c_1`.`LocationId`,
-	`t4`.`CountCondoCategories`,
-	`t2`.`CountCondoTags`,
+	`t2`.`CountCondoCategories`,
+	`t1`.`CountCondoTags`,
 	`l`.`LocationName`,
 	`l`.`Id`
 FROM
@@ -78,33 +78,21 @@ FROM
 		LEFT JOIN (
 			SELECT
 				`ctleft`.`CondoId` as `subct`,
-				`ctleft`.`CountCondoTags`
+				Count(*) as `CountCondoTags`
 			FROM
-				(
-					SELECT
-						`t1`.`CondoId`,
-						Count(*) as `CountCondoTags`
-					FROM
-						`CondoTags` `t1`
-					GROUP BY
-						`t1`.`CondoId`
-				) `ctleft`
-		) `t2` ON `c_1`.`Id` = `t2`.`subct`
+				`CondoTags` `ctleft`
+			GROUP BY
+				`ctleft`.`CondoId`
+		) `t1` ON `c_1`.`Id` = `t1`.`subct`
 		LEFT JOIN (
 			SELECT
 				`ccleft`.`CondoId` as `subcc`,
-				`ccleft`.`CountCondoCategories`
+				Count(*) as `CountCondoCategories`
 			FROM
-				(
-					SELECT
-						`t3`.`CondoId`,
-						Count(*) as `CountCondoCategories`
-					FROM
-						`CategoryCondos` `t3`
-					GROUP BY
-						`t3`.`CondoId`
-				) `ccleft`
-		) `t4` ON `c_1`.`Id` = `t4`.`subcc`
+				`CategoryCondos` `ccleft`
+			GROUP BY
+				`ccleft`.`CondoId`
+		) `t2` ON `c_1`.`Id` = `t2`.`subcc`
 
 BeforeExecute
 -- MySqlConnector MySql
