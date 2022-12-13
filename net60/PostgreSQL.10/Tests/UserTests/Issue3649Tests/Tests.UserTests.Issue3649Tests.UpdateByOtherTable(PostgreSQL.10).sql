@@ -34,19 +34,25 @@ BeforeExecute
 UPDATE
 	"Total"
 SET
-	"Sum" = "Total"."Sum" + eg."SumAggr"
+	"Sum" = "Total"."Sum" + t2."SumAggr"
 FROM
 	(
 		SELECT
-			t1."TotalId",
-			Sum(t1."Sum") as "SumAggr"
+			eg."TotalId",
+			eg."SumAggr"
 		FROM
-			"Entry" t1
-		GROUP BY
-			t1."TotalId"
-	) eg
+			(
+				SELECT
+					t1."TotalId",
+					Sum(t1."Sum") as "SumAggr"
+				FROM
+					"Entry" t1
+				GROUP BY
+					t1."TotalId"
+			) eg
+	) t2
 WHERE
-	"Total"."Label" = 'spendings' AND "Total"."Id" = eg."TotalId"
+	"Total"."Label" = 'spendings' AND "Total"."Id" = t2."TotalId"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
