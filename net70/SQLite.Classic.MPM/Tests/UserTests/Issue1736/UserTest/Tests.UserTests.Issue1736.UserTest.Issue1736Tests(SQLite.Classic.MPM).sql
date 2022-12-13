@@ -144,7 +144,7 @@ SELECT
 	[cr].[ResourceID],
 	[cr].[MaterialID],
 	[cr].[Status],
-	[cr].[C_c_Id],
+	[cr].[C_1],
 	[cr].[SS_ss_Id],
 	[cr].[ChannelID],
 	[cr].[AisleID],
@@ -156,25 +156,23 @@ SELECT
 FROM
 	(
 		SELECT
+			[t1].[Quantity],
+			[t1].[RefQty],
 			[t1].[R_r_Id],
 			[t1].[ResourcePointID],
 			[t1].[IR_ir_Id],
 			[t1].[ProductStatus],
-			[t1].[Quantity],
 			[t1].[ResourceID],
 			[t1].[MaterialID],
 			[t1].[Status],
-			[t1].[C_c_Id],
+			[t1].[C_c_Id] as [C_1],
 			[t1].[SS_ss_Id],
 			[t1].[ChannelID],
 			[t1].[AisleID],
 			[t1].[AisleStatus],
 			[t1].[RP_rp_Id],
 			[t1].[IsStoragePlace],
-			[t1].[RefQty],
-			[t1].[MixedStock],
-			NULL as [C_1],
-			NULL as [SS]
+			[t1].[MixedStock]
 		FROM
 			(
 				SELECT
@@ -222,7 +220,9 @@ FROM
 						)
 							THEN 1
 						ELSE 0
-					END as [MixedStock]
+					END as [MixedStock],
+					NULL as [C_1],
+					NULL as [SS]
 				FROM
 					[StorageShelfDTO] [ss]
 						INNER JOIN [ChannelDTO] [c_1] ON [ss].[ChannelID] = [c_1].[Id]
@@ -235,37 +235,37 @@ FROM
 				WHERE
 					[ir].[MaterialID] = @Value_1 AND [ir].[ProductStatus] = 0 AND
 					[ir].[Quantity] > 0
+				UNION
+				SELECT
+					[r_1].[Id] as [R_r_Id],
+					[r_1].[ResourcePointID],
+					[ir_1].[Id] as [IR_ir_Id],
+					[ir_1].[ProductStatus],
+					[ir_1].[Quantity],
+					[ir_1].[ResourceID],
+					[ir_1].[MaterialID],
+					[ir_1].[Status],
+					[rp_1].[Id] as [C_c_Id],
+					NULL as [SS_ss_Id],
+					NULL as [ChannelID],
+					NULL as [AisleID],
+					0 as [AisleStatus],
+					NULL as [RP_rp_Id],
+					[rp_1].[IsStoragePlace],
+					0 as [RefQty],
+					0 as [MixedStock],
+					NULL as [C_1],
+					NULL as [SS]
+				FROM
+					[WmsResourcePointDTO] [rp_1]
+						INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
+						INNER JOIN [InventoryResourceDTO] [ir_1] ON [r_1].[Id] = [ir_1].[ResourceID]
+				WHERE
+					[rp_1].[IsStoragePlace] = 1 AND
+					[ir_1].[MaterialID] = @Value_1 AND
+					[ir_1].[ProductStatus] = 0 AND
+					[ir_1].[Quantity] > 0
 			) [t1]
-		UNION
-		SELECT
-			[r_1].[Id] as [R_r_Id],
-			[r_1].[ResourcePointID],
-			[ir_1].[Id] as [IR_ir_Id],
-			[ir_1].[ProductStatus],
-			[ir_1].[Quantity],
-			[ir_1].[ResourceID],
-			[ir_1].[MaterialID],
-			[ir_1].[Status],
-			[rp_1].[Id] as [C_c_Id],
-			NULL as [SS_ss_Id],
-			NULL as [ChannelID],
-			NULL as [AisleID],
-			0 as [AisleStatus],
-			NULL as [RP_rp_Id],
-			[rp_1].[IsStoragePlace],
-			0 as [RefQty],
-			0 as [MixedStock],
-			NULL as [C_1],
-			NULL as [SS]
-		FROM
-			[WmsResourcePointDTO] [rp_1]
-				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
-				INNER JOIN [InventoryResourceDTO] [ir_1] ON [r_1].[Id] = [ir_1].[ResourceID]
-		WHERE
-			[rp_1].[IsStoragePlace] = 1 AND
-			[ir_1].[MaterialID] = @Value_1 AND
-			[ir_1].[ProductStatus] = 0 AND
-			[ir_1].[Quantity] > 0
 	) [cr]
 WHERE
 	[cr].[Quantity] > [cr].[RefQty]
