@@ -34,13 +34,21 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	'Title',
-	selectParam.Title,
-	sumOrNull(selectParam.YearsExperience)
+	t1.Name,
+	t1.Key_1,
+	sumOrNull(t1.YearsExperience)
 FROM
-	odata_person selectParam
+	(
+		SELECT
+			selectParam.Title as Key_1,
+			'Title' as Name,
+			selectParam.YearsExperience as YearsExperience
+		FROM
+			odata_person selectParam
+	) t1
 GROUP BY
-	selectParam.Title
+	t1.Key_1,
+	t1.Name
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

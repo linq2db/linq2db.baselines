@@ -76,8 +76,8 @@ BeforeExecute
 SELECT
 	c_1.Id,
 	c_1.LocationId,
-	ccleft.CountCondoCategories,
-	ctleft.CountCondoTags,
+	t4.CountCondoCategories,
+	t2.CountCondoTags,
 	l.LocationName,
 	l.Id
 FROM
@@ -85,22 +85,34 @@ FROM
 		INNER JOIN Locations l ON c_1.LocationId = l.Id
 		LEFT JOIN (
 			SELECT
-				t1.CondoId as CondoId,
-				Count(*) as CountCondoTags
+				ctleft.CondoId as subct,
+				ctleft.CountCondoTags as CountCondoTags
 			FROM
-				CondoTags t1
-			GROUP BY
-				t1.CondoId
-		) ctleft ON c_1.Id = ctleft.CondoId
+				(
+					SELECT
+						t1.CondoId as CondoId,
+						Count(*) as CountCondoTags
+					FROM
+						CondoTags t1
+					GROUP BY
+						t1.CondoId
+				) ctleft
+		) t2 ON c_1.Id = t2.subct
 		LEFT JOIN (
 			SELECT
-				t2.CondoId as CondoId,
-				Count(*) as CountCondoCategories
+				ccleft.CondoId as subcc,
+				ccleft.CountCondoCategories as CountCondoCategories
 			FROM
-				CategoryCondos t2
-			GROUP BY
-				t2.CondoId
-		) ccleft ON c_1.Id = ccleft.CondoId
+				(
+					SELECT
+						t3.CondoId as CondoId,
+						Count(*) as CountCondoCategories
+					FROM
+						CategoryCondos t3
+					GROUP BY
+						t3.CondoId
+				) ccleft
+		) t4 ON c_1.Id = t4.subcc
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

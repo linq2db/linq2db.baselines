@@ -2,25 +2,43 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	selectParam.LastName,
-	toInt32(0),
-	NULL,
-	Coalesce(NULL, 'M')
+	t1.Key_1,
+	t1.Key_2,
+	t1.Key_3,
+	Coalesce(t1.Key_3, 'M')
 FROM
-	Person selectParam
+	(
+		SELECT
+			selectParam.LastName as Key_1,
+			toInt32(0) as Key_2,
+			NULL as Key_3
+		FROM
+			Person selectParam
+	) t1
 GROUP BY
-	selectParam.LastName
+	t1.Key_1,
+	t1.Key_2,
+	t1.Key_3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	selectParam.LastName,
-	toInt32(0),
-	NULL,
-	Coalesce(NULL, 'M')
+	t1.Key_1,
+	t1.Key_2,
+	t1.Key_3,
+	Coalesce(t1.Key_3, 'M')
 FROM
-	Person selectParam
+	(
+		SELECT
+			selectParam.LastName as Key_1,
+			toInt32(0) as Key_2,
+			NULL as Key_3
+		FROM
+			Person selectParam
+	) t1
 GROUP BY
-	selectParam.LastName
+	t1.Key_1,
+	t1.Key_2,
+	t1.Key_3
 
