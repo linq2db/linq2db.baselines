@@ -2,8 +2,8 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[p].[ParentID],
-	[p].[Count_1]
+	[t3].[ParentID],
+	[t3].[Count_1]
 FROM
 	[Child] [c_1] WITH (SPATIAL_WINDOW_MAX_CELLS=10, Index(IX_ChildIndex))
 		INNER HASH JOIN (
@@ -28,6 +28,6 @@ FROM
 					WHERE
 						[t].[ParentID] = [t2].[ParentID]
 				)
-		) [p] ON [c_1].[ParentID] = [p].[ParentID]
+		) [t3] ON [c_1].[ParentID] = [t3].[ParentID]
 OPTION (RECOMPILE, FAST 10, HASH JOIN)
 
