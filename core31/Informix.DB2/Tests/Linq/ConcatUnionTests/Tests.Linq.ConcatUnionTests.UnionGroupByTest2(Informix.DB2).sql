@@ -9,32 +9,25 @@ FROM
 	LinqDataTypes t1
 UNION
 SELECT
-	t3.month_1,
-	t3.year_1,
-	t3.int_1
+	t2.month_1,
+	t2.year_1,
+	1
 FROM
 	(
 		SELECT
-			t2.month_1,
-			t2.year_1,
-			1 as int_1
+			Month(selectParam.DateTimeValue) as month_1,
+			Year(selectParam.DateTimeValue) as year_1
 		FROM
-			(
-				SELECT
-					Month(selectParam.DateTimeValue) as month_1,
-					Year(selectParam.DateTimeValue) as year_1
-				FROM
-					LinqDataTypes selectParam
-			) t2
-		GROUP BY
-			t2.month_1,
-			t2.year_1
-	) t3
+			LinqDataTypes selectParam
+	) t2
+GROUP BY
+	t2.month_1,
+	t2.year_1
 UNION
 SELECT
-	Year(t4.DateTimeValue),
-	Year(t4.DateTimeValue),
+	Year(t3.DateTimeValue),
+	Year(t3.DateTimeValue),
 	2
 FROM
-	LinqDataTypes t4
+	LinqDataTypes t3
 
