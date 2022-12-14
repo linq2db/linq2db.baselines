@@ -20,6 +20,10 @@ IF (OBJECT_ID(N'Issue2816Table') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Text UniVarChar(1) -- String
+SET     @Text = ' '
 
 INSERT INTO [Issue2816Table]
 (
@@ -28,12 +32,16 @@ INSERT INTO [Issue2816Table]
 )
 VALUES
 (
-	1,
-	' '
+	@Id,
+	@Text
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Text UniVarChar(3) -- String
+SET     @Text = '   '
 
 INSERT INTO [Issue2816Table]
 (
@@ -42,12 +50,16 @@ INSERT INTO [Issue2816Table]
 )
 VALUES
 (
-	2,
-	'   '
+	@Id,
+	@Text
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 3
+DECLARE @Text UniVarChar(4) -- String
+SET     @Text = '  x '
 
 INSERT INTO [Issue2816Table]
 (
@@ -56,8 +68,8 @@ INSERT INTO [Issue2816Table]
 )
 VALUES
 (
-	3,
-	'  x '
+	@Id,
+	@Text
 )
 
 BeforeExecute
