@@ -2,27 +2,20 @@
 -- SqlServer.2022
 
 SELECT
-	[t2].[month_1],
-	[t2].[year_1],
-	[t2].[int_1]
+	[t1].[month_1],
+	[t1].[year_1],
+	1
 FROM
 	(
 		SELECT
-			[t1].[month_1],
-			[t1].[year_1],
-			1 as [int_1]
+			DatePart(month, [selectParam].[DateTimeValue]) as [month_1],
+			DatePart(year, [selectParam].[DateTimeValue]) as [year_1]
 		FROM
-			(
-				SELECT
-					DatePart(month, [selectParam].[DateTimeValue]) as [month_1],
-					DatePart(year, [selectParam].[DateTimeValue]) as [year_1]
-				FROM
-					[LinqDataTypes] [selectParam]
-			) [t1]
-		GROUP BY
-			[t1].[month_1],
-			[t1].[year_1]
-	) [t2]
+			[LinqDataTypes] [selectParam]
+	) [t1]
+GROUP BY
+	[t1].[month_1],
+	[t1].[year_1]
 UNION
 SELECT
 	[_].[SmallIntValue],
