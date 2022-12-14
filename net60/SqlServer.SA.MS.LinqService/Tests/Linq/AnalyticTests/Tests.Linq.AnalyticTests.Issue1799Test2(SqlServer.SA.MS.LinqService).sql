@@ -50,26 +50,25 @@ DECLARE @take Int -- Int32
 SET     @take = 10
 
 SELECT TOP (@take)
-	[t1].[User_1],
-	[t1].[ProcessName],
-	[t1].[UserGroups],
-	Sum([t1].[Diff])
+	[q].[User_1],
+	[p].[ProcessName],
+	[u].[UserGroups],
+	Sum([q].[Diff])
 FROM
 	(
 		SELECT
 			[x].[EventUser] as [User_1],
-			[u].[UserGroups],
-			[p].[ProcessName],
+			[x].[ProcessID] as [Proc],
 			DateDiff(minute, LAG([x].[EventTime]) OVER(PARTITION BY [x].[EventUser], [x].[ProcessID] ORDER BY [x].[EventTime]), [x].[EventTime]) as [Diff]
 		FROM
 			[Issue1799Table1] [x]
-				INNER JOIN [Issue1799Table2] [u] ON [u].[UserId] = [x].[EventUser]
-				INNER JOIN [Issue1799Table3] [p] ON [p].[ProcessID] = [x].[ProcessID]
-	) [t1]
+	) [q]
+		INNER JOIN [Issue1799Table2] [u] ON [u].[UserId] = [q].[User_1]
+		INNER JOIN [Issue1799Table3] [p] ON [p].[ProcessID] = [q].[Proc]
 GROUP BY
-	[t1].[User_1],
-	[t1].[UserGroups],
-	[t1].[ProcessName]
+	[q].[User_1],
+	[u].[UserGroups],
+	[p].[ProcessName]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

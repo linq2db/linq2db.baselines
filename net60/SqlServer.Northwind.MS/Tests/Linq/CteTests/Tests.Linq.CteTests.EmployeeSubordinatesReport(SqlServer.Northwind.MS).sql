@@ -42,35 +42,43 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[e_1].[LastName],
-	[e_1].[FirstName],
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Employees] [e2]
-		WHERE
-			([e2].[ReportsTo] = [e_1].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [e_1].[ReportsTo] IS NULL)
-	),
+	[employee].[LastName],
+	[employee].[FirstName],
+	[employee].[NumberOfSubordinates],
 	[t1].[LastName],
 	[t1].[FirstName],
 	[t1].[NumberOfSubordinates]
 FROM
-	[Employees] [e_1]
+	(
+		SELECT
+			[e].[ReportsTo],
+			[e].[LastName],
+			[e].[FirstName],
+			(
+				SELECT
+					Count(*)
+				FROM
+					[Employees] [e2]
+				WHERE
+					([e2].[ReportsTo] = [e].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL)
+			) as [NumberOfSubordinates]
+		FROM
+			[Employees] [e]
+	) [employee]
 		LEFT JOIN (
 			SELECT
-				[e].[EmployeeID],
-				[e].[LastName],
-				[e].[FirstName],
+				[e_1].[EmployeeID],
+				[e_1].[LastName],
+				[e_1].[FirstName],
 				(
 					SELECT
 						Count(*)
 					FROM
 						[Employees] [e2_1]
 					WHERE
-						([e2_1].[ReportsTo] = [e].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL)
+						([e2_1].[ReportsTo] = [e_1].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [e_1].[ReportsTo] IS NULL)
 				) as [NumberOfSubordinates]
 			FROM
-				[Employees] [e]
-		) [t1] ON [e_1].[ReportsTo] = [t1].[EmployeeID]
+				[Employees] [e_1]
+		) [t1] ON [employee].[ReportsTo] = [t1].[EmployeeID]
 
