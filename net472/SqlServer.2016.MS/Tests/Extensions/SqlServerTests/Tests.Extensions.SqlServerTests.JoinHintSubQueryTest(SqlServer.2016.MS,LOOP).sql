@@ -2,8 +2,8 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[p].[ParentID],
-	[p].[Count_1]
+	[t3].[ParentID],
+	[t3].[Count_1]
 FROM
 	[Child] [c_1]
 		INNER LOOP JOIN (
@@ -28,5 +28,5 @@ FROM
 					WHERE
 						[t].[ParentID] = [t2].[ParentID]
 				)
-		) [p] ON [c_1].[ParentID] = [p].[ParentID]
+		) [t3] ON [c_1].[ParentID] = [t3].[ParentID]
 
