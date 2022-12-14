@@ -45,8 +45,8 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[c_2].[CategoryName],
-	[c_2].[NumberOfProducts],
+	[t1].[CategoryName],
+	[t1].[NumberOfProducts],
 	[p_1].[ProductName],
 	[p_1].[UnitPrice]
 FROM
@@ -65,7 +65,7 @@ FROM
 				) as [NumberOfProducts]
 			FROM
 				[Categories] [c_1]
-		) [c_2] ON [c_2].[CategoryID] = [p_1].[CategoryID]
+		) [t1] ON [t1].[CategoryID] = [p_1].[CategoryID]
 WHERE
 	[p_1].[UnitPrice] > 10
 ORDER BY
