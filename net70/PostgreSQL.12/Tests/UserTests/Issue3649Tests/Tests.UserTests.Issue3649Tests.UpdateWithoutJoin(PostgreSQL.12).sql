@@ -34,19 +34,19 @@ BeforeExecute
 UPDATE
 	"Total"
 SET
-	"Sum" = "Total"."Sum" + eg."SumAggr"
+	"Sum" = "Total"."Sum" + t1."SumAggr"
 FROM
 	(
 		SELECT
-			t1."TotalId",
-			Sum(t1."Sum") as "SumAggr"
+			eg."TotalId",
+			Sum(eg."Sum") as "SumAggr"
 		FROM
-			"Entry" t1
+			"Entry" eg
 		GROUP BY
-			t1."TotalId"
-	) eg
+			eg."TotalId"
+	) t1
 WHERE
-	"Total"."Id" = eg."TotalId"
+	"Total"."Id" = t1."TotalId"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

@@ -45,9 +45,9 @@ SELECT
 	[employee].[LastName],
 	[employee].[FirstName],
 	[employee].[NumberOfSubordinates],
-	[manager].[LastName],
-	[manager].[FirstName],
-	[manager].[NumberOfSubordinates]
+	[t1].[LastName],
+	[t1].[FirstName],
+	[t1].[NumberOfSubordinates]
 FROM
 	(
 		SELECT
@@ -80,5 +80,5 @@ FROM
 				) as [NumberOfSubordinates]
 			FROM
 				[Employees] [e_1]
-		) [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
+		) [t1] ON [employee].[ReportsTo] = [t1].[EmployeeID]
 
