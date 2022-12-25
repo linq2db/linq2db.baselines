@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [ConcurrencyTable`1]
+DROP TABLE IF EXISTS [ConcurrencyTable]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [ConcurrencyTable`1]
+CREATE TABLE IF NOT EXISTS [ConcurrencyTable]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Stamp] INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_ConcurrencyTable`1] PRIMARY KEY ([Id])
+	CONSTRAINT [PK_ConcurrencyTable] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 NVarChar(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO [ConcurrencyTable`1]
+INSERT INTO [ConcurrencyTable]
 (
 	[Id],
 	[Stamp],
@@ -45,7 +45,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -57,12 +57,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	[ConcurrencyTable`1]
+	[ConcurrencyTable]
 SET
-	[Stamp] = [ConcurrencyTable`1].[Stamp] + 1,
+	[Stamp] = [ConcurrencyTable].[Stamp] + 1,
 	[Value] = @Value_1
 WHERE
-	[ConcurrencyTable`1].[Id] = @Id AND [ConcurrencyTable`1].[Stamp] = @Stamp
+	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -72,7 +72,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -84,12 +84,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	[ConcurrencyTable`1]
+	[ConcurrencyTable]
 SET
-	[Stamp] = [ConcurrencyTable`1].[Stamp] + 1,
+	[Stamp] = [ConcurrencyTable].[Stamp] + 1,
 	[Value] = @Value_1
 WHERE
-	[ConcurrencyTable`1].[Id] = @Id AND [ConcurrencyTable`1].[Stamp] = @Stamp
+	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -99,7 +99,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -111,12 +111,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	[ConcurrencyTable`1]
+	[ConcurrencyTable]
 SET
-	[Stamp] = [ConcurrencyTable`1].[Stamp] + 1,
+	[Stamp] = [ConcurrencyTable].[Stamp] + 1,
 	[Value] = @Value_1
 WHERE
-	[ConcurrencyTable`1].[Id] = @Id AND [ConcurrencyTable`1].[Stamp] = @Stamp
+	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -126,7 +126,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -136,9 +136,9 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
-	[ConcurrencyTable`1]
+	[ConcurrencyTable]
 WHERE
-	[ConcurrencyTable`1].[Id] = @Id AND [ConcurrencyTable`1].[Stamp] = @Stamp
+	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -148,7 +148,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -158,9 +158,9 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -8
 
 DELETE FROM
-	[ConcurrencyTable`1]
+	[ConcurrencyTable]
 WHERE
-	[ConcurrencyTable`1].[Id] = @Id AND [ConcurrencyTable`1].[Stamp] = @Stamp
+	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -170,10 +170,10 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [ConcurrencyTable`1]
+DROP TABLE IF EXISTS [ConcurrencyTable]
 
