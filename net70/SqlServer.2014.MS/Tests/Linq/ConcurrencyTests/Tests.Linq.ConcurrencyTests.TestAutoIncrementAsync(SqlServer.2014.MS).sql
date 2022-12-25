@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[ConcurrencyTable`1]', N'U') IS NOT NULL)
-	DROP TABLE [ConcurrencyTable`1]
+IF (OBJECT_ID(N'[ConcurrencyTable]', N'U') IS NOT NULL)
+	DROP TABLE [ConcurrencyTable]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[ConcurrencyTable`1]', N'U') IS NULL)
-	CREATE TABLE [ConcurrencyTable`1]
+IF (OBJECT_ID(N'[ConcurrencyTable]', N'U') IS NULL)
+	CREATE TABLE [ConcurrencyTable]
 	(
 		[Id]    Int            NOT NULL,
 		[Stamp] Int            NOT NULL,
 		[Value] NVarChar(4000)     NULL,
 
-		CONSTRAINT [PK_ConcurrencyTable`1] PRIMARY KEY CLUSTERED ([Id])
+		CONSTRAINT [PK_ConcurrencyTable] PRIMARY KEY CLUSTERED ([Id])
 	)
 
 BeforeExecute
@@ -26,7 +26,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 NVarChar(4000) -- String
 SET     @Value_1 = N'initial'
 
-INSERT INTO [ConcurrencyTable`1]
+INSERT INTO [ConcurrencyTable]
 (
 	[Id],
 	[Stamp],
@@ -47,7 +47,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
@@ -64,7 +64,7 @@ SET
 	[obj].[Stamp] = [obj].[Stamp] + 1,
 	[obj].[Value] = @Value_1
 FROM
-	[ConcurrencyTable`1] [obj]
+	[ConcurrencyTable] [obj]
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
@@ -76,7 +76,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
@@ -93,7 +93,7 @@ SET
 	[obj].[Stamp] = [obj].[Stamp] + 1,
 	[obj].[Value] = @Value_1
 FROM
-	[ConcurrencyTable`1] [obj]
+	[ConcurrencyTable] [obj]
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
@@ -105,7 +105,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
@@ -122,7 +122,7 @@ SET
 	[obj].[Stamp] = [obj].[Stamp] + 1,
 	[obj].[Value] = @Value_1
 FROM
-	[ConcurrencyTable`1] [obj]
+	[ConcurrencyTable] [obj]
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
@@ -134,7 +134,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
@@ -145,7 +145,7 @@ SET     @Stamp = -9
 
 DELETE [obj]
 FROM
-	[ConcurrencyTable`1] [obj]
+	[ConcurrencyTable] [obj]
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
@@ -157,7 +157,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
@@ -168,7 +168,7 @@ SET     @Stamp = -8
 
 DELETE [obj]
 FROM
-	[ConcurrencyTable`1] [obj]
+	[ConcurrencyTable] [obj]
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
@@ -180,11 +180,11 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable`1] [t1]
+	[ConcurrencyTable] [t1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[ConcurrencyTable`1]', N'U') IS NOT NULL)
-	DROP TABLE [ConcurrencyTable`1]
+IF (OBJECT_ID(N'[ConcurrencyTable]', N'U') IS NOT NULL)
+	DROP TABLE [ConcurrencyTable]
 
