@@ -2,10 +2,16 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	selectParam.ChildID + toInt32(1),
-	sumOrNull(selectParam.ParentID)
+	t1.n,
+	sumOrNull(t1.ParentID)
 FROM
-	Child selectParam
+	(
+		SELECT
+			selectParam.ChildID + toInt32(1) as n,
+			selectParam.ParentID as ParentID
+		FROM
+			Child selectParam
+	) t1
 GROUP BY
-	selectParam.ChildID + toInt32(1)
+	t1.n
 

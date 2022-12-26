@@ -2,10 +2,15 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	YEAR(a_Types.DateTimeValue)
+	t1.Key_1
 FROM
-	Parent selectParam
-		LEFT JOIN LinqDataTypes a_Types ON selectParam.ParentID = a_Types.ID
+	(
+		SELECT
+			YEAR(a_Types.DateTimeValue) as Key_1
+		FROM
+			Parent selectParam
+				LEFT JOIN LinqDataTypes a_Types ON selectParam.ParentID = a_Types.ID
+	) t1
 GROUP BY
-	YEAR(a_Types.DateTimeValue)
+	t1.Key_1
 

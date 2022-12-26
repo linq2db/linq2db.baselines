@@ -2,11 +2,16 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toDate32(selectParam.DateTimeValue),
+	t1.Date_1,
 	Count(*)
 FROM
-	LinqDataTypes selectParam
-		INNER JOIN Parent p ON selectParam.ID = p.ParentID
+	(
+		SELECT
+			toDate32(selectParam.DateTimeValue) as Date_1
+		FROM
+			LinqDataTypes selectParam
+				INNER JOIN Parent p ON selectParam.ID = p.ParentID
+	) t1
 GROUP BY
-	toDate32(selectParam.DateTimeValue)
+	t1.Date_1
 

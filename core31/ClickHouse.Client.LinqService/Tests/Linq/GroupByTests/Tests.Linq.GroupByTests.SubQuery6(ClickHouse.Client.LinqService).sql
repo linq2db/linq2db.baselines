@@ -2,9 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	ch.ParentID + toInt32(1)
+	t1.ParentID
 FROM
-	Child ch
+	(
+		SELECT
+			ch.ParentID + toInt32(1) as ParentID
+		FROM
+			Child ch
+	) t1
 GROUP BY
-	ch.ParentID + toInt32(1)
+	t1.ParentID
 

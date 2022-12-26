@@ -2,11 +2,16 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	ch.ParentID + toInt32(1)
+	t1.ParentID
 FROM
-	Child ch
-WHERE
-	ch.ParentID > toInt32(0)
+	(
+		SELECT
+			ch.ParentID + toInt32(1) as ParentID
+		FROM
+			Child ch
+		WHERE
+			ch.ParentID > toInt32(0)
+	) t1
 GROUP BY
-	ch.ParentID + toInt32(1)
+	t1.ParentID
 

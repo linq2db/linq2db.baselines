@@ -45,14 +45,19 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	addMonths(selectParam.TransactionDate, toInt32(-1)),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			addMonths(selectParam.TransactionDate, toInt32(-1)) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	addMonths(selectParam.TransactionDate, toInt32(-1))
+	t1.Key_1
 ORDER BY
-	addMonths(selectParam.TransactionDate, toInt32(-1))
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

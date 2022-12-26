@@ -45,14 +45,19 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toUnixTimestamp64Milli(selectParam.TransactionDate) % 1000,
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			toUnixTimestamp64Milli(selectParam.TransactionDate) % 1000 as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	toUnixTimestamp64Milli(selectParam.TransactionDate) % 1000
+	t1.Key_1
 ORDER BY
-	toUnixTimestamp64Milli(selectParam.TransactionDate) % 1000
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -45,14 +45,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	(DAYOFWEEK(addDays(selectParam.TransactionDate, 1))) - toInt32(1),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			(DAYOFWEEK(addDays(selectParam.TransactionDate, 1))) - toInt32(1) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	(DAYOFWEEK(addDays(selectParam.TransactionDate, 1))) - toInt32(1)
+	t1.Key_1
 ORDER BY
-	(DAYOFWEEK(addDays(selectParam.TransactionDate, 1))) - toInt32(1)
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -45,14 +45,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	fromUnixTimestamp64Nano(toInt64(toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 9)) + toInt64(toFloat64(-1)) * 1000000)),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			fromUnixTimestamp64Nano(toInt64(toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 9)) + toInt64(toFloat64(-1)) * 1000000)) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	fromUnixTimestamp64Nano(toInt64(toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 9)) + toInt64(toFloat64(-1)) * 1000000))
+	t1.Key_1
 ORDER BY
-	fromUnixTimestamp64Nano(toInt64(toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 9)) + toInt64(toFloat64(-1)) * 1000000))
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

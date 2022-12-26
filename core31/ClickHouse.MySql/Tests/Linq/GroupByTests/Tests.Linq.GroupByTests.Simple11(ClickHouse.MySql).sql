@@ -2,13 +2,19 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	selectParam.ParentID + toInt32(1),
-	selectParam.ChildID
+	t1.ParentID,
+	t1.Key_1
 FROM
-	GrandChild selectParam
+	(
+		SELECT
+			selectParam.ParentID + toInt32(1) as ParentID,
+			selectParam.ChildID as Key_1
+		FROM
+			GrandChild selectParam
+	) t1
 GROUP BY
-	selectParam.ParentID + toInt32(1),
-	selectParam.ChildID
+	t1.ParentID,
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

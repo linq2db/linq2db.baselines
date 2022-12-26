@@ -2,9 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	YEAR(selectParam.DateTimeValue)
+	t1.Key_1
 FROM
-	LinqDataTypes selectParam
+	(
+		SELECT
+			YEAR(selectParam.DateTimeValue) as Key_1
+		FROM
+			LinqDataTypes selectParam
+	) t1
 GROUP BY
-	YEAR(selectParam.DateTimeValue)
+	t1.Key_1
 

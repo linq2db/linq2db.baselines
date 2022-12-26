@@ -230,14 +230,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	DAYOFYEAR(selectParam.TransactionDate),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			DAYOFYEAR(selectParam.TransactionDate) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	DAYOFYEAR(selectParam.TransactionDate)
+	t1.Key_1
 ORDER BY
-	DAYOFYEAR(selectParam.TransactionDate)
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

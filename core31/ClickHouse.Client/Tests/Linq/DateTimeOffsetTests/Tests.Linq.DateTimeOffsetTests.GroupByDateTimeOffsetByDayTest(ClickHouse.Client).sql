@@ -45,14 +45,19 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	DAY(selectParam.TransactionDate),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			DAY(selectParam.TransactionDate) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	DAY(selectParam.TransactionDate)
+	t1.Key_1
 ORDER BY
-	DAY(selectParam.TransactionDate)
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

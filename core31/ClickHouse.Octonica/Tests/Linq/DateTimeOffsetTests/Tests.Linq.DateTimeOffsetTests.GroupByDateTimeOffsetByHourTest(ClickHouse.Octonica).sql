@@ -45,14 +45,19 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	HOUR(selectParam.TransactionDate),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			HOUR(selectParam.TransactionDate) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	HOUR(selectParam.TransactionDate)
+	t1.Key_1
 ORDER BY
-	HOUR(selectParam.TransactionDate)
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

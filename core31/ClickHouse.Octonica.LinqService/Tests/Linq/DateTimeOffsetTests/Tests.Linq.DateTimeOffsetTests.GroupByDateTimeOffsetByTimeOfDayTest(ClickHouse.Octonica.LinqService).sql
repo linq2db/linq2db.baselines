@@ -230,14 +230,19 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toInt64((toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(selectParam.TransactionDate), 7))) / 100),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			toInt64((toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(selectParam.TransactionDate), 7))) / 100) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	toInt64((toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(selectParam.TransactionDate), 7))) / 100)
+	t1.Key_1
 ORDER BY
-	toInt64((toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(selectParam.TransactionDate), 7))) / 100)
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

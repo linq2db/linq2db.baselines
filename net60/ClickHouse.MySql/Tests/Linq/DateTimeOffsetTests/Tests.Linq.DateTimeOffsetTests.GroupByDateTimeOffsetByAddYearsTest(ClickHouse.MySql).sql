@@ -45,14 +45,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	addYears(selectParam.TransactionDate, toInt32(-1)),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			addYears(selectParam.TransactionDate, toInt32(-1)) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	addYears(selectParam.TransactionDate, toInt32(-1))
+	t1.Key_1
 ORDER BY
-	addYears(selectParam.TransactionDate, toInt32(-1))
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

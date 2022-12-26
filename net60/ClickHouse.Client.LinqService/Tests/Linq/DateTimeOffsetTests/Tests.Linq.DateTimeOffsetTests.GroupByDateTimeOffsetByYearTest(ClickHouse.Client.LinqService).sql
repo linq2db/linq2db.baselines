@@ -230,14 +230,19 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	YEAR(selectParam.TransactionDate),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			YEAR(selectParam.TransactionDate) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	YEAR(selectParam.TransactionDate)
+	t1.Key_1
 ORDER BY
-	YEAR(selectParam.TransactionDate)
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

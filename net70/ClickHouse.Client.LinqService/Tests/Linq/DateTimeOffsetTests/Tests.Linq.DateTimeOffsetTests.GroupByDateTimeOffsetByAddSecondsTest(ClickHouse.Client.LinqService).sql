@@ -230,14 +230,19 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	addSeconds(selectParam.TransactionDate, toFloat64(-1)),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			addSeconds(selectParam.TransactionDate, toFloat64(-1)) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	addSeconds(selectParam.TransactionDate, toFloat64(-1))
+	t1.Key_1
 ORDER BY
-	addSeconds(selectParam.TransactionDate, toFloat64(-1))
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

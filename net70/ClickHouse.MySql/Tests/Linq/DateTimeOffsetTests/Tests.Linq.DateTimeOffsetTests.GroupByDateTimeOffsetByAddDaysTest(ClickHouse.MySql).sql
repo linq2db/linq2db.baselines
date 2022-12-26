@@ -45,14 +45,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	addDays(selectParam.TransactionDate, toFloat64(-1)),
+	t1.Key_1,
 	Count(*)
 FROM
-	Transactions selectParam
+	(
+		SELECT
+			addDays(selectParam.TransactionDate, toFloat64(-1)) as Key_1
+		FROM
+			Transactions selectParam
+	) t1
 GROUP BY
-	addDays(selectParam.TransactionDate, toFloat64(-1))
+	t1.Key_1
 ORDER BY
-	addDays(selectParam.TransactionDate, toFloat64(-1))
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
