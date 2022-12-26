@@ -9,25 +9,19 @@ FROM
 	"LinqDataTypes" t1
 UNION
 SELECT
-	t2."month_1",
-	t2."year_1",
+	To_Number(To_Char(selectParam."DateTimeValue", 'MM')),
+	To_Number(To_Char(selectParam."DateTimeValue", 'YYYY')),
 	1
 FROM
-	(
-		SELECT
-			To_Number(To_Char(selectParam."DateTimeValue", 'MM')) as "month_1",
-			To_Number(To_Char(selectParam."DateTimeValue", 'YYYY')) as "year_1"
-		FROM
-			"LinqDataTypes" selectParam
-	) t2
+	"LinqDataTypes" selectParam
 GROUP BY
-	t2."month_1",
-	t2."year_1"
+	To_Number(To_Char(selectParam."DateTimeValue", 'MM')),
+	To_Number(To_Char(selectParam."DateTimeValue", 'YYYY'))
 UNION
 SELECT
-	To_Number(To_Char(t3."DateTimeValue", 'YYYY')),
-	To_Number(To_Char(t3."DateTimeValue", 'YYYY')),
+	To_Number(To_Char(t2."DateTimeValue", 'YYYY')),
+	To_Number(To_Char(t2."DateTimeValue", 'YYYY')),
 	2
 FROM
-	"LinqDataTypes" t3
+	"LinqDataTypes" t2
 
