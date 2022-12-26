@@ -24,28 +24,42 @@ DECLARE @DATUM Datetime -- DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT
-	Extract(year from Coalesce(`n`.`DATUM`, @_default)),
-	Extract(month from Coalesce(`n`.`DATUM`, @_default)),
-	Sum(`n`.`SKUPAJ`)
+	`t1`.`Year_1`,
+	`t1`.`Month_1`,
+	Sum(`t1`.`SKUPAJ`)
 FROM
-	`Issue3761Table` `n`
-WHERE
-	`n`.`DATUM` < @DATUM
+	(
+		SELECT
+			Extract(year from Coalesce(`n`.`DATUM`, @_default)) as `Year_1`,
+			Extract(month from Coalesce(`n`.`DATUM`, @_default)) as `Month_1`,
+			`n`.`SKUPAJ`
+		FROM
+			`Issue3761Table` `n`
+		WHERE
+			`n`.`DATUM` < @DATUM
+	) `t1`
 GROUP BY
-	Extract(year from Coalesce(`n`.`DATUM`, @_default)),
-	Extract(month from Coalesce(`n`.`DATUM`, @_default))
+	`t1`.`Year_1`,
+	`t1`.`Month_1`
 UNION ALL
 SELECT
-	Extract(year from Coalesce(`n_1`.`DATUM`, @_default)),
-	Extract(month from Coalesce(`n_1`.`DATUM`, @_default)),
-	Sum(`n_1`.`SKUPAJ`)
+	`t2`.`Year_1`,
+	`t2`.`Month_1`,
+	Sum(`t2`.`SKUPAJ`)
 FROM
-	`Issue3761Table` `n_1`
-WHERE
-	`n_1`.`DATUM` >= @DATUM
+	(
+		SELECT
+			Extract(year from Coalesce(`n_1`.`DATUM`, @_default)) as `Year_1`,
+			Extract(month from Coalesce(`n_1`.`DATUM`, @_default)) as `Month_1`,
+			`n_1`.`SKUPAJ`
+		FROM
+			`Issue3761Table` `n_1`
+		WHERE
+			`n_1`.`DATUM` >= @DATUM
+	) `t2`
 GROUP BY
-	Extract(year from Coalesce(`n_1`.`DATUM`, @_default)),
-	Extract(month from Coalesce(`n_1`.`DATUM`, @_default))
+	`t2`.`Year_1`,
+	`t2`.`Month_1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql

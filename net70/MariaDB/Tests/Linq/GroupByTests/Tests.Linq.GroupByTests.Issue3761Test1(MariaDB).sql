@@ -24,16 +24,23 @@ DECLARE @DATUM DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT
-	Extract(year from Coalesce(`n`.`DATUM`, @_default)),
-	Extract(month from Coalesce(`n`.`DATUM`, @_default)),
-	Sum(`n`.`SKUPAJ`)
+	`t1`.`Key_1`,
+	`t1`.`Key_2`,
+	Sum(`t1`.`SKUPAJ`)
 FROM
-	`Issue3761Table` `n`
-WHERE
-	`n`.`DATUM` < @DATUM
+	(
+		SELECT
+			Extract(year from Coalesce(`n`.`DATUM`, @_default)) as `Key_1`,
+			Extract(month from Coalesce(`n`.`DATUM`, @_default)) as `Key_2`,
+			`n`.`SKUPAJ`
+		FROM
+			`Issue3761Table` `n`
+		WHERE
+			`n`.`DATUM` < @DATUM
+	) `t1`
 GROUP BY
-	Extract(year from Coalesce(`n`.`DATUM`, @_default)),
-	Extract(month from Coalesce(`n`.`DATUM`, @_default))
+	`t1`.`Key_1`,
+	`t1`.`Key_2`
 
 BeforeExecute
 -- MariaDB MySql.Official MySql

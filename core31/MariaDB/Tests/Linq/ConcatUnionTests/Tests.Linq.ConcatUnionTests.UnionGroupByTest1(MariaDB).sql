@@ -2,14 +2,20 @@
 -- MariaDB MySql.Official MySql
 
 SELECT
-	Extract(month from `selectParam`.`DateTimeValue`),
-	Extract(year from `selectParam`.`DateTimeValue`),
+	`t1`.`month_1`,
+	`t1`.`year_1`,
 	1
 FROM
-	`LinqDataTypes` `selectParam`
+	(
+		SELECT
+			Extract(month from `selectParam`.`DateTimeValue`) as `month_1`,
+			Extract(year from `selectParam`.`DateTimeValue`) as `year_1`
+		FROM
+			`LinqDataTypes` `selectParam`
+	) `t1`
 GROUP BY
-	Extract(month from `selectParam`.`DateTimeValue`),
-	Extract(year from `selectParam`.`DateTimeValue`)
+	`t1`.`month_1`,
+	`t1`.`year_1`
 UNION
 SELECT
 	`_`.`SmallIntValue`,

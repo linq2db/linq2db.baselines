@@ -11,15 +11,21 @@ SELECT
 			`Child` `ch`
 		WHERE
 			`ch`.`ParentID` < 2 AND
-			`ch_1`.`ParentID` + 1 = `ch`.`ParentID` + 1 AND
-			`ch_1`.`ChildID` = `ch`.`ChildID` AND
+			`t1`.`ParentID` = `ch`.`ParentID` + 1 AND
+			`t1`.`ChildID` = `ch`.`ChildID` AND
 			`ch`.`ParentID` + 2 > @n
 	)
 FROM
-	`Child` `ch_1`
-WHERE
-	`ch_1`.`ParentID` + 2 > @n
+	(
+		SELECT
+			`ch_1`.`ParentID` + 1 as `ParentID`,
+			`ch_1`.`ChildID`
+		FROM
+			`Child` `ch_1`
+		WHERE
+			`ch_1`.`ParentID` + 2 > @n
+	) `t1`
 GROUP BY
-	`ch_1`.`ParentID` + 1,
-	`ch_1`.`ChildID`
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
 

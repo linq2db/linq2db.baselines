@@ -2,12 +2,19 @@
 -- MariaDBConnector MySqlConnector MySql
 
 SELECT
-	Sum(`selectParam`.`MoneyValue`),
-	Extract(year from `selectParam`.`DateTimeValue`),
-	Extract(month from `selectParam`.`DateTimeValue`)
+	Sum(`t1`.`MoneyValue`),
+	`t1`.`Key_2`,
+	`t1`.`Key_1`
 FROM
-	`LinqDataTypes` `selectParam`
+	(
+		SELECT
+			Extract(month from `selectParam`.`DateTimeValue`) as `Key_1`,
+			Extract(year from `selectParam`.`DateTimeValue`) as `Key_2`,
+			`selectParam`.`MoneyValue`
+		FROM
+			`LinqDataTypes` `selectParam`
+	) `t1`
 GROUP BY
-	Extract(month from `selectParam`.`DateTimeValue`),
-	Extract(year from `selectParam`.`DateTimeValue`)
+	`t1`.`Key_1`,
+	`t1`.`Key_2`
 

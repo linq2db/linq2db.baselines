@@ -2,9 +2,14 @@
 -- MariaDB MySql.Official MySql
 
 SELECT
-	Extract(year from `selectParam`.`DateTimeValue`)
+	`t1`.`Key_1`
 FROM
-	`LinqDataTypes` `selectParam`
+	(
+		SELECT
+			Extract(year from `selectParam`.`DateTimeValue`) as `Key_1`
+		FROM
+			`LinqDataTypes` `selectParam`
+	) `t1`
 GROUP BY
-	Extract(year from `selectParam`.`DateTimeValue`)
+	`t1`.`Key_1`
 
