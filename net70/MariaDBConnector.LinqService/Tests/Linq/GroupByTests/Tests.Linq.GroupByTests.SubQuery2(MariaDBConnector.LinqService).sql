@@ -4,16 +4,11 @@ DECLARE @n Int32
 SET     @n = 0
 
 SELECT
-	`t1`.`ParentID`
+	`ch`.`ParentID` + 1
 FROM
-	(
-		SELECT
-			`ch`.`ParentID` + 1 as `ParentID`
-		FROM
-			`Child` `ch`
-		WHERE
-			`ch`.`ParentID` > @n
-	) `t1`
+	`Child` `ch`
+WHERE
+	`ch`.`ParentID` > @n
 GROUP BY
-	`t1`.`ParentID`
+	`ch`.`ParentID` + 1
 
