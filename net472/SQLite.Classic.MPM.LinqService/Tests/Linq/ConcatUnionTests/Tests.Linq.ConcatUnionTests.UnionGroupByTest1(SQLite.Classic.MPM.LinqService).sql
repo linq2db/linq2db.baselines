@@ -2,20 +2,14 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[month_1],
-	[t1].[year_1],
+	Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int),
+	Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int),
 	1
 FROM
-	(
-		SELECT
-			Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as [month_1],
-			Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as [year_1]
-		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+	[LinqDataTypes] [selectParam]
 GROUP BY
-	[t1].[month_1],
-	[t1].[year_1]
+	Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int),
+	Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int)
 UNION
 SELECT
 	[_].[SmallIntValue],
