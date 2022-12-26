@@ -2,13 +2,19 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	selectParam."ParentID" + 1,
-	selectParam."ChildID"
+	t1."ParentID",
+	t1."Key_1"
 FROM
-	"GrandChild" selectParam
+	(
+		SELECT
+			selectParam."ParentID" + 1 as "ParentID",
+			selectParam."ChildID" as "Key_1"
+		FROM
+			"GrandChild" selectParam
+	) t1
 GROUP BY
-	selectParam."ParentID" + 1,
-	selectParam."ChildID"
+	t1."ParentID",
+	t1."Key_1"
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

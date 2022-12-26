@@ -40,28 +40,42 @@ DECLARE @DATUM TimeStamp -- DateTime
 SET     @DATUM = TIMESTAMP '2019-01-01 00:00:00.000000'
 
 SELECT
-	To_Number(To_Char(Nvl(n.DATUM, :default_1), 'YYYY')),
-	To_Number(To_Char(Nvl(n.DATUM, :default_1), 'MM')),
-	Sum(n.SKUPAJ)
+	t1."Year_1",
+	t1."Month_1",
+	Sum(t1.SKUPAJ)
 FROM
-	"Issue3761Table" n
-WHERE
-	n.DATUM < :DATUM
+	(
+		SELECT
+			To_Number(To_Char(Nvl(n.DATUM, :default_1), 'YYYY')) as "Year_1",
+			To_Number(To_Char(Nvl(n.DATUM, :default_1), 'MM')) as "Month_1",
+			n.SKUPAJ
+		FROM
+			"Issue3761Table" n
+		WHERE
+			n.DATUM < :DATUM
+	) t1
 GROUP BY
-	To_Number(To_Char(Nvl(n.DATUM, :default_1), 'YYYY')),
-	To_Number(To_Char(Nvl(n.DATUM, :default_1), 'MM'))
+	t1."Year_1",
+	t1."Month_1"
 UNION ALL
 SELECT
-	To_Number(To_Char(Nvl(n_1.DATUM, :default_1), 'YYYY')),
-	To_Number(To_Char(Nvl(n_1.DATUM, :default_1), 'MM')),
-	Sum(n_1.SKUPAJ)
+	t2."Year_1",
+	t2."Month_1",
+	Sum(t2.SKUPAJ)
 FROM
-	"Issue3761Table" n_1
-WHERE
-	n_1.DATUM >= :DATUM
+	(
+		SELECT
+			To_Number(To_Char(Nvl(n_1.DATUM, :default_1), 'YYYY')) as "Year_1",
+			To_Number(To_Char(Nvl(n_1.DATUM, :default_1), 'MM')) as "Month_1",
+			n_1.SKUPAJ
+		FROM
+			"Issue3761Table" n_1
+		WHERE
+			n_1.DATUM >= :DATUM
+	) t2
 GROUP BY
-	To_Number(To_Char(Nvl(n_1.DATUM, :default_1), 'YYYY')),
-	To_Number(To_Char(Nvl(n_1.DATUM, :default_1), 'MM'))
+	t2."Year_1",
+	t2."Month_1"
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

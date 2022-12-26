@@ -4,14 +4,19 @@ DECLARE @take Int32
 SET     @take = 5
 
 SELECT
-	Trunc(CURRENT_TIMESTAMP, 'DD') as "Key",
+	t1."c1" as "Key",
 	Count(*) as "Count"
 FROM
-	"Parent" v
-		INNER JOIN "Child" s ON v."ParentID" = s."ParentID"
-WHERE
-	v."Value1" > 0
+	(
+		SELECT
+			Trunc(CURRENT_TIMESTAMP, 'DD') as "c1"
+		FROM
+			"Parent" v
+				INNER JOIN "Child" s ON v."ParentID" = s."ParentID"
+		WHERE
+			v."Value1" > 0
+	) t1
 GROUP BY
-	Trunc(CURRENT_TIMESTAMP, 'DD')
+	t1."c1"
 FETCH NEXT :take ROWS ONLY
 
