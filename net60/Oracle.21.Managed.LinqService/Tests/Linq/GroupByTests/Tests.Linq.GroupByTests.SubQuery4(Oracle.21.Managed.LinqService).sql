@@ -2,10 +2,16 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	selectParam."ChildID" + 1,
-	Sum(selectParam."ParentID")
+	t1."n",
+	Sum(t1."ParentID")
 FROM
-	"Child" selectParam
+	(
+		SELECT
+			selectParam."ChildID" + 1 as "n",
+			selectParam."ParentID"
+		FROM
+			"Child" selectParam
+	) t1
 GROUP BY
-	selectParam."ChildID" + 1
+	t1."n"
 

@@ -40,16 +40,23 @@ DECLARE @DATUM TimeStamp -- DateTime
 SET     @DATUM = TIMESTAMP '2019-01-01 00:00:00.000000'
 
 SELECT
-	To_Number(To_Char(Nvl(n.DATUM, :default_1), 'YYYY')),
-	To_Number(To_Char(Nvl(n.DATUM, :default_1), 'MM')),
-	Sum(n.SKUPAJ)
+	t1."Key_1",
+	t1."Key_2",
+	Sum(t1.SKUPAJ)
 FROM
-	"Issue3761Table" n
-WHERE
-	n.DATUM < :DATUM
+	(
+		SELECT
+			To_Number(To_Char(Nvl(n.DATUM, :default_1), 'YYYY')) as "Key_1",
+			To_Number(To_Char(Nvl(n.DATUM, :default_1), 'MM')) as "Key_2",
+			n.SKUPAJ
+		FROM
+			"Issue3761Table" n
+		WHERE
+			n.DATUM < :DATUM
+	) t1
 GROUP BY
-	To_Number(To_Char(Nvl(n.DATUM, :default_1), 'YYYY')),
-	To_Number(To_Char(Nvl(n.DATUM, :default_1), 'MM'))
+	t1."Key_1",
+	t1."Key_2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
