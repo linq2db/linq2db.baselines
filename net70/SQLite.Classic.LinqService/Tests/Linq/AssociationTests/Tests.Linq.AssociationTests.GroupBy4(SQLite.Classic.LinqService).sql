@@ -2,9 +2,14 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int)
+	[t1].[Key_1]
 FROM
-	[LinqDataTypes] [selectParam]
+	(
+		SELECT
+			Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as [Key_1]
+		FROM
+			[LinqDataTypes] [selectParam]
+	) [t1]
 GROUP BY
-	Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int)
+	[t1].[Key_1]
 

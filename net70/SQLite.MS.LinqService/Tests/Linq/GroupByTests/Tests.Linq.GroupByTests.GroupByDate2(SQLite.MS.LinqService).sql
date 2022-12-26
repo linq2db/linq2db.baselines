@@ -2,12 +2,19 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Sum([selectParam].[MoneyValue]),
-	Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int),
-	Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)
+	Sum([t1].[MoneyValue]),
+	[t1].[Key_2],
+	[t1].[Key_1]
 FROM
-	[LinqDataTypes] [selectParam]
+	(
+		SELECT
+			Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as [Key_1],
+			Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as [Key_2],
+			[selectParam].[MoneyValue]
+		FROM
+			[LinqDataTypes] [selectParam]
+	) [t1]
 GROUP BY
-	Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int),
-	Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int)
+	[t1].[Key_1],
+	[t1].[Key_2]
 

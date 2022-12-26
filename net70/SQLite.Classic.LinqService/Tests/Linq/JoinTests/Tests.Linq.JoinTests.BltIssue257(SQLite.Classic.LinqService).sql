@@ -2,11 +2,16 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	Date([selectParam].[DateTimeValue]),
+	[t1].[Date_1],
 	Count(*)
 FROM
-	[LinqDataTypes] [selectParam]
-		INNER JOIN [Parent] [p] ON [selectParam].[ID] = [p].[ParentID]
+	(
+		SELECT
+			Date([selectParam].[DateTimeValue]) as [Date_1]
+		FROM
+			[LinqDataTypes] [selectParam]
+				INNER JOIN [Parent] [p] ON [selectParam].[ID] = [p].[ParentID]
+	) [t1]
 GROUP BY
-	Date([selectParam].[DateTimeValue])
+	[t1].[Date_1]
 
