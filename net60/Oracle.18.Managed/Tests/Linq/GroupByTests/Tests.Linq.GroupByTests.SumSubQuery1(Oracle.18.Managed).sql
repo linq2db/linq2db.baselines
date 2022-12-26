@@ -4,12 +4,18 @@ DECLARE @n Int32
 SET     @n = 1
 
 SELECT
-	Sum(ch."ParentID" - 2)
+	Sum(t1."ParentID" - 3)
 FROM
-	"Child" ch
-WHERE
-	ch."ParentID" + 2 > :n
+	(
+		SELECT
+			ch."ParentID" + 1 as "ParentID",
+			ch."ChildID"
+		FROM
+			"Child" ch
+		WHERE
+			ch."ParentID" + 2 > :n
+	) t1
 GROUP BY
-	ch."ParentID" + 1,
-	ch."ChildID"
+	t1."ParentID",
+	t1."ChildID"
 
