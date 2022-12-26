@@ -34,30 +34,20 @@ DECLARE @to_1 TimeStamp -- DateTime
 SET     @to_1 = TIMESTAMP '2020-02-29 17:54:55.123123'
 
 SELECT
-	Min(t1."TranslatedMessage1"),
-	t1."Key_2",
-	t1."Key_3",
+	Min(m_1."TranslatedMessage1"),
+	m_1."TranslatedMessageGroup",
+	To_Number(To_Char(m_1."TimestampGenerated", 'HH24')),
 	Count(*),
-	Sum(1000 * (EXTRACT(SECOND FROM CAST (t1."TimestampGone" as TIMESTAMP) - CAST (t1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST (t1."TimestampGone" as TIMESTAMP) - CAST (t1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST (t1."TimestampGone" as TIMESTAMP) - CAST (t1."TimestampGenerated" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST (t1."TimestampGone" as TIMESTAMP) - CAST (t1."TimestampGenerated" as TIMESTAMP))))))
+	Sum(1000 * (EXTRACT(SECOND FROM CAST (m_1."TimestampGone" as TIMESTAMP) - CAST (m_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST (m_1."TimestampGone" as TIMESTAMP) - CAST (m_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST (m_1."TimestampGone" as TIMESTAMP) - CAST (m_1."TimestampGenerated" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST (m_1."TimestampGone" as TIMESTAMP) - CAST (m_1."TimestampGenerated" as TIMESTAMP))))))
 FROM
-	(
-		SELECT
-			m_1."ExternID1" as "Key_1",
-			m_1."TranslatedMessageGroup" as "Key_2",
-			To_Number(To_Char(m_1."TimestampGenerated", 'HH24')) as "Key_3",
-			m_1."TranslatedMessage1",
-			m_1."TimestampGenerated",
-			m_1."TimestampGone"
-		FROM
-			"Issue2564Table" m_1
-		WHERE
-			m_1."TimestampGone" IS NOT NULL AND
-			m_1."TimestampGenerated" >= :from_1 AND
-			m_1."TimestampGenerated" <= :to_1 AND
-			m_1."MessageClassName" = 'Error'
-	) t1
+	"Issue2564Table" m_1
+WHERE
+	m_1."TimestampGone" IS NOT NULL AND
+	m_1."TimestampGenerated" >= :from_1 AND
+	m_1."TimestampGenerated" <= :to_1 AND
+	m_1."MessageClassName" = 'Error'
 GROUP BY
-	t1."Key_1",
-	t1."Key_2",
-	t1."Key_3"
+	m_1."ExternID1",
+	m_1."TranslatedMessageGroup",
+	To_Number(To_Char(m_1."TimestampGenerated", 'HH24'))
 
