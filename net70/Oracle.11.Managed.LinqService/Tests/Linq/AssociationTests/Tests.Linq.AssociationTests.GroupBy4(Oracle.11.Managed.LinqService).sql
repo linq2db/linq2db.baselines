@@ -2,9 +2,14 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	To_Number(To_Char(selectParam."DateTimeValue", 'YYYY'))
+	t1."Key_1"
 FROM
-	"LinqDataTypes" selectParam
+	(
+		SELECT
+			To_Number(To_Char(selectParam."DateTimeValue", 'YYYY')) as "Key_1"
+		FROM
+			"LinqDataTypes" selectParam
+	) t1
 GROUP BY
-	To_Number(To_Char(selectParam."DateTimeValue", 'YYYY'))
+	t1."Key_1"
 
