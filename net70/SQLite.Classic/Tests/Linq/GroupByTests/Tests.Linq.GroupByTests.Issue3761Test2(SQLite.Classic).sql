@@ -24,42 +24,28 @@ DECLARE @DATUM  -- DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT
-	[t1].[Year_1],
-	[t1].[Month_1],
-	Sum([t1].[SKUPAJ])
+	Cast(StrFTime('%Y', Coalesce([n].[DATUM], @_default)) as int),
+	Cast(StrFTime('%m', Coalesce([n].[DATUM], @_default)) as int),
+	Sum([n].[SKUPAJ])
 FROM
-	(
-		SELECT
-			Cast(StrFTime('%Y', Coalesce([n].[DATUM], @_default)) as int) as [Year_1],
-			Cast(StrFTime('%m', Coalesce([n].[DATUM], @_default)) as int) as [Month_1],
-			[n].[SKUPAJ]
-		FROM
-			[Issue3761Table] [n]
-		WHERE
-			DateTime([n].[DATUM]) < DateTime(@DATUM)
-	) [t1]
+	[Issue3761Table] [n]
+WHERE
+	DateTime([n].[DATUM]) < DateTime(@DATUM)
 GROUP BY
-	[t1].[Year_1],
-	[t1].[Month_1]
+	Cast(StrFTime('%Y', Coalesce([n].[DATUM], @_default)) as int),
+	Cast(StrFTime('%m', Coalesce([n].[DATUM], @_default)) as int)
 UNION ALL
 SELECT
-	[t2].[Year_1],
-	[t2].[Month_1],
-	Sum([t2].[SKUPAJ])
+	Cast(StrFTime('%Y', Coalesce([n_1].[DATUM], @_default)) as int),
+	Cast(StrFTime('%m', Coalesce([n_1].[DATUM], @_default)) as int),
+	Sum([n_1].[SKUPAJ])
 FROM
-	(
-		SELECT
-			Cast(StrFTime('%Y', Coalesce([n_1].[DATUM], @_default)) as int) as [Year_1],
-			Cast(StrFTime('%m', Coalesce([n_1].[DATUM], @_default)) as int) as [Month_1],
-			[n_1].[SKUPAJ]
-		FROM
-			[Issue3761Table] [n_1]
-		WHERE
-			DateTime([n_1].[DATUM]) >= DateTime(@DATUM)
-	) [t2]
+	[Issue3761Table] [n_1]
+WHERE
+	DateTime([n_1].[DATUM]) >= DateTime(@DATUM)
 GROUP BY
-	[t2].[Year_1],
-	[t2].[Month_1]
+	Cast(StrFTime('%Y', Coalesce([n_1].[DATUM], @_default)) as int),
+	Cast(StrFTime('%m', Coalesce([n_1].[DATUM], @_default)) as int)
 
 BeforeExecute
 -- SQLite.Classic SQLite

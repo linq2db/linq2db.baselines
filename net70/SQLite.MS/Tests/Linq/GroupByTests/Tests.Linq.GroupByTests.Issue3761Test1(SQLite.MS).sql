@@ -24,23 +24,16 @@ DECLARE @DATUM  -- DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT
-	[t1].[Key_1],
-	[t1].[Key_2],
-	Sum([t1].[SKUPAJ])
+	Cast(StrFTime('%Y', Coalesce([n].[DATUM], @_default)) as int),
+	Cast(StrFTime('%m', Coalesce([n].[DATUM], @_default)) as int),
+	Sum([n].[SKUPAJ])
 FROM
-	(
-		SELECT
-			Cast(StrFTime('%Y', Coalesce([n].[DATUM], @_default)) as int) as [Key_1],
-			Cast(StrFTime('%m', Coalesce([n].[DATUM], @_default)) as int) as [Key_2],
-			[n].[SKUPAJ]
-		FROM
-			[Issue3761Table] [n]
-		WHERE
-			DateTime([n].[DATUM]) < DateTime(@DATUM)
-	) [t1]
+	[Issue3761Table] [n]
+WHERE
+	DateTime([n].[DATUM]) < DateTime(@DATUM)
 GROUP BY
-	[t1].[Key_1],
-	[t1].[Key_2]
+	Cast(StrFTime('%Y', Coalesce([n].[DATUM], @_default)) as int),
+	Cast(StrFTime('%m', Coalesce([n].[DATUM], @_default)) as int)
 
 BeforeExecute
 -- SQLite.MS SQLite
