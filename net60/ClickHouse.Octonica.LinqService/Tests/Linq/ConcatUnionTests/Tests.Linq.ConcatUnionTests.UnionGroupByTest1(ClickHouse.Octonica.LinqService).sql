@@ -2,20 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.month_1,
-	t1.year_1,
+	MONTH(selectParam.DateTimeValue),
+	YEAR(selectParam.DateTimeValue),
 	toInt32(1)
 FROM
-	(
-		SELECT
-			MONTH(selectParam.DateTimeValue) as month_1,
-			YEAR(selectParam.DateTimeValue) as year_1
-		FROM
-			LinqDataTypes selectParam
-	) t1
+	LinqDataTypes selectParam
 GROUP BY
-	t1.month_1,
-	t1.year_1
+	MONTH(selectParam.DateTimeValue),
+	YEAR(selectParam.DateTimeValue)
 UNION DISTINCT
 SELECT
 	toInt32(_.SmallIntValue),

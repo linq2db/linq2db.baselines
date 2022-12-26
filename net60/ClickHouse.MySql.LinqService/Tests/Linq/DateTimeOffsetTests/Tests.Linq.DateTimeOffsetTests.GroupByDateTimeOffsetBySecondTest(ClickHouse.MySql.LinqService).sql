@@ -230,19 +230,14 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Key_1,
+	SECOND(selectParam.TransactionDate),
 	Count(*)
 FROM
-	(
-		SELECT
-			SECOND(selectParam.TransactionDate) as Key_1
-		FROM
-			Transactions selectParam
-	) t1
+	Transactions selectParam
 GROUP BY
-	t1.Key_1
+	SECOND(selectParam.TransactionDate)
 ORDER BY
-	t1.Key_1
+	SECOND(selectParam.TransactionDate)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

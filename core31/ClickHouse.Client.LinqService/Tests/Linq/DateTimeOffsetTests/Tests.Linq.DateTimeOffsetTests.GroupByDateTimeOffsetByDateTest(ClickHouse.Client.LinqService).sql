@@ -230,19 +230,14 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.Key_1,
+	toDate32(selectParam.TransactionDate),
 	Count(*)
 FROM
-	(
-		SELECT
-			toDate32(selectParam.TransactionDate) as Key_1
-		FROM
-			Transactions selectParam
-	) t1
+	Transactions selectParam
 GROUP BY
-	t1.Key_1
+	toDate32(selectParam.TransactionDate)
 ORDER BY
-	t1.Key_1
+	toDate32(selectParam.TransactionDate)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

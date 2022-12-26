@@ -2,14 +2,9 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ParentID
+	ch.ParentID + toInt32(1)
 FROM
-	(
-		SELECT
-			ch.ParentID + toInt32(1) as ParentID
-		FROM
-			Child ch
-	) t1
+	Child ch
 GROUP BY
-	t1.ParentID
+	ch.ParentID + toInt32(1)
 

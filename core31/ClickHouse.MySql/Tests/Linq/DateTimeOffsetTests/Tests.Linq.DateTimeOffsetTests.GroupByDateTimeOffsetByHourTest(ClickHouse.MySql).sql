@@ -45,19 +45,14 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Key_1,
+	HOUR(selectParam.TransactionDate),
 	Count(*)
 FROM
-	(
-		SELECT
-			HOUR(selectParam.TransactionDate) as Key_1
-		FROM
-			Transactions selectParam
-	) t1
+	Transactions selectParam
 GROUP BY
-	t1.Key_1
+	HOUR(selectParam.TransactionDate)
 ORDER BY
-	t1.Key_1
+	HOUR(selectParam.TransactionDate)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -45,19 +45,14 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.Key_1,
+	fromUnixTimestamp64Nano(toInt64(toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 9)) + toInt64(toFloat64(-1)) * 1000000)),
 	Count(*)
 FROM
-	(
-		SELECT
-			fromUnixTimestamp64Nano(toInt64(toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 9)) + toInt64(toFloat64(-1)) * 1000000)) as Key_1
-		FROM
-			Transactions selectParam
-	) t1
+	Transactions selectParam
 GROUP BY
-	t1.Key_1
+	fromUnixTimestamp64Nano(toInt64(toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 9)) + toInt64(toFloat64(-1)) * 1000000))
 ORDER BY
-	t1.Key_1
+	fromUnixTimestamp64Nano(toInt64(toUnixTimestamp64Nano(toDateTime64(selectParam.TransactionDate, 9)) + toInt64(toFloat64(-1)) * 1000000))
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

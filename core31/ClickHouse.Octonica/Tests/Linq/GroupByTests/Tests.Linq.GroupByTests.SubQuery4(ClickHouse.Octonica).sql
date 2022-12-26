@@ -2,16 +2,10 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.n,
-	sumOrNull(t1.ParentID)
+	selectParam.ChildID + toInt32(1),
+	sumOrNull(selectParam.ParentID)
 FROM
-	(
-		SELECT
-			selectParam.ChildID + toInt32(1) as n,
-			selectParam.ParentID as ParentID
-		FROM
-			Child selectParam
-	) t1
+	Child selectParam
 GROUP BY
-	t1.n
+	selectParam.ChildID + toInt32(1)
 

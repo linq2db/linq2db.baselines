@@ -2,14 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.Key_1
+	YEAR(selectParam.DateTimeValue)
 FROM
-	(
-		SELECT
-			YEAR(selectParam.DateTimeValue) as Key_1
-		FROM
-			LinqDataTypes selectParam
-	) t1
+	LinqDataTypes selectParam
 GROUP BY
-	t1.Key_1
+	YEAR(selectParam.DateTimeValue)
 

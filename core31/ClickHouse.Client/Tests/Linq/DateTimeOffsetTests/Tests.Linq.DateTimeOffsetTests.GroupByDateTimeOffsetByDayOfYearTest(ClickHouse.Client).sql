@@ -45,19 +45,14 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.Key_1,
+	DAYOFYEAR(selectParam.TransactionDate),
 	Count(*)
 FROM
-	(
-		SELECT
-			DAYOFYEAR(selectParam.TransactionDate) as Key_1
-		FROM
-			Transactions selectParam
-	) t1
+	Transactions selectParam
 GROUP BY
-	t1.Key_1
+	DAYOFYEAR(selectParam.TransactionDate)
 ORDER BY
-	t1.Key_1
+	DAYOFYEAR(selectParam.TransactionDate)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
