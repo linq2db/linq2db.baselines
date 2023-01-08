@@ -237,17 +237,17 @@ ON (Target."Id" = "Source"."Id")
 WHEN NOT MATCHED THEN
 INSERT
 (
-	"Id",
 	"Field1",
 	"Field2",
-	"Field4"
+	"Field4",
+	"Id"
 )
 VALUES
 (
-	"Source"."Id",
 	"Source"."Field1",
 	"Source"."Field2",
-	"Source"."Field4"
+	"Source"."Field4",
+	"Source"."Id"
 )
 
 WHEN MATCHED THEN
@@ -265,12 +265,12 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."Id",
 	t1."Field1",
 	t1."Field2",
 	t1."Field3",
 	t1."Field4",
-	t1."Field5"
+	t1."Field5",
+	t1."Id"
 FROM
 	"TestMerge1" t1
 ORDER BY
