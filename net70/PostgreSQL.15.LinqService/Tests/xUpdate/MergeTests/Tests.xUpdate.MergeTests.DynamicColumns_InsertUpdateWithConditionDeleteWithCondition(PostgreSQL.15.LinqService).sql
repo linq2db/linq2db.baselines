@@ -244,17 +244,17 @@ ON ("Target"."Id" = "Source"."Id")
 WHEN NOT MATCHED THEN
 INSERT
 (
+	"Id",
 	"Field1",
 	"Field2",
-	"Field4",
-	"Id"
+	"Field4"
 )
 VALUES
 (
+	"Source"."Id",
 	"Source"."Field1",
 	"Source"."Field2",
-	"Source"."Field4",
-	"Source"."Id"
+	"Source"."Field4"
 )
 
 WHEN MATCHED AND "Target"."Id" = 3 THEN
@@ -269,12 +269,12 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."Field1",
 	t1."Field2",
 	t1."Field3",
 	t1."Field4",
-	t1."Field5",
-	t1."Id"
+	t1."Field5"
 FROM
 	"TestMerge1" t1
 ORDER BY
