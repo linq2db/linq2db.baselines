@@ -18,12 +18,12 @@ BeforeExecute
 
 INSERT INTO [Table_3056]
 (
-	[Description],
-	[Name]
+	[Name],
+	[Description]
 )
 VALUES
-('d0','n1'),
-('d00','n2')
+('n1','d0'),
+('n2','d00')
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
