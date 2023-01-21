@@ -236,13 +236,13 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 4 AS "Key_1", 5 AS "Field01", 7 AS "Field02", NULL AS "Field03", 214 AS "Field04", NULL AS "Field05" FROM rdb$database
+	SELECT 3 AS "Key_1", NULL AS "Field01", 3 AS "Field02", NULL AS "Field03", NULL AS "Field04", NULL AS "Field05" FROM rdb$database
+	UNION ALL
+	SELECT 4, 5, 7, NULL, 214, NULL FROM rdb$database
 	UNION ALL
 	SELECT 5, 10, 4, NULL, NULL, NULL FROM rdb$database
 	UNION ALL
-	SELECT 6, NULL, NULL, NULL, 216, NULL FROM rdb$database
-	UNION ALL
-	SELECT 3, NULL, 3, NULL, NULL, NULL FROM rdb$database) "Source"
+	SELECT 6, NULL, NULL, NULL, 216, NULL FROM rdb$database) "Source"
 (
 	"Key_1",
 	"Field01",
