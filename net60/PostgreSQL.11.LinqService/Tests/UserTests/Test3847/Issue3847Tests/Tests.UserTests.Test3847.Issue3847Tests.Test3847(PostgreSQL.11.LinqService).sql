@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Test3999_OutfeedTransportOrder"
+DROP TABLE IF EXISTS "OutfeedTransportOrderDTO"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "Test3999_OutfeedTransportOrder"
+CREATE TABLE IF NOT EXISTS "OutfeedTransportOrderDTO"
 (
 	"Id" uuid NOT NULL
 )
@@ -23,7 +23,7 @@ SELECT
 	t1."LastCheck",
 	t2."NextCheck"
 FROM
-	"Test3999_OutfeedTransportOrder" outfeed
+	"OutfeedTransportOrderDTO" outfeed
 		LEFT JOIN LATERAL (
 			SELECT
 				x."Value" as "LastCheck"
@@ -46,5 +46,5 @@ FROM
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Test3999_OutfeedTransportOrder"
+DROP TABLE IF EXISTS "OutfeedTransportOrderDTO"
 
