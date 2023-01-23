@@ -8,14 +8,16 @@ DECLARE @:p3 TimeStamp -- DateTime
 SET     @:p3 = System.Object[]
 DECLARE @:p4 Int16
 SET     @:p4 = System.Object[]
-DECLARE @:p5 Blob -- Object
+DECLARE @:p5 Raw -- Binary
 SET     @:p5 = System.Object[]
-DECLARE @:p6 Int16
+DECLARE @:p6 Blob -- Object
 SET     @:p6 = System.Object[]
-DECLARE @:p7 Varchar2 -- String
+DECLARE @:p7 Int16
 SET     @:p7 = System.Object[]
+DECLARE @:p8 Varchar2 -- String
+SET     @:p8 = System.Object[]
 
-INSERT INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "BoolValue", "BinaryValue", "SmallIntValue", "StringValue") VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7)
+INSERT INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "BoolValue", "GuidValue", "BinaryValue", "SmallIntValue", "StringValue") VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8)
 
 BeforeExecute
 --  Oracle.Managed Oracle12
