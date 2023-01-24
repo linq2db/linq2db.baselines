@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-DROP TABLE [ConcurrencyAutoIncrement]
+DROP TABLE [ConcurrencyFiltered]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-CREATE TABLE [ConcurrencyAutoIncrement]
+CREATE TABLE [ConcurrencyFiltered]
 (
 	[Id]    Int           NOT NULL,
 	[Stamp] Int           NOT NULL,
 	[Value] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY CLUSTERED ([Id])
+	CONSTRAINT [PK_ConcurrencyFiltered] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 NVarChar(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO [ConcurrencyAutoIncrement]
+INSERT INTO [ConcurrencyFiltered]
 (
 	[Id],
 	[Stamp],
@@ -45,7 +45,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -57,12 +57,12 @@ DECLARE @Stamp Int -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	[ConcurrencyAutoIncrement] [obj]
+	[ConcurrencyFiltered] [r]
 SET
-	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = ?
+	[r].[Stamp] = [r].[Stamp] + 1,
+	[r].[Value] = ?
 WHERE
-	[obj].[Id] = ? AND [obj].[Stamp] = ?
+	[r].[Id] = 2 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -72,7 +72,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -81,15 +81,15 @@ SET     @Value_1 = 'value 2'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
-SET     @Stamp = -9
+SET     @Stamp = -10
 
 UPDATE
-	[ConcurrencyAutoIncrement] [obj]
+	[ConcurrencyFiltered] [r]
 SET
-	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = ?
+	[r].[Stamp] = [r].[Stamp] + 1,
+	[r].[Value] = ?
 WHERE
-	[obj].[Id] = ? AND [obj].[Stamp] = ?
+	[r].[Id] = 1 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -99,34 +99,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'value 3'
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @Stamp Int -- Int32
-SET     @Stamp = -9
-
-UPDATE
-	[ConcurrencyAutoIncrement] [obj]
-SET
-	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = ?
-WHERE
-	[obj].[Id] = ? AND [obj].[Stamp] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-SELECT
-	[t1].[Id],
-	[t1].[Stamp],
-	[t1].[Value]
-FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -136,9 +109,9 @@ DECLARE @Stamp Int -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
-	[ConcurrencyAutoIncrement] [obj]
+	[ConcurrencyFiltered] [r]
 WHERE
-	[obj].[Id] = ? AND [obj].[Stamp] = ?
+	[r].[Id] = 2 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -148,19 +121,19 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
-SET     @Stamp = -8
+SET     @Stamp = -9
 
 DELETE FROM
-	[ConcurrencyAutoIncrement] [obj]
+	[ConcurrencyFiltered] [r]
 WHERE
-	[obj].[Id] = ? AND [obj].[Stamp] = ?
+	[r].[Id] = 1 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -170,10 +143,10 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-DROP TABLE [ConcurrencyAutoIncrement]
+DROP TABLE [ConcurrencyFiltered]
 

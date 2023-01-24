@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-DROP TABLE [ConcurrencyAutoIncrement]
+DROP TABLE [ConcurrencyFiltered]
 
 BeforeExecute
 -- Access AccessOleDb
 
-CREATE TABLE [ConcurrencyAutoIncrement]
+CREATE TABLE [ConcurrencyFiltered]
 (
 	[Id]    Int           NOT NULL,
 	[Stamp] Int           NOT NULL,
 	[Value] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY CLUSTERED ([Id])
+	CONSTRAINT [PK_ConcurrencyFiltered] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 VarWChar(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO [ConcurrencyAutoIncrement]
+INSERT INTO [ConcurrencyFiltered]
 (
 	[Id],
 	[Stamp],
@@ -45,7 +45,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
@@ -57,12 +57,12 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	[ConcurrencyAutoIncrement] [obj]
+	[ConcurrencyFiltered] [r]
 SET
-	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = @Value_1
+	[r].[Stamp] = [r].[Stamp] + 1,
+	[r].[Value] = @Value_1
 WHERE
-	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
+	[r].[Id] = 2 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
 BeforeExecute
 -- Access AccessOleDb
@@ -72,7 +72,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
@@ -81,15 +81,15 @@ SET     @Value_1 = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
-SET     @Stamp = -9
+SET     @Stamp = -10
 
 UPDATE
-	[ConcurrencyAutoIncrement] [obj]
+	[ConcurrencyFiltered] [r]
 SET
-	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = @Value_1
+	[r].[Stamp] = [r].[Stamp] + 1,
+	[r].[Value] = @Value_1
 WHERE
-	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
+	[r].[Id] = 1 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
 BeforeExecute
 -- Access AccessOleDb
@@ -99,34 +99,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
-
-BeforeExecute
--- Access AccessOleDb (asynchronously)
-DECLARE @Value_1 VarWChar(7) -- String
-SET     @Value_1 = 'value 3'
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @Stamp Integer -- Int32
-SET     @Stamp = -9
-
-UPDATE
-	[ConcurrencyAutoIncrement] [obj]
-SET
-	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = @Value_1
-WHERE
-	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[Stamp],
-	[t1].[Value]
-FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
@@ -136,9 +109,9 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
-	[ConcurrencyAutoIncrement] [obj]
+	[ConcurrencyFiltered] [r]
 WHERE
-	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
+	[r].[Id] = 2 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
 BeforeExecute
 -- Access AccessOleDb
@@ -148,19 +121,19 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
-SET     @Stamp = -8
+SET     @Stamp = -9
 
 DELETE FROM
-	[ConcurrencyAutoIncrement] [obj]
+	[ConcurrencyFiltered] [r]
 WHERE
-	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
+	[r].[Id] = 1 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
 BeforeExecute
 -- Access AccessOleDb
@@ -170,10 +143,10 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
 
-DROP TABLE [ConcurrencyAutoIncrement]
+DROP TABLE [ConcurrencyFiltered]
 

@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-DROP TABLE [ConcurrencyTable]
+DROP TABLE [ConcurrencyAutoIncrement]
 
 BeforeExecute
 -- Access AccessOleDb
 
-CREATE TABLE [ConcurrencyTable]
+CREATE TABLE [ConcurrencyAutoIncrement]
 (
 	[Id]    Int           NOT NULL,
 	[Stamp] Int           NOT NULL,
 	[Value] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_ConcurrencyTable] PRIMARY KEY CLUSTERED ([Id])
+	CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 VarWChar(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO [ConcurrencyTable]
+INSERT INTO [ConcurrencyAutoIncrement]
 (
 	[Id],
 	[Stamp],
@@ -45,7 +45,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -57,7 +57,7 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	[ConcurrencyTable] [obj]
+	[ConcurrencyAutoIncrement] [obj]
 SET
 	[obj].[Stamp] = [obj].[Stamp] + 1,
 	[obj].[Value] = @Value_1
@@ -72,7 +72,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -84,7 +84,7 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	[ConcurrencyTable] [obj]
+	[ConcurrencyAutoIncrement] [obj]
 SET
 	[obj].[Stamp] = [obj].[Stamp] + 1,
 	[obj].[Value] = @Value_1
@@ -99,7 +99,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -111,7 +111,7 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	[ConcurrencyTable] [obj]
+	[ConcurrencyAutoIncrement] [obj]
 SET
 	[obj].[Stamp] = [obj].[Stamp] + 1,
 	[obj].[Value] = @Value_1
@@ -126,7 +126,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -136,7 +136,7 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
-	[ConcurrencyTable] [obj]
+	[ConcurrencyAutoIncrement] [obj]
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
@@ -148,7 +148,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -158,7 +158,7 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -8
 
 DELETE FROM
-	[ConcurrencyTable] [obj]
+	[ConcurrencyAutoIncrement] [obj]
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
@@ -170,10 +170,10 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
 
-DROP TABLE [ConcurrencyTable]
+DROP TABLE [ConcurrencyAutoIncrement]
 
