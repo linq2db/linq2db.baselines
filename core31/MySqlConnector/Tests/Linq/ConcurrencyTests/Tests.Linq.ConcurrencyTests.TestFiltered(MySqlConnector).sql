@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
+DROP TABLE IF EXISTS `ConcurrencyFiltered`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-CREATE TABLE IF NOT EXISTS `ConcurrencyAutoIncrement`
+CREATE TABLE IF NOT EXISTS `ConcurrencyFiltered`
 (
 	`Id`    INT           NOT NULL,
 	`Stamp` INT           NOT NULL,
 	`Value` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_ConcurrencyAutoIncrement` PRIMARY KEY CLUSTERED (`Id`)
+	CONSTRAINT `PK_ConcurrencyFiltered` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 VarChar(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO `ConcurrencyAutoIncrement`
+INSERT INTO `ConcurrencyFiltered`
 (
 	`Id`,
 	`Stamp`,
@@ -45,7 +45,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -57,12 +57,12 @@ DECLARE @Stamp Int32
 SET     @Stamp = -10
 
 UPDATE
-	`ConcurrencyAutoIncrement` `obj`
+	`ConcurrencyFiltered` `r`
 SET
-	`obj`.`Stamp` = `obj`.`Stamp` + 1,
-	`obj`.`Value` = @Value_1
+	`r`.`Stamp` = `r`.`Stamp` + 1,
+	`r`.`Value` = @Value_1
 WHERE
-	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
+	`r`.`Id` = 2 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -72,7 +72,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -81,15 +81,15 @@ SET     @Value_1 = 'value 2'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
-SET     @Stamp = -9
+SET     @Stamp = -10
 
 UPDATE
-	`ConcurrencyAutoIncrement` `obj`
+	`ConcurrencyFiltered` `r`
 SET
-	`obj`.`Stamp` = `obj`.`Stamp` + 1,
-	`obj`.`Value` = @Value_1
+	`r`.`Stamp` = `r`.`Stamp` + 1,
+	`r`.`Value` = @Value_1
 WHERE
-	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
+	`r`.`Id` = 1 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -99,34 +99,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-DECLARE @Value_1 VarChar(7) -- String
-SET     @Value_1 = 'value 3'
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Stamp Int32
-SET     @Stamp = -9
-
-UPDATE
-	`ConcurrencyAutoIncrement` `obj`
-SET
-	`obj`.`Stamp` = `obj`.`Stamp` + 1,
-	`obj`.`Value` = @Value_1
-WHERE
-	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Stamp`,
-	`t1`.`Value`
-FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -135,11 +108,11 @@ SET     @Id = 1
 DECLARE @Stamp Int32
 SET     @Stamp = -9
 
-DELETE   `obj`
+DELETE   `r`
 FROM
-	`ConcurrencyAutoIncrement` `obj`
+	`ConcurrencyFiltered` `r`
 WHERE
-	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
+	`r`.`Id` = 2 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -149,20 +122,20 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
-SET     @Stamp = -8
+SET     @Stamp = -9
 
-DELETE   `obj`
+DELETE   `r`
 FROM
-	`ConcurrencyAutoIncrement` `obj`
+	`ConcurrencyFiltered` `r`
 WHERE
-	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
+	`r`.`Id` = 1 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -172,10 +145,10 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
+DROP TABLE IF EXISTS `ConcurrencyFiltered`
 
