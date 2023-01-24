@@ -2,23 +2,23 @@
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcurrencyTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ConcurrencyTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcurrencyAutoIncrement')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ConcurrencyAutoIncrement"';
 END
 
 BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcurrencyTable')) THEN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcurrencyAutoIncrement')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "ConcurrencyTable"
+			CREATE TABLE "ConcurrencyAutoIncrement"
 			(
 				"Id"    Int                                    NOT NULL,
 				"Stamp" Int                                    NOT NULL,
 				"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-				CONSTRAINT "PK_ConcurrencyTable" PRIMARY KEY ("Id")
+				CONSTRAINT "PK_ConcurrencyAutoIncrement" PRIMARY KEY ("Id")
 			)
 		';
 END
@@ -31,7 +31,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -41,7 +41,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -51,7 +51,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -61,7 +61,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -71,7 +71,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -81,13 +81,13 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcurrencyTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ConcurrencyTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcurrencyAutoIncrement')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "ConcurrencyAutoIncrement"';
 END
 
