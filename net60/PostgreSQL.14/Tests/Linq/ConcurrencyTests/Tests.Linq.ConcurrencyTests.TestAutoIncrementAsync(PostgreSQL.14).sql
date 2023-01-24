@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "ConcurrencyTable"
+DROP TABLE IF EXISTS "ConcurrencyAutoIncrement"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "ConcurrencyTable"
+CREATE TABLE IF NOT EXISTS "ConcurrencyAutoIncrement"
 (
 	"Id"    Int  NOT NULL,
 	"Stamp" Int  NOT NULL,
 	"Value" text     NULL,
 
-	CONSTRAINT "PK_ConcurrencyTable" PRIMARY KEY ("Id")
+	CONSTRAINT "PK_ConcurrencyAutoIncrement" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 Text(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO "ConcurrencyTable"
+INSERT INTO "ConcurrencyAutoIncrement"
 (
 	"Id",
 	"Stamp",
@@ -45,7 +45,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyTable" t1
+	"ConcurrencyAutoIncrement" t1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -57,12 +57,12 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyTable"
+	"ConcurrencyAutoIncrement"
 SET
-	"Stamp" = "ConcurrencyTable"."Stamp" + 1,
+	"Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
 	"Value" = :Value_1
 WHERE
-	"ConcurrencyTable"."Id" = :Id AND "ConcurrencyTable"."Stamp" = :Stamp
+	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -72,7 +72,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyTable" t1
+	"ConcurrencyAutoIncrement" t1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -84,12 +84,12 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyTable"
+	"ConcurrencyAutoIncrement"
 SET
-	"Stamp" = "ConcurrencyTable"."Stamp" + 1,
+	"Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
 	"Value" = :Value_1
 WHERE
-	"ConcurrencyTable"."Id" = :Id AND "ConcurrencyTable"."Stamp" = :Stamp
+	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -99,7 +99,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyTable" t1
+	"ConcurrencyAutoIncrement" t1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -111,12 +111,12 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyTable"
+	"ConcurrencyAutoIncrement"
 SET
-	"Stamp" = "ConcurrencyTable"."Stamp" + 1,
+	"Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
 	"Value" = :Value_1
 WHERE
-	"ConcurrencyTable"."Id" = :Id AND "ConcurrencyTable"."Stamp" = :Stamp
+	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -126,7 +126,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyTable" t1
+	"ConcurrencyAutoIncrement" t1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -136,7 +136,7 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
-	"ConcurrencyTable" obj
+	"ConcurrencyAutoIncrement" obj
 WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
@@ -148,7 +148,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyTable" t1
+	"ConcurrencyAutoIncrement" t1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -158,7 +158,7 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -8
 
 DELETE FROM
-	"ConcurrencyTable" obj
+	"ConcurrencyAutoIncrement" obj
 WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
@@ -170,10 +170,10 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyTable" t1
+	"ConcurrencyAutoIncrement" t1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "ConcurrencyTable"
+DROP TABLE IF EXISTS "ConcurrencyAutoIncrement"
 
