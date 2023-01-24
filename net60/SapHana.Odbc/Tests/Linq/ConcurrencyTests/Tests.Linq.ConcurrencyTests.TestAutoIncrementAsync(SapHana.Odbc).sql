@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "ConcurrencyTable"
+DROP TABLE "ConcurrencyAutoIncrement"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "ConcurrencyTable"
+CREATE COLUMN TABLE "ConcurrencyAutoIncrement"
 (
 	"Id"    Integer       NOT NULL,
 	"Stamp" Integer       NOT NULL,
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 NVarChar(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO "ConcurrencyTable"
+INSERT INTO "ConcurrencyAutoIncrement"
 (
 	"Id",
 	"Stamp",
@@ -45,7 +45,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -57,12 +57,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyTable"
+	"ConcurrencyAutoIncrement"
 SET
-	"ConcurrencyTable"."Stamp" = "ConcurrencyTable"."Stamp" + 1,
-	"ConcurrencyTable"."Value" = ?
+	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
+	"ConcurrencyAutoIncrement"."Value" = ?
 WHERE
-	"ConcurrencyTable"."Id" = ? AND "ConcurrencyTable"."Stamp" = ?
+	"ConcurrencyAutoIncrement"."Id" = ? AND "ConcurrencyAutoIncrement"."Stamp" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -72,7 +72,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -84,12 +84,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyTable"
+	"ConcurrencyAutoIncrement"
 SET
-	"ConcurrencyTable"."Stamp" = "ConcurrencyTable"."Stamp" + 1,
-	"ConcurrencyTable"."Value" = ?
+	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
+	"ConcurrencyAutoIncrement"."Value" = ?
 WHERE
-	"ConcurrencyTable"."Id" = ? AND "ConcurrencyTable"."Stamp" = ?
+	"ConcurrencyAutoIncrement"."Id" = ? AND "ConcurrencyAutoIncrement"."Stamp" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -99,7 +99,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -111,12 +111,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyTable"
+	"ConcurrencyAutoIncrement"
 SET
-	"ConcurrencyTable"."Stamp" = "ConcurrencyTable"."Stamp" + 1,
-	"ConcurrencyTable"."Value" = ?
+	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
+	"ConcurrencyAutoIncrement"."Value" = ?
 WHERE
-	"ConcurrencyTable"."Id" = ? AND "ConcurrencyTable"."Stamp" = ?
+	"ConcurrencyAutoIncrement"."Id" = ? AND "ConcurrencyAutoIncrement"."Stamp" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -126,7 +126,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -136,7 +136,7 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
-	"ConcurrencyTable" "obj"
+	"ConcurrencyAutoIncrement" "obj"
 WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
@@ -148,7 +148,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -158,7 +158,7 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -8
 
 DELETE FROM
-	"ConcurrencyTable" "obj"
+	"ConcurrencyAutoIncrement" "obj"
 WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
@@ -170,10 +170,10 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyTable" "t1"
+	"ConcurrencyAutoIncrement" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "ConcurrencyTable"
+DROP TABLE "ConcurrencyAutoIncrement"
 

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "ConcurrencyAutoIncrement"
+DROP TABLE "ConcurrencyFiltered"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "ConcurrencyAutoIncrement"
+CREATE COLUMN TABLE "ConcurrencyFiltered"
 (
 	"Id"    Integer       NOT NULL,
 	"Stamp" Integer       NOT NULL,
@@ -23,7 +23,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyAutoIncrement" "t1"
+	"ConcurrencyFiltered" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -33,7 +33,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyAutoIncrement" "t1"
+	"ConcurrencyFiltered" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -43,7 +43,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyAutoIncrement" "t1"
+	"ConcurrencyFiltered" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -53,7 +53,7 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyAutoIncrement" "t1"
+	"ConcurrencyFiltered" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -63,20 +63,10 @@ SELECT
 	"t1"."Stamp",
 	"t1"."Value"
 FROM
-	"ConcurrencyAutoIncrement" "t1"
+	"ConcurrencyFiltered" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"t1"."Id",
-	"t1"."Stamp",
-	"t1"."Value"
-FROM
-	"ConcurrencyAutoIncrement" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ConcurrencyAutoIncrement"
+DROP TABLE "ConcurrencyFiltered"
 
