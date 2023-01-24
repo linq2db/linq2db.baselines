@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-DROP TABLE [ConcurrencyAutoIncrement]
+DROP TABLE [ConcurrencyFiltered]
 
 BeforeExecute
 -- Access AccessOleDb
 
-CREATE TABLE [ConcurrencyAutoIncrement]
+CREATE TABLE [ConcurrencyFiltered]
 (
 	[Id]    Int           NOT NULL,
 	[Stamp] Int           NOT NULL,
 	[Value] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY CLUSTERED ([Id])
+	CONSTRAINT [PK_ConcurrencyFiltered] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
@@ -23,7 +23,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -33,7 +33,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -43,7 +43,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -53,7 +53,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -63,20 +63,10 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[Stamp],
-	[t1].[Value]
-FROM
-	[ConcurrencyAutoIncrement] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
-DROP TABLE [ConcurrencyAutoIncrement]
+DROP TABLE [ConcurrencyFiltered]
 
