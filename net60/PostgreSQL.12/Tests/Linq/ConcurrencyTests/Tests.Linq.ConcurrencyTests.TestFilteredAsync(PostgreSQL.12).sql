@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "ConcurrencyAutoIncrement"
+DROP TABLE IF EXISTS "ConcurrencyFiltered"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "ConcurrencyAutoIncrement"
+CREATE TABLE IF NOT EXISTS "ConcurrencyFiltered"
 (
 	"Id"    Int  NOT NULL,
 	"Stamp" Int  NOT NULL,
 	"Value" text     NULL,
 
-	CONSTRAINT "PK_ConcurrencyAutoIncrement" PRIMARY KEY ("Id")
+	CONSTRAINT "PK_ConcurrencyFiltered" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 Text(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO "ConcurrencyAutoIncrement"
+INSERT INTO "ConcurrencyFiltered"
 (
 	"Id",
 	"Stamp",
@@ -45,7 +45,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -57,12 +57,13 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyFiltered"
 SET
-	"Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
+	"Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
 	"Value" = :Value_1
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
+	"ConcurrencyFiltered"."Id" = 2 AND "ConcurrencyFiltered"."Id" = :Id AND
+	"ConcurrencyFiltered"."Stamp" = :Stamp
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -72,7 +73,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -81,15 +82,16 @@ SET     @Value_1 = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
-SET     @Stamp = -9
+SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyFiltered"
 SET
-	"Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
+	"Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
 	"Value" = :Value_1
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
+	"ConcurrencyFiltered"."Id" = 1 AND "ConcurrencyFiltered"."Id" = :Id AND
+	"ConcurrencyFiltered"."Stamp" = :Stamp
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -99,34 +101,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @Value_1 Text(7) -- String
-SET     @Value_1 = 'value 3'
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @Stamp Integer -- Int32
-SET     @Stamp = -9
-
-UPDATE
-	"ConcurrencyAutoIncrement"
-SET
-	"Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"Value" = :Value_1
-WHERE
-	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
-
-BeforeExecute
--- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."Id",
-	t1."Stamp",
-	t1."Value"
-FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -136,9 +111,9 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
-	"ConcurrencyAutoIncrement" obj
+	"ConcurrencyFiltered" r
 WHERE
-	obj."Id" = :Id AND obj."Stamp" = :Stamp
+	r."Id" = 2 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -148,19 +123,19 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
-SET     @Stamp = -8
+SET     @Stamp = -9
 
 DELETE FROM
-	"ConcurrencyAutoIncrement" obj
+	"ConcurrencyFiltered" r
 WHERE
-	obj."Id" = :Id AND obj."Stamp" = :Stamp
+	r."Id" = 1 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -170,10 +145,10 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "ConcurrencyAutoIncrement"
+DROP TABLE IF EXISTS "ConcurrencyFiltered"
 
