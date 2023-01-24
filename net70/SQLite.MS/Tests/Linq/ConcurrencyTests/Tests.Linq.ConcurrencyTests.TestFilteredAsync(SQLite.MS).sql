@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [ConcurrencyAutoIncrement]
+DROP TABLE IF EXISTS [ConcurrencyFiltered]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [ConcurrencyAutoIncrement]
+CREATE TABLE IF NOT EXISTS [ConcurrencyFiltered]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Stamp] INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY ([Id])
+	CONSTRAINT [PK_ConcurrencyFiltered] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 NVarChar(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO [ConcurrencyAutoIncrement]
+INSERT INTO [ConcurrencyFiltered]
 (
 	[Id],
 	[Stamp],
@@ -45,7 +45,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -57,12 +57,13 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	[ConcurrencyAutoIncrement]
+	[ConcurrencyFiltered]
 SET
-	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
+	[Stamp] = [ConcurrencyFiltered].[Stamp] + 1,
 	[Value] = @Value_1
 WHERE
-	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
+	[ConcurrencyFiltered].[Id] = 2 AND [ConcurrencyFiltered].[Id] = @Id AND
+	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -72,7 +73,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -81,15 +82,16 @@ SET     @Value_1 = 'value 2'
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
-SET     @Stamp = -9
+SET     @Stamp = -10
 
 UPDATE
-	[ConcurrencyAutoIncrement]
+	[ConcurrencyFiltered]
 SET
-	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
+	[Stamp] = [ConcurrencyFiltered].[Stamp] + 1,
 	[Value] = @Value_1
 WHERE
-	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
+	[ConcurrencyFiltered].[Id] = 1 AND [ConcurrencyFiltered].[Id] = @Id AND
+	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -99,34 +101,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'value 3'
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Stamp  -- Int32
-SET     @Stamp = -9
-
-UPDATE
-	[ConcurrencyAutoIncrement]
-SET
-	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
-	[Value] = @Value_1
-WHERE
-	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
-
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[t1].[Id],
-	[t1].[Stamp],
-	[t1].[Value]
-FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -136,9 +111,10 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
-	[ConcurrencyAutoIncrement]
+	[ConcurrencyFiltered]
 WHERE
-	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
+	[ConcurrencyFiltered].[Id] = 2 AND [ConcurrencyFiltered].[Id] = @Id AND
+	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -148,19 +124,20 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
-SET     @Stamp = -8
+SET     @Stamp = -9
 
 DELETE FROM
-	[ConcurrencyAutoIncrement]
+	[ConcurrencyFiltered]
 WHERE
-	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
+	[ConcurrencyFiltered].[Id] = 1 AND [ConcurrencyFiltered].[Id] = @Id AND
+	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -170,10 +147,10 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyAutoIncrement] [t1]
+	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [ConcurrencyAutoIncrement]
+DROP TABLE IF EXISTS [ConcurrencyFiltered]
 
