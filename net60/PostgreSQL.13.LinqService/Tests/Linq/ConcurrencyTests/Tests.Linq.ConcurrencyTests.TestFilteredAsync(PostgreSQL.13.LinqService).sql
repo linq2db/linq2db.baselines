@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "ConcurrencyAutoIncrement"
+DROP TABLE IF EXISTS "ConcurrencyFiltered"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "ConcurrencyAutoIncrement"
+CREATE TABLE IF NOT EXISTS "ConcurrencyFiltered"
 (
 	"Id"    Int  NOT NULL,
 	"Stamp" Int  NOT NULL,
 	"Value" text     NULL,
 
-	CONSTRAINT "PK_ConcurrencyAutoIncrement" PRIMARY KEY ("Id")
+	CONSTRAINT "PK_ConcurrencyFiltered" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -23,7 +23,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -33,7 +33,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -43,7 +43,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -53,7 +53,7 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -63,20 +63,10 @@ SELECT
 	t1."Stamp",
 	t1."Value"
 FROM
-	"ConcurrencyAutoIncrement" t1
+	"ConcurrencyFiltered" t1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."Id",
-	t1."Stamp",
-	t1."Value"
-FROM
-	"ConcurrencyAutoIncrement" t1
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "ConcurrencyAutoIncrement"
+DROP TABLE IF EXISTS "ConcurrencyFiltered"
 
