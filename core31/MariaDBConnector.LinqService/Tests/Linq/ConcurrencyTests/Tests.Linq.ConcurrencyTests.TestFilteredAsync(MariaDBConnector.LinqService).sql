@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
+DROP TABLE IF EXISTS `ConcurrencyFiltered`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE IF NOT EXISTS `ConcurrencyAutoIncrement`
+CREATE TABLE IF NOT EXISTS `ConcurrencyFiltered`
 (
 	`Id`    INT           NOT NULL,
 	`Stamp` INT           NOT NULL,
 	`Value` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_ConcurrencyAutoIncrement` PRIMARY KEY CLUSTERED (`Id`)
+	CONSTRAINT `PK_ConcurrencyFiltered` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
@@ -23,7 +23,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -33,7 +33,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -43,7 +43,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -53,7 +53,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
@@ -63,20 +63,10 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyAutoIncrement` `t1`
+	`ConcurrencyFiltered` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-SELECT
-	`t1`.`Id`,
-	`t1`.`Stamp`,
-	`t1`.`Value`
-FROM
-	`ConcurrencyAutoIncrement` `t1`
-
-BeforeExecute
--- MariaDBConnector MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
+DROP TABLE IF EXISTS `ConcurrencyFiltered`
 

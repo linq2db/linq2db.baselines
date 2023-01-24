@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-DROP TABLE IF EXISTS `ConcurrencyTable`
+DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-CREATE TABLE IF NOT EXISTS `ConcurrencyTable`
+CREATE TABLE IF NOT EXISTS `ConcurrencyAutoIncrement`
 (
 	`Id`    INT           NOT NULL,
 	`Stamp` INT           NOT NULL,
 	`Value` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_ConcurrencyTable` PRIMARY KEY CLUSTERED (`Id`)
+	CONSTRAINT `PK_ConcurrencyAutoIncrement` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 VarChar(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO `ConcurrencyTable`
+INSERT INTO `ConcurrencyAutoIncrement`
 (
 	`Id`,
 	`Stamp`,
@@ -45,7 +45,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql (asynchronously)
@@ -57,7 +57,7 @@ DECLARE @Stamp Int32
 SET     @Stamp = -10
 
 UPDATE
-	`ConcurrencyTable` `obj`
+	`ConcurrencyAutoIncrement` `obj`
 SET
 	`obj`.`Stamp` = `obj`.`Stamp` + 1,
 	`obj`.`Value` = @Value_1
@@ -72,7 +72,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql (asynchronously)
@@ -84,7 +84,7 @@ DECLARE @Stamp Int32
 SET     @Stamp = -9
 
 UPDATE
-	`ConcurrencyTable` `obj`
+	`ConcurrencyAutoIncrement` `obj`
 SET
 	`obj`.`Stamp` = `obj`.`Stamp` + 1,
 	`obj`.`Value` = @Value_1
@@ -99,7 +99,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql (asynchronously)
@@ -111,7 +111,7 @@ DECLARE @Stamp Int32
 SET     @Stamp = -9
 
 UPDATE
-	`ConcurrencyTable` `obj`
+	`ConcurrencyAutoIncrement` `obj`
 SET
 	`obj`.`Stamp` = `obj`.`Stamp` + 1,
 	`obj`.`Value` = @Value_1
@@ -126,7 +126,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql (asynchronously)
@@ -137,7 +137,7 @@ SET     @Stamp = -9
 
 DELETE   `obj`
 FROM
-	`ConcurrencyTable` `obj`
+	`ConcurrencyAutoIncrement` `obj`
 WHERE
 	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
 
@@ -149,7 +149,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql (asynchronously)
@@ -160,7 +160,7 @@ SET     @Stamp = -8
 
 DELETE   `obj`
 FROM
-	`ConcurrencyTable` `obj`
+	`ConcurrencyAutoIncrement` `obj`
 WHERE
 	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
 
@@ -172,10 +172,10 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 
-DROP TABLE IF EXISTS `ConcurrencyTable`
+DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
 
