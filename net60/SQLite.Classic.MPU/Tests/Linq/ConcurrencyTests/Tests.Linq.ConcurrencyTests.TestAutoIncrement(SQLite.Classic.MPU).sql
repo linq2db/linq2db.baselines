@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [ConcurrencyTable]
+DROP TABLE IF EXISTS [ConcurrencyAutoIncrement]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE IF NOT EXISTS [ConcurrencyTable]
+CREATE TABLE IF NOT EXISTS [ConcurrencyAutoIncrement]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Stamp] INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_ConcurrencyTable] PRIMARY KEY ([Id])
+	CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @Stamp = -10
 DECLARE @Value_1 NVarChar(7) -- String
 SET     @Value_1 = 'initial'
 
-INSERT INTO [ConcurrencyTable]
+INSERT INTO [ConcurrencyAutoIncrement]
 (
 	[Id],
 	[Stamp],
@@ -45,7 +45,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -57,12 +57,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	[ConcurrencyTable]
+	[ConcurrencyAutoIncrement]
 SET
-	[Stamp] = [ConcurrencyTable].[Stamp] + 1,
+	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
 	[Value] = @Value_1
 WHERE
-	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
+	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -72,7 +72,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -84,12 +84,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	[ConcurrencyTable]
+	[ConcurrencyAutoIncrement]
 SET
-	[Stamp] = [ConcurrencyTable].[Stamp] + 1,
+	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
 	[Value] = @Value_1
 WHERE
-	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
+	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -99,7 +99,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -111,12 +111,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	[ConcurrencyTable]
+	[ConcurrencyAutoIncrement]
 SET
-	[Stamp] = [ConcurrencyTable].[Stamp] + 1,
+	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
 	[Value] = @Value_1
 WHERE
-	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
+	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -126,7 +126,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -136,9 +136,9 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
-	[ConcurrencyTable]
+	[ConcurrencyAutoIncrement]
 WHERE
-	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
+	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -148,7 +148,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -158,9 +158,9 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -8
 
 DELETE FROM
-	[ConcurrencyTable]
+	[ConcurrencyAutoIncrement]
 WHERE
-	[ConcurrencyTable].[Id] = @Id AND [ConcurrencyTable].[Stamp] = @Stamp
+	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -170,10 +170,10 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [ConcurrencyTable]
+DROP TABLE IF EXISTS [ConcurrencyAutoIncrement]
 

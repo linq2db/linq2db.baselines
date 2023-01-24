@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [ConcurrencyTable]
+DROP TABLE IF EXISTS [ConcurrencyAutoIncrement]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TABLE IF NOT EXISTS [ConcurrencyTable]
+CREATE TABLE IF NOT EXISTS [ConcurrencyAutoIncrement]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Stamp] INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_ConcurrencyTable] PRIMARY KEY ([Id])
+	CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
@@ -23,7 +23,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -33,7 +33,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -43,7 +43,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -53,7 +53,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -63,7 +63,7 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -73,10 +73,10 @@ SELECT
 	[t1].[Stamp],
 	[t1].[Value]
 FROM
-	[ConcurrencyTable] [t1]
+	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [ConcurrencyTable]
+DROP TABLE IF EXISTS [ConcurrencyAutoIncrement]
 
