@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DROP TABLE IF EXISTS `ConcurrencyTable`
+DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-CREATE TABLE IF NOT EXISTS `ConcurrencyTable`
+CREATE TABLE IF NOT EXISTS `ConcurrencyAutoIncrement`
 (
 	`Id`    INT           NOT NULL,
 	`Stamp` INT           NOT NULL,
 	`Value` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_ConcurrencyTable` PRIMARY KEY CLUSTERED (`Id`)
+	CONSTRAINT `PK_ConcurrencyAutoIncrement` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute
@@ -23,7 +23,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
@@ -33,7 +33,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
@@ -43,7 +43,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
@@ -53,7 +53,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
@@ -63,7 +63,7 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
@@ -73,10 +73,10 @@ SELECT
 	`t1`.`Stamp`,
 	`t1`.`Value`
 FROM
-	`ConcurrencyTable` `t1`
+	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
 
-DROP TABLE IF EXISTS `ConcurrencyTable`
+DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
 
