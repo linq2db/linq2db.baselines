@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
-	`Id`    INT         NOT NULL,
-	`Int`   INT             NULL,
-	`Enum`  VARCHAR(5)      NULL,
-	`CEnum` VARCHAR(20)     NULL
+	`Id`    INT        NOT NULL,
+	`Int`   INT            NULL,
+	`Enum`  VARCHAR(5)     NULL,
+	`CEnum` INT            NULL
 )
 
 BeforeExecute
@@ -22,7 +22,7 @@ DECLARE @Int_1 Int32
 SET     @Int_1 = NULL
 DECLARE @Enum VarChar -- String
 SET     @Enum = NULL
-DECLARE @CEnum VarChar -- AnsiString
+DECLARE @CEnum Int32
 SET     @CEnum = NULL
 
 INSERT INTO `Src`
@@ -48,8 +48,8 @@ DECLARE @Int_1 Int32
 SET     @Int_1 = 2
 DECLARE @Enum VarChar(3) -- String
 SET     @Enum = 'TWO'
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value2___'
+DECLARE @CEnum Int32
+SET     @CEnum = 1
 
 INSERT INTO `Src`
 (

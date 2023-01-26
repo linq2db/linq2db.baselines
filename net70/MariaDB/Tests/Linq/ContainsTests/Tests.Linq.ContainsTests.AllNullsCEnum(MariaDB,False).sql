@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
-	`Id`    INT         NOT NULL,
-	`Int`   INT             NULL,
-	`Enum`  VARCHAR(5)      NULL,
-	`CEnum` VARCHAR(20)     NULL
+	`Id`    INT        NOT NULL,
+	`Int`   INT            NULL,
+	`Enum`  VARCHAR(5)     NULL,
+	`CEnum` INT            NULL
 )
 
 BeforeExecute
@@ -26,35 +26,27 @@ INSERT INTO `Src`
 )
 VALUES
 (1,NULL,NULL,NULL),
-(2,2,'TWO','___Value2___')
+(2,2,'TWO',1)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar -- AnsiString
-SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` IN (@CEnum, @CEnum_1)
+	`s`.`CEnum` IN (NULL, NULL)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar -- AnsiString
-SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` NOT IN (@CEnum, @CEnum_1)
+	`s`.`CEnum` NOT IN (NULL, NULL)
 
 BeforeExecute
 -- MariaDB MySql.Official MySql
