@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS [Src]
 	[Id]    INTEGER     NOT NULL,
 	[Int]   INTEGER         NULL,
 	[Enum]  NVarChar(5)     NULL,
-	[CEnum] VarChar(20)     NULL
+	[CEnum] INTEGER         NULL
 )
 
 BeforeExecute
@@ -26,14 +26,10 @@ INSERT INTO [Src]
 )
 VALUES
 (1,NULL,NULL,NULL),
-(2,2,'TWO','___Value2___')
+(2,2,'TWO',1)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value4___'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -42,15 +38,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (@CEnum, @CEnum_1)
+	[s].[CEnum] IN (2, 3)
 LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar -- AnsiString
-SET     @CEnum_1 = NULL
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -59,15 +51,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (@CEnum, @CEnum_1)
+	[s].[CEnum] IN (2, NULL)
 LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -76,15 +64,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (@CEnum, @CEnum_1)
+	[s].[CEnum] IN (2, 1)
 LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -93,15 +77,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
+	[s].[CEnum] NOT IN (NULL, 1)
 LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -110,7 +90,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
+	[s].[CEnum] NOT IN (2, 1)
 LIMIT @take
 
 BeforeExecute

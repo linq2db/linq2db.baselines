@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS [Src]
 	[Id]    INTEGER     NOT NULL,
 	[Int]   INTEGER         NULL,
 	[Enum]  NVarChar(5)     NULL,
-	[CEnum] VarChar(20)     NULL
+	[CEnum] INTEGER         NULL
 )
 
 BeforeExecute
@@ -26,7 +26,7 @@ INSERT INTO [Src]
 )
 VALUES
 (1,NULL,NULL,NULL),
-(2,2,'TWO','___Value2___')
+(2,2,'TWO',1)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
