@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Src
 	Id    Int         NOT NULL,
 	"Int" Int             NULL,
 	Enum  NVarChar(5)     NULL,
-	CEnum VarChar(20)     NULL
+	CEnum Int             NULL
 )
 
 BeforeExecute
@@ -22,7 +22,7 @@ DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = NULL
 DECLARE @Enum VarChar -- String
 SET     @Enum = NULL
-DECLARE @CEnum VarChar -- String
+DECLARE @CEnum Integer -- Int32
 SET     @CEnum = NULL
 
 INSERT INTO Src
@@ -48,8 +48,8 @@ DECLARE @Int_1 Integer(4) -- Int32
 SET     @Int_1 = 2
 DECLARE @Enum VarChar(3) -- String
 SET     @Enum = 'TWO'
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value2___'
+DECLARE @CEnum Integer(4) -- Int32
+SET     @CEnum = 1
 
 INSERT INTO Src
 (
@@ -68,73 +68,53 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value4___'
 
 SELECT FIRST 1
 	s.Id
 FROM
 	Src s
 WHERE
-	s.CEnum IN (@CEnum, @CEnum_1)
+	s.CEnum IN (2, 3)
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar -- String
-SET     @CEnum_1 = NULL
 
 SELECT FIRST 1
 	s.Id
 FROM
 	Src s
 WHERE
-	s.CEnum IN (@CEnum, @CEnum_1)
+	s.CEnum IN (2, NULL)
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
 
 SELECT FIRST 1
 	s.Id
 FROM
 	Src s
 WHERE
-	s.CEnum IN (@CEnum, @CEnum_1)
+	s.CEnum IN (2, 1)
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @CEnum VarChar -- String
-SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
 
 SELECT FIRST 1
 	s.Id
 FROM
 	Src s
 WHERE
-	s.CEnum NOT IN (@CEnum, @CEnum_1)
+	s.CEnum NOT IN (NULL, 1)
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
 
 SELECT FIRST 1
 	s.Id
 FROM
 	Src s
 WHERE
-	s.CEnum NOT IN (@CEnum, @CEnum_1)
+	s.CEnum NOT IN (2, 1)
 
 BeforeExecute
 -- Informix.DB2 Informix
