@@ -17,10 +17,10 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Src"
 		(
-			"Id"    Int         NOT NULL,
-			"Int"   Int             NULL,
-			"Enum"  VarChar(5)      NULL,
-			"CEnum" VarChar(20)     NULL
+			"Id"    Int        NOT NULL,
+			"Int"   Int            NULL,
+			"Enum"  VarChar(5)     NULL,
+			"CEnum" Int            NULL
 		)
 	';
 EXCEPTION
@@ -38,7 +38,7 @@ DECLARE @Int_1 Int32
 SET     @Int_1 = NULL
 DECLARE @Enum Varchar2 -- String
 SET     @Enum = NULL
-DECLARE @CEnum Varchar2 -- String
+DECLARE @CEnum Int32
 SET     @CEnum = NULL
 
 INSERT INTO "Src"
@@ -64,8 +64,8 @@ DECLARE @Int_1 Int32
 SET     @Int_1 = 2
 DECLARE @Enum Varchar2(3) -- String
 SET     @Enum = 'TWO'
-DECLARE @CEnum Varchar2(12) -- String
-SET     @CEnum = '___Value2___'
+DECLARE @CEnum Int32
+SET     @CEnum = 1
 
 INSERT INTO "Src"
 (
@@ -84,31 +84,23 @@ VALUES
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @CEnum Varchar2 -- String
-SET     @CEnum = NULL
-DECLARE @CEnum_1 Varchar2 -- String
-SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum, :CEnum_1)
+	s."CEnum" IN (NULL, NULL)
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @CEnum Varchar2 -- String
-SET     @CEnum = NULL
-DECLARE @CEnum_1 Varchar2 -- String
-SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" NOT IN (:CEnum, :CEnum_1)
+	s."CEnum" NOT IN (NULL, NULL)
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
