@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Src
 	Id    Int32,
 	Int   Nullable(Int32),
 	Enum  Nullable(String),
-	CEnum Nullable(String)
+	CEnum Nullable(Int32)
 )
 ENGINE = Memory()
 
@@ -27,7 +27,7 @@ INSERT INTO Src
 )
 VALUES
 (toInt32(1),NULL,NULL,NULL),
-(toInt32(2),toInt32(2),'TWO','___Value2___')
+(toInt32(2),toInt32(2),'TWO',toInt32(1))
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

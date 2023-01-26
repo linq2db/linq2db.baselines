@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Src
 	Id    Int32,
 	Int   Nullable(Int32),
 	Enum  Nullable(String),
-	CEnum Nullable(String)
+	CEnum Nullable(Int32)
 )
 ENGINE = Memory()
 
@@ -27,7 +27,7 @@ INSERT INTO Src
 )
 VALUES
 (toInt32(1),NULL,NULL,NULL),
-(toInt32(2),toInt32(2),'TWO','___Value2___')
+(toInt32(2),toInt32(2),'TWO',toInt32(1))
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -37,7 +37,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.CEnum IN ('___Value3___', '___Value4___')
+	s.CEnum IN (toInt32(2), toInt32(3))
 LIMIT toInt32(1)
 
 BeforeExecute
@@ -48,7 +48,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.CEnum IN ('___Value3___') OR s.CEnum IS NULL
+	s.CEnum IN (toInt32(2)) OR s.CEnum IS NULL
 LIMIT toInt32(1)
 
 BeforeExecute
@@ -59,7 +59,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.CEnum IN ('___Value3___', '___Value2___')
+	s.CEnum IN (toInt32(2), toInt32(1))
 LIMIT toInt32(1)
 
 BeforeExecute
@@ -70,7 +70,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.CEnum NOT IN ('___Value2___') AND s.CEnum IS NOT NULL
+	s.CEnum NOT IN (toInt32(1)) AND s.CEnum IS NOT NULL
 LIMIT toInt32(1)
 
 BeforeExecute
@@ -81,7 +81,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	(s.CEnum NOT IN ('___Value3___', '___Value2___') OR s.CEnum IS NULL)
+	(s.CEnum NOT IN (toInt32(2), toInt32(1)) OR s.CEnum IS NULL)
 LIMIT toInt32(1)
 
 BeforeExecute
