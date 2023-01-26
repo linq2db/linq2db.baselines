@@ -17,10 +17,10 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Src"
 		(
-			"Id"    Int         NOT NULL,
-			"Int"   Int             NULL,
-			"Enum"  VarChar(5)      NULL,
-			"CEnum" VarChar(20)     NULL
+			"Id"    Int        NOT NULL,
+			"Int"   Int            NULL,
+			"Enum"  VarChar(5)     NULL,
+			"CEnum" Int            NULL
 		)
 	';
 EXCEPTION
@@ -35,7 +35,7 @@ BeforeExecute
 
 INSERT ALL
 	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (1,NULL,NULL,NULL)
-	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (2,2,'TWO','___Value2___')
+	INTO "Src" ("Id", "Int", "Enum", "CEnum") VALUES (2,2,'TWO',1)
 SELECT * FROM dual
 
 BeforeExecute
