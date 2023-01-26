@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
-	`Id`    INT         NOT NULL,
-	`Int`   INT             NULL,
-	`Enum`  VARCHAR(5)      NULL,
-	`CEnum` VARCHAR(20)     NULL
+	`Id`    INT        NOT NULL,
+	`Int`   INT            NULL,
+	`Enum`  VARCHAR(5)     NULL,
+	`CEnum` INT            NULL
 )
 
 BeforeExecute
@@ -26,14 +26,10 @@ INSERT INTO `Src`
 )
 VALUES
 (1,NULL,NULL,NULL),
-(2,2,'TWO','___Value2___')
+(2,2,'TWO',1)
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value4___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -42,13 +38,11 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` IN (@CEnum, @CEnum_1)
+	`s`.`CEnum` IN (2, 3)
 LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -57,15 +51,11 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` IN (@CEnum) OR `s`.`CEnum` IS NULL
+	`s`.`CEnum` IN (2) OR `s`.`CEnum` IS NULL
 LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -74,13 +64,11 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` IN (@CEnum, @CEnum_1)
+	`s`.`CEnum` IN (2, 1)
 LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -89,15 +77,11 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` NOT IN (@CEnum_1) AND `s`.`CEnum` IS NOT NULL
+	`s`.`CEnum` NOT IN (1) AND `s`.`CEnum` IS NOT NULL
 LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -106,7 +90,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	(`s`.`CEnum` NOT IN (@CEnum, @CEnum_1) OR `s`.`CEnum` IS NULL)
+	(`s`.`CEnum` NOT IN (2, 1) OR `s`.`CEnum` IS NULL)
 LIMIT @take
 
 BeforeExecute
