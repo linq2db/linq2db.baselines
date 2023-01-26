@@ -14,10 +14,10 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Src"
 			(
-				"Id"    Int                                   NOT NULL,
+				"Id"    Int                                  NOT NULL,
 				"Int"   Int,
 				"Enum"  VarChar(5) CHARACTER SET UNICODE_FSS,
-				"CEnum" VarChar(20) CHARACTER SET UNICODE_FSS
+				"CEnum" Int
 			)
 		';
 END
@@ -30,7 +30,7 @@ DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = NULL
 DECLARE @Enum VarChar -- String
 SET     @Enum = NULL
-DECLARE @CEnum VarChar -- String
+DECLARE @CEnum Integer -- Int32
 SET     @CEnum = NULL
 
 INSERT INTO "Src"
@@ -56,8 +56,8 @@ DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = 2
 DECLARE @Enum VarChar(3) -- String
 SET     @Enum = 'TWO'
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value2___'
+DECLARE @CEnum Integer -- Int32
+SET     @CEnum = 1
 
 INSERT INTO "Src"
 (
@@ -78,77 +78,61 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value4___'
 
 SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum, @CEnum_1)
+	"s"."CEnum" IN (2, 3)
 
 BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
 
 SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum) OR "s"."CEnum" IS NULL
+	"s"."CEnum" IN (2) OR "s"."CEnum" IS NULL
 
 BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
 
 SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum, @CEnum_1)
+	"s"."CEnum" IN (2, 1)
 
 BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
 
 SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" NOT IN (@CEnum_1) AND "s"."CEnum" IS NOT NULL
+	"s"."CEnum" NOT IN (1) AND "s"."CEnum" IS NOT NULL
 
 BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
 
 SELECT FIRST @take
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	("s"."CEnum" NOT IN (@CEnum, @CEnum_1) OR "s"."CEnum" IS NULL)
+	("s"."CEnum" NOT IN (2, 1) OR "s"."CEnum" IS NULL)
 
 BeforeExecute
 -- Firebird
