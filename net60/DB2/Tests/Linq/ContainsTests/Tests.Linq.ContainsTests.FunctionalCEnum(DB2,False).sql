@@ -17,7 +17,7 @@ BEGIN
 			"Id"    Int         NOT NULL,
 			"Int"   Int             NULL,
 			"Enum"  NVarChar(5)     NULL,
-			"CEnum" VarChar(20)     NULL
+			"CEnum" Int             NULL
 		)
 	';
 END
@@ -34,81 +34,61 @@ INSERT INTO "Src"
 )
 VALUES
 (1,NULL,NULL,NULL),
-(2,2,'TWO','___Value2___')
+(2,2,'TWO',1)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value4___'
 
 SELECT
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum, @CEnum_1)
+	"s"."CEnum" IN (2, 3)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar -- String
-SET     @CEnum_1 = NULL
 
 SELECT
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum, @CEnum_1)
+	"s"."CEnum" IN (2, NULL)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
 
 SELECT
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum, @CEnum_1)
+	"s"."CEnum" IN (2, 1)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @CEnum VarChar -- String
-SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
 
 SELECT
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" NOT IN (@CEnum, @CEnum_1)
+	"s"."CEnum" NOT IN (NULL, 1)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
 
 SELECT
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" NOT IN (@CEnum, @CEnum_1)
+	"s"."CEnum" NOT IN (2, 1)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute

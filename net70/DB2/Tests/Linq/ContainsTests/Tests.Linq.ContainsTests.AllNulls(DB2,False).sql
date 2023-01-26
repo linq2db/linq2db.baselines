@@ -17,7 +17,7 @@ BEGIN
 			"Id"    Int         NOT NULL,
 			"Int"   Int             NULL,
 			"Enum"  NVarChar(5)     NULL,
-			"CEnum" VarChar(20)     NULL
+			"CEnum" Int             NULL
 		)
 	';
 END
@@ -34,7 +34,7 @@ INSERT INTO "Src"
 )
 VALUES
 (1,NULL,NULL,NULL),
-(2,2,'TWO','___Value2___')
+(2,2,'TWO',1)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

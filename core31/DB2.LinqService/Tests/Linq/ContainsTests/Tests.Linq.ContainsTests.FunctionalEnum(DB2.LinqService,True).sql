@@ -17,7 +17,7 @@ BEGIN
 			"Id"    Int         NOT NULL,
 			"Int"   Int             NULL,
 			"Enum"  NVarChar(5)     NULL,
-			"CEnum" VarChar(20)     NULL
+			"CEnum" Int             NULL
 		)
 	';
 END
@@ -30,7 +30,7 @@ DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = NULL
 DECLARE @Enum VarChar -- String
 SET     @Enum = NULL
-DECLARE @CEnum VarChar -- String
+DECLARE @CEnum Integer -- Int32
 SET     @CEnum = NULL
 
 INSERT INTO "Src"
@@ -56,8 +56,8 @@ DECLARE @Int_1 Integer(4) -- Int32
 SET     @Int_1 = 2
 DECLARE @Enum VarChar(3) -- String
 SET     @Enum = 'TWO'
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value2___'
+DECLARE @CEnum Integer(4) -- Int32
+SET     @CEnum = 1
 
 INSERT INTO "Src"
 (
