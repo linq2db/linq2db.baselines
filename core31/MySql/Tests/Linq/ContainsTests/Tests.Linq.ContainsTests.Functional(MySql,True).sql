@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
-	`Id`    INT         NOT NULL,
-	`Int`   INT             NULL,
-	`Enum`  VARCHAR(5)      NULL,
-	`CEnum` VARCHAR(20)     NULL
+	`Id`    INT        NOT NULL,
+	`Int`   INT            NULL,
+	`Enum`  VARCHAR(5)     NULL,
+	`CEnum` INT            NULL
 )
 
 BeforeExecute
@@ -26,7 +26,7 @@ INSERT INTO `Src`
 )
 VALUES
 (1,NULL,NULL,NULL),
-(2,2,'TWO','___Value2___')
+(2,2,'TWO',1)
 
 BeforeExecute
 -- MySql MySql.Official MySql
