@@ -14,10 +14,10 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Src"
 			(
-				"Id"    Int                                   NOT NULL,
+				"Id"    Int                                  NOT NULL,
 				"Int"   Int,
 				"Enum"  VarChar(5) CHARACTER SET UNICODE_FSS,
-				"CEnum" VarChar(20) CHARACTER SET UNICODE_FSS
+				"CEnum" Int
 			)
 		';
 END
@@ -30,7 +30,7 @@ DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = NULL
 DECLARE @Enum VarChar -- String
 SET     @Enum = NULL
-DECLARE @CEnum VarChar -- String
+DECLARE @CEnum Integer -- Int32
 SET     @CEnum = NULL
 
 INSERT INTO "Src"
@@ -56,8 +56,8 @@ DECLARE @Int_1 Integer -- Int32
 SET     @Int_1 = 2
 DECLARE @Enum VarChar(3) -- String
 SET     @Enum = 'TWO'
-DECLARE @CEnum VarChar(12) -- String
-SET     @CEnum = '___Value2___'
+DECLARE @CEnum Integer -- Int32
+SET     @CEnum = 1
 
 INSERT INTO "Src"
 (
