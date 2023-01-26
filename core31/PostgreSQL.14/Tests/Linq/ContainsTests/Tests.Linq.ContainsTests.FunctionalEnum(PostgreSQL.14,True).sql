@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "Src"
 (
-	"Id"    Int         NOT NULL,
-	"Int"   Int             NULL,
-	"Enum"  text            NULL,
-	"CEnum" VarChar(20)     NULL
+	"Id"    Int  NOT NULL,
+	"Int"   Int      NULL,
+	"Enum"  text     NULL,
+	"CEnum" Int      NULL
 )
 
 BeforeExecute
@@ -26,7 +26,7 @@ INSERT INTO "Src"
 )
 VALUES
 (1,NULL,NULL,NULL),
-(2,2,'TWO','___Value2___')
+(2,2,'TWO',1)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
