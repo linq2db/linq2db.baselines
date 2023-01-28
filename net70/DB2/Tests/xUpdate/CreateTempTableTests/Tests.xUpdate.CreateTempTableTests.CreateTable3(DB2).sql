@@ -14,9 +14,7 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "TempTable"
 		(
-			ID Int NOT NULL,
-
-			CONSTRAINT "PK_TempTable" PRIMARY KEY (ID)
+			ID Int NOT NULL
 		)
 	';
 END
