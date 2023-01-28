@@ -202,115 +202,27 @@ VALUES
 (190,'Sub2_19',NULL)
 
 BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_MainItem].[Id],
-	[i].[Id]
+	[m2].[Id],
+	[m2].[Value],
+	[m2].[MainItemId],
+	[a_MainItem].[Id],
+	[a_MainItem].[Value]
 FROM
-	(
-		SELECT DISTINCT
-			[m_1].[Id]
-		FROM
-			[MainItem] [m_1]
-		WHERE
-			[m_1].[Id] > 1
-	) [lw_MainItem]
-		INNER JOIN [SubItem1] [i] ON [lw_MainItem].[Id] = [i].[ParentId] AND [i].[Id] % 2 = 0
-		INNER JOIN [MainItem2] [mm] ON [i].[Id] / 10 = [mm].[Id]
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[m_1].[Id],
-	[m_1].[Value]
-FROM
-	[MainItem] [m_1]
+	[MainItem2] [m2]
+		LEFT JOIN [MainItem] [a_MainItem] ON [m2].[MainItemId] = [a_MainItem].[Id]
 WHERE
-	[m_1].[Id] > 1
-
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[lw_SubItem1].[Id_1],
-	[lw_SubItem1].[Id],
-	[lw_SubItem1].[Value_1],
-	[lw_SubItem1].[ParentId],
-	[detail_1].[Id],
-	[detail_1].[Value],
-	[detail_1].[ParentId]
-FROM
+	([a_MainItem].[Id] IS NOT NULL OR [a_MainItem].[Value] IS NOT NULL) AND
 	(
-		SELECT DISTINCT
-			[detail].[Id],
-			[lw_MainItem].[Id] as [Id_1],
-			[detail].[Value] as [Value_1],
-			[detail].[ParentId]
+		SELECT
+			Count(*)
 		FROM
-			(
-				SELECT DISTINCT
-					[m_1].[Id]
-				FROM
-					[MainItem] [m_1]
-				WHERE
-					[m_1].[Id] > 1
-			) [lw_MainItem]
-				INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
-	) [lw_SubItem1]
-		INNER JOIN [SubItem1_Sub] [detail_1] ON [lw_SubItem1].[Id] = [detail_1].[ParentId]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[lw_MainItem].[Id],
-	[detail].[Id],
-	[detail].[Value],
-	[detail].[ParentId]
-FROM
-	(
-		SELECT DISTINCT
-			[m_1].[Id]
-		FROM
-			[MainItem] [m_1]
+			[SubItem1] [t1]
 		WHERE
-			[m_1].[Id] > 1
-	) [lw_MainItem]
-		INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[m_1].[Id],
-	[m_1].[Value]
-FROM
-	[MainItem] [m_1]
-WHERE
-	[m_1].[Id] > 1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[s].[Id],
-	[s].[Value],
-	[s].[ParentId],
-	[p].[Id],
-	[p].[Value]
-FROM
-	[SubItem1] [s]
-		LEFT JOIN [MainItem] [p] ON [s].[ParentId] = [p].[Id] AND [p].[Id] % 3 = 0
+			([a_MainItem].[Id] = [t1].[ParentId] OR [a_MainItem].[Id] IS NULL AND [t1].[ParentId] IS NULL)
+	) > 1
 
 BeforeExecute
 -- SQLite.MS SQLite

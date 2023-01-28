@@ -244,9 +244,9 @@ SELECT
 	[lw_SubItem1].[Id],
 	[lw_SubItem1].[Value_1],
 	[lw_SubItem1].[ParentId],
-	[c_1].[Id],
-	[c_1].[Value],
-	[c_1].[ParentId]
+	[detail_1].[Id],
+	[detail_1].[Value],
+	[detail_1].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -265,7 +265,7 @@ FROM
 			) [lw_MainItem]
 				INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 	) [lw_SubItem1]
-		INNER JOIN [SubItem1_Sub] [c_1] ON [lw_SubItem1].[Id] = [c_1].[ParentId] AND [c_1].[Id] = 1
+		INNER JOIN [SubItem1_Sub] [detail_1] ON [lw_SubItem1].[Id] = [detail_1].[ParentId]
 
 BeforeExecute
 -- SQLite.Classic SQLite

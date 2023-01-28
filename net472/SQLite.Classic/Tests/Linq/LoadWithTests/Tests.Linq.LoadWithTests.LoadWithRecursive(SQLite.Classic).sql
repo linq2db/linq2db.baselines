@@ -213,10 +213,7 @@ SELECT
 	[lw_SubItem1].[ParentId],
 	[detail_1].[Id],
 	[detail_1].[Value],
-	[detail_1].[ParentId],
-	[a_ParentSubItem].[Id],
-	[a_ParentSubItem].[Value],
-	[a_ParentSubItem].[ParentId]
+	[detail_1].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -237,7 +234,6 @@ FROM
 				INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 	) [lw_SubItem1]
 		INNER JOIN [SubItem1_Sub] [detail_1] ON [lw_SubItem1].[Id] = [detail_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [detail_1].[ParentId] = [a_ParentSubItem].[Id]
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -305,10 +301,7 @@ SELECT
 	[lw_SubItem1].[ParentId],
 	[detail_1].[Id],
 	[detail_1].[Value],
-	[detail_1].[ParentId],
-	[a_ParentSubItem].[Id],
-	[a_ParentSubItem].[Value],
-	[a_ParentSubItem].[ParentId]
+	[detail_1].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -329,7 +322,6 @@ FROM
 				INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
 	) [lw_SubItem1]
 		INNER JOIN [SubItem1_Sub] [detail_1] ON [lw_SubItem1].[Id] = [detail_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [detail_1].[ParentId] = [a_ParentSubItem].[Id]
 
 BeforeExecute
 -- SQLite.Classic SQLite
