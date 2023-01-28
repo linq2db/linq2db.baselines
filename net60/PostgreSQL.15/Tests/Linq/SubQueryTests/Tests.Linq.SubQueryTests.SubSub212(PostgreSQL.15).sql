@@ -9,7 +9,7 @@ SELECT
 			"GrandChild" c_1
 		WHERE
 			c_1."ParentID" + 1 < p1."ID" AND c_1."ParentID" + 1 < p1."ID" AND
-			p1."ParentID" = c_1."ParentID"
+			(p1."ParentID" = c_1."ParentID" OR p1."ParentID" IS NULL AND c_1."ParentID" IS NULL)
 	)
 FROM
 	(
