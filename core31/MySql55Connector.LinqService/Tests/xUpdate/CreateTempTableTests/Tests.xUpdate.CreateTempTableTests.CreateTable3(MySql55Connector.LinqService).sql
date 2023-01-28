@@ -8,9 +8,7 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
-	`ID` INT NOT NULL,
-
-	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`ID`)
+	`ID` INT NOT NULL
 )
 
 BeforeExecute
