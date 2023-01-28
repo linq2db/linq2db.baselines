@@ -8,9 +8,7 @@ BeforeExecute
 
 CREATE COLUMN TABLE "TempTable"
 (
-	"ID" Integer NOT NULL,
-
-	PRIMARY KEY ("ID")
+	"ID" Integer NOT NULL
 )
 
 BeforeExecute
