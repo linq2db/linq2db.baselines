@@ -308,12 +308,12 @@ SELECT
 	lw_SubItem1.Id,
 	lw_SubItem1.Value_1,
 	lw_SubItem1.ParentId,
-	e_1.Id,
-	e_1.Value,
-	e_1.ParentId,
-	e_2.Id,
-	e_2.Value,
-	e_2.ParentId
+	detail.Id,
+	detail.Value,
+	detail.ParentId,
+	a_ParentSubItem.Id,
+	a_ParentSubItem.Value,
+	a_ParentSubItem.ParentId
 FROM
 	(
 		SELECT DISTINCT
@@ -334,8 +334,8 @@ FROM
 			) lw_MainItem
 				INNER JOIN SubItem1 e ON lw_MainItem.Id = e.ParentId AND (e.Value = e.Value OR e.Value IS NULL AND e.Value IS NULL)
 	) lw_SubItem1
-		INNER JOIN SubItem1_Sub e_1 ON lw_SubItem1.Id = e_1.ParentId AND (e_1.Value = e_1.Value OR e_1.Value IS NULL AND e_1.Value IS NULL)
-		LEFT JOIN SubItem1 e_2 ON e_1.ParentId = e_2.Id AND (e_2.Value = e_2.Value OR e_2.Value IS NULL AND e_2.Value IS NULL)
+		INNER JOIN SubItem1_Sub detail ON lw_SubItem1.Id = detail.ParentId
+		LEFT JOIN SubItem1 a_ParentSubItem ON detail.ParentId = a_ParentSubItem.Id
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
