@@ -221,7 +221,7 @@ WHERE
 		FROM
 			[SubItem1] [t1]
 		WHERE
-			([a_MainItem].[Id] = [t1].[ParentId] OR [a_MainItem].[Id] IS NULL AND [t1].[ParentId] IS NULL)
+			[a_MainItem].[Id] = [t1].[ParentId]
 	) > 1
 
 BeforeExecute
