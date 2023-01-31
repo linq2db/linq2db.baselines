@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [Common_Topology_Locations]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 
 IF (OBJECT_ID(N'[Common_Topology_Locations]', N'U') IS NULL)
 	CREATE TABLE [Common_Topology_Locations]
@@ -17,17 +17,7 @@ IF (OBJECT_ID(N'[Common_Topology_Locations]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2022
-DECLARE @StartDateTime DateTime2
-SET     @StartDateTime = DATETIME2FROMPARTS(2023, 1, 31, 21, 52, 13, 4831028, 7)
-DECLARE @PreNotification BigInt -- Int64
-SET     @PreNotification = 20000000000
-DECLARE @PreNotification2 Time
-SET     @PreNotification2 = TIMEFROMPARTS(0, 33, 20, 0, 7)
-DECLARE @PreNotification3 Time
-SET     @PreNotification3 = TIMEFROMPARTS(0, 33, 20, 0, 7)
-DECLARE @StrField DateTime2
-SET     @StrField = DATETIME2FROMPARTS(2023, 1, 31, 0, 0, 0, 0, 7)
+-- SqlServer.2022.MS SqlServer.2022
 
 INSERT INTO [Common_Topology_Locations]
 (
@@ -38,16 +28,10 @@ INSERT INTO [Common_Topology_Locations]
 	[StrField]
 )
 VALUES
-(
-	@StartDateTime,
-	@PreNotification,
-	@PreNotification2,
-	@PreNotification3,
-	@StrField
-)
+(DATETIME2FROMPARTS(2023, 1, 31, 21, 37, 49, 5865063, 7),CAST(20000000000 AS BIGINT),TIMEFROMPARTS(0, 33, 20, 0, 7),TIMEFROMPARTS(0, 33, 20, 0, 7),DATETIME2FROMPARTS(2023, 1, 31, 0, 0, 0, 0, 7))
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t].[StartDateTime],
@@ -59,7 +43,7 @@ FROM
 	[Common_Topology_Locations] [t]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [Common_Topology_Locations]
 
