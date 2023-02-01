@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `TestFolder`
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @Id Guid
-SET     @Id = 'a9852743-3f9f-4eba-8af8-54aafcd6b809'
+SET     @Id = 'a24b85f3-747f-4587-b5c3-cc74d3331847'
 
 INSERT INTO `TestFolder`
 (
