@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE 'Jo%' ESCAPE '~' AND Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, 2)) = Convert(VARBINARY(8000), 'Jo') AND
+	[p].[FirstName] LIKE 'Jo%' ESCAPE '~' AND Convert(VarBinary(8000), SUBSTRING([p].[FirstName], 1, 2)) = Convert(VarBinary(8000), 'Jo') AND
 	[p].[PersonID] = 1
 
 BeforeExecute
@@ -17,7 +17,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE 'jo%' ESCAPE '~' AND Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, 2)) = Convert(VARBINARY(8000), 'jo') AND
+	[p].[FirstName] LIKE 'jo%' ESCAPE '~' AND Convert(VarBinary(8000), SUBSTRING([p].[FirstName], 1, 2)) = Convert(VarBinary(8000), 'jo') AND
 	[p].[PersonID] = 1
 
 BeforeExecute
@@ -28,6 +28,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] NOT LIKE 'Jo%' ESCAPE '~' OR Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, 2)) <> Convert(VARBINARY(8000), 'Jo')) AND
+	([p].[FirstName] NOT LIKE 'Jo%' ESCAPE '~' OR Convert(VarBinary(8000), SUBSTRING([p].[FirstName], 1, 2)) <> Convert(VarBinary(8000), 'Jo')) AND
 	[p].[PersonID] = 1
 

@@ -9,7 +9,7 @@ BeforeExecute
 CREATE TABLE [BlobClass]
 (
 	[Id]        Int            NOT NULL,
-	[BlobValue] VARBINARY(100)     NULL,
+	[BlobValue] VarBinary(100)     NULL,
 
 	CONSTRAINT [PK_BlobClass] PRIMARY KEY ([Id])
 )

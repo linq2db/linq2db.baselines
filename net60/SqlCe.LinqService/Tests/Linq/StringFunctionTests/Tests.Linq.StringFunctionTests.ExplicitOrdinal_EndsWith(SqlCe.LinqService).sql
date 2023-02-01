@@ -35,7 +35,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE '%stString' ESCAPE '~' AND
-	Convert(VARBINARY(8000), SUBSTRING([r].[CaseSensitive], LEN([r].[CaseSensitive]) - 7, 8)) = Convert(VARBINARY(8000), 'stString')
+	Convert(VarBinary(8000), SUBSTRING([r].[CaseSensitive], LEN([r].[CaseSensitive]) - 7, 8)) = Convert(VarBinary(8000), 'stString')
 
 BeforeExecute
 -- SqlCe
@@ -46,7 +46,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE '%stString' ESCAPE '~' AND
-	Convert(VARBINARY(8000), SUBSTRING([r].[CaseInsensitive], LEN([r].[CaseInsensitive]) - 7, 8)) = Convert(VARBINARY(8000), 'stString')
+	Convert(VarBinary(8000), SUBSTRING([r].[CaseInsensitive], LEN([r].[CaseInsensitive]) - 7, 8)) = Convert(VarBinary(8000), 'stString')
 
 BeforeExecute
 -- SqlCe
@@ -57,7 +57,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE '%ststring' ESCAPE '~' AND
-	Convert(VARBINARY(8000), SUBSTRING([r].[CaseSensitive], LEN([r].[CaseSensitive]) - 7, 8)) = Convert(VARBINARY(8000), 'ststring')
+	Convert(VarBinary(8000), SUBSTRING([r].[CaseSensitive], LEN([r].[CaseSensitive]) - 7, 8)) = Convert(VarBinary(8000), 'ststring')
 
 BeforeExecute
 -- SqlCe
@@ -68,5 +68,5 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE '%ststring' ESCAPE '~' AND
-	Convert(VARBINARY(8000), SUBSTRING([r].[CaseInsensitive], LEN([r].[CaseInsensitive]) - 7, 8)) = Convert(VARBINARY(8000), 'ststring')
+	Convert(VarBinary(8000), SUBSTRING([r].[CaseInsensitive], LEN([r].[CaseInsensitive]) - 7, 8)) = Convert(VarBinary(8000), 'ststring')
 

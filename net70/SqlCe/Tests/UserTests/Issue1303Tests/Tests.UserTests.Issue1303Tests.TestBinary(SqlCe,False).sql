@@ -9,8 +9,8 @@ BeforeExecute
 CREATE TABLE [Issue1303]
 (
 	[ID]     Int           NOT NULL,
-	[Array]  VARBINARY(10)     NULL,
-	[Binary] VARBINARY(10)     NULL,
+	[Array]  VarBinary(10)     NULL,
+	[Binary] VarBinary(10)     NULL,
 
 	CONSTRAINT [PK_Issue1303] PRIMARY KEY ([ID])
 )
