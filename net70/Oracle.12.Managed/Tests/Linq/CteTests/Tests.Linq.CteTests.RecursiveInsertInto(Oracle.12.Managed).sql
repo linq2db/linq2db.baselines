@@ -90,49 +90,46 @@ INSERT INTO "HierarchyData"
 	"Id",
 	"Level"
 )
-SELECT * FROM
+WITH CTE_1 ("Id")
+AS
 (
-	WITH CTE_1 ("Id")
-	AS
-	(
-		SELECT
-			t."Id"
-		FROM
-			"HierarchyTree" t
-		WHERE
-			t."ParentId" IS NULL
-	),
-	CTE_2 ("ParentId", "Id")
-	AS
-	(
-		SELECT
-			t1."ParentId",
-			t1."Id"
-		FROM
-			"HierarchyTree" t1
-	),
-	"hierarchyDown" ("Id", "Level")
-	AS
-	(
-		SELECT
-			t_1."Id",
-			0
-		FROM
-			CTE_1 t_1
-		UNION ALL
-		SELECT
-			t_2."Id",
-			h."Level" + 1
-		FROM
-			"hierarchyDown" h
-				INNER JOIN CTE_2 t_2 ON t_2."ParentId" = h."Id"
-	)
 	SELECT
-		t2."Id",
-		t2."Level"
+		t."Id"
 	FROM
-		"hierarchyDown" t2
+		"HierarchyTree" t
+	WHERE
+		t."ParentId" IS NULL
+),
+CTE_2 ("ParentId", "Id")
+AS
+(
+	SELECT
+		t1."ParentId",
+		t1."Id"
+	FROM
+		"HierarchyTree" t1
+),
+"hierarchyDown" ("Id", "Level")
+AS
+(
+	SELECT
+		t_1."Id",
+		0
+	FROM
+		CTE_1 t_1
+	UNION ALL
+	SELECT
+		t_2."Id",
+		h."Level" + 1
+	FROM
+		"hierarchyDown" h
+			INNER JOIN CTE_2 t_2 ON t_2."ParentId" = h."Id"
 )
+SELECT
+	t2."Id",
+	t2."Level"
+FROM
+	"hierarchyDown" t2
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
