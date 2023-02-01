@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `TestFolder`
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
 DECLARE @Id Guid
-SET     @Id = '3ef8d48e-2dd0-4229-8853-f0a13c3a210e'
+SET     @Id = 'ce8ae86b-4bea-4f4f-bacf-b50cacc0a01a'
 
 INSERT INTO `TestFolder`
 (
