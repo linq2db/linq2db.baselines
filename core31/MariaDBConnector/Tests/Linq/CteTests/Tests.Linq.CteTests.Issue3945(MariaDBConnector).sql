@@ -15,8 +15,8 @@ CREATE TABLE IF NOT EXISTS `TestFolder`
 
 BeforeExecute
 -- MariaDBConnector MySqlConnector MySql
-DECLARE @Id Guid
-SET     @Id = 'dad52819-a1c9-491c-b2f7-92cc3a18671d'
+DECLARE @Guid1 Guid
+SET     @Guid1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 INSERT INTO `TestFolder`
 (
@@ -36,7 +36,7 @@ AS
 		`c_1`.`ParentId` IS NOT NULL
 )
 SELECT
-	@Id,
+	@Guid1,
 	Concat(`parent`.`Label`, '/', `child`.`Label`)
 FROM
 	`CTE` `child`
