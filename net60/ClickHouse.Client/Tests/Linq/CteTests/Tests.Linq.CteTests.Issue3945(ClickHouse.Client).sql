@@ -34,7 +34,7 @@ WITH CTE AS
 		c_1.ParentId IS NOT NULL
 )
 SELECT
-	toUUID('fb49c3fd-38c7-4a83-aaa7-9603ab0b7a0f'),
+	toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),
 	concat(parent.Label, '/', child.Label)
 FROM
 	CTE child
