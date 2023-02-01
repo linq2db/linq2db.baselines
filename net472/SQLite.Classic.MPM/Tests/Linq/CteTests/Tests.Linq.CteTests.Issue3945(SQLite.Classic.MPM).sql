@@ -15,8 +15,8 @@ CREATE TABLE IF NOT EXISTS [TestFolder]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Guid
-SET     @Id = X'2B675FCAA779B048B32DE03B76C525E8'
+DECLARE @Guid1  -- Guid
+SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 WITH [CTE] ([Id], [Label], [ParentId])
 AS
@@ -36,7 +36,7 @@ INSERT INTO [TestFolder]
 	[Label]
 )
 SELECT
-	@Id,
+	@Guid1,
 	[parent].[Label] || '/' || [child].[Label]
 FROM
 	[CTE] [child]
