@@ -23,8 +23,8 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Id VarBinary(16) -- Binary
-SET     @Id = BX'00B0C1B25B1D9541B63E3509638AD448'
+DECLARE @Guid1 VarBinary(16) -- Binary
+SET     @Guid1 = BX'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO "TestFolder"
 (
@@ -44,7 +44,7 @@ AS
 		"c_1"."ParentId" IS NOT NULL
 )
 SELECT
-	@Id,
+	@Guid1,
 	"parent"."Label" || '/' || "child"."Label"
 FROM
 	CTE "child"
