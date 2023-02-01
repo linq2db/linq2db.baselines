@@ -31,8 +31,8 @@ END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Id Raw(16) -- Binary
-SET     @Id = HEXTORAW('059623C127BF974491C5400113AC09BE')
+DECLARE @Guid1 Raw(16) -- Binary
+SET     @Guid1 = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 
 INSERT INTO "TestFolder"
 (
@@ -52,7 +52,7 @@ AS
 		c_1."ParentId" IS NOT NULL
 )
 SELECT
-	:Id,
+	:Guid1,
 	parent."Label" || '/' || child."Label"
 FROM
 	CTE child
