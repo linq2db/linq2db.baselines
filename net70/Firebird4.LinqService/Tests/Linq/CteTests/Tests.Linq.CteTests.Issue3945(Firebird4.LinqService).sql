@@ -23,8 +23,8 @@ END
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Id Guid
-SET     @Id = X'7752A0D168C44ACE9F7ADC52BD22A0BB'
+DECLARE @Guid1 Guid
+SET     @Guid1 = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
 INSERT INTO "TestFolder"
 (
@@ -44,7 +44,7 @@ AS
 		"c_1"."ParentId" IS NOT NULL
 )
 SELECT
-	Cast(@Id as CHAR(16) CHARACTER SET OCTETS),
+	Cast(@Guid1 as CHAR(16) CHARACTER SET OCTETS),
 	"parent"."Label" || '/' || "child"."Label"
 FROM
 	CTE "child"
