@@ -17,8 +17,8 @@ IF (OBJECT_ID(N'[TestFolder]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = 'b23479c6-4465-40b6-ac3a-c18c4311d83b'
+DECLARE @Guid1 UniqueIdentifier -- Guid
+SET     @Guid1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 WITH [CTE] ([Id], [Label], [ParentId])
 AS
@@ -38,7 +38,7 @@ INSERT INTO [TestFolder]
 	[Label]
 )
 SELECT
-	@Id,
+	@Guid1,
 	[parent].[Label] + N'/' + [child].[Label]
 FROM
 	[CTE] [child]
