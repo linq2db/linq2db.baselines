@@ -15,8 +15,8 @@ CREATE TABLE IF NOT EXISTS `TestFolder`
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @Id Guid
-SET     @Id = 'a3a1dbf0-d484-4e69-b069-96e30abe87fe'
+DECLARE @Guid1 Guid
+SET     @Guid1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 INSERT INTO `TestFolder`
 (
@@ -36,7 +36,7 @@ AS
 		`c_1`.`ParentId` IS NOT NULL
 )
 SELECT
-	@Id,
+	@Guid1,
 	Concat(`parent`.`Label`, '/', `child`.`Label`)
 FROM
 	`CTE` `child`
