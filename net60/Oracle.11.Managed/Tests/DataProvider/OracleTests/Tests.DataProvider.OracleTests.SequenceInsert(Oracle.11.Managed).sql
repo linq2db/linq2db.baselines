@@ -38,7 +38,7 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
-SET     @id = 201
+SET     @id = 101
 
 DELETE FROM
 	SEQUENCETEST t1
