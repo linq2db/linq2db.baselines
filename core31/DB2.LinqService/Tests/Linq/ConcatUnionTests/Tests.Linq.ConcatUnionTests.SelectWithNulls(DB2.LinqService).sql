@@ -19,7 +19,7 @@ SELECT
 	Cast(NULL as timestamp),
 	Cast(NULL as smallint),
 	Cast(NULL as char(16) for bit data),
-	Cast(NULL as VARBINARY(32672)),
+	Cast(NULL as VarBinary),
 	Cast(NULL as SmallInt),
 	Cast(NULL as NVarChar(255))
 FROM
