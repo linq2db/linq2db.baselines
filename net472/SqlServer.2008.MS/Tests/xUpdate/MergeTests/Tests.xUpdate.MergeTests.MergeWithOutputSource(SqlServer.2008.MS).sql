@@ -222,21 +222,47 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @param Int -- Int32
-SET     @param = 4
 
 MERGE INTO [TestMerge1] [Target]
 USING
 (
 	SELECT
-		[t1].[Id]
+		[_].[Id],
+		[_].[Field1],
+		[_].[Field2],
+		[_].[Field4]
 	FROM
-		[TestMerge2] [t1]
+		[TestMerge2] [_]
+	WHERE
+		[_].[Id] = 5
 ) [Source]
 (
-	[Id]
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4]
 )
 ON ([Target].[Id] = [Source].[Id])
-WHEN MATCHED AND [Source].[Id] = @param THEN DELETE
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4]
+)
+VALUES
+(
+	[Source].[Id],
+	[Source].[Field1],
+	[Source].[Field2],
+	[Source].[Field4]
+)
+OUTPUT
+	[Source].[Field1],
+	Convert(NVarChar(11), [Source].[Field1]),
+	$action,
+	Convert(NVarChar(11), [INSERTED].[Id])
 ;
 
