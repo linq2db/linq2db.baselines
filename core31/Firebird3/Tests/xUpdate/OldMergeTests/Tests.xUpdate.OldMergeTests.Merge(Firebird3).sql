@@ -19,7 +19,8 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "LinqDataTypes" "Target"
-USING (
+USING
+(
 	SELECT
 		"t1".ID,
 		"t1"."MoneyValue",

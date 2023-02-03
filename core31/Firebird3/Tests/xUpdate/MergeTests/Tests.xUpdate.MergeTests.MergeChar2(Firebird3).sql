@@ -4,7 +4,8 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "AllTypes" "Target"
-USING (
+USING
+(
 	SELECT 10 AS ID, _utf8 x'00' AS "charDataType", CAST(_utf8 x'00' AS NChar(20)) AS "ncharDataType", NULL AS "nvarcharDataType" FROM rdb$database) "Source"
 (
 	ID,
