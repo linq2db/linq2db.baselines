@@ -24,7 +24,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 MERGE INTO [TestTable] [Target]
-USING (
+USING
+(
 	SELECT
 		[Target_1].[ID],
 		[Target_1].[Field1],

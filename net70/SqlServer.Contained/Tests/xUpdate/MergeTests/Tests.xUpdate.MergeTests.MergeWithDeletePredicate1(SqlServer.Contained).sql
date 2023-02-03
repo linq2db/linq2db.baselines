@@ -4,7 +4,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 MERGE INTO [LinqDataTypes] [Target]
-USING (
+USING
+(
 	SELECT
 		[t].[ID],
 		[t].[MoneyValue],

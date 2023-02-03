@@ -13,7 +13,8 @@ DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
 SET     @table_1 = 
 
 MERGE INTO [tempdb]..[#TestMergeTVPTable] [Target]
-USING (
+USING
+(
 	SELECT
 		[_].[Id],
 		[_].[Name]

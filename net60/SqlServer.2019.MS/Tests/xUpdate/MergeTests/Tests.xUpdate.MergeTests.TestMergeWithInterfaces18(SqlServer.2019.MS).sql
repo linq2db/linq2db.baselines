@@ -19,7 +19,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 MERGE INTO [ReviewIndexes] [Target]
-USING (VALUES
+USING
+(VALUES
 	(1)
 ) [Source]
 (

@@ -224,7 +224,8 @@ BeforeExecute
 -- SqlServer.2019
 
 MERGE INTO [TestMerge1] [Target]
-USING (
+USING
+(
 	SELECT
 		[s].[Id] as [OtherId]
 	FROM

@@ -30,7 +30,8 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 MERGE INTO [Person] [Target]
-USING (
+USING
+(
 	SELECT
 		[p].[PersonID] as [ID],
 		[a_Patient].[Diagnosis]

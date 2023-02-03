@@ -2,7 +2,8 @@
 -- SqlServer.Contained SqlServer.2019
 
 MERGE INTO [Person] [Target]
-USING (
+USING
+(
 	SELECT NULL, NULL, NULL, NULL, NULL
 	FROM [Person]	WHERE 1 = 0
 )

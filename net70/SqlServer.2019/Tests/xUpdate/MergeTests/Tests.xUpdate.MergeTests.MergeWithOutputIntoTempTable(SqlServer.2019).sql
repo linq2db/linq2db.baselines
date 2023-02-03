@@ -5,7 +5,8 @@ CREATE TABLE [tempdb]..[#InsertTempTable]
 (
 	[Action]    NVarChar(4000)     NULL,
 	[NewId]     Int            NOT NULL,
-	[DeletedId] Int                NULL
+	[DeletedId] Int                NULL,
+	[SourceId]  Int                NULL
 )
 
 BeforeExecute
@@ -234,7 +235,8 @@ BeforeExecute
 -- SqlServer.2019
 
 MERGE INTO [TestMerge1] [Target]
-USING (
+USING
+(
 	SELECT
 		[_].[Id],
 		[_].[Field1],
@@ -286,7 +288,8 @@ BeforeExecute
 SELECT
 	[t1].[Action],
 	[t1].[NewId],
-	[t1].[DeletedId]
+	[t1].[DeletedId],
+	[t1].[SourceId]
 FROM
 	[tempdb]..[#InsertTempTable] [t1]
 

@@ -224,7 +224,8 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [TestMerge1] [Target]
-USING (
+USING
+(
 	SELECT NULL, NULL, NULL, NULL, NULL
 	FROM [TestMerge1]	WHERE 1 = 0
 )

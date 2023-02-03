@@ -4,7 +4,8 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [Child] [Target]
-USING (
+USING
+(
 	SELECT
 		[t].[ParentID],
 		[t].[ChildID]

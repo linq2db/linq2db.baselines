@@ -19,7 +19,8 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 MERGE INTO [CacheTestTable] [Target]
-USING (VALUES
+USING
+(VALUES
 	(1,1), (2,2)
 ) [Source]
 (
@@ -61,7 +62,8 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 MERGE INTO [CacheTestTable] [Target]
-USING (VALUES
+USING
+(VALUES
 	(1,1), (2,4), (3,3)
 ) [Source]
 (

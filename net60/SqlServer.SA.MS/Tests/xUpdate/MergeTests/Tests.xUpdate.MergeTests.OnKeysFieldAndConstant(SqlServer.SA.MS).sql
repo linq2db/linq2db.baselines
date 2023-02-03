@@ -224,7 +224,8 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [TestMerge1] [Target]
-USING (
+USING
+(
 	SELECT
 		[s].[Field1]
 	FROM
