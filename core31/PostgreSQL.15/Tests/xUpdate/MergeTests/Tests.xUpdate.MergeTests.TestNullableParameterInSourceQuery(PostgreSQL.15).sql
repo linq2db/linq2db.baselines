@@ -33,7 +33,8 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestNullableParameterTarget" "Target"
-USING (
+USING
+(
 	SELECT
 		2 as source_field0,
 		t1."Id"
@@ -66,7 +67,8 @@ DECLARE @id Integer -- Int32
 SET     @id = 1
 
 MERGE INTO "TestNullableParameterTarget" "Target"
-USING (
+USING
+(
 	SELECT
 		2 as source_field0,
 		t1."Id"

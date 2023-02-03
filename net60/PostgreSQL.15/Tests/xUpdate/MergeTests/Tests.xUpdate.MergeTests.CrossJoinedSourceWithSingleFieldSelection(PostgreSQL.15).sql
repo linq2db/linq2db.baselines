@@ -100,7 +100,8 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "GrandChild" "Target"
-USING (
+USING
+(
 	SELECT
 		t2."ChildID" as "Id"
 	FROM

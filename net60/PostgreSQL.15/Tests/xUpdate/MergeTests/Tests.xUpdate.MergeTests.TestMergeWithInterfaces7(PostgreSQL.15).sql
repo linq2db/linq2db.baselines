@@ -18,7 +18,8 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "ReviewIndexes" "Target"
-USING (VALUES
+USING
+(VALUES
 	(1)
 ) "Source"
 (

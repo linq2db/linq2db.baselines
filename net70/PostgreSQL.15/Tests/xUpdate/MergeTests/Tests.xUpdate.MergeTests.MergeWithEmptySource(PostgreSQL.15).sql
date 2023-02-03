@@ -2,7 +2,8 @@
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "Person" "Target"
-USING (
+USING
+(
 	SELECT CAST(NULL AS Int), CAST(NULL AS text), CAST(NULL AS text), CAST(NULL AS text), CAST(NULL AS Char(1))
 	FROM "Person"	WHERE 1 = 0
 )

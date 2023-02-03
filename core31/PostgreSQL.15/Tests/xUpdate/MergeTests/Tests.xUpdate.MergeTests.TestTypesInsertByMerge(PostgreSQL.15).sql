@@ -26,7 +26,8 @@ DECLARE @value_5 Interval -- Object
 SET     @value_5 = 00:00:00
 
 MERGE INTO "TestMerge1" "Target"
-USING (VALUES
+USING
+(VALUES
 	(1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 	(2,-2147483647,-9223372036854775807,True,'normal strinG','всЁ нормально','*','ё',-3.40282002E+38,-1.7976931348623157E+308,'2000-11-12 21:14:15.167'::timestamp,:value,E'\\x'::bytea,'00000000-0000-0000-0000-000000000000'::uuid,12345678.9012345678,'2000-11-23'::date,:value_1,'FIRST',NULL),
 	(3,2147483647,9223372036854775807,False,'test
@@ -122,7 +123,8 @@ DECLARE @value_6 Interval -- Object
 SET     @value_6 = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
-USING (VALUES
+USING
+(VALUES
 	(3,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\','','',-1.17549996E-38,2.2250738585072014E-308,'2098-10-12 21:14:15.907'::timestamp,:value,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123,'2111-11-23'::date,:value_1,NULL,-2147483647),
 	(4,2147483647,9223372036854775807,False,'test
 	','ЙЦУКЩывапрм

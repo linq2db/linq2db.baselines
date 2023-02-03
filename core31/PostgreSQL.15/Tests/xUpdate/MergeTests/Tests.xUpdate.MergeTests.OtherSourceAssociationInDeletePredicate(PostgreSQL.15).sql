@@ -9,7 +9,8 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "Patient" "Target"
-USING (
+USING
+(
 	SELECT
 		t1."PersonID",
 		t1."Diagnosis",
