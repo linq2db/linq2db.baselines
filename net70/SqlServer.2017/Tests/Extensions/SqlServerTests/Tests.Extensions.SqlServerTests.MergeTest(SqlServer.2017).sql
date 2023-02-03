@@ -2,8 +2,7 @@
 -- SqlServer.2017
 
 MERGE INTO [Parent] [Target]
-USING
-(
+USING (
 	SELECT
 		[c_1].[ParentID],
 		[c_1].[Value1]

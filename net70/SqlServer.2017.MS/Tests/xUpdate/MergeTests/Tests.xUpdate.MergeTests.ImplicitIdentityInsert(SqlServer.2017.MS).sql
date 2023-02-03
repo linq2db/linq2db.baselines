@@ -17,8 +17,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 MERGE INTO [Person] [Target]
-USING
-(
+USING (
 	SELECT
 		[p].[PersonID] + 50 as [source_field0],
 		[p].[FirstName],
