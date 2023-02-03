@@ -9,7 +9,8 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 MERGE INTO [Patient] [Target]
-USING (
+USING
+(
 	SELECT
 		[t1].[PersonID],
 		[t1].[Diagnosis],
