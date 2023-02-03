@@ -103,8 +103,7 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 MERGE INTO [GrandChild] [Target]
-USING
-(
+USING (
 	SELECT
 		[t2].[ChildID] as [Id]
 	FROM
