@@ -224,8 +224,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
-USING
-(
+USING (
 	SELECT
 		[s].[Field1] - 5 as [Field1]
 	FROM

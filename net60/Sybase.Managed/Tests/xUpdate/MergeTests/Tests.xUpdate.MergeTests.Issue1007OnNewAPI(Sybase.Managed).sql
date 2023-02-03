@@ -31,8 +31,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMergeIdentity] [Target]
-USING
-(
+USING (
 	SELECT 10 AS [Field]) [Source]
 (
 	[Field]

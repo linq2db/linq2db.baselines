@@ -35,8 +35,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [PKOnlyTable] [Target]
-USING
-(
+USING (
 	SELECT 1 AS [ID]
 	UNION ALL
 	SELECT 2

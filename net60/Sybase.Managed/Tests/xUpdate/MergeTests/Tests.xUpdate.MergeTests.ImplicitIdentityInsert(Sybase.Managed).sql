@@ -17,8 +17,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [Person] [Target]
-USING
-(
+USING (
 	SELECT
 		[p].[PersonID] + 50 as [source_field0],
 		[p].[FirstName],

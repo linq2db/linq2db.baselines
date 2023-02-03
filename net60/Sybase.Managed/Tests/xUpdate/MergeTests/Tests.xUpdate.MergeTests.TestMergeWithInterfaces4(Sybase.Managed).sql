@@ -22,8 +22,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [ReviewIndexes] [Target]
-USING
-(
+USING (
 	SELECT 1 AS [Id], '2' AS [Value_1]) [Source]
 (
 	[Id],

@@ -22,8 +22,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [AllTypes] [Target]
-USING
-(
+USING (
 	SELECT 3 AS [ID], char(0) AS [charDataType], char(0) AS [ncharDataType], 'test' + char(0) + 'it' AS [nvarcharDataType]) [Source]
 (
 	[ID],
