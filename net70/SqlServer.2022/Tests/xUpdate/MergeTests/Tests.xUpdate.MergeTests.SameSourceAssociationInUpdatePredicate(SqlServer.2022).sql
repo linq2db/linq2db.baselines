@@ -9,8 +9,7 @@ BeforeExecute
 -- SqlServer.2022
 
 MERGE INTO [Person] [Target]
-USING
-(
+USING (
 	SELECT
 		[t1].[PersonID] as [ID],
 		[t1].[FirstName],

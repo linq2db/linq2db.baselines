@@ -24,8 +24,7 @@ BeforeExecute
 -- SqlServer.2022
 
 MERGE INTO [TestTable] [Target]
-USING
-(
+USING (
 	SELECT
 		[Target_1].[ID],
 		[Target_1].[Field1],

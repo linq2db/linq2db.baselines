@@ -2,8 +2,7 @@
 -- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 MERGE INTO [LinqDataTypes] [Target]
-USING
-(
+USING (
 	SELECT
 		[t].[ID],
 		[t].[MoneyValue],
