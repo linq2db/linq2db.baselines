@@ -20,8 +20,7 @@ SET     @ID = 12
 
 SET IDENTITY_INSERT [Person] ON
 MERGE INTO [Person] [Target]
-USING
-(
+USING (
 	SELECT
 		[t1].[PersonID] as [ID],
 		[a_Patient].[Diagnosis]
