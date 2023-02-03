@@ -39,7 +39,8 @@ BeforeExecute
 -- Firebird4 Firebird
 
 MERGE INTO "PKOnlyTable" "Target"
-USING (
+USING
+(
 	SELECT 1 AS ID FROM rdb$database
 	UNION ALL
 	SELECT 2 FROM rdb$database

@@ -26,7 +26,8 @@ BeforeExecute
 -- Firebird4 Firebird
 
 MERGE INTO "ReviewIndexes" "Target"
-USING (
+USING
+(
 	SELECT 1 AS "Id" FROM rdb$database) "Source"
 (
 	"Id"

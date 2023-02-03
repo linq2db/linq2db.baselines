@@ -234,7 +234,8 @@ DECLARE @Val7 Integer -- Int32
 SET     @Val7 = 2
 
 MERGE INTO "TestMerge1" "Target"
-USING (
+USING
+(
 	SELECT
 		"t1"."Id" as "OtherId",
 		"t1"."Field1",

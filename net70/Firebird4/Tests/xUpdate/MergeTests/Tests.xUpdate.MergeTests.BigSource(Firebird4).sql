@@ -222,7 +222,8 @@ BeforeExecute
 -- Firebird4 Firebird
 
 MERGE INTO "TestMerge1" "Target"
-USING (
+USING
+(
 	SELECT 5 AS "Id", 6 AS "Field1", 7 AS "Field2", 9 AS "Field4" FROM rdb$database
 	UNION ALL
 	SELECT 6, 7, 8, 10 FROM rdb$database
