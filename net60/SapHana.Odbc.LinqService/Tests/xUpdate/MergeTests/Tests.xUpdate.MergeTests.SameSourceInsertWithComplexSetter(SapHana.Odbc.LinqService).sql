@@ -224,8 +224,7 @@ DECLARE @idx  -- Int32
 SET     @idx = 10
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT
 		"t1"."Id",
 		"t1"."Field2"

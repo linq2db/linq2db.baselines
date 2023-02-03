@@ -31,8 +31,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "PKOnlyTable" "Target"
-USING
-(
+USING (
 	SELECT 1 AS "ID" FROM DUMMY
 	UNION ALL
 	SELECT 2 FROM DUMMY

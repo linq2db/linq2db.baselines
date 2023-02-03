@@ -8,8 +8,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT 0 AS "Id", 1 AS "Field1", 2 AS "Field2", 4 AS "Field4" FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."Id")
 
@@ -54,8 +53,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT 10 AS "Id", 11 AS "Field1", 12 AS "Field2", 14 AS "Field4" FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."Id")
 
@@ -100,8 +98,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT 20 AS "Id", 21 AS "Field1", 22 AS "Field2", 24 AS "Field4" FROM DUMMY
 	UNION ALL
 	SELECT 30, 31, 32, 34 FROM DUMMY) "Source"

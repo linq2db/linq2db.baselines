@@ -222,8 +222,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT NULL "OtherId", NULL "OtherField1", NULL "OtherField5", NULL "OtherField2", NULL "OtherField4", NULL "OtherField3"
 	FROM DUMMY	WHERE 1 = 0
 )

@@ -20,8 +20,7 @@ DECLARE @value_2  -- Time
 SET     @value_2 = 00:00:00
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT 1 AS "Id", NULL AS "FieldInt32", NULL AS "FieldInt64", NULL AS "FieldBoolean", NULL AS "FieldString", NULL AS "FieldNString", NULL AS "FieldChar", NULL AS "FieldNChar", NULL AS "FieldFloat", NULL AS "FieldDouble", NULL AS "FieldDateTime", NULL AS "FieldBinary", NULL AS "FieldGuid", NULL AS "FieldDecimal", NULL AS "FieldDate", NULL AS "FieldTime", NULL AS "FieldEnumString", NULL AS "FieldEnumNumber" FROM DUMMY
 	UNION ALL
 	SELECT 2, -2147483647, -9223372036854775807, 1, 'normal strinG', 'всЁ нормально', '*', 'ё', -3.40282002E+38, -1.7976931348623157E+308, '2000-11-12 21:14:15.167', x'', '00000000-0000-0000-0000-000000000000', 12345678.9012345678, '2000-11-23', ?, 'FIRST', NULL FROM DUMMY
@@ -90,8 +89,7 @@ DECLARE @value_3  -- Time
 SET     @value_3 = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
-USING
-(
+USING (
 	SELECT 3 AS "Id", -123 AS "FieldInt32", 987 AS "FieldInt64", NULL AS "FieldBoolean", '<>?/.,;''zZ":' AS "FieldString", '`~!@#$%^&*()_+{}|[]\' AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", -1.17549996E-38 AS "FieldFloat", 2.2250738585072014E-308 AS "FieldDouble", '2098-10-12 21:14:15.907' AS "FieldDateTime", x'FFC864321400' AS "FieldBinary", 'ffffffff-ffff-ffff-ffff-ffffffffffff' AS "FieldGuid", -0.123 AS "FieldDecimal", '2111-11-23' AS "FieldDate", ? AS "FieldTime", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM DUMMY
 	UNION ALL
 	SELECT 4, 2147483647, 9223372036854775807, 0, 'test
