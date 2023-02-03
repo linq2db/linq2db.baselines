@@ -14,8 +14,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TestMerge1" Target
-USING
-(
+USING (
 	SELECT 1 AS "Id", NULL AS "FieldInt32", NULL AS "FieldInt64", NULL AS "FieldBoolean", NULL AS "FieldString", NULL AS "FieldNString", NULL AS "FieldChar", NULL AS "FieldNChar", NULL AS "FieldFloat", NULL AS "FieldDouble", NULL AS "FieldDateTime", NULL AS "FieldDateTime2", NULL AS "FieldGuid", NULL AS "FieldDecimal", NULL AS "FieldEnumString", NULL AS "FieldEnumNumber" FROM sys.dual
 	UNION ALL
 	SELECT 2, -2147483647, -9223372036854775807, 1, 'normal strinG', 'всЁ нормально', '*', 'ё', -3.40282002E+38, -1.7976931348623157E+308D, TIMESTAMP '2000-11-12 21:14:15.167000', TIMESTAMP '2000-11-22 12:59:15.1244567 +00:00', HEXTORAW('00000000000000000000000000000000'), 12345678.9012345678, 'FIRST', NULL FROM sys.dual
@@ -72,8 +71,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TestMerge2" Target
-USING
-(
+USING (
 	SELECT 3 AS "Id", -123 AS "FieldInt32", 987 AS "FieldInt64", NULL AS "FieldBoolean", '<>?/.,;''zZ":' AS "FieldString", '`~!@#$%^&*()_+{}|[]\' AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", -1.17549996E-38 AS "FieldFloat", 2.2250738585072014E-308D AS "FieldDouble", TIMESTAMP '2098-10-12 21:14:15.907000' AS "FieldDateTime", TIMESTAMP '2001-11-22 14:53:14.1233457 +00:00' AS "FieldDateTime2", HEXTORAW('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF') AS "FieldGuid", -0.123 AS "FieldDecimal", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM sys.dual
 	UNION ALL
 	SELECT 4, 2147483647, 9223372036854775807, 0, 'test
