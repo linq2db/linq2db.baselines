@@ -14,8 +14,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 MERGE INTO "Person" Target
-USING
-(
+USING (
 	SELECT
 		t1."PersonID" as ID,
 		t1."FirstName",
