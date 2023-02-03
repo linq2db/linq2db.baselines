@@ -222,7 +222,8 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "TestMerge1" "Target"
-USING (
+USING
+(
 	SELECT
 		"s"."Field1" - 5 as "Field1"
 	FROM

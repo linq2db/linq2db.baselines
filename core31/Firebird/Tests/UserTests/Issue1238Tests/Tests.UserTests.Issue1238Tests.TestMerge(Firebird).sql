@@ -10,7 +10,8 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "InheritanceParent" "Target"
-USING (
+USING
+(
 	SELECT 143 AS "Key1", NULL AS "Key2", 1 AS "Data_1" FROM rdb$database) "Source"
 (
 	"Key1",
@@ -51,7 +52,8 @@ BeforeExecute
 -- Firebird
 
 MERGE INTO "InheritanceParent" "Target"
-USING (
+USING
+(
 	SELECT 143 AS "Key1", NULL AS "Key2", 1 AS "Data_1" FROM rdb$database) "Source"
 (
 	"Key1",

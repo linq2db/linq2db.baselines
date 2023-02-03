@@ -224,7 +224,8 @@ DECLARE @param TimeStamp -- DateTime
 SET     @param = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
 MERGE INTO "TestMerge1" "Target"
-USING (
+USING
+(
 	SELECT
 		"t1"."Id",
 		Cast(@param as TimeStamp) as "source_field0"

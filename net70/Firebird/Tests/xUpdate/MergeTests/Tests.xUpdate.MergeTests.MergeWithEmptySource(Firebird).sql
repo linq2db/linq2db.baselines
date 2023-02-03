@@ -2,7 +2,8 @@
 -- Firebird
 
 MERGE INTO "Person" "Target"
-USING (
+USING
+(
 	SELECT NULL, NULL, NULL, NULL, NULL
 	FROM rdb$database	WHERE 1 = 0
 )
