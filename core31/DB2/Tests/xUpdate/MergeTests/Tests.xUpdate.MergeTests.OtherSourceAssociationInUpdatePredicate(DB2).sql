@@ -9,7 +9,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "Person" "Target"
-USING (
+USING
+(
 	SELECT
 		"t1"."PersonID" as ID,
 		"t1"."FirstName",

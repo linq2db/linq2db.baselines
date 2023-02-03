@@ -2,7 +2,8 @@
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "Person" "Target"
-USING (
+USING
+(
 	SELECT CAST(NULL AS Int), CAST(NULL AS NVarChar(255)), CAST(NULL AS NVarChar(255)), CAST(NULL AS NVarChar(255)), CAST(NULL AS Char(1))
 	FROM "Person"	WHERE 1 = 0
 )

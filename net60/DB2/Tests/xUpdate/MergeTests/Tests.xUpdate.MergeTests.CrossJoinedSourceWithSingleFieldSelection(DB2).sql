@@ -100,7 +100,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "GrandChild" "Target"
-USING (
+USING
+(
 	SELECT
 		"t2"."ChildID" as "Id"
 	FROM

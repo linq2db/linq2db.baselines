@@ -10,7 +10,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "InheritanceParent" "Target"
-USING (VALUES
+USING
+(VALUES
 	(143,CAST(NULL AS NVarChar(255)),1)
 ) "Source"
 (
@@ -52,7 +53,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "InheritanceParent" "Target"
-USING (VALUES
+USING
+(VALUES
 	(143,CAST(NULL AS NVarChar(255)),1)
 ) "Source"
 (

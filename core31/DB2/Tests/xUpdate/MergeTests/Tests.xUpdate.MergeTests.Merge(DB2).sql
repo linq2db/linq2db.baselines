@@ -2,7 +2,8 @@
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "LinqDataTypes" "Target"
-USING (
+USING
+(
 	SELECT
 		"t1".ID,
 		"t1"."MoneyValue",

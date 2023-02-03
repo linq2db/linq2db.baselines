@@ -31,7 +31,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestTable" "Target"
-USING (
+USING
+(
 	SELECT
 		"Target_1".ID,
 		"Target_1"."Field1",

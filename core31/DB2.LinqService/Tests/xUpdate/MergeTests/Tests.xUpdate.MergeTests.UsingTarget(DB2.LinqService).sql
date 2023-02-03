@@ -222,7 +222,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestMerge1" "Target"
-USING (
+USING
+(
 	SELECT
 		"Target_1"."Id",
 		"Target_1"."Field2"
