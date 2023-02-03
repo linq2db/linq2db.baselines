@@ -9,8 +9,7 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 MERGE INTO [Patient] [Target]
-USING
-(
+USING (
 	SELECT
 		[t1].[PersonID],
 		[t1].[Diagnosis],
