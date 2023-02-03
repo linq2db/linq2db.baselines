@@ -26,8 +26,7 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "ReviewIndexes" "Target"
-USING
-(
+USING (
 	SELECT
 		"t1"."Id",
 		"t1"."Value" as "Value_1"

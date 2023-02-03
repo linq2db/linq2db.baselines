@@ -222,8 +222,7 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT NULL, NULL, NULL, NULL, NULL, NULL
 	FROM rdb$database	WHERE 1 = 0
 )

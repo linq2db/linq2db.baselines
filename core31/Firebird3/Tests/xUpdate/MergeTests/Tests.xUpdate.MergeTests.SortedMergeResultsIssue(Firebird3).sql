@@ -100,8 +100,7 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "GrandChild" "Target"
-USING
-(
+USING (
 	SELECT
 		"t2"."ChildID" as "Id"
 	FROM

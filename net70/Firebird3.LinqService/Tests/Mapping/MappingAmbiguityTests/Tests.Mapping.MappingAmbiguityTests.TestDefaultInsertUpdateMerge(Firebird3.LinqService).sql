@@ -31,8 +31,7 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "TestTable" "Target"
-USING
-(
+USING (
 	SELECT
 		"Target_1".ID,
 		"Target_1"."Field1",

@@ -9,8 +9,7 @@ BeforeExecute
 -- Firebird3 Firebird
 
 MERGE INTO "Patient" "Target"
-USING
-(
+USING (
 	SELECT
 		"t1"."PersonID",
 		"t1"."Diagnosis",

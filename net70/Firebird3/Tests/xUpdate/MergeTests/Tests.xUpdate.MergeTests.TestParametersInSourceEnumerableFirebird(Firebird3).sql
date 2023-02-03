@@ -237,8 +237,7 @@ DECLARE @value Time
 SET     @value = 00:05:00
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT 3 AS "Id", CAST(@value AS Time) AS "Val" FROM rdb$database
 	UNION ALL
 	SELECT 4, CAST(@value AS Time) FROM rdb$database
