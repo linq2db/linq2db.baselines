@@ -2,7 +2,8 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 MERGE INTO "LinqDataTypes" Target
-USING (
+USING
+(
 	SELECT
 		t1.ID,
 		t1."MoneyValue",

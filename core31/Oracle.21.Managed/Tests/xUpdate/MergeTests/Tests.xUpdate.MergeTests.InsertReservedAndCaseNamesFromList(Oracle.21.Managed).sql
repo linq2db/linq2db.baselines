@@ -235,7 +235,8 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TestMerge1" Target
-USING (
+USING
+(
 	SELECT 5 AS "as_1", 10 AS "take", 4 AS "skip", NULL AS "Skip_1", NULL AS "insert_1", NULL AS SELECT_1 FROM sys.dual
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL FROM sys.dual
