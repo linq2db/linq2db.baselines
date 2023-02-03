@@ -22,8 +22,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 MERGE INTO "AllTypes" Target
-USING
-(
+USING (
 	SELECT 3 AS ID, chr(0) AS "charDataType", chr(0) AS "ncharDataType", 'test' || chr(0) || 'it' AS "nvarcharDataType" FROM sys.dual) "Source"
 ON (Target.ID = "Source".ID)
 
