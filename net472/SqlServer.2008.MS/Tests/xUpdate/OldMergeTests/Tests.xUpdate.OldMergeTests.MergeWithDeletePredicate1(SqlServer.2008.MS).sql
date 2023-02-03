@@ -21,8 +21,7 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 MERGE INTO [LinqDataTypes] [Target]
-USING
-(
+USING (
 	SELECT
 		[t].[ID],
 		[t].[MoneyValue],
