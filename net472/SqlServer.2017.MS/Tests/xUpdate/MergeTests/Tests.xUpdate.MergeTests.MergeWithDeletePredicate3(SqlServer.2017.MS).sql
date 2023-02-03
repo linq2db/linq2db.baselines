@@ -81,8 +81,7 @@ DECLARE @PersonID_1 Int -- Int32
 SET     @PersonID_1 = 1
 
 MERGE INTO [Person] [Target]
-USING
-(
+USING (
 	SELECT
 		[t].[PersonID] as [ID],
 		[t].[FirstName],
