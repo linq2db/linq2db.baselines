@@ -224,7 +224,8 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 MERGE INTO [TestMerge1] WITH(HOLDLOCK) [Target]
-USING (
+USING
+(
 	SELECT
 		[s].[Field1]
 	FROM
