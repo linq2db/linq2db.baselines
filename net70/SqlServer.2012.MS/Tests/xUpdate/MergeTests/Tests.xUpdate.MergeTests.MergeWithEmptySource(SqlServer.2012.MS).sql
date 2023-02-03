@@ -2,8 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 MERGE INTO [Person] [Target]
-USING
-(
+USING (
 	SELECT NULL, NULL, NULL, NULL, NULL
 	FROM [Person]	WHERE 1 = 0
 )

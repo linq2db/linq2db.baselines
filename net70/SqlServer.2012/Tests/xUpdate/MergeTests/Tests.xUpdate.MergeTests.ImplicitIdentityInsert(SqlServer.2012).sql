@@ -17,8 +17,7 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [Person] [Target]
-USING
-(
+USING (
 	SELECT
 		[p].[PersonID] + 50 as [source_field0],
 		[p].[FirstName],

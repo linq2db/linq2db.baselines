@@ -238,8 +238,7 @@ DECLARE @Field3 Int -- Int32
 SET     @Field3 = 125
 
 MERGE INTO [TestMerge1] [Target]
-USING
-(
+USING (
 	SELECT
 		[_].[Id] as [OtherId],
 		[_].[Field1],

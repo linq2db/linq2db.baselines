@@ -224,8 +224,7 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [TestMerge1] [Target]
-USING
-(
+USING (
 	SELECT
 		[_].[Id] as [OtherId],
 		[_].[Field3] as [OtherField3],
