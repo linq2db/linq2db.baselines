@@ -260,6 +260,9 @@ VALUES
 	[Source].[Field4]
 )
 OUTPUT
-	[INSERTED].[Id]
+	[Source].[Field1],
+	Convert(NVarChar(11), [Source].[Field1]),
+	$action,
+	Convert(NVarChar(11), [INSERTED].[Id])
 ;
 
