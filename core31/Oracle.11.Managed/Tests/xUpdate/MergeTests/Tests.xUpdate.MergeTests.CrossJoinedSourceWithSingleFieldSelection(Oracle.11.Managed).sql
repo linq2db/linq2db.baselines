@@ -100,7 +100,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 MERGE INTO "GrandChild" Target
-USING (
+USING
+(
 	SELECT
 		t2."ChildID" as "Id"
 	FROM

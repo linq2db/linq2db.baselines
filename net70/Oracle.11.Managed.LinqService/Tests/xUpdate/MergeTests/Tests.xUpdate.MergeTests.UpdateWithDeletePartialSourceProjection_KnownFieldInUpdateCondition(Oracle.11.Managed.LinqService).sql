@@ -222,7 +222,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 MERGE INTO "TestMerge1" Target
-USING (
+USING
+(
 	SELECT
 		s."Id",
 		s."Field5",

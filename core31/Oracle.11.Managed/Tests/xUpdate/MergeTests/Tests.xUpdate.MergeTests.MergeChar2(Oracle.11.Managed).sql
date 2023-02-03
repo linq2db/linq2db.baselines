@@ -4,7 +4,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 MERGE INTO "AllTypes" Target
-USING (
+USING
+(
 	SELECT 10 AS ID, chr(0) AS "charDataType", chr(0) AS "ncharDataType", NULL AS "nvarcharDataType" FROM sys.dual) "Source"
 ON (Target.ID = "Source".ID)
 

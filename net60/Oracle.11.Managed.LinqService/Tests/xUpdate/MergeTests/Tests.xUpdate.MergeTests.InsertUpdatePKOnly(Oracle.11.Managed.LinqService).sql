@@ -47,7 +47,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 MERGE INTO "PKOnlyTable" Target
-USING (
+USING
+(
 	SELECT 1 AS ID FROM sys.dual
 	UNION ALL
 	SELECT 2 FROM sys.dual
